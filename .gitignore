@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/dev
+=======
+>>>>>>> 319f0c0 (.)
 /vendor/
 node_modules/
 npm-debug.log
@@ -48,6 +51,7 @@ build
 .php-cs-fixer.cache
 *:Zone.Identifier
 .php-cs-fixer.cache
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 /vendor/
@@ -97,3 +101,5 @@ build
 >>>>>>> aa0245c (up)
 =======
 >>>>>>> origin/dev
+=======
+>>>>>>> 319f0c0 (.)

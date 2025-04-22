@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:app/Providers/RouteServiceProvider.php
+=======
+>>>>>>> 319f0c0 (.)
 <?php
 
 declare(strict_types=1);
@@ -19,6 +22,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
     protected string $module_ns = __NAMESPACE__;
     public string $name = 'Chart';
 }
+<<<<<<< HEAD
 =======
 <?php
 
@@ -40,3 +44,5 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
     protected string $module_ns = __NAMESPACE__;
 }
 >>>>>>> aa0245c (up):Providers/RouteServiceProvider.php
+=======
+>>>>>>> 319f0c0 (.)

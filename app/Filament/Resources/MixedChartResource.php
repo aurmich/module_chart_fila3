@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:app/Filament/Resources/MixedChartResource.php
+=======
+>>>>>>> 319f0c0 (.)
 <?php
 
 declare(strict_types=1);
@@ -46,6 +49,7 @@ class MixedChartResource extends XotBaseResource
 
     
 }
+<<<<<<< HEAD
 =======
 <?php
 
@@ -101,3 +105,5 @@ class MixedChartResource extends XotBaseResource
     }
 }
 >>>>>>> aa0245c (up):Filament/Resources/MixedChartResource.php
+=======
+>>>>>>> 319f0c0 (.)

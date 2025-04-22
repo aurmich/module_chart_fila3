@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/dev
+=======
+>>>>>>> 319f0c0 (.)
 {
     "name": "laraxot/module_chart_fila3",
     "description": "chart module that manages your data and represents them in graphs",
@@ -90,6 +93,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 {
@@ -183,3 +187,5 @@
 >>>>>>> aa0245c (up)
 =======
 >>>>>>> origin/dev
+=======
+>>>>>>> 319f0c0 (.)

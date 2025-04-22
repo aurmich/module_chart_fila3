@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/dev
+=======
+>>>>>>> 319f0c0 (.)
 import { defineConfig } from 'vite';
 import laravel, { refreshPaths } from 'laravel-vite-plugin'
 
@@ -40,6 +43,7 @@ export default defineConfig({
 //    'Modules/Quaeris/Resources/assets/sass/app.scss',
 //    'Modules/Quaeris/Resources/assets/js/app.js',
 //];
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 import { defineConfig } from 'vite';
@@ -83,3 +87,5 @@ export default defineConfig({
 >>>>>>> aa0245c (up)
 =======
 >>>>>>> origin/dev
+=======
+>>>>>>> 319f0c0 (.)

@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:app/Providers/Filament/AdminPanelProvider.php
+=======
+>>>>>>> 319f0c0 (.)
 <?php
 
 declare(strict_types=1);
@@ -30,6 +33,7 @@ class AdminPanelProvider extends XotBasePanelProvider
         return $panel;
     }
 }
+<<<<<<< HEAD
 =======
 <?php
 
@@ -63,3 +67,5 @@ class AdminPanelProvider extends XotBasePanelProvider
     }
 }
 >>>>>>> aa0245c (up):Providers/Filament/AdminPanelProvider.php
+=======
+>>>>>>> 319f0c0 (.)

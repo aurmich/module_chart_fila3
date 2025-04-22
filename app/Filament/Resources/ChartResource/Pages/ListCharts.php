@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:app/Filament/Resources/ChartResource/Pages/ListCharts.php
+=======
+>>>>>>> 319f0c0 (.)
 <?php
 
 declare(strict_types=1);
@@ -43,6 +46,7 @@ class ListCharts extends XotBaseListRecords
 
 
 }
+<<<<<<< HEAD
 =======
 <?php
 
@@ -92,3 +96,5 @@ class ListCharts extends XotBaseListRecords
 
 }
 >>>>>>> aa0245c (up):Filament/Resources/ChartResource/Pages/ListCharts.php
+=======
+>>>>>>> 319f0c0 (.)
