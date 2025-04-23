@@ -3,7 +3,8 @@ import laravel, { refreshPaths } from 'laravel-vite-plugin'
 
 export default defineConfig({
     build: {
-        outDir: './Resources/dist',
+        //outDir: '../../../public_html/assets/chart',
+        outDir: './resources/dist',
         emptyOutDir: false,
         manifest: "manifest.json",
         /*rollupOptions: {
@@ -18,10 +19,12 @@ export default defineConfig({
         laravel({
             publicDirectory: '../../../public_html',
             buildDirectory: 'assets/chart',
+            //buildDirectory: 'build-mymodule',
             input: [
-                __dirname + '/Resources/css/app.css',
-                __dirname + '/Resources/js/app.js',
-                __dirname + '/Resources/js/filament-chart-js-plugins'
+                //__dirname + '/Resources/assets/sass/app.scss',
+                __dirname + '/resources/css/app.css',
+                __dirname + '/resources/js/app.js',
+                __dirname + '/resources/js/filament-chart-js-plugins'
             ],
             ...refreshPaths,
             refresh: true,
