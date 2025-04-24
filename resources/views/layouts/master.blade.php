@@ -7,13 +7,21 @@
         <title>Module Chart</title>
 
        {{-- Laravel Vite - CSS File --}}
+<<<<<<< HEAD
        {{-- {{ module_vite('build-chart', 'Resources/assets/sass/app.scss') }} --}}
+=======
+       {{-- {{ module_vite('build-chart', 'resources/assets/sass/app.scss') }} --}}
+>>>>>>> 7d3b0bb (.)
 
     </head>
     <body>
         @yield('content')
 
         {{-- Laravel Vite - JS File --}}
+<<<<<<< HEAD
         {{-- {{ module_vite('build-chart', 'Resources/assets/js/app.js') }} --}}
+=======
+        {{-- {{ module_vite('build-chart', 'resources/assets/js/app.js') }} --}}
+>>>>>>> 7d3b0bb (.)
     </body>
 </html>
