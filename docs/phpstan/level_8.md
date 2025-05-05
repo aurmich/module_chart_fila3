@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPStan Report - Livello 8
 
 ## Errori rilevati
@@ -19,6 +20,8 @@
 
 - Torna all'indice principale: [Indice Report PHPStan Moduli](/docs/phpstan_modules_index.md)
 =======
+=======
+>>>>>>> 6440866 (.)
 # Rapporto PHPStan Livello 8 per il modulo Chart
 
 Data analisi: 2025-04-15 21:46:21
@@ -248,4 +251,7 @@ Trovati 25 errori al livello 8.
 - [Documentazione PHPStan](https://phpstan.org/user-guide/getting-started)
 - [Tipi in PHP](https://www.php.net/manual/en/language.types.declarations.php)
 - [PSR-12: Standard di codifica](https://www.php-fig.org/psr/psr-12/)
+<<<<<<< HEAD
 >>>>>>> 7d3b0bb (.)
+=======
+>>>>>>> 6440866 (.)

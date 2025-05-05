@@ -43,6 +43,7 @@ build
 .git-blame-ignore-revs
 .php-cs-fixer.cache
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 *:Zone.Identifier
@@ -92,3 +93,8 @@ build
 .git-blame-ignore-revs
 .php-cs-fixer.cache
 >>>>>>> 7d3b0bb (.)
+=======
+
+# File di log
+*.log
+>>>>>>> 6440866 (.)

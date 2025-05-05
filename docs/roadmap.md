@@ -1,5 +1,6 @@
 # Roadmap Modulo Chart
 
+<<<<<<< HEAD
 ## 📊 Progress Overview
 | Categoria | Progresso | Note |
 |-----------|-----------|------|
@@ -175,3 +176,48 @@ Secondo le "Regole Windsurf per base_predict_fila3_mono", gli obiettivi per l'an
 
 [⬅️ Torna alla Roadmap Principale](/docs/roadmap.md)
 
+=======
+## Stato Attuale
+- **Versione**: 1.0.0
+- **Stato Implementazione**: In sviluppo
+- **Dipendenze**: Xot, Cms, UI, Lang
+
+## Obiettivi Strategici
+
+### 1. Supporto Grafici Avanzati (Q2 2025)
+- [ ] Integrazione con ECharts e altri provider
+- [ ] Nuovi tipi di grafici: radar, heatmap, funnel
+- [ ] Miglioramento della personalizzazione widget
+
+### 2. Dashboard Dinamiche (Q3 2025)
+- [ ] Layout drag & drop
+- [ ] Widget configurabili runtime
+- [ ] Salvataggio layout utente
+
+### 3. Performance & Caching (Q3-Q4 2025)
+- [ ] Ottimizzazione query
+- [ ] Caching risultati grafici
+- [ ] Lazy loading dati
+
+### 4. API & Sicurezza (Q4 2025)
+- [ ] Endpoints REST per dashboard
+- [ ] Autorizzazioni granulari
+- [ ] Audit trail accessi e modifiche
+
+## Milestone Q2 2025
+
+### Milestone 1: Grafici Base
+- [ ] Line, Bar, Pie chart
+- [ ] Documentazione esempi
+- [ ] Test automatici rendering
+
+### Milestone 2: Dashboard Base
+- [ ] Layout responsive
+- [ ] Widget statici
+- [ ] Autenticazione base
+
+---
+
+## Aggiornamento Roadmap
+Questa roadmap viene aggiornata periodicamente in base alle priorità di progetto e ai feedback degli utenti. Contribuisci segnalando nuove feature o bug tramite GitHub Issues.
+>>>>>>> 6440866 (.)
