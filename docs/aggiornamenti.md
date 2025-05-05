@@ -27,4 +27,12 @@ Infine, se si sono pubblicati il file di configurazione o i modelli Blade, assic
 
 ```console
 php artisan module_chart:show-versions
+<<<<<<< HEAD
 ```
+=======
+```
+## Collegamenti tra versioni di aggiornamenti.md
+* [aggiornamenti.md](laravel/Modules/Chart/docs/aggiornamenti.md)
+* [aggiornamenti.md](laravel/Modules/Cms/docs/aggiornamenti.md)
+
+>>>>>>> d2e74a3 (.)

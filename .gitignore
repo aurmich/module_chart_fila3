@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+# Dependencies
+>>>>>>> d2e74a3 (.)
 /vendor/
 node_modules/
 npm-debug.log
@@ -15,16 +19,26 @@ public/hot
 public_html/storage
 public_html/hot
 
+<<<<<<< HEAD
+=======
+# Security & Environment
+>>>>>>> d2e74a3 (.)
 storage/*.key
 .env
 Homestead.yaml
 Homestead.json
 /.vagrant
+<<<<<<< HEAD
+=======
+
+# Cache & Generated files
+>>>>>>> d2e74a3 (.)
 .phpunit.result.cache
 .git-blame-ignore-revs
 .php-cs-fixer.cache
 *.phar
 *.lock
+<<<<<<< HEAD
 .git-blame-ignore-revs
 package-lock.json
 .php-cs-fixer.cache
@@ -98,3 +112,14 @@ build
 # File di log
 *.log
 >>>>>>> 6440866 (.)
+=======
+package-lock.json
+.git-rewrite/
+build
+
+# OS specific
+*:Zone.Identifier
+
+# File di log
+*.log
+>>>>>>> d2e74a3 (.)

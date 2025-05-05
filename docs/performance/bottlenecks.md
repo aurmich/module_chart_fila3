@@ -217,3 +217,29 @@ Utilizzare:
        })->chunk(1000);
    }
    ```
+<<<<<<< HEAD
+=======
+
+## Collegamenti tra versioni di bottlenecks.md
+* [bottlenecks.md](../../../../../bashscripts/docs/bottlenecks.md)
+* [bottlenecks.md](../bottlenecks.md)
+* [bottlenecks.md](../../../Gdpr/docs/bottlenecks.md)
+* [bottlenecks.md](../../../Gdpr/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../../Xot/docs/bottlenecks.md)
+* [bottlenecks.md](../../../Xot/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../../Xot/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../../Dental/docs/bottlenecks.md)
+* [bottlenecks.md](../../../User/docs/bottlenecks.md)
+* [bottlenecks.md](../../../User/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../../UI/docs/bottlenecks.md)
+* [bottlenecks.md](../../../UI/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../../Lang/docs/bottlenecks.md)
+* [bottlenecks.md](../../../Lang/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../../Job/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../../Media/docs/bottlenecks.md)
+* [bottlenecks.md](../../../Media/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../../Activity/docs/bottlenecks.md)
+* [bottlenecks.md](../../../Patient/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../../Cms/docs/bottlenecks.md)
+
+>>>>>>> d2e74a3 (.)

@@ -394,4 +394,13 @@ public function up(): void
 ### Metriche di Successo
 - Tempo medio query: < 100ms
 - Hit rate indici: > 90%
+<<<<<<< HEAD
 - Riduzione scan tabelle: -80% 
+=======
+- Riduzione scan tabelle: -80% 
+## Collegamenti tra versioni di solutions.md
+* [solutions.md](../../Gdpr/docs/solutions.md)
+* [solutions.md](../../Xot/docs/solutions.md)
+* [solutions.md](../../Job/docs/solutions.md)
+
+>>>>>>> d2e74a3 (.)

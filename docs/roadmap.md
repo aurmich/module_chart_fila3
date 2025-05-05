@@ -1,6 +1,9 @@
 # Roadmap Modulo Chart
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d2e74a3 (.)
 ## 📊 Progress Overview
 | Categoria | Progresso | Note |
 |-----------|-----------|------|
@@ -221,3 +224,25 @@ Secondo le "Regole Windsurf per base_predict_fila3_mono", gli obiettivi per l'an
 ## Aggiornamento Roadmap
 Questa roadmap viene aggiornata periodicamente in base alle priorità di progetto e ai feedback degli utenti. Contribuisci segnalando nuove feature o bug tramite GitHub Issues.
 >>>>>>> 6440866 (.)
+<<<<<<< HEAD
+=======
+
+## Collegamenti tra versioni di roadmap.md
+* [roadmap.md](../../../../bashscripts/docs/roadmap.md)
+* [roadmap.md](../../../../docs/roadmap.md)
+* [roadmap.md](../../Gdpr/docs/roadmap.md)
+* [roadmap.md](../../Notify/docs/roadmap.md)
+* [roadmap.md](../../Xot/docs/roadmap.md)
+* [roadmap.md](../../Dental/docs/roadmap.md)
+* [roadmap.md](../../User/docs/roadmap.md)
+* [roadmap.md](../../UI/docs/roadmap.md)
+* [roadmap.md](../../Lang/docs/roadmap.md)
+* [roadmap.md](../../Job/docs/roadmap.md)
+* [roadmap.md](../../Media/docs/roadmap.md)
+* [roadmap.md](../../Tenant/docs/roadmap.md)
+* [roadmap.md](../../Activity/docs/roadmap.md)
+* [roadmap.md](../../Patient/docs/roadmap.md)
+* [roadmap.md](../../Cms/docs/roadmap.md)
+* [roadmap.md](../../../Themes/One/docs/roadmap.md)
+
+>>>>>>> d2e74a3 (.)

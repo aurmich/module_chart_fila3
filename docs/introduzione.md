@@ -10,3 +10,17 @@ section: content
 
 Il modulo "module_chart" è un pacchetto aggiuntivo per Laravel che fornisce funzionalità per creare grafici e diagrammi.
 
+<<<<<<< HEAD
+=======
+## Collegamenti
+
+- [Torna a README](./README.md)
+- [Vai a Installazione](./installazione.md)
+- [Vai a Aggiornamenti](./aggiornamenti.md)
+- [Vai a Errori](./errori.md)
+
+## Collegamenti tra versioni di introduzione.md
+* [introduzione.md](laravel/Modules/Chart/docs/introduzione.md)
+* [introduzione.md](laravel/Modules/Cms/docs/introduzione.md)
+
+>>>>>>> d2e74a3 (.)

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d2e74a3 (.)
 # Analisi dei Colli di Bottiglia - Modulo Chart
 
 ## Panoramica
@@ -116,6 +119,7 @@ public function execute(ChartData $chartData): Graph {
 - Utilizzare Laravel Horizon per monitoraggio code
 - Implementare circuit breaker per operazioni critiche
 - Aggiungere metrics per monitoraggio performance 
+<<<<<<< HEAD
 =======
 # Colli di Bottiglia e Soluzioni - Modulo Chart
 
@@ -139,6 +143,15 @@ Il rendering di grafici complessi può causare rallentamenti, soprattutto con gr
    - Esempio:
    ```php
    use Illuminate\Support\Facades\Cache;
+=======
+
+## Collegamenti
+
+- [Torna a README](./README.md)
+- [Vai a Roadmap](./roadmap.md)
+- [Vai a CI](./ci.md)
+- [Vai a Errori](./errori.md)
+>>>>>>> d2e74a3 (.)
    $data = Cache::remember('chart_data_'.$chartId, 600, fn() => $this->getChartData($chartId));
    ```
 2. **Lazy Loading**
@@ -164,4 +177,31 @@ Aggiorna questo documento ogni volta che viene identificato un nuovo collo di bo
 
 [Torna al README del Modulo Chart](./README.md)
 [Vai alla Roadmap](./roadmap.md)
+<<<<<<< HEAD
 >>>>>>> 6440866 (.)
+=======
+
+
+## Collegamenti tra versioni di bottlenecks.md
+* [bottlenecks.md](../../../../bashscripts/docs/bottlenecks.md)
+* [bottlenecks.md](performance/bottlenecks.md)
+* [bottlenecks.md](../../Gdpr/docs/bottlenecks.md)
+* [bottlenecks.md](../../Gdpr/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../Xot/docs/bottlenecks.md)
+* [bottlenecks.md](../../Xot/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../Xot/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../Dental/docs/bottlenecks.md)
+* [bottlenecks.md](../../User/docs/bottlenecks.md)
+* [bottlenecks.md](../../User/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../UI/docs/bottlenecks.md)
+* [bottlenecks.md](../../UI/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../Lang/docs/bottlenecks.md)
+* [bottlenecks.md](../../Lang/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../Job/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../Media/docs/bottlenecks.md)
+* [bottlenecks.md](../../Media/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../Activity/docs/bottlenecks.md)
+* [bottlenecks.md](../../Patient/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../Cms/docs/bottlenecks.md)
+
+>>>>>>> d2e74a3 (.)

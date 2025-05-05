@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPStan Report - Livello 6
 
 ## Errori rilevati
@@ -42,6 +43,53 @@ Trovati 24 errori al livello 6.
 - I nomi di metodi e proprietà siano corretti
 
 #### Linea 62: Constant MARK_UTRIANGLE not found.
+=======
+# Rapporto PHPStan Livello 6 per il modulo Chart
+
+Data analisi: 2025-05-05 11:15:00
+
+## Riepilogo
+
+Trovati errori al livello 6 che richiedono attenzione.
+
+## Errori e suggerimenti
+
+### File: `{project_root}/laravel/Modules/Chart/Providers/ChartServiceProvider.php`
+
+#### Linea 11: Class Modules\Chart\Providers\ChartServiceProvider extends unknown class Modules\Chart\app\Providers\ChartServiceProvider.
+
+**Suggerimento generale**: Rivedi il codice per assicurarti che:
+- Tutte le classi/interfacce utilizzate siano importate correttamente
+- I namespace siano corretti e coerenti
+- Le classi estese esistano nel percorso specificato
+
+### File: `{project_root}/laravel/Modules/Chart/app/Filament/Resources/ChartResource/Pages/ListCharts.php`
+
+#### Linea 30: Method Modules\Chart\Filament\Resources\ChartResource\Pages\ListCharts::getListTableColumns() should return array<string, Filament\Tables\Columns\Column> but returns array<int, Filament\Tables\Columns\TextColumn>.
+
+**Suggerimento generale**: Rivedi il codice per assicurarti che:
+- I metodi restituiscano i tipi corretti secondo le interfacce implementate
+- Gli array associativi utilizzino chiavi di tipo string quando richiesto
+- I tipi di ritorno siano dichiarati correttamente
+
+### File: `{project_root}/laravel/Modules/Chart/app/Models/Chart.php`
+
+#### Linea 26: PHPDoc tag @property-read per proprietà contiene riferimenti a classi sconosciute.
+
+**Suggerimento generale**: Rivedi il codice per assicurarti che:
+- Tutte le classi referenziate nei PHPDoc esistano e siano importate
+- I namespace siano corretti
+- Le dipendenze tra moduli siano gestite correttamente
+
+### File: `{project_root}/laravel/Modules/Chart/app/Actions/JpGraph/V1/LineSubQuestionAction.php`
+
+#### Linea 60-62: Costanti non trovate (MARK_FILLEDCIRCLE, MARK_UTRIANGLE).
+
+**Suggerimento generale**: Rivedi il codice per assicurarti che:
+- Tutte le costanti utilizzate siano definite o importate
+- Le librerie esterne siano importate correttamente
+- I namespace siano corretti
+>>>>>>> d2e74a3 (.)
 
 **Suggerimento generale**: Rivedi il codice per assicurarti che:
 - Tutte le classi/interfacce utilizzate siano importate correttamente
@@ -241,6 +289,27 @@ Trovati 24 errori al livello 6.
 - [Tipi in PHP](https://www.php.net/manual/en/language.types.declarations.php)
 - [PSR-12: Standard di codifica](https://www.php-fig.org/psr/psr-12/)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7d3b0bb (.)
 =======
 >>>>>>> 6440866 (.)
+=======
+
+## Collegamenti tra versioni di level_6.md
+* [level_6.md](laravel/Modules/Chart/docs/phpstan/level_6.md)
+* [level_6.md](laravel/Modules/Reporting/docs/phpstan/level_6.md)
+* [level_6.md](laravel/Modules/Gdpr/docs/phpstan/level_6.md)
+* [level_6.md](laravel/Modules/Notify/docs/phpstan/level_6.md)
+* [level_6.md](laravel/Modules/Xot/docs/phpstan/level_6.md)
+* [level_6.md](laravel/Modules/Dental/docs/phpstan/level_6.md)
+* [level_6.md](laravel/Modules/User/docs/phpstan/level_6.md)
+* [level_6.md](laravel/Modules/UI/docs/phpstan/level_6.md)
+* [level_6.md](laravel/Modules/Lang/docs/phpstan/level_6.md)
+* [level_6.md](laravel/Modules/Job/docs/phpstan/level_6.md)
+* [level_6.md](laravel/Modules/Media/docs/phpstan/level_6.md)
+* [level_6.md](laravel/Modules/Tenant/docs/phpstan/level_6.md)
+* [level_6.md](laravel/Modules/Activity/docs/phpstan/level_6.md)
+* [level_6.md](laravel/Modules/Patient/docs/phpstan/level_6.md)
+* [level_6.md](laravel/Modules/Cms/docs/phpstan/level_6.md)
+
+>>>>>>> d2e74a3 (.)

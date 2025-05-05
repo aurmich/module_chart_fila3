@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPStan Report - Livello 3
 
 ## Errori rilevati
@@ -21,6 +22,8 @@
 =======
 =======
 >>>>>>> 6440866 (.)
+=======
+>>>>>>> d2e74a3 (.)
 # Rapporto PHPStan Livello 3 per il modulo Chart
 
 Data analisi: 2025-04-15 21:45:17
@@ -233,6 +236,27 @@ Trovati 23 errori al livello 3.
 - [Tipi in PHP](https://www.php.net/manual/en/language.types.declarations.php)
 - [PSR-12: Standard di codifica](https://www.php-fig.org/psr/psr-12/)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7d3b0bb (.)
 =======
 >>>>>>> 6440866 (.)
+=======
+
+## Collegamenti tra versioni di level_3.md
+* [level_3.md](laravel/Modules/Chart/docs/phpstan/level_3.md)
+* [level_3.md](laravel/Modules/Reporting/docs/phpstan/level_3.md)
+* [level_3.md](laravel/Modules/Gdpr/docs/phpstan/level_3.md)
+* [level_3.md](laravel/Modules/Notify/docs/phpstan/level_3.md)
+* [level_3.md](laravel/Modules/Xot/docs/phpstan/level_3.md)
+* [level_3.md](laravel/Modules/Dental/docs/phpstan/level_3.md)
+* [level_3.md](laravel/Modules/User/docs/phpstan/level_3.md)
+* [level_3.md](laravel/Modules/UI/docs/phpstan/level_3.md)
+* [level_3.md](laravel/Modules/Lang/docs/phpstan/level_3.md)
+* [level_3.md](laravel/Modules/Job/docs/phpstan/level_3.md)
+* [level_3.md](laravel/Modules/Media/docs/phpstan/level_3.md)
+* [level_3.md](laravel/Modules/Tenant/docs/phpstan/level_3.md)
+* [level_3.md](laravel/Modules/Activity/docs/phpstan/level_3.md)
+* [level_3.md](laravel/Modules/Patient/docs/phpstan/level_3.md)
+* [level_3.md](laravel/Modules/Cms/docs/phpstan/level_3.md)
+
+>>>>>>> d2e74a3 (.)

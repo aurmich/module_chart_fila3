@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+<<<<<<< HEAD
 import laravel, { refreshPaths } from 'laravel-vite-plugin'
 
 export default defineConfig({
@@ -30,6 +31,35 @@ export default defineConfig({
 =======
                 //__dirname + '/Resources/assets/sass/app.scss',
 >>>>>>> 6440866 (.)
+=======
+import laravel, { refreshPaths } from 'laravel-vite-plugin';
+
+export default defineConfig({
+    build: {
+        // Definizione della directory di output per i file compilati
+        outDir: './resources/dist',
+        emptyOutDir: false,
+        manifest: "manifest.json",
+        // Opzioni rollup commentate ma mantenute per riferimento futuro
+        /* 
+        rollupOptions: {
+            output: {
+                entryFileNames: `assets/[name].js`,
+                chunkFileNames: `assets/[name].js`,
+                assetFileNames: `assets/[name].[ext]`
+            }
+        }
+        */
+    },
+    plugins: [
+        laravel({
+            // Directory pubblica per i file compilati
+            publicDirectory: '../../../public_html',
+            buildDirectory: 'assets/chart',
+            input: [
+                // File SCSS commentato - manteniamo il percorso con nomenclatura Resources (maiuscolo)
+                // __dirname + '/Resources/assets/sass/app.scss',
+>>>>>>> d2e74a3 (.)
                 __dirname + '/resources/css/app.css',
                 __dirname + '/resources/js/app.js',
                 __dirname + '/resources/js/filament-chart-js-plugins'
@@ -40,6 +70,7 @@ export default defineConfig({
     ],
 });
 
+<<<<<<< HEAD
 //export const paths = [
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -54,3 +85,10 @@ export default defineConfig({
 //    'Modules/Quaeris/Resources/assets/js/app.js',
 >>>>>>> 6440866 (.)
 //];
+=======
+// Percorsi commentati mantenuti per riferimento
+// export const paths = [
+//    'Modules/Quaeris/Resources/assets/sass/app.scss',
+//    'Modules/Quaeris/Resources/assets/js/app.js',
+// ];
+>>>>>>> d2e74a3 (.)

@@ -1,8 +1,11 @@
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6440866 (.)
+=======
+>>>>>>> d2e74a3 (.)
   "Resources/css/app.css": {
     "file": "assets/app-l0sNRNKZ.js",
     "name": "app",
@@ -21,6 +24,7 @@
     "src": "Resources/js/filament-chart-js-plugins.js",
     "isEntry": true
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 =======
@@ -47,3 +51,6 @@
 =======
 }
 >>>>>>> 6440866 (.)
+=======
+}
+>>>>>>> d2e74a3 (.)

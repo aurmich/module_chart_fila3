@@ -21,6 +21,7 @@ class AdminPanelProvider extends XotBasePanelProvider
         // $panel->assets([
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         //    Js::make('chart-js-plugins', Vite::asset('Resources/js/filament-chart-js-plugins.js', 'assets/chart'))->module(),
 =======
         //    Js::make('chart-js-plugins', Vite::asset('resources/js/filament-chart-js-plugins.js', 'assets/chart'))->module(),
@@ -28,6 +29,9 @@ class AdminPanelProvider extends XotBasePanelProvider
 =======
         //    Js::make('chart-js-plugins', Vite::asset('Resources/js/filament-chart-js-plugins.js', 'assets/chart'))->module(),
 >>>>>>> 6440866 (.)
+=======
+        //    Js::make('chart-js-plugins', Vite::asset('resources/js/filament-chart-js-plugins.js', 'assets/chart'))->module(),
+>>>>>>> d2e74a3 (.)
         // ]);
         FilamentAsset::register([
             Js::make('chart-js-plugins', Vite::asset('resources/js/filament-chart-js-plugins.js', 'assets/chart'))->module(),
