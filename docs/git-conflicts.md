@@ -51,6 +51,20 @@ La risoluzione dei conflitti è stata effettuata con un approccio conservativo:
 - **Risoluzione**: Creata una versione unificata che segue le convenzioni di documentazione
 - **Impatto**: Documentazione coerente e aggiornata
 
+### 4. File di Configurazione Git
+
+#### `.gitignore`
+- **Conflitto**: Multiple versioni del file con regole duplicate e organizzazione diversa
+- **Risoluzione**: 
+  - Unificate le regole duplicate
+  - Organizzate le regole in sezioni logiche (Dependencies, Laravel, Security, Cache, OS, Logs)
+  - Mantenute tutte le regole importanti da ogni versione
+  - Standardizzato i commenti in inglese
+- **Impatto**: 
+  - Migliore organizzazione e manutenibilità del file
+  - Nessuna perdita di regole importanti
+  - Coerenza con le convenzioni del progetto
+
 ## Best Practices per Evitare Conflitti Futuri
 
 ### 1. Struttura dei File
@@ -91,3 +105,4 @@ La risoluzione dei conflitti è stata effettuata con un approccio conservativo:
 - [Bottlenecks](bottlenecks.md) - Analisi dei colli di bottiglia
 - [Filament Integration](filament.md) - Integrazione con Filament
 - [Convenzioni di Naming](../../../../docs/standards/file_naming_conventions.md) - Standard per la nomenclatura dei file
+- [Contributing Guidelines](advanced/contributing.md) - Linee guida per i contributori

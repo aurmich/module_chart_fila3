@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dacab4a (.)
 # API del Modulo Chart
 
 Questo documento descrive le principali API disponibili nel modulo Chart, fornendo riferimenti e esempi di utilizzo.
@@ -315,9 +311,7 @@ public function generateDashboard()
         'usersChart' => Chart::render($usersChart)
     ]);
 }
-<<<<<<< HEAD
 ``` 
-=======
 # API del Modulo Chart
 
 Questo documento descrive le principali API disponibili nel modulo Chart, fornendo riferimenti e esempi di utilizzo.
@@ -637,7 +631,6 @@ public function generateDashboard()
 * [api.md](../../../Dental/docs/api.md)
 * [api.md](../../../Patient/docs/api.md)
 
->>>>>>> d2e74a3 (.)
 =======
 ``` 
 >>>>>>> dacab4a (.)

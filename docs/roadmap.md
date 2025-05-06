@@ -1,9 +1,5 @@
 # Roadmap Modulo Chart
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> d2e74a3 (.)
 ## 📊 Progress Overview
 | Categoria | Progresso | Note |
 |-----------|-----------|------|
@@ -224,8 +220,6 @@ Secondo le "Regole Windsurf per base_predict_fila3_mono", gli obiettivi per l'an
 ## Aggiornamento Roadmap
 Questa roadmap viene aggiornata periodicamente in base alle priorità di progetto e ai feedback degli utenti. Contribuisci segnalando nuove feature o bug tramite GitHub Issues.
 >>>>>>> 6440866 (.)
-<<<<<<< HEAD
-=======
 
 ## Collegamenti tra versioni di roadmap.md
 * [roadmap.md](../../../../bashscripts/docs/roadmap.md)
@@ -245,4 +239,3 @@ Questa roadmap viene aggiornata periodicamente in base alle priorità di progett
 * [roadmap.md](../../Cms/docs/roadmap.md)
 * [roadmap.md](../../../Themes/One/docs/roadmap.md)
 
->>>>>>> d2e74a3 (.)

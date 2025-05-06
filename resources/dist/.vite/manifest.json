@@ -1,12 +1,41 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6440866 (.)
-=======
->>>>>>> d2e74a3 (.)
+  "resources/js/app.js": {
+    "file": "assets/app-[hash].js",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": ["assets/app-[hash].css"]
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-[hash].css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/chart.js": {
+    "file": "assets/chart-[hash].js",
+    "src": "resources/js/chart.js",
+    "isEntry": true,
+    "css": ["assets/chart-[hash].css"]
+  },
+  "resources/css/chart.css": {
+    "file": "assets/chart-[hash].css",
+    "src": "resources/css/chart.css",
+    "isEntry": true
+  },
+  "resources/js/filament-chart-js-plugins.js": {
+    "file": "assets/filament-chart-js-plugins-[hash].js",
+    "name": "filament-chart-js-plugins",
+    "src": "resources/js/filament-chart-js-plugins.js",
+    "isEntry": true
+  }
+}
+
+
+
+
+
+ 6440866 (.)
+
+ d2e74a3 (.)
   "Resources/css/app.css": {
     "file": "assets/app-l0sNRNKZ.js",
     "name": "app",
@@ -25,12 +54,12 @@
     "src": "Resources/js/filament-chart-js-plugins.js",
     "isEntry": true
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+
 }
-=======
-=======
->>>>>>> dacab4a (.)
+
+
+ dacab4a (.)
   "resources/css/app.css": {
     "file": "assets/app-l0sNRNKZ.js",
     "name": "app",
@@ -50,13 +79,13 @@
     "isEntry": true
   }
 }
-<<<<<<< HEAD
->>>>>>> 7d3b0bb (.)
-=======
+
+ 7d3b0bb (.)
+
 }
->>>>>>> 6440866 (.)
-=======
+ 6440866 (.)
+
 }
->>>>>>> d2e74a3 (.)
-=======
->>>>>>> dacab4a (.)
+ d2e74a3 (.)
+
+ dacab4a (.)

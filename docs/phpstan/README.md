@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dacab4a (.)
 # Analisi PHPStan per il modulo Chart
 
 Data: Wed Apr 23 10:42:39 CEST 2025
@@ -12,12 +7,9 @@ Data: Wed Apr 23 10:42:39 CEST 2025
 | Livello | Stato | Errori |
 |---------|-------|--------|
 | 1 | ❌ Errore | Errore di esecuzione |
-## Collegamenti
 
-- [Report Generale](/docs/phpstan/README.md)
-<<<<<<< HEAD
-=======
-# Analisi PHPStan - Modulo Chart
+## Panoramica
+Questo documento descrive l'analisi statica del codice tramite PHPStan per il modulo Chart, inclusi i livelli di analisi, gli errori comuni e le soluzioni implementate.
 
 ## Struttura della Documentazione
 
@@ -36,49 +28,6 @@ cd laravel/Modules/Chart
 composer install
 vendor/bin/phpstan analyse --error-format=json > docs/phpstan/analysis.json
 ```
-
-## Categorie di Errori
-
-L'analisi PHPStan individuerà diverse categorie di errori:
-
-1. **Errori di Tipo**
-   - Parametri mancanti
-   - Tipi di ritorno non corretti
-   - Tipi di parametri non corretti
-
-2. **Errori di Accesso**
-   - Accesso a proprietà/metodi non esistenti
-   - Accesso a proprietà/metodi privati
-
-3. **Errori di Sintassi**
-   - Chiamate a metodi statici su istanze
-   - Chiamate a metodi non statici in modo statico
-
-4. **Errori di Logica**
-   - Condizioni sempre vere/false
-   - Dead code
-   - Unreachable code
-
-## Piano di Correzione
-
-Una volta completata l'analisi di tutti i moduli, procederemo con le correzioni seguendo questo ordine:
-
-1. Errori critici che impediscono il funzionamento
-2. Errori di tipo che potrebbero causare bug
-3. Errori di accesso che potrebbero causare eccezioni
-4. Errori di sintassi e logica minori
-
-## Note
-
-- Non correggere gli errori prima di avere un quadro completo di tutti i moduli
-- Documentare ogni errore trovato con la relativa soluzione proposta
-- Mantenere aggiornato il file baseline dopo ogni correzione
->>>>>>> 7d3b0bb (.)
-=======
-# PHPStan Analysis - Modulo Chart
-
-## Panoramica
-Questo documento descrive l'analisi statica del codice tramite PHPStan per il modulo Chart, inclusi i livelli di analisi, gli errori comuni e le soluzioni implementate.
 
 ## Livelli di Analisi
 
@@ -256,82 +205,3 @@ php artisan phpstan:fix app/Models/Chart.php
 * [README.md](../../../../../bashscripts/docs/README.md)
 * [README.md](../../../../../bashscripts/docs/it/README.md)
 * [README.md](../../../../../docs/laravel-app/phpstan/README.md)
-* [README.md](../../../../../docs/laravel-app/README.md)
-* [README.md](../../../../../docs/moduli/struttura/README.md)
-* [README.md](../../../../../docs/moduli/README.md)
-* [README.md](../../../../../docs/moduli/manutenzione/README.md)
-* [README.md](../../../../../docs/moduli/core/README.md)
-* [README.md](../../../../../docs/moduli/installati/README.md)
-* [README.md](../../../../../docs/moduli/comandi/README.md)
-* [README.md](../../../../../docs/phpstan/README.md)
-* [README.md](../../../../../docs/README.md)
-* [README.md](../../../../../docs/module-links/README.md)
-* [README.md](../../../../../docs/troubleshooting/git-conflicts/README.md)
-* [README.md](../../../../../docs/tecnico/laraxot/README.md)
-* [README.md](../../../../../docs/modules/README.md)
-* [README.md](../../../../../docs/conventions/README.md)
-* [README.md](../../../../../docs/amministrazione/backup/README.md)
-* [README.md](../../../../../docs/amministrazione/monitoraggio/README.md)
-* [README.md](../../../../../docs/amministrazione/README.md)
-* [README.md](../../../../../docs/amministrazione/deployment/README.md)
-* [README.md](../../../../../docs/translations/README.md)
-* [README.md](../../../../../docs/roadmap/README.md)
-* [README.md](../../../../../docs/ide/cursor/README.md)
-* [README.md](../../../../../docs/implementazione/api/README.md)
-* [README.md](../../../../../docs/implementazione/README.md)
-* [README.md](../../../../../docs/implementazione/testing/README.md)
-* [README.md](../../../../../docs/implementazione/pazienti/README.md)
-* [README.md](../../../../../docs/implementazione/ui/README.md)
-* [README.md](../../../../../docs/implementazione/dental/README.md)
-* [README.md](../../../../../docs/implementazione/core/README.md)
-* [README.md](../../../../../docs/implementazione/reporting/README.md)
-* [README.md](../../../../../docs/implementazione/isee/README.md)
-* [README.md](../../../../../docs/it/README.md)
-* [README.md](../../../../vendor/mockery/mockery/docs/README.md)
-* [README.md](../README.md)
-* [README.md](../../../Reporting/docs/README.md)
-* [README.md](../../../Gdpr/docs/phpstan/README.md)
-* [README.md](../../../Gdpr/docs/README.md)
-* [README.md](../../../Notify/docs/phpstan/README.md)
-* [README.md](../../../Notify/docs/README.md)
-* [README.md](../../../Xot/docs/filament/README.md)
-* [README.md](../../../Xot/docs/phpstan/README.md)
-* [README.md](../../../Xot/docs/exceptions/README.md)
-* [README.md](../../../Xot/docs/README.md)
-* [README.md](../../../Xot/docs/standards/README.md)
-* [README.md](../../../Xot/docs/conventions/README.md)
-* [README.md](../../../Xot/docs/development/README.md)
-* [README.md](../../../Dental/docs/README.md)
-* [README.md](../../../User/docs/phpstan/README.md)
-* [README.md](../../../User/docs/README.md)
-* [README.md](../../../User/resources/views/docs/README.md)
-* [README.md](../../../UI/docs/phpstan/README.md)
-* [README.md](../../../UI/docs/README.md)
-* [README.md](../../../UI/docs/standards/README.md)
-* [README.md](../../../UI/docs/themes/README.md)
-* [README.md](../../../UI/docs/components/README.md)
-* [README.md](../../../Lang/docs/phpstan/README.md)
-* [README.md](../../../Lang/docs/README.md)
-* [README.md](../../../Job/docs/phpstan/README.md)
-* [README.md](../../../Job/docs/README.md)
-* [README.md](../../../Media/docs/phpstan/README.md)
-* [README.md](../../../Media/docs/README.md)
-* [README.md](../../../Tenant/docs/phpstan/README.md)
-* [README.md](../../../Tenant/docs/README.md)
-* [README.md](../../../Activity/docs/phpstan/README.md)
-* [README.md](../../../Activity/docs/README.md)
-* [README.md](../../../Patient/docs/README.md)
-* [README.md](../../../Patient/docs/standards/README.md)
-* [README.md](../../../Patient/docs/value-objects/README.md)
-* [README.md](../../../Cms/docs/blocks/README.md)
-* [README.md](../../../Cms/docs/README.md)
-* [README.md](../../../Cms/docs/standards/README.md)
-* [README.md](../../../Cms/docs/content/README.md)
-* [README.md](../../../Cms/docs/frontoffice/README.md)
-* [README.md](../../../Cms/docs/components/README.md)
-* [README.md](../../../../Themes/Two/docs/README.md)
-* [README.md](../../../../Themes/One/docs/README.md)
-
->>>>>>> d2e74a3 (.)
-=======
->>>>>>> dacab4a (.)

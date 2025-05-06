@@ -35,12 +35,9 @@ type = "graph"
 </x-graph>
 ```
 
-<<<<<<< HEAD
 Per altre informazioni leggere documentazione [ChartJs](https://www.chartjs.org/docs/latest/).
-=======
 Per altre informazioni leggere documentazione [ChartJs](https://www.chartjs.org/docs/latest/).
 ## Collegamenti tra versioni di graph.md
 * [graph.md](laravel/Modules/Chart/docs/components/graph.md)
 * [graph.md](laravel/Modules/Cms/docs/components/graph.md)
 
->>>>>>> d2e74a3 (.)

@@ -12,8 +12,6 @@ Consulta la documentazione delle traduzioni:
 Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in questo modulo e la relativa sezione in [Lang](../../Lang/docs/).
 
 > Aggiorna entrambi i riferimenti se aggiungi nuove chiavi di traduzione o modifichi la struttura.
-<<<<<<< HEAD
-=======
 
 ## Collegamenti tra versioni di lang-link.md
 * [lang-link.md](laravel/Modules/Chart/docs/lang-link.md)
@@ -31,4 +29,3 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/Modules/Patient/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
 
->>>>>>> d2e74a3 (.)

@@ -188,9 +188,7 @@ return [
 - Verifica tutte le traduzioni
 - Testa il fallback delle lingue
 - Controlla la coerenza dei formati
-<<<<<<< HEAD
 - Valuta le performance di caricamento 
-=======
 - Valuta le performance di caricamento 
 ## Collegamenti tra versioni di translations.md
 * [translations.md](laravel/Modules/Chart/docs/translations.md)
@@ -211,4 +209,3 @@ return [
 * [translations.md](laravel/Modules/Patient/docs/translations.md)
 * [translations.md](laravel/Modules/Cms/docs/translations.md)
 
->>>>>>> d2e74a3 (.)

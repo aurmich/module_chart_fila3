@@ -63,12 +63,9 @@ Questa sezione documenta tutti gli errori rilevati da PHPStan nel modulo Chart.
 - Utilizzare `@phpstan-ignore` solo come ultima risorsa
 - Documentare ogni correzione con una spiegazione
 - Aggiornare il file baseline dopo ogni correzione
-<<<<<<< HEAD
 - Testare le correzioni prima di applicarle 
-=======
 - Testare le correzioni prima di applicarle 
 ## Collegamenti tra versioni di errors.md
 * [errors.md](../../../../../docs/errors.md)
 * [errors.md](../../../Xot/docs/phpstan/errors.md)
 
->>>>>>> d2e74a3 (.)

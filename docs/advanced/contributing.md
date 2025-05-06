@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> dacab4a (.)
 # Contribuire al Modulo Chart
 
 Grazie per il tuo interesse a contribuire al modulo Chart! Questo documento fornisce le linee guida per contribuire efficacemente allo sviluppo del modulo.
@@ -103,8 +99,6 @@ Per domande su come contribuire, contatta il team di sviluppo attraverso:
 - Email: [team@quaeris.local](mailto:team@quaeris.local)
 - Discord: [Canale Quaeris](https://discord.com/invite/quaeris)
 
-<<<<<<< HEAD
-=======
 # Contribuire al Modulo Chart
 
 Grazie per il tuo interesse a contribuire al modulo Chart! Questo documento fornisce le linee guida per contribuire efficacemente allo sviluppo del modulo.
@@ -206,7 +200,6 @@ Per domande su come contribuire, contatta il team di sviluppo attraverso:
 - Email: [team@quaeris.local](mailto:team@quaeris.local)
 - Discord: [Canale Quaeris](https://discord.com/invite/quaeris)
 
->>>>>>> d2e74a3 (.)
 =======
 >>>>>>> dacab4a (.)
 Grazie ancora per il tuo contributo al modulo Chart! 

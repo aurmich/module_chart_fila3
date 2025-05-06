@@ -25,7 +25,7 @@ Nei file di documentazione all'interno delle cartelle `docs` dei moduli **non de
 Questo modulo fornisce funzionalità di grafici per l'applicazione il progetto.
 
 ## Supporto
-Per supporto e domande, contattare support@saluteora.com
+Per supporto e domande, contattare support@<nome progetto>.com
 ```
 
 #### Corretto ✅
