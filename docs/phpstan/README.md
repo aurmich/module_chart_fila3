@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dacab4a (.)
 # Analisi PHPStan per il modulo Chart
 
 Data: Wed Apr 23 10:42:39 CEST 2025
@@ -12,6 +15,7 @@ Data: Wed Apr 23 10:42:39 CEST 2025
 ## Collegamenti
 
 - [Report Generale](/docs/phpstan/README.md)
+<<<<<<< HEAD
 =======
 # Analisi PHPStan - Modulo Chart
 
@@ -329,3 +333,5 @@ php artisan phpstan:fix app/Models/Chart.php
 * [README.md](../../../../Themes/One/docs/README.md)
 
 >>>>>>> d2e74a3 (.)
+=======
+>>>>>>> dacab4a (.)

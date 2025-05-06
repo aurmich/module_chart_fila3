@@ -24,6 +24,7 @@ export default defineConfig({
             input: [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 //__dirname + '/Resources/assets/sass/app.scss',
 =======
                 //__dirname + '/resources/assets/sass/app.scss',
@@ -60,6 +61,9 @@ export default defineConfig({
                 // File SCSS commentato - manteniamo il percorso con nomenclatura Resources (maiuscolo)
                 // __dirname + '/Resources/assets/sass/app.scss',
 >>>>>>> d2e74a3 (.)
+=======
+                //__dirname + '/resources/assets/sass/app.scss',
+>>>>>>> dacab4a (.)
                 __dirname + '/resources/css/app.css',
                 __dirname + '/resources/js/app.js',
                 __dirname + '/resources/js/filament-chart-js-plugins'
@@ -74,6 +78,7 @@ export default defineConfig({
 //export const paths = [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 //    'Modules/Quaeris/Resources/assets/sass/app.scss',
 //    'Modules/Quaeris/Resources/assets/js/app.js',
 =======
@@ -84,6 +89,10 @@ export default defineConfig({
 //    'Modules/Quaeris/Resources/assets/sass/app.scss',
 //    'Modules/Quaeris/Resources/assets/js/app.js',
 >>>>>>> 6440866 (.)
+=======
+//    'Modules/Quaeris/resources/assets/sass/app.scss',
+//    'Modules/Quaeris/resources/assets/js/app.js',
+>>>>>>> dacab4a (.)
 //];
 =======
 // Percorsi commentati mantenuti per riferimento

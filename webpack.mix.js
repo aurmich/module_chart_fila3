@@ -6,6 +6,7 @@ mix.setPublicPath('../../public').mergeManifest();
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6440866 (.)
 mix.js(__dirname + '/Resources/assets/js/app.js', 'js/blog.js')
@@ -16,12 +17,15 @@ if (mix.inProduction()) {
 <<<<<<< HEAD
 }
 =======
+=======
+>>>>>>> dacab4a (.)
 mix.js(__dirname + '/resources/assets/js/app.js', 'js/blog.js')
     .sass(__dirname + '/resources/assets/sass/app.scss', 'css/blog.css');
 
 if (mix.inProduction()) {
     mix.version();
 }
+<<<<<<< HEAD
 >>>>>>> 7d3b0bb (.)
 =======
 }
@@ -46,3 +50,5 @@ if (mix.inProduction()) {
     mix.version();
 }
 >>>>>>> d2e74a3 (.)
+=======
+>>>>>>> dacab4a (.)

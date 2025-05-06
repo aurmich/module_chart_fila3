@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
        {{-- {{ module_vite('build-chart', 'Resources/assets/sass/app.scss') }} --}}
 =======
        {{-- {{ module_vite('build-chart', 'resources/assets/sass/app.scss') }} --}}
@@ -20,6 +21,9 @@
 =======
        {{-- {{ module_vite('build-chart', 'resources/assets/sass/app.scss') }} --}}
 >>>>>>> d2e74a3 (.)
+=======
+       {{-- {{ module_vite('build-chart', 'resources/assets/sass/app.scss') }} --}}
+>>>>>>> dacab4a (.)
 
     </head>
     <body>
@@ -29,6 +33,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         {{-- {{ module_vite('build-chart', 'Resources/assets/js/app.js') }} --}}
 =======
         {{-- {{ module_vite('build-chart', 'resources/assets/js/app.js') }} --}}
@@ -39,5 +44,8 @@
 =======
         {{-- {{ module_vite('build-chart', 'resources/assets/js/app.js') }} --}}
 >>>>>>> d2e74a3 (.)
+=======
+        {{-- {{ module_vite('build-chart', 'resources/assets/js/app.js') }} --}}
+>>>>>>> dacab4a (.)
     </body>
 </html>

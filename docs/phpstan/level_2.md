@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPStan Report - Livello 2
 
 ## Errori rilevati
@@ -22,6 +23,8 @@
 >>>>>>> 6440866 (.)
 =======
 >>>>>>> d2e74a3 (.)
+=======
+>>>>>>> dacab4a (.)
 # Rapporto PHPStan Livello 2 per il modulo Chart
 
 Data analisi: 2025-04-15 21:45:07
@@ -207,6 +210,7 @@ Trovati 20 errori al livello 2.
 - [PSR-12: Standard di codifica](https://www.php-fig.org/psr/psr-12/)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7d3b0bb (.)
 =======
 >>>>>>> 6440866 (.)
@@ -230,3 +234,5 @@ Trovati 20 errori al livello 2.
 * [level_2.md](laravel/Modules/Cms/docs/phpstan/level_2.md)
 
 >>>>>>> d2e74a3 (.)
+=======
+>>>>>>> dacab4a (.)

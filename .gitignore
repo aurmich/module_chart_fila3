@@ -58,6 +58,7 @@ build
 .php-cs-fixer.cache
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 *:Zone.Identifier
@@ -123,3 +124,5 @@ build
 # File di log
 *.log
 >>>>>>> d2e74a3 (.)
+=======
+>>>>>>> dacab4a (.)
