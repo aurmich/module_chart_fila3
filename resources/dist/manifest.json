@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "/js/app.js": "/js/app.js",
   "/css/app.css": "/css/app.css",
   "/js/chart.js": "/js/chart.js",
@@ -20,7 +19,6 @@
 
 }
  dacab4a (.)
-=======
   "resources/css/app.css": {
     "file": "assets/app-NIGm4AA7.css",
     "src": "resources/css/app.css",
@@ -39,4 +37,3 @@
     "isEntry": true
   }
 }
->>>>>>> 516d04a (.)

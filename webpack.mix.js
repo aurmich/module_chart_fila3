@@ -11,7 +11,6 @@ require('laravel-mix-merge-manifest');
 // Imposta il percorso pubblico e unisce il manifest
 mix.setPublicPath('../../public').mergeManifest();
 
-<<<<<<< HEAD
 // Compila i file JS e CSS del modulo
 mix.js('resources/js/app.js', 'public/js')
    .js('resources/js/chart.js', 'public/js')
@@ -19,11 +18,9 @@ mix.js('resources/js/app.js', 'public/js')
    .css('resources/css/app.css', 'public/css')
    .css('resources/css/chart.css', 'public/css')
    .version();
-=======
 // Compila i file JS e SCSS del modulo
-mix.js(__dirname + '/Resources/assets/js/app.js', 'js/chart.js')
-    .sass(__dirname + '/Resources/assets/sass/app.scss', 'css/chart.css');
->>>>>>> 516d04a (.)
+//mix.js(__dirname + '/resources/assets/js/app.js', 'js/chart.js')
+//    .sass(__dirname + '/resources/assets/sass/app.scss', 'css/chart.css');
 
 if (mix.inProduction()) {
     mix.sourceMaps();

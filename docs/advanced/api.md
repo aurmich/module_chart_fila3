@@ -631,9 +631,5 @@ public function generateDashboard()
 * [api.md](../../../Dental/docs/api.md)
 * [api.md](../../../Patient/docs/api.md)
 
-<<<<<<< HEAD
-=======
 ``` 
->>>>>>> dacab4a (.)
-=======
->>>>>>> 516d04a (.)
+

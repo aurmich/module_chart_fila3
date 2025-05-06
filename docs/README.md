@@ -1,10 +1,7 @@
 # Modulo Chart
 
-<<<<<<< HEAD
 Il modulo **Chart** gestisce la visualizzazione e l'analisi di dati tramite grafici e dashboard interattivi. Offre componenti riutilizzabili, API per la generazione di grafici, e strumenti di personalizzazione per dashboard avanzate.
-=======
 Il modulo **Chart** gestisce la visualizzazione e l’analisi di dati tramite grafici e dashboard interattivi. Offre componenti riutilizzabili, API per la generazione di grafici, e strumenti di personalizzazione per dashboard avanzate.
->>>>>>> 516d04a (.)
 
 - **Namespace:** `Modules\Chart`
 - **Dipendenze:** [Xot](../../Xot/docs/README.md), [Cms](../../Cms/docs/README.md), [UI](../../UI/docs/README.md), [Lang](../../Lang/docs/README.md)
@@ -58,7 +55,6 @@ Altri file e directory:
 
 ---
 
-<<<<<<< HEAD
 ## Gestione dei Conflitti Git
 
 Il modulo Chart segue un approccio strutturato per la gestione dei conflitti git. Per dettagli completi, consultare [git-conflicts.md](./git-conflicts.md).
@@ -73,7 +69,6 @@ Il modulo Chart segue un approccio strutturato per la gestione dei conflitti git
 - `.gitignore`: Unificazione e organizzazione delle regole di esclusione
 - `vite.config.js`: Configurazione build e asset management
 - `README.md`: Documentazione e collegamenti bidirezionali
-=======
 ## Gestione build assets e output
 
 Gli asset del modulo Chart devono essere generati nella directory `./resources/dist` del modulo. La configurazione di Vite deve includere `emptyOutDir: false` e `manifest: "manifest.json"` per garantire la coerenza con le regole di progetto SaluteOra.
@@ -88,7 +83,6 @@ I percorsi storici (es. `Resources/assets/sass/app.scss`) possono essere lasciat
 **Collegamenti:**
 - [Regole Filament Resources](/docs/regole/filament-resources.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
->>>>>>> 516d04a (.)
 
 ---
 
@@ -130,8 +124,6 @@ _Per contribuire alla documentazione:_
 2. Aggiorna sempre i collegamenti bidirezionali.
 3. Documenta le modifiche in modo chiaro.
 4. Mantieni alta la qualità e la leggibilità.
-<<<<<<< HEAD
-=======
 ## Panoramica
 Il modulo Chart fornisce funzionalità avanzate per la creazione e gestione di grafici all'interno dell'applicazione. Supporta diversi tipi di grafici e si integra con Filament per una gestione semplificata.
 
@@ -352,4 +344,3 @@ Per supporto e domande, contattare il team di sviluppo.
 * [README.md](laravel/Modules/Cms/docs/components/README.md)
 * [README.md](laravel/Themes/Two/docs/README.md)
 * [README.md](laravel/Themes/One/docs/README.md)
->>>>>>> 516d04a (.)
