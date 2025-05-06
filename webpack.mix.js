@@ -19,13 +19,8 @@ mix.js('resources/js/app.js', 'public/js')
    .css('resources/css/chart.css', 'public/css')
    .version();
 // Compila i file JS e SCSS del modulo
-<<<<<<< HEAD
 //mix.js(__dirname + '/resources/assets/js/app.js', 'js/chart.js')
 //    .sass(__dirname + '/resources/assets/sass/app.scss', 'css/chart.css');
-=======
-mix.js(__dirname + '/Resources/assets/js/app.js', 'js/chart.js')
-    .sass(__dirname + '/Resources/assets/sass/app.scss', 'css/chart.css');
->>>>>>> f06d211 (.)
 
 if (mix.inProduction()) {
     mix.sourceMaps();

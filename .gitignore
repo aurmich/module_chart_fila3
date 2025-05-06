@@ -90,14 +90,9 @@ build
 .git-blame-ignore-revs
 .git-blame-ignore-revs
 .php-cs-fixer.cache
-=======
 
 # File di log
 *.log
-<<<<<<< HEAD
->>>>>>> 516d04a (.)
-=======
->>>>>>> f06d211 (.)
 package-lock.json
 .git-rewrite/
 build
@@ -107,10 +102,6 @@ build
 
 # Log files
 *.log
-<<<<<<< HEAD
--e
 # PHPStan documentation
 docs/phpstan/
-=======
->>>>>>> f06d211 (.)
 
