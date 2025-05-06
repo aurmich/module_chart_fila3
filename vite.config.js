@@ -33,3 +33,18 @@ export default defineConfig({
         }),
     ],
 });
+<<<<<<< HEAD
+=======
+//    'Modules/Quaeris/Resources/assets/sass/app.scss',
+//    'Modules/Quaeris/Resources/assets/js/app.js',
+//    'Modules/Quaeris/resources/assets/sass/app.scss',
+//    'Modules/Quaeris/resources/assets/js/app.js',
+//    'Modules/Quaeris/Resources/assets/sass/app.scss',
+//    'Modules/Quaeris/Resources/assets/js/app.js',
+//];
+// Percorsi commentati mantenuti per riferimento
+// export const paths = [
+//    'Modules/Quaeris/Resources/assets/sass/app.scss',
+//    'Modules/Quaeris/Resources/assets/js/app.js',
+// ];
+>>>>>>> f06d211 (.)

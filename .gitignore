@@ -94,7 +94,10 @@ build
 
 # File di log
 *.log
+<<<<<<< HEAD
 >>>>>>> 516d04a (.)
+=======
+>>>>>>> f06d211 (.)
 package-lock.json
 .git-rewrite/
 build
@@ -104,7 +107,10 @@ build
 
 # Log files
 *.log
+<<<<<<< HEAD
 -e
 # PHPStan documentation
 docs/phpstan/
+=======
+>>>>>>> f06d211 (.)
 

@@ -1,6 +1,9 @@
 # Modulo Chart
 
+<<<<<<< HEAD
 Il modulo **Chart** gestisce la visualizzazione e l'analisi di dati tramite grafici e dashboard interattivi. Offre componenti riutilizzabili, API per la generazione di grafici, e strumenti di personalizzazione per dashboard avanzate.
+=======
+>>>>>>> f06d211 (.)
 Il modulo **Chart** gestisce la visualizzazione e l’analisi di dati tramite grafici e dashboard interattivi. Offre componenti riutilizzabili, API per la generazione di grafici, e strumenti di personalizzazione per dashboard avanzate.
 
 - **Namespace:** `Modules\Chart`
@@ -55,6 +58,7 @@ Altri file e directory:
 
 ---
 
+<<<<<<< HEAD
 ## Gestione dei Conflitti Git
 
 Il modulo Chart segue un approccio strutturato per la gestione dei conflitti git. Per dettagli completi, consultare [git-conflicts.md](./git-conflicts.md).
@@ -69,6 +73,8 @@ Il modulo Chart segue un approccio strutturato per la gestione dei conflitti git
 - `.gitignore`: Unificazione e organizzazione delle regole di esclusione
 - `vite.config.js`: Configurazione build e asset management
 - `README.md`: Documentazione e collegamenti bidirezionali
+=======
+>>>>>>> f06d211 (.)
 ## Gestione build assets e output
 
 Gli asset del modulo Chart devono essere generati nella directory `./resources/dist` del modulo. La configurazione di Vite deve includere `emptyOutDir: false` e `manifest: "manifest.json"` per garantire la coerenza con le regole di progetto SaluteOra.

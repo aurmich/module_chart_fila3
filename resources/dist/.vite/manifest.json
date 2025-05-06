@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "resources/js/app.js": {
     "file": "assets/app-[hash].js",
     "src": "resources/js/app.js",
@@ -36,6 +37,8 @@
  6440866 (.)
 
  d2e74a3 (.)
+=======
+>>>>>>> f06d211 (.)
   "Resources/css/app.css": {
     "file": "assets/app-l0sNRNKZ.js",
     "name": "app",
@@ -54,6 +57,7 @@
     "src": "Resources/js/filament-chart-js-plugins.js",
     "isEntry": true
   }
+<<<<<<< HEAD
 
 
 }
@@ -90,3 +94,6 @@
 
  dacab4a (.)
 }
+=======
+}
+>>>>>>> f06d211 (.)
