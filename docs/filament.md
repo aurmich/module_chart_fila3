@@ -3,6 +3,7 @@ https://medium.com/@laravelprotips/filament-streamline-multiple-widgets-with-one
 
 
 https://github.com/awcodes/overlook?tab=readme-ov-file
+<<<<<<< HEAD
 
 ## Collegamenti
 * [README.md](README.md)
@@ -20,3 +21,5 @@ https://github.com/awcodes/overlook?tab=readme-ov-file
 * [filament.md](laravel/Modules/Activity/docs/filament.md)
 * [filament.md](laravel/Modules/Cms/docs/filament.md)
 
+=======
+>>>>>>> 516d04a (.)

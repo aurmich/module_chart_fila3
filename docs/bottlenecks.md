@@ -194,6 +194,17 @@ Il rendering di grafici complessi può causare rallentamenti, soprattutto con gr
    - Esempio:
    ```php
    use Illuminate\Support\Facades\Cache;
+<<<<<<< HEAD
+=======
+=======
+
+## Collegamenti
+
+- [Torna a README](./README.md)
+- [Vai a Roadmap](./roadmap.md)
+- [Vai a CI](./ci.md)
+- [Vai a Errori](./errori.md)
+>>>>>>> 516d04a (.)
    $data = Cache::remember('chart_data_'.$chartId, 600, fn() => $this->getChartData($chartId));
    ```
 2. **Lazy Loading**
@@ -219,6 +230,10 @@ Aggiorna questo documento ogni volta che viene identificato un nuovo collo di bo
 
 [Torna al README del Modulo Chart](./README.md)
 [Vai alla Roadmap](./roadmap.md)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 516d04a (.)
 
 ## Collegamenti tra versioni di bottlenecks.md
 * [bottlenecks.md](../../../../bashscripts/docs/bottlenecks.md)

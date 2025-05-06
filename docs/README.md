@@ -1,11 +1,23 @@
 # Modulo Chart
 
+<<<<<<< HEAD
 Il modulo **Chart** gestisce la visualizzazione e l'analisi di dati tramite grafici e dashboard interattivi. Offre componenti riutilizzabili, API per la generazione di grafici, e strumenti di personalizzazione per dashboard avanzate.
+=======
+Il modulo **Chart** gestisce la visualizzazione e l’analisi di dati tramite grafici e dashboard interattivi. Offre componenti riutilizzabili, API per la generazione di grafici, e strumenti di personalizzazione per dashboard avanzate.
+>>>>>>> 516d04a (.)
 
 - **Namespace:** `Modules\Chart`
 - **Dipendenze:** [Xot](../../Xot/docs/README.md), [Cms](../../Cms/docs/README.md), [UI](../../UI/docs/README.md), [Lang](../../Lang/docs/README.md)
 
 ---
+
+## Collegamenti correlati
+- [Documentazione SaluteOra](/docs/README.md)
+- [Mappa Documentazione](/docs/collegamenti-documentazione.md)
+- [Modulo Xot](../../Xot/docs/README.md)
+- [Modulo Cms](../../Cms/docs/README.md)
+- [Modulo UI](../../UI/docs/README.md)
+- [Tema One](/laravel/Themes/One/docs/README.md)
 
 ## Indice Documentazione
 
@@ -46,6 +58,7 @@ Altri file e directory:
 
 ---
 
+<<<<<<< HEAD
 ## Gestione dei Conflitti Git
 
 Il modulo Chart segue un approccio strutturato per la gestione dei conflitti git. Per dettagli completi, consultare [git-conflicts.md](./git-conflicts.md).
@@ -60,6 +73,22 @@ Il modulo Chart segue un approccio strutturato per la gestione dei conflitti git
 - `.gitignore`: Unificazione e organizzazione delle regole di esclusione
 - `vite.config.js`: Configurazione build e asset management
 - `README.md`: Documentazione e collegamenti bidirezionali
+=======
+## Gestione build assets e output
+
+Gli asset del modulo Chart devono essere generati nella directory `./resources/dist` del modulo. La configurazione di Vite deve includere `emptyOutDir: false` e `manifest: "manifest.json"` per garantire la coerenza con le regole di progetto SaluteOra.
+
+**Motivazione architetturale:**
+- Ogni modulo deve essere autonomo nella gestione degli asset
+- Si evitano conflitti con la root del progetto
+- Si facilita la manutenzione e la distribuzione modulare
+
+I percorsi storici (es. `Resources/assets/sass/app.scss`) possono essere lasciati commentati nel codice per riferimento, ma non devono essere usati attivamente.
+
+**Collegamenti:**
+- [Regole Filament Resources](/docs/regole/filament-resources.md)
+- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
+>>>>>>> 516d04a (.)
 
 ---
 
@@ -101,3 +130,226 @@ _Per contribuire alla documentazione:_
 2. Aggiorna sempre i collegamenti bidirezionali.
 3. Documenta le modifiche in modo chiaro.
 4. Mantieni alta la qualità e la leggibilità.
+<<<<<<< HEAD
+=======
+## Panoramica
+Il modulo Chart fornisce funzionalità avanzate per la creazione e gestione di grafici all'interno dell'applicazione. Supporta diversi tipi di grafici e si integra con Filament per una gestione semplificata.
+
+## Indice
+- [Installazione](./installazione.md)
+- [Filament Integration](./filament.md)
+- [Bottlenecks](./bottlenecks.md)
+- [Roadmap](./roadmap.md)
+- [PHPStan](./phpstan/README.md)
+- [PHPStan Usage](./phpstan-usage.md)
+- [Gestione Conflitti Git](./git-conflicts.md)
+- [Errori Comuni](./errori.md)
+- [Soluzioni](./solutions.md)
+
+## Struttura
+```
+Chart/
+├── app/
+│   ├── Actions/         # Azioni per la generazione grafici
+│   ├── Filament/       # Risorse e widget Filament
+│   ├── Models/         # Modelli dati
+│   └── Providers/      # Service providers
+├── config/            # Configurazione modulo
+├── database/         # Migrazioni e seeders
+├── resources/        # Asset e viste
+└── docs/            # Documentazione
+```
+
+## Funzionalità Principali
+
+### Tipi di Grafici Supportati
+- Line Charts
+- Bar Charts
+- Pie Charts
+- Area Charts
+- Mixed Charts
+- Custom Charts
+
+### Integrazione Filament
+- Resources per gestione grafici
+- Widget per dashboard
+- Form components
+- Custom actions
+
+### Personalizzazione
+- Temi personalizzabili
+- Configurazione avanzata
+- Export in vari formati
+- Responsive design
+
+## Dipendenze
+- Modulo Xot
+- Modulo UI
+- Modulo Lang
+- Laravel Framework >= 10.0
+- PHP >= 8.2
+- Filament v3.x
+
+## Configurazione
+
+### Installazione
+```bash
+composer require modules/chart
+php artisan module:enable Chart
+php artisan migrate
+```
+
+### Pubblicazione Assets
+```bash
+php artisan vendor:publish --tag=chart-config
+php artisan vendor:publish --tag=chart-views
+```
+
+## Best Practices
+
+### Creazione Grafici
+1. Utilizzare le Actions dedicate
+2. Implementare caching dove possibile
+3. Ottimizzare query dati
+4. Seguire convenzioni naming
+
+### Performance
+1. Lazy loading dei dati
+2. Caching risultati
+3. Ottimizzazione assets
+4. Monitoraggio metriche
+
+## Testing
+
+### Unit Tests
+```bash
+php artisan test --filter=ChartTest
+```
+
+### Feature Tests
+```bash
+php artisan test --filter=ChartFeatureTest
+```
+
+## Sicurezza
+- Validazione input
+- Sanitizzazione output
+- Rate limiting
+- Permessi granulari
+
+## Troubleshooting
+- [Errori Comuni](./errori.md)
+- [Soluzioni](./solutions.md)
+- [PHPStan](./phpstan/README.md)
+- [PHPStan Usage](./phpstan-usage.md)
+
+## Collegamenti Bidirezionali
+
+### Collegamenti ad Altri Moduli
+- [Modulo UI](../UI/docs/README.md)
+- [Modulo Lang](../Lang/docs/README.md)
+- [Modulo Xot](../Xot/docs/README.md)
+
+### Collegamenti Interni
+- [Documentazione API](./advanced/api.md)
+- [Contribuire](./advanced/contributing.md)
+
+## Contribuire
+- Fork del repository
+- Creazione branch (`git checkout -b feature/amazing-charts`)
+- Commit modifiche (`git commit -am 'Add: nuovi tipi di grafici'`)
+- Push branch (`git push origin feature/amazing-charts`)
+- Creazione Pull Request
+
+## Licenza
+Questo modulo è rilasciato sotto licenza MIT.
+
+## Autori
+- Team di sviluppo principale
+- Contributori della community
+
+## Supporto
+Per supporto e domande, contattare il team di sviluppo.
+## 🔗 Collegamenti
+- [Documentazione Xot](../Xot/docs/README.md)
+- [Documentazione Cms](../Cms/docs/README.md)
+- [Documentazione UI](../UI/docs/README.md)
+- [Documentazione Traduzioni](../Lang/docs/README.md) 
+## Collegamenti tra versioni di README.md
+* [README.md](bashscripts/docs/README.md)
+* [README.md](bashscripts/docs/it/README.md)
+* [README.md](docs/laravel-app/phpstan/README.md)
+* [README.md](docs/laravel-app/README.md)
+* [README.md](docs/moduli/struttura/README.md)
+* [README.md](docs/moduli/README.md)
+* [README.md](docs/moduli/manutenzione/README.md)
+* [README.md](docs/moduli/core/README.md)
+* [README.md](docs/moduli/installati/README.md)
+* [README.md](docs/moduli/comandi/README.md)
+* [README.md](docs/phpstan/README.md)
+* [README.md](docs/README.md)
+* [README.md](docs/module-links/README.md)
+* [README.md](docs/troubleshooting/git-conflicts/README.md)
+* [README.md](docs/tecnico/laraxot/README.md)
+* [README.md](docs/modules/README.md)
+* [README.md](docs/conventions/README.md)
+* [README.md](docs/amministrazione/backup/README.md)
+* [README.md](docs/amministrazione/monitoraggio/README.md)
+* [README.md](docs/amministrazione/deployment/README.md)
+* [README.md](docs/translations/README.md)
+* [README.md](docs/roadmap/README.md)
+* [README.md](docs/ide/cursor/README.md)
+* [README.md](docs/implementazione/api/README.md)
+* [README.md](docs/implementazione/testing/README.md)
+* [README.md](docs/implementazione/pazienti/README.md)
+* [README.md](docs/implementazione/ui/README.md)
+* [README.md](docs/implementazione/dental/README.md)
+* [README.md](docs/implementazione/core/README.md)
+* [README.md](docs/implementazione/reporting/README.md)
+* [README.md](docs/implementazione/isee/README.md)
+* [README.md](docs/it/README.md)
+* [README.md](laravel/vendor/mockery/mockery/docs/README.md)
+* [README.md](laravel/Modules/Chart/docs/README.md)
+* [README.md](laravel/Modules/Reporting/docs/README.md)
+* [README.md](laravel/Modules/Gdpr/docs/phpstan/README.md)
+* [README.md](laravel/Modules/Gdpr/docs/README.md)
+* [README.md](laravel/Modules/Notify/docs/phpstan/README.md)
+* [README.md](laravel/Modules/Notify/docs/README.md)
+* [README.md](laravel/Modules/Xot/docs/filament/README.md)
+* [README.md](laravel/Modules/Xot/docs/phpstan/README.md)
+* [README.md](laravel/Modules/Xot/docs/exceptions/README.md)
+* [README.md](laravel/Modules/Xot/docs/README.md)
+* [README.md](laravel/Modules/Xot/docs/standards/README.md)
+* [README.md](laravel/Modules/Xot/docs/conventions/README.md)
+* [README.md](laravel/Modules/Xot/docs/development/README.md)
+* [README.md](laravel/Modules/Dental/docs/README.md)
+* [README.md](laravel/Modules/User/docs/phpstan/README.md)
+* [README.md](laravel/Modules/User/docs/README.md)
+* [README.md](laravel/Modules/User/resources/views/docs/README.md)
+* [README.md](laravel/Modules/UI/docs/phpstan/README.md)
+* [README.md](laravel/Modules/UI/docs/README.md)
+* [README.md](laravel/Modules/UI/docs/standards/README.md)
+* [README.md](laravel/Modules/UI/docs/themes/README.md)
+* [README.md](laravel/Modules/UI/docs/components/README.md)
+* [README.md](laravel/Modules/Lang/docs/phpstan/README.md)
+* [README.md](laravel/Modules/Lang/docs/README.md)
+* [README.md](laravel/Modules/Job/docs/phpstan/README.md)
+* [README.md](laravel/Modules/Job/docs/README.md)
+* [README.md](laravel/Modules/Media/docs/phpstan/README.md)
+* [README.md](laravel/Modules/Media/docs/README.md)
+* [README.md](laravel/Modules/Tenant/docs/phpstan/README.md)
+* [README.md](laravel/Modules/Tenant/docs/README.md)
+* [README.md](laravel/Modules/Activity/docs/phpstan/README.md)
+* [README.md](laravel/Modules/Activity/docs/README.md)
+* [README.md](laravel/Modules/Patient/docs/README.md)
+* [README.md](laravel/Modules/Patient/docs/standards/README.md)
+* [README.md](laravel/Modules/Patient/docs/value-objects/README.md)
+* [README.md](laravel/Modules/Cms/docs/blocks/README.md)
+* [README.md](laravel/Modules/Cms/docs/README.md)
+* [README.md](laravel/Modules/Cms/docs/standards/README.md)
+* [README.md](laravel/Modules/Cms/docs/content/README.md)
+* [README.md](laravel/Modules/Cms/docs/frontoffice/README.md)
+* [README.md](laravel/Modules/Cms/docs/components/README.md)
+* [README.md](laravel/Themes/Two/docs/README.md)
+* [README.md](laravel/Themes/One/docs/README.md)
+>>>>>>> 516d04a (.)
