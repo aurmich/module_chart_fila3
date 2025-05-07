@@ -175,7 +175,6 @@ Secondo le "Regole Windsurf per base_predict_fila3_mono", gli obiettivi per l'an
 
 [⬅️ Torna alla Roadmap Principale](/docs/roadmap.md)
 
-=======
 ## Stato Attuale
 - **Versione**: 1.0.0
 - **Stato Implementazione**: In sviluppo
@@ -219,7 +218,6 @@ Secondo le "Regole Windsurf per base_predict_fila3_mono", gli obiettivi per l'an
 
 ## Aggiornamento Roadmap
 Questa roadmap viene aggiornata periodicamente in base alle priorità di progetto e ai feedback degli utenti. Contribuisci segnalando nuove feature o bug tramite GitHub Issues.
->>>>>>> 6440866 (.)
 
 ## Collegamenti tra versioni di roadmap.md
 * [roadmap.md](../../../../bashscripts/docs/roadmap.md)

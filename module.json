@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 {
     "name": "Chart",
     "alias": "chart",
-    "description": "",
+    "description": "Modulo per la generazione e visualizzazione di grafici e dashboard analitici",
     "keywords": [],
     "priority": 0,
     "providers": [
@@ -10,17 +9,4 @@
         "Modules\\Chart\\Providers\\Filament\\AdminPanelProvider"
     ],
     "files": []
-=======
-{
-    "name": "Chart",
-    "alias": "chart",
-    "description": "",
-    "keywords": [],
-    "priority": 0,
-    "providers": [
-        "Modules\\Chart\\Providers\\ChartServiceProvider",
-        "Modules\\Chart\\Providers\\Filament\\AdminPanelProvider"
-    ],
-    "files": []
->>>>>>> 91d19f6 (.)
 }

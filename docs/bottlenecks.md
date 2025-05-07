@@ -194,7 +194,6 @@ Il rendering di grafici complessi può causare rallentamenti, soprattutto con gr
    - Esempio:
    ```php
    use Illuminate\Support\Facades\Cache;
-=======
 
 ## Collegamenti
 
