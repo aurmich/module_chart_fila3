@@ -200,6 +200,10 @@ Per domande su come contribuire, contatta il team di sviluppo attraverso:
 - Email: [team@quaeris.local](mailto:team@quaeris.local)
 - Discord: [Canale Quaeris](https://discord.com/invite/quaeris)
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 91d19f6 (.)
 # Contribuire al Modulo Chart
 
 Grazie per il tuo interesse a contribuire al modulo Chart! Questo documento fornisce le linee guida per contribuire efficacemente allo sviluppo del modulo.
@@ -301,4 +305,8 @@ Per domande su come contribuire, contatta il team di sviluppo attraverso:
 - Email: [team@quaeris.local](mailto:team@quaeris.local)
 - Discord: [Canale Quaeris](https://discord.com/invite/quaeris)
 
+<<<<<<< HEAD
+=======
+>>>>>>> 516d04a (.)
+>>>>>>> 91d19f6 (.)
 Grazie ancora per il tuo contributo al modulo Chart! 

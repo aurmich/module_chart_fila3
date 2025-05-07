@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 providers:
   - Modules\Chart\Providers\ChartServiceProvider
   - Nwidart\Modules\LaravelModulesServiceProvider
+=======
+providers:
+  - Modules\Chart\Providers\ChartServiceProvider
+  - Nwidart\Modules\LaravelModulesServiceProvider
+>>>>>>> 91d19f6 (.)

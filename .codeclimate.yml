@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 engines:
   duplication:
     enabled: true
@@ -38,3 +39,45 @@ exclude_paths:
   - "**.md"
   - "**.json"
   - "**.xml"
+=======
+engines:
+  duplication:
+    enabled: true
+    exclude_paths:
+    - "Tests/"
+    - "config/"
+    - "src/config/"
+    - "Database/Migrations"
+
+    config:
+      languages:
+      - php
+
+  fixme:
+    enabled: true
+    exclude_paths:
+    - "Tests/"
+
+  phpmd:
+    enabled: true
+    exclude_paths:
+    - "Tests/"
+    - "Database/Migrations"
+    checks:
+      CleanCode/StaticAccess:
+        enabled: false
+      Design/CouplingBetweenObjects:
+        enabled: false
+      Naming/ShortVariable:
+        enabled: false
+
+ratings:
+  paths:
+  - "**.php"
+
+exclude_paths:
+  - "Tests/"
+  - "**.md"
+  - "**.json"
+  - "**.xml"
+>>>>>>> 91d19f6 (.)

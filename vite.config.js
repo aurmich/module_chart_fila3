@@ -33,6 +33,7 @@ export default defineConfig({
         }),
     ],
 });
+<<<<<<< HEAD
 //    'Modules/Quaeris/Resources/assets/sass/app.scss',
 //    'Modules/Quaeris/Resources/assets/js/app.js',
 //    'Modules/Quaeris/resources/assets/sass/app.scss',
@@ -45,3 +46,5 @@ export default defineConfig({
 //    'Modules/Quaeris/Resources/assets/sass/app.scss',
 //    'Modules/Quaeris/Resources/assets/js/app.js',
 // ];
+=======
+>>>>>>> 91d19f6 (.)

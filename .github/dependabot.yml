@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 version: 2
 updates:
   - package-ecosystem: "composer"
     directory: "/"
     schedule:
       interval: "daily"
+=======
+version: 2
+updates:
+  - package-ecosystem: "composer"
+    directory: "/"
+    schedule:
+      interval: "daily"
+>>>>>>> 91d19f6 (.)
