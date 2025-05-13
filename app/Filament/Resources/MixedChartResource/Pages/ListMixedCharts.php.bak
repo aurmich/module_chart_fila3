@@ -26,7 +26,11 @@ class ListMixedCharts extends XotBaseListRecords
 
 
 
+<<<<<<< HEAD
     public function getTableColumns(): array
+=======
+    public function getListTableColumns(): array
+>>>>>>> db9f26f (.)
     {
         return [
         ];

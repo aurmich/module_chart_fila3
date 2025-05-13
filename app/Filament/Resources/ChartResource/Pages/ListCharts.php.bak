@@ -25,7 +25,11 @@ class ListCharts extends XotBaseListRecords
     protected static string $resource = ChartResource::class;
 
 
+<<<<<<< HEAD
     public function getTableColumns(): array
+=======
+    public function getListTableColumns(): array
+>>>>>>> db9f26f (.)
     {
         return [
             TextColumn::make('id'),
