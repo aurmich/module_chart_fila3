@@ -1,7 +1,7 @@
 # Modulo Chart
 
 Il modulo **Chart** gestisce la visualizzazione e l'analisi di dati tramite grafici e dashboard interattivi. Offre componenti riutilizzabili, API per la generazione di grafici, e strumenti di personalizzazione per dashboard avanzate.
-Il modulo **Chart** gestisce la visualizzazione e l’analisi di dati tramite grafici e dashboard interattivi. Offre componenti riutilizzabili, API per la generazione di grafici, e strumenti di personalizzazione per dashboard avanzate.
+Il modulo **Chart** gestisce la visualizzazione e l'analisi di dati tramite grafici e dashboard interattivi. Offre componenti riutilizzabili, API per la generazione di grafici, e strumenti di personalizzazione per dashboard avanzate.
 
 - **Namespace:** `Modules\Chart`
 - **Dipendenze:** [Xot](../../Xot/docs/README.md), [Cms](../../Cms/docs/README.md), [UI](../../UI/docs/README.md), [Lang](../../Lang/docs/README.md)
@@ -344,3 +344,22 @@ Per supporto e domande, contattare il team di sviluppo.
 * [README.md](laravel/Modules/Cms/docs/components/README.md)
 * [README.md](laravel/Themes/Two/docs/README.md)
 * [README.md](laravel/Themes/One/docs/README.md)
+
+---
+
+## Server MCP consigliati per Chart
+
+Per il modulo Chart, si consiglia di utilizzare i seguenti server MCP:
+
+- **sequential-thinking**: per orchestrare pipeline di generazione grafici, analisi step-by-step e automazione di processi di visualizzazione dati.
+- **memory**: per mantenere una knowledge base di dataset, configurazioni di grafici e risultati di analisi.
+- **filesystem**: per esportare grafici, importare dataset o salvare configurazioni di visualizzazione.
+- **postgres**: se il modulo utilizza un database PostgreSQL per archiviare dati da visualizzare o analizzare.
+- **puppeteer**: per automatizzare la generazione di screenshot di grafici, esportazione in PDF o scraping di dati da dashboard web.
+
+**Nota:**
+- Usa solo server MCP Node.js disponibili su npm e avviabili con `npx`.
+- Configura sempre gli argomenti obbligatori (es. directory per filesystem, stringa di connessione per postgres).
+- Non usare fetch, mysql o redis se non attivo.
+
+Per dettagli e best practice consulta la guida generale MCP nel workspace.
