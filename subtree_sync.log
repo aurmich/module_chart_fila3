@@ -5,6 +5,7 @@
 [0;32m✅ [2025-05-12 22:18:11] Configurazione git completata con successo[0m
 [0;34mℹ️ [2025-05-12 22:26:28] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-12 22:26:28] Configurazione git completata con successo[0m
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 [0;34mℹ️ [2025-05-07 12:26:19] Configurazione avanzata git...[0m
@@ -49,3 +50,7 @@
 [0;32m✅ [2025-05-13 16:48:06] Configurazione git completata con successo[0m
 [0;34mℹ️ [2025-05-13 20:54:10] Configurazione avanzata git...[0m
 [0;32m✅ [2025-05-13 20:54:10] Configurazione git completata con successo[0m
+=======
+[0;34mℹ️ [2025-05-13 20:55:53] Configurazione avanzata git...[0m
+[0;32m✅ [2025-05-13 20:55:53] Configurazione git completata con successo[0m
+>>>>>>> de56277 (.)
