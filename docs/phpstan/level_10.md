@@ -13,7 +13,6 @@ Warning: foreach() argument must be of type array|object, null given in Command 
 ## Collegamenti
 
 - Torna all'indice principale: [Indice Report PHPStan Moduli](/docs/phpstan_modules_index.md)
-<<<<<<< HEAD
 
 ## Collegamenti tra versioni di level_10.md
 * [level_10.md](../../../Gdpr/docs/phpstan/level_10.md)
@@ -27,5 +26,3 @@ Warning: foreach() argument must be of type array|object, null given in Command 
 * [level_10.md](../../../Tenant/docs/phpstan/level_10.md)
 * [level_10.md](../../../Activity/docs/phpstan/level_10.md)
 
-=======
->>>>>>> 99e5306 (.)

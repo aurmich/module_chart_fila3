@@ -8,9 +8,6 @@ npm-debug.log
 *.phar
 *.lock
 package-lock.json
-<<<<<<< HEAD
 -e 
 # PHPStan documentation
 docs/phpstan/
-=======
->>>>>>> 99e5306 (.)

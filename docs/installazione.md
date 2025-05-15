@@ -15,7 +15,6 @@ Per installare il bacchetto basta mettere il seguente comando nella linea di com
 composer require laraxot/module_chart
 
 php artisan module_chart:install
-<<<<<<< HEAD
 ```
 ```
 ## Collegamenti tra versioni di installazione.md
@@ -23,6 +22,3 @@ php artisan module_chart:install
 * [installazione.md](laravel/Modules/Chart/docs/installazione.md)
 * [installazione.md](laravel/Modules/Cms/docs/installazione.md)
 
-=======
-```
->>>>>>> 99e5306 (.)

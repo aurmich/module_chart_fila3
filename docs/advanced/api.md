@@ -311,7 +311,6 @@ public function generateDashboard()
         'usersChart' => Chart::render($usersChart)
     ]);
 }
-<<<<<<< HEAD
 ``` 
 # API del Modulo Chart
 
@@ -634,6 +633,3 @@ public function generateDashboard()
 
 ``` 
 
-=======
-``` 
->>>>>>> 99e5306 (.)
