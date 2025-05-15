@@ -1,6 +1,7 @@
 const mix = require('laravel-mix');
 require('laravel-mix-merge-manifest');
 
+<<<<<<< HEAD
 /**
  * Configurazione Laravel Mix per il modulo Chart
  *
@@ -25,3 +26,13 @@ mix.js('resources/js/app.js', 'public/js')
 if (mix.inProduction()) {
     mix.sourceMaps();
 }
+=======
+mix.setPublicPath('../../public').mergeManifest();
+
+mix.js(__dirname + '/Resources/assets/js/app.js', 'js/blog.js')
+    .sass(__dirname + '/Resources/assets/sass/app.scss', 'css/blog.css');
+
+if (mix.inProduction()) {
+    mix.version();
+}
+>>>>>>> 99e5306 (.)

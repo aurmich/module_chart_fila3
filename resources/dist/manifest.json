@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "/js/app.js": "/js/app.js",
   "/css/app.css": "/css/app.css",
   "/js/chart.js": "/js/chart.js",
@@ -19,6 +20,8 @@
 
 }
  dacab4a (.)
+=======
+>>>>>>> 99e5306 (.)
   "resources/css/app.css": {
     "file": "assets/app-NIGm4AA7.css",
     "src": "resources/css/app.css",
@@ -36,4 +39,8 @@
     "src": "resources/js/filament-chart-js-plugins.js",
     "isEntry": true
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 99e5306 (.)

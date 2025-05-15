@@ -19,4 +19,9 @@ Can't write to file "/var/www/base_example/public_html/chart/uuid-uuid-uuid-uuid
 cd base_example/public_html
 mkdir chart
 cd ..
+<<<<<<< HEAD
 sudo chmod 777 -R .
+=======
+sudo chmod 777 -R .
+```
+>>>>>>> 99e5306 (.)

@@ -1,7 +1,11 @@
 {
     "name": "Chart",
     "alias": "chart",
+<<<<<<< HEAD
     "description": "Modulo per la generazione e visualizzazione di grafici e dashboard analitici",
+=======
+    "description": "",
+>>>>>>> 99e5306 (.)
     "keywords": [],
     "priority": 0,
     "providers": [

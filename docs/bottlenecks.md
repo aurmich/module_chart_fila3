@@ -1,6 +1,7 @@
 # Analisi dei Colli di Bottiglia - Modulo Chart
 
 ## Panoramica
+<<<<<<< HEAD
 
 Questo documento analizza i potenziali colli di bottiglia nel modulo Chart e propone soluzioni per ottimizzare le prestazioni.
 
@@ -59,6 +60,9 @@ Questo documento analizza i potenziali colli di bottiglia nel modulo Chart e pro
 - [Documentazione Performance](../performance.md)
 - [Guida Ottimizzazione](../optimization.md)
 - [Best Practices](../best-practices.md)
+=======
+Il modulo Chart è responsabile della generazione e gestione dei grafici nell'applicazione. L'analisi ha identificato diversi colli di bottiglia che impattano le performance e la scalabilità del modulo.
+>>>>>>> 99e5306 (.)
 
 ## Aree Critiche
 
@@ -171,6 +175,7 @@ public function execute(ChartData $chartData): Graph {
 ## Note di Implementazione
 - Utilizzare Laravel Horizon per monitoraggio code
 - Implementare circuit breaker per operazioni critiche
+<<<<<<< HEAD
 - Aggiungere metrics per monitoraggio performance 
 # Colli di Bottiglia e Soluzioni - Modulo Chart
 
@@ -250,3 +255,6 @@ Aggiorna questo documento ogni volta che viene identificato un nuovo collo di bo
 * [bottlenecks.md](../../Patient/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../Cms/docs/bottlenecks.md)
 
+=======
+- Aggiungere metrics per monitoraggio performance 
+>>>>>>> 99e5306 (.)

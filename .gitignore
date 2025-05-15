@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dependencies
 /vendor/
 node_modules/
@@ -46,6 +47,8 @@ build
 
 *:Zone.Identifier
 .php-cs-fixer.cache
+=======
+>>>>>>> 99e5306 (.)
 /vendor/
 node_modules/
 npm-debug.log
@@ -90,6 +93,7 @@ build
 .git-blame-ignore-revs
 .git-blame-ignore-revs
 .php-cs-fixer.cache
+<<<<<<< HEAD
 
 # File di log
 *.log
@@ -105,3 +109,5 @@ build
 # PHPStan documentation
 docs/phpstan/
 
+=======
+>>>>>>> 99e5306 (.)

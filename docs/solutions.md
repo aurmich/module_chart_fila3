@@ -394,6 +394,7 @@ public function up(): void
 ### Metriche di Successo
 - Tempo medio query: < 100ms
 - Hit rate indici: > 90%
+<<<<<<< HEAD
 - Riduzione scan tabelle: -80% 
 - Riduzione scan tabelle: -80% 
 ## Collegamenti tra versioni di solutions.md
@@ -401,3 +402,6 @@ public function up(): void
 * [solutions.md](../../Xot/docs/solutions.md)
 * [solutions.md](../../Job/docs/solutions.md)
 
+=======
+- Riduzione scan tabelle: -80% 
+>>>>>>> 99e5306 (.)

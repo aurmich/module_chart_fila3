@@ -217,6 +217,7 @@ Utilizzare:
        })->chunk(1000);
    }
    ```
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di bottlenecks.md
 * [bottlenecks.md](../../../../../bashscripts/docs/bottlenecks.md)
@@ -240,3 +241,5 @@ Utilizzare:
 * [bottlenecks.md](../../../Patient/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../../Cms/docs/bottlenecks.md)
 
+=======
+>>>>>>> 99e5306 (.)

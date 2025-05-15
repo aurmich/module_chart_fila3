@@ -7,6 +7,7 @@ Data: Wed Apr 23 10:42:39 CEST 2025
 | Livello | Stato | Errori |
 |---------|-------|--------|
 | 1 | ❌ Errore | Errore di esecuzione |
+<<<<<<< HEAD
 
 ## Panoramica
 Questo documento descrive l'analisi statica del codice tramite PHPStan per il modulo Chart, inclusi i livelli di analisi, gli errori comuni e le soluzioni implementate.
@@ -205,3 +206,8 @@ php artisan phpstan:fix app/Models/Chart.php
 * [README.md](../../../../../bashscripts/docs/README.md)
 * [README.md](../../../../../bashscripts/docs/it/README.md)
 * [README.md](../../../../../docs/laravel-app/phpstan/README.md)
+=======
+## Collegamenti
+
+- [Report Generale](/docs/phpstan/README.md)
+>>>>>>> 99e5306 (.)
