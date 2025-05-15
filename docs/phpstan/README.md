@@ -1,18 +1,12 @@
 # Analisi PHPStan per il modulo Chart
 
-Data: Wed Apr 23 21:20:51 CEST 2025
+Data: Wed Apr 23 10:42:39 CEST 2025
 
 ## Riassunto
 
 | Livello | Stato | Errori |
 |---------|-------|--------|
-<<<<<<< Updated upstream
 | 1 | ❌ Errore | Errore di esecuzione |
-=======
-| 1 | ✅ Successo | Nessun errore |
-| 2 | ❌ Errore | Errore di esecuzione |
-## Collegamenti
->>>>>>> Stashed changes
 
 ## Panoramica
 Questo documento descrive l'analisi statica del codice tramite PHPStan per il modulo Chart, inclusi i livelli di analisi, gli errori comuni e le soluzioni implementate.
