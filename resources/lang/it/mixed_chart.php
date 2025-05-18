@@ -1,6 +1,4 @@
-<?php
-declare(strict_types=1);
-return array (
+<?php return array (
   'navigation' => 
   array (
     'label' => 'mixed chart.navigation',
