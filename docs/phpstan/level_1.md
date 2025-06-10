@@ -1,46 +1,3 @@
-<<<<<<< HEAD
-=======
-# PHPStan Level 1 - Modulo Chart
-
-## Configurazione Base
-```bash
-cd /var/www/html/_bases/base_predict_platform/laravel
-./vendor/bin/phpstan analyse Modules/Chart --level=1
-```
-
-## Errori Comuni Level 1
-
-### 1. Chiamate a Metodi Inesistenti
-```php
-// Errore: Call to undefined method
-$chart->nonExistentMethod();
-
-// Correzione: Verificare che il metodo esista
-if (method_exists($chart, 'getData')) {
-    $chart->getData();
-}
-```
-
-### 2. Accesso a Proprietà Inesistenti
-```php
-// Errore: Access to undefined property
-echo $chart->undefinedProperty;
-
-// Correzione: Verificare che la proprietà esista
-if (property_exists($chart, 'data')) {
-    echo $chart->data;
-}
-```
-
-## Comandi Utili
-```bash
-# Analisi con baseline
-./vendor/bin/phpstan analyse Modules/Chart --level=1 --generate-baseline
-
-# Analisi specifica
-./vendor/bin/phpstan analyse Modules/Chart/app/Models --level=1
-```
-
 # Rapporto PHPStan Livello 1 per il modulo Chart
 
 Data analisi: 2025-04-15 21:44:57
@@ -206,4 +163,3 @@ Trovati 16 errori al livello 1.
 * [level_1.md](laravel/Modules/Patient/docs/phpstan/level_1.md)
 * [level_1.md](laravel/Modules/Cms/docs/phpstan/level_1.md)
 
->>>>>>> 2eb627a (♻️ (CreateChart.php): refactor CreateChart class to extend XotBaseCreateRecord for better functionality)
