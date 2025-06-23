@@ -264,6 +264,7 @@ return array (
     'subject' => 
     array (
       'description' => 'subject',
+      'helper_text' => 'subject',
     ),
   ),
   'actions' => 
