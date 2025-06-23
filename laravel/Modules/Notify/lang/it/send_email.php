@@ -67,6 +67,10 @@ return array (
       'label' => 'body_html',
 >>>>>>> 85c2afe6 (✨ (SpatieEmail.php): add dynamic theme support for email layout path to enhance customization)
     ),
+    'subject' => 
+    array (
+      'description' => 'subject',
+    ),
   ),
   'actions' => 
   array (
