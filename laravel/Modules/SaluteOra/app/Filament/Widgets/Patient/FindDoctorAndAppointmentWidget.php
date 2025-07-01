@@ -251,6 +251,9 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
     public function previousMonth(): void
     {
         $currentDate = Carbon::createFromFormat('Y-m', $this->currentCalendarMonth);
+        if(!$currentDate){
+            return;
+        }
         $this->currentCalendarMonth = $currentDate->subMonthNoOverflow()->format('Y-m');
         
         // ✅ Refresh del form per aggiornare il calendario
@@ -263,6 +266,9 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
     public function nextMonth(): void
     {
         $currentDate = Carbon::createFromFormat('Y-m', $this->currentCalendarMonth);
+        if(!$currentDate){
+            return;
+        }
         $this->currentCalendarMonth = $currentDate->addMonthNoOverflow()->format('Y-m');
         
         // ✅ Refresh del form per aggiornare il calendario
