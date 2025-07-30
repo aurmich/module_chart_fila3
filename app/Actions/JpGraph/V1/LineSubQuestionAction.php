@@ -7,19 +7,16 @@ namespace Modules\Chart\Actions\JpGraph\V1;
 use Amenadiel\JpGraph\Graph\Graph;
 use Amenadiel\JpGraph\Plot\LinePlot;
 use Modules\Chart\Actions\JpGraph\GetGraphAction;
-use Modules\Chart\Datas\AnswersChartData;
 use Modules\Chart\Datas\AnswerData;
-use Modules\Xot\Actions\XotBaseAction;
+use Modules\Chart\Datas\AnswersChartData;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
-use function Safe\define;
-
 
 // JpGraph mark constants - these are global constants defined by JpGraph
 // We'll use them directly without namespace imports since they're global
 
 // Fallback constant definitions for PHPStan compatibility
-if (!defined('Amenadiel\\JpGraph\\MARK_FILLEDCIRCLE')) {
+if (! defined('Amenadiel\\JpGraph\\MARK_FILLEDCIRCLE')) {
     \Safe\define('Amenadiel\\JpGraph\\MARK_FILLEDCIRCLE', 1);
     \Safe\define('Amenadiel\\JpGraph\\MARK_UTRIANGLE', 2);
     \Safe\define('Amenadiel\\JpGraph\\MARK_SQUARE', 3);

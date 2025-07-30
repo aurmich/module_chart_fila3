@@ -4,19 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\Chart\Models;
 
-use Modules\Xot\Traits\Updater;
-use Illuminate\Database\Eloquent\Model;
-use Modules\Xot\Contracts\ProfileContract;
-use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Actions\Factory\GetFactoryAction;
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Traits\Updater;
 
 /**
  * Class BaseModel.
- * 
+ *
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
- *
  */
 abstract class BaseModel extends Model
 {
@@ -47,16 +46,6 @@ abstract class BaseModel extends Model
     /** @var string */
     protected $connection = 'chart';
 
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
-    protected function casts(): array
-    {
-        return ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
-    }
-
     /** @var string */
     protected $primaryKey = 'id';
 
@@ -71,5 +60,15 @@ abstract class BaseModel extends Model
     protected static function newFactory(): Factory
     {
         return app(GetFactoryAction::class)->execute(static::class);
+    }
+
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
     }
 }

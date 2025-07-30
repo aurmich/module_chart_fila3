@@ -15,12 +15,15 @@ use Webmozart\Assert\Assert;
  * @property int|null $height
  * @property string|null $type
  * @property int|null $width
+ *
  * @method static \Modules\Chart\Database\Factories\ChartFactory factory($count = null, $state = [])
  * @method static Builder|Chart newModelQuery()
  * @method static Builder|Chart newQuery()
  * @method static Builder|Chart query()
+ *
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
+ *
  * @mixin \Eloquent
  */
 class Chart extends BaseModel
@@ -55,7 +58,7 @@ class Chart extends BaseModel
         'colors',
     ];
 
-    /** @var  array<string, mixed>   */
+    /** @var array<string, mixed> */
     protected $attributes = [
         'list_color' => '#d60021',
         'color' => '#d60021',
@@ -70,18 +73,6 @@ class Chart extends BaseModel
         'plot_value_pos' => 1,
         'plot_value_color' => '#000000',
     ];
-
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
-    protected function casts(): array
-    {
-        return array_merge(parent::casts(), [
-            'colors' => 'array',
-        ]);
-    }
 
     // /**
     //  * @return int|string|null
@@ -210,8 +201,9 @@ class Chart extends BaseModel
             return $value;
         }
 
-        $res= $this->attributes['type'] ?? (string) $this->getPanelRow('chart_type', 'type');
+        $res = $this->attributes['type'] ?? (string) $this->getPanelRow('chart_type', 'type');
         Assert::string($res);
+
         return $res;
     }
 
@@ -254,5 +246,17 @@ class Chart extends BaseModel
         }
 
         return [$this->toArray()];
+    }
+
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return array_merge(parent::casts(), [
+            'colors' => 'array',
+        ]);
     }
 }
