@@ -58,7 +58,11 @@ return array (
   ),
   'navigation' => 
   array (
+<<<<<<< HEAD
     'sort' => 20,
     'icon' => 'chart.navigation',
+=======
+    'sort' => 51,
+>>>>>>> 10ed4e7 (.)
   ),
 );
