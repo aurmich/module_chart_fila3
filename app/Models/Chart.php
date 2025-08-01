@@ -95,7 +95,6 @@ class Chart extends BaseModel
         'plot_value_color' => '#000000',
     ];
 
-<<<<<<< HEAD
     /**
      * Get the attributes that should be cast.
      *
@@ -107,12 +106,6 @@ class Chart extends BaseModel
             'colors' => 'array',
         ];
     }
-=======
-    /** @var array<string, string> */
-    protected $casts = [
-        'colors' => 'array',
-    ];
->>>>>>> f448c79 (.)
 
     public function getPanelRow(string $parent_field, string $my_field): int|string|null
     {
