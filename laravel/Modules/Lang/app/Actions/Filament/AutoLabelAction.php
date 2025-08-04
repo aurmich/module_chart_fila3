@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Actions\Filament;
 
-<<<<<<< HEAD
 use ReflectionClass;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
@@ -18,20 +17,6 @@ use Filament\Forms\Components\Wizard\Step;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Spatie\QueueableAction\QueueableAction;
 use Filament\Tables\Actions\Action as TableAction;
-=======
-use Filament\Actions\Action;
-use Filament\Forms\Components\Field;
-use Filament\Forms\Components\Wizard\Step;
-use Filament\Tables\Actions\Action as TableAction;
-use Filament\Tables\Columns\Column;
-use Filament\Tables\Filters\BaseFilter;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Str;
-use Modules\Lang\Actions\SaveTransAction;
-use Modules\Xot\Actions\GetTransKeyAction;
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
->>>>>>> aurmich/dev
 
 class AutoLabelAction
 {
@@ -49,7 +34,6 @@ class AutoLabelAction
     {
         $backtrace = debug_backtrace();
         $backtrace_slice = array_slice($backtrace, 2);
-<<<<<<< HEAD
         $class = Arr::first($backtrace_slice, function ($item) use($component){
             if($item['function'] == 'execute'){
                 return false;
@@ -69,27 +53,12 @@ class AutoLabelAction
             return false;
         });
        
-=======
-        $class = Arr::first($backtrace_slice, function ($item) {
-            if(isset($item['object']) && Str::startsWith($item['object']::class, 'Modules\\')){
-                return true;
-            }
-            if(isset($item['class']) && Str::startsWith($item['class'], 'Modules\\')){
-                return true;
-            }
-            return false;
-        });
->>>>>>> aurmich/dev
         if (is_array($class)) {
             $object_class = null;
             if(isset($class['object'])){
                 $object_class = $class['object']::class;
             }
-<<<<<<< HEAD
             if(isset($class['class']) && $object_class == null){
-=======
-            if(isset($class['class'])){
->>>>>>> aurmich/dev
                 $object_class = $class['class'];
             }
             if(is_null($object_class)){
@@ -100,10 +69,7 @@ class AutoLabelAction
             $trans_key = 'lang::txt';
         }
 
-<<<<<<< HEAD
         
-=======
->>>>>>> aurmich/dev
         if ($component instanceof Step) {
             Assert::string($val = $component->getLabel());
             $label_tkey = $trans_key.'.steps.'.$val.'';
@@ -118,7 +84,6 @@ class AutoLabelAction
 
         $label_key = $label_tkey.'.'.Str::snake($type);
 
-<<<<<<< HEAD
         if(Str::startsWith($label_key,'media::attachments_schema')){
             dddx([
                 'message'=>'preso',
@@ -135,10 +100,6 @@ class AutoLabelAction
         $label = trans($label_key);
         if (is_string($label) && $label_key == $label) { //se non esiste la traduzione, la salvo
             
-=======
-        $label = trans($label_key);
-        if (is_string($label) && $label_key == $label) { //se non esiste la traduzione, la salvo
->>>>>>> aurmich/dev
             app(SaveTransAction::class)->execute($label_key, $val);
         }
         if (is_string($label) && $label_key != $label) { //se esiste la traduzione, la aggiorno
