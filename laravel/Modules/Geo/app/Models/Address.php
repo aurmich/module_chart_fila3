@@ -369,6 +369,7 @@ class Address extends BaseModel
      * @return string
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormattedAddressAttribute(?string $value): ?string
     {
         if ($value) {
@@ -379,6 +380,12 @@ class Address extends BaseModel
         if ($this->formatted_address) {
             return $this->formatted_address;
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+    public function getFormattedAddressAttribute(?string $value): ?string
+    {
+        if ($value) {
+            return $value;
+>>>>>>> a872e835 (✨ (AddressResource.php): replace locality text input with a searchable select)
         }
         
         $parts = [];

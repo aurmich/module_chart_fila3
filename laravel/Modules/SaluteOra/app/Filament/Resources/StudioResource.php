@@ -146,6 +146,7 @@ class StudioResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
     public static function getListTableColumns(): array
     {
         return [
@@ -305,4 +306,7 @@ class StudioResource extends XotBaseResource
         ];
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     }
+=======
+    
+>>>>>>> a872e835 (✨ (AddressResource.php): replace locality text input with a searchable select)
 }

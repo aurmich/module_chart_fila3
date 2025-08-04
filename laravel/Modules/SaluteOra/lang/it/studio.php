@@ -344,10 +344,14 @@ return array (
       'label' => 'applyFilters',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a872e835 (✨ (AddressResource.php): replace locality text input with a searchable select)
     'toggleColumns' => 
     array (
       'label' => 'toggleColumns',
     ),
+<<<<<<< HEAD
     'reorderRecords' => 
     array (
       'label' => 'reorderRecords',
@@ -552,6 +556,8 @@ return array (
     ),
 =======
 =======
+=======
+>>>>>>> a872e835 (✨ (AddressResource.php): replace locality text input with a searchable select)
   ),
   'actions' => 
   array (
