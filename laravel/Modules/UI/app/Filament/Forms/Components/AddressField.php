@@ -33,6 +33,7 @@ class AddressField extends Forms\Components\Field
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             
             //if ($record && method_exists($record, 'getRelationValue')) {
                 $relationship = $this->getRelationship();
@@ -69,6 +70,11 @@ class AddressField extends Forms\Components\Field
                     $data = $address->toArray();
                 }
 >>>>>>> bf0cd1be (phpstan)
+=======
+            $address = $record->getRelationValue($this->getRelationship());
+            if (null !== $address && is_object($address) && method_exists($address, 'toArray')) {
+                $data = $address->toArray();
+>>>>>>> 6581c95e (♻️ (ListActivities.php, ListStoredEvents.php, LogoutListener.php): refactor code to improve readability and maintainability by removing unused imports and comments)
             }
 
             $component->state($data);
@@ -98,11 +104,6 @@ class AddressField extends Forms\Components\Field
     {
         $state = $this->getState();
         $record = $this->getRecord();
-        
-        if ($record === null) {
-            return;
-        }
-        
         $relationship = $record->{$this->getRelationship()}();
 
         if (null === $relationship) {

@@ -39,6 +39,7 @@ class ApplyCalendarToPanelAction
         $calendarPlugin = FilamentFullCalendarPlugin::make()
         ->selectable(true)
         ->editable(true)
+<<<<<<< HEAD
         ->timezone($timezone)
         ->locale($locale)
 =======
@@ -67,6 +68,10 @@ class ApplyCalendarToPanelAction
         ->timezone((string) config('fullcalendar.localization.timezone', 'Europe/Rome'))
         ->locale((string) config('fullcalendar.localization.locale', 'it'))
 >>>>>>> bf0cd1be (phpstan)
+=======
+        ->timezone(config('fullcalendar.localization.timezone', 'Europe/Rome'))
+        ->locale(config('fullcalendar.localization.locale', 'it'))
+>>>>>>> 6581c95e (♻️ (ListActivities.php, ListStoredEvents.php, LogoutListener.php): refactor code to improve readability and maintainability by removing unused imports and comments)
         ->plugins([
             'dayGrid',
             'timeGrid',

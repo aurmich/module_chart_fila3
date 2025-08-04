@@ -130,6 +130,7 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $columns = $this->isGridLayout()
             ? $caller->getGridTableColumns()
 <<<<<<< HEAD
@@ -159,6 +160,11 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
             }
         }
 >>>>>>> bf0cd1be (phpstan)
+=======
+        $columns = $this->isGridLayout()
+            ? $caller->getGridTableColumns()
+            : $caller->getTableColumns();
+>>>>>>> 6581c95e (♻️ (ListActivities.php, ListStoredEvents.php, LogoutListener.php): refactor code to improve readability and maintainability by removing unused imports and comments)
 
         Assert::isArray($columns);
 
