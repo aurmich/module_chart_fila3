@@ -16,19 +16,7 @@ use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Models\User;
 use Webmozart\Assert\Assert;
 
-<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
-=======
-use Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager;
->>>>>>> 54f4fa16 (.)
-=======
-use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
 
 /**
  * Pagina per la modifica degli utenti con particolare gestione della password.
@@ -48,30 +36,10 @@ class EditUser extends EditRecord
         // Verifichiamo che record sia un'istanza valida di User
         Assert::notNull($this->record);
         Assert::isInstanceOf($this->record, User::class);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 
         // Gestione sicura del tipo di password per evitare errori di cast
         $newPassword = $data['new_password'];
 
-<<<<<<< HEAD
-=======
-=======
-        
-        // Gestione sicura del tipo di password per evitare errori di cast
-        $newPassword = $data['new_password'];
-        
->>>>>>> 54f4fa16 (.)
-=======
-
-        // Gestione sicura del tipo di password per evitare errori di cast
-        $newPassword = $data['new_password'];
-
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
         // Verifichiamo il tipo e convertiamo in modo sicuro
         if (!is_string($newPassword)) {
             if (!is_scalar($newPassword)) {
@@ -79,19 +47,7 @@ class EditUser extends EditRecord
             }
             $newPassword = (string) $newPassword;
         }
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-            
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
         $this->record->update(['password' => Hash::make($newPassword)]);
         return $data;
     }

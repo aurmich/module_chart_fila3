@@ -24,29 +24,9 @@ return new class extends XotBaseMigration
                 $table->increments('id');
                 $table->uuidMorphs('model');
                 $table->schemalessAttributes('extra_attributes');
-<<<<<<< HEAD
                 
                 
                 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                
-                
-                
-=======
-                $table->unique(['model_id', 'model_type'], 'morph_unique');
->>>>>>> aurmich/dev
-=======
-                $table->unique(['model_id', 'model_type'], 'morph_unique');
->>>>>>> 54f4fa16 (.)
-=======
-                
-                
-                
->>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
->>>>>>> aurmich/dev
             }
         );
 
@@ -57,24 +37,6 @@ return new class extends XotBaseMigration
                 //    $table->string('name')->nullable();
                 // }
                 $this->updateTimestamps(table: $table, hasSoftDeletes: true);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-                // if (! $this->hasIndex('morph_unique')) {
-                //    $table->unique(['model_id', 'model_type'], 'morph_unique');
-                // }
->>>>>>> aurmich/dev
-=======
-                // if (! $this->hasIndex('morph_unique')) {
-                //    $table->unique(['model_id', 'model_type'], 'morph_unique');
-                // }
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
->>>>>>> aurmich/dev
 
                 if ($this->hasColumn('model_id') && $this->getColumnType('model_id') === 'bigint') {
                     $table->string('model_id', 36)->index()->change();

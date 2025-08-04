@@ -5,19 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- * 
- *
->>>>>>> aurmich/dev
-=======
- * 
- *
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  * @method static \Modules\User\Database\Factories\PermissionUserFactory factory($count = null, $state = [])

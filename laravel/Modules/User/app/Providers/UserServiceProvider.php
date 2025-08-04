@@ -8,15 +8,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Providers;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> f28f27db (✨ (PasswordResetConfirmWidget.php, PasswordResetWidget.php, UserServiceProvider.php): refactor password reset forms to improve code readability and maintainability)
 use Webmozart\Assert\Assert;
 use Laravel\Passport\Passport;
 use Illuminate\Support\Facades\Log;
@@ -39,47 +30,6 @@ use Modules\Xot\Providers\XotBaseServiceProvider;
 use Illuminate\Notifications\Messages\MailMessage;
 use Modules\User\Models\OauthPersonalAccessClient;
 use SocialiteProviders\Manager\ServiceProvider as SocialiteServiceProvider;
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 54f4fa16 (.)
-use Illuminate\Auth\Notifications\ResetPassword;
-use Illuminate\Auth\Notifications\VerifyEmail;
-use Illuminate\Notifications\Messages\MailMessage;
-use Illuminate\Support\Facades\Config;
-use Illuminate\Support\Facades\Gate;
-use Illuminate\Validation\Rules\Password;
-=======
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
-use Laravel\Passport\Passport;
-use Illuminate\Support\Facades\Gate;
-use Illuminate\Support\Facades\Log;
-use Modules\User\Datas\PasswordData;
-use Modules\User\Models\OauthClient;
-use Illuminate\Support\Facades\Blade;
-use Illuminate\Support\Facades\Config;
-use Modules\Notify\Emails\SpatieEmail;
-use Modules\User\Models\OauthAuthCode;
-use Illuminate\Support\ServiceProvider;
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
-=======
-use Modules\Xot\Contracts\UserContract;
-use Illuminate\Validation\Rules\Password;
-use Modules\User\Models\OauthAccessToken;
-use Modules\User\Models\OauthRefreshToken;
-use Illuminate\Auth\Notifications\VerifyEmail;
-use Illuminate\Auth\Notifications\ResetPassword;
-use Modules\Xot\Providers\XotBaseServiceProvider;
-use Illuminate\Notifications\Messages\MailMessage;
-use Modules\User\Models\OauthPersonalAccessClient;
-use SocialiteProviders\Manager\ServiceProvider as SocialiteServiceProvider;
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
 
 class UserServiceProvider extends XotBaseServiceProvider
 {
@@ -100,18 +50,6 @@ class UserServiceProvider extends XotBaseServiceProvider
     public function register(): void
     {
         parent::register();
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> b58de900 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
         $this->registerTeamModelBindings();
     }
 
@@ -127,20 +65,6 @@ class UserServiceProvider extends XotBaseServiceProvider
         $this->app->bind('team_invitation_model', function () {
             return \Modules\User\Models\TeamInvitation::class;
         });
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     }
 
     public function registerMailsNotification(): void
@@ -150,26 +74,8 @@ class UserServiceProvider extends XotBaseServiceProvider
             $app_name = '';
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         ResetPassword::toMailUsing(function ($notifiable, string $token): SpatieEmail {
             /*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        ResetPassword::toMailUsing(function ($notifiable, string $token): SpatieEmail {
-            /*
-=======
-        ResetPassword::toMailUsing(function ($notifiable, string $token): MailMessage {
->>>>>>> aurmich/dev
-=======
-        ResetPassword::toMailUsing(function ($notifiable, string $token): MailMessage {
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
-=======
-        ResetPassword::toMailUsing(function ($notifiable, string $token): SpatieEmail {
-            /*
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
             return (new MailMessage)
                 ->template('user::notifications.email')
                 ->subject(__('user::reset_password.password_reset_subject'))
@@ -178,20 +84,8 @@ class UserServiceProvider extends XotBaseServiceProvider
                 ->line(__('user::reset_password.password_if_not_requested'))
                 ->line(__('user::reset_password.thank_you_for_using_app'))
                 ->salutation(__('user::reset_password.regards'));
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
             */
             Assert::isInstanceOf($notifiable, Model::class);
-<<<<<<< HEAD
-=======
-            */
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
-=======
->>>>>>> f28f27db (✨ (PasswordResetConfirmWidget.php, PasswordResetWidget.php, UserServiceProvider.php): refactor password reset forms to improve code readability and maintainability)
             $email = new SpatieEmail($notifiable, 'reset-password');
             $email->mergeData([
                 'token' => $token,
@@ -212,16 +106,6 @@ class UserServiceProvider extends XotBaseServiceProvider
             }
             
             return $email;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
-=======
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
         });
 
         $salutation = __('user::verify_email.salutation', ['app_name' => $app_name]);

@@ -11,19 +11,7 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\UI\Enums\TableLayoutEnum;
-<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
-=======
-use Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager;
->>>>>>> 54f4fa16 (.)
-=======
-use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\Filament\Traits\TransTrait;
 
@@ -43,44 +31,14 @@ use Modules\Xot\Filament\Traits\TransTrait;
  */
 final class UsersRelationManager extends XotBaseRelationManager
 {
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
     protected static string $relationship = 'users';
 
     protected static ?string $inverseRelationship = 'roles';
 
-<<<<<<< HEAD
 
 
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-
-=======
-    
-
-    
->>>>>>> 54f4fa16 (.)
-=======
-
-
-
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
 
 
     /**
@@ -160,31 +118,9 @@ final class UsersRelationManager extends XotBaseRelationManager
         ];
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 
 
 
 
 
-<<<<<<< HEAD
-=======
-=======
-    
-=======
->>>>>>> 2bcfd382 (fix Address)
-
-
-<<<<<<< HEAD
-   
->>>>>>> 54f4fa16 (.)
-=======
-
-
-
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
 }

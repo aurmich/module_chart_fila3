@@ -99,17 +99,7 @@ return [
     'prefix' => 'user',
     'namespace' => 'Modules\User\Http\Controllers',
 ];
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev
 # Struttura Standard dei Moduli Laravel
 
 ## Struttura Base Corretta
@@ -292,17 +282,7 @@ laravel/Modules/ModuleName/
 ## Comandi Utili
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev
 # Verifica struttura cartelle
 tree -L 3 laravel/Modules/User/
 

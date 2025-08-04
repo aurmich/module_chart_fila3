@@ -12,19 +12,6 @@ use Modules\Tenant\Models\Traits\SushiToPhpArray;
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- * 
- *
->>>>>>> aurmich/dev
-=======
- * 
- *
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
  * @property int|null $id
  * @property string|null $name
  * @property array|null $scopes

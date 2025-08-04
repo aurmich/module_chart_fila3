@@ -16,19 +16,7 @@ use Modules\User\Filament\Resources\PermissionResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Webmozart\Assert\Assert;
 
-<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
-=======
-use Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager;
->>>>>>> 54f4fa16 (.)
-=======
-use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
 
 class ListPermissions extends XotBaseListRecords
 {
@@ -82,11 +70,6 @@ class ListPermissions extends XotBaseListRecords
         ];
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     /**
      * @return array<string, \Filament\Actions\Action>
      */
@@ -94,20 +77,6 @@ class ListPermissions extends XotBaseListRecords
     {
         return [
             'create' => CreateAction::make(),
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 54f4fa16 (.)
-    protected function getHeaderActions(): array
-    {
-        return [
-            CreateAction::make(),
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
         ];
     }
 
@@ -126,19 +95,7 @@ class ListPermissions extends XotBaseListRecords
                         foreach ($collection as $record) {
                             // Verifichiamo che $record sia un'istanza di Model prima di procedere
                             Assert::isInstanceOf($record, \Illuminate\Database\Eloquent\Model::class, '['.__LINE__.']['.__CLASS__.']');
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-                            
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
                             // Poi verifichiamo che il modello abbia il metodo roles() prima di chiamarlo
                             if (method_exists($record, 'roles')) {
                                 $record->roles()->sync($data['role']);

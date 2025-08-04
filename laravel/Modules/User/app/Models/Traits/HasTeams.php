@@ -10,31 +10,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
-<<<<<<< HEAD
 use Modules\User\Contracts\HasTeamsContract;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Modules\User\Contracts\HasTeamsContract;
-=======
->>>>>>> 54f4fa16 (.)
-=======
-use Modules\User\Contracts\HasTeamsContract;
->>>>>>> a3174e5b (phpstan)
-=======
-=======
-use Modules\User\Contracts\HasTeamsContract;
->>>>>>> aurmich/dev
-=======
-use Modules\User\Contracts\HasTeamsContract;
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
-use Modules\User\Contracts\HasTeamsContract;
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Membership;
 use Modules\User\Models\Role;
@@ -44,36 +20,10 @@ use Webmozart\Assert\Assert;
 use Illuminate\Support\Facades\Schema;
 
 /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> a3174e5b (phpstan)
-=======
- * Trait HasTeams.
- *
- * @property TeamContract $currentTeam
- * @property int|null $current_team_id
- * @property Collection $teams
- * @property Collection $ownedTeams
-=======
-=======
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
  * Trait HasTeams
  * 
  * Provides team functionality for User models implementing team-based organization.
  * This trait handles team ownership, membership, permissions, and relationships.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
  *
  * @property TeamContract $currentTeam
  * @property int|null $current_team_id
@@ -81,36 +31,6 @@ use Illuminate\Support\Facades\Schema;
  * @property Collection<int, TeamContract> $ownedTeams
  * @property Collection<int, UserContract> $teamUsers
  * @property UserContract|null $owner
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- * Trait HasTeams.
- *
- * @property TeamContract $currentTeam
- * @property int|null $current_team_id
- * @property Collection $teams
- * @property Collection $ownedTeams
->>>>>>> 54f4fa16 (.)
-=======
- *
- * @property TeamContract $currentTeam
- * @property int|null $current_team_id
- * @property Collection<int, TeamContract> $teams
- * @property Collection<int, TeamContract> $ownedTeams
- * @property Collection<int, UserContract> $teamUsers
- * @property UserContract|null $owner
->>>>>>> a3174e5b (phpstan)
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
  */
 trait HasTeams
 {
@@ -154,73 +74,13 @@ trait HasTeams
     /**
      * Check if the user belongs to a specific team.
      */
-<<<<<<< HEAD
     public function belongsToTeam(TeamContract $team): bool
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function belongsToTeam(TeamContract $team): bool
-=======
-    public function belongsToTeam(\Modules\User\Contracts\TeamContract $team): bool
->>>>>>> 54f4fa16 (.)
-=======
-    public function belongsToTeam(?TeamContract $team): bool
->>>>>>> 15cb84fb (fix collisions)
-=======
-    public function belongsToTeam(\Modules\User\Contracts\TeamContract $team): bool
->>>>>>> d23ba493 (add calendar)
-=======
-    public function belongsToTeam(TeamContract $team): bool
->>>>>>> 1def8bbe (fix hint)
-=======
-    public function belongsToTeam(\Modules\User\Contracts\TeamContract $team): bool
-=======
-    public function belongsToTeam(TeamContract $team): bool
->>>>>>> aurmich/dev
-=======
-    public function belongsToTeam(TeamContract $team): bool
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
-    public function belongsToTeam(TeamContract $team): bool
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     {
         $found = $this->teams()->where('teams.id', $team->id)->first();
         if ($found === null) {
             return false;
         }
-<<<<<<< HEAD
         Assert::isInstanceOf($found, TeamContract::class, 'Team must implement TeamContract.');
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        Assert::isInstanceOf($found, TeamContract::class, 'Team must implement TeamContract.');
-=======
-        \Webmozart\Assert\Assert::isInstanceOf($found, \Modules\User\Contracts\TeamContract::class, 'Team must implement TeamContract.');
->>>>>>> 54f4fa16 (.)
-=======
-        Assert::isInstanceOf($found, TeamContract::class, 'Team must implement TeamContract.');
->>>>>>> 1def8bbe (fix hint)
-=======
-        \Webmozart\Assert\Assert::isInstanceOf($found, \Modules\User\Contracts\TeamContract::class, 'Team must implement TeamContract.');
-=======
-        Assert::isInstanceOf($found, TeamContract::class, 'Team must implement TeamContract.');
->>>>>>> aurmich/dev
-=======
-        Assert::isInstanceOf($found, TeamContract::class, 'Team must implement TeamContract.');
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
-        Assert::isInstanceOf($found, TeamContract::class, 'Team must implement TeamContract.');
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
         return true;
     }
 
@@ -231,52 +91,12 @@ trait HasTeams
      */
     protected static function bootHasTeams()
     {
-<<<<<<< HEAD
         /*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        /*
-=======
->>>>>>> 54f4fa16 (.)
-=======
-<<<<<<< HEAD
-=======
-        /*
->>>>>>> aurmich/dev
-=======
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
-        /*
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
         static::deleting(function ($team) {
             $team->teamUsers()->delete();
             $team->teamInvitations()->delete();
         });
-<<<<<<< HEAD
         */
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        */
-=======
->>>>>>> 54f4fa16 (.)
-=======
-<<<<<<< HEAD
-=======
-        */
->>>>>>> aurmich/dev
-=======
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
-        */
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     }
 
     /**
@@ -354,25 +174,6 @@ trait HasTeams
     /**
      * Get all of the team's users including its owner.
      *
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-     * @return \Illuminate\Support\Collection
-     */
-    public function getAllTeamUsersAttribute()
-    {
-        return $this->teamUsers->merge([$this->owner]);
-=======
-=======
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
      * @return \Illuminate\Support\Collection<int, UserContract>
      */
     public function getAllTeamUsersAttribute(): Collection
@@ -382,62 +183,11 @@ trait HasTeams
             return $this->teamUsers;
         }
         return $this->teamUsers->merge([$owner]);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-     * @return \Illuminate\Support\Collection
-=======
-     * @return \Illuminate\Support\Collection<int, UserContract>
->>>>>>> a3174e5b (phpstan)
-     */
-    public function getAllTeamUsersAttribute(): Collection
-    {
-<<<<<<< HEAD
-        return $this->teamUsers->merge([$this->owner]);
->>>>>>> 54f4fa16 (.)
-=======
-        $owner = $this->owner;
-        if ($owner === null) {
-            return $this->teamUsers;
-        }
-        return $this->teamUsers->merge([$owner]);
->>>>>>> a3174e5b (phpstan)
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     }
 
     /**
      * Determine if the given user is on the team.
      *
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-     * @param  \Illuminate\Database\Eloquent\Model  $user
-     * @return bool
-     */
-    public function hasTeamMember($user)
-    {
-        return $this->teamUsers->contains($user) || $user->ownsTeam($this);
-=======
-=======
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
      * @param UserContract $user
      * @return bool
      */
@@ -449,53 +199,10 @@ trait HasTeams
 
         // Check if user can own this team (UserContract sempre ha il metodo ownsTeam)
         if ($this instanceof TeamContract) {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
             return $user->ownsTeam($this);
         }
 
         return false;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-     * @param  \Illuminate\Database\Eloquent\Model  $user
-=======
-     * @param UserContract $user
->>>>>>> a3174e5b (phpstan)
-     * @return bool
-     */
-    public function hasTeamMember(UserContract $user): bool
-    {
-<<<<<<< HEAD
-        return $this->teamUsers->contains($user) || $user->ownsTeam($this);
->>>>>>> 54f4fa16 (.)
-=======
-        if ($this->teamUsers->contains($user)) {
-            return true;
-        }
-
-        // Check if user can own this team (assuming BaseUser implements HasTeamsContract)
-        if ($this instanceof TeamContract && method_exists($user, 'ownsTeam')) {
-=======
->>>>>>> 1def8bbe (fix hint)
-            return $user->ownsTeam($this);
-        }
-
-        return false;
->>>>>>> a3174e5b (phpstan)
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     }
 
     /**
@@ -509,33 +216,7 @@ trait HasTeams
     /**
      * Check if the user has a specific permission in a team.
      */
-<<<<<<< HEAD
     public function hasTeamPermission(TeamContract $team, string $permission): bool
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function hasTeamPermission(TeamContract $team, string $permission): bool
-=======
-    public function hasTeamPermission(\Modules\User\Contracts\TeamContract $team, string $permission): bool
->>>>>>> 54f4fa16 (.)
-=======
-    public function hasTeamPermission(TeamContract $team, string $permission): bool
->>>>>>> 1def8bbe (fix hint)
-=======
-    public function hasTeamPermission(\Modules\User\Contracts\TeamContract $team, string $permission): bool
-=======
-    public function hasTeamPermission(TeamContract $team, string $permission): bool
->>>>>>> aurmich/dev
-=======
-    public function hasTeamPermission(TeamContract $team, string $permission): bool
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
-    public function hasTeamPermission(TeamContract $team, string $permission): bool
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     {
         return $this->ownsTeam($team) || in_array($permission, $this->teamPermissions($team));
     }
@@ -543,33 +224,7 @@ trait HasTeams
     /**
      * Check if the user has a specific role in a team.
      */
-<<<<<<< HEAD
     public function hasTeamRole(TeamContract $team, string $role): bool
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function hasTeamRole(TeamContract $team, string $role): bool
-=======
-    public function hasTeamRole(\Modules\User\Contracts\TeamContract $team, string $role): bool
->>>>>>> 54f4fa16 (.)
-=======
-    public function hasTeamRole(TeamContract $team, string $role): bool
->>>>>>> 1def8bbe (fix hint)
-=======
-    public function hasTeamRole(\Modules\User\Contracts\TeamContract $team, string $role): bool
-=======
-    public function hasTeamRole(TeamContract $team, string $role): bool
->>>>>>> aurmich/dev
-=======
-    public function hasTeamRole(TeamContract $team, string $role): bool
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
-    public function hasTeamRole(TeamContract $team, string $role): bool
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     {
         if ($this->ownsTeam($team)) {
             return true;
@@ -581,71 +236,8 @@ trait HasTeams
 
     /**
      * Get the current team of the user's context.
-<<<<<<< HEAD
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, $this>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-     *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, $this>
-=======
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Contracts\TeamContract, $this>
->>>>>>> aurmich/dev
-=======
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, $this>
->>>>>>> 345f8677 (phpstan)
-=======
-=======
->>>>>>> b58de900 (.)
-     * Commented out as it is less comprehensive and does not use TeamContract.
-     * The preferred method (below) includes logic for default team switching and uses TeamContract for better abstraction.
-     */
-    /*
-    public function currentTeam(): BelongsTo
-    {
-        return $this->belongsTo(Team::class, 'current_team_id');
-    }
-    */
-
-    /**
-     * Get the current team of the user's context.
-     *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Contracts\TeamContract, static>
->>>>>>> 54f4fa16 (.)
-=======
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, static>
->>>>>>> a3174e5b (phpstan)
-=======
-     *
-<<<<<<< HEAD
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Contracts\TeamContract, $this>
->>>>>>> 1def8bbe (fix hint)
-=======
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Contracts\TeamContract, static>
-=======
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Contracts\TeamContract, $this>
->>>>>>> aurmich/dev
-=======
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Contracts\TeamContract, $this>
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Contracts\TeamContract, $this>
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
-=======
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, $this>
->>>>>>> 345f8677 (phpstan)
->>>>>>> aurmich/dev
      */
     public function currentTeam(): BelongsTo
     {
@@ -667,99 +259,17 @@ trait HasTeams
     /**
      * Get the teams owned by the user.
      *
-<<<<<<< HEAD
      * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, $this>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, $this>
-=======
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
->>>>>>> b58de900 (.)
-=======
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\User\Contracts\TeamContract, $this>
->>>>>>> aurmich/dev
-=======
-<<<<<<< HEAD
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, $this>
->>>>>>> 345f8677 (phpstan)
-=======
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
->>>>>>> 54f4fa16 (.)
-=======
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, static>
->>>>>>> a3174e5b (phpstan)
-=======
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\User\Contracts\TeamContract, $this>
->>>>>>> 1def8bbe (fix hint)
-=======
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\User\Contracts\TeamContract, $this>
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\User\Contracts\TeamContract, $this>
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
-=======
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, $this>
->>>>>>> 345f8677 (phpstan)
->>>>>>> aurmich/dev
      */
     public function ownedTeams(): HasMany
     {
         $xot = XotData::make();
         $teamClass = $xot->getTeamClass();
-<<<<<<< HEAD
         
         return $this->hasMany($teamClass, 'user_id');
     }
 
     /**
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        
-=======
->>>>>>> 54f4fa16 (.)
-=======
-=======
-        
->>>>>>> aurmich/dev
-=======
-        
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
-        
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
-        return $this->hasMany($teamClass, 'user_id');
-=======
-        
-<<<<<<< HEAD
-        // Cast a Model generico per compatibilità con template types
-        /** @var class-string<\Illuminate\Database\Eloquent\Model> $modelClass */
-        $modelClass = $teamClass;
-        
-        return $this->hasMany($modelClass, 'user_id');
->>>>>>> a3174e5b (phpstan)
-=======
-        return $this->hasMany($teamClass, 'user_id');
->>>>>>> 1def8bbe (fix hint)
-    }
-
-    /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
      * Get all team users.
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\User\Models\Membership, $this>
@@ -769,165 +279,16 @@ trait HasTeams
         /** @var \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\User\Models\Membership, $this> $relation */
         $relation = $this->hasMany(\Modules\User\Models\Membership::class, 'user_id');
         return $relation;
-<<<<<<< HEAD
-=======
-=======
-     * Get all of the pending invitations for the team.
-=======
-     * Get all team users.
->>>>>>> 345f8677 (phpstan)
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\User\Models\Membership, $this>
-     */
-    public function teamUsers(): HasMany
-    {
-<<<<<<< HEAD
-        $invitationModel = app('team_invitation_model');
-        return $this->hasMany($invitationModel, 'team_id');
->>>>>>> aurmich/dev
-=======
-        /** @var \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\User\Models\Membership, $this> $relation */
-        $relation = $this->hasMany(\Modules\User\Models\Membership::class, 'user_id');
-        return $relation;
->>>>>>> 345f8677 (phpstan)
-=======
-     * Get all of the pending invitations for the team.
-=======
-     * Get all team users.
->>>>>>> 345f8677 (phpstan)
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\User\Models\Membership, $this>
-     */
-    public function teamUsers(): HasMany
-    {
-<<<<<<< HEAD
-        $invitationModel = app('team_invitation_model');
-        return $this->hasMany($invitationModel, 'team_id');
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> a3f7230 (.)
-    }
-
-    /**
-     * Get the relationship name of the primary team user.
-     *
-     * @return string
-     */
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function teamRelation()
-    {
-        return config('teams.relationship_name', 'teamUsers');
-=======
-    public function teamRelation(): string
-    {
-        return (string) config('teams.relationship_name', 'teamUsers');
->>>>>>> aurmich/dev
-=======
-    public function teamRelation(): string
-    {
-        return (string) config('teams.relationship_name', 'teamUsers');
->>>>>>> a3f7230 (.)
-    }
-
-    /**
-     * Get all of the team's users.
-     *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     */
-    public function teamUsers()
-    {
-        return $this->hasMany(app('team_user_model'), 'team_id');
-=======
-=======
->>>>>>> a3f7230 (.)
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Illuminate\Database\Eloquent\Model, $this>
-     */
-    public function teamUsers(): HasMany
-    {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        return $this->hasMany(app('team_user_model'), 'team_id');
->>>>>>> 54f4fa16 (.)
-=======
-        /** @var class-string<\Illuminate\Database\Eloquent\Model> $teamUserModel */
-=======
->>>>>>> 1def8bbe (fix hint)
-        $teamUserModel = app('team_user_model');
-        return $this->hasMany($teamUserModel, 'team_id');
-<<<<<<< HEAD
->>>>>>> a3174e5b (phpstan)
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
-=======
-        /** @var \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\User\Models\Membership, $this> $relation */
-        $relation = $this->hasMany(\Modules\User\Models\Membership::class, 'user_id');
-        return $relation;
->>>>>>> 345f8677 (phpstan)
->>>>>>> aurmich/dev
     }
 
     /**
      * Get the role for a specific team.
      */
-<<<<<<< HEAD
     public function teamRole(TeamContract $team): ?Role
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function teamRole(TeamContract $team): ?Role
-=======
-    public function teamRole(\Modules\User\Contracts\TeamContract $team): ?Role
->>>>>>> 54f4fa16 (.)
-=======
-    public function teamRole(TeamContract $team): ?Role
->>>>>>> 1def8bbe (fix hint)
-=======
-    public function teamRole(\Modules\User\Contracts\TeamContract $team): ?Role
-=======
-    public function teamRole(TeamContract $team): ?Role
->>>>>>> aurmich/dev
-=======
-    public function teamRole(TeamContract $team): ?Role
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
-    public function teamRole(TeamContract $team): ?Role
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     {
         /** @var \Illuminate\Database\Eloquent\Model|\Illuminate\Database\Eloquent\Relations\Pivot|null $teamUser */
         $teamUser = $this->teamUsers()->where('team_id', $team->id)->first();
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1def8bbe (fix hint)
-=======
-        return $teamUser?->role;
-=======
-=======
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
         if ($teamUser === null) {
             return null;
         }
@@ -936,56 +297,12 @@ trait HasTeams
         $role = $teamUser->getAttribute('role');
         
         return $role instanceof Role ? $role : null;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        return $teamUser?->role;
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 1def8bbe (fix hint)
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     }
 
     /**
      * Get permissions for a specific team.
      *
-<<<<<<< HEAD
      * @param TeamContract $team
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param TeamContract $team
-=======
-     * @param \Modules\User\Contracts\TeamContract $team
->>>>>>> 54f4fa16 (.)
-=======
-     * @param TeamContract $team
->>>>>>> 1def8bbe (fix hint)
-=======
-     * @param \Modules\User\Contracts\TeamContract $team
-=======
-     * @param TeamContract $team
->>>>>>> aurmich/dev
-=======
-     * @param TeamContract $team
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
-     * @param TeamContract $team
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
      * @return array<int, string>
      */
     public function teamPermissions(TeamContract $team): array
@@ -1020,33 +337,7 @@ trait HasTeams
      *
      * @return \Modules\User\Contracts\TeamContract|null
      */
-<<<<<<< HEAD
     public function personalTeam(): ?TeamContract
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function personalTeam(): ?TeamContract
-=======
-    public function personalTeam(): ?\Modules\User\Contracts\TeamContract
->>>>>>> 54f4fa16 (.)
-=======
-    public function personalTeam(): ?TeamContract
->>>>>>> 1def8bbe (fix hint)
-=======
-    public function personalTeam(): ?\Modules\User\Contracts\TeamContract
-=======
-    public function personalTeam(): ?TeamContract
->>>>>>> aurmich/dev
-=======
-    public function personalTeam(): ?TeamContract
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
-    public function personalTeam(): ?TeamContract
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     {
         /** @var \Modules\User\Contracts\TeamContract|null */
         $personalTeam = $this->ownedTeams->where('personal_team', true)->first();
@@ -1057,62 +348,14 @@ trait HasTeams
     /**
      * Switch the user's context to the given team.
      *
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1def8bbe (fix hint)
-=======
-     * @param \Modules\User\Contracts\TeamContract $team
-=======
-     * @param TeamContract $team
->>>>>>> aurmich/dev
-     */
-    public function switchTeam(?\Modules\User\Contracts\TeamContract $team): bool
-=======
->>>>>>> b58de900 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
      * @param TeamContract $team
      */
     public function switchTeam(?TeamContract $team): bool
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
         if ($team === null) {
             return false;
         }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-     * @param \Modules\User\Contracts\TeamContract $team
-     */
-    public function switchTeam(?\Modules\User\Contracts\TeamContract $team): bool
-    {
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
-        if ($team === null) {
-            return false;
-        }
-
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
->>>>>>> 15cb84fb (fix collisions)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
         if (! $this->belongsToTeam($team)) {
             return false;
         }
@@ -1138,48 +381,9 @@ trait HasTeams
     /**
      * Determine if the user owns the given team.
      *
-<<<<<<< HEAD
      * @param TeamContract $team
      */
     public function ownsTeam(TeamContract $team): bool
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param TeamContract $team
-     */
-    public function ownsTeam(TeamContract $team): bool
-=======
-     * @param \Modules\User\Contracts\TeamContract $team
-     */
-    public function ownsTeam(\Modules\User\Contracts\TeamContract $team): bool
->>>>>>> 54f4fa16 (.)
-=======
-     * @param \Modules\User\Contracts\TeamContract $team
-     */
-    public function ownsTeam(\Modules\User\Contracts\TeamContract $team): bool
-=======
-     * @param TeamContract $team
-     */
-    public function ownsTeam(TeamContract $team): bool
->>>>>>> aurmich/dev
->>>>>>> b58de900 (.)
-=======
-     * @param TeamContract $team
-     */
-    public function ownsTeam(TeamContract $team): bool
-<<<<<<< HEAD
->>>>>>> 1def8bbe (fix hint)
-=======
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
-     * @param TeamContract $team
-     */
-    public function ownsTeam(TeamContract $team): bool
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     {
         /** @var ?\Illuminate\Database\Eloquent\Model $found */
         $found = $this->ownedTeams()->where('teams.id', $team->id)->first();
@@ -1190,66 +394,13 @@ trait HasTeams
     /**
      * Get all of the teams the user belongs to.
      *
-<<<<<<< HEAD
      * @return BelongsToMany<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, \Illuminate\Database\Eloquent\Model>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @return BelongsToMany<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, \Illuminate\Database\Eloquent\Model>
-=======
-     * @return BelongsToMany<\Modules\User\Contracts\TeamContract, static>
-     * @phpstan-return BelongsToMany<\Modules\User\Contracts\TeamContract&\Illuminate\Database\Eloquent\Model, static>
->>>>>>> aurmich/dev
-=======
-     * @return BelongsToMany<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, \Illuminate\Database\Eloquent\Model>
->>>>>>> 345f8677 (phpstan)
-=======
-     * @return BelongsToMany<\Modules\User\Contracts\TeamContract, static>
-     * @phpstan-return BelongsToMany<\Modules\User\Contracts\TeamContract&\Illuminate\Database\Eloquent\Model, static>
->>>>>>> 54f4fa16 (.)
-=======
-     * @return BelongsToMany<\Modules\User\Contracts\TeamContract, $this>
->>>>>>> 1def8bbe (fix hint)
-=======
-     * @return BelongsToMany<\Modules\User\Contracts\TeamContract, static>
-     * @phpstan-return BelongsToMany<\Modules\User\Contracts\TeamContract&\Illuminate\Database\Eloquent\Model, static>
-=======
-     * @return BelongsToMany<\Modules\User\Contracts\TeamContract, $this>
->>>>>>> aurmich/dev
-=======
-     * @return BelongsToMany<\Modules\User\Contracts\TeamContract, $this>
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
-     * @return BelongsToMany<\Modules\User\Contracts\TeamContract, static>
-     * @phpstan-return BelongsToMany<\Modules\User\Contracts\TeamContract&\Illuminate\Database\Eloquent\Model, static>
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
-=======
-     * @return BelongsToMany<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, \Illuminate\Database\Eloquent\Model>
->>>>>>> 345f8677 (phpstan)
->>>>>>> aurmich/dev
      */
     public function teams(): BelongsToMany
     {
         $xot = XotData::make();
         $teamClass = $xot->getTeamClass();
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 345f8677 (phpstan)
-=======
->>>>>>> 345f8677 (phpstan)
->>>>>>> aurmich/dev
         /** @var BelongsToMany<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, \Illuminate\Database\Eloquent\Model> $relation */
         $relation = $this->belongsToMany(
             $teamClass,
@@ -1259,23 +410,6 @@ trait HasTeams
         )->using(Membership::class);
 
         return $relation;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        return $this->belongsToManyX($teamClass, null, null, 'team_id');
-        // ->as('membership')
->>>>>>> aurmich/dev
-=======
->>>>>>> 345f8677 (phpstan)
-=======
-        return $this->belongsToManyX($teamClass, null, null, 'team_id');
-        // ->as('membership')
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 345f8677 (phpstan)
->>>>>>> aurmich/dev
     }
 
     /**
@@ -1361,48 +495,9 @@ trait HasTeams
     /**
      * Determine if the user owns the given team.
      *
-<<<<<<< HEAD
      * @param TeamContract $team
      */
     public function checkTeamOwnership(TeamContract $team): bool
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @param TeamContract $team
-     */
-    public function checkTeamOwnership(TeamContract $team): bool
-=======
-     * @param \Modules\User\Contracts\TeamContract $team
-     */
-    public function checkTeamOwnership(\Modules\User\Contracts\TeamContract $team): bool
->>>>>>> 54f4fa16 (.)
-=======
-     * @param \Modules\User\Contracts\TeamContract $team
-     */
-    public function checkTeamOwnership(\Modules\User\Contracts\TeamContract $team): bool
-=======
-     * @param TeamContract $team
-     */
-    public function checkTeamOwnership(TeamContract $team): bool
->>>>>>> aurmich/dev
->>>>>>> b58de900 (.)
-=======
-     * @param TeamContract $team
-     */
-    public function checkTeamOwnership(TeamContract $team): bool
-<<<<<<< HEAD
->>>>>>> 1def8bbe (fix hint)
-=======
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
-     * @param TeamContract $team
-     */
-    public function checkTeamOwnership(TeamContract $team): bool
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     {
         return $this->ownsTeam($team);
     }

@@ -40,27 +40,7 @@ use Illuminate\Support\Carbon;
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  * @mixin \Eloquent
  */
-<<<<<<< HEAD
 class TeamUser extends BaseTeamUser
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-class TeamUser extends BaseTeamUser
-=======
-class TeamUser extends BasePivot
->>>>>>> 54f4fa16 (.)
-=======
-class TeamUser extends BaseTeamUser
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
-class TeamUser extends BasePivot
->>>>>>> 15cb84fb (fix collisions)
-=======
-class TeamUser extends BaseTeamUser
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 {
     protected $connection = 'user';
 }

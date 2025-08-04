@@ -9,12 +9,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\UserResource\Pages;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 use Webmozart\Assert\Assert;
 use Modules\User\Models\User;
 use Filament\Actions\DeleteAction;
@@ -24,42 +18,7 @@ use Modules\User\Filament\Resources\UserResource;
 
 use Modules\User\Filament\Actions\ChangePasswordAction;
 use Modules\User\Filament\Actions\Header\ChangePasswordHeaderAction;
-<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
-=======
-=======
-=======
->>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
-use Filament\Actions\DeleteAction;
-use Filament\Resources\Pages\EditRecord;
-use Illuminate\Support\Facades\Hash;
-use Modules\User\Filament\Resources\UserResource;
-use Modules\User\Models\User;
-=======
->>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
-use Webmozart\Assert\Assert;
-use Modules\User\Models\User;
-use Filament\Actions\DeleteAction;
-use Illuminate\Support\Facades\Hash;
-use Filament\Resources\Pages\EditRecord;
-use Modules\User\Filament\Resources\UserResource;
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
-use Modules\User\Filament\Actions\ChangePasswordAction;
-use Modules\User\Filament\Actions\Header\ChangePasswordHeaderAction;
->>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
-use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
-=======
-use Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager;
->>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
-=======
-use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
 
 /**
  * Pagina per la modifica degli utenti con particolare gestione della password.
@@ -99,21 +58,7 @@ abstract class BaseEditUser extends EditRecord
     {
         return [
             DeleteAction::make(),
-<<<<<<< HEAD
             ChangePasswordHeaderAction::make('change-password'),
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            ChangePasswordHeaderAction::make('change-password'),
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
-=======
-            ChangePasswordHeaderAction::make('change-password'),
->>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
->>>>>>> aurmich/dev
         ];
     }
 }

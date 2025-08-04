@@ -5,17 +5,7 @@
 ### 1. Strategie di Prevenzione
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev
 # Pre-commit hook per verificare conflitti potenziali
 git diff --check
 
@@ -32,17 +22,7 @@ git diff origin/main...HEAD
 
 #### Metodo 1: Merge con Strategy
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev
 # Usa strategie di merge avanzate
 git merge -X ours feature_branch    # Preferisci il branch corrente
 git merge -X theirs feature_branch  # Preferisci il branch remoto
@@ -50,58 +30,22 @@ git merge -X theirs feature_branch  # Preferisci il branch remoto
 
 #### Metodo 2: Rebase Interattivo
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev
 # Riorganizza i commit per evitare conflitti
 git rebase -i origin/main
 
 # Opzioni disponibili:
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 
 # pick   - mantieni il commit
 
 # edit   - modifica il commit
 
-<<<<<<< HEAD
-=======
-=======
-# pick   - mantieni il commit
-# edit   - modifica il commit
->>>>>>> aurmich/dev
-=======
-# pick   - mantieni il commit
-# edit   - modifica il commit
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev
 # squash - unisci con il commit precedente
 ```
 
 #### Metodo 3: Stash e Apply
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev
 # Salva le modifiche locali
 git stash save "modifiche_importanti"
 
@@ -116,17 +60,7 @@ git stash pop
 
 1. **Git Mergetool**
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev
 # Configura il tool preferito
 git config --global merge.tool vscode
 
@@ -145,17 +79,7 @@ git mergetool
 
 3. **PhpStorm**
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev
 # Usa il merge tool integrato
 Tools -> Git -> Resolve Conflicts
 ```
@@ -231,17 +155,7 @@ safe_merge() {
 ### 6. Comandi Utili
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev
 # Verifica branch e modifiche
 git branch -vv
 git status -s
@@ -257,17 +171,7 @@ git log --graph --oneline --all
 ### 7. Configurazione Git
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev
 # Configurazione globale
 git config --global merge.conflictstyle diff3
 git config --global merge.tool vscode
@@ -302,14 +206,3 @@ git config --global alias.theirs '!f() { git checkout --theirs "$@" && git add "
 2. Mantenere commit atomici e descrittivi
 3. Usare tag per le release
 4. Documentare le decisioni di merge
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-5. Testare dopo ogni risoluzione 
->>>>>>> aurmich/dev
-=======
-5. Testare dopo ogni risoluzione 
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev

@@ -60,17 +60,7 @@ Questo documento fornisce una checklist per verificare la corretta struttura del
 ## Verifiche automatiche
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev
 # Verifica percorsi PHP errati (fuori da app/)
 find Modules/User -type f -name "*.php" -not -path "*/app/*" -not -path "*/routes/*" -not -path "*/config/*" -not -path "*/database/*" -not -path "*/lang/*" -not -path "*/resources/*" -not -path "*/tests/*" -not -path "*/docs/*" | grep -v composer.json
 

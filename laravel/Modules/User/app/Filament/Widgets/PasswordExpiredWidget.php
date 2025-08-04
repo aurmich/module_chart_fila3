@@ -6,11 +6,6 @@ namespace Modules\User\Filament\Widgets;
 
 use Filament\Forms;
 use Filament\Forms\Form;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 use Illuminate\Support\Arr;
 use Filament\Actions\Action;
 use Filament\Widgets\Widget;
@@ -38,39 +33,6 @@ use Modules\User\Http\Response\PasswordResetResponse;
 use Illuminate\Validation\Rules\Password as PasswordRule;
 use Illuminate\Auth\Events\PasswordReset as PasswordResetResponseEvent; 
 
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 54f4fa16 (.)
-use Filament\Actions\Action;
-use Filament\Actions\ActionGroup;
-use Filament\Forms\ComponentContainer;
-use Filament\Forms\Components\Component;
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Concerns\InteractsWithForms;
-use Filament\Forms\Contracts\HasForms;
-use Filament\Forms\Form as FilamentForm;
-use Filament\Notifications\Notification;
-use Filament\Pages\Concerns\InteractsWithFormActions;
-use Filament\Widgets\Widget;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Validation\Rules\Password as PasswordRule;
-use Modules\User\Datas\PasswordData;
-use Modules\User\Events\NewPasswordSet;
-use Modules\User\Http\Response\PasswordResetResponse;
-use Modules\User\Rules\CheckOtpExpiredRule;
-use Modules\Xot\Filament\Traits\TransTrait;
-use Webmozart\Assert\Assert;
-use Filament\Facades\Filament;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
-use Illuminate\Auth\Events\PasswordReset as PasswordResetResponseEvent;
-<<<<<<< HEAD
->>>>>>> aurmich/dev
->>>>>>> aurmich/dev
 
 /**
  * Widget for handling expired password reset.
@@ -80,32 +42,10 @@ use Illuminate\Auth\Events\PasswordReset as PasswordResetResponseEvent;
  * @property string|null $password
  * @property string|null $passwordConfirmation
  * @property array<string, mixed>|null $data
-<<<<<<< HEAD
-=======
-=======
-
-/**
- * Widget for handling expired password reset.
- * 
- * @property ComponentContainer $form
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
- * @property string|null $current_password
- * @property string|null $password
- * @property string|null $passwordConfirmation
- * @property array<string, mixed>|null $data
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
  */
 class PasswordExpiredWidget extends XotBaseWidget implements HasForms
 {
     use InteractsWithForms;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     use TransTrait;
 
     public ?string $current_password = '';
@@ -113,25 +53,6 @@ class PasswordExpiredWidget extends XotBaseWidget implements HasForms
     public ?string $passwordConfirmation = '';
 
     /** @var array<string, mixed>|null */
-<<<<<<< HEAD
-=======
-=======
-
-    // use InteractsWithFormActions;
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
-    use TransTrait;
-
-    public ?string $current_password = '';
-    public ?string $password = '';
-    public ?string $passwordConfirmation = '';
-
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
-    /** @var array<string, mixed>|null */
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     public ?array $data = [];
 
     /**
@@ -141,30 +62,10 @@ class PasswordExpiredWidget extends XotBaseWidget implements HasForms
 
     protected static bool $shouldRegisterNavigation = false;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     /**
      * Get the form schema for password reset.
      *
      * @return array<int, Component>
-<<<<<<< HEAD
-=======
-=======
-    
-
-    /**
-     * @return array<Component>
->>>>>>> 54f4fa16 (.)
-=======
-    /**
-     * Get the form schema for password reset.
-     *
-     * @return array<int, Component>
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
      */
     public function getFormSchema(): array
     {
@@ -174,98 +75,36 @@ class PasswordExpiredWidget extends XotBaseWidget implements HasForms
         ];
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     /**
      * Get the reset password form action.
      *
      * @return Action
      */
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     public function getResetPasswordFormAction(): Action
     {
         return Action::make('resetPassword')
             ->submit('resetPassword');
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     /**
      * Check if the widget should display a logo.
      *
      * @return bool
      */
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     public function hasLogo(): bool
     {
         return false;
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     /**
      * Reset the user's password.
      *
      * @return PasswordResetResponse|null
      */
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     public function resetPassword(): ?PasswordResetResponse
     {
         $this->validate();
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> a3174e5b (phpstan)
-=======
-        if (! Hash::check($this->data['current_password'], auth()->user()->password)) {
-=======
-=======
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
         $user = Auth::user();
         if (!$user || !($user instanceof \Illuminate\Database\Eloquent\Model)) {
             $this->addError('current_password', __('user::auth.user_not_found'));
@@ -273,98 +112,24 @@ class PasswordExpiredWidget extends XotBaseWidget implements HasForms
         }
 
         // Cast e verifica esistenza dei dati del form
-<<<<<<< HEAD
         $data = $this->data ?? [];
         $currentPassword = SafeStringCastAction::cast($data['current_password'] ?? '');
         $newPassword = SafeStringCastAction::cast($data['password'] ?? '');
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $data = $this->data ?? [];
-        $currentPassword = SafeStringCastAction::cast($data['current_password'] ?? '');
-        $newPassword = SafeStringCastAction::cast($data['password'] ?? '');
-=======
-        $currentPassword = (string) ($this->data['current_password'] ?? '');
-        $newPassword = (string) ($this->data['password'] ?? '');
->>>>>>> aurmich/dev
-=======
-        $currentPassword = (string) ($this->data['current_password'] ?? '');
-        $newPassword = (string) ($this->data['password'] ?? '');
->>>>>>> a3174e5b (phpstan)
->>>>>>> aurmich/dev
         
         if (empty($currentPassword) || empty($newPassword)) {
             $this->addError('current_password', __('user::auth.password_fields_required'));
             return null;
         }
 
-<<<<<<< HEAD
         $userPassword = SafeStringCastAction::cast($user->getAttribute('password'));
         // Cast esplicito di mixed a string per PHPStan
         $userPasswordString = $userPassword;
         
         if (!Hash::check($currentPassword, $userPasswordString)) {
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $userPassword = SafeStringCastAction::cast($user->getAttribute('password'));
-        // Cast esplicito di mixed a string per PHPStan
-        $userPasswordString = $userPassword;
-=======
-        $userPassword = $user->getAttribute('password');
-        // Cast esplicito di mixed a string per PHPStan
-        $userPasswordString = (string) ($userPassword ?? '');
->>>>>>> aurmich/dev
-        
-        if (!Hash::check($currentPassword, $userPasswordString)) {
-=======
-        if (! Hash::check($this->data['current_password'], auth()->user()->password)) {
->>>>>>> 54f4fa16 (.)
-=======
-        $userPassword = $user->getAttribute('password');
-<<<<<<< HEAD
-        if (!Hash::check($currentPassword, $userPassword)) {
->>>>>>> a3174e5b (phpstan)
-=======
-        // Cast esplicito di mixed a string per PHPStan
-        $userPasswordString = (string) ($userPassword ?? '');
-        
-        if (!Hash::check($currentPassword, $userPasswordString)) {
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 1def8bbe (fix hint)
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
             $this->addError('current_password', __('user::auth.password_current_incorrect'));
             return null;
         }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        $user = auth()->user();
-        $user->password = Hash::make($this->data['password']);
-        $user->save();
-
-        return new PasswordResetResponse($user);
-=======
-=======
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
         $user->setAttribute('password', Hash::make($newPassword));
         $user->save();
 
@@ -376,24 +141,6 @@ class PasswordExpiredWidget extends XotBaseWidget implements HasForms
      *
      * @return Component
      */
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-        $user = auth()->user();
-        $user->password = Hash::make($this->data['password']);
-=======
-        $user->setAttribute('password', Hash::make($newPassword));
->>>>>>> a3174e5b (phpstan)
-        $user->save();
-
-        return new PasswordResetResponse();
-    }
-
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     protected function getCurrentPasswordFormComponent(): Component
     {
         $authUser = Filament::auth()->user();
@@ -443,25 +190,9 @@ class PasswordExpiredWidget extends XotBaseWidget implements HasForms
     */
 
     /**
-<<<<<<< HEAD
      * Get the form actions.
      *
      * @return array<int, Action|ActionGroup>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * Get the form actions.
-     *
-     * @return array<int, Action|ActionGroup>
-=======
-     * @return array<Action|ActionGroup>
->>>>>>> 54f4fa16 (.)
-=======
-     * Get the form actions.
-     *
-     * @return array<int, Action|ActionGroup>
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
      */
     protected function getFormActions(): array
     {

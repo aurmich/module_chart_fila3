@@ -7,8 +7,6 @@ namespace Modules\User\Filament\Widgets\Auth;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Illuminate\Support\Str;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -17,22 +15,6 @@ use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Auth\Events\PasswordReset;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
-=======
-=======
-use Webmozart\Assert\Assert;
->>>>>>> f28f27db (✨ (PasswordResetConfirmWidget.php, PasswordResetWidget.php, UserServiceProvider.php): refactor password reset forms to improve code readability and maintainability)
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
-use Filament\Forms\ComponentContainer;
-use Filament\Notifications\Notification;
-use Illuminate\Support\Facades\Password;
-use Illuminate\Auth\Events\PasswordReset;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
-<<<<<<< HEAD
-use Filament\Notifications\Notification;
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
-=======
->>>>>>> f28f27db (✨ (PasswordResetConfirmWidget.php, PasswordResetWidget.php, UserServiceProvider.php): refactor password reset forms to improve code readability and maintainability)
 
 /**
  * Password Reset Confirmation Widget for SaluteOra platform.
@@ -50,12 +32,9 @@ class PasswordResetConfirmWidget extends XotBaseWidget
     public string $currentState = 'form'; // form, success, error, expired
     public ?string $errorMessage = null;
 
-<<<<<<< HEAD
     /**
      * @phpstan-ignore-next-line
      */
-=======
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
     protected static string $view = 'pub_theme::filament.widgets.auth.password.reset-confirm';
 
     /**
@@ -84,17 +63,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
     public function getFormSchema(): array
     {
         return [
-<<<<<<< HEAD
-<<<<<<< HEAD
                     'email'=>Forms\Components\TextInput::make('email')
-=======
-            Forms\Components\Section::make()
-                ->schema([
-                    Forms\Components\TextInput::make('email')
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
-=======
-                    'email'=>Forms\Components\TextInput::make('email')
->>>>>>> f28f27db (✨ (PasswordResetConfirmWidget.php, PasswordResetWidget.php, UserServiceProvider.php): refactor password reset forms to improve code readability and maintainability)
                         ->email()
                         ->required()
                         ->autocomplete('email')
@@ -103,15 +72,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
                         ->extraInputAttributes(['class' => 'text-center'])
                         ->suffixIcon('heroicon-o-envelope'),
 
-<<<<<<< HEAD
-<<<<<<< HEAD
                     'password'=>Forms\Components\TextInput::make('password')
-=======
-                    Forms\Components\TextInput::make('password')
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
-=======
-                    'password'=>Forms\Components\TextInput::make('password')
->>>>>>> f28f27db (✨ (PasswordResetConfirmWidget.php, PasswordResetWidget.php, UserServiceProvider.php): refactor password reset forms to improve code readability and maintainability)
                         ->password()
                         ->required()
                         ->revealable()
@@ -119,35 +80,15 @@ class PasswordResetConfirmWidget extends XotBaseWidget
                         ->disabled($this->currentState !== 'form')
                         ->extraInputAttributes(['class' => 'text-center'])
                         ->suffixIcon('heroicon-o-key')
-<<<<<<< HEAD
-<<<<<<< HEAD
                         ,
 
                     'password_confirmation'=>Forms\Components\TextInput::make('password_confirmation')
-=======
-                        ->helperText(__('user::auth.password_reset.password_requirements')),
-
-                    Forms\Components\TextInput::make('password_confirmation')
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
-=======
-                        ,
-
-                    'password_confirmation'=>Forms\Components\TextInput::make('password_confirmation')
->>>>>>> f28f27db (✨ (PasswordResetConfirmWidget.php, PasswordResetWidget.php, UserServiceProvider.php): refactor password reset forms to improve code readability and maintainability)
                         ->password()
                         ->required()
                         ->same('password')
                         ->disabled($this->currentState !== 'form')
                         ->extraInputAttributes(['class' => 'text-center'])
                         ->suffixIcon('heroicon-o-key'),
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-                ])
-                ->columns(1),
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
-=======
->>>>>>> f28f27db (✨ (PasswordResetConfirmWidget.php, PasswordResetWidget.php, UserServiceProvider.php): refactor password reset forms to improve code readability and maintainability)
         ];
     }
 
@@ -193,40 +134,18 @@ class PasswordResetConfirmWidget extends XotBaseWidget
                     ->send();
 
                 // Auto-login the user after successful password reset
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f28f27db (✨ (PasswordResetConfirmWidget.php, PasswordResetWidget.php, UserServiceProvider.php): refactor password reset forms to improve code readability and maintainability)
                 //$user = \Modules\Xot\Datas\XotData::make()->getUserClass()::where('email', $data['email'])->first();
                 Assert::string($email = $data['email']);
                 $user = \Modules\Xot\Datas\XotData::make()->getUserByEmail($email);
                 //if ($user) {
-<<<<<<< HEAD
                     Auth::guard()->login($user);
                 //}
-=======
-                $user = \Modules\Xot\Datas\XotData::make()->getUserClass()::where('email', $data['email'])->first();
-                if ($user) {
-                    Auth::guard()->login($user);
-                }
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
-=======
-                    Auth::guard()->login($user);
-                //}
->>>>>>> f28f27db (✨ (PasswordResetConfirmWidget.php, PasswordResetWidget.php, UserServiceProvider.php): refactor password reset forms to improve code readability and maintainability)
 
                 // Redirect after a short delay to show success message
                 $this->js('setTimeout(() => { window.location.href = "' . route('login') . '"; }, 3000);');
 
             } else {
-<<<<<<< HEAD
-<<<<<<< HEAD
                 /** @phpstan-ignore argument.type */
-=======
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
-=======
-                /** @phpstan-ignore-next-line */
->>>>>>> f28f27db (✨ (PasswordResetConfirmWidget.php, PasswordResetWidget.php, UserServiceProvider.php): refactor password reset forms to improve code readability and maintainability)
                 $this->handleResetError($response);
             }
 

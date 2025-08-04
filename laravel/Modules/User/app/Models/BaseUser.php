@@ -4,57 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Filament\Panel;
-use Parental\HasChildren;
-use Illuminate\Support\Str;
-use Modules\Xot\Datas\XotData;
-use Spatie\MediaLibrary\HasMedia;
-use Laravel\Passport\HasApiTokens;
-use Filament\Models\Contracts\HasName;
-use Illuminate\Support\Facades\Schema;
-use Spatie\Permission\Traits\HasRoles;
-use Illuminate\Database\Eloquent\Model;
-use Modules\Xot\Contracts\UserContract;
-use Illuminate\Notifications\Notifiable;
-use Modules\User\Models\Traits\HasTeams;
-use Modules\Xot\Models\Traits\RelationX;
-use Filament\Models\Contracts\HasTenants;
-use Spatie\MediaLibrary\InteractsWithMedia;
-use Illuminate\Database\Eloquent\Collection;
-use Modules\User\Database\Factories\UserFactory;
-<<<<<<< HEAD
-use Modules\Xot\Actions\Factory\GetFactoryAction;
-=======
->>>>>>> aurmich/dev
-use Illuminate\Database\Eloquent\Relations\HasOne;
-use Illuminate\Notifications\DatabaseNotification;
-use Illuminate\Database\Eloquent\Concerns\HasUuids;
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\MorphOne;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\MorphMany;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Notifications\DatabaseNotificationCollection;
-
-/**
- * Base User Model
- *
- * This is the base user model that provides the core authentication and authorization
- * functionality for the application. It extends Laravel's Authenticatable class
- * and implements the required interfaces for Filament and multi-tenancy.
-=======
-use Filament\Models\Contracts\HasName;
-use Filament\Models\Contracts\HasTenants;
-=======
->>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
->>>>>>> aurmich/dev
 use Filament\Panel;
 use Parental\HasChildren;
 use Illuminate\Support\Str;
@@ -90,36 +39,9 @@ use Illuminate\Notifications\DatabaseNotificationCollection;
 /**
  * Base User Model
  *
-<<<<<<< HEAD
  * This is the base user model that provides the core authentication and authorization
  * functionality for the application. It extends Laravel's Authenticatable class
  * and implements the required interfaces for Filament and multi-tenancy.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
- * @template TModel of \Illuminate\Database\Eloquent\Model
- * @template TRelatedModel of \Illuminate\Database\Eloquent\Model
- *
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 1def8bbe (fix hint)
-=======
-<<<<<<< HEAD
- * @template TModel of \Illuminate\Database\Eloquent\Model
- * @template TRelatedModel of \Illuminate\Database\Eloquent\Model
- *
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
- * This is the base user model that provides the core authentication and authorization
- * functionality for the application. It extends Laravel's Authenticatable class
- * and implements the required interfaces for Filament and multi-tenancy.
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
  * @property Collection<int, OauthClient> $clients
  * @property int|null $clients_count
  * @property Team|null $currentTeam
@@ -141,19 +63,7 @@ use Illuminate\Notifications\DatabaseNotificationCollection;
  * @property int|null $tenants_count
  * @property Collection<int, OauthAccessToken> $tokens
  * @property int|null $tokens_count
-<<<<<<< HEAD
  * @property string $last_name
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
- * @property string $last_name
-=======
- * @property string $surname
->>>>>>> 54f4fa16 (.)
-=======
- * @property string $last_name
->>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
->>>>>>> aurmich/dev
  * @property string|null $facebook_id
  * @property Collection<int, SocialiteUser> $socialiteUsers
  * @property int|null $socialite_users_count
@@ -211,15 +121,6 @@ use Illuminate\Notifications\DatabaseNotificationCollection;
  *
  * @mixin \Eloquent
  */
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
->>>>>>> aurmich/dev
 abstract class BaseUser extends Authenticatable implements HasName, HasTenants, UserContract,HasMedia
 {
 
@@ -227,43 +128,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     use HasApiTokens;
     use HasFactory;
     use HasRoles;
-<<<<<<< HEAD
     // Guard coerente con Spatie/Permission
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    // Guard coerente con Spatie/Permission
-=======
-abstract class BaseUser extends Authenticatable implements HasName, HasTenants, UserContract
-=======
-abstract class BaseUser extends Authenticatable
-{
-    /**
-     * Guard coerente con Spatie/Permission: deve essere 'web'.
-     * @var string
-     */
-    protected $guard_name = 'web'; implements HasName, HasTenants, UserContract
->>>>>>> bead9c28 (fix case)
-=======
-abstract class BaseUser extends Authenticatable implements HasName, HasTenants, UserContract
->>>>>>> d4c0700e (♻️ (SelectStateColumn.php): refactor state retrieval logic to use $state directly for clarity)
-{
-
-
-    use HasApiTokens;
-    use HasFactory;
-    use HasRoles;
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
-    // Guard coerente con Spatie/Permission
->>>>>>> bead9c28 (fix case)
-=======
->>>>>>> 15cb84fb (fix collisions)
-=======
-    // Guard coerente con Spatie/Permission
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
     use HasUuids;
     use Notifiable;
     use RelationX;
@@ -271,18 +136,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     use Traits\HasTenants;
     use Traits\HasTeams;
     use HasChildren;
-<<<<<<< HEAD
     use InteractsWithMedia;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    use InteractsWithMedia;
-=======
->>>>>>> 54f4fa16 (.)
-=======
-    use InteractsWithMedia;
->>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
->>>>>>> aurmich/dev
 
 
     public $incrementing = false;
@@ -338,17 +192,6 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 
     ];
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
->>>>>>> aurmich/dev
     /** @var array<string, mixed>  */
     protected $attributes = [
         //'state' => Pending::class,
@@ -357,82 +200,24 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
         'is_active'=>true,
     ];
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> d4c0700e (♻️ (SelectStateColumn.php): refactor state retrieval logic to use $state directly for clarity)
-=======
->>>>>>> d23ba493 (add calendar)
-=======
->>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
->>>>>>> aurmich/dev
     /**
      * Guard coerente con Spatie/Permission: deve essere 'web'.
      * @var string
      */
     protected $guard_name = 'web';
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    protected $guard_name = "web";
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
->>>>>>> d4c0700e (♻️ (SelectStateColumn.php): refactor state retrieval logic to use $state directly for clarity)
-
-=======
->>>>>>> 15cb84fb (fix collisions)
-=======
-
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
     /** @var \Illuminate\Database\Eloquent\Relations\Pivot|null */
     public $pivot;
 
     public function __construct(array $attributes = [])
     {
         // Concateno i fillable del parent con quelli della classe corrente
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        $this->fillable = array_merge(parent::getFillable(), $this->getFillable());
-=======
->>>>>>> b58de900 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
         // array_values() garantisce che sia un array indicizzato (list<string>)
         $this->fillable = array_values(array_merge(parent::getFillable(), $this->getFillable()));
 
         parent::__construct($attributes);
     }
 
-<<<<<<< HEAD
-=======
-=======
-    /** @var \Illuminate\Database\Eloquent\Relations\Pivot|null */
-    public $pivot;
-
->>>>>>> 54f4fa16 (.)
-=======
-        $this->fillable = array_merge(parent::getFillable(), $this->getFillable());
-=======
-        // array_values() garantisce che sia un array indicizzato (list<string>)
-        $this->fillable = array_values(array_merge(parent::getFillable(), $this->getFillable()));
->>>>>>> a3174e5b (phpstan)
-
-        parent::__construct($attributes);
-    }
-
->>>>>>> adac82bd (rebase)
->>>>>>> aurmich/dev
     public function canAccessFilament(?Panel $panel = null): bool
     {
         // return $this->role_id === Role::ROLE_ADMINISTRATOR;
@@ -535,39 +320,9 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     }
 
     /**
-<<<<<<< HEAD
      * Get the devices associated with the user.
      *
      * @return BelongsToMany<Device, static>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * Get the devices associated with the user.
-     *
-     * @return BelongsToMany<Device, static>
-=======
-     * @return BelongsToMany<Device, static|$this>
->>>>>>> 54f4fa16 (.)
-=======
-     * @return BelongsToMany<Device, static>
->>>>>>> 1def8bbe (fix hint)
-=======
-     * @return BelongsToMany<Device, static|$this>
-=======
-     * @return BelongsToMany<Device, static>
->>>>>>> aurmich/dev
-=======
-     * @return BelongsToMany<Device, static>
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
-     * Get the devices associated with the user.
-     *
-     * @return BelongsToMany<Device, static>
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
      */
     public function devices(): BelongsToMany
     {
@@ -575,46 +330,6 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
             ->belongsToManyX(Device::class);
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    /**
-     * Get the socialite users associated with the user.
-     *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @return HasMany<SocialiteUser, $this>
-=======
-     * @return HasMany<SocialiteUser, static>
->>>>>>> aurmich/dev
-=======
-     * @return HasMany<SocialiteUser, $this>
->>>>>>> 345f8677 (phpstan)
-     */
-    public function socialiteUsers(): HasMany
-    {
-        return $this->hasMany(SocialiteUser::class);
-=======
-=======
->>>>>>> b58de900 (.)
-    public function socialiteUsers(): HasMany
-    {
-        return $this
-            ->hasMany(SocialiteUser::class);
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
-=======
-=======
-=======
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     /**
      * Get the socialite users associated with the user.
      *
@@ -622,29 +337,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
      */
     public function socialiteUsers(): HasMany
     {
-<<<<<<< HEAD
         return $this->hasMany(SocialiteUser::class);
-=======
-<<<<<<< HEAD
-        /** @var class-string<SocialiteUser> $socialiteUserClass */
-        $socialiteUserClass = SocialiteUser::class;
-        
-        return $this->hasMany($socialiteUserClass);
->>>>>>> a3174e5b (phpstan)
-=======
-        return $this->hasMany(SocialiteUser::class);
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 1def8bbe (fix hint)
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     }
 
     public function getProviderField(string $provider, string $field): string
@@ -710,23 +403,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
      */
     protected static function newFactory()
     {
-<<<<<<< HEAD
         return app(GetFactoryAction::class)->execute(static::class);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        return app(GetFactoryAction::class)->execute(static::class);
-=======
-        return UserFactory::new();
->>>>>>> aurmich/dev
-=======
-        return UserFactory::new();
->>>>>>> 54f4fa16 (.)
-=======
-        return app(GetFactoryAction::class)->execute(static::class);
->>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
->>>>>>> aurmich/dev
     }
 
     /** @return array<string, string> */
@@ -756,43 +433,6 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 
 
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 15cb84fb (fix collisions)
-    /**
-     * Get the role name for the current team.
-     *
-     * @return array<int, string>
-     */
-    /**
-     * Get all role names associated with the user.
-     *
-     * @return array<int, string>
-     */
-    public function getRoleNames(): array
-    {
-        /** @var array<int, string> */
-        return $this->roles()->pluck('name')->filter()->values()->toArray();
-    }
-
-
-
-
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 2099645a (.)
-=======
->>>>>>> 15cb84fb (fix collisions)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 
     public function authentications(): MorphMany
     {
@@ -836,60 +476,5 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
         return false;
     }
 
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-    /**
-     * Get all permission names associated with the user's roles.
-     *
-     * @return array<int, string>
-     */
-    public function getPermissionNames(): array
-    {
-        $roles = $this->roles()->with('permissions')->get();
-        if ($roles->isEmpty()) {
-            return [];
-        }
-
-=======
-    /**
-     * Get all permission names associated with the user's roles.
-     *
-     * @return array<int, string>
-     */
-    public function getPermissionNames(): array
-    {
-        $roles = $this->roles()->with('permissions')->get();
-        if ($roles->isEmpty()) {
-            return [];
-        }
-
->>>>>>> 15cb84fb (fix collisions)
-        $permissions = collect();
-        foreach ($roles as $role) {
-            if (isset($role->permissions) && $role->permissions !== null) {
-                $permissions = $permissions->merge($role->permissions);
-            }
-        }
-
-        /** @var array<int, string> */
-        return $permissions->pluck('name')->values()->toArray();
-    }
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> 2099645a (.)
-=======
->>>>>>> 15cb84fb (fix collisions)
-=======
-
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 }

@@ -54,19 +54,7 @@ trait IsProfileTrait
         /** @var class-string<\Illuminate\Database\Eloquent\Model&\Modules\Xot\Contracts\UserContract> $userClass */
         $userClass = XotData::make()->getUserClass();
 
-<<<<<<< HEAD
         // @phpstan-ignore return.type
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        // @phpstan-ignore return.type
-=======
-        // @phpstan-ignore-next-line
->>>>>>> aurmich/dev
-=======
-        // @phpstan-ignore-next-line
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
         return $this->belongsTo($userClass);
     }
 
@@ -228,19 +216,7 @@ trait IsProfileTrait
      */
     public function mobileDevices(): BelongsToMany
     {
-<<<<<<< HEAD
         // @phpstan-ignore return.type
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        // @phpstan-ignore return.type
-=======
-        // @phpstan-ignore-next-line
->>>>>>> aurmich/dev
-=======
-        // @phpstan-ignore-next-line
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
         return $this->belongsToMany(Device::class, 'mobile_device_users', 'profile_id', 'device_id')
             ->withPivot('token')
             ->withTimestamps();
@@ -253,55 +229,7 @@ trait IsProfileTrait
      */
     public function devices(): BelongsToMany
     {
-<<<<<<< HEAD
         return $this->belongsToManyX(Device::class);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        return $this->belongsToManyX(Device::class);
-=======
-=======
-        
-        /*
->>>>>>> f3e4ec66 (.)
-=======
-=======
-        
-        /*
->>>>>>> aurmich/dev
-=======
-        
-        /*
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-        // @phpstan-ignore-next-line
-        return $this->belongsToMany(Device::class, 'device_users', 'profile_id', 'device_id')
-            ->withPivot('token')
-            ->withTimestamps();
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
-            */
-        return $this->belongsToManyX(Device::class);
->>>>>>> f3e4ec66 (.)
-=======
-<<<<<<< HEAD
-=======
-            */
-        return $this->belongsToManyX(Device::class);
->>>>>>> aurmich/dev
-=======
-            */
-        return $this->belongsToManyX(Device::class);
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
-        return $this->belongsToManyX(Device::class);
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     }
 
     /**
@@ -311,19 +239,7 @@ trait IsProfileTrait
      */
     public function mobileDeviceUsers(): HasMany
     {
-<<<<<<< HEAD
         // @phpstan-ignore return.type
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        // @phpstan-ignore return.type
-=======
-        // @phpstan-ignore-next-line
->>>>>>> aurmich/dev
-=======
-        // @phpstan-ignore-next-line
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
         return $this->hasMany(DeviceUser::class, 'profile_id')->where('type', 'mobile');
     }
 
@@ -334,19 +250,7 @@ trait IsProfileTrait
      */
     public function deviceUsers(): HasMany
     {
-<<<<<<< HEAD
         // @phpstan-ignore return.type
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        // @phpstan-ignore return.type
-=======
-        // @phpstan-ignore-next-line
->>>>>>> aurmich/dev
-=======
-        // @phpstan-ignore-next-line
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
         return $this->hasMany(DeviceUser::class, 'profile_id');
     }
 

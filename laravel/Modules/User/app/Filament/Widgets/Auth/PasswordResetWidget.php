@@ -10,11 +10,8 @@ use Illuminate\Support\Facades\Password;
 use Filament\Forms\ComponentContainer;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Filament\Notifications\Notification;
-<<<<<<< HEAD
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\HtmlString;
-=======
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
 
 /**
  * Password Reset Widget for SaluteOra platform.
@@ -29,43 +26,24 @@ class PasswordResetWidget extends XotBaseWidget
     public ?array $data = [];
     public bool $emailSent = false;
 
-<<<<<<< HEAD
     /**
      * @phpstan-ignore-next-line
      */
-=======
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
     protected static string $view = 'pub_theme::filament.widgets.auth.password.reset';
 
     /**
      * Get the form schema for password reset.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-     * @return array<string, mixed>
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
-=======
->>>>>>> f28f27db (✨ (PasswordResetConfirmWidget.php, PasswordResetWidget.php, UserServiceProvider.php): refactor password reset forms to improve code readability and maintainability)
      */
     public function getFormSchema(): array
     {
         return [
-<<<<<<< HEAD
-<<<<<<< HEAD
             'email'=>Forms\Components\TextInput::make('email')
-=======
-            Forms\Components\TextInput::make('email')
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
-=======
-            'email'=>Forms\Components\TextInput::make('email')
->>>>>>> f28f27db (✨ (PasswordResetConfirmWidget.php, PasswordResetWidget.php, UserServiceProvider.php): refactor password reset forms to improve code readability and maintainability)
                 ->email()
                 ->required()
                 ->autocomplete('email')
                 ->maxLength(255)
                 ->extraInputAttributes(['class' => 'text-center']),
-<<<<<<< HEAD
             
             'error_display'=>\Filament\Forms\Components\Placeholder::make('error_display')
                 ->label('')
@@ -83,8 +61,6 @@ class PasswordResetWidget extends XotBaseWidget
                 ->reactive()
 
 
-=======
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
         ];
     }
 
@@ -103,10 +79,7 @@ class PasswordResetWidget extends XotBaseWidget
                 'email' => $data['email']
             ]);
 
-<<<<<<< HEAD
             
-=======
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
             if ($response === Password::RESET_LINK_SENT) {
                 $this->emailSent = true;
                 
@@ -120,10 +93,7 @@ class PasswordResetWidget extends XotBaseWidget
                 // Clear the form
                 $this->form->fill();
             } else {
-<<<<<<< HEAD
                 Session::flash('error', trans('user::errors.'.$response.'.label'));
-=======
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
                 Notification::make()
                     ->title(__('user::auth.password_reset.email_failed.title'))
                     ->body(trans($response))
