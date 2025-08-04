@@ -1,7 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
+=======
+>>>>>>> 90ef519a (✨ (IconStateColumn.php): add localization support for state labels using)
 return [
     'active' => [
         'label' => 'Attivo',
@@ -35,6 +38,7 @@ return [
         'label' => 'Integrazione in attesa',
         'color' => 'warning',
     ],
+<<<<<<< HEAD
     'integration_completed' => [
         'label' => 'Integrazione completata',
         'color' => 'success',
@@ -43,4 +47,43 @@ return [
         'label' => 'Integrazione annullata',
         'color' => 'danger',
     ],
+=======
+    'integration_approved' => [
+        'label' => 'Integrazione approvata',
+        'color' => 'success',
+    ],
+    'integration_rejected' => [
+        'label' => 'Integrazione rifiutata',
+        'color' => 'danger',
+    ],
+    'integration_pending' => [
+        'label' => 'Integrazione in attesa',
+        'color' => 'warning',
+    ],
+    'integration_approved' => [
+        'label' => 'Integrazione approvata',
+        'color' => 'success',
+    ],
+    'integration_rejected' => [
+        'label' => 'Integrazione rifiutata',
+        'color' => 'danger',
+    ],
+    'integration_pending' => [
+        'label' => 'Integrazione in attesa',
+        'color' => 'warning',
+    ],
+    'integration_approved' => [
+        'label' => 'Integrazione approvata',
+        'color' => 'success',
+    ],
+    'integration_rejected' => [
+        'label' => 'Integrazione rifiutata',
+        'color' => 'danger',
+    ],
+    'integration_pending' => [
+        'label' => 'Integrazione in attesa',
+        'color' => 'warning',
+    ],
+    
+>>>>>>> 90ef519a (✨ (IconStateColumn.php): add localization support for state labels using)
 ];

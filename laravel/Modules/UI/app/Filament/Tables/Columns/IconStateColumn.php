@@ -11,11 +11,15 @@ use Illuminate\Support\Arr;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 =======
 >>>>>>> 345f8677 (phpstan)
 =======
 >>>>>>> 345f8677 (phpstan)
+=======
+use Illuminate\Support\Str;
+>>>>>>> 90ef519a (✨ (IconStateColumn.php): add localization support for state labels using)
 use Webmozart\Assert\Assert;
 use Spatie\ModelStates\State;
 use Modules\SaluteOra\Models\User;
@@ -217,6 +221,7 @@ class IconStateColumn extends IconColumn
                                 return array_combine($states, $states);
                             }
                             Assert::isInstanceOf($state, State::class);
+                            
                             try{
                                 //$states=$record->getAttribute($name)->transitionableStates();
                                 $states=$state->transitionableStates();
@@ -225,7 +230,12 @@ class IconStateColumn extends IconColumn
                             }
                             /** @phpstan-ignore-next-line */
                             //$states=[$state::$name, ...$states];
-                            $states=array_combine($states, $states);
+                            //$states=array_combine($states, $states);
+                            $states=Arr::mapWithKeys($states,function($state) use ($record){
+                                $model=Str::of(class_basename($record))->slug()->toString();
+                               return [$state=>__('pub_theme::'.$model.'_states.'.$state.'.label')];
+                            });
+                            
                             //dddx(['state'=>$state, 'state1'=>$record->getAttribute($name),'record'=>$record]);
 
                             return $states;
