@@ -54,10 +54,7 @@ protected function fillable(): array
 Prima di ogni commit, utilizzare:
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Cerca proprietà deprecate nei modelli
 grep -r "protected \$casts" --include="*.php" /var/www/html/base_saluteora/laravel/Modules
 grep -r "protected \$fillable" --include="*.php" /var/www/html/base_saluteora/laravel/Modules

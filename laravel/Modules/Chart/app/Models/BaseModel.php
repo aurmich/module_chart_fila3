@@ -47,7 +47,6 @@ abstract class BaseModel extends Model
     /** @var string */
     protected $connection = 'chart';
 
-<<<<<<< HEAD
     /**
      * Get the attributes that should be cast.
      *
@@ -57,10 +56,6 @@ abstract class BaseModel extends Model
     {
         return ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
     }
-=======
-    /** @var array<string, string> */
-    protected $casts = ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
->>>>>>> aurmich/dev
 
     /** @var string */
     protected $primaryKey = 'id';

@@ -9,10 +9,7 @@ use Illuminate\Support\Str;
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\DataCollection;
 use Webmozart\Assert\Assert;
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeFloatCastAction;
-=======
->>>>>>> aurmich/dev
 
 class AnswersChartData extends Data
 {
@@ -103,11 +100,7 @@ class AnswersChartData extends Data
         } else {
             $data = $this->answers->toCollection()->pluck('avg')->all();
             foreach ($data as $key => $item) {
-<<<<<<< HEAD
                 $data[$key] = number_format(\Modules\Xot\Actions\Cast\SafeFloatCastAction::cast($item, 0.0), 2, '.', '');
-=======
-                $data[$key] = number_format((float) $item, 2, '.', '');
->>>>>>> aurmich/dev
             }
 
             if (isset($this->chart->max)) {
@@ -123,11 +116,7 @@ class AnswersChartData extends Data
                     }
                 }
             }
-<<<<<<< HEAD
             /** @phpstan-ignore offsetAccess.nonOffsetAccessible */
-=======
-
->>>>>>> aurmich/dev
             if (isset($this->answers->toCollection()->pluck('avg')[0]) && ! \is_string($this->answers->toCollection()->pluck('avg')[0])) {
                 $label = 'Media';
             } else {
@@ -413,10 +402,7 @@ class AnswersChartData extends Data
         $label = '--';
         if ($first_answer != null) {
             Assert::isInstanceOf($first_answer, AnswerData::class, '['.__LINE__.']['.__FILE__.']');
-<<<<<<< HEAD
             /** @phpstan-ignore property.nonObject */
-=======
->>>>>>> aurmich/dev
             $label = round((float) $this->answers->first()->avg, 2);
         }
         $js = <<<JS

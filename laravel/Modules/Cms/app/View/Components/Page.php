@@ -41,10 +41,7 @@ class Page extends Component
         if(!is_array($blocks)){
             $blocks = [];
         }
-<<<<<<< HEAD
                
-=======
->>>>>>> aurmich/dev
         
         $this->blocks = BlockData::collect($blocks);
     }

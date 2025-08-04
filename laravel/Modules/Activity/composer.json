@@ -30,15 +30,7 @@
         "spatie/laravel-event-sourcing": "*"
     },
     "require-dev": {},
-<<<<<<< HEAD
-<<<<<<< HEAD
     "repositories_comment": [
-=======
-    "repositories": [
->>>>>>> aurmich/dev
-=======
-    "repositories_comment": [
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         {
             "type": "path",
             "url": "../Xot"

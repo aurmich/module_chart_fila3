@@ -51,11 +51,8 @@ use Spatie\Translatable\HasTranslations;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  * @method static \Modules\Cms\Database\Factories\PageFactory factory($count = null, $state = [])
-<<<<<<< HEAD
  * @property array<array-key, mixed>|null $middleware
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Page whereMiddleware($value)
-=======
->>>>>>> aurmich/dev
  * @mixin \Eloquent
  */
 class Page extends BaseModelLang
@@ -75,10 +72,7 @@ class Page extends BaseModelLang
         'content',
         'slug',
         'title',
-<<<<<<< HEAD
         'middleware',
-=======
->>>>>>> aurmich/dev
         'content_blocks',
         'sidebar_blocks',
         'footer_blocks',
@@ -88,10 +82,7 @@ class Page extends BaseModelLang
         'id' => 'integer',
         'title' => 'json',
         'slug' => 'string',
-<<<<<<< HEAD
         'middleware' => 'json',
-=======
->>>>>>> aurmich/dev
         'content' => 'string',
 
         'content_blocks' => 'json',
@@ -130,7 +121,6 @@ class Page extends BaseModelLang
             'content_blocks' => 'array',
             'sidebar_blocks' => 'array',
             'footer_blocks' => 'array',
-<<<<<<< HEAD
             'middleware' => 'array',
         ];
     }
@@ -141,8 +131,4 @@ class Page extends BaseModelLang
         $page = self::where('slug', $slug)->first();
         return $page->middleware ?? [];
     }
-=======
-        ];
-    }
->>>>>>> aurmich/dev
 }
