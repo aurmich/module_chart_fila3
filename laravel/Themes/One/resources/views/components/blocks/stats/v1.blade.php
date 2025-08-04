@@ -4,6 +4,7 @@
     'description' => null
 ])
 
+<<<<<<< HEAD
 <div class="bg-[#E6EBF7] py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
 <<<<<<< HEAD
@@ -66,3 +67,6 @@
         </div>
     </div>
 </div>
+=======
+
+>>>>>>> ff138484 (- update dettaglio paziente)
