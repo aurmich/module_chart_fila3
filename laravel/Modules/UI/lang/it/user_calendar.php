@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 return [
     'months' => [
         'long' => [
@@ -77,6 +80,7 @@ return [
         'after' => 'La data di fine deve essere successiva alla data di inizio'
     ]
 ];
+<<<<<<< HEAD
 =======
 return array (
   'fields' => 
@@ -116,3 +120,5 @@ return array (
   ),
 );
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)

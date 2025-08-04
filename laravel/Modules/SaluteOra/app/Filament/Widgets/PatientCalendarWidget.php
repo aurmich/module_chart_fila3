@@ -40,7 +40,17 @@ class PatientCalendarWidget extends FullCalendarWidget
 class PatientCalendarWidget extends FullCalendarWidget
 {
     use HasFullCalendarConfig;
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+    
+    /**
+     * Riferimento alla data corrente del calendario.
+     *
+     * @var string
+     */
+    public string $currentDate;
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 
     /**
      * Modello associato al widget.
@@ -63,6 +73,9 @@ class PatientCalendarWidget extends FullCalendarWidget
      */
     protected static ?string $maxHeight = '600px';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
     
     /**
      * Inizializza il widget impostando la data corrente.
@@ -71,6 +84,10 @@ class PatientCalendarWidget extends FullCalendarWidget
      */
     public function mount(): void
     {
+<<<<<<< HEAD
+=======
+        parent::mount();
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
         $this->currentDate = now()->format('Y-m-d');
     }
     
@@ -124,8 +141,11 @@ class PatientCalendarWidget extends FullCalendarWidget
         $this->currentDate = now()->format('Y-m-d');
         $this->dispatch('refetchEvents');
     }
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 
     /**
      * Verifica se l'utente può visualizzare il widget.
