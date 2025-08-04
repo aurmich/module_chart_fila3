@@ -1,19 +1,29 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array (
   'singular' => 'Indirizzo',
   'plural' => 'Indirizzi',
 <<<<<<< HEAD
+=======
+return array (
+  'singular' => 'Indirizzo',
+  'plural' => 'Indirizzi',
+>>>>>>> f2140a80 (- continuo style landing page;)
   'navigation' => 
   array (
     'sort' => 96,
     'icon' => 'address.navigation',
+<<<<<<< HEAD
     'group' => 'address.navigation',
   ),
 =======
   'navigation' => 'Gestione Indirizzi',
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+  ),
+>>>>>>> f2140a80 (- continuo style landing page;)
   'actions' => 
   array (
     'create' => 'Crea indirizzo',
@@ -42,10 +52,14 @@ return array (
       'placeholder' => 'Inserisci un nome per l\'indirizzo',
       'helper' => 'Un nome identificativo per questo indirizzo, es. "Casa" o "Ufficio"',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'name',
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+      'helper_text' => '',
+>>>>>>> f2140a80 (- continuo style landing page;)
       'description' => 'name',
     ),
     'description' => 
@@ -61,10 +75,14 @@ return array (
       'helper' => 'Nome della via o strada',
       'description' => 'route',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'route',
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+      'helper_text' => '',
+>>>>>>> f2140a80 (- continuo style landing page;)
     ),
     'street_number' => 
     array (
@@ -72,10 +90,14 @@ return array (
       'placeholder' => 'Inserisci il numero civico',
       'description' => 'street_number',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'street_number',
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+      'helper_text' => '',
+>>>>>>> f2140a80 (- continuo style landing page;)
     ),
     'locality' => 
     array (
@@ -83,10 +105,14 @@ return array (
       'placeholder' => 'Inserisci la città',
       'description' => 'locality',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'locality',
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+      'helper_text' => '',
+>>>>>>> f2140a80 (- continuo style landing page;)
     ),
     'administrative_area_level_3' => 
     array (
@@ -99,10 +125,14 @@ return array (
       'placeholder' => 'Inserisci la provincia',
       'description' => 'administrative_area_level_2',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'administrative_area_level_2',
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+      'helper_text' => '',
+>>>>>>> f2140a80 (- continuo style landing page;)
     ),
     'administrative_area_level_1' => 
     array (
@@ -110,10 +140,14 @@ return array (
       'placeholder' => 'Inserisci la regione',
       'description' => 'administrative_area_level_1',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'administrative_area_level_1',
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+      'helper_text' => '',
+>>>>>>> f2140a80 (- continuo style landing page;)
     ),
     'country' => 
     array (
@@ -121,10 +155,14 @@ return array (
       'placeholder' => 'Inserisci il paese',
       'description' => 'country',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'country',
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+      'helper_text' => '',
+>>>>>>> f2140a80 (- continuo style landing page;)
     ),
     'postal_code' => 
     array (
@@ -132,10 +170,14 @@ return array (
       'placeholder' => 'Inserisci il CAP',
       'description' => 'postal_code',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'postal_code',
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+      'helper_text' => '',
+>>>>>>> f2140a80 (- continuo style landing page;)
     ),
     'formatted_address' => 
     array (
@@ -143,10 +185,14 @@ return array (
       'placeholder' => 'Indirizzo formattato completo',
       'description' => 'formatted_address',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'formatted_address',
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+      'helper_text' => '',
+>>>>>>> f2140a80 (- continuo style landing page;)
     ),
     'place_id' => 
     array (
@@ -164,10 +210,14 @@ return array (
       'placeholder' => 'Inserisci la longitudine',
       'description' => 'longitude',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'longitude',
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+      'helper_text' => '',
+>>>>>>> f2140a80 (- continuo style landing page;)
     ),
     'type' => 
     array (
@@ -188,10 +238,14 @@ return array (
       'helper' => 'Imposta questo indirizzo come indirizzo principale',
       'description' => 'is_primary',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'is_primary',
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+      'helper_text' => '',
+>>>>>>> f2140a80 (- continuo style landing page;)
       'placeholder' => 'is_primary',
     ),
     'extra_data' => 
@@ -211,6 +265,7 @@ return array (
     array (
       'description' => 'map',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
     ),
     'aaa' => 
@@ -222,6 +277,10 @@ return array (
       'helper_text' => 'map',
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     ),
+=======
+      'helper_text' => '',
+    ),
+>>>>>>> f2140a80 (- continuo style landing page;)
   ),
   'columns' => 
   array (
@@ -264,6 +323,7 @@ return array (
     ),
   ),
 );
+<<<<<<< HEAD
 =======
 return [
     'singular' => 'Indirizzo',
@@ -434,3 +494,5 @@ return [
     ],
 ];
 >>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
+=======
+>>>>>>> f2140a80 (- continuo style landing page;)

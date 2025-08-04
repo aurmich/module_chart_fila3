@@ -139,6 +139,9 @@ return array (
       'label' => 'reorderRecords',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f2140a80 (- continuo style landing page;)
     'resetFilters' => 
     array (
       'label' => 'resetFilters',
@@ -147,8 +150,11 @@ return array (
     array (
       'label' => 'applyFilters',
     ),
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f2140a80 (- continuo style landing page;)
   ),
   'actions' => 
   array (

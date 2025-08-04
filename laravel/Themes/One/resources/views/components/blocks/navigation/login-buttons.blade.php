@@ -3,6 +3,7 @@
 ])
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @php
     $userAgent = request()->header('User-Agent');
     $isMobile = preg_match('/Mobile|Android|iPhone|iPad|Opera Mini|IEMobile|WPDesktop/i', $userAgent);
@@ -29,6 +30,9 @@
 @endif
 =======
 <div class="flex items-center space-x-4">
+=======
+<div class="flex items-center space-x-4 m-12">
+>>>>>>> f2140a80 (- continuo style landing page;)
     <a href="{{ route('login') }}" class="text-sm font-medium text-[#E2E8F0] hover:text-[#E2E8F0]">
         {{ __('auth.login.title') }}
     </a>

@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f2140a80 (- continuo style landing page;)
 return array (
   'navigation' => 
   array (
@@ -77,6 +80,7 @@ return array (
     ),
   ),
 );
+<<<<<<< HEAD
 =======
 return [
     'navigation' => [
@@ -136,3 +140,5 @@ return [
     ],
 ];
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f2140a80 (- continuo style landing page;)

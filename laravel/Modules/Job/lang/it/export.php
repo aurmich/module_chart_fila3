@@ -85,12 +85,18 @@ return array (
       'label' => 'reorderRecords',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f2140a80 (- continuo style landing page;)
     'resetFilters' => 
     array (
       'label' => 'resetFilters',
     ),
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f2140a80 (- continuo style landing page;)
   ),
   'formats' => 
   array (

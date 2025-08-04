@@ -18,6 +18,7 @@
 @endphp
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <nav class="hidden md:flex {{ $alignmentClasses[$alignment] }} {{ $orientationClasses[$orientation] }} m-12">
     @foreach($items as $item)
         @if($item['type'] === 'link')
@@ -26,6 +27,9 @@
                class="text-base font-medium !text-white">
 =======
 <nav class="hidden md:flex {{ $alignmentClasses[$alignment] }} {{ $orientationClasses[$orientation] }}">
+=======
+<nav class="hidden md:flex {{ $alignmentClasses[$alignment] }} {{ $orientationClasses[$orientation] }} m-12">
+>>>>>>> f2140a80 (- continuo style landing page;)
     @foreach($items as $item)
         @if($item['type'] === 'link')
             <a href="{{ $item['url'] }}" 

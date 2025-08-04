@@ -42,11 +42,11 @@
 @endphp
 
 <header {{ $attributes->merge([
-    'class' => 'bg-[#1A467F]',
+    'class' => 'bg-[#1A467F] h-24 flex items-center',
     'id' => ($section['attributes']['id'] ?? ''),
     'x-data' => "{ mobileMenuOpen: false }"
 ]) }}>
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mx-0">
         <div class="flex h-16 items-center justify-between">
 >>>>>>> 54f4fa16 (.)
             @foreach($componentsBlocks as $block)

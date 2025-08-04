@@ -55,12 +55,15 @@
                             "label": "Chi Siamo",
                             "url": "/chi-siamo",
                             "type": "link"
+<<<<<<< HEAD
                         },
                         {
                             "label": "Contatti",
                             "url": "/contatti",
 >>>>>>> a25008e1 (- Rename file: header, footer, home;)
                             "type": "link"
+=======
+>>>>>>> f2140a80 (- continuo style landing page;)
                         }
                     ],
                     "alignment": "start",

@@ -87,6 +87,9 @@ return new class extends XotBaseMigration
         // -- UPDATE --
         $this->tableUpdate(
             function (Blueprint $table): void {
+                if(!$this->hasColumn('slug')) {
+                    $table->string('slug')->nullable();
+                }
                 // Aggiunta dei timestamp e soft delete
                 $this->updateTimestamps($table, true);
             }

@@ -68,7 +68,7 @@
 >>>>>>> d23ba493 (add calendar)
     'id' => ($section['attributes']['id'] ?? '')
 ]) }}>
-    <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto py-8 sm:px-6 lg:px-8">
         <div class="w-full flex flex-col justify-center">
             <!-- Colonna Logo e Descrizione -->
 <<<<<<< HEAD
@@ -128,6 +128,7 @@
 
         <!-- Copyright e Link Legali -->
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     </div>
 <<<<<<< HEAD
@@ -137,6 +138,9 @@
 >>>>>>> aurmich/dev
 =======
         <div class="mt-12 pt-8 border-t border-neutral-focus">
+=======
+        <div class="border-neutral-focus">
+>>>>>>> f2140a80 (- continuo style landing page;)
             <div class="flex justify-center">
                 <div class="text-center m-6 md:text-right space-x-4">
                     <a href="{{ url('privacy') }}" class="text-[#0D9488] text-sm hover:text-primary-400 transition-colors">Privacy Policy</a>
@@ -144,6 +148,9 @@
                     <a href="{{ url('cookies') }}" class="text-[#0D9488] text-sm hover:text-primary-400 transition-colors">Cookie Policy</a>
                 </div>
             </div>
+        </div>
+        <div>
+            <img src="/img/img-footer.png"/>
         </div>
     </div>
 <<<<<<< HEAD

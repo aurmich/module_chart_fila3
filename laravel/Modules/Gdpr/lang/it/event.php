@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f2140a80 (- continuo style landing page;)
 return array (
   'navigation' => 
   array (
@@ -45,6 +48,7 @@ return array (
     'data_deleted' => 'Dati Eliminati',
   ),
 );
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
@@ -77,3 +81,5 @@ return [
     ],
 ];
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f2140a80 (- continuo style landing page;)

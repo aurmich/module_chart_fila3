@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f2140a80 (- continuo style landing page;)
 return array (
   'navigation' => 
   array (
@@ -92,12 +95,15 @@ return array (
       'label' => 'openFilters',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
     'login_at' => 
     array (
       'label' => 'login_at',
     ),
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> f2140a80 (- continuo style landing page;)
   ),
   'actions' => 
   array (
@@ -122,6 +128,7 @@ return array (
       'label' => 'create',
     ),
   ),
+<<<<<<< HEAD
 <<<<<<< HEAD
   'model' => 
   array (
@@ -216,3 +223,6 @@ return [
     ],
 ];
 >>>>>>> 54f4fa16 (.)
+=======
+);
+>>>>>>> f2140a80 (- continuo style landing page;)

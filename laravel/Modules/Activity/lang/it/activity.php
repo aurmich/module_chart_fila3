@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f2140a80 (- continuo style landing page;)
 return array (
   'navigation' => 
   array (
@@ -13,13 +16,18 @@ return array (
     ),
     'label' => 'Attività',
     'sort' => 60,
+<<<<<<< HEAD
     'icon' => 'heroicon-o-activity',
+=======
+    'icon' => 'activity-activity-animated',
+>>>>>>> f2140a80 (- continuo style landing page;)
   ),
   'fields' => 
   array (
     'user' => 
     array (
       'label' => 'Utente',
+<<<<<<< HEAD
       'placeholder' => 'Seleziona un utente',
       'help' => 'L\'utente che ha eseguito l\'azione',
       'name' => 
@@ -43,10 +51,16 @@ return array (
         'help' => 'Ruolo dell\'utente nel sistema',
         'validation' => 'required|string',
       ),
+=======
+      'name' => 'Nome',
+      'email' => 'Email',
+      'role' => 'Ruolo',
+>>>>>>> f2140a80 (- continuo style landing page;)
     ),
     'action' => 
     array (
       'label' => 'Azione',
+<<<<<<< HEAD
       'placeholder' => 'Seleziona un\'azione',
       'help' => 'Tipo di azione eseguita',
       'validation' => 'required|string',
@@ -101,10 +115,21 @@ return array (
           'color' => 'gray',
         ),
       ),
+=======
+      'created' => 'Creato',
+      'updated' => 'Modificato',
+      'deleted' => 'Eliminato',
+      'viewed' => 'Visualizzato',
+      'downloaded' => 'Scaricato',
+      'uploaded' => 'Caricato',
+      'logged_in' => 'Accesso',
+      'logged_out' => 'Uscita',
+>>>>>>> f2140a80 (- continuo style landing page;)
     ),
     'subject' => 
     array (
       'label' => 'Oggetto',
+<<<<<<< HEAD
       'placeholder' => 'Seleziona un oggetto',
       'help' => 'L\'oggetto interessato dall\'azione',
       'type' => 
@@ -193,10 +218,34 @@ return array (
     'applyFilters' => 
     array (
       'label' => 'applyFilters',
+=======
+      'type' => 'Tipo',
+      'id' => 'ID',
+      'name' => 'Nome',
+    ),
+    'description' => 'Descrizione',
+    'ip_address' => 'Indirizzo IP',
+    'user_agent' => 'User Agent',
+    'created_at' => 'Data',
+    'properties' => 
+    array (
+      'label' => 'Proprietà',
+      'old' => 'Vecchio Valore',
+      'new' => 'Nuovo Valore',
+    ),
+    'toggleColumns' => 
+    array (
+      'label' => 'toggleColumns',
+    ),
+    'reorderRecords' => 
+    array (
+      'label' => 'reorderRecords',
+>>>>>>> f2140a80 (- continuo style landing page;)
     ),
   ),
   'filters' => 
   array (
+<<<<<<< HEAD
     'user' => 
     array (
       'label' => 'Utente',
@@ -297,11 +346,31 @@ return array (
       'title' => 'Nessuna attività registrata',
       'description' => 'Non ci sono ancora attività da visualizzare. Le attività appariranno qui quando gli utenti inizieranno a interagire con il sistema.',
     ),
+=======
+    'user' => 'Utente',
+    'action' => 'Azione',
+    'subject_type' => 'Tipo Oggetto',
+    'date_range' => 'Intervallo Date',
+    'ip_address' => 'Indirizzo IP',
+  ),
+  'actions' => 
+  array (
+    'view_details' => 'Visualizza Dettagli',
+    'export' => 'Esporta',
+    'clear_old' => 'Pulisci Vecchie',
+  ),
+  'messages' => 
+  array (
+    'no_activities' => 'Nessuna attività trovata',
+    'cleared' => 'Attività vecchie eliminate con successo',
+    'exported' => 'Attività esportate con successo',
+>>>>>>> f2140a80 (- continuo style landing page;)
   ),
   'export' => 
   array (
     'formats' => 
     array (
+<<<<<<< HEAD
       'csv' => 
       array (
         'label' => 'CSV',
@@ -471,3 +540,19 @@ return [
     ],
 ];
 >>>>>>> 54f4fa16 (.)
+=======
+      'csv' => 'CSV',
+      'excel' => 'Excel',
+      'pdf' => 'PDF',
+    ),
+    'columns' => 
+    array (
+      'date' => 'Data',
+      'user' => 'Utente',
+      'action' => 'Azione',
+      'subject' => 'Oggetto',
+      'ip' => 'IP',
+    ),
+  ),
+);
+>>>>>>> f2140a80 (- continuo style landing page;)

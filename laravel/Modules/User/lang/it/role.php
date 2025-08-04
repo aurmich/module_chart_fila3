@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f2140a80 (- continuo style landing page;)
 return array (
   'navigation' => 
   array (
@@ -63,6 +66,7 @@ return array (
       'label' => 'applyFilters',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
     'toggleColumns' => 
     array (
       'label' => 'toggleColumns',
@@ -111,6 +115,8 @@ return array (
     ),
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> f2140a80 (- continuo style landing page;)
   ),
   'roles' => 
   array (
@@ -184,6 +190,7 @@ return array (
     'reports' => 'Report',
   ),
 );
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
@@ -301,3 +308,5 @@ return [
     ],
 ];
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f2140a80 (- continuo style landing page;)

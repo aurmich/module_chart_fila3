@@ -13,6 +13,7 @@ return array (
       'description' => 'startDate',
       'helper_text' => 'startDate',
       'placeholder' => 'startDate',
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
 =======
@@ -23,6 +24,8 @@ return array (
 =======
       'description' => 'startDate',
 >>>>>>> d23ba493 (add calendar)
+=======
+>>>>>>> f2140a80 (- continuo style landing page;)
     ),
     'endDate' => 
     array (
