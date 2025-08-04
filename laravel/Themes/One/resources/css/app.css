@@ -368,6 +368,7 @@
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     .fi-btn {
         @apply !text-white;
     }
@@ -377,6 +378,11 @@
 =======
 
 >>>>>>> d23ba493 (add calendar)
+=======
+    .fi-btn {
+        @apply !text-white;
+    }
+>>>>>>> a25008e1 (- Rename file: header, footer, home;)
     .fi-section-header {
         @apply border-b border-gray-200 px-4 py-2.5 dark:border-white/10 sm:px-6;
     }

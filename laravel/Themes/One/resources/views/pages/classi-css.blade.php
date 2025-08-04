@@ -314,5 +314,15 @@
 <div class="!border-black">BorderBlack</div>
 <div class="mb-12">Margin bottom</div>
 <div class="m-6">Margin</div>
+<<<<<<< HEAD
 </x-layouts.app>
 >>>>>>> 7e1c3ad6 (- sistemato footer;)
+=======
+<div class="w-96">Width</div>
+<div class="bg-[#B9C3D1]"></div>
+<div class="p-8">Padding</div>
+<div class="mb-8">Marginnn</div>
+<div class="!py-8">Padding zero</div>
+<div class="bg-[#DBE3EE]">Background button azioni</div>
+</x-layouts.app>
+>>>>>>> a25008e1 (- Rename file: header, footer, home;)

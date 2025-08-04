@@ -29,6 +29,7 @@
                         },
                         {
 <<<<<<< HEAD
+<<<<<<< HEAD
                             "label": "{{ __('pub_theme::header.links.Project.label') }}",
                             "url": "{{ route('pages.view',['slug'=>'progetto']) }}",
                             "type": "link"
@@ -45,6 +46,20 @@
                             "label": "Partners",
                             "url": "/it/pages/partners",
 >>>>>>> aurmich/dev
+=======
+                            "label": "Servizi",
+                            "url": "/servizi",
+                            "type": "link"
+                        },
+                        {
+                            "label": "Chi Siamo",
+                            "url": "/chi-siamo",
+                            "type": "link"
+                        },
+                        {
+                            "label": "Contatti",
+                            "url": "/contatti",
+>>>>>>> a25008e1 (- Rename file: header, footer, home;)
                             "type": "link"
                         }
                     ],
@@ -62,12 +77,16 @@
                         {
                             "label": "Profilo",
 <<<<<<< HEAD
+<<<<<<< HEAD
                             "url": "/it/profile",
                             "icon": "heroicon-o-user"
                         },
                         {
 =======
                             "url": "{{ $profiloUrl }}",
+=======
+                            "url": "/profilo",
+>>>>>>> a25008e1 (- Rename file: header, footer, home;)
                             "icon": "heroicon-o-user"
                         },
                         {
@@ -76,7 +95,10 @@
                             "icon": "heroicon-o-cog-6-tooth"
                         },
                         {
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> a25008e1 (- Rename file: header, footer, home;)
                             "type": "divider"
                         },
                         {
@@ -89,6 +111,7 @@
             },
             {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "name": "Dropdown Lang",
                 "type": "lang-switcher",
                 "data": {
@@ -96,11 +119,16 @@
                     "view1": "pub_theme::components.blocks.navigation.language-switcher"
                     
 =======
+=======
+>>>>>>> a25008e1 (- Rename file: header, footer, home;)
                 "name": "Selettore Lingua",
                 "type": "language-selector",
                 "data": {
                     "view": "pub_theme::components.blocks.language-selector"
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> a25008e1 (- Rename file: header, footer, home;)
                 }
             }
         ]
