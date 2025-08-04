@@ -4,8 +4,16 @@
 =======
 <?php
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 declare(strict_types=1);
 
+>>>>>>> aurmich/dev
+=======
+declare(strict_types=1);
+
+>>>>>>> a3f7230 (.)
 use Illuminate\Support\Facades\Http;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Facades\File;
@@ -13,6 +21,27 @@ use Illuminate\Support\Facades\Artisan;
 use function Laravel\Folio\{name};
 use Livewire\Volt\Component;
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+new class extends Component
+{
+    public $powerups = [];
+    public $powerupsJSON = null;
+
+    public function mount()
+    {
+        $this->powerupsJSON = json_decode(file_get_contents(public_path('/genesis/power-ups.json')));
+        foreach ($this->powerupsJSON as $powerup) {
+            $repo = key($powerup);
+            $installed = $powerup->{$repo};
+            $this->powerups[] = $this->fetchPowerup($repo, $installed);
+        }
+    }
+
+    protected function fetchPowerup($repo, $installed)
+=======
+=======
+>>>>>>> a3f7230 (.)
 $component = new class extends Component
 {
     /** @var array<int, mixed> */
@@ -51,6 +80,10 @@ $component = new class extends Component
      * @return array<string, mixed>|object
      */
     protected function fetchPowerup(string $repo, mixed $installed): array|object
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
     {
         $response = Http::get('https://raw.githubusercontent.com/' . $repo . '/main/powerup.json');
         if ($response->successful()) {
@@ -62,6 +95,16 @@ $component = new class extends Component
         return [];
     }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+    public function install($repo, $index)
+    {
+        foreach ($this->powerupsJSON as $powerUpIndex => $powerup) {
+            if (key($powerup) == $repo) {
+                $this->powerupsJSON[$powerUpIndex]->{$repo} = true;
+=======
+=======
+>>>>>>> a3f7230 (.)
     public function install(string $repo, int $index): \Illuminate\Http\RedirectResponse
     {
         if (is_array($this->powerupsJSON)) {
@@ -71,10 +114,35 @@ $component = new class extends Component
                         $this->powerupsJSON[$powerUpIndex][$repo] = true;
                     }
                 }
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
             }
         }
 
         $filePath = public_path('/genesis/power-ups.json');
+<<<<<<< HEAD
+<<<<<<< HEAD
+        File::put($filePath, json_encode($this->powerupsJSON, JSON_PRETTY_PRINT));
+
+        Artisan::call('powerup:install ' . $repo);
+
+        $run = $this->powerups[$index]->run_after_install;
+        if (isset($run['commands'])) {
+            foreach ($run['commands'] as $command) {
+                Artisan::call($command);
+            }
+        }
+
+        if (isset($run['factories'])) {
+            foreach ($run['factories'] as $factory) {
+                $model = $factory['model'];
+                $count = $factory['count'];
+                call_user_func("{$model}::factory", $count)->create();
+=======
+=======
+>>>>>>> a3f7230 (.)
         $jsonContent = json_encode($this->powerupsJSON, JSON_PRETTY_PRINT);
         if ($jsonContent !== false) {
             File::put($filePath, $jsonContent);
@@ -110,6 +178,10 @@ $component = new class extends Component
                         }
                     }
                 }
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
             }
         }
 
@@ -257,12 +329,22 @@ name('genesis.power-ups');
                                 <span class="mr-1.5">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                                     <svg wire:loading class="w-5 h-5 text-white animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
 >>>>>>> 54f4fa16 (.)
 =======
                                     <svg wire:loading class="w-5 h-5 text-white animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
 >>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
+=======
+                                    <svg wire:loading class="w-5 h-5 text-white animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+=======
+                                    <svg wire:loading class="w-5 h-5 text-white animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+>>>>>>> aurmich/dev
+=======
+                                    <svg wire:loading class="w-5 h-5 text-white animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
                                         <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                                         <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
                                         </path>

@@ -183,6 +183,11 @@ return [
         'notify' => 'Profilo aggiornato correttamente!',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> b58de900 (.)
     'edit_profile_title' => 'Modifica Profilo',
     'edit_tooltip' => 'Modifica i tuoi dati',
     'save_changes' => 'Salva Modifiche',
@@ -192,5 +197,9 @@ return [
     'profile' => 'Profilo',
 >>>>>>> aurmich/dev
 =======
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
 ];

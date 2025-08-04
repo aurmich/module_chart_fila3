@@ -43,6 +43,7 @@ use Filament\Forms\Components\Checkbox as FormsCheckbox;
  * - Validazione e sicurezza integrate
  * - Facilmente estendibile (2FA, captcha, login social)
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -58,6 +59,15 @@ use Filament\Forms\Components\Checkbox as FormsCheckbox;
  * @property-read static string $view La view del widget segue il pattern {module}::filament.widgets.{type}
 =======
 >>>>>>> a3174e5b (phpstan)
+=======
+<<<<<<< HEAD
+ *
+ * @property-read static string $view La view del widget segue il pattern {module}::filament.widgets.{type}
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
  */
 
 >>>>>>> 54f4fa16 (.)
@@ -71,7 +81,15 @@ class LoginWidget extends XotBaseWidget
      * @see \Modules\User\docs\WIDGETS_STRUCTURE.md - Sezione B
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> b58de900 (.)
      * @var view-string
+>>>>>>> aurmich/dev
+=======
+     * @var view-string
+>>>>>>> a3f7230 (.)
      */
 <<<<<<< HEAD
     /** @phpstan-ignore-next-line property.defaultValue */
@@ -200,6 +218,7 @@ class LoginWidget extends XotBaseWidget
             
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             // Cast esplicito per type safety PHPStan
             $remember = (bool) ($data['remember'] ?? false);
 <<<<<<< HEAD
@@ -214,12 +233,20 @@ class LoginWidget extends XotBaseWidget
             ], $remember)) {
 >>>>>>> aurmich/dev
 =======
+=======
+>>>>>>> b58de900 (.)
             if (!Auth::attempt([
                 'email' => $data['email'],
                 'password' => $data['password']
             ], $data['remember'] ?? false)) {
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
+=======
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
             // Cast esplicito per type safety PHPStan
             $remember = (bool) ($data['remember'] ?? false);
             
@@ -227,7 +254,14 @@ class LoginWidget extends XotBaseWidget
                 'email' => (string) $data['email'],
                 'password' => (string) $data['password']
             ], $remember)) {
+<<<<<<< HEAD
 >>>>>>> a3174e5b (phpstan)
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
                 throw ValidationException::withMessages([
                     'email' => [__('Le credenziali fornite non sono corrette.')],
                 ]);

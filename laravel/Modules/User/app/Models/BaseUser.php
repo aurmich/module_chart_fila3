@@ -87,12 +87,23 @@ use Illuminate\Notifications\DatabaseNotificationCollection;
  * Modules\User\Models\User.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @template TModel of \Illuminate\Database\Eloquent\Model
  * @template TRelatedModel of \Illuminate\Database\Eloquent\Model
  *
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 1def8bbe (fix hint)
+=======
+<<<<<<< HEAD
+ * @template TModel of \Illuminate\Database\Eloquent\Model
+ * @template TRelatedModel of \Illuminate\Database\Eloquent\Model
+ *
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
  * @property Collection<int, OauthClient> $clients
  * @property int|null $clients_count
  * @property Team|null $currentTeam
@@ -339,8 +350,18 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
         // Concateno i fillable del parent con quelli della classe corrente
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        $this->fillable = array_merge(parent::getFillable(), $this->getFillable());
+=======
+>>>>>>> b58de900 (.)
         // array_values() garantisce che sia un array indicizzato (list<string>)
         $this->fillable = array_values(array_merge(parent::getFillable(), $this->getFillable()));
+>>>>>>> aurmich/dev
+=======
+        // array_values() garantisce che sia un array indicizzato (list<string>)
+        $this->fillable = array_values(array_merge(parent::getFillable(), $this->getFillable()));
+>>>>>>> a3f7230 (.)
 
         parent::__construct($attributes);
     }
@@ -465,6 +486,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Get the devices associated with the user.
      *
      * @return BelongsToMany<Device, static>
@@ -474,6 +496,15 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 =======
      * @return BelongsToMany<Device, static>
 >>>>>>> 1def8bbe (fix hint)
+=======
+     * @return BelongsToMany<Device, static|$this>
+=======
+     * @return BelongsToMany<Device, static>
+>>>>>>> aurmich/dev
+=======
+     * @return BelongsToMany<Device, static>
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
      */
     public function devices(): BelongsToMany
     {
@@ -481,6 +512,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
             ->belongsToManyX(Device::class);
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     /**
@@ -500,12 +532,20 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     {
         return $this->hasMany(SocialiteUser::class);
 =======
+=======
+>>>>>>> b58de900 (.)
     public function socialiteUsers(): HasMany
     {
         return $this
             ->hasMany(SocialiteUser::class);
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
+=======
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     /**
      * @return HasMany<SocialiteUser, static>
      */
@@ -519,7 +559,14 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 >>>>>>> a3174e5b (phpstan)
 =======
         return $this->hasMany(SocialiteUser::class);
+<<<<<<< HEAD
 >>>>>>> 1def8bbe (fix hint)
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     }
 
     public function getProviderField(string $provider, string $field): string

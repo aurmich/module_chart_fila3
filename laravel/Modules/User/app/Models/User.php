@@ -108,8 +108,15 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property \Illuminate\Database\Eloquent\Collection<int, SocialiteUser> $socialiteUsers
  * @property int|null $socialite_users_count
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
  * @property string|null $phone
  * @property string|null $address
  * @property string|null $city
@@ -131,7 +138,14 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereState($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereStatus($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereType($value)
+<<<<<<< HEAD
 >>>>>>> f3e4ec66 (.)
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
  * @mixin \Eloquent
  */
 class User extends BaseUser

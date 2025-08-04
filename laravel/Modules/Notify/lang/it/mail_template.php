@@ -45,12 +45,21 @@ return array (
       'placeholder' => 'es: App\\Mail\\WelcomeEmail',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'mailable',
 =======
 >>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 =======
       'description' => 'mailable',
 >>>>>>> 4047cb2d (✨ (mail_template.php, send_email.php): add descriptions and placeholders for mail template fields to enhance clarity for users)
+=======
+=======
+      'description' => 'mailable',
+>>>>>>> 86996d7 (.)
+=======
+      'description' => 'mailable',
+>>>>>>> 484b1fe (.)
+>>>>>>> b58de900 (.)
     ),
     'subject' => 
     array (
@@ -145,6 +154,12 @@ return array (
       'description' => 'slug',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 484b1fe (.)
+>>>>>>> b58de900 (.)
       'helper_text' => 'slug',
       'placeholder' => 'slug',
 <<<<<<< HEAD
@@ -159,7 +174,14 @@ return array (
       'helper_text' => 'name',
       'placeholder' => 'name',
       'label' => 'name',
+<<<<<<< HEAD
 >>>>>>> 4047cb2d (✨ (mail_template.php, send_email.php): add descriptions and placeholders for mail template fields to enhance clarity for users)
+=======
+<<<<<<< HEAD
+>>>>>>> 86996d7 (.)
+=======
+>>>>>>> 484b1fe (.)
+>>>>>>> b58de900 (.)
     ),
     'name' => 
     array (

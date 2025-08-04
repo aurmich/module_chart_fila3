@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Actions\User;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Hash;
@@ -12,12 +13,17 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Validation\ValidationException;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 =======
+=======
+>>>>>>> b58de900 (.)
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\ValidationException;
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> b58de900 (.)
 
 /**
  * UpdateUserAction: Action generica per l'aggiornamento dei dati utente.
@@ -59,6 +65,7 @@ class UpdateUserAction
             Log::info("Utente aggiornato con successo", [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'user_id' => $user->getKey(),
                 'updated_fields' => array_keys($updateData)
             ]);
@@ -70,11 +77,14 @@ class UpdateUserAction
             
             return $updatedUser;
 =======
+=======
+>>>>>>> b58de900 (.)
                 'user_id' => $user->id,
                 'updated_fields' => array_keys($updateData)
             ]);
             
             return $user->fresh();
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
                 'user_id' => $user->getKey(),
@@ -88,11 +98,14 @@ class UpdateUserAction
             
             return $updatedUser;
 >>>>>>> 345f8677 (phpstan)
+=======
+>>>>>>> b58de900 (.)
             
         } catch (\Exception $e) {
             DB::rollBack();
             
             Log::error("Errore nell'aggiornamento utente", [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 'user_id' => $user->getKey(),
@@ -102,6 +115,9 @@ class UpdateUserAction
 =======
                 'user_id' => $user->getKey(),
 >>>>>>> 345f8677 (phpstan)
+=======
+                'user_id' => $user->id ?? null,
+>>>>>>> b58de900 (.)
                 'error' => $e->getMessage(),
                 'data' => $updateData ?? []
             ]);
@@ -138,6 +154,7 @@ class UpdateUserAction
                 // Hash della password se presente
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $updateData['password'] = Hash::make(SafeStringCastAction::cast($updateData['password']));
 =======
                 $updateData['password'] = Hash::make($updateData['password']);
@@ -145,11 +162,15 @@ class UpdateUserAction
 =======
                 $updateData['password'] = Hash::make((string) $updateData['password']);
 >>>>>>> 345f8677 (phpstan)
+=======
+                $updateData['password'] = Hash::make($updateData['password']);
+>>>>>>> b58de900 (.)
             }
         }
         
         // Gestione dell'email per evitare duplicati
         if (isset($updateData['email'])) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             $email = SafeStringCastAction::cast($updateData['email']);
@@ -160,6 +181,9 @@ class UpdateUserAction
 =======
             $updateData['email'] = strtolower((string) $updateData['email']);
 >>>>>>> 345f8677 (phpstan)
+=======
+            $updateData['email'] = strtolower($updateData['email']);
+>>>>>>> b58de900 (.)
         }
         
         return $updateData;
@@ -182,6 +206,7 @@ class UpdateUserAction
                 ->where('email', $data['email'])
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ->where('id', '!=', $user->getKey())
 =======
                 ->where('id', '!=', $user->id)
@@ -189,6 +214,9 @@ class UpdateUserAction
 =======
                 ->where('id', '!=', $user->getKey())
 >>>>>>> 345f8677 (phpstan)
+=======
+                ->where('id', '!=', $user->id)
+>>>>>>> b58de900 (.)
                 ->first();
                 
             if ($existingUser) {

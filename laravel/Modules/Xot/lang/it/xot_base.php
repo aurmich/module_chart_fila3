@@ -146,6 +146,7 @@ return array (
       'label' => 'view',
       'description' => 'view',
       'helper_text' => 'view',
+<<<<<<< HEAD
       'placeholder' => 'view',
 >>>>>>> aurmich/dev
     ),
@@ -279,6 +280,12 @@ return array (
       'description' => 'view',
       'helper_text' => 'view',
 >>>>>>> 54f4fa16 (.)
+=======
+<<<<<<< HEAD
+      'placeholder' => 'view',
+=======
+>>>>>>> 4ec8f92 (.)
+>>>>>>> b58de900 (.)
     ),
     'delete' => 
     array (

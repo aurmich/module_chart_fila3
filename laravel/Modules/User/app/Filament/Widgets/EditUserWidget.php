@@ -34,6 +34,7 @@ use Illuminate\Support\Facades\Log;
  * - Delega la logica di salvataggio a una UpdateAction specifica del modulo
  * 
  * Il widget è completamente generico e riutilizzabile per qualsiasi tipo di utente.
+<<<<<<< HEAD
  * 
  * @property-read string $type
  * @property-read string $resource
@@ -58,11 +59,19 @@ class EditUserWidget extends XotBaseWidget
 >>>>>>> 345f8677 (phpstan)
     protected int | string | array $columnSpan = 'full';
     
+=======
+ */
+class EditUserWidget extends XotBaseWidget
+{
+    public ?array $data = [];
+    protected int | string | array $columnSpan = 'full';
+>>>>>>> b58de900 (.)
     public string $type;
     public string $resource;
     public string $model;
     public string $action;
     public Model $record;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     /**
@@ -80,6 +89,11 @@ class EditUserWidget extends XotBaseWidget
      * @param int|null $userId
      * @return void
      */
+=======
+    
+    protected static string $view = 'pub_theme::filament.widgets.edit-user';
+
+>>>>>>> b58de900 (.)
     public function mount(string $type, ?int $userId = null): void
     {
         $this->type = $type;
@@ -99,11 +113,16 @@ class EditUserWidget extends XotBaseWidget
     /**
      * Ottiene il modello per il form.
      * Se viene fornito un userId, carica quell'utente, altrimenti usa l'utente autenticato.
+<<<<<<< HEAD
      *
      * @param int|null $userId
      * @return Model
      */
     protected function getFormModel(?int $userId = null): Model
+=======
+     */
+    public function getFormModel(?int $userId = null): Model
+>>>>>>> b58de900 (.)
     {
         if ($userId) {
             $user = $this->model::findOrFail($userId);
@@ -130,8 +149,11 @@ class EditUserWidget extends XotBaseWidget
 
     /**
      * Ottiene i dati per il riempimento del form.
+<<<<<<< HEAD
      *
      * @return array<string, mixed>
+=======
+>>>>>>> b58de900 (.)
      */
     public function getFormFill(): array
     {
@@ -149,6 +171,7 @@ class EditUserWidget extends XotBaseWidget
                 // Gestisci specificamente gli enum se presenti
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if (isset($attributes['type']) && property_exists($model, 'type') && $model->type instanceof \BackedEnum) {
 =======
                 if (isset($attributes['type']) && $model->type instanceof \BackedEnum) {
@@ -156,6 +179,9 @@ class EditUserWidget extends XotBaseWidget
 =======
                 if (isset($attributes['type']) && property_exists($model, 'type') && $model->type instanceof \BackedEnum) {
 >>>>>>> 345f8677 (phpstan)
+=======
+                if (isset($attributes['type']) && $model->type instanceof \BackedEnum) {
+>>>>>>> b58de900 (.)
                     $attributes['type'] = $model->type->value;
                 }
                 
@@ -173,8 +199,11 @@ class EditUserWidget extends XotBaseWidget
 
     /**
      * Ottiene lo schema del form dalla resource.
+<<<<<<< HEAD
      *
      * @return array<int|string, \Filament\Forms\Components\Component>
+=======
+>>>>>>> b58de900 (.)
      */
     public function getFormSchema(): array
     {
@@ -185,8 +214,11 @@ class EditUserWidget extends XotBaseWidget
      * Gestisce il salvataggio delle modifiche delegando all'action specifica.
      * 
      * @see https://filamentphp.com/docs/3.x/forms/adding-a-form-to-a-livewire-component
+<<<<<<< HEAD
      *
      * @return \Illuminate\Http\RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
+=======
+>>>>>>> b58de900 (.)
      */
     public function updateUser(): \Illuminate\Http\RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
     {
@@ -207,8 +239,11 @@ class EditUserWidget extends XotBaseWidget
 
     /**
      * Controlla se l'utente può modificare il record corrente.
+<<<<<<< HEAD
      *
      * @return bool
+=======
+>>>>>>> b58de900 (.)
      */
     public function canEdit(): bool
     {
@@ -216,6 +251,7 @@ class EditUserWidget extends XotBaseWidget
         
         // L'utente può modificare solo il proprio profilo
         return $currentUser && (
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             (property_exists($currentUser, 'id') && property_exists($this->record, 'id') && $currentUser->id === $this->record->id) ||
@@ -229,6 +265,13 @@ class EditUserWidget extends XotBaseWidget
             (property_exists($currentUser, 'id') && $currentUser->id === ($this->record->user_id ?? null))
 >>>>>>> 345f8677 (phpstan)
         );
+=======
+            $currentUser->id === $this->record->id ||
+            $currentUser->id === $this->record->user_id ?? null
+        );
+    }
+} 
+>>>>>>> b58de900 (.)
 =======
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Select;
@@ -479,3 +522,4 @@ class EditUserWidget extends XotBaseWidget implements HasForms
 >>>>>>> efb0f4d1 (feat: add EditUserWidget with localization and documentation)
     }
 }
+>>>>>>> a3f7230 (.)

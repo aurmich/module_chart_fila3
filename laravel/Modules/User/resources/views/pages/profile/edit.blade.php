@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 use Illuminate\Auth\Events\PasswordReset;
@@ -21,6 +22,13 @@ use Webmozart\Assert\Assert;
 use Illuminate\Support\Facades\Log;
 =======
 =======
+=======
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Password;
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\Auth;
@@ -29,6 +37,10 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
 use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Http\Request;
 use function Laravel\Folio\{middleware, name};
@@ -37,14 +49,25 @@ use Livewire\Volt\Component;
 use Livewire\Attributes\Validate;
 use Livewire\Attributes\Locked;
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 use Modules\SaluteOra\Models\User;
 >>>>>>> a3174e5b (phpstan)
+=======
+<<<<<<< HEAD
+=======
+use Modules\SaluteOra\Models\User;
+>>>>>>> aurmich/dev
+=======
+use Modules\SaluteOra\Models\User;
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
 
 name('profile.edit');
 middleware(['auth', 'verified']);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 /**
@@ -549,6 +572,36 @@ $component = new class extends Component {
 =======
 new class extends Component {
 =======
+=======
+new class extends Component {
+    #[Locked]
+    public $user;
+
+    public $name = '';
+    public $email = '';
+    public $current_password = '';
+
+    #[Validate('required|confirmed|min:6')]
+    public $new_password = '';
+    public $new_password_confirmation = '';
+    public $delete_confirm_password = '';
+
+    public function mount()
+    {
+        $this->user = auth()->user();
+        $this->name = $this->user->name;
+        $this->email = $this->user->email;
+    }
+
+    public function updateProfile()
+    {
+        $validated = $this->validate([
+            'name' => 'required|string|min:3',
+            'email' => 'required|min:3|email|max:255|unique:users,email,' . $this->user->id . ',id',
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
 /**
  * Profile edit component for managing user profile, password updates, and account deletion.
  */
@@ -632,6 +685,10 @@ $component = new class extends Component {
         $validated = $this->validate([
             'name' => 'required|string|min:3',
             'email' => 'required|min:3|email|max:255|unique:users,email,' . $this->user->getKey() . ',id',
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
         ]);
 
         // if the user hasn't changed their name or email and we also want to make, don't update and show error
@@ -645,12 +702,22 @@ $component = new class extends Component {
         $this->dispatch('toast', message: 'Successfully updated profile.', data: ['position' => 'top-right', 'type' => 'success']);
     }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+    public function updatePassword()
+=======
+=======
+>>>>>>> a3f7230 (.)
     /**
      * Update user password.
      *
      * @return void
      */
     public function updatePassword(): void
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
     {
         $validated = $this->validate();
 
@@ -665,20 +732,43 @@ $component = new class extends Component {
         $this->reset(['current_password', 'new_password', 'new_password_confirmation']);
     }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+    public function destroy()
+=======
+=======
+>>>>>>> a3f7230 (.)
     /**
      * Delete user account after password confirmation.
      *
      * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy(): \Illuminate\Http\RedirectResponse
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
     {
         if (!Hash::check($this->delete_confirm_password, $this->user->password)) {
             $this->dispatch('toast', message: 'The Password you entered is incorrect', data: ['position' => 'top-right', 'type' => 'danger']);
             $this->reset(['delete_confirm_password']);
+<<<<<<< HEAD
+<<<<<<< HEAD
+            return;
+        }
+
+        $user = auth()->user();
+=======
+=======
+>>>>>>> a3f7230 (.)
             return Redirect::back();
         }
 
         $user = $this->user;
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
 
         Auth::logout();
 

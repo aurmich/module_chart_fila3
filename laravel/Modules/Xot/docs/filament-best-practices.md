@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Filament Best Practices (Moduli Riutilizzabili)
 =======
 # Best Practices per Filament Resources in Laraxot
@@ -76,6 +77,9 @@ class MyResource extends \Filament\Resources\Resource {}
 =======
 # Filament Best Practices (Moduli Riutilizzabili)
 >>>>>>> 15cb84fb (fix collisions)
+=======
+# Filament Best Practices (Moduli Riutilizzabili)
+>>>>>>> b58de900 (.)
 
 ## Descrizione
 Best practice generiche per l'utilizzo di Filament in moduli Laravel riutilizzabili. Nessun riferimento a nomi di progetto o brand.
@@ -91,6 +95,7 @@ Best practice generiche per l'utilizzo di Filament in moduli Laravel riutilizzab
 
 ## Esempi
 ```php
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> d23ba493 (add calendar)
@@ -230,6 +235,10 @@ class MyResource extends \Filament\Resources\Resource {}
 >>>>>>> 15cb84fb (fix collisions)
 =======
 >>>>>>> d23ba493 (add calendar)
+=======
+// ❌ Anti-pattern
+class MyResource extends \Filament\Resources\Resource {}
+>>>>>>> b58de900 (.)
 
 class UserResource extends XotBaseResource
 {
@@ -267,6 +276,7 @@ public static function getFormSchema(): array
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -368,6 +378,8 @@ Per maggiori dettagli e motivazioni, consulta la [documentazione completa sulle 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 =======
 >>>>>>> bead9c28 (fix case)
+=======
+>>>>>>> b58de900 (.)
 #### ❌ DON'T - Non utilizzare il metodo form()
 
 ```php
@@ -382,8 +394,11 @@ public static function form(Form $form): Form
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 3. Traduzioni e Label
 =======
+=======
+>>>>>>> b58de900 (.)
 ### 3. Proprietà e Metodi da NON Definire
 
 #### ✅ DO - Omettere proprietà e metodi gestiti dalla classe base
@@ -437,10 +452,13 @@ class DoctorResource extends XotBaseResource
 ```
 
 ### 4. Traduzioni e Label
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 ### 3. Traduzioni e Label
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> b58de900 (.)
 
 #### ✅ DO - Utilizzare i file di traduzione
 
@@ -500,6 +518,7 @@ class SocioResource extends XotBaseResource
     
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected static ?string $navigationIcon = 'heroicon-o-user';
     
     protected static ?int $navigationSort = 1;
@@ -512,6 +531,10 @@ class SocioResource extends XotBaseResource
     
     protected static ?int $navigationSort = 1;
 >>>>>>> 54f4fa16 (.)
+=======
+    // NON definire $navigationIcon quando si estende XotBaseResource
+    // NON definire $navigationSort quando si estende XotBaseResource
+>>>>>>> b58de900 (.)
     
     // Form Schema - CORRETTO ✅
     public static function getFormSchema(): array
@@ -907,6 +930,7 @@ public static function table(Table $table): Table
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Se compare un errore di override di proprietà statiche, rimuovere la proprietà dal resource e centralizzare nella base
 - Se le traduzioni non vengono applicate, controllare la struttura dei file lang e l'assenza di ->label() hardcoded
 
@@ -969,6 +993,11 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 =======
 
 >>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
+=======
+- Se compare un errore di override di proprietà statiche, rimuovere la proprietà dal resource e centralizzare nella base
+- Se le traduzioni non vengono applicate, controllare la struttura dei file lang e l'assenza di ->label() hardcoded
+
+>>>>>>> b58de900 (.)
 ## Collegamenti
 - [Filament Docs](https://filamentphp.com/docs)
 - [Best practices moduli riutilizzabili](../module-documentation-neutrality.md)
@@ -976,14 +1005,18 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 
 
 =======
+<<<<<<< HEAD
 =======
 
 >>>>>>> d23ba493 (add calendar)
+=======
+>>>>>>> b58de900 (.)
 ### Problema: Form non visualizzato correttamente
 
 **Soluzione:** Assicurarsi di utilizzare `getFormSchema()` invece di `form()` e controllare che tutti i componenti siano configurati correttamente.
 
 ### Problema: Label non tradotte
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 ## Problema: Form non visualizzato correttamente
@@ -1001,6 +1034,8 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> b58de900 (.)
 
 **Soluzione:** Verificare che:
 1. Non si stia utilizzando `->label()` direttamente sui componenti
@@ -1009,11 +1044,14 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ## Problema: Relazioni non caricate correttamente
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> b58de900 (.)
 ### Problema: Relazioni non caricate correttamente
 
 **Soluzione:** Verificare che:
@@ -1073,6 +1111,7 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0e2182f (.)
 =======
@@ -1088,6 +1127,10 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 =======
 
 >>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
+=======
+=======
+
+>>>>>>> b58de900 (.)
 ## Regole per Widget Filament: Path View e Localizzazione
 
 - Tutti i widget Filament devono avere la view in `modulo::filament.widgets.nome-widget`.
@@ -1115,8 +1158,11 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 **Vedi anche:** [filament-best-practices.mdc](../../../.windsurf/rules/filament-best-practices.mdc)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
+=======
+>>>>>>> b58de900 (.)
 
 ## Regole di Ereditarietà: Trait e Interfacce
 
@@ -1147,8 +1193,11 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
 **Vedi anche:** [filament-best-practices.mdc](../../../.windsurf/rules/filament-best-practices.mdc)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
+=======
+>>>>>>> b58de900 (.)
 
 ## Policy DRY su Disponibilità e Prenotazione
 
@@ -1166,6 +1215,7 @@ Appointment::where('doctor_id', $doctorId)
 - Un solo punto di verità: nessuna duplicazione, nessun lock-in
 - DRY, KISS, serenità del codice
 - Refactoring sicuro, massima estendibilità
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1253,3 +1303,10 @@ Aggiornare sempre la documentazione e le regole di progetto. Applicare la stessa
 >>>>>>> 15cb84fb (fix collisions)
 =======
 >>>>>>> d23ba493 (add calendar)
+=======
+>>>>>>> 460d425 (.)
+>>>>>>> 7ec6ffa (.)
+=======
+>>>>>>> 3fc99caa662508b51bcbc764ddca541111daeb21
+>>>>>>> 07b734cd (.)
+>>>>>>> b58de900 (.)

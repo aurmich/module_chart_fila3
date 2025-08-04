@@ -89,7 +89,18 @@ edit file composer.json
     "require": {
         "php": "^8.2",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "filament/filament": "^3.4",
+=======
+<<<<<<< HEAD
+        "filament/filament": "^4.0",
+=======
+        "filament/filament": "^3.3",
+>>>>>>> ebf7989 (.)
+=======
+        "filament/filament": "^3.3",
+>>>>>>> 4ec8f92 (.)
+>>>>>>> b58de900 (.)
         "laravel/framework": "^11.9",
 <<<<<<< HEAD
         "filament/filament": "^3.3",

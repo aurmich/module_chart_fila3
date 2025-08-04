@@ -6,6 +6,25 @@ namespace Modules\User\Filament\Widgets\Auth;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Section;
+use Filament\Forms\Form;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Password;
+use Illuminate\Support\Str;
+use Filament\Forms;
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+
+class ResetPasswordWidget extends XotBaseWidget
+{
+    protected static string $view = 'user::widgets.auth.reset-password-widget';
+
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
 use Filament\Forms;
 use Filament\Forms\Form;
 <<<<<<< HEAD
@@ -82,6 +101,7 @@ class ResetPasswordWidget extends XotBaseWidget
      * @param \Filament\Forms\Form $form
      * @return \Filament\Forms\Form
      */
+<<<<<<< HEAD
 =======
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Section;
@@ -172,11 +192,18 @@ class ResetPasswordWidget extends XotBaseWidget
      * @return \Filament\Forms\Form
      */
 >>>>>>> a3174e5b (phpstan)
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     public function form(Form $form): Form
     {
         return $form
             ->schema([
                 Section::make()
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                     ->schema($this->getFormSchema())
@@ -203,11 +230,38 @@ class ResetPasswordWidget extends XotBaseWidget
 =======
                     ->schema($this->getFormSchema())
 >>>>>>> a3174e5b (phpstan)
+=======
+                    ->schema([
+                        TextInput::make('email')
+                            ->email()
+                            ->required()
+                            ->autocomplete('email'),
+
+                        TextInput::make('password')
+                            ->password()
+                            ->required()
+                            ->minLength(8)
+                            ->same('password_confirmation')
+                            ->autocomplete('new-password'),
+
+                        TextInput::make('password_confirmation')
+                            ->password()
+                            ->required()
+                            ->autocomplete('new-password'),
+                    ])
+=======
+                    ->schema($this->getFormSchema())
+>>>>>>> aurmich/dev
+=======
+                    ->schema($this->getFormSchema())
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
                     ->columns(1),
             ])
             ->statePath('data');
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     /**
@@ -216,6 +270,12 @@ class ResetPasswordWidget extends XotBaseWidget
      * Implements Laravel's password reset functionality with explicit
      * type casting for security and proper error feedback.
 =======
+=======
+    public function resetPassword(): void
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     /**
      * Handle password reset.
 >>>>>>> a3174e5b (phpstan)
@@ -223,6 +283,7 @@ class ResetPasswordWidget extends XotBaseWidget
      * @return \Illuminate\Http\RedirectResponse|void
      */
     public function resetPassword()
+<<<<<<< HEAD
 <<<<<<< HEAD
     {
         $data = $this->form->getState();
@@ -244,11 +305,27 @@ class ResetPasswordWidget extends XotBaseWidget
     public function resetPassword(): void
 =======
 >>>>>>> a3174e5b (phpstan)
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     {
         $data = $this->form->getState();
 
         $status = Password::reset(
             [
+<<<<<<< HEAD
+<<<<<<< HEAD
+                'email' => $data['email'],
+                'password' => $data['password'],
+                'password_confirmation' => $data['password_confirmation'],
+                'token' => request()->route('token'),
+            ],
+            function ($user, $password) {
+=======
+=======
+>>>>>>> a3f7230 (.)
                 'email' => (string) $data['email'],
                 'password' => (string) $data['password'],
                 'password_confirmation' => (string) $data['password_confirmation'],
@@ -259,7 +336,14 @@ class ResetPasswordWidget extends XotBaseWidget
 >>>>>>> 54f4fa16 (.)
 =======
             function ($user, $password): void {
+<<<<<<< HEAD
 >>>>>>> a3174e5b (phpstan)
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
                 $user->forceFill([
                     'password' => Hash::make($password),
                     'remember_token' => Str::random(60),
@@ -271,12 +355,45 @@ class ResetPasswordWidget extends XotBaseWidget
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             session()->flash('status', __($status));
             return redirect()->route('login');
         } else {
             /** @phpstan-ignore-next-line */
             $this->addError('email', __($status));
 =======
+=======
+            session()->flash('status', __($status));
+            redirect()->route('login');
+        } else {
+            $this->addError('email', __($status));
+        }
+    }
+
+    public function getFormSchema(): array
+    {
+        return [
+            Forms\Components\TextInput::make('email')
+                ->email()
+                ->required()
+                ->maxLength(255),
+
+            Forms\Components\TextInput::make('password')
+                ->password()
+                ->required()
+                ->maxLength(255),
+
+            Forms\Components\TextInput::make('password_confirmation')
+                ->password()
+                ->required()
+                ->maxLength(255)
+                ->same('password'),
+        ];
+    }
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
             session()->flash('status', __((string) $status));
             return redirect()->route('login');
         } else {
@@ -284,6 +401,7 @@ class ResetPasswordWidget extends XotBaseWidget
 >>>>>>> aurmich/dev
         }
     }
+<<<<<<< HEAD
 =======
             session()->flash('status', __($status));
             redirect()->route('login');
@@ -320,4 +438,10 @@ class ResetPasswordWidget extends XotBaseWidget
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
 }

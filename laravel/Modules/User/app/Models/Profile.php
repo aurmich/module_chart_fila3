@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Contracts\UserContract;
 use Modules\User\Database\Factories\ProfileFactory;
 use Modules\User\Models\Pivots\DeviceProfile;
@@ -53,21 +54,43 @@ use Illuminate\Database\Eloquent\Relations\HasManyThrough;
  * @property-read ProfileContract|null $creator
 =======
 =======
+>>>>>>> b58de900 (.)
+=======
 use Modules\User\Contracts\UserContract;
 use Modules\Xot\Contracts\ProfileContract;
 
+<<<<<<< HEAD
 >>>>>>> a3174e5b (phpstan)
+=======
+>>>>>>> aurmich/dev
+=======
+use Modules\User\Contracts\UserContract;
+use Modules\Xot\Contracts\ProfileContract;
+
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
 /**
  * 
  *
  * @property \Spatie\SchemalessAttributes\SchemalessAttributes $extra
  * @property-read string $avatar
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property-read \Modules\Broker\Models\Profile|null $creator
 >>>>>>> 54f4fa16 (.)
 =======
  * @property-read ProfileContract|null $creator
 >>>>>>> a3174e5b (phpstan)
+=======
+<<<<<<< HEAD
+ * @property-read \Modules\Broker\Models\Profile|null $creator
+=======
+ * @property-read ProfileContract|null $creator
+>>>>>>> aurmich/dev
+=======
+ * @property-read ProfileContract|null $creator
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\DeviceUser> $deviceUsers
  * @property-read int|null $device_users_count
  * @property-read \Modules\User\Models\ProfileTeam|\Modules\User\Models\DeviceProfile|null $pivot
@@ -92,6 +115,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property-read int|null $teams_count
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property-read ProfileContract|null $updater
  * @property-read UserContract|null $user
 =======
@@ -102,6 +126,18 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property-read ProfileContract|null $updater
  * @property-read UserContract|null $user
 >>>>>>> a3174e5b (phpstan)
+=======
+ * @property-read \Modules\Broker\Models\Profile|null $updater
+ * @property-read \Modules\Broker\Models\User|null $user
+=======
+ * @property-read ProfileContract|null $updater
+ * @property-read UserContract|null $user
+>>>>>>> aurmich/dev
+=======
+ * @property-read ProfileContract|null $updater
+ * @property-read UserContract|null $user
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
  * @property-read string|null $user_name
  * @method static \Modules\User\Database\Factories\ProfileFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile newModelQuery()

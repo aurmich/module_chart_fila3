@@ -3,8 +3,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f2140a80 (- continuo style landing page;)
+=======
+>>>>>>> b58de900 (.)
 return array (
   'navigation' => 
   array (
@@ -18,16 +21,21 @@ return array (
     'label' => 'Attività',
     'sort' => 60,
 <<<<<<< HEAD
+<<<<<<< HEAD
     'icon' => 'heroicon-o-activity',
 =======
     'icon' => 'activity-activity-animated',
 >>>>>>> f2140a80 (- continuo style landing page;)
+=======
+    'icon' => 'activity-activity-animated',
+>>>>>>> b58de900 (.)
   ),
   'fields' => 
   array (
     'user' => 
     array (
       'label' => 'Utente',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'placeholder' => 'Seleziona un utente',
       'help' => 'L\'utente che ha eseguito l\'azione',
@@ -57,10 +65,16 @@ return array (
       'email' => 'Email',
       'role' => 'Ruolo',
 >>>>>>> f2140a80 (- continuo style landing page;)
+=======
+      'name' => 'Nome',
+      'email' => 'Email',
+      'role' => 'Ruolo',
+>>>>>>> b58de900 (.)
     ),
     'action' => 
     array (
       'label' => 'Azione',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'placeholder' => 'Seleziona un\'azione',
       'help' => 'Tipo di azione eseguita',
@@ -117,6 +131,8 @@ return array (
         ),
       ),
 =======
+=======
+>>>>>>> b58de900 (.)
       'created' => 'Creato',
       'updated' => 'Modificato',
       'deleted' => 'Eliminato',
@@ -125,11 +141,15 @@ return array (
       'uploaded' => 'Caricato',
       'logged_in' => 'Accesso',
       'logged_out' => 'Uscita',
+<<<<<<< HEAD
 >>>>>>> f2140a80 (- continuo style landing page;)
+=======
+>>>>>>> b58de900 (.)
     ),
     'subject' => 
     array (
       'label' => 'Oggetto',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'placeholder' => 'Seleziona un oggetto',
       'help' => 'L\'oggetto interessato dall\'azione',
@@ -220,6 +240,8 @@ return array (
     array (
       'label' => 'applyFilters',
 =======
+=======
+>>>>>>> b58de900 (.)
       'type' => 'Tipo',
       'id' => 'ID',
       'name' => 'Nome',
@@ -241,11 +263,15 @@ return array (
     'reorderRecords' => 
     array (
       'label' => 'reorderRecords',
+<<<<<<< HEAD
 >>>>>>> f2140a80 (- continuo style landing page;)
+=======
+>>>>>>> b58de900 (.)
     ),
   ),
   'filters' => 
   array (
+<<<<<<< HEAD
 <<<<<<< HEAD
     'user' => 
     array (
@@ -348,6 +374,8 @@ return array (
       'description' => 'Non ci sono ancora attività da visualizzare. Le attività appariranno qui quando gli utenti inizieranno a interagire con il sistema.',
     ),
 =======
+=======
+>>>>>>> b58de900 (.)
     'user' => 'Utente',
     'action' => 'Azione',
     'subject_type' => 'Tipo Oggetto',
@@ -365,12 +393,16 @@ return array (
     'no_activities' => 'Nessuna attività trovata',
     'cleared' => 'Attività vecchie eliminate con successo',
     'exported' => 'Attività esportate con successo',
+<<<<<<< HEAD
 >>>>>>> f2140a80 (- continuo style landing page;)
+=======
+>>>>>>> b58de900 (.)
   ),
   'export' => 
   array (
     'formats' => 
     array (
+<<<<<<< HEAD
 <<<<<<< HEAD
       'csv' => 
       array (
@@ -458,11 +490,28 @@ return array (
     array (
       0 => 'activities',
       1 => 'monitoring',
+=======
+      'csv' => 'CSV',
+      'excel' => 'Excel',
+      'pdf' => 'PDF',
+    ),
+    'columns' => 
+    array (
+      'date' => 'Data',
+      'user' => 'Utente',
+      'action' => 'Azione',
+      'subject' => 'Oggetto',
+      'ip' => 'IP',
+>>>>>>> b58de900 (.)
     ),
   ),
 );
 =======
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> c5f8a42 (.)
+>>>>>>> b58de900 (.)
 declare(strict_types=1);
 
 >>>>>>> f3e4ec66 (.)
@@ -683,6 +732,7 @@ return [
     ],
 ];
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
       'csv' => 'CSV',
@@ -702,3 +752,8 @@ return [
 >>>>>>> f2140a80 (- continuo style landing page;)
 =======
 >>>>>>> f3e4ec66 (.)
+=======
+>>>>>>> a0afe1b (.)
+=======
+>>>>>>> c5f8a42 (.)
+>>>>>>> b58de900 (.)

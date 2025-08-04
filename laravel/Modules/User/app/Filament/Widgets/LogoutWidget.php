@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Widgets;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Exception;
 use Filament\Actions\Action;
 use Filament\Forms\Components\Component;
@@ -51,11 +52,21 @@ class LogoutWidget extends XotBaseWidget
      * @phpstan-ignore-next-line 
 >>>>>>> aurmich/dev
 =======
+=======
+>>>>>>> b58de900 (.)
 use Filament\Forms\Components\Actions\Action;
 =======
 use Filament\Actions\Action;
 use Filament\Forms\Components\Actions\Action as FormAction;
+<<<<<<< HEAD
 >>>>>>> a3174e5b (phpstan)
+=======
+>>>>>>> aurmich/dev
+=======
+use Filament\Actions\Action;
+use Filament\Forms\Components\Actions\Action as FormAction;
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
 use Filament\Forms\Components\Component;
 use Filament\Forms\Components\View;
 use Illuminate\Support\Facades\Auth;
@@ -63,9 +74,18 @@ use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Log;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 /**
  * Logout widget for user logout functionality.
  */
+>>>>>>> aurmich/dev
+=======
+/**
+ * Logout widget for user logout functionality.
+ */
+>>>>>>> a3f7230 (.)
 class LogoutWidget extends XotBaseWidget
 {
     /**
@@ -74,6 +94,14 @@ class LogoutWidget extends XotBaseWidget
      * il path deve essere senza il namespace del modulo.
 >>>>>>> 54f4fa16 (.)
      */
+<<<<<<< HEAD
+<<<<<<< HEAD
+    protected static string $view = 'user::widgets.logout';
+
+    /**
+=======
+=======
+>>>>>>> a3f7230 (.)
     /** @phpstan-ignore-next-line */
     protected static string $view = 'user::widgets.logout';
 
@@ -96,12 +124,18 @@ class LogoutWidget extends XotBaseWidget
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Indicates if the logout process is in progress.
      *
      * @var bool
 =======
 =======
 >>>>>>> a3174e5b (phpstan)
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
      * Stato del widget.
 >>>>>>> 54f4fa16 (.)
      */
@@ -110,9 +144,17 @@ class LogoutWidget extends XotBaseWidget
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Mount the widget and initialize the form.
      * 
 =======
+=======
+     * Implementazione del metodo astratto getFormSchema.
+     * NON sovrascrivere il metodo form() che è dichiarato come final.
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
      * Mount the widget and initialize the form.
      *
 >>>>>>> a3174e5b (phpstan)
@@ -152,6 +194,10 @@ class LogoutWidget extends XotBaseWidget
      * NON sovrascrivere il metodo form() che è dichiarato come final.
      *
      * @return array<string, Component>
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
      */
     public function getFormSchema(): array
     {
@@ -181,12 +227,25 @@ class LogoutWidget extends XotBaseWidget
 =======
      * Azione di logout.
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+<<<<<<< HEAD
+>>>>>>> b58de900 (.)
 =======
      * Gestisce il logout dell'utente con eventi, logging e reindirizzamento localizzato.
      *
      * @return void
+<<<<<<< HEAD
 >>>>>>> a3174e5b (phpstan)
+=======
+>>>>>>> aurmich/dev
+=======
+     * Gestisce il logout dell'utente con eventi, logging e reindirizzamento localizzato.
+     *
+     * @return void
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
      */
     public function logout(): void
     {
@@ -249,6 +308,7 @@ class LogoutWidget extends XotBaseWidget
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Get the form actions for the widget.
      *
      * @return array<string, Action>
@@ -260,6 +320,19 @@ class LogoutWidget extends XotBaseWidget
      *
      * @return array<string, Action>
 >>>>>>> a3174e5b (phpstan)
+=======
+     * Azioni del form.
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+     *
+     * @return array<string, Action>
+>>>>>>> aurmich/dev
+=======
+     *
+     * @return array<string, Action>
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
      */
     public function getFormActions(): array
     {
@@ -435,18 +508,35 @@ class LogoutWidget extends XotBaseWidget
                 ->color('gray')
                 ->size('lg')
                 ->extraAttributes(['class' => 'w-full justify-center mt-2'])
+<<<<<<< HEAD
+<<<<<<< HEAD
+                ->url(function () {
+=======
                 ->url(function (): string {
+>>>>>>> aurmich/dev
+=======
+                ->url(function (): string {
+>>>>>>> a3f7230 (.)
                     $locale = app()->getLocale();
                     return '/' . $locale;
                 }),
         ];
     }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> a3f7230 (.)
     /**
      * Get view data for the widget.
      *
      * @return array<string, string>
      */
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
     protected function getViewData(): array
     {
         return [

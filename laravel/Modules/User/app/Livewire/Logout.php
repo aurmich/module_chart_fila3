@@ -1,5 +1,12 @@
 <?php
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 
+>>>>>>> aurmich/dev
+=======
+
+>>>>>>> a3f7230 (.)
 declare(strict_types=1);
 
 namespace Modules\User\Livewire;
@@ -8,6 +15,18 @@ use Livewire\Component;
 use Illuminate\Support\Facades\Auth;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+class Logout extends Component
+{
+    public $processing = false;
+
+    public function logout()
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Contracts\View\View;
 
@@ -25,6 +44,7 @@ class Logout extends Component
      * Handle user logout process.
      */
     public function logout(): ?RedirectResponse
+<<<<<<< HEAD
 =======
 =======
 use Illuminate\Http\RedirectResponse;
@@ -50,6 +70,12 @@ class Logout extends Component
      */
     public function logout(): ?RedirectResponse
 >>>>>>> a3174e5b (phpstan)
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     {
         $this->processing = true;
 
@@ -64,6 +90,16 @@ class Logout extends Component
             session()->flash('error', __('Errore durante il logout. Riprova.'));
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        }
+    }
+
+    public function render()
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
             return null;
         }
     }
@@ -72,6 +108,7 @@ class Logout extends Component
      * Render the logout component view.
      */
     public function render(): View
+<<<<<<< HEAD
 =======
         }
     }
@@ -88,6 +125,12 @@ class Logout extends Component
      */
     public function render(): View
 >>>>>>> a3174e5b (phpstan)
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     {
         return view('user::livewire.logout');
     }

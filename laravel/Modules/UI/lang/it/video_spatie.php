@@ -20,7 +20,11 @@ return array (
       'description' => 'video',
       'helper_text' => 'video',
 =======
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> df228b6 (.)
+>>>>>>> b58de900 (.)
     ),
     'caption' => 
     array (
@@ -30,7 +34,11 @@ return array (
 <<<<<<< HEAD
       'placeholder' => 'caption',
 =======
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> df228b6 (.)
+>>>>>>> b58de900 (.)
     ),
   ),
 );

@@ -32,6 +32,7 @@ abstract class BaseListUsers extends XotBaseListRecords
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Get table columns for user records.
      *
 <<<<<<< HEAD
@@ -41,6 +42,16 @@ abstract class BaseListUsers extends XotBaseListRecords
      * Get table columns for user records.
      *
 >>>>>>> a3174e5b (phpstan)
+=======
+=======
+     * Get table columns for user records.
+     *
+>>>>>>> aurmich/dev
+=======
+     * Get table columns for user records.
+     *
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
      * @return array<string, TextColumn>
 >>>>>>> aurmich/dev
 =======
@@ -71,6 +82,7 @@ abstract class BaseListUsers extends XotBaseListRecords
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Get table filters for user records.
      *
 =======
@@ -79,28 +91,57 @@ abstract class BaseListUsers extends XotBaseListRecords
      * Get table filters for user records.
      *
 >>>>>>> a3174e5b (phpstan)
+=======
+=======
+     * Get table filters for user records.
+     *
+>>>>>>> aurmich/dev
+=======
+     * Get table filters for user records.
+     *
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
      * @return array<Tables\Filters\BaseFilter>
      */
     public function getTableFilters(): array
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             // Filtri disabilitati per ora, abilitare se necessario
             /*
 =======
 >>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
+=======
+<<<<<<< HEAD
+=======
+            /*
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
             Filter::make('verified')
                 ->query(static fn (Builder $query): Builder => $query->whereNotNull('email_verified_at')),
             Filter::make('unverified')
                 ->query(static fn (Builder $query): Builder => $query->whereNull('email_verified_at')),
 <<<<<<< HEAD
+<<<<<<< HEAD
             */
 =======
 >>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
+=======
+<<<<<<< HEAD
+=======
+            */
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
         ];
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * Get table actions for user records.
@@ -182,6 +223,28 @@ abstract class BaseListUsers extends XotBaseListRecords
 =======
      * @return array<Action|Tables\Actions\ActionGroup>
 =======
+=======
+     * @return array<Action|Tables\Actions\ActionGroup>
+     */
+    public function getTableActions(): array
+    {
+        return [
+            ChangePasswordAction::make()
+                ->tooltip('Cambio Password')
+                ->iconButton(),
+            ...parent::getTableActions(),
+            Action::make('deactivate')
+                ->tooltip(__('filament-actions::delete.single.label'))
+                ->color('danger')
+                ->icon('heroicon-o-trash')
+                ->action(static fn (UserContract $user) => $user->delete()),
+        ];
+    }
+
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
      * Get table actions for user records.
      *
      * @return array<\Filament\Tables\Actions\Action|\Filament\Tables\Actions\ActionGroup>
@@ -218,6 +281,10 @@ abstract class BaseListUsers extends XotBaseListRecords
      *
      * @return array<class-string>
      */
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
     protected function getHeaderWidgets(): array
     {
         return [
@@ -227,17 +294,32 @@ abstract class BaseListUsers extends XotBaseListRecords
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, Tables\Actions\BulkAction>
 >>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
+=======
+<<<<<<< HEAD
+     * @return array<string, Tables\Actions\BulkAction>
+>>>>>>> b58de900 (.)
 =======
      * Get table bulk actions for user records.
      *
      * @return array<Tables\Actions\BulkAction>
+<<<<<<< HEAD
 >>>>>>> a3174e5b (phpstan)
+=======
+>>>>>>> aurmich/dev
+=======
+     * Get table bulk actions for user records.
+     *
+     * @return array<Tables\Actions\BulkAction>
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
      */
     public function getTableBulkActions(): array
     {
         return [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             Tables\Actions\DeleteBulkAction::make(),
@@ -254,6 +336,18 @@ abstract class BaseListUsers extends XotBaseListRecords
             Tables\Actions\DeleteBulkAction::make(),
             ExportBulkAction::make(),
 >>>>>>> a3174e5b (phpstan)
+=======
+            'delete' => Tables\Actions\DeleteBulkAction::make(),
+            'export' => ExportBulkAction::make(),
+=======
+            Tables\Actions\DeleteBulkAction::make(),
+            ExportBulkAction::make(),
+>>>>>>> aurmich/dev
+=======
+            Tables\Actions\DeleteBulkAction::make(),
+            ExportBulkAction::make(),
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
         ];
     }
 }

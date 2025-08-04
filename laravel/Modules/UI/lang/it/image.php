@@ -18,7 +18,11 @@ return array (
       'helper_text' => 'alt',
       'placeholder' => 'alt',
 =======
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> df228b6 (.)
+>>>>>>> b58de900 (.)
     ),
     'ratio' => 
     array (
@@ -26,7 +30,11 @@ return array (
 <<<<<<< HEAD
       'description' => 'ratio',
 =======
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> df228b6 (.)
+>>>>>>> b58de900 (.)
     ),
     'url' => 
     array (

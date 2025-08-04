@@ -64,7 +64,11 @@ Modules/Notify/
         "filament/filament": "^4.0"
 =======
         "filament/filament": "^2.0"
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 484b1fe (.)
+>>>>>>> b58de900 (.)
     }
 }
 ```

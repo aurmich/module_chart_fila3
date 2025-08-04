@@ -11,7 +11,11 @@ return array (
 <<<<<<< HEAD
       'placeholder' => 'method',
 =======
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> df228b6 (.)
+>>>>>>> b58de900 (.)
     ),
     '_tpl' => 
     array (

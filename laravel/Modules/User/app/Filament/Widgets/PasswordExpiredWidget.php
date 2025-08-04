@@ -173,8 +173,15 @@ class PasswordExpiredWidget extends XotBaseWidget implements HasForms
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a3174e5b (phpstan)
+=======
+        if (! Hash::check($this->data['current_password'], auth()->user()->password)) {
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
         $user = Auth::user();
         if (!$user || !($user instanceof \Illuminate\Database\Eloquent\Model)) {
             $this->addError('current_password', __('user::auth.user_not_found'));
@@ -226,17 +233,39 @@ class PasswordExpiredWidget extends XotBaseWidget implements HasForms
         $userPasswordString = (string) ($userPassword ?? '');
         
         if (!Hash::check($currentPassword, $userPasswordString)) {
+<<<<<<< HEAD
 >>>>>>> 1def8bbe (fix hint)
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
             $this->addError('current_password', __('user::auth.password_current_incorrect'));
             return null;
         }
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        $user = auth()->user();
+        $user->password = Hash::make($this->data['password']);
+        $user->save();
+
+        return new PasswordResetResponse($user);
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
         $user->setAttribute('password', Hash::make($newPassword));
         $user->save();
 
         return new PasswordResetResponse();
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
     }
 
     /**

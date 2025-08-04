@@ -528,10 +528,14 @@ trait HasTeams
 - [docs/USER_MODULE.md](../../../docs/USER_MODULE.md)
 - [Modules/User/docs/traits.md](traits.md)  
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [docs/phpstan_fixes.md](../../../docs/phpstan_fixes.md)
 =======
 - [docs/PHPSTAN_FIXES.md](../../../docs/PHPSTAN_FIXES.md)
 >>>>>>> aurmich/dev
+=======
+- [docs/PHPSTAN_FIXES.md](../../../docs/PHPSTAN_FIXES.md)
+>>>>>>> b58de900 (.)
 - [Modules/Xot/docs/RELATION_X.md](../../Xot/docs/RELATION_X.md)
 
 *Ultimo aggiornamento: gennaio 2025* 

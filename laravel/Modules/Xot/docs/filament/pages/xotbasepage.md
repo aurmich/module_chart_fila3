@@ -115,8 +115,14 @@ class MyCustomPage extends Page // ⚠️ ERRATO!
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+=======
+=======
+>>>>>>> 4ec8f92 (.)
+>>>>>>> b58de900 (.)
 ## ⚠️ ERRORI GRAVI DA EVITARE
 
 ### Duplicazione di Trait e Interfacce
@@ -175,7 +181,14 @@ class MyPage extends XotBasePage
 >>>>>>> d23ba493 (add calendar)
 =======
 
+<<<<<<< HEAD
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+<<<<<<< HEAD
+>>>>>>> ebf7989 (.)
+=======
+>>>>>>> 4ec8f92 (.)
+>>>>>>> b58de900 (.)
 ## Compatibilità con Filament
 
 La classe è progettata per essere compatibile con Filament v3+ e garantisce il corretto funzionamento di tutte le funzionalità native di Filament\Pages\Page.

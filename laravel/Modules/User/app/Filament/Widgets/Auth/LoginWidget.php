@@ -5,7 +5,11 @@ namespace Modules\User\Filament\Widgets\Auth;
 
 use Filament\Forms;
 use Filament\Forms\Form;
+<<<<<<< HEAD
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
 use Illuminate\Support\Facades\Auth;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Filament\Forms\ComponentContainer;
@@ -30,6 +34,15 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
 >>>>>>> 54f4fa16 (.)
 =======
+=======
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+
+class LoginWidget extends XotBaseWidget 
+=======
+=======
+use Illuminate\Support\Facades\Auth;
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
 use Filament\Forms\ComponentContainer;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 /**
@@ -37,7 +50,14 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
  */
 >>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
 class LoginWidget extends XotBaseWidget
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 {
+    
+    
+=======
+{
+>>>>>>> a3f7230 (.)
     public ?array $data = [];
 
 <<<<<<< HEAD

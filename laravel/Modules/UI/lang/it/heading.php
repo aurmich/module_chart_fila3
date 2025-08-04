@@ -18,7 +18,11 @@ return array (
       'helper_text' => 'content',
       'placeholder' => 'content',
 =======
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> df228b6 (.)
+>>>>>>> b58de900 (.)
     ),
   ),
 );

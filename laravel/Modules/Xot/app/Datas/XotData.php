@@ -510,8 +510,28 @@ class XotData extends Data implements Wireable
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $enum_class=$this->getUserChildTypeClass();
 =======
+=======
+        $user_class = $this->getUserClass();
+        $enum_class = Arr::get($user_class::casts(),'type',null);
+        if($enum_class==null){
+            $enum_class=Str::of($user_class)->replace('\\Models\\', '\\Enums\\')->append('TypeEnum')->toString();
+        }
+=======
+        $enum_class=$this->getUserChildTypeClass();
+>>>>>>> 4ec8f92 (.)
+        return $enum_class::cases();
+        //$userInstance = app($user_class);
+        //return $userInstance->getChildTypes();
+    }
+
+<<<<<<< HEAD
+=======
+    public function getUserChildTypeClass(): string
+    {
+>>>>>>> b58de900 (.)
         $user_class = $this->getUserClass();
         $enum_class = Arr::get($user_class::casts(),'type',null);
         if($enum_class==null){
@@ -558,6 +578,7 @@ class XotData extends Data implements Wireable
         //return $userInstance->getChildTypes();
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -619,4 +640,7 @@ class XotData extends Data implements Wireable
 >>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
 =======
 >>>>>>> 6aa6d801 (fix change type command)
+=======
+>>>>>>> 4ec8f92 (.)
+>>>>>>> b58de900 (.)
 }

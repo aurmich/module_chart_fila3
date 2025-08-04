@@ -18,10 +18,18 @@
     "require": {
 <<<<<<< HEAD
         "filament/filament": "^3.4",
+<<<<<<< HEAD
         "filament/tables": "^3.4"
 =======
         "filament/filament": "^3.3",
         "filament/tables": "^3.3"
 >>>>>>> 54f4fa16 (.)
+=======
+        "filament/tables": "*"
+=======
+        "filament/filament": "^3.3",
+        "filament/tables": "^3.3"
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     }
 }

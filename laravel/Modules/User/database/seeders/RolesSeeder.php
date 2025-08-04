@@ -6,6 +6,7 @@ namespace Modules\User\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Collection;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -18,6 +19,15 @@ use Modules\User\Enums\UserTypeEnum;
 >>>>>>> 2bcfd382 (fix Address)
 =======
 >>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
+=======
+<<<<<<< HEAD
+use Illuminate\Support\Collection;
+use Modules\User\Enums\UserTypeEnum;
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
 use Modules\User\Models\Role;
 
 class RolesSeeder extends Seeder
@@ -25,17 +35,28 @@ class RolesSeeder extends Seeder
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     /**
      * Table headers for output display.
      *
      * @var array<int, string>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     private static array $OUTPUT_TABLE_HEADERS = [
         '#',
         'Name',
@@ -65,6 +86,11 @@ class RolesSeeder extends Seeder
 =======
 >>>>>>> 54f4fa16 (.)
     /**
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> a3f7230 (.)
      * Default roles to be created.
      *
      * @var array<int, array<string, string>>
@@ -76,11 +102,16 @@ class RolesSeeder extends Seeder
     ];
 
     /**
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
      * Run the database seeds.
      */
     public function run(): void
     {
         $roles = [];
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 <<<<<<< HEAD
@@ -139,6 +170,10 @@ class RolesSeeder extends Seeder
             ];
         })->toArray());
 =======
+=======
+<<<<<<< HEAD
+
+>>>>>>> b58de900 (.)
         Collection::make(UserType::cases())
             ->each(
                 static function (UserType $userType) use (&$roles): void {
@@ -151,11 +186,23 @@ class RolesSeeder extends Seeder
                 },
             );
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
         
         foreach (self::$DEFAULT_ROLES as $roleData) {
             $roles[] = Role::firstOrCreate($roleData);
         }
+<<<<<<< HEAD
 >>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
 
         $this->command->getOutput()->comment('<info>Newly created roles</info>');
         $this->command->getOutput()->table(

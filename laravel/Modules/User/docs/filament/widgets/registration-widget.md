@@ -36,6 +36,7 @@ Queste Action devono occuparsi di:
 ## Collegamenti
 - [RegistrationWidget.php](../../app/Filament/Widgets/RegistrationWidget.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [EditUserWidget.php](../../app/Filament/Widgets/EditUserWidget.php) - Widget per modifica dati utente
 - [Documentazione EditUserWidget](./edit-user-widget.md) - Documentazione completa dell'EditUserWidget
 - [EditUserWidget.php](../../app/Filament/Widgets/EditUserWidget.php) - Widget per modifica dati utente
@@ -49,6 +50,15 @@ Queste Action devono occuparsi di:
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+<<<<<<< HEAD
+=======
+- [EditUserWidget.php](../../app/Filament/Widgets/EditUserWidget.php) - Widget per modifica dati utente
+- [Documentazione EditUserWidget](./edit-user-widget.md) - Documentazione completa dell'EditUserWidget
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
 - [Documentazione Xot sulla proprietà $data](../../../Xot/docs/filament/widgets/data-property.md)
 - [Esempio di Action di registrazione Doctor](../../../../Patient/app/Actions/Doctor/RegisterAction.php)
 - [Esempio di Action di registrazione Patient](../../../../Patient/app/Actions/Patient/RegisterAction.php)

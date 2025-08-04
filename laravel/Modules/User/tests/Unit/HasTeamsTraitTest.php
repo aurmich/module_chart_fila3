@@ -3,20 +3,30 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 namespace Modules\User\Tests\Unit;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 >>>>>>> aurmich/dev
+=======
+namespace Modules\User\Tests\Unit;
+
+use Illuminate\Foundation\Testing\RefreshDatabase;
+>>>>>>> b58de900 (.)
 use Illuminate\Support\Collection;
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamUser;
 use Modules\User\Models\User;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Tests\TestCase;
 >>>>>>> aurmich/dev
+=======
+use Tests\TestCase;
+>>>>>>> b58de900 (.)
 
 /**
  * Test per il trait HasTeams corretto secondo filosofia Jetstream + Laraxot.
@@ -29,6 +39,7 @@ use Tests\TestCase;
  * - Tipizzazione rigorosa
  * - Metodi non-Jetstream rimossi
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 uses(Tests\TestCase::class);
@@ -240,6 +251,8 @@ test('it validates assertions correctly', function (): void {
         ->toThrow(\InvalidArgumentException::class, 'Team cannot be null');
 });
 =======
+=======
+>>>>>>> b58de900 (.)
 class HasTeamsTraitTest extends TestCase
 {
     use RefreshDatabase;
@@ -493,4 +506,7 @@ class HasTeamsTraitTest extends TestCase
         $this->user->ownsTeam(null);
     }
 }
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> b58de900 (.)

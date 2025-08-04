@@ -277,10 +277,14 @@ Il trait `HasTeams` ora è:
 - [docs/laraxot_conventions.md](../../../docs/laraxot_conventions.md) - Convenzioni Laraxot generali
 - [docs/USER_MODULE.md](../../../docs/USER_MODULE.md) - Documentazione generale modulo User
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [docs/phpstan_fixes.md](../../../docs/phpstan_fixes.md) - Guide PHPStan
 =======
 - [docs/PHPSTAN_FIXES.md](../../../docs/PHPSTAN_FIXES.md) - Guide PHPStan
 >>>>>>> aurmich/dev
+=======
+- [docs/PHPSTAN_FIXES.md](../../../docs/PHPSTAN_FIXES.md) - Guide PHPStan
+>>>>>>> b58de900 (.)
 - [docs/TRAIT_BEST_PRACTICES.md](../../../docs/TRAIT_BEST_PRACTICES.md) - Best practices per trait
 
 ### **📁 Documentazione Modulo User**

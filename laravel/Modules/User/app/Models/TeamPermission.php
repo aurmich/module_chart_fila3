@@ -35,11 +35,17 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> f3e4ec66 (.)
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TeamPermission newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TeamPermission newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TeamPermission query()
  * @mixin \Eloquent
+<<<<<<< HEAD
 <<<<<<< HEAD
  */
 class TeamPermission extends Model
@@ -59,6 +65,11 @@ class TeamPermission extends Model
 =======
 =======
 >>>>>>> f3e4ec66 (.)
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
  */
 class TeamPermission extends Model
 {
@@ -66,11 +77,22 @@ class TeamPermission extends Model
     protected $connection = 'user';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @var array<string> */
 >>>>>>> 54f4fa16 (.)
 =======
     /** @var list<string> */
 >>>>>>> a3174e5b (phpstan)
+=======
+<<<<<<< HEAD
+    /** @var array<string> */
+=======
+    /** @var list<string> */
+>>>>>>> aurmich/dev
+=======
+    /** @var list<string> */
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     protected $fillable = [
         'team_id',
         'user_id',

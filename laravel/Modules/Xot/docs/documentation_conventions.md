@@ -5,10 +5,14 @@
 ### Regole fondamentali
 1. **Nomi file in minuscolo**: Tutti i file nelle cartelle `docs` DEVONO avere nomi in minuscolo
 <<<<<<< HEAD
+<<<<<<< HEAD
    - ❌ ERRATO: `phpstan_fixes.md`, `SERVICE_PROVIDER.md`
 =======
    - ❌ ERRATO: `PHPSTAN_FIXES.md`, `SERVICE_PROVIDER.md`
 >>>>>>> aurmich/dev
+=======
+   - ❌ ERRATO: `PHPSTAN_FIXES.md`, `SERVICE_PROVIDER.md`
+>>>>>>> b58de900 (.)
    - ✅ CORRETTO: `phpstan_fixes.md`, `service_provider.md`
 
 2. **Unica eccezione**: L'unico file che può contenere maiuscole è `README.md`

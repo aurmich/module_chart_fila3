@@ -18,17 +18,26 @@ return array (
       'helper_text' => 'class',
       'placeholder' => 'class',
 =======
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> df228b6 (.)
+>>>>>>> b58de900 (.)
     ),
     'label' => 
     array (
       'label' => 'label',
 <<<<<<< HEAD
       'description' => 'label',
+<<<<<<< HEAD
       'helper_text' => 'label',
       'placeholder' => 'label',
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+=======
+>>>>>>> df228b6 (.)
+>>>>>>> b58de900 (.)
     ),
     'buttons' => 
     array (

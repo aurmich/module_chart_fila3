@@ -47,6 +47,7 @@ namespace Modules\User\Models;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Team whereUuid($value)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property string|null $owner_id
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Team whereOwnerId($value)
 =======
@@ -55,6 +56,16 @@ namespace Modules\User\Models;
  * @property string|null $owner_id
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Team whereOwnerId($value)
 >>>>>>> f3e4ec66 (.)
+=======
+=======
+ * @property string|null $owner_id
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Team whereOwnerId($value)
+>>>>>>> aurmich/dev
+=======
+ * @property string|null $owner_id
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Team whereOwnerId($value)
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
  * @mixin \Eloquent
  */
 class Team extends BaseTeam {}

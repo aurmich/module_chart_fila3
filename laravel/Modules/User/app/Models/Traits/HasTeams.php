@@ -12,12 +12,21 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Contracts\HasTeamsContract;
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 use Modules\User\Contracts\HasTeamsContract;
 >>>>>>> a3174e5b (phpstan)
+=======
+=======
+use Modules\User\Contracts\HasTeamsContract;
+>>>>>>> aurmich/dev
+=======
+use Modules\User\Contracts\HasTeamsContract;
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Membership;
 use Modules\User\Models\Role;
@@ -29,8 +38,20 @@ use Illuminate\Support\Facades\Schema;
 /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a3174e5b (phpstan)
+=======
+ * Trait HasTeams.
+ *
+ * @property TeamContract $currentTeam
+ * @property int|null $current_team_id
+ * @property Collection $teams
+ * @property Collection $ownedTeams
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
  * Trait HasTeams
  * 
  * Provides team functionality for User models implementing team-based organization.
@@ -43,6 +64,7 @@ use Illuminate\Support\Facades\Schema;
  * @property Collection<int, TeamContract> $ownedTeams
  * @property Collection<int, UserContract> $teamUsers
  * @property UserContract|null $owner
+<<<<<<< HEAD
 =======
  * Trait HasTeams.
  *
@@ -60,6 +82,12 @@ use Illuminate\Support\Facades\Schema;
  * @property Collection<int, UserContract> $teamUsers
  * @property UserContract|null $owner
 >>>>>>> a3174e5b (phpstan)
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
  */
 trait HasTeams
 {
@@ -107,6 +135,7 @@ trait HasTeams
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function belongsToTeam(TeamContract $team): bool
 =======
     public function belongsToTeam(\Modules\User\Contracts\TeamContract $team): bool
@@ -120,11 +149,21 @@ trait HasTeams
 =======
     public function belongsToTeam(TeamContract $team): bool
 >>>>>>> 1def8bbe (fix hint)
+=======
+    public function belongsToTeam(\Modules\User\Contracts\TeamContract $team): bool
+=======
+    public function belongsToTeam(TeamContract $team): bool
+>>>>>>> aurmich/dev
+=======
+    public function belongsToTeam(TeamContract $team): bool
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     {
         $found = $this->teams()->where('teams.id', $team->id)->first();
         if ($found === null) {
             return false;
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         Assert::isInstanceOf($found, TeamContract::class, 'Team must implement TeamContract.');
@@ -134,6 +173,15 @@ trait HasTeams
 =======
         Assert::isInstanceOf($found, TeamContract::class, 'Team must implement TeamContract.');
 >>>>>>> 1def8bbe (fix hint)
+=======
+        \Webmozart\Assert\Assert::isInstanceOf($found, \Modules\User\Contracts\TeamContract::class, 'Team must implement TeamContract.');
+=======
+        Assert::isInstanceOf($found, TeamContract::class, 'Team must implement TeamContract.');
+>>>>>>> aurmich/dev
+=======
+        Assert::isInstanceOf($found, TeamContract::class, 'Team must implement TeamContract.');
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
         return true;
     }
 
@@ -145,17 +193,35 @@ trait HasTeams
     protected static function bootHasTeams()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         /*
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+<<<<<<< HEAD
+=======
+        /*
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
         static::deleting(function ($team) {
             $team->teamUsers()->delete();
             $team->teamInvitations()->delete();
         });
 <<<<<<< HEAD
+<<<<<<< HEAD
         */
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+<<<<<<< HEAD
+=======
+        */
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     }
 
     /**
@@ -235,6 +301,17 @@ trait HasTeams
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+     * @return \Illuminate\Support\Collection
+     */
+    public function getAllTeamUsersAttribute()
+    {
+        return $this->teamUsers->merge([$this->owner]);
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
      * @return \Illuminate\Support\Collection<int, UserContract>
      */
     public function getAllTeamUsersAttribute(): Collection
@@ -244,6 +321,7 @@ trait HasTeams
             return $this->teamUsers;
         }
         return $this->teamUsers->merge([$owner]);
+<<<<<<< HEAD
 =======
      * @return \Illuminate\Support\Collection
 =======
@@ -262,6 +340,12 @@ trait HasTeams
         }
         return $this->teamUsers->merge([$owner]);
 >>>>>>> a3174e5b (phpstan)
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     }
 
     /**
@@ -269,6 +353,18 @@ trait HasTeams
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+     * @param  \Illuminate\Database\Eloquent\Model  $user
+     * @return bool
+     */
+    public function hasTeamMember($user)
+    {
+        return $this->teamUsers->contains($user) || $user->ownsTeam($this);
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
      * @param UserContract $user
      * @return bool
      */
@@ -285,6 +381,7 @@ trait HasTeams
         }
 
         return false;
+<<<<<<< HEAD
 =======
      * @param  \Illuminate\Database\Eloquent\Model  $user
 =======
@@ -311,6 +408,12 @@ trait HasTeams
 
         return false;
 >>>>>>> a3174e5b (phpstan)
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     }
 
     /**
@@ -326,6 +429,7 @@ trait HasTeams
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function hasTeamPermission(TeamContract $team, string $permission): bool
 =======
     public function hasTeamPermission(\Modules\User\Contracts\TeamContract $team, string $permission): bool
@@ -333,6 +437,15 @@ trait HasTeams
 =======
     public function hasTeamPermission(TeamContract $team, string $permission): bool
 >>>>>>> 1def8bbe (fix hint)
+=======
+    public function hasTeamPermission(\Modules\User\Contracts\TeamContract $team, string $permission): bool
+=======
+    public function hasTeamPermission(TeamContract $team, string $permission): bool
+>>>>>>> aurmich/dev
+=======
+    public function hasTeamPermission(TeamContract $team, string $permission): bool
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     {
         return $this->ownsTeam($team) || in_array($permission, $this->teamPermissions($team));
     }
@@ -342,6 +455,7 @@ trait HasTeams
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function hasTeamRole(TeamContract $team, string $role): bool
 =======
     public function hasTeamRole(\Modules\User\Contracts\TeamContract $team, string $role): bool
@@ -349,6 +463,15 @@ trait HasTeams
 =======
     public function hasTeamRole(TeamContract $team, string $role): bool
 >>>>>>> 1def8bbe (fix hint)
+=======
+    public function hasTeamRole(\Modules\User\Contracts\TeamContract $team, string $role): bool
+=======
+    public function hasTeamRole(TeamContract $team, string $role): bool
+>>>>>>> aurmich/dev
+=======
+    public function hasTeamRole(TeamContract $team, string $role): bool
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     {
         if ($this->ownsTeam($team)) {
             return true;
@@ -362,6 +485,7 @@ trait HasTeams
      * Get the current team of the user's context.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -373,6 +497,8 @@ trait HasTeams
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, $this>
 >>>>>>> 345f8677 (phpstan)
 =======
+=======
+>>>>>>> b58de900 (.)
      * Commented out as it is less comprehensive and does not use TeamContract.
      * The preferred method (below) includes logic for default team switching and uses TeamContract for better abstraction.
      */
@@ -387,6 +513,7 @@ trait HasTeams
      * Get the current team of the user's context.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Contracts\TeamContract, static>
 >>>>>>> 54f4fa16 (.)
 =======
@@ -396,6 +523,17 @@ trait HasTeams
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Contracts\TeamContract, $this>
 >>>>>>> 1def8bbe (fix hint)
+=======
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Contracts\TeamContract, static>
+=======
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Contracts\TeamContract, $this>
+>>>>>>> aurmich/dev
+=======
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Contracts\TeamContract, $this>
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
      */
     public function currentTeam(): BelongsTo
     {
@@ -422,11 +560,16 @@ trait HasTeams
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, $this>
+=======
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+>>>>>>> b58de900 (.)
 =======
      * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\User\Contracts\TeamContract, $this>
 >>>>>>> aurmich/dev
 =======
+<<<<<<< HEAD
      * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, $this>
 >>>>>>> 345f8677 (phpstan)
 =======
@@ -438,6 +581,10 @@ trait HasTeams
 =======
      * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\User\Contracts\TeamContract, $this>
 >>>>>>> 1def8bbe (fix hint)
+=======
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\User\Contracts\TeamContract, $this>
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
      */
     public function ownedTeams(): HasMany
     {
@@ -445,9 +592,18 @@ trait HasTeams
         $teamClass = $xot->getTeamClass();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+=======
+        
+>>>>>>> aurmich/dev
+=======
+        
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
         return $this->hasMany($teamClass, 'user_id');
 =======
         
@@ -498,12 +654,26 @@ trait HasTeams
 =======
      * Get all of the pending invitations for the team.
      *
+<<<<<<< HEAD
+<<<<<<< HEAD
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function teamInvitations()
+    {
+        return $this->hasMany(app('team_invitation_model'), 'team_id');
+=======
+=======
+>>>>>>> a3f7230 (.)
      * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Illuminate\Database\Eloquent\Model, $this>
      */
     public function teamInvitations(): HasMany
     {
         $invitationModel = app('team_invitation_model');
         return $this->hasMany($invitationModel, 'team_id');
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
     }
 
     /**
@@ -511,14 +681,36 @@ trait HasTeams
      *
      * @return string
      */
+<<<<<<< HEAD
+<<<<<<< HEAD
+    public function teamRelation()
+    {
+        return config('teams.relationship_name', 'teamUsers');
+=======
     public function teamRelation(): string
     {
         return (string) config('teams.relationship_name', 'teamUsers');
+>>>>>>> aurmich/dev
+=======
+    public function teamRelation(): string
+    {
+        return (string) config('teams.relationship_name', 'teamUsers');
+>>>>>>> a3f7230 (.)
     }
 
     /**
      * Get all of the team's users.
      *
+<<<<<<< HEAD
+<<<<<<< HEAD
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function teamUsers()
+    {
+        return $this->hasMany(app('team_user_model'), 'team_id');
+=======
+=======
+>>>>>>> a3f7230 (.)
      * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Illuminate\Database\Eloquent\Model, $this>
      */
     public function teamUsers(): HasMany
@@ -533,12 +725,20 @@ trait HasTeams
 >>>>>>> 1def8bbe (fix hint)
         $teamUserModel = app('team_user_model');
         return $this->hasMany($teamUserModel, 'team_id');
+<<<<<<< HEAD
 >>>>>>> a3174e5b (phpstan)
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     }
 
     /**
      * Get the role for a specific team.
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function teamRole(TeamContract $team): ?Role
@@ -548,14 +748,30 @@ trait HasTeams
 =======
     public function teamRole(TeamContract $team): ?Role
 >>>>>>> 1def8bbe (fix hint)
+=======
+    public function teamRole(\Modules\User\Contracts\TeamContract $team): ?Role
+=======
+    public function teamRole(TeamContract $team): ?Role
+>>>>>>> aurmich/dev
+=======
+    public function teamRole(TeamContract $team): ?Role
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     {
         /** @var \Illuminate\Database\Eloquent\Model|\Illuminate\Database\Eloquent\Relations\Pivot|null $teamUser */
         $teamUser = $this->teamUsers()->where('team_id', $team->id)->first();
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 1def8bbe (fix hint)
+=======
+        return $teamUser?->role;
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
         if ($teamUser === null) {
             return null;
         }
@@ -565,16 +781,23 @@ trait HasTeams
         
         return $role instanceof Role ? $role : null;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         return $teamUser?->role;
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 1def8bbe (fix hint)
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     }
 
     /**
      * Get permissions for a specific team.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param TeamContract $team
@@ -584,6 +807,15 @@ trait HasTeams
 =======
      * @param TeamContract $team
 >>>>>>> 1def8bbe (fix hint)
+=======
+     * @param \Modules\User\Contracts\TeamContract $team
+=======
+     * @param TeamContract $team
+>>>>>>> aurmich/dev
+=======
+     * @param TeamContract $team
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
      * @return array<int, string>
      */
     public function teamPermissions(TeamContract $team): array
@@ -620,6 +852,7 @@ trait HasTeams
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function personalTeam(): ?TeamContract
 =======
     public function personalTeam(): ?\Modules\User\Contracts\TeamContract
@@ -627,6 +860,15 @@ trait HasTeams
 =======
     public function personalTeam(): ?TeamContract
 >>>>>>> 1def8bbe (fix hint)
+=======
+    public function personalTeam(): ?\Modules\User\Contracts\TeamContract
+=======
+    public function personalTeam(): ?TeamContract
+>>>>>>> aurmich/dev
+=======
+    public function personalTeam(): ?TeamContract
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     {
         /** @var \Modules\User\Contracts\TeamContract|null */
         $personalTeam = $this->ownedTeams->where('personal_team', true)->first();
@@ -639,11 +881,22 @@ trait HasTeams
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 1def8bbe (fix hint)
+=======
+     * @param \Modules\User\Contracts\TeamContract $team
+=======
+     * @param TeamContract $team
+>>>>>>> aurmich/dev
+     */
+    public function switchTeam(?\Modules\User\Contracts\TeamContract $team): bool
+=======
+>>>>>>> b58de900 (.)
      * @param TeamContract $team
      */
     public function switchTeam(?TeamContract $team): bool
+>>>>>>> a3f7230 (.)
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -698,6 +951,7 @@ trait HasTeams
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param TeamContract $team
      */
     public function ownsTeam(TeamContract $team): bool
@@ -707,10 +961,24 @@ trait HasTeams
     public function ownsTeam(\Modules\User\Contracts\TeamContract $team): bool
 >>>>>>> 54f4fa16 (.)
 =======
+     * @param \Modules\User\Contracts\TeamContract $team
+     */
+    public function ownsTeam(\Modules\User\Contracts\TeamContract $team): bool
+=======
      * @param TeamContract $team
      */
     public function ownsTeam(TeamContract $team): bool
+>>>>>>> aurmich/dev
+>>>>>>> b58de900 (.)
+=======
+     * @param TeamContract $team
+     */
+    public function ownsTeam(TeamContract $team): bool
+<<<<<<< HEAD
 >>>>>>> 1def8bbe (fix hint)
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     {
         /** @var ?\Illuminate\Database\Eloquent\Model $found */
         $found = $this->ownedTeams()->where('teams.id', $team->id)->first();
@@ -721,6 +989,7 @@ trait HasTeams
     /**
      * Get all of the teams the user belongs to.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -740,6 +1009,16 @@ trait HasTeams
 =======
      * @return BelongsToMany<\Modules\User\Contracts\TeamContract, $this>
 >>>>>>> 1def8bbe (fix hint)
+=======
+     * @return BelongsToMany<\Modules\User\Contracts\TeamContract, static>
+     * @phpstan-return BelongsToMany<\Modules\User\Contracts\TeamContract&\Illuminate\Database\Eloquent\Model, static>
+=======
+     * @return BelongsToMany<\Modules\User\Contracts\TeamContract, $this>
+>>>>>>> aurmich/dev
+=======
+     * @return BelongsToMany<\Modules\User\Contracts\TeamContract, $this>
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
      */
     public function teams(): BelongsToMany
     {
@@ -858,6 +1137,7 @@ trait HasTeams
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param TeamContract $team
      */
     public function checkTeamOwnership(TeamContract $team): bool
@@ -867,10 +1147,24 @@ trait HasTeams
     public function checkTeamOwnership(\Modules\User\Contracts\TeamContract $team): bool
 >>>>>>> 54f4fa16 (.)
 =======
+     * @param \Modules\User\Contracts\TeamContract $team
+     */
+    public function checkTeamOwnership(\Modules\User\Contracts\TeamContract $team): bool
+=======
      * @param TeamContract $team
      */
     public function checkTeamOwnership(TeamContract $team): bool
+>>>>>>> aurmich/dev
+>>>>>>> b58de900 (.)
+=======
+     * @param TeamContract $team
+     */
+    public function checkTeamOwnership(TeamContract $team): bool
+<<<<<<< HEAD
 >>>>>>> 1def8bbe (fix hint)
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     {
         return $this->ownsTeam($team);
     }

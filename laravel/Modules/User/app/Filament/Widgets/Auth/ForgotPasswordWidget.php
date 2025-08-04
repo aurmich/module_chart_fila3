@@ -6,6 +6,22 @@ namespace Modules\User\Filament\Widgets\Auth;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Section;
+use Filament\Forms\Form;
+use Illuminate\Support\Facades\Password;
+use Filament\Forms\Components\TextInput as FormsTextInput;
+
+class ForgotPasswordWidget extends BaseAuthWidget
+{
+    protected static string $view = 'user::widgets.auth.forgot-password-widget';
+
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
 use Filament\Forms\Form;
 use Filament\Forms\ComponentContainer;
 use Filament\Forms\Components\Section;
@@ -36,6 +52,7 @@ class ForgotPasswordWidget extends XotBaseWidget
         ];
     }
 
+<<<<<<< HEAD
 =======
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Section;
@@ -75,6 +92,12 @@ class ForgotPasswordWidget extends XotBaseWidget
     }
 
 >>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     public function form(Form $form): Form
     {
         return $form

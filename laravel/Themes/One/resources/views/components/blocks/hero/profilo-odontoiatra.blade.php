@@ -63,6 +63,10 @@
                       <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
                       </svg>
                     </div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b58de900 (.)
                     {{-- Widget per la modifica dati utente - 
                           Delegazione dinamica delle azioni di aggiornamento.
                           Documentazione: laravel/Modules/User/docs/filament/widgets/edit-user-widget.md --}}
@@ -72,6 +76,7 @@
 
                         <!-- Prima riga: Nome / Cognome -->
 =======
+<<<<<<< HEAD
                 <div class="w-3/4 flex flex-col justify-center items-center">
                     <img class="pb-5 h-32" src="/img/avatar-user.svg" />
                     <h1 class="text-center">Samuel Tarly</h1>
@@ -97,6 +102,12 @@
 
                         {{-- Prima riga: Nome / Cognome --}}
 >>>>>>> f7d3ce4f (- update landing-page;)
+=======
+                        {{-- Intestazione --}}
+
+                        {{-- Prima riga: Nome / Cognome --}}
+>>>>>>> bae7c52 (.)
+>>>>>>> b58de900 (.)
                         <div class="flex flex-col lg:flex-row justify-center items-center">
                             <div class="w-full lg:w-3/6 p-5">
                                 <input class="bg-transparent" placeholder="Nome" type="text" id="name" />
@@ -110,7 +121,11 @@
                         <!-- Seconda riga: Email / Cellulare -->
 =======
                         {{-- Seconda riga: Email / Cellulare --}}
+<<<<<<< HEAD
 >>>>>>> f7d3ce4f (- update landing-page;)
+=======
+>>>>>>> bae7c52 (.)
+>>>>>>> b58de900 (.)
                         <div class="flex flex-col lg:flex-row justify-center items-center">
                             <div class="w-full lg:w-3/6 p-5">
                                 <input class="bg-transparent" placeholder="Email" type="email" id="email" />
@@ -124,7 +139,11 @@
                         <!-- Terza riga: Indirizzo / Partita IVA -->
 =======
                         {{-- Terza riga: Indirizzo / Partita IVA --}}
+<<<<<<< HEAD
 >>>>>>> f7d3ce4f (- update landing-page;)
+=======
+>>>>>>> bae7c52 (.)
+>>>>>>> b58de900 (.)
                         <div class="flex flex-col lg:flex-row justify-center items-center">
                             <div class="w-full lg:w-3/6 p-5">
                                 <input class="bg-transparent" placeholder="Indirizzo" type="text" id="address" />
@@ -135,6 +154,11 @@
                         </div>
 <<<<<<< HEAD
                         --}}
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> bae7c52 (.)
+>>>>>>> b58de900 (.)
                     </div>
                 </div>
 >>>>>>> aurmich/dev

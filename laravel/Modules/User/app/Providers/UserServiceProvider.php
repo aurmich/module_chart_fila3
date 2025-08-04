@@ -78,6 +78,11 @@ class UserServiceProvider extends XotBaseServiceProvider
     {
         parent::register();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> b58de900 (.)
         $this->registerTeamModelBindings();
     }
 
@@ -93,8 +98,14 @@ class UserServiceProvider extends XotBaseServiceProvider
         $this->app->bind('team_invitation_model', function () {
             return \Modules\User\Models\TeamInvitation::class;
         });
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     }
 
     public function registerMailsNotification(): void

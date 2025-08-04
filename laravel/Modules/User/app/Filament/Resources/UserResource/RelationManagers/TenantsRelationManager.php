@@ -64,8 +64,15 @@ class TenantsRelationManager extends XotBaseRelationManager
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a3174e5b (phpstan)
+=======
+        return app(ListTenants::class)->getTableColumns();
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
         $columns = app(ListTenants::class)->getTableColumns();
         
         // Ensure we only return Column instances, filter out any Layout\Component instances
@@ -73,10 +80,16 @@ class TenantsRelationManager extends XotBaseRelationManager
             return $column instanceof \Filament\Tables\Columns\Column;
         });
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         return app(ListTenants::class)->getTableColumns();
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> a3174e5b (phpstan)
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
     }
 }

@@ -30,6 +30,7 @@ namespace Modules\User\Models;
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 class DeviceProfile extends DeviceUser
 {
     /**
@@ -46,9 +47,22 @@ class DeviceProfile extends DeviceUser
 class DeviceProfile extends DeviceUser {}
 >>>>>>> 54f4fa16 (.)
 =======
+=======
+class DeviceProfile extends DeviceUser {}
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
 class DeviceProfile extends DeviceUser {
     /**
      * ---
      */
 }
+<<<<<<< HEAD
 >>>>>>> f3e4ec66 (.)
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)

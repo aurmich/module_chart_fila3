@@ -85,6 +85,7 @@ class LogoutListener
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'device_id' => $device->id,
 =======
                 'device_id' => $device?->id,
@@ -98,6 +99,15 @@ class LogoutListener
 =======
                 'device_id' => $device->id,
 >>>>>>> a3174e5b (phpstan)
+=======
+                'device_id' => $device?->id,
+=======
+                'device_id' => $device->id,
+>>>>>>> aurmich/dev
+=======
+                'device_id' => $device->id,
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
                 'timestamp' => now()
             ]);
 
@@ -109,6 +119,7 @@ class LogoutListener
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'user_id' => $event->user->getAuthIdentifier()
 =======
                 'user_id' => $event->user?->getAuthIdentifier()
@@ -122,6 +133,15 @@ class LogoutListener
 =======
                 'user_id' => $event->user->getAuthIdentifier()
 >>>>>>> a3174e5b (phpstan)
+=======
+                'user_id' => $event->user?->getAuthIdentifier()
+=======
+                'user_id' => $event->user->getAuthIdentifier()
+>>>>>>> aurmich/dev
+=======
+                'user_id' => $event->user->getAuthIdentifier()
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
             ]);
         }
     }
