@@ -76,6 +76,9 @@ parameters:
         - ./Modules/*/packages/*
         - ./Modules/Xot/app/Filament/Traits/HasXotTable.php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bfe064b3 (♻️ (DoctorsRelationManager.php, ListUsers.php, BaseListUsers.php): update PHPDoc return types for better type safety and clarity)
         - ./Modules/Activity
         - ./Modules/*/database_old/*
         - ./Modules/*/scripts/*

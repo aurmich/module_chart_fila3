@@ -37,6 +37,7 @@ abstract class BaseListUsers extends XotBaseListRecords
      * Get table columns for user records.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, \Filament\Tables\Columns\Column>
 =======
 =======
@@ -62,6 +63,9 @@ abstract class BaseListUsers extends XotBaseListRecords
 =======
      * @return array<string, TextColumn>
 >>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
+=======
+     * @return array<string, \Filament\Tables\Columns\Column>
+>>>>>>> bfe064b3 (♻️ (DoctorsRelationManager.php, ListUsers.php, BaseListUsers.php): update PHPDoc return types for better type safety and clarity)
      */
     public function getTableColumns(): array
     {

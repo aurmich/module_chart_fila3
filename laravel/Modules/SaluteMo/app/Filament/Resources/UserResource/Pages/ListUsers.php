@@ -42,6 +42,7 @@ class ListUsers extends BaseListUsers
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'state'=>IconStateColumn::make('state'),
 =======
         IconStateColumn::make('state'),
@@ -52,6 +53,9 @@ class ListUsers extends BaseListUsers
 =======
         IconStateColumn::make('state'),
 >>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+=======
+        'state'=>IconStateColumn::make('state'),
+>>>>>>> bfe064b3 (♻️ (DoctorsRelationManager.php, ListUsers.php, BaseListUsers.php): update PHPDoc return types for better type safety and clarity)
 
     ];
    }

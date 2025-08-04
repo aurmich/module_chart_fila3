@@ -105,6 +105,7 @@ class DoctorsRelationManager extends XotBaseRelationManager
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, Tables\Filters\Filter|Tables\Filters\SelectFilter>
 =======
      * @return array<string, Tables\Filters\Filter>
@@ -115,6 +116,9 @@ class DoctorsRelationManager extends XotBaseRelationManager
 =======
      * @return array<string, Tables\Filters\Filter>
 >>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+=======
+     * @return array<string, Tables\Filters\Filter|Tables\Filters\SelectFilter>
+>>>>>>> bfe064b3 (♻️ (DoctorsRelationManager.php, ListUsers.php, BaseListUsers.php): update PHPDoc return types for better type safety and clarity)
      */
     public function getTableFilters(): array
     {
