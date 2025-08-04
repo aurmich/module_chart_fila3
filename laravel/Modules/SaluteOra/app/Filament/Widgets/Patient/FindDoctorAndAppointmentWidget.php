@@ -67,6 +67,7 @@ use Illuminate\Support\Facades\Notification as LaravelNotification;
 use Filament\Forms\Components\Wizard\Step;
 use Livewire\Component as LivewireComponent;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Modules\UI\Filament\Forms\Components\RadioCollection;
 
 >>>>>>> aurmich/dev
 class FindDoctorAndAppointmentWidget extends XotBaseWidget
@@ -173,11 +174,16 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
         return [
             Forms\Components\Wizard::make()
 <<<<<<< HEAD
+<<<<<<< HEAD
                 //->startOnStep($this->getStartStep())
 =======
                 ->startOnStep($this->getStartStep())
 >>>>>>> aurmich/dev
+=======
+                //->startOnStep($this->getStartStep())
+>>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
                 ->steps([
+                    //$this->getStepByName('test_step'),
                     $this->getStepByName('search_step')
                         ->icon('heroicon-o-map-pin'),
                     $this->getStepByName('studio_step')
@@ -214,15 +220,22 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
      * @return int
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function getWizardStartOnStep(): int
 =======
     protected function getStartStep(): int
 >>>>>>> aurmich/dev
+=======
+    protected function getWizardStartOnStep(): int
+>>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
     {
         return 0; // Prima pagina
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
     protected function getTestStepSchema(): array
     {
         return [
@@ -234,8 +247,11 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
         ];
     }
 
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
 
     
 

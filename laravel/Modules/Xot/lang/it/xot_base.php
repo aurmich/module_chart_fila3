@@ -241,6 +241,13 @@ return array (
     array (
       'label' => 'search_step',
     ),
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+    'test_step' => 
+    array (
+      'label' => 'test_step',
+    ),
+>>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
   ),
 );
