@@ -54,11 +54,15 @@ return array (
       'description' => 'email',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'email',
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+      'helper_text' => '',
+>>>>>>> a0e35b8d (helper text on login)
       'placeholder' => 'email',
 =======
       'helper_text' => 'email',
@@ -73,6 +77,7 @@ return array (
       'description' => 'password',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'password',
@@ -80,6 +85,9 @@ return array (
 =======
       'helper_text' => 'password',
 >>>>>>> 54f4fa16 (.)
+=======
+      'helper_text' => '',
+>>>>>>> a0e35b8d (helper text on login)
       'placeholder' => 'password',
     ),
     'remember' => 
@@ -88,10 +96,14 @@ return array (
       'description' => 'remember',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'remember',
 >>>>>>> aurmich/dev
+=======
+      'helper_text' => '',
+>>>>>>> a0e35b8d (helper text on login)
       'placeholder' => 'remember',
     ),
 <<<<<<< HEAD

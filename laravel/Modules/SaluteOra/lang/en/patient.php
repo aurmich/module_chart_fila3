@@ -4,8 +4,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> b1d9f49d (translations)
+=======
+>>>>>>> a0e35b8d (helper text on login)
 declare(strict_types=1);
 
 return [
@@ -1202,6 +1205,7 @@ return [
     ],
 ];
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8d591468 (fields translations)
 =======
 =======
@@ -1504,3 +1508,5 @@ return array (
 );
 >>>>>>> 1c0ba5b2 (translations)
 >>>>>>> b1d9f49d (translations)
+=======
+>>>>>>> a0e35b8d (helper text on login)

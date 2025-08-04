@@ -5,8 +5,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> b1d9f49d (translations)
+=======
+>>>>>>> a0e35b8d (helper text on login)
 declare(strict_types=1);
 
 return [
@@ -980,6 +983,7 @@ return [
         'empty' => 'No specializations registered',
     ],
 ];
+<<<<<<< HEAD
 =======
 return array (
   'steps' => 
@@ -1248,3 +1252,5 @@ return array (
 );
 >>>>>>> 1c0ba5b2 (translations)
 >>>>>>> b1d9f49d (translations)
+=======
+>>>>>>> a0e35b8d (helper text on login)

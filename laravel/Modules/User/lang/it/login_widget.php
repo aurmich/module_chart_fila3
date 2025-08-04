@@ -9,6 +9,7 @@ return array (
       'placeholder' => 'email',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'email',
@@ -16,6 +17,9 @@ return array (
 =======
       'helper_text' => 'email',
 >>>>>>> b58de900 (.)
+=======
+      'helper_text' => '',
+>>>>>>> a0e35b8d (helper text on login)
       'description' => 'email',
     ),
     'password' => 
@@ -24,6 +28,7 @@ return array (
       'placeholder' => 'password',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'password',
@@ -31,6 +36,9 @@ return array (
 =======
       'helper_text' => 'password',
 >>>>>>> b58de900 (.)
+=======
+      'helper_text' => '',
+>>>>>>> a0e35b8d (helper text on login)
       'description' => 'password',
     ),
     'remember' => 
@@ -39,6 +47,7 @@ return array (
       'placeholder' => 'remember',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'remember',
@@ -46,6 +55,9 @@ return array (
 =======
       'helper_text' => 'remember',
 >>>>>>> b58de900 (.)
+=======
+      'helper_text' => '',
+>>>>>>> a0e35b8d (helper text on login)
       'description' => 'remember',
     ),
   ),

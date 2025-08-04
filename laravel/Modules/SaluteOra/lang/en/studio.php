@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 return [
     'navigation' => [
         'label' => 'Medical Practices',
@@ -23,6 +24,8 @@ return [
 =======
 =======
 >>>>>>> b1d9f49d (translations)
+=======
+>>>>>>> a0e35b8d (helper text on login)
 declare(strict_types=1);
 
 return [
@@ -769,6 +772,7 @@ return [
 >>>>>>> 8d591468 (fields translations)
 =======
 ]; 
+<<<<<<< HEAD
 =======
 return array (
   'fields' => 
@@ -826,3 +830,5 @@ return array (
 );
 >>>>>>> 1c0ba5b2 (translations)
 >>>>>>> b1d9f49d (translations)
+=======
+>>>>>>> a0e35b8d (helper text on login)

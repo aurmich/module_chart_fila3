@@ -262,6 +262,7 @@
         ]
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -295,6 +296,8 @@
 =======
 >>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
 >>>>>>> 631510b4 (fix bashscripts structure + translation of module saluteMo)
+=======
+>>>>>>> a0e35b8d (helper text on login)
     "minimum-stability": "dev",
     "prefer-stable": true
 >>>>>>> 4171c7dc (chore: remove unused DentistData and SearchDentistData classes to clean up the codebase)

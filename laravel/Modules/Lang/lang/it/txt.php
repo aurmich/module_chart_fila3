@@ -11,10 +11,14 @@ return array (
       'icon' => 'heroicon-o-mail',
       'description' => 'email',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'email',
 >>>>>>> 54f4fa16 (.)
+=======
+      'helper_text' => '',
+>>>>>>> a0e35b8d (helper text on login)
     ),
     'password' => 
     array (
@@ -24,16 +28,21 @@ return array (
       'icon' => 'heroicon-o-lock-closed',
       'description' => 'password',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'password',
 >>>>>>> 54f4fa16 (.)
+=======
+      'helper_text' => '',
+>>>>>>> a0e35b8d (helper text on login)
     ),
     'remember' => 
     array (
       'label' => 'Ricordami',
       'tooltip' => 'Mantieni l\'accesso attivo su questo dispositivo',
       'description' => 'remember',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'helper_text' => '',
       'placeholder' => 'remember',
@@ -480,6 +489,9 @@ return array (
     ),
 =======
       'helper_text' => 'remember',
+=======
+      'helper_text' => '',
+>>>>>>> a0e35b8d (helper text on login)
       'placeholder' => 'remember',
     ),
 >>>>>>> 54f4fa16 (.)
