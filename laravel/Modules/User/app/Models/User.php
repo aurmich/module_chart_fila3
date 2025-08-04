@@ -81,6 +81,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static \Illuminate\Database\Eloquent\Builder|User withoutPermission($permissions)
  * @method static \Illuminate\Database\Eloquent\Builder|User withoutRole($roles, $guard = null)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property string $last_name
 <<<<<<< HEAD
  * @property-read \Modules\User\Models\Team|null $currentTeam
@@ -95,6 +96,9 @@ use Modules\Xot\Contracts\ProfileContract;
 >>>>>>> aurmich/dev
 =======
  * @property string $surname
+=======
+ * @property string $last_name
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
  * @property string|null $facebook_id
  * @property Team|null $currentTeam
  * @method static \Illuminate\Database\Eloquent\Builder|User whereFacebookId($value)

@@ -21,12 +21,18 @@ class AppointmentWorkflowResource extends XotBaseResource
     protected static ?string $slug = 'appointment-workflows';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
     //protected static ?string $tenantOwnershipRelationshipName = 'studio';
     //protected static ?string $tenantRelationshipName = 'studio';
     protected static bool $isScopedToTenant = false;
 
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
     /**
      * Ottiene lo schema del form per la resource AppointmentWorkflow.
      *

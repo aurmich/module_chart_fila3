@@ -10,10 +10,14 @@ return [
     'navigation' => [
         'label' => 'Calendario Disponibilità',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'group' => 'Agenda',
 =======
         'group' => 'Gestione Medici',
 >>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+=======
+        'group' => 'Agenda',
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
         'icon' => 'heroicon-o-calendar',
         'color' => 'primary',
         'sort' => 10,

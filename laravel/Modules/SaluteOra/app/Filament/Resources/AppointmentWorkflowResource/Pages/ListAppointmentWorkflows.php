@@ -6,6 +6,9 @@ namespace Modules\SaluteOra\Filament\Resources\AppointmentWorkflowResource\Pages
 
 use Filament\Actions;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\BadgeColumn;
 use Filament\Tables\Columns\IconColumn;
@@ -13,11 +16,14 @@ use Filament\Resources\Pages\ListRecords;
 use Modules\SaluteOra\Actions\InitiateAppointmentWorkflowAction;
 use Modules\SaluteOra\Filament\Resources\AppointmentWorkflowResource;
 use Modules\SaluteOra\Models\AppointmentWorkflow;
+<<<<<<< HEAD
 =======
 use Filament\Resources\Pages\ListRecords;
 use Modules\SaluteOra\Actions\InitiateAppointmentWorkflowAction;
 use Modules\SaluteOra\Filament\Resources\AppointmentWorkflowResource;
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListAppointmentWorkflows extends XotBaseListRecords
@@ -26,6 +32,9 @@ class ListAppointmentWorkflows extends XotBaseListRecords
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
      * Define the table columns for the appointment workflows list.
      *
      * @return array<string, \Filament\Tables\Columns\Column>
@@ -103,8 +112,11 @@ class ListAppointmentWorkflows extends XotBaseListRecords
     }
 
     /**
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
      * Definisce le azioni nell'header della pagina.
      *
      * @return array<Actions\Action>
@@ -114,10 +126,13 @@ class ListAppointmentWorkflows extends XotBaseListRecords
         return [
             Actions\CreateAction::make()
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 ->label('Crea Nuovo Workflow')
                 ->icon('heroicon-o-plus')
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
                 ->after(function (array $data, $record): void {
                     // Dopo la creazione del record, inizializza il workflow
                     // con l'action Spatie QueueableAction

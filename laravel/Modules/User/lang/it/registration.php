@@ -350,12 +350,17 @@ return [
             'label' => 'name',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
         'last_name' => [
             'label' => 'last_name',
 =======
         'surname' => [
             'label' => 'surname',
 >>>>>>> 54f4fa16 (.)
+=======
+        'last_name' => [
+            'label' => 'last_name',
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
         ],
         'email' => [
             'label' => 'Email',

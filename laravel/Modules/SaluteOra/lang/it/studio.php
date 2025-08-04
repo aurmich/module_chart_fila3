@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array (
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -136,11 +137,33 @@ return array (
       'placeholder' => 'phone',
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+return array (
+  'single' => 'Studio',
+  'plural' => 'Studi',
+  'fields' => 
+  array (
+    'name' => 
+    array (
+      'label' => 'nome studio',
+      'placeholder' => 'nome studio',
+      'helper_text' => '',
+      'description' => '',
+    ),
+    'address' => 'Indirizzo',
+    'city' => 'Città',
+    'postal_code' => 'CAP',
+    'phone' => 
+    array (
+      'label' => 'phone',
+      'placeholder' => 'phone',
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
       'helper_text' => '',
       'description' => '',
     ),
     'email' => 
     array (
+<<<<<<< HEAD
 <<<<<<< HEAD
       'label' => 'Email Studio',
       'placeholder' => 'Inserisci l\'email di contatto dello studio',
@@ -149,11 +172,16 @@ return array (
       'label' => 'email',
       'placeholder' => 'email',
 >>>>>>> aurmich/dev
+=======
+      'label' => 'email',
+      'placeholder' => 'email',
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
       'helper_text' => '',
       'description' => '',
     ),
     'website' => 
     array (
+<<<<<<< HEAD
 <<<<<<< HEAD
       'label' => 'Sito Web',
       'placeholder' => 'Inserisci l\'URL del sito web (es. https://studio.it)',
@@ -308,22 +336,54 @@ return array (
 =======
       'helper_text' => 'description',
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+      'description' => 'website',
+      'helper_text' => '',
+      'placeholder' => 'website',
+      'label' => 'website',
+    ),
+    'registration_number' => 
+    array (
+      'description' => 'registration_number',
+      'helper_text' => '',
+      'placeholder' => 'registration_number',
+      'label' => 'registration_number',
+    ),
+    'vat_number' => 
+    array (
+      'description' => 'vat_number',
+      'helper_text' => '',
+      'placeholder' => 'vat_number',
+      'label' => 'vat_number',
+    ),
+    'description' => 
+    array (
+      'description' => 'description',
+      'helper_text' => '',
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
       'placeholder' => 'description',
       'label' => 'description',
     ),
     'opening_hours' => 'Orari di apertura',
     'services' => 'Servizi',
+<<<<<<< HEAD
     'active' =>
     array (
       'description' => 'active',
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+    'active' => 
+    array (
+      'description' => 'active',
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
       'label' => 'active',
     ),
     'created_at' => 
     array (
       'label' => 'created_at',
     ),
+<<<<<<< HEAD
 =======
     ),
     'created_at' => 'Creato il',
@@ -343,12 +403,22 @@ return array (
       'label' => 'resetFilters',
     ),
     'addresses' =>
+=======
+    'updated_at' => 'Aggiornato il',
+    'deleted_at' => 'Eliminato il',
+    'resetFilters' => 
+    array (
+      'label' => 'resetFilters',
+    ),
+    'addresses' => 
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
     array (
       'description' => 'addresses',
       'helper_text' => 'addresses',
       'placeholder' => 'addresses',
       'label' => 'addresses',
     ),
+<<<<<<< HEAD
     'applyFilters' =>
     array (
       'label' => 'applyFilters',
@@ -358,11 +428,20 @@ return array (
 <<<<<<< HEAD
 =======
 >>>>>>> a872e835 (✨ (AddressResource.php): replace locality text input with a searchable select)
+=======
+    'applyFilters' => 
+    array (
+      'label' => 'applyFilters',
+    ),
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
     'toggleColumns' => 
     array (
       'label' => 'toggleColumns',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
     'reorderRecords' => 
     array (
       'label' => 'reorderRecords',
@@ -385,16 +464,20 @@ return array (
       'label' => 'is_primary',
       'placeholder' => 'is_primary',
       'helper_text' => 'is_primary',
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
     ),
     'administrative_area_level_1' => 
     array (
       'description' => 'administrative_area_level_1',
       'helper_text' => 'administrative_area_level_1',
+=======
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
     ),
   ),
   'actions' => 
   array (
+<<<<<<< HEAD
 <<<<<<< HEAD
     'create' => 
     array (
@@ -507,16 +590,22 @@ return array (
       'label' => 'Filtra per Regione',
       'placeholder' => 'Seleziona una regione',
 =======
+=======
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
     'activate' => 'Attiva',
     'deactivate' => 'Disattiva',
     'register_tenant' => 
     array (
       'label' => 'Aggiungi Studio',
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
     ),
   ),
   'messages' => 
   array (
+<<<<<<< HEAD
 <<<<<<< HEAD
     'empty_state' => 'Nessuno studio registrato',
     'loading' => 'Caricamento dati studi...',
@@ -608,6 +697,14 @@ return array (
     'sort' => 18,
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+    'activated' => 'Studio attivato con successo.',
+    'deactivated' => 'Studio disattivato con successo.',
+  ),
+  'navigation' => 
+  array (
+    'sort' => 18,
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
     'label' => 'Studi',
     'icon' => 'saluteora-studio',
     'group' => 'Gestione Studi',
@@ -615,6 +712,7 @@ return array (
   'model' => 
   array (
     'label' => 'Studio',
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
     'label' => 'studio.navigation',
@@ -747,3 +845,7 @@ return [
     ],
 ];
 >>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
+=======
+  ),
+);
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)

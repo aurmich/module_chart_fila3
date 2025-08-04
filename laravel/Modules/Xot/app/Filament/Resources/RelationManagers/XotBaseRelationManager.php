@@ -6,10 +6,14 @@ namespace Modules\Xot\Filament\Resources\RelationManagers;
 
 use Filament\Forms\Form;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Resources\RelationManagers\RelationManager as FilamentRelationManager;
 =======
 use Filament\Resources\RelationManagers\RelationManager;
 >>>>>>> 54f4fa16 (.)
+=======
+use Filament\Resources\RelationManagers\RelationManager as FilamentRelationManager;
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Model;
@@ -23,10 +27,14 @@ use Webmozart\Assert\Assert;
  * @property class-string<Model> $resource
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 abstract class XotBaseRelationManager extends FilamentRelationManager
 =======
 abstract class XotBaseRelationManager extends RelationManager
 >>>>>>> 54f4fa16 (.)
+=======
+abstract class XotBaseRelationManager extends FilamentRelationManager
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
 {
     use HasXotTable;
 
@@ -58,10 +66,14 @@ abstract class XotBaseRelationManager extends RelationManager
         return $this->getResource()::getFormSchema();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 //*
 =======
 /*
 >>>>>>> aurmich/dev
+=======
+/*
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
     public function getTableColumns(): array
     {
         $index=Arr::get($this->getResource()::getPages(),'index');
@@ -69,6 +81,7 @@ abstract class XotBaseRelationManager extends RelationManager
             //throw new \Exception('Index page not found');
             return [];
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
         /** @phpstan-ignore method.nonObject */
         $index_page=$index->getPage();
@@ -101,6 +114,16 @@ abstract class XotBaseRelationManager extends RelationManager
     }
 
 >>>>>>> 54f4fa16 (.)
+=======
+        if(!method_exists($index,'getTableColumns')){
+            return [];
+        }
+        $res= $index->getTableColumns();
+
+        return $res;
+    }
+*/
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
     public function getTableActions(): array
     {
         return [

@@ -42,10 +42,14 @@ class PatientController extends Controller
         $patientData = Session::get('patient_data', []);
         $currentStep = Session::get('current_step', 1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
         return view('saluteora::pages.patient.create', compact('patientData', 'currentStep'));
     }
 
@@ -71,7 +75,7 @@ class PatientController extends Controller
         $patientData = $request->except(['_token', 'current_step']);
         Session::put('patient_data', $patientData);
         Session::put('current_step', $request->input('current_step', 1));
-        
+
         return response()->json([
             'success' => true,
             'message' => 'Dati salvati temporaneamente',
@@ -96,8 +100,12 @@ class PatientController extends Controller
         // Validazione dei dati
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
+<<<<<<< HEAD
             'surname' => 'required|string|max:255',
 >>>>>>> 54f4fa16 (.)
+=======
+            'last_name' => 'required|string|max:255',
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
             'fiscal_code' => 'required|string|size:16|unique:patients,fiscal_code',
             'birth_date' => 'required|date',
             'gender' => 'required|in:M,F,O',
@@ -116,16 +124,21 @@ class PatientController extends Controller
             'privacy_consent' => 'required|accepted',
         ]);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
         if ($validator->fails()) {
             return redirect()
                 ->route('patient.create')
                 ->withErrors($validator)
                 ->withInput();
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
         // Creazione del paziente
@@ -139,16 +152,23 @@ class PatientController extends Controller
 
 =======
         
+=======
+
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
         // Creazione del paziente
         $patient = new Patient();
         $patient->fill($request->all());
         $patient->tenant_id = auth()->user()?->tenant_id ?? 1; // Assegna il tenant dell'utente autenticato o default
         $patient->save();
-        
+
         // Pulisci i dati della sessione
         Session::forget(['patient_data', 'current_step']);
+<<<<<<< HEAD
         
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
         // Redirect con messaggio di successo
         return redirect()
             ->route('patient.show', $patient->id)
@@ -194,10 +214,14 @@ class PatientController extends Controller
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'last_name' => 'required|string|max:255',
 =======
             'surname' => 'required|string|max:255',
 >>>>>>> 54f4fa16 (.)
+=======
+            'last_name' => 'required|string|max:255',
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
             'fiscal_code' => 'required|string|size:16|unique:patients,fiscal_code,' . $id,
             'birth_date' => 'required|date',
             'gender' => 'required|in:M,F,O',
@@ -215,10 +239,14 @@ class PatientController extends Controller
             'notes' => 'nullable|string|max:65535',
         ]);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
         if ($validator->fails()) {
             return redirect()
                 ->route('patient.edit', $id)
@@ -226,19 +254,27 @@ class PatientController extends Controller
                 ->withInput();
         }
 <<<<<<< HEAD
-
-=======
-        
->>>>>>> 54f4fa16 (.)
-        // Aggiornamento del paziente
-        $patient = Patient::findOrFail($id);
-        $patient->fill($request->all());
-        $patient->save();
 <<<<<<< HEAD
 
 =======
         
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+        // Aggiornamento del paziente
+        $patient = Patient::findOrFail($id);
+        $patient->fill($request->all());
+        $patient->save();
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
         // Redirect con messaggio di successo
         return redirect()
             ->route('patient.show', $patient->id)
@@ -259,8 +295,12 @@ class PatientController extends Controller
     {
         $patient = Patient::findOrFail($id);
         $patient->delete();
+<<<<<<< HEAD
         
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
         return redirect()
             ->route('patient.index')
             ->with('success', 'Paziente eliminato con successo');

@@ -342,6 +342,9 @@ Questo nuovo flusso permette di separare il completamento dei dati dall'approvaz
 - [Standard](./standards/README.md) - Standard specifici del modulo
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
 ## Features UI Avanzate
 
 ### Campi Condizionali nei Repeater
@@ -509,13 +512,23 @@ Per dettagli e motivazioni vedi:
 =======
 ## ⚠️ REGOLA CRITICA: getTableColumns() Obbligatorio in ListRecords
 
+<<<<<<< HEAD
 **Problema ricorrente:** `BadMethodCallException: Method getTableColumns does not exist`
 >>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+=======
+**Problema ricorrente (PATTERN SISTEMICO):** `BadMethodCallException: Method getTableColumns does not exist`
+
+**Casi risolti:**
+1. ✅ **ListAppointments** → [Fix dettagliato](list_appointments_gettablecolumns_fix.md)
+2. ✅ **ListAppointmentWorkflows** → [Fix dettagliato](list_appointment_workflows_gettablecolumns_fix.md)
+3. ⚠️ **Prossimi probabili**: ListPatients, ListDoctors, ListStudios, ListTreatments
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
 
 - Tutte le pagine che estendono `XotBaseListRecords` DEVONO implementare il metodo `getTableColumns()`.
 - Il metodo deve restituire un array associativo con chiavi stringa (nome campo).
 - Le colonne vanno ricavate dal modello e dalla migrazione, senza inventare campi.
 - Le etichette sono gestite solo tramite i file di traduzione del modulo (mai ->label()).
+<<<<<<< HEAD
 <<<<<<< HEAD
 - Badge colorati semantici per stati e tipi.
 - **Motivazione:** coerenza, automazione, DRY, compatibilità con TableLayoutEnum e HasXotTable.
@@ -526,6 +539,11 @@ Per dettagli e motivazioni vedi:
 **Fix implementato:** [ListAppointments getTableColumns](list_appointments_gettablecolumns_fix.md)
 
 >>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+=======
+- Badge colorati semantici per stati e tipi.
+- **Motivazione:** coerenza, automazione, DRY, compatibilità con TableLayoutEnum e HasXotTable.
+
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
 **Template obbligatorio:**
 ```php
 public function getTableColumns(): array

@@ -58,10 +58,14 @@ class Dentist extends BaseModel
         'tenant_id',
         'name',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'last_name',
 =======
         'surname',
 >>>>>>> 54f4fa16 (.)
+=======
+        'last_name',
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
         'email',
         'phone',
         'specialization',
@@ -99,10 +103,14 @@ class Dentist extends BaseModel
     public function getFullNameAttribute(): string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return "{$this->name} {$this->last_name}";
 =======
         return "{$this->name} {$this->surname}";
 >>>>>>> 54f4fa16 (.)
+=======
+        return "{$this->name} {$this->last_name}";
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
     }
 
     /**

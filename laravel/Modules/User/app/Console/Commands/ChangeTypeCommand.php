@@ -9,17 +9,23 @@ use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Illuminate\Support\Arr;
 use Symfony\Component\Console\Input\InputOption;
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
+=======
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
 
 use function Laravel\Prompts\text;
 use function Laravel\Prompts\select;
 
+<<<<<<< HEAD
 /**
  * Command to change user type based on project configuration.
  *
  * This command allows administrators to change the type of a user
  * by selecting from available child types in the system.
  */
+=======
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
 class ChangeTypeCommand extends Command
 {
     /**
@@ -33,10 +39,14 @@ class ChangeTypeCommand extends Command
      * The console command description.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var string
 =======
      * @var string|null
 >>>>>>> aurmich/dev
+=======
+     * @var string|null
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
      */
     protected $description = 'Change user type based on project configuration';
 
@@ -52,6 +62,7 @@ class ChangeTypeCommand extends Command
 
     /**
      * Execute the console command.
+<<<<<<< HEAD
      *
      * @return void
      */
@@ -69,12 +80,21 @@ class ChangeTypeCommand extends Command
 =======
         /** @var UserContract $user */
 >>>>>>> 345f8677 (phpstan)
+=======
+     */
+    public function handle(): void
+    {
+        $email = text('User email?');
+
+        /** @var UserContract */
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
         $user = XotData::make()->getUserByEmail($email);
 
         if (!$user) {
             $this->error("User with email '{$email}' not found.");
             return;
         }
+<<<<<<< HEAD
         if (!method_exists($user, 'getChildTypes')) {
             $this->error('User model does not have childTypes method.');
             return;
@@ -119,4 +139,38 @@ class ChangeTypeCommand extends Command
         
         $this->info("User type changed to '{$user->type->getLabel()}' for {$email}");
     }
+=======
+        if(!method_exists($user,'getChildTypes')){
+            $this->error('User model does not have childTypes method.');
+            return;
+        }
+        $childTypes = $user->getChildTypes();
+
+        $this->info("Current user type: {$user->type->getLabel()}");
+        $typeClass = get_class($user->type);
+        $options=Arr::mapWithKeys($childTypes,
+            function ($item, string $key) use($typeClass) {
+                $val=$typeClass::tryFrom($key)->getLabel();
+                return [$key => $val];
+            }
+        );
+        // Selezione del nuovo tipo
+
+        $newType = select('Select new user type:', $options);
+
+        // Salva il tipo precedente per il log
+        //$oldType = $this->getCurrentTypeValue($user);
+
+        // Aggiorna il tipo utente
+        $user->type = $newType;
+        $user->save();
+
+        $this->info("User type changed to '{$user->type->getLabel()}' for {$email}");
+
+        // Log dell'attività se disponibile
+        //$this->logActivity($user, $oldType, $newType);
+    }
+
+
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
 }

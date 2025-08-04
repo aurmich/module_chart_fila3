@@ -699,6 +699,7 @@ return array (
       'label' => 'Cognome',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'last_name',
       'helper_text' => 'last_name',
       'placeholder' => 'last_name',
@@ -756,6 +757,8 @@ return array (
       'description' => 'Il cognome anagrafico del paziente',
       'tooltip' => 'Deve corrispondere al cognome sul documento d\'identità',
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
     ),
     'fiscal_code' => 
     array (
@@ -1069,11 +1072,14 @@ return array (
     array (
       'label' => 'created_at',
     ),
+<<<<<<< HEAD
     'surname' => 
     array (
       'label' => 'surname',
     ),
 >>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
+=======
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
     'id' => 
     array (
       'label' => 'id',
@@ -1083,10 +1089,14 @@ return array (
       'label' => 'name',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
     'type' => 
     array (
       'label' => 'type',
     ),
+<<<<<<< HEAD
     'all_tenants' => 
     array (
       'label' => 'all_tenants',
@@ -1099,6 +1109,8 @@ return array (
 >>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
 =======
 >>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
+=======
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
   ),
   'steps' => 
   array (

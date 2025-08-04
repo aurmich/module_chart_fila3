@@ -9,6 +9,7 @@ use Filament\Tables;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\SaluteOra\Models\Doctor;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\SaluteOra\Filament\Resources\DoctorResource;
@@ -17,6 +18,12 @@ use Modules\SaluteOra\Filament\Resources\DoctorResource\Pages\ListDoctors;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\SaluteOra\Models\Doctor;
 >>>>>>> 2bcfd382 (fix Address)
+=======
+use Modules\SaluteOra\Models\Doctor;
+use Illuminate\Database\Eloquent\Builder;
+use Modules\SaluteOra\Filament\Resources\DoctorResource;
+use Modules\SaluteOra\Filament\Resources\DoctorResource\Pages\ListDoctors;
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 class DoctorsRelationManager extends XotBaseRelationManager
@@ -27,15 +34,20 @@ class DoctorsRelationManager extends XotBaseRelationManager
     protected static string $relationship = 'doctors';
     protected static ?string $inverseRelationship = 'studios';
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static string $resourceClass = DoctorResource::class;
 =======
 >>>>>>> 2bcfd382 (fix Address)
+=======
+    public static string $resourceClass = DoctorResource::class;
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
 
     /**
      * Get the form schema.
      */
     public function getFormSchema(): array
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         return static::$resourceClass::getFormSchema();
 =======
@@ -64,6 +76,9 @@ class DoctorsRelationManager extends XotBaseRelationManager
                 ->maxLength(50),
         ];
 >>>>>>> 2bcfd382 (fix Address)
+=======
+        return static::$resourceClass::getFormSchema();
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
     }
 
     /**
@@ -90,11 +105,8 @@ class DoctorsRelationManager extends XotBaseRelationManager
      */
     public function getTableColumns(): array
     {
-        return [
-            'first_name' => Tables\Columns\TextColumn::make('first_name')
-                ->searchable()
-                ->sortable(),
 
+<<<<<<< HEAD
             'last_name' => Tables\Columns\TextColumn::make('last_name')
                 ->searchable()
                 ->sortable(),
@@ -121,6 +133,9 @@ class DoctorsRelationManager extends XotBaseRelationManager
                 ->sortable(),
         ];
 >>>>>>> 2bcfd382 (fix Address)
+=======
+        return app(ListDoctors::class)->getTableColumns();
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
     }
 
     /**
@@ -207,6 +222,7 @@ class DoctorsRelationManager extends XotBaseRelationManager
                         }
                     )
 <<<<<<< HEAD
+<<<<<<< HEAD
 
                 )
 
@@ -219,6 +235,13 @@ class DoctorsRelationManager extends XotBaseRelationManager
             
                 
 >>>>>>> 2bcfd382 (fix Address)
+=======
+
+                )
+
+
+
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
         ];
     }
 }

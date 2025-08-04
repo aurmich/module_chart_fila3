@@ -22,7 +22,11 @@ Modulo principale per la gestione del sistema sanitario, inclusa la gestione di 
 
 ### Gestione Studi Medici
 - Creazione e gestione degli studi
+<<<<<<< HEAD
 - Gestione indirizzi multipli con componente AddressesField riutilizzabile
+=======
+- Gestione indirizzi multipli con logica intelligente
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
 - Specializzazioni mediche
 - Orari di apertura configurabili
 
@@ -38,6 +42,7 @@ Modulo principale per la gestione del sistema sanitario, inclusa la gestione di 
 - Disponibilità medici
 - Calendario delle visite
 
+<<<<<<< HEAD
 ## Componenti Riutilizzabili
 
 ### AddressesField - Gestione DRY degli Indirizzi
@@ -64,6 +69,11 @@ Il modulo utilizza il componente riutilizzabile `AddressesField` del modulo Geo 
 ## Implementazioni UX Avanzate
 
 ### Campi Condizionali Intelligenti (OpeningHoursField)
+=======
+## Implementazioni UX Avanzate
+
+### Campi Condizionali Intelligenti (StudioResource)
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
 
 Il modulo implementa un pattern UX avanzato per i repeater con campi condizionali e logica di esclusività.
 
@@ -498,9 +508,15 @@ Se il modulo viene installato come package, assicurati che il ServiceProvider si
 - [Documentazione Laravel Blade Components](https://laravel.com/docs/12.x/blade#manually-registering-components)
 - [Esempio di registrazione namespace Blade](https://laravel.com/docs/12.x/blade#registering-package-components)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
 
 ---
 
 *Ultimo aggiornamento: Dicembre 2024*
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)

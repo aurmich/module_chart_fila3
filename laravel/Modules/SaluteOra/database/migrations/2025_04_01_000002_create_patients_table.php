@@ -32,8 +32,12 @@ return new class extends XotBaseMigration
                 $table->foreignIdFor(Tenant::class)->constrained()
                     ->onDelete('cascade')->onUpdate('cascade');
                 $table->string('name');
+<<<<<<< HEAD
                 $table->string('surname');
 >>>>>>> 54f4fa16 (.)
+=======
+                $table->string('last_name');
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
                 $table->string('fiscal_code')->nullable()->unique();
                 $table->date('birth_date')->nullable();
                 $table->string('phone')->nullable();
@@ -58,7 +62,7 @@ return new class extends XotBaseMigration
                 }
             }
         );
-        
+
         // -- UPDATE --
         $this->tableUpdate(
             function (Blueprint $table): void {

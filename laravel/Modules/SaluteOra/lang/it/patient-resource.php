@@ -34,9 +34,13 @@ return [
             'label' => 'Cognome',
             'placeholder' => 'Inserisci il cognome',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'Inserisci il cognome completo',
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+            'help' => 'Inserisci il cognome completo',
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
         ],
         'address' => [
             'label' => 'Indirizzo',
@@ -128,7 +132,11 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 ];
 =======
 ]; 
 >>>>>>> 54f4fa16 (.)
+=======
+];
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
