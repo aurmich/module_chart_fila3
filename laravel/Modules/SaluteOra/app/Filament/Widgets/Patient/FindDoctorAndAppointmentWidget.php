@@ -251,6 +251,9 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
     public function previousMonth(): void
     {
         $currentDate = Carbon::createFromFormat('Y-m', $this->currentCalendarMonth);
+        if(!$currentDate){
+            return;
+        }
         $this->currentCalendarMonth = $currentDate->subMonthNoOverflow()->format('Y-m');
         
         // ✅ Refresh del form per aggiornare il calendario
@@ -263,6 +266,9 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
     public function nextMonth(): void
     {
         $currentDate = Carbon::createFromFormat('Y-m', $this->currentCalendarMonth);
+        if(!$currentDate){
+            return;
+        }
         $this->currentCalendarMonth = $currentDate->addMonthNoOverflow()->format('Y-m');
         
         // ✅ Refresh del form per aggiornare il calendario
@@ -326,6 +332,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                     $this->getStepByName('availability_step')
                         ->icon('heroicon-o-user-circle'),
@@ -334,6 +341,11 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
                     $this->getStepByName('confirm_step')
                         ->icon('heroicon-o-check-circle')
+=======
+                        
+                    //$this->getStepByName('confirm_step')
+                    //    ->icon('heroicon-o-check-circle')
+>>>>>>> c99763dd (✨ (studio-filter-widget-lessons.mdc): add comprehensive guidelines and patterns for StudioFilterWidget to enhance code quality and maintainability)
                 ])
                 ->submitAction($this->getWizardSubmitAction())
                     /*Action::make('submit')
@@ -1187,7 +1199,9 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
                 ->enabledDates(fn(Get $get)=>$this->getEnabledDates($get))
 >>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
                 ->view('pub_theme::filament.forms.components.inline-date-picker')
-                ->currentViewMonth($this->getCurrentCalendarMonth()),
+                ->currentViewMonth($this->getCurrentCalendarMonth())
+                //->afterStateUpdated(fn($state)=>dd($state))
+                ,
             
             'appointment_time'=>  RadioCollection::make('appointment_time')
                 ->options(fn(Get $get) => $this->getAvailableTimeSlots($get)) // La tua collection

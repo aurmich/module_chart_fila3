@@ -21,9 +21,13 @@ use Modules\Xot\Filament\Traits\TransTrait;
  * Pagina di elenco per le risorse MixedChart.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @phpstan-import-type MixedChart from \Modules\Chart\Models\MixedChart
 >>>>>>> 54f4fa16 (.)
+=======
+ * @phpstan-import-type MixedChartArray from \Modules\Chart\Models\MixedChart
+>>>>>>> c99763dd (✨ (studio-filter-widget-lessons.mdc): add comprehensive guidelines and patterns for StudioFilterWidget to enhance code quality and maintainability)
  */
 class ListMixedCharts extends XotBaseListRecords
 {

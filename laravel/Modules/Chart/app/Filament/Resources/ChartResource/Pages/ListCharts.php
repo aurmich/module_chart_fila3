@@ -21,9 +21,13 @@ use Modules\Xot\Filament\Traits\TransTrait;
  * Pagina di elenco per le risorse Chart.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @phpstan-import-type Chart from \Modules\Chart\Models\Chart
 >>>>>>> 54f4fa16 (.)
+=======
+ * @phpstan-import-type ChartArray from \Modules\Chart\Models\Chart
+>>>>>>> c99763dd (✨ (studio-filter-widget-lessons.mdc): add comprehensive guidelines and patterns for StudioFilterWidget to enhance code quality and maintainability)
  */
 class ListCharts extends XotBaseListRecords
 {
