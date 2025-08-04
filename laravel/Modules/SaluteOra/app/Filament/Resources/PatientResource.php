@@ -79,14 +79,15 @@ use Modules\Xot\Contracts\UserContract;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Wizard\Step;
+use Modules\SaluteOra\Enums\NationalityEnum;
 use Filament\Forms\Concerns\InteractsWithForms;
 <<<<<<< HEAD
 use Livewire\Component;
 >>>>>>> 54f4fa16 (.)
 =======
 use Modules\Xot\Actions\View\GetViewPathAction;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Patient\Filament\Components\HealthCardUpload;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
@@ -94,6 +95,7 @@ use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 >>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
 =======
 use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
+use Tapp\FilamentCountryCodeField\Forms\Components\CountryCodeSelect;
 use Modules\Media\Filament\Resources\PatientResource\Pages\PreviewAttachment;
 >>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 
@@ -283,6 +285,19 @@ class PatientResource extends XotBaseResource
                 ->maxLength(255),
             Forms\Components\TextInput::make('city')
                 ->maxLength(255),
+            Forms\Components\Select::make('nationality')
+                ->options(NationalityEnum::class)
+                ->reactive()
+                //->live()
+                ,
+            CountryCodeSelect::make('country_code')
+                ->label(static::trans('country_code.label'))
+                ->visible(function (Get $get): bool {
+                    if($get('nationality')=='EE'){
+                        return true;
+                    }
+                    return false;
+                }),
             Forms\Components\TextInput::make('phone')
                 ->tel()
                 ->maxLength(255),
@@ -291,6 +306,7 @@ class PatientResource extends XotBaseResource
                 ->required()
                 ->maxLength(255)
                 ->unique(Patient::class),
+            
         ];
     }
 
