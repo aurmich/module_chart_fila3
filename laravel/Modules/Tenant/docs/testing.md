@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7928ba32 (📝 (README.md): add best practices for Modular Monolith architecture)
 # Testing nel Modulo Tenant
 
 ## Introduzione
@@ -254,9 +257,12 @@ jobs:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 7928ba32 (📝 (README.md): add best practices for Modular Monolith architecture)
 # phpunit.xml
 <coverage>
     <include>
@@ -287,6 +293,9 @@ jobs:
 - [Struttura del Modulo](structure.md)
 - [Best Practices](README.md#best-practices)
 - [Documentazione PHPUnit](https://phpunit.de/documentation.html) 
+<<<<<<< HEAD
 =======
  
 >>>>>>> eec4376e (📝 (README.md): update documentation to provide a comprehensive overview of the Tenant module and its architecture, principles, best practices, and integration guidelines to enhance understanding for developers)
+=======
+>>>>>>> 7928ba32 (📝 (README.md): add best practices for Modular Monolith architecture)

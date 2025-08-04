@@ -129,6 +129,7 @@ Tenant/
 ```
 
 ## Best Practices (aggiornate 2025)
+<<<<<<< HEAD
 
 ### 1. Isolamento
 - Ogni modulo deve essere il più possibile indipendente
@@ -334,56 +335,42 @@ Tenant/
 ```
 
 ## Best Practices
+=======
+>>>>>>> 7928ba32 (📝 (README.md): add best practices for Modular Monolith architecture)
 
 ### 1. Isolamento
-
 - Ogni modulo deve essere il più possibile indipendente
 - Evitare dipendenze circolari tra moduli
 - Utilizzare eventi per la comunicazione tra moduli
 - Definire interfacce chiare per l'interazione tra moduli
+- **Non accedere mai direttamente agli internals di altri moduli**
 
 ### 2. Gestione delle Dipendenze
-
-```php
-// Service Provider del modulo
-public function register()
-{
-    $this->app->bind(TenantRepositoryInterface::class, TenantRepository::class);
-    $this->app->bind(TenantServiceInterface::class, TenantService::class);
-}
-```
+- Usare service provider per registrare binding e servizi
+- Dipendere sempre da contracts/interfacce, mai da classi concrete di altri moduli
+- Comunicare tramite eventi o contracts
 
 ### 3. Eventi e Listener
-
-```php
-// Evento
-class TenantCreated
-{
-    public function __construct(public Tenant $tenant)
-    {
-    }
-}
-
-// Listener
-class HandleTenantCreated
-{
-    public function handle(TenantCreated $event): void
-    {
-        // Logica di gestione
-    }
-}
-```
+- Preferire eventi per la comunicazione asincrona tra moduli
+- Ogni modulo può ascoltare eventi di altri moduli tramite listener
 
 ### 4. Contracts e Interfacce
+- Esporre solo ciò che è necessario tramite contracts
+- Nascondere la logica interna del modulo
 
-```php
-interface TenantRepositoryInterface
-{
-    public function findById(int $id): ?Tenant;
-    public function create(array $data): Tenant;
-    public function update(Tenant $tenant, array $data): bool;
-}
-```
+### 5. Shared Kernel
+- Mantenere il kernel condiviso piccolo e stabile
+- Usare solo per costanti, enum, value object comuni
+
+### 6. Testing
+- Testare la logica di dominio e i casi d'uso in puro PHP
+- Usare test di integrazione per la comunicazione tra moduli
+
+### 7. Transizione e Manutenzione
+- Migrare gradualmente verso la struttura a livelli
+- Documentare ogni passaggio e aggiornamento
+
+---
 
 ## Integrazione con Altri Moduli
 

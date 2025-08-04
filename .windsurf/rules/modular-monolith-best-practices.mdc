@@ -1,6 +1,7 @@
 ---
 description:
 globs:
+<<<<<<< HEAD
 alwaysApply: true
 ---
 # Modular Monolith Best Practices (Laravel)
@@ -62,3 +63,7 @@ Event::listen(TenantCreated::class, fn($event) => ...);
 - [Xot/docs/structure.md](mdc:../../laravel/Modules/Xot/docs/structure.md)
 - [User/docs/structure.md](mdc:../../laravel/Modules/User/docs/structure.md)
 - [Articolo di riferimento](mdc:https:/medium.com/@mohamadshahkhajeh/architecting-laravel-the-right-way-modular-monoliths-done-right-%EF%B8%8F-62d30a8b0efd)
+=======
+alwaysApply: false
+---
+>>>>>>> 7928ba32 (📝 (README.md): add best practices for Modular Monolith architecture)

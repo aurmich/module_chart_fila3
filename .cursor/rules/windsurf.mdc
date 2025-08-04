@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 description: 
 globs: 
 alwaysApply: true
@@ -63,3 +64,9 @@ module.exports = {
 
 ## Ultimo aggiornamento
 2025-05-13
+=======
+description:
+globs:
+alwaysApply: false
+---
+>>>>>>> 7928ba32 (📝 (README.md): add best practices for Modular Monolith architecture)
