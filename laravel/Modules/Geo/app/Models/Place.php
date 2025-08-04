@@ -14,30 +14,18 @@ use Modules\Geo\Database\Factories\PlaceFactory;
 use function Safe\json_encode;
 
 /**
-<<<<<<< HEAD
  * @property-read \Modules\Geo\Models\Address|null $address
  * @property-read \Modules\User\Models\Profile|null $creator
-=======
- * 
- *
- * @property-read \Modules\Geo\Models\Address|null $address
- * @property-read \Modules\SaluteOra\Models\Profile|null $creator
->>>>>>> aurmich/dev
  * @property-read string $formatted_address
  * @property-read float|null $latitude
  * @property-read float|null $longitude
  * @property-read \Illuminate\Database\Eloquent\Model $linked
  * @property-read \Modules\Geo\Models\PlaceType|null $placeType
-<<<<<<< HEAD
  * @property-read \Modules\User\Models\Profile|null $updater
-=======
- * @property-read \Modules\SaluteOra\Models\Profile|null $updater
->>>>>>> aurmich/dev
  * @method static \Modules\Geo\Database\Factories\PlaceFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Place newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Place newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Place query()
-<<<<<<< HEAD
  * @property int $id
  * @property string|null $model_type
  * @property int|null $model_id
@@ -62,8 +50,6 @@ use function Safe\json_encode;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Place wherePostType($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Place whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Place whereUpdatedBy($value)
-=======
->>>>>>> aurmich/dev
  * @mixin \Eloquent
  */
 class Place extends BaseModel implements HasGeolocation
@@ -100,7 +86,6 @@ class Place extends BaseModel implements HasGeolocation
         'nearest_street', 'extra_data',
     ];
 
-<<<<<<< HEAD
     /**
      * Get the attributes that should be cast.
      *
@@ -114,13 +99,6 @@ class Place extends BaseModel implements HasGeolocation
             'extra_data' => 'array',
         ];
     }
-=======
-    protected $casts = [
-        'latitude' => 'float',
-        'longitude' => 'float',
-        'extra_data' => 'array',
-    ];
->>>>>>> aurmich/dev
 
     /**
      * @return MorphTo<Model, self>

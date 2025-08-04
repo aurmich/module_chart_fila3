@@ -93,11 +93,7 @@ abstract class BaseGeoService
             if ($useCache && config('geo.cache.enabled')) {
                 /** @var int $ttl */
                 $ttl = config('geo.cache.ttl', 86400);
-<<<<<<< HEAD
                 Cache::put($cacheKey, $validatedData, $ttl);
-=======
-                Cache::put($cacheKey, $data, $ttl);
->>>>>>> 345f8677 (phpstan)
             }
 
             return $validatedData;

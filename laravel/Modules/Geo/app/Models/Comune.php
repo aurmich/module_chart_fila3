@@ -35,13 +35,8 @@ use Modules\Tenant\Models\Traits\SushiToJson;
  * @property array<array-key, mixed>|null $zona
  * @property string|null $sigla
  * @property string|null $codiceCatastale
-<<<<<<< HEAD
  * @property-read \Modules\User\Models\Profile|null $creator
  * @property-read \Modules\User\Models\Profile|null $updater
-=======
- * @property-read \Modules\SaluteOra\Models\Profile|null $creator
- * @property-read \Modules\SaluteOra\Models\Profile|null $updater
->>>>>>> aurmich/dev
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Comune newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Comune newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Comune query()
@@ -61,29 +56,13 @@ class Comune extends BaseModel
 {
     use SushiToJson;
 
-<<<<<<< HEAD
     public string $jsonDirectory='';
-=======
->>>>>>> aurmich/dev
 
     /** @var array<int, string> */
     public $translatable = [
     ];
-<<<<<<< HEAD
-<<<<<<< HEAD
     
     /** @var list<string> */
-=======
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
->>>>>>> aurmich/dev
-=======
-    
-    /** @var list<string> */
->>>>>>> 345f8677 (phpstan)
     protected $fillable = [
         'id',
         'codice',
@@ -147,10 +126,7 @@ class Comune extends BaseModel
      */
     public static function getRegioni(): Collection
     {
-<<<<<<< HEAD
         /** @phpstan-ignore return.type */
-=======
->>>>>>> aurmich/dev
         return static::all()->pluck('regione')->unique()->sort()->values();
     }
 
@@ -162,10 +138,7 @@ class Comune extends BaseModel
      */
     public static function getProvinceByRegione(string $regione): Collection
     {
-<<<<<<< HEAD
         /** @phpstan-ignore return.type */
-=======
->>>>>>> aurmich/dev
         return static::where('regione', $regione)
             ->pluck('provincia')
             ->unique()
@@ -181,10 +154,7 @@ class Comune extends BaseModel
      */
     public static function getComuniByProvincia(string $provincia): Collection
     {
-<<<<<<< HEAD
         /** @phpstan-ignore return.type */
-=======
->>>>>>> aurmich/dev
         return static::where('provincia', $provincia)
             ->orderBy('nome')
             ->get();
@@ -198,10 +168,7 @@ class Comune extends BaseModel
      */
     public static function findByNome(string $nome): ?self
     {
-<<<<<<< HEAD
         /** @phpstan-ignore return.type */
-=======
->>>>>>> aurmich/dev
         return static::all()->first(function ($comune) use ($nome) {
             return strtolower($comune->nome) === strtolower($nome);
         });
@@ -215,10 +182,7 @@ class Comune extends BaseModel
      */
     public static function findByCap(string $cap): Collection
     {
-<<<<<<< HEAD
         /** @phpstan-ignore return.type */
-=======
->>>>>>> aurmich/dev
         return static::where('cap', 'like', "%{$cap}%")->get();
     }
 
@@ -231,11 +195,8 @@ class Comune extends BaseModel
     public static function findComune(int $id): ?array
     {
         $comune = static::query()->where('id', $id)->first();
-<<<<<<< HEAD
         
         /** @phpstan-ignore return.type */
-=======
->>>>>>> aurmich/dev
         return $comune ? $comune->toArray() : null;
     }
 

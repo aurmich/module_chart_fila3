@@ -44,7 +44,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|Location newModelQuery()
  * @method static Builder<static>|Location newQuery()
  * @method static Builder<static>|Location withinDistance(float $latitude, float $longitude, float $distanceInKm)
-<<<<<<< HEAD
  * @method static Builder<static>|Location whereCreatedAt($value)
  * @method static Builder<static>|Location whereCreatedBy($value)
  * @method static Builder<static>|Location whereDeletedAt($value)
@@ -58,8 +57,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|Location whereStreet($value)
  * @method static Builder<static>|Location whereUpdatedAt($value)
  * @method static Builder<static>|Location whereUpdatedBy($value)
-=======
->>>>>>> aurmich/dev
  * @mixin \Eloquent
  */
 class Location extends BaseModel
@@ -81,7 +78,6 @@ class Location extends BaseModel
         'location',
     ];
 
-<<<<<<< HEAD
     /**
      * Get the attributes that should be cast.
      *
@@ -95,13 +91,6 @@ class Location extends BaseModel
             'processed' => 'bool',
         ];
     }
-=======
-    protected $casts = [
-        'lat' => 'float',
-        'lng' => 'float',
-        'processed' => 'bool',
-    ];
->>>>>>> aurmich/dev
 
     /**
      * Accessor for the "location" attribute.

@@ -33,11 +33,7 @@ class GeoNamesCap extends Model
      */
     /*
     function __construct(){
-<<<<<<< HEAD
         $this->setConnection('user');
-=======
-        $this->setConnection('liveuser_general');
->>>>>>> aurmich/dev
         parent::__construct();
     }//end construct
     */

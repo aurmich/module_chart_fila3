@@ -9,10 +9,7 @@ use Filament\Forms\Get;
 use Filament\Forms\Set;
 use Filament\Forms\Components\Component;
 use Modules\Geo\Filament\Resources\AddressResource;
-<<<<<<< HEAD
 use function Safe\preg_match;
-=======
->>>>>>> aurmich/dev
 
 /**
  * Componente riutilizzabile per la gestione di indirizzi multipli.
@@ -58,10 +55,7 @@ class AddressesField extends Forms\Components\Repeater
             ->maxLength(255)
             ->visible(function (Get $get): bool {
                 $addresses = $get('../../addresses') ?? [];
-<<<<<<< HEAD
                 /** @phpstan-ignore argument.type */
-=======
->>>>>>> aurmich/dev
                 return count($addresses) > 1;
             })
             ->live();
@@ -70,19 +64,13 @@ class AddressesField extends Forms\Components\Repeater
         $baseSchema['is_primary'] = Forms\Components\Toggle::make('is_primary')
             ->visible(function (Get $get): bool {
                 $addresses = $get('../../addresses') ?? [];
-<<<<<<< HEAD
                 /** @phpstan-ignore argument.type */
-=======
->>>>>>> aurmich/dev
                 return count($addresses) > 1;
             })
             ->default(function (Get $get): bool {
                 $addresses = $get('../../addresses') ?? [];
                 // Se è il primo elemento o c'è un solo elemento, default true
-<<<<<<< HEAD
                 /** @phpstan-ignore argument.type */
-=======
->>>>>>> aurmich/dev
                 return count($addresses) <= 1;
             })
             ->afterStateUpdated(function ($state, $set, Get $get, Component $component): void {
@@ -97,18 +85,12 @@ class AddressesField extends Forms\Components\Repeater
 
                     if ($currentIndex !== null) {
                         // Disattiva is_primary negli altri elementi
-<<<<<<< HEAD
                         /** @phpstan-ignore foreach.nonIterable */
                         foreach ($addresses as $index => $address) {
                             $indexStr = app(\Modules\Xot\Actions\Cast\SafeStringCastAction::class)->execute($index);
                             $currentIndexStr = app(\Modules\Xot\Actions\Cast\SafeStringCastAction::class)->execute($currentIndex);
                             if ($indexStr !== $currentIndexStr) {
                                 $set("../../addresses." . $indexStr . ".is_primary", false);
-=======
-                        foreach ($addresses as $index => $address) {
-                            if ((string)$index !== (string)$currentIndex) {
-                                $set("../../addresses.{$index}.is_primary", false);
->>>>>>> aurmich/dev
                             }
                         }
                     }
@@ -118,10 +100,7 @@ class AddressesField extends Forms\Components\Repeater
             ->dehydrateStateUsing(function ($state, Get $get): bool {
                 $addresses = $get('../../addresses') ?? [];
                 // Se c'è un solo elemento, forza sempre true
-<<<<<<< HEAD
                 /** @phpstan-ignore argument.type */
-=======
->>>>>>> aurmich/dev
                 if (count($addresses) <= 1) {
                     return true;
                 }

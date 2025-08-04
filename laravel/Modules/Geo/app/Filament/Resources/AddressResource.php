@@ -60,30 +60,15 @@ class AddressResource extends XotBaseResource
                     ->columnSpan(2),
                 
                 "administrative_area_level_1" => Select::make('administrative_area_level_1')
-<<<<<<< HEAD
                     
                     ->options(fn(Get $get)=>Region::getOptions($get))
-=======
-                    ->options(function () {
-                        return Comune::select("regione")
-                            ->distinct()
-                            ->orderBy("regione->nome")
-                            ->get()
-                            ->pluck("regione.nome", "regione.codice")
-
-                            ->toArray();
-                    })
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
                     ->searchable()
                     ->required()
                     ->live()
                     ->afterStateUpdated(function (Set $set) {
                         $set("administrative_area_level_2", null);
-<<<<<<< HEAD
                         $set("locality", null);
                         $set("postal_code", null);
-=======
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
                         $set("cap", null);
                     }),
                 
@@ -101,7 +86,6 @@ class AddressResource extends XotBaseResource
                     ->disabled(fn (Get $get) => !$get('administrative_area_level_1') )
                 ,
                
-<<<<<<< HEAD
 
                 'locality' => Select::make('locality')
                     ->options(fn(Get $get)=>Locality::getOptions($get))
@@ -112,8 +96,6 @@ class AddressResource extends XotBaseResource
                     ->afterStateUpdated(function (Set $set){
                         $set('postal_code', null);
                     }),
-=======
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 
                 'postal_code' => Select::make('postal_code')
                     ->options(fn(Get $get)=>Locality::getPostalCodeOptions($get))
@@ -122,31 +104,6 @@ class AddressResource extends XotBaseResource
                     ->live()
                     ->disabled(fn (Get $get) => !$get('administrative_area_level_1') || !$get('administrative_area_level_2')),
 
-<<<<<<< HEAD
-            
-=======
-                   
-                    'postal_code' => Select::make('postal_code')
-                    ->options(function (Get $get) {
-                        $region = $get('administrative_area_level_1');
-                        if (!$region) {
-                            return [];
-                        }
-                        $province = $get('administrative_area_level_2');
-                        if (!$province) {
-                            return [];
-                        }
-                        $city = $get('locality');
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
-
-            
-                "route" => Forms\Components\TextInput::make("route")
-                    ->required()
-                    ->maxLength(255)
-                    ,
-
-<<<<<<< HEAD
-=======
             
 
             
@@ -155,7 +112,6 @@ class AddressResource extends XotBaseResource
                     ->maxLength(255)
                     ,
 
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
                 "street_number" => Forms\Components\TextInput::make("street_number")
                     ->maxLength(20)
                     ,
@@ -174,18 +130,8 @@ class AddressResource extends XotBaseResource
         return [
             "region" => Select::make("region")
                 ->options(function () {
-<<<<<<< HEAD
                    
                     return Region::orderBy('name')->get()->pluck("name", "id");
-=======
-                    return Comune::select("regione")
-                        ->distinct()
-                        ->orderBy("regione->nome")
-                        ->get()
-                        ->pluck("regione.nome", "regione.codice")
-
-                        ->toArray();
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
                 })
                 ->searchable()
                 ->required()
@@ -200,23 +146,12 @@ class AddressResource extends XotBaseResource
                     if (!$region) {
                         return [];
                     }
-<<<<<<< HEAD
                    
                     $res=Province::where('region_id',$region)
                     ->orderBy('name')
                     ->get()
                     ->pluck("name", "id")
                     ->toArray();
-=======
-                    $res = Comune::query()
-                        ->where("regione->codice", $region)
-                        ->select("provincia")
-                        ->distinct()
-                        ->orderBy("provincia->nome")
-                        ->get()
-                        ->pluck("provincia.nome", "provincia.codice")
-                        ->toArray();
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
                     return $res;
                 })
                 ->searchable()
@@ -233,7 +168,6 @@ class AddressResource extends XotBaseResource
                     if (!$province) {
                         return [];
                     }
-<<<<<<< HEAD
                     
                     $res=Locality::query()
                         ->where('region_id', $region)
@@ -244,16 +178,6 @@ class AddressResource extends XotBaseResource
                         ->orderBy('postal_code')
                         ->get()
                         ->pluck('postal_code', 'postal_code')
-=======
-                    $res = Comune::query()
-                        ->where("regione->codice", $region)
-                        ->where("provincia->codice", $province)
-                        ->select("cap")
-                        ->distinct()
-                        ->orderBy("cap")
-                        ->get()
-                        ->pluck("cap.0", "cap.0")
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
                         ->toArray();
                     return $res;
                 })
@@ -426,163 +350,6 @@ class AddressResource extends XotBaseResource
         ];
     }
 
-<<<<<<< HEAD
    
    
-=======
-    /**
-     * @return array<string, mixed>
-     */
-    public static function getTableBulkActions(): array
-    {
-        return [
-            "delete" => Tables\Actions\BulkActionGroup::make([
-                Tables\Actions\DeleteBulkAction::make(),
-            ]),
-        ];
-    }
-
-    public static function table(Table $table): Table
-    {
-        return $table
-            ->columns(array_values(static::getTableColumns()))
-            ->filters(array_values(static::getTableFilters()))
-            ->actions(array_values(static::getTableActions()))
-            ->bulkActions(array_values(static::getTableBulkActions()));
-    }
-
-    /**
-     * @return array<\Filament\Infolists\Components\IconEntry>
-     */
-    public static function getInfolistSchema(): array
-    {
-        return [
-            Infolists\Components\Section::make(
-                "address.sections.metadata.label"
-            )
-                ->description("address.sections.metadata.description")
-                ->schema([
-                    Infolists\Components\TextEntry::make("name"),
-                    Infolists\Components\TextEntry::make("description"),
-                    Infolists\Components\TextEntry::make("type")
-                        ->badge()
-                        ->formatStateUsing(
-                            fn(string $state): string => match ($state) {
-                                AddressTypeEnum::BILLING->value
-                                    => "Fatturazione",
-                                AddressTypeEnum::SHIPPING->value
-                                    => "Spedizione",
-                                AddressTypeEnum::HOME->value => "Casa",
-                                AddressTypeEnum::WORK->value => "Lavoro",
-                                AddressTypeEnum::OTHER->value => "Altro",
-                                default => $state,
-                            }
-                        )
-                        ->colors([
-                            "primary" => fn(string $state): bool => $state ===
-                                AddressTypeEnum::BILLING->value,
-                            "success" => fn(string $state): bool => $state ===
-                                AddressTypeEnum::SHIPPING->value,
-                            "info" => fn(string $state): bool => $state ===
-                                AddressTypeEnum::HOME->value,
-                            "warning" => fn(string $state): bool => $state ===
-                                AddressTypeEnum::WORK->value,
-                            "gray" => fn(string $state): bool => $state ===
-                                AddressTypeEnum::OTHER->value,
-                        ]),
-                    Infolists\Components\TextEntry::make("is_primary")
-                        ->badge()
-                        ->color(
-                            fn(bool $state): string => $state
-                                ? "success"
-                                : "gray"
-                        )
-                        ->formatStateUsing(
-                            fn(bool $state): string => $state
-                                ? "Principale"
-                                : "Secondario"
-                        ),
-                ]),
-
-            Infolists\Components\Section::make("address.sections.address.label")
-                ->description("address.sections.address.description")
-                ->schema([
-                    Infolists\Components\TextEntry::make("full_address"),
-                    Infolists\Components\Grid::make()->schema([
-                        Infolists\Components\TextEntry::make("route")->label(
-                            "address.fields.route.label"
-                        ),
-                        Infolists\Components\TextEntry::make(
-                            "street_number"
-                        )->label("address.fields.street_number.label"),
-                    ]),
-                    Infolists\Components\Grid::make()->schema([
-                        Infolists\Components\TextEntry::make("locality")->label(
-                            "address.fields.locality.label"
-                        ),
-                        Infolists\Components\TextEntry::make(
-                            "postal_code"
-                        )->label("address.fields.postal_code.label"),
-                    ]),
-                    Infolists\Components\Grid::make()->schema([
-                        Infolists\Components\TextEntry::make(
-                            "administrative_area_level_3"
-                        )->label(
-                            "address.fields.administrative_area_level_3.label"
-                        ),
-                        Infolists\Components\TextEntry::make(
-                            "administrative_area_level_2"
-                        )->label(
-                            "address.fields.administrative_area_level_2.label"
-                        ),
-                    ]),
-                    Infolists\Components\Grid::make()->schema([
-                        Infolists\Components\TextEntry::make(
-                            "administrative_area_level_1"
-                        )->label(
-                            "address.fields.administrative_area_level_1.label"
-                        ),
-                        Infolists\Components\TextEntry::make("country")->label(
-                            "address.fields.country.label"
-                        ),
-                    ]),
-                ]),
-
-            Infolists\Components\Section::make(
-                "address.sections.location.label"
-            )
-                ->description("address.sections.location.description")
-                ->schema([
-                    Infolists\Components\Grid::make()->schema([
-                        Infolists\Components\TextEntry::make("latitude")->label(
-                            "address.fields.latitude.label"
-                        ),
-                        Infolists\Components\TextEntry::make(
-                            "longitude"
-                        )->label("address.fields.longitude.label"),
-                    ]),
-                    Infolists\Components\TextEntry::make("place_id")->label(
-                        "address.fields.place_id.label"
-                    ),
-                    Infolists\Components\TextEntry::make(
-                        "formatted_address"
-                    )->label("address.fields.formatted_address.label"),
-                ]),
-
-            Infolists\Components\Section::make("address.sections.map.label")
-                ->description("address.sections.map.description")
-                ->schema([
-                    Infolists\Components\TextEntry::make("map_notice")
-                        ->label("Nota sulla mappa")
-                        ->formatStateUsing(
-                            fn(
-                                Address $record
-                            ): string => "Coordinate: {$record->latitude}, {$record->longitude}\n\n" .
-                                "Per visualizzare la mappa è necessario configurare una chiave API Google Maps valida."
-                        )
-                        ->columnSpanFull(),
-                ]),
-        ];
-    }
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 }
