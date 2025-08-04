@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -318,3 +319,22 @@ return [
         ],
     ],
 ];
+=======
+return array (
+  'actions' => 
+  array (
+    'info' => 
+    array (
+      'label' => 'info',
+    ),
+    'confirmAction' => 
+    array (
+      'label' => 'confirmAction',
+    ),
+    'rejectAction' => 
+    array (
+      'label' => 'rejectAction',
+    ),
+  ),
+);
+>>>>>>> 4c10a600 (trans)
