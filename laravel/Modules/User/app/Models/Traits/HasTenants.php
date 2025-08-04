@@ -63,9 +63,9 @@ trait HasTenants
      **/
     public function canAccessTenant(Model $tenant): bool
     {
-        // return $this->teams->contains($tenant);
+
         return $this->tenants()->whereKey($tenant)->exists();
-        // return true;
+
     }
 
     public function getTenants(Panel $panel): array|Collection
@@ -77,10 +77,14 @@ trait HasTenants
     /**
      * Get all of the tenants the user belongs to.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany<\Illuminate\Database\Eloquent\Model, \Illuminate\Database\Eloquent\Relations\Pivot>
 =======
      * 
+=======
+     *
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany<\Illuminate\Database\Eloquent\Model>
 >>>>>>> 54f4fa16 (.)
      */
@@ -97,7 +101,8 @@ trait HasTenants
         $tenant_class = $xot->getTenantClass();
 
         // $this->setConnection('mysql');
-        return $this->belongsToManyX($tenant_class, null, null, 'tenant_id');
+        //return $this->belongsToManyX($tenant_class, null, null, 'tenant_id');
+        return $this->belongsToManyX($tenant_class);
         // ->as('membership')
 >>>>>>> 54f4fa16 (.)
     }

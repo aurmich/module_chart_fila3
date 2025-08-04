@@ -214,7 +214,6 @@ class Patient extends User implements HasMedia
  */
 class Patient extends User
 {
-    use HasFactory;
     use HasParent;
 
 
@@ -313,6 +312,7 @@ class Patient extends User
         ];
     }
 
+<<<<<<< HEAD
     /**
 <<<<<<< HEAD
      * Registra le conversioni per i media
@@ -448,16 +448,7 @@ class Patient extends User
         return parent::belongsTo(User::class, 'user_id');
 >>>>>>> 54f4fa16 (.)
     }
+=======
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
 
-    /**
-     * Verifica se il paziente ha dati validi per la transizione di stato.
-     *
-     * @return bool
-     */
-    public function hasValidData(): bool
-    {
-        return parent::hasValidData() &&
-            !empty($this->date_of_birth) &&
-            !empty($this->gender);
-    }
 }

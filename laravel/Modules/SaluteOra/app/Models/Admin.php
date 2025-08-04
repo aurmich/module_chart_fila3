@@ -10,6 +10,7 @@ use Parental\HasParent;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Class Admin
  * 
  * NOTA: Il trait HasFactory è stato rimosso perché già incluso nella catena di ereditarietà (BaseUser -> User -> Admin).
@@ -18,6 +19,13 @@ use Parental\HasParent;
 =======
  * Class Patient
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+ * Class Admin
+ *
+ * NOTA: Il trait HasFactory è stato rimosso perché già incluso nella catena di ereditarietà (BaseUser -> User -> Admin).
+ * Dichiararlo qui è ridondante e può causare warning o confusione.
+ * Vedi docs/DRY-model-traits.md
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
  *
  * @property string $id
  * @property string $user_id
@@ -31,6 +39,9 @@ use Parental\HasParent;
  * @property string|null $updated_by
  * @property-read \Modules\SaluteOra\Models\User|null $user
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
  * @method static \Illuminate\Database\Eloquent\Builder|Admin newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Admin newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Admin query()
@@ -44,6 +55,7 @@ use Parental\HasParent;
  * @method static \Illuminate\Database\Eloquent\Builder|Admin whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Admin whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Admin whereUserId($value)
+<<<<<<< HEAD
  * @property string|null $name
  * @property string|null $first_name
  * @property string|null $last_name
@@ -191,10 +203,13 @@ use Parental\HasParent;
  * @method static \Illuminate\Database\Eloquent\Builder|Patient whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Patient whereUserId($value)
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
  * @mixin \Eloquent
  */
 class Admin extends User
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     use HasParent;
 
@@ -205,12 +220,10 @@ class Admin extends User
      * @var list<string>
 =======
     use HasFactory;
+=======
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
     use HasParent;
 
-    /**
-     * @var string
-     */
-    protected $table = 'patients';
 
     /**
      * @var array<int, string>
@@ -237,6 +250,7 @@ class Admin extends User
             //'certifications' => 'array',
             //'availability' => 'array',
         ]);
+<<<<<<< HEAD
     }
 
 
@@ -249,16 +263,12 @@ class Admin extends User
         return [
             'date_of_birth' => 'date',
         ];
+=======
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
     }
 
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
-    public function user()
-    {
-        return parent::belongsTo(User::class, 'user_id');
-    }
 
+<<<<<<< HEAD
     /**
      * Verifica se il paziente ha dati validi per la transizione di stato.
      *
@@ -271,4 +281,6 @@ class Admin extends User
             !empty($this->gender);
     }
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
 }

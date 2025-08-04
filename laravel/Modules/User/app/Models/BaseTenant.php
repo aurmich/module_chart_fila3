@@ -86,11 +86,16 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
 
         // $this->setConnection('mysql');
 <<<<<<< HEAD
+<<<<<<< HEAD
         //return $this->belongsToManyX($userClass, null, 'tenant_id', 'user_id');
         return $this->belongsToManyX($userClass);
 =======
         return $this->belongsToManyX($userClass, null, 'tenant_id', 'user_id');
 >>>>>>> 54f4fa16 (.)
+=======
+        //return $this->belongsToManyX($userClass, null, 'tenant_id', 'user_id');
+        return $this->belongsToManyX($userClass);
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
         // ->as('membership')
     }
 

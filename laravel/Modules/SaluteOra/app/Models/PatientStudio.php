@@ -10,6 +10,7 @@ use Parental\HasParent;
 
 
 
+<<<<<<< HEAD
 /**
  * @property string $id
  * @property string|null $type
@@ -48,3 +49,9 @@ class PatientStudio extends StudioUser
 {
     use HasParent;
 }
+=======
+class PatientStudio extends StudioUser
+{
+    use HasParent;
+}
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)

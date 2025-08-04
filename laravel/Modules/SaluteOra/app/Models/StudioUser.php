@@ -7,6 +7,7 @@ namespace Modules\SaluteOra\Models;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\SaluteOra\Models\BasePivot;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Parental\HasChildren;
 
 
@@ -59,49 +60,17 @@ class StudioUser extends BasePivot
         //'doctor_id',
         'id',
 =======
+=======
+use Parental\HasChildren;
 
-/**
- * Modello pivot per la relazione many-to-many tra Doctor e Studio.
- *
- * IMPORTANTE: Questa relazione attraversa database differenti:
- * - Doctor risiede nel database 'user'
- * - Studio risiede nel database 'salute_ora'
- * - DoctorStudio deve utilizzare la stessa connessione di Studio
- *
- * Estende BasePivot per garantire compatibilità con belongsToManyX e policy Xot.
- *
- * @property int $id
- * @property string $doctor_id
- * @property string $studio_id
- * @property array|null $schedule
- * @property bool $is_primary
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- * @property string|null $created_by
- * @property string|null $updated_by
- * @property string|null $deleted_by
- * @property \Illuminate\Support\Carbon|null $deleted_at
- * @property-read \Modules\SaluteOra\Models\Doctor $doctor
- * @property-read \Modules\SaluteOra\Models\Studio $studio
- */
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
+
 class StudioUser extends BasePivot
 {
-    /**
-     * In questo caso specifico, dobbiamo dichiarare esplicitamente la tabella e la connection
-     * perché stiamo lavorando con una relazione cross-database.
-     *
-     * @var string
-     */
-    protected $table = 'doctor_studio';
+    use HasChildren;
 
-    /**
-     * La connection deve essere la stessa di Studio, non quella di Doctor.
-     * Questo è cruciale per relazioni cross-database.
-     *
-     * @var string
-     */
-    protected $connection = 'salute_ora';
 
+    protected $table = 'studio_user';
     /**
      * Gli attributi che sono mass assignable.
      *
@@ -129,6 +98,7 @@ class StudioUser extends BasePivot
         ]);
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     public function user(): BelongsTo
@@ -174,4 +144,7 @@ class StudioUser extends BasePivot
         return $this->belongsTo(Studio::class, 'studio_id', 'id', 'studio');
     }
 >>>>>>> 9d3532ab (✨ (StudioUser.php): introduce StudioUser model to manage many-to-many)
+=======
+
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
 }

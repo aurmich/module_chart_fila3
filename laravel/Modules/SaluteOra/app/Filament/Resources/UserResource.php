@@ -50,7 +50,13 @@ use Modules\SaluteOra\Filament\Resources\UserResource\Pages;
 class UserResource extends XotBaseResource
 {
     protected static ?string $model = User::class;
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+    //protected static ?string $tenantOwnershipRelationshipName = 'owner';
+    //protected static ?string $tenantRelationshipName = 'blogPosts';
+    protected static bool $isScopedToTenant = false;
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
 
     public static function getFormSchema(): array
     {
@@ -119,55 +125,7 @@ class UserResource extends XotBaseResource
         ];
     }
 
-    public static function table(Table $table): Table
-    {
-        return $table
-            ->columns([
-                TextColumn::make('name')
-                    ->searchable(),
-                TextColumn::make('email')
-                    ->searchable(),
-                TextColumn::make('type')
-                    ->badge(),
-                TextColumn::make('state')
-                    ->badge()
-                    ->color(fn (string $state): string => match ($state) {
-                        UserState::ACTIVE->value => 'success',
-                        UserState::PENDING->value => 'warning',
-                        UserState::SUSPENDED->value => 'danger',
-                        default => 'gray',
-                    }),
-                TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-            ])
-            ->filters([
-                SelectFilter::make('type')
-                    ->options(UserTypeEnum::class),
-                SelectFilter::make('state')
-                    ->options(UserState::class),
-            ])
-            ->actions([
-                EditAction::make(),
-            ])
-            ->bulkActions([
-                BulkActionGroup::make([
-                    DeleteBulkAction::make(),
-                ]),
-            ]);
-    }
 
-    public static function getRelations(): array
-    {
-        return [
-            //
-        ];
-    }
 
     public static function getPages(): array
     {

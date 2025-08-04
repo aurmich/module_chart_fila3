@@ -9,6 +9,7 @@ namespace Modules\SaluteOra\Providers\Filament;
 use Filament\Panel;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Http\Request;
 use LaraZeus\Bolt\BoltPlugin;
 use Filament\Facades\Filament;
@@ -89,6 +90,9 @@ use Filament\Panel;
 use Illuminate\Auth\Middleware\Authenticate as MiddlewareAuthenticate;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 =======
+=======
+use Filament\Facades\Filament;
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
 use Illuminate\Support\Facades\Auth;
 use Modules\SaluteOra\Enums\UserTypeEnum;
 use Filament\Http\Middleware\Authenticate;
@@ -133,10 +137,14 @@ class AdminPanelProvider extends XotBasePanelProvider
      */
     public function panel(Panel $panel): Panel
     {
-        // Configurazione pannello base
         $panel = parent::panel($panel);
+        $user = Filament::auth()->user();
+        $type= $user?->type;
+        if($type!=null){
+            dddx($type);
+        }
+
         $panel = app(ApplyTenancyToPanelAction::class)->execute($panel);
-        // Aggiungi configurazioni specifiche per il modulo SaluteOra
         $this->configurePanel($panel);
 
         return $panel;

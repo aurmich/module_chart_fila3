@@ -71,6 +71,7 @@ class PatientResource extends XotBaseResource
 {
     protected static ?string $model = Patient::class;
 <<<<<<< HEAD
+<<<<<<< HEAD
     //protected static ?string $tenantOwnershipRelationshipName = 'tenants';
     //protected static ?string $tenantRelationshipName = 'studios';
     protected static bool $isScopedToTenant = true;
@@ -202,6 +203,10 @@ class PatientResource extends XotBaseResource
 
    
 =======
+=======
+    //protected static ?string $tenantOwnershipRelationshipName = 'tenants';
+    //protected static ?string $tenantRelationshipName = 'studios';
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
 
     /**
      * Get the form schema for the registration wizard
@@ -232,7 +237,7 @@ class PatientResource extends XotBaseResource
             //->submitAction(new HtmlString(self::getSubmitButton()))
         ];
     }
-    
+
     /**
      * Get the personal data step for the wizard
      *
@@ -267,7 +272,7 @@ class PatientResource extends XotBaseResource
                 ->unique(Patient::class),
         ];
     }
-    
+
     /**
      * Get the documents step for the wizard
      *
@@ -298,7 +303,7 @@ class PatientResource extends XotBaseResource
                 ->maxSize(5120),
         ];
     }
-    
+
     /**
      * Get the pre-visit information step for the wizard
      */
@@ -326,10 +331,14 @@ class PatientResource extends XotBaseResource
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     
 =======
     
+=======
+
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
     /**
      * Get the privacy step for the wizard
      */
@@ -370,8 +379,12 @@ class PatientResource extends XotBaseResource
                 ->columnSpanFull(),
         ];
     }
+<<<<<<< HEAD
     
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
     /**
      * Get the thank you page HTML after registration
      *

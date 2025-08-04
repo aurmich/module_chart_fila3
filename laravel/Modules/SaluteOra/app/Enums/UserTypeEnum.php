@@ -6,6 +6,7 @@ namespace Modules\SaluteOra\Enums;
 
 use Filament\Support\Contracts\HasLabel;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Traits\TransTrait;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -31,20 +32,24 @@ enum UserTypeEnum: string implements HasLabel
     //case MODERATOR = 'moderator';
     //case STAFF = 'staff';
 =======
+=======
+use Modules\Xot\Filament\Traits\TransTrait;
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
 
 /**
  * Defines the different types of users in the system.
- * 
+ *
  * Implementazione ottimizzata per Laravel 12 seguendo le best practices:
  * - Metodo tryFrom() per gestione valori null/invalidi
  * - Implementazione HasLabel per Filament
  * - Pattern flessibile e modulare
- * 
+ *
  * @see https://laravel.com/docs/12.x/eloquent-mutators
  * @see https://medium.com/@zulfikarditya/using-php-enums-in-laravel-12-a-comprehensive-guide-af75689f88e8
  */
 enum UserTypeEnum: string implements HasLabel
 {
+    use TransTrait;
     case ADMIN = 'admin';
     case DOCTOR = 'doctor';
     case PATIENT = 'patient';
@@ -60,12 +65,17 @@ enum UserTypeEnum: string implements HasLabel
 =======
     public function getLabel(): ?string
     {
+<<<<<<< HEAD
         return match ($this) {
             self::ADMIN => __('saluteora::enums.user_type.admin'),
             self::DOCTOR => __('saluteora::enums.user_type.doctor'),
             self::PATIENT => __('saluteora::enums.user_type.patient'),
         };
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+        return $this->transClass(self::class,$this->value.'.label');
+
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
     }
 
     /**
@@ -74,15 +84,24 @@ enum UserTypeEnum: string implements HasLabel
     public function getColor(): string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->transClass(self::class,$this->value.'.color');
 
 =======
+=======
+        return $this->transClass(self::class,$this->value.'.color');
+        /*
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
         return match ($this) {
             self::ADMIN => 'danger',
             self::DOCTOR => 'primary',
             self::PATIENT => 'success',
         };
+<<<<<<< HEAD
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+        */
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
     }
 
     /**
@@ -91,15 +110,21 @@ enum UserTypeEnum: string implements HasLabel
     public function getIcon(): string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->transClass(self::class,$this->value.'.icon');
         /*
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+        return $this->transClass(self::class,$this->value.'.icon');
+        /*
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
         return match ($this) {
             self::ADMIN => 'heroicon-o-shield-check',
             self::DOCTOR => 'heroicon-o-user-circle',
             self::PATIENT => 'heroicon-o-user',
         };
+<<<<<<< HEAD
 <<<<<<< HEAD
         */
     }
@@ -159,6 +184,9 @@ enum UserTypeEnum: string implements HasLabel
 
    
 =======
+=======
+        */
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
     }
 
     /**
@@ -167,7 +195,7 @@ enum UserTypeEnum: string implements HasLabel
      *
      * @return array<string, string>
      */
-    public static function toSelectArray(): array
+    public static function toSelectArrayTEST(): array
     {
         return [
             self::ADMIN->value => __('saluteora::enums.user_type.admin'),
@@ -179,7 +207,7 @@ enum UserTypeEnum: string implements HasLabel
     // Nota: tryFrom() è un metodo nativo di PHP 8.1+ per gli enum backed (con valore)
     // Non implementare mai un metodo tryFrom() personalizzato perché entra in conflitto
     // con quello nativo, causando l'errore "Cannot redeclare UserTypeEnum::tryfrom()".
-    // 
+    //
     // Il metodo nativo fa già ciò che serve: converte un valore al caso dell'enum
     // o restituisce null se la conversione non è possibile.
 

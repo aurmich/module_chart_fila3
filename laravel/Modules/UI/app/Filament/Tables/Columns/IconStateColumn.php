@@ -68,6 +68,7 @@ class IconStateColumn extends IconColumn
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->icon(fn($state): ?string => $state?->icon());
         $this->color(fn($state): ?string => $state?->color());
         $this->tooltip(fn($state): ?string => $state?->label());
@@ -79,6 +80,10 @@ class IconStateColumn extends IconColumn
 =======
         $this->icon(fn($state): string => $state->icon()); // always show the 'edit' icon
         $this->color(fn($state): string => $state->color()); // always show the 'edit' icon
+=======
+        $this->icon(fn($state): string => $state->icon());
+        $this->color(fn($state): string => $state->color());
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
         $this->tooltip(fn($state): string => $state->label());
 >>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
 =======
@@ -90,6 +95,7 @@ class IconStateColumn extends IconColumn
 
         $this->action(Action::make('change-state')
             ->form([
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 Select::make('state')
@@ -181,11 +187,34 @@ class IconStateColumn extends IconColumn
                     $states=[$state::$name, ...$states];
                     $states=array_combine($states, $states);
                     //dddx(['state'=>$state, 'state1'=>$record->getAttribute($name),'record'=>$record]);
+=======
+                Select::make('state')
+                    ->options(
+                        function (Model $record ,string $state): array {
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
 
-                    return $states;
-                }),
+                            $name=$this->getName();
+                            $state=$record->getAttribute($name);
+                            if($state==null){
+                                $states=Arr::wrap($record->getDefaultStateFor($name));
+                                return array_combine($states, $states);
+                            }
+                            try{
+                                //$states=$record->getAttribute($name)->transitionableStates();
+                                $states=$state->transitionableStates();
+                            }catch(Exception $e){
+                                $states=$record->getStatesFor($name)->toArray();;
+                            }
+                            $states=[$state::$name, ...$states];
+                            $states=array_combine($states, $states);
+                            //dddx(['state'=>$state, 'state1'=>$record->getAttribute($name),'record'=>$record]);
+
+                            return $states;
+                        }
+                    ),
                 Textarea::make('message'),
             ])
+<<<<<<< HEAD
             ->fillForm(fn($record) => [
                 'state' => $record->state::$name,
 
@@ -194,6 +223,14 @@ class IconStateColumn extends IconColumn
 >>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
 =======
 >>>>>>> d23ba493 (add calendar)
+=======
+            ->fillForm(function($record){
+                //dddx($record->state);//Modules\SaluteOra\States\User\Pending
+                return [
+                    'state' => $record->state::$name,
+                ];
+            })
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
             ->action(function($record, $data) {
                 //dddx(['record'=>$record, 'data'=>$data]);
                 $record->state->transitionTo($data['state'],$data['message']);
