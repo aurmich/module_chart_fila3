@@ -43,8 +43,12 @@ return [
 =======
         'already_registered' => 'Sei già registrato?',
         'doctor' => [
+<<<<<<< HEAD
             'title' => 'Registrazione Dottore',
 >>>>>>> 96f87894 (.)
+=======
+            'title' => 'Registrazione Odontoiatra',
+>>>>>>> 2ae89d27 (🌐 (auth.php): update translation for doctor registration title from 'Dottore' to 'Odontoiatra' to enhance accuracy in terminology)
             'subtitle' => 'Crea il tuo account professionale per accedere alla piattaforma SaluteOra',
             'description' => 'Registrati come dottore per gestire i tuoi pazienti e appuntamenti',
             'welcome_message' => 'Benvenuto in <span class="font-bold">SaluteOra</span>',
