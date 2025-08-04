@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Chart\Models;
 
 use Modules\Xot\Traits\Updater;
@@ -24,15 +25,36 @@ abstract class BaseModel extends Model
 
     // use Searchable;
     // use Cachable;
+=======
+namespace Modules\Geo\Models;
+
+// use GeneaLabs\LaravelModelCaching\Traits\Cachable;
+// //use Laravel\Scout\Searchable;
+
+use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Traits\Updater;
+
+/**
+ * Class BaseModel.
+ */
+abstract class BaseModel extends Model
+{
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
     use Updater;
 
     /**
      * Indicates whether attributes are snake cased on arrays.
      *
      * @see  https://laravel-news.com/6-eloquent-secrets
+<<<<<<< HEAD
      */
 
     /** @var bool */
+=======
+     *
+     * @var bool
+     */
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
     public static $snakeAttributes = true;
 
     /** @var bool */
@@ -44,6 +66,7 @@ abstract class BaseModel extends Model
     /** @var int */
     protected $perPage = 30;
 
+<<<<<<< HEAD
     /** @var string */
     protected $connection = 'chart';
 
@@ -56,6 +79,16 @@ abstract class BaseModel extends Model
     {
         return ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
     }
+=======
+    // use Searchable;
+    // use Cachable;
+
+    /** @var list<string> */
+    protected $fillable = ['id'];
+
+    /** @var array<string, string> */
+    protected $casts = ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
 
     /** @var string */
     protected $primaryKey = 'id';
@@ -65,6 +98,7 @@ abstract class BaseModel extends Model
         // 'password'
     ];
 
+<<<<<<< HEAD
     /**
      * Create a new factory instance for the model.
      */
@@ -72,4 +106,7 @@ abstract class BaseModel extends Model
     {
         return app(GetFactoryAction::class)->execute(static::class);
     }
+=======
+    protected $connection = 'geo';
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
 }

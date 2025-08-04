@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Chart\Providers\Filament;
 
 use Filament\Panel;
@@ -28,4 +29,16 @@ class AdminPanelProvider extends XotBasePanelProvider
 
         return $panel;
     }
+=======
+namespace Modules\Geo\Providers\Filament;
+
+use Modules\Xot\Providers\Filament\XotBasePanelProvider;
+
+/**
+ * Undocumented class.
+ */
+class AdminPanelProvider extends XotBasePanelProvider
+{
+    protected string $module = 'Geo';
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
 }

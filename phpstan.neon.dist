@@ -1,6 +1,7 @@
 includes:
     - phpstan-baseline.neon
     - ./vendor/larastan/larastan/extension.neon
+<<<<<<< HEAD
     - ./vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
     #- ./vendor/symplify/phpstan-rules/config/code-complexity-rules.neon
     #- ./vendor/symplify/phpstan-rules/config/collector-rules.neon
@@ -45,3 +46,16 @@ parameters:
     reportUnmatchedIgnoredErrors: false
     checkOctaneCompatibility: false
     checkModelProperties: false
+=======
+
+parameters:
+    level: 4
+    paths:
+        - .
+    checkOctaneCompatibility: true
+    checkModelProperties: true
+    checkMissingIterableValueType: false
+    excludePaths:
+        - ./vendor/*
+        - ./docs/*
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)

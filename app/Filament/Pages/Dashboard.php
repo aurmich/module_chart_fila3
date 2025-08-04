@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Chart\Filament\Pages;
 
 use Filament\Pages\Page;
@@ -32,4 +33,22 @@ class Dashboard extends Page
             WidgetsSamples\Sample01Chart::make(),
         ];
     }
+=======
+namespace Modules\Geo\Filament\Pages;
+
+use Modules\Xot\Filament\Pages\XotBasePage;
+
+class Dashboard extends XotBasePage
+{
+    protected static ?string $navigationIcon = 'heroicon-o-home';
+
+    protected static string $view = 'geo::filament.pages.dashboard';
+
+    // public function mount(): void {
+    //     $user = auth()->user();
+    //     if(!$user->hasRole('super-admin')){
+    //         redirect('/admin');
+    //     }
+    // }
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
 }

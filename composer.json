@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/module_chart_fila3",
     "description": "chart module that manages your data and represents them in graphs",
     "keywords": [
@@ -22,12 +23,32 @@
             "providers": [
                 "Modules\\Chart\\Providers\\ChartServiceProvider",
                 "Modules\\Chart\\Providers\\Filament\\AdminPanelProvider"
+=======
+    "name": "laraxot/module_geo_fila3",
+    "description": "",
+    "homepage": "https://github.com/laraxot/module_geo_fila3.git",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Sottana",
+            "email": "marco.sottana@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Livewire\\LivewireServiceProvider",
+                "Modules\\Geo\\Providers\\GeoServiceProvider",
+                "Modules\\Geo\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
             ],
             "aliases": {}
         }
     },
     "autoload": {
         "psr-4": {
+<<<<<<< HEAD
             "Modules\\Chart\\": "app/",
             "Modules\\Chart\\Database\\Factories\\": "database/factories/",
             "Modules\\Chart\\Database\\Seeders\\": "database/seeders/"
@@ -49,6 +70,39 @@
         "url": "../UI"
     }],
     "scripts": {
+=======
+            "Modules\\Geo\\": "app/",
+            "Modules\\Geo\\Database\\Factories\\": "database/factories/",
+            "Modules\\Geo\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "require": {
+        "cheesegrits/filament-google-maps": "^3.0",
+        "dotswan/filament-map-picker": "^1.2",
+        "webbingbrasil/filament-maps": "^3.0@beta"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../Xot"
+        },
+        {
+            "type": "path",
+            "url": "../Tenant"
+        },
+        {
+            "type": "path",
+            "url": "../UI"
+        }
+    ],
+    "scripts": {
+        "post-autoload-dump_comment": [
+            "@php vendor/bin/testbench package:discover --ansi"
+        ],
+        "post-update-cmd_comment": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate"
+        ],
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
         "analyse": "vendor/bin/phpstan analyse",
         "test": "./vendor/bin/pest --no-coverage",
         "test-coverage": "vendor/bin/pest --coverage-html coverage",
@@ -59,11 +113,16 @@
         "allow-plugins": {
             "phpstan/extension-installer": true,
             "pestphp/pest-plugin": true,
+<<<<<<< HEAD
             "dealerdirect/phpcodesniffer-composer-installer": true
+=======
+            "php-http/discovery": true
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
         }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
+<<<<<<< HEAD
 =======
     "require-dev": {
         "phpstan/phpstan": "^2.1"
@@ -74,3 +133,6 @@
     }
 >>>>>>> 54f4fa16 (.)
 }
+=======
+}
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)

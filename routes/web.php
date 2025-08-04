@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 /*
+<<<<<<< HEAD
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -16,3 +17,12 @@ declare(strict_types=1);
 // Route::prefix('chart')->group(function (): void {
 //     Route::get('/', 'ChartController@index');
 // });
+=======
+//$this->routes();
+Route::prefix('it')->group(function() {
+    Route::prefix('geo')->group(function() {
+        Route::get('/', 'GeoController@index');
+    });
+});
+*/
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
