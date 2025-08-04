@@ -37,6 +37,7 @@ use Illuminate\Support\Facades\Log;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * 
 =======
 =======
@@ -47,12 +48,16 @@ use Illuminate\Support\Facades\Log;
 >>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
  *
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+ * 
+>>>>>>> 0dff6a67 (♻️ (studio.php, RegisterWidget.php, EditUserWidget.php, LoginWidgetTest.php, XotBaseWidget.php): remove merge conflict markers and clean up code to ensure proper functionality and readability)
  * @property-read string $type
  * @property-read string $resource
  * @property-read string $model
  * @property-read string $action
  * @property-read Model $record
  * @property array|null $data
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  */
@@ -77,6 +82,8 @@ class EditUserWidget extends XotBaseWidget
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 =======
 >>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
+=======
+>>>>>>> 0dff6a67 (♻️ (studio.php, RegisterWidget.php, EditUserWidget.php, LoginWidgetTest.php, XotBaseWidget.php): remove merge conflict markers and clean up code to ensure proper functionality and readability)
  */
 class EditUserWidget extends XotBaseWidget
 {
@@ -89,6 +96,7 @@ class EditUserWidget extends XotBaseWidget
 >>>>>>> b58de900 (.)
 =======
     
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 =======
@@ -112,6 +120,8 @@ class EditUserWidget extends XotBaseWidget
     
 >>>>>>> 4c632a28 (✨ (bashscripts): add new scripts for managing MCP MySQL server and PHPStan analysis)
 >>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
+=======
+>>>>>>> 0dff6a67 (♻️ (studio.php, RegisterWidget.php, EditUserWidget.php, LoginWidgetTest.php, XotBaseWidget.php): remove merge conflict markers and clean up code to ensure proper functionality and readability)
     public string $type;
     public string $resource;
     public string $model;
@@ -128,10 +138,6 @@ class EditUserWidget extends XotBaseWidget
 >>>>>>> aurmich/dev
     protected static string $view = 'pub_theme::filament.widgets.edit-user';
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 4c632a28 (✨ (bashscripts): add new scripts for managing MCP MySQL server and PHPStan analysis)
     /**
      * Initialize the widget with user type and optional user ID.
      *
@@ -139,6 +145,7 @@ class EditUserWidget extends XotBaseWidget
      * @param int|null $userId
      * @return void
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -164,6 +171,8 @@ class EditUserWidget extends XotBaseWidget
 =======
 >>>>>>> 4c632a28 (✨ (bashscripts): add new scripts for managing MCP MySQL server and PHPStan analysis)
 >>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
+=======
+>>>>>>> 0dff6a67 (♻️ (studio.php, RegisterWidget.php, EditUserWidget.php, LoginWidgetTest.php, XotBaseWidget.php): remove merge conflict markers and clean up code to ensure proper functionality and readability)
     public function mount(string $type, ?int $userId = null): void
     {
         $this->type = $type;
@@ -187,22 +196,19 @@ class EditUserWidget extends XotBaseWidget
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> b94d1b23 (✨ (User Module): introduce UpdateUserAction for doctor-specific user updates)
 =======
 >>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
+=======
+>>>>>>> 0dff6a67 (♻️ (studio.php, RegisterWidget.php, EditUserWidget.php, LoginWidgetTest.php, XotBaseWidget.php): remove merge conflict markers and clean up code to ensure proper functionality and readability)
      *
      * @param int|null $userId
      * @return Model
-=======
->>>>>>> 999c8e14 (✨ (User Module): introduce EditUserWidget for user data modification)
-=======
-     *
-     * @param int|null $userId
-     * @return Model
->>>>>>> 4c632a28 (✨ (bashscripts): add new scripts for managing MCP MySQL server and PHPStan analysis)
      */
     protected function getFormModel(?int $userId = null): Model
+<<<<<<< HEAD
 =======
 =======
      *
@@ -212,6 +218,8 @@ class EditUserWidget extends XotBaseWidget
      */
     public function getFormModel(?int $userId = null): Model
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 0dff6a67 (♻️ (studio.php, RegisterWidget.php, EditUserWidget.php, LoginWidgetTest.php, XotBaseWidget.php): remove merge conflict markers and clean up code to ensure proper functionality and readability)
     {
         if ($userId) {
             $user = $this->model::findOrFail($userId);
@@ -242,6 +250,7 @@ class EditUserWidget extends XotBaseWidget
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return array<string, mixed>
 =======
@@ -265,6 +274,10 @@ class EditUserWidget extends XotBaseWidget
      * @return array<string, mixed>
 >>>>>>> 4c632a28 (✨ (bashscripts): add new scripts for managing MCP MySQL server and PHPStan analysis)
 >>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
+=======
+     *
+     * @return array<string, mixed>
+>>>>>>> 0dff6a67 (♻️ (studio.php, RegisterWidget.php, EditUserWidget.php, LoginWidgetTest.php, XotBaseWidget.php): remove merge conflict markers and clean up code to ensure proper functionality and readability)
      */
     public function getFormFill(): array
     {
@@ -314,6 +327,7 @@ class EditUserWidget extends XotBaseWidget
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return array<int|string, \Filament\Forms\Components\Component>
 =======
@@ -337,6 +351,10 @@ class EditUserWidget extends XotBaseWidget
      * @return array<string, mixed>
 >>>>>>> 4c632a28 (✨ (bashscripts): add new scripts for managing MCP MySQL server and PHPStan analysis)
 >>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
+=======
+     *
+     * @return array<int|string, \Filament\Forms\Components\Component>
+>>>>>>> 0dff6a67 (♻️ (studio.php, RegisterWidget.php, EditUserWidget.php, LoginWidgetTest.php, XotBaseWidget.php): remove merge conflict markers and clean up code to ensure proper functionality and readability)
      */
     public function getFormSchema(): array
     {
@@ -347,6 +365,7 @@ class EditUserWidget extends XotBaseWidget
      * Gestisce il salvataggio delle modifiche delegando all'action specifica.
      * 
      * @see https://filamentphp.com/docs/3.x/forms/adding-a-form-to-a-livewire-component
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -374,6 +393,10 @@ class EditUserWidget extends XotBaseWidget
      * @return \Illuminate\Http\RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
 >>>>>>> 4c632a28 (✨ (bashscripts): add new scripts for managing MCP MySQL server and PHPStan analysis)
 >>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
+=======
+     *
+     * @return \Illuminate\Http\RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
+>>>>>>> 0dff6a67 (♻️ (studio.php, RegisterWidget.php, EditUserWidget.php, LoginWidgetTest.php, XotBaseWidget.php): remove merge conflict markers and clean up code to ensure proper functionality and readability)
      */
     public function updateUser(): \Illuminate\Http\RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
     {
@@ -398,6 +421,7 @@ class EditUserWidget extends XotBaseWidget
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return bool
 =======
@@ -421,6 +445,10 @@ class EditUserWidget extends XotBaseWidget
      * @return bool
 >>>>>>> 4c632a28 (✨ (bashscripts): add new scripts for managing MCP MySQL server and PHPStan analysis)
 >>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
+=======
+     *
+     * @return bool
+>>>>>>> 0dff6a67 (♻️ (studio.php, RegisterWidget.php, EditUserWidget.php, LoginWidgetTest.php, XotBaseWidget.php): remove merge conflict markers and clean up code to ensure proper functionality and readability)
      */
     public function canEdit(): bool
     {
@@ -444,9 +472,10 @@ class EditUserWidget extends XotBaseWidget
         );
 =======
             $currentUser->id === $this->record->id ||
-            $currentUser->id === $this->record->user_id ?? null
+            $currentUser->id === ($this->record->user_id ?? null)
         );
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -707,10 +736,6 @@ class EditUserWidget extends XotBaseWidget implements HasForms
 >>>>>>> b94d1b23 (✨ (User Module): introduce UpdateUserAction for doctor-specific user updates)
 =======
 >>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
-}
 =======
-} 
->>>>>>> 999c8e14 (✨ (User Module): introduce EditUserWidget for user data modification)
-=======
+>>>>>>> 0dff6a67 (♻️ (studio.php, RegisterWidget.php, EditUserWidget.php, LoginWidgetTest.php, XotBaseWidget.php): remove merge conflict markers and clean up code to ensure proper functionality and readability)
 }
->>>>>>> 4c632a28 (✨ (bashscripts): add new scripts for managing MCP MySQL server and PHPStan analysis)

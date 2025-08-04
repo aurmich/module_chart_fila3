@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array (
   'navigation' => 
   array (
@@ -378,6 +379,8 @@ return array (
 =======
 =======
 >>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
+=======
+>>>>>>> 0dff6a67 (♻️ (studio.php, RegisterWidget.php, EditUserWidget.php, LoginWidgetTest.php, XotBaseWidget.php): remove merge conflict markers and clean up code to ensure proper functionality and readability)
 declare(strict_types=1);
 
 return [

@@ -101,17 +101,23 @@ test('it requires email and password', function (): void {
 use Tests\TestCase;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> fb6fbaa2 (move resources/lang to lang)
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 0dff6a67 (♻️ (studio.php, RegisterWidget.php, EditUserWidget.php, LoginWidgetTest.php, XotBaseWidget.php): remove merge conflict markers and clean up code to ensure proper functionality and readability)
 // Skip this test if the test database is not configured
-if (!env('DB_CONNECTION') || env('DB_CONNECTION') === 'sqlite' && !file_exists(database_path('database.sqlite'))) {
+if (!env('DB_CONNECTION') || (env('DB_CONNECTION') === 'sqlite' && !file_exists(database_path('database.sqlite')))) {
     return;
 }
 
+<<<<<<< HEAD
 >>>>>>> 4c632a28 (✨ (bashscripts): add new scripts for managing MCP MySQL server and PHPStan analysis)
 >>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
+=======
+>>>>>>> 0dff6a67 (♻️ (studio.php, RegisterWidget.php, EditUserWidget.php, LoginWidgetTest.php, XotBaseWidget.php): remove merge conflict markers and clean up code to ensure proper functionality and readability)
 class LoginWidgetTest extends TestCase
 {
     use RefreshDatabase;
@@ -149,14 +155,18 @@ class LoginWidgetTest extends TestCase
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
+=======
+>>>>>>> 0dff6a67 (♻️ (studio.php, RegisterWidget.php, EditUserWidget.php, LoginWidgetTest.php, XotBaseWidget.php): remove merge conflict markers and clean up code to ensure proper functionality and readability)
         // Skip if we can't use the database
         if (!class_exists('CreateUsersTable')) {
             $this->markTestSkipped('Database not available for testing');
             return;
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> fb6fbaa2 (move resources/lang to lang)
@@ -164,6 +174,8 @@ class LoginWidgetTest extends TestCase
 
 >>>>>>> 4c632a28 (✨ (bashscripts): add new scripts for managing MCP MySQL server and PHPStan analysis)
 >>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
+=======
+>>>>>>> 0dff6a67 (♻️ (studio.php, RegisterWidget.php, EditUserWidget.php, LoginWidgetTest.php, XotBaseWidget.php): remove merge conflict markers and clean up code to ensure proper functionality and readability)
         $user = User::factory()->create([
             'email' => 'test@example.com',
             'password' => Hash::make('password123'),
