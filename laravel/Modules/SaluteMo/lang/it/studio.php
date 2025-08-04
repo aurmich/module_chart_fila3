@@ -200,10 +200,14 @@ return array (
       'label' => 'reorderRecords',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8d44f10d (feat: studio trans , radio collection)
     'resetFilters' => 
     array (
       'label' => 'resetFilters',
     ),
+<<<<<<< HEAD
     'applyFilters' => 
     array (
       'label' => 'applyFilters',
@@ -242,6 +246,8 @@ return array (
     ),
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 8d44f10d (feat: studio trans , radio collection)
   ),
   'actions' => 
   array (
