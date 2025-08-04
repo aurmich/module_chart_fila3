@@ -64,6 +64,7 @@ describe('Frontend Login Page Localization', function () {
         $response->assertStatus(200)
                  ->assertSee('Hai dimenticato la password?')
 <<<<<<< HEAD
+<<<<<<< HEAD
                  ->assertSee(__('pub_theme::auth.login.title'))
                  ->assertSee(__('pub_theme::auth.login.or'));
 =======
@@ -75,6 +76,10 @@ describe('Frontend Login Page Localization', function () {
                  ->assertSee(__('auth.login.or'));
 >>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
 >>>>>>> aurmich/dev
+=======
+                 ->assertSee(__('pub_theme::auth.login.title'))
+                 ->assertSee(__('pub_theme::auth.login.or'));
+>>>>>>> 96f87894 (.)
     });
 });
 

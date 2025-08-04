@@ -19,6 +19,7 @@
 <<<<<<< HEAD
 <div class="flex items-center space-x-4 !m-1">
     <a href="{{ route('login') }}" class="text-sm font-medium text-[#E2E8F0] hover:text-[#E2E8F0]">
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -58,6 +59,9 @@
 >>>>>>> ff138484 (- update dettaglio paziente)
     <a href="{{ route('login') }}" class="text-sm font-medium text-[#E2E8F0] hover:text-[#E2E8F0]">
         {{ __('auth.login.title') }}
+=======
+        {{ __('pub_theme::auth.login.title') }}
+>>>>>>> 96f87894 (.)
     </a>
 
     <a href="{{ route('register') }}" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md !text-white bg-[#FF5F7E]">

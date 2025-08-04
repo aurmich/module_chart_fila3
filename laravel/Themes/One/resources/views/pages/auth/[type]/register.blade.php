@@ -130,6 +130,7 @@ new class extends Component
                         
                         <h2 class="text-3xl font-extrabold leading-9 text-[#272C4D]">
 <<<<<<< HEAD
+<<<<<<< HEAD
                              {{  __('pub_theme::auth.register.'.$type.'.title') }}
                         </h2>
                         
@@ -142,6 +143,13 @@ new class extends Component
                         <p class="mt-2 text-lg text-gray-600">
                             {{ $isDoctor ? __('pub_theme::auth.register.doctor.subtitle') : __('pub_theme::auth.register.patient.subtitle') }}
 >>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
+=======
+                             {{  __('pub_theme::auth.register.'.$type.'.title') }}
+                        </h2>
+                        
+                        <p class="mt-2 text-lg text-gray-600">
+                            {{ __('pub_theme::auth.register.'.$type.'.subtitle') }}
+>>>>>>> 96f87894 (.)
                         </p>
                         
                         <div class="text-sm leading-5 text-center text-gray-600 dark:text-gray-400 space-x-0.5 mt-4">
@@ -154,6 +162,7 @@ new class extends Component
 
                     <!-- Registration Form Widget -->
                     <div class="space-y-6">
+<<<<<<< HEAD
 <<<<<<< HEAD
                         @livewire(\Modules\User\Filament\Widgets\RegistrationWidget::class, ['type' => $type])
                     </div>
@@ -210,48 +219,16 @@ new class extends Component
                                 </div>
                             </div>
                         @endtry
+=======
+                        @livewire(\Modules\User\Filament\Widgets\RegistrationWidget::class, ['type' => $type])
+>>>>>>> 96f87894 (.)
                     </div>
 
-                    <!-- Additional Information -->
-                    @if($isDoctor)
-                        <div class="mt-8 p-6 bg-blue-50 border border-blue-200 rounded-lg">
-                            <div class="flex items-start">
-                                <x-filament::icon name="heroicon-o-information-circle" class="w-5 h-5 text-blue-500 mr-2 mt-0.5" />
-                                <div>
-                                    <h3 class="text-sm font-medium text-blue-800">
-                                        {{ __('pub_theme::auth.register.doctor.info.title') }}
-                                    </h3>
-                                    <p class="mt-1 text-sm text-blue-700">
-                                        {{ __('pub_theme::auth.register.doctor.info.message') }}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    @else
-                        <div class="mt-8 p-6 bg-green-50 border border-green-200 rounded-lg">
-                            <div class="flex items-start">
-                                <x-filament::icon name="heroicon-o-heart" class="w-5 h-5 text-green-500 mr-2 mt-0.5" />
-                                <div>
-                                    <h3 class="text-sm font-medium text-green-800">
-                                        {{ __('pub_theme::auth.register.patient.info.title') }}
-                                    </h3>
-                                    <p class="mt-1 text-sm text-green-700">
-                                        {{ __('pub_theme::auth.register.patient.info.message') }}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    @endif
+                    
+                    
+                    
 
-                    <!-- Support Link -->
-                    <div class="mt-8 text-center text-sm text-gray-500">
-                        <p>
-                            {{ __('pub_theme::auth.register.support.need_help') }} 
-                            <a href="{{ route('contact') }}" class="text-[#FF5F7E] hover:text-[#FF4A6B] font-medium">
-                                {{ __('pub_theme::auth.register.support.contact_us') }}
-                            </a>
-                        </p>
-                    </div>
+                    
                 </div>
 >>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
             </div>

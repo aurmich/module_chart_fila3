@@ -39,12 +39,19 @@ return [
         'login_link' => 'sign in here',
         'register_button' => 'Register',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96f87894 (.)
         'already_registered' => 'Already registered?',
         'doctor' => [
             'title' => 'Doctor Registration',
             'subtitle' => 'Create your professional account to access the SaluteOra platform',
             'description' => 'Register as a doctor to manage your patients and appointments',
+<<<<<<< HEAD
             'welcome_message' => 'Welcome to <span class=\\\"font-bold\\\">SaluteOra</span>',
+=======
+            'welcome_message' => 'Welcome to <span class="font-bold">SaluteOra</span>',
+>>>>>>> 96f87894 (.)
             'info' => [
                 'title' => 'Professional Information',
                 'message' => 'Complete your professional information to verify your identity and specialization',
@@ -63,9 +70,15 @@ return [
         ],
         'patient' => [
             'title' => 'Patient Registration',
+<<<<<<< HEAD
             'subtitle' => 'Create your account',
             'description' => 'Register as a patient to access healthcare services',
             'welcome_message' => 'Welcome to <span class=\\\"font-bold\\\">SaluteOra</span>',
+=======
+            'subtitle' => 'Create your account to book appointments and manage your health',
+            'description' => 'Register as a patient to access healthcare services',
+            'welcome_message' => 'Welcome to <span class="font-bold">SaluteOra</span>',
+>>>>>>> 96f87894 (.)
             'phone_label' => 'Phone number',
             'phone_placeholder' => 'Enter your phone number',
             'date_of_birth_label' => 'Date of birth',
@@ -80,7 +93,11 @@ return [
             'title' => 'Administrator Registration',
             'subtitle' => 'Create your administrative account to manage the platform',
             'description' => 'Register as an administrator to manage users and configurations',
+<<<<<<< HEAD
             'welcome_message' => 'Welcome to <span class=\\\"font-bold\\\">SaluteOra</span>',
+=======
+            'welcome_message' => 'Welcome to <span class="font-bold">SaluteOra</span>',
+>>>>>>> 96f87894 (.)
             'role_label' => 'Administrative role',
             'role_placeholder' => 'Select your role',
             'phone_label' => 'Phone number',
@@ -121,8 +138,11 @@ return [
             'email_already_exists' => 'This email is already registered',
             'invalid_data' => 'Invalid data',
         ],
+<<<<<<< HEAD
     ],
 =======
+=======
+>>>>>>> 96f87894 (.)
     ],
 
 >>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)

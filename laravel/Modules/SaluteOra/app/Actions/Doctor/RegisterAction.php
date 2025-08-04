@@ -255,6 +255,7 @@ class RegisterAction
             /** @phpstan-ignore-next-line */
             $doctor->studio()->save($studio);
             /** @phpstan-ignore-next-line */
+<<<<<<< HEAD
             $doctor->studios()->attach($studio,['schedule'=>$data['schedule']]);
 =======
     public function execute(array $data): Doctor
@@ -288,6 +289,10 @@ class RegisterAction
             $doctor->studio()->save($studio);
             $doctor->studios()->attach($studio,['schedule'=>$data['schedule']]);
 >>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+=======
+            //$doctor->studios()->attach($studio,['schedule'=>$data['schedule']]);
+            $doctor->studios()->sync($studio,['schedule'=>$data['schedule']]);
+>>>>>>> 96f87894 (.)
         }
 
          //-------------------------------------------------
