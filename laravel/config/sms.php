@@ -12,23 +12,7 @@ return [
     |
     */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     'default' => env('SMS_DRIVER', 'agiletelecom'),
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    'default' => env('SMS_DRIVER', 'agiletelecom'),
-=======
-    'default' => env('SMS_DRIVER', 'netfun'),
->>>>>>> aurmich/dev
-=======
-    'default' => env('SMS_DRIVER', 'netfun'),
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
-=======
-    'default' => env('SMS_DRIVER', 'netfun'),
->>>>>>> 93990a83 (rebase 1/1)
 
     /*
     |--------------------------------------------------------------------------
@@ -80,27 +64,12 @@ return [
                 'timeout' => env('NETFUN_CIRCUIT_BREAKER_TIMEOUT', 60),
             ],
         ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
         'agiletelecom' => [
             'username' => env('AGILETELECOM_USERNAME'),
             'password' => env('AGILETELECOM_PASSWORD'),
             'sender' => env('AGILETELECOM_SENDER', 'MyApp'),
             'endpoint' => env('AGILETELECOM_API_URL','https://sms.agiletelecom.com/ApiHttp/send.aspx'),
         ],
-<<<<<<< HEAD
-=======
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
-=======
->>>>>>> 93990a83 (rebase 1/1)
     ],
 
 

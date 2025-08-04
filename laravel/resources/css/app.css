@@ -1,14 +1,5 @@
 @import 'tailwindcss';
-<<<<<<< HEAD
 @import '../../vendor/livewire/flux/dist/flux.css';
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-@import '../../vendor/livewire/flux/dist/flux.css';
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
 
 @source '../views';
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
@@ -36,29 +27,6 @@
     --color-accent-content: var(--color-neutral-800);
     --color-accent-foreground: var(--color-white);
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-@import '../../vendor/livewire/flux/dist/flux.css';
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
-
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
-}
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
 
 @layer theme {
     .dark {
@@ -79,23 +47,7 @@
     }
 }
 
-<<<<<<< HEAD
 [data-flux-field]:not(ui-radio, ui-checkbox) {
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-[data-flux-field]:not(ui-radio, ui-checkbox) {
-=======
-[data-flux-field] {
->>>>>>> aurmich/dev
-=======
-[data-flux-field] {
->>>>>>> 54f4fa16 (.)
-=======
-[data-flux-field]:not(ui-radio, ui-checkbox) {
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
     @apply grid gap-2;
 }
 
@@ -112,16 +64,3 @@ select:focus[data-flux-control] {
 /* \[:where(&)\]:size-4 {
     @apply size-4;
 } */
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev

@@ -1,21 +1,8 @@
 {
     "id": "8",
     "title": {
-<<<<<<< HEAD
         "it": "Area Dottore - SaluteOra",
         "en": "Doctor Area - SaluteOra"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "it": "Area Dottore - SaluteOra",
-        "en": "Doctor Area - SaluteOra"
-=======
-        "it": "Area Dottore - SaluteOra"
->>>>>>> aurmich/dev
-=======
-        "it": "Area Dottore - SaluteOra"
->>>>>>> f2140a80 (- continuo style landing page;)
->>>>>>> aurmich/dev
     },
     "slug": "doctor-home",
     "content": null,
@@ -24,23 +11,12 @@
             {
                 "type": "hero",
                 "data": {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
                     "view": "pub_theme::components.blocks.hero.dettaglio-dottore",
                     "title": "Benvenuto nella tua Area Dottore",
                     "subtitle": "Gestisci le tue pazienti e monitora i loro percorsi di salute orale",
                     "image": "/img/odontoiatra.jpg",
                     "cta-buttons": [],
                     "cta_text": "Continua la registrazione",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
                     "cta_link": "/doctor/patients",
                     "widget": "Modules\\SaluteOra\\Filament\\Widgets\\DoctorCalendarWidget"
                 }
@@ -65,51 +41,6 @@
                     "cta_text": "Continue registration",
                     "cta_link": "/doctor/patients",
                     "widget": "Modules\\SaluteOra\\Filament\\Widgets\\DoctorCalendarWidget"
-<<<<<<< HEAD
-=======
-=======
-                    "cta_link": "/doctor/patients"
->>>>>>> aurmich/dev
-                }
-            },
-            {
-                "type": "widget",
-                "data": {
-                    "view": "pub_theme::components.blocks.widget.simple",
-                    "widget":  "Modules\\SaluteOra\\Filament\\Widgets\\DoctorCalendarWidget"
-                }
-            },
-            {
-                "type": "widget",
-                "data": {
-                    "view": "pub_theme::components.blocks.widget.simple",
-                    "widget":  "Modules\\SaluteOra\\Filament\\Widgets\\DoctorAvailabilitiesWidget"
-=======
-                    "view": "pub_theme::components.blocks.hero.simple2",
-=======
-                    "view": "pub_theme::components.blocks.hero.dettaglio-dottore",
->>>>>>> 58d017c2 (- aggiornato stile dettaglio paziente)
-                    "title": "Benvenuto nella tua Area Dottore",
-                    "subtitle": "Gestisci le tue pazienti e monitora i loro percorsi di salute orale",
-                    "image": "/img/odontoiatra.jpg",
-                    "cta-buttons": [],
-                    "cta_text": "Vedi le tue pazienti",
-=======
->>>>>>> ff138484 (- update dettaglio paziente)
-                    "cta_link": "/doctor/patients"
->>>>>>> f2140a80 (- continuo style landing page;)
-                }
-            },
-            {
-                "type": "widget",
-                "data": {
-                    "view": "pub_theme::components.blocks.widget.simple",
-                    "widget":  "Modules\\SaluteOra\\Filament\\Widgets\\DoctorCalendarWidget"
-=======
-                    "cta_link": "/doctor/patients",
-                    "widget": "Modules\\SaluteOra\\Filament\\Widgets\\DoctorCalendarWidget"
->>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
->>>>>>> aurmich/dev
                 }
             },
             {

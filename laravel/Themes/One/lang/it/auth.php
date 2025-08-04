@@ -9,11 +9,7 @@ return [
     |--------------------------------------------------------------------------
     */
     'login' => [
-<<<<<<< HEAD
         'title' => 'Accedi',
-=======
-        'title' => 'Accedi al tuo account',
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
         'or' => 'oppure',
         'create_account' => 'crea un nuovo account',
         'forgot_password' => 'Hai dimenticato la password?',
@@ -25,30 +21,15 @@ return [
     ],
 
     'register' => [
-<<<<<<< HEAD
         'title' => 'Registrati',
-=======
-        'title' => 'Crea il tuo account',
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
         'welcome_message' => 'Benvenuto in <span class="font-bold">SaluteOra</span>',
         'description' => 'Crea il tuo account per accedere a tutti i servizi',
         'already_have_account' => 'Hai già un account?',
         'login_link' => 'accedi qui',
         'register_button' => 'Registrati',
-<<<<<<< HEAD
-<<<<<<< HEAD
         'already_registered' => 'Sei già registrato?',
         'doctor' => [
             'title' => 'Registrazione Odontoiatra',
-=======
-        'already_registered' => 'Sei già registrato?',
-        'doctor' => [
-<<<<<<< HEAD
-            'title' => 'Registrazione Dottore',
->>>>>>> 96f87894 (.)
-=======
-            'title' => 'Registrazione Odontoiatra',
->>>>>>> 2ae89d27 (🌐 (auth.php): update translation for doctor registration title from 'Dottore' to 'Odontoiatra' to enhance accuracy in terminology)
             'subtitle' => 'Crea il tuo account professionale per accedere alla piattaforma SaluteOra',
             'description' => 'Registrati come dottore per gestire i tuoi pazienti e appuntamenti',
             'welcome_message' => 'Benvenuto in <span class="font-bold">SaluteOra</span>',
@@ -70,11 +51,7 @@ return [
         ],
         'patient' => [
             'title' => 'Registrazione Paziente',
-<<<<<<< HEAD
             'subtitle' => 'Crea il tuo account',
-=======
-            'subtitle' => 'Crea il tuo account per prenotare appuntamenti e gestire la tua salute',
->>>>>>> 96f87894 (.)
             'description' => 'Registrati come paziente per accedere ai servizi sanitari',
             'welcome_message' => 'Benvenuto in <span class="font-bold">SaluteOra</span>',
             'phone_label' => 'Numero di telefono',
@@ -132,11 +109,6 @@ return [
             'email_already_exists' => 'Questa email è già registrata',
             'invalid_data' => 'Dati non validi',
         ],
-<<<<<<< HEAD
-=======
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
-=======
->>>>>>> 96f87894 (.)
     ],
 
     'password' => [

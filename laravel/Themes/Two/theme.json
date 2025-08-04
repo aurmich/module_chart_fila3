@@ -8,23 +8,8 @@
     "framework": "vue",
     "dependencies": {
         "php": "^8.1",
-<<<<<<< HEAD
         "laravel/framework": "^12.0",
         "filament/filament": "^3.4"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "laravel/framework": "^12.0",
-        "filament/filament": "^3.4"
-=======
-        "laravel/framework": "^10.0",
-        "filament/filament": "^3.0"
->>>>>>> aurmich/dev
-=======
-        "laravel/framework": "^10.0",
-        "filament/filament": "^3.0"
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
     },
     "assets": {
         "css": [

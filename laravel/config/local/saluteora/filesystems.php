@@ -47,37 +47,16 @@ return [
             'driver' => 'local',
             'root' => storage_path('app'),
         ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
->>>>>>> aurmich/dev
         'private' => [
             'driver' => 'local',
             'root' => storage_path('app'),
         ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
         'attachments' => [
             'driver' => 'local',
             'root' => storage_path('attachments'),
             'visibility' => 'private',
             'throw' => true,
         ],
-<<<<<<< HEAD
-=======
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
->>>>>>> aurmich/dev
 
         'public' => [
             'driver' => 'local',

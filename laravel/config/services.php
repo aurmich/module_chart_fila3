@@ -18,71 +18,16 @@ return [
         'token' => env('POSTMARK_TOKEN'),
     ],
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
->>>>>>> 93990a83 (rebase 1/1)
-    'resend' => [
-        'key' => env('RESEND_KEY'),
-    ],
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
-=======
->>>>>>> 93990a83 (rebase 1/1)
-=======
->>>>>>> ad93170c (rebase 10)
     'ses' => [
         'key' => env('AWS_ACCESS_KEY_ID'),
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
-=======
->>>>>>> ad93170c (rebase 10)
     'resend' => [
         'key' => env('RESEND_KEY'),
     ],
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
-=======
->>>>>>> 93990a83 (rebase 1/1)
-=======
->>>>>>> ad93170c (rebase 10)
     'slack' => [
         'notifications' => [
             'bot_user_oauth_token' => env('SLACK_BOT_USER_OAUTH_TOKEN'),

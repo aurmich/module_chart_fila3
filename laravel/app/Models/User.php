@@ -6,22 +6,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
 use Illuminate\Support\Str;
-=======
->>>>>>> 93990a83 (rebase 1/1)
-=======
-use Illuminate\Support\Str;
->>>>>>> ad93170c (rebase 10)
 
 /**
  * 
@@ -132,15 +117,6 @@ use Illuminate\Support\Str;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereYearsInItaly($value)
  * @mixin \Eloquent
  */
-<<<<<<< HEAD
-=======
-=======
-
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
-
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
->>>>>>> aurmich/dev
 class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
@@ -179,18 +155,6 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
-=======
->>>>>>> ad93170c (rebase 10)
 
     /**
      * Get the user's initials
@@ -203,19 +167,4 @@ class User extends Authenticatable
             ->map(fn ($word) => Str::substr($word, 0, 1))
             ->implode('');
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
-=======
->>>>>>> 93990a83 (rebase 1/1)
-=======
->>>>>>> ad93170c (rebase 10)
 }

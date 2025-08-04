@@ -1,44 +1,11 @@
 <?php
 
 return [
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-    /*
-    |--------------------------------------------------------------------------
-    | Supported Locales
-    |--------------------------------------------------------------------------
-    |
-    | This array contains all the locales supported by the application.
-    | Each key should be the locale code and the value should be an array
-    | containing information about the locale.
-    |
-    */
-<<<<<<< HEAD
-    'supportedLocales' => [
-<<<<<<< HEAD
-=======
->>>>>>> aurmich/dev
 
     // Uncomment the languages that your site supports - or add new ones.
     // These are sorted by the native name, which is the order you might show them in a language selector.
     // Regional languages are sorted by their base language, so "British English" sorts as "English, British"
     'supportedLocales' => [
-<<<<<<< HEAD
-=======
->>>>>>> 54f4fa16 (.)
-=======
-
-    // Uncomment the languages that your site supports - or add new ones.
-    // These are sorted by the native name, which is the order you might show them in a language selector.
-    // Regional languages are sorted by their base language, so "British English" sorts as "English, British"
-    'supportedLocales' => [
->>>>>>> dadf311f (re-enable en)
->>>>>>> aurmich/dev
         //'ace'         => ['name' => 'Achinese',               'script' => 'Latn', 'native' => 'Aceh', 'regional' => ''],
         //'af'          => ['name' => 'Afrikaans',              'script' => 'Latn', 'native' => 'Afrikaans', 'regional' => 'af_ZA'],
         //'agq'         => ['name' => 'Aghem',                  'script' => 'Latn', 'native' => 'Aghem', 'regional' => ''],
@@ -80,23 +47,7 @@ return [
         //'en-GB'       => ['name' => 'British English',        'script' => 'Latn', 'native' => 'British English', 'regional' => 'en_GB'],
         //'en-CA'       => ['name' => 'Canadian English',       'script' => 'Latn', 'native' => 'Canadian English', 'regional' => 'en_CA'],
         //'en-US'       => ['name' => 'U.S. English',           'script' => 'Latn', 'native' => 'U.S. English', 'regional' => 'en_US'],
-<<<<<<< HEAD
         //'es'          => ['name' => 'Spanish',                'script' => 'Latn', 'native' => 'español', 'regional' => 'es_ES'],
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        //'es'          => ['name' => 'Spanish',                'script' => 'Latn', 'native' => 'español', 'regional' => 'es_ES'],
-=======
-        'es'          => ['name' => 'Spanish',                'script' => 'Latn', 'native' => 'español', 'regional' => 'es_ES'],
->>>>>>> aurmich/dev
-=======
-        'es'          => ['name' => 'Spanish',                'script' => 'Latn', 'native' => 'español', 'regional' => 'es_ES'],
->>>>>>> 54f4fa16 (.)
-=======
-        //'es'          => ['name' => 'Spanish',                'script' => 'Latn', 'native' => 'español', 'regional' => 'es_ES'],
->>>>>>> dadf311f (re-enable en)
->>>>>>> aurmich/dev
         //'eo'          => ['name' => 'Esperanto',              'script' => 'Latn', 'native' => 'esperanto', 'regional' => ''],
         //'eu'          => ['name' => 'Basque',                 'script' => 'Latn', 'native' => 'euskara', 'regional' => 'eu_ES'],
         //'ewo'         => ['name' => 'Ewondo',                 'script' => 'Latn', 'native' => 'ewondo', 'regional' => ''],
@@ -345,31 +296,6 @@ return [
         //'vai'         => ['name' => 'Vai (Vai)',              'script' => 'Vaii', 'native' => 'ꕙꔤ', 'regional' => ''],
         //'jv-Java'     => ['name' => 'Javanese (Javanese)',    'script' => 'Java', 'native' => 'ꦧꦱꦗꦮ', 'regional' => ''],
         //'ko'          => ['name' => 'Korean',                 'script' => 'Hang', 'native' => '한국어', 'regional' => 'ko_KR'],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-    'supportedLocales' => [
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-        'it' => [
-            'name' => 'Italiano',
-            'script' => 'Latn',
-            'native' => 'Italiano',
-            'regional' => 'it_IT',
-        ],
-        'en' => [
-            'name' => 'English',
-            'script' => 'Latn',
-            'native' => 'English',
-            'regional' => 'en_GB',
-        ],
-<<<<<<< HEAD
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
->>>>>>> dadf311f (re-enable en)
->>>>>>> aurmich/dev
     ],
 
     // Requires middleware `LaravelSessionRedirect.php`.
@@ -415,141 +341,10 @@ return [
     // Locale suffix for LC_TIME and LC_MONETARY
     // Defaults to most common ".UTF-8". Set to blank on Windows systems, change to ".utf8" on CentOS and similar.
     'utf8suffix' => env('LARAVELLOCALIZATION_UTF8SUFFIX', '.UTF-8'),
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-    ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Use Current Locale
-    |--------------------------------------------------------------------------
-    |
-    | This value determines whether the current locale will be used for
-    | localized URLs. When enabled, the current locale will be included
-    | in all URLs generated by the localization package.
-    |
-    */
-    'useCurrentLocale' => true,
-
-    /*
-    |--------------------------------------------------------------------------
-    | Use Accept Language Header
-    |--------------------------------------------------------------------------
-    |
-    | This value determines whether the Accept-Language header sent by the
-    | browser will be used to determine the locale. This can be useful
-    | for automatic locale detection.
-    |
-    */
-    'useAcceptLanguageHeader' => true,
-
-    /*
-    |--------------------------------------------------------------------------
-    | Use Session Locale
-    |--------------------------------------------------------------------------
-    |
-    | This value determines whether the locale stored in the session will
-    | be used. This allows users to change the locale and have it persist
-    | across requests.
-    |
-    */
-    'useSessionLocale' => true,
-
-    /*
-    |--------------------------------------------------------------------------
-    | Use Cookie Locale
-    |--------------------------------------------------------------------------
-    |
-    | This value determines whether the locale stored in a cookie will be
-    | used. This provides locale persistence across browser sessions.
-    |
-    */
-    'useCookieLocale' => true,
-
-    /*
-    |--------------------------------------------------------------------------
-    | Hide Default Locale In URL
-    |--------------------------------------------------------------------------
-    |
-    | This value determines whether the default locale will be hidden from
-    | URLs. When enabled, URLs for the default locale will not include
-    | the locale prefix.
-    |
-    */
-    'hideDefaultLocaleInURL' => false,
-
-    /*
-    |--------------------------------------------------------------------------
-    | Locales Order
-    |--------------------------------------------------------------------------
-    |
-    | This array defines the order in which locales should be displayed
-    | in language selectors and other UI elements.
-    |
-    */
-    'localesOrder' => [
-        'it',
-        'en',
-    ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | UTF8 Suffix
-    |--------------------------------------------------------------------------
-    |
-    | Character set suffix to be appended to the locale for setting it
-    | as the system locale with `setlocale()`.
-    |
-    */
-    'utf8suffix' => env('LARAVELLOCALIZATION_UTF8SUFFIX', '.UTF-8'),
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> dadf311f (re-enable en)
->>>>>>> aurmich/dev
 
     // URLs which should not be processed, e.g. '/nova', '/nova/*', '/nova-api/*' or specific application URLs
     // Defaults to []
     'urlsIgnored' => ['/skipped'],
 
     'httpMethodsIgnored' => ['POST', 'PUT', 'PATCH', 'DELETE'],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 ];
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-];
-=======
-];
->>>>>>> aurmich/dev
-=======
-]; 
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
-];
->>>>>>> 54f4fa16 (.)
-=======
-]; 
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
-];
->>>>>>> dadf311f (re-enable en)
-=======
-];
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
-=======
-];
->>>>>>> 93990a83 (rebase 1/1)
-=======
-];
->>>>>>> ad93170c (rebase 10)

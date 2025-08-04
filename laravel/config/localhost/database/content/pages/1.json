@@ -1,19 +1,7 @@
 {
     "id": "1",
     "title": {
-<<<<<<< HEAD
         "it": "SaluteOra - Promozione della salute orale per le gestant2i"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "it": "SaluteOra - Promozione della salute orale per le gestant2i"
-=======
-        "it": "SaluteOra - Promozione della salute orale per le gestanti"
->>>>>>> 54f4fa16 (.)
-=======
-        "it": "SaluteOra - Promozione della salute orale per le gestant2i"
->>>>>>> fad5a9ca (fix tenant default name)
->>>>>>> aurmich/dev
     },
     "slug": "home",
     "content": null,
@@ -23,19 +11,7 @@
                 "type": "hero",
                 "data": {
                     "view": "ui::components.blocks.hero.simple",
-<<<<<<< HEAD
                     "title": "Promozione della salute orale per le gestant2i",
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    "title": "Promozione della salute orale per le gestant2i",
-=======
-                    "title": "Promozione della salute orale per le gestanti",
->>>>>>> 54f4fa16 (.)
-=======
-                    "title": "Promozione della salute orale per le gestant2i",
->>>>>>> fad5a9ca (fix tenant default name)
->>>>>>> aurmich/dev
                     "subtitle": "Un progetto dedicato alla salute orale delle gestanti in condizioni di vulnerabilità socio-economica",
                     "image": "/img/hero-bg.jpg",
                     "cta_text": "Scopri di più",

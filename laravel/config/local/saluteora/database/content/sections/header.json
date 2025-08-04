@@ -28,12 +28,6 @@
                             "type": "link"
                         },
                         {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
                             "label": "{{ __('pub_theme::header.links.Project.label') }}",
                             "url": "{{ route('pages.view',['slug'=>'progetto']) }}",
                             "type": "link"
@@ -41,49 +35,7 @@
                         {
                             "label": "Partecipanti",
                             "url": "{{ route('pages.view',['slug'=>'partners']) }}",
-<<<<<<< HEAD
                             "type": "link"
-=======
-=======
-                            "label": "Progetto",
-                            "url": "/it/pages/progetto",
-                            "type": "link"
-                        },
-                        {
-                            "label": "Partners",
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            "url": "/it/pages/partners",
->>>>>>> aurmich/dev
-=======
-                            "label": "Servizi",
-                            "url": "/servizi",
-=======
-                            "label": "Progetto",
-                            "url": "/it/pages/progetto",
->>>>>>> 802c7073 (- update name file progetto.json)
-=======
-                            "url": "/it/pages/partners",
->>>>>>> f7d3ce4f (- update landing-page;)
-                            "type": "link"
-                        },
-                        {
-                            "label": "Chi Siamo",
-                            "url": "/chi-siamo",
-=======
-                            "url": "it/pages/partners",
->>>>>>> eb36972d (- create pagina: "partners";)
-                            "type": "link"
-<<<<<<< HEAD
-                        },
-                        {
-                            "label": "Contatti",
-                            "url": "/contatti",
->>>>>>> a25008e1 (- Rename file: header, footer, home;)
-                            "type": "link"
-=======
->>>>>>> f2140a80 (- continuo style landing page;)
->>>>>>> aurmich/dev
                         }
                     ],
                     "alignment": "start",
@@ -99,46 +51,10 @@
                     "menu_items": [
                         {
                             "label": "Profilo",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
                             "url": "/it/profile",
                             "icon": "heroicon-o-user"
                         },
                         {
-<<<<<<< HEAD
-=======
-=======
-                            "url": "{{ $profiloUrl }}",
-=======
-                            "url": "/profilo",
->>>>>>> a25008e1 (- Rename file: header, footer, home;)
-=======
-                            "url": "{{ $profiloUrl }}",
->>>>>>> f7d3ce4f (- update landing-page;)
-                            "icon": "heroicon-o-user"
-                        },
-                        {
-                            "label": "Impostazioni",
-                            "url": "/impostazioni",
-                            "icon": "heroicon-o-cog-6-tooth"
-                        },
-                        {
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> a25008e1 (- Rename file: header, footer, home;)
-=======
-                            "url": "/it/profile",
-                            "icon": "heroicon-o-user"
-                        },
-                        {
->>>>>>> 97dc5c13 (-updated privacy policy paziente)
->>>>>>> aurmich/dev
                             "type": "divider"
                         },
                         {
@@ -148,40 +64,15 @@
                         }
                     ]
                 }
-<<<<<<< HEAD
             },
             {
-=======
-<<<<<<< HEAD
-            },
-            {
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
                 "name": "Dropdown Lang",
                 "type": "lang-switcher",
                 "data": {
                     "view":"pub_theme::components.blocks.language-selector",
                     "view1": "pub_theme::components.blocks.navigation.language-switcher"
                     
-<<<<<<< HEAD
                 }
-=======
-=======
-=======
->>>>>>> a25008e1 (- Rename file: header, footer, home;)
-                "name": "Selettore Lingua",
-                "type": "language-selector",
-                "data": {
-                    "view": "pub_theme::components.blocks.language-selector"
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> a25008e1 (- Rename file: header, footer, home;)
-                }
-=======
->>>>>>> f4cd9d71 (- updated testo sala d'attesa registrazione paziente)
->>>>>>> aurmich/dev
             }
         ]
     },

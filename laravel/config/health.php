@@ -148,18 +148,6 @@ return [
      */
     'secret_token' => env('HEALTH_SECRET_TOKEN') ?? null,
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
-=======
->>>>>>> ad93170c (rebase 10)
 /**
  * By default, conditionally skipped health checks are treated as failures.
  * You can override this behavior by uncommenting the configuration below.
@@ -167,32 +155,4 @@ return [
  * @link https://spatie.be/docs/laravel-health/v1/basic-usage/conditionally-running-or-modifying-checks
  */
     // 'treat_skipped_as_failure' => false
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 93990a83 (rebase 1/1)
-
-    /**
-     * By default, conditionally skipped health checks are treated as failures.
-     * You can override this behavior by uncommenting the configuration below.
-     * @link https://spatie.be/docs/laravel-health/v1/basic-usage/conditionally-running-or-modifying-checks
-     */
-    //'treat_skipped_as_failure' => false
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
-=======
->>>>>>> 93990a83 (rebase 1/1)
-=======
->>>>>>> ad93170c (rebase 10)
 ];

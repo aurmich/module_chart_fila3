@@ -33,27 +33,7 @@ return [
 
         'sqlite' => [
             'driver' => 'sqlite',
-<<<<<<< HEAD
             'url' => env('DB_URL'),
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'url' => env('DB_URL'),
-=======
-            'url' => env('DATABASE_URL'),
->>>>>>> aurmich/dev
-=======
-            'url' => env('DB_URL'),
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
-            'url' => env('DATABASE_URL'),
->>>>>>> 54f4fa16 (.)
-=======
-            'url' => env('DB_URL'),
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
->>>>>>> aurmich/dev
             'database' => env('DB_DATABASE', database_path('database.sqlite')),
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
@@ -64,13 +44,6 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
             'url' => env('DB_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
@@ -80,68 +53,6 @@ return [
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => env('DB_CHARSET', 'utf8mb4'),
             'collation' => env('DB_COLLATION', 'utf8mb4_unicode_ci'),
-<<<<<<< HEAD
-=======
-=======
-            'url' => env('DATABASE_URL'),
-=======
-            'url' => env('DB_URL'),
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'laravel'),
-            'username' => env('DB_USERNAME', 'root'),
-            'password' => env('DB_PASSWORD', ''),
-            'unix_socket' => env('DB_SOCKET', ''),
-<<<<<<< HEAD
-=======
-            'url' => env('DATABASE_URL'),
-=======
-            'url' => env('DB_URL'),
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'laravel'),
-            'username' => env('DB_USERNAME', 'root'),
-            'password' => env('DB_PASSWORD', ''),
-            'unix_socket' => env('DB_SOCKET', ''),
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => '',
-            'prefix_indexes' => true,
-            'strict' => true,
-            'engine' => null,
-            'options' => extension_loaded('pdo_mysql') ? array_filter([
-                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
-            ]) : [],
-        ],
-
-        'user' => [
-            'driver' => 'mysql',
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_USER_HOST', '127.0.0.1'),
-            'port' => env('DB_USER_PORT', '3306'),
-            'database' => env('DB_USER_DATABASE', 'saluteora_user'),
-            'username' => env('DB_USER_USERNAME', 'marco'),
-            'password' => env('DB_USER_PASSWORD', 'marco'),
-            'unix_socket' => env('DB_SOCKET', ''),
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
-            'charset' => env('DB_CHARSET', 'utf8mb4'),
-            'collation' => env('DB_COLLATION', 'utf8mb4_unicode_ci'),
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
->>>>>>> 54f4fa16 (.)
-=======
-            'charset' => env('DB_CHARSET', 'utf8mb4'),
-            'collation' => env('DB_COLLATION', 'utf8mb4_unicode_ci'),
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
->>>>>>> aurmich/dev
             'prefix' => '',
             'prefix_indexes' => true,
             'strict' => true,
@@ -171,49 +82,6 @@ return [
             ]) : [],
         ],
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        'setting' => [
-
-<<<<<<< HEAD
-=======
-        'setting' => [
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 7e1c3ad6 (- sistemato footer;)
-            'driver' => 'mysql',
-            'url' => env('SETTING_DATABASE_URL'),
-            'host' => env('SETTING_DB_HOST', '127.0.0.1'),
-            'port' => env('SETTING_DB_PORT', '3306'),
-            'database' => env('SETTING_DB_DATABASE', 'setting'),
-            'username' => env('SETTING_DB_USERNAME', 'root'),
-            'password' => env('SETTING_DB_PASSWORD', ''),
-            'unix_socket' => env('SETTING_DB_SOCKET', ''),
-            'charset' => env('SETTING_DB_CHARSET', 'utf8mb4'),
-            'collation' => env('SETTING_DB_COLLATION', 'utf8mb4_unicode_ci'),
-            'prefix' => '',
-            'prefix_indexes' => true,
-            'strict' => true,
-            'engine' => null,
-            'options' => extension_loaded('pdo_mysql') ? array_filter([
-                PDO::MYSQL_ATTR_SSL_CA => env('SETTING_MYSQL_ATTR_SSL_CA'),
-            ]) : [],
-        ],
-
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
->>>>>>> aurmich/dev
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DB_URL'),
@@ -240,52 +108,8 @@ return [
             'charset' => env('DB_CHARSET', 'utf8'),
             'prefix' => '',
             'prefix_indexes' => true,
-<<<<<<< HEAD
             // 'encrypt' => env('DB_ENCRYPT', 'yes'),
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            // 'encrypt' => env('DB_ENCRYPT', 'yes'),
-            // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
-=======
-=======
->>>>>>> 54f4fa16 (.)
-        ],
-
-        'xot' => [
-            'driver' => 'mysql',
-            'url' => env('DB_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'laravel'),
-            'username' => env('DB_USERNAME', 'root'),
-            'password' => env('DB_PASSWORD', ''),
-            'unix_socket' => env('DB_SOCKET', ''),
-            'charset' => env('DB_CHARSET', 'utf8mb4'),
-            'collation' => env('DB_COLLATION', 'utf8mb4_unicode_ci'),
-            'prefix' => '',
-            'prefix_indexes' => true,
-            'strict' => true,
-            'engine' => null,
-            'options' => extension_loaded('pdo_mysql') ? array_filter([
-                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
-            ]) : [],
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
-            // 'encrypt' => env('DB_ENCRYPT', 'yes'),
-            // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
->>>>>>> 54f4fa16 (.)
-=======
-            // 'encrypt' => env('DB_ENCRYPT', 'yes'),
-            // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
->>>>>>> aurmich/dev
         ],
 
     ],
@@ -323,31 +147,7 @@ return [
 
         'options' => [
             'cluster' => env('REDIS_CLUSTER', 'redis'),
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel')).'-database-'),
-=======
-            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
->>>>>>> 54f4fa16 (.)
-=======
-            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel')).'-database-'),
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
-            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
-=======
-            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel')).'-database-'),
->>>>>>> 93990a83 (rebase 1/1)
-=======
-            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
->>>>>>> ad93170c (rebase 10)
             'persistent' => env('REDIS_PERSISTENT', false),
         ],
 

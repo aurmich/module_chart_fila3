@@ -87,49 +87,12 @@ class CacheViews extends Command
 
 ## Cache di Dati
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 ### Cache Action (Queueable)
 ```php
 // app/Actions/CacheAction.php
 class CacheAction
 {
     use QueueableAction;
-<<<<<<< HEAD
-=======
-=======
-### Cache Service
-```php
-// app/Services/CacheService.php
-class CacheService
->>>>>>> 54f4fa16 (.)
-=======
-### Cache Action (Queueable)
-```php
-=======
-### Cache Action (Queueable)
-```php
->>>>>>> d23ba493 (add calendar)
-// app/Actions/CacheAction.php
-class CacheAction
-{
-    use QueueableAction;
-<<<<<<< HEAD
->>>>>>> 2099645a (.)
-=======
-### Cache Service
-```php
-// app/Services/CacheService.php
-class CacheService
->>>>>>> 15cb84fb (fix collisions)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 {
     protected $cache;
     protected $prefix;
@@ -159,38 +122,10 @@ class CacheService
 
 ### Cache Tags
 ```php
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 2099645a (.)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 // app/Actions/CacheTagAction.php
 class CacheTagAction
 {
     use QueueableAction;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-// app/Services/CacheTagService.php
-class CacheTagService
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 2099645a (.)
-=======
-// app/Services/CacheTagService.php
-class CacheTagService
->>>>>>> 15cb84fb (fix collisions)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 {
     protected $cache;
     

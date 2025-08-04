@@ -1,24 +1,4 @@
-<<<<<<< HEAD
 <x-filament-widgets::widget>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<x-filament-widgets::widget>
-=======
-<x-filament-widgets::widget class="!bg-[#E6EBF7]">
->>>>>>> aurmich/dev
-=======
-<x-filament-widgets::widget>
->>>>>>> b58de900 (.)
-=======
-<x-filament-widgets::widget class="!bg-[#E6EBF7]">
->>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
-=======
-<x-filament-widgets::widget>
->>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
->>>>>>> aurmich/dev
     <x-filament::section>
         <div class="max-w-4xl mx-auto">
             @if($this->canEdit())

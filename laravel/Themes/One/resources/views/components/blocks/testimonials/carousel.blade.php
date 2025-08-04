@@ -56,19 +56,7 @@
 
 <div class="relative {{ $className }}">
     @if(count($testimonials) > 0)
-<<<<<<< HEAD
         <div 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <div 
-=======
-        <x-carousel.slider 
->>>>>>> 86036e79 (✨ (CreateAdmin, EditAdmin, ListAdmins, CreateDoctor, EditDoctor, ListDoctors, CreatePatient, EditPatient, ListPatients): refactor admin, doctor, and patient resources to extend user resource classes for better code reuse and maintainability)
-=======
-        <div 
->>>>>>> 1b052af9 (♻️ (HealthCardUpload.php): remove HealthCardUpload component as it is no longer needed)
->>>>>>> aurmich/dev
             :autoplay="$autoplay"
             :autoplaySpeed="$autoplaySpeed"
             :showArrows="$showNavigation"
@@ -128,19 +116,7 @@
                     </div>
                 </div>
             @endforeach
-<<<<<<< HEAD
         </div>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        </div>
-=======
-        </x-carousel.slider>
->>>>>>> 86036e79 (✨ (CreateAdmin, EditAdmin, ListAdmins, CreateDoctor, EditDoctor, ListDoctors, CreatePatient, EditPatient, ListPatients): refactor admin, doctor, and patient resources to extend user resource classes for better code reuse and maintainability)
-=======
-        </div>
->>>>>>> 1b052af9 (♻️ (HealthCardUpload.php): remove HealthCardUpload component as it is no longer needed)
->>>>>>> aurmich/dev
     @else
         <div class="text-center py-12">
             <p class="text-gray-500">No testimonials available</p>

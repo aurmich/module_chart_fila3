@@ -4,17 +4,7 @@
         "it": "SaluteOra - Promozione della salute orale per le gestanti"
     },
     "slug": "appuntamenti-conclusi",
-<<<<<<< HEAD
     "middleware":["auth","\\Modules\\User\\Http\\Middleware\\EnsureUserHasType:doctor"],
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "middleware":["auth","\\Modules\\User\\Http\\Middleware\\EnsureUserHasType:doctor"],
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> f7d3ce4f (- update landing-page;)
->>>>>>> aurmich/dev
     "content": null,
     "content_blocks": {
         "it": [

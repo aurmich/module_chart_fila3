@@ -7,39 +7,12 @@
 [x-cloak] {
     display: none;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 
 /* Custom Filament button styles */
 @layer components {
     /* Bottoni Filament */
     .fi-btn {
-<<<<<<< HEAD
         @apply !text-white !bg-[#FF5F7E] inline-flex items-center justify-center gap-1 rounded-lg px-3 py-2 text-sm font-medium shadow-sm ring-1 ring-inset transition-colors duration-75 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-70;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        @apply !text-white !bg-[#FF5F7E] inline-flex items-center justify-center gap-1 rounded-lg px-3 py-2 text-sm font-medium shadow-sm ring-1 ring-inset transition-colors duration-75 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-70;
-=======
-        @apply inline-flex items-center justify-center gap-1 rounded-lg px-3 py-2 text-sm font-medium shadow-sm ring-1 ring-inset transition-colors duration-75 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-70;
->>>>>>> 54f4fa16 (.)
-=======
-        @apply inline-flex items-center justify-center gap-1 rounded-lg px-3 py-2 text-sm font-medium shadow-sm ring-1 ring-inset transition-colors duration-75 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-70;
->>>>>>> d23ba493 (add calendar)
-=======
-        @apply !text-white !bg-[#0D9488] inline-flex items-center justify-center gap-1 rounded-lg px-3 py-2 text-sm font-medium shadow-sm ring-1 ring-inset transition-colors duration-75 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-70;
->>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
-=======
-        @apply !text-white !bg-[#FF5F7E] inline-flex items-center justify-center gap-1 rounded-lg px-3 py-2 text-sm font-medium shadow-sm ring-1 ring-inset transition-colors duration-75 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-70;
->>>>>>> 89a8313a (- update primary colors)
->>>>>>> aurmich/dev
     }
 
     .fi-btn-primary {
@@ -68,64 +41,16 @@
     }
 
     .login-button {
-<<<<<<< HEAD
         @apply w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white !bg-[#0D9488] hover:bg-[#0D9488];
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        @apply w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white !bg-[#0D9488] hover:bg-[#0D9488];
-=======
-        @apply w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500;
->>>>>>> 54f4fa16 (.)
-=======
-        @apply w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500;
->>>>>>> d23ba493 (add calendar)
-=======
-        @apply w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white !bg-[#0D9488] hover:bg-[#0D9488];
->>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
->>>>>>> aurmich/dev
     }
 
     /* Bottoni generici */
     .btn {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
         @apply inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium shadow-sm !bg-[#0D9488] focus:outline-none focus:ring-2 focus:ring-offset-2;
     }
 
     .btn-primary {
         @apply bg-[#FF5F7E] text-white px-4 py-2 rounded-lg;
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> d23ba493 (add calendar)
-        @apply inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2;
-    }
-
-    .btn-primary {
-        @apply bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> d23ba493 (add calendar)
-=======
-        @apply inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium shadow-sm !bg-[#0D9488] focus:outline-none focus:ring-2 focus:ring-offset-2;
-    }
-
-    .btn-primary {
-<<<<<<< HEAD
-        @apply bg-[#0D9488] text-white px-4 py-2 rounded-lg;
->>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
-=======
-        @apply bg-[#FF5F7E] text-white px-4 py-2 rounded-lg;
->>>>>>> 89a8313a (- update primary colors)
->>>>>>> aurmich/dev
     }
 
     .btn-secondary {
@@ -150,27 +75,7 @@
     }
 
     .input-primary {
-<<<<<<< HEAD
         @apply border-gray-300 focus:!border-[#FF5F7E] rounded-lg shadow-sm;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        @apply border-gray-300 focus:!border-[#FF5F7E] rounded-lg shadow-sm;
-=======
-        @apply border-gray-300 focus:border-primary-500 focus:ring-primary-500 rounded-lg shadow-sm;
->>>>>>> 54f4fa16 (.)
-=======
-        @apply border-gray-300 focus:border-primary-500 focus:ring-primary-500 rounded-lg shadow-sm;
->>>>>>> d23ba493 (add calendar)
-=======
-        @apply border-gray-300 focus:!border-[#0D9488] rounded-lg shadow-sm;
->>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
-=======
-        @apply border-gray-300 focus:!border-[#FF5F7E] rounded-lg shadow-sm;
->>>>>>> 89a8313a (- update primary colors)
->>>>>>> aurmich/dev
     }
 
     .card {
@@ -208,14 +113,6 @@
     .fi-checkbox {
         @apply h-4 w-4 rounded border-gray-300 text-primary-600 focus:ring-primary-600 dark:border-white/10 dark:bg-white/5 dark:focus:ring-offset-white/10;
     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
->>>>>>> aurmich/dev
 
     .fi-fo-wizard-header {
         @apply hidden sm:grid !important;
@@ -226,59 +123,11 @@
     .mobile-friendly-wizard {
         @apply overflow-x-auto;
     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-
-
-        /* Cambia colore e dimensione dei bottoni */
-    .fc-button {
-        padding: 0.5em 1em !important; /* Dimensione */
-        background-color: #4f46e5 !important; /* Colore primario (es. indigo-600) */
-        border-color: #4f46e5 !important;
-        font-size: 0.875rem !important; /* Testo più piccolo */
-    }
-
-    /* Bottoni hover/active */
-    .fc-button:hover, .fc-button:active {
-        background-color: #4338ca !important;
-    }
-
-    /* Bottoni specifici */
-    .fc-prev-button, .fc-next-button {
-        background-color: #ef4444 !important; /* Rosso per prev/next */
-    }
->>>>>>> 0cff2983 (📝 (docs): remove unused Blade file for appointments to clean up the codebase)
-    
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> d23ba493 (add calendar)
-=======
-    
->>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
-=======
->>>>>>> a391bebd (- updated buttons full calendar color)
->>>>>>> aurmich/dev
 }
 
 
 @layer base {
     :root {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6a8817e6 (- creata pagina dettaglio dottore)
->>>>>>> aurmich/dev
         --color-primary-50:  255 95 126;
         --color-primary-100: 255 95 126;
         --color-primary-200: 255 95 126;
@@ -290,30 +139,6 @@
         --color-primary-800: 255 95 126;
         --color-primary-900: 255 95 126;
         --color-primary-950: 255 95 126;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> d23ba493 (add calendar)
-        --color-primary-50: 236 253 245;
-        --color-primary-100: 209 250 229;
-        --color-primary-200: 167 243 208;
-        --color-primary-300: 110 231 183;
-        --color-primary-400: 52 211 153;
-        --color-primary-500: 16 185 129;
-        --color-primary-600: 5 150 105;
-        --color-primary-700: 4 120 87;
-        --color-primary-800: 6 95 70;
-        --color-primary-900: 6 78 59;
-        --color-primary-950: 2 44 34;
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> d23ba493 (add calendar)
-=======
->>>>>>> 6a8817e6 (- creata pagina dettaglio dottore)
->>>>>>> aurmich/dev
 
         --color-danger-50: 254 242 242;
         --color-danger-100: 254 226 226;
@@ -380,23 +205,7 @@
     }
 
     a {
-<<<<<<< HEAD
         @apply text-primary-600;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        @apply text-primary-600;
-=======
-        @apply text-primary-600 hover:text-primary-900;
->>>>>>> 54f4fa16 (.)
-=======
-        @apply text-primary-600 hover:text-primary-900;
->>>>>>> d23ba493 (add calendar)
-=======
-        @apply text-primary-600;
->>>>>>> b2a39a21 (- update footer)
->>>>>>> aurmich/dev
     }
 
     /* Form */
@@ -407,39 +216,11 @@
     input[type="tel"],
     input[type="url"],
     textarea {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
         @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-[#FF5F7E] focus:ring-[#FF5F7E] sm:text-sm;
     }
 
     select {
         @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-[#FF5F7E] focus:ring-[#FF5F7E] sm:text-sm;
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> d23ba493 (add calendar)
-        @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm;
-    }
-
-    select {
-        @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm;
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> d23ba493 (add calendar)
-=======
-        @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-[#FF5F7E] focus:ring-[#FF5F7E] sm:text-sm;
-    }
-
-    select {
-        @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-[#FF5F7E] focus:ring-[#FF5F7E] sm:text-sm;
->>>>>>> 89a8313a (- update primary colors)
->>>>>>> aurmich/dev
     }
 
     label {
@@ -471,64 +252,20 @@
     .fi-section {
         @apply rounded-xl bg-white shadow-sm ring-1 ring-gray-950/5 dark:bg-gray-900 dark:ring-white/10;
     }
-<<<<<<< HEAD
     .fi-btn {
         @apply !text-white;
     }
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    .fi-btn {
-        @apply !text-white;
-    }
-=======
-
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> d23ba493 (add calendar)
-=======
-    .fi-btn {
-        @apply !text-white;
-    }
->>>>>>> a25008e1 (- Rename file: header, footer, home;)
->>>>>>> aurmich/dev
     .fi-section-header {
         @apply border-b border-gray-200 px-4 py-2.5 dark:border-white/10 sm:px-6;
     }
 
     .fi-section-content {
-<<<<<<< HEAD
         @apply bg-white px-4 py-6 sm:px-6;
     }
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        @apply bg-white px-4 py-6 sm:px-6;
-    }
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     .filament-fullcalendar {
         --fc-small-font-size: 0.85em;
         --fc-page-bg-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
         --fc-neutral-bg-color: transparent;
-<<<<<<< HEAD
-=======
-=======
-    .filament-fullcalendar {
-        --fc-small-font-size: 0.85em;
-        --fc-page-bg-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-<<<<<<< HEAD
-        --fc-neutral-bg-color: rgba(var(--gray-50), var(--tw-bg-opacity));
->>>>>>> 97dc5c13 (-updated privacy policy paziente)
-=======
-        --fc-neutral-bg-color: transparent;
->>>>>>> 0c7257a8 (- updated testi sale d'attesa)
->>>>>>> aurmich/dev
         --fc-neutral-text-color: grey;
         --fc-border-color: rgba(var(--gray-200));
         --fc-button-text-color: #fff;
@@ -553,60 +290,5 @@
         --fc-highlight-color: rgba(var(--primary-500), 0.1);
         --fc-today-bg-color: rgba(var(--primary-500), 0.2);
         --fc-now-indicator-color: red;
-<<<<<<< HEAD
     }
 }
-=======
-<<<<<<< HEAD
-=======
-
-    .filepond--item[data-filepond-item-state="processing-complete"] .filepond--panel {
-        background-color: #FF5F7E !important; 
->>>>>>> aurmich/dev
-=======
-        @apply px-4 py-6 sm:px-6;
->>>>>>> 54f4fa16 (.)
-=======
-        @apply bg-[#E6EBF7] px-4 py-6 sm:px-6;
->>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
-=======
->>>>>>> 97dc5c13 (-updated privacy policy paziente)
-    }
-}
-=======
->>>>>>> 15cb84fb (fix collisions)
-=======
-        @apply bg-[#E6EBF7] px-4 py-6 sm:px-6;
-=======
-        @apply bg-white px-4 py-6 sm:px-6;
-    }
-<<<<<<< HEAD
-    .fi-icon-btn {
-        @apply !bg-transparent !border-transparent;
-    }
-    .fi-fo-wizard-header-step-label {
-        @apply !text-[#FF5F7E];
-    }
-    .fi-fo-wizard-header-step-icon {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        @apply !border-[#0D9488];
->>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
-=======
-        @apply !border-[#FF5F7E];
-=======
-        @apply !border-[#FF5F7E] !text-[#FF5F7E];
->>>>>>> 6a8817e6 (- creata pagina dettaglio dottore)
-    }
-    .fi-input {
-        @apply focus:border-[#FF5F7E] focus:ring-[#FF5F7E];
->>>>>>> 89a8313a (- update primary colors)
-=======
-
-    .filepond--item[data-filepond-item-state="processing-complete"] .filepond--panel {
-        background-color: #FF5F7E !important; 
->>>>>>> c0c82b7e (- updated template email)
-    }
-}
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev

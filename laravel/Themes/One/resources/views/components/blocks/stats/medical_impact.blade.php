@@ -132,23 +132,8 @@
                         </svg>
                     </div>
                     <div>
-<<<<<<< HEAD
                         <p class="font-medium text-gray-900">@lang('pub_theme::components.stats.medical_impact.patronage')</p>
                         <p class="text-sm text-gray-600">@lang('pub_theme::components.stats.medical_impact.ministry_of_health')</p>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        <p class="font-medium text-gray-900">@lang('pub_theme::components.stats.medical_impact.patronage')</p>
-                        <p class="text-sm text-gray-600">@lang('pub_theme::components.stats.medical_impact.ministry_of_health')</p>
-=======
-                        <p class="font-medium text-gray-900">Patrocinio</p>
-                        <p class="text-sm text-gray-600">Ministero della Salute</p>
->>>>>>> aurmich/dev
-=======
-                        <p class="font-medium text-gray-900">Patrocinio</p>
-                        <p class="text-sm text-gray-600">Ministero della Salute</p>
->>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
->>>>>>> aurmich/dev
                     </div>
                 </div>
 
@@ -160,23 +145,8 @@
                         </svg>
                     </div>
                     <div>
-<<<<<<< HEAD
                         <p class="font-medium text-gray-900">@lang('pub_theme::components.stats.medical_impact.integrated_with')</p>
                         <p class="text-sm text-gray-600">@lang('pub_theme::components.stats.medical_impact.national_health_service')</p>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        <p class="font-medium text-gray-900">@lang('pub_theme::components.stats.medical_impact.integrated_with')</p>
-                        <p class="text-sm text-gray-600">@lang('pub_theme::components.stats.medical_impact.national_health_service')</p>
-=======
-                        <p class="font-medium text-gray-900">Integrato con</p>
-                        <p class="text-sm text-gray-600">Sistema Sanitario Nazionale</p>
->>>>>>> aurmich/dev
-=======
-                        <p class="font-medium text-gray-900">Integrato con</p>
-                        <p class="text-sm text-gray-600">Sistema Sanitario Nazionale</p>
->>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
->>>>>>> aurmich/dev
                     </div>
                 </div>
 
@@ -188,23 +158,8 @@
                         </svg>
                     </div>
                     <div>
-<<<<<<< HEAD
                         <p class="font-medium text-gray-900">@lang('pub_theme::components.stats.medical_impact.certification')</p>
                         <p class="text-sm text-gray-600">@lang('pub_theme::components.stats.medical_impact.iso_9001_2015')</p>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        <p class="font-medium text-gray-900">@lang('pub_theme::components.stats.medical_impact.certification')</p>
-                        <p class="text-sm text-gray-600">@lang('pub_theme::components.stats.medical_impact.iso_9001_2015')</p>
-=======
-                        <p class="font-medium text-gray-900">Certificazione</p>
-                        <p class="text-sm text-gray-600">ISO 9001:2015</p>
->>>>>>> aurmich/dev
-=======
-                        <p class="font-medium text-gray-900">Certificazione</p>
-                        <p class="text-sm text-gray-600">ISO 9001:2015</p>
->>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
->>>>>>> aurmich/dev
                     </div>
                 </div>
             </div>

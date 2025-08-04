@@ -18,32 +18,12 @@ new class extends Component
 
         <div class="flex items-center justify-center w-full pt-24">
             <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
                 <h1 class="text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100 sm:text-6xl">
                     @lang('pub_theme::about.subtitle')
                 </h1>
                 <p class="relative mt-6 text-lg leading-8 text-slate-600 dark:text-slate-400 sm:max-w-md lg:max-w-none">
                     @lang('pub_theme::about.description')
                 </p>
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 54f4fa16 (.)
-                <h1 class="text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100 sm:text-6xl">Built with
-                    the TALL stack including Folio and Volt</h1>
-                <p class="relative mt-6 text-lg leading-8 text-slate-600 dark:text-slate-400 sm:max-w-md lg:max-w-none">
-                    Genesis combines the power of Laravel, the TALL Stack, Folio, and Volt. This powerful combination
-                    will help you bring your ideas to life effortlessly.</p>
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
             </div>
         </div>
 
@@ -56,25 +36,8 @@ new class extends Component
                         </svg>
                     </span>
                     <span class="flex flex-col justify-center h-full opacity-70 dark:opacity-80 group-hover:opacity-100 text-[0.65rem]">
-<<<<<<< HEAD
                         <span class="relative flex items-center mt-0 mb-0.5 text-sm font-semibold leading-none text-gray-900 dark:text-gray-100">@lang('pub_theme::about.docs.laravel.title')</span>
                         <span class="inline-flex items-center font-normal leading-none text-gray-700 dark:text-gray-200">@lang('pub_theme::about.docs.laravel.link')</span>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        <span class="relative flex items-center mt-0 mb-0.5 text-sm font-semibold leading-none text-gray-900 dark:text-gray-100">@lang('pub_theme::about.docs.laravel.title')</span>
-                        <span class="inline-flex items-center font-normal leading-none text-gray-700 dark:text-gray-200">@lang('pub_theme::about.docs.laravel.link')</span>
-=======
-                        <span class="relative flex items-center mt-0 mb-0.5 text-sm font-semibold leading-none text-gray-900 dark:text-gray-100">Laravel</span>
-                        <span href="https://laravel.com/docs" class="inline-flex items-center font-normal leading-none text-gray-700 dark:text-gray-200">View
-                            the Docs</span>
->>>>>>> aurmich/dev
-=======
-                        <span class="relative flex items-center mt-0 mb-0.5 text-sm font-semibold leading-none text-gray-900 dark:text-gray-100">Laravel</span>
-                        <span href="https://laravel.com/docs" class="inline-flex items-center font-normal leading-none text-gray-700 dark:text-gray-200">View
-                            the Docs</span>
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
                     </span>
                 </a>
             </div>
@@ -103,25 +66,8 @@ new class extends Component
                         </svg>
                     </span>
                     <span class="flex flex-col justify-center h-full opacity-70 dark:opacity-80 group-hover:opacity-100 text-[0.65rem]">
-<<<<<<< HEAD
                         <span class="relative flex items-center mt-0 mb-0.5 text-sm font-semibold leading-none text-gray-900 dark:text-gray-100">@lang('pub_theme::about.docs.livewire.title')</span>
                         <span class="inline-flex items-center font-normal leading-none text-gray-700 dark:text-gray-200">@lang('pub_theme::about.docs.livewire.link')</span>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        <span class="relative flex items-center mt-0 mb-0.5 text-sm font-semibold leading-none text-gray-900 dark:text-gray-100">@lang('pub_theme::about.docs.livewire.title')</span>
-                        <span class="inline-flex items-center font-normal leading-none text-gray-700 dark:text-gray-200">@lang('pub_theme::about.docs.livewire.link')</span>
-=======
-                        <span class="relative flex items-center mt-0 mb-0.5 text-sm font-semibold leading-none text-gray-900 dark:text-gray-100">Livewire</span>
-                        <span href="https://laravel.com/docs" class="inline-flex items-center font-normal leading-none text-gray-700 dark:text-gray-200">View
-                            the Docs</span>
->>>>>>> aurmich/dev
-=======
-                        <span class="relative flex items-center mt-0 mb-0.5 text-sm font-semibold leading-none text-gray-900 dark:text-gray-100">Livewire</span>
-                        <span href="https://laravel.com/docs" class="inline-flex items-center font-normal leading-none text-gray-700 dark:text-gray-200">View
-                            the Docs</span>
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
                     </span>
                 </a>
             </div>
@@ -134,25 +80,8 @@ new class extends Component
                         </svg>
                     </span>
                     <span class="flex flex-col justify-center h-full opacity-70 dark:opacity-80 group-hover:opacity-100 text-[0.65rem]">
-<<<<<<< HEAD
                         <span class="relative flex items-center mt-0 mb-0.5 text-sm font-semibold leading-none text-gray-900 dark:text-gray-100">@lang('pub_theme::about.docs.alpine.title')</span>
                         <span class="inline-flex items-center font-normal leading-none text-gray-700 dark:text-gray-200">@lang('pub_theme::about.docs.alpine.link')</span>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        <span class="relative flex items-center mt-0 mb-0.5 text-sm font-semibold leading-none text-gray-900 dark:text-gray-100">@lang('pub_theme::about.docs.alpine.title')</span>
-                        <span class="inline-flex items-center font-normal leading-none text-gray-700 dark:text-gray-200">@lang('pub_theme::about.docs.alpine.link')</span>
-=======
-                        <span class="relative flex items-center mt-0 mb-0.5 text-sm font-semibold leading-none text-gray-900 dark:text-gray-100">Alpine</span>
-                        <span href="https://laravel.com/docs" class="inline-flex items-center font-normal leading-none text-gray-700 dark:text-gray-200">View
-                            the Docs</span>
->>>>>>> aurmich/dev
-=======
-                        <span class="relative flex items-center mt-0 mb-0.5 text-sm font-semibold leading-none text-gray-900 dark:text-gray-100">Alpine</span>
-                        <span href="https://laravel.com/docs" class="inline-flex items-center font-normal leading-none text-gray-700 dark:text-gray-200">View
-                            the Docs</span>
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
                     </span>
                 </a>
             </div>
@@ -171,25 +100,8 @@ new class extends Component
                         </svg>
                     </span>
                     <span class="flex flex-col justify-center h-full opacity-70 dark:opacity-80 group-hover:opacity-100 text-[0.65rem]">
-<<<<<<< HEAD
                         <span class="relative flex items-center mt-0 mb-0.5 text-sm font-semibold leading-none text-gray-900 dark:text-gray-100">@lang('pub_theme::about.docs.tailwind.title')</span>
                         <span class="inline-flex items-center font-normal leading-none text-gray-700 dark:text-gray-200">@lang('pub_theme::about.docs.tailwind.link')</span>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        <span class="relative flex items-center mt-0 mb-0.5 text-sm font-semibold leading-none text-gray-900 dark:text-gray-100">@lang('pub_theme::about.docs.tailwind.title')</span>
-                        <span class="inline-flex items-center font-normal leading-none text-gray-700 dark:text-gray-200">@lang('pub_theme::about.docs.tailwind.link')</span>
-=======
-                        <span class="relative flex items-center mt-0 mb-0.5 text-sm font-semibold leading-none text-gray-900 dark:text-gray-100">Tailwind</span>
-                        <span href="https://laravel.com/docs" class="inline-flex items-center font-normal leading-none text-gray-700 dark:text-gray-200">View
-                            the Docs</span>
->>>>>>> aurmich/dev
-=======
-                        <span class="relative flex items-center mt-0 mb-0.5 text-sm font-semibold leading-none text-gray-900 dark:text-gray-100">Tailwind</span>
-                        <span href="https://laravel.com/docs" class="inline-flex items-center font-normal leading-none text-gray-700 dark:text-gray-200">View
-                            the Docs</span>
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
                     </span>
                 </a>
             </div>
@@ -234,16 +146,4 @@ new class extends Component
         </div>
 
     </div>
-<<<<<<< HEAD
 </x-layouts.marketing>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-</x-layouts.marketing>
-=======
-</x-layouts.marketing>
->>>>>>> aurmich/dev
-=======
-</x-layouts.marketing>
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev

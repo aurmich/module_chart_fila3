@@ -14,19 +14,7 @@
 
 @props([
     'title' => 'Hai domande sulla privacy?',
-<<<<<<< HEAD
     'subtitle' => __('pub_theme::components.cta.privacy_contact.subtitle'),
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    'subtitle' => __('pub_theme::components.cta.privacy_contact.subtitle'),
-=======
-    'subtitle' => 'Il nostro team è qui per aiutarti con qualsiasi dubbio',
->>>>>>> aurmich/dev
-=======
-    'subtitle' => 'Il nostro team è qui per aiutarti con qualsiasi dubbio',
->>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
->>>>>>> aurmich/dev
     'type' => 'privacy'
 ])
 

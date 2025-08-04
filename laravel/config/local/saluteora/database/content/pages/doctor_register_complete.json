@@ -12,80 +12,18 @@
                 "data": {
                     "view": "pub_theme::components.blocks.hero.modern_hero",
                     "title": {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
                         "it": "Hai completato la tua registrazione!",
                         "en": "You have completed your registration!"
                     },
                     "subtitle": {
                         "it": "Grazie per aver effettuato la registrazione. La tua richiesta è in fase di verifica. Riceverai una email di conferma dal backoffice!",
                         "en": "Thank you for registering. Your request is currently being reviewed. You will receive a confirmation email from the back office!"
-<<<<<<< HEAD
-=======
-=======
-                        "it": "Hai completato il primo step della registrazione!",
-                        "en": "You have completed the first step of the registration!"
-                    },
-                    "subtitle": {
-                        "it": "Grazie per esserti unito alla nostra community. La tua richiesta è in fase di verifica. Riceverai una email dal backoffice con tutte le informazioni per completare la registrazione!",
-                        "en": "Thank you for joining our community. Your request is currently being reviewed. You will receive an email from our back office with all the information needed to complete your registration!"
->>>>>>> aurmich/dev
-=======
-                        "it": "Registrazione Completata con Successo!",
-                        "en": "Registration Completed Successfully!"
-                    },
-                    "subtitle": {
-                        "it": "Grazie per esserti unito alla nostra community. La tua richiesta è in fase di verifica.",
-                        "en": "Thank you for joining our community. Your request is being processed."
->>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
-=======
-                        "it": "Hai completato il primo step della registrazione!",
-                        "en": "You have completed the first step of the registration!"
-                    },
-                    "subtitle": {
-                        "it": "Grazie per esserti unito alla nostra community. La tua richiesta è in fase di verifica. Riceverai una email dal backoffice con tutte le informazioni per completare la registrazione!",
-                        "en": "Thank you for joining our community. Your request is currently being reviewed. You will receive an email from our back office with all the information needed to complete your registration!"
->>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
-=======
-                        "it": "Hai completato la tua registrazione!",
-                        "en": "You have completed your registration!"
-                    },
-                    "subtitle": {
-<<<<<<< HEAD
-                        "it": "Grazie per esserti unito alla nostra community. La tua richiesta è in fase di verifica. Riceverai una email di conferma dal backoffice!",
-                        "en": "Thank you for joining our community. Your request is currently being reviewed. You will receive a confirmation email from the back office!"
->>>>>>> 0c7257a8 (- updated testi sale d'attesa)
->>>>>>> aurmich/dev
-=======
-                        "it": "Grazie per aver effettuato la registrazione. La tua richiesta è in fase di verifica. Riceverai una email di conferma dal backoffice!",
-                        "en": "Thank you for registering. Your request is currently being reviewed. You will receive a confirmation email from the back office!"
->>>>>>> c35af15d (- updated sala d'attesa dentista)
                     },
                     "image": "/img/registration-complete.jpg",
                     "cta": [
                         {
-<<<<<<< HEAD
                             "it": "Torna alla Home",
                             "en": "Go back to Home"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            "it": "Torna alla Home",
-                            "en": "Go back to Home"
-=======
-                            "it": "Vai alla tua area personale",
-                            "en": "Go to your dashboard"
->>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
-=======
-                            "it": "Torna alla Home",
-                            "en": "Go back to Home"
->>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
->>>>>>> aurmich/dev
                         },
                         "#"
                     ],
