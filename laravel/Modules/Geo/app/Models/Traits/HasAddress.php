@@ -4,10 +4,30 @@ declare(strict_types=1);
 
 namespace Modules\Geo\Models\Traits;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
 use Webmozart\Assert\Assert;
 use Modules\Geo\Models\Address;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
+<<<<<<< HEAD
+=======
+=======
+use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Modules\Geo\Models\Address;
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+use Modules\Geo\Models\Address;
+use Illuminate\Database\Eloquent\Relations\MorphOne;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+>>>>>>> aurmich/dev
 
 /**
  * Trait HasAddress
@@ -31,6 +51,13 @@ trait HasAddress
     }
     
     /**
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+>>>>>>> aurmich/dev
      * Ottiene indirizzo associato al modello.
      *
      * @return \Illuminate\Database\Eloquent\Relations\MorphOne
@@ -41,18 +68,42 @@ trait HasAddress
     }
     
     /**
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+>>>>>>> aurmich/dev
      * Ottiene l'indirizzo principale del modello.
      *
      * @return \Modules\Geo\Models\Address|null
      */
     public function primaryAddress(): ?Address
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
         $res= $this->addresses()->where('is_primary', true)->first();
         if($res==null){
             return $res;
         }
         Assert::isInstanceOf($res, Address::class);
         return $res;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+        return $this->addresses()->where('is_primary', true)->first();
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
     }
     
     /**
@@ -63,6 +114,11 @@ trait HasAddress
     public function getFullAddress(): ?string
     {
         $address = $this->primaryAddress();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
         return $address ? $address->getFullAddress() : null;
     }
 
@@ -76,13 +132,43 @@ trait HasAddress
         if($address==null){
             return null;
         }
+<<<<<<< HEAD
         /** @phpstan-ignore method.notFound */
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        /** @phpstan-ignore method.notFound */
+=======
+>>>>>>> 23f43388 (feat: add openingHoursField to studiorelationmanager of doctorresource)
+=======
+        /** @phpstan-ignore-next-line */
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
         $locality=$address->getLocality();
         if($locality==null){
             return null;
         }
+<<<<<<< HEAD
         /** @phpstan-ignore property.notFound, property.notFound */
         return $address->street_address.' '.$address->street_number.' '.implode('',$locality['cap']).' '.$locality['nome'].' ('.$locality['provincia']['nome'].') - '.$locality['regione']['nome'];
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        /** @phpstan-ignore property.notFound, property.notFound */
+=======
+        /** @phpstan-ignore-next-line */
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+        return $address->street_address.' '.$address->street_number.' '.implode('',$locality['cap']).' '.$locality['nome'].' ('.$locality['provincia']['nome'].') - '.$locality['regione']['nome'];
+=======
+        return $address ? $address->getFormattedAddress() : null;
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+        return $address ? $address->getFullAddress() : null;
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+        return $address->street_address.' '.$address->street_number.' '.implode('',$locality['cap']).' '.$locality['nome'].' ('.$locality['provincia']['nome'].') - '.$locality['regione']['nome'];
+>>>>>>> 23f43388 (feat: add openingHoursField to studiorelationmanager of doctorresource)
+>>>>>>> aurmich/dev
     }
     
     /**
@@ -192,7 +278,19 @@ trait HasAddress
                 $this->addresses()->update(['is_primary' => false]);
             }
         }
+<<<<<<< HEAD
         /** @phpstan-ignore return.type */
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        /** @phpstan-ignore return.type */
+=======
+        
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+        /** @phpstan-ignore-next-line */
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
         return $this->addresses()->create($data);
     }
     

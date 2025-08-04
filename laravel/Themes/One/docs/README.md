@@ -31,6 +31,13 @@ Il tema "laraxot/theme_one_fila3" è un pacchetto riutilizzabile e multiprogetto
 
 ## Introduzione
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 Questo tema è un pacchetto riutilizzabile sviluppato da Laraxot e utilizzato in diversi progetti, incluso il progetto. Il nome del pacchetto è `laraxot/theme_one_fila3` e non deve essere modificato poiché è utilizzato anche in altri progetti.
 
 ---
@@ -117,7 +124,20 @@ Questo tema è un tema Laravel/Filament riutilizzabile, pensato per essere usato
 
 ## Dipendenze CSS
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 # Installazione dipendenze Filament
 npm install tailwindcss@3 @tailwindcss/forms @tailwindcss/typography postcss postcss-nesting autoprefixer --save-dev
 ```
@@ -128,10 +148,25 @@ npm install tailwindcss@3 @tailwindcss/forms @tailwindcss/typography postcss pos
 - [Componenti UI](./COMPONENTS.md)
 - [Gestione Asset](./ASSETS.md)
 - [Gestione Contenuti JSON](./JSON_CONTENT.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 - [Sistema di Traduzioni](./i18n.md)
 - [Language Switcher Implementation](./language-switcher-implementation.md)
 - [Traduzioni Opening Hours](./opening_hours_translations_improvement.md)
 - [Migliorie Traduzioni](./translation_improvements.md)
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 
 ## Installazione
 
@@ -204,6 +239,15 @@ php artisan test --testsuite=theme-one
 ## Introduzione
 
 Il Tema One è il tema predefinito per il progetto, basato su Filament 3.3. Questo tema fornisce un'interfaccia moderna e responsive per il frontend del sito.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+Il Tema One è il tema predefinito per <nome progetto>, basato su Filament 3.3. Questo tema fornisce un'interfaccia moderna e responsive per il frontend del sito.
+>>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 
 ## Requisiti
 
@@ -434,6 +478,13 @@ Il tema One si integra con il modulo CMS per la gestione dei contenuti. I conten
 
 ## Supporto
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 Per supporto tecnico, contattare il team il progetto.
 
 # Tema One
@@ -473,6 +524,12 @@ Per supporto tecnico, contattare il team il progetto.
   - `resources/views/filament/`: Componenti e widget Filament personalizzati
   - Tutti i componenti seguono le convenzioni di stile di Filament
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 ### Traduzioni
 - **Sistema Completo I18n**
   - Supporto per italiano (it) e inglese (en)
@@ -480,6 +537,15 @@ Per supporto tecnico, contattare il team il progetto.
   - Namespace `pub_theme::` per accesso alle traduzioni
   - [Documentazione Traduzioni Auth](./auth-translations.md)
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 ### Stili
 - **CSS**
   - Utilizzo dei preset Filament per Tailwind
@@ -610,3 +676,12 @@ Per supporto tecnico, contattare il team il progetto.
 - **Etica**: Ogni contributo deve essere guidato da onestà, rispetto, responsabilità e attenzione all'impatto sociale e ambientale.
 - **Zen**: Si valorizza la semplicità, la concentrazione sul presente, l'armonia tra le parti e la serenità nel processo di sviluppo.
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+Per supporto tecnico, contattare il team <nome progetto>. 
+>>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev

@@ -312,7 +312,14 @@ public function generateDashboard()
     ]);
 }
 ``` 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # API del Modulo Chart
 
 Questo documento descrive le principali API disponibili nel modulo Chart, fornendo riferimenti e esempi di utilizzo.
@@ -627,7 +634,14 @@ public function generateDashboard()
     ]);
 }
 ``` 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ## Collegamenti tra versioni di api.md
 * [api.md](../../../Gdpr/docs/api.md)
 * [api.md](../../../Dental/docs/api.md)

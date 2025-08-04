@@ -33,7 +33,14 @@
 ## 💻 Installazione
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 # Clona il repository
 git clone git@github.com:aurmich/bashscripts_fila3.git
 
@@ -83,7 +90,14 @@ Esempio:
 
 ### Sincronizzazione Modulo
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 # Sincronizza un modulo specifico
 ./git_sync_subtree.sh modules/users git@github.com:org/users.git
 
@@ -210,7 +224,14 @@ php artisan migrate
 
 ### 7. Install Modules
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 # Install Laravel Modules
 composer require nwidart/laravel-modules
 
@@ -286,7 +307,14 @@ Complete documentation is available in the `docs/` directory:
 
 ### Useful Commands
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 # Create a new module
 php artisan module:make ModuleName
 
@@ -371,7 +399,14 @@ This toolkit addresses these challenges by providing automated tools that simpli
 ## 💻 Installazione
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 # Clona il repository
 git clone git@github.com:aurmich/bashscripts_fila3.git
 
@@ -421,7 +456,14 @@ Esempio:
 
 ### Sincronizzazione Modulo
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 # Sincronizza un modulo specifico
 ./git_sync_subtree.sh modules/users git@github.com:org/users.git
 
@@ -548,7 +590,14 @@ php artisan migrate
 
 ### 7. Install Modules
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 # Install Laravel Modules
 composer require nwidart/laravel-modules
 
@@ -624,7 +673,14 @@ Complete documentation is available in the `docs/` directory:
 
 ### Useful Commands
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 # Create a new module
 php artisan module:make ModuleName
 

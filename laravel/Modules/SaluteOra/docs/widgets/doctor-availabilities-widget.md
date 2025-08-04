@@ -209,7 +209,11 @@ public function getFormSchema(): array
                     ->required()
                     ->seconds(false),
                 'effective_date' => DatePicker::make('effective_date')
+<<<<<<< HEAD
                     // Traduzione automatica dal file di lingua
+=======
+                    ->label('Data di Validità')
+>>>>>>> aurmich/dev
                     ->helperText('Da quando è valida questa disponibilità'),
             ]),
     ];

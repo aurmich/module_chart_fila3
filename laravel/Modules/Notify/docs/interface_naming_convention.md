@@ -38,7 +38,14 @@ Per garantire la conformità a questa convenzione:
 Per verificare la corretta implementazione:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 # Cerca interfacce con naming errato
 grep -r "interface.*Interface" --include="*.php" /var/www/html/saluteora/laravel/Modules
 

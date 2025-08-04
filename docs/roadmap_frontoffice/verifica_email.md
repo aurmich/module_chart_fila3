@@ -47,7 +47,14 @@ class EmailVerificationService
 
 ### Step 2: Email Template Ottimizzato
 ```yaml
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Email Template Structure
 Subject: "Conferma il tuo account SaluteOra"
 Header: Logo SaluteOra + branding
@@ -210,7 +217,14 @@ const EmailVerification = () => {
 
 ### Misure di Sicurezza
 ```yaml
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Security Features
 Token Security: SHA-256 hash con 60 caratteri random
 Time Limitation: Token validi per 24 ore massimo
@@ -252,7 +266,14 @@ CREATE TABLE email_verification_logs (
 
 ### Provider Configuration
 ```yaml
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Email Service Setup
 Primary Provider: Amazon SES (alta deliverability)
 Backup Provider: Mailgun (ridondanza)
@@ -307,7 +328,14 @@ class EmailDeliveryTracker
 
 ### Performance KPIs
 ```yaml
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Verification Metrics (Current)
 Email Delivery Rate: 99.1% (SES performance)
 Verification Completion: 87.3% utenti verificano entro 24h
@@ -333,7 +361,14 @@ Mobile Opens: 68.4% aperture da mobile
 
 ### Common Issues Resolution
 ```yaml
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # FAQ Automatiche
 Email in Spam: Istruzioni check folder spam/promozioni
 Link Scaduto: Processo richiesta nuovo link
@@ -407,3 +442,10 @@ class EmailVerificationTest extends TestCase
 - [Login e Logout](./login_logout.md)
 - [Recupero Password](./recupero_password.md)
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Dicembre 2024*
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev

@@ -513,7 +513,14 @@ function createPregnancyPatient(array $overrides = []): Patient
 ### Comandi Base
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
+>>>>>>> aurmich/dev
 # Tutti i test del modulo SaluteOra con real data
 ./vendor/bin/pest Modules/SaluteOra/tests/
 
@@ -536,7 +543,14 @@ function createPregnancyPatient(array $overrides = []): Patient
 ### Debugging Real Data
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
+>>>>>>> aurmich/dev
 # Test in modalità debug con real data
 ./vendor/bin/pest Modules/SaluteOra/tests/ --debug
 
@@ -702,3 +716,10 @@ test('identify slow queries in real data test', function () {
 **Ultimo aggiornamento**: Gennaio 2025 - Strategia Real Data Implementation  
 **Performance Target**: <5min full suite execution  
 **Quality Target**: >90% business logic coverage  
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+**Compliance**: GDPR + Italian Healthcare Standards 
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
+>>>>>>> aurmich/dev

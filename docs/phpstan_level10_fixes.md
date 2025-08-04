@@ -180,19 +180,56 @@ Fino ad ora, abbiamo risolto la maggior parte degli errori di livello 10 in entr
 - `Modules/Job/app/Notifications/TaskCompleted.php` - Argomenti con tipo mixed
 - `Modules/Job/app/Filament/Resources/ScheduleResource.php` - Callback con tipo mixed
 
+<<<<<<< HEAD
 ## Principi Applicati nelle Correzioni Aggiuntive
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+## Principi Applicati nelle Correzioni Aggiuntive
+=======
+=======
+## Principi Applicati
+>>>>>>> 9df8f556 (fix .md)
+=======
+## Principi Applicati nelle Correzioni Aggiuntive
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
+>>>>>>> aurmich/dev
 
 1. **Tipi specifici**: Sostituito il tipo `mixed` con tipi più specifici quando possibile.
 2. **Gestione sicura delle eccezioni**: Aggiunta gestione delle eccezioni per prevenire errori a runtime.
 3. **Implementazione sicura**: Evitato l'uso di funzioni potenzialmente pericolose come `call_user_func` con input non controllato.
 4. **Documentazione migliorata**: Aggiunta documentazione PHPDoc completa per spiegare i tipi di parametri e di ritorno.
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 ## Prossimi Passi Aggiornati
 
 1. Applicare principi simili agli altri file identificati nel modulo.
 2. Eseguire l'analisi PHPStan a livello 10 per verificare che le correzioni risolvano effettivamente gli errori.
 3. Documentare gli schemi e i pattern utilizzati per risolvere problemi simili in futuro.
 4. Estendere le correzioni ai file del modulo Job identificati sopra.
+<<<<<<< HEAD
+=======
+=======
+## Prossimi Passi
+
+1. Applicare principi simili agli altri file identificati nel modulo.
+2. Eseguire l'analisi PHPStan a livello 10 per verificare che le correzioni risolvano effettivamente gli errori.
+3. Documentare gli schemi e i pattern utilizzati per risolvere problemi simili in futuro. 
+>>>>>>> 6ff0f9ee0da0f852cf7abf171c74d3041323b9b8
+>>>>>>> 9df8f556 (fix .md)
+=======
+## Prossimi Passi Aggiornati
+
+1. Applicare principi simili agli altri file identificati nel modulo.
+2. Eseguire l'analisi PHPStan a livello 10 per verificare che le correzioni risolvano effettivamente gli errori.
+3. Documentare gli schemi e i pattern utilizzati per risolvere problemi simili in futuro.
+4. Estendere le correzioni ai file del modulo Job identificati sopra.
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
+>>>>>>> aurmich/dev
 
 ## Collegamenti tra versioni di PHPSTAN_LEVEL10_FIXES.md
 * [PHPSTAN_LEVEL10_FIXES.md](docs/PHPSTAN_LEVEL10_FIXES.md)

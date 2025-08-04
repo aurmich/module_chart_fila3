@@ -11,7 +11,14 @@ Il sistema di documenti digitali di SaluteOra rappresenta il cuore della trasfor
 
 ### Core Infrastructure
 ```yaml
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Storage Architecture
 Primary Storage: AWS S3 con encryption at rest
 CDN: CloudFront per delivery globale ottimizzata
@@ -180,7 +187,14 @@ HL7 FHIR: Healthcare interoperability standard
 
 ### Microservices Design
 ```yaml
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Service Architecture
 Document Service: Core CRUD operations + versioning
 Processing Service: OCR, format conversion, AI analysis
@@ -218,7 +232,14 @@ Storage → Indexing → Access Control
 
 ### Healthcare Data Protection
 ```yaml
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Encryption Standards
 At Rest: AES-256 encryption per all stored documents
 In Transit: TLS 1.3 per all data transmission
@@ -301,7 +322,14 @@ const emrIntegration = {
 
 ### Document Usage Analytics
 ```yaml
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Current Metrics
 Total Documents: 1.2M+ stored
 Daily Uploads: 3,247 documents average
@@ -416,3 +444,10 @@ OCR Accuracy: 94.3% per medical documents
 - [API Partner](./api_partner.md)
 - [Analisi Avanzate](./analisi_avanzate.md)
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Dicembre 2024*
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev

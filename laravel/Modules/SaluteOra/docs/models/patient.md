@@ -41,7 +41,19 @@ class Patient extends User
      *
      * @return array<string, string>
      */
+<<<<<<< HEAD
     protected function casts(): array
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    protected function casts(): array
+=======
+    public function casts(): array
+>>>>>>> bead9c28 (fix case)
+=======
+    protected function casts(): array
+>>>>>>> 2099645a (.)
+>>>>>>> aurmich/dev
     {
         return [
             'date_of_birth' => 'date',

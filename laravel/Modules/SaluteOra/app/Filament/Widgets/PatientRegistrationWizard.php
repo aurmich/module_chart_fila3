@@ -12,12 +12,30 @@ use Filament\Forms\Components\Toggle;
 use Filament\Forms\Components\Wizard;
 use Filament\Forms\Components\Wizard\Step;
 use Filament\Forms\Concerns\InteractsWithForms;
+<<<<<<< HEAD
 use Filament\Forms\Contracts\HasForms;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+use Filament\Forms\Contracts\HasForms;
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+use Filament\Forms\Contracts\HasForms;
+>>>>>>> 13ea6524 (phpstan)
+>>>>>>> aurmich/dev
 use Filament\Forms\Form;
 use Livewire\Component;
 use Illuminate\Support\HtmlString;
 use Modules\SaluteOra\Models\Patient;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 13ea6524 (phpstan)
+>>>>>>> aurmich/dev
 /**
  * Widget wizard per la registrazione di nuovi pazienti.
  * 
@@ -25,6 +43,10 @@ use Modules\SaluteOra\Models\Patient;
  * tutte le informazioni necessarie per la registrazione.
  */
 class PatientRegistrationWizard extends Component implements HasForms
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 {
     use InteractsWithForms;
 
@@ -53,6 +75,45 @@ class PatientRegistrationWizard extends Component implements HasForms
      * @param \Filament\Forms\Form $form
      * @return \Filament\Forms\Form
      */
+<<<<<<< HEAD
+=======
+=======
+class PatientRegistrationWizard extends Component
+=======
+>>>>>>> 13ea6524 (phpstan)
+{
+    use InteractsWithForms;
+
+    /**
+     * Dati del form del wizard.
+     *
+     * @var array<string, mixed>
+     */
+    public ?array $data = [];
+
+
+
+    /**
+     * Inizializza il componente.
+     *
+     * @return void
+     */
+    public function mount(): void
+    {
+        $this->form(Form::make($this))->fill();
+    }
+
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+    /**
+     * Configura il form del wizard.
+     *
+     * @param \Filament\Forms\Form $form
+     * @return \Filament\Forms\Form
+     */
+>>>>>>> 13ea6524 (phpstan)
+>>>>>>> aurmich/dev
     public function form(Form $form): Form
     {
         return $form
@@ -60,11 +121,26 @@ class PatientRegistrationWizard extends Component implements HasForms
             ->statePath('data');
     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 13ea6524 (phpstan)
+>>>>>>> aurmich/dev
     /**
      * Schema del form wizard.
      *
      * @return array<int, \Filament\Forms\Components\Component>
      */
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 13ea6524 (phpstan)
+>>>>>>> aurmich/dev
     protected function getFormSchema(): array
     {
         return [
@@ -186,8 +262,21 @@ class PatientRegistrationWizard extends Component implements HasForms
                             ->columnSpanFull(),
                     ]),
             ])
+<<<<<<< HEAD
                 ->extraAttributes(['class' => 'mobile-friendly-wizard'])
             
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                ->extraAttributes(['class' => 'mobile-friendly-wizard'])
+            
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+                ->extraAttributes(['class' => 'mobile-friendly-wizard'])
+            
+>>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
+>>>>>>> aurmich/dev
                 ->submitAction(new HtmlString('
                     <button type="submit" class="filament-button filament-button-size-lg inline-flex items-center justify-center py-2 gap-2 font-medium rounded-lg border transition-colors outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset min-h-[2.25rem] px-4 text-sm text-white shadow focus:ring-white border-transparent bg-primary-600 hover:bg-primary-500 focus:bg-primary-700 focus:ring-offset-primary-700">
                         Completa Registrazione
@@ -196,27 +285,69 @@ class PatientRegistrationWizard extends Component implements HasForms
         ];
     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 13ea6524 (phpstan)
+>>>>>>> aurmich/dev
     /**
      * Gestisce l'invio del form.
      *
      * @return void
      */
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     public function submit(): void
     {
         /** @var array<string, mixed> $data */
         $data = $this->form(Form::make($this))->getState();
+<<<<<<< HEAD
+=======
+=======
+    public function submit(): void
+    {
+        $data = $this->form->getState();
+>>>>>>> 54f4fa16 (.)
+=======
+    public function submit(): void
+    {
+        /** @var array<string, mixed> $data */
+        $data = $this->form(Form::make($this))->getState();
+>>>>>>> 13ea6524 (phpstan)
+>>>>>>> aurmich/dev
 
         $patient = Patient::create($data);
 
         $this->dispatch('patient-registered', patientId: $patient->id);
     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 13ea6524 (phpstan)
+>>>>>>> aurmich/dev
     /**
      * Renderizza il componente.
      *
      * @return \Illuminate\Contracts\View\View
      */
     public function render(): \Illuminate\Contracts\View\View
+<<<<<<< HEAD
+=======
+=======
+    public function render()
+>>>>>>> 54f4fa16 (.)
+=======
+    public function render(): \Illuminate\Contracts\View\View
+>>>>>>> 8e4d163b (phpstan)
+>>>>>>> aurmich/dev
     {
         return view('saluteora::widgets.patient-registration-wizard');
     }

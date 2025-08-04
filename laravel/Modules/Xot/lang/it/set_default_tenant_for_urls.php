@@ -15,6 +15,11 @@ return array (
     array (
       'label' => 'request',
     ),
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     'activeLocale' => 
     array (
       'label' => 'activeLocale',
@@ -39,6 +44,13 @@ return array (
     array (
       'label' => 'create',
     ),
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
   ),
   'fields' => 
   array (
@@ -46,23 +58,76 @@ return array (
     array (
       'label' => 'email',
       'description' => 'email',
+<<<<<<< HEAD
       'helper_text' => '',
       'placeholder' => 'email',
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      'helper_text' => '',
+=======
+      'helper_text' => 'email',
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+      'helper_text' => '',
+>>>>>>> a0e35b8d (helper text on login)
+      'placeholder' => 'email',
+=======
+      'helper_text' => 'email',
+>>>>>>> 54f4fa16 (.)
+=======
+      'placeholder' => 'email',
+>>>>>>> 2e1ed088 (chore(docs): delete troubleshooting.md as it is no longer relevant)
+>>>>>>> aurmich/dev
     ),
     'password' => 
     array (
       'label' => 'password',
       'description' => 'password',
+<<<<<<< HEAD
       'helper_text' => '',
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      'helper_text' => '',
+=======
+      'helper_text' => 'password',
+>>>>>>> aurmich/dev
+=======
+      'helper_text' => 'password',
+>>>>>>> 54f4fa16 (.)
+=======
+      'helper_text' => '',
+>>>>>>> a0e35b8d (helper text on login)
+>>>>>>> aurmich/dev
       'placeholder' => 'password',
     ),
     'remember' => 
     array (
       'label' => 'remember',
       'description' => 'remember',
+<<<<<<< HEAD
       'helper_text' => '',
       'placeholder' => 'remember',
     ),
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      'helper_text' => '',
+=======
+      'helper_text' => 'remember',
+>>>>>>> aurmich/dev
+=======
+      'helper_text' => '',
+>>>>>>> a0e35b8d (helper text on login)
+      'placeholder' => 'remember',
+    ),
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     'cap' => 
     array (
       'description' => 'cap',
@@ -74,6 +139,10 @@ return array (
     array (
       'description' => 'city',
     ),
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     'options' => 
     array (
       'prefix-icon-color' => 
@@ -492,5 +561,37 @@ return array (
     array (
       'label' => 'Credenziali',
     ),
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> aurmich/dev
+=======
+      'helper_text' => 'remember',
+      'placeholder' => 'remember',
+    ),
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+=======
+>>>>>>> d23ba493 (add calendar)
+    'cap' => 
+    array (
+      'description' => 'cap',
+      'helper_text' => 'cap',
+      'placeholder' => 'cap',
+      'label' => 'cap',
+    ),
+    'city' => 
+    array (
+      'description' => 'city',
+    ),
+<<<<<<< HEAD
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
   ),
 );

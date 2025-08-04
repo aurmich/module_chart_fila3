@@ -23,10 +23,26 @@ class ThemeComposer
      */
     public function languages(): DataCollection
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+>>>>>>> aurmich/dev
         // ✅ Controllo sicuro della configurazione laravellocalization
         $langs = config()->has('laravellocalization.supportedLocales') 
             ? config('laravellocalization.supportedLocales') 
             : ['it' => ['name' => 'Italiano', 'regional' => 'it_IT'], 'en' => ['name' => 'English', 'regional' => 'en_US']];
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+        $langs = config('laravellocalization.supportedLocales');
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+>>>>>>> aurmich/dev
 
         if (! is_array($langs)) {
             throw new \Exception(sprintf('Invalid config for supportedLocales on line %d in %s', __LINE__, class_basename($this)));

@@ -1,4 +1,11 @@
 {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
   "mcpServers": {
     "sequential-thinking": {
       "command": "npx",
@@ -7,6 +14,10 @@
         "@modelcontextprotocol/server-sequential-thinking"
       ],
       "env": {}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     },
     "memory": {
       "command": "npx",
@@ -33,4 +44,51 @@
     }
   
   }
+<<<<<<< HEAD
 }
+=======
+}
+=======
+    "mcpServers": {
+      "sequential-thinking": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-sequential-thinking"
+        ]
+      }
+=======
+>>>>>>> d23ba493 (add calendar)
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/html/_bases/"]
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-puppeteer"
+      ],
+      "env": {}
+    },
+    "mcp-package-docs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-package-docs"
+      ]
+    }
+<<<<<<< HEAD
+  }
+>>>>>>> 54f4fa16 (.)
+=======
+  
+  }
+}
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev

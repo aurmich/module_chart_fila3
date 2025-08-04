@@ -636,9 +636,19 @@ class AppointmentReminderMail extends Mailable implements ShouldQueue
 
 ### Cron Job Setup
 ```bash
+<<<<<<< HEAD
 
 # /etc/crontab
 
+=======
+<<<<<<< HEAD
+
+# /etc/crontab
+
+=======
+# /etc/crontab
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Esegui ogni 30 minuti per promemoria tempestivi
 */30 * * * * php /var/www/saluteora/artisan appointments:send-reminders
 ```
@@ -760,3 +770,10 @@ class ReminderAnalytics
 ---
 
 *Ultimo aggiornamento: 5 Giugno 2025*  
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+*Stato: Implementazione quasi completata - SMS integration in corso* ⏳
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev

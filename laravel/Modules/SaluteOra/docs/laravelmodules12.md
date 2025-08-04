@@ -46,6 +46,10 @@ composer require nwidart/laravel-modules
 Pubblicazione della configurazione e degli stubs:
 ```bash
 php artisan vendor:publish --provider="Nwidart\Modules\LaravelModulesServiceProvider"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
 # Solo config
 php artisan vendor:publish --provider="Nwidart\Modules\LaravelModulesServiceProvider" --tag="config"
@@ -53,6 +57,15 @@ php artisan vendor:publish --provider="Nwidart\Modules\LaravelModulesServiceProv
 # Solo stubs
 php artisan vendor:publish --provider="Nwidart\Modules\LaravelModulesServiceProvider" --tag="stubs"
 
+<<<<<<< HEAD
+=======
+=======
+# Solo config
+php artisan vendor:publish --provider="Nwidart\Modules\LaravelModulesServiceProvider" --tag="config"
+# Solo stubs
+php artisan vendor:publish --provider="Nwidart\Modules\LaravelModulesServiceProvider" --tag="stubs"
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Solo vite-modules-loader.js (da v10.0.3)
 php artisan vendor:publish --provider="Nwidart\Modules\LaravelModulesServiceProvider" --tag="vite"
 ```

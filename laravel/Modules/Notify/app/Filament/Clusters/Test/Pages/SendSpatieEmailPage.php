@@ -7,7 +7,18 @@ namespace Modules\Notify\Filament\Clusters\Test\Pages;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Actions\Action;
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+use Webmozart\Assert\Assert;
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+use Webmozart\Assert\Assert;
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
 use Filament\Facades\Filament;
 use Modules\Notify\Datas\EmailData;
 use Illuminate\Support\Facades\Mail;
@@ -15,7 +26,18 @@ use Filament\Forms\ComponentContainer;
 use Filament\Forms\Contracts\HasForms;
 use Modules\Notify\Emails\SpatieEmail;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use Modules\Notify\Models\MailTemplate;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+use Modules\Notify\Models\MailTemplate;
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+use Modules\Notify\Models\MailTemplate;
+>>>>>>> 85c2afe6 (✨ (SpatieEmail.php): add dynamic theme support for email layout path to enhance customization)
+>>>>>>> aurmich/dev
 use Modules\Notify\Emails\EmailDataEmail;
 use Modules\Notify\Filament\Clusters\Test;
 use Modules\Xot\Filament\Pages\XotBasePage;
@@ -72,6 +94,13 @@ class SendSpatieEmailPage extends XotBasePage
             Forms\Components\TextInput::make('to')
                 ->email()
                 ->required(),
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 85c2afe6 (✨ (SpatieEmail.php): add dynamic theme support for email layout path to enhance customization)
+>>>>>>> aurmich/dev
             /*
             Forms\Components\TextInput::make('subject')
                 ->required(),
@@ -79,6 +108,16 @@ class SendSpatieEmailPage extends XotBasePage
             Forms\Components\Select::make('mail_template_slug')
                 ->options(MailTemplate::all()->pluck('slug', 'slug'))
                 ->required(),
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+            Forms\Components\TextInput::make('subject')
+                ->required(),
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 85c2afe6 (✨ (SpatieEmail.php): add dynamic theme support for email layout path to enhance customization)
+>>>>>>> aurmich/dev
             Forms\Components\RichEditor::make('body_html')
                 ->required(),
         ];
@@ -120,12 +159,38 @@ class SendSpatieEmailPage extends XotBasePage
              ->locale('it')
              ->send($email);
         */
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
         Assert::string($mail_template_slug=$data['mail_template_slug']);
         $notify=(new RecordNotification($user,$mail_template_slug))->mergeData($data);
 
         Notification::route('mail', $data['to'])
             //->locale('it')
             ->notify($notify);
+<<<<<<< HEAD
+=======
+=======
+
+        Notification::route('mail', $data['to'])
+            //->locale('it')
+            ->notify(new RecordNotification($user,'due'));
+>>>>>>> 54f4fa16 (.)
+=======
+        $notify=(new RecordNotification($user,$data['mail_template_slug']))->mergeData($data);
+=======
+        Assert::string($mail_template_slug=$data['mail_template_slug']);
+        $notify=(new RecordNotification($user,$mail_template_slug))->mergeData($data);
+>>>>>>> 345f8677 (phpstan)
+
+        Notification::route('mail', $data['to'])
+            //->locale('it')
+            ->notify($notify);
+>>>>>>> 85c2afe6 (✨ (SpatieEmail.php): add dynamic theme support for email layout path to enhance customization)
+>>>>>>> aurmich/dev
 
 
         FilamentNotification::make()

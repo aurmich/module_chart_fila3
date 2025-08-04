@@ -1,10 +1,34 @@
 ---
+<<<<<<< HEAD
 description: Pattern e best practice per l'utilizzo di Spatie Laravel Data in progetti Laraxot/<nome progetto>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+description: Pattern e best practice per l'utilizzo di Spatie Laravel Data in progetti Laraxot/<nome progetto>
+=======
+description: Pattern e best practice per l'utilizzo di Spatie Laravel Data in progetti Laraxot/PTVX
+>>>>>>> d23ba493 (add calendar)
+=======
+description: Pattern e best practice per l'utilizzo di Spatie Laravel Data in progetti Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 globs: ["**/Data/**/*.php", "**/Services/**/*.php"]
 alwaysApply: true
 ---
 
+<<<<<<< HEAD
 # Pattern per Spatie Laravel Data in Laraxot/<nome progetto>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Pattern per Spatie Laravel Data in Laraxot/<nome progetto>
+=======
+# Pattern per Spatie Laravel Data in Laraxot/PTVX
+>>>>>>> d23ba493 (add calendar)
+=======
+# Pattern per Spatie Laravel Data in Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 
 ## Principi Fondamentali
 
@@ -36,6 +60,11 @@ class UserData extends Data
     public function __construct(
         #[Required, StringType]
         public readonly string $name,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
         #[Required, StringType]
         public readonly string $email,
@@ -50,6 +79,32 @@ class UserData extends Data
     ) {
     }
 
+<<<<<<< HEAD
+=======
+=======
+        
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+        #[Required, StringType]
+        public readonly string $email,
+
+        #[WithCast(DateTimeInterfaceCast::class)]
+        public readonly ?\DateTimeInterface $created_at = null,
+
+        #[WithCast(DateTimeInterfaceCast::class)]
+        public readonly ?\DateTimeInterface $updated_at = null,
+
+        public readonly ?int $id = null,
+    ) {
+    }
+<<<<<<< HEAD
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     /**
      * Crea un nuovo UserData da un modello User.
      *
@@ -66,7 +121,19 @@ class UserData extends Data
             id: $user->id,
         );
     }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     /**
      * Crea un'istanza del modello User da questo Data Object.
      *
@@ -77,10 +144,30 @@ class UserData extends Data
         $user = $this->id
             ? \Modules\ModuleName\Models\User::findOrFail($this->id)
             : new \Modules\ModuleName\Models\User();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
         $user->name = $this->name;
         $user->email = $this->email;
 
+<<<<<<< HEAD
+=======
+=======
+            
+        $user->name = $this->name;
+        $user->email = $this->email;
+        
+>>>>>>> d23ba493 (add calendar)
+=======
+
+        $user->name = $this->name;
+        $user->email = $this->email;
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
         return $user;
     }
 }
@@ -108,6 +195,11 @@ class ProductData extends Data
     public function __construct(
         #[Required, StringType, Min(3), Max(255)]
         public readonly string $name,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
         #[Required, StringType]
         public readonly string $description,
@@ -122,6 +214,32 @@ class ProductData extends Data
     ) {
     }
 
+<<<<<<< HEAD
+=======
+=======
+        
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+        #[Required, StringType]
+        public readonly string $description,
+
+        #[Required, Numeric, Min(0)]
+        public readonly float $price,
+
+        #[Required, Numeric, Min(0)]
+        public readonly int $quantity,
+
+        public readonly ?int $id = null,
+    ) {
+    }
+<<<<<<< HEAD
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     /**
      * Definisce regole di validazione addizionali.
      *
@@ -133,7 +251,19 @@ class ProductData extends Data
             'name' => ['unique:products,name'],
         ];
     }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     /**
      * Definisce messaggi di errore personalizzati.
      *
@@ -167,7 +297,19 @@ class UserDataCollection extends DataCollection
     ) {
         parent::__construct($items);
     }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     /**
      * Crea una collezione da un elenco di modelli.
      *
@@ -180,7 +322,19 @@ class UserDataCollection extends DataCollection
             $users->map(fn ($user) => UserData::fromModel($user))->all()
         );
     }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     /**
      * Restituisce il tipo di dato nella collezione.
      *
@@ -218,7 +372,19 @@ class OrderData extends Data
         public readonly ?int $id = null,
     ) {
     }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     /**
      * Crea un OrderData da un modello Order con relazioni.
      *
@@ -231,11 +397,33 @@ class OrderData extends Data
         if (!$order->relationLoaded('items')) {
             $order->load('items');
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
         if (!$order->relationLoaded('user')) {
             $order->load('user');
         }
 
+<<<<<<< HEAD
+=======
+=======
+        
+        if (!$order->relationLoaded('user')) {
+            $order->load('user');
+        }
+        
+>>>>>>> d23ba493 (add calendar)
+=======
+
+        if (!$order->relationLoaded('user')) {
+            $order->load('user');
+        }
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
         return new self(
             order_number: $order->order_number,
             total_amount: $order->total_amount,
@@ -279,7 +467,19 @@ final class StatusEnum extends Enum
             'archived' => __('modulename::enums.status.archived'),
         ];
     }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     /**
      * Determina se lo stato è considerato attivo.
      */
@@ -312,7 +512,19 @@ use Modules\ModuleName\Models\User;
 class UserResource extends Resource
 {
     protected static ?string $model = User::class;
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     /**
      * Form schema per Filament.
      *
@@ -328,7 +540,19 @@ class UserResource extends Resource
                     ->placeholder(__('modulename::fields.name.placeholder'))
                     ->required()
                     ->maxLength(255),
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+                    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
                 Forms\Components\TextInput::make('email')
                     ->label(__('modulename::fields.email.label'))
                     ->placeholder(__('modulename::fields.email.placeholder'))
@@ -337,7 +561,19 @@ class UserResource extends Resource
                     ->maxLength(255),
             ]);
     }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     /**
      * Gestisce la creazione del record usando Data Objects.
      *
@@ -348,11 +584,33 @@ class UserResource extends Resource
     {
         // Converte dati del form in Data Object
         $userData = UserData::from($data);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
         // Crea un nuovo utente dal Data Object
         $user = $userData->toModel();
         $user->save();
 
+<<<<<<< HEAD
+=======
+=======
+        
+        // Crea un nuovo utente dal Data Object
+        $user = $userData->toModel();
+        $user->save();
+        
+>>>>>>> d23ba493 (add calendar)
+=======
+
+        // Crea un nuovo utente dal Data Object
+        $user = $userData->toModel();
+        $user->save();
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
         return $user;
     }
 }
@@ -388,7 +646,19 @@ class UserData extends Data
     public readonly string $name;
     public readonly string $email;
     public readonly ?int $id = null;
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     // Manca il costruttore esplicito
 }
 ```
@@ -409,7 +679,19 @@ class UserData extends Data
         public readonly ?int $id = null,
     ) {
     }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     // Mancano metodi helper per convertire da/a modello
 }
 ```
@@ -451,21 +733,66 @@ Ogni modulo che utilizza Spatie Laravel Data deve includere:
 2. **Esempio di Documentazione**
    ```markdown
    # Data Objects in ModuleName
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
    Questo modulo utilizza Spatie Laravel Data per implementare il pattern DTO.
 
    ## UserData
    Rappresenta i dati di un utente.
 
+<<<<<<< HEAD
+=======
+=======
+   
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+   Questo modulo utilizza Spatie Laravel Data per implementare il pattern DTO.
+
+   ## UserData
+   Rappresenta i dati di un utente.
+<<<<<<< HEAD
+   
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
    ### Proprietà
    - `name` (string): Nome dell'utente
    - `email` (string): Email dell'utente
    - `id` (int|null): ID dell'utente, null se nuovo
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
    ### Metodi
    - `fromModel(User $user)`: Crea un UserData da un modello User
    - `toModel()`: Converte il DTO in un modello User
 
+<<<<<<< HEAD
+=======
+=======
+   
+   ### Metodi
+   - `fromModel(User $user)`: Crea un UserData da un modello User
+   - `toModel()`: Converte il DTO in un modello User
+   
+>>>>>>> d23ba493 (add calendar)
+=======
+
+   ### Metodi
+   - `fromModel(User $user)`: Crea un UserData da un modello User
+   - `toModel()`: Converte il DTO in un modello User
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
    ### Esempio d'uso
    ```php
    // Creazione da array
@@ -473,6 +800,11 @@ Ogni modulo che utilizza Spatie Laravel Data deve includere:
        'name' => 'Mario Rossi',
        'email' => 'mario@example.com',
    ]);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
    // Creazione da modello
    $userData = UserData::fromModel($user);
@@ -481,3 +813,22 @@ Ogni modulo che utilizza Spatie Laravel Data deve includere:
    $user = $userData->toModel();
    ```
    ```
+<<<<<<< HEAD
+=======
+=======
+   
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+   // Creazione da modello
+   $userData = UserData::fromModel($user);
+
+   // Conversione in modello
+   $user = $userData->toModel();
+   ```
+   ```
+<<<<<<< HEAD
+>>>>>>> d23ba493 (add calendar)
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev

@@ -4,6 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\States\Appointment;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Spatie\ModelStates\State;
@@ -13,22 +19,58 @@ use Modules\Xot\States\XotBaseState;
 use Modules\Xot\Contracts\StateContract;
 use Modules\SaluteOra\Models\Appointment;
 use Modules\Xot\Filament\Traits\TransTrait;
+<<<<<<< HEAD
+=======
+=======
+=======
+use Modules\Xot\Filament\Traits\TransTrait;
+>>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
+use Spatie\ModelStates\State;
+use Spatie\ModelStates\StateConfig;
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
+=======
+use Spatie\ModelStates\State;
+use Spatie\ModelStates\StateConfig;
+use Modules\Xot\Contracts\StateContract;
+use Modules\Xot\Filament\Traits\TransTrait;
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
 
 /**
  * Abstract base class for appointment state management.
  *
  * Defines the state machine configuration and required methods
  * that must be implemented by each concrete state class.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
  * @property string $name Il nome dello stato
  * @property string $value Il valore dello stato nel database
  */
 abstract class AppointmentState extends XotBaseState 
 {
     
+<<<<<<< HEAD
+=======
+=======
+ */
+abstract class AppointmentState extends State implements StateContract
+{
+<<<<<<< HEAD
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
+=======
+    use TransTrait;
+>>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
+>>>>>>> aurmich/dev
     /**
      * Configure the allowed state transitions.
      */
     public static function config(): StateConfig
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
         {
             return parent::config()
                 ->default(Pending::class)
@@ -72,4 +114,79 @@ abstract class AppointmentState extends XotBaseState
     }
     
    
+<<<<<<< HEAD
+=======
+=======
+    {
+        return parent::config()
+            //->default(static::class === self::class ? Pending::class : static::class)
+            ->default(Pending::class)
+            // Pending transitions
+            ->allowTransition(Pending::class, Confirmed::class, Transitions\PendingToConfirmed::class)
+            //->allowTransition(Pending::class, Cancelled::class, Transitions\PendingToCancelled::class)
+            ->allowTransition(Pending::class, Rejected::class, Transitions\PendingToRejected::class)
+
+            // Confirmed transitions
+            //->allowTransition(Confirmed::class, Scheduled::class, Transitions\ConfirmedToScheduled::class)
+            //->allowTransition(Confirmed::class, Cancelled::class, Transitions\ConfirmedToCancelled::class)
+            //->allowTransition(Confirmed::class, Rescheduled::class, Transitions\ConfirmedToRescheduled::class)
+            ->allowTransition(Confirmed::class, Rejected::class, Transitions\ConfirmedToRejected::class)
+
+            // Rejected transitions
+            //->allowTransition(Rejected::class, Confirmed::class, Transitions\RejectedToConfirmed::class)
+
+            // Scheduled transitions
+            ->allowTransition(Scheduled::class, InProgress::class, Transitions\ScheduledToInProgress::class)
+            ->allowTransition(Scheduled::class, Cancelled::class, Transitions\ScheduledToCancelled::class)
+            ->allowTransition(Scheduled::class, NoShow::class, Transitions\ScheduledToNoShow::class)
+            ->allowTransition(Scheduled::class, Rescheduled::class, Transitions\ScheduledToRescheduled::class)
+
+            // InProgress transitions
+            ->allowTransition(InProgress::class, Completed::class, Transitions\InProgressToCompleted::class)
+            
+            // Rescheduled transitions
+            ->allowTransition(Rescheduled::class, Confirmed::class, Transitions\RescheduledToConfirmed::class);
+    }
+    
+<<<<<<< HEAD
+<<<<<<< HEAD
+    /**
+     * Get the available statuses for the appointment.
+     * 
+     * @return array<class-string, string> Array of state classes and their display labels
+     */
+    public static function getStatuses(): array
+    {
+        // Create a mock model to pass to state constructors
+        $model = new class {
+            public function getMorphClass() {
+                return 'appointment';
+            }
+        };
+        
+        return [
+            Pending::class => (new Pending($model))->label(),
+            Confirmed::class => (new Confirmed($model))->label(),
+            Scheduled::class => (new Scheduled($model))->label(),
+            InProgress::class => (new InProgress($model))->label(),
+            Completed::class => (new Completed($model))->label(),
+            Cancelled::class => (new Cancelled($model))->label(),
+            Rejected::class => (new Rejected($model))->label(),
+            NoShow::class => (new NoShow($model))->label(),
+            Rescheduled::class => (new Rescheduled($model))->label(),
+        ];
+    }
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
+=======
+    
+>>>>>>> 13ea6524 (phpstan)
+=======
+    abstract public function label(): string;
+    abstract public function color(): string;
+    abstract public function bgColor(): string;
+    abstract public function icon(): string;
+    abstract public function modalHeading(): string;
+    abstract public function modalDescription(): string;
+>>>>>>> 9fa97684 (✨ (appointment states): add complete standardization for appointment states to ensure consistency and improve maintainability)
+>>>>>>> aurmich/dev
 }

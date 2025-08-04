@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: This rule provides coding standards and best practices for using the gensim library, focusing on NLP, topic modeling, performance, and code organization. It offers actionable guidelines for developers to create effective and maintainable gensim-based applications.
 globs: *.py
 ---

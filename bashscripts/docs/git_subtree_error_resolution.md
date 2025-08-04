@@ -55,7 +55,14 @@ fatal: you must provide the --prefix option
 
 **Soluzione**:
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Verifica variabili
 if [ -z "$LOCAL_PATH" ] || [ -z "$REMOTE_REPO" ]; then
     echo "❌ Error: Missing required variables"

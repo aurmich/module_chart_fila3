@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Chart\Filament\Resources;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
@@ -12,6 +16,23 @@ use Filament\Forms\Components\Toggle;
 use Modules\Chart\Actions\Chart\GetTypeOptions;
 use Modules\Chart\Models\Chart;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+<<<<<<< HEAD
+=======
+=======
+use Filament\Forms\Form;
+use Modules\Chart\Models\Chart;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Toggle;
+// use Modules\Chart\Filament\Resources\ChartResource\RelationManagers;
+// use Filament\Forms;
+use Filament\Forms\Components\TextInput;
+use Modules\Chart\Actions\Chart\GetTypeOptions;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\Chart\Filament\Resources\ChartResource\Pages\EditChart;
+use Modules\Chart\Filament\Resources\ChartResource\Pages\ListCharts;
+use Modules\Chart\Filament\Resources\ChartResource\Pages\CreateChart;
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 
 // use Illuminate\Database\Eloquent\Builder;
 // use Illuminate\Database\Eloquent\SoftDeletingScope;
@@ -23,6 +44,10 @@ class ChartResource extends XotBaseResource
     public static function getFormSchema(): array
     {
         return [
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
             Select::make('type')->options(app(GetTypeOptions::class)->execute()),
             Select::make('group_by')->options([null => '---', 'date:o-W' => 'Settimanale', 'date:Y-M' => 'Mensile', 'date:Y-M-d' => 'Giornaliero', 'field:Q41' => 'field:Q41']),
             Select::make('sort_by')->options([null => '---', 'date:o-W' => 'Settimanale', 'date:Y-m' => 'Mensile', 'date:Y-m-d' => 'Giornaliero', '_value' => '_value', 'field:Q41' => 'field:Q41']),
@@ -33,6 +58,21 @@ class ChartResource extends XotBaseResource
             // Forms\Components\TextInput::make('bg_color'),
 
             Select::make('font_family')->options([
+<<<<<<< HEAD
+=======
+=======
+            'type' => Select::make('type')->options(app(GetTypeOptions::class)->execute()),
+            'group_by' => Select::make('group_by')->options([null => '---', 'date:o-W' => 'Settimanale', 'date:Y-M' => 'Mensile', 'date:Y-M-d' => 'Giornaliero', 'field:Q41' => 'field:Q41']),
+            'sort_by' => Select::make('sort_by')->options([null => '---', 'date:o-W' => 'Settimanale', 'date:Y-m' => 'Mensile', 'date:Y-m-d' => 'Giornaliero', '_value' => '_value', 'field:Q41' => 'field:Q41']),
+            'width' => TextInput::make('width'),
+            'height' => TextInput::make('height'),
+            'show_box' => Toggle::make('show_box')->inline(false),
+
+            // Forms\Components\TextInput::make('bg_color'),
+
+            'font_family' => Select::make('font_family')->options([
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
                 10 => 'FF_COURIER',
                 11 => 'FF_VERDANA',
                 12 => 'FF_TIMES',
@@ -42,14 +82,30 @@ class ChartResource extends XotBaseResource
                 17 => 'FF_TREBUCHE',
                 // 18 => 'FF_COLIBRI',
             ]),
+<<<<<<< HEAD
             Select::make('font_style')->options([
+=======
+<<<<<<< HEAD
+            Select::make('font_style')->options([
+=======
+            'font_style' => Select::make('font_style')->options([
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
                 9001 => 'FS_NORMAL',
                 9002 => 'FS_BOLD',
                 9003 => 'FS_ITALIC',
                 // 9004 => 'FS_BOLDIT',
                 9004 => 'FS_BOLDITALIC',
             ]),
+<<<<<<< HEAD
             Select::make('font_size')->options([
+=======
+<<<<<<< HEAD
+            Select::make('font_size')->options([
+=======
+            'font_size' => Select::make('font_size')->options([
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
                 '8' => '8',
                 '10' => '10',
                 '12' => '12',
@@ -57,8 +113,18 @@ class ChartResource extends XotBaseResource
                 '16' => '16',
                 '18' => '18',
             ]),
+<<<<<<< HEAD
             TextInput::make('list_color'),
             TextInput::make('transparency'),
+=======
+<<<<<<< HEAD
+            TextInput::make('list_color'),
+            TextInput::make('transparency'),
+=======
+            'list_color' => TextInput::make('list_color'),
+            'transparency' => TextInput::make('transparency'),
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
             // Forms\Components\TextInput::make('backtop'),
             // Forms\Components\TextInput::make('backbottom'),
             // Forms\Components\TextInput::make('backleft'),
@@ -66,4 +132,19 @@ class ChartResource extends XotBaseResource
             // Forms\Components\TextInput::make('font_size_question'),
         ];
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+    public static function getPages(): array
+    {
+        return [
+            'index' => ListCharts::route('/'),
+            'create' => CreateChart::route('/create'),
+            'edit' => EditChart::route('/{record}/edit'),
+        ];
+    }
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 }

@@ -7,6 +7,11 @@ namespace Modules\SaluteOra\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
 
 /**
@@ -65,11 +70,92 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Isee extends BaseModel
 {
     
+<<<<<<< HEAD
+=======
+=======
+use Modules\Tenant\Traits\BelongsToTenant;
+=======
+
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+
+/**
+ * Modello Isee per la gestione dei dati relativi all'ISEE delle pazienti.
+ *
+ * @property string $id
+ * @property string $tenant_id
+ * @property string $user_id
+ * @property string|null $isee_code
+ * @property numeric|null $isee_value
+ * @property \Illuminate\Support\Carbon|null $isee_expiry_date
+ * @property \Illuminate\Support\Carbon|null $isee_issue_date
+ * @property string|null $isee_type
+ * @property string|null $isee_document_path
+ * @property bool $is_valid
+ * @property string|null $notes
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ * @property-read \Modules\SaluteOra\Models\Profile|null $creator
+ * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
+ * @property-read int|null $media_count
+ * @property-read \Modules\SaluteOra\Models\Patient|null $patient
+ * @property-read \Modules\SaluteOra\Models\Profile|null $updater
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee eligibleForProject()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee onlyTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee query()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee tenant(?int $tenantId = null)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee whereCreatedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee whereDeletedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee whereDeletedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee whereIsValid($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee whereIseeCode($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee whereIseeDocumentPath($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee whereIseeExpiryDate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee whereIseeIssueDate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee whereIseeType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee whereIseeValue($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee whereNotes($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee whereTenantId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee whereUpdatedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee whereUserId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee withTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee withoutTrashed()
+ * @mixin \Eloquent
+ */
+class Isee extends BaseModel
+{
+<<<<<<< HEAD
+    use HasFactory, SoftDeletes, BelongsToTenant;
+>>>>>>> 54f4fa16 (.)
+=======
+    
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
 
     /**
      * Gli attributi che sono mass assignable.
      *
+<<<<<<< HEAD
      * @var list<string>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+     * @var list<string>
+=======
+     * @var array<int, string>
+>>>>>>> 54f4fa16 (.)
+=======
+     * @var list<string>
+>>>>>>> 8e4d163b (phpstan)
+>>>>>>> aurmich/dev
      */
     protected $fillable = [
         'tenant_id',
@@ -85,6 +171,11 @@ class Isee extends BaseModel
     ];
 
     /**
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
      * Get the attributes that should be cast.
      *
      * @return array<string, string>
@@ -98,6 +189,36 @@ class Isee extends BaseModel
             'is_valid' => 'boolean',
         ];
     }
+<<<<<<< HEAD
+=======
+=======
+     * Gli attributi da castare.
+=======
+     * Get the attributes that should be cast.
+>>>>>>> 8e4d163b (phpstan)
+     *
+     * @return array<string, string>
+     */
+<<<<<<< HEAD
+    protected $casts = [
+        'isee_value' => 'decimal:2',
+        'isee_expiry_date' => 'date',
+        'isee_issue_date' => 'date',
+        'is_valid' => 'boolean',
+    ];
+>>>>>>> 54f4fa16 (.)
+=======
+    protected function casts(): array
+    {
+        return [
+            'isee_value' => 'decimal:2',
+            'isee_expiry_date' => 'date',
+            'isee_issue_date' => 'date',
+            'is_valid' => 'boolean',
+        ];
+    }
+>>>>>>> 8e4d163b (phpstan)
+>>>>>>> aurmich/dev
 
     /**
      * Relazione con la paziente.
@@ -126,7 +247,19 @@ class Isee extends BaseModel
      */
     public function isEligibleForProject(): bool
     {
+<<<<<<< HEAD
         return $this->isee_value <= 20000 && !$this->isExpired();
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        return $this->isee_value <= 20000 && !$this->isExpired();
+=======
+        return $this->isee_value <= 20000.00 && !$this->isExpired();
+>>>>>>> 54f4fa16 (.)
+=======
+        return $this->isee_value <= 20000 && !$this->isExpired();
+>>>>>>> 8e4d163b (phpstan)
+>>>>>>> aurmich/dev
     }
 
     /**
@@ -136,12 +269,29 @@ class Isee extends BaseModel
      */
     public function daysUntilExpiry(): int
     {
+<<<<<<< HEAD
         return (int) now()->diffInDays($this->isee_expiry_date, false);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        return (int) now()->diffInDays($this->isee_expiry_date, false);
+=======
+        return now()->diffInDays($this->isee_expiry_date, false);
+>>>>>>> 54f4fa16 (.)
+=======
+        return (int) now()->diffInDays($this->isee_expiry_date, false);
+>>>>>>> 8e4d163b (phpstan)
+>>>>>>> aurmich/dev
     }
 
     /**
      * Scope per filtrare gli ISEE validi per il progetto (sotto i 20.000 euro).
      *
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
      * @param \Illuminate\Database\Eloquent\Builder<static> $query
      * @return \Illuminate\Database\Eloquent\Builder<static>
      */
@@ -151,3 +301,21 @@ class Isee extends BaseModel
                      ->where('isee_expiry_date', '>', now());
     }
 }
+<<<<<<< HEAD
+=======
+=======
+     * @param \Illuminate\Database\Eloquent\Builder $query
+     * @return \Illuminate\Database\Eloquent\Builder
+=======
+     * @param \Illuminate\Database\Eloquent\Builder<static> $query
+     * @return \Illuminate\Database\Eloquent\Builder<static>
+>>>>>>> 8e4d163b (phpstan)
+     */
+    public function scopeEligibleForProject($query): \Illuminate\Database\Eloquent\Builder
+    {
+        return $query->where('isee_value', '<=', 20000)
+                     ->where('isee_expiry_date', '>', now());
+    }
+}
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev

@@ -16,8 +16,35 @@
         }
     },
     "require": {
+<<<<<<< HEAD
         "filament/filament": "^3.4",
         "filament/tables": "^3.4",
         "filament/forms": "^3.4"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "filament/filament": "^3.4",
+        "filament/tables": "^3.4",
+        "filament/forms": "^3.4"
+=======
+        "filament/filament": "^3.3",
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "filament/tables": "^3.3",
+        "filament/forms": "^3.3"
+>>>>>>> aurmich/dev
+=======
+        "filament/filament": "^3.3",
+        "filament/tables": "^3.3",
+        "filament/forms": "^3.3"
+>>>>>>> 54f4fa16 (.)
+=======
+        "filament/tables": "^3.3"
+>>>>>>> 15cb84fb (fix collisions)
+=======
+        "filament/tables": "^3.3",
+        "filament/forms": "^3.3"
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
     }
 }

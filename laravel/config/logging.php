@@ -98,10 +98,37 @@ return [
             'driver' => 'monolog',
             'level' => env('LOG_LEVEL', 'debug'),
             'handler' => StreamHandler::class,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'handler_with' => [
+                'stream' => 'php://stderr',
+            ],
+            'formatter' => env('LOG_STDERR_FORMATTER'),
+=======
+>>>>>>> aurmich/dev
             'formatter' => env('LOG_STDERR_FORMATTER'),
             'with' => [
                 'stream' => 'php://stderr',
             ],
+<<<<<<< HEAD
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+            'handler_with' => [
+                'stream' => 'php://stderr',
+            ],
+            'formatter' => env('LOG_STDERR_FORMATTER'),
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+            'formatter' => env('LOG_STDERR_FORMATTER'),
+            'with' => [
+                'stream' => 'php://stderr',
+            ],
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
             'processors' => [PsrLogMessageProcessor::class],
         ],
 

@@ -2,8 +2,19 @@
 
 namespace Modules\SaluteOra\States\User\Transitions;
 
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+use Illuminate\Support\Str;
+use Webmozart\Assert\Assert;
+=======
+use Illuminate\Support\Str;
+>>>>>>> f3e4ec66 (.)
+>>>>>>> aurmich/dev
 use Modules\SaluteOra\Models\User;
 use Spatie\ModelStates\Transition;
 use Modules\SaluteOra\States\User\Pending;
@@ -12,6 +23,10 @@ use Modules\Notify\Notifications\RecordNotification;
 use Modules\SaluteOra\States\User\IntegrationRequested;
 
 class PendingToIntegrationRequested extends BaseTransition
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 {
     
 
@@ -37,4 +52,47 @@ class PendingToIntegrationRequested extends BaseTransition
     }
 
 
+<<<<<<< HEAD
+=======
+=======
+=======
+use Modules\SaluteOra\Models\User;
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
+use Spatie\ModelStates\Transition;
+use Modules\SaluteOra\States\User\Pending;
+use Illuminate\Support\Facades\Notification;
+use Modules\Notify\Notifications\RecordNotification;
+use Modules\SaluteOra\States\User\IntegrationRequested;
+
+class PendingToIntegrationRequested extends Transition
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+{
+    
+
+    public function getNotificationData(): array{
+        if($this->user->remember_token==null){
+            $this->user->remember_token = Str::random(40);
+            $this->user->save();
+        }
+
+        $register_url = route('register.type',[
+            'type'=>$this->user->type->value,
+            'email'=>$this->user->email,
+            'token'=>$this->user->remember_token,
+        ]);
+
+        $data = [
+            'message' => $this->message,
+            'register_url' => $register_url,
+        ];
+        return $data;
+    }
+<<<<<<< HEAD
+>>>>>>> f4ba6a58 (✨ (User.php): add user state transition classes to manage user state changes)
+=======
+
+
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+>>>>>>> aurmich/dev
 }

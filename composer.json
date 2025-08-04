@@ -1,0 +1,326 @@
+{
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "name": "laraxot/module_chart_fila3",
+    "description": "chart module that manages your data and represents them in graphs",
+    "keywords": [
+        "laraxot",
+        "laravel",
+        "filament",
+        "module_chart",
+        "Laravel",
+        "Chart module",
+        "Charts"
+    ],
+    "homepage": "https://github.com/laraxot/module_chart_fila3",
+    "license": "MIT",
+    "authors": [{
+        "name": "Marco Sottana",
+        "email": "marco.sottana@gmail.com"
+    }],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Chart\\Providers\\ChartServiceProvider",
+                "Modules\\Chart\\Providers\\Filament\\AdminPanelProvider"
+=======
+=======
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+    "name": "laraxot/module_geo_fila3",
+    "description": "",
+    "homepage": "https://github.com/laraxot/module_geo_fila3.git",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Sottana",
+            "email": "marco.sottana@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Livewire\\LivewireServiceProvider",
+                "Modules\\Geo\\Providers\\GeoServiceProvider",
+                "Modules\\Geo\\Providers\\Filament\\AdminPanelProvider"
+<<<<<<< HEAD
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+=======
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+            ],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+            "Modules\\Chart\\": "app/",
+            "Modules\\Chart\\Database\\Factories\\": "database/factories/",
+            "Modules\\Chart\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "require": {
+        "amenadiel/jpgraph": "^4.1"
+    },
+    "repositories": [ {
+        "type": "path",
+        "url": "../Xot"
+    },
+    {
+        "type": "path",
+        "url": "../Tenant"
+    },
+    {
+        "type": "path",
+        "url": "../UI"
+    }],
+    "scripts": {
+=======
+=======
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+            "Modules\\Geo\\": "app/",
+            "Modules\\Geo\\Database\\Factories\\": "database/factories/",
+            "Modules\\Geo\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "require": {
+        "cheesegrits/filament-google-maps": "^3.0",
+        "dotswan/filament-map-picker": "^1.2",
+        "webbingbrasil/filament-maps": "^3.0@beta"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../Xot"
+        },
+        {
+            "type": "path",
+            "url": "../Tenant"
+        },
+        {
+            "type": "path",
+            "url": "../UI"
+        }
+    ],
+    "scripts": {
+        "post-autoload-dump_comment": [
+            "@php vendor/bin/testbench package:discover --ansi"
+        ],
+        "post-update-cmd_comment": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate"
+        ],
+<<<<<<< HEAD
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+=======
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "./vendor/bin/pest --no-coverage",
+        "test-coverage": "vendor/bin/pest --coverage-html coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true,
+            "pestphp/pest-plugin": true,
+<<<<<<< HEAD
+<<<<<<< HEAD
+            "dealerdirect/phpcodesniffer-composer-installer": true
+=======
+            "php-http/discovery": true
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+=======
+            "php-http/discovery": true
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 54f4fa16 (.)
+    "require-dev": {
+        "phpstan/phpstan": "^2.1"
+    },
+    "require": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "dotswan/filament-grapesjs-v3": "*",
+        "spatie/laravel-queueable-action": "^2.16"
+    }
+>>>>>>> 54f4fa16 (.)
+=======
+    "name": "exabyte/base_saluteora",
+    "type": "project",
+    "description": "Base project for predict fila3 mono with Laravel modular architecture",
+    "keywords": [
+        "laravel",
+        "filament",
+        "modular",
+        "predict",
+        "monorepo"
+    ],
+    "license": "MIT",
+    "config": {
+        "vendor-dir": "laravel/vendor",
+        "bin-dir": "laravel/vendor/bin",
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true,
+            "wikimedia/composer-merge-plugin": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "require": {
+        "wikimedia/composer-merge-plugin": "^2.1"
+    },
+    "extra": {
+        "merge-plugin": {
+            "include": [
+                "laravel/composer.json"
+            ],
+            "recurse": true,
+            "replace": false,
+            "ignore-duplicates": false,
+            "merge-dev": true,
+            "merge-extra": false,
+            "merge-extra-deep": false,
+            "merge-scripts": false
+=======
+    "name": "exabyte/base_saluteora",
+    "type": "project",
+    "description": "Base project for predict fila3 mono with Laravel modular architecture",
+    "keywords": [
+        "laravel",
+        "filament",
+        "modular",
+        "predict",
+        "monorepo"
+    ],
+    "license": "MIT",
+    "config": {
+        "vendor-dir": "laravel/vendor",
+        "bin-dir": "laravel/vendor/bin",
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true,
+            "wikimedia/composer-merge-plugin": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+<<<<<<< HEAD
+    "autoload": {
+        "psr-4": {
+            "": "laravel/app/"
+>>>>>>> 4171c7dc (chore: remove unused DentistData and SearchDentistData classes to clean up the codebase)
+=======
+    "require": {
+        "wikimedia/composer-merge-plugin": "^2.1"
+    },
+    "extra": {
+        "merge-plugin": {
+            "include": [
+                "laravel/composer.json"
+            ],
+            "recurse": true,
+            "replace": false,
+            "ignore-duplicates": false,
+            "merge-dev": true,
+            "merge-extra": false,
+            "merge-extra-deep": false,
+            "merge-scripts": false
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+<<<<<<< HEAD
+<<<<<<< HEAD
+            "@composer install --working-dir=laravel"
+        ],
+        "post-update-cmd": [
+            "@composer update --working-dir=laravel"
+        ],
+        "phpstan": [
+            "php laravel/vendor/bin/phpstan analyse --memory-limit=2G --error-format=table --no-progress"
+        ],
+        "phpstan-modules": [
+            "php laravel/vendor/bin/phpstan analyse --memory-limit=2G --error-format=table --no-progress laravel/Modules"
+        ]
+    },
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+            "cd laravel && composer install --no-dev --optimize-autoloader"
+=======
+            "@composer install --working-dir=laravel"
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+        ],
+        "post-update-cmd": [
+            "@composer update --working-dir=laravel"
+        ],
+        "phpstan": [
+            "php laravel/vendor/bin/phpstan analyse --memory-limit=2G --error-format=table --no-progress"
+        ],
+        "phpstan-modules": [
+            "php laravel/vendor/bin/phpstan analyse --memory-limit=2G --error-format=table --no-progress laravel/Modules"
+        ]
+    },
+<<<<<<< HEAD
+>>>>>>> 4171c7dc (chore: remove unused DentistData and SearchDentistData classes to clean up the codebase)
+=======
+>>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
+    "repositories": [
+        {
+            "type": "path",
+            "url": "laravel"
+        }
+    ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
+>>>>>>> 631510b4 (fix bashscripts structure + translation of module saluteMo)
+=======
+>>>>>>> a0e35b8d (helper text on login)
+    "minimum-stability": "dev",
+    "prefer-stable": true
+>>>>>>> 4171c7dc (chore: remove unused DentistData and SearchDentistData classes to clean up the codebase)
+=======
+    "minimum-stability": "stable",
+=======
+    "minimum-stability": "dev",
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+    "prefer-stable": true
+>>>>>>> 4171c7dc (chore: remove unused DentistData and SearchDentistData classes to clean up the codebase)
+}
+=======
+}
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+=======
+        "dotswan/filament-grapesjs-v3": "*"
+=======
+        "dotswan/filament-grapesjs-v3": "*",
+        "spatie/laravel-queueable-action": "^2.16"
+>>>>>>> ca5e1eaf (.)
+    }
+}
+>>>>>>> 54f4fa16 (.)
+=======
+}
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)

@@ -90,7 +90,17 @@ const calendarOptions = {
 
 ### Configurazioni Ambiente
 ```env
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> b58de900 (.)
+>>>>>>> aurmich/dev
 # .env - Variabili necessarie
 FULLCALENDAR_SCHEDULER_LICENSE_KEY=XXXXXXXXXX-XXX-XXXXXXXXXX
 FULLCALENDAR_CACHE_TTL=300
@@ -130,7 +140,17 @@ slotDuration: '00:30:00', // 30 min slots
 
 ### Comandi Verifica
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> b58de900 (.)
+>>>>>>> aurmich/dev
 # Verifica configurazione
 php artisan config:show fullcalendar
 php artisan tinker

@@ -1,7 +1,19 @@
 ---
+<<<<<<< HEAD
 description:
 globs:
 alwaysApply: false
+=======
+<<<<<<< HEAD
+trigger: manual
+description:
+globs:
+=======
+description:
+globs:
+alwaysApply: false
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 ---
 # Activitylog & Audit: Regole Trasversali
 
@@ -30,8 +42,22 @@ activity()->performedOn($user)->causedBy(auth()->user())->log('User approved');
 - [ ] Log manuale per eventi custom
 
 ## Collegamenti correlati
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+- [User/activitylog.mdc](../../laravel/Modules/User/docs/activitylog.mdc)
+- [Activity/README.md](../../laravel/Modules/Activity/docs/README.md)
+- [activitylog](../../docs/notifications-system.md)
+- [README centrale](../../docs/README.md)
+- [User/README](../../laravel/Modules/User/docs/README.md)
+=======
+>>>>>>> aurmich/dev
 - [User/activitylog.mdc](mdc:../../laravel/Modules/User/docs/activitylog.mdc)
 - [Activity/README.md](mdc:../../laravel/Modules/Activity/docs/README.md)
 - [activitylog](mdc:../../docs/notifications-system.md)
 - [README centrale](mdc:../../docs/README.md)
 - [User/README](mdc:../../laravel/Modules/User/docs/README.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev

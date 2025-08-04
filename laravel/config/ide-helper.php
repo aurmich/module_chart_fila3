@@ -140,7 +140,28 @@ return [
     */
 
     'model_locations' => [
+<<<<<<< HEAD
         'Modules/*/app/Models',
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        //'app',
+>>>>>>> aurmich/dev
+        'Modules/*/app/Models',
+=======
+        'app',
+>>>>>>> 54f4fa16 (.)
+=======
+        //'app',
+        'Modules/*/app/Models',
+>>>>>>> f3e4ec66 (.)
+=======
+        'app',
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
     ],
 
     /*

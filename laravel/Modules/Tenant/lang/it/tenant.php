@@ -77,7 +77,19 @@ return [
             ],
             'fields' => [
                 'name' => 'Nome',
+<<<<<<< HEAD
                 'last_name' => 'Cognome',
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                'last_name' => 'Cognome',
+=======
+                'surname' => 'Cognome',
+>>>>>>> 54f4fa16 (.)
+=======
+                'last_name' => 'Cognome',
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+>>>>>>> aurmich/dev
                 'tax_code' => 'Codice Fiscale',
                 'email' => 'Email',
                 'phone' => 'Telefono',

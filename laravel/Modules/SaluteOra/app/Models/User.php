@@ -2,9 +2,18 @@
 declare(strict_types=1);
 namespace Modules\SaluteOra\Models;
 
+<<<<<<< HEAD
 
 use Modules\User\Models\BaseUser;
 use Spatie\MediaLibrary\HasMedia;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+use Modules\User\Models\BaseUser;
+use Spatie\MediaLibrary\HasMedia;
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 use Spatie\ModelStates\HasStates;
 use Spatie\Activitylog\LogOptions;
 use Illuminate\Support\Facades\Log;
@@ -229,31 +238,366 @@ class User extends BaseUser implements HasMedia,HasStatesContract
 
 
     /** @var list<string> */
+<<<<<<< HEAD
+=======
+=======
+=======
+
+>>>>>>> f4ba6a58 (✨ (User.php): add user state transition classes to manage user state changes)
+use Modules\User\Models\BaseUser;
+=======
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
+use Spatie\ModelStates\HasStates;
+use Spatie\Activitylog\LogOptions;
+use Illuminate\Support\Facades\Log;
+
+use Spatie\Permission\Traits\HasRoles;
+use Modules\Gdpr\Models\Traits\HasGdpr;
+use Illuminate\Notifications\Notifiable;
+use Modules\SaluteOra\Enums\UserTypeEnum;
+use Modules\SaluteOra\States\User\Active;
+use Spatie\ModelStates\HasStatesContract;
+use Modules\SaluteOra\Enums\UserStateEnum;
+use Modules\SaluteOra\States\User\Pending;
+use Modules\SaluteOra\States\User\Inactive;
+use Modules\SaluteOra\States\User\Rejected;
+use Spatie\Activitylog\Traits\LogsActivity;
+use Spatie\MediaLibrary\InteractsWithMedia;
+use Modules\SaluteOra\States\User\Suspended;
+use Modules\SaluteOra\States\User\UserState;
+use Modules\SaluteOra\States\User\IntegrationRequested;
+
+/**
+ * Modello User per il modulo Patient.
+ * 
+ * Questo modello estende BaseUser e implementa Single Table Inheritance
+ * per gestire i tipi di utente (doctor, patient).
+ *
+ * @property int $id
+ * @property string $name
+ * @property string $email
+ * @property string $password
+ * @property UserTypeEnum $type
+ * @property UserState $state
+ * @property string|null $first_name
+ * @property string|null $last_name
+ * @property \Carbon\Carbon|null $date_of_birth
+ * @property string|null $gender
+ * @property string|null $address
+ * @property string|null $city
+ * @property string|null $phone
+ * @property string|null $lang
+ * @property int|null $current_team_id
+ * @property bool $is_active
+ * @property bool $is_otp
+ * @property \Carbon\Carbon|null $password_expires_at
+ * @property int|null $studio_id
+ * @property string|null $continuation_token
+ * @property \Carbon\Carbon|null $email_verified_at
+ * @property \Carbon\Carbon $created_at
+ * @property \Carbon\Carbon $updated_at
+ * @see \Modules\User\Models\BaseUser
+ * @see \Modules\SaluteOra\Models\Doctor
+ * @see \Modules\SaluteOra\Models\Patient
+ * @property string|null $registration_number
+ * @property string|null $status
+ * @property array<array-key, mixed>|null $certifications
+ * @property string|null $remember_token
+ * @property string|null $profile_photo_path
+ * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property array<array-key, mixed>|null $moderation_data
+ * @property string|null $uuid
+ * @property string|null $full_name
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property string|null $deleted_by
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Gdpr\Models\Consent> $activeConsents
+ * @property-read int|null $active_consents_count
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Activity\Models\Activity> $activities
+ * @property-read int|null $activities_count
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Authentication> $authentications
+ * @property-read int|null $authentications_count
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Laravel\Passport\Client> $clients
+ * @property-read int|null $clients_count
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Gdpr\Models\Consent> $consents
+ * @property-read int|null $consents_count
+ * @property-read \Modules\User\Models\Team|null $currentTeam
+ * @property-read \Modules\SaluteOra\Models\StudioUser|\Modules\SaluteOra\Models\TeamUser|\Modules\User\Models\DeviceUser|null $pivot
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Device> $devices
+ * @property-read int|null $devices_count
+ * @property-read \Modules\User\Models\AuthenticationLog|null $latestAuthentication
+ * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
+ * @property-read int|null $media_count
+ * @property-read \Illuminate\Notifications\DatabaseNotificationCollection<int, \Modules\User\Models\Notification> $notifications
+ * @property-read int|null $notifications_count
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Team> $ownedTeams
+ * @property-read int|null $owned_teams_count
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Permission> $permissions
+ * @property-read int|null $permissions_count
+ * @property-read \Modules\SaluteOra\Models\Profile|null $profile
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Role> $roles
+ * @property-read int|null $roles_count
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\SocialiteUser> $socialiteUsers
+ * @property-read int|null $socialite_users_count
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Team> $teams
+ * @property-read int|null $teams_count
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\SaluteOra\Models\Studio> $tenants
+ * @property-read int|null $tenants_count
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Laravel\Passport\Token> $tokens
+ * @property-read int|null $tokens_count
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Gdpr\Models\Treatment> $treatments
+ * @property-read int|null $treatments_count
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User admins()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User doctors()
+ * @method static \Modules\User\Database\Factories\UserFactory factory($count = null, $state = [])
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User orWhereNotState(string $column, $states)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User orWhereState(string $column, $states)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User patients()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User permission($permissions, $without = false)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User query()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User role($roles, $guard = null, $without = false)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereAddress($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereCertifications($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereCity($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereCreatedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereCurrentTeamId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereDateOfBirth($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereDeletedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereDeletedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereEmail($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereEmailVerifiedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereFirstName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereFullName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereGender($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereIsActive($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereIsOtp($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereLang($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereLastName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereModerationData($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereNotState(string $column, $states)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User wherePassword($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User wherePasswordExpiresAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User wherePhone($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereProfilePhotoPath($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereRegistrationNumber($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereRememberToken($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereState($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereStatus($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereUpdatedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereUuid($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User withoutPermission($permissions)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User withoutRole($roles, $guard = null)
+ * @property string|null $dental_problems
+ * @property string|null $last_dental_visit
+ * @property string|null $pregnancy_certificate
+ * @property string|null $isee_certificate
+ * @property string|null $identity_document
+ * @property string|null $health_card
+ * @property string|null $certificates
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Membership> $teamUsers
+ * @property-read int|null $team_users_count
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereCertificates($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereDentalProblems($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereHealthCard($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereIdentityDocument($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereIseeCertificate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereLastDentalVisit($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User wherePregnancyCertificate($value)
+ * @mixin \Eloquent
+ */
+class User extends BaseUser implements HasMedia,HasStatesContract 
+{
+    use LogsActivity;
+    use HasStates;
+    use HasGdpr;
+    use InteractsWithMedia;
+
+    /** @var string  */
+    //protected $connection = 'user';
+    protected $connection = 'salute_ora';
+
+
+    /**
+     * Mappatura dei tipi di utente con le relative classi
+     * Utilizziamo l'enum UserTypeEnum per una gestione tipizzata e sicura
+     */
+    protected $childTypes = [
+        /*
+        UserTypeEnum::ADMIN->value => Admin::class,
+        UserTypeEnum::DOCTOR->value => Doctor::class,
+        UserTypeEnum::PATIENT->value => Patient::class,
+        */
+        'admin' => Admin::class,
+        'doctor' => Doctor::class,
+        'patient' => Patient::class,
+    ];
+
+    /** @var array<string, mixed>  */
+    protected $attributes = [
+        //'state' => Pending::class,
+        //'state' => 'pending',
+        'is_otp'=>false,
+        'is_active'=>true,
+        'type' => 'patient',  // Valore di default secondo la best practice dell'enum
+    ];
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+    /**
+     * Gli attributi che devono essere nascosti nelle serializzazioni.
+     *
+     * @var array<int, string>
+     */
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
+
+    /**
+     * Gli attributi che devono essere convertiti in date.
+     *
+     * @var array<int, string>
+     */
+    protected $dates = [
+        'email_verified_at',
+        'created_at',
+        'updated_at',
+        'deleted_at',
+    ];
+
+    /**
+     * Gli attributi che possono essere assegnati in massa.
+     *
+     * @var array<int, string>
+     */
+>>>>>>> 54f4fa16 (.)
+=======
+    
+    
+=======
+
+
+<<<<<<< HEAD
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+    /** @var array<int, string> */
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+    /** @var list<string> */
+>>>>>>> 8e4d163b (phpstan)
+>>>>>>> aurmich/dev
     protected $fillable = [
         'name',
         'email',
         'password',
         'type',
         'state',
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> adac82bd (rebase)
+>>>>>>> aurmich/dev
         'first_name',
         'last_name',
         'date_of_birth',
         'gender',
         'address',
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
         'city',
         'phone',
         'lang',
         'current_team_id',
         //'is_active',
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
         'is_otp',
         'password_expires_at',
         //'studio_id',
         //'continuation_token',
         'certifications'
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+        'city',
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
+        'phone',
+        'lang',
+        'current_team_id',
+        'is_active',
+        'is_otp',
+        'password_expires_at',
+<<<<<<< HEAD
+>>>>>>> adac82bd (rebase)
+=======
+        'studio_id',
+        'continuation_token',
+<<<<<<< HEAD
+>>>>>>> 8e4d163b (phpstan)
+=======
+=======
+        'is_otp',
+        'password_expires_at',
+        //'studio_id',
+        //'continuation_token',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+        'certificates'
+>>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
+=======
+>>>>>>> 2f169a46 (- create progetto page)
+>>>>>>> aurmich/dev
     ];
 
     
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    /**
+     * Cast custom per il campo type:
+     * - Va dichiarato solo nel modello User del modulo SaluteOra, mai nella base User generica.
+     * - Motivazione: evitare di sporcare il modulo User condiviso tra più progetti.
+     * - Filosofia: ogni modulo è autonomo, nessun lock-in, rispetto della modularità.
+     * - Politica: type safety, DRY, serenità del codice, nessun errore di cast.
+=======
+        'email_verified_at',
+        'last_action_by',
+        'last_action_at',
+        'last_reason',
+    ];
+
+    /**
+     * Override dei cast degli attributi.
+>>>>>>> 54f4fa16 (.)
+     *
+     * @return array<string, string>
+     */
+=======
+    ];
+
+<<<<<<< HEAD
+    /**  @return array<string, string>   */
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+=======
+>>>>>>> adac82bd (rebase)
+>>>>>>> aurmich/dev
     /**
      * Cast custom per il campo type:
      * - Va dichiarato solo nel modello User del modulo SaluteOra, mai nella base User generica.
@@ -263,12 +607,31 @@ class User extends BaseUser implements HasMedia,HasStatesContract
      *
      * @return array<string, string>
      */
+<<<<<<< HEAD
+=======
+>>>>>>> 2bcfd382 (fix Address)
+>>>>>>> aurmich/dev
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+<<<<<<< HEAD
             'type' => UserTypeEnum::class, // Sintassi corretta per Laravel 12
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'type' => UserTypeEnum::class, // Sintassi corretta per Laravel 12
+=======
+            //'type' => UserTypeEnum::class, // Sintassi corretta per Laravel 12
+>>>>>>> 2bcfd382 (fix Address)
+=======
+            'type' => UserTypeEnum::class, // Sintassi corretta per Laravel 12
+>>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
+>>>>>>> aurmich/dev
             'state' => UserState::class,
             'certifications' => 'array',
             'certification' => 'array',  // ESSENZIALE: Evita "foreach() argument must be of type array|object, string given"
@@ -279,6 +642,49 @@ class User extends BaseUser implements HasMedia,HasStatesContract
     }
 
    
+<<<<<<< HEAD
+=======
+=======
+=======
+            'type' => UserType::class,
+=======
+            'type' => UserTypeEnum::class,
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+            'state' => UserState::class,
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+            'certifications' => 'array',
+            'moderation_data' => 'array',
+        ]);
+
+        
+    }
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+    /**
+     * Implement ownsTeam method to satisfy HasTeamsContract by delegating to ownsTeamTrait.
+     *
+     * @param \Modules\User\Contracts\TeamContract $team
+     * @return bool
+     */
+    public function ownsTeam(\Modules\User\Contracts\TeamContract $team): bool
+    {
+        return $this->ownsTeamTrait($team);
+    }
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+    
+>>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
+=======
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+=======
+   
+>>>>>>> 13ea6524 (phpstan)
+>>>>>>> aurmich/dev
 
     /**
      * Configurazione per il logging delle attività.
@@ -288,6 +694,11 @@ class User extends BaseUser implements HasMedia,HasStatesContract
     public function getActivitylogOptions(): LogOptions
     {
         return LogOptions::defaults()
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
             ->logOnly(['name', 'email', 'type', 'state'])
             ->logOnlyDirty();
     }
@@ -401,7 +812,49 @@ class User extends BaseUser implements HasMedia,HasStatesContract
         return $this->state->equals(IntegrationRequested::class);
     }
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    /**
+     * Get the user's type as a UserTypeEnum enum.
+     *
+     * Gestione robusta dell'attributo type con nullable safety.
+     *
+     * Importante: Questo override è nel modello User di SaluteOra (modulo specifico),
+     * MAI nel modulo User generico che deve restare puro e riutilizzabile.
+     *
+     * Principio di modularità: ogni modifica specifica rimane nei moduli specifici.
+     */
+    public function getTypeAttribute($value): ?UserTypeEnum
+    {
+        // Se già è un enum, lo restituiamo direttamente
+        if ($value instanceof UserTypeEnum) {
+            return $value;
+        }
+        if(empty($value)){
+            return UserTypeEnum::default();
+        }
+        // Utilizziamo il metodo tryFrom dell'enum che gestisce internamente
+        // i casi null/empty e cattura le eccezioni ValueError
+        return UserTypeEnum::tryFrom($value);
+    }
+
+    /**
+     * Set the user's type using a UserTypeEnum enum.
+     */
+    public function setTypeAttribute($value): void
+    {
+        $this->attributes['type'] = $value instanceof UserTypeEnum ? $value->value : $value;
+    }
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+
+>>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
+>>>>>>> aurmich/dev
 
     /**
      * Determine if the user is an admin.
@@ -430,7 +883,19 @@ class User extends BaseUser implements HasMedia,HasStatesContract
     /**
      * Scope per query: solo admin.
      */
+<<<<<<< HEAD
     public function scopeAdmins(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    public function scopeAdmins(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
+=======
+    public function scopeAdmins($query)
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+    public function scopeAdmins(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
+>>>>>>> 8e4d163b (phpstan)
+>>>>>>> aurmich/dev
     {
         return $query->where('type', UserTypeEnum::ADMIN->value);
     }
@@ -438,7 +903,19 @@ class User extends BaseUser implements HasMedia,HasStatesContract
     /**
      * Scope per query: solo dottori.
      */
+<<<<<<< HEAD
     public function scopeDoctors(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    public function scopeDoctors(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
+=======
+    public function scopeDoctors($query)
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+    public function scopeDoctors(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
+>>>>>>> 8e4d163b (phpstan)
+>>>>>>> aurmich/dev
     {
         return $query->where('type', UserTypeEnum::DOCTOR->value);
     }
@@ -446,8 +923,144 @@ class User extends BaseUser implements HasMedia,HasStatesContract
     /**
      * Scope per query: solo pazienti.
      */
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     public function scopePatients(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
     {
         return $query->where('type', UserTypeEnum::PATIENT->value);
     }
+<<<<<<< HEAD
+=======
+=======
+            ->logOnly(['state', 'moderation_data', 'type'])
+            ->logOnlyDirty();
+    }
+>>>>>>> 54f4fa16 (.)
+=======
+            ->logOnly(['name', 'email', 'type', 'state'])
+            ->logOnlyDirty();
+    }
+
+    /**
+     * Verifica se l'utente ha dati validi per la transizione di stato.
+     *
+     * @return bool
+     */
+    /**
+     * Verifica se l'utente ha dati validi per la transizione di stato.
+     *
+     * @return bool
+     */
+    public function hasValidData(): bool
+    {
+        return !empty($this->name) && !empty($this->email);
+    }
+
+    /**
+     * Transizione allo stato attivo.
+     *
+     * @return void
+     * @throws \Spatie\ModelStates\Exceptions\CouldNotPerformTransition
+     */
+    public function activate(): void
+    {
+        $this->state->transitionTo(Active::class);
+    }
+
+    /**
+     * Transizione allo stato sospeso.
+     *
+     * @return void
+     * @throws \Spatie\ModelStates\Exceptions\CouldNotPerformTransition
+     */
+    public function suspend(): void
+    {
+        $this->state->transitionTo(Suspended::class);
+    }
+
+    /**
+     * Transizione allo stato rifiutato.
+     *
+     * @return void
+     * @throws \Spatie\ModelStates\Exceptions\CouldNotPerformTransition
+     */
+    public function reject(): void
+    {
+        $this->state->transitionTo(Rejected::class);
+    }
+
+    /**
+     * Transizione allo stato di richiesta integrazione.
+     *
+     * @return void
+     * @throws \Spatie\ModelStates\Exceptions\CouldNotPerformTransition
+     */
+    public function requestIntegration(): void
+    {
+        $this->state->transitionTo(IntegrationRequested::class);
+    }
+
+    /**
+     * Verifica se l'utente è attivo.
+     *
+     * @return bool
+     */
+    public function isActive(): bool
+    {
+        return $this->state->equals(Active::class);
+    }
+
+    /**
+     * Verifica se l'utente è in attesa.
+     *
+     * @return bool
+     */
+    public function isPending(): bool
+    {
+        return $this->state->equals(Pending::class);
+    }
+
+    /**
+     * Verifica se l'utente è sospeso.
+     *
+     * @return bool
+     */
+    public function isSuspended(): bool
+    {
+        return $this->state->equals(Suspended::class);
+    }
+
+    /**
+     * Verifica se l'utente è rifiutato.
+     *
+     * @return bool
+     */
+    public function isRejected(): bool
+    {
+        return $this->state->equals(Rejected::class);
+    }
+
+    /**
+     * Verifica se è richiesta un'integrazione.
+     *
+     * @return bool
+     */
+    public function isIntegrationRequested(): bool
+    {
+        return $this->state->equals(IntegrationRequested::class);
+    }
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+    public function scopePatients($query)
+=======
+    public function scopePatients(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
+>>>>>>> 8e4d163b (phpstan)
+    {
+        return $query->where('type', UserTypeEnum::PATIENT->value);
+    }
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+>>>>>>> aurmich/dev
 }

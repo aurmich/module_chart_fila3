@@ -13,8 +13,27 @@ use Modules\Tenant\Services\TenantService;
 use Webmozart\Assert\Assert;
 
 use function Safe\json_encode;
+<<<<<<< HEAD
 use function Safe\json_decode;
 use function Safe\file_get_contents;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+use function Safe\json_decode;
+use function Safe\file_get_contents;
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> d23ba493 (add calendar)
+=======
+use function Safe\json_decode;
+use function Safe\file_get_contents;
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
 use function Safe\unlink;
 
 trait SushiToJson
@@ -33,6 +52,13 @@ trait SushiToJson
         
         $path = $this->getJsonFile();
         $data = json_decode(file_get_contents($path), true);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
         if(!is_array($data)){
             throw new \Exception('Data is not array ['.$path.']');
         }
@@ -48,6 +74,42 @@ trait SushiToJson
             $data[$id]=$item;
         }
         Assert::isArray($data);
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> d23ba493 (add calendar)
+=======
+        if(!is_array($data)){
+            throw new \Exception('Data is not array ['.$path.']');
+        }
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+        foreach($data as $id => $item){
+            if(is_array($item)){
+                foreach($item as $key => $value){
+                    if(is_array($value)){
+                        $value=json_encode($value);
+                    }
+                    $item[$key]=$value;
+                }
+            }
+            $data[$id]=$item;
+        }
+<<<<<<< HEAD
+        
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> d23ba493 (add calendar)
+=======
+        Assert::isArray($data);
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
         return $data;
     }
 

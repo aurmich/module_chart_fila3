@@ -44,9 +44,37 @@ new class extends Component {
                 </flux:subheading>
             </div>
 
+<<<<<<< HEAD
             <flux:input wire:model="password" :label="__('Password')" type="password" />
 
             <div class="flex justify-end space-x-2 rtl:space-x-reverse">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            <flux:input wire:model="password" :label="__('Password')" type="password" />
+
+            <div class="flex justify-end space-x-2 rtl:space-x-reverse">
+=======
+            <flux:input wire:model.live="password" :label="__('Password')" type="password" />
+
+            <div class="flex justify-end space-x-2">
+>>>>>>> aurmich/dev
+=======
+            <flux:input wire:model="password" :label="__('Password')" type="password" />
+=======
+            <flux:input wire:model.live="password" :label="__('Password')" type="password" />
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+
+            <div class="flex justify-end space-x-2">
+>>>>>>> 54f4fa16 (.)
+=======
+            <flux:input wire:model="password" :label="__('Password')" type="password" />
+
+            <div class="flex justify-end space-x-2 rtl:space-x-reverse">
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
                 <flux:modal.close>
                     <flux:button variant="filled">{{ __('Cancel') }}</flux:button>
                 </flux:modal.close>

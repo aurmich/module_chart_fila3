@@ -1,4 +1,8 @@
 {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     "minimum-stability": "dev",
     "require": {
     "minimum-stability": "dev",
@@ -6,6 +10,15 @@
     },
     "require-dev": {
     "minimum-stability": "dev",
+<<<<<<< HEAD
+=======
+=======
+    "require": {
+        "thecodingmachine/safe": "^2.5"
+    },
+    "require-dev": {
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
         "laravel/pint": "^1.13",
         "nunomaduro/phpinsights": "^2.9",
         "larastan/larastan": "^2.6",
@@ -18,9 +31,19 @@
         "thecodingmachine/phpstan-safe-rule": "^1.2"
     },
     "config": {
+<<<<<<< HEAD
     "minimum-stability": "dev",
         "allow-plugins": {
     "minimum-stability": "dev",
+=======
+<<<<<<< HEAD
+    "minimum-stability": "dev",
+        "allow-plugins": {
+    "minimum-stability": "dev",
+=======
+        "allow-plugins": {
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
     }

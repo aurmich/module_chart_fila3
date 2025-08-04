@@ -196,3 +196,37 @@ php artisan view:cache
 - [Tailwind CSS](https://tailwindcss.com/docs)
 - [Laravel Blade](https://laravel.com/docs/blade)
 - [Vite](https://vitejs.dev/guide/) 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> 15cb84fb (fix collisions)
+
+## Collegamenti tra versioni di theme.md
+* [theme.md](laravel/Modules/Xot/docs/filament/theme.md)
+* [theme.md](laravel/Themes/One/docs/theme.md)
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+ 
+>>>>>>> 35e9b7ea (feat(scripts): add script to rename files to lowercase while preserving README.md case for consistency and organization)
+=======
+ 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
+=======
+>>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev

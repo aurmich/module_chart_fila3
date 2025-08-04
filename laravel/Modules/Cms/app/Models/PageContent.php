@@ -21,6 +21,30 @@ use Spatie\Translatable\HasTranslations;
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property mixed                                       $translations
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ * @property string                                      $blocks
+ * @property string|null                                 $id
+ * @property array|null                                  $name
+ * @property string|null                                 $slug
+ * @property \Illuminate\Support\Carbon|null             $created_at
+ * @property \Illuminate\Support\Carbon|null             $updated_at
+ * @property string|null                                 $created_by
+ * @property string|null                                 $updated_by
+ * @property \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property mixed                                       $translations
+ * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+<<<<<<< HEAD
+ *
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+>>>>>>> aurmich/dev
  * @method static \Modules\Cms\Database\Factories\PageContentFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|PageContent  newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|PageContent  newQuery()
@@ -37,6 +61,20 @@ use Spatie\Translatable\HasTranslations;
  * @method static \Illuminate\Database\Eloquent\Builder|PageContent  whereSlug($value)
  * @method static \Illuminate\Database\Eloquent\Builder|PageContent  whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|PageContent  whereUpdatedBy($value)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ *                                                                                                                                                                  >>>>>>> 49ebea7 (.)
+<<<<<<< HEAD
+ *
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+>>>>>>> aurmich/dev
  * @mixin \Eloquent
  */
 class PageContent extends BaseModel

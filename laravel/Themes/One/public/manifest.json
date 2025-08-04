@@ -1,6 +1,239 @@
 {
   "resources/css/app.css": {
+<<<<<<< HEAD
     "file": "assets/app-7PoISLAE.css",
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "file": "assets/app-7PoISLAE.css",
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "file": "assets/app-CizGm5hC.css",
+=======
+    "file": "assets/app-Dph1A97d.css",
+>>>>>>> 8acca8e8 (- continuo style pagina di registrazione;)
+=======
+    "file": "assets/app-Dph1A97d.css",
+=======
+    "file": "assets/app-CEDafcW-.css",
+>>>>>>> 7f5c184c (feat(gdpr): add ConsentType enum to define available consent types and their labels for better consent management)
+>>>>>>> adac82bd (rebase)
+=======
+    "file": "assets/app-DpVlLzWv.css",
+>>>>>>> c9dfd052 (style: update CSS styles for improved consistency and readability across the application)
+=======
+    "file": "assets/app-B1ErEWAr.css",
+>>>>>>> cecdd8e5 (- rename file dettaglio-paziente;)
+=======
+    "file": "assets/app-CiFaG0te.css",
+>>>>>>> 58d017c2 (- aggiornato stile dettaglio paziente)
+=======
+    "file": "assets/app-DdH0QB6i.css",
+>>>>>>> ff138484 (- update dettaglio paziente)
+=======
+    "file": "assets/app-C0SPCnMN.css",
+>>>>>>> b2a39a21 (- update footer)
+=======
+    "file": "assets/app-DX1dIpus.css",
+>>>>>>> 89a8313a (- update primary colors)
+=======
+    "file": "assets/app-CfdGE3gz.css",
+>>>>>>> 6a8817e6 (- creata pagina dettaglio dottore)
+=======
+    "file": "assets/app-NB7MBAoQ.css",
+>>>>>>> 46477621 (- update contenuto pagine appuntamento)
+=======
+    "file": "assets/app-C-UfjyNv.css",
+>>>>>>> eb36972d (- create pagina: "partners";)
+=======
+    "file": "assets/app-B6ruuQZt.css",
+>>>>>>> f7d3ce4f (- update landing-page;)
+=======
+    "file": "assets/app-CVLTvScD.css",
+>>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
+=======
+    "file": "assets/app-lXfxA-ro.css",
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+    "file": "assets/app-nbmSffLk.css",
+>>>>>>> 9dcbbc15 (- updated login e reset view)
+=======
+    "file": "assets/app-CmtP7Gk3.css",
+>>>>>>> c0c82b7e (- updated template email)
+=======
+    "file": "assets/app-DLjS0eik.css",
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
+>>>>>>> aurmich/dev
+=======
+    "file": "assets/app-DVlM8y_o.css",
+>>>>>>> 3ad9917a (- fix styles registration)
+=======
+    "file": "assets/app-Cq5pA5gf.css",
+>>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
+=======
+    "file": "assets/app-C7OaeTzW.css",
+>>>>>>> 54f4fa16 (.)
+=======
+    "file": "assets/app-B9VPcr49.css",
+>>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
+=======
+    "file": "assets/app-C7OaeTzW.css",
+>>>>>>> 15cb84fb (fix collisions)
+=======
+    "file": "assets/app-B9VPcr49.css",
+>>>>>>> d23ba493 (add calendar)
+=======
+    "file": "assets/app-Zd_I5oY8.css",
+>>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
+=======
+    "file": "assets/app-C02pvmjL.css",
+>>>>>>> 7e1c3ad6 (- sistemato footer;)
+=======
+    "file": "assets/app-stUeewi8.css",
+>>>>>>> a25008e1 (- Rename file: header, footer, home;)
+=======
+    "file": "assets/app-Cs86oWFH.css",
+>>>>>>> f2140a80 (- continuo style landing page;)
+=======
+    "file": "assets/app-Cs86oWFH.css",
+=======
+    "file": "assets/app-DYCARMKa.css",
+>>>>>>> f38a097e (fileupload to spatiefileupload + final button wizard)
+>>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
+=======
+    "file": "assets/app-CizGm5hC.css",
+>>>>>>> 082abae3 (.)
+=======
+    "file": "assets/app-Dph1A97d.css",
+>>>>>>> 8acca8e8 (- continuo style pagina di registrazione;)
+=======
+    "file": "assets/app-Dph1A97d.css",
+=======
+    "file": "assets/app-CEDafcW-.css",
+>>>>>>> 7f5c184c (feat(gdpr): add ConsentType enum to define available consent types and their labels for better consent management)
+>>>>>>> adac82bd (rebase)
+=======
+    "file": "assets/app-DpVlLzWv.css",
+>>>>>>> c9dfd052 (style: update CSS styles for improved consistency and readability across the application)
+=======
+    "file": "assets/app-B1ErEWAr.css",
+>>>>>>> cecdd8e5 (- rename file dettaglio-paziente;)
+=======
+    "file": "assets/app-CiFaG0te.css",
+>>>>>>> 58d017c2 (- aggiornato stile dettaglio paziente)
+=======
+    "file": "assets/app-DdH0QB6i.css",
+>>>>>>> ff138484 (- update dettaglio paziente)
+=======
+    "file": "assets/app-C0SPCnMN.css",
+>>>>>>> b2a39a21 (- update footer)
+=======
+    "file": "assets/app-DX1dIpus.css",
+>>>>>>> 89a8313a (- update primary colors)
+=======
+    "file": "assets/app-CfdGE3gz.css",
+>>>>>>> 6a8817e6 (- creata pagina dettaglio dottore)
+=======
+    "file": "assets/app-NB7MBAoQ.css",
+>>>>>>> 46477621 (- update contenuto pagine appuntamento)
+=======
+    "file": "assets/app-C-UfjyNv.css",
+>>>>>>> eb36972d (- create pagina: "partners";)
+=======
+    "file": "assets/app-B6ruuQZt.css",
+>>>>>>> f7d3ce4f (- update landing-page;)
+=======
+    "file": "assets/app-CVLTvScD.css",
+>>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
+=======
+    "file": "assets/app-lXfxA-ro.css",
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+    "file": "assets/app-nbmSffLk.css",
+>>>>>>> 9dcbbc15 (- updated login e reset view)
+=======
+    "file": "assets/app-CmtP7Gk3.css",
+>>>>>>> c0c82b7e (- updated template email)
+=======
+    "file": "assets/app-DLjS0eik.css",
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
+=======
+    "file": "assets/app-DVlM8y_o.css",
+>>>>>>> 3ad9917a (- fix styles registration)
+=======
+    "file": "assets/app-Cq5pA5gf.css",
+>>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
+=======
+    "file": "assets/app-ClobuGkB.css",
+>>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
+=======
+    "file": "assets/app-C30pDuE_.css",
+>>>>>>> 8d28bdca (- updated style area dottore)
+=======
+    "file": "assets/app-5jqdZTEn.css",
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
+=======
+    "file": "assets/app-Dr7VE1hH.css",
+>>>>>>> 0cff2983 (📝 (docs): remove unused Blade file for appointments to clean up the codebase)
+=======
+    "file": "assets/app-JIX7A0Hz.css",
+>>>>>>> 97dc5c13 (-updated privacy policy paziente)
+=======
+    "file": "assets/app-YU7s42mN.css",
+>>>>>>> 0c7257a8 (- updated testi sale d'attesa)
+>>>>>>> aurmich/dev
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -10,4 +243,16 @@
     "src": "resources/js/app.js",
     "isEntry": true
   }
+<<<<<<< HEAD
 }
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> aurmich/dev
+=======
+}
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev

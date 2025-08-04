@@ -37,6 +37,14 @@ class SendMailByRecordAction
         //Mail::send($mail);
         //dddx(Mail::to($record)->send(new $mailClass($record)));
         //$res=Mail::to('marco.sottana@gmail.com')->send($mail);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
         
         // Verifica che il model abbia le proprietà/metodi necessari
         if (!property_exists($record, 'email') || !isset($record->email)) {
@@ -51,6 +59,16 @@ class SendMailByRecordAction
             throw new \InvalidArgumentException('Model must implement myLogs method');
         }
         
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
          $data = [
             'to' => $record->email,
             'subject' => $record->option('mail_oggetto'),

@@ -53,7 +53,14 @@ Il sistema è organizzato in moduli indipendenti ma interdipendenti:
 ### 2. Creazione del Progetto
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Installare Laravel Installer
 composer global require laravel/installer
 
@@ -123,7 +130,14 @@ composer dump-autoload
 Utilizzare git subtree per importare i moduli Laraxot mantenendo la possibilità di aggiornamenti futuri:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Creare la directory Modules se non esiste
 mkdir -p Modules
 
@@ -152,7 +166,14 @@ git subtree add --prefix Modules/Chart git@github.com:laraxot/module_chart_fila3
 ### 5. Creazione dei Moduli Custom
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Creare il modulo Patient
 php artisan module:make Patient
 
@@ -180,7 +201,14 @@ php artisan migrate
 **IMPORTANTE**: In il progetto, tutte le migrazioni sono gestite all'interno dei moduli Laraxot. Prima di eseguire le migrazioni, è necessario rimuovere le migrazioni locali:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Rimuovere le migrazioni locali
 rm -rf database/migrations
 
@@ -714,7 +742,14 @@ class GdprComplianceMiddleware
 
 ```bash
 #!/bin/bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # File: deploy.sh
 
 echo "Deploying il progetto..."
@@ -800,3 +835,10 @@ Per supporto tecnico sul progetto il progetto, contattare:
 
 - **Supporto Tecnico**: support@saluteora.it
 - **Documentazione**: https://saluteora.it/docs
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+- **Repository**: https://github.com/organization/saluteora 
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev

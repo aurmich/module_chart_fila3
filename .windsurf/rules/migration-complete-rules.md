@@ -256,7 +256,14 @@ Prima di aggiungere o modificare:
 ### Esempio di Documentazione
 
 ```markdown
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Aggiornamento Tabella prodotti
 
 ## Modifiche apportate

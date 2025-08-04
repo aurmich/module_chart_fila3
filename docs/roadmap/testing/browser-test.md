@@ -583,7 +583,14 @@ class ResponsiveTest extends DuskTestCase
 I browser test saranno integrati nella pipeline CI/CD per essere eseguiti automaticamente, garantendo la stabilità dell'interfaccia utente:
 
 ```yaml
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # .github/workflows/browser-tests.yml
 name: Browser Tests
 

@@ -13,6 +13,10 @@ Modules/SaluteMo/app/Filament/Widgets/
 namespace Modules\SaluteMo\Filament\Widgets;
 ```
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 ### Estensione Base - REGOLA CRITICA
 **CRITICO**: NON estendere MAI direttamente le classi Filament. Utilizzare SEMPRE le classi XotBase:
 
@@ -49,6 +53,21 @@ class WidgetName extends XotBaseWidget
 // StatsOverviewWidget
 use Modules\Xot\Filament\Widgets\XotBaseStatsOverviewWidget;
 class WidgetName extends XotBaseStatsOverviewWidget
+<<<<<<< HEAD
+=======
+=======
+### Estensione Base
+**IMPORTANTE**: Non estendere mai direttamente le classi Filament. Utilizzare sempre le classi base XotBase:
+
+```php
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+
+class MobileActivityWidget extends XotBaseWidget
+{
+    // Implementazione...
+}
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
+>>>>>>> aurmich/dev
 ```
 
 ## Convenzione Percorso delle Viste
@@ -85,6 +104,10 @@ Modules/SaluteMo/resources/views/filament/widgets/
 - Rimuovere il suffisso 'Widget' se presente
 - Esempio: `MobileActivityWidget` → `mobile-activity`
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 ## ChartWidget - Regole Critiche
 
 ### Metodo getHeading() - PUBBLICO OBBLIGATORIO
@@ -166,6 +189,11 @@ class ExampleChartWidget extends XotBaseChartWidget
 }
 ```
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
+>>>>>>> aurmich/dev
 ## Traduzione nei Widget
 
 ### Schema dei File di Traduzione
@@ -279,6 +307,10 @@ class MobileAppointmentWidget extends FullCalendarWidget
 }
 ```
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 ## Checklist Prevenzione Errori
 
 ### Prima di Salvare un Widget
@@ -312,6 +344,11 @@ protected static bool $isLazy = true;
 protected static ?int $sort = 1;
 ```
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
+>>>>>>> aurmich/dev
 ## Collegamenti Correlati
 - [Struttura Filament](./structure.md)
 - [Convenzioni di Vista](../views/conventions.md)

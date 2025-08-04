@@ -6,6 +6,13 @@ namespace Modules\Notify\Models;
 
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Facades\Blade;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
+>>>>>>> aurmich/dev
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\Notify\Enums\NotificationTypeEnum;
@@ -13,6 +20,14 @@ use Modules\Xot\Traits\HasFactory;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\Translatable\HasTranslations;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
+>>>>>>> aurmich/dev
 
 /**
  * Class NotificationTemplate.
@@ -37,14 +52,36 @@ use Spatie\Translatable\HasTranslations;
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
  * @property \Carbon\Carbon|null $deleted_at
+<<<<<<< HEAD
  * @property-read string $channels_label
  * @property NotificationTypeEnum $type
  * @property-read \Modules\User\Models\Profile|null $creator
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 345f8677 (phpstan)
+ * @property-read string $channels_label
+ * @property NotificationTypeEnum $type
+<<<<<<< HEAD
+ * @property-read \Modules\User\Models\Profile|null $creator
+=======
+ * @property-read \Modules\SaluteOra\Models\Profile|null $creator
+>>>>>>> f3e4ec66 (.)
+>>>>>>> aurmich/dev
  * @property-read int|null $logs_count
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
  * @property-read mixed $translations
+<<<<<<< HEAD
  * @property-read \Modules\User\Models\Profile|null $updater
+=======
+<<<<<<< HEAD
+ * @property-read \Modules\User\Models\Profile|null $updater
+=======
+ * @property-read \Modules\SaluteOra\Models\Profile|null $updater
+>>>>>>> f3e4ec66 (.)
+>>>>>>> aurmich/dev
  * @property-read int|null $versions_count
  * @method static \Illuminate\Database\Eloquent\Builder<static>|NotificationTemplate active()
  * @method static \Modules\Notify\Database\Factories\NotificationTemplateFactory factory($count = null, $state = [])
@@ -64,6 +101,23 @@ class NotificationTemplate extends BaseModel implements HasMedia
     use HasTranslations;
     use InteractsWithMedia;
 
+<<<<<<< HEAD
+=======
+=======
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Notify\Models\NotificationTemplateVersion> $versions
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Notify\Models\NotificationLog> $logs
+ * @property-read string $channels_label
+ */
+class NotificationTemplate extends BaseModel implements HasMedia
+{
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+    use HasTranslations;
+    use InteractsWithMedia;
+
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
+>>>>>>> aurmich/dev
     protected $fillable = [
         'name',
         'code',
@@ -81,6 +135,11 @@ class NotificationTemplate extends BaseModel implements HasMedia
         'version',
         'tenant_id',
         'grapesjs_data',
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
         'type',
     ];
 
@@ -93,6 +152,39 @@ class NotificationTemplate extends BaseModel implements HasMedia
     {
         return [
             'type' => NotificationTypeEnum::class,
+<<<<<<< HEAD
+=======
+=======
+=======
+        'type',
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
+    ];
+
+    protected $casts = [
+        'type' => NotificationTypeEnum::class,
+        'preview_data' => 'array',
+        'body_html' => 'string',
+        'body_text' => 'string',
+        'channels' => 'array',
+        'variables' => 'array',
+        'conditions' => 'array',
+        'metadata' => 'array',
+        'is_active' => 'boolean',
+        'grapesjs_data' => 'array',
+    ];
+
+    public array $translatable = [
+        'subject',
+        'body_text',
+        'body_html',
+    ];
+
+    public function registerMediaCollections(): void
+    {
+<<<<<<< HEAD
+        return array_merge(parent::casts(), [
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
             'preview_data' => 'array',
             'body_html' => 'string',
             'body_text' => 'string',
@@ -102,6 +194,10 @@ class NotificationTemplate extends BaseModel implements HasMedia
             'metadata' => 'array',
             'is_active' => 'boolean',
             'grapesjs_data' => 'array',
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
         ];
     }
 
@@ -117,6 +213,21 @@ class NotificationTemplate extends BaseModel implements HasMedia
             ->singleFile();
     }
 /*
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+        ]);
+=======
+        $this->addMediaCollection('attachments')
+            ->singleFile();
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
+    }
+
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
     public function versions(): HasMany
     {
         return $this->hasMany(NotificationTemplateVersion::class, 'template_id')
@@ -127,14 +238,41 @@ class NotificationTemplate extends BaseModel implements HasMedia
     {
         return $this->hasMany(NotificationLog::class, 'template_id');
     }
+<<<<<<< HEAD
 */
     /*
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+*/
+    /*
+=======
+
+    /**
+>>>>>>> 54f4fa16 (.)
+=======
+*/
+    /*
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
      * Create a new version of the template.
      *
      * @param string $createdBy The user who created the version
      * @param string|null $notes Optional notes about the changes
      * @return self
+<<<<<<< HEAD
      
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+     
+=======
+     */
+>>>>>>> 54f4fa16 (.)
+=======
+     
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
     public function createNewVersion(string $createdBy, ?string $notes = null): self
     {
         $this->versions()->create([
@@ -152,7 +290,19 @@ class NotificationTemplate extends BaseModel implements HasMedia
         $this->increment('version');
         return $this;
     }
+<<<<<<< HEAD
 */
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+*/
+=======
+
+>>>>>>> 54f4fa16 (.)
+=======
+*/
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
     /**
      * Compile the template with the given data.
      *
@@ -166,7 +316,19 @@ class NotificationTemplate extends BaseModel implements HasMedia
         $bodyText = $this->compileString($this->body_text, $data);
 
         return [
+<<<<<<< HEAD
             'subject' => $subject ?? '',
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'subject' => $subject ?? '',
+=======
+            'subject' => $subject,
+>>>>>>> 54f4fa16 (.)
+=======
+            'subject' => $subject ?? '',
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
             'body_html' => $bodyHtml,
             'body_text' => $bodyText,
         ];
@@ -292,6 +454,16 @@ class NotificationTemplate extends BaseModel implements HasMedia
         $this->grapesjs_data = $data;
         return $this;
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
+>>>>>>> aurmich/dev
 
     public function getPreviewData(): array
     {
@@ -300,19 +472,75 @@ class NotificationTemplate extends BaseModel implements HasMedia
 
     public function getPreviewSubject(): string
     {
+<<<<<<< HEAD
         $result = $this->getTranslation('subject', app()->getLocale());
         return is_string($result) ? $result : '';
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        $result = $this->getTranslation('subject', app()->getLocale());
+        return is_string($result) ? $result : '';
+=======
+        return $this->getTranslation('subject', app()->getLocale());
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
+=======
+        $result = $this->getTranslation('subject', app()->getLocale());
+        return is_string($result) ? $result : '';
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
     }
 
     public function getPreviewBodyText(): string
     {
+<<<<<<< HEAD
         $result = $this->getTranslation('body_text', app()->getLocale());
         return is_string($result) ? $result : '';
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        $result = $this->getTranslation('body_text', app()->getLocale());
+        return is_string($result) ? $result : '';
+=======
+        return $this->getTranslation('body_text', app()->getLocale());
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
+=======
+        $result = $this->getTranslation('body_text', app()->getLocale());
+        return is_string($result) ? $result : '';
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
     }
 
     public function getPreviewBodyHtml(): string
     {
+<<<<<<< HEAD
         $result = $this->getTranslation('body_html', app()->getLocale());
         return is_string($result) ? $result : '';
     }
 }
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        $result = $this->getTranslation('body_html', app()->getLocale());
+        return is_string($result) ? $result : '';
+=======
+        return $this->getTranslation('body_html', app()->getLocale());
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
+=======
+        $result = $this->getTranslation('body_html', app()->getLocale());
+        return is_string($result) ? $result : '';
+>>>>>>> 345f8677 (phpstan)
+    }
+}
+=======
+} 
+>>>>>>> 54f4fa16 (.)
+=======
+}
+>>>>>>> 2099645a (.)
+=======
+} 
+>>>>>>> 15cb84fb (fix collisions)
+=======
+}
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev

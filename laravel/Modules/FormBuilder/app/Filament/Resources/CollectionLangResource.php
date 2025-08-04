@@ -27,13 +27,21 @@ class CollectionLangResource extends LangBaseResource
         return [
             TextInput::make('name')
                 ->live(onBlur: true)
+<<<<<<< HEAD
                 ->required()->maxLength(255)->columnSpan(2),
+=======
+                ->label(__('Collections Name'))->required()->maxLength(255)->columnSpan(2),
+>>>>>>> aurmich/dev
             Repeater::make('values')
                 ->grid([
                     'default' => 1,
                     'md' => 2,
                     'lg' => 3,
                 ])
+<<<<<<< HEAD
+=======
+                ->label(__('Collections Values'))
+>>>>>>> aurmich/dev
                 ->columnSpan(2)
                 ->columns(1)
                 ->schema([
@@ -44,11 +52,19 @@ class CollectionLangResource extends LangBaseResource
                                 $set('itemKey', $get('itemValue'));
                             }
                         })
+<<<<<<< HEAD
                         ->required()->hint(__('what the user will see')),
                     TextInput::make('itemKey')
                         ->live(onBlur: true)
                         ->required()->hint(__('what store in the form')),
                     Toggle::make('itemIsDefault'),
+=======
+                        ->required()->label(__('Value'))->hint(__('what the user will see')),
+                    TextInput::make('itemKey')
+                        ->live(onBlur: true)
+                        ->required()->label(__('Key'))->hint(__('what store in the form')),
+                    Toggle::make('itemIsDefault')->label(__('selected by default')),
+>>>>>>> aurmich/dev
                 ]),
             ];
        }

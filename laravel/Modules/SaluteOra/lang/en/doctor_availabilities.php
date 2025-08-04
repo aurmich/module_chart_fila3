@@ -1,5 +1,9 @@
 <?php
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 return array (
   'actions' => 
   array (
@@ -20,3 +24,18 @@ return array (
     ),
   ),
 );
+<<<<<<< HEAD
+=======
+=======
+declare(strict_types=1);
+
+return [
+    'actions' => [
+        'editSchedule' => [
+            'label' => 'Edit Availability',
+            'helper_text' => '',
+        ],
+    ],
+];
+>>>>>>> 8d591468 (fields translations)
+>>>>>>> aurmich/dev

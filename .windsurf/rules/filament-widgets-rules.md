@@ -468,7 +468,14 @@ La documentazione dei widget deve includere:
 Esempio di struttura di documentazione:
 
 ```markdown
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # ModuleNameCalendarWidget
 
 ## Descrizione

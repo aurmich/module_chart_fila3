@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: This rule provides guidelines for best practices when working with the Hugging Face Transformers library, covering code organization, performance, testing, security, and common pitfalls. It emphasizes community standards and maintainability.
 globs: *.py
 ---

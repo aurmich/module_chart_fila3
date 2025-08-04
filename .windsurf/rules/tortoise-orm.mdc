@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: This rule provides comprehensive best practices for using Tortoise ORM in Python projects, covering aspects like code organization, performance, security, and testing.
 globs: *.py
 ---

@@ -72,12 +72,25 @@ class SendEmail extends Page implements HasForms
     {
         $data = $this->emailForm->getState();
         $email_data = EmailData::from($data);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
         // $from_address = config('mail.from.address');
 
         Mail::to($data['to'])
             ->send(
                 new EmailDataEmail($email_data)
             );
+<<<<<<< HEAD
+=======
+=======
+
+        Mail::to($data['to'])->send(
+            new EmailDataEmail($email_data)
+        );
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 
         Notification::make()
             ->success()
@@ -97,6 +110,13 @@ class SendEmail extends Page implements HasForms
     {
         return [
             Action::make('emailFormActions')
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+                //
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 
                 ->submit('emailFormActions'),
         ];

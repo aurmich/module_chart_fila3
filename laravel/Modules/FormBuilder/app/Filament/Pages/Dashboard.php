@@ -38,13 +38,25 @@ class Dashboard extends XotBaseDashboard
     {
         return [
             DatePicker::make('startDate')
+<<<<<<< HEAD
                 ->maxDate(fn (Get $get) => $get('endDate') ?: now()),
                 
             DatePicker::make('endDate')
+=======
+                ->label('Data Inizio')
+                ->maxDate(fn (Get $get) => $get('endDate') ?: now()),
+                
+            DatePicker::make('endDate')
+                ->label('Data Fine')
+>>>>>>> aurmich/dev
                 ->minDate(fn (Get $get) => $get('startDate') ?: now())
                 ->maxDate(now()),
                 
             Select::make('formStatus')
+<<<<<<< HEAD
+=======
+                ->label('Stato Form')
+>>>>>>> aurmich/dev
                 ->options([
                     'all' => 'Tutti gli stati',
                     'active' => 'Attivi',
@@ -55,6 +67,10 @@ class Dashboard extends XotBaseDashboard
                 ->default('all'),
                 
             Select::make('formCategory')
+<<<<<<< HEAD
+=======
+                ->label('Categoria Form')
+>>>>>>> aurmich/dev
                 ->options([
                     'all' => 'Tutte le categorie',
                     'medical' => 'Medico',

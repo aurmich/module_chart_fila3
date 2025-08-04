@@ -15,10 +15,38 @@
   - Namespace: `Modules\Notify\Console\Commands`
 
 ## Applicazione
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 - Questa regola si applica a **tutti** i moduli (Notify, Cms, Xot, ecc.), **inclusi i modelli**.
 - Evitare l'uso di proprietà deprecate come `protected $casts` nei modelli: preferire override tramite metodo `casts()`.
 - Per esempi specifici, vedere la documentazione nei singoli moduli:
   - [Patient: Regole Modelli](../../Patient/docs/models.md)
+<<<<<<< HEAD
+=======
+=======
+- Questa regola si applica a **tutti** i moduli (Notify, Cms, Xot, ecc.).
+- Per esempi specifici, vedere la documentazione nei singoli moduli:
+>>>>>>> aurmich/dev
+=======
+- Questa regola si applica a **tutti** i moduli (Notify, Cms, Xot, ecc.).
+- Per esempi specifici, vedere la documentazione nei singoli moduli:
+>>>>>>> 9df8f556 (fix .md)
+=======
+- Questa regola si applica a **tutti** i moduli (Notify, Cms, Xot, ecc.), **inclusi i modelli**.
+- Evitare l'uso di proprietà deprecate come `protected $casts` nei modelli: preferire override tramite metodo `casts()`.
+- Per esempi specifici, vedere la documentazione nei singoli moduli:
+  - [Patient: Regole Modelli](../../Patient/docs/models.md)
+>>>>>>> 15cb84fb (fix collisions)
+=======
+- Questa regola si applica a **tutti** i moduli (Notify, Cms, Xot, ecc.).
+- Per esempi specifici, vedere la documentazione nei singoli moduli:
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
   - [Notify Namespace Rules](../../Notify/docs/NAMESPACE_RULES.md)
 
 ## Collegamenti

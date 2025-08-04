@@ -128,7 +128,27 @@ class RadioCardSelector extends Field
     /**
      * Ottiene le card per la visualizzazione.
      *
+<<<<<<< HEAD
      * 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+     * 
+=======
+     * @return array<int, array<string, mixed>>
+>>>>>>> aurmich/dev
+=======
+     * 
+>>>>>>> 345f8677 (phpstan)
+=======
+     * @return array<int, array<string, mixed>>
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+     * 
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
      */
     public function getCards(): array
     {

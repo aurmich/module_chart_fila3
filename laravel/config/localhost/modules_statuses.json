@@ -7,7 +7,18 @@
     "Geo": true,
     "Forum": true,
     "SaluteOra": true,
+<<<<<<< HEAD
     "SaluteMo": true,
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "SaluteMo": true,
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+    "SaluteMo": true,
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
+>>>>>>> aurmich/dev
     "Setting": true,
     "Blog": true,
     "Tenant": true,
@@ -19,13 +30,33 @@
     "Smarty": true,
     "Lang": true,
     "Notify": true,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    "Limesurvey": true,
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+>>>>>>> aurmich/dev
     "Job": true,
     "Test": true,
     "Chart": true,
     "Seo": true,
     "User": true,
     "Activity": true,
+<<<<<<< HEAD
     "FormBuilder": true,
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "FormBuilder": true,
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
     "Gdpr": true,
     "AI": true
 

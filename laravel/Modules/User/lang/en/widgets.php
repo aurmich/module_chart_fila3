@@ -1,5 +1,18 @@
 <?php
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> aurmich/dev
+=======
+declare(strict_types=1);
+
+>>>>>>> efb0f4d1 (feat: add EditUserWidget with localization and documentation)
+>>>>>>> aurmich/dev
 return [
     'edit_user' => [
         'title' => 'Edit User Profile',

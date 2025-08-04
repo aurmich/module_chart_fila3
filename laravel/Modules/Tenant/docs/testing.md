@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7928ba32 (📝 (README.md): add best practices for Modular Monolith architecture)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 # Testing nel Modulo Tenant
 
 ## Introduzione
@@ -252,7 +262,20 @@ jobs:
 ### 2. Code Coverage
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 7928ba32 (📝 (README.md): add best practices for Modular Monolith architecture)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 # phpunit.xml
 <coverage>
     <include>
@@ -283,3 +306,15 @@ jobs:
 - [Struttura del Modulo](structure.md)
 - [Best Practices](README.md#best-practices)
 - [Documentazione PHPUnit](https://phpunit.de/documentation.html) 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> eec4376e (📝 (README.md): update documentation to provide a comprehensive overview of the Tenant module and its architecture, principles, best practices, and integration guidelines to enhance understanding for developers)
+=======
+>>>>>>> 7928ba32 (📝 (README.md): add best practices for Modular Monolith architecture)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev

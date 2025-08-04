@@ -450,7 +450,14 @@ EventData::make()
 
 ### .env Configuration Obbligatoria
 ```env
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # FullCalendar Scheduler License (opzionale)
 FULLCALENDAR_SCHEDULER_LICENSE_KEY=your-license-key-here
 

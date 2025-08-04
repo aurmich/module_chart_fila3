@@ -1,7 +1,19 @@
 ---
+<<<<<<< HEAD
 description: This rule file outlines best practices for vim configuration, coding standards, and development workflows to ensure consistency, efficiency, and maintainability across vim-based projects. It includes recommendations for file organization, coding patterns, performance, security, testing, tooling, and common pitfalls.
 globs: **/.vimrc, **/.vim/**, **/ftplugin/**
 alwaysApply: false
+=======
+<<<<<<< HEAD
+trigger: model_decision
+description: This rule file outlines best practices for vim configuration, coding standards, and development workflows to ensure consistency, efficiency, and maintainability across vim-based projects. It includes recommendations for file organization, coding patterns, performance, security, testing, tooling, and common pitfalls.
+globs: **/.vimrc, **/.vim/**, **/ftplugin/**
+=======
+description: This rule file outlines best practices for vim configuration, coding standards, and development workflows to ensure consistency, efficiency, and maintainability across vim-based projects. It includes recommendations for file organization, coding patterns, performance, security, testing, tooling, and common pitfalls.
+globs: **/.vimrc, **/.vim/**, **/ftplugin/**
+alwaysApply: false
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 ---
 # vim Best Practices and Coding Standards
 

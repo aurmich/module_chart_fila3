@@ -67,7 +67,14 @@ Se il modulo Chart è necessario ma manca o è danneggiato:
 ```bash
 cd /var/www/html/saluteora
 composer require your-vendor/chart-module
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Oppure, se è un modulo locale
 php artisan module:install Chart
 ```
@@ -164,7 +171,14 @@ Implementare un script di verifica pre-deployment che controlli la presenza e la
 
 ```bash
 #!/bin/bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # check_modules.sh
 
 MODULES_DIR="laravel/Modules"

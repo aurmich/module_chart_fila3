@@ -9,11 +9,26 @@ use Spatie\Activitylog\Traits\LogsActivity;
 use Spatie\Activitylog\LogOptions;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 use Modules\SaluteOra\Models\Patient;
 
 /**
  * Modello per la storia clinica del paziente (MedicalHistory).
  * 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+/**
+ * Modello per la storia clinica del paziente (MedicalHistory).
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
+>>>>>>> aurmich/dev
  * Rappresenta una voce di documentazione clinica associata a un utente/paziente.
  *
  * @property int $id
@@ -22,6 +37,11 @@ use Modules\SaluteOra\Models\Patient;
  * @property string|null $type
  * @property string|null $description
  * @property string|null $attachments
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
  * @see User
  * @property int $patient_id
  * @property string $condition
@@ -49,6 +69,41 @@ use Modules\SaluteOra\Models\Patient;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory withoutTrashed()
  * @mixin \Eloquent
+<<<<<<< HEAD
+=======
+=======
+ *
+ * @see User
+>>>>>>> 54f4fa16 (.)
+=======
+ * @see User
+ * @property int $patient_id
+ * @property string $condition
+ * @property string|null $diagnosis_date
+ * @property string|null $treatment
+ * @property string|null $notes
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Activity\Models\Activity> $activities
+ * @property-read int|null $activities_count
+ * @property-read \Modules\SaluteOra\Models\User|null $user
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory onlyTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory query()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory whereCondition($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory whereDiagnosisDate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory whereNotes($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory wherePatientId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory whereTreatment($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory withTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory withoutTrashed()
+ * @mixin \Eloquent
+>>>>>>> f3e4ec66 (.)
+>>>>>>> aurmich/dev
  */
 class MedicalHistory extends Model
 {
@@ -69,6 +124,11 @@ class MedicalHistory extends Model
     protected $table = 'medical_histories';
 
     /**
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
      * Gli attributi che sono mass assignable.
      *
      * @var list<string>
@@ -76,6 +136,20 @@ class MedicalHistory extends Model
     protected $fillable = [
         'user_id',
         'patient_id',
+<<<<<<< HEAD
+=======
+=======
+     * The attributes that are mass assignable.
+=======
+     * Gli attributi che sono mass assignable.
+>>>>>>> 8e4d163b (phpstan)
+     *
+     * @var list<string>
+     */
+    protected $fillable = [
+        'user_id',
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
         'date',
         'type',
         'description',
@@ -114,6 +188,10 @@ class MedicalHistory extends Model
     {
         return $this->belongsTo(User::class);
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
     /**
      * Get the patient that owns the medical history.
@@ -124,4 +202,9 @@ class MedicalHistory extends Model
     {
         return $this->belongsTo(Patient::class);
     }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 }

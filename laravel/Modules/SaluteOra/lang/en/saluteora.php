@@ -1,5 +1,13 @@
 <?php
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
+>>>>>>> aurmich/dev
 return [
     'fields' => [
         'region' => 'Region',
@@ -49,4 +57,12 @@ return [
             'prevention' => 'Prevention visit',
         ],
     ],
+<<<<<<< HEAD
 ];
+=======
+<<<<<<< HEAD
+];
+=======
+]; 
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
+>>>>>>> aurmich/dev

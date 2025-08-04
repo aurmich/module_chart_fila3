@@ -9,7 +9,14 @@
 
 ## Panoramica
 
+<<<<<<< HEAD
 Questo documento descrive come migliorare il selettore di lingua nell'header della piattaforma utilizzando le bandiere SVG disponibili nel modulo UI, rendendo il componente più visibile e accattivante.
+=======
+<<<<<<< HEAD
+Questo documento descrive come migliorare il selettore di lingua nell'header della piattaforma utilizzando le bandiere SVG disponibili nel modulo UI, rendendo il componente più visibile e accattivante.
+=======
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 Questo documento descrive come migliorare il selettore di lingua nell'header di SaluteOra utilizzando le bandiere SVG disponibili nel modulo UI, rendendo il componente più visibile e accattivante.
 
 ## Utilizzo delle Bandiere SVG

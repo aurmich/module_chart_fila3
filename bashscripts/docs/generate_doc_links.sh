@@ -2,7 +2,19 @@
 # Script per generare collegamenti bidirezionali tra file con lo stesso nome in cartelle docs
 # Esegue la scansione dei file *.md in tutte le directory */docs/ e */_docs/
 
+<<<<<<< HEAD
 docs_root="/var/www/html/project"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+docs_root="/var/www/html/project"
+=======
+docs_root="/var/www/html/saluteora"
+>>>>>>> 54f4fa16 (.)
+=======
+docs_root="/var/www/html/project"
+>>>>>>> 281fd24d (add scripts)
+>>>>>>> aurmich/dev
 cd "$docs_root" || exit 1
 
 # Trova tutti i file markdown in docs directories

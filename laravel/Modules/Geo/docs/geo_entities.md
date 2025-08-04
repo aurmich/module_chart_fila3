@@ -158,6 +158,13 @@ $region = Region::create(['name' => 'Lombardia', 'code' => 'LO']);
 $province = $region->provinces()->create(['name' => 'Milano', 'code' => 'MI']);
 ```
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 39ba294d (♻️ (Cap, City, Province, Region): deprecate legacy models and unify into a single Comune model to simplify data access and improve maintainability)
+>>>>>>> aurmich/dev
 ## Esempio pratico: utilizzo del modello Comune
 
 ```php
@@ -180,6 +187,14 @@ $capsMilano = Comune::byCity('Milano')->pluck('cap');
 - Tutte le select dinamiche e i filtri devono usare il modello Comune.
 - Vedi anche [geo-json-model.md](./geo-json-model.md) per dettagli implementativi.
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 7ee226dd (docs(geo-best-practices.mdc): add best practices for Geo module to ensure consistency and maintainability)
+=======
+>>>>>>> 39ba294d (♻️ (Cap, City, Province, Region): deprecate legacy models and unify into a single Comune model to simplify data access and improve maintainability)
+>>>>>>> aurmich/dev
 ## Manutenzione
 
 ### 1. Aggiornamenti
@@ -212,6 +227,13 @@ $capsMilano = Comune::byCity('Milano')->pluck('cap');
 3. **Dati Inconsistenti**
    - Validare i dati in input
    - Implementare controlli di integrità
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 39ba294d (♻️ (Cap, City, Province, Region): deprecate legacy models and unify into a single Comune model to simplify data access and improve maintainability)
+>>>>>>> aurmich/dev
    - Eseguire controlli periodici
 
 ## Analisi: Unificare Region, Province, City, Cap in un unico modello Comune?
@@ -257,3 +279,12 @@ $capsMilano = Comune::byCity('Milano')->pluck('cap');
 - **La struttura flat e ricca del json** rende naturale questa scelta.
 - **La documentazione e i metodi statici** garantiscono comunque chiarezza e facilità d'uso.
 - **Se in futuro servono modelli separati, si possono reintrodurre facilmente come wrapper.** 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+   - Eseguire controlli periodici 
+>>>>>>> 7ee226dd (docs(geo-best-practices.mdc): add best practices for Geo module to ensure consistency and maintainability)
+=======
+>>>>>>> 39ba294d (♻️ (Cap, City, Province, Region): deprecate legacy models and unify into a single Comune model to simplify data access and improve maintainability)
+>>>>>>> aurmich/dev

@@ -80,7 +80,19 @@ use Webmozart\Assert\Assert;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereTimezone($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Task whereUpdatedBy($value)
+<<<<<<< HEAD
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+=======
+ * @property-read \Modules\Broker\Models\Profile|null $creator
+>>>>>>> 54f4fa16 (.)
+=======
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+>>>>>>> 8e4d163b (phpstan)
+>>>>>>> aurmich/dev
  * @mixin \Eloquent
  */
 class Task extends BaseModel

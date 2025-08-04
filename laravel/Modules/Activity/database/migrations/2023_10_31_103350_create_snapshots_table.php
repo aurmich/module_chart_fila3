@@ -2,6 +2,17 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+// namespace Modules\Activity\Database\Migrations;
+
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 6581c95e (♻️ (ListActivities.php, ListStoredEvents.php, LogoutListener.php): refactor code to improve readability and maintainability by removing unused imports and comments)
+>>>>>>> aurmich/dev
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 

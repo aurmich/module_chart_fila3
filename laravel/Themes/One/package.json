@@ -10,8 +10,32 @@
         "@tailwindcss/forms": "^0.5.10",
         "@tailwindcss/typography": "^0.5.16",
         "autoprefixer": "^10.4.21",
+<<<<<<< HEAD
         "laravel-vite-plugin": "^1.0.0",
         "prettier": "^2.6.2",
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "laravel-vite-plugin": "^1.0.0",
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "prettier": "^2.6.2",
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+        "prettier": "^2.6.2",
+>>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
+=======
+        "axios": "^1.8.4",
+        "concurrently": "^9.1.2",
+        "flowbite": "^3.1.2",
+        "laravel-vite-plugin": "^1.2.0",
+>>>>>>> 15cb84fb (fix collisions)
+=======
+        "laravel-vite-plugin": "^1.0.0",
+        "prettier": "^2.6.2",
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
         "postcss": "^8.5.3",
         "postcss-import": "^16.0.0",
         "postcss-nesting": "^13.0.1",

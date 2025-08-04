@@ -11,7 +11,19 @@ use Tests\CreatesApplication;
 
 abstract class TestHelper extends BaseTestCase
 {
+<<<<<<< HEAD
     //use CreatesApplication;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    //use CreatesApplication;
+=======
+    use CreatesApplication;
+>>>>>>> 54f4fa16 (.)
+=======
+    //use CreatesApplication;
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
+>>>>>>> aurmich/dev
 
     // in User
     public function getSuperAdminUser()

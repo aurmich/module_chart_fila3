@@ -43,7 +43,14 @@ docs/
 
 ### Struttura README.md
 ```markdown
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Nome Modulo
 
 ## Descrizione
@@ -79,7 +86,14 @@ Informazioni sulla licenza
 
 ### Esempi
 ```markdown
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Link Relativi
 [Documentazione Modulo](modules/user/README.md)
 [Guida Contribuzione](CONTRIBUTING.md)

@@ -1,6 +1,32 @@
+<<<<<<< HEAD
 <?php
 
 return array (
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<?php
+
+return array (
+=======
+<?php return array (
+>>>>>>> 54f4fa16 (.)
+=======
+<?php
+
+return array (
+>>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
+=======
+<?php return array (
+>>>>>>> 15cb84fb (fix collisions)
+=======
+<?php
+
+return array (
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
   'fields' => 
   array (
     'id' => 
@@ -56,9 +82,38 @@ return array (
       'label' => 'transparency',
     ),
   ),
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
   'navigation' => 
   array (
     'sort' => 20,
     'icon' => 'chart.navigation',
   ),
 );
+<<<<<<< HEAD
+=======
+=======
+);
+>>>>>>> 54f4fa16 (.)
+=======
+=======
+>>>>>>> d23ba493 (add calendar)
+  'navigation' => 
+  array (
+    'sort' => 20,
+    'icon' => 'chart.navigation',
+  ),
+);
+<<<<<<< HEAD
+>>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
+=======
+);
+>>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev

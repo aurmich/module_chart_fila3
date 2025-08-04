@@ -1,7 +1,19 @@
 ---
+<<<<<<< HEAD
 description: 
 globs: 
 alwaysApply: true
+=======
+<<<<<<< HEAD
+trigger: always_on
+description: 
+globs: 
+=======
+description: 
+globs: 
+alwaysApply: true
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 ---
 # Regole per la Qualità del Codice
 

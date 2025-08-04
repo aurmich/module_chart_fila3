@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: This rule file provides comprehensive guidance on Docker best practices, covering Dockerfile construction, image optimization, and security considerations. It aims to improve the efficiency, maintainability, and security of Docker-based projects.
 globs: Dockerfile,docker-compose.yml,*.dockerfile
 ---

@@ -1,5 +1,12 @@
 <?php
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f2140a80 (- continuo style landing page;)
+>>>>>>> aurmich/dev
 return array (
   'navigation' => 
   array (
@@ -90,10 +97,22 @@ return array (
     array (
       'label' => 'openFilters',
     ),
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     'login_at' => 
     array (
       'label' => 'login_at',
     ),
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> f2140a80 (- continuo style landing page;)
+>>>>>>> aurmich/dev
   ),
   'actions' => 
   array (
@@ -118,8 +137,108 @@ return array (
       'label' => 'create',
     ),
   ),
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
   'model' => 
   array (
     'label' => 'device.model',
   ),
+<<<<<<< HEAD
 );
+=======
+=======
+>>>>>>> aurmich/dev
+);
+=======
+declare(strict_types=1);
+
+return [
+    'navigation' => [
+        'name' => 'Dispositivo',
+        'plural' => 'Dispositivi',
+        'group' => [
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione dei dispositivi degli utenti',
+        ],
+        'label' => 'device',
+        'sort' => 20,
+        'icon' => 'user-device',
+    ],
+    'fields' => [
+        'first_name' => 'Nome',
+        'last_name' => 'Cognome',
+        'id' => [
+            'label' => 'id',
+        ],
+        'mobile_id' => [
+            'label' => 'mobile_id',
+        ],
+        'device' => [
+            'label' => 'device',
+        ],
+        'platform' => [
+            'label' => 'platform',
+        ],
+        'browser' => [
+            'label' => 'browser',
+        ],
+        'version' => [
+            'label' => 'version',
+        ],
+        'is_robot' => [
+            'label' => 'is_robot',
+        ],
+        'robot' => [
+            'label' => 'robot',
+        ],
+        'is_desktop' => [
+            'label' => 'is_desktop',
+        ],
+        'is_mobile' => [
+            'label' => 'is_mobile',
+        ],
+        'is_tablet' => [
+            'label' => 'is_tablet',
+        ],
+        'is_phone' => [
+            'label' => 'is_phone',
+        ],
+        'logout_at' => [
+            'label' => 'logout_at',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+    ],
+    'actions' => [
+        'import' => [
+            'fields' => [
+                'import_file' => 'Seleziona un file XLS o CSV da caricare',
+            ],
+        ],
+        'export' => [
+            'filename_prefix' => 'Aree al',
+            'columns' => [
+                'name' => 'Nome area',
+                'parent_name' => 'Nome area livello superiore',
+            ],
+        ],
+        'create' => [
+            'label' => 'create',
+        ],
+    ],
+];
+>>>>>>> 54f4fa16 (.)
+=======
+);
+>>>>>>> f2140a80 (- continuo style landing page;)
+>>>>>>> aurmich/dev

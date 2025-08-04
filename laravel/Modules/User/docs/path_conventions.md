@@ -10,7 +10,17 @@
 
 ### Views
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 # ❌ ERRATO
 laravel/Modules/User/Resources/views/filament/widgets/auth/login.blade.php
 
@@ -21,13 +31,33 @@ Modules/User/resources/views/filament/widgets/auth/login.blade.php
 
 ### Actions
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 # ❌ ERRATO
 laravel/Modules/User/Actions/User/DeleteUserAction.php
 
 # ✅ CORRETTO
 laravel/Modules/User/app/Actions/User/DeleteUserAction.php
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 # ✅ CORRETTO
 Modules/User/app/Actions/User/DeleteUserAction.php
 
@@ -37,7 +67,17 @@ Modules/User/Actions/User/DeleteUserAction.php
 
 ### Controllers
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 # ✅ CORRETTO
 laravel/Modules/User/app/Http/Controllers/UserController.php
 
@@ -51,7 +91,17 @@ Modules/User/Http/Controllers/UserController.php
 
 ### Livewire Components
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 # ✅ CORRETTO
 Modules/User/app/Http/Livewire/Profile/DeleteAccount.php
 
@@ -61,7 +111,17 @@ Modules/User/Http/Livewire/Profile/DeleteAccount.php
 
 ### Livewire Components
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 # ✅ CORRETTO
 Modules/User/app/Http/Livewire/Profile/DeleteAccount.php
 
@@ -167,7 +227,17 @@ fi
 ## Comandi Utili
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 # Trova cartelle con nomi errati
 find . -type d \( -name "Resources" -o -name "Lang" -o -name "Actions" -o -name "Http" \)
 
@@ -192,7 +262,17 @@ chmod -R 644 resources/views/
 ### Da Struttura Errata a Corretta
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 # Prima
 laravel/Modules/User/
 ├── Actions/

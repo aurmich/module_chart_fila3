@@ -21,14 +21,34 @@ app/
 ```
 
 ## Dipendenze
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ### Moduli Required
 - User
 - Media
 - Xot
 
 ## Database
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ### Factories
 Namespace: `Modules\Tenant\Database\Factories`
 
@@ -55,7 +75,17 @@ composer format        # Formatta il codice
 - Asset management per tenant
 
 ## Configurazione
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ### Tenant
 - Configurazione in `config/tenant.php`
 - Middleware in `app/Http/Middleware`
@@ -77,7 +107,17 @@ composer format        # Formatta il codice
 8. Mantenere sicurezza tra tenant
 
 ## Troubleshooting
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ### Problemi Comuni
 1. **Errori di Isolamento**
    - Verificare middleware tenant
@@ -95,7 +135,17 @@ composer format        # Formatta il codice
    - Gestire invalidazione cache
 
 ## Sicurezza
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ### Isolamento
 - Separazione dati tra tenant
 - Autenticazione tenant-specific
@@ -113,7 +163,17 @@ composer format        # Formatta il codice
 - Formati data/ora per tenant
 
 ## Changelog
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ### Versione HEAD
 
 
@@ -142,14 +202,34 @@ app/
 ```
 
 ## Dipendenze
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ### Moduli Required
 - User
 - Media
 - Xot
 
 ## Database
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ### Factories
 Namespace: `Modules\Tenant\Database\Factories`
 
@@ -176,7 +256,17 @@ composer format        # Formatta il codice
 - Asset management per tenant
 
 ## Configurazione
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ### Tenant
 - Configurazione in `config/tenant.php`
 - Middleware in `app/Http/Middleware`
@@ -198,7 +288,17 @@ composer format        # Formatta il codice
 8. Mantenere sicurezza tra tenant
 
 ## Troubleshooting
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ### Problemi Comuni
 1. **Errori di Isolamento**
    - Verificare middleware tenant
@@ -216,7 +316,17 @@ composer format        # Formatta il codice
    - Gestire invalidazione cache
 
 ## Sicurezza
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ### Isolamento
 - Separazione dati tra tenant
 - Autenticazione tenant-specific
@@ -237,9 +347,35 @@ composer format        # Formatta il codice
 
 ---
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 Le modifiche vengono tracciate nel repository GitHub. 
 
 ## Collegamenti sulla risoluzione dei conflitti
 
 - [Risoluzione conflitti nel modulo Tenant](risoluzione_conflitti.md)
 - [Linee guida globali per la risoluzione dei conflitti git](../../../docs/risoluzione_conflitti_git.md) 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+Le modifiche vengono tracciate nel repository GitHub. 
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+Le modifiche vengono tracciate nel repository GitHub. 
+>>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev

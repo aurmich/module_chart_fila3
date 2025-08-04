@@ -18,7 +18,14 @@ public_html/
 
 ### Comandi Principali
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # 1. Pulizia Cache
 php artisan cache:clear
 php artisan config:clear
@@ -50,7 +57,14 @@ public function boot(): void
 
 ### 1. Timeout durante la Pubblicazione
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Soluzione 1: Aumentare il timeout
 php artisan vendor:publish --tag=package-assets --timeout=3600
 
@@ -61,7 +75,14 @@ php artisan vendor:publish --tag=module-name-assets
 
 ### 2. Asset non Trovati
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Verifica dei percorsi
 ls -la public_html/vendor
 ls -la public_html/css/filament
@@ -73,7 +94,14 @@ php artisan vendor:publish --tag=filament-assets --force
 
 ### 3. Permessi Errati
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Correzione permessi
 chmod -R 775 public_html/vendor
 chown -R www-data:www-data public_html/vendor
@@ -105,7 +133,14 @@ chown -R www-data:www-data public_html/vendor
 
 ### 3. Ottimizzazione
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Compressione degli asset
 npm run production
 
@@ -152,7 +187,14 @@ php artisan route:cache
 
 ### Aggiornamenti
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # 1. Backup degli asset
 cp -r public_html/vendor public_html/vendor_backup
 
@@ -165,7 +207,14 @@ php artisan filament:assets
 
 ### Pulizia
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Rimozione asset non utilizzati
 php artisan vendor:cleanup
 

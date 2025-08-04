@@ -5,8 +5,23 @@ declare(strict_types=1);
 namespace Modules\Geo\Models;
 
 use Illuminate\Support\Collection;
+<<<<<<< HEAD
 use function Safe\file_get_contents;
 use function Safe\json_decode;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+use function Safe\file_get_contents;
+use function Safe\json_decode;
+<<<<<<< HEAD
+=======
+>>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+use function Safe\file_get_contents;
+>>>>>>> 345f8677 (phpstan)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
 
 /**
  * Base model readonly per dati geografici statici (ispirato a Squire).
@@ -17,7 +32,19 @@ abstract class GeoJsonModel
     /**
      * Percorso relativo al file json (da ridefinire nelle sottoclassi se necessario)
      */
+<<<<<<< HEAD
     protected static string $jsonFile = 'resources/json/comuni.json';
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    protected static string $jsonFile = 'resources/json/comuni.json';
+=======
+    protected static string $jsonFile = 'Resources/json/comuni.json';
+>>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+    protected static string $jsonFile = 'resources/json/comuni.json';
+>>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
+>>>>>>> aurmich/dev
 
     /**
      * Carica e cache-izza i dati dal file json.
@@ -27,9 +54,24 @@ abstract class GeoJsonModel
         $path = module_path('Geo', static::$jsonFile);
         $cacheKey = 'geo_comuni_json_' . md5($path);
         $data = cache()->rememberForever($cacheKey, fn() => json_decode(file_get_contents($path), true));
+<<<<<<< HEAD
         /**
          * @phpstan-ignore argument.type, argument.templateType, argument.templateType
          */
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        /**
+         * @phpstan-ignore argument.type, argument.templateType, argument.templateType
+         */
+=======
+>>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+        /**
+         * @phpstan-ignore-next-line
+         */
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
         return collect($data);
     }
 
@@ -43,14 +85,36 @@ abstract class GeoJsonModel
 
     /**
      * Filtra la collection per chiave/valore.
+<<<<<<< HEAD
      * 
      * @phpstan-ignore missingType.parameter, missingType.generics
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+     * 
+     * @phpstan-ignore missingType.parameter, missingType.generics
+=======
+     * 
+     * @phpstan-ignore-next-line
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
      */
     public static function where(string $key, $value): Collection
     {
         /**
          * @phpstan-ignore-next-line
          */
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+     */
+    public static function where(string $key, $value): Collection
+    {
+>>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
         return static::all()->where($key, $value);
     }
 }

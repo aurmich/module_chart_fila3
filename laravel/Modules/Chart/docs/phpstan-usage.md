@@ -26,7 +26,14 @@ Questo documento descrive come utilizzare PHPStan per l'analisi statica del codi
 Ogni report di livello PHPStan deve seguire questa struttura:
 
 ```markdown
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Rapporto PHPStan Livello X per il modulo Chart
 
 Data analisi: YYYY-MM-DD HH:MM:SS

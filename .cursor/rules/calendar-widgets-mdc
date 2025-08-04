@@ -5,12 +5,36 @@
 1. **Widget Naming**
    - Use `BaseCalendarWidget` as the base class for all calendar widgets
    - Follow the naming pattern `{UserType}CalendarWidget` (e.g., `DoctorCalendarWidget`)
+<<<<<<< HEAD
    - Place widgets in `Modules/<nome progetto>/Filament/Widgets/{UserType}/`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+   - Place widgets in `Modules/<nome progetto>/Filament/Widgets/{UserType}/`
+=======
+   - Place widgets in `Modules/SaluteOra/Filament/Widgets/{UserType}/`
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+=======
+   - Place widgets in `Modules/<nome progetto>/Filament/Widgets/{UserType}/`
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 
 2. **File Structure**
    ```
    Modules/
+<<<<<<< HEAD
    └── <nome progetto>/
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+   └── <nome progetto>/
+=======
+   └── SaluteOra/
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+=======
+   └── <nome progetto>/
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
        ├── Filament/
        │   └── Widgets/
        │       ├── BaseCalendarWidget.php
@@ -45,7 +69,19 @@ abstract class BaseCalendarWidget extends FullCalendarWidget
 {
     protected static ?string $model = null;
     protected static string $heading = 'Calendar';
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     protected function getEventsQuery();
     abstract protected function mapToEvent($model): array;
     protected function getCalendarConfig(): array;

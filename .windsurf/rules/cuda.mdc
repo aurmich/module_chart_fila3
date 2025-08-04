@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: Enforces CUDA coding standards, performance optimizations, and best practices to ensure efficient and maintainable GPU-accelerated code. This rule provides guidance on code organization, memory management, error handling, and more.
 globs: *.cu
 ---

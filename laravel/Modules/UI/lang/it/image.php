@@ -16,25 +16,79 @@ return array (
       'description' => 'alt',
       'helper_text' => 'alt',
       'placeholder' => 'alt',
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> df228b6 (.)
+>>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+>>>>>>> aurmich/dev
     ),
     'ratio' => 
     array (
       'label' => 'ratio',
       'description' => 'ratio',
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> df228b6 (.)
+>>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+>>>>>>> aurmich/dev
     ),
     'url' => 
     array (
       'label' => 'url',
+<<<<<<< HEAD
       'description' => 'url',
       'helper_text' => 'url',
       'placeholder' => 'url',
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      'description' => 'url',
+      'helper_text' => 'url',
+      'placeholder' => 'url',
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+      'description' => 'url',
+      'helper_text' => 'url',
+      'placeholder' => 'url',
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
+>>>>>>> aurmich/dev
     ),
     'image' => 
     array (
       'label' => 'image',
+<<<<<<< HEAD
       'description' => 'image',
       'helper_text' => 'image',
       'placeholder' => 'image',
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      'description' => 'image',
+      'helper_text' => 'image',
+      'placeholder' => 'image',
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+      'description' => 'image',
+      'helper_text' => 'image',
+      'placeholder' => 'image',
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
+>>>>>>> aurmich/dev
     ),
   ),
 );

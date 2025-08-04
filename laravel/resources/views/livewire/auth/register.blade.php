@@ -44,7 +44,27 @@ new #[Layout('components.layouts.auth')] class extends Component {
     <form wire:submit="register" class="flex flex-col gap-6">
         <!-- Name -->
         <flux:input
+<<<<<<< HEAD
             wire:model="name"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            wire:model="name"
+=======
+            wire:model.live="name"
+>>>>>>> aurmich/dev
+=======
+            wire:model="name"
+>>>>>>> 54f4fa16 (.)
+=======
+            wire:model.live="name"
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+            wire:model="name"
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
             :label="__('Name')"
             type="text"
             required
@@ -55,7 +75,27 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
         <!-- Email Address -->
         <flux:input
+<<<<<<< HEAD
             wire:model="email"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            wire:model="email"
+=======
+            wire:model.live="email"
+>>>>>>> aurmich/dev
+=======
+            wire:model="email"
+>>>>>>> 54f4fa16 (.)
+=======
+            wire:model.live="email"
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+            wire:model="email"
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
             :label="__('Email address')"
             type="email"
             required
@@ -65,24 +105,92 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
         <!-- Password -->
         <flux:input
+<<<<<<< HEAD
             wire:model="password"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            wire:model="password"
+=======
+            wire:model.live="password"
+>>>>>>> aurmich/dev
+=======
+            wire:model="password"
+>>>>>>> 54f4fa16 (.)
+=======
+            wire:model.live="password"
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+            wire:model="password"
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
             :label="__('Password')"
             type="password"
             required
             autocomplete="new-password"
             :placeholder="__('Password')"
+<<<<<<< HEAD
             viewable
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            viewable
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+            viewable
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
         />
 
         <!-- Confirm Password -->
         <flux:input
+<<<<<<< HEAD
             wire:model="password_confirmation"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            wire:model="password_confirmation"
+=======
+            wire:model.live="password_confirmation"
+>>>>>>> aurmich/dev
+=======
+            wire:model="password_confirmation"
+>>>>>>> 54f4fa16 (.)
+=======
+            wire:model.live="password_confirmation"
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+            wire:model="password_confirmation"
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
             :label="__('Confirm password')"
             type="password"
             required
             autocomplete="new-password"
             :placeholder="__('Confirm password')"
+<<<<<<< HEAD
             viewable
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            viewable
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+            viewable
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
         />
 
         <div class="flex items-center justify-end">
@@ -92,8 +200,28 @@ new #[Layout('components.layouts.auth')] class extends Component {
         </div>
     </form>
 
+<<<<<<< HEAD
     <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-600 dark:text-zinc-400">
         <span>{{ __('Already have an account?') }}</span>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-600 dark:text-zinc-400">
+        <span>{{ __('Already have an account?') }}</span>
+=======
+    <div class="space-x-1 text-center text-sm text-zinc-600 dark:text-zinc-400">
+        {{ __('Already have an account?') }}
+>>>>>>> aurmich/dev
+=======
+    <div class="space-x-1 text-center text-sm text-zinc-600 dark:text-zinc-400">
+        {{ __('Already have an account?') }}
+>>>>>>> 54f4fa16 (.)
+=======
+    <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-600 dark:text-zinc-400">
+        <span>{{ __('Already have an account?') }}</span>
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
         <flux:link :href="route('login')" wire:navigate>{{ __('Log in') }}</flux:link>
     </div>
 </div>

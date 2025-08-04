@@ -1,4 +1,16 @@
+<<<<<<< HEAD
 # Regole per la Struttura delle Directory nei Moduli Laraxot <nome progetto>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Regole per la Struttura delle Directory nei Moduli Laraxot <nome progetto>
+=======
+# Regole per la Struttura delle Directory nei Moduli Laraxot PTVX
+>>>>>>> d23ba493 (add calendar)
+=======
+# Regole per la Struttura delle Directory nei Moduli Laraxot <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 
 ## Due Principi Fondamentali
 
@@ -66,7 +78,14 @@ Questa struttura rispetta due esigenze:
 Per verificare se un modulo rispetta questa struttura:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 # Trova file che dovrebbero essere in app/
 find Modules/Rating -path "*/Http/*" -o -path "*/Models/*" -o -path "*/Enums/*" | grep -v "/app/"
 
@@ -145,4 +164,16 @@ La struttura non influisce sul namespace. Esempio:
 1. Verificare che tutti i file PHP siano nella directory `app`
 2. Correggere eventuali problemi con lo script di correzione
 3. Assicurarsi che i namespace siano corretti (non includonao `App`)
+<<<<<<< HEAD
 4. Solo dopo questi controlli, eseguire PHPStan 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+4. Solo dopo questi controlli, eseguire PHPStan 
+=======
+4. Solo dopo questi controlli, eseguire PHPStan 
+>>>>>>> d23ba493 (add calendar)
+=======
+4. Solo dopo questi controlli, eseguire PHPStan 
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev

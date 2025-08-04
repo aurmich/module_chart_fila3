@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: Comprehensive guidelines for developing robust and maintainable web applications with the Rocket web framework, covering code organization, security, performance, testing, and more.
 globs: *.rs
 ---

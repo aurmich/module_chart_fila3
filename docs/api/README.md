@@ -11,7 +11,14 @@ Le API di SaluteOra forniscono accesso programmatico a tutte le funzionalità pr
 ### JWT Token Authentication
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Login e ottenimento token
 POST /api/auth/login
 Content-Type: application/json
@@ -42,7 +49,14 @@ Content-Type: application/json
 ### Utilizzo Token
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Header per richieste autenticate
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9...
 Content-Type: application/json
@@ -52,7 +66,14 @@ Accept: application/json
 ### Rate Limiting
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Limiti per endpoint
 Authentication: 10 requests/minute
 General API: 60 requests/minute
@@ -109,7 +130,14 @@ Content-Type: application/json
 ### Profilo Utente
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Ottieni profilo corrente
 GET /api/user/profile
 Authorization: Bearer {token}
@@ -133,7 +161,14 @@ Authorization: Bearer {token}
 ```
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Aggiorna profilo
 PUT /api/user/profile
 Authorization: Bearer {token}
@@ -321,7 +356,14 @@ Content-Type: application/json
 ### Gestione Appuntamenti
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Lista appuntamenti paziente
 GET /api/appointments
 Authorization: Bearer {token}
@@ -350,7 +392,14 @@ Authorization: Bearer {token}
 ```
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Dettagli appuntamento
 GET /api/appointments/{id}
 Authorization: Bearer {token}
@@ -502,7 +551,14 @@ Authorization: Bearer {token}
 ### Gestione Appuntamenti Studio
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Lista appuntamenti studio
 GET /api/studio/appointments
 Authorization: Bearer {studio_token}
@@ -548,7 +604,14 @@ Content-Type: application/json
 ### Gestione Disponibilità
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Crea slot disponibilità
 POST /api/studio/availability
 Authorization: Bearer {studio_token}
@@ -750,3 +813,10 @@ $appointments = $client->appointments()->list([
 
 **📅 Ultimo aggiornamento**: 5 Giugno 2025  
 **🔄 Versione API**: v1.2  
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+**✅ Stato**: Completa e testata
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev

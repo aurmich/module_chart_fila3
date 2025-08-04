@@ -10,12 +10,32 @@ return [
         'submit' => 'Sign in',
         'or' => 'or',
         'create_account' => 'create an account',
+<<<<<<< HEAD
         'link' => 'Sign in',
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        'link' => 'Sign in',
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
+>>>>>>> aurmich/dev
     ],
     'register' => [
         'title' => 'Register',
         'submit' => 'Register',
+<<<<<<< HEAD
         'link' => 'Register',
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        'link' => 'Register',
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
+>>>>>>> aurmich/dev
     ],
     'logout' => [
         'title' => 'Logout',
@@ -31,6 +51,11 @@ return [
     ],
     'failed' => 'These credentials do not match our records.',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     'profile' => [
         'title' => 'Profile',
         'settings' => 'Settings',
@@ -58,4 +83,11 @@ return [
         'profile' => 'Profile',
         'settings' => 'Settings',
     ],
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
+>>>>>>> aurmich/dev
 ];

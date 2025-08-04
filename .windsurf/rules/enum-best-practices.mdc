@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: Regole e best practices per l'utilizzo delle enum in PHP 8.1+ nelle applicazioni Laravel, che definiscono come implementare, utilizzare e integrare le enum per garantire type safety, manutenibilità e coerenza del codice.
 globs: *.php
 ---

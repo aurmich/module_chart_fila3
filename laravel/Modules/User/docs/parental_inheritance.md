@@ -1,18 +1,59 @@
+<<<<<<< HEAD
 # Parental: Ereditarietà a Tabella Singola in <nome progetto>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Parental: Ereditarietà a Tabella Singola in <nome progetto>
+=======
+# Parental: Ereditarietà a Tabella Singola in il progetto
+>>>>>>> 54f4fa16 (.)
+=======
+# Parental: Ereditarietà a Tabella Singola in <nome progetto>
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+>>>>>>> aurmich/dev
 
 ## Indice
 - [Introduzione](#introduzione)
 - [Concetti Fondamentali](#concetti-fondamentali)
+<<<<<<< HEAD
 - [Implementazione in <nome progetto>](#implementazione-in-<nome progetto>)
 - [Casi d'Uso nel Modulo User](#casi-duso-nel-modulo-user)
 - [Comandi Console Generici](#comandi-console-generici)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Implementazione in <nome progetto>](#implementazione-in-<nome progetto>)
+- [Casi d'Uso nel Modulo User](#casi-duso-nel-modulo-user)
+- [Comandi Console Generici](#comandi-console-generici)
+=======
+- [Implementazione in il progetto](#implementazione-in-<nome progetto>)
+- [Casi d'Uso nel Modulo User](#casi-duso-nel-modulo-user)
+>>>>>>> 54f4fa16 (.)
+=======
+- [Implementazione in <nome progetto>](#implementazione-in-<nome progetto>)
+- [Casi d'Uso nel Modulo User](#casi-duso-nel-modulo-user)
+- [Comandi Console Generici](#comandi-console-generici)
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+>>>>>>> aurmich/dev
 - [Best Practices](#best-practices)
 - [Troubleshooting](#troubleshooting)
 - [Riferimenti](#riferimenti)
 
 ## Introduzione
 
+<<<<<<< HEAD
 Parental è una libreria sviluppata da [Tighten](https://github.com/tighten/parental) che implementa il pattern di **Single Table Inheritance (STI)** in Laravel. Questo documento analizza in dettaglio come utilizzare Parental nel contesto del modulo User di <nome progetto> per gestire diversi tipi di utenti mantenendo un'architettura pulita e performante.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Parental è una libreria sviluppata da [Tighten](https://github.com/tighten/parental) che implementa il pattern di **Single Table Inheritance (STI)** in Laravel. Questo documento analizza in dettaglio come utilizzare Parental nel contesto del modulo User di <nome progetto> per gestire diversi tipi di utenti mantenendo un'architettura pulita e performante.
+=======
+Parental è una libreria sviluppata da Tighten che implementa il pattern di **Single Table Inheritance (STI)** in Laravel. Questo documento analizza in dettaglio come utilizzare Parental nel contesto del modulo User di il progetto per gestire diversi tipi di utenti mantenendo un'architettura pulita e performante.
+>>>>>>> 54f4fa16 (.)
+=======
+Parental è una libreria sviluppata da [Tighten](https://github.com/tighten/parental) che implementa il pattern di **Single Table Inheritance (STI)** in Laravel. Questo documento analizza in dettaglio come utilizzare Parental nel contesto del modulo User di <nome progetto> per gestire diversi tipi di utenti mantenendo un'architettura pulita e performante.
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+>>>>>>> aurmich/dev
 
 ### Cos'è la Single Table Inheritance?
 
@@ -43,6 +84,11 @@ Per distinguere tra i diversi tipi di entità nella stessa tabella, Parental uti
 - Il nome completo della classe del modello figlio, oppure
 - Un alias configurabile più leggibile
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 ## Implementazione in <nome progetto>
 
 ### Configurazione Base del Modulo User
@@ -75,10 +121,61 @@ abstract class BaseUser extends Authenticatable
     /** @var array<string, class-string> */
     protected $childTypes = [
         // Vuoto per default - deve essere definito nei moduli specifici
+<<<<<<< HEAD
+=======
+=======
+## Implementazione in il progetto
+=======
+## Implementazione in <nome progetto>
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+
+### Configurazione Base del Modulo User
+
+Il modulo User di <nome progetto> è progettato per essere **generico e riutilizzabile** in più progetti. La configurazione STI deve essere definita nei moduli specifici del progetto.
+
+#### 1. BaseUser (Modulo User Generico)
+
+```php
+namespace Modules\User\Models;
+
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Parental\HasChildren;
+
+abstract class BaseUser extends Authenticatable
+{
+    use HasChildren;
+
+    /** @var string */
+    protected $childColumn = 'type';
+
+    /** @var list<string> */
+    protected $fillable = [
+        'name',
+        'email',
+        'password',
+        'type', // Campo fondamentale per STI
+    ];
+
+    /** @var array<string, class-string> */
+    protected $childTypes = [
+<<<<<<< HEAD
+        'amministratore' => \Modules\User\Models\Admin::class,
+        'paziente' => \Modules\User\Models\Patient::class,
+        'medico' => \Modules\User\Models\Doctor::class,
+>>>>>>> 54f4fa16 (.)
+=======
+        // Vuoto per default - deve essere definito nei moduli specifici
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+>>>>>>> aurmich/dev
     ];
 }
 ```
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 #### 2. User del Modulo Specifico (es. SaluteOra)
 
 ```php
@@ -119,11 +216,71 @@ class User extends BaseUser
 namespace Modules\SaluteOra\Models;
 
 use Parental\HasParent;
+<<<<<<< HEAD
+=======
+=======
+## Casi d'Uso nel Modulo User
+
+### 1. Gestione Utenti con Ruoli Diversi
+
+In il progetto, possiamo utilizzare Parental per implementare diversi tipi di utenti con comportamenti specifici:
+=======
+#### 2. User del Modulo Specifico (es. SaluteOra)
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+
+```php
+namespace Modules\SaluteOra\Models;
+
+use Modules\User\Models\BaseUser;
+use Modules\SaluteOra\Enums\UserTypeEnum;
+
+class User extends BaseUser
+{
+    /** @var string */
+    protected $connection = 'salute_ora';
+
+    /**
+     * Mappatura dei tipi specifici del progetto SaluteOra
+     */
+    protected $childTypes = [
+        'admin' => Admin::class,
+        'doctor' => Doctor::class,
+        'patient' => Patient::class,
+    ];
+
+    /**
+     * Cast per enum del modulo specifico
+     */
+    protected function casts(): array
+    {
+        return array_merge(parent::casts(), [
+            'type' => UserTypeEnum::class,
+        ]);
+    }
+}
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+```
+
+#### 3. Modelli Figli del Modulo Specifico
+
+```php
+namespace Modules\SaluteOra\Models;
+
+use Parental\HasParent;
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+>>>>>>> aurmich/dev
 
 class Doctor extends User
 {
     use HasParent;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     // Comportamenti specifici per Doctor
     public function appointments()
     {
@@ -139,10 +296,43 @@ class Patient extends User
     public function medicalRecords()
     {
         return $this->hasMany(MedicalRecord::class);
+<<<<<<< HEAD
+=======
+=======
+    // Relazioni specifiche per i medici
+    public function specialties()
+=======
+    // Comportamenti specifici per Doctor
+    public function appointments()
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+    {
+        return $this->hasMany(Appointment::class);
+    }
+}
+
+class Patient extends User
+{
+    use HasParent;
+
+    // Comportamenti specifici per Patient
+    public function medicalRecords()
+    {
+<<<<<<< HEAD
+        return $this->hasMany(\Modules\Doctor\Models\Availability::class);
+>>>>>>> 54f4fa16 (.)
+=======
+        return $this->hasMany(MedicalRecord::class);
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+>>>>>>> aurmich/dev
     }
 }
 ```
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 ### Principi di Modularità
 
 **CRITICO**: Il modulo User deve rimanere generico e **MAI** dipendere da moduli specifici del progetto. Questo garantisce:
@@ -323,3 +513,197 @@ $typeValue = is_object($user->type) && method_exists($user->type, 'value')
 - [SaluteOra - Implementazione STI](../../SaluteOra/docs/user-types.md)
 
 *Ultimo aggiornamento: Dicembre 2024*
+<<<<<<< HEAD
+=======
+=======
+## Best Practices
+=======
+### Principi di Modularità
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+
+**CRITICO**: Il modulo User deve rimanere generico e **MAI** dipendere da moduli specifici del progetto. Questo garantisce:
+
+- **Riutilizzabilità**: Il modulo User può essere utilizzato in progetti diversi
+- **Manutenibilità**: Modifiche specifiche non influenzano il core generico
+- **Testabilità**: Il modulo base può essere testato indipendentemente
+
+## Comandi Console Generici
+
+I comandi console nel modulo User devono essere progettati per funzionare con qualsiasi implementazione STI, senza dipendenze specifiche.
+
+### Pattern Generico per Comandi Console
+
+```php
+namespace Modules\User\Console\Commands;
+
+use Illuminate\Console\Command;
+use Modules\Xot\Datas\XotData;
+
+class ChangeTypeCommand extends Command
+{
+    protected $name = 'user:change-type';
+    protected $description = 'Change user type based on project configuration';
+
+    public function handle(): void
+    {
+        $email = $this->ask('User email?');
+        $user = XotData::make()->getUserByEmail($email);
+        
+        if (!$user) {
+            $this->error("User not found: {$email}");
+            return;
+        }
+
+        // Ottieni i tipi disponibili dal modello corrente
+        $availableTypes = $this->getAvailableTypes($user);
+        
+        if (empty($availableTypes)) {
+            $this->error('No user types configured for this project.');
+            return;
+        }
+
+        $currentType = $user->type ?? 'Not set';
+        $this->info("Current type: {$currentType}");
+
+        $newType = $this->choice('Select new type:', array_keys($availableTypes));
+
+        $user->type = $newType;
+        $user->save();
+
+        $this->info("Type changed to '{$newType}' for {$email}");
+    }
+
+    /**
+     * Ottieni i tipi disponibili dal modello corrente
+     */
+    private function getAvailableTypes($user): array
+    {
+        // Verifica se il modello ha childTypes configurati
+        if (property_exists($user, 'childTypes') && !empty($user->childTypes)) {
+            return $user->childTypes;
+        }
+
+        // Fallback: tipi base comuni
+        return [
+            'admin' => 'Administrator',
+            'user' => 'Regular User',
+        ];
+    }
+}
+```
+
+### Best Practices per Comandi Generici
+
+1. **Usa Reflection per ispezionare i tipi disponibili**
+2. **Fornisci fallback ragionevoli**
+3. **Non assumere enum o strutture specifiche**
+4. **Documenta chiaramente le dipendenze**
+
+## Best Practices
+
+### 1. Separazione delle Responsabilità
+
+**Modulo User (Generico)**:
+- ✅ Definisce l'architettura base STI
+- ✅ Fornisce trait e classi base
+- ✅ Implementa comandi generici
+- ❌ MAI dipendenze da moduli specifici
+
+**Moduli Specifici del Progetto**:
+- ✅ Definiscono i tipi specifici del dominio
+- ✅ Implementano enum e cast specifici
+- ✅ Estendono il comportamento base
+- ❌ MAI modificare il modulo User base
+
+### 2. Configurazione Dinamica
+
+Usa configurazioni esterne per definire i tipi:
+
+```php
+// config/user_types.php (nel modulo specifico)
+return [
+    'types' => [
+        'admin' => [
+            'class' => \Modules\ProjectName\Models\Admin::class,
+            'label' => 'Administrator',
+            'permissions' => ['*'],
+        ],
+        'doctor' => [
+            'class' => \Modules\ProjectName\Models\Doctor::class,
+            'label' => 'Medical Doctor',
+            'permissions' => ['medical:*'],
+        ],
+    ],
+];
+```
+
+### 3. Testing Strategy
+
+```php
+// Test nel modulo User (generico)
+class UserTypeCommandTest extends TestCase
+{
+    /** @test */
+    public function it_works_without_specific_types()
+    {
+        // Test con configurazione base
+    }
+}
+
+// Test nel modulo specifico
+class SaluteOraUserTypeCommandTest extends TestCase
+{
+    /** @test */
+    public function it_works_with_salute_ora_types()
+    {
+        // Test con tipi specifici di SaluteOra
+    }
+}
+```
+
+## Troubleshooting
+
+### Problema: "No user types configured"
+
+**Causa**: Il modello User del progetto non ha definito `$childTypes`
+
+**Soluzione**: Verificare che il modello User specifico del progetto definisca i tipi:
+
+```php
+class User extends BaseUser
+{
+    protected $childTypes = [
+        'admin' => Admin::class,
+        // Altri tipi...
+    ];
+}
+```
+
+### Problema: "Call to undefined method"
+
+**Causa**: Comando che tenta di usare metodi specifici di un enum
+
+**Soluzione**: Rendere il comando generico usando reflection:
+
+```php
+$typeValue = is_object($user->type) && method_exists($user->type, 'value') 
+    ? $user->type->value 
+    : (string) $user->type;
+```
+
+## Riferimenti
+
+<<<<<<< HEAD
+- [Documentazione ufficiale di Parental](https://github.com/tighten/parental)
+- [Articolo: "Single Table Inheritance in Laravel with Parental"](https://tighten.com/blog/single-table-inheritance-in-laravel-with-parental/)
+- [Pattern di progettazione: Single Table Inheritance](https://martinfowler.com/eaaCatalog/singleTableInheritance.html)
+>>>>>>> 54f4fa16 (.)
+=======
+- [Documentazione Parental](https://github.com/tighten/parental)
+- [Laravel Single Table Inheritance](https://laravel.com/docs/eloquent-relationships#polymorphic-relationships)
+- [Modulo User - Architettura Base](./user-architecture.md)
+- [SaluteOra - Implementazione STI](../../SaluteOra/docs/user-types.md)
+
+*Ultimo aggiornamento: Dicembre 2024*
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+>>>>>>> aurmich/dev

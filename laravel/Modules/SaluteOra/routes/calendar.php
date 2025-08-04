@@ -15,7 +15,23 @@ use Modules\SaluteOra\Http\Livewire\Calendar as CalendarComponent;
 | module. They provide the calendar functionality for the application.
 |
 */
+<<<<<<< HEAD
 /*
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+/*
+=======
+
+>>>>>>> aurmich/dev
+=======
+
+>>>>>>> 2099645a (.)
+=======
+/*
+>>>>>>> 13ea6524 (phpstan)
+>>>>>>> aurmich/dev
 // Calendar API Routes
 Route::middleware(['web', 'auth'])->prefix('api/calendar')->group(function () {
     Route::get('/config', [CalendarController::class, 'config'])->name('saluteora.calendar.config');
@@ -35,4 +51,18 @@ Route::middleware(['web', 'auth'])->group(function () {
         return view('saluteora::components.calendar');
     })->name('saluteora.calendar.component');
 });
+<<<<<<< HEAD
 */
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+*/
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 2099645a (.)
+=======
+*/
+>>>>>>> 13ea6524 (phpstan)
+>>>>>>> aurmich/dev

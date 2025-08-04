@@ -2,17 +2,53 @@
 
 ## Context
 
+<<<<<<< HEAD
 This document provides metadata for Windsurf about the comprehensive guide to integrating `mcamara/laravel-localization` into the `<nome progetto>` project.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+This document provides metadata for Windsurf about the comprehensive guide to integrating `mcamara/laravel-localization` into the `<nome progetto>` project.
+=======
+This document provides metadata for Windsurf about the comprehensive guide to integrating `mcamara/laravel-localization` into the `saluteora` project.
+>>>>>>> 54f4fa16 (.)
+=======
+This document provides metadata for Windsurf about the comprehensive guide to integrating `mcamara/laravel-localization` into the `<nome progetto>` project.
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 
 ## Key Points
 
 - **Package**: `mcamara/laravel-localization`
 - **Purpose**: Offer a step-by-step guide for multi-language support in Laravel applications.
+<<<<<<< HEAD
 - **Suggested Actions**:
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **Suggested Actions**:
+=======
+- **Suggested Actions**: 
+>>>>>>> 54f4fa16 (.)
+=======
+- **Suggested Actions**:
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
   - Install the package via Composer.
   - Update configuration files to support desired languages.
   - Use middleware for automatic language detection and redirection.
   - Generate localized URLs and translated routes using provided helpers.
   - Implement solutions for route caching and Livewire integration.
 - **Benefits**: Improved accessibility and user-friendliness through effective localization.
+<<<<<<< HEAD
 - **Documentation**: See `/var/www/html/<nome progetto>/laravel/Modules/Lang/docs/laravel-localization-complete.md` for complete instructions.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **Documentation**: See `/var/www/html/<nome progetto>/laravel/Modules/Lang/docs/laravel-localization-complete.md` for complete instructions.
+=======
+- **Documentation**: See `/var/www/html/saluteora/laravel/Modules/Lang/docs/laravel-localization-complete.md` for complete instructions.
+>>>>>>> 54f4fa16 (.)
+=======
+- **Documentation**: See `/var/www/html/<nome progetto>/laravel/Modules/Lang/docs/laravel-localization-complete.md` for complete instructions.
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev

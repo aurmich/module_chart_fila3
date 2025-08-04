@@ -11,10 +11,25 @@ use Modules\Xot\Traits\Updater;
 
 /**
  * Class BaseModel.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8e4d163b (phpstan)
+>>>>>>> aurmich/dev
  * 
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
  * 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 8e4d163b (phpstan)
+>>>>>>> aurmich/dev
  */
 abstract class BaseModel extends Model
 {

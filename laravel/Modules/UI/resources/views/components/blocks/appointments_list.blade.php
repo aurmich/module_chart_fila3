@@ -55,7 +55,19 @@
                     <div class="mt-2 space-y-1">
                         <p class="text-sm text-gray-600">
                             <span class="font-medium">Data:</span> 
+<<<<<<< HEAD
                             {{ $appointment->starts_at->format('d/m/Y') }}
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                            {{ $appointment->starts_at->format('d/m/Y') }}
+=======
+                            {{ $appointment->date->format('d/m/Y') }}
+>>>>>>> aurmich/dev
+=======
+                            {{ $appointment->date->format('d/m/Y') }}
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
                         </p>
                         <p class="text-sm text-gray-600">
                             <span class="font-medium">Orario:</span> 
@@ -119,4 +131,16 @@ function confirmCancel(appointmentId) {
     }
 }
 </script>
+<<<<<<< HEAD
 @endpush 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+@endpush 
+=======
+@endpush 
+>>>>>>> aurmich/dev
+=======
+@endpush 
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev

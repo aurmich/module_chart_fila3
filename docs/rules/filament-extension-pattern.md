@@ -54,6 +54,10 @@ class TestSmtpPage extends XotBasePage
 
 ## Errori Comuni da Evitare
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 ### ❌ ERRORE GRAVE: Documentazione in Posizione Sbagliata
 ```php
 // ❌ ERRORE GRAVE - Documentazione widget specifico in cartella generica
@@ -116,3 +120,17 @@ Se viene rilevato un errore:
 2. **Ricreare il file** nella posizione corretta
 3. **Aggiornare le regole** per evitare ripetizioni
 4. **Documentare l'errore** per apprendimento futuro
+<<<<<<< HEAD
+=======
+=======
+1. Non importare classi Filament originali se si estendono le classi XotBase
+2. Non definire proprietà di navigazione (`$navigationIcon`, `$navigationGroup`, ecc.) se la classe estende `XotBaseResource`
+3. Non implementare metodi standard che sono già forniti dalle classi base
+
+## Documentazione Correlata
+
+- [Architettura Filament in SaluteOra](../filament/architecture.md)
+- [XotBase Classes Analysis](../../laravel/Modules/Xot/docs/XOT_BASE_CLASSES_ANALYSIS.md)
+- [Filament Form Schema Conventions](../rules/filament-form-schema.md)
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev

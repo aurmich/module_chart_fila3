@@ -93,7 +93,19 @@ abstract class BaseGeoService
             if ($useCache && config('geo.cache.enabled')) {
                 /** @var int $ttl */
                 $ttl = config('geo.cache.ttl', 86400);
+<<<<<<< HEAD
                 Cache::put($cacheKey, $validatedData, $ttl);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                Cache::put($cacheKey, $validatedData, $ttl);
+=======
+                Cache::put($cacheKey, $data, $ttl);
+>>>>>>> 345f8677 (phpstan)
+=======
+                Cache::put($cacheKey, $validatedData, $ttl);
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
             }
 
             return $validatedData;

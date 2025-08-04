@@ -91,12 +91,36 @@ class StudiosRelationManager extends XotBaseRelationManager
     /**
      * Get the table filters.
      *
+<<<<<<< HEAD
      * @return array<string, Tables\Filters\Filter|Tables\Filters\SelectFilter>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+     * @return array<string, Tables\Filters\Filter|Tables\Filters\SelectFilter>
+=======
+     * @return array<string, Tables\Filters\Filter>
+>>>>>>> 2bcfd382 (fix Address)
+=======
+     * @return array<string, Tables\Filters\Filter|Tables\Filters\SelectFilter>
+>>>>>>> 13ea6524 (phpstan)
+>>>>>>> aurmich/dev
      */
     public function getTableFilters(): array
     {
         return [
+<<<<<<< HEAD
             //'active' => Tables\Filters\TernaryFilter::make('active'),
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            //'active' => Tables\Filters\TernaryFilter::make('active'),
+=======
+            'active' => Tables\Filters\TernaryFilter::make('active'),
+>>>>>>> 2bcfd382 (fix Address)
+=======
+            //'active' => Tables\Filters\TernaryFilter::make('active'),
+>>>>>>> 13ea6524 (phpstan)
+>>>>>>> aurmich/dev
         ];
     }
 
@@ -112,7 +136,19 @@ class StudiosRelationManager extends XotBaseRelationManager
     public function getTableHeaderActions(): array
     {
         return [
+<<<<<<< HEAD
             'attach'=>Tables\Actions\AttachAction::make()
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'attach'=>Tables\Actions\AttachAction::make()
+=======
+            Tables\Actions\AttachAction::make()
+>>>>>>> 2bcfd382 (fix Address)
+=======
+            'attach'=>Tables\Actions\AttachAction::make()
+>>>>>>> 13ea6524 (phpstan)
+>>>>>>> aurmich/dev
                 ->preloadRecordSelect(false)
                 ->recordSelect(
                     fn (Forms\Components\Select $select) => $select
@@ -126,7 +162,18 @@ class StudiosRelationManager extends XotBaseRelationManager
                                             ->orWhere('address', 'like', "%{$search}%");
                                     })
                                     // Escludiamo manualmente gli studi già associati
+<<<<<<< HEAD
                                     /** @phpstan-ignore property.notFound */
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                                    /** @phpstan-ignore property.notFound */
+=======
+>>>>>>> 2bcfd382 (fix Address)
+=======
+                                    /** @phpstan-ignore-next-line */
+>>>>>>> 13ea6524 (phpstan)
+>>>>>>> aurmich/dev
                                     ->whereNotIn('id', $this->getOwnerRecord()->studios->modelKeys())
                                     ->limit(10)
                                     ->get()

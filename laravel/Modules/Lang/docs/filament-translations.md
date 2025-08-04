@@ -2,6 +2,17 @@
 
 > **Regola fondamentale:** MAI utilizzare il metodo `->label()` nei componenti Filament, specialmente nei Blocks. Le etichette sono gestite automaticamente dal LangServiceProvider.
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 # ⚠️ Regola fondamentale: MAI usare chiavi che terminano con `.navigation` nei file di traduzione
 
 - Usa sempre la struttura array per navigation:
@@ -23,6 +34,19 @@
   - [translation_keys_rules.md](../translation_keys_rules.md)
   - [docs SaluteOra](../../SaluteOra/docs/translations.md)
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 ## Struttura Corretta per le Traduzioni
 
 Le traduzioni in Filament devono seguire questa struttura nei file di traduzione:
@@ -96,6 +120,20 @@ TextInput::make('title')
 
 ### Link Bidirezionale
 Questo documento è linkato anche dalla documentazione del modulo Cms per garantire coerenza tra i moduli.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+=======
+>>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
+>>>>>>> aurmich/dev
 
 # ⚠️ Regola vincolante: MAI usare ->label() nei componenti Filament
 
@@ -103,6 +141,13 @@ Questo documento è linkato anche dalla documentazione del modulo Cms per garant
 - Consulta anche:
   - [docs SaluteOra](../../SaluteOra/docs/README.md)
   - [docs Xot](../../Xot/docs/README.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
+>>>>>>> aurmich/dev
 
 ## Policy DRY sulle Traduzioni di Disponibilità/Appuntamenti
 
@@ -112,3 +157,20 @@ Tutte le label, placeholder, messaggi e azioni relativi a disponibilità e appun
 - Un solo punto di verità: nessuna duplicazione, nessun lock-in
 - DRY, KISS, serenità del codice
 - Refactoring sicuro, massima estendibilità
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
+=======
+>>>>>>> 2c07066 (.)
+>>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
+>>>>>>> aurmich/dev

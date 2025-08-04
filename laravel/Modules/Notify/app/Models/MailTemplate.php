@@ -17,6 +17,11 @@ use Spatie\MailTemplates\Interfaces\MailTemplateInterface;
 use Spatie\MailTemplates\Models\MailTemplate as SpatieMailTemplate;
 
 /**
+<<<<<<< HEAD
+=======
+ * 
+ *
+>>>>>>> aurmich/dev
  * @property int $id
  * @property string $mailable
  * @property string|null $subject
@@ -28,6 +33,13 @@ use Spatie\MailTemplates\Models\MailTemplate as SpatieMailTemplate;
  * @property \Carbon\Carbon|null $deleted_at
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Notify\Models\MailTemplateVersion> $versions
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Notify\Models\MailTemplateLog> $logs
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3e4ec66 (.)
+>>>>>>> aurmich/dev
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_by
@@ -56,13 +68,31 @@ use Spatie\MailTemplates\Models\MailTemplate as SpatieMailTemplate;
  * @method static Builder<static>|MailTemplate whereTextTemplate($value)
  * @method static Builder<static>|MailTemplate whereUpdatedAt($value)
  * @method static Builder<static>|MailTemplate whereUpdatedBy($value)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
  * @property string|null $params
  * @method static Builder<static>|MailTemplate whereParams($value)
  * @property array<array-key, mixed>|null $sms_template
  * @property int $counter
  * @method static Builder<static>|MailTemplate whereCounter($value)
  * @method static Builder<static>|MailTemplate whereSmsTemplate($value)
+<<<<<<< HEAD
  * @mixin \Eloquent
+=======
+=======
+ * @property string|null $params
+ * @method static Builder<static>|MailTemplate whereParams($value)
+>>>>>>> 13ea6524 (phpstan)
+ * @mixin \Eloquent
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+ * @mixin \Eloquent
+>>>>>>> f3e4ec66 (.)
+>>>>>>> aurmich/dev
  */
 class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
 {
@@ -74,7 +104,15 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
     protected $connection = 'notify';
 
     /** @var list<string> */
+<<<<<<< HEAD
     public array $translatable = ['subject', 'html_template', 'text_template','sms_template'];
+=======
+<<<<<<< HEAD
+    public array $translatable = ['subject', 'html_template', 'text_template','sms_template'];
+=======
+    public array $translatable = ['subject', 'html_template', 'text_template'];
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 
     /** @var list<string> */
     protected $fillable = [
@@ -84,10 +122,24 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
         'subject',
         'html_template',
         'text_template',
+<<<<<<< HEAD
         'sms_template',
         //'version',  //under development
         'params',
         'counter',
+=======
+<<<<<<< HEAD
+        'sms_template',
+        //'version',  //under development
+        'params',
+<<<<<<< HEAD
+        'counter',
+=======
+        //'version',  //under development
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+>>>>>>> aurmich/dev
     ];
 
     /**
@@ -95,7 +147,27 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
      *
      * @return array<string, string>
      */
+<<<<<<< HEAD
     protected function casts(): array
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    protected function casts(): array
+=======
+    public function casts(): array
+>>>>>>> 54f4fa16 (.)
+=======
+    protected function casts(): array
+>>>>>>> 2099645a (.)
+=======
+    public function casts(): array
+>>>>>>> 15cb84fb (fix collisions)
+=======
+    protected function casts(): array
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
     {
         return [
             'created_at' => 'datetime',
@@ -116,13 +188,38 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
 
     public function scopeForMailable(Builder $query, Mailable $mailable): Builder
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
         if(!method_exists($mailable, 'getSlug')){
             throw new \Exception('Il metodo getSlug() non è definito nella classe '.$mailable::class);
         }
         $slug=$mailable->getSlug();
+<<<<<<< HEAD
         return $query
             ->where('mailable', get_class($mailable))
             ->where('slug', $slug);
+=======
+<<<<<<< HEAD
+        return $query
+            ->where('mailable', get_class($mailable))
+            ->where('slug', $slug);
+=======
+
+        return $query
+            ->where('mailable', get_class($mailable))
+            ->where('slug', $mailable->getSlug());
+>>>>>>> 54f4fa16 (.)
+=======
+        return $query
+            ->where('mailable', get_class($mailable))
+            ->where('slug', $slug);
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
     }
 
 

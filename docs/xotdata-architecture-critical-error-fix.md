@@ -297,7 +297,14 @@ graph TD
 ### **Script di Verifica**
 ```bash
 #!/bin/bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d50c1c4a (✨ (docs): add comprehensive documentation for PHPStan factory fixes 2025 in SaluteOra module to ensure adherence to best practices and improve code quality)
+>>>>>>> aurmich/dev
 # Script per identificare violazioni XotData
 
 echo "🔍 Cercando import diretti tra moduli..."
@@ -392,3 +399,10 @@ rules:
 **Status**: ✅ **ERRORE RISOLTO E DOCUMENTATO**  
 **Data**: Gennaio 2025  
 **Team**: Laraxot SaluteOra  
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+**Priority**: 🚨 **CRITICO - PATTERN FONDAMENTALE** 
+>>>>>>> d50c1c4a (✨ (docs): add comprehensive documentation for PHPStan factory fixes 2025 in SaluteOra module to ensure adherence to best practices and improve code quality)
+>>>>>>> aurmich/dev

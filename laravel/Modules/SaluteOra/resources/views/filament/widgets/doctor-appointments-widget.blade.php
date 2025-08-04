@@ -4,7 +4,19 @@
             {{ __('saluteora::widgets.doctor_appointments.title') }}
         </x-slot>
 
+<<<<<<< HEAD
         <div>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <div>
+=======
+        <div class="space-y-4 max-h-96 overflow-y-auto">
+>>>>>>> 2df8b507 (bozza widget doctor appointments)
+=======
+        <div>
+>>>>>>> 0c7257a8 (- updated testi sale d'attesa)
+>>>>>>> aurmich/dev
             @if($this->appointments->isNotEmpty())
                 @each('pub_theme::appointment.doctor-pending-item', $this->appointments, 'appointment')
             @else

@@ -9,7 +9,14 @@
 
 ### Installazione via Git Subtree
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Aggiungere il repository remoto
 git remote add -f xot https://github.com/crud-lab/xot.git
 
@@ -177,7 +184,14 @@ Route::middleware(['xot.auth', 'xot.profile'])->group(function () {
 - Mantenere la compatibilità con le versioni future
 - Documentare le personalizzazioni
 - Testare le modifiche 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ## Collegamenti tra versioni di xot.md
 * [xot.md](docs/tecnico/packages/xot.md)
 * [xot.md](docs/xot.md)

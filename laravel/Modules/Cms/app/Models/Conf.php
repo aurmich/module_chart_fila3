@@ -14,11 +14,31 @@ use Sushi\Sushi;
  *
  * @property int         $id
  * @property string|null $name
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
+>>>>>>> aurmich/dev
  * @method static Builder|Conf newModelQuery()
  * @method static Builder|Conf newQuery()
  * @method static Builder|Conf query()
  * @method static Builder|Conf whereId($value)
  * @method static Builder|Conf whereName($value)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
+>>>>>>> aurmich/dev
  * @mixin IdeHelperConf
  * @mixin \Eloquent
  */

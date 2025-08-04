@@ -3,6 +3,11 @@
 declare(strict_types=1);
 
 namespace Modules\SaluteOra\Enums;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 use Filament\Support\Contracts\HasLabel;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasColor;
@@ -18,6 +23,31 @@ use function Safe\class_alias;
  * @method static self[] cases()
  */
 enum DoctorRegistrationStatusEnum: string implements HasLabel, HasIcon, HasColor
+<<<<<<< HEAD
+=======
+=======
+=======
+use Filament\Support\Contracts\HasLabel;
+use Filament\Support\Contracts\HasIcon;
+use Filament\Support\Contracts\HasColor;
+>>>>>>> 8e4d163b (phpstan)
+
+/**
+ * Defines the different types of appointments in the system.
+ * 
+ * @method static self fromName(string $name)
+ * @method static self fromValue(string $value)
+ * @method static self tryFromName(string $name)
+ * @method static self tryFromValue(string $value)
+ * @method static self[] cases()
+ */
+<<<<<<< HEAD
+enum DoctorRegistrationStatusEnum implements FilamentSupportContractsHasLabel: string
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+enum DoctorRegistrationStatusEnum: string implements HasLabel, HasIcon, HasColor
+>>>>>>> 8e4d163b (phpstan)
+>>>>>>> aurmich/dev
 {
     /**
      * Bozza - Il processo di registrazione è stato iniziato ma non completato.
@@ -59,6 +89,13 @@ enum DoctorRegistrationStatusEnum: string implements HasLabel, HasIcon, HasColor
             self::COMPLETED => 'Completato',
         };
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8e4d163b (phpstan)
+>>>>>>> aurmich/dev
 
     /**
      * Restituisce l'icona per lo stato.
@@ -91,6 +128,14 @@ enum DoctorRegistrationStatusEnum: string implements HasLabel, HasIcon, HasColor
             self::COMPLETED => 'success',
         };
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 8e4d163b (phpstan)
+>>>>>>> aurmich/dev
     
     /**
      * Verifica se lo stato corrente è un stato finale (approvato, rifiutato o completato).
@@ -121,4 +166,24 @@ enum DoctorRegistrationStatusEnum: string implements HasLabel, HasIcon, HasColor
 }
 
 // Alias for backward compatibility
+<<<<<<< HEAD
 //class_alias(DoctorRegistrationStatusEnum::class, 'Modules\SaluteOra\Enums\DoctorRegistrationStatus');
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+//class_alias(DoctorRegistrationStatusEnum::class, 'Modules\SaluteOra\Enums\DoctorRegistrationStatus');
+=======
+class_alias(DoctorRegistrationStatusEnum::class, 'Modules\SaluteOra\Enums\DoctorRegistrationStatus');
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+class_alias(DoctorRegistrationStatusEnum::class, 'Modules\\\\SaluteOra\\\\Enums\\\\DoctorRegistrationStatus');
+>>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
+=======
+class_alias(DoctorRegistrationStatusEnum::class, 'Modules\SaluteOra\Enums\DoctorRegistrationStatus');
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+=======
+//class_alias(DoctorRegistrationStatusEnum::class, 'Modules\SaluteOra\Enums\DoctorRegistrationStatus');
+>>>>>>> 13ea6524 (phpstan)
+>>>>>>> aurmich/dev

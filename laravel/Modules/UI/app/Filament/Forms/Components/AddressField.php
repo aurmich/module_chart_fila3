@@ -29,16 +29,94 @@ class AddressField extends Forms\Components\Field
                 'state' => null,
                 'zip' => null,
             ];
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
             
             //if ($record && method_exists($record, 'getRelationValue')) {
                 $relationship = $this->getRelationship();
                 if ($relationship && $record?->relationLoaded($relationship)) {
+<<<<<<< HEAD
+=======
+=======
+            
+            //if ($record && method_exists($record, 'getRelationValue')) {
+                $relationship = $this->getRelationship();
+<<<<<<< HEAD
+                if ($relationship && $record->relationLoaded($relationship)) {
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+                if ($relationship && $record?->relationLoaded($relationship)) {
+>>>>>>> 345f8677 (phpstan)
+=======
+            
+            //if ($record && method_exists($record, 'getRelationValue')) {
+                $relationship = $this->getRelationship();
+<<<<<<< HEAD
+                if ($relationship && $record->relationLoaded($relationship)) {
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+                if ($relationship && $record?->relationLoaded($relationship)) {
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
                     $address = $record->getRelationValue($relationship);
                     if (null !== $address && is_object($address) && method_exists($address, 'toArray')) {
                         $data = $address->toArray();
                     }
                 }
+<<<<<<< HEAD
             //}
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            //}
+=======
+=======
+>>>>>>> 54f4fa16 (.)
+            $address = $record->getRelationValue($this->getRelationship());
+            if (null !== $address && is_object($address) && method_exists($address, 'toArray')) {
+                $data = $address->toArray();
+=======
+            
+            if ($record !== null) {
+                $address = $record->getRelationValue($this->getRelationship());
+                if (null !== $address && is_object($address) && method_exists($address, 'toArray')) {
+                    $data = $address->toArray();
+                }
+>>>>>>> bf0cd1be (phpstan)
+=======
+            $address = $record->getRelationValue($this->getRelationship());
+            if (null !== $address && is_object($address) && method_exists($address, 'toArray')) {
+                $data = $address->toArray();
+>>>>>>> 6581c95e (♻️ (ListActivities.php, ListStoredEvents.php, LogoutListener.php): refactor code to improve readability and maintainability by removing unused imports and comments)
+            }
+
+            $component->state($data);
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+            }
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+            //}
+>>>>>>> 345f8677 (phpstan)
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+            }
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+            //}
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
         });
 
         $this->dehydrated(false);
@@ -66,7 +144,27 @@ class AddressField extends Forms\Components\Field
             $relationship->updateOrCreate($state);
         }
 
+<<<<<<< HEAD
         $record?->touch();
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        $record?->touch();
+=======
+        $record->touch();
+>>>>>>> aurmich/dev
+=======
+        $record?->touch();
+>>>>>>> 345f8677 (phpstan)
+=======
+        $record->touch();
+>>>>>>> 54f4fa16 (.)
+=======
+        $record?->touch();
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
     }
 
     public function getChildComponents(): array

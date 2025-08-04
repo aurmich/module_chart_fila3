@@ -9,6 +9,10 @@ Usa `/console-command` in Windsurf Cascade per creare Command perfetti secondo i
 
 ### 1.1 Definizione Requisiti
 ```bash
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
 # Identifica:
 
@@ -20,12 +24,29 @@ Usa `/console-command` in Windsurf Cascade per creare Command perfetti secondo i
 
 # - Input richiesti dall'utente
 
+<<<<<<< HEAD
+=======
+=======
+# Identifica:
+# - Modulo di appartenenza
+# - Nome comando (formato: module:action)
+# - Scopo e funzionalità
+# - Input richiesti dall'utente
+>>>>>>> e79b3c05 (fix tenant)
+>>>>>>> aurmich/dev
 # - Operazioni da eseguire
 ```
 
 ### 1.2 Controllo Standard di Riferimento
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> e79b3c05 (fix tenant)
+>>>>>>> aurmich/dev
 # Studia sempre il capolavoro:
 cat /var/www/html/_bases/base_saluteora/laravel/Modules/User/app/Console/Commands/ChangeTypeCommand.php
 
@@ -220,7 +241,14 @@ public function handle(): void
 
 ### 5.1 Test Scenario Comuni
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> e79b3c05 (fix tenant)
+>>>>>>> aurmich/dev
 # Test input validation
 php artisan {module}:{action}
 
@@ -298,3 +326,10 @@ $result = $operation(); // Senza validazione
 **Standard Estratto dal Capolavoro**: `ChangeTypeCommand.php`  
 **Filosofia**: Serenità, robustezza, eleganza  
 **Religione**: Laravel Prompts, XotData, Contracts  
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+**Ultimo aggiornamento**: Giugno 2025
+>>>>>>> e79b3c05 (fix tenant)
+>>>>>>> aurmich/dev

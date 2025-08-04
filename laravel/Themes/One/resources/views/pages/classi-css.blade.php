@@ -1,6 +1,15 @@
 <x-layouts.app>
+<<<<<<< HEAD
 <div class="bg-[#0019ff]">Ciao</div>
 <div class="bg-sky-500">Test</div>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<div class="bg-[#0019ff]">Ciao</div>
+<div class="bg-sky-500">Test</div>
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 <div class="bg-[#272C4D]">Prova</div>
 <div class="bg-[#45465A]">Dark</div>
 <div class="h-20">Altezza</div>
@@ -11,11 +20,48 @@
 <div class="text-[#272C4D]">Testo primary</div>
 <div class="text-gray-600">Testo subtitle</div>
 <div class="text-[#FF5F7E]"></div>
+<<<<<<< HEAD
+=======
+=======
+=======
+<div class="bg-[#0019ff]">Ciao</div>
+<div class="bg-sky-500">Test</div>
+>>>>>>> d23ba493 (add calendar)
+<div class="bg-[#1A467F]">Prova</div>
+=======
+<div class="bg-[#272C4D]">Prova</div>
+>>>>>>> 89a8313a (- update primary colors)
+<div class="bg-[#45465A]">Dark</div>
+<div class="h-20">Altezza</div>
+<div class="bg-[#FF5F7E]">Registrati Button</div>
+<div class="text-[#E2E8F0]"></div>
+<div class="bg-[#E7E7E7]">New background</div>
+<div class="bg-[#E6EBF7]">Section</div>
+<div class="text-[#272C4D]">Testo primary</div>
+<div class="text-gray-600">Testo subtitle</div>
+<<<<<<< HEAD
+<div class="text-[#0D9488]"></div>
+<<<<<<< HEAD
+>>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
+=======
+>>>>>>> d23ba493 (add calendar)
+=======
+<div class="text-[#FF5F7E]"></div>
+>>>>>>> 89a8313a (- update primary colors)
+>>>>>>> aurmich/dev
 <div class="hover:text-[#E2E8F0]">Provaaaa</div>
 <div class="hover:underline underline-offset-[14]">Ciaoooooo</div>
 <div class="lg:h-20 sm:h-12">Logo</div>
 <div class="text-center sm:text-center">Testo centrato</div>
 <div class="flex justify-around">Flex</div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 89a8313a (- update primary colors)
+>>>>>>> aurmich/dev
 <div class="w-80 h-80 rounded-md flex justify-center items-center bg-[#272C4D]">Cards</div>
 <div class="border-transparent">Border</div>
 <div class="hover:text-[#FF5F7E]">Hover card</div>
@@ -69,7 +115,19 @@
 <div class="w-[300px]">Width small</div>
 <div class="bg-transparent"></div>
 <div class="bg-gradient-to-r from-cyan-500 to-blue-500">gradiant</div>
+<<<<<<< HEAD
 <div class="bg-gradient-to-r from-cyan-500 to-[#272C4D]">gradient</div>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<div class="bg-gradient-to-r from-cyan-500 to-[#272C4D]">gradient</div>
+=======
+<div class="bg-gradient-to-r from-cyan-500 to-[#1A467F]">gradient</div>
+>>>>>>> ff138484 (- update dettaglio paziente)
+=======
+<div class="bg-gradient-to-r from-cyan-500 to-[#272C4D]">gradient</div>
+>>>>>>> 6a8817e6 (- creata pagina dettaglio dottore)
+>>>>>>> aurmich/dev
 <div class="min-h-screen">screen height</div>
 <div class="border-[#1A467F]"></div>
 <div class="min-h-[50vh]">min height</div>
@@ -77,10 +135,24 @@
 <div class="min-h-[700px]">min height costum</div>
 <div class="w-[350px]">width 350</div>
 <div class="w-[700px]">width 700px</div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 89a8313a (- update primary colors)
+>>>>>>> aurmich/dev
 <div class="bg-[#F5F5F5]">background primary chiaro</div>
 <div class="ring-[#FF5F7E]">ring primary</div>
 <div class="focus:border-[#FF5F7E]">focus primary</div>
 <div class="focus:ring-[#FF5F7E]">focus ring primary</div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6a8817e6 (- creata pagina dettaglio dottore)
+>>>>>>> aurmich/dev
 <div class="fixed top-0 left-0 right-0 z-50">header fixed</div>
 <div class="mt-1.5">margin bottom header</div>
 <div class="fixed top-0 left-0 right-0 z-50 h-24">fixed</div>
@@ -96,6 +168,11 @@
 <div class="text-[#272C4D]"></div>
 <div class="justify-evenly">justify evenly</div>
 <div class="lg:w-7/12">large width calendar</div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 <div class="mt-9">margin top 9</div>
 <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block bg-gray-800 text-white text-sm px-2 py-1 rounded z-10">tooltip</div>
 <div class="my-9">margin-top-bottom</div>
@@ -108,6 +185,13 @@
 <div class="rounded-[15px]">border radius 15</div>
 <div class="w-2/4">width 2/4</div>
 <div class="py-9">padding y 9 </div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f7d3ce4f (- update landing-page;)
+>>>>>>> aurmich/dev
 <div class="bg-transparent">bg transparent</div>
 <div class="bg-cover">bg cover</div>
 <div class="bg-no-repeat">bg no repeat</div>
@@ -138,33 +222,82 @@
 <div class="bg-[#E6EBF7B3]">background card opacity</div>
 <div class="hover:py-5">hover button register</div>
 <div class="hover:py-9">hoverrrrrrrrrrr</div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
+>>>>>>> aurmich/dev
 <div class="flex-1">flex 1</div>
 <div class="h-[100px]">height 100px</div>
 <div class="lg:ml-5">large margin left</div>
 <div class="h-52">height 208 px</div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+>>>>>>> aurmich/dev
 <div class="lg:min-h-36">large footer height</div>
 <div class="left-[15%]">left 15%</div>
 <div class="right-[15%]">right 15%</div>
 <div class="mt-10">margin-top 10</div>
 <div class="lg:py-8">large py-8</div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 <div class="text-[#F38B8B]">testo rosa chiaro</div>
 <div class="mx-10">mx 10</div>
 <div class="mx-24">mx 24</div>
 <div class="mx-40">mx 40</div>
 <div class="mx-56">mx 56</div>
 <div class="mx-60">mx 60</div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
+=======
+>>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
+>>>>>>> aurmich/dev
 <div class="m-auto">mx auto</div>
 <div class="ring-[#FF5F7E]">ring pink</div>
 <div class="shadow-[0_10px_40px_rgba(0,0,0,0.2)]">shadow</div>
 <div class="p-9">padding 9</div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
+>>>>>>> aurmich/dev
 <div class="bg-[url('/img/inmp-logo-trasparenza.svg')]">bg inmp</div>
 <div class="my-5">margin top bottom 5</div>
 <div class="w-10/12">width 83%</div>
 <div class="w-8/12">width 60%</div>
 <div class="w-7/12">width 50%</div>
+<<<<<<< HEAD
 <div class="text-[40px]">testo 40px</div>
 <div class="w-60 h-60">width e height 15rem</div>
 <div class="lg:justify-evenly">large justify-evenly</div>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<div class="text-[40px]">testo 40px</div>
+<div class="w-60 h-60">width e height 15rem</div>
+<div class="lg:justify-evenly">large justify-evenly</div>
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 <div class="h-[125px]">height 125px</div>
 <div class="leading-7"></div>
 <div class="lg:h-40">large height inmp</div>
@@ -206,3 +339,183 @@
 <div class="p-4">p 4</div>
 <div class="ipad:mt-60">mt 28 ipad</div>
 </x-layouts.app>
+<<<<<<< HEAD
+=======
+=======
+</x-layouts.app>
+>>>>>>> aurmich/dev
+=======
+<div class="m-auto">mx 60</div>
+</x-layouts.app>
+>>>>>>> 3ad9917a (- fix styles registration)
+=======
+</x-layouts.app>
+>>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
+=======
+=======
+>>>>>>> d23ba493 (add calendar)
+<div class="w-80 h-80 rounded-md flex justify-center items-center bg-[#1A467F]">Cards</div>
+<div class="border-transparent">Border</div>
+<div class="hover:text-[#0D9488]">Hover card</div>
+<div class="bg-[#F9F9F9]">Card background</div>
+<div class="hover:cursor-pointer">Cursor card</div>
+<div class="mx-4">Margin left-right</div>
+<<<<<<< HEAD
+<<<<<<< HEAD
+</x-layouts.app>
+>>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
+=======
+    <div class="bg-[#0019ff]">Ciao</div>
+    <div class="bg-sky-500">Test</div>
+    <div class="bg-[#1A467F]">Prova</div>
+    <div class="bg-[#45465A]">Dark</div>
+    <div class="h-20">Altezza</div>
+    <div class="bg-[#0D9488]">Registrati Button</div>
+    <div class="text-[#E2E8F0]"></div>
+    <div class="bg-[#E6EBF7]">Section</div>
+    <div class="text-[#1A467F]">Testo primary</div>
+    <div class="text-gray-600">Testo subtitle</div>
+    <div class="text-[#0D9488]"></div>
+    <div class="hover:text-[#E2E8F0]">Provaaaa</div>
+    <div class="hover:underline underline-offset-[14]">Ciaoooooo</div>
+    <div class="lg:h-20 sm:h-12">Logo</div>
+    <div class="text-center sm:text-center">Testo centrato</div>
+    <div class="flex justify-around">Flex</div>
+    <div class="w-80 h-80 rounded-md flex justify-center items-center bg-[#1A467F]">Cards</div>
+    <div class="border-transparent">Border</div>
+    <div class="hover:text-[#0D9488]">Hover card</div>
+    <div class="bg-[#F9F9F9]">Card background</div>
+    <div class="hover:cursor-pointer">Cursor card</div>
+    <div class="mx-4">Margin left-right</div>
+    </x-layouts.app>
+>>>>>>> 7bc70bf2 (🚀 (laravel/Themes/One): remove deprecated files and old theme structure to streamline the codebase and improve maintainability)
+=======
+</x-layouts.app>
+>>>>>>> d23ba493 (add calendar)
+=======
+<div class="bg-[#EBF5FF]">Form background</div>
+<div class="bg-[#2E9FBE]">New Primary</div>
+<div class="text-[#2E9FBE]">Text new primary</div>
+<div class="py-5">Padding 20px</div>
+<div class="pb-5">Padding bottom 20px</div>
+<div class="text-l">Testo large</div>
+<div class="size-7">Size 7</div>
+<div class="w-7 h-7">Width height</div>
+<div class="flex-col">
+    <div class="!bg-[#1A467F]"></div>
+</div>
+<div class="items-center">
+    <div class="!bg-[#1A467F]"></div>
+</div>
+<div class="text-lg">Testo large</div>
+<div class="mb-7">Padding bottom small</div>
+<div class="!border-[#0D9488]">Border</div>
+<div class="!bg-[#0D9488]">Background</div>
+<div class="border-[#1A467F]">Border</div>
+<<<<<<< HEAD
+<div class="border-black">BorderBlack</div>
+</x-layouts.app>
+>>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
+=======
+<div class="!border-black">BorderBlack</div>
+<div class="mb-12">Margin bottom</div>
+<div class="m-6">Margin</div>
+<<<<<<< HEAD
+</x-layouts.app>
+>>>>>>> 7e1c3ad6 (- sistemato footer;)
+=======
+<div class="w-96">Width</div>
+<div class="bg-[#B9C3D1]"></div>
+<div class="p-8">Padding</div>
+<div class="mb-8">Marginnn</div>
+<div class="!py-8">Padding zero</div>
+<div class="bg-[#DBE3EE]">Background button azioni</div>
+<<<<<<< HEAD
+</x-layouts.app>
+>>>>>>> a25008e1 (- Rename file: header, footer, home;)
+=======
+<div class="py-8">Padding Y</div>
+<div class="m-12">Margin 12</div>
+<div class="mx-0">Margin x</div>
+<<<<<<< HEAD
+</x-layouts.app>
+>>>>>>> f2140a80 (- continuo style landing page;)
+=======
+<div class="bg-gradient-to-white from-[#1A467F]">Gradient</div>
+<<<<<<< HEAD
+</x-layouts.app>
+>>>>>>> 8acca8e8 (- continuo style pagina di registrazione;)
+=======
+<div class="h-96"></div>
+<<<<<<< HEAD
+</x-layouts.app>
+>>>>>>> cecdd8e5 (- rename file dettaglio-paziente;)
+=======
+<div class="w-[800px]">Width custom</div>
+<div class="w-[450px]">Width calendario</div>
+<div class="grid-cols-2"></div>
+<div class="grid grid-cols-2 gap-4"></div>
+<div class="h-auto"></div>
+<div class="min-h-screen"></div>
+<div class="m-5">Margin five</div>
+<div class="px-3">Padding 3</div>
+<div class="gap-4">Gap-4</div>
+<div class="p-6"></div>
+<div class="lg:w-[350px]">Logo width large</div>
+<div class="w-[300px]">Width small</div>
+<div class="bg-transparent"></div>
+</x-layouts.app>
+>>>>>>> 58d017c2 (- aggiornato stile dettaglio paziente)
+=======
+</x-layouts.app>    
+>>>>>>> ff138484 (- update dettaglio paziente)
+=======
+</x-layouts.app>    
+>>>>>>> 89a8313a (- update primary colors)
+=======
+</x-layouts.app>
+>>>>>>> 6a8817e6 (- creata pagina dettaglio dottore)
+=======
+<div class="mt-9">margin top 9</div>
+<div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block bg-gray-800 text-white text-sm px-2 py-1 rounded z-10">tooltip</div>
+<div class="my-9">margin-top-bottom</div>
+</x-layouts.app>
+>>>>>>> 46477621 (- update contenuto pagine appuntamento)
+=======
+</x-layouts.app>
+>>>>>>> eb36972d (- create pagina: "partners";)
+=======
+</x-layouts.app>
+>>>>>>> f7d3ce4f (- update landing-page;)
+=======
+<div class=""></div>
+</x-layouts.app>
+>>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
+=======
+</x-layouts.app>
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+<div class="text-[#F38B8B]">testo rosa chiaro</div>
+</x-layouts.app>
+>>>>>>> c0c82b7e (- updated template email)
+=======
+</x-layouts.app>
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
+=======
+<div class="m-auto">mx 60</div>
+</x-layouts.app>
+>>>>>>> 3ad9917a (- fix styles registration)
+=======
+</x-layouts.app>
+>>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
+=======
+</x-layouts.app>
+>>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
+=======
+<div class="text-[40px]">testo 40px</div>
+</x-layouts.app>
+>>>>>>> 8d28bdca (- updated style area dottore)
+=======
+</x-layouts.app>
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
+>>>>>>> aurmich/dev

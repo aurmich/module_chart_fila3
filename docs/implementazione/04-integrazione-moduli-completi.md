@@ -36,7 +36,14 @@ L'ordine di integrazione è fondamentale per rispettare le dipendenze tra i modu
 ## Comandi di integrazione
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # 5. Modulo UI (interfaccia utente base)
 git subtree add --prefix laravel/Modules/UI git@github.com:laraxot/module_ui_fila3.git dev --squash
 

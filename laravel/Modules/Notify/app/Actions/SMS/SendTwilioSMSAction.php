@@ -11,13 +11,25 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 use Modules\Notify\Contracts\SMS\SmsActionContract;
 use Modules\Notify\Datas\SmsData;
+<<<<<<< HEAD
 use Modules\Notify\Datas\SMS\TwilioData;
+=======
+<<<<<<< HEAD
+use Modules\Notify\Datas\SMS\TwilioData;
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 use Spatie\QueueableAction\QueueableAction;
 
 final class SendTwilioSMSAction implements SmsActionContract
 {
     use QueueableAction;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     /** @var TwilioData */
     private TwilioData $twilioData;
 
@@ -29,12 +41,47 @@ final class SendTwilioSMSAction implements SmsActionContract
 
     /** @var string|null */
     protected ?string $defaultSender = null;
+<<<<<<< HEAD
+=======
+=======
+=======
+    /** @var string */
+>>>>>>> 345f8677 (phpstan)
+    private string $accountSid;
+
+    /** @var string */
+    private string $authToken;
+
+    /** @var string */
+    private string $baseUrl = 'https://api.twilio.com/2010-04-01';
+
+    /** @var array<string, mixed> */
+    private array $vars = [];
+
+    /** @var bool */
+    protected bool $debug;
+
+    /** @var int */
+    protected int $timeout;
+<<<<<<< HEAD
+    protected ?string $defaultSender;
+>>>>>>> 54f4fa16 (.)
+=======
+
+    /** @var string|null */
+    protected ?string $defaultSender = null;
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
 
     /**
      * Create a new action instance.
      */
     public function __construct()
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
         $this->twilioData = TwilioData::make();
         
         if (!$this->twilioData->account_sid) {
@@ -42,13 +89,47 @@ final class SendTwilioSMSAction implements SmsActionContract
         }
 
         if (!$this->twilioData->auth_token) {
+<<<<<<< HEAD
+=======
+=======
+        $config = config('sms.drivers.twilio');
+        if (!is_array($config)) {
+            throw new Exception('Configurazione Twilio non trovata in sms.php');
+        }
+
+        $this->accountSid = $config['account_sid'] ?? null;
+        if (!is_string($this->accountSid)) {
+            throw new Exception('Account SID Twilio non configurato in sms.php');
+        }
+
+        $this->authToken = $config['auth_token'] ?? null;
+        if (!is_string($this->authToken)) {
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
             throw new Exception('Auth Token Twilio non configurato in sms.php');
         }
 
         // Parametri a livello di root
+<<<<<<< HEAD
         $sender = config('sms.from');
         $this->defaultSender = is_string($sender) ? $sender : null;
         $this->debug = (bool) config('sms.debug', false);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        $sender = config('sms.from');
+        $this->defaultSender = is_string($sender) ? $sender : null;
+        $this->debug = (bool) config('sms.debug', false);
+=======
+        $this->defaultSender = config('sms.from');
+=======
+        $sender = config('sms.from');
+        $this->defaultSender = is_string($sender) ? $sender : null;
+>>>>>>> 345f8677 (phpstan)
+        $this->debug = (bool) config('sms.debug', false);
+        $this->timeout = (int) config('sms.timeout', 30);
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
     }
 
     /**
@@ -61,6 +142,11 @@ final class SendTwilioSMSAction implements SmsActionContract
     public function execute(SmsData $smsData): array
     {
         // Normalizza il numero di telefono
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
         $to = (string) $smsData->to;
         if (Str::startsWith($to, '00')) {
             $to = '+39' . mb_substr($to, 2);
@@ -68,22 +154,69 @@ final class SendTwilioSMSAction implements SmsActionContract
 
         if (!Str::startsWith($to, '+')) {
             $to = '+39' . $to;
+<<<<<<< HEAD
+=======
+=======
+        $smsData->to .= '';
+        if (Str::startsWith($smsData->to, '00')) {
+            $smsData->to = '+' . mb_substr($smsData->to, 2);
+        }
+
+        if (!Str::startsWith($smsData->to, '+')) {
+            $smsData->to = '+39' . $smsData->to;
+>>>>>>> 54f4fa16 (.)
+=======
+        $to = (string) $smsData->to;
+        if (Str::startsWith($to, '00')) {
+            $to = '+39' . mb_substr($to, 2);
+        }
+
+        if (!Str::startsWith($to, '+')) {
+            $to = '+39' . $to;
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
         }
 
         $from = $smsData->from ?? $this->defaultSender;
 
         // Twilio richiede l'autenticazione Basic
         $client = new Client([
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
             'timeout' => $this->twilioData->getTimeout(),
             'auth' => [$this->twilioData->account_sid, $this->twilioData->auth_token]
         ]);
 
         $endpoint = $this->twilioData->getBaseUrl() . '/2010-04-01/Accounts/' . $this->twilioData->account_sid . '/Messages.json';
+<<<<<<< HEAD
+=======
+=======
+            'timeout' => $this->timeout,
+            'auth' => [$this->accountSid, $this->authToken]
+        ]);
+
+        $endpoint = $this->baseUrl . '/Accounts/' . $this->accountSid . '/Messages.json';
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 
         try {
             $response = $client->post($endpoint, [
                 'form_params' => [
+<<<<<<< HEAD
                     'To' => $to,
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                    'To' => $to,
+=======
+                    'To' => $smsData->to,
+>>>>>>> 54f4fa16 (.)
+=======
+                    'To' => $to,
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
                     'From' => $from,
                     'Body' => $smsData->body,
                 ]

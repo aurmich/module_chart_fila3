@@ -13,7 +13,19 @@ use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Actions\ViewAction;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+=======
+use Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager;
+>>>>>>> 54f4fa16 (.)
+=======
+use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+>>>>>>> 2bcfd382 (fix Address)
+>>>>>>> aurmich/dev
 
 
 

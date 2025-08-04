@@ -127,4 +127,35 @@ Questo approccio incrementale permette di ridurre gradualmente gli errori, mante
 
 - [Documentazione PHPStan sui Generics](https://phpstan.org/blog/generics-in-php-using-phpdocs)
 - [Guida Risoluzione Problemi di Proprietà Undefined](https://phpstan.org/blog/solving-phpstan-access-to-undefined-property)
+<<<<<<< HEAD
 - [Solving Template Type Issues](https://phpstan.org/blog/solving-phpstan-error-unable-to-resolve-template-type) 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Solving Template Type Issues](https://phpstan.org/blog/solving-phpstan-error-unable-to-resolve-template-type) 
+=======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+- [Solving Template Type Issues](https://phpstan.org/blog/solving-phpstan-error-unable-to-resolve-template-type) 
+## Collegamenti tra versioni di PHPSTAN-FIXES-SUMMARY-2.md
+* [PHPSTAN-FIXES-SUMMARY-2.md](../../../Xot/docs/phpstan/PHPSTAN-FIXES-SUMMARY-2.md)
+* [PHPSTAN-FIXES-SUMMARY-2.md](../../../Xot/docs/PHPSTAN-FIXES-SUMMARY-2.md)
+
+
+## Collegamenti tra versioni di phpstan-fixes-summary-2.md
+* [phpstan-fixes-summary-2.md](phpstan/phpstan-fixes-summary-2.md)
+
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+- [Solving Template Type Issues](https://phpstan.org/blog/solving-phpstan-error-unable-to-resolve-template-type) 
+>>>>>>> 9df8f556 (fix .md)
+=======
+- [Solving Template Type Issues](https://phpstan.org/blog/solving-phpstan-error-unable-to-resolve-template-type) 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+- [Solving Template Type Issues](https://phpstan.org/blog/solving-phpstan-error-unable-to-resolve-template-type) 
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev

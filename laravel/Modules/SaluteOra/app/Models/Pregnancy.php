@@ -7,6 +7,11 @@ namespace Modules\SaluteOra\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
 
 /**
@@ -66,11 +71,93 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Pregnancy extends BaseModel
 {
     
+<<<<<<< HEAD
+=======
+=======
+use Modules\Tenant\Traits\BelongsToTenant;
+=======
+
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+
+/**
+ * Modello Pregnancy per la gestione dei dati relativi alla gravidanza.
+ *
+ * @property string $id
+ * @property string $tenant_id
+ * @property string $user_id
+ * @property \Illuminate\Support\Carbon|null $expected_delivery_date
+ * @property int|null $weeks_pregnant
+ * @property int|null $trimester
+ * @property bool $high_risk
+ * @property string|null $notes
+ * @property \Illuminate\Support\Carbon|null $last_checkup_date
+ * @property \Illuminate\Support\Carbon|null $next_checkup_date
+ * @property string|null $healthcare_provider
+ * @property string|null $healthcare_facility
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ * @property-read \Modules\SaluteOra\Models\Profile|null $creator
+ * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
+ * @property-read int|null $media_count
+ * @property-read \Modules\SaluteOra\Models\Patient|null $patient
+ * @property-read \Modules\SaluteOra\Models\Profile|null $updater
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy onlyTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy query()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy tenant(?int $tenantId = null)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy whereCreatedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy whereDeletedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy whereDeletedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy whereExpectedDeliveryDate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy whereHealthcareFacility($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy whereHealthcareProvider($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy whereHighRisk($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy whereLastCheckupDate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy whereNextCheckupDate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy whereNotes($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy whereTenantId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy whereTrimester($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy whereUpdatedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy whereUserId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy whereWeeksPregnant($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy withTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy withoutTrashed()
+ * @mixin \Eloquent
+ */
+class Pregnancy extends BaseModel
+{
+<<<<<<< HEAD
+    use HasFactory, SoftDeletes, BelongsToTenant;
+>>>>>>> 54f4fa16 (.)
+=======
+    
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
 
     /**
      * Gli attributi che sono mass assignable.
      *
+<<<<<<< HEAD
      * @var list<string>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+     * @var list<string>
+=======
+     * @var array<int, string>
+>>>>>>> 54f4fa16 (.)
+=======
+     * @var list<string>
+>>>>>>> 8e4d163b (phpstan)
+>>>>>>> aurmich/dev
      */
     protected $fillable = [
         'tenant_id',
@@ -153,6 +240,22 @@ class Pregnancy extends BaseModel
      */
     public function daysUntilDelivery(): int
     {
+<<<<<<< HEAD
         return (int) now()->diffInDays($this->expected_delivery_date, false);
     }
 }
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        return (int) now()->diffInDays($this->expected_delivery_date, false);
+    }
+}
+=======
+        return now()->diffInDays($this->expected_delivery_date, false);
+=======
+        return (int) now()->diffInDays($this->expected_delivery_date, false);
+>>>>>>> 8e4d163b (phpstan)
+    }
+}
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev

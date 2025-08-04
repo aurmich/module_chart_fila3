@@ -4,12 +4,30 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Models;
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+use DateTime;
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
+=======
+
+>>>>>>> 13ea6524 (phpstan)
+>>>>>>> aurmich/dev
 use Carbon\Carbon;
 use Parental\HasParent;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Log;
 use Spatie\OpeningHours\OpeningHours;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 use Modules\SaluteOra\Models\BasePivot;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Safe\DateTime;
@@ -17,13 +35,53 @@ use Safe\DateTime;
 /**
  * Modello pivot per la relazione many-to-many tra Doctor e Studio.
  * 
+<<<<<<< HEAD
+=======
+=======
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+=======
+use Parental\HasParent;
+>>>>>>> 15b0d65c (refactor(DoctorStudio.php): simplify DoctorStudio model by extending StudioUser and removing unnecessary properties and methods to enhance maintainability and clarity)
+=======
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
+use Modules\SaluteOra\Models\BasePivot;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Safe\DateTime;
+
+/**
+ * Modello pivot per la relazione many-to-many tra Doctor e Studio.
+<<<<<<< HEAD
+ *
+>>>>>>> 2bcfd382 (fix Address)
+=======
+ * 
+>>>>>>> f3e4ec66 (.)
+>>>>>>> aurmich/dev
  * IMPORTANTE: Questa relazione attraversa database differenti:
  * - Doctor risiede nel database 'user'
  * - Studio risiede nel database 'salute_ora'
  * - DoctorStudio deve utilizzare la stessa connessione di Studio
+<<<<<<< HEAD
  * 
  * Estende BasePivot per garantire compatibilità con belongsToManyX e policy Xot.
  *
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+ * 
+ * Estende BasePivot per garantire compatibilità con belongsToManyX e policy Xot.
+ *
+=======
+ *
+ * Estende BasePivot per garantire compatibilità con belongsToManyX e policy Xot.
+ * 
+>>>>>>> 2bcfd382 (fix Address)
+=======
+ * 
+ * Estende BasePivot per garantire compatibilità con belongsToManyX e policy Xot.
+ *
+>>>>>>> f3e4ec66 (.)
+>>>>>>> aurmich/dev
  * @property int $id
  * @property string $doctor_id
  * @property string $studio_id
@@ -37,6 +95,13 @@ use Safe\DateTime;
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * @property-read \Modules\SaluteOra\Models\Doctor $doctor
  * @property-read \Modules\SaluteOra\Models\Studio $studio
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3e4ec66 (.)
+>>>>>>> aurmich/dev
  * @property string|null $type
  * @property string $user_id
  * @property-read \Modules\SaluteOra\Models\Profile|null $creator
@@ -56,7 +121,14 @@ use Safe\DateTime;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DoctorStudio whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DoctorStudio whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DoctorStudio whereUserId($value)
+<<<<<<< HEAD
  * @property-read \Modules\SaluteOra\Models\User|null $user
+=======
+<<<<<<< HEAD
+ * @property-read \Modules\SaluteOra\Models\User|null $user
+=======
+>>>>>>> f3e4ec66 (.)
+>>>>>>> aurmich/dev
  * @mixin \Eloquent
  */
 class DoctorStudio extends StudioUser
@@ -70,6 +142,41 @@ class DoctorStudio extends StudioUser
     protected $fillable = [
         //'doctor_id',
         'id',
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+ */
+class DoctorStudio extends StudioUser
+{
+<<<<<<< HEAD
+    /**
+     * In questo caso specifico, dobbiamo dichiarare esplicitamente la tabella e la connection
+     * perché stiamo lavorando con una relazione cross-database.
+     * 
+     * @var string
+     */
+    protected $table = 'doctor_studio';
+    
+    /**
+     * La connection deve essere la stessa di Studio, non quella di Doctor.
+     * Questo è cruciale per relazioni cross-database.
+     *
+     * @var string
+     */
+    protected $connection = 'salute_ora';
+
+    /**
+     * Gli attributi che sono mass assignable.
+     *
+     * @var array<string>
+     */
+    protected $fillable = [
+        //'doctor_id',
+>>>>>>> 2bcfd382 (fix Address)
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+>>>>>>> aurmich/dev
         'user_id',
         'studio_id',
         'schedule',
@@ -89,13 +196,35 @@ class DoctorStudio extends StudioUser
         ]);
     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+>>>>>>> aurmich/dev
 
     public function getOpeningHours(): OpeningHours
     {
         $schedule = $this->schedule;
+<<<<<<< HEAD
         if(!$schedule){
             return OpeningHours::create([]);
         }
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        if(!$schedule){
+            return OpeningHours::create([]);
+        }
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+        if(!$schedule){
+            return OpeningHours::create([]);
+        }
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
+>>>>>>> aurmich/dev
         $days=[];
         foreach($schedule as $day=>$hours){
             $days[$day]=[];
@@ -106,6 +235,13 @@ class DoctorStudio extends StudioUser
                 $days[$day][]=$hours['afternoon_from'].'-'.$hours['afternoon_to'];
             }
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
+>>>>>>> aurmich/dev
 
 
         $days['exceptions'] = [
@@ -114,6 +250,11 @@ class DoctorStudio extends StudioUser
                 '01-01'      => [],                // Recurring on each 1st of January
                 '12-25'      => ['09:00-12:00'],   // Recurring on each 25th of December
         ];
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
         /** @phpstan-ignore argument.type */
         return OpeningHours::create($days);
     }
@@ -231,5 +372,175 @@ class DoctorStudio extends StudioUser
         }
         return $dates;
     }
+<<<<<<< HEAD
 }
 
+=======
+=======
+        
+        return OpeningHours::create($days);
+    }
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+}
+
+=======
+    /**
+     * Ottiene il dottore associato a questa relazione.
+     * Specifica esplicitamente la chiave esterna e la chiave primaria
+     * per gestire la relazione cross-database (DB user <-> DB salute_ora).
+     *
+     * @return BelongsTo<Doctor, DoctorStudio>
+     */
+    public function doctor(): BelongsTo
+    {
+        // Specificare esplicitamente la chiave esterna e la connection corretta
+        // perché questa relazione attraversa database differenti
+        return $this->belongsTo(
+            Doctor::class,
+            'doctor_id',
+            'id',
+            'doctor'
+        )->withoutGlobalScopes();
+    }
+
+    /**
+     * Ottiene lo studio associato a questa relazione.
+     * Questa relazione rimane nello stesso database.
+     *
+     * @return BelongsTo<Studio, DoctorStudio>
+     */
+    public function studio(): BelongsTo
+    {
+        // La relazione con Studio è nello stesso database, quindi è più semplice
+        return $this->belongsTo(Studio::class, 'studio_id', 'id', 'studio');
+    }
+=======
+    use HasParent;
+>>>>>>> 15b0d65c (refactor(DoctorStudio.php): simplify DoctorStudio model by extending StudioUser and removing unnecessary properties and methods to enhance maintainability and clarity)
+}
+>>>>>>> 2bcfd382 (fix Address)
+=======
+        
+=======
+        /** @phpstan-ignore-next-line */
+>>>>>>> 13ea6524 (phpstan)
+        return OpeningHours::create($days);
+    }
+
+
+    /**
+     * Get available time slots for a specific date.
+     * 
+     * @param string $date The date in Y-m-d format
+     */
+    public function getAvailableTimeSlotsByDate(?string $date): Collection
+    {
+        if (!$date) {
+            return collect([]);
+        }
+
+        $dateTime = new DateTime($date);
+        
+        // Ottieni gli orari di apertura tramite getOpeningHours()
+        $openingHours = $this->getOpeningHours();
+        
+        // Verifica se è aperto nel giorno della settimana
+        if (!$openingHours->isOpenOn($date)) {
+            return collect([]);
+        }
+        
+        // Ottieni gli orari di apertura per il giorno della settimana
+        $openingHoursForDay = $openingHours->forDate($dateTime);
+        $slots = collect();
+        foreach ($openingHoursForDay as $timeRange) {
+            /** @phpstan-ignore-next-line */
+            $start = Carbon::createFromFormat('H:i', $timeRange->start()->format());
+            /** @phpstan-ignore-next-line */
+            $end = Carbon::createFromFormat('H:i', $timeRange->end()->format());
+            if($start==null || $end==null){
+                continue;
+            }
+            // Genera slot di 60 minuti dall'inizio alla fine
+            /** @phpstan-ignore-next-line */
+            $current = $start->copy();
+            while ($current->lt($end)) {
+                $time = $current->format('H:i');
+                $slotData = [
+                    'id' => $time,
+                    'label' => $time,
+                    'value' => $time
+                ];
+                $slots->push(collect($slotData));
+                $current->addHour();
+            }
+        }
+        return $slots;
+    }
+    
+    /**
+     * Genera slot di tempo per un range specifico
+     *
+     * @param string $startTime Orario di inizio (es: "08:00")
+     * @param string $endTime Orario di fine (es: "10:00") 
+     * @param int $slotDurationMinutes Durata slot in minuti
+     * @return array Array di oggetti slot
+     */
+    /**
+     * Generate time slots for a specific time range.
+     *
+     * @param string $startTime Start time in H:i format
+     * @param string $endTime End time in H:i format
+     * @param int $slotDurationMinutes Duration of each slot in minutes
+     * @return array<array{id: string, label: string, value: string}>
+     */
+    private function generateSlotsForRange(string $startTime, string $endTime, int $slotDurationMinutes): array
+    {
+        $slots = [];
+        
+        $start = Carbon::createFromFormat('H:i', $startTime);
+        $end = Carbon::createFromFormat('H:i', $endTime);
+        
+        if ($start === null || $end === null) {
+            return [];
+        }
+        
+        $currentTime = $start->copy();
+        
+        // Generate slots until end time (exclusive)
+        while ($currentTime->lt($end)) {
+            $slotTime = $currentTime->format('H:i');
+            
+            // Create slot array for RadioCollection
+            $slots[] = [
+                'id' => $slotTime,
+                'label' => $slotTime,
+                'value' => $slotTime
+            ];
+                
+                // Avanza di slot duration
+                $currentTime->addMinutes($slotDurationMinutes);
+            }
+            
+        
+        
+        return $slots;
+    }
+
+
+    public function getEnabledDatesByMonth(string $month): array
+    {
+        $dates=[];
+        $openingHours=$this->getOpeningHours();
+        for($i=1;$i<=31;$i++){
+            $date = Carbon::parse($month.'-'.$i);
+            $date1=$date->format('Y-m-d');
+            if($openingHours->isOpenOn($date1)){
+                $dates[] = $date1;
+            }
+        }
+        return $dates;
+    }
+}
+
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
+>>>>>>> aurmich/dev

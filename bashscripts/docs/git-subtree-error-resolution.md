@@ -21,8 +21,21 @@ Il sistema di gestione dei subtree è composto da tre componenti principali:
 
 ### 2. Push Script (`git_push_subtree.sh`)
 
+<<<<<<< HEAD
 ```bash
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+```bash
+
+=======
+
+=======
+>>>>>>> 15cb84fb (fix collisions)
+```bash
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # 1. Inizializzazione
 git init
 git checkout -b "$BRANCH"
@@ -34,13 +47,32 @@ git fetch --all
 # 3. Commit e push
 git add -A
 git commit -am "🔧 Aggiornamento subtree"
+<<<<<<< HEAD
 git merge origin/"$BRANCH" --allow-unrelated-histories"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+git merge origin/"$BRANCH" --allow-unrelated-histories"
+=======
+git merge origin/"$BRANCH" --allow-unrelated-histories
+>>>>>>> 54f4fa16 (.)
+=======
+git merge origin/"$BRANCH" --allow-unrelated-histories"
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 git push -u origin "$BRANCH"
 ```
 
 ### 3. Pull Script (`git_pull_subtree.sh`)
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # 1. Pull standard
 git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH" --squash
 
@@ -50,8 +82,23 @@ git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH"
 # 3. Fallback 2
 git fetch "$REMOTE_REPO" "$BRANCH" --depth=1
 git merge -s subtree FETCH_HEAD --allow-unrelated-histories
+<<<<<<< HEAD
 ```
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+```
+
+=======
+
+aurmich/dev
+>>>>>>> 54f4fa16 (.)
+=======
+```
+
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 Esegue una sequenza complessa di operazioni:
 ```bash
 1. git add -A && git commit -am "."
@@ -65,6 +112,16 @@ Esegue una sequenza complessa di operazioni:
 9. git rebase --rebase-merges --strategy subtree $REMOTE_BRANCH
 ```
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+### 3. Pull Script (`git_pull_subtree.sh`)
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 Esegue una sequenza con fallback:
 ```bash
 1. git subtree pull -P $LOCAL_PATH $REMOTE_REPO $REMOTE_BRANCH --squash
@@ -73,6 +130,18 @@ Esegue una sequenza con fallback:
    - git fetch $REMOTE_REPO $REMOTE_BRANCH --depth=1
    - git merge -s subtree FETCH_HEAD --allow-unrelated-histories
 4. git rebase --rebase-merges --strategy subtree $REMOTE_BRANCH
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+ 43df3e0 (.)
+aurmich/dev
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 ```
 
 ## 🚨 Analisi Errori Comuni
@@ -86,7 +155,14 @@ fatal: you must provide the --prefix option
 
 **Soluzione**:
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Verifica variabili
 if [ -z "$LOCAL_PATH" ] || [ -z "$REMOTE_REPO" ]; then
     echo "❌ Error: Missing required variables"
@@ -99,14 +175,41 @@ fi
 ! [rejected] dev -> dev (non-fast-forward)
 ```
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 **Causa**: Divergenze tra repository locale e remoto
 
 **Soluzione**:
 ```bash
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
 # Aggiorna repository locale
 git fetch origin "$BRANCH"
 git merge origin/"$BRANCH" --allow-unrelated-histories"
+<<<<<<< HEAD
+=======
+=======
+# Aggiorna repository locale
+git fetch origin "$BRANCH"
+<<<<<<< HEAD
+git merge origin/"$BRANCH" --allow-unrelated-histories
+>>>>>>> 54f4fa16 (.)
+=======
+git merge origin/"$BRANCH" --allow-unrelated-histories"
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 
 # Riprova push
 if ! git push -u origin "$BRANCH"; then
@@ -174,3 +277,62 @@ fi
 <div align="center">
   <sub>Built with ❤️ by the development team</sub>
 </div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+aurmich/dev
+**Causa**: Questo errore si verifica nella sequenza di push quando ci sono divergenze tra il repository locale e remoto.
+
+**Soluzione**:
+1. Prima del push, assicurarsi che il repository locale sia aggiornato:
+```bash
+git fetch origin $REMOTE_BRANCH
+git merge origin/$REMOTE_BRANCH --allow-unrelated-histories
+```
+
+2. Modificare la sequenza di push per gestire meglio i conflitti:
+```bash
+if ! git push -u origin "$REMOTE_BRANCH"; then
+    git pull --rebase origin "$REMOTE_BRANCH"
+    git push -u origin "$REMOTE_BRANCH"
+fi
+```
+
+## Best Practices per l'Uso
+
+1. **Prima dell'Esecuzione**:
+   - Committare o stashare modifiche pendenti
+   - Assicurarsi di essere sul branch corretto
+   - Verificare lo stato del repository remoto
+
+2. **Durante l'Esecuzione**:
+   - Monitorare l'output per errori specifici
+   - Non interrompere gli script durante l'esecuzione
+
+3. **Dopo l'Esecuzione**:
+   - Verificare lo stato del subtree
+   - Controllare la storia dei commit
+   - Verificare la sincronizzazione con il remote
+
+## Note sulla Manutenzione
+
+1. Gli script utilizzano una strategia aggressiva con `--force` push in alcuni casi
+2. Il rebase viene utilizzato per mantenere una storia pulita
+3. Sono implementati meccanismi di fallback per il pull
+4. La gestione degli errori potrebbe essere migliorata con più logging
+
+## Suggerimenti per il Debugging
+
+1. Aggiungere `set -x` all'inizio degli script per debug verbose
+2. Implementare logging più dettagliato
+3. Verificare i permessi degli script
+
+ 43df3e0 (.)
+aurmich/dev
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev

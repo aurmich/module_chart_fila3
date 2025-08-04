@@ -10,7 +10,17 @@ Questo è un prompt corretto perché è una singola stringa continua senza forma
 
 ## Non Fare
 ```text
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Questo è sbagliato
 - Perché usa formattazione markdown
 - Perché usa a capo

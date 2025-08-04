@@ -1,19 +1,165 @@
+<<<<<<< HEAD
 <div>
     <div class="relative grid grid-cols-1 gap-x-14 md:grid-cols-2">
       <button type="button" class="absolute -left-1.5 -top-1 flex items-center justify-center p-1.5 text-gray-400 hover:text-gray-500">
         <span class="sr-only">@lang('pub_theme::calendar.previous_month')</span>
+=======
+<<<<<<< HEAD
+<div>
+    <div class="relative grid grid-cols-1 gap-x-14 md:grid-cols-2">
+      <button type="button" class="absolute -left-1.5 -top-1 flex items-center justify-center p-1.5 text-gray-400 hover:text-gray-500">
+<<<<<<< HEAD
+        <span class="sr-only">@lang('pub_theme::calendar.previous_month')</span>
+=======
+        <span class="sr-only">Previous month</span>
+>>>>>>> aurmich/dev
+=======
+<<<<<<< HEAD
+@php
+    use Carbon\Carbon;
+
+    // Se $date non è valorizzato, usa oggi
+    $date = $date ?? Carbon::today();
+    $date = $date instanceof \DateTimeInterface ? Carbon::instance($date) : Carbon::parse($date);
+    $startOfMonth = $date->copy()->startOfMonth();
+    $endOfMonth = $date->copy()->endOfMonth();
+    $selectedDay = $date->day;
+    $daysInMonth = $date->daysInMonth;
+    $startDayOfWeek = $startOfMonth->dayOfWeekIso; // 1 (Mon) - 7 (Sun)
+    $today = Carbon::today();
+    $isCurrentMonth = $date->isSameMonth($today);
+
+    // Nomi localizzati dei giorni della settimana (ISO: 1=Lunedì, 7=Domenica)
+    $weekDays = [];
+    for ($i = 1; $i <= 7; $i++) {
+        $weekDays[] = Carbon::now()->startOfWeek(Carbon::MONDAY)->addDays($i - 1)->locale(app()->getLocale())->isoFormat('dd');
+    }
+
+    // Costruisci la griglia: giorni vuoti prima, poi i giorni del mese
+    $days = [];
+    for ($i = 1; $i < $startDayOfWeek; $i++) {
+        $days[] = null;
+    }
+    for ($d = 1; $d <= $daysInMonth; $d++) {
+        $days[] = $d;
+    }
+    // Completa la griglia per avere multipli di 7
+    while (count($days) % 7 !== 0) {
+        $days[] = null;
+    }
+
+    $monthName = $date->locale(app()->getLocale())->isoFormat('MMMM YYYY');
+@endphp
+
+<div>
+    <div class="relative grid grid-cols-1 gap-x-14 md:grid-cols-2">
+        <!-- Bottoni navigazione mese (da implementare se serve) -->
+        <button type="button" class="absolute -left-1.5 -top-1 flex items-center justify-center p-1.5 text-gray-400 hover:text-gray-500" disabled>
+            <span class="sr-only">@lang('Precedente')</span>
+            <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
+            </svg>
+        </button>
+        <button type="button" class="absolute -right-1.5 -top-1 flex items-center justify-center p-1.5 text-gray-400 hover:text-gray-500" disabled>
+            <span class="sr-only">@lang('Successivo')</span>
+            <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+            </svg>
+        </button>
+        <section class="text-center w-full">
+            <h2 class="text-sm font-semibold text-gray-900">{{ ucfirst($monthName) }}</h2>
+            <div class="mt-6 grid grid-cols-7 text-xs/6 text-gray-500">
+                @foreach ($weekDays as $day)
+                    <div>{{ $day }}</div>
+                @endforeach
+            </div>
+            <div class="isolate mt-2 grid grid-cols-7 gap-px rounded-lg bg-gray-200 text-sm shadow ring-1 ring-gray-200">
+                @foreach ($days as $idx => $d)
+                    @php
+                        // Calcola classi per i bordi arrotondati
+                        $row = intdiv($idx, 7);
+                        $col = $idx % 7;
+                        $isFirstRow = $row === 0;
+                        $isLastRow = $row === (int) (count($days) / 7) - 1;
+                        $isFirstCol = $col === 0;
+                        $isLastCol = $col === 6;
+                        $rounded = '';
+                        if ($isFirstRow && $isFirstCol) $rounded .= ' rounded-tl-lg';
+                        if ($isFirstRow && $isLastCol) $rounded .= ' rounded-tr-lg';
+                        if ($isLastRow && $isFirstCol) $rounded .= ' rounded-bl-lg';
+                        if ($isLastRow && $isLastCol) $rounded .= ' rounded-br-lg';
+
+                        // Giorno del mese corrente
+                        $isCurrentMonthDay = !is_null($d);
+                        // Oggi
+                        $isToday = $isCurrentMonthDay && $date->copy()->day($d)->isToday();
+                        // Giorno selezionato
+                        $isSelected = $isCurrentMonthDay && $d == $selectedDay;
+                    @endphp
+                    <button type="button"
+                        class="relative py-1.5 hover:bg-gray-100 focus:z-10{{
+                            $isCurrentMonthDay ? ' bg-white text-gray-900' : ' bg-gray-50 text-gray-400'
+                        }}{{ $rounded }}"
+                        @if(!$isCurrentMonthDay) disabled @endif
+                    >
+                        <time class="mx-auto flex size-7 items-center justify-center rounded-full{{
+                            $isToday ? ' bg-indigo-600 font-semibold text-white' : ($isSelected ? ' border-2 border-indigo-500 font-bold' : '')
+                        }}"
+                            @if($isCurrentMonthDay)
+                                datetime="{{ $date->copy()->day($d)->toDateString() }}"
+                            @endif
+                        >
+                            {{ $isCurrentMonthDay ? $d : '' }}
+                        </time>
+                    </button>
+                @endforeach
+            </div>
+        </section>
+    </div>
+</div>
+=======
+<div>
+    <div class="relative grid grid-cols-1 gap-x-14 md:grid-cols-2">
+      <button type="button" class="absolute -left-1.5 -top-1 flex items-center justify-center p-1.5 text-gray-400 hover:text-gray-500">
+        <span class="sr-only">Previous month</span>
+>>>>>>> 285a522b (- change calendar per paziente;)
+>>>>>>> aurmich/dev
         <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
           <path fill-rule="evenodd" d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
         </svg>
       </button>
       <button type="button" class="absolute -right-1.5 -top-1 flex items-center justify-center p-1.5 text-gray-400 hover:text-gray-500">
+<<<<<<< HEAD
         <span class="sr-only">@lang('pub_theme::calendar.next_month')</span>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <span class="sr-only">@lang('pub_theme::calendar.next_month')</span>
+=======
+        <span class="sr-only">Next month</span>
+>>>>>>> aurmich/dev
+=======
+        <span class="sr-only">Next month</span>
+>>>>>>> 285a522b (- change calendar per paziente;)
+>>>>>>> aurmich/dev
         <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
           <path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
         </svg>
       </button>
       <section class="text-center">
+<<<<<<< HEAD
         <h2 class="text-sm font-semibold text-gray-900">@lang('pub_theme::calendar.month_names.January')</h2>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <h2 class="text-sm font-semibold text-gray-900">@lang('pub_theme::calendar.month_names.January')</h2>
+=======
+        <h2 class="text-sm font-semibold text-gray-900">January</h2>
+>>>>>>> aurmich/dev
+=======
+        <h2 class="text-sm font-semibold text-gray-900">January</h2>
+>>>>>>> 285a522b (- change calendar per paziente;)
+>>>>>>> aurmich/dev
         <div class="mt-6 grid grid-cols-7 text-xs/6 text-gray-500">
           <div>M</div>
           <div>T</div>
@@ -167,7 +313,19 @@
         </div>
       </section>
       <section class="hidden text-center md:block">
+<<<<<<< HEAD
         <h2 class="text-sm font-semibold text-gray-900">@lang('pub_theme::calendar.month_names.February')</h2>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <h2 class="text-sm font-semibold text-gray-900">@lang('pub_theme::calendar.month_names.February')</h2>
+=======
+        <h2 class="text-sm font-semibold text-gray-900">February</h2>
+>>>>>>> aurmich/dev
+=======
+        <h2 class="text-sm font-semibold text-gray-900">February</h2>
+>>>>>>> 285a522b (- change calendar per paziente;)
+>>>>>>> aurmich/dev
         <div class="mt-6 grid grid-cols-7 text-xs/6 text-gray-500">
           <div>M</div>
           <div>T</div>
@@ -308,6 +466,11 @@
       </section>
     </div>
     <section class="mt-12">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
       <h2 class="text-base font-semibold text-gray-900">@lang('pub_theme::calendar.upcoming_events')</h2>
       <ol class="mt-2 divide-y divide-gray-200 text-sm/6 text-gray-500">
         <li class="py-4 sm:flex">
@@ -317,19 +480,69 @@
         <li class="py-4 sm:flex">
           <time datetime="2022-01-19" class="w-28 flex-none">Thu, Jan 13</time>
           <p class="mt-2 flex-auto font-semibold text-gray-900">@lang('pub_theme::calendar.view_house')</p>
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 285a522b (- change calendar per paziente;)
+      <h2 class="text-base font-semibold text-gray-900">Upcoming events</h2>
+      <ol class="mt-2 divide-y divide-gray-200 text-sm/6 text-gray-500">
+        <li class="py-4 sm:flex">
+          <time datetime="2022-01-17" class="w-28 flex-none">Wed, Jan 12</time>
+          <p class="mt-2 flex-auto sm:mt-0">Nothing on today’s schedule</p>
+        </li>
+        <li class="py-4 sm:flex">
+          <time datetime="2022-01-19" class="w-28 flex-none">Thu, Jan 13</time>
+          <p class="mt-2 flex-auto font-semibold text-gray-900 sm:mt-0">View house with real estate agent</p>
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 285a522b (- change calendar per paziente;)
+>>>>>>> aurmich/dev
           <p class="flex-none sm:ml-6"><time datetime="2022-01-13T14:30">2:30 PM</time> - <time datetime="2022-01-13T16:30">4:30 PM</time></p>
         </li>
         <li class="py-4 sm:flex">
           <time datetime="2022-01-20" class="w-28 flex-none">Fri, Jan 14</time>
+<<<<<<< HEAD
           <p class="mt-2 flex-auto font-semibold text-gray-900">@lang('pub_theme::calendar.bank_meeting')</p>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+          <p class="mt-2 flex-auto font-semibold text-gray-900">@lang('pub_theme::calendar.bank_meeting')</p>
+=======
+          <p class="mt-2 flex-auto font-semibold text-gray-900 sm:mt-0">Meeting with bank manager</p>
+>>>>>>> aurmich/dev
+=======
+          <p class="mt-2 flex-auto font-semibold text-gray-900 sm:mt-0">Meeting with bank manager</p>
+>>>>>>> 285a522b (- change calendar per paziente;)
+>>>>>>> aurmich/dev
           <p class="flex-none sm:ml-6">All day</p>
         </li>
         <li class="py-4 sm:flex">
           <time datetime="2022-01-18" class="w-28 flex-none">Mon, Jan 17</time>
+<<<<<<< HEAD
           <p class="mt-2 flex-auto font-semibold text-gray-900 sm:mt-0">@lang('pub_theme::calendar.sign_paperwork')</p>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+          <p class="mt-2 flex-auto font-semibold text-gray-900 sm:mt-0">@lang('pub_theme::calendar.sign_paperwork')</p>
+=======
+          <p class="mt-2 flex-auto font-semibold text-gray-900 sm:mt-0">Sign paperwork at lawyers</p>
+>>>>>>> aurmich/dev
+=======
+          <p class="mt-2 flex-auto font-semibold text-gray-900 sm:mt-0">Sign paperwork at lawyers</p>
+>>>>>>> 285a522b (- change calendar per paziente;)
+>>>>>>> aurmich/dev
           <p class="flex-none sm:ml-6"><time datetime="2022-01-17T10:00">10:00 AM</time> - <time datetime="2022-01-17T10:15">10:15 AM</time></p>
         </li>
       </ol>
     </section>
   </div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 86036e79 (✨ (CreateAdmin, EditAdmin, ListAdmins, CreateDoctor, EditDoctor, ListDoctors, CreatePatient, EditPatient, ListPatients): refactor admin, doctor, and patient resources to extend user resource classes for better code reuse and maintainability)
+>>>>>>> 285a522b (- change calendar per paziente;)
+>>>>>>> aurmich/dev
   

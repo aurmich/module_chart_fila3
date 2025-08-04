@@ -98,6 +98,10 @@ Tentare di "istanziare" un enum è come cercare di creare una nuova stagione olt
 2. **API**: Le risposte API beneficiano della consistenza degli enum
 3. **Validazione**: I validatori basati su enum richiedono casting corretto
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 ## Esempio Pratico: Report Model
 
 Il modello `Report` utilizza diversi enum per gestire valori predefiniti e array di valori enum multipli:
@@ -134,6 +138,11 @@ public function casts(): array
 
 3. **Documentazione nei Commenti**: È fondamentale specificare nei commenti quale tipo di enum è contenuto negli array per facilitare la comprensione del codice
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 2bcfd382 (fix Address)
+>>>>>>> aurmich/dev
 ## Link alla Documentazione Ufficiale
 
 - [Laravel Eloquent: Mutators & Casting](https://laravel.com/docs/eloquent-mutators#enum-casting)

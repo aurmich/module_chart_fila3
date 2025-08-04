@@ -4,6 +4,23 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TeamResource\Pages;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use Filament\Actions\EditAction;
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+use Filament\Actions\EditAction;
+>>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 use Filament\Infolists\Components\TextEntry;
 use Filament\Infolists\Components\Section;
 use Modules\User\Filament\Resources\TeamResource;
@@ -32,5 +49,32 @@ class ViewTeam extends \Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord
         ];
     }
 
+<<<<<<< HEAD
    
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+   
+=======
+=======
+>>>>>>> 15cb84fb (fix collisions)
+    protected function getHeaderActions(): array
+    {
+        return [
+            EditAction::make(),
+        ];
+    }
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+   
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> 15cb84fb (fix collisions)
+=======
+   
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 }

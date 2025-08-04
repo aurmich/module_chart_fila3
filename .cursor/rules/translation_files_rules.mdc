@@ -1,10 +1,34 @@
 ---
+<<<<<<< HEAD
 description: Rules for implementing and structuring translation files in Laraxot <nome progetto>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+description: Rules for implementing and structuring translation files in Laraxot <nome progetto>
+=======
+description: Rules for implementing and structuring translation files in Laraxot PTVX
+>>>>>>> d23ba493 (add calendar)
+=======
+description: Rules for implementing and structuring translation files in Laraxot <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 globs: ["**/lang/**/*.php", "**/resources/lang/**/*.php"]
 alwaysApply: true
 ---
 
+<<<<<<< HEAD
 # Translation Files Implementation Rules in Laraxot <nome progetto>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Translation Files Implementation Rules in Laraxot <nome progetto>
+=======
+# Translation Files Implementation Rules in Laraxot PTVX
+>>>>>>> d23ba493 (add calendar)
+=======
+# Translation Files Implementation Rules in Laraxot <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 
 ## Core Principles
 
@@ -32,13 +56,37 @@ return [
         'icon' => 'icon-name', // Do not translate icon names
         'sort' => 50,
     ],
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     'page' => [
         'title' => 'Title in target language',
         'heading' => 'Heading in target language',
         'description' => 'Description in target language',
     ],
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     'fields' => [
         'field_name' => [
             'label' => 'Field label in target language',
@@ -47,7 +95,19 @@ return [
         ],
         // Other fields...
     ],
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     'actions' => [
         'action_name' => [
             'label' => 'Action label in target language',
@@ -57,12 +117,36 @@ return [
         ],
         // Other actions...
     ],
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     'validation' => [
         'error_type' => 'Validation error message in target language',
         // Other validation messages...
     ],
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     'messages' => [
         'message_key' => 'Message in target language',
         // Other messages...
@@ -131,4 +215,16 @@ All action translations MUST include:
 - Create bidirectional links between module docs and root docs
 - Ensure all user-facing text comes from translation files, never hardcoded
 
+<<<<<<< HEAD
 *Last updated: June 2025*
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+*Last updated: June 2025*
+=======
+*Last updated: June 2025*
+>>>>>>> d23ba493 (add calendar)
+=======
+*Last updated: June 2025*
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev

@@ -1,5 +1,15 @@
 <?php
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
 /*
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
@@ -21,4 +31,43 @@ Route::middleware(['auth'])->group(function () {
 });
 
 require __DIR__.'/auth.php';
+<<<<<<< HEAD
 */
+=======
+<<<<<<< HEAD
+*/
+=======
+=======
+>>>>>>> 54f4fa16 (.)
+declare(strict_types=1);
+
+/**
+ * il progetto Web Routes
+ * 
+ * IMPORTANTE: In il progetto, non definire rotte frontend qui.
+ * Utilizzare Laravel Folio + Volt per il routing frontend creando file Blade in:
+ * - Themes/{ThemeName}/resources/views/pages/
+ * 
+ * Per form complessi, utilizzare sempre:
+ * @livewire(\Modules\{Module}\Filament\Widgets\{Widget}::class)
+ * 
+ * @see /var/www/html/base_il progetto/laravel/Modules/Xot/docs/ROUTING.md
+ * @see /var/www/html/base_il progetto/laravel/Modules/Cms/docs/frontoffice/routing.md
+ */
+
+// Questo file è intenzionalmente vuoto.
+// Le rotte frontend sono gestite tramite Laravel Folio + Volt.
+<<<<<<< HEAD
+// Le rotte backend sono definite nei rispettivi moduli.
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+// Le rotte backend sono definite nei rispettivi moduli.
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+*/
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev

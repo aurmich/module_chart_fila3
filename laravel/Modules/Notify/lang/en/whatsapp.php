@@ -1,5 +1,13 @@
 <?php
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 return [
     'resource' => [
         'name' => 'WhatsApp',
@@ -14,7 +22,15 @@ return [
         ],
         'label' => 'Send WhatsApp',
         'icon' => 'heroicon-o-chat-bubble-left-right',
+<<<<<<< HEAD
         'sort' => '20',
+=======
+<<<<<<< HEAD
+        'sort' => '20',
+=======
+        'sort' => 20,
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
     ],
     'fields' => [
         'to' => [

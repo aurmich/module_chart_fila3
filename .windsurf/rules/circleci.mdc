@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: This rule provides comprehensive best practices for configuring and optimizing CircleCI workflows, covering code organization, security, performance, and testing to ensure efficient and reliable CI/CD pipelines.
 globs: .circleci/config.yml
 ---

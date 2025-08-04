@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: Enforces best practices, coding standards, and performance considerations for Electron development. Covers code structure, security, testing, and common pitfalls to ensure robust and maintainable applications.
 globs: *.js,*.jsx,*.ts,*.tsx,*.html,*.css,*.scss,*.mjs,*.cjs
 ---

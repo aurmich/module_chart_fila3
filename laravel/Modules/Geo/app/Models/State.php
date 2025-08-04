@@ -7,6 +7,11 @@ namespace Modules\Geo\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
+<<<<<<< HEAD
+=======
+ * 
+ *
+>>>>>>> aurmich/dev
  * @method static \Illuminate\Database\Eloquent\Builder|State newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|State newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|State query()

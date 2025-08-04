@@ -148,6 +148,18 @@ return [
     'attributes' => [
         'data.password' => 'zu',
     ],
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+>>>>>>> aurmich/dev
 
     'email_already_taken' => 'Questa email è già utilizzata da un altro utente.',
     'password_confirmation' => 'La conferma della password non corrisponde.',
@@ -158,4 +170,18 @@ return [
     'email_format' => 'L\'email deve avere un formato valido.',
     'phone_format' => 'Il numero di telefono deve avere un formato valido.',
     'birth_date_before' => 'La data di nascita deve essere precedente ad oggi.',
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+>>>>>>> aurmich/dev
 ];

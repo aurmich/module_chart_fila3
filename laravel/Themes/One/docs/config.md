@@ -89,7 +89,17 @@ return [
 
 ### .env
 ```env
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Tema
 THEME_NAME=One
 THEME_VERSION=1.0.0
@@ -112,7 +122,17 @@ ANALYTICS_ID=UA-XXXXXXXXX-X
 
 ### .env.example
 ```env
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Tema
 THEME_NAME=One
 THEME_VERSION=1.0.0

@@ -29,7 +29,14 @@ Assiste nello sviluppo con:
 ## Utilizzo
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Verifica sistema
 ./check_system.sh
 

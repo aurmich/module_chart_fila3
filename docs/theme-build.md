@@ -11,10 +11,21 @@ Per aggiornare il tema **One**, eseguire i seguenti passi all'interno della cart
 
 ```bash
 cd Themes/One
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
 # 1. Compilare asset (Tailwind, JavaScript, CSS):
 npm run build
 
+<<<<<<< HEAD
+=======
+=======
+# 1. Compilare asset (Tailwind, JavaScript, CSS):
+npm run build
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # 2. Pubblicare asset nella cartella pubblica:
 npm run copy
 ```

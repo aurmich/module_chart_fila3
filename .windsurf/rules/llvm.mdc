@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: This rule enforces LLVM's coding standards and promotes best practices for writing efficient, maintainable, and robust code within the LLVM ecosystem. It covers style, language usage, optimization strategies, and more.
 globs: *.h,*.hpp,*.c,*.cc,*.cpp,*.ll,*.mlir
 ---

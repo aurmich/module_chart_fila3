@@ -80,7 +80,17 @@ L'utilizzo di strutture di directory errate può causare:
 Per verificare la corretta struttura delle directory nei moduli:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Verifica case sensitivity errata
 find /var/www/html/base_<nome progetto>/laravel/Modules -type d -name "Resources" -o -name "Config" -o -name "Views" -o -name "Lang" -o -name "Images"
 
@@ -93,7 +103,17 @@ find /var/www/html/base_<nome progetto>/laravel/Modules -type d -name "Filament"
 ### Per problemi di case sensitivity:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Rinomina la directory (su sistemi Linux/Unix)
 mv /var/www/html/base_<nome progetto>/laravel/Modules/User/Resources /var/www/html/base_<nome progetto>/laravel/Modules/User/resources_temp
 mv /var/www/html/base_<nome progetto>/laravel/Modules/User/resources_temp /var/www/html/base_<nome progetto>/laravel/Modules/User/resources
@@ -105,7 +125,17 @@ mv /var/www/html/base_<nome progetto>/laravel/Modules/User/config_temp /var/www/
 ### Per problemi di posizione del codice PHP:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Crea la directory app se non esiste
 mkdir -p /var/www/html/base_<nome progetto>/laravel/Modules/User/app/Filament
 
@@ -125,7 +155,19 @@ mv /var/www/html/base_<nome progetto>/laravel/Modules/User/Filament/Widgets /var
 
 - [DIRECTORY-STRUCTURE-GUIDE.md](./DIRECTORY-STRUCTURE-GUIDE.md) - Guida completa alla struttura delle directory
 - [MODULE-STRUCTURE.md](./MODULE-STRUCTURE.md) - Struttura standard dei moduli
+<<<<<<< HEAD
 - [naming-conventions.md](./naming-conventions.md) - Convenzioni di naming nel progetto
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [naming-conventions.md](./naming-conventions.md) - Convenzioni di naming nel progetto
+=======
+- [NAMING-CONVENTIONS.md](./NAMING-CONVENTIONS.md) - Convenzioni di naming nel progetto
+>>>>>>> aurmich/dev
+=======
+- [NAMING-CONVENTIONS.md](./NAMING-CONVENTIONS.md) - Convenzioni di naming nel progetto
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 
 ## Conclusione
 

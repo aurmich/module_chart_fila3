@@ -8,6 +8,11 @@ use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use Illuminate\Support\Facades\Log;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
 use Modules\Notify\Datas\TelegramData;
 use Spatie\QueueableAction\QueueableAction;
@@ -15,11 +20,41 @@ use function Safe\json_encode;
 use function Safe\json_decode;
 
 final class SendNutgramTelegramAction
+<<<<<<< HEAD
+=======
+=======
+use Modules\Notify\Contracts\TelegramProviderActionInterface;
+=======
+
+>>>>>>> 345f8677 (phpstan)
+use Modules\Notify\Datas\TelegramData;
+use Spatie\QueueableAction\QueueableAction;
+use function Safe\json_encode;
+use function Safe\json_decode;
+
+<<<<<<< HEAD
+final class SendNutgramTelegramAction implements TelegramProviderActionInterface
+>>>>>>> 54f4fa16 (.)
+=======
+final class SendNutgramTelegramAction
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
 {
     use QueueableAction;
 
     private string $token;
     private string $apiUrl;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    private ?string $webhookUrl;
+    private bool $polling;
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
     private array $vars = [];
     protected bool $debug;
     protected int $timeout;
@@ -35,16 +70,44 @@ final class SendNutgramTelegramAction
             throw new Exception('put [TELEGRAM_BOT_TOKEN] variable to your .env and config [services.telegram.token]');
         }
         $this->token = $token;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
         /** @var string $apiUrl */
         $apiUrl = config('services.telegram.api_url', 'https://api.telegram.org');
         $this->apiUrl = $apiUrl;
         
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
         // Parametri a livello di root
         /** @var string|null $parseMode */
         $parseMode = config('telegram.parse_mode');
         $this->parseMode = $parseMode;
         $this->debug = (bool) config('telegram.debug', false);
         $this->timeout = app(\Modules\Xot\Actions\Cast\SafeIntCastAction::class)->execute(config('telegram.timeout'), 30);
+<<<<<<< HEAD
+=======
+=======
+        $this->apiUrl = config('services.telegram.api_url', 'https://api.telegram.org');
+        $this->webhookUrl = config('services.telegram.webhook_url');
+        $this->polling = (bool) config('services.telegram.polling', false);
+
+=======
+>>>>>>> 345f8677 (phpstan)
+        // Parametri a livello di root
+        /** @var string|null $parseMode */
+        $parseMode = config('telegram.parse_mode');
+        $this->parseMode = $parseMode;
+        $this->debug = (bool) config('telegram.debug', false);
+        $this->timeout = (int) config('telegram.timeout', 30);
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
     }
 
     /**
@@ -113,7 +176,18 @@ final class SendNutgramTelegramAction
             
             $statusCode = $response->getStatusCode();
             $responseContent = $response->getBody()->getContents();
+<<<<<<< HEAD
             /** @var array $responseData */
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            /** @var array $responseData */
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+            /** @var array $responseData */
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
             $responseData = json_decode($responseContent, true);
             
             // Salva i dati della risposta nelle variabili dell'azione
@@ -135,7 +209,18 @@ final class SendNutgramTelegramAction
         } catch (ClientException $e) {
             $response = $e->getResponse();
             $statusCode = $response->getStatusCode();
+<<<<<<< HEAD
             /** @var array $responseBody */
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            /** @var array $responseBody */
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+            /** @var array $responseBody */
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
             $responseBody = json_decode($response->getBody()->getContents(), true);
             
             // Salva i dati dell'errore nelle variabili dell'azione

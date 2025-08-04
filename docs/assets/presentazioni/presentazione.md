@@ -170,7 +170,14 @@ per le funzioni che andrà a svolgere in piattaforma
 
 ```
 ![](./images/15.png)
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ## Iscrizione odontoiatra
 
 
@@ -182,7 +189,14 @@ per le funzioni che andrà a svolgere in piattaforma
 Orari di disponibilità al servizio
 ```
 ![](./images/16.png)
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ## Iscrizione odontoiatra
 
 
@@ -219,7 +233,14 @@ All’interno di questa sarà possibile interagire con essi, al fine di:
 ```
  Annullare, per cause di forza maggiore, l’appuntamento fissato
 ```
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ## Appuntamenti accettati
 
 
@@ -276,7 +297,14 @@ funzioni principali:
 
 ```
 ![](./images/22.png)
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ## Schermata di accesso
 
 ![](./images/23.png)

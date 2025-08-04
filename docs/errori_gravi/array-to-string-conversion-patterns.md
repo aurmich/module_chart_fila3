@@ -248,7 +248,14 @@ if (is_array($value) && !$this->hasValidCast($key)) {
 
 ### Pattern di Review
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+>>>>>>> aurmich/dev
 # Cerca potenziali problemi
 grep -r "->create(" Modules/ | grep -v test
 grep -r "\$fillable.*=" Modules/ | grep -v test
@@ -274,3 +281,10 @@ grep -r "array.*=" Modules/ | grep -v test
 
 **Ultimo aggiornamento**: 26 Giugno 2025  
 **Status**: Pattern documentato, caso critico SaluteOra identificato  
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+**Prossimi step**: Implementazione fixes e prevenzione proattiva 
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+>>>>>>> aurmich/dev

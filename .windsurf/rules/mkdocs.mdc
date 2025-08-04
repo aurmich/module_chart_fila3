@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: Comprehensive guidelines for mkdocs development, covering code organization, best practices, performance, security, testing, common pitfalls, and tooling. This rule aims to ensure maintainable, performant, and secure documentation using mkdocs.
 globs: *.md
 ---

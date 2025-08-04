@@ -11,7 +11,14 @@ Configurazione completa dell'ambiente di sviluppo per la piattaforma SaluteOra c
 
 ### Backend
 ```yaml
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Core Backend
 Framework: Laravel 10.x
 PHP Version: 8.2+
@@ -23,7 +30,14 @@ Search: Elasticsearch 8.x
 
 ### Frontend
 ```yaml
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Frontend Stack
 Framework: React 18 + TypeScript
 State Management: Redux Toolkit
@@ -34,7 +48,14 @@ Testing: Jest + React Testing Library
 
 ### Development Tools
 ```yaml
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # DevOps e Tooling
 Version Control: Git + GitLab
 CI/CD: GitLab CI
@@ -47,7 +68,14 @@ Documentation: Swagger/OpenAPI
 
 ### Local Development Setup
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Setup Locale Completo
 git clone https://gitlab.com/saluteora/platform.git
 cd platform
@@ -65,7 +93,14 @@ npm run dev
 
 ### Configuration Management
 ```yaml
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Configurazioni Ambiente
 Development: .env.local
 Staging: .env.staging  
@@ -83,7 +118,14 @@ AWS_BUCKET: Storage S3 configurato
 
 ### Code Standards
 ```yaml
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Standard di Codice
 PHP: PSR-12 compliance
 JavaScript: Airbnb style guide
@@ -94,7 +136,14 @@ API: RESTful + OpenAPI 3.0
 
 ### Automated Testing
 ```yaml
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev
 # Test Suite
 Unit Tests: PHPUnit + Jest
 Integration Tests: Laravel Feature Tests
@@ -114,3 +163,10 @@ Performance: Lighthouse CI
 - [Architettura Base](./architettura_base.md)
 - [UI/UX di Base](./ui_ux_base.md)
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Dicembre 2024*
+>>>>>>> d55a72aa (.)
+>>>>>>> aurmich/dev

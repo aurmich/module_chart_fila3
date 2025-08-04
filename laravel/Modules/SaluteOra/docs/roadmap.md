@@ -1,11 +1,33 @@
 # Roadmap Modulo Patient
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 ## Stato Attuale: 70% Completato
 
 ### Gestione Utenti [100%]
 - [✓] Anagrafica Base [100%](roadmap/anagrafica.md)
 - [✓] Documenti [85%](roadmap/documenti.md)
 - [✓] Documentazione Utenti [100%](roadmap/utenti-docs.md)
+<<<<<<< HEAD
+=======
+=======
+## Stato Attuale: 68% Completato
+=======
+## Stato Attuale: 70% Completato
+>>>>>>> 9df8f556 (fix .md)
+
+### Gestione Utenti [100%]
+- [✓] Anagrafica Base [100%](roadmap/anagrafica.md)
+- [✓] Documenti [85%](roadmap/documenti.md)
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+- [✓] Documentazione Utenti [100%](roadmap/utenti-docs.md)
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 - [-] Storia Clinica [55%](roadmap/storia-clinica.md)
 
 ### Cartelle Cliniche [70%]
@@ -51,15 +73,69 @@
 3. Nuove funzionalità statistiche
 
 ## Note
+<<<<<<< HEAD
 - Priorità alta: Storia Clinica, Timeline e Utenti
 - Focus su usabilità e performance
 - Mantenere conformità GDPR
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Priorità alta: Storia Clinica, Timeline e Utenti
+- Focus su usabilità e performance
+- Mantenere conformità GDPR
+=======
+- **Performance**: Ottimizzazione continua delle query e della cache per migliorare le prestazioni complessive.
+- **Documentazione**: Mantenere aggiornata la documentazione tecnica e utente con ogni nuova funzionalità.
+- **Feedback Loop**: Incorporare il feedback degli utenti beta per migliorare l'usabilità e l'efficacia del modulo.
+
+## Changelog
+
+- **2025-05-16**: Completata la moderazione utenti, aggiornato stato complessivo al 68%.
+>>>>>>> 54f4fa16 (.)
+=======
+- Priorità alta: Storia Clinica, Timeline e Utenti
+- Focus su usabilità e performance
+- Mantenere conformità GDPR
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 
 ## Collegamenti
 - [Documentazione Patient](./README.md)
 - [Guida Sviluppo](./DEVELOPMENT.md)
 - [Best Practices](./BEST-PRACTICES.md)
 - [Integrazione Dental](./DENTAL-INTEGRATION.md) 
+<<<<<<< HEAD
 ## Collegamenti tra versioni di ROADMAP.md
 * [ROADMAP.md](laravel/Modules/Dental/docs/ROADMAP.md)
 * [ROADMAP.md](laravel/Modules/Patient/docs/ROADMAP.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+## Collegamenti tra versioni di ROADMAP.md
+* [ROADMAP.md](laravel/Modules/Dental/docs/ROADMAP.md)
+* [ROADMAP.md](laravel/Modules/Patient/docs/ROADMAP.md)
+=======
+## Collegamenti tra versioni di roadmap.md
+* [roadmap.md](bashscripts/docs/roadmap.md)
+* [roadmap.md](docs/roadmap.md)
+* [roadmap.md](laravel/Modules/Gdpr/docs/roadmap.md)
+* [roadmap.md](laravel/Modules/Notify/docs/roadmap.md)
+* [roadmap.md](laravel/Modules/Xot/docs/roadmap.md)
+* [roadmap.md](laravel/Modules/Dental/docs/roadmap.md)
+* [roadmap.md](laravel/Modules/User/docs/roadmap.md)
+* [roadmap.md](laravel/Modules/UI/docs/roadmap.md)
+* [roadmap.md](laravel/Modules/Lang/docs/roadmap.md)
+* [roadmap.md](laravel/Modules/Job/docs/roadmap.md)
+* [roadmap.md](laravel/Modules/Media/docs/roadmap.md)
+* [roadmap.md](laravel/Modules/Tenant/docs/roadmap.md)
+* [roadmap.md](laravel/Modules/Activity/docs/roadmap.md)
+* [roadmap.md](laravel/Modules/Patient/docs/roadmap.md)
+* [roadmap.md](laravel/Modules/Cms/docs/roadmap.md)
+* [roadmap.md](laravel/Themes/One/docs/roadmap.md)
+>>>>>>> 54f4fa16 (.)
+=======
+## Collegamenti tra versioni di ROADMAP.md
+* [ROADMAP.md](laravel/Modules/Dental/docs/ROADMAP.md)
+* [ROADMAP.md](laravel/Modules/Patient/docs/ROADMAP.md)
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev

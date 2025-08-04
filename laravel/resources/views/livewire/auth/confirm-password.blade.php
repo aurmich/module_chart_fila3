@@ -44,13 +44,47 @@ new #[Layout('components.layouts.auth')] class extends Component {
     <form wire:submit="confirmPassword" class="flex flex-col gap-6">
         <!-- Password -->
         <flux:input
+<<<<<<< HEAD
             wire:model="password"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            wire:model="password"
+=======
+            wire:model.live="password"
+>>>>>>> aurmich/dev
+=======
+            wire:model="password"
+>>>>>>> 54f4fa16 (.)
+=======
+            wire:model.live="password"
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+            wire:model="password"
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
             :label="__('Password')"
             type="password"
             required
             autocomplete="new-password"
             :placeholder="__('Password')"
+<<<<<<< HEAD
             viewable
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            viewable
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+            viewable
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
         />
 
         <flux:button variant="primary" type="submit" class="w-full">{{ __('Confirm') }}</flux:button>

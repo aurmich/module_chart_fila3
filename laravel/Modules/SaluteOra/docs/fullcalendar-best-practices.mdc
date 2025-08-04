@@ -3,6 +3,13 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 74316a37 (✨ (docs): add new documentation for FullCalendar widget implementation and best practices to improve clarity and maintainability)
+>>>>>>> aurmich/dev
 # FullCalendar Best Practices per SaluteOra
 
 ## Regole Fondamentali
@@ -184,7 +191,19 @@ function({ event, el }){
 
 ### 2. Keyboard Navigation
 ```php
+<<<<<<< HEAD
 public function options(): array
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+public function options(): array
+=======
+public function config(): array
+>>>>>>> 74316a37 (✨ (docs): add new documentation for FullCalendar widget implementation and best practices to improve clarity and maintainability)
+=======
+public function options(): array
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
+>>>>>>> aurmich/dev
 {
     return [
         // ... altre configurazioni
@@ -379,3 +398,11 @@ class AppointmentCalendarWidget extends XotBaseFullCalendarWidget
 ---
 
 *Queste regole devono essere seguite rigorosamente per mantenere la coerenza e la qualità del codice nel progetto SaluteOra.*
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 2099645a (.)
+=======
+>>>>>>> 74316a37 (✨ (docs): add new documentation for FullCalendar widget implementation and best practices to improve clarity and maintainability)
+>>>>>>> aurmich/dev

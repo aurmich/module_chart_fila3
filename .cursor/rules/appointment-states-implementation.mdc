@@ -26,17 +26,47 @@ alwaysApply: false
 ## Stati Implementati
 ```php
 Pending → Confirmed → Scheduled → InProgress → Completed
+<<<<<<< HEAD
    ↓         ↓          ↓
 Rejected   Cancelled   NoShow
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+   ↓         ↓          ↓
+Rejected   Cancelled   NoShow
+=======
+   ↓          ↓          ↓
+Cancelled   Cancelled   NoShow
+>>>>>>> 4cfbf172 (📝 (studio-filter-widget.md): update documentation to provide complete overview and usage instructions in Italian, enhancing clarity and accessibility for Italian-speaking users.)
+=======
+   ↓         ↓          ↓
+Rejected   Cancelled   NoShow
+>>>>>>> a123f7ba (✨ (appointment states): implement new appointment state transitions and update documentation to reflect changes)
+>>>>>>> aurmich/dev
             ↓          
           Rescheduled ← Scheduled
                         ↓
                     Cancelled
 ```
 
+<<<<<<< HEAD
 **IMPORTANTE**: Da `Pending` si può andare solo a `Confirmed` o `Rejected`. 
 La transizione PendingToCancelled è stata rimossa - un appuntamento in attesa deve essere prima confermato o rifiutato.
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**IMPORTANTE**: Da `Pending` si può andare solo a `Confirmed` o `Rejected`. 
+La transizione PendingToCancelled è stata rimossa - un appuntamento in attesa deve essere prima confermato o rifiutato.
+
+=======
+>>>>>>> 4cfbf172 (📝 (studio-filter-widget.md): update documentation to provide complete overview and usage instructions in Italian, enhancing clarity and accessibility for Italian-speaking users.)
+=======
+**IMPORTANTE**: Da `Pending` si può andare solo a `Confirmed` o `Rejected`. 
+La transizione PendingToCancelled è stata rimossa - un appuntamento in attesa deve essere prima confermato o rifiutato.
+
+>>>>>>> a123f7ba (✨ (appointment states): implement new appointment state transitions and update documentation to reflect changes)
+>>>>>>> aurmich/dev
 ## Pattern Corretto
 
 ### Stato Base

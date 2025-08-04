@@ -24,6 +24,16 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * @property string|null                     $deleted_by
  * @property Treatment|null                  $treatment
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
+>>>>>>> aurmich/dev
  * @method static \Modules\Gdpr\Database\Factories\ConsentFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|Consent   newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Consent   newQuery()
@@ -37,7 +47,21 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static \Illuminate\Database\Eloquent\Builder|Consent   whereTreatmentId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Consent   whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Consent   whereUpdatedBy($value)
+<<<<<<< HEAD
  * @property Treatment|null $treatment
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+ * @property Treatment|null $treatment
+=======
+ *
+ * @property Treatment|null $treatment
+ *
+>>>>>>> 54f4fa16 (.)
+=======
+ * @property Treatment|null $treatment
+>>>>>>> f3e4ec66 (.)
+>>>>>>> aurmich/dev
  * @method static \Modules\Gdpr\Database\Factories\ConsentFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|Consent   newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Consent   newQuery()
@@ -59,6 +83,11 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static \Illuminate\Database\Eloquent\Builder|Consent   whereTreatmentId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Consent   whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Consent   whereUpdatedBy($value)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  * @property string $user_type
@@ -69,6 +98,27 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Consent whereType($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Consent whereUserId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Consent whereUserType($value)
+<<<<<<< HEAD
+=======
+=======
+ *
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ *
+>>>>>>> 54f4fa16 (.)
+=======
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ * @property string $user_type
+ * @property int $user_id
+ * @property string|null $type
+ * @property string|null $accepted_at
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Consent whereAcceptedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Consent whereType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Consent whereUserId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Consent whereUserType($value)
+>>>>>>> f3e4ec66 (.)
+>>>>>>> aurmich/dev
  * @mixin \Eloquent
  */
 class Consent extends BaseModel

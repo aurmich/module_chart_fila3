@@ -35,12 +35,62 @@ Queste Action devono occuparsi di:
 
 ## Collegamenti
 - [RegistrationWidget.php](../../app/Filament/Widgets/RegistrationWidget.php)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 - [EditUserWidget.php](../../app/Filament/Widgets/EditUserWidget.php) - Widget per modifica dati utente
 - [Documentazione EditUserWidget](./edit-user-widget.md) - Documentazione completa dell'EditUserWidget
 - [EditUserWidget.php](../../app/Filament/Widgets/EditUserWidget.php) - Widget per modifica dati utente
 - [Documentazione EditUserWidget](./edit-user-widget.md) - Documentazione completa dell'EditUserWidget
+<<<<<<< HEAD
 - [EditUserWidget.php](../../app/Filament/Widgets/EditUserWidget.php) - Widget per modifica dati utente
 - [Documentazione EditUserWidget](./edit-user-widget.md) - Documentazione completa dell'EditUserWidget
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [EditUserWidget.php](../../app/Filament/Widgets/EditUserWidget.php) - Widget per modifica dati utente
+- [Documentazione EditUserWidget](./edit-user-widget.md) - Documentazione completa dell'EditUserWidget
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+>>>>>>> 4c632a28 (✨ (bashscripts): add new scripts for managing MCP MySQL server and PHPStan analysis)
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+<<<<<<< HEAD
+=======
+- [EditUserWidget.php](../../app/Filament/Widgets/EditUserWidget.php) - Widget per modifica dati utente
+- [Documentazione EditUserWidget](./edit-user-widget.md) - Documentazione completa dell'EditUserWidget
+>>>>>>> aurmich/dev
+=======
+<<<<<<< HEAD
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
+=======
+- [EditUserWidget.php](../../app/Filament/Widgets/EditUserWidget.php) - Widget per modifica dati utente
+- [Documentazione EditUserWidget](./edit-user-widget.md) - Documentazione completa dell'EditUserWidget
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+>>>>>>> aurmich/dev
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
+=======
+>>>>>>> 999c8e14 (✨ (User Module): introduce EditUserWidget for user data modification)
+<<<<<<< HEAD
+>>>>>>> b94d1b23 (✨ (User Module): introduce UpdateUserAction for doctor-specific user updates)
+=======
+=======
+=======
+>>>>>>> e33bf4c8 (📝 (registration-widget.md): remove merge conflict markers and clean up documentation for EditUserWidget links)
+- [EditUserWidget.php](../../app/Filament/Widgets/EditUserWidget.php) - Widget per modifica dati utente
+- [Documentazione EditUserWidget](./edit-user-widget.md) - Documentazione completa dell'EditUserWidget
+>>>>>>> aurmich/dev
+>>>>>>> 4c632a28 (✨ (bashscripts): add new scripts for managing MCP MySQL server and PHPStan analysis)
+>>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
+>>>>>>> aurmich/dev
 - [Documentazione Xot sulla proprietà $data](../../../Xot/docs/filament/widgets/data-property.md)
 - [Esempio di Action di registrazione Doctor](../../../../Patient/app/Actions/Doctor/RegisterAction.php)
 - [Esempio di Action di registrazione Patient](../../../../Patient/app/Actions/Patient/RegisterAction.php)
@@ -73,7 +123,27 @@ class RegistrationWidget extends XotBaseWidget
     public function mount(string $type): void
     {
         $this->type = $type;
+<<<<<<< HEAD
         $this->resource = XotData::make()->getUserResourceClassByType($type);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        $this->resource = XotData::make()->getUserResourceClassByType($type);
+=======
+        $this->resource = XotData::make()->getUserTypeResourceClass($type);
+>>>>>>> 54f4fa16 (.)
+=======
+        $this->resource = XotData::make()->getUserResourceClassByType($type);
+>>>>>>> ca5e1eaf (.)
+=======
+        $this->resource = XotData::make()->getUserTypeResourceClass($type);
+>>>>>>> 15cb84fb (fix collisions)
+=======
+        $this->resource = XotData::make()->getUserResourceClassByType($type);
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
         $this->form->fill();
     }
 
@@ -182,6 +252,13 @@ Queste Action devono occuparsi di:
 - [RegistrationWidget.php](../../app/Filament/Widgets/RegistrationWidget.php)
 - [Documentazione Xot sulla proprietà $data](../../../Xot/docs/filament/widgets/data-property.md)
 - [Esempio di Action di registrazione (da creare)](../../../../Patient/app/Actions/Doctor/RegisterAction.php)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b0db4ea8 (fixes)
+>>>>>>> aurmich/dev
 
 ---
 
@@ -322,3 +399,11 @@ class ResetPasswordWidget extends XotBaseWidget
 ---
 
 ## Collegamenti aggiornati
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> b0db4ea8 (fixes)
+>>>>>>> aurmich/dev

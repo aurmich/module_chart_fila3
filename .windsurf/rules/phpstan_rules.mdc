@@ -1,16 +1,52 @@
 ---
+<<<<<<< HEAD
 description: Regole per l'analisi statica con PHPStan in <nome progetto>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+description: Regole per l'analisi statica con PHPStan in <nome progetto>
+=======
+description: Regole per l'analisi statica con PHPStan in PTVX
+>>>>>>> d23ba493 (add calendar)
+=======
+description: Regole per l'analisi statica con PHPStan in <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 globs: ["**/*.php"]
 alwaysApply: true
 ---
 
+<<<<<<< HEAD
 # Regole PHPStan per Laraxot <nome progetto>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Regole PHPStan per Laraxot <nome progetto>
+=======
+# Regole PHPStan per Laraxot PTVX
+>>>>>>> d23ba493 (add calendar)
+=======
+# Regole PHPStan per Laraxot <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 
 ## Esecuzione Corretta
 
 - Eseguire sempre dalla directory Laravel root:
   ```bash
+<<<<<<< HEAD
   cd /var/www/html/<nome progetto>/laravel
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  cd /var/www/html/<nome progetto>/laravel
+=======
+  cd /var/www/html/ptvx/laravel
+>>>>>>> d23ba493 (add calendar)
+=======
+  cd /var/www/html/<nome progetto>/laravel
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
   ./vendor/bin/phpstan analyze [target] --level=9
   ```
 
@@ -172,4 +208,16 @@ $value = $data['key']; /** @phpstan-ignore-line */
 - [docs/PHPSTAN_FIXES.md](mdc:../../docs/PHPSTAN_FIXES.md)
 - [Modules/Performance/docs/phpstan_fixes.md](mdc:../../laravel/Modules/Performance/docs/phpstan_fixes.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: maggio 2025*
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+*Ultimo aggiornamento: maggio 2025*
+=======
+*Ultimo aggiornamento: maggio 2025*
+>>>>>>> d23ba493 (add calendar)
+=======
+*Ultimo aggiornamento: maggio 2025*
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev

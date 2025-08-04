@@ -46,7 +46,14 @@ Questo documento descrive la struttura e la gestione dei collegamenti tra i modu
 
 ### 1. Documentazione
 ```markdown
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 # Esempio di struttura docs in un modulo
 docs/
 ├── README.md           # Panoramica e indice
@@ -181,7 +188,14 @@ class ModuleLinksTest extends TestCase
 - Mantenere changelog
 - Aggiornare esempi
 - Verificare coerenza 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)

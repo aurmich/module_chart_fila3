@@ -1,7 +1,19 @@
 ---
+<<<<<<< HEAD
 description: Conventions for organizing and developing modules.
 globs: []
 alwaysApply: false
+=======
+<<<<<<< HEAD
+trigger: model_decision
+description: Conventions for organizing and developing modules.
+globs: []
+=======
+description: Conventions for organizing and developing modules.
+globs: []
+alwaysApply: false
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 ---
 
 # Module Conventions

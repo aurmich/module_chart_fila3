@@ -8,12 +8,34 @@ use Filament\Forms;
 use Filament\Tables;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
+>>>>>>> aurmich/dev
 use Filament\Tables\Actions\Action;
 use Modules\SaluteOra\Models\Doctor;
 use Filament\Tables\Columns\IconColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\SaluteMo\Filament\Resources\DoctorResource;
 use Modules\UI\Filament\Forms\Components\OpeningHoursField;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+use Modules\SaluteMo\Models\Doctor;
+=======
+use Modules\SaluteOra\Models\Doctor;
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+use Illuminate\Database\Eloquent\Builder;
+use Modules\SaluteMo\Filament\Resources\DoctorResource;
+>>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
+=======
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
+>>>>>>> aurmich/dev
 use Modules\SaluteMo\Filament\Resources\DoctorResource\Pages\ListDoctors;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
@@ -37,10 +59,27 @@ class DoctorsRelationManager extends XotBaseRelationManager
     /**
      * Get the table columns.
      *
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+     * @return array<string, Tables\Columns\Column>
+>>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
+=======
+>>>>>>> 13ea6524 (phpstan)
+>>>>>>> aurmich/dev
      */
     public function getTableColumns(): array
     {
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
+>>>>>>> aurmich/dev
         //return app(ListDoctors::class)->getTableColumns();
         $columns = parent::getTableColumns();
         /*
@@ -67,24 +106,75 @@ class DoctorsRelationManager extends XotBaseRelationManager
         ->action($action);
         */
         return $columns;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+        return app(ListDoctors::class)->getTableColumns();
+>>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
+=======
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
+>>>>>>> aurmich/dev
     }
 
     /**
      * Get the table filters.
      *
+<<<<<<< HEAD
      * @return array<string, Tables\Filters\Filter|Tables\Filters\SelectFilter>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+     * @return array<string, Tables\Filters\Filter|Tables\Filters\SelectFilter>
+=======
+     * @return array<string, Tables\Filters\Filter>
+>>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
+=======
+     * @return array<string, Tables\Filters\SelectFilter>
+>>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
+=======
+     * @return array<string, Tables\Filters\Filter>
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+=======
+     * @return array<string, Tables\Filters\Filter|Tables\Filters\SelectFilter>
+>>>>>>> bfe064b3 (♻️ (DoctorsRelationManager.php, ListUsers.php, BaseListUsers.php): update PHPDoc return types for better type safety and clarity)
+>>>>>>> aurmich/dev
      */
     public function getTableFilters(): array
     {
         return [
+<<<<<<< HEAD
             /*
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            /*
+=======
+>>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
+=======
+            /*
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
+>>>>>>> aurmich/dev
             'status' => Tables\Filters\SelectFilter::make('status')
                 ->options([
                     'pending' => 'Pending',
                     'active' => 'Active',
                     'suspended' => 'Suspended',
                 ]),
+<<<<<<< HEAD
                 */
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                */
+=======
+>>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
+=======
+                */
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
+>>>>>>> aurmich/dev
             /*
             'specialization' => Tables\Filters\SelectFilter::make('specialization')
                 ->options(function () {
@@ -109,7 +199,27 @@ class DoctorsRelationManager extends XotBaseRelationManager
     public function getTableHeaderActions(): array
     {
         return [
+<<<<<<< HEAD
             'attach' => Tables\Actions\AttachAction::make()
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'attach' => Tables\Actions\AttachAction::make()
+=======
+            Tables\Actions\AttachAction::make()
+>>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
+=======
+            'attach' => Tables\Actions\AttachAction::make()
+>>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
+=======
+            Tables\Actions\AttachAction::make()
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+=======
+            'attach' => Tables\Actions\AttachAction::make()
+>>>>>>> 13ea6524 (phpstan)
+>>>>>>> aurmich/dev
                 ->preloadRecordSelect(false) // Importante: non precaricare tutti i record
                 // Soluzione per database cross-database compatibile con Filament 3
                 ->recordSelect(
@@ -123,8 +233,32 @@ class DoctorsRelationManager extends XotBaseRelationManager
                                     ->orWhere('email', 'like', "%{$search}%");
                             })
                             // Escludiamo manualmente i dottori già associati invece di usare JOIN
+<<<<<<< HEAD
                             /** @phpstan-ignore property.notFound */
                             ->whereNotIn('id', $this->getOwnerRecord()->doctors->modelKeys())
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                            /** @phpstan-ignore property.notFound */
+=======
+>>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
+=======
+                            /** @phpstan-ignore-next-line */
+>>>>>>> 13ea6524 (phpstan)
+                            ->whereNotIn('id', $this->getOwnerRecord()->doctors->modelKeys())
+=======
+                            ->whereNotIn('id', function($query) {
+                                $query->select('doctor_id')
+                                    ->from('doctor_studio')
+                                    ->where('studio_id', $this->getOwnerRecord()->getKey());
+                            })
+>>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
+=======
+                            ->whereNotIn('id', $this->getOwnerRecord()->doctors->modelKeys())
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+>>>>>>> aurmich/dev
                             ->limit(10)
                             ->get()
                             ->mapWithKeys(

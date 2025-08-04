@@ -51,7 +51,14 @@ php artisan migrate
 
 ### 7. Instalar Módulos
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 # Instalar Laravel Modules
 composer require nwidart/laravel-modules
 
@@ -127,7 +134,14 @@ La documentación completa está disponible en el directorio `docs/`:
 
 ### Comandos Útiles
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 # Crear un nuevo módulo
 php artisan module:make NombreModulo
 
@@ -175,7 +189,14 @@ Este kit de herramientas aborda estos desafíos proporcionando herramientas auto
 
 ## Traducciones
 - [English](../../README.md)
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 # 🚀 Kit de Herramientas de Automatización Git
 
 [![PHPStan](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg?style=for-the-badge&logo=php&logoColor=white)](phpstan/ANALISI_MODULI_PHPSTAN.md)
@@ -229,7 +250,14 @@ php artisan migrate
 
 ### 7. Instalar Módulos
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 # Instalar Laravel Modules
 composer require nwidart/laravel-modules
 
@@ -305,7 +333,14 @@ La documentación completa está disponible en el directorio `docs/`:
 
 ### Comandos Útiles
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 # Crear un nuevo módulo
 php artisan module:make NombreModulo
 
@@ -354,3 +389,10 @@ Este kit de herramientas aborda estos desafíos proporcionando herramientas auto
 ## Traducciones
 - [English](../../README.md)
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+- [Italiano](README.it.md) 
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev

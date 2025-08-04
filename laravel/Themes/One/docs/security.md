@@ -80,10 +80,38 @@ class Password implements Rule
 
 ### Crittografia
 ```php
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2099645a (.)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 // app/Actions/EncryptionAction.php
 class EncryptionAction
 {
     use QueueableAction;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+// app/Services/EncryptionService.php
+class EncryptionService
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 2099645a (.)
+=======
+// app/Services/EncryptionService.php
+class EncryptionService
+>>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 {
     public function encrypt($data)
     {
@@ -99,10 +127,38 @@ class EncryptionAction
 
 ### Sanitizzazione Input
 ```php
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2099645a (.)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 // app/Actions/SanitizationAction.php
 class SanitizationAction
 {
     use QueueableAction;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+// app/Services/SanitizationService.php
+class SanitizationService
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 2099645a (.)
+=======
+// app/Services/SanitizationService.php
+class SanitizationService
+>>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 {
     public function sanitize($input)
     {

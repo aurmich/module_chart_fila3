@@ -5,6 +5,11 @@ declare(strict_types=1);
 namespace Modules\Notify\Emails;
 
 use Illuminate\Support\Arr;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
 use Modules\Xot\Datas\XotData;
@@ -20,6 +25,27 @@ use Illuminate\Mail\Mailables\Attachment;
 use Spatie\MailTemplates\TemplateMailable;
 use Modules\Xot\Actions\Model\GetSicureArrayByModelAction;
 use Spatie\MailTemplates\Interfaces\MailTemplateInterface;
+<<<<<<< HEAD
+=======
+=======
+=======
+use Illuminate\Support\Str;
+use Modules\Xot\Datas\XotData;
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+use Modules\Xot\Datas\MetatagData;
+use Illuminate\Support\Facades\File;
+use Illuminate\Database\Eloquent\Model;
+use Modules\Notify\Models\MailTemplate;
+use Illuminate\Mail\Mailables\Attachment;
+use Spatie\MailTemplates\TemplateMailable;
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+use Spatie\MailTemplates\Interfaces\MailTemplateInterface;
+
+use function Safe\file_get_contents;
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
 
 /**
  * @see https://github.com/spatie/laravel-database-mail-templates
@@ -27,6 +53,11 @@ use Spatie\MailTemplates\Interfaces\MailTemplateInterface;
 class SpatieEmail extends TemplateMailable
 {
     // use our custom mail template model
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     /** @var class-string<MailTemplateInterface> */
     protected static  $templateModelClass = MailTemplate::class;
     public string $slug;
@@ -107,6 +138,55 @@ class SpatieEmail extends TemplateMailable
         }
         
         return $envelope;
+<<<<<<< HEAD
+=======
+=======
+    protected static $templateModelClass = MailTemplate::class;
+=======
+    /** @var class-string<MailTemplateInterface> */
+    protected static  $templateModelClass = MailTemplate::class;
+>>>>>>> 345f8677 (phpstan)
+    public string $slug;
+     /** @var array<int, Attachment> */
+    protected array $customAttachments = [];
+
+    public array $data=[];
+
+    
+
+    public function __construct(Model $record, string $slug)
+    {
+        $this->slug = Str::slug($slug);
+        
+        MailTemplate::firstOrCreate([
+            'mailable' => SpatieEmail::class,
+            'slug' => $this->slug,
+        ],[
+            'subject' => 'Benvenuto, {{ first_name }}',
+            'html_template' => '<p>Gentile {{ first_name }} {{ last_name }},</p><p>La tua registrazione  è in attesa di approvazione. Ti contatteremo presto.</p>',
+            'text_template' => 'Gentile {{ first_name }} {{ last_name }}, la tua registrazione  è in attesa di approvazione. Ti contatteremo presto.'
+        ]);
+        
+        $data=$record->toArray();
+        $this->data['login_url']=route('login');
+        $this->data['site_url']=url('/');
+
+        $this->data['logo_header']=MetatagData::make()->getBrandLogo();
+        $this->data=array_merge($this->data,$data);
+        $this->setAdditionalData($this->data);
+        
+
+>>>>>>> 54f4fa16 (.)
+    }
+
+    public function mergeData(array $data): self
+    {
+        $this->data=array_merge($this->data,$data);
+        $this->setAdditionalData($this->data);
+        $params=implode(',',array_keys($this->data));
+        MailTemplate::where(['slug'=>$this->slug,'mailable'=>SpatieEmail::class])->update(['params'=>$params]);
+        return $this;
+>>>>>>> aurmich/dev
     }
 
     public function getHtmlLayout(): string
@@ -123,12 +203,33 @@ class SpatieEmail extends TemplateMailable
          */
         //$pathToLayout = module_path('Notify','resources/mail-layouts/base/responsive.html');
         //dddx(MetatagData::make()->toArray());
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
         $xot=XotData::make();
         $pub_theme=$xot->pub_theme;
         $pubThemePath=base_path('Themes/'.$pub_theme.'');
 
         //$pathToLayout = module_path('Notify','resources/mail-layouts/base.html');
         $pathToLayout = $pubThemePath.'/resources/mail-layouts/base.html';
+<<<<<<< HEAD
+=======
+=======
+
+
+        $pathToLayout = module_path('Notify','resources/mail-layouts/base.html');
+>>>>>>> 54f4fa16 (.)
+=======
+        $xot=XotData::make();
+        $pub_theme=$xot->pub_theme;
+        $pubThemePath=base_path('Themes/'.$pub_theme.'');
+
+        //$pathToLayout = module_path('Notify','resources/mail-layouts/base.html');
+        $pathToLayout = $pubThemePath.'/resources/mail-layouts/base.html';
+>>>>>>> 85c2afe6 (✨ (SpatieEmail.php): add dynamic theme support for email layout path to enhance customization)
+>>>>>>> aurmich/dev
         return file_get_contents($pathToLayout);
 
         //return '<header>Site name!</header>{{{ body }}}<footer>Copyright 2018</footer>';
@@ -139,6 +240,10 @@ class SpatieEmail extends TemplateMailable
         return $this->slug;
     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
     public function getAttachmentFromPath(array $attachment): Attachment
     {
@@ -175,6 +280,11 @@ class SpatieEmail extends TemplateMailable
         return $res;
     }
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
     /**
      * Add attachments to the email
      *
@@ -183,6 +293,10 @@ class SpatieEmail extends TemplateMailable
      */
     public function addAttachments(array $attachments): self
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
         
         $attachmentObjects = [];
 
@@ -204,6 +318,37 @@ class SpatieEmail extends TemplateMailable
         $this->customAttachments = $attachmentObjects;
         
 
+<<<<<<< HEAD
+=======
+=======
+        $attachmentObjects = [];
+
+        foreach ($attachments as $item) {
+            if (!isset($item['path']) || !file_exists($item['path'])) {
+                continue;
+            }
+
+            $attachment = Attachment::fromPath($item['path']);
+
+            if (isset($item['as'])) {
+                $attachment = $attachment->as($item['as']);
+            }
+
+            if (isset($item['mime'])) {
+                $attachment = $attachment->withMime($item['mime']);
+            }
+
+            $attachmentObjects[] = $attachment;
+        }
+
+        $this->customAttachments = $attachmentObjects;
+<<<<<<< HEAD
+        
+>>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
+>>>>>>> aurmich/dev
         return $this;
     }
 
@@ -214,6 +359,10 @@ class SpatieEmail extends TemplateMailable
      */
     public function attachments(): array
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
         
         return $this->customAttachments;
     }
@@ -231,4 +380,11 @@ class SpatieEmail extends TemplateMailable
         
         return $sms;
     }
+<<<<<<< HEAD
+=======
+=======
+        return $this->customAttachments;
+    }
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 }

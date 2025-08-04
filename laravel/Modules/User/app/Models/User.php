@@ -80,15 +80,95 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static \Illuminate\Database\Eloquent\Builder|User whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|User withoutPermission($permissions)
  * @method static \Illuminate\Database\Eloquent\Builder|User withoutRole($roles, $guard = null)
+<<<<<<< HEAD
  * @property string $last_name
  * @property-read \Modules\User\Models\Team|null $currentTeam
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+ * @property string $last_name
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+ * @property-read \Modules\User\Models\Team|null $currentTeam
+=======
+ * @property-read \Modules\User\Models\Team|null $currentTeam
+<<<<<<< HEAD
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Xot\Contracts\UserContract> $all_team_users
+>>>>>>> 13ea6524 (phpstan)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\SocialiteUser> $socialiteUsers
  * @property-read int|null $socialite_users_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Membership> $teamUsers
  * @property-read int|null $team_users_count
+<<<<<<< HEAD
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\User> $all_team_users
+=======
+<<<<<<< HEAD
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\User> $all_team_users
+=======
+>>>>>>> aurmich/dev
+=======
+ * @property string $surname
+=======
+ * @property string $last_name
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+ * @property string|null $facebook_id
+ * @property Team|null $currentTeam
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereFacebookId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereIsOtp($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User wherePasswordExpiresAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereSurname($value)
+ * @property \Illuminate\Database\Eloquent\Collection<int, SocialiteUser> $socialiteUsers
+ * @property int|null $socialite_users_count
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
+ * @property string|null $phone
+ * @property string|null $address
+ * @property string|null $city
+ * @property string|null $registration_number
+ * @property string|null $status
+ * @property string|null $state
+ * @property string|null $moderation_data
+ * @property string|null $certifications
+ * @property string|null $type
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Xot\Contracts\UserContract> $all_team_users
+ * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
+ * @property-read int|null $media_count
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereAddress($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereCertifications($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereCity($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereModerationData($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User wherePhone($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereRegistrationNumber($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereState($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereStatus($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereType($value)
+<<<<<<< HEAD
+>>>>>>> f3e4ec66 (.)
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+>>>>>>> 13ea6524 (phpstan)
+>>>>>>> aurmich/dev
  * @mixin \Eloquent
  */
 class User extends BaseUser

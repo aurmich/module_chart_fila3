@@ -26,7 +26,19 @@ new class extends Component {
 
 @props([
     'title' => 'I nostri principi di protezione dati',
+<<<<<<< HEAD
     'subtitle' => __('pub_theme::components.privacy_principles.subtitle'),
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    'subtitle' => __('pub_theme::components.privacy_principles.subtitle'),
+=======
+    'subtitle' => 'Ogni processo è progettato per massimizzare la tua privacy e sicurezza',
+>>>>>>> aurmich/dev
+=======
+    'subtitle' => 'Ogni processo è progettato per massimizzare la tua privacy e sicurezza',
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
+>>>>>>> aurmich/dev
     'sections' => []
 ])
 

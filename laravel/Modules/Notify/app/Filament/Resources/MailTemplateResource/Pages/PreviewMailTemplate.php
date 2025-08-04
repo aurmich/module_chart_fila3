@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Filament\Resources\MailTemplateResource\Pages;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 use Filament\Actions\Action;
 use Filament\Resources\Pages\Page;
 use Modules\Notify\Models\MailTemplate;
@@ -12,6 +17,25 @@ use Modules\Notify\Filament\Resources\MailTemplateResource;
 /**
  * @property MailTemplate $record
  */
+<<<<<<< HEAD
+=======
+=======
+use Modules\Notify\Filament\Resources\MailTemplateResource;
+=======
+>>>>>>> 345f8677 (phpstan)
+use Filament\Actions\Action;
+use Filament\Resources\Pages\Page;
+use Modules\Notify\Models\MailTemplate;
+use Modules\Notify\Filament\Resources\MailTemplateResource;
+
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+/**
+ * @property MailTemplate $record
+ */
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
 class PreviewMailTemplate extends Page
 {
     protected static string $resource = MailTemplateResource::class;
@@ -33,4 +57,12 @@ class PreviewMailTemplate extends Page
                 ->url(fn () => MailTemplateResource::getUrl('edit', ['record' => $this->record])),
         ];
     }
+<<<<<<< HEAD
 } 
+=======
+<<<<<<< HEAD
+} 
+=======
+} 
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev

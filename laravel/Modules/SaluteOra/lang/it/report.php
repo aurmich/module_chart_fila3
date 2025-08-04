@@ -1,14 +1,35 @@
 <?php
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 declare(strict_types=1);
 
 return [
     'navigation' => [
         'label' => 'Referti e Statistiche',
+<<<<<<< HEAD
+=======
+=======
+declare(strict_types=1);
+
+return [
+    'name' => 'Report',
+    'navigation' => [
+        'label' => 'Report e Statistiche',
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
+>>>>>>> aurmich/dev
         'group' => 'Amministrazione',
         'icon' => 'heroicon-o-chart-bar',
         'color' => 'teal',
         'sort' => 20,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
         'tooltip' => 'Visualizza referti e statistiche delle attività cliniche',
     ],
     'model' => [
@@ -200,3 +221,52 @@ return [
         'exported' => 'Referti esportati con successo',
     ],
 ];
+<<<<<<< HEAD
+=======
+=======
+return array (
+  'name' => 'Report',
+  'navigation' => 
+  array (
+    'label' => 'Report e Statistiche',
+    'group' => 'Amministrazione',
+    'icon' => 'heroicon-o-chart-bar',
+    'color' => 'teal',
+    'sort' => 20,
+    'tooltip' => 'Visualizza report e statistiche delle attività cliniche',
+  ),
+  'model' => 
+  array (
+    'label' => 'report.model',
+  ),
+);
+>>>>>>> aurmich/dev
+=======
+return array (
+  'name' => 'Report',
+  'navigation' => 
+  array (
+    'label' => 'Report e Statistiche',
+    'group' => 'Amministrazione',
+    'icon' => 'heroicon-o-chart-bar',
+    'color' => 'teal',
+    'sort' => 20,
+    'tooltip' => 'Visualizza report e statistiche delle attività cliniche',
+  ),
+  'model' => 
+  array (
+    'label' => 'report.model',
+  ),
+);
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+        'tooltip' => 'Visualizza report e statistiche delle attività cliniche',
+    ],
+    'model' => [
+        'label' => 'Report',
+        'plural' => 'Report',
+        'description' => 'Report e statistiche del sistema',
+    ],
+];
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
+>>>>>>> aurmich/dev

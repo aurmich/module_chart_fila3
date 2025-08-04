@@ -64,12 +64,21 @@ return [
                 'timeout' => env('NETFUN_CIRCUIT_BREAKER_TIMEOUT', 60),
             ],
         ],
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
         'agiletelecom' => [
             'username' => env('AGILETELECOM_USERNAME'),
             'password' => env('AGILETELECOM_PASSWORD'),
             'sender' => env('AGILETELECOM_SENDER', 'MyApp'),
             'endpoint' => env('AGILETELECOM_API_URL','https://secure.agiletelecom.com/services/sms/send'),
         ],
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
     ],
 
 

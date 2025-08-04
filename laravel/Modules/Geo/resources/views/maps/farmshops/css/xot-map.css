@@ -10870,7 +10870,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /*
+<<<<<<< HEAD
 *     Breadcrumb
+=======
+* ===================================================
+*     Breadcrumb
+* ===================================================
+>>>>>>> aurmich/dev
 */
 .breadcrumb {
   font-size: 0.875rem;
@@ -10889,7 +10895,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /*
+<<<<<<< HEAD
 *     Navbar
+=======
+* ===================================================
+*     Navbar
+* ===================================================
+>>>>>>> aurmich/dev
 */
 .navbar-brand-svg {
   vertical-align: baseline;
@@ -11008,7 +11020,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /*
+<<<<<<< HEAD
 *     Megamenu
+=======
+* ===================================================
+*     Megamenu
+* ===================================================
+>>>>>>> aurmich/dev
 */
 .megamenu {
   overflow: hidden;
@@ -11301,7 +11319,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /*
+<<<<<<< HEAD
 *     Multi-level dropdown
+=======
+* ===================================================
+*     Multi-level dropdown
+* ===================================================
+>>>>>>> aurmich/dev
 */
 .dropdown-submenu {
   position: relative;
@@ -11314,7 +11338,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /*
+<<<<<<< HEAD
 *     Card Elements
+=======
+* ===================================================
+*     Card Elements
+* ===================================================
+>>>>>>> aurmich/dev
 */
 .card-poster {
   -ms-flex-direction: row;
@@ -11386,7 +11416,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /*
+<<<<<<< HEAD
 *     Homepage Elements
+=======
+* ===================================================
+*     Homepage Elements
+* ===================================================
+>>>>>>> aurmich/dev
 */
 .hero-home {
   display: -ms-flexbox;
@@ -11557,7 +11593,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /*
+<<<<<<< HEAD
 *    Detail page
+=======
+* ===================================================
+*    Detail page
+* ===================================================
+>>>>>>> aurmich/dev
 */
 .detail-slider {
   overflow: hidden;
@@ -11609,7 +11651,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /*
+<<<<<<< HEAD
 *     Category sidebar + filter
+=======
+* ===================================================
+*     Category sidebar + filter
+* ===================================================
+>>>>>>> aurmich/dev
 */
 .filter-block {
   padding-top: 2rem;
@@ -11634,7 +11682,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /*
+<<<<<<< HEAD
 *     Custom form controls
+=======
+* ===================================================
+*     Custom form controls
+* ===================================================
+>>>>>>> aurmich/dev
 */
 .form-label {
   color: #868e96;
@@ -11877,7 +11931,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /*
+<<<<<<< HEAD
 *    Maps
+=======
+* ===================================================
+*    Maps
+* ===================================================
+>>>>>>> aurmich/dev
 */
 .map-wrapper-450 {
   height: 450px;
@@ -12094,7 +12154,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /*
+<<<<<<< HEAD
 *    Icons + Badges
+=======
+* ===================================================
+*    Icons + Badges
+* ===================================================
+>>>>>>> aurmich/dev
 */
 .badge-transparent {
   color: #212529;
@@ -12176,7 +12242,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /*
+<<<<<<< HEAD
 *    Custom Nav Pills
+=======
+* ===================================================
+*    Custom Nav Pills
+* ===================================================
+>>>>>>> aurmich/dev
 */
 .nav-pills-custom {
   -ms-flex-wrap: wrap;
@@ -12200,7 +12272,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /*
+<<<<<<< HEAD
 *     Testimonials
+=======
+* ===================================================
+*     Testimonials
+* ===================================================
+>>>>>>> aurmich/dev
 */
 .testimonial-quote {
   margin-bottom: 10px;
@@ -12249,7 +12327,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /*
+<<<<<<< HEAD
 *     RIBBONS
+=======
+* ===================================================
+*     RIBBONS
+* ===================================================
+>>>>>>> aurmich/dev
 */
 .ribbon {
   position: absolute;
@@ -12353,7 +12437,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /*
+<<<<<<< HEAD
 *     Typography
+=======
+* ===================================================
+*     Typography
+* ===================================================
+>>>>>>> aurmich/dev
 */
 .subtitle {
   margin-bottom: 0;
@@ -12503,7 +12593,13 @@ p.lead strong {
 }
 
 /*
+<<<<<<< HEAD
 *    Accordion
+=======
+* ===================================================
+*    Accordion
+* ===================================================
+>>>>>>> aurmich/dev
 */
 .accordion-link {
   display: block;
@@ -12517,7 +12613,13 @@ p.lead strong {
 }
 
 /*
+<<<<<<< HEAD
 *    Booking
+=======
+* ===================================================
+*    Booking
+* ===================================================
+>>>>>>> aurmich/dev
 */
 .date-tile {
   display: -ms-flexbox;
@@ -12535,7 +12637,13 @@ p.lead strong {
 }
 
 /*
+<<<<<<< HEAD
 *     Homepage Elements
+=======
+* ===================================================
+*     Homepage Elements
+* ===================================================
+>>>>>>> aurmich/dev
 */
 .team-img {
   position: relative;
@@ -12564,7 +12672,13 @@ p.lead strong {
 }
 
 /*
+<<<<<<< HEAD
 *     Daterange Picker
+=======
+* ===================================================
+*     Daterange Picker
+* ===================================================
+>>>>>>> aurmich/dev
 */
 .datepicker-container-left,
 .datepicker-container-right {
@@ -13061,7 +13175,13 @@ p.lead strong {
 }
 
 /*
+<<<<<<< HEAD
 *      Dropzone
+=======
+* ==========================================================
+*      Dropzone
+* ==========================================================
+>>>>>>> aurmich/dev
 */
 @-webkit-keyframes passing-through {
   0% {
@@ -13433,7 +13553,13 @@ p.lead strong {
 }
 
 /*
+<<<<<<< HEAD
 *     Bootstrap select theming
+=======
+* ===================================================
+*     Bootstrap select theming
+* ===================================================
+>>>>>>> aurmich/dev
 */
 .btn.btn-selectpicker {
   color: #ced4da;
@@ -13921,7 +14047,13 @@ select.selectpicker {
 }
 
 /*
+<<<<<<< HEAD
 *     Magnific Popup
+=======
+* ===================================================
+*     Magnific Popup
+* ===================================================
+>>>>>>> aurmich/dev
 */
 button.mfp-arrow,
 button.mfp-close {
@@ -13954,7 +14086,13 @@ button.mfp-close {
 }
 
 /*
+<<<<<<< HEAD
 *     NoUI Slider theming
+=======
+* ===================================================
+*     NoUI Slider theming
+* ===================================================
+>>>>>>> aurmich/dev
 */
 .noUi-target {
   background: #ddd;
@@ -14006,7 +14144,13 @@ button.mfp-close {
 }
 
 /*
+<<<<<<< HEAD
 *     Swiper theming
+=======
+* ===================================================
+*     Swiper theming
+* ===================================================
+>>>>>>> aurmich/dev
 */
 .swiper-container-mx-negative {
   margin-left: -16px;
@@ -14058,7 +14202,13 @@ button.mfp-close {
 }
 
 /*
+<<<<<<< HEAD
 *    Custom Bootstrapious Utils
+=======
+* ===================================================
+*    Custom Bootstrapious Utils
+* ===================================================
+>>>>>>> aurmich/dev
 */
 /*
    Text utils
@@ -14650,7 +14800,13 @@ img.bg-image {
 }
 
 /*
+<<<<<<< HEAD
 *     Docs
+=======
+* ===================================================
+*     Docs
+* ===================================================
+>>>>>>> aurmich/dev
 */
 .docs-item {
   padding: 2.5rem 0;
@@ -14698,7 +14854,13 @@ img.bg-image {
 
 /*
 
+<<<<<<< HEAD
 STYLE SWITCHER FOR DEMO
+=======
+=====================
+STYLE SWITCHER FOR DEMO
+=====================
+>>>>>>> aurmich/dev
 
 */
 #style-switch-button {

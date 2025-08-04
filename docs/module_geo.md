@@ -39,6 +39,10 @@ Namespace: `Modules\Geo\Database\Factories`
 ### Seeders
 Namespace: `Modules\Geo\Database\Seeders`
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 ---
 
 ## Gestione dati geografici statici (GeoJsonModel readonly)
@@ -53,6 +57,11 @@ Per tutti i dati statici (regioni, province, comuni, cap) di dimensioni ridotte,
 
 ---
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+>>>>>>> aurmich/dev
 ## Testing
 Comandi disponibili:
 ```bash

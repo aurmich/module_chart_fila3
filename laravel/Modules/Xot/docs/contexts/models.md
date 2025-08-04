@@ -79,7 +79,17 @@ Questo documento definisce i contesti e le regole per i modelli dell'applicazion
 Per validare i contesti dei modelli:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Validare tutti i modelli
 php artisan mcp:validate
 

@@ -479,7 +479,14 @@ class TenantIsolationTest extends TestCase
 I feature test saranno integrati nella pipeline CI/CD per essere eseguiti automaticamente ad ogni commit o pull request, garantendo così che le modifiche al codice non introducano regressioni nelle funzionalità critiche.
 
 ```yaml
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # .github/workflows/feature-tests.yml
 name: Feature Tests
 

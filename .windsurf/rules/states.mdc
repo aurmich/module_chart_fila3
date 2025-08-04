@@ -1,8 +1,47 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: manual
+description:
+globs:
+---
+# Regole per gli Stati e le Transizioni
+
+## Struttura Directory
+- Le classi di transizione devono essere nella sottodirectory `Transitions/` della directory dello stato
+- Il namespace deve essere `Modules\<nome_modulo>\States\<entità>`
+
+## Convenzioni di Nomenclatura
+- Classi di stato: nome descrittivo (es. `Pending`, `Active`)
+- Classi di transizione: pattern `FromStateToState` (es. `PendingToActive`)
+
+## Implementazione
+- Estendere `Transition` di Spatie
+- Implementare costruttore con stato di partenza
+- Implementare `canTransition()` e `handle()`
+- Utilizzare `$this->state->getModel()` per accedere al modello
+
+## Best Practices
+- Mantenere la logica di transizione atomica
+- Documentare le condizioni di transizione
+- Utilizzare il trait `HasStates` nel modello
+- Definire le transizioni nel metodo `config()`
+
+## Collegamenti
+- [Documentazione Stati <nome progetto>](mdc:../../laravel/Modules/<nome progetto>/docs/STATES.md)
+- [Regole Generali Stati](mdc:../../laravel/Modules/Xot/docs/STATES.md)
+
+=======
+>>>>>>> aurmich/dev
 description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 # Regole per Stati e Transizioni
 
 ## Quando
@@ -60,5 +99,21 @@ class ActiveToSuspended extends Transition
 ```
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Documentazione Stati](mdc:../laravel/Modules/<nome progetto>/docs/STATES.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Documentazione Stati](mdc:../laravel/Modules/<nome progetto>/docs/STATES.md)
+=======
+<<<<<<< HEAD
+- [Documentazione Stati](mdc:../laravel/Modules/<nome progetto>/docs/STATES.md)
+=======
+- [Documentazione Stati](mdc:../laravel/Modules/SaluteOra/docs/STATES.md)
+>>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+=======
+- [Documentazione Stati](mdc:../laravel/Modules/<nome progetto>/docs/STATES.md)
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 - [Documentazione Spatie Model States](mdc:https:/spatie.be/docs/laravel-model-states)

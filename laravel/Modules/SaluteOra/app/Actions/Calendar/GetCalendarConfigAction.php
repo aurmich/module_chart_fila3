@@ -88,6 +88,11 @@ class GetCalendarConfigAction
         $businessHours = $this->getBusinessHours();
         $dayOfWeek = $date->dayOfWeekIso;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
         // Skip weekends if not in business days - ensure both are compared as integers
         $businessDays = (array) ($businessHours['daysOfWeek'] ?? []);
         if (!in_array((int)$dayOfWeek, $businessDays, true)) {
@@ -96,6 +101,28 @@ class GetCalendarConfigAction
 
         $startTime = $date->copy()->setTimeFromTimeString((string) $businessHours['startTime']);
         $endTime = $date->copy()->setTimeFromTimeString((string) $businessHours['endTime']);
+<<<<<<< HEAD
+=======
+=======
+        // Skip weekends if not in business days
+        if (!in_array($dayOfWeek, $businessHours['daysOfWeek'])) {
+            return [];
+        }
+
+        $startTime = $date->copy()->setTimeFromTimeString($businessHours['startTime']);
+        $endTime = $date->copy()->setTimeFromTimeString($businessHours['endTime']);
+>>>>>>> 2099645a (.)
+=======
+        // Skip weekends if not in business days - ensure both are compared as integers
+        $businessDays = (array) ($businessHours['daysOfWeek'] ?? []);
+        if (!in_array((int)$dayOfWeek, $businessDays, true)) {
+            return [];
+        }
+
+        $startTime = $date->copy()->setTimeFromTimeString((string) $businessHours['startTime']);
+        $endTime = $date->copy()->setTimeFromTimeString((string) $businessHours['endTime']);
+>>>>>>> 8e4d163b (phpstan)
+>>>>>>> aurmich/dev
 
         $slots = [];
         $currentSlot = $startTime->copy();

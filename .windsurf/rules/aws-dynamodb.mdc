@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: This rule provides best practices and coding standards for developing applications using AWS DynamoDB. It covers aspects like schema design, performance optimization, security, and testing.
 globs: *.js,*.ts,*.jsx,*.tsx,*.py
 ---

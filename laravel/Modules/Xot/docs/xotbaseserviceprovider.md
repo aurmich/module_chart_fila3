@@ -197,6 +197,15 @@ Applicare la stessa regola per la registrazione delle traduzioni JSON.
 **Collegamento:**
 Vedi anche [registerBladeIcons.md](./registerBladeIcons.md) per la gestione centralizzata dei path.
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 ## Console Commands: Religione, Politica, Filosofia, Zen
 
 ### Principio
@@ -228,3 +237,15 @@ $this->commands([
 ### Zen finale
 > "Il miglior comando è quello che non devi mai registrare a mano."
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev

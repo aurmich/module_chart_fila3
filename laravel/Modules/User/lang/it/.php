@@ -6,9 +6,32 @@ return array (
     'startDate' => 
     array (
       'label' => 'startDate',
+<<<<<<< HEAD
       'description' => 'startDate',
       'helper_text' => 'startDate',
       'placeholder' => 'startDate',
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      'description' => 'startDate',
+      'helper_text' => 'startDate',
+      'placeholder' => 'startDate',
+<<<<<<< HEAD
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+      'description' => 'startDate',
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> 15cb84fb (fix collisions)
+=======
+      'description' => 'startDate',
+>>>>>>> d23ba493 (add calendar)
+=======
+>>>>>>> f2140a80 (- continuo style landing page;)
+>>>>>>> aurmich/dev
     ),
     'endDate' => 
     array (

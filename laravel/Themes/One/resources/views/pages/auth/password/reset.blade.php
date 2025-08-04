@@ -1,4 +1,11 @@
 <?php
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
 declare(strict_types=1);
 
@@ -81,3 +88,151 @@ name('password.request');
         });
     </script>
 </x-layouts.main>
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 54f4fa16 (.)
+declare(strict_types=1);
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
+=======
+declare(strict_types=1);
+>>>>>>> d23ba493 (add calendar)
+use Illuminate\Support\Facades\Password;
+use function Laravel\Folio\name;
+use Livewire\Volt\Component;
+use Livewire\Attributes\Validate;
+
+name('password.request');
+
+new class extends Component
+{
+    #[Validate('required|email')]
+    public $email = null;
+
+    public $emailSentMessage = false;
+
+    public function sendResetPasswordLink()
+    {
+        $this->validate();
+
+        $response = Password::broker()->sendResetLink(['email' => $this->email]);
+
+        if ($response == Password::RESET_LINK_SENT) {
+            $this->emailSentMessage = trans($response);
+
+            return;
+        }
+
+        $this->addError('email', trans($response));
+    }
+};
+
+?>
+
+<x-layouts.main>
+
+    <div class="flex flex-col items-stretch justify-center w-screen min-h-screen py-10 sm:items-center">
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <div class="sm:mx-auto sm:w-full sm:max-w-md flex flex-col items-center">
+            <x-ui.link href="{{ route('home') }}">
+            <img class="w-[300px] lg:w-[350px] text-center" src="/img/logo-v2.png">
+            </x-ui.link>
+
+            <h2 class="mt-5 text-2xl font-extrabold leading-9 text-center text-[#272C4D]">
+=======
+        <div class="sm:mx-auto sm:w-full sm:max-w-md">
+=======
+        <div class="sm:mx-auto sm:w-full sm:max-w-md flex flex-col items-center">
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+            <x-ui.link href="{{ route('home') }}">
+            <img class="w-[300px] lg:w-[350px] text-center" src="/img/logo-v2.png">
+            </x-ui.link>
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+            <h2 class="mt-5 text-2xl font-extrabold leading-9 text-center text-gray-800 dark:text-gray-200">
+>>>>>>> 54f4fa16 (.)
+=======
+            <h2 class="mt-5 text-2xl font-extrabold leading-9 text-center text-[#1A467F]">
+>>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
+=======
+            <h2 class="mt-5 text-2xl font-extrabold leading-9 text-center text-[#272C4D]">
+>>>>>>> 89a8313a (- update primary colors)
+                Reset password
+            </h2>
+            <div class="text-sm leading-5 text-center text-gray-600 dark:text-gray-400 space-x-0.5">
+                <span>Or</span>
+                <x-ui.text-link href="{{ route('login') }}">return to login</x-ui.text-link>
+            </div>
+        </div>
+
+        @volt('auth.password.reset')
+        <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+            <div class="px-10 py-0 sm:py-8 sm:shadow-sm sm:bg-white dark:sm:bg-gray-950/50 dark:border-gray-200/10 sm:border sm:rounded-lg border-gray-200/60">
+                @if ($emailSentMessage)
+                <div class="p-4 rounded-md bg-green-50 dark:bg-green-600">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-green-400 dark:text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+
+                        <div class="ml-3">
+                            <p class="text-sm font-medium leading-5 text-green-800 dark:text-green-200">
+                                {{ $emailSentMessage }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                @else
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9dcbbc15 (- updated login e reset view)
+                <form wire:submit="sendResetPasswordLink" class="space-y-6 flex flex-col items-center justify-center">
+                    <div class="w-full">
+                        <x-ui.input class="w-full" label="Email address" type="email" id="email" name="email" wire:model="email" />
+                    </div>
+                    <div>
+                        <button class="w-full py-3 px-3 rounded bg-[#FF5F7E] text-white font-bold transition" submit="true">Send password reset link</button>
+                    </div>
+<<<<<<< HEAD
+=======
+                <form wire:submit="sendResetPasswordLink" class="space-y-6">
+                    <x-ui.input label="Email address" type="email" id="email" name="email" wire:model="email" />
+                    <x-ui.button type="primary" rounded="md" submit="true">Send password reset link</x-ui.button>
+>>>>>>> 54f4fa16 (.)
+=======
+                <form wire:submit="sendResetPasswordLink" class="space-y-6 flex-col items-center">
+                    <x-ui.input label="Email address" type="email" id="email" name="email" wire:model="email" />
+                    <x-filament::button type="primary" rounded="md" submit="true">Send password reset link</x-filament::button>
+>>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
+=======
+>>>>>>> 9dcbbc15 (- updated login e reset view)
+                </form>
+                @endif
+            </div>
+        </div>
+        @endvolt
+<<<<<<< HEAD
+<<<<<<< HEAD
+    </div>
+
+</x-layouts.main>
+>>>>>>> aurmich/dev
+=======
+
+=======
+>>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
+    </div>
+
+</x-layouts.main>
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev

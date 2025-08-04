@@ -24,6 +24,12 @@
     <div 
         x-data="{
             selectedDate: @js($currentValue),
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
             
             
             selectDate(dateString) {
@@ -34,9 +40,58 @@
             deSelectDate(){
                 this.selectedDate = null;
                 $wire.set('{{ $statePath }}', null);
+<<<<<<< HEAD
             },
             // ✅ Metodi per navigazione mese - chiamata diretta al widget parent
             previousMonth() {
+=======
+=======
+=======
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+            enabledDates: @js($enabledDates->toArray()),
+            
+            selectDate(dateString) {
+                console.log('selectDate', dateString);
+                console.log('enabledDates', this.enabledDates);
+                if (this.enabledDates.includes(dateString)) {
+                    // Data abilitata: seleziona
+                    this.selectedDate = dateString;
+                    $wire.set('{{ $statePath }}', dateString);
+                } else {
+                    // Data NON abilitata: deseleziona tutto
+                    this.selectedDate = null;
+                    $wire.set('{{ $statePath }}', null);
+                }
+<<<<<<< HEAD
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+            
+            
+            selectDate(dateString) {
+                this.selectedDate = dateString;
+                $wire.set('{{ $statePath }}', dateString);
+
+            },
+            deSelectDate(){
+                this.selectedDate = null;
+                $wire.set('{{ $statePath }}', null);
+>>>>>>> 83367146 (✨ (lang files): add new Italian language translations for appointment)
+            },
+            // ✅ Metodi per navigazione mese - chiamata diretta al widget parent
+            previousMonth() {
+<<<<<<< HEAD
+                dddx('a');
+<<<<<<< HEAD
+=======
+            },
+            // ✅ Metodi per navigazione mese - chiamata diretta al widget parent
+            previousMonth() {
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+>>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
+=======
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
+>>>>>>> aurmich/dev
                 $wire.call('previousMonth');
             },
             nextMonth() {
@@ -76,7 +131,27 @@
                 <!-- Intestazioni giorni -->
                 <div class="mt-6 grid grid-cols-7 text-xs/6 text-gray-500">
                     @foreach($weekdays as $weekday)
+<<<<<<< HEAD
                         <div class="uppercase">{{ $weekday }}</div>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                        <div class="uppercase">{{ $weekday }}</div>
+=======
+                        <div>{{ $weekday }}</div>
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+                        <div class="uppercase">{{ $weekday }}</div>
+>>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
+=======
+                        <div>{{ $weekday }}</div>
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+                        <div class="uppercase">{{ $weekday }}</div>
+>>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
+>>>>>>> aurmich/dev
                     @endforeach
                 </div>
                 
@@ -92,6 +167,13 @@
                                     
                                     // ✅ Pre-calcolo classi CSS per performance
                                     if ($isSelected) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
                                         $classes = 'relative py-2 px-1 text-sm font-semibold bg-[#FF5F7E] text-white ring-2 ring-[#FF5F7E] shadow-lg z-10';
                                         $onclick = "deSelectDate()";
                                     } elseif ($isEnabled && $isCurrentMonth) {
@@ -103,16 +185,81 @@
                                     } else {
                                         $classes = 'relative py-2 px-1 text-sm font-medium bg-gray-50/30 text-gray-300 cursor-not-allowed opacity-40';
                                         $onclick = "deSelectDate()";
+<<<<<<< HEAD
+=======
+=======
+                                        $classes = 'relative py-2 px-1 text-sm font-semibold bg-blue-600 text-white ring-2 ring-blue-600 ring-offset-2 shadow-lg z-10';
+=======
+                                        $classes = 'relative py-2 px-1 text-sm font-semibold bg-[#FF5F7E] text-white ring-2 ring-[#FF5F7E] shadow-lg z-10';
+>>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
+                                    } elseif ($isEnabled && $isCurrentMonth) {
+                                        $classes = 'relative py-2 px-1 text-sm font-semibold bg-blue-100 text-[#272C4D] border-2 border-blue-300 cursor-pointer hover:scale-105 transform transition-all duration-200';
+=======
+                                        $classes = 'relative py-2 px-1 text-sm font-semibold bg-blue-600 text-white ring-2 ring-blue-600 ring-offset-2 shadow-lg z-10';
+                                    } elseif ($isEnabled && $isCurrentMonth) {
+<<<<<<< HEAD
+                                        $classes = 'relative py-2 px-1 text-sm font-semibold bg-green-50 text-green-700 border-2 border-green-200 hover:bg-green-100 cursor-pointer';
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+                                        $classes = 'relative py-2 px-1 text-sm font-semibold bg-green-50 text-green-700 border-2 border-green-200 hover:bg-green-100 cursor-pointer hover:scale-105 transform transition-all duration-200';
+>>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
+=======
+                                        $classes = 'relative py-2 px-1 text-sm font-semibold bg-[#FF5F7E] text-white ring-2 ring-[#FF5F7E] shadow-lg z-10';
+                                        $onclick = "deSelectDate()";
+                                    } elseif ($isEnabled && $isCurrentMonth) {
+                                        $classes = 'relative py-2 px-1 text-sm font-semibold bg-blue-100 text-[#272C4D] border-2 border-blue-300 cursor-pointer hover:scale-105 transform transition-all duration-200';
+<<<<<<< HEAD
+>>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
+=======
+                                        $onclick = "selectDate('".$day['dateString']."')";
+>>>>>>> 83367146 (✨ (lang files): add new Italian language translations for appointment)
+                                    } elseif ($isCurrentMonth) {
+                                        $classes = 'relative py-2 px-1 text-sm font-medium bg-gray-50 text-gray-400 border border-gray-200 cursor-not-allowed opacity-60';
+                                        $onclick = "deSelectDate()";
+                                    } else {
+                                        $classes = 'relative py-2 px-1 text-sm font-medium bg-gray-50/30 text-gray-300 cursor-not-allowed opacity-40';
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+                                        $onclick = "deSelectDate()";
+>>>>>>> 83367146 (✨ (lang files): add new Italian language translations for appointment)
+>>>>>>> aurmich/dev
                                     }
                                 @endphp
                                 
                                 <button 
                                     type="button" 
+<<<<<<< HEAD
                                     x-on:click="{{ $onclick }}"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                                    x-on:click="{{ $onclick }}"
+=======
+                                    x-on:click="selectDate('{{ $day['dateString'] }}')"
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+                                    x-on:click="selectDate('{{ $day['dateString'] }}')"
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+                                    x-on:click="{{ $onclick }}"
+>>>>>>> 83367146 (✨ (lang files): add new Italian language translations for appointment)
+>>>>>>> aurmich/dev
                                     class="{{ $classes }}"
                                 >
                                     {{ $day['day'] }}
                                     
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
                                     {{-- ✨ INDICATORI ELEGANTI PER DATE DISPONIBILI --}}
                                     @if($isEnabled && $isCurrentMonth && !$isSelected)
                                         {{-- Barra sottile verde sotto la data disponibile --}}
@@ -123,12 +270,80 @@
                                     @if($isSelected)
                                         {{-- Barra pulsante blu sotto la data selezionata --}}
                                         <div class="absolute bottom-0 left-0 right-0 h-1 bg-white"></div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                                    @if($isEnabled && $isCurrentMonth)
+                                        <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+=======
+=======
+>>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
+                                    {{-- ✨ INDICATORI ELEGANTI PER DATE DISPONIBILI --}}
+                                    @if($isEnabled && $isCurrentMonth && !$isSelected)
+                                        {{-- Barra sottile verde sotto la data disponibile --}}
+                                        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-8 h-0.5 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full"></div>
+<<<<<<< HEAD
+>>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
+                                    @endif
+                                    
+                                    {{-- ✨ INDICATORI ELEGANTI PER DATA SELEZIONATA --}}
+                                    @if($isSelected)
+<<<<<<< HEAD
+                                        <span class="absolute -top-1 -right-1 w-2 h-2 bg-blue-400 rounded-full"></span>
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+                                        {{-- Barra pulsante blu sotto la data selezionata --}}
+                                        <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-b-md shadow-inner animate-pulse"></div>
+>>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
+=======
+>>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
+=======
+                                    @if($isEnabled && $isCurrentMonth)
+                                        <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+=======
+>>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
+                                    @endif
+                                    
+                                    {{-- ✨ INDICATORI ELEGANTI PER DATA SELEZIONATA --}}
+                                    @if($isSelected)
+<<<<<<< HEAD
+                                        <span class="absolute -top-1 -right-1 w-2 h-2 bg-blue-400 rounded-full"></span>
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+                                        {{-- Barra pulsante blu sotto la data selezionata --}}
+                                        <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-b-md shadow-inner animate-pulse"></div>
+>>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
+=======
+>>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
+>>>>>>> aurmich/dev
                                     @endif
                                 </button>
                             @endforeach
                         @endforeach
                     @else
+<<<<<<< HEAD
                         <x-filament::loading-indicator class="h-5 w-5" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                        <x-filament::loading-indicator class="h-5 w-5" />
+=======
+                        <div class="col-span-7 p-4 text-center text-gray-500">Caricamento calendario...</div>
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+                        <x-filament::loading-indicator class="h-5 w-5" />
+>>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
+=======
+                        <div class="col-span-7 p-4 text-center text-gray-500">Caricamento calendario...</div>
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+                        <x-filament::loading-indicator class="h-5 w-5" />
+>>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
+>>>>>>> aurmich/dev
                     @endif
                 </div>
 
@@ -138,6 +353,13 @@
     </div>
 </x-dynamic-component>
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 {{-- ✨ CSS ELEGANTE MIGLIORATO --}}
 <style>
 .inline-date-picker button {
@@ -180,5 +402,71 @@
 
 .inline-date-picker .absolute.-top-1 {
     animation: fadeInScale 0.4s ease-out;
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+{{-- CSS minimo --}}
+<style>
+.inline-date-picker button {
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+<<<<<<< HEAD
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+{{-- ✨ CSS ELEGANTE MIGLIORATO --}}
+<style>
+.inline-date-picker button {
+=======
+{{-- ✨ CSS ELEGANTE MIGLIORATO --}}
+<style>
+.inline-date-picker button {
+>>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Effetto hover per date disponibili */
+.inline-date-picker button:hover:not([disabled]) {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Animazione per gli indicatori */
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%) translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0) translateX(-50%);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        transform: scale(0) translate(-50%, -50%);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1) translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+/* Applicazione animazioni */
+.inline-date-picker .absolute.bottom-0 {
+    animation: slideInFromBottom 0.3s ease-out;
+}
+
+.inline-date-picker .absolute.-top-1 {
+    animation: fadeInScale 0.4s ease-out;
+<<<<<<< HEAD
+>>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
+=======
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+>>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
+>>>>>>> aurmich/dev
 }
 </style> 

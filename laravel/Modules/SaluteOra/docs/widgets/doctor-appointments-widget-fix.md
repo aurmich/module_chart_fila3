@@ -106,7 +106,11 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
     public function deleteAction(): Action
     {
         return Action::make('delete')
+<<<<<<< HEAD
             // Traduzione automatica dal file di lingua
+=======
+            ->label('Elimina')
+>>>>>>> aurmich/dev
             ->icon('heroicon-o-trash')
             ->color('danger')
             ->requiresConfirmation()
@@ -188,7 +192,14 @@ Template Call → wire:click → Widget Method → State Transition → Cache In
 
 ### Test Rendering
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
+>>>>>>> aurmich/dev
 # Accesso alla pagina appuntamenti
 GET /it/pages/appuntamenti-entrata
 
@@ -200,7 +211,14 @@ GET /it/pages/appuntamenti-entrata
 
 ### Test Interazioni
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
+>>>>>>> aurmich/dev
 # Test azioni appuntamenti
 ✅ Conferma appuntamento funziona
 ✅ Rifiuta appuntamento funziona
@@ -241,7 +259,14 @@ GET /it/pages/appuntamenti-entrata
 
 ### Validation Commands
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
+>>>>>>> aurmich/dev
 # Verifica single root element
 grep -n "^<" widget-template.blade.php | wc -l  # Dovrebbe essere 1
 
@@ -295,3 +320,10 @@ php artisan livewire:test DoctorAppointmentsWidget
 **Risk**: 🟢 **BASSO** (backward compatible)
 
 *Ultimo aggiornamento: 2025-01-03*
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+*Autore: AI Assistant* 
+>>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
+>>>>>>> aurmich/dev

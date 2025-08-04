@@ -5,16 +5,75 @@
 - [Docs Theme Two](../../../Themes/Two/_docs/links.txt)
 - [Docs Root](../../../docs/INDEX.md)
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 ## Collegamenti in Entrata
 - [Docs CMS](../../../Modules/Cms/docs/LINKS.md)
 - [Docs Root](../../../docs/INDEX.md)
 
 > Questo tema è multiprogetto: i collegamenti sono generici e non fanno riferimento a un progetto specifico.
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 35e9b7ea (feat(scripts): add script to rename files to lowercase while preserving README.md case for consistency and organization)
+=======
+## Collegamenti tra versioni di links.md
+* [links.md](laravel/Modules/Gdpr/docs/links.md)
+* [links.md](laravel/Modules/Notify/docs/links.md)
+* [links.md](laravel/Modules/Xot/docs/ci/links.md)
+* [links.md](laravel/Modules/Xot/docs/open_sources/links.md)
+* [links.md](laravel/Modules/User/resources/views/docs/links.md)
+* [links.md](laravel/Modules/Lang/docs/links.md)
+* [links.md](laravel/Modules/Job/docs/links.md)
+* [links.md](laravel/Modules/Tenant/docs/it/links/links.md)
+* [links.md](laravel/Modules/Cms/docs/links.md)
+* [links.md](laravel/Themes/One/docs/links.md)
+
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 ## Collegamenti tra versioni di LINKS.md
 * [LINKS.md](laravel/Modules/Xot/docs/LINKS.md)
 * [LINKS.md](laravel/Modules/User/docs/LINKS.md)
 * [LINKS.md](laravel/Modules/UI/docs/LINKS.md)
 * [LINKS.md](laravel/Modules/Cms/docs/LINKS.md)
 * [LINKS.md](laravel/Themes/One/docs/LINKS.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+## Collegamenti tra versioni di links.md
+* [links.md](laravel/Modules/Gdpr/docs/links.md)
+* [links.md](laravel/Modules/Notify/docs/links.md)
+* [links.md](laravel/Modules/Xot/docs/ci/links.md)
+* [links.md](laravel/Modules/Xot/docs/open_sources/links.md)
+* [links.md](laravel/Modules/User/resources/views/docs/links.md)
+* [links.md](laravel/Modules/Lang/docs/links.md)
+* [links.md](laravel/Modules/Job/docs/links.md)
+* [links.md](laravel/Modules/Tenant/docs/it/links/links.md)
+* [links.md](laravel/Modules/Cms/docs/links.md)
+* [links.md](laravel/Themes/One/docs/links.md)
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 35e9b7ea (feat(scripts): add script to rename files to lowercase while preserving README.md case for consistency and organization)
+=======
+>>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 

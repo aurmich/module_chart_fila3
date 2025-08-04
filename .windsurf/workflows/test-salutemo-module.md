@@ -31,7 +31,14 @@ Eseguire una suite completa di test per il modulo SaluteMo, inclusi:
 ### 1. Preparazione Ambiente
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Assicurati di essere nella directory corretta
 cd /var/www/html/_bases/base_saluteora/laravel
 
@@ -51,31 +58,66 @@ php artisan migrate:fresh --seed --env=testing
 ### 2. Esecuzione Test Unitari
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Esegui tutti i test unitari del modulo SaluteMo
 php artisan test Modules/SaluteMo/tests/Unit
 
 # Esegui un singolo test
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # php artisan test Modules/SaluteMo/tests/Unit/ExampleTest.php
 ```
 
 ### 3. Esecuzione Test di Feature
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Esegui tutti i test di feature del modulo SaluteMo
 php artisan test Modules/SaluteMo/tests/Feature
 
 # Esegui un singolo test di feature
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # php artisan test Modules/SaluteMo/tests/Feature/ExampleFeatureTest.php
 ```
 
 ### 4. Test di Integrazione
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Esegui i test di integrazione
 php artisan test Modules/SaluteMo/tests/Integration
 ```
@@ -83,7 +125,14 @@ php artisan test Modules/SaluteMo/tests/Integration
 ### 5. Test di Sicurezza
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Verifica le vulnerabilità di sicurezza con PHP Security Checker
 if ! command -v local-php-security-checker &> /dev/null; then
     echo "Installazione di PHP Security Checker..."
@@ -100,7 +149,14 @@ local-php-security-checker --path=/var/www/html/_bases/base_saluteora/laravel
 ### 1. PHPStan (Analisi Statica)
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Esegui PHPStan sul modulo SaluteMo
 ./vendor/bin/phpstan analyse Modules/SaluteMo --level=9
 ```
@@ -108,19 +164,40 @@ local-php-security-checker --path=/var/www/html/_bases/base_saluteora/laravel
 ### 2. PHP CS Fixer (Formattazione Codice)
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Verifica problemi di formattazione
 ./vendor/bin/php-cs-fixer fix --dry-run --diff Modules/SaluteMo
 
 # Correggi automaticamente i problemi
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # ./vendor/bin/php-cs-fixer fix Modules/SaluteMo
 ```
 
 ## 📊 Copertura del Codice
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Genera report di copertura
 XDEBUG_MODE=coverage php artisan test --coverage-html=coverage-report Modules/SaluteMo
 
@@ -133,7 +210,14 @@ xdg-open coverage-report/index.html
 ### Abilita il Debug
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Modifica il file .env.testing
 cp .env .env.testing
 
@@ -145,7 +229,14 @@ sed -i 's/APP_ENV=.*/APP_ENV=testing/' .env.testing
 ### Visualizza i Log
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Monitora i log in tempo reale
 tail -f storage/logs/laravel-$(date +'%Y-%m-%d').log
 ```
@@ -155,7 +246,14 @@ tail -f storage/logs/laravel-$(date +'%Y-%m-%d').log
 ### 1. Genera Report di Copertura
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Installa le dipendenze per il report HTML
 composer require --dev phpunit/php-code-coverage
 
@@ -166,7 +264,14 @@ XDEBUG_MODE=coverage php artisan test --coverage-html=coverage-report
 ### 2. Analisi della Qualità con PHP Insights
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Installa PHP Insights
 composer require nunomaduro/phpinsights --dev
 

@@ -1,7 +1,15 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
+=======
+<<<<<<< HEAD
+declare(strict_types=1);
+
+=======
+>>>>>>> 90ef519a (✨ (IconStateColumn.php): add localization support for state labels using)
+>>>>>>> aurmich/dev
 return [
     'active' => [
         'label' => 'Attivo',
@@ -35,6 +43,10 @@ return [
         'label' => 'Integrazione in attesa',
         'color' => 'warning',
     ],
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     'integration_completed' => [
         'label' => 'Integrazione completata',
         'color' => 'success',
@@ -43,4 +55,54 @@ return [
         'label' => 'Integrazione annullata',
         'color' => 'danger',
     ],
+<<<<<<< HEAD
+=======
+=======
+    'integration_approved' => [
+        'label' => 'Integrazione approvata',
+        'color' => 'success',
+    ],
+    'integration_rejected' => [
+        'label' => 'Integrazione rifiutata',
+        'color' => 'danger',
+    ],
+    'integration_pending' => [
+        'label' => 'Integrazione in attesa',
+        'color' => 'warning',
+    ],
+    'integration_approved' => [
+        'label' => 'Integrazione approvata',
+        'color' => 'success',
+    ],
+    'integration_rejected' => [
+        'label' => 'Integrazione rifiutata',
+        'color' => 'danger',
+    ],
+    'integration_pending' => [
+        'label' => 'Integrazione in attesa',
+        'color' => 'warning',
+    ],
+    'integration_approved' => [
+        'label' => 'Integrazione approvata',
+        'color' => 'success',
+    ],
+    'integration_rejected' => [
+        'label' => 'Integrazione rifiutata',
+        'color' => 'danger',
+    ],
+    'integration_pending' => [
+        'label' => 'Integrazione in attesa',
+        'color' => 'warning',
+    ],
+    'integration_completed' => [
+        'label' => 'Integrazione completata',
+        'color' => 'success',
+    ],
+    'integration_cancelled' => [
+        'label' => 'Integrazione annullata',
+        'color' => 'danger',
+    ],
+    
+>>>>>>> 90ef519a (✨ (IconStateColumn.php): add localization support for state labels using)
+>>>>>>> aurmich/dev
 ];

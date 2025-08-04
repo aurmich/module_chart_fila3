@@ -69,6 +69,7 @@ return [
 
 ### Utilizzo Traduzioni
 ```php
+<<<<<<< HEAD
 // ❌ NON FARE MAI
 ->label('Nome')  // VIETATO: stringa hardcoded
 ->label(__('doctor.fields.name'))  // VIETATO: qualsiasi ->label()
@@ -76,6 +77,15 @@ return [
 // ✅ SEMPRE FARE
 TextInput::make('name'),  // Traduzione automatica tramite LangServiceProvider
 TextInput::make('email'), // Nessun ->label(), gestione centralizzata
+=======
+// ❌ NON FARE
+->label('Nome')
+->placeholder('Inserisci il nome')
+
+// ✅ FARE
+->label(__('doctor.fields.name'))
+->placeholder(__('doctor.fields.name_placeholder'))
+>>>>>>> aurmich/dev
 ```
 
 ### Cache

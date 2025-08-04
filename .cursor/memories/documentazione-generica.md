@@ -11,7 +11,19 @@ MAI utilizzare il nome specifico del progetto nella documentazione dei moduli. I
 - "questo modulo"
 
 ### Termini da Evitare
+<<<<<<< HEAD
 - Nomi specifici di progetti (es. "<nome progetto>", "ProjectX", ecc.)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Nomi specifici di progetti (es. "<nome progetto>", "ProjectX", ecc.)
+=======
+- Nomi specifici di progetti (es. "SaluteOra", "ProjectX", ecc.)
+>>>>>>> 54f4fa16 (.)
+=======
+- Nomi specifici di progetti (es. "<nome progetto>", "ProjectX", ecc.)
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 - Riferimenti a domini specifici associati a un singolo progetto
 - Nomi di organizzazioni specifiche
 
@@ -25,7 +37,19 @@ Mantenere la documentazione dei moduli generica consente di:
 ## Esempi
 
 ### ❌ Errato
+<<<<<<< HEAD
 "Il modulo Notify gestisce tutte le notifiche e le comunicazioni via email del sistema <nome progetto>."
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+"Il modulo Notify gestisce tutte le notifiche e le comunicazioni via email del sistema <nome progetto>."
+=======
+"Il modulo Notify gestisce tutte le notifiche e le comunicazioni via email del sistema SaluteOra."
+>>>>>>> 54f4fa16 (.)
+=======
+"Il modulo Notify gestisce tutte le notifiche e le comunicazioni via email del sistema <nome progetto>."
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 
 ### ✅ Corretto
 "Il modulo Notify gestisce tutte le notifiche e le comunicazioni via email del sistema."

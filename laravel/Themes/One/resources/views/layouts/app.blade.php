@@ -24,6 +24,13 @@
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 
         <header class="sticky top-0 z-50 bg-base-100 shadow-sm">
             <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,8 +48,28 @@
                     </div>
 
                     <div class="hidden lg:flex lg:items-center lg:space-x-6">
+<<<<<<< HEAD
                         <a href="{{ url('login') }}" class="text-base font-medium hover:text-primary transition-colors">@lang('pub_theme::common.buttons.login')</a>
                         <a href="{{ url('register') }}" class="btn btn-primary">@lang('pub_theme::common.buttons.register')</a>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                        <a href="{{ url('login') }}" class="text-base font-medium hover:text-primary transition-colors">@lang('pub_theme::common.buttons.login')</a>
+                        <a href="{{ url('register') }}" class="btn btn-primary">@lang('pub_theme::common.buttons.register')</a>
+=======
+                        <a href="{{ url('login') }}" class="text-base font-medium hover:text-primary transition-colors">Accedi</a>
+                        <a href="{{ url('register') }}" class="btn btn-primary">Registrati</a>
+>>>>>>> aurmich/dev
+=======
+                        <a href="{{ url('login') }}" class="text-base font-medium hover:text-primary transition-colors">Accedi</a>
+                        <a href="{{ url('register') }}" class="btn btn-primary">Registrati</a>
+>>>>>>> 54f4fa16 (.)
+=======
+                        <a href="{{ url('login') }}" class="text-base font-medium hover:text-primary transition-colors">Accedi</a>
+                        <a href="{{ url('register') }}" class="btn btn-primary">Registrati</a>
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
                     </div>
 
                     <div class="lg:hidden">
@@ -98,16 +125,48 @@
                         <h3 class="text-lg font-semibold mb-6">Contatti</h3>
                         <ul class="space-y-4">
                             <li class="text-sm">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
                                 <span class="opacity-90">@lang('pub_theme::common.contact.email'):</span><br>
                                 info@saluteora.it
                             </li>
                             <li class="text-sm">
                                 <span class="opacity-90">@lang('pub_theme::common.contact.phone'):</span><br>
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> d23ba493 (add calendar)
+                                <span class="opacity-90">Email:</span><br>
+                                info@saluteora.it
+                            </li>
+                            <li class="text-sm">
+                                <span class="opacity-90">Telefono:</span><br>
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
                                 +39 XXX XXX XXXX
                             </li>
                         </ul>
                     </div>
                     <div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
                         <h3 class="text-lg font-semibold mb-6">@lang('pub_theme::common.newsletter.title')</h3>
                         <p class="text-sm opacity-90 mb-4">
                             @lang('pub_theme::common.newsletter.description')
@@ -115,14 +174,60 @@
                         <form class="space-y-4">
                             <input type="email" placeholder="@lang('pub_theme::common.newsletter.email_placeholder')" class="input input-bordered w-full bg-neutral-focus text-neutral-content" />
                             <button type="submit" class="btn btn-primary w-full">@lang('pub_theme::common.newsletter.subscribe')</button>
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> d23ba493 (add calendar)
+                        <h3 class="text-lg font-semibold mb-6">Newsletter</h3>
+                        <p class="text-sm opacity-90 mb-4">
+                            Iscriviti per ricevere aggiornamenti e consigli sulla salute orale.
+                        </p>
+                        <form class="space-y-4">
+                            <input type="email" placeholder="La tua email" class="input input-bordered w-full bg-neutral-focus text-neutral-content" />
+                            <button type="submit" class="btn btn-primary w-full">Iscriviti</button>
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
                         </form>
                     </div>
                 </div>
                 <div class="mt-12 pt-8 border-t border-neutral-focus text-center text-sm opacity-90">
+<<<<<<< HEAD
                     <p>@lang('pub_theme::common.copyright', ['year' => date('Y'), 'name' => config('app.name')])</p>
                 </div>
             </div>
         </footer>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                    <p>@lang('pub_theme::common.copyright', ['year' => date('Y'), 'name' => config('app.name')])</p>
+=======
+                    <p>&copy; {{ date('Y') }} {{ config('app.name') }}. Tutti i diritti riservati.</p>
+>>>>>>> aurmich/dev
+=======
+                    <p>&copy; {{ date('Y') }} {{ config('app.name') }}. Tutti i diritti riservati.</p>
+>>>>>>> 54f4fa16 (.)
+                </div>
+            </div>
+        </footer>
+=======
+>>>>>>> 15cb84fb (fix collisions)
+=======
+                    <p>&copy; {{ date('Y') }} {{ config('app.name') }}. Tutti i diritti riservati.</p>
+                </div>
+            </div>
+        </footer>
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
     </div>
 
     <script>

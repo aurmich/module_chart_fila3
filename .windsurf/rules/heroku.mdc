@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: Comprehensive best practices and coding standards for developing, deploying, and maintaining applications on the Heroku platform. This rule emphasizes the Twelve-Factor App methodology and provides detailed guidance for optimizing application architecture, performance, security, and maintainability on Heroku.
 globs: *
 ---

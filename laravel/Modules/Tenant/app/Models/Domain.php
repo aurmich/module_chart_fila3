@@ -9,6 +9,19 @@ use Modules\Tenant\Actions\Domains\GetDomainsArrayAction;
 use Sushi\Sushi;
 
 /**
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ * 
+ *
+>>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
  * @property int|null $id
  * @property string|null $name
  * @method static \Illuminate\Database\Eloquent\Builder|Domain newModelQuery()
@@ -16,8 +29,37 @@ use Sushi\Sushi;
  * @method static \Illuminate\Database\Eloquent\Builder|Domain query()
  * @method static \Illuminate\Database\Eloquent\Builder|Domain whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Domain whereName($value)
+<<<<<<< HEAD
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bb8acfef (.)
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
+=======
+ * @property-read \Modules\Broker\Models\Profile|null $creator
+ * @property-read \Modules\Broker\Models\Profile|null $updater
+>>>>>>> 54f4fa16 (.)
+=======
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
+>>>>>>> bf0cd1be (phpstan)
+ * @method static \Modules\Tenant\Database\Factories\DomainFactory factory($count = null, $state = [])
+=======
+=======
+>>>>>>> 1def8bbe (fix hint)
+* @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+=======
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+>>>>>>> f3e4ec66 (.)
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
+>>>>>>> aurmich/dev
  * @method static \Modules\Tenant\Database\Factories\DomainFactory factory($count = null, $state = [])
  * @mixin \Eloquent
  */

@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bead9c28 (fix case)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 # Linee Guida PHPStan Livello 10
 
 ## Introduzione
@@ -95,6 +106,19 @@ public function processValue(?string $value): string
 - [Code Standards](./CODE-STANDARDS.md)
 - [Risoluzione Conflitti](./CONFLITTI_MERGE_RISOLTI.md)
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> bead9c28 (fix case)
+=======
+>>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 # Linee Guida per PHPStan Livello 10 - Regole Comuni
 
 Questo documento contiene le linee guida generali e le regole comuni per risolvere gli errori PHPStan di livello 10 in tutti i moduli del progetto Laraxot.
@@ -199,8 +223,23 @@ Per le risorse PHP (file handles, connessioni di database, ecc.) che non possono
 private $fileHandle = null;
 ```
 
+<<<<<<< HEAD
 ### 4. Pattern per Controller
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### 4. Pattern per Controller
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+### 4. Pattern per Controller
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 ### 4. Gestione delle API Fluenti di Librerie Esterne
 
 Le API fluenti (method chaining) di alcune librerie esterne come Laravel-FFMpeg possono causare problemi con PHPStan a livello 10, in particolare quando i metodi intermedi restituiscono tipi non standard o quando la catena è lunga e complessa.
@@ -258,8 +297,23 @@ public function show(string $id): \Illuminate\View\View|\Illuminate\Http\Redirec
 }
 ```
 
+<<<<<<< HEAD
 ### 5. Gestione delle Proprietà Dinamiche
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### 5. Gestione delle Proprietà Dinamiche
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+### 5. Gestione delle Proprietà Dinamiche
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 ### 6. Gestione delle Proprietà Dinamiche
 
 Per le proprietà dinamiche nei modelli, utilizzare annotazioni PHPDoc complete:
@@ -276,8 +330,23 @@ class User extends Model
 }
 ```
 
+<<<<<<< HEAD
 ### 6. Conversione Sicura da `mixed` a Tipi Scalari
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### 6. Conversione Sicura da `mixed` a Tipi Scalari
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+### 6. Conversione Sicura da `mixed` a Tipi Scalari
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 ### 7. Conversione Sicura da `mixed` a Tipi Scalari
 
 Quando si lavora con valori `mixed` da convertire in tipi scalari (string, int, float, bool), utilizzare controlli di tipo prima della conversione:
@@ -320,8 +389,23 @@ if ($value !== null) {
 }
 ```
 
+<<<<<<< HEAD
 ### 7. Gestione Sicura di Array con Chiavi Miste
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### 7. Gestione Sicura di Array con Chiavi Miste
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+### 7. Gestione Sicura di Array con Chiavi Miste
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 ### 8. Gestione Sicura di Array con Chiavi Miste
 
 Quando si ottengono array da fonti esterne (es. funzioni Laravel che restituiscono array con chiavi miste):
@@ -339,8 +423,23 @@ foreach ($componentsWithMixedKeys as $key => $component) {
 }
 ```
 
+<<<<<<< HEAD
 ### 8. Tipi Unione con Null
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### 8. Tipi Unione con Null
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+### 8. Tipi Unione con Null
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 ### 9. Tipi Unione con Null
 
 Preferire la sintassi nullable (`?tipo`) per i tipi che possono essere null:
@@ -352,8 +451,23 @@ public function findById(?int $id): ?User
 }
 ```
 
+<<<<<<< HEAD
 ### 9. Parametri Variabili (Variadic)
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### 9. Parametri Variabili (Variadic)
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+### 9. Parametri Variabili (Variadic)
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 ### 10. Parametri Variabili (Variadic)
 
 Per i parametri variabili, specificare il tipo di ogni elemento nell'array risultante:
@@ -370,8 +484,23 @@ public function buildPath(string ...$segments): string
 ```
 
 ### 10. Callback e Closure
+<<<<<<< HEAD
 
 ### 11. Callback e Closure
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+### 11. Callback e Closure
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+### 11. Callback e Closure
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 
 Per i callback e le closure, utilizzare `callable` con specifiche di tipo dettagliate:
 
@@ -604,16 +733,76 @@ Uno degli errori più frequenti riguarda il namespace delle Actions:
 
 - ✅ **CORRETTO**: `namespace Modules\Xot\Actions;`
 - ❌ **ERRATO**: `namespace Modules\Xot\app\Actions;`
+<<<<<<< HEAD
 - ❌ **ERRATO**: `namespace Modules\Xot\Actions;`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- ❌ **ERRATO**: `namespace Modules\Xot\Actions;`
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+- ❌ **ERRATO**: `namespace Modules\Xot\Actions;`
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 
 Anche se il file Actions si trova fisicamente in `Modules/Xot/app/Actions/`, il namespace deve sempre essere `Modules\Xot\Actions` (senza il segmento `app`).
 
 Gli errori PHPStan relativi a questo problema sono spesso del tipo:
 ```
 Class 'Modules\Xot\app\Actions\MyAction' not found.
+<<<<<<< HEAD
 Class 'Modules\Xot\Actions\MyAction' not found.
 ```
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+```
+
+#### Esempio per i Comandi Console
+
+```php
+// CORRETTO
+namespace Modules\Xot\Console\Commands;
+
+// ERRATO
+namespace Modules\Xot\app\Console\Commands;
+```
+
+Errori PHPStan come `Class Modules\Xot\app\Console\Commands\DatabaseSchemaExportCommand not found` indicano che è necessario rimuovere il segmento `app` dal namespace.
+
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
+Class 'Modules\Xot\Actions\MyAction' not found.
+```
+
+=======
+```
+
+#### Esempio per i Comandi Console
+
+```php
+// CORRETTO
+namespace Modules\Xot\Console\Commands;
+
+// ERRATO
+namespace Modules\Xot\app\Console\Commands;
+```
+
+Errori PHPStan come `Class Modules\Xot\app\Console\Commands\DatabaseSchemaExportCommand not found` indicano che è necessario rimuovere il segmento `app` dal namespace.
+
+>>>>>>> 54f4fa16 (.)
+=======
+Class 'Modules\Xot\Actions\MyAction' not found.
+```
+
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 #### Namespace Corretti per i Componenti Principali
 
 | Tipo di Componente       | Percorso Fisico                         | Namespace Corretto                 |
@@ -628,12 +817,39 @@ Class 'Modules\Xot\Actions\MyAction' not found.
 
 #### Esempio per i Comandi Console
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9df8f556 (fix .md)
+=======
+```
+
+## Collegamenti tra versioni di PHPSTAN_LIVELLO10_LINEE_GUIDA.md
+* [PHPSTAN_LIVELLO10_LINEE_GUIDA.md](../../../Xot/docs/phpstan/PHPSTAN_LIVELLO10_LINEE_GUIDA.md)
+* [PHPSTAN_LIVELLO10_LINEE_GUIDA.md](../../../Xot/docs/PHPSTAN_LIVELLO10_LINEE_GUIDA.md)
+
+
+## Collegamenti tra versioni di phpstan_livello10_linee_guida.md
+* [phpstan_livello10_linee_guida.md](phpstan/phpstan_livello10_linee_guida.md)
+
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 ```php
 // CORRETTO
 namespace Modules\Xot\Console\Commands;
 
 // ERRATO
 namespace Modules\Xot\app\Console\Commands;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 ```
 
 Errori PHPStan come `Class Modules\Xot\app\Console\Commands\DatabaseSchemaExportCommand not found` indicano che è necessario rimuovere il segmento `app` dal namespace.
@@ -641,3 +857,20 @@ namespace Modules\Xot\Console\Commands;
 ```
 
 Errori PHPStan come `Class Modules\Xot\Console\Commands\DatabaseSchemaExportCommand not found` indicano che è necessario rimuovere il segmento `app` dal namespace.
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 9df8f556 (fix .md)
+```
+
+Errori PHPStan come `Class Modules\Xot\app\Console\Commands\DatabaseSchemaExportCommand not found` indicano che è necessario rimuovere il segmento `app` dal namespace.
+namespace Modules\Xot\Console\Commands;
+```
+
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+Errori PHPStan come `Class Modules\Xot\Console\Commands\DatabaseSchemaExportCommand not found` indicano che è necessario rimuovere il segmento `app` dal namespace.
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev

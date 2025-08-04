@@ -81,7 +81,45 @@ class LogoutListener
             // Log dell'evento
             Log::info('Logout effettuato', [
                 'user_id' => $event->user->getAuthIdentifier(),
+<<<<<<< HEAD
                 'device_id' => $device->id,
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                'device_id' => $device->id,
+=======
+                'device_id' => $device?->id,
+>>>>>>> aurmich/dev
+=======
+                'device_id' => $device->id,
+>>>>>>> 345f8677 (phpstan)
+=======
+                'device_id' => $device?->id,
+>>>>>>> 54f4fa16 (.)
+=======
+                'device_id' => $device->id,
+>>>>>>> a3174e5b (phpstan)
+=======
+                'device_id' => $device?->id,
+=======
+                'device_id' => $device->id,
+>>>>>>> aurmich/dev
+=======
+                'device_id' => $device->id,
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
+=======
+                'device_id' => $device?->id,
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+                'device_id' => $device->id,
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
                 'timestamp' => now()
             ]);
 
@@ -89,7 +127,45 @@ class LogoutListener
             Log::error('Errore durante il logout', [
                 'error' => $e->getMessage(),
                 'trace' => $e->getTraceAsString(),
+<<<<<<< HEAD
                 'user_id' => $event->user->getAuthIdentifier()
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                'user_id' => $event->user->getAuthIdentifier()
+=======
+                'user_id' => $event->user?->getAuthIdentifier()
+>>>>>>> aurmich/dev
+=======
+                'user_id' => $event->user->getAuthIdentifier()
+>>>>>>> 345f8677 (phpstan)
+=======
+                'user_id' => $event->user?->getAuthIdentifier()
+>>>>>>> 54f4fa16 (.)
+=======
+                'user_id' => $event->user->getAuthIdentifier()
+>>>>>>> a3174e5b (phpstan)
+=======
+                'user_id' => $event->user?->getAuthIdentifier()
+=======
+                'user_id' => $event->user->getAuthIdentifier()
+>>>>>>> aurmich/dev
+=======
+                'user_id' => $event->user->getAuthIdentifier()
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
+=======
+                'user_id' => $event->user?->getAuthIdentifier()
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+                'user_id' => $event->user->getAuthIdentifier()
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
             ]);
         }
     }

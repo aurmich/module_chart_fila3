@@ -29,7 +29,14 @@ Gestisce la rotazione dei backup con:
 ## Utilizzo
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Backup completo
 ./backup_database.sh
 ./backup_files.sh

@@ -36,7 +36,14 @@ class ProductResource extends XotBaseResource
 ## VERIFICA OBBLIGATORIA
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Verificare l'assenza di ENTRAMBE le versioni
 grep -r "function getTableColumns" --include="*Resource.php" .
 grep -r "function getListTableColumns" --include="*Resource.php" .

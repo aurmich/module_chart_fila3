@@ -13,7 +13,19 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Represents a table in the INFORMATION_SCHEMA.TABLES.
+<<<<<<< HEAD
  * 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+ * 
+=======
+ *
+>>>>>>> 54f4fa16 (.)
+=======
+ * 
+>>>>>>> f3e4ec66 (.)
+>>>>>>> aurmich/dev
  * Provides metadata and statistics about database tables.
  *
  * @property string|null $TABLE_CATALOG
@@ -140,6 +152,11 @@ class InformationSchemaTable extends Model
         'TABLE_COMMENT' => 'string',
     ];
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     
     /**
      * Get the attributes that should be cast.
@@ -163,6 +180,35 @@ class InformationSchemaTable extends Model
             'VERSION' => 'integer',
         ]);
     }
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 54f4fa16 (.)
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'TABLE_ROWS' => 'integer',
+        'AVG_ROW_LENGTH' => 'integer',
+        'DATA_LENGTH' => 'integer',
+        'MAX_DATA_LENGTH' => 'integer',
+        'INDEX_LENGTH' => 'integer',
+        'DATA_FREE' => 'integer',
+        'AUTO_INCREMENT' => 'integer',
+        'CHECKSUM' => 'integer',
+        'CREATE_TIME' => 'datetime',
+        'UPDATE_TIME' => 'datetime',
+        'CHECK_TIME' => 'datetime',
+        'VERSION' => 'integer',
+    ];
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 
     /**
      * Get the rows array for the Sushi model.

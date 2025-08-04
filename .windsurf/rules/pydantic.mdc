@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: Comprehensive best practices and coding standards for utilizing Pydantic effectively in Python projects, covering code organization, performance, security, and testing.
 globs: *.py
 ---

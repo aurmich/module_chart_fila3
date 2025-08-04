@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: Comprehensive best practices and coding standards for using Dask in Python, focusing on performance, code organization, and common pitfalls. Provides actionable guidance for developers using Dask for parallel and distributed computing.
 globs: *.py,*.ipynb
 ---

@@ -85,6 +85,20 @@ return [
                 'smtp',
                 'log',
             ],
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'retry_after' => 60,
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+            'retry_after' => 60,
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
         ],
 
         'roundrobin' => [
@@ -93,6 +107,20 @@ return [
                 'ses',
                 'postmark',
             ],
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'retry_after' => 60,
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+            'retry_after' => 60,
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
         ],
 
     ],

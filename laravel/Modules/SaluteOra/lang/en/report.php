@@ -3,6 +3,13 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    'name' => 'Reports',
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
+>>>>>>> aurmich/dev
     'navigation' => [
         'label' => 'Reports & Statistics',
         'group' => 'Administration',
@@ -16,6 +23,10 @@ return [
         'plural' => 'Reports',
         'description' => 'System reports and statistics',
     ],
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     'fields' => [
         'has_mouth_or_teeth_pain' => [
             'label' => 'Mouth or teeth pain (last 12 months)',
@@ -200,3 +211,9 @@ return [
         'exported' => 'Reports exported successfully',
     ],
 ];
+<<<<<<< HEAD
+=======
+=======
+]; 
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
+>>>>>>> aurmich/dev

@@ -16,14 +16,40 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
 {
     use Exportable;
 
+<<<<<<< HEAD
     public Collection $collection;
     public array $headings;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    public Collection $collection;
+    public array $headings;
+=======
+    public array $headings;
+
+>>>>>>> aurmich/dev
+=======
+    public array $headings;
+
+>>>>>>> 54f4fa16 (.)
+=======
+    public Collection $collection;
+    public array $headings;
+>>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
+>>>>>>> aurmich/dev
     public ?string $transKey;
 
     /** @var array<int, string> */
     public ?array $fields = null;
 
     /**
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
      * @param Collection $collection
      * @param string|null $transKey  
      * @param array<int, string> $fields
@@ -34,6 +60,31 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
         array $fields = []
     ) {
         $this->collection = $collection;
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+     * @param Collection $collection
+     * @param string|null $transKey  
+>>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
+     * @param array<int, string> $fields
+     */
+    public function __construct(
+        Collection $collection,
+        ?string $transKey = null,
+        array $fields = []
+    ) {
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+        $this->collection = $collection;
+>>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
+>>>>>>> aurmich/dev
         $this->transKey = $transKey;
         $this->fields = $fields;
     }

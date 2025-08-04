@@ -17,6 +17,10 @@ abstract class LangBaseListRecords extends XotBaseListRecords
     protected static string $resource;// = SectionResource::class;
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     /**
      * @return array<string, \Filament\Actions\Action>
      */
@@ -35,5 +39,16 @@ abstract class LangBaseListRecords extends XotBaseListRecords
         }
         
         return $actions;
+<<<<<<< HEAD
+=======
+=======
+    protected function getHeaderActions(): array
+    {
+        return [
+            Actions\LocaleSwitcher::make(),
+            ...parent::getHeaderActions(),
+        ];
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
     }
 }

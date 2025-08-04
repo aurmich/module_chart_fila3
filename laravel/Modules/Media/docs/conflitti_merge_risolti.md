@@ -1,3 +1,25 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+# Risoluzione Conflitti Merge - Modulo Media
+
+> **Collegamento globale:** Per le strategie generali e le best practices sulla risoluzione dei conflitti git, vedi [docs/git_conflict_resolution.md](../../../../docs/git_conflict_resolution.md).
+
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 # Risoluzione dei Conflitti Git nel Modulo Media
 
 ## Panoramica
@@ -149,9 +171,24 @@ public function getFromXml(): array
  * }>
  */
 public function getFromXml($xmlFile)
+<<<<<<< HEAD
 {
     // Implementazione...
 }
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+{
+    // Implementazione...
+}
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+{
+    // Implementazione...
+}
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 ```
 
 ### 6. ConvertVideoAction.php
@@ -322,12 +359,27 @@ Per approfondimenti generali sulle strategie di risoluzione dei conflitti, fare 
 
 ### 10. VideoEntry.php
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 **Decisione architetturale**: È stata adottata la versione che utilizza il driver Gd di Intervention Image, con gestione esplicita delle dimensioni della canvas e posizionamento progressivo delle immagini. La soluzione mantiene la compatibilità con l'ecosistema Laravel e assicura la massima chiarezza del flusso di composizione.
 
 Per approfondimenti generali sulle strategie di risoluzione dei conflitti, fare riferimento alla [documentazione centrale](../../../../docs/risoluzione_conflitti_git.md).
 
 ### 12. VideoEntry.php
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 **Problema**: Conflitto nell'implementazione del componente VideoEntry, con differenze nella gestione dei tipi e nella formattazione.
 
 **Soluzione**: È stata adottata l'implementazione più robusta con controlli di tipo completi e documentazione dettagliata, mantenendo la coerenza stilistica senza linee vuote superflue. Per dettagli completi, vedere [documentazione dedicata](./risoluzione_conflitti_video_entry.md).
@@ -365,6 +417,20 @@ Per prevenire o gestire meglio i conflitti Git in futuro:
 - [Documentazione Laravel FFMpeg](https://github.com/protonemedia/laravel-ffmpeg)
 - [PHP 8.x Nullsafe Operator](https://www.php.net/manual/en/migration80.new-features.php#migration80.new-features.nullsafe-operator)
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+---
+
+> **Collegamento globale:** Questa documentazione locale dettaglia i casi concreti e le decisioni architetturali adottate nel modulo Media. Per le strategie generali e le best practices, consulta sempre anche la documentazione globale in [docs/git_conflict_resolution.md](../../../../docs/git_conflict_resolution.md).
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
 
 ## Conflitti nell'integrazione FFmpeg (15/06/2024)
@@ -390,3 +456,38 @@ I problemi di conflitto nei file relativi all'integrazione di FFmpeg erano princ
 ### Documentazione
 
 Per maggiori dettagli, consultare il [documento dedicato alla risoluzione dei conflitti FFmpeg](risoluzione_conflitti_ffmpeg.md).
+<<<<<<< HEAD
+=======
+=======
+---
+
+> **Collegamento globale:** Questa documentazione locale dettaglia i casi concreti e le decisioni architetturali adottate nel modulo Media. Per le strategie generali e le best practices, consulta sempre anche la documentazione globale in [docs/git_conflict_resolution.md](../../../../docs/git_conflict_resolution.md).
+>>>>>>> 54f4fa16 (.)
+=======
+- [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
+
+## Conflitti nell'integrazione FFmpeg (15/06/2024)
+
+I problemi di conflitto nei file relativi all'integrazione di FFmpeg erano principalmente legati a:
+
+1. **Duplicazione di importazioni**: Diversi namespace erano importati più volte.
+2. **Incoerenza nelle restituzioni**: Alcune azioni convertivano i path in URL, altre restituivano solo il path.
+3. **Spazi bianchi e linee vuote eccessive**: Lo stile di codice era inconsistente.
+
+### Azioni intraprese
+
+#### 1. File `Merge.php`
+- Rimossi duplicati delle importazioni
+- Eliminati spazi e linee vuote eccessive
+- Mantenuta una struttura coerente con il pattern utilizzato in altre azioni
+
+#### 2. File `ConvertVideoAction.php`
+- Ordinato e deduplicato le importazioni
+- Standardizzato a `Storage::disk($disk_mp4)->path($file_new)` per coerenza
+- Uniformato lo stile di codice
+
+### Documentazione
+
+Per maggiori dettagli, consultare il [documento dedicato alla risoluzione dei conflitti FFmpeg](risoluzione_conflitti_ffmpeg.md).
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev

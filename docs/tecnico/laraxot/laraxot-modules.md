@@ -133,7 +133,14 @@ return [
 
 Per aggiornare i moduli:
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Aggiorna un modulo specifico
 git subtree pull --prefix Modules/Tenant https://github.com/laraxot/module_tenant_fila3.git dev
 
@@ -202,3 +209,10 @@ done
         'days' => 14,
     ],
 ],
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+``` 
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev

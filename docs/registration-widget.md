@@ -106,7 +106,19 @@ protected static function getPersonalInfoStep(): Forms\Components\Wizard\Step
 ## Caratteristiche Principali
 
 1. **Flessibilità Multi-Tipo**: Il widget può gestire la registrazione di diversi tipi di utenti (pazienti, dottori, ecc.)
+<<<<<<< HEAD
 2. **Integrazione con XotData**: Utilizza `XotData::make()->getUserResourceClassByType($type)` per determinare la classe Resource appropriata
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+2. **Integrazione con XotData**: Utilizza `XotData::make()->getUserResourceClassByType($type)` per determinare la classe Resource appropriata
+=======
+2. **Integrazione con XotData**: Utilizza `XotData::make()->getUserTypeResourceClass($type)` per determinare la classe Resource appropriata
+>>>>>>> 54f4fa16 (.)
+=======
+2. **Integrazione con XotData**: Utilizza `XotData::make()->getUserResourceClassByType($type)` per determinare la classe Resource appropriata
+>>>>>>> ca5e1eaf (.)
+>>>>>>> aurmich/dev
 3. **Form Schema Dinamico**: Ottiene lo schema del form dalla Resource corrispondente al tipo di utente
 4. **Gestione Stati**: Deve integrarsi con il sistema di stati specifico per ogni tipo di utente
 

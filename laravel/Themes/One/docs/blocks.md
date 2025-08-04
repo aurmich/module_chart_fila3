@@ -226,6 +226,13 @@ Assicurarsi che i nomi dei parametri nel database corrispondano a quelli attesi 
 
 - Il blocco `feature_sections` utilizza il parametro `sections` invece di `features`
 - Il blocco `stats` utilizza il parametro `number` invece di `value` per i valori delle statistiche
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 
 ## Gestione Link Dinamici
 
@@ -382,6 +389,14 @@ Per aggiornare i blocchi esistenti:
 * [blocks.md](laravel/Themes/One/docs/blocks.md)
 * [blocks.md](laravel/Themes/One/docs/components/blocks.md)
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
+>>>>>>> aurmich/dev
 ## Blocchi Legal
 
 I blocchi legal sono componenti specifici per gestire contenuti legali come privacy policy, termini di servizio e definizioni dei servizi.
@@ -713,3 +728,15 @@ Dopo la creazione del file mancante, verificare:
 
 *Correzione sistemica completata: Gennaio 2025 - Sistema completo e funzionale con design wow-factor e massimo engagement*
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
+=======
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
+>>>>>>> aurmich/dev

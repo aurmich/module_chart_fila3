@@ -8,7 +8,19 @@ use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Modules\User\Filament\Resources\TenantResource\Pages\ListTenants;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+=======
+use Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager;
+>>>>>>> 54f4fa16 (.)
+=======
+use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+>>>>>>> 2bcfd382 (fix Address)
+>>>>>>> aurmich/dev
 use Modules\Xot\Filament\Traits\HasXotTable;
 
 /**
@@ -19,7 +31,19 @@ use Modules\Xot\Filament\Traits\HasXotTable;
  */
 class TenantsRelationManager extends XotBaseRelationManager
 {
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+   
+>>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 2bcfd382 (fix Address)
+>>>>>>> aurmich/dev
 
     protected static string $relationship = 'tenants';
 
@@ -46,11 +70,46 @@ class TenantsRelationManager extends XotBaseRelationManager
      */
     public function getTableColumns(): array
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a3174e5b (phpstan)
+=======
+        return app(ListTenants::class)->getTableColumns();
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+>>>>>>> aurmich/dev
         $columns = app(ListTenants::class)->getTableColumns();
         
         // Ensure we only return Column instances, filter out any Layout\Component instances
         return array_filter($columns, function ($column): bool {
             return $column instanceof \Filament\Tables\Columns\Column;
         });
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        return app(ListTenants::class)->getTableColumns();
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> a3174e5b (phpstan)
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+>>>>>>> aurmich/dev
     }
 }

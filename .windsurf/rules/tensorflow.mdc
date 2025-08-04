@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: Comprehensive guide to TensorFlow best practices, covering code organization, performance, testing, and security for robust and maintainable machine learning projects.
 globs: *.py,*.tf,*.keras
 ---

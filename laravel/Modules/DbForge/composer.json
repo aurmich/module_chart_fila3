@@ -1,4 +1,8 @@
 {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     "name": "laraxot/module_dbforge_fila3",
     "description": "Modulo per la gestione e manipolazione del database con strumenti avanzati",
     "keywords": [
@@ -19,15 +23,39 @@
         {
             "name": "Marco Sottana",
             "email": "marco.sottana@gmail.com"
+<<<<<<< HEAD
+=======
+=======
+    "name": "nwidart/dbforge",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
         }
     ],
     "extra": {
         "laravel": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
             "providers": [
                 "Modules\\DbForge\\Providers\\DbForgeServiceProvider",
                 "Modules\\DbForge\\Providers\\Filament\\AdminPanelProvider"
             ],
             "aliases": {}
+<<<<<<< HEAD
+=======
+=======
+            "providers": [],
+            "aliases": {
+
+            }
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
         }
     },
     "autoload": {
@@ -41,6 +69,10 @@
         "psr-4": {
             "Modules\\DbForge\\Tests\\": "tests/"
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     },
     "require": {},
     "require-dev": {},
@@ -80,4 +112,10 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true
+<<<<<<< HEAD
+=======
+=======
+    }
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
 }

@@ -5,13 +5,29 @@ namespace Modules\Notify\Models;
 use Modules\Xot\Models\BaseModel;
 
 /**
+<<<<<<< HEAD
  * Notification model for the Notify module.
+=======
+<<<<<<< HEAD
+ * Notification model for the Notify module.
+=======
+ * 
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
  *
  * @property string $id
  * @property string $type
  * @property string $notifiable_type
  * @property int $notifiable_id
+<<<<<<< HEAD
  * @property array<string, mixed>|string $data
+=======
+<<<<<<< HEAD
+ * @property array<string, mixed>|string $data
+=======
+ * @property string $data
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
  * @property \Illuminate\Support\Carbon|null $read_at
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
@@ -19,6 +35,10 @@ use Modules\Xot\Models\BaseModel;
  * @property string|null $created_by
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * @property string|null $deleted_by
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
  * @property int|null $tenant_id
  * @property int|null $user_id
  * @property string|null $subject_type
@@ -26,6 +46,11 @@ use Modules\Xot\Models\BaseModel;
  * @property array<string>|string|null $channels
  * @property string|null $status
  * @property \Illuminate\Support\Carbon|null $sent_at
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
  * @property-read \Illuminate\Database\Eloquent\Model|null $creator
  * @property-read \Illuminate\Database\Eloquent\Model|null $updater
  * @method static \Modules\Notify\Database\Factories\NotificationFactory factory($count = null, $state = [])
@@ -48,11 +73,22 @@ use Modules\Xot\Models\BaseModel;
  */
 class Notification extends BaseModel
 {
+<<<<<<< HEAD
     /** @var list<string> */
+=======
+<<<<<<< HEAD
+    /** @var list<string> */
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
     protected $fillable = [
         'message',
         'type',
         'read_at',
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
         'tenant_id',
         'user_id',
         'subject_type',
@@ -80,4 +116,14 @@ class Notification extends BaseModel
             'deleted_at' => 'datetime',
         ];
     }
+<<<<<<< HEAD
+=======
+=======
+    ];
+
+    protected $casts = [
+        'read_at' => 'datetime',
+    ];
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 }

@@ -1,6 +1,20 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+description: 
+globs: 
+---
+laravel new laravel # Installa Laravel in /var/www/html/<nome progetto>/laravel
+=======
+>>>>>>> aurmich/dev
 description: 
 globs: 
 alwaysApply: false
 ---
 laravel new laravel # Installa Laravel in /var/www/html//laravel
+<<<<<<< HEAD
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev

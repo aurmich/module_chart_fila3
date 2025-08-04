@@ -1,0 +1,11 @@
+providers:
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - Modules\Chart\Providers\ChartServiceProvider
+  - Nwidart\Modules\LaravelModulesServiceProvider
+=======
+  - Modules\Geo\Providers\GeoServiceProvider
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+=======
+  - Modules\Geo\Providers\GeoServiceProvider
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)

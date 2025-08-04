@@ -1,4 +1,13 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: manual
+description:
+globs:
+---
+=======
+>>>>>>> aurmich/dev
 description:
 globs:
 alwaysApply: false
@@ -51,3 +60,7 @@ $action->handle();
 - [Migration Best Practices](mdc:migrations.mdc)
 - [Error Handling](mdc:error-handling.mdc)
 - [Checklist di Ripartenza](mdc:../../docs/checklist-di-ripartenza.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev

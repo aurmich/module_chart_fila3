@@ -3,6 +3,11 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 # Regole SaluteOra
 
 ## Crosscheck documentazione wizard/UI
@@ -11,6 +16,16 @@ alwaysApply: false
 - Aggiornare la documentazione se necessario e cross-referenziare tra codice e documentazione.
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+# Regole SaluteOra
+
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
+=======
+>>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
+>>>>>>> aurmich/dev
 ## Namespace
 
 ### Quando
@@ -38,3 +53,11 @@ namespace Modules\SaluteOra\App\Actions\Patient\Calendar;
 ```
 
 ## ... existing rules ...
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ca5e1eaf (.)
+=======
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
+>>>>>>> aurmich/dev

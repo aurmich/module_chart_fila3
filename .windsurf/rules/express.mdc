@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: This rule provides comprehensive guidance on best practices for developing robust, maintainable, and performant Express.js applications, covering aspects from code organization and security to testing and deployment.
 globs: *.js
 ---

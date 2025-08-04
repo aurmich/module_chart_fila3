@@ -5,8 +5,32 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 /**
+<<<<<<< HEAD
  * DeviceProfile Model
  * 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+ * DeviceProfile Model
+<<<<<<< HEAD
+<<<<<<< HEAD
+ * 
+=======
+ *
+>>>>>>> aurmich/dev
+ * Represents the relationship between a device and a user profile.
+ * Extends the base DeviceUser model to add specific functionality.
+=======
+ * 
+>>>>>>> 54f4fa16 (.)
+=======
+ * DeviceProfile Model
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+ *
+=======
+ * 
+>>>>>>> 13ea6524 (phpstan)
+>>>>>>> aurmich/dev
  * Represents the relationship between a device and a user profile.
  * Extends the base DeviceUser model to add specific functionality.
  *
@@ -20,6 +44,13 @@ namespace Modules\User\Models;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DeviceProfile query()
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 class DeviceProfile extends DeviceUser
 {
     /**
@@ -32,3 +63,43 @@ class DeviceProfile extends DeviceUser
         parent::__construct($attributes);
     }
 }
+<<<<<<< HEAD
+=======
+=======
+class DeviceProfile extends DeviceUser {}
+>>>>>>> 54f4fa16 (.)
+=======
+=======
+class DeviceProfile extends DeviceUser {}
+=======
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
+class DeviceProfile extends DeviceUser {
+    /**
+     * ---
+     */
+}
+<<<<<<< HEAD
+>>>>>>> f3e4ec66 (.)
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
+=======
+class DeviceProfile extends DeviceUser
+{
+    /**
+     * Create a new model instance.
+     *
+     * @param array<string, mixed> $attributes
+     */
+    public function __construct(array $attributes = [])
+    {
+        parent::__construct($attributes);
+    }
+}
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+>>>>>>> aurmich/dev

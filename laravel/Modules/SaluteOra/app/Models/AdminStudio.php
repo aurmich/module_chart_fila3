@@ -10,7 +10,18 @@ use Parental\HasParent;
 
 
 
+<<<<<<< HEAD
 /**
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+/**
+=======
+/**
+ * 
+ *
+>>>>>>> f3e4ec66 (.)
+>>>>>>> aurmich/dev
  * @property string $id
  * @property string|null $type
  * @property string $user_id
@@ -40,11 +51,28 @@ use Parental\HasParent;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|AdminStudio whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|AdminStudio whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|AdminStudio whereUserId($value)
+<<<<<<< HEAD
  * @property-read \Modules\SaluteOra\Models\Studio|null $studio
  * @property-read User|null $user
+=======
+<<<<<<< HEAD
+ * @property-read \Modules\SaluteOra\Models\Studio|null $studio
+ * @property-read User|null $user
+=======
+>>>>>>> f3e4ec66 (.)
+>>>>>>> aurmich/dev
  * @mixin \Eloquent
  */
 class AdminStudio extends StudioUser
 {
     use HasParent;
 }
+<<<<<<< HEAD
+=======
+=======
+class AdminStudio extends StudioUser
+{
+    use HasParent;
+}
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
+>>>>>>> aurmich/dev

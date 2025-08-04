@@ -1,5 +1,12 @@
 <?php
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 198c0c0a (✨ (DoctorAppointmentsWidget.php, DoctorCalendarWidget.php): refactor appointment loading logic to use doctor_id instead of auth user id for better clarity and functionality)
+>>>>>>> aurmich/dev
 declare(strict_types=1);
 
 return [
@@ -36,6 +43,10 @@ return [
             'description' => 'Visualizza tutti i nuovi appuntamenti richiesti',
         ],
     ],
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     'fields' => [
         'state' => [
             'label' => 'Stato',
@@ -88,6 +99,11 @@ return [
             'help' => 'Indica se l\'appuntamento è urgente',
         ],
     ],
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 198c0c0a (✨ (DoctorAppointmentsWidget.php, DoctorCalendarWidget.php): refactor appointment loading logic to use doctor_id instead of auth user id for better clarity and functionality)
+>>>>>>> aurmich/dev
     'states' => [
         'pending' => 'In attesa',
         'confirmed' => 'Confermato',
@@ -99,6 +115,10 @@ return [
         'no_show' => 'Non presentato',
         'rescheduled' => 'Riprogrammato',
     ],
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     'fields' => [
         'name' => [
             'label' => 'Nome',
@@ -331,4 +351,14 @@ return [
         'yes' => 'Sì',
         'no' => 'No',
     ],
+<<<<<<< HEAD
 ];
+=======
+];
+=======
+return [];
+>>>>>>> 0cff2983 (📝 (docs): remove unused Blade file for appointments to clean up the codebase)
+=======
+];
+>>>>>>> 198c0c0a (✨ (DoctorAppointmentsWidget.php, DoctorCalendarWidget.php): refactor appointment loading logic to use doctor_id instead of auth user id for better clarity and functionality)
+>>>>>>> aurmich/dev

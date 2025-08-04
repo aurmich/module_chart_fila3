@@ -1,10 +1,27 @@
 {
   "mcpServers": {
+<<<<<<< HEAD
     "sequential-thinking": {
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "sequential-thinking": {
+=======
+    "sequential-thinking-npx": {
+>>>>>>> 54f4fa16 (.)
+=======
+    "sequential-thinking": {
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
       "command": "npx",
       "args": [
         "-y",
         "@modelcontextprotocol/server-sequential-thinking"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
       ],
       "env": {}
     },
@@ -37,6 +54,48 @@
         "-y",
         "playwright-mcp"
       ]
+<<<<<<< HEAD
     }
   }
 }
+=======
+<<<<<<< HEAD
+    }
+  }
+}
+=======
+      ]
+=======
+      ],
+      "env": {}
+>>>>>>> d23ba493 (add calendar)
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/html/_bases/"]
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-puppeteer"
+      ],
+      "env": {}
+    },
+    "mcp-package-docs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-package-docs"
+      ]
+=======
+>>>>>>> 3042dbb7 (✨ (mcp.json, DRY-model-traits.mdc): add playwright-mcp command configuration to support Playwright integration and enhance documentation structure with metadata in DRY model traits file)
+    }
+  }
+}
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev

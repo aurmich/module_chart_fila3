@@ -5,9 +5,25 @@
  43df3e0 (.)
 
 
+<<<<<<< HEAD
 
  0440c57 (.)
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+ 0440c57 (.)
+
+=======
+ 0440c57 (.)
+>>>>>>> 54f4fa16 (.)
+=======
+
+ 0440c57 (.)
+
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 // WHY: Recupera il nome della relazione 'table' associata all'istanza corrente.
 // WHAT: Usa il metodo getRelationValue per ottenere la proprietà 'name' della relazione.
 $this->getRelationValue('table')->name;
@@ -32,15 +48,43 @@ $this->getRelationValue('table')->name
 
 
  cb513be (.)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 
  43df3e0 (.)
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+ 43df3e0 (.)
+
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 $this->getRelationValue('table')->name
 
 
  0440c57 (.)
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 $query->when($request->filled('q'), function (Builder $query) use ($request) {
     $query->where(function (Builder $query) use ($request) {
         $query->where('name', 'like', "%{$request->get('q')}%")
@@ -53,7 +97,18 @@ $this->getRelationValue('table')->name
 
 
  cb513be (.)
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 $query->when($request->filled('q'), function (Builder $query) use ($request) {
     $query->where(function (Builder $query) use ($request) {
         $query->where('name', 'like', "%{$request->get('q')}%")
@@ -73,14 +128,46 @@ $query->when($request->filled('q'), function (Builder $query) use ($request) {
 
 
  cb513be (.)
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 })
  43df3e0 (.)
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
  cb513be (.)
 
 })
  0440c57 (.)
 
+<<<<<<< HEAD
+=======
+=======
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
+ cb513be (.)
+
+})
+ 0440c57 (.)
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev

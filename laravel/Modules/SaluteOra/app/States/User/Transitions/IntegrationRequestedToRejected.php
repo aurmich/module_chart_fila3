@@ -9,7 +9,32 @@ use Modules\SaluteOra\States\User\IntegrationRequested;
 use Modules\SaluteOra\States\User\Rejected;
 use Modules\SaluteOra\Models\User;
 
+<<<<<<< HEAD
 class IntegrationRequestedToRejected extends BaseTransition
 {
     //---
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+class IntegrationRequestedToRejected extends BaseTransition
+{
+    //---
+=======
+class IntegrationRequestedToRejected extends Transition
+{
+    public function __construct(public User $user, public ?string $message='') {}
+
+    public function handle(): User
+    {
+        $this->user->state = new Rejected($this->user);
+        $this->user->save();
+        return $this->user;
+    }
+>>>>>>> f4ba6a58 (✨ (User.php): add user state transition classes to manage user state changes)
+=======
+class IntegrationRequestedToRejected extends BaseTransition
+{
+    //---
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+>>>>>>> aurmich/dev
 }

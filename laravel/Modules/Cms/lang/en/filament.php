@@ -10,6 +10,16 @@ return [
         'links' => [
             'label' => 'Footer Links',
             'links' => [
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                'label' => 'Link',
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 8e4d163b (phpstan)
+>>>>>>> aurmich/dev
                 'label' => 'Link Label',
                 'url' => 'Link URL',
                 'icon' => 'Link Icon',
@@ -29,6 +39,11 @@ return [
             'label' => 'Footer Quick Links',
             'links' => [
                 'label' => 'Quick Links',
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
             ],
         ],
     ],
@@ -109,6 +124,14 @@ return [
                         ],
                     ],
                 ],
+<<<<<<< HEAD
+=======
+=======
+                'label' => 'Label',
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 8e4d163b (phpstan)
+>>>>>>> aurmich/dev
             ],
         ],
     ],

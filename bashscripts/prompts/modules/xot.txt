@@ -125,7 +125,19 @@ namespace Modules\Xot\Traits;
 
 trait HasXotTable
 {
+<<<<<<< HEAD
     abstract public function getTableColumns(): array;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    abstract public function getTableColumns(): array;
+=======
+    abstract public function getListTableColumns(): array;
+>>>>>>> 54f4fa16 (.)
+=======
+    abstract public function getTableColumns(): array;
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev
 }
 ```
 

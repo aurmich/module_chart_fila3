@@ -1,4 +1,16 @@
+<<<<<<< HEAD
 # Filament Resource Rules for <nome progetto> Project
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Filament Resource Rules for <nome progetto> Project
+=======
+# Filament Resource Rules for SaluteOra Project
+>>>>>>> 54f4fa16 (.)
+=======
+# Filament Resource Rules for <nome progetto> Project
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 
 ## Rule 1: Classes Extending XotBaseResource
 
@@ -67,7 +79,19 @@ class MedicalHistoryResource extends XotBaseResource
 **Examples**:
 ```php
 // Correct Namespace
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Resources;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+namespace Modules\<nome progetto>\Filament\Resources;
+=======
+namespace Modules\SaluteOra\Filament\Resources;
+>>>>>>> 54f4fa16 (.)
+=======
+namespace Modules\<nome progetto>\Filament\Resources;
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 
 use Modules\Xot\Filament\Resources\XotBaseResource;
 

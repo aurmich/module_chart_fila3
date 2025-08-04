@@ -1,0 +1,374 @@
+---
+<<<<<<< HEAD
+<<<<<<< HEAD
+description: 
+globs: 
+alwaysApply: false
+---
+# Regola: Widget SaluteOra - IMPLEMENTAZIONE COMPLETATA
+
+## ✅ Status Attuale: RISOLTO (Gennaio 2025)
+
+### 🎯 DoctorAvailabilitiesWidget - IMPLEMENTATO
+
+**PROBLEMA RISOLTO**: Il widget era referenziato ma mancante, causando homepage dottore rotta.
+
+**IMPLEMENTAZIONE COMPLETA**:
+1. **Widget Class**: `DoctorAvailabilitiesWidget` extends `XotBaseWidget` ✅
+2. **Security**: `canView()` con controllo `UserType::DOCTOR` ✅
+3. **Multi-Studio Overview**: Visualizza tutti gli studi del dottore ✅
+4. **Schedule Display**: Mostra orari pivot `studio_user.schedule` ✅
+5. **Vista Blade**: Template responsive con quick stats ✅
+6. **Traduzioni**: Complete in `widgets.php` ✅
+
+### 🎨 Features Implementate
+
+#### Multi-Studio Management
+- **Studio Principale**: Evidenziato con border blu e badge
+- **Status Badges**: Configurato (verde) / Da configurare (amber)
+- **Quick Stats**: Dashboard con totali, configurati, da configurare
+- **Context Switch**: Link diretti a DoctorAvailabilityPage per editing
+
+#### UX Excellence
+- **Zebra Striping**: Tabelle con righe alternate
+- **Responsive Design**: Mobile-first con overflow-x-auto
+- **Dark Mode**: Supporto completo
+- **Empty States**: Gestiti per no studi / no orari
+
+#### Performance & Security
+- **Eager Loading**: `withPivot(['schedule', 'is_primary'])`
+- **Ordinamento**: Studio principale sempre in cima
+- **Data Isolation**: Solo studi associati al dottore autenticato
+- **Access Control**: `UserType::DOCTOR` + auth check
+
+### 📊 Pattern Architetturale
+
+```php
+class DoctorAvailabilitiesWidget extends XotBaseWidget
+{
+    // ✅ Pattern corretto implementato
+    protected static string $view = 'saluteora::filament.widgets.doctor-availabilities';
+    
+    public static function canView(): bool
+    {
+        return auth()->user()?->type === UserTypeEnum::DOCTOR->value;
+    }
+    
+    protected function getViewData(): array
+    {
+        return [
+            'studios_schedules' => auth()->user()->studios()
+                ->withPivot(['schedule', 'is_primary'])
+                ->orderBy('studio_user.is_primary', 'desc')
+                ->get()
+                ->map(fn($studio) => [
+                    'studio' => $studio,
+                    'schedule' => $studio->pivot->schedule ?? [],
+                    'is_primary' => $studio->pivot->is_primary ?? false,
+                ])
+        ];
+    }
+}
+```
+
+### 🔧 StudioOverviewWidget - NEXT
+
+**PROBLEMA IDENTIFICATO**: Estende `Widget` invece di `XotBaseWidget`
+
+**CORREZIONI NECESSARIE**:
+- [ ] Cambiare estensione a `XotBaseWidget`
+- [ ] Migliorare security con multi-tenancy check
+- [ ] Aggiornare `canView()` con logic enum-based
+
+## Regole da Seguire
+
+### Widget Pattern ✅ CONFERMATO
+1. **SEMPRE** estendere `XotBaseWidget` (non `Widget`)
+2. **SEMPRE** implementare `canView()` con security multi-layer
+3. **SEMPRE** considerare multi-tenancy con context awareness
+4. **SEMPRE** usare enum per controlli UserType
+5. **SEMPRE** tipizzazione rigorosa + PHPDoc
+
+### Multi-Studio Management ✅ IMPLEMENTATO
+- **Overview Centralizzato**: Tutti studi in dashboard unico
+- **Studio Principale**: Visivamente prioritario
+- **Context Switching**: Link diretti per modifica per studio
+- **Performance**: Eager loading, ordinamento, cache-ready
+
+## Documentazione Updated ✅
+
+- [DoctorAvailabilitiesWidget Implementation](mdc:../../laravel/Modules/SaluteOra/docs/widgets/doctor-availabilities-widget-implementation.md)
+- [DoctorAvailabilitiesWidget Analysis](mdc:../../laravel/Modules/SaluteOra/docs/widgets/doctor-availabilities-widget-analysis.md)
+- [Widget Improvements Analysis](mdc:../../laravel/Modules/SaluteOra/docs/widgets/widget-improvements-analysis.md)
+
+## Filosofia Confermata
+
+**Multi-Tenancy + DRY + Performance = Eccellenza**
+
+Il modulo SaluteOra dimostra come implementare correttamente:
+- ✅ Pattern Widget con XotBaseWidget
+- ✅ Multi-studio context-aware management
+- ✅ Security a più livelli con enum
+- ✅ Performance con eager loading
+- ✅ UX con visual hierarchy e responsive design
+
+*Ultimo aggiornamento: Gennaio 2025*
+*Status: ✅ PRODUCTION READY - Homepage dottore OPERATIVA*
+=======
+description:
+globs:
+alwaysApply: false
+---
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> b6f55f10 (✨ (DoctorAvailabilitiesWidget): introduce a new widget for managing doctor availability in a multi-tenant context to enhance usability and streamline scheduling for doctors.)
+=======
+# Regola: Widget SaluteOra - Audit e Miglioramenti Necessari
+
+## Stato Attuale (Post-Analisi)
+
+### 🔴 Problemi Critici Identificati
+
+1. **DoctorAvailabilitiesWidget MANCANTE**
+   - Referenziato in `config/local/saluteora/database/content/pages/doctor-home.json`
+   - Widget inesistente → Homepage dottore completamente rotta
+   - **Impatto**: Critico, funzionalità core non disponibile
+
+2. **StudioOverviewWidget NON-COMPLIANT**
+   - Estende `Widget` invece di `XotBaseWidget` (violazione pattern Laraxot)
+   - Security insufficiente: `can('view_any_studio')` troppo generico
+   - Multi-tenancy missing: non considera contesto studio
+
+## Pattern di Eccellenza Scoperti
+
+### DoctorCalendarWidget - Template Perfetto
+```php
+class DoctorCalendarWidget extends FullCalendarWidget
+{
+    use HasFullCalendarConfig; // ✅ DRY
+    
+    public static function canView(): bool
+    {
+        // ✅ Security multi-layer
+        if (!Auth::check() || Auth::user()?->type !== UserTypeEnum::DOCTOR->value) {
+            return false;
+        }
+        return Filament::getTenant() !== null; // ✅ Multi-tenant
+    }
+}
+```
+
+### BaseTransition Pattern - Capolavoro DRY & KISS
+- **Auto-discovery**: Nome classe → stato target
+- **Zero boilerplate**: 99% transizioni sono vuote (`//---`)
+- **Centralizzazione**: Tutto gestito in BaseTransition
+
+## Implementazione Required
+
+### Fix StudioOverviewWidget
+```php
+// ❌ ATTUALE (Sbagliato)
+class StudioOverviewWidget extends Widget
+
+// ✅ CORRETTO (Da implementare)
+class StudioOverviewWidget extends XotBaseWidget
+{
+    public static function canView(): bool
+    {
+        $user = auth()->user();
+        if ($user->type === UserTypeEnum::ADMIN->value) return true;
+        if ($user->type === UserTypeEnum::DOCTOR->value && Filament::getTenant()) {
+            return $user->studios()->where('id', Filament::getTenant()->id)->exists();
+        }
+        return false;
+    }
+}
+```
+
+### Create DoctorAvailabilitiesWidget  
+```php
+class DoctorAvailabilitiesWidget extends XotBaseWidget
+{
+=======
+description: 
+globs: 
+alwaysApply: false
+---
+# Regola: Widget SaluteOra - IMPLEMENTAZIONE COMPLETATA
+
+## ✅ Status Attuale: RISOLTO (Gennaio 2025)
+
+### 🎯 DoctorAvailabilitiesWidget - IMPLEMENTATO
+
+**PROBLEMA RISOLTO**: Il widget era referenziato ma mancante, causando homepage dottore rotta.
+
+**IMPLEMENTAZIONE COMPLETA**:
+1. **Widget Class**: `DoctorAvailabilitiesWidget` extends `XotBaseWidget` ✅
+2. **Security**: `canView()` con controllo `UserType::DOCTOR` ✅
+3. **Multi-Studio Overview**: Visualizza tutti gli studi del dottore ✅
+4. **Schedule Display**: Mostra orari pivot `studio_user.schedule` ✅
+5. **Vista Blade**: Template responsive con quick stats ✅
+6. **Traduzioni**: Complete in `widgets.php` ✅
+
+### 🎨 Features Implementate
+
+#### Multi-Studio Management
+- **Studio Principale**: Evidenziato con border blu e badge
+- **Status Badges**: Configurato (verde) / Da configurare (amber)
+- **Quick Stats**: Dashboard con totali, configurati, da configurare
+- **Context Switch**: Link diretti a DoctorAvailabilityPage per editing
+
+#### UX Excellence
+- **Zebra Striping**: Tabelle con righe alternate
+- **Responsive Design**: Mobile-first con overflow-x-auto
+- **Dark Mode**: Supporto completo
+- **Empty States**: Gestiti per no studi / no orari
+
+#### Performance & Security
+- **Eager Loading**: `withPivot(['schedule', 'is_primary'])`
+- **Ordinamento**: Studio principale sempre in cima
+- **Data Isolation**: Solo studi associati al dottore autenticato
+- **Access Control**: `UserType::DOCTOR` + auth check
+
+### 📊 Pattern Architetturale
+
+```php
+class DoctorAvailabilitiesWidget extends XotBaseWidget
+{
+    // ✅ Pattern corretto implementato
+>>>>>>> 9b17d47a (✨ (widget improvements): complete implementation of DoctorAvailabilitiesWidget to resolve homepage issues and enhance user experience)
+    protected static string $view = 'saluteora::filament.widgets.doctor-availabilities';
+    
+    public static function canView(): bool
+    {
+<<<<<<< HEAD
+        return auth()->check() 
+            && auth()->user()?->type === UserTypeEnum::DOCTOR->value
+            && Filament::getTenant() !== null;
+    }
+    
+    // Pattern DRY: usa Appointment per disponibilità
+    private function getCurrentAvailabilities(): Collection
+    {
+        return Appointment::where('doctor_id', auth()->id())
+            ->where('type', AppointmentTypeEnum::AVAILABILITY)
+            ->where('status', AppointmentStatusEnum::AVAILABLE)
+            ->get();
+=======
+        return auth()->user()?->type === UserTypeEnum::DOCTOR->value;
+    }
+    
+    protected function getViewData(): array
+    {
+        return [
+            'studios_schedules' => auth()->user()->studios()
+                ->withPivot(['schedule', 'is_primary'])
+                ->orderBy('studio_user.is_primary', 'desc')
+                ->get()
+                ->map(fn($studio) => [
+                    'studio' => $studio,
+                    'schedule' => $studio->pivot->schedule ?? [],
+                    'is_primary' => $studio->pivot->is_primary ?? false,
+                ])
+        ];
+>>>>>>> 9b17d47a (✨ (widget improvements): complete implementation of DoctorAvailabilitiesWidget to resolve homepage issues and enhance user experience)
+    }
+}
+```
+
+<<<<<<< HEAD
+## Regole da Seguire
+
+### Widget Pattern
+1. **SEMPRE** estendere `XotBaseWidget` (non `Widget`)
+2. **SEMPRE** implementare `canView()` con security multi-layer
+3. **SEMPRE** considerare multi-tenancy con `Filament::getTenant()`
+4. **SEMPRE** usare enum per controlli UserType
+5. **SEMPRE** tipizzazione rigorosa + PHPDoc
+
+### DRY Policy
+- **Disponibilità = Appointment**: Non creare tabelle custom
+- **Trait condivisi**: Riutilizzare HasFullCalendarConfig
+- **Centralizzazione**: BaseTransition per stati
+
+### Performance
+- **Cache intelligente**: Con invalidazione automatica
+- **Query ottimizzate**: Limit, eager loading, indici
+- **Lazy loading**: Solo dati necessari
+
+## Timeline Implementation
+
+### Priorità 1 (Immediato)
+- [ ] Implementare DoctorAvailabilitiesWidget (homepage rotta)
+- [ ] Fix StudioOverviewWidget per compliance
+
+### Priorità 2 (Questa settimana)
+- [ ] View templates responsive
+- [ ] Testing di regressione
+- [ ] Traduzioni complete
+
+## Documentazione Updated
+
+- [DoctorAvailabilitiesWidget Analysis](../../laravel/Modules/SaluteOra/docs/widgets/doctor-availabilities-widget-analysis.md)
+- [Widget Improvements Analysis](../../laravel/Modules/SaluteOra/docs/widgets/widget-improvements-analysis.md)
+- [BaseTransition Pattern](../../laravel/Modules/SaluteOra/docs/models/base-transition-pattern.md)
+
+## Filosofia
+
+**DRY + KISS + Multi-Tenancy = Pattern Eccellenti**
+
+Il modulo SaluteOra mostra come implementare correttamente:
+- Pattern BaseTransition per stati (auto-discovery magic)
+- Multi-tenancy context-aware 
+- Security a più livelli
+- Performance con caching intelligente
+
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> 0015a493 (✨ (DoctorAvailabilitiesWidget): implement the DoctorAvailabilitiesWidget to provide doctors with a comprehensive overview of their availability across multiple studios, enhancing user experience and data management.)
+=======
+>>>>>>> 16ac401c (📝 (doctor-availabilities-widget): remove outdated documentation and files related to the DoctorAvailabilitiesWidget to streamline the codebase and improve maintainability.)
+=======
+### 🔧 StudioOverviewWidget - NEXT
+
+**PROBLEMA IDENTIFICATO**: Estende `Widget` invece di `XotBaseWidget`
+
+**CORREZIONI NECESSARIE**:
+- [ ] Cambiare estensione a `XotBaseWidget`
+- [ ] Migliorare security con multi-tenancy check
+- [ ] Aggiornare `canView()` con logic enum-based
+
+## Regole da Seguire
+
+### Widget Pattern ✅ CONFERMATO
+1. **SEMPRE** estendere `XotBaseWidget` (non `Widget`)
+2. **SEMPRE** implementare `canView()` con security multi-layer
+3. **SEMPRE** considerare multi-tenancy con context awareness
+4. **SEMPRE** usare enum per controlli UserType
+5. **SEMPRE** tipizzazione rigorosa + PHPDoc
+
+### Multi-Studio Management ✅ IMPLEMENTATO
+- **Overview Centralizzato**: Tutti studi in dashboard unico
+- **Studio Principale**: Visivamente prioritario
+- **Context Switching**: Link diretti per modifica per studio
+- **Performance**: Eager loading, ordinamento, cache-ready
+
+## Documentazione Updated ✅
+
+- [DoctorAvailabilitiesWidget Implementation](mdc:../../laravel/Modules/SaluteOra/docs/widgets/doctor-availabilities-widget-implementation.md)
+- [DoctorAvailabilitiesWidget Analysis](mdc:../../laravel/Modules/SaluteOra/docs/widgets/doctor-availabilities-widget-analysis.md)
+- [Widget Improvements Analysis](mdc:../../laravel/Modules/SaluteOra/docs/widgets/widget-improvements-analysis.md)
+
+## Filosofia Confermata
+
+**Multi-Tenancy + DRY + Performance = Eccellenza**
+
+Il modulo SaluteOra dimostra come implementare correttamente:
+- ✅ Pattern Widget con XotBaseWidget
+- ✅ Multi-studio context-aware management
+- ✅ Security a più livelli con enum
+- ✅ Performance con eager loading
+- ✅ UX con visual hierarchy e responsive design
+
+*Ultimo aggiornamento: Gennaio 2025*
+*Status: ✅ PRODUCTION READY - Homepage dottore OPERATIVA*
+>>>>>>> 9b17d47a (✨ (widget improvements): complete implementation of DoctorAvailabilitiesWidget to resolve homepage issues and enhance user experience)

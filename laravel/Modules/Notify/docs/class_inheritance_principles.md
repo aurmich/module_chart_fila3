@@ -72,7 +72,14 @@ L'unico caso in cui è accettabile ridichiarare un'interfaccia è quando:
 Per identificare dichiarazioni duplicate, usare:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 # Trova classi che estendono XotBasePage e implementano HasForms
 grep -r --include="*.php" "extends XotBasePage implements HasForms" /var/www/html/saluteora/laravel/Modules/
 ```

@@ -44,6 +44,16 @@ class TenantService
         if (isRunningTestBench()) {
             return realpath(__DIR__.'/../Config').DIRECTORY_SEPARATOR.$filename;
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> fad5a9ca (fix tenant default name)
+>>>>>>> aurmich/dev
         $path = base_path('config/'.self::getName().'/'.$filename);
 
         return str_replace(['/', '\\'], [\DIRECTORY_SEPARATOR, \DIRECTORY_SEPARATOR], $path);
@@ -130,10 +140,28 @@ class TenantService
             foreach ($modules as $module) {
                 $name = $module->getSnakeName();
                 if (! isset($extra_conf['connections'][$name])) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
+>>>>>>> aurmich/dev
                     // Skip if the default connection doesn't exist in extra_conf (e.g., 'testing' connection)
                     if (! isset($extra_conf['connections'][$default])) {
                         continue;
                     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
+>>>>>>> aurmich/dev
                     $extra_conf['connections'][$name] = $extra_conf['connections'][$default];
                 }
             }

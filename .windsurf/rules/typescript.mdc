@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: Enforces best practices for TypeScript development, including coding standards, performance considerations, and common pitfalls. This rule provides actionable guidance for developers to write clean, maintainable, and scalable TypeScript code.
 globs: *.ts?(x)
 ---

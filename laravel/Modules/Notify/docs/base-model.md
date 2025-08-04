@@ -13,7 +13,27 @@ use Modules\Xot\Models\XotBaseModel;
 
 abstract class BaseModel extends XotBaseModel
 {
+<<<<<<< HEAD
     protected function casts(): array
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    protected function casts(): array
+=======
+    public function casts(): array
+>>>>>>> 54f4fa16 (.)
+=======
+    protected function casts(): array
+>>>>>>> 2099645a (.)
+=======
+    public function casts(): array
+>>>>>>> 15cb84fb (fix collisions)
+=======
+    protected function casts(): array
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
     {
         return array_merge(parent::casts(), [
             'created_at' => 'datetime',
@@ -48,7 +68,27 @@ namespace Modules\Notify\Models;
 
 class NotificationTemplate extends BaseModel
 {
+<<<<<<< HEAD
     protected function casts(): array
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    protected function casts(): array
+=======
+    public function casts(): array
+>>>>>>> 54f4fa16 (.)
+=======
+    protected function casts(): array
+>>>>>>> 2099645a (.)
+=======
+    public function casts(): array
+>>>>>>> 15cb84fb (fix collisions)
+=======
+    protected function casts(): array
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
     {
         return array_merge(parent::casts(), [
             'preview_data' => 'array',
@@ -75,4 +115,24 @@ class NotificationTemplate extends BaseModel
 2. I cast sono gestiti tramite il metodo `casts()`
 3. Il namespace non include il segmento `app`
 4. Le funzionalità comuni vanno implementate qui
+<<<<<<< HEAD
 5. La documentazione va mantenuta aggiornata 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+5. La documentazione va mantenuta aggiornata 
+=======
+5. La documentazione va mantenuta aggiornata 
+>>>>>>> 54f4fa16 (.)
+=======
+5. La documentazione va mantenuta aggiornata 
+>>>>>>> 2099645a (.)
+=======
+5. La documentazione va mantenuta aggiornata 
+>>>>>>> 15cb84fb (fix collisions)
+=======
+5. La documentazione va mantenuta aggiornata 
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev

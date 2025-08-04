@@ -95,7 +95,14 @@ public function __construct()
 Quando configuri il file `.env`, utilizza questi nomi di variabili:
 
 ```
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 # Configurazione generale SMS
 SMS_FROM=SaluteOra
 SMS_RETRY_ATTEMPTS=3

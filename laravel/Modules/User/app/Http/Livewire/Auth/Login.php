@@ -124,8 +124,12 @@ class Login extends Component implements HasForms
             if (Auth::attempt($data, $remember)) {
                 session()->regenerate();
 
+<<<<<<< HEAD
                 // Redirect intelligente basato sui ruoli dell'utente
                 return $this->getRedirectUrl();
+=======
+                return redirect()->intended();
+>>>>>>> aurmich/dev
             }
 
             $this->addError('email', __('Le credenziali fornite non sono corrette.'));
@@ -136,6 +140,7 @@ class Login extends Component implements HasForms
     }
 
     /**
+<<<<<<< HEAD
      * Determina l'URL di redirect appropriato per l'utente autenticato.
      *
      * @return RedirectResponse
@@ -170,6 +175,8 @@ class Login extends Component implements HasForms
     }
 
     /**
+=======
+>>>>>>> aurmich/dev
      * Renderizza il componente.
      *
      * @return \Illuminate\Contracts\View\View|\Illuminate\Contracts\View\Factory

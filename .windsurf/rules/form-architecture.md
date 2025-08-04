@@ -16,7 +16,14 @@ All forms in the system must be implemented using Filament widgets. No duplicate
 
 ## Examples
 ```blade
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # ❌ Wrong
 <div class="form">
     <form>

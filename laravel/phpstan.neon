@@ -2,7 +2,16 @@ includes:
     - ./phpstan-baseline.neon
     - ./vendor/larastan/larastan/extension.neon
     - ./vendor/nesbot/carbon/extension.neon
+<<<<<<< HEAD
     - ./vendor/phpstan/phpstan/conf/bleedingEdge.neon
+=======
+<<<<<<< HEAD
+    - ./vendor/phpstan/phpstan/conf/bleedingEdge.neon
+<<<<<<< HEAD
+=======
+    # - ./vendor/phpstan/phpstan/conf/bleedingEdge.neon
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
     - ./vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
 
 parameters:
@@ -15,6 +24,32 @@ parameters:
     paths:
         # - ./Modules/*/app/*
         - ./Modules/
+<<<<<<< HEAD
+=======
+=======
+    # Temporaneamente disabilito per risolvere il problema con JsonException
+    # - ./vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
+
+parameters:
+    level: 9
+    #parallel:
+    #    maximumNumberOfProcesses: 4
+    #    jobSize: 1
+    #    minimumNumberOfJobsPerProcess: 1
+
+    paths:
+<<<<<<< HEAD
+<<<<<<< HEAD
+        - ./Modules
+>>>>>>> 54f4fa16 (.)
+=======
+        - ./Modules/*/app/*
+>>>>>>> a3174e5b (phpstan)
+=======
+        # - ./Modules/*/app/*
+        - ./Modules/
+>>>>>>> 09b3c164 (rebase 1/1)
+>>>>>>> aurmich/dev
         # - ./Themes
         # - ./app
 
@@ -25,7 +60,15 @@ parameters:
         - "#^Unsafe usage of new static#"
         - '#Method .+::.+ should return .+<.+, (.+)> but returns .+<.+, \$this\(\1\)>#' # Ignora errori di covarianza nei tipi generici delle relazioni Eloquent
         - '#Cannot cast mixed to (string|float|double|int|bool|boolean).#' # Ignora errori di cast da mixed a tipi specifici
+<<<<<<< HEAD
         - '#Call to function is_object\(\) with .+ will always evaluate to true.#' 
+=======
+<<<<<<< HEAD
+        - '#Call to function is_object\(\) with .+ will always evaluate to true.#' 
+=======
+        - '#Call to function is_object\(\) with .+ will always evaluate to true.#' # Ignora errori su controlli di oggetti già verificati
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
         - identifier: missingType.generics
         - identifier: missingType.iterableValue
         - identifier: larastan.noEnvCallsOutsideOfConfig
@@ -43,6 +86,13 @@ parameters:
         - ./*/rector.php
         - ./Modules/*/packages/*
         - ./Modules/Xot/app/Filament/Traits/HasXotTable.php
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bfe064b3 (♻️ (DoctorsRelationManager.php, ListUsers.php, BaseListUsers.php): update PHPDoc return types for better type safety and clarity)
+>>>>>>> aurmich/dev
         - ./Modules/Activity
         - ./Modules/*/database_old/*
         - ./Modules/*/scripts/*
@@ -54,6 +104,24 @@ parameters:
         - ./phpstan_constants.php
         - ./vendor/amenadiel/jpgraph/src/config.inc.php
 
+<<<<<<< HEAD
+=======
+=======
+        # - ./Modules/*/database_old/*
+        - ./Modules/*/scripts/*
+        - ./Modules/*/tests/*
+        - ./Modules/*/vendor/*
+        - ./Modules/*/*.blade.php
+
+    bootstrapFiles:
+        - ./phpstan_constants.php
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+        - ./vendor/amenadiel/jpgraph/src/config.inc.php
+
+>>>>>>> 8e4d163b (phpstan)
+>>>>>>> aurmich/dev
 
     scanFiles:
         - ./Modules/Xot/Helpers/Helper.php

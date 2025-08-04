@@ -30,7 +30,26 @@ class JobStatus extends Page
         ];
     }
 
+<<<<<<< HEAD
     
+=======
+<<<<<<< HEAD
+    
+=======
+    public function zibibbo(): void
+    {
+        $result = Process::run('dir');
+        $this->out = '';
+        $output = mb_convert_encoding($result->output(), 'UTF-8');
+        Assert::string($output, '['.__LINE__.']['.class_basename($this).']');
+        $this->out .= $output;
+        $errorOutput = mb_convert_encoding($result->errorOutput(), 'UTF-8');
+        Assert::string($errorOutput, '['.__LINE__.']['.class_basename($this).']');
+        $this->out .= $errorOutput;
+        $this->out .= now();
+    }
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 
     public function artisan(string $cmd): void
     {

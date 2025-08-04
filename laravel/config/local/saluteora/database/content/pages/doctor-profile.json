@@ -10,7 +10,19 @@
             {
                 "type": "hero",
                 "data": {
+<<<<<<< HEAD
                     "view": "pub_theme::components.blocks.hero.profilo-odontoiatra",
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                    "view": "pub_theme::components.blocks.hero.profilo-odontoiatra",
+=======
+                    "view": "pub_theme::components.blocks.hero.profilo-paziente",
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+=======
+                    "view": "pub_theme::components.blocks.hero.profilo-odontoiatra",
+>>>>>>> 0c7257a8 (- updated testi sale d'attesa)
+>>>>>>> aurmich/dev
                     "title": "Benvenuta su Salute Orale,",
                     "subtitle": "il portale che vuole garantire alle pazienti vulnerabili in stato di gravidanza la possibilità di accedere a servizi odontoiatrici di prevenzione a titolo completamente gratuito.",
                     "image": "https://www.materdomini.it/wp-content/uploads/2021/04/Sorriso-Denti-bianchi-donna-apparecchio-denti-e-salute-1.jpg",
@@ -20,6 +32,10 @@
                     "text_color": "text-gray-900",
                     "cta_color": "bg-indigo-600 hover:bg-indigo-700"
                 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
             },
             {
                 "type": "widget",
@@ -27,6 +43,11 @@
                     "view": "pub_theme::components.blocks.widget.simple",
                     "widget":  "Modules\\SaluteOra\\Filament\\Widgets\\Doctor\\ProfileWidget"
                 }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+>>>>>>> aurmich/dev
             }
         ]
     },

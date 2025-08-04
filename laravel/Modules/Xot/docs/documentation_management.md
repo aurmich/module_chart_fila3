@@ -75,6 +75,13 @@ Quando si identifica una nuova regola o pattern importante:
    - Aggiornare `.windsurfrules`
    - Mantenere coerenza con altre documentazioni
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 ### 3. Gestione dei Prompt
 
 1. **Struttura dei Prompt**
@@ -101,6 +108,14 @@ Quando si identifica una nuova regola o pattern importante:
    - Aggiornare la documentazione in tempo reale
    - Verificare la coerenza con le convenzioni esistenti
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 ### 3. Best Practices
 
 1. **Coerenza**
@@ -143,4 +158,149 @@ Quando si identifica una nuova regola o pattern importante:
 4. **Windsurf**
    - [ ] Aggiornare .windsurfrules
    - [ ] Verificare coerenza
+<<<<<<< HEAD
    - [ ] Testare applicabilità 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+   - [ ] Testare applicabilità 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
+
+## Gestione dei Prompt
+
+### Analisi e Miglioramento dei Prompt
+Quando si analizza o migliora un prompt:
+
+1. **Documentazione Preliminare**
+   - Documentare l'analisi nel modulo appropriato
+   - Identificare punti di forza e debolezze
+   - Proporre miglioramenti specifici
+
+2. **Processo di Aggiornamento**
+   - Aggiornare prima la documentazione
+   - Implementare le modifiche al prompt
+   - Verificare la coerenza con le regole esistenti
+
+3. **Validazione**
+   - Testare il prompt aggiornato
+   - Verificare i collegamenti
+   - Controllare la coerenza con altri prompt
+
+4. **Aggiornamento Configurazioni**
+   - `.cursor/rules/`: regole per Cursor AI
+   - `.cursor/memories/`: memories per Cursor
+   - `.windsurfrules`: regole per Windsurf
+   - Documentazione nei moduli coinvolti
+
+### Struttura della Documentazione dei Prompt
+```
+Modules/Xot/docs/
+├── prompts.md            # Regole generali per i prompt
+├── prompt_rules.md       # Regole specifiche
+└── sections/
+    └── prompts/         # Documentazione dettagliata
+```
+
+### Best Practices per i Prompt
+1. **Analisi**
+   - Documentare il ragionamento
+   - Spiegare le modifiche proposte
+   - Identificare impatti potenziali
+
+2. **Implementazione**
+   - Seguire le regole documentate
+   - Mantenere la coerenza
+   - Aggiornare la documentazione
+
+3. **Manutenzione**
+   - Revisione periodica
+   - Aggiornamento delle regole
+   - Verifica dei collegamenti    - [ ] Testare applicabilità 
+b6f667c (.)
+   - Verifica dei collegamenti 
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
+   - [ ] Testare applicabilità 
+=======
+
+   - [ ] Testare applicabilità 
+<<<<<<< HEAD
+
+## Gestione dei Prompt
+
+### Analisi e Miglioramento dei Prompt
+Quando si analizza o migliora un prompt:
+
+1. **Documentazione Preliminare**
+   - Documentare l'analisi nel modulo appropriato
+   - Identificare punti di forza e debolezze
+   - Proporre miglioramenti specifici
+
+2. **Processo di Aggiornamento**
+   - Aggiornare prima la documentazione
+   - Implementare le modifiche al prompt
+   - Verificare la coerenza con le regole esistenti
+
+3. **Validazione**
+   - Testare il prompt aggiornato
+   - Verificare i collegamenti
+   - Controllare la coerenza con altri prompt
+
+4. **Aggiornamento Configurazioni**
+   - `.cursor/rules/`: regole per Cursor AI
+   - `.cursor/memories/`: memories per Cursor
+   - `.windsurfrules`: regole per Windsurf
+   - Documentazione nei moduli coinvolti
+
+### Struttura della Documentazione dei Prompt
+```
+Modules/Xot/docs/
+├── prompts.md            # Regole generali per i prompt
+├── prompt_rules.md       # Regole specifiche
+└── sections/
+    └── prompts/         # Documentazione dettagliata
+```
+
+### Best Practices per i Prompt
+1. **Analisi**
+   - Documentare il ragionamento
+   - Spiegare le modifiche proposte
+   - Identificare impatti potenziali
+
+2. **Implementazione**
+   - Seguire le regole documentate
+   - Mantenere la coerenza
+   - Aggiornare la documentazione
+
+3. **Manutenzione**
+   - Revisione periodica
+   - Aggiornamento delle regole
+   - Verifica dei collegamenti    - [ ] Testare applicabilità 
+b6f667c (.)
+   - Verifica dei collegamenti 
+>>>>>>> 54f4fa16 (.)
+=======
+   - [ ] Testare applicabilità 
+>>>>>>> 9df8f556 (fix .md)
+=======
+=======
+>>>>>>> 0e2182f (.)
+>>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev

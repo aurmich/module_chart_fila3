@@ -61,6 +61,19 @@ Modules/Notify/
         "mjml/mjml-php": "^1.0",
         "mailgun/mailgun-php": "^3.0",
         "filament/filament": "^4.0"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+        "filament/filament": "^2.0"
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 484b1fe (.)
+>>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+>>>>>>> aurmich/dev
     }
 }
 ```

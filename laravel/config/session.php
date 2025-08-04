@@ -13,8 +13,28 @@ return [
     | incoming requests. Laravel supports a variety of storage options to
     | persist session data. Database storage is a great default choice.
     |
+<<<<<<< HEAD
     | Supported: "file", "cookie", "database", "apc",
     |            "memcached", "redis", "dynamodb", "array"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    | Supported: "file", "cookie", "database", "memcached",
+    |            "redis", "dynamodb", "array"
+=======
+    | Supported: "file", "cookie", "database", "apc",
+    |            "memcached", "redis", "dynamodb", "array"
+>>>>>>> 54f4fa16 (.)
+=======
+    | Supported: "file", "cookie", "database", "memcached",
+    |            "redis", "dynamodb", "array"
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+    | Supported: "file", "cookie", "database", "apc",
+    |            "memcached", "redis", "dynamodb", "array"
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
     |
     */
 
@@ -97,7 +117,23 @@ return [
     | define the cache store which should be used to store the session data
     | between requests. This must match one of your defined cache stores.
     |
+<<<<<<< HEAD
     | Affects: "apc", "dynamodb", "memcached", "redis"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    | Affects: "dynamodb", "memcached", "redis"
+=======
+    | Affects: "apc", "dynamodb", "memcached", "redis"
+>>>>>>> 54f4fa16 (.)
+=======
+    | Affects: "dynamodb", "memcached", "redis"
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+    | Affects: "apc", "dynamodb", "memcached", "redis"
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
     |
     */
 
@@ -129,7 +165,23 @@ return [
 
     'cookie' => env(
         'SESSION_COOKIE',
+<<<<<<< HEAD
         Str::slug(env('APP_NAME', 'laravel'), '_').'_session'
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        Str::slug(env('APP_NAME', 'laravel')).'-session'
+=======
+        Str::slug(env('APP_NAME', 'laravel'), '_').'_session'
+>>>>>>> 54f4fa16 (.)
+=======
+        Str::slug(env('APP_NAME', 'laravel')).'-session'
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+        Str::slug(env('APP_NAME', 'laravel'), '_').'_session'
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
     ),
 
     /*

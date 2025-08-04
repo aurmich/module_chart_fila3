@@ -58,10 +58,28 @@ class MailTemplateResource extends LangBaseResource
                 ->required()
                 ->columnSpanFull(),
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
             'params_display' => Forms\Components\View::make('notify::filament.components.params-badges')
                 ->viewData(fn ($record) => ['params' => $record?->params])
                 ->columnSpanFull()
                 ->visible(fn ($record): bool => !empty($record->params)),
+<<<<<<< HEAD
+=======
+=======
+            'params_display' => Forms\Components\View::make('notify::filament.components.params-badges')
+                ->viewData(fn ($record) => ['params' => $record?->params])
+                ->columnSpanFull()
+<<<<<<< HEAD
+                ->visible(fn ($record): bool => !empty($record?->params)),
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+                ->visible(fn ($record): bool => !empty($record->params)),
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
 
            
 
@@ -70,6 +88,14 @@ class MailTemplateResource extends LangBaseResource
                 ->columnSpanFull(),
             'sms_template' => Forms\Components\Textarea::make('sms_template')
                 ->columnSpanFull(),
+<<<<<<< HEAD
+=======
+=======
+            'text_template' => Forms\Components\Textarea::make('text_template')
+                ->maxLength(65535)
+                ->columnSpanFull(),
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
         ];
     }
 }

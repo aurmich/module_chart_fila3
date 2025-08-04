@@ -6,7 +6,17 @@
 
 #### Composer
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Pulire la cache di Composer
 composer clear-cache
 
@@ -16,7 +26,17 @@ composer install --no-scripts
 
 #### NPM
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Pulire la cache di NPM
 npm cache clean --force
 
@@ -28,7 +48,17 @@ npm install
 
 #### Migrazioni
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Ripristinare le migrazioni
 php artisan migrate:fresh
 
@@ -38,7 +68,17 @@ php artisan db:seed
 
 #### Connessione
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Verificare la connessione
 php artisan db:monitor
 
@@ -50,7 +90,17 @@ php artisan db:test
 
 #### Pulizia Cache
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Pulire la cache dell'applicazione
 php artisan cache:clear
 
@@ -68,7 +118,17 @@ php artisan route:clear
 
 ### 1. Errori di Attivazione
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Verificare lo stato dei moduli
 php artisan module:list
 
@@ -81,7 +141,17 @@ php artisan module:disable ModuleName
 
 ### 2. Errori di Pubblicazione
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Pubblicare gli assets
 php artisan module:publish ModuleName
 
@@ -96,7 +166,17 @@ php artisan module:publish-migration ModuleName
 
 ### 1. Errori di Compilazione
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Compilare gli assets
 npm run build
 
@@ -106,7 +186,17 @@ npm run theme:build
 
 ### 2. Errori di Visualizzazione
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Pulire la cache delle viste
 php artisan view:clear
 
@@ -126,7 +216,17 @@ Assicurarsi che l'utente del web server (es. www-data) abbia i permessi di scrit
 
 ### 1. Errori del Pannello
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Pubblicare gli assets
 php artisan filament:assets
 
@@ -136,7 +236,17 @@ php artisan filament:config
 
 ### 2. Errori dei Widget
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Pubblicare i widget
 php artisan filament:widgets
 
@@ -150,7 +260,17 @@ php artisan filament:check
 
 #### Pubblicazione Assets e Configurazioni
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Pubblicare gli assets
 php artisan livewire:publish --assets
 
@@ -194,7 +314,17 @@ Per ulteriori dettagli, consulta la [documentazione sui componenti Volt](../../T
 
 ### 2. Errori di Compilazione
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Compilare gli assets
 npm run dev
 
@@ -206,7 +336,17 @@ npm run build
 
 ### 1. Log dell'Applicazione
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Visualizzare i log
 tail -f storage/logs/laravel.log
 

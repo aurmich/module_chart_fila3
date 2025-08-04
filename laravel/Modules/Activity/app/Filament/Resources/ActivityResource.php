@@ -21,6 +21,17 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
  *
  * This resource class is responsible for configuring the Activity model in the Filament admin panel.
  * It defines the form schema, relations, and pages for managing activity records.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ *
+ * @property ActivityResource $resource
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
+>>>>>>> aurmich/dev
  */
 class ActivityResource extends XotBaseResource
 {
@@ -29,7 +40,18 @@ class ActivityResource extends XotBaseResource
     /**
      * Define the form schema for the Activity resource.
      *
+<<<<<<< HEAD
      * @return array<string, \Filament\Forms\Components\Component>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+     * @return array<string, \Filament\Forms\Components\Component>
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+     * @return array<string, \Filament\Forms\Components\Component>
+>>>>>>> f3e4ec66 (.)
+>>>>>>> aurmich/dev
      */
     public static function getFormSchema(): array
     {

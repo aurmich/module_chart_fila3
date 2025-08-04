@@ -175,7 +175,14 @@ return [
 Create detailed documentation:
 
 ```markdown
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # FullCalendar in {ModuleName} Module
 
 ## Introduction

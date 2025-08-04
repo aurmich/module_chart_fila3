@@ -10,7 +10,14 @@
 
 ### 1. Spostamento dei Modelli
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Creare la struttura corretta
 mkdir -p Modules/Patient/Entities
 
@@ -25,7 +32,14 @@ namespace Modules\Patient\Entities;
 
 ### 2. Spostamento delle Risorse Filament
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Creare la struttura corretta
 mkdir -p Modules/Patient/Filament/Resources
 
@@ -39,7 +53,14 @@ namespace Modules\Patient\Filament\Resources;
 
 ### 3. Spostamento delle Migrazioni
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Creare la struttura corretta
 mkdir -p Modules/Patient/Database/Migrations
 
@@ -51,7 +72,14 @@ mv laravel/database/migrations/2024_03_20_000003_create_anamnesis_table.php Modu
 
 ### 4. Spostamento della Configurazione
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Creare la struttura corretta
 mkdir -p Modules/Patient/Config
 
@@ -89,3 +117,10 @@ use Modules\Patient\Entities\Document;
 2. Verificare che le dipendenze tra moduli siano corrette
 3. Eseguire i test per assicurarsi che tutto funzioni
 4. Verificare che le migrazioni possano essere eseguite
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+5. Controllare che le risorse Filament siano accessibili 
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev

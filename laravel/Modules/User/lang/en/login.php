@@ -5,6 +5,11 @@ return array (
   array (
     'email' => 
     array (
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
       'label' => 'Email',
       'placeholder' => 'Enter your email',
       'help' => 'Enter your email address to log in',
@@ -14,10 +19,40 @@ return array (
       'label' => 'Password',
       'placeholder' => 'Enter your password',
       'help' => 'Enter your account password',
+<<<<<<< HEAD
       'description' => 'password',
     ),
     'remember' => 
     array (
+=======
+=======
+=======
+>>>>>>> 54f4fa16 (.)
+      'label' => 'email',
+      'placeholder' => 'email',
+      'helper_text' => '',
+      'description' => 'email',
+    ),
+    'password' => 
+    array (
+      'label' => 'password',
+<<<<<<< HEAD
+<<<<<<< HEAD
+      'placeholder' => 'password',
+      'helper_text' => 'password',
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+      'description' => 'password',
+=======
+>>>>>>> 15cb84fb (fix collisions)
+    ),
+    'remember' => 
+    array (
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
       'label' => 'Remember me',
       'placeholder' => '',
       'help' => 'Keep me logged in on this device',
@@ -73,5 +108,34 @@ return array (
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
     'general_error' => 'An error occurred. Please try again later.',
     'unauthorized' => 'You do not have the necessary permissions for this operation.',
+<<<<<<< HEAD
   ),
 );
+=======
+=======
+=======
+>>>>>>> 54f4fa16 (.)
+      'label' => 'remember',
+    ),
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+  ),
+);
+=======
+      'placeholder' => 'password',
+      'helper_text' => '',
+      'description' => 'password',
+    ),
+    'remember' => 
+    array (
+      'label' => 'remember',
+      'description' => 'remember',
+      'placeholder' => 'remember',
+      'helper_text' => '',
+    ),
+  ),
+);
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev

@@ -53,7 +53,27 @@ abstract class BaseMorphPivot extends MorphPivot
         'note',
     ];
 
+<<<<<<< HEAD
     protected function casts(): array
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    protected function casts(): array
+=======
+    public function casts(): array
+>>>>>>> 54f4fa16 (.)
+=======
+    protected function casts(): array
+>>>>>>> 2099645a (.)
+=======
+    public function casts(): array
+>>>>>>> 15cb84fb (fix collisions)
+=======
+    protected function casts(): array
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
     {
         return [
             'id' => 'string',

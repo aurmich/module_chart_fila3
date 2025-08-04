@@ -19,5 +19,28 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 54f4fa16 (.)
+
+        $this->call([
+            RoleAndPermissionSeeder::class,
+            DefaultTenantSeeder::class,
+        ]);
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+>>>>>>> aurmich/dev
     }
 }

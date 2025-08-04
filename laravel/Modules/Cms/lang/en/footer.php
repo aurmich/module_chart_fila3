@@ -1,5 +1,13 @@
 <?php
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 return [
     'fields' => [
         'view' => [
@@ -15,4 +23,12 @@ return [
             'color' => 'primary',
         ],
     ],
+<<<<<<< HEAD
 ];
+=======
+<<<<<<< HEAD
+];
+=======
+]; 
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev

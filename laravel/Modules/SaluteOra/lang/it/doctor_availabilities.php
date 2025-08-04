@@ -5,9 +5,18 @@ return array (
   array (
     'editSchedule' => 
     array (
+<<<<<<< HEAD
       'label' => 'Modifica Disponibilità',
     ),
   ),
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      'label' => 'Modifica Disponibilità',
+    ),
+  ),
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
   'fields' => 
   array (
     'schedule' => 
@@ -18,4 +27,19 @@ return array (
       'label' => 'schedule',
     ),
   ),
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> aurmich/dev
+=======
+      'label' => 'editSchedule',
+    ),
+  ),
+>>>>>>> 0015a493 (✨ (DoctorAvailabilitiesWidget): implement the DoctorAvailabilitiesWidget to provide doctors with a comprehensive overview of their availability across multiple studios, enhancing user experience and data management.)
+=======
+      'label' => 'Modifica Disponibilità',
+    ),
+  ),
+>>>>>>> 98275f8c (✨ (DoctorAvailabilitiesWidget): update view path to use pub_theme for better theming support)
+>>>>>>> aurmich/dev
 );

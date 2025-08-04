@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: This rule file outlines best practices for using the boto3 library, including code organization, security, performance, testing, and common pitfalls. It aims to ensure efficient, secure, and maintainable AWS integrations with boto3.
 globs: *.py
 ---

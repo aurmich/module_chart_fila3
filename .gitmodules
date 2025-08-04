@@ -1,0 +1,11 @@
+#[submodule "docs"]
+#	path = docs
+<<<<<<< HEAD
+<<<<<<< HEAD
+#	url = https://github.com/laraxot/doc_chart.git
+=======
+#	url = https://github.com/laraxot/doc_geo.git
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+=======
+#	url = https://github.com/laraxot/doc_geo.git
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)

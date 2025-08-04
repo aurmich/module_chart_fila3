@@ -58,6 +58,11 @@ class ListCaches extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     /**
      * @return array<string, \Filament\Actions\Action>
      */
@@ -69,6 +74,24 @@ class ListCaches extends XotBaseListRecords
             'icons_cache' => ArtisanHeaderAction::make('icons:cache'),
             'filament_cache_components' => ArtisanHeaderAction::make('filament:cache-components'),
             'filament_clear_cached_components' => ArtisanHeaderAction::make('filament:clear-cached-components'),
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 54f4fa16 (.)
+    protected function getHeaderActions(): array
+    {
+        return [
+            Actions\CreateAction::make(),
+            ArtisanHeaderAction::make('route:list'),
+            ArtisanHeaderAction::make('icons:cache'),
+            ArtisanHeaderAction::make('filament:cache-components'),
+            ArtisanHeaderAction::make('filament:clear-cached-components'),
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
         ];
     }
 }

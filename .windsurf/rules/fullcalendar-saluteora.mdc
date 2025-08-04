@@ -1,28 +1,99 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: always_on
+description:
+globs:
+---
+# Regole FullCalendar Multi-Tenant per <nome progetto>
+=======
+>>>>>>> aurmich/dev
 description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # Regole FullCalendar Multi-Tenant per <nome progetto>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Regole FullCalendar Multi-Tenant per <nome progetto>
+=======
+# Regole FullCalendar Multi-Tenant per SaluteOra
+>>>>>>> 2099645a (.)
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+=======
+# Regole FullCalendar Multi-Tenant per <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 
 ## Principi Fondamentali
 
 ### Estensione delle Classi Base
 - **SEMPRE** estendere direttamente `Saade\FilamentFullCalendar\Widgets\FullCalendarWidget`
 - **MAI** utilizzare `Modules\Xot\Filament\Widgets\XotBaseFullCalendarWidget` (non esiste nel modulo Xot)
+<<<<<<< HEAD
 - Utilizzare il trait `Modules\<nome progetto>\Traits\HasFullCalendarConfig` per configurazioni comuni
 
 ### Architettura Multi-Tenant
 - **3 livelli di accesso**: Paziente, Dottore (con tenancy), Admin
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Utilizzare il trait `Modules\<nome progetto>\Traits\HasFullCalendarConfig` per configurazioni comuni
+
+### Architettura Multi-Tenant con Parental STI
+- **Single Table Inheritance**: Utilizzo di `tightenco/parental` per tipi utente
+- **3 tipi di utente**: Patient, Doctor, Admin (non ruoli ma tipi)
+=======
+<<<<<<< HEAD
+- Utilizzare il trait `Modules\<nome progetto>\Traits\HasFullCalendarConfig` per configurazioni comuni
+=======
+- Utilizzare il trait `Modules\SaluteOra\Traits\HasFullCalendarConfig` per configurazioni comuni
+>>>>>>> 2099645a (.)
+=======
+- Utilizzare il trait `Modules\<nome progetto>\Traits\HasFullCalendarConfig` per configurazioni comuni
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+
+### Architettura Multi-Tenant
+- **3 livelli di accesso**: Paziente, Dottore (con tenancy), Admin
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 - **Tenancy di Filament**: Utilizzare `Filament::getTenant()` per studio corrente
 - **Isolamento dati**: Ogni widget filtra automaticamente per permessi utente
 - **Sicurezza**: Policy e controlli di accesso sempre implementati
 
 ### Namespace e Struttura
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 - Widget calendar: `Modules\<nome progetto>\Filament\Widgets\`
 - Modelli: `Modules\<nome progetto>\Models\`
 - Enum: `Modules\<nome progetto>\Enums\`
 - Trait: `Modules\<nome progetto>\Traits\`
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Middleware: `Modules\<nome progetto>\Http\Middleware\`
+=======
+=======
+- Widget calendar: `Modules\SaluteOra\Filament\Widgets\`
+- Modelli: `Modules\SaluteOra\Models\`
+- Enum: `Modules\SaluteOra\Enums\`
+- Trait: `Modules\SaluteOra\Traits\`
+>>>>>>> 2099645a (.)
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 
 ## Widget Multi-Tenant Principali
 
@@ -108,6 +179,10 @@ class AdminAllAppointmentsWidget extends FullCalendarWidget
     }
 }
 ```
+<<<<<<< HEAD
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 
 ## Implementazione Widget
 
@@ -115,6 +190,14 @@ class AdminAllAppointmentsWidget extends FullCalendarWidget
 ```php
 class MyCalendarWidget extends FullCalendarWidget
 {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    use HasFullCalendarConfig;
+
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
     // Modello associato SEMPRE richiesto
     public Model|string|null $model = Appointment::class;
 
@@ -128,11 +211,30 @@ class MyCalendarWidget extends FullCalendarWidget
 
 ### Metodi Richiesti
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+#### canView()
+- **SEMPRE** implementare controllo accesso basato su tipo utente
+- **SEMPRE** verificare tenancy per dottori
+- **SEMPRE** utilizzare enum UserType per confronti
+
+#### fetchEvents()
+- **SEMPRE** utilizzare eager loading con `with()`
+- **SEMPRE** filtrare per range di date: `whereBetween('start_time', [$fetchInfo['start'], $fetchInfo['end']])`
+- **SEMPRE** restituire array di `EventData` objects
+- **SEMPRE** implementare caching con `cache()->remember()`
+=======
+>>>>>>> aurmich/dev
 #### fetchEvents()
 - **SEMPRE** utilizzare eager loading con `with()`
 - **SEMPRE** filtrare per range di date: `whereBetween('start_time', [$fetchInfo['start'], $fetchInfo['end']])`
 - **SEMPRE** applicare filtri di sicurezza basati su ruolo utente
 - **SEMPRE** restituire array di `EventData` objects
+<<<<<<< HEAD
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 - **MAI** restituire più di 100 eventi per chiamata
 
 #### getFormSchema()
@@ -142,7 +244,15 @@ class MyCalendarWidget extends FullCalendarWidget
 
 #### config()
 - **SEMPRE** utilizzare il trait `HasFullCalendarConfig`
+<<<<<<< HEAD
 - **SEMPRE** mergiare configurazioni: `$this->mergeConfigs()`
+=======
+<<<<<<< HEAD
+- **SEMPRE** chiamare `parent::config()` se sovrascritto
+=======
+- **SEMPRE** mergiare configurazioni: `$this->mergeConfigs()`
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 - **SEMPRE** includere configurazione localizzata italiana
 
 ### Gestione Eventi
@@ -150,6 +260,71 @@ class MyCalendarWidget extends FullCalendarWidget
 #### EventData Structure
 ```php
 EventData::make()
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    ->id($appointment->id)                    // SEMPRE richiesto
+    ->title($this->formatEventTitle($appointment)) // SEMPRE formattato con trait
+    ->start($appointment->start_time)         // SEMPRE datetime
+    ->end($appointment->end_time)             // SEMPRE datetime
+    ->backgroundColor($this->getAppointmentStatusColor($appointment->status->value))
+    ->borderColor($this->getAppointmentTypeColor($appointment->type->value))
+    ->textColor('#ffffff')                    // Contrasto leggibile
+    ->extendedProps([                         // Dati aggiuntivi
+        'patient_name' => $appointment->patient?->full_name,
+        'doctor_name' => $appointment->doctor?->full_name,
+        'status' => $appointment->status->value,
+        'type' => $appointment->type->value,
+        'tooltip' => $this->formatTooltip($appointment),
+        'can_edit' => $this->canEditAppointment($appointment),
+    ])
+```
+
+#### Colori Standardizzati
+- Utilizzare metodi del trait: `getAppointmentTypeColor()`, `getAppointmentStatusColor()`
+- Schema colori da `config('fullcalendar.colors')`
+- Stati appuntamenti: blu (scheduled), verde (confirmed), rosso (cancelled)
+- Priorità emergenze: rosso intenso (critical), arancione (high), verde (low)
+- **MAI** hardcodare colori nei widget
+
+## Widget Specifici Implementati
+
+### PatientCalendarWidget
+- **Estende**: `FullCalendarWidget`
+- **Trait**: `HasFullCalendarConfig`
+- **Vista**: `timeGridWeek`
+- **Accesso**: `UserType::PATIENT`
+- **Filtro**: `where('patient_id', auth()->id())`
+- **Funzionalità**: Solo visualizzazione (sola lettura)
+- **Configurazione**: `config('fullcalendar.widgets.patient')`
+
+### DoctorCalendarWidget
+- **Estende**: `FullCalendarWidget`
+- **Trait**: `HasFullCalendarConfig`
+- **Vista**: `timeGridWeek`
+- **Accesso**: `UserType::DOCTOR` + tenancy
+- **Filtro**: `where('studio_id', Filament::getTenant()->id)`
+- **Funzionalità**: CRUD completo, drag&drop, resize
+- **Configurazione**: `config('fullcalendar.widgets.doctor')`
+
+### AdminCalendarWidget
+- **Estende**: `FullCalendarWidget`
+- **Trait**: `HasFullCalendarConfig`
+- **Vista**: `dayGridMonth`
+- **Accesso**: `UserType::ADMIN`
+- **Filtro**: Tutti gli appuntamenti (opzionale per studio)
+- **Funzionalità**: Vista globale, filtri avanzati
+- **Configurazione**: `config('fullcalendar.widgets.admin')`
+
+## Configurazioni
+
+### File di Configurazione
+- Configurazione centralizzata: `config/fullcalendar.php`
+- Configurazioni widget-specific: `config('fullcalendar.widgets.{type}')`
+- Colori standardizzati: `config('fullcalendar.colors.{category}')`
+- Performance settings: `config('fullcalendar.performance')`
+=======
+>>>>>>> aurmich/dev
     ->id($model->id)                    // SEMPRE richiesto
     ->title($this->formatTitle($model)) // SEMPRE formattato
     ->start($model->start_time)         // SEMPRE datetime
@@ -200,6 +375,10 @@ public function panel(Panel $panel): Panel
         ->widgets([AdminAllAppointmentsWidget::class]);
 }
 ```
+<<<<<<< HEAD
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 
 ### Localizzazione Italiana
 ```php
@@ -219,6 +398,134 @@ public function panel(Panel $panel): Panel
 ],
 ```
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+### Business Hours Sanitarie
+```php
+'businessHours' => [
+    'daysOfWeek' => [1, 2, 3, 4, 5, 6], // Lun-Sab
+    'startTime' => '08:00',
+    'endTime' => '19:00',
+],
+'eventConstraint' => 'businessHours',
+'selectConstraint' => 'businessHours',
+'slotDuration' => '00:30:00', // Slot da 30 minuti
+```
+
+## Sicurezza e Controlli Accesso
+
+### Middleware EnsureUserType
+- **SEMPRE** utilizzare per proteggere panel
+- **SEMPRE** verificare tipo utente con enum
+- **SEMPRE** loggare accessi se configurato
+- Sintassi: `EnsureUserType::class.':patient'`
+
+### Policy AppointmentPolicy
+- **SEMPRE** implementare controlli granulari
+- **SEMPRE** utilizzare match expression con UserType
+- **SEMPRE** verificare tenancy per dottori
+- **SEMPRE** filtrare dati sensibili per pazienti
+
+### Privacy e Audit
+- Mascheramento nomi pazienti se configurato
+- Audit trail per modifiche eventi
+- Logging delle azioni utente
+- Crittografia dati sensibili
+
+## Performance e Ottimizzazioni
+
+### Caching
+- **SEMPRE** utilizzare caching per eventi: `cache()->remember()`
+- **SEMPRE** generare chiave cache con `getCacheKey()` del trait
+- **SEMPRE** impostare TTL appropriato (300 secondi default)
+- **SEMPRE** invalidare cache su modifiche
+
+### Query Optimization
+- **SEMPRE** utilizzare eager loading: `with(['patient', 'doctor', 'studio'])`
+- **SEMPRE** limitare query con `limit()` (100 eventi max)
+- **SEMPRE** utilizzare `lazy_fetching` per grandi dataset
+- **SEMPRE** filtrare per range di date
+
+### Responsive Design
+- **SEMPRE** utilizzare configurazioni responsive
+- **SEMPRE** adattare vista per mobile (`listWeek`)
+- **SEMPRE** ridurre altezza per tablet
+- **SEMPRE** testare su dispositivi diversi
+
+## Enum e Modelli
+
+### AppointmentType Enum
+- **SEMPRE** implementare `HasLabel`, `HasIcon`, `HasColor`
+- **SEMPRE** utilizzare colori standardizzati
+- **SEMPRE** fornire durate per tipi
+- Tipi: CONSULTATION, CLEANING, TREATMENT, EMERGENCY, FOLLOWUP, SURGERY, ORTHODONTICS, PREVENTION
+
+### AppointmentStatus Enum
+- **SEMPRE** implementare `HasLabel`, `HasColor`
+- **SEMPRE** definire transizioni di stato
+- **SEMPRE** implementare metodi `isActive()`, `isFinal()`
+- Stati: SCHEDULED, CONFIRMED, IN_PROGRESS, COMPLETED, CANCELLED, NO_SHOW, RESCHEDULED, PENDING
+
+### Studio Model (Tenant)
+- **SEMPRE** implementare `HasName` per Filament tenancy
+- **SEMPRE** definire relazioni con doctors e appointments
+- **SEMPRE** implementare metodi business (getColor, isActive)
+
+## Errori Comuni da Evitare
+
+### ❌ Errori di Implementazione
+- Estendere classi Xot invece di Filament direttamente
+- Non utilizzare trait HasFullCalendarConfig
+- Non implementare controlli di accesso canView()
+- Hardcodare colori nei widget
+- Utilizzare `->label()` nei form components
+- Non utilizzare enum per confronti tipo utente
+
+### ❌ Errori di Performance
+- Caricare troppi eventi contemporaneamente (>100)
+- Non utilizzare caching
+- Query N+1 nelle relazioni
+- Non limitare range di date
+- Non utilizzare eager loading
+
+### ❌ Errori di Sicurezza
+- Non verificare tenancy per dottori
+- Esporre dati sensibili senza autorizzazione
+- Non implementare middleware di protezione
+- Non loggare azioni per audit trail
+- Non mascherare nomi pazienti quando necessario
+
+### ❌ Errori di Configurazione
+- Non utilizzare configurazione centralizzata
+- Non localizzare in italiano
+- Non rispettare business hours sanitarie
+- Non implementare responsive design
+- Non configurare tooltip e accessibilità
+
+## Testing
+
+### Test Obbligatori
+```php
+// Test caricamento eventi
+public function test_can_fetch_events_for_date_range()
+
+// Test permessi per tipo utente
+public function test_patient_can_view_only_own_appointments()
+public function test_doctor_can_view_studio_appointments()
+public function test_admin_can_view_all_appointments()
+
+// Test tenancy
+public function test_doctor_cannot_view_other_studio_appointments()
+
+// Test performance
+public function test_events_are_limited_to_reasonable_number()
+
+// Test sicurezza
+public function test_sensitive_data_is_protected()
+public function test_middleware_blocks_wrong_user_type()
+=======
+>>>>>>> aurmich/dev
 ## Sicurezza Multi-Tenant
 
 ### Policy Implementation
@@ -318,15 +625,79 @@ public function test_admin_can_see_all_appointments()
 
 // Test tenancy
 public function test_tenant_switching_filters_data_correctly()
+<<<<<<< HEAD
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 ```
 
 ## Documentazione
 
+<<<<<<< HEAD
 ### File di Documentazione
+=======
+<<<<<<< HEAD
+### File di Documentazione Aggiornati
+- [fullcalendar_parental_widgets.md](mdc:../laravel/Modules/<nome progetto>/docs/fullcalendar_parental_widgets.md) - Architettura completa con Parental STI
+- [fullcalendar_implementation_guide.md](mdc:../laravel/Modules/<nome progetto>/docs/fullcalendar_implementation_guide.md) - Guida step-by-step
+- [fullcalendar_configuration.mdc](mdc:../laravel/Modules/<nome progetto>/docs/fullcalendar_configuration.mdc) - Configurazioni complete
+- [fullcalendar_widget_implementation.mdc](mdc:../laravel/Modules/<nome progetto>/docs/fullcalendar_widget_implementation.mdc) - Implementazione widget
+
+### Aggiornamento Documentazione
+- **SEMPRE** aggiornare documentazione per nuovi widget
+- **SEMPRE** documentare configurazioni personalizzate
+- **SEMPRE** includere esempi di codice funzionanti
+- **SEMPRE** linkare documentazione correlata
+- **SEMPRE** mantenere coerenza tra file .md e .mdc
+
+## Filosofia e Zen
+
+### Principi Guida
+- **Semplicità**: Widget facili da comprendere e mantenere
+- **Coerenza**: Schema colori e comportamenti uniformi tra widget
+- **Accessibilità**: Supporto screen reader e navigazione keyboard
+- **Performance**: Caricamento rapido e fluido con caching intelligente
+- **Sicurezza**: Protezione dati sensibili sempre prioritaria
+
+### Approccio Sanitario
+- Priorità alla sicurezza dei dati pazienti
+- Interfaccia intuitiva per operatori sanitari
+- Gestione emergenze con priorità visive chiare (🚨)
+- Workflow ottimizzati per ambiente ospedaliero multi-studio
+- Conformità normative settore sanitario
+- Audit trail completo per responsabilità legali
+
+### Architettura Multi-Tenant
+- Isolamento completo dati tra studi
+- Tenancy trasparente per dottori
+- Scalabilità orizzontale per nuovi studi
+- Performance ottimizzate per tenant
+- Backup e restore per tenant specifici
+
+Ricorda: ogni widget calendar deve essere progettato pensando all'operatore sanitario che lo utilizzerà in situazioni di stress e urgenza. La chiarezza, l'immediatezza e la sicurezza sono fondamentali per un sistema sanitario affidabile.
+=======
+### File di Documentazione
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 - [fullcalendar_multi_tenant_widgets.md](../laravel/Modules/<nome progetto>/docs/fullcalendar_multi_tenant_widgets.md)
 - [fullcalendar_integration.md](../laravel/Modules/<nome progetto>/docs/fullcalendar_integration.md)
 - [fullcalendar_widgets.md](../laravel/Modules/<nome progetto>/docs/fullcalendar_widgets.md)
 - [fullcalendar_configuration.md](../laravel/Modules/<nome progetto>/docs/fullcalendar_configuration.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+- [fullcalendar_multi_tenant_widgets.md](../laravel/Modules/SaluteOra/docs/fullcalendar_multi_tenant_widgets.md)
+- [fullcalendar_integration.md](../laravel/Modules/SaluteOra/docs/fullcalendar_integration.md)
+- [fullcalendar_widgets.md](../laravel/Modules/SaluteOra/docs/fullcalendar_widgets.md)
+- [fullcalendar_configuration.md](../laravel/Modules/SaluteOra/docs/fullcalendar_configuration.md)
+>>>>>>> 2099645a (.)
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 
 ## Filosofia Multi-Tenant
 
@@ -345,3 +716,7 @@ public function test_tenant_switching_filters_data_correctly()
 - Workflow ottimizzati per ambiente sanitario distribuito
 
 Ricorda: in un ambiente multi-tenant sanitario, la sicurezza e l'isolamento dei dati sono fondamentali. Ogni widget deve essere progettato con la massima attenzione alla privacy e alla conformità normativa.
+<<<<<<< HEAD
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev

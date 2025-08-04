@@ -4,6 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Contracts;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 use Laravel\Passport\Token;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\Permission\Contracts\Role;
@@ -18,6 +24,41 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 use Spatie\MediaLibrary\MediaCollections\FileAdder;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 54f4fa16 (.)
+use Filament\Models\Contracts\FilamentUser;
+use Illuminate\Contracts\Auth\Access\Authorizable;
+use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Contracts\Auth\CanResetPassword;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+use Laravel\Passport\Token;
+use Spatie\Permission\Contracts\Role;
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+use Illuminate\Database\Eloquent\Model;
+use Filament\Models\Contracts\FilamentUser;
+use Modules\User\Contracts\HasTeamsContract;
+use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Contracts\Auth\CanResetPassword;
+use Illuminate\Contracts\Auth\Access\Authorizable;
+use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
 
 // use Filament\Models\Contracts\HasTenants;
 
@@ -30,7 +71,18 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @property string|null                                                                $first_name
  * @property string|null                                                                $last_name
  * @property string|null                                                                $full_name
+<<<<<<< HEAD
  * @property \BackedEnum&\Filament\Support\Contracts\HasLabel                           $type
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+ * @property \BackedEnum&\Filament\Support\Contracts\HasLabel                           $type
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+ * @property \BackedEnum&\Filament\Support\Contracts\HasLabel                           $type
+>>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
+>>>>>>> aurmich/dev
  * @property string|null                                                                $password
  * @property string|int|null                                                            $current_team_id
  * @property string|null                                                                $phone
@@ -38,14 +90,36 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @property \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Role>   $roles
  * @property \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Tenant> $tenants
  *
+<<<<<<< HEAD
  * @method  FileAdder addMediaFromDisk(string $key, ?string $disk = null)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+ * @method  FileAdder addMediaFromDisk(string $key, ?string $disk = null)
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
  * @method bool canAccessSocialite()
  *
  * @phpstan-require-extends Model
  *
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 interface UserContract extends Authenticatable, Authorizable, CanResetPassword, FilamentUser, HasTeamsContract, ModelContract, MustVerifyEmail, PassportHasApiTokensContract,HasMedia
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+interface UserContract extends Authenticatable, Authorizable, CanResetPassword, FilamentUser, HasTeamsContract, ModelContract, MustVerifyEmail, PassportHasApiTokensContract,HasMedia
+=======
+interface UserContract extends Authenticatable, Authorizable, CanResetPassword, FilamentUser, HasTeamsContract, ModelContract, MustVerifyEmail, PassportHasApiTokensContract
+>>>>>>> aurmich/dev
+=======
+interface UserContract extends Authenticatable, Authorizable, CanResetPassword, FilamentUser, HasTeamsContract, ModelContract, MustVerifyEmail, PassportHasApiTokensContract
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 {
     /*
     public function isSuperAdmin();
@@ -124,6 +198,14 @@ interface UserContract extends Authenticatable, Authorizable, CanResetPassword, 
     public function tenants(): BelongsToMany;
 
     // public function canAccessSocialite(): bool;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
 
     /**
      * Get all consents for the model (polymorphic).
@@ -131,4 +213,14 @@ interface UserContract extends Authenticatable, Authorizable, CanResetPassword, 
      */
     //public function consents(): MorphMany;
     
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
 }

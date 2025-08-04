@@ -28,7 +28,19 @@ L'azione accetta un'istanza di `Panel` come parametro di riferimento e applica l
 4. Documentazione PHPStan per gestire i type hints
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Filament Best Practices](../filament-best-practices.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Filament Best Practices](../filament-best-practices.md)
+=======
+- [Filament Best Practices](../FILAMENT-BEST-PRACTICES.md)
+>>>>>>> aurmich/dev
+=======
+- [Filament Best Practices](../FILAMENT-BEST-PRACTICES.md)
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 - [PHPStan Guidelines](../PHPSTAN-LEVEL9-GUIDE.md)
 - [Spatie QueueableAction Documentation](../DATA-QUEABLEACTIONS.md)
 
@@ -36,4 +48,16 @@ L'azione accetta un'istanza di `Panel` come parametro di riferimento e applica l
 - Risoluzione dei conflitti di merge
 - Aggiunta di type hints appropriati
 - Implementazione della gestione degli errori
+<<<<<<< HEAD
 - Documentazione del codice 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Documentazione del codice 
+=======
+- Documentazione del codice 
+>>>>>>> aurmich/dev
+=======
+- Documentazione del codice 
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev

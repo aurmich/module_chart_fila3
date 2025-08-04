@@ -30,7 +30,18 @@ Questa directory contiene tutti i workflow automatizzati per il progetto Laraxot
 | [🔍 code-quality-check.md](code-quality-check.md) | Controlli qualità codice | Prima commit, CI/CD | 3-5 min |
 | [📝 naming-convention-audit.md](naming-convention-audit.md) | Audit convenzioni naming | Settimanale | 2-3 min |
 | [📚 documentation-sync.md](documentation-sync.md) | Sync documentazione | Dopo modifiche docs | 1-2 min |
+<<<<<<< HEAD
 | [⚡ console-command-creation.md](console-command-creation.md) | Creazione Console Commands standard | Nuovi comandi | 2-3 min |
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+| [⚡ console-command-creation.md](console-command-creation.md) | Creazione Console Commands standard | Nuovi comandi | 2-3 min |
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+=======
+| [⚡ console-command-creation.md](console-command-creation.md) | Creazione Console Commands standard | Nuovi comandi | 2-3 min |
+>>>>>>> e79b3c05 (fix tenant)
+>>>>>>> aurmich/dev
 | [📋 laraxot.md](laraxot.md) | Overview completo sistema | Reference, onboarding | - |
 
 ## 🎯 Filosofia dei Workflow
@@ -54,7 +65,14 @@ Questa directory contiene tutti i workflow automatizzati per il progetto Laraxot
 
 ### Sviluppatore (Daily)
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Mattina - controllo generale
 .windsurf/workflows/project-health-check.md
 
@@ -65,7 +83,14 @@ Questa directory contiene tutti i workflow automatizzati per il progetto Laraxot
 
 ### Team Lead (Weekly)
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Lunedì - audit completo
 .windsurf/workflows/naming-convention-audit.md
 .windsurf/workflows/documentation-sync.md
@@ -74,7 +99,14 @@ Questa directory contiene tutti i workflow automatizzati per il progetto Laraxot
 
 ### DevOps (CI/CD)
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Pipeline automatica
 .windsurf/workflows/provider-validation.md
 .windsurf/workflows/code-quality-check.md
@@ -112,7 +144,14 @@ jobs:
 
 ### 2. Pre-commit Hook
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Installa hook
 cp .windsurf/workflows/scripts/pre-commit.sh .git/hooks/pre-commit
 chmod +x .git/hooks/pre-commit
@@ -120,7 +159,14 @@ chmod +x .git/hooks/pre-commit
 
 ### 3. Cron Jobs
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Daily health check alle 6:00
 0 6 * * * cd /path/to/project && .windsurf/workflows/project-health-check.md
 
@@ -210,4 +256,12 @@ chmod 755 reports
 
 **Ultimo aggiornamento**: 2025-01-27  
 **Versione**: 1.0  
+<<<<<<< HEAD
 **Compatibilità**: Windsurf, Laravel 12+, PHP 8.1+
+=======
+<<<<<<< HEAD
+**Compatibilità**: Windsurf, Laravel 12+, PHP 8.1+
+=======
+**Compatibilità**: Windsurf, Laravel 12+, PHP 8.1+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev

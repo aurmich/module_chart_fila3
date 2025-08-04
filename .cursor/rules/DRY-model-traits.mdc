@@ -1,8 +1,23 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3042dbb7 (✨ (mcp.json, DRY-model-traits.mdc): add playwright-mcp command configuration to support Playwright integration and enhance documentation structure with metadata in DRY model traits file)
+>>>>>>> aurmich/dev
 ---
 description: 
 globs: 
 alwaysApply: true
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
+=======
+>>>>>>> 3042dbb7 (✨ (mcp.json, DRY-model-traits.mdc): add playwright-mcp command configuration to support Playwright integration and enhance documentation structure with metadata in DRY model traits file)
+>>>>>>> aurmich/dev
 # DRY Model Traits: HasFactory e Catena di Ereditarietà
 
 ## Regola
@@ -32,7 +47,19 @@ class Admin extends User {
 - [ ] Documenta la regola in docs e .mdc
 
 ## Collegamenti
+<<<<<<< HEAD
 - `Modules/<nome progetto>/docs/DRY-model-traits.md`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- `Modules/<nome progetto>/docs/DRY-model-traits.md`
+=======
+- `Modules/SaluteOra/docs/DRY-model-traits.md`
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
+=======
+- `Modules/<nome progetto>/docs/DRY-model-traits.md`
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 - `.windsurf/rules/DRY-model-traits.mdc`
 
 ---

@@ -42,7 +42,14 @@ class LangServiceProvider extends XotBaseServiceProvider
         // $this->registerTranslator();
         $this->translatableComponents();
         $this->registerFilamentLabel();
+<<<<<<< HEAD
         
+=======
+<<<<<<< HEAD
+        
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
     }
 
     public function register(): void
@@ -50,9 +57,25 @@ class LangServiceProvider extends XotBaseServiceProvider
         parent::register();
 
         // Registra il service provider di laravel-localization
+<<<<<<< HEAD
         // $this->app->register(LaravelLocalizationServiceProvider::class);
         // NOTA: Il LaravelLocalizationServiceProvider viene già registrato automaticamente
         // tramite package discovery di Laravel (vedere composer.json del package)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        // $this->app->register(LaravelLocalizationServiceProvider::class);
+        // NOTA: Il LaravelLocalizationServiceProvider viene già registrato automaticamente
+        // tramite package discovery di Laravel (vedere composer.json del package)
+=======
+        $this->app->register(LaravelLocalizationServiceProvider::class);
+>>>>>>> 54f4fa16 (.)
+=======
+        // $this->app->register(LaravelLocalizationServiceProvider::class);
+        // NOTA: Il LaravelLocalizationServiceProvider viene già registrato automaticamente
+        // tramite package discovery di Laravel (vedere composer.json del package)
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+>>>>>>> aurmich/dev
 
         // Carica la configurazione di laravel-localization
         // $this->mergeConfigFrom(
@@ -116,11 +139,23 @@ class LangServiceProvider extends XotBaseServiceProvider
 
             return $component;
         });
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
         
         Step::configureUsing(function (Step $component) {
             $component = app(AutoLabelAction::class)->execute($component);
             
+<<<<<<< HEAD
+=======
+=======
+        Step::configureUsing(function (Step $component) {
+            $component = app(AutoLabelAction::class)->execute($component);
+
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
             // ->translateLabel()
             return $component;
         });

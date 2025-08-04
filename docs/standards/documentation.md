@@ -44,7 +44,14 @@ docs/
 
 ### 2. Esempio di File
 ```markdown
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Titolo
 
 ## Descrizione
@@ -71,9 +78,19 @@ Note aggiuntive.
 
 ### 3. Collegamenti Bidirezionali
 ```markdown
+<<<<<<< HEAD
 
 # File A
 
+=======
+<<<<<<< HEAD
+
+# File A
+
+=======
+# File A
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ## Collegamenti
 - [File B](file-b.md)
 - [File C](file-c.md)
@@ -82,7 +99,14 @@ Note aggiuntive.
 - [File F](file-f.md)
 
 # File B
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ## Collegamenti
 - [File A](file-a.md)
 - [File C](file-c.md)

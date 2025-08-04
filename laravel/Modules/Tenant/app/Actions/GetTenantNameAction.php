@@ -26,12 +26,35 @@ class GetTenantNameAction
         if (! \is_string($default)) {
             $default = 'localhost';
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
         
         $default = Str::after($default, '//');
         
         $server_name = $this->getServerName($default);
         $server_name = Str::of($server_name)->replace('www.', '')->toString();
         
+<<<<<<< HEAD
+=======
+=======
+
+=======
+        
+>>>>>>> fad5a9ca (fix tenant default name)
+        $default = Str::after($default, '//');
+        
+        $server_name = $this->getServerName($default);
+        $server_name = Str::of($server_name)->replace('www.', '')->toString();
+<<<<<<< HEAD
+
+>>>>>>> 54f4fa16 (.)
+=======
+        
+>>>>>>> fad5a9ca (fix tenant default name)
+>>>>>>> aurmich/dev
         /** @var Collection<int, string> $parts */
         $parts = collect(explode('.', $server_name))
             ->map(static fn (string $item): string => Str::slug($item))
@@ -55,9 +78,25 @@ class GetTenantNameAction
         }
 
         // Fallback al default
+<<<<<<< HEAD
         $part=explode('.', $default);
         $inverted=array_reverse($part);
         $default_path=implode('/', $inverted);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        $part=explode('.', $default);
+        $inverted=array_reverse($part);
+        $default_path=implode('/', $inverted);
+=======
+        $default_path = str_replace('.', '/', $default);
+>>>>>>> 54f4fa16 (.)
+=======
+        $part=explode('.', $default);
+        $inverted=array_reverse($part);
+        $default_path=implode('/', $inverted);
+>>>>>>> fad5a9ca (fix tenant default name)
+>>>>>>> aurmich/dev
         if ($default_path !== '' && file_exists(base_path('config/'.$default_path))) {
             return $default_path;
         }

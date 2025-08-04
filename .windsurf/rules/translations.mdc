@@ -1,5 +1,140 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: manual
+description:
+globs:
+---
+# Translation Best Practices
+
+## Regole Fondamentali
+- Ogni stringa deve essere tradotta
+- Usare provider dedicati (es. `LangServiceProvider`)
+- Evitare l'uso diretto di stringhe nei componenti
+- Documentare le chiavi di traduzione
+- Testare la presenza delle traduzioni
+
+## Struttura
+- File di traduzione per lingua (`resources/lang/it/`, `resources/lang/en/`)
+- Chiavi strutturate per modulo e contesto
+- Provider dedicato per caricare le traduzioni
+
+## Esempio Corretto
+```php
+// CORRETTO
+protected static ?string $navigationLabel = __('resources.doctor.navigation.label');
+```
+
+## Best Practices
+- Usare chiavi standardizzate
+- Mantenere la struttura delle chiavi coerente
+- Aggiornare la documentazione ad ogni modifica
+- Testare la copertura delle traduzioni
+
+## Checklist
+- [ ] Tutte le stringhe tradotte
+- [ ] Provider dedicato usato
+- [ ] Chiavi standardizzate
+- [ ] Documentazione aggiornata
+- [ ] Test di copertura
+
+## Collegamenti correlati
+- [Filament Best Practices](./filament-best-practices.mdc)
+- [Validation Rules](./validation.mdc)
+- [Migration Best Practices](./migrations.mdc)
+- [Error Handling](./error-handling.mdc)
+- [Checklist di Ripartenza](../docs/checklist-di-ripartenza.md)
+=======
+>>>>>>> aurmich/dev
 description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+# Regole per la Gestione degli Stati dei Modelli
+
+## When
+- Stai creando o modificando stati per un modello
+- Hai bisogno di gestire transizioni di stato
+- Devi implementare logica di business basata sugli stati
+- Vuoi tracciare i cambiamenti di stato
+
+## Then
+- Usa SEMPRE `spatie/laravel-model-states` invece di enum standard
+- Crea una classe di stato che estende `State`
+- Implementa le transizioni di stato consentite
+- Definisci gli eventi per ogni transizione
+- Usa il trait `HasStates` nel modello
+
+## Because
+- `spatie/laravel-model-states` offre:
+  - Transizioni di stato controllate
+  - Validazione delle transizioni
+  - Eventi per ogni cambio di stato
+  - Storico delle transizioni
+  - Logica di business più robusta
+
+## Examples
+
+### Definizione di uno Stato
+```php
+use Spatie\ModelStates\State;
+
+class UserState extends State
+{
+    public static function config(): StateConfig
+    {
+        return parent::config()
+            ->default(Pending::class)
+            ->allowTransition(Pending::class, Approved::class)
+            ->allowTransition(Pending::class, Rejected::class)
+            ->allowTransition(Approved::class, Suspended::class);
+    }
+}
+```
+
+### Implementazione nel Modello
+```php
+use Spatie\ModelStates\HasStates;
+
+class User extends Model
+{
+    use HasStates;
+
+    protected $casts = [
+        'state' => UserState::class,
+    ];
+}
+```
+
+### Utilizzo
+```php
+$user->state->transitionTo(Approved::class);
+$user->state->canTransitionTo(Suspended::class); // true/false
+```
+
+## Common Pitfalls
+
+- **Errore**: Usare enum standard invece di `spatie/laravel-model-states`
+  **Soluzione**: Implementare sempre stati usando `spatie/laravel-model-states`
+
+- **Errore**: Non definire tutte le transizioni possibili
+  **Soluzione**: Definire esplicitamente tutte le transizioni consentite
+
+- **Errore**: Non gestire gli eventi di transizione
+  **Soluzione**: Implementare gli eventi per ogni transizione di stato
+
+- **Errore**: Non validare le transizioni
+  **Soluzione**: Aggiungere logica di validazione nelle transizioni
+
+## Link e Documentazione
+- [Documentazione spatie/laravel-model-states](https://github.com/spatie/laravel-model-states)
+- [README Stati Modello](../../Modules/<nome progetto>/docs/Models/states.md)
+- [Best Practices Stati](../../Modules/<nome progetto>/docs/Models/state-best-practices.md)
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev

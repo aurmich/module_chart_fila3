@@ -1,5 +1,18 @@
 <?php
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> aurmich/dev
+=======
+declare(strict_types=1);
+
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 return [
     'backend' => [
         'takeaway' => [
@@ -182,7 +195,19 @@ return [
             'deleted_permanently' => 'The user was deleted permanently.',
             'restored' => 'The user was successfully restored.',
             'updated' => 'The user was successfully updated.',
+<<<<<<< HEAD
             'updated_password' => 'The user\'s password was successfully updated.',
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'updated_password' => 'The user\'s password was successfully updated.',
+=======
+            'updated_password' => "The user's password was successfully updated.",
+>>>>>>> aurmich/dev
+=======
+            'updated_password' => "The user's password was successfully updated.",
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
         ],
     ],
 ];

@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 return [
     'general' => [
         'home' => [
@@ -49,6 +54,34 @@ return [
                 'label' => 'Profile',
                 'icon' => 'heroicon-o-user-circle',
             ],
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 54f4fa16 (.)
+declare(strict_types=1);
+
+return [
+    'general' => [
+        'home' => 'Home',
+        'logout' => 'Logout',
+    ],
+    'frontend' => [
+        'dashboard' => 'Dashboard',
+        'login' => 'Login',
+        'macros' => 'Macros',
+        'register' => 'Register',
+        'user' => [
+            'account' => 'My Account',
+            'administration' => 'Administration',
+            'change_password' => 'Change Password',
+            'my_information' => 'My Information',
+            'profile' => 'Profile',
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
             'address_book' => 'Address Book',
             'order_history' => 'Order History',
             'credit_cards' => 'Credit Cards',

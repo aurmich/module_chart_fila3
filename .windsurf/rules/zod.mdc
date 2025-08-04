@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: This rule provides comprehensive guidelines for using the Zod library effectively, covering code organization, performance, security, and testing to ensure robust and maintainable type validation.
 globs: *.ts?(x)
 ---

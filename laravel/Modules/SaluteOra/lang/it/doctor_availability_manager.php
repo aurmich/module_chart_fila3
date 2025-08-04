@@ -1,5 +1,12 @@
 <?php
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+>>>>>>> aurmich/dev
 declare(strict_types=1);
 
 return [
@@ -150,3 +157,17 @@ return [
         'list' => 'Lista',
     ],
 ];
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+return array (
+  'navigation' => 
+  array (
+    'group' => 'doctor availability manager.navigation',
+  ),
+);
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
+=======
+>>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+>>>>>>> aurmich/dev

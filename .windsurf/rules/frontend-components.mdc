@@ -1,4 +1,13 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: manual
+description:
+globs:
+---
+=======
+>>>>>>> aurmich/dev
 description:
 globs:
 alwaysApply: false
@@ -43,10 +52,29 @@ alwaysApply: false
 
 @php
     $widgetClass = match($type) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
         'patient' => \Modules\<nome progetto>\Filament\Widgets\PatientWidget::class,
         'doctor' => \Modules\<nome progetto>\Filament\Widgets\DoctorWidget::class,
         'admin' => \Modules\<nome progetto>\Filament\Widgets\AdminWidget::class,
         default => \Modules\<nome progetto>\Filament\Widgets\DefaultWidget::class,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+        'patient' => \Modules\SaluteOra\Filament\Widgets\PatientWidget::class,
+        'doctor' => \Modules\SaluteOra\Filament\Widgets\DoctorWidget::class,
+        'admin' => \Modules\SaluteOra\Filament\Widgets\AdminWidget::class,
+        default => \Modules\SaluteOra\Filament\Widgets\DefaultWidget::class,
+>>>>>>> 2099645a (.)
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     };
 @endphp
 
@@ -112,3 +140,7 @@ Un componente semplice è:
 - Facile da debuggare
 - Facile da estendere
 - Facile da mantenere
+<<<<<<< HEAD
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev

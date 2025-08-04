@@ -7,11 +7,29 @@
     <testsuites>
         <testsuite name="Unit">
             <directory>tests/Unit</directory>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
+>>>>>>> aurmich/dev
             <directory suffix="Test.php">./Modules/*/tests/Unit</directory>
         </testsuite>
         <testsuite name="Feature">
             <directory>tests/Feature</directory>
             <directory suffix="Test.php">./Modules/*/tests/Feature</directory>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+        </testsuite>
+        <testsuite name="Feature">
+            <directory>tests/Feature</directory>
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
+>>>>>>> aurmich/dev
         </testsuite>
     </testsuites>
     <source>
@@ -21,5 +39,28 @@
     </source>
     <php>
         <env name="APP_ENV" value="testing"/>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        <env name="APP_MAINTENANCE_DRIVER" value="file"/>
+        <env name="BCRYPT_ROUNDS" value="4"/>
+        <env name="CACHE_STORE" value="array"/>
+        <env name="DB_CONNECTION" value="sqlite"/>
+        <env name="DB_DATABASE" value=":memory:"/>
+        <env name="MAIL_MAILER" value="array"/>
+        <env name="QUEUE_CONNECTION" value="sync"/>
+        <env name="SESSION_DRIVER" value="array"/>
+        <env name="PULSE_ENABLED" value="false"/>
+        <env name="TELESCOPE_ENABLED" value="false"/>
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+        <env name="NIGHTWATCH_ENABLED" value="false"/>
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
+>>>>>>> aurmich/dev
     </php>
 </phpunit>

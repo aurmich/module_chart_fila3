@@ -11,6 +11,19 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 
 /**
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ * 
+ *
+>>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
  * @property int $id
  * @property string $authenticatable_type
  * @property int $authenticatable_id

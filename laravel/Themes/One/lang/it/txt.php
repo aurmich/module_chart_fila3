@@ -1,7 +1,15 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
+=======
+<<<<<<< HEAD
+declare(strict_types=1);
+
+=======
+>>>>>>> 0cff2983 (📝 (docs): remove unused Blade file for appointments to clean up the codebase)
+>>>>>>> aurmich/dev
 return [
     'appointment' => [
         'title' => 'Appuntamento in programma',
@@ -11,6 +19,10 @@ return [
         'studio_address' => 'Indirizzo studio',
         'phone' => 'Telefono',
         'email' => 'Email',
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
         'state' => 'Stato',
     ],
     'report' => [
@@ -24,4 +36,10 @@ return [
         'page' => 'Pagina',
         'Project' => 'SaluteOra',
     ],
+<<<<<<< HEAD
+=======
+=======
+    ]
+>>>>>>> 0cff2983 (📝 (docs): remove unused Blade file for appointments to clean up the codebase)
+>>>>>>> aurmich/dev
 ];

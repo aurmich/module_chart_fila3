@@ -1,5 +1,13 @@
 <?php
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
+>>>>>>> aurmich/dev
 return [
     'doctors' => [
         'title' => 'Doctors',
@@ -40,4 +48,12 @@ return [
             'view' => 'View studio',
         ],
     ],
+<<<<<<< HEAD
 ];
+=======
+<<<<<<< HEAD
+];
+=======
+]; 
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
+>>>>>>> aurmich/dev

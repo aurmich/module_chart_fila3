@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: This rule enforces best practices and coding standards for Zsh scripting to enhance readability, maintainability, security, and performance. It covers code structure, common patterns, performance, security, testing, common pitfalls, and tooling.
 globs: *.zsh
 ---

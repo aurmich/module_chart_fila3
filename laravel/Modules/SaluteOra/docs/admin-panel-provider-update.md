@@ -326,7 +326,14 @@ private function getFullCalendarConfig(): array
 
 ### Nuove Variabili Aggiunte
 ```env
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 2099645a (.)
+>>>>>>> aurmich/dev
 # FullCalendar Scheduler License (opzionale)
 FULLCALENDAR_SCHEDULER_LICENSE_KEY=your-license-key-here
 

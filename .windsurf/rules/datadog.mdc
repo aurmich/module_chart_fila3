@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: This rule outlines best practices for coding standards, observability, and effective use of the Datadog library in Python projects. It covers coding style, metric/tag naming, dashboard design, security, and performance optimization.
 globs: *.py
 ---

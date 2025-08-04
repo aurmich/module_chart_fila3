@@ -1,5 +1,18 @@
 <?php
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> aurmich/dev
+=======
+declare(strict_types=1);
+
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 return [
     'backend' => [
         'access' => [
@@ -41,7 +54,19 @@ return [
         'view' => 'View',
     ],
     'save' => 'Save',
+<<<<<<< HEAD
     'close' => 'Chiudi',
     'back' => 'Indietro',
     'confirm' => 'Conferma',
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    'close' => 'Chiudi',
+    'back' => 'Indietro',
+    'confirm' => 'Conferma',
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ];

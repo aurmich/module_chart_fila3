@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 # Script di Risoluzione dei Conflitti
 
 ## Panoramica
@@ -84,6 +89,105 @@ Verifica e corregge i problemi comuni di namespace nei file PHP, che sono spesso
 
 #### Descrizione
 Analizza i conflitti e fornisce statistiche e suggerimenti per la risoluzione.
+<<<<<<< HEAD
+=======
+=======
+# Risoluzione Conflitti negli Script Bash
+=======
+# Script di Risoluzione dei Conflitti
+>>>>>>> 15cb84fb (fix collisions)
+
+## Panoramica
+
+Questo documento fornisce una guida completa agli script di automazione per la risoluzione dei conflitti git nel progetto Laraxot PTVX. Gli script descritti sono progettati per aiutare gli sviluppatori a identificare, analizzare e risolvere i conflitti di merge in modo efficiente.
+
+## Script Disponibili
+
+### 1. find_conflicts.sh
+
+#### Descrizione
+Identifica e elenca tutti i file con conflitti git non risolti nel repository.
+
+#### Utilizzo
+```bash
+./bashscripts/git/find_conflicts.sh
+```
+
+#### Output
+Un elenco di file che contengono marcatori di conflitto git.
+
+#### Come Funziona
+1. Utilizza `git grep` per cercare i marcatori  in tutti i file
+2. Organizza i risultati per tipo di file (PHP, MD, JSON, ecc.)
+3. Mostra un riepilogo della quantità di conflitti per tipo
+
+### 2. resolve_conflicts.sh
+
+#### Descrizione
+Uno script interattivo che aiuta a risolvere i conflitti di merge proponendo varie strategie di risoluzione.
+
+#### Utilizzo
+```bash
+./bashscripts/utils/resolve_conflicts.sh [percorso_file]
+```
+
+#### Funzionalità
+1. Visualizza il contenuto del file con conflitti
+2. Propone diverse strategie di risoluzione:
+   - Mantenere la versione HEAD
+   - Mantenere la versione incoming
+   - Fusione manuale guidata
+   - Aprire il file in un editor
+3. Applica la strategia selezionata e rimuove i marcatori di conflitto
+4. Crea backup dei file prima delle modifiche
+
+### 3. fix_all_git_conflicts.sh
+
+#### Descrizione
+Script di risoluzione automatica che mantiene la versione HEAD per tutti i conflitti.
+
+#### Utilizzo
+```bash
+./bashscripts/utils/fix_all_git_conflicts.sh
+```
+
+#### Funzionalità
+1. Identifica tutti i file con conflitti
+2. Crea backup dei file originali
+3. Mantiene automaticamente la versione HEAD
+4. Rimuove i marcatori di conflitto
+5. Produce un report delle modifiche
+
+#### Limitazioni
+- Non adatto per conflitti complessi che richiedono fusione manuale
+- Può perdere modifiche importanti dalla versione non-HEAD
+
+### 4. check_namespaces.sh
+
+#### Descrizione
+Verifica e corregge i problemi comuni di namespace nei file PHP, che sono spesso causa di conflitti.
+
+#### Utilizzo
+```bash
+./bashscripts/utils/check_namespaces.sh [directory]
+```
+
+<<<<<<< HEAD
+1. **Struttura principale**: Duplicazione dell'intero script, con marker di conflitto nidificati
+2. **Messaggi di sistema**: Presenza di messaggi informativi sulla risoluzione del conflitto
+>>>>>>> 54f4fa16 (.)
+=======
+#### Funzionalità
+1. Cerca i namespace che includono incorrettamente il segmento 'app'
+2. Suggerisce correzioni secondo le convenzioni del progetto
+3. Può applicare automaticamente le correzioni se richiesto
+>>>>>>> 15cb84fb (fix collisions)
+
+### 5. conflict_analyzer.sh
+
+#### Descrizione
+Analizza i conflitti e fornisce statistiche e suggerimenti per la risoluzione.
+>>>>>>> aurmich/dev
 
 ### sync_to_disk.sh
 
@@ -188,7 +292,14 @@ I seguenti file sono stati recentemente risolti:
 [Backlink: Documentazione Globale](/docs/README.md)
 [Backlink: fix_all_git_conflicts.md](fix_all_git_conflicts.md)
 [Backlink: git_conflicts_resolution.md](git_conflicts_resolution.md)
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ### fix_structure.sh
 
 Mantenere la versione più avanzata con funzioni di logging colorate, migliorando:
@@ -255,6 +366,11 @@ I seguenti file sono stati recentemente risolti:
 - `sync_to_disk.sh`: Mantenuta versione avanzata con migliore feedback e gestione esclusioni
 - `fix_merge_conflicts.sh`: Corretta la logica di individuazione e rimozione dei marker di conflitto per garantire la pulizia completa di tutti i tre tipi di marker 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 Questa documentazione è collegata bidirezionalmente con la [documentazione principale sulla risoluzione dei conflitti](../../docs/bashscripts_conflict_resolution.md) nella root del progetto. 
 
 #### Utilizzo
@@ -400,3 +516,149 @@ Per pulire un repository con molti conflitti non risolti:
 - [Conflitti nei File di Configurazione](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/config_file_conflicts.md)
 - [Convenzioni di Namespace](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/NAMESPACE-CONVENTIONS.md)
 - [Risoluzione Conflitti nei Moduli](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/conflitti_merge_risolti.md)
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 4d4d6cb7 (.)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
+Questa documentazione è collegata bidirezionalmente con la [documentazione principale sulla risoluzione dei conflitti](../../docs/bashscripts_conflict_resolution.md) nella root del progetto. 
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+=======
+#### Utilizzo
+```bash
+./bashscripts/utils/conflict_analyzer.sh
+```
+
+#### Output
+1. Statistiche sulla quantità e tipi di conflitti
+2. Analisi dei file più frequentemente in conflitto
+3. Suggerimenti su quali file dovrebbero essere risolti per primi
+4. Identificazione dei conflitti più critici
+
+## Metodologia di Risoluzione Guidata
+
+### Fase 1: Identificazione
+```bash
+# Trova tutti i file con conflitti
+./bashscripts/git/find_conflicts.sh
+```
+
+### Fase 2: Analisi
+```bash
+# Analizza i conflitti trovati
+./bashscripts/utils/conflict_analyzer.sh
+```
+
+### Fase 3: Risoluzione Mirata
+```bash
+# Risolvi manualmente i conflitti più critici
+./bashscripts/utils/resolve_conflicts.sh [file_critico]
+```
+
+### Fase 4: Risoluzione Automatica
+```bash
+# Risolvi automaticamente i conflitti rimanenti meno critici
+./bashscripts/utils/fix_all_git_conflicts.sh
+```
+
+### Fase 5: Verifica
+1. Eseguire PHPStan per verificare la compatibilità
+2. Verificare il funzionamento del codice
+3. Controllare la documentazione
+
+## Best Practices per l'Utilizzo degli Script
+
+1. **Analizzare Prima, Risolvere Dopo**: Utilizzare gli script di analisi prima di procedere con la risoluzione
+2. **Backup Sistematici**: Assicurarsi di avere backup prima di applicare modifiche automatiche
+3. **Risoluzione Manuale dei File Critici**: Risolvere manualmente i file più importanti o complessi
+4. **Documentazione delle Decisioni**: Documentare le scelte fatte durante la risoluzione
+5. **Verifica Post-Risoluzione**: Testare sempre il codice dopo la risoluzione
+
+## Sviluppo e Manutenzione degli Script
+
+### Contribuire agli Script
+Gli script possono essere migliorati e personalizzati. Per contribuire:
+
+1. Testare lo script in un ambiente sicuro
+2. Documentare le modifiche proposte
+3. Creare una pull request
+
+### Regole di Naming
+- Script di utilità: `utils/nome_script.sh`
+- Script git: `git/nome_script.sh`
+- Script di analisi: `analysis/nome_script.sh`
+
+### Struttura Standard
+```bash
+#!/bin/bash
+
+# =======================
+# Nome dello script
+# =======================
+# Descrizione: Breve descrizione dello script
+# Utilizzo: ./path/to/script.sh [argomenti]
+# Autore: Nome dell'autore
+# =======================
+
+# Dichiarazione delle costanti e variabili
+
+# Funzioni di utilità
+
+# Funzione principale
+
+# Esecuzione dello script
+```
+
+## Casi d'Uso Comuni
+
+### 1. Risoluzione Post-Pull
+Quando un `git pull` fallisce a causa di conflitti:
+```bash
+git pull origin main
+# Conflitti rilevati
+./bashscripts/utils/conflict_analyzer.sh
+./bashscripts/utils/resolve_conflicts.sh [file_conflittuale]
+```
+
+### 2. Controllo Pre-Commit
+Prima di eseguire un commit, verificare l'assenza di conflitti:
+```bash
+./bashscripts/git/find_conflicts.sh
+# Se vengono trovati conflitti, risolverli
+git add .
+git commit -m "Messaggio del commit"
+```
+
+### 3. Pulizia del Repository
+Per pulire un repository con molti conflitti non risolti:
+```bash
+./bashscripts/git/find_conflicts.sh
+./bashscripts/utils/fix_all_git_conflicts.sh
+```
+
+## Troubleshooting
+
+### Errori Comuni
+1. **Script Non Eseguibile**: `chmod +x script.sh`
+2. **Percorsi Errati**: Eseguire gli script dalla root del progetto
+3. **Permessi Insufficienti**: Verificare i permessi di scrittura
+
+### Risoluzione dei Problemi
+1. Controllare i log generati dagli script
+2. Utilizzare le opzioni di debug se disponibili
+3. Consultare la documentazione specifica dello script
+
+## Collegamenti Bidirezionali
+
+- [Gestione dei Conflitti Git](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/git_conflicts_resolution.md)
+- [Risoluzione Automatica dei Conflitti](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/fix_all_git_conflicts.md)
+- [Conflitti nei File di Configurazione](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/config_file_conflicts.md)
+- [Convenzioni di Namespace](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/NAMESPACE-CONVENTIONS.md)
+- [Risoluzione Conflitti nei Moduli](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/conflitti_merge_risolti.md)
+>>>>>>> d83fe8da (.)
+>>>>>>> 15cb84fb (fix collisions)
+>>>>>>> aurmich/dev

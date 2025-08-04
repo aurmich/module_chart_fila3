@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: Comprehensive guidelines for effective Maven project management, covering code organization, dependency management, performance optimization, and security best practices. This rule provides actionable advice to avoid common pitfalls and promote maintainable, scalable Maven projects.
 globs: **/pom.xml
 ---

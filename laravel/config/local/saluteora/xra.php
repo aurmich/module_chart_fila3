@@ -14,9 +14,37 @@ return [
     'disable_frontend_dynamic_route' => false,
     'register_adm_theme' => false,
     'register_pub_theme' => true,
+<<<<<<< HEAD
     'tenant_class' => 'Modules\SaluteOra\Models\Studio',
     'colors' => [
         'primary' => '#FF5F7E',
     ],
     'force_ssl' => env('FORCE_SSL', false),
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    'tenant_class' => 'Modules\SaluteOra\Models\Studio',
+    'colors' => [
+<<<<<<< HEAD
+<<<<<<< HEAD
+        'primary' => '#FF5F7E',
+<<<<<<< HEAD
+    ],
+    'force_ssl' => env('FORCE_SSL', false),
+=======
+    ]
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+    'tenant_class' => 'Modules\SaluteOra\Models\Studio',
+>>>>>>> 2bcfd382 (fix Address)
+=======
+        'primary' => '#0D9488',
+=======
+        'primary' => '#FF5F7E',
+>>>>>>> 6a8817e6 (- creata pagina dettaglio dottore)
+    ]
+>>>>>>> 58d017c2 (- aggiornato stile dettaglio paziente)
+>>>>>>> aurmich/dev
 ];

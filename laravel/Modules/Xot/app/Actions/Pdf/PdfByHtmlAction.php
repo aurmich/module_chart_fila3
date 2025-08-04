@@ -16,6 +16,14 @@ class PdfByHtmlAction
 
     public PdfEngineEnum $engine;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
     /**
      * Genera un PDF dall'HTML fornito.
      *
@@ -27,6 +35,16 @@ class PdfByHtmlAction
      * @param PdfEngineEnum $engine Engine da utilizzare
      * @return string|BinaryFileResponse
      */
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
     public function execute(
         string $html,
         string $filename = 'my_doc.pdf',
@@ -35,6 +53,14 @@ class PdfByHtmlAction
         string $orientation = 'P',
         PdfEngineEnum $engine = PdfEngineEnum::SPIPU,
     ): string|BinaryFileResponse {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
         $data = PdfData::from([
             'html' => $html,
             'filename' => $filename,
@@ -53,5 +79,26 @@ class PdfByHtmlAction
             'path' => $data->getPath(),
             default => $data->getPath(),
         };
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 54f4fa16 (.)
+        return $data = PdfData::from([
+            'html'->$html,
+            'filename' -> $filename,
+            'disk' -> $disk,
+            'out' -> $out,
+            'orientation' -> $orientation,
+            'engine' -> $engine,
+            ]);
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
     }
 }

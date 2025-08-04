@@ -1,10 +1,34 @@
 ---
+<<<<<<< HEAD
 description: Pattern e best practice per l'implementazione di Widget Filament in progetti Laraxot/<nome progetto>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+description: Pattern e best practice per l'implementazione di Widget Filament in progetti Laraxot/<nome progetto>
+=======
+description: Pattern e best practice per l'implementazione di Widget Filament in progetti Laraxot/PTVX
+>>>>>>> d23ba493 (add calendar)
+=======
+description: Pattern e best practice per l'implementazione di Widget Filament in progetti Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 globs: ["**/Filament/Widgets/*.php"]
 alwaysApply: true
 ---
 
+<<<<<<< HEAD
 # Pattern per Widget Filament in Laraxot/<nome progetto>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Pattern per Widget Filament in Laraxot/<nome progetto>
+=======
+# Pattern per Widget Filament in Laraxot/PTVX
+>>>>>>> d23ba493 (add calendar)
+=======
+# Pattern per Widget Filament in Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 
 ## Principi Fondamentali
 
@@ -174,6 +198,11 @@ class StatsOverviewWidget extends BaseWidget
     protected function getCompletionRate(): float
     {
         $total = \Modules\ModuleName\Models\ModelName::count();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
         if ($total === 0) {
             return 0;
@@ -181,6 +210,25 @@ class StatsOverviewWidget extends BaseWidget
 
         $completed = \Modules\ModuleName\Models\ModelName::where('is_completed', true)->count();
 
+<<<<<<< HEAD
+=======
+=======
+        
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+        if ($total === 0) {
+            return 0;
+        }
+
+        $completed = \Modules\ModuleName\Models\ModelName::where('is_completed', true)->count();
+<<<<<<< HEAD
+        
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
         return $completed / $total;
     }
 
@@ -217,7 +265,19 @@ class ChartDataWidget extends ChartWidget
      * Tipo di grafico.
      */
     protected static ?string $chartId = 'moduleNameChart';
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     /**
      * Intervallo di aggiornamento.
      */
@@ -269,7 +329,19 @@ class ChartDataWidget extends ChartWidget
     protected function getData(): array
     {
         $data = $this->getChartData();
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
         return [
             'datasets' => [
                 [
@@ -299,7 +371,19 @@ class ChartDataWidget extends ChartWidget
         $dateFormat = $this->getDateFormat();
         $dateColumn = 'created_at';
         $startDate = $this->getStartDate();
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
         return DB::table('model_name_table')
             ->select(
                 DB::raw("DATE_FORMAT({$dateColumn}, '{$dateFormat}') as date"),
@@ -406,7 +490,19 @@ class ModuleCalendarWidget extends BaseCalendarWidget
      * @var \Illuminate\Database\Eloquent\Model|string|null
      */
     public $model = EventModel::class;
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     /**
      * Configurazione del calendario.
      *
@@ -434,7 +530,19 @@ class ModuleCalendarWidget extends BaseCalendarWidget
             ],
         ]);
     }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     /**
      * Unisce la configurazione base con quella personalizzata.
      *
@@ -444,10 +552,30 @@ class ModuleCalendarWidget extends BaseCalendarWidget
     protected function mergeBaseConfig(array $config): array
     {
         $baseConfig = parent::config();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
         return array_merge($baseConfig, $config);
     }
 
+<<<<<<< HEAD
+=======
+=======
+        
+        return array_merge($baseConfig, $config);
+    }
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+        return array_merge($baseConfig, $config);
+    }
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     /**
      * Schema del form per gli eventi.
      *
@@ -461,31 +589,101 @@ class ModuleCalendarWidget extends BaseCalendarWidget
                 ->placeholder(__('modulename::calendar.fields.title.placeholder'))
                 ->required()
                 ->maxLength(255),
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+                
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
             Forms\Components\Textarea::make('description')
                 ->label(__('modulename::calendar.fields.description.label'))
                 ->placeholder(__('modulename::calendar.fields.description.placeholder'))
                 ->columnSpanFull(),
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+                
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
             Forms\Components\DateTimePicker::make('starts_at')
                 ->label(__('modulename::calendar.fields.starts_at.label'))
                 ->seconds(false)
                 ->required(),
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+                
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
             Forms\Components\DateTimePicker::make('ends_at')
                 ->label(__('modulename::calendar.fields.ends_at.label'))
                 ->seconds(false)
                 ->required(),
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
             Forms\Components\ColorPicker::make('color')
                 ->label(__('modulename::calendar.fields.color.label'))
                 ->rgba(),
 
+<<<<<<< HEAD
+=======
+=======
+                
+            Forms\Components\ColorPicker::make('color')
+                ->label(__('modulename::calendar.fields.color.label'))
+                ->rgba(),
+                
+>>>>>>> d23ba493 (add calendar)
+=======
+
+            Forms\Components\ColorPicker::make('color')
+                ->label(__('modulename::calendar.fields.color.label'))
+                ->rgba(),
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
             Forms\Components\Checkbox::make('is_all_day')
                 ->label(__('modulename::calendar.fields.is_all_day.label')),
         ];
     }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     /**
      * Azioni nell'header del calendario.
      *
@@ -510,7 +708,19 @@ class ModuleCalendarWidget extends BaseCalendarWidget
                 ->visible(fn () => $this->userCan('createEvents')),
         ];
     }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     /**
      * Azioni sugli eventi del calendario.
      *
@@ -526,18 +736,54 @@ class ModuleCalendarWidget extends BaseCalendarWidget
                     return $this->prepareEventData($data);
                 })
                 ->visible(fn (EventModel $record) => $this->userCan('updateEvents', $record)),
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+                
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
             Actions\DeleteAction::make()
                 ->label(__('modulename::calendar.actions.delete.label'))
                 ->modalHeading(__('modulename::calendar.actions.delete.modal_heading'))
                 ->visible(fn (EventModel $record) => $this->userCan('deleteEvents', $record)),
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+                
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
             Actions\ViewAction::make()
                 ->label(__('modulename::calendar.actions.view.label'))
                 ->modalHeading(__('modulename::calendar.actions.view.modal_heading')),
         ];
     }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     /**
      * Prepara i dati dell'evento prima del salvataggio.
      *
@@ -551,6 +797,11 @@ class ModuleCalendarWidget extends BaseCalendarWidget
             $data['starts_at'] = \Carbon\Carbon::parse($data['starts_at'])->startOfDay();
             $data['ends_at'] = \Carbon\Carbon::parse($data['ends_at'])->endOfDay();
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
         // Aggiungi metadati
         $data['user_id'] = auth()->id();
@@ -558,6 +809,25 @@ class ModuleCalendarWidget extends BaseCalendarWidget
         return $data;
     }
 
+<<<<<<< HEAD
+=======
+=======
+        
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+        // Aggiungi metadati
+        $data['user_id'] = auth()->id();
+
+        return $data;
+    }
+<<<<<<< HEAD
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     /**
      * Controlla se l'utente ha il permesso specificato.
      *
@@ -569,10 +839,30 @@ class ModuleCalendarWidget extends BaseCalendarWidget
         if ($record) {
             return auth()->user()->can($permission, $record);
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
         return auth()->user()->can($permission);
     }
 
+<<<<<<< HEAD
+=======
+=======
+        
+        return auth()->user()->can($permission);
+    }
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+        return auth()->user()->can($permission);
+    }
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     /**
      * Personalizzazione del rendering degli eventi.
      */
@@ -581,6 +871,11 @@ class ModuleCalendarWidget extends BaseCalendarWidget
         return <<<JS
         function(info) {
             const classes = [];
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
             if (info.event.extendedProps.is_all_day) {
                 classes.push('all-day-event');
@@ -590,11 +885,44 @@ class ModuleCalendarWidget extends BaseCalendarWidget
                 classes.push('cancelled-event');
             }
 
+<<<<<<< HEAD
+=======
+=======
+            
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+            if (info.event.extendedProps.is_all_day) {
+                classes.push('all-day-event');
+            }
+
+            if (info.event.extendedProps.status === 'cancelled') {
+                classes.push('cancelled-event');
+            }
+<<<<<<< HEAD
+            
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
             return classes;
         }
         JS;
     }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     /**
      * Personalizzazione del rendering del contenuto degli eventi.
      */
@@ -620,7 +948,19 @@ class ModuleCalendarWidget extends BaseCalendarWidget
 
 ## Personalizzazione Icone per Widget e Navigazione (con XotBaseServiceProvider)
 
+<<<<<<< HEAD
 L'architettura Laraxot/<nome progetto> prevede che i Service Provider dei moduli estendano `Modules\Xot\Providers\XotBaseServiceProvider`. Questo provider di base gestisce automaticamente la registrazione di molte risorse, incluse le icone SVG personalizzate tramite il pacchetto `blade-ui-kit/blade-icons`.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+L'architettura Laraxot/<nome progetto> prevede che i Service Provider dei moduli estendano `Modules\Xot\Providers\XotBaseServiceProvider`. Questo provider di base gestisce automaticamente la registrazione di molte risorse, incluse le icone SVG personalizzate tramite il pacchetto `blade-ui-kit/blade-icons`.
+=======
+L'architettura Laraxot/PTVX prevede che i Service Provider dei moduli estendano `Modules\Xot\Providers\XotBaseServiceProvider`. Questo provider di base gestisce automaticamente la registrazione di molte risorse, incluse le icone SVG personalizzate tramite il pacchetto `blade-ui-kit/blade-icons`.
+>>>>>>> d23ba493 (add calendar)
+=======
+L'architettura Laraxot/<nome progetto> prevede che i Service Provider dei moduli estendano `Modules\Xot\Providers\XotBaseServiceProvider`. Questo provider di base gestisce automaticamente la registrazione di molte risorse, incluse le icone SVG personalizzate tramite il pacchetto `blade-ui-kit/blade-icons`.
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 
 ### Principi Chiave con XotBaseServiceProvider
 
@@ -759,7 +1099,19 @@ protected function getStats(): array
     // Calcoli complessi direttamente nel widget
     $totalAmount = DB::table('orders')->sum('amount');
     $averageAmount = DB::table('orders')->avg('amount');
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     // ...
 }
 
@@ -770,7 +1122,19 @@ protected function getStats(): array
 protected function getStats(): array
 {
     $statistics = app(OrderStatisticsService::class)->getOrderStatistics();
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     return [
         Stat::make(
             __('modulename::widgets.stats.total_amount.label'),
@@ -872,7 +1236,19 @@ protected function getSafeData(): array
             'widget' => static::class,
             'exception' => $e,
         ]);
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
         return [
             'success' => false,
             'error' => __('modulename::widgets.errors.data_fetch_failed'),
@@ -921,7 +1297,19 @@ class FilamentServiceProvider extends ServiceProvider
         \Modules\ModuleName\Filament\Widgets\ChartDataWidget::class,
         \Modules\ModuleName\Filament\Widgets\ModuleCalendarWidget::class,
     ];
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     /**
      * Bootstrap dei servizi dell'applicazione.
      */
@@ -931,4 +1319,16 @@ class FilamentServiceProvider extends ServiceProvider
         Filament::registerWidgets($this->widgets);
     }
 }
+<<<<<<< HEAD
 ```
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+```
+=======
+```
+>>>>>>> d23ba493 (add calendar)
+=======
+```
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev

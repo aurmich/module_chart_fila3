@@ -38,7 +38,14 @@ php artisan module:enable Chart
 ## Run the Migrations
 ```bash
 php artisan module:migrate Chart
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Module Chart
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/laraxot/module_chart_fila3.svg?style=flat-square)](https://packagist.org/packages/laraxot/module_chart_fila3)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/laraxot/module_chart_fila3/run-tests?label=tests)](https://github.com/laraxot/module_chart_fila3/actions?query=workflow%3Arun-tests+branch%3Amain)
@@ -79,3 +86,10 @@ php artisan module:enable Chart
 ## Run the Migrations
 ```bash
 php artisan module:migrate Chart
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+```
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev

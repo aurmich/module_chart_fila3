@@ -113,10 +113,17 @@ Il componente `OpeningHoursField` è stato migliorato per utilizzare un layout a
 ### Layout Precedente
 ```php
 // PRIMA: Layout a gruppo con label
+<<<<<<< HEAD
 Group::make()->schema([
     Grid::make(2)->schema([
         TextInput::make("$dayKey.morning"),
         TextInput::make("$dayKey.afternoon"),
+=======
+Group::make()->label($label)->schema([
+    Grid::make(2)->schema([
+        TextInput::make("$dayKey.morning")->label('Mattina'),
+        TextInput::make("$dayKey.afternoon")->label('Pomeriggio'),
+>>>>>>> aurmich/dev
     ])
 ])
 ```
@@ -126,8 +133,13 @@ Group::make()->schema([
 // DOPO: Layout a 3 colonne con intestazioni chiare
 Grid::make(3)->schema([
     Placeholder::make($dayKey.'_label')->content($label), // Nome giorno
+<<<<<<< HEAD
     TextInput::make("$dayKey.morning"),        // Input mattina
 TextInput::make("$dayKey.afternoon"),      // Input pomeriggio
+=======
+    TextInput::make("$dayKey.morning")->label(''),        // Input mattina  
+    TextInput::make("$dayKey.afternoon")->label(''),      // Input pomeriggio
+>>>>>>> aurmich/dev
 ])
 ```
 
@@ -207,8 +219,13 @@ TextInput::make("$dayKey.morning")
     ->regex('/^\d{2}:\d{2}-\d{2}:\d{2}$/')
 
 // DOPO: Due TimePicker separati (mobile-friendly)
+<<<<<<< HEAD
 TimePicker::make("$dayKey.morning_from"),
 TimePicker::make("$dayKey.morning_to"),
+=======
+TimePicker::make("$dayKey.morning_from")->label('Dalle'),
+TimePicker::make("$dayKey.morning_to")->label('Alle'),
+>>>>>>> aurmich/dev
 ```
 
 #### Benefici UX Mobile Ottenuti
@@ -345,6 +362,13 @@ Il componente è immediatamente utilizzabile in altri Resources:
 
 ---
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c6edea7c (.)
+>>>>>>> aurmich/dev
 ## 5. Errore Critico: BindingResolutionException team_user_model
 
 ### Data Risoluzione
@@ -450,6 +474,14 @@ graph TD
 
 ---
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+>>>>>>> c6edea7c (.)
+>>>>>>> aurmich/dev
 ## Checklist Prevenzione Errori Futuri
 
 ### Per Componenti Filament Custom
@@ -500,7 +532,14 @@ graph TD
 
 ### 1. Identificazione Rapida
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+>>>>>>> aurmich/dev
 # Cerca componenti senza $view
 grep -r "extends.*Component" Modules/ --include="*.php" | xargs grep -L "\$view"
 
@@ -510,7 +549,14 @@ grep -r "implements HasForms" Modules/ --include="*.php" | xargs grep "XotBase"
 
 ### 2. Verifica Strutturale
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+>>>>>>> aurmich/dev
 # Verifica esistenza viste
 find Modules/ -name "*.blade.php" | grep -E "(components|forms)"
 
@@ -520,7 +566,14 @@ find Modules/ -name "*.php" -path "*/lang/*"
 
 ### 3. Test Funzionale
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+>>>>>>> aurmich/dev
 # Test rendering componenti
 php artisan filament:check-components
 
@@ -551,3 +604,10 @@ php artisan route:list | grep filament
 
 *Ultimo aggiornamento: Dicembre 2024*
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+**Questa documentazione deve essere aggiornata ogni volta che si identifica e risolve un errore critico.** 
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+>>>>>>> aurmich/dev

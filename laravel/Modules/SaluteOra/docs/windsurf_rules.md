@@ -127,6 +127,13 @@ Aggiungi queste regole a `phpcs.xml`:
 
 ## Workflow di Sviluppo
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
+>>>>>>> aurmich/dev
 ### Crosscheck documentazione UI/Wizard
 - Prima di sviluppare o modificare wizard, step o UI, è OBBLIGATORIO consultare tutti i file di documentazione associati (markdown, blade, html in `/docs/images/`, documenti funzionali in `/docs/`).
 - Annotare sempre nel codice il riferimento ai file consultati.
@@ -134,6 +141,14 @@ Aggiungi queste regole a `phpcs.xml`:
 - Cross-referenziare nei file di documentazione lo step/widget coinvolto e viceversa.
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
+>>>>>>> aurmich/dev
 ### Creazione di un Nuovo Enum
 
 1. Crea un nuovo file nella directory `app/Enums/`

@@ -116,7 +116,14 @@ test('successful login regenerates session', function (): void {
 
 ### **Test Execution Commands**
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d50c1c4a (✨ (docs): add comprehensive documentation for PHPStan factory fixes 2025 in SaluteOra module to ensure adherence to best practices and improve code quality)
+>>>>>>> aurmich/dev
 # Complete test suite
 ./vendor/bin/pest Modules/Cms/tests/Feature/Auth/LoginTest.php
 
@@ -209,3 +216,10 @@ Questa implementazione fornisce una **base solida** per tutti i futuri test di a
 
 *Last Updated: Gennaio 2025*  
 *Project: Laraxot SaluteOra*  
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+*Module: Cms Testing Suite* 
+>>>>>>> d50c1c4a (✨ (docs): add comprehensive documentation for PHPStan factory fixes 2025 in SaluteOra module to ensure adherence to best practices and improve code quality)
+>>>>>>> aurmich/dev

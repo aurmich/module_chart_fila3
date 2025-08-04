@@ -77,7 +77,27 @@ new #[Layout('components.layouts.auth')] class extends Component {
     <form wire:submit="resetPassword" class="flex flex-col gap-6">
         <!-- Email Address -->
         <flux:input
+<<<<<<< HEAD
             wire:model="email"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            wire:model="email"
+=======
+            wire:model.live="email"
+>>>>>>> aurmich/dev
+=======
+            wire:model="email"
+>>>>>>> 54f4fa16 (.)
+=======
+            wire:model.live="email"
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+            wire:model="email"
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
             :label="__('Email')"
             type="email"
             required
@@ -86,24 +106,92 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
         <!-- Password -->
         <flux:input
+<<<<<<< HEAD
             wire:model="password"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            wire:model="password"
+=======
+            wire:model.live="password"
+>>>>>>> aurmich/dev
+=======
+            wire:model="password"
+>>>>>>> 54f4fa16 (.)
+=======
+            wire:model.live="password"
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+            wire:model="password"
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
             :label="__('Password')"
             type="password"
             required
             autocomplete="new-password"
             :placeholder="__('Password')"
+<<<<<<< HEAD
             viewable
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            viewable
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+            viewable
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
         />
 
         <!-- Confirm Password -->
         <flux:input
+<<<<<<< HEAD
             wire:model="password_confirmation"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            wire:model="password_confirmation"
+=======
+            wire:model.live="password_confirmation"
+>>>>>>> aurmich/dev
+=======
+            wire:model="password_confirmation"
+>>>>>>> 54f4fa16 (.)
+=======
+            wire:model.live="password_confirmation"
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+            wire:model="password_confirmation"
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
             :label="__('Confirm password')"
             type="password"
             required
             autocomplete="new-password"
             :placeholder="__('Confirm password')"
+<<<<<<< HEAD
             viewable
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            viewable
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+            viewable
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
         />
 
         <div class="flex items-center justify-end">

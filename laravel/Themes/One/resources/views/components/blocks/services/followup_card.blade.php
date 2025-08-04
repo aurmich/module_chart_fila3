@@ -144,32 +144,93 @@
 
         {{-- Educazione neonatale --}}
         <div class="bg-pink-50 rounded-lg p-4 mb-6">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
             <h5 class="text-sm font-semibold text-pink-900 mb-2">@lang('pub_theme::content.services.followup.education_neonatal_title.label')</h5>
             <ul class="text-sm text-pink-800 space-y-1">
                 <li>• @lang('pub_theme::content.services.followup.oral_hygiene_first_tooth.label')</li>
                 <li>• @lang('pub_theme::content.services.followup.bottle_caries_prevention.label')</li>
                 <li>• @lang('pub_theme::content.services.followup.healthy_eating_teeth.label')</li>
                 <li>• @lang('pub_theme::content.services.followup.first_visit_timing.label')</li>
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
+            <h5 class="text-sm font-semibold text-pink-900 mb-2">Educazione Neonatale:</h5>
+            <ul class="text-sm text-pink-800 space-y-1">
+                <li>• Igiene orale dal primo dentino</li>
+                <li>• Prevenzione carie da biberon</li>
+                <li>• Alimentazione sana per denti</li>
+                <li>• Quando fare la prima visita</li>
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
+>>>>>>> aurmich/dev
             </ul>
         </div>
 
         {{-- Supporto famiglia --}}
         <div class="bg-blue-50 rounded-lg p-4 mb-6">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
             <h5 class="text-sm font-semibold text-blue-900 mb-2">@lang('pub_theme::content.services.followup.family_support_title.label')</h5>
             <ul class="text-sm text-blue-800 space-y-1">
                 <li>• @lang('pub_theme::content.services.followup.free_phone_consultations.label')</li>
                 <li>• @lang('pub_theme::content.services.followup.personalized_educational_material.label')</li>
                 <li>• @lang('pub_theme::content.services.followup.support_groups_mothers.label')</li>
                 <li>• @lang('pub_theme::content.services.followup.future_care_planning.label')</li>
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
+            <h5 class="text-sm font-semibold text-blue-900 mb-2">Supporto Famiglia:</h5>
+            <ul class="text-sm text-blue-800 space-y-1">
+                <li>• Consulenze telefoniche gratuite</li>
+                <li>• Materiale educativo personalizzato</li>
+                <li>• Gruppi di supporto per mamme</li>
+                <li>• Pianificazione cure future</li>
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
+>>>>>>> aurmich/dev
             </ul>
         </div>
 
         {{-- Testimonianza veloce --}}
         <div class="border-l-4 border-indigo-500 bg-gray-50 p-4 mb-6">
             <p class="text-sm italic text-gray-600 mb-2">
+<<<<<<< HEAD
                 "@lang('pub_theme::content.services.followup.testimonial.text.label')"
             </p>
             <p class="text-xs text-gray-500">- @lang('pub_theme::content.services.followup.testimonial.author.label')</p>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                "@lang('pub_theme::content.services.followup.testimonial.text.label')"
+            </p>
+            <p class="text-xs text-gray-500">- @lang('pub_theme::content.services.followup.testimonial.author.label')</p>
+=======
+=======
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
+                "Il follow-up è stato fantastico. Mi hanno aiutata anche dopo il parto,
+                e ora so come prendermi cura dei dentini di Sofia. Un supporto che fa la differenza."
+            </p>
+            <p class="text-xs text-gray-500">- Elena T., mamma di Sofia</p>
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
+>>>>>>> aurmich/dev
         </div>
 
         {{-- Call to action --}}

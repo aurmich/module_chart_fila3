@@ -3,6 +3,10 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     'accepted_appointments' => [
         'title' => 'Accepted Appointments',
         'back_home' => 'Back to Home',
@@ -10,18 +14,39 @@ return [
         'click_here' => 'click here',
         'if_not_redirected' => 'If you are not redirected automatically, :link.',
     ],
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 198c0c0a (✨ (DoctorAppointmentsWidget.php, DoctorCalendarWidget.php): refactor appointment loading logic to use doctor_id instead of auth user id for better clarity and functionality)
+>>>>>>> aurmich/dev
     'hero' => [
         'accepted_appointments' => [
             'title' => 'Accepted Appointments',
             'description' => 'View all appointments that have been confirmed',
             'back_button' => [
                 'label' => 'Go back',
+<<<<<<< HEAD
                 'tooltip' => 'Return to the previous page',
+=======
+<<<<<<< HEAD
+                'tooltip' => 'Return to the previous page',
+=======
+                'tooltip' => 'Return to previous page',
+>>>>>>> 198c0c0a (✨ (DoctorAppointmentsWidget.php, DoctorCalendarWidget.php): refactor appointment loading logic to use doctor_id instead of auth user id for better clarity and functionality)
+>>>>>>> aurmich/dev
             ],
         ],
         'pending_appointments' => [
             'title' => 'Pending Appointments',
+<<<<<<< HEAD
             'description' => 'View all appointments awaiting confirmation',
+=======
+<<<<<<< HEAD
+            'description' => 'View all appointments awaiting confirmation',
+=======
+            'description' => 'View all appointments waiting for confirmation',
+>>>>>>> 198c0c0a (✨ (DoctorAppointmentsWidget.php, DoctorCalendarWidget.php): refactor appointment loading logic to use doctor_id instead of auth user id for better clarity and functionality)
+>>>>>>> aurmich/dev
         ],
         'completed_appointments' => [
             'title' => 'Completed Appointments',
@@ -33,6 +58,10 @@ return [
         ],
         'entry_appointments' => [
             'title' => 'Incoming Appointments',
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
             'description' => 'Visualizza tutti i nuovi appuntamenti richiesti',
         ],
     ],
@@ -142,3 +171,23 @@ return [
         'pdf_title' => 'Appointment Report',
     ],
 ];
+<<<<<<< HEAD
+=======
+=======
+            'description' => 'View all new appointment requests',
+        ],
+    ],
+    'states' => [
+        'pending' => 'Pending',
+        'confirmed' => 'Confirmed',
+        'scheduled' => 'Scheduled',
+        'in_progress' => 'In Progress',
+        'completed' => 'Completed',
+        'cancelled' => 'Cancelled',
+        'rejected' => 'Rejected',
+        'no_show' => 'No Show',
+        'rescheduled' => 'Rescheduled',
+    ],
+]; 
+>>>>>>> 198c0c0a (✨ (DoctorAppointmentsWidget.php, DoctorCalendarWidget.php): refactor appointment loading logic to use doctor_id instead of auth user id for better clarity and functionality)
+>>>>>>> aurmich/dev

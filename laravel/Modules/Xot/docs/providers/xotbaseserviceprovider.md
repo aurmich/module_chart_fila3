@@ -1,8 +1,36 @@
 # XotBaseServiceProvider
 
 ## Descrizione
+<<<<<<< HEAD
 `XotBaseServiceProvider` è una classe astratta che fornisce l'implementazione base per i Service Provider di tutti i moduli . Estende `Illuminate\Support\ServiceProvider` e implementa funzionalità comuni per la registrazione di componenti, traduzioni, configurazioni e altro.
 `XotBaseServiceProvider` è una classe astratta che fornisce l'implementazione base per i Service Provider di tutti i moduli in SaluteOra. Estende `Illuminate\Support\ServiceProvider` e implementa funzionalità comuni per la registrazione di componenti, traduzioni, configurazioni e altro.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+`XotBaseServiceProvider` è una classe astratta che fornisce l'implementazione base per i Service Provider di tutti i moduli in il progetto. Estende `Illuminate\Support\ServiceProvider` e implementa funzionalità comuni per la registrazione di componenti, traduzioni, configurazioni e altro.
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
+`XotBaseServiceProvider` è una classe astratta che fornisce l'implementazione base per i Service Provider di tutti i moduli . Estende `Illuminate\Support\ServiceProvider` e implementa funzionalità comuni per la registrazione di componenti, traduzioni, configurazioni e altro.
+`XotBaseServiceProvider` è una classe astratta che fornisce l'implementazione base per i Service Provider di tutti i moduli in SaluteOra. Estende `Illuminate\Support\ServiceProvider` e implementa funzionalità comuni per la registrazione di componenti, traduzioni, configurazioni e altro.
+=======
+`XotBaseServiceProvider` è una classe astratta che fornisce l'implementazione base per i Service Provider di tutti i moduli in il progetto. Estende `Illuminate\Support\ServiceProvider` e implementa funzionalità comuni per la registrazione di componenti, traduzioni, configurazioni e altro.
+>>>>>>> 54f4fa16 (.)
+=======
+`XotBaseServiceProvider` è una classe astratta che fornisce l'implementazione base per i Service Provider di tutti i moduli . Estende `Illuminate\Support\ServiceProvider` e implementa funzionalità comuni per la registrazione di componenti, traduzioni, configurazioni e altro.
+>>>>>>> 9df8f556 (fix .md)
+=======
+`XotBaseServiceProvider` è una classe astratta che fornisce l'implementazione base per i Service Provider di tutti i moduli in SaluteOra. Estende `Illuminate\Support\ServiceProvider` e implementa funzionalità comuni per la registrazione di componenti, traduzioni, configurazioni e altro.
+>>>>>>> 15cb84fb (fix collisions)
+=======
+`XotBaseServiceProvider` è una classe astratta che fornisce l'implementazione base per i Service Provider di tutti i moduli . Estende `Illuminate\Support\ServiceProvider` e implementa funzionalità comuni per la registrazione di componenti, traduzioni, configurazioni e altro.
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 
 ## Caratteristiche Principali
 
@@ -21,12 +49,48 @@ protected string $module_ns = __NAMESPACE__; // Namespace del modulo
 public function boot(): void
 {
     $this->registerTranslations();
+<<<<<<< HEAD
     $this->registerConfig();
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    // $this->registerConfig(); // to register
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
+    $this->registerConfig();
+=======
+    // $this->registerConfig(); // to register
+>>>>>>> 54f4fa16 (.)
+=======
+    $this->registerConfig();
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
     $this->registerViews();
     $this->loadMigrationsFrom($this->module_dir.'/../Database/Migrations');
     $this->registerLivewireComponents();
     $this->registerBladeComponents();
     $this->registerCommands();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    // $this->registerBladeIcons(); deve stare in register
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)
+=======
+    // $this->registerBladeIcons(); deve stare in register
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 }
 ```
 
@@ -36,9 +100,38 @@ public function register(): void
 {
     $this->nameLower = Str::lower($this->name);
     $this->module_ns = collect(explode('\\', $this->module_ns))->slice(0, -1)->implode('\\');
+<<<<<<< HEAD
     $this->app->register($this->module_ns.'\Providers\RouteServiceProvider');
     $this->app->register($this->module_ns.'\Providers\EventServiceProvider');
     $this->registerBladeIcons();
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    $this->app->register($this->module_ns . '\\Providers\\RouteServiceProvider');
+    $this->app->register($this->module_ns . '\\Providers\\EventServiceProvider');
+    $this->registerConfig();
+    $this->registerBladeIcons(); // to boot
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
+    $this->app->register($this->module_ns.'\Providers\RouteServiceProvider');
+    $this->app->register($this->module_ns.'\Providers\EventServiceProvider');
+    $this->registerBladeIcons();
+=======
+    $this->app->register($this->module_ns . '\\Providers\\RouteServiceProvider');
+    $this->app->register($this->module_ns . '\\Providers\\EventServiceProvider');
+    $this->registerConfig();
+    $this->registerBladeIcons(); // to boot
+>>>>>>> 54f4fa16 (.)
+=======
+    $this->app->register($this->module_ns.'\Providers\RouteServiceProvider');
+    $this->app->register($this->module_ns.'\Providers\EventServiceProvider');
+    $this->registerBladeIcons();
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 }
 ```
 
@@ -172,4 +265,35 @@ try {
 2. Il nome del modulo deve essere impostato nella classe figlia
 3. I percorsi sono relativi alla root del modulo
 4. Le eccezioni vengono gestite con fallback appropriati
+<<<<<<< HEAD
 5. La registrazione dei componenti è automatica ma configurabile 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+5. La registrazione dei componenti è automatica ma configurabile 
+=======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+5. La registrazione dei componenti è automatica ma configurabile 
+## Collegamenti tra versioni di XotBaseServiceProvider.md
+* [XotBaseServiceProvider.md](docs/moduli/xot/XotBaseServiceProvider.md)
+* [XotBaseServiceProvider.md](../../../Xot/docs/providers/XotBaseServiceProvider.md)
+
+
+## Collegamenti tra versioni di xotbaseserviceprovider.md
+* [xotbaseserviceprovider.md](../../../Notify/docs/providers/xotbaseserviceprovider.md)
+
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+5. La registrazione dei componenti è automatica ma configurabile 
+>>>>>>> 9df8f556 (fix .md)
+=======
+5. La registrazione dei componenti è automatica ma configurabile 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+5. La registrazione dei componenti è automatica ma configurabile 
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev

@@ -37,7 +37,17 @@ php artisan database:schema-exporter
 
 ## Utilizzo
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Esportazione schema database
 php artisan database:schema-exporter
 
@@ -50,7 +60,17 @@ Tabelle trovate: users, migrations, password_resets
 - Migliorata la gestione degli errori
 - Aggiunta validazione input
 - Ottimizzata la query di estrazione tabelle 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ## Collegamenti tra versioni di database-schema-exporter.md
 * [database-schema-exporter.md](../../../Xot/docs/commands/database-schema-exporter.md)
 * [database-schema-exporter.md](../../../Xot/docs/console/commands/database-schema-exporter.md)

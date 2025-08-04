@@ -22,7 +22,14 @@ Invoca con `/migration-check` per eseguire controlli completi sulle migrazioni.
 
 ### 1.1 Verifica Stato Migrazioni
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Controllo status completo
 php artisan migrate:status
 
@@ -35,7 +42,14 @@ php artisan backup:run --only-db
 
 ### 1.2 Controllo Struttura File
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Verifica che tutte le migrazioni usino classi anonime
 find Modules/*/database/migrations/ -name "*.php" -exec grep -l "class.*Migration" {} \; | head -10 || echo "✅ Solo classi anonime utilizzate"
 
@@ -47,7 +61,14 @@ grep -r "extends.*Migration" Modules/*/database/migrations/ --include="*.php" | 
 
 ### 2.1 Controllo Classi Anonime Obbligatorie
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Cerca migrazioni con classi nominate (VIETATE)
 for file in $(find Modules/*/database/migrations/ -name "*.php"); do
     if grep -q "^class" "$file"; then
@@ -65,7 +86,14 @@ done
 
 ### 2.2 Controllo Metodo down() VIETATO
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Cerca implementazioni del metodo down (ASSOLUTAMENTE VIETATE)
 echo "🔍 Controllo metodi down() (VIETATI)..."
 for file in $(find Modules/*/database/migrations/ -name "*.php"); do
@@ -78,7 +106,14 @@ done
 
 ### 2.3 Verifica Controlli Esistenza OBBLIGATORI
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Verifica uso di hasTable() prima di create
 echo "🔍 Controllo hasTable() per creazione tabelle..."
 for file in $(find Modules/*/database/migrations/ -name "*.php"); do
@@ -104,7 +139,14 @@ done
 
 ### 3.1 Controllo Nomi Tabelle e Colonne
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Verifica naming convention snake_case
 grep -r "Schema::create\|Schema::table" Modules/*/database/migrations/ --include="*.php" | grep -v "snake_case\|[a-z_]" | head -10
 
@@ -114,7 +156,14 @@ grep -r "\->integer.*_id" Modules/*/database/migrations/ --include="*.php" || ec
 
 ### 3.2 Verifica Tipi di Colonne
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Controllo uso corretto dei tipi
 echo "🔍 Controllo tipi di colonne..."
 
@@ -132,7 +181,14 @@ grep -r "->json\|->jsonb" Modules/*/database/migrations/ --include="*.php" | hea
 
 ### 4.1 Verifica Foreign Keys
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Controlla definizione FK corretta
 echo "🔍 Controllo foreign keys..."
 grep -r "foreign\|constrained" Modules/*/database/migrations/ --include="*.php" | head -10
@@ -143,7 +199,14 @@ grep -r "onDelete\|onUpdate" Modules/*/database/migrations/ --include="*.php" | 
 
 ### 4.2 Controllo Indici
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Verifica definizione indici
 grep -r "->index\|->unique" Modules/*/database/migrations/ --include="*.php" | head -10
 
@@ -155,7 +218,14 @@ grep -r "index.*\[.*,.*\]" Modules/*/database/migrations/ --include="*.php" | he
 
 ### 5.1 Dry Run Obbligatorio
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Test migrazioni senza eseguirle (OBBLIGATORIO prima di ogni migrate)
 echo "🧪 Dry run migrazioni..."
 php artisan migrate --pretend | head -20
@@ -166,7 +236,14 @@ php artisan migrate --pretend 2>&1 | grep -i "error\|exception" || echo "✅ Nes
 
 ### 5.2 Controllo Rollback Safety
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Verifica che nessuna migrazione abbia down() implementato
 echo "🔒 Controllo rollback safety..."
 if grep -r "function down" Modules/*/database/migrations/ --include="*.php"; then
@@ -181,7 +258,14 @@ fi
 
 ### 6.1 Verifica Modifica Colonne Pattern Corretto
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Controlla se ci sono nuove migrazioni per aggiungere colonne (VIETATO)
 echo "🔍 Controllo pattern aggiunta colonne..."
 
@@ -196,7 +280,14 @@ done
 
 ### 6.2 Verifica Template Corretto
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Controlla che le nuove migrazioni seguano il template corretto
 echo "🔍 Controllo template migrazioni..."
 
@@ -229,7 +320,14 @@ done
 
 ### 7.1 Pre-Execution Checklist
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Checklist pre-esecuzione (OBBLIGATORIA)
 echo "📋 Pre-execution checklist:"
 echo "1. ✅ Backup database completato"
@@ -245,7 +343,14 @@ echo "📊 Database: $(php artisan tinker --execute='echo config("database.defau
 
 ### 7.2 Esecuzione Controllata
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Esecuzione con logging completo
 echo "🚀 Esecuzione migrazioni..."
 php artisan migrate --verbose 2>&1 | tee migration-$(date +%Y%m%d_%H%M%S).log
@@ -258,7 +363,14 @@ php artisan migrate:status | tail -10
 
 ### 8.1 Controllo Integrità Database
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Verifica integrità referenziale
 echo "🔍 Controllo integrità database..."
 
@@ -273,7 +385,14 @@ done
 
 ### 8.2 Test Funzionalità Base
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Test basic operations
 echo "🧪 Test operazioni base..."
 
@@ -291,7 +410,14 @@ try {
 
 ### 9.1 Aggiornamento Documentazione
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Genera documentazione schema aggiornata
 echo "📝 Aggiornamento documentazione..."
 
@@ -311,7 +437,14 @@ done
 
 ### 9.2 Cleanup e Archiviazione
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 # Archivia log di migrazione
 mkdir -p storage/logs/migrations/
 mv migration-*.log storage/logs/migrations/ 2>/dev/null || true

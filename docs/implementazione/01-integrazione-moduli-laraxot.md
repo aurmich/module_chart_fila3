@@ -33,7 +33,14 @@ il progetto si basa su diversi moduli Laraxot che forniscono funzionalità di ba
 L'integrazione avviene tramite git subtree, che consente di incorporare repository esterni come subdirectory del nostro progetto, mantenendo la cronologia dei commit.
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # 1. Modulo Xot (deve essere il primo per le dipendenze)
 git subtree add --prefix laravel/Modules/Xot git@github.com:laraxot/module_xot_fila3.git dev --squash
 
@@ -86,7 +93,14 @@ Per aggiornare i moduli in futuro, utilizzare:
 
 ```bash
 git subtree pull --prefix laravel/Modules/Xot git@github.com:laraxot/module_xot_fila3.git dev --squash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Ripetere per gli altri moduli
 ```
 

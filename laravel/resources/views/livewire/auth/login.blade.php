@@ -82,7 +82,27 @@ new #[Layout('components.layouts.auth')] class extends Component {
     <form wire:submit="login" class="flex flex-col gap-6">
         <!-- Email Address -->
         <flux:input
+<<<<<<< HEAD
             wire:model="email"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+            wire:model="email"
+=======
+            wire:model.live="email"
+>>>>>>> aurmich/dev
+=======
+            wire:model="email"
+>>>>>>> 54f4fa16 (.)
+=======
+            wire:model.live="email"
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+            wire:model="email"
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
             :label="__('Email address')"
             type="email"
             required
@@ -94,24 +114,91 @@ new #[Layout('components.layouts.auth')] class extends Component {
         <!-- Password -->
         <div class="relative">
             <flux:input
+<<<<<<< HEAD
                 wire:model="password"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                wire:model="password"
+=======
+                wire:model.live="password"
+>>>>>>> aurmich/dev
+=======
+                wire:model="password"
+>>>>>>> 54f4fa16 (.)
+=======
+                wire:model.live="password"
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+                wire:model="password"
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
                 :label="__('Password')"
                 type="password"
                 required
                 autocomplete="current-password"
                 :placeholder="__('Password')"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
                 viewable
             />
 
             @if (Route::has('password.request'))
                 <flux:link class="absolute end-0 top-0 text-sm" :href="route('password.request')" wire:navigate>
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 54f4fa16 (.)
+            />
+
+            @if (Route::has('password.request'))
+                <flux:link class="absolute right-0 top-0 text-sm" :href="route('password.request')" wire:navigate>
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+                viewable
+            />
+
+            @if (Route::has('password.request'))
+                <flux:link class="absolute end-0 top-0 text-sm" :href="route('password.request')" wire:navigate>
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
                     {{ __('Forgot your password?') }}
                 </flux:link>
             @endif
         </div>
 
         <!-- Remember Me -->
+<<<<<<< HEAD
         <flux:checkbox wire:model="remember" :label="__('Remember me')" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <flux:checkbox wire:model="remember" :label="__('Remember me')" />
+=======
+        <flux:checkbox wire:model.live="remember" :label="__('Remember me')" />
+>>>>>>> aurmich/dev
+=======
+        <flux:checkbox wire:model="remember" :label="__('Remember me')" />
+>>>>>>> 54f4fa16 (.)
+=======
+        <flux:checkbox wire:model.live="remember" :label="__('Remember me')" />
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+        <flux:checkbox wire:model="remember" :label="__('Remember me')" />
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
 
         <div class="flex items-center justify-end">
             <flux:button variant="primary" type="submit" class="w-full">{{ __('Log in') }}</flux:button>
@@ -119,8 +206,28 @@ new #[Layout('components.layouts.auth')] class extends Component {
     </form>
 
     @if (Route::has('register'))
+<<<<<<< HEAD
         <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-600 dark:text-zinc-400">
             <span>{{ __('Don\'t have an account?') }}</span>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-600 dark:text-zinc-400">
+            <span>{{ __('Don\'t have an account?') }}</span>
+=======
+        <div class="space-x-1 text-center text-sm text-zinc-600 dark:text-zinc-400">
+            {{ __('Don\'t have an account?') }}
+>>>>>>> aurmich/dev
+=======
+        <div class="space-x-1 text-center text-sm text-zinc-600 dark:text-zinc-400">
+            {{ __('Don\'t have an account?') }}
+>>>>>>> 54f4fa16 (.)
+=======
+        <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-600 dark:text-zinc-400">
+            <span>{{ __('Don\'t have an account?') }}</span>
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
             <flux:link :href="route('register')" wire:navigate>{{ __('Sign up') }}</flux:link>
         </div>
     @endif

@@ -1,4 +1,16 @@
+<<<<<<< HEAD
 # Laraxot <nome progetto> Base Rules (June 2025)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Laraxot <nome progetto> Base Rules (June 2025)
+=======
+# Laraxot PTVX Base Rules (June 2025)
+>>>>>>> d23ba493 (add calendar)
+=======
+# Laraxot <nome progetto> Base Rules (June 2025)
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 
 ## Models and Namespaces
 - **Fundamental model rule**: Models must extend their module's `BaseModel`, NEVER directly `Illuminate\Database\Eloquent\Model` or `Modules\Xot\Models\XotBaseModel`
@@ -49,7 +61,19 @@
 - **General rules**: In `Modules/Xot/docs/`, specific modules only with references/links
 
 ## PHPStan
+<<<<<<< HEAD
 - **Execution**: Always from `/var/www/html/<nome progetto>/laravel` with `./vendor/bin/phpstan analyze`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **Execution**: Always from `/var/www/html/<nome progetto>/laravel` with `./vendor/bin/phpstan analyze`
+=======
+- **Execution**: Always from `/var/www/html/ptvx/laravel` with `./vendor/bin/phpstan analyze`
+>>>>>>> d23ba493 (add calendar)
+=======
+- **Execution**: Always from `/var/www/html/<nome progetto>/laravel` with `./vendor/bin/phpstan analyze`
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 - **Level**: 9 as minimum standard
 - **Type safety**:
   - Use `declare(strict_types=1);` in every file
@@ -97,4 +121,16 @@
 - **Spatie**: Prefer Spatie Laravel Data instead of services
 - **QueableActions**: Prefer Spatie QueableActions
 - **Validation**: Regression tests after each bugfix
+<<<<<<< HEAD
 - **Documentation management**: Always update docs during changes
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **Documentation management**: Always update docs during changes
+=======
+- **Documentation management**: Always update docs during changes
+>>>>>>> d23ba493 (add calendar)
+=======
+- **Documentation management**: Always update docs during changes
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev

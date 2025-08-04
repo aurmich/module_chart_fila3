@@ -100,7 +100,19 @@ return [
             'table' => 'password_resets',
             'expire' => 60,
             'email' => 'lu::auth.emails.password',
+<<<<<<< HEAD
             'connection' => 'user',
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'connection' => 'user',
+=======
+            'connection' => 'liveuser_general',
+>>>>>>> aurmich/dev
+=======
+            'connection' => 'liveuser_general',
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
         ],
     ],
 ];

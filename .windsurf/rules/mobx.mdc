@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: This rule provides comprehensive guidance for using MobX effectively, covering best practices for code organization, performance, testing, and common pitfalls. It aims to ensure efficient and maintainable state management in React and other JavaScript applications using MobX.
 globs: *.js,*.jsx,*.ts,*.tsx
 ---

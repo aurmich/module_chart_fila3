@@ -106,7 +106,14 @@ return [
 
 ### 2.2 Environment Variables
 ```env
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 # Twilio WhatsApp
 TWILIO_ACCOUNT_SID=your_account_sid
 TWILIO_AUTH_TOKEN=your_auth_token

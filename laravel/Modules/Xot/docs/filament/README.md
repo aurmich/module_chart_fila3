@@ -12,7 +12,17 @@ Questa cartella contiene la documentazione relativa all'implementazione di Filam
 ## Note
 
 Questa documentazione si applica a tutti i moduli che utilizzano Filament per il backend. 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
@@ -91,7 +101,56 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 
+<<<<<<< HEAD
 ## Regola sulle closure void nelle azioni custom Filament
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+## Regola sulle closure void nelle azioni custom Filament
+=======
+# Regole generali per XotBaseResource
+>>>>>>> 15cb84fb (fix collisions)
+
+## Proprietà e metodi vietati nei Resource
+
+Chi estende XotBaseResource **non deve mai** dichiarare o ridefinire:
+- `protected static ?string $navigationIcon`
+- `protected static ?string $navigationGroup`
+- `protected static ?string $translationPrefix`
+- `public static function table(...)`
+- `public static function getListTableColumns(): array`
+
+**Motivazione:**
+- La logica di navigazione, traduzione e colonne è centralizzata per garantire coerenza e manutenibilità.
+- Ridefinire queste proprietà/metodi nei resource porta a conflitti, duplicazione, errori di autoload e perdita di coerenza.
+- Override solo tramite configurazione o metodi previsti, mai tramite ridefinizione diretta.
+
+**Esempio corretto:**
+```php
+// ❌ NON FARE
+protected static ?string $translationPrefix = 'doctor-resource';
+$prefix = static::$translationPrefix;
+->placeholder(__($prefix . '.first_name'))
+
+// ✅ FARE
+->placeholder(__('patient::doctor-resource.first_name'))
+```
+
+## Moduli che fanno riferimento a questa regola
+- [Patient: DoctorResource](../../../Patient/docs/filament/resources/doctor-resource.md)
+// Aggiungere qui altri moduli se necessario
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Regole generali per XotBaseResource
+=======
+## Regola sulle closure void nelle azioni custom Filament
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 
 ### Motivazione
 - Le closure dichiarate come `void` nelle azioni custom Filament devono solo eseguire effetti collaterali e **non restituire mai un valore**.
@@ -123,6 +182,7 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 - [ ] Nessuna closure void restituisce un valore
 - [ ] Tutte le azioni custom rispettano la signature void
 
+<<<<<<< HEAD
 # Regole generali per XotBaseResource
 
 ## Proprietà e metodi vietati nei Resource
@@ -154,3 +214,11 @@ $prefix = static::$translationPrefix;
 - [Patient: DoctorResource](../../../Patient/docs/filament/resources/doctor-resource.md)
 // Aggiungere qui altri moduli se necessario
 
+=======
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+>>>>>>> aurmich/dev

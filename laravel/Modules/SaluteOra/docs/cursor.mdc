@@ -3,6 +3,16 @@ description: Linee guida per l'implementazione dei Wizard in SaluteOra
 globs: ['**/app/Filament/Widgets/**/*.php', '**/app/Filament/Resources/**/*.php']
 alwaysApply: true
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
+>>>>>>> aurmich/dev
 # Linee Guida per l'Implementazione dei Wizard
 
 ## Principi di Clean Code per i Wizard
@@ -110,6 +120,13 @@ L'analisi dell'errore nell'implementazione del wizard di ricerca dentista è doc
 - [Documentazione Ufficiale Filament](https://filamentphp.com/docs/3.x/forms/layout/wizard)
 - [Analisi Errori Precedenti](./analisi_errore_wizard.md)
 - [Linee Guida UI](../UI/docs/guidelines.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
+>>>>>>> aurmich/dev
 
 # Aggiornamento appointment.php (2024-06-XX)
 
@@ -150,3 +167,11 @@ Checklist aggiornata:
 **Collegamenti:**
 - [appointment-management.md](./appointment-management.md)
 - [fullcalendar_parental_widgets.md](./fullcalendar_parental_widgets.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
+>>>>>>> aurmich/dev

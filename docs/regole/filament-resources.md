@@ -128,3 +128,26 @@ Forms\Components\TextInput::make('name')
 
 ### Nota architetturale
 Ogni modulo deve documentare le proprie scelte di build asset e output nella rispettiva documentazione locale, con riferimento a questa regola centrale. La configurazione degli asset per i moduli (es. Chart) deve garantire autonomia, evitare conflitti con la root e facilitare la manutenzione.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+## Validazione
+- Verificare che tutte le risorse siano registrate nel service provider
+- Controllare che i modelli referenziati esistano
+- Assicurarsi che le pagine CRUD siano implementate
+- Verificare i permessi e le policy
+## Collegamenti tra versioni di filament-resources.md
+* [filament-resources.md](docs/tecnico/filament/filament-resources.md)
+* [filament-resources.md](docs/regole/filament-resources.md)
+* [filament-resources.md](laravel/Modules/Gdpr/docs/filament-resources.md)
+* [filament-resources.md](laravel/Modules/Xot/docs/filament-resources.md)
+* [filament-resources.md](laravel/Modules/Cms/docs/filament-resources.md)
+
+>>>>>>> 8244aa81a (,)
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
+>>>>>>> aurmich/dev

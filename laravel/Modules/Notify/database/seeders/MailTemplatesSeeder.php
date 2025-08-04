@@ -7,11 +7,33 @@ use Spatie\MailTemplates\Models\MailTemplate;
 
 class MailTemplatesSeeder extends Seeder
 {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     public function run(): void
     {
         // Template Welcome
         MailTemplate::create([
             'mailable' => 'Modules\Notify\Mail\WelcomeMail',
+<<<<<<< HEAD
+=======
+=======
+    public function run()
+    {
+        // Template Welcome
+        MailTemplate::create([
+            'mailable' => \Modules\Notify\Mail\WelcomeMail::class,
+>>>>>>> 54f4fa16 (.)
+=======
+    public function run(): void
+    {
+        // Template Welcome
+        MailTemplate::create([
+            'mailable' => 'Modules\Notify\Mail\WelcomeMail',
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
             'subject' => 'Welcome to {{ app_name }}',
             'html_template' => '
                 <h1 style="color: #2D3748; font-size: 24px; margin: 0 0 20px 0;">Welcome to {{ app_name }}!</h1>
@@ -29,7 +51,19 @@ class MailTemplatesSeeder extends Seeder
 
         // Template Order Confirmation
         MailTemplate::create([
+<<<<<<< HEAD
             'mailable' => 'Modules\Notify\Mail\OrderConfirmationMail',
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'mailable' => 'Modules\Notify\Mail\OrderConfirmationMail',
+=======
+            'mailable' => \Modules\Notify\Mail\OrderConfirmationMail::class,
+>>>>>>> 54f4fa16 (.)
+=======
+            'mailable' => 'Modules\Notify\Mail\OrderConfirmationMail',
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
             'subject' => 'Order #{{ order_id }} Confirmed',
             'html_template' => '
                 <h1 style="color: #2D3748; font-size: 24px; margin: 0 0 20px 0;">Order Confirmed!</h1>

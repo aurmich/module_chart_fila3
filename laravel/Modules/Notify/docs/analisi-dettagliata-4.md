@@ -198,7 +198,15 @@ public static function table(Table $table): Table
                 }),
             Tables\Actions\BulkAction::make('deactivate')
                 ->label('Disattiva')
+<<<<<<< HEAD
                 ->icon('heroicon-o-x-mark')
+=======
+<<<<<<< HEAD
+                ->icon('heroicon-o-x-mark')
+=======
+                ->icon('heroicon-o-x')
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
                 ->action(function (Collection $records) {
                     $records->each->deactivate();
                 })

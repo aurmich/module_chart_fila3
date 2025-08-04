@@ -1,7 +1,18 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+declare(strict_types=1);
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
+>>>>>>> aurmich/dev
 return [
     'title' => 'Find a dentist',
     'messages' => [
@@ -12,6 +23,11 @@ return [
     'fields' => [
         'region' => [
             'label' => 'Region',
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
             'placeholder' => 'Select a region',
         ],
         'province' => [
@@ -33,6 +49,31 @@ return [
         'time' => [
             'label' => 'Time',
             'placeholder' => 'Select a time',
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
+        ],
+        'province' => [
+            'label' => 'Province',
+        ],
+        'city' => [
+            'label' => 'City',
+        ],
+        'cap' => [
+            'label' => 'Postal Code',
+        ],
+        'date' => [
+            'label' => 'Date',
+        ],
+        'time' => [
+            'label' => 'Time',
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
+>>>>>>> aurmich/dev
         ],
     ],
     'steps' => [
@@ -49,4 +90,16 @@ return [
             'description' => 'Summary and booking confirmation',
         ],
     ],
+<<<<<<< HEAD
 ];
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+];
+=======
+]; 
+>>>>>>> aurmich/dev
+=======
+]; 
+>>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
+>>>>>>> aurmich/dev

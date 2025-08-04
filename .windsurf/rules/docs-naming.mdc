@@ -1,7 +1,19 @@
 ---
 description:
 globs:
+<<<<<<< HEAD
 alwaysApply: true
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+alwaysApply: true
+=======
+alwaysApply: false
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+alwaysApply: true
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+>>>>>>> aurmich/dev
 ---
 # Documentation Naming Convention Rule
 
@@ -30,6 +42,13 @@ docs/form-architecture.md
 ```
 
 ## Related
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+>>>>>>> aurmich/dev
 - [Documentation Structure](mdc:../../docs/struttura-documentazione.md)
 - [Best Practices](mdc:../../docs/best-practices.md)
 - [Coding Standards](mdc:../../docs/standards/coding-standards.md)
@@ -42,3 +61,14 @@ docs/form-architecture.md
 - Filosofia: un solo punto di verità.
 - Religione: "Non avrai altro path all'infuori del relativo".
 - Zen: serenità nella navigazione, nessun link rotto dopo un refactor.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+- [Documentation Structure](../../docs/struttura-documentazione.md)
+- [Best Practices](../../docs/best-practices.md)
+- [Coding Standards](../../docs/standards/coding-standards.md)
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+>>>>>>> aurmich/dev

@@ -1,10 +1,34 @@
 ---
+<<<<<<< HEAD
 description: Regole dettagliate per l'implementazione di Action Filament personalizzate in progetti Laraxot/<nome progetto>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+description: Regole dettagliate per l'implementazione di Action Filament personalizzate in progetti Laraxot/<nome progetto>
+=======
+description: Regole dettagliate per l'implementazione di Action Filament personalizzate in progetti Laraxot/PTVX
+>>>>>>> d23ba493 (add calendar)
+=======
+description: Regole dettagliate per l'implementazione di Action Filament personalizzate in progetti Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 globs: ["**/Filament/Actions/*.php", "**/Filament/Resources/**/Actions/*.php", "**/Filament/Pages/**/Actions/*.php"]
 alwaysApply: true
 ---
 
+<<<<<<< HEAD
 # Regole per Azioni Filament Personalizzate in Laraxot/<nome progetto>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Regole per Azioni Filament Personalizzate in Laraxot/<nome progetto>
+=======
+# Regole per Azioni Filament Personalizzate in Laraxot/PTVX
+>>>>>>> d23ba493 (add calendar)
+=======
+# Regole per Azioni Filament Personalizzate in Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 
 ## Principi Fondamentali
 
@@ -38,7 +62,19 @@ class ApproveAction extends Action
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
         $this->label(__('modulename::actions.approve.label'))
             ->modalHeading(__('modulename::actions.approve.modal_heading'))
             ->modalDescription(__('modulename::actions.approve.modal_description'))
@@ -55,7 +91,19 @@ class ApproveAction extends Action
             })
             ->successNotificationTitle(__('modulename::actions.approve.notifications.success'));
     }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     /**
      * Processa l'approvazione.
      *
@@ -83,16 +131,50 @@ use Filament\Actions\Action;
 class ApproveAction extends Action
 {
     // ❌ Manca override di setUp()
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     // ❌ Configurazione sparsa invece che centralizzata in setUp()
     public function __construct()
     {
         parent::__construct();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 
         $this->label('Approva'); // ❌ Stringa hardcoded
         $this->color('success'); // ❌ Valore hardcoded
     }
 
+<<<<<<< HEAD
+=======
+=======
+        
+        $this->label('Approva'); // ❌ Stringa hardcoded
+        $this->color('success'); // ❌ Valore hardcoded
+    }
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+        $this->label('Approva'); // ❌ Stringa hardcoded
+        $this->color('success'); // ❌ Valore hardcoded
+    }
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     // ❌ Manca tipizzazione del parametro e valore di ritorno
     public function processApproval($record)
     {
@@ -107,7 +189,19 @@ class ApproveAction extends Action
 public static function make(?string $name = null): static
 {
     $name = $name ?? 'approve_document';
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     return parent::make($name);
 }
 ```
@@ -145,7 +239,19 @@ return [
 protected function setUp(): void
 {
     parent::setUp();
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     $this->label(__('modulename::actions.assign.label'))
         ->form([
             Forms\Components\Select::make('user_id')
@@ -154,7 +260,19 @@ protected function setUp(): void
                 ->searchable()
                 ->preload()
                 ->required(),
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+                
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
             Forms\Components\DatePicker::make('due_date')
                 ->label(__('modulename::actions.assign.fields.due_date.label')),
         ])
@@ -170,7 +288,19 @@ protected function setUp(): void
 protected function setUp(): void
 {
     parent::setUp();
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     $this->label(__('modulename::actions.delete.label'))
         ->requiresConfirmation()
         ->modalHeading(__('modulename::actions.delete.modal_heading'))
@@ -193,7 +323,19 @@ protected function setUp(): void
 protected function setUp(): void
 {
     parent::setUp();
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     $this->label(__('modulename::actions.bulk_archive.label'))
         ->icon('heroicon-o-archive-box')
         ->action(function (Collection $records): void {
@@ -285,21 +427,57 @@ class ApproveActionTest extends TestCase
         // Arrange
         $user = User::factory()->create();
         $record = ModelName::factory()->create();
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
         // Act
         $this->actingAs($user)
             ->post(route('filament.resources.model-names.actions.approve', [
                 'record' => $record->id,
                 'data' => ['note' => 'Test note'],
             ]));
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
         // Assert
         $this->assertDatabaseHas('model_names', [
             'id' => $record->id,
             'status' => 'approved',
         ]);
     }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     /** @test */
     public function it_requires_permissions_to_approve(): void
     {
@@ -359,9 +537,27 @@ La documentazione delle azioni deve includere:
 protected function setUp(): void
 {
     parent::setUp();
+<<<<<<< HEAD
 
     $this->authorize('approve', fn ($record) => $record);
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+    $this->authorize('approve', fn ($record) => $record);
+
+=======
+    
+    $this->authorize('approve', fn ($record) => $record);
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+    $this->authorize('approve', fn ($record) => $record);
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
     // Resto della configurazione...
 }
 ```
@@ -391,7 +587,19 @@ class ApproveAction extends Action
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
         $this->label(__('modulename::actions.approve.label'))
             ->color(Color::GREEN)
             ->icon('heroicon-o-check-circle')
@@ -399,7 +607,19 @@ class ApproveAction extends Action
             ->authorize(fn (ModelName $record) => auth()->user()->can('approve', $record))
             ->action(function (ModelName $record): void {
                 $record->update(['status' => 'approved', 'approved_at' => now(), 'approved_by' => auth()->id()]);
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+                
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
                 if ($record->user) {
                     $record->user->notify(new ApprovalNotification($record));
                 }
@@ -407,4 +627,16 @@ class ApproveAction extends Action
             ->successNotificationTitle(__('modulename::actions.approve.notifications.success'));
     }
 }
+<<<<<<< HEAD
 ```
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+```
+=======
+```
+>>>>>>> d23ba493 (add calendar)
+=======
+```
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev

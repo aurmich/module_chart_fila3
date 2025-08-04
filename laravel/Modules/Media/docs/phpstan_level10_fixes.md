@@ -1,9 +1,45 @@
 # Correzioni PHPStan Livello 10 - Modulo Media
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo Media e le relative soluzioni implementate.
+
+## Collegamenti Bidirezionali
+
+- [Linee Guida Generali per la Risoluzione dei Conflitti Git](../../../../docs/risoluzione_conflitti_git.md)
+- [Documentazione Conflitti Git nei Moduli](../../../../docs/conflitti_git_moduli.md)
+
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 > **Collegamento globale:** Per le strategie generali e le best practices sulla risoluzione dei conflitti git, vedi [docs/git_conflict_resolution.md](../../../../docs/git_conflict_resolution.md).
 
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo Media e le relative soluzioni implementate.
 
+<<<<<<< HEAD
+=======
+=======
+Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo Media e le relative soluzioni implementate.
+
+## Collegamenti Bidirezionali
+
+- [Linee Guida Generali per la Risoluzione dei Conflitti Git](../../../../docs/risoluzione_conflitti_git.md)
+- [Documentazione Conflitti Git nei Moduli](../../../../docs/conflitti_git_moduli.md)
+
+>>>>>>> 54f4fa16 (.)
+=======
+> **Collegamento globale:** Per le strategie generali e le best practices sulla risoluzione dei conflitti git, vedi [docs/git_conflict_resolution.md](../../../../docs/git_conflict_resolution.md).
+
+Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo Media e le relative soluzioni implementate.
+
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 ## Errori Identificati
 
 ### 1. Uso del tipo mixed per risorsa di file in VideoStream.php
@@ -83,7 +119,36 @@ Questa soluzione mantiene la funzionalità originale migliorando al contempo la 
 
 ### 5. Risoluzione dei conflitti di merge nei file del modulo Media
 
+<<<<<<< HEAD
 **Problema**: Diversi file del modulo Media contenevano conflitti di merge non risolti, indicati da marcatori git . Questi conflitti impedivano la corretta esecuzione del codice e causavano errori di sintassi.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Problema**: Diversi file del modulo Media contenevano conflitti di merge non risolti, indicati da marcatori git . Questi conflitti impedivano la corretta esecuzione del codice e causavano errori di sintassi.
+=======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+
+**Problema**: Diversi file del modulo Media contenevano conflitti di merge non risolti, indicati da marcatori 
+**Problema**: Diversi file del modulo Media contenevano conflitti di merge non risolti, indicati da marcatori  Questi conflitti impedivano la corretta esecuzione del codice e causavano errori di sintassi.
+
+**Problema**: Diversi file del modulo Media contenevano conflitti di merge non risolti, indicati da marcatori  Questi conflitti impedivano la corretta esecuzione del codice e causavano errori di sintassi.
+aurmich/dev
+
+
+**Problema**: Diversi file del modulo Media contenevano conflitti di merge non risolti, indicati da marcatori 
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
+**Problema**: Diversi file del modulo Media contenevano conflitti di merge non risolti, indicati da marcatori git (`=======`, `>>>>>>>`, ecc.). Questi conflitti impedivano la corretta esecuzione del codice e causavano errori di sintassi.
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
 
 **Soluzione implementata**:
 1. Analisi sistematica dei conflitti di merge in ciascun file
@@ -103,14 +168,87 @@ Questa soluzione mantiene la funzionalità originale migliorando al contempo la 
 1. **Uso appropriato di PHPDoc per tipi speciali**: Quando PHP non supporta nativamente un tipo (come `resource`), utilizzare annotazioni PHPDoc per fornire informazioni di tipo a PHPStan.
 2. **Inizializzazione appropriata**: Inizializzare le proprietà con valori appropriati per il loro tipo.
 3. **Documentazione chiara**: Fornire commenti esplicativi che indicano lo scopo e il tipo atteso delle proprietà.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+4. **Risoluzione sistematica dei conflitti**: Analizzare attentamente i conflitti di merge e risolverli mantenendo la versione più completa e documentata del codice.
+5. **Backup prima delle modifiche**: Creare backup dei file originali prima di apportare modifiche significative.
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)
+=======
+4. **Risoluzione sistematica dei conflitti**: Analizzare attentamente i conflitti di merge e risolverli mantenendo la versione più completa e documentata del codice.
+5. **Backup prima delle modifiche**: Creare backup dei file originali prima di apportare modifiche significative.
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 
 ## Prossimi Passi
 
 1. Completare la revisione di `SubtitleService.php` per risolvere i problemi di tipo complessi.
 2. Aggiornare il modello `Media.php` per specificare tipi più precisi per le proprietà attualmente documentate come `mixed`.
 3. Eseguire l'analisi PHPStan a livello 10 per verificare che le correzioni risolvano effettivamente gli errori.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+4. Implementare test automatizzati per verificare il corretto funzionamento del modulo Media dopo le correzioni.
+5. Documentare le procedure di risoluzione dei conflitti di merge per prevenire problemi simili in futuro.
+
+## Collegamenti tra versioni di PHPSTAN_LEVEL10_FIXES.md
+* [PHPSTAN_LEVEL10_FIXES.md](docs/PHPSTAN_LEVEL10_FIXES.md)
+* [PHPSTAN_LEVEL10_FIXES.md](../../../Notify/docs/PHPSTAN_LEVEL10_FIXES.md)
+* [PHPSTAN_LEVEL10_FIXES.md](../../../User/docs/PHPSTAN_LEVEL10_FIXES.md)
+* [PHPSTAN_LEVEL10_FIXES.md](../../../Lang/docs/PHPSTAN_LEVEL10_FIXES.md)
+* [PHPSTAN_LEVEL10_FIXES.md](../../../Job/docs/PHPSTAN_LEVEL10_FIXES.md)
+* [PHPSTAN_LEVEL10_FIXES.md](../../../Media/docs/PHPSTAN_LEVEL10_FIXES.md)
+
+
+## Collegamenti tra versioni di phpstan_level10_fixes.md
+* [phpstan_level10_fixes.md](../../Notify/docs/phpstan_level10_fixes.md)
+* [phpstan_level10_fixes.md](../../User/docs/phpstan_level10_fixes.md)
+* [phpstan_level10_fixes.md](../../Lang/docs/phpstan_level10_fixes.md)
+* [phpstan_level10_fixes.md](../../Job/docs/phpstan_level10_fixes.md)
+
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 4. Documentare pattern e soluzioni standard per gestire risorse di file e altri tipi speciali nel progetto.
 
 ---
 
+<<<<<<< HEAD
 > **Collegamento globale:** Questa documentazione locale dettaglia i casi concreti e le decisioni architetturali adottate nel modulo Media. Per le strategie generali e le best practices, consulta sempre anche la documentazione globale in [docs/git_conflict_resolution.md](../../../../docs/git_conflict_resolution.md). 
+=======
+<<<<<<< HEAD
+> **Collegamento globale:** Questa documentazione locale dettaglia i casi concreti e le decisioni architetturali adottate nel modulo Media. Per le strategie generali e le best practices, consulta sempre anche la documentazione globale in [docs/git_conflict_resolution.md](../../../../docs/git_conflict_resolution.md). 
+<<<<<<< HEAD
+=======
+4. Implementare test automatizzati per verificare il corretto funzionamento del modulo Media dopo le correzioni.
+5. Documentare le procedure di risoluzione dei conflitti di merge per prevenire problemi simili in futuro.
+=======
+4. Documentare pattern e soluzioni standard per gestire risorse di file e altri tipi speciali nel progetto.
+>>>>>>> 9df8f556 (fix .md)
+
+---
+
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+> **Collegamento globale:** Questa documentazione locale dettaglia i casi concreti e le decisioni architetturali adottate nel modulo Media. Per le strategie generali e le best practices, consulta sempre anche la documentazione globale in [docs/git_conflict_resolution.md](../../../../docs/git_conflict_resolution.md). 
+>>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+> **Collegamento globale:** Questa documentazione locale dettaglia i casi concreti e le decisioni architetturali adottate nel modulo Media. Per le strategie generali e le best practices, consulta sempre anche la documentazione globale in [docs/git_conflict_resolution.md](../../../../docs/git_conflict_resolution.md). 
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev

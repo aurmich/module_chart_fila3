@@ -1,5 +1,70 @@
 ---
+<<<<<<< HEAD
 description: Regole specifiche per le Action Filament custom in Laraxot/<nome progetto>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+trigger: always_on
+description:
+globs:
+---
+# Filament Actions Best Practices
+
+## Regole Fondamentali
+- Ogni azione deve essere una classe dedicata
+- Estendere `Filament\Actions\Action`
+- Implementare il metodo `handle()`
+- Documentare l'azione
+- Testare l'azione
+
+## Struttura
+- Namespace: `App\Filament\Actions` o `Modules\{Module}\Filament\Actions`
+- Nome classe: PascalCase + `Action` (es. `ApproveOrderAction`)
+- Metodi obbligatori: `handle()`, `authorize()`, `getConfirmationMessage()`, `getSuccessMessage()`, `getFailureMessage()`
+
+## Esempio Corretto
+```php
+class ApproveOrderAction extends Action
+{
+    public function handle($record)
+    {
+        // logica di approvazione
+    }
+}
+```
+
+## Best Practices
+- Classi dedicate per ogni azione
+- Test unitari per ogni azione
+- Messaggi di conferma, successo e fallimento personalizzati
+- Autorizzazione centralizzata
+
+## Checklist
+- [ ] Classe dedicata
+- [ ] Test unitari
+- [ ] Messaggi personalizzati
+- [ ] Autorizzazione implementata
+- [ ] Documentazione aggiornata
+
+## Collegamenti correlati
+- [Filament Best Practices](mdc:filament-best-practices.mdc)
+- [Validation Rules](mdc:validation.mdc)
+- [Migration Best Practices](mdc:migrations.mdc)
+- [Error Handling](mdc:error-handling.mdc)
+- [Checklist di Ripartenza](mdc:../docs/checklist-di-ripartenza.md)
+=======
+description:
+globs:
+alwaysApply: false
+---
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+=======
+description: Regole specifiche per le Action Filament custom in Laraxot/PTVX
+=======
+description: Regole specifiche per le Action Filament custom in Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 globs: ["**/*.php", "**/app/Filament/**/*.php", "**/Filament/**/*.php"]
 alwaysApply: true
 ---
@@ -155,3 +220,10 @@ public function table(Table $table): Table
 - Documentare sempre gli effetti collaterali delle azioni
 - Utilizzare tipizzazione rigorosa per tutti i metodi
 - Implementare autorizzazioni appropriate per ogni azione
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d23ba493 (add calendar)
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev

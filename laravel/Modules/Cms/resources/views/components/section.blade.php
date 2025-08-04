@@ -28,4 +28,8 @@
             @endforeach
         </div>
     @endif
+<<<<<<< HEAD
 </section>
+=======
+</section>
+>>>>>>> aurmich/dev

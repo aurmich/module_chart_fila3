@@ -1,6 +1,26 @@
+<<<<<<< HEAD
 # Module User Fila3 🔥 Ultimate User, Roles & Permissions Manager for FilamentPHP 🚀
 
 # 👤 User Module - Advanced User Management
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Module User Fila3 🔥 Ultimate User, Roles & Permissions Manager for FilamentPHP 🚀
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+# Module User Fila3 🔥 Ultimate User, Roles & Permissions Manager for FilamentPHP 🚀
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
+# 👤 User Module - Advanced User Management
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+# 👤 User Module - Advanced User Management
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+>>>>>>> aurmich/dev
 
 [![Latest Release](https://img.shields.io/github/v/release/laraxot/module_user_fila3)](https://github.com/laraxot/module_user_fila3/releases)
 [![Build Status](https://img.shields.io/travis/laraxot/module_user_fila3/master)](https://travis-ci.org/laraxot/module_user_fila3)
@@ -13,7 +33,10 @@ Manage users, roles, and permissions with lightning speed ⚡ through this Larav
 - **Create Super Admin in Seconds**: Instantly make any user a super admin with `php artisan user:super-admin`. 🛡️
 - **Dynamic Module Assignment**: Control user access to specific modules through `php artisan user:assign-module`. 🎯
 - **Complete Team Management**: Manage teams with simple commands like `php artisan team:create` and `php artisan team:assign-user`. 👥
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 ### Versione HEAD
 
 - **Permissions that Fit**: Set flexible roles and permissions to fit your app's unique needs! 🔑
@@ -137,6 +160,277 @@ Give your Laravel app the **edge** it deserves with **Module User Fila3**. Try i
 
 Manage users, roles, and permissions with lightning speed ⚡ through this Laravel module, fully integrated with FilamentPHP. Designed for developers who want **full control** over their user management systems.
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+### Key Features 🌟
+- **Create Super Admin in Seconds**: Instantly make any user a super admin with `php artisan user:super-admin`. 🛡️
+- **Dynamic Module Assignment**: Control user access to specific modules through `php artisan user:assign-module`. 🎯
+- **Complete Team Management**: Manage teams with simple commands like `php artisan team:create` and `php artisan team:assign-user`. 👥
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+### Versione HEAD
+=======
+## 🌟 Key Features
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+
+- **Complete User Management**: Handle users, roles, and permissions with ease
+- **Multi-language Support**: English, Italian, and Spanish interfaces
+- **Advanced Authentication**: Multi-factor authentication (2FA) and social login
+- **Role-Based Access Control**: Fine-grained permission system
+- **Team Management**: Support for multi-tenant applications
+- **Filament Admin Panel**: Beautiful and intuitive admin interface
+- **RESTful API**: Full API support for user management
+- **Activity Logging**: Track user actions and system events
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- PHP 8.2 or higher
+- Laravel 11.x
+- Filament 3.x
+- Composer
+
+### Installation
+
+1. **Install the package via Composer:**
+
+   ```bash
+   composer require laraxot/module-user
+   ```
+
+2. **Enable the module:**
+
+   ```bash
+   php artisan module:enable User
+   ```
+
+3. **Run migrations:**
+
+   ```bash
+   php artisan module:migrate User
+   ```
+
+4. **Publish configuration (optional):**
+
+   ```bash
+   php artisan vendor:publish --tag="module_user_fila3-config"
+   ```
+
+5. **Create your first admin user:**
+
+   ```bash
+   php artisan make:filament-user
+   ```
+
+6. **Make a user super admin (optional):**
+
+   ```bash
+   php artisan user:super-admin
+   ```
+
+7. **Assign modules to users (optional):**
+
+   ```bash
+   php artisan user:assign-module
+   ```
+
+8. **Start using the admin panel at `/admin`**
+
+---
+
+## 🛠️ Available Commands
+
+### User Management
+
+- **Create a new admin user**
+
+  ```bash
+  php artisan make:filament-user
+  ```
+
+- **Promote a user to super admin**
+
+  ```bash
+  php artisan user:super-admin
+  ```
+
+- **Assign modules to a user**
+
+  ```bash
+  php artisan user:assign-module
+  ```
+
+### Team Management
+
+- **Create a new team**
+
+  ```bash
+  php artisan team:create
+  ```
+
+- **Assign user to a team**
+
+  ```bash
+  php artisan team:assign-user
+  ```
+
+### Module Management
+
+- **List all available modules**
+
+  ```bash
+  php artisan module:list
+  ```
+
+- **Enable a module**
+
+  ```bash
+  php artisan module:enable ModuleName
+  ```
+
+- **Disable a module**
+
+  ```bash
+  php artisan module:disable ModuleName
+  ```
+
+## ⚙️ Configuration
+
+Configure the module by publishing its configuration file:
+
+```bash
+php artisan vendor:publish --tag="module_user_fila3-config"
+```
+
+Then modify the configuration in `config/module_user_fila3.php` to suit your needs.
+
+## ❓ Frequently Asked Questions
+
+### How do I assign roles to users?
+
+Use the Filament admin interface or the `user:assign-module` command to manage user roles and permissions.
+
+### Can I manage multiple teams?
+
+Yes! The module supports multi-tenant team management. Use the `team:create` and `team:assign-user` commands to manage teams.
+
+### How do I customize the user interface?
+
+Publish the views and assets using:
+
+```bash
+php artisan vendor:publish --tag="module_user_fila3-views"
+php artisan vendor:publish --tag="module_user_fila3-assets"
+```
+
+## 🤝 Contributing
+
+We welcome contributions from the community! To contribute:
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+Please read our [contributing guidelines](.github/CONTRIBUTING.md) for more details.
+
+## 📄 License
+
+This module is open-sourced software licensed under the [MIT License](LICENSE).
+
+## 👤 Author
+
+**Marco Sottana**
+
+- GitHub: [@marco76tv](https://github.com/marco76tv)
+- Email: marco.sottana@gmail.com
+
+---
+
+<<<<<<< HEAD
+
+- **Create Super Admin:**
+    ```bash
+    php artisan user:super-admin
+    ```
+    _Transform any user into an all-powerful super admin!_
+
+- **Assign Modules:**
+    ```bash
+    php artisan user:assign-module
+    ```
+    _Dynamically assign or restrict modules for specific users._
+
+- **Manage Teams:**
+    - Create a team:
+        ```bash
+        php artisan team:create
+        ```
+    - Assign a user to a team:
+        ```bash
+        php artisan team:assign-user
+        ```
+
+- **View Available Modules:**
+    ```bash
+    php artisan module:list
+    ```
+    _See all available modules and activate/deactivate them at will._
+
+---
+
+### Configuration 🔧
+
+Easily configure the module in the `module_user_fila3.php` config file to suit your app's specific needs.
+
+### FAQ ❓
+
+- **Q: How do I assign roles?**
+  A: Use the Filament interface or `php artisan user:assign-module` command to assign roles and modules.
+
+- **Q: Can I manage teams?**
+  A: Absolutely! Use `php artisan team:create` to create new teams and `php artisan team:assign-user` to add users.
+
+### Contribute 💪
+
+We 💖 open source! Want to improve this package? Fork the repo and submit a pull request.
+
+---
+
+### Author 👨‍💻
+
+Developed and maintained by [Marco Sottana](https://github.com/marco76tv)  
+📧 Email: marco.sottana@gmail.com
+
+---
+
+### License 📄
+
+This package is open-sourced under the [MIT license](LICENSE).
+
+---
+
+Give your Laravel app the **edge** it deserves with **Module User Fila3**. Try it now! 💥
+
+### Versione HEAD
+
+
+### Versione Incoming
+<<<<<<< HEAD
+[![PHP Version](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
+[![Laravel Version](https://img.shields.io/badge/Laravel-11.x-orange.svg)](https://laravel.com)
+[![Filament Version](https://img.shields.io/badge/Filament-3.x-purple.svg)](https://filamentphp.com)
+
+Manage users, roles, and permissions with lightning speed ⚡ through this Laravel module, fully integrated with FilamentPHP. Designed for developers who want **full control** over their user management systems.
+
+>>>>>>> aurmich/dev
 ## 🌟 Key Features
 
 - **Complete User Management**: Handle users, roles, and permissions with ease
@@ -315,6 +609,14 @@ This module is open-sourced software licensed under the [MIT License](LICENSE).
 ---
 
 Give your Laravel application the **powerful user management** it deserves with this comprehensive module. Try it today! 🚀
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+Give your Laravel application the **powerful user management** it deserves with this comprehensive module. Try it today! 🚀
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+>>>>>>> aurmich/dev
 
 # 👤 User Module - Gestione Utenti Avanzata
 
@@ -490,7 +792,17 @@ php artisan user:assign-module
 L'account potrà accedere al modulo assegnato.
 
 ## [Gestione dei Team](docs/teams.md)
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ### Versione HEAD
 
 
@@ -525,6 +837,18 @@ php artisan db:seed --class=\\Modules\\User\\Database\\Seeders\\UserDatabaseSeed
 - Social authentication
 - API authentication
 - Multi-tenancy support
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+>>>>>>> aurmich/dev
 - Team management with binding resolution
 
 ## Critical Fixes
@@ -538,6 +862,20 @@ Fixed critical `BindingResolutionException` for team models by registering prope
 **Impact**: Restored full team functionality across all modules using the `HasTeams` trait.
 
 **Documentation**: See [Team Bindings Fix](docs/team-bindings-fix.md) for complete details.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> a3f7230 (.)
+>>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+>>>>>>> aurmich/dev
 
 ## Permissions
 

@@ -176,5 +176,17 @@ return [
             'message' => 'Impossibile inviare il messaggio di test: :error',
         ],
     ],
+<<<<<<< HEAD
     
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    
+=======
+    'messages' => [],
+>>>>>>> 54f4fa16 (.)
+=======
+    
+>>>>>>> 8e4d163b (phpstan)
+>>>>>>> aurmich/dev
 ];

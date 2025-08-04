@@ -239,7 +239,14 @@ class Media extends Model
 6. **Creare un Worker Dedicato per le Immagini**
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Supervisor config (/etc/supervisor/conf.d/laravel-media-worker.conf)
 [program:laravel-media-worker]
 process_name=%(program_name)s_%(process_num)02d

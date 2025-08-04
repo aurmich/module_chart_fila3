@@ -111,6 +111,13 @@ $res = [
             'strict' => false,
             'engine' => null,
         ],
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7e1c3ad6 (- sistemato footer;)
+>>>>>>> aurmich/dev
 'setting' => [
 
             'driver' => 'mysql',
@@ -131,6 +138,15 @@ $res = [
                 PDO::MYSQL_ATTR_SSL_CA => env('SETTING_MYSQL_ATTR_SSL_CA'),
             ]) : [],
         ],
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 7e1c3ad6 (- sistemato footer;)
+>>>>>>> aurmich/dev
         
 
     ],

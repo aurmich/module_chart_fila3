@@ -2,6 +2,11 @@
 
 namespace Modules\SaluteOra\Filament\Resources;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 use Filament\Forms;
 use Filament\Tables;
 use Filament\Tables\Table;
@@ -25,10 +30,49 @@ class UserResource extends BaseUserResource
     //protected static ?string $tenantOwnershipRelationshipName = 'owner';
     //protected static ?string $tenantRelationshipName = 'blogPosts';
     protected static bool $isScopedToTenant = false;
+<<<<<<< HEAD
+=======
+=======
+use Modules\Xot\Filament\Resources\XotBaseResource;
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+use Filament\Forms;
+use Filament\Tables;
+use Filament\Tables\Table;
+use Modules\User\Filament\Resources\BaseUserResource;
+use Modules\SaluteOra\Models\User;
+use Filament\Forms\Components\Select;
+use Filament\Tables\Actions\EditAction;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\SelectFilter;
+use Modules\SaluteOra\Enums\UserTypeEnum;
+use Modules\SaluteOra\Enums\UserStateEnum;
+use Filament\Tables\Actions\BulkActionGroup;
+use Filament\Tables\Actions\DeleteBulkAction;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\UI\Filament\Forms\Components\SelectState;
+use Modules\SaluteOra\Filament\Resources\UserResource\Pages;
+
+class UserResource extends BaseUserResource
+{
+    protected static ?string $model = User::class;
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+    //protected static ?string $tenantOwnershipRelationshipName = 'owner';
+    //protected static ?string $tenantRelationshipName = 'blogPosts';
+    protected static bool $isScopedToTenant = false;
+>>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
+>>>>>>> aurmich/dev
 
     public static function getFormSchema(): array
     {
         return [
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
             Forms\Components\TextInput::make('first_name')
                 ->required()
                 ->maxLength(255)
@@ -70,3 +114,55 @@ class UserResource extends BaseUserResource
     
 }
 
+<<<<<<< HEAD
+=======
+=======
+            Forms\Components\TextInput::make('name')
+=======
+            Forms\Components\TextInput::make('first_name')
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
+                ->required()
+                ->maxLength(255)
+                ,
+            Forms\Components\TextInput::make('last_name')
+                ->required()
+                ->maxLength(255)
+                ,
+            Forms\Components\TextInput::make('email')
+                ->email()
+                ->required()
+                ->maxLength(255)
+                ->unique(ignoreRecord: true),
+
+            Forms\Components\TextInput::make('phone'),
+            Forms\Components\Select::make('type')
+                ->options(UserTypeEnum::class)
+                ->enum(UserTypeEnum::class)
+                ->required(),
+            SelectState::make('state'),
+            /*
+            Forms\Components\Select::make('state')
+                ->options(UserState::class)
+                ->required(),
+            */
+        ];
+    }
+
+
+    
+    public static function getPages(): array
+    {
+        return [
+            'index' => Pages\ListUsers::route('/'),
+            'create' => Pages\CreateUser::route('/create'),
+            'edit' => Pages\EditUser::route('/{record}/edit'),
+        ];
+    }
+    
+}
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> c6edea7c (.)
+>>>>>>> aurmich/dev

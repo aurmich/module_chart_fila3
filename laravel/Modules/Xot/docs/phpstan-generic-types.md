@@ -44,7 +44,18 @@ public function comments(): HasMany
  */
 public function tags(): BelongsToMany
 {
+<<<<<<< HEAD
     return $this->belongsToManyX(Tag::class);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    return $this->belongsToManyX(Tag::class);
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+    return $this->belongsToManyX(Tag::class);
+>>>>>>> 9df8f556 (fix .md)
+>>>>>>> aurmich/dev
     return $this->belongsToMany(Tag::class);
 }
 ```
@@ -144,4 +155,44 @@ class UserRepository implements UserRepositoryInterface
 }
 ```
 
+<<<<<<< HEAD
 Segui queste linee guida per risolvere la maggior parte degli errori relativi ai tipi generici nei tuoi modelli e relazioni Laravel. 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+Segui queste linee guida per risolvere la maggior parte degli errori relativi ai tipi generici nei tuoi modelli e relazioni Laravel. 
+=======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+Segui queste linee guida per risolvere la maggior parte degli errori relativi ai tipi generici nei tuoi modelli e relazioni Laravel. 
+## Collegamenti tra versioni di PHPSTAN-GENERIC-TYPES.md
+* [PHPSTAN-GENERIC-TYPES.md](../../../Xot/docs/phpstan/PHPSTAN-GENERIC-TYPES.md)
+* [PHPSTAN-GENERIC-TYPES.md](../../../Xot/docs/PHPSTAN-GENERIC-TYPES.md)
+
+
+## Collegamenti tra versioni di phpstan-generic-types.md
+### Versione HEAD
+
+* [phpstan-generic-types.md](../phpstan-generic-types.md)
+
+### Versione Incoming
+
+* [phpstan-generic-types.md](phpstan/phpstan-generic-types.md)
+
+---
+
+
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+Segui queste linee guida per risolvere la maggior parte degli errori relativi ai tipi generici nei tuoi modelli e relazioni Laravel. 
+>>>>>>> 9df8f556 (fix .md)
+=======
+Segui queste linee guida per risolvere la maggior parte degli errori relativi ai tipi generici nei tuoi modelli e relazioni Laravel. 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+Segui queste linee guida per risolvere la maggior parte degli errori relativi ai tipi generici nei tuoi modelli e relazioni Laravel. 
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev

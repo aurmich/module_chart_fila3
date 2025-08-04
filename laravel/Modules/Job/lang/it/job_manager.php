@@ -138,6 +138,13 @@ return array (
     array (
       'label' => 'reorderRecords',
     ),
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f2140a80 (- continuo style landing page;)
+>>>>>>> aurmich/dev
     'resetFilters' => 
     array (
       'label' => 'resetFilters',
@@ -146,6 +153,14 @@ return array (
     array (
       'label' => 'applyFilters',
     ),
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f2140a80 (- continuo style landing page;)
+>>>>>>> aurmich/dev
   ),
   'actions' => 
   array (

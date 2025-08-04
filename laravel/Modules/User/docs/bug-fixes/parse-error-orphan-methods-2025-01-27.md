@@ -29,7 +29,17 @@ Durante il refactoring del `RegisterWidget.php`, un metodo (probabilmente `getUs
 
 ### 1. Pulizia Cache Completa
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> b9902ce9 (feat: add revoke module to console command)
+>>>>>>> aurmich/dev
 # Cache Laravel
 php artisan clear-compiled
 php artisan cache:clear
@@ -47,7 +57,17 @@ php -r "if (function_exists('opcache_reset')) { opcache_reset(); }"
 
 ### 2. Verifica Sintassi
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> b9902ce9 (feat: add revoke module to console command)
+>>>>>>> aurmich/dev
 # Verifica singolo file
 php -l Modules/User/app/Filament/Widgets/Auth/RegisterWidget.php
 
@@ -142,3 +162,14 @@ Questo bug fix ha permesso di completare il miglioramento della qualità del cod
 - Transazioni database
 - Notifiche utente
 - Verifica email
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+- Auto-login dopo registrazione 
+>>>>>>> aurmich/dev
+=======
+- Auto-login dopo registrazione 
+>>>>>>> b9902ce9 (feat: add revoke module to console command)
+>>>>>>> aurmich/dev

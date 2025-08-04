@@ -2,13 +2,37 @@
 
 ## Context
 
+<<<<<<< HEAD
 This document provides metadata for Cursor about the integration of `mcamara/laravel-localization` into the `<nome progetto>` project.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+This document provides metadata for Cursor about the integration of `mcamara/laravel-localization` into the `<nome progetto>` project.
+=======
+This document provides metadata for Cursor about the integration of `mcamara/laravel-localization` into the `saluteora` project.
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+=======
+This document provides metadata for Cursor about the integration of `mcamara/laravel-localization` into the `<nome progetto>` project.
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
 
 ## Key Points
 
 - **Package**: `mcamara/laravel-localization`
 - **Purpose**: Enhance localization capabilities in Laravel applications.
+<<<<<<< HEAD
 - **Suggested Actions**:
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **Suggested Actions**:
+=======
+- **Suggested Actions**: 
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+=======
+- **Suggested Actions**:
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+>>>>>>> aurmich/dev
   - Add package to `composer.json`.
   - Configure supported languages.
   - Register middleware for language redirects.

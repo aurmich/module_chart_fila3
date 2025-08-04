@@ -3,6 +3,13 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 513a7c7b (📝 (mdc files): add comprehensive documentation for various patterns to improve maintainability and consistency across modules)
+>>>>>>> aurmich/dev
 # Regola: StudioSelectorButtons Pattern - SaluteOra (DRY + KISS)
 
 ## Ambito
@@ -206,3 +213,11 @@ Ogni livello ha la sua responsabilità specifica, nessuna duplicazione.
 
 ## Ultimo aggiornamento
 2025-01-16 - Pattern DRY + KISS implementato
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+>>>>>>> 513a7c7b (📝 (mdc files): add comprehensive documentation for various patterns to improve maintainability and consistency across modules)
+>>>>>>> aurmich/dev

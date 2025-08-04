@@ -78,11 +78,27 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
     public function registerRoutePattern(Router $router): void
     {
         // ---------- Lang Route Pattern
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+>>>>>>> aurmich/dev
         // ✅ Controllo sicuro della configurazione laravellocalization
         $langs = config()->has('laravellocalization.supportedLocales') 
             ? config('laravellocalization.supportedLocales') 
             : ['it' => 'it', 'en' => 'en'];
             
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+        $langs = config('laravellocalization.supportedLocales');
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+>>>>>>> aurmich/dev
         if (! \is_array($langs)) {
             // throw new \Exception('[.__LINE__.]['.class_basename(__CLASS__).']');
             $langs = ['it' => 'it', 'en' => 'en'];

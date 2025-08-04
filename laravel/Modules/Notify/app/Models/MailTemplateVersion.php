@@ -9,6 +9,11 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Modules\Xot\Traits\Updater;
 
 /**
+<<<<<<< HEAD
+=======
+ * 
+ *
+>>>>>>> aurmich/dev
  * @property int $id
  * @property int $mail_template_id
  * @property int $version
@@ -21,6 +26,11 @@ use Modules\Xot\Traits\Updater;
  * @property \Carbon\Carbon|null $created_at
  * @property \Carbon\Carbon|null $updated_at
  * @property \Carbon\Carbon|null $deleted_at
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
  * @property string|null $updated_by
  * @property string|null $deleted_by
  * @property-read \Modules\User\Models\Profile|null $creator
@@ -28,6 +38,18 @@ use Modules\Xot\Traits\Updater;
  * @property-read int|null $media_count
  * @property-read \Modules\Notify\Models\MailTemplate|null $template
  * @property-read \Modules\User\Models\Profile|null $updater
+<<<<<<< HEAD
+=======
+=======
+ * @property string|null $updated_by
+ * @property string|null $deleted_by
+ * @property-read \Modules\SaluteOra\Models\Profile|null $creator
+ * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
+ * @property-read int|null $media_count
+ * @property-read \Modules\Notify\Models\MailTemplate|null $template
+ * @property-read \Modules\SaluteOra\Models\Profile|null $updater
+>>>>>>> f3e4ec66 (.)
+>>>>>>> aurmich/dev
  * @method static \Modules\Notify\Database\Factories\MailTemplateVersionFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MailTemplateVersion newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MailTemplateVersion newQuery()
@@ -50,6 +72,14 @@ use Modules\Xot\Traits\Updater;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MailTemplateVersion withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MailTemplateVersion withoutTrashed()
  * @mixin \Eloquent
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
+>>>>>>> aurmich/dev
  */
 class MailTemplateVersion extends BaseModel
 {
@@ -58,7 +88,19 @@ class MailTemplateVersion extends BaseModel
     /** @var string */
     protected $connection = 'notify';
 
+<<<<<<< HEAD
     /** @var list<string> */
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    /** @var list<string> */
+=======
+    /** @var array<string> */
+>>>>>>> 54f4fa16 (.)
+=======
+    /** @var list<string> */
+>>>>>>> a3174e5b (phpstan)
+>>>>>>> aurmich/dev
     protected $fillable = [
         'template_id',
         'mailable',
@@ -70,6 +112,10 @@ class MailTemplateVersion extends BaseModel
         'change_notes',
     ];
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     /**
      * Get the attributes that should be cast.
      *
@@ -84,6 +130,18 @@ class MailTemplateVersion extends BaseModel
             'deleted_at' => 'datetime',
         ];
     }
+<<<<<<< HEAD
+=======
+=======
+    /** @var array<string, string> */
+    protected $casts = [
+        'metadata' => 'array',
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
+        'deleted_at' => 'datetime',
+    ];
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 
     public function template(): BelongsTo
     {
@@ -94,11 +152,30 @@ class MailTemplateVersion extends BaseModel
     {
         $template = $this->template;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
         if ($template === null) {
             throw new \RuntimeException('Template non trovato per questa versione');
         }
 
+<<<<<<< HEAD
         $template->update([
+=======
+<<<<<<< HEAD
+        $template->update([
+=======
+        $template->update([
+            'mailable' => $this->mailable,
+>>>>>>> 54f4fa16 (.)
+=======
+        $template->update([
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> aurmich/dev
             'subject' => $this->subject,
             'html_template' => $this->html_template,
             'text_template' => $this->text_template,

@@ -165,4 +165,44 @@ class MyModel extends BaseModel
      - Docs del modulo specifico
      - .cursor/rules per Cursor AI
      - .windsurfrules per Windsurf
+<<<<<<< HEAD
    - Mantenere coerenza tra le diverse documentazioni 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+   - Mantenere coerenza tra le diverse documentazioni 
+=======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+   - Mantenere coerenza tra le diverse documentazioni 
+## Collegamenti tra versioni di PHPSTAN_WORKFLOW.md
+* [PHPSTAN_WORKFLOW.md](../../../Xot/docs/phpstan/PHPSTAN_WORKFLOW.md)
+* [PHPSTAN_WORKFLOW.md](../../../Xot/docs/PHPSTAN_WORKFLOW.md)
+
+
+## Collegamenti tra versioni di phpstan_workflow.md
+### Versione HEAD
+
+* [phpstan_workflow.md](../phpstan_workflow.md)
+
+### Versione Incoming
+
+* [phpstan_workflow.md](phpstan/phpstan_workflow.md)
+
+---
+
+
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+   - Mantenere coerenza tra le diverse documentazioni 
+>>>>>>> 9df8f556 (fix .md)
+=======
+   - Mantenere coerenza tra le diverse documentazioni 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+   - Mantenere coerenza tra le diverse documentazioni 
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev

@@ -266,7 +266,14 @@ return (string) $this->faker->randomElement(['a', 'b', 'c']);
 ### PHPStan Command
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> d50c1c4a (✨ (docs): add comprehensive documentation for PHPStan factory fixes 2025 in SaluteOra module to ensure adherence to best practices and improve code quality)
+>>>>>>> aurmich/dev
 # Validazione factory specifiche
 ./vendor/bin/phpstan analyze Modules/{ModuleName}/database/factories --level=9
 
@@ -395,3 +402,10 @@ class {Model}FactoryTest extends TestCase
 **Version**: 1.0  
 **Compatibility**: Laravel 10.x, PHP 8.2+, PHPStan 1.10+  
 **Status**: Framework Standard ✅  
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+**Last Updated**: 2025-01-XX 
+>>>>>>> d50c1c4a (✨ (docs): add comprehensive documentation for PHPStan factory fixes 2025 in SaluteOra module to ensure adherence to best practices and improve code quality)
+>>>>>>> aurmich/dev

@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: This rule file provides comprehensive guidelines for using Font Awesome effectively, covering setup, styling, accessibility, performance, and security best practices. It ensures consistent and optimized usage across projects.
 globs: *.html,*.css,*.js,*.jsx,*.ts,*.tsx
 ---

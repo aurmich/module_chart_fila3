@@ -1,0 +1,9 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+[]
+=======
+[{"name":"dashboard.item","class":"Dashboard\\Item","module":null,"path":null,"ns":"Modules\\Geo\\View\\Components\\Dashboard\\Item"},{"name":"form-search-address-categories","class":"FormSearchAddressCategories","module":null,"path":null,"ns":"Modules\\Geo\\View\\Components\\FormSearchAddressCategories"}]
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+=======
+[{"name":"dashboard.item","class":"Dashboard\\Item","module":null,"path":null,"ns":"Modules\\Geo\\View\\Components\\Dashboard\\Item"},{"name":"form-search-address-categories","class":"FormSearchAddressCategories","module":null,"path":null,"ns":"Modules\\Geo\\View\\Components\\FormSearchAddressCategories"}]
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)

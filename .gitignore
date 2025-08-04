@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 # 🔧  .gitignore
 # Questo file definisce quali file e cartelle devono essere ignorati dal controllo di versione
 # Organizzato secondo la filosofia di sviluppo : chiarezza, organizzazione e manutenibilità
@@ -53,17 +57,43 @@ public/storage
 public/hot
 public_html/storage
 public_html/hot
+<<<<<<< HEAD
 laravel_bak/
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+laravel_bak/
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+laravel_bak/
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
 .git-rewrite
 .fuse_hidden*
 .fuse_hidden**.lock
 *.lock
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 *.old
 *.old1
 *.old2
 backup*/
 *.bak 
 *.backup 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+*.old
+*.old1
+*.old2  
+>>>>>>> e9942509 (fix: session)
+>>>>>>> aurmich/dev
 package-lock.json
 .php-cs-fixer.cache
 *.phar
@@ -96,13 +126,66 @@ cache/
 
 !laravel/Themes/One/yarn.lock
 laravel/database/migrations
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 laravel/storage/framework/views/*
 laravel/storage/attachments/*
 laravel/_ide_helper.php
 laravel/_ide_helper_models.php
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+>>>>>>> aurmich/dev
 *.jar
 *.log
 *.lock
 package-lock.json
 *.phar
 .git-rewrite
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+.php-cs-fixer.cache
+package-lock.json
+vendor/
+node_modules/
+.env
+/.vagrant
+.phpunit.result.cache
+.DS_Store
+error_log
+.phpintel
+/.idea
+
+v8-compile-cache-0
+/resources/views/maps/farmshops/data
+package-lock.json
+
+*.stackdump
+
+*.cache
+/fonts
+.git-blame-ignore-revs
+package-lock.json
+.php-cs-fixer.cache
+package-lock.json
+.git-rewrite/
+.php-cs-fixer.cache
+node_modules
+.git-blame-ignore-revs
+*.old
+node_modules
+vendor
+vendor/
+build/
+-e 
+# PHPStan documentation
+docs/phpstan/
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+>>>>>>> aurmich/dev

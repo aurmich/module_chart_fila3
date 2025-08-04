@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: This rule outlines best practices for Hardhat development, covering code organization, security, testing, and performance. It aims to provide a comprehensive guide for developers working with the Hardhat Ethereum development environment.
 globs: *.js,*.ts,*.sol,*.json
 ---

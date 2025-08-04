@@ -134,7 +134,14 @@ TextInput::make('name')->label('Nome')
 ### Q: Come gestisco le migrazioni per modulo?
 **A:** Ogni modulo ha le sue migrazioni:
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+>>>>>>> aurmich/dev
 # Crea migrazione per modulo
 php artisan module:make-migration create_users_table NomeModulo
 
@@ -153,7 +160,14 @@ php artisan module:migrate
 ### Q: Come eseguo i test?
 **A:** 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+>>>>>>> aurmich/dev
 # Tutti i test
 php artisan test
 
@@ -209,7 +223,14 @@ sudo chmod -R 775 storage bootstrap/cache
 **A:** Riavvia i worker:
 ```bash
 php artisan queue:restart
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+>>>>>>> aurmich/dev
 # o con Horizon
 php artisan horizon:terminate
 php artisan horizon
@@ -289,7 +310,15 @@ name('about');
 **A:** 
 - [Indice Documentazione](INDICE_DOCUMENTAZIONE.md) - Indice completo
 - [Guida Sviluppatore](GUIDA_SVILUPPATORE.md) - Guida dettagliata
+<<<<<<< HEAD
 - [Quick Reference](quick-reference.md) - Riferimento rapido
+=======
+<<<<<<< HEAD
+- [Quick Reference](quick-reference.md) - Riferimento rapido
+=======
+- [Quick Reference](QUICK_REFERENCE.md) - Riferimento rapido
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+>>>>>>> aurmich/dev
 - [Architettura Sistema](ARCHITETTURA_SISTEMA.md) - Overview architettura
 
 ## 🤝 Supporto

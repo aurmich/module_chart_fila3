@@ -95,7 +95,14 @@ jobs:
 
 ### 1. Preparazione
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 # Backup database
 php artisan backup:run
 
@@ -108,7 +115,14 @@ df -h
 
 ### 2. Aggiornamento
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 # Pull ultime modifiche
 git pull origin main
 
@@ -130,7 +144,14 @@ npm run build
 
 ### 3. Verifica
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 # Verifica permessi
 chmod -R 755 storage bootstrap/cache
 chown -R www-data:www-data storage bootstrap/cache
@@ -146,7 +167,14 @@ php artisan cache:clear
 
 ### Logs
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 # Log applicazione
 tail -f storage/logs/laravel.log
 
@@ -160,7 +188,14 @@ tail -f /var/log/php8.2-fpm.log
 
 ### Performance
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 # Monitoraggio CPU
 top
 
@@ -178,7 +213,14 @@ iftop
 
 ### Database
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 # Rollback ultima migrazione
 php artisan migrate:rollback
 
@@ -188,7 +230,14 @@ php artisan migrate:rollback --step=1
 
 ### Files
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 # Ripristino backup
 tar -xzf backup.tar.gz -C /var/www/html/saluteora
 
@@ -200,7 +249,14 @@ php artisan backup:restore
 
 ### Cache
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 # Pulizia cache
 php artisan cache:clear
 php artisan config:clear
@@ -210,14 +266,28 @@ php artisan view:clear
 
 ### Logs
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 # Rotazione logs
 logrotate /etc/logrotate.d/laravel
 
 # Pulizia logs vecchi
 find /var/www/html/saluteora/storage/logs -type f -mtime +30 -delete
 ``` 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)

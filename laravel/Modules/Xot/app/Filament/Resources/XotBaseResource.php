@@ -4,6 +4,56 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+use Filament\Forms;
+<<<<<<< HEAD
+use Filament\Forms\Set;
+=======
+>>>>>>> aurmich/dev
+use function Safe\glob;
+use Filament\Forms\Form;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
+use Webmozart\Assert\Assert;
+<<<<<<< HEAD
+use Illuminate\Support\HtmlString;
+
+use Illuminate\Contracts\View\View;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\FileUpload;
+use Filament\Pages\SubNavigationPosition;
+use Illuminate\Contracts\Support\Htmlable;
+use Illuminate\Contracts\Support\Renderable;
+use Modules\Xot\Actions\ModelClass\CountAction;
+use Filament\Resources\Resource as FilamentResource;
+use Modules\Media\Actions\GetAttachmentsSchemaAction;
+use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
+=======
+use Illuminate\Contracts\View\View;
+use Filament\Pages\SubNavigationPosition;
+
+use Illuminate\Contracts\Support\Renderable;
+use Modules\Xot\Actions\ModelClass\CountAction;
+use Filament\Resources\Resource as FilamentResource;
+use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+>>>>>>> aurmich/dev
+=======
+use Filament\Forms\Form;
+use Filament\Pages\SubNavigationPosition;
+use Filament\Resources\Resource as FilamentResource;
+use Illuminate\Support\Str;
+use Modules\Xot\Actions\ModelClass\CountAction;
+use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+use Webmozart\Assert\Assert;
+
+use function Safe\glob;
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> aurmich/dev
 use Filament\Forms;
 use Filament\Forms\Set;
 use function Safe\glob;
@@ -21,9 +71,18 @@ use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Contracts\Support\Renderable;
 use Modules\Xot\Actions\ModelClass\CountAction;
 use Filament\Resources\Resource as FilamentResource;
+<<<<<<< HEAD
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
+=======
+use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+<<<<<<< HEAD
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
+>>>>>>> 12a79d3a (.)
+>>>>>>> aurmich/dev
 
 /**
  * @method static string getUrl(string $name, array<string, mixed> $parameters = [], bool $isAbsolute = true)
@@ -53,19 +112,58 @@ abstract class XotBaseResource extends FilamentResource
         return true;
     }
 
+<<<<<<< HEAD
 
 
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+
+
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+
+
+
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+>>>>>>> aurmich/dev
     /**
      * @return class-string<\Illuminate\Database\Eloquent\Model>
      */
     public static function getModel(): string
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        if (null != static::$model) {
+<<<<<<< HEAD
+            $res = static::$model;
+            Assert::subclassOf($res, \Illuminate\Database\Eloquent\Model::class, sprintf('Class %s must extend Eloquent Model', $res));
+            return $res;
+=======
+            return static::$model;
+>>>>>>> aurmich/dev
+        }
+=======
+        // if (null != static::$model) {
+        //    return static::$model;
+        // }
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> aurmich/dev
         if (null != static::$model) {
             $res = static::$model;
             Assert::subclassOf($res, \Illuminate\Database\Eloquent\Model::class, sprintf('Class %s must extend Eloquent Model', $res));
             return $res;
         }
+<<<<<<< HEAD
+=======
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
+>>>>>>> aurmich/dev
         $moduleName = static::getModuleName();
         $modelName = Str::before(class_basename(static::class), 'Resource');
         $res = 'Modules\\'.$moduleName.'\Models\\'.$modelName;
@@ -79,8 +177,40 @@ abstract class XotBaseResource extends FilamentResource
     /**
      * @return array<string|int,\Filament\Forms\Components\Component>
      */
+<<<<<<< HEAD
     abstract public static function getFormSchema(): array;
     
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    abstract public static function getFormSchema(): array;
+    
+=======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> d23ba493 (add calendar)
+    public static function getFormSchema(): array
+    {
+        return [];
+    }
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+    abstract public static function getFormSchema(): array;
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+    abstract public static function getFormSchema(): array;
+>>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
 
     final public static function form(Form $form): Form
     {
@@ -135,7 +265,27 @@ abstract class XotBaseResource extends FilamentResource
         $edit = $edit;
         /** @var class-string<\Filament\Resources\Pages\Page> $view */
         $view = $view;
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+        
+>>>>>>> 15cb84fb (fix collisions)
+=======
+
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
         /** @var array<string, \Filament\Resources\Pages\PageRegistration> $pages */
         $pages = [
             'index' => $index::route('/'),
@@ -159,7 +309,27 @@ abstract class XotBaseResource extends FilamentResource
         $reflector = new \ReflectionClass(static::class);
         $filename = $reflector->getFileName();
         Assert::string($filename);
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+        
+>>>>>>> 15cb84fb (fix collisions)
+=======
+
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
         $path = Str::of($filename)
             ->before('.php')
             ->append(DIRECTORY_SEPARATOR)
@@ -168,7 +338,27 @@ abstract class XotBaseResource extends FilamentResource
 
         $files = glob($path.DIRECTORY_SEPARATOR.'*RelationManager.php');
         Assert::isArray($files);
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+        
+>>>>>>> 15cb84fb (fix collisions)
+=======
+
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
         /** @var array<class-string<\Filament\Resources\RelationManagers\RelationManager>> $res */
         $res = [];
         foreach ($files as $file) {
@@ -177,7 +367,27 @@ abstract class XotBaseResource extends FilamentResource
                 ->before('.php')
                 ->prepend(static::class.'\RelationManagers\\')
                 ->toString();
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+            
+>>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+            
+>>>>>>> 15cb84fb (fix collisions)
+=======
+
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> aurmich/dev
             if (class_exists($className)) {
                 Assert::subclassOf($className, \Filament\Resources\RelationManagers\RelationManager::class);
                 $res[] = $className;
@@ -186,7 +396,15 @@ abstract class XotBaseResource extends FilamentResource
 
         return $res;
     }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
     public static function getWizardSubmitAction():Htmlable
     {
         $submit_view = 'pub_theme::filament.wizard.submit-button';
@@ -195,10 +413,41 @@ abstract class XotBaseResource extends FilamentResource
         }
         $render= view($submit_view)->render();
         return new HtmlString($render);
+<<<<<<< HEAD
+=======
+=======
+=======
+
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+    public static function getWizardSubmitAction():View
+    {
+        $submit_view = 'pub_theme::filament.wizard.submit-button';
+        return view($submit_view);
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+    public static function getWizardSubmitAction():Htmlable
+    {
+        $submit_view = 'pub_theme::filament.wizard.submit-button';
+        $render= view($submit_view)->render();
+        return new HtmlString($render);
+>>>>>>> 13ea6524 (phpstan)
+>>>>>>> aurmich/dev
     }
 
     public static function getAttachmentsSchema(bool $multiple=true): array{
         $model = static::getModel();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1f285b76 (♻️ (XotBaseRelationManager.php, XotBaseResource.php, XotBaseManageRelatedRecords.php, profile.blade.php): refactor code to improve readability and maintainability by removing unused variables and comments, and updating method checks for better error handling.)
+>>>>>>> aurmich/dev
         if(!method_exists($model,'getAttachments')){
             return [];
         }
@@ -211,6 +460,168 @@ abstract class XotBaseResource extends FilamentResource
 
     
 
+<<<<<<< HEAD
+=======
+=======
+        $attachments = $model::$attachments;
+=======
+        $attachments = property_exists($model, 'attachments') ? $model::$attachments : [];
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
+=======
+        $attachments = $model::$attachments;
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+    }
+
+    public static function getAttachmentsSchema(bool $multiple=true): array{
+        $model = static::getModel();
+<<<<<<< HEAD
+        $attachments = $model::$attachments;
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+        $attachments = property_exists($model, 'attachments') ? $model::$attachments : [];
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
+=======
+        $attachments = $model::$attachments;
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+        $attachments = $model::getAttachments();
+>>>>>>> 12a79d3a (.)
+        $uuid = Str::uuid()->toString();
+        $schema = [];
+        $sessionId = session()->getId();
+        $sessionDir = "session-uploads/{$sessionId}";
+        foreach ($attachments as $attachment) {
+            $schema[$attachment]=FileUpload::make($attachment)
+            //$schema[$attachment]=SpatieMediaLibraryFileUpload::make($attachment)
+            ->directory($sessionDir)
+            ->disk('local')
+            ->acceptedFileTypes(['application/pdf', 'image/jpeg', 'image/png', 'image/jpg'])
+            ->maxSize(5120*2)
+            ->preserveFilenames()
+            ->required()
+            //->saveUploadedFiles()
+            ->afterStateUpdated(function ($state, Set $set) use ($attachment,$sessionDir) {
+                if (!$state) return;
+                $state=Arr::wrap($state);
+                
+                $sessionFiles = [];
+                
+                foreach ($state as $file) {
+                    if ($file instanceof \Livewire\Features\SupportFileUploads\TemporaryUploadedFile) {
+                        // Salva direttamente nella directory di sessione
+                        $fileName = time() . '_' . $file->getClientOriginalName();
+                        $sessionPath = $file->storeAs($sessionDir, $fileName, 'local');
+                        $sessionFiles[] = $sessionPath;
+                    } else {
+                        // È già un percorso salvato
+                        $sessionFiles[] = $file;
+                    }
+                }
+                
+                $set($attachment, $sessionFiles);
+            })
+            ;
+            
+            /*
+            ->afterStateUpdated(function (FileUpload $component) use ($attachment) {
+                $component->saveUploadedFiles($component);
+                //$this->updateMedia();
+            });
+            */
+<<<<<<< HEAD
+            /*
+            $schema[$attachment]=Forms\Components\FileUpload::make($attachment) 
+                ->disk('local')
+                ->acceptedFileTypes(['application/pdf', 'image/jpeg', 'image/png', 'image/jpg'])
+                ->maxSize(5120*2)
+<<<<<<< HEAD
+                ->required()
+                ->reorderable()
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                ->multiple($multiple)
+=======
+                ->multiple()
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+                ->multiple($multiple)
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+                //->multiple($multiple)
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+=======
+>>>>>>> 12a79d3a (.)
+                ->preserveFilenames()
+                ->afterStateUpdated(function ($state, Forms\Set $set) use ($attachment) {
+                    if (!$state) return;
+<<<<<<< HEAD
+<<<<<<< HEAD
+                    $state=Arr::wrap($state);
+=======
+                    
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+                    $state=Arr::wrap($state);
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+                    $sessionId = session()->getId();
+                    $sessionDir = "session-uploads/{$sessionId}";
+                    $sessionFiles = [];
+                    
+                    foreach ($state as $file) {
+                        if ($file instanceof \Livewire\Features\SupportFileUploads\TemporaryUploadedFile) {
+                            // Salva direttamente nella directory di sessione
+                            $fileName = time() . '_' . $file->getClientOriginalName();
+                            $sessionPath = $file->storeAs($sessionDir, $fileName, 'local');
+                            $sessionFiles[] = $sessionPath;
+                        } else {
+                            // È già un percorso salvato
+                            $sessionFiles[] = $file;
+                        }
+                    }
+                    
+                    $set($attachment, $sessionFiles);
+                });
+            */
+=======
+
+            
+>>>>>>> f158a85a (✨ (lang_service.php, doctor.php, xot_base.php): add Italian translations for doctor certificate fields to enhance localization support)
+        }
+        
+        return $schema;
+    }
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
+=======
+
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+    /*
+     'certification' => Forms\Components\FileUpload::make('certification')
+                ->label(trans('saluteora::doctor.fields.certification.label'))
+                ->helperText(trans('saluteora::doctor.fields.certification.help'))
+                ->disk('private')  // Usa un disco privato per i documenti sensibili
+                ->directory('doctors/certifications')  // Directory specifica per le certificazioni
+                ->acceptedFileTypes(['application/pdf', 'image/jpeg', 'image/png'])  // Formati accettati
+                ->maxSize(5120)  // 5MB massimo
+                ->downloadable()  // Permetti il download
+                ->openable()      // Permetti l'anteprima
+                ->previewable()   // Mostra l'anteprima
+                ->preserveFilenames()  // Mantieni il nome originale del file
+                ->rules(['file', 'mimes:pdf,jpg,jpeg,png', 'max:5120']),  // Regole di validazione
+                */
+=======
+    
+>>>>>>> 12a79d3a (.)
+
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+>>>>>>> aurmich/dev
     protected static function getStepByName(string $name): Forms\Components\Wizard\Step
     {
         $schema=Str::of($name)->snake()->studly()->prepend('get')->append('Schema')->toString();
@@ -218,4 +629,14 @@ abstract class XotBaseResource extends FilamentResource
         return Forms\Components\Wizard\Step::make($name)
             ->schema(static::$schema());
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+>>>>>>> aurmich/dev
 }

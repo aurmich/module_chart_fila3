@@ -97,7 +97,21 @@ class PdfData extends Data
                 $html2pdf->writeHTML($html);
                 $html2pdf->output($this->getPath(), $this->dest);
                 break;
+<<<<<<< HEAD
                 /*
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                /*
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+                /*
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
             case PdfEngineEnum::SPATIE:
                 Pdf::html($this->html)
                 ->orientation(Orientation::Portrait)
@@ -106,9 +120,29 @@ class PdfData extends Data
                 // ->name(str_slug($project->nome).'-REPORT.pdf')
                 ->save($this->getPath());
                 ;
+<<<<<<< HEAD
                 
                 break;
                 */
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                
+                break;
+                */
+=======
+                break;
+>>>>>>> aurmich/dev
+=======
+                break;
+>>>>>>> 54f4fa16 (.)
+=======
+                
+                break;
+                */
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
         }
 
 
@@ -146,9 +180,27 @@ class PdfData extends Data
 
     public function view(string $view, array $params=[]): self
     {
+<<<<<<< HEAD
         if(!view()->exists($view)){
             throw new \Exception('View '.$view.' not found');
         }
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        if(!view()->exists($view)){
+            throw new \Exception('View '.$view.' not found');
+        }
+=======
+>>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+        if(!view()->exists($view)){
+            throw new \Exception('View '.$view.' not found');
+        }
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+>>>>>>> aurmich/dev
         $out = view($view, $params);
         $this->html = $out->render();
         return $this->fromHtml($this->html);

@@ -51,7 +51,14 @@ Per correggere questa situazione, è necessario:
 4. Rigenerare l'autoloader
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Creare la directory Themes se non esiste
 mkdir -p /var/www/html/saluteora/laravel/Themes
 
@@ -70,7 +77,14 @@ composer dump-autoload -o
 Quando si aggiunge un tema con git subtree, utilizzare il seguente formato:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 # Corretto
 git subtree add -P Themes/NomeTema git@repository:owner/theme.git branch --squash
 
@@ -119,7 +133,14 @@ Qualsiasi tentativo di implementare un service provider dedicato per i temi sare
 ## Conclusione
 
 La corretta separazione tra moduli e temi è essenziale per mantenere una struttura del progetto pulita e funzionale. Assicurarsi che tutti i temi siano posizionati nella directory `Themes` e che tutti i moduli funzionali siano nella directory `Modules`. 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 ## Collegamenti tra versioni di themes-structure.md
 * [themes-structure.md](docs/tecnico/themes-structure.md)
 * [themes-structure.md](laravel/Modules/Xot/docs/themes-structure.md)

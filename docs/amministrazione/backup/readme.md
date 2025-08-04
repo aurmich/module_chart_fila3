@@ -69,7 +69,14 @@ return [
 
 ### Backup Manuale
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 # Backup completo
 php artisan backup:run
 
@@ -85,7 +92,14 @@ php artisan backup:run --tenant=1
 
 ### Verifica Backup
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 # Lista backup
 php artisan backup:list
 
@@ -100,7 +114,14 @@ php artisan backup:restore
 
 ### Cron Jobs
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 # Backup giornaliero
 0 0 * * * cd /var/www/html/saluteora && php artisan backup:run
 
@@ -130,7 +151,14 @@ return [
 
 ### Logs
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 # Log backup
 tail -f storage/logs/backup.log
 
@@ -153,7 +181,14 @@ $frequency = $lastBackup->created_at->diffInHours(now());
 
 ### Database
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 # Ripristino completo
 php artisan backup:restore --path=backup.tar.gz
 
@@ -166,7 +201,14 @@ php artisan backup:restore --path=backup.tar.gz --only-files
 
 ### Verifica Ripristino
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 # Verifica database
 php artisan db:show
 
@@ -180,7 +222,14 @@ php artisan cache:clear
 
 ### Pulizia
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 # Rimuovi backup vecchi
 php artisan backup:clean
 
@@ -190,14 +239,28 @@ php artisan backup:delete --path=backup.tar.gz
 
 ### Ottimizzazione
 ```bash
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 # Compressi backup
 php artisan backup:compress
 
 # Verifica integrità
 php artisan backup:verify
 ``` 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> bead9c28 (fix case)
+>>>>>>> aurmich/dev
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)

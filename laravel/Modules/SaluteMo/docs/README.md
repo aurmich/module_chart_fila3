@@ -25,6 +25,11 @@ SaluteMo è un modulo progettato per gestire funzionalità specifiche per dispos
 - [Struttura Filament](filament/structure.md)
 - [Convenzioni Dashboard](filament/dashboard-conventions.md)
 - [Widget](filament/widgets.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 - [RelationManager](filament/relationmanagers.md) - Gestione relazioni cross-module
 - [Admin Resource](filament/admin-resource.md) - Gestione utenti backoffice
 - [Dashboard Charts Implementation](dashboard-charts-implementation.md) - Widget grafici per dashboard
@@ -33,6 +38,14 @@ SaluteMo è un modulo progettato per gestire funzionalità specifiche per dispos
 - [Regole Consolidate Widget](./widget-rules-consolidated.md) - Regole complete per widget custom
 - [AppointmentOverviewWidget Design](./appointment-overview-widget-design.md) - Design e implementazione widget appuntamenti
 - [Struttura Traduzioni Widget](./widget-translations-structure.md) - Traduzioni specifiche per widget
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
+=======
+- [RelationManager](filament/relationmanagers.md) - Gestione relazioni cross-module
+>>>>>>> 23f43388 (feat: add openingHoursField to studiorelationmanager of doctorresource)
+>>>>>>> aurmich/dev
 
 ### Service Provider
 - [Service Provider](providers/service-provider.md)
@@ -52,6 +65,13 @@ SaluteMo è un modulo progettato per gestire funzionalità specifiche per dispos
 - [Convenzioni di Naming Corrette](issues/filament-implementation/correct-naming-conventions.md)
 - [Sintesi e Prossimi Passi](issues/summary-and-next-steps.md)
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 23f43388 (feat: add openingHoursField to studiorelationmanager of doctorresource)
+>>>>>>> aurmich/dev
 ## Cross-Module Relations
 
 ### RelationManager Architecture
@@ -70,6 +90,10 @@ Il modulo SaluteMo implementa RelationManager Filament che gestiscono relazioni 
 - [Cross-Module Relations](/var/www/html/base_saluteora/docs/cross-module-relations.md) - Architettura generale
 - [SaluteOra RelationManager](/var/www/html/base_saluteora/laravel/Modules/SaluteOra/docs/relationmanagers.md) - Implementazione modelli
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aurmich/dev
 ## Widget Architecture
 
 ### AppointmentOverviewWidget
@@ -89,6 +113,13 @@ Il modulo SaluteMo implementa un widget personalizzato per la visualizzazione de
 - [Struttura Traduzioni Widget](./widget-translations-structure.md) - Traduzioni specifiche
 - [XotBaseWidget](../../Xot/docs/filament/widgets/xot-base-widget.md) - Classe base widget
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
+=======
+>>>>>>> 23f43388 (feat: add openingHoursField to studiorelationmanager of doctorresource)
+>>>>>>> aurmich/dev
 ## Problemi Critici Identificati
 
 ### 1. Service Provider
@@ -131,8 +162,20 @@ Punti chiave:
 - Push notification handling
 - Offline data synchronization
 - Mobile-specific configurations
+<<<<<<< HEAD
 - Cross-module relation management via Filament
 - Custom widgets for appointment statistics
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Cross-module relation management via Filament
+- Custom widgets for appointment statistics
+=======
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
+=======
+- Cross-module relation management via Filament
+>>>>>>> 23f43388 (feat: add openingHoursField to studiorelationmanager of doctorresource)
+>>>>>>> aurmich/dev
 
 ## Installation
 

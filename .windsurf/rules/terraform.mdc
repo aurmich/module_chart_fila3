@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+>>>>>>> aurmich/dev
 description: This rule provides guidelines for Terraform best practices, coding standards, and security considerations to ensure maintainable, efficient, and secure infrastructure-as-code.
 globs: *.tf
 ---
