@@ -6,23 +6,10 @@ namespace Modules\SaluteOra\Models;
 
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\SaluteOra\Models\BasePivot;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 use Parental\HasChildren;
 
 
 /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
- * 
- *
->>>>>>> f3e4ec66 (.)
->>>>>>> aurmich/dev
  * @property string $id
  * @property string|null $type
  * @property string $user_id
@@ -52,10 +39,6 @@ use Parental\HasChildren;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|StudioUser whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|StudioUser whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|StudioUser whereUserId($value)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
  * @property-read \Modules\SaluteOra\Models\Studio|null $studio
  * @property-read \Modules\SaluteOra\Models\User|null $user
  * @mixin \Eloquent
@@ -73,45 +56,7 @@ class StudioUser extends BasePivot
      */
     protected $fillable = [
         //'doctor_id',
-<<<<<<< HEAD
         'id',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        'id',
-<<<<<<< HEAD
-=======
-=======
-use Parental\HasChildren;
-
->>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
-
-=======
- * @mixin \Eloquent
- */
->>>>>>> f3e4ec66 (.)
-class StudioUser extends BasePivot
-{
-    use HasChildren;
-
-
-    protected $table = 'studio_user';
-    /**
-     * Gli attributi che sono mass assignable.
-     *
-     * @var list<string>
-     */
-    protected $fillable = [
-        //'doctor_id',
->>>>>>> 9d3532ab (✨ (StudioUser.php): introduce StudioUser model to manage many-to-many)
-=======
->>>>>>> 0015a493 (✨ (DoctorAvailabilitiesWidget): implement the DoctorAvailabilitiesWidget to provide doctors with a comprehensive overview of their availability across multiple studios, enhancing user experience and data management.)
-=======
->>>>>>> 16ac401c (📝 (doctor-availabilities-widget): remove outdated documentation and files related to the DoctorAvailabilitiesWidget to streamline the codebase and improve maintainability.)
-=======
-        'id',
->>>>>>> 0964f1b7 (✨ (DoctorAvailabilitiesWidget): introduce a new widget for doctors to manage their availability across multiple studios)
->>>>>>> aurmich/dev
         'user_id',
         'studio_id',
         'schedule',
@@ -131,13 +76,6 @@ class StudioUser extends BasePivot
         ]);
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 
     public function user(): BelongsTo
     {
@@ -150,65 +88,4 @@ class StudioUser extends BasePivot
     }
 
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-    /**
-     * Ottiene il dottore associato a questa relazione.
-     * Specifica esplicitamente la chiave esterna e la chiave primaria
-     * per gestire la relazione cross-database (DB user <-> DB salute_ora).
-     *
-     * @return BelongsTo<Doctor, DoctorStudio>
-     */
-    public function doctor(): BelongsTo
-    {
-        // Specificare esplicitamente la chiave esterna e la connection corretta
-        // perché questa relazione attraversa database differenti
-        return $this->belongsTo(
-            Doctor::class,
-            'doctor_id',
-            'id',
-            'doctor'
-        )->withoutGlobalScopes();
-    }
-
-    /**
-     * Ottiene lo studio associato a questa relazione.
-     * Questa relazione rimane nello stesso database.
-     *
-     * @return BelongsTo<Studio, DoctorStudio>
-     */
-    public function studio(): BelongsTo
-    {
-        // La relazione con Studio è nello stesso database, quindi è più semplice
-        return $this->belongsTo(Studio::class, 'studio_id', 'id', 'studio');
-    }
->>>>>>> 9d3532ab (✨ (StudioUser.php): introduce StudioUser model to manage many-to-many)
-=======
-
->>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
-=======
-    /**
-     * Relazione con lo studio.
-     */
-    public function studio(): BelongsTo
-    {
-        return $this->belongsTo(Studio::class, 'studio_id');
-    }
-
-    /**
-     * Relazione con l'utente (dottore).
-     */
-    public function user(): BelongsTo
-    {
-        return $this->belongsTo(User::class, 'user_id');
-    }
->>>>>>> 0015a493 (✨ (DoctorAvailabilitiesWidget): implement the DoctorAvailabilitiesWidget to provide doctors with a comprehensive overview of their availability across multiple studios, enhancing user experience and data management.)
-=======
-
->>>>>>> 16ac401c (📝 (doctor-availabilities-widget): remove outdated documentation and files related to the DoctorAvailabilitiesWidget to streamline the codebase and improve maintainability.)
-=======
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
->>>>>>> aurmich/dev
 }

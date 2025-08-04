@@ -3,10 +3,6 @@
 ## Panoramica
 Questo documento descrive l'implementazione del sistema di invio SMS nel modulo Notify, utilizzando il pacchetto `gr8shivam/laravel-sms-api` come driver principale **e** il pacchetto [`spatie/laravel-queueable-action`](https://github.com/spatie/laravel-queueable-action) per la gestione delle azioni asincrone e sincrone.
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 ## Architettura Data-Driven
 
 Il sistema SMS utilizza classi Data di Spatie per gestire la configurazione dei provider in modo centralizzato e tipizzato:
@@ -16,11 +12,6 @@ Il sistema SMS utilizza classi Data di Spatie per gestire la configurazione dei 
 
 Queste classi implementano il pattern singleton e forniscono metodi helper per l'autenticazione e la configurazione.
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev
 ## Architettura
 
 ### 1. Driver Supportati
@@ -38,10 +29,6 @@ return [
     
     'drivers' => [
         'smsfactor' => [
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
             'token' => env('SMSFACTOR_TOKEN'),
             'base_url' => env('SMSFACTOR_BASE_URL', 'https://api.smsfactor.com'),
         ],
@@ -51,13 +38,6 @@ return [
             'sender' => env('AGILETELECOM_SENDER'),
             'endpoint' => env('AGILETELECOM_ENDPOINT'),
             'auth_type' => env('AGILETELECOM_AUTH_TYPE', 'basic'),
-<<<<<<< HEAD
-=======
-=======
-            'api_key' => env('SMSFACTOR_API_KEY'),
-            'sender' => env('SMSFACTOR_SENDER'),
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev
         ],
         'twilio' => [
             'account_sid' => env('TWILIO_ACCOUNT_SID'),
@@ -69,10 +49,6 @@ return [
 ];
 ```
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 ### 3. Classi Data per Provider
 
 #### SmsFactorData
@@ -99,11 +75,6 @@ $agiletelecomData = AgiletelecomData::make();
 $headers = $agiletelecomData->getAuthHeaders();
 ```
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev
 ### 3. Struttura del Database
 ```sql
 CREATE TABLE sms_templates (

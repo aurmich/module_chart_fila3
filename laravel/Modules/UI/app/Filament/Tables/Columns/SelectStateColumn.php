@@ -5,56 +5,14 @@ declare(strict_types=1);
 namespace Modules\UI\Filament\Tables\Columns;
 
 use Exception;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 use Illuminate\Support\Arr;
 use Spatie\ModelStates\State;
 use Modules\SaluteOra\Models\User;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Filament\Tables\Columns\SelectColumn;
 use Spatie\ModelStates\HasStatesContract;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Illuminate\Database\Eloquent\Model;
-use Filament\Tables\Columns\SelectColumn;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Spatie\ModelStates\HasStatesContract;
-=======
->>>>>>> aurmich/dev
-=======
-use Spatie\ModelStates\HasStatesContract;
->>>>>>> 345f8677 (phpstan)
-=======
-=======
-use Illuminate\Support\Arr;
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-use Spatie\ModelStates\State;
-use Modules\SaluteOra\Models\User;
-=======
->>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
-use Illuminate\Database\Eloquent\Model;
-use Filament\Tables\Columns\SelectColumn;
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
-use Illuminate\Database\Eloquent\Model;
-use Filament\Tables\Columns\SelectColumn;
->>>>>>> d23ba493 (add calendar)
-=======
-use Spatie\ModelStates\HasStatesContract;
->>>>>>> 345f8677 (phpstan)
->>>>>>> aurmich/dev
 use Modules\SaluteOra\States\User\UserState;
 
 class SelectStateColumn extends SelectColumn
@@ -64,77 +22,7 @@ class SelectStateColumn extends SelectColumn
     {
         parent::setUp();
       //  $this->selectablePlaceholder(false);
-<<<<<<< HEAD
         $this->options(function (Model&HasStatesContract $record ,$state): array {
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $this->options(function (Model&HasStatesContract $record ,$state): array {
-=======
-        $this->options(function (Model $record ,$state): array {
->>>>>>> aurmich/dev
-=======
-        $this->options(function (Model&HasStatesContract $record ,$state): array {
->>>>>>> 345f8677 (phpstan)
-            $name=$this->getName();
-            if($state==null){
-
-                $states=Arr::wrap($record->getDefaultStateFor($name));
-                return array_combine($states, $states);
-            }
-            try{
-                //$states=$record->getAttribute($name)->transitionableStates();
-                $states=$state->transitionableStates();
-            }catch(Exception $e){
-                $states=$record->getStatesFor($name)->toArray();;
-            }
-            $states=[$state::$name, ...$states];
-            $states=array_combine($states, $states);
-            //dddx(['state'=>$state, 'state1'=>$record->getAttribute($name),'record'=>$record]);
-
-            return $states;
-        });
-
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $this->beforeStateUpdated(function (Model&HasStatesContract $record, $state) {
-            $message='';
-            /** @phpstan-ignore property.notFound */
-=======
-        $this->beforeStateUpdated(function (Model $record, $state) {
-            $message='';
->>>>>>> aurmich/dev
-=======
-        $this->beforeStateUpdated(function (Model&HasStatesContract $record, $state) {
-            $message='';
-            /** @phpstan-ignore-next-line */
->>>>>>> 345f8677 (phpstan)
-            $record->state->transitionTo($state,$message);
-        });
-
-
-    }
-
-
-
-
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> aurmich/dev
-=======
-=======
->>>>>>> d23ba493 (add calendar)
-        $this->options(function (Model $record ,$state): array {
-=======
-        $this->options(function (Model&HasStatesContract $record ,$state): array {
->>>>>>> 345f8677 (phpstan)
->>>>>>> aurmich/dev
             $name=$this->getName();
             if($state==null){
 
@@ -157,41 +45,14 @@ class SelectStateColumn extends SelectColumn
 
         $this->beforeStateUpdated(function (Model&HasStatesContract $record, $state) {
             $message='';
-<<<<<<< HEAD
             /** @phpstan-ignore property.notFound */
-=======
-            /** @phpstan-ignore-next-line */
->>>>>>> aurmich/dev
             $record->state->transitionTo($state,$message);
         });
 
 
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-   
-}
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
-
-<<<<<<< HEAD
-}
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
-
-
-}
->>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
-=======
->>>>>>> aurmich/dev
 
 
 
 }
-<<<<<<< HEAD
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev

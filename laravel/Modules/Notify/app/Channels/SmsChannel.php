@@ -52,14 +52,7 @@ class SmsChannel
         }
 
         $action = $this->factory->create();
-<<<<<<< HEAD
         
-=======
-<<<<<<< HEAD
-        
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 
 
         return $action->execute($smsData);

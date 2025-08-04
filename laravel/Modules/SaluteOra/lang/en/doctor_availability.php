@@ -5,11 +5,6 @@ return [
         'label' => 'Doctor Availability',
         'group' => 'Management',
         'icon' => 'heroicon-o-calendar',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
         'sort' => '6',
     ],
     'model' => [
@@ -119,15 +114,4 @@ return [
         'no_pending_appointments_description' => 'Non ci sono appuntamenti in attesa di approvazione.',
     ],
     'available' => 'Disponibile',
-<<<<<<< HEAD
-=======
-=======
-        'sort' => 6,
-    ],
->>>>>>> aurmich/dev
-=======
-        'sort' => 6,
-    ],
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
->>>>>>> aurmich/dev
 ];

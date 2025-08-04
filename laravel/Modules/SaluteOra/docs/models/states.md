@@ -3,13 +3,6 @@
 ## Introduzione
 Il modulo SaluteOra utilizza `spatie/laravel-model-states` per gestire gli stati dei modelli. Questo approccio offre una gestione robusta e flessibile degli stati, permettendo transizioni controllate e validazione.
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
->>>>>>> aurmich/dev
 ## Stati Disponibili
 
 Gli stati dell'utente nel sistema SaluteOra sono:
@@ -22,10 +15,6 @@ Gli stati dell'utente nel sistema SaluteOra sono:
 6. **IntegrationRequested** - Utente per cui è richiesta un'integrazione di dati
 7. **IntegrationCompleted** - Utente che ha completato l'integrazione richiesta (NUOVO)
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 ## Struttura degli Stati
 
 ### UserState (Classe Base)
@@ -41,42 +30,10 @@ abstract class UserState extends State
     abstract public function color(): string;
     abstract public function icon(): string;
 
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
-## Struttura degli Stati
-
-### UserState (Classe Base)
-```php
-namespace Modules\SaluteOra\States\User;
-
-use Spatie\ModelStates\State;
-use Spatie\ModelStates\StateConfig;
-
-abstract class UserState extends State
-{
-<<<<<<< HEAD
->>>>>>> bead9c28 (fix case)
-=======
-    abstract public function label(): string;
-    abstract public function color(): string;
-    abstract public function icon(): string;
-
->>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
->>>>>>> aurmich/dev
     public static function config(): StateConfig
     {
         return parent::config()
             ->default(Pending::class)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
->>>>>>> aurmich/dev
             // Pending transitions
             ->allowTransition(Pending::class, Active::class, Transitions\PendingToActive::class)
             ->allowTransition(Pending::class, Rejected::class, Transitions\PendingToRejected::class)
@@ -111,26 +68,10 @@ abstract class UserState extends State
             ->registerState(Suspended::class)
             ->registerState(IntegrationRequested::class)
             ->registerState(IntegrationCompleted::class);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-            ->allowTransition(Pending::class, Approved::class)
-            ->allowTransition(Pending::class, Rejected::class)
-            ->allowTransition(Approved::class, Suspended::class);
->>>>>>> bead9c28 (fix case)
-=======
->>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
->>>>>>> aurmich/dev
     }
 }
 ```
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 ### Stato IntegrationCompleted (NUOVO)
 ```php
 namespace Modules\SaluteOra\States\User;
@@ -189,87 +130,10 @@ class IntegrationRequested extends UserState
     public function icon(): string
     {
         return 'heroicon-o-document-text';
-<<<<<<< HEAD
-=======
-=======
-### Stati Specifici
-=======
-### Stato IntegrationCompleted (NUOVO)
->>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
-```php
-namespace Modules\SaluteOra\States\User;
-
-/**
- * Stato che rappresenta un utente che ha completato l'integrazione dei dati richiesti.
- * 
- * In questo stato l'utente ha fornito tutte le informazioni richieste
- * e può essere attivato nel sistema.
- */
-class IntegrationCompleted extends UserState
-{
-    public static $name = 'integration_completed';
-    
-    public function label(): string
-    {
-        return 'Integrazione completata';
-    }
-    
-    public function color(): string
-    {
-        return 'success';
-    }
-    
-    public function icon(): string
-    {
-        return 'heroicon-o-check-circle';
->>>>>>> aurmich/dev
     }
 }
 ```
 
-<<<<<<< HEAD
-=======
-### Stato IntegrationRequested (Esistente)
-```php
-namespace Modules\SaluteOra\States\User;
-
-/**
- * Stato che rappresenta un utente per il quale è richiesta un'integrazione.
- * 
- * In questo stato l'utente ha completato la registrazione ma sono richieste
- * ulteriori informazioni prima di poter attivare l'account.
- */
-class IntegrationRequested extends UserState
-{
-    public static $name = 'integration_requested';
-    
-    public function label(): string
-    {
-<<<<<<< HEAD
-        return $newState instanceof Suspended;
->>>>>>> bead9c28 (fix case)
-=======
-        return 'Integrazione richiesta';
-    }
-    
-    public function color(): string
-    {
-        return 'info';
-    }
-    
-    public function icon(): string
-    {
-        return 'heroicon-o-document-text';
->>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
-    }
-}
-```
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
->>>>>>> aurmich/dev
 ## Flusso di Integrazione
 
 Il nuovo flusso di integrazione segue questi passaggi:
@@ -292,14 +156,6 @@ Pending
     └── → Rejected (respinto)
 ```
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> bead9c28 (fix case)
-=======
->>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
->>>>>>> aurmich/dev
 ## Implementazione nei Modelli
 
 ### User Model
@@ -307,11 +163,6 @@ Pending
 namespace Modules\SaluteOra\Models;
 
 use Spatie\ModelStates\HasStates;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 use Modules\SaluteOra\States\User\UserState;
 
 class User extends BaseModel
@@ -354,61 +205,6 @@ class IntegrationRequestedToIntegrationCompleted extends Transition
         
         return $this->user;
     }
-<<<<<<< HEAD
-=======
-=======
-=======
-use Modules\SaluteOra\States\User\UserState;
->>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
-
-class User extends BaseModel
-{
-    use HasStates;
-
-<<<<<<< HEAD
-    protected $casts = [
-        'state' => UserState::class,
-    ];
->>>>>>> bead9c28 (fix case)
-=======
-    protected function casts(): array
-    {
-        return array_merge(parent::casts(), [
-            'state' => UserState::class,
-        ]);
-    }
-}
-```
-
-## Transizioni
-
-### Nuova Transizione: IntegrationRequestedToIntegrationCompleted
-```php
-namespace Modules\SaluteOra\States\User\Transitions;
-
-use Spatie\ModelStates\Transition;
-use Modules\SaluteOra\States\User\IntegrationRequested;
-use Modules\SaluteOra\States\User\IntegrationCompleted;
-use Modules\SaluteOra\Models\User;
-
-class IntegrationRequestedToIntegrationCompleted extends Transition
-{
-    public function __construct(public User $user, public ?string $message = '') {}
-
-    public function handle(): User
-    {
-        // Verifica che tutti i dati richiesti siano stati forniti
-        if (!$this->user->hasCompletedIntegration()) {
-            throw new \Exception('Integrazione non completata');
-        }
-
-        $this->user->state = new IntegrationCompleted($this->user);
-        $this->user->save();
-        
-        return $this->user;
-    }
->>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
->>>>>>> aurmich/dev
 }
 ```
 
@@ -606,13 +402,6 @@ WHERE state = 'Modules\\SaluteOra\\States\\Active';
 4. **Documentazione**
    - Mantenere aggiornata la documentazione degli stati
    - Documentare le transizioni consentite
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6232c656 (✨ (IntegrationCompleted State): introduce new state `IntegrationCompleted` in user workflow to manage users who completed data integration but are not yet approved by the administrator)
->>>>>>> aurmich/dev
    - Registrare le modifiche e le correzioni 
 
 ## Pattern BaseTransition (DRY + KISS)
@@ -652,13 +441,6 @@ class PendingToActive extends BaseTransition
 }
 ```
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
->>>>>>> aurmich/dev
 ➡️ **Documentazione completa**: [Pattern BaseTransition](base-transition-pattern.md)
 
 ## 🏥 **Stati degli Appuntamenti** (NUOVO - Gennaio 2025)
@@ -713,18 +495,4 @@ Le notifiche includono automaticamente:
 - `studio_name`: Nome dello studio
 - `message`: Messaggio personalizzato
 
-<<<<<<< HEAD
 📋 **Documentazione completa**: [Appointment States](appointment-states.md) 
-=======
-<<<<<<< HEAD
-📋 **Documentazione completa**: [Appointment States](appointment-states.md) 
-=======
-   - Registrare le modifiche e le correzioni 
->>>>>>> bead9c28 (fix case)
-=======
-➡️ **Documentazione completa**: [Pattern BaseTransition](base-transition-pattern.md) 
->>>>>>> 6232c656 (✨ (IntegrationCompleted State): introduce new state `IntegrationCompleted` in user workflow to manage users who completed data integration but are not yet approved by the administrator)
-=======
-📋 **Documentazione completa**: [Appointment States](appointment-states.md) 
->>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
->>>>>>> aurmich/dev

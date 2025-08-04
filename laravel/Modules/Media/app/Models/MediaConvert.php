@@ -11,14 +11,6 @@ namespace Modules\Media\Models;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
- * 
- *
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
  * @property int $id
  * @property int $media_id
  * @property string|null $codec_video

@@ -10,23 +10,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
-<<<<<<< HEAD
 // use Modules\SaluteOra\Models\Appointment;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-// use Modules\SaluteOra\Models\Appointment;
-=======
-use Modules\SaluteOra\Models\Appointment;
->>>>>>> 54f4fa16 (.)
-=======
-use Modules\Dental\Models\Appointment;
->>>>>>> 15cb84fb (fix collisions)
-=======
-use Modules\SaluteOra\Models\Appointment;
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 
 class AppointmentNotificationMail extends Mailable implements ShouldQueue
 {
@@ -65,15 +49,7 @@ class AppointmentNotificationMail extends Mailable implements ShouldQueue
             default => 'Notifica Appuntamento',
         };
         
-<<<<<<< HEAD
         if (is_object($appointment) && property_exists($appointment, 'id') && $appointment->id) {
-=======
-<<<<<<< HEAD
-        if (is_object($appointment) && property_exists($appointment, 'id') && $appointment->id) {
-=======
-        if ($appointment instanceof Appointment && $appointment->id) {
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
             $subject .= ' #' . $appointment->id;
         }
         
@@ -81,15 +57,7 @@ class AppointmentNotificationMail extends Mailable implements ShouldQueue
             subject: $subject,
             tags: ['appointment', $type],
             metadata: [
-<<<<<<< HEAD
                 'appointment_id' => is_object($appointment) && property_exists($appointment, 'id') ? $appointment->id : null,
-=======
-<<<<<<< HEAD
-                'appointment_id' => is_object($appointment) && property_exists($appointment, 'id') ? $appointment->id : null,
-=======
-                'appointment_id' => $appointment instanceof Appointment ? $appointment->id : null,
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
                 'type' => $type,
             ],
         );

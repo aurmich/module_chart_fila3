@@ -4,37 +4,14 @@ namespace Modules\SaluteOra\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
-<<<<<<< HEAD
 use function Safe\preg_match;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-use function Safe\preg_match;
-=======
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
-use function Safe\preg_match;
->>>>>>> 13ea6524 (phpstan)
->>>>>>> aurmich/dev
 
 class CheckDirectoryStructure extends Command
 {
     protected $signature = 'saluteora:check-structure';
     protected $description = 'Verifica la struttura delle directory del modulo SaluteOra';
 
-<<<<<<< HEAD
     public function handle(): int
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function handle(): int
-=======
-    public function handle()
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
-    public function handle(): int
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
     {
         $this->info('Verifica struttura directory SaluteOra...');
 
@@ -69,19 +46,7 @@ class CheckDirectoryStructure extends Command
         return 1;
     }
 
-<<<<<<< HEAD
     protected function checkNamespaces(string $basePath, array &$errors): void
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    protected function checkNamespaces(string $basePath, array &$errors): void
-=======
-    protected function checkNamespaces($basePath, &$errors)
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
-    protected function checkNamespaces(string $basePath, array &$errors): void
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
     {
         $files = File::allFiles($basePath . '/app');
         foreach ($files as $file) {
@@ -99,12 +64,4 @@ class CheckDirectoryStructure extends Command
             }
         }
     }
-<<<<<<< HEAD
 } 
-=======
-<<<<<<< HEAD
-} 
-=======
-} 
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
->>>>>>> aurmich/dev

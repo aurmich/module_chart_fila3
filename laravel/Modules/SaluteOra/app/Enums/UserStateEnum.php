@@ -5,18 +5,7 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Enums;
 
 use Filament\Support\Contracts\HasLabel;
-<<<<<<< HEAD
 use function Safe\class_alias;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-use function Safe\class_alias;
-=======
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
-use function Safe\class_alias;
->>>>>>> 13ea6524 (phpstan)
->>>>>>> aurmich/dev
 
 enum UserStateEnum: string implements HasLabel
 {
@@ -27,19 +16,7 @@ enum UserStateEnum: string implements HasLabel
     case SUSPENDED = 'suspended';
     case INTEGRATION_REQUESTED = 'integration_requested';
 
-<<<<<<< HEAD
     public function getLabel(): string
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getLabel(): string
-=======
-    public function getLabel(): ?string
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
-    public function getLabel(): string
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
     {
         return match($this) {
             self::PENDING => 'In attesa',
@@ -82,35 +59,6 @@ enum UserStateEnum: string implements HasLabel
             ->toArray();
     }
 }
-<<<<<<< HEAD
 
 // Alias for backward compatibility
 //class_alias(UserStateEnum::class, 'Modules\SaluteOra\Enums\UserState');
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-// Alias for backward compatibility
-<<<<<<< HEAD
-<<<<<<< HEAD
-//class_alias(UserStateEnum::class, 'Modules\SaluteOra\Enums\UserState');
-=======
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
-
-// Alias for backward compatibility
-<<<<<<< HEAD
-class_alias(UserStateEnum::class, 'Modules\SaluteOra\Enums\UserState');
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
-=======
-use function Safe\class_alias;
-
-class_alias(UserStateEnum::class, 'Modules\\SaluteOra\\Enums\\UserState');
->>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
-=======
-class_alias(UserStateEnum::class, 'Modules\SaluteOra\Enums\UserState');
->>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
-=======
-//class_alias(UserStateEnum::class, 'Modules\SaluteOra\Enums\UserState');
->>>>>>> 13ea6524 (phpstan)
->>>>>>> aurmich/dev

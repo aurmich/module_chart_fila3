@@ -11,25 +11,13 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 use Modules\Notify\Contracts\SMS\SmsActionContract;
 use Modules\Notify\Datas\SmsData;
-<<<<<<< HEAD
 use Modules\Notify\Datas\SMS\NexmoData;
-=======
-<<<<<<< HEAD
-use Modules\Notify\Datas\SMS\NexmoData;
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 use Spatie\QueueableAction\QueueableAction;
 
 final class SendNexmoSMSAction implements SmsActionContract
 {
     use QueueableAction;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     /** @var NexmoData */
     private NexmoData $nexmoData;
 
@@ -41,47 +29,12 @@ final class SendNexmoSMSAction implements SmsActionContract
 
     /** @var string|null */
     protected ?string $defaultSender = null;
-<<<<<<< HEAD
-=======
-=======
-=======
-    /** @var string */
->>>>>>> 345f8677 (phpstan)
-    private string $key;
-
-    /** @var string */
-    private string $secret;
-
-    /** @var string */
-    private string $baseUrl = 'https://rest.nexmo.com/sms/json';
-
-    /** @var array<string, mixed> */
-    private array $vars = [];
-
-    /** @var bool */
-    protected bool $debug;
-
-    /** @var int */
-    protected int $timeout;
-<<<<<<< HEAD
-    protected ?string $defaultSender;
->>>>>>> 54f4fa16 (.)
-=======
-
-    /** @var string|null */
-    protected ?string $defaultSender = null;
->>>>>>> 345f8677 (phpstan)
->>>>>>> aurmich/dev
 
     /**
      * Create a new action instance.
      */
     public function __construct()
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
         $this->nexmoData = NexmoData::make();
         
         if (!$this->nexmoData->key) {
@@ -89,47 +42,13 @@ final class SendNexmoSMSAction implements SmsActionContract
         }
 
         if (!$this->nexmoData->secret) {
-<<<<<<< HEAD
-=======
-=======
-        $config = config('sms.drivers.nexmo');
-        if (!is_array($config)) {
-            throw new Exception('Configurazione Nexmo non trovata in sms.php');
-        }
-
-        $this->key = $config['key'] ?? null;
-        if (!is_string($this->key)) {
-            throw new Exception('Key Nexmo non configurata in sms.php');
-        }
-
-        $this->secret = $config['secret'] ?? null;
-        if (!is_string($this->secret)) {
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
             throw new Exception('Secret Nexmo non configurato in sms.php');
         }
 
         // Parametri a livello di root
-<<<<<<< HEAD
         $sender = config('sms.from');
         $this->defaultSender = is_string($sender) ? $sender : null;
         $this->debug = (bool) config('sms.debug', false);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $sender = config('sms.from');
-        $this->defaultSender = is_string($sender) ? $sender : null;
-        $this->debug = (bool) config('sms.debug', false);
-=======
-        $this->defaultSender = config('sms.from');
-=======
-        $sender = config('sms.from');
-        $this->defaultSender = is_string($sender) ? $sender : null;
->>>>>>> 345f8677 (phpstan)
-        $this->debug = (bool) config('sms.debug', false);
-        $this->timeout = (int) config('sms.timeout', 30);
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
     }
 
     /**
@@ -146,11 +65,6 @@ final class SendNexmoSMSAction implements SmsActionContract
         ];
 
         // Normalizza il numero di telefono
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
         $to = (string) $smsData->to;
         if (Str::startsWith($to, '00')) {
             $to = $to !== '' ? ('+' . substr($to, 2)) : $to;
@@ -158,68 +72,21 @@ final class SendNexmoSMSAction implements SmsActionContract
 
         if (!Str::startsWith($to, '+')) {
             $to = '+39' . $to;
-<<<<<<< HEAD
-=======
-=======
-        $smsData->to .= '';
-        if (Str::startsWith($smsData->to, '00')) {
-            $smsData->to = '+' . mb_substr($smsData->to, 2);
-        }
-
-        if (!Str::startsWith($smsData->to, '+')) {
-            $smsData->to = '+39' . $smsData->to;
->>>>>>> 54f4fa16 (.)
-=======
-        $to = (string) $smsData->to;
-        if (Str::startsWith($to, '00')) {
-            $to = $to !== '' ? ('+' . substr($to, 2)) : $to;
-        }
-
-        if (!Str::startsWith($to, '+')) {
-            $to = '+39' . $to;
->>>>>>> 345f8677 (phpstan)
->>>>>>> aurmich/dev
         }
 
         $from = $smsData->from ?? $this->defaultSender;
 
         $client = new Client([
-<<<<<<< HEAD
             'timeout' => $this->nexmoData->getTimeout(),
-=======
-<<<<<<< HEAD
-            'timeout' => $this->nexmoData->getTimeout(),
-=======
-            'timeout' => $this->timeout,
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
             'headers' => $headers
         ]);
 
         try {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
             $response = $client->post($this->nexmoData->getBaseUrl() . '/sms/json', [
                 'form_params' => [
                     'api_key' => $this->nexmoData->key,
                     'api_secret' => $this->nexmoData->secret,
                     'to' => $to,
-<<<<<<< HEAD
-=======
-=======
-            $response = $client->post($this->baseUrl, [
-                'form_params' => [
-                    'api_key' => $this->key,
-                    'api_secret' => $this->secret,
-<<<<<<< HEAD
-                    'to' => $smsData->to,
->>>>>>> 54f4fa16 (.)
-=======
-                    'to' => $to,
->>>>>>> 345f8677 (phpstan)
->>>>>>> aurmich/dev
                     'from' => $from,
                     'text' => $smsData->body,
                     'type' => 'unicode'

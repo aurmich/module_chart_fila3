@@ -4,11 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Filament\Pages;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 use Filament\Forms\Form;
 use Filament\Actions\Action;
 use Webmozart\Assert\Assert;
@@ -23,32 +18,6 @@ use Modules\SaluteOra\Models\StudioUser;
 use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Filament\Pages\XotBasePage;
 use Modules\UI\Filament\Forms\Components\OpeningHoursField;
-<<<<<<< HEAD
-=======
-=======
-use Filament\Actions\Action;
-use Filament\Facades\Filament;
-=======
->>>>>>> 13ea6524 (phpstan)
-use Filament\Forms\Form;
-use Filament\Actions\Action;
-use Webmozart\Assert\Assert;
-use function Safe\preg_match;
-use Filament\Facades\Filament;
-use Modules\SaluteOra\Models\User;
-use Modules\SaluteOra\Models\Doctor;
-use Modules\SaluteOra\Models\Studio;
-use Filament\Forms\ComponentContainer;
-use Filament\Notifications\Notification;
-use Modules\SaluteOra\Models\StudioUser;
-use Illuminate\Contracts\Support\Htmlable;
-use Modules\Xot\Filament\Pages\XotBasePage;
-<<<<<<< HEAD
->>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
-=======
-use Modules\UI\Filament\Forms\Components\OpeningHoursField;
->>>>>>> 13ea6524 (phpstan)
->>>>>>> aurmich/dev
 
 /**
  * DoctorAvailabilityPage
@@ -64,18 +33,7 @@ use Modules\UI\Filament\Forms\Components\OpeningHoursField;
  * - Supporto per dottori con più studi
  * 
  * @property array $data
-<<<<<<< HEAD
  * @property ComponentContainer $form
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
- * @property ComponentContainer $form
-=======
->>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
-=======
- * @property ComponentContainer $form
->>>>>>> 13ea6524 (phpstan)
->>>>>>> aurmich/dev
  */
 class DoctorAvailabilityPage extends XotBasePage
 {
@@ -185,43 +143,12 @@ class DoctorAvailabilityPage extends XotBasePage
     public function form(Form $form): Form
     {
         return $form
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            ->schema([
-<<<<<<< HEAD
-<<<<<<< HEAD
-                'schedule'=>OpeningHoursField::make('schedule')
-                    //->label(__('saluteora::doctor_availability.sections.weekly_availability'))
-                    //->helperText(__('saluteora::doctor_availability.fields.is_available.help'))
-=======
-                OpeningHoursField::make('schedule')
-                    ->label(__('saluteora::doctor_availability.sections.weekly_availability'))
-                    ->helperText(__('saluteora::doctor_availability.fields.is_available.help'))
->>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
-=======
-                'schedule'=>OpeningHoursField::make('schedule')
-                    //->label(__('saluteora::doctor_availability.sections.weekly_availability'))
-                    //->helperText(__('saluteora::doctor_availability.fields.is_available.help'))
->>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
-                    ->columnSpanFull(),
-            ])
-=======
-            ->schema($this->getFormSchema())
->>>>>>> 0015a493 (✨ (DoctorAvailabilitiesWidget): implement the DoctorAvailabilitiesWidget to provide doctors with a comprehensive overview of their availability across multiple studios, enhancing user experience and data management.)
-=======
->>>>>>> aurmich/dev
             ->schema([
                 'schedule'=>OpeningHoursField::make('schedule')
                     //->label(__('saluteora::doctor_availability.sections.weekly_availability'))
                     //->helperText(__('saluteora::doctor_availability.fields.is_available.help'))
                     ->columnSpanFull(),
             ])
-<<<<<<< HEAD
-=======
->>>>>>> 16ac401c (📝 (doctor-availabilities-widget): remove outdated documentation and files related to the DoctorAvailabilitiesWidget to streamline the codebase and improve maintainability.)
->>>>>>> aurmich/dev
             ->statePath('data');
     }
 
@@ -242,19 +169,7 @@ class DoctorAvailabilityPage extends XotBasePage
     /**
      * Ottiene l'utente dottore corrente.
      */
-<<<<<<< HEAD
     protected function getCurrentDoctor(): Doctor
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    protected function getCurrentDoctor(): Doctor
-=======
-    protected function getCurrentDoctor(): User
->>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
-=======
-    protected function getCurrentDoctor(): Doctor
->>>>>>> 13ea6524 (phpstan)
->>>>>>> aurmich/dev
     {
         /** @var User $user */
         $user = auth()->user();
@@ -262,19 +177,7 @@ class DoctorAvailabilityPage extends XotBasePage
         //if (!$user instanceof User || $user->type !== 'doctor') {
         //    abort(403, __('saluteora::doctor_availability.notifications.not_doctor.body'));
         //}
-<<<<<<< HEAD
         Assert::isInstanceOf($user, Doctor::class);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        Assert::isInstanceOf($user, Doctor::class);
-=======
-        
->>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
-=======
-        Assert::isInstanceOf($user, Doctor::class);
->>>>>>> 13ea6524 (phpstan)
->>>>>>> aurmich/dev
         return $user;
     }
 
@@ -328,19 +231,7 @@ class DoctorAvailabilityPage extends XotBasePage
         $pivot = $this->getDoctorStudioPivot();
         
         $this->data = [
-<<<<<<< HEAD
             'schedule' => $pivot->schedule ?? $this->getDefaultSchedule(),
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'schedule' => $pivot->schedule ?? $this->getDefaultSchedule(),
-=======
-            'schedule' => $pivot?->schedule ?? $this->getDefaultSchedule(),
->>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
-=======
-            'schedule' => $pivot->schedule ?? $this->getDefaultSchedule(),
->>>>>>> 13ea6524 (phpstan)
->>>>>>> aurmich/dev
         ];
     }
 

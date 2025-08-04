@@ -78,11 +78,6 @@ Il componente tema deve:
         $user = auth()->user();
         
         match ($user->type) {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
             \Modules\SaluteOra\Enums\UserTypeEnum::PATIENT => [
                 $widgetClass = \Modules\SaluteOra\Filament\Widgets\PatientCalendarWidget::class,
                 $canView = true
@@ -92,27 +87,6 @@ Il componente tema deve:
                 $canView = \Filament\Facades\Filament::getTenant() !== null
             ],
             \Modules\SaluteOra\Enums\UserTypeEnum::ADMIN => [
-<<<<<<< HEAD
-=======
-=======
-            \Modules\SaluteOra\Enums\UserType::PATIENT => [
-=======
-            \Modules\SaluteOra\Enums\UserTypeEnum::PATIENT => [
->>>>>>> 2bcfd382 (fix Address)
-                $widgetClass = \Modules\SaluteOra\Filament\Widgets\PatientCalendarWidget::class,
-                $canView = true
-            ],
-            \Modules\SaluteOra\Enums\UserTypeEnum::DOCTOR => [
-                $widgetClass = \Modules\SaluteOra\Filament\Widgets\DoctorCalendarWidget::class,
-                $canView = \Filament\Facades\Filament::getTenant() !== null
-            ],
-<<<<<<< HEAD
-            \Modules\SaluteOra\Enums\UserType::ADMIN => [
->>>>>>> 2099645a (.)
-=======
-            \Modules\SaluteOra\Enums\UserTypeEnum::ADMIN => [
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
                 $widgetClass = \Modules\SaluteOra\Filament\Widgets\AdminCalendarWidget::class,
                 $canView = true
             ],

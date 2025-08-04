@@ -4,12 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Filament\Widgets;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Livewire\Attributes\On;
@@ -42,47 +36,6 @@ use Modules\SaluteOra\States\Appointment\AppointmentState;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Modules\SaluteOra\States\Appointment as StateAppointment;
 use Illuminate\Support\Facades\Gate;
-<<<<<<< HEAD
-=======
-=======
-use Filament\Facades\Filament;
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Support\Facades\Cache;
-=======
->>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
-=======
-use Illuminate\Support\Arr;
->>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)
-use Livewire\Attributes\On;
-use Filament\Actions\Action;
-use Webmozart\Assert\Assert;
-use Spatie\ModelStates\State;
-use Filament\Facades\Filament;
-use Illuminate\Support\HtmlString;
-use Illuminate\Support\Facades\Cache;
-use Filament\Support\Enums\ActionSize;
-use Filament\Forms\Components\Textarea;
-use Filament\Forms\Components\TextInput;
-use Modules\Xot\Contracts\StateContract;
-use Modules\SaluteOra\Enums\UserTypeEnum;
-use Modules\SaluteOra\Models\Appointment;
-use Filament\Actions\Contracts\HasActions;
-use Illuminate\Database\Eloquent\Collection;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
-use Modules\SaluteOra\States\Appointment\Pending;
-use Modules\SaluteOra\States\Appointment\Rejected;
-<<<<<<< HEAD
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
->>>>>>> 2df8b507 (bozza widget doctor appointments)
-=======
-use Filament\Actions\Concerns\InteractsWithActions;
-use Modules\SaluteOra\States\Appointment\Confirmed;
-<<<<<<< HEAD
->>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
-=======
-use Modules\SaluteOra\States\Appointment\AppointmentState;
->>>>>>> 9fa97684 (✨ (appointment states): add complete standardization for appointment states to ensure consistency and improve maintainability)
->>>>>>> aurmich/dev
 
 /**
  * Widget per gestire gli appuntamenti del dottore.
@@ -90,18 +43,9 @@ use Modules\SaluteOra\States\Appointment\AppointmentState;
  * Mostra gli appuntamenti in stato pending per il dottore loggato
  * con azioni per confermare o rifiutare gli appuntamenti.
  */
-<<<<<<< HEAD
 class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
 {
     use InteractsWithActions;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
-{
-    use InteractsWithActions;
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     //public string $state;
     public string $doctor_id;
     public array $states = [];
@@ -111,29 +55,6 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
      * Vista del widget.
      */
     protected static string $view = 'pub_theme::filament.widgets.doctor-appointments-widget';
-<<<<<<< HEAD
-=======
-=======
-class DoctorAppointmentsWidget extends XotBaseWidget
-=======
-class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
->>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
-{
-    use InteractsWithActions;
-=======
-    public string $state;
-    public string $doctor_id;
->>>>>>> 9fa97684 (✨ (appointment states): add complete standardization for appointment states to ensure consistency and improve maintainability)
-    /**
-     * Vista del widget.
-     */
-<<<<<<< HEAD
-    protected static string $view = 'saluteora::filament.widgets.doctor-appointments-widget';
->>>>>>> 2df8b507 (bozza widget doctor appointments)
-=======
-    protected static string $view = 'pub_theme::filament.widgets.doctor-appointments-widget';
->>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
->>>>>>> aurmich/dev
 
     /**
      * Schema del form per il widget.
@@ -168,18 +89,9 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
      */
     public function mount(): void
     {
-<<<<<<< HEAD
         $all_states=AppointmentState::getStateMapping()->toArray();
         $this->all_states=$all_states;
         //$this->states=['delete']; //testing
-=======
-<<<<<<< HEAD
-        $all_states=AppointmentState::getStateMapping()->toArray();
-        $this->all_states=$all_states;
-        //$this->states=['delete']; //testing
-=======
->>>>>>> 2df8b507 (bozza widget doctor appointments)
->>>>>>> aurmich/dev
         $this->loadAppointments();
     }
 
@@ -199,23 +111,7 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
             return false;
         }
 
-<<<<<<< HEAD
        
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-       
-=======
-        // Verificare tenancy per il dottore
-        $tenant = Filament::getTenant();
-        if (!$tenant) {
-            return false;
-        }
->>>>>>> 2df8b507 (bozza widget doctor appointments)
-=======
-       
->>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
->>>>>>> aurmich/dev
 
         return true;
     }
@@ -225,11 +121,6 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
      */
     private function loadAppointments(): void
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
         
         $this->invalidateCache();
         $cacheKey = $this->getCacheKey();
@@ -243,27 +134,6 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
                 ->whereIn('state', $this->states)
                 ->orderBy('starts_at', 'asc')
                 ->limit(100)
-<<<<<<< HEAD
-=======
-=======
-        $user = auth()->user();
-=======
-        
->>>>>>> 198c0c0a (✨ (DoctorAppointmentsWidget.php, DoctorCalendarWidget.php): refactor appointment loading logic to use doctor_id instead of auth user id for better clarity and functionality)
-
-        $cacheKey = $this->getCacheKey();
-        
-        /** @phpstan-ignore-next-line */        
-        $this->appointments = Cache::remember($cacheKey, 300, function ()  {
-            return Appointment::query()
-                ->with(['patient', 'doctor', 'studio'])
-                ->where('doctor_id', $this->doctor_id)
-                //->whereState('state', Pending::class)
-                ->where('state', $this->state)
-                ->orderBy('starts_at', 'asc')
-                ->limit(10)
->>>>>>> 2df8b507 (bozza widget doctor appointments)
->>>>>>> aurmich/dev
                 ->get();
         });
     }
@@ -273,12 +143,6 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
      */
     private function getCacheKey(): string
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
        
         $key= sprintf(
             'doctor_appointments_%s_%s',
@@ -289,117 +153,6 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
     }
 
     
-<<<<<<< HEAD
-=======
-=======
-        $user = auth()->user();
-        
-
-        return sprintf(
-            'doctor_appointments_%d',
-            $user?->id ?? 0,
-            
-=======
-        $user_id = auth()->id();
-=======
-        
->>>>>>> 198c0c0a (✨ (DoctorAppointmentsWidget.php, DoctorCalendarWidget.php): refactor appointment loading logic to use doctor_id instead of auth user id for better clarity and functionality)
-       
-       
-        $key= sprintf(
-            'doctor_appointments_%s_%s',
-            $this->doctor_id ?? 0,
-            $this->state,
->>>>>>> 9fa97684 (✨ (appointment states): add complete standardization for appointment states to ensure consistency and improve maintainability)
-        );
-        return $key;
-    }
-
-<<<<<<< HEAD
-    /**
-     * Conferma un appuntamento (transizione da Pending a Confirmed).
-     */
-    public function confirmAppointment(int $appointmentId): void
-    {
-        try {
-            $appointment = $this->findAppointment($appointmentId);
-
-            if (!$appointment || !$appointment->state->canTransitionTo(Confirmed::class)) {
-                $this->dispatch('notify', [
-                    'type' => 'error',
-                    'message' => __('saluteora::widgets.doctor_appointments.errors.cannot_confirm'),
-                ]);
-                return;
-            }
-
-            $appointment->state->transitionTo(Confirmed::class);
-
-            $this->invalidateCache();
-            $this->loadAppointments();
-
-            $this->dispatch('notify', [
-                'type' => 'success',
-                'message' => __('saluteora::widgets.doctor_appointments.messages.appointment_confirmed'),
-            ]);
-
-        } catch (\Exception $e) {
-            logger()->error('Error confirming appointment', [
-                'appointment_id' => $appointmentId,
-                'error' => $e->getMessage(),
-                'user_id' => auth()->id(),
-            ]);
-
-            $this->dispatch('notify', [
-                'type' => 'error',
-                'message' => __('saluteora::widgets.doctor_appointments.errors.confirm_failed'),
-            ]);
-        }
-    }
-
-    /**
-     * Rifiuta un appuntamento (transizione da Pending a Rejected).
-     */
-    public function rejectAppointment(int $appointmentId): void
-    {
-        try {
-            $appointment = $this->findAppointment($appointmentId);
-
-            if (!$appointment || !$appointment->state->canTransitionTo(Rejected::class)) {
-                $this->dispatch('notify', [
-                    'type' => 'error',
-                    'message' => __('saluteora::widgets.doctor_appointments.errors.cannot_reject'),
-                ]);
-                return;
-            }
-
-            $appointment->state->transitionTo(Rejected::class);
-
-            $this->invalidateCache();
-            $this->loadAppointments();
-
-            $this->dispatch('notify', [
-                'type' => 'success',
-                'message' => __('saluteora::widgets.doctor_appointments.messages.appointment_rejected'),
-            ]);
-
-        } catch (\Exception $e) {
-            logger()->error('Error rejecting appointment', [
-                'appointment_id' => $appointmentId,
-                'error' => $e->getMessage(),
-                'user_id' => auth()->id(),
-            ]);
-
-            $this->dispatch('notify', [
-                'type' => 'error',
-                'message' => __('saluteora::widgets.doctor_appointments.errors.reject_failed'),
-            ]);
-        }
-    }
->>>>>>> 2df8b507 (bozza widget doctor appointments)
-=======
-    
->>>>>>> 9fa97684 (✨ (appointment states): add complete standardization for appointment states to ensure consistency and improve maintainability)
->>>>>>> aurmich/dev
 
     /**
      * Trova un appuntamento per ID verificando che appartenga al dottore corrente.
@@ -426,13 +179,6 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
         $this->invalidateCache();
         $this->loadAppointments();
     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
->>>>>>> aurmich/dev
 
 
 
@@ -444,10 +190,6 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
     protected function getActions(): array
     {
         return [
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
             //
         ];
     }
@@ -544,125 +286,4 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
         ->modalSubmitAction(false) // ⛔️ nasconde il bottone di conferma
         ->modalCancelActionLabel('Chiudi'); // ✅ personalizzi il bottone di chiusura
     }
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 2df8b507 (bozza widget doctor appointments)
-=======
-            $this->deleteAction(),
-        ];
-    }
-
-    /**
-     * Azione per eliminare un appuntamento.
-     */
-    public function deleteAction(): Action
-    {
-        return Action::make('delete')
-            ->label('Elimina')
-            ->icon('heroicon-o-trash')
-            ->color('danger')
-            ->requiresConfirmation()
-            ->modalHeading('Elimina Appuntamento')
-            ->modalDescription('Sei sicuro di voler eliminare questo appuntamento?')
-            ->action(function (array $data) {
-                // Per ora implementazione di debug
-                $this->dispatch('notify', [
-                    'type' => 'info',
-                    'message' => 'Funzionalità eliminazione in sviluppo',
-                ]);
-            });
-    }
-
-   public function getActionByState(string $stateClass,string $name): Action
-   {
-    $appointment = new Appointment(); // senza salvarlo nel db
-    $state = new $stateClass($appointment);
-    //Assert::isInstanceOf($state,StateContract::class);
-    Assert::implementsInterface($state,StateContract::class);
-    $startStateClass=AppointmentState::getStateMapping()->get($this->state);
-    $startState=new $startStateClass($appointment);
-    Assert::isInstanceOf($startState,State::class);
-    
-    
-   
-    return Action::make($name)
-        ->iconButton()
-        //->button()
-        ->size(ActionSize::ExtraLarge)
-        ->tooltip($state->label())
-        ->icon($state->icon())
-        ->color($state->color())
-        ->requiresConfirmation()
-        ->modalHeading($state->modalHeading())
-        ->modalDescription($state->modalDescription())
-        ->form([
-            Textarea::make('message')
-                ->required()
-                ->maxLength(255),
-        ])
-        ->action(function (array $data,$arguments) use($stateClass){
-            $message=Arr::get($data,'message');
-            $appointmentId = $arguments['appointment'];
-            $appointment = Appointment::firstWhere('id',$appointmentId);
-            $appointment?->state->transitionTo($stateClass,$message);
-            // Per ora implementazione di debug
-            //$this->dispatch('notify', [
-            //    'type' => 'info',
-            //    'message' => 'Funzionalità eliminazione in sviluppo',
-            //]);
-            $this->invalidateCache();
-            $this->loadAppointments();
-
-            $this->dispatch('notify', [
-                'type' => 'success',
-                'message' => __('saluteora::widgets.doctor_appointments.messages.appointment_confirmed'),
-            ]);
-        })
-        ->visible($startState->canTransitionTo($stateClass))
-        ;
-        
-            
-   }
-
-
-    public function confirmAction(): Action
-    {
-        return $this->getActionByState(Confirmed::class,__FUNCTION__);
-       
-    }
-
-    public function rejectAction(): Action
-    {
-        return $this->getActionByState(Rejected::class,__FUNCTION__);
-       
-    }
-<<<<<<< HEAD
->>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
-=======
-
-    public function infoAction(): Action
-    {
-    return Action::make('info')
-        ->iconButton()
-        //->label('Mostra Info')
-        ->size(ActionSize::ExtraLarge)
-        ->icon('heroicon-o-information-circle')
-        ->color('info')
-        ->modalHeading('Dettagli appuntamento')
-        ->modalContent(function (array $data,$arguments) {
-            $appointmentId = $arguments['appointment'];
-            $appointment = Appointment::firstWhere('id',$appointmentId);
-            $view='pub_theme::appointment.card';
-            $view_params=[
-                'appointment' => $appointment,
-            ];
-            return view($view,$view_params);
-            //return  new HtmlString($arguments['appointment']);
-        })
-        ->modalSubmitAction(false) // ⛔️ nasconde il bottone di conferma
-        ->modalCancelActionLabel('Chiudi'); // ✅ personalizzi il bottone di chiusura
-    }
->>>>>>> a123f7ba (✨ (appointment states): implement new appointment state transitions and update documentation to reflect changes)
->>>>>>> aurmich/dev
 }

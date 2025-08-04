@@ -217,13 +217,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
->>>>>>> aurmich/dev
     'template' => [
         'navigation' => [
             'label' => 'Template Notifiche',
@@ -274,13 +267,4 @@ return [
             'push' => 'Notifica Push',
         ],
     ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-    'messages' => [],
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
->>>>>>> aurmich/dev
 ];

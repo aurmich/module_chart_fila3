@@ -1,13 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
->>>>>>> aurmich/dev
 return [
     'admin' => [
         'label' => 'Administrator',
@@ -27,12 +19,4 @@ return [
         'icon' => 'heroicon-o-user',
         'image' => '/img/donna-personaggio.png',
     ],
-<<<<<<< HEAD
 ];
-=======
-<<<<<<< HEAD
-];
-=======
-]; 
->>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
->>>>>>> aurmich/dev

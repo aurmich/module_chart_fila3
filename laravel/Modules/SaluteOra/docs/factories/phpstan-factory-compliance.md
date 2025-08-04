@@ -235,14 +235,7 @@ private function createMockAttachments(User $user, array $attachments): void
 ## 📋 Testing Compliance
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
->>>>>>> aurmich/dev
 # Verifica compliance PHPStan
 cd /var/www/html/_bases/base_saluteora/laravel
 ./vendor/bin/phpstan analyze Modules/SaluteOra/database/factories --level=9
@@ -258,10 +251,3 @@ php artisan tinker
 
 *Ultimo aggiornamento: Dicembre 2024*
 *Versione: 1.0*
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-*Compatibilità: PHPStan 1.10+, Larastan 3.x, Laravel 11+* 
->>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
->>>>>>> aurmich/dev

@@ -1,30 +1,11 @@
 <?php
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 declare(strict_types=1);
 
 return [
     'navigation' => [
         'label' => 'Calendario Disponibilità',
-<<<<<<< HEAD
         'group' => 'Agenda',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        'group' => 'Agenda',
-=======
-        'group' => 'Gestione Medici',
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
-=======
-        'group' => 'Agenda',
->>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
->>>>>>> aurmich/dev
         'icon' => 'heroicon-o-calendar',
         'color' => 'primary',
         'sort' => 10,
@@ -236,28 +217,3 @@ return [
         'no_doctor_selected_description' => 'Seleziona un medico per visualizzare la disponibilità',
     ],
 ];
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-return array (
-  'navigation' => 
-  array (
-    'group' => 'doctor availability calendar.navigation',
-  ),
-  'actions' => 
-  array (
-    'legenda' => 
-    array (
-      'label' => 'legenda',
-    ),
-    'refresh' => 
-    array (
-      'label' => 'refresh',
-    ),
-  ),
-);
->>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev

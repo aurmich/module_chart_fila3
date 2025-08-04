@@ -4,11 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Models;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 use Modules\Xot\Traits\Updater;
 use Spatie\MediaLibrary\HasMedia;
 use Illuminate\Database\Eloquent\Model;
@@ -16,26 +11,6 @@ use Modules\Xot\Models\Traits\RelationX;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-<<<<<<< HEAD
-=======
-=======
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-=======
->>>>>>> 2bcfd382 (fix Address)
-use Modules\Xot\Traits\Updater;
-use Spatie\MediaLibrary\HasMedia;
-use Illuminate\Database\Eloquent\Model;
-use Modules\Xot\Models\Traits\RelationX;
-use Spatie\MediaLibrary\InteractsWithMedia;
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
 
 /**
  * Class BaseModel.
@@ -46,18 +21,7 @@ abstract class BaseModel extends Model implements HasMedia
     use HasFactory;
     use InteractsWithMedia;
     use Updater;
-<<<<<<< HEAD
     use RelationX;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    use RelationX;
-=======
->>>>>>> 54f4fa16 (.)
-=======
-    use RelationX;
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
 
     /**
      * Indicates whether attributes are snake cased on arrays.
@@ -78,19 +42,7 @@ abstract class BaseModel extends Model implements HasMedia
     protected $perPage = 30;
 
     /** @var string */
-<<<<<<< HEAD
     protected $connection = 'salute_ora';
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    protected $connection = 'salute_ora';
-=======
-    protected $connection = 'patient';
->>>>>>> 54f4fa16 (.)
-=======
-    protected $connection = 'salute_ora';
->>>>>>> 2e1ed088 (chore(docs): delete troubleshooting.md as it is no longer relevant)
->>>>>>> aurmich/dev
 
     /** @var list<string> */
     protected $appends = [];
@@ -117,19 +69,7 @@ abstract class BaseModel extends Model implements HasMedia
     }
 
     /** @return array<string, string> */
-<<<<<<< HEAD
     protected function casts(): array
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    protected function casts(): array
-=======
-    public function casts(): array
->>>>>>> 54f4fa16 (.)
-=======
-    protected function casts(): array
->>>>>>> 2099645a (.)
->>>>>>> aurmich/dev
     {
         return [
             'id' => 'string',
@@ -146,10 +86,6 @@ abstract class BaseModel extends Model implements HasMedia
             'deleted_by' => 'string',
         ];
     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 
     public function toArrayForce(): array
     {
@@ -169,9 +105,4 @@ abstract class BaseModel extends Model implements HasMedia
             return $data;
         }
     }
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 }

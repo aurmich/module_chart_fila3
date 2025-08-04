@@ -4,11 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Models;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 use Parental\HasParent;
 use Spatie\Image\Enums\Fit;
 use Spatie\MediaLibrary\HasMedia;
@@ -17,28 +12,6 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
-<<<<<<< HEAD
-=======
-=======
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Modules\SaluteOra\Models\User;
-use Parental\HasParent;
->>>>>>> 54f4fa16 (.)
-=======
-use Parental\HasParent;
-use Spatie\Image\Enums\Fit;
-use Spatie\MediaLibrary\HasMedia;
-use Modules\SaluteOra\Models\User;
-use Spatie\MediaLibrary\InteractsWithMedia;
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-<<<<<<< HEAD
-use Spatie\Image\Enums\Fit;
->>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
-=======
->>>>>>> 0cff2983 (📝 (docs): remove unused Blade file for appointments to clean up the codebase)
->>>>>>> aurmich/dev
 
 /**
  * Class Patient
@@ -46,13 +19,6 @@ use Spatie\Image\Enums\Fit;
  * @property string $id
  * @property string $user_id
  * @property string|null $date_of_birth
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
  * @property \Carbon\Carbon|null $birth_date Alias for date_of_birth
  * @property string|null $gender
  * @property string|null $address
@@ -60,37 +26,13 @@ use Spatie\Image\Enums\Fit;
  * @property string|null $fiscal_code
  * @property string|null $pregnancy_status
  * @property int|null $tenant_id
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
- * @property string|null $gender
- * @property string|null $address
- * @property string|null $phone
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property-read \Modules\SaluteOra\Models\User|null $user
-<<<<<<< HEAD
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\SaluteOra\Models\Appointment> $appointments
  * @property-read \Modules\SaluteOra\Models\PatientIsee|null $isee
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\SaluteOra\Models\Appointment> $appointments
- * @property-read \Modules\SaluteOra\Models\PatientIsee|null $isee
-=======
->>>>>>> 54f4fa16 (.)
-=======
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\SaluteOra\Models\Appointment> $appointments
- * @property-read \Modules\SaluteOra\Models\PatientIsee|null $isee
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
  * @method static \Illuminate\Database\Eloquent\Builder|Patient newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Patient newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Patient query()
@@ -104,13 +46,6 @@ use Spatie\Image\Enums\Fit;
  * @method static \Illuminate\Database\Eloquent\Builder|Patient whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Patient whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Patient whereUserId($value)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f3e4ec66 (.)
->>>>>>> aurmich/dev
  * @property string|null $name
  * @property string|null $first_name
  * @property string|null $last_name
@@ -146,16 +81,6 @@ use Spatie\Image\Enums\Fit;
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Gdpr\Models\Consent> $consents
  * @property-read int|null $consents_count
  * @property-read \Modules\User\Models\Team|null $currentTeam
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Xot\Contracts\UserContract> $all_team_users
->>>>>>> f3e4ec66 (.)
-=======
->>>>>>> 13ea6524 (phpstan)
->>>>>>> aurmich/dev
  * @property-read \Modules\User\Models\AuthenticationLog|null $latestAuthentication
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
@@ -216,13 +141,6 @@ use Spatie\Image\Enums\Fit;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Patient withoutRole($roles, $guard = null)
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Device> $devices
  * @property-read int|null $devices_count
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 13ea6524 (phpstan)
->>>>>>> aurmich/dev
  * @property string|null $dental_problems
  * @property string|null $last_dental_visit
  * @property string|null $pregnancy_certificate
@@ -239,10 +157,6 @@ use Spatie\Image\Enums\Fit;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Patient whereIseeCertificate($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Patient whereLastDentalVisit($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Patient wherePregnancyCertificate($value)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
  * @property string|null $country_code
  * @property string|null $children_count
  * @property string|null $family_members
@@ -264,13 +178,6 @@ use Spatie\Image\Enums\Fit;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Patient whereLastDentalVisitPeriod($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Patient whereNationality($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Patient whereYearsInItaly($value)
-<<<<<<< HEAD
-=======
-=======
->>>>>>> f3e4ec66 (.)
-=======
->>>>>>> 13ea6524 (phpstan)
->>>>>>> aurmich/dev
  * @mixin \Eloquent
  */
 class Patient extends User implements HasMedia
@@ -286,46 +193,10 @@ class Patient extends User implements HasMedia
     protected $fillable = [
         'first_name',
         'last_name',
-<<<<<<< HEAD
-=======
-=======
- * @mixin \Eloquent
- */
-class Patient extends User implements HasMedia
-{
-    use HasParent;
-    use InteractsWithMedia;
-
-    /**
-     * Gli attributi che sono mass assignable.
-     *
-     * @var list<string>
-     */
-    protected $fillable = [
-<<<<<<< HEAD
-<<<<<<< HEAD
-        'user_id',
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> adac82bd (rebase)
-=======
-        'first_name',
-        'last_name',
->>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
->>>>>>> aurmich/dev
         'date_of_birth',
         'gender',
         'address',
         'phone',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        'last_dental_visit',
-        'dental_problems',
-
-=======
->>>>>>> aurmich/dev
         'last_dental_visit',
         'dental_problems',
 
@@ -371,59 +242,6 @@ class Patient extends User implements HasMedia
         */
     ];
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    public static array $attachments = [
->>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
-        'health_card',
-        'identity_document',
-        'isee_certificate',
-        'pregnancy_certificate',
-<<<<<<< HEAD
-        'country_code',
-        'nationality',
-        'years_in_italy',
-        'family_members',
-        'children_count',
-        'last_dental_visit_period',
-
-        'fiscal_code',
-
-=======
->>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
-    ];
-    protected $appends = [
-        //'health_card',
-        //'identity_document',
-        //'isee_certificate',
-        //'pregnancy_certificate',
-    ];
-
-    /** @var array<string, mixed>  */
-    protected $attributes = [
-        //'state' => Pending::class,
-        //'state' => 'pending',
-        'is_otp'=>false,
-        'is_active'=>true,
-        'type'=>'patient',
-        /*
-        'studio'=>[
-            'description' => null,
-            'address'=>[
-                'administrative_area_level_1' => null,
-                'administrative_area_level_2' => null,
-                'administrative_area_level_3' => null,
-                'locality' => null,
-                'postal_code' => null,
-            ],
-        ],
-        */
-    ];
-
-=======
->>>>>>> 12a79d3a (.)
->>>>>>> aurmich/dev
     public static function getAttachments():array{
         return [
             'health_card',
@@ -432,59 +250,21 @@ class Patient extends User implements HasMedia
             'pregnancy_certificate',
         ];
     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-    ];
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 12a79d3a (.)
->>>>>>> aurmich/dev
 
     /**
      * Get the attributes that should be cast.
      *
      * @return array<string, string>
      */
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 2099645a (.)
->>>>>>> aurmich/dev
     protected function casts(): array
     {
         return [
             ...parent::casts(),
-<<<<<<< HEAD
-=======
-=======
-    public function casts(): array
-    {
-        return [
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
-            ...parent::casts(),
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
->>>>>>> aurmich/dev
             'date_of_birth' => 'date',
         ];
     }
 
-<<<<<<< HEAD
     /**
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    /**
-<<<<<<< HEAD
-=======
-    /**
->>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
->>>>>>> aurmich/dev
      * Registra le conversioni per i media
      */
     public function registerMediaConversions(?Media $media = null): void
@@ -493,11 +273,6 @@ class Patient extends User implements HasMedia
         $this
             ->addMediaConversion('preview')
             ->fit(Fit::Contain, 300, 300)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
             //->nonQueued()
             ;
 
@@ -515,10 +290,6 @@ class Patient extends User implements HasMedia
     public function registerMediaCollections(): void
     {
         foreach (self::getAttachments() as $attachment) {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
             $this
                 ->addMediaCollection($attachment)
                 ->singleFile()
@@ -619,113 +390,5 @@ class Patient extends User implements HasMedia
             }
         }
         return $res;
-<<<<<<< HEAD
     }
 }
-=======
-=======
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
-    public function user()
-    {
-        return parent::belongsTo(User::class, 'user_id');
->>>>>>> 54f4fa16 (.)
-    }
-=======
->>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
-=======
-            ->nonQueued();
->>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
-=======
-            //->nonQueued()
-            ;
->>>>>>> 13ea6524 (phpstan)
-
-        // Conversione per le immagini dei documenti
-        $this
-            ->addMediaConversion('document')
-            ->fit(Fit::Contain, 800, 800)
-            //->nonQueued()
-            ;
-    }
-
-    /**
-     * Registra le collezioni di media
-     */
-    public function registerMediaCollections(): void
-    {
-        foreach (self::$attachments as $attachment) {
-=======
->>>>>>> 12a79d3a (.)
-            $this
-                ->addMediaCollection($attachment)
-                ->singleFile()
-                ->useDisk('local');
-        }
-    }
-
-        /**
-     * Verifica se un allegato specifico esiste
-     */
-    public function hasAttachment(string $type): bool
-    {
-        return $this->getFirstMedia($type) !== null;
-    }
-
-    /**
-     * Ottiene l'URL sicuro per visualizzare un allegato
-     */
-    public function getAttachmentUrl(string $type): ?string
-    {
-        $media = $this->getFirstMedia($type);
-        if (!$media) {
-            return null;
-        }
-
-        return route('patients.view-pdf', [
-            'patient' => $this->id,
-            'type' => $type,
-            'token' => encrypt([
-                'patient_id' => $this->id,
-                'type' => $type,
-                'user_id' => auth()->id(),
-                'expires_at' => now()->addHour()
-            ])
-        ]);
-    }
-
-    /**
-     * Conta il numero di allegati presenti
-     */
-    public function getAttachmentsCount(): int
-    {
-        $count = 0;
-        foreach (self::getAttachments() as $type) {
-            if ($this->hasAttachment($type)) {
-                $count++;
-            }
-        }
-        return $count;
-    }
-
-    /**
-     * Verifica se tutti gli allegati obbligatori sono presenti
-     */
-    public function hasRequiredAttachments(): bool
-    {
-        $required = ['health_card', 'identity_document'];
-        foreach ($required as $type) {
-            if (!$this->hasAttachment($type)) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-
-    public function appointments(): HasMany
-    {
-        return $this->hasMany(Appointment::class,'patient_id');
-    }
-}
->>>>>>> aurmich/dev

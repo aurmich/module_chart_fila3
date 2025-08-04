@@ -1,9 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 return [
     'title' => 'Dashboard',
     'description' => 'Overview of your SaluteMo module',
@@ -138,14 +134,4 @@ return [
             'tooltip' => 'Esporta i dati correnti',
         ],
     ],
-<<<<<<< HEAD
-=======
-=======
-declare(strict_types=1);
-
-return [
-    'title' => 'Dashboard',
-    'description' => 'Overview of your SaluteMo module',
->>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
->>>>>>> aurmich/dev
 ];

@@ -1,13 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
->>>>>>> aurmich/dev
 declare(strict_types=1);
 
 return [
@@ -21,28 +13,3 @@ return [
         ],
     ],
 ];
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
-return array (
-  'fields' => 
-  array (
-    'studio_selection' => 
-    array (
-      'label' => 'studio_selection',
-      'placeholder' => 'studio_selection',
-      'helper_text' => 'studio_selection',
-      'description' => 'studio_selection',
-    ),
-  ),
-);
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
-=======
->>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
->>>>>>> aurmich/dev

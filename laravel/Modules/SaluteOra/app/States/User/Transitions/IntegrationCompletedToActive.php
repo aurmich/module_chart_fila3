@@ -25,20 +25,9 @@ class IntegrationCompletedToActive extends BaseTransition
    
 
     public function getNotificationData(): array{
-<<<<<<< HEAD
         $user=$this->record;
         $password=Str::random(10);
         $user->update(['password'=>$password]);
-=======
-<<<<<<< HEAD
-        $user=$this->record;
-        $password=Str::random(10);
-        $user->update(['password'=>$password]);
-=======
-        $password=Str::random(10);
-        $this->user->update(['password'=>$password]);
->>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
->>>>>>> aurmich/dev
         return [
             'message' => $this->message,
             'password' => $password,

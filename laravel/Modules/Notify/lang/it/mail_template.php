@@ -1,12 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
->>>>>>> aurmich/dev
 return array (
   'resource' => 
   array (
@@ -46,35 +39,7 @@ return array (
       'label' => 'Classe Mailable',
       'helper_text' => 'Classe PHP che gestisce l\'invio dell\'email',
       'placeholder' => 'es: App\\Mail\\WelcomeEmail',
-<<<<<<< HEAD
       'description' => 'mailable',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      'description' => 'mailable',
-=======
->>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
-=======
-      'description' => 'mailable',
->>>>>>> 4047cb2d (✨ (mail_template.php, send_email.php): add descriptions and placeholders for mail template fields to enhance clarity for users)
-=======
-=======
-      'description' => 'mailable',
->>>>>>> 86996d7 (.)
-=======
-      'description' => 'mailable',
->>>>>>> 484b1fe (.)
->>>>>>> b58de900 (.)
-=======
-      'description' => 'mailable'
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
-=======
-      'description' => 'mailable',
->>>>>>> fb6fbaa2 (move resources/lang to lang)
->>>>>>> aurmich/dev
     ),
     'subject' => 
     array (
@@ -159,72 +124,12 @@ return array (
     array (
       'label' => 'layout',
     ),
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> aa30b366 (✨ (mail_template.php): add 'slug' label and description to Italian mail template for better localization support)
->>>>>>> aurmich/dev
     'slug' => 
     array (
       'label' => 'slug',
       'description' => 'slug',
-<<<<<<< HEAD
       'helper_text' => 'slug',
       'placeholder' => 'slug',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 484b1fe (.)
->>>>>>> b58de900 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
-      'helper_text' => 'slug',
-      'placeholder' => 'slug',
-<<<<<<< HEAD
-=======
-      'helper_text' => 'slug',
->>>>>>> 89a8313a (- update primary colors)
-=======
-    ),
-    'name' => 
-    array (
-<<<<<<< HEAD
-      'description' => 'name',
-      'helper_text' => 'name',
-      'placeholder' => 'name',
-      'label' => 'name',
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 4047cb2d (✨ (mail_template.php, send_email.php): add descriptions and placeholders for mail template fields to enhance clarity for users)
-=======
-<<<<<<< HEAD
->>>>>>> 86996d7 (.)
-=======
->>>>>>> 484b1fe (.)
->>>>>>> b58de900 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
-=======
-      'description' => 'Nome del template',
-      'helper_text' => 'Nome descrittivo per identificare il template',
-      'placeholder' => 'Es: Benvenuto, Conferma ordine, Reset password',
-      'label' => 'Nome Template',
-    ),
-    'params' => 
-    array (
-      'label' => 'Parametri',
-      'helper_text' => 'Inserisci i parametri separati da virgola che possono essere utilizzati nel template',
-      'placeholder' => 'name, email, date, company',
-      'description' => 'Parametri disponibili per il template email',
->>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
->>>>>>> aurmich/dev
     ),
     'name' => 
     array (
@@ -267,14 +172,6 @@ return array (
     array (
       'label' => 'counter',
     ),
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
-=======
-    ),
->>>>>>> aa30b366 (✨ (mail_template.php): add 'slug' label and description to Italian mail template for better localization support)
->>>>>>> aurmich/dev
   ),
   'actions' => 
   array (
@@ -313,19 +210,10 @@ return array (
       'success_message' => 'Template importato con successo',
       'error_message' => 'Errore nell\'importazione del template',
     ),
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     'activeLocale' => 
     array (
       'label' => 'activeLocale',
     ),
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
->>>>>>> aurmich/dev
   ),
   'messages' => 
   array (
@@ -351,143 +239,3 @@ return array (
     'label' => 'mail template.model',
   ),
 );
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
-return [
-    'resource' => [
-        'name' => 'Template Email',
-        'plural' => 'Template Email',
-    ],
-    'navigation' => [
-        'name' => 'Template Email',
-        'plural' => 'Template Email',
-        'group' => [
-            'name' => 'Notifiche',
-            'description' => 'Gestione delle notifiche email e dei relativi template',
-        ],
-        'label' => 'Template Email',
-        'icon' => 'heroicon-o-envelope',
-        'sort' => 1,
-    ],
-    'sections' => [
-        'main' => 'Informazioni Principali',
-        'content' => 'Contenuto',
-        'styling' => 'Stile',
-        'settings' => 'Impostazioni',
-        'variables' => 'Variabili',
-    ],
-    'fields' => [
-        'id' => [
-            'label' => 'ID',
-            'helper_text' => 'Identificativo univoco del template',
-        ],
-        'mailable' => [
-            'label' => 'Classe Mailable',
-            'helper_text' => 'Classe PHP che gestisce l\'invio dell\'email',
-            'placeholder' => 'es: App\\Mail\\WelcomeEmail',
-        ],
-        'subject' => [
-            'label' => 'Oggetto',
-            'helper_text' => 'Oggetto dell\'email',
-            'placeholder' => 'Inserisci l\'oggetto dell\'email',
-        ],
-        'html_template' => [
-            'label' => 'Template HTML',
-            'helper_text' => 'Contenuto HTML del template email',
-            'placeholder' => 'Inserisci il codice HTML',
-        ],
-        'text_template' => [
-            'label' => 'Template Testo',
-            'helper_text' => 'Versione testuale del template email',
-            'placeholder' => 'Inserisci la versione testuale',
-        ],
-        'from_email' => [
-            'label' => 'Email mittente',
-            'helper_text' => 'Indirizzo email del mittente',
-            'placeholder' => 'noreply@example.com',
-        ],
-        'from_name' => [
-            'label' => 'Nome mittente',
-            'helper_text' => 'Nome visualizzato del mittente',
-            'placeholder' => 'Nome Azienda',
-        ],
-        'variables' => [
-            'label' => 'Variabili disponibili',
-            'helper_text' => 'Elenco delle variabili che possono essere utilizzate nel template',
-            'placeholder' => 'es: {{name}}, {{email}}',
-        ],
-        'is_markdown' => [
-            'label' => 'Usa Markdown',
-            'helper_text' => 'Indica se il template utilizza la sintassi Markdown',
-        ],
-        'status' => [
-            'label' => 'Stato',
-            'helper_text' => 'Stato attuale del template',
-        ],
-        'created_at' => [
-            'label' => 'Data creazione',
-            'helper_text' => 'Data di creazione del template',
-        ],
-        'updated_at' => [
-            'label' => 'Ultima modifica',
-            'helper_text' => 'Data dell\'ultima modifica del template',
-        ],
-    ],
-    'actions' => [
-        'preview' => [
-            'label' => 'Anteprima',
-            'tooltip' => 'Visualizza anteprima dell\'email',
-            'success_message' => 'Anteprima generata con successo',
-            'error_message' => 'Errore nella generazione dell\'anteprima',
-        ],
-        'test' => [
-            'label' => 'Invia test',
-            'tooltip' => 'Invia un\'email di test',
-            'success_message' => 'Email di test inviata con successo',
-            'error_message' => 'Errore nell\'invio dell\'email di test',
-        ],
-        'duplicate' => [
-            'label' => 'Duplica',
-            'tooltip' => 'Crea una copia del template',
-            'success_message' => 'Template duplicato con successo',
-            'error_message' => 'Errore nella duplicazione del template',
-        ],
-        'export' => [
-            'label' => 'Esporta',
-            'tooltip' => 'Esporta il template in formato JSON',
-            'success_message' => 'Template esportato con successo',
-            'error_message' => 'Errore nell\'esportazione del template',
-        ],
-        'import' => [
-            'label' => 'Importa',
-            'tooltip' => 'Importa un template da un file JSON',
-            'success_message' => 'Template importato con successo',
-            'error_message' => 'Errore nell\'importazione del template',
-        ],
-    ],
-    'messages' => [
-        'success' => 'Operazione completata con successo',
-        'error' => 'Si è verificato un errore durante l\'operazione',
-        'confirmation' => 'Sei sicuro di voler procedere con questa operazione?',
-        'template_created' => 'Il template email è stato creato con successo',
-        'template_updated' => 'Il template email è stato aggiornato con successo',
-        'template_deleted' => 'Il template email è stato eliminato con successo',
-    ],
-    'status' => [
-        'sent' => 'Inviata',
-        'delivered' => 'Consegnata',
-        'failed' => 'Fallita',
-        'opened' => 'Aperta',
-        'clicked' => 'Cliccata',
-        'bounced' => 'Respinta',
-        'spam' => 'Segnalata come spam',
-    ],
-];
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
->>>>>>> aurmich/dev

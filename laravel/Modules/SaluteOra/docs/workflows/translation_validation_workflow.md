@@ -7,14 +7,7 @@ Usa `/translation-validate` in Windsurf Cascade per eseguire validazione complet
 
 ### 1. Controllo Sintassi Array
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
 # DEVE restituire 0 risultati
 echo "🔍 Controllo sintassi array breve..."
 array_violations=$(grep -r "array(" Modules/*/lang/ --include="*.php" | wc -l)
@@ -44,14 +37,7 @@ fi
 ### 3. Controllo Struttura Espansa
 ```bash
 echo "🔍 Controllo struttura espansa..."
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
 # Cerca pattern di stringhe semplici invece di struttura espansa
 simple_strings=$(grep -r "'[a-zA-Z_]\+' => '[^']\+'" Modules/*/lang/ --include="*.php" | grep -v "options\|'it'" | wc -l)
 if [ $simple_strings -gt 0 ]; then
@@ -63,14 +49,7 @@ fi
 ### 4. Controllo Traduzioni Semantiche
 ```bash
 echo "🔍 Controllo traduzioni semantiche..."
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
 # Controllo per chiavi non tradotte (inglese in italiano)
 english_labels=$(grep -r "'label' => '[a-z_]\+'" Modules/*/lang/it/ --include="*.php" | wc -l)
 if [ $english_labels -gt 0 ]; then
@@ -85,14 +64,7 @@ fi
 ### 5. Controllo Campi Anagrafici Standard
 ```bash
 echo "🔍 Controllo campi anagrafici standard..."
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
 # Controllo traduzioni corrette per campi comuni
 check_field() {
     field_key="$1"
@@ -169,14 +141,7 @@ echo "📊 Generando report finale..."
 report_file="translation_validation_report_$(date +%Y%m%d_%H%M%S).md"
 
 cat > "$report_file" << EOF
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
 # Translation Validation Report
 **Data**: $(date)
 **Modulo**: SaluteOra
@@ -210,14 +175,7 @@ echo "📄 Report salvato in: $report_file"
 ### Pre-commit Hook
 ```bash
 #!/bin/bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
 # File: .git/hooks/pre-commit
 
 echo "🔍 Validazione traduzioni pre-commit..."
@@ -284,10 +242,3 @@ jobs:
 **QUESTO WORKFLOW È PARTE INTEGRANTE DELLA QUALITÀ LARAXOT**
 
 *Creato in risposta a: violazione sintassi array in patient.php*  
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-*Obiettivo: MAI PIÙ errori di sintassi array nei file di traduzione* 
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev

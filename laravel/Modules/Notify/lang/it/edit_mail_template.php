@@ -7,10 +7,6 @@ return array (
     array (
       'label' => 'delete',
     ),
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     'cancel' => 
     array (
       'label' => 'cancel',
@@ -23,10 +19,5 @@ return array (
     array (
       'label' => 'activeLocale',
     ),
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
   ),
 );

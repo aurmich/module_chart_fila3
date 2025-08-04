@@ -78,17 +78,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 👤 Author
 Marco Sottana
 Discover more of my work at marco76tv!
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 ### Versione HEAD
 
 
@@ -124,25 +114,7 @@ Il modulo UI fornisce un set completo di componenti di interfaccia utente riutil
 - ✅ Componenti Filament
 - ✅ Widgets dashboard
 - ✅ Form personalizzati
-<<<<<<< HEAD
 - ✅ InlineDatePicker con date selettive
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-- ✅ InlineDatePicker con date selettive
-=======
->>>>>>> aurmich/dev
-=======
-- ✅ InlineDatePicker con date selettive
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
-=======
->>>>>>> 54f4fa16 (.)
-=======
-- ✅ InlineDatePicker con date selettive
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
->>>>>>> aurmich/dev
 - ✅ Stili CSS moderni
 
 ### 🚀 Installazione
@@ -171,25 +143,7 @@ The UI module provides a complete set of reusable user interface components for 
 - ✅ Filament components
 - ✅ Dashboard widgets
 - ✅ Custom forms
-<<<<<<< HEAD
 - ✅ InlineDatePicker with selective dates
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-- ✅ InlineDatePicker with selective dates
-=======
->>>>>>> aurmich/dev
-=======
-- ✅ InlineDatePicker with selective dates
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
-=======
->>>>>>> 54f4fa16 (.)
-=======
-- ✅ InlineDatePicker with selective dates
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
->>>>>>> aurmich/dev
 - ✅ Modern CSS styles
 
 ### 🚀 Installation
@@ -218,25 +172,7 @@ El módulo UI proporciona un conjunto completo de componentes de interfaz de usu
 - ✅ Componentes Filament
 - ✅ Widgets de dashboard
 - ✅ Formularios personalizados
-<<<<<<< HEAD
 - ✅ InlineDatePicker con fechas selectivas
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-- ✅ InlineDatePicker con fechas selectivas
-=======
->>>>>>> aurmich/dev
-=======
-- ✅ InlineDatePicker con fechas selectivas
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
-=======
->>>>>>> 54f4fa16 (.)
-=======
-- ✅ InlineDatePicker con fechas selectivas
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
->>>>>>> aurmich/dev
 - ✅ Estilos CSS modernos
 
 ### 🚀 Instalación

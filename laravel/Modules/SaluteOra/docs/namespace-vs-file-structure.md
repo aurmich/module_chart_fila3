@@ -157,13 +157,6 @@ Class "Modules\SaluteOra\app\Providers\SaluteOraServiceProvider" not found
 **Consulta anche:**
 - [MIGLIORAMENTI_E_CORREZIONI.md](./MIGLIORAMENTI_E_CORREZIONI.md)
 - [naming-conventions.md](./naming-conventions.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
->>>>>>> aurmich/dev
 
 ## Errori Comuni e Come Evitarli
 
@@ -210,25 +203,10 @@ Prima di creare nuovi file o spostare file esistenti:
 Per verificare la struttura corretta:
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
->>>>>>> aurmich/dev
 # Verifica la struttura delle directory
 find laravel/Modules/SaluteOra -type f -name "*.php" | grep -v "app/"
 
 # Verifica i namespace
 grep -r "namespace Modules\\SaluteOra\\app" laravel/Modules/SaluteOra
 ```
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
->>>>>>> aurmich/dev

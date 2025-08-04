@@ -10,19 +10,7 @@ return array (
       'tooltip' => 'Usa un indirizzo email valido',
       'icon' => 'heroicon-o-mail',
       'description' => 'email',
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-      'helper_text' => '',
-=======
-      'helper_text' => 'email',
->>>>>>> 54f4fa16 (.)
-=======
-      'helper_text' => '',
->>>>>>> a0e35b8d (helper text on login)
->>>>>>> aurmich/dev
     ),
     'password' => 
     array (
@@ -31,30 +19,13 @@ return array (
       'tooltip' => 'La password deve contenere almeno 8 caratteri',
       'icon' => 'heroicon-o-lock-closed',
       'description' => 'password',
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-      'helper_text' => '',
-=======
-      'helper_text' => 'password',
->>>>>>> 54f4fa16 (.)
-=======
-      'helper_text' => '',
->>>>>>> a0e35b8d (helper text on login)
->>>>>>> aurmich/dev
     ),
     'remember' => 
     array (
       'label' => 'Ricordami',
       'tooltip' => 'Mantieni l\'accesso attivo su questo dispositivo',
       'description' => 'remember',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
       'helper_text' => '',
       'placeholder' => 'remember',
     ),
@@ -498,17 +469,6 @@ return array (
       'helper_text' => 'responses_exists',
       'placeholder' => 'responses_exists',
     ),
-<<<<<<< HEAD
-=======
-=======
-      'helper_text' => 'remember',
-=======
-      'helper_text' => '',
->>>>>>> a0e35b8d (helper text on login)
-      'placeholder' => 'remember',
-    ),
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
   ),
   'actions' => 
   array (
@@ -526,21 +486,10 @@ return array (
       'icon' => 'heroicon-o-key',
       'color' => 'success',
     ),
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> fb6fbaa2 (move resources/lang to lang)
->>>>>>> aurmich/dev
     'request' => 
     array (
       'label' => 'request',
     ),
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     'cancel' => 
     array (
       'label' => 'cancel',
@@ -565,12 +514,5 @@ return array (
     array (
       'label' => 'createAnother',
     ),
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> fb6fbaa2 (move resources/lang to lang)
->>>>>>> aurmich/dev
   ),
 );

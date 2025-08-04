@@ -63,33 +63,11 @@ final class SmsActionFactory
         $driver = $driver ?? Config::get('sms.default', 'netfun');
 
         // Normalizza il nome del driver e assicura formato camelCase
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
         $normalizedDriver = $this->normalizeDriverName(is_string($driver) ? $driver : '');
 
         // Avvisa per driver non standard
         if (!in_array($normalizedDriver, $this->supportedDrivers)) {
             Log::warning("Attempting to use non-standard SMS driver: " . (is_string($driver) ? $driver : ''));
-<<<<<<< HEAD
-=======
-=======
-        $normalizedDriver = $this->normalizeDriverName($driver);
-
-        // Avvisa per driver non standard
-        if (!in_array($normalizedDriver, $this->supportedDrivers)) {
-            Log::warning("Attempting to use non-standard SMS driver: {$driver}");
->>>>>>> 54f4fa16 (.)
-=======
-        $normalizedDriver = $this->normalizeDriverName((string) $driver);
-
-        // Avvisa per driver non standard
-        if (!in_array($normalizedDriver, $this->supportedDrivers)) {
-            Log::warning("Attempting to use non-standard SMS driver: " . (string) $driver);
->>>>>>> 345f8677 (phpstan)
->>>>>>> aurmich/dev
         }
 
         // Costruisci il nome della classe seguendo la convenzione
@@ -103,19 +81,7 @@ final class SmsActionFactory
                 'className' => $className
             ]);
 
-<<<<<<< HEAD
             throw new Exception("Unsupported SMS driver: " . (is_string($driver) ? $driver : '') . ". Class {$className} not found.");
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            throw new Exception("Unsupported SMS driver: " . (is_string($driver) ? $driver : '') . ". Class {$className} not found.");
-=======
-            throw new Exception("Unsupported SMS driver: {$driver}. Class {$className} not found.");
->>>>>>> 54f4fa16 (.)
-=======
-            throw new Exception("Unsupported SMS driver: " . (string) $driver . ". Class {$className} not found.");
->>>>>>> 345f8677 (phpstan)
->>>>>>> aurmich/dev
         }
 
         $instance = app($className);

@@ -6,19 +6,7 @@ namespace Modules\SaluteOra\Models;
 
 /**
  * PatientIsee Model - wrapper per Isee con mapping campi specifici pazienti.
-<<<<<<< HEAD
  *
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
- *
-=======
- * 
->>>>>>> 8e4d163b (phpstan)
-=======
- *
->>>>>>> f3e4ec66 (.)
->>>>>>> aurmich/dev
  * @property int $id
  * @property int $patient_id
  * @property float|null $value
@@ -28,13 +16,6 @@ namespace Modules\SaluteOra\Models;
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
  * @property-read Patient $patient
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f3e4ec66 (.)
->>>>>>> aurmich/dev
  * @property-read \Modules\SaluteOra\Models\Profile|null $creator
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
@@ -47,19 +28,8 @@ namespace Modules\SaluteOra\Models;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PatientIsee tenant(?int $tenantId = null)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PatientIsee withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PatientIsee withoutTrashed()
-<<<<<<< HEAD
  * @method static \Modules\SaluteOra\Database\Factories\PatientIseeFactory factory($count = null, $state = [])
  * @mixin \Eloquent
-=======
-<<<<<<< HEAD
- * @method static \Modules\SaluteOra\Database\Factories\PatientIseeFactory factory($count = null, $state = [])
- * @mixin \Eloquent
-=======
->>>>>>> 8e4d163b (phpstan)
-=======
- * @mixin \Eloquent
->>>>>>> f3e4ec66 (.)
->>>>>>> aurmich/dev
  */
 class PatientIsee extends Isee
 {

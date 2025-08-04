@@ -186,14 +186,7 @@ protected static ?string $label = 'Dottore';
 - [Filament Resources (Xot)](../../Xot/docs/filament-resources.md)
 - [Documentazione Principale](../../docs/INDEX.md)
 - [Standard di Codice](../../docs/standards/coding-standards.md) 
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 ## Collegamenti tra versioni di filament-resources.md
 * [filament-resources.md](../../../../docs/tecnico/filament/filament-resources.md)
 * [filament-resources.md](../../../../docs/regole/filament-resources.md)

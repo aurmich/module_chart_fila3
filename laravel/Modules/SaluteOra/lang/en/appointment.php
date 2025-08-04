@@ -1,53 +1,20 @@
 <?php
 
-<<<<<<< HEAD
 return [
     'name' => 'Appointments',
-=======
-<<<<<<< HEAD
-return [
-    'name' => 'Appointments',
-=======
-declare(strict_types=1);
-
-return [
-    'name' => 'Appointments',
-    
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
     'navigation' => [
         'label' => 'Appointment Calendar',
         'group' => 'Schedule',
         'icon' => 'heroicon-o-calendar-days',
         'color' => 'sky',
-<<<<<<< HEAD
         'sort' => '1',
         'tooltip' => 'View and manage all appointments and visits',
     ],
-=======
-<<<<<<< HEAD
-        'sort' => '1',
-        'tooltip' => 'View and manage all appointments and visits',
-    ],
-=======
-        'sort' => 1,
-        'tooltip' => 'View and manage all appointments and visits',
-    ],
-
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
     'model' => [
         'label' => 'Appointment',
         'plural' => 'Appointments',
         'description' => 'Management of medical appointments and visits',
     ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
     'pages' => [
         'index' => [
             'title' => 'Appointments',
@@ -71,10 +38,6 @@ return [
             'description' => 'Create availability slots to allow patients to book appointments and manage existing appointments.',
         ],
     ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     'fields' => [
         'patient_id' => [
             'label' => 'Patient',
@@ -92,53 +55,17 @@ return [
             'label' => 'Studio',
             'placeholder' => 'Select the studio',
             'help' => 'Studio where the appointment will take place',
-<<<<<<< HEAD
-=======
-=======
-
-    'fields' => [
-        'title' => [
-            'label' => 'Title',
-            'placeholder' => 'Enter a title for the appointment',
-            'help' => 'Brief description of the appointment',
-            'helper_text' => '',
-        ],
-        'patient_id' => [
-            'label' => 'Patient',
-            'placeholder' => 'Select the patient',
-<<<<<<< HEAD
->>>>>>> 8d591468 (fields translations)
-=======
-            'help' => 'Patient for whom the appointment is scheduled',
->>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
->>>>>>> aurmich/dev
             'helper_text' => '',
         ],
         'doctor_id' => [
             'label' => 'Doctor',
             'placeholder' => 'Select the doctor',
-<<<<<<< HEAD
             'help' => 'Doctor who will hold the appointment',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'help' => 'Doctor who will hold the appointment',
-=======
->>>>>>> 8d591468 (fields translations)
-=======
-            'help' => 'Doctor who will hold the appointment',
->>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
->>>>>>> aurmich/dev
             'helper_text' => '',
         ],
         'dentist_id' => [
             'label' => 'Dentist',
             'placeholder' => 'Select the dentist',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
             'help' => 'Dentist responsible for the treatment',
             'helper_text' => '',
         ],
@@ -152,69 +79,18 @@ return [
             'label' => 'End Date and Time',
             'placeholder' => 'Select end date and time',
             'help' => 'When the appointment ends',
-<<<<<<< HEAD
-=======
-=======
-=======
-            'help' => 'Dentist responsible for the treatment',
->>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
-            'helper_text' => '',
-        ],
-        'studio_id' => [
-            'label' => 'Studio',
-            'placeholder' => 'Select the studio',
-            'help' => 'Studio where the appointment will take place',
-            'helper_text' => '',
-        ],
-        'start_time' => [
-            'label' => 'Start Time',
-            'placeholder' => 'Select the start time',
-            'help' => 'When the appointment starts',
-            'helper_text' => '',
-        ],
-        'end_time' => [
-            'label' => 'End Time',
-            'placeholder' => 'Select the end time',
-<<<<<<< HEAD
->>>>>>> 8d591468 (fields translations)
-=======
-            'help' => 'When the appointment ends',
->>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
->>>>>>> aurmich/dev
             'helper_text' => '',
         ],
         'treatment_id' => [
             'label' => 'Treatment',
             'placeholder' => 'Select a treatment',
-<<<<<<< HEAD
             'help' => 'The type of treatment planned',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'help' => 'The type of treatment planned',
-=======
->>>>>>> 8d591468 (fields translations)
-=======
-            'help' => 'The type of treatment planned',
->>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
->>>>>>> aurmich/dev
             'helper_text' => '',
         ],
         'status' => [
             'label' => 'Status',
             'placeholder' => 'Select the status',
-<<<<<<< HEAD
             'help' => 'Current status of the appointment',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'help' => 'Current status of the appointment',
-=======
->>>>>>> 8d591468 (fields translations)
-=======
-            'help' => 'Current status of the appointment',
->>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
->>>>>>> aurmich/dev
             'helper_text' => '',
             'options' => [
                 'scheduled' => 'Scheduled',
@@ -227,18 +103,7 @@ return [
         'type' => [
             'label' => 'Appointment Type',
             'placeholder' => 'Select the type',
-<<<<<<< HEAD
             'help' => 'Type of medical appointment',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'help' => 'Type of medical appointment',
-=======
->>>>>>> 8d591468 (fields translations)
-=======
-            'help' => 'Type of medical appointment',
->>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
->>>>>>> aurmich/dev
             'helper_text' => '',
             'options' => [
                 'consultation' => 'Consultation',
@@ -251,95 +116,34 @@ return [
         'notes' => [
             'label' => 'Notes',
             'placeholder' => 'Enter any notes',
-<<<<<<< HEAD
             'help' => 'Additional information about the appointment',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'help' => 'Additional information about the appointment',
-=======
->>>>>>> 8d591468 (fields translations)
-=======
-            'help' => 'Additional information about the appointment',
->>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
->>>>>>> aurmich/dev
             'helper_text' => '',
         ],
         'reason' => [
             'label' => 'Reason',
             'placeholder' => 'Enter the reason for the appointment',
-<<<<<<< HEAD
             'help' => 'Main reason for the visit',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'help' => 'Main reason for the visit',
-=======
->>>>>>> 8d591468 (fields translations)
-=======
-            'help' => 'Main reason for the visit',
->>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
->>>>>>> aurmich/dev
             'helper_text' => '',
         ],
         'emergency' => [
             'label' => 'Emergency',
             'placeholder' => 'Indicate if this is an emergency',
-<<<<<<< HEAD
             'help' => 'Mark as emergency appointment',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'help' => 'Mark as emergency appointment',
-=======
->>>>>>> 8d591468 (fields translations)
-=======
-            'help' => 'Mark as emergency appointment',
->>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
->>>>>>> aurmich/dev
             'helper_text' => '',
         ],
         'eligibility_confirmed' => [
             'label' => 'Eligibility Confirmed',
             'placeholder' => 'Confirm eligibility',
-<<<<<<< HEAD
             'help' => 'Confirm that the patient is eligible for treatment',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'help' => 'Confirm that the patient is eligible for treatment',
-=======
->>>>>>> 8d591468 (fields translations)
-=======
-            'help' => 'Confirm that the patient is eligible for treatment',
->>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
->>>>>>> aurmich/dev
             'helper_text' => '',
         ],
         'created_at' => [
             'label' => 'Creation Date',
             'placeholder' => 'Appointment creation date',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
             'help' => 'When the appointment was created',
             'helper_text' => '',
         ],
     ],
-<<<<<<< HEAD
-=======
-=======
-=======
-            'help' => 'When the appointment was created',
->>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
-            'helper_text' => '',
-        ],
-    ],
-
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
     'actions' => [
         'create' => [
             'label' => 'New Appointment',
@@ -410,13 +214,6 @@ return [
             'modal_description' => 'Explanation of colors and symbols used',
         ],
     ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
     'filters' => [
         'today' => [
             'label' => 'Today',
@@ -433,61 +230,22 @@ return [
         'by_status' => [
             'label' => 'By Status',
             'placeholder' => 'Filter by status',
-<<<<<<< HEAD
             'help' => 'Filter appointments by status',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'help' => 'Filter appointments by status',
-=======
->>>>>>> 8d591468 (fields translations)
-=======
-            'help' => 'Filter appointments by status',
->>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
->>>>>>> aurmich/dev
             'helper_text' => '',
         ],
         'by_doctor' => [
             'label' => 'By Doctor',
             'placeholder' => 'Select a doctor',
-<<<<<<< HEAD
             'help' => 'Filter by specific doctor',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'help' => 'Filter by specific doctor',
-=======
->>>>>>> 8d591468 (fields translations)
-=======
-            'help' => 'Filter by specific doctor',
->>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
->>>>>>> aurmich/dev
             'helper_text' => '',
         ],
         'by_date_range' => [
             'label' => 'By Date Range',
             'placeholder' => 'Select the range',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
             'help' => 'Filter by specific date period',
             'helper_text' => '',
         ],
     ],
-<<<<<<< HEAD
-=======
-=======
-=======
-            'help' => 'Filter by specific date period',
->>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
-            'helper_text' => '',
-        ],
-    ],
-
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
     'calendar' => [
         'title' => 'Appointment Calendar',
         'today' => 'Today',
@@ -501,13 +259,6 @@ return [
         'week_view' => 'Week View',
         'month_view' => 'Month View',
     ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
     'availability' => [
         'title' => 'Availability',
         'add' => 'Add Availability',
@@ -517,13 +268,6 @@ return [
         'update_success' => 'Availability updated successfully',
         'delete_success' => 'Availability deleted successfully',
     ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
     'legend' => [
         'description' => 'Legend of colors and icons used in the calendar.',
         'types' => 'Event Types',
@@ -544,13 +288,6 @@ return [
         'instruction_delete' => 'In the edit options, click \'Delete\' to remove an availability or unconfirmed appointment.',
         'instruction_approve' => 'To approve an appointment, change status from \'Pending\' to \'Confirmed\'.',
     ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
     'notifications' => [
         'reminder' => [
             'title' => 'Appointment Reminder',
@@ -565,13 +302,6 @@ return [
             'body' => 'Your appointment with :doctor for :date has been cancelled',
         ],
     ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
     'messages' => [
         'created' => 'Appointment created successfully',
         'updated' => 'Appointment updated successfully',
@@ -589,13 +319,6 @@ return [
         'availability_deleted' => 'Availability deleted successfully',
         'appointment_updated' => 'Appointment updated successfully',
     ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
     'validation' => [
         'required' => 'The :attribute field is required',
         'date' => 'The :attribute field must be a valid date',
@@ -605,23 +328,11 @@ return [
         'past_appointment' => 'Cannot create appointments in the past',
         'doctor_unavailable' => 'The doctor is not available at the selected time',
     ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
     'empty_state' => [
         'heading' => 'No appointments found',
         'description' => 'There are no appointments for the selected criteria',
         'action' => 'Create the first appointment',
     ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     'states' => [
         'confirmed' => [
             'label' => 'Confirm',
@@ -760,27 +471,4 @@ return [
             'modal_description' => 'This appointment was provided as a free service.',
         ],
     ],
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 8d591468 (fields translations)
-=======
-    'states' => [
-        'confirmed' => [
-            'label' => 'Confirm',
-            'color' => 'success',
-            'icon' => 'heroicon-o-check-circle',
-            'modal_heading' => 'Accept appointment',
-            'modal_description' => 'Are you sure you want to accept this appointment?',
-        ],
-        'rejected' => [
-            'label' => 'Reject',
-            'color' => 'danger',
-            'icon' => 'heroicon-o-x-mark',
-            'modal_heading' => 'Reject appointment',
-            'modal_description' => 'Are you sure you want to reject this appointment?',
-        ],
-    ],
->>>>>>> 49a567a1 (✨ (appointment.php): add new appointment states for confirmed and rejected to enhance user experience and provide clear actions)
->>>>>>> aurmich/dev
 ];

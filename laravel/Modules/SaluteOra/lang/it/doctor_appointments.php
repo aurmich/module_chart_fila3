@@ -1,101 +1,39 @@
 <?php
 
-<<<<<<< HEAD
 return array (
   'title' => 'Appuntamenti Dottore',
   'description' => 'Gestione appuntamenti per i dottori',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-return array (
-<<<<<<< HEAD
-  'title' => 'Appuntamenti Dottore',
-  'description' => 'Gestione appuntamenti per i dottori',
-=======
->>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
-=======
-return array (
-  'title' => 'Appuntamenti Dottore',
-  'description' => 'Gestione degli appuntamenti per i dottori',
->>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)
->>>>>>> aurmich/dev
   'actions' => 
   array (
     'delete' => 
     array (
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
       'label' => 'Elimina',
       'tooltip' => 'Elimina questo appuntamento',
       'confirmation' => 'Sei sicuro di voler eliminare questo appuntamento?',
       'success' => 'Appuntamento eliminato con successo',
       'error' => 'Errore durante l\'eliminazione dell\'appuntamento',
-<<<<<<< HEAD
-=======
-=======
-      'label' => 'Elimina',
-      'tooltip' => 'Elimina questo appuntamento',
-      'confirmation' => 'Sei sicuro di voler eliminare questo appuntamento?',
->>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)
->>>>>>> aurmich/dev
     ),
     'accept' => 
     array (
       'label' => 'Accetta',
       'tooltip' => 'Accetta questo appuntamento',
       'confirmation' => 'Sei sicuro di voler accettare questo appuntamento?',
-<<<<<<< HEAD
       'success' => 'Appuntamento accettato con successo',
       'error' => 'Errore durante l\'accettazione dell\'appuntamento',
-=======
-<<<<<<< HEAD
-      'success' => 'Appuntamento accettato con successo',
-      'error' => 'Errore durante l\'accettazione dell\'appuntamento',
-=======
->>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)
->>>>>>> aurmich/dev
     ),
     'confirm' => 
     array (
       'label' => 'Conferma',
       'tooltip' => 'Conferma questo appuntamento',
       'confirmation' => 'Sei sicuro di voler confermare questo appuntamento?',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
       'success' => 'Appuntamento confermato con successo',
       'error' => 'Errore durante la conferma dell\'appuntamento',
     ),
     'reject' => 
-<<<<<<< HEAD
-=======
-=======
-    ),
-    'confirmed' => 
-    array (
-      'label' => 'Confermato',
-      'tooltip' => 'Appuntamento confermato',
-    ),
-    'confirmAction' => 
-    array (
-      'label' => 'Azione Conferma',
-      'tooltip' => 'Esegui azione di conferma',
-    ),
-    'rejectAction' => 
->>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)
->>>>>>> aurmich/dev
     array (
       'label' => 'Rifiuta',
       'tooltip' => 'Rifiuta questo appuntamento',
       'confirmation' => 'Sei sicuro di voler rifiutare questo appuntamento?',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
       'success' => 'Appuntamento rifiutato con successo',
       'error' => 'Errore durante il rifiuto dell\'appuntamento',
     ),
@@ -218,16 +156,6 @@ return array (
     'transition' => 
     array (
       'label' => 'transition',
-<<<<<<< HEAD
-=======
-=======
-    ),
-    'info' => 
-    array (
-      'label' => 'Informazioni',
-      'tooltip' => 'Visualizza informazioni dettagliate',
->>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)
->>>>>>> aurmich/dev
     ),
   ),
   'messages' => 
@@ -236,10 +164,6 @@ return array (
     'appointment_confirmed' => 'Appuntamento confermato con successo',
     'appointment_rejected' => 'Appuntamento rifiutato con successo',
     'appointment_deleted' => 'Appuntamento eliminato con successo',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     'appointment_rescheduled' => 'Appuntamento riprogrammato con successo',
     'appointment_completed' => 'Appuntamento completato con successo',
     'appointment_cancelled' => 'Appuntamento annullato con successo',
@@ -251,24 +175,10 @@ return array (
   'status' => 
   array (
     'pending' => 'In Attesa',
-<<<<<<< HEAD
-=======
-=======
-    'error_occurred' => 'Si è verificato un errore',
-  ),
-  'status' => 
-  array (
-    'pending' => 'In attesa',
->>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)
->>>>>>> aurmich/dev
     'confirmed' => 'Confermato',
     'rejected' => 'Rifiutato',
     'completed' => 'Completato',
     'cancelled' => 'Annullato',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     'rescheduled' => 'Riprogrammato',
     'in_progress' => 'In Corso',
   ),
@@ -330,58 +240,11 @@ return array (
       'icon' => 'heroicon-o-play-circle',
       'description' => 'Appuntamento attualmente in corso',
     ),
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)
-  ),
-  'states' => 
-  array (
-    'pending' => 
-    array (
-      'label' => 'In attesa',
-      'color' => 'warning',
-      'bg_color' => '#FEF3C7',
-      'icon' => 'heroicon-o-clock',
-    ),
-    'confirmed' => 
-    array (
-      'label' => 'Confermato',
-      'color' => 'success',
-      'bg_color' => '#D1FAE5',
-      'icon' => 'heroicon-o-check-circle',
-    ),
-    'rejected' => 
-    array (
-      'label' => 'Rifiutato',
-      'color' => 'danger',
-      'bg_color' => '#FEE2E2',
-      'icon' => 'heroicon-o-x-circle',
-    ),
-    'completed' => 
-    array (
-      'label' => 'Completato',
-      'color' => 'success',
-      'bg_color' => '#ECFDF5',
-      'icon' => 'heroicon-o-check-badge',
-    ),
-    'cancelled' => 
-    array (
-      'label' => 'Annullato',
-      'color' => 'gray',
-      'bg_color' => '#F3F4F6',
-      'icon' => 'heroicon-o-no-symbol',
-    ),
->>>>>>> aurmich/dev
   ),
   'fields' => 
   array (
     'message' => 
     array (
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
       'label' => 'Messaggio',
       'placeholder' => 'Inserisci un messaggio per il paziente',
       'helper_text' => 'Il messaggio verrà inviato al paziente',
@@ -446,115 +309,6 @@ return array (
     array (
       'label' => 'Paziente',
       'placeholder' => 'Filtra per paziente',
-<<<<<<< HEAD
     ),
   ),
 );
-=======
-=======
-      'label' => 'delete',
-    ),
-    'accept' => 
-    array (
-      'label' => 'accept',
-    ),
-    'confirmed' => 
-    array (
-      'label' => 'confirmed',
-    ),
-    'confirm' => 
-    array (
-      'label' => 'confirm',
-    ),
-    'confirmAction' => 
-    array (
-      'label' => 'confirmAction',
-    ),
-    'Confirmed' => 
-    array (
-      'label' => 'Confirmed',
-    ),
-    'rejectAction' => 
-    array (
-      'label' => 'rejectAction',
->>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
-    ),
-    'info' => 
-    array (
-      'label' => 'info',
-    ),
-    'info' => 
-    array (
-      'label' => 'info',
-    ),
-  ),
-);
-=======
-declare(strict_types=1);
-
-return [
-    'title' => 'Appuntamenti Dottore',
-    'description' => 'Gestione degli appuntamenti per i dottori',
-    
-    'actions' => [
-        'delete' => [
-            'label' => 'Elimina',
-            'tooltip' => 'Elimina questo appuntamento',
-            'confirmation' => 'Sei sicuro di voler eliminare questo appuntamento?',
-        ],
-        'accept' => [
-            'label' => 'Accetta',
-            'tooltip' => 'Accetta questo appuntamento',
-            'confirmation' => 'Sei sicuro di voler accettare questo appuntamento?',
-        ],
-        'confirm' => [
-            'label' => 'Conferma',
-            'tooltip' => 'Conferma questo appuntamento',
-            'confirmation' => 'Sei sicuro di voler confermare questo appuntamento?',
-        ],
-        'confirmed' => [
-            'label' => 'Confermato',
-            'tooltip' => 'Appuntamento confermato',
-        ],
-        'confirmAction' => [
-            'label' => 'Azione Conferma',
-            'tooltip' => 'Esegui azione di conferma',
-        ],
-        'rejectAction' => [
-            'label' => 'Rifiuta',
-            'tooltip' => 'Rifiuta questo appuntamento',
-            'confirmation' => 'Sei sicuro di voler rifiutare questo appuntamento?',
-        ],
-        'info' => [
-            'label' => 'Informazioni',
-            'tooltip' => 'Visualizza informazioni dettagliate',
-        ],
-    ],
-    
-    'messages' => [
-        'appointment_accepted' => 'Appuntamento accettato con successo',
-        'appointment_confirmed' => 'Appuntamento confermato con successo',
-        'appointment_rejected' => 'Appuntamento rifiutato con successo',
-        'appointment_deleted' => 'Appuntamento eliminato con successo',
-        'error_occurred' => 'Si è verificato un errore',
-    ],
-    
-    'status' => [
-        'pending' => 'In attesa',
-        'confirmed' => 'Confermato',
-        'rejected' => 'Rifiutato',
-        'completed' => 'Completato',
-        'cancelled' => 'Annullato',
-    ],
-];
->>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
-=======
-      'description' => 'Messaggio',
-      'helper_text' => '',
-      'placeholder' => '',
-      'label' => 'Messaggio',
-    ),
-  ),
-);
->>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)
->>>>>>> aurmich/dev

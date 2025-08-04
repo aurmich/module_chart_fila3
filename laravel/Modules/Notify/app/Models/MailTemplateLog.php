@@ -7,48 +7,19 @@ namespace Modules\Notify\Models;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 
-<<<<<<< HEAD
 /**
  * @property-read \Modules\User\Models\Profile|null $creator
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-/**
- * @property-read \Modules\User\Models\Profile|null $creator
-=======
-/**
- * 
- *
- * @property-read \Modules\SaluteOra\Models\Profile|null $creator
->>>>>>> f3e4ec66 (.)
->>>>>>> aurmich/dev
  * @property-read \Illuminate\Database\Eloquent\Model|\Eloquent $mailable
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
  * @property-read \Modules\Notify\Models\MailTemplate|null $template
-<<<<<<< HEAD
  * @property-read \Modules\User\Models\Profile|null $updater
-=======
-<<<<<<< HEAD
- * @property-read \Modules\User\Models\Profile|null $updater
-=======
- * @property-read \Modules\SaluteOra\Models\Profile|null $updater
->>>>>>> f3e4ec66 (.)
->>>>>>> aurmich/dev
  * @method static \Modules\Notify\Database\Factories\MailTemplateLogFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MailTemplateLog newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MailTemplateLog newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MailTemplateLog query()
  * @mixin \Eloquent
  */
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> f3e4ec66 (.)
->>>>>>> aurmich/dev
 class MailTemplateLog extends BaseModel
 {
     protected $fillable = [
@@ -66,10 +37,6 @@ class MailTemplateLog extends BaseModel
         'clicked_at',
     ];
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     /**
      * Get the attributes that should be cast.
      *
@@ -87,20 +54,6 @@ class MailTemplateLog extends BaseModel
             'clicked_at' => 'datetime',
         ];
     }
-<<<<<<< HEAD
-=======
-=======
-    protected $casts = [
-        'data' => 'array',
-        'metadata' => 'array',
-        'sent_at' => 'datetime',
-        'delivered_at' => 'datetime',
-        'failed_at' => 'datetime',
-        'opened_at' => 'datetime',
-        'clicked_at' => 'datetime',
-    ];
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 
     public function template(): BelongsTo
     {

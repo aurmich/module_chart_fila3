@@ -4,31 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Filament\Resources\StudioResource\Pages;
 
-<<<<<<< HEAD
 use Filament\Tables;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Filament\Tables;
-=======
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
-=======
-use Filament\Tables;
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
 use Modules\SaluteOra\Filament\Resources\StudioResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListStudios extends XotBaseListRecords
 {
     protected static string $resource = StudioResource::class;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
 
     /**
      * Get the table columns.
@@ -40,26 +22,9 @@ class ListStudios extends XotBaseListRecords
         return [
             'id' => Tables\Columns\TextColumn::make('id')
                 ->sortable(),
-<<<<<<< HEAD
             'active' => Tables\Columns\IconColumn::make('active')
                 ->boolean(),
             'full_address' => Tables\Columns\TextColumn::make('full_address')
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'active' => Tables\Columns\IconColumn::make('active')
-                ->boolean(),
-            'full_address' => Tables\Columns\TextColumn::make('full_address')
-=======
-            'active' => Tables\Columns\IconColumn::make('active')
-                ->boolean(),
-<<<<<<< HEAD
-            'full_address' => Tables\Columns\TextColumn::make('address')
->>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
-=======
-            'full_address' => Tables\Columns\TextColumn::make('full_address')
->>>>>>> 23f43388 (feat: add openingHoursField to studiorelationmanager of doctorresource)
->>>>>>> aurmich/dev
                 ->searchable()
                 ->default(function($record){
                     $address = $record?->address()->first();
@@ -72,14 +37,6 @@ class ListStudios extends XotBaseListRecords
                     }
                     return $address->street_address.' '.$address->street_number.' '.implode('',$locality['cap']).' '.$locality['nome'].' ('.$locality['provincia']['nome'].') - '.$locality['regione']['nome'];
                 }),
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 2bcfd382 (fix Address)
-=======
->>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
->>>>>>> aurmich/dev
                 
             'name' => Tables\Columns\TextColumn::make('name')
                 ->searchable()
@@ -97,36 +54,9 @@ class ListStudios extends XotBaseListRecords
                 
             'vat_number' => Tables\Columns\TextColumn::make('vat_number'),
                 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
             
             
             
         ];
     }
 }
-<<<<<<< HEAD
-=======
-=======
-}
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
-=======
-            'active' => Tables\Columns\IconColumn::make('active')
-                ->boolean(),
-                
-            'created_at' => Tables\Columns\TextColumn::make('created_at')
-                ->dateTime()
-                ->sortable(),
-=======
-            
-            
-            
->>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
-        ];
-    }
-}
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev

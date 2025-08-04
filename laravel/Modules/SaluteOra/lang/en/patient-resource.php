@@ -1,13 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
 return [
     'steps' => [
         'personal_data_step' => [

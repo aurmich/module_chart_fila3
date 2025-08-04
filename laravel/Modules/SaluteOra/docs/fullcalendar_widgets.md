@@ -65,19 +65,7 @@ namespace Modules\SaluteOra\Filament\Widgets;
 use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
 use Modules\SaluteOra\Models\Appointment;
 use Modules\SaluteOra\Enums\AppointmentStatus;
-<<<<<<< HEAD
 use Modules\SaluteOra\App\Enums\AppointmentType;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Modules\SaluteOra\App\Enums\AppointmentType;
-=======
-use Modules\SaluteOra\Enums\AppointmentType;
->>>>>>> 2099645a (.)
-=======
-use Modules\SaluteOra\App\Enums\AppointmentType;
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
 use Saade\FilamentFullCalendar\Data\EventData;
 use Filament\Forms;
 
@@ -769,28 +757,12 @@ I widget FullCalendar per SaluteOra forniscono una base solida per la gestione d
 - [Integrazione FullCalendar](fullcalendar_integration.md)
 - [Documentazione FullCalendar](https://fullcalendar.io/docs)
 - [Plugin Saade](https://filamentphp.com/plugins/saade-fullcalendar)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
 - [Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 
 > **Nota di prevenzione:**
 > L'enum AppointmentType deve essere sempre posizionato in `Modules/SaluteOra/app/Enums/AppointmentType.php` e importato con il namespace corretto. Aggiornare sempre la documentazione e i file .mdc windsurf/cursor in caso di modifica del path.
-<<<<<<< HEAD
 
 > **ATTENZIONE:** Tutti i riferimenti a start_time/end_time vanno sostituiti con starts_at/ends_at. Vedi appointment_resource_corrections.md e plan.md per il piano di refactoring.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-> **ATTENZIONE:** Tutti i riferimenti a start_time/end_time vanno sostituiti con starts_at/ends_at. Vedi appointment_resource_corrections.md e plan.md per il piano di refactoring.
-=======
->>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
->>>>>>> aurmich/dev
 
 ## [AGGIORNAMENTO 2024-06-XX] - Disponibilità solo su appointments
 
@@ -816,13 +788,6 @@ I widget FullCalendar per SaluteOra forniscono una base solida per la gestione d
 - [appointment-management.md](appointment-management.md)
 - [calendar/doctor-availability-management.md](calendar/doctor-availability-management.md)
 - [fullcalendar_parental_widgets.md](fullcalendar_parental_widgets.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> e10587e5 (📝 (docs): consolidate FullCalendar documentation into fewer files for clarity and maintainability)
->>>>>>> aurmich/dev
 
 ## Collegamenti
 
@@ -831,16 +796,3 @@ I widget FullCalendar per SaluteOra forniscono una base solida per la gestione d
 - [Stub: fullcalendar-implementation.md](./fullcalendar-implementation.md)
 - [Stub: fullcalendar-correct-implementation.md](./fullcalendar-correct-implementation.md)
 - [Stub: fullcalendar-implementation-guide.md](./fullcalendar-implementation-guide.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets) 
->>>>>>> 2099645a (.)
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
-=======
->>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
-=======
->>>>>>> e10587e5 (📝 (docs): consolidate FullCalendar documentation into fewer files for clarity and maintainability)
->>>>>>> aurmich/dev

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 # Modulo SaluteOra
 
 Modulo specializzato per la gestione di studi medici e appuntamenti sanitari.
@@ -25,19 +20,7 @@ Modulo principale per la gestione del sistema sanitario, inclusa la gestione di 
 
 ### Gestione Studi Medici
 - Creazione e gestione degli studi
-<<<<<<< HEAD
 - Gestione indirizzi multipli con componente AddressesField riutilizzabile
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Gestione indirizzi multipli con componente AddressesField riutilizzabile
-=======
-- Gestione indirizzi multipli con logica intelligente
->>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
-=======
-- Gestione indirizzi multipli con componente AddressesField riutilizzabile
->>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
->>>>>>> aurmich/dev
 - Specializzazioni mediche
 - Orari di apertura configurabili
 
@@ -53,13 +36,6 @@ Modulo principale per la gestione del sistema sanitario, inclusa la gestione di 
 - Disponibilità medici
 - Calendario delle visite
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
->>>>>>> aurmich/dev
 ## Componenti Riutilizzabili
 
 ### AddressesField - Gestione DRY degli Indirizzi
@@ -83,26 +59,9 @@ Il modulo utilizza il componente riutilizzabile `AddressesField` del modulo Geo 
 
 **Documentazione**: [AddressesField Documentation](../Geo/docs/components/addresses-field.md)
 
-<<<<<<< HEAD
 ## Implementazioni UX Avanzate
 
 ### Campi Condizionali Intelligenti (OpeningHoursField)
-=======
-<<<<<<< HEAD
-## Implementazioni UX Avanzate
-
-### Campi Condizionali Intelligenti (OpeningHoursField)
-=======
-## Implementazioni UX Avanzate
-
-### Campi Condizionali Intelligenti (StudioResource)
->>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
-=======
-## Implementazioni UX Avanzate
-
-### Campi Condizionali Intelligenti (OpeningHoursField)
->>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
->>>>>>> aurmich/dev
 
 Il modulo implementa un pattern UX avanzato per i repeater con campi condizionali e logica di esclusività.
 
@@ -278,139 +237,6 @@ SaluteOra/
 - [Linee Guida API](docs/api-guidelines.md)
 - [Convenzioni di Testing](docs/testing-conventions.md)
 - [Deployment](docs/deployment.md)
-<<<<<<< HEAD
-=======
-=======
-# Modulo Patient
-=======
-# Modulo SaluteOra
->>>>>>> 2099645a (.)
-
-## Descrizione
-Modulo principale per la gestione del sistema sanitario, inclusa la gestione di appuntamenti, pazienti, medici e risorse correlate.
-
-## Documentazione
-
-### Struttura e Convenzioni
-- [Struttura Directory](docs/directory-structure.md) - Standard e convenzioni per l'organizzazione del codice
-- [Autenticazione & Autorizzazione](docs/authentication-authorization.md) - Gestione ruoli e permessi
-- [Convenzione per le icone SVG](docs/ICON_CONVENTION.md) - Linee guida per l'utilizzo e la creazione di icone SVG
-- [Gestione degli Stati](docs/STATE_MANAGEMENT.md) - Guida all'utilizzo di spatie/laravel-model-states
-
-### Funzionalità Principali
-- [Calendario Appuntamenti](docs/calendar/README.md) - Gestione completa del calendario
-- [Gestione Pazienti](docs/patient-management.md) - Anagrafica e cartelle cliniche
-- [Gestione Medici](docs/doctor-management.md) - Profili e disponibilità
-
-## Struttura del Modulo (PSR-4)
-
-```
-SaluteOra/
-├── app/                    # Codice sorgente PHP (PSR-4)
-│   ├── Actions/           # Classi per azioni specifiche
-│   │   └── Calendar/      # Azioni relative al calendario
-│   ├── Enums/             # Enumerazioni PHP
-│   ├── Http/
-│   │   ├── Controllers/  # Controller
-│   │   ├── Livewire/      # Componenti Livewire
-│   │   └── Middleware/    # Middleware HTTP
-│   ├── Models/            # Modelli Eloquent
-│   ├── Policies/          # Policy di autorizzazione
-│   └── Services/          # Servizi di business logic
-├── config/                # File di configurazione
-├── database/
-│   ├── factories/       # Factory per i test
-│   ├── migrations/        # Migrazioni del database
-│   └── seeders/          # Seeder per dati iniziali
-├── docs/                  # Documentazione
-├── lang/                  # File di traduzione
-├── resources/
-│   ├── css/             # Fogli di stile
-│   ├── js/               # Script JavaScript
-│   └── views/            # Viste Blade
-└── routes/                # Definizioni delle rotte
-```
-
-## Installazione e Configurazione
-
-1. **Requisiti**
-   - PHP 8.2+
-   - Laravel 10.0+
-   - Spatie Laravel Permission
-   - Spatie Laravel Model States
-
-2. **Installazione**
-   ```bash
-   # Installare le dipendenze
-   composer require spatie/laravel-permission
-   
-   # Pubblicare le migrazioni e i file di configurazione
-   php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
-   
-   # Eseguire le migrazioni
-   php artisan migrate
-   ```
-
-3. **Configurazione**
-   - Verificare che il provider del modulo sia registrato in `config/app.php`
-   - Configurare i percorsi di autenticazione in `config/auth.php`
-
-## Best Practices
-
-### Convenzioni di Codice
-1. **Naming**
-   - Classi: `PascalCase`
-   - Metodi e proprietà: `camelCase`
-   - File di migrazione: `YYYY_MM_DD_HHMMSS_descriptive_name.php`
-   - Viste: `kebab-case`
-
-2. **Struttura del Codice**
-   - Mantenere i controller snelli
-   - Utilizzare le Action classes per la logica di business
-   - Implementare le interfacce per i servizi principali
-   - Utilizzare i DTO per il passaggio dei dati tra i layer
-
-<<<<<<< HEAD
-3. **Gestione dei File**
-   - Utilizzare il sistema di storage configurato
->>>>>>> 54f4fa16 (.)
-=======
-3. **Sicurezza**
-   - Validare sempre l'input
-   - Utilizzare le policy per l'autorizzazione
-   - Implementare rate limiting per le API
-   - Utilizzare HTTPS in produzione
-
-### Performance
-- Utilizzare eager loading per le relazioni
-- Implementare la cache per i dati frequentemente letti
-- Utilizzare le code per le operazioni pesanti
-- Monitorare le query SQL
-
-## Sviluppo
-
-### Strumenti Consigliati
-- PHPStan per l'analisi statica del codice
-- PHP_CodeSniffer per lo stile del codice
-- PHPUnit per i test
-- Laravel Telescope per il debug
-
-### Workflow di Sviluppo
-1. Creare un nuovo branch per ogni funzionalità
-2. Scrivere i test prima dell'implementazione (TDD)
-3. Eseguire i test localmente
-4. Creare una pull request
-5. Eseguire il codice review
-6. Eseguire il merge solo dopo l'approvazione
-
-## Documentazione Aggiuntiva
-
-- [Guida allo Sviluppo](docs/development-guide.md)
-- [Linee Guida API](docs/api-guidelines.md)
-- [Convenzioni di Testing](docs/testing-conventions.md)
-- [Deployment](docs/deployment.md)
->>>>>>> 2099645a (.)
->>>>>>> aurmich/dev
    - Implementare la validazione dei file
    - Gestire correttamente i permessi
 
@@ -539,22 +365,7 @@ Se il modulo viene installato come package, assicurati che il ServiceProvider si
 **Riferimenti:**
 - [Documentazione Laravel Blade Components](https://laravel.com/docs/12.x/blade#manually-registering-components)
 - [Esempio di registrazione namespace Blade](https://laravel.com/docs/12.x/blade#registering-package-components)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
->>>>>>> aurmich/dev
 
 ---
 
 *Ultimo aggiornamento: Dicembre 2024*
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
->>>>>>> aurmich/dev

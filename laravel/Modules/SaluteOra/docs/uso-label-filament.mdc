@@ -91,13 +91,6 @@ class User extends Model {
 - [.windsurf/rules/model-states.mdc](../../../.windsurf/rules/model-states.mdc)
 - [Xot/docs/struttura-path-moduli.mdc](../../Xot/docs/struttura-path-moduli.mdc)
 - https://github.com/spatie/laravel-model-states
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> bac26886 (delete replicate folder)
->>>>>>> aurmich/dev
 
 ---
 
@@ -136,11 +129,3 @@ class User extends Model {
 - [.windsurf/rules/model-states.mdc](../../../.windsurf/rules/model-states.mdc)
 - [Xot/docs/struttura-path-moduli.mdc](../../Xot/docs/struttura-path-moduli.mdc)
 - https://github.com/spatie/laravel-model-states
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
->>>>>>> bac26886 (delete replicate folder)
->>>>>>> aurmich/dev

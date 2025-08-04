@@ -25,32 +25,6 @@ class IconMediaColumn extends IconColumn
         parent::setUp();
         $attachment=$this->getName();
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
-        $this->default(fn($record)=>$record->getFirstMedia($attachment))
-=======
-        $this->default(
-            fn($record)=>$record->getFirstMedia($attachment))
->>>>>>> fb6fbaa2 (move resources/lang to lang)
-                ->icon('heroicon-o-document-text')
-                ->color(fn ($record) => $record->getFirstMedia($attachment) ? 'success' : 'danger')
-                ->tooltip(fn ($record) => $record->getFirstMedia($attachment)->file_name ?? 'Documento non caricato')
-
-                ->action(function ($record) use ($attachment) {
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 6901e2e (.)
->>>>>>> b58de900 (.)
->>>>>>> aurmich/dev
         $this->default(
             fn($record)=>$record->getFirstMedia($attachment))
                 ->icon('heroicon-o-document-text')
@@ -59,70 +33,21 @@ class IconMediaColumn extends IconColumn
 
                 ->action(function ($record,\Illuminate\Http\Request $request) use ($attachment) {
                     // @phpstan-ignore method.nonObject
-<<<<<<< HEAD
-=======
-=======
-        $this->default(fn($record)=>$record->getFirstMedia($attachment))
-=======
-        $this->default(
-            fn($record)=>$record->getFirstMedia($attachment))
->>>>>>> 8e4d163b (phpstan)
-                ->icon('heroicon-o-document-text')
-                ->color(fn ($record) => $record->getFirstMedia($attachment) ? 'success' : 'danger')
-                ->tooltip(fn ($record) => $record->getFirstMedia($attachment)->file_name ?? 'Documento non caricato')
-
-                ->action(function ($record) use ($attachment) {
-<<<<<<< HEAD
->>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
-=======
-                    // @phpstan-ignore-next-line
-<<<<<<< HEAD
->>>>>>> 8e4d163b (phpstan)
-=======
-<<<<<<< HEAD
->>>>>>> 41bb1cf (.)
-=======
->>>>>>> 6901e2e (.)
->>>>>>> b58de900 (.)
-=======
-                    // @phpstan-ignore-next-line
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
                     $media = $record->getFirstMedia($attachment);
                     if (!$media) {
                         return;
                     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
                     return $media->toInlineResponse($request);
                     //return $media->toResponse($request);
 
                     //return Storage::disk($media->disk)->download($media->getPathRelativeToRoot());
                     //return Storage::disk($media->disk)
                     //    ->temporaryUploadUrl($media->getPathRelativeToRoot(),now()->addMinutes(5));
-<<<<<<< HEAD
-=======
-=======
-                    return Storage::disk($media->disk)->download($media->getPathRelativeToRoot());
-<<<<<<< HEAD
->>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
-=======
-                    //return Storage::disk($media->disk)
-                    //    ->temporaryUploadUrl($media->getPathRelativeToRoot(),now()->addMinutes(5));
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
 
                     //return response()->streamDownload(function () use ($media) {
                     //    echo $media->get();
                     //}, $media->file_name);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
                     /*
                     $headers=[
                         'Content-Type' => $media->mime_type,
@@ -134,25 +59,6 @@ class IconMediaColumn extends IconColumn
                     /*
                     return Storage::disk($media->disk)->response($media->getPathRelativeToRoot(), null, $headers);
                     */
-<<<<<<< HEAD
-=======
-=======
-
->>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
-=======
-                    /*
-                    $headers=[
-                        'Content-Type' => $media->mime_type,
-                        'Content-Disposition' => 'inline; filename="' . basename($media->getPathRelativeToRoot()) . '"'
-                    ];
-                    $path = Storage::disk($media->disk)->path($media->getPathRelativeToRoot());
-                    return response()->file($path, $headers);
-                    */
-                    /*
-                    return Storage::disk($media->disk)->response($media->getPathRelativeToRoot(), null, $headers);
-                    */
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
                 })
                 ;
 

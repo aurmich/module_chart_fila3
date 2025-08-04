@@ -4,13 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Enums;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
 use Filament\Support\Contracts\HasLabel;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasColor;
@@ -25,15 +18,6 @@ use Filament\Support\Contracts\HasColor;
  * @method static self[] cases()
  */
 enum DayOfWeekEnum: string implements HasLabel, HasIcon, HasColor
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-enum DayOfWeekEnum implements FilamentSupportContractsHasLabel: string
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
-=======
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
 {
     case Monday = 'monday';
     case Tuesday = 'tuesday';
@@ -51,13 +35,6 @@ enum DayOfWeekEnum implements FilamentSupportContractsHasLabel: string
         $prefix = 'saluteora::doctor.fields.day.options';
         return trans("$prefix.{$this->value}");
     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
 
     public function getLabel(): string
     {
@@ -89,14 +66,6 @@ enum DayOfWeekEnum implements FilamentSupportContractsHasLabel: string
             self::Sunday => 'danger',
         };
     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
-=======
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
     
     /**
      * Converte tutti i casi dell'enum in un array associativo per l'uso nei componenti select.
@@ -105,29 +74,11 @@ enum DayOfWeekEnum implements FilamentSupportContractsHasLabel: string
      */
     public static function toArray(): array
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
         $result = [];
         foreach (self::cases() as $case) {
             $result[$case->value] = $case->label();
         }
         return $result;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-        return collect(self::cases())->mapWithKeys(fn ($case) => [
-            $case->value => $case->label()
-        ])->toArray();
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
-=======
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
     }
     
     /**
@@ -172,38 +123,6 @@ enum DayOfWeekEnum implements FilamentSupportContractsHasLabel: string
 }
 
 // Alias per retrocompatibilità
-<<<<<<< HEAD
 //class_alias(DayOfWeekEnum::class, 'Modules\\SaluteOra\\Enums\\DayOfWeek');
 
    
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-//class_alias(DayOfWeekEnum::class, 'Modules\\SaluteOra\\Enums\\DayOfWeek');
-
-   
-=======
-class_alias(DayOfWeekEnum::class, 'Modules\\SaluteOra\\Enums\\DayOfWeek');
-
-    /**
-     * Get the translated label for the enum case.
-     */
-    public function getLabel(): ?string
-    {
-        return match ($this) {
-            self::Monday => __('saluteora::enums.dayofweek.monday'),
-            self::Tuesday => __('saluteora::enums.dayofweek.tuesday'),
-            self::Wednesday => __('saluteora::enums.dayofweek.wednesday'),
-            self::Thursday => __('saluteora::enums.dayofweek.thursday'),
-            self::Friday => __('saluteora::enums.dayofweek.friday'),
-            self::Saturday => __('saluteora::enums.dayofweek.saturday'),
-            self::Sunday => __('saluteora::enums.dayofweek.sunday'),
-        };
-    }
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
-=======
-//class_alias(DayOfWeekEnum::class, 'Modules\\SaluteOra\\Enums\\DayOfWeek');
-
-   
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev

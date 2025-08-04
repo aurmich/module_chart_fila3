@@ -131,13 +131,6 @@ L'implementazione corretta dimostra che:
    - Considerare la validazione
    - Implementare logging
    - Aggiungere monitoraggio 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
->>>>>>> aurmich/dev
 
 ## Visualizzazione Parametri come Badge
 
@@ -188,11 +181,3 @@ L'implementazione corretta dimostra che:
 Input: "name, email, company, date"
 Output: [name] [email] [company] [date] (come badge blu)
 ``` 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 9df8f556 (fix .md)
-=======
->>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
->>>>>>> aurmich/dev

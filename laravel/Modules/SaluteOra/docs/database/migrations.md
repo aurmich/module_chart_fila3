@@ -191,13 +191,6 @@ public function up(): void
 - [Modello Patient](../Models/Patient.md)
 - [Single Table Inheritance](../SINGLE_TABLE_INHERITANCE.md)
 - [Best Practices per l'Ereditarietà](../INHERITANCE_BEST_PRACTICES.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
 
 ## Policy sulle migration XotBaseMigration
 
@@ -236,11 +229,3 @@ $this->tableUpdate(function (Blueprint $table): void {
     $this->updateTimestamps($table, true);
 });
 ```
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev

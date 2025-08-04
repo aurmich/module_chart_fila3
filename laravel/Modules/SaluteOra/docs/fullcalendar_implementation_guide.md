@@ -41,14 +41,7 @@ Questa guida fornisce istruzioni dettagliate per implementare i widget FullCalen
 ### 1. Installazione Dipendenze
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 2099645a (.)
->>>>>>> aurmich/dev
 # Plugin FullCalendar per Filament
 composer require saade/filament-fullcalendar
 
@@ -769,13 +762,6 @@ Questa guida fornisce tutti gli elementi necessari per implementare un sistema c
 - **Localizzazione**: Interfaccia completamente italiana
 
 Il sistema garantisce che ogni tipo di utente veda solo i dati appropriati, mantenendo la sicurezza e la privacy richieste in ambito sanitario. 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
->>>>>>> aurmich/dev
 
 ## Policy di implementazione widget FullCalendar (2024)
 
@@ -804,11 +790,3 @@ protected function getHeaderWidgets(): array {
 
 - Usare FullCalendarWidget::make()->options([...]) // ❌ ERRORE
 - Usare metodi fluenti su FullCalendarWidget // ❌ ERRORE
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 2099645a (.)
-=======
->>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
->>>>>>> aurmich/dev

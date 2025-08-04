@@ -11,14 +11,7 @@ Il sistema utilizza diversi template email per gestire il flusso di registrazion
 
 ```blade
 @component('mail::message')
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Registrazione Approvata
 
 Gentile {{ $doctor->full_name }},
@@ -41,14 +34,7 @@ Cordiali saluti,
 
 ```blade
 @component('mail::message')
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Registrazione Non Approvata
 
 Gentile {{ $doctor->full_name }},
@@ -75,14 +61,7 @@ Cordiali saluti,
 
 ```blade
 @component('mail::message')
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Modifiche Richieste
 
 Gentile {{ $doctor->full_name }},
@@ -210,10 +189,3 @@ class DoctorRegistrationMail implements ShouldQueue
 ## Vedi Anche
 - [Laravel Mail](https://laravel.com/docs/mail)
 - [Markdown Mail](https://laravel.com/docs/mail#markdown-mailables)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Queue Configuration](https://laravel.com/docs/queues) 
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev

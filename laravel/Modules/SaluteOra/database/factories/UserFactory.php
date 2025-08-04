@@ -707,15 +707,7 @@ class UserFactory extends Factory
         $prefixes = ['320', '330', '340', '349', '360', '380', '390', '393', '347', '348'];
         $prefix = $this->faker->randomElement($prefixes);
         $number = (string) $this->faker->numerify('#######');
-<<<<<<< HEAD
         /**@phpstan-ignore binaryOp.invalid */
-=======
-<<<<<<< HEAD
-        /**@phpstan-ignore binaryOp.invalid */
-=======
-        /**@phpstan-ignore-next-line */
->>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
->>>>>>> aurmich/dev
         return '+39 ' . $prefix . ' ' . $number;
     }
 
@@ -757,15 +749,7 @@ class UserFactory extends Factory
         
         // Control character (simplified)
         $control = $this->faker->randomElement(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'X', 'Y', 'Z']);
-<<<<<<< HEAD
         /**@phpstan-ignore binaryOp.invalid, binaryOp.invalid */
-=======
-<<<<<<< HEAD
-        /**@phpstan-ignore binaryOp.invalid, binaryOp.invalid */
-=======
-        /**@phpstan-ignore-next-line */
->>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
->>>>>>> aurmich/dev
         return $surname . $name . $year . $month . $day . $place . $control;
     }
 

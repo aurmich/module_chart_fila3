@@ -3,10 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     'admin' => [
         'label' => 'Administrator',
         'color' => 'danger',
@@ -25,39 +21,14 @@ return [
         'icon' => 'heroicon-o-user',
         'image' => '/img/donna-personaggio.png',
     ],
-<<<<<<< HEAD
-=======
-=======
-    'patient' => 'Patient',
-    'doctor' => 'Doctor',
-    'admin' => 'Administrator',
-    
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
     'descriptions' => [
         'patient' => 'Healthcare service recipient',
         'doctor' => 'Healthcare professional',
         'admin' => 'System administrator',
     ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     'plural' => [
         'patient' => 'Patients',
         'doctor' => 'Doctors',
         'admin' => 'Administrators',
     ],
 ];
-<<<<<<< HEAD
-=======
-=======
-    
-    'plural' => [
-        'patient' => 'Patients',
-        'doctor' => 'Doctors', 
-        'admin' => 'Administrators',
-    ],
-]; 
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev

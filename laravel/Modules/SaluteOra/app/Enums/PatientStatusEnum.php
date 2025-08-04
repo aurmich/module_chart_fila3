@@ -4,13 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Enums;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
 use Filament\Support\Contracts\HasLabel;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasColor;
@@ -25,58 +18,18 @@ use Filament\Support\Contracts\HasColor;
  * @method static self[] cases()
  */
 enum PatientStatusEnum: string implements HasLabel, HasIcon, HasColor
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-enum PatientStatusEnum implements FilamentSupportContractsHasLabel: string
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
-=======
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
 {
     case PENDING = 'pending';
     case APPROVED = 'approved';
     case REJECTED = 'rejected';
-<<<<<<< HEAD
 
 // Alias per retrocompatibilità
 //class_alias(PatientStatusEnum::class, 'Modules\\SaluteOra\\Enums\\PatientStatus');
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-// Alias per retrocompatibilità
-//class_alias(PatientStatusEnum::class, 'Modules\\SaluteOra\\Enums\\PatientStatus');
-=======
-}
-
-// Alias per retrocompatibilità
-class_alias(PatientStatusEnum::class, 'Modules\\SaluteOra\\Enums\\PatientStatus');
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
-=======
-
-// Alias per retrocompatibilità
-//class_alias(PatientStatusEnum::class, 'Modules\\SaluteOra\\Enums\\PatientStatus');
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
 
     /**
      * Get the translated label for the enum case.
      */
-<<<<<<< HEAD
     public function getLabel(): string
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getLabel(): string
-=======
-    public function getLabel(): ?string
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
-=======
-    public function getLabel(): string
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
     {
         return match ($this) {
             self::PENDING => __('saluteora::enums.patientstatus.pending'),
@@ -84,13 +37,6 @@ class_alias(PatientStatusEnum::class, 'Modules\\SaluteOra\\Enums\\PatientStatus'
             self::REJECTED => __('saluteora::enums.patientstatus.rejected'),
         };
     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
 
     public function getIcon(): string
     {
@@ -109,14 +55,4 @@ class_alias(PatientStatusEnum::class, 'Modules\\SaluteOra\\Enums\\PatientStatus'
             self::REJECTED => 'danger',
         };
     }
-<<<<<<< HEAD
 }
-=======
-<<<<<<< HEAD
-}
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
-=======
-}
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev

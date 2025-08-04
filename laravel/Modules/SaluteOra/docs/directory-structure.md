@@ -80,14 +80,7 @@ Modules/
 
 ### Moving Files to Correct Location
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 2099645a (.)
->>>>>>> aurmich/dev
 # For a single file
 mkdir -p Modules/ModuleName/app/$(dirname path/to/file.php)
 mv Modules/ModuleName/path/to/file.php Modules/ModuleName/app/path/to/file.php
@@ -103,28 +96,14 @@ find Modules/ModuleName/app/Actions -type f -name "*.php" -exec sed -i 's/namesp
 
 ### Verifying PSR-4 Compliance
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 2099645a (.)
->>>>>>> aurmich/dev
 # Check for PSR-4 compliance
 composer dump-autoload
 
 # Fix autoloading issues
 composer dump-autoload -o
 ```
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 2099645a (.)
->>>>>>> aurmich/dev
 # For Actions directory
 mkdir -p Modules/SaluteOra/app/Actions/Calendar
 mv Modules/SaluteOra/Actions/Calendar/* Modules/SaluteOra/app/Actions/Calendar/
@@ -164,13 +143,6 @@ Modules/SaluteOra/
 
 - `app/Actions/Calendar/`: Contiene le classi relative alla gestione del calendario
   - `Calendar.php`: Implementazione principale del componente calendario
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> ca5e1eaf (.)
->>>>>>> aurmich/dev
 
 # Regola sui Path dei File di Codice
 
@@ -217,11 +189,3 @@ namespace Modules\SaluteOra\App\Actions\Patient\Calendar;
 ```
 
 Vedi anche: Xot/docs/struttura-path-moduli.mdc
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 2099645a (.)
-=======
->>>>>>> ca5e1eaf (.)
->>>>>>> aurmich/dev

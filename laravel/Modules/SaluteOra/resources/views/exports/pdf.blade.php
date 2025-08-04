@@ -100,19 +100,7 @@
     
     <div class="info">
         <div class="info-item">
-<<<<<<< HEAD
             <span class="info-label">Tipo Referto:</span>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <span class="info-label">Tipo Referto:</span>
-=======
-            <span class="info-label">Tipo Report:</span>
->>>>>>> aurmich/dev
-=======
-            <span class="info-label">Tipo Report:</span>
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
             <span>{{ match($report->type) {
                 'paziente_demografico' => 'Analisi Demografica Pazienti',
                 'visite_per_periodo' => 'Statistiche Visite per Periodo',
@@ -175,19 +163,7 @@
     @endforeach
     
     <div class="footer">
-<<<<<<< HEAD
         <p>Referto generato da: il progetto | © {{ date('Y') }} il progetto. Tutti i diritti riservati.</p>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <p>Referto generato da: il progetto | © {{ date('Y') }} il progetto. Tutti i diritti riservati.</p>
-=======
-        <p>Report generato da: il progetto | © {{ date('Y') }} il progetto. Tutti i diritti riservati.</p>
->>>>>>> aurmich/dev
-=======
-        <p>Report generato da: il progetto | © {{ date('Y') }} il progetto. Tutti i diritti riservati.</p>
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
     </div>
 </body>
 </html>

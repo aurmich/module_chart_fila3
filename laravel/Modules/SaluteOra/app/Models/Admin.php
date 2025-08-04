@@ -9,29 +9,11 @@ use Modules\SaluteOra\Models\User;
 use Parental\HasParent;
 
 /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
  * Class Admin
  * 
  * NOTA: Il trait HasFactory è stato rimosso perché già incluso nella catena di ereditarietà (BaseUser -> User -> Admin).
  * Dichiararlo qui è ridondante e può causare warning o confusione.
  * Vedi docs/DRY-model-traits.md
-<<<<<<< HEAD
-=======
-=======
- * Class Patient
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
- * Class Admin
- * 
- * NOTA: Il trait HasFactory è stato rimosso perché già incluso nella catena di ereditarietà (BaseUser -> User -> Admin).
- * Dichiararlo qui è ridondante e può causare warning o confusione.
- * Vedi docs/DRY-model-traits.md
->>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
->>>>>>> aurmich/dev
  *
  * @property string $id
  * @property string $user_id
@@ -44,13 +26,6 @@ use Parental\HasParent;
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property-read \Modules\SaluteOra\Models\User|null $user
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
->>>>>>> aurmich/dev
  * @method static \Illuminate\Database\Eloquent\Builder|Admin newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Admin newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Admin query()
@@ -64,13 +39,6 @@ use Parental\HasParent;
  * @method static \Illuminate\Database\Eloquent\Builder|Admin whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Admin whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Admin whereUserId($value)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f3e4ec66 (.)
->>>>>>> aurmich/dev
  * @property string|null $name
  * @property string|null $first_name
  * @property string|null $last_name
@@ -106,19 +74,7 @@ use Parental\HasParent;
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Gdpr\Models\Consent> $consents
  * @property-read int|null $consents_count
  * @property-read \Modules\User\Models\Team|null $currentTeam
-<<<<<<< HEAD
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\User> $all_team_users
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\User> $all_team_users
-=======
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Xot\Contracts\UserContract> $all_team_users
->>>>>>> f3e4ec66 (.)
-=======
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\User> $all_team_users
->>>>>>> 13ea6524 (phpstan)
->>>>>>> aurmich/dev
  * @property-read \Modules\User\Models\AuthenticationLog|null $latestAuthentication
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
@@ -179,13 +135,6 @@ use Parental\HasParent;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin withoutRole($roles, $guard = null)
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Device> $devices
  * @property-read int|null $devices_count
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 13ea6524 (phpstan)
->>>>>>> aurmich/dev
  * @property string|null $dental_problems
  * @property string|null $last_dental_visit
  * @property string|null $pregnancy_certificate
@@ -202,10 +151,6 @@ use Parental\HasParent;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereIseeCertificate($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereLastDentalVisit($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin wherePregnancyCertificate($value)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
  * @property string|null $country_code
  * @property string|null $children_count
  * @property string|null $family_members
@@ -226,39 +171,10 @@ use Parental\HasParent;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereLastDentalVisitPeriod($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereNationality($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereYearsInItaly($value)
-<<<<<<< HEAD
-=======
-=======
- * @method static \Illuminate\Database\Eloquent\Builder|Patient newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Patient newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Patient query()
- * @method static \Illuminate\Database\Eloquent\Builder|Patient whereAddress($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Patient whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Patient whereCreatedBy($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Patient whereDateOfBirth($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Patient whereGender($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Patient whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Patient wherePhone($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Patient whereUpdatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Patient whereUpdatedBy($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Patient whereUserId($value)
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
->>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
-=======
->>>>>>> f3e4ec66 (.)
-=======
->>>>>>> 13ea6524 (phpstan)
->>>>>>> aurmich/dev
  * @mixin \Eloquent
  */
 class Admin extends User
 {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     use HasParent;
 
 
@@ -266,25 +182,6 @@ class Admin extends User
      * Gli attributi che sono mass assignable.
      *
      * @var list<string>
-<<<<<<< HEAD
-=======
-=======
-    use HasFactory;
-=======
->>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
-    use HasParent;
-
-
-    /**
-<<<<<<< HEAD
-     * @var array<int, string>
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
-     * Gli attributi che sono mass assignable.
-     *
-     * @var list<string>
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
      */
     protected $fillable = [
         'user_id',
@@ -299,54 +196,13 @@ class Admin extends User
      *
      * @return array<string, string>
      */
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
             //'certifications' => 'array',
             //'availability' => 'array',
         ]);
-<<<<<<< HEAD
     }
 
 
-=======
-<<<<<<< HEAD
-    }
-
-
-=======
-    public function casts(): array
-=======
-    protected function casts(): array
->>>>>>> 2099645a (.)
-    {
-        return [
-            'date_of_birth' => 'date',
-        ];
-=======
->>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
-    }
-
-
-<<<<<<< HEAD
-    /**
-     * Verifica se il paziente ha dati validi per la transizione di stato.
-     *
-     * @return bool
-     */
-    public function hasValidData(): bool
-    {
-        return parent::hasValidData() &&
-            !empty($this->date_of_birth) &&
-            !empty($this->gender);
-    }
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
->>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
->>>>>>> aurmich/dev
 }

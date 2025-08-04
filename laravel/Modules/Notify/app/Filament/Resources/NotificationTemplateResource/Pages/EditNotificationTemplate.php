@@ -11,19 +11,7 @@ use Modules\Notify\Filament\Resources\NotificationTemplateResource;
 class EditNotificationTemplate extends XotBaseEditRecord
 {
     protected static string $resource = NotificationTemplateResource::class;
-<<<<<<< HEAD
     /*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    /*
-=======
-
->>>>>>> 54f4fa16 (.)
-=======
-    /*
->>>>>>> 345f8677 (phpstan)
->>>>>>> aurmich/dev
     protected function getRedirectUrl(): string
     {
         return $this->getResource()::getUrl('index');
@@ -39,19 +27,5 @@ class EditNotificationTemplate extends XotBaseEditRecord
 
         return $data;
     }
-<<<<<<< HEAD
     */
 } 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    */
-} 
-=======
-} 
->>>>>>> 54f4fa16 (.)
-=======
-    */
-} 
->>>>>>> 345f8677 (phpstan)
->>>>>>> aurmich/dev

@@ -9,38 +9,7 @@ use Modules\SaluteOra\States\User\Active;
 use Modules\SaluteOra\States\User\Suspended;
 use Modules\SaluteOra\Models\User;
 
-<<<<<<< HEAD
 class ActiveToSuspended extends BaseTransition
 {
     //---
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-class ActiveToSuspended extends BaseTransition
-{
-    //---
-=======
-class ActiveToSuspended extends Transition
-{
-    public User $user;
-    public ?string $message;
-    public function __construct(User $user, ?string $message='') {
-        $this->user = $user;
-        $this->message = $message;
-    }
-
-    public function handle(): User
-    {
-
-        $this->user->state = new Suspended($this->user);
-        $this->user->save();
-        return $this->user;
-    }
->>>>>>> f4ba6a58 (✨ (User.php): add user state transition classes to manage user state changes)
-=======
-class ActiveToSuspended extends BaseTransition
-{
-    //---
->>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
->>>>>>> aurmich/dev
 }

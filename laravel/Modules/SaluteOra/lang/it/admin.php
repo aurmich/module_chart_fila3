@@ -1,13 +1,6 @@
 <?php
 
 return array (
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
   'model' => 
   array (
     'label' => 'Amministratore',
@@ -306,62 +299,5 @@ return array (
     'validation_errors' => 'Controlla i campi evidenziati e riprova',
     'empty_state' => 'Nessun amministratore registrato nel sistema',
     'search_no_results' => 'Nessun amministratore trovato con i criteri di ricerca specificati',
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 86036e79 (✨ (CreateAdmin, EditAdmin, ListAdmins, CreateDoctor, EditDoctor, ListDoctors, CreatePatient, EditPatient, ListPatients): refactor admin, doctor, and patient resources to extend user resource classes for better code reuse and maintainability)
-  'navigation' => 
-  array (
-    'label' => 'Segreteria',
-    'group' => 'Gestione Utenti',
-    'icon' => 'saluteora-admin',
-    'sort' => 95,
-  ),
-  'fields' => 
-  array (
-    'applyFilters' => 
-    array (
-      'label' => 'applyFilters',
-    ),
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
-    'toggleColumns' => 
-    array (
-      'label' => 'toggleColumns',
-    ),
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
-=======
->>>>>>> 3ad9917a (- fix styles registration)
-    'reorderRecords' => 
-    array (
-      'label' => 'reorderRecords',
-    ),
-<<<<<<< HEAD
->>>>>>> 3ad9917a (- fix styles registration)
-=======
-  'navigation' => 
-=======
-  'navigation' =>
->>>>>>> 2bcfd382 (fix Address)
-  array (
-    'label' => 'Segreteria',
-    'group' => 'Gestione Utenti',
-    'icon' => 'saluteora-admin',
-    'sort' => 95,
->>>>>>> a0fd0fbf (feat(i18n): add Italian language support for admin navigation and user registration)
-=======
->>>>>>> 86036e79 (✨ (CreateAdmin, EditAdmin, ListAdmins, CreateDoctor, EditDoctor, ListDoctors, CreatePatient, EditPatient, ListPatients): refactor admin, doctor, and patient resources to extend user resource classes for better code reuse and maintainability)
-=======
->>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
-=======
->>>>>>> 3ad9917a (- fix styles registration)
->>>>>>> aurmich/dev
   ),
 );

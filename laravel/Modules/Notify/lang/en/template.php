@@ -7,28 +7,14 @@ return [
             'placeholder' => 'Enter template name',
             'help' => 'The identifying name of the template',
             'tooltip' => 'This field is required',
-<<<<<<< HEAD
             'helper_text' => 'Inserisci un nome descrittivo per il template',
-=======
-<<<<<<< HEAD
-            'helper_text' => 'Inserisci un nome descrittivo per il template',
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
         ],
         'subject' => [
             'label' => 'Subject',
             'placeholder' => 'Enter notification subject',
             'help' => 'The subject that will appear in the notification',
             'tooltip' => 'This field is required',
-<<<<<<< HEAD
             'helper_text' => 'Oggetto visualizzato nella notifica (es. oggetto email)',
-=======
-<<<<<<< HEAD
-            'helper_text' => 'Oggetto visualizzato nella notifica (es. oggetto email)',
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
         ],
         'body_text' => [
             'label' => 'Text',
@@ -48,10 +34,6 @@ return [
             'help' => 'The data used to display the preview',
             'tooltip' => 'JSON format',
         ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
         'description' => [
             'label' => 'Descrizione',
             'tooltip' => 'Descrizione del template',
@@ -107,16 +89,6 @@ return [
         'name' => 'Template Notifiche',
         'plural' => 'Template Notifiche',
         'sort' => '48',
-<<<<<<< HEAD
-=======
-=======
-    ],
-    'navigation' => [
-        'label' => 'Notification Templates',
-        'group' => 'Notifications',
-        'icon' => 'heroicon-o-bell',
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
     ],
     'messages' => [
         'success' => [
@@ -128,10 +100,6 @@ return [
             'not_found' => 'Template not found',
             'unauthorized' => 'Unauthorized',
         ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
         'error' => 'Si è verificato un errore durante l\'operazione',
         'confirmation' => 'Sei sicuro di voler procedere con questa operazione?',
         'template_created' => 'Il template è stato creato con successo',
@@ -166,10 +134,3 @@ return [
         ],
     ],
 ];
-<<<<<<< HEAD
-=======
-=======
-    ],
-]; 
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev

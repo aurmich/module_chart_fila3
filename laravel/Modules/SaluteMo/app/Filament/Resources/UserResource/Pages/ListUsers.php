@@ -39,43 +39,14 @@ class ListUsers extends BaseListUsers
         //'state'=>SelectStateColumn::make('state'),
         //'state'=>SelectColumn::make('state')->options(UserStateEnum::class)
         //'state'=>SelectColumn::make('state')->options(UserState::class)
-<<<<<<< HEAD
         'state'=>IconStateColumn::make('state'),
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        'state'=>IconStateColumn::make('state'),
-=======
-        IconStateColumn::make('state'),
->>>>>>> c6edea7c (.)
-=======
-        'state' => IconStateColumn::make('state'),
->>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
-=======
-        IconStateColumn::make('state'),
->>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
-=======
-        'state'=>IconStateColumn::make('state'),
->>>>>>> bfe064b3 (♻️ (DoctorsRelationManager.php, ListUsers.php, BaseListUsers.php): update PHPDoc return types for better type safety and clarity)
->>>>>>> aurmich/dev
 
     ];
    }
 
-<<<<<<< HEAD
     /**
      * @return array<\Filament\Tables\Actions\Action>
      */
-=======
-<<<<<<< HEAD
-    /**
-     * @return array<\Filament\Tables\Actions\Action>
-     */
-=======
->>>>>>> c6edea7c (.)
->>>>>>> aurmich/dev
     public function getTableActions(): array
     {
         return [

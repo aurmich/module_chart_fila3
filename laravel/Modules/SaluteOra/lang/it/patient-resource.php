@@ -25,34 +25,12 @@ return [
         'first_name' => [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome',
-<<<<<<< HEAD
             'help' => 'Inserisci il nome completo',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'help' => 'Inserisci il nome completo',
-=======
->>>>>>> 54f4fa16 (.)
-=======
-            'help' => 'Inserisci il nome completo',
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
         ],
         'last_name' => [
             'label' => 'Cognome',
             'placeholder' => 'Inserisci il cognome',
-<<<<<<< HEAD
             'help' => 'Inserisci il cognome completo',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'help' => 'Inserisci il cognome completo',
-=======
->>>>>>> 54f4fa16 (.)
-=======
-            'help' => 'Inserisci il cognome completo',
->>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
->>>>>>> aurmich/dev
         ],
         'address' => [
             'label' => 'Indirizzo',
@@ -65,34 +43,12 @@ return [
         'phone' => [
             'label' => 'Telefono',
             'placeholder' => 'Inserisci il numero di telefono',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
             'help' => 'Numero di telefono per contatti',
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci l\'email',
             'help' => 'Indirizzo email valido',
-<<<<<<< HEAD
-=======
-=======
-        ],
-        'email' => [
-            'label' => 'Email',
-            'placeholder' => 'Inserisci l\'indirizzo email',
->>>>>>> 54f4fa16 (.)
-=======
-            'help' => 'Numero di telefono per contatti',
-        ],
-        'email' => [
-            'label' => 'Email',
-            'placeholder' => 'Inserisci l\'email',
-            'help' => 'Indirizzo email valido',
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
         ],
         'health_card' => [
             'label' => 'Tessera Sanitaria',
@@ -111,11 +67,6 @@ return [
             'tooltip' => 'Carica il certificato di gravidanza se applicabile',
         ],
         'fiscal_code' => [
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
             'label' => 'Codice fiscale',
             'placeholder' => 'Inserisci il codice fiscale',
             'help' => 'Codice fiscale come da tessera sanitaria',
@@ -124,26 +75,6 @@ return [
             'label' => 'Data di nascita',
             'placeholder' => 'Seleziona la data di nascita',
             'help' => 'Inserisci la data di nascita nel formato gg/mm/aaaa',
-<<<<<<< HEAD
-=======
-=======
-            'label' => 'Codice Fiscale',
-            'placeholder' => 'Inserisci il tuo codice fiscale',
-        ],
-        'birth_date' => [
-            'label' => 'Data di Nascita',
->>>>>>> 54f4fa16 (.)
-=======
-            'label' => 'Codice fiscale',
-            'placeholder' => 'Inserisci il codice fiscale',
-            'help' => 'Codice fiscale come da tessera sanitaria',
-        ],
-        'birth_date' => [
-            'label' => 'Data di nascita',
-            'placeholder' => 'Seleziona la data di nascita',
-            'help' => 'Inserisci la data di nascita nel formato gg/mm/aaaa',
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
         ],
         'last_dental_visit' => [
             'label' => 'Ultima Visita Dentistica',
@@ -161,42 +92,15 @@ return [
             'label' => 'Newsletter',
             'tooltip' => 'Vuoi ricevere aggiornamenti via email?',
         ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
         'gender' => [
             'label' => 'Sesso',
             'placeholder' => 'Seleziona il sesso',
             'help' => 'Seleziona il sesso anagrafico',
         ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
     ],
     'buttons' => [
         'submit' => [
             'label' => 'ACCETTA E CONTINUA',
         ],
     ],
-<<<<<<< HEAD
 ];
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-];
-=======
-]; 
->>>>>>> 54f4fa16 (.)
-=======
-];
->>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
->>>>>>> aurmich/dev

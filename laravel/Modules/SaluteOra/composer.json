@@ -1,65 +1,18 @@
 {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     "name": "saluteora/module",
     "description": "SaluteOra Module",
     "authors": [
         {
             "name": "SaluteOra Team",
             "email": "team@saluteora.com"
-<<<<<<< HEAD
-=======
-=======
-    "name": "exabytesrl/module_saluteora",
-    "description": "",
-    "authors": [
-        {
-            "name": "Marco Sottana",
-            "email": "marco.sottana@gmail.com"
->>>>>>> 54f4fa16 (.)
-=======
-    "name": "saluteora/module",
-    "description": "SaluteOra Module",
-    "authors": [
-        {
-            "name": "SaluteOra Team",
-            "email": "team@saluteora.com"
->>>>>>> ca5e1eaf (.)
->>>>>>> aurmich/dev
         }
     ],
     "extra": {
         "laravel": {
             "providers": [
-<<<<<<< HEAD
                 "Modules\\SaluteOra\\Providers\\SaluteOraServiceProvider",
                 "Modules\\SaluteOra\\Providers\\Filament\\AdminPanelProvider"
             ]
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                "Modules\\SaluteOra\\Providers\\SaluteOraServiceProvider",
-                "Modules\\SaluteOra\\Providers\\Filament\\AdminPanelProvider"
-<<<<<<< HEAD
-            ]
-=======
-            ],
-            "aliases": {
-
-            }
->>>>>>> 54f4fa16 (.)
-=======
-                "Modules\\SaluteOra\\Providers\\SaluteOraServiceProvider"
-=======
-                "Modules\\SaluteOra\\Providers\\SaluteOraServiceProvider",
-                "Modules\\SaluteOra\\Providers\\Filament\\AdminPanelProvider"
->>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
-            ]
->>>>>>> ca5e1eaf (.)
->>>>>>> aurmich/dev
         }
     },
     "autoload": {
@@ -75,38 +28,11 @@
         }
     },
     "require": {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
         "saade/filament-fullcalendar": "^3.2",
         "spatie/laravel-permission": "^6.0",
         "spatie/opening-hours": "^4.2",
         "tapp/filament-country-code-field": "^1.0"
     },
-<<<<<<< HEAD
-=======
-=======
-
-    },
-    "require-dev": {},
->>>>>>> 54f4fa16 (.)
-=======
-        "saade/filament-fullcalendar": "^3.2"
-=======
-        "saade/filament-fullcalendar": "^3.2",
-<<<<<<< HEAD
-        "spatie/laravel-permission": "^6.0"
->>>>>>> 2099645a (.)
-=======
-        "spatie/laravel-permission": "^6.0",
-        "spatie/opening-hours": "^4.2"
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-    },
->>>>>>> 5d95df2f (feat(chart): add autoloading for factories and seeders in composer.json to improve module structure)
->>>>>>> aurmich/dev
     "repositories": [
         {
             "type": "path",

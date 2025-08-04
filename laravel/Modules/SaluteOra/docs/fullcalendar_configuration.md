@@ -408,14 +408,7 @@ trait HasFullCalendarConfig
 ### .env Configuration
 
 ```env
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 2099645a (.)
->>>>>>> aurmich/dev
 # FullCalendar Scheduler License (opzionale)
 FULLCALENDAR_SCHEDULER_LICENSE_KEY=your-license-key-here
 
@@ -517,13 +510,6 @@ Questa architettura garantisce scalabilità, manutenibilità e conformità alle 
 - [Integrazione FullCalendar](fullcalendar_integration.md)
 - [Widget FullCalendar](fullcalendar_widgets.md)
 - [Documentazione FullCalendar](https://fullcalendar.io/docs)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
->>>>>>> aurmich/dev
 - [Laravel Configuration](https://laravel.com/docs/configuration)
 
 ## Policy di implementazione widget FullCalendar (2024)
@@ -553,12 +539,3 @@ protected function getHeaderWidgets(): array {
 
 - Usare FullCalendarWidget::make()->options([...]) // ❌ ERRORE
 - Usare metodi fluenti su FullCalendarWidget // ❌ ERRORE
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Laravel Configuration](https://laravel.com/docs/configuration) 
->>>>>>> 2099645a (.)
-=======
->>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
->>>>>>> aurmich/dev

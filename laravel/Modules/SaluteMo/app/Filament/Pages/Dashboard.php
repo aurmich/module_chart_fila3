@@ -4,11 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\SaluteMo\Filament\Pages;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 use Filament\Forms\Get;
 use Modules\SaluteOra\Models\Admin;
 use Modules\SaluteOra\Models\Doctor;
@@ -27,17 +22,6 @@ use Modules\SaluteMo\Filament\Widgets\AppointmentCreationChartWidget;
 use Modules\SaluteMo\Filament\Widgets\DoctorRegistrationsChartWidget;
 use Modules\SaluteMo\Filament\Widgets\PatientRegistrationsChartWidget;
 use Modules\SaluteOra\States\Appointment\AppointmentState;
-<<<<<<< HEAD
-=======
-=======
-use Filament\Pages\Dashboard as FilamentDashboard;
-=======
-use Modules\Xot\Filament\Pages\XotBaseDashboard;
->>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
-use Illuminate\Contracts\View\View;
-use Modules\SaluteMo\Filament\Widgets\StatsOverview;
->>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
->>>>>>> aurmich/dev
 
 /**
  * Dashboard amministrativa per il modulo SaluteMo.
@@ -47,11 +31,6 @@ use Modules\SaluteMo\Filament\Widgets\StatsOverview;
  *
  * @package Modules\SaluteMo\Filament\Pages
  */
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 class Dashboard extends XotBaseDashboard
 {
     
@@ -66,64 +45,17 @@ class Dashboard extends XotBaseDashboard
                 ->maxDate(now()),
             */
         ];
-<<<<<<< HEAD
     }
 
-=======
-=======
-class Dashboard extends FilamentDashboard
-=======
-class Dashboard extends XotBaseDashboard
->>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
-{
-    protected static ?int $navigationSort = 1;
-
-   
-    public  function getWidgets(): array{
-        return [];
-    }
-<<<<<<< HEAD
-
-    /**
-     * Restituisce la descrizione della dashboard.
-     *
-     * @return string|null
-     */
-    public function getDescription(): ?string
-    {
-        return __('salutemo::dashboard.description');
->>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
-    }
-
-=======
->>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
->>>>>>> aurmich/dev
     /**
      * Widget da visualizzare nell'header della dashboard.
      *
      * @return array<class-string>
      */
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     public function getHeaderWidgets(): array
     {
         return [
            
-<<<<<<< HEAD
-=======
-=======
-    protected function getHeaderWidgets(): array
-    {
-        return [
-<<<<<<< HEAD
-            StatsOverview::class,
->>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
-=======
-            //StatsOverview::class,
->>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
->>>>>>> aurmich/dev
         ];
     }
 
@@ -132,10 +64,6 @@ class Dashboard extends XotBaseDashboard
      *
      * @return array<class-string>
      */
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     public function getFooterWidgets(): array
     {
         /**@phpstan-ignore-next-line */
@@ -176,13 +104,5 @@ class Dashboard extends XotBaseDashboard
         return [
             // Widget generali della dashboard
         ];
-<<<<<<< HEAD
-=======
-=======
-    protected function getFooterWidgets(): array
-    {
-        return [];
->>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
->>>>>>> aurmich/dev
     }
 }

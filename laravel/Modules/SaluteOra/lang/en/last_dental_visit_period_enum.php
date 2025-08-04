@@ -1,13 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
 return [
     'less_than_6_months' => 'Less than 6 months ago',
     '6_months_to_1_year' => '6 months to 1 year ago',
@@ -16,13 +8,6 @@ return [
     'more_than_5_years' => 'More than 5 years ago',
     'never' => 'Never had a dental visit',
     'dont_remember' => 'I don\'t remember',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-    
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
     'descriptions' => [
         'less_than_6_months' => 'Recent dental care',
         '6_months_to_1_year' => 'Regular maintenance period',
@@ -32,25 +17,11 @@ return [
         'never' => 'First-time dental patient',
         'dont_remember' => 'Uncertain about timing',
     ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-    
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
     'labels' => [
         'question' => 'When was your last dental visit?',
         'help_text' => 'Select the time period that best matches your last professional dental appointment',
         'note' => 'This information helps us understand your dental care history',
     ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-    
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
     'recommendations' => [
         'less_than_6_months' => 'Excellent! You\'re maintaining regular dental care.',
         '6_months_to_1_year' => 'Good timing for your next checkup.',
@@ -60,10 +31,6 @@ return [
         'never' => 'Welcome! We\'ll provide a comprehensive first examination.',
         'dont_remember' => 'We\'ll help assess your current dental health needs.',
     ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     'within_1_year' => [
         'label' => 'Within 1 year',
         'color' => 'success',
@@ -101,9 +68,3 @@ return [
         'description' => 'First visit',
     ],
 ];
-<<<<<<< HEAD
-=======
-=======
-]; 
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev

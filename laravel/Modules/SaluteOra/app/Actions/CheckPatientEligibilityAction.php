@@ -88,22 +88,8 @@ class CheckPatientEligibilityAction
         }
 
         // Verifica se il valore ISEE è inferiore alla soglia
-<<<<<<< HEAD
         // Usa isee_value invece di value per compatibilità con il mapping del modello
         $iseeValue = $latestIsee->isee_value;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        // Usa isee_value invece di value per compatibilità con il mapping del modello
-        $iseeValue = $latestIsee->isee_value;
-=======
-        $iseeValue = $latestIsee->value;
->>>>>>> 54f4fa16 (.)
-=======
-        // Usa isee_value invece di value per compatibilità con il mapping del modello
-        $iseeValue = $latestIsee->isee_value;
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
         $isValid = $iseeValue <= self::MAX_ISEE_VALUE;
 
         return [
@@ -134,19 +120,7 @@ class CheckPatientEligibilityAction
         }
 
         if (!$iseeVerification['valid']) {
-<<<<<<< HEAD
             return (string)($iseeVerification['reason'] ?? 'ISEE non valido per l\'accesso al programma.');
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            return (string)($iseeVerification['reason'] ?? 'ISEE non valido per l\'accesso al programma.');
-=======
-            return $iseeVerification['reason'] ?? 'ISEE non valido per l\'accesso al programma.';
->>>>>>> 54f4fa16 (.)
-=======
-            return (string)($iseeVerification['reason'] ?? 'ISEE non valido per l\'accesso al programma.');
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
         }
 
         return null;

@@ -43,14 +43,7 @@ composer require laravel-notification-channels/twilio
 ```
 
 ```dotenv
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev
 # .env
 TWILIO_ACCOUNT_SID=AC123...
 TWILIO_AUTH_TOKEN=abc123...
@@ -109,14 +102,7 @@ composer require laravel-notification-channels/vonage
 ```
 
 ```dotenv
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev
 # .env
 VONAGE_KEY=abcd1234
 VONAGE_SECRET=xyz789...
@@ -209,14 +195,7 @@ class PlivoChannel
 ```
 
 ```dotenv
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev
 # .env
 PLIVO_AUTH_ID=MAXXXXXXXXXXXXXXXXXX
 PLIVO_AUTH_TOKEN=ZmIwZTcyZWVkY2UXXXXXXXXXXXXXXXXX

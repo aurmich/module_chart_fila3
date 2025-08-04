@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
->>>>>>> aurmich/dev
 # Patient Media Library Fix - Riferimenti Rapidi
 
 ## 🚨 Errore Critico Attivo
@@ -61,14 +54,7 @@ foreach(Patient::$attachments as $attachment) {
 ## Test di Verifica
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
->>>>>>> aurmich/dev
 # Test registrazione paziente
 php artisan test --filter=PatientRegistrationTest
 
@@ -88,13 +74,3 @@ php artisan test --filter=MediaLibraryTest
 **Status**: 🚨 BLOCCA REGISTRAZIONE PAZIENTI  
 **Priorità**: MASSIMA  
 **Tempo stimato fix**: 2-4 ore  
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
- 
->>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
-=======
-**Ultimo aggiornamento**: 26 Giugno 2025 
->>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
->>>>>>> aurmich/dev

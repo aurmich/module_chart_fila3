@@ -128,18 +128,6 @@
 
 - [Regole di struttura moduli](../../Xot/docs/MODULE_NAMESPACE_RULES.md)
 - [Best practice traduzioni](../../Xot/docs/TRANSLATIONS-BEST-PRACTICES.md)
-<<<<<<< HEAD
 - [Regole Filament](../../Xot/docs/filament-best-practices.md)
 - [Regole migrazioni](../../Xot/docs/MIGRATION_RULES.md)
 - [Regole test](../../Xot/docs/testing_best_practices.md)
-=======
-<<<<<<< HEAD
-- [Regole Filament](../../Xot/docs/filament-best-practices.md)
-- [Regole migrazioni](../../Xot/docs/MIGRATION_RULES.md)
-- [Regole test](../../Xot/docs/testing_best_practices.md)
-=======
-- [Regole Filament](../../Xot/docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole migrazioni](../../Xot/docs/MIGRATION_RULES.md)
-- [Regole test](../../Xot/docs/TESTING_BEST_PRACTICES.md)
->>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
->>>>>>> aurmich/dev

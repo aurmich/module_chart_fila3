@@ -6,26 +6,12 @@ use Filament\Forms;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Modules\SaluteOra\Models\User;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 use Modules\SaluteOra\Models\Admin;
 use Filament\Forms\Components\Select;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Modules\SaluteOra\Enums\UserTypeEnum;
-<<<<<<< HEAD
-=======
-=======
-use Filament\Forms\Components\Select;
-use Modules\SaluteOra\Enums\UserTypeEnum;
-use Filament\Tables\Actions\EditAction;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Filters\SelectFilter;
->>>>>>> 7440f060 (delete duplicate folder + add .md)
->>>>>>> aurmich/dev
 use Modules\SaluteOra\Enums\UserStateEnum;
 use Filament\Tables\Actions\BulkActionGroup;
 use Filament\Tables\Actions\DeleteBulkAction;
@@ -35,15 +21,7 @@ use Modules\SaluteOra\Filament\Resources\AdminResource\Pages;
 
 class AdminResource extends XotBaseResource
 {
-<<<<<<< HEAD
     protected static ?string $model = Admin::class;
-=======
-<<<<<<< HEAD
-    protected static ?string $model = Admin::class;
-=======
-    protected static ?string $model = User::class;
->>>>>>> 7440f060 (delete duplicate folder + add .md)
->>>>>>> aurmich/dev
 
     public static function getFormSchema(): array
     {
@@ -57,29 +35,10 @@ class AdminResource extends XotBaseResource
                 ->maxLength(255)
                 ->unique(ignoreRecord: true),
             Forms\Components\Select::make('type')
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
                 ->options(UserTypeEnum::class)
                 ->enum(UserTypeEnum::class)
                 ->required()
                 ->default(UserTypeEnum::ADMIN),
-<<<<<<< HEAD
-=======
-=======
-                ->options(UserType::class)
-                ->required()
-                ->default(UserType::ADMIN),
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
-                ->options(UserTypeEnum::class)
-                ->enum(UserTypeEnum::class)
-                ->required()
-                ->default(UserTypeEnum::ADMIN),
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
             SelectState::make('state'),
         ];
     }
@@ -113,19 +72,7 @@ class AdminResource extends XotBaseResource
             ])
             ->filters([
                 SelectFilter::make('type')
-<<<<<<< HEAD
                     ->options(UserTypeEnum::class),
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    ->options(UserTypeEnum::class),
-=======
-                    ->options(UserType::class),
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
-                    ->options(UserTypeEnum::class),
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
                 SelectFilter::make('state')
                     ->options(UserStateEnum::class),
             ])

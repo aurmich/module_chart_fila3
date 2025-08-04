@@ -4,22 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Models;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
->>>>>>> aurmich/dev
 use Carbon\Carbon;
 use Spatie\Activitylog\LogOptions;
 use Modules\User\Models\BaseTenant;
 use Spatie\OpeningHours\OpeningHours;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 use Filament\Models\Contracts\HasName;
 use Modules\SaluteOra\Models\BaseModel;
 use Modules\User\Models\Traits\IsTenant;
@@ -34,54 +22,6 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 /**
  * Studio model for the SaluteOra module.
-<<<<<<< HEAD
-=======
-=======
-=======
-use Spatie\Activitylog\LogOptions;
-use Modules\User\Models\BaseTenant;
->>>>>>> 2bcfd382 (fix Address)
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-use Filament\Models\Contracts\HasName;
-use Modules\SaluteOra\Models\BaseModel;
-use Modules\User\Models\Traits\IsTenant;
-use Modules\Xot\Models\Traits\RelationX;
-use Illuminate\Database\Eloquent\Builder;
-use Modules\Geo\Models\Traits\HasAddress;
-use Modules\User\Contracts\TenantContract;
-use Spatie\Activitylog\Traits\LogsActivity;
-use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-
-/**
-<<<<<<< HEAD
- * Modello Studio per il sistema multi-tenant.
- *
- * Rappresenta uno studio medico/dentistico che può avere
- * più dottori e gestire appuntamenti.
->>>>>>> 2099645a (.)
- *
- * @property int $id
- * @property string $name
-<<<<<<< HEAD
- * @property string|null $address
-<<<<<<< HEAD
- * @property string|null $phone
- * @property string|null $email
- * @property string|null $slug
-=======
- * @property string|null $city
- * @property string|null $postal_code
-=======
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
- * @property string|null $phone
- * @property string|null $email
->>>>>>> 2099645a (.)
-=======
- * Studio model for the SaluteOra module.
->>>>>>> aurmich/dev
  *
  * @property int $id
  * @property string $name
@@ -89,10 +29,6 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @property string|null $phone
  * @property string|null $email
  * @property string|null $slug
-<<<<<<< HEAD
-=======
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
  * @property string|null $website
  * @property string|null $registration_number
  * @property string|null $vat_number
@@ -100,11 +36,6 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @property array|null $opening_hours
  * @property array|null $services
  * @property bool $active
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
  * @property bool $is_active
  * @property int $owner_id
  * @property \Carbon\Carbon $created_at
@@ -158,13 +89,6 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Studio whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Studio whereVatNumber($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Studio whereWebsite($value)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 13ea6524 (phpstan)
->>>>>>> aurmich/dev
  * @property string|null $city
  * @property string|null $postal_code
  * @property string|null $province
@@ -198,75 +122,14 @@ class Studio extends BaseTenant
 
    /** @var string */
    protected $connection = 'salute_ora';
-<<<<<<< HEAD
-=======
-=======
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
-=======
- * @property \Carbon\Carbon $created_at
- * @property \Carbon\Carbon $updated_at
->>>>>>> 8e4d163b (phpstan)
- * @property \Illuminate\Support\Carbon|null $deleted_at
- * @property-read \Illuminate\Database\Eloquent\Collection<int, Doctor> $doctors
- * @property-read \Illuminate\Database\Eloquent\Collection<int, Appointment> $appointments
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Geo\Models\Address> $addresses
-=======
- * @mixin \Eloquent
->>>>>>> f3e4ec66 (.)
- */
-class Studio extends BaseTenant
-{
-    use LogsActivity;
-    use HasAddress;
-    
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-    /** @var string */
-    protected $connection = 'mysql';
->>>>>>> 2099645a (.)
-=======
-    // La connessione è già definita in BaseModel come 'salute_ora'
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
-=======
-   /** @var string */
-   protected $connection = 'salute_ora';
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
 
     /** @var string */
     protected $table = 'studios';
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> a3174e5b (phpstan)
->>>>>>> aurmich/dev
     /** @var list<string> */
     protected $fillable = [
         'name',
         'slug',
-<<<<<<< HEAD
-=======
-=======
-    /** @var array<string> */
-    protected $fillable = [
-        'name',
-<<<<<<< HEAD
-<<<<<<< HEAD
-        'address',
-        'city',
-        'postal_code',
->>>>>>> 2099645a (.)
-=======
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
-=======
-        'slug',
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
         'phone',
         'email',
         'website',
@@ -278,26 +141,11 @@ class Studio extends BaseTenant
         'active',
     ];
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
->>>>>>> aurmich/dev
      /** @var list<string> */
      protected $with = [
         'address',
      ];
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 2099645a (.)
-=======
->>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
->>>>>>> aurmich/dev
     /** @return array<string, string> */
     protected function casts(): array
     {
@@ -308,44 +156,14 @@ class Studio extends BaseTenant
         ];
     }
 
-<<<<<<< HEAD
     /*
      * Implementazione del contratto HasName per Filament tenancy.
     
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    /*
-     * Implementazione del contratto HasName per Filament tenancy.
-    
-=======
-    /**
-     * Implementazione del contratto HasName per Filament tenancy.
-     */
->>>>>>> 2099645a (.)
-=======
-    /*
-     * Implementazione del contratto HasName per Filament tenancy.
-    
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
     public function getFilamentName(): string
     {
         return $this->name;
     }
-<<<<<<< HEAD
     */
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    */
-=======
-
->>>>>>> 2099645a (.)
-=======
-    */
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
     /**
      * Configurazione per il logging delle attività.
      */
@@ -354,17 +172,6 @@ class Studio extends BaseTenant
         return LogOptions::defaults()
             ->logOnly([
                 'name',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-                'address',
-                'city',
->>>>>>> 2099645a (.)
-=======
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
->>>>>>> aurmich/dev
                 'phone',
                 'email',
                 'registration_number',
@@ -375,13 +182,6 @@ class Studio extends BaseTenant
     }
 
     /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
      * Relazione molti-a-molti con i dottori che lavorano nello studio.
      * 
      * IMPORTANTE: Questa è una relazione cross-database, dove:
@@ -390,34 +190,12 @@ class Studio extends BaseTenant
      * - doctor_studio (pivot) risiede nel database 'salute_ora'
      *
      * @return BelongsToMany
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
      */
     public function doctors(): BelongsToMany
     {
         // Per una relazione cross-database, non possiamo usare belongsToManyX
         // Dobbiamo specificare esplicitamente tutti i parametri
         return $this->belongsToManyX(Doctor::class);
-<<<<<<< HEAD
-=======
-=======
-     * Relazione con i dottori dello studio.
-=======
->>>>>>> 2bcfd382 (fix Address)
-     */
-    public function doctors(): BelongsToMany
-    {
-<<<<<<< HEAD
-        return $this->hasMany(Doctor::class, 'tenant_id');
->>>>>>> 2099645a (.)
-=======
-        // Per una relazione cross-database, non possiamo usare belongsToManyX
-        // Dobbiamo specificare esplicitamente tutti i parametri
-        return $this->belongsToManyX(Doctor::class);
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
     }
 
     /**
@@ -431,41 +209,12 @@ class Studio extends BaseTenant
     /**
      * Scope per studi attivi.
      */
-<<<<<<< HEAD
     public function scopeActive(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function scopeActive(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
-=======
-    public function scopeActive($query)
->>>>>>> 2099645a (.)
-=======
-    public function scopeActive(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
     {
         return $query->where('active', true);
     }
 
     /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-     * Scope per studi in una specifica città.
-     */
-    public function scopeInCity($query, string $city)
-    {
-        return $query->where('city', $city);
-    }
-
-    /**
->>>>>>> 2099645a (.)
-=======
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
->>>>>>> aurmich/dev
      * Verifica se lo studio è attivo.
      */
     public function isActive(): bool
@@ -558,45 +307,12 @@ class Studio extends BaseTenant
     public function getCurrentMonthAppointmentsCount(): int
     {
         return $this->appointments()
-<<<<<<< HEAD
             ->whereMonth('starts_at', now()->month)
             ->whereYear('starts_at', now()->year)
-=======
-<<<<<<< HEAD
-            ->whereMonth('starts_at', now()->month)
-            ->whereYear('starts_at', now()->year)
-=======
-            ->whereMonth('start_time', now()->month)
-            ->whereYear('start_time', now()->year)
->>>>>>> 2099645a (.)
->>>>>>> aurmich/dev
             ->count();
     }
 
     /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-     * Ottiene l'indirizzo completo formattato.
-     */
-    public function getFullAddress(): string
-    {
-        $parts = array_filter([
-            $this->address,
-            $this->postal_code,
-            $this->city,
-        ]);
-
-        return implode(', ', $parts);
-    }
-
-    /**
->>>>>>> 2099645a (.)
-=======
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
->>>>>>> aurmich/dev
      * Ottiene le informazioni di contatto formattate.
      */
     public function getContactInfo(): array
@@ -607,13 +323,6 @@ class Studio extends BaseTenant
             'website' => $this->website,
         ]);
     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
->>>>>>> aurmich/dev
 
     /**
      * Restituisce i servizi come stringa leggibile per Filament.
@@ -622,13 +331,6 @@ class Studio extends BaseTenant
     {
         return is_array($this->services) ? implode(', ', $this->services) : (string) $this->services;
     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
->>>>>>> aurmich/dev
 
 
     public function scopeOfCap(Builder $query,string|int|null $cap): void
@@ -637,13 +339,6 @@ class Studio extends BaseTenant
             $q->where('postal_code', $cap);
         });
     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
->>>>>>> aurmich/dev
 
     public function getEnabledDatesByMonth(string $month): array
     {
@@ -656,36 +351,9 @@ class Studio extends BaseTenant
         $dates=[];
         $doctors=$this->doctors()->get();
         foreach($doctors as $doctor){
-<<<<<<< HEAD
             //** @phpstan-ignore property.notFound */
             $tmp=$this->getDoctorEnabledDatesByMonth($doctor->id, $month);
             $dates=array_merge($dates, $tmp);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            //** @phpstan-ignore property.notFound */
-=======
-            //** @phpstan-ignore-next-line */
->>>>>>> 13ea6524 (phpstan)
-            $tmp=$this->getDoctorEnabledDatesByMonth($doctor->id, $month);
-            $dates=array_merge($dates, $tmp);
-=======
-            $pivot=DoctorStudio::where('studio_id',$this->id)->where('user_id',$doctor->id)->first();
-            $openingHours=$pivot->getOpeningHours();
-            for($i=1;$i<=31;$i++){
-                $date = Carbon::parse($month.'-'.$i);
-                $date1=$date->format('Y-m-d');
-                if($openingHours->isOpenOn($date1)){
-                    $dates[] = $date1;
-                }
-            }
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
-            $tmp=$this->getDoctorEnabledDatesByMonth($doctor->id, $month);
-            $dates=array_merge($dates, $tmp);
->>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
->>>>>>> aurmich/dev
             
         }
         return $dates;
@@ -716,13 +384,6 @@ class Studio extends BaseTenant
             }
         }
             */
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 13ea6524 (phpstan)
->>>>>>> aurmich/dev
         //return $dates;
        
     }
@@ -745,40 +406,4 @@ class Studio extends BaseTenant
         }
         return $dates;
     }
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 2099645a (.)
-=======
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
-=======
->>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
-=======
-        return $dates;
-       
-    }
-<<<<<<< HEAD
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
-
-
-    public function getDoctorEnabledDatesByMonth(int|string|null $doctorId, string $month): array
-    {
-        $dates=[];
-        $pivot=DoctorStudio::where('studio_id',$this->id)->where('user_id',$doctorId)->first();
-        if(!$pivot){
-            return [];
-        }
-        $openingHours=$pivot->getOpeningHours();
-        for($i=1;$i<=31;$i++){
-            $date = Carbon::parse($month.'-'.$i);
-            $date1=$date->format('Y-m-d');
-            if($openingHours->isOpenOn($date1)){
-                $dates[] = $date1;
-            }
-        }
-        return $dates;
-    }
->>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
->>>>>>> aurmich/dev
 }

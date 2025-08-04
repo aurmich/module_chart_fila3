@@ -1,13 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
->>>>>>> aurmich/dev
 return [
     'fields' => [
         'studio_selection' => [
@@ -18,12 +10,4 @@ return [
             'description' => 'Medical studio for the service',
         ],
     ],
-<<<<<<< HEAD
 ];
-=======
-<<<<<<< HEAD
-];
-=======
-]; 
->>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
->>>>>>> aurmich/dev

@@ -1,23 +1,7 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-declare(strict_types=1);
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
-=======
-declare(strict_types=1);
-
->>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
->>>>>>> aurmich/dev
 return [
     'title' => [
         'singular' => 'Studio Medico',
@@ -119,16 +103,4 @@ return [
         'fiscal_info' => 'Informazioni Fiscali',
         'operations' => 'Operatività',
     ],
-<<<<<<< HEAD
 ];
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-];
-=======
-];
->>>>>>> aurmich/dev
-=======
-];
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
->>>>>>> aurmich/dev

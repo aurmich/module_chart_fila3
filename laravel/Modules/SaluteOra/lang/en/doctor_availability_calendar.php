@@ -1,28 +1,12 @@
 <?php
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
 return [
     'navigation' => [
         'label' => 'Availability Calendar',
         'group' => 'Schedule',
         'icon' => 'heroicon-o-calendar',
         'color' => 'primary',
-<<<<<<< HEAD
         'sort' => '10',
-=======
-<<<<<<< HEAD
-        'sort' => '10',
-=======
-        'sort' => 10,
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
         'tooltip' => 'Manage doctor availability calendar',
     ],
     'actions' => [
@@ -63,60 +47,28 @@ return [
             'placeholder' => 'Select doctor',
             'helper_text' => 'Choose healthcare professional',
             'tooltip' => 'Select doctor to view/edit their availability',
-<<<<<<< HEAD
             'required' => '1',
-=======
-<<<<<<< HEAD
-            'required' => '1',
-=======
-            'required' => true,
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
         ],
         'date' => [
             'label' => 'Date',
             'placeholder' => 'Select date',
             'helper_text' => 'Availability date',
             'tooltip' => 'Date to set availability for',
-<<<<<<< HEAD
             'required' => '1',
-=======
-<<<<<<< HEAD
-            'required' => '1',
-=======
-            'required' => true,
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
         ],
         'start_time' => [
             'label' => 'Start Time',
             'placeholder' => 'Select start time',
             'helper_text' => 'Start of availability period',
             'tooltip' => 'Appointment start time',
-<<<<<<< HEAD
             'required' => '1',
-=======
-<<<<<<< HEAD
-            'required' => '1',
-=======
-            'required' => true,
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
         ],
         'end_time' => [
             'label' => 'End Time',
             'placeholder' => 'Select end time',
             'helper_text' => 'End of availability period',
             'tooltip' => 'Appointment end time',
-<<<<<<< HEAD
             'required' => '1',
-=======
-<<<<<<< HEAD
-            'required' => '1',
-=======
-            'required' => true,
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
         ],
         'status' => [
             'label' => 'Status',
@@ -248,10 +200,6 @@ return [
             'cancelled' => 'Cancelled',
             'pending' => 'Pending',
             'tentative' => 'Tentative',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
             'break' => 'Break',
             'holiday' => 'Holiday',
         ],
@@ -268,11 +216,4 @@ return [
         'no_doctor_selected' => 'No doctor selected',
         'no_doctor_selected_description' => 'Select a doctor to view availability',
     ],
-<<<<<<< HEAD
-=======
-=======
-        ],
-    ],
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
 ];

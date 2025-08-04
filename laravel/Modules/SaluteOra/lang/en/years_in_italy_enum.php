@@ -1,13 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
 return [
     'less_than_1' => 'Less than 1 year',
     '1_to_2' => '1 to 2 years',
@@ -16,13 +8,6 @@ return [
     'more_than_10' => 'More than 10 years',
     'since_birth' => 'Since birth',
     'not_applicable' => 'Not applicable',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-    
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
     'descriptions' => [
         'less_than_1' => 'Recently arrived in Italy',
         '1_to_2' => 'Short-term resident',
@@ -32,21 +17,10 @@ return [
         'since_birth' => 'Born and raised in Italy',
         'not_applicable' => 'Not applicable or prefer not to say',
     ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-    
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
     'labels' => [
         'question' => 'How long have you been living in Italy?',
         'help_text' => 'Select the option that best describes your time in Italy',
     ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     'YEAR_0_1' => [
         'label' => '0-1 anno',
         'color' => 'primary',
@@ -84,9 +58,3 @@ return [
         'description' => '10-99 anni',
     ],
 ];
-<<<<<<< HEAD
-=======
-=======
-]; 
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
