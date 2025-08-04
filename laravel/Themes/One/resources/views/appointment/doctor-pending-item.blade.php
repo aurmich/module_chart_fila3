@@ -32,6 +32,9 @@
             <div class="cursor-pointer flex flex-row items-center">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a123f7ba (✨ (appointment states): implement new appointment state transitions and update documentation to reflect changes)
                 
                 {{ ($this->infoAction)(['appointment' => $appointment->id]) }}
                 {{ ($this->confirmAction)(['appointment' => $appointment->id]) }}

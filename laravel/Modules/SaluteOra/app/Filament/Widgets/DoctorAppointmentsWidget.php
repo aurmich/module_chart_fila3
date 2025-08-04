@@ -510,6 +510,13 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
                 //    'type' => 'info',
                 //    'message' => 'Funzionalità eliminazione in sviluppo',
                 //]);
+                $this->invalidateCache();
+                $this->loadAppointments();
+    
+                $this->dispatch('notify', [
+                    'type' => 'success',
+                    'message' => __('saluteora::widgets.doctor_appointments.messages.appointment_confirmed'),
+                ]);
             });
             
    }
@@ -526,5 +533,24 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
         return $this->getActionByState(Rejected::class,__FUNCTION__);
        
     }
+<<<<<<< HEAD
 >>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
+=======
+
+    public function infoAction(): Action
+    {
+    return Action::make('info')
+        ->label('Mostra Info')
+        ->icon('heroicon-o-information-circle')
+        ->modalHeading('Dettagli appuntamento')
+        //->modalSubheading('Informazioni utili')
+        ->modalContent(
+            //view('saluteora::modals.info', [
+            //'appointment' => $this->record, // oppure altri dati
+            //])
+        )
+        ->modalSubmitAction(false) // ⛔️ nasconde il bottone di conferma
+        ->modalCancelActionLabel('Chiudi'); // ✅ personalizzi il bottone di chiusura
+    }
+>>>>>>> a123f7ba (✨ (appointment states): implement new appointment state transitions and update documentation to reflect changes)
 }
