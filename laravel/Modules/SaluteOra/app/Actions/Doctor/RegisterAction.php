@@ -86,6 +86,7 @@ class RegisterAction
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if(!isset($data['name']) && isset($data['email']) && is_string($data['email'])){
             $data['name']=Str::of($data['email'])->before('@')->append('-')->append(Str::random(3))->toString();
         }
@@ -210,6 +211,11 @@ class RegisterAction
 =======
         
 >>>>>>> 17b35338 (add doctor-register-integration-completed  page)
+=======
+        if(!isset($data['name']) && isset($data['email'])){
+            $data['name']=Str::of($data['email'])->before('@')->append('-')->append(Str::random(3))->toString();
+        }
+>>>>>>> 9fa97684 (✨ (appointment states): add complete standardization for appointment states to ensure consistency and improve maintainability)
         if(isset($data['id'])){
             $doctor = $record;
             $doctor->update($data);

@@ -26,22 +26,46 @@ class InProgress extends AppointmentState
 
     public function label(): string
     {
-        return 'In corso';
+        return static::transClass(__CLASS__,'states.'.static::$name.'.label');
+        //return 'In corso';
     }
 
     public function color(): string
     {
-        return 'info';
+        return static::transClass(__CLASS__,'states.'.static::$name.'.color');
+        //return 'info';
     }
 
     public function icon(): string
     {
-        return 'heroicon-o-play-circle';
+        return static::transClass(__CLASS__,'states.'.static::$name.'.icon');
+        //return 'heroicon-o-play-circle';
+    }
+
+    public function canBeModified(): bool
+    {
+        return true;
     }
 
     public function isActive(): bool
     {
         return true;
     }
+<<<<<<< HEAD
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
+=======
+
+    public function modalHeading(): string
+    {
+        return static::transClass(__CLASS__,'states.'.static::$name.'.modal_heading');
+        //return __('saluteora::states.in_progress.modal_heading');
+    }
+
+    public function modalDescription(): string
+    {
+        $appointment = $this->getModel();
+        return static::transClass(__CLASS__,'states.'.static::$name.'.modal_description');
+        //return __('saluteora::states.in_progress.modal_description');
+    }
+>>>>>>> 9fa97684 (✨ (appointment states): add complete standardization for appointment states to ensure consistency and improve maintainability)
 }

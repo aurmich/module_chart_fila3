@@ -63,6 +63,7 @@ class RegisterAction
             if(isset($data['studio'])){
                 unset($data['studio']);
             }
+<<<<<<< HEAD
             if(!isset($data['name']) && isset($data['email']) && is_string($data['email'])){
                 $data['name']=Str::of($data['email'])->before('@')->append('-')->append(Str::random(3))->toString();
             }
@@ -141,6 +142,11 @@ class RegisterAction
             if(isset($data['studio'])){
                 unset($data['studio']);
             }
+=======
+            if(!isset($data['name']) && isset($data['email'])){
+                $data['name']=Str::of($data['email'])->before('@')->append('-')->append(Str::random(3))->toString();
+            }
+>>>>>>> 9fa97684 (✨ (appointment states): add complete standardization for appointment states to ensure consistency and improve maintainability)
             //$patient = Patient::create($data);
             if(isset($data['id'])){
                 $patient = $record;

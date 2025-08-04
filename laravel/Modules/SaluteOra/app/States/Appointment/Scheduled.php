@@ -26,17 +26,20 @@ class Scheduled extends AppointmentState
 
     public function label(): string
     {
-        return 'Programmato';
+        return static::transClass(__CLASS__,'states.'.static::$name.'.label');
+        //return 'Programmato';
     }
 
     public function color(): string
     {
-        return 'info';
+        return static::transClass(__CLASS__,'states.'.static::$name.'.color');
+        //return 'info';
     }
 
     public function icon(): string
     {
-        return 'heroicon-o-calendar';
+        return static::transClass(__CLASS__,'states.'.static::$name.'.icon');
+        //return 'heroicon-o-calendar';
     }
 
     public function canBeModified(): bool
@@ -48,5 +51,21 @@ class Scheduled extends AppointmentState
     {
         return true;
     }
+<<<<<<< HEAD
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
+=======
+
+    public function modalHeading(): string
+    {
+        return static::transClass(__CLASS__,'states.'.static::$name.'.modal_heading');
+        //return 'Appuntamento Programmato';
+    }
+
+    public function modalDescription(): string
+    {
+        $appointment = $this->getModel();
+        return static::transClass(__CLASS__,'states.'.static::$name.'.modal_description');
+        //return 'Questo appuntamento è stato programmato nel calendario.';
+    }
+>>>>>>> 9fa97684 (✨ (appointment states): add complete standardization for appointment states to ensure consistency and improve maintainability)
 }

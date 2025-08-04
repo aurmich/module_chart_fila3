@@ -6,8 +6,12 @@
 =======
     <div class="space-y-4 max-h-96 overflow-y-auto">
         @if($this->appointments->isNotEmpty())
+<<<<<<< HEAD
             @each('pub_theme::appointment.doctor-pending-item', $this->appointments, 'appointment')
 >>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
+=======
+            @each('pub_theme::appointment.doctor-item', $this->appointments, 'appointment')
+>>>>>>> 9fa97684 (✨ (appointment states): add complete standardization for appointment states to ensure consistency and improve maintainability)
         @else
             <div class="text-center py-12">
                 <div class="mx-auto h-12 w-12 text-gray-400">

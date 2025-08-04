@@ -341,5 +341,9 @@ return array (
       'label' => 'rejectAction',
 >>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
     ),
+    'info' => 
+    array (
+      'label' => 'info',
+    ),
   ),
 );

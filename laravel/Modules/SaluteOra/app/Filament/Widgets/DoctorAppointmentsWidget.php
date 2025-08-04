@@ -47,6 +47,7 @@ use Illuminate\Support\Facades\Cache;
 use Livewire\Attributes\On;
 use Filament\Actions\Action;
 use Filament\Facades\Filament;
+use Illuminate\Support\HtmlString;
 use Illuminate\Support\Facades\Cache;
 use Filament\Support\Enums\ActionSize;
 use Modules\SaluteOra\Enums\UserTypeEnum;
@@ -62,7 +63,11 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
 =======
 use Filament\Actions\Concerns\InteractsWithActions;
 use Modules\SaluteOra\States\Appointment\Confirmed;
+<<<<<<< HEAD
 >>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
+=======
+use Modules\SaluteOra\States\Appointment\AppointmentState;
+>>>>>>> 9fa97684 (✨ (appointment states): add complete standardization for appointment states to ensure consistency and improve maintainability)
 
 /**
  * Widget per gestire gli appuntamenti del dottore.
@@ -75,6 +80,7 @@ use Modules\SaluteOra\States\Appointment\Confirmed;
 class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
 {
     use InteractsWithActions;
+<<<<<<< HEAD
     //public string $state;
     public string $doctor_id;
     public array $states = [];
@@ -91,6 +97,10 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
 >>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
 {
     use InteractsWithActions;
+=======
+    public string $state;
+    public string $doctor_id;
+>>>>>>> 9fa97684 (✨ (appointment states): add complete standardization for appointment states to ensure consistency and improve maintainability)
     /**
      * Vista del widget.
      */
@@ -199,12 +209,13 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
         $user = auth()->user();
 
         $cacheKey = $this->getCacheKey();
-
+        
         $this->appointments = Cache::remember($cacheKey, 300, function () use ($user) {
             return Appointment::query()
                 ->with(['patient', 'doctor', 'studio'])
                 //->where('doctor_id', $user->id)
-                ->whereState('state', Pending::class)
+                //->whereState('state', Pending::class)
+                ->where('state', $this->state)
                 ->orderBy('starts_at', 'asc')
                 ->limit(10)
 >>>>>>> 2df8b507 (bozza widget doctor appointments)
@@ -217,6 +228,7 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
      */
     private function getCacheKey(): string
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
        
         $key= sprintf(
@@ -236,9 +248,20 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
             'doctor_appointments_%d',
             $user?->id ?? 0,
             
+=======
+        $user_id = auth()->id();
+       
+       
+        $key= sprintf(
+            'doctor_appointments_%s_%s',
+            $user_id ?? 0,
+            $this->state,
+>>>>>>> 9fa97684 (✨ (appointment states): add complete standardization for appointment states to ensure consistency and improve maintainability)
         );
+        return $key;
     }
 
+<<<<<<< HEAD
     /**
      * Conferma un appuntamento (transizione da Pending a Confirmed).
      */
@@ -319,6 +342,9 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
         }
     }
 >>>>>>> 2df8b507 (bozza widget doctor appointments)
+=======
+    
+>>>>>>> 9fa97684 (✨ (appointment states): add complete standardization for appointment states to ensure consistency and improve maintainability)
 
     /**
      * Trova un appuntamento per ID verificando che appartenga al dottore corrente.
@@ -489,35 +515,51 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
    {
     $appointment = new Appointment(); // senza salvarlo nel db
     $state = new $stateClass($appointment);
+    //canTransitionTo
+    /*
+    dddx([
+        'transitionableStates'=>$state->transitionableStates(),
+        'get_class_methods'=>get_class_methods($state),
+        //'a'=>Appointment::resolveStateClass('state', 'pending'),
+        'b'=>AppointmentState::getStateMapping()->get($this->state),
+    ]);
+    */
+    $startStateClass=AppointmentState::getStateMapping()->get($this->state);
+    $startState=new $startStateClass($appointment);
+    //dddx();
+    
     
    
     return Action::make($name)
         ->iconButton()
-            //->button()
-            ->size(ActionSize::Large)
-            ->tooltip($state->label())
-            ->icon($state->icon())
-            ->color($state->color())
-            ->requiresConfirmation()
-            ->modalHeading($state->modalHeading())
-            ->modalDescription($state->modalDescription())
-            ->action(function (array $data,$arguments) use($stateClass){
-                $appointmentId = $arguments['appointment'];
-                $appointment = Appointment::firstWhere('id',$appointmentId);
-                $appointment->state->transitionTo($stateClass);
-                // Per ora implementazione di debug
-                //$this->dispatch('notify', [
-                //    'type' => 'info',
-                //    'message' => 'Funzionalità eliminazione in sviluppo',
-                //]);
-                $this->invalidateCache();
-                $this->loadAppointments();
-    
-                $this->dispatch('notify', [
-                    'type' => 'success',
-                    'message' => __('saluteora::widgets.doctor_appointments.messages.appointment_confirmed'),
-                ]);
-            });
+        //->button()
+        ->size(ActionSize::ExtraLarge)
+        ->tooltip($state->label())
+        ->icon($state->icon())
+        ->color($state->color())
+        ->requiresConfirmation()
+        ->modalHeading($state->modalHeading())
+        ->modalDescription($state->modalDescription())
+        ->action(function (array $data,$arguments) use($stateClass){
+            $appointmentId = $arguments['appointment'];
+            $appointment = Appointment::firstWhere('id',$appointmentId);
+            $appointment->state->transitionTo($stateClass);
+            // Per ora implementazione di debug
+            //$this->dispatch('notify', [
+            //    'type' => 'info',
+            //    'message' => 'Funzionalità eliminazione in sviluppo',
+            //]);
+            $this->invalidateCache();
+            $this->loadAppointments();
+
+            $this->dispatch('notify', [
+                'type' => 'success',
+                'message' => __('saluteora::widgets.doctor_appointments.messages.appointment_confirmed'),
+            ]);
+        })
+        ->visible($startState->canTransitionTo($stateClass))
+        ;
+        
             
    }
 
@@ -540,15 +582,22 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
     public function infoAction(): Action
     {
     return Action::make('info')
-        ->label('Mostra Info')
+        ->iconButton()
+        //->label('Mostra Info')
+        ->size(ActionSize::ExtraLarge)
         ->icon('heroicon-o-information-circle')
+        ->color('info')
         ->modalHeading('Dettagli appuntamento')
-        //->modalSubheading('Informazioni utili')
-        ->modalContent(
-            //view('saluteora::modals.info', [
-            //'appointment' => $this->record, // oppure altri dati
-            //])
-        )
+        ->modalContent(function (array $data,$arguments) {
+            $appointmentId = $arguments['appointment'];
+            $appointment = Appointment::firstWhere('id',$appointmentId);
+            $view='pub_theme::appointment.card';
+            $view_params=[
+                'appointment' => $appointment,
+            ];
+            return view($view,$view_params);
+            //return  new HtmlString($arguments['appointment']);
+        })
         ->modalSubmitAction(false) // ⛔️ nasconde il bottone di conferma
         ->modalCancelActionLabel('Chiudi'); // ✅ personalizzi il bottone di chiusura
     }
