@@ -50,7 +50,11 @@ new class extends Component
     <div>
         {{--  route('pages.view',['slug'=>'patient_register_complete'])  --}}
 <<<<<<< HEAD
+<<<<<<< HEAD
         <x-page side="content" slug="home" :type="auth()->user()?->type?->value"/>
+=======
+        <x-page side="content" slug="home" :type="auth()->user()?->type?->value ?? 'patient'"/>
+>>>>>>> e577f0ca (feat: getDataDefault for fix livewire form data)
     </div>
     @endvolt
 >>>>>>> aurmich/dev

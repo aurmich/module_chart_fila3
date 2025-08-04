@@ -241,6 +241,14 @@ return array (
     array (
       'label' => 'openFilters',
     ),
+    'type' => 
+    array (
+      'label' => 'type',
+    ),
+    'last_name' => 
+    array (
+      'label' => 'last_name',
+    ),
   ),
   'actions' => 
   array (

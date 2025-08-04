@@ -421,6 +421,7 @@ class User extends BaseUser implements HasMedia
         //'state' => 'pending',
         'is_otp'=>false,
         'is_active'=>true,
+        'type' => 'patient',  // Valore di default secondo la best practice dell'enum
     ];
 <<<<<<< HEAD
 <<<<<<< HEAD

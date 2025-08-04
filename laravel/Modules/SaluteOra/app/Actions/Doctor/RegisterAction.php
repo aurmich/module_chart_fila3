@@ -199,13 +199,19 @@ class RegisterAction
         if(isset($data['studio'])){
             unset($data['studio']);
         }
+<<<<<<< HEAD
 >>>>>>> 3f885cdc (♻️ (RegisterAction.php): refactor execute method to remove 'studio' from data array to ensure cleaner data handling during doctor registration)
         //$data['type']=UserTypeEnum::DOCTOR;
+=======
+>>>>>>> e577f0ca (feat: getDataDefault for fix livewire form data)
         if(isset($data['id'])){
             $doctor = $record;
             $doctor->update($data);
         }else{
-            $doctor = Doctor::create($data);
+            $doctor= new Doctor();
+            $doctor->fill($data);
+            $doctor->save();
+            //$doctor = Doctor::create($data);
         }
         if(isset($data['schedule'])){
             $studio = Studio::create($data['studio']);
