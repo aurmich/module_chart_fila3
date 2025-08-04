@@ -140,8 +140,12 @@ return array (
       'label' => 'slug',
       'description' => 'slug',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => 'slug',
       'placeholder' => 'slug',
+=======
+      'helper_text' => 'slug',
+>>>>>>> 89a8313a (- update primary colors)
     ),
     'name' => 
     array (

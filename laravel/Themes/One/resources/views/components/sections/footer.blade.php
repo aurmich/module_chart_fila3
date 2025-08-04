@@ -15,6 +15,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'class' => 'bg-[#272C4D] h-32 lg:min-h-36 text-white flex justify-center items-center' . ($section['attributes']['class'] ?? '') . ' ' . $class,
     'id' => ($section['attributes']['id'] ?? '')
 ]) }}>
@@ -70,6 +71,9 @@
 =======
     'class' => 'bg-[#1A467F] h-36 text-white flex items-center' . ($section['attributes']['class'] ?? '') . ' ' . $class,
 >>>>>>> ff138484 (- update dettaglio paziente)
+=======
+    'class' => 'bg-[#272C4D] h-36 text-white flex items-center' . ($section['attributes']['class'] ?? '') . ' ' . $class,
+>>>>>>> 89a8313a (- update primary colors)
     'id' => ($section['attributes']['id'] ?? '')
 ]) }}>
     <div class="w-full flex justify-center">

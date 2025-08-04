@@ -145,11 +145,15 @@ new class extends Component
             </x-ui.link>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             <h2 class="mt-5 text-2xl font-extrabold leading-9 text-center text-gray-800 dark:text-gray-200">
 >>>>>>> 54f4fa16 (.)
 =======
             <h2 class="mt-5 text-2xl font-extrabold leading-9 text-center text-[#1A467F]">
 >>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
+=======
+            <h2 class="mt-5 text-2xl font-extrabold leading-9 text-center text-[#272C4D]">
+>>>>>>> 89a8313a (- update primary colors)
                 Reset password
             </h2>
             <div class="text-sm leading-5 text-center text-gray-600 dark:text-gray-400 space-x-0.5">

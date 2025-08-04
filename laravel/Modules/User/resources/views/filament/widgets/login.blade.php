@@ -16,6 +16,7 @@
         {{ $this->form }}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <button type="submit" class="w-full py-3 rounded bg-[#FF5F7E] text-white font-bold">
             {{ __('Accedi') }}
             <x-filament::loading-indicator class="h-5 w-5" wire:loading/>
@@ -35,6 +36,9 @@
 =======
         <button type="submit" class="w-full py-3 rounded bg-[#0D9488] text-white font-bold transition">{{ __('Accedi') }}</button>
 >>>>>>> 58d017c2 (- aggiornato stile dettaglio paziente)
+=======
+        <button type="submit" class="w-full py-3 rounded bg-[#FF5F7E] text-white font-bold transition">{{ __('Accedi') }}</button>
+>>>>>>> 89a8313a (- update primary colors)
     </form>
     <div class="text-center text-sm text-gray-500 mt-2">
         @if (Route::has('password.request'))

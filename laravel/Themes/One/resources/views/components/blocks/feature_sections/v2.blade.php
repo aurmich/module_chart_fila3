@@ -7,10 +7,14 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl lg:text-center">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <h2 class="text-3xl font-bold leading-7 text-[#272C4D]">{{ $title }}</h2>
 =======
             <h2 class="text-3xl font-bold leading-7 text-[#1A467F]">{{ $title }}</h2>
 >>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+=======
+            <h2 class="text-3xl font-bold leading-7 text-[#272C4D]">{{ $title }}</h2>
+>>>>>>> 89a8313a (- update primary colors)
             @if(isset($subtitle))
                 <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{{ $subtitle }}</p>
             @endif
@@ -23,33 +27,46 @@
                 @foreach($sections as $section)
                     <div class="flex flex-col">
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-lg text-[#FF5F7E]">
 =======
                         <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-lg text-[#0D9488]">
 >>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+=======
+                        <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-lg text-[#FF5F7E]">
+>>>>>>> 89a8313a (- update primary colors)
                             @if(isset($section['icon']))
                                 {{--
                                 <x-dynamic-component
                                     :component="'heroicon-o-'.$section['icon']"
 <<<<<<< HEAD
-                                    class="h-5 w-5 flex-none text-[#FF5F7E]"
-=======
-                                    class="h-5 w-5 flex-none text-[#0D9488]"
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
-                                />
-                                --}}
-                                <x-filament::icon
-                                    :icon="$section['icon']"
 <<<<<<< HEAD
                                     class="h-5 w-5 flex-none text-[#FF5F7E]"
 =======
                                     class="h-5 w-5 flex-none text-[#0D9488]"
 >>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+=======
+                                    class="h-5 w-5 flex-none text-[#FF5F7E]"
+>>>>>>> 89a8313a (- update primary colors)
+                                />
+                                --}}
+                                <x-filament::icon
+                                    :icon="$section['icon']"
+<<<<<<< HEAD
+<<<<<<< HEAD
+                                    class="h-5 w-5 flex-none text-[#FF5F7E]"
+=======
+                                    class="h-5 w-5 flex-none text-[#0D9488]"
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+=======
+                                    class="h-5 w-5 flex-none text-[#FF5F7E]"
+>>>>>>> 89a8313a (- update primary colors)
                                 />
                             @endif
                             {{ $section['title'] }}
                         </dt>
                         <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+<<<<<<< HEAD
 <<<<<<< HEAD
                             <p class="flex-auto text-lg text-[#FF5F7E]">{{ $section['description'] }}</p>
                             @if(isset($section['link']))
@@ -62,6 +79,9 @@
 >>>>>>> aurmich/dev
 =======
                             <p class="flex-auto text-lg text-[#0D9488]">{{ $section['description'] }}</p>
+=======
+                            <p class="flex-auto text-lg text-[#FF5F7E]">{{ $section['description'] }}</p>
+>>>>>>> 89a8313a (- update primary colors)
                             @if(isset($section['link']))
                                 <p class="mt-6">
                                     <a href="{{ $section['link'] }}" class="text-sm font-semibold leading-6 text-indigo-600">

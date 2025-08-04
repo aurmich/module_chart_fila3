@@ -19,6 +19,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         @apply !text-white !bg-[#FF5F7E] inline-flex items-center justify-center gap-1 rounded-lg px-3 py-2 text-sm font-medium shadow-sm ring-1 ring-inset transition-colors duration-75 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-70;
 =======
         @apply inline-flex items-center justify-center gap-1 rounded-lg px-3 py-2 text-sm font-medium shadow-sm ring-1 ring-inset transition-colors duration-75 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-70;
@@ -29,6 +30,9 @@
 =======
         @apply !text-white !bg-[#0D9488] inline-flex items-center justify-center gap-1 rounded-lg px-3 py-2 text-sm font-medium shadow-sm ring-1 ring-inset transition-colors duration-75 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-70;
 >>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
+=======
+        @apply !text-white !bg-[#FF5F7E] inline-flex items-center justify-center gap-1 rounded-lg px-3 py-2 text-sm font-medium shadow-sm ring-1 ring-inset transition-colors duration-75 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-70;
+>>>>>>> 89a8313a (- update primary colors)
     }
 
     .fi-btn-primary {
@@ -99,8 +103,12 @@
     }
 
     .btn-primary {
+<<<<<<< HEAD
         @apply bg-[#0D9488] text-white px-4 py-2 rounded-lg;
 >>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
+=======
+        @apply bg-[#FF5F7E] text-white px-4 py-2 rounded-lg;
+>>>>>>> 89a8313a (- update primary colors)
     }
 
     .btn-secondary {
@@ -128,6 +136,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         @apply border-gray-300 focus:!border-[#FF5F7E] rounded-lg shadow-sm;
 =======
         @apply border-gray-300 focus:border-primary-500 focus:ring-primary-500 rounded-lg shadow-sm;
@@ -138,6 +147,9 @@
 =======
         @apply border-gray-300 focus:!border-[#0D9488] rounded-lg shadow-sm;
 >>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
+=======
+        @apply border-gray-300 focus:!border-[#FF5F7E] rounded-lg shadow-sm;
+>>>>>>> 89a8313a (- update primary colors)
     }
 
     .card {
@@ -329,6 +341,7 @@
     textarea {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-[#FF5F7E] focus:ring-[#FF5F7E] sm:text-sm;
     }
 
@@ -346,6 +359,13 @@
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> d23ba493 (add calendar)
+=======
+        @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-[#FF5F7E] focus:ring-[#FF5F7E] sm:text-sm;
+    }
+
+    select {
+        @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-[#FF5F7E] focus:ring-[#FF5F7E] sm:text-sm;
+>>>>>>> 89a8313a (- update primary colors)
     }
 
     label {
@@ -458,14 +478,21 @@
         @apply !bg-transparent !border-transparent;
     }
     .fi-fo-wizard-header-step-label {
-        @apply !text-[#0D9488];
+        @apply !text-[#FF5F7E];
     }
     .fi-fo-wizard-header-step-indicator {
-        @apply !text-[#0D9488];
+        @apply !text-[#FF5F7E];
     }
     .fi-fo-wizard-header-step-icon {
+<<<<<<< HEAD
         @apply !border-[#0D9488];
 >>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
+=======
+        @apply !border-[#FF5F7E];
+    }
+    .fi-input {
+        @apply focus:border-[#FF5F7E] focus:ring-[#FF5F7E];
+>>>>>>> 89a8313a (- update primary colors)
     }
 }
 >>>>>>> d23ba493 (add calendar)

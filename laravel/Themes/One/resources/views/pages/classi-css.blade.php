@@ -4,6 +4,7 @@
 <div class="bg-[#0019ff]">Ciao</div>
 <div class="bg-sky-500">Test</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="bg-[#272C4D]">Prova</div>
 <div class="bg-[#45465A]">Dark</div>
 <div class="h-20">Altezza</div>
@@ -20,18 +21,26 @@
 <div class="bg-sky-500">Test</div>
 >>>>>>> d23ba493 (add calendar)
 <div class="bg-[#1A467F]">Prova</div>
+=======
+<div class="bg-[#272C4D]">Prova</div>
+>>>>>>> 89a8313a (- update primary colors)
 <div class="bg-[#45465A]">Dark</div>
 <div class="h-20">Altezza</div>
-<div class="bg-[#0D9488]">Registrati Button</div>
+<div class="bg-[#FF5F7E]">Registrati Button</div>
 <div class="text-[#E2E8F0]"></div>
+<div class="bg-[#E7E7E7]">New background</div>
 <div class="bg-[#E6EBF7]">Section</div>
-<div class="text-[#1A467F]">Testo primary</div>
+<div class="text-[#272C4D]">Testo primary</div>
 <div class="text-gray-600">Testo subtitle</div>
+<<<<<<< HEAD
 <div class="text-[#0D9488]"></div>
 <<<<<<< HEAD
 >>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
 =======
 >>>>>>> d23ba493 (add calendar)
+=======
+<div class="text-[#FF5F7E]"></div>
+>>>>>>> 89a8313a (- update primary colors)
 <div class="hover:text-[#E2E8F0]">Provaaaa</div>
 <div class="hover:underline underline-offset-[14]">Ciaoooooo</div>
 <div class="lg:h-20 sm:h-12">Logo</div>
@@ -39,6 +48,9 @@
 <div class="flex justify-around">Flex</div>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 89a8313a (- update primary colors)
 <div class="w-80 h-80 rounded-md flex justify-center items-center bg-[#272C4D]">Cards</div>
 <div class="border-transparent">Border</div>
 <div class="hover:text-[#FF5F7E]">Hover card</div>
@@ -105,10 +117,14 @@
 <div class="w-[350px]">width 350</div>
 <div class="w-[700px]">width 700px</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 89a8313a (- update primary colors)
 <div class="bg-[#F5F5F5]">background primary chiaro</div>
 <div class="ring-[#FF5F7E]">ring primary</div>
 <div class="focus:border-[#FF5F7E]">focus primary</div>
 <div class="focus:ring-[#FF5F7E]">focus ring primary</div>
+<<<<<<< HEAD
 <div class="fixed top-0 left-0 right-0 z-50">header fixed</div>
 <div class="mt-1.5">margin bottom header</div>
 <div class="fixed top-0 left-0 right-0 z-50 h-24">fixed</div>
@@ -368,3 +384,6 @@
 =======
 </x-layouts.app>    
 >>>>>>> ff138484 (- update dettaglio paziente)
+=======
+</x-layouts.app>    
+>>>>>>> 89a8313a (- update primary colors)

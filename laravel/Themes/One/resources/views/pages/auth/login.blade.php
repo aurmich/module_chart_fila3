@@ -80,6 +80,7 @@ $authenticate = function() {
 <<<<<<< HEAD
 <<<<<<< HEAD
     @volt('login')
+<<<<<<< HEAD
     <div id="wave-container" class="flex flex-col items-stretch justify-center w-full min-h-screen py-10 sm:items-center relative overflow-hidden">
 =======
     @volt('login')
@@ -89,6 +90,9 @@ $authenticate = function() {
 =======
     <div id="wave-container" class="flex flex-col items-stretch justify-center w-full min-h-screen py-10 sm:items-center relative overflow-hidden bg-[#EBF5FF]">
 >>>>>>> 58d017c2 (- aggiornato stile dettaglio paziente)
+=======
+    <div id="wave-container" class="flex flex-col items-stretch justify-center w-full min-h-screen py-10 sm:items-center relative overflow-hidden bg-[#F5F5F5]">
+>>>>>>> 89a8313a (- update primary colors)
         <!-- Reactive subtle background waves -->
         <svg id="wave-svg" class="absolute inset-0 w-full h-full opacity-10 pointer-events-none" viewBox="0 0 1440 320" preserveAspectRatio="none">
             <path fill="#A5B4FC" fill-opacity="0.1" d="M0,224L60,213.3C120,203,240,181,360,176C480,171,600,181,720,181.3C840,181,960,171,1080,160C1200,149,1320,139,1380,133.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
@@ -126,6 +130,7 @@ $authenticate = function() {
             </a>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             <h2 class="mt-5 text-2xl font-extrabold leading-9 text-center text-[#272C4D]">
 <<<<<<< HEAD
                 {{ __('pub_theme::auth.login.title') }}
@@ -138,11 +143,17 @@ $authenticate = function() {
 =======
             <h2 class="mt-5 text-2xl font-extrabold leading-9 text-center text-gray-900 dark:text-white">
 >>>>>>> 54f4fa16 (.)
+=======
+            <h2 class="mt-5 text-2xl font-extrabold leading-9 text-center text-[#272C4D]">
+>>>>>>> 89a8313a (- update primary colors)
                 {{ __('auth.login.title') }}
             </h2>
             <div class="text-sm leading-5 text-center text-gray-600 dark:text-gray-400 space-x-0.5">
                 <span>{{ __('auth.login.or') }}</span>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 89a8313a (- update primary colors)
                 <a href="{{ route('register') }}" class="text-[#FF5F7E] font-medium">
                     {{ __('auth.login.create_account') }}
 >>>>>>> aurmich/dev
