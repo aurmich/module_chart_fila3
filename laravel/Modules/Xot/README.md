@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 15cb84fb (fix collisions)
->>>>>>> aurmich/dev
 # Modulo Xot
 
 ## Descrizione
@@ -91,14 +82,7 @@ Xot/
 
 ## Comandi Console
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 15cb84fb (fix collisions)
->>>>>>> aurmich/dev
 # Lista moduli
 php artisan module:list
 
@@ -115,18 +99,6 @@ Il modulo può essere configurato tramite il file `config/module_xot.php`:
 - Permessi
 - Configurazioni specifiche per modulo
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 15cb84fb (fix collisions)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 # Module Xot Fila3 🔥 The Ultimate Laravel Multi-module Solution 🚀
 
 [![Latest Release](https://img.shields.io/github/v/release/laraxot/module_xot_fila3)](https://github.com/laraxot/module_xot_fila3/releases)

@@ -49,19 +49,8 @@ use Modules\Xot\Datas\Transformers\AssetTransformer;
  * @property string $color_banner
  * @property string $favicon
  * @property array<string, array{key?: string, color: string, hex?: string}> $colors
-<<<<<<< HEAD
  * 
  * @method string getBrandLogoBase64() Get the brand logo as base64 data URI for inline embedding
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
- * 
- * @method string getBrandLogoBase64() Get the brand logo as base64 data URI for inline embedding
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
  */
 class MetatagData extends Data implements Wireable
 {
@@ -243,11 +232,6 @@ class MetatagData extends Data implements Wireable
     }
 
     /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
      * Get the brand logo as base64 data URI for inline embedding.
      * This method reflects the semantic purpose of getting the brand logo
      * as a base64 data URI that can be embedded directly in HTML img tags.
@@ -328,13 +312,6 @@ class MetatagData extends Data implements Wireable
     }
 
     /**
-<<<<<<< HEAD
-=======
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
      * Get the theme colors.
      * This method reflects the semantic purpose of getting theme colors,
      * rather than exposing the raw color data structure.
@@ -343,14 +320,6 @@ class MetatagData extends Data implements Wireable
      */
     public function getThemeColors(): array
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
->>>>>>> aurmich/dev
         $filamentColors = $this->getFilamentColors();
         $defaults = [];
         
@@ -362,39 +331,13 @@ class MetatagData extends Data implements Wireable
             }
         }
         
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-        $defaults = $this->getFilamentColors();
->>>>>>> aurmich/dev
-=======
-        $defaults = $this->getFilamentColors();
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
->>>>>>> aurmich/dev
         $custom = [];
         foreach ($this->colors as $key => $value) {
             if (Arr::has($value, 'color')) {
                 $custom[$key] = (string) $value['color'];
             }
         }
-<<<<<<< HEAD
         
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
-=======
-        
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
->>>>>>> aurmich/dev
         return array_merge($defaults, $custom);
     }
 
@@ -490,25 +433,9 @@ class MetatagData extends Data implements Wireable
      */
     public function getColors(): array
     {
-<<<<<<< HEAD
 
         return ($this->colors);
         //return $this->getThemeColors();
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-        return ($this->colors);
-        //return $this->getThemeColors();
-=======
-        return $this->getThemeColors();
->>>>>>> 54f4fa16 (.)
-=======
-
-        return ($this->colors);
-        //return $this->getThemeColors();
->>>>>>> 536c6be4 (.)
->>>>>>> aurmich/dev
     }
 
     /**
@@ -529,39 +456,13 @@ class MetatagData extends Data implements Wireable
     }
 
     /**
-<<<<<<< HEAD
      * Get all colors with proper type handling.
      * Converts custom colors to Filament color format for compatibility.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * Get all colors with proper type handling.
-     * Converts custom colors to Filament color format for compatibility.
-=======
-     * Get the colors array with proper type handling.
->>>>>>> aurmich/dev
-=======
-     * Get the colors array with proper type handling.
->>>>>>> 54f4fa16 (.)
-=======
-     * Get all colors with proper type handling.
-     * Converts custom colors to Filament color format for compatibility.
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
->>>>>>> aurmich/dev
      *
      * @return array<string, array<int, string>>
      */
     public function getAllColors(): array
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
->>>>>>> aurmich/dev
         $filamentColors = $this->getFilamentColors();
         $customColors = [];
         
@@ -575,18 +476,6 @@ class MetatagData extends Data implements Wireable
         }
         
         return array_merge($filamentColors, $customColors);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-        return array_merge($this->getFilamentColors(), $this->colors);
->>>>>>> aurmich/dev
-=======
-        return array_merge($this->getFilamentColors(), $this->colors);
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
->>>>>>> aurmich/dev
     }
 
     /**

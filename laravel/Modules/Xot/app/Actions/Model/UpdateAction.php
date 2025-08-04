@@ -43,24 +43,7 @@ class UpdateAction
 
         /**
          * @phpstan-ignore method.notFound (.)
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> 15cb84fb (fix collisions)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
          */
         $model = tap($model)->update($data);
 

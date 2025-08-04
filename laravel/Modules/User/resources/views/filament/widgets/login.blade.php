@@ -4,17 +4,6 @@
     Modifica liberamente questa struttura per UX custom
 --}}
 <div class="filament-widget-login space-y-6">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> b58de900 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     @if ($errors->any())
         <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative text-sm">
             @foreach ($errors->all() as $error)
@@ -22,75 +11,12 @@
             @endforeach
         </div>
     @endif
-<<<<<<< HEAD
     <form wire:submit.prevent="save" class="space-y-4">
         {{ $this->form }}
-=======
-<<<<<<< HEAD
-=======
-    <form wire:submit.prevent="save" class="space-y-4">
-        {{ $this->form }}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <button type="submit" class="w-full py-3 rounded bg-blue-600 text-white font-bold hover:bg-blue-700 transition">{{ __('Accedi') }}</button>
-=======
->>>>>>> b58de900 (.)
-    <form wire:submit.prevent="save" class="space-y-4">
-        {{ $this->form }}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
         <button type="submit" class="w-full py-3 rounded bg-[#FF5F7E] text-white font-bold">
             {{ __('Accedi') }}
             <x-filament::loading-indicator class="h-5 w-5" wire:loading/>
         </button>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-        <button type="submit" class="w-full py-3 rounded bg-blue-600 text-white font-bold hover:bg-blue-700 transition">{{ __('Accedi') }}</button>
->>>>>>> aurmich/dev
-=======
-        <button type="submit" class="w-full py-3 rounded bg-[#FF5F7E] text-white font-bold">{{ __('Accedi') }}</button>
->>>>>>> 5aedfb65 (- change button color)
-=======
-    <form wire:submit.prevent="save" class="space-y-4">
-        {{ $this->form }}
-<<<<<<< HEAD
-        <button type="submit" class="w-full py-3 rounded bg-blue-600 text-white font-bold hover:bg-blue-700 transition">{{ __('Accedi') }}</button>
->>>>>>> 54f4fa16 (.)
-=======
-        <button type="submit" class="w-full py-3 rounded bg-[#0D9488] text-white font-bold transition">{{ __('Accedi') }}</button>
->>>>>>> 58d017c2 (- aggiornato stile dettaglio paziente)
-=======
-        <button type="submit" class="w-full py-3 rounded bg-[#FF5F7E] text-white font-bold transition">{{ __('Accedi') }}</button>
-<<<<<<< HEAD
->>>>>>> 89a8313a (- update primary colors)
-=======
->>>>>>> aurmich/dev
-=======
-    <form wire:submit.prevent="save" class="space-y-4">
-        {{ $this->form }}
-        <button type="submit" class="w-full py-3 rounded bg-[#FF5F7E] text-white font-bold transition">{{ __('Accedi') }}</button>
->>>>>>> a3f7230 (.)
->>>>>>> b58de900 (.)
-=======
-        <button type="submit" class="w-full py-3 rounded bg-[#FF5F7E] text-white font-bold hover:bg-[#E5556E] transition">{{ __('Accedi') }}</button>
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
-=======
-        <button type="submit" class="w-full py-3 rounded bg-blue-600 text-white font-bold hover:bg-blue-700 transition">{{ __('Accedi') }}</button>
->>>>>>> fb6fbaa2 (move resources/lang to lang)
-=======
-        <button type="submit" class="w-full py-3 rounded bg-[#FF5F7E] text-white font-bold">{{ __('Accedi') }}</button>
->>>>>>> 5aedfb65 (- change button color)
-=======
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
     </form>
     <div class="text-center text-sm text-gray-500 mt-2">
         @if (Route::has('password.request'))

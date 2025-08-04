@@ -172,17 +172,7 @@ class LoginWidget extends XotBaseWidget
     }
 }
 ```
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev
 # Regole di Struttura per i Widget Filament nel Modulo User
 
 ## Percorso Obbligatorio

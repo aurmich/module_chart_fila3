@@ -17,11 +17,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
             'help' => 'Identificativo univoco dell\'utente',
             'tooltip' => 'ID utente',
             'helper_text' => '',
@@ -53,73 +48,24 @@ return [
             'help' => 'Indirizzo email dell\'utente',
             'tooltip' => 'Email per l\'accesso e le comunicazioni',
             'helper_text' => '',
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 54f4fa16 (.)
-        ],
-        'name' => [
-            'label' => 'Nome',
-            'placeholder' => 'Inserisci il nome',
-        ],
-        'email' => [
-            'label' => 'Email',
-            'placeholder' => 'Inserisci l\'email',
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
         ],
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Inserisci la password',
-<<<<<<< HEAD
             'help' => 'Password per l\'accesso al sistema',
             'tooltip' => 'Password di accesso',
             'helper_text' => '',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'help' => 'Password per l\'accesso al sistema',
-            'tooltip' => 'Password di accesso',
-            'helper_text' => '',
-=======
-            'description' => 'password',
->>>>>>> aurmich/dev
-=======
-            'description' => 'password',
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
             'placeholder' => 'Conferma la password',
-<<<<<<< HEAD
             'help' => 'Ripeti la password per conferma',
             'tooltip' => 'Conferma della password',
             'helper_text' => '',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'help' => 'Ripeti la password per conferma',
-            'tooltip' => 'Conferma della password',
-            'helper_text' => '',
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
         ],
         'current_password' => [
             'label' => 'Password Attuale',
             'placeholder' => 'Inserisci la password attuale',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
             'help' => 'Password corrente per la verifica',
             'tooltip' => 'Password attuale',
             'helper_text' => '',
@@ -158,37 +104,10 @@ return [
             'help' => 'Stato dell\'account utente',
             'tooltip' => 'Stato dell\'utente',
             'helper_text' => '',
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 54f4fa16 (.)
-        ],
-        'role' => [
-            'label' => 'Ruolo',
-        ],
-        'roles' => [
-            'label' => 'Ruoli',
-        ],
-        'permissions' => [
-            'label' => 'Permessi',
-        ],
-        'status' => [
-            'label' => 'Stato',
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
             'options' => [
                 'active' => 'Attivo',
                 'inactive' => 'Inattivo',
                 'blocked' => 'Bloccato',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
                 'pending' => 'In Attesa',
                 'suspended' => 'Sospeso',
             ],
@@ -205,22 +124,10 @@ return [
                 'doctor' => 'Medico',
                 'patient' => 'Paziente',
                 'staff' => 'Personale',
-<<<<<<< HEAD
-=======
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
             ],
         ],
         'last_login' => [
             'label' => 'Ultimo Accesso',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
             'help' => 'Data e ora dell\'ultimo accesso',
             'tooltip' => 'Ultimo login',
             'helper_text' => '',
@@ -427,88 +334,6 @@ return [
             'icon' => 'heroicon-o-x-circle',
             'tooltip' => 'Disattiva l\'utente',
         ],
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 54f4fa16 (.)
-        ],
-        'created_at' => [
-            'label' => 'Data Creazione',
-        ],
-        'updated_at' => [
-            'label' => 'Ultima Modifica',
-        ],
-        'avatar' => [
-            'label' => 'Avatar',
-        ],
-        'language' => [
-            'label' => 'Lingua',
-        ],
-        'timezone' => [
-            'label' => 'Fuso Orario',
-        ],
-        'password_expires_at' => [
-            'label' => 'Scadenza Password',
-        ],
-        'verified' => [
-            'label' => 'Verificato',
-        ],
-        'unverified' => [
-            'label' => 'Non Verificato',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'isActive' => [
-            'label' => 'isActive',
-        ],
-        'deactivate' => [
-            'label' => 'deactivate',
-        ],
-        'delete' => [
-            'label' => 'delete',
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-        'create' => [
-            'label' => 'create',
-        ],
-        'email_verified_at' => [
-            'label' => 'Email Verificata il',
-        ],
-    ],
-    'actions' => [
-        'create' => 'Crea Utente',
-        'edit' => 'Modifica Utente',
-        'delete' => 'Elimina Utente',
-        'impersonate' => 'Impersona Utente',
-        'stop_impersonating' => 'Termina Impersonificazione',
-        'block' => 'Blocca',
-        'unblock' => 'Sblocca',
-        'send_reset_link' => 'Invia Link Reset Password',
-        'verify_email' => 'Verifica Email',
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
     ],
     'messages' => [
         'created' => 'Utente creato con successo',
@@ -516,11 +341,6 @@ return [
         'deleted' => 'Utente eliminato con successo',
         'blocked' => 'Utente bloccato con successo',
         'unblocked' => 'Utente sbloccato con successo',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
         'activated' => 'Utente attivato con successo',
         'deactivated' => 'Utente disattivato con successo',
         'reset_link_sent' => 'Link per il reset della password inviato',
@@ -553,36 +373,11 @@ return [
         'max' => 'Il campo :attribute non può superare :max caratteri',
         'confirmed' => 'La conferma del campo :attribute non corrisponde',
         'same' => 'Il campo :attribute deve corrispondere a :other',
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 54f4fa16 (.)
-        'reset_link_sent' => 'Link per il reset della password inviato',
-        'email_verified' => 'Email verificata con successo',
-        'impersonating' => 'Stai impersonando l\'utente :name',
-    ],
-    'validation' => [
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
         'email_unique' => 'Questa email è già in uso',
         'password_min' => 'La password deve essere di almeno :min caratteri',
         'password_confirmed' => 'Le password non coincidono',
         'current_password' => 'La password attuale non è corretta',
-<<<<<<< HEAD
         'password_complexity' => 'La password deve contenere almeno 8 caratteri, una lettera maiuscola, una minuscola, un numero e un carattere speciale',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        'password_complexity' => 'La password deve contenere almeno 8 caratteri, una lettera maiuscola, una minuscola, un numero e un carattere speciale',
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
     ],
     'permissions' => [
         'view_users' => 'Visualizza utenti',
@@ -591,11 +386,6 @@ return [
         'delete_users' => 'Elimina utenti',
         'impersonate_users' => 'Impersona utenti',
         'manage_roles' => 'Gestisci ruoli',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
         'manage_permissions' => 'Gestisci permessi',
         'view_roles' => 'Visualizza ruoli',
         'create_roles' => 'Crea ruoli',
@@ -785,18 +575,4 @@ return [
         'error' => 'Si è verificato un errore',
     ],
     'search_placeholder' => 'Cerca per nome, email o ruolo...',
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 54f4fa16 (.)
-    ],
-    'model' => [
-        'label' => 'Utente',
-    ],
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 ];

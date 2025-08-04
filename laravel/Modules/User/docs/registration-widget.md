@@ -45,27 +45,7 @@ public function register()
 public function mount(string $type): void
 {
     $this->type = $type;
-<<<<<<< HEAD
     $this->resource = XotData::make()->getUserResourceClassByType($type);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    $this->resource = XotData::make()->getUserResourceClassByType($type);
-=======
-    $this->resource = XotData::make()->getUserTypeResourceClass($type);
->>>>>>> 54f4fa16 (.)
-=======
-    $this->resource = XotData::make()->getUserResourceClassByType($type);
->>>>>>> ca5e1eaf (.)
-=======
-    $this->resource = XotData::make()->getUserTypeResourceClass($type);
->>>>>>> 15cb84fb (fix collisions)
-=======
-    $this->resource = XotData::make()->getUserResourceClassByType($type);
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
     $this->model = $this->resource::getModel();
     $this->action = Str::of($this->model)->replace('\\Models\\', '\\Actions\\')->append('\\RegisterAction')->toString();
     $this->form->fill();

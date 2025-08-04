@@ -1,18 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> aurmich/dev
-=======
-declare(strict_types=1);
-
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 return [
     'name' => 'Login',
     'fields' => [
@@ -55,16 +42,4 @@ return [
             'too_many_attempts' => 'Too many attempts, please try again later',
         ],
     ],
-<<<<<<< HEAD
 ];
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-];
-=======
-]; 
->>>>>>> aurmich/dev
-=======
-]; 
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev

@@ -9,49 +9,14 @@ use Illuminate\Support\Str;
 use Spatie\QueueableAction\QueueableAction;
 use Modules\Xot\Actions\Module\GetModuleNameByModelClassAction;
 
-<<<<<<< HEAD
 /**
  * Classe per la conversione di nomi di classi in nomi di viste.
  */
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-/**
- * Classe per la conversione di nomi di classi in nomi di viste.
- */
-=======
->>>>>>> 54f4fa16 (.)
-=======
-/**
- * Classe per la conversione di nomi di classi in nomi di viste.
- */
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
->>>>>>> 15cb84fb (fix collisions)
-=======
-/**
- * Classe per la conversione di nomi di classi in nomi di viste.
- */
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 class GetViewByClassAction
 {
     use QueueableAction;
 
     /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
      * Converte un nome di classe in un nome di vista.
      * Esempio: "Modules\UI\Filament\Widgets\GroupWidget" => "ui::filament.widgets.group"
      *
@@ -60,23 +25,6 @@ class GetViewByClassAction
      *
      * @return string Il nome della vista
      * @throws \Exception Se la vista non esiste
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-     * "Modules\UI\Filament\Widgets\GroupWidget" => "ui::filament.widgets.group"
-     * @return view-string
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
-     * "Modules\UI\Filament\Widgets\GroupWidget" => "ui::filament.widgets.group"
-     * @return view-string
->>>>>>> 15cb84fb (fix collisions)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
      */
     public function execute(string $class, string $suffix = ''): string
     {

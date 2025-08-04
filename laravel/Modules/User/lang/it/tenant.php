@@ -18,11 +18,6 @@ return [
         'heading' => 'Tenant',
     ],
     'fields' => [
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
         'first_name' => [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome',
@@ -85,38 +80,6 @@ return [
             'tooltip' => 'Applica i filtri selezionati',
             'description' => 'Azione per applicare i filtri configurati',
             'helper_text' => '',
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 54f4fa16 (.)
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
-        'secondary_color' => [
-            'label' => 'secondary_color',
-        ],
-        'slug' => [
-            'label' => 'slug',
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-        'id' => [
-            'label' => 'id',
-        ],
-        'message' => [
-            'label' => 'message',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
         ],
     ],
     'actions' => [

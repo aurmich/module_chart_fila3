@@ -30,13 +30,6 @@ class XotData extends Data implements Wireable
     use WireableData;
 
     public string $main_module = '';
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     public string $param_name = 'noset';
     public string $adm_home = '01';
     public ?string $adm_theme = ''; // ' => 'AdminLTE',
@@ -49,14 +42,7 @@ class XotData extends Data implements Wireable
     public string $register_type = '0';
     public string $verification_type = '';
     public bool $login_verified = false;
-<<<<<<< HEAD
     public bool $force_ssl = false;
-=======
-<<<<<<< HEAD
-    public bool $force_ssl = false;
-=======
->>>>>>> aurmich/dev
->>>>>>> aurmich/dev
     public bool $disable_frontend_dynamic_route = false;
     public bool $disable_admin_dynamic_route = false;
     public bool $disable_database_notifications = true;
@@ -69,54 +55,6 @@ class XotData extends Data implements Wireable
     public string $tenant_pivot_class = 'Modules\User\Models\TenantUser'; // = Membership::class;
     public ?string $super_admin = null;
     public string $video_player = 'html5';
-<<<<<<< HEAD
-=======
-=======
-
-=======
->>>>>>> ca5e1eaf (.)
-=======
-
->>>>>>> 15cb84fb (fix collisions)
-=======
->>>>>>> d23ba493 (add calendar)
-    public string $param_name = 'noset';
-    public string $adm_home = '01';
-    public ?string $adm_theme = ''; // ' => 'AdminLTE',
-    // public bool $enable_ads;//' => '1',
-    public string $primary_lang = 'it';
-    public string $pub_theme;
-    // ' => 'One',
-    public string $search_action = 'it/videos';
-    public bool $show_trans_key = false;
-    public string $register_type = '0';
-    public string $verification_type = '';
-    public bool $login_verified = false;
-    public bool $disable_frontend_dynamic_route = false;
-    public bool $disable_admin_dynamic_route = false;
-    public bool $disable_database_notifications = true;
-    public bool $register_adm_theme = false;
-    public bool $register_pub_theme = false;
-    public bool $register_collective = false;
-    public string $team_class = 'Modules\User\Models\Team'; // = Team::class;
-    public string $tenant_class = 'Modules\User\Models\Tenant'; // = Team::class;
-    public string $membership_class = 'Modules\User\Models\Membership'; // = Membership::class;
-    public string $tenant_pivot_class = 'Modules\User\Models\TenantUser'; // = Membership::class;
-    public ?string $super_admin = null;
-    public string $video_player = 'html5';
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> ca5e1eaf (.)
-=======
-
->>>>>>> 15cb84fb (fix collisions)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
     private static ?self $instance = null;
 
     /**
@@ -158,29 +96,8 @@ class XotData extends Data implements Wireable
         return $class;
     }
 
-<<<<<<< HEAD
 
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 54f4fa16 (.)
-=======
-
-
->>>>>>> ca5e1eaf (.)
-=======
->>>>>>> 15cb84fb (fix collisions)
-=======
-
-
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
     public function getUserByEmail(string $email): UserContract
     {
         $user_class = $this->getUserClass();
@@ -222,19 +139,7 @@ class XotData extends Data implements Wireable
         Assert::classExists($this->tenant_class, '['.$this->tenant_class.']['.__LINE__.']['.class_basename($this).']');
         // Assert::isInstanceOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']');
         // Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
-<<<<<<< HEAD
         Assert::implementsInterface($this->tenant_class, TenantContract::class, '['.$this->tenant_class.']['.__LINE__.']['.class_basename($this).']');
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        Assert::implementsInterface($this->tenant_class, TenantContract::class, '['.$this->tenant_class.']['.__LINE__.']['.class_basename($this).']');
-=======
-        Assert::implementsInterface($this->tenant_class, TenantContract::class, '['.__LINE__.']['.class_basename($this).']');
->>>>>>> 54f4fa16 (.)
-=======
-        Assert::implementsInterface($this->tenant_class, TenantContract::class, '['.$this->tenant_class.']['.__LINE__.']['.class_basename($this).']');
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
         Assert::isAOf($this->tenant_class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$this->tenant_class.']');
 
         return $this->tenant_class;
@@ -272,57 +177,14 @@ class XotData extends Data implements Wireable
     public function getProfileClass(): string
     {
         $class = 'Modules\\'.$this->main_module.'\Models\Profile';
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> 15cb84fb (fix collisions)
-=======
-
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
         // Verifica che la classe esista
         Assert::classExists($class, '['.$class.']['.__LINE__.']['.class_basename($this).']');
 
         // Verifica che sia un Model e implementi ProfileContract
         Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
         Assert::implementsInterface($class, ProfileContract::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-        
-=======
-
->>>>>>> ca5e1eaf (.)
-        // Verifica che la classe esista
-        Assert::classExists($class, '['.$class.']['.__LINE__.']['.class_basename($this).']');
-
-        // Verifica che sia un Model e implementi ProfileContract
-        Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
-        Assert::implementsInterface($class, ProfileContract::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
-<<<<<<< HEAD
-        
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> ca5e1eaf (.)
-=======
-        
->>>>>>> 15cb84fb (fix collisions)
-=======
-
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
         /** @var class-string<Model&ProfileContract> */
         return $class;
     }
@@ -376,27 +238,7 @@ class XotData extends Data implements Wireable
 
         // Utilizziamo un'asserzione per garantire che hasRole restituisca un booleano
         $result = $user->hasRole('super-admin');
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> ca5e1eaf (.)
-=======
-        
->>>>>>> 15cb84fb (fix collisions)
-=======
-
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
         return $result === true;
     }
 
@@ -405,27 +247,7 @@ class XotData extends Data implements Wireable
         if (null !== $this->profile) {
             return $this->profile;
         }
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> ca5e1eaf (.)
-=======
-        
->>>>>>> 15cb84fb (fix collisions)
-=======
-
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
         $user_id = (string) authId();
         $this->profile = $this->getProfileModelByUserId($user_id);
         Assert::implementsInterface($this->profile, ProfileContract::class, '['.__LINE__.']['.class_basename($this).']');
@@ -453,27 +275,7 @@ class XotData extends Data implements Wireable
         $path0 = base_path('Themes/'.$this->pub_theme.'/resources/views/'.$key);
         try {
             $path = realpath($path0);
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-            
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> ca5e1eaf (.)
-=======
-            
->>>>>>> 15cb84fb (fix collisions)
-=======
-
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
             return $path;
         } catch (\Exception $e) {
             throw new \Exception('realpath not find dir['.$path0.']'.PHP_EOL.'['.$e->getMessage().']');
@@ -484,27 +286,7 @@ class XotData extends Data implements Wireable
     /**
      * @return class-string<Model&UserContract>
      */
-<<<<<<< HEAD
     public function getUserClassByType(string $type): string{
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getUserClassByType(string $type): string{
-=======
-    public function getUserTypeClass(string $type): string{
->>>>>>> 54f4fa16 (.)
-=======
-    public function getUserClassByType(string $type): string{
->>>>>>> ca5e1eaf (.)
-=======
-    public function getUserTypeClass(string $type): string{
->>>>>>> 15cb84fb (fix collisions)
-=======
-    public function getUserClassByType(string $type): string{
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
         $user_class = $this->getUserClass();
         $userInstance = app($user_class);
         $types=$userInstance->getChildTypes();
@@ -512,25 +294,9 @@ class XotData extends Data implements Wireable
         if(is_null($class)){
             throw new \Exception('type '.$type.' not found in class '.$user_class);
         }
-<<<<<<< HEAD
         Assert::classExists($class, '['.__LINE__.']['.class_basename($this).']');
         Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
         Assert::implementsInterface($class, UserContract::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        Assert::classExists($class, '['.__LINE__.']['.class_basename($this).']');
-        Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
-        Assert::implementsInterface($class, UserContract::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
-=======
->>>>>>> aurmich/dev
-=======
-        Assert::classExists($class, '['.__LINE__.']['.class_basename($this).']');
-        Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
-        Assert::implementsInterface($class, UserContract::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
->>>>>>> aurmich/dev
         return $class;
     }
 
@@ -563,24 +329,6 @@ class XotData extends Data implements Wireable
 
     public function getUserChildTypes(): array
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $enum_class=$this->getUserChildTypeClass();
-=======
-=======
-        $user_class = $this->getUserClass();
-        $enum_class = Arr::get($user_class::casts(),'type',null);
-        if($enum_class==null){
-            $enum_class=Str::of($user_class)->replace('\\Models\\', '\\Enums\\')->append('TypeEnum')->toString();
-        }
-=======
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
         $enum_class=$this->getUserChildTypeClass();
         return $enum_class::cases();
         //$userInstance = app($user_class);
@@ -589,10 +337,6 @@ class XotData extends Data implements Wireable
 
     public function getUserChildTypeClass(): string
     {
-<<<<<<< HEAD
-=======
->>>>>>> b58de900 (.)
->>>>>>> aurmich/dev
         $user_class = $this->getUserClass();
         $user_instance=app($user_class);
         //$enum_class = Arr::get($user_class::casts(),'type',null);
@@ -600,62 +344,12 @@ class XotData extends Data implements Wireable
         if($enum_class==null){
             $enum_class=Str::of($user_class)->replace('\\Models\\', '\\Enums\\')->append('TypeEnum')->toString();
         }
-<<<<<<< HEAD
         Assert::stringNotEmpty($enum_class, 'enum_class is empty');
-=======
-<<<<<<< HEAD
->>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
-=======
-        $enum_class=$this->getUserChildTypeClass();
->>>>>>> 6aa6d801 (fix change type command)
-        return $enum_class::cases();
-        //$userInstance = app($user_class);
-        //return $userInstance->getChildTypes();
-    }
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function getUserChildTypeClass(): string
-    {
-        $user_class = $this->getUserClass();
-<<<<<<< HEAD
-        $user_instance=app($user_class);
-        //$enum_class = Arr::get($user_class::casts(),'type',null);
-        $enum_class = Arr::get($user_instance->getCasts(),'type',null);
-        if($enum_class==null){
-            $enum_class=Str::of($user_class)->replace('\\Models\\', '\\Enums\\')->append('TypeEnum')->toString();
-        }
-        Assert::stringNotEmpty($enum_class, 'enum_class is empty');
-=======
-=======
-    public function getUserChildTypeClass(): string
-    {
-        $user_class = $this->getUserClass();
->>>>>>> 6aa6d801 (fix change type command)
-        $enum_class = Arr::get($user_class::casts(),'type',null);
-        if($enum_class==null){
-            $enum_class=Str::of($user_class)->replace('\\Models\\', '\\Enums\\')->append('TypeEnum')->toString();
-        }
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 6aa6d801 (fix change type command)
-=======
-        Assert::stringNotEmpty($enum_class, 'enum_class is empty');
->>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
->>>>>>> aurmich/dev
         return $enum_class;
         //$userInstance = app($user_class);
         //return $userInstance->getChildTypes();
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 
     public function forceSSL(): bool
     {
@@ -677,50 +371,4 @@ class XotData extends Data implements Wireable
         return true;
     }
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> aurmich/dev
-=======
-        return $class;
-    }
-
-
-
-    public function getUserResourceClassByType(string $type): string {
-        $class = $this->getUserClassByType($type);
-
-        // Extract the module name from the class namespace
-        $moduleName = Str::before(Str::after($class, 'Modules\\'), '\\');
-
-        // Build the resource class path
-        $resourceClass = Str::of($class)
-            ->replace('\\Models\\', '\\Filament\\Resources\\')
-            ->append('Resource')
-            ->toString();
-
-        // If the class doesn't exist, try the alternative path (app/Filament/Resources)
-        if (!class_exists($resourceClass)) {
-            $resourceClass = 'Modules\\' . $moduleName . '\\app\\Filament\\Resources\\' .
-                          class_basename($class) . 'Resource';
-        }
-
-        if (!class_exists($resourceClass)) {
-            throw new \RuntimeException("Resource class not found for type: {$type}. Tried: {$resourceClass}");
-        }
-
-        return $resourceClass;
-    }
-
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
-=======
->>>>>>> 6aa6d801 (fix change type command)
-=======
->>>>>>> 4ec8f92 (.)
->>>>>>> b58de900 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
 }

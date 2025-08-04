@@ -254,42 +254,4 @@ public function handle(Failed $event): void
 1. Continua l'utilizzo di queste pratiche in tutto il modulo User e in altri moduli.
 2. Considera l'uso di generics (come `@template`) per migliorare ulteriormente la tipizzazione delle classi che gestiscono diverse tipologie di dati.
 3. Mantieni aggiornata la documentazione quando vengono modificati metodi o proprietà.
-<<<<<<< HEAD
 4. Utilizza strumenti di analisi automatica come PHPStan regolarmente per verificare che il codice rimanga conforme. 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-4. Utilizza strumenti di analisi automatica come PHPStan regolarmente per verificare che il codice rimanga conforme. 
-=======
-=======
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-4. Utilizza strumenti di analisi automatica come PHPStan regolarmente per verificare che il codice rimanga conforme. 
-## Collegamenti tra versioni di PHPSTAN_LEVEL10_FIXES.md
-* [PHPSTAN_LEVEL10_FIXES.md](docs/PHPSTAN_LEVEL10_FIXES.md)
-* [PHPSTAN_LEVEL10_FIXES.md](../../../Notify/docs/PHPSTAN_LEVEL10_FIXES.md)
-* [PHPSTAN_LEVEL10_FIXES.md](../../../User/docs/PHPSTAN_LEVEL10_FIXES.md)
-* [PHPSTAN_LEVEL10_FIXES.md](../../../Lang/docs/PHPSTAN_LEVEL10_FIXES.md)
-* [PHPSTAN_LEVEL10_FIXES.md](../../../Job/docs/PHPSTAN_LEVEL10_FIXES.md)
-* [PHPSTAN_LEVEL10_FIXES.md](../../../Media/docs/PHPSTAN_LEVEL10_FIXES.md)
-
-
-## Collegamenti tra versioni di phpstan_level10_fixes.md
-* [phpstan_level10_fixes.md](../../Notify/docs/phpstan_level10_fixes.md)
-* [phpstan_level10_fixes.md](../../Lang/docs/phpstan_level10_fixes.md)
-* [phpstan_level10_fixes.md](../../Job/docs/phpstan_level10_fixes.md)
-* [phpstan_level10_fixes.md](../../Media/docs/phpstan_level10_fixes.md)
-
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
-4. Utilizza strumenti di analisi automatica come PHPStan regolarmente per verificare che il codice rimanga conforme. 
->>>>>>> 9df8f556 (fix .md)
-=======
-4. Utilizza strumenti di analisi automatica come PHPStan regolarmente per verificare che il codice rimanga conforme. 
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
-4. Utilizza strumenti di analisi automatica come PHPStan regolarmente per verificare che il codice rimanga conforme. 
->>>>>>> bead9c28 (fix case)
->>>>>>> aurmich/dev

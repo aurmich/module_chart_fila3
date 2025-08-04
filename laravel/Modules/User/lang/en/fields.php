@@ -1,18 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> aurmich/dev
-=======
-declare(strict_types=1);
-
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 return [
     'new_password' => [
         'label' => 'New Password',
@@ -22,11 +9,6 @@ return [
         'label' => 'Confirm Password',
         'placeholder' => 'Confirm your new password',
     ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     'name' => 'Nome',
     'slug' => 'Slug',
     'email' => 'Email',
@@ -39,11 +21,4 @@ return [
     'actions' => [
         'attach_user' => 'Attacca utente',
     ],
-<<<<<<< HEAD
-=======
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 ];

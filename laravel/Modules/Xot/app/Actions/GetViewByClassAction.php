@@ -4,65 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions;
 
-<<<<<<< HEAD
 use Illuminate\Contracts\View\View;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Illuminate\Contracts\View\View;
-=======
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
-use Illuminate\Contracts\View\View;
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
-use Illuminate\Contracts\View\View;
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 use Illuminate\Support\Str;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
-<<<<<<< HEAD
 /**
  * Classe per ottenere una vista basata su una classe.
  */
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-/**
- * Classe per ottenere una vista basata su una classe.
- */
-=======
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
-/**
- * Classe per ottenere una vista basata su una classe.
- */
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
-/**
- * Classe per ottenere una vista basata su una classe.
- */
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 class GetViewByClassAction
 {
     use QueueableAction;
 
     /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
      * Ottiene una vista basata su una classe.
      *
      * @param string $class Nome della classe
@@ -74,27 +28,8 @@ class GetViewByClassAction
     public function execute(string $class, array $params = [], ?string $viewName = null): View
     {
         $viewName = $viewName ?? $this->getViewNameFromClass($class);
-<<<<<<< HEAD
         
         /** @var view-string $viewName */
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        
-        /** @var view-string $viewName */
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
->>>>>>> d23ba493 (add calendar)
-=======
-        
-        /** @var view-string $viewName */
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
->>>>>>> aurmich/dev
         return view($viewName, $params);
     }
 
@@ -113,39 +48,12 @@ class GetViewByClassAction
     }
 
     /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
      * Risolve il percorso della view basato sul namespace della classe.
      *
      * @param string $class Il nome completo della classe
      * @return string Il percorso della view
      */
-<<<<<<< HEAD
     public function executeOld(string $class): string
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function executeOld(string $class): string
-=======
-    public function execute(string $class): string
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
-    public function executeOld(string $class): string
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
-    public function executeOld(string $class): string
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
     {
         $arr = explode('\\', $class);
         Assert::isArray($arr);
@@ -157,14 +65,6 @@ class GetViewByClassAction
 
         $module = $arr[1];
         $module_low = Str::lower($module);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 
         // Estrai il nome della classe e convertilo in kebab-case
         $class_name = Str::kebab(class_basename($class));
@@ -173,26 +73,3 @@ class GetViewByClassAction
         return $module_low.'::pages.'.$class_name;
     }
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-        
-=======
-
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-        // Estrai il nome della classe e convertilo in kebab-case
-        $class_name = Str::kebab(class_basename($class));
-
-        // Costruisci il percorso della view
-        return $module_low.'::pages.'.$class_name;
-    }
-<<<<<<< HEAD
-} 
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
-}
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev

@@ -1,13 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
 declare(strict_types=1);
 
 return [
@@ -253,43 +245,3 @@ return [
         'data_protection' => 'Tutti i dati sono protetti secondo le normative europee GDPR',
     ],
 ];
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
-return array (
-  'fields' => 
-  array (
-    'name' => 
-    array (
-      'label' => 'name',
-      'placeholder' => 'name',
-      'helper_text' => 'name',
-      'description' => 'name',
-    ),
-    'phone' => 
-    array (
-      'label' => 'phone',
-      'placeholder' => 'phone',
-      'helper_text' => 'phone',
-      'description' => 'phone',
-    ),
-    'email' => 
-    array (
-      'label' => 'email',
-      'placeholder' => 'email',
-      'helper_text' => 'email',
-      'description' => 'email',
-    ),
-  ),
-  'label' => 'register tenant',
-);
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
-=======
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
