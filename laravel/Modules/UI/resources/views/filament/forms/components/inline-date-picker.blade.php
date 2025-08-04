@@ -355,6 +355,7 @@
             },
             
             navigateToMonth(direction) {
+                // Gestione navigazione puramente frontend - nessuna chiamata Livewire!
                 const currentDate = new Date(this.currentMonth + '-01');
                 
                 if (direction === 'prev') {
@@ -368,8 +369,9 @@
                 
                 this.currentMonth = newMonth;
                 
-                // Aggiorna il componente Livewire con il nuovo mese
-                $wire.call('setCurrentViewMonth', newMonth);
+                // Ricarica la pagina per aggiornare il calendario con il nuovo mese
+                // In futuro potremmo implementare aggiornamento dinamico del calendario
+                window.location.href = window.location.href + (window.location.href.includes('?') ? '&' : '?') + 'month=' + newMonth;
             }
         }"
         wire:model.live="{{ $statePath }}"
@@ -384,7 +386,7 @@
                 <!-- Viaggio verso il passato: accesso alla dimensione temporale precedente -->
                 <button 
                     type="button" 
-                    @click="navigateToMonth('prev')"
+                    x-on:click="navigateToMonth('prev')"
                     class="absolute -left-1.5 -top-1 flex items-center justify-center p-1.5 
                            text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 
                            focus:ring-offset-2 focus:ring-indigo-500 rounded-md transition-colors duration-200"
@@ -402,7 +404,7 @@
                 <!-- Viaggio verso il futuro: esplorazione dello spazio delle possibilità -->
                 <button 
                     type="button" 
-                    @click="navigateToMonth('next')"
+                    x-on:click="navigateToMonth('next')"
                     class="absolute -right-1.5 -top-1 flex items-center justify-center p-1.5 
                            text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 
                            focus:ring-offset-2 focus:ring-indigo-500 rounded-md transition-colors duration-200"
@@ -524,7 +526,7 @@
                 <div class="text-gray-600 dark:text-gray-400">
                     Selected: <span x-text="selectedDate"></span><br>
                     Enabled Dates: <span x-text="enabledDates.length"></span><br>
-                    Current Month: <span x-text="currentMonth"></span><br>
+                    Current Month: {{ $currentViewMonth->format('Y-m') }}<br>
                     Compact Mode: {{ $compactMode ? 'true' : 'false' }}<br>
                     Show Navigation: {{ $showNavigation ? 'true' : 'false' }}
                 </div>
@@ -565,9 +567,6 @@ document.addEventListener('alpine:init', () => {
         
         // Metodo per transizioni temporali fluide
         transitionToMonth(targetMonth) {
-            // Implementa easing temporale per navigazione smooth
-            this.currentMonth = targetMonth;
-            
             // Trigger evento personalizzato per integrazione con sistemi esterni
             this.$dispatch('month-changed', { 
                 month: targetMonth,

@@ -159,6 +159,9 @@ class InlineDatePicker extends DatePicker
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b13ef45d (✨ (InlineDatePicker): add comprehensive documentation for the InlineDatePicker component to improve developer understanding and usage)
      * Mese corrente per la navigazione (formato Y-m).
      * Proprietà pubblica accessibile dal JavaScript per la navigazione.
      * 
@@ -242,6 +245,7 @@ class InlineDatePicker extends DatePicker
 <<<<<<< HEAD
 =======
         $this->displayDate = now()->startOfMonth();
+        $this->currentViewMonth = now()->format('Y-m');
 
         $this->afterStateHydrated(static function (InlineDatePicker $component, $state): void {
             if (! $state) {
@@ -255,6 +259,7 @@ class InlineDatePicker extends DatePicker
 
             $component->state($state);
             $component->displayDate = $state->copy()->startOfMonth();
+            $component->currentViewMonth = $state->format('Y-m');
         });
 
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
@@ -277,6 +282,7 @@ class InlineDatePicker extends DatePicker
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -389,10 +395,14 @@ class InlineDatePicker extends DatePicker
 =======
      * Naviga al mese precedente.
 <<<<<<< HEAD
+=======
+     * Naviga al mese precedente.
+>>>>>>> b13ef45d (✨ (InlineDatePicker): add comprehensive documentation for the InlineDatePicker component to improve developer understanding and usage)
      * Implementa la "regressione temporale controllata" secondo i principi:
      * - Determinismo Causale: Ogni click ha un effetto prevedibile
      * - Conservazione del Contesto: Lo stato generale rimane coerente
      * - Principio di Minima Azione: Minimo sforzo per massimo risultato fenomenologico
+<<<<<<< HEAD
 >>>>>>> b13ef45d (✨ (InlineDatePicker): add comprehensive documentation for the InlineDatePicker component to improve developer understanding and usage)
      * 
      * @return void
@@ -522,22 +532,40 @@ class InlineDatePicker extends DatePicker
 >>>>>>> b13ef45d (✨ (InlineDatePicker): add comprehensive documentation for the InlineDatePicker component to improve developer understanding and usage)
 =======
      * Naviga al mese precedente
+=======
+>>>>>>> b13ef45d (✨ (InlineDatePicker): add comprehensive documentation for the InlineDatePicker component to improve developer understanding and usage)
      * 
      * @return void
      */
     public function previousMonth(): void
     {
-        $this->displayDate = $this->displayDate->subMonth();
+        if ($this->currentViewMonth) {
+            $currentMonth = Carbon::createFromFormat('Y-m', $this->currentViewMonth);
+            $this->currentViewMonth = $currentMonth->subMonth()->format('Y-m');
+        } else {
+            $this->displayDate = $this->displayDate->copy()->subMonth();
+            $this->currentViewMonth = $this->displayDate->format('Y-m');
+        }
     }
 
     /**
-     * Naviga al mese successivo
+     * Naviga al mese successivo.
+     * Implementa la "progressione temporale controllata" secondo i principi di:
+     * - Anticipazione Fenomenologica: Movimento verso il futuro possibile
+     * - Sintesi Temporale: Unificazione di passato e futuro nel presente vissuto
+     * - Intenzionalità Direzionale: Volontà orientata verso l'evoluzione
      * 
      * @return void
      */
     public function nextMonth(): void
     {
-        $this->displayDate = $this->displayDate->addMonth();
+        if ($this->currentViewMonth) {
+            $currentMonth = Carbon::createFromFormat('Y-m', $this->currentViewMonth);
+            $this->currentViewMonth = $currentMonth->addMonth()->format('Y-m');
+        } else {
+            $this->displayDate = $this->displayDate->copy()->addMonth();
+            $this->currentViewMonth = $this->displayDate->format('Y-m');
+        }
     }
     
     /**
@@ -562,6 +590,81 @@ class InlineDatePicker extends DatePicker
     }
 
     /**
+     * Imposta il mese di visualizzazione corrente
+     * Metodo chiamato dal JavaScript per la navigazione temporale
+     * 
+     * Questo metodo rappresenta l'interfaccia quantistica tra
+     * l'interazione umana e la macchina del tempo digitale.
+     * 
+     * @param string $monthString Stringa del mese in formato Y-m o timestamp
+     * @return void
+     */
+    public function setCurrentViewMonth(string $monthString): void
+    {
+        try {
+            // Tentativo di parsing della stringa come data
+            if (preg_match('/^\d{4}-\d{2}$/', $monthString)) {
+                // Formato Y-m
+                $newDate = Carbon::createFromFormat('Y-m', $monthString)->startOfMonth();
+            } elseif (is_numeric($monthString)) {
+                // Timestamp
+                $newDate = Carbon::createFromTimestamp((int) $monthString)->startOfMonth();
+            } else {
+                // Parse generico
+                $newDate = Carbon::parse($monthString)->startOfMonth();
+            }
+            
+            $this->displayDate = $newDate;
+            
+            // Rigenera i dati del calendario per il nuovo mese
+            // Questo è cruciale per aggiornare la vista con il nuovo mese
+            $this->refreshCalendarData();
+            
+            // Registra l'evento di navigazione per debugging
+            if (config('app.debug')) {
+                \Log::info('InlineDatePicker: Navigation to month', [
+                    'input' => $monthString,
+                    'parsed_date' => $newDate->format('Y-m-d'),
+                    'component_id' => $this->getIdSafely(),
+                ]);
+            }
+            
+        } catch (\Exception $e) {
+            // Fallback sicuro in caso di errore di parsing
+            \Log::warning('InlineDatePicker: Failed to parse month string', [
+                'input' => $monthString,
+                'error' => $e->getMessage(),
+                'component_id' => $this->getIdSafely(),
+            ]);
+            
+            // Mantieni la data corrente in caso di errore
+            // Non modificare $this->displayDate
+        }
+    }
+
+    /**
+     * Rigenera i dati del calendario dopo un cambio di mese.
+     * 
+     * Questo metodo è essenziale per sincronizzare il calendario visualizzato
+     * con la nuova data di visualizzazione dopo la navigazione.
+     * 
+     * @return void
+     */
+    protected function refreshCalendarData(): void
+    {
+        // Rigenera i dati del calendario con la nuova data
+        $this->calendar = $this->generateCalendarData();
+        
+        // Aggiorna i metadati di navigazione
+        $this->currentViewMonth = $this->displayDate;
+        $this->previousMonth = $this->displayDate->copy()->subMonth();
+        $this->nextMonth = $this->displayDate->copy()->addMonth();
+        
+        // Forza il refresh del componente Livewire per aggiornare la vista
+        $this->dispatch('$refresh');
+    }
+
+    /**
      * Imposta il mese corrente
      */
     public function setDisplayDate(CarbonInterface $date): static
@@ -581,9 +684,19 @@ class InlineDatePicker extends DatePicker
      */
     public function generateCalendarData(): array
     {
+<<<<<<< HEAD
         $firstDay = $this->displayDate->copy()->startOfMonth()->startOfWeek(Carbon::MONDAY);
         $lastDay = $this->displayDate->copy()->endOfMonth()->endOfWeek(Carbon::SUNDAY);
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+        // Usa currentViewMonth se disponibile, altrimenti displayDate
+        $targetMonth = $this->currentViewMonth 
+            ? Carbon::createFromFormat('Y-m', $this->currentViewMonth)->startOfMonth()
+            : $this->displayDate->copy()->startOfMonth();
+            
+        $firstDay = $targetMonth->copy()->startOfWeek(Carbon::MONDAY);
+        $lastDay = $targetMonth->copy()->endOfMonth()->endOfWeek(Carbon::SUNDAY);
+>>>>>>> b13ef45d (✨ (InlineDatePicker): add comprehensive documentation for the InlineDatePicker component to improve developer understanding and usage)
         
         $weeks = collect();
         $currentDay = $firstDay->copy();
@@ -592,6 +705,7 @@ class InlineDatePicker extends DatePicker
             $week = collect();
             
             for ($i = 0; $i < 7; $i++) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -625,6 +739,9 @@ class InlineDatePicker extends DatePicker
 >>>>>>> 345f8677 (phpstan)
 =======
                 $isCurrentMonth = $currentDay->month === $this->displayDate->month;
+=======
+                $isCurrentMonth = $currentDay->month === $targetMonth->month;
+>>>>>>> b13ef45d (✨ (InlineDatePicker): add comprehensive documentation for the InlineDatePicker component to improve developer understanding and usage)
                 $isToday = $currentDay->isToday();
                 $isSelected = false;
                 
@@ -706,6 +823,7 @@ class InlineDatePicker extends DatePicker
             
             // Metadati temporali
 <<<<<<< HEAD
+<<<<<<< HEAD
             'month' => $targetMonth,
             'monthName' => $targetMonth->translatedFormat('F'),
             'year' => $targetMonth->year,
@@ -714,6 +832,11 @@ class InlineDatePicker extends DatePicker
             'monthName' => $this->displayDate->translatedFormat('F'),
             'year' => $this->displayDate->year,
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+            'month' => $targetMonth,
+            'monthName' => $targetMonth->translatedFormat('F'),
+            'year' => $targetMonth->year,
+>>>>>>> b13ef45d (✨ (InlineDatePicker): add comprehensive documentation for the InlineDatePicker component to improve developer understanding and usage)
             
             // Controlli navigazione intelligente
             'hasPreviousMonth' => $this->hasPreviousMonth(),
@@ -947,11 +1070,15 @@ class InlineDatePicker extends DatePicker
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b13ef45d (✨ (InlineDatePicker): add comprehensive documentation for the InlineDatePicker component to improve developer understanding and usage)
         // Determina il mese target per la visualizzazione
         $targetMonth = $this->currentViewMonth 
             ? Carbon::createFromFormat('Y-m', $this->currentViewMonth)->startOfMonth()
             : $this->displayDate->copy()->startOfMonth();
 
+<<<<<<< HEAD
 =======
         $calendarData = $this->generateCalendarData();
         
@@ -969,15 +1096,17 @@ class InlineDatePicker extends DatePicker
     }
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> b13ef45d (✨ (InlineDatePicker): add comprehensive documentation for the InlineDatePicker component to improve developer understanding and usage)
         return array_merge(parent::getViewData(), [
             // Struttura calendario principale  
             'calendar' => $this->generateCalendarData(),
             
             // Controllo temporale per navigazione
-            'currentViewMonth' => $this->displayDate,
+            'currentViewMonth' => $targetMonth,
             'currentValue' => $currentState,
-            'previousMonth' => $this->displayDate->copy()->subMonth(),
-            'nextMonth' => $this->displayDate->copy()->addMonth(),
+            'previousMonth' => $targetMonth->copy()->subMonth(),
+            'nextMonth' => $targetMonth->copy()->addMonth(),
             
             // Configurazione comportamento
             'enabledDates' => $this->getEnabledDates(),
@@ -990,9 +1119,9 @@ class InlineDatePicker extends DatePicker
             'statePath' => $this->getStatePathSafely(),
             
             // Localizzazione temporale
-            'monthName' => $this->displayDate->translatedFormat('F'),
-            'year' => $this->displayDate->year,
-            'monthYearLabel' => $this->displayDate->translatedFormat('F Y'),
+            'monthName' => $targetMonth->translatedFormat('F'),
+            'year' => $targetMonth->year,
+            'monthYearLabel' => $targetMonth->translatedFormat('F Y'),
             
             // Metadati per accessibilità e debugging
             'weekdays' => ['L', 'M', 'M', 'G', 'V', 'S', 'D'],
@@ -1002,6 +1131,7 @@ class InlineDatePicker extends DatePicker
     }
 
     /**
+<<<<<<< HEAD
      * Imposta il mese di visualizzazione da stringa (metodo Livewire).
      * 
      * Implementa il ponte fenomenologico tra interfaccia JavaScript e logica PHP secondo:
@@ -1079,6 +1209,8 @@ class InlineDatePicker extends DatePicker
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 
     /**
+=======
+>>>>>>> b13ef45d (✨ (InlineDatePicker): add comprehensive documentation for the InlineDatePicker component to improve developer understanding and usage)
      * Ottiene l'ID del componente in modo sicuro.
      * 
      * @return string|null
@@ -1135,8 +1267,11 @@ class InlineDatePicker extends DatePicker
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 =======
+=======
+>>>>>>> b13ef45d (✨ (InlineDatePicker): add comprehensive documentation for the InlineDatePicker component to improve developer understanding and usage)
 
     /**
      * Imposta il colore di evidenziazione per le date abilitate.
@@ -1179,9 +1314,12 @@ class InlineDatePicker extends DatePicker
         $this->showNavigation = $show;
         return $this;
     }
+<<<<<<< HEAD
 >>>>>>> b13ef45d (✨ (InlineDatePicker): add comprehensive documentation for the InlineDatePicker component to improve developer understanding and usage)
 =======
 >>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 =======
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+>>>>>>> b13ef45d (✨ (InlineDatePicker): add comprehensive documentation for the InlineDatePicker component to improve developer understanding and usage)
 } 
