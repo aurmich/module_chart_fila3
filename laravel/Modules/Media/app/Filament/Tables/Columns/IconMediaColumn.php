@@ -124,17 +124,15 @@ class IconMediaColumn extends IconColumn
 >>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 =======
                     /*
-                    $path = Storage::disk($media->disk)->path($media->getPathRelativeToRoot());
-                    return response()->file($path, [
+                    $headers=[
                         'Content-Type' => $media->mime_type,
                         'Content-Disposition' => 'inline; filename="' . basename($media->getPathRelativeToRoot()) . '"'
-                    ]);
+                    ];
+                    $path = Storage::disk($media->disk)->path($media->getPathRelativeToRoot());
+                    return response()->file($path, $headers);
                     */
                     /*
-                    return Storage::disk($media->disk)->response($media->getPathRelativeToRoot(), null, [
-                        'Content-Type' => 'application/pdf',
-                        'Content-Disposition' => 'inline; filename="' . basename($media->getPathRelativeToRoot()) . '"'
-                    ]);
+                    return Storage::disk($media->disk)->response($media->getPathRelativeToRoot(), null, $headers);
                     */
 >>>>>>> 8d591468 (fields translations)
                 })

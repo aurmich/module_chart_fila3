@@ -10,6 +10,7 @@ namespace Modules\SaluteOra\Models;
 use Parental\HasParent;
 use Modules\Geo\Models\Address;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\MediaLibrary\HasMedia;
 use Modules\SaluteOra\Enums\UserTypeEnum;
 use Modules\SaluteOra\Models\Appointment;
@@ -208,9 +209,13 @@ use Parental\HasParent;
 >>>>>>> de1d4084 (✨ (DoctorResource.php, PatientResource.php, StudioResource.php): introduce new Studio resource and update Doctor resource to include studio relationship)
 =======
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+use Spatie\MediaLibrary\HasMedia;
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
 use Modules\SaluteOra\Enums\UserTypeEnum;
 use Modules\SaluteOra\Enums\UserStateEnum;
 use Modules\SaluteOra\Models\DoctorStudio;
+use Spatie\MediaLibrary\InteractsWithMedia;
 use Modules\SaluteOra\States\User\UserState;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
@@ -365,9 +370,10 @@ use Illuminate\Database\Eloquent\Relations\HasOneThrough;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor wherePregnancyCertificate($value)
  * @mixin \Eloquent
  */
-class Doctor extends User
+class Doctor extends User implements HasMedia
 {
     use HasParent;
+    use InteractsWithMedia;
 
    
     /** @var list<string>     */
@@ -390,6 +396,7 @@ class Doctor extends User
         //'specialization',
         'certifications', // Mantenuto per retrocompatibilità
         'certification', // 
+<<<<<<< HEAD
         'doctor_certificate',
         //'availability',
         'status',
@@ -449,6 +456,8 @@ class Doctor extends User
         //'specialization',
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
         'certifications',
+=======
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
         //'availability',
         'status',
         'country_code',
@@ -464,7 +473,7 @@ class Doctor extends User
     protected $appends = [
         //'health_card',
         //'identity_document',
-        //'isee_certificate',
+        
         //'pregnancy_certificate',
         // 'certifications', // Gestito da getter personalizzato
         //'studio',
@@ -474,14 +483,13 @@ class Doctor extends User
 
     /** @var list<string>     */
     public static array $attachments = [
-        'certifications',
-       
+        'certification', // Gestito come allegato singolo
     ];
 
     /** @var list<string>     */
     protected $with = [
-        //'studio',
-        //'studio.address',
+        'studio',
+        'studio.address',
     ];
 
     /** @var array<string, mixed>  */
@@ -506,6 +514,7 @@ class Doctor extends User
     public function getDataDefaults(): array
     {
         return [
+            //'certification'=> null,
             'studio'=>[
                 'description' => null,
                 'address'=>[
@@ -527,6 +536,7 @@ class Doctor extends User
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
@@ -538,6 +548,18 @@ class Doctor extends User
             'certifications' => 'array',
           //  'availability' => 'array',
 >>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
+=======
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return array_merge(parent::casts(), [
+            //'certification' => 'array',  // Gestisce la conversione da JSON a array
+            'certifications' => 'array', // Per retrocompatibilità
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
         ]);
     }
 

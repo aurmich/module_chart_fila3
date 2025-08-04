@@ -434,6 +434,7 @@ abstract class XotBaseResource extends FilamentResource
                 ->reorderable()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ->multiple($multiple)
 =======
                 ->multiple()
@@ -441,8 +442,12 @@ abstract class XotBaseResource extends FilamentResource
 =======
                 ->multiple($multiple)
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+                //->multiple($multiple)
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
                 ->preserveFilenames()
                 ->columnSpanFull()
+                
                 ->afterStateUpdated(function ($state, Forms\Set $set) use ($attachment) {
                     if (!$state) return;
 <<<<<<< HEAD
@@ -472,6 +477,7 @@ abstract class XotBaseResource extends FilamentResource
                     
                     $set($attachment, $sessionFiles);
                 })
+                
                 ;
         }
         return $schema;
@@ -479,10 +485,28 @@ abstract class XotBaseResource extends FilamentResource
 <<<<<<< HEAD
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+    /*
+     'certification' => Forms\Components\FileUpload::make('certification')
+                ->label(trans('saluteora::doctor.fields.certification.label'))
+                ->helperText(trans('saluteora::doctor.fields.certification.help'))
+                ->disk('private')  // Usa un disco privato per i documenti sensibili
+                ->directory('doctors/certifications')  // Directory specifica per le certificazioni
+                ->acceptedFileTypes(['application/pdf', 'image/jpeg', 'image/png'])  // Formati accettati
+                ->maxSize(5120)  // 5MB massimo
+                ->downloadable()  // Permetti il download
+                ->openable()      // Permetti l'anteprima
+                ->previewable()   // Mostra l'anteprima
+                ->preserveFilenames()  // Mantieni il nome originale del file
+                ->rules(['file', 'mimes:pdf,jpg,jpeg,png', 'max:5120']),  // Regole di validazione
+                */
+
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
     protected static function getStepByName(string $name): Forms\Components\Wizard\Step
     {
         $schema=Str::of($name)->snake()->studly()->prepend('get')->append('Schema')->toString();

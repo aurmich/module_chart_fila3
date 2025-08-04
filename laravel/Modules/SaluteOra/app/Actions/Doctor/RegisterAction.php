@@ -267,6 +267,18 @@ class RegisterAction
 >>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
         }
 
+         //-------------------------------------------------
+             //*
+             $attachments = Doctor::$attachments;
+             foreach ($attachments as $attachment) {
+                     /** @phpstan-ignore-next-line */
+                     $doctor->addMediaFromDisk($data[$attachment],'local')
+                         ->toMediaCollection($attachment);
+ 
+             }
+             //*/
+             //-------------------------------------------------
+
         //$record->save();
         //$record->update($data);
         /*

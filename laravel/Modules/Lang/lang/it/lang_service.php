@@ -444,7 +444,7 @@ return array (
       'placeholder' => 'Configura orari apertura',
       'help' => 'Orari di apertura e disponibilità del servizio medico',
       'description' => 'schedule',
-      'helper_text' => 'schedule',
+      'helper_text' => '',
     ),
     'schedule1' => 
     array (
@@ -545,6 +545,7 @@ return array (
         'help' => 'Nome completo del cliente o paziente',
       ),
     ),
+<<<<<<< HEAD
 <<<<<<< HEAD
     'roles' => 
     array (
@@ -853,6 +854,11 @@ return array (
     'change-password' => 
     array (
       'label' => 'change-password',
+=======
+    'certification' => 
+    array (
+      'label' => 'certification',
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
     ),
   ),
   'actions' => 

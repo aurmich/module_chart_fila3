@@ -3,9 +3,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array (
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+return array (
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
   'navigation' => 
   array (
     'label' => 'Studi',
@@ -63,6 +67,7 @@ return array (
       'label' => 'Nome Studio',
       'placeholder' => 'Inserisci il nome dello studio odontoiatrico',
       'help' => 'Denominazione ufficiale dello studio o della struttura sanitaria',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
@@ -76,12 +81,17 @@ return array (
       'label' => 'nome studio',
       'placeholder' => 'nome studio',
 >>>>>>> aurmich/dev
+=======
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
       'helper_text' => '',
       'description' => '',
     ),
     'address' => 
     array (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
       'label' => 'Indirizzo Completo',
       'placeholder' => 'Via/Piazza e numero civico dello studio',
       'help' => 'Indirizzo fisico completo dove si trova lo studio',
@@ -115,6 +125,7 @@ return array (
       'label' => 'Numero di Telefono',
       'placeholder' => 'Inserisci il numero di telefono dello studio',
       'help' => 'Numero di telefono principale per contatti e prenotazioni',
+<<<<<<< HEAD
 =======
       'full_address' => 
       array (
@@ -166,11 +177,14 @@ return array (
       'label' => 'phone',
       'placeholder' => 'phone',
 >>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+=======
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
       'helper_text' => '',
       'description' => '',
     ),
     'email' => 
     array (
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       'label' => 'Email Studio',
@@ -184,6 +198,11 @@ return array (
       'label' => 'email',
       'placeholder' => 'email',
 >>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+=======
+      'label' => 'Email Studio',
+      'placeholder' => 'Inserisci l\'email di contatto dello studio',
+      'help' => 'Indirizzo email ufficiale per comunicazioni professionali',
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
       'helper_text' => '',
       'description' => '',
     ),
@@ -191,6 +210,9 @@ return array (
     array (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
       'label' => 'Sito Web',
       'placeholder' => 'Inserisci l\'URL del sito web (es. https://studio.it)',
       'help' => 'Indirizzo del sito web ufficiale dello studio odontoiatrico',
@@ -292,6 +314,7 @@ return array (
       'help' => 'Data di eliminazione logica dello studio dal sistema',
       'helper_text' => '',
       'description' => '',
+<<<<<<< HEAD
 =======
       'description' => 'website',
       'helper_text' => '',
@@ -486,12 +509,17 @@ return array (
     array (
       'description' => 'administrative_area_level_1',
       'helper_text' => 'administrative_area_level_1',
+=======
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
     ),
   ),
   'actions' => 
   array (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
     'create' => 
     array (
       'label' => 'Nuovo Studio',
@@ -602,6 +630,7 @@ return array (
     array (
       'label' => 'Filtra per Regione',
       'placeholder' => 'Seleziona una regione',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
@@ -614,12 +643,17 @@ return array (
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+=======
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
     ),
   ),
   'messages' => 
   array (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
     'empty_state' => 'Nessuno studio registrato',
     'loading' => 'Caricamento dati studi...',
     'saved' => 'Modifiche salvate correttamente',
@@ -667,6 +701,7 @@ return array (
       'label' => 'Informazioni Commerciali',
       'description' => 'Dati fiscali e commerciali dello studio',
     ),
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -1156,3 +1191,7 @@ return [
     ],
 ];
 >>>>>>> 8d591468 (fields translations)
+=======
+  ),
+);
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)

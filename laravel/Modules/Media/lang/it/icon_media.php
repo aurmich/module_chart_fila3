@@ -32,7 +32,7 @@ return array (
   array (
     'change-state' => 
     array (
-      'label' => 'change-state',
+      'label' => 'cambia stato',
     ),
     'state' => 
     array (

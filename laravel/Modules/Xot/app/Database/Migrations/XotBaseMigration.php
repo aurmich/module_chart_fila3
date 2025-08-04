@@ -29,6 +29,7 @@ abstract class XotBaseMigration extends Migration
 
     public function __construct()
     {
+<<<<<<< HEAD
         /*
         // During testing, use a dummy model to prevent errors
         if (app()->environment('testing')) {
@@ -42,6 +43,8 @@ abstract class XotBaseMigration extends Migration
         }
         */
         
+=======
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
         $this->model_class = $this->model_class ?? $this->getModelClass();
         Assert::isInstanceOf($model = app($this->model_class), Model::class);
         $this->model = $model;
@@ -88,6 +91,7 @@ abstract class XotBaseMigration extends Migration
 
     public function getTable(): string
     {
+<<<<<<< HEAD
         /*
         // During testing, use table property or derive from migration name
         if (app()->environment('testing')) {
@@ -109,17 +113,22 @@ abstract class XotBaseMigration extends Migration
             return 'unknown_table';
         }
         */
+=======
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
         return $this->model->getTable();
     }
 
     public function getConn(): Builder
     {
+<<<<<<< HEAD
         /*
         // During testing, use default schema connection
         if (app()->environment('testing') || !isset($this->model)) {
             return Schema::connection(null);
         }
         */
+=======
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
         return Schema::connection($this->model->getConnectionName());
     }
 
@@ -178,11 +187,14 @@ abstract class XotBaseMigration extends Migration
         return $this->getConn()->hasColumn($this->getTable(), $column);
     }
 
+<<<<<<< HEAD
     public function hasTable(string $table): bool
     {
         return $this->getConn()->hasTable($table);
     }
 
+=======
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
     public function getColumnType(string $column): string
     {
         try {
@@ -420,6 +432,17 @@ abstract class XotBaseMigration extends Migration
     {
         return DB::connection($this->getConnection())->getDriverName();
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 345f8677 (phpstan)
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
     /**
      * Add a foreign ID column to the table based on a related model.
      *
@@ -430,7 +453,52 @@ abstract class XotBaseMigration extends Migration
      */
     public function foreignIdFor($table, string $class, ?string $column = null) {
         return $table->foreignIdFor($class, $column);
+<<<<<<< HEAD
     } 
     
    
+=======
+<<<<<<< HEAD
+    } 
+    
+    /**
+     * Determine if the given table exists.
+     *
+     * @param  string  $table
+     * @return bool
+     */
+    public function hasTable(string $table): bool {
+        return $this->getConn()->hasTable($table);
+    } 
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+=======
+>>>>>>> d23ba493 (add calendar)
+    public function foreignIdFor($table, $class) {
+        $table->foreignIdFor($class);
+=======
+    public function foreignIdFor($table, $class, $column = null) {
+        $table->foreignIdFor($class, $column);
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
+=======
+>>>>>>> 345f8677 (phpstan)
+    } 
+    
+    /**
+     * Determine if the given table exists.
+     *
+     * @param  string  $table
+     * @return bool
+     */
+    public function hasTable(string $table): bool {
+        return $this->getConn()->hasTable($table);
+    } 
+<<<<<<< HEAD
+>>>>>>> 35a7c2ee (- homeboarding chiara)
+=======
+>>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
 }// end XotBaseMigration

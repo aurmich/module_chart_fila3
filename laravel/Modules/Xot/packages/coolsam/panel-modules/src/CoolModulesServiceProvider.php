@@ -15,6 +15,9 @@ class CoolModulesServiceProvider extends PackageServiceProvider
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
     /**
      * Traccia i panel che hanno già gli hook registrati.
      * 
@@ -22,10 +25,13 @@ class CoolModulesServiceProvider extends PackageServiceProvider
      */
     private static array $processedPanels = [];
 
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
     public function configurePackage(Package $package): void
     {
         /*
@@ -46,6 +52,9 @@ class CoolModulesServiceProvider extends PackageServiceProvider
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
             $panels = Filament::getPanels();
            
             foreach ($panels as $panel) {
@@ -110,6 +119,7 @@ class CoolModulesServiceProvider extends PackageServiceProvider
                         );
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     
                     // Marca questo panel come processato
                     self::$processedPanels[$panelId] = true;
@@ -117,6 +127,11 @@ class CoolModulesServiceProvider extends PackageServiceProvider
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+                    
+                    // Marca questo panel come processato
+                    self::$processedPanels[$panelId] = true;
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
                 }
             }
         });

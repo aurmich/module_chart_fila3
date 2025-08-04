@@ -84,6 +84,7 @@ use Modules\SaluteOra\Enums\YearsInItalyEnum;
 use Filament\Forms\Concerns\InteractsWithForms;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Livewire\Component;
 >>>>>>> 54f4fa16 (.)
 =======
@@ -91,6 +92,9 @@ use Modules\Xot\Actions\View\GetViewPathAction;
 =======
 >>>>>>> 5f5e25a8 (✨ (YearsInItalyEnum.php): introduce YearsInItalyEnum to define years in Italy options for the application)
 
+=======
+use Illuminate\Validation\Rule;
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
 use Modules\Xot\Actions\View\GetViewPathAction;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -103,7 +107,11 @@ use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
 use Tapp\FilamentCountryCodeField\Forms\Components\CountryCodeSelect;
 use Modules\Media\Filament\Resources\PatientResource\Pages\PreviewAttachment;
+<<<<<<< HEAD
 >>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
+=======
+use Modules\SaluteOra\Models\User;
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
 
 class PatientResource extends XotBaseResource
 {
@@ -295,22 +303,23 @@ class PatientResource extends XotBaseResource
             '5' => '5',
         ];
         return [
-            Forms\Components\TextInput::make('first_name')
+            'id' => Forms\Components\Hidden::make('id'),
+            'first_name' => Forms\Components\TextInput::make('first_name')
                 ->required()
                 ->maxLength(255),
-            Forms\Components\TextInput::make('last_name')
+            'last_name' => Forms\Components\TextInput::make('last_name')
                 ->required()
                 ->maxLength(255),
-            Forms\Components\TextInput::make('address')
+            'address' => Forms\Components\TextInput::make('address')
                 ->maxLength(255),
-            Forms\Components\TextInput::make('city')
+            'city' => Forms\Components\TextInput::make('city')
                 ->maxLength(255),
-            Forms\Components\Select::make('nationality')
+            'nationality' => Forms\Components\Select::make('nationality')
                 ->options(NationalityEnum::class)
                 ->reactive()
                 //->live()
                 ,
-            CountryCodeSelect::make('country_code')
+            'country_code' => CountryCodeSelect::make('country_code')
                 ->label(static::trans('fields.country_code.label'))
                 ->visible(function (Get $get): bool {
                     if($get('nationality')=='EE'){
@@ -318,24 +327,41 @@ class PatientResource extends XotBaseResource
                     }
                     return false;
                 }),
-            Forms\Components\Select::make('years_in_italy')
+            'years_in_italy' => Forms\Components\Select::make('years_in_italy')
                 ->options(YearsInItalyEnum::class)
                 ->visible(fn (Get $get): bool => $get('nationality')=='EE'),
-            Forms\Components\Select::make('family_members')
+            'family_members' => Forms\Components\Select::make('family_members')
                 ->options($family_members_options),
-            Forms\Components\Select::make('children_count')
-            ->options($children_count_options),    
+            'children_count' => Forms\Components\Select::make('children_count')
+                ->options($children_count_options),    
                 
             
-            Forms\Components\TextInput::make('phone')
+            'phone' => Forms\Components\TextInput::make('phone')
                 ->tel()
                 ->required()
                 ->maxLength(255),
-            Forms\Components\TextInput::make('email')
-                ->email()
-                ->required()
-                ->maxLength(255)
-                ->unique(Patient::class),
+
+            'email' => Forms\Components\TextInput::make('email')
+                    ->required()
+                    ->email()
+                    ->maxLength(255)
+                    ->autocomplete('email')
+                    ->readonly(fn($get) => $get('id') !== null)
+                    ->extraAttributes(function ($get) {
+                        return $get('id') !== null
+                            ? ['class' => 'bg-gray-100 border-gray-300 cursor-not-allowed opacity-90']
+                            : [];
+                    })
+                    ->rules(function ($get) {
+                        $rules = [];
+                        // Applica unique solo se il record è nuovo (id è null)
+                        if ($get('id') === null) {
+                            //$rules[] = Rule::unique(User::class, 'email');
+                            $rules[] = Rule::unique(User::class,'email')->ignore($get('id'));
+                        }
+                        
+                        return $rules;
+                    }),
             
         ];
     }

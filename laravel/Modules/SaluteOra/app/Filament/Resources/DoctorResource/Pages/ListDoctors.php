@@ -93,14 +93,14 @@ class ListDoctors extends ListUsers
     {
         $columns= parent::getTableColumns();   
         $columns=Arr::except($columns,['type']);
-        /*
+        
         $attachments = Doctor::$attachments;
 
         
         foreach ($attachments as $attachment) {
             $columns[$attachment] = IconMediaColumn::make($attachment);
         }
-            */
+        /*
         $columns['certifications'] = IconColumn::make('certifications')
         ->icon('heroicon-o-document-text')
         ->tooltip(function($record,$state, $rowLoop){
@@ -108,7 +108,7 @@ class ListDoctors extends ListUsers
         })->action(function ($record,$state){
             return app(DownloadZipByPathsDiskAction::class)->execute($state,'local');
         });
-
+        */
         return $columns;
     }
 <<<<<<< HEAD

@@ -226,6 +226,7 @@
             "Modules\\Xot\\Database\\Seeders\\": "database/seeders/",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "Modules\\Xot\\Tests\\": "tests/",
             "Coolsam\\FilamentModules\\": "packages/coolsam/panel-modules/src/"
             
@@ -240,6 +241,13 @@
             "Modules\\Xot\\Database\\Migrations\\": "database/migrations/",
             "Coolsam\\FilamentModules\\": "packages/coolsam/panel-modules/src/"
 >>>>>>> 54f4fa16 (.)
+=======
+            "Coolsam\\FilamentModules\\": "packages/coolsam/panel-modules/src/"
+            
+        },
+        "psr-4_comment": {
+            "Modules\\Xot\\Database\\Migrations\\": "database/migrations/"
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
         },
         "files": [
             "Helpers/Helper.php"

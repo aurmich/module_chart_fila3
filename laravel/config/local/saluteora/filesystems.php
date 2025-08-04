@@ -49,10 +49,14 @@ return [
         ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
         'private' => [
             'driver' => 'local',
             'root' => storage_path('app'),
         ],
+<<<<<<< HEAD
         'attachments' => [
             'driver' => 'local',
             'root' => storage_path('attachments'),
@@ -63,6 +67,8 @@ return [
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
 
         'public' => [
             'driver' => 'local',

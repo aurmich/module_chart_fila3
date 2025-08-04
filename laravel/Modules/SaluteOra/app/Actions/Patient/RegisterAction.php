@@ -57,6 +57,7 @@ class RegisterAction
         
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         
             // Creazione del paziente usando STI
             if(isset($data['studio'])){
@@ -133,11 +134,23 @@ class RegisterAction
 =======
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
         return DB::transaction(function () use ($data) {
+=======
+        
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
             // Creazione del paziente usando STI
             if(isset($data['studio'])){
                 unset($data['studio']);
             }
-            $patient = Patient::create($data);
+            //$patient = Patient::create($data);
+            if(isset($data['id'])){
+                $patient = $record;
+                $patient->update($data);
+            }else{
+                $patient= new Patient();
+                $patient->fill($data);
+                $patient->save();
+                //$doctor = Doctor::create($data);
+            }
 
             //-------------------------------------------------
              //*
@@ -179,7 +192,11 @@ class RegisterAction
             ->notify($notify);
 
             return $patient;
+<<<<<<< HEAD
         });
 >>>>>>> 54f4fa16 (.)
+=======
+        
+>>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
     }
 }

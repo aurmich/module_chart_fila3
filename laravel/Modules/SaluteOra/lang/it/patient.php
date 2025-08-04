@@ -1858,6 +1858,7 @@ return array (
       'label' => 'ID Identificativo Paziente',
       'placeholder' => 'Codice numerico univoco generato automaticamente',
       'helper_text' => '',
+      'description' => 'id',
     ),
     'name' => 
     array (
@@ -1877,6 +1878,7 @@ return array (
         'max' => 'Il nome non può superare i 50 caratteri',
         'alpha' => 'Il nome può contenere solo lettere',
       ),
+      'description' => 'first_name',
     ),
     'last_name' => 
     array (
@@ -1890,6 +1892,7 @@ return array (
         'max' => 'Il cognome non può superare i 50 caratteri',
         'alpha' => 'Il cognome può contenere solo lettere',
       ),
+      'description' => 'last_name',
     ),
     'fiscal_code' => 
     array (
@@ -1938,12 +1941,14 @@ return array (
       'label' => 'Nazionalità',
       'placeholder' => 'Seleziona la nazionalità del paziente',
       'helper_text' => '',
+      'description' => 'nationality',
     ),
     'years_in_italy' => 
     array (
       'label' => 'Anni in Italia',
       'placeholder' => 'Inserisci il numero di anni di residenza in Italia',
       'helper_text' => '',
+      'description' => 'years_in_italy',
     ),
     'email' => 
     array (
@@ -1957,6 +1962,7 @@ return array (
         'unique' => 'Questo indirizzo email è già registrato per un altro paziente',
         'max' => 'L\'indirizzo email non può superare i 255 caratteri',
       ),
+      'description' => 'email',
     ),
     'phone' => 
     array (
@@ -1969,6 +1975,7 @@ return array (
         'regex' => 'Inserisci un numero di telefono italiano valido',
         'min' => 'Il numero deve contenere almeno 10 cifre',
       ),
+      'description' => 'phone',
     ),
     'address' => 
     array (
@@ -1981,6 +1988,7 @@ return array (
         'min' => 'L\'indirizzo deve contenere almeno 10 caratteri',
         'max' => 'L\'indirizzo non può superare i 200 caratteri',
       ),
+      'description' => 'address',
     ),
     'city' => 
     array (
@@ -1993,6 +2001,7 @@ return array (
         'min' => 'Il nome della città deve contenere almeno 2 caratteri',
         'max' => 'Il nome della città non può superare i 100 caratteri',
       ),
+      'description' => 'city',
     ),
     'postal_code' => 
     array (
@@ -2029,6 +2038,7 @@ return array (
       'label' => 'Codice Paese',
       'placeholder' => 'Codice ISO del paese (es. IT, FR, DE)',
       'helper_text' => '',
+      'description' => 'country_code',
     ),
     'isee_code' => 
     array (
@@ -2141,6 +2151,7 @@ return array (
       'label' => 'Quando è stata la tua ultima visita dentale?',
       'placeholder' => 'Seleziona il periodo temporale dell\'ultima visita dentale',
       'helper_text' => '',
+      'description' => 'last_dental_visit_period',
     ),
     'dental_problems' => 
     array (
@@ -2151,6 +2162,7 @@ return array (
       array (
         'max' => 'La descrizione non può superare i 500 caratteri',
       ),
+      'description' => 'dental_problems',
     ),
     'allergies' => 
     array (
@@ -2197,6 +2209,7 @@ return array (
       'label' => 'Figli',
       'placeholder' => 'Inserisci il numero di figli',
       'helper_text' => '',
+      'description' => 'children_count',
     ),
     'privacy_acceptance' => 
     array (
@@ -2207,6 +2220,7 @@ return array (
       array (
         'accepted' => 'È obbligatorio accettare l\'informativa sulla privacy per procedere',
       ),
+      'description' => 'privacy_acceptance',
     ),
     'newsletter' => 
     array (
@@ -2237,6 +2251,7 @@ return array (
       'label' => 'Componenti Nucleo Familiare',
       'placeholder' => 'Inserisci il numero di componenti del nucleo familiare',
       'helper_text' => '',
+      'description' => 'family_members',
     ),
   ),
   'actions' => 
