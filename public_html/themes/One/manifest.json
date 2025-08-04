@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "resources/css/app.css": {
 <<<<<<< HEAD
     "file": "assets/app-CizGm5hC.css",
@@ -34,6 +35,10 @@
   "resources/css/app.css": {
     "file": "assets/app-B1ErEWAr.css",
 >>>>>>> cecdd8e5 (- rename file dettaglio-paziente;)
+=======
+  "resources/css/app.css": {
+    "file": "assets/app-CiFaG0te.css",
+>>>>>>> 58d017c2 (- aggiornato stile dettaglio paziente)
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -43,6 +48,7 @@
     "src": "resources/js/app.js",
     "isEntry": true
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -57,3 +63,6 @@
 =======
 }
 >>>>>>> cecdd8e5 (- rename file dettaglio-paziente;)
+=======
+}
+>>>>>>> 58d017c2 (- aggiornato stile dettaglio paziente)
