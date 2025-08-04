@@ -2,12 +2,19 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Geo\Services;
+=======
+namespace Modules\Geo\App\Services;
+>>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
+<<<<<<< HEAD
 use function Safe\json_decode;
+=======
+>>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
 
 /**
  * Servizio per la gestione dei dati geografici.
@@ -57,6 +64,7 @@ class GeoDataService
      */
     public function getRegions(): Collection
     {
+<<<<<<< HEAD
         /** @var Collection<int, array{name: string, code: string}> $result */
         $result = Cache::remember(
             self::CACHE_KEY_REGIONS,
@@ -65,6 +73,13 @@ class GeoDataService
         );
 
         return $result;
+=======
+        return Cache::remember(
+            self::CACHE_KEY_REGIONS,
+            self::CACHE_TTL,
+            fn () => $this->loadData()->pluck('name', 'code')
+        );
+>>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
     }
 
     /**
@@ -77,6 +92,7 @@ class GeoDataService
     {
         $cacheKey = sprintf(self::CACHE_KEY_PROVINCES, $regionCode);
 
+<<<<<<< HEAD
         /** @var Collection<int, array{name: string, code: string}> $result */
         $result = Cache::remember(
             $cacheKey,
@@ -99,6 +115,16 @@ class GeoDataService
         );
 
         return $result;
+=======
+        return Cache::remember(
+            $cacheKey,
+            self::CACHE_TTL,
+            function () use ($regionCode) {
+                $region = $this->loadData()->firstWhere('code', $regionCode);
+                return $region ? collect($region['provinces'])->pluck('name', 'code') : collect();
+            }
+        );
+>>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
     }
 
     /**
@@ -111,6 +137,7 @@ class GeoDataService
     {
         $cacheKey = sprintf(self::CACHE_KEY_CITIES, $provinceCode);
 
+<<<<<<< HEAD
         /** @var Collection<int, array{name: string, code: string}> $result */
         $result = Cache::remember(
             $cacheKey,
@@ -135,6 +162,19 @@ class GeoDataService
         );
 
         return $result;
+=======
+        return Cache::remember(
+            $cacheKey,
+            self::CACHE_TTL,
+            function () use ($provinceCode) {
+                $province = $this->loadData()
+                    ->flatMap(fn ($region) => $region['provinces'])
+                    ->firstWhere('code', $provinceCode);
+
+                return $province ? collect($province['cities'])->pluck('name', 'code') : collect();
+            }
+        );
+>>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
     }
 
     /**
@@ -148,6 +188,7 @@ class GeoDataService
     {
         $cacheKey = sprintf(self::CACHE_KEY_CAP, $provinceCode, $cityCode);
 
+<<<<<<< HEAD
         /** @var string|null $result */
         $result = Cache::remember(
             $cacheKey,
@@ -176,6 +217,26 @@ class GeoDataService
         );
 
         return $result;
+=======
+        return Cache::remember(
+            $cacheKey,
+            self::CACHE_TTL,
+            function () use ($provinceCode, $cityCode) {
+                $province = $this->loadData()
+                    ->flatMap(fn ($region) => $region['provinces'])
+                    ->firstWhere('code', $provinceCode);
+
+                if (!$province) {
+                    return null;
+                }
+
+                $city = collect($province['cities'])
+                    ->firstWhere('code', $cityCode);
+
+                return $city ? $city['cap'] : null;
+            }
+        );
+>>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
     }
 
     /**
@@ -190,17 +251,24 @@ class GeoDataService
             throw new \RuntimeException('Il file JSON dei comuni non esiste');
         }
 
+<<<<<<< HEAD
         /** @var array $data */
+=======
+>>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
         $data = json_decode(File::get(base_path(self::JSON_PATH)), true);
 
         if (!$this->validator->checkIntegrity($data)) {
             throw new \RuntimeException('Il file JSON dei comuni non è valido');
         }
 
+<<<<<<< HEAD
         /** @var Collection<int, array> $result */
         $result = new Collection($data['regions']);
 
         return $result;
+=======
+        return collect($data['regions']);
+>>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
     }
 
     /**
@@ -211,7 +279,13 @@ class GeoDataService
     public function clearCache(): void
     {
         Cache::forget(self::CACHE_KEY_REGIONS);
+<<<<<<< HEAD
         // Nota: forgetPattern non esiste in Laravel Cache, usiamo forget per le chiavi specifiche
         // In un'implementazione reale, dovremmo mantenere traccia delle chiavi create
+=======
+        Cache::forgetPattern(self::CACHE_KEY_PROVINCES . '*');
+        Cache::forgetPattern(self::CACHE_KEY_CITIES . '*');
+        Cache::forgetPattern(self::CACHE_KEY_CAP . '*');
+>>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
     }
 } 

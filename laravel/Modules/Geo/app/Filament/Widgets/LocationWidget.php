@@ -2,10 +2,17 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Geo\Filament\Widgets;
 
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Modules\Geo\Filament\Forms\LocationForm;
+=======
+namespace Modules\Geo\App\Filament\Widgets;
+
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Modules\Geo\App\Filament\Forms\LocationForm;
+>>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
 
 /**
  * Widget per la selezione della località.
@@ -50,14 +57,23 @@ class LocationWidget extends XotBaseWidget
     /**
      * Form per la selezione della località.
      */
+<<<<<<< HEAD
     private \Modules\Geo\Filament\Forms\LocationForm $locationForm;
+=======
+    private LocationForm $locationForm;
+>>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
 
     /**
      * Costruttore.
      */
     public function __construct()
     {
+<<<<<<< HEAD
         $this->locationForm = new \Modules\Geo\Filament\Forms\LocationForm();
+=======
+        parent::__construct();
+        $this->locationForm = new LocationForm();
+>>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
     }
 
     /**
@@ -73,7 +89,11 @@ class LocationWidget extends XotBaseWidget
     /**
      * Ottiene lo schema del form.
      * 
+<<<<<<< HEAD
      * @return array<int, \Filament\Forms\Components\Component>
+=======
+     * @return array<string, mixed>
+>>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
      */
     public function getFormSchema(): array
     {
@@ -91,11 +111,15 @@ class LocationWidget extends XotBaseWidget
 
         $this->dispatch('location-selected', $data);
 
+<<<<<<< HEAD
         // Utilizzo metodo Livewire per notifiche
         $this->dispatch('notify', [
             'type' => 'success',
             'message' => __('geo::widgets.location.messages.success')
         ]);
+=======
+        $this->notify('success', __('geo::widgets.location.messages.success'));
+>>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
     }
 
     /**

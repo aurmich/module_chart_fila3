@@ -143,6 +143,7 @@ Select::make('cap')
 - Geo/module_geo.md
 - Xot/module-structure.md
 - SaluteOra/docs/geo-integration.md
+<<<<<<< HEAD
 
 ## Confronto: GeoJsonModel vs Laravel Sushi
 
@@ -492,3 +493,5 @@ trait SushiToJsons
 ---
 
 - Vedi anche [geo_entities.md](./geo_entities.md) e [squire-integration.md](./squire-integration.md) per altri confronti e strategie.
+=======
+>>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)

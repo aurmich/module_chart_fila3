@@ -107,6 +107,7 @@ In case of issues, have a rollback plan:
 ## Support
 
 For any issues during migration, please refer to the [Geo Module Documentation](./architecture.md) or contact the development team.
+<<<<<<< HEAD
 
 # Guida alla Migrazione da GeoJsonModel a Sushi
 
@@ -537,3 +538,5 @@ git checkout -- app/Models/Comune.php
 - [Comune Model](comune-model.md)
 - [Sushi Configuration](sushi-configuration.md)
 - [Sushi Command](sushi-command.md)
+=======
+>>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
