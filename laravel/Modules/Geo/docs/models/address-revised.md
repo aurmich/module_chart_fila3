@@ -100,22 +100,8 @@ class Address extends Model implements HasGeolocation
     use HasFactory;
     use SoftDeletes;
     
-<<<<<<< HEAD
-<<<<<<< HEAD
     /** list<string> */
    protected $fillable = [
-=======
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<string>
-     */
-    protected $fillable = [
->>>>>>> aurmich/dev
-=======
-    /** list<string> */
-   protected $fillable = [
->>>>>>> 345f8677 (phpstan)
         'name',
         'description',
         'route',
@@ -524,8 +510,4 @@ $table->string('provincia_sigla', 2)->nullable()->comment('Sigla provincia (es. 
 // Per casi d'uso specifici
 $table->boolean('verificato')->default(false)->comment('Indirizzo verificato');
 $table->timestamp('ultima_verifica')->nullable();
-<<<<<<< HEAD
 ```
-=======
-```
->>>>>>> aurmich/dev
