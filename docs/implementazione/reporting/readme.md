@@ -7,14 +7,7 @@ Il modulo Reporting gestisce la generazione e visualizzazione di report e statis
 
 ### Installazione
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> bead9c28 (fix case)
->>>>>>> aurmich/dev
 # Creazione del modulo
 php artisan module:make Reporting
 
@@ -787,14 +780,7 @@ class RevenueReportTest extends TestCase
     }
 }
 ``` 
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> bead9c28 (fix case)
->>>>>>> aurmich/dev
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)

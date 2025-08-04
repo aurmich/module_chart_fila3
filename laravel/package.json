@@ -1,86 +1,14 @@
 {
     "private": true,
     "type": "module",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    "workspaces": [
-        "Modules/*"
-    ],
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
->>>>>>> aurmich/dev
     "scripts": {
         "build": "vite build",
         "dev": "vite"
     },
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "dependencies": {
-        "@tailwindcss/vite": "^4.0.7",
-<<<<<<< HEAD
-        "autoprefixer": "^10.4.20",
-        "axios": "^1.7.4",
-        "concurrently": "^9.0.1",
-        "laravel-vite-plugin": "^1.0",
-        "tailwindcss": "^4.0.7",
-=======
-        "axios": "^1.7.4",
-        "concurrently": "^9.0.1",
-        "flag-icon-css": "^4.1.7",
-        "laravel-vite-plugin": "^1.0",
->>>>>>> 54f4fa16 (.)
-        "vite": "^6.0"
-    },
-    "optionalDependencies": {
-        "@rollup/rollup-linux-x64-gnu": "4.9.5",
-        "@tailwindcss/oxide-linux-x64-gnu": "^4.0.1",
-        "lightningcss-linux-x64-gnu": "^1.29.1"
-<<<<<<< HEAD
-    }
-=======
-    },
-    "devDependencies": {
-        "@tailwindcss/forms": "^0.5.10",
-        "@tailwindcss/typography": "^0.5.16",
-        "autoprefixer": "^10.4.21",
-        "postcss": "^8.5.3",
-        "postcss-nesting": "^13.0.1",
-        "tailwindcss": "^4.1.4"
-    },
-    "packageManager": "yarn@4.9.1"
->>>>>>> 54f4fa16 (.)
-=======
-    "devDependencies": {
-        "@tailwindcss/vite": "^4.0.0",
-        "axios": "^1.8.2",
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> ad93170c (rebase 10)
     "dependencies": {
         "@tailwindcss/vite": "^4.0.7",
         "autoprefixer": "^10.4.20",
         "axios": "^1.7.4",
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
-=======
-    "devDependencies": {
-        "@tailwindcss/vite": "^4.0.0",
-        "axios": "^1.8.2",
->>>>>>> 93990a83 (rebase 1/1)
-=======
->>>>>>> ad93170c (rebase 10)
         "concurrently": "^9.0.1",
         "laravel-vite-plugin": "^1.0",
         "tailwindcss": "^4.0.7",
@@ -91,8 +19,4 @@
         "@tailwindcss/oxide-linux-x64-gnu": "^4.0.1",
         "lightningcss-linux-x64-gnu": "^1.29.1"
     }
-<<<<<<< HEAD
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
->>>>>>> aurmich/dev
 }

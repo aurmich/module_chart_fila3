@@ -12,14 +12,7 @@ Abbiamo completato con successo l'integrazione dei moduli Laraxot di base tramit
 ## Comandi eseguiti
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # 1. Committare le modifiche alla documentazione
 git add .
 git commit -m "Aggiunta documentazione per integrazione moduli Laraxot"

@@ -92,14 +92,7 @@ Ci sono due opzioni per configurare l'ambiente:
 Creare un ambiente Docker completo con tutti i servizi necessari per il progetto:
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Creare il docker-compose.yml nella root del progetto
 cat > docker-compose.yml << 'EOL'
 version: '3.8'
@@ -294,14 +287,7 @@ docker-compose exec app php artisan migrate --seed
 Dopo aver clonato il repository e configurato l'ambiente, è necessario installare le dipendenze:
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Installare le dipendenze PHP
 composer install
 
@@ -387,14 +373,7 @@ php artisan vendor:publish --provider="Nwidart\Modules\LaravelModulesServiceProv
 Modificare il file `composer.json` per aggiungere l'autoloading dei moduli:
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Aprire il file composer.json e modificare la sezione "autoload" e "extra"
 cat > composer.json << 'EOL'
 {
@@ -447,14 +426,7 @@ composer dump-autoload
 Creare i moduli custom necessari:
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Creare il modulo Patient
 php artisan module:make Patient
 
@@ -469,26 +441,12 @@ php artisan module:make Dental
 Per integrare i moduli Laraxot, utilizzeremo git subtree:
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Creare la directory Modules se non esiste
 mkdir -p laravel/Modules
 
 # Importare i moduli Laraxot tramite git subtree
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Moduli Core
 git subtree add --prefix laravel/Modules/Xot git@github.com:laraxot/module_xot_fila3.git dev
 git subtree add --prefix laravel/Modules/Lang git@github.com:laraxot/module_lang_fila3.git dev
@@ -618,14 +576,7 @@ Aggiornare il file `module.json` per ogni modulo custom:
 Questo passo integra Filament, Spatie Permission e altri componenti necessari per un'autenticazione robusta e multi-tenant:
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Installazione del pannello amministrativo Filament e plugin per ruoli e permessi
 composer require filament/filament:"^3.2" \
     filament/spatie-laravel-permission-plugin:"^3.0" \
@@ -1052,14 +1003,7 @@ Creare uno script bash per automatizzare il deployment:
 
 ```bash
 #!/bin/bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # File: deploy.sh
 
 echo "Deploying il progetto..."
@@ -1202,14 +1146,7 @@ Aggiornare la documentazione tecnica con i dettagli dell'implementazione:
 Creare un file README.md completo per il progetto:
 
 ```markdown
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # il progetto
 
 ## Descrizione
@@ -1248,14 +1185,7 @@ Questi passaggi sono dettagliati nei file:
 - `03-interfaccia-utente.md`
 - `04-reporting.md`
 - `05-deployment.md` 
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 ## Collegamenti tra versioni di 01-setup-ambiente.md
 * [01-setup-ambiente.md](docs/roadmap_frontoffice/01-setup-ambiente.md)
 * [01-setup-ambiente.md](docs/roadmap/01-setup-ambiente.md)

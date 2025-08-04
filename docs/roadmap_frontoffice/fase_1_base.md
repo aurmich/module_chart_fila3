@@ -125,14 +125,7 @@ La Fase 1 rappresenta le fondamenta tecnologiche e funzionali di SaluteOra, stab
 
 ### Architecture Decisions
 ```yaml
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
 # Technology Stack
 Backend: Laravel 10 + PHP 8.2
 Frontend: React 18 + Next.js 13 + TypeScript
@@ -150,14 +143,7 @@ Database Design: Domain-driven design patterns
 
 ### Quality Assurance
 ```yaml
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
 # Testing Strategy
 Unit Tests: 85%+ code coverage per critical functions
 Integration Tests: API endpoints e database operations
@@ -174,14 +160,7 @@ Standards: PSR-12 per PHP, Airbnb style per JavaScript
 
 ### Performance Benchmarks
 ```yaml
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
 # Current Performance Metrics
 Page Load Time: 2.1 seconds average (target: <3s)
 Time to Interactive: 3.4 seconds (target: <4s)
@@ -200,14 +179,7 @@ CPU Utilization: 65% average under normal load
 
 ### Team Structure
 ```yaml
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
 # Development Team
 Backend Developers: 2 senior developers
 Frontend Developers: 3 full-stack developers
@@ -239,14 +211,7 @@ Code Review: GitHub pull requests con mandatory reviews
 
 ### Cloud Architecture
 ```yaml
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
 # AWS Services Utilized
 Compute: EC2 instances con auto-scaling groups
 Database: RDS MySQL con read replicas
@@ -278,14 +243,7 @@ Disaster Recovery: Cross-region backup strategy
 
 ### Market Validation
 ```yaml
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
 # User Research Results
 User Interviews: 50+ potential users interviewed
 Pain Point Validation: 85% confirmed core problems
@@ -316,14 +274,7 @@ Conversion Rate: 23% prototype to signup conversion
 
 ### Technical Insights
 ```yaml
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
 # Architecture Decisions
 Monolith First: Correct choice per rapid development
 TypeScript Adoption: Significant reduction in runtime errors
@@ -354,14 +305,7 @@ Database Indexing: Query optimization achieved 3x speedup
 
 ### Development KPIs
 ```yaml
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
 # Delivery Metrics
 Sprint Velocity: 34 story points average
 Bug Rate: 0.8 bugs per 1000 lines of code
@@ -379,14 +323,7 @@ SEO Score: 88/100 per organic discovery
 
 ### Business Validation
 ```yaml
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
 # Market Metrics
 Beta Signups: 127 dental practices registered
 User Engagement: 78% weekly active users
@@ -421,14 +358,7 @@ Market Fit: 67% users expressing strong need
 
 ### Handoff Preparation
 ```yaml
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
 # Technical Readiness
 Codebase: Production-ready con comprehensive documentation
 Infrastructure: Scalable foundation per feature expansion
@@ -479,10 +409,3 @@ Growth Foundation: Scalable customer acquisition
 - [Area Personale Paziente](./02_area_personale_paziente.md)
 - [Architettura Base](../architecture/technical-specs.md)
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-*Ultimo aggiornamento: Dicembre 2024*
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev

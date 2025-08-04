@@ -54,14 +54,7 @@ Utilizzare il seguente comando per individuare i marker di conflitto non risolti
 Se vengono trovati, è necessario risolvere i conflitti manualmente:
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Per ogni file con conflitti
 nano /percorso/al/file/con/conflitti
 ```
@@ -71,14 +64,7 @@ nano /percorso/al/file/con/conflitti
 Controllare che il file del service provider esista e sia corretto:
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Verifica l'esistenza del file
 ls -la laravel/Modules/Chart/app/Providers/ChartServiceProvider.php
 
@@ -137,14 +123,7 @@ Per prevenire questo tipo di errore in futuro:
 
 ```bash
 #!/bin/bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # check_module_integrity.sh
 
 LARAVEL_PATH="/var/www/html/saluteora/laravel"

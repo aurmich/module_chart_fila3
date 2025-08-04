@@ -11,14 +11,7 @@ Sistema sicuro per l'upload e gestione documenti pazienti con supporto per tesse
 
 ### 1. Tessera Sanitaria
 ```yaml
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
 # Specifiche Upload
 Formati: PDF, JPG, PNG
 Dimensione Max: 5MB
@@ -29,14 +22,7 @@ Retention: Conforme GDPR
 
 ### 2. ISEE
 ```yaml
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
 # Certificazione Economica
 Formati: PDF (preferito)
 Validazione: Controllo campi obbligatori
@@ -46,14 +32,7 @@ Scadenza: Alert automatico pre-scadenza
 
 ### 3. Attestazione Gravidanza
 ```yaml
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
 # Documentazione Medica
 Formati: PDF, JPG
 Validazione: Data rilascio, struttura sanitaria
@@ -91,14 +70,7 @@ class DocumentUploadService
 ## Security Features
 
 ```yaml
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev
 # Misure di Sicurezza
 Antivirus Scan: Integrazione ClamAV
 File Validation: Magic number check
@@ -119,10 +91,3 @@ GDPR Compliance: Right to be forgotten
 - [Gestione Documenti](./gestione_documenti.md)
 - [Visualizzazione Sicura](./visualizzazione_sicura.md)
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-*Ultimo aggiornamento: Dicembre 2024*
->>>>>>> d55a72aa (.)
->>>>>>> aurmich/dev

@@ -68,14 +68,7 @@ composer require --dev laravel/dusk
 
 ### Configurazione Database
 ```env
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Sviluppo (.env)
 DB_CONNECTION=sqlite
 DB_DATABASE=/absolute/path/to/database.sqlite
@@ -98,14 +91,7 @@ sudo systemctl start redis-server
 
 ### Configurazione Testing
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Configurazione Pest
 php artisan pest:install
 
@@ -141,14 +127,7 @@ mkdir -p .github/workflows
 - [Documentazione Nwidart Modules](https://nwidart.com/laravel-modules/v6/introduction)
 - [Documentazione Laraxot](https://github.com/laraxot/modules)
 - [Documentazione Spatie](https://spatie.be/open-source) 
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 ## Collegamenti tra versioni di 01-setup-ambiente.md
 * [01-setup-ambiente.md](docs/roadmap_frontoffice/01-setup-ambiente.md)
 * [01-setup-ambiente.md](docs/roadmap/01-setup-ambiente.md)

@@ -321,14 +321,7 @@ Route::get('/health/mail-templates', function () {
 ## Comandi Utili per Debug
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
->>>>>>> aurmich/dev
 # Verifica template esistenti
 php artisan tinker -c "MailTemplate::where('mailable', 'like', '%SpatieEmail%')->get(['id', 'slug', 'subject'])"
 
@@ -365,10 +358,3 @@ php artisan tinker -c "Mail::to('test@example.com')->send(new \Modules\Notify\Em
 **Ultimo aggiornamento**: 26 Giugno 2025  
 **Contributori**: AI Assistant  
 **Review Status**: Pending Technical Review  
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-**Priority**: HIGH - Prevenzione errori critici 
->>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
->>>>>>> aurmich/dev

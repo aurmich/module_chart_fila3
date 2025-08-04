@@ -28,14 +28,7 @@ Questa regola garantisce:
 
 ## Esempi
 ```plaintext
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
 # ❌ Errore
 docs/ErroriGravi/
 docs/Implementazione/
@@ -58,10 +51,3 @@ docs/form-architecture.md
 ## Collegamenti Correlati
 - [Struttura Documentazione](../struttura-documentazione.md)
 - [Best Practices](../best-practices.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Standard di Codice](../standards/coding-standards.md) 
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev

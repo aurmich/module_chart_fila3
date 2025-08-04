@@ -76,46 +76,22 @@ Modules/[ModuleName]/
 
 ### Problema: Migrazioni Duplicate
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Soluzione: Rimuovere le migrazioni locali
 rm -rf database/migrations
 ```
 
 ### Problema: Conflitti di Dipendenze
 ```bash
-<<<<<<< HEAD
 
 # Soluzione: Verificare l'ordine dei moduli in config/app.php
 
-=======
-<<<<<<< HEAD
-
-# Soluzione: Verificare l'ordine dei moduli in config/app.php
-
-=======
-# Soluzione: Verificare l'ordine dei moduli in config/app.php
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Assicurarsi che i moduli base siano caricati prima dei moduli che dipendono da essi
 ```
 
 ### Problema: Rollback Parziale
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Soluzione: Eseguire il rollback per modulo specifico
 php artisan module:migrate-rollback [ModuleName]
 ```
@@ -128,10 +104,3 @@ La gestione delle migrazioni all'interno dei moduli Laraxot è un aspetto fondam
 - Portabilità dei moduli
 - Gestione efficiente delle dipendenze
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-È cruciale ricordare di rimuovere sempre le migrazioni locali prima di eseguire `php artisan migrate` per evitare conflitti e duplicazioni. 
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev

@@ -1,113 +1,19 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
-    "Patient": true,
-    "Xot": true,
-    "Dental": true,
-    "Reporting": true,
->>>>>>> 93990a83 (rebase 1/1)
-=======
->>>>>>> ad93170c (rebase 10)
     "Activity": true,
     "Chart": true,
     "Cms": true,
     "DbForge": true,
     "Gdpr": true,
-<<<<<<< HEAD
-<<<<<<< HEAD
     "Geo": true,
-<<<<<<< HEAD
-=======
-=======
-    "Patient": true,
-    "Xot": true,
-    "Dental": true,
-    "Reporting": true,
-=======
->>>>>>> e9942509 (fix: session)
-    "Activity": true,
-    "Chart": true,
-    "Cms": true,
-    "DbForge": true,
-    "Gdpr": true,
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
-    "Geo": true,
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
-=======
->>>>>>> 93990a83 (rebase 1/1)
-=======
-    "Geo": true,
->>>>>>> ad93170c (rebase 10)
     "Job": true,
     "Lang": true,
     "Media": true,
     "Notify": true,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
     "SaluteMo": true,
     "SaluteOra": true,
     "Tenant": true,
     "UI": true,
     "User": true,
-<<<<<<< HEAD
     "Xot": true,
     "FormBuilder": true
-=======
-<<<<<<< HEAD
-    "Xot": true,
-    "FormBuilder": true
-=======
-    "Tenant": true,
-    "UI": true,
-    "User": true,
-<<<<<<< HEAD
-    "SaluteOra": true
->>>>>>> 54f4fa16 (.)
-=======
-    "SaluteOra": true,
-    "SaluteMo": true,
-<<<<<<< HEAD
-    "Geo": true
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
-=======
-    "Geo": true,
-    "DbForge": true
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
-=======
-    "Xot": true
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
-=======
-    "Tenant": true,
-    "UI": true,
-    "User": true,
-    "SaluteOra": true,
-    "SaluteMo": true,
-    "Geo": true,
-    "DbForge": true
->>>>>>> 93990a83 (rebase 1/1)
-=======
-    "SaluteMo": true,
-    "SaluteOra": true,
-    "Tenant": true,
-    "UI": true,
-    "User": true,
-    "Xot": true
->>>>>>> ad93170c (rebase 10)
 }

@@ -36,17 +36,7 @@ namespace Modules\Notify\Models;
 Prima di ogni commit, verifica:
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
-=======
->>>>>>> 93990a83 (rebase 1/1)
 # Controlla namespace errati che includono "app"
 grep -r "namespace Modules\\\\.*\\\\app\\\\" --include="*.php" /var/www/html/base_saluteora/laravel/Modules
 

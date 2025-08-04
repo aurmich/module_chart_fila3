@@ -65,14 +65,7 @@ Prima di creare qualsiasi widget:
 
 ## Comandi Utili
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
 # Pulire la cache delle viste dopo modifiche
 php artisan view:clear
 
