@@ -2,6 +2,7 @@
 
 return array (
 <<<<<<< HEAD
+<<<<<<< HEAD
   'model' => 
   array (
     'label' => 'Amministratore',
@@ -326,5 +327,13 @@ return array (
       'label' => 'reorderRecords',
     ),
 >>>>>>> 3ad9917a (- fix styles registration)
+=======
+  'navigation' => 
+  array (
+    'label' => 'admin.navigation',
+    'group' => 'admin.navigation',
+    'icon' => 'admin.navigation',
+    'sort' => 95,
+>>>>>>> a0fd0fbf (feat(i18n): add Italian language support for admin navigation and user registration)
   ),
 );
