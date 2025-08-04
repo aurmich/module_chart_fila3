@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: model_decision
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 description: This rule enforces best practices and coding standards for Bash scripting to improve code quality, maintainability, and security. It covers naming conventions, formatting, error handling, security, and performance considerations.
 globs: *.sh
 ---

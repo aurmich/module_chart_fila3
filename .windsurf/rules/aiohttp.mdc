@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: model_decision
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 description: Comprehensive guide for aiohttp development covering code organization, performance, security, testing, and deployment best practices. Provides actionable guidance for developers to build robust and maintainable aiohttp applications.
 globs: *.py
 ---

@@ -1,16 +1,4 @@
-<<<<<<< HEAD
 # Regole per i Namespace in Laraxot <nome progetto>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Regole per i Namespace in Laraxot <nome progetto>
-=======
-# Regole per i Namespace in Laraxot PTVX
->>>>>>> d23ba493 (add calendar)
-=======
-# Regole per i Namespace in Laraxot <nome progetto>
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 
 ## Regola Fondamentale
 
@@ -71,16 +59,4 @@ class RatingServiceProvider extends XotBaseServiceProvider
     
     // implementazione...
 }
-<<<<<<< HEAD
 ``` 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-``` 
-=======
-``` 
->>>>>>> d23ba493 (add calendar)
-=======
-``` 
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev

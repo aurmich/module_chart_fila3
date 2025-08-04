@@ -1,16 +1,4 @@
-<<<<<<< HEAD
 # Regole Cursor complete per Laraxot <nome progetto>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Regole Cursor complete per Laraxot <nome progetto>
-=======
-# Regole Cursor complete per Laraxot PTVX
->>>>>>> d23ba493 (add calendar)
-=======
-# Regole Cursor complete per Laraxot <nome progetto>
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 
 ## Modelli ed Ereditarietà
 
@@ -163,30 +151,10 @@ ModuleName/
 - Esempio:
   ```php
   <?php
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 
   use Illuminate\Database\Schema\Blueprint;
   use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-<<<<<<< HEAD
-=======
-=======
-  
-  use Illuminate\Database\Schema\Blueprint;
-  use Modules\Xot\Database\Migrations\XotBaseMigration;
-  
->>>>>>> d23ba493 (add calendar)
-=======
-
-  use Illuminate\Database\Schema\Blueprint;
-  use Modules\Xot\Database\Migrations\XotBaseMigration;
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
   return new class extends XotBaseMigration {
       /**
        * Run the migrations.
@@ -195,19 +163,7 @@ ModuleName/
       {
           // Implementazione
       }
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-      
->>>>>>> d23ba493 (add calendar)
-=======
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
       // Non implementare mai il metodo down
   };
   ```
@@ -297,19 +253,7 @@ public static function getTableColumns(): array
 public function setUp(): void
 {
     parent::setUp();
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> d23ba493 (add calendar)
-=======
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
     $this->label(trans('module-name::actions.export.label'))
          ->icon('heroicon-o-document-download')
          ->color('success')
@@ -383,19 +327,7 @@ return [
 ### Esecuzione
 - Eseguire sempre dalla directory Laravel root:
   ```bash
-<<<<<<< HEAD
   cd /var/www/html/<nome progetto>/laravel
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  cd /var/www/html/<nome progetto>/laravel
-=======
-  cd /var/www/html/ptvx/laravel
->>>>>>> d23ba493 (add calendar)
-=======
-  cd /var/www/html/<nome progetto>/laravel
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
   ./vendor/bin/phpstan analyze [target] --level=9
   ```
 
@@ -404,19 +336,7 @@ return [
    ```php
    // ❌ ERRATO
    public function execute()
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-   
->>>>>>> d23ba493 (add calendar)
-=======
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
    // ✅ CORRETTO
    public function execute(): ReturnType
    ```
@@ -425,19 +345,7 @@ return [
    ```php
    // ❌ ERRATO
    public function getAlAttribute($value)
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-   
->>>>>>> d23ba493 (add calendar)
-=======
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
    // ✅ CORRETTO
    public function getAlAttribute(?string $value): ?string
    ```
@@ -446,19 +354,7 @@ return [
    ```php
    // ❌ ERRATO
    protected $fillable = ['field1', 'field2'];
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-   
->>>>>>> d23ba493 (add calendar)
-=======
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
    // ✅ CORRETTO
    /** @var list<string> */
    protected $fillable = ['field1', 'field2'];
@@ -468,19 +364,7 @@ return [
    ```php
    // ❌ ERRATO: Accesso a proprietà non dichiarate
    $model->anno;
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-   
->>>>>>> d23ba493 (add calendar)
-=======
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
    // ✅ CORRETTO: Dichiarazione proprietà
    /**
     * @property int $anno
@@ -496,19 +380,7 @@ return [
     * @return bool|Response
     */
    public function viewAny(User $user): bool
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-   
->>>>>>> d23ba493 (add calendar)
-=======
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
    // ✅ CORRETTO: Allineamento tipi
    /**
     * @return bool
@@ -520,19 +392,7 @@ return [
    ```php
    // ❌ ERRATO: Accesso a proprietà indefinite
    $user->random_field;
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-   
->>>>>>> d23ba493 (add calendar)
-=======
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
    // ✅ CORRETTO: Usare metodi corretti di Faker
    $faker->randomElement(['a', 'b', 'c']);
    ```
@@ -558,33 +418,11 @@ $message = "Value: " . (is_scalar($value) ? (string) $value : '');
 ## Documentazione e Manutenzione
 
 ### Struttura Documentazione
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 - **Documentazione Root**: `/var/www/html/<nome progetto>/docs/`
   - Linee guida globali
   - Standard di codice generali
   - Link bidirezionali a doc moduli
 
-<<<<<<< HEAD
-=======
-=======
-- **Documentazione Root**: `/var/www/html/ptvx/docs/`
-  - Linee guida globali
-  - Standard di codice generali
-  - Link bidirezionali a doc moduli
-  
->>>>>>> d23ba493 (add calendar)
-=======
-- **Documentazione Root**: `/var/www/html/<nome progetto>/docs/`
-  - Linee guida globali
-  - Standard di codice generali
-  - Link bidirezionali a doc moduli
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 - **Documentazione Modulo**: `Modules/<NomeModulo>/docs/`
   - Architettura specifica del modulo
   - API e integrazione

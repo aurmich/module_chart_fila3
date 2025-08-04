@@ -1,40 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: manual
-description:
-globs:
----
-# Regole per FetchEventsAction
-
-## Namespace
-- Il namespace deve essere `Modules\<nome progetto>\Actions\Patient\Calendar`
-
-## Struttura
-- La classe deve estendere `Modules\Xot\Actions\Action`
-- Deve implementare il metodo `execute` che accetta un array `$fetchInfo`
-- Deve restituire un array di eventi nel formato richiesto dal calendario
-
-## Parametri
-- `$fetchInfo` deve contenere:
-  - `start`: Data di inizio
-  - `end`: Data di fine
-
-## Formato Eventi
-Ogni evento deve avere:
-- `title`: ID del paziente
-- `start`: Data di inizio
-- `end`: Data di fine
-- `url`: URL per la visualizzazione dei dettagli
-- `shouldOpenUrlInNewTab`: true
-
-## Integrazione
-- Deve utilizzare `XotData` per la gestione delle risorse
-- Deve essere compatibile con `UserCalendarWidget`
-- Deve seguire le convenzioni di Filament per gli URL
-=======
->>>>>>> aurmich/dev
 description:
 globs:
 alwaysApply: false
@@ -42,19 +6,7 @@ alwaysApply: false
 # Regole Windsurf per FetchEventsAction
 
 ## Struttura del Modulo
-<<<<<<< HEAD
 - L'azione deve essere nel modulo <nome progetto>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- L'azione deve essere nel modulo <nome progetto>
-=======
-- L'azione deve essere nel modulo SaluteOra
->>>>>>> ca5e1eaf (.)
-=======
-- L'azione deve essere nel modulo <nome progetto>
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 - Deve seguire la struttura delle azioni del modulo
 - Deve essere documentata nella cartella docs del modulo
 
@@ -78,7 +30,3 @@ alwaysApply: false
 - Ottimizzare le query al database
 - Utilizzare la cache quando appropriato
 - Minimizzare il carico di memoria
-<<<<<<< HEAD
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev

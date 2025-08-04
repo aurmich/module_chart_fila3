@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: model_decision
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 description: Comprehensive guide for AWS Lambda development, covering best practices for code organization, performance, security, testing, and common pitfalls. Focuses on building robust, scalable, and secure serverless applications using AWS Lambda.
 globs: *.js,*.ts,*.jsx,*.tsx,*.py,*.java,*.go,*.c#,*.cs,*.ps1,*.sh
 ---

@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: model_decision
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 description: This rule file provides comprehensive best practices for Databricks development, covering code organization, performance, security, testing, and common pitfalls. Adhering to these guidelines promotes maintainable, efficient, and secure Databricks applications.
 globs: **/*.{py,sql,ipynb,scala,r}
 ---

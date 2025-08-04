@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: model_decision
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 description: Comprehensive guidelines for Azure Pipelines, covering code structure, security, performance, testing, and deployment. Provides actionable advice for developers working with Azure Pipelines YAML definitions to enhance code quality and CI/CD processes.
 globs: *.yml,*.yaml
 ---

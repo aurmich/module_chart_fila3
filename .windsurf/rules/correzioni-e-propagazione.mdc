@@ -1,9 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 description:
 globs:
 alwaysApply: true
@@ -12,72 +7,11 @@ Ultimo aggiornamento: 2025-05-27
 Responsabile: Cascade AI
 
 Le classi che estendono \Modules\Xot\Filament\Resources\Pages\XotBaseListRecords devono avere il metodo getTableColumns() che restituisce un array associativo con chiavi stringa, colonne ricavate dal modello o dalla migrazione. Policy aggiornata e propagata in [Xot/docs/filament/listrecords.md](mdc:../../laravel/Modules/Xot/docs/filament/listrecords.md) e [<nome progetto>/docs/resources/studio-resource.md](mdc:../../laravel/Modules/<nome progetto>/docs/resources/studio-resource.md).
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-=======
-description: >
-  Regola fondamentale per la correzione degli errori e la propagazione delle best practice nei moduli Laravel/Filament/Xot.
-=======
-description:
->>>>>>> 2bcfd382 (fix Address)
-globs:
-alwaysApply: true
-=======
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
----
-Ultimo aggiornamento: 2025-05-27
-Responsabile: Cascade AI
-
-<<<<<<< HEAD
-- I widget FullCalendar devono sempre essere implementati come classi custom che estendono FullCalendarWidget, con override di config() e fetchEvents().
-- Non usare mai FullCalendarWidget::make()->options() o metodi fluenti: questi metodi non esistono e generano errori.
-- Nelle pagine Filament, includere solo la classe custom nei metodi getHeaderWidgets() o simili.
-=======
-<<<<<<< HEAD
-## Procedura obbligatoria
-1. Prima di correggere un errore, comprendi a fondo la causa leggendo tutto il codice e tutte le cartelle docs coinvolte (mai solo la root, sempre la cartella docs più vicina).
-2. Aggiorna la documentazione nella cartella docs del modulo coinvolto, crea collegamenti bidirezionali ai file docs principali (es. Xot/docs, Cms/docs).
-3. Studia approfonditamente le cartelle docs prima di implementare qualsiasi correzione.
-4. Procedi alle correzioni secondo priorità e propaga la correzione a tutti i file che presentano lo stesso errore.
-5. Il namespace corretto è sempre `Modules/<nome modulo>/Filament`, mai `Modules/<nome modulo>/App/Filament`.
-6. Usa solo i file di traduzione del modulo in `Modules/<nome modulo>/lang/<lingua>`, mai `->label()`.
-7. Le regole generali vanno documentate in Xot/docs, con collegamenti bidirezionali.
-8. Gli elementi frontend vanno nel modulo Cms.
-9. Ogni modulo ha uno scopo specifico e la documentazione deve rifletterlo.
-10. Tutti i file PHP devono avere `declare(strict_types=1);`.
-11. Non estendere mai classi Filament direttamente, ma solo tramite classi XotBase* con namespace coerente.
-12. I metodi come getFormSchema, getTableActions, ecc. restituiscono sempre array associativi con chiavi stringa.
-13. Se una select usa options array, passare a enum.
-14. Mai usare protected $casts o protected $dates.
-15. Segui sempre DRY, KISS e considera filosofia, politica, religione, zen.
-
-## Applicazione
-- Aggiorna la documentazione di Xot e dei moduli coinvolti.
-- Aggiorna anche questa regola in `.cursor/rules/correzioni-e-propagazione.mdc`.
-- Aggiorna le tue memories interne e la knowledge base.
->>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
-=======
-Le classi che estendono \Modules\Xot\Filament\Resources\Pages\XotBaseListRecords devono avere il metodo getTableColumns() che restituisce un array associativo con chiavi stringa, colonne ricavate dal modello o dalla migrazione. Policy aggiornata e propagata in [Xot/docs/filament/listrecords.md](mdc:../../laravel/Modules/Xot/docs/filament/listrecords.md) e [SaluteOra/docs/resources/studio-resource.md](mdc:../../laravel/Modules/SaluteOra/docs/resources/studio-resource.md).
->>>>>>> 2bcfd382 (fix Address)
 
 ---
 Ultimo aggiornamento: 2025-05-27
 Responsabile: Cascade AI
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
 
 - I widget FullCalendar devono sempre essere implementati come classi custom che estendono FullCalendarWidget, con override di config() e fetchEvents().
 - Non usare mai FullCalendarWidget::make()->options() o metodi fluenti: questi metodi non esistono e generano errori.
 - Nelle pagine Filament, includere solo la classe custom nei metodi getHeaderWidgets() o simili.
-<<<<<<< HEAD
-=======
->>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
-=======
->>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
->>>>>>> aurmich/dev

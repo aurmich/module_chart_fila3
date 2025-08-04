@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: model_decision
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 description: This rule provides comprehensive guidelines for DigitalOcean infrastructure and application development, covering code organization, security, performance, and deployment best practices.  It aims to ensure consistent, scalable, and secure cloud solutions on the DigitalOcean platform.
 globs: *.tf,*.yml,*.yaml,*.sh,*.py
 ---

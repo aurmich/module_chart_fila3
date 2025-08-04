@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: model_decision
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 description: This rule provides comprehensive guidance on best practices for developing and managing AWS resources using the AWS CLI, covering code organization, security, performance, and testing.
 globs: *.sh,*.py,*.yml,*.yaml,*.tf,*.json,*.md
 ---

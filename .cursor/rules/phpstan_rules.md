@@ -1,16 +1,4 @@
-<<<<<<< HEAD
 # Regole PHPStan per il Progetto <nome progetto>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Regole PHPStan per il Progetto <nome progetto>
-=======
-# Regole PHPStan per il Progetto PTVX
->>>>>>> d23ba493 (add calendar)
-=======
-# Regole PHPStan per il Progetto <nome progetto>
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 
 Questo documento definisce le regole globali per garantire la compatibilità con PHPStan livello 9 in tutti i moduli.
 

@@ -27,37 +27,12 @@ I temi NON devono mai ricreare funzionalità esistenti nei moduli Filament. Devo
 // Fare questo - richiama widget esistente
 @php
     $widgetClass = match (auth()->user()?->type) {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
         \Modules\<nome progetto>\Enums\UserTypeEnum::PATIENT =>
             \Modules\<nome progetto>\Filament\Widgets\PatientCalendarWidget::class,
         \Modules\<nome progetto>\Enums\UserTypeEnum::DOCTOR =>
             \Modules\<nome progetto>\Filament\Widgets\DoctorCalendarWidget::class,
         \Modules\<nome progetto>\Enums\UserTypeEnum::ADMIN =>
             \Modules\<nome progetto>\Filament\Widgets\AdminCalendarWidget::class,
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-        \Modules\SaluteOra\Enums\UserType::PATIENT =>
-=======
-        \Modules\SaluteOra\Enums\UserTypeEnum::PATIENT =>
->>>>>>> 2bcfd382 (fix Address)
-            \Modules\SaluteOra\Filament\Widgets\PatientCalendarWidget::class,
-        \Modules\SaluteOra\Enums\UserTypeEnum::DOCTOR =>
-            \Modules\SaluteOra\Filament\Widgets\DoctorCalendarWidget::class,
-        \Modules\SaluteOra\Enums\UserTypeEnum::ADMIN =>
-            \Modules\SaluteOra\Filament\Widgets\AdminCalendarWidget::class,
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
         default => null
     };
 @endphp
@@ -165,19 +140,7 @@ private function getWidgetProps(): array
 </script>
 
 // ✅ CORRETTO
-<<<<<<< HEAD
 @livewire(\Modules\<nome progetto>\Filament\Widgets\PatientCalendarWidget::class)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-@livewire(\Modules\<nome progetto>\Filament\Widgets\PatientCalendarWidget::class)
-=======
-@livewire(\Modules\SaluteOra\Filament\Widgets\PatientCalendarWidget::class)
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
-=======
-@livewire(\Modules\<nome progetto>\Filament\Widgets\PatientCalendarWidget::class)
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 ```
 
 ### Form Widget
@@ -188,19 +151,7 @@ private function getWidgetProps(): array
 </form>
 
 // ✅ CORRETTO
-<<<<<<< HEAD
 @livewire(\Modules\<nome progetto>\Filament\Widgets\AppointmentFormWidget::class)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-@livewire(\Modules\<nome progetto>\Filament\Widgets\AppointmentFormWidget::class)
-=======
-@livewire(\Modules\SaluteOra\Filament\Widgets\AppointmentFormWidget::class)
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
-=======
-@livewire(\Modules\<nome progetto>\Filament\Widgets\AppointmentFormWidget::class)
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 ```
 
 ## Documentazione Richiesta

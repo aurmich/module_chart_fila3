@@ -1,19 +1,7 @@
 ---
-<<<<<<< HEAD
 description: Process for resolving errors and documenting solutions
 globs:
 alwaysApply: false
-=======
-<<<<<<< HEAD
-trigger: model_decision
-description: Process for resolving errors and documenting solutions
-globs:
-=======
-description: Process for resolving errors and documenting solutions
-globs:
-alwaysApply: false
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 ---
 # Error Resolution Process
 

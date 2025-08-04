@@ -1,16 +1,4 @@
-<<<<<<< HEAD
 # Regole e Best Practices Laraxot - <nome progetto>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Regole e Best Practices Laraxot - <nome progetto>
-=======
-# Regole e Best Practices Laraxot - PTVX
->>>>>>> d23ba493 (add calendar)
-=======
-# Regole e Best Practices Laraxot - <nome progetto>
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 
 ## Regole Fondamentali Modelli e Namespace
 
@@ -36,19 +24,7 @@
 
 ## PHPStan Compliance
 
-<<<<<<< HEAD
 - Eseguire PHPStan sempre da `/var/www/html/<nome progetto>/laravel`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Eseguire PHPStan sempre da `/var/www/html/<nome progetto>/laravel`
-=======
-- Eseguire PHPStan sempre da `/var/www/html/ptvx/laravel`
->>>>>>> d23ba493 (add calendar)
-=======
-- Eseguire PHPStan sempre da `/var/www/html/<nome progetto>/laravel`
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 - Usare minimo livello 9 (`./vendor/bin/phpstan analyze --level=9`)
 - Mai usare `$casts` property, utilizzare il metodo `casts()`:
   ```php
@@ -104,16 +80,4 @@
 - Documentare ogni correzione
 - Seguire best practices di sicurezza documentate
 
-<<<<<<< HEAD
 Ultimo aggiornamento: 2025-06-03
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Ultimo aggiornamento: 2025-06-03
-=======
-Ultimo aggiornamento: 2025-06-03
->>>>>>> d23ba493 (add calendar)
-=======
-Ultimo aggiornamento: 2025-06-03
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev

@@ -1,12 +1,5 @@
 {
   "mcpServers": {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
     "sequential-thinking": {
       "command": "npx",
       "args": [
@@ -14,10 +7,6 @@
         "@modelcontextprotocol/server-sequential-thinking"
       ],
       "env": {}
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     },
     "memory": {
       "command": "npx",
@@ -43,60 +32,5 @@
       ]
     }
   
-<<<<<<< HEAD
-=======
-=======
-    "datapilot": {},
-    "fetch": {
-      "url": "http://localhost:3000/mcp",
-      "type": "http"
-    },
-    "mysql": {
-      "url": "mysql://user:password@localhost:3306/saluteora",
-      "type": "mysql"
-    },
-    "postgres": {
-      "url": "postgres://user:password@localhost:5432/saluteora",
-      "type": "postgres"
-    },
-    "redis": {
-      "url": "redis://localhost:6379",
-      "type": "redis"
-    },
-    "everything": {
-      "url": "http://localhost:3000/mcp",
-      "type": "http"
-=======
->>>>>>> d23ba493 (add calendar)
-    },
-    "memory": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-memory"]
-    },
-    "filesystem": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/html/_bases/"]
-    },
-    "puppeteer": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-puppeteer"
-      ],
-      "env": {}
-    },
-    "mcp-package-docs": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "mcp-package-docs"
-      ]
-    }
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
-  
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
   }
 }

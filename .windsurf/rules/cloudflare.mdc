@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: model_decision
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 description: This rule provides a comprehensive set of best practices and coding standards for developing with the Cloudflare library, specifically focusing on Terraform configurations. It aims to guide developers in creating efficient, secure, and maintainable infrastructure code.
 globs: *.tf
 ---

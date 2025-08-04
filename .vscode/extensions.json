@@ -11,47 +11,13 @@
         "codingyu.laravel-goto-view",
         "damms005.devdb",
         "mohamedbenhida.laravel-intellisense",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
         "block.vscode-mcp-extension",
         "aurorabiz.blade-ui-kit",
         "laravel.vscode-laravel",
         "porifa.laravel-intelephense",
         "bmewburn.vscode-intelephense-client",
         "davidanson.vscode-markdownlint",
-<<<<<<< HEAD
         "tomoki1207.pdf",
         "mehedidracula.php-namespace-resolver"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "tomoki1207.pdf",
-        "mehedidracula.php-namespace-resolver"
-=======
-        "block.vscode-mcp-extension"
->>>>>>> 54f4fa16 (.)
-=======
-        "block.vscode-mcp-extension",
-        "aurorabiz.blade-ui-kit",
-        "laravel.vscode-laravel",
-<<<<<<< HEAD
-        "porifa.laravel-intelephense"
->>>>>>> 7274ba81 (✨ (vscode): add new recommended extensions for Laravel development to improve developer experience)
-=======
-        "porifa.laravel-intelephense",
-        "bmewburn.vscode-intelephense-client",
-        "davidanson.vscode-markdownlint"
->>>>>>> 76e32659 (feat(docs): add new rules for SVG icons, XotBaseListRecords, icon naming, and model states best practices to improve consistency and maintainability across modules)
-=======
-        "tomoki1207.pdf"
->>>>>>> d23ba493 (add calendar)
-=======
-        "tomoki1207.pdf",
-        "mehedidracula.php-namespace-resolver"
->>>>>>> fad5a9ca (fix tenant default name)
->>>>>>> aurmich/dev
     ]
 }

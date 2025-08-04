@@ -1,19 +1,7 @@
 ---
-<<<<<<< HEAD
 description: Standards for creating and maintaining documentation within the project.
 globs: []
 alwaysApply: false
-=======
-<<<<<<< HEAD
-trigger: model_decision
-description: Standards for creating and maintaining documentation within the project.
-globs: []
-=======
-description: Standards for creating and maintaining documentation within the project.
-globs: []
-alwaysApply: false
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 ---
 
 # Documentation Standards
