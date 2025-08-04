@@ -509,6 +509,7 @@ class XotData extends Data implements Wireable
     public function getUserChildTypes(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $enum_class=$this->getUserChildTypeClass();
 =======
         $user_class = $this->getUserClass();
@@ -517,11 +518,15 @@ class XotData extends Data implements Wireable
             $enum_class=Str::of($user_class)->replace('\\Models\\', '\\Enums\\')->append('TypeEnum')->toString();
         }
 >>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
+=======
+        $enum_class=$this->getUserChildTypeClass();
+>>>>>>> 6aa6d801 (fix change type command)
         return $enum_class::cases();
         //$userInstance = app($user_class);
         //return $userInstance->getChildTypes();
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     public function getUserChildTypeClass(): string
     {
@@ -535,16 +540,25 @@ class XotData extends Data implements Wireable
         }
         Assert::stringNotEmpty($enum_class, 'enum_class is empty');
 =======
+=======
+    public function getUserChildTypeClass(): string
+    {
+        $user_class = $this->getUserClass();
+>>>>>>> 6aa6d801 (fix change type command)
         $enum_class = Arr::get($user_class::casts(),'type',null);
         if($enum_class==null){
             $enum_class=Str::of($user_class)->replace('\\Models\\', '\\Enums\\')->append('TypeEnum')->toString();
         }
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 6aa6d801 (fix change type command)
         return $enum_class;
         //$userInstance = app($user_class);
         //return $userInstance->getChildTypes();
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     public function forceSSL(): bool
@@ -603,4 +617,6 @@ class XotData extends Data implements Wireable
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
+=======
+>>>>>>> 6aa6d801 (fix change type command)
 }
