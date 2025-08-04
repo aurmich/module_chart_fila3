@@ -221,10 +221,15 @@ use Filament\Forms\Form;
 use Modules\UI\Filament\Forms\Components\InlineDatePicker;
 use Modules\UI\Tests\TestCase;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Illuminate\Support\Facades\App;
 =======
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+use Carbon\Carbon;
+use Illuminate\Support\Facades\App;
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 
 class InlineDatePickerTest extends TestCase
 {
@@ -366,8 +371,11 @@ class InlineDatePickerTest extends TestCase
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 =======
+=======
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 
     /** @test */
     public function it_uses_carbon_for_localization(): void
@@ -464,7 +472,10 @@ class InlineDatePickerTest extends TestCase
 
         return $method->invokeArgs($object, $parameters);
     }
+<<<<<<< HEAD
 >>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 =======
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 }

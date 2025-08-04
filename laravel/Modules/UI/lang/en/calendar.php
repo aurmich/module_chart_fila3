@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     'previous_month' => 'Previous month',
     'next_month' => 'Next month',
     'today' => 'Today',
@@ -16,6 +17,8 @@ return [
     ],
     'weekdays_short' => ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
 =======
+=======
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
     'months' => [
         '0' => 'January',
         '1' => 'February', 
@@ -58,5 +61,8 @@ return [
     ],
     'no_dates_available' => 'No dates available',
     'selected_date' => 'Selected date',
+<<<<<<< HEAD
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
+=======
 >>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 ];

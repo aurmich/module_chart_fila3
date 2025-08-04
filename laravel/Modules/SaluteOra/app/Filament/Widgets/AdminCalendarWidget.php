@@ -65,7 +65,17 @@ class AdminCalendarWidget extends FullCalendarWidget
 class AdminCalendarWidget extends FullCalendarWidget
 {
     use HasFullCalendarConfig;
+<<<<<<< HEAD
 >>>>>>> 2099645a (.)
+=======
+    
+    /**
+     * Riferimento alla data corrente del calendario.
+     *
+     * @var string
+     */
+    public string $currentDate;
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 
     /**
      * Modello associato al widget.
@@ -88,7 +98,10 @@ class AdminCalendarWidget extends FullCalendarWidget
      */
     protected static ?string $maxHeight = '600px';
 <<<<<<< HEAD
+<<<<<<< HEAD
     
+=======
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
     
     /**
      * Inizializza il widget impostando la data corrente.
@@ -97,6 +110,10 @@ class AdminCalendarWidget extends FullCalendarWidget
      */
     public function mount(): void
     {
+<<<<<<< HEAD
+=======
+        parent::mount();
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
         $this->currentDate = now()->format('Y-m-d');
     }
     
@@ -150,8 +167,11 @@ class AdminCalendarWidget extends FullCalendarWidget
         $this->currentDate = now()->format('Y-m-d');
         $this->dispatch('refetchEvents');
     }
+<<<<<<< HEAD
 =======
 >>>>>>> 2099645a (.)
+=======
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 
     /**
      * Filtri attivi per il widget.

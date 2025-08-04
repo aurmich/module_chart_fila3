@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Overview
 
 The InlineDatePicker is an advanced date selection component with multilingual support and intuitive navigation. Designed to provide an immediate and minimalist user experience, the component is fully integrated with Laravel's translation system.
@@ -53,21 +54,28 @@ The InlineDatePicker is an advanced date selection component with multilingual s
 <<<<<<< HEAD
 =======
 ## Panoramica Fenomenologica
+=======
+## Overview
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 
-L'InlineDatePicker è un componente di selezione date che implementa una **filosofia multi-dimensionale** dell'esperienza temporale. Non è semplicemente un calendario, ma un'**interfaccia quantistica** che permette all'utente di navigare attraverso il continuum spazio-temporale con controllo democratico e design minimalista.
+The InlineDatePicker is an advanced date selection component with multilingual support and intuitive navigation. Designed to provide an immediate and minimalist user experience, the component is fully integrated with Laravel's translation system.
 
-## Principi Filosofici Applicati
+## Key Features
 
-### 🧘 **Fenomenologia dell'Esperienza Temporale**
-- **Presente Fenomenologico**: Il mese visualizzato rappresenta l'esperienza immediata dell'utente
-- **Intenzionalità Temporale**: Ogni interazione ha significato nel contesto del tempo
-- **Corporeità Digitale**: L'interfaccia diventa estensione della percezione temporale
+### 🌐 **Multilingual Support**
+- **Centralized Translations**: Uses translation files for each supported language
+- **Month and Day Names**: Pulled from centralized translation files
+- **Navigation Labels**: Fully translatable and customizable
+- **Cultural Adaptability**: Respects local date display conventions
+- **Carbon Integration**: Uses Carbon for reliable date handling and localization
 
-### ⚛️ **Meccanica Quantistica delle Date**
-- **Superposizione**: Le date esistono in stato di potenzialità fino alla selezione
-- **Entanglement Temporale**: La navigazione collega passato, presente e futuro
-- **Collasso della Funzione d'Onda**: La selezione cristallizza una data specifica
+### 🔄 **Enhanced Navigation**
+- **Bidirectional Controls**: Built-in previous/next month navigation
+- **Livewire Sync**: Seamless server-side state management
+- **Visual Feedback**: Immediate visual feedback during navigation
+- **Accessibility**: Keyboard navigable and screen reader friendly
 
+<<<<<<< HEAD
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 ### 🏛️ **Governance Democratica del Tempo**
 - **Trasparenza**: Tutti i controlli sono visibili e accessibili
@@ -82,14 +90,19 @@ L'InlineDatePicker è un componente di selezione date che implementa una **filos
 <<<<<<< HEAD
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 =======
+=======
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 ### 📱 **Responsive Design**
 - **Compact Mode**: Optimized for mobile devices
 - **Adaptive Layout**: Automatically adjusts to available space
 - **Touch Interactions**: Optimized for touch screens
 - **Theme Support**: Built-in light/dark theme support
+<<<<<<< HEAD
 >>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 =======
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 
 ## Architettura Tecnica
 
@@ -103,6 +116,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\UI\Filament\Forms\Components;
 
 use Filament\Forms\Components\DatePicker;
@@ -148,22 +162,30 @@ class InlineDatePicker extends DatePicker
 >>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 =======
 namespace Modules\\UI\\Filament\\Forms\\Components;
+=======
+namespace Modules\UI\Filament\Forms\Components;
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 
-use Filament\\Forms\\Components\\DatePicker;
-use Carbon\\Carbon;
+use Filament\Forms\Components\DatePicker;
+use Carbon\Carbon;
 
 /**
- * InlineDatePicker - Calendario inline con navigazione temporale avanzata
+ * InlineDatePicker - Componente calendario inline con supporto multilingua
  * 
- * Implementa principi di:
- * - Fenomenologia: Esperienza diretta dell'interazione temporale
- * - Meccanica Quantistica: Date in superposizione fino alla selezione
- * - Democrazia Temporale: Controllo utente su ogni aspetto della navigazione
+ * Estende il DatePicker standard con funzionalità avanzate:
+ * - Navigazione mese precedente/successivo
+ * - Supporto completo multilingua
+ * - Selezione date abilitate/disabilitate
+ * - Design responsivo e accessibile
  */
 class InlineDatePicker extends DatePicker
 {
+<<<<<<< HEAD
     // Architettura completa...
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+    // Proprietà e metodi...
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 }
 ```
 
@@ -919,6 +941,7 @@ public function it_integrates_with_livewire_forms(): void
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!-- Debug info rimosso per ambiente di produzione -->
 =======
 =======
@@ -935,6 +958,9 @@ public function it_integrates_with_livewire_forms(): void
 >>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 =======
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+<!-- Debug info rimosso per ambiente di produzione -->
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
             Enabled Dates: <span x-text=\"enabledDates.length\"></span><br>
             Current Month: <span x-text=\"currentMonth\"></span><br>
             Compact Mode: {{ $compactMode ? 'true' : 'false' }}<br>

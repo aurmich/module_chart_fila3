@@ -4,6 +4,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 =======
 >>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 return [
@@ -83,6 +86,7 @@ return [
     ]
 ];
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> ca5e1eaf (.)
@@ -134,3 +138,5 @@ return array (
 >>>>>>> ca5e1eaf (.)
 =======
 >>>>>>> d23ba493 (add calendar)
+=======
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)

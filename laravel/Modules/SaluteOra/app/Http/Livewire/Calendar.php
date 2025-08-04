@@ -96,6 +96,9 @@ class Calendar extends Component
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
     public function nextMonth(): void
     {
         $this->selectedDate = Carbon::parse($this->selectedDate)
