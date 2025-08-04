@@ -10,12 +10,16 @@
             <div class="flex flex-row items-center">
                 <div>
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <span class="text-lg">{{ $appointment->patient?->full_name }}</span>
                     <div>
                         <p class="text-xs">{{ $appointment->starts_at?->format('d/m/Y') }}</p>
                         <p class="text-xs">{{ $appointment->time_range }}</p>
 =======
                     <span class="text-lg">{{ $appointment->patient->full_name }}</span>
+=======
+                    <span class="text-lg">{{ $appointment->patient?->full_name }}</span>
+>>>>>>> dad4bfe5 (🐛 (doctor-item.blade.php): fix potential null reference by using nullsafe operator for patient full name retrieval)
                     <div>
                         <p class="text-xs">{{ $appointment->starts_at?->format('d/m/Y') }}</p>
                         <p class="text-xs">{{ $appointment->time_range }}</p>
