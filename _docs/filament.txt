@@ -1,4 +1,5 @@
 <<<<<<< HEAD:_docs/filament.txt
+<<<<<<< HEAD:_docs/filament.txt
 <<<<<<< HEAD
 https://medium.com/@laravelprotips/filament-streamline-multiple-widgets-with-one-dynamic-livewire-filter-ed05c978a97f
 
@@ -9,6 +10,9 @@ https://github.com/awcodes/overlook?tab=readme-ov-file
 
 =======
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing):laravel/Modules/Geo/docs/filament.md
+=======
+
+>>>>>>> 2bcfd382 (fix Address):laravel/Modules/Geo/docs/filament.md
 -----------------------------------------------------------------------------------
 https://github.com/cheesegrits/filament-google-maps
 star:204
