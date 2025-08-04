@@ -1,7 +1,8 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/livewire-starter-kit",
+    "name": "laravel/laravel",
     "type": "project",
+<<<<<<< HEAD
 <<<<<<< HEAD
     "description": "The official Laravel starter kit for Livewire.",
 =======
@@ -10,25 +11,34 @@
     "description": "The official Laravel starter kit for Livewire.",
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+    "description": "The skeleton application for the Laravel framework.",
+>>>>>>> 93990a83 (rebase 1/1)
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {
         "php": "^8.2",
+<<<<<<< HEAD
         "filament/filament": "^3.4",
         "lara-zeus/bolt": "*",
+=======
+        "filament/filament": "^3.0",
+>>>>>>> 93990a83 (rebase 1/1)
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
-        "livewire/flux": "^2.1.1",
-        "livewire/volt": "^1.7.0",
-        "nwidart/laravel-modules": "^12.0"
+        "nwidart/laravel-modules": "*",
+        "spatie/laravel-data": "*",
+        "spatie/laravel-schemaless-attributes": "^2.5",
+        "wikimedia/composer-merge-plugin": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
         "laravel/pail": "^1.2.2",
-        "laravel/pint": "^1.18",
+        "laravel/pint": "^1.13",
         "laravel/sail": "^1.41",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.6",
+<<<<<<< HEAD
         "pestphp/pest": "^3.8",
         "pestphp/pest-plugin-laravel": "^3.2"
 <<<<<<< HEAD
@@ -74,6 +84,9 @@
         "pestphp/pest-plugin-laravel": "^3.2"
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+        "phpunit/phpunit": "^11.5.3"
+>>>>>>> 93990a83 (rebase 1/1)
     },
     "autoload": {
         "psr-4": {
@@ -107,12 +120,14 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Tests\\": "tests/",
+            "Modules\\": "Modules/"
         }
     },
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -122,6 +137,9 @@
 >>>>>>> aurmich/dev
             "@php artisan package:discover --ansi",
             "@php artisan filament:upgrade"
+=======
+            "@php artisan package:discover --ansi"
+>>>>>>> 93990a83 (rebase 1/1)
         ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
@@ -153,6 +171,7 @@
         "dev": [
             "Composer\\Config::disableProcessTimeout",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -160,6 +179,9 @@
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
             "npx concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"php artisan pail --timeout=0\" \"npm run dev\" --names=server,queue,logs,vite --kill-others"
+=======
+            "npx concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"php artisan pail --timeout=0\" \"npm run dev\" --names=server,queue,logs,vite"
+>>>>>>> 93990a83 (rebase 1/1)
         ],
         "test": [
             "@php artisan config:clear --ansi",

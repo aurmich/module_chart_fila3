@@ -5,8 +5,11 @@ alwaysApply: false
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> b13ef45d (✨ (InlineDatePicker): add comprehensive documentation for the InlineDatePicker component to improve developer understanding and usage)
+=======
+>>>>>>> 93990a83 (rebase 1/1)
 # InlineDatePicker Component Rules
 
 ## Principi Architetturali
@@ -239,7 +242,10 @@ public function it_integrates_with_wizard_correctly(): void
 *Versione: 1.0.0*
 *Principi: Fenomenologia, Zen, Fisica Quantistica, Governance Democratica*
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 =======
 >>>>>>> b13ef45d (✨ (InlineDatePicker): add comprehensive documentation for the InlineDatePicker component to improve developer understanding and usage)
+=======
+>>>>>>> 93990a83 (rebase 1/1)

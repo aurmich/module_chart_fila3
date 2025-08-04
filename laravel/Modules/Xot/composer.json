@@ -95,6 +95,7 @@
         "laravel/pennant": "^1.11",
         "laravel/pulse": "^1.2",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -117,6 +118,9 @@
         "livewire/livewire": "*",
         "livewire/flux": "^2.1.1",
 >>>>>>> e9942509 (fix: session)
+=======
+        "livewire/livewire": "*",
+>>>>>>> 93990a83 (rebase 1/1)
         "livewire/volt": "*",
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 =======
@@ -208,16 +212,20 @@
         "larastan/larastan": "*",
         "laravel/pint": "^1.18",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
         "laravel/sail": "^1.41",
+=======
+        "laravel/sail": "^1.39",
+>>>>>>> 93990a83 (rebase 1/1)
         "mockery/mockery": "^1.6",
-        "nunomaduro/collision": "^8.6",
+        "nunomaduro/collision": "^8.5",
         "orchestra/testbench": "*",
-        "pestphp/pest": "^3.8",
+        "pestphp/pest": "^3.5",
         "pestphp/pest-plugin-laravel": "^3.2",
         "spatie/laravel-error-solutions": "*",
         "thecodingmachine/phpstan-safe-rule": "*"

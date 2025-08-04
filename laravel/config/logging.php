@@ -99,6 +99,7 @@ return [
             'level' => env('LOG_LEVEL', 'debug'),
             'handler' => StreamHandler::class,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -129,6 +130,12 @@ return [
             ],
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+            'handler_with' => [
+                'stream' => 'php://stderr',
+            ],
+            'formatter' => env('LOG_STDERR_FORMATTER'),
+>>>>>>> 93990a83 (rebase 1/1)
             'processors' => [PsrLogMessageProcessor::class],
         ],
 

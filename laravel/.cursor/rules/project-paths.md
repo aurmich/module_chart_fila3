@@ -38,6 +38,7 @@ Prima di inviare codice, verificare sempre i percorsi con:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -45,6 +46,8 @@ Prima di inviare codice, verificare sempre i percorsi con:
 =======
 >>>>>>> 54f4fa16 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
 # Verifica che non ci siano reference a percorsi errati (senza laravel/)
 grep -r "/var/www/html/base_saluteora/app" --include="*.php" .
 grep -r "/var/www/html/base_saluteora/Modules" --include="*.php" .

@@ -86,6 +86,7 @@ return [
                 'log',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -99,6 +100,9 @@ return [
 =======
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+            'retry_after' => 60,
+>>>>>>> 93990a83 (rebase 1/1)
         ],
 
         'roundrobin' => [
@@ -108,6 +112,7 @@ return [
                 'postmark',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -121,6 +126,9 @@ return [
 =======
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+            'retry_after' => 60,
+>>>>>>> 93990a83 (rebase 1/1)
         ],
 
     ],

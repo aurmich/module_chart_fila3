@@ -215,6 +215,7 @@ return [
                 'timeout' => env('FIREBASE_HTTP_CLIENT_TIMEOUT'),
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -238,6 +239,9 @@ return [
 =======
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+                'guzzle_middlewares' => [],
+>>>>>>> 93990a83 (rebase 1/1)
             ],
         ],
     ],

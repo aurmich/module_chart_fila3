@@ -48,6 +48,7 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
 <<<<<<< HEAD
+<<<<<<< HEAD
     ->withMiddleware(function (Middleware $middleware) {
 =======
 <<<<<<< HEAD
@@ -58,9 +59,12 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware) {
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+    ->withMiddleware(function (Middleware $middleware): void {
+>>>>>>> 93990a83 (rebase 1/1)
         //
     })
-    ->withExceptions(function (Exceptions $exceptions) {
+    ->withExceptions(function (Exceptions $exceptions): void {
         //
 <<<<<<< HEAD
 =======

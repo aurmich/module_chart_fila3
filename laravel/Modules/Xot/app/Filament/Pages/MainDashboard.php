@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Facades\Filament;
 =======
 <<<<<<< HEAD
@@ -19,6 +20,8 @@ use Filament\Facades\Filament;
 use Filament\Facades\Filament;
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
 use Filament\Pages\Dashboard;
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
@@ -41,6 +44,7 @@ class MainDashboard extends Dashboard
     public function mount(): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 <<<<<<< HEAD
@@ -55,6 +59,8 @@ class MainDashboard extends Dashboard
         
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
         Assert::notNull($user = auth()->user(), '['.__LINE__.']['.class_basename($this).']');
         $modules = $user->roles->filter(
             static function ($item) {

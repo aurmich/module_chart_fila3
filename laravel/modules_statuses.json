@@ -1,14 +1,21 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+    "Patient": true,
+    "Xot": true,
+    "Dental": true,
+    "Reporting": true,
+>>>>>>> 93990a83 (rebase 1/1)
     "Activity": true,
     "Chart": true,
     "Cms": true,
-    "DbForge": true,
     "Gdpr": true,
+<<<<<<< HEAD
     "Geo": true,
 <<<<<<< HEAD
 =======
@@ -30,10 +37,13 @@
     "Geo": true,
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
     "Job": true,
     "Lang": true,
     "Media": true,
     "Notify": true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -74,4 +84,13 @@
     "Xot": true
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+    "Tenant": true,
+    "UI": true,
+    "User": true,
+    "SaluteOra": true,
+    "SaluteMo": true,
+    "Geo": true,
+    "DbForge": true
+>>>>>>> 93990a83 (rebase 1/1)
 }

@@ -55,6 +55,7 @@ Prima di ogni commit, utilizzare:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -62,6 +63,8 @@ Prima di ogni commit, utilizzare:
 =======
 >>>>>>> 54f4fa16 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
 # Cerca proprietà deprecate nei modelli
 grep -r "protected \$casts" --include="*.php" /var/www/html/base_saluteora/laravel/Modules
 grep -r "protected \$fillable" --include="*.php" /var/www/html/base_saluteora/laravel/Modules

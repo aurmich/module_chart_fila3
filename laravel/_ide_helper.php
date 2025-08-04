@@ -6,6 +6,7 @@
 /**
  * A helper file for Laravel, to provide autocomplete information to your IDE
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Generated for Laravel 12.20.0.
 =======
 <<<<<<< HEAD
@@ -14,12 +15,16 @@
  * Generated for Laravel 12.17.0.
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * Generated for Laravel 12.17.0.
+>>>>>>> 93990a83 (rebase 1/1)
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -41231,6 +41236,10 @@ namespace  {
 namespace  {
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+
+namespace  {
+>>>>>>> 93990a83 (rebase 1/1)
 
     /**
      * 
@@ -45724,6 +45733,7 @@ namespace  {
          *
          * @param array<string|\Illuminate\Contracts\Database\Query\Expression> $columns
 <<<<<<< HEAD
+<<<<<<< HEAD
          * @return int<0, max> 
 =======
 <<<<<<< HEAD
@@ -45732,6 +45742,9 @@ namespace  {
          * @return int 
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+         * @return int 
+>>>>>>> 93990a83 (rebase 1/1)
          * @static 
          */
         public static function getCountForPagination($columns = [])
@@ -45807,6 +45820,7 @@ namespace  {
          *
          * @param \Illuminate\Contracts\Database\Query\Expression|string $columns
 <<<<<<< HEAD
+<<<<<<< HEAD
          * @return int<0, max> 
 =======
 <<<<<<< HEAD
@@ -45815,6 +45829,9 @@ namespace  {
          * @return int 
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+         * @return int 
+>>>>>>> 93990a83 (rebase 1/1)
          * @static 
          */
         public static function count($columns = '*')
@@ -45932,6 +45949,7 @@ namespace  {
          * Insert new records into the database while ignoring errors.
          *
 <<<<<<< HEAD
+<<<<<<< HEAD
          * @return int<0, max> 
 =======
 <<<<<<< HEAD
@@ -45940,6 +45958,9 @@ namespace  {
          * @return int 
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+         * @return int 
+>>>>>>> 93990a83 (rebase 1/1)
          * @static 
          */
         public static function insertOrIgnore($values)
@@ -46017,6 +46038,7 @@ namespace  {
          * @param array<string, float|int|numeric-string> $columns
          * @param array<string, mixed> $extra
 <<<<<<< HEAD
+<<<<<<< HEAD
          * @return int<0, max> 
 =======
 <<<<<<< HEAD
@@ -46025,6 +46047,9 @@ namespace  {
          * @return int 
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+         * @return int 
+>>>>>>> 93990a83 (rebase 1/1)
          * @throws \InvalidArgumentException
          * @static 
          */
@@ -46040,6 +46065,7 @@ namespace  {
          * @param array<string, float|int|numeric-string> $columns
          * @param array<string, mixed> $extra
 <<<<<<< HEAD
+<<<<<<< HEAD
          * @return int<0, max> 
 =======
 <<<<<<< HEAD
@@ -46048,6 +46074,9 @@ namespace  {
          * @return int 
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+         * @return int 
+>>>>>>> 93990a83 (rebase 1/1)
          * @throws \InvalidArgumentException
          * @static 
          */
@@ -46608,6 +46637,7 @@ namespace  {
 
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
@@ -46670,10 +46700,13 @@ namespace Facades\Livewire\Features\SupportFileUploads {
 =======
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
 }
 
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -46682,3 +46715,7 @@ namespace Facades\Livewire\Features\SupportFileUploads {
 
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+
+
+>>>>>>> 93990a83 (rebase 1/1)

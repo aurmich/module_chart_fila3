@@ -519,6 +519,7 @@ return [
 
     'httpMethodsIgnored' => ['POST', 'PUT', 'PATCH', 'DELETE'],
 <<<<<<< HEAD
+<<<<<<< HEAD
 ];
 =======
 <<<<<<< HEAD
@@ -545,3 +546,6 @@ return [
 ];
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+];
+>>>>>>> 93990a83 (rebase 1/1)

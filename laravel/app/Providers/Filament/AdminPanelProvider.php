@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  namespace App\Providers\Filament;
 =======
 <<<<<<< HEAD
@@ -21,10 +22,14 @@ namespace App\Providers\Filament;
  namespace App\Providers\Filament;
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+namespace App\Providers\Filament;
+>>>>>>> 93990a83 (rebase 1/1)
 
- use Modules\Xot\Providers\Filament\XotBaseMainPanelProvider;
- use Filament\Panel;
+use Filament\Panel;
+use Filament\PanelProvider;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -45,6 +50,23 @@ namespace App\Providers\Filament;
              ;
      }
 <<<<<<< HEAD
+=======
+class AdminPanelProvider extends PanelProvider
+{
+    public function panel(Panel $panel): Panel
+    {
+        return $panel
+            ->id('admin')
+            ->path('admin')
+            ->login()
+            ->colors([
+                'primary' => \Filament\Support\Colors\Color::Amber,
+            ])
+            ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
+            ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
+            ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets');
+    }
+>>>>>>> 93990a83 (rebase 1/1)
 }
 =======
 <<<<<<< HEAD

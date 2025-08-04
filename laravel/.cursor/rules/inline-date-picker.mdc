@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 description: 
 globs: 
 alwaysApply: true
@@ -10,6 +11,11 @@ description:
 globs:
 alwaysApply: false
 >>>>>>> 024cd359 (📝 (inline-date-picker.mdc): update inline date picker documentation to reflect)
+=======
+description:
+globs:
+alwaysApply: false
+>>>>>>> 93990a83 (rebase 1/1)
 ---
 # InlineDatePicker Component Rules
 
@@ -55,6 +61,7 @@ InlineDatePicker::make('appointment_date')
 - [Modulo UI](../laravel/Modules/UI/docs/form-components.md)
 - [Componente Specifico](../laravel/Modules/UI/docs/components/inline-date-picker-component.md)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 // ✅ 2. Validazione nel componente currentViewMonth()
 public function currentViewMonth(string $month): static {
@@ -678,3 +685,7 @@ public function previousMonth(): void {
 ## Ultimo Aggiornamento
 2025-01-04 - Implementazione iniziale con filosofia temporale quantistica
 >>>>>>> 024cd359 (📝 (inline-date-picker.mdc): update inline date picker documentation to reflect)
+=======
+## Ultimo Aggiornamento
+2025-01-04 - Implementazione iniziale con filosofia temporale quantistica
+>>>>>>> 93990a83 (rebase 1/1)

@@ -148,6 +148,7 @@ namespace Modules\Chart\Models{
  * @property string|null $type
  * @property int|null $width
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
@@ -180,10 +181,13 @@ namespace Modules\Chart\Models{
 =======
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static \Modules\Chart\Database\Factories\ChartFactory factory($count = null, $state = [])
  * @method static Builder|Chart newModelQuery()
  * @method static Builder|Chart newQuery()
  * @method static Builder|Chart query()
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
@@ -201,6 +205,10 @@ namespace Modules\Chart\Models{
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
+>>>>>>> 93990a83 (rebase 1/1)
  * @mixin \Eloquent
  */
 	class Chart extends \Eloquent {}
@@ -355,6 +363,7 @@ namespace Modules\Cms\Models{
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Collection<int, static> get($columns = ['*'])
  * @method static \Modules\Cms\Database\Factories\MenuFactory factory($count = null, $state = [])
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property-read int $depth
  * @property-read string $path
 =======
@@ -364,6 +373,8 @@ namespace Modules\Cms\Models{
 =======
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @mixin \Eloquent
  */
 	class Menu extends \Eloquent implements \Modules\Xot\Contracts\HasRecursiveRelationshipsContract {}
@@ -434,6 +445,7 @@ namespace Modules\Cms\Models{
  * @property ProfileContract|null $updater
  * @method static \Modules\Cms\Database\Factories\PageFactory factory($count = null, $state = [])
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property array<array-key, mixed>|null $middleware
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Page whereMiddleware($value)
 =======
@@ -443,6 +455,8 @@ namespace Modules\Cms\Models{
 =======
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @mixin \Eloquent
  */
 	class Page extends \Eloquent {}
@@ -464,6 +478,7 @@ namespace Modules\Cms\Models{
  * @property mixed                                       $translations
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -483,6 +498,8 @@ namespace Modules\Cms\Models{
 =======
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static \Modules\Cms\Database\Factories\PageContentFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|PageContent  newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|PageContent  newQuery()
@@ -500,6 +517,7 @@ namespace Modules\Cms\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|PageContent  whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|PageContent  whereUpdatedBy($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -509,6 +527,8 @@ namespace Modules\Cms\Models{
 =======
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @mixin \Eloquent
  */
 	class PageContent extends \Eloquent {}
@@ -532,6 +552,7 @@ namespace Modules\Cms\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|Section  newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Section  query()
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
 =======
@@ -543,6 +564,10 @@ namespace Modules\Cms\Models{
  * @property-read \Modules\SaluteOra\Models\Profile|null $updater
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * @property-read \Modules\SaluteOra\Models\Profile|null $creator
+ * @property-read \Modules\SaluteOra\Models\Profile|null $updater
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Section whereBlocks($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Section whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Section whereCreatedBy($value)
@@ -560,6 +585,7 @@ namespace Modules\Cms\Models{
 	class Section extends \Eloquent {}
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -1032,6 +1058,8 @@ namespace Modules\FormBuilder\Models{
 =======
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
 namespace Modules\Gdpr\Models{
 /**
  * Modules\Gdpr\Models\Consent.
@@ -1452,6 +1480,7 @@ namespace Modules\Geo\Models{
  * @property string|null $deleted_by
  * @property-read \Illuminate\Database\Eloquent\Model|\Eloquent|null $addressable
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
@@ -1463,13 +1492,18 @@ namespace Modules\Geo\Models{
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @property-read \Modules\SaluteOra\Models\Profile|null $creator
  * @property-read string $full_address
  * @property-read string $street_address
  * @property-read \Illuminate\Database\Eloquent\Model|\Eloquent|null $model
  * @property-read \Modules\SaluteOra\Models\Profile|null $updater
+<<<<<<< HEAD
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static \Modules\Geo\Database\Factories\AddressFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Address nearby(float $latitude, float $longitude, float $radiusKm = '10')
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Address newModelQuery()
@@ -1534,6 +1568,7 @@ namespace Modules\Geo\Models{
  * @property string|null $sigla
  * @property string|null $codiceCatastale
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property-read \Modules\User\Models\Profile|null $creator
  * @property-read \Modules\User\Models\Profile|null $updater
 =======
@@ -1545,6 +1580,10 @@ namespace Modules\Geo\Models{
  * @property-read \Modules\SaluteOra\Models\Profile|null $updater
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * @property-read \Modules\SaluteOra\Models\Profile|null $creator
+ * @property-read \Modules\SaluteOra\Models\Profile|null $updater
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Comune newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Comune newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Comune query()
@@ -1566,6 +1605,7 @@ namespace Modules\Geo\Models{
 namespace Modules\Geo\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -1573,6 +1613,10 @@ namespace Modules\Geo\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static \Illuminate\Database\Eloquent\Builder|County newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|County newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|County query()
@@ -1597,6 +1641,7 @@ namespace Modules\Geo\Models{
 
 namespace Modules\Geo\Models{
 /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -1628,6 +1673,8 @@ namespace Modules\Geo\Models{
 =======
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * Class Location.
  *
  * @property int                  $id
@@ -1663,12 +1710,15 @@ namespace Modules\Geo\Models{
  * @method static Builder<static>|Location newQuery()
  * @method static Builder<static>|Location withinDistance(float $latitude, float $longitude, float $distanceInKm)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static Builder<static>|Location whereCreatedAt($value)
  * @method static Builder<static>|Location whereCreatedBy($value)
  * @method static Builder<static>|Location whereDeletedAt($value)
@@ -1683,6 +1733,7 @@ namespace Modules\Geo\Models{
  * @method static Builder<static>|Location whereUpdatedAt($value)
  * @method static Builder<static>|Location whereUpdatedBy($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -1690,6 +1741,8 @@ namespace Modules\Geo\Models{
 =======
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @mixin \Eloquent
  */
 	class Location extends \Eloquent {}
@@ -1698,6 +1751,7 @@ namespace Modules\Geo\Models{
 namespace Modules\Geo\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property-read \Modules\Geo\Models\Address|null $address
  * @property-read \Modules\User\Models\Profile|null $creator
 =======
@@ -1705,17 +1759,23 @@ namespace Modules\Geo\Models{
  * @property-read \Modules\Geo\Models\Address|null $address
  * @property-read \Modules\User\Models\Profile|null $creator
 =======
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * 
  *
  * @property-read \Modules\Geo\Models\Address|null $address
  * @property-read \Modules\SaluteOra\Models\Profile|null $creator
+<<<<<<< HEAD
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @property-read string $formatted_address
  * @property-read float|null $latitude
  * @property-read float|null $longitude
  * @property-read \Illuminate\Database\Eloquent\Model $linked
  * @property-read \Modules\Geo\Models\PlaceType|null $placeType
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property-read \Modules\User\Models\Profile|null $updater
 =======
@@ -1725,10 +1785,14 @@ namespace Modules\Geo\Models{
  * @property-read \Modules\SaluteOra\Models\Profile|null $updater
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * @property-read \Modules\SaluteOra\Models\Profile|null $updater
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static \Modules\Geo\Database\Factories\PlaceFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Place newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Place newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Place query()
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -1736,6 +1800,8 @@ namespace Modules\Geo\Models{
 =======
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @property int $id
  * @property string|null $model_type
  * @property int|null $model_id
@@ -1761,6 +1827,7 @@ namespace Modules\Geo\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Place whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Place whereUpdatedBy($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -1768,6 +1835,8 @@ namespace Modules\Geo\Models{
 =======
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @mixin \Eloquent
  */
 	class Place extends \Eloquent implements \Modules\Geo\Contracts\HasGeolocation {}
@@ -1776,6 +1845,7 @@ namespace Modules\Geo\Models{
 namespace Modules\Geo\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -1783,6 +1853,10 @@ namespace Modules\Geo\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PlaceType newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PlaceType newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PlaceType query()
@@ -1793,6 +1867,7 @@ namespace Modules\Geo\Models{
 
 namespace Modules\Geo\Models{
 /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -1843,6 +1918,10 @@ namespace Modules\Geo\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static \Illuminate\Database\Eloquent\Builder|State newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|State newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|State query()
@@ -1854,6 +1933,7 @@ namespace Modules\Geo\Models{
 namespace Modules\Job\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -1861,6 +1941,10 @@ namespace Modules\Job\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static \Modules\Job\Database\Factories\ExportFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|Export newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Export newQuery()
@@ -1909,6 +1993,7 @@ namespace Modules\Job\Models{
 namespace Modules\Job\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -1916,6 +2001,10 @@ namespace Modules\Job\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static \Modules\Job\Database\Factories\FailedImportRowFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|FailedImportRow newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|FailedImportRow newQuery()
@@ -2009,6 +2098,7 @@ namespace Modules\Job\Models{
 namespace Modules\Job\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -2016,6 +2106,10 @@ namespace Modules\Job\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static \Modules\Job\Database\Factories\ImportFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|Import newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Import newQuery()
@@ -2583,6 +2677,7 @@ namespace Modules\Lang\Models{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
@@ -2614,6 +2709,8 @@ namespace Modules\Lang\Models{
 =======
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
 namespace Modules\Media\Models{
 /**
  * Modules\Media\Models\Media.
@@ -2832,6 +2929,7 @@ namespace Modules\Media\Models{
 namespace Modules\Media\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -2839,6 +2937,10 @@ namespace Modules\Media\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @property int $id
  * @property int $media_id
  * @property string|null $codec_video
@@ -3032,6 +3134,7 @@ namespace Modules\Notify\Models{
 namespace Modules\Notify\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -3039,6 +3142,10 @@ namespace Modules\Notify\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @property int $id
  * @property string $mailable
  * @property string|null $subject
@@ -3079,6 +3186,7 @@ namespace Modules\Notify\Models{
  * @method static Builder<static>|MailTemplate whereUpdatedAt($value)
  * @method static Builder<static>|MailTemplate whereUpdatedBy($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3098,6 +3206,10 @@ namespace Modules\Notify\Models{
  * @method static Builder<static>|MailTemplate whereParams($value)
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+ * @property string|null $params
+ * @method static Builder<static>|MailTemplate whereParams($value)
+>>>>>>> 93990a83 (rebase 1/1)
  * @mixin \Eloquent
  */
 	class MailTemplate extends \Eloquent {}
@@ -3105,6 +3217,7 @@ namespace Modules\Notify\Models{
 
 namespace Modules\Notify\Models{
 /**
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property-read \Modules\User\Models\Profile|null $creator
 =======
@@ -3116,10 +3229,16 @@ namespace Modules\Notify\Models{
  * @property-read \Modules\SaluteOra\Models\Profile|null $creator
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+ * @property-read \Modules\SaluteOra\Models\Profile|null $creator
+>>>>>>> 93990a83 (rebase 1/1)
  * @property-read \Illuminate\Database\Eloquent\Model|\Eloquent $mailable
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
  * @property-read \Modules\Notify\Models\MailTemplate|null $template
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property-read \Modules\User\Models\Profile|null $updater
 =======
@@ -3129,6 +3248,9 @@ namespace Modules\Notify\Models{
  * @property-read \Modules\SaluteOra\Models\Profile|null $updater
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * @property-read \Modules\SaluteOra\Models\Profile|null $updater
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static \Modules\Notify\Database\Factories\MailTemplateLogFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MailTemplateLog newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MailTemplateLog newQuery()
@@ -3141,6 +3263,7 @@ namespace Modules\Notify\Models{
 namespace Modules\Notify\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -3148,6 +3271,10 @@ namespace Modules\Notify\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @property int $id
  * @property int $mail_template_id
  * @property int $version
@@ -3163,6 +3290,7 @@ namespace Modules\Notify\Models{
  * @property string|null $updated_by
  * @property string|null $deleted_by
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
@@ -3174,13 +3302,18 @@ namespace Modules\Notify\Models{
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @property-read \Modules\SaluteOra\Models\Profile|null $creator
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
  * @property-read \Modules\Notify\Models\MailTemplate|null $template
  * @property-read \Modules\SaluteOra\Models\Profile|null $updater
+<<<<<<< HEAD
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static \Modules\Notify\Database\Factories\MailTemplateVersionFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MailTemplateVersion newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MailTemplateVersion newQuery()
@@ -3210,6 +3343,7 @@ namespace Modules\Notify\Models{
 namespace Modules\Notify\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Notification model for the Notify module.
 =======
 <<<<<<< HEAD
@@ -3218,11 +3352,15 @@ namespace Modules\Notify\Models{
  * 
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+>>>>>>> 93990a83 (rebase 1/1)
  *
  * @property string $id
  * @property string $type
  * @property string $notifiable_type
  * @property int $notifiable_id
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property array<string, mixed>|string $data
 =======
@@ -3232,6 +3370,9 @@ namespace Modules\Notify\Models{
  * @property string $data
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * @property string $data
+>>>>>>> 93990a83 (rebase 1/1)
  * @property \Illuminate\Support\Carbon|null $read_at
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
@@ -3239,6 +3380,7 @@ namespace Modules\Notify\Models{
  * @property string|null $created_by
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * @property string|null $deleted_by
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -3255,6 +3397,8 @@ namespace Modules\Notify\Models{
 =======
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @property-read \Illuminate\Database\Eloquent\Model|null $creator
  * @property-read \Illuminate\Database\Eloquent\Model|null $updater
  * @method static \Modules\Notify\Database\Factories\NotificationFactory factory($count = null, $state = [])
@@ -3281,6 +3425,7 @@ namespace Modules\Notify\Models{
 namespace Modules\Notify\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3289,6 +3434,9 @@ namespace Modules\Notify\Models{
 =======
  * 
 >>>>>>> 13ea6524 (phpstan)
+=======
+ * 
+>>>>>>> 93990a83 (rebase 1/1)
  *
  * @property int $id
  * @property string $notifiable_type
@@ -3325,8 +3473,11 @@ namespace Modules\Notify\Models{
 
 namespace Modules\Notify\Models{
 /**
+<<<<<<< HEAD
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * Class NotificationTemplate.
  *
  * @property int $id
@@ -3350,6 +3501,7 @@ namespace Modules\Notify\Models{
  * @property \Carbon\Carbon $updated_at
  * @property \Carbon\Carbon|null $deleted_at
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property-read string $channels_label
  * @property NotificationTypeEnum $type
  * @property-read \Modules\User\Models\Profile|null $creator
@@ -3369,10 +3521,16 @@ namespace Modules\Notify\Models{
  * @property-read \Modules\SaluteOra\Models\Profile|null $creator
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * @property-read string $channels_label
+ * @property NotificationTypeEnum $type
+ * @property-read \Modules\SaluteOra\Models\Profile|null $creator
+>>>>>>> 93990a83 (rebase 1/1)
  * @property-read int|null $logs_count
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
  * @property-read mixed $translations
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property-read \Modules\User\Models\Profile|null $updater
 =======
@@ -3382,6 +3540,9 @@ namespace Modules\Notify\Models{
  * @property-read \Modules\SaluteOra\Models\Profile|null $updater
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * @property-read \Modules\SaluteOra\Models\Profile|null $updater
+>>>>>>> 93990a83 (rebase 1/1)
  * @property-read int|null $versions_count
  * @method static \Illuminate\Database\Eloquent\Builder<static>|NotificationTemplate active()
  * @method static \Modules\Notify\Database\Factories\NotificationTemplateFactory factory($count = null, $state = [])
@@ -3401,6 +3562,7 @@ namespace Modules\Notify\Models{
 
 namespace Modules\Notify\Models{
 /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -3444,6 +3606,10 @@ namespace Modules\Notify\Models{
 =======
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|NotificationType newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|NotificationType newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|NotificationType query()
@@ -3616,6 +3782,7 @@ namespace Modules\SaluteOra\Models{
  * @property-read int|null $consents_count
  * @property-read \Modules\User\Models\Team|null $currentTeam
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\User> $all_team_users
 =======
 <<<<<<< HEAD
@@ -3624,6 +3791,9 @@ namespace Modules\SaluteOra\Models{
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Xot\Contracts\UserContract> $all_team_users
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Xot\Contracts\UserContract> $all_team_users
+>>>>>>> 93990a83 (rebase 1/1)
  * @property-read \Modules\User\Models\AuthenticationLog|null $latestAuthentication
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
@@ -3683,6 +3853,7 @@ namespace Modules\SaluteOra\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin withoutPermission($permissions)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin withoutRole($roles, $guard = null)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3734,6 +3905,8 @@ namespace Modules\SaluteOra\Models{
  * @property-read int|null $devices_count
 >>>>>>> f3e4ec66 (.)
 =======
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Device> $devices
  * @property-read int|null $devices_count
  * @property string|null $dental_problems
@@ -3753,14 +3926,18 @@ namespace Modules\SaluteOra\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereLastDentalVisit($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin wherePregnancyCertificate($value)
  * @mixin \Eloquent
+<<<<<<< HEAD
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  */
 	class Admin extends \Eloquent {}
 }
 
 namespace Modules\SaluteOra\Models{
 /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -3769,6 +3946,10 @@ namespace Modules\SaluteOra\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @property string $id
  * @property string|null $type
  * @property string $user_id
@@ -3799,6 +3980,7 @@ namespace Modules\SaluteOra\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|AdminStudio whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|AdminStudio whereUserId($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property-read \Modules\SaluteOra\Models\Studio|null $studio
  * @property-read User|null $user
 =======
@@ -3808,6 +3990,8 @@ namespace Modules\SaluteOra\Models{
 =======
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @mixin \Eloquent
  */
 	class AdminStudio extends \Eloquent {}
@@ -3816,6 +4000,7 @@ namespace Modules\SaluteOra\Models{
 namespace Modules\SaluteOra\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -3823,6 +4008,10 @@ namespace Modules\SaluteOra\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @property string $id
  * @property int $team_id
  * @property string|null $user_id
@@ -3855,6 +4044,7 @@ namespace Modules\SaluteOra\Models{
 
 namespace Modules\SaluteOra\Models{
 /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -3913,6 +4103,8 @@ namespace Modules\SaluteOra\Models{
 =======
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * Appointment Model for the SaluteOra Module.
  * 
  * Represents an appointment booked by a patient with a doctor in a studio.
@@ -3920,6 +4112,7 @@ namespace Modules\SaluteOra\Models{
  *
  * @property int $id
  * @property int $patient_id
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property AppointmentState $state
 =======
@@ -3932,11 +4125,15 @@ namespace Modules\SaluteOra\Models{
  * @property UserStateEnum $state
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+ * @property UserStateEnum $state
+>>>>>>> 93990a83 (rebase 1/1)
  * @property int $doctor_id
  * @property int $dentist_id Alias for doctor_id (legacy compatibility)
  * @property int $studio_id
  * @property int|null $tenant_id
  * @property string $title
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property \Illuminate\Support\Carbon|null $starts_at
  * @property \Illuminate\Support\Carbon|null $ends_at
@@ -3950,6 +4147,11 @@ namespace Modules\SaluteOra\Models{
  * @property \Carbon\Carbon|null $date Alias for start_time date
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * @property \Carbon\Carbon $start_time
+ * @property \Carbon\Carbon $end_time
+ * @property \Carbon\Carbon|null $date Alias for start_time date
+>>>>>>> 93990a83 (rebase 1/1)
  * @property AppointmentTypeEnum $type
  * @property AppointmentStatusEnum $status
  * @property string|null $notes
@@ -3958,6 +4160,7 @@ namespace Modules\SaluteOra\Models{
  * @property bool $is_emergency Alias for emergency
  * @property bool $eligibility_confirmed
  * @property bool $reminder_sent
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property \Illuminate\Support\Carbon|null $reminder_sent_at
  * @property \Illuminate\Support\Carbon $created_at
@@ -3973,6 +4176,11 @@ namespace Modules\SaluteOra\Models{
  * @property \Carbon\Carbon $updated_at
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * @property \Carbon\Carbon|null $reminder_sent_at
+ * @property \Carbon\Carbon $created_at
+ * @property \Carbon\Carbon $updated_at
+>>>>>>> 93990a83 (rebase 1/1)
  * @property-read Patient $patient
  * @property-read Doctor $doctor
  * @property-read Studio $studio
@@ -3981,6 +4189,7 @@ namespace Modules\SaluteOra\Models{
  * @property string|null $created_by
  * @property string|null $start_datetime
  * @property string|null $end_datetime
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property \Illuminate\Support\Carbon|null $date
  * @property \Illuminate\Support\Carbon|null $start_time
@@ -3993,6 +4202,8 @@ namespace Modules\SaluteOra\Models{
 =======
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Activity\Models\Activity> $activities
  * @property-read int|null $activities_count
  * @property-read \Modules\SaluteOra\Models\Profile|null $creator
@@ -4031,12 +4242,15 @@ namespace Modules\SaluteOra\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Appointment whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Appointment whereUserId($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @property \Illuminate\Support\Carbon|null $starts_at
  * @property \Illuminate\Support\Carbon|null $ends_at
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Appointment orWhereNotState(string $column, $states)
@@ -4047,6 +4261,7 @@ namespace Modules\SaluteOra\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Appointment wherePatientId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Appointment whereStartsAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Appointment whereState($value)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -4071,10 +4286,16 @@ namespace Modules\SaluteOra\Models{
  */
 	class Appointment extends \Eloquent {}
 >>>>>>> aurmich/dev
+=======
+ * @mixin \Eloquent
+ */
+	class Appointment extends \Eloquent {}
+>>>>>>> 93990a83 (rebase 1/1)
 }
 
 namespace Modules\SaluteOra\Models{
 /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -4176,10 +4397,13 @@ namespace Modules\SaluteOra\Models{
 =======
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * Doctor model for the SaluteOra module.
  * 
  * Extends the User model to provide doctor-specific functionality.
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -4204,6 +4428,8 @@ namespace Modules\SaluteOra\Models{
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @property int $id
  * @property string $name
  * @property string $email
@@ -4222,8 +4448,11 @@ namespace Modules\SaluteOra\Models{
  * @property string|null $address
  * @property string|null $city
  * @property string|null $registration_number
+<<<<<<< HEAD
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @property string|null $status
  * @property array<array-key, mixed>|null $certifications
  * @property \Illuminate\Support\Carbon|null $email_verified_at
@@ -4232,6 +4461,7 @@ namespace Modules\SaluteOra\Models{
  * @property int|null $current_team_id
  * @property string|null $profile_photo_path
  * @property \Illuminate\Support\Carbon|null $deleted_at
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -4264,6 +4494,8 @@ namespace Modules\SaluteOra\Models{
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @property array<array-key, mixed>|null $moderation_data
  * @property string|null $lang
  * @property string|null $date_of_birth
@@ -4276,13 +4508,17 @@ namespace Modules\SaluteOra\Models{
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_by
+<<<<<<< HEAD
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Gdpr\Models\Consent> $activeConsents
  * @property-read int|null $active_consents_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Activity\Models\Activity> $activities
  * @property-read int|null $activities_count
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property-read \Illuminate\Database\Eloquent\Collection<int, Appointment> $appointments
  * @property-read int|null $appointments_count
 =======
@@ -4292,6 +4528,8 @@ namespace Modules\SaluteOra\Models{
 =======
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Authentication> $authentications
  * @property-read int|null $authentications_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Laravel\Passport\Client> $clients
@@ -4299,6 +4537,7 @@ namespace Modules\SaluteOra\Models{
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Gdpr\Models\Consent> $consents
  * @property-read int|null $consents_count
  * @property-read \Modules\User\Models\Team|null $currentTeam
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -4313,6 +4552,9 @@ namespace Modules\SaluteOra\Models{
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Xot\Contracts\UserContract> $all_team_users
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Xot\Contracts\UserContract> $all_team_users
+>>>>>>> 93990a83 (rebase 1/1)
  * @property-read \Modules\User\Models\AuthenticationLog|null $latestAuthentication
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
@@ -4327,6 +4569,7 @@ namespace Modules\SaluteOra\Models{
  * @property-read int|null $roles_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\SocialiteUser> $socialiteUsers
  * @property-read int|null $socialite_users_count
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -4343,6 +4586,10 @@ namespace Modules\SaluteOra\Models{
  * @property-read int|null $studios_count
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * @property-read \Modules\SaluteOra\Models\DoctorTeam|DoctorStudio|null $pivot
+ * @property-read int|null $studios_count
+>>>>>>> 93990a83 (rebase 1/1)
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Team> $teams
  * @property-read int|null $teams_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\SaluteOra\Models\Studio> $tenants
@@ -4352,6 +4599,7 @@ namespace Modules\SaluteOra\Models{
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Gdpr\Models\Treatment> $treatments
  * @property-read int|null $treatments_count
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor admins()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor doctors()
  * @method static \Modules\SaluteOra\Database\Factories\DoctorFactory factory($count = null, $state = [])
@@ -4361,12 +4609,17 @@ namespace Modules\SaluteOra\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor doctors()
  * @method static \Modules\SaluteOra\Database\Factories\DoctorFactory factory($count = null, $state = [])
 =======
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @property-read \Modules\SaluteOra\Models\DoctorRegistrationWorkflow|null $workflow
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor admins()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor doctors()
  * @method static \Modules\User\Database\Factories\UserFactory factory($count = null, $state = [])
+<<<<<<< HEAD
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor orWhereNotState(string $column, $states)
@@ -4376,6 +4629,7 @@ namespace Modules\SaluteOra\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor query()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor role($roles, $guard = null, $without = false)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereAddress($value)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -4418,6 +4672,8 @@ namespace Modules\SaluteOra\Models{
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereCertifications($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereCity($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereCreatedAt($value)
@@ -4438,13 +4694,17 @@ namespace Modules\SaluteOra\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereLastName($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereModerationData($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereName($value)
+<<<<<<< HEAD
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereNotState(string $column, $states)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor wherePassword($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor wherePasswordExpiresAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor wherePhone($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor wherePregnancyCertificate($value)
 =======
 <<<<<<< HEAD
@@ -4452,6 +4712,8 @@ namespace Modules\SaluteOra\Models{
 =======
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereProfilePhotoPath($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereRegistrationNumber($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereRememberToken($value)
@@ -4461,6 +4723,7 @@ namespace Modules\SaluteOra\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereUuid($value)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -4472,13 +4735,18 @@ namespace Modules\SaluteOra\Models{
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor withoutPermission($permissions)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor withoutRole($roles, $guard = null)
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Device> $devices
  * @property-read int|null $devices_count
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> f3e4ec66 (.)
 =======
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @property string|null $dental_problems
  * @property string|null $last_dental_visit
  * @property string|null $pregnancy_certificate
@@ -4497,14 +4765,18 @@ namespace Modules\SaluteOra\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereLastDentalVisit($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor wherePregnancyCertificate($value)
  * @mixin \Eloquent
+<<<<<<< HEAD
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  */
 	class Doctor extends \Eloquent {}
 }
 
 namespace Modules\SaluteOra\Models{
 /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -4533,6 +4805,8 @@ namespace Modules\SaluteOra\Models{
 /**
 =======
 >>>>>>> 13ea6524 (phpstan)
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * DoctorRegistrationWorkflow model per gestire il processo di registrazione dei dottori.
  *
  * @property int $id
@@ -4591,8 +4865,11 @@ namespace Modules\SaluteOra\Models{
 
 namespace Modules\SaluteOra\Models{
 /**
+<<<<<<< HEAD
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * Modello pivot per la relazione many-to-many tra Doctor e Studio.
  * 
  * IMPORTANTE: Questa relazione attraversa database differenti:
@@ -4635,6 +4912,7 @@ namespace Modules\SaluteOra\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DoctorStudio whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DoctorStudio whereUserId($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property-read \Modules\SaluteOra\Models\User|null $user
 =======
 <<<<<<< HEAD
@@ -4642,6 +4920,8 @@ namespace Modules\SaluteOra\Models{
 =======
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @mixin \Eloquent
  */
 	class DoctorStudio extends \Eloquent {}
@@ -4650,6 +4930,7 @@ namespace Modules\SaluteOra\Models{
 namespace Modules\SaluteOra\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -4657,6 +4938,10 @@ namespace Modules\SaluteOra\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @property string $id
  * @property int $team_id
  * @property string|null $user_id
@@ -4728,6 +5013,7 @@ namespace Modules\SaluteOra\Models{
 namespace Modules\SaluteOra\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4794,6 +5080,8 @@ namespace Modules\SaluteOra\Models{
 =======
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * Modello Isee per la gestione dei dati relativi all'ISEE delle pazienti.
  *
  * @property string $id
@@ -4844,6 +5132,7 @@ namespace Modules\SaluteOra\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee withoutTrashed()
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method static \Modules\SaluteOra\Database\Factories\IseeFactory factory($count = null, $state = [])
 =======
 <<<<<<< HEAD
@@ -4851,6 +5140,8 @@ namespace Modules\SaluteOra\Models{
 =======
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @mixin \Eloquent
  */
 	class Isee extends \Eloquent {}
@@ -4880,6 +5171,7 @@ namespace Modules\SaluteOra\Models{
  * @property-read int|null $activities_count
  * @property-read \Modules\SaluteOra\Models\User|null $user
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property-read \Modules\SaluteOra\Models\Patient|null $patient
 =======
 <<<<<<< HEAD
@@ -4887,6 +5179,8 @@ namespace Modules\SaluteOra\Models{
 =======
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory onlyTrashed()
@@ -4976,12 +5270,16 @@ namespace Modules\SaluteOra\Models{
  * @property-read int|null $consents_count
  * @property-read \Modules\User\Models\Team|null $currentTeam
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Xot\Contracts\UserContract> $all_team_users
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Xot\Contracts\UserContract> $all_team_users
+>>>>>>> 93990a83 (rebase 1/1)
  * @property-read \Modules\User\Models\AuthenticationLog|null $latestAuthentication
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
@@ -5041,6 +5339,7 @@ namespace Modules\SaluteOra\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Patient withoutPermission($permissions)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Patient withoutRole($roles, $guard = null)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -5093,6 +5392,8 @@ namespace Modules\SaluteOra\Models{
  * @property-read int|null $devices_count
 >>>>>>> f3e4ec66 (.)
 =======
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Device> $devices
  * @property-read int|null $devices_count
  * @property string|null $dental_problems
@@ -5112,8 +5413,11 @@ namespace Modules\SaluteOra\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Patient whereLastDentalVisit($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Patient wherePregnancyCertificate($value)
  * @mixin \Eloquent
+<<<<<<< HEAD
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  */
 	class Patient extends \Eloquent {}
 }
@@ -5180,6 +5484,7 @@ namespace Modules\SaluteOra\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PatientIsee withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PatientIsee withoutTrashed()
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method static \Modules\SaluteOra\Database\Factories\PatientIseeFactory factory($count = null, $state = [])
 =======
 <<<<<<< HEAD
@@ -5187,6 +5492,8 @@ namespace Modules\SaluteOra\Models{
 =======
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @mixin \Eloquent
  */
 	class PatientIsee extends \Eloquent {}
@@ -5195,6 +5502,7 @@ namespace Modules\SaluteOra\Models{
 namespace Modules\SaluteOra\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -5202,6 +5510,10 @@ namespace Modules\SaluteOra\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @property string $id
  * @property string|null $type
  * @property string $user_id
@@ -5232,6 +5544,7 @@ namespace Modules\SaluteOra\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PatientStudio whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PatientStudio whereUserId($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property-read \Modules\SaluteOra\Models\Studio|null $studio
  * @property-read User|null $user
 =======
@@ -5241,6 +5554,8 @@ namespace Modules\SaluteOra\Models{
 =======
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @mixin \Eloquent
  */
 	class PatientStudio extends \Eloquent {}
@@ -5249,6 +5564,7 @@ namespace Modules\SaluteOra\Models{
 namespace Modules\SaluteOra\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -5256,6 +5572,10 @@ namespace Modules\SaluteOra\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @property string $id
  * @property int $team_id
  * @property string|null $user_id
@@ -5339,6 +5659,7 @@ namespace Modules\SaluteOra\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy withoutTrashed()
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method static \Modules\SaluteOra\Database\Factories\PregnancyFactory factory($count = null, $state = [])
 =======
 <<<<<<< HEAD
@@ -5346,6 +5667,8 @@ namespace Modules\SaluteOra\Models{
 =======
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @mixin \Eloquent
  */
 	class Pregnancy extends \Eloquent {}
@@ -5354,6 +5677,7 @@ namespace Modules\SaluteOra\Models{
 namespace Modules\SaluteOra\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -5361,6 +5685,10 @@ namespace Modules\SaluteOra\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @property string $id
  * @property string|null $first_name
  * @property string|null $last_name
@@ -5406,6 +5734,7 @@ namespace Modules\SaluteOra\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile newQuery()
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method static Builder<static>|Profile permission($permissions, $without = false)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile query()
  * @method static Builder<static>|Profile role($roles, $guard = null, $without = false)
@@ -5426,6 +5755,11 @@ namespace Modules\SaluteOra\Models{
  * @method static Builder<static>|Profile role($roles, $guard = null, $without = false)
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+ * @method static Builder<static>|Profile permission($permissions, $without = false)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile query()
+ * @method static Builder<static>|Profile role($roles, $guard = null, $without = false)
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile whereAddress($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile whereAvatar($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile whereBio($value)
@@ -5448,6 +5782,7 @@ namespace Modules\SaluteOra\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile withoutPermission($permissions)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile withoutRole($roles, $guard = null)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @mixin \Eloquent
 =======
 <<<<<<< HEAD
@@ -5459,6 +5794,9 @@ namespace Modules\SaluteOra\Models{
  * @mixin \Eloquent
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+ * @mixin \Eloquent
+>>>>>>> 93990a83 (rebase 1/1)
  */
 	class Profile extends \Eloquent {}
 }
@@ -5505,6 +5843,7 @@ namespace Modules\SaluteOra\Models{
 
 namespace Modules\SaluteOra\Models{
 /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -5732,6 +6071,8 @@ namespace Modules\SaluteOra\Models{
 =======
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * Studio model for the SaluteOra module.
  *
  * @property int $id
@@ -5748,6 +6089,7 @@ namespace Modules\SaluteOra\Models{
  * @property array|null $services
  * @property bool $active
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property bool $is_active
  * @property int $owner_id
 =======
@@ -5757,6 +6099,8 @@ namespace Modules\SaluteOra\Models{
 =======
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
  * @property \Illuminate\Support\Carbon|null $deleted_at
@@ -5809,12 +6153,15 @@ namespace Modules\SaluteOra\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Studio whereVatNumber($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Studio whereWebsite($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @property string|null $city
  * @property string|null $postal_code
  * @property string|null $province
@@ -5840,6 +6187,7 @@ namespace Modules\SaluteOra\Models{
  * @method static Builder<static>|Studio whereTaxCode($value)
  * @mixin \Eloquent
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -5847,12 +6195,15 @@ namespace Modules\SaluteOra\Models{
 =======
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  */
 	class Studio extends \Eloquent {}
 }
 
 namespace Modules\SaluteOra\Models{
 /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -5861,6 +6212,10 @@ namespace Modules\SaluteOra\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @property string $id
  * @property string|null $type
  * @property string $user_id
@@ -5891,6 +6246,7 @@ namespace Modules\SaluteOra\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|StudioUser whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|StudioUser whereUserId($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property-read \Modules\SaluteOra\Models\Studio|null $studio
  * @property-read \Modules\SaluteOra\Models\User|null $user
 =======
@@ -5900,6 +6256,8 @@ namespace Modules\SaluteOra\Models{
 =======
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @mixin \Eloquent
  */
 	class StudioUser extends \Eloquent {}
@@ -5946,9 +6304,12 @@ namespace Modules\SaluteOra\Models{
 namespace Modules\SaluteOra\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * Modello Treatment per la gestione dei trattamenti odontoiatrici.
  *
  * @property int $id
@@ -6019,8 +6380,11 @@ namespace Modules\SaluteOra\Models{
 
 namespace Modules\SaluteOra\Models{
 /**
+<<<<<<< HEAD
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * Modello User per il modulo Patient.
  * 
  * Questo modello estende BaseUser e implementa Single Table Inheritance
@@ -6031,6 +6395,7 @@ namespace Modules\SaluteOra\Models{
  * @property string $email
  * @property string $password
  * @property UserTypeEnum $type
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property UserState $state
 =======
@@ -6044,6 +6409,9 @@ namespace Modules\SaluteOra\Models{
  * @property UserState $state
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+ * @property UserState $state
+>>>>>>> 93990a83 (rebase 1/1)
  * @property string|null $first_name
  * @property string|null $last_name
  * @property \Carbon\Carbon|null $date_of_birth
@@ -6091,12 +6459,16 @@ namespace Modules\SaluteOra\Models{
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Device> $devices
  * @property-read int|null $devices_count
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Xot\Contracts\UserContract> $all_team_users
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Xot\Contracts\UserContract> $all_team_users
+>>>>>>> 93990a83 (rebase 1/1)
  * @property-read \Modules\User\Models\AuthenticationLog|null $latestAuthentication
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
@@ -6167,12 +6539,15 @@ namespace Modules\SaluteOra\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User withoutPermission($permissions)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User withoutRole($roles, $guard = null)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @property string|null $dental_problems
  * @property string|null $last_dental_visit
  * @property string|null $pregnancy_certificate
@@ -6189,6 +6564,7 @@ namespace Modules\SaluteOra\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereIseeCertificate($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereLastDentalVisit($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User wherePregnancyCertificate($value)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -6230,10 +6606,16 @@ namespace Modules\SaluteOra\Models{
 	class User extends \Eloquent implements \Spatie\ModelStates\HasStatesContract {}
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+ * @mixin \Eloquent
+ */
+	class User extends \Eloquent implements \Spatie\ModelStates\HasStatesContract {}
+>>>>>>> 93990a83 (rebase 1/1)
 }
 
 namespace Modules\Tenant\Models{
 /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -6242,6 +6624,10 @@ namespace Modules\Tenant\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @property int|null $id
  * @property string|null $name
  * @method static \Illuminate\Database\Eloquent\Builder|Domain newModelQuery()
@@ -6260,10 +6646,13 @@ namespace Modules\Tenant\Models{
 namespace Modules\User\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * Authentication Model
  * 
  * Tracks user authentication attempts and sessions.
@@ -6297,6 +6686,7 @@ namespace Modules\User\Models{
  * @method static Builder<static>|Authentication whereAuthenticatableType($value)
  * @method static Builder<static>|Authentication whereAuthenticatableId($value)
  * @mixin \Eloquent
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -6357,12 +6747,15 @@ namespace Modules\User\Models{
  * @mixin \Eloquent
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  */
 	class Authentication extends \Eloquent {}
 }
 
 namespace Modules\User\Models{
 /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -6371,6 +6764,10 @@ namespace Modules\User\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @property int $id
  * @property string $authenticatable_type
  * @property int $authenticatable_id
@@ -6468,16 +6865,20 @@ namespace Modules\User\Models{
 namespace Modules\User\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * DeviceProfile Model
  * 
  * Represents the relationship between a device and a user profile.
  * Extends the base DeviceUser model to add specific functionality.
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -6487,6 +6888,8 @@ namespace Modules\User\Models{
 =======
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  *
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property Device|null $device
@@ -6543,6 +6946,7 @@ namespace Modules\User\Models{
 namespace Modules\User\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -6550,6 +6954,10 @@ namespace Modules\User\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @property \Spatie\SchemalessAttributes\SchemalessAttributes $extra_attributes
  * @method static \Illuminate\Database\Eloquent\Builder|Extra newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Extra newQuery()
@@ -6585,6 +6993,7 @@ namespace Modules\User\Models{
 namespace Modules\User\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -6592,6 +7001,10 @@ namespace Modules\User\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  * @method static \Modules\User\Database\Factories\FeatureFactory factory($count = null, $state = [])
@@ -6732,6 +7145,7 @@ namespace Modules\User\Models{
 namespace Modules\User\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -6739,6 +7153,10 @@ namespace Modules\User\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @property \Illuminate\Database\Eloquent\Model|\Eloquent $notifiable
  * @method static \Illuminate\Notifications\DatabaseNotificationCollection<int, static> all($columns = ['*'])
  * @method static \Illuminate\Notifications\DatabaseNotificationCollection<int, static> get($columns = ['*'])
@@ -6992,6 +7410,7 @@ namespace Modules\User\Models{
 namespace Modules\User\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -6999,6 +7418,10 @@ namespace Modules\User\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  * @method static \Illuminate\Database\Eloquent\Builder|PermissionRole newModelQuery()
@@ -7026,6 +7449,7 @@ namespace Modules\User\Models{
 namespace Modules\User\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -7033,6 +7457,10 @@ namespace Modules\User\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  * @method static \Modules\User\Database\Factories\PermissionUserFactory factory($count = null, $state = [])
@@ -7047,10 +7475,13 @@ namespace Modules\User\Models{
 namespace Modules\User\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * User Profile Model
  * 
  * Represents a user profile with relationships to devices, teams, and roles.
@@ -7067,6 +7498,7 @@ namespace Modules\User\Models{
  * @property string|null $locale
  * @property array $preferences
  * @property string $status
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -7093,6 +7525,8 @@ namespace Modules\User\Models{
  * @property string $status
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @property \Spatie\SchemalessAttributes\SchemalessAttributes $extra
  * @property-read string $avatar
  * @property-read ProfileContract|null $creator
@@ -7138,16 +7572,20 @@ namespace Modules\User\Models{
 namespace Modules\User\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * ProfileTeam Model
  * 
  * Represents the relationship between a profile and a team, including the user's role.
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -7168,6 +7606,8 @@ namespace Modules\User\Models{
 =======
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @property string $id
  * @property int $team_id
  * @property string|null $user_id
@@ -7179,6 +7619,7 @@ namespace Modules\User\Models{
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * @property string|null $deleted_by
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam query()
@@ -7196,6 +7637,11 @@ namespace Modules\User\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam query()
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam query()
+>>>>>>> 93990a83 (rebase 1/1)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam whereCreatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam whereDeletedAt($value)
@@ -7207,6 +7653,7 @@ namespace Modules\User\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam whereUserId($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @mixin \Eloquent
 =======
 <<<<<<< HEAD
@@ -7218,6 +7665,9 @@ namespace Modules\User\Models{
  * @mixin \Eloquent
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+ * @mixin \Eloquent
+>>>>>>> 93990a83 (rebase 1/1)
  */
 	class ProfileTeam extends \Eloquent {}
 }
@@ -7293,6 +7743,7 @@ namespace Modules\User\Models{
 namespace Modules\User\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -7300,6 +7751,10 @@ namespace Modules\User\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @property int|null $id
  * @property string|null $name
  * @property array|null $scopes
@@ -7423,6 +7878,7 @@ namespace Modules\User\Models{
  * @property string|null $uuid
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Team whereUuid($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property string|null $owner_id
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Team whereOwnerId($value)
  * @mixin \Eloquent
@@ -7443,6 +7899,11 @@ namespace Modules\User\Models{
  * @mixin \Eloquent
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+ * @property string|null $owner_id
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Team whereOwnerId($value)
+ * @mixin \Eloquent
+>>>>>>> 93990a83 (rebase 1/1)
  */
 	class Team extends \Eloquent {}
 }
@@ -7489,6 +7950,7 @@ namespace Modules\User\Models{
 namespace Modules\User\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Team Permission Model
  * 
  * Represents a permission assigned to a user within a team context.
@@ -7507,6 +7969,11 @@ namespace Modules\User\Models{
  * Represents a permission assigned to a user within a team context.
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+ * Team Permission Model
+ * 
+ * Represents a permission assigned to a user within a team context.
+>>>>>>> 93990a83 (rebase 1/1)
  *
  * @property string $id
  * @property string $team_id
@@ -7520,6 +7987,7 @@ namespace Modules\User\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TeamPermission newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TeamPermission query()
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @mixin \Eloquent
 =======
 <<<<<<< HEAD
@@ -7531,6 +7999,9 @@ namespace Modules\User\Models{
  * @mixin \Eloquent
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+ * @mixin \Eloquent
+>>>>>>> 93990a83 (rebase 1/1)
  */
 	class TeamPermission extends \Eloquent {}
 }
@@ -7708,6 +8179,7 @@ namespace Modules\User\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|User withoutRole($roles, $guard = null)
  * @property string $last_name
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -7756,6 +8228,8 @@ namespace Modules\User\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereType($value)
 >>>>>>> f3e4ec66 (.)
 =======
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  * @property-read \Modules\User\Models\Team|null $currentTeam
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Xot\Contracts\UserContract> $all_team_users
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
@@ -7765,8 +8239,11 @@ namespace Modules\User\Models{
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Membership> $teamUsers
  * @property-read int|null $team_users_count
  * @mixin \Eloquent
+<<<<<<< HEAD
 >>>>>>> 13ea6524 (phpstan)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
  */
 	class User extends \Eloquent {}
 }
@@ -7888,6 +8365,7 @@ namespace Modules\Xot\Models{
 namespace Modules\Xot\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -7895,6 +8373,10 @@ namespace Modules\Xot\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @property int                             $id
  * @property string $check_name
  * @property string $check_label
@@ -8015,6 +8497,7 @@ namespace Modules\Xot\Models{
 namespace Modules\Xot\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -8022,6 +8505,10 @@ namespace Modules\Xot\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @property int         $id
  * @property string|null $name
  * @property string|null $description
@@ -8049,6 +8536,7 @@ namespace Modules\Xot\Models{
 namespace Modules\Xot\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -8056,6 +8544,10 @@ namespace Modules\Xot\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  * @method static \Modules\Xot\Database\Factories\PulseAggregateFactory factory($count = null, $state = [])
@@ -8088,6 +8580,7 @@ namespace Modules\Xot\Models{
 namespace Modules\Xot\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -8095,6 +8588,10 @@ namespace Modules\Xot\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  * @method static \Modules\Xot\Database\Factories\PulseEntryFactory factory($count = null, $state = [])
@@ -8121,6 +8618,7 @@ namespace Modules\Xot\Models{
 namespace Modules\Xot\Models{
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -8128,6 +8626,10 @@ namespace Modules\Xot\Models{
  *
 >>>>>>> f3e4ec66 (.)
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 93990a83 (rebase 1/1)
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  * @method static \Modules\Xot\Database\Factories\PulseValueFactory factory($count = null, $state = [])

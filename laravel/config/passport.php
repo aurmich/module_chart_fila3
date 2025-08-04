@@ -5,6 +5,7 @@ return [
     /*
     |--------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -13,6 +14,8 @@ return [
 =======
 =======
 >>>>>>> f622d84c (✨ (DoctorResource.php, RegistrationWidget.php, passport.php): enhance user authentication by adding remember token checks and improving Passport configuration for better security and flexibility.)
+=======
+>>>>>>> 93990a83 (rebase 1/1)
     | Passport Configuration
     |--------------------------------------------------------------------------
     |
@@ -48,6 +51,7 @@ return [
     /*
     |--------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
@@ -56,6 +60,8 @@ return [
 =======
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
     | Passport Guard
     |--------------------------------------------------------------------------
     |
@@ -69,6 +75,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -108,6 +115,8 @@ return [
 =======
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
     | Passport Database Connection
     |--------------------------------------------------------------------------
     |
@@ -117,6 +126,7 @@ return [
     |
     */
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     'connection' => env('PASSPORT_CONNECTION'),
 =======
@@ -138,6 +148,9 @@ return [
     'connection' => env('PASSPORT_CONNECTION'),
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+    'connection' => env('PASSPORT_CONNECTION','user'),
+>>>>>>> 93990a83 (rebase 1/1)
 
     /*
     |--------------------------------------------------------------------------
@@ -152,6 +165,7 @@ return [
 
     'client_uuids' => false,
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -192,4 +206,6 @@ return [
 =======
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
 ];

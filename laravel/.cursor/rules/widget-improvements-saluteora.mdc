@@ -1,6 +1,9 @@
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 93990a83 (rebase 1/1)
 description: 
 globs: 
 alwaysApply: false
@@ -114,6 +117,7 @@ Il modulo SaluteOra dimostra come implementare correttamente:
 
 *Ultimo aggiornamento: Gennaio 2025*
 *Status: ✅ PRODUCTION READY - Homepage dottore OPERATIVA*
+<<<<<<< HEAD
 =======
 description:
 globs:
@@ -372,3 +376,5 @@ Il modulo SaluteOra dimostra come implementare correttamente:
 *Ultimo aggiornamento: Gennaio 2025*
 *Status: ✅ PRODUCTION READY - Homepage dottore OPERATIVA*
 >>>>>>> 9b17d47a (✨ (widget improvements): complete implementation of DoctorAvailabilitiesWidget to resolve homepage issues and enhance user experience)
+=======
+>>>>>>> 93990a83 (rebase 1/1)

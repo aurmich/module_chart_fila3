@@ -58,6 +58,7 @@ public/hot
 public_html/storage
 public_html/hot
 <<<<<<< HEAD
+<<<<<<< HEAD
 laravel_bak/
 =======
 <<<<<<< HEAD
@@ -69,10 +70,13 @@ laravel_bak/
 laravel_bak/
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
 .git-rewrite
 .fuse_hidden*
 .fuse_hidden**.lock
 *.lock
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -94,6 +98,8 @@ backup*/
 *.old2  
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
 package-lock.json
 .php-cs-fixer.cache
 *.phar

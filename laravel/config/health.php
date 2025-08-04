@@ -149,6 +149,7 @@ return [
     'secret_token' => env('HEALTH_SECRET_TOKEN') ?? null,
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -169,6 +170,8 @@ return [
 =======
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 93990a83 (rebase 1/1)
 
     /**
      * By default, conditionally skipped health checks are treated as failures.
@@ -177,10 +180,13 @@ return [
      */
     //'treat_skipped_as_failure' => false
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 93990a83 (rebase 1/1)
 ];

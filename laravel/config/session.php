@@ -14,6 +14,7 @@ return [
     | persist session data. Database storage is a great default choice.
     |
 <<<<<<< HEAD
+<<<<<<< HEAD
     | Supported: "file", "cookie", "database", "apc",
     |            "memcached", "redis", "dynamodb", "array"
 =======
@@ -35,6 +36,10 @@ return [
     |            "memcached", "redis", "dynamodb", "array"
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+    | Supported: "file", "cookie", "database", "memcached",
+    |            "redis", "dynamodb", "array"
+>>>>>>> 93990a83 (rebase 1/1)
     |
     */
 
@@ -118,6 +123,7 @@ return [
     | between requests. This must match one of your defined cache stores.
     |
 <<<<<<< HEAD
+<<<<<<< HEAD
     | Affects: "apc", "dynamodb", "memcached", "redis"
 =======
 <<<<<<< HEAD
@@ -134,6 +140,9 @@ return [
     | Affects: "apc", "dynamodb", "memcached", "redis"
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+    | Affects: "dynamodb", "memcached", "redis"
+>>>>>>> 93990a83 (rebase 1/1)
     |
     */
 
@@ -166,6 +175,7 @@ return [
     'cookie' => env(
         'SESSION_COOKIE',
 <<<<<<< HEAD
+<<<<<<< HEAD
         Str::slug(env('APP_NAME', 'laravel'), '_').'_session'
 =======
 <<<<<<< HEAD
@@ -182,6 +192,9 @@ return [
         Str::slug(env('APP_NAME', 'laravel'), '_').'_session'
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+        Str::slug(env('APP_NAME', 'laravel')).'-session'
+>>>>>>> 93990a83 (rebase 1/1)
     ),
 
     /*
