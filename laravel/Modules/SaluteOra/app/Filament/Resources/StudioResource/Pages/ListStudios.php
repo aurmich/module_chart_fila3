@@ -4,13 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Filament\Resources\StudioResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Tables;
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 use Modules\SaluteOra\Filament\Resources\StudioResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListStudios extends XotBaseListRecords
 {
     protected static string $resource = StudioResource::class;
+<<<<<<< HEAD
 
     /**
      * Get the table columns.
@@ -60,3 +64,6 @@ class ListStudios extends XotBaseListRecords
         ];
     }
 }
+=======
+}
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)

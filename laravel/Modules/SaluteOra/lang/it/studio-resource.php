@@ -1,10 +1,13 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 return [
     'title' => [
         'singular' => 'Studio Medico',
@@ -107,7 +110,11 @@ return [
         'operations' => 'Operatività',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 ];
 =======
 ];
 >>>>>>> aurmich/dev
+=======
+];
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)

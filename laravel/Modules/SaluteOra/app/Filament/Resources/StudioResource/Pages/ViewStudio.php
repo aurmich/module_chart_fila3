@@ -20,6 +20,10 @@ class ViewStudio extends XotBaseViewRecord
      */
     protected function getInfolistSchema(): array
     {
+<<<<<<< HEAD
         return [];
+=======
+        return StudioResource::getInfolistSchema();
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     }
 }

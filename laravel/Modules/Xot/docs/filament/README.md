@@ -98,6 +98,9 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](../../../../Themes/One/docs/README.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 ## Regola sulle closure void nelle azioni custom Filament
 
 ### Motivazione
@@ -130,6 +133,7 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 - [ ] Nessuna closure void restituisce un valore
 - [ ] Tutte le azioni custom rispettano la signature void
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 # Regole generali per XotBaseResource
 
@@ -166,3 +170,5 @@ $prefix = static::$translationPrefix;
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)

@@ -4,9 +4,13 @@ declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\SaluteOra\Models\Appointment;
 use Modules\SaluteOra\Models\Doctor;
 =======
+=======
+use Modules\SaluteOra\Models\Appointment;
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 use Modules\SaluteOra\Models\Dentist;
 >>>>>>> 54f4fa16 (.)
 use Modules\SaluteOra\Models\Patient;
@@ -24,7 +28,17 @@ return new class extends XotBaseMigration
      * @var string
      */
     protected string $table = 'appointments';
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+    
+    /**
+     * Classe del modello associato.
+     *
+     * @var string|null
+     */
+    protected ?string $model_class = Appointment::class;
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 
     /**
      * Run the migrations.
@@ -64,6 +78,9 @@ return new class extends XotBaseMigration
                 // Aggiunta dei timestamp e soft delete
                 $this->updateTimestamps($table, false);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
                 
                 // Aggiunta dei campi per il calendario
                 if (!$this->hasColumn('studio_id')) {
@@ -102,15 +119,28 @@ return new class extends XotBaseMigration
                 if (!$this->hasIndex('appointments_status_index')) {
                     $table->index('status', 'appointments_status_index');
                 }
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
             }
         );
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
    
 =======
 
 >>>>>>> 54f4fa16 (.)
+=======
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        $this->tableDrop();
+    }
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 };

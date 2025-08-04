@@ -14,10 +14,27 @@ class ViewAddress extends XotBaseViewRecord
 {
     protected static string $resource = AddressResource::class;
 
+<<<<<<< HEAD
     
 
     public function getInfolistSchema(): array
     {
         return [];
+=======
+    /**
+     * @return array<\Filament\Actions\Action>
+     */
+    protected function getHeaderActions(): array
+    {
+        return [
+            Actions\EditAction::make(),
+            Actions\DeleteAction::make(),
+        ];
+    }
+
+    public function getInfolistSchema(): array
+    {
+        return AddressResource::getInfolistSchema();
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     }
 }

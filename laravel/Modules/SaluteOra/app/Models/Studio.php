@@ -25,9 +25,10 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * Studio model for the SaluteOra module.
 =======
 use Filament\Models\Contracts\HasName;
-use Illuminate\Database\Eloquent\Model;
+use Modules\SaluteOra\Models\BaseModel;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Modules\Geo\Models\Traits\HasAddress;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Spatie\Activitylog\LogOptions;
 
@@ -40,6 +41,7 @@ use Spatie\Activitylog\LogOptions;
  *
  * @property int $id
  * @property string $name
+<<<<<<< HEAD
  * @property string|null $address
 <<<<<<< HEAD
  * @property string|null $phone
@@ -48,6 +50,8 @@ use Spatie\Activitylog\LogOptions;
 =======
  * @property string|null $city
  * @property string|null $postal_code
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
  * @property string|null $phone
  * @property string|null $email
 >>>>>>> 2099645a (.)
@@ -151,15 +155,20 @@ class Studio extends BaseTenant
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\SaluteOra\Models\Doctor> $doctors
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\SaluteOra\Models\Appointment> $appointments
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Geo\Models\Address> $addresses
  */
-class Studio extends Model implements HasName
+class Studio extends BaseModel implements HasName
 {
-    use SoftDeletes;
     use LogsActivity;
+    use HasAddress;
 
+<<<<<<< HEAD
     /** @var string */
     protected $connection = 'mysql';
 >>>>>>> 2099645a (.)
+=======
+    // La connessione è già definita in BaseModel come 'salute_ora'
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 
     /** @var string */
     protected $table = 'studios';
@@ -173,10 +182,13 @@ class Studio extends Model implements HasName
     /** @var array<string> */
     protected $fillable = [
         'name',
+<<<<<<< HEAD
         'address',
         'city',
         'postal_code',
 >>>>>>> 2099645a (.)
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
         'phone',
         'email',
         'website',
@@ -233,10 +245,13 @@ class Studio extends Model implements HasName
             ->logOnly([
                 'name',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 'address',
                 'city',
 >>>>>>> 2099645a (.)
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
                 'phone',
                 'email',
                 'registration_number',
@@ -293,6 +308,7 @@ class Studio extends Model implements HasName
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      * Scope per studi in una specifica città.
      */
@@ -303,6 +319,8 @@ class Studio extends Model implements HasName
 
     /**
 >>>>>>> 2099645a (.)
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
      * Verifica se lo studio è attivo.
      */
     public function isActive(): bool
@@ -407,6 +425,7 @@ class Studio extends Model implements HasName
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      * Ottiene l'indirizzo completo formattato.
      */
@@ -423,6 +442,8 @@ class Studio extends Model implements HasName
 
     /**
 >>>>>>> 2099645a (.)
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
      * Ottiene le informazioni di contatto formattate.
      */
     public function getContactInfo(): array
@@ -434,6 +455,9 @@ class Studio extends Model implements HasName
         ]);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 
     /**
      * Restituisce i servizi come stringa leggibile per Filament.
@@ -442,6 +466,7 @@ class Studio extends Model implements HasName
     {
         return is_array($this->services) ? implode(', ', $this->services) : (string) $this->services;
     }
+<<<<<<< HEAD
 
 
     public function scopeOfCap(Builder $query,string|int|null $cap): void
@@ -519,4 +544,6 @@ class Studio extends Model implements HasName
     }
 =======
 >>>>>>> 2099645a (.)
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 }

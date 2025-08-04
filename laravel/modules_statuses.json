@@ -32,6 +32,11 @@
     "Tenant": true,
     "UI": true,
     "User": true,
+<<<<<<< HEAD
     "SaluteOra": true
 >>>>>>> 54f4fa16 (.)
+=======
+    "SaluteOra": true,
+    "Geo": true
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 }

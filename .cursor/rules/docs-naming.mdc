@@ -1,11 +1,16 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description:
 globs:
 =======
 description: 
 globs: 
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+description:
+globs:
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 alwaysApply: true
 ---
 # Documentation Naming Convention Rule
@@ -41,6 +46,9 @@ docs/form-architecture.md
 
 > [2025-05-28] Policy aggiornata: tutti i file e cartelle in docs/ devono essere lowercase, tranne README.md. Motivazione: coerenza, portabilità, manutenzione.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 
 ## Policy sui collegamenti
 - Tutti i link nei file .md DEVONO essere sempre relativi rispetto alla posizione del file.
@@ -50,5 +58,8 @@ docs/form-architecture.md
 - Filosofia: un solo punto di verità.
 - Religione: "Non avrai altro path all'infuori del relativo".
 - Zen: serenità nella navigazione, nessun link rotto dopo un refactor.
+<<<<<<< HEAD
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)

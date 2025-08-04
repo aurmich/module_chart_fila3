@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
 declare(strict_types=1);
@@ -486,28 +487,27 @@ return [
 =======
 declare(strict_types=1);
 
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 return [
-    'find_doctor_widget' => [
-        'title' => 'Trova Dentista e Prenota Appuntamento',
-        'steps' => [
-            'search' => 'Cerca Dentista',
-            'date_time' => 'Data e Ora',
-            'confirmation' => 'Conferma',
+    'studio_overview' => [
+        'title' => 'Panoramica Studi',
+        'stats' => [
+            'total' => 'Studi Totali',
+            'active' => 'Studi Attivi',
+            'inactive' => 'Studi Inattivi',
+            'cities' => 'Città Coperte',
+            'doctors' => 'Dottori Associati',
+            'appointments' => 'Appuntamenti Mensili',
         ],
-        'fields' => [
-            'dentist_search' => 'Cerca un Dentista',
-            'specialization' => 'Specializzazione',
-            'location' => 'Località',
-            'appointment_type' => 'Tipo di Appuntamento',
-            'appointment_details' => 'Dettagli Appuntamento',
-            'date' => 'Data',
-            'time' => 'Orario',
-        ],
-        'messages' => [
-            'loading_available_slots' => 'Caricamento orari disponibili...',
-            'appointment_booked_successfully' => 'Appuntamento prenotato con successo!',
-            'error_booking_appointment' => 'Si è verificato un errore durante la prenotazione',
+        'chart' => [
+            'title' => 'Distribuzione per Città',
+            'empty' => 'Nessun dato disponibile',
         ],
     ],
+<<<<<<< HEAD
 ];
 >>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
+=======
+];
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)

@@ -2,6 +2,7 @@
 
 return array (
 <<<<<<< HEAD
+<<<<<<< HEAD
   'navigation' => 
   array (
     'label' => 'Studi',
@@ -60,12 +61,15 @@ return array (
       'placeholder' => 'Inserisci il nome dello studio odontoiatrico',
       'help' => 'Denominazione ufficiale dello studio o della struttura sanitaria',
 =======
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
   'single' => 'Studio',
   'plural' => 'Studi',
   'fields' => 
   array (
     'name' => 
     array (
+<<<<<<< HEAD
       'label' => 'nome studio',
       'placeholder' => 'nome studio',
 >>>>>>> aurmich/dev
@@ -115,12 +119,21 @@ return array (
       ),
       'label' => 'address',
     ),
+=======
+      'label' => 'name',
+      'placeholder' => 'name',
+      'helper_text' => 'name',
+      'description' => 'name',
+    ),
+    'address' => 'Indirizzo',
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     'city' => 'Città',
     'postal_code' => 'CAP',
     'phone' => 
     array (
       'label' => 'phone',
       'placeholder' => 'phone',
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
       'helper_text' => '',
       'description' => '',
@@ -245,27 +258,55 @@ return array (
 =======
       'description' => 'website',
       'helper_text' => '',
+=======
+      'helper_text' => 'phone',
+      'description' => 'phone',
+    ),
+    'email' => 
+    array (
+      'label' => 'email',
+      'placeholder' => 'email',
+      'helper_text' => 'email',
+      'description' => 'email',
+    ),
+    'website' => 
+    array (
+      'description' => 'website',
+      'helper_text' => 'website',
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
       'placeholder' => 'website',
       'label' => 'website',
     ),
     'registration_number' => 
     array (
       'description' => 'registration_number',
+<<<<<<< HEAD
       'helper_text' => '',
+=======
+      'helper_text' => 'registration_number',
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
       'placeholder' => 'registration_number',
       'label' => 'registration_number',
     ),
     'vat_number' => 
     array (
       'description' => 'vat_number',
+<<<<<<< HEAD
       'helper_text' => '',
+=======
+      'helper_text' => 'vat_number',
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
       'placeholder' => 'vat_number',
       'label' => 'vat_number',
     ),
     'description' => 
     array (
       'description' => 'description',
+<<<<<<< HEAD
       'helper_text' => '',
+=======
+      'helper_text' => 'description',
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
       'placeholder' => 'description',
       'label' => 'description',
     ),
@@ -274,12 +315,17 @@ return array (
     'active' => 
     array (
       'description' => 'active',
+<<<<<<< HEAD
       'label' => 'active',
     ),
     'created_at' => 
     array (
       'label' => 'created_at',
     ),
+=======
+    ),
+    'created_at' => 'Creato il',
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     'updated_at' => 'Aggiornato il',
     'deleted_at' => 'Eliminato il',
     'resetFilters' => 
@@ -297,6 +343,7 @@ return array (
     array (
       'label' => 'applyFilters',
     ),
+<<<<<<< HEAD
     'toggleColumns' => 
     array (
       'label' => 'toggleColumns',
@@ -504,12 +551,23 @@ return array (
       'description' => 'Dati fiscali e commerciali dello studio',
     ),
 =======
+=======
+  ),
+  'actions' => 
+  array (
+    'activate' => 'Attiva',
+    'deactivate' => 'Disattiva',
+  ),
+  'messages' => 
+  array (
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     'activated' => 'Studio attivato con successo.',
     'deactivated' => 'Studio disattivato con successo.',
   ),
   'navigation' => 
   array (
     'sort' => 18,
+<<<<<<< HEAD
     'label' => 'Studi',
     'icon' => 'saluteora-studio',
     'group' => 'Gestione Studi',
@@ -518,5 +576,14 @@ return array (
   array (
     'label' => 'Studio',
 >>>>>>> aurmich/dev
+=======
+    'label' => 'studio.navigation',
+    'icon' => 'studio.navigation',
+    'group' => 'studio.navigation',
+  ),
+  'model' => 
+  array (
+    'label' => 'studio.model',
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
   ),
 );

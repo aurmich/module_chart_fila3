@@ -4,6 +4,7 @@ Questa sezione raccoglie la documentazione e le best practices per i campi custo
 
 ## Indice
 - [OpeningHoursField](./opening-hours-field.md): campo avanzato per la gestione degli orari di apertura
+<<<<<<< HEAD
 - [StudioDoctorSelector](./studio-doctor-selector.md): componente per la selezione studio+dottore con card UI
 
 ## Filosofia
@@ -23,6 +24,18 @@ Questa sezione raccoglie la documentazione e le best practices per i campi custo
 - **Logica**: `Modules/SaluteOra/app/Forms/Components/`
 - **Presentazione**: `Themes/One/resources/views/filament/forms/components/`  
 - **Traduzioni**: `Modules/SaluteOra/lang/it/`
+=======
+
+## Filosofia
+- **DRY**: ogni campo custom deve essere riusabile in più moduli
+- **KISS**: UI semplice, validazione centralizzata
+- **Zen**: serenità nella compilazione, feedback immediato
+
+## Best Practices
+- Documentare sempre input/output e edge case
+- Validare sia lato client che server
+- Collegare sempre a risorse esterne (es. Spatie/opening-hours)
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 
 ## Risorse
 - [Filament Custom Fields](https://filamentphp.com/docs/3.x/forms/custom-fields)

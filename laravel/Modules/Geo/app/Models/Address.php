@@ -16,7 +16,11 @@ use Modules\Geo\Enums\AddressTypeEnum;
  * Class Address
  * 
  * Implementazione di Schema.org PostalAddress
+<<<<<<< HEAD
  *
+=======
+ * 
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
  * @property int $id
  * @property string|null $model_type
  * @property int|null $model_id
@@ -41,6 +45,7 @@ use Modules\Geo\Enums\AddressTypeEnum;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * // implements HasGeolocation
+<<<<<<< HEAD
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_by
@@ -90,6 +95,19 @@ class Address extends BaseModel
         
     /** @var list<string> */
    protected $fillable = [
+=======
+ */
+class Address extends BaseModel 
+{
+    use HasFactory;
+        
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<string>
+     */
+    protected $fillable = [
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
         'model_type',
         'model_id',
         'name',
@@ -112,6 +130,7 @@ class Address extends BaseModel
     ];
     
     /**
+<<<<<<< HEAD
      * Get the attributes that should be cast.
      *
      * @return array<string, string>
@@ -127,6 +146,29 @@ class Address extends BaseModel
         ];
     }
     
+=======
+     * The attributes that should be cast.
+     *
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'latitude' => 'float',
+        'longitude' => 'float',
+        'is_primary' => 'boolean',
+        'extra_data' => 'array',
+        'type' => AddressTypeEnum::class,
+    ];
+    
+    /**
+     * Create a new factory instance for the model.
+     *
+     * @return \Illuminate\Database\Eloquent\Factories\Factory<static>
+     */
+    protected static function newFactory()
+    {
+        return AddressFactory::new();
+    }
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     
     /**
      * Get the parent model.
@@ -148,15 +190,24 @@ class Address extends BaseModel
         return $this->morphTo('model');
     }
     
+<<<<<<< HEAD
     /*
      * Get the city relationship.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      
+=======
+    /**
+     * Get the city relationship.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     public function city(): BelongsTo
     {
         return $this->belongsTo(City::class, 'locality', 'name');
     }
+<<<<<<< HEAD
     */
     /*
      * Get the province relationship.
@@ -260,6 +311,45 @@ class Address extends BaseModel
             $this->country
         ]);
 
+=======
+    
+    /**
+     * Get the province relationship.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function provincia(): BelongsTo
+    {
+        return $this->belongsTo(Provincia::class, 'administrative_area_level_3', 'name');
+    }
+    
+    /**
+     * Get the region relationship.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function regione(): BelongsTo
+    {
+        return $this->belongsTo(Regione::class, 'administrative_area_level_2', 'name');
+    }
+    
+    /**
+     * Getter per l'indirizzo completo in formato italiano
+     *
+     * @return string
+     */
+    public function getFullAddressAttribute(): string
+    {
+        $parts = array_filter([
+            $this->route . ($this->street_number ? ' ' . $this->street_number : ''),
+            $this->locality,
+            $this->administrative_area_level_3, // Provincia
+            $this->administrative_area_level_2, // Regione
+            $this->postal_code,
+            $this->country
+        ]);
+
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
         return implode(', ', $parts);
     }
     
@@ -278,10 +368,17 @@ class Address extends BaseModel
      *
      * @return string
      */
+<<<<<<< HEAD
     public function getFormattedAddressAttribute(?string $value): ?string
     {
         if ($value) {
             return $value;
+=======
+    public function getFormattedAddressAttribute(): ?string
+    {
+        if ($this->formatted_address) {
+            return $this->formatted_address;
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
         }
         
         $parts = [];
@@ -379,7 +476,42 @@ class Address extends BaseModel
         ];
     }
     
+<<<<<<< HEAD
    
+=======
+    /**
+     * Metodo statico per creare da risposta Google Maps
+     *
+     * @param array<string, mixed> $googleData
+     * @param string|null $name
+     * @param string|null $description
+     * @return static
+     */
+    public static function createFromGoogleMaps(array $googleData, ?string $name = null, ?string $description = null): self
+    {
+        $components = collect($googleData['address_components'] ?? [])
+            ->keyBy(fn($component) => $component['types'][0] ?? 'unknown');
+
+        return self::create([
+            'name' => $name,
+            'description' => $description,
+            'street_number' => $components->get('street_number')['long_name'] ?? null,
+            'route' => $components->get('route')['long_name'] ?? null,
+            'locality' => $components->get('locality')['long_name'] ?? 
+                        $components->get('administrative_area_level_3')['long_name'] ?? null,
+            'administrative_area_level_3' => $components->get('administrative_area_level_2')['long_name'] ?? null, // Provincia
+            'administrative_area_level_2' => $components->get('administrative_area_level_1')['long_name'] ?? null, // Regione
+            'administrative_area_level_1' => $components->get('country')['long_name'] ?? null,
+            'country' => $components->get('country')['short_name'] ?? null,
+            'postal_code' => $components->get('postal_code')['long_name'] ?? null,
+            'formatted_address' => $googleData['formatted_address'] ?? null,
+            'place_id' => $googleData['place_id'] ?? null,
+            'latitude' => $googleData['geometry']['location']['lat'] ?? null,
+            'longitude' => $googleData['geometry']['location']['lng'] ?? null,
+        ]);
+    }
+    
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     /**
      * Scope per cercare indirizzi nelle vicinanze
      *
@@ -421,4 +553,8 @@ class Address extends BaseModel
     {
         return $query->where('type', $type instanceof AddressTypeEnum ? $type->value : $type);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)

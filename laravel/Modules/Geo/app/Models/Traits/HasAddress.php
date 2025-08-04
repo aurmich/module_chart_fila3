@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Geo\Models\Traits;
 
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 use Modules\Geo\Models\Address;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
+=======
+use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Modules\Geo\Models\Address;
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 
 /**
  * Trait HasAddress
@@ -31,6 +36,7 @@ trait HasAddress
     }
     
     /**
+<<<<<<< HEAD
      * Ottiene indirizzo associato al modello.
      *
      * @return \Illuminate\Database\Eloquent\Relations\MorphOne
@@ -41,18 +47,24 @@ trait HasAddress
     }
     
     /**
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
      * Ottiene l'indirizzo principale del modello.
      *
      * @return \Modules\Geo\Models\Address|null
      */
     public function primaryAddress(): ?Address
     {
+<<<<<<< HEAD
         $res= $this->addresses()->where('is_primary', true)->first();
         if($res==null){
             return $res;
         }
         Assert::isInstanceOf($res, Address::class);
         return $res;
+=======
+        return $this->addresses()->where('is_primary', true)->first();
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     }
     
     /**
@@ -63,6 +75,7 @@ trait HasAddress
     public function getFullAddress(): ?string
     {
         $address = $this->primaryAddress();
+<<<<<<< HEAD
         return $address ? $address->getFullAddress() : null;
     }
 
@@ -83,6 +96,9 @@ trait HasAddress
         }
         /** @phpstan-ignore property.notFound, property.notFound */
         return $address->street_address.' '.$address->street_number.' '.implode('',$locality['cap']).' '.$locality['nome'].' ('.$locality['provincia']['nome'].') - '.$locality['regione']['nome'];
+=======
+        return $address ? $address->getFormattedAddress() : null;
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     }
     
     /**
@@ -192,7 +208,11 @@ trait HasAddress
                 $this->addresses()->update(['is_primary' => false]);
             }
         }
+<<<<<<< HEAD
         /** @phpstan-ignore return.type */
+=======
+        
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
         return $this->addresses()->create($data);
     }
     

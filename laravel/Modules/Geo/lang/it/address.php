@@ -3,12 +3,16 @@
 return array (
   'singular' => 'Indirizzo',
   'plural' => 'Indirizzi',
+<<<<<<< HEAD
   'navigation' => 
   array (
     'sort' => 96,
     'icon' => 'address.navigation',
     'group' => 'address.navigation',
   ),
+=======
+  'navigation' => 'Gestione Indirizzi',
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
   'actions' => 
   array (
     'create' => 'Crea indirizzo',
@@ -36,7 +40,11 @@ return array (
       'label' => 'Nome',
       'placeholder' => 'Inserisci un nome per l\'indirizzo',
       'helper' => 'Un nome identificativo per questo indirizzo, es. "Casa" o "Ufficio"',
+<<<<<<< HEAD
       'helper_text' => '',
+=======
+      'helper_text' => 'name',
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
       'description' => 'name',
     ),
     'description' => 
@@ -51,21 +59,33 @@ return array (
       'placeholder' => 'Inserisci la via',
       'helper' => 'Nome della via o strada',
       'description' => 'route',
+<<<<<<< HEAD
       'helper_text' => '',
+=======
+      'helper_text' => 'route',
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     ),
     'street_number' => 
     array (
       'label' => 'Numero civico',
       'placeholder' => 'Inserisci il numero civico',
       'description' => 'street_number',
+<<<<<<< HEAD
       'helper_text' => '',
+=======
+      'helper_text' => 'street_number',
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     ),
     'locality' => 
     array (
       'label' => 'Città',
       'placeholder' => 'Inserisci la città',
       'description' => 'locality',
+<<<<<<< HEAD
       'helper_text' => '',
+=======
+      'helper_text' => 'locality',
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     ),
     'administrative_area_level_3' => 
     array (
@@ -77,35 +97,55 @@ return array (
       'label' => 'Provincia',
       'placeholder' => 'Inserisci la provincia',
       'description' => 'administrative_area_level_2',
+<<<<<<< HEAD
       'helper_text' => '',
+=======
+      'helper_text' => 'administrative_area_level_2',
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     ),
     'administrative_area_level_1' => 
     array (
       'label' => 'Regione',
       'placeholder' => 'Inserisci la regione',
       'description' => 'administrative_area_level_1',
+<<<<<<< HEAD
       'helper_text' => '',
+=======
+      'helper_text' => 'administrative_area_level_1',
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     ),
     'country' => 
     array (
       'label' => 'Paese',
       'placeholder' => 'Inserisci il paese',
       'description' => 'country',
+<<<<<<< HEAD
       'helper_text' => '',
+=======
+      'helper_text' => 'country',
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     ),
     'postal_code' => 
     array (
       'label' => 'CAP',
       'placeholder' => 'Inserisci il CAP',
       'description' => 'postal_code',
+<<<<<<< HEAD
       'helper_text' => '',
+=======
+      'helper_text' => 'postal_code',
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     ),
     'formatted_address' => 
     array (
       'label' => 'Indirizzo formattato',
       'placeholder' => 'Indirizzo formattato completo',
       'description' => 'formatted_address',
+<<<<<<< HEAD
       'helper_text' => '',
+=======
+      'helper_text' => 'formatted_address',
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     ),
     'place_id' => 
     array (
@@ -122,7 +162,11 @@ return array (
       'label' => 'Longitudine',
       'placeholder' => 'Inserisci la longitudine',
       'description' => 'longitude',
+<<<<<<< HEAD
       'helper_text' => '',
+=======
+      'helper_text' => 'longitude',
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     ),
     'type' => 
     array (
@@ -142,7 +186,11 @@ return array (
       'label' => 'Principale',
       'helper' => 'Imposta questo indirizzo come indirizzo principale',
       'description' => 'is_primary',
+<<<<<<< HEAD
       'helper_text' => '',
+=======
+      'helper_text' => 'is_primary',
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
       'placeholder' => 'is_primary',
     ),
     'extra_data' => 
@@ -161,6 +209,7 @@ return array (
     'map' => 
     array (
       'description' => 'map',
+<<<<<<< HEAD
       'helper_text' => '',
     ),
     'aaa' => 
@@ -168,6 +217,9 @@ return array (
       'description' => 'aaa',
       'helper_text' => 'aaa',
       'placeholder' => 'aaa',
+=======
+      'helper_text' => 'map',
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     ),
   ),
   'columns' => 

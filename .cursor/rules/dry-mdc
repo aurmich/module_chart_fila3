@@ -41,6 +41,9 @@ Il principio DRY afferma che "ogni pezzo di conoscenza deve avere una singola, i
 - Usare sempre l'autoregistrazione centralizzata (es. XotBaseServiceProvider)
 - Ogni eccezione va documentata e motivata
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 
 ## Regola AddressResource
 
@@ -66,7 +69,11 @@ I collegamenti nei file .md devono essere sempre relativi, mai assoluti.
 
 ## Regola BaseModel
 
+<<<<<<< HEAD
 Tutti i modelli di un modulo devono estendere il BaseModel del modulo stesso (es. `Modules\<nome progetto>\Models\BaseModel`), **mai** direttamente `Illuminate\Database\Eloquent\Model`.
+=======
+Tutti i modelli di un modulo devono estendere il BaseModel del modulo stesso (es. `Modules\SaluteOra\Models\BaseModel`), **mai** direttamente `Illuminate\Database\Eloquent\Model`.
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 
 ### Motivazione filosofica
 - Centralizzazione della logica comune (connessione, cast, factory, ecc.)
@@ -80,5 +87,8 @@ Tutti i modelli di un modulo devono estendere il BaseModel del modulo stesso (es
 - [ ] Tutti i modelli estendono il BaseModel del modulo
 - [ ] La logica comune è centralizzata
 - [ ] La documentazione è aggiornata
+<<<<<<< HEAD
 =======
 >>>>>>> 3b8e8240 (fix case cursor and windsurf)
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)

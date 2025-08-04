@@ -211,6 +211,9 @@ Questo nuovo flusso permette di separare il completamento dei dati dall'approvaz
 
 **Regole per l'ereditarietà:**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 - I modelli specializzati (es. Doctor, Patient, Studio, ecc.) **devono** estendere il modello BaseModel del modulo di appartenenza (es. `Modules\SaluteOra\Models\BaseModel`), **mai** direttamente `Illuminate\Database\Eloquent\Model`.
 - Devono usare sempre il trait `\Parental\HasParent` per il corretto funzionamento dello STI (se applicabile).
 - MAI ridichiarare trait già presenti nelle classi genitori (es. HasFactory).
@@ -228,12 +231,15 @@ Questo nuovo flusso permette di separare il completamento dei dati dall'approvaz
 - [ ] Tutti i modelli estendono il BaseModel del modulo
 - [ ] La logica comune è centralizzata
 - [ ] La documentazione è aggiornata
+<<<<<<< HEAD
 =======
 - I modelli specializzati (es. Doctor, Patient) **devono** estendere il modello User del modulo Patient
 - Devono usare sempre il trait `\Parental\HasParent` per il corretto funzionamento dello STI
 - MAI ridichiarare trait già presenti nelle classi genitori (es. HasFactory)
 - Tutta la logica comune va nel modello User, mentre i modelli specializzati contengono solo le specificità
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 
 ## Funzionalità Core
 
@@ -937,8 +943,12 @@ protected $casts = [ 'state' => UserState::class ];
 - Se trovi una `UserState` in `app/States/User/UserState.php`, rinominala in `.old` e rimuovila dopo verifica.
 - **Motivazione:** coerenza con PSR-4, autoloading, best practice Spatie Model States, chiarezza architetturale.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
+=======
+
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 ## StudioResource (Filament)
 
 - Implementata la risorsa Filament per il modello Studio secondo tutte le regole del progetto.
@@ -976,6 +986,7 @@ Tutte le viste, risorse Filament e API devono ora usare la relazione `addresses`
 
 ### Form Components Custom
 - [OpeningHoursField: gestione orari di apertura](form-components/opening-hours-field.md) - Campo custom Filament per orari di apertura, compatibile Spatie/opening-hours, UX avanzata
+<<<<<<< HEAD
 
 ## Aggiornamento 2025-05-28: Colonne tabella ListStudios
 
@@ -1079,3 +1090,5 @@ class ModelPolicy extends XotBasePolicy
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
 >>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
