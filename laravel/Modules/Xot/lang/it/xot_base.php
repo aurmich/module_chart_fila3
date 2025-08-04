@@ -268,4 +268,11 @@ return array (
     ),
 >>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
   ),
+  'actions' => 
+  array (
+    'submit' => 
+    array (
+      'label' => 'submit',
+    ),
+  ),
 );

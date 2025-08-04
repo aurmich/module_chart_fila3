@@ -13,7 +13,31 @@ use Modules\SaluteOra\States\Appointment\AppointmentState;
  */
 class InProgress extends AppointmentState
 {
+<<<<<<< HEAD
     /** @var string */
     public static string $name = 'in_progress';
 
+=======
+    public static $name = 'in_progress';
+
+    public function label(): string
+    {
+        return 'In corso';
+    }
+
+    public function color(): string
+    {
+        return 'info';
+    }
+
+    public function icon(): string
+    {
+        return 'heroicon-o-play-circle';
+    }
+
+    public function isActive(): bool
+    {
+        return true;
+    }
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 }

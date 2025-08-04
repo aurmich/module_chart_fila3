@@ -392,6 +392,7 @@ class Studio extends BaseTenant
         $doctors=$this->doctors()->get();
         foreach($doctors as $doctor){
 <<<<<<< HEAD
+<<<<<<< HEAD
             //** @phpstan-ignore property.notFound */
             $tmp=$this->getDoctorEnabledDatesByMonth($doctor->id, $month);
             $dates=array_merge($dates, $tmp);
@@ -406,6 +407,10 @@ class Studio extends BaseTenant
                 }
             }
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+            $tmp=$this->getDoctorEnabledDatesByMonth($doctor->id, $month);
+            $dates=array_merge($dates, $tmp);
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
             
         }
         return $dates;
@@ -465,5 +470,27 @@ class Studio extends BaseTenant
         return $dates;
        
     }
+<<<<<<< HEAD
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+
+
+    public function getDoctorEnabledDatesByMonth(int|string|null $doctorId, string $month): array
+    {
+        $dates=[];
+        $pivot=DoctorStudio::where('studio_id',$this->id)->where('user_id',$doctorId)->first();
+        if(!$pivot){
+            return [];
+        }
+        $openingHours=$pivot->getOpeningHours();
+        for($i=1;$i<=31;$i++){
+            $date = Carbon::parse($month.'-'.$i);
+            $date1=$date->format('Y-m-d');
+            if($openingHours->isOpenOn($date1)){
+                $dates[] = $date1;
+            }
+        }
+        return $dates;
+    }
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 }

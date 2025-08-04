@@ -47,10 +47,16 @@ return new class extends XotBaseMigration
                 $table->foreignIdFor(Doctor::class);
 =======
                 //$table->foreignIdFor(Tenant::class);
+<<<<<<< HEAD:laravel/Modules/SaluteOra/database/migrations/2024_03_31_000006_create_appointments_table.php
                 $table->foreignIdFor(Patient::class,'patient_id');
                 $table->foreignIdFor(Doctor::class,'doctor_id');
                 $table->foreignIdFor(Studio::class,'studio_id');
 >>>>>>> aurmich/dev
+=======
+                $table->foreignIdFor(Patient::class,'patient_id')->nullable();
+                $table->foreignIdFor(Doctor::class,'doctor_id')->nullable();
+                $table->foreignIdFor(Studio::class,'studio_id')->nullable();
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications):laravel/Modules/SaluteOra/database/migrations/2024_03_31_000008_create_appointments_table.php
                 $table->date('date');
                 $table->time('start_time');
                 $table->time('end_time');
@@ -83,8 +89,20 @@ return new class extends XotBaseMigration
                     $table->dateTime('end_datetime')->nullable();
                 }
 
+                if (!$this->hasColumn('patient_id')) {
+                    $table->foreignIdFor(Patient::class,'patient_id')->nullable();
+                }
+                if (!$this->hasColumn('doctor_id')) {
+                    $table->foreignIdFor(Doctor::class,'doctor_id')->nullable();
+                }
+                
+
                 if (!$this->hasColumn('emergency')) {
                     $table->boolean('emergency')->default(false);
+                }
+
+                if (!$this->hasColumn('state')) {
+                    $table->string('state')->nullable();
                 }
 
                 // Indici per migliorare le prestazioni delle query sul calendario

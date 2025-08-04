@@ -278,6 +278,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
             ->schema($this->$schema());
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
     public function getWizardSubmitAction(): Action{
@@ -285,11 +286,20 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
         if(!view()->exists($submit_view)){
             throw new \Exception("View {$submit_view} does not exist");
         }
+=======
+
+
+    public function getWizardSubmitAction(){
+        $submit_view='pub_theme::filament.wizard.submit-button';
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
         return Action::make('submit')
             ->label(__('filament-panels::resources/pages/edit-record.form.actions.save.label'))
             ->submit('save')
             ->view($submit_view);
     }
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 }

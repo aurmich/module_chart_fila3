@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\ModelStates\HasStates;
 use Spatie\Activitylog\LogOptions;
 use Illuminate\Database\Eloquent\Model;
@@ -16,13 +17,20 @@ use Modules\SaluteOra\Enums\AppointmentStatusEnum;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\SaluteOra\States\Appointment\AppointmentState;
 =======
+=======
+use Spatie\ModelStates\HasStates;
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 use Spatie\Activitylog\LogOptions;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Modules\SaluteOra\Enums\AppointmentTypeEnum;
 use Modules\SaluteOra\Enums\AppointmentStatusEnum;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+use Modules\SaluteOra\States\Appointment\AppointmentState;
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 
 /**
  * Appointment Model for the SaluteOra Module.
@@ -148,7 +156,11 @@ class Appointment extends BaseModel implements HasStatesContract
 class Appointment extends BaseModel
 {
     use LogsActivity;
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+    use HasStates;
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 
     /**
      * Gli attributi che sono mass assignable.
@@ -160,10 +172,14 @@ class Appointment extends BaseModel
         'doctor_id',
         'studio_id',
 <<<<<<< HEAD
+<<<<<<< HEAD
         //'tenant_id',
         'title',
 =======
         'tenant_id',
+=======
+        //'tenant_id',
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
         'title',
         'start_time',
         'end_time',
@@ -177,12 +193,16 @@ class Appointment extends BaseModel
         'reminder_sent',
         'reminder_sent_at',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'state',
         'starts_at',
         'ends_at',
         'invoice',//fattura
 =======
 >>>>>>> aurmich/dev
+=======
+        'state',
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
     ];
 
     /**
@@ -202,7 +222,11 @@ class Appointment extends BaseModel
             'end_time' => 'datetime',
             'type' => AppointmentTypeEnum::class,
             'status' => AppointmentStatusEnum::class,
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+            'state' => AppointmentState::class,
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
             'emergency' => 'boolean',
             'eligibility_confirmed' => 'boolean',
             'reminder_sent' => 'boolean',

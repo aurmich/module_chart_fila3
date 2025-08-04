@@ -9,9 +9,15 @@ Il sistema di gestione degli stati degli appuntamenti utilizza il pattern State 
 ### 1. Pending (In attesa)
 - **Stato di default** per nuovi appuntamenti
 - Il paziente ha prenotato ma deve ancora confermare
+<<<<<<< HEAD
 - **Transizioni possibili**: Confirmed, Rejected (NON Cancelled - da Pending non si può cancellare direttamente)
 - **Colore**: warning
 - **Icona**: heroicon-o-clock
+=======
+- **Transizioni possibili**: Confirmed, Cancelled
+- **Colore**: gray
+- **Icona**: heroicon-o-question-mark-circle
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 
 ### 2. Confirmed (Confermato)
 - Paziente ha confermato la richiesta di appuntamento
@@ -48,7 +54,10 @@ Il sistema di gestione degli stati degli appuntamenti utilizza il pattern State 
 
 ### 7. Rejected (Rifiutato)
 - Appuntamento rifiutato dal dottore o sistema
+<<<<<<< HEAD
 - **Transizioni possibili**: Confirmed (in caso di revisione della decisione)
+=======
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 - **Colore**: danger
 - **Icona**: heroicon-o-no-symbol
 
@@ -67,18 +76,26 @@ Il sistema di gestione degli stati degli appuntamenti utilizza il pattern State 
 
 ```
 Pending → Confirmed → Scheduled → InProgress → Completed
+<<<<<<< HEAD
    ↓         ↓          ↓
    ↓      Cancelled   NoShow
 Rejected ↔ Confirmed   ↑
+=======
+   ↓          ↓          ↓
+Cancelled   Cancelled   NoShow
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
             ↓          
           Rescheduled ← Scheduled
                         ↓
                     Cancelled
 ```
 
+<<<<<<< HEAD
 **Nota importante**: Da `Pending` si può andare solo a `Confirmed` o `Rejected`. 
 La cancellazione diretta da `Pending` non è permessa - un appuntamento in attesa deve essere prima confermato o rifiutato.
 
+=======
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 ## Implementazione
 
 ### Classe Base: AppointmentState
@@ -104,18 +121,28 @@ Estende il pattern BaseTransition con:
 
 ### Transizioni Implementate
 - `PendingToConfirmed`
+<<<<<<< HEAD
 - `PendingToRejected`
 - `ConfirmedToScheduled`
 - `ConfirmedToCancelled`
 - `ConfirmedToRescheduled`
 - `ConfirmedToRejected`
 - `RejectedToConfirmed`
+=======
+- `PendingToCancelled`
+- `ConfirmedToScheduled`
+- `ConfirmedToCancelled`
+- `ConfirmedToRescheduled`
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 - `ScheduledToInProgress`
 - `ScheduledToCancelled`
 - `ScheduledToNoShow`
 - `ScheduledToRescheduled`
 - `InProgressToCompleted`
+<<<<<<< HEAD
 - `RescheduledToConfirmed`
+=======
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 
 ## Pattern di Utilizzo
 
@@ -183,18 +210,28 @@ Il sistema è integrato con il `FindDoctorAndAppointmentWidget` che:
 ### Transizioni
 - `app/States/Appointment/Transitions/BaseTransition.php`
 - `app/States/Appointment/Transitions/PendingToConfirmed.php`
+<<<<<<< HEAD
 - `app/States/Appointment/Transitions/PendingToRejected.php`
 - `app/States/Appointment/Transitions/ConfirmedToScheduled.php`
 - `app/States/Appointment/Transitions/ConfirmedToCancelled.php`
 - `app/States/Appointment/Transitions/ConfirmedToRescheduled.php`
 - `app/States/Appointment/Transitions/ConfirmedToRejected.php`
 - `app/States/Appointment/Transitions/RejectedToConfirmed.php`
+=======
+- `app/States/Appointment/Transitions/PendingToCancelled.php`
+- `app/States/Appointment/Transitions/ConfirmedToScheduled.php`
+- `app/States/Appointment/Transitions/ConfirmedToCancelled.php`
+- `app/States/Appointment/Transitions/ConfirmedToRescheduled.php`
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 - `app/States/Appointment/Transitions/ScheduledToInProgress.php`
 - `app/States/Appointment/Transitions/ScheduledToCancelled.php`
 - `app/States/Appointment/Transitions/ScheduledToNoShow.php`
 - `app/States/Appointment/Transitions/ScheduledToRescheduled.php`
 - `app/States/Appointment/Transitions/InProgressToCompleted.php`
+<<<<<<< HEAD
 - `app/States/Appointment/Transitions/RescheduledToConfirmed.php`
+=======
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 
 ## Collegamenti
 
@@ -203,4 +240,8 @@ Il sistema è integrato con il `FindDoctorAndAppointmentWidget` che:
 - [User States Pattern](user-states.md)
 - [BaseTransition Pattern](../app/States/User/Transitions/BaseTransition.php)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025 - Aggiunta transizione RejectedToConfirmed* 
+=======
+*Ultimo aggiornamento: Dicembre 2024* 
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)

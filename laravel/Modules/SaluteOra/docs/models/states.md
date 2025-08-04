@@ -442,6 +442,9 @@ class PendingToActive extends BaseTransition
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 ➡️ **Documentazione completa**: [Pattern BaseTransition](base-transition-pattern.md)
 
 ## 🏥 **Stati degli Appuntamenti** (NUOVO - Gennaio 2025)
@@ -496,7 +499,11 @@ Le notifiche includono automaticamente:
 - `studio_name`: Nome dello studio
 - `message`: Messaggio personalizzato
 
+<<<<<<< HEAD
 📋 **Documentazione completa**: [Appointment States](appointment-states.md) 
 =======
 ➡️ **Documentazione completa**: [Pattern BaseTransition](base-transition-pattern.md) 
 >>>>>>> aurmich/dev
+=======
+📋 **Documentazione completa**: [Appointment States](appointment-states.md) 
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
