@@ -45,12 +45,13 @@ use Webmozart\Assert\Assert;
 class CmsServiceProvider extends XotBaseServiceProvider
 {
     public string $name = 'Cms';
-
     public XotData $xot;
+<<<<<<< HEAD
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
     protected string $module_dir = __DIR__;
-
     protected string $module_ns = __NAMESPACE__;
 
 <<<<<<< HEAD
@@ -224,6 +225,7 @@ class CmsServiceProvider extends XotBaseServiceProvider
 
         Assert::string($theme = $xot->{$theme_type});
 <<<<<<< HEAD
+<<<<<<< HEAD
         $theme_path='Themes/'.$theme;
         $resource_path = $theme_path.'/resources';
         $lang_dir = app(\Modules\Xot\Actions\File\FixPathAction::class)->execute(base_path($theme_path.'/lang'));
@@ -240,9 +242,14 @@ class CmsServiceProvider extends XotBaseServiceProvider
 
         $resource_path = 'Themes/'.$theme.'/resources';
         $lang_dir = app(\Modules\Xot\Actions\File\FixPathAction::class)->execute(base_path($resource_path.'/lang'));
+=======
+        $theme_path='Themes/'.$theme;
+        $resource_path = $theme_path.'/resources';
+        $lang_dir = app(\Modules\Xot\Actions\File\FixPathAction::class)->execute(base_path($theme_path.'/lang'));
+>>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
 
         $theme_dir = app(\Modules\Xot\Actions\File\FixPathAction::class)->execute(base_path($resource_path.'/views'));
-
+        
         app('view')->addNamespace($theme_type, $theme_dir);
         $this->loadTranslationsFrom($lang_dir, $theme_type);
     }

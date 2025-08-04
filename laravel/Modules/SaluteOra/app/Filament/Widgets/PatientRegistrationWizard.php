@@ -207,10 +207,15 @@ class PatientRegistrationWizard extends Component
                     ]),
             ])
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ->extraAttributes(['class' => 'mobile-friendly-wizard'])
             
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+                ->extraAttributes(['class' => 'mobile-friendly-wizard'])
+            
+>>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
                 ->submitAction(new HtmlString('
                     <button type="submit" class="filament-button filament-button-size-lg inline-flex items-center justify-center py-2 gap-2 font-medium rounded-lg border transition-colors outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset min-h-[2.25rem] px-4 text-sm text-white shadow focus:ring-white border-transparent bg-primary-600 hover:bg-primary-500 focus:bg-primary-700 focus:ring-offset-primary-700">
                         Completa Registrazione

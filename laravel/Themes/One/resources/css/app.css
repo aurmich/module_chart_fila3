@@ -177,6 +177,9 @@
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
 
     .fi-fo-wizard-header {
         @apply hidden sm:grid !important;
@@ -188,6 +191,7 @@
         @apply overflow-x-auto;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     
 >>>>>>> aurmich/dev
@@ -195,6 +199,9 @@
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> d23ba493 (add calendar)
+=======
+    
+>>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
 }
 
 

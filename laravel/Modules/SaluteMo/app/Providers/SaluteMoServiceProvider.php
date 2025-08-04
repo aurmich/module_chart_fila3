@@ -25,6 +25,7 @@ use Modules\Xot\Providers\XotBaseServiceProvider;
 class SaluteMoServiceProvider extends XotBaseServiceProvider
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public string $name = 'SaluteMo';
 
 =======
@@ -176,4 +177,8 @@ class SaluteMoServiceProvider extends XotBaseServiceProvider
         return $paths;
     }
 >>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
+=======
+    public string $name = 'SaluteMo';
+
+>>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
 }

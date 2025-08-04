@@ -11,6 +11,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "file": "assets/app-7PoISLAE.css",
 =======
 <<<<<<< HEAD
@@ -116,6 +117,12 @@
 =======
     "file": "assets/app-Cs86oWFH.css",
 >>>>>>> f2140a80 (- continuo style landing page;)
+=======
+    "file": "assets/app-Cs86oWFH.css",
+=======
+    "file": "assets/app-DYCARMKa.css",
+>>>>>>> f38a097e (fileupload to spatiefileupload + final button wizard)
+>>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
     "src": "resources/css/app.css",
     "isEntry": true
   },
