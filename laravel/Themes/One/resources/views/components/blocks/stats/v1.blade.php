@@ -9,6 +9,7 @@
 ])
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -177,3 +178,6 @@
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> ff138484 (- update dettaglio paziente)

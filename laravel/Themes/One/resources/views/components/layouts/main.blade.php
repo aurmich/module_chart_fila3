@@ -117,10 +117,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <body class="min-h-screen flex flex-col bg-[#E6EBF7]">
 =======
     <body class="min-h-screen antialiased bg-white dark:bg-gradient-to-b dark:from-gray-950 dark:to-gray-900">
 >>>>>>> 54f4fa16 (.)
+=======
+    <body class="min-h-screen antialiased bg-white dark:bg-gradient-to-b dark:from-gray-950 dark:to-gray-900">
+>>>>>>> ff138484 (- update dettaglio paziente)
         {{ $slot }}
         {{--
 =======

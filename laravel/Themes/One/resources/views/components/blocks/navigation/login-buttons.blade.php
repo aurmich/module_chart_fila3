@@ -14,6 +14,7 @@
 
 @if (!$isMobile)
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="flex items-center space-x-4 !m-1">
     <a href="{{ route('login') }}" class="text-sm font-medium text-[#E2E8F0] hover:text-[#E2E8F0]">
 <<<<<<< HEAD
@@ -39,6 +40,9 @@
 >>>>>>> 58d017c2 (- aggiornato stile dettaglio paziente)
 <div class="flex items-center space-x-4 m-12">
 >>>>>>> f2140a80 (- continuo style landing page;)
+=======
+<div class="flex items-center space-x-4 !m-1">
+>>>>>>> ff138484 (- update dettaglio paziente)
     <a href="{{ route('login') }}" class="text-sm font-medium text-[#E2E8F0] hover:text-[#E2E8F0]">
         {{ __('auth.login.title') }}
     </a>

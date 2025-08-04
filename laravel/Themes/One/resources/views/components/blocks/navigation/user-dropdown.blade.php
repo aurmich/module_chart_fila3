@@ -82,7 +82,7 @@ $isDoctor  = $user && $user->type == UserTypeEnum::DOCTOR ? true:false;
 >>>>>>> 54f4fa16 (.)
 =======
                 color="white"
-                style="border-radius: 70px"
+                style="border-radius: 70px; background-color: transparent !important; border: 1px solid white"
                 icon="heroicon-o-user"
                 :label="$user?->name"
                 aria-label="{{ __('ui::navigation.user_menu') }}">
@@ -134,6 +134,10 @@ $isDoctor  = $user && $user->type == UserTypeEnum::DOCTOR ? true:false;
     @include($guest_view)
 @endif
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> ff138484 (- update dettaglio paziente)

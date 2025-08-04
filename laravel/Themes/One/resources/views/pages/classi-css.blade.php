@@ -92,7 +92,11 @@
 <div class="w-[300px]">Width small</div>
 <div class="bg-transparent"></div>
 <div class="bg-gradient-to-r from-cyan-500 to-blue-500">gradiant</div>
+<<<<<<< HEAD
 <div class="bg-gradient-to-r from-cyan-500 to-[#272C4D]">gradient</div>
+=======
+<div class="bg-gradient-to-r from-cyan-500 to-[#1A467F]">gradient</div>
+>>>>>>> ff138484 (- update dettaglio paziente)
 <div class="min-h-screen">screen height</div>
 <div class="border-[#1A467F]"></div>
 <div class="min-h-[50vh]">min height</div>
@@ -100,6 +104,7 @@
 <div class="min-h-[700px]">min height costum</div>
 <div class="w-[350px]">width 350</div>
 <div class="w-[700px]">width 700px</div>
+<<<<<<< HEAD
 <div class="bg-[#F5F5F5]">background primary chiaro</div>
 <div class="ring-[#FF5F7E]">ring primary</div>
 <div class="focus:border-[#FF5F7E]">focus primary</div>
@@ -360,3 +365,6 @@
 <div class="bg-transparent"></div>
 </x-layouts.app>
 >>>>>>> 58d017c2 (- aggiornato stile dettaglio paziente)
+=======
+</x-layouts.app>    
+>>>>>>> ff138484 (- update dettaglio paziente)

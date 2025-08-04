@@ -6,10 +6,14 @@
     'secondaryCta' => null,
     'overlay' => 'gradient', // none, dark, light, gradient
 <<<<<<< HEAD
+<<<<<<< HEAD
     'minHeight' => 'min-h-20 md:min-h-20',
 =======
     'minHeight' => 'min-h-[70vh] md:min-h-[80vh]',
 >>>>>>> 12c6456b (✨ (blocks.md): add Aesthetic Block guidelines and example for elegant components)
+=======
+    'minHeight' => 'min-h-20 md:min-h-20',
+>>>>>>> ff138484 (- update dettaglio paziente)
     'contentPosition' => 'center', // start, center, end
     'className' => ''
 ])
@@ -54,10 +58,14 @@
 @endphp
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <section class="relative min-h-[700px] flex items-center justify-center overflow-hidden {{ $className }}" 
 =======
 <section class="relative {{ $minHeight }} flex items-center overflow-hidden {{ $className }}" 
 >>>>>>> 12c6456b (✨ (blocks.md): add Aesthetic Block guidelines and example for elegant components)
+=======
+<section class="relative min-h-[700px] flex items-center overflow-hidden {{ $className }}" 
+>>>>>>> ff138484 (- update dettaglio paziente)
          x-data="{ 
             scrolled: false,
             mounted: false,
@@ -67,6 +75,7 @@
                     this.scrolled = window.scrollY > 50;
                 });
             }
+<<<<<<< HEAD
 <<<<<<< HEAD
          }">
 
@@ -97,17 +106,25 @@
             >
         </div>
     @endif
+=======
+         }">
+
+>>>>>>> ff138484 (- update dettaglio paziente)
 
     <!-- Overlay -->
     @if($overlay !== 'none')
-        <div class="absolute inset-0 -z-10 {{ $overlayClasses }}"></div>
+        <div class="absolute inset-0 -z-10 bg-[#E6EBF7]"></div>
     @endif
 
     <!-- Content -->
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div class="max-w-4xl mx-auto {{ $contentPositionClasses }} flex flex-col gap-6">
+<<<<<<< HEAD
             <div class="space-y-6 text-white"
 >>>>>>> 12c6456b (✨ (blocks.md): add Aesthetic Block guidelines and example for elegant components)
+=======
+            <div class="space-y-6 text-[#1A467F]"
+>>>>>>> ff138484 (- update dettaglio paziente)
                  x-data="{ 
                     show: false,
                     mounted() { 
@@ -154,42 +171,19 @@
 
 =======
                 
-                @if($subtitle)
-                    <p class="text-lg md:text-xl font-medium tracking-wide uppercase"
-                       x-show="show"
-                       x-transition:enter="transition-all duration-700 ease-out"
-                       x-transition:enter-start="opacity-0 translate-y-4"
-                       x-transition:enter-end="opacity-100 translate-y-0">
-                        {{ $subtitle }}
-                    </p>
-                @endif
+        
 
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
-                    x-show="show"
-                    x-transition:enter="transition-all duration-700 ease-out delay-100"
-                    x-transition:enter-start="opacity-0 translate-y-4"
-                    x-transition:enter-end="opacity-100 translate-y-0">
+                <h1 class="text-4xl md:text-5xl lg:text-3xl font-bold leading-tight">
                     {{ $title }}
                 </h1>
 
                 @if(!empty($primaryCta) || !empty($secondaryCtaData))
-                    <div class="flex flex-wrap gap-4 pt-4"
-                         x-show="show"
-                         x-transition:enter="transition-all duration-700 ease-out delay-200"
-                         x-transition:enter-start="opacity-0 translate-y-4"
-                         x-transition:enter-end="opacity-100 translate-y-0">
+                    <div class="flex flex-row justify-center gap-4 pt-4">
                         
                         @if(!empty($primaryCta))
                             <a href="{{ $primaryCta['url'] }}" 
-                               class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 md:py-4 md:text-lg md:px-10 transition-all duration-300 transform hover:scale-105">
+                               class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md !text-white bg-[#0D9488] md:py-4 md:text-lg md:px-10">
                                 {{ $primaryCta['text'] }}
-                            </a>
-                        @endif
-
-                        @if(!empty($secondaryCtaData))
-                            <a href="{{ $secondaryCtaData['url'] }}" 
-                               class="inline-flex items-center justify-center px-8 py-3 border border-white/20 text-base font-medium rounded-md text-white bg-white/10 hover:bg-white/20 md:py-4 md:text-lg md:px-10 transition-all duration-300 transform hover:scale-105">
-                                {{ $secondaryCtaData['text'] }}
                             </a>
                         @endif
                     </div>
@@ -205,19 +199,10 @@
 
 =======
     <!-- Scroll indicator -->
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10" 
-         x-show="!scrolled && mounted"
-         x-transition:enter="transition ease-out duration-1000 delay-1000"
-         x-transition:enter-start="opacity-0 translate-y-4"
-         x-transition:enter-end="opacity-100 translate-y-0">
-        <div class="animate-bounce">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-            </svg>
-        </div>
-    </div>
+
 </section>
 
+<<<<<<< HEAD
 @push('styles')
 <style>
     .animate-fadeInDown {
@@ -245,3 +230,5 @@
 </style>
 @endpush
 >>>>>>> 12c6456b (✨ (blocks.md): add Aesthetic Block guidelines and example for elegant components)
+=======
+>>>>>>> ff138484 (- update dettaglio paziente)

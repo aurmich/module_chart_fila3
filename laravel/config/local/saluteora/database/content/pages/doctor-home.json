@@ -28,6 +28,7 @@
                     "cta-buttons": [],
                     "cta_text": "Continua la registrazione",
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "cta_link": "/doctor/patients",
                     "widget": "Modules\\SaluteOra\\Filament\\Widgets\\DoctorCalendarWidget"
                 }
@@ -79,6 +80,8 @@
                     "image": "/img/odontoiatra.jpg",
                     "cta-buttons": [],
                     "cta_text": "Vedi le tue pazienti",
+=======
+>>>>>>> ff138484 (- update dettaglio paziente)
                     "cta_link": "/doctor/patients"
 >>>>>>> f2140a80 (- continuo style landing page;)
                 }

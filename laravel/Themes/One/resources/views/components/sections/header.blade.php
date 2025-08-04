@@ -48,7 +48,7 @@
     'id' => ($section['attributes']['id'] ?? ''),
     'x-data' => "{ mobileMenuOpen: false }"
     ]) }}>
-    <div class="max-w-7xl !m-0 !p-0 w-full">
+    <div class="!m-0 !p-0 w-full">
         <div class="flex h-16 items-center justify-between">
 >>>>>>> 54f4fa16 (.)
             @foreach($componentsBlocks as $block)

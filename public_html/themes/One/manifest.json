@@ -159,8 +159,12 @@
 >>>>>>> cecdd8e5 (- rename file dettaglio-paziente;)
 =======
   "resources/css/app.css": {
+<<<<<<< HEAD
     "file": "assets/app-CiFaG0te.css",
 >>>>>>> 58d017c2 (- aggiornato stile dettaglio paziente)
+=======
+    "file": "assets/app-DdH0QB6i.css",
+>>>>>>> ff138484 (- update dettaglio paziente)
     "src": "resources/css/app.css",
     "isEntry": true
   },

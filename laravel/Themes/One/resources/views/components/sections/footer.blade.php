@@ -14,6 +14,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'class' => 'bg-[#272C4D] h-32 lg:min-h-36 text-white flex justify-center items-center' . ($section['attributes']['class'] ?? '') . ' ' . $class,
     'id' => ($section['attributes']['id'] ?? '')
 ]) }}>
@@ -66,11 +67,15 @@
 =======
     'class' => 'bg-[#1A467F] text-white' . ($section['attributes']['class'] ?? '') . ' ' . $class,
 >>>>>>> d23ba493 (add calendar)
+=======
+    'class' => 'bg-[#1A467F] h-36 text-white flex items-center' . ($section['attributes']['class'] ?? '') . ' ' . $class,
+>>>>>>> ff138484 (- update dettaglio paziente)
     'id' => ($section['attributes']['id'] ?? '')
 ]) }}>
-    <div class="max-w-7xl mx-auto py-8 sm:px-6 lg:px-8">
-        <div class="w-full flex flex-col justify-center">
+    <div class="w-full flex justify-center">
+        <div class="w-full flex flex-row justify-center items-center">
             <!-- Colonna Logo e Descrizione -->
+<<<<<<< HEAD
 <<<<<<< HEAD
             <div class="space-y-6 flex-col justify-center">
                 <img src="/img/saluteOra-new-logo.png" alt="{{ config('app.name') }}" class="h-24 w-auto">
@@ -123,10 +128,31 @@
                     </p>
                 </div>          
 >>>>>>> 7e1c3ad6 (- sistemato footer;)
+=======
+            <div class="w-[700px] flex justify-center">
+                <div class="text-center m-6 md:text-right space-x-4">
+                    <a href="{{ url('privacy') }}" class="text-white text-sm hover:text-primary-400 transition-colors">Privacy Policy</a>
+                    <a href="{{ url('terms') }}" class="text-white text-sm hover:text-primary-400 transition-colors">Termini e Condizioni</a>
+                    <a href="{{ url('cookies') }}" class="text-white text-sm hover:text-primary-400 transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+            <div class="w-full flex justify-center">
+                <img src="/img/saluteOra-new-logo.png" alt="{{ config('app.name') }}" class="h-24 w-auto">
+            </div>
+            <div class="w-[700px] flex justify-center">
+                <div class="text-center m-6 md:text-right">
+                    <a href="{{ url('privacy') }}" class="text-white text-sm hover:text-primary-400 transition-colors">Home</a>
+                    <a href="{{ url('terms') }}" class="text-white text-sm hover:text-primary-400 transition-colors">Progetto</a>
+                    <a href="{{ url('cookies') }}" class="text-white text-sm hover:text-primary-400 transition-colors">Partners</a>
+                    <a href="{{ url('cookies') }}" class="text-white text-sm hover:text-primary-400 transition-colors">FAQ'S</a>
+                </div>
+            </div>          
+>>>>>>> ff138484 (- update dettaglio paziente)
             </div>
         </div>
 
         <!-- Copyright e Link Legali -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -149,6 +175,9 @@
                 </div>
             </div>
         </div>
+=======
+
+>>>>>>> ff138484 (- update dettaglio paziente)
     </div>
 <<<<<<< HEAD
 <<<<<<< HEAD

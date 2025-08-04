@@ -38,6 +38,7 @@
                     "minHeight": "min-h-[70vh] md:min-h-[80vh]"
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             },
             {
@@ -200,6 +201,8 @@
                     "text_color": "text-white"
                 }
 >>>>>>> 12c6456b (✨ (blocks.md): add Aesthetic Block guidelines and example for elegant components)
+=======
+>>>>>>> ff138484 (- update dettaglio paziente)
             }
         ],
         "en": [
@@ -233,6 +236,7 @@
                     "overlay": "gradient",
                     "minHeight": "min-h-[70vh] md:min-h-[80vh]"
                 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             },
@@ -365,6 +369,8 @@
                     "text_color": "text-white"
                 }
 >>>>>>> 12c6456b (✨ (blocks.md): add Aesthetic Block guidelines and example for elegant components)
+=======
+>>>>>>> ff138484 (- update dettaglio paziente)
             }
         ]
     },
@@ -386,7 +392,11 @@
         "og_image": "/img/og/registration-complete.jpg"
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> 12c6456b (✨ (blocks.md): add Aesthetic Block guidelines and example for elegant components)
+=======
+}
+>>>>>>> ff138484 (- update dettaglio paziente)
