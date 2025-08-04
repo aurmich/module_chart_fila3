@@ -57,7 +57,11 @@ return array (
 <<<<<<< HEAD
 =======
       'helper_text' => 'body_html',
+<<<<<<< HEAD
 >>>>>>> b2a39a21 (- update footer)
+=======
+      'placeholder' => 'body_html',
+>>>>>>> 89a8313a (- update primary colors)
     ),
   ),
   'actions' => 
