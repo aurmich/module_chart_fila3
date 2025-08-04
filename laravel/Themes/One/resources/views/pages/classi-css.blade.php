@@ -331,5 +331,10 @@
 <div class="py-8">Padding Y</div>
 <div class="m-12">Margin 12</div>
 <div class="mx-0">Margin x</div>
+<<<<<<< HEAD
 </x-layouts.app>
 >>>>>>> f2140a80 (- continuo style landing page;)
+=======
+<div class="bg-gradient-to-white from-[#1A467F]">Gradient</div>
+</x-layouts.app>
+>>>>>>> 8acca8e8 (- continuo style pagina di registrazione;)

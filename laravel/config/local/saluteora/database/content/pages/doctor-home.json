@@ -73,6 +73,7 @@
                     "title": "Benvenuto nella tua Area Dottore",
                     "subtitle": "Gestisci le tue pazienti e monitora i loro percorsi di salute orale",
                     "image": "/img/odontoiatra.jpg",
+                    "cta-buttons": [],
                     "cta_text": "Vedi le tue pazienti",
                     "cta_link": "/doctor/patients"
 >>>>>>> f2140a80 (- continuo style landing page;)

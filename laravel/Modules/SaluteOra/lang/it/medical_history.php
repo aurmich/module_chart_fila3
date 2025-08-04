@@ -16,6 +16,7 @@ return array (
   'model' => 
   array (
     'label' => 'medical history.model',
+<<<<<<< HEAD
 =======
   'navigation' => 
   array (
@@ -35,5 +36,7 @@ return array (
     'sort' => 4,
     'tooltip' => 'Gestisci le cartelle cliniche e la storia medica dei pazienti',
 >>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
+=======
+>>>>>>> 8acca8e8 (- continuo style pagina di registrazione;)
   ),
 );
