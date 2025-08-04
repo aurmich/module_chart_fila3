@@ -107,7 +107,18 @@ return array (
     array (
       'label' => 'openFilters',
     ),
+<<<<<<< HEAD
 >>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
+=======
+    'type' => 
+    array (
+      'label' => 'type',
+    ),
+    'last_name' => 
+    array (
+      'label' => 'last_name',
+    ),
+>>>>>>> e577f0ca (feat: getDataDefault for fix livewire form data)
   ),
   'actions' => 
   array (
