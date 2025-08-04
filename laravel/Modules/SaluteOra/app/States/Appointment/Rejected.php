@@ -26,22 +26,51 @@ class Rejected extends AppointmentState
 
     public function label(): string
     {
-        return 'Respinto';
+        return static::transClass(__CLASS__,'states.'.static::$name.'.label');
+        //return 'Respinto';
     }
 
     public function color(): string
     {
-        return 'danger';
+        return static::transClass(__CLASS__,'states.'.static::$name.'.color');
+        //return 'danger';
     }
 
     public function icon(): string
     {
-        return 'heroicon-o-x-mark';
+        return static::transClass(__CLASS__,'states.'.static::$name.'.icon');
+        //return 'heroicon-o-x-mark';
+    }
+
+    public function canBeModified(): bool
+    {
+        return false;
+    }
+
+    public function isActive(): bool
+    {
+        return false;
     }
 
     public function isRejected(): bool
     {
         return true;
     }
+<<<<<<< HEAD
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
+=======
+
+    public function modalHeading(): string
+    {
+        return static::transClass(__CLASS__,'states.'.static::$name.'.modal_heading');
+        //return 'Rifiuta appuntamento';
+    }
+
+    public function modalDescription(): string
+    {
+        $appointment = $this->getModel();
+        return static::transClass(__CLASS__,'states.'.static::$name.'.modal_description');
+        //return 'Sei sicuro di voler rifiutare l\'appuntamento con '.$appointment->patient->full_name.' ?';
+    }
+>>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
 }

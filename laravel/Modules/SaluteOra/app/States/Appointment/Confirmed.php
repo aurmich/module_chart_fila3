@@ -26,17 +26,21 @@ class Confirmed extends AppointmentState
 
     public function label(): string
     {
-        return 'Confermato';
+        return static::transClass(__CLASS__,'states.'.static::$name.'.label');
+        //return static::transClass(self::class,'label');
+        //return 'Confermato';
     }
 
     public function color(): string
     {
-        return 'success';
+        return static::transClass(__CLASS__,'states.'.static::$name.'.color');
+        //return 'success';
     }
 
     public function icon(): string
     {
-        return 'heroicon-o-check-circle';
+        return static::transClass(__CLASS__,'states.'.static::$name.'.icon');
+        //return 'heroicon-o-check-circle';
     }
 
     public function canBeModified(): bool
@@ -48,5 +52,20 @@ class Confirmed extends AppointmentState
     {
         return true;
     }
+<<<<<<< HEAD
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
+=======
+
+    public function modalHeading(): string
+    {
+        //return 'Accetta appuntamento';
+        return static::transClass(__CLASS__,'states.'.static::$name.'.modal_heading');
+    }
+    public function modalDescription(): string
+    {
+        $appointment = $this->getModel();
+        //return 'Sei sicuro di voler l\' appuntamento con '.$appointment->patient->full_name.' ?';
+        return static::transClass(__CLASS__,'states.'.static::$name.'.modal_description');
+    }
+>>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
 }

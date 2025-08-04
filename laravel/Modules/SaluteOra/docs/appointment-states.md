@@ -10,11 +10,15 @@ Il sistema di gestione degli stati degli appuntamenti utilizza il pattern State 
 - **Stato di default** per nuovi appuntamenti
 - Il paziente ha prenotato ma deve ancora confermare
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Transizioni possibili**: Confirmed, Rejected (NON Cancelled - da Pending non si può cancellare direttamente)
 - **Colore**: warning
 - **Icona**: heroicon-o-clock
 =======
 - **Transizioni possibili**: Confirmed, Cancelled
+=======
+- **Transizioni possibili**: Confirmed, Cancelled, Rejected
+>>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
 - **Colore**: gray
 - **Icona**: heroicon-o-question-mark-circle
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
@@ -88,6 +92,7 @@ Il sistema di gestione degli stati degli appuntamenti utilizza il pattern State 
 ```
 Pending → Confirmed → Scheduled → InProgress → Completed
 <<<<<<< HEAD
+<<<<<<< HEAD
    ↓         ↓          ↓
    ↓      Cancelled   NoShow
 Rejected ↔ Confirmed   ↑
@@ -123,6 +128,14 @@ La cancellazione diretta da `Pending` non è permessa - un appuntamento in attes
 ## Correzioni Implementate
 >>>>>>> 1dc4ede7 (📝 (README.md): update documentation for SaluteOra module to improve clarity and organization of information, including a comprehensive table of contents and sections for best practices, quick start guides, and recent updates)
 =======
+=======
+   ↓  ↖      ↓          ↓
+   ↓  Rejected  Cancelled   NoShow
+   ↓            ↓          
+   ↓          Rescheduled ← Scheduled
+   ↓                        ↓
+   └──────────────────→ Cancelled
+>>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
 ```
 
 ## Implementazione

@@ -1,12 +1,16 @@
 <?php
 
 return array (
+<<<<<<< HEAD
   'title' => 'Appuntamenti Dottore',
   'description' => 'Gestione appuntamenti per i dottori',
+=======
+>>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
   'actions' => 
   array (
     'delete' => 
     array (
+<<<<<<< HEAD
       'label' => 'Elimina',
       'tooltip' => 'Elimina questo appuntamento',
       'confirmation' => 'Sei sicuro di voler eliminare questo appuntamento?',
@@ -309,6 +313,33 @@ return array (
     array (
       'label' => 'Paziente',
       'placeholder' => 'Filtra per paziente',
+=======
+      'label' => 'delete',
+    ),
+    'accept' => 
+    array (
+      'label' => 'accept',
+    ),
+    'confirmed' => 
+    array (
+      'label' => 'confirmed',
+    ),
+    'confirm' => 
+    array (
+      'label' => 'confirm',
+    ),
+    'confirmAction' => 
+    array (
+      'label' => 'confirmAction',
+    ),
+    'Confirmed' => 
+    array (
+      'label' => 'Confirmed',
+    ),
+    'rejectAction' => 
+    array (
+      'label' => 'rejectAction',
+>>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
     ),
   ),
 );

@@ -402,8 +402,35 @@ return [
         'tooltip' => 'L\'utente ha richiesto l\'integrazione',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 ]; 
 >>>>>>> aurmich/dev
 =======
 ]; 
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+
+    // Appointment States
+    'confirmed' => [
+        'label' => 'Confermato',
+        'color' => 'success',
+        'icon' => 'heroicon-o-check-circle',
+        'modal_heading' => 'Conferma Appuntamento',
+        'modal_description' => 'Sei sicuro di voler confermare questo appuntamento?',
+    ],
+    'rejected' => [
+        'label' => 'Respinto',
+        'color' => 'danger', 
+        'icon' => 'heroicon-o-x-mark',
+        'modal_heading' => 'Rifiuta Appuntamento',
+        'modal_description' => 'Sei sicuro di voler rifiutare questo appuntamento?',
+    ],
+    'pending' => [
+        'label' => 'In attesa',
+        'color' => 'warning',
+        'icon' => 'heroicon-o-clock',
+        'modal_heading' => 'Appuntamento in Attesa',
+        'modal_description' => 'Questo appuntamento è in attesa di conferma.',
+    ],
+]; 
+>>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)

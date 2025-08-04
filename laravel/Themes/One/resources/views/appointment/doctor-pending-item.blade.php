@@ -12,9 +12,15 @@
 =======
                     <span class="text-lg">{{ $appointment->patient->full_name }}</span>
                     <div>
+<<<<<<< HEAD
                         <p class="text-xs">{{ $appointment->starts_at->format('d/m/Y') }}</p>
 >>>>>>> 2df8b507 (bozza widget doctor appointments)
+=======
+                        <p class="text-xs">{{ $appointment->starts_at?->format('d/m/Y') }}</p>
+>>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
                         <p class="text-xs">{{ $appointment->time_range }}</p>
+                        
+                       
                     </div>
                 </div>
             </div>
@@ -25,6 +31,7 @@
             <!-- Actions -->
             <div class="cursor-pointer flex flex-row items-center">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 
                 {{ ($this->infoAction)(['appointment' => $appointment->id]) }}
                 {{ ($this->confirmAction)(['appointment' => $appointment->id]) }}
@@ -32,6 +39,10 @@
 =======
 
 >>>>>>> 2df8b507 (bozza widget doctor appointments)
+=======
+                {{ ($this->confirmAction)(['appointment' => $appointment->id]) }}
+                {{ ($this->rejectAction)(['appointment' => $appointment->id]) }}
+>>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
                 <!-- Eye icon + Modal -->
                 <div x-data="{ showInfo: false }" class="relative">
                     <div @click="showInfo = true" class="mr-5">
@@ -65,7 +76,7 @@
                             <h2 class="text-lg font-semibold text-gray-800 mb-4">Dettagli Appuntamento</h2>
                             <div class="text-sm text-gray-700 space-y-2">
                                 <p><strong>Nome:</strong> {{ $appointment->patient->full_name }}</p>
-                                <p><strong>Data:</strong> {{ $appointment->starts_at->format('d F Y') }}</p>
+                                <p><strong>Data:</strong> {{ $appointment->starts_at?->format('d F Y') }}</p>
                                 <p><strong>Orario:</strong> {{ $appointment->time_range }}</p>
                                 @if($appointment->patient->phone)
                                     <p><strong>Cellulare:</strong> {{ $appointment->patient->phone }}</p>
@@ -91,10 +102,14 @@
                     </div>
                 </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
                 
 =======
 
 >>>>>>> 2df8b507 (bozza widget doctor appointments)
+=======
+                
+>>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
                 <!-- Confirm icon + Tooltip -->
                 <div x-data="{ showInfo: false }" class="relative inline-block">
                     <div @click="showInfo = true" class="mr-5 p-2 rounded-full bg-[#B4E1BE] text-[#3E783E]">

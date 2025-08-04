@@ -12,7 +12,7 @@ $user=auth()->user();
 <?php
 use Livewire\Volt\Component;
 use Modules\SaluteOra\Models\Appointment;
-//$user=auth()->user();
+$user=auth()->user();
 $appointments = Appointment::all();
 >>>>>>> 2df8b507 (bozza widget doctor appointments)
 
@@ -77,6 +77,7 @@ new class extends Component {
             <h1 class="text-center">Appuntamenti in Entrata</h1>
         </div>
     </div>
+<<<<<<< HEAD
 
     <!-- Appointment card -->
     <div class="w-full flex flex-col justify-center items-center py-9 px-4">
@@ -430,10 +431,19 @@ new class extends Component {
     </div>
 =======
     @each('pub_theme::appointment.doctor-pending-item', $appointments, 'appointment','pub_theme::appointment.doctor-pending-empty')
+=======
+>>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
     {{--  
-    @livewire(\Modules\SaluteOra\Filament\Widgets\DoctorAppointmentsWidget::class, ['doctor_id' => $user->id,'state' => 'pending'])
+    @each('pub_theme::appointment.doctor-pending-item', $appointments, 'appointment','pub_theme::appointment.doctor-pending-empty')
     --}}
+<<<<<<< HEAD
 >>>>>>> 2df8b507 (bozza widget doctor appointments)
+=======
+      <div>
+    @livewire(\Modules\SaluteOra\Filament\Widgets\DoctorAppointmentsWidget::class, ['doctor_id' => $user->id,'state' => 'pending'])
+    </div>
+    
+>>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
 </div>
 >>>>>>> 46477621 (- update contenuto pagine appuntamento)
 =======

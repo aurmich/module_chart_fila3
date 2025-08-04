@@ -386,6 +386,7 @@ return [
         'action' => 'Crea il primo appuntamento',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'states' => [
         'pending' => [
             'label' => 'In attesa',
@@ -545,6 +546,24 @@ return [
             'tooltip' => 'Andamento degli appuntamenti per periodo',
         ],
     ]
+=======
+    'states' => [
+        'confirmed' => [
+            'label' => 'Conferma',
+            'color' => 'success',
+            'icon' => 'heroicon-o-check-circle',
+            'modal_heading' => 'Accetta appuntamento',
+            'modal_description' => 'Sei sicuro di voler accettare questo appuntamento?',
+        ],
+        'rejected' => [
+            'label' => 'Rifiuta',
+            'color' => 'danger',
+            'icon' => 'heroicon-o-x-mark',
+            'modal_heading' => 'Rifiuta appuntamento',
+            'modal_description' => 'Sei sicuro di voler rifiutare questo appuntamento?',
+        ],
+    ],
+>>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
 ];
 =======
 =======

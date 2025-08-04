@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\States\Appointment;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Spatie\ModelStates\State;
@@ -15,6 +16,9 @@ use Modules\Xot\Contracts\StateContract;
 use Modules\SaluteOra\Models\Appointment;
 use Modules\Xot\Filament\Traits\TransTrait;
 =======
+=======
+use Modules\Xot\Filament\Traits\TransTrait;
+>>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
 use Spatie\ModelStates\State;
 use Spatie\ModelStates\StateConfig;
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
@@ -35,7 +39,11 @@ abstract class AppointmentState extends XotBaseState
  */
 abstract class AppointmentState extends State
 {
+<<<<<<< HEAD
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
+=======
+    use TransTrait;
+>>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
     /**
      * Configure the allowed state transitions.
      */
@@ -91,7 +99,8 @@ abstract class AppointmentState extends State
             ->default(Pending::class)
             // Pending transitions
             ->allowTransition(Pending::class, Confirmed::class, Transitions\PendingToConfirmed::class)
-            ->allowTransition(Pending::class, Cancelled::class, Transitions\PendingToCancelled::class)
+            //->allowTransition(Pending::class, Cancelled::class, Transitions\PendingToCancelled::class)
+            ->allowTransition(Pending::class, Rejected::class, Transitions\PendingToRejected::class)
 
             // Confirmed transitions
             ->allowTransition(Confirmed::class, Scheduled::class, Transitions\ConfirmedToScheduled::class)
