@@ -23,10 +23,14 @@ Modulo principale per la gestione del sistema sanitario, inclusa la gestione di 
 ### Gestione Studi Medici
 - Creazione e gestione degli studi
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Gestione indirizzi multipli con componente AddressesField riutilizzabile
 =======
 - Gestione indirizzi multipli con logica intelligente
 >>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+=======
+- Gestione indirizzi multipli con componente AddressesField riutilizzabile
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
 - Specializzazioni mediche
 - Orari di apertura configurabili
 
@@ -43,6 +47,9 @@ Modulo principale per la gestione del sistema sanitario, inclusa la gestione di 
 - Calendario delle visite
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
 ## Componenti Riutilizzabili
 
 ### AddressesField - Gestione DRY degli Indirizzi
@@ -66,6 +73,7 @@ Il modulo utilizza il componente riutilizzabile `AddressesField` del modulo Geo 
 
 **Documentazione**: [AddressesField Documentation](../Geo/docs/components/addresses-field.md)
 
+<<<<<<< HEAD
 ## Implementazioni UX Avanzate
 
 ### Campi Condizionali Intelligenti (OpeningHoursField)
@@ -74,6 +82,11 @@ Il modulo utilizza il componente riutilizzabile `AddressesField` del modulo Geo 
 
 ### Campi Condizionali Intelligenti (StudioResource)
 >>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+=======
+## Implementazioni UX Avanzate
+
+### Campi Condizionali Intelligenti (OpeningHoursField)
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
 
 Il modulo implementa un pattern UX avanzato per i repeater con campi condizionali e logica di esclusività.
 

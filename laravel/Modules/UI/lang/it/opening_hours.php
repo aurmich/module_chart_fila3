@@ -6,6 +6,7 @@ return [
     'instructions' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'title' => 'Configurazione Orari',
         'description' => 'Imposta gli orari di apertura per ogni giorno della settimana. Lascia vuoto per giorni di chiusura.',
 =======
@@ -16,6 +17,10 @@ return [
         'title' => 'Configurazione Orari',
         'description' => 'Imposta gli orari di apertura per ogni giorno della settimana. Lascia vuoto per giorni di chiusura.',
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+        'title' => 'Orari di Apertura',
+        'description' => 'Configura gli orari di apertura per ogni giorno della settimana. Lascia vuoto per indicare giorno di chiusura.',
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
     ],
     
     'headers' => [
@@ -29,6 +34,7 @@ return [
         'closed' => 'Chiuso',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'format' => 'Formato: HH:MM',
 =======
         'format' => 'Formato: HH:MM-HH:MM',
@@ -36,10 +42,14 @@ return [
 =======
         'format' => 'Formato: HH:MM',
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+        'format' => 'Formato: HH:MM-HH:MM',
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
     ],
     
     'days' => [
         'monday' => 'Lunedì',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         'tuesday' => 'Martedì',
@@ -49,6 +59,9 @@ return [
 =======
         'tuesday' => 'Martedì',
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+        'tuesday' => 'Martedì', 
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
         'wednesday' => 'Mercoledì',
         'thursday' => 'Giovedì',
         'friday' => 'Venerdì',
@@ -65,6 +78,7 @@ return [
     'labels' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'morning' => 'Mattina',
         'afternoon' => 'Pomeriggio',
         'from' => 'Dalle',
@@ -105,20 +119,37 @@ return [
     
     'notes' => [
 <<<<<<< HEAD
+=======
+        'from' => 'Dalle',
+        'to' => 'Alle',
+    ],
+    
+    'placeholders' => [
+        'morning' => '08:00-12:30',
+        'afternoon' => '15:00-19:00',
+        'evening' => '20:00-23:00',
+    ],
+    
+    'notes' => [
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
         'format_hint' => 'Utilizzare il formato HH:MM-HH:MM (es. 08:30-12:00)',
         'empty_hint' => 'Lasciare vuoto per indicare che il periodo è chiuso',
         'validation_error' => 'L\'orario di apertura deve essere precedente all\'orario di chiusura',
         'overlap_error' => 'Gli orari non possono sovrapporsi nello stesso giorno',
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
         'format_hint' => 'Utilizzare il formato 24 ore (es. 14:30 per le 2:30 del pomeriggio)',
         'empty_hint' => 'Lasciare vuoto significa "chiuso"',
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
     ],
     
     'validation' => [
         'invalid_format' => 'Formato orario non valido. Utilizzare HH:MM-HH:MM',
         'invalid_time_range' => 'L\'orario di apertura deve essere precedente all\'orario di chiusura',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         'overlapping_hours' => 'Gli orari non possono sovrapporsi nello stesso giorno',
@@ -128,6 +159,9 @@ return [
 =======
         'overlapping_hours' => 'Gli orari non possono sovrapporsi nello stesso giorno',
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+        'overlapping_hours' => 'Gli orari di mattina e pomeriggio si sovrappongono',
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
         'from_before_to' => 'L\'orario "Dalle" deve essere precedente all\'orario "Alle"',
         'to_after_from' => 'L\'orario "Alle" deve essere successivo all\'orario "Dalle"',
         'time_sequence' => 'L\'orario di inizio deve essere precedente a quello di fine',

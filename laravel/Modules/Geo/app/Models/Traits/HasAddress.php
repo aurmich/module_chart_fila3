@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Geo\Models\Traits;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 use Modules\Geo\Models\Address;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
@@ -13,6 +14,11 @@ use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Modules\Geo\Models\Address;
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+use Modules\Geo\Models\Address;
+use Illuminate\Database\Eloquent\Relations\MorphOne;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
 
 /**
  * Trait HasAddress
@@ -37,6 +43,9 @@ trait HasAddress
     
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
      * Ottiene indirizzo associato al modello.
      *
      * @return \Illuminate\Database\Eloquent\Relations\MorphOne
@@ -47,8 +56,11 @@ trait HasAddress
     }
     
     /**
+<<<<<<< HEAD
 =======
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
      * Ottiene l'indirizzo principale del modello.
      *
      * @return \Modules\Geo\Models\Address|null
@@ -76,6 +88,7 @@ trait HasAddress
     {
         $address = $this->primaryAddress();
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $address ? $address->getFullAddress() : null;
     }
 
@@ -99,6 +112,9 @@ trait HasAddress
 =======
         return $address ? $address->getFormattedAddress() : null;
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+        return $address ? $address->getFullAddress() : null;
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
     }
     
     /**

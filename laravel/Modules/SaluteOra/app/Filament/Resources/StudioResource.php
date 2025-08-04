@@ -42,7 +42,11 @@ use Modules\Geo\Filament\Resources\AddressResource;
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 =======
 use Filament\Forms\Components\Component;
+<<<<<<< HEAD
 >>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+=======
+use Modules\Geo\Filament\Forms\Components\AddressField;
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
 
 class StudioResource extends XotBaseResource
 {
@@ -104,6 +108,7 @@ class StudioResource extends XotBaseResource
             'description' => Forms\Components\Textarea::make('description')
                 ->maxLength(65535)
                 ->columnSpanFull(),
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             
@@ -390,4 +395,16 @@ class StudioResource extends XotBaseResource
         return $baseSchema;
     }
 >>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+=======
+            
+            'address' => AddressField::make('address')
+                ->relationship('address'),
+                
+            
+            
+        ];
+    }
+
+   
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
 }

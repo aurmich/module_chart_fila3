@@ -177,6 +177,7 @@ class Address extends BaseModel
         'type' => AddressTypeEnum::class,
     ];
     
+<<<<<<< HEAD
     /**
      * Create a new factory instance for the model.
      *
@@ -187,6 +188,8 @@ class Address extends BaseModel
         return AddressFactory::new();
     }
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
     
     /**
      * Get the parent model.
@@ -338,7 +341,7 @@ class Address extends BaseModel
      */
     public function provincia(): BelongsTo
     {
-        return $this->belongsTo(Provincia::class, 'administrative_area_level_3', 'name');
+        return $this->belongsTo(Provincia::class, 'administrative_area_level_2', 'name');
     }
     
     /**
@@ -348,7 +351,48 @@ class Address extends BaseModel
      */
     public function regione(): BelongsTo
     {
-        return $this->belongsTo(Regione::class, 'administrative_area_level_2', 'name');
+        return $this->belongsTo(Regione::class, 'administrative_area_level_1', 'name');
+    }
+
+    public function getRegione():?array{
+        $res= Comune::select('regione')
+        ->distinct()
+        ->orderBy('regione->nome')
+        ->where('regione->codice', $this->administrative_area_level_1)
+        ->get()
+        ->map(function($item){
+            return ['codice'=>$item->regione['codice'],'nome'=>$item->regione['nome']];
+        })
+        ;
+        
+        
+        return $res->first();
+    }
+
+    public function getProvincia():?array{
+        $res= Comune::select('provincia')
+        ->distinct()
+        ->orderBy('provincia->nome')
+        ->where('provincia->codice', $this->administrative_area_level_2)
+        ->get()
+        ->map(function($item){
+            return [
+                'codice'=>$item->provincia['codice'],
+                'nome'=>$item->provincia['nome']
+            ];
+        })
+        ;
+        return $res->first();
+    }
+
+
+    public function getLocality():?array{
+        $res= Comune::where('codice', $this->locality)
+        ->distinct()
+        ->first()
+        ->toArray()
+        ;
+        return $res;
     }
     
     /**
@@ -358,6 +402,7 @@ class Address extends BaseModel
      */
     public function getFullAddressAttribute(): string
     {
+        
         $parts = array_filter([
             $this->route . ($this->street_number ? ' ' . $this->street_number : ''),
             $this->locality,

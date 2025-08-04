@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array (
   'navigation' => 
   array (
@@ -16,12 +17,22 @@ return array (
     'label' => 'Disponibilità Medici',
     'group' => 'Gestione',
 >>>>>>> 2bcfd382 (fix Address)
+=======
+return array (
+  'navigation' => 
+  array (
+    'label' => 'Disponibilità Medici',
+    'group' => 'Agenda',
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
     'icon' => 'heroicon-o-calendar',
     'sort' => 6,
   ),
   'model' => 
   array (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
     'label' => 'Disponibilità Medico',
     'plural' => 'Disponibilità Medici',
   ),
@@ -152,6 +163,7 @@ return array (
     'no_pending_appointments_description' => 'Non ci sono appuntamenti in attesa di approvazione.',
   ),
   'available' => 'Disponibile',
+<<<<<<< HEAD
 =======
     'label' => 'doctor availability.navigation',
     'group' => 'doctor availability.navigation',
@@ -286,3 +298,6 @@ return [
     'available' => 'Disponibile',
 ];
 >>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
+=======
+);
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)

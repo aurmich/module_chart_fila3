@@ -268,6 +268,9 @@ Questo nuovo flusso permette di separare il completamento dei dati dall'approvaz
 - Note cliniche
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
 ### 5. Gestione Disponibilità Dottori
 - **Multi-Tenancy**: Disponibilità specifica per studio-dottore
 - **OpeningHoursField**: Componente UI per gestione orari settimanali
@@ -305,8 +308,11 @@ Questo nuovo flusso permette di separare il completamento dei dati dall'approvaz
 - Comandi di debug per identificazione rapida
 - Documentazione dettagliata per ogni risoluzione
 
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
 ## Integrazioni
 
 ### Con Modulo Dental

@@ -242,13 +242,19 @@ class Studio extends BaseTenant
     ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
      /** @var list<string> */
      protected $with = [
         'address',
      ];
 
+<<<<<<< HEAD
 =======
 >>>>>>> 2099645a (.)
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
     /** @return array<string, string> */
     protected function casts(): array
     {

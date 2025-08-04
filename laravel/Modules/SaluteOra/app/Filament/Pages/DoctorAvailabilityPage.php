@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Filament\Pages;
 
+<<<<<<< HEAD
 use Filament\Forms\Form;
 use Filament\Actions\Action;
 use Webmozart\Assert\Assert;
@@ -18,6 +19,18 @@ use Modules\SaluteOra\Models\StudioUser;
 use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Filament\Pages\XotBasePage;
 use Modules\UI\Filament\Forms\Components\OpeningHoursField;
+=======
+use Filament\Actions\Action;
+use Filament\Facades\Filament;
+use Filament\Forms\Form;
+use Filament\Notifications\Notification;
+use Illuminate\Contracts\Support\Htmlable;
+use Modules\SaluteOra\Models\Studio;
+use Modules\SaluteOra\Models\StudioUser;
+use Modules\SaluteOra\Models\User;
+use Modules\UI\Filament\Forms\Components\OpeningHoursField;
+use Modules\Xot\Filament\Pages\XotBasePage;
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
 
 /**
  * DoctorAvailabilityPage
@@ -33,7 +46,10 @@ use Modules\UI\Filament\Forms\Components\OpeningHoursField;
  * - Supporto per dottori con più studi
  * 
  * @property array $data
+<<<<<<< HEAD
  * @property ComponentContainer $form
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
  */
 class DoctorAvailabilityPage extends XotBasePage
 {
@@ -144,9 +160,15 @@ class DoctorAvailabilityPage extends XotBasePage
     {
         return $form
             ->schema([
+<<<<<<< HEAD
                 'schedule'=>OpeningHoursField::make('schedule')
                     //->label(__('saluteora::doctor_availability.sections.weekly_availability'))
                     //->helperText(__('saluteora::doctor_availability.fields.is_available.help'))
+=======
+                OpeningHoursField::make('schedule')
+                    ->label(__('saluteora::doctor_availability.sections.weekly_availability'))
+                    ->helperText(__('saluteora::doctor_availability.fields.is_available.help'))
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
                     ->columnSpanFull(),
             ])
             ->statePath('data');
@@ -169,7 +191,11 @@ class DoctorAvailabilityPage extends XotBasePage
     /**
      * Ottiene l'utente dottore corrente.
      */
+<<<<<<< HEAD
     protected function getCurrentDoctor(): Doctor
+=======
+    protected function getCurrentDoctor(): User
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
     {
         /** @var User $user */
         $user = auth()->user();
@@ -177,7 +203,11 @@ class DoctorAvailabilityPage extends XotBasePage
         //if (!$user instanceof User || $user->type !== 'doctor') {
         //    abort(403, __('saluteora::doctor_availability.notifications.not_doctor.body'));
         //}
+<<<<<<< HEAD
         Assert::isInstanceOf($user, Doctor::class);
+=======
+        
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
         return $user;
     }
 
@@ -231,7 +261,11 @@ class DoctorAvailabilityPage extends XotBasePage
         $pivot = $this->getDoctorStudioPivot();
         
         $this->data = [
+<<<<<<< HEAD
             'schedule' => $pivot->schedule ?? $this->getDefaultSchedule(),
+=======
+            'schedule' => $pivot?->schedule ?? $this->getDefaultSchedule(),
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
         ];
     }
 

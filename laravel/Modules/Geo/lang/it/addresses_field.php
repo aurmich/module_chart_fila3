@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -21,3 +22,31 @@ return [
         ],
     ],
 ];
+=======
+return array (
+  'fields' => 
+  array (
+    'addresses' => 
+    array (
+      'label' => 'addresses',
+      'placeholder' => 'addresses',
+      'helper_text' => 'addresses',
+      'description' => 'addresses',
+    ),
+    'name' => 
+    array (
+      'label' => 'name',
+      'placeholder' => 'name',
+      'helper_text' => 'name',
+      'description' => 'name',
+    ),
+    'is_primary' => 
+    array (
+      'label' => 'is_primary',
+      'placeholder' => 'is_primary',
+      'helper_text' => 'is_primary',
+      'description' => 'is_primary',
+    ),
+  ),
+);
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)

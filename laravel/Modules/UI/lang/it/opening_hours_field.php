@@ -8,6 +8,7 @@ return array (
       'morning' => 
       array (
 <<<<<<< HEAD
+<<<<<<< HEAD
         'label' => 'Mattina Lunedì',
         'placeholder' => 'Seleziona orario mattutino',
         'helper_text' => 'Orario di apertura del lunedì mattina',
@@ -18,6 +19,8 @@ return array (
         'placeholder' => 'Seleziona orario pomeridiano',
         'helper_text' => 'Orario di apertura del lunedì pomeriggio',
 =======
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
         'label' => 'monday.morning',
         'placeholder' => 'monday.morning',
         'helper_text' => 'monday.morning',
@@ -29,6 +32,7 @@ return array (
         'placeholder' => 'monday.afternoon',
         'helper_text' => 'monday.afternoon',
         'description' => 'monday.afternoon',
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
       ),
       'morning_from' => 
@@ -108,12 +112,15 @@ return array (
         'placeholder' => 'monday.afternoon_label',
         'helper_text' => 'monday.afternoon_label',
         'description' => 'monday.afternoon_label',
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
       ),
     ),
     'tuesday' => 
     array (
       'morning' => 
       array (
+<<<<<<< HEAD
 <<<<<<< HEAD
         'label' => 'Mattina Martedì',
         'placeholder' => 'Seleziona orario mattutino',
@@ -215,12 +222,26 @@ return array (
         'placeholder' => 'tuesday.afternoon_label',
         'helper_text' => 'tuesday.afternoon_label',
         'description' => 'tuesday.afternoon_label',
+=======
+        'label' => 'tuesday.morning',
+        'placeholder' => 'tuesday.morning',
+        'helper_text' => 'tuesday.morning',
+        'description' => 'tuesday.morning',
+      ),
+      'afternoon' => 
+      array (
+        'label' => 'tuesday.afternoon',
+        'placeholder' => 'tuesday.afternoon',
+        'helper_text' => 'tuesday.afternoon',
+        'description' => 'tuesday.afternoon',
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
       ),
     ),
     'wednesday' => 
     array (
       'morning' => 
       array (
+<<<<<<< HEAD
 <<<<<<< HEAD
         'label' => 'Mattina Mercoledì',
         'placeholder' => 'Seleziona orario mattutino',
@@ -322,12 +343,26 @@ return array (
         'placeholder' => 'wednesday.afternoon_label',
         'helper_text' => 'wednesday.afternoon_label',
         'description' => 'wednesday.afternoon_label',
+=======
+        'label' => 'wednesday.morning',
+        'placeholder' => 'wednesday.morning',
+        'helper_text' => 'wednesday.morning',
+        'description' => 'wednesday.morning',
+      ),
+      'afternoon' => 
+      array (
+        'label' => 'wednesday.afternoon',
+        'placeholder' => 'wednesday.afternoon',
+        'helper_text' => 'wednesday.afternoon',
+        'description' => 'wednesday.afternoon',
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
       ),
     ),
     'thursday' => 
     array (
       'morning' => 
       array (
+<<<<<<< HEAD
 <<<<<<< HEAD
         'label' => 'Mattina Giovedì',
         'placeholder' => 'Seleziona orario mattutino',
@@ -429,12 +464,26 @@ return array (
         'placeholder' => 'thursday.afternoon_label',
         'helper_text' => 'thursday.afternoon_label',
         'description' => 'thursday.afternoon_label',
+=======
+        'label' => 'thursday.morning',
+        'placeholder' => 'thursday.morning',
+        'helper_text' => 'thursday.morning',
+        'description' => 'thursday.morning',
+      ),
+      'afternoon' => 
+      array (
+        'label' => 'thursday.afternoon',
+        'placeholder' => 'thursday.afternoon',
+        'helper_text' => 'thursday.afternoon',
+        'description' => 'thursday.afternoon',
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
       ),
     ),
     'friday' => 
     array (
       'morning' => 
       array (
+<<<<<<< HEAD
 <<<<<<< HEAD
         'label' => 'Mattina Venerdì',
         'placeholder' => 'Seleziona orario mattutino',
@@ -540,12 +589,26 @@ return array (
         'placeholder' => 'friday.afternoon_label',
         'helper_text' => 'friday.afternoon_label',
         'description' => 'friday.afternoon_label',
+=======
+        'label' => 'friday.morning',
+        'placeholder' => 'friday.morning',
+        'helper_text' => 'friday.morning',
+        'description' => 'friday.morning',
+      ),
+      'afternoon' => 
+      array (
+        'label' => 'friday.afternoon',
+        'placeholder' => 'friday.afternoon',
+        'helper_text' => 'friday.afternoon',
+        'description' => 'friday.afternoon',
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
       ),
     ),
     'saturday' => 
     array (
       'morning' => 
       array (
+<<<<<<< HEAD
 <<<<<<< HEAD
         'label' => 'Mattina Sabato',
         'placeholder' => 'Seleziona orario mattutino',
@@ -787,5 +850,39 @@ return array (
       'description' => 'schedule2',
     ),
 >>>>>>> aurmich/dev
+=======
+        'label' => 'saturday.morning',
+        'placeholder' => 'saturday.morning',
+        'helper_text' => 'saturday.morning',
+        'description' => 'saturday.morning',
+      ),
+      'afternoon' => 
+      array (
+        'label' => 'saturday.afternoon',
+        'placeholder' => 'saturday.afternoon',
+        'helper_text' => 'saturday.afternoon',
+        'description' => 'saturday.afternoon',
+      ),
+      'afternoon_to' => 
+      array (
+        'description' => 'saturday.afternoon_to',
+        'helper_text' => 'saturday.afternoon_to',
+        'placeholder' => 'saturday.afternoon_to',
+        'label' => 'saturday.afternoon_to',
+      ),
+      'afternoon_from' => 
+      array (
+        'description' => 'saturday.afternoon_from',
+        'helper_text' => 'saturday.afternoon_from',
+        'placeholder' => 'saturday.afternoon_from',
+        'label' => 'saturday.afternoon_from',
+      ),
+      'morning_to' => 
+      array (
+        'description' => 'saturday.morning_to',
+        'helper_text' => 'saturday.morning_to',
+      ),
+    ),
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
   ),
 );

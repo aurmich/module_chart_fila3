@@ -17,6 +17,7 @@ class AddressField extends Forms\Components\Section
     
     //protected string $view = 'filament-forms::components.group';
 
+<<<<<<< HEAD
     protected bool $disableLiveUpdates = false;
 
     protected function setUp(): void
@@ -33,11 +34,20 @@ class AddressField extends Forms\Components\Section
     {
         $this->disableLiveUpdates = $disable;
         return $this;
+=======
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $this->schema(AddressResource::getFormSchema());
+        $this->schema($this->getAddressFormSchema());
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
     }
 
     protected function getAddressFormSchema(): array
     {
         $baseSchema = AddressResource::getFormSchema();
+<<<<<<< HEAD
         
         // Rimuovi campi non necessari per relazioni semplici
         unset($baseSchema['name']);
@@ -88,6 +98,13 @@ class AddressField extends Forms\Components\Section
     }
 
     
+=======
+        unset($baseSchema['name']);
+        unset($baseSchema['is_primary']);
+        
+        return $baseSchema;
+    }
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
     /*
     public function saveRelationships(): void
     {

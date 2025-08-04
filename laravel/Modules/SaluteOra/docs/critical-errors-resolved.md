@@ -345,6 +345,7 @@ Il componente è immediatamente utilizzabile in altri Resources:
 
 ---
 
+<<<<<<< HEAD
 ## 5. Errore Critico: BindingResolutionException team_user_model
 
 ### Data Risoluzione
@@ -450,6 +451,8 @@ graph TD
 
 ---
 
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
 ## Checklist Prevenzione Errori Futuri
 
 ### Per Componenti Filament Custom
@@ -500,7 +503,10 @@ graph TD
 
 ### 1. Identificazione Rapida
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
 # Cerca componenti senza $view
 grep -r "extends.*Component" Modules/ --include="*.php" | xargs grep -L "\$view"
 
@@ -510,7 +516,10 @@ grep -r "implements HasForms" Modules/ --include="*.php" | xargs grep "XotBase"
 
 ### 2. Verifica Strutturale
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
 # Verifica esistenza viste
 find Modules/ -name "*.blade.php" | grep -E "(components|forms)"
 
@@ -520,7 +529,10 @@ find Modules/ -name "*.php" -path "*/lang/*"
 
 ### 3. Test Funzionale
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
 # Test rendering componenti
 php artisan filament:check-components
 
@@ -551,3 +563,7 @@ php artisan route:list | grep filament
 
 *Ultimo aggiornamento: Dicembre 2024*
 
+<<<<<<< HEAD
+=======
+**Questa documentazione deve essere aggiornata ogni volta che si identifica e risolve un errore critico.** 
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)

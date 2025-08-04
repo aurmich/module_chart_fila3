@@ -10,16 +10,21 @@ use Webmozart\Assert\Assert;
 use Carbon\Carbon;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Forms\Components\Grid;
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+use Filament\Forms\Components\Grid;
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
 use Filament\Forms\Components\Group;
 use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\TimePicker;
 use Filament\Forms\Components\Field;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Filament\Forms\Components\Section;
@@ -30,6 +35,9 @@ use Filament\Forms\Components\Section;
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 
 >>>>>>> aurmich/dev
+=======
+
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
 // use Squire\Models\Country;
 
 class OpeningHoursField extends Field
@@ -53,6 +61,7 @@ class OpeningHoursField extends Field
         ])->mapWithKeys(function ($day) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             /** @phpstan-ignore method.nonObject */
             $dayKey = strtolower(Carbon::create()->startOfWeek()->addDays($day - 1)->format('l'));
             /** @phpstan-ignore method.nonObject */
@@ -64,10 +73,14 @@ class OpeningHoursField extends Field
             $dayKey = strtolower(Carbon::create()->startOfWeek()->addDays($day - 1)->format('l'));
             /** @phpstan-ignore-next-line */
 >>>>>>> 345f8677 (phpstan)
+=======
+            $dayKey = strtolower(Carbon::create()->startOfWeek()->addDays($day - 1)->format('l'));
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
             $dayLabel = ucfirst(Carbon::create()->startOfWeek()->addDays($day - 1)->isoFormat('dddd'));
             return [$dayKey => $dayLabel];
         });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         $schema = [];
@@ -117,6 +130,8 @@ class OpeningHoursField extends Field
         $this->schema($schema)->columns(5);
     }
 =======
+=======
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
         $this->schema([
             // Intestazioni delle colonne con stile coerente
             Grid::make(3)->schema([
@@ -137,6 +152,7 @@ class OpeningHoursField extends Field
             ])
             ->columnSpanFull()
             ->extraAttributes(['class' => 'bg-gray-100 dark:bg-gray-700 rounded-lg px-2 py-1 mb-2 border-b-2 border-gray-200 dark:border-gray-600']),
+<<<<<<< HEAD
 =======
         $schema = [];
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
@@ -191,4 +207,87 @@ class OpeningHoursField extends Field
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+
+            // Righe dei giorni con zebra striping
+            Grid::make(1)
+                ->schema(
+                    $days->map(function ($label, $dayKey) use ($days) {
+                        // Determina l'indice della riga per le righe alternate (zebra striping)
+                        $dayIndex = array_search($dayKey, array_keys($days->toArray()));
+                        $isEvenRow = $dayIndex % 2 === 0;
+                        
+                        // Classi CSS per righe alternate: migliora leggibilità e UX
+                        // Righe pari: grigio chiaro, Righe dispari: bianco
+                        $rowClass = $isEvenRow 
+                            ? 'bg-gray-50 dark:bg-gray-800/50 rounded-lg px-2 py-1'   // Riga pari
+                            : 'bg-white dark:bg-gray-900/50 rounded-lg px-2 py-1';    // Riga dispari
+                        
+                        return Grid::make(3)->schema([
+                            // Prima colonna: Nome del giorno
+                            Placeholder::make($dayKey.'_label')
+                                ->label('')
+                                ->content($label)
+                                ->extraAttributes(['class' => 'font-medium text-gray-900 dark:text-gray-100 text-center py-2'])
+                                ->columnSpan(1),
+
+                            // Seconda colonna: Mattina (Due TimePicker)
+                            Group::make([
+                                Grid::make(2)->schema([
+                                    TimePicker::make("$dayKey.morning_from")
+                                        ->label(__('ui::opening_hours.labels.from'))
+                                        ->placeholder('08:00')
+                                        ->seconds(false)
+                                        ->minutesStep(15)
+                                        ->nullable()
+                                        ->live()
+                                        //->rules(['before_or_equal:' . $dayKey . '.morning_to'])
+                                        ,
+                                    
+                                    TimePicker::make("$dayKey.morning_to")
+                                        ->label(__('ui::opening_hours.labels.to'))
+                                        ->placeholder('12:30')
+                                        ->seconds(false)
+                                        ->minutesStep(15)
+                                        ->nullable()
+                                        ->live()
+                                        ->rules(['after_or_equal:' . $dayKey . '.morning_from']),
+                                ])
+                            ])
+                            ->columnSpan(1),
+
+                            // Terza colonna: Pomeriggio (Due TimePicker)
+                            Group::make([
+                                Grid::make(2)->schema([
+                                    TimePicker::make("$dayKey.afternoon_from")
+                                        ->label(__('ui::opening_hours.labels.from'))
+                                        ->placeholder('15:00')
+                                        ->seconds(false)
+                                        ->minutesStep(15)
+                                        ->nullable()
+                                        ->live()
+                                        ->rules(['before_or_equal:' . $dayKey . '.afternoon_to']),
+                                    
+                                    TimePicker::make("$dayKey.afternoon_to")
+                                        ->label(__('ui::opening_hours.labels.to'))
+                                        ->placeholder('19:00')
+                                        ->seconds(false)
+                                        ->minutesStep(15)
+                                        ->nullable()
+                                        ->live()
+                                        ->rules(['after_or_equal:' . $dayKey . '.afternoon_from']),
+                                ])
+                            ])
+                            ->columnSpan(1),
+                        ])
+                        ->columnSpanFull()
+                        ->extraAttributes(['class' => $rowClass . ' transition-colors duration-200 hover:bg-blue-50 dark:hover:bg-blue-900/20']);
+                    })->values()->toArray()
+                )
+        ])
+        ->columns(1);
+    }
+
+   
+>>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
 }
