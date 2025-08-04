@@ -16,6 +16,9 @@ return array (
     'sort' => 96,
     'icon' => 'address.navigation',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 17e2b6ca (address tranlations)
     'group' => 'address.navigation',
   ),
 =======
