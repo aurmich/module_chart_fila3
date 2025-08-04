@@ -84,9 +84,12 @@ This document serves as the central index for the Notify module, providing guida
 
 ## Implementation Guidelines
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
 ### 1. Module Structure
 - The Notify module follows a standard structure with directories for models, services, providers, and templates to ensure clarity and maintainability.
 
@@ -123,6 +126,7 @@ This document serves as the central index for the Notify module, providing guida
 - [Email Templates](./EMAIL_TEMPLATES.md)
 - [SMS Implementation](./SMS_IMPLEMENTATION.md)
 - [Troubleshooting](./TROUBLESHOOTING.md)
+<<<<<<< HEAD
 <<<<<<< HEAD:laravel/Modules/Notify/docs/index.md
 <<<<<<< HEAD
 =======
@@ -135,3 +139,5 @@ This document serves as the central index for the Notify module, providing guida
 >>>>>>> 9df8f556 (fix .md)
 =======
 >>>>>>> 15cb84fb (fix collisions):laravel/Modules/Notify/docs/INDEX.md
+=======
+>>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)

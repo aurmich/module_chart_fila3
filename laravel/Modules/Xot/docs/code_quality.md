@@ -58,13 +58,17 @@ This document outlines the best practices for maintaining high code quality with
 - [fix_docs_case](../../../../../bashscripts/docs/docs/fix_docs_case.md) - Automatic standardization of documentation filenames
 - Run automation scripts regularly to maintain code consistency
 
+<<<<<<< HEAD
 ## Strumenti di Qualità del Codice
 
 ### Scripts di Automazione
 
+=======
+>>>>>>> 4c632a28 (✨ (bashscripts): add new scripts for managing MCP MySQL server and PHPStan analysis)
 ## Strumenti di Qualità del Codice
 
 ### Scripts di Automazione
+
 - [fix_docs_case](../../../../../bashscripts/docs/docs/fix_docs_case.md) - Standardizzazione automatica dei nomi file nella documentazione
 - Eseguire gli script di automazione regolarmente per mantenere la coerenza del codice
 

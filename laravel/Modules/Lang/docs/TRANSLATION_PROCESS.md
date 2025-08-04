@@ -77,9 +77,12 @@ Per le traduzioni di base di Laravel:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
 # Installazione
 composer require laravel-lang/common --dev
 
@@ -113,9 +116,12 @@ Traduci in italiano mantenendo la struttura JSON:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
 # Creare un branch dedicato
 git checkout -b feature/italian-translations
 
@@ -128,9 +134,12 @@ git commit -m "Aggiunte traduzioni in italiano"
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
 # Verificare le traduzioni mancanti
 php artisan translations:missing it
 
@@ -224,9 +233,12 @@ jobs:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
 # Verificare le chiavi mancanti
 php artisan translations:missing it
 
@@ -241,9 +253,12 @@ Assicurarsi che i file siano salvati in UTF-8 senza BOM:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
 # Convertire in UTF-8 senza BOM
 find lang -type f -name "*.php" -o -name "*.json" | xargs dos2unix
 ```

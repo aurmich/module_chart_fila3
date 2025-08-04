@@ -41,6 +41,7 @@ This document outlines the best practices for maintaining high code quality with
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ## Code Quality Tools
 
@@ -63,6 +64,8 @@ This document outlines the best practices for maintaining high code quality with
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
 ## Common Issues and Fixes
 - **Type Errors**: Ensure all methods and functions have explicit return types and parameter types to avoid type-related bugs.
 - **Static Analysis Failures**: Address PHPStan errors by refining code or updating the baseline for existing code.

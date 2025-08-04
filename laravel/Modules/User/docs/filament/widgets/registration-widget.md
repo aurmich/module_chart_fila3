@@ -41,6 +41,7 @@ Queste Action devono occuparsi di:
 - [EditUserWidget.php](../../app/Filament/Widgets/EditUserWidget.php) - Widget per modifica dati utente
 - [Documentazione EditUserWidget](./edit-user-widget.md) - Documentazione completa dell'EditUserWidget
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [EditUserWidget.php](../../app/Filament/Widgets/EditUserWidget.php) - Widget per modifica dati utente
 - [Documentazione EditUserWidget](./edit-user-widget.md) - Documentazione completa dell'EditUserWidget
 <<<<<<< HEAD
@@ -72,7 +73,15 @@ Queste Action devono occuparsi di:
 >>>>>>> fb6fbaa2 (move resources/lang to lang)
 =======
 >>>>>>> 999c8e14 (✨ (User Module): introduce EditUserWidget for user data modification)
+<<<<<<< HEAD
 >>>>>>> b94d1b23 (✨ (User Module): introduce UpdateUserAction for doctor-specific user updates)
+=======
+=======
+- [EditUserWidget.php](../../app/Filament/Widgets/EditUserWidget.php) - Widget per modifica dati utente
+- [Documentazione EditUserWidget](./edit-user-widget.md) - Documentazione completa dell'EditUserWidget
+>>>>>>> aurmich/dev
+>>>>>>> 4c632a28 (✨ (bashscripts): add new scripts for managing MCP MySQL server and PHPStan analysis)
+>>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
 - [Documentazione Xot sulla proprietà $data](../../../Xot/docs/filament/widgets/data-property.md)
 - [Esempio di Action di registrazione Doctor](../../../../Patient/app/Actions/Doctor/RegisterAction.php)
 - [Esempio di Action di registrazione Patient](../../../../Patient/app/Actions/Patient/RegisterAction.php)

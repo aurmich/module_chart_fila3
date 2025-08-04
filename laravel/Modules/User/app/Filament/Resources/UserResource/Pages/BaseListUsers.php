@@ -127,6 +127,7 @@ abstract class BaseListUsers extends XotBaseListRecords
 <<<<<<< HEAD
 <<<<<<< HEAD
             // Filtri disabilitati per ora, abilitare se necessario
+<<<<<<< HEAD
             /*
 <<<<<<< HEAD
 =======
@@ -154,6 +155,7 @@ abstract class BaseListUsers extends XotBaseListRecords
 <<<<<<< HEAD
             */
 =======
+<<<<<<< HEAD
 >>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
 =======
 <<<<<<< HEAD
@@ -171,6 +173,9 @@ abstract class BaseListUsers extends XotBaseListRecords
 =======
             */
 >>>>>>> c6edea7c (.)
+=======
+>>>>>>> 4c632a28 (✨ (bashscripts): add new scripts for managing MCP MySQL server and PHPStan analysis)
+>>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
         ];
     }
 
