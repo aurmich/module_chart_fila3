@@ -12,6 +12,7 @@ use RectorLaravel\Set\LaravelSetList;
 return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->paths([
 <<<<<<< HEAD
+<<<<<<< HEAD
         __DIR__,
     ]);
 
@@ -19,6 +20,8 @@ return static function (RectorConfig $rectorConfig): void {
         '*/docs',
         '*/vendor',
 =======
+=======
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
         __DIR__.'/Modules',
         __DIR__.'/app',
         __DIR__.'/bootstrap',
@@ -28,13 +31,20 @@ return static function (RectorConfig $rectorConfig): void {
         __DIR__.'/resources',
         __DIR__.'/routes',
         __DIR__.'/tests',
+<<<<<<< HEAD
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+=======
 >>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
     ]);
 
     // register a single rule
     // $rectorConfig->rule(InlineConstructorDefaultToPropertyRector::class);
 <<<<<<< HEAD
+<<<<<<< HEAD
     // $rectorConfig->rule(RedirectRouteToToRouteHelperRector::class);
+=======
+    $rectorConfig->rule(RedirectRouteToToRouteHelperRector::class);
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
 =======
     $rectorConfig->rule(RedirectRouteToToRouteHelperRector::class);
 >>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
@@ -42,6 +52,7 @@ return static function (RectorConfig $rectorConfig): void {
     // define sets of rules
     $rectorConfig->sets([
         PHPUnitLevelSetList::UP_TO_PHPUNIT_100,
+<<<<<<< HEAD
 <<<<<<< HEAD
         // SetList::DEAD_CODE,
         // SetList::CODE_QUALITY,
@@ -55,6 +66,8 @@ return static function (RectorConfig $rectorConfig): void {
         // SetList::EARLY_RETURN,
         // SetList::INSTANCEOF,
 =======
+=======
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
         SetList::DEAD_CODE,
         SetList::CODE_QUALITY,
         LevelSetList::UP_TO_PHP_81,
@@ -72,6 +85,9 @@ return static function (RectorConfig $rectorConfig): void {
         // testdummy files
         '*/docs',
         '*/vendor',
+<<<<<<< HEAD
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+=======
 >>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
     ]);
 

@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Module Chart
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/laraxot/module_chart_fila3.svg?style=flat-square)](https://packagist.org/packages/laraxot/module_chart_fila3)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/laraxot/module_chart_fila3/run-tests?label=tests)](https://github.com/laraxot/module_chart_fila3/actions?query=workflow%3Arun-tests+branch%3Amain)
@@ -227,6 +228,8 @@ Il sistema utilizza una combinazione di tecnologie moderne:
 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 =======
+=======
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
 # :package_description
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/laraxot/module_geo_fila3.svg?style=flat-square)](https://packagist.org/packages/laraxot/module_geo_fila3)
@@ -320,6 +323,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+<<<<<<< HEAD
 >>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
 =======
 ## 📚 Documentazione
@@ -477,3 +481,5 @@ La documentazione è organizzata in modo modulare:
 # baseSaluteOra
 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)

@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "Chart",
     "alias": "chart",
     "description": "Modulo per la generazione e visualizzazione di grafici e dashboard analitici",
@@ -12,6 +13,8 @@
     "files": []
 }
 =======
+=======
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
     "name": "Geo",
     "alias": "geo",
     "description": "",
@@ -25,4 +28,7 @@
     "files": [],
     "requires": []
 }
+<<<<<<< HEAD
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+=======
 >>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)

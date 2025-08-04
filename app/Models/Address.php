@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Geo\Models;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
@@ -430,4 +431,22 @@ class Address extends BaseModel
     {
         return $query->where('type', $type instanceof AddressTypeEnum ? $type->value : $type);
     }
+=======
+use Illuminate\Database\Eloquent\Model;
+
+class Address extends Model
+{
+    protected $fillable = [
+        'formatted_address',
+        'latitude',
+        'longitude',
+        'street_number',
+        'route',
+        'locality',
+        'postal_code',
+        'country',
+    ];
+
+    // Definisci le relazioni e i metodi necessari per la classe Address
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
 }

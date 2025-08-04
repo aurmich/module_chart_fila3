@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:_docs/filament.txt
 <<<<<<< HEAD:_docs/filament.txt
 <<<<<<< HEAD
@@ -13,6 +14,9 @@ https://github.com/awcodes/overlook?tab=readme-ov-file
 =======
 
 >>>>>>> 2bcfd382 (fix Address):laravel/Modules/Geo/docs/filament.md
+=======
+
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
 -----------------------------------------------------------------------------------
 https://github.com/cheesegrits/filament-google-maps
 star:204
@@ -80,6 +84,7 @@ https://polodev.github.io/tuts/2018/11/05/nearby-location-using-latitude-and-lon
 
 https://github.com/geocoder-php/GeocoderLaravel
 
+<<<<<<< HEAD
 <<<<<<< HEAD:_docs/filament.txt
 >>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
 =======
@@ -174,3 +179,5 @@ Modules/Geo/app/Filament/Resources/
 - **Zen**: Serenità nella navigazione, nessun errore di path, nessun link rotto dopo un refactor.
 
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing):laravel/Modules/Geo/docs/filament.md
+=======
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)

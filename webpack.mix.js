@@ -1,5 +1,6 @@
 const mix = require('laravel-mix');
 <<<<<<< HEAD
+<<<<<<< HEAD
 require('laravel-mix-merge-manifest');
 
 /**
@@ -27,6 +28,8 @@ if (mix.inProduction()) {
     mix.sourceMaps();
 }
 =======
+=======
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
 
 mix.options({
     purifyCss: false,
@@ -83,4 +86,7 @@ mix.options({
  if (mix.inProduction()) {
      mix.version();
  }
+<<<<<<< HEAD
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+=======
 >>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)

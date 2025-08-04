@@ -4,10 +4,13 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     'name' => 'Chart',
     'icon' => 'heroicon-o-cog', // icon on dashboard
     'navigation_sort' => 1,
 =======
+=======
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
     /*
     |--------------------------------------------------------------------------
     | API Keys
@@ -78,5 +81,8 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+=======
 >>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
 ];

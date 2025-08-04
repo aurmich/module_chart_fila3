@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Chart\Filament\Pages;
 
 use Filament\Pages\Page;
@@ -34,6 +35,8 @@ class Dashboard extends Page
         ];
     }
 =======
+=======
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
 namespace Modules\Geo\Filament\Pages;
 
 use Modules\Xot\Filament\Pages\XotBasePage;
@@ -50,5 +53,8 @@ class Dashboard extends XotBasePage
     //         redirect('/admin');
     //     }
     // }
+<<<<<<< HEAD
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+=======
 >>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
 }

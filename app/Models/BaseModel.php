@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Chart\Models;
 
 use Modules\Xot\Traits\Updater;
@@ -26,6 +27,8 @@ abstract class BaseModel extends Model
     // use Searchable;
     // use Cachable;
 =======
+=======
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
 namespace Modules\Geo\Models;
 
 // use GeneaLabs\LaravelModelCaching\Traits\Cachable;
@@ -39,6 +42,9 @@ use Modules\Xot\Traits\Updater;
  */
 abstract class BaseModel extends Model
 {
+<<<<<<< HEAD
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+=======
 >>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
     use Updater;
 
@@ -47,9 +53,15 @@ abstract class BaseModel extends Model
      *
      * @see  https://laravel-news.com/6-eloquent-secrets
 <<<<<<< HEAD
+<<<<<<< HEAD
      */
 
     /** @var bool */
+=======
+     *
+     * @var bool
+     */
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
 =======
      *
      * @var bool
@@ -67,6 +79,7 @@ abstract class BaseModel extends Model
     protected $perPage = 30;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @var string */
     protected $connection = 'chart';
 
@@ -80,6 +93,8 @@ abstract class BaseModel extends Model
         return ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
     }
 =======
+=======
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
     // use Searchable;
     // use Cachable;
 
@@ -88,6 +103,9 @@ abstract class BaseModel extends Model
 
     /** @var array<string, string> */
     protected $casts = ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
+<<<<<<< HEAD
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+=======
 >>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
 
     /** @var string */
@@ -99,6 +117,7 @@ abstract class BaseModel extends Model
     ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * Create a new factory instance for the model.
      */
@@ -106,6 +125,9 @@ abstract class BaseModel extends Model
     {
         return app(GetFactoryAction::class)->execute(static::class);
     }
+=======
+    protected $connection = 'geo';
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
 =======
     protected $connection = 'geo';
 >>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)

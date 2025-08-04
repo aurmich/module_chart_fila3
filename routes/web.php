@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 /*
 <<<<<<< HEAD
+<<<<<<< HEAD
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -18,6 +19,8 @@ declare(strict_types=1);
 //     Route::get('/', 'ChartController@index');
 // });
 =======
+=======
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
 //$this->routes();
 Route::prefix('it')->group(function() {
     Route::prefix('geo')->group(function() {
@@ -25,4 +28,7 @@ Route::prefix('it')->group(function() {
     });
 });
 */
+<<<<<<< HEAD
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+=======
 >>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)

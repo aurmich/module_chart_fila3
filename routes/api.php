@@ -1,12 +1,15 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * ---.
  */
 
 declare(strict_types=1);
 =======
+=======
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
 declare(strict_types=1);
 
 /*
@@ -24,4 +27,7 @@ Route::middleware('auth:api')->get('/geo', function (Request $request) {
     return $request->user();
 });
 */
+<<<<<<< HEAD
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+=======
 >>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)

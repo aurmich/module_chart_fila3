@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "theme_chart_fila3",
   "private": true,
   "version": "0.0.0",
@@ -26,6 +27,8 @@
     "vite": "^5.4.2"
   }
 =======
+=======
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
   "private": true,
   "scripts": {
     "dev": "npm run development",
@@ -66,5 +69,8 @@
   "repository": "https://github.com/laraxot/module_geo.git",
   "author": "marco76tv <marco.sottana@gmail.com>",
   "license": "MIT"
+<<<<<<< HEAD
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+=======
 >>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
 }
