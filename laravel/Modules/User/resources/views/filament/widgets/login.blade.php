@@ -25,6 +25,7 @@
         {{ $this->form }}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <button type="submit" class="w-full py-3 rounded bg-blue-600 text-white font-bold hover:bg-blue-700 transition">{{ __('Accedi') }}</button>
 =======
 >>>>>>> b58de900 (.)
@@ -70,6 +71,9 @@
 =======
         <button type="submit" class="w-full py-3 rounded bg-blue-600 text-white font-bold hover:bg-blue-700 transition">{{ __('Accedi') }}</button>
 >>>>>>> fb6fbaa2 (move resources/lang to lang)
+=======
+        <button type="submit" class="w-full py-3 rounded bg-[#FF5F7E] text-white font-bold">{{ __('Accedi') }}</button>
+>>>>>>> 5aedfb65 (- change button color)
     </form>
     <div class="text-center text-sm text-gray-500 mt-2">
         @if (Route::has('password.request'))
