@@ -3,6 +3,9 @@
 <<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 12c6456b (✨ (blocks.md): add Aesthetic Block guidelines and example for elegant components)
 use function Laravel\Folio\{middleware, name};
 use Filament\Notifications\Notification;
 use Filament\Notifications\Livewire\Notifications;
@@ -11,6 +14,7 @@ use Filament\Support\Enums\Alignment;
 use Filament\Support\Enums\VerticalAlignment;
 use Livewire\Volt\Component;
 use Modules\Tenant\Services\TenantService;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Modules\Cms\Models\Page;
 use Modules\Cms\Http\Middleware\PageSlugMiddleware;
@@ -71,73 +75,35 @@ use Modules\Cms\Models\Page;
 use Illuminate\Support\Arr;
 use Illuminate\View\View;
 use function Laravel\Folio\{withTrashed,middleware, name,render};
+=======
+>>>>>>> 12c6456b (✨ (blocks.md): add Aesthetic Block guidelines and example for elegant components)
 
-withTrashed();
-name('page_slug.view');
-//middleware(['auth', 'verified']);
+/** @var array */
+//$middleware=TenantService::config('middleware');
+//$base_middleware=Arr::get($middleware,'base',[]);
+$base_middleware=[];
 
-render(function (View $view, string $slug) {
-    $locale = app()->getLocale();
-    $page = Page::firstWhere(['slug' => $slug]);
+name('pages.view');
+middleware($base_middleware);
 
-    /*
-    if (!$page) {
-        abort(404);
-        // Prova a cercare la pagina nella lingua predefinita
-        $page = Page::firstWhere(['slug' => $slug, 'locale' => config('app.fallback_locale', 'en')]);
-    }
-    */
-    return $view->with('page', $page);
-});
 
+
+new class extends Component
+{
+    public string $slug;
+};
 
 ?>
-<x-layouts.marketing>
 
-    <div
-        x-data="{loggedIn:true}"
-        class="max-w-[calc(100%-30px)] sm:max-w-[calc(100%-80px)] lg:max-w-[996px] mx-auto pb-12 font-roboto"
-        >
-        @if($page)
-            <div class="py-10">
-                <h1 class="text-[2rem] mb-4 font-roboto font-semibold text-neutral-5">
-                    {{ $page->title }}
-                </h1>
-            </div>
-
-            {{-- {{ dddx([
-                $_theme->showPageSidebarContent($page->title),
-                $_theme->showPageContent($page->title),
-                $page->sidebar_blocks,
-                $page->content_blocks
-                ]) }} --}}
-            {{-- {{ dddx($page->content_blocks) }} --}}
-            @if(!empty($page->sidebar_blocks))
-                <div class="grid grid-cols-1 lg:grid-cols-[21.25rem,1fr] gap-4">
-                    <div class="space-y-6">
-                        {{ $_theme->showPageSidebarContent($page->slug) }}
-                    </div>
-
-                    {{ $_theme->showPageContent($page->slug) }}
-                </div>
-
-            @else
-                {{-- what is the css to make the whole block unsplit? --}}
-                <div>
-                    {{ $_theme->showPageContent($page->slug) }}
-                </div>
-            @endif
-        @else
-            <div class="flex flex-col items-center justify-center py-8 space-y-4">
-                <div>
-                    <img class="max-w-lg" src="https://error404.fun/img/full-preview/1x/3.png" alt="">
-                </div>
-                <div class="space-y-2 text-center">
-                    <h2 class="text-2xl font-bold md:text-4xl lg:text-6xl">Whooops!</h2>
-                    <p class="text-gray-400">{{ __('pub_theme::404.no_article') }}</p>
-                </div>
-            </div>
-        @endif
+<x-layouts.app>
+    @volt('pages.view')
+    <div>
+        <x-page side="content" :slug="$slug" />
     </div>
+<<<<<<< HEAD
 </x-layouts.marketing>
 >>>>>>> 54f4fa16 (.)
+=======
+    @endvolt
+</x-layouts.app>
+>>>>>>> 12c6456b (✨ (blocks.md): add Aesthetic Block guidelines and example for elegant components)

@@ -49,6 +49,7 @@ new class extends Component
     @volt('home')
     <div>
         {{--  route('pages.view',['slug'=>'patient_register_complete'])  --}}
+<<<<<<< HEAD
         <x-page side="content" slug="home" :type="auth()->user()?->type?->value"/>
     </div>
     @endvolt
@@ -58,6 +59,8 @@ new class extends Component
     @volt('home')
 >>>>>>> 7274ba81 (✨ (vscode): add new recommended extensions for Laravel development to improve developer experience)
     <div>
+=======
+>>>>>>> 12c6456b (✨ (blocks.md): add Aesthetic Block guidelines and example for elegant components)
         <x-page side="content" slug="home" :type="auth()->user()?->type->value"/>
     </div>
 <<<<<<< HEAD

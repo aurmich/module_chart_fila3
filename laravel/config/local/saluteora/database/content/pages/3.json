@@ -179,10 +179,14 @@
                 "type": "testimonial_carousel",
                 "data": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "view": "pub_theme::components.blocks.testimonials.carousel.simple",
 =======
                     "view": "pub_theme::components.blocks.testimonial_carousel.simple",
 >>>>>>> 54f4fa16 (.)
+=======
+                    "view": "pub_theme::components.blocks.testimonials.carousel.simple",
+>>>>>>> 12c6456b (✨ (blocks.md): add Aesthetic Block guidelines and example for elegant components)
                     "title": "Cosa dicono i nostri pazienti",
                     "testimonials": [
                         {
