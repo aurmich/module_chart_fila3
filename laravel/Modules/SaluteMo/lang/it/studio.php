@@ -547,8 +547,11 @@ return [
     'search_placeholder' => 'Cerca per nome, indirizzo, telefono o email...',
 ];
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 5ae95119 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking to enhance code quality and maintainability across modules.)
 =======
+=======
+>>>>>>> 51b181ea (📝 (studio.php): resolve merge conflicts and clean up translation file for SaluteMo module to ensure proper localization and functionality)
 =======
 return array (
   'navigation' => 
@@ -743,4 +746,9 @@ return array (
   'search_placeholder' => 'Cerca per nome, indirizzo, telefono o email...',
 );
 >>>>>>> 631510b4 (fix bashscripts structure + translation of module saluteMo)
+<<<<<<< HEAD
 >>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
+=======
+=======
+>>>>>>> 6ef890a7 (.)
+>>>>>>> 51b181ea (📝 (studio.php): resolve merge conflicts and clean up translation file for SaluteMo module to ensure proper localization and functionality)
