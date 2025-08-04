@@ -320,10 +320,14 @@ return array (
       'label' => 'applyFilters',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
     'toggleColumns' => 
     array (
       'label' => 'toggleColumns',
     ),
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
@@ -345,5 +349,7 @@ return array (
 >>>>>>> a0fd0fbf (feat(i18n): add Italian language support for admin navigation and user registration)
 =======
 >>>>>>> 86036e79 (✨ (CreateAdmin, EditAdmin, ListAdmins, CreateDoctor, EditDoctor, ListDoctors, CreatePatient, EditPatient, ListPatients): refactor admin, doctor, and patient resources to extend user resource classes for better code reuse and maintainability)
+=======
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
   ),
 );

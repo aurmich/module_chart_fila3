@@ -8,6 +8,7 @@
     }
 @endphp
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div>
     <x-filament::widget>
 <<<<<<< HEAD
@@ -40,3 +41,14 @@
     <x-filament-actions::modals />
 </x-filament::widget> 
 >>>>>>> 98275f8c (✨ (DoctorAvailabilitiesWidget): update view path to use pub_theme for better theming support)
+=======
+<div>
+    <x-filament::widget>
+            <div class="space-y-6 mx-60 mb-5">
+                @each('pub_theme::filament.widgets.doctor-availabilities.studio.item', $doctor->studios, 'studio', 'pub_theme::filament.widgets.doctor-availabilities.studio.empty')
+            </div>
+     
+        <x-filament-actions::modals />
+    </x-filament::widget> 
+</div>
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)

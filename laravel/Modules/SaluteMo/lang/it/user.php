@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array (
   'navigation' => 
   array (
@@ -11,6 +12,11 @@ return array (
   'navigation' => 
   array (
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+return array (
+  'navigation' => 
+  array (
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
     'label' => 'Utenti',
     'group' => 'Gestione Utenti',
     'icon' => 'heroicon-o-user',
@@ -55,17 +61,23 @@ return array (
     array (
       'label' => 'ID',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'placeholder' => 'ID generato automaticamente',
       'help' => 'Identificativo univoco dell\'utente',
 =======
       'placeholder' => '',
       'helper_text' => '',
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+      'placeholder' => '',
+      'helper_text' => '',
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
     ),
     'name' => 
     array (
       'label' => 'Nome',
       'placeholder' => 'Mario Rossi',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'help' => 'Nome completo dell\'utente',
     ),
@@ -83,21 +95,29 @@ return array (
 =======
       'helper_text' => 'Nome completo dell\'utente',
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+      'helper_text' => 'Nome completo dell\'utente',
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
     ),
     'email' => 
     array (
       'label' => 'Email',
       'placeholder' => 'utente@email.com',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'help' => 'Indirizzo email per l\'accesso',
 =======
       'helper_text' => 'Indirizzo email per l\'accesso',
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+      'helper_text' => 'Indirizzo email per l\'accesso',
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
     ),
     'role' => 
     array (
       'label' => 'Ruolo',
       'placeholder' => 'Seleziona il ruolo',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'help' => 'Ruolo assegnato all\'utente',
     ),
@@ -109,10 +129,14 @@ return array (
 =======
       'helper_text' => 'Ruolo assegnato all\'utente',
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+      'helper_text' => 'Ruolo assegnato all\'utente',
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
     ),
     'active' => 
     array (
       'label' => 'Attivo',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'placeholder' => 'Stato di attivazione',
       'help' => 'L\'utente è attivo e può accedere',
@@ -120,10 +144,15 @@ return array (
       'placeholder' => '',
       'helper_text' => 'L\'utente è attivo e può accedere',
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+      'placeholder' => '',
+      'helper_text' => 'L\'utente è attivo e può accedere',
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
     ),
     'created_at' => 
     array (
       'label' => 'Data Creazione',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'placeholder' => 'Data di registrazione',
       'help' => 'Data di registrazione dell\'utente',
@@ -131,10 +160,15 @@ return array (
       'placeholder' => '',
       'helper_text' => 'Data di registrazione dell\'utente',
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+      'placeholder' => '',
+      'helper_text' => 'Data di registrazione dell\'utente',
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
     ),
     'updated_at' => 
     array (
       'label' => 'Ultima Modifica',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'placeholder' => 'Data ultima modifica',
       'help' => 'Data ultima modifica profilo',
@@ -142,11 +176,16 @@ return array (
       'placeholder' => '',
       'helper_text' => 'Data ultima modifica profilo',
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+      'placeholder' => '',
+      'helper_text' => 'Data ultima modifica profilo',
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
     ),
     'toggleColumns' => 
     array (
       'label' => 'toggleColumns',
     ),
+<<<<<<< HEAD
   ),
   'actions' => 
   array (
@@ -185,16 +224,41 @@ return array (
       'success' => 'Utente attivato con successo',
       'error' => 'Errore durante l\'attivazione dell\'utente',
 =======
+=======
+    'reorderRecords' => 
+    array (
+      'label' => 'reorderRecords',
+    ),
+    'resetFilters' => 
+    array (
+      'label' => 'resetFilters',
+    ),
+    'applyFilters' => 
+    array (
+      'label' => 'applyFilters',
+    ),
+    'openFilters' => 
+    array (
+      'label' => 'openFilters',
+    ),
+  ),
+  'actions' => 
+  array (
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
     'activate' => 
     array (
       'label' => 'Attiva',
       'icon' => 'heroicon-o-check-circle',
       'tooltip' => 'Rendi l\'utente attivo',
+<<<<<<< HEAD
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
     ),
     'deactivate' => 
     array (
       'label' => 'Disattiva',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'tooltip' => 'Disattiva temporaneamente l\'utente',
       'confirmation' => 'Sei sicuro di voler disattivare questo utente?',
@@ -204,10 +268,15 @@ return array (
       'icon' => 'heroicon-o-x-circle',
       'tooltip' => 'Disattiva temporaneamente l\'utente',
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+      'icon' => 'heroicon-o-x-circle',
+      'tooltip' => 'Disattiva temporaneamente l\'utente',
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
     ),
     'reset_password' => 
     array (
       'label' => 'Reset Password',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'tooltip' => 'Invia una nuova password all\'utente',
       'modal_heading' => 'Reset Password',
@@ -244,6 +313,10 @@ return array (
       'icon' => 'heroicon-o-key',
       'tooltip' => 'Invia una nuova password all\'utente',
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+      'icon' => 'heroicon-o-key',
+      'tooltip' => 'Invia una nuova password all\'utente',
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
     ),
   ),
   'filters' => 
@@ -252,14 +325,18 @@ return array (
     array (
       'label' => 'Solo Attivi',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'placeholder' => 'Filtra per utenti attivi',
       'help' => 'Mostra solo gli utenti attualmente attivi',
 =======
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
     ),
     'role' => 
     array (
       'label' => 'Per Ruolo',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'placeholder' => 'Seleziona ruolo',
       'help' => 'Filtra per ruolo specifico',
@@ -277,6 +354,8 @@ return array (
       'help' => 'Filtra per periodo di registrazione',
 =======
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
     ),
   ),
   'bulk_actions' => 
@@ -285,6 +364,7 @@ return array (
     array (
       'label' => 'Attiva Selezionati',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'tooltip' => 'Attiva tutti gli utenti selezionati',
       'confirmation' => 'Sei sicuro di voler attivare tutti gli utenti selezionati?',
       'success' => 'Utenti attivati con successo',
@@ -292,10 +372,14 @@ return array (
 =======
       'icon' => 'heroicon-o-check-circle',
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+      'icon' => 'heroicon-o-check-circle',
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
     ),
     'deactivate_selected' => 
     array (
       'label' => 'Disattiva Selezionati',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'tooltip' => 'Disattiva tutti gli utenti selezionati',
       'confirmation' => 'Sei sicuro di voler disattivare tutti gli utenti selezionati?',
@@ -304,10 +388,14 @@ return array (
 =======
       'icon' => 'heroicon-o-x-circle',
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+      'icon' => 'heroicon-o-x-circle',
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
     ),
     'reset_password_selected' => 
     array (
       'label' => 'Reset Password Selezionati',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'tooltip' => 'Reimposta password per tutti gli utenti selezionati',
       'modal_heading' => 'Reset Password Multiplo',
@@ -326,6 +414,9 @@ return array (
 =======
       'icon' => 'heroicon-o-key',
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+      'icon' => 'heroicon-o-key',
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
     ),
   ),
   'messages' => 
@@ -333,6 +424,7 @@ return array (
     'activated_successfully' => 'Utente attivato con successo',
     'deactivated_successfully' => 'Utente disattivato con successo',
     'password_reset_successfully' => 'Password reimpostata con successo',
+<<<<<<< HEAD
 <<<<<<< HEAD
     'email_sent' => 'Email di notifica inviata',
     'empty_state' => 'Nessun utente trovato',
@@ -539,3 +631,8 @@ return [
   'search_placeholder' => 'Cerca per nome, email o ruolo...',
 );
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+  ),
+  'search_placeholder' => 'Cerca per nome, email o ruolo...',
+);
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)

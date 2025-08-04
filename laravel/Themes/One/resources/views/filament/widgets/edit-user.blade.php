@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <x-filament-widgets::widget>
 =======
 <x-filament-widgets::widget class="!bg-[#E6EBF7]">
@@ -7,6 +8,9 @@
 =======
 <x-filament-widgets::widget>
 >>>>>>> b58de900 (.)
+=======
+<x-filament-widgets::widget class="!bg-[#E6EBF7]">
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
     <x-filament::section>
         <div class="max-w-4xl mx-auto">
             @if($this->canEdit())
