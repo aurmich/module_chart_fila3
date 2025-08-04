@@ -81,26 +81,36 @@ return [
         'title' => [
             'label' => 'Title',
             'placeholder' => 'Enter a title for the appointment',
+            'help' => 'Brief description of the appointment',
             'helper_text' => '',
         ],
         'patient_id' => [
             'label' => 'Patient',
             'placeholder' => 'Select the patient',
+<<<<<<< HEAD
 >>>>>>> 8d591468 (fields translations)
+=======
+            'help' => 'Patient for whom the appointment is scheduled',
+>>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
             'helper_text' => '',
         ],
         'doctor_id' => [
             'label' => 'Doctor',
             'placeholder' => 'Select the doctor',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'Doctor who will hold the appointment',
 =======
 >>>>>>> 8d591468 (fields translations)
+=======
+            'help' => 'Doctor who will hold the appointment',
+>>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
             'helper_text' => '',
         ],
         'dentist_id' => [
             'label' => 'Dentist',
             'placeholder' => 'Select the dentist',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'help' => 'Dentist responsible for the treatment',
             'helper_text' => '',
@@ -116,40 +126,57 @@ return [
             'placeholder' => 'Select end date and time',
             'help' => 'When the appointment ends',
 =======
+=======
+            'help' => 'Dentist responsible for the treatment',
+>>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
             'helper_text' => '',
         ],
         'studio_id' => [
             'label' => 'Studio',
             'placeholder' => 'Select the studio',
+            'help' => 'Studio where the appointment will take place',
             'helper_text' => '',
         ],
         'start_time' => [
             'label' => 'Start Time',
             'placeholder' => 'Select the start time',
+            'help' => 'When the appointment starts',
             'helper_text' => '',
         ],
         'end_time' => [
             'label' => 'End Time',
             'placeholder' => 'Select the end time',
+<<<<<<< HEAD
 >>>>>>> 8d591468 (fields translations)
+=======
+            'help' => 'When the appointment ends',
+>>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
             'helper_text' => '',
         ],
         'treatment_id' => [
             'label' => 'Treatment',
             'placeholder' => 'Select a treatment',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'The type of treatment planned',
 =======
 >>>>>>> 8d591468 (fields translations)
+=======
+            'help' => 'The type of treatment planned',
+>>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
             'helper_text' => '',
         ],
         'status' => [
             'label' => 'Status',
             'placeholder' => 'Select the status',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'Current status of the appointment',
 =======
 >>>>>>> 8d591468 (fields translations)
+=======
+            'help' => 'Current status of the appointment',
+>>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
             'helper_text' => '',
             'options' => [
                 'scheduled' => 'Scheduled',
@@ -163,9 +190,13 @@ return [
             'label' => 'Appointment Type',
             'placeholder' => 'Select the type',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'Type of medical appointment',
 =======
 >>>>>>> 8d591468 (fields translations)
+=======
+            'help' => 'Type of medical appointment',
+>>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
             'helper_text' => '',
             'options' => [
                 'consultation' => 'Consultation',
@@ -179,47 +210,67 @@ return [
             'label' => 'Notes',
             'placeholder' => 'Enter any notes',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'Additional information about the appointment',
 =======
 >>>>>>> 8d591468 (fields translations)
+=======
+            'help' => 'Additional information about the appointment',
+>>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
             'helper_text' => '',
         ],
         'reason' => [
             'label' => 'Reason',
             'placeholder' => 'Enter the reason for the appointment',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'Main reason for the visit',
 =======
 >>>>>>> 8d591468 (fields translations)
+=======
+            'help' => 'Main reason for the visit',
+>>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
             'helper_text' => '',
         ],
         'emergency' => [
             'label' => 'Emergency',
             'placeholder' => 'Indicate if this is an emergency',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'Mark as emergency appointment',
 =======
 >>>>>>> 8d591468 (fields translations)
+=======
+            'help' => 'Mark as emergency appointment',
+>>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
             'helper_text' => '',
         ],
         'eligibility_confirmed' => [
             'label' => 'Eligibility Confirmed',
             'placeholder' => 'Confirm eligibility',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'Confirm that the patient is eligible for treatment',
 =======
 >>>>>>> 8d591468 (fields translations)
+=======
+            'help' => 'Confirm that the patient is eligible for treatment',
+>>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
             'helper_text' => '',
         ],
         'created_at' => [
             'label' => 'Creation Date',
             'placeholder' => 'Appointment creation date',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'When the appointment was created',
             'helper_text' => '',
         ],
     ],
 =======
+=======
+            'help' => 'When the appointment was created',
+>>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
             'helper_text' => '',
         ],
     ],
@@ -316,29 +367,41 @@ return [
             'label' => 'By Status',
             'placeholder' => 'Filter by status',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'Filter appointments by status',
 =======
 >>>>>>> 8d591468 (fields translations)
+=======
+            'help' => 'Filter appointments by status',
+>>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
             'helper_text' => '',
         ],
         'by_doctor' => [
             'label' => 'By Doctor',
             'placeholder' => 'Select a doctor',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'Filter by specific doctor',
 =======
 >>>>>>> 8d591468 (fields translations)
+=======
+            'help' => 'Filter by specific doctor',
+>>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
             'helper_text' => '',
         ],
         'by_date_range' => [
             'label' => 'By Date Range',
             'placeholder' => 'Select the range',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'Filter by specific date period',
             'helper_text' => '',
         ],
     ],
 =======
+=======
+            'help' => 'Filter by specific date period',
+>>>>>>> 3f5cd0b5 (📝 (appointment.php, widgets.php): add help text for appointment fields to enhance user guidance and improve usability)
             'helper_text' => '',
         ],
     ],
@@ -600,18 +663,18 @@ return [
 =======
     'states' => [
         'confirmed' => [
-            'label' => 'Conferma',
+            'label' => 'Confirm',
             'color' => 'success',
             'icon' => 'heroicon-o-check-circle',
-            'modal_heading' => 'Accetta appuntamento',
-            'modal_description' => 'Sei sicuro di voler accettare questo appuntamento?',
+            'modal_heading' => 'Accept appointment',
+            'modal_description' => 'Are you sure you want to accept this appointment?',
         ],
         'rejected' => [
-            'label' => 'Rifiuta',
+            'label' => 'Reject',
             'color' => 'danger',
             'icon' => 'heroicon-o-x-mark',
-            'modal_heading' => 'Rifiuta appuntamento',
-            'modal_description' => 'Sei sicuro di voler rifiutare questo appuntamento?',
+            'modal_heading' => 'Reject appointment',
+            'modal_description' => 'Are you sure you want to reject this appointment?',
         ],
     ],
 >>>>>>> 49a567a1 (✨ (appointment.php): add new appointment states for confirmed and rejected to enhance user experience and provide clear actions)
