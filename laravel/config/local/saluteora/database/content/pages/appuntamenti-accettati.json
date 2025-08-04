@@ -18,10 +18,14 @@
                 "type": "hero",
                 "data": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "view": "pub_theme::components.blocks.hero.appuntamenti-accettati",
 =======
                     "view": "pub_theme::components.blocks.hero.simple2",
 >>>>>>> 6a8817e6 (- creata pagina dettaglio dottore)
+=======
+                    "view": "pub_theme::components.blocks.hero.appuntamenti-accettati",
+>>>>>>> 46477621 (- update contenuto pagine appuntamento)
                     "title": "Benvenuta su Salute Orale,",
                     "subtitle": "il portale che vuole garantire alle pazienti vulnerabili in stato di gravidanza la possibilità di accedere a servizi odontoiatrici di prevenzione a titolo completamente gratuito.",
                     "image": "https://www.materdomini.it/wp-content/uploads/2021/04/Sorriso-Denti-bianchi-donna-apparecchio-denti-e-salute-1.jpg",
@@ -37,6 +41,7 @@
                 "data": {
                     "content": "Se sei una donna in stato di gravidanza residente in Italia o in attesa di permesso di soggiorno, con un valore ISEE pari a euro 20,000 o inferiore, e vuoi partecipare a questa iniziativa clicca il pulsante qui sotto:"
                 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             },
@@ -95,6 +100,8 @@
                     "button_link": "/register"
                 }
 >>>>>>> 6a8817e6 (- creata pagina dettaglio dottore)
+=======
+>>>>>>> 46477621 (- update contenuto pagine appuntamento)
             }
         ]
     },

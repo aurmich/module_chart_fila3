@@ -148,6 +148,7 @@
 <div class="justify-evenly">justify evenly</div>
 <div class="lg:w-7/12">large width calendar</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="mt-9">margin top 9</div>
 <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block bg-gray-800 text-white text-sm px-2 py-1 rounded z-10">tooltip</div>
 <div class="my-9">margin-top-bottom</div>
@@ -398,3 +399,9 @@
 =======
 </x-layouts.app>
 >>>>>>> 6a8817e6 (- creata pagina dettaglio dottore)
+=======
+<div class="mt-9">margin top 9</div>
+<div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block bg-gray-800 text-white text-sm px-2 py-1 rounded z-10">tooltip</div>
+<div class="my-9">margin-top-bottom</div>
+</x-layouts.app>
+>>>>>>> 46477621 (- update contenuto pagine appuntamento)

@@ -5,9 +5,12 @@
     },
     "slug": "appuntamenti-rifiutati",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "middleware":["auth","\\Modules\\User\\Http\\Middleware\\EnsureUserHasType:doctor"],
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 46477621 (- update contenuto pagine appuntamento)
     "content": null,
     "content_blocks": {
         "it": [
