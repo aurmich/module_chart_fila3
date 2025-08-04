@@ -29,6 +29,7 @@ class ResetPasswordWidget extends XotBaseWidget
 use Filament\Forms;
 use Filament\Forms\Form;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Arr;
 =======
 >>>>>>> aurmich/dev
@@ -38,28 +39,20 @@ use Illuminate\Support\Facades\Hash;
 use Filament\Forms;
 use Filament\Forms\Form;
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Hash;
+>>>>>>> b0db4ea8 (fixes)
 use Filament\Forms\ComponentContainer;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Hidden;
-use Filament\Forms\Contracts\HasForms;
-use Filament\Forms\Concerns\InteractsWithForms;
-use Filament\Notifications\Notification;
-use Illuminate\Support\Str;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
-use Illuminate\Support\Facades\Log;
-use Illuminate\Validation\Rules\Password as PasswordRule;
-use Illuminate\Validation\ValidationException;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
-use Webmozart\Assert\Assert;
 
 /**
  * Reset password widget for user password reset functionality.
- * 
- * Handles password reset form with token validation and secure password update.
- * Follows Laraxot patterns with comprehensive error handling and type safety.
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
  * Handles password reset functionality with token validation,
  * proper security measures, and user feedback. Follows Laraxot
@@ -76,11 +69,16 @@ use Webmozart\Assert\Assert;
  *
  * @extends XotBaseWidget
 >>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
+=======
+ * Handles password reset functionality with token validation,
+ * proper security measures, and user feedback. Follows Laraxot
+ * architectural patterns and security best practices.
+ *
+ * @property ComponentContainer $form Form container from XotBaseWidget
+>>>>>>> b0db4ea8 (fixes)
  */
-final class ResetPasswordWidget extends XotBaseWidget implements HasForms
+class ResetPasswordWidget extends XotBaseWidget
 {
-    use InteractsWithForms;
-
     /**
      * The view for this widget.
      *
@@ -89,6 +87,7 @@ final class ResetPasswordWidget extends XotBaseWidget implements HasForms
     protected static string $view = 'user::widgets.auth.reset-password-widget';
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
      * Widget data array.
@@ -115,6 +114,8 @@ final class ResetPasswordWidget extends XotBaseWidget implements HasForms
 
     /**
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+>>>>>>> b0db4ea8 (fixes)
      * Get the form schema for password reset.
      *
      * Uses string keys for Filament form compatibility and follows
@@ -125,68 +126,31 @@ final class ResetPasswordWidget extends XotBaseWidget implements HasForms
     public function getFormSchema(): array
     {
         return [
-            'token' => Hidden::make('token')
-                ->default($this->token)
-                ->required(),
-                
             'email' => TextInput::make('email')
                 ->email()
                 ->required()
-                ->maxLength(255)
-                ->autocomplete('email')
-                ->validationAttribute(__('user::auth.fields.email.validation_attribute'))
-                ->helperText(__('user::auth.reset_password.email_helper')),
-                
+                ->autocomplete('email'),
             'password' => TextInput::make('password')
                 ->password()
                 ->required()
-                ->rule(PasswordRule::default())
                 ->minLength(8)
                 ->same('password_confirmation')
-                ->autocomplete('new-password')
-                ->validationAttribute(__('user::auth.fields.password.validation_attribute'))
-                ->helperText(__('user::auth.fields.password.helper_text')),
-                
+                ->autocomplete('new-password'),
             'password_confirmation' => TextInput::make('password_confirmation')
                 ->password()
                 ->required()
-                ->minLength(8)
-                ->dehydrated(false)
-                ->autocomplete('new-password')
-                ->validationAttribute(__('user::auth.fields.password_confirmation.validation_attribute')),
+                ->autocomplete('new-password'),
         ];
     }
 
     /**
      * Mount the widget and initialize the form.
      *
-     * @param string|null $token
-     * @param string|null $email
      * @return void
      */
-    public function mount(?string $token = null, ?string $email = null): void
+    public function mount(): void
     {
-        // Validate and sanitize token
-        $routeToken = request()->route('token');
-        $this->token = $token ?? (is_string($routeToken) ? $routeToken : '');
-        
-        Assert::stringNotEmpty($this->token, 'Password reset token is required');
-        
-        // Validate and sanitize email
-        $queryEmail = request()->query('email');
-        $emailValue = $email ?? (is_string($queryEmail) ? $queryEmail : '');
-        
-        if (!empty($emailValue)) {
-            Assert::true(
-                filter_var($emailValue, FILTER_VALIDATE_EMAIL) !== false, 
-                'Invalid email format provided'
-            );
-        }
-        
-        $this->form->fill([
-            'token' => $this->token,
-            'email' => $emailValue,
-        ]);
+        $this->form->fill();
     }
 
     /**
@@ -300,6 +264,7 @@ class ResetPasswordWidget extends XotBaseWidget
         return $form
             ->schema([
 <<<<<<< HEAD
+<<<<<<< HEAD
                 Section::make()
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -357,6 +322,9 @@ class ResetPasswordWidget extends XotBaseWidget
 =======
                 Section::make(__('user::auth.reset_password.section_title'))
                     ->description(__('user::auth.reset_password.section_description'))
+=======
+                Section::make()
+>>>>>>> b0db4ea8 (fixes)
                     ->schema($this->getFormSchema())
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
                     ->columns(1),
@@ -370,6 +338,7 @@ class ResetPasswordWidget extends XotBaseWidget
 <<<<<<< HEAD
     /**
      * Handle password reset with proper security and error handling.
+<<<<<<< HEAD
      *
      * Implements Laravel's password reset functionality with explicit
      * type casting for security and proper error feedback.
@@ -391,11 +360,15 @@ class ResetPasswordWidget extends XotBaseWidget
 =======
      * Handle password reset with comprehensive error handling and type safety.
 >>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
+=======
+>>>>>>> b0db4ea8 (fixes)
      *
-     * @return \Illuminate\Http\RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
-     * 
-     * @throws \Illuminate\Validation\ValidationException
+     * Implements Laravel's password reset functionality with explicit
+     * type casting for security and proper error feedback.
+     *
+     * @return \Illuminate\Http\RedirectResponse|void
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
     public function resetPassword()
 <<<<<<< HEAD
@@ -428,11 +401,13 @@ class ResetPasswordWidget extends XotBaseWidget
 =======
     public function resetPassword(): \Illuminate\Http\RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+    public function resetPassword()
+>>>>>>> b0db4ea8 (fixes)
     {
-        try {
-            $this->validate();
-            $data = $this->form->getState();
+        $data = $this->form->getState();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         $status = Password::reset(
@@ -448,11 +423,16 @@ class ResetPasswordWidget extends XotBaseWidget
 =======
 =======
 >>>>>>> a3f7230 (.)
+=======
+        $status = Password::reset(
+            [
+>>>>>>> b0db4ea8 (fixes)
                 'email' => (string) $data['email'],
                 'password' => (string) $data['password'],
                 'password_confirmation' => (string) $data['password_confirmation'],
                 'token' => (string) request()->route('token'),
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             function ($user, $password) {
 >>>>>>> 54f4fa16 (.)
@@ -466,10 +446,14 @@ class ResetPasswordWidget extends XotBaseWidget
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+            function ($user, $password): void {
+>>>>>>> b0db4ea8 (fixes)
                 $user->forceFill([
                     'password' => Hash::make($password),
                     'remember_token' => Str::random(60),
                 ])->save();
+<<<<<<< HEAD
 =======
             // Type-safe data extraction
             $email = (string) ($data['email'] ?? '');
@@ -752,7 +736,17 @@ class ResetPasswordWidget extends XotBaseWidget
         // Reject complex types
         throw new \Webmozart\Assert\InvalidArgumentException(
             "Value for key '{$key}' must be a string, " . gettype($value) . ' given'
+=======
+            }
+>>>>>>> b0db4ea8 (fixes)
         );
+
+        if ($status === Password::PASSWORD_RESET) {
+            session()->flash('status', __((string) $status));
+            return redirect()->route('login');
+        } else {
+            $this->addError('email', __((string) $status));
+        }
     }
 >>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
 }

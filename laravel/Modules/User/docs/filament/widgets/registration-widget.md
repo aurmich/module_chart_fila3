@@ -222,6 +222,9 @@ Queste Action devono occuparsi di:
 - [Documentazione Xot sulla proprietà $data](../../../Xot/docs/filament/widgets/data-property.md)
 - [Esempio di Action di registrazione (da creare)](../../../../Patient/app/Actions/Doctor/RegisterAction.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b0db4ea8 (fixes)
 
 ---
 
@@ -362,5 +365,8 @@ class ResetPasswordWidget extends XotBaseWidget
 ---
 
 ## Collegamenti aggiornati
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> b0db4ea8 (fixes)
