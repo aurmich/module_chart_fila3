@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div>
    <div class="w-full flex justify-center p-10">
        <h1 class="text-[#272C4D]">@lang('pub_theme::content.partners.our_partners.label')</h1>
@@ -76,3 +77,6 @@
  </div>
 
 </div>
+=======
+<div class="bg-[#E6EBF7]">Partners page</div>
+>>>>>>> eb36972d (- create pagina: "partners";)

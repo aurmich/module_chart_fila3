@@ -45,6 +45,7 @@
                         },
                         {
                             "label": "Partners",
+<<<<<<< HEAD
                             "url": "/it/pages/partners",
 >>>>>>> aurmich/dev
 =======
@@ -59,6 +60,9 @@
                         {
                             "label": "Chi Siamo",
                             "url": "/chi-siamo",
+=======
+                            "url": "it/pages/partners",
+>>>>>>> eb36972d (- create pagina: "partners";)
                             "type": "link"
 <<<<<<< HEAD
                         },

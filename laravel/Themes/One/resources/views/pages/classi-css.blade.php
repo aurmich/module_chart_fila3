@@ -161,6 +161,7 @@
 <div class="rounded-[15px]">border radius 15</div>
 <div class="w-2/4">width 2/4</div>
 <div class="py-9">padding y 9 </div>
+<<<<<<< HEAD
 <div class="bg-transparent">bg transparent</div>
 <div class="bg-cover">bg cover</div>
 <div class="bg-no-repeat">bg no repeat</div>
@@ -405,3 +406,6 @@
 <div class="my-9">margin-top-bottom</div>
 </x-layouts.app>
 >>>>>>> 46477621 (- update contenuto pagine appuntamento)
+=======
+</x-layouts.app>
+>>>>>>> eb36972d (- create pagina: "partners";)
