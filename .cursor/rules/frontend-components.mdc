@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # Regole per Componenti Frontend
 
 ## Regola Fondamentale
@@ -112,3 +113,5 @@ Un componente semplice è:
 - Facile da debuggare
 - Facile da estendere
 - Facile da mantenere
+=======
+>>>>>>> 2099645a (.)

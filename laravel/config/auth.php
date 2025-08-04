@@ -65,6 +65,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'model' => env('AUTH_MODEL', \Modules\SaluteOra\Models\User::class),
 =======
             'model' => Modules\SaluteOra\Models\User::class,
@@ -75,6 +76,9 @@ return [
 =======
             'model' => env('AUTH_MODEL', Modules\User\Models\User::class),
 >>>>>>> 54f4fa16 (.)
+=======
+            'model' => Modules\SaluteOra\Models\User::class,
+>>>>>>> 2099645a (.)
         ],
 
         // 'users' => [

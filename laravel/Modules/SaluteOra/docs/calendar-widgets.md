@@ -14,7 +14,10 @@ namespace Modules\SaluteOra\Filament\Widgets;
 
 use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
 use Modules\SaluteOra\Models\Appointment;
+<<<<<<< HEAD
 use Modules\SaluteOra\App\Enums\AppointmentType;
+=======
+>>>>>>> 2099645a (.)
 
 class DoctorScheduleWidget extends \Saade\FilamentFullCalendar\Widgets\FullCalendarWidget
 {
@@ -79,7 +82,10 @@ namespace Modules\SaluteOra\Filament\Widgets;
 
 use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
 use Modules\SaluteOra\Models\Appointment;
+<<<<<<< HEAD
 use Modules\SaluteOra\App\Enums\AppointmentType;
+=======
+>>>>>>> 2099645a (.)
 
 class PatientAppointmentsWidget extends \Saade\FilamentFullCalendar\Widgets\FullCalendarWidget
 {
@@ -217,7 +223,10 @@ namespace Modules\SaluteOra\Filament\Pages\Appointments;
 use Livewire\Component;
 use Modules\SaluteOra\Models\Appointment;
 use Modules\SaluteOra\Models\Patient;
+<<<<<<< HEAD
 use Modules\SaluteOra\App\Enums\AppointmentType;
+=======
+>>>>>>> 2099645a (.)
 
 class AppointmentModal extends Component
 {
@@ -506,7 +515,10 @@ namespace Tests\Feature\Filament\Widgets;
 use App\Models\User;
 use Modules\SaluteOra\Models\Appointment;
 use Tests\TestCase;
+<<<<<<< HEAD
 use Modules\SaluteOra\App\Enums\AppointmentType;
+=======
+>>>>>>> 2099645a (.)
 
 class CalendarWidgetsTest extends TestCase
 {
@@ -654,6 +666,9 @@ public function boot()
    - Set up error tracking
    - Configure logging
    - Set up performance monitoring
+<<<<<<< HEAD
 
 > **Nota di prevenzione:**
 > L'enum AppointmentType deve essere sempre posizionato in `Modules/SaluteOra/app/Enums/AppointmentType.php` e importato con il namespace corretto. Aggiornare sempre la documentazione e i file .mdc windsurf/cursor in caso di modifica del path.
+=======
+>>>>>>> 2099645a (.)

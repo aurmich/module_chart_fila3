@@ -92,10 +92,14 @@ class Document extends XotBaseModel
      * @return array<string, string>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function casts(): array
 =======
     public function casts(): array
 >>>>>>> 54f4fa16 (.)
+=======
+    protected function casts(): array
+>>>>>>> 2099645a (.)
     {
         return array_merge(parent::casts(), [
             'expiry_date' => 'date',
@@ -119,19 +123,27 @@ class Document extends XotBaseModel
         $units = ['B', 'KB', 'MB', 'GB', 'TB'];
         $i = 0;
 <<<<<<< HEAD
-
-=======
-        
->>>>>>> 54f4fa16 (.)
-        while ($bytes >= 1024 && $i < count($units) - 1) {
-            $bytes /= 1024;
-            $i++;
-        }
 <<<<<<< HEAD
 
 =======
         
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 2099645a (.)
+        while ($bytes >= 1024 && $i < count($units) - 1) {
+            $bytes /= 1024;
+            $i++;
+        }
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 2099645a (.)
         return round($bytes, 2) . ' ' . $units[$i];
     }
 }

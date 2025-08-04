@@ -55,7 +55,10 @@ app/
 To move files to the correct location:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2099645a (.)
 # For a single controller
 mkdir -p Modules/{ModuleName}/app/Http/Controllers/
 mv Modules/{ModuleName}/Http/Controllers/SomeController.php Modules/{ModuleName}/app/Http/Controllers/

@@ -134,10 +134,14 @@ use Modules\Xot\Enums\DayOfWeek;
 
 // In un modello Eloquent con Laravel 12.x
 <<<<<<< HEAD
+<<<<<<< HEAD
 protected function casts(): array
 =======
 public function casts(): array
 >>>>>>> 54f4fa16 (.)
+=======
+protected function casts(): array
+>>>>>>> 2099645a (.)
 {
     return [
         'day_of_week' => DayOfWeek::class,

@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # Guida Migrazione FullCalendar: Da Legacy a Parental STI
 
 ## 📋 Panoramica Migrazione
@@ -572,3 +573,5 @@ Appointment::with(['patient', 'doctor', 'studio'])
 ---
 
 **Nota**: Questa migrazione introduce cambiamenti significativi nell'architettura. Testare accuratamente in ambiente di staging prima del deploy in produzione.
+=======
+>>>>>>> 2099645a (.)

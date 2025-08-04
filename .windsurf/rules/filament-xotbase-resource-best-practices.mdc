@@ -1,6 +1,7 @@
 ---
 description:
 globs:
+<<<<<<< HEAD
 alwaysApply: true
 ---
 # Regole per l'Estensione di XotBaseResource (Filament)
@@ -155,3 +156,7 @@ User::where('id', $id)->where('type', UserTypeEnum::DOCTOR->value)->firstOrFail(
 
 ---
 **Questa regola è vincolante e va applicata in tutti i moduli che usano XotBaseResource.**
+=======
+alwaysApply: false
+---
+>>>>>>> 2099645a (.)

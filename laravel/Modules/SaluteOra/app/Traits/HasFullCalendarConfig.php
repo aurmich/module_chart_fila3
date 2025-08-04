@@ -7,7 +7,11 @@ namespace Modules\SaluteOra\Traits;
 use Filament\Facades\Filament;
 use Modules\SaluteOra\Models\Appointment;
 use Modules\SaluteOra\Models\Studio;
+<<<<<<< HEAD
 use Modules\SaluteOra\Enums\UserTypeEnum;
+=======
+use Modules\SaluteOra\Enums\UserType;
+>>>>>>> 2099645a (.)
 
 /**
  * Trait per configurazioni comuni dei widget FullCalendar.
@@ -223,10 +227,17 @@ trait HasFullCalendarConfig
         }
 
         return match ($user->type) {
+<<<<<<< HEAD
             UserTypeEnum::ADMIN => true,
             UserTypeEnum::DOCTOR => $appointment->doctor_id === $user->id ||
                                $user->hasRole('studio_admin'),
             UserTypeEnum::PATIENT => false,
+=======
+            UserType::ADMIN => true,
+            UserType::DOCTOR => $appointment->doctor_id === $user->id ||
+                               $user->hasRole('studio_admin'),
+            UserType::PATIENT => false,
+>>>>>>> 2099645a (.)
             default => false,
         };
     }
@@ -246,11 +257,19 @@ trait HasFullCalendarConfig
         }
 
         return match ($user->type) {
+<<<<<<< HEAD
             UserTypeEnum::ADMIN => true,
             UserTypeEnum::DOCTOR => $appointment->doctor_id === $user->id ||
                                ($user->hasRole('studio_admin') &&
                                 $appointment->studio_id === $user->studio_id),
             UserTypeEnum::PATIENT => $appointment->patient_id === $user->id,
+=======
+            UserType::ADMIN => true,
+            UserType::DOCTOR => $appointment->doctor_id === $user->id ||
+                               ($user->hasRole('studio_admin') &&
+                                $appointment->studio_id === $user->studio_id),
+            UserType::PATIENT => $appointment->patient_id === $user->id,
+>>>>>>> 2099645a (.)
             default => false,
         };
     }

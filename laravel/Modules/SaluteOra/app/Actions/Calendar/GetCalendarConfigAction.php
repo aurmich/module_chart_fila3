@@ -88,6 +88,7 @@ class GetCalendarConfigAction
         $businessHours = $this->getBusinessHours();
         $dayOfWeek = $date->dayOfWeekIso;
 
+<<<<<<< HEAD
         // Skip weekends if not in business days - ensure both are compared as integers
         $businessDays = (array) ($businessHours['daysOfWeek'] ?? []);
         if (!in_array((int)$dayOfWeek, $businessDays, true)) {
@@ -96,6 +97,15 @@ class GetCalendarConfigAction
 
         $startTime = $date->copy()->setTimeFromTimeString((string) $businessHours['startTime']);
         $endTime = $date->copy()->setTimeFromTimeString((string) $businessHours['endTime']);
+=======
+        // Skip weekends if not in business days
+        if (!in_array($dayOfWeek, $businessHours['daysOfWeek'])) {
+            return [];
+        }
+
+        $startTime = $date->copy()->setTimeFromTimeString($businessHours['startTime']);
+        $endTime = $date->copy()->setTimeFromTimeString($businessHours['endTime']);
+>>>>>>> 2099645a (.)
 
         $slots = [];
         $currentSlot = $startTime->copy();

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Models;
 
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Spatie\Activitylog\LogOptions;
 use Modules\User\Models\BaseTenant;
@@ -22,13 +23,34 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 /**
  * Studio model for the SaluteOra module.
+=======
+use Filament\Models\Contracts\HasName;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Spatie\Activitylog\Traits\LogsActivity;
+use Spatie\Activitylog\LogOptions;
+
+/**
+ * Modello Studio per il sistema multi-tenant.
+ *
+ * Rappresenta uno studio medico/dentistico che può avere
+ * più dottori e gestire appuntamenti.
+>>>>>>> 2099645a (.)
  *
  * @property int $id
  * @property string $name
  * @property string|null $address
+<<<<<<< HEAD
  * @property string|null $phone
  * @property string|null $email
  * @property string|null $slug
+=======
+ * @property string|null $city
+ * @property string|null $postal_code
+ * @property string|null $phone
+ * @property string|null $email
+>>>>>>> 2099645a (.)
  * @property string|null $website
  * @property string|null $registration_number
  * @property string|null $vat_number
@@ -36,6 +58,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @property array|null $opening_hours
  * @property array|null $services
  * @property bool $active
+<<<<<<< HEAD
  * @property bool $is_active
  * @property int $owner_id
  * @property \Carbon\Carbon $created_at
@@ -122,14 +145,38 @@ class Studio extends BaseTenant
 
    /** @var string */
    protected $connection = 'salute_ora';
+=======
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\SaluteOra\Models\Doctor> $doctors
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\SaluteOra\Models\Appointment> $appointments
+ */
+class Studio extends Model implements HasName
+{
+    use SoftDeletes;
+    use LogsActivity;
+
+    /** @var string */
+    protected $connection = 'mysql';
+>>>>>>> 2099645a (.)
 
     /** @var string */
     protected $table = 'studios';
 
+<<<<<<< HEAD
     /** @var list<string> */
     protected $fillable = [
         'name',
         'slug',
+=======
+    /** @var array<string> */
+    protected $fillable = [
+        'name',
+        'address',
+        'city',
+        'postal_code',
+>>>>>>> 2099645a (.)
         'phone',
         'email',
         'website',
@@ -141,11 +188,14 @@ class Studio extends BaseTenant
         'active',
     ];
 
+<<<<<<< HEAD
      /** @var list<string> */
      protected $with = [
         'address',
      ];
 
+=======
+>>>>>>> 2099645a (.)
     /** @return array<string, string> */
     protected function casts(): array
     {
@@ -156,14 +206,24 @@ class Studio extends BaseTenant
         ];
     }
 
+<<<<<<< HEAD
     /*
      * Implementazione del contratto HasName per Filament tenancy.
     
+=======
+    /**
+     * Implementazione del contratto HasName per Filament tenancy.
+     */
+>>>>>>> 2099645a (.)
     public function getFilamentName(): string
     {
         return $this->name;
     }
+<<<<<<< HEAD
     */
+=======
+
+>>>>>>> 2099645a (.)
     /**
      * Configurazione per il logging delle attività.
      */
@@ -172,6 +232,11 @@ class Studio extends BaseTenant
         return LogOptions::defaults()
             ->logOnly([
                 'name',
+<<<<<<< HEAD
+=======
+                'address',
+                'city',
+>>>>>>> 2099645a (.)
                 'phone',
                 'email',
                 'registration_number',
@@ -182,6 +247,7 @@ class Studio extends BaseTenant
     }
 
     /**
+<<<<<<< HEAD
      * Relazione molti-a-molti con i dottori che lavorano nello studio.
      * 
      * IMPORTANTE: Questa è una relazione cross-database, dove:
@@ -196,6 +262,13 @@ class Studio extends BaseTenant
         // Per una relazione cross-database, non possiamo usare belongsToManyX
         // Dobbiamo specificare esplicitamente tutti i parametri
         return $this->belongsToManyX(Doctor::class);
+=======
+     * Relazione con i dottori dello studio.
+     */
+    public function doctors(): HasMany
+    {
+        return $this->hasMany(Doctor::class, 'tenant_id');
+>>>>>>> 2099645a (.)
     }
 
     /**
@@ -209,12 +282,27 @@ class Studio extends BaseTenant
     /**
      * Scope per studi attivi.
      */
+<<<<<<< HEAD
     public function scopeActive(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
+=======
+    public function scopeActive($query)
+>>>>>>> 2099645a (.)
     {
         return $query->where('active', true);
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Scope per studi in una specifica città.
+     */
+    public function scopeInCity($query, string $city)
+    {
+        return $query->where('city', $city);
+    }
+
+    /**
+>>>>>>> 2099645a (.)
      * Verifica se lo studio è attivo.
      */
     public function isActive(): bool
@@ -307,12 +395,34 @@ class Studio extends BaseTenant
     public function getCurrentMonthAppointmentsCount(): int
     {
         return $this->appointments()
+<<<<<<< HEAD
             ->whereMonth('starts_at', now()->month)
             ->whereYear('starts_at', now()->year)
+=======
+            ->whereMonth('start_time', now()->month)
+            ->whereYear('start_time', now()->year)
+>>>>>>> 2099645a (.)
             ->count();
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Ottiene l'indirizzo completo formattato.
+     */
+    public function getFullAddress(): string
+    {
+        $parts = array_filter([
+            $this->address,
+            $this->postal_code,
+            $this->city,
+        ]);
+
+        return implode(', ', $parts);
+    }
+
+    /**
+>>>>>>> 2099645a (.)
      * Ottiene le informazioni di contatto formattate.
      */
     public function getContactInfo(): array
@@ -323,6 +433,7 @@ class Studio extends BaseTenant
             'website' => $this->website,
         ]);
     }
+<<<<<<< HEAD
 
     /**
      * Restituisce i servizi come stringa leggibile per Filament.
@@ -406,4 +517,6 @@ class Studio extends BaseTenant
         }
         return $dates;
     }
+=======
+>>>>>>> 2099645a (.)
 }

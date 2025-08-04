@@ -81,14 +81,20 @@ class Password implements Rule
 ### Crittografia
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2099645a (.)
 // app/Actions/EncryptionAction.php
 class EncryptionAction
 {
     use QueueableAction;
+<<<<<<< HEAD
 =======
 // app/Services/EncryptionService.php
 class EncryptionService
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 2099645a (.)
 {
     public function encrypt($data)
     {
@@ -105,14 +111,20 @@ class EncryptionService
 ### Sanitizzazione Input
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2099645a (.)
 // app/Actions/SanitizationAction.php
 class SanitizationAction
 {
     use QueueableAction;
+<<<<<<< HEAD
 =======
 // app/Services/SanitizationService.php
 class SanitizationService
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 2099645a (.)
 {
     public function sanitize($input)
     {

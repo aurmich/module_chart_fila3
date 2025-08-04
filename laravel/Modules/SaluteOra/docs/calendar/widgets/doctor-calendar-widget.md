@@ -196,6 +196,7 @@ protected function getHeaderWidgets(): array
 - [Admin Calendar Widget](./admin-calendar-widget.md)
 - [Patient Calendar Widget](./patient-calendar-widget.md)
 - [Filament Tenancy](https://filamentphp.com/docs/3.x/panels/tenancy)
+<<<<<<< HEAD
 
 ## [AGGIORNAMENTO 2024-06-XX] - Disponibilità solo su appointments
 
@@ -221,3 +222,5 @@ protected function getHeaderWidgets(): array
 - [../../appointment-management.md](../../appointment-management.md)
 - [../../fullcalendar_parental_widgets.md](../../fullcalendar_parental_widgets.md)
 - [../doctor-availability-management.md](../doctor-availability-management.md)
+=======
+>>>>>>> 2099645a (.)

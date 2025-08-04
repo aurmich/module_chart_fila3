@@ -3,13 +3,18 @@ description:
 globs:
 alwaysApply: true
 ---
+<<<<<<< HEAD
 # Regole FullCalendar Multi-Tenant per <nome progetto>
+=======
+# Regole FullCalendar Multi-Tenant per SaluteOra
+>>>>>>> 2099645a (.)
 
 ## Principi Fondamentali
 
 ### Estensione delle Classi Base
 - **SEMPRE** estendere direttamente `Saade\FilamentFullCalendar\Widgets\FullCalendarWidget`
 - **MAI** utilizzare `Modules\Xot\Filament\Widgets\XotBaseFullCalendarWidget` (non esiste nel modulo Xot)
+<<<<<<< HEAD
 - Utilizzare il trait `Modules\<nome progetto>\Traits\HasFullCalendarConfig` per configurazioni comuni
 
 ### AdminPanelProvider - Configurazione Centralizzata
@@ -17,6 +22,9 @@ alwaysApply: true
 - **SEMPRE** utilizzare configurazioni centralizzate da `config/fullcalendar.php`
 - **SEMPRE** implementare il metodo `getFullCalendarConfig()` privato
 - **SEMPRE** utilizzare plugin specifici: `dayGrid`, `timeGrid`, `list`, `interaction`, `multiMonth`, `scrollGrid`
+=======
+- Utilizzare il trait `Modules\SaluteOra\Traits\HasFullCalendarConfig` per configurazioni comuni
+>>>>>>> 2099645a (.)
 
 ### Architettura Multi-Tenant con Parental STI
 - **Single Table Inheritance**: Utilizzo di `tightenco/parental` per tipi utente
@@ -26,6 +34,7 @@ alwaysApply: true
 - **Sicurezza**: Policy e controlli di accesso sempre implementati
 
 ### Namespace e Struttura
+<<<<<<< HEAD
 - Widget calendar: `Modules\<nome progetto>\Filament\Widgets\`
 - Modelli: `Modules\<nome progetto>\Models\`
 - Enum: `Modules\<nome progetto>\Enums\`
@@ -196,6 +205,13 @@ class AdminPanelProvider extends XotBasePanelProvider
     'require_studio' => true,
 ],
 ```
+=======
+- Widget calendar: `Modules\SaluteOra\Filament\Widgets\`
+- Modelli: `Modules\SaluteOra\Models\`
+- Enum: `Modules\SaluteOra\Enums\`
+- Trait: `Modules\SaluteOra\Traits\`
+- Middleware: `Modules\SaluteOra\Http\Middleware\`
+>>>>>>> 2099645a (.)
 
 ## Implementazione Widget
 
@@ -259,7 +275,10 @@ EventData::make()
         'type' => $appointment->type->value,
         'tooltip' => $this->formatTooltip($appointment),
         'can_edit' => $this->canEditAppointment($appointment),
+<<<<<<< HEAD
         'emergency' => $appointment->emergency,
+=======
+>>>>>>> 2099645a (.)
     ])
 ```
 
@@ -299,6 +318,7 @@ EventData::make()
 - **Funzionalità**: Vista globale, filtri avanzati
 - **Configurazione**: `config('fullcalendar.widgets.admin')`
 
+<<<<<<< HEAD
 ## Configurazioni Avanzate
 
 ### JavaScript Callbacks nel Provider
@@ -404,6 +424,44 @@ EventData::make()
     text-decoration: line-through;
     background-color: #6b7280 !important;
 }
+=======
+## Configurazioni
+
+### File di Configurazione
+- Configurazione centralizzata: `config/fullcalendar.php`
+- Configurazioni widget-specific: `config('fullcalendar.widgets.{type}')`
+- Colori standardizzati: `config('fullcalendar.colors.{category}')`
+- Performance settings: `config('fullcalendar.performance')`
+
+### Localizzazione Italiana
+```php
+'locale' => 'it',
+'timezone' => 'Europe/Rome',
+'firstDay' => 1, // Lunedì
+'buttonText' => [
+    'today' => 'Oggi',
+    'month' => 'Mese',
+    'week' => 'Settimana',
+    'day' => 'Giorno',
+],
+'eventTimeFormat' => [
+    'hour' => '2-digit',
+    'minute' => '2-digit',
+    'hour12' => false,
+],
+```
+
+### Business Hours Sanitarie
+```php
+'businessHours' => [
+    'daysOfWeek' => [1, 2, 3, 4, 5, 6], // Lun-Sab
+    'startTime' => '08:00',
+    'endTime' => '19:00',
+],
+'eventConstraint' => 'businessHours',
+'selectConstraint' => 'businessHours',
+'slotDuration' => '00:30:00', // Slot da 30 minuti
+>>>>>>> 2099645a (.)
 ```
 
 ## Sicurezza e Controlli Accesso
@@ -428,7 +486,11 @@ EventData::make()
 
 ## Performance e Ottimizzazioni
 
+<<<<<<< HEAD
 ### Caching Avanzato
+=======
+### Caching
+>>>>>>> 2099645a (.)
 - **SEMPRE** utilizzare caching per eventi: `cache()->remember()`
 - **SEMPRE** generare chiave cache con `getCacheKey()` del trait
 - **SEMPRE** impostare TTL appropriato (300 secondi default)
@@ -446,6 +508,7 @@ EventData::make()
 - **SEMPRE** ridurre altezza per tablet
 - **SEMPRE** testare su dispositivi diversi
 
+<<<<<<< HEAD
 ## Variabili d'Ambiente
 
 ### .env Configuration Obbligatoria
@@ -503,6 +566,30 @@ public function test_fullcalendar_config_is_complete()
 - Non configurare scheduler license key
 
 ### ❌ Errori di Implementazione Widget
+=======
+## Enum e Modelli
+
+### AppointmentType Enum
+- **SEMPRE** implementare `HasLabel`, `HasIcon`, `HasColor`
+- **SEMPRE** utilizzare colori standardizzati
+- **SEMPRE** fornire durate per tipi
+- Tipi: CONSULTATION, CLEANING, TREATMENT, EMERGENCY, FOLLOWUP, SURGERY, ORTHODONTICS, PREVENTION
+
+### AppointmentStatus Enum
+- **SEMPRE** implementare `HasLabel`, `HasColor`
+- **SEMPRE** definire transizioni di stato
+- **SEMPRE** implementare metodi `isActive()`, `isFinal()`
+- Stati: SCHEDULED, CONFIRMED, IN_PROGRESS, COMPLETED, CANCELLED, NO_SHOW, RESCHEDULED, PENDING
+
+### Studio Model (Tenant)
+- **SEMPRE** implementare `HasName` per Filament tenancy
+- **SEMPRE** definire relazioni con doctors e appointments
+- **SEMPRE** implementare metodi business (getColor, isActive)
+
+## Errori Comuni da Evitare
+
+### ❌ Errori di Implementazione
+>>>>>>> 2099645a (.)
 - Estendere classi Xot invece di Filament direttamente
 - Non utilizzare trait HasFullCalendarConfig
 - Non implementare controlli di accesso canView()
@@ -531,6 +618,7 @@ public function test_fullcalendar_config_is_complete()
 - Non implementare responsive design
 - Non configurare tooltip e accessibilità
 
+<<<<<<< HEAD
 ## Documentazione Aggiornata
 
 ### File di Documentazione da Mantenere
@@ -541,6 +629,41 @@ public function test_fullcalendar_config_is_complete()
 
 ### Aggiornamento Documentazione
 - **SEMPRE** aggiornare documentazione per nuove configurazioni AdminPanelProvider
+=======
+## Testing
+
+### Test Obbligatori
+```php
+// Test caricamento eventi
+public function test_can_fetch_events_for_date_range()
+
+// Test permessi per tipo utente
+public function test_patient_can_view_only_own_appointments()
+public function test_doctor_can_view_studio_appointments()
+public function test_admin_can_view_all_appointments()
+
+// Test tenancy
+public function test_doctor_cannot_view_other_studio_appointments()
+
+// Test performance
+public function test_events_are_limited_to_reasonable_number()
+
+// Test sicurezza
+public function test_sensitive_data_is_protected()
+public function test_middleware_blocks_wrong_user_type()
+```
+
+## Documentazione
+
+### File di Documentazione Aggiornati
+- [fullcalendar_parental_widgets.md](mdc:../laravel/Modules/SaluteOra/docs/fullcalendar_parental_widgets.md) - Architettura completa con Parental STI
+- [fullcalendar_implementation_guide.md](mdc:../laravel/Modules/SaluteOra/docs/fullcalendar_implementation_guide.md) - Guida step-by-step
+- [fullcalendar_configuration.mdc](mdc:../laravel/Modules/SaluteOra/docs/fullcalendar_configuration.mdc) - Configurazioni complete
+- [fullcalendar_widget_implementation.mdc](mdc:../laravel/Modules/SaluteOra/docs/fullcalendar_widget_implementation.mdc) - Implementazione widget
+
+### Aggiornamento Documentazione
+- **SEMPRE** aggiornare documentazione per nuovi widget
+>>>>>>> 2099645a (.)
 - **SEMPRE** documentare configurazioni personalizzate
 - **SEMPRE** includere esempi di codice funzionanti
 - **SEMPRE** linkare documentazione correlata
@@ -549,7 +672,10 @@ public function test_fullcalendar_config_is_complete()
 ## Filosofia e Zen
 
 ### Principi Guida
+<<<<<<< HEAD
 - **Centralizzazione**: Tutte le configurazioni nel AdminPanelProvider
+=======
+>>>>>>> 2099645a (.)
 - **Semplicità**: Widget facili da comprendere e mantenere
 - **Coerenza**: Schema colori e comportamenti uniformi tra widget
 - **Accessibilità**: Supporto screen reader e navigazione keyboard
@@ -571,4 +697,8 @@ public function test_fullcalendar_config_is_complete()
 - Performance ottimizzate per tenant
 - Backup e restore per tenant specifici
 
+<<<<<<< HEAD
 Ricorda: ogni configurazione deve essere centralizzata nell'AdminPanelProvider e ogni widget calendar deve essere progettato pensando all'operatore sanitario che lo utilizzerà in situazioni di stress e urgenza. La chiarezza, l'immediatezza e la sicurezza sono fondamentali per un sistema sanitario affidabile.
+=======
+Ricorda: ogni widget calendar deve essere progettato pensando all'operatore sanitario che lo utilizzerà in situazioni di stress e urgenza. La chiarezza, l'immediatezza e la sicurezza sono fondamentali per un sistema sanitario affidabile.
+>>>>>>> 2099645a (.)

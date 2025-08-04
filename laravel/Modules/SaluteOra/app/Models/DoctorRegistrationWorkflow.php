@@ -72,8 +72,12 @@ class DoctorRegistrationWorkflow extends BaseModel
 class DoctorRegistrationWorkflow extends BaseModel
 {
     use SoftDeletes, BelongsToTenant;
+<<<<<<< HEAD
     
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 2099645a (.)
     /**
      * Connessione al database da utilizzare.
      *
@@ -134,10 +138,14 @@ class DoctorRegistrationWorkflow extends BaseModel
      * @return array<string, string>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function casts(): array
 =======
     public function casts(): array
 >>>>>>> 54f4fa16 (.)
+=======
+    protected function casts(): array
+>>>>>>> 2099645a (.)
     {
         return [
             'step_data' => 'array',
@@ -281,7 +289,11 @@ class DoctorRegistrationWorkflow extends BaseModel
         return $stepIndex !== false && $currentIndex >= $stepIndex;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 } 
 >>>>>>> 54f4fa16 (.)
+=======
+}
+>>>>>>> 2099645a (.)

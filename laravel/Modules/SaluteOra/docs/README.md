@@ -125,8 +125,28 @@ Questo nuovo flusso permette di separare il completamento dei dati dall'approvaz
 
 ### Filament
 
+#### Best Practices e Regole
+- [📋 Filament Best Practices](filament-best-practices.mdc) - **REGOLE COMPLETE**: Estensione XotBaseResource, namespace, traduzioni, enum
+- [📁 Namespace vs File Structure](namespace-vs-file-structure.md) - **CRITICO**: Differenze tra namespace e struttura fisica dei file
+- [🏗️ Filament Namespace Rules](filament-namespace-rules.md) - Regole specifiche per namespace Filament
+
+#### Sistema di Traduzione
 - [Filament Label Translation System](filament_label_translation_system.md) - Sistema di traduzione delle etichette
 - [Filament Resources Implementation](filament_resources_implementation.md) - Implementazione dei resource
+
+#### FullCalendar Multi-Tenant
+- [📋 FullCalendar Index](fullcalendar_index.mdc) - **INDICE COMPLETO**: Panoramica e navigazione documentazione FullCalendar
+- [🏗️ FullCalendar con Parental](fullcalendar_parental_widgets.md) - **PRINCIPALE**: Architettura completa con Parental STI e tenancy Filament
+- [📖 FullCalendar Implementation Guide](fullcalendar_implementation_guide.md) - Guida step-by-step per implementazione
+- [⚙️ FullCalendar Configuration](fullcalendar_configuration.mdc) - Configurazioni complete del sistema
+- [🔧 FullCalendar Widget Implementation](fullcalendar_widget_implementation.mdc) - Implementazione specifica dei widget
+- [🔄 FullCalendar Migration Guide](fullcalendar_migration_guide.mdc) - Guida migrazione da legacy a Parental STI
+
+#### Documentazione Legacy FullCalendar (Riferimento)
+- [FullCalendar Integration](fullcalendar_integration.md) - Integrazione base (legacy)
+- [FullCalendar Widgets](fullcalendar_widgets.md) - Widget precedenti (legacy)
+- [FullCalendar Configuration](fullcalendar_configuration.md) - Configurazioni precedenti (legacy)
+- [FullCalendar Multi-Tenant Widgets](fullcalendar_multi_tenant_widgets.md) - Widget multi-tenant precedenti (legacy)
 
 ### Modelli
 
@@ -326,14 +346,20 @@ Il modulo implementa un pattern avanzato per campi condizionali nei repeater Fil
 ## Collegamenti Bidirezionali
 
 ### Moduli Correlati
+<<<<<<< HEAD
 =======
 ## Collegamenti Bidirezionali
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 2099645a (.)
 - [Modulo Dental](../Dental/docs/README.md) - Integrazione con servizi dentistici
 - [Modulo Reporting](../Reporting/docs/README.md) - Generazione report e statistiche
 - [Modulo User](../User/docs/README.md) - Gestione utenti e autenticazione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2099645a (.)
 ### Documentazione Generale (Xot)
 - [📋 Filament Best Practices Xot](../Xot/docs/filament-best-practices.md) - **REGOLE GENERALI**: XotBaseResource e architettura Filament
 - [🏗️ Architettura Progetto](../Xot/docs/architecture/struttura-progetto.md) - Struttura generale del progetto
@@ -343,8 +369,11 @@ Il modulo implementa un pattern avanzato per campi condizionali nei repeater Fil
 - [📋 Regole Windsurf XotBaseResource](../../../.windsurf/rules/filament-xotbase-resource-best-practices.mdc) - Regole per IDE Windsurf
 - [📁 Regole Namespace](../../../.cursor/rules/namespace-structure-rules.mdc) - Regole struttura namespace e directory
 
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 2099645a (.)
 ## Vedi Anche
 - [Documentazione Principale](../../docs/INDEX.md) - Indice generale della documentazione
 - [Architettura Moduli](../../docs/architecture/modules-structure.md) - Struttura generale dei moduli

@@ -65,7 +65,11 @@ namespace Modules\SaluteOra\Filament\Widgets;
 use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
 use Modules\SaluteOra\Models\Appointment;
 use Modules\SaluteOra\Enums\AppointmentStatus;
+<<<<<<< HEAD
 use Modules\SaluteOra\App\Enums\AppointmentType;
+=======
+use Modules\SaluteOra\Enums\AppointmentType;
+>>>>>>> 2099645a (.)
 use Saade\FilamentFullCalendar\Data\EventData;
 use Filament\Forms;
 
@@ -757,6 +761,7 @@ I widget FullCalendar per SaluteOra forniscono una base solida per la gestione d
 - [Integrazione FullCalendar](fullcalendar_integration.md)
 - [Documentazione FullCalendar](https://fullcalendar.io/docs)
 - [Plugin Saade](https://filamentphp.com/plugins/saade-fullcalendar)
+<<<<<<< HEAD
 - [Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 
 > **Nota di prevenzione:**
@@ -796,3 +801,6 @@ I widget FullCalendar per SaluteOra forniscono una base solida per la gestione d
 - [Stub: fullcalendar-implementation.md](./fullcalendar-implementation.md)
 - [Stub: fullcalendar-correct-implementation.md](./fullcalendar-correct-implementation.md)
 - [Stub: fullcalendar-implementation-guide.md](./fullcalendar-implementation-guide.md)
+=======
+- [Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets) 
+>>>>>>> 2099645a (.)

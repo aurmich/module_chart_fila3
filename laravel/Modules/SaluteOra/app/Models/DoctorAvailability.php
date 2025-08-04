@@ -45,10 +45,14 @@ class DoctorAvailability extends BaseModel
     ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function casts(): array
 =======
     public function casts(): array
 >>>>>>> 54f4fa16 (.)
+=======
+    protected function casts(): array
+>>>>>>> 2099645a (.)
     {
         return array_merge(parent::casts(), [
             'day' => DayOfWeek::class,

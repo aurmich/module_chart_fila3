@@ -9,8 +9,13 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
 use Spatie\QueueableAction\QueueableAction;
 use Modules\SaluteOra\Models\Appointment;
+<<<<<<< HEAD
 use Modules\SaluteOra\Enums\UserTypeEnum;
 use Modules\SaluteOra\Enums\AppointmentTypeEnum;
+=======
+use Modules\SaluteOra\Enums\UserType;
+use Modules\SaluteOra\Enums\AppointmentType;
+>>>>>>> 2099645a (.)
 
 class FetchCalendarEventsAction
 {
@@ -31,7 +36,11 @@ class FetchCalendarEventsAction
     ): Collection {
         $query = Appointment::query()
             ->with(['patient', 'doctor', 'studio'])
+<<<<<<< HEAD
             ->whereBetween('starts_at', [$start, $end]);
+=======
+            ->whereBetween('start_time', [$start, $end]);
+>>>>>>> 2099645a (.)
 
         $this->applyFilters($query, $filters);
 
@@ -54,8 +63,13 @@ class FetchCalendarEventsAction
         // Apply role-based filters
         if ($user) {
             match ($user->type) {
+<<<<<<< HEAD
                 UserTypeEnum::DOCTOR => $query->where('doctor_id', $user->id),
                 UserTypeEnum::PATIENT => $query->where('patient_id', $user->id),
+=======
+                UserType::DOCTOR => $query->where('doctor_id', $user->id),
+                UserType::PATIENT => $query->where('patient_id', $user->id),
+>>>>>>> 2099645a (.)
                 default => $query,
             };
         }
@@ -82,13 +96,19 @@ class FetchCalendarEventsAction
         return [
             'id' => $appointment->id,
             'title' => $title,
+<<<<<<< HEAD
             'start' => $appointment->starts_at?->toIso8601String(),
             'end' => $appointment->ends_at?->toIso8601String(),
+=======
+            'start' => $appointment->start_time->toIso8601String(),
+            'end' => $appointment->end_time?->toIso8601String(),
+>>>>>>> 2099645a (.)
             'allDay' => false,
             'backgroundColor' => $color,
             'borderColor' => $color,
             'textColor' => $this->getContrastColor($color),
             'extendedProps' => [
+<<<<<<< HEAD
                 'type' => $appointment->type->value,
                 'status' => $appointment->status->value,
                 'patient_id' => $appointment->patient_id,
@@ -97,6 +117,16 @@ class FetchCalendarEventsAction
                 'doctor_name' => $appointment->doctor->full_name,
                 'studio_id' => $appointment->studio_id,
                 'studio_name' => $appointment->studio->name,
+=======
+                'type' => $appointment->type?->value,
+                'status' => $appointment->status?->value,
+                'patient_id' => $appointment->patient_id,
+                'patient_name' => $appointment->patient?->full_name,
+                'doctor_id' => $appointment->doctor_id,
+                'doctor_name' => $appointment->doctor?->full_name,
+                'studio_id' => $appointment->studio_id,
+                'studio_name' => $appointment->studio?->name,
+>>>>>>> 2099645a (.)
                 'emergency' => $appointment->emergency,
                 'notes' => $appointment->notes,
             ],
@@ -115,7 +145,11 @@ class FetchCalendarEventsAction
         $parts = [];
         
         if ($appointment->patient) {
+<<<<<<< HEAD
             $parts[] =  $appointment->patient->full_name;
+=======
+            $parts[] = $appointment->patient->full_name;
+>>>>>>> 2099645a (.)
         }
         
         if ($appointment->type) {
@@ -126,7 +160,11 @@ class FetchCalendarEventsAction
             $parts[] = '🚨 ' . __('saluteora::app.emergency');
         }
         
+<<<<<<< HEAD
         if ($appointment->status !== \Modules\SaluteOra\Enums\AppointmentStatusEnum::CONFIRMED) {
+=======
+        if ($appointment->status !== \Modules\SaluteOra\Enums\AppointmentStatus::CONFIRMED) {
+>>>>>>> 2099645a (.)
             $parts[] = '(' . $appointment->status->getLabel() . ')';
         }
         
@@ -146,6 +184,7 @@ class FetchCalendarEventsAction
         }
         
         return match ($appointment->type) {
+<<<<<<< HEAD
             AppointmentTypeEnum::CONSULTATION->value => '#fd7e14',
             AppointmentTypeEnum::CLEANING->value => '#17a2b8',
             AppointmentTypeEnum::TREATMENT->value => '#28a745',
@@ -154,6 +193,16 @@ class FetchCalendarEventsAction
             AppointmentTypeEnum::SURGERY->value => '#6f42c1',
             AppointmentTypeEnum::ORTHODONTICS->value => '#6f42c1',
             AppointmentTypeEnum::PREVENTION->value => '#17a2b8',
+=======
+            AppointmentType::CONSULTATION->value => '#fd7e14',
+            AppointmentType::CLEANING->value => '#17a2b8',
+            AppointmentType::TREATMENT->value => '#28a745',
+            AppointmentType::EMERGENCY->value => '#dc3545',
+            AppointmentType::FOLLOWUP->value => '#ffc107',
+            AppointmentType::SURGERY->value => '#6f42c1',
+            AppointmentType::ORTHODONTICS->value => '#6f42c1',
+            AppointmentType::PREVENTION->value => '#17a2b8',
+>>>>>>> 2099645a (.)
             default => '#3490dc',
         };
     }
@@ -183,6 +232,7 @@ class FetchCalendarEventsAction
     protected function isEditable(Appointment $appointment): bool
     {
         $user = Auth::user();
+<<<<<<< HEAD
         if (!$user) {
             return false;
         }
@@ -190,5 +240,17 @@ class FetchCalendarEventsAction
         // and the user is the assigned doctor or has admin rights
         return ($appointment->starts_at instanceof \Carbon\CarbonInterface && $appointment->starts_at->isFuture()) &&
                ($user->type === UserTypeEnum::ADMIN || $user->id === $appointment->doctor_id);
+=======
+        
+        if (!$user) {
+            return false;
+        }
+
+        // Only allow editing if the appointment is not in the past
+        // and the user is the assigned doctor or has admin rights
+        return $appointment->start_time->isFuture() && 
+               ($user->hasRole('admin') || 
+                $user->id === $appointment->doctor_id);
+>>>>>>> 2099645a (.)
     }
 }

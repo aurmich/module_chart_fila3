@@ -8,6 +8,7 @@ use Modules\User\Filament\Resources\UserResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 abstract class BaseCreateUser extends XotBaseCreateRecord
 =======
@@ -15,6 +16,10 @@ use Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelat
 
 abstract class BaseCreateUser extends \Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord
 >>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
+=======
+
+abstract class BaseCreateUser extends XotBaseCreateRecord
+>>>>>>> 2099645a (.)
 {
     // //
     protected static string $resource = UserResource::class;

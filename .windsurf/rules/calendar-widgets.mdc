@@ -2,12 +2,20 @@
 
 ## Project Standards Compliance
 
+<<<<<<< HEAD
 This document follows the project's standards and best practices for implementing calendar widgets in the <nome progetto> module.
+=======
+This document follows the project's standards and best practices for implementing calendar widgets in the SaluteOra module.
+>>>>>>> 2099645a (.)
 
 ## Important Notes
 
 1. **Base Classes**: All calendar widgets must extend the appropriate XotBase class
+<<<<<<< HEAD
 2. **Namespaces**: Use `Modules\\<nome progetto>\\Filament` for all Filament components
+=======
+2. **Namespaces**: Use `Modules\\SaluteOra\\Filament` for all Filament components
+>>>>>>> 2099645a (.)
 3. **Translations**: Use language files instead of `->label()` methods
 4. **Documentation**: Keep documentation in sync with code changes
 5. **Testing**: Ensure all widgets are properly tested
@@ -17,7 +25,11 @@ This document follows the project's standards and best practices for implementin
 All calendar widgets must extend `XotBaseFullCalendarWidget`:
 
 ```php
+<<<<<<< HEAD
 namespace Modules\\<nome progetto>\\Filament\\Widgets;
+=======
+namespace Modules\\SaluteOra\\Filament\\Widgets;
+>>>>>>> 2099645a (.)
 
 use Modules\\Xot\\Filament\\Widgets\\XotBaseFullCalendarWidget;
 
@@ -32,12 +44,20 @@ abstract class BaseCalendarWidget extends XotBaseFullCalendarWidget
 1. **Widget Naming**
    - Use `BaseCalendarWidget` as the base class for all calendar widgets
    - Follow the naming pattern `{UserType}CalendarWidget` (e.g., `DoctorCalendarWidget`)
+<<<<<<< HEAD
    - Place widgets in `Modules/<nome progetto>/Filament/Widgets/{UserType}/`
+=======
+   - Place widgets in `Modules/SaluteOra/Filament/Widgets/{UserType}/`
+>>>>>>> 2099645a (.)
 
 2. **File Structure**
    ```
    Modules/
+<<<<<<< HEAD
    └── <nome progetto>/
+=======
+   └── SaluteOra/
+>>>>>>> 2099645a (.)
        ├── Filament/
        │   └── Widgets/
        │       ├── BaseCalendarWidget.php
@@ -72,7 +92,11 @@ abstract class BaseCalendarWidget extends XotBaseFullCalendarWidget
 {
     protected static ?string $model = null;
     protected static string $heading = 'Calendar';
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 2099645a (.)
     protected function getEventsQuery();
     abstract protected function mapToEvent($model): array;
     protected function getCalendarConfig(): array;

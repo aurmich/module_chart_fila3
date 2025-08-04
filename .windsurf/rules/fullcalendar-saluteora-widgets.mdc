@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # Regole FullCalendar Widget per <nome progetto>
 
 ## Principi Fondamentali
@@ -329,3 +330,5 @@ Ricorda: ogni widget calendar deve essere progettato pensando all'operatore sani
 - Un solo punto di verità: sintassi e import corretti, configurazione centralizzata
 - DRY, KISS, serenità del codice: niente hack, niente override strani, tutto documentato e coerente
 - Politica: ogni modulo è autonomo, ma rispetta la centralizzazione delle entità e dei componenti
+=======
+>>>>>>> 2099645a (.)

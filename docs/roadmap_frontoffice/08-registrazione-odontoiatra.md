@@ -634,10 +634,14 @@ class Doctor extends User implements HasStatesContract
      * In Laravel 12.x, il metodo casts() sostituisce la proprietà $casts deprecata.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function casts(): array
 =======
     public function casts(): array
 >>>>>>> 54f4fa16 (.)
+=======
+    protected function casts(): array
+>>>>>>> 2099645a (.)
     {
         return [
             'certifications' => 'array',

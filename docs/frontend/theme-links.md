@@ -55,6 +55,9 @@ Per compilare e pubblicare un tema:
    ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2099645a (.)
 Per maggiori dettagli, consultare la [documentazione completa sulla compilazione dei temi](laravel/Modules/Cms/docs/theme_compilation.md).
 
 # Collegamenti Temi Frontend
@@ -91,6 +94,9 @@ Per maggiori dettagli, consultare la [documentazione completa sulla compilazione
 - Ogni componente deve avere documentazione in `docs/frontend/`
 - Collegamenti bidirezionali obbligatori
 - Esempi di utilizzo inclusi
+<<<<<<< HEAD
 =======
 Per maggiori dettagli, consultare la [documentazione completa sulla compilazione dei temi](laravel/Modules/Cms/docs/theme_compilation.md).
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 2099645a (.)

@@ -553,6 +553,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /**
      * Get the role name for the current team.
@@ -574,6 +575,8 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 2099645a (.)
 
     public function authentications(): MorphMany
     {
@@ -618,6 +621,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     /**
@@ -643,4 +647,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
         return $permissions->pluck('name')->values()->toArray();
     }
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 2099645a (.)
 }

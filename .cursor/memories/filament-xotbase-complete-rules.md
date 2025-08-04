@@ -65,12 +65,21 @@
 ## ERRORI COMUNI DA EVITARE
 
 ### Namespace Errati
+<<<<<<< HEAD
 - ❌ `Modules\<nome progetto>\App\Filament\Resources`
 - ✅ `Modules\<nome progetto>\Filament\Resources`
 
 ### File fuori da app/
 - ❌ `Modules/<nome progetto>/Filament/Resources/UserResource.php`
 - ✅ `Modules/<nome progetto>/app/Filament/Resources/UserResource.php`
+=======
+- ❌ `Modules\SaluteOra\App\Filament\Resources`
+- ✅ `Modules\SaluteOra\Filament\Resources`
+
+### File fuori da app/
+- ❌ `Modules/SaluteOra/Filament/Resources/UserResource.php`
+- ✅ `Modules/SaluteOra/app/Filament/Resources/UserResource.php`
+>>>>>>> 2099645a (.)
 
 ### Estensioni Dirette
 - ❌ `extends Resource`
@@ -105,7 +114,11 @@
 - [Regole Namespace](../.cursor/rules/namespace-structure-rules.mdc)
 
 ### Documentazione Moduli
+<<<<<<< HEAD
 - [<nome progetto> Filament Best Practices](../laravel/Modules/<nome progetto>/docs/filament-best-practices.mdc)
+=======
+- [SaluteOra Filament Best Practices](../laravel/Modules/SaluteOra/docs/filament-best-practices.mdc)
+>>>>>>> 2099645a (.)
 - [Xot Filament Best Practices](../laravel/Modules/Xot/docs/filament-best-practices.md)
 
 **QUESTA MEMORIA VA CONSULTATA PRIMA DI OGNI MODIFICA AI FILE FILAMENT** 

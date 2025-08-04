@@ -183,9 +183,12 @@ class Appointment extends Model
 
 ```php
 // AppointmentType.php
+<<<<<<< HEAD
 // Path corretto: Modules/SaluteOra/app/Enums/AppointmentType.php
 use Modules\SaluteOra\App\Enums\AppointmentType;
 
+=======
+>>>>>>> 2099645a (.)
 enum AppointmentType: string implements HasLabel
 {
     case CONSULTATION = 'consultation';
@@ -228,9 +231,12 @@ enum AppointmentStatus: string implements HasLabel
 }
 ```
 
+<<<<<<< HEAD
 > **Nota di prevenzione:**
 > L'enum AppointmentType deve essere sempre posizionato in `Modules/SaluteOra/app/Enums/AppointmentType.php` e importato con il namespace corretto. Aggiornare sempre la documentazione e i file .mdc windsurf/cursor in caso di modifica del path.
 
+=======
+>>>>>>> 2099645a (.)
 ## Widget FullCalendar
 
 ### 1. PatientCalendarWidget
@@ -1129,6 +1135,7 @@ Questa implementazione fornisce:
 5. **Performance**: Caching intelligente per tenant
 6. **Sanitario**: Funzionalità specifiche per ambiente medico
 
+<<<<<<< HEAD
 Il sistema garantisce che ogni tipo di utente veda solo i dati appropriati, mantenendo la sicurezza e la privacy richieste in ambito sanitario.
 
 # Flusso Prenotazione Paziente con FullCalendar
@@ -1234,3 +1241,6 @@ protected function getHeaderWidgets(): array {
 
 - Usare FullCalendarWidget::make()->options([...]) // ❌ ERRORE
 - Usare metodi fluenti su FullCalendarWidget // ❌ ERRORE
+=======
+Il sistema garantisce che ogni tipo di utente veda solo i dati appropriati, mantenendo la sicurezza e la privacy richieste in ambito sanitario. 
+>>>>>>> 2099645a (.)

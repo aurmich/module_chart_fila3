@@ -213,10 +213,14 @@ class Doctor extends User implements HasStatesContract
      * @return array<string, string|class-string>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function casts(): array
 =======
     public function casts(): array
 >>>>>>> 54f4fa16 (.)
+=======
+    protected function casts(): array
+>>>>>>> 2099645a (.)
     {
         return [
             'certifications' => 'array',
@@ -309,10 +313,14 @@ protected $casts = [
 
 // APPROCCIO CORRETTO per Laravel 12.x
 <<<<<<< HEAD
+<<<<<<< HEAD
 protected function casts(): array
 =======
 public function casts(): array
 >>>>>>> 54f4fa16 (.)
+=======
+protected function casts(): array
+>>>>>>> 2099645a (.)
 {
     return [
         'state' => DoctorRegistrationState::class,

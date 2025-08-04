@@ -79,10 +79,14 @@ class Anamnesis extends XotBaseModel
      * @return array<string, string>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function casts(): array
 =======
     public function casts(): array
 >>>>>>> 54f4fa16 (.)
+=======
+    protected function casts(): array
+>>>>>>> 2099645a (.)
     {
         return array_merge(parent::casts(), [
             'allergies' => 'array',

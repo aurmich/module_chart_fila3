@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 namespace Modules\SaluteOra\Filament\Resources\UserResource\Pages;
@@ -18,15 +19,23 @@ class ViewUser extends BaseUserViewPage
     // All functionality is inherited from BaseViewUser
     // This class exists to allow SaluteOra-specific customizations if needed
 =======
+=======
+declare(strict_types=1);
+
+>>>>>>> 2099645a (.)
 namespace Modules\SaluteOra\Filament\Resources\UserResource\Pages;
 
-use Filament\Infolists;
-use Modules\SaluteOra\Filament\Resources\UserResource;
-use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
-use Modules\SaluteOra\Filament\Resources\UserResource\Pages\BaseViewUser;
+use Modules\User\Filament\Resources\UserResource\Pages\BaseViewUser as BaseUserViewPage;
 
-class ViewUser extends BaseViewUser
+/**
+ * View user resource page.
+ *
+ * This class extends the base user view page to provide
+ * SaluteOra-specific user viewing functionality.
+ */
+class ViewUser extends BaseUserViewPage
 {
+<<<<<<< HEAD
     protected static string $resource = UserResource::class;
 
     public function getInfolistSchema(): array
@@ -43,4 +52,8 @@ class ViewUser extends BaseViewUser
         ];
     }
 >>>>>>> 54f4fa16 (.)
+=======
+    // All functionality is inherited from BaseViewUser
+    // This class exists to allow SaluteOra-specific customizations if needed
+>>>>>>> 2099645a (.)
 }

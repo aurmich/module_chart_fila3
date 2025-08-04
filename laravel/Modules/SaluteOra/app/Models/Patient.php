@@ -217,7 +217,7 @@ class Patient extends User
     use HasFactory;
     use HasParent;
 
-   
+
 
     /**
      * @var array<int, string>
@@ -293,6 +293,9 @@ class Patient extends User
      * @return array<string, string>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2099645a (.)
     protected function casts(): array
     {
         return [

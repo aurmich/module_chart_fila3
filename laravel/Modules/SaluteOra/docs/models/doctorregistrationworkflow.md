@@ -44,10 +44,14 @@ class DoctorRegistrationWorkflow extends Model
      * @return array<string, string>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function casts(): array
 =======
     public function casts(): array
 >>>>>>> bead9c28 (fix case)
+=======
+    protected function casts(): array
+>>>>>>> 2099645a (.)
     {
         return [
             'started_at' => 'datetime',
@@ -135,10 +139,14 @@ Il modello utilizza il metodo `casts()` invece della proprietà `$casts` depreca
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 protected function casts(): array
 =======
 public function casts(): array
 >>>>>>> bead9c28 (fix case)
+=======
+protected function casts(): array
+>>>>>>> 2099645a (.)
 {
     return [
         'step_data' => 'array',

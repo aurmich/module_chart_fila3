@@ -108,10 +108,14 @@ class Doctor extends User
      * @return array<string, string>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function casts(): array
 =======
     public function casts(): array
 >>>>>>> 9df8f556 (fix .md)
+=======
+    protected function casts(): array
+>>>>>>> 2099645a (.)
     {
         return array_merge(parent::casts(), [
             'certifications' => 'array',
@@ -162,10 +166,14 @@ class Patient extends User
      * @return array<string, string>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function casts(): array
 =======
     public function casts(): array
 >>>>>>> 9df8f556 (fix .md)
+=======
+    protected function casts(): array
+>>>>>>> 2099645a (.)
     {
         return array_merge(parent::casts(), [
             'birth_date' => 'date',
@@ -276,10 +284,14 @@ protected $casts = [
 
 // ✅ CORRETTO
 <<<<<<< HEAD
+<<<<<<< HEAD
 protected function casts(): array
 =======
 public function casts(): array
 >>>>>>> 9df8f556 (fix .md)
+=======
+protected function casts(): array
+>>>>>>> 2099645a (.)
 {
     return array_merge(parent::casts(), [
         'certifications' => 'array',

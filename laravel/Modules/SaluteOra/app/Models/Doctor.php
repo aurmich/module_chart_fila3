@@ -319,6 +319,7 @@ class Doctor extends User
      * @return array<string, string>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
@@ -386,6 +387,9 @@ class Doctor extends User
 
 =======
     public function casts(): array
+=======
+    protected function casts(): array
+>>>>>>> 2099645a (.)
     {
         return array_merge(parent::casts(), [
             'certifications' => 'array',

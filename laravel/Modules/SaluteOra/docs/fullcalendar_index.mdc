@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # Indice Documentazione FullCalendar SaluteOra
 
 ## 📋 Panoramica
@@ -279,3 +280,5 @@ Per problemi o domande:
 **Ultima modifica**: {data_corrente}
 **Versione**: 2.0 (Parental STI + Multi-Tenancy)
 **Compatibilità**: Laravel 11.x, Filament 3.x, PHP 8.1+
+=======
+>>>>>>> 2099645a (.)

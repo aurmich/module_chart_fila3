@@ -5,6 +5,7 @@ namespace Modules\SaluteOra\Models;
 <<<<<<< HEAD
 <<<<<<< HEAD
 
+use Spatie\Permission\Traits\HasRoles;
 use Modules\User\Models\BaseUser;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\ModelStates\HasStates;
@@ -262,6 +263,8 @@ use Modules\SaluteOra\States\User\IntegrationRequested;
  */
 class User extends BaseUser
 {
+    use HasRoles;
+    
     use LogsActivity, Notifiable;
     use HasStates;
 

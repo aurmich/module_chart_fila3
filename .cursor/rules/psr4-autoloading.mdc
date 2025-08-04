@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # PSR-4 Autoloading Rules
 
 ## When
@@ -64,3 +65,5 @@ namespace Modules\Tenant\Database\Factories;
 
 - **Errore**: Case errato nelle directory
   **Soluzione**: Usa lowercase per directories standard come factories e seeders
+=======
+>>>>>>> 2099645a (.)

@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # Regole Namespace e Struttura Directory per Moduli Laravel
 
 ## Regola Fondamentale: Struttura File vs Namespace
@@ -184,3 +185,5 @@ Class "Modules\<nome progetto>\App\Filament\Resources\UserResource" not found
 
 ---
 **Questa regola è fondamentale per il corretto funzionamento del progetto.**
+=======
+>>>>>>> 2099645a (.)

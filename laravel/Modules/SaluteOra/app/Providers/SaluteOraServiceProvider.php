@@ -13,10 +13,13 @@ use Filament\Support\Facades\FilamentIcon;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 =======
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 2099645a (.)
 use Livewire\Livewire;
 use Modules\SaluteOra\Filament\Widgets\SaluteOraRegistrationWizard;
 use Modules\SaluteOra\Models\SaluteOra;
@@ -58,15 +61,16 @@ class SaluteOraServiceProvider extends XotBaseServiceProvider
     {
         parent::boot();
 
-        // Registra il panel Filament
-        $this->app->register(AdminPanelProvider::class);
-
-
+        // Merge auth configuration
+        $this->mergeConfigFrom(
+            __DIR__.'/../../config/auth.php', 'auth'
+        );
     }
 
-    /**
+    /*
      * Registra gli stati per i modelli.
      */
+    /*
     protected function registerStates(): void
     {
         State::resolveStateUsing(
@@ -75,6 +79,7 @@ class SaluteOraServiceProvider extends XotBaseServiceProvider
             'Modules\\SaluteOra\\States\\User'
         );
     }
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -127,4 +132,16 @@ class SaluteOraServiceProvider extends XotBaseServiceProvider
 =======
     }
 >>>>>>> 54f4fa16 (.)
+=======
+    */
+    
+    public function register(): void
+    {
+        parent::register();
+        
+        
+    }
+    
+   
+>>>>>>> 2099645a (.)
 }

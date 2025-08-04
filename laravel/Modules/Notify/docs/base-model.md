@@ -14,10 +14,14 @@ use Modules\Xot\Models\XotBaseModel;
 abstract class BaseModel extends XotBaseModel
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function casts(): array
 =======
     public function casts(): array
 >>>>>>> 54f4fa16 (.)
+=======
+    protected function casts(): array
+>>>>>>> 2099645a (.)
     {
         return array_merge(parent::casts(), [
             'created_at' => 'datetime',
@@ -53,10 +57,14 @@ namespace Modules\Notify\Models;
 class NotificationTemplate extends BaseModel
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function casts(): array
 =======
     public function casts(): array
 >>>>>>> 54f4fa16 (.)
+=======
+    protected function casts(): array
+>>>>>>> 2099645a (.)
     {
         return array_merge(parent::casts(), [
             'preview_data' => 'array',
@@ -84,7 +92,11 @@ class NotificationTemplate extends BaseModel
 3. Il namespace non include il segmento `app`
 4. Le funzionalità comuni vanno implementate qui
 <<<<<<< HEAD
+<<<<<<< HEAD
 5. La documentazione va mantenuta aggiornata 
 =======
 5. La documentazione va mantenuta aggiornata 
 >>>>>>> 54f4fa16 (.)
+=======
+5. La documentazione va mantenuta aggiornata 
+>>>>>>> 2099645a (.)

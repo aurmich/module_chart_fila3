@@ -8,6 +8,7 @@ use Carbon\Carbon;
 use Livewire\Component;
 use Illuminate\Support\Facades\Http;
 use Modules\SaluteOra\Enums\AppointmentStatus;
+<<<<<<< HEAD
 use Modules\SaluteOra\Enums\AppointmentTypeEnum;
 
 class Calendar extends Component
@@ -15,14 +16,29 @@ class Calendar extends Component
     public array $config = [];
     public array $events = [];
     public array $filters = [
+=======
+use Modules\SaluteOra\Enums\AppointmentType;
+
+class Calendar extends Component
+{
+    public $config = [];
+    public $events = [];
+    public $filters = [
+>>>>>>> 2099645a (.)
         'status' => null,
         'type' => null,
         'doctor_id' => null,
         'studio_id' => null,
     ];
+<<<<<<< HEAD
     public array $availableSlots = [];
     public ?string $selectedDate = null;
     public bool $showSlotModal = false;
+=======
+    public $availableSlots = [];
+    public $selectedDate;
+    public $showSlotModal = false;
+>>>>>>> 2099645a (.)
 
     protected $listeners = [
         'refreshCalendar' => '$refresh',
@@ -30,14 +46,22 @@ class Calendar extends Component
         'select',
     ];
 
+<<<<<<< HEAD
     public function mount(): void
+=======
+    public function mount()
+>>>>>>> 2099645a (.)
     {
         $this->selectedDate = now()->toDateString();
         $this->loadConfig();
         $this->fetchEvents();
     }
 
+<<<<<<< HEAD
     protected function loadConfig(): void
+=======
+    public function loadConfig()
+>>>>>>> 2099645a (.)
     {
         try {
             $response = Http::get(route('saluteora.calendar.config'));
@@ -49,6 +73,7 @@ class Calendar extends Component
         }
     }
 
+<<<<<<< HEAD
     public function nextMonth(): void
     {
         $this->selectedDate = Carbon::parse($this->selectedDate)
@@ -66,6 +91,9 @@ class Calendar extends Component
     }
 
     public function fetchEvents(): void
+=======
+    public function fetchEvents()
+>>>>>>> 2099645a (.)
     {
         try {
             $start = now()->startOfMonth()->startOfDay()->toIso8601String();
@@ -131,7 +159,11 @@ class Calendar extends Component
 
     public function getTypesProperty()
     {
+<<<<<<< HEAD
         return collect(AppointmentTypeEnum::cases())->mapWithKeys(fn ($type) => [
+=======
+        return collect(AppointmentType::cases())->mapWithKeys(fn ($type) => [
+>>>>>>> 2099645a (.)
             $type->value => $type->getLabel()
         ]);
     }
