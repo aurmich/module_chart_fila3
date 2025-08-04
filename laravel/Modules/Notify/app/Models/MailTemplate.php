@@ -108,6 +108,7 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function casts(): array
 =======
     public function casts(): array
@@ -115,6 +116,9 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
 =======
     protected function casts(): array
 >>>>>>> 2099645a (.)
+=======
+    public function casts(): array
+>>>>>>> 15cb84fb (fix collisions)
     {
         return [
             'created_at' => 'datetime',

@@ -60,6 +60,7 @@ class SuperAdminCommand extends Command
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
         // Create super-admin role with web guard
@@ -67,12 +68,14 @@ class SuperAdminCommand extends Command
             ['name' => 'super-admin']
         );
 <<<<<<< HEAD
+=======
+        $role = Role::firstOrCreate(['name' => 'super-admin']);
+>>>>>>> 15cb84fb (fix collisions)
         $user->assignRole($role);
-
-        // Create module admin roles
         $modules_opts = array_keys(Module::all());
         foreach ($modules_opts as $module) {
             $role_name = Str::lower($module).'::admin';
+<<<<<<< HEAD
             $role = Role::firstOrCreate(
                 ['name' => $role_name]
             );
@@ -94,6 +97,9 @@ class SuperAdminCommand extends Command
                 ['name' => $role_name]
             );
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+            $role = Role::firstOrCreate(['name' => $role_name]);
+>>>>>>> 15cb84fb (fix collisions)
             $user->assignRole($role);
         }
 

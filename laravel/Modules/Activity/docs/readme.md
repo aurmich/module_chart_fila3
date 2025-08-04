@@ -88,22 +88,28 @@ Now that you’ve edited your configuration variables and know how to customize 
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 # build static files with Jigsaw
 ./vendor/bin/jigsaw build
 
 # compile assets with Laravel Mix
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 # options: dev, prod
 npm run dev
 ```

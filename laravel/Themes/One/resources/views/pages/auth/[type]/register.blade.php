@@ -123,6 +123,7 @@ new class extends Component
         <!-- Card contenente il form di registrazione -->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <div id="doctor-section" class="rounded-2xl overflow-hidden">
 =======
         <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
@@ -130,6 +131,9 @@ new class extends Component
 =======
         <div id="doctor-section" class="rounded-2xl shadow-xl overflow-hidden">
 >>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
+=======
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+>>>>>>> 15cb84fb (fix collisions)
             <!-- Form di registrazione -->
             @livewire(\Modules\User\Filament\Widgets\RegistrationWidget::class, ['type' => $type])
         </div>
@@ -137,9 +141,13 @@ new class extends Component
         <!-- Footer con informazioni aggiuntive -->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <!-- <div class="mt-8 text-center text-sm text-gray-500">
+=======
+        <div class="mt-8 text-center text-sm text-gray-500">
+>>>>>>> 15cb84fb (fix collisions)
             <p>Hai bisogno di assistenza? <a href="#" class="text-blue-800 hover:underline">Contattaci</a></p>
-        </div> -->
+        </div>
     </div>
     @endvolt
 >>>>>>> aurmich/dev

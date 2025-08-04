@@ -42,6 +42,7 @@ use Illuminate\Support\Carbon;
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 class TeamUser extends BaseTeamUser
 =======
 class TeamUser extends BasePivot
@@ -49,6 +50,9 @@ class TeamUser extends BasePivot
 =======
 class TeamUser extends BaseTeamUser
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+class TeamUser extends BasePivot
+>>>>>>> 15cb84fb (fix collisions)
 {
     protected $connection = 'user';
 }

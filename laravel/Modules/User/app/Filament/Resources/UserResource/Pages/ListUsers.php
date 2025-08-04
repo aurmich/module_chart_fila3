@@ -8,6 +8,7 @@ use Filament\Tables;
 use Filament\Tables\Actions\Action;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Tables\Filters\Filter;
 use Illuminate\Database\Query\Builder;
 use Filament\Tables\Columns\TextColumn;
@@ -39,19 +40,24 @@ use Filament\Tables\Actions\ExportBulkAction;
 use Filament\Tables\Columns\TextColumn;
 =======
 >>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
+=======
+use Filament\Tables\Actions\ExportBulkAction;
+use Filament\Tables\Columns\TextColumn;
+>>>>>>> 15cb84fb (fix collisions)
 use Filament\Tables\Filters\Filter;
 use Illuminate\Database\Query\Builder;
-use Filament\Tables\Columns\TextColumn;
-use Modules\Xot\Contracts\UserContract;
-use Filament\Tables\Actions\ExportBulkAction;
-use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Filament\Actions\ChangePasswordAction;
-use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
-use Modules\User\Filament\Resources\UserResource\Pages\BaseListUsers;
+use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
+<<<<<<< HEAD
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+use Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager;
+=======
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+>>>>>>> 7ace243 (.)
 
-class ListUsers extends BaseListUsers
+class ListUsers extends XotBaseListRecords
 {
     protected static string $resource = UserResource::class;
 
@@ -62,15 +68,20 @@ class ListUsers extends BaseListUsers
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'id' => TextColumn::make('id'),
 >>>>>>> 54f4fa16 (.)
 =======
             //'id' => TextColumn::make('id'),
 >>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
+=======
+            'id' => TextColumn::make('id'),
+>>>>>>> 15cb84fb (fix collisions)
             'name' => TextColumn::make('name')
                 ->searchable(),
             'email' => TextColumn::make('email')
                 ->searchable(),
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -81,13 +92,18 @@ class ListUsers extends BaseListUsers
             //    ->dateTime(),
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 15cb84fb (fix collisions)
             'email_verified_at' => TextColumn::make('email_verified_at')
                 ->dateTime(),
             'created_at' => TextColumn::make('created_at')
                 ->dateTime(),
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
+=======
+>>>>>>> 15cb84fb (fix collisions)
         ];
     }
 

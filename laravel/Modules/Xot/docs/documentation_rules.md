@@ -107,11 +107,15 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
 - [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
 
 ## Validazione dei Collegamenti
@@ -162,11 +166,15 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
 ## 1. Regole Fondamentali
 
 ### Nomi di Progetto
@@ -200,22 +208,30 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
 - Devono essere documentati nelle cartelle docs appropriate
 - Ogni modifica al prompt deve essere accompagnata da aggiornamenti alla documentazione
 - La documentazione deve spiegare il "perché" delle regole, non solo il "come"b6f667c (.)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
 ## 2. Struttura della Documentazione
 
 ### Documentazione Generica

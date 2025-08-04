@@ -55,11 +55,15 @@
     "require_comment": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> cb26a2b (.)
 =======
 >>>>>>> aurmich/dev
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
         "laraxot/module_tenant_fila3": "*"
     },
     "require-dev": {

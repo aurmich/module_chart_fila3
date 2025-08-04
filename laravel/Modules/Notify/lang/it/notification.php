@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 15cb84fb (fix collisions)
 return array (
   'resource' => 
   array (
@@ -243,6 +246,7 @@ return array (
     'error' => 'Si è verificato un errore durante l\'operazione',
   ),
 );
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
@@ -445,3 +449,5 @@ return [
     ],
 ];
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 15cb84fb (fix collisions)

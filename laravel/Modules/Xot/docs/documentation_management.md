@@ -159,6 +159,10 @@ Quando si identifica una nuova regola o pattern importante:
 =======
 
    - [ ] Testare applicabilità 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 15cb84fb (fix collisions)
 
 ## Gestione dei Prompt
 
@@ -212,6 +216,7 @@ Modules/Xot/docs/
    - Verifica dei collegamenti    - [ ] Testare applicabilità 
 b6f667c (.)
    - Verifica dei collegamenti 
+<<<<<<< HEAD
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 =======
 >>>>>>> bead9c28 (fix case)
@@ -276,3 +281,7 @@ b6f667c (.)
 =======
    - [ ] Testare applicabilità 
 >>>>>>> 9df8f556 (fix .md)
+=======
+=======
+>>>>>>> 0e2182f (.)
+>>>>>>> 15cb84fb (fix collisions)

@@ -56,11 +56,15 @@ class GetComponentsAction
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+        
+>>>>>>> 15cb84fb (fix collisions)
 
         $files = File::allFiles($path);
         $comps = [];
@@ -101,6 +105,7 @@ class GetComponentsAction
                 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 
 =======
 
@@ -108,6 +113,9 @@ class GetComponentsAction
 =======
                 
 >>>>>>> 5d95df2f (feat(chart): add autoloading for factories and seeders in composer.json to improve module structure)
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
                 $comps[] = ComponentFileData::from([
                     'name' => $comp_name,
                     'class' => $class_name,
@@ -115,6 +123,7 @@ class GetComponentsAction
                 ])->toArray();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 
             } catch (\Exception $e) {
                 /*
@@ -127,6 +136,11 @@ class GetComponentsAction
             } catch (\Exception $e) {
                 /*
 >>>>>>> 5d95df2f (feat(chart): add autoloading for factories and seeders in composer.json to improve module structure)
+=======
+
+            } catch (\Exception $e) {
+                
+>>>>>>> 15cb84fb (fix collisions)
                 dddx([
                     'comp_name' => $comp_name,
                     'class_name' => $class_name,
@@ -138,6 +152,7 @@ class GetComponentsAction
                 ]);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 */
                 throw $e;
 =======
@@ -146,6 +161,9 @@ class GetComponentsAction
                 */
                 throw $e;
 >>>>>>> 5d95df2f (feat(chart): add autoloading for factories and seeders in composer.json to improve module structure)
+=======
+                
+>>>>>>> 15cb84fb (fix collisions)
             }
         }
 

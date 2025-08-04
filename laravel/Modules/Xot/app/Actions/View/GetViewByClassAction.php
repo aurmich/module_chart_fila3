@@ -11,6 +11,7 @@ use Modules\Xot\Actions\Module\GetModuleNameByModelClassAction;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * Classe per la conversione di nomi di classi in nomi di viste.
  */
@@ -21,11 +22,14 @@ use Modules\Xot\Actions\Module\GetModuleNameByModelClassAction;
  * Classe per la conversione di nomi di classi in nomi di viste.
  */
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 class GetViewByClassAction
 {
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -45,6 +49,10 @@ class GetViewByClassAction
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+     * "Modules\UI\Filament\Widgets\GroupWidget" => "ui::filament.widgets.group"
+     * @return view-string
+>>>>>>> 15cb84fb (fix collisions)
      */
     public function execute(string $class, string $suffix = ''): string
     {

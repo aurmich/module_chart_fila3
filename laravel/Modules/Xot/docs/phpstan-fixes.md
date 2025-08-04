@@ -13,11 +13,16 @@ b6f667c (.)
 =======
 
 5693302 (.)
+
 b6f667c (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
 # Correzioni PHPStan nel Modulo Xot
 
 ## Correzioni Implementate
@@ -144,6 +149,7 @@ aurmich/dev
 5693302 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 b6f667c (.)
 
@@ -153,6 +159,11 @@ b6f667c (.)
 =======
 b6f667c (.)
 >>>>>>> 54f4fa16 (.)
+=======
+
+b6f667c (.)
+
+>>>>>>> 15cb84fb (fix collisions)
 # Risoluzione Problemi PHPStan nel Modulo Xot
 
 Questo documento descrive i principali problemi PHPStan risolti nel modulo Xot e le strategie adottate per la loro risoluzione.
@@ -263,6 +274,7 @@ aurmich/dev
 5693302 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 b6f667c (.)
 
@@ -272,6 +284,11 @@ b6f667c (.)
 =======
 b6f667c (.)
 >>>>>>> 54f4fa16 (.)
+=======
+
+b6f667c (.)
+
+>>>>>>> 15cb84fb (fix collisions)
     // ...
 }
 ```
@@ -291,11 +308,16 @@ b6f667c (.)
 =======
 
 5693302 (.)
+
 b6f667c (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
 ### 2. Validazione Dati
 ```php
 /**
@@ -319,6 +341,7 @@ aurmich/dev
 5693302 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 b6f667c (.)
 
@@ -328,6 +351,11 @@ b6f667c (.)
 =======
 b6f667c (.)
 >>>>>>> 54f4fa16 (.)
+=======
+
+b6f667c (.)
+
+>>>>>>> 15cb84fb (fix collisions)
 ### Servizi e Dependency Injection
 
 **Problema**: Metodi che utilizzano dependency injection non avevano tipi ben definiti.
@@ -355,6 +383,7 @@ aurmich/dev
 5693302 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 b6f667c (.)
 
@@ -364,6 +393,11 @@ b6f667c (.)
 =======
 b6f667c (.)
 >>>>>>> 54f4fa16 (.)
+=======
+
+b6f667c (.)
+
+>>>>>>> 15cb84fb (fix collisions)
     // ...
 }
 ```
@@ -383,11 +417,16 @@ b6f667c (.)
 =======
 
 5693302 (.)
+
 b6f667c (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
 ### 3. Gestione Relazioni
 ```php
 /**
@@ -741,6 +780,7 @@ aurmich/dev
 5693302 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 b6f667c (.)
 
@@ -750,6 +790,11 @@ b6f667c (.)
 =======
 b6f667c (.)
 >>>>>>> 54f4fa16 (.)
+=======
+
+b6f667c (.)
+
+>>>>>>> 15cb84fb (fix collisions)
 ### Problemi con le Relazioni Eloquent
 
 **Problema**: PHPStan non riconosceva correttamente i tipi restituiti dalle relazioni Eloquent.
@@ -918,6 +963,7 @@ aurmich/dev
 5693302 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 b6f667c (.)
 
@@ -927,3 +973,8 @@ b6f667c (.)
 =======
 b6f667c (.)
 >>>>>>> 54f4fa16 (.)
+=======
+
+b6f667c (.)
+
+>>>>>>> 15cb84fb (fix collisions)

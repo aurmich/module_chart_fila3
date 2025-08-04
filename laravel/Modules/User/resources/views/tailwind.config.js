@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import preset from "./vendor/filament/support/tailwind.config.preset";
 =======
 import preset from './vendor/filament/support/tailwind.config.preset'
@@ -8,6 +9,9 @@ import preset from './vendor/filament/support/tailwind.config.preset'
 =======
 import preset from "./vendor/filament/support/tailwind.config.preset";
 >>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
+=======
+import preset from './vendor/filament/support/tailwind.config.preset'
+>>>>>>> 15cb84fb (fix collisions)
 
 export default {
     presets: [preset],
@@ -29,6 +33,7 @@ export default {
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     darkMode: "class",
 =======
     darkMode: 'class',
@@ -36,10 +41,14 @@ export default {
 =======
     darkMode: "class",
 >>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
+=======
+    darkMode: 'class',
+>>>>>>> 15cb84fb (fix collisions)
     theme: {
         extend: {
             colors: {
                 primary: {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -56,24 +65,35 @@ export default {
                     900: "#0c4a6e",
                     950: "#082f49",
 <<<<<<< HEAD
+=======
+                    50: '#f0f9ff',
+                    100: '#e0f2fe',
+                    200: '#bae6fd',
+                    300: '#7dd3fc',
+                    400: '#38bdf8',
+                    500: '#0ea5e9',
+                    600: '#0284c7',
+                    700: '#0369a1',
+                    800: '#075985',
+                    900: '#0c4a6e',
+                    950: '#082f49',
+>>>>>>> 15cb84fb (fix collisions)
                 },
                 secondary: {
-                    50: "#f8fafc",
-                    100: "#f1f5f9",
-                    200: "#e2e8f0",
-                    300: "#cbd5e1",
-                    400: "#94a3b8",
-                    500: "#64748b",
-                    600: "#475569",
-                    700: "#334155",
-                    800: "#1e293b",
-                    900: "#0f172a",
-                },
-                header: {
-                    700: "#1A467F",
+                    50: '#f8fafc',
+                    100: '#f1f5f9',
+                    200: '#e2e8f0',
+                    300: '#cbd5e1',
+                    400: '#94a3b8',
+                    500: '#64748b',
+                    600: '#475569',
+                    700: '#334155',
+                    800: '#1e293b',
+                    900: '#0f172a',
                 },
             },
             fontFamily: {
+<<<<<<< HEAD
                 sans: ["Figtree", "sans-serif"],
 =======
                     50: '#f0f9ff',
@@ -113,10 +133,14 @@ export default {
 =======
                 sans: ["Figtree", "sans-serif"],
 >>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
+=======
+                sans: ['Figtree', 'sans-serif'],
+>>>>>>> 15cb84fb (fix collisions)
             },
         },
     },
     plugins: [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         require("@tailwindcss/forms"),
@@ -132,5 +156,10 @@ export default {
         require("@tailwindcss/typography"),
         require("flowbite/plugin"),
 >>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
+=======
+        require('@tailwindcss/forms'),
+        require('@tailwindcss/typography'),
+        require('flowbite/plugin'),
+>>>>>>> 15cb84fb (fix collisions)
     ],
 };

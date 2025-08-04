@@ -45,11 +45,18 @@ I prompt sono file di testo che contengono istruzioni per l'AI. Devono seguire q
 =======
 5. **Collegamenti**:
 b6f667c (.)
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 5. **Collegamenti**:
 b6f667c (.)
 >>>>>>> 54f4fa16 (.)
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0e2182f (.)
+>>>>>>> 15cb84fb (fix collisions)
 6. **Collegamenti**:
    - Questo documento deve essere collegato nella root `docs/` con un link bidirezionale
    - Gli altri moduli devono avere un link a questo documento
@@ -70,10 +77,14 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 15cb84fb (fix collisions)
 
 - [Miglioramenti al Prompt docs.txt](./prompt_docs_improvements.md)b6f667c (.)
 
 
+<<<<<<< HEAD
 =======
 - [Miglioramenti al Prompt docs.txt](./prompt_docs_improvements.md)b6f667c (.)
 
@@ -82,6 +93,8 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 - [Miglioramenti al Prompt docs.txt](./prompt_docs_improvements.md)b6f667c (.)
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 ## Collegamenti tra versioni di prompts.md
 * [prompts.md](docs/prompts.md)
 * [prompts.md](../../../Xot/docs/prompts.md)
@@ -204,9 +217,16 @@ Il prompt `docs.txt` serve come:
    ```
 b6f667c (.)
 
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
    ```
 b6f667c (.)
 
 >>>>>>> 54f4fa16 (.)
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0e2182f (.)
+>>>>>>> 15cb84fb (fix collisions)

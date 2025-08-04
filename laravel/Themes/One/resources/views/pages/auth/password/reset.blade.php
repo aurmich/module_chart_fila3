@@ -1,6 +1,7 @@
 <?php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 declare(strict_types=1);
 
@@ -87,6 +88,9 @@ name('password.request');
 =======
 >>>>>>> 54f4fa16 (.)
 declare(strict_types=1);
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
 use Illuminate\Support\Facades\Password;
 use function Laravel\Folio\name;
 use Livewire\Volt\Component;

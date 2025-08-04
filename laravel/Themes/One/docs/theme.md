@@ -200,14 +200,18 @@ php artisan view:cache
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 
 ## Collegamenti tra versioni di theme.md
 * [theme.md](laravel/Modules/Xot/docs/filament/theme.md)
 * [theme.md](laravel/Themes/One/docs/theme.md)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
@@ -218,3 +222,5 @@ php artisan view:cache
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 =======
 >>>>>>> bead9c28 (fix case)
+=======
+>>>>>>> 15cb84fb (fix collisions)

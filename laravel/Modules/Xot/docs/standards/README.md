@@ -98,6 +98,9 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 15cb84fb (fix collisions)
 # Standard Xot: Ereditarietà dei Modelli
 
 ## Gestione campi e Single Table Inheritance (STI)
@@ -137,7 +140,10 @@ class Doctor extends User
 - [Patient: Modello Doctor](../../../Patient/docs/Models/Doctor.md)
 // Aggiungere qui altri moduli se necessario
 
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 15cb84fb (fix collisions)

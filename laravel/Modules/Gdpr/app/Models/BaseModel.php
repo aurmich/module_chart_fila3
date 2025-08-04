@@ -68,6 +68,7 @@ abstract class BaseModel extends Model
     /** @return array<string, string> */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function casts(): array
 =======
     public function casts(): array
@@ -75,6 +76,9 @@ abstract class BaseModel extends Model
 =======
     protected function casts(): array
 >>>>>>> 2099645a (.)
+=======
+    public function casts(): array
+>>>>>>> 15cb84fb (fix collisions)
     {
         return [
             'id' => 'string',

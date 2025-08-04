@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 use function Laravel\Folio\{middleware, name};
@@ -59,6 +60,9 @@ new class extends Component
     @endvolt
 </x-layouts.app>
 =======
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
 use Modules\Cms\Models\Page;
 use Illuminate\Support\Arr;
 use Illuminate\View\View;

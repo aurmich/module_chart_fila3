@@ -1,11 +1,12 @@
 <?php
 
 return array (
-  'fields' =>
+  'fields' => 
   array (
-    'email' =>
+    'email' => 
     array (
       'label' => 'email',
+<<<<<<< HEAD
       'description' => 'email',
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -17,11 +18,14 @@ return array (
       'helper_text' => 'email',
 >>>>>>> 54f4fa16 (.)
       'placeholder' => 'email',
+=======
+>>>>>>> 15cb84fb (fix collisions)
     ),
-    'password' =>
+    'password' => 
     array (
       'label' => 'password',
       'description' => 'password',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       'helper_text' => '',
@@ -32,8 +36,10 @@ return array (
       'helper_text' => 'password',
 >>>>>>> 54f4fa16 (.)
       'placeholder' => 'password',
+=======
+>>>>>>> 15cb84fb (fix collisions)
     ),
-    'remember' =>
+    'remember' => 
     array (
       'label' => 'remember',
       'description' => 'remember',

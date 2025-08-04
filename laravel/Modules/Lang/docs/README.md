@@ -1,23 +1,66 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/dimsav/laravel-translatable
+=======
+# Modulo Lang
+>>>>>>> 15cb84fb (fix collisions)
 
-https://github.com/Astrotomic/laravel-translatable !!
+## Introduzione
+Il modulo Lang gestisce tutte le traduzioni, i messaggi e le notifiche del sistema, fornendo un sistema centralizzato per la gestione delle stringhe multilingua e l'internazionalizzazione dell'applicazione.
 
-https://github.com/spatie/laravel-translatable
+## Indice
+- [Architettura e Componenti](#architettura-e-componenti)
+- [Translation Management](#translation-management)
+- [Message System](#message-system)
+- [Notification System](#notification-system)
+- [Best Practices](#best-practices)
+- [Documentazione Tecnica](#documentazione-tecnica)
+- [Note Importanti](#note-importanti)
+### Versione HEAD
 
-https://blog.quickadminpanel.com/10-best-laravel-packages-for-multi-language-translations/
+- [Collegamenti Bidirezionali](#collegamenti-bidirezionali)
+
+### Versione Incoming
+
+- [Collegamenti correlati](#collegamenti-correlati)
+
+---
+
+- [Documentazione](#documentazione)
+- [Dipendenze](#dipendenze)
+- [Utilizzo](#utilizzo)
+
+### Versione HEAD
+
+## Architettura e Componenti
+- Translation Engine
+- Message System
+- Notification System
+- Cache System
+
+## Translation Management
+- File Structure
+- Translation Cache
+- Validation
 
 
-## Collegamenti tra versioni di readme.md
-* [readme.md](../../../Gdpr/docs/readme.md)
-* [readme.md](../../../UI/docs/readme.md)
-* [readme.md](../../../Lang/docs/readme.md)
-* [readme.md](../../../Activity/docs/readme.md)
-* [readme.md](../../../Cms/docs/readme.md)
+### Versione Incoming
 
-## Extra risorse da _docs
+## Collegamenti correlati
+> - [README.md documentazione generale](../../../docs/README.md)
+> - [README.md toolkit bashscripts](../../../bashscripts/docs/README.md)
+> - [README.md modulo GDPR](../Gdpr/docs/README.md)
+> - [README.md modulo User](../User/docs/README.md)
+> - [README.md modulo Lang](../Lang/docs/README.md)
+> - [README.md modulo Media](../Media/docs/README.md)
+> - [README.md modulo Notify](../Notify/docs/README.md)
+> - [README.md modulo Tenant](../Tenant/docs/README.md)
+> - [README.md modulo UI](../UI/docs/README.md)
+> - [README.md modulo Xot](../Xot/docs/README.md)
+> - [Collegamenti documentazione centrale](../../../docs/collegamenti-documentazione.md)
 
+<<<<<<< HEAD
 (Nessun nuovo link da aggiungere: i link di _docs/readme.txt sono già presenti in questo file)
 =======
 # Modulo Lang
@@ -75,6 +118,8 @@ https://blog.quickadminpanel.com/10-best-laravel-packages-for-multi-language-tra
 > - [README.md modulo Xot](../Xot/docs/README.md)
 > - [Collegamenti documentazione centrale](../../../docs/collegamenti-documentazione.md)
 
+=======
+>>>>>>> 15cb84fb (fix collisions)
 ## Architettura e Componenti
 - Translation Engine
 - Message System
@@ -120,6 +165,7 @@ https://blog.quickadminpanel.com/10-best-laravel-packages-for-multi-language-tra
 2. Seguire le convenzioni di naming
 3. Utilizzare i trait forniti
 4. Documentare il codice
+<<<<<<< HEAD
 5. Il file `lang/it/lang_service.php` è stato risolto manualmente per conflitti git: rimossi duplicati, mantenute solo le chiavi effettive secondo le [best practices](./translatable/best-practices.md).
 
 ## Collegamenti Bidirezionali
@@ -488,6 +534,8 @@ class UserController extends Controller
 2. Seguire le convenzioni di naming
 3. Utilizzare i trait forniti
 4. Documentare il codice
+=======
+>>>>>>> 15cb84fb (fix collisions)
 
 ## Collegamenti Bidirezionali
 - [Modulo User](../User/docs/README.md)
@@ -809,6 +857,10 @@ class UserController extends Controller
 - **Etica**: Onestà, rispetto, responsabilità, attenzione all'impatto sociale e ambientale.
 - **Zen**: Semplicità, concentrazione sul presente, armonia e serenità nello sviluppo.
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 15cb84fb (fix collisions)
 ## Gestione storage traduzioni: PHP vs JSON
 Vedi [translations-storage.md](./translations-storage.md) per un confronto dettagliato tra i due approcci, vantaggi, svantaggi e raccomandazioni per il progetto.
 
@@ -956,6 +1008,7 @@ Tutti i comandi console del modulo sono autoregistrati tramite `XotBaseServicePr
 - Per approfondimenti, vedi [lang-service-provider.md](./lang-service-provider.md) e [PHILOSOPHY.md](./PHILOSOPHY.md).
 
 > Qualsiasi registrazione manuale è un errore e va rimossa.
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
@@ -1003,3 +1056,59 @@ Tutti i comandi console del modulo sono autoregistrati tramite `XotBaseServicePr
 
 (Nessun nuovo link da aggiungere: i link di _docs/readme.txt sono già presenti in questo file)
 >>>>>>> bead9c28 (fix case)
+=======
+=======
+## Proprietà fondamentali del ServiceProvider (Laraxot/PTVX)
+
+Tutti i provider dei moduli che estendono XotBaseServiceProvider **devono** dichiarare:
+- `protected string $module_dir = __DIR__;`
+- `protected string $module_ns = __NAMESPACE__;`
+- `public string $name = 'Lang';`
+
+Queste proprietà sono necessarie per:
+- La risoluzione automatica dei path delle risorse
+- Il corretto namespace per autoloading e publish
+- L'identificazione del modulo nelle operazioni di asset publish
+
+### Esempio
+```php
+class LangServiceProvider extends XotBaseServiceProvider
+{
+    protected string $module_dir = __DIR__;
+    protected string $module_ns = __NAMESPACE__;
+    public string $name = 'Lang';
+}
+```
+
+**Motivazione:**  
+- Se mancano queste proprietà, alcune risorse potrebbero non essere caricate correttamente.
+- La dichiarazione esplicita garantisce portabilità, manutenibilità e coerenza tra tutti i moduli.
+
+**Approfondimenti:**  
+- Vedi anche [../../../../docs/PROVIDER_OVERVIEW.md](../../../../docs/PROVIDER_OVERVIEW.md)
+
+## Regola per i file .sh (script shell)
+
+Tutti i file `.sh` (script shell) devono essere posizionati esclusivamente in una sottocartella dedicata chiamata `bashscripts` (ad esempio `docs/bashscripts/`).
+Non devono mai trovarsi direttamente nella root di `docs/` o in altre sottocartelle generiche.
+
+**Motivazione:**
+- Ordine e reperibilità: tutti gli script shell sono facilmente individuabili e gestibili.
+- Sicurezza: si evita l'esecuzione accidentale di script non previsti.
+- Coerenza cross-modulo e tra root/moduli.
+
+**Esempio di struttura corretta:**
+```
+docs/
+└── bashscripts/
+    ├── deploy.sh
+    ├── clear_cache.sh
+    └── backup_db.sh
+```
+
+**Checklist aggiornata:**
+- [x] Nessun file .sh fuori da bashscripts/
+- [x] Documentazione aggiornata
+- [x] Struttura coerente in tutti i moduli
+>>>>>>> ce1c80e (.)
+>>>>>>> 15cb84fb (fix collisions)

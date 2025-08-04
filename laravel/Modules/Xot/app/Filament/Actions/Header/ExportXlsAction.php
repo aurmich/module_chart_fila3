@@ -32,11 +32,15 @@ class ExportXlsAction extends Action
                 $rows = $query->get();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+                
+>>>>>>> 15cb84fb (fix collisions)
                 $resource = $livewire->getResource();
                 
                 /** @var array<int, string> $fields */
@@ -45,11 +49,15 @@ class ExportXlsAction extends Action
                     $rawFields = $resource::getXlsFields($livewire->tableFilters);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+                  
+>>>>>>> 15cb84fb (fix collisions)
                     if (is_array($rawFields)) {
                         $fields = array_map(static function ($field): string {
                             if (is_object($field) && method_exists($field, '__toString')) {

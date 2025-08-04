@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+<<<<<<< HEAD
 use Filament\Forms;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -67,22 +68,19 @@ use Filament\Forms\Form as FilamentForm;
 use Illuminate\Support\Facades\Cache;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Forms\Concerns\InteractsWithForms;
+=======
+>>>>>>> 15cb84fb (fix collisions)
 use Filament\Widgets\Widget as FilamentWidget;
+use Illuminate\Support\Facades\Cache;
+use Filament\Widgets\WidgetConfiguration;
 use Filament\Widgets\Concerns\InteractsWithPageFilters;
-use Filament\Actions\Action;
-use Illuminate\Contracts\View\View;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Log;
+use Modules\Xot\Actions\View\GetViewByClassAction;
 
 /**
- * Classe base astratta per tutti i widget Filament.
- * Fornisce funzionalità comuni e standardizzate per la gestione dei widget.
+ * @property bool $shouldRender
  *
- * @property bool $shouldRender Indica se il widget deve essere renderizzato
- * @property string $title Titolo del widget
- * @property string $icon Icona del widget
- * @property array<string, mixed>|null $data Dati del form
  */
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 abstract class XotBaseWidget extends FilamentWidget implements HasForms
 {
@@ -100,20 +98,23 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
 <<<<<<< HEAD
 <<<<<<< HEAD
 
+=======
+abstract class XotBaseWidget extends FilamentWidget
+{
+    use InteractsWithPageFilters;
+    public string $title = '';
+    public string $icon = '';
+>>>>>>> 15cb84fb (fix collisions)
     /**
-     * Lista degli eventi ascoltati dal widget.
+     * The view that should be rendered for the widget.
      *
-     * @var array<string, string>
-     */
-    public array $listener = [
-        'filters-updated' => 'filtersUpdated',
-    ];
-
-    /**
-     * Dati del form.
+     * This property allows either a string that can be rendered as a view
+     * (prefixed with a namespace like 'module-name::view-name') or a path to a
+     * Blade view file.
      *
-     * @var array<string, mixed>
+     * @var view-string
      */
+<<<<<<< HEAD
 =======
     /**
      * La vista che deve essere renderizzata per il widget.
@@ -144,24 +145,18 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
      */
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
     public ?array $data = [];
+=======
+    protected static string $view;
 
-    /*
+>>>>>>> 15cb84fb (fix collisions)
+
     public function __construct()
     {
         //parent::__construct();//Cannot call constructor
         $view = app(GetViewByClassAction::class)->execute(static::class);
-        if(view()->exists($view)){
-            $this->view = $view;
-        }
-    }
-    */
-    /*
-    public function mount(): void
-    {
-        $this->form->fill();
-    }
-    */
+        static::$view = $view;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -433,6 +428,8 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
     {
         return (string) (static::$navigationLabel ?? (string) str(static::getLabel())
             ->headline());
+=======
+>>>>>>> 15cb84fb (fix collisions)
     }
 >>>>>>> 54f4fa16 (.)
 }

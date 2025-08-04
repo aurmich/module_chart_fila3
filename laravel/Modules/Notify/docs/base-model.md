@@ -15,6 +15,7 @@ abstract class BaseModel extends XotBaseModel
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function casts(): array
 =======
     public function casts(): array
@@ -22,6 +23,9 @@ abstract class BaseModel extends XotBaseModel
 =======
     protected function casts(): array
 >>>>>>> 2099645a (.)
+=======
+    public function casts(): array
+>>>>>>> 15cb84fb (fix collisions)
     {
         return array_merge(parent::casts(), [
             'created_at' => 'datetime',
@@ -58,6 +62,7 @@ class NotificationTemplate extends BaseModel
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function casts(): array
 =======
     public function casts(): array
@@ -65,6 +70,9 @@ class NotificationTemplate extends BaseModel
 =======
     protected function casts(): array
 >>>>>>> 2099645a (.)
+=======
+    public function casts(): array
+>>>>>>> 15cb84fb (fix collisions)
     {
         return array_merge(parent::casts(), [
             'preview_data' => 'array',
@@ -93,6 +101,7 @@ class NotificationTemplate extends BaseModel
 4. Le funzionalità comuni vanno implementate qui
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 5. La documentazione va mantenuta aggiornata 
 =======
 5. La documentazione va mantenuta aggiornata 
@@ -100,3 +109,6 @@ class NotificationTemplate extends BaseModel
 =======
 5. La documentazione va mantenuta aggiornata 
 >>>>>>> 2099645a (.)
+=======
+5. La documentazione va mantenuta aggiornata 
+>>>>>>> 15cb84fb (fix collisions)

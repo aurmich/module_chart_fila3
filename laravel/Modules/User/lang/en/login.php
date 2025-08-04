@@ -1,6 +1,4 @@
-<?php
-
-return array (
+<?php return array (
   'fields' => 
   array (
     'email' => 
@@ -20,13 +18,11 @@ return array (
 =======
 >>>>>>> 54f4fa16 (.)
       'label' => 'email',
-      'placeholder' => 'email',
-      'helper_text' => 'email',
-      'description' => 'email',
     ),
     'password' => 
     array (
       'label' => 'password',
+<<<<<<< HEAD
       'placeholder' => 'password',
       'helper_text' => 'password',
 <<<<<<< HEAD
@@ -34,6 +30,8 @@ return array (
 =======
 >>>>>>> 54f4fa16 (.)
       'description' => 'password',
+=======
+>>>>>>> 15cb84fb (fix collisions)
     ),
     'remember' => 
     array (
@@ -98,13 +96,10 @@ return array (
 =======
 >>>>>>> 54f4fa16 (.)
       'label' => 'remember',
-      'description' => 'remember',
-      'placeholder' => 'remember',
-      'helper_text' => 'remember',
     ),
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
   ),
-);
+);

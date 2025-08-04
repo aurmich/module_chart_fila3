@@ -2,6 +2,7 @@
 
 return array (
 <<<<<<< HEAD
+<<<<<<< HEAD
   'navigation' => 
   array (
     'icon' => 'heroicon-o-document-text',
@@ -71,21 +72,26 @@ return array (
       'push' => 'Notifica Push',
 =======
   'navigation' =>
+=======
+  'navigation' => 
+>>>>>>> 15cb84fb (fix collisions)
   array (
     'icon' => 'icona-template-notifica',
     'sort' => 52,
+    'group' => 'notification template.navigation',
+    'label' => 'notification template.navigation',
   ),
-  'fields' =>
+  'fields' => 
   array (
-    'resetFilters' =>
+    'resetFilters' => 
     array (
       'label' => 'resetFilters',
     ),
-    'applyFilters' =>
+    'applyFilters' => 
     array (
       'label' => 'applyFilters',
     ),
-    'openFilters' =>
+    'openFilters' => 
     array (
       'label' => 'openFilters',
 >>>>>>> 54f4fa16 (.)

@@ -57,6 +57,7 @@ If the project maintainer has any additional requirements, you will find them li
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 35e9b7ea (feat(scripts): add script to rename files to lowercase while preserving README.md case for consistency and organization)
@@ -243,3 +244,5 @@ If the project maintainer has any additional requirements, you will find them li
 =======
 >>>>>>> aa3c639 (✨ (initial): add initial project structure with configuration files and actions for chart generation)
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> 15cb84fb (fix collisions)

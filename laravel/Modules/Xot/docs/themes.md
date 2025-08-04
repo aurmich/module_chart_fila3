@@ -92,8 +92,12 @@ Per personalizzare un tema:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 15cb84fb (fix collisions)

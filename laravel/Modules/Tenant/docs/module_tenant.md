@@ -305,6 +305,7 @@ composer format        # Formatta il codice
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 Le modifiche vengono tracciate nel repository GitHub. 
@@ -319,3 +320,6 @@ Le modifiche vengono tracciate nel repository GitHub.
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+Le modifiche vengono tracciate nel repository GitHub. 
+>>>>>>> 15cb84fb (fix collisions)

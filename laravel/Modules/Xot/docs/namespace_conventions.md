@@ -49,6 +49,7 @@ Modules/
 
 ## Motivazione
 Questa convenzione:
+<<<<<<< HEAD
 # convenzioni per i namespace nei moduli
 
 ## regola assoluta e inviolabile
@@ -256,6 +257,8 @@ php artisan phpstan:analyse --level=1 Modules/SaluteOra
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 - Mantiene i namespace puliti e coerenti
 - Evita confusione con la struttura delle directory
 - Facilita l'autoloading e la navigazione del codice
@@ -266,6 +269,7 @@ php artisan phpstan:analyse --level=1 Modules/SaluteOra
 - Non ci sono eccezioni a questa regola
 - I file possono essere fisicamente in `app/` ma il namespace non deve rifletterlo
 - Questa convenzione è obbligatoria per mantenere la compatibilità con il framework
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -341,3 +345,5 @@ php artisan view:clear
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> 15cb84fb (fix collisions)

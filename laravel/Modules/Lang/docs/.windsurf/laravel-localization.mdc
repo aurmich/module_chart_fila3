@@ -5,6 +5,7 @@
 This document provides metadata for Windsurf about the integration of `mcamara/laravel-localization` into the `saluteora` project.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 76e32659 (feat(docs): add new rules for SVG icons, XotBaseListRecords, icon naming, and model states best practices to improve consistency and maintainability across modules)
 # Laravel Localization Metadata for Windsurf
@@ -17,6 +18,8 @@ This document provides metadata for Windsurf about the integration of `mcamara/l
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 76e32659 (feat(docs): add new rules for SVG icons, XotBaseListRecords, icon naming, and model states best practices to improve consistency and maintainability across modules)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 
 ## Key Points
 
@@ -28,6 +31,7 @@ This document provides metadata for Windsurf about the integration of `mcamara/l
   - Use middleware for automatic language detection and redirection.
   - Generate localized URLs using provided helpers.
 - **Benefits**: Seamless language switching and improved accessibility for users.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -54,3 +58,5 @@ This document provides metadata for Windsurf about the integration of `mcamara/l
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 76e32659 (feat(docs): add new rules for SVG icons, XotBaseListRecords, icon naming, and model states best practices to improve consistency and maintainability across modules)
+=======
+>>>>>>> 15cb84fb (fix collisions)

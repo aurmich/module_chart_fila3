@@ -1,6 +1,7 @@
 <?php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 declare(strict_types=1);
 
@@ -15,6 +16,9 @@ $email = request()->query('email', '');
 =======
 >>>>>>> 54f4fa16 (.)
 declare(strict_types=1);
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;

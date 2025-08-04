@@ -80,11 +80,15 @@ class NotificationResource extends XotBaseResource
 - [Gestione Risorse](../../../docs/architecture/resources.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regole XotBaseResource](../../../docs/regole/xotbaseresource-rules.md)
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+- [Regole XotBaseResource](../../../docs/regole/xotbaseresource-rules.md)
+>>>>>>> 15cb84fb (fix collisions)
 
 ### Collegamenti ai Moduli
 - [Notify Resource](../../Notify/docs/filament-resources.md)

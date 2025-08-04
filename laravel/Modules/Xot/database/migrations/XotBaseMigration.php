@@ -138,6 +138,11 @@ abstract class XotBaseMigration extends Migration
         return $this->getConn()->hasColumn($this->getTable(), $column);
     }
 
+    public function hasTable(string $table): bool
+    {
+        return $this->getConn()->hasTable($table);
+    }
+
     public function getColumnType(string $column): string
     {
         try {
@@ -377,6 +382,7 @@ abstract class XotBaseMigration extends Migration
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * Add a foreign ID column to the table based on a related model.
      *
@@ -408,4 +414,6 @@ abstract class XotBaseMigration extends Migration
         return $this->getConn()->hasTable($table);
     } 
 >>>>>>> 35a7c2ee (- homeboarding chiara)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 }// end XotBaseMigration

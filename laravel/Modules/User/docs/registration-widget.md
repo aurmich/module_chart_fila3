@@ -47,6 +47,7 @@ public function mount(string $type): void
     $this->type = $type;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     $this->resource = XotData::make()->getUserResourceClassByType($type);
 =======
     $this->resource = XotData::make()->getUserTypeResourceClass($type);
@@ -54,6 +55,9 @@ public function mount(string $type): void
 =======
     $this->resource = XotData::make()->getUserResourceClassByType($type);
 >>>>>>> ca5e1eaf (.)
+=======
+    $this->resource = XotData::make()->getUserTypeResourceClass($type);
+>>>>>>> 15cb84fb (fix collisions)
     $this->model = $this->resource::getModel();
     $this->action = Str::of($this->model)->replace('\\Models\\', '\\Actions\\')->append('\\RegisterAction')->toString();
     $this->form->fill();

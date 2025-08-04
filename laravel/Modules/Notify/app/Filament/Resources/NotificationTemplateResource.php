@@ -28,6 +28,7 @@ class NotificationTemplateResource extends XotBaseResource
     protected static ?string $model = NotificationTemplate::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     protected static ?string $navigationIcon = 'heroicon-o-bell';
@@ -52,6 +53,8 @@ class NotificationTemplateResource extends XotBaseResource
     }
 >>>>>>> 54f4fa16 (.)
 
+=======
+>>>>>>> 15cb84fb (fix collisions)
     public static function getFormSchema(): array
     {
         return [

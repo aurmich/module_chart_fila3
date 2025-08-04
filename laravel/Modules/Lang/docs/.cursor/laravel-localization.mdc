@@ -5,6 +5,7 @@
 This document provides metadata for Cursor about the integration of `mcamara/laravel-localization` into the `saluteora` project.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 76e32659 (feat(docs): add new rules for SVG icons, XotBaseListRecords, icon naming, and model states best practices to improve consistency and maintainability across modules)
 # Laravel Localization Metadata for Cursor
@@ -17,6 +18,8 @@ This document provides metadata for Cursor about the integration of `mcamara/lar
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 76e32659 (feat(docs): add new rules for SVG icons, XotBaseListRecords, icon naming, and model states best practices to improve consistency and maintainability across modules)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 
 ## Key Points
 
@@ -28,6 +31,7 @@ This document provides metadata for Cursor about the integration of `mcamara/lar
   - Register middleware for language redirects.
   - Implement language selector UI component.
 - **Benefits**: Improved user experience with localized URLs and translated routes.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -54,3 +58,5 @@ This document provides metadata for Cursor about the integration of `mcamara/lar
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 76e32659 (feat(docs): add new rules for SVG icons, XotBaseListRecords, icon naming, and model states best practices to improve consistency and maintainability across modules)
+=======
+>>>>>>> 15cb84fb (fix collisions)

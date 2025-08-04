@@ -4,6 +4,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 # ⚠️ Regola fondamentale: MAI usare chiavi che terminano con `.navigation` nei file di traduzione
@@ -32,6 +33,8 @@
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 ## Struttura Corretta per le Traduzioni
 
 Le traduzioni in Filament devono seguire questa struttura nei file di traduzione:
@@ -107,8 +110,12 @@ TextInput::make('title')
 Questo documento è linkato anche dalla documentazione del modulo Cms per garantire coerenza tra i moduli.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+=======
+>>>>>>> 15cb84fb (fix collisions)
 
 # ⚠️ Regola vincolante: MAI usare ->label() nei componenti Filament
 
@@ -130,9 +137,13 @@ Tutte le label, placeholder, messaggi e azioni relativi a disponibilità e appun
 - DRY, KISS, serenità del codice
 - Refactoring sicuro, massima estendibilità
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
 >>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
+=======
+>>>>>>> 2c07066 (.)
+>>>>>>> 15cb84fb (fix collisions)

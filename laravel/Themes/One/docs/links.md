@@ -1,10 +1,9 @@
-# Collegamenti Theme One (Multiprogetto)
+https://github.com/themesberg/tailwind-laravel-starter
+https://github.com/themesberg/flowbite-laravel
+https://github.com/themesberg/volt-laravel-dashboard
 
-## Collegamenti in Uscita
-- [Docs CMS](../../../Modules/Cms/docs/README.md)
-- [Docs Theme Two](../../../Themes/Two/_docs/links.txt)
-- [Docs Root](../../../docs/INDEX.md)
 
+<<<<<<< HEAD
 ## Collegamenti in Entrata
 - [Docs CMS](../../../Modules/Cms/docs/LINKS.md)
 - [Docs Root](../../../docs/INDEX.md)
@@ -55,4 +54,6 @@
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 35e9b7ea (feat(scripts): add script to rename files to lowercase while preserving README.md case for consistency and organization)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 

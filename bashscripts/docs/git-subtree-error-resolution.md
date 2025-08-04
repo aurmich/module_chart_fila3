@@ -22,10 +22,13 @@ Il sistema di gestione dei subtree è composto da tre componenti principali:
 ### 2. Push Script (`git_push_subtree.sh`)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```bash
 
 =======
 
+=======
+>>>>>>> 15cb84fb (fix collisions)
 ```bash
 >>>>>>> 54f4fa16 (.)
 # 1. Inizializzazione
@@ -40,10 +43,14 @@ git fetch --all
 git add -A
 git commit -am "🔧 Aggiornamento subtree"
 <<<<<<< HEAD
+<<<<<<< HEAD
 git merge origin/"$BRANCH" --allow-unrelated-histories"
 =======
 git merge origin/"$BRANCH" --allow-unrelated-histories
 >>>>>>> 54f4fa16 (.)
+=======
+git merge origin/"$BRANCH" --allow-unrelated-histories"
+>>>>>>> 15cb84fb (fix collisions)
 git push -u origin "$BRANCH"
 ```
 
@@ -63,12 +70,17 @@ git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH"
 git fetch "$REMOTE_REPO" "$BRANCH" --depth=1
 git merge -s subtree FETCH_HEAD --allow-unrelated-histories
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```
 
 =======
 
 aurmich/dev
 >>>>>>> 54f4fa16 (.)
+=======
+```
+
+>>>>>>> 15cb84fb (fix collisions)
 Esegue una sequenza complessa di operazioni:
 ```bash
 1. git add -A && git commit -am "."
@@ -83,9 +95,12 @@ Esegue una sequenza complessa di operazioni:
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ### 3. Pull Script (`git_pull_subtree.sh`)
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 Esegue una sequenza con fallback:
 ```bash
 1. git subtree pull -P $LOCAL_PATH $REMOTE_REPO $REMOTE_BRANCH --squash
@@ -95,11 +110,14 @@ Esegue una sequenza con fallback:
    - git merge -s subtree FETCH_HEAD --allow-unrelated-histories
 4. git rebase --rebase-merges --strategy subtree $REMOTE_BRANCH
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
  43df3e0 (.)
 aurmich/dev
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 ```
 
 ## 🚨 Analisi Errori Comuni
@@ -130,10 +148,13 @@ fi
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 **Causa**: Divergenze tra repository locale e remoto
 
 **Soluzione**:
@@ -146,8 +167,12 @@ git merge origin/"$BRANCH" --allow-unrelated-histories"
 =======
 # Aggiorna repository locale
 git fetch origin "$BRANCH"
+<<<<<<< HEAD
 git merge origin/"$BRANCH" --allow-unrelated-histories
 >>>>>>> 54f4fa16 (.)
+=======
+git merge origin/"$BRANCH" --allow-unrelated-histories"
+>>>>>>> 15cb84fb (fix collisions)
 
 # Riprova push
 if ! git push -u origin "$BRANCH"; then
@@ -216,6 +241,7 @@ fi
   <sub>Built with ❤️ by the development team</sub>
 </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 aurmich/dev
@@ -268,3 +294,5 @@ fi
  43df3e0 (.)
 aurmich/dev
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 15cb84fb (fix collisions)

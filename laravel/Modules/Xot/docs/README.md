@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo Xot - Documentazione
 
 ## 🚀 Panoramica
@@ -195,42 +196,54 @@ class MyWidget extends XotBaseWidget
 =======
 # Xot - Documentazione Principale
 >>>>>>> 2099645a (.)
+=======
+# Modulo Xot
+>>>>>>> 15cb84fb (fix collisions)
 
-## Regole Generali del Progetto
+## Introduzione
 
-### Filament e XotBaseResource
-- [📋 Filament Best Practices](filament-best-practices.md) - **REGOLE GENERALI**: XotBaseResource, namespace, traduzioni, enum
-- [🏗️ Architettura Filament](filament/README.md) - Documentazione architettura Filament
+Il modulo Xot è il core del sistema, fornisce funzionalità base e componenti riutilizzabili per tutti gli altri moduli. Implementa pattern architetturali, gestione degli errori, e componenti UI comuni.
 
-### Sicurezza e Permessi
-- [🔐 Regole Roles/Permissions/Guard](roles-permissions.md) - Gestione ruoli e permessi
+## File Chiave
+- [BaseUser.php](../User/app/Models/BaseUser.php)
+- [User.php](../User/app/Models/User.php)
+- [Doctor.php](../Patient/app/Models/Doctor.php)
+- [DoctorResource.php](../Patient/app/Filament/Resources/DoctorResource.php)
+- [RegisterAction.php](../Patient/app/Actions/RegisterAction.php)
+- [RegistrationWidget.php](../User/app/Filament/Widgets/RegistrationWidget.php)
 
-### Architettura
-- [🏗️ Struttura Progetto](architecture/struttura-progetto.md) - Architettura generale del progetto
+## Componenti Principali
 
-## Collegamenti Bidirezionali
+<<<<<<< HEAD
+### 1. Base Classes
+- `BaseModel`: Classe base per tutti i modelli
+- `BaseController`: Controller base con funzionalità comuni
+- `BaseService`: Service layer base
+- `BaseRepository`: Repository pattern base
 
-### Moduli che Utilizzano XotBase*
-- [📋 SaluteOra Filament Best Practices](../../SaluteOra/docs/filament-best-practices.mdc) - Implementazione specifica SaluteOra
-- [📁 SaluteOra Namespace Rules](../../SaluteOra/docs/namespace-vs-file-structure.md) - Regole namespace SaluteOra
+### 2. Traits
+- `HasUuid`: Generazione UUID per i modelli
+- `HasSlug`: Gestione slug automatica
+- `HasStatus`: Gestione stati dei modelli
+- `HasTimestamps`: Gestione timestamp estesa
+=======
 
-### Regole IDE
-- [📋 Regole Cursor XotBaseResource](../../../.cursor/rules/filament-xotbase-resource-best-practices.mdc) - Regole per IDE Cursor
-- [📋 Regole Windsurf XotBaseResource](../../../.windsurf/rules/filament-xotbase-resource-best-practices.mdc) - Regole per IDE Windsurf
-- [📁 Regole Namespace](../../../.cursor/rules/namespace-structure-rules.mdc) - Regole struttura namespace e directory
+- [Volt Folio Best Practices](./VOLT_FOLIO_BEST_PRACTICES.md) - Best practices per Volt e Folio
+- [Volt Folio Best Practices](./VOLT_FOLIO_BEST_PRACTICES.md) - Best practices per Volt e Foliob6f667c (.)
 
-## Filosofia del Progetto
 
-### Principi Fondamentali
-- **DRY (Don't Repeat Yourself)**: Centralizzazione delle configurazioni comuni
-- **KISS (Keep It Simple, Stupid)**: Convenzioni chiare e semplici
-- **Coerenza**: Tutti i moduli seguono le stesse regole
-- **Manutenibilità**: Modifiche globali senza toccare ogni singola risorsa
-- **Scalabilità**: Architettura che cresce senza aumentare la complessità
+### Filament
+- [Filament Integration](./filament_integration.md) - Integrazione con Filament
+- [Widgets](./widgets.md) - Sistema widget
+- [Resources](./resources.md) - Gestione risorse
+>>>>>>> 0e2182f (.)
 
-### Zen del Progetto
-> "La semplicità è la sofisticazione suprema. Un sistema ben progettato nasconde la complessità dietro un'interfaccia semplice."
+### 3. Interfaces
+- `RepositoryInterface`: Contratto base per i repository
+- `ServiceInterface`: Contratto base per i service
+- `ActionInterface`: Contratto base per le actions
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ## Introduzione
 Il modulo Xot è il modulo base che fornisce le classi e le funzionalità fondamentali per gli altri moduli. Gestisce l'integrazione con Filament, Livewire e Volt, fornendo una base solida per lo sviluppo di applicazioni modulari.
@@ -375,6 +388,40 @@ Il modulo Xot è il cuore dell'architettura dell'applicazione. Fornisce le class
 
 ```
 Modules/Xot/
+=======
+### 4. Exceptions
+- `BaseException`: Classe base per le eccezioni
+- `ValidationException`: Gestione errori di validazione
+- `NotFoundException`: Gestione risorse non trovate
+- `AuthorizationException`: Gestione errori di autorizzazione
+
+## Best Practices
+
+### 1. Ereditarietà
+- Estendere sempre le classi base appropriate
+- Implementare le interfacce richieste
+- Usare i trait forniti quando necessario
+
+### 2. Error Handling
+- Usare le eccezioni custom fornite
+- Implementare logging appropriato
+- Gestire gli errori in modo consistente
+
+### 3. Validation
+- Usare le regole di validazione base
+- Estendere le regole quando necessario
+- Mantenere la validazione consistente
+
+## Dependencies
+- Laravel Framework
+- Filament
+- Parental
+- Laravel Modules
+
+## Struttura
+```
+Xot/
+>>>>>>> 15cb84fb (fix collisions)
 ├── app/
 │   ├── Models/
 │   │   └── XotBaseModel.php
@@ -515,12 +562,16 @@ class User extends XotBaseModel { ... }
 1. Clona il repository
 2. Installa le dipendenze
 3. Configura l'ambiente
+<<<<<<< HEAD
 4. Esegui i test con Pest:
    ```bash
    pest
    ```
 
 > Tutti i nuovi test devono essere scritti con [Pest](https://pestphp.com/). Non usare più PHPUnit direttamente.
+=======
+4. Esegui i test
+>>>>>>> 15cb84fb (fix collisions)
 
 ### Convenzioni di Codice
 - Seguire PSR-12
@@ -579,6 +630,7 @@ class User extends XotBaseModel { ... }
 - Problemi di configurazione
 - Errori di integrazione
 
+<<<<<<< HEAD
 ### Versione HEAD
 
 
@@ -732,6 +784,23 @@ Il modulo è configurabile tramite:
 - [Linee Guida per getInfolistSchema](./filament/INFOLIST_SCHEMA_GUIDELINES.md) - Guida completa per l'implementazione corretta del metodo getInfolistSchema, con focus sull'uso delle chiavi stringa negli array 
 
 ---
+=======
+## Best Practices XotBaseResource
+
+> **Regola vincolante:** Se una risorsa estende `XotBaseResource`, NON deve mai dichiarare:
+> - `protected static ?string $navigationGroup`
+> - `protected static ?string $navigationLabel`
+> - `public static function table(Table $table): Table`
+
+La configurazione di navigazione e la definizione della tabella sono centralizzate nella classe base o nei provider.
+
+**Checklist:**
+- [ ] Nessuna dichiarazione di navigationGroup/navigationLabel/table() nelle risorse che estendono XotBaseResource
+- [ ] Configurazione centralizzata e DRY
+
+**Vedi anche:**
+- [filament-xotbase-resource-best-practices.mdc](../../../.cursor/rules/filament-xotbase-resource-best-practices.mdc)
+>>>>>>> 15cb84fb (fix collisions)
 
 ## Documentazione Filament
 
@@ -746,7 +815,10 @@ Il modulo è configurabile tramite:
 ## Documentazione Filament
 - [Linee Guida per getInfolistSchema](./filament/INFOLIST_SCHEMA_GUIDELINES.md) - Guida completa per l'implementazione corretta del metodo getInfolistSchema, con focus sull'uso delle chiavi stringa negli array 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 15cb84fb (fix collisions)
 ## Politica, Filosofia, Religione, Etica, Zen
 
 - **Politica**: Il modulo Xot promuove collaborazione, trasparenza e inclusività, senza discriminazioni.
@@ -755,6 +827,10 @@ Il modulo è configurabile tramite:
 - **Etica**: Onestà, rispetto, responsabilità, attenzione all'impatto sociale e ambientale.
 - **Zen**: Semplicità, concentrazione sul presente, armonia e serenità nello sviluppo.b6f667c (.)
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
 ## Service Provider: Decisione Architetturale (2025-05-13)
 
 Il provider `XotBaseServiceProvider` è progettato per:
@@ -779,6 +855,7 @@ Consulta le [best practices aggiornate](./providers/service_provider_best_practi
 - [Collegamento a docs/links.md della root](../../../../docs/links.md)
 - **Zen**: Semplicità, concentrazione sul presente, armonia e serenità nello sviluppo.
 
+<<<<<<< HEAD
 ## Regole Generali: Eventi e Spatie Laravel Data
 
 - **Pattern consigliato**: Passare agli eventi oggetti che estendono [Spatie Laravel Data](https://spatie.be/docs/laravel-data/v4/introduction) invece di array o primitive.
@@ -929,3 +1006,163 @@ Undefined array key "Modules\SaluteOra\States\User\Pending"
 =======
 Altre sezioni...
 >>>>>>> bead9c28 (fix case)
+=======
+<<<<<<< HEAD
+## Errori Comuni e Soluzioni (Best Practice)
+
+1. **ValidationException custom**
+   - ✅ throw ValidationException::withMessages(['email' => ['Messaggio personalizzato']]);
+
+2. **Fallback enum/status**
+   - Usare metodo privato per fallback:
+   ```php
+   private function getDoctorRegistrationStatus(): string {
+       if (!class_exists(DoctorRegistrationStatus::class)) return 'pending';
+       try {
+           foreach (DoctorRegistrationStatus::cases() as $case) {
+               if (strtolower($case->name) === 'pending') return $case->value;
+           }
+           return 'pending';
+       } catch (\Exception $e) { return 'pending'; }
+   }
+   ```
+
+3. **Controllo su modello specializzato**
+   - ✅ Doctor::where('email', ...)
+
+## Checklist Generale
+- [ ] Namespace corretti
+- [ ] Ereditarietà STI
+- [ ] Proprietà deprecate rimosse
+- [ ] Error handling idiomatico
+- [ ] Fallback enum/status
+- [ ] Collegamenti bidirezionali
+- [ ] Test e validazione
+
+## Collegamenti
+- [Patient Errori e Soluzioni](../../Patient/docs/models.md)
+- [Patient Workflow](../../Patient/docs/doctor-registration-workflow.md)
+- [Error Handling Xot](./error-handling.md)
+
+# Errori di Validazione Custom
+
+Per errori custom nei form, usa sempre:
+
+```php
+throw \Illuminate\Validation\ValidationException::withMessages([
+    'campo' => ['Messaggio di errore personalizzato.'],
+]);
+```
+
+Vedi dettagli in [error-handling.md](./error-handling.md) e [Patient: errors/validation.md](../../Patient/docs/errors/validation.md)
+
+# Regola: Non duplicare trait già presenti nei modelli base
+
+Se un trait (es. HasFactory) è già presente in un modello base, **non aggiungerlo** nei modelli che lo estendono.
+
+Motivazione: evitare ridondanza, warning, confusione e problemi di override.
+
+# Checklist di Ripartenza (dopo restart)
+- Verifica che tutte le migration siano applicate nei moduli
+- Controlla che i trait NON siano duplicati nei modelli specializzati
+- Verifica la catena di ereditarietà nei modelli STI
+- Controlla che la documentazione sia aggiornata e neutra
+- Controlla i file chiave:
+  - [BaseUser.php](../User/app/Models/BaseUser.php)
+  - [User.php](../User/app/Models/User.php)
+  - [Doctor.php](../Patient/app/Models/Doctor.php)
+  - [DoctorResource.php](../Patient/app/Filament/Resources/DoctorResource.php)
+  - [RegisterAction.php](../Patient/app/Actions/RegisterAction.php)
+  - [RegistrationWidget.php](../User/app/Filament/Widgets/RegistrationWidget.php)
+- Consulta le sezioni:
+  - [Error Handling](error-handling.md)
+  - [Best Practices](best-practices/README.md)
+  - [Ereditarietà](standards/README.md)
+  - [Migrazioni](../Patient/docs/database/migrations.md)
+
+## Reminder
+- Documentazione sempre neutra e riutilizzabile
+- Aggiornare sempre la doc PRIMA di ogni modifica
+- Validazione custom solo con ValidationException::withMessages
+- Non duplicare trait già presenti nei modelli base
+
+---
+
+Dopo ogni restart, esegui la checklist sopra per evitare errori ricorrenti.
+
+# AVVISO IMPORTANTE: Regole Fondamentali e Checklist di Ripartenza
+
+> **Prima di ogni sviluppo o dopo ogni riavvio:**
+> - Consulta la [checklist di ripartenza](./checklist-di-ripartenza.md) o la versione locale se presente
+> - Applica SEMPRE le [Filament Best Practices](./filament-best-practices.md)
+> - Ricorda: nessun riferimento a progetti/brand nelle doc dei moduli
+> - Non duplicare mai trait già presenti nei modelli base
+> - Usa solo ValidationException::withMessages per errori custom
+> - Aggiorna la doc PRIMA di ogni modifica
+> - Se trovi un warning o errore, aggiorna subito la doc e segnala la regola
+
+## Collegamenti rapidi
+- [Filament Best Practices](./filament-best-practices.md)
+- [Neutralità documentazione](./module-documentation-neutrality.md)
+- [Ereditarietà modelli](./model-inheritance-best-practices.md)
+- [Checklist di ripartenza](./checklist-di-ripartenza.md)
+
+---
+
+- [ ] Rispetta la [regola PSR-4 Namespace](./psr4-namespaces.md) per tutti i file in app/
+=======
+## Proprietà fondamentali del ServiceProvider (Laraxot/PTVX)
+
+Tutti i provider dei moduli che estendono XotBaseServiceProvider **devono** dichiarare:
+- `protected string $module_dir = __DIR__;`
+- `protected string $module_ns = __NAMESPACE__;`
+- `public string $name = 'Xot';`
+
+Queste proprietà sono necessarie per:
+- La risoluzione automatica dei path delle risorse
+- Il corretto namespace per autoloading e publish
+- L'identificazione del modulo nelle operazioni di asset publish
+
+### Esempio
+```php
+class XotServiceProvider extends XotBaseServiceProvider
+{
+    protected string $module_dir = __DIR__;
+    protected string $module_ns = __NAMESPACE__;
+    public string $name = 'Xot';
+}
+```
+
+**Motivazione:**  
+- Se mancano queste proprietà, alcune risorse potrebbero non essere caricate correttamente.
+- La dichiarazione esplicita garantisce portabilità, manutenibilità e coerenza tra tutti i moduli.
+
+**Approfondimenti:**  
+- Vedi anche [../../../../docs/provider_overview.md](../../../../docs/provider_overview.md)
+- Vedi anche [model_base_rules.md](model_base_rules.md)
+
+## Regola per i file .sh (script shell)
+
+Tutti i file `.sh` (script shell) devono essere posizionati esclusivamente in una sottocartella dedicata chiamata `bashscripts` (ad esempio `docs/bashscripts/`).
+Non devono mai trovarsi direttamente nella root di `docs/` o in altre sottocartelle generiche.
+
+**Motivazione:**
+- Ordine e reperibilità: tutti gli script shell sono facilmente individuabili e gestibili.
+- Sicurezza: si evita l'esecuzione accidentale di script non previsti.
+- Coerenza cross-modulo e tra root/moduli.
+
+**Esempio di struttura corretta:**
+```
+docs/
+└── bashscripts/
+    ├── deploy.sh
+    ├── clear_cache.sh
+    └── backup_db.sh
+```
+
+**Checklist aggiornata:**
+- [x] Nessun file .sh fuori da bashscripts/
+- [x] Documentazione aggiornata
+- [x] Struttura coerente in tutti i moduli
+>>>>>>> 0e2182f (.)
+>>>>>>> 15cb84fb (fix collisions)

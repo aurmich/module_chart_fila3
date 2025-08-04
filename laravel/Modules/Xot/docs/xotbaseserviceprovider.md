@@ -199,6 +199,9 @@ Vedi anche [registerBladeIcons.md](./registerBladeIcons.md) per la gestione cent
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 15cb84fb (fix collisions)
 ## Console Commands: Religione, Politica, Filosofia, Zen
 
 ### Principio
@@ -230,7 +233,10 @@ $this->commands([
 ### Zen finale
 > "Il miglior comando è quello che non devi mai registrare a mano."
 
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 15cb84fb (fix collisions)

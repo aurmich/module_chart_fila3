@@ -98,8 +98,12 @@ edit file composer.json
 >>>>>>> aurmich/dev
 =======
         "filament/filament": "^3.3",
+<<<<<<< HEAD
         "laravel/framework": "^11.9",
 >>>>>>> 54f4fa16 (.)
+=======
+        "laravel/framework": "^12.0",
+>>>>>>> 15cb84fb (fix collisions)
         "nwidart/laravel-modules": "^11.0"
     },
     "require-dev": {

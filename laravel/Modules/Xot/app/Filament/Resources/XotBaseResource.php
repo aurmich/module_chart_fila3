@@ -120,6 +120,7 @@ abstract class XotBaseResource extends FilamentResource
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     abstract public static function getFormSchema(): array;
     
 =======
@@ -136,6 +137,9 @@ abstract class XotBaseResource extends FilamentResource
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+    abstract public static function getFormSchema(): array;
+>>>>>>> 15cb84fb (fix collisions)
 
     final public static function form(Form $form): Form
     {
@@ -192,6 +196,7 @@ abstract class XotBaseResource extends FilamentResource
         $view = $view;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
@@ -199,6 +204,9 @@ abstract class XotBaseResource extends FilamentResource
 =======
 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+        
+>>>>>>> 15cb84fb (fix collisions)
         /** @var array<string, \Filament\Resources\Pages\PageRegistration> $pages */
         $pages = [
             'index' => $index::route('/'),
@@ -224,6 +232,7 @@ abstract class XotBaseResource extends FilamentResource
         Assert::string($filename);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
@@ -231,6 +240,9 @@ abstract class XotBaseResource extends FilamentResource
 =======
 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+        
+>>>>>>> 15cb84fb (fix collisions)
         $path = Str::of($filename)
             ->before('.php')
             ->append(DIRECTORY_SEPARATOR)
@@ -241,6 +253,7 @@ abstract class XotBaseResource extends FilamentResource
         Assert::isArray($files);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
@@ -248,6 +261,9 @@ abstract class XotBaseResource extends FilamentResource
 =======
 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+        
+>>>>>>> 15cb84fb (fix collisions)
         /** @var array<class-string<\Filament\Resources\RelationManagers\RelationManager>> $res */
         $res = [];
         foreach ($files as $file) {
@@ -258,6 +274,7 @@ abstract class XotBaseResource extends FilamentResource
                 ->toString();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
@@ -265,6 +282,9 @@ abstract class XotBaseResource extends FilamentResource
 =======
 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+            
+>>>>>>> 15cb84fb (fix collisions)
             if (class_exists($className)) {
                 Assert::subclassOf($className, \Filament\Resources\RelationManagers\RelationManager::class);
                 $res[] = $className;

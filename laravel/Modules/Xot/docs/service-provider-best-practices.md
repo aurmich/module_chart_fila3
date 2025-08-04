@@ -507,6 +507,7 @@ class RouteServiceProvider extends ServiceProvider
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 b6f667c (.)
 ### Errore: Eventi non ascoltati
@@ -519,6 +520,12 @@ b6f667c (.)
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 =======
 >>>>>>> bead9c28 (fix case)
+=======
+b6f667c (.)
+### Errore: Eventi non ascoltati
+=======
+>>>>>>> 0e2182f (.)
+>>>>>>> 15cb84fb (fix collisions)
 
 **Soluzione:** Verificare che:
 1. L'Event Provider estenda `BaseEventServiceProvider`
@@ -546,9 +553,12 @@ b6f667c (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 
 
 # Best Practices per ServiceProvider
@@ -800,6 +810,7 @@ public function boot(): void
 **Collegamento:** Vedi anche [XotBaseServiceProvider.md](./XotBaseServiceProvider.md)
 - [filament-best-practices.md](filament-best-practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9df8f556 (fix .md)
@@ -807,3 +818,7 @@ public function boot(): void
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 =======
 >>>>>>> bead9c28 (fix case)
+=======
+=======
+>>>>>>> 0e2182f (.)
+>>>>>>> 15cb84fb (fix collisions)

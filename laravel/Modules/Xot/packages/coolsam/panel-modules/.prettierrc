@@ -1,6 +1,7 @@
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "singleQuote": true,
     "endOfLine": "auto",
     "proseWrap": "preserve",
@@ -57,3 +58,9 @@
   }
   
 >>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
+=======
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+}
+>>>>>>> 15cb84fb (fix collisions)

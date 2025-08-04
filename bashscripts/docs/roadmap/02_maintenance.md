@@ -1,9 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 # 🛠️ Fase 2: Manutenzione
 
 ## 📋 Panoramica
@@ -47,18 +50,24 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
    - Alerting proattivo
    - Report automatizzati
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 2. **Sicurezza**:
    - Verifica integrità dati
    - Backup crittografati
    - Controllo accessi
    - Audit log
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 3. **Performance**:
    - Ottimizzazione risorse
    - Caching intelligente
@@ -111,6 +120,9 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
 - Cron
 - Systemd
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 15cb84fb (fix collisions)
 - Bash
 
 ---
@@ -130,6 +142,7 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
 ---
 
 Per ulteriori dettagli, consultare la documentazione degli script specifici e le sezioni successive della roadmap.
+<<<<<<< HEAD
 =======
 - Bash 
 
@@ -241,5 +254,7 @@ aurmich/dev
 * [02_maintenance.md](bashscripts/docs/roadmap/02_maintenance.md)
 * [02_maintenance.md](docs/roadmap/02_maintenance.md)
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 
 

@@ -94,6 +94,7 @@ return array (
 >>>>>>> aurmich/dev
       'placeholder' => 'remember',
     ),
+<<<<<<< HEAD
     'cap' => 
     array (
       'description' => 'cap',
@@ -545,5 +546,7 @@ return array (
       'description' => 'city',
     ),
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 15cb84fb (fix collisions)
   ),
 );

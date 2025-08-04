@@ -262,12 +262,16 @@ b6f667c (.)
 =======
 b6f667c (.)
 
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 =======
 b6f667c (.)
 
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
 # Struttura del Modulo Xot
 
 ## Struttura delle Directory
@@ -1098,6 +1102,7 @@ tests_old
 aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 5693302 (.)
 b6f667c (.)
 
@@ -1107,6 +1112,11 @@ b6f667c (.)
 =======
 5693302 (.)b6f667c (.)
 >>>>>>> 54f4fa16 (.)
+=======
+5693302 (.)
+b6f667c (.)
+
+>>>>>>> 15cb84fb (fix collisions)
 
 ## Regole sui Comandi Artisan Custom nei Moduli
 

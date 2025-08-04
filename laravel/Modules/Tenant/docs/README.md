@@ -1,14 +1,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo Tenant - Modular Monolith
+=======
+# Modulo Tenant
+>>>>>>> 15cb84fb (fix collisions)
 
-## Architettura Modular Monolith: Best Practices 2025
+## Panoramica
+Il modulo Tenant gestisce il multi-tenancy dell'applicazione, fornendo un sistema completo per la gestione di tenant multipli, isolamento dei dati e configurazioni specifiche per ogni tenant.
 
-Questa sezione integra i principi dell'articolo "Architecting Laravel the Right Way: Modular Monoliths Done Right" (Mohamad Shahkhajeh, 2025) e le migliori pratiche moderne per la progettazione di moduli Laravel realmente indipendenti e manutenibili.
+### Versione HEAD
 
-### 1. Cos'è un Modular Monolith?
-Un monolite modulare è un'unica applicazione con moduli interni **ben separati**, ognuno con il proprio dominio, interfacce minime esposte e logica interna nascosta. Si distribuisce una sola app, ma ogni modulo è isolato e pronto per evolvere (anche verso microservizi, se necessario).
 
+<<<<<<< HEAD
 ### 2. Struttura a Livelli (Hexagonal/DDD)
 Ogni modulo segue una struttura ispirata all'architettura esagonale:
 
@@ -485,6 +489,9 @@ return [
 - [Roadmap](roadmap.md)
 - [Documentazione Filament](filament_resources.md)
 >>>>>>> eec4376e (📝 (README.md): update documentation to provide a comprehensive overview of the Tenant module and its architecture, principles, best practices, and integration guidelines to enhance understanding for developers)
+=======
+### Versione Incoming
+>>>>>>> 15cb84fb (fix collisions)
 
 ## Collegamenti correlati
 - [README.md documentazione generale](../../../docs/README.md)
@@ -795,12 +802,64 @@ Tenant::current()->configure([
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 ## Collegamenti sulla risoluzione dei conflitti
+=======
+## Proprietà fondamentali del ServiceProvider (Laraxot/PTVX)
+>>>>>>> 15cb84fb (fix collisions)
 
-- [Risoluzione conflitti nel modulo Tenant](risoluzione_conflitti.md)
-- [Linee guida globali per la risoluzione dei conflitti git](../../../docs/risoluzione_conflitti_git.md)
+Tutti i provider dei moduli che estendono XotBaseServiceProvider **devono** dichiarare:
+- `protected string $module_dir = __DIR__;`
+- `protected string $module_ns = __NAMESPACE__;`
+- `public string $name = 'Tenant';`
+
+Queste proprietà sono necessarie per:
+- La risoluzione automatica dei path delle risorse
+- Il corretto namespace per autoloading e publish
+- L'identificazione del modulo nelle operazioni di asset publish
+
+### Esempio
+```php
+class TenantServiceProvider extends XotBaseServiceProvider
+{
+    protected string $module_dir = __DIR__;
+    protected string $module_ns = __NAMESPACE__;
+    public string $name = 'Tenant';
+}
+```
+
+**Motivazione:**  
+- Se mancano queste proprietà, alcune risorse potrebbero non essere caricate correttamente.
+- La dichiarazione esplicita garantisce portabilità, manutenibilità e coerenza tra tutti i moduli.
+
+**Approfondimenti:**  
+- Vedi anche [../../../../docs/PROVIDER_OVERVIEW.md](../../../../docs/PROVIDER_OVERVIEW.md)
+
+## Regola per i file .sh (script shell)
+
+Tutti i file `.sh` (script shell) devono essere posizionati esclusivamente in una sottocartella dedicata chiamata `bashscripts` (ad esempio `docs/bashscripts/`).
+Non devono mai trovarsi direttamente nella root di `docs/` o in altre sottocartelle generiche.
+
+**Motivazione:**
+- Ordine e reperibilità: tutti gli script shell sono facilmente individuabili e gestibili.
+- Sicurezza: si evita l'esecuzione accidentale di script non previsti.
+- Coerenza cross-modulo e tra root/moduli.
+
+**Esempio di struttura corretta:**
+```
+docs/
+└── bashscripts/
+    ├── deploy.sh
+    ├── clear_cache.sh
+    └── backup_db.sh
+```
+
+**Checklist aggiornata:**
+- [x] Nessun file .sh fuori da bashscripts/
+- [x] Documentazione aggiornata
+- [x] Struttura coerente in tutti i moduli
 
 <<<<<<< HEAD
 =======

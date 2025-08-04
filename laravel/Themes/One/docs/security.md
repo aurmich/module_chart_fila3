@@ -82,6 +82,7 @@ class Password implements Rule
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2099645a (.)
 // app/Actions/EncryptionAction.php
@@ -95,6 +96,10 @@ class EncryptionService
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 2099645a (.)
+=======
+// app/Services/EncryptionService.php
+class EncryptionService
+>>>>>>> 15cb84fb (fix collisions)
 {
     public function encrypt($data)
     {
@@ -112,6 +117,7 @@ class EncryptionService
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2099645a (.)
 // app/Actions/SanitizationAction.php
@@ -125,6 +131,10 @@ class SanitizationService
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 2099645a (.)
+=======
+// app/Services/SanitizationService.php
+class SanitizationService
+>>>>>>> 15cb84fb (fix collisions)
 {
     public function sanitize($input)
     {
@@ -248,9 +258,3 @@ export const validateInput = (input, pattern) => {
 - [Componenti](../components.md)
 - [Guida allo Stile](../style_guide.md)
 - [Best Practices](../best_practices.md) 
-
-## Collegamenti tra versioni di security.md
-* [security.md](laravel/Modules/Gdpr/docs/packages/security.md)
-* [security.md](laravel/Modules/Cms/docs/frontoffice/security.md)
-* [security.md](laravel/Themes/One/docs/security.md)
-

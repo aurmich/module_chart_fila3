@@ -7,11 +7,15 @@ namespace Modules\User\Filament\Resources\BaseProfileResource\Pages;
 use Filament\Actions\DeleteAction;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Actions\EditAction;
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+use Filament\Actions\EditAction;
+>>>>>>> 15cb84fb (fix collisions)
 use Filament\Infolists\Components;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Infolists\Infolist;
@@ -34,7 +38,10 @@ class ViewProfile extends \Modules\Xot\Filament\Resources\Pages\XotBaseViewRecor
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 15cb84fb (fix collisions)
     /*
     protected function getHeaderActions(): array
     {
@@ -44,6 +51,7 @@ class ViewProfile extends \Modules\Xot\Filament\Resources\Pages\XotBaseViewRecor
         ];
     }
     */
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 
 =======
@@ -58,6 +66,10 @@ class ViewProfile extends \Modules\Xot\Filament\Resources\Pages\XotBaseViewRecor
     public function getInfolistSchema(): array 
 >>>>>>> 54f4fa16 (.)
 =======
+=======
+=======
+>>>>>>> 7ace243 (.)
+>>>>>>> 15cb84fb (fix collisions)
 
     /**
      * @return array<string, \Filament\Infolists\Components\Component>

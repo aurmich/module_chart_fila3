@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bead9c28 (fix case)
 # Linee Guida PHPStan Livello 10
@@ -104,6 +105,8 @@ public function processValue(?string $value): string
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> bead9c28 (fix case)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 # Linee Guida per PHPStan Livello 10 - Regole Comuni
 
 Questo documento contiene le linee guida generali e le regole comuni per risolvere gli errori PHPStan di livello 10 in tutti i moduli del progetto Laraxot.

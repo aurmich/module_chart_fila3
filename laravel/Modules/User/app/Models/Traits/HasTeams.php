@@ -87,11 +87,18 @@ trait HasTeams
      * Check if the user belongs to a specific team.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function belongsToTeam(TeamContract $team): bool
 =======
     public function belongsToTeam(\Modules\User\Contracts\TeamContract $team): bool
 >>>>>>> 54f4fa16 (.)
+=======
+    public function belongsToTeam(?TeamContract $team): bool
+>>>>>>> 15cb84fb (fix collisions)
     {
+        if ($team === null) {
+            return false;
+        }
         $found = $this->teams()->where('teams.id', $team->id)->first();
         if ($found === null) {
             return false;
@@ -511,6 +518,7 @@ trait HasTeams
      */
     public function switchTeam(?TeamContract $team): bool
     {
+<<<<<<< HEAD
         if ($team === null) {
             return false;
         }
@@ -528,6 +536,8 @@ trait HasTeams
         }
 
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> 15cb84fb (fix collisions)
         if (! $this->belongsToTeam($team)) {
             return false;
         }

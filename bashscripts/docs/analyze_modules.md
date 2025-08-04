@@ -5,6 +5,7 @@ Lo script `analyze_modules.sh` esegue l'analisi PHPStan su tutti i moduli Larave
 
 ## Posizione
 <<<<<<< HEAD
+<<<<<<< HEAD
 `/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/analyze_modules.sh`
 
 ## Utilizzo
@@ -17,6 +18,13 @@ cd /var/www/html/_bases/base_ptvx_fila3_mono
 ```bash
 cd /var/www/html/ptvx
 >>>>>>> 54f4fa16 (.)
+=======
+`/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/analyze_modules.sh`
+
+## Utilizzo
+```bash
+cd /var/www/html/_bases/base_ptvx_fila3_mono
+>>>>>>> 15cb84fb (fix collisions)
 ./bashscripts/analyze_modules.sh
 ```
 
@@ -49,10 +57,14 @@ Modules/<NomeModulo>/docs/phpstan/
 
 ## Variabili di Ambiente
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `BASE_DIR`: Directory base del progetto (`/var/www/html/_bases/base_ptvx_fila3_mono/laravel`)
 =======
 - `BASE_DIR`: Directory base del progetto (`/var/www/html/ptvx/laravel`)
 >>>>>>> 54f4fa16 (.)
+=======
+- `BASE_DIR`: Directory base del progetto (`/var/www/html/_bases/base_ptvx_fila3_mono/laravel`)
+>>>>>>> 15cb84fb (fix collisions)
 - `MODULES_DIR`: Directory dei moduli (`$BASE_DIR/Modules`)
 - `LEVELS`: Array dei livelli PHPStan da analizzare
 
@@ -92,11 +104,14 @@ Modules/<NomeModulo>/docs/phpstan/
    - Permessi insufficienti
    - PHPStan non installato
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Configurazione PHPStan errata
 
 ## Pattern di Risoluzione Errori
 Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzioni più comuni:
 =======
+=======
+>>>>>>> 15cb84fb (fix collisions)
 
 ## Gestione dei Conflitti
 In caso di conflitti durante l'analisi dei moduli:
@@ -110,7 +125,12 @@ In caso di conflitti durante l'analisi dei moduli:
 - [Documentazione PHPStan](../../docs/phpstan/PHPSTAN_WORKFLOW.md)
 - [Linee Guida Moduli](../../docs/MODULES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Risoluzione Conflitti](../../docs/development/CONFLICT_RESOLUTION.md)
+=======
+- [Risoluzione Conflitti](../../docs/development/CONFLICT_RESOLUTION.md)
+=======
+>>>>>>> 15cb84fb (fix collisions)
    - Configurazione PHPStan errata
 
 ## Pattern di Risoluzione Errori
@@ -155,7 +175,10 @@ if ($user !== null) {
 Lo script può essere integrato in pipeline CI/CD per automatizzare l'analisi del codice:
 
 ```yaml
+<<<<<<< HEAD
 
+=======
+>>>>>>> 15cb84fb (fix collisions)
 # Esempio di configurazione GitHub Actions
 name: PHPStan Analysis
 on: [push, pull_request]
@@ -179,6 +202,10 @@ jobs:
 - [Struttura dei Moduli](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/MODULE-STRUCTURE.md)
 - [Best Practices PHPStan](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/PHPSTAN-LEVEL9-GUIDE.md)
 - [Script di Automazione](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/scripts.md)
+<<<<<<< HEAD
 =======
 - [Risoluzione Conflitti](../../docs/development/CONFLICT_RESOLUTION.md)
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> d83fe8da (.)
+>>>>>>> 15cb84fb (fix collisions)

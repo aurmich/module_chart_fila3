@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 
 return array (
@@ -11,6 +12,9 @@ return array (
 
 return array (
 >>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
+=======
+<?php return array (
+>>>>>>> 15cb84fb (fix collisions)
   'fields' => 
   array (
     'id' => 
@@ -68,6 +72,7 @@ return array (
   ),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   'navigation' => 
   array (
     'sort' => 20,
@@ -84,3 +89,6 @@ return array (
   ),
 );
 >>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
+=======
+);
+>>>>>>> 15cb84fb (fix collisions)

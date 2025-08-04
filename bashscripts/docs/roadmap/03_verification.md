@@ -209,6 +209,9 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 15cb84fb (fix collisions)
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 
@@ -919,9 +922,13 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (197 linee vs 1)[0m
  43df3e0 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
 aurmich/dev
 
 ## Collegamenti tra versioni di 03_verification.md

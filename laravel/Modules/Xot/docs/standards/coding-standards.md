@@ -160,6 +160,10 @@ Il codice del progetto **deve** aderire ai seguenti principi fondamentali:
 <<<<<<< HEAD
 =======
 b6f667c (.)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0e2182f (.)
 Il codice del progetto il progetto **deve** aderire ai seguenti principi fondamentali:
 >>>>>>> aurmich/dev
 =======
@@ -367,9 +371,15 @@ class StorePatientRequest extends FormRequest
             'tax_code' => ['required', 'string', 'size:16', 'unique:patients,tax_code'],
 b6f667c (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+=======
+
+>>>>>>> 0e2182f (.)
+>>>>>>> 15cb84fb (fix collisions)
             'tax_code' => ['required', 'string', 'size:16', 'unique:patients,tax_code'],
             'first_name' => ['required', 'string', 'max:255'],
             'last_name' => ['required', 'string', 'max:255'],
@@ -667,9 +677,15 @@ git commit -m "fix: correzione calcolo età paziente"
 * [coding-standards.md](../../../Xot/docs/conventions/coding-standards.md)
 b6f667c (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+=======
+
+>>>>>>> 0e2182f (.)
+>>>>>>> 15cb84fb (fix collisions)
 ## Collegamenti Correlati
 
 - [Convenzioni](../../../docs/conventions.md)

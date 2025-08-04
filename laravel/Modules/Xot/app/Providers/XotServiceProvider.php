@@ -105,6 +105,7 @@ class XotServiceProvider extends XotBaseServiceProvider
         //$this->extendExceptionHandler();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         //$this->registerCommands();
 =======
         $this->registerCommands();
@@ -112,6 +113,9 @@ class XotServiceProvider extends XotBaseServiceProvider
 =======
         $this->registerCommands();
 >>>>>>> 54f4fa16 (.)
+=======
+        //$this->registerCommands();
+>>>>>>> 15cb84fb (fix collisions)
     }
 
     public function registerProviders(): void

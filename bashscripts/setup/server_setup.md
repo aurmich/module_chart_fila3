@@ -122,9 +122,13 @@ php artisan key:generate
   APP_NAME=il progetto
  80ec88ee9 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
   APP_ENV=local
   APP_DEBUG=true
   APP_URL=http://localhost
@@ -1278,6 +1282,10 @@ php artisan user:assign-module
   ```
  80ec88ee9 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 15cb84fb (fix collisions)

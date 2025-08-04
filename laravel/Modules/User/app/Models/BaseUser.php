@@ -171,11 +171,10 @@ use Illuminate\Support\Facades\Schema;
 <<<<<<< HEAD
 abstract class BaseUser extends Authenticatable implements HasName, HasTenants, UserContract,HasMedia
 {
-
-
     use HasApiTokens;
     use HasFactory;
     use HasRoles;
+<<<<<<< HEAD
     // Guard coerente con Spatie/Permission
 =======
 abstract class BaseUser extends Authenticatable implements HasName, HasTenants, UserContract
@@ -202,6 +201,8 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 =======
     // Guard coerente con Spatie/Permission
 >>>>>>> bead9c28 (fix case)
+=======
+>>>>>>> 15cb84fb (fix collisions)
     use HasUuids;
     use Notifiable;
     use RelationX;
@@ -271,6 +272,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @var array<string, mixed>  */
     protected $attributes = [
         //'state' => Pending::class,
@@ -293,6 +295,8 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 =======
 >>>>>>> d4c0700e (♻️ (SelectStateColumn.php): refactor state retrieval logic to use $state directly for clarity)
 
+=======
+>>>>>>> 15cb84fb (fix collisions)
     /** @var \Illuminate\Database\Eloquent\Relations\Pivot|null */
     public $pivot;
 
@@ -554,7 +558,10 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 15cb84fb (fix collisions)
     /**
      * Get the role name for the current team.
      *
@@ -574,9 +581,12 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 
 
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 2099645a (.)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 
     public function authentications(): MorphMany
     {
@@ -622,6 +632,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     /**
@@ -636,6 +647,20 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
             return [];
         }
 
+=======
+    /**
+     * Get all permission names associated with the user's roles.
+     *
+     * @return array<int, string>
+     */
+    public function getPermissionNames(): array
+    {
+        $roles = $this->roles()->with('permissions')->get();
+        if ($roles->isEmpty()) {
+            return [];
+        }
+
+>>>>>>> 15cb84fb (fix collisions)
         $permissions = collect();
         foreach ($roles as $role) {
             if (isset($role->permissions) && $role->permissions !== null) {
@@ -646,8 +671,11 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
         /** @var array<int, string> */
         return $permissions->pluck('name')->values()->toArray();
     }
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 
 >>>>>>> 2099645a (.)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 }

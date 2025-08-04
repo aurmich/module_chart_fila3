@@ -237,8 +237,11 @@ dummy_push(){
 =======
     git commit -am "$msg"
     git push -u "$org" HEAD:"$branch"
+<<<<<<< HEAD
     #oco --yes
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 }
 
 declare -A PARSED_KV  # Dizionario globale (o può essere passato per riferimento)

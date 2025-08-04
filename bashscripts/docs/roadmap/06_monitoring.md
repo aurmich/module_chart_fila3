@@ -407,9 +407,13 @@ Questa fase si concentra sull'implementazione di un sistema avanzato di monitora
  43df3e0 (.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
 ## 🎯 Funzionalità Future
 
 ### 1. Dashboard Operazioni
@@ -1083,9 +1087,13 @@ aurmich/dev
 - Aggiornamenti 
  43df3e0 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 15cb84fb (fix collisions)
 aurmich/dev
 
 ## Collegamenti tra versioni di 06_monitoring.md

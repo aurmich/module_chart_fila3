@@ -33,6 +33,9 @@
 Ultimo aggiornamento: 2025-05-13
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 15cb84fb (fix collisions)
 
 ---
 
@@ -77,7 +80,10 @@ Ultimo aggiornamento: 2025-05-13
 > ⚠️ **Warning**: Estendere Xot\BaseModel può causare override indesiderati, perdita di flessibilità e problemi di compatibilità con logiche locali. Seguire sempre la regola sopra per tutti i modelli di totali/aggregati in Performance.
 
 ---
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 15cb84fb (fix collisions)

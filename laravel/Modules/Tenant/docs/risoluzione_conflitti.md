@@ -143,6 +143,7 @@ Questo errore indica che ci sono ancora conflitti git non risolti in altri modul
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 ## [AGGIORNAMENTO 2024-xx-xx] Risoluzione conflitto in app/Models/Tenant.php
@@ -160,10 +161,13 @@ Questo errore indica che ci sono ancora conflitti git non risolti in altri modul
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 ## Collegamenti Utili
 
 - [Documentazione Principale Tenant](module_tenant.md)
 - [Rapporti PHPStan](phpstan/)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Panoramica della Risoluzione dei Conflitti](../../../docs/risoluzione_conflitti_git.md)
@@ -173,4 +177,7 @@ Questo errore indica che ci sono ancora conflitti git non risolti in altri modul
 =======
 - [Panoramica della Risoluzione dei Conflitti](../../../docs/risoluzione_conflitti_git.md)
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+- [Panoramica della Risoluzione dei Conflitti](/docs/conflict_resolution_ui_tenant.md)
+>>>>>>> 15cb84fb (fix collisions)
 

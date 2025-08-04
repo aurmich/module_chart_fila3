@@ -6,6 +6,9 @@ php -r "unlink('composer.lock');"
 rm composer.lock
 rm package-lock.json
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 15cb84fb (fix collisions)
 #mv composer.json composer_$(date +"%Y-%m-%d").json
 #php composer.phar init
 
@@ -86,6 +89,7 @@ php -d memory_limit=-1 composer.phar require -W --dev --ignore-platform-reqs pes
 ### REMOVE
 php -d memory_limit=-1 composer.phar remove laravel/sanctum
 rm config/sanctum.php 
+<<<<<<< HEAD
 =======
 
 ##############  ####################
@@ -104,3 +108,5 @@ php -d memory_limit=-1 composer.phar require -W --dev phpstan/phpstan-deprecatio
 php -d memory_limit=-1 composer.phar require -W --dev phpstan/phpstan-phpunit
 php -d memory_limit=-1 composer.phar require -W --dev spatie/laravel-ray
 >>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+=======
+>>>>>>> 15cb84fb (fix collisions)

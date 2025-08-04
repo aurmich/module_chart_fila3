@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo UI - Documentazione
 
 ## Panoramica
@@ -62,6 +63,8 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 # Modulo UI
 
 ## Panoramica
@@ -74,6 +77,7 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
 - MoneyInput: Input per valori monetari con formattazione automatica
 - DateRangePicker: Selezione intervalli di date
 - FileUpload: Upload file con preview e validazione
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **OpeningHoursField**: Campo per gestione orari settimanali (mattina/pomeriggio) - [Documentazione](components/opening-hours-field.md)
@@ -90,6 +94,8 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 
 ### Tables
 - CustomDataTable: Tabella dati avanzata con ordinamento e filtri
@@ -148,6 +154,7 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Componenti View Aggiornati (Gen 2025)
 
 ### Studio Selector Component
@@ -183,3 +190,7 @@ Form\View::make('ui::ui.studio-selector')
 ---
 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+---
+
+>>>>>>> 15cb84fb (fix collisions)

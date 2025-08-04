@@ -1,29 +1,76 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="light">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'il progetto') }}</title>
-    <style>
-            [x-cloak] {
-                display: none !important;
-            }
-        </style>
+@extends('pub_theme::layouts.base')
 
-        @filamentStyles
-    @vite(['resources/css/app.css', 'resources/js/app.js'],'themes/One')
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-</head>
-<body class="font-inter antialiased bg-base-100 text-base-content">
-    <div class="min-h-screen flex flex-col">
-        <div class="bg-primary text-primary-content py-2">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center text-sm font-medium">
-                    🎉 Benvenuti su il progetto - La piattaforma dedicata alla salute orale delle gestanti
-                </div>
-            </div>
+<x-filament-panels::layout.base :livewire="$livewire">
+    <div class="fi-layout flex min-h-screen w-full overflow-x-clip">
+        <div
+            x-cloak
+            x-data="{}"
+            x-on:click="$store.sidebar.close()"
+            x-show="$store.sidebar.isOpen"
+            x-transition.opacity.300ms
+            class="fi-sidebar-close-overlay fixed inset-0 z-30 bg-gray-950/50 transition duration-500 dark:bg-gray-950/75 lg:hidden"
+        ></div>
+
+        <x-filament-panels::sidebar :navigation="$navigation" />
+
+        <div
+            @if (filament()->isSidebarCollapsibleOnDesktop())
+                x-data="{}"
+                x-bind:class="{
+                    'fi-main-ctn-sidebar-open': $store.sidebar.isOpen,
+                }"
+                x-bind:style="'display: flex; opacity:1;'" {{-- Mimics `x-cloak`, as using `x-cloak` causes visual issues with chart widgets --}}
+            @elseif (filament()->isSidebarFullyCollapsibleOnDesktop())
+                x-data="{}"
+                x-bind:class="{
+                    'fi-main-ctn-sidebar-open': $store.sidebar.isOpen,
+                }"
+                x-bind:style="'display: flex; opacity:1;'" {{-- Mimics `x-cloak`, as using `x-cloak` causes visual issues with chart widgets --}}
+            @elseif (! (filament()->isSidebarCollapsibleOnDesktop() || filament()->isSidebarFullyCollapsibleOnDesktop() || filament()->hasTopNavigation()))
+                x-data="{}"
+                x-bind:style="'display: flex; opacity:1;'" {{-- Mimics `x-cloak`, as using `x-cloak` causes visual issues with chart widgets --}}
+            @endif
+            @class([
+                'fi-main-ctn w-screen flex-1 flex-col',
+                'h-full opacity-0 transition-all' => filament()->isSidebarCollapsibleOnDesktop() || filament()->isSidebarFullyCollapsibleOnDesktop(),
+                'opacity-0' => ! (filament()->isSidebarCollapsibleOnDesktop() || filament()->isSidebarFullyCollapsibleOnDesktop() || filament()->hasTopNavigation()),
+                'flex' => filament()->hasTopNavigation(),
+            ])
+        >
+            <x-filament-panels::topbar :navigation="$navigation" />
+
+            <main
+                @class([
+                    'fi-main mx-auto h-full w-full px-4 md:px-6 lg:px-8',
+                    match ($maxContentWidth ??= (filament()->getMaxContentWidth() ?? '7xl')) {
+                        'xl' => 'max-w-xl',
+                        '2xl' => 'max-w-2xl',
+                        '3xl' => 'max-w-3xl',
+                        '4xl' => 'max-w-4xl',
+                        '5xl' => 'max-w-5xl',
+                        '6xl' => 'max-w-6xl',
+                        '7xl' => 'max-w-7xl',
+                        'prose' => 'max-w-prose',
+                        'screen-sm' => 'max-w-screen-sm',
+                        'screen-md' => 'max-w-screen-md',
+                        'screen-lg' => 'max-w-screen-lg',
+                        'screen-xl' => 'max-w-screen-xl',
+                        'screen-2xl' => 'max-w-screen-2xl',
+                        'full' => 'max-w-full',
+                        default => $maxContentWidth,
+                    },
+                ])
+            >
+                {{ \Filament\Support\Facades\FilamentView::renderHook('panels::content.start') }}
+
+                {{ $slot }}
+
+                {{ \Filament\Support\Facades\FilamentView::renderHook('panels::content.end') }}
+            </main>
+
+            {{ \Filament\Support\Facades\FilamentView::renderHook('panels::footer') }}
         </div>
+<<<<<<< HEAD
 
         <header class="sticky top-0 z-50 bg-base-100 shadow-sm">
             <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -171,13 +218,7 @@
                 </div>
             </div>
         </footer>
+=======
+>>>>>>> 15cb84fb (fix collisions)
     </div>
-
-    <script>
-        document.querySelector('.lg\\:hidden button').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-    </script>
-    @filamentScripts
-</body>
-</html>
+</x-filament-panels::layout.base>

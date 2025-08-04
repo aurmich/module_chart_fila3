@@ -41,6 +41,7 @@ trait HasXotTable
     protected static bool $canReplicate = false;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected static bool $canView = true;
 =======
 
@@ -50,6 +51,11 @@ trait HasXotTable
 =======
     protected static bool $canView = true;
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+
+    protected static bool $canView = true;
+
+>>>>>>> 15cb84fb (fix collisions)
     protected static bool $canEdit = true;
 
     /**
@@ -257,6 +263,7 @@ trait HasXotTable
             ->filtersFormColumns($this->getTableFiltersFormColumns())
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
             ->persistFiltersInSession()
@@ -295,6 +302,29 @@ trait HasXotTable
             ->emptyStateActions($this->getTableEmptyStateActions())
             ->striped()
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+            ->persistFiltersInSession();
+
+        // Verifica i metodi disponibili prima di chiamarli
+        if (method_exists($this, 'getTableHeaderActions')) {
+            $table = $table->headerActions($this->getTableHeaderActions());
+        }
+
+        if (method_exists($this, 'getTableActions')) {
+            $table = $table->actions($this->getTableActions());
+        }
+
+        if (method_exists($this, 'getTableBulkActions')) {
+            $table = $table->bulkActions($this->getTableBulkActions());
+        }
+
+        $table = $table
+            ->actionsPosition(ActionsPosition::BeforeColumns)
+            ->emptyStateActions($this->getTableEmptyStateActions())
+            ->striped();
+
+        $table = $table
+>>>>>>> 15cb84fb (fix collisions)
             ->paginated($this->getTablePaginated());
         /*
             ->defaultSort(

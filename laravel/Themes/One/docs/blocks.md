@@ -226,6 +226,7 @@ Assicurarsi che i nomi dei parametri nel database corrispondano a quelli attesi 
 
 - Il blocco `feature_sections` utilizza il parametro `sections` invece di `features`
 - Il blocco `stats` utilizza il parametro `number` invece di `value` per i valori delle statistiche
+<<<<<<< HEAD
 
 ## Gestione Link Dinamici
 
@@ -716,3 +717,5 @@ Dopo la creazione del file mancante, verificare:
 
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 15cb84fb (fix collisions)

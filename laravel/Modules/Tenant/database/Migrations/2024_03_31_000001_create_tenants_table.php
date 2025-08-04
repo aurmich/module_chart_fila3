@@ -9,10 +9,13 @@ return new class extends XotBaseMigration
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> 15cb84fb (fix collisions)
     /**
      * Nome della tabella.
      *
@@ -21,9 +24,12 @@ return new class extends XotBaseMigration
     //protected string $table = 'tenants';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> 15cb84fb (fix collisions)
     /**
      * Run the migrations.
      */

@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+
 use function Laravel\Folio\{middleware, name};
 use Filament\Notifications\Notification;
 use Filament\Notifications\Livewire\Notifications;
@@ -29,11 +29,12 @@ middleware($base_middleware);
 
 new class extends Component
 {
-
+   
 };
 
 ?>
 
+<<<<<<< HEAD
 <x-layouts.app>
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -64,3 +65,10 @@ new class extends Component
     @endvolt
 >>>>>>> 7274ba81 (✨ (vscode): add new recommended extensions for Laravel development to improve developer experience)
 </x-layouts.app>
+=======
+<x-layouts.marketing>
+    <div>
+        {!! $_theme->showPageContent('home') !!}
+    </div>
+</x-layouts.marketing>
+>>>>>>> 15cb84fb (fix collisions)

@@ -341,6 +341,9 @@ Per il modulo Media, si consiglia di utilizzare i seguenti server MCP:
 Per dettagli e best practice consulta la guida generale MCP nel workspace.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 15cb84fb (fix collisions)
 ## Proprietà fondamentali del ServiceProvider (Laraxot/PTVX)
 
 Tutti i provider dei moduli che estendono XotBaseServiceProvider **devono** dichiarare:
@@ -394,5 +397,8 @@ docs/
 - [x] Documentazione aggiornata
 - [x] Struttura coerente in tutti i moduli
 
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 15cb84fb (fix collisions)

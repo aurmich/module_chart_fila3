@@ -72,6 +72,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 ## Collegamenti sulla risoluzione dei conflitti
@@ -85,5 +86,7 @@
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> 15cb84fb (fix collisions)
 ---
 
