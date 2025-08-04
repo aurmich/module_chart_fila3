@@ -3,6 +3,7 @@
 return array (
   'navigation' => 
   array (
+<<<<<<< HEAD
     'label' => 'Utenti',
     'group' => 'Gestione Utenti',
     'icon' => 'heroicon-o-user',
@@ -328,5 +329,11 @@ return array (
     'inactive' => 'Inattivo',
     'pending' => 'In attesa',
     'suspended' => 'Sospeso',
+=======
+    'label' => 'user.navigation',
+    'group' => 'user.navigation',
+    'icon' => 'user.navigation',
+    'sort' => 45,
+>>>>>>> c6edea7c (.)
   ),
 );

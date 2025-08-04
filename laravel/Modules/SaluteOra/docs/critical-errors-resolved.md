@@ -346,6 +346,9 @@ Il componente è immediatamente utilizzabile in altri Resources:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c6edea7c (.)
 ## 5. Errore Critico: BindingResolutionException team_user_model
 
 ### Data Risoluzione
@@ -451,8 +454,11 @@ graph TD
 
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+>>>>>>> c6edea7c (.)
 ## Checklist Prevenzione Errori Futuri
 
 ### Per Componenti Filament Custom

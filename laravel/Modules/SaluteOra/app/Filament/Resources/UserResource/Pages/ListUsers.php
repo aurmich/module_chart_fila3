@@ -119,24 +119,7 @@ class ListUsers extends BaseListUsers
         return [
             ...parent::getTableActions(),
 
-            /*
-            TableActions\Action::make('approve')
-                ->action(fn ($record) => $record->update(['state' => 'approved']))
-                ->requiresConfirmation()
-                ->color('success'),
-                TableActions\Action::make('reject')
-                ->action(fn ($record) => $record->update(['state' => 'rejected']))
-                ->requiresConfirmation()
-                ->color('danger'),
-                TableActions\Action::make('suspend')
-                ->action(fn ($record) => $record->update(['state' => 'suspended']))
-                ->requiresConfirmation()
-                ->color('warning'),
-                TableActions\Action::make('reinstate')
-                ->action(fn ($record) => $record->update(['state' => 'approved']))
-                ->requiresConfirmation()
-                ->color('info'),
-            */
+          
         ];
     }
 <<<<<<< HEAD

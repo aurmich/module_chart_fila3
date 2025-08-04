@@ -128,6 +128,7 @@ abstract class BaseListUsers extends XotBaseListRecords
 <<<<<<< HEAD
             // Filtri disabilitati per ora, abilitare se necessario
             /*
+<<<<<<< HEAD
 =======
 >>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
 =======
@@ -141,10 +142,13 @@ abstract class BaseListUsers extends XotBaseListRecords
 =======
             // Filters disabled by default, enable if needed
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+>>>>>>> c6edea7c (.)
             Filter::make('verified')
                 ->query(static fn (Builder $query): Builder => $query->whereNotNull('email_verified_at')),
             Filter::make('unverified')
                 ->query(static fn (Builder $query): Builder => $query->whereNull('email_verified_at')),
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -164,6 +168,9 @@ abstract class BaseListUsers extends XotBaseListRecords
 =======
             // Filtri disabilitati per ora, abilitare se necessario
 >>>>>>> fb6fbaa2 (move resources/lang to lang)
+=======
+            */
+>>>>>>> c6edea7c (.)
         ];
     }
 

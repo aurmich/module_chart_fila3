@@ -34,20 +34,21 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 use Filament\Forms;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Modules\User\Filament\Resources\BaseUserResource;
 use Modules\SaluteOra\Models\User;
 use Filament\Forms\Components\Select;
-use Modules\SaluteOra\Enums\UserTypeEnum;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
+use Modules\SaluteOra\Enums\UserTypeEnum;
 use Modules\SaluteOra\Enums\UserStateEnum;
 use Filament\Tables\Actions\BulkActionGroup;
 use Filament\Tables\Actions\DeleteBulkAction;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\UI\Filament\Forms\Components\SelectState;
-use Modules\SaluteOra\Filament\Resources\UserResource\Pages;
+use Modules\SaluteMo\Filament\Resources\UserResource\Pages;
 
-class UserResource extends XotBaseResource
+class UserResource extends BaseUserResource
 {
     protected static ?string $model = User::class;
 <<<<<<< HEAD
@@ -126,7 +127,7 @@ class UserResource extends XotBaseResource
     }
 
 
-
+    
     public static function getPages(): array
     {
         return [
@@ -135,5 +136,10 @@ class UserResource extends XotBaseResource
             'edit' => Pages\EditUser::route('/{record}/edit'),
         ];
     }
+    
 }
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> c6edea7c (.)
