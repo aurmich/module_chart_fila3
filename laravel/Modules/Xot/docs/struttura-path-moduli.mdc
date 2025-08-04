@@ -89,6 +89,9 @@ class User extends Model {
 - https://github.com/spatie/laravel-model-states
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bac26886 (delete replicate folder)
 ---
 
 # Regole pratiche per gestione di enum e state class

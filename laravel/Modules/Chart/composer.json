@@ -33,6 +33,7 @@
         "psr-4": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "Modules\\Chart\\": "app/",
             "Modules\\Chart\\Database\\Factories\\": "database/factories/",
             "Modules\\Chart\\Database\\Seeders\\": "database/seeders/"
@@ -44,6 +45,14 @@
             "Modules\\Chart\\Database\\Factories\\": "database/factories/",
             "Modules\\Chart\\Database\\Seeders\\": "database/seeders/"
 >>>>>>> 5d95df2f (feat(chart): add autoloading for factories and seeders in composer.json to improve module structure)
+=======
+            "Modules\\Chart\\": "app/"
+=======
+            "Modules\\Chart\\": "app/",
+            "Modules\\Chart\\Database\\Factories\\": "database/factories/",
+            "Modules\\Chart\\Database\\Seeders\\": "database/seeders/"
+>>>>>>> 21462f4 (feat: add initial project structure with configuration files and actions for chart generation)
+>>>>>>> bac26886 (delete replicate folder)
         }
     },
     "require": {
