@@ -231,6 +231,7 @@ abstract class XotBaseResource extends FilamentResource
     public static function getAttachmentsSchema(bool $multiple=true): array{
         $model = static::getModel();
 <<<<<<< HEAD
+<<<<<<< HEAD
         if(!method_exists($model,'getAttachments')){
             return [];
         }
@@ -245,6 +246,9 @@ abstract class XotBaseResource extends FilamentResource
 
 =======
         $attachments = $model::$attachments;
+=======
+        $attachments = property_exists($model, 'attachments') ? $model::$attachments : [];
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
         $uuid = Str::uuid()->toString();
         $schema = [];
         
@@ -290,9 +294,9 @@ abstract class XotBaseResource extends FilamentResource
 >>>>>>> aurmich/dev
     protected static function getStepByName(string $name): Forms\Components\Wizard\Step
     {
-        $schema=Str::of($name)->snake()->studly()->prepend('get')->append('Schema')->toString();
+        $schema = Str::of($name)->snake()->studly()->prepend('get')->append('Schema')->toString();
         
         return Forms\Components\Wizard\Step::make($name)
-            ->schema(static::$schema());
+            ->schema(static::{$schema}());
     }
 }

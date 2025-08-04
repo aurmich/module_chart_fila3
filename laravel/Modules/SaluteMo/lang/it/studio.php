@@ -61,9 +61,13 @@ return array (
       'placeholder' => 'Studio Medico Dr. Rossi',
       'helper_text' => 'Nome completo e identificativo dello studio medico',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'name',
 =======
 >>>>>>> aurmich/dev
+=======
+      'description' => 'name',
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
     ),
     'address' => 
     array (
@@ -77,9 +81,13 @@ return array (
       'placeholder' => '+39 059 1234567',
       'helper_text' => 'Numero di telefono principale per contatti',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'phone',
 =======
 >>>>>>> aurmich/dev
+=======
+      'description' => 'phone',
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
     ),
     'email' => 
     array (
@@ -87,9 +95,13 @@ return array (
       'placeholder' => 'info@studiorossi.it',
       'helper_text' => 'Indirizzo email per comunicazioni ufficiali',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'email',
 =======
 >>>>>>> aurmich/dev
+=======
+      'description' => 'email',
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
     ),
     'website' => 
     array (
@@ -97,9 +109,13 @@ return array (
       'placeholder' => 'https://www.studiorossi.it',
       'helper_text' => 'URL del sito web ufficiale dello studio',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'website',
 =======
 >>>>>>> aurmich/dev
+=======
+      'description' => 'website',
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
     ),
     'registration_number' => 
     array (
@@ -107,9 +123,13 @@ return array (
       'placeholder' => 'RM-123456',
       'helper_text' => 'Numero di registrazione presso l\'Ordine dei Medici',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'registration_number',
 =======
 >>>>>>> aurmich/dev
+=======
+      'description' => 'registration_number',
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
     ),
     'vat_number' => 
     array (
@@ -117,9 +137,13 @@ return array (
       'placeholder' => 'IT01234567890',
       'helper_text' => 'Partita IVA dello studio medico',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'vat_number',
 =======
 >>>>>>> aurmich/dev
+=======
+      'description' => 'vat_number',
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
     ),
     'opening_hours' => 
     array (
@@ -189,11 +213,17 @@ return array (
     array (
       'description' => 'description',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => 'description',
       'placeholder' => 'description',
       'label' => 'description',
 =======
 >>>>>>> aurmich/dev
+=======
+      'helper_text' => 'description',
+      'placeholder' => 'description',
+      'label' => 'description',
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
     ),
     'reorderRecords' => 
     array (
@@ -208,6 +238,9 @@ return array (
       'label' => 'resetFilters',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
     'applyFilters' => 
     array (
       'label' => 'applyFilters',
@@ -216,6 +249,7 @@ return array (
     array (
       'label' => 'openFilters',
     ),
+<<<<<<< HEAD
     'delete' => 
     array (
       'label' => 'delete',
@@ -248,6 +282,8 @@ return array (
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 8d44f10d (feat: studio trans , radio collection)
+=======
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
   ),
   'actions' => 
   array (

@@ -87,6 +87,7 @@ class StudioResource extends XotBaseResource
                 ->columnSpanFull(),
             
             'address' => AddressField::make('address')
+<<<<<<< HEAD
                 ->relationship('address'),
 <<<<<<< HEAD
         ];
@@ -103,6 +104,9 @@ class StudioResource extends XotBaseResource
         
     }
 =======
+=======
+               ->relationship('address'),
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
                 
             
             

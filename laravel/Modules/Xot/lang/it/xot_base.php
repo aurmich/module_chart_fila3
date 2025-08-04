@@ -194,6 +194,13 @@ return array (
       'helper_text' => 'isee_certificate',
       'description' => 'isee_certificate',
     ),
+    'certifications' => 
+    array (
+      'description' => 'certifications',
+      'helper_text' => 'certifications',
+      'placeholder' => 'certifications',
+      'label' => 'certifications',
+    ),
   ),
   'steps' => 
   array (
@@ -248,6 +255,17 @@ return array (
     array (
       'label' => 'test_step',
     ),
+<<<<<<< HEAD
 >>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
+=======
+    'personal_info_step' => 
+    array (
+      'label' => 'personal_info_step',
+    ),
+    'availability_step' => 
+    array (
+      'label' => 'availability_step',
+    ),
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
   ),
 );
