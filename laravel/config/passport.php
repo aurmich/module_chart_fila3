@@ -6,7 +6,10 @@ return [
     |--------------------------------------------------------------------------
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f622d84c (✨ (DoctorResource.php, RegistrationWidget.php, passport.php): enhance user authentication by adding remember token checks and improving Passport configuration for better security and flexibility.)
     | Passport Configuration
     |--------------------------------------------------------------------------
     |
@@ -41,9 +44,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f622d84c (✨ (DoctorResource.php, RegistrationWidget.php, passport.php): enhance user authentication by adding remember token checks and improving Passport configuration for better security and flexibility.)
     | Passport Guard
     |--------------------------------------------------------------------------
     |
@@ -57,6 +63,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -81,6 +88,8 @@ return [
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f622d84c (✨ (DoctorResource.php, RegistrationWidget.php, passport.php): enhance user authentication by adding remember token checks and improving Passport configuration for better security and flexibility.)
     | Passport Database Connection
     |--------------------------------------------------------------------------
     |
@@ -92,6 +101,7 @@ return [
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'connection' => env('PASSPORT_CONNECTION'),
 =======
     'connection' => env('PASSPORT_CONNECTION','user'),
@@ -99,6 +109,9 @@ return [
 =======
     'connection' => env('PASSPORT_CONNECTION'),
 >>>>>>> 54f4fa16 (.)
+=======
+    'connection' => env('PASSPORT_CONNECTION','user'),
+>>>>>>> f622d84c (✨ (DoctorResource.php, RegistrationWidget.php, passport.php): enhance user authentication by adding remember token checks and improving Passport configuration for better security and flexibility.)
 
     /*
     |--------------------------------------------------------------------------
@@ -113,6 +126,7 @@ return [
 
     'client_uuids' => false,
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -138,4 +152,6 @@ return [
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f622d84c (✨ (DoctorResource.php, RegistrationWidget.php, passport.php): enhance user authentication by adding remember token checks and improving Passport configuration for better security and flexibility.)
 ];
