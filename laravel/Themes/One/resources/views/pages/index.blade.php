@@ -39,7 +39,8 @@ new class extends Component
 =======
     @volt('home')
     <div>
-        <x-page side="content" slug="home" :type="auth()->user()?->type?->value"/>
+        {{--  route('pages.view',['slug'=>'patient_register_complete'])  --}}
+        <x-page side="content" slug="home" :type="auth()->user()?->type?->value ?? 'patient'"/>
     </div>
     @endvolt
 >>>>>>> aurmich/dev

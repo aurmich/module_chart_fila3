@@ -3,6 +3,9 @@
 ## Componenti Form Avanzati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 ### InlineDatePicker
 
 Componente Filament Form per la selezione di date con calendario inline sempre visibile e controllo granulare delle date selezionabili.
@@ -51,8 +54,11 @@ InlineDatePicker::make('date')
 
 [**📖 Documentazione Completa**](./components/inline-date-picker.md)
 
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 ### StudioCardSelector
 
 Componente Filament Form per la selezione di studi medici attraverso interfaccia card visuale.

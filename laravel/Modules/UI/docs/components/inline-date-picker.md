@@ -1,5 +1,6 @@
 # InlineDatePicker Component
 
+<<<<<<< HEAD
 ## Overview
 
 The InlineDatePicker is an advanced date selection component with multilingual support and intuitive navigation. Designed to provide an immediate and minimalist user experience, the component is fully integrated with Laravel's translation system.
@@ -24,6 +25,34 @@ The InlineDatePicker is an advanced date selection component with multilingual s
 - **Adaptive Layout**: Automatically adjusts to available space
 - **Touch Interactions**: Optimized for touch screens
 - **Theme Support**: Built-in light/dark theme support
+=======
+## Panoramica Fenomenologica
+
+L'InlineDatePicker è un componente di selezione date che implementa una **filosofia multi-dimensionale** dell'esperienza temporale. Non è semplicemente un calendario, ma un'**interfaccia quantistica** che permette all'utente di navigare attraverso il continuum spazio-temporale con controllo democratico e design minimalista.
+
+## Principi Filosofici Applicati
+
+### 🧘 **Fenomenologia dell'Esperienza Temporale**
+- **Presente Fenomenologico**: Il mese visualizzato rappresenta l'esperienza immediata dell'utente
+- **Intenzionalità Temporale**: Ogni interazione ha significato nel contesto del tempo
+- **Corporeità Digitale**: L'interfaccia diventa estensione della percezione temporale
+
+### ⚛️ **Meccanica Quantistica delle Date**
+- **Superposizione**: Le date esistono in stato di potenzialità fino alla selezione
+- **Entanglement Temporale**: La navigazione collega passato, presente e futuro
+- **Collasso della Funzione d'Onda**: La selezione cristallizza una data specifica
+
+### 🏛️ **Governance Democratica del Tempo**
+- **Trasparenza**: Tutti i controlli sono visibili e accessibili
+- **Accountability**: Ogni azione di navigazione è tracciabile
+- **Inclusività**: Design accessibile per tutti gli utenti
+- **Neutralità Tecnologica**: Nessun bias nelle funzionalità temporali
+
+### 🎨 **Estetica della Semplicità**
+- **Minimalismo Spirituale**: Eliminazione di elementi non essenziali
+- **Gestalt Design**: Percezione unificata del calendario come entità coesa
+- **Teoria del Colore**: Significati veicolati attraverso scelte cromatiche
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 
 ## Architettura Tecnica
 
@@ -34,6 +63,7 @@ The InlineDatePicker is an advanced date selection component with multilingual s
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\UI\Filament\Forms\Components;
 
 use Filament\Forms\Components\DatePicker;
@@ -51,6 +81,24 @@ use Carbon\Carbon;
 class InlineDatePicker extends DatePicker
 {
     // Proprietà e metodi...
+=======
+namespace Modules\\UI\\Filament\\Forms\\Components;
+
+use Filament\\Forms\\Components\\DatePicker;
+use Carbon\\Carbon;
+
+/**
+ * InlineDatePicker - Calendario inline con navigazione temporale avanzata
+ * 
+ * Implementa principi di:
+ * - Fenomenologia: Esperienza diretta dell'interazione temporale
+ * - Meccanica Quantistica: Date in superposizione fino alla selezione
+ * - Democrazia Temporale: Controllo utente su ogni aspetto della navigazione
+ */
+class InlineDatePicker extends DatePicker
+{
+    // Architettura completa...
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 }
 ```
 
@@ -123,6 +171,7 @@ InlineDatePicker::make('readonly_date')
     ->showNavigation(false);
 ```
 
+<<<<<<< HEAD
 ### Navigazione Temporale Avanzata - ARCHITETTURA CORRETTA ✅
 
 ### Architettura Frontend-Only (CORRETTA)
@@ -266,10 +315,123 @@ protected function getDateStepSchema(): array
         'appointment_date' => InlineDatePicker::make('appointment_date')
             ->enabledDates(['2025-06-05','2025-06-21'])
             ->currentViewMonth(now()->format('Y-m'))
+=======
+### Navigazione Temporale Avanzata - NUOVO 🚀
+
+#### Implementazione Fenomenologica della Navigazione
+
+La nuova funzionalità di navigazione tra i mesi implementa una **architettura quantistica** del movimento temporale, ispirata dal design di `/var/www/html/base_saluteora/laravel/Themes/One/docs/html/calendar.html`. 
+
+**Principi Filosofici della Navigazione:**
+- **Cronologia**: Sequenza ordinata degli eventi temporali
+- **Sincronicità**: Coordinazione dell'esperienza temporale
+- **Persistenza**: Mantenimento dello stato durante la navigazione
+- **Democraticità**: Controllo utente completo sul flusso temporale
+
+#### Controlli UI - Design Quantistico
+
+I controlli di navigazione implementano l'**iconografia universale** del movimento temporale:
+
+```html
+<!-- Pulsante Mese Precedente -->
+<!-- Viaggio verso il passato: accesso alla dimensione temporale precedente -->
+<button 
+    type=\"button\" 
+    @click=\"navigateToMonth('prev')\"
+    class=\"absolute -left-1.5 -top-1 flex items-center justify-center p-1.5 
+           text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 
+           focus:ring-offset-2 focus:ring-indigo-500 rounded-md transition-colors duration-200\"
+    aria-label=\"Mese precedente\"
+    x-tooltip=\"'Vai al mese precedente'\"
+>
+    <span class=\"sr-only\">Mese precedente</span>
+    <!-- Iconografia Quantistica: Chevron Left come simbolo del movimento temporale -->
+    <svg class=\"size-5\" viewBox=\"0 0 20 20\" fill=\"currentColor\" aria-hidden=\"true\">
+        <path fill-rule=\"evenodd\" d=\"M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z\" clip-rule=\"evenodd\" />
+    </svg>
+</button>
+```
+
+#### JavaScript Alpine.js - Pattern Observer
+
+```javascript
+x-data=\"{
+    selectedDate: @js($currentValue),
+    enabledDates: @js($enabledDates),
+    currentMonth: @js($currentViewMonth->format('Y-m')),
+    
+    // Navigazione temporale con easing quantistico
+    navigateToMonth(direction) {
+        const currentDate = new Date(this.currentMonth + '-01');
+        
+        if (direction === 'prev') {
+            currentDate.setMonth(currentDate.getMonth() - 1);
+        } else if (direction === 'next') {
+            currentDate.setMonth(currentDate.getMonth() + 1);
+        }
+        
+        const newMonth = currentDate.getFullYear() + '-' + 
+            String(currentDate.getMonth() + 1).padStart(2, '0');
+        
+        this.currentMonth = newMonth;
+        
+        // Bridge Pattern: Comunicazione JavaScript→PHP
+        $wire.call('setCurrentViewMonth', newMonth);
+    }
+}\"
+```
+
+#### Metodi PHP per Navigazione Temporale
+
+Il componente espone nuovi metodi per il controllo programmatico della navigazione:
+
+```php
+// Metodo Livewire per comunicazione JavaScript→PHP
+public function setCurrentViewMonth(string $monthString): void
+{
+    // Parsing sicuro e gestione errori temporali
+    // Implementa fallback al presente fenomenologico
+}
+
+// Navigazione diretta (metodi helper)
+$picker->setDisplayDate(Carbon::parse('2025-07-01'));
+$picker->previousMonth(); // Vai al mese precedente
+$picker->nextMonth();     // Vai al mese successivo
+
+// Controllo stato navigazione
+$currentMonth = $picker->getCurrentViewMonth(); // Carbon instance
+$hasPrev = $picker->hasPreviousMonth();         // bool
+$hasNext = $picker->hasNextMonth();             // bool
+```
+
+#### Gestione Stato Avanzata
+
+La navigazione mantiene lo stato attraverso:
+
+```php
+/**
+ * Dati esposti alla vista per controllo completo
+ */
+public function getViewData(): array
+{
+    return [
+        // Controllo temporale per navigazione
+        'currentViewMonth' => $this->displayDate,
+        'previousMonth' => $this->displayDate->copy()->subMonth(),
+        'nextMonth' => $this->displayDate->copy()->addMonth(),
+        
+        // Metadati per sincronizzazione JavaScript
+        'monthYearLabel' => $this->displayDate->translatedFormat('F Y'),
+        'componentId' => $this->getId(),
+        'statePath' => $this->getStatePath(),
+        
+        // ... altri dati
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
     ];
 }
 ```
 
+<<<<<<< HEAD
 ### Note Importanti
 
 1. **Il widget NON deve implementare `previousMonth/nextMonth`**
@@ -278,6 +440,46 @@ protected function getDateStepSchema(): array
 4. **Il mese di visualizzazione può essere inizializzato dal widget ma poi è autonomo**
 
 Questo approccio rispetta i principi SOLID e il pattern architetturale di Filament, garantendo componenti riusabili e disaccoppiati.
+=======
+### Integrazione con Form Wizard
+
+#### Pattern Wizard Multi-Step
+
+```php
+use Filament\\Forms\\Components\\Wizard;
+use Modules\\UI\\Filament\\Forms\\Components\\InlineDatePicker;
+
+public function getFormSchema(): array
+{
+    return [
+        Wizard::make([
+            Wizard\\Step::make('date_selection')
+                ->label('Selezione Data')
+                ->schema([
+                    InlineDatePicker::make('appointment_date')
+                        ->label('Data Appuntamento')
+                        ->enabledDates(function () {
+                            return $this->getAvailableDates();
+                        })
+                        ->highlightColor('bg-blue-600 text-white')
+                        ->required()
+                        ->live() // Reattività per step successivi
+                        ->afterStateUpdated(function ($state, callable $set) {
+                            // Logica per aggiornare step successivi
+                            $this->updateAvailableTimeSlots($state, $set);
+                        }),
+                ]),
+                
+            Wizard\\Step::make('time_selection')
+                ->label('Selezione Orario')
+                ->schema([
+                    // Campi dipendenti dalla data selezionata
+                ]),
+        ])
+    ];
+}
+```
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 
 ## Esempi di Utilizzo Avanzato
 
@@ -472,7 +674,15 @@ public function it_integrates_with_livewire_forms(): void
 ### Debug Mode
 
 ```php
+<<<<<<< HEAD
 <!-- Debug info rimosso per ambiente di produzione -->
+=======
+@if(config('app.debug'))
+    <div class=\"mt-4 p-3 bg-gray-100 dark:bg-gray-800 rounded text-xs\">
+        <div class=\"font-semibold text-gray-700 dark:text-gray-300\">Debug Info:</div>
+        <div class=\"text-gray-600 dark:text-gray-400\">
+            Selected: <span x-text=\"selectedDate\"></span><br>
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
             Enabled Dates: <span x-text=\"enabledDates.length\"></span><br>
             Current Month: <span x-text=\"currentMonth\"></span><br>
             Compact Mode: {{ $compactMode ? 'true' : 'false' }}<br>

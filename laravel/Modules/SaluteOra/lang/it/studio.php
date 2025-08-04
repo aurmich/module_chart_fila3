@@ -325,6 +325,11 @@ return array (
       'helper_text' => 'is_primary',
 >>>>>>> aurmich/dev
     ),
+    'administrative_area_level_1' => 
+    array (
+      'description' => 'administrative_area_level_1',
+      'helper_text' => 'administrative_area_level_1',
+    ),
   ),
   'actions' => 
   array (

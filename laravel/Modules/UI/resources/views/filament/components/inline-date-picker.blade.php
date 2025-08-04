@@ -7,13 +7,28 @@
         daysOfWeek: @js($getDaysOfWeek()),
         
         init() {
+<<<<<<< HEAD
             // Initialize with selected date if any - no more Livewire listeners needed
             console.log('InlineDatePicker initialized with frontend-only navigation');
+=======
+            // Initialize with selected date if any
+            if (this.selectedDate) {
+                this.updateDisplayedMonth(this.selectedDate);
+            }
+            
+            // Listen for month navigation updates
+            this.$wire.on('inline-date-picker-updated', (event) => {
+                if (event.detail.id === '{{ $getId() }}') {
+                    this.calendar = @js($getCalendarData());
+                }
+            });
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
         },
         
         selectDate(date) {
             this.selectedDate = date;
             this.$wire.set('{{ $getStatePath() }}', date, false);
+<<<<<<< HEAD
             
             // Aggiorna lo stato visuale localmente senza chiamate Livewire
             this.updateSelectedState();
@@ -108,6 +123,22 @@
         isToday(date) {
             const today = new Date();
             return date.toDateString() === today.toDateString();
+=======
+        },
+        
+        updateDisplayedMonth(dateString) {
+            const date = new Date(dateString);
+            this.$wire.set('displayDate', date.toISOString().split('T')[0], false);
+            this.$wire.dispatch('inline-date-picker-updated', { id: '{{ $getId() }}' });
+        },
+        
+        navigateToPreviousMonth() {
+            this.$wire.previousMonth();
+        },
+        
+        navigateToNextMonth() {
+            this.$wire.nextMonth();
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
         },
         
         getDayClasses(day) {

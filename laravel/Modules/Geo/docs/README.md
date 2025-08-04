@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo Geo - Documentazione
 
 Il modulo Geo gestisce tutte le funzionalità geografiche dell'applicazione, inclusi modelli Address, integrazioni con API esterne e componenti Filament per la gestione dei dati geografici.
@@ -246,44 +247,53 @@ Per contribuire al modulo:
 >>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
 
 ## 🌍 Panoramica
+=======
+# Geo Module Documentation
 
-Il modulo Geo fornisce tutti i dati geografici italiani necessari per l'applicazione SaluteOra, inclusi:
-- Regioni
-- Province  
-- Comuni
-- CAP
-- Coordinate geografiche
-- Dati demografici
+## Overview
+Il modulo Geo gestisce tutte le informazioni geografiche necessarie per l'applicazione SaluteOra, inclusi gli indirizzi, le localizzazioni e le coordinate geografiche.
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 
-## 🛠️ Modelli Principali
+## Contenuti
+- [Modelli](#modelli)
+- [Implementazione](#implementazione)
+- [Risorse Filament](#risorse-filament)
+- [Servizi](#servizi)
 
-### Comune
-Il modello principale che gestisce tutti i dati geografici tramite Sushi trait.
+## Modelli
+- [Address](models/address.md) - Modello per la gestione degli indirizzi con supporto Schema.org
+- [Struttura Indirizzi Italiani](models/address-italian-structure.md) - Specifiche per indirizzi italiani
+- [Gestione Regioni e Province](models/regions-provinces.md) - Relazioni geografiche per l'Italia
 
-**Caratteristiche:**
-- 8.000+ comuni italiani
-- Dati completi con coordinate, popolazione, altitudine
-- File JSON di 1.8MB con tutti i dati
-- Metodi di ricerca ottimizzati
+## Implementazione
+- [Trait HasAddresses](traits/has-addresses.md) - Aggiungere funzionalità indirizzi ai modelli
+- [Geocoding](services/geocoding.md) - Servizi di geocoding per trasformare indirizzi in coordinate
 
-**API Principale:**
-```php
-// Ricerca per regione
-$regioni = Comune::getRegioni();
+## Risorse Filament
+- [Address Resource](resources/address-resource.md) - Gestione indirizzi nell'admin panel
 
-// Province di una regione
-$province = Comune::getProvinceByRegione('Lombardia');
+## Servizi
+- [Servizio di Validazione Indirizzi](services/address-validation.md) - Validazione formato indirizzi
+- [Integrazione GIS](services/gis-integration.md) - Interazione con sistemi GIS
 
-// Comuni di una provincia
-$comuni = Comune::getComuniByProvincia('Milano');
+## Filosofia: Perché estendere BaseModel invece di Model?
 
-// Ricerca per nome
-$milano = Comune::findByNome('Milano');
+Tutti i modelli del modulo Geo **devono** estendere `\Modules\Geo\Models\BaseModel` e **non** direttamente `Illuminate\Database\Eloquent\Model`.
 
-// Ricerca per CAP
-$comuni = Comune::findByCap('20100');
-```
+### Motivazioni (Zen, Politica, Religione, Filosofia):
+- **Centralizzazione**: BaseModel permette di centralizzare comportamenti comuni (es. fillable, casts, connection, perPage, hidden, ecc.) e policy di sicurezza.
+- **Override connection**: imposta la connection `geo` per separare i dati geografici dal resto dell'applicazione (multi-db ready, multi-tenant, backup separati, restore selettivo).
+- **DRY**: evita duplicazione di logica e configurazione tra modelli.
+- **Estensioni future**: BaseModel può essere esteso con trait (es. caching, search, audit, versioning) senza dover modificare ogni modello.
+- **Policy multi-modulo**: garantisce che tutti i modelli Geo siano coerenti e facilmente integrabili con altri moduli (es. Xot, Cms, SaluteOra).
+- **Audit e sicurezza**: BaseModel può integrare facilmente logiche di audit trail, soft delete, access control, ecc.
+- **Manutenibilità**: ogni modifica a policy, fillable, hidden, connection, ecc. si propaga a tutti i modelli Geo in modo sicuro e tracciabile.
 
+> **Religione**: "Un solo punto di verità per la logica di base dei modelli geografici."
+> **Politica**: "Separare i dati geografici dagli altri dati per motivi di sicurezza, performance, backup e governance."
+> **Zen**: "La semplicità e la coerenza portano chiarezza e riducono il debito tecnico."
+
+<<<<<<< HEAD
 <<<<<<< HEAD
 **Regola**: _Se un modello del modulo Geo estende direttamente Model, è un errore critico di architettura._
 >>>>>>> aurmich/dev
@@ -377,3 +387,6 @@ Monitorare:
 **Stato**: ✅ Funzionale  
 **Criticità**: Modulo core per geografica
 >>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
+=======
+**Regola**: _Se un modello del modulo Geo estende direttamente Model, è un errore critico di architettura._
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)

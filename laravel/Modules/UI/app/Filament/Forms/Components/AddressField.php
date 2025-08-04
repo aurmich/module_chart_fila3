@@ -30,15 +30,23 @@ class AddressField extends Forms\Components\Field
                 'zip' => null,
             ];
 <<<<<<< HEAD
+<<<<<<< HEAD
             
             //if ($record && method_exists($record, 'getRelationValue')) {
                 $relationship = $this->getRelationship();
                 if ($relationship && $record?->relationLoaded($relationship)) {
+=======
+            
+            if ($record && method_exists($record, 'getRelationValue')) {
+                $relationship = $this->getRelationship();
+                if ($relationship && $record->relationLoaded($relationship)) {
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
                     $address = $record->getRelationValue($relationship);
                     if (null !== $address && is_object($address) && method_exists($address, 'toArray')) {
                         $data = $address->toArray();
                     }
                 }
+<<<<<<< HEAD
             //}
 =======
             $address = $record->getRelationValue($this->getRelationship());
@@ -48,6 +56,9 @@ class AddressField extends Forms\Components\Field
 
             $component->state($data);
 >>>>>>> aurmich/dev
+=======
+            }
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
         });
 
         $this->dehydrated(false);

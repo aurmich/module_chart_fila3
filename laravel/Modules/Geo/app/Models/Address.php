@@ -158,7 +158,11 @@ class Address extends BaseModel
         return $this->belongsTo(City::class, 'locality', 'name');
     }
     */
+<<<<<<< HEAD
     /*
+=======
+    /**
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
      * Get the province relationship.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo

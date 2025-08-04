@@ -118,9 +118,13 @@ Il modulo UI fornisce un set completo di componenti di interfaccia utente riutil
 - ✅ Widgets dashboard
 - ✅ Form personalizzati
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ InlineDatePicker con date selettive
 =======
 >>>>>>> aurmich/dev
+=======
+- ✅ InlineDatePicker con date selettive
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 - ✅ Stili CSS moderni
 
 ### 🚀 Installazione
@@ -150,9 +154,13 @@ The UI module provides a complete set of reusable user interface components for 
 - ✅ Dashboard widgets
 - ✅ Custom forms
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ InlineDatePicker with selective dates
 =======
 >>>>>>> aurmich/dev
+=======
+- ✅ InlineDatePicker with selective dates
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 - ✅ Modern CSS styles
 
 ### 🚀 Installation
@@ -182,9 +190,13 @@ El módulo UI proporciona un conjunto completo de componentes de interfaz de usu
 - ✅ Widgets de dashboard
 - ✅ Formularios personalizados
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ InlineDatePicker con fechas selectivas
 =======
 >>>>>>> aurmich/dev
+=======
+- ✅ InlineDatePicker con fechas selectivas
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 - ✅ Estilos CSS modernos
 
 ### 🚀 Instalación
