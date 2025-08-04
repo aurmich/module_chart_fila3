@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 
 
 
@@ -13,12 +16,15 @@
 
 aurmich/dev
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> d83fe8da (.)
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 # ⚡ Fase 6: Ottimizzazione
 
 ## 📋 Panoramica
@@ -123,6 +129,7 @@ Questa fase si concentra sull'ottimizzazione e il miglioramento continuo del sis
 - [Fase 5: Monitoraggio](../roadmap/05_monitoring.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
@@ -217,6 +224,8 @@ aurmich/dev
 =======
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 - [Fase 7: Documentazione](../roadmap/07_documentation.md)
 
 ## 📅 Timeline
@@ -241,9 +250,12 @@ aurmich/dev
 - Fine-tuning
 - Manutenzione
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 =======
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 
 
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
@@ -289,7 +301,10 @@ aurmich/dev
 ## Collegamenti tra versioni di 06_optimization.md
 * [06_optimization.md](bashscripts/docs/roadmap/06_optimization.md)
 * [06_optimization.md](docs/roadmap/06_optimization.md)
+<<<<<<< HEAD
 >>>>>>> d83fe8da (.)
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 
 

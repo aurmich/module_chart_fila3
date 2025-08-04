@@ -58,6 +58,7 @@ Genera la documentazione dei risultati di PHPStan.
 - Aggiornare la documentazione ogni volta che vengono introdotti nuovi controlli
 - Integrare i controlli di qualità nel processo di sviluppo e deploy
 
+<<<<<<< HEAD
 ## check_form_schema.php
 
 ### Descrizione
@@ -118,6 +119,8 @@ Genera la documentazione dei risultati di PHPStan.
 - Integrare i controlli di qualità nel processo di sviluppo e deploy
 
 <<<<<<< HEAD
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 ## check_form_schema.php
 
 ### Descrizione
@@ -171,11 +174,14 @@ XotBaseResource Classes Form Schema Check
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> a76e699 (.)
 =======
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 # Script di Verifica della Qualità del Codice
 
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
@@ -233,7 +239,6 @@ XotBaseResource Classes Form Schema Check
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
->>>>>>> 5338a990 (.)
 =======
 >>>>>>> 54f4fa16 (.)
 # Script di Verifica della Qualità del Codice

@@ -662,6 +662,7 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 <<<<<<< HEAD
 f000df5 (.)
 
+<<<<<<< HEAD
 =======
 >>>>>>> 5338a990 (.)
 =======
@@ -672,6 +673,9 @@ f000df5 (.)
 >>>>>>> 15cb84fb (fix collisions)
 
 <<<<<<< HEAD
+=======
+
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 ## Problema
 
 Durante lo sviluppo del progetto sono stati identificati diversi script di gestione git subtree con conflitti di merge non risolti. Questi script sono fondamentali per la corretta gestione dei sottoprogetti e la sincronizzazione tra repository. I conflitti presenti impediscono il corretto funzionamento degli script e potrebbero causare problemi di integrità nel repository.

@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 
 
 
@@ -13,12 +16,15 @@
 
 aurmich/dev
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> d83fe8da (.)
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 # 📚 Fase 7: Documentazione
 
 ## 📋 Panoramica
@@ -123,6 +129,7 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 - [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 
@@ -246,6 +253,8 @@ aurmich/dev
 =======
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md)
 
 ## 📅 Timeline
@@ -270,9 +279,12 @@ aurmich/dev
 - Pubblicazione
 - Manutenzione
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 =======
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 
 
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 
@@ -332,7 +344,10 @@ aurmich/dev
 ## Collegamenti tra versioni di 07_documentation.md
 * [07_documentation.md](bashscripts/docs/roadmap/07_documentation.md)
 * [07_documentation.md](docs/roadmap/07_documentation.md)
+<<<<<<< HEAD
 >>>>>>> d83fe8da (.)
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 
 

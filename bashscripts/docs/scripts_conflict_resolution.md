@@ -183,7 +183,6 @@ Verifica e corregge i problemi comuni di namespace nei file PHP, che sono spesso
 #### Descrizione
 Analizza i conflitti e fornisce statistiche e suggerimenti per la risoluzione.
 
-<<<<<<< HEAD
 ### sync_to_disk.sh
 
 Il file presenta un conflitto tra due approcci distinti:
@@ -358,6 +357,7 @@ I seguenti file sono stati recentemente risolti:
 - `fix_merge_conflicts.sh`: Corretta la logica di individuazione e rimozione dei marker di conflitto per garantire la pulizia completa di tutti i tre tipi di marker 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questa documentazione è collegata bidirezionalmente con la [documentazione principale sulla risoluzione dei conflitti](../../docs/bashscripts_conflict_resolution.md) nella root del progetto. 
 
 #### Utilizzo
@@ -506,6 +506,8 @@ Per pulire un repository con molti conflitti non risolti:
 =======
 =======
 >>>>>>> 4d4d6cb7 (.)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 Questa documentazione è collegata bidirezionalmente con la [documentazione principale sulla risoluzione dei conflitti](../../docs/bashscripts_conflict_resolution.md) nella root del progetto. 
 <<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)

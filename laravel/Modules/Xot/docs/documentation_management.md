@@ -160,9 +160,12 @@ Quando si identifica una nuova regola o pattern importante:
 
    - [ ] Testare applicabilità 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 
 ## Gestione dei Prompt
 
@@ -216,6 +219,7 @@ Modules/Xot/docs/
    - Verifica dei collegamenti    - [ ] Testare applicabilità 
 b6f667c (.)
    - Verifica dei collegamenti 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 =======
@@ -285,3 +289,5 @@ b6f667c (.)
 =======
 >>>>>>> 0e2182f (.)
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)

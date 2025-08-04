@@ -173,10 +173,8 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class MyResource extends \Filament\Resources\Resource {}
 >>>>>>> 15cb84fb (fix collisions)
 
-<<<<<<< HEAD
 // ✅ Best practice
 class MyResource extends \Modules\Xot\Filament\Resources\XotBaseResource {}
-=======
 class UserResource extends XotBaseResource
 {
     // ...
@@ -847,7 +845,6 @@ public static function table(Table $table): Table
         ->defaultPaginationPageOption(25)
         ->paginated([10, 25, 50, 100]);
 }
->>>>>>> 0e2182f (.)
 ```
 
 ## Troubleshooting
@@ -856,6 +853,7 @@ public static function table(Table $table): Table
 - Se compare un errore di override di proprietà statiche, rimuovere la proprietà dal resource e centralizzare nella base
 - Se le traduzioni non vengono applicate, controllare la struttura dei file lang e l'assenza di ->label() hardcoded
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 ## Riferimenti
@@ -911,6 +909,9 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 >>>>>>> 15cb84fb (fix collisions)
 
 <<<<<<< HEAD
+=======
+
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 ## Collegamenti
 - [Filament Docs](https://filamentphp.com/docs)
 - [Best practices moduli riutilizzabili](../module-documentation-neutrality.md)
@@ -1011,10 +1012,13 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0e2182f (.)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 
 <<<<<<< HEAD
 <<<<<<< HEAD

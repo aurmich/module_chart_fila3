@@ -327,6 +327,7 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 f000df5 (.)
 
 
+<<<<<<< HEAD
 Questa documentazione descrive i file di configurazione utilizzati nel progetto.
 
 ## .gitignore
@@ -497,6 +498,8 @@ f000df5 (.)
 >>>>>>> 15cb84fb (fix collisions)
 
 <<<<<<< HEAD
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 Questa documentazione descrive i file di configurazione utilizzati nel progetto.
 
 ## .gitignore

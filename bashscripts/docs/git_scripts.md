@@ -30,7 +30,6 @@ Funzione centralizzata (in `custom.sh`) per impostare:
 - Push verso remoti multipli
 - Logging e gestione errori
 
-<<<<<<< HEAD
 ## Best Practice
 - Usare sempre `git_config_setup`
 - Eseguire backup prima di operazioni critiche
@@ -82,9 +81,12 @@ Script per il push dei subtree. Funzionalità:
 3. Problemi di permessi: controllare fileMode e symlinks
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 # Script Git
 
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
@@ -134,8 +136,11 @@ Script per il push dei subtree. Funzionalità:
 3. Problemi di permessi: controllare fileMode e symlinks
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5338a990 (.)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 =======
 # Script Git
 

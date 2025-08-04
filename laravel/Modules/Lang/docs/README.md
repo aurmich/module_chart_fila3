@@ -858,9 +858,12 @@ class UserController extends Controller
 - **Zen**: Semplicità, concentrazione sul presente, armonia e serenità nello sviluppo.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 ## Gestione storage traduzioni: PHP vs JSON
 Vedi [translations-storage.md](./translations-storage.md) per un confronto dettagliato tra i due approcci, vantaggi, svantaggi e raccomandazioni per il progetto.
 
@@ -1009,6 +1012,7 @@ Tutti i comandi console del modulo sono autoregistrati tramite `XotBaseServicePr
 
 > Qualsiasi registrazione manuale è un errore e va rimossa.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
@@ -1058,6 +1062,8 @@ Tutti i comandi console del modulo sono autoregistrati tramite `XotBaseServicePr
 >>>>>>> bead9c28 (fix case)
 =======
 =======
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 ## Proprietà fondamentali del ServiceProvider (Laraxot/PTVX)
 
 Tutti i provider dei moduli che estendono XotBaseServiceProvider **devono** dichiarare:
@@ -1110,5 +1116,8 @@ docs/
 - [x] Nessun file .sh fuori da bashscripts/
 - [x] Documentazione aggiornata
 - [x] Struttura coerente in tutti i moduli
+<<<<<<< HEAD
 >>>>>>> ce1c80e (.)
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)

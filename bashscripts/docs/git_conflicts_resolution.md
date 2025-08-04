@@ -31,6 +31,7 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 
 ## Processo di Risoluzione
 
+<<<<<<< HEAD
 ### Fase 1: Identificazione
 ```bash
 # Visualizzare tutti i file con conflitti
@@ -71,6 +72,8 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 ## Processo di Risoluzione
 
 <<<<<<< HEAD
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 ## Note Importanti
 - Tutti i file sono stati mantenuti nella versione<!-- REVISIONE MANUALE: File aggiornato per chiarezza e tracciabilità. Vedi anche [README globale](/docs/README.md) e gli altri file di risoluzione conflitti. -->
 >>>>>>> 54f4fa16 (.)
@@ -82,12 +85,10 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 - I namespace sono stati mantenuti corretti secondo la struttura del modulo
 - Sono stati rimossi solo i marcatori di conflitto, mantenendo il codice funzionale
 - I file di backup sono stati creati con il timestamp per sicurezza
-=======
 ### Fase 1: Identificazione
 ```bash
 # Visualizzare tutti i file con conflitti
 git status
->>>>>>> d83fe8da (.)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -110,7 +111,6 @@ Il modulo Predict mantiene la seguente struttura di namespace:
 # Trovare i marker di conflitto
 >>>>>>> 15cb84fb (fix collisions)
 
-<<<<<<< HEAD
 ## Verifica Post-Risoluzione
 Si consiglia di:
 1. Eseguire i test del modulo
@@ -120,6 +120,7 @@ Si consiglia di:
 5. Testare le traduzioni
 6. Verificare il funzionamento delle factory nei test
 7. Testare il modulo in ambiente di sviluppo
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 ```
@@ -137,8 +138,9 @@ Tutti i file modificati hanno un backup con timestamp nel formato:
 >>>>>>> 54f4fa16 (.)
 =======
 =======
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 ```
->>>>>>> d83fe8da (.)
 
 ### Fase 2: Analisi
 Per ogni file in conflitto:
@@ -147,7 +149,6 @@ Per ogni file in conflitto:
 3. Considerare le dipendenze e gli impatti delle modifiche
 >>>>>>> 15cb84fb (fix collisions)
 
-<<<<<<< HEAD
 ## Prossimi Passi
 1. Eseguire `composer dump-autoload` per aggiornare l'autoloader
 2. Eseguire `php artisan config:clear` per pulire la cache
@@ -156,7 +157,6 @@ Per ogni file in conflitto:
 - `Modules\Predict\Providers` per i service provider
 - `Modules\Predict\Database\Factories` per le factory
 - `Modules\Predict\lang\it` per i file di traduzione
-=======
 ### Fase 3: Risoluzione
 Scegliere una delle seguenti strategie:
 
@@ -206,6 +206,7 @@ namespace Modules\NomeModulo\App\Models;
 namespace Modules\NomeModulo\App\Http\Controllers;
 namespace Modules\NomeModulo\App\Filament;
 ```
+<<<<<<< HEAD
 
 ## Best Practices per Evitare Conflitti
 
@@ -266,6 +267,8 @@ namespace Modules\NomeModulo\App\Http\Controllers;
 namespace Modules\NomeModulo\App\Filament;
 ```
 >>>>>>> d83fe8da (.)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 
 ## Best Practices per Evitare Conflitti
 
@@ -276,11 +279,11 @@ namespace Modules\NomeModulo\App\Filament;
 5. **Documentare**: Mantenere aggiornata la documentazione
 6. **Seguire le Convenzioni**: Rispettare sempre le convenzioni di namespace e tipizzazione
 
-<<<<<<< HEAD
 ## Prossimi Passi
 1. Eseguire `composer dump-autoload` per aggiornare l'autoloader
 2. Eseguire `php artisan config:clear` per pulire la cache
 3. Verificare che tutte le risorse Filament siano registrate correttamente
+<<<<<<< HEAD
 <<<<<<< HEAD
 4. Testare il modulo in ambiente di sviluppo 
 
@@ -321,6 +324,8 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 =======
 =======
 >>>>>>> 4d4d6cb7 (.)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 4. Testare il modulo in ambiente di sviluppo 
 <<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)

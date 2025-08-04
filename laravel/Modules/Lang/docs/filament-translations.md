@@ -111,11 +111,14 @@ Questo documento è linkato anche dalla documentazione del modulo Cms per garant
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 
 # ⚠️ Regola vincolante: MAI usare ->label() nei componenti Filament
 
@@ -138,6 +141,7 @@ Tutte le label, placeholder, messaggi e azioni relativi a disponibilità e appun
 - Refactoring sicuro, massima estendibilità
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
 =======
@@ -147,3 +151,5 @@ Tutte le label, placeholder, messaggi e azioni relativi a disponibilità e appun
 =======
 >>>>>>> 2c07066 (.)
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)

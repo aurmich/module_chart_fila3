@@ -160,10 +160,7 @@ Il codice del progetto **deve** aderire ai seguenti principi fondamentali:
 <<<<<<< HEAD
 =======
 b6f667c (.)
-<<<<<<< HEAD
-=======
 
->>>>>>> 0e2182f (.)
 Il codice del progetto il progetto **deve** aderire ai seguenti principi fondamentali:
 >>>>>>> aurmich/dev
 =======
@@ -372,6 +369,7 @@ class StorePatientRequest extends FormRequest
 b6f667c (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
@@ -380,6 +378,9 @@ b6f667c (.)
 
 >>>>>>> 0e2182f (.)
 >>>>>>> 15cb84fb (fix collisions)
+=======
+
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
             'tax_code' => ['required', 'string', 'size:16', 'unique:patients,tax_code'],
             'first_name' => ['required', 'string', 'max:255'],
             'last_name' => ['required', 'string', 'max:255'],
@@ -678,6 +679,7 @@ git commit -m "fix: correzione calcolo età paziente"
 b6f667c (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
@@ -686,6 +688,9 @@ b6f667c (.)
 
 >>>>>>> 0e2182f (.)
 >>>>>>> 15cb84fb (fix collisions)
+=======
+
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 ## Collegamenti Correlati
 
 - [Convenzioni](../../../docs/conventions.md)

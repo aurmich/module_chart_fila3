@@ -46,6 +46,7 @@ I prompt sono file di testo che contengono istruzioni per l'AI. Devono seguire q
 5. **Collegamenti**:
 b6f667c (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 5. **Collegamenti**:
@@ -57,6 +58,9 @@ b6f667c (.)
 
 >>>>>>> 0e2182f (.)
 >>>>>>> 15cb84fb (fix collisions)
+=======
+
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
 6. **Collegamenti**:
    - Questo documento deve essere collegato nella root `docs/` con un link bidirezionale
    - Gli altri moduli devono avere un link a questo documento
@@ -218,6 +222,7 @@ Il prompt `docs.txt` serve come:
 b6f667c (.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
    ```
@@ -230,3 +235,6 @@ b6f667c (.)
 
 >>>>>>> 0e2182f (.)
 >>>>>>> 15cb84fb (fix collisions)
+=======
+
+>>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
