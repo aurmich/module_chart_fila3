@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -16,6 +17,8 @@
 =======
 >>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 67a24ea7 (- updated error pages)
 return array (
   'navigation' => 
   array (
@@ -29,6 +32,7 @@ return array (
     'label' => 'Attività',
     'sort' => 60,
 <<<<<<< HEAD
+<<<<<<< HEAD
     'icon' => 'heroicon-o-activity',
 =======
 <<<<<<< HEAD
@@ -45,6 +49,9 @@ return array (
     'icon' => 'activity-activity-animated',
 >>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
 >>>>>>> aurmich/dev
+=======
+    'icon' => 'heroicon-o-activity',
+>>>>>>> 67a24ea7 (- updated error pages)
   ),
   'fields' => 
   array (
@@ -52,11 +59,14 @@ return array (
     array (
       'label' => 'Utente',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 67a24ea7 (- updated error pages)
       'placeholder' => 'Seleziona un utente',
       'help' => 'L\'utente che ha eseguito l\'azione',
       'name' => 
@@ -81,6 +91,7 @@ return array (
         'validation' => 'required|string',
       ),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
       'name' => 'Nome',
@@ -98,16 +109,21 @@ return array (
       'role' => 'Ruolo',
 >>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 67a24ea7 (- updated error pages)
     ),
     'action' => 
     array (
       'label' => 'Azione',
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 67a24ea7 (- updated error pages)
       'placeholder' => 'Seleziona un\'azione',
       'help' => 'Tipo di azione eseguita',
       'validation' => 'required|string',
@@ -163,6 +179,7 @@ return array (
         ),
       ),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -185,16 +202,21 @@ return array (
 =======
 >>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 67a24ea7 (- updated error pages)
     ),
     'subject' => 
     array (
       'label' => 'Oggetto',
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 67a24ea7 (- updated error pages)
       'placeholder' => 'Seleziona un oggetto',
       'help' => 'L\'oggetto interessato dall\'azione',
       'type' => 
@@ -284,6 +306,7 @@ return array (
     array (
       'label' => 'applyFilters',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -319,16 +342,21 @@ return array (
 =======
 >>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 67a24ea7 (- updated error pages)
     ),
   ),
   'filters' => 
   array (
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 67a24ea7 (- updated error pages)
     'user' => 
     array (
       'label' => 'Utente',
@@ -430,6 +458,7 @@ return array (
       'description' => 'Non ci sono ancora attività da visualizzare. Le attività appariranno qui quando gli utenti inizieranno a interagire con il sistema.',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -461,17 +490,22 @@ return array (
 =======
 >>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 67a24ea7 (- updated error pages)
   ),
   'export' => 
   array (
     'formats' => 
     array (
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 67a24ea7 (- updated error pages)
       'csv' => 
       array (
         'label' => 'CSV',
@@ -558,6 +592,7 @@ return array (
     array (
       0 => 'activities',
       1 => 'monitoring',
+<<<<<<< HEAD
 <<<<<<< HEAD
     ),
   ),
@@ -1019,3 +1054,8 @@ return [
 =======
 >>>>>>> 5ae95119 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking to enhance code quality and maintainability across modules.)
 >>>>>>> aurmich/dev
+=======
+    ),
+  ),
+);
+>>>>>>> 67a24ea7 (- updated error pages)

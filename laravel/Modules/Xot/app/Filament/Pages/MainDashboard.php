@@ -76,6 +76,7 @@ class MainDashboard extends Dashboard
             }
         );
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 <<<<<<< HEAD
@@ -88,6 +89,9 @@ class MainDashboard extends Dashboard
 
 >>>>>>> 54f4fa16 (.)
 >>>>>>> aurmich/dev
+=======
+        
+>>>>>>> 67a24ea7 (- updated error pages)
         if (1 === $modules->count()) {
             Assert::notNull($module_first = $modules->first(), '['.__LINE__.']['.class_basename($this).']');
             $panel_name = $module_first->name;
