@@ -16,6 +16,9 @@ return array (
       'label' => 'verified',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
     'email' => 
     array (
       'label' => 'email',
@@ -25,6 +28,7 @@ return array (
       'label' => 'name',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
     'changePassword' => 
     array (
       'label' => 'changePassword',
@@ -33,5 +37,7 @@ return array (
 >>>>>>> aurmich/dev
 =======
 >>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
+=======
+>>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
   ),
 );

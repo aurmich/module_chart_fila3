@@ -12,6 +12,7 @@ use Spatie\ModelStates\State;
 use Modules\SaluteOra\Models\User;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Filament\Tables\Columns\SelectColumn;
 <<<<<<< HEAD
@@ -28,6 +29,8 @@ use Illuminate\Support\Arr;
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 use Spatie\ModelStates\State;
 use Modules\SaluteOra\Models\User;
+=======
+>>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
 use Illuminate\Database\Eloquent\Model;
 use Filament\Tables\Columns\SelectColumn;
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
@@ -119,9 +122,12 @@ class SelectStateColumn extends SelectColumn
             return $states;
         });
 
+
         $this->beforeStateUpdated(function (Model $record, $state) {
-            $record->state->transitionTo($state);
+            $message='';
+            $record->state->transitionTo($state,$message);
         });
+
 
     }
 
@@ -131,5 +137,11 @@ class SelectStateColumn extends SelectColumn
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
 
+<<<<<<< HEAD
 }
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+
+
+}
+>>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)

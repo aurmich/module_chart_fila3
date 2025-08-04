@@ -74,12 +74,16 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 use Filament\Actions;
 use Modules\SaluteOra\Enums\UserType;
+use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
+use Illuminate\Database\Eloquent\Model;
+use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\SelectColumn;
 use Modules\SaluteOra\Enums\UserStateEnum;
 use Filament\Tables\Actions as TableActions;
 use Modules\SaluteOra\States\User\UserState;
 use Modules\SaluteOra\Filament\Resources\UserResource;
+use Modules\UI\Filament\Tables\Columns\IconStateColumn;
 use Modules\UI\Filament\Tables\Columns\SelectStateColumn;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Modules\User\Filament\Resources\UserResource\Pages\BaseListUsers;
@@ -102,9 +106,11 @@ class ListUsers extends BaseListUsers
                 ->searchable(),
 
         'type'=>SelectColumn::make('type')->options(UserType::class),
-        'state'=>SelectStateColumn::make('state')
+        //'state'=>SelectStateColumn::make('state'),
         //'state'=>SelectColumn::make('state')->options(UserStateEnum::class)
         //'state'=>SelectColumn::make('state')->options(UserState::class)
+        IconStateColumn::make('state'),
+
     ];
    }
 

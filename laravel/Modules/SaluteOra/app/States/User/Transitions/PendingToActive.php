@@ -38,8 +38,10 @@ class PendingToActive extends BaseTransition
 class PendingToActive extends Transition
 {
     public function __construct(
-        public User $user
+        public User $user,
+        public ?string $message=''
     ) {
+
     }
 
     public function handle(): User

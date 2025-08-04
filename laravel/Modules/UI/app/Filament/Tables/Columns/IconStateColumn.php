@@ -8,6 +8,7 @@ use Exception;
 use Illuminate\Support\Arr;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 =======
 >>>>>>> 345f8677 (phpstan)
@@ -22,12 +23,17 @@ use Modules\SaluteOra\Models\User;
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 345f8677 (phpstan)
+=======
+use Spatie\ModelStates\State;
+use Modules\SaluteOra\Models\User;
+>>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Tables\Columns\IconColumn;
 use Illuminate\Database\Eloquent\Model;
 use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\SelectColumn;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Spatie\ModelStates\HasStatesContract;
@@ -37,6 +43,10 @@ use Filament\Tables\Actions\Action;
 =======
 use Spatie\ModelStates\HasStatesContract;
 >>>>>>> 345f8677 (phpstan)
+=======
+use Modules\SaluteOra\States\User\UserState;
+use Filament\Tables\Actions\Action;
+>>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
 
 class IconStateColumn extends IconColumn
 {
@@ -46,6 +56,7 @@ class IconStateColumn extends IconColumn
         parent::setUp();
         //$this->getStateUsing(fn() => true); // the column requires a state to be passed to it
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->icon(fn($state): ?string => $state?->icon());
         $this->color(fn($state): ?string => $state?->color());
         $this->tooltip(fn($state): ?string => $state?->label());
@@ -54,10 +65,16 @@ class IconStateColumn extends IconColumn
         $this->color(fn($state): string => $state->color());
         $this->tooltip(fn($state): string => $state->label());
 >>>>>>> aurmich/dev
+=======
+        $this->icon(fn($state): string => $state->icon()); // always show the 'edit' icon
+        $this->color(fn($state): string => $state->color()); // always show the 'edit' icon
+        $this->tooltip(fn($state): string => $state->label());
+>>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
         //$this->label('aaa');
 
         $this->action(Action::make('change-state')
             ->form([
+<<<<<<< HEAD
                 Select::make('state')
                     ->options(
 <<<<<<< HEAD
@@ -128,6 +145,33 @@ class IconStateColumn extends IconColumn
                     'state' => $record->state::$name,
                 ];
             })
+=======
+                Select::make('state')->options(function (Model $record ,$state): array {
+                    $name=$this->getName();
+                    $state=$record->getAttribute($name);
+                    if($state==null){
+                        $states=Arr::wrap($record->getDefaultStateFor($name));
+                        return array_combine($states, $states);
+                    }
+                    try{
+                        //$states=$record->getAttribute($name)->transitionableStates();
+                        $states=$state->transitionableStates();
+                    }catch(Exception $e){
+                        $states=$record->getStatesFor($name)->toArray();;
+                    }
+                    $states=[$state::$name, ...$states];
+                    $states=array_combine($states, $states);
+                    //dddx(['state'=>$state, 'state1'=>$record->getAttribute($name),'record'=>$record]);
+
+                    return $states;
+                }),
+                Textarea::make('message'),
+            ])
+            ->fillForm(fn($record) => [
+                'state' => $record->state::$name,
+
+            ])
+>>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
             ->action(function($record, $data) {
                 //dddx(['record'=>$record, 'data'=>$data]);
                 $record->state->transitionTo($data['state'],$data['message']);
@@ -142,7 +186,11 @@ class IconStateColumn extends IconColumn
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> aurmich/dev
+=======
+}
+>>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)

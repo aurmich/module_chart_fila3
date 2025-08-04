@@ -16,11 +16,16 @@ class ActiveToSuspended extends BaseTransition
 =======
 class ActiveToSuspended extends Transition
 {
-    public function __construct(public User $user) {}
+    public User $user;
+    public ?string $message;
+    public function __construct(User $user, ?string $message='') {
+        $this->user = $user;
+        $this->message = $message;
+    }
 
     public function handle(): User
     {
-        //dddx('a');
+
         $this->user->state = new Suspended($this->user);
         $this->user->save();
         return $this->user;

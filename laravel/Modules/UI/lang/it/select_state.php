@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -22,6 +23,8 @@ return [
     ],
 ];
 =======
+=======
+>>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
 return array (
   'fields' => 
   array (
@@ -41,4 +44,7 @@ return array (
     ),
   ),
 );
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
