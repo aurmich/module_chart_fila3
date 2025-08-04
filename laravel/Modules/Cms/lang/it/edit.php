@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e2c13fb7 (✨ (cms-translation-standards): add CMS translation standards documentation to ensure consistency in translations and improve localization practices)
 declare(strict_types=1);
 
 return [
@@ -272,6 +275,7 @@ return [
         'settings' => 'Impostazioni',
     ],
 ];
+<<<<<<< HEAD
 =======
 return array (
   'fields' => 
@@ -478,3 +482,5 @@ return array (
   ),
 );
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> e2c13fb7 (✨ (cms-translation-standards): add CMS translation standards documentation to ensure consistency in translations and improve localization practices)

@@ -32,6 +32,7 @@ terza
 ec2-54-247-235-109.eu-west-1.compute.amazonaws.com
 quarta
 http://ec2-52-51-189-151.eu-west-1.compute.amazonaws.com/it
+<<<<<<< HEAD
 quinta
 http://ec2-34-247-221-151.eu-west-1.compute.amazonaws.com/it
 
@@ -43,6 +44,8 @@ http://staging.saluteoraleingravidanza.it/
 terza
 ec2-54-247-235-109.eu-west-1.compute.amazonaws.com
 >>>>>>> 460b44f0 (add new site url)
+=======
+>>>>>>> e2c13fb7 (✨ (cms-translation-standards): add CMS translation standards documentation to ensure consistency in translations and improve localization practices)
 
 
 se si vedono dei |--35--

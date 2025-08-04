@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e2c13fb7 (✨ (cms-translation-standards): add CMS translation standards documentation to ensure consistency in translations and improve localization practices)
 declare(strict_types=1);
 
 return [
@@ -205,8 +208,11 @@ return [
             'label' => 'Lingua Attiva',
             'description' => 'Seleziona la lingua per le traduzioni della sezione',
         ],
+<<<<<<< HEAD
         'add_block' => 'Aggiungi blocco',
         'remove_block' => 'Rimuovi blocco',
+=======
+>>>>>>> e2c13fb7 (✨ (cms-translation-standards): add CMS translation standards documentation to ensure consistency in translations and improve localization practices)
     ],
     
     'sections' => [
@@ -234,6 +240,7 @@ return [
             'label' => 'Social Media',
             'description' => 'Profili e collegamenti social',
         ],
+<<<<<<< HEAD
         'settings' => [
             'label' => 'Impostazioni',
             'description' => 'Configurazioni generali della sezione',
@@ -242,6 +249,8 @@ return [
             'label' => 'SEO',
             'description' => 'Ottimizzazione per motori di ricerca',
         ],
+=======
+>>>>>>> e2c13fb7 (✨ (cms-translation-standards): add CMS translation standards documentation to ensure consistency in translations and improve localization practices)
     ],
     
     'messages' => [
@@ -250,6 +259,19 @@ return [
         'validation_errors' => 'Controlla i campi evidenziati in rosso',
         'unsaved_changes' => 'Hai modifiche non salvate in questa sezione',
         'confirm_navigation' => 'Vuoi davvero lasciare questa pagina? Le modifiche non salvate andranno perse.',
+<<<<<<< HEAD
+=======
+    ],
+    
+    'actions' => [
+        'save' => 'Salva modifiche',
+        'cancel' => 'Annulla',
+        'add_block' => 'Aggiungi blocco',
+        'remove_block' => 'Rimuovi blocco',
+    ],
+    
+    'messages' => [
+>>>>>>> e2c13fb7 (✨ (cms-translation-standards): add CMS translation standards documentation to ensure consistency in translations and improve localization practices)
         'saved' => 'Sezione salvata con successo',
         'error' => 'Si è verificato un errore durante il salvataggio',
         'confirm_delete' => 'Sei sicuro di voler eliminare questa sezione?',
@@ -260,6 +282,7 @@ return [
         'slug_exists' => 'Questo slug è già in uso',
         'min' => 'Il valore deve essere almeno :min',
     ],
+<<<<<<< HEAD
 ];
 =======
 return array (
@@ -407,3 +430,12 @@ return array (
   ),
 );
 >>>>>>> 54f4fa16 (.)
+=======
+    
+    'sections' => [
+        'content' => 'Contenuto',
+        'settings' => 'Impostazioni',
+        'seo' => 'SEO',
+    ],
+];
+>>>>>>> e2c13fb7 (✨ (cms-translation-standards): add CMS translation standards documentation to ensure consistency in translations and improve localization practices)
