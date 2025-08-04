@@ -37,6 +37,8 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Notify\Models\MailTemplate;
 use Illuminate\Mail\Mailables\Attachment;
+use Illuminate\Mail\Mailables\Address;
+use Illuminate\Mail\Mailables\Envelope;
 use Spatie\MailTemplates\TemplateMailable;
 <<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
@@ -70,6 +72,7 @@ class SpatieEmail extends TemplateMailable
      * The email recipient
      */
     protected ?string $recipient = null;
+<<<<<<< HEAD
 
     
 
@@ -151,6 +154,8 @@ class SpatieEmail extends TemplateMailable
     protected array $customAttachments = [];
 
     public array $data=[];
+=======
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
 
     
 
@@ -187,6 +192,35 @@ class SpatieEmail extends TemplateMailable
         MailTemplate::where(['slug'=>$this->slug,'mailable'=>SpatieEmail::class])->update(['params'=>$params]);
         return $this;
 >>>>>>> aurmich/dev
+    }
+
+    /**
+     * Set the email recipient.
+     *
+     * @param string $email
+     * @return self
+     */
+    public function setRecipient(string $email): self
+    {
+        $this->recipient = $email;
+        return $this;
+    }
+
+    /**
+     * Get the message envelope.
+     *
+     * @return Envelope
+     */
+    public function envelope(): Envelope
+    {
+        $envelope = new Envelope();
+        
+        // Set the recipient if available
+        if ($this->recipient) {
+            $envelope->to($this->recipient);
+        }
+        
+        return $envelope;
     }
 
     public function getHtmlLayout(): string

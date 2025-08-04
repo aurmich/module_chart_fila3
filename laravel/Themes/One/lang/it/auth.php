@@ -9,7 +9,11 @@ return [
     |--------------------------------------------------------------------------
     */
     'login' => [
+<<<<<<< HEAD
         'title' => 'Accedi',
+=======
+        'title' => 'Accedi al tuo account',
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
         'or' => 'oppure',
         'create_account' => 'crea un nuovo account',
         'forgot_password' => 'Hai dimenticato la password?',
@@ -21,12 +25,17 @@ return [
     ],
 
     'register' => [
+<<<<<<< HEAD
         'title' => 'Registrati',
+=======
+        'title' => 'Crea il tuo account',
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
         'welcome_message' => 'Benvenuto in <span class="font-bold">SaluteOra</span>',
         'description' => 'Crea il tuo account per accedere a tutti i servizi',
         'already_have_account' => 'Hai già un account?',
         'login_link' => 'accedi qui',
         'register_button' => 'Registrati',
+<<<<<<< HEAD
         'already_registered' => 'Sei già registrato?',
         'doctor' => [
             'title' => 'Registrazione Odontoiatra',
@@ -109,6 +118,8 @@ return [
             'email_already_exists' => 'Questa email è già registrata',
             'invalid_data' => 'Dati non validi',
         ],
+=======
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
     ],
 
     'password' => [

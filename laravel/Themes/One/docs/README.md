@@ -525,11 +525,14 @@ Per supporto tecnico, contattare il team il progetto.
   - Tutti i componenti seguono le convenzioni di stile di Filament
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
 ### Traduzioni
 - **Sistema Completo I18n**
   - Supporto per italiano (it) e inglese (en)
@@ -537,6 +540,7 @@ Per supporto tecnico, contattare il team il progetto.
   - Namespace `pub_theme::` per accesso alle traduzioni
   - [Documentazione Traduzioni Auth](./auth-translations.md)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -546,6 +550,8 @@ Per supporto tecnico, contattare il team il progetto.
 =======
 >>>>>>> d23ba493 (add calendar)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
 ### Stili
 - **CSS**
   - Utilizzo dei preset Filament per Tailwind

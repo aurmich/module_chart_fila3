@@ -165,6 +165,7 @@ new class extends Component
                     <x-ui.logo class="h-12 text-blue-900" />
                 </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <h1 class="text-3xl font-light text-blue-900">{!! __('pub_theme::auth.register.welcome_message') !!}</h1>
                 <p class="text-gray-600 mt-2">{{ __('pub_theme::auth.register.description') }}</p>
             </div>
@@ -182,6 +183,10 @@ new class extends Component
                 <h1 class="text-3xl font-light text-blue-900">Benvenuto in <span class="font-bold">SaluteOra</span></h1>
 >>>>>>> d23ba493 (add calendar)
                 <p class="text-gray-600 mt-2">Crea il tuo account per accedere a tutti i servizi</p>
+=======
+                <h1 class="text-3xl font-light text-blue-900">{!! __('pub_theme::auth.register.welcome_message') !!}</h1>
+                <p class="text-gray-600 mt-2">{{ __('pub_theme::auth.register.description') }}</p>
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
             </div>
 
             <!-- Card contenente il form di registrazione -->

@@ -3,8 +3,18 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'login' => [
         'title' => 'Log in',
+=======
+    /*
+    |--------------------------------------------------------------------------
+    | Authentication
+    |--------------------------------------------------------------------------
+    */
+    'login' => [
+        'title' => 'Sign in to your account',
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
         'or' => 'or',
         'create_account' => 'create a new account',
         'forgot_password' => 'Forgot your password?',
@@ -14,13 +24,21 @@ return [
         'remember_me' => 'Remember me',
         'login_button' => 'Sign in',
     ],
+<<<<<<< HEAD
     'register' => [
         'title' => 'Sign up',
         'welcome_message' => 'Welcome to <span class=\\\"font-bold\\\">SaluteOra</span>',
+=======
+
+    'register' => [
+        'title' => 'Create your account',
+        'welcome_message' => 'Welcome to <span class="font-bold">SaluteOra</span>',
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
         'description' => 'Create your account to access all services',
         'already_have_account' => 'Already have an account?',
         'login_link' => 'sign in here',
         'register_button' => 'Register',
+<<<<<<< HEAD
         'already_registered' => 'Already registered?',
         'doctor' => [
             'title' => 'Doctor Registration',
@@ -104,6 +122,10 @@ return [
             'invalid_data' => 'Invalid data',
         ],
     ],
+=======
+    ],
+
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
     'password' => [
         'reset' => [
             'title' => 'Reset password',
@@ -145,44 +167,80 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
     'password-reset' => [
         'submit' => [
             'label' => 'Send password reset link',
         ],
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
     'confirm' => [
         'title' => 'Confirm password',
         'description' => 'Enter your password to confirm your identity',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
     'new' => [
         'title' => 'New password',
         'password_label' => 'New password',
         'confirm_password_label' => 'Confirm new password',
         'update_button' => 'Update password',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
     'verify' => [
         'title' => 'Verify your account',
         'description' => 'We\'ve sent you a verification email. Please check your inbox.',
         'resend_button' => 'Resend',
         'change_email' => 'Change email address',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
     'logout' => [
         'title' => 'Logout',
         'message' => 'You have been successfully logged out',
         'redirect_message' => 'Redirecting...',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
     'thank_you' => [
         'title' => 'Thank you for registering',
         'message' => 'Your account has been created successfully',
         'continue_button' => 'Continue',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
     'actions' => [
         'processing' => 'Processing...',
         'sending' => 'Sending...',
         'refresh' => 'Refresh page',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
     'errors' => [
         'loading_failed' => 'Loading failed',
         'please_refresh' => 'An error occurred. Please refresh the page and try again.',
     ],
+<<<<<<< HEAD
 ];
+=======
+]; 
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)

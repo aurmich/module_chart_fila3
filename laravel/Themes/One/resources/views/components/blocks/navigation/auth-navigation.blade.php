@@ -31,12 +31,16 @@
         </a>
 
         <a href="/{{ $locale }}/auth/register" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 dark:focus:ring-offset-gray-800">
+<<<<<<< HEAD
             {{ __('auth.register.title') }}
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
 >>>>>>> aurmich/dev
+=======
+            {{ __('pub_theme::auth.register.title') }}
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
         </a>
     @endauth
 </div>

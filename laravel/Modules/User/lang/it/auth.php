@@ -502,6 +502,7 @@ return [
         'subtitle' => 'Inserisci la nuova password',
         'email' => 'Indirizzo email',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'email_placeholder' => 'Inserisci il tuo indirizzo email',
 =======
 <<<<<<< HEAD
@@ -522,6 +523,9 @@ return [
         'email_placeholder' => 'esempio@email.com',
 >>>>>>> 54f4fa16 (.)
 >>>>>>> aurmich/dev
+=======
+        'email_placeholder' => 'Inserisci il tuo indirizzo email',
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
         'password' => 'Nuova password',
         'password_placeholder' => '••••••••',
         'password_confirmation' => 'Conferma password',
@@ -530,10 +534,13 @@ return [
         'success' => 'Password reimpostata con successo.',
         'failed' => 'Impossibile reimpostare la password.',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
         'send_button' => 'Invia link di reset',
         'back_to_login' => 'Torna al login',
         'send_another' => 'Invia un altro link',
@@ -546,12 +553,15 @@ return [
             'generic' => 'Si è verificato un errore durante l\'invio dell\'email. Riprova più tardi.',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
         // Structured version
         'email_structured' => [
             'label' => 'Email',
@@ -595,10 +605,13 @@ return [
         'session_expired' => 'Sessione scaduta. Effettua nuovamente il login.',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
 
     // Password Reset Widget - specific translations
     'password_reset' => [
@@ -648,12 +661,15 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
     
     // Reset Password
     'passwords' => [

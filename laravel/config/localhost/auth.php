@@ -106,6 +106,7 @@ return [
             'expire' => 60,
             'email' => 'lu::auth.emails.password',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'connection' => 'user',
 =======
 <<<<<<< HEAD
@@ -118,6 +119,9 @@ return [
             'connection' => 'liveuser_general',
 >>>>>>> 54f4fa16 (.)
 >>>>>>> aurmich/dev
+=======
+            'connection' => 'user',
+>>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
         ],
     ],
 ];
