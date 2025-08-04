@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -525,3 +526,16 @@
 </body>
 </html>
 >>>>>>> aurmich/dev
+=======
+@extends('errors::illustrated-layout')
+
+@section('code', '500')
+@section('title', __('Server Error'))
+
+@section('image')
+<div style="background-image: url({{ asset('/svg/500.svg') }});" class="absolute pin bg-cover bg-no-repeat md:bg-left lg:bg-center">
+</div>
+@endsection
+
+@section('message', __('Whoops, something went wrong on our servers.'))
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)

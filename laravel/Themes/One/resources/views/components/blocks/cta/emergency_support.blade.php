@@ -19,6 +19,7 @@
 
 @props([
 <<<<<<< HEAD
+<<<<<<< HEAD
     'title' => __('pub_theme::emergency.dental_emergency.title.label'),
     'subtitle' => __('pub_theme::emergency.dental_emergency.subtitle.label'),
     'description' => __('pub_theme::emergency.dental_emergency.description.label'),
@@ -27,6 +28,11 @@
     'subtitle' => 'Il nostro team di emergenza è disponibile 24 ore su 24 per le gestanti',
     'description' => 'Non aspettare che il dolore peggiori. Le urgenze dentali in gravidanza richiedono intervento immediato.',
 >>>>>>> aurmich/dev
+=======
+    'title' => 'Hai un\'Urgenza Dentale?',
+    'subtitle' => 'Il nostro team di emergenza è disponibile 24 ore su 24 per le gestanti',
+    'description' => 'Non aspettare che il dolore peggiori. Le urgenze dentali in gravidanza richiedono intervento immediato.',
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
     'primary_cta' => [],
     'secondary_cta' => [],
     'emergency_info' => [],
@@ -93,15 +99,20 @@
                 <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <h3 class="text-2xl font-bold mb-4">@lang('pub_theme::emergency.dental_emergency.call_now.label')</h3>
 =======
                     <h3 class="text-2xl font-bold mb-4">Chiama Subito</h3>
 >>>>>>> aurmich/dev
+=======
+                    <h3 class="text-2xl font-bold mb-4">Chiama Subito</h3>
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
 
                     {{-- Numero di emergenza grande --}}
                     <div class="mb-6">
                         <a href="{{ $primary_cta['link'] ?? 'tel:800123456' }}"
                            class="block text-4xl md:text-5xl font-bold text-white hover:text-red-100 transition-colors">
+<<<<<<< HEAD
 <<<<<<< HEAD
                             @lang('pub_theme::emergency.dental_emergency.emergency_number.label')
                         </a>
@@ -111,6 +122,11 @@
                         </a>
                         <p class="text-red-100 text-sm mt-2">Chiamata gratuita da fisso e mobile</p>
 >>>>>>> aurmich/dev
+=======
+                            800-123-456
+                        </a>
+                        <p class="text-red-100 text-sm mt-2">Chiamata gratuita da fisso e mobile</p>
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
                     </div>
 
                     {{-- CTA primaria --}}
@@ -120,10 +136,14 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                         </svg>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <span>{{ $primary_cta['text'] ?? __('pub_theme::emergency.dental_emergency.call_now_action.label') }}</span>
 =======
                         <span>{{ $primary_cta['text'] ?? 'Chiama Ora' }}</span>
 >>>>>>> aurmich/dev
+=======
+                        <span>{{ $primary_cta['text'] ?? 'Chiama Ora' }}</span>
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
                         <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                         </svg>
@@ -202,15 +222,21 @@
         {{-- Sezione rassicurante --}}
         <div class="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <h3 class="text-xl font-bold mb-4">@lang('pub_theme::emergency.dental_emergency.good_hands.label')</h3>
             <p class="text-red-100 mb-6 max-w-3xl mx-auto">
                 @lang('pub_theme::emergency.dental_emergency.team_description.label')
 =======
+=======
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
             <h3 class="text-xl font-bold mb-4">Sei in Buone Mani</h3>
             <p class="text-red-100 mb-6 max-w-3xl mx-auto">
                 Il nostro team di odontoiatri specializzati in gravidanza è preparato per gestire ogni emergenza.
                 Tutti i protocolli sono sicuri per te e il tuo bambino, con farmaci e trattamenti adatti alla gravidanza.
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
             </p>
 
             {{-- Certificazioni emergency --}}
@@ -220,10 +246,14 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                     </svg>
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <span class="text-sm font-medium">@lang('pub_theme::emergency.dental_emergency.safe_protocols.label')</span>
 =======
                     <span class="text-sm font-medium">Protocolli Sicuri</span>
 >>>>>>> aurmich/dev
+=======
+                    <span class="text-sm font-medium">Protocolli Sicuri</span>
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
                 </div>
 
                 <div class="flex items-center gap-2 bg-white/20 rounded-full px-4 py-2">
@@ -231,10 +261,14 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
                     </svg>
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <span class="text-sm font-medium">@lang('pub_theme::emergency.dental_emergency.specialized_team.label')</span>
 =======
                     <span class="text-sm font-medium">Team Specializzato</span>
 >>>>>>> aurmich/dev
+=======
+                    <span class="text-sm font-medium">Team Specializzato</span>
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
                 </div>
 
                 <div class="flex items-center gap-2 bg-white/20 rounded-full px-4 py-2">

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -639,3 +640,16 @@
 </body>
 </html>
 >>>>>>> aurmich/dev
+=======
+@extends('errors::illustrated-layout')
+
+@section('code', '419')
+@section('title', __('Page Expired'))
+
+@section('image')
+<div style="background-image: url({{ asset('/svg/403.svg') }});" class="absolute pin bg-cover bg-no-repeat md:bg-left lg:bg-center">
+</div>
+@endsection
+
+@section('message', __('Sorry, your session has expired. Please refresh and try again.'))
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)

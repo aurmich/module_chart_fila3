@@ -18,6 +18,7 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 class ExceptionHandler 
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * Configura la gestione delle eccezioni.
      *
@@ -28,6 +29,9 @@ class ExceptionHandler
 =======
     public static function handles(Exceptions $exceptions)
 >>>>>>> aurmich/dev
+=======
+    public static function handles(Exceptions $exceptions)
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
     {
         
         $exceptions->render(function (HttpException $e,Request $request) {

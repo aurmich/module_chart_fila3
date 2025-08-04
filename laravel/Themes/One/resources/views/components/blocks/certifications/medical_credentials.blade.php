@@ -28,10 +28,14 @@
 @props([
     'title' => 'Certificazioni e Riconoscimenti',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'subtitle' => __('pub_theme::components.certifications.subtitle'),
 =======
     'subtitle' => 'La qualità dei nostri servizi è garantita da certificazioni nazionali e internazionali di prestigio',
 >>>>>>> aurmich/dev
+=======
+    'subtitle' => 'La qualità dei nostri servizi è garantita da certificazioni nazionali e internazionali di prestigio',
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
     'className' => 'bg-gradient-to-br from-gray-50 to-blue-50 py-20',
     'certifications' => [],
     'show_verification' => true,
@@ -75,10 +79,14 @@
                     logo: '/img/cert/iso-9001.png',
                     color: 'from-green-500 to-emerald-600',
 <<<<<<< HEAD
+<<<<<<< HEAD
                     description: '@lang('pub_theme::components.certifications.iso_9001.description')',
 =======
                     description: 'Sistema di gestione qualità conforme agli standard internazionali più rigorosi',
 >>>>>>> aurmich/dev
+=======
+                    description: 'Sistema di gestione qualità conforme agli standard internazionali più rigorosi',
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
                     verification_url: 'https://www.tuv.com/world/en/certificate-validation.html',
                     trust_weight: 20,
                     features: [
@@ -98,10 +106,14 @@
                     logo: '/img/cert/gdpr-cert.png',
                     color: 'from-purple-500 to-violet-600',
 <<<<<<< HEAD
+<<<<<<< HEAD
                     description: '@lang('pub_theme::components.certifications.gdpr_compliance.description')',
 =======
                     description: 'Conformità alle normative europee sulla protezione dei dati personali e sanitari',
 >>>>>>> aurmich/dev
+=======
+                    description: 'Conformità alle normative europee sulla protezione dei dati personali e sanitari',
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
                     verification_url: 'https://www.garanteprivacy.it/verifica-compliance',
                     trust_weight: 15,
                     features: [
@@ -204,10 +216,14 @@
                             <span x-show="verificationStatus === 'verified'">Certificazioni Verificate</span>
                         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <p class="text-xs text-gray-600">@lang('pub_theme::components.certifications.certified_quality')</p>
 =======
                         <div class="text-xs text-green-600">Trust Score: <span x-text="trustScore + '%'"></span></div>
 >>>>>>> aurmich/dev
+=======
+                        <div class="text-xs text-green-600">Trust Score: <span x-text="trustScore + '%'"></span></div>
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
                     </div>
                 </div>
             </div>
@@ -378,10 +394,14 @@
                             <div class="text-center">
                                 <div class="text-3xl font-bold text-gray-900" x-text="trustScore + '%'"></div>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 <div class="text-xs text-gray-500">@lang('pub_theme::components.certifications.reliability')</div>
 =======
                                 <div class="text-xs text-gray-500">Affidabilità</div>
 >>>>>>> aurmich/dev
+=======
+                                <div class="text-xs text-gray-500">Affidabilità</div>
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
                             </div>
                         </div>
                     </div>
@@ -395,10 +415,14 @@
                 {{-- Trust Breakdown --}}
                 <div class="space-y-4">
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <h4 class="text-xl font-bold text-gray-900 mb-4">@lang('pub_theme::components.certifications.credibility_breakdown')</h4>
 =======
                     <h4 class="text-xl font-bold text-gray-900 mb-4">Breakdown Credibilità</h4>
 >>>>>>> aurmich/dev
+=======
+                    <h4 class="text-xl font-bold text-gray-900 mb-4">Breakdown Credibilità</h4>
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
 
                     <template x-for="cert in certifications" :key="cert.id">
                         <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">

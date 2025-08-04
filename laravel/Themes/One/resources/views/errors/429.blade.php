@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {{--
 /**
  * 429 Too Many Requests Error Page - SaluteOra Medical Theme
@@ -713,3 +714,16 @@
     </script>
 </body>
 </html>
+=======
+@extends('errors::illustrated-layout')
+
+@section('code', '429')
+@section('title', __('Too Many Requests'))
+
+@section('image')
+<div style="background-image: url({{ asset('/svg/403.svg') }});" class="absolute pin bg-cover bg-no-repeat md:bg-left lg:bg-center">
+</div>
+@endsection
+
+@section('message', __('Sorry, you are making too many requests to our servers.'))
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)

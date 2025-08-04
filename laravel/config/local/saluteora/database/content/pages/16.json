@@ -3,7 +3,11 @@
     "title": {
         "it": "Cookie Policy - Gestione Cookie e Tracciamento"
     },
+<<<<<<< HEAD
     "slug": "16",
+=======
+    "slug": "cookie-policy",
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
     "content": null,
     "content_blocks": {
         "it": [

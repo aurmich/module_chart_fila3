@@ -11,10 +11,14 @@
                 "type": "hero",
                 "data": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "view": "pub_theme::components.blocks.hero.simple",
 =======
                     "view": "ui::components.blocks.hero.simple",
 >>>>>>> 54f4fa16 (.)
+=======
+                    "view": "pub_theme::components.blocks.hero.simple",
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
                     "title": "Chi Siamo",
                     "subtitle": "Scopri la nostra storia e la nostra missione",
                     "image": "\/img\/about-hero.jpg",
@@ -29,10 +33,14 @@
                 "type": "feature_sections",
                 "data": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "view": "pub_theme::components.blocks.feature_sections.v1",
 =======
                     "view": "ui::components.blocks.feature_sections.v1",
 >>>>>>> 54f4fa16 (.)
+=======
+                    "view": "pub_theme::components.blocks.feature_sections.v1",
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
                     "title": "La Nostra Missione",
                     "sections": [
                         {
@@ -57,10 +65,14 @@
                 "type": "team",
                 "data": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "view": "pub_theme::components.blocks.team.v1",
 =======
                     "view": "ui::components.blocks.team.v1",
 >>>>>>> 54f4fa16 (.)
+=======
+                    "view": "pub_theme::components.blocks.team.v1",
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
                     "title": "Il Nostro Team",
                     "description": "Professionisti dedicati al tuo benessere",
                     "members": [
@@ -83,10 +95,14 @@
                 "type": "stats",
                 "data": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "view": "pub_theme::components.blocks.stats.v1",
 =======
                     "view": "ui::components.blocks.stats.v1",
 >>>>>>> 54f4fa16 (.)
+=======
+                    "view": "pub_theme::components.blocks.stats.v1",
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
                     "title": "I Nostri Numeri",
                     "stats": [
                         {
@@ -108,10 +124,14 @@
                 "type": "cta",
                 "data": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "view": "pub_theme::components.blocks.cta.v1",
 =======
                     "view": "ui::components.blocks.cta.v1",
 >>>>>>> 54f4fa16 (.)
+=======
+                    "view": "pub_theme::components.blocks.cta.v1",
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
                     "title": "Pronto a Iniziare?",
                     "description": "Contattaci per una consulenza personalizzata",
                     "button_text": "Contattaci",
@@ -139,7 +159,11 @@
     "created_by": "9c63325e-ce65-4632-bc54-1ef576839de5",
     "updated_by": "01967bd5-7a4d-71c6-b1aa-594f6e9dee10"
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> 54f4fa16 (.)
+=======
+}
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)

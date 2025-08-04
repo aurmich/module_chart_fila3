@@ -21,9 +21,16 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 =======
 //use Illuminate\Foundation\Application;
 use App\Application;
+use Illuminate\Http\Request;
+use Modules\Xot\Exceptions\ExceptionHandler;
+use Modules\Xot\Actions\View\GetViewPathAction;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+use Symfony\Component\HttpKernel\Exception\HttpException;
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
@@ -51,5 +58,10 @@ return Application::configure(basePath: dirname(__DIR__))
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+        ExceptionHandler::handles($exceptions);
+       
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
     })->create();

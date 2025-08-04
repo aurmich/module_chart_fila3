@@ -29,14 +29,20 @@ class Page extends Component
         $this->slug = $slug;
         $field=$side.'_blocks';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
         //Assert::isInstanceOf($page = PageModel::firstOrCreate(['slug' => $slug], ['title' => $slug, $field => []]), PageModel::class, '['.__LINE__.']['.__FILE__.']');
         $page=PageModel::firstWhere(['slug' => $slug]);
         if($page===null){
             abort(404,'page not found: '.$slug);
         }
+<<<<<<< HEAD
 =======
         Assert::isInstanceOf($page = PageModel::firstOrCreate(['slug' => $slug], ['title' => $slug, $field => []]), PageModel::class, '['.__LINE__.']['.__FILE__.']');
 >>>>>>> 7274ba81 (✨ (vscode): add new recommended extensions for Laravel development to improve developer experience)
+=======
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
         $blocks = $page->$field ;
         if(!is_array($blocks)){
             $primary_lang=XotData::make()->primary_lang;
@@ -46,10 +52,14 @@ class Page extends Component
             $blocks = [];
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
                
         
 =======
 >>>>>>> 7274ba81 (✨ (vscode): add new recommended extensions for Laravel development to improve developer experience)
+=======
+        
+>>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
         $this->blocks = BlockData::collect($blocks);
     }
     /**
