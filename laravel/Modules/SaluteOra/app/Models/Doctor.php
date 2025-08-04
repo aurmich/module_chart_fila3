@@ -537,6 +537,7 @@ class Doctor extends User implements HasMedia
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
@@ -554,10 +555,12 @@ class Doctor extends User implements HasMedia
      *
      * @return array<string, string>
      */
+=======
+>>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
-            //'certification' => 'array',  // Gestisce la conversione da JSON a array
+            'certification' => 'array',  // OBBLIGATORIO: campo in $attachments DEVE essere array per FileUpload
             'certifications' => 'array', // Per retrocompatibilità
 >>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
         ]);

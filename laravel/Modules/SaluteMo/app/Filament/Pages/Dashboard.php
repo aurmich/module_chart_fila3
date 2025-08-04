@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\SaluteMo\Filament\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Get;
 use Modules\SaluteOra\Models\Admin;
 use Modules\SaluteOra\Models\Doctor;
@@ -25,6 +26,9 @@ use Modules\SaluteMo\Filament\Widgets\PatientRegistrationsChartWidget;
 use Modules\SaluteOra\States\Appointment\AppointmentState;
 =======
 use Filament\Pages\Dashboard as FilamentDashboard;
+=======
+use Modules\Xot\Filament\Pages\XotBaseDashboard;
+>>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
 use Illuminate\Contracts\View\View;
 use Modules\SaluteMo\Filament\Widgets\StatsOverview;
 >>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
@@ -37,6 +41,7 @@ use Modules\SaluteMo\Filament\Widgets\StatsOverview;
  *
  * @package Modules\SaluteMo\Filament\Pages
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 class Dashboard extends XotBaseDashboard
 {
@@ -54,20 +59,17 @@ class Dashboard extends XotBaseDashboard
         ];
 =======
 class Dashboard extends FilamentDashboard
+=======
+class Dashboard extends XotBaseDashboard
+>>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
 {
-    protected static ?string $navigationIcon = 'heroicon-o-home';
-    protected static ?string $navigationGroup = 'SaluteMo';
     protected static ?int $navigationSort = 1;
 
-    /**
-     * Restituisce il titolo della dashboard.
-     *
-     * @return string
-     */
-    public function getTitle(): string
-    {
-        return __('salutemo::dashboard.title');
+   
+    public  function getWidgets(): array{
+        return [];
     }
+<<<<<<< HEAD
 
     /**
      * Restituisce la descrizione della dashboard.
@@ -80,6 +82,8 @@ class Dashboard extends FilamentDashboard
 >>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
     }
 
+=======
+>>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
     /**
      * Widget da visualizzare nell'header della dashboard.
      *
@@ -94,8 +98,12 @@ class Dashboard extends FilamentDashboard
     protected function getHeaderWidgets(): array
     {
         return [
+<<<<<<< HEAD
             StatsOverview::class,
 >>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
+=======
+            //StatsOverview::class,
+>>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
         ];
     }
 

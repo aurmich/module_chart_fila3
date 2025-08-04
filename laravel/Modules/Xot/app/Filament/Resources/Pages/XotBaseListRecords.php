@@ -87,6 +87,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
             // \Filament\Actions\CreateAction::make(),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
            // ExportXlsAction::make('export_xls'),
 =======
             ExportXlsAction::make('export_xls'),
@@ -94,6 +95,9 @@ abstract class XotBaseListRecords extends FilamentListRecords
 =======
             ExportXlsAction::make('export_xls'),
 >>>>>>> 54f4fa16 (.)
+=======
+           // ExportXlsAction::make('export_xls'),
+>>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
         ];
     }
 

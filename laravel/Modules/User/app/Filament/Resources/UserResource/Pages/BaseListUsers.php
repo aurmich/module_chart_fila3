@@ -331,7 +331,9 @@ abstract class BaseListUsers extends XotBaseListRecords
      */
     protected function getHeaderWidgets(): array
     {
-        return [UserOverview::class];
+        return [
+            //UserOverview::class
+        ];
     }
 
     /**
@@ -383,6 +385,7 @@ abstract class BaseListUsers extends XotBaseListRecords
 >>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
 =======
             Tables\Actions\DeleteBulkAction::make(),
+<<<<<<< HEAD
             ExportBulkAction::make(),
 >>>>>>> a3174e5b (phpstan)
 =======
@@ -401,6 +404,9 @@ abstract class BaseListUsers extends XotBaseListRecords
             Tables\Actions\DeleteBulkAction::make(),
             ExportBulkAction::make(),
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+            //ExportBulkAction::make(),
+>>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
         ];
     }
 }

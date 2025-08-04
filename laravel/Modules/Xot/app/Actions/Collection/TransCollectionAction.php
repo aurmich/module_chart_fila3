@@ -25,9 +25,15 @@ use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+/**
+ * Action per la traduzione di elementi di una collezione.
+ */
+>>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
 class TransCollectionAction
 {
     use QueueableAction;
@@ -36,6 +42,9 @@ class TransCollectionAction
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
     /**
      * Esegue la traduzione di una collezione.
      *
@@ -44,15 +53,19 @@ class TransCollectionAction
      *
      * @return Collection<int|string, string>
      */
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
     public function execute(
         Collection $collection,
         ?string $transKey,
     ): Collection {
         if (null === $transKey) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             return $collection->map(fn (mixed $item): string => SafeStringCastAction::cast($item));
@@ -62,10 +75,14 @@ class TransCollectionAction
 =======
             return $collection;
 >>>>>>> 54f4fa16 (.)
+=======
+            return $collection->map(fn (mixed $item): string => (string) $item);
+>>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
         }
 
         $this->transKey = $transKey;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         return $collection->map(fn (mixed $item): string => $this->trans($item));
@@ -113,39 +130,56 @@ class TransCollectionAction
 =======
 >>>>>>> 54f4fa16 (.)
         return $collection->map(fn ($item): string => $this->trans($item));
+=======
+        return $collection->map(fn (mixed $item): string => $this->trans($item));
+>>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
     }
 
+    /**
+     * Traduce un singolo elemento.
+     *
+     * @param mixed $item L'elemento da tradurre
+     *
+     * @return string L'elemento tradotto o l'elemento originale se la traduzione non esiste
+     */
     public function trans(mixed $item): string
     {
-        if (! \is_string($item)) {
-            dddx($item);
-
-            return '';
+        // Converte l'item in stringa se non lo è già
+        if (!\is_string($item)) {
+            $item = (string) $item;
         }
-        $transKey = $this->transKey;
-        $key = $transKey.'.'.$item;
+
+        if (empty($item) || null === $this->transKey) {
+            return $item;
+        }
+
+        // Prima prova la traduzione diretta
+        $key = $this->transKey.'.'.$item;
         $trans = trans($key);
 
-        if ($trans !== $key) {
-            if (! is_string($trans)) {
-                // return 'fix trans ['.$item.']';
-                return $item;
-            }
-
+        // Se la traduzione esiste ed è una stringa, la restituisce
+        if ($trans !== $key && \is_string($trans)) {
             return $trans;
         }
 
-        Assert::string($item1 = Str::replace('.', '_', $item), '['.__LINE__.']['.class_basename($this).']');
-        $key = $transKey.'.'.$item1;
-        $trans = trans($key);
-        if ($trans !== $key) {
-            return $trans;
+        // Seconda prova: sostituisce i punti con underscore
+        $itemWithUnderscore = Str::replace('.', '_', $item);
+        $keyWithUnderscore = $this->transKey.'.'.$itemWithUnderscore;
+        $transWithUnderscore = trans($keyWithUnderscore);
+
+        // Se la traduzione con underscore esiste ed è una stringa, la restituisce
+        if ($transWithUnderscore !== $keyWithUnderscore && \is_string($transWithUnderscore)) {
+            return $transWithUnderscore;
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+        // Se nessuna traduzione è stata trovata, restituisce l'elemento originale
+>>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
         return $item;
     }
 }

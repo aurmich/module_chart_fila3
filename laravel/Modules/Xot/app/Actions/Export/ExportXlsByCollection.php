@@ -9,6 +9,7 @@ namespace Modules\Xot\Actions\Export;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
@@ -23,6 +24,10 @@ use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\BinaryFileResponse;
 >>>>>>> d23ba493 (add calendar)
+=======
+use Illuminate\Support\Collection;
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
+>>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\Xot\Exports\CollectionExport;
 use Spatie\QueueableAction\QueueableAction;
@@ -128,6 +133,7 @@ class ExportXlsByCollection
         );
 =======
         // Assicuriamo che $fields sia un array di stringhe
+<<<<<<< HEAD
         $stringFields = array_map(function (string|int|float|bool $field): string {
             return strval($field);
         }, array_values($fields));
@@ -138,6 +144,12 @@ class ExportXlsByCollection
             return strval($field);
         }, array_values($fields));
 >>>>>>> 54f4fa16 (.)
+=======
+        $stringFields = array_map(
+            fn (mixed $field): string => (string) $field,
+            array_values($fields)
+        );
+>>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
 
         $export = new CollectionExport(
             collection: $collection,
@@ -298,6 +310,7 @@ class ExportXlsByCollection
             foreach ($fields as $col => $field) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $value = $this->extractValue($data, $field);
 =======
 =======
@@ -317,6 +330,9 @@ class ExportXlsByCollection
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+                $value = $this->extractValue($data, $field);
+>>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
                 $sheet->setCellValueByColumnAndRow($col + 1, $row, $value);
             }
             $row++;
@@ -324,6 +340,9 @@ class ExportXlsByCollection
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
 
     /**
      * Estrae il valore da un oggetto o array usando il campo specificato.
@@ -338,6 +357,7 @@ class ExportXlsByCollection
         // Usa data_get di Laravel per accesso sicuro ai dati nidificati
         return data_get($data, $field, '');
     }
+<<<<<<< HEAD
 
     /**
      * Converte EloquentCollection in Support\Collection mantenendo i dati.
@@ -353,4 +373,6 @@ class ExportXlsByCollection
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
 }
