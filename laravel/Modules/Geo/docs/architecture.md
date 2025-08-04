@@ -10,19 +10,7 @@ The Geo module is responsible for managing all geographical data and functionali
 - `Province`: Represents a province within a region
 - `City`: Represents a city within a province
 - `Cap`: Represents a postal code (CAP) for a city
-<<<<<<< HEAD
 - `Address`: Handles complete address information (con **campi separati per regione e provincia**, vedi sezione dedicata)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `Address`: Handles complete address information (con **campi separati per regione e provincia**, vedi sezione dedicata)
-=======
-- `Address`: Handles complete address information
->>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
-=======
-- `Address`: Handles complete address information (con **campi separati per regione e provincia**, vedi sezione dedicata)
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
->>>>>>> aurmich/dev
 - `Location`: Manages geographical coordinates and locations
 - `Place`: Represents points of interest with geographical data
 
@@ -63,13 +51,6 @@ Seeders for geographical data are provided to populate the database with initial
 - [Geo Module API Reference](./api.md)
 - [Data Models](./models.md)
 - [Migrations](./migrations.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
->>>>>>> aurmich/dev
 
 ## Separazione regione e provincia negli indirizzi italiani
 
@@ -144,11 +125,3 @@ Per tutti gli indirizzi italiani è obbligatorio:
 ---
 
 > Vedi anche: Xot/docs/standards/coding-standards.md, Xot/docs/filosofia.md, Xot/docs/zen.md
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
-=======
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
->>>>>>> aurmich/dev

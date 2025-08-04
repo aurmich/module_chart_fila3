@@ -82567,15 +82567,8 @@
               }
               /* }}} */
     
-<<<<<<< HEAD
               // Public interface {{{
               // All functions below are considered public.
-=======
-              //======================================================================
-              // Public interface {{{
-              // All functions below are considered public.
-              //======================================================================
->>>>>>> aurmich/dev
     
               // Simple API {{{
     

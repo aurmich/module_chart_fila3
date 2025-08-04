@@ -3,13 +3,6 @@ description:
 globs:
 alwaysApply: false
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f5caa3ff (add ai rules)
->>>>>>> aurmich/dev
 # Regola: Path LocationForm
 
 - La classe `LocationForm` deve essere sempre posizionata in `Modules/Geo/Filament/Forms/LocationForm.php`.
@@ -26,11 +19,3 @@ alwaysApply: false
   ```
 
 > Prevenire errori di namespace è fondamentale per la stabilità e la manutenibilità del codice.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
-=======
->>>>>>> f5caa3ff (add ai rules)
->>>>>>> aurmich/dev

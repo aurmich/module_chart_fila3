@@ -374,13 +374,6 @@ class LocationSelectTest extends TestCase
 ## License
 
 MIT
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
 
 ## Nota importante
 
@@ -393,11 +386,3 @@ use Modules\Geo\Filament\Forms\LocationForm;
 Non utilizzare mai `Modules\Geo\App\Filament\Forms\LocationForm`.
 
 > Aggiornare sempre la documentazione e i file .mdc windsurf/cursor in caso di modifica del path o del namespace.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev

@@ -143,13 +143,6 @@ Select::make('cap')
 - Geo/module_geo.md
 - Xot/module-structure.md
 - SaluteOra/docs/geo-integration.md
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 39ba294d (♻️ (Cap, City, Province, Region): deprecate legacy models and unify into a single Comune model to simplify data access and improve maintainability)
->>>>>>> aurmich/dev
 
 ## Confronto: GeoJsonModel vs Laravel Sushi
 
@@ -228,13 +221,6 @@ class Comune extends GeoJsonModel
 
 - Tutti i filtri e le select dinamiche ora usano solo il modello Comune.
 - Vedi anche [geo_entities.md](./geo_entities.md) per motivazione e percentuali di adozione.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 893fe63f (✨ (Geo Module): add comprehensive documentation for Comune model)
->>>>>>> aurmich/dev
 
 ## Analisi: Comune come modello Sushi
 
@@ -422,13 +408,6 @@ class ComuneSushi extends Model
 ---
 
 - Vedi anche [geo_entities.md](./geo_entities.md) e [squire-integration.md](./squire-integration.md) per altri confronti e strategie.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 41d7473e (📝 (README.md): add documentation for static geographic data management strategies and recommendations for implementation)
->>>>>>> aurmich/dev
 
 ## Approccio avanzato: SushiToJsons (CRUD, multi-tenant, Eloquent + JSON)
 
@@ -513,15 +492,3 @@ trait SushiToJsons
 ---
 
 - Vedi anche [geo_entities.md](./geo_entities.md) e [squire-integration.md](./squire-integration.md) per altri confronti e strategie.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
-=======
->>>>>>> 39ba294d (♻️ (Cap, City, Province, Region): deprecate legacy models and unify into a single Comune model to simplify data access and improve maintainability)
-=======
->>>>>>> 893fe63f (✨ (Geo Module): add comprehensive documentation for Comune model)
-=======
->>>>>>> 41d7473e (📝 (README.md): add documentation for static geographic data management strategies and recommendations for implementation)
->>>>>>> aurmich/dev
