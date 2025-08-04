@@ -11,6 +11,9 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Filament\Widgets\Widget;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7adb1164 (♻️ (DoctorResource.php): remove hardcoded email and token for better security and flexibility)
 use Illuminate\Http\Request;
 use Webmozart\Assert\Assert;
 use Modules\Xot\Datas\XotData;
@@ -183,7 +186,7 @@ class RegistrationWidget extends XotBaseWidget
 >>>>>>> aa30b366 (✨ (mail_template.php): add 'slug' label and description to Italian mail template for better localization support)
     protected static string $view = 'pub_theme::filament.widgets.registration';
 
-    public function mount(string $type): void
+    public function mount(string $type,Request $request): void
     {
         $this->type = $type;
         $this->resource = XotData::make()->getUserResourceClassByType($type);
@@ -199,9 +202,9 @@ class RegistrationWidget extends XotBaseWidget
         $this->form->model($obj);
         $this->record=$obj;
 
-
-        $email='marco1@gmail.com';
-        $token='$2y$12$M9lZbLr8T.2GktlJjl1w6OoKHFX5MXnYV/ZePL7N4Rls0.pgkPczK';
+        $data=$request->all();
+        $email=Arr::get($data,'email');//,'marco1@gmail.com';
+        $token=Arr::get($data,'token');//'$2y$12$M9lZbLr8T.2GktlJjl1w6OoKHFX5MXnYV/ZePL7N4Rls0.pgkPczK';
 
         $user=$this->model::firstWhere('email',$email);
         if($user==null){
