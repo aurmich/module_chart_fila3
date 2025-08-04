@@ -1,28 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Path-based git attributes
-# https://www.kernel.org/pub/software/scm/git/docs/gitattributes.html
-
-# Ignore all test and documentation with "export-ignore".
-/.github            export-ignore
-/.gitattributes     export-ignore
-/.gitignore         export-ignore
-/phpunit.xml.dist   export-ignore
-/art                export-ignore
-/docs               export-ignore
-/tests              export-ignore
-/.editorconfig      export-ignore
-/.php_cs.dist.php   export-ignore
-/psalm.xml          export-ignore
-/psalm.xml.dist     export-ignore
-/testbench.yaml     export-ignore
-/UPGRADING.md       export-ignore
-/phpstan.neon.dist  export-ignore
-/phpstan-baseline.neon  export-ignore
-=======
->>>>>>> aurmich/dev
 * text=auto eol=lf
 
 *.blade.php diff=html
@@ -31,7 +6,6 @@
 *.md diff=markdown
 *.php diff=php
 
-<<<<<<< HEAD
 *.css linguist-vendored
 *.scss linguist-vendored
 *.js linguist-vendored
@@ -39,19 +13,3 @@
 CHANGELOG.md export-ignore
 README.md export-ignore
 *.psd filter=lfs diff=lfs merge=lfs -text
-=======
-CHANGELOG.md export-ignore
-README.md export-ignore
-=======
->>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
-* text=auto
-*.css linguist-vendored
-*.scss linguist-vendored
-*.js linguist-vendored
-CHANGELOG.md export-ignore
-*.psd filter=lfs diff=lfs merge=lfs -text
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
->>>>>>> aurmich/dev

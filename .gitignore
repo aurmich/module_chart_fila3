@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Dependencies
-/vendor/
-node_modules/
-npm-debug.log
-yarn-error.log
-
-# Laravel specific
-=======
->>>>>>> aurmich/dev
 # 🔧  .gitignore
 # Questo file definisce quali file e cartelle devono essere ignorati dal controllo di versione
 # Organizzato secondo la filosofia di sviluppo : chiarezza, organizzazione e manutenibilità
@@ -60,158 +47,23 @@ package-lock.json
 /docs/package-lock.json
 
 # 📱 Laravel specifici
-<<<<<<< HEAD
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 bootstrap/compiled.php
 app/storage/
 public/storage
 public/hot
 public_html/storage
 public_html/hot
-<<<<<<< HEAD
 laravel_bak/
-=======
-<<<<<<< HEAD
-
-# Security & Environment
-storage/*.key
-.env
-Homestead.yaml
-Homestead.json
-/.vagrant
-
-# Cache & Generated files
-.phpunit.result.cache
-.git-blame-ignore-revs
-.php-cs-fixer.cache
-*.phar
-*.lock
-
-=======
-*.jar
-*.log
-*.lock
-package-lock.json
-*.phar
-.git-rewrite
-.php-cs-fixer.cache
-package-lock.json
-vendor/
-node_modules/
-.env
-/.vagrant
-.phpunit.result.cache
-.DS_Store
-error_log
-.phpintel
-/.idea
-
-v8-compile-cache-0
-/resources/views/maps/farmshops/data
-package-lock.json
-
-*.stackdump
-
-*.cache
-/fonts
->>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
-.git-blame-ignore-revs
-package-lock.json
-.php-cs-fixer.cache
-package-lock.json
-.git-rewrite/
-.php-cs-fixer.cache
-node_modules
-<<<<<<< HEAD
-build
-.php-cs-fixer.cache
-.php-cs-fixer.cache
-.php-cs-fixer.cache
-.php-cs-fixer.cache
-.git-blame-ignore-revs
-.php-cs-fixer.cache
-.git-blame-ignore-revs
-.git-blame-ignore-revs
-.php-cs-fixer.cache
-
-*:Zone.Identifier
-.php-cs-fixer.cache
-/vendor/
-node_modules/
-npm-debug.log
-yarn-error.log
-
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
-
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
-
-# Laravel 5 & Lumen specific with changed public path
-public_html/storage
-public_html/hot
-
-storage/*.key
-.env
-Homestead.yaml
-Homestead.json
-/.vagrant
-.phpunit.result.cache
-.git-blame-ignore-revs
-.php-cs-fixer.cache
-*.phar
-*.lock
-.git-blame-ignore-revs
-package-lock.json
-.php-cs-fixer.cache
-package-lock.json
-.git-rewrite/
-.php-cs-fixer.cache
-node_modules
-build
-.php-cs-fixer.cache
-.php-cs-fixer.cache
-.php-cs-fixer.cache
-.php-cs-fixer.cache
-.git-blame-ignore-revs
-.php-cs-fixer.cache
-.git-blame-ignore-revs
-.git-blame-ignore-revs
-.php-cs-fixer.cache
-
-# File di log
-*.log
-package-lock.json
-.git-rewrite/
-build
-
-# OS specific
-*:Zone.Identifier
-
-# Log files
-*.log
-# PHPStan documentation
-docs/phpstan/
-
-=======
->>>>>>> aurmich/dev
 .git-rewrite
 .fuse_hidden*
 .fuse_hidden**.lock
 *.lock
-<<<<<<< HEAD
 *.old
 *.old1
 *.old2
 backup*/
 *.bak 
 *.backup 
-=======
->>>>>>> aurmich/dev
 package-lock.json
 .php-cs-fixer.cache
 *.phar
@@ -244,7 +96,6 @@ cache/
 
 !laravel/Themes/One/yarn.lock
 laravel/database/migrations
-<<<<<<< HEAD
 laravel/storage/framework/views/*
 laravel/storage/attachments/*
 laravel/_ide_helper.php
@@ -255,17 +106,3 @@ laravel/_ide_helper_models.php
 package-lock.json
 *.phar
 .git-rewrite
-=======
->>>>>>> 54f4fa16 (.)
-=======
-.git-blame-ignore-revs
-*.old
-node_modules
-vendor
-vendor/
-build/
--e 
-# PHPStan documentation
-docs/phpstan/
->>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
->>>>>>> aurmich/dev
