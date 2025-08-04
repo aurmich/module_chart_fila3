@@ -63,6 +63,7 @@ new class extends Component
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div >
         
         
@@ -111,6 +112,9 @@ new class extends Component
 =======
     <div class="min-h-screen bg-gradient-to-b from-blue-50 to-white py-12">
 >>>>>>> 54f4fa16 (.)
+=======
+    <div class="min-h-screen bg-white pb-5">
+>>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
         <!-- Logo e intestazione -->
         <div class="text-center mb-8">
             <div class="flex justify-center mb-4">
@@ -121,6 +125,7 @@ new class extends Component
         </div>
 
         <!-- Card contenente il form di registrazione -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -138,6 +143,9 @@ new class extends Component
 =======
         <div id="doctor-section" class="rounded-2xl shadow-xl overflow-hidden">
 >>>>>>> d23ba493 (add calendar)
+=======
+        <div id="doctor-section" class="rounded-2xl overflow-hidden">
+>>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
             <!-- Form di registrazione -->
             @livewire(\Modules\User\Filament\Widgets\RegistrationWidget::class, ['type' => $type])
         </div>

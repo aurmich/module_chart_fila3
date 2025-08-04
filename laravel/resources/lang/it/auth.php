@@ -5,10 +5,14 @@ return [
         'title' => 'Accedi',
         'or' => 'oppure',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'create_account' => 'Crea un account',
 =======
         'create_account' => 'crea un account',
 >>>>>>> 54f4fa16 (.)
+=======
+        'create_account' => 'Crea un account',
+>>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
         'email' => 'Email',
         'password' => 'Password',
         'remember_me' => 'Ricordami',

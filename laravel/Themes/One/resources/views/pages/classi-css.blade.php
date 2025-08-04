@@ -255,6 +255,7 @@
 <div class="hover:cursor-pointer">Cursor card</div>
 <div class="mx-4">Margin left-right</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 </x-layouts.app>
 >>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
 =======
@@ -285,3 +286,26 @@
 =======
 </x-layouts.app>
 >>>>>>> d23ba493 (add calendar)
+=======
+<div class="bg-[#EBF5FF]">Form background</div>
+<div class="bg-[#2E9FBE]">New Primary</div>
+<div class="text-[#2E9FBE]">Text new primary</div>
+<div class="py-5">Padding 20px</div>
+<div class="pb-5">Padding bottom 20px</div>
+<div class="text-l">Testo large</div>
+<div class="size-7">Size 7</div>
+<div class="w-7 h-7">Width height</div>
+<div class="flex-col">
+    <div class="!bg-[#1A467F]"></div>
+</div>
+<div class="items-center">
+    <div class="!bg-[#1A467F]"></div>
+</div>
+<div class="text-lg">Testo large</div>
+<div class="mb-7">Padding bottom small</div>
+<div class="!border-[#0D9488]">Border</div>
+<div class="!bg-[#0D9488]">Background</div>
+<div class="border-[#1A467F]">Border</div>
+<div class="border-black">BorderBlack</div>
+</x-layouts.app>
+>>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)

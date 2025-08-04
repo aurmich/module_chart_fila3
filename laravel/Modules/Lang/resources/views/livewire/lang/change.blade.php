@@ -7,6 +7,7 @@
     >
         <div class="flex items-center space-x-1">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <x-filament::icon icon="ui-flags.{{ $lang }}" class="w-7 h-7" />
             <svg xmlns="http://www.w3.org/2000/svg" class="size-4 transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -17,6 +18,12 @@
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
 </svg>
 >>>>>>> 54f4fa16 (.)
+=======
+            <x-filament::icon icon="ui-flags.{{ $lang }}" class="w-7 h-7" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-4 transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+>>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
         </div>
     </button>
     <div
