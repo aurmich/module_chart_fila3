@@ -2,11 +2,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 use Livewire\Volt\Component;
 use Modules\SaluteOra\Models\Appointment;
 $user=auth()->user();
 
+=======
+<?php
+use Livewire\Volt\Component;
+use Modules\SaluteOra\Models\Appointment;
+//$user=auth()->user();
+$appointments = Appointment::all();
+>>>>>>> 2df8b507 (bozza widget doctor appointments)
 
 new class extends Component {
     public $count = 0;
@@ -15,6 +23,10 @@ new class extends Component {
     {
         return [
             'user' => auth()->user(),
+<<<<<<< HEAD
+=======
+            'appointments' => Appointment::paginate(10),
+>>>>>>> 2df8b507 (bozza widget doctor appointments)
         ];
     }
  
@@ -27,6 +39,7 @@ new class extends Component {
 
 <div>
     
+<<<<<<< HEAD
     <!-- Back button -->
     <div class="w-full flex justify-start">
         {{-- DA AGGIORNARE URL --}}
@@ -200,6 +213,8 @@ new class extends Component {
 =======
 <div>
 >>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
+=======
+>>>>>>> 2df8b507 (bozza widget doctor appointments)
     <!-- Back button -->
     <div class="w-full flex justify-start">
         {{-- DA AGGIORNARE URL --}}
@@ -234,6 +249,7 @@ new class extends Component {
             <h1 class="text-center">Appuntamenti in Entrata</h1>
         </div>
     </div>
+<<<<<<< HEAD
 
     <!-- Appointment card -->
     <div class="w-full flex flex-col justify-center items-center py-9 px-4">
@@ -412,6 +428,12 @@ new class extends Component {
           </svg>
         </div>
     </div>
+=======
+    @each('pub_theme::appointment.doctor-pending-item', $appointments, 'appointment','pub_theme::appointment.doctor-pending-empty')
+    {{--  
+    @livewire(\Modules\SaluteOra\Filament\Widgets\DoctorAppointmentsWidget::class, ['doctor_id' => $user->id,'state' => 'pending'])
+    --}}
+>>>>>>> 2df8b507 (bozza widget doctor appointments)
 </div>
 >>>>>>> 46477621 (- update contenuto pagine appuntamento)
 =======

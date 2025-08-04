@@ -14,6 +14,7 @@ use Modules\Geo\Models\Address;
 use Spatie\MediaLibrary\HasMedia;
 use Modules\SaluteOra\Enums\UserTypeEnum;
 use Modules\SaluteOra\Models\Appointment;
+<<<<<<< HEAD
 use Modules\SaluteOra\Enums\UserStateEnum;
 use Modules\SaluteOra\Models\DoctorStudio;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -213,11 +214,14 @@ use Parental\HasParent;
 use Spatie\MediaLibrary\HasMedia;
 >>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
 use Modules\SaluteOra\Enums\UserTypeEnum;
+=======
+>>>>>>> 2df8b507 (bozza widget doctor appointments)
 use Modules\SaluteOra\Enums\UserStateEnum;
 use Modules\SaluteOra\Models\DoctorStudio;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Modules\SaluteOra\States\User\UserState;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasOneThrough;
@@ -630,6 +634,7 @@ class Doctor extends User implements HasMedia
     {
         return $this->hasMany(Appointment::class, 'doctor_id');
     }
+<<<<<<< HEAD
 
 
 =======
@@ -706,4 +711,6 @@ class Doctor extends User implements HasMedia
     }
         */
 >>>>>>> f3e4ec66 (.)
+=======
+>>>>>>> 2df8b507 (bozza widget doctor appointments)
 }

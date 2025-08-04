@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Filament\Widgets;
 
+<<<<<<< HEAD
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Livewire\Attributes\On;
@@ -36,6 +37,18 @@ use Modules\SaluteOra\States\Appointment\AppointmentState;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Modules\SaluteOra\States\Appointment as StateAppointment;
 use Illuminate\Support\Facades\Gate;
+=======
+use Filament\Facades\Filament;
+use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Support\Facades\Cache;
+use Livewire\Attributes\On;
+use Modules\SaluteOra\Enums\UserTypeEnum;
+use Modules\SaluteOra\Models\Appointment;
+use Modules\SaluteOra\States\Appointment\Confirmed;
+use Modules\SaluteOra\States\Appointment\Pending;
+use Modules\SaluteOra\States\Appointment\Rejected;
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+>>>>>>> 2df8b507 (bozza widget doctor appointments)
 
 /**
  * Widget per gestire gli appuntamenti del dottore.
@@ -43,6 +56,7 @@ use Illuminate\Support\Facades\Gate;
  * Mostra gli appuntamenti in stato pending per il dottore loggato
  * con azioni per confermare o rifiutare gli appuntamenti.
  */
+<<<<<<< HEAD
 class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
 {
     use InteractsWithActions;
@@ -55,6 +69,14 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
      * Vista del widget.
      */
     protected static string $view = 'pub_theme::filament.widgets.doctor-appointments-widget';
+=======
+class DoctorAppointmentsWidget extends XotBaseWidget
+{
+    /**
+     * Vista del widget.
+     */
+    protected static string $view = 'saluteora::filament.widgets.doctor-appointments-widget';
+>>>>>>> 2df8b507 (bozza widget doctor appointments)
 
     /**
      * Schema del form per il widget.
@@ -89,9 +111,12 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
      */
     public function mount(): void
     {
+<<<<<<< HEAD
         $all_states=AppointmentState::getStateMapping()->toArray();
         $this->all_states=$all_states;
         //$this->states=['delete']; //testing
+=======
+>>>>>>> 2df8b507 (bozza widget doctor appointments)
         $this->loadAppointments();
     }
 
@@ -111,7 +136,15 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
             return false;
         }
 
+<<<<<<< HEAD
        
+=======
+        // Verificare tenancy per il dottore
+        $tenant = Filament::getTenant();
+        if (!$tenant) {
+            return false;
+        }
+>>>>>>> 2df8b507 (bozza widget doctor appointments)
 
         return true;
     }
@@ -121,6 +154,7 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
      */
     private function loadAppointments(): void
     {
+<<<<<<< HEAD
         
         $this->invalidateCache();
         $cacheKey = $this->getCacheKey();
@@ -134,6 +168,26 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
                 ->whereIn('state', $this->states)
                 ->orderBy('starts_at', 'asc')
                 ->limit(100)
+=======
+        $user = auth()->user();
+        $tenant = Filament::getTenant();
+
+        if (!$user || !$tenant) {
+            $this->appointments = collect();
+            return;
+        }
+
+        $cacheKey = $this->getCacheKey();
+
+        $this->appointments = Cache::remember($cacheKey, 300, function () use ($user, $tenant) {
+            return Appointment::query()
+                ->with(['patient', 'doctor', 'studio'])
+                ->where('doctor_id', $user->id)
+                ->where('studio_id', $tenant->id)
+                ->whereState('state', Pending::class)
+                ->orderBy('starts_at', 'asc')
+                ->limit(10)
+>>>>>>> 2df8b507 (bozza widget doctor appointments)
                 ->get();
         });
     }
@@ -143,6 +197,7 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
      */
     private function getCacheKey(): string
     {
+<<<<<<< HEAD
        
         $key= sprintf(
             'doctor_appointments_%s_%s',
@@ -153,6 +208,97 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
     }
 
     
+=======
+        $user = auth()->user();
+        $tenant = Filament::getTenant();
+
+        return sprintf(
+            'doctor_appointments_%d_%d',
+            $user?->id ?? 0,
+            $tenant?->id ?? 0
+        );
+    }
+
+    /**
+     * Conferma un appuntamento (transizione da Pending a Confirmed).
+     */
+    public function confirmAppointment(int $appointmentId): void
+    {
+        try {
+            $appointment = $this->findAppointment($appointmentId);
+
+            if (!$appointment || !$appointment->state->canTransitionTo(Confirmed::class)) {
+                $this->dispatch('notify', [
+                    'type' => 'error',
+                    'message' => __('saluteora::widgets.doctor_appointments.errors.cannot_confirm'),
+                ]);
+                return;
+            }
+
+            $appointment->state->transitionTo(Confirmed::class);
+
+            $this->invalidateCache();
+            $this->loadAppointments();
+
+            $this->dispatch('notify', [
+                'type' => 'success',
+                'message' => __('saluteora::widgets.doctor_appointments.messages.appointment_confirmed'),
+            ]);
+
+        } catch (\Exception $e) {
+            logger()->error('Error confirming appointment', [
+                'appointment_id' => $appointmentId,
+                'error' => $e->getMessage(),
+                'user_id' => auth()->id(),
+            ]);
+
+            $this->dispatch('notify', [
+                'type' => 'error',
+                'message' => __('saluteora::widgets.doctor_appointments.errors.confirm_failed'),
+            ]);
+        }
+    }
+
+    /**
+     * Rifiuta un appuntamento (transizione da Pending a Rejected).
+     */
+    public function rejectAppointment(int $appointmentId): void
+    {
+        try {
+            $appointment = $this->findAppointment($appointmentId);
+
+            if (!$appointment || !$appointment->state->canTransitionTo(Rejected::class)) {
+                $this->dispatch('notify', [
+                    'type' => 'error',
+                    'message' => __('saluteora::widgets.doctor_appointments.errors.cannot_reject'),
+                ]);
+                return;
+            }
+
+            $appointment->state->transitionTo(Rejected::class);
+
+            $this->invalidateCache();
+            $this->loadAppointments();
+
+            $this->dispatch('notify', [
+                'type' => 'success',
+                'message' => __('saluteora::widgets.doctor_appointments.messages.appointment_rejected'),
+            ]);
+
+        } catch (\Exception $e) {
+            logger()->error('Error rejecting appointment', [
+                'appointment_id' => $appointmentId,
+                'error' => $e->getMessage(),
+                'user_id' => auth()->id(),
+            ]);
+
+            $this->dispatch('notify', [
+                'type' => 'error',
+                'message' => __('saluteora::widgets.doctor_appointments.errors.reject_failed'),
+            ]);
+        }
+    }
+>>>>>>> 2df8b507 (bozza widget doctor appointments)
 
     /**
      * Trova un appuntamento per ID verificando che appartenga al dottore corrente.
@@ -179,6 +325,7 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
         $this->invalidateCache();
         $this->loadAppointments();
     }
+<<<<<<< HEAD
 
 
 
@@ -286,4 +433,6 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
         ->modalSubmitAction(false) // ⛔️ nasconde il bottone di conferma
         ->modalCancelActionLabel('Chiudi'); // ✅ personalizzi il bottone di chiusura
     }
+=======
+>>>>>>> 2df8b507 (bozza widget doctor appointments)
 }
