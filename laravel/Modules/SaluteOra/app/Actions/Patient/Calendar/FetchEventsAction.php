@@ -8,9 +8,15 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Collection;
 use Spatie\QueueableAction\QueueableAction;
+<<<<<<< HEAD
 use Modules\SaluteOra\Enums\UserTypeEnum;
 use Modules\SaluteOra\Enums\AppointmentStatusEnum;
 use Modules\SaluteOra\Enums\AppointmentTypeEnum;
+=======
+use Modules\SaluteOra\Enums\UserType;
+use Modules\SaluteOra\Enums\AppointmentStatus;
+use Modules\SaluteOra\Enums\AppointmentType;
+>>>>>>> ca5e1eaf (.)
 use Modules\SaluteOra\Models\Appointment;
 
 /**
@@ -31,7 +37,11 @@ final class FetchEventsAction
         try {
             $user = Auth::user();
 
+<<<<<<< HEAD
             if (!$user || $user->type !== UserTypeEnum::PATIENT) {
+=======
+            if (!$user || $user->type !== UserType::PATIENT) {
+>>>>>>> ca5e1eaf (.)
                 throw new \RuntimeException('Unauthorized: User is not a patient');
             }
 
@@ -81,8 +91,13 @@ final class FetchEventsAction
         return [
             'id' => $appointment->id,
             'title' => $title,
+<<<<<<< HEAD
             'start' => $appointment->start_time->toIso8601String(),
             'end' => $appointment->end_time->toIso8601String(),
+=======
+            'start' => $appointment->start_time?->toIso8601String(),
+            'end' => $appointment->end_time?->toIso8601String(),
+>>>>>>> ca5e1eaf (.)
             'allDay' => false,
             'backgroundColor' => $color,
             'borderColor' => $color,
@@ -135,6 +150,7 @@ final class FetchEventsAction
             return '#dc3545';
         }
         return match ($appointment->type) {
+<<<<<<< HEAD
             AppointmentTypeEnum::CONSULTATION => '#fd7e14',
             AppointmentTypeEnum::CLEANING => '#17a2b8',
             AppointmentTypeEnum::TREATMENT => '#28a745',
@@ -143,6 +159,16 @@ final class FetchEventsAction
             AppointmentTypeEnum::SURGERY => '#6f42c1',
             AppointmentTypeEnum::ORTHODONTICS => '#6f42c1',
             AppointmentTypeEnum::PREVENTION => '#17a2b8',
+=======
+            AppointmentType::CONSULTATION => '#fd7e14',
+            AppointmentType::CLEANING => '#17a2b8',
+            AppointmentType::TREATMENT => '#28a745',
+            AppointmentType::EMERGENCY => '#dc3545',
+            AppointmentType::FOLLOWUP => '#ffc107',
+            AppointmentType::SURGERY => '#6f42c1',
+            AppointmentType::ORTHODONTICS => '#6f42c1',
+            AppointmentType::PREVENTION => '#17a2b8',
+>>>>>>> ca5e1eaf (.)
             default => '#3490dc',
         };
     }

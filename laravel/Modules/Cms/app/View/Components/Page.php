@@ -58,6 +58,7 @@ class Page extends Component
     public function render(): ViewContract
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         /*
@@ -72,6 +73,9 @@ class Page extends Component
         ]);
         */
 >>>>>>> 7274ba81 (✨ (vscode): add new recommended extensions for Laravel development to improve developer experience)
+=======
+
+>>>>>>> ca5e1eaf (.)
         $view = 'cms::components.page-content';
         $view_params = [];
         if (! view()->exists($view)) {

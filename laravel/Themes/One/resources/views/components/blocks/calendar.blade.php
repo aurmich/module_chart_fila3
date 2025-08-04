@@ -4,6 +4,7 @@
 ])
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="calendar-container">
     @livewire(\Modules\UI\Filament\Widgets\UserCalendarWidget::class, ['type' => $type])
 =======
@@ -19,4 +20,8 @@
 <div class="calendar-container">
     @livewire(\Modules\UI\Filament\Widgets\UserCalendarWidget::class)
 >>>>>>> 2099645a (.)
+=======
+<div class="calendar-container">
+    @livewire(\Modules\UI\Filament\Widgets\UserCalendarWidget::class, ['type' => $type])
+>>>>>>> ca5e1eaf (.)
 </div>

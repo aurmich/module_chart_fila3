@@ -153,6 +153,9 @@ Modules/SaluteOra/
 - `app/Actions/Calendar/`: Contiene le classi relative alla gestione del calendario
   - `Calendar.php`: Implementazione principale del componente calendario
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ca5e1eaf (.)
 
 # Regola sui Path dei File di Codice
 
@@ -199,5 +202,8 @@ namespace Modules\SaluteOra\App\Actions\Patient\Calendar;
 ```
 
 Vedi anche: Xot/docs/struttura-path-moduli.mdc
+<<<<<<< HEAD
 =======
 >>>>>>> 2099645a (.)
+=======
+>>>>>>> ca5e1eaf (.)

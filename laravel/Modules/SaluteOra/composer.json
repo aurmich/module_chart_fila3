@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "saluteora/module",
     "description": "SaluteOra Module",
     "authors": [
@@ -14,11 +15,20 @@
             "name": "Marco Sottana",
             "email": "marco.sottana@gmail.com"
 >>>>>>> 54f4fa16 (.)
+=======
+    "name": "saluteora/module",
+    "description": "SaluteOra Module",
+    "authors": [
+        {
+            "name": "SaluteOra Team",
+            "email": "team@saluteora.com"
+>>>>>>> ca5e1eaf (.)
         }
     ],
     "extra": {
         "laravel": {
             "providers": [
+<<<<<<< HEAD
                 "Modules\\SaluteOra\\Providers\\SaluteOraServiceProvider",
                 "Modules\\SaluteOra\\Providers\\Filament\\AdminPanelProvider"
 <<<<<<< HEAD
@@ -29,13 +39,15 @@
 
             }
 >>>>>>> 54f4fa16 (.)
+=======
+                "Modules\\SaluteOra\\Providers\\SaluteOraServiceProvider"
+            ]
+>>>>>>> ca5e1eaf (.)
         }
     },
     "autoload": {
         "psr-4": {
-            "Modules\\SaluteOra\\": "app/",
-            "Modules\\SaluteOra\\Database\\Factories\\": "database/factories/",
-            "Modules\\SaluteOra\\Database\\Seeders\\": "database/seeders/"
+            "Modules\\SaluteOra\\": ""
         }
     },
     "autoload-dev": {

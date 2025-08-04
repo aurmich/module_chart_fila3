@@ -57,10 +57,14 @@ class RegistrationWidget extends XotBaseWidget
     {
         $this->type = $type;
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->resource = XotData::make()->getUserResourceClassByType($type);
 =======
         $this->resource = XotData::make()->getUserTypeResourceClass($type);
 >>>>>>> 54f4fa16 (.)
+=======
+        $this->resource = XotData::make()->getUserResourceClassByType($type);
+>>>>>>> ca5e1eaf (.)
         $this->form->fill();
     }
 

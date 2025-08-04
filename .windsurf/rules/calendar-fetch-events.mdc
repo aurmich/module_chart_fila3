@@ -6,7 +6,11 @@ alwaysApply: false
 # Regole Windsurf per FetchEventsAction
 
 ## Struttura del Modulo
+<<<<<<< HEAD
 - L'azione deve essere nel modulo <nome progetto>
+=======
+- L'azione deve essere nel modulo SaluteOra
+>>>>>>> ca5e1eaf (.)
 - Deve seguire la struttura delle azioni del modulo
 - Deve essere documentata nella cartella docs del modulo
 

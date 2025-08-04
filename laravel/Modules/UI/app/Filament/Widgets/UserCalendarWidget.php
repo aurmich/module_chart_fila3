@@ -3,6 +3,7 @@ namespace Modules\UI\Filament\Widgets;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 // TEMPORARILY DISABLED FOR PHPSTAN ANALYSIS
@@ -100,30 +101,79 @@ class UserCalendarWidget extends FullCalendarWidget
 >>>>>>> aurmich/dev
 =======
 use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
+=======
+
+use Illuminate\Support\Str;
+use Modules\Xot\Datas\XotData;
+>>>>>>> ca5e1eaf (.)
 use App\Filament\Resources\EventResource;
-use App\Models\Event;
+use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Grid;
+use Filament\Forms\Components\DateTimePicker;
 
 class UserCalendarWidget extends FullCalendarWidget
 {
+    use \Saade\FilamentFullCalendar\Widgets\Concerns\InteractsWithEvents;
+    public string $type;
 
-    /*
+    
+    public function getActionName(string $function): string
+    {
+        $action_suffix=Str::of($function)->studly()->append('Action')->toString();
+        $resource=XotData::make()->getUserResourceClassByType($this->type);
+        $model = $resource::getModel();
+        $action=\Illuminate\Support\Str::of($model)
+            ->replace('\Models\\', '\Actions\\')
+            ->append('\Calendar\\'.$action_suffix)
+            ->toString();
+        return $action;
+    }
+    
     public function fetchEvents(array $fetchInfo): array
     {
-        return Event::query()
-            ->where('starts_at', '>=', $fetchInfo['start'])
-            ->where('ends_at', '<=', $fetchInfo['end'])
-            ->get()
-            ->map(
-                fn (Event $event) => [
-                    'title' => $event->id,
-                    'start' => $event->starts_at,
-                    'end' => $event->ends_at,
-                    'url' => EventResource::getUrl(name: 'view', parameters: ['record' => $event]),
-                    'shouldOpenUrlInNewTab' => true
-                ]
-            )
-            ->all();
+        $action=$this->getActionName(__FUNCTION__);
+        return app($action)->execute($fetchInfo);
+    }
+
+    public function getFormSchema(): array
+    {
+
+        $action=$this->getActionName(__FUNCTION__);
+        return app($action)->execute();
+        //*
+        return [
+            TextInput::make('title'),
+ 
+            Grid::make()
+                ->schema([
+                    DateTimePicker::make('starts_at'),
+                    DateTimePicker::make('ends_at'),
+                ]),
+        ];
+        //*/
+    }
+
+   
+    /*
+    protected function modalActions(): array
+    {
+        return [
+            \Saade\FilamentFullCalendar\Actions\EditAction::make(),
+            \Saade\FilamentFullCalendar\Actions\DeleteAction::make(),
+        ];
     }
     */
+<<<<<<< HEAD
 }
 >>>>>>> 2099645a (.)
+=======
+
+    public function onDateSelect(string $start, ?string $end, bool $allDay, ?array $view, ?array $resource): void
+    {
+      dd('test');
+    }
+
+    
+}
+>>>>>>> ca5e1eaf (.)

@@ -46,10 +46,14 @@ public function mount(string $type): void
 {
     $this->type = $type;
 <<<<<<< HEAD
+<<<<<<< HEAD
     $this->resource = XotData::make()->getUserResourceClassByType($type);
 =======
     $this->resource = XotData::make()->getUserTypeResourceClass($type);
 >>>>>>> 54f4fa16 (.)
+=======
+    $this->resource = XotData::make()->getUserResourceClassByType($type);
+>>>>>>> ca5e1eaf (.)
     $this->model = $this->resource::getModel();
     $this->action = Str::of($this->model)->replace('\\Models\\', '\\Actions\\')->append('\\RegisterAction')->toString();
     $this->form->fill();

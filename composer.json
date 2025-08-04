@@ -133,6 +133,7 @@
     },
     "require": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "dotswan/filament-grapesjs-v3": "*",
         "spatie/laravel-queueable-action": "^2.16"
     }
@@ -211,6 +212,10 @@
 >>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
 =======
         "dotswan/filament-grapesjs-v3": "*"
+=======
+        "dotswan/filament-grapesjs-v3": "*",
+        "spatie/laravel-queueable-action": "^2.16"
+>>>>>>> ca5e1eaf (.)
     }
 }
 >>>>>>> 54f4fa16 (.)

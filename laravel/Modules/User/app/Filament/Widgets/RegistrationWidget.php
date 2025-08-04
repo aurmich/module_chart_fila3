@@ -169,7 +169,7 @@ class RegistrationWidget extends XotBaseWidget
     public function mount(string $type): void
     {
         $this->type = $type;
-        $this->resource = XotData::make()->getUserTypeResourceClass($type);
+        $this->resource = XotData::make()->getUserResourceClassByType($type);
         $this->model = $this->resource::getModel();
         $this->action=Str::of($this->model)->replace('\Models\\', '\Actions\\')->append('\RegisterAction')->toString();
         $this->form->fill();
@@ -280,4 +280,7 @@ class RegistrationWidget extends XotBaseWidget
         $this->form->fill();
     }
 }
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> ca5e1eaf (.)

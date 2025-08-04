@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # Regole SaluteOra
 
 ## Crosscheck documentazione wizard/UI
@@ -38,3 +39,5 @@ namespace Modules\SaluteOra\App\Actions\Patient\Calendar;
 ```
 
 ## ... existing rules ...
+=======
+>>>>>>> ca5e1eaf (.)

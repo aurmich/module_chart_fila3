@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 return [
@@ -82,6 +83,8 @@ return [
 ];
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> ca5e1eaf (.)
 return array (
   'fields' => 
   array (
@@ -119,6 +122,9 @@ return array (
     ),
   ),
 );
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
+=======
+>>>>>>> ca5e1eaf (.)

@@ -1136,6 +1136,9 @@ Questa implementazione fornisce:
 6. **Sanitario**: Funzionalità specifiche per ambiente medico
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ca5e1eaf (.)
 Il sistema garantisce che ogni tipo di utente veda solo i dati appropriati, mantenendo la sicurezza e la privacy richieste in ambito sanitario.
 
 # Flusso Prenotazione Paziente con FullCalendar
@@ -1188,6 +1191,7 @@ Il sistema garantisce che ogni tipo di utente veda solo i dati appropriati, mant
 ## Note
 - Il sistema può essere facilmente esteso per gestire regole di business più complesse (es. limiti di prenotazione, fasce prioritarie, promemoria, ecc.)
 - FullCalendar consente di integrare facilmente logiche di validazione, feedback visivo e notifiche in tempo reale.
+<<<<<<< HEAD
 
 ## [AGGIORNAMENTO 2024-06-XX] - Disponibilità solo su appointments
 
@@ -1244,3 +1248,5 @@ protected function getHeaderWidgets(): array {
 =======
 Il sistema garantisce che ogni tipo di utente veda solo i dati appropriati, mantenendo la sicurezza e la privacy richieste in ambito sanitario. 
 >>>>>>> 2099645a (.)
+=======
+>>>>>>> ca5e1eaf (.)
