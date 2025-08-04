@@ -29,6 +29,7 @@
         "laravel": {
             "providers": [
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "Modules\\SaluteOra\\Providers\\SaluteOraServiceProvider",
                 "Modules\\SaluteOra\\Providers\\Filament\\AdminPanelProvider"
 <<<<<<< HEAD
@@ -41,13 +42,19 @@
 >>>>>>> 54f4fa16 (.)
 =======
                 "Modules\\SaluteOra\\Providers\\SaluteOraServiceProvider"
+=======
+                "Modules\\SaluteOra\\Providers\\SaluteOraServiceProvider",
+                "Modules\\SaluteOra\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
             ]
 >>>>>>> ca5e1eaf (.)
         }
     },
     "autoload": {
         "psr-4": {
-            "Modules\\SaluteOra\\": ""
+            "Modules\\SaluteOra\\": "app/",
+            "Modules\\SaluteOra\\Database\\Factories\\": "database/factories/",
+            "Modules\\SaluteOra\\Database\\Seeders\\": "database/seeders/"
         }
     },
     "autoload-dev": {

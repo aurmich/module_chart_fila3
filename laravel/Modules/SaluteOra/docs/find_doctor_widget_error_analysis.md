@@ -92,6 +92,9 @@ Il widget `FindDoctorAndAppointmentWidget` è stato implementato in modo diverso
 - Seguire le best practices di Filament e del modulo Xot
 - Aggiornare regolarmente la documentazione quando si fanno modifiche
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
 - Separare gli step del wizard in metodi dedicati per migliorare la manutenibilità
 
 # Analisi errori FindDoctorAndAppointmentWidget.php
@@ -141,7 +144,11 @@ Il widget `FindDoctorAndAppointmentWidget` è stato implementato in modo diverso
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento:** {{DATA}} 
 =======
 - Separare gli step del wizard in metodi dedicati per migliorare la manutenibilità 
 >>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
+=======
+**Ultimo aggiornamento:** {{DATA}} 
+>>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)

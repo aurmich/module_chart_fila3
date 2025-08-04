@@ -1066,6 +1066,9 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 
 **Vedi anche:** [filament-best-practices.mdc](../../../.windsurf/rules/filament-best-practices.mdc)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
 
 ## Regole di Ereditarietà: Trait e Interfacce
 
@@ -1094,6 +1097,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
 > Aggiornare sempre anche i file .mdc in .windsurf/rules e .cursor/rules
 
 **Vedi anche:** [filament-best-practices.mdc](../../../.windsurf/rules/filament-best-practices.mdc)
+<<<<<<< HEAD
 
 ## Policy DRY su Disponibilità e Prenotazione
 
@@ -1186,3 +1190,5 @@ Aggiornare sempre la documentazione e le regole di progetto. Applicare la stessa
 >>>>>>> bead9c28 (fix case)
 =======
 >>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
+=======
+>>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)

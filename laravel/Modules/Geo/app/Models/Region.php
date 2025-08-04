@@ -76,7 +76,13 @@ class Region extends GeoJsonModel
      */
     public static function all(): Collection
     {
+<<<<<<< HEAD
         return static::loadData()->pluck('region')->unique()->values();
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+        $res=static::loadData()->pluck('regione')->unique()->values();
+
+        return $res;
+>>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
     }
 }

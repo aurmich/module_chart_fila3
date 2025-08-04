@@ -355,6 +355,9 @@ return array (
       'description' => 'date',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
     'cap' => 
     array (
       'description' => 'cap',
@@ -372,9 +375,12 @@ return array (
     'city' => 
     array (
       'description' => 'city',
+<<<<<<< HEAD
       'helper_text' => 'city',
       'placeholder' => 'city',
       'label' => 'city',
+=======
+>>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
     ),
     'region' => 
     array (
@@ -390,6 +396,7 @@ return array (
       'placeholder' => 'province',
       'label' => 'province',
     ),
+<<<<<<< HEAD
     'appointment_date' => 
     array (
       'description' => 'appointment_date',
@@ -470,6 +477,8 @@ return array (
     ),
 =======
 >>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
+=======
+>>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
   ),
 );
 >>>>>>> aurmich/dev

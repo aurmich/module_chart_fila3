@@ -1,9 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 description:
 globs:
 alwaysApply: true
 ---
+=======
+>>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
 # Filament Best Practices for
 
 ## Overview
@@ -15,6 +18,7 @@ Best practices for using Filament in modular Laravel projects, specifically tail
 Best practices for using Filament in modular Laravel projects, specifically tailored for the  project.
 
 # Filament Best Practices for
+<<<<<<< HEAD
 
 ## Overview
 Best practices for using Filament in modular Laravel projects, specifically tailored for the  project.
@@ -23,6 +27,8 @@ Best practices for using Filament in modular Laravel projects, specifically tail
 =======
 # Filament Best Practices for 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
 
 ## Overview
 Best practices for using Filament in modular Laravel projects, specifically tailored for the  project.
@@ -101,29 +107,41 @@ class DoctorResource extends XotBaseResource
     protected static ?string $navigationGroup = 'Gestione';        // NOT NECESSARY
     protected static ?int $navigationSort = 1;                     // NOT NECESSARY
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
     // ❌ ERROR: Use getListTableColumns() instead of getTableColumns()
     public static function getTableColumns(): array                // NOT NECESSARY
     {
         return [...];
     }
 <<<<<<< HEAD
-
-=======
-    
->>>>>>> 54f4fa16 (.)
-    public static function getRelations(): array                   // NOT NECESSARY
-    {
-        return [...];
-    }
 <<<<<<< HEAD
 
 =======
     
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
+    public static function getRelations(): array                   // NOT NECESSARY
+    {
+        return [...];
+    }
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
     public static function getPages(): array                       // NOT NECESSARY if using only index, create, edit
     {
         return [
@@ -144,10 +162,14 @@ class DoctorResource extends XotBaseResource
         ]);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
     // Implement getPages() ONLY if adding custom pages beyond index, create, edit
     public static function getPages(): array
     {
@@ -413,4 +435,57 @@ class DoctorStudio extends BasePivot
 - [Filament Docs](https://filamentphp.com/docs)
 - [Best practices for reusable modules](module-documentation-neutrality.mdc)
 - [Model inheritance best practices](model-inheritance-best-practices.mdc)
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+
+# Regola: Path View Widget Filament e Localizzazione
+
+- Tutti i widget Filament devono avere la view in `modulo::filament.widgets.nome-widget`.
+- Non usare mai `modulo::widgets.nome-widget` o altri path non standard.
+- Non usare mai ->label(), ->placeholder(), __() o trans() nei form component (TextInput, Select, ecc).
+- La localizzazione è centralizzata tramite LangServiceProvider e i file di lingua del modulo.
+- Le chiavi dei campi devono corrispondere a quelle dei file di lingua.
+
+## Esempio corretto
+```php
+protected static string $view = 'saluteora::filament.widgets.find-doctor-and-appointment';
+TextInput::make('location')->required()
+```
+
+## Esempio errato
+```php
+protected static string $view = 'saluteora::widgets.find-doctor-and-appointment';
+TextInput::make('location')->label(__('modulo::campo.label'))
+```
+
+**Motivazione:** coerenza, manutenzione, override, policy di qualità.
+
+> Aggiornare sempre anche i file .mdc in .cursor/rules
+
+# Regola: Ereditarietà e Trait nei Widget Filament
+
+- Non replicare mai trait, interfacce o logica già presenti nella classe base che si estende (es. XotBaseWidget).
+- Studiare sempre la classe base prima di estendere.
+- Se serve estendere il comportamento, usare override o metodi custom, non duplicare trait/interfacce.
+
+## Esempio errato
+```php
+class FindDoctorAndAppointmentWidget extends XotBaseWidget implements HasForms
+{
+    use InteractsWithForms; // ERRORE: già presente in XotBaseWidget
+}
+```
+
+## Esempio corretto
+```php
+class FindDoctorAndAppointmentWidget extends XotBaseWidget
+{
+    // NIENTE implements HasForms, NIENTE use InteractsWithForms
+}
+```
+
+**Motivazione:** DRY, KISS, manutenzione, coerenza, evitare conflitti e ridondanza.
+
+> Aggiornare sempre anche i file .mdc in .cursor/rules
+>>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)

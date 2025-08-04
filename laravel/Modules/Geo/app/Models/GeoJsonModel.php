@@ -21,10 +21,14 @@ abstract class GeoJsonModel
      * Percorso relativo al file json (da ridefinire nelle sottoclassi se necessario)
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected static string $jsonFile = 'resources/json/comuni.json';
 =======
     protected static string $jsonFile = 'Resources/json/comuni.json';
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+    protected static string $jsonFile = 'resources/json/comuni.json';
+>>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
 
     /**
      * Carica e cache-izza i dati dal file json.

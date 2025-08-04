@@ -85,9 +85,6 @@ use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Wizard;
-use Filament\Forms\Concerns\InteractsWithForms;
-use Filament\Forms\Contracts\HasForms;
-use Filament\Forms\Form;
 use Filament\Forms\Get;
 use Filament\Forms\Set;
 use Filament\Notifications\Notification;
@@ -100,25 +97,16 @@ use Modules\Geo\Models\Cap;
 use Modules\SaluteOra\Enums\AppointmentType;
 use Modules\SaluteOra\Enums\DentistSpecialization;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
-use Spatie\Permission\Traits\HasRoles;
 
 /**
  * Widget per la ricerca e prenotazione del dentista.
- *
- * Policy e principi seguiti:
- * - Clean Code: ogni step in una funzione separata. Vedi SaluteOra/docs/clean-code.md, wizard-clean-code.md
- * - DRY: logica centralizzata. Vedi SaluteOra/docs/filosofia-politica-zen.md
- * - KISS: semplificazione e responsabilità singola
- * - NESSUN uso di ->label(), placeholder(), __()
- * - Traduzioni solo tramite file lang del modulo
- * - Enum per select statiche
- * - PSR-12, strict_types, niente protected $casts/dates
- * - Collegamenti: Xot/docs/filosofia.md, Xot/docs/clean-code.md
+ * ATTENZIONE: Non replicare trait/interfacce già presenti nella classe base XotBaseWidget.
+ * Studiare sempre la classe base prima di estendere.
+ * La localizzazione è gestita centralmente tramite LangServiceProvider e file di lingua.
+ * Le chiavi dei campi devono corrispondere ai file di lingua del modulo.
  */
-class FindDoctorAndAppointmentWidget extends XotBaseWidget implements HasForms
+class FindDoctorAndAppointmentWidget extends XotBaseWidget
 {
-    use InteractsWithForms;
-
     /**
      * The sort order of the widget in the sidebar.
      *
@@ -138,7 +126,14 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget implements HasForms
      *
      * @var array<string, mixed>|null
      */
-    public ?array $data = [];
+    public ?array $data = [
+        'region'=>null,
+        'province'=>null,
+        'city'=>null,
+        'cap'=>null,
+        'specialization'=>null,
+        'appointment_type'=>null,
+    ];
 
     /**
      * Available time slots for the selected date.
@@ -163,6 +158,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget implements HasForms
 
     /**
      * The view that should be used to render the widget.
+     * Follows the pattern: 'modulename::filament.widgets.view-name'.
      *
      * @var string
      */
@@ -175,6 +171,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget implements HasForms
      */
     public string $icon = 'heroicon-o-user-plus';
 
+<<<<<<< HEAD
     public function mount(): void
     {
 <<<<<<< HEAD
@@ -232,6 +229,8 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget implements HasForms
         //$this->form->fill($this->form->getState());
     }
 
+=======
+>>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
     /**
      * Get the form schema for the widget.
      *
@@ -249,6 +248,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget implements HasForms
     public function getFormSchema(): array
     {
         return [
+<<<<<<< HEAD
 <<<<<<< HEAD
             Forms\Components\Wizard::make()
                 //->startOnStep($this->getStartStep())
@@ -484,7 +484,14 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget implements HasForms
                 ...$this->getSearchStep(),
                 ...$this->getDateTimeStep(),
                 ...$this->getConfirmationStep(),
+=======
+            'wizard' => Wizard::make([
+                $this->getSearchStep(),
+                //$this->getDateTimeStep(),
+                $this->getConfirmationStep(),
+>>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
             ])
+            //->statePath('zzzz')
             ->submitAction(
                 \Filament\Forms\Components\Actions\Action::make('submit')
                     ->submit('save')
@@ -492,8 +499,9 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget implements HasForms
         ];
     }
 
-    protected function getSearchStep(): array
+    protected function getSearchStep(): Wizard\Step
     {
+<<<<<<< HEAD
         return [
             Wizard\Step::make('search')
                 ->schema([
@@ -689,36 +697,121 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget implements HasForms
 =======
 >>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
     protected function getDateTimeStep(): array
-    {
-        return [
-            Wizard\Step::make('date_time')
-                ->schema([
-                    Fieldset::make('appointment_details')
-                        ->schema([
-                            DatePicker::make('date')
-                                ->required()
-                                ->minDate(now())
-                                ->live()
-                                ->afterStateUpdated(fn (Set $set) => $set('time', null)),
-                            Select::make('time')
-                                ->options($this->availableSlots)
-                                ->required()
-                                ->disabled(fn (Get $get) => !$get('date')),
-                            $this->getLoadingState()
-                        ]),
-                ])
-        ];
+=======
+        return Wizard\Step::make('search')
+            ->schema([
+                Fieldset::make('dentist_search')
+                    ->schema([
+                        Select::make('region')
+                            ->options(fn () => Region::all()->pluck('nome','codice')->toArray())
+                            ->searchable()
+                            ->required()
+                            ->live()
+                            ->afterStateUpdated(function (Set $set,$state) {
+                                $set('province', null);
+
+                                // Forza il refresh dei dati
+                                $this->data['region'] = $state;
+                            }),
+
+                        Select::make('province')
+                            ->options(function(Get $get,$state) {
+                                // Accesso diretto alla proprietà
+                                $region = $get('region');
+                                /*
+                                dddx([
+                                    'region'=>$state,
+                                    'data'=>$this->data,
+                                    'a'=>$get('dentist_search.region'),
+                                    'b'=>$get('dentist_search'),
+                                    'c'=>$get('region'),
+                                    'd'=>$get('search.region'),
+                                    'e'=>$get('search.dentist_search.region'),
+                                ]);
+                                */
+                                if (!$region) {
+                                    return [];
+                                }
+
+                                return Province::byRegion($region)->pluck('nome','codice')->toArray();
+                            })
+                            ->searchable()
+                            ->required()
+                            ->live()
+                            //->afterStateUpdated(fn (Set $set) => $set('city', null))
+                            ->visible(fn (Get $get) => filled($get('region')))
+                            ->disabled(fn (Get $get) => !filled($get('region')))
+                            ,
+/*
+                        Select::make('city')
+                            ->label('find_doctor_widget.fields.city')
+                            ->placeholder('find_doctor_widget.placeholders.city')
+                            ->options(fn (Get $get) => filled($get('province'))
+                                ? City::where('province_id', $get('province'))->pluck('name', 'id')
+                                : [])
+                            ->searchable()
+                            ->required()
+                            ->live()
+                            ->afterStateUpdated(fn (Set $set) => $set('cap', null))
+                            ->visible(fn (Get $get) => filled($get('province')))
+                            ->disabled(fn (Get $get) => !filled($get('province'))),
+*/
+                        Select::make('cap')
+                            ->options(fn (Get $get) => filled($get('city'))
+                                ? Cap::where('city_id', $get('city'))->pluck('code', 'id')
+                                : [])
+                            ->searchable()
+                            ->required()
+                            ->visible(fn (Get $get) => filled($get('city')))
+                            ->disabled(fn (Get $get) => !filled($get('city'))),
+/*
+                        Select::make('specialization')
+                            ->label('find_doctor_widget.fields.specialization')
+                            ->placeholder('find_doctor_widget.placeholders.specialization')
+                            ->options(DentistSpecialization::class)
+                            ->searchable()
+                            ->columnSpanFull(),
+
+                        Select::make('appointment_type')
+                            ->label('find_doctor_widget.fields.appointment_type')
+                            ->placeholder('find_doctor_widget.placeholders.appointment_type')
+                            ->options(AppointmentType::class)
+                            ->required()
+                            ->default(AppointmentType::FOLLOWUP->value)
+                            ->columnSpanFull(),
+                        */
+                    ])
+            ]);
     }
 
-    protected function getConfirmationStep(): array
+    protected function getDateTimeStep(): Wizard\Step
+>>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
     {
-        return [
-            Wizard\Step::make('confirmation')
-                ->schema([
-                    Placeholder::make('confirmation_message')
-                        ->content(fn (Get $get) => $this->getConfirmationContent($get)),
-                ])
-        ];
+        return Wizard\Step::make('date_time')
+            ->schema([
+                Fieldset::make('appointment_details')
+                    ->schema([
+                        DatePicker::make('date')
+                            ->required()
+                            ->minDate(now())
+                            ->live()
+                            ->afterStateUpdated(fn (Set $set) => $set('time', null)),
+                        Select::make('time')
+                            ->options($this->availableSlots)
+                            ->required()
+                            ->disabled(fn (Get $get) => !$get('date')),
+                        $this->getLoadingState()
+                    ])
+            ]);
+    }
+
+    protected function getConfirmationStep(): Wizard\Step
+    {
+        return Wizard\Step::make('confirmation')
+            ->schema([
+                Placeholder::make('confirmation_message')
+                    ->content(fn (Get $get) => $this->getConfirmationContent($get)),
+            ]);
     }
 
     protected function getLoadingState()

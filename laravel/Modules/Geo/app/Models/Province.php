@@ -82,7 +82,11 @@ class Province extends GeoJsonModel
      */
     public static function byRegion(string $region): Collection
     {
+<<<<<<< HEAD
         return static::loadData()->where('region', $region)->pluck('province')->unique()->values();
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+        return static::loadData()->where('regione.codice', $region)->pluck('provincia')->unique()->values();
+>>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
     }
 }

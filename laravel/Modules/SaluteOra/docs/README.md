@@ -123,6 +123,10 @@ Questo nuovo flusso permette di separare il completamento dei dati dall'approvaz
 - [Error Handling Best Practices](error_handling_best_practices.md) - Gestione degli errori
 - [Enums Best Practices](enums_best_practices.md) - Utilizzo degli enum in PHP 8.2+
 
+### Widgets
+
+- [FindDoctorAndAppointmentWidget Errors](widgets/find-doctor-appointment-widget-errors.md) - Analisi e soluzioni per il widget di prenotazione appuntamenti
+
 ### Filament
 
 #### Best Practices e Regole
