@@ -52,10 +52,14 @@
                     {
                         "label": "Profilo",
 <<<<<<< HEAD
+<<<<<<< HEAD
                         "url": "/profilo-paziente",
 =======
                         "url": "/profilo",
 >>>>>>> 54f4fa16 (.)
+=======
+                        "url": "/profilo-paziente",
+>>>>>>> f7d3ce4f (- update landing-page;)
                         "icon": "heroicon-o-user"
                     },
                     {

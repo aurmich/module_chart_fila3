@@ -5,9 +5,12 @@
     },
     "slug": "appuntamenti-conclusi",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "middleware":["auth","\\Modules\\User\\Http\\Middleware\\EnsureUserHasType:doctor"],
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> f7d3ce4f (- update landing-page;)
     "content": null,
     "content_blocks": {
         "it": [

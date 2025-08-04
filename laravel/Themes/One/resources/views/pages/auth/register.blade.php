@@ -128,13 +128,18 @@ new class extends Component
 >>>>>>> 15cb84fb (fix collisions)
 =======
     @volt('register')
+    <div style="padding: 20px; background-image: url('/img/background-filigrana-chiaro.png'); background-size: cover; background-position: center">
     <div class="register-container">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <div class="min-h-screen bg-[#E6EBF7] py-12">
 >>>>>>> d23ba493 (add calendar)
 =======
         <div class="bg-white mb-16">
 >>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
+=======
+        <div class="mb-16">
+>>>>>>> f7d3ce4f (- update landing-page;)
             <!-- Logo e intestazione -->
             <div class="text-center mb-16">
                 <div class="flex justify-center mb-4">
@@ -184,6 +189,7 @@ new class extends Component
                         <div class="relative w-80 h-80 rounded-[25px] bg-[#E6EBF7] shadow-2xl overflow-hidden">
                         <img src="{{ $type->getImage() }}" class="w-full h-full object-contain"/>
                         <button class="flex items-center justify-between absolute bottom-0 left-0 w-full bg-[#E6EBF7B3] text-[#272C4D] px-3 text-center text-xl font-extrabold py-5 transition-all duration-300 ease-in-out hover:py-9">
+<<<<<<< HEAD
                             {{ $type->getLabel() }}
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
@@ -297,8 +303,17 @@ new class extends Component
                         <img src="{{ $type->getImage() }}" class="w-full h-full object-cover"/>
                         </div>
                     <x-filament::button class="text-2xl !text-white transition-colors rounded-lg flex justify-center items-center !bg-[#272C4D] hover:bg-[#FF5F7E] hover:cursor-pointer shadow-2xl mt-5 text-lg p-5">
+=======
+>>>>>>> f7d3ce4f (- update landing-page;)
                             {{ $type->getLabel() }}
-                    </x-filament::button>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                            </svg>
+                        </button>
+                        <!-- <x-filament::button class="text-2xl !text-white transition-colors rounded-lg flex justify-center items-center !bg-[#272C4D] hover:bg-[#FF5F7E] hover:cursor-pointer shadow-2xl mt-5 text-lg p-5">
+                                {{ $type->getLabel() }}
+                        </x-filament::button> -->
+                        </div>
                     </a>
                 </div>
 <<<<<<< HEAD
@@ -309,6 +324,7 @@ new class extends Component
                 @endforeach
             </div>
         </div>
+<<<<<<< HEAD
 
         {{--   <div class="bg-[#E6EBF7] text-center text-sm text-gray-500">
             <p>Hai bisogno di assistenza? <a href="#" class="text-blue-800 hover:underline">Contattaci</a></p>
@@ -323,6 +339,9 @@ new class extends Component
         </div>
         --}}
 >>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
+=======
+    </div>
+>>>>>>> f7d3ce4f (- update landing-page;)
     </div>
     @endvolt
 </x-layouts.app>

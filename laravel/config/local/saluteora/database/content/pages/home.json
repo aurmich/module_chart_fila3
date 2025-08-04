@@ -25,8 +25,8 @@
 =======
                 "type": "hero",
                 "data": {
-                    "view": "pub_theme::components.blocks.hero.simple2",
-                    "title": "Benvenuta su Salute Orale,",
+                    "view": "pub_theme::components.blocks.hero.landing-page",
+                    "title": "Benvenuta su Salute Oralewwwwwww,",
                     "subtitle": "il portale che vuole garantire alle pazienti vulnerabili in stato di gravidanza la possibilità di accedere a servizi odontoiatrici di prevenzione a titolo completamente gratuito.",
 <<<<<<< HEAD
                     "image": "/img/hero-bg.svg",
@@ -40,6 +40,7 @@
                     "text_color": "text-gray-900",
                     "cta_color": "bg-indigo-600 hover:bg-indigo-700"
                 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             },
@@ -104,6 +105,8 @@
                     "button_link": "/register"
                 }
 >>>>>>> a25008e1 (- Rename file: header, footer, home;)
+=======
+>>>>>>> f7d3ce4f (- update landing-page;)
             }
         ]
     },

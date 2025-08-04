@@ -4,17 +4,23 @@
     'class' => '',
     'componentsBlocks' => [],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'x-data' => "{ mobileMenuOpen: false }",
     'slug', 'isLanding' => false
 =======
     'x-data' => "{ mobileMenuOpen: false }"
 >>>>>>> 54f4fa16 (.)
+=======
+    'x-data' => "{ mobileMenuOpen: false }",
+    'slug', 'isLanding' => false
+>>>>>>> f7d3ce4f (- update landing-page;)
 ])
 
 @php
     use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
     $locale = LaravelLocalization::getCurrentLocale();
     $componentsBlocks = is_array($blocks) && isset($blocks[$locale]) ? $blocks[$locale] : $blocks;
+<<<<<<< HEAD
 <<<<<<< HEAD
     $page = request()->url();
     $isLanding =Route::currentRouteName()=='home' && !Auth::check();
@@ -39,12 +45,16 @@
     <div class="!m-0 !p-0 w-full">
         <div class="flex h-16 items-center justify-between px-5">
 =======
+=======
+    $page = request()->url();
+    $isLanding =Route::currentRouteName()=='home' && !Auth::check();
+>>>>>>> f7d3ce4f (- update landing-page;)
 @endphp
 
 {{-- !fixed top-0 left-0 right-0 z-50 da inserire dentro alla classe dell' header --}}
-
+@if(!$isLanding)
 <header {{ $attributes->merge([
-    'class' => 'bg-[#272C4D] h-24 flex items-center',
+    'class' => 'bg-[#272C4D]  h-24 flex items-center',
     'id' => ($section['attributes']['id'] ?? ''),
     'x-data' => "{ mobileMenuOpen: false }"
     ]) }}>
@@ -147,6 +157,7 @@
 </header>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 @endif
 =======
@@ -154,3 +165,6 @@
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+@endif
+>>>>>>> f7d3ce4f (- update landing-page;)

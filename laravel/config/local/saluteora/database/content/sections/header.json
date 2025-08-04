@@ -46,6 +46,7 @@
                         {
                             "label": "Partners",
 <<<<<<< HEAD
+<<<<<<< HEAD
                             "url": "/it/pages/partners",
 >>>>>>> aurmich/dev
 =======
@@ -55,6 +56,9 @@
                             "label": "Progetto",
                             "url": "/it/pages/progetto",
 >>>>>>> 802c7073 (- update name file progetto.json)
+=======
+                            "url": "/it/pages/partners",
+>>>>>>> f7d3ce4f (- update landing-page;)
                             "type": "link"
                         },
                         {
@@ -90,6 +94,7 @@
                             "label": "Profilo",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                             "url": "/it/profile",
                             "icon": "heroicon-o-user"
                         },
@@ -99,6 +104,9 @@
 =======
                             "url": "/profilo",
 >>>>>>> a25008e1 (- Rename file: header, footer, home;)
+=======
+                            "url": "{{ $profiloUrl }}",
+>>>>>>> f7d3ce4f (- update landing-page;)
                             "icon": "heroicon-o-user"
                         },
                         {

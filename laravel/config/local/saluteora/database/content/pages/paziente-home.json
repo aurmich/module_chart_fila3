@@ -14,10 +14,14 @@
                     "view": "pub_theme::components.blocks.hero.dettaglio-paziente",
                     "title": "Bentornata, [Nome Paziente]",
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "subtitle": "Procedi con i prossimi step per prenotare una visita",
 =======
                     "subtitle": "Ecco la tua dashboard personale per la salute orale in gravidanza",
 >>>>>>> cecdd8e5 (- rename file dettaglio-paziente;)
+=======
+                    "subtitle": "Procedi con i prossimi step per prenotare una visita",
+>>>>>>> f7d3ce4f (- update landing-page;)
                     "background_color": "bg-white",
                     "text_color": "text-gray-900"
                 }

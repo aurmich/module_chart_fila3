@@ -20,9 +20,13 @@ return [
         'color' => 'success',
         'icon' => 'heroicon-o-user',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'image' => '/img/donna-personaggio.png',
 =======
         'image' => '/img/patient.jpg',
 >>>>>>> 1def8bbe (fix hint)
+=======
+        'image' => '/img/donna-personaggio.png',
+>>>>>>> f7d3ce4f (- update landing-page;)
     ],
 ];

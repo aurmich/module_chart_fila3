@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
     $backgroundImage = $isMobile
         ? "/img/landing-mobile-salute-orale.svg"
@@ -132,6 +133,8 @@
             </a>
           </div>
 =======
+=======
+>>>>>>> f7d3ce4f (- update landing-page;)
 @props(['currentLocale' => LaravelLocalization::getCurrentLocale()])
 
 @php
@@ -209,6 +212,7 @@
         @endif
         <div class="w-8 lg:w-9 h-auto">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <img src="/img/bandiera-italiana.png" class="m-4" />
 >>>>>>> aurmich/dev
 =======
@@ -239,10 +243,14 @@
     </x-filament::dropdown.list>
 </x-filament::dropdown>
 >>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
+=======
+          <img src="/img/bandiera-italiana.png" class="m-4" />
+>>>>>>> f7d3ce4f (- update landing-page;)
         </div>
       </div>
     </div>
     <!-- FINE HEADER -->
+<<<<<<< HEAD
 <<<<<<< HEAD
   
     <!-- INIZIO PRIMA SECTION -->
@@ -322,6 +330,8 @@
           >
             @lang('pub_theme::navigation.main_menu.register.label')
 =======
+=======
+>>>>>>> f7d3ce4f (- update landing-page;)
     <!-- INIZIO PRIMA SECTION -->
     <div class="p-6 lg:mt-60 lg:ml-32 lg:w-2/5 flex flex-col justify-start">
       <h1 class="text-[#FF5F7E] text-[45px] lg:text-5xl leading-tight font-bold lg:text-8xl mb-2.5">
@@ -391,7 +401,10 @@
             class="w-44 text-[#272C4D] text-xl lg:text-2xl mt-10 border-[#272C4D] border-2 py-2 px-5 lg:py-3 lg:px-7 rounded-lg"
           >
             Registrati
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> f7d3ce4f (- update landing-page;)
           </button>
         </a>
         </div>
@@ -399,6 +412,7 @@
     </div>
     <!-- FINE TERZA SECTION -->
     <!-- INIZIO QUARTA SECTION -->
+<<<<<<< HEAD
 <<<<<<< HEAD
      <div class="mt-5">
        <div class="w-full flex justify-center">
@@ -435,6 +449,12 @@
       <h1 class="text-[#FF5F7E] text-3xl">Per informazioni aggiuntive</h1>
     </div>
     <div class="h-64 pt-5 flex flex-col lg:flex-row justify-center items-center">
+=======
+    <div class="w-full flex justify-center">
+      <h1 class="text-[#FF5F7E] text-3xl">Per informazioni aggiuntive</h1>
+    </div>
+    <div class="h-96 pt-5 flex flex-col lg:flex-row justify-center items-center">
+>>>>>>> f7d3ce4f (- update landing-page;)
       <div class="w-64 h-44 bg-cover bg-[#FCD5D0] rounded-[25px] m-5">
         <div class="grid grid-cols-2">
           <div class="flex justify-center">
@@ -492,11 +512,15 @@
         </div>
       </div>
     </div>
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> f7d3ce4f (- update landing-page;)
     <!-- FINE QUARTA SECTION -->
     <!-- INIZIO QUINTA SECTION -->
     <div class="flex flex-col items-center  pt-7">
       <div>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <h1 class="text-[#FF5F7E] text-3xl">@lang('pub_theme::navigation.landing.participation.label')</h1>
       </div>
@@ -516,10 +540,13 @@
             <img class="h-28 lg:h-28 p-5" src="/img/coi-logo-updated.png" />
           </a>
 =======
+=======
+>>>>>>> f7d3ce4f (- update landing-page;)
         <h1 class="text-[#FF5F7E] text-3xl">Con la partecipazione di</h1>
       </div>
       <div class="flex flex-col lg:flex-row items-center">
         <div class="p-5">
+<<<<<<< HEAD
           <img class="h-16 lg:h-[150px]" src="/img/coi-logo-updated.png" />
         </div>
         <div class="p-5">
@@ -528,6 +555,15 @@
         <div class="p-5">
           <img class="h-16 lg:h-[150px]" src="/img/inmp-logo-piccolo-updated.png" />
 >>>>>>> aurmich/dev
+=======
+          <img class="h-16 lg:h-[150px]" src="/img/logo-coi.png" />
+        </div>
+        <div class="p-5">
+          <img class="h-16 lg:h-[150px]" src="/img/andi-fondazione-logo.png" />
+        </div>
+        <div class="p-5">
+          <img class="h-16 lg:h-[150px]" src="/img/inmp-logo-piccolo.png" />
+>>>>>>> f7d3ce4f (- update landing-page;)
         </div>
       </div>
     </div>
@@ -554,9 +590,14 @@
     </div> -->
     <!-- FINE FOOTER -->
 <<<<<<< HEAD
+<<<<<<< HEAD
 </div>
 
 =======
 </body>
 </x-layouts.main>
 >>>>>>> aurmich/dev
+=======
+</body>
+</x-layouts.main>
+>>>>>>> f7d3ce4f (- update landing-page;)

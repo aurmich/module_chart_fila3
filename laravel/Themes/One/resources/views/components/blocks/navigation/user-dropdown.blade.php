@@ -9,9 +9,13 @@
 @php
     use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 <<<<<<< HEAD
+<<<<<<< HEAD
     use Modules\SaluteOra\Enums\UserTypeEnum;
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+    use Modules\SaluteOra\Enums\UserTypeEnum;
+>>>>>>> f7d3ce4f (- update landing-page;)
 
     // Inizializzazione delle variabili con valori di default
     $user = $user ?? auth()->user();
@@ -35,6 +39,7 @@
         return '';
     };
 <<<<<<< HEAD
+<<<<<<< HEAD
 $isDoctor  = $user && $user->type == UserTypeEnum::DOCTOR ? true:false;
 
     $profiloUrl = isset($user) ? $user->type === 'doctor'
@@ -50,6 +55,16 @@ $isDoctor  = $user && $user->type == UserTypeEnum::DOCTOR ? true:false;
 
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+$isDoctor  = $user && $user->type == UserTypeEnum::DOCTOR ? true:false;
+
+    $profiloUrl = isset($user) ? $user->type === 'doctor'
+        ? '/it/pages/profilo-odontoiatra'
+        : '/it/pages/profilo-paziente':'';
+
+        
+
+>>>>>>> f7d3ce4f (- update landing-page;)
 @endphp
 
 @if($isLoggedIn)
@@ -103,7 +118,10 @@ $isDoctor  = $user && $user->type == UserTypeEnum::DOCTOR ? true:false;
         @endforeach
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f7d3ce4f (- update landing-page;)
         <x-filament::dropdown.list.item     tag="a"
          :href="$isLoggedIn && $isDoctor ? '/it/pages/profilo-odontoiatra':'/it/pages/profilo-paziente'"
          >
@@ -114,9 +132,12 @@ $isDoctor  = $user && $user->type == UserTypeEnum::DOCTOR ? true:false;
                 Profilo
             </div>
         </x-filament::dropdown.list.item>
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f7d3ce4f (- update landing-page;)
         </x-filament::dropdown.list>
     </x-filament::dropdown>
 
