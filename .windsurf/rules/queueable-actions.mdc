@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 description:
 globs:
 alwaysApply: false
@@ -361,3 +362,15 @@ class CreateAppointmentAction
 ## Questa regola è FONDAMENTALE e deve essere sempre seguita in tutto il progetto <nome progetto>.
 =======
 >>>>>>> 2099645a (.)
+=======
+<<<<<<< HEAD
+trigger: manual
+description:
+globs:
+=======
+description:
+globs:
+alwaysApply: false
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+---
+>>>>>>> 8081e528 (fix case cursor and windsurf)
