@@ -34,6 +34,7 @@ return [
     'logo_footer_img' => 'saluteora::images/logo.svg',
     'logo_alt' => 'Logo',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'logo_header_dark' => 'saluteora::images/logo-v2.png',
     'logo_header' => 'saluteora::images/logo-v2.png',
 =======
@@ -51,6 +52,10 @@ return [
     'logo_header_dark' => 'saluteora::images/logo.svg',
     'logo_header' => 'saluteora::images/logo.svg',
 >>>>>>> 54f4fa16 (.)
+=======
+    'logo_header_dark' => 'saluteora::images/logo-v2.png',
+    'logo_header' => 'saluteora::images/logo-v2.png',
+>>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)
     'hide_megamenu' => false,
     'hero_type' => 'with_megamenu_bottom',
     'facebook_href' => 'aa',

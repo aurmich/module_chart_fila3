@@ -1,44 +1,75 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array (
 <<<<<<< HEAD
   'title' => 'Appuntamenti Dottore',
   'description' => 'Gestione appuntamenti per i dottori',
 =======
 >>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
+=======
+return array (
+  'title' => 'Appuntamenti Dottore',
+  'description' => 'Gestione degli appuntamenti per i dottori',
+>>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)
   'actions' => 
   array (
     'delete' => 
     array (
+<<<<<<< HEAD
 <<<<<<< HEAD
       'label' => 'Elimina',
       'tooltip' => 'Elimina questo appuntamento',
       'confirmation' => 'Sei sicuro di voler eliminare questo appuntamento?',
       'success' => 'Appuntamento eliminato con successo',
       'error' => 'Errore durante l\'eliminazione dell\'appuntamento',
+=======
+      'label' => 'Elimina',
+      'tooltip' => 'Elimina questo appuntamento',
+      'confirmation' => 'Sei sicuro di voler eliminare questo appuntamento?',
+>>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)
     ),
     'accept' => 
     array (
       'label' => 'Accetta',
       'tooltip' => 'Accetta questo appuntamento',
       'confirmation' => 'Sei sicuro di voler accettare questo appuntamento?',
+<<<<<<< HEAD
       'success' => 'Appuntamento accettato con successo',
       'error' => 'Errore durante l\'accettazione dell\'appuntamento',
+=======
+>>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)
     ),
     'confirm' => 
     array (
       'label' => 'Conferma',
       'tooltip' => 'Conferma questo appuntamento',
       'confirmation' => 'Sei sicuro di voler confermare questo appuntamento?',
+<<<<<<< HEAD
       'success' => 'Appuntamento confermato con successo',
       'error' => 'Errore durante la conferma dell\'appuntamento',
     ),
     'reject' => 
+=======
+    ),
+    'confirmed' => 
+    array (
+      'label' => 'Confermato',
+      'tooltip' => 'Appuntamento confermato',
+    ),
+    'confirmAction' => 
+    array (
+      'label' => 'Azione Conferma',
+      'tooltip' => 'Esegui azione di conferma',
+    ),
+    'rejectAction' => 
+>>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)
     array (
       'label' => 'Rifiuta',
       'tooltip' => 'Rifiuta questo appuntamento',
       'confirmation' => 'Sei sicuro di voler rifiutare questo appuntamento?',
+<<<<<<< HEAD
       'success' => 'Appuntamento rifiutato con successo',
       'error' => 'Errore durante il rifiuto dell\'appuntamento',
     ),
@@ -161,6 +192,13 @@ return array (
     'transition' => 
     array (
       'label' => 'transition',
+=======
+    ),
+    'info' => 
+    array (
+      'label' => 'Informazioni',
+      'tooltip' => 'Visualizza informazioni dettagliate',
+>>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)
     ),
   ),
   'messages' => 
@@ -169,6 +207,7 @@ return array (
     'appointment_confirmed' => 'Appuntamento confermato con successo',
     'appointment_rejected' => 'Appuntamento rifiutato con successo',
     'appointment_deleted' => 'Appuntamento eliminato con successo',
+<<<<<<< HEAD
     'appointment_rescheduled' => 'Appuntamento riprogrammato con successo',
     'appointment_completed' => 'Appuntamento completato con successo',
     'appointment_cancelled' => 'Appuntamento annullato con successo',
@@ -180,10 +219,18 @@ return array (
   'status' => 
   array (
     'pending' => 'In Attesa',
+=======
+    'error_occurred' => 'Si è verificato un errore',
+  ),
+  'status' => 
+  array (
+    'pending' => 'In attesa',
+>>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)
     'confirmed' => 'Confermato',
     'rejected' => 'Rifiutato',
     'completed' => 'Completato',
     'cancelled' => 'Annullato',
+<<<<<<< HEAD
     'rescheduled' => 'Riprogrammato',
     'in_progress' => 'In Corso',
   ),
@@ -245,11 +292,14 @@ return array (
       'icon' => 'heroicon-o-play-circle',
       'description' => 'Appuntamento attualmente in corso',
     ),
+=======
+>>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)
   ),
   'fields' => 
   array (
     'message' => 
     array (
+<<<<<<< HEAD
       'label' => 'Messaggio',
       'placeholder' => 'Inserisci un messaggio per il paziente',
       'helper_text' => 'Il messaggio verrà inviato al paziente',
@@ -411,3 +461,12 @@ return [
     ],
 ];
 >>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
+=======
+      'description' => 'Messaggio',
+      'helper_text' => '',
+      'placeholder' => '',
+      'label' => 'Messaggio',
+    ),
+  ),
+);
+>>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)

@@ -67,6 +67,7 @@ Il sistema di gestione degli stati degli appuntamenti utilizza il pattern State 
 ### 7. Rejected (Rifiutato)
 - Appuntamento rifiutato dal dottore o sistema
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Transizioni possibili**: Confirmed (in caso di revisione della decisione)
 =======
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
@@ -79,6 +80,9 @@ Il sistema di gestione degli stati degli appuntamenti utilizza il pattern State 
 ### 7. Rejected (Rifiutato)
 - Appuntamento rifiutato dal dottore o sistema
 >>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+=======
+- **Transizioni possibili**: Confirmed (in caso di revisione della decisione)
+>>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)
 - **Colore**: danger
 - **Icona**: heroicon-o-no-symbol
 
@@ -114,8 +118,12 @@ Cancelled   Cancelled   NoShow
 =======
    ↓         ↓          ↓
    ↓      Cancelled   NoShow
+<<<<<<< HEAD
 Rejected    ↓          
 >>>>>>> a123f7ba (✨ (appointment states): implement new appointment state transitions and update documentation to reflect changes)
+=======
+Rejected ↔ Confirmed   ↑
+>>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)
             ↓          
           Rescheduled ← Scheduled
                         ↓
@@ -190,6 +198,7 @@ Estende il pattern BaseTransition con:
 - `ConfirmedToRescheduled`
 - `ConfirmedToRejected`
 - `RejectedToConfirmed`
+<<<<<<< HEAD
 =======
 - `PendingToCancelled`
 =======
@@ -207,6 +216,8 @@ Estende il pattern BaseTransition con:
 >>>>>>> 1dc4ede7 (📝 (README.md): update documentation for SaluteOra module to improve clarity and organization of information, including a comprehensive table of contents and sections for best practices, quick start guides, and recent updates)
 =======
 >>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+=======
+>>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)
 - `ScheduledToInProgress`
 - `ScheduledToCancelled`
 - `ScheduledToNoShow`
@@ -297,6 +308,7 @@ Il sistema è integrato con il `FindDoctorAndAppointmentWidget` che:
 - `app/States/Appointment/Transitions/ConfirmedToRescheduled.php`
 - `app/States/Appointment/Transitions/ConfirmedToRejected.php`
 - `app/States/Appointment/Transitions/RejectedToConfirmed.php`
+<<<<<<< HEAD
 =======
 =======
 ### Transizioni
@@ -314,6 +326,8 @@ Il sistema è integrato con il `FindDoctorAndAppointmentWidget` che:
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 =======
 >>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+=======
+>>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)
 - `app/States/Appointment/Transitions/ScheduledToInProgress.php`
 - `app/States/Appointment/Transitions/ScheduledToCancelled.php`
 - `app/States/Appointment/Transitions/ScheduledToNoShow.php`
@@ -358,6 +372,7 @@ dd($appointment->state->transitionableStates());
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025 - Aggiunta transizione RejectedToConfirmed* 
 =======
 *Ultimo aggiornamento: Dicembre 2024* 
@@ -374,3 +389,6 @@ dd($appointment->state->transitionableStates());
 =======
 *Ultimo aggiornamento: Dicembre 2024* 
 >>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+=======
+*Ultimo aggiornamento: Gennaio 2025 - Aggiunta transizione RejectedToConfirmed* 
+>>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)

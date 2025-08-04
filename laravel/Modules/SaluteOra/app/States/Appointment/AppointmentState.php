@@ -108,6 +108,9 @@ abstract class AppointmentState extends State
             //->allowTransition(Confirmed::class, Rescheduled::class, Transitions\ConfirmedToRescheduled::class)
             ->allowTransition(Confirmed::class, Rejected::class, Transitions\ConfirmedToRejected::class)
 
+            // Rejected transitions
+            ->allowTransition(Rejected::class, Confirmed::class, Transitions\RejectedToConfirmed::class)
+
             // Scheduled transitions
             ->allowTransition(Scheduled::class, InProgress::class, Transitions\ScheduledToInProgress::class)
             ->allowTransition(Scheduled::class, Cancelled::class, Transitions\ScheduledToCancelled::class)
