@@ -495,6 +495,7 @@ class User extends BaseUser implements HasMedia
         //'studio_id',
         //'continuation_token',
         'certifications'
+<<<<<<< HEAD
 =======
 =======
         'city',
@@ -521,6 +522,8 @@ class User extends BaseUser implements HasMedia
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
         'certificates'
 >>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
+=======
+>>>>>>> 2f169a46 (- create progetto page)
     ];
 
 
