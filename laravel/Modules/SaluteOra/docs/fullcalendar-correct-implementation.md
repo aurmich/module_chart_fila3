@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ATTENZIONE: DOCUMENTAZIONE ACCORPATA
 
 La documentazione completa su FullCalendar e i widget multi-tenant è ora in:
@@ -10,11 +11,17 @@ La documentazione completa su FullCalendar e i widget multi-tenant è ora in:
 Consulta questi file per tutte le policy, best practices e implementazioni aggiornate.
 =======
 # Implementazione Corretta di FullCalendarWidget
+=======
+# ATTENZIONE: DOCUMENTAZIONE ACCORPATA
+>>>>>>> e10587e5 (📝 (docs): consolidate FullCalendar documentation into fewer files for clarity and maintainability)
 
-## Problema Risolto
+La documentazione completa su FullCalendar e i widget multi-tenant è ora in:
 
-Questo documento descrive la soluzione implementata per risolvere gli errori di runtime nel widget del calendario di disponibilità del dottore.
+- [fullcalendar_widgets.md](./fullcalendar_widgets.md)
+- [filament_widget_regole.md](../../../Xot/docs/filament_widget_regole.md)
+- [docs/fullcalendar_widgets_and_tenancy.mdc](../../../../docs/fullcalendar_widgets_and_tenancy.mdc)
 
+<<<<<<< HEAD
 ### Errore originale
 ```
 Call to undefined method Filament\Widgets\WidgetConfiguration::options()
@@ -190,3 +197,6 @@ protected function getHeaderWidgets(): array
 - [Documentazione Filament v3](https://filamentphp.com/docs/3.x/widgets/installation)
 - [Package saade/filament-fullcalendar v3.2.4](https://github.com/saade/filament-fullcalendar)
 >>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
+=======
+Consulta questi file per tutte le policy, best practices e implementazioni aggiornate.
+>>>>>>> e10587e5 (📝 (docs): consolidate FullCalendar documentation into fewer files for clarity and maintainability)

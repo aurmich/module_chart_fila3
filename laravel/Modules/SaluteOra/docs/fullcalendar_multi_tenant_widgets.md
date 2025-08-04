@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ATTENZIONE: DOCUMENTAZIONE ACCORPATA
 
 La documentazione completa su FullCalendar e i widget multi-tenant è ora in:
@@ -10,11 +11,17 @@ La documentazione completa su FullCalendar e i widget multi-tenant è ora in:
 Consulta questi file per tutte le policy, best practices e implementazioni aggiornate.
 =======
 # Widget FullCalendar Multi-Tenant per SaluteOra
+=======
+# ATTENZIONE: DOCUMENTAZIONE ACCORPATA
+>>>>>>> e10587e5 (📝 (docs): consolidate FullCalendar documentation into fewer files for clarity and maintainability)
 
-## Panoramica
+La documentazione completa su FullCalendar e i widget multi-tenant è ora in:
 
-Questo documento descrive l'implementazione di widget FullCalendar specifici per un'applicazione sanitaria multi-tenant, dove i dottori possono lavorare in più sedi e utilizzare il sistema di tenancy di Filament per gestire l'accesso ai dati.
+- [fullcalendar_widgets.md](./fullcalendar_widgets.md)
+- [filament_widget_regole.md](../../../Xot/docs/filament_widget_regole.md)
+- [docs/fullcalendar_widgets_and_tenancy.mdc](../../../../docs/fullcalendar_widgets_and_tenancy.mdc)
 
+<<<<<<< HEAD
 ## Architettura Multi-Tenant
 
 ### Struttura del Sistema
@@ -1037,3 +1044,6 @@ class DoctorAvailabilityCalendarWidget extends FullCalendarWidget
 - DRY, KISS, serenità del codice
 - Refactoring sicuro, massima estendibilità
 >>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
+=======
+Consulta questi file per tutte le policy, best practices e implementazioni aggiornate.
+>>>>>>> e10587e5 (📝 (docs): consolidate FullCalendar documentation into fewer files for clarity and maintainability)

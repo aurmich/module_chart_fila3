@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ATTENZIONE: DOCUMENTAZIONE ACCORPATA
 
 La documentazione completa su FullCalendar e i widget multi-tenant è ora in:
@@ -10,11 +11,17 @@ La documentazione completa su FullCalendar e i widget multi-tenant è ora in:
 Consulta questi file per tutte le policy, best practices e implementazioni aggiornate.
 =======
 # Implementazione Corretta di FullCalendarWidget
+=======
+# ATTENZIONE: DOCUMENTAZIONE ACCORPATA
+>>>>>>> e10587e5 (📝 (docs): consolidate FullCalendar documentation into fewer files for clarity and maintainability)
 
-## Descrizione del Package
+La documentazione completa su FullCalendar e i widget multi-tenant è ora in:
 
-`saade/filament-fullcalendar` v3.2.4 è un plugin ufficiale di Filament che integra FullCalendar.js nel pannello di amministrazione. Questo documento descrive l'implementazione corretta secondo le convenzioni del progetto SaluteOra.
+- [fullcalendar_widgets.md](./fullcalendar_widgets.md)
+- [filament_widget_regole.md](../../../Xot/docs/filament_widget_regole.md)
+- [docs/fullcalendar_widgets_and_tenancy.mdc](../../../../docs/fullcalendar_widgets_and_tenancy.mdc)
 
+<<<<<<< HEAD
 ## Struttura di Base
 
 La struttura corretta per l'implementazione del widget è:
@@ -291,3 +298,6 @@ Contenuto di base:
 - [Package saade/filament-fullcalendar v3.2.4](https://github.com/saade/filament-fullcalendar)
 - [Documentazione plugin](https://filamentphp.com/plugins/saade-fullcalendar)
 >>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
+=======
+Consulta questi file per tutte le policy, best practices e implementazioni aggiornate.
+>>>>>>> e10587e5 (📝 (docs): consolidate FullCalendar documentation into fewer files for clarity and maintainability)

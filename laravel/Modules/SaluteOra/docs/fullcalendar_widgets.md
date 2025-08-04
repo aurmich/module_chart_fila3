@@ -805,6 +805,9 @@ I widget FullCalendar per SaluteOra forniscono una base solida per la gestione d
 - [calendar/doctor-availability-management.md](calendar/doctor-availability-management.md)
 - [fullcalendar_parental_widgets.md](fullcalendar_parental_widgets.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e10587e5 (📝 (docs): consolidate FullCalendar documentation into fewer files for clarity and maintainability)
 
 ## Collegamenti
 
@@ -813,6 +816,7 @@ I widget FullCalendar per SaluteOra forniscono una base solida per la gestione d
 - [Stub: fullcalendar-implementation.md](./fullcalendar-implementation.md)
 - [Stub: fullcalendar-correct-implementation.md](./fullcalendar-correct-implementation.md)
 - [Stub: fullcalendar-implementation-guide.md](./fullcalendar-implementation-guide.md)
+<<<<<<< HEAD
 =======
 - [Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets) 
 >>>>>>> 2099645a (.)
@@ -820,3 +824,5 @@ I widget FullCalendar per SaluteOra forniscono una base solida per la gestione d
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 =======
 >>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
+=======
+>>>>>>> e10587e5 (📝 (docs): consolidate FullCalendar documentation into fewer files for clarity and maintainability)
