@@ -3,10 +3,7 @@
 Il seguente formato propone una ristrutturazione completa del file di prompt `docs.txt` per migliorarne la leggibilità, l'organizzazione e l'efficacia:
 
 ```
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # SISTEMA DI DOCUMENTAZIONE MODULARE
 
 ## 1. PRINCIPI FONDAMENTALI

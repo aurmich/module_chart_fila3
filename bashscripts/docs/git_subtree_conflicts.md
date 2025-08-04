@@ -56,10 +56,7 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -180,10 +177,7 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -314,10 +308,7 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -791,10 +782,6 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 >>>>>>> 4d4d6cb7 (.)
 =======
 >>>>>>> d83fe8da (.)
-<<<<<<< HEAD
 - [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
 =======
 >>>>>>> a76e699 (.)
-=======
-- [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
->>>>>>> aurmich/dev

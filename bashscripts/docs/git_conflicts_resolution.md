@@ -29,15 +29,10 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 
 ## Processo di Risoluzione
 
-<<<<<<< HEAD
 ### Fase 1: Identificazione
 ```bash
 # Visualizzare tutti i file con conflitti
 git status
-=======
-## Note Importanti
-- Tutti i file sono stati mantenuti nella versione<!-- REVISIONE MANUALE: File aggiornato per chiarezza e tracciabilità. Vedi anche [README globale](/docs/README.md) e gli altri file di risoluzione conflitti. -->
->>>>>>> aurmich/dev
 
 [Backlink: Documentazione Globale](/docs/README.md)
 [Backlink: scripts_conflict_resolution.md](scripts_conflict_resolution.md)
@@ -46,15 +41,10 @@ git status
 - I namespace sono stati mantenuti corretti secondo la struttura del modulo
 - Sono stati rimossi solo i marcatori di conflitto, mantenendo il codice funzionale
 - I file di backup sono stati creati con il timestamp per sicurezza
-<<<<<<< HEAD
 
 ### Fase 1: Identificazione
 ```bash
 
-=======
-### Fase 1: Identificazione
-```bash
->>>>>>> aurmich/dev
 # Visualizzare tutti i file con conflitti
 git status
 
@@ -85,10 +75,7 @@ Per ogni file in conflitto:
 - `Modules\Predict\Providers` per i service provider
 - `Modules\Predict\Database\Factories` per le factory
 - `Modules\Predict\lang\it` per i file di traduzione
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 ### Fase 3: Risoluzione
 Scegliere una delle seguenti strategie:
 
@@ -145,11 +132,7 @@ namespace Modules\NomeModulo\App\Filament;
 2. Eseguire `php artisan config:clear` per pulire la cache
 3. Verificare che tutte le risorse Filament siano registrate correttamente
 4. Testare il modulo in ambiente di sviluppo 
-<<<<<<< HEAD
 
-=======
-=======
->>>>>>> aurmich/dev
 ## Risoluzione di Casi Specifici
 
 ### Conflitti in File PHP
@@ -184,7 +167,3 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 - [Script di Risoluzione Automatica](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/fix_all_git_conflicts.md)
 - [Conflitti nei File di Configurazione](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/config_file_conflicts.md)
 - [Convenzioni Namespace](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/NAMESPACE-CONVENTIONS.md)
-<<<<<<< HEAD
-=======
->>>>>>> d83fe8da (.)
->>>>>>> aurmich/dev

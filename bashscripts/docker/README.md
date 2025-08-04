@@ -48,10 +48,7 @@ docker/
 
 ### Comandi Comuni
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Deploy stack
 ./deployment/deploy_stack.sh
 

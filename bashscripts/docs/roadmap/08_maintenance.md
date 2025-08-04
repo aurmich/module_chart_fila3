@@ -7,10 +7,7 @@
  43df3e0 (.)
 
 aurmich/dev
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # 🔧 Fase 8: Manutenzione
 
 ## 📋 Panoramica
@@ -20,10 +17,7 @@ Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 7: Documentazione](../roadmap/07_documentation.md)
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # 🔧 Fase 8: Manutenzione
 
 ## 📋 Panoramica
@@ -42,10 +36,7 @@ Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
 aurmich/dev
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # 🔧 Fase 8: Manutenzione
 
 ## 📋 Panoramica
