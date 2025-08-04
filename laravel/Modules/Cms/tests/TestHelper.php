@@ -11,11 +11,7 @@ use Tests\CreatesApplication;
 
 abstract class TestHelper extends BaseTestCase
 {
-<<<<<<< HEAD
     //use CreatesApplication;
-=======
-    use CreatesApplication;
->>>>>>> aurmich/dev
 
     // in User
     public function getSuperAdminUser()
