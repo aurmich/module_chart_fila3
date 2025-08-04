@@ -1,17 +1,32 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 8d591468 (fields translations)
 return [
     'title' => [
         'label' => 'Doctor Calendar',
         'description' => 'Doctor appointments management',
         'help' => 'View and manage doctor appointments calendar',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d591468 (fields translations)
     'navigation' => [
         'label' => 'Calendar',
         'group' => 'Medical Management',
         'icon' => 'heroicon-o-calendar-days',
+<<<<<<< HEAD
         'sort' => '20',
     ],
+=======
+        'sort' => 20,
+    ],
+
+>>>>>>> 8d591468 (fields translations)
     'actions' => [
         'create' => [
             'label' => 'New Appointment',
@@ -73,20 +88,30 @@ return [
             'error' => 'Error changing practice',
         ],
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d591468 (fields translations)
     'fields' => [
         'starts_at' => [
             'label' => 'Start',
             'placeholder' => 'Select start date and time',
             'help' => 'Appointment start date and time',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => 'starts_at',
+=======
+>>>>>>> 8d591468 (fields translations)
         ],
         'ends_at' => [
             'label' => 'End',
             'placeholder' => 'Select end date and time',
             'help' => 'Appointment end date and time',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => 'ends_at',
+=======
+>>>>>>> 8d591468 (fields translations)
         ],
         'name' => [
             'label' => 'Title',
@@ -99,7 +124,10 @@ return [
             'placeholder' => 'Enter additional notes',
             'help' => 'Additional notes and observations for the appointment',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => 'notes',
+=======
+>>>>>>> 8d591468 (fields translations)
         ],
         'state' => [
             'label' => 'Status',
@@ -115,7 +143,10 @@ return [
                 'no_show' => 'No Show',
                 'rescheduled' => 'Rescheduled',
             ],
+<<<<<<< HEAD
             'description' => 'state',
+=======
+>>>>>>> 8d591468 (fields translations)
         ],
         'priority' => [
             'label' => 'Priority',
@@ -159,35 +190,50 @@ return [
             'placeholder' => 'Patient first name',
             'help' => 'Patient given name',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => 'first_name',
+=======
+>>>>>>> 8d591468 (fields translations)
         ],
         'last_name' => [
             'label' => 'Last Name',
             'placeholder' => 'Patient last name',
             'help' => 'Patient family name',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => 'last_name',
+=======
+>>>>>>> 8d591468 (fields translations)
         ],
         'phone' => [
             'label' => 'Phone',
             'placeholder' => '+1 (555) 123-4567',
             'help' => 'Patient phone number',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => 'phone',
+=======
+>>>>>>> 8d591468 (fields translations)
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'patient@example.com',
             'help' => 'Patient email address',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => 'email',
+=======
+>>>>>>> 8d591468 (fields translations)
         ],
         'fiscal_code' => [
             'label' => 'Fiscal Code',
             'placeholder' => 'ABCDEF00A00A000A',
             'help' => 'Patient tax code',
             'helper_text' => '',
+<<<<<<< HEAD
             'description' => 'fiscal_code',
+=======
+>>>>>>> 8d591468 (fields translations)
         ],
         'birth_date' => [
             'label' => 'Date of Birth',
@@ -213,6 +259,7 @@ return [
             'help' => 'Medical practice where the appointment takes place',
             'helper_text' => '',
         ],
+<<<<<<< HEAD
         'doctor_id' => [
             'label' => 'Doctor',
             'placeholder' => 'Select the doctor',
@@ -226,6 +273,10 @@ return [
             'helper_text' => '',
         ],
     ],
+=======
+    ],
+
+>>>>>>> 8d591468 (fields translations)
     'patient' => [
         'first_name' => [
             'label' => 'First Name',
@@ -329,6 +380,7 @@ return [
             'help' => 'Any additional information about the patient',
             'helper_text' => '',
         ],
+<<<<<<< HEAD
         'full_name' => [
             'label' => 'First Name Completo',
             'placeholder' => 'First Name e cognome del paziente',
@@ -344,6 +396,10 @@ return [
             'description' => 'Informazioni mediche del paziente',
         ],
     ],
+=======
+    ],
+
+>>>>>>> 8d591468 (fields translations)
     'validation' => [
         'required' => 'The :attribute field is required',
         'date' => 'The :attribute must be a valid date',
@@ -358,12 +414,17 @@ return [
         ],
         'unique' => 'The :attribute has already been taken',
         'exists' => 'The selected :attribute is invalid',
+<<<<<<< HEAD
         'phone' => 'Il campo :attribute deve essere un numero di telefono valido',
         'fiscal_code' => 'Il codice fiscale deve essere valido',
         'time_slot_available' => 'L\'orario selezionato non è disponibile',
         'minimum_duration' => 'La durata minima dell\'appuntamento è di :min minuti',
         'maximum_duration' => 'La durata massima dell\'appuntamento è di :max minuti',
     ],
+=======
+    ],
+
+>>>>>>> 8d591468 (fields translations)
     'attributes' => [
         'starts_at' => 'start time',
         'ends_at' => 'end time',
@@ -377,6 +438,7 @@ return [
         'type' => 'type',
         'notes' => 'notes',
     ],
+<<<<<<< HEAD
     'calendar' => [
         'views' => [
             'month' => 'Vista Mensile',
@@ -477,4 +539,6 @@ return [
         'no_show_rate' => 'Tasso di Assenza',
         'average_duration' => 'Durata Media',
     ],
+=======
+>>>>>>> 8d591468 (fields translations)
 ];

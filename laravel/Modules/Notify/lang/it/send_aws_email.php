@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8d591468 (fields translations)
 declare(strict_types=1);
 
 return [
@@ -66,6 +69,7 @@ return [
         'failed' => 'Invio email fallito',
     ],
 ];
+<<<<<<< HEAD
 =======
 return array (
   'navigation' =>
@@ -120,3 +124,5 @@ return array (
   ),
 );
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 8d591468 (fields translations)

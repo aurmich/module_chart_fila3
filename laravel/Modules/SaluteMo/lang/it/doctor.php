@@ -3,11 +3,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array (
 <<<<<<< HEAD
 =======
 return array (
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+return array (
+>>>>>>> 8d591468 (fields translations)
   'model' => 
   array (
     'label' => 'Medico',
@@ -15,14 +19,18 @@ return array (
     'description' => 'Gestione dei medici registrati nella piattaforma',
   ),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f3e4ec66 (.)
 =======
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+>>>>>>> 8d591468 (fields translations)
   'navigation' => 
   array (
     'label' => 'Medici',
     'group' => 'Gestione Utenti',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     'icon' => 'heroicon-o-user-circle',
@@ -43,6 +51,11 @@ return array (
     'sort' => 10,
   ),
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+    'icon' => 'heroicon-o-user-circle',
+    'sort' => 10,
+  ),
+>>>>>>> 8d591468 (fields translations)
   'pages' => 
   array (
     'index' => 
@@ -51,12 +64,16 @@ return array (
       'subtitle' => 'Gestisci i medici registrati nell\'app mobile',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'Visualizza e gestisci tutti i medici iscritti alla piattaforma',
 =======
 >>>>>>> f3e4ec66 (.)
 =======
       'description' => 'Visualizza e gestisci tutti i medici iscritti alla piattaforma',
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+      'description' => 'Visualizza e gestisci tutti i medici iscritti alla piattaforma',
+>>>>>>> 8d591468 (fields translations)
     ),
     'create' => 
     array (
@@ -64,12 +81,16 @@ return array (
       'subtitle' => 'Registra un nuovo medico',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'Inserisci i dati per registrare un nuovo professionista',
 =======
 >>>>>>> f3e4ec66 (.)
 =======
       'description' => 'Inserisci i dati per registrare un nuovo professionista',
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+      'description' => 'Inserisci i dati per registrare un nuovo professionista',
+>>>>>>> 8d591468 (fields translations)
     ),
     'edit' => 
     array (
@@ -77,12 +98,16 @@ return array (
       'subtitle' => 'Modifica le informazioni del medico',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'Aggiorna i dati del professionista',
 =======
 >>>>>>> f3e4ec66 (.)
 =======
       'description' => 'Aggiorna i dati del professionista',
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+      'description' => 'Aggiorna i dati del professionista',
+>>>>>>> 8d591468 (fields translations)
     ),
     'view' => 
     array (
@@ -90,12 +115,16 @@ return array (
       'subtitle' => 'Visualizza le informazioni complete del medico',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'Dettagli completi del profilo medico',
 =======
 >>>>>>> f3e4ec66 (.)
 =======
       'description' => 'Dettagli completi del profilo medico',
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+      'description' => 'Dettagli completi del profilo medico',
+>>>>>>> 8d591468 (fields translations)
     ),
   ),
   'fields' => 
@@ -106,6 +135,9 @@ return array (
       'placeholder' => 'Inserisci nome e cognome completi',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8d591468 (fields translations)
       'help' => 'Nome e cognome come registrati nell\'Ordine dei Medici',
     ),
     'first_name' => 
@@ -119,17 +151,21 @@ return array (
       'label' => 'Cognome',
       'placeholder' => 'Inserisci il cognome',
       'help' => 'Cognome del medico',
+<<<<<<< HEAD
 =======
       'helper_text' => 'Nome e cognome come registrati nell\'Ordine dei Medici',
 >>>>>>> f3e4ec66 (.)
 =======
       'helper_text' => 'Nome e cognome come registrati nell\'Ordine dei Medici',
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+>>>>>>> 8d591468 (fields translations)
     ),
     'email' => 
     array (
       'label' => 'Email',
       'placeholder' => 'email@esempio.com',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       'help' => 'Indirizzo email per le comunicazioni',
@@ -144,11 +180,15 @@ return array (
 =======
       'description' => 'email',
 >>>>>>> 23f43388 (feat: add openingHoursField to studiorelationmanager of doctorresource)
+=======
+      'help' => 'Indirizzo email per le comunicazioni',
+>>>>>>> 8d591468 (fields translations)
     ),
     'phone' => 
     array (
       'label' => 'Telefono',
       'placeholder' => '+39 123 456 7890',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       'help' => 'Numero di telefono principale',
@@ -158,11 +198,15 @@ return array (
 =======
       'helper_text' => 'Numero di telefono principale',
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+      'help' => 'Numero di telefono principale',
+>>>>>>> 8d591468 (fields translations)
     ),
     'mobile_phone' => 
     array (
       'label' => 'Cellulare',
       'placeholder' => '+39 123 456 7890',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       'help' => 'Numero di cellulare per le notifiche push',
@@ -172,11 +216,15 @@ return array (
 =======
       'helper_text' => 'Numero di cellulare per le notifiche push',
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+      'help' => 'Numero di cellulare per le notifiche push',
+>>>>>>> 8d591468 (fields translations)
     ),
     'license_number' => 
     array (
       'label' => 'Numero Iscrizione Ordine',
       'placeholder' => 'Inserisci il numero di iscrizione',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       'help' => 'Numero di iscrizione all\'Ordine dei Medici',
@@ -186,11 +234,15 @@ return array (
 =======
       'helper_text' => 'Numero di iscrizione all\'Ordine dei Medici',
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+      'help' => 'Numero di iscrizione all\'Ordine dei Medici',
+>>>>>>> 8d591468 (fields translations)
     ),
     'specialization' => 
     array (
       'label' => 'Specializzazione',
       'placeholder' => 'Seleziona la specializzazione',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       'help' => 'Specializzazione medica principale',
@@ -200,11 +252,15 @@ return array (
 =======
       'helper_text' => 'Specializzazione medica principale',
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+      'help' => 'Specializzazione medica principale',
+>>>>>>> 8d591468 (fields translations)
     ),
     'clinic_address' => 
     array (
       'label' => 'Indirizzo Studio',
       'placeholder' => 'Via Roma, 123',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       'help' => 'Indirizzo dello studio medico',
@@ -214,10 +270,14 @@ return array (
 =======
       'helper_text' => 'Indirizzo dello studio medico',
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+      'help' => 'Indirizzo dello studio medico',
+>>>>>>> 8d591468 (fields translations)
     ),
     'is_active' => 
     array (
       'label' => 'Attivo',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       'help' => 'Il medico può ricevere prenotazioni',
@@ -227,10 +287,14 @@ return array (
 =======
       'helper_text' => 'Il medico può ricevere prenotazioni',
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+      'help' => 'Il medico può ricevere prenotazioni',
+>>>>>>> 8d591468 (fields translations)
     ),
     'verified_at' => 
     array (
       'label' => 'Data Verifica',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       'placeholder' => 'Seleziona la data di verifica',
@@ -241,10 +305,15 @@ return array (
 =======
       'helper_text' => 'Data di verifica della documentazione',
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+      'placeholder' => 'Seleziona la data di verifica',
+      'help' => 'Data di verifica della documentazione',
+>>>>>>> 8d591468 (fields translations)
     ),
     'device_token' => 
     array (
       'label' => 'Token Dispositivo',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       'placeholder' => 'Token generato automaticamente',
@@ -255,12 +324,19 @@ return array (
 =======
       'helper_text' => 'Token per le notifiche push',
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+      'placeholder' => 'Token generato automaticamente',
+      'help' => 'Token per le notifiche push',
+>>>>>>> 8d591468 (fields translations)
     ),
     'last_login' => 
     array (
       'label' => 'Ultimo Accesso',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8d591468 (fields translations)
       'placeholder' => 'Ultimo accesso registrato',
       'help' => 'Data e ora dell\'ultimo accesso all\'app',
     ),
@@ -275,6 +351,7 @@ return array (
       'label' => 'Orario',
       'placeholder' => 'Configura l\'orario',
       'help' => 'Orario di disponibilità del medico',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
@@ -307,11 +384,14 @@ return array (
 >>>>>>> f3e4ec66 (.)
 =======
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+>>>>>>> 8d591468 (fields translations)
     ),
     'toggleColumns' => 
     array (
       'label' => 'toggleColumns',
     ),
+<<<<<<< HEAD
 <<<<<<< HEAD
     'reorderRecords' => 
     array (
@@ -348,6 +428,8 @@ return array (
     array (
       'label' => 'edit',
     ),
+=======
+>>>>>>> 8d591468 (fields translations)
   ),
   'actions' => 
   array (
@@ -385,6 +467,7 @@ return array (
       'modal_description' => 'Conferma la verifica della documentazione del professionista',
       'success' => 'Medico verificato con successo',
       'error' => 'Errore durante la verifica del medico',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
@@ -446,16 +529,22 @@ return array (
 >>>>>>> f3e4ec66 (.)
 =======
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+>>>>>>> 8d591468 (fields translations)
     ),
     'deactivate' => 
     array (
       'label' => 'Disattiva',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8d591468 (fields translations)
       'tooltip' => 'Disattiva temporaneamente il medico',
       'confirmation' => 'Sei sicuro di voler disattivare questo medico?',
       'success' => 'Medico disattivato con successo',
       'error' => 'Errore durante la disattivazione del medico',
+<<<<<<< HEAD
 =======
       'icon' => 'heroicon-o-x-circle',
       'tooltip' => 'Disattiva temporaneamente il medico',
@@ -464,17 +553,23 @@ return array (
       'icon' => 'heroicon-o-x-circle',
       'tooltip' => 'Disattiva temporaneamente il medico',
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+>>>>>>> 8d591468 (fields translations)
     ),
     'send_notification' => 
     array (
       'label' => 'Invia Notifica',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8d591468 (fields translations)
       'tooltip' => 'Invia una notifica push al medico',
       'modal_heading' => 'Invia Notifica',
       'modal_description' => 'Scrivi il messaggio da inviare al medico',
       'success' => 'Notifica inviata con successo',
       'error' => 'Errore durante l\'invio della notifica',
+<<<<<<< HEAD
 =======
       'icon' => 'heroicon-o-bell',
       'tooltip' => 'Invia una notifica push al medico',
@@ -483,12 +578,17 @@ return array (
       'icon' => 'heroicon-o-bell',
       'tooltip' => 'Invia una notifica push al medico',
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+>>>>>>> 8d591468 (fields translations)
     ),
     'view_appointments' => 
     array (
       'label' => 'Vedi Appuntamenti',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8d591468 (fields translations)
       'tooltip' => 'Visualizza gli appuntamenti del medico',
     ),
     'change_schedule' => 
@@ -530,6 +630,7 @@ return array (
       'label' => 'Riordina Record',
       'tooltip' => 'Riordina i record della tabella',
     ),
+<<<<<<< HEAD
 =======
       'icon' => 'heroicon-o-calendar-days',
       'tooltip' => 'Visualizza gli appuntamenti del medico',
@@ -540,6 +641,8 @@ return array (
       'tooltip' => 'Visualizza gli appuntamenti del medico',
     ),
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+>>>>>>> 8d591468 (fields translations)
   ),
   'filters' => 
   array (
@@ -548,16 +651,22 @@ return array (
       'label' => 'Solo Attivi',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'placeholder' => 'Filtra per medici attivi',
       'help' => 'Mostra solo i medici attualmente attivi',
 =======
 >>>>>>> f3e4ec66 (.)
 =======
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+      'placeholder' => 'Filtra per medici attivi',
+      'help' => 'Mostra solo i medici attualmente attivi',
+>>>>>>> 8d591468 (fields translations)
     ),
     'verified' => 
     array (
       'label' => 'Solo Verificati',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       'placeholder' => 'Filtra per medici verificati',
@@ -566,10 +675,15 @@ return array (
 >>>>>>> f3e4ec66 (.)
 =======
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+      'placeholder' => 'Filtra per medici verificati',
+      'help' => 'Mostra solo i medici con documentazione verificata',
+>>>>>>> 8d591468 (fields translations)
     ),
     'specialization' => 
     array (
       'label' => 'Per Specializzazione',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       'placeholder' => 'Seleziona specializzazione',
@@ -578,6 +692,10 @@ return array (
 >>>>>>> f3e4ec66 (.)
 =======
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+      'placeholder' => 'Seleziona specializzazione',
+      'help' => 'Filtra per specializzazione medica',
+>>>>>>> 8d591468 (fields translations)
     ),
   ),
   'bulk_actions' => 
@@ -587,33 +705,45 @@ return array (
       'label' => 'Verifica Selezionati',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8d591468 (fields translations)
       'tooltip' => 'Verifica tutti i medici selezionati',
       'confirmation' => 'Sei sicuro di voler verificare tutti i medici selezionati?',
       'success' => 'Medici verificati con successo',
       'error' => 'Errore durante la verifica dei medici',
+<<<<<<< HEAD
 =======
       'icon' => 'heroicon-o-check-circle',
 >>>>>>> f3e4ec66 (.)
 =======
       'icon' => 'heroicon-o-check-circle',
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+>>>>>>> 8d591468 (fields translations)
     ),
     'send_notification_selected' => 
     array (
       'label' => 'Notifica Selezionati',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8d591468 (fields translations)
       'tooltip' => 'Invia notifica a tutti i medici selezionati',
       'modal_heading' => 'Notifica Multipla',
       'modal_description' => 'Scrivi il messaggio da inviare a tutti i medici selezionati',
       'success' => 'Notifiche inviate con successo',
       'error' => 'Errore durante l\'invio delle notifiche',
+<<<<<<< HEAD
 =======
       'icon' => 'heroicon-o-bell',
 >>>>>>> f3e4ec66 (.)
 =======
       'icon' => 'heroicon-o-bell',
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+>>>>>>> 8d591468 (fields translations)
     ),
   ),
   'messages' => 
@@ -623,10 +753,15 @@ return array (
     'notification_sent' => 'Notifica inviata con successo',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'empty_state' => 'Nessun medico trovato',
     'loading' => 'Caricamento medici in corso...',
 =======
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+    'empty_state' => 'Nessun medico trovato',
+    'loading' => 'Caricamento medici in corso...',
+>>>>>>> 8d591468 (fields translations)
   ),
   'notifications' => 
   array (
@@ -649,6 +784,9 @@ return array (
       'string' => 'Il campo :attribute non può superare :max caratteri',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8d591468 (fields translations)
     'phone_format' => 'Il numero di telefono deve essere in formato valido',
     'license_number_format' => 'Il numero di iscrizione deve essere valido',
   ),
@@ -664,6 +802,7 @@ return array (
     'description' => 'Non sono stati trovati medici corrispondenti ai criteri di ricerca',
     'action' => 'Aggiungi il primo medico',
   ),
+<<<<<<< HEAD
 =======
     'verification_required' => 'È necessaria la verifica della documentazione',
   ),
@@ -1066,3 +1205,6 @@ return [
     ],
 ];
 >>>>>>> 98867c82 (translations)
+=======
+);
+>>>>>>> 8d591468 (fields translations)

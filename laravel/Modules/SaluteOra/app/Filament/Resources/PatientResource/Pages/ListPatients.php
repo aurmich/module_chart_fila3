@@ -65,6 +65,7 @@ class ListPatients extends ListUsers
         $columns['years_in_italy'] = Tables\Columns\TextColumn::make('years_in_italy');
         $columns['family_members'] = Tables\Columns\TextColumn::make('family_members');
         $columns['children_count'] = Tables\Columns\TextColumn::make('children_count');
+<<<<<<< HEAD
         $attachments = Patient::getAttachments();
 
         foreach ($attachments as $attachment) {
@@ -129,12 +130,14 @@ class ListPatients extends ListUsers
 >>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
         $columns = Arr::except($columns, ['type']);
 
+=======
+>>>>>>> 8d591468 (fields translations)
         $attachments = Patient::$attachments;
 
         foreach ($attachments as $attachment) {
             $columns[$attachment] = IconMediaColumn::make($attachment);
         }
-
+        
         return $columns;
     }
 

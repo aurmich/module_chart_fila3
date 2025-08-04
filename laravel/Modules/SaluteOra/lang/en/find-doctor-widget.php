@@ -1,12 +1,24 @@
 <?php
 
+<<<<<<< HEAD
 return [
     'title' => 'Find a Dentist and Book an Appointment',
+=======
+declare(strict_types=1);
+
+return [
+    'title' => 'Find a Dentist and Book an Appointment',
+    
+>>>>>>> 8d591468 (fields translations)
     'steps' => [
         'search' => 'Find a Dentist',
         'date_time' => 'Date and Time',
         'confirmation' => 'Confirmation',
     ],
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 8d591468 (fields translations)
     'fields' => [
         'dentist_search' => 'Dentist Search',
         'appointment_details' => 'Appointment Details',
@@ -20,6 +32,10 @@ return [
         'date' => 'Date',
         'time' => 'Time',
     ],
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 8d591468 (fields translations)
     'placeholders' => [
         'search' => 'Search by name or city',
         'region' => 'Select a region',
@@ -31,17 +47,29 @@ return [
         'date' => 'Select a date',
         'time' => 'Select a time',
     ],
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 8d591468 (fields translations)
     'actions' => [
         'submit' => 'Book Appointment',
         'next' => 'Next',
         'previous' => 'Previous',
     ],
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 8d591468 (fields translations)
     'messages' => [
         'loading_available_slots' => 'Loading available time slots...',
         'no_slots_available' => 'No available time slots for the selected date',
         'appointment_booked_successfully' => 'Appointment booked successfully!',
         'error_booking_appointment' => 'An error occurred while booking the appointment',
     ],
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 8d591468 (fields translations)
     'validation' => [
         'required' => 'This field is required',
     ],

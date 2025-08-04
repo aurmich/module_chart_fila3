@@ -266,12 +266,15 @@
                 "Modules\\Xot\\Providers\\XotServiceProvider",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 "Modules\\Xot\\Providers\\Filament\\ModulesServiceProvider",
 >>>>>>> aurmich/dev
 =======
                 "Modules\\Xot\\Providers\\Filament\\ModulesServiceProvider",
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 8d591468 (fields translations)
                 "Modules\\Xot\\Providers\\Filament\\AdminPanelProvider"
             ],
             "aliases": {}

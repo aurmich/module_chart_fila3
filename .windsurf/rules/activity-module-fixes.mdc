@@ -9,6 +9,7 @@ alwaysApply: false
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> f3e4ec66 (.)
@@ -17,3 +18,6 @@ alwaysApply: false
 >>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
 =======
 >>>>>>> f80feb52 (bug:calkendat)
+=======
+
+>>>>>>> 8d591468 (fields translations)

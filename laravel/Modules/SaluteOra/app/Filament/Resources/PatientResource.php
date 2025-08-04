@@ -94,6 +94,7 @@ use Modules\Xot\Actions\View\GetViewPathAction;
 use Modules\Xot\Actions\View\GetViewPathAction;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\SaluteOra\Enums\LastDentalVisitPeriodEnum;
 use Modules\Patient\Filament\Components\HealthCardUpload;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 <<<<<<< HEAD
@@ -328,6 +329,7 @@ class PatientResource extends XotBaseResource
             
             Forms\Components\TextInput::make('phone')
                 ->tel()
+                ->required()
                 ->maxLength(255),
             Forms\Components\TextInput::make('email')
                 ->email()
@@ -362,14 +364,20 @@ class PatientResource extends XotBaseResource
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8d591468 (fields translations)
             //Forms\Components\DatePicker::make('last_dental_visit')
             //    ->maxDate(now()),
             Forms\Components\Select::make('last_dental_visit_period')
                 ->options(LastDentalVisitPeriodEnum::class),
+<<<<<<< HEAD
 =======
             Forms\Components\DatePicker::make('last_dental_visit')
                 ->maxDate(now()),
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 8d591468 (fields translations)
             Forms\Components\Textarea::make('dental_problems')
                 ->maxLength(65535),
         ];
@@ -406,6 +414,7 @@ class PatientResource extends XotBaseResource
         return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'privacy_policy' => Forms\Components\View::make('pub_theme::gdpr.patient-privacy-policy')
                 ->columnSpanFull(),
             'privacy_acceptance' => Forms\Components\Checkbox::make('privacy_acceptance')
@@ -422,12 +431,15 @@ class PatientResource extends XotBaseResource
 =======
             'privacy_policy' => Forms\Components\View::make('saluteora::privacy-policy')
 >>>>>>> 13ea6524 (phpstan)
+=======
+            'privacy_policy' => Forms\Components\View::make('pub_theme::gdpr.privacy-policy')
+>>>>>>> 8d591468 (fields translations)
                 ->columnSpanFull(),
             'privacy_acceptance' => Forms\Components\Checkbox::make('privacy_acceptance')
                 ->required()
                 ->columnSpanFull(),
-            'newsletter' => Forms\Components\Checkbox::make('newsletter')
-                ->columnSpanFull(),
+            //'newsletter' => Forms\Components\Checkbox::make('newsletter')
+           //     ->columnSpanFull(),
         ];
     }
 <<<<<<< HEAD

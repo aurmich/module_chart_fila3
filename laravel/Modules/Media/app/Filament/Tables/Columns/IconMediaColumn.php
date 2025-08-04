@@ -96,11 +96,17 @@ class IconMediaColumn extends IconColumn
                     //    ->temporaryUploadUrl($media->getPathRelativeToRoot(),now()->addMinutes(5));
 =======
                     return Storage::disk($media->disk)->download($media->getPathRelativeToRoot());
+<<<<<<< HEAD
 >>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
+=======
+                    //return Storage::disk($media->disk)
+                    //    ->temporaryUploadUrl($media->getPathRelativeToRoot(),now()->addMinutes(5));
+>>>>>>> 8d591468 (fields translations)
 
                     //return response()->streamDownload(function () use ($media) {
                     //    echo $media->get();
                     //}, $media->file_name);
+<<<<<<< HEAD
 <<<<<<< HEAD
                     /*
                     $headers=[
@@ -116,6 +122,21 @@ class IconMediaColumn extends IconColumn
 =======
 
 >>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
+=======
+                    /*
+                    $path = Storage::disk($media->disk)->path($media->getPathRelativeToRoot());
+                    return response()->file($path, [
+                        'Content-Type' => $media->mime_type,
+                        'Content-Disposition' => 'inline; filename="' . basename($media->getPathRelativeToRoot()) . '"'
+                    ]);
+                    */
+                    /*
+                    return Storage::disk($media->disk)->response($media->getPathRelativeToRoot(), null, [
+                        'Content-Type' => 'application/pdf',
+                        'Content-Disposition' => 'inline; filename="' . basename($media->getPathRelativeToRoot()) . '"'
+                    ]);
+                    */
+>>>>>>> 8d591468 (fields translations)
                 })
                 ;
 

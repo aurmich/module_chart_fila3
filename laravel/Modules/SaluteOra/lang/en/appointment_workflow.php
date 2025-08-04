@@ -1,11 +1,20 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 8d591468 (fields translations)
 return [
     'navigation' => [
         'label' => 'Appointment Workflow',
         'group' => 'Schedule',
         'icon' => 'heroicon-o-document-chart-bar',
+<<<<<<< HEAD
         'sort' => '60',
+=======
+        'sort' => 60,
+>>>>>>> 8d591468 (fields translations)
         'tooltip' => 'Management of booking and appointment workflows',
     ],
     'model' => [

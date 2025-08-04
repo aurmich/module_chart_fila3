@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 return [
     'navigation' => [
         'label' => 'Medical Practices',
@@ -18,30 +19,69 @@ return [
     'pages' => [
         'index' => [
             'title' => 'Dental Practices List',
+=======
+declare(strict_types=1);
+
+return [
+    'navigation' => [
+        'label' => 'Medical Studios',
+        'group' => 'Health Management',
+        'icon' => 'heroicon-o-building-office',
+        'sort' => 20,
+    ],
+
+    'model' => [
+        'label' => 'Medical Studio',
+        'plural_label' => 'Medical Studios',
+        'description' => 'Complete management of medical studios and healthcare facilities',
+    ],
+
+    'pages' => [
+        'index' => [
+            'title' => 'Dental Studios List',
+>>>>>>> 8d591468 (fields translations)
             'subtitle' => 'Registered studios management',
             'description' => 'View, edit and manage all registered dental studios in the system',
         ],
         'create' => [
+<<<<<<< HEAD
             'title' => 'Register New Practice',
             'subtitle' => 'Practice data entry',
             'description' => 'Fill the form to register a new dental studio',
         ],
         'edit' => [
             'title' => 'Edit Dental Practice',
+=======
+            'title' => 'Register New Studio',
+            'subtitle' => 'Studio data entry',
+            'description' => 'Fill the form to register a new dental studio',
+        ],
+        'edit' => [
+            'title' => 'Edit Dental Studio',
+>>>>>>> 8d591468 (fields translations)
             'subtitle' => 'Update information',
             'description' => 'Edit the selected studio information',
         ],
         'view' => [
+<<<<<<< HEAD
             'title' => 'Dental Practice Details',
+=======
+            'title' => 'Dental Studio Details',
+>>>>>>> 8d591468 (fields translations)
             'subtitle' => 'Complete view',
             'description' => 'View all dental studio information',
         ],
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d591468 (fields translations)
     'fields' => [
         'id' => [
             'label' => 'ID',
             'placeholder' => 'Automatic identifier',
             'help' => 'Unique system identifier for the studio',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -51,6 +91,13 @@ return [
             'help' => 'Official name of the medical studio or clinic',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'name' => [
+            'label' => 'Studio Name',
+            'placeholder' => 'Enter medical studio name',
+            'help' => 'Official name of the medical studio or clinic',
+>>>>>>> 8d591468 (fields translations)
         ],
         'slug' => [
             'label' => 'URL Slug',
@@ -61,27 +108,37 @@ return [
             'label' => 'Description',
             'placeholder' => 'Enter studio description...',
             'help' => 'Brief description of services and specializations offered',
+<<<<<<< HEAD
             'description' => 'description',
             'helper_text' => '',
+=======
+>>>>>>> 8d591468 (fields translations)
         ],
         'email' => [
             'label' => 'Email Address',
             'placeholder' => 'studio@example.com',
             'help' => 'Primary email contact for the medical studio',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 8d591468 (fields translations)
         ],
         'phone' => [
             'label' => 'Phone Number',
             'placeholder' => '+39 02 1234567',
             'help' => 'Main phone number for appointments and inquiries',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 8d591468 (fields translations)
         ],
         'website' => [
             'label' => 'Website',
             'placeholder' => 'https://www.studio.com',
             'help' => 'Official website URL (optional)',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -98,12 +155,22 @@ return [
                 'helper_text' => '',
                 'description' => '',
             ],
+=======
+        ],
+        'address' => [
+            'label' => 'Street Address',
+            'placeholder' => 'Via Roma 123',
+            'help' => 'Complete street address with building number',
+>>>>>>> 8d591468 (fields translations)
         ],
         'city' => [
             'label' => 'City',
             'placeholder' => 'Milan',
             'help' => 'City where the studio is located',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+>>>>>>> 8d591468 (fields translations)
         ],
         'state' => [
             'label' => 'State/Region',
@@ -114,7 +181,10 @@ return [
             'label' => 'Postal Code',
             'placeholder' => '20100',
             'help' => 'Five-digit Italian postal code',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+>>>>>>> 8d591468 (fields translations)
         ],
         'country' => [
             'label' => 'Country',
@@ -130,8 +200,11 @@ return [
             'label' => 'VAT Number',
             'placeholder' => 'IT12345678901',
             'help' => 'Value Added Tax identification number',
+<<<<<<< HEAD
             'description' => '',
             'helper_text' => '',
+=======
+>>>>>>> 8d591468 (fields translations)
         ],
         'license_number' => [
             'label' => 'Medical License',
@@ -147,8 +220,11 @@ return [
             'label' => 'Opening Hours',
             'placeholder' => 'Configure weekly schedule',
             'help' => 'Standard operating hours for each day of the week',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 8d591468 (fields translations)
         ],
         'emergency_hours' => [
             'label' => 'Emergency Hours',
@@ -171,8 +247,13 @@ return [
             'help' => 'How far in advance patients can book appointments',
         ],
         'is_active' => [
+<<<<<<< HEAD
             'label' => 'Practice Active',
             'placeholder' => 'Practice operational status',
+=======
+            'label' => 'Studio Active',
+            'placeholder' => 'Studio operational status',
+>>>>>>> 8d591468 (fields translations)
             'help' => 'Whether the studio is currently accepting patients',
         ],
         'accepts_new_patients' => [
@@ -216,7 +297,11 @@ return [
             'help' => 'Specialized medical equipment available',
         ],
         'certifications' => [
+<<<<<<< HEAD
             'label' => 'Certificatesons',
+=======
+            'label' => 'Certifications',
+>>>>>>> 8d591468 (fields translations)
             'placeholder' => 'Enter certification details...',
             'help' => 'Quality certifications and accreditations',
         ],
@@ -227,15 +312,21 @@ return [
         ],
         'created_at' => [
             'label' => 'Registration Date',
+<<<<<<< HEAD
             'placeholder' => 'Practice registration timestamp',
             'help' => 'Date when the studio was added to the system',
             'helper_text' => '',
             'description' => '',
+=======
+            'placeholder' => 'Studio registration timestamp',
+            'help' => 'Date when the studio was added to the system',
+>>>>>>> 8d591468 (fields translations)
         ],
         'updated_at' => [
             'label' => 'Last Update',
             'placeholder' => 'Last modification timestamp',
             'help' => 'Date of last modification to studio information',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -341,6 +432,51 @@ return [
         'export' => [
             'label' => 'Export Practice Data',
             'success' => 'Practice data exported successfully',
+=======
+        ],
+    ],
+
+    'actions' => [
+        'create' => [
+            'label' => 'Add New Studio',
+            'success' => 'Medical studio created successfully',
+            'error' => 'Error creating studio: :error',
+            'confirmation' => 'Create new medical studio with the provided information?',
+        ],
+        'edit' => [
+            'label' => 'Edit Studio',
+            'success' => 'Studio information updated successfully',
+            'error' => 'Error updating studio: :error',
+        ],
+        'delete' => [
+            'label' => 'Delete Studio',
+            'success' => 'Studio deleted successfully',
+            'error' => 'Error deleting studio: :error',
+            'confirmation' => 'Are you sure you want to permanently delete this studio? All associated data will be lost.',
+        ],
+        'view' => [
+            'label' => 'View Studio Details',
+        ],
+        'duplicate' => [
+            'label' => 'Duplicate Studio',
+            'success' => 'Studio duplicated successfully',
+            'error' => 'Error duplicating studio: :error',
+        ],
+        'activate' => [
+            'label' => 'Activate Studio',
+            'success' => 'Studio activated successfully',
+            'error' => 'Error activating studio: :error',
+        ],
+        'deactivate' => [
+            'label' => 'Deactivate Studio',
+            'success' => 'Studio deactivated successfully',
+            'error' => 'Error deactivating studio: :error',
+            'confirmation' => 'Deactivate this studio? It will no longer accept new appointments.',
+        ],
+        'export' => [
+            'label' => 'Export Studio Data',
+            'success' => 'Studio data exported successfully',
+>>>>>>> 8d591468 (fields translations)
             'error' => 'Error exporting data: :error',
         ],
         'assign_doctors' => [
@@ -353,6 +489,7 @@ return [
             'success' => 'Schedule updated successfully',
             'error' => 'Error updating schedule: :error',
         ],
+<<<<<<< HEAD
         'register_tenant' => [
             'label' => 'Aggiungi Practice',
             'modal_heading' => 'Registra studio come tenant',
@@ -388,6 +525,10 @@ return [
             'tooltip' => 'Apri il pannello dei filtri di ricerca',
         ],
     ],
+=======
+    ],
+
+>>>>>>> 8d591468 (fields translations)
     'sections' => [
         'basic_info' => [
             'label' => 'Basic Information',
@@ -425,6 +566,7 @@ return [
             'label' => 'System Information',
             'description' => 'Registration date and system status',
         ],
+<<<<<<< HEAD
         'general_info' => [
             'label' => 'Informazioni Generali',
             'description' => 'Dati principali dello studio odontoiatrico',
@@ -434,12 +576,21 @@ return [
             'description' => 'Dati relativi alla posizione geografica',
         ],
     ],
+=======
+    ],
+
+>>>>>>> 8d591468 (fields translations)
     'filters' => [
         'is_active' => [
             'label' => 'Filter by Status',
             'options' => [
+<<<<<<< HEAD
                 '1' => 'Active Practices',
                 '0' => 'Inactive Practices',
+=======
+                '1' => 'Active Studios',
+                '0' => 'Inactive Studios',
+>>>>>>> 8d591468 (fields translations)
             ],
         ],
         'accepts_new_patients' => [
@@ -451,7 +602,10 @@ return [
         ],
         'city' => [
             'label' => 'Filter by City',
+<<<<<<< HEAD
             'placeholder' => 'Select una città',
+=======
+>>>>>>> 8d591468 (fields translations)
         ],
         'specializations' => [
             'label' => 'Filter by Specialization',
@@ -463,6 +617,7 @@ return [
                 '0' => 'Not Wheelchair Accessible',
             ],
         ],
+<<<<<<< HEAD
         'active' => [
             'label' => 'Status Activatezione',
             'options' => [
@@ -486,10 +641,25 @@ return [
         'schedule_configured' => 'Operating schedule has been configured',
         'schedule_missing' => 'Please configure the studio operating hours',
         'capacity_reached' => 'Practice has reached maximum daily capacity',
+=======
+    ],
+
+    'messages' => [
+        'welcome' => 'Welcome to studio management',
+        'studio_created' => 'Medical studio successfully registered',
+        'studio_updated' => 'Studio information updated',
+        'studio_activated' => 'Studio is now active and accepting patients',
+        'studio_deactivated' => 'Studio has been deactivated',
+        'no_doctors_assigned' => 'No doctors currently assigned to this studio',
+        'schedule_configured' => 'Operating schedule has been configured',
+        'schedule_missing' => 'Please configure the studio operating hours',
+        'capacity_reached' => 'Studio has reached maximum daily capacity',
+>>>>>>> 8d591468 (fields translations)
         'booking_closed' => 'Booking is currently closed for this studio',
         'emergency_contact' => 'For emergencies, please contact our emergency line',
         'insurance_verified' => 'Insurance coverage verified',
         'payment_processed' => 'Payment has been processed successfully',
+<<<<<<< HEAD
         'empty_state' => 'Nessuno studio registrato',
         'loading' => 'Uploadmento dati studi...',
         'saved' => 'Modifiche salvate correttamente',
@@ -500,6 +670,12 @@ return [
     ],
     'validation' => [
         'name_required' => 'Practice name is required',
+=======
+    ],
+
+    'validation' => [
+        'name_required' => 'Studio name is required',
+>>>>>>> 8d591468 (fields translations)
         'email_invalid' => 'Please enter a valid email address',
         'phone_invalid' => 'Please enter a valid phone number',
         'website_invalid' => 'Please enter a valid website URL',
@@ -511,6 +687,7 @@ return [
         'duration_invalid' => 'Appointment duration must be between 15 and 180 minutes',
         'advance_days_invalid' => 'Booking advance period must be between 1 and 365 days',
     ],
+<<<<<<< HEAD
     'notifications' => [
         'new_appointment' => 'New appointment scheduled at your studio',
         'appointment_cancelled' => 'An appointment has been cancelled',
@@ -525,6 +702,19 @@ return [
         'data_updated' => 'I dati dello studio sono stati aggiornati',
         'error_occurred' => 'Si è verificato un errore durante l\'operazione',
     ],
+=======
+
+    'notifications' => [
+        'new_appointment' => 'New appointment scheduled at your studio',
+        'appointment_cancelled' => 'An appointment has been cancelled',
+        'schedule_updated' => 'Studio schedule has been updated',
+        'capacity_warning' => 'Studio is approaching daily capacity limit',
+        'equipment_maintenance' => 'Equipment maintenance reminder',
+        'license_expiring' => 'Medical license expiring soon',
+        'insurance_update' => 'Insurance policy requires update',
+    ],
+
+>>>>>>> 8d591468 (fields translations)
     'empty_states' => [
         'no_studios' => 'No medical studios found',
         'no_doctors' => 'No doctors assigned to this studio',
@@ -532,6 +722,10 @@ return [
         'no_equipment' => 'No equipment registered',
         'no_specializations' => 'No specializations defined',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d591468 (fields translations)
     'tabs' => [
         'overview' => [
             'label' => 'Overview',
@@ -557,6 +751,7 @@ return [
             'label' => 'Reports',
             'description' => 'Performance and activity reports',
         ],
+<<<<<<< HEAD
         'general' => 'Informazioni Generali',
         'contact' => 'Contacts e Ubicazione',
         'services' => 'Servizi e Specializzazioni',
@@ -564,3 +759,7 @@ return [
         'documents' => 'Documenti e Certifications',
     ],
 ];
+=======
+    ],
+]; 
+>>>>>>> 8d591468 (fields translations)

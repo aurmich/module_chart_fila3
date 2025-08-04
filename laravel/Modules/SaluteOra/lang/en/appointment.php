@@ -1,20 +1,39 @@
 <?php
 
+<<<<<<< HEAD
 return [
     'name' => 'Appointments',
+=======
+declare(strict_types=1);
+
+return [
+    'name' => 'Appointments',
+    
+>>>>>>> 8d591468 (fields translations)
     'navigation' => [
         'label' => 'Appointment Calendar',
         'group' => 'Schedule',
         'icon' => 'heroicon-o-calendar-days',
         'color' => 'sky',
+<<<<<<< HEAD
         'sort' => '1',
         'tooltip' => 'View and manage all appointments and visits',
     ],
+=======
+        'sort' => 1,
+        'tooltip' => 'View and manage all appointments and visits',
+    ],
+
+>>>>>>> 8d591468 (fields translations)
     'model' => [
         'label' => 'Appointment',
         'plural' => 'Appointments',
         'description' => 'Management of medical appointments and visits',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d591468 (fields translations)
     'pages' => [
         'index' => [
             'title' => 'Appointments',
@@ -38,6 +57,7 @@ return [
             'description' => 'Create availability slots to allow patients to book appointments and manage existing appointments.',
         ],
     ],
+<<<<<<< HEAD
     'fields' => [
         'patient_id' => [
             'label' => 'Patient',
@@ -55,17 +75,33 @@ return [
             'label' => 'Studio',
             'placeholder' => 'Select the studio',
             'help' => 'Studio where the appointment will take place',
+=======
+
+    'fields' => [
+        'title' => [
+            'label' => 'Title',
+            'placeholder' => 'Enter a title for the appointment',
+            'helper_text' => '',
+        ],
+        'patient_id' => [
+            'label' => 'Patient',
+            'placeholder' => 'Select the patient',
+>>>>>>> 8d591468 (fields translations)
             'helper_text' => '',
         ],
         'doctor_id' => [
             'label' => 'Doctor',
             'placeholder' => 'Select the doctor',
+<<<<<<< HEAD
             'help' => 'Doctor who will hold the appointment',
+=======
+>>>>>>> 8d591468 (fields translations)
             'helper_text' => '',
         ],
         'dentist_id' => [
             'label' => 'Dentist',
             'placeholder' => 'Select the dentist',
+<<<<<<< HEAD
             'help' => 'Dentist responsible for the treatment',
             'helper_text' => '',
         ],
@@ -79,18 +115,41 @@ return [
             'label' => 'End Date and Time',
             'placeholder' => 'Select end date and time',
             'help' => 'When the appointment ends',
+=======
+            'helper_text' => '',
+        ],
+        'studio_id' => [
+            'label' => 'Studio',
+            'placeholder' => 'Select the studio',
+            'helper_text' => '',
+        ],
+        'start_time' => [
+            'label' => 'Start Time',
+            'placeholder' => 'Select the start time',
+            'helper_text' => '',
+        ],
+        'end_time' => [
+            'label' => 'End Time',
+            'placeholder' => 'Select the end time',
+>>>>>>> 8d591468 (fields translations)
             'helper_text' => '',
         ],
         'treatment_id' => [
             'label' => 'Treatment',
             'placeholder' => 'Select a treatment',
+<<<<<<< HEAD
             'help' => 'The type of treatment planned',
+=======
+>>>>>>> 8d591468 (fields translations)
             'helper_text' => '',
         ],
         'status' => [
             'label' => 'Status',
             'placeholder' => 'Select the status',
+<<<<<<< HEAD
             'help' => 'Current status of the appointment',
+=======
+>>>>>>> 8d591468 (fields translations)
             'helper_text' => '',
             'options' => [
                 'scheduled' => 'Scheduled',
@@ -103,7 +162,10 @@ return [
         'type' => [
             'label' => 'Appointment Type',
             'placeholder' => 'Select the type',
+<<<<<<< HEAD
             'help' => 'Type of medical appointment',
+=======
+>>>>>>> 8d591468 (fields translations)
             'helper_text' => '',
             'options' => [
                 'consultation' => 'Consultation',
@@ -116,34 +178,53 @@ return [
         'notes' => [
             'label' => 'Notes',
             'placeholder' => 'Enter any notes',
+<<<<<<< HEAD
             'help' => 'Additional information about the appointment',
+=======
+>>>>>>> 8d591468 (fields translations)
             'helper_text' => '',
         ],
         'reason' => [
             'label' => 'Reason',
             'placeholder' => 'Enter the reason for the appointment',
+<<<<<<< HEAD
             'help' => 'Main reason for the visit',
+=======
+>>>>>>> 8d591468 (fields translations)
             'helper_text' => '',
         ],
         'emergency' => [
             'label' => 'Emergency',
             'placeholder' => 'Indicate if this is an emergency',
+<<<<<<< HEAD
             'help' => 'Mark as emergency appointment',
+=======
+>>>>>>> 8d591468 (fields translations)
             'helper_text' => '',
         ],
         'eligibility_confirmed' => [
             'label' => 'Eligibility Confirmed',
             'placeholder' => 'Confirm eligibility',
+<<<<<<< HEAD
             'help' => 'Confirm that the patient is eligible for treatment',
+=======
+>>>>>>> 8d591468 (fields translations)
             'helper_text' => '',
         ],
         'created_at' => [
             'label' => 'Creation Date',
             'placeholder' => 'Appointment creation date',
+<<<<<<< HEAD
             'help' => 'When the appointment was created',
             'helper_text' => '',
         ],
     ],
+=======
+            'helper_text' => '',
+        ],
+    ],
+
+>>>>>>> 8d591468 (fields translations)
     'actions' => [
         'create' => [
             'label' => 'New Appointment',
@@ -214,6 +295,10 @@ return [
             'modal_description' => 'Explanation of colors and symbols used',
         ],
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d591468 (fields translations)
     'filters' => [
         'today' => [
             'label' => 'Today',
@@ -230,22 +315,35 @@ return [
         'by_status' => [
             'label' => 'By Status',
             'placeholder' => 'Filter by status',
+<<<<<<< HEAD
             'help' => 'Filter appointments by status',
+=======
+>>>>>>> 8d591468 (fields translations)
             'helper_text' => '',
         ],
         'by_doctor' => [
             'label' => 'By Doctor',
             'placeholder' => 'Select a doctor',
+<<<<<<< HEAD
             'help' => 'Filter by specific doctor',
+=======
+>>>>>>> 8d591468 (fields translations)
             'helper_text' => '',
         ],
         'by_date_range' => [
             'label' => 'By Date Range',
             'placeholder' => 'Select the range',
+<<<<<<< HEAD
             'help' => 'Filter by specific date period',
             'helper_text' => '',
         ],
     ],
+=======
+            'helper_text' => '',
+        ],
+    ],
+
+>>>>>>> 8d591468 (fields translations)
     'calendar' => [
         'title' => 'Appointment Calendar',
         'today' => 'Today',
@@ -259,6 +357,10 @@ return [
         'week_view' => 'Week View',
         'month_view' => 'Month View',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d591468 (fields translations)
     'availability' => [
         'title' => 'Availability',
         'add' => 'Add Availability',
@@ -268,6 +370,10 @@ return [
         'update_success' => 'Availability updated successfully',
         'delete_success' => 'Availability deleted successfully',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d591468 (fields translations)
     'legend' => [
         'description' => 'Legend of colors and icons used in the calendar.',
         'types' => 'Event Types',
@@ -288,6 +394,10 @@ return [
         'instruction_delete' => 'In the edit options, click \'Delete\' to remove an availability or unconfirmed appointment.',
         'instruction_approve' => 'To approve an appointment, change status from \'Pending\' to \'Confirmed\'.',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d591468 (fields translations)
     'notifications' => [
         'reminder' => [
             'title' => 'Appointment Reminder',
@@ -302,6 +412,10 @@ return [
             'body' => 'Your appointment with :doctor for :date has been cancelled',
         ],
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d591468 (fields translations)
     'messages' => [
         'created' => 'Appointment created successfully',
         'updated' => 'Appointment updated successfully',
@@ -319,6 +433,10 @@ return [
         'availability_deleted' => 'Availability deleted successfully',
         'appointment_updated' => 'Appointment updated successfully',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d591468 (fields translations)
     'validation' => [
         'required' => 'The :attribute field is required',
         'date' => 'The :attribute field must be a valid date',
@@ -328,11 +446,16 @@ return [
         'past_appointment' => 'Cannot create appointments in the past',
         'doctor_unavailable' => 'The doctor is not available at the selected time',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d591468 (fields translations)
     'empty_state' => [
         'heading' => 'No appointments found',
         'description' => 'There are no appointments for the selected criteria',
         'action' => 'Create the first appointment',
     ],
+<<<<<<< HEAD
     'states' => [
         'confirmed' => [
             'label' => 'Confirm',
@@ -471,4 +594,6 @@ return [
             'modal_description' => 'This appointment was provided as a free service.',
         ],
     ],
+=======
+>>>>>>> 8d591468 (fields translations)
 ];

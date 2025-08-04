@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 8d591468 (fields translations)
 return [
     'less_than_6_months' => 'Less than 6 months ago',
     '6_months_to_1_year' => '6 months to 1 year ago',
@@ -8,6 +13,10 @@ return [
     'more_than_5_years' => 'More than 5 years ago',
     'never' => 'Never had a dental visit',
     'dont_remember' => 'I don\'t remember',
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 8d591468 (fields translations)
     'descriptions' => [
         'less_than_6_months' => 'Recent dental care',
         '6_months_to_1_year' => 'Regular maintenance period',
@@ -17,11 +26,19 @@ return [
         'never' => 'First-time dental patient',
         'dont_remember' => 'Uncertain about timing',
     ],
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 8d591468 (fields translations)
     'labels' => [
         'question' => 'When was your last dental visit?',
         'help_text' => 'Select the time period that best matches your last professional dental appointment',
         'note' => 'This information helps us understand your dental care history',
     ],
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 8d591468 (fields translations)
     'recommendations' => [
         'less_than_6_months' => 'Excellent! You\'re maintaining regular dental care.',
         '6_months_to_1_year' => 'Good timing for your next checkup.',
@@ -31,6 +48,7 @@ return [
         'never' => 'Welcome! We\'ll provide a comprehensive first examination.',
         'dont_remember' => 'We\'ll help assess your current dental health needs.',
     ],
+<<<<<<< HEAD
     'within_1_year' => [
         'label' => 'Within 1 year',
         'color' => 'success',
@@ -68,3 +86,6 @@ return [
         'description' => 'First visit',
     ],
 ];
+=======
+]; 
+>>>>>>> 8d591468 (fields translations)

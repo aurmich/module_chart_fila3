@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8d591468 (fields translations)
 declare(strict_types=1);
 
 return [
@@ -22,6 +25,7 @@ return [
         ],
     ],
 ];
+<<<<<<< HEAD
 =======
 return array (
   'fields' => 
@@ -50,3 +54,5 @@ return array (
   ),
 );
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+>>>>>>> 8d591468 (fields translations)

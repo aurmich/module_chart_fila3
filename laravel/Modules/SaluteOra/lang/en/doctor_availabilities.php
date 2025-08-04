@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 return array (
   'actions' => 
   array (
@@ -20,3 +21,15 @@ return array (
     ),
   ),
 );
+=======
+declare(strict_types=1);
+
+return [
+    'actions' => [
+        'editSchedule' => [
+            'label' => 'Edit Availability',
+            'helper_text' => '',
+        ],
+    ],
+];
+>>>>>>> 8d591468 (fields translations)

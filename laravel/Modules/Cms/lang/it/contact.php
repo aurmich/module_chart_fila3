@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8d591468 (fields translations)
 declare(strict_types=1);
 
 return [
@@ -82,6 +85,7 @@ return [
         'saved' => 'Modifiche salvate correttamente',
     ],
 ];
+<<<<<<< HEAD
 =======
 return array (
   'fields' => 
@@ -131,3 +135,5 @@ return array (
   ),
 );
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 8d591468 (fields translations)

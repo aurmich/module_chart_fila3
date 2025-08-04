@@ -45,6 +45,7 @@ class CoolModulesServiceProvider extends PackageServiceProvider
         $this->app->afterResolving('filament', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $panels = Filament::getPanels();
            
             foreach ($panels as $panel) {
@@ -64,18 +65,28 @@ class CoolModulesServiceProvider extends PackageServiceProvider
 =======
 >>>>>>> 54f4fa16 (.)
             foreach (Filament::getPanels() as $panel) {
+=======
+            $panels=Filament::getPanels();
+           
+            foreach ($panels as $panel) {
+>>>>>>> 8d591468 (fields translations)
                 $id = Str::of($panel->getId());
                 if ($id->contains('::')) {
                     $title = $id->replace(['::', '-'], [' ', ' '])->title()->toString();
                     $panel
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+                   
+>>>>>>> 8d591468 (fields translations)
                         ->renderHook(
                             'panels::sidebar.nav.start',
                             fn () => new HtmlString("<h2 class='m-2 p-2 font-black text-xl'>$title</h2>"),
                         )
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                             
@@ -83,6 +94,9 @@ class CoolModulesServiceProvider extends PackageServiceProvider
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+                            
+>>>>>>> 8d591468 (fields translations)
                         ->renderHook(
                             'panels::sidebar.nav.end',
                             fn () => new HtmlString(

@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 8d591468 (fields translations)
 return [
     'steps' => [
         'personal_data_step' => [

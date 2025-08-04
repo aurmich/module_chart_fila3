@@ -2,6 +2,9 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8d591468 (fields translations)
 declare(strict_types=1);
 
 return [
@@ -249,6 +252,7 @@ return [
         'appointment_not_available' => 'L\'orario selezionato non è più disponibile',
     ],
 ];
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
@@ -709,3 +713,5 @@ return array (
   ),
 );
 >>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
+=======
+>>>>>>> 8d591468 (fields translations)

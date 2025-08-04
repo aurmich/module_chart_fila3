@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 8d591468 (fields translations)
 return [
     'state_transition' => [
         'invalid' => 'Cannot transition from state :from to state :to',
