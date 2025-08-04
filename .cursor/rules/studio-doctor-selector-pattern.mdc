@@ -3,10 +3,6 @@ description:
 globs:
 alwaysApply: false
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 513a7c7b (📝 (mdc files): add comprehensive documentation for various patterns to improve maintainability and consistency across modules)
 # Regola: StudioSelectorButtons Pattern - SaluteOra (DRY + KISS)
 
 ## Ambito
@@ -210,8 +206,3 @@ Ogni livello ha la sua responsabilità specifica, nessuna duplicazione.
 
 ## Ultimo aggiornamento
 2025-01-16 - Pattern DRY + KISS implementato
-<<<<<<< HEAD
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 513a7c7b (📝 (mdc files): add comprehensive documentation for various patterns to improve maintainability and consistency across modules)
