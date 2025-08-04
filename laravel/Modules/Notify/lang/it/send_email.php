@@ -38,6 +38,7 @@ return array (
       'description' => 'Destinatario',
       'placeholder' => 'Inserisci l\'indirizzo email',
       'label' => 'Destinatario',
+      'helper_text' => 'to',
     ),
     'content' => 
     array (
@@ -76,10 +77,17 @@ return array (
     ),
     'subject' => 
     array (
+<<<<<<< HEAD
       'description' => 'Oggetto email',
       'helper_text' => 'Inserisci l\'oggetto dell\'email',
       'label' => 'Oggetto',
       'placeholder' => 'subject',
+=======
+      'description' => 'subject',
+      'helper_text' => 'subject',
+      'placeholder' => 'subject',
+      'label' => 'subject',
+>>>>>>> c0c82b7e (- updated template email)
     ),
   ),
   'actions' => 
