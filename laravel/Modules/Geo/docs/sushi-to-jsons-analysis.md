@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi di SushiToJsons per il Modello Comune
 
 ## Panoramica
@@ -142,6 +143,58 @@ $comuni = Comune::where('regione->codice', '05')->get();
 L'adozione di `SushiToJsons` per il modello `Comune` offre vantaggi significativi in termini di flessibilità e funzionalità, pur introducendo una certa complessità. La decisione finale dovrebbe basarsi sui requisiti specifici del progetto e sulle risorse disponibili.
 
 Per progetti con dati geografici statici e requisiti di lettura intensivi, l'implementazione attuale potrebbe essere più appropriata. Per casi d'uso che richiedono maggiore flessibilità e capacità di modifica, `SushiToJsons` rappresenta una soluzione robusta e ben integrata con l'ecosistema Laravel.
+=======
+# Analisi di SushiToJsons per l'Implementazione di Comune
+
+## Overview del Trait SushiToJsons
+
+`SushiToJsons` è un trait personalizzato presente nel modulo Tenant che estende le funzionalità di Laravel Sushi, aggiungendo capacità di persistenza dei dati in file JSON individuali. Questo approccio rappresenta un'implementazione ibrida che combina:
+
+1. La potenza del query builder di Eloquent tramite Sushi
+2. Un sistema di persistenza basato su file JSON individuali
+3. Gestione automatizzata degli eventi del ciclo di vita del modello
+
+### Caratteristiche principali di SushiToJsons
+
+1. **Caricamento dati da file multipli**:
+   - Ogni record è memorizzato in un file JSON separato
+   - I file JSON sono organizzati in directory basate sul nome della tabella
+   - I dati vengono caricati e combinati in un unico array per Sushi
+
+2. **Persistenza automatica**:
+   - Hook su eventi Eloquent (creating, updating, deleting)
+   - Sincronizzazione automatica tra modello e file JSON
+   - Gestione di timestamps e campi di auditing (created_by, updated_by)
+
+3. **Gestione dello schema**:
+   - Utilizzo della proprietà `$schema` per definire la struttura dei dati
+   - Conversione automatica di array in JSON durante salvataggio/caricamento
+   - Validazione implicita tramite Assert
+
+## Confronto con l'Implementazione Attuale di Comune
+
+| Aspetto | Comune Attuale | SushiToJsons |
+|---------|---------------|--------------|
+| **Origine dati** | Singolo file JSON | File JSON multipli (uno per record) |
+| **Modificabilità** | Read-only | Read-write con persistenza |
+| **Struttura** | Caricamento in memoria tramite Collection | Database SQLite tramite Sushi |
+| **Performance** | Ottimizzata per lettura | Bilanciata tra lettura e scrittura |
+| **Auditing** | Non supportato | Supporto nativo per created_by/updated_by |
+
+## Applicabilità di SushiToJsons a Comune
+
+### Vantaggi dell'Utilizzo di SushiToJsons per Comune (65% favorevole)
+
+1. **Persistenza dei dati (95%)**:
+   - Possibilità di modificare i dati geografici tramite l'API Eloquent
+   - Salvataggio automatico in file JSON individuali
+   - Tracciamento delle modifiche tramite campi di auditing
+
+2. **API Eloquent completa (90%)**:
+   - Mantenimento di tutti i vantaggi di Sushi
+   - Supporto per query builder, relazioni, ecc.
+   - Possibilità di utilizzare scope e altre funzionalità Eloquent
+>>>>>>> 41d7473e (📝 (README.md): add documentation for static geographic data management strategies and recommendations for implementation)
 
 3. **Integrazione con il sistema esistente (85%)**:
    - Riutilizzo di codice già testato nel progetto
