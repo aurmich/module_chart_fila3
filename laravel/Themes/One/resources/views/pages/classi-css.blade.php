@@ -196,10 +196,14 @@
 <div class="hover:py-5">hover button register</div>
 <div class="hover:py-9">hoverrrrrrrrrrr</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
 <div class="flex-1">flex 1</div>
 <div class="h-[100px]">height 100px</div>
 <div class="lg:ml-5">large margin left</div>
 <div class="h-52">height 208 px</div>
+<<<<<<< HEAD
 <div class="lg:min-h-36">large footer height</div>
 <div class="left-[15%]">left 15%</div>
 <div class="right-[15%]">right 15%</div>
@@ -416,3 +420,7 @@
 =======
 </x-layouts.app>
 >>>>>>> f7d3ce4f (- update landing-page;)
+=======
+<div class=""></div>
+</x-layouts.app>
+>>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)

@@ -128,7 +128,8 @@ new class extends Component
 >>>>>>> 15cb84fb (fix collisions)
 =======
     @volt('register')
-    <div style="padding: 20px; background-image: url('/img/background-filigrana-chiaro.png'); background-size: cover; background-position: center">
+    <!-- background-image: url('/img/background-filigrana-chiaro.png'); background-size: cover; background-position: center -->
+    <div class="bg-[#E6EBF7] p-5">
     <div class="register-container">
 <<<<<<< HEAD
 <<<<<<< HEAD

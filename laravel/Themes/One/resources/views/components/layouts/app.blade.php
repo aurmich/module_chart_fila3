@@ -42,8 +42,9 @@
 <x-layouts.main :is-landing="$isLanding ?? false">
 >>>>>>> f7d3ce4f (- update landing-page;)
     <x-section slug="header" />
-
-    {{ $slot }}
+    <div class="flex-1">
+        {{ $slot }}
+    </div>
 
 <<<<<<< HEAD
 <<<<<<< HEAD

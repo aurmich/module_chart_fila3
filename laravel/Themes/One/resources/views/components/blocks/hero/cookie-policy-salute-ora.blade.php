@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div>
 <<<<<<< HEAD
 <div class="w-full flex justify-start">
@@ -27,3 +28,6 @@
 =======
 <!-- /it/auth/password/reset -->
 >>>>>>> aurmich/dev
+=======
+<div class="bg-[#E6EBF7]">Cookie Policy</div>
+>>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)

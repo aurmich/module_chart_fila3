@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 
 
@@ -42,6 +43,9 @@
 <div class="bg-[#E6EBF7]">
  <div>   
 >>>>>>> f7d3ce4f (- update landing-page;)
+=======
+<div class="bg-[#E6EBF7]"> 
+>>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
      <div class="w-full flex justify-start p-6">
          {{-- DA AGGIORNARE URL --}}
          <a href="/it">
@@ -64,10 +68,14 @@
      
      <div class="w-full flex flex-col justify-center items-center my-9 px-6">
 <<<<<<< HEAD
+<<<<<<< HEAD
      <div class="bg-[#DDE5EB] w-full lg:w-2/4 flex flex-row items-center justify-between p-5 rounded-[15px]">
 =======
      <div class="bg-[#C6E6CE] w-full lg:w-2/4 flex flex-row items-center justify-between p-5 rounded-[15px]">
 >>>>>>> f7d3ce4f (- update landing-page;)
+=======
+     <div class="bg-[#DDE5EB] w-full lg:w-2/4 flex flex-row items-center justify-between p-5 rounded-[15px]">
+>>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
              <div>
                  <span class="text-[#3E783E] text-lg">Mara Rossi</span>
                  <div>
@@ -123,6 +131,7 @@
             </div>
              </div>
     </div>
+<<<<<<< HEAD
     <div class="bg-[#C6E6CE] w-full lg:w-2/4 flex flex-row items-center justify-between p-5 mt-5 rounded-[15px]">
              <div>
                  <span class="text-[#3E783E] text-lg">Mara Rossi</span>
@@ -276,3 +285,7 @@
 =======
 </div>
 >>>>>>> f7d3ce4f (- update landing-page;)
+=======
+
+     </div>
+>>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)

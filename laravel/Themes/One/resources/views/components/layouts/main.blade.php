@@ -118,6 +118,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <body class="min-h-screen flex flex-col bg-[#E6EBF7]">
 =======
     <body class="min-h-screen antialiased bg-white dark:bg-gradient-to-b dark:from-gray-950 dark:to-gray-900">
@@ -125,6 +126,9 @@
 =======
     <body class="min-h-screen antialiased bg-white dark:bg-gradient-to-b dark:from-gray-950 dark:to-gray-900">
 >>>>>>> ff138484 (- update dettaglio paziente)
+=======
+    <body class="min-h-screen flex flex-col bg-[#E6EBF7]">
+>>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
         {{ $slot }}
         {{--
 =======

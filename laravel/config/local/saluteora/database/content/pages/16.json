@@ -4,10 +4,14 @@
         "it": "Cookie Policy - Gestione Cookie e Tracciamento"
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
     "slug": "16",
 =======
     "slug": "cookie-policy",
 >>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
+=======
+    "slug": "16",
+>>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
     "content": null,
     "content_blocks": {
         "it": [

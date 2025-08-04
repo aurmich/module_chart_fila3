@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="flex flex-col justify-center items-center">
 
     <!-- Back Button -->
@@ -217,3 +218,6 @@
 
     </div>
 </div>
+=======
+<div class="bg-[#E6EBF7]">FAQ'S</div>
+>>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)

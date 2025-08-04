@@ -59,8 +59,12 @@
     'x-data' => "{ mobileMenuOpen: false }"
     ]) }}>
     <div class="!m-0 !p-0 w-full">
+<<<<<<< HEAD
         <div class="flex h-16 items-center justify-between">
 >>>>>>> 54f4fa16 (.)
+=======
+        <div class="flex h-16 items-center justify-between px-5">
+>>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
             @foreach($componentsBlocks as $block)
                 @include($block->view,$block->data)
             @endforeach

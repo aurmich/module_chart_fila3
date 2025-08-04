@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div>
 <<<<<<< HEAD
 <div class="w-full flex justify-start">
@@ -22,3 +23,6 @@
     </div>
 
 </div>
+=======
+<div class="bg-[#E6EBF7]">Privacy Policy</div>
+>>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)

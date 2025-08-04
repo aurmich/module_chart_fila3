@@ -25,6 +25,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     class="flex items-start bg-[#E6EBF7] relative overflow-hidden">
 >>>>>>> aurmich/dev
     <div class="w-full px-4 sm:px-6 lg:px-8 pt-12">
@@ -563,22 +564,24 @@
     class="flex items-start bg-[#E6EBF7] relative overflow-hidden"
 >>>>>>> 6a8817e6 (- creata pagina dettaglio dottore)
     aria-labelledby="hero-heading">
+=======
+    class="flex items-start bg-[#E6EBF7] relative overflow-hidden">
+>>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
     <div class="w-full px-4 sm:px-6 lg:px-8 pt-12">
         <div>
-            <div class="w-full flex justify-evenly gap-8">
+            <div class="w-full flex flex-col-reverse lg:flex-row justify-evenly gap-8">
                 <div class="flex justify-center">
                     <div class="h-full flex flex-col items-start justify-center">
-                    <h1 
-                        id="hero-heading"
+                    <h1
                         class="text-[#272C4D] text-4xl tracking-tight font-extrabold sm:text-5xl lg:text-5xl text-center">
                         {{ $title }}
                     </h1>
-                    <span class="text-lg mt-4">In questa pagina puoi gestire comodamente tutti i tuoi appuntamenti.</span>
+                    <span class="text-lg mt-4 text-center lg:text-left">In questa pagina puoi gestire comodamente tutti i tuoi appuntamenti.</span>
                     </div>
 
                 </div>
              
-                <div>
+                <div class="flex justify-center">
                     <img class="w-64" src="/img/dottore-avatar-DETTAGLIO.png"/>
                 </div>
             </div>
