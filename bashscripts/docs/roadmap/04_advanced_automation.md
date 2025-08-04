@@ -13,14 +13,7 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # 🔄 Fase 4: Automazione Avanzata
 
 ## 📋 Panoramica
@@ -141,14 +134,7 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 ### Q4 2024
 - Deployment produzione
 - Monitoraggio
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # 🔄 Fase 4: Automazione Avanzata
 
 ## 📋 Panoramica
@@ -269,14 +255,7 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 ### Q4 2024
 - Deployment produzione
 - Monitoraggio
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # 🔄 Fase 4: Automazione Avanzata
 
 ## 📋 Panoramica
@@ -400,22 +379,9 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
-<<<<<<< HEAD
 
 aurmich/dev
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 15cb84fb (fix collisions)
-
-aurmich/dev
-
-=======
-aurmich/dev
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # 🔄 Fase 4: Automazione Avanzata
 
 ## 📋 Panoramica
@@ -536,14 +502,7 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 ### Q4 2024
 - Deployment produzione
 - Monitoraggio
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # 🔄 Fase 4: Automazione Avanzata
 
 ## 📋 Panoramica
@@ -669,22 +628,9 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 
 
  43df3e0 (.)
-<<<<<<< HEAD
 
 aurmich/dev
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 15cb84fb (fix collisions)
-
-aurmich/dev
-
-=======
-aurmich/dev
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # 🔄 Fase 4: Automazione Avanzata
 
 ## 📋 Panoramica
@@ -1222,18 +1168,7 @@ Questa fase si concentra sull'implementazione di funzionalità di automazione av
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (4 linee vs 1)[0m
 - Ottimizzazione finale 
  43df3e0 (.)
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> 15cb84fb (fix collisions)
->>>>>>> aurmich/dev
 aurmich/dev
 
 ## Collegamenti tra versioni di 04_advanced_automation.md

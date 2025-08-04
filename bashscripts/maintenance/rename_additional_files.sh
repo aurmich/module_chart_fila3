@@ -4,13 +4,6 @@
 
 # Array dei file da rinominare
 files=(
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 281fd24d (add scripts)
->>>>>>> aurmich/dev
   "/var/www/html/YOUR_PROJECT/laravel/Modules/Activity/CHANGELOG.md"
   "/var/www/html/base_project/laravel/Modules/Chart/.github/CONTRIBUTING.md"
   "/var/www/html/base_project/laravel/Modules/Notify/app/Datas/NetfunSMSMessage.php"
@@ -23,26 +16,6 @@ files=(
   "/var/www/html/base_project/laravel/Themes/One/docs/JSON_CONTENT.md"
   "/var/www/html/base_project/laravel/Themes/One/docs/LINKS.md"
   "/var/www/html/base_project/laravel/Themes/One/docs/THEME.md"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-  "/var/www/html/base_saluteora/laravel/Modules/Activity/CHANGELOG.md"
-  "/var/www/html/base_saluteora/laravel/Modules/Chart/.github/CONTRIBUTING.md"
-  "/var/www/html/base_saluteora/laravel/Modules/Notify/app/Datas/NetfunSMSMessage.php"
-  "/var/www/html/base_saluteora/laravel/Modules/Xot/CHANGELOG.md"
-  "/var/www/html/base_saluteora/laravel/Themes/One/docs/ASSETS.md"
-  "/var/www/html/base_saluteora/laravel/Themes/One/docs/AUTH.md"
-  "/var/www/html/base_saluteora/laravel/Themes/One/docs/BUILD_ERRORS.md"
-  "/var/www/html/base_saluteora/laravel/Themes/One/docs/COMPONENTS.md"
-  "/var/www/html/base_saluteora/laravel/Themes/One/docs/FILAMENT_COMPONENTS.md"
-  "/var/www/html/base_saluteora/laravel/Themes/One/docs/JSON_CONTENT.md"
-  "/var/www/html/base_saluteora/laravel/Themes/One/docs/LINKS.md"
-  "/var/www/html/base_saluteora/laravel/Themes/One/docs/THEME.md"
->>>>>>> 35e9b7ea (feat(scripts): add script to rename files to lowercase while preserving README.md case for consistency and organization)
-=======
->>>>>>> 281fd24d (add scripts)
->>>>>>> aurmich/dev
 )
 
 # Rinomina i file in minuscolo

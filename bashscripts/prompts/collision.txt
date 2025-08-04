@@ -1,59 +1,24 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 # Guida per la Risoluzione dei Conflitti Git - Laraxot
 
 ## Obiettivo
 Risolvere tutti i conflitti Git presenti nel progetto mediante analisi manuale approfondita, aggiornamento della documentazione e implementazione di soluzioni coerenti con l'architettura Laraxot.
-<<<<<<< HEAD
-=======
-=======
-# Guida per la Risoluzione dei Conflitti Git
-
-## Obiettivo
-Risolvere tutti i conflitti Git presenti nel progetto mediante analisi manuale approfondita, aggiornamento della documentazione e implementazione di soluzioni coerenti con l'architettura del progetto.
->>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
->>>>>>> aurmich/dev
 
 ## Principi Fondamentali
 - **Analisi manuale obbligatoria**: Ogni conflitto deve essere analizzato e risolto manualmente
 - **NO automazione cieca**: Vietato l'uso di risoluzioni automatiche o script di automazione
 - **Qualità PHPStan**: Tutti i file PHP devono essere compatibili con PHPStan livello 10
 - **Documentazione completa**: Aggiornare sempre la documentazione correlata
-<<<<<<< HEAD
 - **Convenzioni naming**: Tutti i file e cartelle in docs/ devono essere in minuscolo (eccetto README.md)
-=======
-<<<<<<< HEAD
-- **Convenzioni naming**: Tutti i file e cartelle in docs/ devono essere in minuscolo (eccetto README.md)
-=======
->>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
->>>>>>> aurmich/dev
 
 ## Workflow Sistematico
 
 ### 1. Identificazione e Prioritizzazione
 ```bash
 # Trova tutti i file con conflitti Git
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 git status --porcelain | grep "^UU\|^AA\|^DD"
 
 # Lista dettagliata dei conflitti
 git diff --name-only --diff-filter=U
-<<<<<<< HEAD
-=======
-=======
-find . -type f -exec grep -l "<<<<<<< HEAD\|======\|>>>>>>> " {} \;
->>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
->>>>>>> aurmich/dev
 ```
 
 **Criteri di priorità:**
@@ -79,15 +44,7 @@ Per ogni file conflittuale:
 
 **c) Valutazione dell'impatto:**
 - Impatto sulla funzionalità esistente
-<<<<<<< HEAD
 - Compatibilità con l'architettura Laraxot
-=======
-<<<<<<< HEAD
-- Compatibilità con l'architettura Laraxot
-=======
-- Compatibilità con l'architettura del progetto
->>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
->>>>>>> aurmich/dev
 - Effetti sui moduli dipendenti
 
 ### 3. Risoluzione del Conflitto
@@ -97,27 +54,13 @@ Per ogni file conflittuale:
 - Seguire PSR-12 per lo stile del codice
 - Verificare type hints e return types
 - Controllare documentazione PHPDoc
-<<<<<<< HEAD
 - Utilizzare `declare(strict_types=1);`
-=======
-<<<<<<< HEAD
-- Utilizzare `declare(strict_types=1);`
-=======
->>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
->>>>>>> aurmich/dev
 
 **Per file Markdown (.md):**
 - Mantenere entrambe le versioni quando possibile
 - Unire i contenuti in modo logico
 - Preservare i backlink esistenti
-<<<<<<< HEAD
 - Rispettare convenzioni naming (minuscolo)
-=======
-<<<<<<< HEAD
-- Rispettare convenzioni naming (minuscolo)
-=======
->>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
->>>>>>> aurmich/dev
 
 **Per file di configurazione:**
 - Privilegiare le configurazioni più recenti
@@ -161,35 +104,14 @@ Per ogni file conflittuale:
 ### Conflitto in file PHP:
 ```php
 // PRIMA (conflitto)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
->>>>>>> aurmich/dev
 public function getUserData(): array
 {
     return $this->user->toArray();
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
->>>>>>> aurmich/dev
 public function getUserData(): ?UserData
 {
     return $this->user ? UserData::from($this->user) : null;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> feature/user-data
->>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
->>>>>>> aurmich/dev
 
 // DOPO (risolto)
 /**
@@ -249,24 +171,10 @@ Al termine del processo, fornire:
 ### Identificazione conflitti
 ```bash
 # Trova file con conflitti Git
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 git status --porcelain | grep "^UU\|^AA\|^DD"
 
 # Lista file con conflitti per tipo
 git diff --name-only --diff-filter=U
-<<<<<<< HEAD
-=======
-=======
-grep -r "<<<<<<< HEAD" . --include="*.php" --include="*.md" --include="*.json"
-
-# Lista file con conflitti per tipo
-find . -name "*.php" -exec grep -l "<<<<<<< HEAD\|======\|>>>>>>> " {} \;
-find . -name "*.md" -exec grep -l "<<<<<<< HEAD\|======\|>>>>>>> " {} \;
->>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
->>>>>>> aurmich/dev
 ```
 
 ### Verifica PHPStan
@@ -311,21 +219,8 @@ composer dump-autoload
 ### Conflitto in Service Provider:
 ```php
 // PRIMA (conflitto)
-<<<<<<< HEAD
 public string $name = 'predict';
 public string $name = 'Predict';
-=======
-<<<<<<< HEAD
-public string $name = 'predict';
-public string $name = 'Predict';
-=======
-<<<<<<< HEAD
-public string $name = 'predict';
-=======
-public string $name = 'Predict';
->>>>>>> feature/module-name
->>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
->>>>>>> aurmich/dev
 
 // DOPO (risolto seguendo convenzioni)
 public string $name = 'Predict'; // PascalCase per nome modulo
@@ -334,26 +229,10 @@ public string $name = 'Predict'; // PascalCase per nome modulo
 ### Conflitto in Resource Filament:
 ```php
 // PRIMA (conflitto)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 use Filament\Resources\Resource;
 class PredictResource extends Resource
 use Modules\Xot\Filament\Resources\XotBaseResource;
 class PredictResource extends XotBaseResource
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-use Filament\Resources\Resource;
-class PredictResource extends Resource
-=======
-use Modules\Xot\Filament\Resources\XotBaseResource;
-class PredictResource extends XotBaseResource
->>>>>>> feature/xot-base
->>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
->>>>>>> aurmich/dev
 
 // DOPO (risolto seguendo regole progetto)
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -364,28 +243,11 @@ class PredictResource extends XotBaseResource // Sempre estendere XotBase
 ### Conflitto in traduzione:
 ```php
 // PRIMA (conflitto in lang file)
-<<<<<<< HEAD
 'title' => 'Titolo',
-=======
-<<<<<<< HEAD
-'title' => 'Titolo',
-=======
-<<<<<<< HEAD
-'title' => 'Titolo',
-=======
->>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
->>>>>>> aurmich/dev
 'title' => [
     'label' => 'Titolo',
     'placeholder' => 'Inserisci titolo'
 ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> feature/structured-translations
->>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
->>>>>>> aurmich/dev
 
 // DOPO (risolto con struttura completa)
 'title' => [
@@ -401,10 +263,6 @@ class PredictResource extends XotBaseResource // Sempre estendere XotBase
 - **Model Inheritance**: Non ridichiarare trait già presenti nei parent
 - **Translation System**: Usare chiavi strutturate, evitare label() espliciti
 - **PHPStan**: Mirare sempre al livello 10 per tutto il codice PHP
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 - **Documentation Naming**: Tutti i file e cartelle in docs/ in minuscolo (eccetto README.md)
 
 ## Regole Critiche per Progetti Laraxot
@@ -431,33 +289,3 @@ class PredictResource extends XotBaseResource // Sempre estendere XotBase
 - **Sostenibilità**: Prevenire debito tecnico e mantenere longevità del codice
 - **Trasparenza**: Documentare ogni decisione tecnica importante
 - **Responsabilità**: Rispettare i confini e le responsabilità dei moduli
-<<<<<<< HEAD
-=======
-=======
-Trova tutti i file contenenti git collision partendo dalla root del progetto. Analizza ciascun file con conflitti dando priorità in base all'impatto funzionale. Studia attentamente le differenze tra le versioni in conflitto per comprenderne lo scopo e il contesto. Ogni conflitto deve essere analizzato e risolto manualmente con ragionamento: non è ammesso l'uso di risoluzioni automatiche né la generazione di script per l'automazione. Per ogni file identifica la cartella "docs" più vicina, leggila e aggiornala con informazioni relative agli obiettivi funzionali e alle decisioni architetturali, evitando dettagli implementativi. Aggiorna anche la cartella "docs" principale nella root del progetto creando collegamenti bidirezionali tra la documentazione locale e quella globale, includendo anche le altre documentazioni eventualmente interessate. Nella cartella "laravel/Modules" ogni sottocartella è un modulo indipendente con proprio "composer.json", namespace, autoload, cartella "app" per le classi e documentazione dedicata. Mantieni aggiornate le relazioni tra la documentazione del modulo e quella principale tramite backlink bidirezionali. Dopo aver aggiornato tutta la documentazione, implementa manualmente una correzione coerente con lo stile e l'architettura del progetto. Durante la scansione della documentazione assicurati che ogni file ".md" abbia almeno due collegamenti in ingresso provenienti da altri file ".md". Se mancano, crea i backlink più significativi in base al contenuto e al contesto. Procedi in modo sistematico e continuo ma senza alcuna automazione cieca. Al termine fornisci un riepilogo con i file corretti, la documentazione aggiornata, i backlink creati, gli impatti rilevati e le motivazioni delle scelte adottate. Si devi sistemare e migliorare tutti i files che hanno collisioni, quando tocchi un file devi sempre farlo pensandolo per phpstan a livello 10.
->>>>>>> 54f4fa16 (.)
-=======
-Trova tutti i file contenenti git collision partendo dalla root del progetto. Analizza ciascun file con conflitti dando priorità in base all'impatto funzionale. Studia attentamente le differenze tra le versioni in conflitto per comprenderne lo scopo e il contesto. Ogni conflitto deve essere analizzato e risolto manualmente con ragionamento: non è ammesso l'uso di risoluzioni automatiche né la generazione di script per l'automazione. Per ogni file identifica la cartella "docs" più vicina, leggila e aggiornala con informazioni relative agli obiettivi funzionali e alle decisioni architetturali, evitando dettagli implementativi. Aggiorna anche la cartella "docs" principale nella root del progetto creando collegamenti bidirezionali tra la documentazione locale e quella globale, includendo anche le altre documentazioni eventualmente interessate. Nella cartella "laravel/Modules" ogni sottocartella è un modulo indipendente con proprio "composer.json", namespace, autoload, cartella "app" per le classi e documentazione dedicata. Mantieni aggiornate le relazioni tra la documentazione del modulo e quella principale tramite backlink bidirezionali. Dopo aver aggiornato tutta la documentazione, implementa manualmente una correzione coerente con lo stile e l'architettura del progetto. Durante la scansione della documentazione assicurati che ogni file ".md" abbia almeno due collegamenti in ingresso provenienti da altri file ".md". Se mancano, crea i backlink più significativi in base al contenuto e al contesto. Procedi in modo sistematico e continuo ma senza alcuna automazione cieca. Al termine fornisci un riepilogo con i file corretti, la documentazione aggiornata, i backlink creati, gli impatti rilevati e le motivazioni delle scelte adottate. Si devi sistemare e migliorare tutti i files che hanno collisioni, quando tocchi un file devi sempre farlo pensandolo per phpstan a livello 10.parti immediatamente, scegli te la priorità e non fermarti finchè non hai finito di correggere tutte le collisioni, e continua in modo sistematico.
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
-Trova tutti i file contenenti git collision partendo dalla root del progetto. Analizza ciascun file con conflitti dando priorità in base all'impatto funzionale. Studia attentamente le differenze tra le versioni in conflitto per comprenderne lo scopo e il contesto. Ogni conflitto deve essere analizzato e risolto manualmente con ragionamento: non è ammesso l'uso di risoluzioni automatiche né la generazione di script per l'automazione. Per ogni file identifica la cartella "docs" più vicina, leggila e aggiornala con informazioni relative agli obiettivi funzionali e alle decisioni architetturali, evitando dettagli implementativi. Aggiorna anche la cartella "docs" principale nella root del progetto creando collegamenti bidirezionali tra la documentazione locale e quella globale, includendo anche le altre documentazioni eventualmente interessate. Nella cartella "laravel/Modules" ogni sottocartella è un modulo indipendente con proprio "composer.json", namespace, autoload, cartella "app" per le classi e documentazione dedicata. Mantieni aggiornate le relazioni tra la documentazione del modulo e quella principale tramite backlink bidirezionali. Dopo aver aggiornato tutta la documentazione, implementa manualmente una correzione coerente con lo stile e l'architettura del progetto. Durante la scansione della documentazione assicurati che ogni file ".md" abbia almeno due collegamenti in ingresso provenienti da altri file ".md". Se mancano, crea i backlink più significativi in base al contenuto e al contesto. Procedi in modo sistematico e continuo ma senza alcuna automazione cieca. Al termine fornisci un riepilogo con i file corretti, la documentazione aggiornata, i backlink creati, gli impatti rilevati e le motivazioni delle scelte adottate. Si devi sistemare e migliorare tutti i files che hanno collisioni, quando tocchi un file devi sempre farlo pensandolo per phpstan a livello 10.parti immediatamente, scegli te la priorità e non fermarti finchè non hai finito di correggere tutte le collisioni, e continua in modo sistematico.Please remember ___ @Memory . Prima di correggere un errore, comprendi la causa, aggiorna la documentazione nella cartella docs più vicina all'errore (esclusa la cartella docs della root), crea collegamenti bidirezionali ai file della cartella docs principale, studia approfonditamente le cartelle docs coinvolte prima di implementare qualsiasi correzione; procedi con le correzioni secondo un ordine di priorità che ritieni opportuno; ricorda che il namespace corretto è Modules<nome modulo>\Filament e non Modules<nome modulo>\App\Filament anche quando lavori nella cartella laravel/Modules/<nome modulo>/app/Filament; utilizza i file di traduzione del modulo dentro Modules/<nome modulo>/lang/<lingua> anziché ->label(); le regole generali vanno documentate nella cartella docs del modulo Xot con collegamenti bidirezionali dagli altri moduli; gli elementi frontend vanno nel modulo Cms; ogni modulo ha uno scopo specifico; aggiorna continuamente la tua comprensione delle cartelle docs, delle regole e delle memorie; quando modifichi file, progettali pensando che dovranno superare controlli di qualità elevati in futuro; segui i principi DRY (Don't Repeat Yourself) e KISS (Keep It Simple, Stupid); considera sempre le implicazioni di politica, filosofia, religione e zen nelle tue soluzioni; quando trovi un errore, correggi tutti i file che contengono lo stesso problema. Non estendiamo mai classi filament direttamente, estendiamo sempre una classe astratta con lo stesso nome ma con il prefisso XotBase , rispettiamo anche la struttura del namespace di filament che per esempio se una classe estendeva \Filament\Resources\Pages\Page  ora estenderà Modules\Xot\Filament\Resources\Pages\XotBasePage. non usiamo ->label( perche' tramite langserviceprovider utilizziamo direttamente i files di traduzioni all'interno del modulo, chi estende XotBaseResource non vuole getTableColumn ne getTableFilters ne getBulkActions ne table e se getPages restituisce solo index,create,edit o index,create,edit,view togliamo anche il metodo getPages, se in un form la select ha degli options che sono un array, passare agli enum, il namespace non e' Modules\<nome>\App\  ma e' Modules\<nome>\, i metodi getFormSchema,getTableActions,getTableColumns,getTableFilters,getTableBulkActions restituiscono sempre un array associativo in cui le chiavi sono stringhe, devi ragionare sul perche' , capire il tuo errore, aggiornare/studiare le cartelle docs coinvolte, aggiorna le tue rules, le tue memories, .windsurf/rules, .cursor/rules, .cursor/memories, fa tutto il possibile per non fare mai piu' questo errore, e poi implementa correzione, dopo correggi sempre gli altri file che hanno lo stesso errore. questa correzzione devi capire il perche' devi analizzare in quale punto del codice viene fatto, documentare il tutto nelle cartelle docs coinvolte, creare aggiornare i files .mdc, ti ricordo che i files .mdc vanno dentro .windsurf/rules  e dentro .cursor/rules questi percordi dalla root del progetto, aggiornare tutto quello che serve per cursor , per windsurf e per te per ricordare e poi correggi. le classi che estendono \Filament\Resources\Pages\ListRecords devono ora estendere \Modules\Xot\Filament\Resources\Pages\XotBaseListRecords, le classi che estendevano \Filament\Resources\Pages\ListRecords  ora estendono \Modules\Xot\Filament\Resources\Pages\XotBaseListRecords , non XotBasePage, ti ricordo che protected $casts e' deprecato, e' deprecato anche protected $dates , dentro le cartelle docs i files e le sottocartelle non devono contenere caratteri maiuscoli ad eccezzione di README.md
-
-
->>>>>>> 2099645a (.)
-=======
-Trova tutti i file contenenti git collision partendo dalla root del progetto. Analizza ciascun file con conflitti dando priorità in base all'impatto funzionale. Studia attentamente le differenze tra le versioni in conflitto per comprenderne lo scopo e il contesto. Ogni conflitto deve essere analizzato e risolto manualmente con ragionamento: non è ammesso l'uso di risoluzioni automatiche né la generazione di script per l'automazione. Per ogni file identifica la cartella "docs" più vicina, leggila e aggiornala con informazioni relative agli obiettivi funzionali e alle decisioni architetturali, evitando dettagli implementativi. Aggiorna anche la cartella "docs" principale nella root del progetto creando collegamenti bidirezionali tra la documentazione locale e quella globale, includendo anche le altre documentazioni eventualmente interessate. Nella cartella "laravel/Modules" ogni sottocartella è un modulo indipendente con proprio "composer.json", namespace, autoload, cartella "app" per le classi e documentazione dedicata. Mantieni aggiornate le relazioni tra la documentazione del modulo e quella principale tramite backlink bidirezionali. Dopo aver aggiornato tutta la documentazione, implementa manualmente una correzione coerente con lo stile e l'architettura del progetto. Durante la scansione della documentazione assicurati che ogni file ".md" abbia almeno due collegamenti in ingresso provenienti da altri file ".md". Se mancano, crea i backlink più significativi in base al contenuto e al contesto. Procedi in modo sistematico e continuo ma senza alcuna automazione cieca. Al termine fornisci un riepilogo con i file corretti, la documentazione aggiornata, i backlink creati, gli impatti rilevati e le motivazioni delle scelte adottate. Si devi sistemare e migliorare tutti i files che hanno collisioni, quando tocchi un file devi sempre farlo pensandolo per phpstan a livello 10.
-=======
-Trova tutti i file contenenti git collision partendo dalla root del progetto. Analizza ciascun file con conflitti dando priorità in base all’impatto funzionale. Studia attentamente le differenze tra le versioni in conflitto per comprenderne lo scopo e il contesto. Ogni conflitto deve essere analizzato e risolto manualmente con ragionamento: non è ammesso l’uso di risoluzioni automatiche né la generazione di script per l’automazione. Per ogni file identifica la cartella "docs" più vicina, leggila e aggiornala con informazioni relative agli obiettivi funzionali e alle decisioni architetturali, evitando dettagli implementativi. Aggiorna anche la cartella "docs" principale nella root del progetto creando collegamenti bidirezionali tra la documentazione locale e quella globale, includendo anche le altre documentazioni eventualmente interessate. Nella cartella "laravel/Modules" ogni sottocartella è un modulo indipendente con proprio "composer.json", namespace, autoload, cartella "app" per le classi e documentazione dedicata. Mantieni aggiornate le relazioni tra la documentazione del modulo e quella principale tramite backlink bidirezionali. Dopo aver aggiornato tutta la documentazione, implementa manualmente una correzione coerente con lo stile e l’architettura del progetto. Durante la scansione della documentazione assicurati che ogni file ".md" abbia almeno due collegamenti in ingresso provenienti da altri file ".md". Se mancano, crea i backlink più significativi in base al contenuto e al contesto. Procedi in modo sistematico e continuo ma senza alcuna automazione cieca. Al termine fornisci un riepilogo con i file corretti, la documentazione aggiornata, i backlink creati, gli impatti rilevati e le motivazioni delle scelte adottate. se ci sono collisioni tra i file .md scegli la versione entrambi. 
->>>>>>> d83fe8da (.)
->>>>>>> 15cb84fb (fix collisions)
-=======
-Trova tutti i file contenenti git collision partendo dalla root del progetto. Analizza ciascun file con conflitti dando priorità in base all'impatto funzionale. Studia attentamente le differenze tra le versioni in conflitto per comprenderne lo scopo e il contesto. Ogni conflitto deve essere analizzato e risolto manualmente con ragionamento: non è ammesso l'uso di risoluzioni automatiche né la generazione di script per l'automazione. Per ogni file identifica la cartella "docs" più vicina, leggila e aggiornala con informazioni relative agli obiettivi funzionali e alle decisioni architetturali, evitando dettagli implementativi. Aggiorna anche la cartella "docs" principale nella root del progetto creando collegamenti bidirezionali tra la documentazione locale e quella globale, includendo anche le altre documentazioni eventualmente interessate. Nella cartella "laravel/Modules" ogni sottocartella è un modulo indipendente con proprio "composer.json", namespace, autoload, cartella "app" per le classi e documentazione dedicata. Mantieni aggiornate le relazioni tra la documentazione del modulo e quella principale tramite backlink bidirezionali. Dopo aver aggiornato tutta la documentazione, implementa manualmente una correzione coerente con lo stile e l'architettura del progetto. Durante la scansione della documentazione assicurati che ogni file ".md" abbia almeno due collegamenti in ingresso provenienti da altri file ".md". Se mancano, crea i backlink più significativi in base al contenuto e al contesto. Procedi in modo sistematico e continuo ma senza alcuna automazione cieca. Al termine fornisci un riepilogo con i file corretti, la documentazione aggiornata, i backlink creati, gli impatti rilevati e le motivazioni delle scelte adottate. Si devi sistemare e migliorare tutti i files che hanno collisioni, quando tocchi un file devi sempre farlo pensandolo per phpstan a livello 10.
-Trova tutti i file contenenti git collision partendo dalla root del progetto. Analizza ciascun file con conflitti dando priorità in base all’impatto funzionale. Studia attentamente le differenze tra le versioni in conflitto per comprenderne lo scopo e il contesto. Ogni conflitto deve essere analizzato e risolto manualmente con ragionamento: non è ammesso l’uso di risoluzioni automatiche né la generazione di script per l’automazione. Per ogni file identifica la cartella "docs" più vicina, leggila e aggiornala con informazioni relative agli obiettivi funzionali e alle decisioni architetturali, evitando dettagli implementativi. Aggiorna anche la cartella "docs" principale nella root del progetto creando collegamenti bidirezionali tra la documentazione locale e quella globale, includendo anche le altre documentazioni eventualmente interessate. Nella cartella "laravel/Modules" ogni sottocartella è un modulo indipendente con proprio "composer.json", namespace, autoload, cartella "app" per le classi e documentazione dedicata. Mantieni aggiornate le relazioni tra la documentazione del modulo e quella principale tramite backlink bidirezionali. Dopo aver aggiornato tutta la documentazione, implementa manualmente una correzione coerente con lo stile e l’architettura del progetto. Durante la scansione della documentazione assicurati che ogni file ".md" abbia almeno due collegamenti in ingresso provenienti da altri file ".md". Se mancano, crea i backlink più significativi in base al contenuto e al contesto. Procedi in modo sistematico e continuo ma senza alcuna automazione cieca. Al termine fornisci un riepilogo con i file corretti, la documentazione aggiornata, i backlink creati, gli impatti rilevati e le motivazioni delle scelte adottate. se ci sono collisioni tra i file .md scegli la versione entrambi.
->>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
-=======
-
-
-Dentro le cartelle docs , i files e le sottocartelle non devono contenere caratteri maiuscoli ad eccezzione di README.md
-Procedi a risolvere tutti i conflitti git nei file PHP rilevati, uno dopo l’altro, senza chiedere nulla e senza fermarmi !
->>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
->>>>>>> aurmich/dev

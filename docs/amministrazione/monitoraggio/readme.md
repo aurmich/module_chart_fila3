@@ -105,14 +105,7 @@ return [
 
 ### Prometheus
 ```yaml
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> bead9c28 (fix case)
->>>>>>> aurmich/dev
 # prometheus.yml
 global:
   scrape_interval: 15s
@@ -155,14 +148,7 @@ $errorRate = Error::whereDate('created_at', today())->count();
 
 ### Regole
 ```yaml
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> bead9c28 (fix case)
->>>>>>> aurmich/dev
 # alertmanager.yml
 groups:
   - name: laravel
@@ -235,14 +221,7 @@ $notification = new SlackNotification([
 
 ### Logs
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> bead9c28 (fix case)
->>>>>>> aurmich/dev
 # Rotazione logs
 logrotate /etc/logrotate.d/laravel
 
@@ -252,28 +231,14 @@ find /var/www/html/saluteora/storage/logs -type f -mtime +30 -delete
 
 ### Cache
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> bead9c28 (fix case)
->>>>>>> aurmich/dev
 # Pulizia cache
 php artisan cache:clear
 php artisan config:clear
 php artisan route:clear
 php artisan view:clear
 ``` 
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> bead9c28 (fix case)
->>>>>>> aurmich/dev
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)

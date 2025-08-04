@@ -7,14 +7,7 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -140,14 +133,7 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 ### Q4 2025
 - Deployment produzione
 - Monitoraggio continuo
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -273,14 +259,7 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 ### Q4 2025
 - Deployment produzione
 - Monitoraggio continuo
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -408,32 +387,14 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 - Monitoraggio continuo
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
 Questa fase si concentra sul miglioramento della sicurezza del sistema attraverso l'implementazione di funzionalità avanzate di protezione e monitoraggio.
  43df3e0 (.)
 
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> 15cb84fb (fix collisions)
->>>>>>> aurmich/dev
 ## 🎯 Funzionalità Future
 
 ### 1. Verifica Dipendenze
@@ -557,14 +518,7 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 
 
 aurmich/dev
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -690,14 +644,7 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 ### Q4 2025
 - Deployment produzione
 - Monitoraggio continuo
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -823,14 +770,7 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 ### Q4 2025
 - Deployment produzione
 - Monitoraggio continuo
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -1117,18 +1057,7 @@ aurmich/dev
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (4 linee vs 1)[0m
 - Aggiornamenti 
  43df3e0 (.)
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> 15cb84fb (fix collisions)
->>>>>>> aurmich/dev
 aurmich/dev
 
 ## Collegamenti tra versioni di 05_security.md

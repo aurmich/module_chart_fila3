@@ -1,19 +1,7 @@
 #!/bin/bash
 
 # Script per analizzare funzioni specifiche nei moduli
-<<<<<<< HEAD
 # - getTableColumns
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# - getTableColumns
-=======
-# - getListTableColumns
->>>>>>> 54f4fa16 (.)
-=======
-# - getTableColumns
->>>>>>> 15cb84fb (fix collisions)
->>>>>>> aurmich/dev
 # - getTableActions
 # - getTableBulkActions
 # - funzioni di MetatagData
@@ -36,11 +24,6 @@ Data: $(date +"%Y-%m-%d %H:%M:%S")
 
 Questo documento contiene un'analisi dettagliata di funzioni specifiche presenti nei moduli.
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 ## 1. Funzioni getTableColumns, getTableActions e getTableBulkActions
 
 Queste funzioni devono restituire array con chiavi stringa. Di seguito sono riportati i risultati dell'analisi.
@@ -49,44 +32,12 @@ Queste funzioni devono restituire array con chiavi stringa. Di seguito sono ripo
 
 \`\`\`
 $(grep -r "function getTableColumns" laravel/Modules --include="*.php" | sort)
-<<<<<<< HEAD
-=======
-=======
-## 1. Funzioni getListTableColumns, getTableActions e getTableBulkActions
-=======
-## 1. Funzioni getTableColumns, getTableActions e getTableBulkActions
->>>>>>> 15cb84fb (fix collisions)
-
-Queste funzioni devono restituire array con chiavi stringa. Di seguito sono riportati i risultati dell'analisi.
-
-### getTableColumns
-
-\`\`\`
-<<<<<<< HEAD
-$(grep -r "function getListTableColumns" laravel/Modules --include="*.php" | sort)
->>>>>>> 54f4fa16 (.)
-=======
-$(grep -r "function getTableColumns" laravel/Modules --include="*.php" | sort)
->>>>>>> 15cb84fb (fix collisions)
->>>>>>> aurmich/dev
 \`\`\`
 
 #### Implementazioni che potrebbero non restituire array con chiavi stringa:
 
 \`\`\`
-<<<<<<< HEAD
 $(grep -rA 10 "function getTableColumns" laravel/Modules --include="*.php" | grep -v "string" | grep "=>")
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-$(grep -rA 10 "function getTableColumns" laravel/Modules --include="*.php" | grep -v "string" | grep "=>")
-=======
-$(grep -rA 10 "function getListTableColumns" laravel/Modules --include="*.php" | grep -v "string" | grep "=>")
->>>>>>> 54f4fa16 (.)
-=======
-$(grep -rA 10 "function getTableColumns" laravel/Modules --include="*.php" | grep -v "string" | grep "=>")
->>>>>>> 15cb84fb (fix collisions)
->>>>>>> aurmich/dev
 \`\`\`
 
 ### getTableActions
@@ -138,19 +89,7 @@ $(grep -r "get[A-Z][a-zA-Z]*(" laravel/Modules --include="*.php" | grep "metatag
 
 ## Raccomandazioni
 
-<<<<<<< HEAD
 ### Per le funzioni getTableColumns, getTableActions, getTableBulkActions:
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-### Per le funzioni getTableColumns, getTableActions, getTableBulkActions:
-=======
-### Per le funzioni getListTableColumns, getTableActions, getTableBulkActions:
->>>>>>> 54f4fa16 (.)
-=======
-### Per le funzioni getTableColumns, getTableActions, getTableBulkActions:
->>>>>>> 15cb84fb (fix collisions)
->>>>>>> aurmich/dev
 
 1. Assicurarsi che tutte le implementazioni restituiscano array con chiavi stringa
 2. Aggiungere annotazioni PHPDoc per specificare i tipi di ritorno

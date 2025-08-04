@@ -41,14 +41,7 @@ echo "=== Environment and Dependencies Check ==="
 # Sistema e versioni
 echo "Controllo ambiente..."
 cat > reports/environment_info.md << EOF
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 # Environment Information
 
 ## Sistema
@@ -83,14 +76,7 @@ echo "=== Module Structure Analysis ==="
 
 echo "Analisi struttura moduli..."
 cat > reports/module_structure_analysis.md << 'EOF'
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 # Module Structure Analysis
 
 ## Moduli Esistenti
@@ -198,14 +184,7 @@ echo "Esecuzione Documentation Sync..."
 echo "=== Generating Health Score ==="
 
 cat > reports/health_score.md << 'EOF'
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 # Project Health Score
 
 Data generazione: $(date)
@@ -394,14 +373,7 @@ fi
 echo "=== Generating Action Plan ==="
 
 cat > reports/action_plan.md << 'EOF'
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 # Action Plan - Piano di Miglioramento
 
 Basato sui risultati del Project Health Check.
@@ -519,14 +491,7 @@ echo '```' >> reports/action_plan.md
 echo "=== Creating Project Dashboard ==="
 
 cat > reports/project_dashboard.md << 'EOF'
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 # 🏥 Laraxot Project Health Dashboard
 
 *Ultimo aggiornamento: $(date)*
@@ -698,14 +663,7 @@ echo "✨ Per migliorare il progetto, seguire l'Action Plan in reports/action_pl
 
 ### Scheduling
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 # Aggiungi al crontab per controlli giornalieri
 0 6 * * * /path/to/project/.windsurf/workflows/project-health-check.md
 ```
@@ -735,10 +693,3 @@ jobs:
 - [Provider Validation Workflow](provider-validation.md)
 - [Code Quality Check Workflow](code-quality-check.md)
 - [Naming Convention Audit Workflow](naming-convention-audit.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Documentation Sync Workflow](documentation-sync.md)
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev

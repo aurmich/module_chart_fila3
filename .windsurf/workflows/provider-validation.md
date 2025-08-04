@@ -41,14 +41,7 @@ find laravel/Modules -name "*ServiceProvider.php" -type f
 
 ### 2. Check ServiceProvider Extensions
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 # Controlla che non estendano direttamente ServiceProvider Laravel
 grep -r "extends ServiceProvider" laravel/Modules/*/app/Providers/ --include="*ServiceProvider.php" | grep -v "XotBase"
 
@@ -58,14 +51,7 @@ grep -r "extends XotBaseServiceProvider" laravel/Modules/*/app/Providers/ --incl
 
 ### 3. Check RouteServiceProvider Extensions
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 # Controlla che non estendano direttamente RouteServiceProvider Laravel
 grep -r "extends RouteServiceProvider" laravel/Modules/*/app/Providers/ --include="RouteServiceProvider.php" | grep -v "XotBase"
 
@@ -75,14 +61,7 @@ grep -r "extends XotBaseRouteServiceProvider" laravel/Modules/*/app/Providers/ -
 
 ### 4. Check EventServiceProvider Extensions
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 # Controlla che non estendano direttamente EventServiceProvider Laravel
 grep -r "extends EventServiceProvider" laravel/Modules/*/app/Providers/ --include="EventServiceProvider.php" | grep -v "XotBase"
 
@@ -92,14 +71,7 @@ grep -r "extends XotBaseEventServiceProvider" laravel/Modules/*/app/Providers/ -
 
 ### 5. Check Forbidden $namespace Property
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 # Controlla la proprietà $namespace vietata (causa errori in Laravel 12+)
 grep -r "protected.*\$namespace" laravel/Modules/*/app/Providers/RouteServiceProvider.php
 grep -r "public.*\$namespace" laravel/Modules/*/app/Providers/RouteServiceProvider.php
@@ -107,14 +79,7 @@ grep -r "public.*\$namespace" laravel/Modules/*/app/Providers/RouteServiceProvid
 
 ### 6. Check Required Properties
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 # Controlla presenza proprietà $name pubblica
 grep -r "public.*\$name" laravel/Modules/*/app/Providers/ --include="*ServiceProvider.php"
 
@@ -124,14 +89,7 @@ grep -r "public.*\$nameLower" laravel/Modules/*/app/Providers/ --include="*Servi
 
 ### 7. Check Parent Calls
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 # Controlla che boot() chiami parent::boot()
 grep -A 5 "public function boot" laravel/Modules/*/app/Providers/ --include="*ServiceProvider.php" | grep "parent::boot"
 
@@ -141,42 +99,21 @@ grep -A 5 "public function register" laravel/Modules/*/app/Providers/ --include=
 
 ### 8. Check declare(strict_types=1)
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 # Controlla presenza di declare(strict_types=1)
 head -n 5 laravel/Modules/*/app/Providers/*.php | grep "declare(strict_types=1)"
 ```
 
 ### 9. Check Namespace Consistency
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 # Controlla namespace corretti (senza segmento 'app')
 grep -r "namespace.*App" laravel/Modules/*/app/Providers/ --include="*.php"
 ```
 
 ### 10. Generate Validation Report
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 # Crea report di validazione
 echo "# Provider Validation Report" > provider_validation_report.md
 echo "Data: $(date)" >> provider_validation_report.md
@@ -270,14 +207,7 @@ cat provider_validation_report.md
 
 ### Fix ServiceProvider Extension
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 # Trova e correggi provider che estendono ServiceProvider Laravel
 for file in $(grep -l "extends ServiceProvider" laravel/Modules/*/app/Providers/*ServiceProvider.php | grep -v "XotBase"); do
     sed -i 's/extends ServiceProvider/extends XotBaseServiceProvider/g' "$file"
@@ -287,14 +217,7 @@ done
 
 ### Fix RouteServiceProvider Extension
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 # Trova e correggi RouteServiceProvider che estendono Laravel
 for file in $(grep -l "extends RouteServiceProvider" laravel/Modules/*/app/Providers/RouteServiceProvider.php | grep -v "XotBase"); do
     sed -i 's/extends RouteServiceProvider/extends XotBaseRouteServiceProvider/g' "$file"
@@ -304,14 +227,7 @@ done
 
 ### Remove $namespace Property
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 # Rimuovi proprietà $namespace vietata
 for file in laravel/Modules/*/app/Providers/RouteServiceProvider.php; do
     sed -i '/protected.*\$namespace/d' "$file"
@@ -325,10 +241,3 @@ done
 - [Provider XotBase Philosophy](../rules/provider_xotbase_philosophy.mdc)
 - [Laravel 12 Best Practices](../rules/laravel12.mdc)
 - [Naming Conventions](../rules/naming_conventions.mdc)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [Documentation Standards](../rules/documentation_standards.mdc)
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev

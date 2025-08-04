@@ -65,11 +65,7 @@
 - **Media** - [README](../laravel/Modules/Media/docs/README.md) | [PHPStan](../laravel/Modules/Media/docs/phpstan/README.md)
 - **Notify** - [README](../laravel/Modules/Notify/docs/README.md) | [System](notifications-system.md)
 - **Reporting** - [README](../laravel/Modules/Reporting/docs/README.md)
-<<<<<<< HEAD
 - **UI** - [README](../laravel/Modules/UI/docs/README.md) | [Components](../laravel/Modules/UI/docs/components/README.md) | [TableLayoutEnum](ui-table-layout-enum.md) | [Enum Translation Pattern](enum-translation-pattern.md)
-=======
-- **UI** - [README](../laravel/Modules/UI/docs/README.md) | [Components](../laravel/Modules/UI/docs/components/README.md)
->>>>>>> aurmich/dev
 
 ## 📊 Progettazione e Standards
 
@@ -95,10 +91,7 @@
 - 📝 [Standards](standards.md) - Standard di codice
 - 🏷️ [Convenzioni Naming](convenzioni-naming-campi.md) - Naming conventions
 - 🚨 [Struttura Moduli e Namespace](STRUTTURA_MODULI_NAMESPACE.md) - **CRITICO: Regole namespace**
-<<<<<<< HEAD
 - ⚠️ [Prevenzione Errori Critici](critical-errors-prevention.md) - **CRITICO: Errori da evitare**
-=======
->>>>>>> aurmich/dev
 
 ### Pattern e Architettura
 - 🎯 [Queueable Actions](queueable-action.md) - Pattern preferito

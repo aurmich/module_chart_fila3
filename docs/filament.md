@@ -66,10 +66,6 @@ https://polodev.github.io/tuts/2018/11/05/nearby-location-using-latitude-and-lon
 
 https://github.com/geocoder-php/GeocoderLaravel
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 # Integrazione Filament nel Modulo Geo
 
 ## AddressResource: regole, filosofia e best practice
@@ -160,8 +156,3 @@ Modules/Geo/app/Filament/Resources/
 - **Religione**: "Non avrai altro path all'infuori del relativo".
 - **Zen**: Serenità nella navigazione, nessun errore di path, nessun link rotto dopo un refactor.
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
->>>>>>> aurmich/dev

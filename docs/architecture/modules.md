@@ -126,14 +126,7 @@ public function getTableActions(): array
 
 Nella documentazione root (`docs/gestione-pazienti.md`):
 ```markdown
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Gestione Pazienti
 
 Per dettagli tecnici, vedere la [documentazione del modulo Patient](../laravel/Modules/Patient/docs/README.md).
@@ -141,14 +134,7 @@ Per dettagli tecnici, vedere la [documentazione del modulo Patient](../laravel/M
 
 Nella documentazione del modulo (`laravel/Modules/Patient/docs/README.md`):
 ```markdown
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Modulo Patient
 
 Questo modulo implementa la gestione dei pazienti come descritto nella [documentazione generale](../../../../docs/gestione-pazienti.md).

@@ -366,14 +366,7 @@ Forms\Components\Select::make('day')
 
 ### Esempi
 ```markdown
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Titolo
 
 ## Descrizione
@@ -445,7 +438,6 @@ enum WeekDay: string
     case SATURDAY = 'saturday';
     case SUNDAY = 'sunday';
 
-<<<<<<< HEAD
     public function getLabel(): string
     {
         return $this->transClass(self::class, $this->value.'.label');
@@ -468,29 +460,12 @@ enum WeekDay: string
             self::TUESDAY->value => self::TUESDAY->getLabel(),
             // ... altri giorni
         ];
-=======
-    public function label(): string
-    {
-        return trans("core::fields.day.options.{$this->value}");
-    }
-
-    public static function options(): array
-    {
-        return array_combine(
-            array_column(self::cases(), 'value'),
-            array_map(fn($case) => $case->label(), self::cases())
-        );
->>>>>>> aurmich/dev
     }
 }
 
 // Uso in Filament
 Forms\Components\Select::make('day')
-<<<<<<< HEAD
     ->options(WeekDay::getOptions())
-=======
-    ->options(WeekDay::options())
->>>>>>> aurmich/dev
 ```
 
 ### Variante con Carbon per localizzazione dinamica
@@ -532,7 +507,6 @@ enum DayOfWeek: string
     case SATURDAY = 'saturday';
     case SUNDAY = 'sunday';
 
-<<<<<<< HEAD
     public function getLabel(): string
     {
         return $this->transClass(self::class, $this->value.'.label');
@@ -555,19 +529,6 @@ enum DayOfWeek: string
             self::TUESDAY->value => self::TUESDAY->getLabel(),
             // ... altri giorni
         ];
-=======
-    public function label(): string
-    {
-        return trans("xot::fields.day.options.{$this->value}");
-    }
-
-    public static function options(): array
-    {
-        return array_combine(
-            array_column(self::cases(), 'value'),
-            array_map(fn($case) => $case->label(), self::cases())
-        );
->>>>>>> aurmich/dev
     }
 }
 

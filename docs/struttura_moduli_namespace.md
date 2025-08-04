@@ -147,28 +147,14 @@ NAMESPACE:          Modules\[Modulo]\[Cartella]
 
 ### Verificare un namespace
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
 # Trova tutti i file con namespace errati
 grep -r "namespace Modules.*App\\\\" /var/www/html/_bases/base_saluteora/laravel/Modules/
 ```
 
 ### Correggere un namespace
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
 # Esempio: correggere namespace nel modulo Geo
 find /var/www/html/_bases/base_saluteora/laravel/Modules/Geo -name "*.php" -exec sed -i 's/namespace Modules\\Geo\\App\\/namespace Modules\\Geo\\/g' {} \;
 ```

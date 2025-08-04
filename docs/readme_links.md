@@ -72,18 +72,5 @@
 
 ## Contribuire
 Per contribuire alla documentazione, seguire le [Linee Guida](linee-guida-documentazione.md) e le [Regole dei Collegamenti](regole_collegamenti_documentazione.md). 
-<<<<<<< HEAD
 
 - [Documentazione modulo Tenant](../laravel/Modules/Tenant/docs/README.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-- [Documentazione modulo Tenant](../laravel/Modules/Tenant/docs/README.md)
-=======
->>>>>>> 9df8f556 (fix .md)
-=======
-
-- [Documentazione modulo Tenant](../laravel/Modules/Tenant/docs/README.md)
->>>>>>> 7440f060 (delete duplicate folder + add .md)
->>>>>>> aurmich/dev

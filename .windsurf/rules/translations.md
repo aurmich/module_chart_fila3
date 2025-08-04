@@ -376,13 +376,6 @@ class LangServiceProvider extends ServiceProvider
 - [ ] UI
 - [ ] Performance
 - [ ] Copertura
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 29015705 (docs)
 
 ## REGOLA CRITICA: Struttura Directory Auth Laravel
 
@@ -505,11 +498,3 @@ Widget di autenticazione usano SEMPRE il tema:
 3. ❌ Non distinguere tra widget auth e funzionali
 4. ❌ Cambiare namespace senza consultare l'utente
 5. ❌ Assumere che "sempre namespace modulo" sia corretto
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
-=======
->>>>>>> 29015705 (docs)

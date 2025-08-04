@@ -20,14 +20,7 @@ Questo documento contiene la documentazione dettagliata dei comandi utilizzati p
 
 ### Verifica Requisiti
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Verifica versione PHP
 php -v
 
@@ -89,14 +82,7 @@ sudo add-apt-repository ppa:ondrej/php
 
 ### Configurazione File .env
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Naviga nella directory del progetto
 cd laravel
 
@@ -124,23 +110,7 @@ php artisan key:generate
 - Dopo la generazione della chiave, verificare che sia stata aggiunta al file .env
 - Se necessario, configurare manualmente altre variabili d'ambiente:
   ```ini
-<<<<<<< HEAD
   APP_NAME=<nome progetto>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  APP_NAME=<nome progetto>
-=======
-
-  APP_NAME=<nome progetto>
-
-  APP_NAME=<nome progetto>
- 80ec88ee9 (.)
->>>>>>> 54f4fa16 (.)
-=======
-  APP_NAME=<nome progetto>
->>>>>>> 15cb84fb (fix collisions)
->>>>>>> aurmich/dev
   APP_ENV=local
   APP_DEBUG=true
   APP_URL=http://localhost
@@ -399,14 +369,7 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 
 ### Configurazione Tema Powerlevel10k
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Modifica il file ~/.zshrc
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
@@ -543,14 +506,7 @@ sudo apt-get install --install-recommends webmin usermin
 
 ### Aggiornamento Composer e Dipendenze
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Naviga nella directory del progetto
 cd laravel
 
@@ -848,11 +804,6 @@ sudo pecl install redis
 
 ## Configurazione Database
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 ### Creazione Database MySQL
 ```bash
 mysql -u root -p
@@ -860,35 +811,10 @@ CREATE DATABASE nome_database CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 CREATE USER 'nome_utente'@'localhost' IDENTIFIED BY 'password_sicura';
 GRANT ALL PRIVILEGES ON nome_database.* TO 'nome_utente'@'localhost';
 FLUSH PRIVILEGES;
-<<<<<<< HEAD
-=======
-=======
-### Creazione Database SQLite
-=======
-### Creazione Database MySQL
->>>>>>> 15cb84fb (fix collisions)
-```bash
-mysql -u root -p
-CREATE DATABASE nome_database CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-CREATE USER 'nome_utente'@'localhost' IDENTIFIED BY 'password_sicura';
-GRANT ALL PRIVILEGES ON nome_database.* TO 'nome_utente'@'localhost';
-FLUSH PRIVILEGES;
-<<<<<<< HEAD
-
-# Esci
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 15cb84fb (fix collisions)
->>>>>>> aurmich/dev
 EXIT;
 ```
 
 **Spiegazione:**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 - Crea un nuovo database e un utente dedicato con privilegi completi
 - Utilizza la codifica utf8mb4 per il massimo supporto Unicode
 
@@ -903,385 +829,9 @@ EXIT;
 - Documentare ogni personalizzazione
 - Monitorare costantemente le performance del server
 - Aggiornare regolarmente sistema e dipendenze
-<<<<<<< HEAD
-=======
-=======
-- Crea un nuovo database per il progetto Laravel
-- Configura un utente dedicato con i permessi necessari
-- Imposta il charset e la collation corretti
-=======
-- Crea un nuovo database e un utente dedicato con privilegi completi
-- Utilizza la codifica utf8mb4 per il massimo supporto Unicode
->>>>>>> 15cb84fb (fix collisions)
-
-**Note:**
-- Sostituire `nome_database`, `nome_utente` e `password_sicura` con valori reali
-- Conservare le credenziali in modo sicuro
-
-## Note e Consigli
-
-<<<<<<< HEAD
-### Sicurezza
-- Utilizzare sempre password complesse
-- Limitare i permessi degli utenti al minimo necessario
-- Mantenere il sistema aggiornato
-- Configurare il firewall (UFW)
-- Utilizzare HTTPS
-
-### Performance
-- Configurare la cache di OPcache
-- Ottimizzare le query del database
-- Utilizzare un CDN per i file statici
-- Implementare la cache a livello di applicazione
-- Monitorare le risorse del server
-
-### Manutenzione
-- Eseguire backup regolari
-- Monitorare i log
-- Aggiornare regolarmente le dipendenze
-- Testare le modifiche in ambiente di sviluppo
-- Documentare le configurazioni
-
-### Troubleshooting
-- Controllare i log di Apache e PHP
-- Verificare i permessi dei file
-- Testare la connessione al database
-- Controllare la configurazione di PHP
->>>>>>> 54f4fa16 (.)
-=======
-- Eseguire sempre backup prima di modifiche critiche
-- Utilizzare ambienti di test per provare nuove configurazioni
-- Documentare ogni personalizzazione
-- Monitorare costantemente le performance del server
-- Aggiornare regolarmente sistema e dipendenze
->>>>>>> 15cb84fb (fix collisions)
->>>>>>> aurmich/dev
 
 ## Conclusioni
 
 Questo documento fornisce una guida completa per il setup di un ambiente di sviluppo Laravel. Seguire attentamente le istruzioni e verificare ogni passaggio per garantire un'installazione corretta e sicura.
 
 Per ulteriori informazioni, consultare la [documentazione ufficiale di Laravel](https://laravel.com/docs).
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-*In attesa dei comandi per documentare...*
-
-## Ottimizzazione PHP
-
-### Configurazione php.ini
-```ini
-memory_limit = 256M
-upload_max_filesize = 64M
-post_max_size = 64M
-max_execution_time = 300
-max_input_time = 300
-error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT
-display_errors = Off
-log_errors = On
-error_log = /var/log/php/error.log
-session.gc_maxlifetime = 1440
-opcache.enable = 1
-opcache.memory_consumption = 128
-opcache.interned_strings_buffer = 8
-opcache.max_accelerated_files = 4000
-opcache.revalidate_freq = 60
-opcache.fast_shutdown = 1
-opcache.enable_cli = 1
-```
-
-### Installazione Redis
-```bash
-sudo apt install redis-server
-sudo systemctl enable redis-server
-sudo systemctl start redis-server
-```
-
-### Configurazione Redis
-```ini
-# /etc/redis/redis.conf
-maxmemory 256mb
-maxmemory-policy allkeys-lru
-```
-
-## Ottimizzazione Apache
-
-### Configurazione Virtual Host
-```apache
-<VirtualHost *:80>
-    ServerName project.local
-    DocumentRoot /var/www/html/project/public
-    
-    <Directory /var/www/html/project/public>
-        AllowOverride All
-        Require all granted
-    </Directory>
-
-    ErrorLog ${APACHE_LOG_DIR}/project-error.log
-    CustomLog ${APACHE_LOG_DIR}/project-access.log combined
-</VirtualHost>
-```
-
-### Configurazione Performance
-```apache
-# /etc/apache2/mods-available/mpm_prefork.conf
-<IfModule mpm_prefork_module>
-    StartServers 5
-    MinSpareServers 5
-    MaxSpareServers 10
-    MaxRequestWorkers 150
-    MaxConnectionsPerChild 0
-</IfModule>
-```
-
-### Gestione Moduli Apache
-```bash
-# Disabilita il modulo PHP 8.2
-sudo a2dismod php8.2
-
-# Abilita il modulo PHP 8.3
-sudo a2enmod php8.3
-
-# Abilita il modulo rewrite
-sudo a2enmod rewrite
-```
-
-**Spiegazione:**
-- Gestisce i moduli Apache necessari per il progetto
-- `a2dismod`: Disabilita un modulo Apache
-- `a2enmod`: Abilita un modulo Apache
-- `rewrite`: Necessario per le regole di riscrittura URL in Laravel
-
-**Moduli Gestiti:**
-- **PHP 8.2:**
-  - Disabilitato per evitare conflitti
-  - Rimuove il supporto per PHP 8.2
-
-- **PHP 8.3:**
-  - Abilitato come versione principale
-  - Fornisce il supporto per PHP 8.3
-
-- **Rewrite:**
-  - Abilitato per il routing di Laravel
-  - Necessario per le regole .htaccess
-  - Abilita la riscrittura degli URL
-
-**Note:**
-- Richiede privilegi di root (sudo)
-- Dopo le modifiche, riavviare Apache:
-  ```bash
-  sudo systemctl restart apache2
-  ```
-- Verificare i moduli attivi:
-  ```bash
-  sudo apache2ctl -M
-  ```
-- In caso di problemi, verificare i log:
-  ```bash
-  sudo tail -f /var/log/apache2/error.log
-  ```
-
-## Ottimizzazione MySQL
-
-### Configurazione my.cnf
-```ini
-[mysqld]
-innodb_buffer_pool_size = 1G
-innodb_log_file_size = 256M
-innodb_flush_log_at_trx_commit = 2
-innodb_flush_method = O_DIRECT
-max_connections = 151
-query_cache_size = 64M
-query_cache_limit = 2M
-thread_cache_size = 8
-table_open_cache = 2000
-```
-
-## Sicurezza
-
-### Configurazione Firewall
-```bash
-sudo ufw default deny incoming
-sudo ufw default allow outgoing
-sudo ufw allow ssh
-sudo ufw allow http
-sudo ufw allow https
-sudo ufw enable
-```
-
-### Installazione Fail2ban
-```bash
-sudo apt install fail2ban
-sudo systemctl enable fail2ban
-sudo systemctl start fail2ban
-```
-
-## Monitoraggio
-
-### Installazione Monitor Tools
-```bash
-sudo apt install htop iotop iftop
-```
-
-### Configurazione Log Rotation
-```bash
-sudo nano /etc/logrotate.d/project
-```
-
-```ini
-/var/www/html/project/storage/logs/*.log {
-    daily
-    missingok
-    rotate 14
-    compress
-    delaycompress
-    notifempty
-    create 0640 www-data www-data
-    sharedscripts
-    postrotate
-        if [ -f /var/run/php-fpm/php-fpm.pid ]; then
-            kill -USR1 `cat /var/run/php-fpm/php-fpm.pid`
-        fi
-    endscript
-}
-```
-
-## Laravel Specific
-
-### Configurazione Queue Workers
-```bash
-sudo nano /etc/supervisor/conf.d/project-worker.conf
-```
-
-```ini
-[program:project-worker]
-process_name=%(program_name)s_%(process_num)02d
-command=php /var/www/html/project/artisan queue:work --sleep=3 --tries=3
-autostart=true
-autorestart=true
-user=www-data
-numprocs=2
-redirect_stderr=true
-stdout_logfile=/var/www/html/project/storage/logs/worker.log
-```
-
-### Configurazione Scheduler
-```bash
-sudo crontab -e
-```
-
-```bash
-* * * * * cd /var/www/html/project && php artisan schedule:run >> /dev/null 2>&1
-```
-
-### Creazione Utente Filament
-```bash
-php artisan make:filament-user
-```
-
-**Spiegazione:**
-- Crea un nuovo utente amministratore per il pannello Filament
-- Interattivo: richiede email, nome e password
-- L'utente creato avrà accesso completo al pannello di amministrazione
-
-**Funzionalità:**
-- Creazione utente amministratore
-- Configurazione credenziali di accesso
-- Assegnazione ruolo super admin
-- Accesso al pannello Filament
-
-**Note:**
-- Eseguire il comando nella directory del progetto Laravel
-- Assicurarsi che Filament sia installato correttamente
-- Verificare che il database sia configurato e accessibile
-- Dopo la creazione, accedere al pannello con le credenziali fornite
-- Se necessario, modificare i permessi dell'utente:
-  ```bash
-  php artisan permission:create-role admin
-  php artisan permission:assign-role admin
-  ```
-- In caso di problemi, verificare i log:
-  ```bash
-  tail -f storage/logs/laravel.log
-  ```
-
-### Creazione Super Admin
-```bash
-php artisan user:super-admin
-```
-
-**Spiegazione:**
-- Crea un nuovo utente con privilegi di super amministratore
-- Interattivo: richiede email, nome e password
-- L'utente creato avrà accesso completo a tutte le funzionalità del sistema
-
-**Funzionalità:**
-- Creazione utente super admin
-- Configurazione credenziali di accesso
-- Assegnazione ruolo super admin
-- Accesso completo al sistema
-- Gestione di tutti i permessi
-
-**Note:**
-- Eseguire il comando nella directory del progetto Laravel
-- Assicurarsi che il database sia configurato e accessibile
-- Dopo la creazione, accedere al sistema con le credenziali fornite
-- Se necessario, verificare i permessi dell'utente:
-  ```bash
-  php artisan permission:show
-  ```
-- In caso di problemi, verificare i log:
-  ```bash
-  tail -f storage/logs/laravel.log
-  ```
-- Per rimuovere i privilegi di super admin:
-  ```bash
-  php artisan user:remove-super-admin
-  ```
-
-### Assegnazione Moduli Utente
-```bash
-php artisan user:assign-module
-```
-
-**Spiegazione:**
-- Assegna moduli specifici a un utente esistente
-- Interattivo: richiede l'email dell'utente e i moduli da assegnare
-- Permette di gestire l'accesso ai diversi moduli del sistema
-
-**Funzionalità:**
-- Assegnazione moduli a utenti
-- Gestione accessi per modulo
-- Configurazione permessi specifici
-- Gestione ruoli per modulo
-
-**Note:**
-- Eseguire il comando nella directory del progetto Laravel
-- Assicurarsi che l'utente esista nel sistema
-- Verificare che i moduli siano installati correttamente
-- Dopo l'assegnazione, verificare i permessi:
-  ```bash
-  php artisan module:list
-  ```
-- In caso di problemi, verificare i log:
-  ```bash
-  tail -f storage/logs/laravel.log
-  ```
-- Per rimuovere l'assegnazione di un modulo:
-  ```
-
- 43df3e0 (.)
-aurmich/dev
-
-## Collegamenti tra versioni di server_setup.md
-* [server_setup.md](../../docs/server_setup.md)
-* [server_setup.md](server_setup.md)
-
-
-  ```
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 15cb84fb (fix collisions)
->>>>>>> aurmich/dev

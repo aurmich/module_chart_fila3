@@ -30,14 +30,7 @@ Configura i moduli con:
 ## Utilizzo
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Setup completo
 ./setup_environment.sh
 ./setup_database.sh

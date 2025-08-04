@@ -17,14 +17,7 @@ globs:
 
 ### Esempi di Componenti
 ```blade
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # ✅ Corretto
 <x-filament::button size="sm" href="{{ route('example') }}" tag="a">
     Testo

@@ -169,14 +169,7 @@ class DoctorAppointmentsWidget extends XotBaseWidget
 
 ### Identificazione Problema
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
->>>>>>> aurmich/dev
 # Cerca elementi root multipli nei template
 grep -n "^<" widget-template.blade.php
 
@@ -244,10 +237,3 @@ public function test_widget_renders_without_multiple_root_elements()
 
 *Ultimo aggiornamento: 2025-01-03*
 *Autore: AI Assistant*
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-*Versione: 1.0* 
->>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
->>>>>>> aurmich/dev

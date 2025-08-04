@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: model_decision
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 description: Enforces Vercel's recommended coding style, optimization strategies, and security best practices. This guide helps developers build performant, secure, and maintainable applications on the Vercel platform.
 globs: *.js,*.jsx,*.ts,*.tsx,*.md,*.mdx,*.json,*.yml,*.yaml,*.html,*.css,*.scss,*.sass
 ---

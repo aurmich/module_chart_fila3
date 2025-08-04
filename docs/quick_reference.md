@@ -5,14 +5,7 @@
 ### Artisan Commands
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
 # Moduli
 php artisan module:list                    # Lista moduli
 php artisan module:make NomeModulo        # Crea nuovo modulo
@@ -51,14 +44,7 @@ php artisan storage:link                 # Link storage pubblico
 ### Composer Commands
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
 # Dipendenze
 composer install                         # Installa dipendenze
 composer update                          # Aggiorna dipendenze
@@ -73,14 +59,7 @@ composer update --optimize-autoloader --no-dev
 ### NPM Commands
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
 # Development
 npm install                              # Installa dipendenze
 npm run dev                              # Build sviluppo
@@ -94,14 +73,7 @@ npm run build -- --analyze               # Build con analisi
 ### Testing Commands
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
 # PHPUnit
 php artisan test                         # Esegui tutti i test
 php artisan test --filter TestName       # Test specifico
@@ -123,14 +95,7 @@ php artisan dusk:chrome-driver           # Aggiorna Chrome driver
 ### Creare un Modulo
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
 # 1. Genera modulo
 php artisan module:make Blog
 
@@ -424,14 +389,7 @@ class UserTest extends TestCase
 ### Errori Comuni e Soluzioni
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
 # Class not found
 composer dump-autoload
 php artisan cache:clear
@@ -486,14 +444,7 @@ dd(\DB::getQueryLog());
 ## 📝 Git Commands
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
 # Branch
 git checkout -b feature/nome-feature
 git push -u origin feature/nome-feature

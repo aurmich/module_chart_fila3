@@ -77,14 +77,7 @@ $notification = new RecordNotification(
 ```php
 // resources/views/emails/doctor/registration.blade.php
 @component('mail::message')
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # {{ __('doctor.registration.title') }}
 
 {{ __('doctor.registration.message') }}

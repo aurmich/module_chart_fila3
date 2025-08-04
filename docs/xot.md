@@ -21,36 +21,14 @@ Questo file contiene i collegamenti alla documentazione tecnica che si trova nel
 - [Risoluzione Conflitti Git](../laravel/Modules/Xot/docs/risoluzione_conflitti_git.md)
 - [Risoluzione Conflitti Merge](../laravel/Modules/Xot/docs/risoluzione_conflitti_merge.md)
 - [Risoluzione Conflitti Merge Update](../laravel/Modules/Xot/docs/risoluzione_conflitti_merge_update.md) 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
 
 ## Errore Livewire MultipleRootElementsDetectedException
 Se un widget Livewire/Filament genera questo errore, significa che la view restituisce più di un root element. Soluzione: racchiudere tutto in un unico <div> o <section>. Aggiornare anche la docstring del widget e la documentazione dei moduli/temi.
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
 ## Collegamenti tra versioni di xot.md
 * [xot.md](docs/tecnico/packages/xot.md)
 * [xot.md](docs/xot.md)
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
 > [2025-05-28] Policy aggiornata: tutte le pagine di form devono includere solo widget Filament modulari, mai form custom. Aggiornamento policy e motivazione.
 
 > Le view dei widget Filament devono essere solo wrapper per $this->form. Niente markup custom, niente logica Livewire/AlpineJS, niente gestione CSRF manuale. Policy aggiornata in docs/rules/filament_best_practices.md e docs/widgets/find-doctor-appointment-widget.md.
@@ -59,11 +37,3 @@ Se un widget Livewire/Filament genera questo errore, significa che la view resti
 
 > Vietato creare trait per una sola classe. I trait vanno creati solo se riutilizzati in più classi. Policy aggiornata in docs/rules/filament_best_practices.md e docs/comune-sushi-implementation.md.
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev

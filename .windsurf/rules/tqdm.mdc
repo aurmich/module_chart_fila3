@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: model_decision
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 description: This rule file provides best practices and coding standards for using the `tqdm` library in Python. It focuses on performance, customization, and avoiding common pitfalls.
 globs: *.py
 ---

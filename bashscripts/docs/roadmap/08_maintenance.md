@@ -5,22 +5,9 @@
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
-<<<<<<< HEAD
 
 aurmich/dev
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 15cb84fb (fix collisions)
-
-aurmich/dev
-
-=======
-aurmich/dev
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # 🔧 Fase 8: Manutenzione
 
 ## 📋 Panoramica
@@ -30,14 +17,7 @@ Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 7: Documentazione](../roadmap/07_documentation.md)
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # 🔧 Fase 8: Manutenzione
 
 ## 📋 Panoramica
@@ -56,14 +36,7 @@ Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
 aurmich/dev
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # 🔧 Fase 8: Manutenzione
 
 ## 📋 Panoramica
@@ -75,18 +48,7 @@ Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
 - [Fase 7: Documentazione](../roadmap/07_documentation.md)
 
  43df3e0 (.)
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> 15cb84fb (fix collisions)
->>>>>>> aurmich/dev
 aurmich/dev
 
 
@@ -144,18 +106,7 @@ Questa fase si concentra sulla manutenzione e il supporto continuo del sistema.
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (23 linee vs 1)[0m
  43df3e0 (.)
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> 15cb84fb (fix collisions)
->>>>>>> aurmich/dev
 aurmich/dev
 
 ## Collegamenti tra versioni di 08_maintenance.md

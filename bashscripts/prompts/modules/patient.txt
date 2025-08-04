@@ -4,19 +4,7 @@
 
 ### 1. Models
 ```php
-<<<<<<< HEAD
 namespace Modules\Patient\Models;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-namespace Modules\Patient\Models;
-=======
-namespace Modules\SaluteOra\Models;
->>>>>>> 54f4fa16 (.)
-=======
-namespace Modules\Patient\Models;
->>>>>>> 15cb84fb (fix collisions)
->>>>>>> aurmich/dev
 
 abstract class BaseModel extends XotBaseModel
 {
@@ -43,19 +31,7 @@ class Doctor extends BaseModel
 
 ### 2. Resources
 ```php
-<<<<<<< HEAD
 namespace Modules\Patient\Filament\Resources;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-namespace Modules\Patient\Filament\Resources;
-=======
-namespace Modules\SaluteOra\Filament\Resources;
->>>>>>> 54f4fa16 (.)
-=======
-namespace Modules\Patient\Filament\Resources;
->>>>>>> 15cb84fb (fix collisions)
->>>>>>> aurmich/dev
 
 class DoctorResource extends XotBaseResource
 {
@@ -77,19 +53,7 @@ class DoctorResource extends XotBaseResource
 
 ### 3. Providers
 ```php
-<<<<<<< HEAD
 namespace Modules\Patient\Providers;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-namespace Modules\Patient\Providers;
-=======
-namespace Modules\SaluteOra\Providers;
->>>>>>> 54f4fa16 (.)
-=======
-namespace Modules\Patient\Providers;
->>>>>>> 15cb84fb (fix collisions)
->>>>>>> aurmich/dev
 
 class PatientServiceProvider extends XotBaseServiceProvider
 {

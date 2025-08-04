@@ -44,14 +44,7 @@
 Ogni file README.md di un modulo deve seguire questa struttura:
 
 ```markdown
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev
 # Modulo NomeModulo
 
 ## Panoramica
