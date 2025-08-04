@@ -21,7 +21,7 @@ use Parental\HasParent;
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
  * Class Admin
- *
+ * 
  * NOTA: Il trait HasFactory è stato rimosso perché già incluso nella catena di ereditarietà (BaseUser -> User -> Admin).
  * Dichiararlo qui è ridondante e può causare warning o confusione.
  * Vedi docs/DRY-model-traits.md
@@ -56,6 +56,9 @@ use Parental\HasParent;
  * @method static \Illuminate\Database\Eloquent\Builder|Admin whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Admin whereUserId($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3e4ec66 (.)
  * @property string|null $name
  * @property string|null $first_name
  * @property string|null $last_name
@@ -91,7 +94,11 @@ use Parental\HasParent;
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Gdpr\Models\Consent> $consents
  * @property-read int|null $consents_count
  * @property-read \Modules\User\Models\Team|null $currentTeam
+<<<<<<< HEAD
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\User> $all_team_users
+=======
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Xot\Contracts\UserContract> $all_team_users
+>>>>>>> f3e4ec66 (.)
  * @property-read \Modules\User\Models\AuthenticationLog|null $latestAuthentication
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
@@ -152,6 +159,7 @@ use Parental\HasParent;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin withoutRole($roles, $guard = null)
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Device> $devices
  * @property-read int|null $devices_count
+<<<<<<< HEAD
  * @property string|null $dental_problems
  * @property string|null $last_dental_visit
  * @property string|null $pregnancy_certificate
@@ -205,6 +213,8 @@ use Parental\HasParent;
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
 >>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
+=======
+>>>>>>> f3e4ec66 (.)
  * @mixin \Eloquent
  */
 class Admin extends User

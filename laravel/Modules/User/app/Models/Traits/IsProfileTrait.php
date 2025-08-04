@@ -246,13 +246,23 @@ trait IsProfileTrait
     public function devices(): BelongsToMany
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->belongsToManyX(Device::class);
 =======
+=======
+        
+        /*
+>>>>>>> f3e4ec66 (.)
         // @phpstan-ignore-next-line
         return $this->belongsToMany(Device::class, 'device_users', 'profile_id', 'device_id')
             ->withPivot('token')
             ->withTimestamps();
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+            */
+        return $this->belongsToManyX(Device::class);
+>>>>>>> f3e4ec66 (.)
     }
 
     /**

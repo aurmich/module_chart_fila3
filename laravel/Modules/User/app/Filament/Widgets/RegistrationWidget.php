@@ -297,7 +297,8 @@ class RegistrationWidget extends XotBaseWidget
 >>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
     {
         $data = $this->form->getState();
-        $user=app($this->action)->execute($data);
+        $record=$this->record;
+        $user=app($this->action)->execute($record,$data);
         //$post = $this->model::create($this->form->getState());
 
         // Save the relationships from the form to the post after it is created.

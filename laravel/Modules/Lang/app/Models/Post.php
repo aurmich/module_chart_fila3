@@ -53,9 +53,12 @@ use Spatie\Sluggable\SlugOptions;
  * @property int|null        $views_count
  * @property Model|\Eloquent $linkable
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  *
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
  * @method static \Illuminate\Database\Eloquent\Builder|Post newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Post newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Post query()
@@ -91,6 +94,7 @@ use Spatie\Sluggable\SlugOptions;
  * @method static \Illuminate\Database\Eloquent\Builder|Post whereUserId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Post whereViewsCount($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
 =======
@@ -99,6 +103,10 @@ use Spatie\Sluggable\SlugOptions;
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  *
 >>>>>>> 54f4fa16 (.)
+=======
+ * @property \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+>>>>>>> f3e4ec66 (.)
  * @mixin \Eloquent
  * @mixin Eloquent
  */

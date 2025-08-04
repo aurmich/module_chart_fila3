@@ -17,10 +17,14 @@ use Carbon\Carbon;
 /**
  * AppointmentWorkflow Model
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
  * 
 >>>>>>> 8e4d163b (phpstan)
+=======
+ *
+>>>>>>> f3e4ec66 (.)
  * @property int $id
  * @property int $tenant_id
  * @property int $patient_id
@@ -42,6 +46,9 @@ use Carbon\Carbon;
  * @property-read \Modules\SaluteOra\Models\Patient $patient
  * @property-read \Modules\SaluteOra\Models\Dentist|null $dentist
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3e4ec66 (.)
  * @property string $user_id
  * @property string|null $updated_by
  * @property string|null $deleted_by

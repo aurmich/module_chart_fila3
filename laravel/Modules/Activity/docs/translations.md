@@ -5,9 +5,13 @@
 - [Modulo Lang](../../Lang/docs/module_lang.md) - Documentazione principale sulle traduzioni
 - [Regole Generali Traduzioni](../../Xot/docs/translations.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Activity Module Fixes](../../.cursor/rules/activity-module-fixes.mdc) - Correzioni applicate dicembre 2024
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+- [Activity Module Fixes](../../.cursor/rules/activity-module-fixes.mdc) - Correzioni applicate dicembre 2024
+>>>>>>> f3e4ec66 (.)
 
 ## Struttura
 
@@ -16,20 +20,29 @@ Modules/Activity/
 └── lang/
     ├── it/
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3e4ec66 (.)
     │   ├── activity.php
     │   ├── stored_event.php
     │   ├── snapshots.php
     │   ├── dashboard.php
     │   ├── log.php
     │   └── snapshot.php
+<<<<<<< HEAD
 =======
     │   └── activity.php
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
     └── en/
         └── activity.php
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3e4ec66 (.)
 ## Aggiornamenti Dicembre 2024
 
 ### Conformità alle Regole Laraxot
@@ -80,6 +93,7 @@ I file di traduzione del modulo Activity sono stati aggiornati per conformarsi a
    - Sezioni di esportazione e configurazione
 
 ## Contenuto Principale
+<<<<<<< HEAD
 
 Il file `activity.php` contiene le traduzioni per:
 
@@ -182,22 +196,59 @@ Traduzioni specifiche per gli eventi archiviati:
 
 =======
 ## Contenuto
+=======
+>>>>>>> f3e4ec66 (.)
 
 Il file `activity.php` contiene le traduzioni per:
-- Log attività
-- Eventi di sistema
-- Azioni utente
-- Notifiche attività
-- Filtri attività
-- Report attività
-- Timeline
-- Statistiche
-- Esportazione dati
-- Configurazione attività
 
-## Esempi
+### Campi Form (fields)
+- **user**: Informazioni utente (nome, email, ruolo)
+- **action**: Tipi di azione (created, updated, deleted, viewed, etc.)
+- **subject**: Oggetto dell'azione (tipo, ID, nome)
+- **description**: Descrizione dell'attività
+- **ip_address**: Indirizzo IP dell'utente
+- **user_agent**: Informazioni browser/sistema
+- **created_at**: Data e ora dell'attività
+- **properties**: Proprietà aggiuntive (vecchio/nuovo valore)
 
+### Azioni (actions)
+- **view_details**: Visualizzazione dettagli attività
+- **export**: Esportazione dati attività
+- **clear_old**: Pulizia attività vecchie
+
+### Filtri (filters)
+- **user**: Filtro per utente
+- **action**: Filtro per tipo azione
+- **subject_type**: Filtro per tipo oggetto
+- **date_range**: Filtro per intervallo date
+- **ip_address**: Filtro per indirizzo IP
+
+### Messaggi e Esportazione
+- Messaggi di feedback per operazioni
+- Formati di esportazione (CSV, Excel, PDF)
+- Colonne personalizzabili per export
+
+## File stored_event.php
+
+Traduzioni specifiche per gli eventi archiviati:
+
+### Campi Specifici
+- **event_class**: Classe dell'evento
+- **event_properties**: Proprietà dell'evento
+- **aggregate_uuid**: UUID dell'aggregato
+- **aggregate_version**: Versione dell'aggregato
+- **event_version**: Versione dell'evento
+- **meta_data**: Metadata aggiuntivi
+
+### Azioni Specializzate
+- **replay**: Replay dell'evento
+- **export**: Esportazione eventi
+
+## Best Practices Applicate
+
+### Struttura Obbligatoria
 ```php
+<<<<<<< HEAD
 return [
     'logs' => [
         'label' => 'Log Attività',
@@ -218,6 +269,58 @@ return [
 ];
 ``` 
 >>>>>>> 54f4fa16 (.)
+=======
+'campo_nome' => [
+    'label' => 'Etichetta Campo',           // Obbligatorio
+    'placeholder' => 'Testo placeholder',   // Obbligatorio
+    'help' => 'Testo di aiuto',            // Obbligatorio
+],
+```
+
+### Azioni Complete
+```php
+'nome_azione' => [
+    'label' => 'Etichetta Azione',
+    'success' => 'Messaggio successo',
+    'error' => 'Messaggio errore',
+    'confirmation' => 'Messaggio conferma',  // Per azioni distruttive
+],
+```
+
+### Filtri con Aiuto
+```php
+'nome_filtro' => [
+    'label' => 'Etichetta Filtro',
+    'placeholder' => 'Placeholder filtro',
+    'help' => 'Spiegazione utilizzo filtro',
+],
+```
+
+## Validazione e Controlli
+
+### Lista di Controllo
+- [x] Struttura espansa implementata per tutti i campi
+- [x] `declare(strict_types=1)` aggiunto
+- [x] Sintassi array breve `[]` utilizzata
+- [x] Azioni con messaggi completi (success, error, confirmation)
+- [x] Filtri con placeholder e help appropriati
+- [x] Organizzazione gerarchica coerente
+- [x] Collegamenti bidirezionali con documentazione root
+
+### Errori Corretti
+1. **Struttura non espansa**: Risolto con implementazione completa
+2. **Mancanza declare(strict_types=1)**: Aggiunto a tutti i file
+3. **Sintassi array obsoleta**: Migrata a sintassi moderna
+4. **Messaggi azioni incompleti**: Completati con tutti i casi d'uso
+
+## Note per Sviluppi Futuri
+
+1. **Mantenimento Standard**: Seguire sempre la struttura espansa per nuovi campi
+2. **Consistenza**: Utilizzare terminologia coerente con altri moduli
+3. **Localizzazione**: Considerare traduzioni per altre lingue mantenendo la stessa struttura
+4. **Validazione**: Includere controlli automatici per verificare la conformità
+
+>>>>>>> f3e4ec66 (.)
 ## Collegamenti tra versioni di translations.md
 * [translations.md](laravel/Modules/Chart/docs/translations.md)
 * [translations.md](laravel/Modules/Reporting/docs/translations.md)

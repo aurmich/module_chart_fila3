@@ -34,8 +34,11 @@ use Spatie\Translatable\HasTranslations;
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property mixed                                       $translations
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+<<<<<<< HEAD
  *
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
  * @method static \Modules\Cms\Database\Factories\PageContentFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|PageContent  newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|PageContent  newQuery()
@@ -55,8 +58,11 @@ use Spatie\Translatable\HasTranslations;
 <<<<<<< HEAD
 =======
  *                                                                                                                                                                  >>>>>>> 49ebea7 (.)
+<<<<<<< HEAD
  *
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
  * @mixin \Eloquent
  */
 class PageContent extends BaseModel

@@ -83,6 +83,9 @@ use Spatie\Image\Enums\Fit;
  * @method static \Illuminate\Database\Eloquent\Builder|Patient whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Patient whereUserId($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3e4ec66 (.)
  * @property string|null $name
  * @property string|null $first_name
  * @property string|null $last_name
@@ -118,6 +121,10 @@ use Spatie\Image\Enums\Fit;
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Gdpr\Models\Consent> $consents
  * @property-read int|null $consents_count
  * @property-read \Modules\User\Models\Team|null $currentTeam
+<<<<<<< HEAD
+=======
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Xot\Contracts\UserContract> $all_team_users
+>>>>>>> f3e4ec66 (.)
  * @property-read \Modules\User\Models\AuthenticationLog|null $latestAuthentication
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
@@ -178,6 +185,7 @@ use Spatie\Image\Enums\Fit;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Patient withoutRole($roles, $guard = null)
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Device> $devices
  * @property-read int|null $devices_count
+<<<<<<< HEAD
  * @property string|null $dental_problems
  * @property string|null $last_dental_visit
  * @property string|null $pregnancy_certificate
@@ -215,6 +223,8 @@ use Spatie\Image\Enums\Fit;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Patient whereLastDentalVisitPeriod($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Patient whereNationality($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Patient whereYearsInItaly($value)
+=======
+>>>>>>> f3e4ec66 (.)
  * @mixin \Eloquent
  */
 class Patient extends User implements HasMedia

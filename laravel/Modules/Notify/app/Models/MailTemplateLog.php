@@ -8,21 +8,35 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * @property-read \Modules\User\Models\Profile|null $creator
+=======
+/**
+ * 
+ *
+ * @property-read \Modules\SaluteOra\Models\Profile|null $creator
+>>>>>>> f3e4ec66 (.)
  * @property-read \Illuminate\Database\Eloquent\Model|\Eloquent $mailable
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
  * @property-read \Modules\Notify\Models\MailTemplate|null $template
+<<<<<<< HEAD
  * @property-read \Modules\User\Models\Profile|null $updater
+=======
+ * @property-read \Modules\SaluteOra\Models\Profile|null $updater
+>>>>>>> f3e4ec66 (.)
  * @method static \Modules\Notify\Database\Factories\MailTemplateLogFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MailTemplateLog newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MailTemplateLog newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MailTemplateLog query()
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
 class MailTemplateLog extends BaseModel
 {
     protected $fillable = [

@@ -17,10 +17,14 @@ use Modules\Geo\Enums\AddressTypeEnum;
  * 
  * Implementazione di Schema.org PostalAddress
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
  * 
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+ *
+>>>>>>> f3e4ec66 (.)
  * @property int $id
  * @property string|null $model_type
  * @property int|null $model_id
@@ -46,15 +50,26 @@ use Modules\Geo\Enums\AddressTypeEnum;
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * // implements HasGeolocation
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3e4ec66 (.)
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_by
  * @property-read \Illuminate\Database\Eloquent\Model|\Eloquent|null $addressable
+<<<<<<< HEAD
  * @property-read \Modules\User\Models\Profile|null $creator
  * @property-read string $full_address
  * @property-read string $street_address
  * @property-read \Illuminate\Database\Eloquent\Model|\Eloquent|null $model
  * @property-read \Modules\User\Models\Profile|null $updater
+=======
+ * @property-read \Modules\SaluteOra\Models\Profile|null $creator
+ * @property-read string $full_address
+ * @property-read string $street_address
+ * @property-read \Illuminate\Database\Eloquent\Model|\Eloquent|null $model
+ * @property-read \Modules\SaluteOra\Models\Profile|null $updater
+>>>>>>> f3e4ec66 (.)
  * @method static \Modules\Geo\Database\Factories\AddressFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Address nearby(float $latitude, float $longitude, float $radiusKm = '10')
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Address newModelQuery()
@@ -89,6 +104,7 @@ use Modules\Geo\Enums\AddressTypeEnum;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Address whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Address whereUpdatedBy($value)
  * @mixin \Eloquent
+<<<<<<< HEAD
  */
 class Address extends BaseModel 
 {
@@ -96,6 +112,8 @@ class Address extends BaseModel
     /** @var list<string> */
    protected $fillable = [
 =======
+=======
+>>>>>>> f3e4ec66 (.)
  */
 class Address extends BaseModel 
 {

@@ -44,17 +44,25 @@ class AddressFactory extends Factory
         ];
 
         // Seleziona una città casuale
+<<<<<<< HEAD
         /** @var string $cityName */
+=======
+>>>>>>> f3e4ec66 (.)
         $cityName = $this->faker->randomElement(array_keys($italianCities));
         $cityData = $italianCities[$cityName];
         
         // Aggiungi variazione alle coordinate (±0.05 gradi per simulare diversi indirizzi nella stessa città)
+<<<<<<< HEAD
         /** @var float $lat */
         $lat = (float) $cityData['lat'];
         /** @var float $lng */
         $lng = (float) $cityData['lng'];
         $latitude = $lat + $this->faker->randomFloat(4, -0.05, 0.05);
         $longitude = $lng + $this->faker->randomFloat(4, -0.05, 0.05);
+=======
+        $latitude = $cityData['lat'] + $this->faker->randomFloat(4, -0.05, 0.05);
+        $longitude = $cityData['lng'] + $this->faker->randomFloat(4, -0.05, 0.05);
+>>>>>>> f3e4ec66 (.)
         
         $streetName = $this->faker->streetName();
         $streetNumber = $this->faker->buildingNumber();
@@ -79,7 +87,11 @@ class AddressFactory extends Factory
             'country' => 'IT',
             'postal_code' => $this->faker->randomElement([
                 $cityData['postal'],
+<<<<<<< HEAD
                 substr((string) $cityData['postal'], 0, 3) . $this->faker->numberBetween(10, 99),
+=======
+                substr($cityData['postal'], 0, 3) . $this->faker->numberBetween(10, 99),
+>>>>>>> f3e4ec66 (.)
             ]),
             'formatted_address' => "{$route} {$streetNumber}, {$cityData['postal']} {$cityName} ({$cityData['province']}), Italia",
             'place_id' => $this->faker->optional(0.8)->regexify('ChIJ[A-Za-z0-9_-]{20,30}'),
@@ -88,7 +100,11 @@ class AddressFactory extends Factory
             'type' => $this->faker->randomElement(AddressTypeEnum::cases()),
             'is_primary' => $this->faker->boolean(30), // 30% probabilità di essere primario
             'extra_data' => $this->faker->optional(0.4)->randomElements([
+<<<<<<< HEAD
                 'provincia_sigla' => substr((string) $cityData['province'], 0, 2),
+=======
+                'provincia_sigla' => substr($cityData['province'], 0, 2),
+>>>>>>> f3e4ec66 (.)
                 'google_rating' => $this->faker->randomFloat(1, 3.0, 5.0),
                 'google_reviews_count' => $this->faker->numberBetween(10, 500),
                 'verified' => $this->faker->boolean(80),
@@ -195,6 +211,7 @@ class AddressFactory extends Factory
         $cityInfo = array_merge($defaultCityData, $cityData);
 
         return $this->state(function (array $attributes) use ($city, $cityInfo) {
+<<<<<<< HEAD
             /** @var float $baseLat */
             $baseLat = is_numeric($cityInfo['lat'] ?? null) ? (float) $cityInfo['lat'] : 45.4642;
             /** @var float $baseLng */
@@ -202,10 +219,15 @@ class AddressFactory extends Factory
             
             $latitude = $baseLat + $this->faker->randomFloat(4, -0.05, 0.05);
             $longitude = $baseLng + $this->faker->randomFloat(4, -0.05, 0.05);
+=======
+            $latitude = $cityInfo['lat'] + $this->faker->randomFloat(4, -0.05, 0.05);
+            $longitude = $cityInfo['lng'] + $this->faker->randomFloat(4, -0.05, 0.05);
+>>>>>>> f3e4ec66 (.)
             $streetName = $this->faker->streetName();
             $streetNumber = $this->faker->buildingNumber();
             $route = "Via {$streetName}";
 
+<<<<<<< HEAD
             /** @var string $postal */
             $postal = is_string($cityInfo['postal'] ?? null) ? $cityInfo['postal'] : '20100';
             /** @var string $province */
@@ -218,11 +240,22 @@ class AddressFactory extends Factory
                 'administrative_area_level_3' => $province,
                 'administrative_area_level_2' => $region,
                 'postal_code' => $postal,
+=======
+            return [
+                'locality' => $city,
+                'administrative_area_level_3' => $cityInfo['province'],
+                'administrative_area_level_2' => $cityInfo['region'],
+                'postal_code' => $cityInfo['postal'],
+>>>>>>> f3e4ec66 (.)
                 'latitude' => $latitude,
                 'longitude' => $longitude,
                 'route' => $route,
                 'street_number' => $streetNumber,
+<<<<<<< HEAD
                 'formatted_address' => "{$route} {$streetNumber}, {$postal} {$city} ({$province}), Italia",
+=======
+                'formatted_address' => "{$route} {$streetNumber}, {$cityInfo['postal']} {$city} ({$cityInfo['province']}), Italia",
+>>>>>>> f3e4ec66 (.)
             ];
         });
     }

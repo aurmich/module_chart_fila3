@@ -23,9 +23,12 @@ use Spatie\Translatable\HasTranslations;
  * @property string|null                     $deleted_by
  * @property array|null                      $content_blocks
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  *
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
  * @method static \Illuminate\Database\Eloquent\Builder|Page newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Page newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Page onlyTrashed()
@@ -44,6 +47,7 @@ use Spatie\Translatable\HasTranslations;
  * @method static \Illuminate\Database\Eloquent\Builder|Page withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder|Page withoutTrashed()
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property array|null $sidebar_blocks
  * @property array      $footer_blocks
  * @method static \Illuminate\Database\Eloquent\Builder|Page whereFooterBlocks($value)
@@ -51,19 +55,23 @@ use Spatie\Translatable\HasTranslations;
  * @property mixed $translations
 =======
  *
+=======
+>>>>>>> f3e4ec66 (.)
  * @property array|null $sidebar_blocks
  * @property array      $footer_blocks
- *
  * @method static \Illuminate\Database\Eloquent\Builder|Page whereFooterBlocks($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Page whereSidebarBlocks($value)
- *
  * @property mixed $translations
+<<<<<<< HEAD
  *
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
  * @method static \Illuminate\Database\Eloquent\Builder|Page whereLocale(string $column, string $locale)
  * @method static \Illuminate\Database\Eloquent\Builder|Page whereLocales(string $column, array $locales)
  * @method static \Illuminate\Database\Eloquent\Builder|Page whereJsonContainsLocale(string $column, string $locale, ?mixed $value)
  * @method static \Illuminate\Database\Eloquent\Builder|Page whereJsonContainsLocales(string $column, array $locales, ?mixed $value)
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
@@ -72,12 +80,16 @@ use Spatie\Translatable\HasTranslations;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Page whereMiddleware($value)
 =======
  *
+=======
+>>>>>>> f3e4ec66 (.)
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
- *
  * @method static \Modules\Cms\Database\Factories\PageFactory factory($count = null, $state = [])
+<<<<<<< HEAD
  *
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
  * @mixin \Eloquent
  */
 class Page extends BaseModelLang

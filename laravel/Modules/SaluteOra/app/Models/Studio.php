@@ -66,7 +66,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 >>>>>>> 2099645a (.)
 =======
  * Studio model for the SaluteOra module.
- * 
+ *
  * @property int $id
  * @property string $name
  * @property string|null $address
@@ -136,6 +136,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Studio whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Studio whereVatNumber($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Studio whereWebsite($value)
+<<<<<<< HEAD
  * @property string|null $city
  * @property string|null $postal_code
  * @property string|null $province
@@ -180,6 +181,9 @@ class Studio extends BaseTenant
  * @property-read \Illuminate\Database\Eloquent\Collection<int, Doctor> $doctors
  * @property-read \Illuminate\Database\Eloquent\Collection<int, Appointment> $appointments
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Geo\Models\Address> $addresses
+=======
+ * @mixin \Eloquent
+>>>>>>> f3e4ec66 (.)
  */
 class Studio extends BaseTenant
 {

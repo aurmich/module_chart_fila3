@@ -17,8 +17,12 @@ use Illuminate\Support\Str;
 =======
 /**
  * DoctorRegistrationWorkflow model per gestire il processo di registrazione dei dottori.
+<<<<<<< HEAD
  * 
 >>>>>>> 8e4d163b (phpstan)
+=======
+ *
+>>>>>>> f3e4ec66 (.)
  * @property int $id
  * @property int $doctor_id
  * @property string $current_step
@@ -34,6 +38,9 @@ use Illuminate\Support\Str;
  * @property \Carbon\Carbon $updated_at
  * @property-read Doctor $doctor
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3e4ec66 (.)
  * @property \Illuminate\Support\Carbon|null $started_at Data e ora di inizio del workflow
  * @property \Illuminate\Support\Carbon|null $last_interaction_at Data e ora dell'ultima interazione
  * @property string|null $session_id ID della sessione
@@ -70,8 +77,11 @@ use Illuminate\Support\Str;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DoctorRegistrationWorkflow withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DoctorRegistrationWorkflow withoutTrashed()
  * @mixin \Eloquent
+<<<<<<< HEAD
 =======
 >>>>>>> 8e4d163b (phpstan)
+=======
+>>>>>>> f3e4ec66 (.)
  */
 class DoctorRegistrationWorkflow extends BaseModel
 {

@@ -9,6 +9,8 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Modules\Xot\Traits\Updater;
 
 /**
+ * 
+ *
  * @property int $id
  * @property int $mail_template_id
  * @property int $version
@@ -22,6 +24,7 @@ use Modules\Xot\Traits\Updater;
  * @property \Carbon\Carbon|null $updated_at
  * @property \Carbon\Carbon|null $deleted_at
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property string|null $updated_by
  * @property string|null $deleted_by
  * @property-read \Modules\User\Models\Profile|null $creator
@@ -29,6 +32,15 @@ use Modules\Xot\Traits\Updater;
  * @property-read int|null $media_count
  * @property-read \Modules\Notify\Models\MailTemplate|null $template
  * @property-read \Modules\User\Models\Profile|null $updater
+=======
+ * @property string|null $updated_by
+ * @property string|null $deleted_by
+ * @property-read \Modules\SaluteOra\Models\Profile|null $creator
+ * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
+ * @property-read int|null $media_count
+ * @property-read \Modules\Notify\Models\MailTemplate|null $template
+ * @property-read \Modules\SaluteOra\Models\Profile|null $updater
+>>>>>>> f3e4ec66 (.)
  * @method static \Modules\Notify\Database\Factories\MailTemplateVersionFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MailTemplateVersion newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MailTemplateVersion newQuery()
@@ -51,8 +63,11 @@ use Modules\Xot\Traits\Updater;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MailTemplateVersion withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MailTemplateVersion withoutTrashed()
  * @mixin \Eloquent
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
  */
 class MailTemplateVersion extends BaseModel
 {

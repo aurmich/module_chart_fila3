@@ -14,10 +14,14 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Represents a table in the INFORMATION_SCHEMA.TABLES.
 <<<<<<< HEAD
+<<<<<<< HEAD
  * 
 =======
  *
 >>>>>>> 54f4fa16 (.)
+=======
+ * 
+>>>>>>> f3e4ec66 (.)
  * Provides metadata and statistics about database tables.
  *
  * @property string|null $TABLE_CATALOG

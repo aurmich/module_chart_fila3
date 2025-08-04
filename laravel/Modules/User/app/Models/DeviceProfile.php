@@ -29,6 +29,7 @@ namespace Modules\User\Models;
  * @mixin \Eloquent
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 class DeviceProfile extends DeviceUser
 {
     /**
@@ -44,3 +45,10 @@ class DeviceProfile extends DeviceUser
 =======
 class DeviceProfile extends DeviceUser {}
 >>>>>>> 54f4fa16 (.)
+=======
+class DeviceProfile extends DeviceUser {
+    /**
+     * ---
+     */
+}
+>>>>>>> f3e4ec66 (.)

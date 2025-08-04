@@ -47,12 +47,16 @@ abstract class BaseModel extends Model
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
   */
+<<<<<<< HEAD
 abstract class BaseModel extends Model
 <<<<<<< HEAD
 >>>>>>> 0734d5c9 (.)
 >>>>>>> bb8acfef (.)
 =======
 >>>>>>> 1def8bbe (fix hint)
+=======
+abstract class BaseModel extends EloquentModel
+>>>>>>> f3e4ec66 (.)
 {
     use HasFactory;
     use Updater;

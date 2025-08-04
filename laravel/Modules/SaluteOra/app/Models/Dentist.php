@@ -14,10 +14,14 @@ use Modules\Tenant\Traits\BelongsToTenant;
  * Modello Dentist per la gestione dei dentisti.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
  * 
 >>>>>>> 8e4d163b (phpstan)
+=======
+ *
+>>>>>>> f3e4ec66 (.)
  * @property int $id
  * @property string $name
  * @property string|null $first_name
@@ -27,6 +31,9 @@ use Modules\Tenant\Traits\BelongsToTenant;
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3e4ec66 (.)
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\SaluteOra\Models\Appointment> $appointments
  * @property-read int|null $appointments_count
  * @property-read \Modules\SaluteOra\Models\Profile|null $creator
@@ -43,10 +50,13 @@ use Modules\Tenant\Traits\BelongsToTenant;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Dentist withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Dentist withoutTrashed()
  * @mixin \Eloquent
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 8e4d163b (phpstan)
+=======
+>>>>>>> f3e4ec66 (.)
  */
 class Dentist extends BaseModel
 {

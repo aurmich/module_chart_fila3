@@ -20,6 +20,7 @@ use Modules\Tenant\Models\Traits\SushiToJson;
  * regioni, province, città, CAP, codici ISTAT, ecc.
  * Tutti i dati sono estratti da file JSON e gestiti tramite Sushi.
  *
+<<<<<<< HEAD
  * @property int $id
  * @property string $nome
  * @property string $codice
@@ -160,6 +161,8 @@ use Modules\Tenant\Models\Traits\SushiToJson;
  * regioni, province, città, CAP, codici ISTAT, ecc.
  * Tutti i dati sono estratti da file JSON e gestiti tramite Sushi.
  * 
+=======
+>>>>>>> f3e4ec66 (.)
  * @property int $id
  * @property string $nome
  * @property string $codice
@@ -174,6 +177,25 @@ use Modules\Tenant\Models\Traits\SushiToJson;
  * @property float $superficie
  * @property float $lat
  * @property float $lng
+ * @property array<array-key, mixed>|null $zona
+ * @property string|null $sigla
+ * @property string|null $codiceCatastale
+ * @property-read \Modules\SaluteOra\Models\Profile|null $creator
+ * @property-read \Modules\SaluteOra\Models\Profile|null $updater
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Comune newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Comune newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Comune query()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Comune whereCap($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Comune whereCodice($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Comune whereCodiceCatastale($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Comune whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Comune whereNome($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Comune wherePopolazione($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Comune whereProvincia($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Comune whereRegione($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Comune whereSigla($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Comune whereZona($value)
+ * @mixin \Eloquent
  */
 class Comune extends BaseModel
 {

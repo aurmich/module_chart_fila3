@@ -11,6 +11,9 @@ use Modules\Tenant\Traits\BelongsToTenant;
 use Modules\Xot\Models\XotBaseModel;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3e4ec66 (.)
 /**
  * 
  *
@@ -65,8 +68,11 @@ use Modules\Xot\Models\XotBaseModel;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Document withoutTrashed()
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
 class Document extends XotBaseModel
 {
     use HasFactory, SoftDeletes, BelongsToTenant;

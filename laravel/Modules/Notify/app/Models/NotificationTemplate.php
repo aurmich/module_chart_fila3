@@ -49,12 +49,20 @@ use Spatie\Translatable\HasTranslations;
 <<<<<<< HEAD
  * @property-read string $channels_label
  * @property NotificationTypeEnum $type
+<<<<<<< HEAD
  * @property-read \Modules\User\Models\Profile|null $creator
+=======
+ * @property-read \Modules\SaluteOra\Models\Profile|null $creator
+>>>>>>> f3e4ec66 (.)
  * @property-read int|null $logs_count
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
  * @property-read mixed $translations
+<<<<<<< HEAD
  * @property-read \Modules\User\Models\Profile|null $updater
+=======
+ * @property-read \Modules\SaluteOra\Models\Profile|null $updater
+>>>>>>> f3e4ec66 (.)
  * @property-read int|null $versions_count
  * @method static \Illuminate\Database\Eloquent\Builder<static>|NotificationTemplate active()
  * @method static \Modules\Notify\Database\Factories\NotificationTemplateFactory factory($count = null, $state = [])

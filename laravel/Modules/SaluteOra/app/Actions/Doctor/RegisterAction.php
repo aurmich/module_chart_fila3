@@ -60,6 +60,7 @@ class RegisterAction
      * @return Doctor
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function execute(UserContract $record,array $data): Doctor
     {
         if(!isset($data['name']) && isset($data['email']) && is_string($data['email'])){
@@ -167,9 +168,21 @@ class RegisterAction
 
 =======
     public function execute(array $data): Doctor
+=======
+    public function execute(Doctor $record,array $data): Doctor
+>>>>>>> f3e4ec66 (.)
     {
+        $doctor=$record;
+        //$doctor = Doctor::create($data);
+        $record->save();
+        $record->update($data);
+        $attachments = Doctor::$attachments;
+        foreach ($attachments as $attachment) {
+                $doctor->addMediaFromDisk($data[$attachment],'local')
+                    ->toMediaCollection($attachment);
 
-        $doctor = Doctor::create($data);
+        }
+        
 
         Notification::route('mail', $data['email'])
         //->locale('it')

@@ -33,10 +33,14 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property Team $team
  * @property User $user
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3e4ec66 (.)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TeamPermission newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TeamPermission newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|TeamPermission query()
  * @mixin \Eloquent
+<<<<<<< HEAD
  */
 class TeamPermission extends Model
 {
@@ -53,6 +57,8 @@ class TeamPermission extends Model
      * @var list<string> 
      */
 =======
+=======
+>>>>>>> f3e4ec66 (.)
  */
 class TeamPermission extends Model
 {

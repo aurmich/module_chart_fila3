@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Activity\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\Activitylog\Models\Activity as SpatieActivity;
 
 /**
@@ -15,6 +16,13 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * Class Activity.
  *
 >>>>>>> 54f4fa16 (.)
+=======
+use Spatie\Activitylog\Models\Activity as SpatieActivity;
+
+/**
+ * Class Activity.
+ * 
+>>>>>>> f3e4ec66 (.)
  * This class extends the BaseActivity model to represent activities in the application.
  *
  * @property int $id
@@ -64,10 +72,14 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @mixin \Eloquent
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 class Activity extends SpatieActivity
 =======
 class Activity extends BaseActivity
 >>>>>>> 54f4fa16 (.)
+=======
+class Activity extends SpatieActivity
+>>>>>>> f3e4ec66 (.)
 {
     /** @var list<string> */
     protected $fillable = [

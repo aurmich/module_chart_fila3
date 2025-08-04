@@ -3,7 +3,10 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> f3e4ec66 (.)

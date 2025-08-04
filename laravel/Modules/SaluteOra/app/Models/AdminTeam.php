@@ -6,7 +6,13 @@ namespace Modules\SaluteOra\Models;
 use Parental\HasParent;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
+=======
+/**
+ * 
+ *
+>>>>>>> f3e4ec66 (.)
  * @property string $id
  * @property int $team_id
  * @property string|null $user_id
@@ -34,8 +40,11 @@ use Parental\HasParent;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|AdminTeam whereUserId($value)
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> f3e4ec66 (.)
 class AdminTeam extends TeamUser
 {
     use HasParent;

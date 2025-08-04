@@ -6,6 +6,7 @@ namespace Modules\Activity\Models;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 =======
@@ -14,6 +15,10 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 // //use Laravel\Scout\Searchable;
 use Illuminate\Database\Eloquent\Model;
 >>>>>>> 54f4fa16 (.)
+=======
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model as EloquentModel;
+>>>>>>> f3e4ec66 (.)
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Modules\Xot\Traits\Updater;
 
@@ -22,6 +27,7 @@ use Modules\Xot\Traits\Updater;
  *
  * @template TFactory of \Illuminate\Database\Eloquent\Factories\Factory<static>
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 abstract class BaseModel extends EloquentModel
 {
@@ -34,6 +40,11 @@ abstract class BaseModel extends Model
     // use Searchable;
     // use Cachable;
 >>>>>>> 54f4fa16 (.)
+=======
+abstract class BaseModel extends EloquentModel
+{
+    use HasFactory;
+>>>>>>> f3e4ec66 (.)
     use Updater;
 
     /**

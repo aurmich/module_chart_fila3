@@ -9,20 +9,34 @@ use Modules\Xot\Traits\Updater;
 
 // BaseModel in same namespace provides common behaviors
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * @property-read \Modules\User\Models\Profile|null $creator
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
  * @property-read \Modules\Notify\Models\NotificationTemplate|null $template
  * @property-read \Modules\User\Models\Profile|null $updater
+=======
+/**
+ * 
+ *
+ * @property-read \Modules\SaluteOra\Models\Profile|null $creator
+ * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
+ * @property-read int|null $media_count
+ * @property-read \Modules\Notify\Models\NotificationTemplate|null $template
+ * @property-read \Modules\SaluteOra\Models\Profile|null $updater
+>>>>>>> f3e4ec66 (.)
  * @method static \Modules\Notify\Database\Factories\NotificationTemplateVersionFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|NotificationTemplateVersion newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|NotificationTemplateVersion newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|NotificationTemplateVersion query()
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
 class NotificationTemplateVersion extends BaseModel
 {
     use Updater;

@@ -1,44 +1,70 @@
 <?php
 
 return array (
+<<<<<<< HEAD
   'model' => 
   array (
     'label' => 'Medico',
     'plural' => 'Medici',
     'description' => 'Gestione dei medici registrati nella piattaforma',
   ),
+=======
+>>>>>>> f3e4ec66 (.)
   'navigation' => 
   array (
     'label' => 'Medici',
     'group' => 'Gestione Utenti',
+<<<<<<< HEAD
     'icon' => 'heroicon-o-user-circle',
     'sort' => 10,
   ),
+=======
+    'icon' => 'heroicon-o-user-plus',
+    'sort' => 10,
+  ),
+  'model' => 
+  array (
+    'label' => 'Medico',
+    'plural' => 'Medici',
+  ),
+>>>>>>> f3e4ec66 (.)
   'pages' => 
   array (
     'index' => 
     array (
       'title' => 'Elenco Medici',
       'subtitle' => 'Gestisci i medici registrati nell\'app mobile',
+<<<<<<< HEAD
       'description' => 'Visualizza e gestisci tutti i medici iscritti alla piattaforma',
+=======
+>>>>>>> f3e4ec66 (.)
     ),
     'create' => 
     array (
       'title' => 'Nuovo Medico',
       'subtitle' => 'Registra un nuovo medico',
+<<<<<<< HEAD
       'description' => 'Inserisci i dati per registrare un nuovo professionista',
+=======
+>>>>>>> f3e4ec66 (.)
     ),
     'edit' => 
     array (
       'title' => 'Modifica Medico',
       'subtitle' => 'Modifica le informazioni del medico',
+<<<<<<< HEAD
       'description' => 'Aggiorna i dati del professionista',
+=======
+>>>>>>> f3e4ec66 (.)
     ),
     'view' => 
     array (
       'title' => 'Dettagli Medico',
       'subtitle' => 'Visualizza le informazioni complete del medico',
+<<<<<<< HEAD
       'description' => 'Dettagli completi del profilo medico',
+=======
+>>>>>>> f3e4ec66 (.)
     ),
   ),
   'fields' => 
@@ -47,6 +73,7 @@ return array (
     array (
       'label' => 'Nome e Cognome',
       'placeholder' => 'Inserisci nome e cognome completi',
+<<<<<<< HEAD
       'help' => 'Nome e cognome come registrati nell\'Ordine dei Medici',
     ),
     'first_name' => 
@@ -60,64 +87,104 @@ return array (
       'label' => 'Cognome',
       'placeholder' => 'Inserisci il cognome',
       'help' => 'Cognome del medico',
+=======
+      'helper_text' => 'Nome e cognome come registrati nell\'Ordine dei Medici',
+>>>>>>> f3e4ec66 (.)
     ),
     'email' => 
     array (
       'label' => 'Email',
       'placeholder' => 'email@esempio.com',
+<<<<<<< HEAD
       'help' => 'Indirizzo email per le comunicazioni',
       'description' => 'email',
+=======
+      'helper_text' => 'Indirizzo email per le comunicazioni',
+>>>>>>> f3e4ec66 (.)
     ),
     'phone' => 
     array (
       'label' => 'Telefono',
       'placeholder' => '+39 123 456 7890',
+<<<<<<< HEAD
       'help' => 'Numero di telefono principale',
+=======
+      'helper_text' => 'Numero di telefono principale',
+>>>>>>> f3e4ec66 (.)
     ),
     'mobile_phone' => 
     array (
       'label' => 'Cellulare',
       'placeholder' => '+39 123 456 7890',
+<<<<<<< HEAD
       'help' => 'Numero di cellulare per le notifiche push',
+=======
+      'helper_text' => 'Numero di cellulare per le notifiche push',
+>>>>>>> f3e4ec66 (.)
     ),
     'license_number' => 
     array (
       'label' => 'Numero Iscrizione Ordine',
       'placeholder' => 'Inserisci il numero di iscrizione',
+<<<<<<< HEAD
       'help' => 'Numero di iscrizione all\'Ordine dei Medici',
+=======
+      'helper_text' => 'Numero di iscrizione all\'Ordine dei Medici',
+>>>>>>> f3e4ec66 (.)
     ),
     'specialization' => 
     array (
       'label' => 'Specializzazione',
       'placeholder' => 'Seleziona la specializzazione',
+<<<<<<< HEAD
       'help' => 'Specializzazione medica principale',
+=======
+      'helper_text' => 'Specializzazione medica principale',
+>>>>>>> f3e4ec66 (.)
     ),
     'clinic_address' => 
     array (
       'label' => 'Indirizzo Studio',
       'placeholder' => 'Via Roma, 123',
+<<<<<<< HEAD
       'help' => 'Indirizzo dello studio medico',
+=======
+      'helper_text' => 'Indirizzo dello studio medico',
+>>>>>>> f3e4ec66 (.)
     ),
     'is_active' => 
     array (
       'label' => 'Attivo',
+<<<<<<< HEAD
       'help' => 'Il medico può ricevere prenotazioni',
+=======
+      'helper_text' => 'Il medico può ricevere prenotazioni',
+>>>>>>> f3e4ec66 (.)
     ),
     'verified_at' => 
     array (
       'label' => 'Data Verifica',
+<<<<<<< HEAD
       'placeholder' => 'Seleziona la data di verifica',
       'help' => 'Data di verifica della documentazione',
+=======
+      'helper_text' => 'Data di verifica della documentazione',
+>>>>>>> f3e4ec66 (.)
     ),
     'device_token' => 
     array (
       'label' => 'Token Dispositivo',
+<<<<<<< HEAD
       'placeholder' => 'Token generato automaticamente',
       'help' => 'Token per le notifiche push',
+=======
+      'helper_text' => 'Token per le notifiche push',
+>>>>>>> f3e4ec66 (.)
     ),
     'last_login' => 
     array (
       'label' => 'Ultimo Accesso',
+<<<<<<< HEAD
       'placeholder' => 'Ultimo accesso registrato',
       'help' => 'Data e ora dell\'ultimo accesso all\'app',
     ),
@@ -132,6 +199,33 @@ return array (
       'label' => 'Orario',
       'placeholder' => 'Configura l\'orario',
       'help' => 'Orario di disponibilità del medico',
+=======
+      'helper_text' => 'Data e ora dell\'ultimo accesso all\'app',
+    ),
+    'reset_filters' => 
+    array (
+      'label' => 'Azzera Filtri',
+    ),
+    'apply_filters' => 
+    array (
+      'label' => 'Applica Filtri',
+    ),
+    'open_filters' => 
+    array (
+      'label' => 'Apri Filtri',
+    ),
+    'toggle_columns' => 
+    array (
+      'label' => 'Mostra/Nascondi Colonne',
+    ),
+    'reorder_records' => 
+    array (
+      'label' => 'Riordina Record',
+    ),
+    'applyFilters' => 
+    array (
+      'label' => 'applyFilters',
+>>>>>>> f3e4ec66 (.)
     ),
     'toggleColumns' => 
     array (
@@ -141,6 +235,7 @@ return array (
     array (
       'label' => 'reorderRecords',
     ),
+<<<<<<< HEAD
     'resetFilters' => 
     array (
       'label' => 'resetFilters',
@@ -198,27 +293,48 @@ return array (
       'modal_description' => 'Conferma la verifica della documentazione del professionista',
       'success' => 'Medico verificato con successo',
       'error' => 'Errore durante la verifica del medico',
+=======
+  ),
+  'actions' => 
+  array (
+    'verify' => 
+    array (
+      'label' => 'Verifica',
+      'icon' => 'heroicon-o-check-circle',
+      'tooltip' => 'Verifica la documentazione del medico',
+>>>>>>> f3e4ec66 (.)
     ),
     'deactivate' => 
     array (
       'label' => 'Disattiva',
+<<<<<<< HEAD
       'tooltip' => 'Disattiva temporaneamente il medico',
       'confirmation' => 'Sei sicuro di voler disattivare questo medico?',
       'success' => 'Medico disattivato con successo',
       'error' => 'Errore durante la disattivazione del medico',
+=======
+      'icon' => 'heroicon-o-x-circle',
+      'tooltip' => 'Disattiva temporaneamente il medico',
+>>>>>>> f3e4ec66 (.)
     ),
     'send_notification' => 
     array (
       'label' => 'Invia Notifica',
+<<<<<<< HEAD
       'tooltip' => 'Invia una notifica push al medico',
       'modal_heading' => 'Invia Notifica',
       'modal_description' => 'Scrivi il messaggio da inviare al medico',
       'success' => 'Notifica inviata con successo',
       'error' => 'Errore durante l\'invio della notifica',
+=======
+      'icon' => 'heroicon-o-bell',
+      'tooltip' => 'Invia una notifica push al medico',
+>>>>>>> f3e4ec66 (.)
     ),
     'view_appointments' => 
     array (
       'label' => 'Vedi Appuntamenti',
+<<<<<<< HEAD
       'tooltip' => 'Visualizza gli appuntamenti del medico',
     ),
     'change_schedule' => 
@@ -260,26 +376,40 @@ return array (
       'label' => 'Riordina Record',
       'tooltip' => 'Riordina i record della tabella',
     ),
+=======
+      'icon' => 'heroicon-o-calendar-days',
+      'tooltip' => 'Visualizza gli appuntamenti del medico',
+    ),
+>>>>>>> f3e4ec66 (.)
   ),
   'filters' => 
   array (
     'active' => 
     array (
       'label' => 'Solo Attivi',
+<<<<<<< HEAD
       'placeholder' => 'Filtra per medici attivi',
       'help' => 'Mostra solo i medici attualmente attivi',
+=======
+>>>>>>> f3e4ec66 (.)
     ),
     'verified' => 
     array (
       'label' => 'Solo Verificati',
+<<<<<<< HEAD
       'placeholder' => 'Filtra per medici verificati',
       'help' => 'Mostra solo i medici con documentazione verificata',
+=======
+>>>>>>> f3e4ec66 (.)
     ),
     'specialization' => 
     array (
       'label' => 'Per Specializzazione',
+<<<<<<< HEAD
       'placeholder' => 'Seleziona specializzazione',
       'help' => 'Filtra per specializzazione medica',
+=======
+>>>>>>> f3e4ec66 (.)
     ),
   ),
   'bulk_actions' => 
@@ -287,19 +417,27 @@ return array (
     'verify_selected' => 
     array (
       'label' => 'Verifica Selezionati',
+<<<<<<< HEAD
       'tooltip' => 'Verifica tutti i medici selezionati',
       'confirmation' => 'Sei sicuro di voler verificare tutti i medici selezionati?',
       'success' => 'Medici verificati con successo',
       'error' => 'Errore durante la verifica dei medici',
+=======
+      'icon' => 'heroicon-o-check-circle',
+>>>>>>> f3e4ec66 (.)
     ),
     'send_notification_selected' => 
     array (
       'label' => 'Notifica Selezionati',
+<<<<<<< HEAD
       'tooltip' => 'Invia notifica a tutti i medici selezionati',
       'modal_heading' => 'Notifica Multipla',
       'modal_description' => 'Scrivi il messaggio da inviare a tutti i medici selezionati',
       'success' => 'Notifiche inviate con successo',
       'error' => 'Errore durante l\'invio delle notifiche',
+=======
+      'icon' => 'heroicon-o-bell',
+>>>>>>> f3e4ec66 (.)
     ),
   ),
   'messages' => 
@@ -307,6 +445,7 @@ return array (
     'verified_successfully' => 'Medico verificato con successo',
     'deactivated_successfully' => 'Medico disattivato con successo',
     'notification_sent' => 'Notifica inviata con successo',
+<<<<<<< HEAD
     'empty_state' => 'Nessun medico trovato',
     'loading' => 'Caricamento medici in corso...',
   ),
@@ -345,4 +484,9 @@ return array (
     'description' => 'Non sono stati trovati medici corrispondenti ai criteri di ricerca',
     'action' => 'Aggiungi il primo medico',
   ),
+=======
+    'verification_required' => 'È necessaria la verifica della documentazione',
+  ),
+  'search_placeholder' => 'Cerca per nome, email, telefono o numero iscrizione...',
+>>>>>>> f3e4ec66 (.)
 );

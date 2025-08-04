@@ -29,12 +29,17 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * Modello pivot per la relazione many-to-many tra Doctor e Studio.
+<<<<<<< HEAD
  *
 >>>>>>> 2bcfd382 (fix Address)
+=======
+ * 
+>>>>>>> f3e4ec66 (.)
  * IMPORTANTE: Questa relazione attraversa database differenti:
  * - Doctor risiede nel database 'user'
  * - Studio risiede nel database 'salute_ora'
  * - DoctorStudio deve utilizzare la stessa connessione di Studio
+<<<<<<< HEAD
 <<<<<<< HEAD
  * 
  * Estende BasePivot per garantire compatibilità con belongsToManyX e policy Xot.
@@ -44,6 +49,11 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * Estende BasePivot per garantire compatibilità con belongsToManyX e policy Xot.
  * 
 >>>>>>> 2bcfd382 (fix Address)
+=======
+ * 
+ * Estende BasePivot per garantire compatibilità con belongsToManyX e policy Xot.
+ *
+>>>>>>> f3e4ec66 (.)
  * @property int $id
  * @property string $doctor_id
  * @property string $studio_id
@@ -58,6 +68,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property-read \Modules\SaluteOra\Models\Doctor $doctor
  * @property-read \Modules\SaluteOra\Models\Studio $studio
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3e4ec66 (.)
  * @property string|null $type
  * @property string $user_id
  * @property-read \Modules\SaluteOra\Models\Profile|null $creator
@@ -77,7 +90,10 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DoctorStudio whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DoctorStudio whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DoctorStudio whereUserId($value)
+<<<<<<< HEAD
  * @property-read \Modules\SaluteOra\Models\User|null $user
+=======
+>>>>>>> f3e4ec66 (.)
  * @mixin \Eloquent
  */
 class DoctorStudio extends StudioUser

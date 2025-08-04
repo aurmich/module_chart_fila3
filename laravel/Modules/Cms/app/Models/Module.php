@@ -18,9 +18,12 @@ use Sushi\Sushi;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  *
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
  * @method static ModuleFactory  factory($count = null, $state = [])
  * @method static Builder|Module newModelQuery()
  * @method static Builder|Module newQuery()
@@ -28,9 +31,12 @@ use Sushi\Sushi;
  * @method static Builder|Module whereId($value)
  * @method static Builder|Module whereName($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  *
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
  * @mixin IdeHelperModule
  * @mixin \Eloquent
  */

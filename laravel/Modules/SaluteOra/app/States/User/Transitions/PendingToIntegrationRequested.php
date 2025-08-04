@@ -4,8 +4,12 @@ namespace Modules\SaluteOra\States\User\Transitions;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
+=======
+use Illuminate\Support\Str;
+>>>>>>> f3e4ec66 (.)
 use Modules\SaluteOra\Models\User;
 use Spatie\ModelStates\Transition;
 use Modules\SaluteOra\States\User\Pending;
@@ -66,12 +70,27 @@ class PendingToIntegrationRequested extends Transition
             $this->user,
             $this->user->type->value . '_integration_requested'
         );
+        if($this->user->remember_token==null){
+            $this->user->remember_token = Str::random(40);
+            $this->user->save();
+        }
 
-        $notify = $notify->mergeData(['message' => $this->message]);
+        $register_url = route('register.type',[
+            'type'=>$this->user->type->value,
+            'email'=>$this->user->email,
+            'token'=>$this->user->remember_token,
+        ]);
+
+        $data = [
+            'message' => $this->message,
+            'register_url' => $register_url,
+        ];
+        dddx($data);
+        $notify = $notify->mergeData($data);
         Notification::route('mail', $this->user->email)
             //->locale('it')
             ->notify($notify);
-dddx('a');
+        dddx('a');
         $this->user->state = new IntegrationRequested($this->user);
         $this->user->save();
 

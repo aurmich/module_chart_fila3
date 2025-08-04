@@ -29,9 +29,12 @@ use Illuminate\Support\Carbon;
  * @property string      $group
  * @property string|null $item
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  *
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
  * @method static \Illuminate\Database\Eloquent\Builder|Translation   newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Translation   newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Translation   ofTranslatedGroup(string $group)
@@ -51,6 +54,7 @@ use Illuminate\Support\Carbon;
  * @method static \Illuminate\Database\Eloquent\Builder|Translation   whereValue($value)
  * @method static \Modules\Lang\Database\Factories\TranslationFactory factory($count = null, $state = [])
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
 =======
@@ -59,6 +63,10 @@ use Illuminate\Support\Carbon;
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  *
 >>>>>>> 54f4fa16 (.)
+=======
+ * @property \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+>>>>>>> f3e4ec66 (.)
  * @mixin \Eloquent
  */
 class Translation extends BaseModel

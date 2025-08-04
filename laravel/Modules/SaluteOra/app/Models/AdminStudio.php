@@ -11,7 +11,13 @@ use Parental\HasParent;
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
+=======
+/**
+ * 
+ *
+>>>>>>> f3e4ec66 (.)
  * @property string $id
  * @property string|null $type
  * @property string $user_id
@@ -41,8 +47,11 @@ use Parental\HasParent;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|AdminStudio whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|AdminStudio whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|AdminStudio whereUserId($value)
+<<<<<<< HEAD
  * @property-read \Modules\SaluteOra\Models\Studio|null $studio
  * @property-read User|null $user
+=======
+>>>>>>> f3e4ec66 (.)
  * @mixin \Eloquent
  */
 class AdminStudio extends StudioUser

@@ -24,9 +24,12 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null                     $created_by
  * @property \Illuminate\Support\Carbon|null $deleted_at
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  *
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
  * @method static \Modules\Gdpr\Database\Factories\TreatmentFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|Treatment   newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Treatment   newQuery()
@@ -42,17 +45,23 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static \Illuminate\Database\Eloquent\Builder|Treatment   whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Treatment   whereWeight($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  *
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
  * @property string|null                     $updated_by
  * @property string|null                     $created_by
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * @property string|null                     $deleted_by
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  *
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
  * @method static \Illuminate\Database\Eloquent\Builder|Treatment newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Treatment newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Treatment query()
@@ -97,12 +106,16 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static \Illuminate\Database\Eloquent\Builder|Treatment whereDeletedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Treatment whereUpdatedBy($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property string|null $deleted_by
 =======
  *
  * @property string|null $deleted_by
  *
 >>>>>>> 54f4fa16 (.)
+=======
+ * @property string|null $deleted_by
+>>>>>>> f3e4ec66 (.)
  * @method static \Modules\Gdpr\Database\Factories\TreatmentFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|Treatment   newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Treatment   newQuery()
@@ -122,6 +135,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static \Illuminate\Database\Eloquent\Builder|Treatment   whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Treatment   whereWeight($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
 =======
@@ -130,6 +144,10 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property ProfileContract|null $updater
  *
 >>>>>>> 54f4fa16 (.)
+=======
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+>>>>>>> f3e4ec66 (.)
  * @mixin \Eloquent
  */
 class Treatment extends BaseModel

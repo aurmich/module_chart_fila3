@@ -16,10 +16,14 @@ use Modules\Tenant\Traits\BelongsToTenant;
  * Modello Treatment per la gestione dei trattamenti odontoiatrici.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
  * 
 >>>>>>> 8e4d163b (phpstan)
+=======
+ *
+>>>>>>> f3e4ec66 (.)
  * @property int $id
  * @property int|null $tenant_id
  * @property int $patient_id
@@ -42,6 +46,9 @@ use Modules\Tenant\Traits\BelongsToTenant;
  * @property-read Dentist|null $dentist
  * @property-read Appointment|null $appointment
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3e4ec66 (.)
  * @property string $user_id
  * @property string|null $updated_by
  * @property string|null $created_by
@@ -83,10 +90,13 @@ use Modules\Tenant\Traits\BelongsToTenant;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Treatment withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Treatment withoutTrashed()
  * @mixin \Eloquent
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 8e4d163b (phpstan)
+=======
+>>>>>>> f3e4ec66 (.)
  */
 class Treatment extends BaseModel
 {

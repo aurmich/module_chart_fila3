@@ -5,13 +5,18 @@
 
 /**
  * A helper file for Laravel, to provide autocomplete information to your IDE
+<<<<<<< HEAD
  * Generated for Laravel 12.20.0.
+=======
+ * Generated for Laravel 12.17.0.
+>>>>>>> f3e4ec66 (.)
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
  */
+<<<<<<< HEAD
 namespace Illuminate\Support\Facades {
     /**
      * 
@@ -41212,6 +41217,10 @@ namespace  {
     class Crypt extends \Illuminate\Support\Facades\Crypt {}
     class Date extends \Illuminate\Support\Facades\Date {}
     class DB extends \Illuminate\Support\Facades\DB {}
+=======
+
+namespace  {
+>>>>>>> f3e4ec66 (.)
 
     /**
      * 
@@ -45704,7 +45713,11 @@ namespace  {
          * Get the count of the total records for the paginator.
          *
          * @param array<string|\Illuminate\Contracts\Database\Query\Expression> $columns
+<<<<<<< HEAD
          * @return int<0, max> 
+=======
+         * @return int 
+>>>>>>> f3e4ec66 (.)
          * @static 
          */
         public static function getCountForPagination($columns = [])
@@ -45779,7 +45792,11 @@ namespace  {
          * Retrieve the "count" result of the query.
          *
          * @param \Illuminate\Contracts\Database\Query\Expression|string $columns
+<<<<<<< HEAD
          * @return int<0, max> 
+=======
+         * @return int 
+>>>>>>> f3e4ec66 (.)
          * @static 
          */
         public static function count($columns = '*')
@@ -45896,7 +45913,11 @@ namespace  {
         /**
          * Insert new records into the database while ignoring errors.
          *
+<<<<<<< HEAD
          * @return int<0, max> 
+=======
+         * @return int 
+>>>>>>> f3e4ec66 (.)
          * @static 
          */
         public static function insertOrIgnore($values)
@@ -45973,7 +45994,11 @@ namespace  {
          *
          * @param array<string, float|int|numeric-string> $columns
          * @param array<string, mixed> $extra
+<<<<<<< HEAD
          * @return int<0, max> 
+=======
+         * @return int 
+>>>>>>> f3e4ec66 (.)
          * @throws \InvalidArgumentException
          * @static 
          */
@@ -45988,7 +46013,11 @@ namespace  {
          *
          * @param array<string, float|int|numeric-string> $columns
          * @param array<string, mixed> $extra
+<<<<<<< HEAD
          * @return int<0, max> 
+=======
+         * @return int 
+>>>>>>> f3e4ec66 (.)
          * @throws \InvalidArgumentException
          * @static 
          */
@@ -46548,6 +46577,7 @@ namespace  {
         }
 
 }
+<<<<<<< HEAD
     class Event extends \Illuminate\Support\Facades\Event {}
     class File extends \Illuminate\Support\Facades\File {}
     class Gate extends \Illuminate\Support\Facades\Gate {}
@@ -46602,7 +46632,14 @@ namespace Facades\Livewire\Features\SupportFileUploads {
     /**
      * @mixin \Livewire\Features\SupportFileUploads\GenerateSignedUploadUrl     */
     class GenerateSignedUploadUrl extends \Livewire\Features\SupportFileUploads\GenerateSignedUploadUrl {}
+=======
+>>>>>>> f3e4ec66 (.)
 }
 
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> f3e4ec66 (.)

@@ -17,6 +17,8 @@ use Spatie\MailTemplates\Interfaces\MailTemplateInterface;
 use Spatie\MailTemplates\Models\MailTemplate as SpatieMailTemplate;
 
 /**
+ * 
+ *
  * @property int $id
  * @property string $mailable
  * @property string|null $subject
@@ -29,6 +31,9 @@ use Spatie\MailTemplates\Models\MailTemplate as SpatieMailTemplate;
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Notify\Models\MailTemplateVersion> $versions
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Notify\Models\MailTemplateLog> $logs
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3e4ec66 (.)
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_by
@@ -57,6 +62,7 @@ use Spatie\MailTemplates\Models\MailTemplate as SpatieMailTemplate;
  * @method static Builder<static>|MailTemplate whereTextTemplate($value)
  * @method static Builder<static>|MailTemplate whereUpdatedAt($value)
  * @method static Builder<static>|MailTemplate whereUpdatedBy($value)
+<<<<<<< HEAD
  * @property string|null $params
  * @method static Builder<static>|MailTemplate whereParams($value)
  * @property array<array-key, mixed>|null $sms_template
@@ -66,6 +72,9 @@ use Spatie\MailTemplates\Models\MailTemplate as SpatieMailTemplate;
  * @mixin \Eloquent
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+ * @mixin \Eloquent
+>>>>>>> f3e4ec66 (.)
  */
 class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
 {

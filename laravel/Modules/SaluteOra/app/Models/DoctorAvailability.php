@@ -20,6 +20,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\Xot\Enums\DayOfWeek;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f3e4ec66 (.)
 /**
  * 
  *
@@ -38,8 +41,11 @@ use Modules\Xot\Enums\DayOfWeek;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DoctorAvailability query()
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> f3e4ec66 (.)
 class DoctorAvailability extends BaseModel
 {
     protected $fillable = [
