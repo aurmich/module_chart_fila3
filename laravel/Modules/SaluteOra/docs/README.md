@@ -497,6 +497,7 @@ Per dettagli e motivazioni vedi:
 - Vedi anche: [filament-resources.md](filament-resources.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## ⚠️ REGOLA CRITICA: getTableColumns() Obbligatorio in ListRecords
 
 **Problema ricorrente (PATTERN SISTEMICO):** `BadMethodCallException: Method getTableColumns does not exist`
@@ -505,14 +506,26 @@ Per dettagli e motivazioni vedi:
 1. ✅ **ListAppointments** → [Fix dettagliato](list_appointments_gettablecolumns_fix.md)
 2. ✅ **ListAppointmentWorkflows** → [Fix dettagliato](list_appointment_workflows_gettablecolumns_fix.md)
 3. ⚠️ **Prossimi probabili**: ListPatients, ListDoctors, ListStudios, ListTreatments
+=======
+## ⚠️ REGOLA CRITICA: getTableColumns() Obbligatorio in ListRecords
+
+**Problema ricorrente:** `BadMethodCallException: Method getTableColumns does not exist`
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 - Tutte le pagine che estendono `XotBaseListRecords` DEVONO implementare il metodo `getTableColumns()`.
 - Il metodo deve restituire un array associativo con chiavi stringa (nome campo).
 - Le colonne vanno ricavate dal modello e dalla migrazione, senza inventare campi.
 - Le etichette sono gestite solo tramite i file di traduzione del modulo (mai ->label()).
+<<<<<<< HEAD
 - Badge colorati semantici per stati e tipi.
 - **Motivazione:** coerenza, automazione, DRY, compatibilità con TableLayoutEnum e HasXotTable.
 
+=======
+- **Motivazione:** coerenza, automazione, DRY, compatibilità con TableLayoutEnum e HasXotTable.
+
+**Fix implementato:** [ListAppointments getTableColumns](list_appointments_gettablecolumns_fix.md)
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 **Template obbligatorio:**
 ```php
 public function getTableColumns(): array
@@ -537,8 +550,11 @@ public function getTableColumns(): array
 - [.cursor/rules/gettablecolumns_mandatory_fix.mdc](../../../.cursor/rules/gettablecolumns_mandatory_fix.mdc)
 - [.windsurf/rules/gettablecolumns_mandatory_fix.mdc](../../../.windsurf/rules/gettablecolumns_mandatory_fix.mdc)
 
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 ## Regola fondamentale: aggiornamento documentazione e XotBaseResource
 
 - Prima di ogni implementazione o modifica, aggiornare sempre la documentazione nelle cartelle docs del modulo coinvolto.

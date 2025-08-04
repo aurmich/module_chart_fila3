@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regole Windsurf per Laraxot <nome progetto>
 =======
 # Regole Windsurf per Laraxot PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+# Regole Windsurf per Laraxot <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Architettura e Namespace
 - Ogni modello concreto di un modulo deve estendere **esclusivamente** `BaseModel` del proprio modulo
@@ -18,10 +22,14 @@
   /**
    * Get the attributes that should be cast.
 <<<<<<< HEAD
+<<<<<<< HEAD
    *
 =======
    * 
 >>>>>>> d23ba493 (add calendar)
+=======
+   *
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
    * @return array<string, string>
    */
   protected function casts(): array
@@ -59,10 +67,14 @@
 
 ## PHPStan
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Eseguire PHPStan sempre dalla directory Laravel root: `/var/www/html/<nome progetto>/laravel`
 =======
 - Eseguire PHPStan sempre dalla directory Laravel root: `/var/www/html/ptvx/laravel`
 >>>>>>> d23ba493 (add calendar)
+=======
+- Eseguire PHPStan sempre dalla directory Laravel root: `/var/www/html/<nome progetto>/laravel`
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 - Usare `./vendor/bin/phpstan` (mai `php artisan test:phpstan`)
 - Livello minimo: 9
 - Correggere subito errori di tipizzazione:

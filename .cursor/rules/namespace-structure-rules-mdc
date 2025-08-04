@@ -205,14 +205,18 @@ Esempio:
 ```php
 // Corretto
 <<<<<<< HEAD
+<<<<<<< HEAD
 Modules/<nome progetto>/app/Actions/Patient/Calendar/FetchEventsAction.php
 // Errato
 Modules/<nome progetto>/Actions/Patient/Calendar/FetchEventsAction.php
 ```
 =======
 Modules/SaluteOra/app/Actions/Patient/Calendar/FetchEventsAction.php
+=======
+Modules/<nome progetto>/app/Actions/Patient/Calendar/FetchEventsAction.php
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 // Errato
-Modules/SaluteOra/Actions/Patient/Calendar/FetchEventsAction.php
+Modules/<nome progetto>/Actions/Patient/Calendar/FetchEventsAction.php
 ```
 >>>>>>> ca5e1eaf (.)
 >>>>>>> 3b8e8240 (fix case cursor and windsurf)

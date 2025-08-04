@@ -1,18 +1,26 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description: Rules for implementing and extending ServiceProviders in Laraxot <nome progetto>
 =======
 description: Rules for implementing and extending ServiceProviders in Laraxot PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+description: Rules for implementing and extending ServiceProviders in Laraxot <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 globs: ["**/Providers/*ServiceProvider.php", "**/Providers/Filament/*Provider.php"]
 alwaysApply: true
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ServiceProvider Implementation Rules in Laraxot <nome progetto>
 =======
 # ServiceProvider Implementation Rules in Laraxot PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+# ServiceProvider Implementation Rules in Laraxot <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Core Principles
 
@@ -66,10 +74,14 @@ class {ModuleName}ServiceProvider extends XotBaseServiceProvider
     {
         parent::boot();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         // ONLY add module-specific customizations here
         // Do NOT duplicate functionality already provided by XotBaseServiceProvider
     }
@@ -87,10 +99,14 @@ class {ModuleName}ServiceProvider extends XotBaseServiceProvider
     {
         parent::register();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         // ONLY register module-specific services not handled by XotBaseServiceProvider
     }
 }
@@ -198,10 +214,14 @@ ONLY add these module-specific customizations:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 cd /var/www/html/<nome progetto>/laravel
 =======
 cd /var/www/html/ptvx/laravel
 >>>>>>> d23ba493 (add calendar)
+=======
+cd /var/www/html/<nome progetto>/laravel
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 ./vendor/bin/phpstan analyze Modules/{ModuleName}/Providers --level=9
 ```
 
@@ -212,7 +232,11 @@ cd /var/www/html/ptvx/laravel
 - Create bidirectional links between module docs and root docs
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Last updated: June 2025*
 =======
 *Last updated: June 2025*
 >>>>>>> d23ba493 (add calendar)
+=======
+*Last updated: June 2025*
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

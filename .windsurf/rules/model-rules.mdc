@@ -1,18 +1,26 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description: Regole complete per l'implementazione dei modelli in Laraxot/<nome progetto>
 =======
 description: Regole complete per l'implementazione dei modelli in Laraxot/PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+description: Regole complete per l'implementazione dei modelli in Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 globs: ["**/*.php", "**/Models/*.php"]
 alwaysApply: true
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regole per i Modelli in Laraxot/<nome progetto>
 =======
 # Regole per i Modelli in Laraxot/PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+# Regole per i Modelli in Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Principi Fondamentali
 
@@ -85,10 +93,14 @@ class PerformanceIndividuale extends BaseModel
         'valutatore_id',
     ];
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     // resto dell'implementazione...
 }
 ```
@@ -381,7 +393,11 @@ class OrganizzativaTotStabi extends BaseModel
 - Documentare tutte le proprietà con PHPDoc appropriato
 - Mantenere coerenza nei namespace e nelle importazioni
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Utilizzare type-hint per tutti i parametri dei metodi
 =======
 - Utilizzare type-hint per tutti i parametri dei metodi
 >>>>>>> d23ba493 (add calendar)
+=======
+- Utilizzare type-hint per tutti i parametri dei metodi
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

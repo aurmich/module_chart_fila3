@@ -1,13 +1,18 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description: Rules for FullCalendar component implementation in Laraxot/<nome progetto> projects
 =======
 description: Rules for FullCalendar component implementation in Laraxot/PTVX projects
 >>>>>>> d23ba493 (add calendar)
+=======
+description: Rules for FullCalendar component implementation in Laraxot/<nome progetto> projects
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 globs: ["**/Filament/Widgets/*Calendar*.php", "**/resources/views/**/*calendar*.blade.php", "**/Models/Event.php", "**/Controllers/**/*Calendar*Controller.php"]
 alwaysApply: true
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 # FullCalendar Implementation Rules in Laraxot/<nome progetto>
 
@@ -17,6 +22,11 @@ alwaysApply: true
 
 > **IMPORTANT NOTE**: This document is the official reference for implementing the Saade FullCalendar component for Filament in Laraxot PTVX projects. The rules defined here must be strictly followed in all implementations.
 >>>>>>> d23ba493 (add calendar)
+=======
+# FullCalendar Implementation Rules in Laraxot/<nome progetto>
+
+> **IMPORTANT NOTE**: This document is the official reference for implementing the Saade FullCalendar component for Filament in Laraxot <nome progetto> projects. The rules defined here must be strictly followed in all implementations.
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Core Principles
 
@@ -49,10 +59,14 @@ class ModuleNameCalendarWidget extends BaseCalendarWidget
      */
     protected string $model = Event::class;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Configure widget properties.
      *
@@ -62,10 +76,14 @@ class ModuleNameCalendarWidget extends BaseCalendarWidget
     {
         parent::setUp();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         $this->selectable(true)
             ->editable(true)
             ->timezone(config('app.timezone'))
@@ -94,20 +112,28 @@ public function getFormSchema(): array
             ->helperText(__('modulename::calendar.fields.title.help'))
             ->required(),
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         Forms\Components\Grid::make()
             ->schema([
                 Forms\Components\DateTimePicker::make('start_date')
                     ->label(__('modulename::calendar.fields.start_date.label'))
                     ->required(),
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
                     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
                 Forms\Components\DateTimePicker::make('end_date')
                     ->label(__('modulename::calendar.fields.end_date.label'))
                     ->required(),
@@ -127,10 +153,14 @@ public function getFormSchema(): array
             ->label('Title') // Hardcoded string
             ->placeholder('Enter an event title'), // Hardcoded string
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         Forms\Components\DateTimePicker::make('start_date')
             ->label('Start date'), // Hardcoded string
     ];
@@ -296,10 +326,14 @@ public function eventDidMount(): string
         el.setAttribute("x-tooltip", "tooltip");
         el.setAttribute("x-data", "{ tooltip: '"+event.extendedProps.description || event.title+"' }");
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         // Appearance customization
         if (event.extendedProps.priority === 'high') {
             el.classList.add('border-red-500', 'border-l-4');
@@ -390,10 +424,14 @@ public function setUp(): void
 {
     parent::setUp();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     $this->selectable()
         ->editable()
         ->timezone(config('app.timezone'))
@@ -409,10 +447,14 @@ public function setUp(): void
  *
  * @param array<string, mixed> $fetchInfo
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
  * 
 >>>>>>> d23ba493 (add calendar)
+=======
+ *
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
  * @return array<int, array<string, mixed>>
  */
 public function fetchEvents(array $fetchInfo): array
@@ -468,7 +510,11 @@ class Event extends \Illuminate\Database\Eloquent\Model
 - [Root Documentation](../../docs/full_calendar.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Last updated: June 2025*
 =======
 *Last updated: June 2025*
 >>>>>>> d23ba493 (add calendar)
+=======
+*Last updated: June 2025*
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

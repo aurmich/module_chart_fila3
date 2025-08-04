@@ -13,7 +13,10 @@ Invoca con `/full-check` per eseguire TUTTI i controlli di qualità in sequenza 
 
 ### 1. Setup e Preparazione
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # Verifica directory corretta
 cd /var/www/html/_bases/base_<nome progetto>/laravel
 
@@ -42,7 +45,10 @@ grep -r "extends.*Model" Modules/*/Models/ --include="*.php" | grep -v "BaseMode
 
 ```bash
 echo "🔍 Fase 2: Analisi PHPStan..."
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # Eseguito dal workflow phpstan-check
 ```
 
@@ -51,7 +57,10 @@ echo "🔍 Fase 2: Analisi PHPStan..."
 
 ```bash
 echo "🔍 Fase 3: Controllo Migrazioni..."
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # Eseguito dal workflow migration-check
 ```
 
@@ -60,7 +69,10 @@ echo "🔍 Fase 3: Controllo Migrazioni..."
 
 ```bash
 echo "🔍 Fase 4: Validazione Traduzioni..."
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # Eseguito dal workflow translation-check
 ```
 
@@ -130,7 +142,10 @@ echo "📊 Generazione Report Finale..."
 
 # Crea report di riepilogo
 cat > laraxot-quality-report.md << EOF
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # Laraxot Quality Report
 Data: $(date)
 Progetto: <nome progetto>

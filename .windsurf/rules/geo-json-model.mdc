@@ -6,17 +6,25 @@
 - I model specialistici (Region, Province, City, Cap) devono estendere la base GeoJsonModel e fornire filtri dedicati.
 - Versionare sempre il file json e documentare la struttura.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Aggiornare la documentazione di Geo/docs, Xot/docs e <nome progetto>/docs con la filosofia e la politica della scelta.
 =======
 - Aggiornare la documentazione di Geo/docs, Xot/docs e SaluteOra/docs con la filosofia e la politica della scelta.
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+- Aggiornare la documentazione di Geo/docs, Xot/docs e <nome progetto>/docs con la filosofia e la politica della scelta.
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 - Collegamenti bidirezionali tra questa rule e le docs.
 
 Vedi anche:
 - Modules/Geo/docs/geo-json-model.md
 - Xot/docs/module-structure.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 - <nome progetto>/docs/geo-integration.md
 =======
 - SaluteOra/docs/geo-integration.md
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+- <nome progetto>/docs/geo-integration.md
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

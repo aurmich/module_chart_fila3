@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # Regole per l'Uso Corretto dei Tipi di Colonna Filament
 
 ## Regola Fondamentale
@@ -100,3 +101,5 @@ Ogni volta che si aggiunge una colonna booleana:
 - [ ] Testa la visualizzazione per verificare l'assenza di errori
 
 *Ultimo aggiornamento: Dicembre 2024*
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

@@ -1,6 +1,7 @@
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 trigger: always_on
 description:
 globs:
@@ -57,6 +58,9 @@ alwaysApply: false
 >>>>>>> 3b8e8240 (fix case cursor and windsurf)
 =======
 description: Regole specifiche per le Action Filament custom in Laraxot/PTVX
+=======
+description: Regole specifiche per le Action Filament custom in Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 globs: ["**/*.php", "**/app/Filament/**/*.php", "**/Filament/**/*.php"]
 alwaysApply: true
 ---
@@ -91,7 +95,7 @@ class ApprovaAction extends Action
     protected function setUp(): void
     {
         parent::setUp();
-        
+
         $this
             ->label(trans('performance::actions.approva.label'))
             ->icon('heroicon-o-check')
@@ -101,7 +105,7 @@ class ApprovaAction extends Action
             ->modalDescription(trans('performance::actions.approva.modal_description'))
             ->successNotificationTitle(trans('performance::actions.approva.success'));
     }
-    
+
     /**
      * @param Model $record
      * @return void
@@ -135,7 +139,7 @@ return [
 protected function setUp(): void
 {
     parent::setUp();
-    
+
     $this->label('Approva')  // NO! Label hardcoded
         ->icon('heroicon-o-check');
 }
@@ -166,7 +170,7 @@ protected function setUp(): void
 protected function setUp(): void
 {
     parent::setUp();
-    
+
     $this->authorize('approve', fn (Model $record) => $record);
 }
 ```
@@ -212,4 +216,7 @@ public function table(Table $table): Table
 - Documentare sempre gli effetti collaterali delle azioni
 - Utilizzare tipizzazione rigorosa per tutti i metodi
 - Implementare autorizzazioni appropriate per ogni azione
+<<<<<<< HEAD
 >>>>>>> d23ba493 (add calendar)
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

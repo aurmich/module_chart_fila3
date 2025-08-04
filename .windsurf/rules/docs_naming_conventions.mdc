@@ -1,18 +1,26 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description: Convenzioni di naming per file e cartelle docs in Laraxot <nome progetto>
 =======
 description: Convenzioni di naming per file e cartelle docs in Laraxot PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+description: Convenzioni di naming per file e cartelle docs in Laraxot <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 globs: ["**/docs/**/*"]
 alwaysApply: true
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Convenzioni di naming per cartelle docs in Laraxot <nome progetto>
 =======
 # Convenzioni di naming per cartelle docs in Laraxot PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+# Convenzioni di naming per cartelle docs in Laraxot <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Regole fondamentali
 
@@ -71,7 +79,11 @@ Quando si crea nuova documentazione:
 4. Evitare duplicazione con documentazione esistente
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: Giugno 2025*
 =======
 *Ultimo aggiornamento: Giugno 2025*
 >>>>>>> d23ba493 (add calendar)
+=======
+*Ultimo aggiornamento: Giugno 2025*
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

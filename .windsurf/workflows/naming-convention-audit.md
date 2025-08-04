@@ -286,7 +286,10 @@ done
 echo "=== Generating Naming Report ==="
 
 cat > reports/naming_convention_report.md << 'EOF'
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # Naming Convention Audit Report
 
 Data generazione: $(date)
@@ -425,13 +428,19 @@ done
 
 ### Correzione Namespace
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # Implementare script di correzione automatica namespace
 ```
 
 ### Standardizzazione Import
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # Implementare script per rimuovere import inutili
 ```
 
@@ -523,3 +532,7 @@ echo "✅ Naming Convention Audit completed. Check reports/ directory for detail
 - [Naming Philosophy](../rules/naming_philosophy.mdc)
 - [Laravel Conventions](../rules/laravel_conventions.mdc)
 - [PSR Standards](../rules/psr_standards.mdc)
+<<<<<<< HEAD
+=======
+- [Database Standards](../rules/database_standards.mdc)
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

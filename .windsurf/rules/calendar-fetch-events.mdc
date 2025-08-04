@@ -40,10 +40,14 @@ alwaysApply: false
 
 ## Struttura del Modulo
 <<<<<<< HEAD
+<<<<<<< HEAD
 - L'azione deve essere nel modulo <nome progetto>
 =======
 - L'azione deve essere nel modulo SaluteOra
 >>>>>>> ca5e1eaf (.)
+=======
+- L'azione deve essere nel modulo <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 - Deve seguire la struttura delle azioni del modulo
 - Deve essere documentata nella cartella docs del modulo
 

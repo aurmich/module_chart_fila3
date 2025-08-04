@@ -34,7 +34,10 @@ Controlla che:
 Crea la struttura completa:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # Directory principale modulo
 mkdir -p Modules/{ModuleName}
 
@@ -617,7 +620,10 @@ Crea le pagine di base:
 Crea `Modules/{ModuleName}/README.md`:
 
 ```markdown
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # {ModuleName} Module
 
 {Descrizione dettagliata del modulo}
@@ -774,12 +780,18 @@ php artisan route:cache
 
 ### 13.3 Test Funzionalità Base
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # Test delle route
 php artisan route:list | grep {module-name-lowercase}
 
 # Test del panel Filament
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # Accedi a /{module-name-lowercase} via browser
 ```
 
@@ -789,7 +801,10 @@ php artisan route:list | grep {module-name-lowercase}
 Esegui i controlli di qualità del progetto:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # PHPStan
 ./vendor/bin/phpstan analyze Modules/{ModuleName} --level=9
 
@@ -824,3 +839,7 @@ Il nuovo modulo sarà immediatamente funzionante e conforme a tutti gli standard
 
 ---
 
+<<<<<<< HEAD
+=======
+**Workflow completato!** Il modulo {ModuleName} è ora pronto per lo sviluppo.
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

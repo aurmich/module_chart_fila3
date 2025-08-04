@@ -7,10 +7,14 @@ alwaysApply: false
 
 ## Namespace
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Il namespace deve essere `Modules\<nome progetto>\Actions\Patient\Calendar`
 =======
 - Il namespace deve essere `Modules\SaluteOra\Actions\Patient\Calendar`
 >>>>>>> 3b8e8240 (fix case cursor and windsurf)
+=======
+- Il namespace deve essere `Modules\<nome progetto>\Actions\Patient\Calendar`
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Struttura
 - La classe deve estendere `Modules\Xot\Actions\Action`

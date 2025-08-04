@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Event Sourcing Guidelines for <nome progetto>
 
 ## Overview
@@ -9,6 +10,12 @@ When implementing features in the `<nome progetto>` project, consider using even
 ## Overview
 When implementing features in the `saluteora` project, consider using event sourcing for modules where auditability and historical tracking are critical, such as patient management, appointments, and billing.
 >>>>>>> 54f4fa16 (.)
+=======
+# Event Sourcing Guidelines for <nome progetto>
+
+## Overview
+When implementing features in the `<nome progetto>` project, consider using event sourcing for modules where auditability and historical tracking are critical, such as patient management, appointments, and billing.
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Implementation Rules
 - **Use Spatie Package**: Always use `spatie/laravel-event-sourcing` for event sourcing implementation.
@@ -53,7 +60,11 @@ class PatientProjector implements Projector {
 - Log every state-changing action as an event to comply with healthcare regulations.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Follow these guidelines to ensure a consistent and compliant event sourcing implementation in `<nome progetto>`.
 =======
 Follow these guidelines to ensure a consistent and compliant event sourcing implementation in `saluteora`.
 >>>>>>> 54f4fa16 (.)
+=======
+Follow these guidelines to ensure a consistent and compliant event sourcing implementation in `<nome progetto>`.
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

@@ -29,10 +29,14 @@ All forms in the system must be implemented using Filament widgets. No duplicate
 
 # ✅ Correct
 <<<<<<< HEAD
+<<<<<<< HEAD
 @livewire(\Modules\<nome progetto>\Filament\Widgets\Patient\FindDoctorAndAppointmentWidget::class)
 =======
 @livewire(\Modules\SaluteOra\Filament\Widgets\Patient\FindDoctorAndAppointmentWidget::class)
 >>>>>>> f5caa3ff (add ai rules)
+=======
+@livewire(\Modules\<nome progetto>\Filament\Widgets\Patient\FindDoctorAndAppointmentWidget::class)
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 ```
 
 ## Related

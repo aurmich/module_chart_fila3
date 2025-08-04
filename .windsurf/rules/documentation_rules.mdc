@@ -1,13 +1,18 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description: Regole per la documentazione in Laraxot <nome progetto>
 =======
 description: Regole per la documentazione in Laraxot PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+description: Regole per la documentazione in Laraxot <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 globs: ["**/docs/**/*.md", "docs/**/*.md"]
 alwaysApply: true
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 # Regole per la Documentazione in Laraxot <nome progetto>
 
@@ -21,6 +26,13 @@ alwaysApply: true
 
 ### Root Documentation (/var/www/html/ptvx/docs/)
 >>>>>>> d23ba493 (add calendar)
+=======
+# Regole per la Documentazione in Laraxot <nome progetto>
+
+## Struttura Documentazione
+
+### Root Documentation (/var/www/html/<nome progetto>/docs/)
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 Contiene documentazione globale del progetto:
 - Linee guida architetturali
 - Convenzioni di codice
@@ -162,7 +174,11 @@ Schema::table('performance_organizzativa', function (Blueprint $table) {
 - [Modules/Performance/docs/doc_guidelines.md](mdc:../../laravel/Modules/Performance/docs/doc_guidelines.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: maggio 2025*
 =======
 *Ultimo aggiornamento: maggio 2025*
 >>>>>>> d23ba493 (add calendar)
+=======
+*Ultimo aggiornamento: maggio 2025*
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

@@ -1,18 +1,26 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description: Rules for implementing and structuring translation files in Laraxot <nome progetto>
 =======
 description: Rules for implementing and structuring translation files in Laraxot PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+description: Rules for implementing and structuring translation files in Laraxot <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 globs: ["**/lang/**/*.php", "**/resources/lang/**/*.php"]
 alwaysApply: true
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Translation Files Implementation Rules in Laraxot <nome progetto>
 =======
 # Translation Files Implementation Rules in Laraxot PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+# Translation Files Implementation Rules in Laraxot <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Core Principles
 
@@ -41,20 +49,28 @@ return [
         'sort' => 50,
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     'page' => [
         'title' => 'Title in target language',
         'heading' => 'Heading in target language',
         'description' => 'Description in target language',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     'fields' => [
         'field_name' => [
             'label' => 'Field label in target language',
@@ -64,10 +80,14 @@ return [
         // Other fields...
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     'actions' => [
         'action_name' => [
             'label' => 'Action label in target language',
@@ -78,19 +98,27 @@ return [
         // Other actions...
     ],
 <<<<<<< HEAD
-
-=======
-    
->>>>>>> d23ba493 (add calendar)
-    'validation' => [
-        'error_type' => 'Validation error message in target language',
-        // Other validation messages...
-    ],
 <<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+    'validation' => [
+        'error_type' => 'Validation error message in target language',
+        // Other validation messages...
+    ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     'messages' => [
         'message_key' => 'Message in target language',
         // Other messages...
@@ -160,7 +188,11 @@ All action translations MUST include:
 - Ensure all user-facing text comes from translation files, never hardcoded
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Last updated: June 2025*
 =======
 *Last updated: June 2025*
 >>>>>>> d23ba493 (add calendar)
+=======
+*Last updated: June 2025*
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

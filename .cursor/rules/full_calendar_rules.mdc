@@ -1,18 +1,26 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description: Regole per l'implementazione del componente FullCalendar di Saade per Filament in Laraxot <nome progetto>
 =======
 description: Regole per l'implementazione del componente FullCalendar di Saade per Filament in Laraxot PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+description: Regole per l'implementazione del componente FullCalendar di Saade per Filament in Laraxot <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 globs: ["**/Filament/Widgets/*Calendar*.php", "**/Models/Evento.php"]
 alwaysApply: true
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regole per il Componente FullCalendar in Laraxot <nome progetto>
 =======
 # Regole per il Componente FullCalendar in Laraxot PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+# Regole per il Componente FullCalendar in Laraxot <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Struttura di Base
 
@@ -138,10 +146,14 @@ public function getFormSchema(): array
  *
  * @param array<string, mixed> $fetchInfo
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
  * 
 >>>>>>> d23ba493 (add calendar)
+=======
+ *
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
  * @return array<int, array<string, mixed>>
  */
 public function fetchEvents(array $fetchInfo): array
@@ -335,7 +347,11 @@ Tutte le implementazioni devono:
 - [Documentazione Ufficiale Saade FullCalendar](https://github.com/saade/filament-fullcalendar)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025*
 =======
 *Ultimo aggiornamento: giugno 2025*
 >>>>>>> d23ba493 (add calendar)
+=======
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

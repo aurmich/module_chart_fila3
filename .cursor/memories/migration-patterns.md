@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Pattern di Migrazione in <nome progetto>
 =======
 # Pattern di Migrazione in SaluteOra
 >>>>>>> 54f4fa16 (.)
+=======
+# Pattern di Migrazione in <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Pattern XotBaseMigration
 

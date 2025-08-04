@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Filament Best Practices for <nome progetto>
 =======
 <<<<<<< HEAD
@@ -242,24 +243,35 @@ protected function getHeaderWidgets(): array {
 =======
 # Filament Best Practices for SaluteOra
 >>>>>>> 3b8e8240 (fix case cursor and windsurf)
+=======
+# Filament Best Practices for <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Overview
 Best practice generiche per l'utilizzo di Filament in progetti Laravel modulari. Nessun riferimento a nomi di progetto o brand.
 
 <<<<<<< HEAD
-# Filament Best Practices for <nome progetto>
-=======
-# Filament Best Practices for SaluteOra
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
-
-## Overview
-Best practice generiche per l'utilizzo di Filament in progetti Laravel modulari. Nessun riferimento a nomi di progetto o brand.
-
 <<<<<<< HEAD
 # Filament Best Practices for <nome progetto>
 =======
 # Filament Best Practices for SaluteOra
 >>>>>>> 3b8e8240 (fix case cursor and windsurf)
+=======
+# Filament Best Practices for <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+
+## Overview
+Best practice generiche per l'utilizzo di Filament in progetti Laravel modulari. Nessun riferimento a nomi di progetto o brand.
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Filament Best Practices for <nome progetto>
+=======
+# Filament Best Practices for SaluteOra
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
+=======
+# Filament Best Practices for <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Overview
 Best practice generiche per l'utilizzo di Filament in progetti Laravel modulari. Nessun riferimento a nomi di progetto o brand.

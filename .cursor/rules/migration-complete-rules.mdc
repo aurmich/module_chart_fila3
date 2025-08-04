@@ -1,18 +1,26 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description: Regole dettagliate per l'implementazione e la gestione delle migrazioni nei progetti Laraxot/<nome progetto>
 =======
 description: Regole dettagliate per l'implementazione e la gestione delle migrazioni nei progetti Laraxot/PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+description: Regole dettagliate per l'implementazione e la gestione delle migrazioni nei progetti Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 globs: ["**/database/migrations/*.php"]
 alwaysApply: true
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regole per le Migrazioni in Laraxot/<nome progetto>
 =======
 # Regole per le Migrazioni in Laraxot/PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+# Regole per le Migrazioni in Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Principi Fondamentali
 
@@ -58,20 +66,28 @@ return new class() extends XotBaseMigration {
         Schema::create($this->table_name, function (Blueprint $table) {
             $table->id();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             // Campi specifici
             $table->string('nome');
             $table->string('descrizione')->nullable();
             $table->integer('quantita')->default(0);
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             // Timestamp standard
             $table->timestamps();
         });
@@ -121,10 +137,14 @@ return new class() extends XotBaseMigration {
             echo 'Colonna [email] già esistente nella tabella ['.$this->table_name.']';
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         // Aggiunge un'altra colonna se non esiste
         if (!Schema::hasColumn($this->table_name, 'telefono')) {
             Schema::table($this->table_name, function (Blueprint $table) {
@@ -172,15 +192,20 @@ return new class() extends XotBaseMigration {
         Schema::create($this->table_name, function (Blueprint $table) {
             $table->id();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             // Campi principali
             $table->string('nome');
             $table->text('descrizione')->nullable();
             $table->decimal('prezzo', 10, 2)->default(0);
             $table->integer('quantita_disponibile')->default(0);
+<<<<<<< HEAD
 <<<<<<< HEAD
 
             // Chiavi esterne e relazioni
@@ -197,19 +222,26 @@ return new class() extends XotBaseMigration {
 
 =======
             
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             // Chiavi esterne e relazioni
             $table->foreignId('categoria_id')->constrained('categorie')->onDelete('cascade');
             $table->foreignId('fornitore_id')->nullable()->constrained('fornitori')->onDelete('set null');
-            
+
             // Indici per migliorare le performance
             $table->index('nome');
             $table->index(['categoria_id', 'prezzo']);
-            
+
             // Flag e stati
             $table->boolean('is_attivo')->default(true);
             $table->enum('stato', ['disponibile', 'esaurito', 'in_arrivo'])->default('disponibile');
+<<<<<<< HEAD
             
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             // Timestamp standard
             $table->timestamps();
         });
@@ -252,6 +284,7 @@ return new class() extends XotBaseMigration {
         Schema::create($this->table_name, function (Blueprint $table) {
             $table->id();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             // Chiavi esterne
             $table->foreignId('prodotto_id')->constrained()->onDelete('cascade');
@@ -265,17 +298,24 @@ return new class() extends XotBaseMigration {
 
 =======
             
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             // Chiavi esterne
             $table->foreignId('prodotto_id')->constrained()->onDelete('cascade');
             $table->foreignId('tag_id')->constrained()->onDelete('cascade');
-            
+
             // Attributi aggiuntivi della relazione (se necessari)
             $table->integer('ordine')->default(0);
-            
+
             // Indice composito per garantire unicità
             $table->unique(['prodotto_id', 'tag_id']);
+<<<<<<< HEAD
             
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             // Timestamp standard
             $table->timestamps();
         });
@@ -326,12 +366,17 @@ che richiede codici SKU univoci e informazioni sul peso per il calcolo delle spe
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Root Docs: Struttura Database](/var/www/html/<nome progetto>/docs/database_structure.md)
 - [Modulo Prodotti: Schema](/var/www/html/<nome progetto>/Modules/Prodotti/docs/database_schema.md)
 =======
 - [Root Docs: Struttura Database](/var/www/html/ptvx/docs/database_structure.md)
 - [Modulo Prodotti: Schema](/var/www/html/ptvx/Modules/Prodotti/docs/database_schema.md)
 >>>>>>> d23ba493 (add calendar)
+=======
+- [Root Docs: Struttura Database](/var/www/html/<nome progetto>/docs/database_structure.md)
+- [Modulo Prodotti: Schema](/var/www/html/<nome progetto>/Modules/Prodotti/docs/database_schema.md)
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 ```
 
 ## Anti-pattern da Evitare
@@ -367,10 +412,14 @@ public function up(): void
         // Creazione senza verificare se la tabella esiste già
     });
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     Schema::table($this->table_name, function (Blueprint $table) {
         $table->string('email'); // Aggiunta senza verificare se la colonna esiste già
     });
@@ -497,14 +546,19 @@ return new class() extends XotBaseMigration {
             Schema::create($this->table_name, function (Blueprint $table) {
                 $table->id();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
                 
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
                 // Colonne originali
                 $table->string('nome');
                 $table->text('descrizione')->nullable();
                 $table->decimal('prezzo', 10, 2)->default(0);
+<<<<<<< HEAD
 <<<<<<< HEAD
 
                 // Nuove colonne
@@ -518,10 +572,18 @@ return new class() extends XotBaseMigration {
                 $table->decimal('peso', 8, 2)->nullable();
                 
 >>>>>>> d23ba493 (add calendar)
+=======
+
+                // Nuove colonne
+                $table->string('codice_sku')->nullable()->unique();
+                $table->decimal('peso', 8, 2)->nullable();
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
                 $table->timestamps();
             });
 
             echo 'Tabella ['.$this->table_name.'] creata con successo!';
+<<<<<<< HEAD
 <<<<<<< HEAD
 
             return;
@@ -531,12 +593,19 @@ return new class() extends XotBaseMigration {
 
 =======
             
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             return;
         }
-        
+
         // Se la tabella esiste, verifica e aggiungi solo le nuove colonne
+<<<<<<< HEAD
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         // Verifica e aggiungi codice_sku
         if (!Schema::hasColumn($this->table_name, 'codice_sku')) {
             Schema::table($this->table_name, function (Blueprint $table) {
@@ -548,10 +617,14 @@ return new class() extends XotBaseMigration {
             echo 'Colonna [codice_sku] già esistente nella tabella ['.$this->table_name.']';
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         // Verifica e aggiungi peso
         if (!Schema::hasColumn($this->table_name, 'peso')) {
             Schema::table($this->table_name, function (Blueprint $table) {
@@ -585,7 +658,11 @@ Prima di considerare completa una migrazione, verificare:
 - [ ] Segue le convenzioni di naming standard
 - [ ] Documentazione nel modulo specifico aggiornata
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] Collegamenti bidirezionali con la root docs creati/aggiornati
 =======
 - [ ] Collegamenti bidirezionali con la root docs creati/aggiornati
 >>>>>>> d23ba493 (add calendar)
+=======
+- [ ] Collegamenti bidirezionali con la root docs creati/aggiornati
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

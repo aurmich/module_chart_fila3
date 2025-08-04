@@ -3,20 +3,28 @@
 ## Context
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 This document provides metadata for Windsurf about the integration of `mcamara/laravel-localization` into the `<nome progetto>` project.
 =======
 This document provides metadata for Windsurf about the integration of `mcamara/laravel-localization` into the `saluteora` project.
 >>>>>>> 54f4fa16 (.)
+=======
+This document provides metadata for Windsurf about the integration of `mcamara/laravel-localization` into the `<nome progetto>` project.
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Key Points
 
 - **Package**: `mcamara/laravel-localization`
 - **Purpose**: Facilitate multi-language support in Laravel applications.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Suggested Actions**:
 =======
 - **Suggested Actions**: 
 >>>>>>> 54f4fa16 (.)
+=======
+- **Suggested Actions**:
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
   - Install package via Composer.
   - Update configuration files for language support.
   - Use middleware for automatic language detection and redirection.

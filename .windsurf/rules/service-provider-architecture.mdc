@@ -3,10 +3,14 @@
 ## Regola Fondamentale: "Non Avrai Altri Provider All'Infuori di XotBase"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Tutti i service provider in qualsiasi modulo del progetto <nome progetto> DEVONO estendere esclusivamente le classi base con prefisso `XotBase` fornite dal modulo Xot.
 =======
 Tutti i service provider in qualsiasi modulo del progetto SaluteOra DEVONO estendere esclusivamente le classi base con prefisso `XotBase` fornite dal modulo Xot.
 >>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
+=======
+Tutti i service provider in qualsiasi modulo del progetto <nome progetto> DEVONO estendere esclusivamente le classi base con prefisso `XotBase` fornite dal modulo Xot.
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Gerarchia delle Classi Base
 
@@ -27,10 +31,14 @@ Tutti i service provider in qualsiasi modulo del progetto SaluteOra DEVONO esten
 protected string $namespace = 'Modules\\SaluteMo\\Http\\Controllers';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CORRETTO ✅
 =======
 // CORRETTO ✅ 
 >>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
+=======
+// CORRETTO ✅
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 protected $namespace = 'Modules\\SaluteMo\\Http\\Controllers';
 ```
 
@@ -59,10 +67,14 @@ class SaluteMoServiceProvider extends XotBaseServiceProvider
      */
     public string $name = 'SaluteMo';
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Module name in lowercase
      *
@@ -70,10 +82,14 @@ class SaluteMoServiceProvider extends XotBaseServiceProvider
      */
     public string $nameLower = 'salutemo';
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Bootstrap any application services.
      *

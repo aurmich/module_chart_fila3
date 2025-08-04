@@ -1,12 +1,19 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 declare(strict_types=1);
 
 return [
     'navigation' => [
         'label' => 'Calendario Disponibilità',
+<<<<<<< HEAD
         'group' => 'Agenda',
+=======
+        'group' => 'Gestione Medici',
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         'icon' => 'heroicon-o-calendar',
         'color' => 'primary',
         'sort' => 10,
@@ -218,6 +225,7 @@ return [
         'no_doctor_selected_description' => 'Seleziona un medico per visualizzare la disponibilità',
     ],
 ];
+<<<<<<< HEAD
 =======
 return array (
   'navigation' => 
@@ -237,3 +245,5 @@ return array (
   ),
 );
 >>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

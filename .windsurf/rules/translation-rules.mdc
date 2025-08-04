@@ -1,18 +1,26 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description: Regole complete per le traduzioni in Laraxot/<nome progetto>
 =======
 description: Regole complete per le traduzioni in Laraxot/PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+description: Regole complete per le traduzioni in Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 globs: ["**/*.php", "**/*.blade.php", "**/lang/**/*.php"]
 alwaysApply: true
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regole per le Traduzioni in Laraxot/<nome progetto>
 =======
 # Regole per le Traduzioni in Laraxot/PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+# Regole per le Traduzioni in Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Principi Fondamentali
 
@@ -153,28 +161,40 @@ return [
     'navigation_sort' => 1,
     'description' => 'Gestione delle performance organizzative',
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     // Campi
     'fields' => [
         // ...
     ],
 <<<<<<< HEAD
-
-=======
-    
->>>>>>> d23ba493 (add calendar)
-    // Azioni
-    'actions' => [
-        // ...
-    ],
 <<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+    // Azioni
+    'actions' => [
+        // ...
+    ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     // Messaggi
     'messages' => [
         'saved' => 'Salvato con successo',
@@ -182,10 +202,14 @@ return [
         // ...
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     // Notifiche
     'notifications' => [
         // ...
@@ -264,7 +288,11 @@ return [
 - [ ] Parametri utilizzati per testi dinamici
 - [ ] File commentati per facilitare la manutenzione
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] Nessun componente Filament utilizza `->label()`
 =======
 - [ ] Nessun componente Filament utilizza `->label()`
 >>>>>>> d23ba493 (add calendar)
+=======
+- [ ] Nessun componente Filament utilizza `->label()`
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regole per la Struttura delle Directory nei Moduli Laraxot <nome progetto>
 =======
 # Regole per la Struttura delle Directory nei Moduli Laraxot PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+# Regole per la Struttura delle Directory nei Moduli Laraxot <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Due Principi Fondamentali
 
@@ -153,7 +157,11 @@ La struttura non influisce sul namespace. Esempio:
 2. Correggere eventuali problemi con lo script di correzione
 3. Assicurarsi che i namespace siano corretti (non includonao `App`)
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. Solo dopo questi controlli, eseguire PHPStan 
 =======
 4. Solo dopo questi controlli, eseguire PHPStan 
 >>>>>>> d23ba493 (add calendar)
+=======
+4. Solo dopo questi controlli, eseguire PHPStan 
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

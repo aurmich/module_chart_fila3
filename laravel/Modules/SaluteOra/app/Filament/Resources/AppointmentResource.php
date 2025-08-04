@@ -7,6 +7,7 @@ namespace Modules\SaluteOra\Filament\Resources;
 use Filament\Forms;
 use Filament\Tables;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\SaluteOra\Models\Dentist;
 use Modules\SaluteOra\Models\Patient;
 use Illuminate\Database\Eloquent\Builder;
@@ -17,20 +18,32 @@ use Modules\SaluteOra\Filament\Resources\AppointmentResource\Pages;
 =======
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\SaluteOra\Models\Appointment;
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 use Modules\SaluteOra\Models\Dentist;
 use Modules\SaluteOra\Models\Patient;
-use Modules\SaluteOra\Filament\Resources\AppointmentResource\Pages;
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+use Modules\SaluteOra\Models\Appointment;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\SaluteOra\Filament\Resources\PatientResource;
+use Modules\SaluteOra\Filament\Resources\AppointmentResource\Pages;
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 class AppointmentResource extends XotBaseResource
 {
     protected static ?string $model = Appointment::class;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     protected static ?string $tenantOwnershipRelationshipName = 'studio';
     //protected static ?string $tenantRelationshipName = 'studio';
     protected static bool $isScopedToTenant = true;
 
+<<<<<<< HEAD
     public static function getFormSchema(): array
     {
         return [
@@ -70,36 +83,48 @@ class AppointmentResource extends XotBaseResource
 */
 =======
     
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     public static function getFormSchema(): array
     {
         return [
+
+
             'patient_id' => Forms\Components\Select::make('patient_id')
                 ->relationship('patient', 'full_name')
                 ->searchable()
                 ->preload()
                 ->createOptionForm(
-                    fn (Forms\Get $get): array => Patient::getFormSchema()
+                    fn (Forms\Get $get): array => PatientResource::getFormSchema()
                 )
                 ->required(),
-                
-            'dentist_id' => Forms\Components\Select::make('dentist_id')
-                ->relationship('dentist', 'full_name')
+
+
+            'doctor_id' => Forms\Components\Select::make('doctor_id')
+                ->relationship('doctor', 'full_name')
                 ->searchable()
                 ->preload()
+                ->createOptionForm(
+                    fn (Forms\Get $get): array => DoctorResource::getFormSchema()
+                )
                 ->required(),
-                
+
             'start_time' => Forms\Components\DateTimePicker::make('start_time')
                 ->required(),
-                
+
             'end_time' => Forms\Components\DateTimePicker::make('end_time')
                 ->after('start_time'),
-                
+            /*
             'treatment_id' => Forms\Components\Select::make('treatment_id')
                 ->relationship('treatment', 'name')
                 ->searchable()
                 ->preload(),
+<<<<<<< HEAD
                 
 >>>>>>> 54f4fa16 (.)
+=======
+*/
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             'status' => Forms\Components\Select::make('status')
                 ->options([
                     'scheduled' => 'Programmato',
@@ -111,6 +136,7 @@ class AppointmentResource extends XotBaseResource
                 ])
                 ->default('scheduled')
                 ->required(),
+<<<<<<< HEAD
 <<<<<<< HEAD
 
             'notes' => Forms\Components\Textarea::make('notes')
@@ -124,10 +150,18 @@ class AppointmentResource extends XotBaseResource
                 ->columnSpanFull(),
                 
 >>>>>>> 54f4fa16 (.)
+=======
+
+            'notes' => Forms\Components\Textarea::make('notes')
+                ->maxLength(1000)
+                ->columnSpanFull(),
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             'eligibility_confirmed' => Forms\Components\Toggle::make('eligibility_confirmed')
                 ->default(false),
         ];
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -206,4 +240,8 @@ class AppointmentResource extends XotBaseResource
         ];
     }
 >>>>>>> 54f4fa16 (.)
+=======
+
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 }

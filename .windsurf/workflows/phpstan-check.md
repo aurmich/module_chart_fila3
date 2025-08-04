@@ -13,7 +13,10 @@ Invoca con `/phpstan-check` per eseguire una completa analisi statica del codice
 
 ### 1.1 Verifica Directory di Lavoro
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # OBBLIGATORIO: Eseguire sempre da directory Laravel
 cd /var/www/html/_bases/base_<nome progetto>/laravel
 
@@ -23,7 +26,10 @@ ls -la phpstan.neon* composer.json
 
 ### 1.2 Controllo Dipendenze
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # Verifica installazione PHPStan
 ./vendor/bin/phpstan --version
 
@@ -35,7 +41,10 @@ composer dump-autoload
 
 ### 2.1 Analisi Progetto Completo
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # Analisi livello 9 (standard minimo Laraxot)
 ./vendor/bin/phpstan analyze --level=9 --memory-limit=2G
 
@@ -45,7 +54,10 @@ composer dump-autoload
 
 ### 2.2 Analisi per Modulo Specifico
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # <nome progetto>
 ./vendor/bin/phpstan analyze Modules/<nome progetto> --level=9
 
@@ -64,7 +76,10 @@ composer dump-autoload
 
 ### 2.3 Analisi con Baseline
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # Genera baseline per errori esistenti
 ./vendor/bin/phpstan analyze --generate-baseline
 
@@ -78,7 +93,10 @@ composer dump-autoload
 Controlla che NON ci sia il segmento 'App' nei namespace:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # Cerca namespace errati nei moduli
 grep -r "namespace.*App\\" Modules/ --include="*.php" || echo "✅ Namespace corretti"
 
@@ -88,7 +106,10 @@ grep -r "use.*App\\" Modules/ --include="*.php" || echo "✅ Use statements corr
 
 ### 3.2 Verifica Ereditarietà Modelli
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # Cerca modelli che estendono direttamente Model invece di BaseModel
 grep -r "extends.*Model" Modules/*/Models/ --include="*.php" | grep -v "BaseModel" || echo "✅ Ereditarietà corretta"
 
@@ -98,7 +119,10 @@ grep -r "extends.*XotBaseModel" Modules/*/Models/ --include="*.php" | grep -v "B
 
 ### 3.3 Verifica Migrazioni
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # Cerca migrazioni che estendono Migration invece di XotBaseMigration
 grep -r "extends.*Migration" Modules/*/database/migrations/ --include="*.php" | grep -v "XotBaseMigration" || echo "✅ Migrazioni corrette"
 
@@ -110,14 +134,20 @@ grep -r "function down" Modules/*/database/migrations/ --include="*.php" || echo
 
 ### 4.1 Verifica Strict Types
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # Cerca file senza declare(strict_types=1)
 find Modules/ -name "*.php" -exec grep -L "declare(strict_types=1)" {} \; | head -10
 ```
 
 ### 4.2 Verifica PHPDoc
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # Cerca proprietà senza annotazioni nelle migrazioni
 grep -r "\$fillable" Modules/ --include="*.php" -A1 -B1 | grep -v "@var" || echo "✅ Proprietà annotate"
 ```
@@ -126,7 +156,10 @@ grep -r "\$fillable" Modules/ --include="*.php" -A1 -B1 | grep -v "@var" || echo
 
 ### 5.1 Generazione Report
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # Report dettagliato con formato table
 ./vendor/bin/phpstan analyze --level=9 --error-format=table
 
@@ -139,7 +172,10 @@ grep -r "\$fillable" Modules/ --include="*.php" -A1 -B1 | grep -v "@var" || echo
 
 ### 5.2 Controllo Performance
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # Analisi con profiling per moduli grandi
 ./vendor/bin/phpstan analyze --level=9 --memory-limit=4G --debug
 
@@ -151,14 +187,20 @@ grep -r "\$fillable" Modules/ --include="*.php" -A1 -B1 | grep -v "@var" || echo
 
 ### 6.1 Script di Pre-commit
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # Verifica solo file modificati
 git diff --cached --name-only --diff-filter=ACM | grep '\.php$' | xargs ./vendor/bin/phpstan analyze --level=9
 ```
 
 ### 6.2 Integrazione Continuous Integration
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # Per pipeline CI/CD
 ./vendor/bin/phpstan analyze --level=9 --memory-limit=2G --no-interaction --no-ansi
 ```

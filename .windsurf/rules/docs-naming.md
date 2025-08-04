@@ -16,7 +16,10 @@ All files and folders within the `docs/` directory must use lowercase characters
 
 ## Examples
 ```plaintext
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 # ❌ Wrong
 docs/ErroriGravi/
 docs/Implementazione/

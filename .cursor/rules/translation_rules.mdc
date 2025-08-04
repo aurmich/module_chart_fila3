@@ -1,18 +1,26 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description: Regole per le traduzioni in Laraxot <nome progetto>
 =======
 description: Regole per le traduzioni in Laraxot PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+description: Regole per le traduzioni in Laraxot <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 globs: ["**/lang/**/*.php"]
 alwaysApply: true
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regole per le Traduzioni in Laraxot <nome progetto>
 =======
 # Regole per le Traduzioni in Laraxot PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+# Regole per le Traduzioni in Laraxot <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Struttura Espansa per i Campi
 
@@ -85,10 +93,14 @@ return [
     'navigation_sort' => 1,
     'description' => 'Gestione completa delle organizzative',
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     // Campi del form e tabella
     'fields' => [
         'id' => [
@@ -103,10 +115,14 @@ return [
         // Altri campi...
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     // Azioni disponibili
     'actions' => [
         'create' => [
@@ -118,10 +134,14 @@ return [
         // Altre azioni...
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     // Sezioni del form
     'sections' => [
         'details' => [
@@ -131,10 +151,14 @@ return [
         // Altre sezioni...
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     // Messaggi di feedback
     'messages' => [
         'created' => 'Organizzativa creata con successo',
@@ -217,7 +241,11 @@ Modules/
 - [Modules/Performance/docs/translation_guidelines.md](mdc:../../laravel/Modules/Performance/docs/translation_guidelines.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: maggio 2025*
 =======
 *Ultimo aggiornamento: maggio 2025*
 >>>>>>> d23ba493 (add calendar)
+=======
+*Ultimo aggiornamento: maggio 2025*
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

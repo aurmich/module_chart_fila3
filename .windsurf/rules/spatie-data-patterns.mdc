@@ -1,18 +1,26 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description: Pattern e best practice per l'utilizzo di Spatie Laravel Data in progetti Laraxot/<nome progetto>
 =======
 description: Pattern e best practice per l'utilizzo di Spatie Laravel Data in progetti Laraxot/PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+description: Pattern e best practice per l'utilizzo di Spatie Laravel Data in progetti Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 globs: ["**/Data/**/*.php", "**/Services/**/*.php"]
 alwaysApply: true
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Pattern per Spatie Laravel Data in Laraxot/<nome progetto>
 =======
 # Pattern per Spatie Laravel Data in Laraxot/PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+# Pattern per Spatie Laravel Data in Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Principi Fondamentali
 
@@ -45,6 +53,7 @@ class UserData extends Data
         #[Required, StringType]
         public readonly string $name,
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         #[Required, StringType]
         public readonly string $email,
@@ -61,20 +70,27 @@ class UserData extends Data
 
 =======
         
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         #[Required, StringType]
         public readonly string $email,
-        
+
         #[WithCast(DateTimeInterfaceCast::class)]
         public readonly ?\DateTimeInterface $created_at = null,
-        
+
         #[WithCast(DateTimeInterfaceCast::class)]
         public readonly ?\DateTimeInterface $updated_at = null,
-        
+
         public readonly ?int $id = null,
     ) {
     }
+<<<<<<< HEAD
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Crea un nuovo UserData da un modello User.
      *
@@ -92,10 +108,14 @@ class UserData extends Data
         );
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Crea un'istanza del modello User da questo Data Object.
      *
@@ -107,6 +127,7 @@ class UserData extends Data
             ? \Modules\ModuleName\Models\User::findOrFail($this->id)
             : new \Modules\ModuleName\Models\User();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         $user->name = $this->name;
         $user->email = $this->email;
@@ -117,6 +138,12 @@ class UserData extends Data
         $user->email = $this->email;
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+        $user->name = $this->name;
+        $user->email = $this->email;
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         return $user;
     }
 }
@@ -145,6 +172,7 @@ class ProductData extends Data
         #[Required, StringType, Min(3), Max(255)]
         public readonly string $name,
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         #[Required, StringType]
         public readonly string $description,
@@ -161,20 +189,27 @@ class ProductData extends Data
 
 =======
         
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         #[Required, StringType]
         public readonly string $description,
-        
+
         #[Required, Numeric, Min(0)]
         public readonly float $price,
-        
+
         #[Required, Numeric, Min(0)]
         public readonly int $quantity,
-        
+
         public readonly ?int $id = null,
     ) {
     }
+<<<<<<< HEAD
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Definisce regole di validazione addizionali.
      *
@@ -187,10 +222,14 @@ class ProductData extends Data
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Definisce messaggi di errore personalizzati.
      *
@@ -225,10 +264,14 @@ class UserDataCollection extends DataCollection
         parent::__construct($items);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Crea una collezione da un elenco di modelli.
      *
@@ -242,10 +285,14 @@ class UserDataCollection extends DataCollection
         );
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Restituisce il tipo di dato nella collezione.
      *
@@ -284,10 +331,14 @@ class OrderData extends Data
     ) {
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Crea un OrderData da un modello Order con relazioni.
      *
@@ -301,6 +352,7 @@ class OrderData extends Data
             $order->load('items');
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         if (!$order->relationLoaded('user')) {
             $order->load('user');
@@ -313,6 +365,13 @@ class OrderData extends Data
         }
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+        if (!$order->relationLoaded('user')) {
+            $order->load('user');
+        }
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         return new self(
             order_number: $order->order_number,
             total_amount: $order->total_amount,
@@ -357,10 +416,14 @@ final class StatusEnum extends Enum
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Determina se lo stato è considerato attivo.
      */
@@ -394,10 +457,14 @@ class UserResource extends Resource
 {
     protected static ?string $model = User::class;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Form schema per Filament.
      *
@@ -414,10 +481,14 @@ class UserResource extends Resource
                     ->required()
                     ->maxLength(255),
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
                     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
                 Forms\Components\TextInput::make('email')
                     ->label(__('modulename::fields.email.label'))
                     ->placeholder(__('modulename::fields.email.placeholder'))
@@ -427,10 +498,14 @@ class UserResource extends Resource
             ]);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Gestisce la creazione del record usando Data Objects.
      *
@@ -442,6 +517,7 @@ class UserResource extends Resource
         // Converte dati del form in Data Object
         $userData = UserData::from($data);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         // Crea un nuovo utente dal Data Object
         $user = $userData->toModel();
@@ -454,6 +530,13 @@ class UserResource extends Resource
         $user->save();
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+        // Crea un nuovo utente dal Data Object
+        $user = $userData->toModel();
+        $user->save();
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         return $user;
     }
 }
@@ -490,10 +573,14 @@ class UserData extends Data
     public readonly string $email;
     public readonly ?int $id = null;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     // Manca il costruttore esplicito
 }
 ```
@@ -515,10 +602,14 @@ class UserData extends Data
     ) {
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     // Mancano metodi helper per convertire da/a modello
 }
 ```
@@ -561,6 +652,7 @@ Ogni modulo che utilizza Spatie Laravel Data deve includere:
    ```markdown
    # Data Objects in ModuleName
 <<<<<<< HEAD
+<<<<<<< HEAD
 
    Questo modulo utilizza Spatie Laravel Data per implementare il pattern DTO.
 
@@ -569,16 +661,24 @@ Ogni modulo che utilizza Spatie Laravel Data deve includere:
 
 =======
    
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
    Questo modulo utilizza Spatie Laravel Data per implementare il pattern DTO.
-   
+
    ## UserData
    Rappresenta i dati di un utente.
+<<<<<<< HEAD
    
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
    ### Proprietà
    - `name` (string): Nome dell'utente
    - `email` (string): Email dell'utente
    - `id` (int|null): ID dell'utente, null se nuovo
+<<<<<<< HEAD
 <<<<<<< HEAD
 
    ### Metodi
@@ -592,6 +692,13 @@ Ogni modulo che utilizza Spatie Laravel Data deve includere:
    - `toModel()`: Converte il DTO in un modello User
    
 >>>>>>> d23ba493 (add calendar)
+=======
+
+   ### Metodi
+   - `fromModel(User $user)`: Crea un UserData da un modello User
+   - `toModel()`: Converte il DTO in un modello User
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
    ### Esempio d'uso
    ```php
    // Creazione da array
@@ -600,6 +707,7 @@ Ogni modulo che utilizza Spatie Laravel Data deve includere:
        'email' => 'mario@example.com',
    ]);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
    // Creazione da modello
    $userData = UserData::fromModel($user);
@@ -610,11 +718,17 @@ Ogni modulo che utilizza Spatie Laravel Data deve includere:
    ```
 =======
    
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
    // Creazione da modello
    $userData = UserData::fromModel($user);
-   
+
    // Conversione in modello
    $user = $userData->toModel();
    ```
    ```
+<<<<<<< HEAD
 >>>>>>> d23ba493 (add calendar)
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

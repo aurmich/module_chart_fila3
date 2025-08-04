@@ -1,18 +1,26 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description: Regole dettagliate per l'implementazione e la struttura dei file di traduzione in progetti Laraxot/<nome progetto>
 =======
 description: Regole dettagliate per l'implementazione e la struttura dei file di traduzione in progetti Laraxot/PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+description: Regole dettagliate per l'implementazione e la struttura dei file di traduzione in progetti Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 globs: ["**/lang/**/*.php", "**/Filament/**/*.php", "**/resources/views/**/*.blade.php"]
 alwaysApply: true
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regole per i File di Traduzione in Laraxot/<nome progetto>
 =======
 # Regole per i File di Traduzione in Laraxot/PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+# Regole per i File di Traduzione in Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Principi Fondamentali
 
@@ -223,6 +231,7 @@ return [
 <x-filament::page>
     <h2>{{ __('modulename::pages.dashboard.title') }}</h2>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     <p>{{ __('modulename::pages.dashboard.description') }}</p>
 
@@ -231,16 +240,25 @@ return [
     <p>{{ __('modulename::pages.dashboard.description') }}</p>
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+    <p>{{ __('modulename::pages.dashboard.description') }}</p>
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     <x-filament::button
         wire:click="createItem"
     >
         {{ __('modulename::actions.create.label') }}
     </x-filament::button>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     @if($items->isEmpty())
         <div class="mt-4">
             <p>{{ __('modulename::messages.empty_states.default') }}</p>
@@ -266,10 +284,14 @@ protected function getFormSchema(): array
             ->helperText(__('modulename::fields.name.help'))
             ->required(),
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         Forms\Components\Select::make('role')
             ->label(__('modulename::fields.role.label'))
             ->placeholder(__('modulename::fields.role.placeholder'))
@@ -300,10 +322,14 @@ public function table(Table $table): Table
                 ->searchable()
                 ->sortable(),
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
                 
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             Tables\Columns\TextColumn::make('role')
                 ->label(__('modulename::fields.role.label'))
                 ->formatStateUsing(fn (string $state): string => __("modulename::fields.role.options.{$state}")),
@@ -316,10 +342,14 @@ public function table(Table $table): Table
             Tables\Actions\EditAction::make()
                 ->label(__('modulename::actions.edit.label')),
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
                 
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             Tables\Actions\DeleteAction::make()
                 ->label(__('modulename::actions.delete.label'))
                 ->modalHeading(__('modulename::actions.delete.modal_heading'))
@@ -351,10 +381,14 @@ return [
     'name_placeholder' => 'Inserisci il nome',
     'name_help' => 'Inserisci il nome completo',
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     'email_label' => 'Email',
     'email_placeholder' => 'Inserisci l\'indirizzo email',
     'email_help' => 'L\'email verrà utilizzata per accedere al sistema',
@@ -471,7 +505,11 @@ Eseguire regolarmente questi controlli:
    ```bash
    php artisan translation:sync-keys --module=ModuleName
 <<<<<<< HEAD
+<<<<<<< HEAD
    ```
 =======
    ```
 >>>>>>> d23ba493 (add calendar)
+=======
+   ```
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

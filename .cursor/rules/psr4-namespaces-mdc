@@ -23,6 +23,7 @@ alwaysApply: false
 
 // CORRETTO
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\States;
 
 // ERRATO
@@ -33,6 +34,12 @@ namespace Modules\SaluteOra\States;
 // ERRATO
 namespace Modules\SaluteOra\app\States;
 >>>>>>> 3b8e8240 (fix case cursor and windsurf)
+=======
+namespace Modules\<nome progetto>\States;
+
+// ERRATO
+namespace Modules\<nome progetto>\app\States;
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 ```
 
 ## Checklist

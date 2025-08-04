@@ -3,19 +3,27 @@
 ## Project Standards Compliance
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 This document follows the project's standards and best practices for implementing calendar widgets in the <nome progetto> module.
 =======
 This document follows the project's standards and best practices for implementing calendar widgets in the SaluteOra module.
 >>>>>>> 2099645a (.)
+=======
+This document follows the project's standards and best practices for implementing calendar widgets in the <nome progetto> module.
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Important Notes
 
 1. **Base Classes**: All calendar widgets must extend the appropriate XotBase class
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. **Namespaces**: Use `Modules\\<nome progetto>\\Filament` for all Filament components
 =======
 2. **Namespaces**: Use `Modules\\SaluteOra\\Filament` for all Filament components
 >>>>>>> 2099645a (.)
+=======
+2. **Namespaces**: Use `Modules\\<nome progetto>\\Filament` for all Filament components
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 3. **Translations**: Use language files instead of `->label()` methods
 4. **Documentation**: Keep documentation in sync with code changes
 5. **Testing**: Ensure all widgets are properly tested
@@ -26,10 +34,14 @@ All calendar widgets must extend `XotBaseFullCalendarWidget`:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\\<nome progetto>\\Filament\\Widgets;
 =======
 namespace Modules\\SaluteOra\\Filament\\Widgets;
 >>>>>>> 2099645a (.)
+=======
+namespace Modules\\<nome progetto>\\Filament\\Widgets;
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 use Modules\\Xot\\Filament\\Widgets\\XotBaseFullCalendarWidget;
 
@@ -45,19 +57,27 @@ abstract class BaseCalendarWidget extends XotBaseFullCalendarWidget
    - Use `BaseCalendarWidget` as the base class for all calendar widgets
    - Follow the naming pattern `{UserType}CalendarWidget` (e.g., `DoctorCalendarWidget`)
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Place widgets in `Modules/<nome progetto>/Filament/Widgets/{UserType}/`
 =======
    - Place widgets in `Modules/SaluteOra/Filament/Widgets/{UserType}/`
 >>>>>>> 2099645a (.)
+=======
+   - Place widgets in `Modules/<nome progetto>/Filament/Widgets/{UserType}/`
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 2. **File Structure**
    ```
    Modules/
 <<<<<<< HEAD
+<<<<<<< HEAD
    └── <nome progetto>/
 =======
    └── SaluteOra/
 >>>>>>> 2099645a (.)
+=======
+   └── <nome progetto>/
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
        ├── Filament/
        │   └── Widgets/
        │       ├── BaseCalendarWidget.php
@@ -93,10 +113,14 @@ abstract class BaseCalendarWidget extends XotBaseFullCalendarWidget
     protected static ?string $model = null;
     protected static string $heading = 'Calendar';
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 2099645a (.)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     protected function getEventsQuery();
     abstract protected function mapToEvent($model): array;
     protected function getCalendarConfig(): array;

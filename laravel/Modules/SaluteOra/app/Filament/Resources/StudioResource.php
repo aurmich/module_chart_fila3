@@ -43,11 +43,17 @@ class StudioResource extends XotBaseResource
 {
     protected static ?string $model = Studio::class;
 <<<<<<< HEAD
+<<<<<<< HEAD
     //protected static ?string $tenantOwnershipRelationshipName = 'owner';
     //protected static ?string $tenantRelationshipName = 'blogPosts';
     protected static bool $isScopedToTenant = false;
 =======
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+    //protected static ?string $tenantOwnershipRelationshipName = 'owner';
+    //protected static ?string $tenantRelationshipName = 'blogPosts';
+    protected static bool $isScopedToTenant = false;
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
     public static function getFormSchema(): array
     {
@@ -147,6 +153,7 @@ class StudioResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public static function getListTableColumns(): array
@@ -314,4 +321,7 @@ class StudioResource extends XotBaseResource
 =======
    
 >>>>>>> 2bcfd382 (fix Address)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 }

@@ -1,18 +1,26 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description: Regole complete Windsurf per Laraxot <nome progetto>
 =======
 description: Regole complete Windsurf per Laraxot PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+description: Regole complete Windsurf per Laraxot <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 globs: ["**/*.php"]
 alwaysApply: true
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regole Windsurf per Laraxot <nome progetto> (Giugno 2025)
 =======
 # Regole Windsurf per Laraxot PTVX (Giugno 2025)
 >>>>>>> d23ba493 (add calendar)
+=======
+# Regole Windsurf per Laraxot <nome progetto> (Giugno 2025)
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Modelli e ORM
 
@@ -23,10 +31,14 @@ alwaysApply: true
   ```php
   namespace Modules\IndennitaCondizioniLavoro\Models;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
   
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
   class CondizioniLavoro extends BaseModel
   {
       // Implementazione modello
@@ -35,6 +47,7 @@ alwaysApply: true
 - **Anti-pattern**:
   ```php
   namespace Modules\IndennitaCondizioniLavoro\Models;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
   use Illuminate\Database\Eloquent\Model;
@@ -46,6 +59,12 @@ alwaysApply: true
   // oppure use Modules\Xot\Models\XotBaseModel;
   
 >>>>>>> d23ba493 (add calendar)
+=======
+
+  use Illuminate\Database\Eloquent\Model;
+  // oppure use Modules\Xot\Models\XotBaseModel;
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
   class CondizioniLavoro extends Model // oppure XotBaseModel
   {
       // Implementazione modello
@@ -159,10 +178,14 @@ return new class extends XotBaseMigration {
             });
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         // Aggiunta colonna se non esiste
         if (! $this->hasColumn('performance_organizzativa', 'valutatore_id')) {
             $this->tableUpdate('performance_organizzativa', function (Blueprint $table) {
@@ -171,10 +194,14 @@ return new class extends XotBaseMigration {
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     // Non implementare mai il metodo down
 };
 ```
@@ -248,10 +275,14 @@ return new class extends XotBaseMigration {
 
 ### Esecuzione
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Directory**: Sempre da `/var/www/html/<nome progetto>/laravel`
 =======
 - **Directory**: Sempre da `/var/www/html/ptvx/laravel`
 >>>>>>> d23ba493 (add calendar)
+=======
+- **Directory**: Sempre da `/var/www/html/<nome progetto>/laravel`
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 - **Comando**: `./vendor/bin/phpstan analyze [target] --level=[1-9]`
 - **Livello minimo**: 9
 - **Memoria**: `--memory-limit=2G` per moduli grandi
@@ -274,10 +305,14 @@ return new class extends XotBaseMigration {
 ### Struttura
 - **Moduli**: Documentazione in `Modules/<NomeModulo>/docs/`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Root**: Documentazione globale in `/var/www/html/<nome progetto>/docs/`
 =======
 - **Root**: Documentazione globale in `/var/www/html/ptvx/docs/`
 >>>>>>> d23ba493 (add calendar)
+=======
+- **Root**: Documentazione globale in `/var/www/html/<nome progetto>/docs/`
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 - **Collegamenti**: Mantenere collegamenti bidirezionali
 
 ### Standard di Qualità

@@ -1,18 +1,26 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description: Pattern e best practice per l'implementazione di Widget Filament in progetti Laraxot/<nome progetto>
 =======
 description: Pattern e best practice per l'implementazione di Widget Filament in progetti Laraxot/PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+description: Pattern e best practice per l'implementazione di Widget Filament in progetti Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 globs: ["**/Filament/Widgets/*.php"]
 alwaysApply: true
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Pattern per Widget Filament in Laraxot/<nome progetto>
 =======
 # Pattern per Widget Filament in Laraxot/PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+# Pattern per Widget Filament in Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Principi Fondamentali
 
@@ -183,6 +191,7 @@ class StatsOverviewWidget extends BaseWidget
     {
         $total = \Modules\ModuleName\Models\ModelName::count();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         if ($total === 0) {
             return 0;
@@ -192,13 +201,20 @@ class StatsOverviewWidget extends BaseWidget
 
 =======
         
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         if ($total === 0) {
             return 0;
         }
-        
+
         $completed = \Modules\ModuleName\Models\ModelName::where('is_completed', true)->count();
+<<<<<<< HEAD
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         return $completed / $total;
     }
 
@@ -236,10 +252,14 @@ class ChartDataWidget extends ChartWidget
      */
     protected static ?string $chartId = 'moduleNameChart';
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Intervallo di aggiornamento.
      */
@@ -292,10 +312,14 @@ class ChartDataWidget extends ChartWidget
     {
         $data = $this->getChartData();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         return [
             'datasets' => [
                 [
@@ -326,10 +350,14 @@ class ChartDataWidget extends ChartWidget
         $dateColumn = 'created_at';
         $startDate = $this->getStartDate();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         return DB::table('model_name_table')
             ->select(
                 DB::raw("DATE_FORMAT({$dateColumn}, '{$dateFormat}') as date"),
@@ -437,10 +465,14 @@ class ModuleCalendarWidget extends BaseCalendarWidget
      */
     public $model = EventModel::class;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Configurazione del calendario.
      *
@@ -469,10 +501,14 @@ class ModuleCalendarWidget extends BaseCalendarWidget
         ]);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Unisce la configurazione base con quella personalizzata.
      *
@@ -482,6 +518,7 @@ class ModuleCalendarWidget extends BaseCalendarWidget
     protected function mergeBaseConfig(array $config): array
     {
         $baseConfig = parent::config();
+<<<<<<< HEAD
 <<<<<<< HEAD
 
         return array_merge($baseConfig, $config);
@@ -493,6 +530,12 @@ class ModuleCalendarWidget extends BaseCalendarWidget
     }
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+        return array_merge($baseConfig, $config);
+    }
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Schema del form per gli eventi.
      *
@@ -507,33 +550,46 @@ class ModuleCalendarWidget extends BaseCalendarWidget
                 ->required()
                 ->maxLength(255),
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
                 
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             Forms\Components\Textarea::make('description')
                 ->label(__('modulename::calendar.fields.description.label'))
                 ->placeholder(__('modulename::calendar.fields.description.placeholder'))
                 ->columnSpanFull(),
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
                 
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             Forms\Components\DateTimePicker::make('starts_at')
                 ->label(__('modulename::calendar.fields.starts_at.label'))
                 ->seconds(false)
                 ->required(),
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
                 
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             Forms\Components\DateTimePicker::make('ends_at')
                 ->label(__('modulename::calendar.fields.ends_at.label'))
                 ->seconds(false)
                 ->required(),
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             Forms\Components\ColorPicker::make('color')
                 ->label(__('modulename::calendar.fields.color.label'))
@@ -546,15 +602,26 @@ class ModuleCalendarWidget extends BaseCalendarWidget
                 ->rgba(),
                 
 >>>>>>> d23ba493 (add calendar)
+=======
+
+            Forms\Components\ColorPicker::make('color')
+                ->label(__('modulename::calendar.fields.color.label'))
+                ->rgba(),
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             Forms\Components\Checkbox::make('is_all_day')
                 ->label(__('modulename::calendar.fields.is_all_day.label')),
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Azioni nell'header del calendario.
      *
@@ -580,10 +647,14 @@ class ModuleCalendarWidget extends BaseCalendarWidget
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Azioni sugli eventi del calendario.
      *
@@ -600,29 +671,41 @@ class ModuleCalendarWidget extends BaseCalendarWidget
                 })
                 ->visible(fn (EventModel $record) => $this->userCan('updateEvents', $record)),
 <<<<<<< HEAD
-
-=======
-                
->>>>>>> d23ba493 (add calendar)
-            Actions\DeleteAction::make()
-                ->label(__('modulename::calendar.actions.delete.label'))
-                ->modalHeading(__('modulename::calendar.actions.delete.modal_heading'))
-                ->visible(fn (EventModel $record) => $this->userCan('deleteEvents', $record)),
 <<<<<<< HEAD
 
 =======
                 
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+            Actions\DeleteAction::make()
+                ->label(__('modulename::calendar.actions.delete.label'))
+                ->modalHeading(__('modulename::calendar.actions.delete.modal_heading'))
+                ->visible(fn (EventModel $record) => $this->userCan('deleteEvents', $record)),
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+                
+>>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             Actions\ViewAction::make()
                 ->label(__('modulename::calendar.actions.view.label'))
                 ->modalHeading(__('modulename::calendar.actions.view.modal_heading')),
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Prepara i dati dell'evento prima del salvataggio.
      *
@@ -637,6 +720,7 @@ class ModuleCalendarWidget extends BaseCalendarWidget
             $data['ends_at'] = \Carbon\Carbon::parse($data['ends_at'])->endOfDay();
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         // Aggiungi metadati
         $data['user_id'] = auth()->id();
@@ -646,13 +730,20 @@ class ModuleCalendarWidget extends BaseCalendarWidget
 
 =======
         
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         // Aggiungi metadati
         $data['user_id'] = auth()->id();
-        
+
         return $data;
     }
+<<<<<<< HEAD
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Controlla se l'utente ha il permesso specificato.
      *
@@ -665,6 +756,7 @@ class ModuleCalendarWidget extends BaseCalendarWidget
             return auth()->user()->can($permission, $record);
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         return auth()->user()->can($permission);
     }
@@ -675,6 +767,12 @@ class ModuleCalendarWidget extends BaseCalendarWidget
     }
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+        return auth()->user()->can($permission);
+    }
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Personalizzazione del rendering degli eventi.
      */
@@ -684,6 +782,7 @@ class ModuleCalendarWidget extends BaseCalendarWidget
         function(info) {
             const classes = [];
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             if (info.event.extendedProps.is_all_day) {
                 classes.push('all-day-event');
@@ -695,24 +794,35 @@ class ModuleCalendarWidget extends BaseCalendarWidget
 
 =======
             
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             if (info.event.extendedProps.is_all_day) {
                 classes.push('all-day-event');
             }
-            
+
             if (info.event.extendedProps.status === 'cancelled') {
                 classes.push('cancelled-event');
             }
+<<<<<<< HEAD
             
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             return classes;
         }
         JS;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Personalizzazione del rendering del contenuto degli eventi.
      */
@@ -739,10 +849,14 @@ class ModuleCalendarWidget extends BaseCalendarWidget
 ## Personalizzazione Icone per Widget e Navigazione (con XotBaseServiceProvider)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 L'architettura Laraxot/<nome progetto> prevede che i Service Provider dei moduli estendano `Modules\Xot\Providers\XotBaseServiceProvider`. Questo provider di base gestisce automaticamente la registrazione di molte risorse, incluse le icone SVG personalizzate tramite il pacchetto `blade-ui-kit/blade-icons`.
 =======
 L'architettura Laraxot/PTVX prevede che i Service Provider dei moduli estendano `Modules\Xot\Providers\XotBaseServiceProvider`. Questo provider di base gestisce automaticamente la registrazione di molte risorse, incluse le icone SVG personalizzate tramite il pacchetto `blade-ui-kit/blade-icons`.
 >>>>>>> d23ba493 (add calendar)
+=======
+L'architettura Laraxot/<nome progetto> prevede che i Service Provider dei moduli estendano `Modules\Xot\Providers\XotBaseServiceProvider`. Questo provider di base gestisce automaticamente la registrazione di molte risorse, incluse le icone SVG personalizzate tramite il pacchetto `blade-ui-kit/blade-icons`.
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ### Principi Chiave con XotBaseServiceProvider
 
@@ -882,10 +996,14 @@ protected function getStats(): array
     $totalAmount = DB::table('orders')->sum('amount');
     $averageAmount = DB::table('orders')->avg('amount');
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     // ...
 }
 
@@ -897,10 +1015,14 @@ protected function getStats(): array
 {
     $statistics = app(OrderStatisticsService::class)->getOrderStatistics();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     return [
         Stat::make(
             __('modulename::widgets.stats.total_amount.label'),
@@ -1003,10 +1125,14 @@ protected function getSafeData(): array
             'exception' => $e,
         ]);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         return [
             'success' => false,
             'error' => __('modulename::widgets.errors.data_fetch_failed'),
@@ -1056,10 +1182,14 @@ class FilamentServiceProvider extends ServiceProvider
         \Modules\ModuleName\Filament\Widgets\ModuleCalendarWidget::class,
     ];
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Bootstrap dei servizi dell'applicazione.
      */
@@ -1070,7 +1200,11 @@ class FilamentServiceProvider extends ServiceProvider
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```
 =======
 ```
 >>>>>>> d23ba493 (add calendar)
+=======
+```
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

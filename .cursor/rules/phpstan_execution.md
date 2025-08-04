@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Esecuzione di PHPStan in Laraxot <nome progetto>
 
 ## Comando Corretto
@@ -9,14 +10,21 @@ Per eseguire PHPStan in Laraxot <nome progetto>, è necessario utilizzare il seg
 cd /var/www/html/_bases/base_<nome progetto>_fila3/laravel
 =======
 # Esecuzione di PHPStan in Laraxot PTVX
+=======
+# Esecuzione di PHPStan in Laraxot <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Comando Corretto
 
-Per eseguire PHPStan in Laraxot PTVX, è necessario utilizzare il seguente formato di comando:
+Per eseguire PHPStan in Laraxot <nome progetto>, è necessario utilizzare il seguente formato di comando:
 
 ```bash
+<<<<<<< HEAD
 cd /var/www/html/_bases/base_ptvx_fila3/laravel
 >>>>>>> d23ba493 (add calendar)
+=======
+cd /var/www/html/_bases/base_<nome progetto>_fila3/laravel
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 ./vendor/bin/phpstan analyse --level=9 --memory-limit=2G Modules/NomeModulo
 ```
 
@@ -39,10 +47,14 @@ Per analizzare rapidamente tutti i moduli e salvare i risultati:
 ```bash
 #!/bin/bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 cd /var/www/html/_bases/base_<nome progetto>_fila3/laravel
 =======
 cd /var/www/html/_bases/base_ptvx_fila3/laravel
 >>>>>>> d23ba493 (add calendar)
+=======
+cd /var/www/html/_bases/base_<nome progetto>_fila3/laravel
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 mkdir -p phpstan_results
 for module in Modules/*; do
     if [ -d "$module" ]; then
@@ -62,7 +74,11 @@ Per ogni modulo, seguire questo processo:
 3. Correggere una categoria alla volta, partendo dalle più semplici
 4. Verificare i progressi con esecuzioni incrementali
 <<<<<<< HEAD
+<<<<<<< HEAD
 5. Documentare le soluzioni nella cartella docs del modulo 
 =======
 5. Documentare le soluzioni nella cartella docs del modulo 
 >>>>>>> d23ba493 (add calendar)
+=======
+5. Documentare le soluzioni nella cartella docs del modulo 
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

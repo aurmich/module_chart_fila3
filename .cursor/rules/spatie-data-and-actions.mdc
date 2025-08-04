@@ -1,9 +1,13 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description: Regole e pattern per l'utilizzo di Spatie Laravel Data e QueableActions in progetti Laraxot/<nome progetto>
 =======
 description: Regole e pattern per l'utilizzo di Spatie Laravel Data e QueableActions in progetti Laraxot/PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+description: Regole e pattern per l'utilizzo di Spatie Laravel Data e QueableActions in progetti Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 globs: ["**/Data/**/*.php", "**/Actions/**/*.php", "**/Services/**/*.php"]
 alwaysApply: true
 ---
@@ -42,6 +46,7 @@ class UserData extends Data
         #[Required, StringType]
         public readonly string $name,
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         #[Required, Email]
         public readonly string $email,
@@ -58,20 +63,27 @@ class UserData extends Data
 
 =======
         
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         #[Required, Email]
         public readonly string $email,
-        
+
         #[WithCast(DateTimeInterfaceCast::class)]
         public readonly ?\DateTimeInterface $created_at = null,
-        
+
         #[WithCast(DateTimeInterfaceCast::class)]
         public readonly ?\DateTimeInterface $updated_at = null,
-        
+
         public readonly ?int $id = null,
     ) {
     }
+<<<<<<< HEAD
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Crea un nuovo UserData da un modello User.
      *
@@ -89,10 +101,14 @@ class UserData extends Data
         );
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Crea un'istanza del modello User da questo Data Object.
      *
@@ -104,6 +120,7 @@ class UserData extends Data
             ? \Modules\ModuleName\Models\User::findOrFail($this->id)
             : new \Modules\ModuleName\Models\User();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         $user->name = $this->name;
         $user->email = $this->email;
@@ -114,6 +131,12 @@ class UserData extends Data
         $user->email = $this->email;
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+        $user->name = $this->name;
+        $user->email = $this->email;
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         return $user;
     }
 }
@@ -139,10 +162,14 @@ class UserDataCollection extends DataCollection
         parent::__construct($items);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Crea una collezione da un elenco di modelli.
      *
@@ -156,10 +183,14 @@ class UserDataCollection extends DataCollection
         );
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Restituisce il tipo di dato nella collezione.
      *
@@ -204,10 +235,14 @@ final class StatusEnum extends Enum
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Determina se lo stato è considerato attivo.
      */
@@ -246,10 +281,14 @@ class ProcessDataAction implements ShouldQueue
     use Queueable;
     use SerializesModels;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Crea una nuova istanza dell'azione.
      */
@@ -258,10 +297,14 @@ class ProcessDataAction implements ShouldQueue
     ) {
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Esegue l'azione.
      *
@@ -273,10 +316,14 @@ class ProcessDataAction implements ShouldQueue
         // Logica di elaborazione
         $result = $this->repository->process($input);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         // Restituisci un oggetto Data
         return new ResultData(
             status: 'success',
@@ -313,10 +360,14 @@ class ProcessUserDataAction implements ShouldQueue
     use Queueable;
     use SerializesModels;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Crea una nuova istanza dell'azione.
      */
@@ -325,10 +376,14 @@ class ProcessUserDataAction implements ShouldQueue
     ) {
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Esegue l'azione.
      *
@@ -341,10 +396,14 @@ class ProcessUserDataAction implements ShouldQueue
         // Elabora i dati dell'utente
         $processedUser = $this->userService->process($userData);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         // Notifica il completamento se richiesto
         if ($sendNotification && $processedUser->id) {
             $user = \Modules\ModuleName\Models\User::find($processedUser->id);
@@ -353,10 +412,14 @@ class ProcessUserDataAction implements ShouldQueue
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         return $processedUser;
     }
 }
@@ -390,6 +453,7 @@ class UserController extends Controller
         // Validazione e conversione in un oggetto Data
         $userData = UserData::validateAndCreate($request->all());
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         // Esecuzione immediata dell'action
         $result = $action->execute($userData);
@@ -400,6 +464,12 @@ class UserController extends Controller
         $result = $action->execute($userData);
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+        // Esecuzione immediata dell'action
+        $result = $action->execute($userData);
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         return response()->json([
             'success' => true,
             'data' => $result,
@@ -407,10 +477,14 @@ class UserController extends Controller
         ]);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Processa i dati dell'utente in modo asincrono.
      *
@@ -423,6 +497,7 @@ class UserController extends Controller
         // Validazione e conversione in un oggetto Data
         $userData = UserData::validateAndCreate($request->all());
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         // Accodamento dell'action
         $action->onQueue('users')->execute($userData);
@@ -433,6 +508,12 @@ class UserController extends Controller
         $action->onQueue('users')->execute($userData);
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+        // Accodamento dell'action
+        $action->onQueue('users')->execute($userData);
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         return response()->json([
             'success' => true,
             'message' => __('modulename::messages.process_queued'),
@@ -459,10 +540,14 @@ class CreateUser extends CreateRecord
 {
     protected static string $resource = UserResource::class;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Gestisce la creazione del record.
      *
@@ -474,6 +559,7 @@ class CreateUser extends CreateRecord
         // Converti i dati del form in un oggetto Data
         $userData = UserData::from($data);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         // Esegui l'action
         $processedData = app(ProcessUserDataAction::class)->execute($userData);
@@ -484,6 +570,12 @@ class CreateUser extends CreateRecord
         $processedData = app(ProcessUserDataAction::class)->execute($userData);
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+        // Esegui l'action
+        $processedData = app(ProcessUserDataAction::class)->execute($userData);
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         // Crea e restituisci il modello
         return $processedData->toModel()->save();
     }
@@ -510,6 +602,7 @@ class UserForm extends Component
     /** @var string */
     public string $name = '';
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     /** @var string */
     public string $email = '';
@@ -520,6 +613,12 @@ class UserForm extends Component
     public string $email = '';
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+    /** @var string */
+    public string $email = '';
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Regole di validazione.
      *
@@ -533,10 +632,14 @@ class UserForm extends Component
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Messaggi di validazione.
      *
@@ -551,10 +654,14 @@ class UserForm extends Component
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Processa il form.
      */
@@ -562,16 +669,21 @@ class UserForm extends Component
     {
         $this->validate();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         // Crea un oggetto Data dai dati del form
         $userData = new UserData(
             name: $this->name,
             email: $this->email,
         );
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         try {
             // Esegui l'action
@@ -584,16 +696,27 @@ class UserForm extends Component
             app(ProcessUserDataAction::class)->execute($userData);
             
 >>>>>>> d23ba493 (add calendar)
+=======
+
+        try {
+            // Esegui l'action
+            app(ProcessUserDataAction::class)->execute($userData);
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             // Notifica il successo
             $this->dispatchBrowserEvent('notify', [
                 'type' => 'success',
                 'message' => __('modulename::messages.process_success'),
             ]);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             // Reset del form
             $this->reset();
         } catch (\Exception $e) {
@@ -603,10 +726,14 @@ class UserForm extends Component
                 'message' => __('modulename::messages.process_error'),
             ]);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             // Log dell'errore
             \Log::error('Errore nel processare i dati utente', [
                 'exception' => $e->getMessage(),
@@ -615,10 +742,14 @@ class UserForm extends Component
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Renderizza il componente.
      *
@@ -646,10 +777,14 @@ class UserService
         // Logica con array non tipizzati
         $user = \Modules\ModuleName\Models\User::create($data);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         return $user;
     }
 }
@@ -668,10 +803,14 @@ class UserData extends Data
     public string $name;
     public string $email;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     // Metodi setter mutabili (DA EVITARE)
     public function setName(string $name): self
     {
@@ -696,6 +835,7 @@ class UserController extends Controller
             'email' => 'required|email',
         ]);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         // Logica di business direttamente nel controller (DA EVITARE)
         $user = \Modules\ModuleName\Models\User::create($data);
@@ -704,12 +844,19 @@ class UserController extends Controller
 
 =======
         
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         // Logica di business direttamente nel controller (DA EVITARE)
         $user = \Modules\ModuleName\Models\User::create($data);
-        
+
         // Altre operazioni...
+<<<<<<< HEAD
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         return response()->json($user);
     }
 }
@@ -757,10 +904,14 @@ class UserService
         return \Modules\ModuleName\Models\User::create($data);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     public function update(int $id, array $data)
     {
         $user = \Modules\ModuleName\Models\User::findOrFail($id);
@@ -785,6 +936,7 @@ class UserData extends Data
         #[Required]
         public readonly string $name,
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         #[Required]
         public readonly string $email,
@@ -795,6 +947,12 @@ class UserData extends Data
         public readonly string $email,
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+        #[Required]
+        public readonly string $email,
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         public readonly ?int $id = null,
     ) {
     }
@@ -814,10 +972,14 @@ class CreateUserAction
 {
     use QueueableAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     public function execute(UserData $data): UserData
     {
         $user = new \Modules\ModuleName\Models\User();
@@ -825,10 +987,14 @@ class CreateUserAction
         $user->email = $data->email;
         $user->save();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         return UserData::from($user);
     }
 }
@@ -837,10 +1003,14 @@ class UpdateUserAction
 {
     use QueueableAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     public function execute(UserData $data): UserData
     {
         $user = \Modules\ModuleName\Models\User::findOrFail($data->id);
@@ -848,10 +1018,14 @@ class UpdateUserAction
         $user->email = $data->email;
         $user->save();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         return UserData::from($user);
     }
 }
@@ -874,6 +1048,7 @@ class UserController extends Controller
         $data = UserData::validateAndCreate($request->all());
         $result = $action->execute($data);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         return response()->json($result);
     }
@@ -884,12 +1059,19 @@ class UserController extends Controller
     }
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+        return response()->json($result);
+    }
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     public function update(Request $request, int $id, UpdateUserAction $action)
     {
         $data = UserData::validateAndCreate(array_merge(
             $request->all(),
             ['id' => $id]
         ));
+<<<<<<< HEAD
 <<<<<<< HEAD
 
         $result = $action->execute($data);
@@ -899,6 +1081,11 @@ class UserController extends Controller
         $result = $action->execute($data);
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+        $result = $action->execute($data);
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         return response()->json($result);
     }
 }
@@ -916,6 +1103,7 @@ Ogni modulo che utilizza Spatie Laravel Data e QueableActions dovrebbe includere
    ```markdown
    # Data Objects in ModuleName
 <<<<<<< HEAD
+<<<<<<< HEAD
 
    Questo modulo utilizza Spatie Laravel Data per implementare il pattern DTO.
 
@@ -924,16 +1112,24 @@ Ogni modulo che utilizza Spatie Laravel Data e QueableActions dovrebbe includere
 
 =======
    
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
    Questo modulo utilizza Spatie Laravel Data per implementare il pattern DTO.
-   
+
    ## UserData
    Rappresenta i dati di un utente.
+<<<<<<< HEAD
    
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
    ### Proprietà
    - `name` (string): Nome dell'utente
    - `email` (string): Email dell'utente
    - `id` (int|null): ID dell'utente, null se nuovo
+<<<<<<< HEAD
 <<<<<<< HEAD
 
    ### Metodi
@@ -947,6 +1143,13 @@ Ogni modulo che utilizza Spatie Laravel Data e QueableActions dovrebbe includere
    - `toModel()`: Converte il DTO in un modello User
    
 >>>>>>> d23ba493 (add calendar)
+=======
+
+   ### Metodi
+   - `fromModel(User $user)`: Crea un UserData da un modello User
+   - `toModel()`: Converte il DTO in un modello User
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
    ### Esempio d'uso
    ```php
    // Creazione da array
@@ -955,6 +1158,7 @@ Ogni modulo che utilizza Spatie Laravel Data e QueableActions dovrebbe includere
        'email' => 'mario@example.com',
    ]);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
    // Creazione da modello
    $userData = UserData::fromModel($user);
@@ -965,6 +1169,12 @@ Ogni modulo che utilizza Spatie Laravel Data e QueableActions dovrebbe includere
    $userData = UserData::fromModel($user);
    
 >>>>>>> d23ba493 (add calendar)
+=======
+
+   // Creazione da modello
+   $userData = UserData::fromModel($user);
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
    // Conversione in modello
    $user = $userData->toModel();
    ```
@@ -974,6 +1184,7 @@ Ogni modulo che utilizza Spatie Laravel Data e QueableActions dovrebbe includere
    ```markdown
    # Actions in ModuleName
 <<<<<<< HEAD
+<<<<<<< HEAD
 
    Questo modulo utilizza Spatie QueableActions per implementare la logica di business.
 
@@ -988,35 +1199,50 @@ Ogni modulo che utilizza Spatie Laravel Data e QueableActions dovrebbe includere
 
 =======
    
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
    Questo modulo utilizza Spatie QueableActions per implementare la logica di business.
-   
+
    ## CreateUserAction
    Crea un nuovo utente nel sistema.
-   
+
    ### Parametri
    - `UserData $data`: Dati dell'utente da creare
-   
+
    ### Restituisce
    - `UserData`: Dati dell'utente creato con ID assegnato
+<<<<<<< HEAD
    
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
    ### Esempio d'uso
    ```php
    // Uso diretto
    $userData = new UserData(name: 'Mario', email: 'mario@example.com');
    $result = app(CreateUserAction::class)->execute($userData);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
    
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
    // Uso accodato
    app(CreateUserAction::class)
        ->onQueue('users')
        ->execute($userData);
    ```
 <<<<<<< HEAD
+<<<<<<< HEAD
    ```
 =======
    ```
 >>>>>>> d23ba493 (add calendar)
+=======
+   ```
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

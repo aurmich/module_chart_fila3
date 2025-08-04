@@ -1,18 +1,26 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description: Regole per l'implementazione di view custom Filament in progetti Laraxot/<nome progetto>
 =======
 description: Regole per l'implementazione di view custom Filament in progetti Laraxot/PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+description: Regole per l'implementazione di view custom Filament in progetti Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 globs: ["**/Filament/Pages/*.php", "**/Filament/Resources/**/*.php", "**/resources/views/filament/**/*.blade.php"]
 alwaysApply: true
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regole per le View Custom Filament in Laraxot/<nome progetto>
 =======
 # Regole per le View Custom Filament in Laraxot/PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+# Regole per le View Custom Filament in Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Principi Fondamentali
 
@@ -32,6 +40,7 @@ alwaysApply: true
     <div>
         <h2>{{ __('modulename::filament.pages.custom_page.title') }}</h2>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         <p>{{ __('modulename::filament.pages.custom_page.description') }}</p>
 
@@ -40,6 +49,11 @@ alwaysApply: true
         <p>{{ __('modulename::filament.pages.custom_page.description') }}</p>
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+        <p>{{ __('modulename::filament.pages.custom_page.description') }}</p>
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         @if($items->count() > 0)
             <ul>
                 @foreach($items as $item)
@@ -61,6 +75,7 @@ alwaysApply: true
     {{-- Manca il wrapper <x-filament::page> --}}
     <h2>Titolo della pagina</h2> {{-- Testo hardcoded invece di traduzione --}}
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     <p>Descrizione della pagina</p> {{-- Testo hardcoded invece di traduzione --}}
 
@@ -69,6 +84,11 @@ alwaysApply: true
     <p>Descrizione della pagina</p> {{-- Testo hardcoded invece di traduzione --}}
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+    <p>Descrizione della pagina</p> {{-- Testo hardcoded invece di traduzione --}}
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     @if($items->count() > 0)
         <ul>
             @foreach($items as $item)
@@ -122,10 +142,14 @@ class CustomPage extends Page
     protected static ?string $navigationIcon = 'heroicon-o-document-text';
     protected static string $view = 'modulename::filament.pages.custom-page';
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Dati da passare alla view.
      *
@@ -139,10 +163,14 @@ class CustomPage extends Page
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Opzionale: override del metodo render per logica aggiuntiva.
      */
@@ -167,6 +195,7 @@ Le view custom possono utilizzare componenti Filament:
             {{ __('modulename::filament.sections.overview.heading') }}
         </x-slot>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         <x-slot name="description">
             {{ __('modulename::filament.sections.overview.description') }}
@@ -177,14 +206,21 @@ Le view custom possono utilizzare componenti Filament:
 
 =======
         
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         <x-slot name="description">
             {{ __('modulename::filament.sections.overview.description') }}
         </x-slot>
-        
+
         {{-- Contenuto della sezione --}}
     </x-filament::section>
+<<<<<<< HEAD
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     <x-filament::card>
         {{-- Contenuto della card --}}
     </x-filament::card>
@@ -288,10 +324,14 @@ La documentazione delle view custom deve includere:
 ## Pattern e Best Practice
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. **Separare Logica e Presentazione**:
 =======
 1. **Separare Logica e Presentazione**: 
 >>>>>>> d23ba493 (add calendar)
+=======
+1. **Separare Logica e Presentazione**:
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
    - La logica complessa va nella classe Page
    - La view dovrebbe occuparsi solo della presentazione
 
@@ -330,7 +370,11 @@ Prima di considerare completa una view custom:
 5. **Verifica Consistenza**:
    - Design coerente con il resto dell'applicazione
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Comportamento prevedibile e intuitivo
 =======
    - Comportamento prevedibile e intuitivo
 >>>>>>> d23ba493 (add calendar)
+=======
+   - Comportamento prevedibile e intuitivo
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

@@ -3,15 +3,20 @@
 ## Context
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 This document provides metadata for Windsurf about the implementation of static text translation in the `<nome progetto>` project using Laravel's translation capabilities.
 =======
 This document provides metadata for Windsurf about the implementation of static text translation in the `saluteora` project using Laravel's translation capabilities.
 >>>>>>> 54f4fa16 (.)
+=======
+This document provides metadata for Windsurf about the implementation of static text translation in the `<nome progetto>` project using Laravel's translation capabilities.
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Key Points
 
 - **Purpose**: Enable multi-language support for static text content.
 - **Approach**: Use PHP files for modular translation organization, with JSON files for full sentences or long texts.
+<<<<<<< HEAD
 <<<<<<< HEAD
 - **Suggested Actions**:
   - Ensure `lang` directory exists with `php artisan lang:publish`.
@@ -23,12 +28,22 @@ This document provides metadata for Windsurf about the implementation of static 
   - Organize translations in PHP files by module in `/var/www/html/saluteora/laravel/lang/[language]/`.
   - Utilize JSON files for lengthy content in `/var/www/html/saluteora/laravel/lang/[language].json`.
 >>>>>>> 54f4fa16 (.)
+=======
+- **Suggested Actions**:
+  - Ensure `lang` directory exists with `php artisan lang:publish`.
+  - Organize translations in PHP files by module in `/var/www/html/<nome progetto>/laravel/lang/[language]/`.
+  - Utilize JSON files for lengthy content in `/var/www/html/<nome progetto>/laravel/lang/[language].json`.
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
   - Modify Blade files to implement `__()` translation helper.
   - Coordinate with `mcamara/laravel-localization` for consistent localization.
   - Implement language switcher in UI navigation.
 - **Benefits**: Improved accessibility and user-friendliness through structured localization.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Documentation**: See `/var/www/html/<nome progetto>/laravel/Modules/Lang/docs/static-text-translation.md` for complete instructions.
 =======
 - **Documentation**: See `/var/www/html/saluteora/laravel/Modules/Lang/docs/static-text-translation.md` for complete instructions.
 >>>>>>> 54f4fa16 (.)
+=======
+- **Documentation**: See `/var/www/html/<nome progetto>/laravel/Modules/Lang/docs/static-text-translation.md` for complete instructions.
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

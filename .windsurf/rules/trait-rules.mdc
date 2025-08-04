@@ -1,18 +1,26 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description: Regole dettagliate per l'implementazione e l'utilizzo dei Trait nei moduli Laraxot/<nome progetto>
 =======
 description: Regole dettagliate per l'implementazione e l'utilizzo dei Trait nei moduli Laraxot/PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+description: Regole dettagliate per l'implementazione e l'utilizzo dei Trait nei moduli Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 globs: ["**/*.php", "**/Models/**/*.php", "**/Traits/**/*.php"]
 alwaysApply: true
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regole per l'Implementazione e Utilizzo dei Trait in Laraxot/<nome progetto>
 =======
 # Regole per l'Implementazione e Utilizzo dei Trait in Laraxot/PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+# Regole per l'Implementazione e Utilizzo dei Trait in Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Principi Fondamentali
 
@@ -55,20 +63,28 @@ trait HasTeams
             ->withTimestamps();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Verifica se l'utente appartiene al team specificato.
      */
     public function belongsToTeam(Team $team): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->teams->contains($team) ||
 =======
         return $this->teams->contains($team) || 
 >>>>>>> d23ba493 (add calendar)
+=======
+        return $this->teams->contains($team) ||
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             ($this->currentTeam !== null && $this->currentTeam->id === $team->id);
     }
 }
@@ -111,20 +127,28 @@ trait HasTenants
             ->withTimestamps();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Verifica se l'utente appartiene al tenant specificato.
      */
     public function belongsToTenant(Tenant $tenant): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->tenants->contains($tenant) ||
 =======
         return $this->tenants->contains($tenant) || 
 >>>>>>> d23ba493 (add calendar)
+=======
+        return $this->tenants->contains($tenant) ||
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             ($this->currentTenant !== null && $this->currentTenant->id === $tenant->id);
     }
 }
@@ -165,10 +189,14 @@ trait HasAuthenticationLogTrait
         return $this->hasMany(AuthenticationLog::class);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Registra un nuovo accesso per l'utente.
      */
@@ -222,10 +250,14 @@ public function findRelatedModel(?int $id): ?RelatedModel
         return null;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     return RelatedModel::find($id);
 }
 ```
@@ -315,10 +347,14 @@ class User extends Authenticatable
 {
     use HasTeams;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     // Resto dell'implementazione...
 }
 ```
@@ -348,7 +384,11 @@ Se un trait viene deprecato:
 - Documentare tutti i trait nella cartella `docs` del modulo appropriato
 - Assicurarsi che i trait siano compatibili con PHPStan livello 9
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Utilizzare generics appropriati nelle collezioni e relazioni
 =======
 - Utilizzare generics appropriati nelle collezioni e relazioni
 >>>>>>> d23ba493 (add calendar)
+=======
+- Utilizzare generics appropriati nelle collezioni e relazioni
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

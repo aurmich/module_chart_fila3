@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Pattern Corretti per Migrazioni JSON in <nome progetto>
 =======
 # Pattern Corretti per Migrazioni JSON in SaluteOra
 >>>>>>> 54f4fa16 (.)
+=======
+# Pattern Corretti per Migrazioni JSON in <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Problema Critico
 
@@ -109,10 +113,14 @@ return json_encode($translations);
 **MAI** tentare di convertire direttamente una colonna a JSON senza prima validare e convertire i dati esistenti in un formato JSON valido.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questi pattern si applicano a TUTTE le migrazioni in <nome progetto> che coinvolgono colonne JSON, in particolare per:
 =======
 Questi pattern si applicano a TUTTE le migrazioni in SaluteOra che coinvolgono colonne JSON, in particolare per:
 >>>>>>> 54f4fa16 (.)
+=======
+Questi pattern si applicano a TUTTE le migrazioni in <nome progetto> che coinvolgono colonne JSON, in particolare per:
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 - Traduzioni con `HasTranslations`
 - Configurazioni o meta-dati strutturati
 - Qualsiasi campo che memorizza dati complessi

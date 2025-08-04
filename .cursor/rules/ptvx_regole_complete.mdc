@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regole Cursor complete per Laraxot <nome progetto>
 =======
 # Regole Cursor complete per Laraxot PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+# Regole Cursor complete per Laraxot <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Modelli ed Ereditarietà
 
@@ -156,6 +160,7 @@ ModuleName/
   ```php
   <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   use Illuminate\Database\Schema\Blueprint;
   use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -166,6 +171,12 @@ ModuleName/
   use Modules\Xot\Database\Migrations\XotBaseMigration;
   
 >>>>>>> d23ba493 (add calendar)
+=======
+
+  use Illuminate\Database\Schema\Blueprint;
+  use Modules\Xot\Database\Migrations\XotBaseMigration;
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
   return new class extends XotBaseMigration {
       /**
        * Run the migrations.
@@ -175,10 +186,14 @@ ModuleName/
           // Implementazione
       }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
       
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
       // Non implementare mai il metodo down
   };
   ```
@@ -269,10 +284,14 @@ public function setUp(): void
 {
     parent::setUp();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     $this->label(trans('module-name::actions.export.label'))
          ->icon('heroicon-o-document-download')
          ->color('success')
@@ -347,10 +366,14 @@ return [
 - Eseguire sempre dalla directory Laravel root:
   ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
   cd /var/www/html/<nome progetto>/laravel
 =======
   cd /var/www/html/ptvx/laravel
 >>>>>>> d23ba493 (add calendar)
+=======
+  cd /var/www/html/<nome progetto>/laravel
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
   ./vendor/bin/phpstan analyze [target] --level=9
   ```
 
@@ -360,10 +383,14 @@ return [
    // ❌ ERRATO
    public function execute()
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
    
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
    // ✅ CORRETTO
    public function execute(): ReturnType
    ```
@@ -373,10 +400,14 @@ return [
    // ❌ ERRATO
    public function getAlAttribute($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
    
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
    // ✅ CORRETTO
    public function getAlAttribute(?string $value): ?string
    ```
@@ -386,10 +417,14 @@ return [
    // ❌ ERRATO
    protected $fillable = ['field1', 'field2'];
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
    
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
    // ✅ CORRETTO
    /** @var list<string> */
    protected $fillable = ['field1', 'field2'];
@@ -400,10 +435,14 @@ return [
    // ❌ ERRATO: Accesso a proprietà non dichiarate
    $model->anno;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
    
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
    // ✅ CORRETTO: Dichiarazione proprietà
    /**
     * @property int $anno
@@ -420,10 +459,14 @@ return [
     */
    public function viewAny(User $user): bool
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
    
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
    // ✅ CORRETTO: Allineamento tipi
    /**
     * @return bool
@@ -436,10 +479,14 @@ return [
    // ❌ ERRATO: Accesso a proprietà indefinite
    $user->random_field;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
    
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
    // ✅ CORRETTO: Usare metodi corretti di Faker
    $faker->randomElement(['a', 'b', 'c']);
    ```
@@ -466,6 +513,7 @@ $message = "Value: " . (is_scalar($value) ? (string) $value : '');
 
 ### Struttura Documentazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Documentazione Root**: `/var/www/html/<nome progetto>/docs/`
   - Linee guida globali
   - Standard di codice generali
@@ -478,6 +526,13 @@ $message = "Value: " . (is_scalar($value) ? (string) $value : '');
   - Link bidirezionali a doc moduli
   
 >>>>>>> d23ba493 (add calendar)
+=======
+- **Documentazione Root**: `/var/www/html/<nome progetto>/docs/`
+  - Linee guida globali
+  - Standard di codice generali
+  - Link bidirezionali a doc moduli
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 - **Documentazione Modulo**: `Modules/<NomeModulo>/docs/`
   - Architettura specifica del modulo
   - API e integrazione

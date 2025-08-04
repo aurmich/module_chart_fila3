@@ -5,11 +5,17 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Filament\Resources\AppointmentResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\BadgeColumn;
 use Filament\Tables\Columns\IconColumn;
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Columns\BadgeColumn;
+use Filament\Tables\Columns\IconColumn;
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 use Modules\SaluteOra\Filament\Resources\AppointmentResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
@@ -17,6 +23,9 @@ class ListAppointments extends XotBaseListRecords
 {
     protected static string $resource = AppointmentResource::class;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
     /**
      * Define the table columns for the appointments list.
@@ -42,12 +51,21 @@ class ListAppointments extends XotBaseListRecords
                 ->searchable()
                 ->sortable(),
 
+<<<<<<< HEAD
             'starts_at' => TextColumn::make('starts_at')
                 ->dateTime('d/m/Y H:i')
                 ->sortable(),
 
             'ends_at' => TextColumn::make('ends_at')
                 ->dateTime('d/m/Y H:i')
+=======
+            'start_time' => TextColumn::make('start_time')
+                ->dateTime()
+                ->sortable(),
+
+            'end_time' => TextColumn::make('end_time')
+                ->dateTime()
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
                 ->sortable(),
 
             'type' => BadgeColumn::make('type')
@@ -80,6 +98,9 @@ class ListAppointments extends XotBaseListRecords
                 ->toggleable(isToggledHiddenByDefault: true),
         ];
     }
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 }

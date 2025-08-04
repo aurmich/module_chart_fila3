@@ -4,6 +4,7 @@ globs:
 alwaysApply: true
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regole FullCalendar Multi-Tenant per <nome progetto>
 =======
 <<<<<<< HEAD
@@ -12,6 +13,9 @@ alwaysApply: true
 # Regole FullCalendar Multi-Tenant per SaluteOra
 >>>>>>> 2099645a (.)
 >>>>>>> 3b8e8240 (fix case cursor and windsurf)
+=======
+# Regole FullCalendar Multi-Tenant per <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Principi Fondamentali
 
@@ -19,6 +23,9 @@ alwaysApply: true
 - **SEMPRE** estendere direttamente `Saade\FilamentFullCalendar\Widgets\FullCalendarWidget`
 - **MAI** utilizzare `Modules\Xot\Filament\Widgets\XotBaseFullCalendarWidget` (non esiste nel modulo Xot)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 - Utilizzare il trait `Modules\<nome progetto>\Traits\HasFullCalendarConfig` per configurazioni comuni
 
 =======
@@ -44,14 +51,18 @@ alwaysApply: true
 
 ### Namespace e Struttura
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 3b8e8240 (fix case cursor and windsurf)
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 - Widget calendar: `Modules\<nome progetto>\Filament\Widgets\`
 - Modelli: `Modules\<nome progetto>\Models\`
 - Enum: `Modules\<nome progetto>\Enums\`
 - Trait: `Modules\<nome progetto>\Traits\`
 - Middleware: `Modules\<nome progetto>\Http\Middleware\`
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 - Provider: `Modules\<nome progetto>\Providers\Filament\AdminPanelProvider`
@@ -227,6 +238,8 @@ class AdminPanelProvider extends XotBasePanelProvider
 - Middleware: `Modules\SaluteOra\Http\Middleware\`
 >>>>>>> 2099645a (.)
 >>>>>>> 3b8e8240 (fix case cursor and windsurf)
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Implementazione Widget
 
@@ -694,10 +707,14 @@ public function test_middleware_blocks_wrong_user_type()
 
 ### File di Documentazione Aggiornati
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 - [fullcalendar_parental_widgets.md](mdc:../laravel/Modules/<nome progetto>/docs/fullcalendar_parental_widgets.md) - Architettura completa con Parental STI
 - [fullcalendar_implementation_guide.md](mdc:../laravel/Modules/<nome progetto>/docs/fullcalendar_implementation_guide.md) - Guida step-by-step
 - [fullcalendar_configuration.mdc](mdc:../laravel/Modules/<nome progetto>/docs/fullcalendar_configuration.mdc) - Configurazioni complete
 - [fullcalendar_widget_implementation.mdc](mdc:../laravel/Modules/<nome progetto>/docs/fullcalendar_widget_implementation.mdc) - Implementazione widget
+<<<<<<< HEAD
 
 ### Aggiornamento Documentazione
 - **SEMPRE** aggiornare documentazione per nuovi widget
@@ -706,6 +723,8 @@ public function test_middleware_blocks_wrong_user_type()
 - [fullcalendar_implementation_guide.md](mdc:../laravel/Modules/SaluteOra/docs/fullcalendar_implementation_guide.md) - Guida step-by-step
 - [fullcalendar_configuration.mdc](mdc:../laravel/Modules/SaluteOra/docs/fullcalendar_configuration.mdc) - Configurazioni complete
 - [fullcalendar_widget_implementation.mdc](mdc:../laravel/Modules/SaluteOra/docs/fullcalendar_widget_implementation.mdc) - Implementazione widget
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ### Aggiornamento Documentazione
 - **SEMPRE** aggiornare documentazione per nuovi widget

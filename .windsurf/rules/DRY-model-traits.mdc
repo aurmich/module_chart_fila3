@@ -28,10 +28,14 @@ class Admin extends User {
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `Modules/<nome progetto>/docs/DRY-model-traits.md`
 =======
 - `Modules/SaluteOra/docs/DRY-model-traits.md`
 >>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
+=======
+- `Modules/<nome progetto>/docs/DRY-model-traits.md`
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 - `.cursor/rules/DRY-model-traits.mdc`
 
 ---

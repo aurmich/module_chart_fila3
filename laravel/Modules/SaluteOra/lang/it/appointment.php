@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -536,6 +537,8 @@ return [
     ]
 ];
 =======
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 return array (
   'name' => 'Appuntamenti',
   'navigation' => 
@@ -889,6 +892,7 @@ return array (
     'appointment_updated' => 'Appuntamento aggiornato con successo',
   ),
 );
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 return array (
@@ -1181,3 +1185,5 @@ return [
     ],
 ];
 >>>>>>> 2bcfd382 (fix Address)
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

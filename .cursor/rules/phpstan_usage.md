@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regole per l'Utilizzo di PHPStan in Laraxot <nome progetto>
 =======
 # Regole per l'Utilizzo di PHPStan in Laraxot PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+# Regole per l'Utilizzo di PHPStan in Laraxot <nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Comando Corretto
 
@@ -30,10 +34,14 @@ php artisan phpstan:analyse  # ERRATO
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 cd /var/www/html/_bases/base_<nome progetto>_fila3/laravel
 =======
 cd /var/www/html/_bases/base_ptvx_fila3/laravel
 >>>>>>> d23ba493 (add calendar)
+=======
+cd /var/www/html/_bases/base_<nome progetto>_fila3/laravel
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 ./vendor/bin/phpstan analyse Modules/Xot --level=9
 ```
 
@@ -41,10 +49,14 @@ cd /var/www/html/_bases/base_ptvx_fila3/laravel
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 cd /var/www/html/_bases/base_<nome progetto>_fila3/laravel
 =======
 cd /var/www/html/_bases/base_ptvx_fila3/laravel
 >>>>>>> d23ba493 (add calendar)
+=======
+cd /var/www/html/_bases/base_<nome progetto>_fila3/laravel
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 ./vendor/bin/phpstan analyse Modules/Xot Modules/User --level=9
 ```
 
@@ -52,10 +64,14 @@ cd /var/www/html/_bases/base_ptvx_fila3/laravel
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 cd /var/www/html/_bases/base_<nome progetto>_fila3/laravel
 =======
 cd /var/www/html/_bases/base_ptvx_fila3/laravel
 >>>>>>> d23ba493 (add calendar)
+=======
+cd /var/www/html/_bases/base_<nome progetto>_fila3/laravel
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 ./vendor/bin/phpstan analyse Modules/Xot --level=10
 ```
 
@@ -81,7 +97,11 @@ Per una documentazione più dettagliata su PHPStan, vedere il file:
 ```
 laravel/Modules/Xot/docs/PHPSTAN-USAGE-GUIDE.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 ``` 
 =======
 ``` 
 >>>>>>> d23ba493 (add calendar)
+=======
+``` 
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

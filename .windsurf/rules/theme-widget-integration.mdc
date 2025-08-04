@@ -35,15 +35,19 @@ I temi NON devono mai ricreare funzionalità esistenti nei moduli Filament. Devo
     $widgetClass = match (auth()->user()?->type) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 3b8e8240 (fix case cursor and windsurf)
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         \Modules\<nome progetto>\Enums\UserTypeEnum::PATIENT =>
             \Modules\<nome progetto>\Filament\Widgets\PatientCalendarWidget::class,
         \Modules\<nome progetto>\Enums\UserTypeEnum::DOCTOR =>
             \Modules\<nome progetto>\Filament\Widgets\DoctorCalendarWidget::class,
         \Modules\<nome progetto>\Enums\UserTypeEnum::ADMIN =>
             \Modules\<nome progetto>\Filament\Widgets\AdminCalendarWidget::class,
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -58,6 +62,8 @@ I temi NON devono mai ricreare funzionalità esistenti nei moduli Filament. Devo
             \Modules\SaluteOra\Filament\Widgets\AdminCalendarWidget::class,
 >>>>>>> 2099645a (.)
 >>>>>>> 3b8e8240 (fix case cursor and windsurf)
+=======
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         default => null
     };
 @endphp
@@ -166,6 +172,7 @@ private function getWidgetProps(): array
 
 // ✅ CORRETTO
 <<<<<<< HEAD
+<<<<<<< HEAD
 @livewire(\Modules\<nome progetto>\Filament\Widgets\PatientCalendarWidget::class)
 =======
 <<<<<<< HEAD
@@ -174,6 +181,9 @@ private function getWidgetProps(): array
 @livewire(\Modules\SaluteOra\Filament\Widgets\PatientCalendarWidget::class)
 >>>>>>> 2099645a (.)
 >>>>>>> 3b8e8240 (fix case cursor and windsurf)
+=======
+@livewire(\Modules\<nome progetto>\Filament\Widgets\PatientCalendarWidget::class)
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 ```
 
 ### Form Widget
@@ -185,6 +195,7 @@ private function getWidgetProps(): array
 
 // ✅ CORRETTO
 <<<<<<< HEAD
+<<<<<<< HEAD
 @livewire(\Modules\<nome progetto>\Filament\Widgets\AppointmentFormWidget::class)
 =======
 <<<<<<< HEAD
@@ -193,6 +204,9 @@ private function getWidgetProps(): array
 @livewire(\Modules\SaluteOra\Filament\Widgets\AppointmentFormWidget::class)
 >>>>>>> 2099645a (.)
 >>>>>>> 3b8e8240 (fix case cursor and windsurf)
+=======
+@livewire(\Modules\<nome progetto>\Filament\Widgets\AppointmentFormWidget::class)
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 ```
 
 ## Documentazione Richiesta

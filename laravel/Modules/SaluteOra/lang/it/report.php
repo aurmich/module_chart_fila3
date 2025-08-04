@@ -232,5 +232,9 @@ return array (
     'sort' => 20,
     'tooltip' => 'Visualizza report e statistiche delle attività cliniche',
   ),
+  'model' => 
+  array (
+    'label' => 'report.model',
+  ),
 );
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)

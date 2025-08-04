@@ -1,18 +1,26 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description: Regole dettagliate per le migrazioni in Laraxot/<nome progetto>
 =======
 description: Regole dettagliate per le migrazioni in Laraxot/PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+description: Regole dettagliate per le migrazioni in Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 globs: ["**/database/migrations/*.php"]
 alwaysApply: true
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regole per le Migrazioni in Laraxot/<nome progetto>
 =======
 # Regole per le Migrazioni in Laraxot/PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+# Regole per le Migrazioni in Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Principi Fondamentali
 
@@ -54,10 +62,14 @@ return new class extends XotBaseMigration
             $table->timestamps();
         });
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         // Aggiunta commento alla tabella
         $this->tableComment('nome_tabella', 'Descrizione della tabella');
     }
@@ -79,10 +91,14 @@ class CreateTableName extends Migration // NON estendere Migration
         // ...
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     public function down() // MAI implementare down()
     {
         // ...
@@ -124,6 +140,7 @@ return new class extends XotBaseMigration
                 $table->timestamps();
             });
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             $this->tableComment('nome_tabella', 'Descrizione della tabella');
             return;
@@ -136,6 +153,13 @@ return new class extends XotBaseMigration
         }
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+            $this->tableComment('nome_tabella', 'Descrizione della tabella');
+            return;
+        }
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         // 2. Se la tabella esiste, aggiungi solo la nuova colonna
         if (! $this->hasColumn('nome_tabella', 'nuova_colonna')) {
             Schema::table('nome_tabella', function (Blueprint $table) {
@@ -163,10 +187,14 @@ class AddColumnToTable extends Migration
         });
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     public function down()
     {
         Schema::table('nome_tabella', function (Blueprint $table) {
@@ -220,12 +248,17 @@ La colonna è stata aggiunta per tracciare l'utente che ha effettuato la valutaz
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Performance/Models/PerformanceIndividuale.php](/var/www/html/<nome progetto>/laravel/Modules/Performance/Models/PerformanceIndividuale.php)
 - [Performance/docs/SCHEMA.md](/var/www/html/<nome progetto>/laravel/Modules/Performance/docs/SCHEMA.md)
 =======
 - [Performance/Models/PerformanceIndividuale.php](/var/www/html/ptvx/laravel/Modules/Performance/Models/PerformanceIndividuale.php)
 - [Performance/docs/SCHEMA.md](/var/www/html/ptvx/laravel/Modules/Performance/docs/SCHEMA.md)
 >>>>>>> d23ba493 (add calendar)
+=======
+- [Performance/Models/PerformanceIndividuale.php](/var/www/html/<nome progetto>/laravel/Modules/Performance/Models/PerformanceIndividuale.php)
+- [Performance/docs/SCHEMA.md](/var/www/html/<nome progetto>/laravel/Modules/Performance/docs/SCHEMA.md)
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 ```
 
 ## Gestione delle Foreign Key
@@ -270,7 +303,11 @@ $table->softDeletes(); // deleted_at per soft delete
 - Documentare ogni modifica significativa alla struttura del database
 - Aggiornare i modelli e le relazioni quando si modificano le tabelle
 <<<<<<< HEAD
+<<<<<<< HEAD
 - MAI usare il comando `php artisan migrate:rollback` in produzione
 =======
 - MAI usare il comando `php artisan migrate:rollback` in produzione
 >>>>>>> d23ba493 (add calendar)
+=======
+- MAI usare il comando `php artisan migrate:rollback` in produzione
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)

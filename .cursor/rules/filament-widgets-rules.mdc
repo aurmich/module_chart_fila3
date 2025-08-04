@@ -1,18 +1,26 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description: Regole per l'implementazione di Widget Filament in progetti Laraxot/<nome progetto>
 =======
 description: Regole per l'implementazione di Widget Filament in progetti Laraxot/PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+description: Regole per l'implementazione di Widget Filament in progetti Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 globs: ["**/Filament/Widgets/*.php"]
 alwaysApply: true
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regole per Widget Filament in Laraxot/<nome progetto>
 =======
 # Regole per Widget Filament in Laraxot/PTVX
 >>>>>>> d23ba493 (add calendar)
+=======
+# Regole per Widget Filament in Laraxot/<nome progetto>
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
 
 ## Principi Fondamentali
 
@@ -106,6 +114,7 @@ class StatsOverviewWidget extends BaseWidget
         return [
             Stat::make('Totale elementi', ModelName::count()), // ❌ Stringa hardcoded
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             Stat::make('Valore medio', ModelName::avg('value')), // ❌ Stringa hardcoded
 
@@ -114,6 +123,11 @@ class StatsOverviewWidget extends BaseWidget
             Stat::make('Valore medio', ModelName::avg('value')), // ❌ Stringa hardcoded
             
 >>>>>>> d23ba493 (add calendar)
+=======
+
+            Stat::make('Valore medio', ModelName::avg('value')), // ❌ Stringa hardcoded
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             Stat::make('Tasso di completamento', function () { // ❌ Manca tipizzazione
                 return number_format(
                     (ModelName::where('is_completed', true)->count() / ModelName::count()) * 100
@@ -201,10 +215,14 @@ class ModelNameChart extends ChartWidget
 {
     protected static ?string $heading = null;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * {@inheritDoc}
      */
@@ -311,10 +329,14 @@ class LatestModelNameWidget extends BaseWidget
                     ->label(__('modulename::fields.name.label'))
                     ->searchable(),
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
                     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
                 Tables\Columns\TextColumn::make('created_at')
                     ->label(__('modulename::fields.created_at.label'))
                     ->dateTime(),
@@ -345,10 +367,14 @@ class ModuleNameCalendarWidget extends BaseCalendarWidget
      */
     public $model = EventModel::class;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Configurazione del calendario.
      *
@@ -366,10 +392,14 @@ class ModuleNameCalendarWidget extends BaseCalendarWidget
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Schema del form per gli eventi.
      *
@@ -383,6 +413,7 @@ class ModuleNameCalendarWidget extends BaseCalendarWidget
                 ->placeholder(__('modulename::calendar.fields.title.placeholder'))
                 ->required(),
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             Forms\Components\DateTimePicker::make('starts_at')
                 ->label(__('modulename::calendar.fields.starts_at.label'))
@@ -395,6 +426,13 @@ class ModuleNameCalendarWidget extends BaseCalendarWidget
                 ->required(),
                 
 >>>>>>> d23ba493 (add calendar)
+=======
+
+            Forms\Components\DateTimePicker::make('starts_at')
+                ->label(__('modulename::calendar.fields.starts_at.label'))
+                ->required(),
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
             Forms\Components\DateTimePicker::make('ends_at')
                 ->label(__('modulename::calendar.fields.ends_at.label'))
                 ->required(),
@@ -437,10 +475,14 @@ class FilamentServiceProvider extends ServiceProvider
         Livewire::component('modulename::latest-model-name-widget', \Modules\ModuleName\Filament\Widgets\LatestModelNameWidget::class);
         Livewire::component('modulename::module-name-calendar-widget', \Modules\ModuleName\Filament\Widgets\ModuleNameCalendarWidget::class);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         // Registra i componenti dei widget nelle pagine
         FilamentView::registerRenderHook(
             'panels::page.start',
@@ -469,10 +511,14 @@ class Dashboard extends Page
     protected static ?string $navigationIcon = 'heroicon-o-home';
     protected static string $view = 'modulename::filament.pages.dashboard';
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Widget da visualizzare nella pagina.
      *
@@ -485,10 +531,14 @@ class Dashboard extends Page
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
     /**
      * Widget da visualizzare nella pagina.
      *
@@ -611,10 +661,14 @@ class StatsOverviewWidgetTest extends TestCase
         // Arrange
         ModelName::factory()->count(5)->create();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> d23ba493 (add calendar)
+=======
+
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
         // Act & Assert
         Livewire::test(StatsOverviewWidget::class)
             ->assertSee('Totale elementi')
@@ -649,7 +703,11 @@ class StatsOverviewWidgetTest extends TestCase
 1. Utilizzare le classi Tailwind responsive
 2. Testare il widget su diverse dimensioni di schermo
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. Semplificare il layout per schermi piccoli
 =======
 3. Semplificare il layout per schermi piccoli
 >>>>>>> d23ba493 (add calendar)
+=======
+3. Semplificare il layout per schermi piccoli
+>>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
