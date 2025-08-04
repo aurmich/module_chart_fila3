@@ -11,9 +11,13 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Contracts\HasTeamsContract;
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+use Modules\User\Contracts\HasTeamsContract;
+>>>>>>> a3174e5b (phpstan)
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Membership;
 use Modules\User\Models\Role;
@@ -24,10 +28,14 @@ use Illuminate\Support\Facades\Schema;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a3174e5b (phpstan)
  * Trait HasTeams
  * 
  * Provides team functionality for User models implementing team-based organization.
  * This trait handles team ownership, membership, permissions, and relationships.
+<<<<<<< HEAD
  *
  * @property TeamContract $currentTeam
  * @property int|null $current_team_id
@@ -43,6 +51,15 @@ use Illuminate\Support\Facades\Schema;
  * @property Collection $teams
  * @property Collection $ownedTeams
 >>>>>>> 54f4fa16 (.)
+=======
+ *
+ * @property TeamContract $currentTeam
+ * @property int|null $current_team_id
+ * @property Collection<int, TeamContract> $teams
+ * @property Collection<int, TeamContract> $ownedTeams
+ * @property Collection<int, UserContract> $teamUsers
+ * @property UserContract|null $owner
+>>>>>>> a3174e5b (phpstan)
  */
 trait HasTeams
 {
@@ -209,6 +226,7 @@ trait HasTeams
      * Get all of the team's users including its owner.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return \Illuminate\Support\Collection<int, UserContract>
      */
     public function getAllTeamUsersAttribute(): Collection
@@ -220,16 +238,28 @@ trait HasTeams
         return $this->teamUsers->merge([$owner]);
 =======
      * @return \Illuminate\Support\Collection
+=======
+     * @return \Illuminate\Support\Collection<int, UserContract>
+>>>>>>> a3174e5b (phpstan)
      */
-    public function getAllTeamUsersAttribute()
+    public function getAllTeamUsersAttribute(): Collection
     {
+<<<<<<< HEAD
         return $this->teamUsers->merge([$this->owner]);
 >>>>>>> 54f4fa16 (.)
+=======
+        $owner = $this->owner;
+        if ($owner === null) {
+            return $this->teamUsers;
+        }
+        return $this->teamUsers->merge([$owner]);
+>>>>>>> a3174e5b (phpstan)
     }
 
     /**
      * Determine if the given user is on the team.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @param UserContract $user
      * @return bool
@@ -248,12 +278,28 @@ trait HasTeams
         return false;
 =======
      * @param  \Illuminate\Database\Eloquent\Model  $user
+=======
+     * @param UserContract $user
+>>>>>>> a3174e5b (phpstan)
      * @return bool
      */
-    public function hasTeamMember($user)
+    public function hasTeamMember(UserContract $user): bool
     {
+<<<<<<< HEAD
         return $this->teamUsers->contains($user) || $user->ownsTeam($this);
 >>>>>>> 54f4fa16 (.)
+=======
+        if ($this->teamUsers->contains($user)) {
+            return true;
+        }
+
+        // Check if user can own this team (assuming BaseUser implements HasTeamsContract)
+        if ($this instanceof TeamContract && method_exists($user, 'ownsTeam')) {
+            return $user->ownsTeam($this);
+        }
+
+        return false;
+>>>>>>> a3174e5b (phpstan)
     }
 
     /**
@@ -320,8 +366,12 @@ trait HasTeams
     /**
      * Get the current team of the user's context.
      *
+<<<<<<< HEAD
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Contracts\TeamContract, static>
 >>>>>>> 54f4fa16 (.)
+=======
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, static>
+>>>>>>> a3174e5b (phpstan)
      */
     public function currentTeam(): BelongsTo
     {
@@ -335,14 +385,20 @@ trait HasTeams
             $this->save();
         }
 
+        /** @var class-string $teamClass */
         $teamClass = $xot->getTeamClass();
 
-        return $this->belongsTo($teamClass, 'current_team_id');
+        // Cast a Model generico per compatibilità con template types
+        /** @var class-string<\Illuminate\Database\Eloquent\Model> $modelClass */
+        $modelClass = $teamClass;
+
+        return $this->belongsTo($modelClass, 'current_team_id');
     }
 
     /**
      * Get the teams owned by the user.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -356,16 +412,29 @@ trait HasTeams
 =======
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
 >>>>>>> 54f4fa16 (.)
+=======
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, static>
+>>>>>>> a3174e5b (phpstan)
      */
     public function ownedTeams(): HasMany
     {
         $xot = XotData::make();
+        /** @var class-string $teamClass */
         $teamClass = $xot->getTeamClass();
+<<<<<<< HEAD
 <<<<<<< HEAD
         
 =======
 >>>>>>> 54f4fa16 (.)
         return $this->hasMany($teamClass, 'user_id');
+=======
+        
+        // Cast a Model generico per compatibilità con template types
+        /** @var class-string<\Illuminate\Database\Eloquent\Model> $modelClass */
+        $modelClass = $teamClass;
+        
+        return $this->hasMany($modelClass, 'user_id');
+>>>>>>> a3174e5b (phpstan)
     }
 
     /**
@@ -403,11 +472,13 @@ trait HasTeams
 =======
      * Get all of the pending invitations for the team.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Illuminate\Database\Eloquent\Model>
      */
-    public function teamInvitations()
+    public function teamInvitations(): HasMany
     {
-        return $this->hasMany(app('team_invitation_model'), 'team_id');
+        /** @var class-string<\Illuminate\Database\Eloquent\Model> $invitationModel */
+        $invitationModel = app('team_invitation_model');
+        return $this->hasMany($invitationModel, 'team_id');
     }
 
     /**
@@ -415,20 +486,26 @@ trait HasTeams
      *
      * @return string
      */
-    public function teamRelation()
+    public function teamRelation(): string
     {
-        return config('teams.relationship_name', 'teamUsers');
+        return (string) config('teams.relationship_name', 'teamUsers');
     }
 
     /**
      * Get all of the team's users.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Illuminate\Database\Eloquent\Model>
      */
-    public function teamUsers()
+    public function teamUsers(): HasMany
     {
+<<<<<<< HEAD
         return $this->hasMany(app('team_user_model'), 'team_id');
 >>>>>>> 54f4fa16 (.)
+=======
+        /** @var class-string<\Illuminate\Database\Eloquent\Model> $teamUserModel */
+        $teamUserModel = app('team_user_model');
+        return $this->hasMany($teamUserModel, 'team_id');
+>>>>>>> a3174e5b (phpstan)
     }
 
     /**

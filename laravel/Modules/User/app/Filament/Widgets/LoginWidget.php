@@ -42,6 +42,7 @@ use Filament\Forms\Components\Checkbox as FormsCheckbox;
  * - Usa solo componenti Filament importati
  * - Validazione e sicurezza integrate
  * - Facilmente estendibile (2FA, captcha, login social)
+<<<<<<< HEAD
  *
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -55,6 +56,8 @@ use Filament\Forms\Components\Checkbox as FormsCheckbox;
  */
 =======
  * @property-read static string $view La view del widget segue il pattern {module}::filament.widgets.{type}
+=======
+>>>>>>> a3174e5b (phpstan)
  */
 
 >>>>>>> 54f4fa16 (.)
@@ -66,6 +69,7 @@ class LoginWidget extends XotBaseWidget
      * il path deve essere senza il namespace del modulo (senza "user::").
      * 
      * @see \Modules\User\docs\WIDGETS_STRUCTURE.md - Sezione B
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @var view-string
      */
@@ -82,6 +86,9 @@ class LoginWidget extends XotBaseWidget
      *
      * @return void
 =======
+=======
+     * @var view-string
+>>>>>>> a3174e5b (phpstan)
      */
     protected static string $view = 'user::filament.widgets.login';
     
@@ -192,6 +199,7 @@ class LoginWidget extends XotBaseWidget
             $data = $this->form->getState();
             
 <<<<<<< HEAD
+<<<<<<< HEAD
             // Cast esplicito per type safety PHPStan
             $remember = (bool) ($data['remember'] ?? false);
 <<<<<<< HEAD
@@ -211,6 +219,15 @@ class LoginWidget extends XotBaseWidget
                 'password' => $data['password']
             ], $data['remember'] ?? false)) {
 >>>>>>> 54f4fa16 (.)
+=======
+            // Cast esplicito per type safety PHPStan
+            $remember = (bool) ($data['remember'] ?? false);
+            
+            if (!Auth::attempt([
+                'email' => (string) $data['email'],
+                'password' => (string) $data['password']
+            ], $remember)) {
+>>>>>>> a3174e5b (phpstan)
                 throw ValidationException::withMessages([
                     'email' => [__('Le credenziali fornite non sono corrette.')],
                 ]);

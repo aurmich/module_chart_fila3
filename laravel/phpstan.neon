@@ -28,8 +28,12 @@ parameters:
         minimumNumberOfJobsPerProcess: 2
 
     paths:
+<<<<<<< HEAD
         - ./Modules
 >>>>>>> 54f4fa16 (.)
+=======
+        - ./Modules/*/app/*
+>>>>>>> a3174e5b (phpstan)
         # - ./Themes
         # - ./app
 
@@ -78,6 +82,8 @@ parameters:
         # - ./Modules/*/database_old/*
         - ./Modules/*/scripts/*
         - ./Modules/*/tests/*
+        - ./Modules/*/vendor/*
+        - ./Modules/*/*.blade.php
 
     bootstrapFiles:
         - ./phpstan_constants.php

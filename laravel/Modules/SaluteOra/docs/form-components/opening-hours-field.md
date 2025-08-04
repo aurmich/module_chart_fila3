@@ -478,10 +478,14 @@ class Studio extends BaseModel implements HasName
     protected $table = 'studios';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @var list<string> */
 =======
     /** @var array<string> */
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+    /** @var list<string> */
+>>>>>>> a3174e5b (phpstan)
     protected $fillable = [
         'name',
         'phone',

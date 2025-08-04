@@ -335,6 +335,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     {
         // Concateno i fillable del parent con quelli della classe corrente
 <<<<<<< HEAD
+<<<<<<< HEAD
         // array_values() garantisce che sia un array indicizzato (list<string>)
         $this->fillable = array_values(array_merge(parent::getFillable(), $this->getFillable()));
 
@@ -348,6 +349,10 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 >>>>>>> 54f4fa16 (.)
 =======
         $this->fillable = array_merge(parent::getFillable(), $this->getFillable());
+=======
+        // array_values() garantisce che sia un array indicizzato (list<string>)
+        $this->fillable = array_values(array_merge(parent::getFillable(), $this->getFillable()));
+>>>>>>> a3174e5b (phpstan)
 
         parent::__construct($attributes);
     }
@@ -470,6 +475,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * Get the socialite users associated with the user.
      *
@@ -492,6 +498,17 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
         return $this
             ->hasMany(SocialiteUser::class);
 >>>>>>> 54f4fa16 (.)
+=======
+    /**
+     * @return HasMany<SocialiteUser, static>
+     */
+    public function socialiteUsers(): HasMany
+    {
+        /** @var class-string<SocialiteUser> $socialiteUserClass */
+        $socialiteUserClass = SocialiteUser::class;
+        
+        return $this->hasMany($socialiteUserClass);
+>>>>>>> a3174e5b (phpstan)
     }
 
     public function getProviderField(string $provider, string $field): string

@@ -62,10 +62,14 @@ class MailTemplateVersion extends BaseModel
     protected $connection = 'notify';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @var list<string> */
 =======
     /** @var array<string> */
 >>>>>>> 54f4fa16 (.)
+=======
+    /** @var list<string> */
+>>>>>>> a3174e5b (phpstan)
     protected $fillable = [
         'template_id',
         'mailable',

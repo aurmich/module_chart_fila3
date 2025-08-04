@@ -188,6 +188,9 @@ class Studio extends BaseTenant
     protected $table = 'studios';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a3174e5b (phpstan)
     /** @var list<string> */
     protected $fillable = [
         'name',

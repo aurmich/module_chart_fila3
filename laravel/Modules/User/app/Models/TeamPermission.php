@@ -59,8 +59,12 @@ class TeamPermission extends Model
     /** @var string */
     protected $connection = 'user';
 
+<<<<<<< HEAD
     /** @var array<string> */
 >>>>>>> 54f4fa16 (.)
+=======
+    /** @var list<string> */
+>>>>>>> a3174e5b (phpstan)
     protected $fillable = [
         'team_id',
         'user_id',

@@ -38,18 +38,29 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 // use Modules\User\Models\OwnerRole;
 
 /**
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+ * Trait HasTenants
+ * 
+ * Provides tenant functionality for User models implementing multi-tenancy.
+ * 
+>>>>>>> a3174e5b (phpstan)
  * @property TeamContract $currentTeam
  */
 trait HasTenants
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a3174e5b (phpstan)
      * Check if the user can access a specific tenant.
      *
      * @param \Illuminate\Database\Eloquent\Model $tenant
      * @return bool
      */
+<<<<<<< HEAD
     public function canAccessTenant(Model $tenant): bool
     {
         return $this->tenants()->whereKey($tenant)->exists();
@@ -70,17 +81,30 @@ trait HasTenants
 =======
      * ..
      **/
+=======
+>>>>>>> a3174e5b (phpstan)
     public function canAccessTenant(Model $tenant): bool
     {
-
         return $this->tenants()->whereKey($tenant)->exists();
-
     }
 
+    /**
+     * Get tenants for the given panel.
+     *
+     * @param \Filament\Panel $panel
+     * @return array<\Illuminate\Database\Eloquent\Model>|\Illuminate\Support\Collection<int, \Illuminate\Database\Eloquent\Model>
+     */
     public function getTenants(Panel $panel): array|Collection
     {
+<<<<<<< HEAD
         return $this->tenants;
 >>>>>>> 54f4fa16 (.)
+=======
+        /** @var \Illuminate\Support\Collection<int, \Illuminate\Database\Eloquent\Model> $tenants */
+        $tenants = $this->tenants;
+        
+        return $tenants;
+>>>>>>> a3174e5b (phpstan)
     }
 
     /**
@@ -89,6 +113,7 @@ trait HasTenants
 <<<<<<< HEAD
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany<\Illuminate\Database\Eloquent\Model, \Illuminate\Database\Eloquent\Relations\Pivot>
+<<<<<<< HEAD
 =======
      * 
 =======
@@ -96,10 +121,13 @@ trait HasTenants
 >>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany<\Illuminate\Database\Eloquent\Model>
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> a3174e5b (phpstan)
      */
     public function tenants(): BelongsToMany
     {
         $xot = XotData::make();
+<<<<<<< HEAD
 <<<<<<< HEAD
         /** @var class-string<\Illuminate\Database\Eloquent\Model> */
         $tenant_class = $xot->getTenantClass();
@@ -107,6 +135,9 @@ trait HasTenants
         return $this->belongsToManyX($tenant_class);
 =======
         /** @var class-string<Model> */
+=======
+        /** @var class-string<\Illuminate\Database\Eloquent\Model> */
+>>>>>>> a3174e5b (phpstan)
         $tenant_class = $xot->getTenantClass();
 
         // $this->setConnection('mysql');

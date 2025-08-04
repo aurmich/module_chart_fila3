@@ -31,11 +31,16 @@ abstract class BaseListUsers extends XotBaseListRecords
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Get table columns for user records.
      *
 <<<<<<< HEAD
      * @return array<string, \Filament\Tables\Columns\Column>
 =======
+=======
+     * Get table columns for user records.
+     *
+>>>>>>> a3174e5b (phpstan)
      * @return array<string, TextColumn>
 >>>>>>> aurmich/dev
 =======
@@ -65,10 +70,15 @@ abstract class BaseListUsers extends XotBaseListRecords
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Get table filters for user records.
      *
 =======
 >>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
+=======
+     * Get table filters for user records.
+     *
+>>>>>>> a3174e5b (phpstan)
      * @return array<Tables\Filters\BaseFilter>
      */
     public function getTableFilters(): array
@@ -91,6 +101,7 @@ abstract class BaseListUsers extends XotBaseListRecords
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Get table actions for user records.
      *
@@ -170,22 +181,43 @@ abstract class BaseListUsers extends XotBaseListRecords
      * @return array<\Filament\Tables\Actions\BulkAction>
 =======
      * @return array<Action|Tables\Actions\ActionGroup>
+=======
+     * Get table actions for user records.
+     *
+     * @return array<\Filament\Tables\Actions\Action|\Filament\Tables\Actions\ActionGroup>
+>>>>>>> a3174e5b (phpstan)
      */
     public function getTableActions(): array
     {
-        return [
-            'change-password' => ChangePasswordAction::make()
+        $actions = [
+            ChangePasswordAction::make()
                 ->tooltip('Cambio Password')
                 ->iconButton(),
-            ...parent::getTableActions(),
-            'deactivate' => Action::make('deactivate')
-                ->tooltip(__('filament-actions::delete.single.label'))
-                ->color('danger')
-                ->icon('heroicon-o-trash')
-                ->action(static fn (UserContract $user) => $user->delete()),
         ];
+        
+        // Add parent actions - filter to ensure type compatibility
+        $parentActions = parent::getTableActions();
+        foreach ($parentActions as $action) {
+            if ($action instanceof \Filament\Tables\Actions\Action || $action instanceof \Filament\Tables\Actions\ActionGroup) {
+                $actions[] = $action;
+            }
+        }
+        
+        // Add deactivate action
+        $actions[] = Action::make('deactivate')
+            ->tooltip(__('filament-actions::delete.single.label'))
+            ->color('danger')
+            ->icon('heroicon-o-trash')
+            ->action(static fn (UserContract $user) => $user->delete());
+            
+        return $actions;
     }
 
+    /**
+     * Get header widgets for the user list page.
+     *
+     * @return array<class-string>
+     */
     protected function getHeaderWidgets(): array
     {
         return [
@@ -194,12 +226,19 @@ abstract class BaseListUsers extends XotBaseListRecords
     }
 
     /**
+<<<<<<< HEAD
      * @return array<string, Tables\Actions\BulkAction>
 >>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
+=======
+     * Get table bulk actions for user records.
+     *
+     * @return array<Tables\Actions\BulkAction>
+>>>>>>> a3174e5b (phpstan)
      */
     public function getTableBulkActions(): array
     {
         return [
+<<<<<<< HEAD
 <<<<<<< HEAD
             Tables\Actions\DeleteBulkAction::make(),
 <<<<<<< HEAD
@@ -211,6 +250,10 @@ abstract class BaseListUsers extends XotBaseListRecords
             'delete' => Tables\Actions\DeleteBulkAction::make(),
             'export' => ExportBulkAction::make(),
 >>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
+=======
+            Tables\Actions\DeleteBulkAction::make(),
+            ExportBulkAction::make(),
+>>>>>>> a3174e5b (phpstan)
         ];
     }
 }

@@ -172,6 +172,9 @@ class PasswordExpiredWidget extends XotBaseWidget implements HasForms
         $this->validate();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a3174e5b (phpstan)
         $user = Auth::user();
         if (!$user || !($user instanceof \Illuminate\Database\Eloquent\Model)) {
             $this->addError('current_password', __('user::auth.user_not_found'));
@@ -180,6 +183,7 @@ class PasswordExpiredWidget extends XotBaseWidget implements HasForms
 
         // Cast e verifica esistenza dei dati del form
 <<<<<<< HEAD
+<<<<<<< HEAD
         $data = $this->data ?? [];
         $currentPassword = SafeStringCastAction::cast($data['current_password'] ?? '');
         $newPassword = SafeStringCastAction::cast($data['password'] ?? '');
@@ -187,12 +191,17 @@ class PasswordExpiredWidget extends XotBaseWidget implements HasForms
         $currentPassword = (string) ($this->data['current_password'] ?? '');
         $newPassword = (string) ($this->data['password'] ?? '');
 >>>>>>> aurmich/dev
+=======
+        $currentPassword = (string) ($this->data['current_password'] ?? '');
+        $newPassword = (string) ($this->data['password'] ?? '');
+>>>>>>> a3174e5b (phpstan)
         
         if (empty($currentPassword) || empty($newPassword)) {
             $this->addError('current_password', __('user::auth.password_fields_required'));
             return null;
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         $userPassword = SafeStringCastAction::cast($user->getAttribute('password'));
         // Cast esplicito di mixed a string per PHPStan
@@ -207,10 +216,15 @@ class PasswordExpiredWidget extends XotBaseWidget implements HasForms
 =======
         if (! Hash::check($this->data['current_password'], auth()->user()->password)) {
 >>>>>>> 54f4fa16 (.)
+=======
+        $userPassword = $user->getAttribute('password');
+        if (!Hash::check($currentPassword, $userPassword)) {
+>>>>>>> a3174e5b (phpstan)
             $this->addError('current_password', __('user::auth.password_current_incorrect'));
             return null;
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         $user->setAttribute('password', Hash::make($newPassword));
         $user->save();
@@ -226,9 +240,12 @@ class PasswordExpiredWidget extends XotBaseWidget implements HasForms
 =======
         $user = auth()->user();
         $user->password = Hash::make($this->data['password']);
+=======
+        $user->setAttribute('password', Hash::make($newPassword));
+>>>>>>> a3174e5b (phpstan)
         $user->save();
 
-        return new PasswordResetResponse($user);
+        return new PasswordResetResponse();
     }
 
 >>>>>>> 54f4fa16 (.)

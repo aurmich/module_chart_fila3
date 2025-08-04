@@ -102,17 +102,33 @@ use Illuminate\Support\Facades\Password;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
 /**
+ * Reset password widget for user password reset functionality.
+ *
  * @property ComponentContainer $form
  */
 class ResetPasswordWidget extends XotBaseWidget
 {
+    /**
+     * The view for this widget.
+     *
+     * @var view-string
+     */
     protected static string $view = 'user::widgets.auth.reset-password-widget';
 
 <<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
     /**
-     * Get the form schema for this widget.
+     * Widget data array.
+     * 
+     * CRITICAL: Do not remove or redeclare this property - it's managed by XotBaseWidget.
+     *
+     * @var array<string, mixed>|null
+     */
+    public ?array $data = [];
+
+    /**
+     * Get the form schema for password reset.
      *
      * @return array<string, \Filament\Forms\Components\Component>
      */
@@ -136,12 +152,32 @@ class ResetPasswordWidget extends XotBaseWidget
         ];
     }
 
+<<<<<<< HEAD
 >>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
+=======
+    /**
+     * Mount the widget and initialize the form.
+     *
+     * @return void
+     */
+    public function mount(): void
+    {
+        $this->form->fill();
+    }
+
+    /**
+     * Configure the form for this widget.
+     *
+     * @param \Filament\Forms\Form $form
+     * @return \Filament\Forms\Form
+     */
+>>>>>>> a3174e5b (phpstan)
     public function form(Form $form): Form
     {
         return $form
             ->schema([
                 Section::make()
+<<<<<<< HEAD
 <<<<<<< HEAD
                     ->schema($this->getFormSchema())
 =======
@@ -164,21 +200,30 @@ class ResetPasswordWidget extends XotBaseWidget
                             ->autocomplete('new-password'),
                     ])
 >>>>>>> 54f4fa16 (.)
+=======
+                    ->schema($this->getFormSchema())
+>>>>>>> a3174e5b (phpstan)
                     ->columns(1),
             ])
             ->statePath('data');
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * Handle password reset with proper security and error handling.
      *
      * Implements Laravel's password reset functionality with explicit
      * type casting for security and proper error feedback.
+=======
+    /**
+     * Handle password reset.
+>>>>>>> a3174e5b (phpstan)
      *
      * @return \Illuminate\Http\RedirectResponse|void
      */
     public function resetPassword()
+<<<<<<< HEAD
     {
         $data = $this->form->getState();
 
@@ -197,18 +242,24 @@ class ResetPasswordWidget extends XotBaseWidget
             function ($user, $password): void {
 =======
     public function resetPassword(): void
+=======
+>>>>>>> a3174e5b (phpstan)
     {
         $data = $this->form->getState();
 
         $status = Password::reset(
             [
-                'email' => $data['email'],
-                'password' => $data['password'],
-                'password_confirmation' => $data['password_confirmation'],
-                'token' => request()->route('token'),
+                'email' => (string) $data['email'],
+                'password' => (string) $data['password'],
+                'password_confirmation' => (string) $data['password_confirmation'],
+                'token' => (string) request()->route('token'),
             ],
+<<<<<<< HEAD
             function ($user, $password) {
 >>>>>>> 54f4fa16 (.)
+=======
+            function ($user, $password): void {
+>>>>>>> a3174e5b (phpstan)
                 $user->forceFill([
                     'password' => Hash::make($password),
                     'remember_token' => Str::random(60),
@@ -217,6 +268,7 @@ class ResetPasswordWidget extends XotBaseWidget
         );
 
         if ($status === Password::PASSWORD_RESET) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             session()->flash('status', __($status));
@@ -235,8 +287,12 @@ class ResetPasswordWidget extends XotBaseWidget
 =======
             session()->flash('status', __($status));
             redirect()->route('login');
+=======
+            session()->flash('status', __((string) $status));
+            return redirect()->route('login');
+>>>>>>> a3174e5b (phpstan)
         } else {
-            $this->addError('email', __($status));
+            $this->addError('email', __((string) $status));
         }
     }
 <<<<<<< HEAD

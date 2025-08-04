@@ -36,7 +36,11 @@ use Illuminate\Validation\Rule;
 use Livewire\Volt\Component;
 use Livewire\Attributes\Validate;
 use Livewire\Attributes\Locked;
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+use Modules\SaluteOra\Models\User;
+>>>>>>> a3174e5b (phpstan)
 
 name('profile.edit');
 middleware(['auth', 'verified']);
@@ -552,11 +556,11 @@ $component = new class extends Component {
     /**
      * The authenticated user (locked property).
      *
-     * @var \Illuminate\Foundation\Auth\User|\Illuminate\Contracts\Auth\Authenticatable
+     * @var User
      */
 >>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
     #[Locked]
-    public $user;
+    public User $user;
 
     /**
      * User's name.
@@ -608,9 +612,14 @@ $component = new class extends Component {
      */
     public function mount(): void
     {
-        $this->user = auth()->user();
-        $this->name = $this->user->name;
-        $this->email = $this->user->email;
+        $user = auth()->user();
+        if (!$user instanceof User) {
+            abort(401, 'User not authenticated');
+        }
+        
+        $this->user = $user;
+        $this->name = $this->user->name ?? '';
+        $this->email = $this->user->email ?? '';
     }
 
     /**
@@ -622,7 +631,7 @@ $component = new class extends Component {
     {
         $validated = $this->validate([
             'name' => 'required|string|min:3',
-            'email' => 'required|min:3|email|max:255|unique:users,email,' . $this->user->id . ',id',
+            'email' => 'required|min:3|email|max:255|unique:users,email,' . $this->user->getKey() . ',id',
         ]);
 
         // if the user hasn't changed their name or email and we also want to make, don't update and show error
@@ -669,7 +678,7 @@ $component = new class extends Component {
             return Redirect::back();
         }
 
-        $user = auth()->user();
+        $user = $this->user;
 
         Auth::logout();
 

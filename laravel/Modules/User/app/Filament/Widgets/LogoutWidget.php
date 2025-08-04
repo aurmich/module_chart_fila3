@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Exception;
 use Filament\Actions\Action;
 use Filament\Forms\Components\Component;
@@ -51,6 +52,10 @@ class LogoutWidget extends XotBaseWidget
 >>>>>>> aurmich/dev
 =======
 use Filament\Forms\Components\Actions\Action;
+=======
+use Filament\Actions\Action;
+use Filament\Forms\Components\Actions\Action as FormAction;
+>>>>>>> a3174e5b (phpstan)
 use Filament\Forms\Components\Component;
 use Filament\Forms\Components\View;
 use Illuminate\Support\Facades\Auth;
@@ -58,6 +63,9 @@ use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Log;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
+/**
+ * Logout widget for user logout functionality.
+ */
 class LogoutWidget extends XotBaseWidget
 {
     /**
@@ -66,24 +74,34 @@ class LogoutWidget extends XotBaseWidget
      * il path deve essere senza il namespace del modulo.
 >>>>>>> 54f4fa16 (.)
      */
+    /** @phpstan-ignore-next-line */
     protected static string $view = 'user::widgets.logout';
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Widget data array.
      * 
      * CRITICAL: This property is managed by XotBaseWidget.
      * Do not remove or redeclare it.
+=======
+     * Widget data array.
+     * 
+     * CRITICAL: Do not remove or redeclare this property - it's managed by XotBaseWidget.
+>>>>>>> a3174e5b (phpstan)
      *
      * @var array<string, mixed>|null
      */
     public ?array $data = [];
 
     /**
+<<<<<<< HEAD
      * Indicates if the logout process is in progress.
      *
      * @var bool
 =======
+=======
+>>>>>>> a3174e5b (phpstan)
      * Stato del widget.
 >>>>>>> 54f4fa16 (.)
      */
@@ -91,8 +109,13 @@ class LogoutWidget extends XotBaseWidget
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Mount the widget and initialize the form.
      * 
+=======
+     * Mount the widget and initialize the form.
+     *
+>>>>>>> a3174e5b (phpstan)
      * @return void
      */
     public function mount(): void
@@ -101,6 +124,7 @@ class LogoutWidget extends XotBaseWidget
     }
 
     /**
+<<<<<<< HEAD
      * Get the form schema for the logout confirmation.
      * 
      * This method implements the abstract method from XotBaseWidget.
@@ -122,8 +146,12 @@ class LogoutWidget extends XotBaseWidget
             'message' => View::make('filament.widgets.auth.logout-message')
 >>>>>>> aurmich/dev
 =======
+=======
+>>>>>>> a3174e5b (phpstan)
      * Implementazione del metodo astratto getFormSchema.
      * NON sovrascrivere il metodo form() che è dichiarato come final.
+     *
+     * @return array<string, Component>
      */
     public function getFormSchema(): array
     {
@@ -152,7 +180,13 @@ class LogoutWidget extends XotBaseWidget
      * @throws \RuntimeException If the logout process fails
 =======
      * Azione di logout.
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+     * Gestisce il logout dell'utente con eventi, logging e reindirizzamento localizzato.
+     *
+     * @return void
+>>>>>>> a3174e5b (phpstan)
      */
     public function logout(): void
     {
@@ -220,7 +254,12 @@ class LogoutWidget extends XotBaseWidget
      * @return array<string, Action>
 =======
      * Azioni del form.
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+     *
+     * @return array<string, Action>
+>>>>>>> a3174e5b (phpstan)
      */
     public function getFormActions(): array
     {
@@ -396,13 +435,18 @@ class LogoutWidget extends XotBaseWidget
                 ->color('gray')
                 ->size('lg')
                 ->extraAttributes(['class' => 'w-full justify-center mt-2'])
-                ->url(function () {
+                ->url(function (): string {
                     $locale = app()->getLocale();
                     return '/' . $locale;
                 }),
         ];
     }
 
+    /**
+     * Get view data for the widget.
+     *
+     * @return array<string, string>
+     */
     protected function getViewData(): array
     {
         return [
