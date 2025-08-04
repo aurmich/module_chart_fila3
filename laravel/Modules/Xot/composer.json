@@ -35,8 +35,8 @@
         "coolsam/panel-modules": "*",
         "doctrine/dbal": "*",
         "fidum/laravel-eloquent-morph-to-one": "*",
-<<<<<<< HEAD
         "filament/filament": "^3.4",
+<<<<<<< HEAD
 <<<<<<< HEAD
         "filament/spatie-laravel-media-library-plugin": "^3.2",
         "filament/spatie-laravel-translatable-plugin": "^3.2",
@@ -53,9 +53,10 @@
 >>>>>>> b58de900 (.)
 =======
         "filament/filament": "^3.3",
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
         "filament/spatie-laravel-media-library-plugin": "^3.2",
         "filament/spatie-laravel-translatable-plugin": "^3.2",
->>>>>>> 4ec8f92 (.)
         "aaronfrancis/fast-paginate":"*",
 >>>>>>> 54f4fa16 (.)
         "guzzlehttp/guzzle": "*",

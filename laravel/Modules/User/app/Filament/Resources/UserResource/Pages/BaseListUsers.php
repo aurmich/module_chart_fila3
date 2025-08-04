@@ -33,6 +33,7 @@ abstract class BaseListUsers extends XotBaseListRecords
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Get table columns for user records.
      *
 <<<<<<< HEAD
@@ -52,6 +53,10 @@ abstract class BaseListUsers extends XotBaseListRecords
      *
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+     * Get table columns for user records.
+     *
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      * @return array<string, TextColumn>
 >>>>>>> aurmich/dev
 =======
@@ -62,13 +67,17 @@ abstract class BaseListUsers extends XotBaseListRecords
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             //'id' => TextColumn::make('id'),
 >>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
             'name' => TextColumn::make('name')
                 ->searchable(),
             'email' => TextColumn::make('email')
                 ->searchable(),
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             //'email_verified_at' => TextColumn::make('email_verified_at')
@@ -76,10 +85,13 @@ abstract class BaseListUsers extends XotBaseListRecords
             //'created_at' => TextColumn::make('created_at')
             //    ->dateTime(),
 >>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
         ];
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -101,11 +113,16 @@ abstract class BaseListUsers extends XotBaseListRecords
      *
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+     * Get table filters for user records.
+     *
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      * @return array<Tables\Filters\BaseFilter>
      */
     public function getTableFilters(): array
     {
         return [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             // Filtri disabilitati per ora, abilitare se necessario
@@ -120,10 +137,14 @@ abstract class BaseListUsers extends XotBaseListRecords
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+            // Filters disabled by default, enable if needed
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
             Filter::make('verified')
                 ->query(static fn (Builder $query): Builder => $query->whereNotNull('email_verified_at')),
             Filter::make('unverified')
                 ->query(static fn (Builder $query): Builder => $query->whereNull('email_verified_at')),
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             */
@@ -137,10 +158,13 @@ abstract class BaseListUsers extends XotBaseListRecords
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
         ];
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -245,6 +269,8 @@ abstract class BaseListUsers extends XotBaseListRecords
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      * Get table actions for user records.
      *
      * @return array<\Filament\Tables\Actions\Action|\Filament\Tables\Actions\ActionGroup>
@@ -281,18 +307,13 @@ abstract class BaseListUsers extends XotBaseListRecords
      *
      * @return array<class-string>
      */
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> a3f7230 (.)
     protected function getHeaderWidgets(): array
     {
-        return [
-            UserOverview::class,
-        ];
+        return [UserOverview::class];
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @return array<string, Tables\Actions\BulkAction>
@@ -315,10 +336,16 @@ abstract class BaseListUsers extends XotBaseListRecords
      * @return array<Tables\Actions\BulkAction>
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+     * Get table bulk actions for user records.
+     *
+     * @return array<\Filament\Tables\Actions\BulkAction>
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      */
     public function getTableBulkActions(): array
     {
         return [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -348,6 +375,10 @@ abstract class BaseListUsers extends XotBaseListRecords
             ExportBulkAction::make(),
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+            Tables\Actions\DeleteBulkAction::make(),
+            ExportBulkAction::make(),
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
         ];
     }
 }

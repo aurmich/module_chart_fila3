@@ -48,6 +48,7 @@ namespace Modules\User\Models;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property string|null $owner_id
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Team whereOwnerId($value)
 =======
@@ -66,6 +67,10 @@ namespace Modules\User\Models;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Team whereOwnerId($value)
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+ * @property string|null $owner_id
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Team whereOwnerId($value)
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
  * @mixin \Eloquent
  */
 class Team extends BaseTeam {}

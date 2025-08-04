@@ -1,18 +1,12 @@
 <?php
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> aurmich/dev
-=======
-
->>>>>>> a3f7230 (.)
 declare(strict_types=1);
 
 namespace Modules\User\Livewire;
 
 use Livewire\Component;
 use Illuminate\Support\Facades\Auth;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -27,6 +21,8 @@ class Logout extends Component
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Contracts\View\View;
 
@@ -44,6 +40,7 @@ class Logout extends Component
      * Handle user logout process.
      */
     public function logout(): ?RedirectResponse
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -76,6 +73,8 @@ class Logout extends Component
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     {
         $this->processing = true;
 
@@ -91,6 +90,7 @@ class Logout extends Component
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         }
     }
@@ -100,6 +100,8 @@ class Logout extends Component
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
             return null;
         }
     }
@@ -108,6 +110,7 @@ class Logout extends Component
      * Render the logout component view.
      */
     public function render(): View
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         }
@@ -131,6 +134,8 @@ class Logout extends Component
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     {
         return view('user::livewire.logout');
     }

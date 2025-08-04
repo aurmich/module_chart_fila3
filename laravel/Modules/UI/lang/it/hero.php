@@ -14,21 +14,23 @@ return array (
     array (
       'label' => 'class',
       'description' => 'class',
-<<<<<<< HEAD
       'helper_text' => 'class',
       'placeholder' => 'class',
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> df228b6 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     ),
     'label' => 
     array (
       'label' => 'label',
-<<<<<<< HEAD
       'description' => 'label',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'helper_text' => 'label',
       'placeholder' => 'label',
@@ -38,6 +40,8 @@ return array (
 =======
 >>>>>>> df228b6 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     ),
     'buttons' => 
     array (

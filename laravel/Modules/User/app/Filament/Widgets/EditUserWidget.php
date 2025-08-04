@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets;
 
 use Filament\Forms\Form;
-<<<<<<< HEAD
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Filament\Widgets\Widget;
@@ -35,13 +34,18 @@ use Illuminate\Support\Facades\Log;
  * 
  * Il widget è completamente generico e riutilizzabile per qualsiasi tipo di utente.
 <<<<<<< HEAD
+<<<<<<< HEAD
  * 
+=======
+ *
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
  * @property-read string $type
  * @property-read string $resource
  * @property-read string $model
  * @property-read string $action
  * @property-read Model $record
  * @property array|null $data
+<<<<<<< HEAD
  */
 class EditUserWidget extends XotBaseWidget
 {
@@ -60,12 +64,21 @@ class EditUserWidget extends XotBaseWidget
     protected int | string | array $columnSpan = 'full';
     
 =======
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
  */
 class EditUserWidget extends XotBaseWidget
 {
+    /** @var array<string, mixed>|null */
     public ?array $data = [];
+    
+    /** @var int|string|array<string, mixed> */
     protected int | string | array $columnSpan = 'full';
+<<<<<<< HEAD
 >>>>>>> b58de900 (.)
+=======
+    
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     public string $type;
     public string $resource;
     public string $model;
@@ -93,7 +106,17 @@ class EditUserWidget extends XotBaseWidget
     
     protected static string $view = 'pub_theme::filament.widgets.edit-user';
 
+<<<<<<< HEAD
 >>>>>>> b58de900 (.)
+=======
+    /**
+     * Initialize the widget with user type and optional user ID.
+     *
+     * @param string $type
+     * @param int|null $userId
+     * @return void
+     */
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     public function mount(string $type, ?int $userId = null): void
     {
         $this->type = $type;
@@ -114,12 +137,18 @@ class EditUserWidget extends XotBaseWidget
      * Ottiene il modello per il form.
      * Se viene fornito un userId, carica quell'utente, altrimenti usa l'utente autenticato.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @param int|null $userId
      * @return Model
      */
     protected function getFormModel(?int $userId = null): Model
 =======
+=======
+     *
+     * @param int|null $userId
+     * @return Model
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      */
     public function getFormModel(?int $userId = null): Model
 >>>>>>> b58de900 (.)
@@ -150,10 +179,15 @@ class EditUserWidget extends XotBaseWidget
     /**
      * Ottiene i dati per il riempimento del form.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return array<string, mixed>
 =======
 >>>>>>> b58de900 (.)
+=======
+     *
+     * @return array<string, mixed>
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      */
     public function getFormFill(): array
     {
@@ -200,10 +234,15 @@ class EditUserWidget extends XotBaseWidget
     /**
      * Ottiene lo schema del form dalla resource.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return array<int|string, \Filament\Forms\Components\Component>
 =======
 >>>>>>> b58de900 (.)
+=======
+     *
+     * @return array<string, mixed>
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      */
     public function getFormSchema(): array
     {
@@ -215,10 +254,15 @@ class EditUserWidget extends XotBaseWidget
      * 
      * @see https://filamentphp.com/docs/3.x/forms/adding-a-form-to-a-livewire-component
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return \Illuminate\Http\RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
 =======
 >>>>>>> b58de900 (.)
+=======
+     *
+     * @return \Illuminate\Http\RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      */
     public function updateUser(): \Illuminate\Http\RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
     {
@@ -240,10 +284,15 @@ class EditUserWidget extends XotBaseWidget
     /**
      * Controlla se l'utente può modificare il record corrente.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return bool
 =======
 >>>>>>> b58de900 (.)
+=======
+     *
+     * @return bool
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      */
     public function canEdit(): bool
     {
@@ -270,6 +319,7 @@ class EditUserWidget extends XotBaseWidget
             $currentUser->id === $this->record->user_id ?? null
         );
     }
+<<<<<<< HEAD
 } 
 >>>>>>> b58de900 (.)
 =======
@@ -521,5 +571,6 @@ class EditUserWidget extends XotBaseWidget implements HasForms
         return $currentUser && $currentUser->hasRole('admin');
 >>>>>>> efb0f4d1 (feat: add EditUserWidget with localization and documentation)
     }
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 }
->>>>>>> a3f7230 (.)

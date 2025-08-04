@@ -16,8 +16,8 @@
         }
     },
     "require": {
-<<<<<<< HEAD
         "filament/filament": "^3.4",
+<<<<<<< HEAD
 <<<<<<< HEAD
         "filament/tables": "^3.4"
 =======
@@ -31,5 +31,8 @@
         "filament/tables": "^3.3"
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+        "filament/tables": "^3.4"
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     }
 }

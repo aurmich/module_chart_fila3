@@ -248,6 +248,7 @@ trait IsProfileTrait
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->belongsToManyX(Device::class);
 =======
 =======
@@ -286,6 +287,9 @@ trait IsProfileTrait
         return $this->belongsToManyX(Device::class);
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+        return $this->belongsToManyX(Device::class);
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     }
 
     /**

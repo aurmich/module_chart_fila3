@@ -90,6 +90,7 @@ edit file composer.json
         "php": "^8.2",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "filament/filament": "^3.4",
 =======
 <<<<<<< HEAD
@@ -101,6 +102,9 @@ edit file composer.json
         "filament/filament": "^3.3",
 >>>>>>> 4ec8f92 (.)
 >>>>>>> b58de900 (.)
+=======
+        "filament/filament": "^3.3",
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
         "laravel/framework": "^11.9",
 <<<<<<< HEAD
         "filament/filament": "^3.3",

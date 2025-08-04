@@ -7,6 +7,7 @@ namespace Modules\User\Filament\Widgets\Auth;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Section;
@@ -22,6 +23,8 @@ class ForgotPasswordWidget extends BaseAuthWidget
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 use Filament\Forms\Form;
 use Filament\Forms\ComponentContainer;
 use Filament\Forms\Components\Section;
@@ -52,6 +55,7 @@ class ForgotPasswordWidget extends XotBaseWidget
         ];
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 use Filament\Forms\Components\TextInput;
@@ -98,6 +102,8 @@ class ForgotPasswordWidget extends XotBaseWidget
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     public function form(Form $form): Form
     {
         return $form

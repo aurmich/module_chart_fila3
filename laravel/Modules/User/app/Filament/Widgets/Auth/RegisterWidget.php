@@ -1,16 +1,10 @@
 <?php
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> aurmich/dev
-=======
-
->>>>>>> a3f7230 (.)
 declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -180,10 +174,16 @@ use Modules\User\Models\User;
 >>>>>>> a3f7230 (.)
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+=======
+use Filament\Forms\Form;
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 use Filament\Forms\ComponentContainer;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules\Password;
+use Modules\User\Models\User;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
 /**
@@ -199,11 +199,6 @@ class RegisterWidget extends XotBaseWidget
      * @var view-string
      */
     protected static string $view = 'user::widgets.auth.register-widget';
-<<<<<<< HEAD
-    
-
-=======
->>>>>>> a3f7230 (.)
 
     /**
      * Widget data array.
@@ -249,31 +244,18 @@ class RegisterWidget extends XotBaseWidget
      *
      * @return void
      */
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> a3f7230 (.)
     public function mount(): void
     {
         $this->form->fill();
 >>>>>>> 54f4fa16 (.)
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> a3f7230 (.)
     /**
      * Configure the form for this widget.
      *
      * @param \Filament\Forms\Form $form
      * @return \Filament\Forms\Form
      */
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> a3f7230 (.)
     public function form(Form $form): Form
     {
         return $form
@@ -387,82 +369,30 @@ class RegisterWidget extends XotBaseWidget
 =======
             ->schema([
                 Section::make()
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    ->schema([
-                        TextInput::make('name')
-                            ->required()
-                            ->maxLength(255)
-                            ->autocomplete('name'),
-
-                        TextInput::make('email')
-                            ->email()
-                            ->required()
-                            ->unique(table: User::class)
-                            ->autocomplete('email'),
-
-                        TextInput::make('password')
-                            ->password()
-                            ->required()
-                            ->rule(Password::default())
-                            ->autocomplete('new-password'),
-
-                        TextInput::make('password_confirmation')
-                            ->password()
-                            ->required()
-                            ->same('password')
-                            ->autocomplete('new-password'),
-                    ])
-=======
                     ->schema($this->getFormSchema())
->>>>>>> aurmich/dev
-=======
-                    ->schema($this->getFormSchema())
->>>>>>> a3f7230 (.)
                     ->columns(1),
             ])
             ->statePath('data');
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function register(): void
-=======
-=======
->>>>>>> a3f7230 (.)
     /**
      * Handle user registration.
      *
      * @return \Illuminate\Http\RedirectResponse
      */
     public function register(): \Illuminate\Http\RedirectResponse
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> a3f7230 (.)
     {
         $data = $this->form->getState();
 
         $user = User::create([
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-=======
             'name' => (string) $data['name'],
-            'email' => (string) $data['email'], 
+            'email' => (string) $data['email'],
             'password' => Hash::make((string) $data['password']),
->>>>>>> aurmich/dev
-=======
-            'name' => (string) $data['name'],
-            'email' => (string) $data['email'], 
-            'password' => Hash::make((string) $data['password']),
->>>>>>> a3f7230 (.)
         ]);
 
         Auth::login($user);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         redirect()->intended(route('dashboard'));
@@ -480,5 +410,8 @@ class RegisterWidget extends XotBaseWidget
         return redirect()->intended(route('dashboard'));
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+        return redirect()->intended(route('dashboard'));
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     }
 }

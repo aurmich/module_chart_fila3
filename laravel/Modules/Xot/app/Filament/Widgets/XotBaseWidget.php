@@ -6,6 +6,7 @@ namespace Modules\Xot\Filament\Widgets;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -119,9 +120,20 @@ use Filament\Forms\Contracts\HasForms;
 use Illuminate\Database\Eloquent\Model;
 use Filament\Forms\Form as FilamentForm;
 use Filament\Widgets\Widget as FilamentWidget;
+=======
+use Filament\Actions\Action;
+use Filament\Forms;
+use Filament\Forms\ComponentContainer;
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
+use Filament\Forms\Form as FilamentForm;
 use Filament\Widgets\Concerns\InteractsWithPageFilters;
->>>>>>> 4ec8f92 (.)
+use Filament\Widgets\Widget as FilamentWidget;
+use Illuminate\Contracts\View\View;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Log;
 
 /**
  * Classe base astratta per tutti i widget Filament.
@@ -131,14 +143,7 @@ use Filament\Widgets\Concerns\InteractsWithPageFilters;
  * @property string $title Titolo del widget
  * @property string $icon Icona del widget
  * @property array<string, mixed>|null $data Dati del form
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- * @property ComponentContainer $form
->>>>>>> ebf7989 (.)
-=======
- * @property ComponentContainer $form
->>>>>>> 4ec8f92 (.)
+ * @property ComponentContainer $form Contenitore del form
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -175,7 +180,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
 >>>>>>> 15cb84fb (fix collisions)
 =======
     protected int|string|array $columnSpan = 'full';
-<<<<<<< HEAD
+    
     /**
      * La vista che deve essere renderizzata per il widget.
      * Può essere un namespace (es. 'module-name::view-name') o un percorso Blade.
@@ -183,8 +188,6 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
      * @var view-string
      */
     protected static string $view = '';
-=======
->>>>>>> 4ec8f92 (.)
 
 >>>>>>> d23ba493 (add calendar)
     /**
@@ -290,6 +293,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> de1d4084 (✨ (DoctorResource.php, PatientResource.php, StudioResource.php): introduce new Studio resource and update Doctor resource to include studio relationship)
 =======
@@ -335,23 +339,44 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
 =======
 >>>>>>> 4ec8f92 (.)
 >>>>>>> b58de900 (.)
+=======
+
+        if (method_exists($form, 'statePath')) {
+            $form->statePath('data');
+            $form->model($this->getFormModel());
+        }
+
+        $data = $this->getFormFill();
+        if (!empty($data)) {
+            // $form->fill($data); // Uncomment if needed
+            // $this->data = $data; // Uncomment if needed
+        }
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 
         return $form;
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 4ec8f92 (.)
-    public function getFormFill(): array{
+    /**
+     * Get the form fill data.
+     * Can be overridden in child classes to provide specific fill data.
+     *
+     * @return array
+     */
+    public function getFormFill(): array
+    {
         return [];
     }
 
-<<<<<<< HEAD
->>>>>>> ebf7989 (.)
-=======
->>>>>>> 4ec8f92 (.)
+    /**
+     * Gets the form model.
+     * Can be overridden in child classes to provide a specific model.
+     *
+     * @return \Illuminate\Database\Eloquent\Model|string|null
+     */
+    protected function getFormModel(): Model|string|null
+    {
+        return null;
+    }
     /**
      * Ottiene le azioni del form.
      *
@@ -367,26 +392,6 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 4ec8f92 (.)
-     * Ottiene il modello per il form.
-     * Può essere sovrascritto nelle classi figlie per fornire un modello specifico.
-     *
-     * @return \Illuminate\Database\Eloquent\Model|string|null
-     */
-    protected function getFormModel(): Model|string|null
-    {
-        return null;
-    }
-
-    /**
-<<<<<<< HEAD
->>>>>>> ebf7989 (.)
-=======
->>>>>>> 4ec8f92 (.)
      * Salva i dati del form.
      * Override nelle classi figlie se necessario.
      *

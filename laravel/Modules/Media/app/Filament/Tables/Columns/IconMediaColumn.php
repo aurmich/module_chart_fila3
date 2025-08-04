@@ -28,13 +28,17 @@ class IconMediaColumn extends IconColumn
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
         $this->default(fn($record)=>$record->getFirstMedia($attachment))
                 ->icon('heroicon-o-document-text')
                 ->color(fn ($record) => $record->getFirstMedia($attachment) ? 'success' : 'danger')
                 ->tooltip(fn ($record) => $record->getFirstMedia($attachment)?->file_name ?? 'Documento non caricato')
 
                 ->action(function ($record) use ($attachment) {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 6901e2e (.)
@@ -70,6 +74,9 @@ class IconMediaColumn extends IconColumn
 =======
 >>>>>>> 6901e2e (.)
 >>>>>>> b58de900 (.)
+=======
+                    // @phpstan-ignore-next-line
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
                     $media = $record->getFirstMedia($attachment);
                     if (!$media) {
                         return;

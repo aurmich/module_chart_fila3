@@ -84,6 +84,7 @@ use Modules\Xot\Contracts\ProfileContract;
 <<<<<<< HEAD
  * @property string $last_name
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property-read \Modules\User\Models\Team|null $currentTeam
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
@@ -146,6 +147,8 @@ use Modules\Xot\Contracts\ProfileContract;
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
  * @mixin \Eloquent
  */
 class User extends BaseUser

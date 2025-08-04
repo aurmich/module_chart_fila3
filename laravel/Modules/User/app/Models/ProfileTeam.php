@@ -8,6 +8,7 @@ use Modules\Xot\Contracts\ProfileContract;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * ProfileTeam Model
 <<<<<<< HEAD
  * 
@@ -54,17 +55,12 @@ class ProfileTeam extends TeamUser
 }
 =======
  * 
+=======
+ * ProfileTeam Model
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
- * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam query()
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> a3f7230 (.)
  * @property string $id
  * @property int $team_id
  * @property string|null $user_id
@@ -75,6 +71,9 @@ class ProfileTeam extends TeamUser
  * @property string|null $created_by
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * @property string|null $deleted_by
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam query()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam whereCreatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam whereDeletedAt($value)
@@ -85,11 +84,13 @@ class ProfileTeam extends TeamUser
  * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam whereUserId($value)
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> a3f7230 (.)
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 class ProfileTeam extends TeamUser {}
 >>>>>>> 54f4fa16 (.)
+=======
+class ProfileTeam extends TeamUser
+{
+}
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)

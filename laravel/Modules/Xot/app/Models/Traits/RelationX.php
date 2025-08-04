@@ -193,29 +193,36 @@ trait RelationX
 =======
 >>>>>>> d23ba493 (add calendar)
     /**
+     * Guess the pivot class for a many-to-many relationship.
+     *
+     * @param string $related The related model class name
+     * @param string|null $class The class to use for parent class lookup (used internally)
      * @return \Illuminate\Database\Eloquent\Relations\Pivot
      */
-    public function guessPivot(string $related,?string $class=null)
+    public function guessPivot(string $related, ?string $class = null)
     {
-        if($class==null){
-            $class = $this::class;
-        }
+        $class = $class ?? $this::class;
         $model_names = [
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
             class_basename($this::class),
 =======
             class_basename($class),
 >>>>>>> f3e4ec66 (.)
+=======
+            class_basename($this::class),
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
             class_basename($related),
         ];
         sort($model_names);
         $pivot_name = implode('', $model_names);
-        $pivot_class = Str::of($class)
+        $pivot_class = Str::of($this::class)
             ->beforeLast('\\')
             ->append('\\'.$pivot_name)
             ->toString();
         if (! class_exists($pivot_class)) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -268,6 +275,8 @@ trait RelationX
 >>>>>>> b58de900 (.)
         
         if (! class_exists($pivot_class)) {
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
             /*
             //$pivot_class = 'Modules\Xot\Models\Pivot\\'.$pivot_name;
             dddx([
@@ -277,9 +286,10 @@ trait RelationX
                 'class1' => get_parent_class($class),
             ]);
             */
-            return $this->guessPivot($related,get_parent_class($class));
+            return $this->guessPivot($related, get_parent_class($class));
         }
         
+<<<<<<< HEAD
        $pivot = app($pivot_class);
        Assert::isInstanceOf($pivot, \Illuminate\Database\Eloquent\Relations\Pivot::class);
 <<<<<<< HEAD
@@ -290,6 +300,10 @@ trait RelationX
 =======
 >>>>>>> 4ec8f92 (.)
 >>>>>>> b58de900 (.)
+=======
+        $pivot = app($pivot_class);
+        Assert::isInstanceOf($pivot, \Illuminate\Database\Eloquent\Relations\Pivot::class);
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 
         return $pivot;
     }

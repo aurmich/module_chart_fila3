@@ -191,6 +191,7 @@ return [
             'message' => 'Impossibile verificare il contatto: :error',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         ]
     ]
 =======
@@ -412,5 +413,9 @@ return array (
 =======
     
 >>>>>>> 484b1fe (.)
+=======
+        ]
+    ]
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 ];
 >>>>>>> d23ba493 (add calendar)

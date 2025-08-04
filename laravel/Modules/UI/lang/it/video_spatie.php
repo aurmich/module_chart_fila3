@@ -16,29 +16,33 @@ return array (
     'video' => 
     array (
       'label' => 'video',
-<<<<<<< HEAD
       'description' => 'video',
       'helper_text' => 'video',
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> df228b6 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     ),
     'caption' => 
     array (
       'label' => 'caption',
       'description' => 'caption',
       'helper_text' => 'caption',
-<<<<<<< HEAD
       'placeholder' => 'caption',
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> df228b6 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     ),
   ),
 );

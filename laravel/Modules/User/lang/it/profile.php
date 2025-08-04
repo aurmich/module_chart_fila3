@@ -184,10 +184,13 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     'edit_profile_title' => 'Modifica Profilo',
     'edit_tooltip' => 'Modifica i tuoi dati',
     'save_changes' => 'Salva Modifiche',
@@ -195,6 +198,7 @@ return [
     'update_success' => 'Profilo aggiornato con successo!',
     'no_permission' => 'Non hai i permessi per modificare questo profilo.',
     'profile' => 'Profilo',
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 <<<<<<< HEAD
@@ -202,4 +206,6 @@ return [
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 ];

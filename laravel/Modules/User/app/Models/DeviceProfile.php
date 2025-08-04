@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * DeviceProfile Model
 <<<<<<< HEAD
  * 
@@ -17,6 +18,9 @@ namespace Modules\User\Models;
 =======
  * 
 >>>>>>> 54f4fa16 (.)
+=======
+ * DeviceProfile Model
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
  *
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property Device|null $device
@@ -28,6 +32,7 @@ namespace Modules\User\Models;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DeviceProfile query()
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -66,3 +71,8 @@ class DeviceProfile extends DeviceUser {
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+class DeviceProfile extends DeviceUser
+{
+}
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)

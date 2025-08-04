@@ -7,6 +7,7 @@ namespace Modules\User\Filament\Widgets;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Exception;
 use Filament\Actions\Action;
 use Filament\Forms\Components\Component;
@@ -67,27 +68,25 @@ use Filament\Actions\Action;
 use Filament\Forms\Components\Actions\Action as FormAction;
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+use Exception;
+use Filament\Actions\Action;
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 use Filament\Forms\Components\Component;
 use Filament\Forms\Components\View;
+use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Session;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Throwable;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-/**
- * Logout widget for user logout functionality.
- */
->>>>>>> aurmich/dev
-=======
-/**
- * Logout widget for user logout functionality.
- */
->>>>>>> a3f7230 (.)
 class LogoutWidget extends XotBaseWidget
 {
+<<<<<<< HEAD
     /**
      * Blade view del widget.
      * IMPORTANTE: quando il widget viene usato con @livewire() direttamente nelle Blade,
@@ -160,11 +159,19 @@ class LogoutWidget extends XotBaseWidget
 >>>>>>> a3174e5b (phpstan)
      * @return void
      */
+=======
+    protected static string $view = 'user::widgets.logout';
+
+    public ?array $data = [];
+    public bool $isLoggingOut = false;
+
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     public function mount(): void
     {
         $this->form->fill();
     }
 
+<<<<<<< HEAD
     /**
 <<<<<<< HEAD
      * Get the form schema for the logout confirmation.
@@ -204,10 +211,17 @@ class LogoutWidget extends XotBaseWidget
         return [
             'message' => View::make('filament.widgets.auth.logout-message')
 >>>>>>> 54f4fa16 (.)
+=======
+    public function getFormSchema(): array
+    {
+        return [
+            View::make('filament.widgets.auth.logout-message')
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
                 ->columnSpanFull(),
         ];
     }
 
+<<<<<<< HEAD
     /**
 <<<<<<< HEAD
      * Handle the user logout process.
@@ -247,10 +261,13 @@ class LogoutWidget extends XotBaseWidget
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
      */
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     public function logout(): void
     {
         try {
             $this->isLoggingOut = true;
+<<<<<<< HEAD
 
 <<<<<<< HEAD
             // Get the authenticated user before logging out
@@ -269,13 +286,16 @@ class LogoutWidget extends XotBaseWidget
             $this->handleLogoutError($e);
 =======
             // Ottieni l'utente prima del logout per il logging
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
             $user = Auth::user();
 
             if (!$user) {
-                $this->isLoggingOut = false;
+                $this->handleNoUserScenario();
                 return;
             }
 
+<<<<<<< HEAD
             // Evento pre-logout
             Event::dispatch('auth.logout.attempting', [$user]);
 
@@ -520,29 +540,112 @@ class LogoutWidget extends XotBaseWidget
                     $locale = app()->getLocale();
                     return '/' . $locale;
                 }),
+=======
+            $this->dispatchPreLogoutEvent($user);
+            $this->performLogout();
+            $this->dispatchPostLogoutEvent();
+            $this->logLogoutSuccess($user);
+            $this->redirectAfterLogout();
+        } catch (Throwable $e) {
+            $this->handleLogoutError($e);
+        }
+    }
+
+    public function getFormActions(): array
+    {
+        return [
+            $this->getLogoutAction(),
+            $this->getCancelAction(),
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
         ];
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> a3f7230 (.)
-    /**
-     * Get view data for the widget.
-     *
-     * @return array<string, string>
-     */
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> a3f7230 (.)
+    protected function getLogoutAction(): Action
+    {
+        return Action::make('logout')
+            ->translateLabel()
+            ->color('danger')
+            ->size('lg')
+            ->extraAttributes(['class' => 'w-full justify-center'])
+            ->action(fn () => $this->logout());
+    }
+
+    protected function getCancelAction(): Action
+    {
+        return Action::make('cancel')
+            ->translateLabel()
+            ->color('gray')
+            ->size('lg')
+            ->extraAttributes(['class' => 'w-full justify-center mt-2'])
+            ->url($this->getLocalizedHomeUrl());
+    }
+
+    protected function getLocalizedHomeUrl(): string
+    {
+        return '/' . App::getLocale();
+    }
+
+    protected function handleNoUserScenario(): void
+    {
+        $this->isLoggingOut = false;
+        Log::warning('Logout attempted with no authenticated user');
+    }
+
+    protected function dispatchPreLogoutEvent(Authenticatable $user): void
+    {
+        Event::dispatch('auth.logout.attempting', [$user]);
+    }
+
+    protected function performLogout(): void
+    {
+        Auth::logout();
+        Session::invalidate();
+        Session::regenerateToken();
+    }
+
+    protected function dispatchPostLogoutEvent(): void
+    {
+        Event::dispatch('auth.logout.successful');
+    }
+
+    protected function logLogoutSuccess(Authenticatable $user): void
+    {
+        Log::info('User logged out', [
+            'user_id' => $user->getAuthIdentifier(),
+            'timestamp' => now()->toDateTimeString(),
+        ]);
+    }
+
+    protected function redirectAfterLogout(): void
+    {
+        redirect($this->getLocalizedHomeUrl())
+            ->with('success', __('user::auth.logout_success'))
+            ->send();
+        exit;
+    }
+
+    protected function handleLogoutError(Throwable $e): void
+    {
+        Log::error('Logout error: ' . $e->getMessage(), [
+            'exception' => get_class($e),
+            'trace' => $e->getTraceAsString(),
+        ]);
+
+        $this->isLoggingOut = false;
+        Session::flash('error', __('user::auth.logout_error'));
+    }
+
     protected function getViewData(): array
     {
         return [
+<<<<<<< HEAD
             'title' => __('Logout'),
             'description' => __('Sei sicuro di voler uscire?'),
 >>>>>>> 54f4fa16 (.)
+=======
+            'title' => __('user::auth.logout_title'),
+            'description' => __('user::auth.logout_confirmation'),
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
         ];
     }
 }

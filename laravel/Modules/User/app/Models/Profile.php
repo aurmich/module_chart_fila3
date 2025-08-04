@@ -7,6 +7,7 @@ namespace Modules\User\Models;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Contracts\UserContract;
 use Modules\User\Database\Factories\ProfileFactory;
 use Modules\User\Models\Pivots\DeviceProfile;
@@ -56,9 +57,22 @@ use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 =======
 >>>>>>> b58de900 (.)
 =======
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 use Modules\User\Contracts\UserContract;
+use Modules\User\Database\Factories\ProfileFactory;
+use Modules\User\Models\Pivots\DeviceProfile;
+use Modules\User\Models\Pivots\ProfileTeam;
 use Modules\Xot\Contracts\ProfileContract;
+use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
+use Spatie\Permission\Traits\HasRoles;
+use Spatie\SchemalessAttributes\HasSchemalessAttributes;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> a3174e5b (phpstan)
 =======
@@ -69,11 +83,28 @@ use Modules\Xot\Contracts\ProfileContract;
 
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 /**
- * 
+ * User Profile Model
  *
+ * Represents a user profile with relationships to devices, teams, and roles.
+ *
+ * @property int $id
+ * @property string $first_name
+ * @property string $last_name
+ * @property string $user_name
+ * @property string $email
+ * @property string|null $phone
+ * @property string|null $bio
+ * @property string|null $avatar
+ * @property string|null $timezone
+ * @property string|null $locale
+ * @property array $preferences
+ * @property string $status
  * @property \Spatie\SchemalessAttributes\SchemalessAttributes $extra
  * @property-read string $avatar
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @property-read \Modules\Broker\Models\Profile|null $creator
@@ -91,6 +122,9 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property-read ProfileContract|null $creator
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+ * @property-read ProfileContract|null $creator
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\DeviceUser> $deviceUsers
  * @property-read int|null $device_users_count
  * @property-read \Modules\User\Models\ProfileTeam|\Modules\User\Models\DeviceProfile|null $pivot
@@ -116,6 +150,7 @@ use Modules\Xot\Contracts\ProfileContract;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property-read ProfileContract|null $updater
  * @property-read UserContract|null $user
 =======
@@ -138,6 +173,10 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property-read UserContract|null $user
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+ * @property-read ProfileContract|null $updater
+ * @property-read UserContract|null $user
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
  * @property-read string|null $user_name
  * @method static \Modules\User\Database\Factories\ProfileFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile newModelQuery()
@@ -151,6 +190,9 @@ use Modules\Xot\Contracts\ProfileContract;
  * @mixin \Eloquent
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 class Profile extends BaseProfile implements HasMedia
 {
     use HasRoles;
@@ -158,6 +200,7 @@ class Profile extends BaseProfile implements HasMedia
     use HasSchemalessAttributes;
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -176,6 +219,8 @@ class Profile extends BaseProfile implements HasMedia
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 345f8677 (phpstan)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      * The table associated with the model.
      *
      * @var string
@@ -183,7 +228,10 @@ class Profile extends BaseProfile implements HasMedia
     protected $table = 'profiles';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 
     /**
      * The attributes that are mass assignable.
@@ -216,6 +264,7 @@ class Profile extends BaseProfile implements HasMedia
     /**
      * The attributes that should be cast.
      *
+<<<<<<< HEAD
      * @var array<string, string>
      */
     protected $casts = [
@@ -223,6 +272,18 @@ class Profile extends BaseProfile implements HasMedia
         'preferences' => 'array',
         'extra' => 'array',
     ];
+=======
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return [
+            'email_verified_at' => 'datetime',
+            'preferences' => 'array',
+            'extra' => 'array',
+        ];
+    }
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 
     /**
      * The accessors to append to the model's array form.
@@ -246,9 +307,13 @@ class Profile extends BaseProfile implements HasMedia
     ];
 
     /**
+<<<<<<< HEAD
      * Restituisce il nome completo dell'utente.
      *
      * @return string
+=======
+     * Get the user's full name.
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      */
     public function getFullNameAttribute(): string
     {
@@ -256,9 +321,13 @@ class Profile extends BaseProfile implements HasMedia
     }
 
     /**
+<<<<<<< HEAD
      * Restituisce il display name dell'utente.
      *
      * @return string
+=======
+     * Get the user's display name.
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      */
     public function getDisplayNameAttribute(): string
     {
@@ -266,22 +335,35 @@ class Profile extends BaseProfile implements HasMedia
     }
 
     /**
+<<<<<<< HEAD
      * Restituisce le iniziali dell'utente.
      *
      * @return string
+=======
+     * Get the user's initials.
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      */
     public function getInitialsAttribute(): string
     {
         return strtoupper(
+<<<<<<< HEAD
             substr((string) $this->first_name, 0, 1) .
             substr((string) $this->last_name, 0, 1)
+=======
+            substr($this->first_name, 0, 1) . 
+            substr($this->last_name, 0, 1)
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
         );
     }
 
     /**
+<<<<<<< HEAD
      * Restituisce l'URL dell'avatar dell'utente.
      *
      * @return string|null
+=======
+     * Get the URL to the user's profile photo.
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      */
     public function getAvatarUrlAttribute(): ?string
     {
@@ -289,9 +371,13 @@ class Profile extends BaseProfile implements HasMedia
     }
 
     /**
+<<<<<<< HEAD
      * Relazione con l'utente proprietario del profilo.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+=======
+     * Get the user that owns the profile.
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      */
     public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
@@ -299,9 +385,13 @@ class Profile extends BaseProfile implements HasMedia
     }
 
     /**
+<<<<<<< HEAD
      * Relazione con i dispositivi associati al profilo.
      *
      * @return HasManyThrough
+=======
+     * Get all of the profile's devices.
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      */
     public function devices(): HasManyThrough
     {
@@ -316,9 +406,13 @@ class Profile extends BaseProfile implements HasMedia
     }
 
     /**
+<<<<<<< HEAD
      * Relazione con i device user associati al profilo.
      *
      * @return HasMany
+=======
+     * Get all of the profile's device users.
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      */
     public function deviceUsers(): HasMany
     {
@@ -326,9 +420,13 @@ class Profile extends BaseProfile implements HasMedia
     }
 
     /**
+<<<<<<< HEAD
      * Relazione con il creatore del profilo.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+=======
+     * Get the profile's creator.
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      */
     public function creator(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
@@ -336,9 +434,13 @@ class Profile extends BaseProfile implements HasMedia
     }
 
     /**
+<<<<<<< HEAD
      * Relazione con l'ultimo utente che ha aggiornato il profilo.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+=======
+     * Get the profile's last updater.
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      */
     public function updater(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
@@ -346,9 +448,13 @@ class Profile extends BaseProfile implements HasMedia
     }
 
     /**
+<<<<<<< HEAD
      * Relazione con i team associati al profilo.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+=======
+     * Get the profile's teams.
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      */
     public function teams(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
     {
@@ -359,14 +465,19 @@ class Profile extends BaseProfile implements HasMedia
     }
 
     /**
+<<<<<<< HEAD
      * Crea una nuova factory per il modello.
      *
      * @return ProfileFactory
+=======
+     * Create a new factory instance for the model.
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      */
     protected static function newFactory(): ProfileFactory
     {
         return ProfileFactory::new();
     }
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 345f8677 (phpstan)
@@ -374,3 +485,6 @@ class Profile extends BaseProfile implements HasMedia
 =======
 class Profile extends BaseProfile {}
 >>>>>>> 54f4fa16 (.)
+=======
+}
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)

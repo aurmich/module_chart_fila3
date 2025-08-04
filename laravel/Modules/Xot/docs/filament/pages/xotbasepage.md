@@ -116,6 +116,7 @@ class MyCustomPage extends Page // ⚠️ ERRATO!
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
 =======
@@ -123,6 +124,8 @@ class MyCustomPage extends Page // ⚠️ ERRATO!
 =======
 >>>>>>> 4ec8f92 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 ## ⚠️ ERRORI GRAVI DA EVITARE
 
 ### Duplicazione di Trait e Interfacce
@@ -175,6 +178,7 @@ class MyPage extends XotBasePage
 
 **NON ridichiarare mai questi elementi nelle classi che estendono XotBasePage.**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
@@ -189,6 +193,8 @@ class MyPage extends XotBasePage
 =======
 >>>>>>> 4ec8f92 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 ## Compatibilità con Filament
 
 La classe è progettata per essere compatibile con Filament v3+ e garantisce il corretto funzionamento di tutte le funzionalità native di Filament\Pages\Page.

@@ -64,9 +64,12 @@
                       </svg>
                     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
                     {{-- Widget per la modifica dati utente - 
                           Delegazione dinamica delle azioni di aggiornamento.
                           Documentazione: laravel/Modules/User/docs/filament/widgets/edit-user-widget.md --}}
@@ -75,6 +78,7 @@
                         <!-- Intestazione -->
 
                         <!-- Prima riga: Nome / Cognome -->
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
                 <div class="w-3/4 flex flex-col justify-center items-center">
@@ -108,6 +112,8 @@
                         {{-- Prima riga: Nome / Cognome --}}
 >>>>>>> bae7c52 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
                         <div class="flex flex-col lg:flex-row justify-center items-center">
                             <div class="w-full lg:w-3/6 p-5">
                                 <input class="bg-transparent" placeholder="Nome" type="text" id="name" />
@@ -117,8 +123,8 @@
                             </div>
                         </div>
 
-<<<<<<< HEAD
                         <!-- Seconda riga: Email / Cellulare -->
+<<<<<<< HEAD
 =======
                         {{-- Seconda riga: Email / Cellulare --}}
 <<<<<<< HEAD
@@ -126,6 +132,8 @@
 =======
 >>>>>>> bae7c52 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
                         <div class="flex flex-col lg:flex-row justify-center items-center">
                             <div class="w-full lg:w-3/6 p-5">
                                 <input class="bg-transparent" placeholder="Email" type="email" id="email" />
@@ -135,8 +143,8 @@
                             </div>
                         </div>
 
-<<<<<<< HEAD
                         <!-- Terza riga: Indirizzo / Partita IVA -->
+<<<<<<< HEAD
 =======
                         {{-- Terza riga: Indirizzo / Partita IVA --}}
 <<<<<<< HEAD
@@ -144,6 +152,8 @@
 =======
 >>>>>>> bae7c52 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
                         <div class="flex flex-col lg:flex-row justify-center items-center">
                             <div class="w-full lg:w-3/6 p-5">
                                 <input class="bg-transparent" placeholder="Indirizzo" type="text" id="address" />
@@ -152,13 +162,15 @@
                                 <input class="bg-transparent" placeholder="Ragione Sociale" type="text" id="vat" />
                             </div>
                         </div>
-<<<<<<< HEAD
                         --}}
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> bae7c52 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
                     </div>
                 </div>
 >>>>>>> aurmich/dev

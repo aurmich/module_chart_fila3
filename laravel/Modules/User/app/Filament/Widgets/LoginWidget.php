@@ -42,8 +42,6 @@ use Filament\Forms\Components\Checkbox as FormsCheckbox;
  * - Usa solo componenti Filament importati
  * - Validazione e sicurezza integrate
  * - Facilmente estendibile (2FA, captcha, login social)
-<<<<<<< HEAD
-<<<<<<< HEAD
  *
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -63,6 +61,7 @@ use Filament\Forms\Components\Checkbox as FormsCheckbox;
 <<<<<<< HEAD
  *
  * @property-read static string $view La view del widget segue il pattern {module}::filament.widgets.{type}
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
 =======
@@ -71,6 +70,10 @@ use Filament\Forms\Components\Checkbox as FormsCheckbox;
  */
 
 >>>>>>> 54f4fa16 (.)
+=======
+ * @property array<string, mixed>|null $data
+ */
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 class LoginWidget extends XotBaseWidget
 {
     /**
@@ -82,14 +85,13 @@ class LoginWidget extends XotBaseWidget
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> b58de900 (.)
-     * @var view-string
->>>>>>> aurmich/dev
 =======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      * @var view-string
->>>>>>> a3f7230 (.)
      */
 <<<<<<< HEAD
     /** @phpstan-ignore-next-line property.defaultValue */
@@ -110,16 +112,24 @@ class LoginWidget extends XotBaseWidget
      */
     protected static string $view = 'user::filament.widgets.login';
     
+    /** @var int|string|array<string, mixed> */
     protected int | string | array $columnSpan = 'full';
     
     /**
      * Dati del form per il login
+     *
+     * @var array<string, mixed>|null
      */
     public ?array $data = [];
 
     /**
      * Inizializza il widget quando viene montato.
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+     *
+     * @return void
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      */
     public function mount(): void
     {
@@ -210,12 +220,21 @@ class LoginWidget extends XotBaseWidget
         ];
     }
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+    /**
+     * Handle login form submission.
+     *
+     * @return void
+     */
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     public function save(): void
     {
         try {
             $data = $this->form->getState();
             
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -247,6 +266,8 @@ class LoginWidget extends XotBaseWidget
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
             // Cast esplicito per type safety PHPStan
             $remember = (bool) ($data['remember'] ?? false);
             
@@ -255,6 +276,7 @@ class LoginWidget extends XotBaseWidget
                 'password' => (string) $data['password']
             ], $remember)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> a3174e5b (phpstan)
 =======
 <<<<<<< HEAD
@@ -262,6 +284,8 @@ class LoginWidget extends XotBaseWidget
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
                 throw ValidationException::withMessages([
                     'email' => [__('Le credenziali fornite non sono corrette.')],
                 ]);

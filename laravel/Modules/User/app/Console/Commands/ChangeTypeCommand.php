@@ -4,13 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\User\Console\Commands;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Illuminate\Console\Command;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Illuminate\Support\Arr;
 use Symfony\Component\Console\Input\InputOption;
+<<<<<<< HEAD
 
 use function Laravel\Prompts\text;
 use function Laravel\Prompts\select;
@@ -30,25 +29,28 @@ use Webmozart\Assert\Assert;
 use Modules\Xot\Datas\XotData;
 use Illuminate\Console\Command;
 >>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
-use function Laravel\Prompts\text;
-
-use function Laravel\Prompts\select;
-use Modules\Xot\Contracts\UserContract;
-use Symfony\Component\Console\Input\InputOption;
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 =======
->>>>>>> a3f7230 (.)
+use Webmozart\Assert\Assert;
+
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+use function Laravel\Prompts\text;
+use function Laravel\Prompts\select;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 /**
  * Command to change user type based on project configuration.
  *
  * This command allows administrators to change the type of a user
  * by selecting from available child types in the system.
  */
+<<<<<<< HEAD
 =======
 >>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 class ChangeTypeCommand extends Command
 {
     /**
@@ -86,6 +88,7 @@ class ChangeTypeCommand extends Command
     /**
      * Execute the console command.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return void
      */
@@ -104,27 +107,30 @@ class ChangeTypeCommand extends Command
         /** @var UserContract $user */
 >>>>>>> 345f8677 (phpstan)
 =======
+=======
+     *
+     * @return void
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      */
     public function handle(): void
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        $xot=XotData::make();
->>>>>>> aurmich/dev
-=======
-        $xot=XotData::make();
->>>>>>> a3f7230 (.)
+        $xot = XotData::make();
         $email = text('User email?');
+<<<<<<< HEAD
 
         /** @var UserContract */
 >>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+=======
+        
+        /** @var UserContract|null */
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
         $user = XotData::make()->getUserByEmail($email);
 
         if (!$user) {
             $this->error("User with email '{$email}' not found.");
             return;
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
         if (!method_exists($user, 'getChildTypes')) {
             $this->error('User model does not have childTypes method.');
@@ -172,66 +178,36 @@ class ChangeTypeCommand extends Command
     }
 =======
         if(!method_exists($user,'getChildTypes')){
+=======
+
+        if (!method_exists($user, 'getChildTypes')) {
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
             $this->error('User model does not have childTypes method.');
             return;
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $childTypes = $user->getChildTypes();
 
-        $this->info("Current user type: {$user->type->getLabel()}");
-        $typeClass = get_class($user->type);
-        $options=Arr::mapWithKeys($childTypes,
-            function ($item, string $key) use($typeClass) {
-                $val=$typeClass::tryFrom($key)->getLabel();
-=======
-=======
->>>>>>> a3f7230 (.)
-        //$childTypes = $user->getChildTypes();
-        $childTypes=$xot->getUserChildTypes();
+        $childTypes = $xot->getUserChildTypes();
         $this->info("Current user type: {$user->type?->getLabel()}");
-        //$typeClass = get_class($user->type);
-        $typeClass=$xot->getUserChildTypeClass();
-        $options=Arr::mapWithKeys($childTypes,
-            function ($item, string $key) use($typeClass) {
-                $val=$typeClass::tryFrom($key)?->getLabel();
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> a3f7230 (.)
-                return [$key => $val];
-            }
-        );
-        // Selezione del nuovo tipo
+        
+        $typeClass = $xot->getUserChildTypeClass();
+        $options = Arr::mapWithKeys($childTypes, function ($item, string $key) use ($typeClass) {
+            $val = $typeClass::tryFrom($key)?->getLabel();
+            return [$key => $val];
+        });
 
         $newType = select('Select new user type:', $options);
-
-        // Salva il tipo precedente per il log
-        //$oldType = $this->getCurrentTypeValue($user);
-
-        // Aggiorna il tipo utente
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $user->type = $newType;
-=======
-=======
->>>>>>> a3f7230 (.)
-        //$user->type = $newType;
-        Assert::notNull($newTypeEnum=$typeClass::tryFrom($newType));
-
+        
+        Assert::notNull($newTypeEnum = $typeClass::tryFrom($newType));
+        
         $user->type = $newTypeEnum;
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> a3f7230 (.)
         $user->save();
-
+        
         $this->info("User type changed to '{$user->type->getLabel()}' for {$email}");
-
-        // Log dell'attività se disponibile
-        //$this->logActivity($user, $oldType, $newType);
     }
+<<<<<<< HEAD
 
 
 >>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 }

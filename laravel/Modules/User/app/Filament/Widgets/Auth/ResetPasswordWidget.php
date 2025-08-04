@@ -7,6 +7,7 @@ namespace Modules\User\Filament\Widgets\Auth;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Section;
@@ -33,23 +34,45 @@ use Illuminate\Support\Arr;
 >>>>>>> aurmich/dev
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Hash;
+=======
+use Filament\Forms;
+use Filament\Forms\Form;
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 use Filament\Forms\ComponentContainer;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Hidden;
+use Filament\Forms\Contracts\HasForms;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Notifications\Notification;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Validation\Rules\Password as PasswordRule;
+use Illuminate\Validation\ValidationException;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
 /**
  * Reset password widget for user password reset functionality.
+ * 
+ * Handles password reset form with token validation and secure password update.
  *
+<<<<<<< HEAD
  * Handles password reset functionality with token validation,
  * proper security measures, and user feedback. Follows Laraxot
  * architectural patterns and security best practices.
  *
  * @property ComponentContainer $form Form container from XotBaseWidget
+=======
+ * @property ComponentContainer $form
+ * @property array<string, mixed>|null $data
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
  */
-class ResetPasswordWidget extends XotBaseWidget
+class ResetPasswordWidget extends XotBaseWidget implements HasForms
 {
+    use InteractsWithForms;
+
     /**
      * The view for this widget.
      *
@@ -58,6 +81,32 @@ class ResetPasswordWidget extends XotBaseWidget
     protected static string $view = 'user::widgets.auth.reset-password-widget';
 
     /**
+<<<<<<< HEAD
+=======
+     * Widget data array.
+     * 
+     * CRITICAL: Do not remove or redeclare this property - it's managed by XotBaseWidget.
+     *
+     * @var array<string, mixed>|null
+     */
+    public ?array $data = [];
+
+    /**
+     * Column span for the widget layout.
+     *
+     * @var int|string|array<string, mixed>
+     */
+    protected int | string | array $columnSpan = 'full';
+
+    /**
+     * Reset token from the request.
+     *
+     * @var string|null
+     */
+    public ?string $token = null;
+
+    /**
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      * Get the form schema for password reset.
      *
      * Uses string keys for Filament form compatibility and follows
@@ -68,31 +117,48 @@ class ResetPasswordWidget extends XotBaseWidget
     public function getFormSchema(): array
     {
         return [
+            'token' => Hidden::make('token')
+                ->default($this->token),
+                
             'email' => TextInput::make('email')
                 ->email()
                 ->required()
-                ->autocomplete('email'),
+                ->maxLength(255)
+                ->autocomplete('email')
+                ->validationAttribute(__('user::auth.fields.email.validation_attribute')),
+                
             'password' => TextInput::make('password')
                 ->password()
                 ->required()
-                ->minLength(8)
+                ->rule(PasswordRule::default())
                 ->same('password_confirmation')
-                ->autocomplete('new-password'),
+                ->autocomplete('new-password')
+                ->validationAttribute(__('user::auth.fields.password.validation_attribute')),
+                
             'password_confirmation' => TextInput::make('password_confirmation')
                 ->password()
                 ->required()
-                ->autocomplete('new-password'),
+                ->dehydrated(false)
+                ->autocomplete('new-password')
+                ->validationAttribute(__('user::auth.fields.password_confirmation.validation_attribute')),
         ];
     }
 
     /**
      * Mount the widget and initialize the form.
      *
+     * @param string|null $token
+     * @param string|null $email
      * @return void
      */
-    public function mount(): void
+    public function mount(?string $token = null, ?string $email = null): void
     {
-        $this->form->fill();
+        $this->token = $token ?? (string) request()->route('token');
+        
+        $this->form->fill([
+            'token' => $this->token,
+            'email' => $email ?? (string) request()->query('email'),
+        ]);
     }
 
     /**
@@ -101,6 +167,7 @@ class ResetPasswordWidget extends XotBaseWidget
      * @param \Filament\Forms\Form $form
      * @return \Filament\Forms\Form
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 use Filament\Forms\Components\TextInput;
@@ -198,10 +265,13 @@ class ResetPasswordWidget extends XotBaseWidget
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     public function form(Form $form): Form
     {
         return $form
             ->schema([
+<<<<<<< HEAD
                 Section::make()
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -256,11 +326,17 @@ class ResetPasswordWidget extends XotBaseWidget
                     ->schema($this->getFormSchema())
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+                Section::make(__('user::auth.reset_password.section_title'))
+                    ->description(__('user::auth.reset_password.section_description'))
+                    ->schema($this->getFormSchema())
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
                     ->columns(1),
             ])
             ->statePath('data');
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -279,9 +355,14 @@ class ResetPasswordWidget extends XotBaseWidget
     /**
      * Handle password reset.
 >>>>>>> a3174e5b (phpstan)
+=======
+    /**
+     * Handle password reset with comprehensive error handling.
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      *
-     * @return \Illuminate\Http\RedirectResponse|void
+     * @return \Illuminate\Http\RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
      */
+<<<<<<< HEAD
     public function resetPassword()
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -310,9 +391,15 @@ class ResetPasswordWidget extends XotBaseWidget
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+    public function resetPassword(): \Illuminate\Http\RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     {
-        $data = $this->form->getState();
+        try {
+            $this->validate();
+            $data = $this->form->getState();
 
+<<<<<<< HEAD
         $status = Password::reset(
             [
 <<<<<<< HEAD
@@ -348,9 +435,21 @@ class ResetPasswordWidget extends XotBaseWidget
                     'password' => Hash::make($password),
                     'remember_token' => Str::random(60),
                 ])->save();
-            }
-        );
+=======
+            // Type-safe data extraction
+            $email = (string) ($data['email'] ?? '');
+            $password = (string) ($data['password'] ?? '');
+            $passwordConfirmation = (string) ($data['password_confirmation'] ?? '');
+            $token = (string) ($data['token'] ?? $this->token ?? '');
 
+            if (empty($email) || empty($password) || empty($token)) {
+                throw ValidationException::withMessages([
+                    'email' => [__('user::auth.validation.required_fields')],
+                ]);
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+            }
+
+<<<<<<< HEAD
         if ($status === Password::PASSWORD_RESET) {
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -444,4 +543,69 @@ class ResetPasswordWidget extends XotBaseWidget
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+            // Attempt password reset
+            $status = Password::reset(
+                [
+                    'email' => $email,
+                    'password' => $password,
+                    'password_confirmation' => $passwordConfirmation,
+                    'token' => $token,
+                ],
+                function ($user, $password): void {
+                    $user->forceFill([
+                        'password' => Hash::make($password),
+                        'remember_token' => Str::random(60),
+                    ])->save();
+
+                    // Log successful password reset
+                    Log::info('Password reset successfully', [
+                        'user_id' => $user->id,
+                        'email' => $user->email,
+                    ]);
+                }
+            );
+
+            if ($status === Password::PASSWORD_RESET) {
+                // Show success notification
+                Notification::make()
+                    ->title(__('user::auth.reset_password.success'))
+                    ->success()
+                    ->send();
+
+                session()->flash('status', __((string) $status));
+                return redirect()->route('login');
+            } else {
+                // Handle password reset failure
+                $this->addError('email', __((string) $status));
+                
+                Log::warning('Password reset failed', [
+                    'email' => $email,
+                    'status' => $status,
+                ]);
+                
+                return redirect()->back();
+            }
+
+        } catch (ValidationException $e) {
+            // Re-throw validation exceptions to display form errors
+            throw $e;
+        } catch (\Exception $e) {
+            // Log unexpected errors
+            Log::error('Password reset error', [
+                'error' => $e->getMessage(),
+                'trace' => $e->getTraceAsString(),
+            ]);
+
+            // Show user-friendly error message
+            Notification::make()
+                ->title(__('user::auth.reset_password.error'))
+                ->body(__('user::auth.reset_password.error_message'))
+                ->danger()
+                ->send();
+
+            return redirect()->back();
+        }
+    }
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 }

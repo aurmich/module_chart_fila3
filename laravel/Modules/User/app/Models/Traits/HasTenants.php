@@ -35,9 +35,8 @@ use Modules\User\Contracts\TeamContract;
 use Modules\Xot\Actions\Panel\ApplyTenancyToPanelAction;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-// use Modules\User\Models\OwnerRole;
-
 /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
@@ -48,10 +47,13 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
  * Trait HasTenants
  * 
  * Provides tenant functionality for User models implementing multi-tenancy.
  * 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> a3174e5b (phpstan)
 =======
@@ -60,11 +62,14 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
  * @property TeamContract $currentTeam
  */
 trait HasTenants
 {
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -87,6 +92,8 @@ trait HasTenants
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      * Check if the user can access a specific tenant.
      *
      * @param \Illuminate\Database\Eloquent\Model $tenant
@@ -111,6 +118,7 @@ trait HasTenants
         
         return $tenants;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      * ..
      **/
@@ -144,6 +152,8 @@ trait HasTenants
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     }
 
     /**
@@ -151,11 +161,8 @@ trait HasTenants
 <<<<<<< HEAD
 <<<<<<< HEAD
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany<\Illuminate\Database\Eloquent\Model>
-=======
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany<\Illuminate\Database\Eloquent\Model, \Illuminate\Database\Eloquent\Relations\Pivot>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -173,6 +180,8 @@ trait HasTenants
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany<\Illuminate\Database\Eloquent\Model, \Illuminate\Database\Eloquent\Relations\Pivot>
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      */
     public function tenants(): BelongsToMany
     {
@@ -180,17 +189,17 @@ trait HasTenants
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         /** @var class-string<Model> */
 =======
 >>>>>>> b58de900 (.)
-        /** @var class-string<\Illuminate\Database\Eloquent\Model> */
->>>>>>> aurmich/dev
 =======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
         /** @var class-string<\Illuminate\Database\Eloquent\Model> */
->>>>>>> a3f7230 (.)
         $tenant_class = $xot->getTenantClass();
 
+<<<<<<< HEAD
         return $this->belongsToManyX($tenant_class);
 =======
         /** @var class-string<Model> */
@@ -204,5 +213,8 @@ trait HasTenants
         return $this->belongsToManyX($tenant_class);
         // ->as('membership')
 >>>>>>> 54f4fa16 (.)
+=======
+        return $this->belongsToManyX($tenant_class);
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     }
 }

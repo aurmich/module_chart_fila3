@@ -79,10 +79,13 @@ class UserServiceProvider extends XotBaseServiceProvider
         parent::register();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
         $this->registerTeamModelBindings();
     }
 
@@ -99,6 +102,7 @@ class UserServiceProvider extends XotBaseServiceProvider
             return \Modules\User\Models\TeamInvitation::class;
         });
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
 =======
@@ -106,6 +110,8 @@ class UserServiceProvider extends XotBaseServiceProvider
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     }
 
     public function registerMailsNotification(): void

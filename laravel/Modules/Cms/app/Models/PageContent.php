@@ -22,6 +22,7 @@ use Spatie\Translatable\HasTranslations;
  * @property mixed                                       $translations
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @property string                                      $blocks
  * @property string|null                                 $id
@@ -39,6 +40,8 @@ use Spatie\Translatable\HasTranslations;
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> f3e4ec66 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
  * @method static \Modules\Cms\Database\Factories\PageContentFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|PageContent  newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|PageContent  newQuery()
@@ -56,6 +59,7 @@ use Spatie\Translatable\HasTranslations;
  * @method static \Illuminate\Database\Eloquent\Builder|PageContent  whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|PageContent  whereUpdatedBy($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  *                                                                                                                                                                  >>>>>>> 49ebea7 (.)
 <<<<<<< HEAD
@@ -63,6 +67,8 @@ use Spatie\Translatable\HasTranslations;
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> f3e4ec66 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
  * @mixin \Eloquent
  */
 class PageContent extends BaseModel

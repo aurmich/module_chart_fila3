@@ -198,22 +198,56 @@
             "merge-scripts": false
 =======
     "name": "exabyte/base_saluteora",
-    "description": "Progetto SaluteOra basato su framework Laraxot",
     "type": "project",
+    "description": "Base project for predict fila3 mono with Laravel modular architecture",
+    "keywords": [
+        "laravel",
+        "filament",
+        "modular",
+        "predict",
+        "monorepo"
+    ],
+    "license": "MIT",
     "config": {
         "vendor-dir": "laravel/vendor",
+        "bin-dir": "laravel/vendor/bin",
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true,
+            "wikimedia/composer-merge-plugin": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     },
+<<<<<<< HEAD
     "autoload": {
         "psr-4": {
             "": "laravel/app/"
 >>>>>>> 4171c7dc (chore: remove unused DentistData and SearchDentistData classes to clean up the codebase)
+=======
+    "require": {
+        "wikimedia/composer-merge-plugin": "^2.1"
+    },
+    "extra": {
+        "merge-plugin": {
+            "include": [
+                "laravel/composer.json"
+            ],
+            "recurse": true,
+            "replace": false,
+            "ignore-duplicates": false,
+            "merge-dev": true,
+            "merge-extra": false,
+            "merge-extra-deep": false,
+            "merge-scripts": false
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
         }
     },
     "scripts": {
         "post-install-cmd": [
+<<<<<<< HEAD
 <<<<<<< HEAD
             "@composer install --working-dir=laravel"
         ],
@@ -231,11 +265,21 @@
 =======
 =======
             "cd laravel && composer install --no-dev --optimize-autoloader"
+=======
+            "@composer install --working-dir=laravel"
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
         ],
         "post-update-cmd": [
-            "cd laravel && composer update --no-dev --optimize-autoloader"
+            "@composer update --working-dir=laravel"
+        ],
+        "phpstan": [
+            "php laravel/vendor/bin/phpstan analyse --memory-limit=2G --error-format=table --no-progress"
+        ],
+        "phpstan-modules": [
+            "php laravel/vendor/bin/phpstan analyse --memory-limit=2G --error-format=table --no-progress laravel/Modules"
         ]
     },
+<<<<<<< HEAD
 >>>>>>> 4171c7dc (chore: remove unused DentistData and SearchDentistData classes to clean up the codebase)
     "repositories": [
         {
@@ -250,6 +294,9 @@
 >>>>>>> 4171c7dc (chore: remove unused DentistData and SearchDentistData classes to clean up the codebase)
 =======
     "minimum-stability": "stable",
+=======
+    "minimum-stability": "dev",
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     "prefer-stable": true
 >>>>>>> 4171c7dc (chore: remove unused DentistData and SearchDentistData classes to clean up the codebase)
 }

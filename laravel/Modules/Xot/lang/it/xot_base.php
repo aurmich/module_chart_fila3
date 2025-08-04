@@ -146,8 +146,8 @@ return array (
       'label' => 'view',
       'description' => 'view',
       'helper_text' => 'view',
-<<<<<<< HEAD
       'placeholder' => 'view',
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
     ),
     'delete' => 
@@ -286,6 +286,8 @@ return array (
 =======
 >>>>>>> 4ec8f92 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     ),
     'delete' => 
     array (

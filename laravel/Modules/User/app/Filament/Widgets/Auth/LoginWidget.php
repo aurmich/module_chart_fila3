@@ -5,10 +5,8 @@ namespace Modules\User\Filament\Widgets\Auth;
 
 use Filament\Forms;
 use Filament\Forms\Form;
-<<<<<<< HEAD
-use Filament\Forms\Concerns\InteractsWithForms;
-use Filament\Forms\Contracts\HasForms;
 use Illuminate\Support\Facades\Auth;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -43,21 +41,17 @@ class LoginWidget extends XotBaseWidget
 use Illuminate\Support\Facades\Auth;
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 use Filament\Forms\ComponentContainer;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
+
 /**
  * @property ComponentContainer $form
  */
 >>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
 class LoginWidget extends XotBaseWidget
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 {
-    
-    
-=======
-{
->>>>>>> a3f7230 (.)
     public ?array $data = [];
 
 <<<<<<< HEAD

@@ -84,8 +84,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 
 /**
- * Modules\User\Models\User.
+ * Base User Model
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @template TModel of \Illuminate\Database\Eloquent\Model
@@ -104,6 +105,11 @@ use Illuminate\Notifications\DatabaseNotificationCollection;
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+ * This is the base user model that provides the core authentication and authorization
+ * functionality for the application. It extends Laravel's Authenticatable class
+ * and implements the required interfaces for Filament and multi-tenancy.
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
  * @property Collection<int, OauthClient> $clients
  * @property int|null $clients_count
  * @property Team|null $currentTeam
@@ -351,17 +357,15 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         $this->fillable = array_merge(parent::getFillable(), $this->getFillable());
 =======
 >>>>>>> b58de900 (.)
-        // array_values() garantisce che sia un array indicizzato (list<string>)
-        $this->fillable = array_values(array_merge(parent::getFillable(), $this->getFillable()));
->>>>>>> aurmich/dev
 =======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
         // array_values() garantisce che sia un array indicizzato (list<string>)
         $this->fillable = array_values(array_merge(parent::getFillable(), $this->getFillable()));
->>>>>>> a3f7230 (.)
 
         parent::__construct($attributes);
     }
@@ -487,6 +491,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Get the devices associated with the user.
      *
      * @return BelongsToMany<Device, static>
@@ -505,6 +510,11 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
      * @return BelongsToMany<Device, static>
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+     * Get the devices associated with the user.
+     *
+     * @return BelongsToMany<Device, static>
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      */
     public function devices(): BelongsToMany
     {
@@ -512,6 +522,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
             ->belongsToManyX(Device::class);
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -546,7 +557,11 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     /**
+     * Get the socialite users associated with the user.
+     *
      * @return HasMany<SocialiteUser, static>
      */
     public function socialiteUsers(): HasMany
@@ -560,6 +575,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 =======
         return $this->hasMany(SocialiteUser::class);
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 1def8bbe (fix hint)
 =======
 <<<<<<< HEAD
@@ -567,6 +583,8 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     }
 
     public function getProviderField(string $provider, string $field): string

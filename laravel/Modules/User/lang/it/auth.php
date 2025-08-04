@@ -13,15 +13,20 @@ return [
     // Login
     'login-via' => 'Accedi con',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'login-failed' => 'Login fallito, riprova.',
     'user-not-allowed' => 'La tua email non è autorizzata.',
 =======
 
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     'login-failed' => 'Login fallito, riprova.',
-
     'user-not-allowed' => 'La tua email non è autorizzata.',
+<<<<<<< HEAD
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     'registration-not-enabled' => 'Non è possibile registrare un nuovo utente.',
     'Sign in to your account' => 'Accedi al tuo account',
     'create a new account' => 'Crea un nuovo account',
@@ -34,6 +39,7 @@ return [
     'Sign in' => 'Accedi',
     'login-in' => 'Accedi',
     'sign-up' => 'Registrati',
+
     'password_expired' => [
         'title' => 'Password Scaduta, Reimposta Password',
         'heading' => 'Crea una Nuova Password',
@@ -41,10 +47,14 @@ return [
         'fields' => [
             'current_password' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'label' => 'Password Attuale',
 =======
                 'label' => 'Current Password',
 >>>>>>> 54f4fa16 (.)
+=======
+                'label' => 'Password Attuale',
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
                 'validation_attribute' => 'current_password',
             ],
             'password' => [
@@ -53,14 +63,19 @@ return [
             ],
             'password_confirmation' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'label' => 'Conferma Password',
 =======
                 'label' => 'Confirm Password',
 >>>>>>> 54f4fa16 (.)
+=======
+                'label' => 'Conferma Password',
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
             ],
         ],
         'form' => [
             'current_password' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -118,6 +133,8 @@ return [
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
                 'label' => 'Password Attuale',
                 'placeholder' => 'Inserisci la password attuale',
                 'help' => 'Inserisci la tua password attuale per confermare la tua identità',
@@ -157,6 +174,7 @@ return [
     'reset_password_notification_line_2' => 'This password reset link will expire in :count minutes.',
     'reset_password_notification_line_3' => 'If you did not request a password reset, no further action is required.',
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
                 'label' => 'Current Password',
@@ -223,6 +241,8 @@ return [
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     'Resend Verification Email' => 'Rinvia Email di Verifica',
     'Verify Your Email Address' => 'Verifica la tua email',
     'A fresh verification link has been sent to your email address.' => 'Un nuovo link di verifica è stato inviato al tuo indirizzo email.',
@@ -285,6 +305,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         'already_registered' => 'Hai già un account? Accedi',
         'success' => 'Registrazione completata con successo.',
@@ -297,6 +318,8 @@ return [
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
         'success' => 'Registrazione completata con successo.',
         'failed' => 'Impossibile completare la registrazione.',
         'already_have_account' => 'Hai già un account?',
@@ -305,6 +328,7 @@ return [
         'name_structured' => [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il tuo nome completo'
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         'already_registered' => 'Hai già un account? Accedi',
@@ -329,6 +353,8 @@ return [
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
         ],
         'email_structured' => [
             'label' => 'Email',
@@ -336,6 +362,7 @@ return [
         ],
         'password_structured' => [
             'label' => 'Password',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -362,6 +389,8 @@ return [
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
             'placeholder' => 'Inserisci la password'
         ],
         'password_confirmation_structured' => [
@@ -380,6 +409,7 @@ return [
         'success' => 'Le istruzioni sono state inviate alla tua email.',
         'failed' => 'Impossibile inviare le istruzioni di reset.',
         'back_to_login' => 'Torna al login',
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
             'placeholder' => 'Inserisci la tua password'
@@ -413,6 +443,8 @@ return [
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
         // Structured version
         'email_structured' => [
             'label' => 'Email',
@@ -423,18 +455,16 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // Reset Password
     'reset-password' => [
 =======
 >>>>>>> b58de900 (.)
-    // Reset password
-    'reset_password' => [
->>>>>>> aurmich/dev
 =======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     // Reset password
     'reset_password' => [
->>>>>>> a3f7230 (.)
         'title' => 'Reimposta password',
         'subtitle' => 'Inserisci la nuova password',
         'email' => 'Indirizzo email',

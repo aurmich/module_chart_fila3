@@ -511,6 +511,7 @@ class XotData extends Data implements Wireable
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $enum_class=$this->getUserChildTypeClass();
 =======
 =======
@@ -520,15 +521,14 @@ class XotData extends Data implements Wireable
             $enum_class=Str::of($user_class)->replace('\\Models\\', '\\Enums\\')->append('TypeEnum')->toString();
         }
 =======
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
         $enum_class=$this->getUserChildTypeClass();
->>>>>>> 4ec8f92 (.)
         return $enum_class::cases();
         //$userInstance = app($user_class);
         //return $userInstance->getChildTypes();
     }
 
-<<<<<<< HEAD
-=======
     public function getUserChildTypeClass(): string
     {
 >>>>>>> b58de900 (.)
@@ -578,6 +578,7 @@ class XotData extends Data implements Wireable
         //return $userInstance->getChildTypes();
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -643,4 +644,6 @@ class XotData extends Data implements Wireable
 =======
 >>>>>>> 4ec8f92 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 }

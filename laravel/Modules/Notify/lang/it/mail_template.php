@@ -46,6 +46,7 @@ return array (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'mailable',
 =======
 >>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
@@ -60,6 +61,9 @@ return array (
       'description' => 'mailable',
 >>>>>>> 484b1fe (.)
 >>>>>>> b58de900 (.)
+=======
+      'description' => 'mailable'
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     ),
     'subject' => 
     array (
@@ -155,11 +159,14 @@ return array (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 =======
 >>>>>>> 484b1fe (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
       'helper_text' => 'slug',
       'placeholder' => 'slug',
 <<<<<<< HEAD
@@ -175,6 +182,7 @@ return array (
       'placeholder' => 'name',
       'label' => 'name',
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 4047cb2d (✨ (mail_template.php, send_email.php): add descriptions and placeholders for mail template fields to enhance clarity for users)
 =======
 <<<<<<< HEAD
@@ -182,6 +190,8 @@ return array (
 =======
 >>>>>>> 484b1fe (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     ),
     'name' => 
     array (

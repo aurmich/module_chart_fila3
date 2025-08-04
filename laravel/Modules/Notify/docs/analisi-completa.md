@@ -60,8 +60,8 @@ Modules/Notify/
         "spatie/laravel-mail-templates": "^1.0",
         "mjml/mjml-php": "^1.0",
         "mailgun/mailgun-php": "^3.0",
-<<<<<<< HEAD
         "filament/filament": "^4.0"
+<<<<<<< HEAD
 =======
         "filament/filament": "^2.0"
 <<<<<<< HEAD
@@ -69,6 +69,8 @@ Modules/Notify/
 =======
 >>>>>>> 484b1fe (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     }
 }
 ```

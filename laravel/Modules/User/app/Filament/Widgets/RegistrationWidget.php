@@ -12,16 +12,15 @@ use Illuminate\Support\Str;
 use Filament\Widgets\Widget;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 7adb1164 (♻️ (DoctorResource.php): remove hardcoded email and token for better security and flexibility)
 =======
 >>>>>>> b58de900 (.)
-use Illuminate\Http\Request;
->>>>>>> aurmich/dev
 =======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 use Illuminate\Http\Request;
->>>>>>> a3f7230 (.)
 use Webmozart\Assert\Assert;
 use Modules\Xot\Datas\XotData;
 use Livewire\Attributes\Validate;
@@ -75,24 +74,11 @@ class RegistrationWidget extends XotBaseWidget
     protected int | string | array $columnSpan = 'full';
 =======
 use Filament\Forms\Components\TextInput;
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Modules\User\Contracts\UserContract;
-use Filament\Forms\Components\Wizard\Step;
-use Filament\Forms\Concerns\InteractsWithForms;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
-=======
-=======
->>>>>>> a3f7230 (.)
 use Modules\Xot\Contracts\UserContract;
 use Filament\Forms\Components\Wizard\Step;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Illuminate\Support\Facades\Log;
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> a3f7230 (.)
 
 class RegistrationWidget extends XotBaseWidget
 {
@@ -118,14 +104,6 @@ class RegistrationWidget extends XotBaseWidget
 <<<<<<< HEAD
 <<<<<<< HEAD
     public Model $record;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    protected static string $view = 'pub_theme::filament.widgets.registration';
-
-    public function mount(string $type): void
-=======
-=======
->>>>>>> a3f7230 (.)
     
 <<<<<<< HEAD
     /**
@@ -227,60 +205,43 @@ class RegistrationWidget extends XotBaseWidget
 >>>>>>> de1d4084 (✨ (DoctorResource.php, PatientResource.php, StudioResource.php): introduce new Studio resource and update Doctor resource to include studio relationship)
     protected static string $view = 'pub_theme::filament.widgets.registration';
 
-    public function mount(string $type,Request $request): void
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> a3f7230 (.)
+    public function mount(string $type, Request $request): void
     {
         $this->type = $type;
         $this->resource = XotData::make()->getUserResourceClassByType($type);
         $this->model = $this->resource::getModel();
-        $this->action=Str::of($this->model)->replace('\Models\\', '\Actions\\')->append('\RegisterAction')->toString();
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $obj=app($this->model);
-        //Assert::implementsInterface($obj,UserContract::class);
-        Assert::isInstanceOf($obj,Model::class);
-        $fields=array_merge($obj->getFillable(),$obj->getAppends());
-
-        $fieldsWithNulls = Arr::mapWithKeys($fields, fn($field) => [$field=>null]);
-        $this->form->fill($fieldsWithNulls);
-        $this->form->model($obj);
-        $this->record=$obj;
-=======
-=======
->>>>>>> a3f7230 (.)
-        $record=$this->getFormModel();
-        $data=$this->getFormFill();
+        $this->action = Str::of($this->model)->replace('\\Models\\', '\\Actions\\')->append('\\RegisterAction')->toString();
+        $record = $this->getFormModel();
+        $data = $this->getFormFill();
         $this->form->fill($data);
         $this->form->model($record);
-        $this->data=$data;
-        $this->record=$record;
+        $this->data = $data;
+        $this->record = $record;
     }
 
     public function getFormModel(): Model
     {
-        $data=request()->all();
-        $email=Arr::get($data,'email');//,'marco1@gmail.com';
-        $token=Arr::get($data,'token');//'$2y$12$M9lZbLr8T.2GktlJjl1w6OoKHFX5MXnYV/ZePL7N4Rls0.pgkPczK';
+        $data = request()->all();
+        $email = Arr::get($data, 'email');
+        $token = Arr::get($data, 'token');
 
-        $user=$this->model::firstWhere('email',$email);
-        if($user==null){
+        $user = $this->model::firstWhere('email', $email);
+        if ($user === null) {
             return app($this->model);
         }
+        
         $remember_token = $user->remember_token;
-        if($remember_token==null){
-            $user->remember_token=Str::uuid()->toString();
+        if ($remember_token === null) {
+            $user->remember_token = Str::uuid()->toString();
             $user->save();
         }
         
-        if($remember_token==$token){
-            $this->record=$user;
+        if ($remember_token === $token) {
+            $this->record = $user;
             return $user;
         }
-        return app($this->model);
         
+        return app($this->model);
     }
 
     public function getFormFill(): array
@@ -311,14 +272,13 @@ class RegistrationWidget extends XotBaseWidget
         $fields = array_merge($fillable, $appends);
         
         return array_fill_keys($fields, null);
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> a3f7230 (.)
     }
 
+<<<<<<< HEAD
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     public function getFormSchema(): array
     {
         return $this->resource::getFormSchemaWidget();
@@ -346,6 +306,7 @@ class RegistrationWidget extends XotBaseWidget
     /**
      * @see https://filamentphp.com/docs/3.x/forms/adding-a-form-to-a-livewire-component
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -401,18 +362,16 @@ class RegistrationWidget extends XotBaseWidget
     {
         $data = $this->form->getState();
         $record=$this->record;
-       
-        $user=app($this->action)->execute($record,$data);
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 =======
->>>>>>> a3f7230 (.)
-        //$post = $this->model::create($this->form->getState());
+    public function register(): \Illuminate\Http\RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
+    {
+        $data = $this->form->getState();
+        $record = $this->record;
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+       
+        $user = app($this->action)->execute($record, $data);
 
-        // Save the relationships from the form to the post after it is created.
-        //$this->form->model($post)->saveRelationships();
-        return redirect()->route('pages.view',['slug'=>$this->type.'_register_complete']);
-
+        return redirect()->route('pages.view', ['slug' => $this->type . '_register_complete']);
     }
 
     /**
@@ -425,6 +384,7 @@ class RegistrationWidget extends XotBaseWidget
         \Illuminate\Support\Facades\Mail::to($doctor->email)
             ->locale(app()->getLocale())
             ->send($email);
+        
         session()->flash('message', 'Registrazione completata con successo. La tua richiesta è in attesa di moderazione.');
         $this->form->fill();
     }

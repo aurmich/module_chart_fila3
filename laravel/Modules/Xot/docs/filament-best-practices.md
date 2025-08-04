@@ -936,7 +936,10 @@ public static function table(Table $table): Table
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 ## Riferimenti
 
 - [Documentazione Filament](https://filamentphp.com/docs)
@@ -975,6 +978,7 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 - Studiare sempre la classe base prima di estendere.
 - Se serve estendere il comportamento, usare override o metodi custom, non duplicare trait/interfacce.
 
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 ## Collegamenti
 - [Filament Docs](https://filamentphp.com/docs)
@@ -998,11 +1002,14 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 - Se le traduzioni non vengono applicate, controllare la struttura dei file lang e l'assenza di ->label() hardcoded
 
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 ## Collegamenti
 - [Filament Docs](https://filamentphp.com/docs)
 - [Best practices moduli riutilizzabili](../module-documentation-neutrality.md)
 - [Ereditarietà modelli](../model-inheritance-best-practices.md)
 
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -1036,12 +1043,20 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> b58de900 (.)
+=======
+## Problema: Form non visualizzato correttamente
+
+**Soluzione:** Assicurarsi di utilizzare `getFormSchema()` invece di `form()` e controllare che tutti i componenti siano configurati correttamente.
+
+## Problema: Label non tradotte
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 
 **Soluzione:** Verificare che:
 1. Non si stia utilizzando `->label()` direttamente sui componenti
 2. I file di traduzione siano nella posizione corretta e seguano la struttura espansa
 3. Le chiavi dei campi nel form corrispondano esattamente alle chiavi dei campi nel file di traduzione
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1053,6 +1068,9 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 =======
 >>>>>>> b58de900 (.)
 ### Problema: Relazioni non caricate correttamente
+=======
+## Problema: Relazioni non caricate correttamente
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 
 **Soluzione:** Verificare che:
 1. I nomi delle relazioni e delle colonne siano corretti
@@ -1105,6 +1123,7 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 - [Documentazione Filament](https://filamentphp.com/docs)
 - [Documentazione XotBaseResource](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/docs/resource.md)
 - [Best Practices Laraxot](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1305,6 +1324,8 @@ Aggiornare sempre la documentazione e le regole di progetto. Applicare la stessa
 >>>>>>> d23ba493 (add calendar)
 =======
 >>>>>>> 460d425 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 >>>>>>> 7ec6ffa (.)
 =======
 >>>>>>> 3fc99caa662508b51bcbc764ddca541111daeb21

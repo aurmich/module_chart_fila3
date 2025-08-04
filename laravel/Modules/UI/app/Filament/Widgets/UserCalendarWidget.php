@@ -5,6 +5,7 @@ namespace Modules\UI\Filament\Widgets;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 // TEMPORARILY DISABLED FOR PHPSTAN ANALYSIS
@@ -103,7 +104,13 @@ class UserCalendarWidget extends FullCalendarWidget
 =======
 use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
 =======
+=======
+// TEMPORARILY DISABLED FOR PHPSTAN ANALYSIS
+// Missing dependency: saade/filament-fullcalendar
+// Uncomment when dependency is installed
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 
+/*
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\XotData;
 >>>>>>> ca5e1eaf (.)
@@ -147,7 +154,7 @@ class UserCalendarWidget extends FullCalendarWidget
 
         $action=$this->getActionName(__FUNCTION__);
         return app($action)->execute();
-        //*
+        
         return [
             TextInput::make('title'),
  
@@ -157,9 +164,9 @@ class UserCalendarWidget extends FullCalendarWidget
                     DateTimePicker::make('ends_at'),
                 ]),
         ];
-        //*/
     }
 
+<<<<<<< HEAD
    
     /*
     protected function modalActions(): array
@@ -178,10 +185,13 @@ class UserCalendarWidget extends FullCalendarWidget
 =======
 >>>>>>> d23ba493 (add calendar)
 
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     public function onDateSelect(string $start, ?string $end, bool $allDay, ?array $view, ?array $resource): void
     {
       dd('test');
     }
+<<<<<<< HEAD
 
     
 <<<<<<< HEAD
@@ -190,3 +200,7 @@ class UserCalendarWidget extends FullCalendarWidget
 =======
 }
 >>>>>>> d23ba493 (add calendar)
+=======
+}
+*/
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)

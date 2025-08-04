@@ -65,6 +65,7 @@ class TenantsRelationManager extends XotBaseRelationManager
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a3174e5b (phpstan)
 =======
@@ -73,12 +74,15 @@ class TenantsRelationManager extends XotBaseRelationManager
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
         $columns = app(ListTenants::class)->getTableColumns();
         
         // Ensure we only return Column instances, filter out any Layout\Component instances
         return array_filter($columns, function ($column): bool {
             return $column instanceof \Filament\Tables\Columns\Column;
         });
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -91,5 +95,7 @@ class TenantsRelationManager extends XotBaseRelationManager
 =======
 >>>>>>> a3f7230 (.)
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     }
 }
