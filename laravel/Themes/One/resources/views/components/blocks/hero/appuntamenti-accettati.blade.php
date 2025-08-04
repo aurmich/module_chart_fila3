@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
@@ -59,8 +60,11 @@ new class extends Component {
 =======
 <div class="p-5">
 >>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
+=======
+<div>
+>>>>>>> 8d28bdca (- updated style area dottore)
     {{-- Header con freccia per tornare indietro --}}
-    <div class="w-full flex justify-start p-6">
+    <div class="w-full flex justify-start">
         {{-- DA AGGIORNARE URL --}}
         <a href="/it">
             <div class="cursor-pointer">

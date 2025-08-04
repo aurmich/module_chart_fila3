@@ -18,6 +18,7 @@
     <div>
         {{-- Pulsante Indietro --}}
         <div class="w-full flex justify-start">
+<<<<<<< HEAD
             <a href="{{ route('home') }}">
 =======
 =======
@@ -30,6 +31,8 @@
 >>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
         {{-- Pulsante Indietro --}}
         <div class="w-full flex justify-start p-6">
+=======
+>>>>>>> 8d28bdca (- updated style area dottore)
             <a href="/it">
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
@@ -55,15 +58,19 @@
                 </div>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <h1 class="text-center mt-5 text-3xl lg:text-4xl">{{$user?->name}}</h1>
                
 =======
                 <h1 class="text-center mt-5">Samuel Tarly</h1>
+=======
+                <h1 class="text-center mt-5 text-3xl lg:text-4xl">Samuel Tarly</h1>
+>>>>>>> 8d28bdca (- updated style area dottore)
                 {{-- Form Dati Utente --}}
                 <div class="w-full flex flex-col items-center mt-10">
                     <div class="w-full lg:w-3/4 shadow-2xl rounded-[15px] lg:mt-0">
                     <div class="flex flex-row items-center justify-between m-5 px-2">
-                      <h2>I miei dati</h2>
+                      <h2 class="text-2xl lg:text-3xl">I miei dati</h2>
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 cursor-pointer">
                       <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
                       </svg>

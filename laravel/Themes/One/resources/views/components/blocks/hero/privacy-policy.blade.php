@@ -12,7 +12,7 @@
 >>>>>>> aurmich/dev
 =======
 <div>
-<div class="w-full flex justify-start p-6">
+<div class="w-full flex justify-start">
         {{-- DA AGGIORNARE URL --}}
         <a href="/it">
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")

@@ -49,8 +49,12 @@
 >>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
 =======
 <div> 
+<<<<<<< HEAD
 >>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
      <div class="w-full flex justify-start p-6">
+=======
+     <div class="w-full flex justify-start">
+>>>>>>> 8d28bdca (- updated style area dottore)
          {{-- DA AGGIORNARE URL --}}
          <a href="/it">
              <div class="cursor-pointer">

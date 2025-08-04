@@ -245,6 +245,7 @@
 <div class="w-8/12">width 60%</div>
 <div class="w-7/12">width 50%</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="text-[40px]">testo 40px</div>
 <div class="w-60 h-60">width e height 15rem</div>
 <div class="lg:justify-evenly">large justify-evenly</div>
@@ -459,3 +460,7 @@
 =======
 </x-layouts.app>
 >>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
+=======
+<div class="text-[40px]">testo 40px</div>
+</x-layouts.app>
+>>>>>>> 8d28bdca (- updated style area dottore)

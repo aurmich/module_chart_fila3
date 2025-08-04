@@ -18,6 +18,7 @@
     <div>
         <!-- Back button -->
         <div class="w-full flex justify-start">
+<<<<<<< HEAD
             <!-- DA AGGIORNARE URL -->
             <a href="{{ route('home') }}">
 =======
@@ -158,6 +159,8 @@
 >>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
         <!-- Back button -->
         <div class="w-full flex justify-start p-6">
+=======
+>>>>>>> 8d28bdca (- updated style area dottore)
             <!-- DA AGGIORNARE URL -->
             <a href="/it">
                 <div class="cursor-pointer">
