@@ -192,6 +192,7 @@ return array (
       'label' => 'toggleColumns',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
     'description' => 
     array (
       'description' => 'description',
@@ -245,6 +246,12 @@ return array (
     ),
 =======
 >>>>>>> 0acdadac (🌐 (studio.php): update Italian localization file to improve structure and readability)
+=======
+    'description' => 
+    array (
+      'description' => 'description',
+    ),
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
   ),
   'actions' => 
   array (

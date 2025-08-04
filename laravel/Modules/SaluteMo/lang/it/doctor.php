@@ -1,20 +1,28 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array (
 <<<<<<< HEAD
+=======
+return array (
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
   'model' => 
   array (
     'label' => 'Medico',
     'plural' => 'Medici',
     'description' => 'Gestione dei medici registrati nella piattaforma',
   ),
+<<<<<<< HEAD
 =======
 >>>>>>> f3e4ec66 (.)
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
   'navigation' => 
   array (
     'label' => 'Medici',
     'group' => 'Gestione Utenti',
+<<<<<<< HEAD
 <<<<<<< HEAD
     'icon' => 'heroicon-o-user-circle',
     'sort' => 10,
@@ -29,6 +37,11 @@ return array (
     'plural' => 'Medici',
   ),
 >>>>>>> f3e4ec66 (.)
+=======
+    'icon' => 'heroicon-o-user-circle',
+    'sort' => 10,
+  ),
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
   'pages' => 
   array (
     'index' => 
@@ -36,36 +49,52 @@ return array (
       'title' => 'Elenco Medici',
       'subtitle' => 'Gestisci i medici registrati nell\'app mobile',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'Visualizza e gestisci tutti i medici iscritti alla piattaforma',
 =======
 >>>>>>> f3e4ec66 (.)
+=======
+      'description' => 'Visualizza e gestisci tutti i medici iscritti alla piattaforma',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'create' => 
     array (
       'title' => 'Nuovo Medico',
       'subtitle' => 'Registra un nuovo medico',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'Inserisci i dati per registrare un nuovo professionista',
 =======
 >>>>>>> f3e4ec66 (.)
+=======
+      'description' => 'Inserisci i dati per registrare un nuovo professionista',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'edit' => 
     array (
       'title' => 'Modifica Medico',
       'subtitle' => 'Modifica le informazioni del medico',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'Aggiorna i dati del professionista',
 =======
 >>>>>>> f3e4ec66 (.)
+=======
+      'description' => 'Aggiorna i dati del professionista',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'view' => 
     array (
       'title' => 'Dettagli Medico',
       'subtitle' => 'Visualizza le informazioni complete del medico',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'Dettagli completi del profilo medico',
 =======
 >>>>>>> f3e4ec66 (.)
+=======
+      'description' => 'Dettagli completi del profilo medico',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
   ),
   'fields' => 
@@ -74,6 +103,7 @@ return array (
     array (
       'label' => 'Nome e Cognome',
       'placeholder' => 'Inserisci nome e cognome completi',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'help' => 'Nome e cognome come registrati nell\'Ordine dei Medici',
     ),
@@ -91,100 +121,140 @@ return array (
 =======
       'helper_text' => 'Nome e cognome come registrati nell\'Ordine dei Medici',
 >>>>>>> f3e4ec66 (.)
+=======
+      'helper_text' => 'Nome e cognome come registrati nell\'Ordine dei Medici',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'email' => 
     array (
       'label' => 'Email',
       'placeholder' => 'email@esempio.com',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'help' => 'Indirizzo email per le comunicazioni',
       'description' => 'email',
 =======
       'helper_text' => 'Indirizzo email per le comunicazioni',
 >>>>>>> f3e4ec66 (.)
+=======
+      'helper_text' => 'Indirizzo email per le comunicazioni',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'phone' => 
     array (
       'label' => 'Telefono',
       'placeholder' => '+39 123 456 7890',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'help' => 'Numero di telefono principale',
 =======
       'helper_text' => 'Numero di telefono principale',
 >>>>>>> f3e4ec66 (.)
+=======
+      'helper_text' => 'Numero di telefono principale',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'mobile_phone' => 
     array (
       'label' => 'Cellulare',
       'placeholder' => '+39 123 456 7890',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'help' => 'Numero di cellulare per le notifiche push',
 =======
       'helper_text' => 'Numero di cellulare per le notifiche push',
 >>>>>>> f3e4ec66 (.)
+=======
+      'helper_text' => 'Numero di cellulare per le notifiche push',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'license_number' => 
     array (
       'label' => 'Numero Iscrizione Ordine',
       'placeholder' => 'Inserisci il numero di iscrizione',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'help' => 'Numero di iscrizione all\'Ordine dei Medici',
 =======
       'helper_text' => 'Numero di iscrizione all\'Ordine dei Medici',
 >>>>>>> f3e4ec66 (.)
+=======
+      'helper_text' => 'Numero di iscrizione all\'Ordine dei Medici',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'specialization' => 
     array (
       'label' => 'Specializzazione',
       'placeholder' => 'Seleziona la specializzazione',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'help' => 'Specializzazione medica principale',
 =======
       'helper_text' => 'Specializzazione medica principale',
 >>>>>>> f3e4ec66 (.)
+=======
+      'helper_text' => 'Specializzazione medica principale',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'clinic_address' => 
     array (
       'label' => 'Indirizzo Studio',
       'placeholder' => 'Via Roma, 123',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'help' => 'Indirizzo dello studio medico',
 =======
       'helper_text' => 'Indirizzo dello studio medico',
 >>>>>>> f3e4ec66 (.)
+=======
+      'helper_text' => 'Indirizzo dello studio medico',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'is_active' => 
     array (
       'label' => 'Attivo',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'help' => 'Il medico può ricevere prenotazioni',
 =======
       'helper_text' => 'Il medico può ricevere prenotazioni',
 >>>>>>> f3e4ec66 (.)
+=======
+      'helper_text' => 'Il medico può ricevere prenotazioni',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'verified_at' => 
     array (
       'label' => 'Data Verifica',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'placeholder' => 'Seleziona la data di verifica',
       'help' => 'Data di verifica della documentazione',
 =======
       'helper_text' => 'Data di verifica della documentazione',
 >>>>>>> f3e4ec66 (.)
+=======
+      'helper_text' => 'Data di verifica della documentazione',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'device_token' => 
     array (
       'label' => 'Token Dispositivo',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'placeholder' => 'Token generato automaticamente',
       'help' => 'Token per le notifiche push',
 =======
       'helper_text' => 'Token per le notifiche push',
 >>>>>>> f3e4ec66 (.)
+=======
+      'helper_text' => 'Token per le notifiche push',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'last_login' => 
     array (
       'label' => 'Ultimo Accesso',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'placeholder' => 'Ultimo accesso registrato',
       'help' => 'Data e ora dell\'ultimo accesso all\'app',
@@ -201,6 +271,8 @@ return array (
       'placeholder' => 'Configura l\'orario',
       'help' => 'Orario di disponibilità del medico',
 =======
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
       'helper_text' => 'Data e ora dell\'ultimo accesso all\'app',
     ),
     'reset_filters' => 
@@ -226,12 +298,16 @@ return array (
     'applyFilters' => 
     array (
       'label' => 'applyFilters',
+<<<<<<< HEAD
 >>>>>>> f3e4ec66 (.)
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'toggleColumns' => 
     array (
       'label' => 'toggleColumns',
     ),
+<<<<<<< HEAD
     'reorderRecords' => 
     array (
       'label' => 'reorderRecords',
@@ -256,10 +332,13 @@ return array (
       'label' => 'openFilters',
     ),
 <<<<<<< HEAD
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     'attach' => 
     array (
       'label' => 'attach',
     ),
+<<<<<<< HEAD
     'edit' => 
     array (
       'label' => 'edit',
@@ -304,6 +383,24 @@ return array (
 =======
 =======
 >>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
+=======
+    'status' => 
+    array (
+      'label' => 'status',
+    ),
+    'reorderRecords' => 
+    array (
+      'label' => 'reorderRecords',
+    ),
+    'resetFilters' => 
+    array (
+      'label' => 'resetFilters',
+    ),
+    'openFilters' => 
+    array (
+      'label' => 'openFilters',
+    ),
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
   ),
   'actions' => 
   array (
@@ -312,11 +409,15 @@ return array (
       'label' => 'Verifica',
       'icon' => 'heroicon-o-check-circle',
       'tooltip' => 'Verifica la documentazione del medico',
+<<<<<<< HEAD
 >>>>>>> f3e4ec66 (.)
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'deactivate' => 
     array (
       'label' => 'Disattiva',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'tooltip' => 'Disattiva temporaneamente il medico',
       'confirmation' => 'Sei sicuro di voler disattivare questo medico?',
@@ -326,10 +427,15 @@ return array (
       'icon' => 'heroicon-o-x-circle',
       'tooltip' => 'Disattiva temporaneamente il medico',
 >>>>>>> f3e4ec66 (.)
+=======
+      'icon' => 'heroicon-o-x-circle',
+      'tooltip' => 'Disattiva temporaneamente il medico',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'send_notification' => 
     array (
       'label' => 'Invia Notifica',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'tooltip' => 'Invia una notifica push al medico',
       'modal_heading' => 'Invia Notifica',
@@ -340,10 +446,15 @@ return array (
       'icon' => 'heroicon-o-bell',
       'tooltip' => 'Invia una notifica push al medico',
 >>>>>>> f3e4ec66 (.)
+=======
+      'icon' => 'heroicon-o-bell',
+      'tooltip' => 'Invia una notifica push al medico',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'view_appointments' => 
     array (
       'label' => 'Vedi Appuntamenti',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'tooltip' => 'Visualizza gli appuntamenti del medico',
     ),
@@ -391,6 +502,11 @@ return array (
       'tooltip' => 'Visualizza gli appuntamenti del medico',
     ),
 >>>>>>> f3e4ec66 (.)
+=======
+      'icon' => 'heroicon-o-calendar-days',
+      'tooltip' => 'Visualizza gli appuntamenti del medico',
+    ),
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
   ),
   'filters' => 
   array (
@@ -398,28 +514,37 @@ return array (
     array (
       'label' => 'Solo Attivi',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'placeholder' => 'Filtra per medici attivi',
       'help' => 'Mostra solo i medici attualmente attivi',
 =======
 >>>>>>> f3e4ec66 (.)
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'verified' => 
     array (
       'label' => 'Solo Verificati',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'placeholder' => 'Filtra per medici verificati',
       'help' => 'Mostra solo i medici con documentazione verificata',
 =======
 >>>>>>> f3e4ec66 (.)
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'specialization' => 
     array (
       'label' => 'Per Specializzazione',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'placeholder' => 'Seleziona specializzazione',
       'help' => 'Filtra per specializzazione medica',
 =======
 >>>>>>> f3e4ec66 (.)
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
   ),
   'bulk_actions' => 
@@ -428,6 +553,7 @@ return array (
     array (
       'label' => 'Verifica Selezionati',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'tooltip' => 'Verifica tutti i medici selezionati',
       'confirmation' => 'Sei sicuro di voler verificare tutti i medici selezionati?',
       'success' => 'Medici verificati con successo',
@@ -435,10 +561,14 @@ return array (
 =======
       'icon' => 'heroicon-o-check-circle',
 >>>>>>> f3e4ec66 (.)
+=======
+      'icon' => 'heroicon-o-check-circle',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'send_notification_selected' => 
     array (
       'label' => 'Notifica Selezionati',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'tooltip' => 'Invia notifica a tutti i medici selezionati',
       'modal_heading' => 'Notifica Multipla',
@@ -448,6 +578,9 @@ return array (
 =======
       'icon' => 'heroicon-o-bell',
 >>>>>>> f3e4ec66 (.)
+=======
+      'icon' => 'heroicon-o-bell',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
   ),
   'messages' => 
@@ -456,8 +589,11 @@ return array (
     'deactivated_successfully' => 'Medico disattivato con successo',
     'notification_sent' => 'Notifica inviata con successo',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'empty_state' => 'Nessun medico trovato',
     'loading' => 'Caricamento medici in corso...',
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
   ),
   'notifications' => 
   array (
@@ -479,6 +615,7 @@ return array (
     array (
       'string' => 'Il campo :attribute non può superare :max caratteri',
     ),
+<<<<<<< HEAD
     'phone_format' => 'Il numero di telefono deve essere in formato valido',
     'license_number_format' => 'Il numero di iscrizione deve essere valido',
   ),
@@ -683,3 +820,8 @@ return [
     'search_placeholder' => 'Cerca per nome, email, telefono o numero di iscrizione...',
 ];
 >>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
+=======
+  ),
+  'search_placeholder' => 'Cerca per nome, email, telefono o numero di iscrizione...',
+);
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)

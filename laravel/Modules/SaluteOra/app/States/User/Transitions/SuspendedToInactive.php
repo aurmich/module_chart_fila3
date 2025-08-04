@@ -10,6 +10,7 @@ use Modules\SaluteOra\States\User\Inactive;
 use Modules\SaluteOra\Models\User;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 class SuspendedToInactive extends BaseTransition
 {
     //---
@@ -25,4 +26,9 @@ class SuspendedToInactive extends Transition
         return $this->user;
     }
 >>>>>>> f4ba6a58 (✨ (User.php): add user state transition classes to manage user state changes)
+=======
+class SuspendedToInactive extends BaseTransition
+{
+    //---
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 }

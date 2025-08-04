@@ -6,6 +6,7 @@ namespace Modules\Notify\Emails;
 
 use Illuminate\Support\Arr;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
 use Modules\Xot\Datas\XotData;
@@ -22,12 +23,15 @@ use Spatie\MailTemplates\TemplateMailable;
 use Modules\Xot\Actions\Model\GetSicureArrayByModelAction;
 use Spatie\MailTemplates\Interfaces\MailTemplateInterface;
 =======
+=======
+use Illuminate\Support\Str;
+use Modules\Xot\Datas\XotData;
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 use Modules\Xot\Datas\MetatagData;
 use Illuminate\Support\Facades\File;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Notify\Models\MailTemplate;
 use Illuminate\Mail\Mailables\Attachment;
-use Modules\Xot\Datas\XotData;
 use Spatie\MailTemplates\TemplateMailable;
 >>>>>>> 54f4fa16 (.)
 
@@ -126,20 +130,24 @@ class SpatieEmail extends TemplateMailable
 
     public array $data=[];
 
+    
+
     public function __construct(Model $record, string $slug)
     {
+        $this->slug = Str::slug($slug);
         MailTemplate::firstOrCreate([
             'mailable' => SpatieEmail::class,
-            'slug' => $slug,
+            'slug' => $this->slug,
         ],[
             'subject' => 'Benvenuto, {{ first_name }}',
             'html_template' => '<p>Gentile {{ first_name }} {{ last_name }},</p><p>La tua registrazione  è in attesa di approvazione. Ti contatteremo presto.</p>',
             'text_template' => 'Gentile {{ first_name }} {{ last_name }}, la tua registrazione  è in attesa di approvazione. Ti contatteremo presto.'
         ]);
+        
         $data=$record->toArray();
         $this->data=array_merge($this->data,$data);
         $this->setAdditionalData($this->data);
-        $this->slug = $slug;
+        
 
 >>>>>>> 54f4fa16 (.)
     }
@@ -148,7 +156,8 @@ class SpatieEmail extends TemplateMailable
     {
         $this->data=array_merge($this->data,$data);
         $this->setAdditionalData($this->data);
-
+        $params=implode(',',array_keys($this->data));
+        MailTemplate::where(['slug'=>$this->slug,'mailable'=>SpatieEmail::class])->update(['params'=>$params]);
         return $this;
     }
 

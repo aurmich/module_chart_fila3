@@ -69,6 +69,7 @@ Lo stato `IntegrationCompleted` può transitare verso tre stati diversi in base 
 
 ### Transizioni Specifiche del Workflow
 
+<<<<<<< HEAD
 ⭐ **PATTERN UTILIZZATO**: Tutte le transizioni seguono il **BaseTransition pattern** (DRY + KISS)
 
 Le transizioni sono implementate come classi quasi vuote che estendono `BaseTransition`:
@@ -90,10 +91,24 @@ class IntegrationCompletedToActive extends BaseTransition
         $password = Str::random(10);
         $this->user->update(['password' => $password]);
         return ['message' => $this->message, 'password' => $password];
+=======
+#### 1. IntegrationRequestedToIntegrationCompleted
+```php
+namespace Modules\SaluteOra\States\User\Transitions;
+
+class IntegrationRequestedToIntegrationCompleted extends Transition
+{
+    public function handle(): User
+    {
+        $this->user->state = new IntegrationCompleted($this->user);
+        $this->user->save();
+        return $this->user;
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     }
 }
 ```
 
+<<<<<<< HEAD
 #### 3. IntegrationCompletedToRejected
 ```php
 class IntegrationCompletedToRejected extends BaseTransition
@@ -123,6 +138,60 @@ class IntegrationCompletedToIntegrationRequested extends BaseTransition
 - **Dati custom**: Override `getNotificationData()` per email personalizzate
 
 ➡️ **Documentazione completa**: [Pattern BaseTransition](base-transition-pattern.md)
+=======
+**Quando utilizzare**: Quando l'utente ha fornito tutti i dati richiesti.
+
+#### 2. IntegrationCompletedToActive
+```php
+namespace Modules\SaluteOra\States\User\Transitions;
+
+class IntegrationCompletedToActive extends Transition
+{
+    public function handle(): User
+    {
+        $this->user->state = new Active($this->user);
+        $this->user->save();
+        return $this->user;
+    }
+}
+```
+
+**Quando utilizzare**: Quando l'amministratore approva l'utente dopo verifica positiva.
+
+#### 3. IntegrationCompletedToRejected
+```php
+namespace Modules\SaluteOra\States\User\Transitions;
+
+class IntegrationCompletedToRejected extends Transition
+{
+    public function handle(): User
+    {
+        $this->user->state = new Rejected($this->user);
+        $this->user->save();
+        return $this->user;
+    }
+}
+```
+
+**Quando utilizzare**: Quando l'amministratore respinge l'utente dopo aver verificato i dati completati (documenti falsi, criteri non rispettati, ecc.).
+
+#### 4. IntegrationCompletedToIntegrationRequested
+```php
+namespace Modules\SaluteOra\States\User\Transitions;
+
+class IntegrationCompletedToIntegrationRequested extends Transition
+{
+    public function handle(): User
+    {
+        $this->user->state = new IntegrationRequested($this->user);
+        $this->user->save();
+        return $this->user;
+    }
+}
+```
+
+**Quando utilizzare**: Quando durante la verifica si scopre che servono ulteriori documenti o correzioni.
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 
 ### Esempi Pratici
 

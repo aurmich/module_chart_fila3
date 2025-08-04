@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # Regola: Stato IntegrationCompleted nel Workflow Utenti
 
 ## Contesto
@@ -153,3 +154,5 @@ class IntegrationCompletedToActive extends BaseTransition
 - Necessarie correzioni o chiarimenti
 - Emerse nuove necessità durante verifica
 - Aggiornamento dati scaduti
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)

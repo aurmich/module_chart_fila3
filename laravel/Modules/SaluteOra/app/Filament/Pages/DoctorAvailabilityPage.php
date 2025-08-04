@@ -161,6 +161,7 @@ class DoctorAvailabilityPage extends XotBasePage
         return $form
             ->schema([
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'schedule'=>OpeningHoursField::make('schedule')
                     //->label(__('saluteora::doctor_availability.sections.weekly_availability'))
                     //->helperText(__('saluteora::doctor_availability.fields.is_available.help'))
@@ -169,6 +170,11 @@ class DoctorAvailabilityPage extends XotBasePage
                     ->label(__('saluteora::doctor_availability.sections.weekly_availability'))
                     ->helperText(__('saluteora::doctor_availability.fields.is_available.help'))
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+                'schedule'=>OpeningHoursField::make('schedule')
+                    //->label(__('saluteora::doctor_availability.sections.weekly_availability'))
+                    //->helperText(__('saluteora::doctor_availability.fields.is_available.help'))
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
                     ->columnSpanFull(),
             ])
             ->statePath('data');

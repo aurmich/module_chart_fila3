@@ -103,6 +103,16 @@ abstract class UserState extends State
             ->allowTransition(IntegrationCompleted::class, Rejected::class, Transitions\IntegrationCompletedToRejected::class)
             ->allowTransition(IntegrationCompleted::class, IntegrationRequested::class, Transitions\IntegrationCompletedToIntegrationRequested::class)
 
+            // IntegrationRequested transitions
+            ->allowTransition(IntegrationRequested::class, Active::class, Transitions\IntegrationRequestedToActive::class)
+            ->allowTransition(IntegrationRequested::class, Rejected::class, Transitions\IntegrationRequestedToRejected::class)
+            ->allowTransition(IntegrationRequested::class, IntegrationCompleted::class, Transitions\IntegrationRequestedToIntegrationCompleted::class)
+
+            // IntegrationCompleted transitions
+            ->allowTransition(IntegrationCompleted::class, Active::class, Transitions\IntegrationCompletedToActive::class)
+            ->allowTransition(IntegrationCompleted::class, Rejected::class, Transitions\IntegrationCompletedToRejected::class)
+            ->allowTransition(IntegrationCompleted::class, IntegrationRequested::class, Transitions\IntegrationCompletedToIntegrationRequested::class)
+
             // Rejected transitions
             ->allowTransition(Rejected::class, Pending::class, Transitions\RejectedToPending::class)
 
@@ -142,6 +152,7 @@ abstract class UserState extends State
             ->registerState(Rejected::class)
             ->registerState(Suspended::class)
 <<<<<<< HEAD
+<<<<<<< HEAD
             ->registerState(IntegrationRequested::class)
             ->registerState(IntegrationCompleted::class);
     }
@@ -150,6 +161,10 @@ abstract class UserState extends State
    
 =======
             ->registerState(IntegrationRequested::class);
+=======
+            ->registerState(IntegrationRequested::class)
+            ->registerState(IntegrationCompleted::class);
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     }
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 }

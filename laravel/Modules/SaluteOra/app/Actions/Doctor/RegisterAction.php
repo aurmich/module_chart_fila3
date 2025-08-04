@@ -6,6 +6,7 @@ namespace Modules\SaluteOra\Actions\Doctor;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
 use Modules\Geo\Models\Address;
@@ -34,11 +35,16 @@ use Modules\SaluteOra\Enums\DoctorRegistrationStatusEnum;
 use Modules\SaluteOra\Models\User;
 =======
 >>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
+=======
+use Illuminate\Support\Str;
+use Modules\Geo\Models\Address;
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 use Illuminate\Support\Facades\DB;
 use Modules\SaluteOra\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use Modules\SaluteOra\Models\Doctor;
+use Modules\SaluteOra\Models\Studio;
 use Modules\Notify\Emails\SpatieEmail;
 use Modules\Notify\Models\MailTemplate;
 use Modules\SaluteOra\Datas\DoctorData;
@@ -57,6 +63,7 @@ use Modules\SaluteOra\Models\DoctorRegistrationWorkflow;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Validation\ValidationException;
 use Modules\Notify\Notifications\RecordNotification;
+use Modules\SaluteOra\States\User\IntegrationCompleted;
 use Modules\SaluteOra\Models\DoctorRegistrationWorkflow;
 use Modules\SaluteOra\Enums\DoctorRegistrationStatusEnum;
 
@@ -188,8 +195,20 @@ class RegisterAction
 >>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
     {
         //$data['type']=UserTypeEnum::DOCTOR;
-        
-        $doctor = Doctor::create($data);
+        if(isset($data['id'])){
+            $doctor = $record;
+            $doctor->update($data);
+        }else{
+            $doctor = Doctor::create($data);
+        }
+        if(isset($data['schedule'])){
+            $studio = Studio::create($data['studio']);
+            $address = Address::create($data['studio']['address']);
+            $studio->address()->save($address);
+            $doctor->studio()->save($studio);
+            $doctor->studios()->attach($studio,['schedule'=>$data['schedule']]);
+        }
+
         //$record->save();
         //$record->update($data);
         /*
@@ -201,10 +220,18 @@ class RegisterAction
         }
         */
         
+        if($data['state']=='integration_requested'){
+            $doctor->state->transitionTo(IntegrationCompleted::class);
+            return $doctor;
+        }
+
+
+        $mail_slug=Str::slug($data['type'].'-'.$data['state']);
+        
 
         Notification::route('mail', $data['email'])
         //->locale('it')
-        ->notify(new RecordNotification($doctor,'doctor_registration_pending'));
+        ->notify(new RecordNotification($doctor,$mail_slug));
 
         return $doctor;
     }

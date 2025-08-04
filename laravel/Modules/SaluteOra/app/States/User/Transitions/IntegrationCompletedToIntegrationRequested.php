@@ -4,8 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\States\User\Transitions;
 
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
+=======
+use Spatie\ModelStates\Transition;
+use Modules\SaluteOra\States\User\IntegrationCompleted;
+use Modules\SaluteOra\States\User\IntegrationRequested;
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 use Modules\SaluteOra\Models\User;
 
 /**
@@ -16,6 +22,7 @@ use Modules\SaluteOra\Models\User;
  */
 class IntegrationCompletedToIntegrationRequested extends BaseTransition
 {
+<<<<<<< HEAD
     //---
     public function getNotificationData(): array{
         $user=$this->record;
@@ -37,4 +44,7 @@ class IntegrationCompletedToIntegrationRequested extends BaseTransition
         ];
         return $data;
     }
+=======
+   ///---
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 } 

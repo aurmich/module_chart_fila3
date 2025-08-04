@@ -132,6 +132,9 @@ L'implementazione corretta dimostra che:
    - Implementare logging
    - Aggiungere monitoraggio 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 
 ## Visualizzazione Parametri come Badge
 
@@ -182,5 +185,8 @@ L'implementazione corretta dimostra che:
 Input: "name, email, company, date"
 Output: [name] [email] [company] [date] (come badge blu)
 ``` 
+<<<<<<< HEAD
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)

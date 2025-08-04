@@ -9,6 +9,7 @@ use Filament\Tables;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Tables\Actions\Action;
 use Modules\SaluteOra\Models\Doctor;
 use Filament\Tables\Columns\IconColumn;
@@ -17,6 +18,9 @@ use Modules\SaluteMo\Filament\Resources\DoctorResource;
 use Modules\UI\Filament\Forms\Components\OpeningHoursField;
 =======
 use Modules\SaluteMo\Models\Doctor;
+=======
+use Modules\SaluteOra\Models\Doctor;
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 use Illuminate\Database\Eloquent\Builder;
 use Modules\SaluteMo\Filament\Resources\DoctorResource;
 >>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)

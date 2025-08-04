@@ -83,6 +83,7 @@ use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Validation\Rules\Unique;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\FileUpload;
@@ -96,15 +97,19 @@ use Illuminate\Support\Facades\Gate;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\SaluteOra\Models\DoctorRegistrationWorkflow;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
+use Modules\UI\Filament\Forms\Components\OpeningHoursField;
 use Modules\SaluteOra\Actions\ProcessDoctorModerationAction;
 use Modules\SaluteOra\Filament\Resources\DoctorResource\Pages;
 use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
 use Modules\SaluteOra\Filament\Resources\DoctorResource\RelationManagers;
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> f622d84c (✨ (DoctorResource.php, RegistrationWidget.php, passport.php): enhance user authentication by adding remember token checks and improving Passport configuration for better security and flexibility.)
 =======
 use Illuminate\Validation\Rules\Unique;
 >>>>>>> de1d4084 (✨ (DoctorResource.php, PatientResource.php, StudioResource.php): introduce new Studio resource and update Doctor resource to include studio relationship)
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 
 /**
  * Class DoctorResource
@@ -220,17 +225,16 @@ class DoctorResource extends XotBaseResource
     public static function getFormSchemaWidget(): array
     {
 
-        $submit_view = 'pub_theme::filament.wizard.submit-button';
+        //$submit_view = 'pub_theme::filament.wizard.submit-button';
         
         return [
             Forms\Components\Wizard::make([
                 self::getPersonalInfoStep(),
-                self::getStudioStep(),
-                self::getProfessionalStep(),
+                self::getStudioStep(), 
                 self::getAvailabilityStep(),
             ])
             ->skippable(false)
-            ->submitAction(view($submit_view))
+            ->submitAction(static::getWizardSubmitAction())
             ->persistStepInQueryString()
             ->startOnStep(function($get){
 
@@ -502,29 +506,11 @@ class DoctorResource extends XotBaseResource
         return Forms\Components\Wizard\Step::make('availability')
             ->icon('heroicon-o-calendar')
             ->schema([
-                'availability_section' => Forms\Components\Section::make()
-                    ->schema([
-                        'availability_repeater' => Forms\Components\Repeater::make('availability')
-                            ->schema([
-                                'day' => Forms\Components\Select::make('day')
-                                    ->options(\Modules\Xot\Enums\DayOfWeek::cases())
-                                    ->getOptionLabelUsing(fn ($value) => __("xot::enums.day_of_week.{$value}"))
-                                    ->placeholder(__('saluteora::doctor-resource.day')),
-
-                                'start_time' => Forms\Components\TimePicker::make('start_time')
-                                    ->seconds(false)
-                                    ->required()
-                                    ->placeholder(__('saluteora::doctor-resource.start_time')),
-
-                                'end_time' => Forms\Components\TimePicker::make('end_time')
-                                    ->seconds(false)
-                                    ->required()
-                                    ->placeholder(__('saluteora::doctor-resource.end_time')),
-                            ])
-                            ->columns(3)
-                            ->defaultItems(1)
-                            ->reorderable(false),
-                    ]),
+                'availability_section' => OpeningHoursField::make('schedule')
+                    ->label(__('saluteora::doctor_availability.sections.weekly_availability'))
+                    ->helperText(__('saluteora::doctor_availability.fields.is_available.help'))
+                    ->columnSpanFull(),
+                    
             ])
 <<<<<<< HEAD
             ->visible(fn () => request()->has('token') ||

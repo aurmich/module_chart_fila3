@@ -4,6 +4,9 @@
 Il modulo SaluteOra utilizza `spatie/laravel-model-states` per gestire gli stati dei modelli. Questo approccio offre una gestione robusta e flessibile degli stati, permettendo transizioni controllate e validazione.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 ## Stati Disponibili
 
 Gli stati dell'utente nel sistema SaluteOra sono:
@@ -16,6 +19,7 @@ Gli stati dell'utente nel sistema SaluteOra sono:
 6. **IntegrationRequested** - Utente per cui è richiesta un'integrazione di dati
 7. **IntegrationCompleted** - Utente che ha completato l'integrazione richiesta (NUOVO)
 
+<<<<<<< HEAD
 ## Struttura degli Stati
 
 ### UserState (Classe Base)
@@ -32,22 +36,35 @@ abstract class UserState extends State
     abstract public function icon(): string;
 
 =======
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 ## Struttura degli Stati
 
-### UserState
+### UserState (Classe Base)
 ```php
-namespace Modules\SaluteOra\States;
+namespace Modules\SaluteOra\States\User;
 
 use Spatie\ModelStates\State;
+use Spatie\ModelStates\StateConfig;
 
-class UserState extends State
+abstract class UserState extends State
 {
+<<<<<<< HEAD
 >>>>>>> bead9c28 (fix case)
+=======
+    abstract public function label(): string;
+    abstract public function color(): string;
+    abstract public function icon(): string;
+
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     public static function config(): StateConfig
     {
         return parent::config()
             ->default(Pending::class)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
             // Pending transitions
             ->allowTransition(Pending::class, Active::class, Transitions\PendingToActive::class)
             ->allowTransition(Pending::class, Rejected::class, Transitions\PendingToRejected::class)
@@ -82,15 +99,19 @@ class UserState extends State
             ->registerState(Suspended::class)
             ->registerState(IntegrationRequested::class)
             ->registerState(IntegrationCompleted::class);
+<<<<<<< HEAD
 =======
             ->allowTransition(Pending::class, Approved::class)
             ->allowTransition(Pending::class, Rejected::class)
             ->allowTransition(Approved::class, Suspended::class);
 >>>>>>> bead9c28 (fix case)
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     }
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ### Stato IntegrationCompleted (NUOVO)
 ```php
@@ -152,28 +173,79 @@ class IntegrationRequested extends UserState
         return 'heroicon-o-document-text';
 =======
 ### Stati Specifici
+=======
+### Stato IntegrationCompleted (NUOVO)
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 ```php
-namespace Modules\SaluteOra\States;
+namespace Modules\SaluteOra\States\User;
 
-class Pending extends UserState
+/**
+ * Stato che rappresenta un utente che ha completato l'integrazione dei dati richiesti.
+ * 
+ * In questo stato l'utente ha fornito tutte le informazioni richieste
+ * e può essere attivato nel sistema.
+ */
+class IntegrationCompleted extends UserState
 {
-    public function canTransitionTo(State $newState): bool
+    public static $name = 'integration_completed';
+    
+    public function label(): string
     {
-        return $newState instanceof Approved || $newState instanceof Rejected;
+        return 'Integrazione completata';
+    }
+    
+    public function color(): string
+    {
+        return 'success';
+    }
+    
+    public function icon(): string
+    {
+        return 'heroicon-o-check-circle';
     }
 }
+```
 
-class Approved extends UserState
+### Stato IntegrationRequested (Esistente)
+```php
+namespace Modules\SaluteOra\States\User;
+
+/**
+ * Stato che rappresenta un utente per il quale è richiesta un'integrazione.
+ * 
+ * In questo stato l'utente ha completato la registrazione ma sono richieste
+ * ulteriori informazioni prima di poter attivare l'account.
+ */
+class IntegrationRequested extends UserState
 {
-    public function canTransitionTo(State $newState): bool
+    public static $name = 'integration_requested';
+    
+    public function label(): string
     {
+<<<<<<< HEAD
         return $newState instanceof Suspended;
 >>>>>>> bead9c28 (fix case)
+=======
+        return 'Integrazione richiesta';
+    }
+    
+    public function color(): string
+    {
+        return 'info';
+    }
+    
+    public function icon(): string
+    {
+        return 'heroicon-o-document-text';
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     }
 }
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 ## Flusso di Integrazione
 
 Il nuovo flusso di integrazione segue questi passaggi:
@@ -196,8 +268,11 @@ Pending
     └── → Rejected (respinto)
 ```
 
+<<<<<<< HEAD
 =======
 >>>>>>> bead9c28 (fix case)
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 ## Implementazione nei Modelli
 
 ### User Model
@@ -205,6 +280,7 @@ Pending
 namespace Modules\SaluteOra\Models;
 
 use Spatie\ModelStates\HasStates;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Modules\SaluteOra\States\User\UserState;
 
@@ -249,15 +325,57 @@ class IntegrationRequestedToIntegrationCompleted extends Transition
         return $this->user;
     }
 =======
+=======
+use Modules\SaluteOra\States\User\UserState;
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 
-class User extends Model
+class User extends BaseModel
 {
     use HasStates;
 
+<<<<<<< HEAD
     protected $casts = [
         'state' => UserState::class,
     ];
 >>>>>>> bead9c28 (fix case)
+=======
+    protected function casts(): array
+    {
+        return array_merge(parent::casts(), [
+            'state' => UserState::class,
+        ]);
+    }
+}
+```
+
+## Transizioni
+
+### Nuova Transizione: IntegrationRequestedToIntegrationCompleted
+```php
+namespace Modules\SaluteOra\States\User\Transitions;
+
+use Spatie\ModelStates\Transition;
+use Modules\SaluteOra\States\User\IntegrationRequested;
+use Modules\SaluteOra\States\User\IntegrationCompleted;
+use Modules\SaluteOra\Models\User;
+
+class IntegrationRequestedToIntegrationCompleted extends Transition
+{
+    public function __construct(public User $user, public ?string $message = '') {}
+
+    public function handle(): User
+    {
+        // Verifica che tutti i dati richiesti siano stati forniti
+        if (!$this->user->hasCompletedIntegration()) {
+            throw new \Exception('Integrazione non completata');
+        }
+
+        $this->user->state = new IntegrationCompleted($this->user);
+        $this->user->save();
+        
+        return $this->user;
+    }
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 }
 ```
 

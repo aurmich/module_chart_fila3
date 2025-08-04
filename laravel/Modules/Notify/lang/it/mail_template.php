@@ -181,6 +181,7 @@ return array (
     ),
     'name' => 
     array (
+<<<<<<< HEAD
       'description' => 'name',
       'helper_text' => 'name',
       'placeholder' => 'name',
@@ -196,6 +197,19 @@ return array (
 >>>>>>> b58de900 (.)
 =======
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+      'description' => 'Nome del template',
+      'helper_text' => 'Nome descrittivo per identificare il template',
+      'placeholder' => 'Es: Benvenuto, Conferma ordine, Reset password',
+      'label' => 'Nome Template',
+    ),
+    'params' => 
+    array (
+      'label' => 'Parametri',
+      'helper_text' => 'Inserisci i parametri separati da virgola che possono essere utilizzati nel template',
+      'placeholder' => 'name, email, date, company',
+      'description' => 'Parametri disponibili per il template email',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'name' => 
     array (

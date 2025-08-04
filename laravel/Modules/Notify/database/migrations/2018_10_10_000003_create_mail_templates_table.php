@@ -35,12 +35,21 @@ return new class () extends XotBaseMigration {
             if (! $this->hasColumn('name')) {
                 $table->string('name');
             }
+<<<<<<< HEAD
             if ($this->hasColumn('name')) {
                 $table->string('name')->nullable()->change();
             }
             if (! $this->hasColumn('slug')) {
                 $table->string('slug')->unique();
             }
+=======
+            if (! $this->hasColumn('slug')) {
+                $table->string('slug')->unique();
+            }
+            if (! $this->hasColumn('params')) {
+                $table->text('params')->nullable();
+            }
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 
             $this->updateTimestamps(table: $table, hasSoftDeletes: true);
         });

@@ -348,14 +348,14 @@ class Doctor extends User
     use HasParent;
 
    
-    /**
-     * Gli attributi che sono mass assignable.
-     *
-     * @var list<string>
-     */
+    /** @var list<string>     */
     protected $fillable = [
+<<<<<<< HEAD
         'tenant_id',
 >>>>>>> 54f4fa16 (.)
+=======
+        //'tenant_id',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
         'first_name',
         'last_name',
         'email',
@@ -363,6 +363,7 @@ class Doctor extends User
         'address',
         'city',
         'registration_number',
+<<<<<<< HEAD
 <<<<<<< HEAD
         //'specialization',
         'certifications', // Mantenuto per retrocompatibilità
@@ -422,25 +423,50 @@ class Doctor extends User
 
 =======
         'specialization',
+=======
+        //'specialization',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
         'certifications',
-        'availability',
+        //'availability',
         'status',
     ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
+=======
+    /** @var list<string>     */
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     protected $appends = [
         //'health_card',
         //'identity_document',
         //'isee_certificate',
         //'pregnancy_certificate',
         // 'certifications', // Gestito da getter personalizzato
+        //'studio',
+        //'studio::description',
+        //'studio:address',
     ];
 
+    /** @var list<string>     */
     public static array $attachments = [
         'certifications',
        
+    ];
+
+    /** @var list<string>     */
+    protected $with = [
+        'studio',
+        'studio.address',
+    ];
+
+    /** @var array<string, mixed>  */
+    protected $attributes = [
+        //'state' => Pending::class,
+        //'state' => 'pending',
+        'is_otp'=>false,
+        'is_active'=>true,
     ];
 
 

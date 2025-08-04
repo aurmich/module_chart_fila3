@@ -318,6 +318,9 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     /** @var array<string, mixed>  */
     protected $attributes = [
         //'state' => Pending::class,
@@ -326,10 +329,13 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
         'is_active'=>true,
     ];
 
+<<<<<<< HEAD
 =======
 >>>>>>> d4c0700e (♻️ (SelectStateColumn.php): refactor state retrieval logic to use $state directly for clarity)
 =======
 >>>>>>> d23ba493 (add calendar)
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     /**
      * Guard coerente con Spatie/Permission: deve essere 'web'.
      * @var string

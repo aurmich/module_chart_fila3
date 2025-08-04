@@ -10,6 +10,7 @@ use Spatie\ModelStates\Transition;
 use Modules\SaluteOra\States\User\Active;
 use Modules\SaluteOra\States\User\Inactive;
 use Modules\Notify\Notifications\RecordNotification;
+<<<<<<< HEAD
 use Modules\Xot\States\Transitions\XotBaseTransition;
 use Modules\Xot\Contracts\UserContract;
 
@@ -25,6 +26,39 @@ abstract class BaseTransition extends XotBaseTransition
         $slug=\Illuminate\Support\Str::slug($slug);
         
         return $slug;
+=======
+
+abstract class BaseTransition extends Transition
+{
+    
+    public function __construct(public User $user, public ?string $message='') {}
+     
+    public function handle(): User
+    {
+        $this->sendNotification();
+        $class=static::class;
+        $newStateClass=Str::of($class)->afterLast('To')->prepend('Modules\SaluteOra\States\User\\')->toString();
+        $this->user->state = new $newStateClass($this->user);
+        $this->user->save();
+        return $this->user;
+    }
+        
+    public function sendNotification(): void{
+        $slug=$this->user->type->value . '-'.Str::of(class_basename(static::class))->kebab()->toString();
+        $slug=\Illuminate\Support\Str::slug($slug);
+        
+        $notify = new RecordNotification(
+            $this->user,
+            $slug
+        );
+
+        $data = $this->getNotificationData();
+        $notify = $notify->mergeData($data);
+        
+        \Illuminate\Support\Facades\Notification::route('mail', $this->user->email)
+            //->locale('it')
+            ->notify($notify);
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     }
 
     public function getNotificationData(): array{

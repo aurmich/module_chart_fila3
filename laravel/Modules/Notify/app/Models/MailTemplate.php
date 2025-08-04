@@ -104,10 +104,13 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
         'sms_template',
         //'version',  //under development
         'params',
+<<<<<<< HEAD
         'counter',
 =======
         //'version',  //under development
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ];
 
     /**

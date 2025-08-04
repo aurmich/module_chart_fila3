@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # Regola: Badge Parametri Mail Template
 
 ## Ambito
@@ -86,3 +87,5 @@ alwaysApply: false
 
 ## Ultimo aggiornamento
 2025-01-16
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)

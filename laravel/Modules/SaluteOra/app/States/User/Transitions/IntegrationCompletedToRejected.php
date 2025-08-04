@@ -4,6 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\States\User\Transitions;
 
+<<<<<<< HEAD
+=======
+use Spatie\ModelStates\Transition;
+use Modules\SaluteOra\States\User\IntegrationCompleted;
+use Modules\SaluteOra\States\User\Rejected;
+use Modules\SaluteOra\Models\User;
+
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 /**
  * Transizione da IntegrationCompleted a Rejected.
  * 
@@ -12,5 +20,9 @@ namespace Modules\SaluteOra\States\User\Transitions;
  */
 class IntegrationCompletedToRejected extends BaseTransition
 {
+<<<<<<< HEAD
     //---
+=======
+   //---
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 } 

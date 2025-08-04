@@ -419,6 +419,8 @@ class User extends BaseUser implements HasMedia
     protected $attributes = [
         //'state' => Pending::class,
         //'state' => 'pending',
+        'is_otp'=>false,
+        'is_active'=>true,
     ];
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -487,6 +489,7 @@ class User extends BaseUser implements HasMedia
         'lang',
         'current_team_id',
         //'is_active',
+<<<<<<< HEAD
         'is_otp',
         'password_expires_at',
         //'studio_id',
@@ -510,6 +513,12 @@ class User extends BaseUser implements HasMedia
 <<<<<<< HEAD
 >>>>>>> 8e4d163b (phpstan)
 =======
+=======
+        'is_otp',
+        'password_expires_at',
+        //'studio_id',
+        //'continuation_token',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
         'certificates'
 >>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
     ];

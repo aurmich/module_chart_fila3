@@ -41,22 +41,11 @@ class PendingToActive extends BaseTransition
 =======
 >>>>>>> 4047cb2d (✨ (mail_template.php, send_email.php): add descriptions and placeholders for mail template fields to enhance clarity for users)
 
-class PendingToActive extends Transition
+class PendingToActive extends BaseTransition
 {
-    public function __construct(
-        public User $user,
-        public ?string $message=''
-    ) {
+    
 
-    }
-
-    public function handle(): User
-    {
-        $slug=$this->user->type->value . '-'.Str::of(class_basename(self::class))->kebab()->toString();
-        $notify = new RecordNotification(
-            $this->user,
-            $slug
-        );
+    public function getNotificationData(): array{
         $password=Str::random(10);
         $this->user->update(['password'=>$password]);
 
@@ -64,18 +53,7 @@ class PendingToActive extends Transition
             'message' => $this->message,
             'password' => $password,
         ];
-        //dddx($data);
-        $notify = $notify->mergeData($data);
-        Notification::route('mail', $this->user->email)
-            //->locale('it')
-            ->notify($notify);
-        
-        
-        // Additional logic before transition can be added here
-        $this->user->state = new Active($this->user);
-        $this->user->save();
-
-        return $this->user;
+        return $data;
     }
 }
 >>>>>>> f4ba6a58 (✨ (User.php): add user state transition classes to manage user state changes)

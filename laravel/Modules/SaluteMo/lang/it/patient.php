@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array (
   'navigation' => 
   array (
@@ -12,25 +13,36 @@ return array (
   'navigation' => 
   array (
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+return array (
+  'navigation' => 
+  array (
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     'label' => 'Pazienti',
     'group' => 'Gestione Utenti',
     'icon' => 'heroicon-o-users',
     'sort' => 20,
 <<<<<<< HEAD
+<<<<<<< HEAD
     'tooltip' => 'Gestisci i pazienti registrati nel sistema',
     'helper_text' => '',
 =======
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
   ),
   'model' => 
   array (
     'label' => 'Paziente',
     'plural' => 'Pazienti',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'description' => 'Gestione completa dei pazienti',
     'icon' => 'heroicon-o-user',
 =======
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
   ),
   'pages' => 
   array (
@@ -39,40 +51,53 @@ return array (
       'title' => 'Elenco Pazienti',
       'subtitle' => 'Gestisci i pazienti registrati nell\'app mobile',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'Visualizza e gestisci tutti i pazienti del sistema',
 =======
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'create' => 
     array (
       'title' => 'Nuovo Paziente',
       'subtitle' => 'Registra un nuovo paziente',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'Inserisci i dati per registrare un nuovo paziente',
 =======
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'edit' => 
     array (
       'title' => 'Modifica Paziente',
       'subtitle' => 'Modifica le informazioni del paziente',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'Aggiorna le informazioni del paziente selezionato',
 =======
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'view' => 
     array (
       'title' => 'Dettagli Paziente',
       'subtitle' => 'Visualizza le informazioni complete del paziente',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'Informazioni dettagliate sul paziente selezionato',
 =======
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
   ),
   'fields' => 
   array (
+<<<<<<< HEAD
 <<<<<<< HEAD
     'personal_info_section' => 
     array (
@@ -97,10 +122,13 @@ return array (
     ),
 =======
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     'full_name' => 
     array (
       'label' => 'Nome e Cognome',
       'placeholder' => 'Inserisci nome e cognome completi',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'help' => 'Nome e cognome del paziente',
       'tooltip' => 'Nome completo del paziente',
@@ -132,11 +160,15 @@ return array (
 =======
       'helper_text' => 'Nome e cognome del paziente',
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+      'helper_text' => 'Nome e cognome del paziente',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'email' => 
     array (
       'label' => 'Email',
       'placeholder' => 'email@esempio.com',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'help' => 'Indirizzo email per le comunicazioni',
       'tooltip' => 'Email del paziente',
@@ -144,11 +176,15 @@ return array (
 =======
       'helper_text' => 'Indirizzo email per le comunicazioni',
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+      'helper_text' => 'Indirizzo email per le comunicazioni',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'phone' => 
     array (
       'label' => 'Telefono',
       'placeholder' => '+39 123 456 7890',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'help' => 'Numero di telefono principale',
       'tooltip' => 'Telefono del paziente',
@@ -156,11 +192,15 @@ return array (
 =======
       'helper_text' => 'Numero di telefono principale',
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+      'helper_text' => 'Numero di telefono principale',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'fiscal_code' => 
     array (
       'label' => 'Codice Fiscale',
       'placeholder' => 'RSSMRA80A01H501Z',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'help' => 'Codice fiscale del paziente',
       'tooltip' => 'Codice fiscale italiano',
@@ -168,11 +208,15 @@ return array (
 =======
       'helper_text' => 'Codice fiscale del paziente',
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+      'helper_text' => 'Codice fiscale del paziente',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'birth_date' => 
     array (
       'label' => 'Data di Nascita',
       'placeholder' => 'Seleziona la data',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'help' => 'Data di nascita del paziente',
       'tooltip' => 'Data di nascita',
@@ -188,11 +232,15 @@ return array (
 =======
       'helper_text' => 'Data di nascita del paziente',
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+      'helper_text' => 'Data di nascita del paziente',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'gender' => 
     array (
       'label' => 'Sesso',
       'placeholder' => 'Seleziona il sesso',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'help' => 'Sesso del paziente',
       'tooltip' => 'Sesso biologico',
@@ -200,6 +248,9 @@ return array (
 =======
       'helper_text' => 'Sesso del paziente',
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+      'helper_text' => 'Sesso del paziente',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
       'options' => 
       array (
         'male' => 'Maschio',
@@ -212,17 +263,22 @@ return array (
       'label' => 'Indirizzo',
       'placeholder' => 'Via Roma, 123',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'help' => 'Indirizzo di residenza',
       'tooltip' => 'Indirizzo completo',
       'helper_text' => '',
 =======
       'helper_text' => 'Indirizzo di residenza',
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+      'helper_text' => 'Indirizzo di residenza',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'city' => 
     array (
       'label' => 'Città',
       'placeholder' => 'Milano',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'help' => 'Città di residenza',
       'tooltip' => 'Città di residenza',
@@ -230,11 +286,15 @@ return array (
 =======
       'helper_text' => 'Città di residenza',
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+      'helper_text' => 'Città di residenza',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'postal_code' => 
     array (
       'label' => 'CAP',
       'placeholder' => '20100',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'help' => 'Codice di avviamento postale',
       'tooltip' => 'Codice postale',
@@ -424,11 +484,15 @@ return array (
 =======
       'helper_text' => 'Codice di avviamento postale',
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+      'helper_text' => 'Codice di avviamento postale',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'emergency_contact_name' => 
     array (
       'label' => 'Contatto Emergenza - Nome',
       'placeholder' => 'Nome del contatto di emergenza',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'help' => 'Nome della persona da contattare in caso di emergenza',
       'tooltip' => 'Nome contatto emergenza',
@@ -436,11 +500,15 @@ return array (
 =======
       'helper_text' => 'Nome della persona da contattare in caso di emergenza',
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+      'helper_text' => 'Nome della persona da contattare in caso di emergenza',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'emergency_contact_phone' => 
     array (
       'label' => 'Contatto Emergenza - Telefono',
       'placeholder' => '+39 123 456 7890',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'help' => 'Telefono del contatto di emergenza',
       'tooltip' => 'Telefono contatto emergenza',
@@ -448,11 +516,15 @@ return array (
 =======
       'helper_text' => 'Telefono del contatto di emergenza',
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+      'helper_text' => 'Telefono del contatto di emergenza',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'allergies' => 
     array (
       'label' => 'Allergie',
       'placeholder' => 'Elenco delle allergie note',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'help' => 'Allergie note del paziente',
       'tooltip' => 'Allergie del paziente',
@@ -460,11 +532,15 @@ return array (
 =======
       'helper_text' => 'Allergie note del paziente',
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+      'helper_text' => 'Allergie note del paziente',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'medications' => 
     array (
       'label' => 'Farmaci',
       'placeholder' => 'Farmaci attualmente assunti',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'help' => 'Farmaci che il paziente sta assumendo',
       'tooltip' => 'Farmaci in uso',
@@ -472,27 +548,37 @@ return array (
 =======
       'helper_text' => 'Farmaci che il paziente sta assumendo',
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+      'helper_text' => 'Farmaci che il paziente sta assumendo',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'medical_history' => 
     array (
       'label' => 'Storia Clinica',
       'placeholder' => 'Note sulla storia clinica',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'help' => 'Informazioni rilevanti sulla storia clinica',
       'tooltip' => 'Storia clinica',
       'helper_text' => '',
 =======
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
       'helper_text' => 'Informazioni rilevanti sulla storia clinica',
     ),
     'is_active' => 
     array (
       'label' => 'Attivo',
       'helper_text' => 'Il paziente può prenotare visite',
+<<<<<<< HEAD
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'device_token' => 
     array (
       'label' => 'Token Dispositivo',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'help' => 'Token per le notifiche push',
       'tooltip' => 'Token dispositivo',
@@ -500,15 +586,21 @@ return array (
 =======
       'helper_text' => 'Token per le notifiche push',
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+      'helper_text' => 'Token per le notifiche push',
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'last_login' => 
     array (
       'label' => 'Ultimo Accesso',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'help' => 'Data e ora dell\'ultimo accesso all\'app',
       'tooltip' => 'Ultimo accesso',
       'helper_text' => '',
 =======
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
       'helper_text' => 'Data e ora dell\'ultimo accesso all\'app',
     ),
     'reset_filters' => 
@@ -530,16 +622,20 @@ return array (
     'reorder_records' => 
     array (
       'label' => 'Riordina Record',
+<<<<<<< HEAD
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     ),
     'applyFilters' => 
     array (
       'label' => 'applyFilters',
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     ),
     'toggleColumns' => 
     array (
       'label' => 'toggleColumns',
     ),
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     'value' => 
@@ -580,6 +676,8 @@ return array (
 =======
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
 =======
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     'reorderRecords' => 
     array (
       'label' => 'reorderRecords',
@@ -592,7 +690,14 @@ return array (
     array (
       'label' => 'openFilters',
     ),
+<<<<<<< HEAD
 >>>>>>> 86a4d226 (✨ (patient.php): add new localization keys for reorderRecords, resetFilters, and openFilters to enhance user interface)
+=======
+    'applyFilters' => 
+    array (
+      'label' => 'applyFilters',
+    ),
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
   ),
   'actions' => 
   array (
@@ -627,6 +732,7 @@ return array (
       'tooltip' => 'Aggiungi una nota medica',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
     'create' => 
     array (
       'label' => 'Crea Paziente',
@@ -659,6 +765,8 @@ return array (
     ),
 =======
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
   ),
   'filters' => 
   array (
@@ -679,6 +787,7 @@ return array (
       'label' => 'Per Città',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
     'is_pregnant' => 
     array (
       'label' => 'In Gravidanza',
@@ -689,6 +798,8 @@ return array (
     ),
 =======
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
   ),
   'bulk_actions' => 
   array (
@@ -703,6 +814,7 @@ return array (
       'icon' => 'heroicon-o-arrow-down-tray',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
     'activate_selected' => 
     array (
       'label' => 'Attiva Selezionati',
@@ -715,6 +827,8 @@ return array (
     ),
 =======
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
   ),
   'messages' => 
   array (
@@ -723,7 +837,10 @@ return array (
     'medical_note_added' => 'Nota medica aggiunta con successo',
     'export_completed' => 'Esportazione completata',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'activated_successfully' => 'Paziente attivato con successo',
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
   ),
   'notifications' => 
   array (
@@ -745,6 +862,7 @@ return array (
     array (
       'string' => 'Il campo :attribute non può superare :max caratteri',
     ),
+<<<<<<< HEAD
     'fiscal_code' => 
     array (
       'format' => 'Il codice fiscale deve essere nel formato corretto',
@@ -1022,3 +1140,8 @@ return [
     'search_placeholder' => 'Cerca per nome, email, telefono o codice fiscale...',
 ];
 >>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
+=======
+  ),
+  'search_placeholder' => 'Cerca per nome, email, telefono o codice fiscale...',
+);
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)

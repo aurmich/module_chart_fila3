@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms;
 <<<<<<< HEAD
 use Filament\Forms\Set;
@@ -49,6 +50,20 @@ use Webmozart\Assert\Assert;
 
 use function Safe\glob;
 >>>>>>> 54f4fa16 (.)
+=======
+use Filament\Forms;
+use function Safe\glob;
+use Filament\Forms\Form;
+use Illuminate\Support\Str;
+use Webmozart\Assert\Assert;
+use Filament\Pages\SubNavigationPosition;
+use Illuminate\Contracts\Support\Renderable;
+use Modules\Xot\Actions\ModelClass\CountAction;
+
+use Filament\Resources\Resource as FilamentResource;
+use Illuminate\Contracts\View\View;
+use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 
 /**
  * @method static string getUrl(string $name, array<string, mixed> $parameters = [], bool $isAbsolute = true)
@@ -79,11 +94,17 @@ abstract class XotBaseResource extends FilamentResource
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+
+
+
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     /**
      * @return class-string<\Illuminate\Database\Eloquent\Model>
      */
@@ -322,6 +343,7 @@ abstract class XotBaseResource extends FilamentResource
         return $res;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
     public static function getWizardSubmitAction():Htmlable
@@ -333,10 +355,14 @@ abstract class XotBaseResource extends FilamentResource
         $render= view($submit_view)->render();
         return new HtmlString($render);
 =======
+=======
+
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     public static function getWizardSubmitAction():View
     {
         $submit_view = 'pub_theme::filament.wizard.submit-button';
         return view($submit_view);
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
     }
 
@@ -365,6 +391,13 @@ abstract class XotBaseResource extends FilamentResource
 =======
         $attachments = $model::$attachments;
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+    }
+
+    public static function getAttachmentsSchema(): array{
+        $model = static::getModel();
+        $attachments = $model::$attachments;
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
         $uuid = Str::uuid()->toString();
         $schema = [];
         
@@ -378,12 +411,20 @@ abstract class XotBaseResource extends FilamentResource
                 ->maxSize(5120)
                 ->required()
                 ->reorderable()
+<<<<<<< HEAD
                 ->multiple($multiple)
+=======
+                ->multiple()
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
                 ->preserveFilenames()
                 ->columnSpanFull()
                 ->afterStateUpdated(function ($state, Forms\Set $set) use ($attachment) {
                     if (!$state) return;
+<<<<<<< HEAD
                     $state=Arr::wrap($state);
+=======
+                    
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
                     $sessionId = session()->getId();
                     $sessionDir = "session-uploads/{$sessionId}";
                     $sessionFiles = [];
@@ -406,6 +447,7 @@ abstract class XotBaseResource extends FilamentResource
         }
         return $schema;
     }
+<<<<<<< HEAD
 
 >>>>>>> aurmich/dev
     protected static function getStepByName(string $name): Forms\Components\Wizard\Step
@@ -417,4 +459,6 @@ abstract class XotBaseResource extends FilamentResource
     }
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 }

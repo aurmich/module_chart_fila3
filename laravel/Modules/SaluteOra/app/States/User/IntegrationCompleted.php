@@ -12,8 +12,12 @@ namespace Modules\SaluteOra\States\User;
  */
 class IntegrationCompleted extends UserState
 {
+<<<<<<< HEAD
     /** @var string */
     public static string $name = 'integration_completed';
+=======
+    public static $name = 'integration_completed';
+>>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     
     public function label(): string
     {
