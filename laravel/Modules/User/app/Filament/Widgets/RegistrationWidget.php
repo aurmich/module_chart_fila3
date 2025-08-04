@@ -271,7 +271,8 @@ class RegistrationWidget extends XotBaseWidget
         
        
         $data = [];
-        $data['type'] = $this->type;
+        
+        /*
         $data['studio']=[];
         $data['studio']['description'] = null;
         $data['studio']['address']=[];
@@ -280,9 +281,9 @@ class RegistrationWidget extends XotBaseWidget
         $data['studio']['address']['administrative_area_level_3'] = null;
         $data['studio']['address']['locality'] = null;
         $data['studio']['address']['postal_code'] = null;
-        
+        */
         $data = array_merge($data,parent::getFormFill() );
-        
+        $data['type'] = $this->type;
         
 <<<<<<< HEAD
         // Se è un nuovo modello, restituisci solo i campi fillable con valori null

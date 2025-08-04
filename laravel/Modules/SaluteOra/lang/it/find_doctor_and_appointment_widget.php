@@ -288,6 +288,9 @@ return array (
       'label' => 'date',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     'Conferma' => 
     array (
       'label' => 'Conferma',
@@ -312,12 +315,15 @@ return array (
     array (
       'label' => 'search_step',
     ),
+<<<<<<< HEAD
 =======
 >>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
 =======
 >>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
   ),
   'fields' => 
   array (
@@ -445,6 +451,9 @@ return array (
       'label' => 'test_field',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     'selected_studio' => 
     array (
       'description' => 'selected_studio',
@@ -480,6 +489,7 @@ return array (
       'placeholder' => 'studio_name',
       'label' => 'studio_name',
     ),
+<<<<<<< HEAD
     'test' => 
     array (
       'description' => 'test',
@@ -488,6 +498,8 @@ return array (
     array (
       'description' => 'appointment_time_display',
     ),
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
   ),
   'actions' => 
   array (
@@ -495,6 +507,7 @@ return array (
     array (
       'label' => 'submit',
     ),
+<<<<<<< HEAD
 =======
 >>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
 =======
@@ -503,6 +516,8 @@ return array (
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 =======
 >>>>>>> d23ba493 (add calendar)
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
   ),
 );
 >>>>>>> aurmich/dev

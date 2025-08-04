@@ -110,6 +110,7 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
 - **OpeningHoursField**: Campo per gestione orari settimanali (mattina/pomeriggio) - [Documentazione](components/opening-hours-field.md)
   - ⚠️ **ERRORE CRITICO RISOLTO** (Dic 2024): Proprietà `$view` mancante causava runtime error
   - ✅ **CORREZIONE**: Vista Blade personalizzata + traduzioni complete
+<<<<<<< HEAD
 - **OpeningHoursField**: Campo per gestione orari settimanali (mattina/pomeriggio) - [Documentazione](components/opening-hours-field.md)
   - ⚠️ **ERRORE CRITICO RISOLTO** (Dic 2024): Proprietà `$view` mancante causava runtime error
   - ✅ **CORREZIONE**: Vista Blade personalizzata + traduzioni complete
@@ -117,6 +118,15 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
   - ⚠️ **ERRORE CRITICO RISOLTO** (Dic 2024): Proprietà `$view` mancante causava runtime error
   - ✅ **CORREZIONE**: Vista Blade personalizzata + traduzioni complete
 >>>>>>> 275f385b (- deleted files .md)
+=======
+- **RadioCardSelector**: Componente riutilizzabile per selezioni con card radio - [Documentazione](components/radio-card-selector-component.md)
+  - ✅ **IMPLEMENTATO** (Gen 2025): Componente clean per selezioni visuali
+  - ✅ **FEATURES**: Card responsive, Alpine.js, auto-populate fields
+  - 🎯 **UTILIZZO**: Widget FindDoctorAndAppointment, selezioni multi-elemento
+  - 🎯 **NUOVO COMPONENTE** (Gen 2025): Riutilizzabile cross-module per healthcare applications
+  - ✅ **FEATURES**: Layout responsive, accessibilità, Alpine.js integration
+  - 🔧 **UTILIZZO**: Widget SaluteOra per studio selection in appointment booking
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 
 ### Tables
 - CustomDataTable: Tabella dati avanzata con ordinamento e filtri
@@ -177,6 +187,9 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 ## Componenti View Aggiornati (Gen 2025)
 
 ### Studio Selector Component

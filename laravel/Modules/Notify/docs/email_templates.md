@@ -5,6 +5,9 @@
 Il modulo Notify implementa un sistema avanzato di gestione delle email template basato su [spatie/laravel-database-mail-templates](https://github.com/spatie/laravel-database-mail-templates). Questo sistema permette di gestire e personalizzare facilmente i template delle email direttamente dal database.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 ## 🚨 Errore Critico Identificato
 
 **Data**: 26 Giugno 2025  
@@ -19,7 +22,10 @@ Il modulo Notify implementa un sistema avanzato di gestione delle email template
 Per risolvere immediatamente il problema di registrazione:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 # 1. Creare seeder per template critici
 php artisan make:seeder CriticalMailTemplatesSeeder
 
@@ -31,8 +37,11 @@ php artisan tinker
 >>> \Modules\Notify\Models\MailTemplate::where('slug', 'patient-pending')->exists()
 ```
 
+<<<<<<< HEAD
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 ## Struttura del Sistema
 
 ### Componenti Principali
@@ -43,9 +52,13 @@ php artisan tinker
    - Supporta la personalizzazione del layout
    - Supporta l'identificazione dei template tramite slug
 <<<<<<< HEAD
+<<<<<<< HEAD
    - ⚠️ **ATTENZIONE**: Constructor può fallire se template mancante
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+   - ⚠️ **ATTENZIONE**: Constructor può fallire se template mancante
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 
 2. **MailTemplate** (`app/Models/MailTemplate.php`)
    - Model per la gestione dei template nel database
@@ -54,9 +67,13 @@ php artisan tinker
    - Traccia i log delle email inviate
    - Include identificatore slug per i template
 <<<<<<< HEAD
+<<<<<<< HEAD
    - ⚠️ **ATTENZIONE**: Richiede pre-creazione per template critici
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+   - ⚠️ **ATTENZIONE**: Richiede pre-creazione per template critici
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 
 ### Database
 
@@ -97,6 +114,7 @@ MailTemplate::create([
     ]
 ]);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 // ✅ TEMPLATE CRITICI - Registrazione Pazienti
 MailTemplate::create([
@@ -139,6 +157,23 @@ MailTemplate::create([
         '
     ]
 >>>>>>> 9df8f556 (fix .md)
+=======
+// ✅ TEMPLATE CRITICI - Registrazione Pazienti
+MailTemplate::create([
+    'mailable' => \Modules\Notify\Emails\SpatieEmail::class,
+    'slug' => 'patient-pending',
+    'subject' => ['it' => 'Registrazione in attesa di approvazione'],
+    'html_template' => ['it' => '<p>Gentile {{ first_name }} {{ last_name }},</p><p>La tua registrazione è in attesa di approvazione.</p>'],
+    'text_template' => ['it' => 'La tua registrazione è in attesa di approvazione.']
+]);
+
+MailTemplate::create([
+    'mailable' => \Modules\Notify\Emails\SpatieEmail::class,
+    'slug' => 'patient-active',
+    'subject' => ['it' => 'Account attivato con successo'],
+    'html_template' => ['it' => '<p>Gentile {{ first_name }},</p><p>Il tuo account è stato attivato.</p>'],
+    'text_template' => ['it' => 'Il tuo account è stato attivato.']
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 ]);
 ```
 
@@ -149,6 +184,9 @@ use Modules\Notify\Emails\SpatieEmail;
 use Illuminate\Support\Facades\Mail;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 // ✅ CORRETTO - Con validazione slug
 try {
     $user = User::find(1);
@@ -164,6 +202,7 @@ try {
 }
 
 // ❌ ERRATO - Senza validazione (può causare MissingMailTemplate)
+<<<<<<< HEAD
 $user = User::find(1);
 Mail::to($user->email)->send(new SpatieEmail($user, 'welcome-email'));
 =======
@@ -176,6 +215,10 @@ $user = User::find(1);
 $user->registration_link = route('complete-registration', ['token' => $token]);
 Mail::to($user->email)->send(new SpatieEmail($user, 'complete-registration'));
 >>>>>>> 9df8f556 (fix .md)
+=======
+$user = User::find(1);
+Mail::to($user->email)->send(new SpatieEmail($user, 'welcome-email'));
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 ```
 
 ### 3. Personalizzazione del Layout
@@ -195,6 +238,9 @@ public function getHtmlLayout(): string
 ## Best Practices
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 1. **Prevenzione Errori MissingMailTemplate** ⚠️ **CRITICO**
    - **SEMPRE** creare seeder per template critici
    - **SEMPRE** validare esistenza template prima dell'invio
@@ -202,50 +248,72 @@ public function getHtmlLayout(): string
    - **MAI** generare slug dinamici senza validazione
 
 2. **Gestione delle Versioni**
+<<<<<<< HEAD
 =======
 1. **Gestione delle Versioni**
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
    - Utilizzare il sistema di versioning per tracciare le modifiche ai template
    - Documentare le modifiche significative
    - Mantenere lo slug costante tra le versioni
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. **Traduzioni**
 =======
 2. **Traduzioni**
 >>>>>>> 9df8f556 (fix .md)
+=======
+3. **Traduzioni**
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
    - Mantenere sempre le traduzioni in italiano e inglese
    - Utilizzare chiavi di traduzione coerenti
    - Utilizzare lo slug come chiave di traduzione quando appropriato
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. **Variabili nei Template**
 =======
 3. **Variabili nei Template**
 >>>>>>> 9df8f556 (fix .md)
+=======
+4. **Variabili nei Template**
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
    - Utilizzare nomi descrittivi per le variabili
    - Documentare tutte le variabili disponibili
    - Validare la presenza delle variabili richieste
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 5. **Testing**
 =======
 4. **Testing**
 >>>>>>> 9df8f556 (fix .md)
+=======
+5. **Testing**
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
    - Testare i template con dati reali
    - Verificare il rendering in diversi client email
    - Controllare le traduzioni in tutte le lingue supportate
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 6. **Gestione degli Slug**
 =======
 5. **Gestione degli Slug**
 >>>>>>> 9df8f556 (fix .md)
+=======
+6. **Gestione degli Slug**
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
    - Utilizzare kebab-case per gli slug
    - Mantenere gli slug brevi e descrittivi
    - Evitare caratteri speciali
    - Verificare l'unicità degli slug
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
    - **✅ NUOVO**: Implementare validazione slug robusti
 
 ## Template Critici per il Sistema
@@ -269,8 +337,11 @@ Questi template DEVONO esistere per il funzionamento del sistema:
 'system-notification' // Notifica generica
 'default-notification' // Template di emergenza
 ```
+<<<<<<< HEAD
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 
 ## Esempi di Template Comuni
 
@@ -326,6 +397,9 @@ MailTemplate::create([
 ### Problemi Comuni
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 1. **🚨 CRITICO: MissingMailTemplate Exception**
    ```
    Spatie\MailTemplates\Exceptions\MissingMailTemplate
@@ -339,6 +413,7 @@ MailTemplate::create([
    - ➡️ [Documentazione completa errore](../../SaluteOra/docs/errori/missing-mail-template-spatiemail.md)
 
 2. **Template non trovato**
+<<<<<<< HEAD
    - Verificare che il template esista nel database
    - Controllare che la classe Mailable sia corretta
    - **NUOVO**: Controllare che lo slug sia corretto e non vuoto
@@ -376,20 +451,46 @@ php artisan tinker
 ### **Documentazione Tecnica**
 =======
 1. **Template non trovato**
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
    - Verificare che il template esista nel database
    - Controllare che la classe Mailable sia corretta
+   - **NUOVO**: Controllare che lo slug sia corretto e non vuoto
 
-2. **Variabili mancanti**
+3. **Variabili mancanti**
    - Assicurarsi che tutti i dati necessari siano passati al costruttore
    - Verificare i nomi delle variabili nel template
 
-3. **Problemi di traduzione**
+4. **Problemi di traduzione**
    - Controllare che tutte le traduzioni necessarie siano presenti
    - Verificare la configurazione della lingua corrente
 
+### Comandi Utili per Debug
+
+```bash
+# Verifica template esistenti
+php artisan tinker
+>>> \Modules\Notify\Models\MailTemplate::where('mailable', 'like', '%SpatieEmail%')->get(['id', 'slug', 'subject'])
+
+# Verifica template specifico
+>>> \Modules\Notify\Models\MailTemplate::where('slug', 'patient-pending')->exists()
+
+# Test invio email
+>>> Mail::to('test@example.com')->send(new \Modules\Notify\Emails\SpatieEmail(User::first(), 'patient-pending'))
+```
+
 ## Collegamenti Correlati
 
+<<<<<<< HEAD
 >>>>>>> 9df8f556 (fix .md)
+=======
+### **Errori Critici e Soluzioni**
+- [SaluteOra: Missing Mail Template Error](../../SaluteOra/docs/errori/missing-mail-template-spatiemail.md) - **URGENT**
+- [Missing Mail Template Patterns](../../../docs/errori_gravi/missing-mail-template-patterns.md) - Pattern globali
+- [Array to String Conversion](../../../docs/errori_gravi/array-to-string-conversion-patterns.md) - Errore correlato
+
+### **Documentazione Tecnica**
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 - [Documentazione Spatie Mail Templates](https://github.com/spatie/laravel-database-mail-templates)
 - [Gestione Traduzioni](../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Configurazione Email](../../../docs/email-configuration.md)
@@ -401,11 +502,17 @@ php artisan tinker
 - [SMS Implementation](./SMS_IMPLEMENTATION.md)
 - [Troubleshooting](./TROUBLESHOOTING.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 
 ---
 
 **Ultimo aggiornamento**: 26 Giugno 2025  
 **Status**: Aggiornato per errore critico MissingMailTemplate  
 **Priorità**: URGENT - Fix sistema registrazione
+<<<<<<< HEAD
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)

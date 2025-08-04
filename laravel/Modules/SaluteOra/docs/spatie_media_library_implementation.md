@@ -3,14 +3,20 @@
 This document outlines the implementation details and best practices for using Spatie Media Library in the SaluteOra module.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 ## 🚨 Critical Error Alert
 
 **See**: [Array to String Conversion Error](./errori/array-to-string-conversion-patient-registration.md)
 
 Il sistema di registrazione pazienti ha un errore critico dovuto a conflitto architetturale tra gestione attachments tramite colonne database vs Spatie Media Library.
 
+<<<<<<< HEAD
 =======
 >>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 ## Overview
 
 We've integrated Spatie Media Library for handling file uploads in the Patient module, specifically for:
@@ -21,6 +27,9 @@ We've integrated Spatie Media Library for handling file uploads in the Patient m
 - Pregnancy Certificate (Certificato di Gravidanza)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 ## ⚠️ Known Issues
 
 ### Registration Action Conflict
@@ -33,8 +42,11 @@ We've integrated Spatie Media Library for handling file uploads in the Patient m
 
 **Solution**: See [detailed error documentation](./errori/array-to-string-conversion-patient-registration.md#soluzioni-documentate)
 
+<<<<<<< HEAD
 =======
 >>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 ## Implementation Details
 
 ### Patient Model
@@ -42,6 +54,9 @@ We've integrated Spatie Media Library for handling file uploads in the Patient m
 The Patient model has been updated to use the `HasMedia` trait and defines media collections for each document type.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 **Important**: The `$fillable` property currently includes attachment fields that should be removed once the error is fixed.
 
 ```php
@@ -70,6 +85,7 @@ protected $fillable = [
 ];
 ```
 
+<<<<<<< HEAD
 ### Collections
 
 | Document Type | Collection Name | Required | File Types | Max Size | Status |
@@ -88,6 +104,16 @@ protected $fillable = [
 | ISEE Certificate | `certificazione_isee` | No | PDF, Images | 5MB |
 | Pregnancy Certificate | `certificato_gravidanza` | No | PDF, Images | 5MB |
 >>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
+=======
+### Collections
+
+| Document Type | Collection Name | Required | File Types | Max Size | Status |
+|--------------|----------------|----------|------------|----------|---------|
+| Health Card | `health_card` | Yes | PDF, Images | 5MB | ⚠️ Conflicted |
+| Identity Document | `identity_document` | Yes | PDF, Images | 5MB | ⚠️ Conflicted |
+| ISEE Certificate | `isee_certificate` | No | PDF, Images | 5MB | ⚠️ Conflicted |
+| Pregnancy Certificate | `pregnancy_certificate` | No | PDF, Images | 5MB | ⚠️ Conflicted |
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 
 ### Configuration
 
@@ -105,10 +131,14 @@ Example of document upload field implementation:
 ```php
 Forms\Components\SpatieMediaLibraryFileUpload::make('health_card')
 <<<<<<< HEAD
+<<<<<<< HEAD
     ->collection('health_card')  // Use attachment name as collection
 =======
     ->collection('tessera_sanitaria')
 >>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
+=======
+    ->collection('health_card')  // Use attachment name as collection
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     ->downloadable()
     ->openable()
     ->preserveFilenames()
@@ -119,6 +149,9 @@ Forms\Components\SpatieMediaLibraryFileUpload::make('health_card')
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 ## ⚠️ Migration Conflict
 
 The current migration creates database columns for attachments:
@@ -134,8 +167,11 @@ foreach(Patient::$attachments as $attachment){
 
 **This should be removed** once the Media Library implementation is complete.
 
+<<<<<<< HEAD
 =======
 >>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 ## Best Practices
 
 1. **Collections**: Always use descriptive collection names in snake_case
@@ -143,6 +179,9 @@ foreach(Patient::$attachments as $attachment){
 3. **Security**: Store sensitive documents in the private disk
 4. **Performance**: Implement proper disk configuration for production
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 5. **Architecture**: 🚨 **NEVER mix database columns with Media Library for the same data**
 
 ## Action Integration
@@ -181,16 +220,22 @@ public function execute(array $data): Patient
 ## Related Documents
 
 - 🚨 [Critical Error: Array to String Conversion](./errori/array-to-string-conversion-patient-registration.md)
+<<<<<<< HEAD
 =======
 
 ## Related Documents
 
 >>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 - [Spatie Media Library Documentation](https://spatie.be/docs/laravel-medialibrary)
 - [Filament Spatie Media Library Plugin](https://filamentphp.com/plugins/filament-spatie-media-library)
 - [File Upload Security Guidelines](/docs/security/file-uploads.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 ## Roadmap
 
 ### Phase 1: Critical Fix (URGENT)
@@ -212,8 +257,11 @@ public function execute(array $data): Patient
 ## Changelog
 
 - **2025-06-26**: 🚨 **CRITICAL ERROR IDENTIFIED** - Array to string conversion in patient registration
+<<<<<<< HEAD
 =======
 ## Changelog
 
 >>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 - **2025-06-06**: Initial implementation of document uploads in Patient module

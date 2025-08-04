@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -15,6 +16,8 @@ return [
     ],
 ];
 =======
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 return array (
   'fields' => 
   array (
@@ -27,4 +30,7 @@ return array (
     ),
   ),
 );
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)

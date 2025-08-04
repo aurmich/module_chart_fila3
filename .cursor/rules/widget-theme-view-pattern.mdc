@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 description: 
 globs: 
 alwaysApply: false
@@ -224,3 +225,9 @@ Questo pattern può essere riutilizzato per:
 - Appointment management widgets
 - Complex form wizards
 - Dashboard widgets con UI custom
+=======
+description:
+globs:
+alwaysApply: false
+---
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)

@@ -1,10 +1,16 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array (
   'navigation' => 
   array (
 <<<<<<< HEAD
+=======
+return array (
+  'navigation' => 
+  array (
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     'label' => 'Utenti',
     'group' => 'Gestione Utenti',
     'icon' => 'heroicon-o-user',
@@ -48,13 +54,19 @@ return array (
     'id' => 
     array (
       'label' => 'ID',
+<<<<<<< HEAD
       'placeholder' => 'ID generato automaticamente',
       'help' => 'Identificativo univoco dell\'utente',
+=======
+      'placeholder' => '',
+      'helper_text' => '',
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     ),
     'name' => 
     array (
       'label' => 'Nome',
       'placeholder' => 'Mario Rossi',
+<<<<<<< HEAD
       'help' => 'Nome completo dell\'utente',
     ),
     'first_name' => 
@@ -68,17 +80,25 @@ return array (
       'label' => 'Cognome',
       'placeholder' => 'Rossi',
       'help' => 'Cognome dell\'utente',
+=======
+      'helper_text' => 'Nome completo dell\'utente',
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     ),
     'email' => 
     array (
       'label' => 'Email',
       'placeholder' => 'utente@email.com',
+<<<<<<< HEAD
       'help' => 'Indirizzo email per l\'accesso',
+=======
+      'helper_text' => 'Indirizzo email per l\'accesso',
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     ),
     'role' => 
     array (
       'label' => 'Ruolo',
       'placeholder' => 'Seleziona il ruolo',
+<<<<<<< HEAD
       'help' => 'Ruolo assegnato all\'utente',
     ),
     'type' => 
@@ -86,24 +106,42 @@ return array (
       'label' => 'Tipo',
       'placeholder' => 'Seleziona il tipo',
       'help' => 'Tipologia di utente nel sistema',
+=======
+      'helper_text' => 'Ruolo assegnato all\'utente',
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     ),
     'active' => 
     array (
       'label' => 'Attivo',
+<<<<<<< HEAD
       'placeholder' => 'Stato di attivazione',
       'help' => 'L\'utente è attivo e può accedere',
+=======
+      'placeholder' => '',
+      'helper_text' => 'L\'utente è attivo e può accedere',
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     ),
     'created_at' => 
     array (
       'label' => 'Data Creazione',
+<<<<<<< HEAD
       'placeholder' => 'Data di registrazione',
       'help' => 'Data di registrazione dell\'utente',
+=======
+      'placeholder' => '',
+      'helper_text' => 'Data di registrazione dell\'utente',
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     ),
     'updated_at' => 
     array (
       'label' => 'Ultima Modifica',
+<<<<<<< HEAD
       'placeholder' => 'Data ultima modifica',
       'help' => 'Data ultima modifica profilo',
+=======
+      'placeholder' => '',
+      'helper_text' => 'Data ultima modifica profilo',
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     ),
     'toggleColumns' => 
     array (
@@ -112,6 +150,7 @@ return array (
   ),
   'actions' => 
   array (
+<<<<<<< HEAD
     'create' => 
     array (
       'label' => 'Crea Utente',
@@ -145,18 +184,31 @@ return array (
       'confirmation' => 'Sei sicuro di voler attivare questo utente?',
       'success' => 'Utente attivato con successo',
       'error' => 'Errore durante l\'attivazione dell\'utente',
+=======
+    'activate' => 
+    array (
+      'label' => 'Attiva',
+      'icon' => 'heroicon-o-check-circle',
+      'tooltip' => 'Rendi l\'utente attivo',
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     ),
     'deactivate' => 
     array (
       'label' => 'Disattiva',
+<<<<<<< HEAD
       'tooltip' => 'Disattiva temporaneamente l\'utente',
       'confirmation' => 'Sei sicuro di voler disattivare questo utente?',
       'success' => 'Utente disattivato con successo',
       'error' => 'Errore durante la disattivazione dell\'utente',
+=======
+      'icon' => 'heroicon-o-x-circle',
+      'tooltip' => 'Disattiva temporaneamente l\'utente',
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     ),
     'reset_password' => 
     array (
       'label' => 'Reset Password',
+<<<<<<< HEAD
       'tooltip' => 'Invia una nuova password all\'utente',
       'modal_heading' => 'Reset Password',
       'modal_description' => 'Verrà generata una nuova password temporanea e inviata via email',
@@ -188,6 +240,10 @@ return array (
     array (
       'label' => 'Riordina Record',
       'tooltip' => 'Riordina i record della tabella',
+=======
+      'icon' => 'heroicon-o-key',
+      'tooltip' => 'Invia una nuova password all\'utente',
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     ),
   ),
   'filters' => 
@@ -195,12 +251,16 @@ return array (
     'active' => 
     array (
       'label' => 'Solo Attivi',
+<<<<<<< HEAD
       'placeholder' => 'Filtra per utenti attivi',
       'help' => 'Mostra solo gli utenti attualmente attivi',
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     ),
     'role' => 
     array (
       'label' => 'Per Ruolo',
+<<<<<<< HEAD
       'placeholder' => 'Seleziona ruolo',
       'help' => 'Filtra per ruolo specifico',
     ),
@@ -215,6 +275,8 @@ return array (
       'label' => 'Data Registrazione',
       'placeholder' => 'Seleziona periodo',
       'help' => 'Filtra per periodo di registrazione',
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     ),
   ),
   'bulk_actions' => 
@@ -222,22 +284,31 @@ return array (
     'activate_selected' => 
     array (
       'label' => 'Attiva Selezionati',
+<<<<<<< HEAD
       'tooltip' => 'Attiva tutti gli utenti selezionati',
       'confirmation' => 'Sei sicuro di voler attivare tutti gli utenti selezionati?',
       'success' => 'Utenti attivati con successo',
       'error' => 'Errore durante l\'attivazione degli utenti',
+=======
+      'icon' => 'heroicon-o-check-circle',
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     ),
     'deactivate_selected' => 
     array (
       'label' => 'Disattiva Selezionati',
+<<<<<<< HEAD
       'tooltip' => 'Disattiva tutti gli utenti selezionati',
       'confirmation' => 'Sei sicuro di voler disattivare tutti gli utenti selezionati?',
       'success' => 'Utenti disattivati con successo',
       'error' => 'Errore durante la disattivazione degli utenti',
+=======
+      'icon' => 'heroicon-o-x-circle',
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     ),
     'reset_password_selected' => 
     array (
       'label' => 'Reset Password Selezionati',
+<<<<<<< HEAD
       'tooltip' => 'Reimposta password per tutti gli utenti selezionati',
       'modal_heading' => 'Reset Password Multiplo',
       'modal_description' => 'Verranno generate nuove password temporanee per tutti gli utenti selezionati',
@@ -252,6 +323,9 @@ return array (
       'confirmation' => 'Sei sicuro di voler eliminare tutti gli utenti selezionati? Questa azione non può essere annullata.',
       'success' => 'Utenti eliminati con successo',
       'error' => 'Errore durante l\'eliminazione degli utenti',
+=======
+      'icon' => 'heroicon-o-key',
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     ),
   ),
   'messages' => 
@@ -259,6 +333,7 @@ return array (
     'activated_successfully' => 'Utente attivato con successo',
     'deactivated_successfully' => 'Utente disattivato con successo',
     'password_reset_successfully' => 'Password reimpostata con successo',
+<<<<<<< HEAD
     'email_sent' => 'Email di notifica inviata',
     'empty_state' => 'Nessun utente trovato',
     'loading' => 'Caricamento utenti in corso...',
@@ -459,3 +534,8 @@ return [
     'search_placeholder' => 'Cerca per nome, email o ruolo...'
 ];
 >>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
+=======
+  ),
+  'search_placeholder' => 'Cerca per nome, email o ruolo...',
+);
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)

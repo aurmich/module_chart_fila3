@@ -39,6 +39,7 @@ use Spatie\Activitylog\Traits\LogsActivity;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Builder;
 
 /**
 <<<<<<< HEAD
@@ -540,6 +541,9 @@ class Studio extends BaseTenant
         return is_array($this->services) ? implode(', ', $this->services) : (string) $this->services;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 
 
     public function scopeOfCap(Builder $query,string|int|null $cap): void
@@ -548,6 +552,7 @@ class Studio extends BaseTenant
             $q->where('postal_code', $cap);
         });
     }
+<<<<<<< HEAD
 
     public function getEnabledDatesByMonth(string $month): array
     {
@@ -619,4 +624,6 @@ class Studio extends BaseTenant
 >>>>>>> 2099645a (.)
 =======
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 }

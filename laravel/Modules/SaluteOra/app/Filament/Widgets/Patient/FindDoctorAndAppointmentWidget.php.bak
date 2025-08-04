@@ -6,6 +6,9 @@ namespace Modules\SaluteOra\Filament\Widgets\Patient;
 
 use Exception;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 use Filament\Forms;
 use Filament\Forms\Get;
 use Filament\Forms\Set;
@@ -52,6 +55,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
         'appointment_time' => null,
         'notes' => null,
     ];
+<<<<<<< HEAD
 =======
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Fieldset;
@@ -156,20 +160,29 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget implements HasForms
             ->statePath('data');
     }
 >>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 
     /**
      * Get the form schema for the widget.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, \Filament\Forms\Components\Wizard>
 =======
      * @return array<string, \Filament\Forms\Components\Component>
 >>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
+=======
+     * @return array<string, \Filament\Forms\Components\Wizard>
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
      */
     public function getFormSchema(): array
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
             'wizard' => Wizard::make([
                 $this->getStepByName('seach_step')
                     ->icon('heroicon-o-magnifying-glass'),
@@ -497,6 +510,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget implements HasForms
         ];
     }
 
+<<<<<<< HEAD
 =======
             Wizard::make([
                 ...$this->getSearchStep(),
@@ -614,6 +628,8 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget implements HasForms
         $this->isLoading = false;
     }
 >>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 
     /**
      * Handle form submission.
@@ -622,6 +638,9 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget implements HasForms
     {
         try {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
             // Validate CSRF token
             if (!request()->hasValidSignature()) {
                 throw new \Exception('Invalid request signature');
@@ -654,6 +673,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget implements HasForms
                 ->danger()
                 ->title(trans('saluteora::notifications.booking_error'))
                 ->body($e->getMessage())
+<<<<<<< HEAD
 =======
             $data = $this->form->getState();
             $appointment = $this->createAppointment($data);
@@ -675,11 +695,16 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget implements HasForms
                 ->body($e->getMessage())
                 ->danger()
 >>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
                 ->send();
         }
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     /**
      * Get the CSRF token for the current request.
      *
@@ -688,6 +713,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget implements HasForms
     public function getCsrfToken(): string
     {
         return Session::token();
+<<<<<<< HEAD
 =======
     protected function createAppointment(array $data): array
     {
@@ -710,5 +736,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget implements HasForms
         // TODO: Implement confirmation content
         return '';
 >>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     }
 }

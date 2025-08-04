@@ -85,10 +85,13 @@ Il tema One permette di personalizzare:
 - **Componenti**: Override di componenti Filament specifici
 - **Layout**: Struttura container e sezioni
 
+<<<<<<< HEAD
 =======
 The `FindDoctorAndAppointmentWidget` provides a multi-step wizard interface for patients to find available dentists and book appointments, following Clean Code, DRY, and KISS principles.
 
 >>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 ## Architecture Principles
 
 1. **Clean Code**

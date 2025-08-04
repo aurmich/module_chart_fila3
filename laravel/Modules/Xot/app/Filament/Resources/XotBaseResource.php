@@ -54,14 +54,15 @@ use function Safe\glob;
 use Filament\Forms;
 use function Safe\glob;
 use Filament\Forms\Form;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
+use Illuminate\Contracts\View\View;
 use Filament\Pages\SubNavigationPosition;
+
 use Illuminate\Contracts\Support\Renderable;
 use Modules\Xot\Actions\ModelClass\CountAction;
-
 use Filament\Resources\Resource as FilamentResource;
-use Illuminate\Contracts\View\View;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 
@@ -394,7 +395,7 @@ abstract class XotBaseResource extends FilamentResource
 =======
     }
 
-    public static function getAttachmentsSchema(): array{
+    public static function getAttachmentsSchema(bool $multiple=true): array{
         $model = static::getModel();
         $attachments = $model::$attachments;
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
@@ -412,19 +413,27 @@ abstract class XotBaseResource extends FilamentResource
                 ->required()
                 ->reorderable()
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ->multiple($multiple)
 =======
                 ->multiple()
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+                ->multiple($multiple)
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
                 ->preserveFilenames()
                 ->columnSpanFull()
                 ->afterStateUpdated(function ($state, Forms\Set $set) use ($attachment) {
                     if (!$state) return;
 <<<<<<< HEAD
+<<<<<<< HEAD
                     $state=Arr::wrap($state);
 =======
                     
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+                    $state=Arr::wrap($state);
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
                     $sessionId = session()->getId();
                     $sessionDir = "session-uploads/{$sessionId}";
                     $sessionFiles = [];
@@ -448,8 +457,12 @@ abstract class XotBaseResource extends FilamentResource
         return $schema;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 >>>>>>> aurmich/dev
+=======
+
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     protected static function getStepByName(string $name): Forms\Components\Wizard\Step
     {
         $schema=Str::of($name)->snake()->studly()->prepend('get')->append('Schema')->toString();
@@ -457,8 +470,11 @@ abstract class XotBaseResource extends FilamentResource
         return Forms\Components\Wizard\Step::make($name)
             ->schema(static::$schema());
     }
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 }

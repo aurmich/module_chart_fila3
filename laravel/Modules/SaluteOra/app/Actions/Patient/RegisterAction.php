@@ -56,6 +56,7 @@ class RegisterAction
     {
         
         
+<<<<<<< HEAD
         
             // Creazione del paziente usando STI
             if(isset($data['studio'])){
@@ -129,20 +130,24 @@ class RegisterAction
     public function execute(UserContract $record,array $data): Patient
 >>>>>>> 86a4d226 (✨ (patient.php): add new localization keys for reorderRecords, resetFilters, and openFilters to enhance user interface)
     {
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
         return DB::transaction(function () use ($data) {
-
             // Creazione del paziente usando STI
+            if(isset($data['studio'])){
+                unset($data['studio']);
+            }
             $patient = Patient::create($data);
 
             //-------------------------------------------------
-
+             //*
             $attachments = Patient::$attachments;
             foreach ($attachments as $attachment) {
                     $patient->addMediaFromDisk($data[$attachment],'local')
                         ->toMediaCollection($attachment);
 
             }
-
+            //*/
             //-------------------------------------------------
 
             // Gestione delle preferenze
@@ -162,11 +167,15 @@ class RegisterAction
                 ]);
             }
 
-            $mail_slug=Str::slug($data['type'].'-'.$data['state']);
-
+            $mail_slug=Str::of($data['type'])->append('-')->append($data['state'])->slug()->toString();
+           //$mail_slug=Str::of($patient->type->value)->append('-')->append($patient->state::$name)->slug()->toString();
+            
+            
+            
+            $notify=new RecordNotification($patient,$mail_slug);
             Notification::route('mail', $data['email'])
             //->locale('it')
-            ->notify(new RecordNotification($patient,$mail_slug));
+            ->notify($notify);
 
             return $patient;
         });

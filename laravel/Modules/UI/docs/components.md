@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Componenti Form Avanzati
 
 <<<<<<< HEAD
@@ -63,6 +64,10 @@ InlineDatePicker::make('date')
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+## Componenti Form Avanzati
+
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 ### StudioCardSelector
 
 Componente Filament Form per la selezione di studi medici attraverso interfaccia card visuale.
@@ -107,6 +112,7 @@ StudioCardSelector::make('studio')
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
 ### RadioCollection
@@ -146,6 +152,8 @@ RadioCollection::make('selection')
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 ### LocationSelector
 
 Componente per la selezione gerarchica di dati geografici (Regione → Provincia → CAP).
@@ -215,6 +223,7 @@ Componente avanzato per la visualizzazione dettagliata di uno studio (per liste,
 - Azioni personalizzabili
 - Orari di apertura
 
+<<<<<<< HEAD
 =======
 ## Indice
 
@@ -1368,6 +1377,8 @@ Non è necessario:
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 =======
 >>>>>>> bead9c28 (fix case)
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 ## Componenti SVG
 
 ### Bandiere (Flags)

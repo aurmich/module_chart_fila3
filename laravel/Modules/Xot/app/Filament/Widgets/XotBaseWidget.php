@@ -145,6 +145,7 @@ use Filament\Actions\Action;
 =======
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 use Filament\Forms;
+use Illuminate\Support\Str;
 use Filament\Actions\Action;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Log;
@@ -389,7 +390,6 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
                 
                 //dddx($model->getArrayableRelations());
                 $res= $model->toArray();
-                
                 return $res;
                 //dddx($model->with('studio')->relationsToArray());
                 
@@ -410,9 +410,13 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
         // Se è un nuovo modello, restituisci solo i campi fillable con valori null
         $fillable = $model->getFillable();
         $appends = $model->getAppends();
+        $attributes=$model->attributesToArray();
         $fields = array_merge($fillable, $appends);
         
-        return array_fill_keys($fields, null);
+        $fields= array_fill_keys($fields, null);
+        $fields=array_merge($fields,$attributes);
+        
+        return $fields;
     }
 
     /**
@@ -471,6 +475,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
 >>>>>>> d23ba493 (add calendar)
     }
 
+<<<<<<< HEAD
     public function getFormFill(): array
     {
         $model = $this->getFormModel();
@@ -649,6 +654,8 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
 >>>>>>> aurmich/dev
     }
 
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     protected function getStepByName(string $name): Forms\Components\Wizard\Step
     {
         $schema=Str::of($name)->snake()->studly()->prepend('get')->append('Schema')->toString();
@@ -656,6 +663,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
         return Forms\Components\Wizard\Step::make($name)
             ->schema($this->$schema());
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -710,4 +718,6 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
 >>>>>>> 15cb84fb (fix collisions)
     }
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 }

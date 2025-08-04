@@ -526,7 +526,7 @@ class User extends BaseUser implements HasMedia
 >>>>>>> 2f169a46 (- create progetto page)
     ];
 
-
+    
 
 <<<<<<< HEAD
     /**
@@ -605,6 +605,8 @@ class User extends BaseUser implements HasMedia
             'certifications' => 'array',
             'moderation_data' => 'array',
         ]);
+
+        
     }
 
     /**

@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # Regola Windsurf - RadioCardSelector Pattern
 
 ## Ambito
@@ -186,3 +187,5 @@ RadioCardSelector::make('property_id')
 
 ## Ultimo aggiornamento
 Gennaio 2025 - Pattern consolidato e production-ready
+=======
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)

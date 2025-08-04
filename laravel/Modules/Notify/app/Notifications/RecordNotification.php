@@ -3,9 +3,13 @@
 namespace Modules\Notify\Notifications;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+use Illuminate\Support\Str;
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 use Modules\Notify\Datas\SmsData;
 use Modules\Notify\Emails\SpatieEmail;
 use Illuminate\Database\Eloquent\Model;
@@ -37,6 +41,7 @@ class RecordNotification extends Notification
     public function __construct(Model $record, string $slug)
     {
         $this->record = $record;
+<<<<<<< HEAD
 <<<<<<< HEAD
         $this->slug = Str::slug($slug);
         
@@ -86,6 +91,10 @@ class RecordNotification extends Notification
         
 =======
         $this->slug = $slug;
+=======
+        $this->slug = Str::slug($slug);
+        
+>>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 
     }
 
