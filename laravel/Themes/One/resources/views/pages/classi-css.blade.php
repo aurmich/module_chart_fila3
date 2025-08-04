@@ -224,6 +224,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
 <div class="m-auto">mx auto</div>
@@ -440,3 +441,7 @@
 =======
 </x-layouts.app>
 >>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
+=======
+<div class="m-auto">mx 60</div>
+</x-layouts.app>
+>>>>>>> 3ad9917a (- fix styles registration)

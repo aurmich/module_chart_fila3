@@ -329,12 +329,16 @@ return array (
     ),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
+=======
+>>>>>>> 3ad9917a (- fix styles registration)
     'reorderRecords' => 
     array (
       'label' => 'reorderRecords',
     ),
+<<<<<<< HEAD
 >>>>>>> 3ad9917a (- fix styles registration)
 =======
   'navigation' => 
@@ -351,5 +355,7 @@ return array (
 >>>>>>> 86036e79 (✨ (CreateAdmin, EditAdmin, ListAdmins, CreateDoctor, EditDoctor, ListDoctors, CreatePatient, EditPatient, ListPatients): refactor admin, doctor, and patient resources to extend user resource classes for better code reuse and maintainability)
 =======
 >>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
+=======
+>>>>>>> 3ad9917a (- fix styles registration)
   ),
 );

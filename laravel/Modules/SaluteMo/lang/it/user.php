@@ -249,6 +249,10 @@ return array (
     array (
       'label' => 'last_name',
     ),
+    'first_name' => 
+    array (
+      'label' => 'first_name',
+    ),
   ),
   'actions' => 
   array (

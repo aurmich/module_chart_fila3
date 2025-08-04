@@ -68,12 +68,16 @@ return array (
       'helper_text' => 'Nome completo e identificativo dello studio medico',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'name',
 =======
 >>>>>>> 0acdadac (🌐 (studio.php): update Italian localization file to improve structure and readability)
 =======
       'description' => 'name',
 >>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
+=======
+      'description' => 'name',
+>>>>>>> 3ad9917a (- fix styles registration)
     ),
     'address' => 
     array (
@@ -88,12 +92,16 @@ return array (
       'helper_text' => 'Numero di telefono principale per contatti',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'phone',
 =======
 >>>>>>> 0acdadac (🌐 (studio.php): update Italian localization file to improve structure and readability)
 =======
       'description' => 'phone',
 >>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
+=======
+      'description' => 'phone',
+>>>>>>> 3ad9917a (- fix styles registration)
     ),
     'email' => 
     array (
@@ -102,12 +110,16 @@ return array (
       'helper_text' => 'Indirizzo email per comunicazioni ufficiali',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'email',
 =======
 >>>>>>> 0acdadac (🌐 (studio.php): update Italian localization file to improve structure and readability)
 =======
       'description' => 'email',
 >>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
+=======
+      'description' => 'email',
+>>>>>>> 3ad9917a (- fix styles registration)
     ),
     'website' => 
     array (
@@ -116,12 +128,16 @@ return array (
       'helper_text' => 'URL del sito web ufficiale dello studio',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'website',
 =======
 >>>>>>> 0acdadac (🌐 (studio.php): update Italian localization file to improve structure and readability)
 =======
       'description' => 'website',
 >>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
+=======
+      'description' => 'website',
+>>>>>>> 3ad9917a (- fix styles registration)
     ),
     'registration_number' => 
     array (
@@ -130,12 +146,16 @@ return array (
       'helper_text' => 'Numero di registrazione presso l\'Ordine dei Medici',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'registration_number',
 =======
 >>>>>>> 0acdadac (🌐 (studio.php): update Italian localization file to improve structure and readability)
 =======
       'description' => 'registration_number',
 >>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
+=======
+      'description' => 'registration_number',
+>>>>>>> 3ad9917a (- fix styles registration)
     ),
     'vat_number' => 
     array (
@@ -144,12 +164,16 @@ return array (
       'helper_text' => 'Partita IVA dello studio medico',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'vat_number',
 =======
 >>>>>>> 0acdadac (🌐 (studio.php): update Italian localization file to improve structure and readability)
 =======
       'description' => 'vat_number',
 >>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
+=======
+      'description' => 'vat_number',
+>>>>>>> 3ad9917a (- fix styles registration)
     ),
     'opening_hours' => 
     array (
@@ -229,14 +253,20 @@ return array (
       'label' => 'reorderRecords',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3ad9917a (- fix styles registration)
     'resetFilters' => 
     array (
       'label' => 'resetFilters',
     ),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
+=======
+>>>>>>> 3ad9917a (- fix styles registration)
     'applyFilters' => 
     array (
       'label' => 'applyFilters',
@@ -245,6 +275,7 @@ return array (
     array (
       'label' => 'openFilters',
     ),
+<<<<<<< HEAD
 <<<<<<< HEAD
     'delete' => 
     array (
@@ -295,6 +326,8 @@ return array (
 >>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
 =======
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+>>>>>>> 3ad9917a (- fix styles registration)
   ),
   'actions' => 
   array (

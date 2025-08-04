@@ -64,6 +64,7 @@ new class extends Component
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div >
         
         
@@ -115,6 +116,9 @@ new class extends Component
 =======
     <div class="min-h-screen bg-white pb-5">
 >>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
+=======
+    <div class="min-h-screen bg-[#E6EBF7] pb-5">
+>>>>>>> 3ad9917a (- fix styles registration)
         <!-- Logo e intestazione -->
         <div class="text-center mb-8">
             <div class="flex justify-center mb-4">
