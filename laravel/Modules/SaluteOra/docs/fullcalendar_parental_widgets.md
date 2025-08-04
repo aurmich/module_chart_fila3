@@ -1204,6 +1204,9 @@ Il sistema garantisce che ogni tipo di utente veda solo i dati appropriati, mant
 - Il sistema può essere facilmente esteso per gestire regole di business più complesse (es. limiti di prenotazione, fasce prioritarie, promemoria, ecc.)
 - FullCalendar consente di integrare facilmente logiche di validazione, feedback visivo e notifiche in tempo reale.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
 
 ## [AGGIORNAMENTO 2024-06-XX] - Disponibilità solo su appointments
 
@@ -1257,8 +1260,11 @@ protected function getHeaderWidgets(): array {
 
 - Usare FullCalendarWidget::make()->options([...]) // ❌ ERRORE
 - Usare metodi fluenti su FullCalendarWidget // ❌ ERRORE
+<<<<<<< HEAD
 =======
 Il sistema garantisce che ogni tipo di utente veda solo i dati appropriati, mantenendo la sicurezza e la privacy richieste in ambito sanitario. 
 >>>>>>> 2099645a (.)
 =======
 >>>>>>> ca5e1eaf (.)
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)

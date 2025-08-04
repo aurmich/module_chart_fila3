@@ -766,6 +766,9 @@ Questa guida fornisce tutti gli elementi necessari per implementare un sistema c
 
 Il sistema garantisce che ogni tipo di utente veda solo i dati appropriati, mantenendo la sicurezza e la privacy richieste in ambito sanitario. 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
 
 ## Policy di implementazione widget FullCalendar (2024)
 
@@ -794,5 +797,8 @@ protected function getHeaderWidgets(): array {
 
 - Usare FullCalendarWidget::make()->options([...]) // ❌ ERRORE
 - Usare metodi fluenti su FullCalendarWidget // ❌ ERRORE
+<<<<<<< HEAD
 =======
 >>>>>>> 2099645a (.)
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)

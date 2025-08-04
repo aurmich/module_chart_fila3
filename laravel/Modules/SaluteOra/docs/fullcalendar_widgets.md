@@ -774,8 +774,11 @@ I widget FullCalendar per SaluteOra forniscono una base solida per la gestione d
 > **Nota di prevenzione:**
 > L'enum AppointmentType deve essere sempre posizionato in `Modules/SaluteOra/app/Enums/AppointmentType.php` e importato con il namespace corretto. Aggiornare sempre la documentazione e i file .mdc windsurf/cursor in caso di modifica del path.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 > **ATTENZIONE:** Tutti i riferimenti a start_time/end_time vanno sostituiti con starts_at/ends_at. Vedi appointment_resource_corrections.md e plan.md per il piano di refactoring.
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
 
 ## [AGGIORNAMENTO 2024-06-XX] - Disponibilità solo su appointments
 
@@ -801,6 +804,7 @@ I widget FullCalendar per SaluteOra forniscono una base solida per la gestione d
 - [appointment-management.md](appointment-management.md)
 - [calendar/doctor-availability-management.md](calendar/doctor-availability-management.md)
 - [fullcalendar_parental_widgets.md](fullcalendar_parental_widgets.md)
+<<<<<<< HEAD
 
 ## Collegamenti
 
@@ -814,3 +818,5 @@ I widget FullCalendar per SaluteOra forniscono una base solida per la gestione d
 >>>>>>> 2099645a (.)
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)

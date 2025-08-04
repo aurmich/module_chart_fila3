@@ -38,9 +38,13 @@ enum AppointmentTypeEnum: string
     case CONSULTATION = 'consultation';
     case TREATMENT = 'treatment';
 <<<<<<< HEAD
+<<<<<<< HEAD
     case AVAILABILITY = 'availability';
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+    case AVAILABILITY = 'availability';
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
 
     public function getLabel(): string
     {
@@ -49,9 +53,13 @@ enum AppointmentTypeEnum: string
             self::CONSULTATION => 'Consulenza',
             self::TREATMENT => 'Trattamento',
 <<<<<<< HEAD
+<<<<<<< HEAD
             self::AVAILABILITY => 'Disponibilità',
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+            self::AVAILABILITY => 'Disponibilità',
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
         };
     }
 }
@@ -63,9 +71,13 @@ enum AppointmentStatusEnum: string
     case CANCELLED = 'cancelled';
     case COMPLETED = 'completed';
 <<<<<<< HEAD
+<<<<<<< HEAD
     case AVAILABLE = 'available';
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+    case AVAILABLE = 'available';
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
 
     public function getColor(): string
     {
@@ -75,9 +87,13 @@ enum AppointmentStatusEnum: string
             self::CANCELLED => 'danger',
             self::COMPLETED => 'info',
 <<<<<<< HEAD
+<<<<<<< HEAD
             self::AVAILABLE => 'success',
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+            self::AVAILABLE => 'success',
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
         };
     }
 }
@@ -452,6 +468,9 @@ Per dettagli sulle regole di traduzione, vedi anche:
 - [Lang/translation-standards.md](../../Lang/docs/translation-standards.md)
 - [Lang/translation_keys_best_practices.md](../../Lang/docs/translation_keys_best_practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
 - [SaluteOra/filament-best-practices.mdc](./filament-best-practices.mdc)
 
 ## [AGGIORNAMENTO 2024-06-XX] - Disponibilità solo su appointments
@@ -583,9 +602,12 @@ class DoctorAvailabilityCalendarWidget extends FullCalendarWidget
 - Un solo punto di verità: sintassi e import corretti, configurazione centralizzata
 - DRY, KISS, serenità del codice: niente hack, niente override strani, tutto documentato e coerente
 - Politica: ogni modulo è autonomo, ma rispetta la centralizzazione delle entità e dei componenti
+<<<<<<< HEAD
 =======
 - [Documentazione Filament](https://filamentphp.com/docs) 
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 =======
 - [SaluteOra/filament-best-practices.mdc](./filament-best-practices.mdc) 
 >>>>>>> 2bcfd382 (fix Address)
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)

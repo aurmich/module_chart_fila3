@@ -249,6 +249,9 @@ Per la gestione degli orari di apertura di studi, risorse e servizi, utilizzare 
 - Serializzazione standard e riuso in più moduli
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
 Vedi anche: [form-components/README.md](../form-components/README.md)
 
 ## Policy DRY sulla Disponibilità
@@ -267,9 +270,12 @@ Appointment::where('doctor_id', $doctorId)
 - Un solo punto di verità: nessuna duplicazione, nessun lock-in
 - DRY, KISS, serenità del codice
 - Refactoring sicuro, massima estendibilità
+<<<<<<< HEAD
 =======
 - [Documentazione Filament](https://filamentphp.com/docs) 
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 =======
 Vedi anche: [form-components/README.md](../form-components/README.md) 
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)

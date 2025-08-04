@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -217,3 +218,22 @@ return [
         'no_doctor_selected_description' => 'Seleziona un medico per visualizzare la disponibilità',
     ],
 ];
+=======
+return array (
+  'navigation' => 
+  array (
+    'group' => 'doctor availability calendar.navigation',
+  ),
+  'actions' => 
+  array (
+    'legenda' => 
+    array (
+      'label' => 'legenda',
+    ),
+    'refresh' => 
+    array (
+      'label' => 'refresh',
+    ),
+  ),
+);
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)

@@ -197,6 +197,9 @@ protected function getHeaderWidgets(): array
 - [Patient Calendar Widget](./patient-calendar-widget.md)
 - [Filament Tenancy](https://filamentphp.com/docs/3.x/panels/tenancy)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
 
 ## [AGGIORNAMENTO 2024-06-XX] - Disponibilità solo su appointments
 
@@ -222,5 +225,8 @@ protected function getHeaderWidgets(): array
 - [../../appointment-management.md](../../appointment-management.md)
 - [../../fullcalendar_parental_widgets.md](../../fullcalendar_parental_widgets.md)
 - [../doctor-availability-management.md](../doctor-availability-management.md)
+<<<<<<< HEAD
 =======
 >>>>>>> 2099645a (.)
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)

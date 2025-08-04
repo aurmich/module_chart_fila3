@@ -117,6 +117,9 @@ Questo documento è linkato anche dalla documentazione del modulo Cms per garant
   - [docs SaluteOra](../../SaluteOra/docs/README.md)
   - [docs Xot](../../Xot/docs/README.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
 
 ## Policy DRY sulle Traduzioni di Disponibilità/Appuntamenti
 
@@ -126,7 +129,10 @@ Tutte le label, placeholder, messaggi e azioni relativi a disponibilità e appun
 - Un solo punto di verità: nessuna duplicazione, nessun lock-in
 - DRY, KISS, serenità del codice
 - Refactoring sicuro, massima estendibilità
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)

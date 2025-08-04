@@ -1,52 +1,12 @@
-<<<<<<< HEAD
-# ATTENZIONE: DOCUMENTAZIONE ACCORPATA
-
-La documentazione completa su FullCalendar e i widget multi-tenant è ora in:
-
-- [fullcalendar_widgets.md](./fullcalendar_widgets.md)
-- [filament_widget_regole.md](../../../Xot/docs/filament_widget_regole.md)
-- [docs/fullcalendar_widgets_and_tenancy.mdc](../../../../docs/fullcalendar_widgets_and_tenancy.mdc)
-
-Consulta questi file per tutte le policy, best practices e implementazioni aggiornate.
-=======
-# Implementazione Corretta di FullCalendarWidget
-
-## Descrizione del Package
-
-`saade/filament-fullcalendar` v3.2.4 è un plugin ufficiale di Filament che integra FullCalendar.js nel pannello di amministrazione. Questo documento descrive l'implementazione corretta secondo le convenzioni del progetto SaluteOra.
-
-## Struttura di Base
-
-La struttura corretta per l'implementazione del widget è:
-
-```
-Modules/
-  SaluteOra/
-    app/
-      Filament/
-        Widgets/
-          DoctorAvailabilityCalendarWidget.php  # Widget dedicato
-        Pages/
-          DoctorAvailabilityCalendar.php        # Pagina che utilizza il widget
-    resources/
-      views/
-        filament/
-          widgets/
-            doctor-availability-calendar-widget.blade.php  # Template Blade
-```
-
-## Implementazione Corretta
-
-L'implementazione corretta richiede di **estendere direttamente la classe `FullCalendarWidget`** e sovrascrivere i metodi necessari:
-
-```php
 <?php
 
 declare(strict_types=1);
 
 namespace Modules\SaluteOra\Filament\Widgets;
 
+use Filament\Facades\Filament;
 use Filament\Notifications\Notification;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Modules\SaluteOra\Enums\AppointmentStatusEnum;
 use Modules\SaluteOra\Enums\AppointmentTypeEnum;
@@ -69,9 +29,6 @@ class DoctorAvailabilityCalendarWidget extends FullCalendarWidget
         parent::__construct();
     }
 
-    /**
-     * Configurazione del calendario
-     */
     public function config(): array
     {
         return [
@@ -159,8 +116,11 @@ class DoctorAvailabilityCalendarWidget extends FullCalendarWidget
     
     /**
      * Gestione creazione evento
+     * 
+     * @param array $data
+     * @return Model
      */
-    protected function createEvent(array $data): Appointment
+    protected function createEvent(array $data): Model
     {
         $event = Appointment::create([
             'doctor_id' => $this->doctor->id,
@@ -183,9 +143,14 @@ class DoctorAvailabilityCalendarWidget extends FullCalendarWidget
     
     /**
      * Gestione aggiornamento evento
+     * 
+     * @param Model $event
+     * @param array $data
+     * @return Model
      */
-    protected function updateEvent(Appointment $event, array $data): Appointment
+    protected function updateEvent(Model $event, array $data): Model
     {
+        /** @var Appointment $event */
         $event->update([
             'start_time' => $data['start'] ?? $event->start_time,
             'end_time' => $data['end'] ?? $event->end_time,
@@ -202,9 +167,13 @@ class DoctorAvailabilityCalendarWidget extends FullCalendarWidget
     
     /**
      * Gestione eliminazione evento
+     * 
+     * @param Model $event
+     * @return void
      */
-    protected function deleteEvent(Appointment $event): void
+    protected function deleteEvent(Model $event): void
     {
+        /** @var Appointment $event */
         $event->delete();
 
         // Notifica
@@ -214,80 +183,3 @@ class DoctorAvailabilityCalendarWidget extends FullCalendarWidget
             ->send();
     }
 }
-```
-
-## Utilizzo nella Pagina Filament
-
-```php
-<?php
-
-declare(strict_types=1);
-
-namespace Modules\SaluteOra\Filament\Pages;
-
-use Filament\Facades\Filament;
-use Modules\SaluteOra\Filament\Widgets\DoctorAvailabilityCalendarWidget;
-use Modules\SaluteOra\Models\User;
-use Modules\Xot\Filament\Pages\XotBasePage;
-
-class DoctorAvailabilityCalendar extends XotBasePage
-{
-    // Altri metodi...
-    
-    protected function calendarWidget(): DoctorAvailabilityCalendarWidget
-    {
-        $doctor = $this->getCurrentDoctor();
-        $studio = Filament::getTenant();
-
-        return new DoctorAvailabilityCalendarWidget($doctor, $studio);
-    }
-
-    protected function getHeaderWidgets(): array
-    {
-        return [
-            $this->calendarWidget(),
-        ];
-    }
-}
-```
-
-## Vista Blade per il Widget
-
-Il template Blade deve essere posizionato in:
-
-```
-Modules/SaluteOra/resources/views/filament/widgets/doctor-availability-calendar-widget.blade.php
-```
-
-Contenuto di base:
-
-```blade
-<x-filament::widget>
-    <x-filament::section>
-        <div
-            wire:ignore
-            x-data="calendarWidget({
-                config: {{ json_encode($this->getConfig()) }},
-                events: {{ json_encode([]) }},
-                locale: @js(app()->getLocale()),
-                timezone: @js(config('app.timezone')),
-            })"
-        >
-            <div x-ref="calendar" wire:ignore></div>
-        </div>
-    </x-filament::section>
-</x-filament::widget>
-```
-
-## Errori da Evitare
-
-1. ❌ **Non utilizzare API fluente**: `FullCalendarWidget::make()->config([])` - NON funziona
-2. ❌ **Non utilizzare classi anonime**: `new class extends FullCalendarWidget` - NON rispetta le convenzioni
-3. ❌ **Non estendere direttamente classi Filament**: Rispettare il pattern XotBase quando necessario
-
-## Riferimenti Ufficiali
-
-- [Documentazione Filament v3](https://filamentphp.com/docs/3.x/widgets/installation)
-- [Package saade/filament-fullcalendar v3.2.4](https://github.com/saade/filament-fullcalendar)
-- [Documentazione plugin](https://filamentphp.com/plugins/saade-fullcalendar)
->>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)

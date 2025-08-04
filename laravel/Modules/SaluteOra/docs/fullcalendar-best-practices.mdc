@@ -189,10 +189,14 @@ function({ event, el }){
 ### 2. Keyboard Navigation
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function options(): array
 =======
 public function config(): array
 >>>>>>> 74316a37 (✨ (docs): add new documentation for FullCalendar widget implementation and best practices to improve clarity and maintainability)
+=======
+public function options(): array
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
 {
     return [
         // ... altre configurazioni

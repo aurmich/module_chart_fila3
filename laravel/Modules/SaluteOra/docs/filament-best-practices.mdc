@@ -248,6 +248,9 @@ class ListUsers extends XotBaseListRecords
 - [ ] Tutte le azioni custom rispettano la signature void
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
 ## [AGGIORNAMENTO 2024-06-XX] - Disponibilità solo su appointments
 - Le disponibilità dei dottori vanno gestite solo tramite la tabella appointments (con patient_id null o type AVAILABILITY).
 - Vietato creare tabelle o modelli separati (es. doctor_availabilities) per le disponibilità.
@@ -255,8 +258,11 @@ class ListUsers extends XotBaseListRecords
 - Motivazione: un solo punto di verità, DRY, KISS, nessun lock-in, serenità del codice, nessuna duplicazione, massima compatibilità con FullCalendar e Filament.
 - Checklist: vedi docs/appointment-management.md, docs/calendar/doctor-availability-management.md, docs/fullcalendar_parental_widgets.md, docs/calendar/widgets/doctor-calendar-widget.md
 
+<<<<<<< HEAD
 =======
 >>>>>>> 2bcfd382 (fix Address)
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
 ---
 **Queste regole sono vincolanti e devono essere applicate in tutti i moduli che utilizzano Filament.**
 =======

@@ -316,6 +316,7 @@ trait HasFullCalendarConfig
      * Configurazione base per tutti i widget FullCalendar
      * 
      * Per la versione 3.2.4 del pacchetto saade/filament-fullcalendar
+<<<<<<< HEAD
      */
     public function options(): array
     {
@@ -1062,8 +1063,10 @@ trait HasFullCalendarConfig
 {
     /**
      * Configurazione base per tutti i widget FullCalendar
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
      */
-    public function config(): array
+    public function options(): array
     {
         return [
             'locale' => 'it',

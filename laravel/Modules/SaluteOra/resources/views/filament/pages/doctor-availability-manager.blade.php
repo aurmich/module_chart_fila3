@@ -53,6 +53,7 @@
                                 <tr>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-200">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         {{  $appointment->patient?->full_name }}
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
@@ -61,6 +62,8 @@
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
                                         {{ $appointment->starts_at->format('H:i') }} - {{ $appointment->ends_at->format('H:i') }}
 =======
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
                                         {{ $appointment->patient->full_name }}
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
@@ -68,7 +71,10 @@
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
                                         {{ $appointment->start_time->format('H:i') }} - {{ $appointment->end_time->format('H:i') }}
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
                                     </td>
                                     <td class="px-6 py-4 text-sm text-gray-500 dark:text-gray-400">
                                         {{ $appointment->title }}

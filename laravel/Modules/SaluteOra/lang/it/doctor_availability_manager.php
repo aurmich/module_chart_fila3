@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -150,3 +151,11 @@ return [
         'list' => 'Lista',
     ],
 ];
+=======
+return array (
+  'navigation' => 
+  array (
+    'group' => 'doctor availability manager.navigation',
+  ),
+);
+>>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
