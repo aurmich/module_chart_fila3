@@ -5,14 +5,6 @@ declare(strict_types=1);
 namespace Modules\Gdpr\Enums;
 
 use Illuminate\Support\Collection;
-<<<<<<< HEAD:laravel/Modules/Gdpr/app/Enums/ConsentType.php
-=======
-<<<<<<< HEAD
-use Modules\Core\Traits\EnumTrait;
-=======
-//use Modules\Core\Traits\EnumTrait;
->>>>>>> e6c7d86 (.)
->>>>>>> a39073f3 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking):laravel/Modules/Gdpr/Enums/ConsentType.php
 
 /**
  * Enum ConsentType
@@ -22,14 +14,7 @@ use Modules\Core\Traits\EnumTrait;
  */
 enum ConsentType: string
 {
-<<<<<<< HEAD:laravel/Modules/Gdpr/app/Enums/ConsentType.php
-=======
-<<<<<<< HEAD
-    use EnumTrait;
-=======
-    //use EnumTrait;
->>>>>>> e6c7d86 (.)
->>>>>>> a39073f3 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking):laravel/Modules/Gdpr/Enums/ConsentType.php
+    // Enum cases follow - no trait needed
 
     // Marketing communications
     case MARKETING_EMAIL = 'marketing_email';
@@ -182,31 +167,19 @@ enum ConsentType: string
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 =======
 <<<<<<< HEAD:laravel/Modules/Gdpr/app/Enums/ConsentType.php
 >>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
+=======
+>>>>>>> 5ae95119 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking to enhance code quality and maintainability across modules.)
     /**
      * Get consent types as a flattened array for forms.
      * 
      * @return array<string, string>
      */
-=======
-<<<<<<< HEAD
-    /**
-     * Get consent types as a flattened array for forms.
-     * 
-     * @return array<string, string>
-     */
-=======
-    /*
-     * Get consent types as a flattened array for forms.
-     * 
-     * @return array<string, string>
-     
->>>>>>> e6c7d86 (.)
->>>>>>> a39073f3 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking):laravel/Modules/Gdpr/Enums/ConsentType.php
     public static function forFormSelect(): array
     {
         $result = [];
@@ -218,6 +191,7 @@ enum ConsentType: string
         return $result;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> fb6fbaa2 (move resources/lang to lang)
 =======
 <<<<<<< HEAD:laravel/Modules/Gdpr/app/Enums/ConsentType.php
@@ -228,4 +202,6 @@ enum ConsentType: string
 >>>>>>> e6c7d86 (.)
 >>>>>>> a39073f3 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking):laravel/Modules/Gdpr/Enums/ConsentType.php
 >>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
+=======
+>>>>>>> 5ae95119 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking to enhance code quality and maintainability across modules.)
 }

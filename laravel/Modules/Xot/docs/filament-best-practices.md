@@ -938,11 +938,14 @@ public static function table(Table $table): Table
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 =======
 >>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
+=======
+>>>>>>> 5ae95119 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking to enhance code quality and maintainability across modules.)
 ## Riferimenti
 
 - [Documentazione Filament](https://filamentphp.com/docs)
@@ -983,16 +986,20 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 =======
 >>>>>>> a39073f3 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking)
 >>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
+=======
+>>>>>>> 5ae95119 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking to enhance code quality and maintainability across modules.)
 ## Collegamenti
 - [Filament Docs](https://filamentphp.com/docs)
 - [Best practices moduli riutilizzabili](../module-documentation-neutrality.md)
 - [Ereditarietà modelli](../model-inheritance-best-practices.md)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1037,12 +1044,13 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 =======
 =======
 >>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
+=======
+>>>>>>> 5ae95119 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking to enhance code quality and maintainability across modules.)
 ## Problema: Form non visualizzato correttamente
 
 **Soluzione:** Assicurarsi di utilizzare `getFormSchema()` invece di `form()` e controllare che tutti i componenti siano configurati correttamente.
 
 ## Problema: Label non tradotte
-=======
 
 =======
 ### Problema: Form non visualizzato correttamente
@@ -1050,7 +1058,6 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 **Soluzione:** Assicurarsi di utilizzare `getFormSchema()` invece di `form()` e controllare che tutti i componenti siano configurati correttamente.
 
 ### Problema: Label non tradotte
->>>>>>> a39073f3 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking)
 
 ### Problema: Form non visualizzato correttamente
 =======
@@ -1081,6 +1088,7 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ## Problema: Relazioni non caricate correttamente
 >>>>>>> aurmich/dev
@@ -1093,11 +1101,15 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 ## Problema: Relazioni non caricate correttamente
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 =======
-## Problema: Relazioni non caricate correttamente
 =======
+>>>>>>> 5ae95119 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking to enhance code quality and maintainability across modules.)
+## Problema: Relazioni non caricate correttamente
 ### Problema: Relazioni non caricate correttamente
+<<<<<<< HEAD
 >>>>>>> a39073f3 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking)
 >>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
+=======
+>>>>>>> 5ae95119 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking to enhance code quality and maintainability across modules.)
 
 **Soluzione:** Verificare che:
 1. I nomi delle relazioni e delle colonne siano corretti
@@ -1150,6 +1162,7 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 - [Documentazione Filament](https://filamentphp.com/docs)
 - [Documentazione XotBaseResource](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/docs/resource.md)
 - [Best Practices Laraxot](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1364,6 +1377,9 @@ Aggiornare sempre la documentazione e le regole di progetto. Applicare la stessa
 >>>>>>> b58de900 (.)
 =======
 =======
+=======
+
+>>>>>>> 5ae95119 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking to enhance code quality and maintainability across modules.)
 
 ## Regole per Widget Filament: Path View e Localizzazione
 

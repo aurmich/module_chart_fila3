@@ -74,6 +74,7 @@ Modules/Notify/
         "filament/filament": "^4.0",             // UI Admin
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
@@ -83,9 +84,9 @@ Modules/Notify/
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 =======
 >>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
-        "filament/filament": "^2.0",             // UI Admin
 =======
->>>>>>> a39073f3 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking)
+>>>>>>> 5ae95119 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking to enhance code quality and maintainability across modules.)
+        "filament/filament": "^2.0",             // UI Admin
         "spatie/laravel-permission": "^5.0",     // Gestione permessi
         "spatie/laravel-backup": "^6.0"          // Backup automatici
     }

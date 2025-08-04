@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f2140a80 (- continuo style landing page;)
 =======
@@ -555,6 +556,8 @@ return array (
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 =======
 >>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
+=======
+>>>>>>> 5ae95119 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking to enhance code quality and maintainability across modules.)
 declare(strict_types=1);
 
 >>>>>>> f3e4ec66 (.)
@@ -967,9 +970,12 @@ return [
 ];
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 =======
 >>>>>>> fb6fbaa2 (move resources/lang to lang)
 =======
 >>>>>>> a0afe1b (.)
 >>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
+=======
+>>>>>>> 5ae95119 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking to enhance code quality and maintainability across modules.)

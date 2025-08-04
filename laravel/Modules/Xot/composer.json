@@ -39,6 +39,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "filament/spatie-laravel-media-library-plugin": "^3.2",
         "filament/spatie-laravel-translatable-plugin": "^3.2",
 <<<<<<< HEAD
@@ -61,9 +62,10 @@
         "filament/spatie-laravel-media-library-plugin": "^3.2",
         "filament/spatie-laravel-translatable-plugin": "^3.2",
 =======
+=======
+>>>>>>> 5ae95119 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking to enhance code quality and maintainability across modules.)
         "filament/spatie-laravel-media-library-plugin": "*",
         "filament/spatie-laravel-translatable-plugin": "*",
->>>>>>> a39073f3 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking)
         "aaronfrancis/fast-paginate":"*",
 >>>>>>> 54f4fa16 (.)
         "guzzlehttp/guzzle": "*",
