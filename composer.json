@@ -1,6 +1,7 @@
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/module_chart_fila3",
     "description": "chart module that manages your data and represents them in graphs",
     "keywords": [
@@ -132,6 +133,38 @@
         "spatie/laravel-queueable-action": "^2.16"
     }
 >>>>>>> 54f4fa16 (.)
+=======
+    "name": "exabyte/base_saluteora",
+    "description": "Progetto SaluteOra basato su framework Laraxot",
+    "type": "project",
+    "config": {
+        "vendor-dir": "laravel/vendor",
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "": "laravel/app/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "cd laravel && composer install --no-dev --optimize-autoloader"
+        ],
+        "post-update-cmd": [
+            "cd laravel && composer update --no-dev --optimize-autoloader"
+        ]
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "laravel"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true
+>>>>>>> 4171c7dc (chore: remove unused DentistData and SearchDentistData classes to clean up the codebase)
 }
 =======
 }
