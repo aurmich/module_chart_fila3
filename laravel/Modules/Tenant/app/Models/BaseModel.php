@@ -7,23 +7,34 @@ namespace Modules\Tenant\Models;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 =======
 use Illuminate\Database\Eloquent\Model;
 >>>>>>> 54f4fa16 (.)
+=======
+use Illuminate\Database\Eloquent\Model as EloquentModel;
+>>>>>>> bf0cd1be (phpstan)
 use Modules\Xot\Traits\Updater;
 
 /**
  * Class BaseModel.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ * 
+>>>>>>> bf0cd1be (phpstan)
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
   */
 abstract class BaseModel extends EloquentModel
+<<<<<<< HEAD
 =======
  */
 abstract class BaseModel extends Model
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> bf0cd1be (phpstan)
 {
     use HasFactory;
     use Updater;

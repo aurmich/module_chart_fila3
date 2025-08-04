@@ -32,6 +32,7 @@ class AddressField extends Forms\Components\Field
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             
             //if ($record && method_exists($record, 'getRelationValue')) {
                 $relationship = $this->getRelationship();
@@ -60,6 +61,14 @@ class AddressField extends Forms\Components\Field
             $address = $record->getRelationValue($this->getRelationship());
             if (null !== $address && is_object($address) && method_exists($address, 'toArray')) {
                 $data = $address->toArray();
+=======
+            
+            if ($record !== null) {
+                $address = $record->getRelationValue($this->getRelationship());
+                if (null !== $address && is_object($address) && method_exists($address, 'toArray')) {
+                    $data = $address->toArray();
+                }
+>>>>>>> bf0cd1be (phpstan)
             }
 
             $component->state($data);
@@ -89,6 +98,11 @@ class AddressField extends Forms\Components\Field
     {
         $state = $this->getState();
         $record = $this->getRecord();
+        
+        if ($record === null) {
+            return;
+        }
+        
         $relationship = $record->{$this->getRelationship()}();
 
         if (null === $relationship) {

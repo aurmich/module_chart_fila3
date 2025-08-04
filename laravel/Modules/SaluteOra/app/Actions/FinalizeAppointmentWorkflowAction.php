@@ -14,6 +14,7 @@ use Modules\SaluteOra\Models\Patient;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\SaluteOra\Enums\AppointmentStatusEnum;
 =======
 >>>>>>> 54f4fa16 (.)
@@ -23,6 +24,9 @@ use Modules\SaluteOra\Enums\AppointmentStatusEnum;
 =======
 use Modules\SaluteOra\Enums\AppointmentStatus;
 >>>>>>> cb74b7d6 (delete _old folder)
+=======
+use Modules\SaluteOra\Enums\AppointmentStatusEnum;
+>>>>>>> bf0cd1be (phpstan)
 use Spatie\QueueableAction\QueueableAction;
 
 class FinalizeAppointmentWorkflowAction
@@ -89,6 +93,7 @@ class FinalizeAppointmentWorkflowAction
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $appointment->status = AppointmentStatusEnum::CONFIRMED;
 =======
                 $appointment->status = 'confirmed';
@@ -99,6 +104,9 @@ class FinalizeAppointmentWorkflowAction
 =======
                 $appointment->status = AppointmentStatus::CONFIRMED;
 >>>>>>> cb74b7d6 (delete _old folder)
+=======
+                $appointment->status = AppointmentStatusEnum::CONFIRMED;
+>>>>>>> bf0cd1be (phpstan)
                 $appointment->notes = $treatmentData['notes'] ?? '';
                 $appointment->treatment_plan = $treatmentData['treatment_plan'] ?? '';
                 $appointment->is_emergency = $treatmentData['is_emergency'] ?? false;
@@ -177,6 +185,7 @@ class FinalizeAppointmentWorkflowAction
                 // Aggiorna sempre lo stato a confirmed
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $appointment->status = AppointmentStatusEnum::CONFIRMED;
 =======
                 $appointment->status = 'confirmed';
@@ -184,6 +193,9 @@ class FinalizeAppointmentWorkflowAction
 =======
                 $appointment->status = AppointmentStatus::CONFIRMED;
 >>>>>>> cb74b7d6 (delete _old folder)
+=======
+                $appointment->status = AppointmentStatusEnum::CONFIRMED;
+>>>>>>> bf0cd1be (phpstan)
                 $appointment->save();
                 
                 // Invia notifiche se richiesto
@@ -222,13 +234,19 @@ class FinalizeAppointmentWorkflowAction
     private function sendNotifications(Appointment $appointment): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf0cd1be (phpstan)
         if ($this->notificationAction === null) {
             Log::warning('Cannot send notification: notification action is not configured');
             return;
         }
         
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> bf0cd1be (phpstan)
         try {
             $this->notificationAction
                 ->onQueue('notifications')

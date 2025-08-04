@@ -21,6 +21,9 @@ class GetAllIconsAction
     {
         $iconsFactory = App::make(IconFactory::class);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf0cd1be (phpstan)
         
         // Uso reflection per accedere alle icone in modo sicuro
         try {
@@ -38,6 +41,7 @@ class GetAllIconsAction
             return [];
         }
 
+<<<<<<< HEAD
 =======
         $icons = $iconsFactory->all();
         /*
@@ -52,6 +56,8 @@ class GetAllIconsAction
         ]
          */
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> bf0cd1be (phpstan)
         $icons = Arr::map($icons, function (array $set, array|string $name) {
             $set['name'] = $name;
             $icons = [];

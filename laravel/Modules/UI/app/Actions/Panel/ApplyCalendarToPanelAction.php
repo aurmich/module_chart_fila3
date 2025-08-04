@@ -47,6 +47,7 @@ class ApplyCalendarToPanelAction
         $calendarPlugin = FilamentFullCalendarPlugin::make()
         ->selectable(true)
         ->editable(true)
+<<<<<<< HEAD
         ->timezone(config('fullcalendar.localization.timezone', 'Europe/Rome'))
         ->locale(config('fullcalendar.localization.locale', 'it'))
 <<<<<<< HEAD
@@ -62,6 +63,10 @@ class ApplyCalendarToPanelAction
 >>>>>>> 345f8677 (phpstan)
 =======
 >>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
+=======
+        ->timezone((string) config('fullcalendar.localization.timezone', 'Europe/Rome'))
+        ->locale((string) config('fullcalendar.localization.locale', 'it'))
+>>>>>>> bf0cd1be (phpstan)
         ->plugins([
             'dayGrid',
             'timeGrid',

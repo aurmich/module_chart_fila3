@@ -10,6 +10,7 @@ return new class extends XotBaseMigration
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 =======
@@ -30,6 +31,9 @@ return new class extends XotBaseMigration
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+    
+>>>>>>> bf0cd1be (phpstan)
     /**
      * Run the migrations.
      */

@@ -6,6 +6,7 @@ namespace Modules\UI\Http\Controllers;
 
 use Illuminate\Http\Request;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Config;
@@ -13,12 +14,18 @@ use Illuminate\Support\Facades\Config;
 use Illuminate\Routing\Controller;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 >>>>>>> 54f4fa16 (.)
+=======
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Config;
+>>>>>>> bf0cd1be (phpstan)
 
 class LanguageController extends Controller
 {
     /**
      * Cambia la lingua dell'applicazione.
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
     public function switch(string $locale): RedirectResponse
     {
@@ -33,6 +40,15 @@ class LanguageController extends Controller
         if (!in_array($locale, LaravelLocalization::getSupportedLocalesKeys())) {
             $locale = LaravelLocalization::getDefaultLocale();
 >>>>>>> 54f4fa16 (.)
+=======
+    public function switch(string $locale): RedirectResponse
+    {
+        // Usa configurazione per ottenere le lingue supportate
+        $supportedLocales = Config::array('app.supported_locales', ['en', 'it']);
+        
+        if (!in_array($locale, $supportedLocales)) {
+            $locale = Config::string('app.locale', 'en');
+>>>>>>> bf0cd1be (phpstan)
         }
 
         session()->put('locale', $locale);
