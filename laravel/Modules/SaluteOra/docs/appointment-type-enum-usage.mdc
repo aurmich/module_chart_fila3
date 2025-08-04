@@ -4,6 +4,9 @@ globs:
 alwaysApply: false
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f5caa3ff (add ai rules)
 # Regola: Path Enum AppointmentType
 
 - L'enum `AppointmentType` deve essere sempre posizionato in `Modules/SaluteOra/app/Enums/AppointmentType.php`.
@@ -21,5 +24,8 @@ alwaysApply: false
   ```
 
 > **Nota:** Ogni refuso di path va corretto in tutto il codice, nella documentazione e nei file di regole.
+<<<<<<< HEAD
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> f5caa3ff (add ai rules)
