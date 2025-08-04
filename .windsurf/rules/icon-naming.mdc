@@ -10,6 +10,7 @@ globs:
 alwaysApply: false
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regola: Estensione XotBaseListRecords per le pagine ListRecords
 
 ## Regola
@@ -50,3 +51,40 @@ class ListDoctors extends XotBaseListRecords { ... }
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 >>>>>>> 3b8e8240 (fix case cursor and windsurf)
+=======
+# Regole per la Nomenclatura delle Icone
+
+## Formato del Nome
+- Il nome dell'icona deve seguire il formato: `<modulo>-<nome>`
+- Il modulo deve essere in minuscolo
+- Il nome deve essere in minuscolo
+- Esempio: `saluteora-doctor`
+
+## Registrazione delle Icone
+- Le icone SVG personalizzate devono essere registrate nel ServiceProvider del modulo
+- Utilizzare `FilamentIcon::register()` per registrare le icone
+- Il percorso dell'icona deve essere relativo alla cartella resources del modulo
+
+## Esempio di Registrazione
+```php
+FilamentIcon::register([
+    'saluteora-doctor' => asset('modules/SaluteOra/resources/svg/doctor.svg'),
+]);
+```
+
+## Utilizzo nelle Traduzioni
+- Nelle traduzioni, utilizzare il nome completo dell'icona
+- Non utilizzare percorsi diretti alle risorse
+- Esempio:
+```php
+'navigation' => [
+    'icon' => 'saluteora-doctor',
+]
+```
+
+## Best Practices
+1. Mantenere i nomi delle icone consistenti in tutto il modulo
+2. Documentare le icone personalizzate nel README del modulo
+3. Utilizzare nomi descrittivi e significativi
+4. Evitare nomi generici o ambigui
+>>>>>>> 76e32659 (feat(docs): add new rules for SVG icons, XotBaseListRecords, icon naming, and model states best practices to improve consistency and maintainability across modules)

@@ -4,13 +4,19 @@
 
 This document provides metadata for Cursor about the integration of `mcamara/laravel-localization` into the `saluteora` project.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 76e32659 (feat(docs): add new rules for SVG icons, XotBaseListRecords, icon naming, and model states best practices to improve consistency and maintainability across modules)
 # Laravel Localization Metadata for Cursor
 
 ## Context
 
 This document provides metadata for Cursor about the integration of `mcamara/laravel-localization` into the `saluteora` project.
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 76e32659 (feat(docs): add new rules for SVG icons, XotBaseListRecords, icon naming, and model states best practices to improve consistency and maintainability across modules)
 
 ## Key Points
 
@@ -23,6 +29,9 @@ This document provides metadata for Cursor about the integration of `mcamara/lar
   - Implement language selector UI component.
 - **Benefits**: Improved user experience with localized URLs and translated routes.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 76e32659 (feat(docs): add new rules for SVG icons, XotBaseListRecords, icon naming, and model states best practices to improve consistency and maintainability across modules)
 
 # Regola: Vietato usare chiavi che terminano con `.navigation` nei file di traduzione
 
@@ -40,5 +49,8 @@ This document provides metadata for Cursor about the integration of `mcamara/lar
   - [translation_keys_rules.md](../translation_keys_rules.md)
   - [filament-translations.md](../filament-translations.md)
   - [docs SaluteOra](../../../SaluteOra/docs/translations.md)
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 76e32659 (feat(docs): add new rules for SVG icons, XotBaseListRecords, icon naming, and model states best practices to improve consistency and maintainability across modules)

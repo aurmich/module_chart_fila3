@@ -45,12 +45,18 @@
 			"ihunte.laravel-blade-wrapper",
 			"damms005.devdb",
 <<<<<<< HEAD
+<<<<<<< HEAD
 			"block.vscode-mcp-extension",
 			"bmewburn.vscode-intelephense-client",
 			"davidanson.vscode-markdownlint"
 =======
 			"block.vscode-mcp-extension"
 >>>>>>> 54f4fa16 (.)
+=======
+			"block.vscode-mcp-extension",
+			"bmewburn.vscode-intelephense-client",
+			"davidanson.vscode-markdownlint"
+>>>>>>> 76e32659 (feat(docs): add new rules for SVG icons, XotBaseListRecords, icon naming, and model states best practices to improve consistency and maintainability across modules)
 		]
 	}
 }
