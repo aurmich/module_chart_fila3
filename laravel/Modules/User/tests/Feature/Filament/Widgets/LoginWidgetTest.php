@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Form;
 =======
 =======
@@ -16,6 +17,9 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 >>>>>>> aurmich/dev
 =======
 >>>>>>> fb6fbaa2 (move resources/lang to lang)
+=======
+use Filament\Forms\Form;
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
@@ -23,16 +27,21 @@ use Modules\User\Filament\Widgets\LoginWidget;
 use Modules\User\Models\User;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use function Pest\Laravel\assertAuthenticatedAs;
 =======
 use Tests\TestCase;
 >>>>>>> aurmich/dev
+=======
+use function Pest\Laravel\assertAuthenticatedAs;
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
 
 // Skip this test if the test database is not configured
 if (!env('DB_CONNECTION') || (env('DB_CONNECTION') === 'sqlite' && !file_exists(database_path('database.sqlite')))) {
     return;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 uses(Tests\TestCase::class);
 
@@ -121,35 +130,49 @@ if (!env('DB_CONNECTION') || (env('DB_CONNECTION') === 'sqlite' && !file_exists(
 class LoginWidgetTest extends TestCase
 {
     use RefreshDatabase;
+=======
+uses(Tests\TestCase::class);
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
 
-    protected LoginWidget $widget;
+beforeEach(function (): void {
+    $this->widget = new LoginWidget();
+});
 
-    protected function setUp(): void
-    {
-        parent::setUp();
-        $this->widget = new LoginWidget();
+test('it can render widget', function (): void {
+    expect(LoginWidget::getView())->toContain('user::filament.widgets.login');
+});
+
+test('it has correct form schema', function (): void {
+    $schema = $this->widget->getFormSchema();
+    
+    expect($schema)->toHaveCount(3);
+    expect($schema)->toHaveKey('email');
+    expect($schema)->toHaveKey('password');
+    expect($schema)->toHaveKey('remember');
+});
+
+test('it can authenticate user', function (): void {
+    // Skip if we can't use the database
+    if (!class_exists('CreateUsersTable')) {
+        $this->markTestSkipped('Database not available for testing');
+        return;
     }
+    
+    /** @var \Modules\User\Models\User $user */
+    $user = User::factory()->create([
+        'email' => 'test@example.com',
+        'password' => Hash::make('password123'),
+    ]);
 
-    /** @test */
-    public function it_can_render_widget()
-    {
-        $this->assertStringContainsString(
-            'user::filament.widgets.login',
-            $this->widget::getView()
-        );
-    }
+    $this->widget->form->fill([
+        'email' => 'test@example.com',
+        'password' => 'password123',
+        'remember' => true,
+    ]);
 
-    /** @test */
-    public function it_has_correct_form_schema()
-    {
-        $schema = $this->widget->getFormSchema();
-        
-        $this->assertCount(3, $schema);
-        $this->assertArrayHasKey('email', $schema);
-        $this->assertArrayHasKey('password', $schema);
-        $this->assertArrayHasKey('remember', $schema);
-    }
+    $this->widget->save();
 
+<<<<<<< HEAD
     /** @test */
     public function it_can_authenticate_user()
     {
@@ -180,18 +203,28 @@ class LoginWidgetTest extends TestCase
             'email' => 'test@example.com',
             'password' => Hash::make('password123'),
         ]);
+=======
+    assertAuthenticatedAs($user);
+});
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
 
-        $this->widget->form->fill([
-            'email' => 'test@example.com',
-            'password' => 'password123',
-            'remember' => true,
-        ]);
+test('it validates credentials', function (): void {
+    $this->widget->form->fill([
+        'email' => 'nonexistent@example.com',
+        'password' => 'wrongpassword',
+    ]);
 
-        $this->widget->save();
+    expect(fn () => $this->widget->save())
+        ->toThrow(ValidationException::class);
+});
 
-        $this->assertAuthenticatedAs($user);
-    }
+test('it requires email and password', function (): void {
+    $this->widget->form->fill([
+        'email' => '',
+        'password' => '',
+    ]);
 
+<<<<<<< HEAD
     /** @test */
     public function it_validates_credentials()
     {
@@ -222,3 +255,8 @@ class LoginWidgetTest extends TestCase
 >>>>>>> aurmich/dev
 =======
 >>>>>>> fb6fbaa2 (move resources/lang to lang)
+=======
+    expect(fn () => $this->widget->save())
+        ->toThrow(ValidationException::class);
+});
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)

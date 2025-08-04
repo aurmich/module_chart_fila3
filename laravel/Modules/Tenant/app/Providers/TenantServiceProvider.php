@@ -27,18 +27,24 @@ class TenantServiceProvider extends XotBaseServiceProvider
         parent::boot();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
         
         // Skip complex configuration during testing
         //if (!$this->app->environment('testing')) {
             $this->mergeConfigs();
         //}
         
+<<<<<<< HEAD
 =======
         $this->mergeConfigs();
 >>>>>>> aurmich/dev
 =======
         $this->mergeConfigs();
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
         $this->registerDB();
         $this->registerMorphMap();
         $this->publishConfig();
@@ -63,16 +69,22 @@ class TenantServiceProvider extends XotBaseServiceProvider
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
         // Skip database operations during testing
         //if ($this->app->environment('testing')) {
         //    Schema::defaultStringLength(191);
         //    return;
         //}
 
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
         if (Request::has('act') && Request::input('act') === 'migrate') {
             DB::purge('mysql'); // Call to a member function prepare() on null
             DB::reconnect('mysql');

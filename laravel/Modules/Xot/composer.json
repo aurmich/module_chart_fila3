@@ -196,14 +196,19 @@
         "laravel/sail": "^1.39",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.5",
+        "orchestra/testbench": "*",
         "pestphp/pest": "^3.5",
-        "thecodingmachine/phpstan-safe-rule": "*",
+        "pestphp/pest-plugin-laravel": "^3.2",
         "spatie/laravel-error-solutions": "*",
+<<<<<<< HEAD
         "orchestra/testbench": "*"
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+        "thecodingmachine/phpstan-safe-rule": "*"
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
     },
     "repositories": [
         {
@@ -227,6 +232,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
             "Modules\\Xot\\Tests\\": "tests/",
             "Coolsam\\FilamentModules\\": "packages/coolsam/panel-modules/src/"
             

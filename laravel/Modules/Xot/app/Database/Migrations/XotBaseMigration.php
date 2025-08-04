@@ -30,6 +30,9 @@ abstract class XotBaseMigration extends Migration
     public function __construct()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
         /*
         // During testing, use a dummy model to prevent errors
         if (app()->environment('testing')) {
@@ -43,8 +46,11 @@ abstract class XotBaseMigration extends Migration
         }
         */
         
+<<<<<<< HEAD
 =======
 >>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
         $this->model_class = $this->model_class ?? $this->getModelClass();
         Assert::isInstanceOf($model = app($this->model_class), Model::class);
         $this->model = $model;
@@ -92,6 +98,9 @@ abstract class XotBaseMigration extends Migration
     public function getTable(): string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
         /*
         // During testing, use table property or derive from migration name
         if (app()->environment('testing')) {
@@ -113,22 +122,31 @@ abstract class XotBaseMigration extends Migration
             return 'unknown_table';
         }
         */
+<<<<<<< HEAD
 =======
 >>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
         return $this->model->getTable();
     }
 
     public function getConn(): Builder
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
         /*
         // During testing, use default schema connection
         if (app()->environment('testing') || !isset($this->model)) {
             return Schema::connection(null);
         }
         */
+<<<<<<< HEAD
 =======
 >>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
         return Schema::connection($this->model->getConnectionName());
     }
 

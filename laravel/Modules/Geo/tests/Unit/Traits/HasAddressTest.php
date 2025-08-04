@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Geo\Models\Address;
 use Tests\TestCase;
 
@@ -11,10 +12,12 @@ uses(TestCase::class);
 namespace Modules\Geo\Tests\Unit\Traits;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
 use Modules\Geo\Models\Address;
-use Modules\Geo\Tests\TestCase;
-use Tests\CreatesApplication;
+use Tests\TestCase;
 
+<<<<<<< HEAD
 class HasAddressTest extends TestCase
 {
     use RefreshDatabase;
@@ -171,6 +174,9 @@ class HasAddressTest extends TestCase
     }
 }
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+uses(TestCase::class);
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
 
 /**
  * Modello di test per il trait HasAddress.
@@ -199,6 +205,9 @@ class TestModel extends \Illuminate\Database\Eloquent\Model
         });
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
 }
 
 beforeEach(function () {
@@ -334,7 +343,11 @@ it('can filter models by city', function () {
     
     expect($modelsInRoma)->toHaveCount(1);
     expect($modelsInRoma->first()->name)->toBe('Model 2');
+<<<<<<< HEAD
 }); 
 =======
 }
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+}); 
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)

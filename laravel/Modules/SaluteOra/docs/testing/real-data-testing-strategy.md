@@ -160,7 +160,10 @@ test('patient cannot have duplicate fiscal code', function () {
 - **Developer Experience**: Feedback loop rallentato
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
 # Performance comparison
 Traditional: 1000 tests in 50s
 Real Data:   1000 tests in 200s (4x slower)
@@ -221,7 +224,10 @@ private function seedTestDatabase(): void
 
 ### 3. Test Categories Separation
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
 # Esecuzione test separata per categoria
 ./vendor/bin/pest --group=unit     # Fast unit tests
 ./vendor/bin/pest --group=integration  # Medium integration tests  
@@ -290,7 +296,10 @@ public function definition(): array
 
 ### 3. CI/CD Considerations
 ```yaml
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
 # .github/workflows/tests.yml
 name: Tests
 on: [push, pull_request]
@@ -388,3 +397,7 @@ jobs:
 **Complexity**: 🔧 MEDIUM - Requires process change  
 **Risk Level**: ⚠️ CONTROLLED - With proper mitigation  
 
+<<<<<<< HEAD
+=======
+*"Testing with real data reveals real problems. The price is complexity, the reward is confidence."* 
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)

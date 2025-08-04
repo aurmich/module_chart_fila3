@@ -178,7 +178,10 @@ test('complete tax filing process', function () {
 ### Test Execution Strategy
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
 # Development: Fast feedback
 ./vendor/bin/pest --group=unit
 
@@ -388,3 +391,7 @@ test('legacy feature with mocks', function () {
 **Decision Authority**: Technical Architecture Committee  
 **Implementation Timeline**: 4-week migration  
 
+<<<<<<< HEAD
+=======
+*"Choose your testing strategy not by convention, but by consequence. In healthcare, realism isn't luxury—it's necessity."* 
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)

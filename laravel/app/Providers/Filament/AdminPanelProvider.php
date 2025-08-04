@@ -8,11 +8,16 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  namespace App\Providers\Filament;
+=======
+namespace App\Providers\Filament;
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
 
- use Modules\Xot\Providers\Filament\XotBaseMainPanelProvider;
- use Filament\Panel;
+use Filament\Panel;
+use Filament\PanelProvider;
 
+<<<<<<< HEAD
  class AdminPanelProvider extends XotBaseMainPanelProvider
  {
      public function panel(Panel $panel): Panel
@@ -75,6 +80,23 @@ namespace App\Providers\Filament;
     }
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+class AdminPanelProvider extends PanelProvider
+{
+    public function panel(Panel $panel): Panel
+    {
+        return $panel
+            ->id('admin')
+            ->path('admin')
+            ->login()
+            ->colors([
+                'primary' => \Filament\Support\Colors\Color::Amber,
+            ])
+            ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
+            ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
+            ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets');
+    }
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
 }
 =======
 =======

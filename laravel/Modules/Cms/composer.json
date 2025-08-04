@@ -33,11 +33,16 @@
             "Modules\\Cms\\": "app/",
             "Modules\\Cms\\Database\\Factories\\": "database/factories/",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "Modules\\Cms\\Database\\Seeders\\": "database/seeders/",
             "Modules\\Cms\\Tests\\": "tests/"
 =======
             "Modules\\Cms\\Database\\Seeders\\": "database/seeders/"
 >>>>>>> 54f4fa16 (.)
+=======
+            "Modules\\Cms\\Database\\Seeders\\": "database/seeders/",
+            "Modules\\Cms\\Tests\\": "tests/"
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
         }
     },
     "require": {

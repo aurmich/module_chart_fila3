@@ -26,6 +26,7 @@ return new class extends XotBaseMigration
                 $table->schemalessAttributes('extra_attributes');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 
                 
                 
@@ -35,6 +36,11 @@ return new class extends XotBaseMigration
 =======
                 $table->unique(['model_id', 'model_type'], 'morph_unique');
 >>>>>>> 54f4fa16 (.)
+=======
+                
+                
+                
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
             }
         );
 
@@ -47,6 +53,7 @@ return new class extends XotBaseMigration
                 $this->updateTimestamps(table: $table, hasSoftDeletes: true);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 // if (! $this->hasIndex('morph_unique')) {
                 //    $table->unique(['model_id', 'model_type'], 'morph_unique');
@@ -57,6 +64,8 @@ return new class extends XotBaseMigration
                 //    $table->unique(['model_id', 'model_type'], 'morph_unique');
                 // }
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
 
                 if ($this->hasColumn('model_id') && $this->getColumnType('model_id') === 'bigint') {
                     $table->string('model_id', 36)->index()->change();

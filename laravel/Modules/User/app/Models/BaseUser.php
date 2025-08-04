@@ -70,6 +70,7 @@ use Filament\Models\Contracts\HasTenants;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Illuminate\Database\Eloquent\Collection;
 use Modules\User\Database\Factories\UserFactory;
+use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
@@ -658,6 +659,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         return app(GetFactoryAction::class)->execute(static::class);
 =======
         return UserFactory::new();
@@ -665,6 +667,9 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 =======
         return UserFactory::new();
 >>>>>>> 54f4fa16 (.)
+=======
+        return app(GetFactoryAction::class)->execute(static::class);
+>>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
     }
 
     /** @return array<string, string> */
