@@ -13,6 +13,7 @@
                     "view": "pub_theme::components.blocks.hero.modern_hero",
                     "title": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                         "it": "Hai prenotato la tua visita!",
                         "en": "You have booked your appointment!"
                     },
@@ -27,6 +28,14 @@
                         "it": "Grazie per esserti unito alla nostra community. La tua richiesta è in fase di verifica. Riceverai una email dal backoffice con tutte le informazioni per completare la registrazione!",
                         "en": "Thank you for joining our community. Your request is currently being reviewed. You will receive an email from our back office with all the information needed to complete your registration!"
 >>>>>>> 23f43388 (feat: add openingHoursField to studiorelationmanager of doctorresource)
+=======
+                        "it": "Hai prenotato la tua visita!",
+                        "en": "You have booked your appointment!"
+                    },
+                    "subtitle": {
+                        "it": "La tua prenotazione è in attesa di accettazione.",
+                        "en": "Your appointment is pending approval. You will receive an email from our back office with all the information needed to complete your registration!"
+>>>>>>> 54e38a7d (- create privacy dottore)
                     },
                     "image": "/img/registration-complete.jpg",
                     "cta": [

@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array (
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -371,6 +372,10 @@ return array (
 return array (
   'navigation' => 
 >>>>>>> 12a79d3a (.)
+=======
+return array (
+  'navigation' => 
+>>>>>>> 54e38a7d (- create privacy dottore)
   array (
     'label' => 'Utenti Generici',
     'group' => 'Gestione Utenti',
@@ -380,8 +385,11 @@ return array (
   ),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 12a79d3a (.)
+=======
+>>>>>>> 54e38a7d (- create privacy dottore)
   'model' => 
   array (
     'label' => 'Utente',
@@ -408,10 +416,13 @@ return array (
       'placeholder' => 'Inserisci il nome',
       'help' => 'Nome di battesimo dell\'utente',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       'description' => 'first_name',
       'helper_text' => 'first_name',
 >>>>>>> 12a79d3a (.)
+=======
+>>>>>>> 54e38a7d (- create privacy dottore)
     ),
     'last_name' => 
     array (
@@ -419,10 +430,13 @@ return array (
       'placeholder' => 'Inserisci il cognome',
       'help' => 'Cognome di famiglia dell\'utente',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       'description' => 'last_name',
       'helper_text' => 'last_name',
 >>>>>>> 12a79d3a (.)
+=======
+>>>>>>> 54e38a7d (- create privacy dottore)
     ),
     'email' => 
     array (
@@ -436,10 +450,13 @@ return array (
         'unique' => 'Questo indirizzo email è già in uso',
       ),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       'description' => 'email',
       'helper_text' => 'email',
 >>>>>>> 12a79d3a (.)
+=======
+>>>>>>> 54e38a7d (- create privacy dottore)
     ),
     'password' => 
     array (
@@ -465,10 +482,13 @@ return array (
       'placeholder' => 'Inserisci numero telefono (es. +39 333 123 4567)',
       'help' => 'Numero di telefono per contatti diretti e urgenze',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       'description' => 'phone',
       'helper_text' => 'phone',
 >>>>>>> 12a79d3a (.)
+=======
+>>>>>>> 54e38a7d (- create privacy dottore)
     ),
     'address' => 
     array (
@@ -494,10 +514,13 @@ return array (
         'admin' => 'Amministratore',
       ),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       'description' => 'type',
       'helper_text' => 'type',
 >>>>>>> 12a79d3a (.)
+=======
+>>>>>>> 54e38a7d (- create privacy dottore)
     ),
     'state' => 
     array (
@@ -555,6 +578,7 @@ return array (
       'placeholder' => 'Data ultima modifica automatica',
       'help' => 'Data e ora dell\'ultima modifica ai dati dell\'utente',
     ),
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     'applyFilters' => 
@@ -626,6 +650,19 @@ return array (
   'actions' => 
   array (
 >>>>>>> 12a79d3a (.)
+=======
+    'toggleColumns' => 
+    array (
+      'label' => 'toggleColumns',
+    ),
+    'reorderRecords' => 
+    array (
+      'label' => 'reorderRecords',
+    ),
+  ),
+  'actions' => 
+  array (
+>>>>>>> 54e38a7d (- create privacy dottore)
     'create' => 
     array (
       'label' => 'Crea Nuovo Utente',
@@ -747,6 +784,7 @@ return array (
     'account_suspended' => 'Il tuo account è stato temporaneamente sospeso',
     'account_reinstated' => 'Il tuo account è stato ripristinato e puoi accedere nuovamente',
   ),
+<<<<<<< HEAD
 <<<<<<< HEAD
   'states' => [
     'pending' => [
@@ -1171,3 +1209,6 @@ return [
 =======
 );
 >>>>>>> 12a79d3a (.)
+=======
+);
+>>>>>>> 54e38a7d (- create privacy dottore)

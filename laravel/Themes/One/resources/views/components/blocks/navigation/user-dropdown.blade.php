@@ -119,6 +119,7 @@ $isDoctor  = $user && $user->type == UserTypeEnum::DOCTOR ? true:false;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> f7d3ce4f (- update landing-page;)
@@ -138,6 +139,8 @@ $isDoctor  = $user && $user->type == UserTypeEnum::DOCTOR ? true:false;
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> f7d3ce4f (- update landing-page;)
+=======
+>>>>>>> 54e38a7d (- create privacy dottore)
         </x-filament::dropdown.list>
     </x-filament::dropdown>
 
