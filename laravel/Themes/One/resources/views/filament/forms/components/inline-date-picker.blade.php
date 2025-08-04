@@ -24,6 +24,7 @@
     <div 
         x-data="{
             selectedDate: @js($currentValue),
+<<<<<<< HEAD
             
             
             selectDate(dateString) {
@@ -34,6 +35,20 @@
             deSelectDate(){
                 this.selectedDate = null;
                 $wire.set('{{ $statePath }}', null);
+=======
+            enabledDates: @js($enabledDates->toArray()),
+            
+            selectDate(dateString) {
+                if (this.enabledDates.includes(dateString)) {
+                    // Data abilitata: seleziona
+                    this.selectedDate = dateString;
+                    $wire.set('{{ $statePath }}', dateString);
+                } else {
+                    // Data NON abilitata: deseleziona tutto
+                    this.selectedDate = null;
+                    $wire.set('{{ $statePath }}', null);
+                }
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
             },
             // ✅ Metodi per navigazione mese - chiamata diretta al widget parent
             previousMonth() {
@@ -76,7 +91,11 @@
                 <!-- Intestazioni giorni -->
                 <div class="mt-6 grid grid-cols-7 text-xs/6 text-gray-500">
                     @foreach($weekdays as $weekday)
+<<<<<<< HEAD
                         <div class="uppercase">{{ $weekday }}</div>
+=======
+                        <div>{{ $weekday }}</div>
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
                     @endforeach
                 </div>
                 
@@ -92,6 +111,7 @@
                                     
                                     // ✅ Pre-calcolo classi CSS per performance
                                     if ($isSelected) {
+<<<<<<< HEAD
                                         $classes = 'relative py-2 px-1 text-sm font-semibold bg-[#FF5F7E] text-white ring-2 ring-[#FF5F7E] shadow-lg z-10';
                                         $onclick = "deSelectDate()";
                                     } elseif ($isEnabled && $isCurrentMonth) {
@@ -103,16 +123,30 @@
                                     } else {
                                         $classes = 'relative py-2 px-1 text-sm font-medium bg-gray-50/30 text-gray-300 cursor-not-allowed opacity-40';
                                         $onclick = "deSelectDate()";
+=======
+                                        $classes = 'relative py-2 px-1 text-sm font-semibold bg-blue-600 text-white ring-2 ring-blue-600 ring-offset-2 shadow-lg z-10';
+                                    } elseif ($isEnabled && $isCurrentMonth) {
+                                        $classes = 'relative py-2 px-1 text-sm font-semibold bg-green-50 text-green-700 border-2 border-green-200 hover:bg-green-100 cursor-pointer';
+                                    } elseif ($isCurrentMonth) {
+                                        $classes = 'relative py-2 px-1 text-sm font-medium bg-gray-50 text-gray-400 border border-gray-200 cursor-not-allowed opacity-60';
+                                    } else {
+                                        $classes = 'relative py-2 px-1 text-sm font-medium bg-gray-50/30 text-gray-300 cursor-not-allowed opacity-40';
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
                                     }
                                 @endphp
                                 
                                 <button 
                                     type="button" 
+<<<<<<< HEAD
                                     x-on:click="{{ $onclick }}"
+=======
+                                    x-on:click="selectDate('{{ $day['dateString'] }}')"
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
                                     class="{{ $classes }}"
                                 >
                                     {{ $day['day'] }}
                                     
+<<<<<<< HEAD
                                     {{-- ✨ INDICATORI ELEGANTI PER DATE DISPONIBILI --}}
                                     @if($isEnabled && $isCurrentMonth && !$isSelected)
                                         {{-- Barra sottile verde sotto la data disponibile --}}
@@ -123,12 +157,24 @@
                                     @if($isSelected)
                                         {{-- Barra pulsante blu sotto la data selezionata --}}
                                         <div class="absolute bottom-0 left-0 right-0 h-1 bg-white"></div>
+=======
+                                    @if($isEnabled && $isCurrentMonth)
+                                        <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                                    @endif
+                                    
+                                    @if($isSelected)
+                                        <span class="absolute -top-1 -right-1 w-2 h-2 bg-blue-400 rounded-full"></span>
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
                                     @endif
                                 </button>
                             @endforeach
                         @endforeach
                     @else
+<<<<<<< HEAD
                         <x-filament::loading-indicator class="h-5 w-5" />
+=======
+                        <div class="col-span-7 p-4 text-center text-gray-500">Caricamento calendario...</div>
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
                     @endif
                 </div>
 
@@ -138,6 +184,7 @@
     </div>
 </x-dynamic-component>
 
+<<<<<<< HEAD
 {{-- ✨ CSS ELEGANTE MIGLIORATO --}}
 <style>
 .inline-date-picker button {
@@ -180,5 +227,11 @@
 
 .inline-date-picker .absolute.-top-1 {
     animation: fadeInScale 0.4s ease-out;
+=======
+{{-- CSS minimo --}}
+<style>
+.inline-date-picker button {
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
 }
 </style> 

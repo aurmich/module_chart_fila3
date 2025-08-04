@@ -69,6 +69,7 @@ use Livewire\Component as LivewireComponent;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Modules\UI\Filament\Forms\Components\RadioCollection;
 use Modules\UI\Filament\Forms\Components\InlineDatePicker;
+use Carbon\Carbon;
 
 >>>>>>> aurmich/dev
 class FindDoctorAndAppointmentWidget extends XotBaseWidget
@@ -97,17 +98,19 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
     public ?array $filters = null;
 
     /**
-     * Mese corrente per la navigazione del calendario.
-     * Proprietà pubblica accessibile dal JavaScript per la navigazione.
+     * Mese corrente del calendario per navigazione.
      * 
-     * @var string|null
+     * @var string
      */
-    public ?string $currentCalendarMonth = null;
+    public string $currentCalendarMonth;
 
+<<<<<<< HEAD
    
 
    
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
     /**
      * Mount the component.
      *
@@ -116,18 +119,27 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
     public function mount(): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
         // ✅ Inizializza sempre con valore valido
         if (empty($this->currentCalendarMonth)) {
             $this->currentCalendarMonth = now()->format('Y-m');
         }
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
         
         $this->form->fill();
     }
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
      * Getter sicuro per currentCalendarMonth - garantisce sempre un valore valido.
      *
      * @return string
@@ -147,9 +159,12 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
     public function previousMonth(): void
     {
         $currentDate = Carbon::createFromFormat('Y-m', $this->currentCalendarMonth);
+<<<<<<< HEAD
         if(!$currentDate){
             return;
         }
+=======
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
         $this->currentCalendarMonth = $currentDate->subMonthNoOverflow()->format('Y-m');
         
         // ✅ Refresh del form per aggiornare il calendario
@@ -162,9 +177,12 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
     public function nextMonth(): void
     {
         $currentDate = Carbon::createFromFormat('Y-m', $this->currentCalendarMonth);
+<<<<<<< HEAD
         if(!$currentDate){
             return;
         }
+=======
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
         $this->currentCalendarMonth = $currentDate->addMonthNoOverflow()->format('Y-m');
         
         // ✅ Refresh del form per aggiornare il calendario
@@ -172,8 +190,11 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
     }
 
     /**
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
      * Get the form schema for the widget.
      *
      * @return array<int|string, mixed>
@@ -497,6 +518,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
             RadioCollection::make('studio_id')
                 ->label('Studio')      
                 ->options(fn($get) => Studio::ofCap($get('cap'))->get()) // La tua collection
+                
                 ->itemView('pub_theme::filament.forms.components.studio-item') // La tua blade personalizzata
                 //->emptyView('pub_theme::filament.forms.components.studio-empty') // La tua blade personalizzata
                 ->valueKey('id') // Campo da usare come valore (default: 'id'),
@@ -508,7 +530,6 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
 
     protected function getDateStepSchema(): array
     {
-
         $times=collect([
             collect((object)['id'=>'09:00','label'=>'09:00']),
             collect((object)['id'=>'10:00','label'=>'10:00']),
@@ -517,17 +538,16 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
             
         ]);
 
-
-
         return [
             'appointment_date' => InlineDatePicker::make('appointment_date')
                 ->enabledDates(['2025-06-05','2025-06-21'])
-            ,
+                ->view('pub_theme::filament.forms.components.inline-date-picker')
+                ->currentViewMonth($this->getCurrentCalendarMonth()),
             'appointment_time'=>  RadioCollection::make('appointment_time')
-            ->label('Orario')      
-            ->options(fn() => $times) // La tua collection
-            ->itemView('pub_theme::filament.forms.components.studio-time') // La tua blade personalizzata
-            ->valueKey('id') 
+                ->label('Orario')      
+                ->options(fn() => $times) // La tua collection
+                ->itemView('pub_theme::filament.forms.components.studio-time') // La tua blade personalizzata
+                ->valueKey('id') 
         ];
     }
 

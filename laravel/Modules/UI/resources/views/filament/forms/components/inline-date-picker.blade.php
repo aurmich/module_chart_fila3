@@ -2,6 +2,7 @@
 /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * InlineDatePicker View - KISS Principle
  * 
  * La logica è nella classe PHP InlineDatePicker.php
@@ -28,6 +29,12 @@
  * - UI/UX conforme al tema One
  * - Principi DRY e KISS
 >>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
+=======
+ * InlineDatePicker View - KISS Principle
+ * 
+ * La logica è nella classe PHP InlineDatePicker.php
+ * Questa vista si limita a renderizzare i dati ricevuti
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
  */
 --}}
 
@@ -41,6 +48,7 @@
     $currentViewMonth = $currentViewMonth ?? now()->format('Y-m');
     $monthName = $monthName ?? 'Loading...';
     $weekdays = $weekdays ?? ['L', 'M', 'M', 'G', 'V', 'S', 'D'];
+<<<<<<< HEAD
 =======
     $id = $getId();
     $statePath = $getStatePath();
@@ -64,6 +72,8 @@
     $enabledDates = $enabledDates ?? collect();
     $currentViewMonth = $currentViewMonth ?? now()->format('Y-m');
 >>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
+=======
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
 @endphp
 
 <x-dynamic-component 
@@ -196,99 +206,59 @@
         x-data="{
             selectedDate: @js($currentValue),
             enabledDates: @js($enabledDates->toArray()),
-            currentViewMonth: @js($currentViewMonth),
-            calendarData: @js($calendarData),
             
-            // Seleziona una data
             selectDate(dateString) {
-                if (this.isDateEnabled(dateString)) {
+                if (this.enabledDates.includes(dateString)) {
+                    // Data abilitata: seleziona
                     this.selectedDate = dateString;
                     $wire.set('{{ $statePath }}', dateString);
+                } else {
+                    // Data NON abilitata: deseleziona tutto
+                    this.selectedDate = null;
+                    $wire.set('{{ $statePath }}', null);
                 }
             },
-            
-            // Verifica se una data è abilitata
-            isDateEnabled(dateString) {
-                return this.enabledDates.length === 0 || this.enabledDates.includes(dateString);
-            },
-            
-            // Verifica se una data è selezionata
-            isDateSelected(dateString) {
-                return this.selectedDate === dateString;
-            },
-            
-            // Navigazione mese precedente
+            // ✅ Metodi per navigazione mese - chiamata diretta al widget parent
             previousMonth() {
-                const currentDate = new Date(this.currentViewMonth + '-01');
-                currentDate.setMonth(currentDate.getMonth() - 1);
-                
-                this.currentViewMonth = currentDate.getFullYear() + '-' + 
-                    String(currentDate.getMonth() + 1).padStart(2, '0');
-                
-                this.reloadCalendar();
+                $wire.call('previousMonth');
             },
-            
-            // Navigazione mese successivo
             nextMonth() {
-                const currentDate = new Date(this.currentViewMonth + '-01');
-                currentDate.setMonth(currentDate.getMonth() + 1);
-                
-                this.currentViewMonth = currentDate.getFullYear() + '-' + 
-                    String(currentDate.getMonth() + 1).padStart(2, '0');
-                
-                this.reloadCalendar();
-            },
-            
-            // Ricarica i dati del calendario (refresh della pagina per ora)
-            reloadCalendar() {
-                // Per semplicità, ricarichiamo la pagina per aggiornare il calendario
-                // In futuro si può implementare una generazione JavaScript del calendario
-                location.reload();
-            },
-            
-            // Formatta il nome del mese corrente
-            getFormattedMonthName() {
-                const date = new Date(this.currentViewMonth + '-01');
-                return this.calendarData.monthName || date.toLocaleDateString('{{ app()->getLocale() }}', { month: 'long' });
+                $wire.call('nextMonth');
             }
         }"
         class="space-y-4"
     >
-        <!-- Container principale con design One Theme -->
+        <!-- Container calendario -->
         <div class="relative">
-            <!-- Pulsanti di navigazione (design One Theme) -->
+            <!-- Navigazione -->
             <button 
                 type="button" 
-                @click="previousMonth()"
-                class="absolute -left-1.5 -top-1 flex items-center justify-center p-1.5 text-gray-400 hover:text-gray-500"
+                wire:click="previousMonth()"
+                class="absolute -left-1.5 -top-1 flex items-center justify-center h-8 w-8 bg-white border border-gray-300 rounded-full shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 z-10"
             >
-                <span class="sr-only">Previous month</span>
-                <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
+                <svg class="h-4 w-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                 </svg>
             </button>
             
             <button 
                 type="button" 
-                @click="nextMonth()"
-                class="absolute -right-1.5 -top-1 flex items-center justify-center p-1.5 text-gray-400 hover:text-gray-500"
+                wire:click="nextMonth()"
+                class="absolute -right-1.5 -top-1 flex items-center justify-center h-8 w-8 bg-white border border-gray-300 rounded-full shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 z-10"
             >
-                <span class="sr-only">Next month</span>
-                <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 1 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                <svg class="h-4 w-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                 </svg>
             </button>
 
-            <!-- Sezione calendario -->
+            <!-- Calendario -->
             <section class="text-center">
                 <!-- Titolo mese -->
-                <h2 class="text-sm font-semibold text-gray-900" x-text="getFormattedMonthName()">
-                    {{ $monthName ?? 'Loading...' }}
-                </h2>
+                <h2 class="text-sm font-semibold text-gray-900">{{ $monthName }}</h2>
                 
-                <!-- Intestazioni giorni della settimana -->
+                <!-- Intestazioni giorni -->
                 <div class="mt-6 grid grid-cols-7 text-xs/6 text-gray-500">
-                    @foreach($weekdays ?? ['L', 'M', 'M', 'G', 'V', 'S', 'D'] as $weekday)
+                    @foreach($weekdays as $weekday)
                         <div>{{ $weekday }}</div>
                     @endforeach
                 </div>
@@ -296,64 +266,54 @@
                 <!-- Griglia calendario -->
                 <div class="isolate mt-2 grid grid-cols-7 gap-px rounded-lg bg-gray-200 text-sm shadow ring-1 ring-gray-200">
                     @if(isset($calendarData['weeks']) && is_array($calendarData['weeks']))
-                        @foreach($calendarData['weeks'] as $weekIndex => $week)
-                            @foreach($week as $dayIndex => $day)
+                        @foreach($calendarData['weeks'] as $week)
+                            @foreach($week as $day)
                                 @php
-                                    $isFirstWeekFirstDay = $weekIndex === 0 && $dayIndex === 0;
-                                    $isFirstWeekLastDay = $weekIndex === 0 && $dayIndex === 6;
-                                    $isLastWeekFirstDay = $weekIndex === count($calendarData['weeks']) - 1 && $dayIndex === 0;
-                                    $isLastWeekLastDay = $weekIndex === count($calendarData['weeks']) - 1 && $dayIndex === 6;
+                                    $isEnabled = $enabledDates->contains($day['dateString']);
+                                    $isSelected = $currentValue === $day['dateString'];
+                                    $isCurrentMonth = $day['isCurrentMonth'];
                                     
-                                    $buttonClasses = ['relative py-1.5 hover:bg-gray-100 focus:z-10'];
-                                    
-                                    if ($day['isCurrentMonth']) {
-                                        $buttonClasses[] = 'bg-white text-gray-900';
+                                    // ✅ Pre-calcolo classi CSS per performance
+                                    if ($isSelected) {
+                                        $classes = 'relative py-2 px-1 text-sm font-semibold bg-blue-600 text-white ring-2 ring-blue-600 ring-offset-2 shadow-lg z-10';
+                                    } elseif ($isEnabled && $isCurrentMonth) {
+                                        $classes = 'relative py-2 px-1 text-sm font-semibold bg-green-50 text-green-700 border-2 border-green-200 hover:bg-green-100 cursor-pointer';
+                                    } elseif ($isCurrentMonth) {
+                                        $classes = 'relative py-2 px-1 text-sm font-medium bg-gray-50 text-gray-400 border border-gray-200 cursor-not-allowed opacity-60';
                                     } else {
-                                        $buttonClasses[] = 'bg-gray-50 text-gray-400';
-                                    }
-                                    
-                                    if ($isFirstWeekFirstDay) $buttonClasses[] = 'rounded-tl-lg';
-                                    if ($isFirstWeekLastDay) $buttonClasses[] = 'rounded-tr-lg';
-                                    if ($isLastWeekFirstDay) $buttonClasses[] = 'rounded-bl-lg';
-                                    if ($isLastWeekLastDay) $buttonClasses[] = 'rounded-br-lg';
-                                    
-                                    $circleClasses = ['mx-auto flex size-7 items-center justify-center rounded-full'];
-                                    
-                                    if ($day['isToday']) {
-                                        $circleClasses[] = 'bg-indigo-600 font-semibold text-white';
-                                    } elseif ($day['isSelected']) {
-                                        $circleClasses[] = 'bg-indigo-100 font-semibold text-indigo-600';
+                                        $classes = 'relative py-2 px-1 text-sm font-medium bg-gray-50/30 text-gray-300 cursor-not-allowed opacity-40';
                                     }
                                 @endphp
                                 
                                 <button 
                                     type="button" 
-                                    class="{{ implode(' ', $buttonClasses) }}"
-                                    @click="selectDate('{{ $day['dateString'] }}')"
-                                    @if(!$day['isEnabled']) disabled @endif
+                                    x-on:click="selectDate('{{ $day['dateString'] }}')"
+                                    class="{{ $classes }}"
                                 >
-                                    <time 
-                                        datetime="{{ $day['datetime'] }}" 
-                                        class="{{ implode(' ', $circleClasses) }}"
-                                    >
-                                        {{ $day['day'] }}
-                                    </time>
+                                    {{ $day['day'] }}
+                                    
+                                    @if($isEnabled && $isCurrentMonth)
+                                        <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                                    @endif
+                                    
+                                    @if($isSelected)
+                                        <span class="absolute -top-1 -right-1 w-2 h-2 bg-blue-400 rounded-full"></span>
+                                    @endif
                                 </button>
                             @endforeach
                         @endforeach
                     @else
-                        <!-- Fallback in caso di dati mancanti -->
-                        <div class="col-span-7 p-4 text-center text-gray-500">
-                            Caricamento calendario...
-                        </div>
+                        <div class="col-span-7 p-4 text-center text-gray-500">Caricamento calendario...</div>
                     @endif
                 </div>
+
+               
             </section>
         </div>
     </div>
 </x-dynamic-component>
 
-{{-- Stili CSS minimi per transizioni --}}
+{{-- CSS minimo --}}
 <style>
 .inline-date-picker button {
     transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);

@@ -337,6 +337,30 @@ class InlineDatePicker extends DatePicker
     }
 
     /**
+     * Imposta il mese corrente di visualizzazione.
+     * 
+     * @param string $month Formato Y-m (es. '2025-06')
+     * @return static
+     */
+    public function currentViewMonth(string $month): static
+    {
+        // ✅ Validazione robusta - fallback se vuoto o invalido
+        if (empty($month) || !preg_match('/^\d{4}-\d{2}$/', $month)) {
+            $this->currentViewMonth = now()->format('Y-m');
+        } else {
+            // Verifica che sia una data valida
+            try {
+                Carbon::createFromFormat('Y-m', $month);
+                $this->currentViewMonth = $month;
+            } catch (\Exception $e) {
+                $this->currentViewMonth = now()->format('Y-m');
+            }
+        }
+        
+        return $this;
+    }
+
+    /**
      * Ottiene le date abilitate risolte.
      * 
      * @return Collection<int, string>
@@ -370,6 +394,7 @@ class InlineDatePicker extends DatePicker
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $firstDay = $this->displayDate->copy()->startOfMonth()->startOfWeek(Carbon::MONDAY);
         $lastDay = $this->displayDate->copy()->endOfMonth()->endOfWeek(Carbon::SUNDAY);
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
@@ -380,6 +405,13 @@ class InlineDatePicker extends DatePicker
             : $this->displayDate->copy()->startOfMonth();
             
 =======
+=======
+        // ✅ Validazione di sicurezza - assicura che currentViewMonth sia valido
+        if (empty($this->currentViewMonth) || !preg_match('/^\d{4}-\d{2}$/', $this->currentViewMonth)) {
+            $this->currentViewMonth = now()->format('Y-m');
+        }
+        
+>>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
         $targetMonth = Carbon::createFromFormat('Y-m', $this->currentViewMonth)->startOfMonth();
 >>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
         $firstDay = $targetMonth->copy()->startOfWeek(Carbon::MONDAY);
