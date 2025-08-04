@@ -26,6 +26,7 @@
             selectedDate: @js($currentValue),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             
             
             selectDate(dateString) {
@@ -55,6 +56,18 @@
                 }
 <<<<<<< HEAD
 >>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+            
+            
+            selectDate(dateString) {
+                this.selectedDate = dateString;
+                $wire.set('{{ $statePath }}', dateString);
+
+            },
+            deSelectDate(){
+                this.selectedDate = null;
+                $wire.set('{{ $statePath }}', null);
+>>>>>>> 83367146 (✨ (lang files): add new Italian language translations for appointment)
             },
             // ✅ Metodi per navigazione mese - chiamata diretta al widget parent
             previousMonth() {
@@ -174,22 +187,33 @@
 >>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
 =======
                                         $classes = 'relative py-2 px-1 text-sm font-semibold bg-[#FF5F7E] text-white ring-2 ring-[#FF5F7E] shadow-lg z-10';
+                                        $onclick = "deSelectDate()";
                                     } elseif ($isEnabled && $isCurrentMonth) {
                                         $classes = 'relative py-2 px-1 text-sm font-semibold bg-blue-100 text-[#272C4D] border-2 border-blue-300 cursor-pointer hover:scale-105 transform transition-all duration-200';
+<<<<<<< HEAD
 >>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
+=======
+                                        $onclick = "selectDate('".$day['dateString']."')";
+>>>>>>> 83367146 (✨ (lang files): add new Italian language translations for appointment)
                                     } elseif ($isCurrentMonth) {
                                         $classes = 'relative py-2 px-1 text-sm font-medium bg-gray-50 text-gray-400 border border-gray-200 cursor-not-allowed opacity-60';
+                                        $onclick = "deSelectDate()";
                                     } else {
                                         $classes = 'relative py-2 px-1 text-sm font-medium bg-gray-50/30 text-gray-300 cursor-not-allowed opacity-40';
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
 =======
 >>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+                                        $onclick = "deSelectDate()";
+>>>>>>> 83367146 (✨ (lang files): add new Italian language translations for appointment)
                                     }
                                 @endphp
                                 
                                 <button 
                                     type="button" 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                                     x-on:click="{{ $onclick }}"
@@ -199,6 +223,9 @@
 =======
                                     x-on:click="selectDate('{{ $day['dateString'] }}')"
 >>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+                                    x-on:click="{{ $onclick }}"
+>>>>>>> 83367146 (✨ (lang files): add new Italian language translations for appointment)
                                     class="{{ $classes }}"
                                 >
                                     {{ $day['day'] }}
