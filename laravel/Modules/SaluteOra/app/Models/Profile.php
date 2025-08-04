@@ -89,6 +89,11 @@ class Profile extends BaseProfile{
 
 class Profile extends BaseProfile{
     /** @var string */
+<<<<<<< HEAD
     protected $connection = 'patient';
 } 
 >>>>>>> 54f4fa16 (.)
+=======
+    protected $connection = 'salute_ora';
+} 
+>>>>>>> 2e1ed088 (chore(docs): delete troubleshooting.md as it is no longer relevant)

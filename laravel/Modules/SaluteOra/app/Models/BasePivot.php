@@ -32,10 +32,14 @@ abstract class BasePivot extends Pivot
 
     /** @var string */
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $connection = 'salute_ora';
 =======
     protected $connection = 'patient';
 >>>>>>> 54f4fa16 (.)
+=======
+    protected $connection = 'salute_ora';
+>>>>>>> 2e1ed088 (chore(docs): delete troubleshooting.md as it is no longer relevant)
 
     /** @var list<string> */
     protected $appends = [];

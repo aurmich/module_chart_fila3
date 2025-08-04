@@ -57,11 +57,15 @@ return array (
       'helper_text' => '',
 =======
       'helper_text' => 'email',
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
       'placeholder' => 'email',
 =======
       'helper_text' => 'email',
 >>>>>>> 54f4fa16 (.)
+=======
+      'placeholder' => 'email',
+>>>>>>> 2e1ed088 (chore(docs): delete troubleshooting.md as it is no longer relevant)
     ),
     'password' => 
     array (
