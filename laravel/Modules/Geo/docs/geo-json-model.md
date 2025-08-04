@@ -144,6 +144,9 @@ Select::make('cap')
 - Xot/module-structure.md
 - SaluteOra/docs/geo-integration.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 39ba294d (♻️ (Cap, City, Province, Region): deprecate legacy models and unify into a single Comune model to simplify data access and improve maintainability)
 
 ## Confronto: GeoJsonModel vs Laravel Sushi
 
@@ -222,6 +225,7 @@ class Comune extends GeoJsonModel
 
 - Tutti i filtri e le select dinamiche ora usano solo il modello Comune.
 - Vedi anche [geo_entities.md](./geo_entities.md) per motivazione e percentuali di adozione.
+<<<<<<< HEAD
 
 ## Analisi: Comune come modello Sushi
 
@@ -495,3 +499,5 @@ trait SushiToJsons
 - Vedi anche [geo_entities.md](./geo_entities.md) e [squire-integration.md](./squire-integration.md) per altri confronti e strategie.
 =======
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+>>>>>>> 39ba294d (♻️ (Cap, City, Province, Region): deprecate legacy models and unify into a single Comune model to simplify data access and improve maintainability)

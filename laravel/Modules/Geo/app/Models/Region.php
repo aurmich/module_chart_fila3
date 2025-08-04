@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Geo\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Get;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -67,15 +68,23 @@ class Region extends BaseModel
  * Vedi Geo/docs/geo-json-model.md, module_geo.md, Xot/module-structure.md
  */
 
+=======
+>>>>>>> 39ba294d (♻️ (Cap, City, Province, Region): deprecate legacy models and unify into a single Comune model to simplify data access and improve maintainability)
 use Illuminate\Support\Collection;
 
-class Region extends GeoJsonModel
+/**
+ * @deprecated Usare Modules\Geo\Models\Comune. Questa classe è solo una facciata legacy per compatibilità.
+ * Tutti i metodi delegano a Comune.
+ * Vedi Geo/docs/geo_entities.md
+ */
+class Region
 {
     /**
-     * Restituisce la lista unica delle regioni.
+     * Restituisce tutte le regioni uniche (proxy).
      */
     public static function all(): Collection
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         return static::loadData()->pluck('region')->unique()->values();
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
@@ -84,5 +93,8 @@ class Region extends GeoJsonModel
 
         return $res;
 >>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
+=======
+        return Comune::allRegions();
+>>>>>>> 39ba294d (♻️ (Cap, City, Province, Region): deprecate legacy models and unify into a single Comune model to simplify data access and improve maintainability)
     }
 }

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Geo\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Get;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -73,20 +74,39 @@ class Province extends BaseModel
  * Vedi Geo/docs/geo-json-model.md, module_geo.md, Xot/module-structure.md
  */
 
+=======
+>>>>>>> 39ba294d (♻️ (Cap, City, Province, Region): deprecate legacy models and unify into a single Comune model to simplify data access and improve maintainability)
 use Illuminate\Support\Collection;
 
-class Province extends GeoJsonModel
+/**
+ * @deprecated Usare Modules\Geo\Models\Comune. Questa classe è solo una facciata legacy per compatibilità.
+ * Tutti i metodi delegano a Comune.
+ * Vedi Geo/docs/geo_entities.md
+ */
+class Province
 {
     /**
-     * Restituisce la lista unica delle province per regione.
+     * Restituisce tutte le province uniche (proxy).
      */
-    public static function byRegion(string $region): Collection
+    public static function all(): Collection
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         return static::loadData()->where('region', $region)->pluck('province')->unique()->values();
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
 =======
         return static::loadData()->where('regione.codice', $region)->pluck('provincia')->unique()->values();
 >>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
+=======
+        return Comune::allProvinces();
+>>>>>>> 39ba294d (♻️ (Cap, City, Province, Region): deprecate legacy models and unify into a single Comune model to simplify data access and improve maintainability)
+    }
+
+    /**
+     * Restituisce le province per regione (proxy).
+     */
+    public static function byRegion(string $regionCode): Collection
+    {
+        return Comune::byRegion($regionCode)->pluck('provincia.nome', 'provincia.codice')->unique();
     }
 }
