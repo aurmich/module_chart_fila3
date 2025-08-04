@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/nowendwell/laravel-terms
+=======
+>>>>>>> 4211a572 (merge docs folders)
 https://github.com/nowendwell/laravel-terms
 
 
@@ -7,6 +10,9 @@ https://github.com/nowendwell/laravel-terms
 https://dev.to/filamentmastery/adding-terms-and-conditions-acceptance-to-filament-registration-2nhc
 
 
+<<<<<<< HEAD
 =======
 https://github.com/nowendwell/laravel-terms
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 4211a572 (merge docs folders)
