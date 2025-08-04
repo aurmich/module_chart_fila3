@@ -83,12 +83,16 @@ class Password implements Rule
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2099645a (.)
+=======
+>>>>>>> d23ba493 (add calendar)
 // app/Actions/EncryptionAction.php
 class EncryptionAction
 {
     use QueueableAction;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 // app/Services/EncryptionService.php
@@ -100,6 +104,8 @@ class EncryptionService
 // app/Services/EncryptionService.php
 class EncryptionService
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 {
     public function encrypt($data)
     {
@@ -118,12 +124,16 @@ class EncryptionService
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2099645a (.)
+=======
+>>>>>>> d23ba493 (add calendar)
 // app/Actions/SanitizationAction.php
 class SanitizationAction
 {
     use QueueableAction;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 // app/Services/SanitizationService.php
@@ -135,6 +145,8 @@ class SanitizationService
 // app/Services/SanitizationService.php
 class SanitizationService
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 {
     public function sanitize($input)
     {
@@ -258,3 +270,9 @@ export const validateInput = (input, pattern) => {
 - [Componenti](../components.md)
 - [Guida allo Stile](../style_guide.md)
 - [Best Practices](../best_practices.md) 
+
+## Collegamenti tra versioni di security.md
+* [security.md](laravel/Modules/Gdpr/docs/packages/security.md)
+* [security.md](laravel/Modules/Cms/docs/frontoffice/security.md)
+* [security.md](laravel/Themes/One/docs/security.md)
+

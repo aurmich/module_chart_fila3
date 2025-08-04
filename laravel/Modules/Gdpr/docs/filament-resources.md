@@ -51,6 +51,7 @@ Gestisce le richieste di accesso, modifica o cancellazione dei dati personali.
 - [Documentazione Generale GDPR](./readme.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Documentazione Generale GDPR](./readme.md)
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
@@ -62,5 +63,8 @@ Gestisce le richieste di accesso, modifica o cancellazione dei dati personali.
 >>>>>>> 9df8f556 (fix .md)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+- [Documentazione Generale GDPR](./README.md)
+>>>>>>> d23ba493 (add calendar)
 - [Configurazione del Modulo](./configuration.md)
 - [Gestione dei Consensi](./consent-management.md)

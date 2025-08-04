@@ -33,6 +33,7 @@ class XotData extends Data implements Wireable
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public string $param_name = 'noset';
     public string $adm_home = '01';
     public ?string $adm_theme = ''; // ' => 'AdminLTE',
@@ -68,51 +69,33 @@ class XotData extends Data implements Wireable
 =======
 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
     public string $param_name = 'noset';
-
     public string $adm_home = '01';
-
     public ?string $adm_theme = ''; // ' => 'AdminLTE',
-
     // public bool $enable_ads;//' => '1',
     public string $primary_lang = 'it';
-
     public string $pub_theme;
-
     // ' => 'One',
     public string $search_action = 'it/videos';
-
     public bool $show_trans_key = false;
-
     public string $register_type = '0';
-
     public string $verification_type = '';
-
     public bool $login_verified = false;
-
     public bool $disable_frontend_dynamic_route = false;
-
     public bool $disable_admin_dynamic_route = false;
-
     public bool $disable_database_notifications = true;
-
     public bool $register_adm_theme = false;
-
     public bool $register_pub_theme = false;
-
     public bool $register_collective = false;
-
     public string $team_class = 'Modules\User\Models\Team'; // = Team::class;
-
     public string $tenant_class = 'Modules\User\Models\Tenant'; // = Team::class;
-
     public string $membership_class = 'Modules\User\Models\Membership'; // = Membership::class;
-
     public string $tenant_pivot_class = 'Modules\User\Models\TenantUser'; // = Membership::class;
-
     public ?string $super_admin = null;
-
     public string $video_player = 'html5';
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -122,6 +105,8 @@ class XotData extends Data implements Wireable
 =======
 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
     private static ?self $instance = null;
 
     /**
@@ -166,6 +151,7 @@ class XotData extends Data implements Wireable
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
@@ -176,6 +162,10 @@ class XotData extends Data implements Wireable
 >>>>>>> ca5e1eaf (.)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+
+
+>>>>>>> d23ba493 (add calendar)
     public function getUserByEmail(string $email): UserContract
     {
         $user_class = $this->getUserClass();
@@ -266,16 +256,21 @@ class XotData extends Data implements Wireable
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> 15cb84fb (fix collisions)
+=======
+
+>>>>>>> d23ba493 (add calendar)
         // Verifica che la classe esista
         Assert::classExists($class, '['.$class.']['.__LINE__.']['.class_basename($this).']');
-        
+
         // Verifica che sia un Model e implementi ProfileContract
         Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
         Assert::implementsInterface($class, ProfileContract::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -298,6 +293,9 @@ class XotData extends Data implements Wireable
 =======
         
 >>>>>>> 15cb84fb (fix collisions)
+=======
+
+>>>>>>> d23ba493 (add calendar)
         /** @var class-string<Model&ProfileContract> */
         return $class;
     }
@@ -354,6 +352,7 @@ class XotData extends Data implements Wireable
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
@@ -364,6 +363,9 @@ class XotData extends Data implements Wireable
 =======
         
 >>>>>>> 15cb84fb (fix collisions)
+=======
+
+>>>>>>> d23ba493 (add calendar)
         return $result === true;
     }
 
@@ -375,6 +377,7 @@ class XotData extends Data implements Wireable
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
@@ -385,6 +388,9 @@ class XotData extends Data implements Wireable
 =======
         
 >>>>>>> 15cb84fb (fix collisions)
+=======
+
+>>>>>>> d23ba493 (add calendar)
         $user_id = (string) authId();
         $this->profile = $this->getProfileModelByUserId($user_id);
         Assert::implementsInterface($this->profile, ProfileContract::class, '['.__LINE__.']['.class_basename($this).']');
@@ -415,6 +421,7 @@ class XotData extends Data implements Wireable
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
@@ -425,6 +432,9 @@ class XotData extends Data implements Wireable
 =======
             
 >>>>>>> 15cb84fb (fix collisions)
+=======
+
+>>>>>>> d23ba493 (add calendar)
             return $path;
         } catch (\Exception $e) {
             throw new \Exception('realpath not find dir['.$path0.']'.PHP_EOL.'['.$e->getMessage().']');
@@ -438,6 +448,7 @@ class XotData extends Data implements Wireable
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getUserClassByType(string $type): string{
 =======
     public function getUserTypeClass(string $type): string{
@@ -448,6 +459,9 @@ class XotData extends Data implements Wireable
 =======
     public function getUserTypeClass(string $type): string{
 >>>>>>> 15cb84fb (fix collisions)
+=======
+    public function getUserClassByType(string $type): string{
+>>>>>>> d23ba493 (add calendar)
         $user_class = $this->getUserClass();
         $userInstance = app($user_class);
         $types=$userInstance->getChildTypes();
@@ -465,12 +479,30 @@ class XotData extends Data implements Wireable
         return $class;
     }
 
-    public function getUserTypeResourceClass(string $type): string{
-        $class=$this->getUserTypeClass($type);
-        $resourceClass=Str::of($class)
-            ->replace('\Models\\', '\Filament\Resources\\')
+
+
+    public function getUserResourceClassByType(string $type): string {
+        $class = $this->getUserClassByType($type);
+
+        // Extract the module name from the class namespace
+        $moduleName = Str::before(Str::after($class, 'Modules\\'), '\\');
+
+        // Build the resource class path
+        $resourceClass = Str::of($class)
+            ->replace('\\Models\\', '\\Filament\\Resources\\')
             ->append('Resource')
             ->toString();
+
+        // If the class doesn't exist, try the alternative path (app/Filament/Resources)
+        if (!class_exists($resourceClass)) {
+            $resourceClass = 'Modules\\' . $moduleName . '\\app\\Filament\\Resources\\' .
+                          class_basename($class) . 'Resource';
+        }
+
+        if (!class_exists($resourceClass)) {
+            throw new \RuntimeException("Resource class not found for type: {$type}. Tried: {$resourceClass}");
+        }
+
         return $resourceClass;
     }
 

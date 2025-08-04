@@ -160,7 +160,6 @@ Il codice del progetto **deve** aderire ai seguenti principi fondamentali:
 <<<<<<< HEAD
 =======
 b6f667c (.)
-
 Il codice del progetto il progetto **deve** aderire ai seguenti principi fondamentali:
 >>>>>>> aurmich/dev
 =======
@@ -370,6 +369,7 @@ b6f667c (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
@@ -381,6 +381,8 @@ b6f667c (.)
 =======
 
 >>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
+=======
+>>>>>>> d23ba493 (add calendar)
             'tax_code' => ['required', 'string', 'size:16', 'unique:patients,tax_code'],
             'first_name' => ['required', 'string', 'max:255'],
             'last_name' => ['required', 'string', 'max:255'],
@@ -680,6 +682,7 @@ b6f667c (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
@@ -691,6 +694,8 @@ b6f667c (.)
 =======
 
 >>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
+=======
+>>>>>>> d23ba493 (add calendar)
 ## Collegamenti Correlati
 
 - [Convenzioni](../../../docs/conventions.md)

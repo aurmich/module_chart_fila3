@@ -3,10 +3,14 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\SaluteOra\Http\Middleware;
 =======
 namespace Modules\SaluteOra\app\Http\Middleware;
 >>>>>>> 2bcfd382 (fix Address)
+=======
+namespace Modules\SaluteOra\Http\Middleware;
+>>>>>>> d23ba493 (add calendar)
 
 use Filament\Facades\Filament;
 use Filament\Http\Middleware\IdentifyTenant;
@@ -54,10 +58,14 @@ class CrossDatabaseTenantMiddleware extends IdentifyTenant
     /**
      * Registra uno scope personalizzato per gestire correttamente le query cross-database
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
      * 
 >>>>>>> 2bcfd382 (fix Address)
+=======
+     *
+>>>>>>> d23ba493 (add calendar)
      * @param Model $tenant Il tenant corrente
      * @return void
      */
@@ -84,10 +92,14 @@ class CrossDatabaseTenantMiddleware extends IdentifyTenant
             {
                 $relationshipName = $this->getOwnershipRelationship($model);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
                 
 >>>>>>> 2bcfd382 (fix Address)
+=======
+
+>>>>>>> d23ba493 (add calendar)
                 if (empty($relationshipName) || !method_exists($model, $relationshipName)) {
                     return;
                 }
@@ -106,12 +118,17 @@ class CrossDatabaseTenantMiddleware extends IdentifyTenant
                         ->join(
                             'saluteora_data.doctor_studio',
 <<<<<<< HEAD
+<<<<<<< HEAD
                             $tenantTable . '.id',
                             '=',
 =======
                             $tenantTable . '.id', 
                             '=', 
 >>>>>>> 2bcfd382 (fix Address)
+=======
+                            $tenantTable . '.id',
+                            '=',
+>>>>>>> d23ba493 (add calendar)
                             'saluteora_data.doctor_studio.studio_id'
                         )
                         ->whereColumn(
@@ -127,6 +144,7 @@ class CrossDatabaseTenantMiddleware extends IdentifyTenant
             {
                 $resource = Filament::getResourceForModel($model::class);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
                 if ($resource === null) {
                     return null;
@@ -138,15 +156,22 @@ class CrossDatabaseTenantMiddleware extends IdentifyTenant
 
 =======
                 
+=======
+
+>>>>>>> d23ba493 (add calendar)
                 if ($resource === null) {
                     return null;
                 }
-                
+
                 if (property_exists($resource, 'tenantOwnershipRelationshipName')) {
                     return $resource::$tenantOwnershipRelationshipName;
                 }
+<<<<<<< HEAD
                 
 >>>>>>> 2bcfd382 (fix Address)
+=======
+
+>>>>>>> d23ba493 (add calendar)
                 return (string) str($this->tenantModel)
                     ->classBasename()
                     ->pluralStudly()
@@ -160,10 +185,14 @@ class CrossDatabaseTenantMiddleware extends IdentifyTenant
     /**
      * Risolve il tenant dalla richiesta
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
      * 
 >>>>>>> 2bcfd382 (fix Address)
+=======
+     *
+>>>>>>> d23ba493 (add calendar)
      * @param \Illuminate\Http\Request $request
      * @return Model|null
      */

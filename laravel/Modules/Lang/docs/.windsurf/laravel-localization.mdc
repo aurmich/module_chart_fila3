@@ -6,13 +6,17 @@ This document provides metadata for Windsurf about the integration of `mcamara/l
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 76e32659 (feat(docs): add new rules for SVG icons, XotBaseListRecords, icon naming, and model states best practices to improve consistency and maintainability across modules)
+=======
+>>>>>>> d23ba493 (add calendar)
 # Laravel Localization Metadata for Windsurf
 
 ## Context
 
 This document provides metadata for Windsurf about the integration of `mcamara/laravel-localization` into the `saluteora` project.
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
@@ -20,6 +24,8 @@ This document provides metadata for Windsurf about the integration of `mcamara/l
 >>>>>>> 76e32659 (feat(docs): add new rules for SVG icons, XotBaseListRecords, icon naming, and model states best practices to improve consistency and maintainability across modules)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 
 ## Key Points
 
@@ -34,8 +40,11 @@ This document provides metadata for Windsurf about the integration of `mcamara/l
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 76e32659 (feat(docs): add new rules for SVG icons, XotBaseListRecords, icon naming, and model states best practices to improve consistency and maintainability across modules)
+=======
+>>>>>>> d23ba493 (add calendar)
 
 # Regola: Vietato usare chiavi che terminano con `.navigation` nei file di traduzione
 
@@ -54,9 +63,12 @@ This document provides metadata for Windsurf about the integration of `mcamara/l
   - [filament-translations.md](../filament-translations.md)
   - [docs SaluteOra](../../../SaluteOra/docs/translations.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 76e32659 (feat(docs): add new rules for SVG icons, XotBaseListRecords, icon naming, and model states best practices to improve consistency and maintainability across modules)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)

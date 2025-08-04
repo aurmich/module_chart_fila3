@@ -1,15 +1,27 @@
 ---
+<<<<<<< HEAD
 description: Regole complete per l'utilizzo di PHPStan in Laraxot/<nome progetto>
+=======
+description: Regole complete per l'utilizzo di PHPStan in Laraxot/PTVX
+>>>>>>> d23ba493 (add calendar)
 globs: ["**/*.php"]
 alwaysApply: true
 ---
 
+<<<<<<< HEAD
 # Regole PHPStan Complete per Laraxot/<nome progetto>
+=======
+# Regole PHPStan Complete per Laraxot/PTVX
+>>>>>>> d23ba493 (add calendar)
 
 ## Principi Fondamentali
 
 - **Livello Minimo:** Utilizzare PHPStan livello 9 per tutto il codice nuovo
+<<<<<<< HEAD
 - **Esecuzione:** Eseguire sempre dalla directory `/var/www/html/<nome progetto>/laravel`
+=======
+- **Esecuzione:** Eseguire sempre dalla directory `/var/www/html/ptvx/laravel`
+>>>>>>> d23ba493 (add calendar)
 - **Tipizzazione Rigorosa:** Evitare `mixed` a meno che non sia assolutamente necessario
 - **Documentazione:** Documentare ogni pattern di risoluzione in `docs/`
 - **Aggiornamento Continuo:** Aggiornare le rules e configurazioni PHPStan regolarmente
@@ -17,7 +29,11 @@ alwaysApply: true
 ## Esecuzione Corretta
 
 ```bash
+<<<<<<< HEAD
 cd /var/www/html/<nome progetto>/laravel
+=======
+cd /var/www/html/ptvx/laravel
+>>>>>>> d23ba493 (add calendar)
 ./vendor/bin/phpstan analyze [target] --level=9 --memory-limit=2G
 ```
 
@@ -51,7 +67,11 @@ class MioModello extends BaseModel
 {
     /** @var list<string> */
     protected $fillable = ['nome', 'stabi'];
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     /**
      * @return array<string, string>
      */
@@ -186,7 +206,11 @@ public function definition(): array
 phpstan:
   stage: test
   script:
+<<<<<<< HEAD
     - cd /var/www/html/<nome progetto>/laravel
+=======
+    - cd /var/www/html/ptvx/laravel
+>>>>>>> d23ba493 (add calendar)
     - ./vendor/bin/phpstan analyze Modules --level=9
   only:
     - merge_requests
@@ -266,5 +290,10 @@ $variabile = $oggetto->proprietaNonStandard;
 ## Risorse
 
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
+<<<<<<< HEAD
 - [Modules/Xot/docs/PHPSTAN_LIVELLO10_LINEE_GUIDA.md](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/PHPSTAN_LIVELLO10_LINEE_GUIDA.md)
 - [docs/PHPSTAN_LEVEL10_FIXES.md](/var/www/html/<nome progetto>/docs/PHPSTAN_LEVEL10_FIXES.md)
+=======
+- [Modules/Xot/docs/PHPSTAN_LIVELLO10_LINEE_GUIDA.md](/var/www/html/ptvx/laravel/Modules/Xot/docs/PHPSTAN_LIVELLO10_LINEE_GUIDA.md)
+- [docs/PHPSTAN_LEVEL10_FIXES.md](/var/www/html/ptvx/docs/PHPSTAN_LEVEL10_FIXES.md)
+>>>>>>> d23ba493 (add calendar)

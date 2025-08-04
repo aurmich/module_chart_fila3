@@ -73,8 +73,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> d23ba493 (add calendar)
 ## Collegamenti sulla risoluzione dei conflitti
 
 - [Risoluzione conflitti nel modulo Tenant](risoluzione_conflitti.md)
@@ -82,11 +85,14 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 ---
 

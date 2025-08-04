@@ -475,6 +475,7 @@ Per una lista completa di tutti i collegamenti tra i README.md, consultare il fi
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 > Per dettagli sulla risoluzione dei conflitti e sugli standard architetturali, vedi anche [INDEX.md](./INDEX.md) e la doc globale [../../../../docs/README.md](../../../../docs/README.md)
 >>>>>>> 54f4fa16 (.)
 =======
@@ -553,3 +554,6 @@ b0005ff (.)
 >>>>>>> 15cb84fb (fix collisions)
 =======
 >>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
+=======
+> Per dettagli sulla risoluzione dei conflitti e sugli standard architetturali, vedi anche [INDEX.md](./INDEX.md) e la doc globale [../../../../docs/README.md](../../../../docs/README.md)
+>>>>>>> d23ba493 (add calendar)

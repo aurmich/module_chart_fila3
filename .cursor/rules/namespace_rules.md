@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Regole per i Namespace in Laraxot <nome progetto>
+=======
+# Regole per i Namespace in Laraxot PTVX
+>>>>>>> d23ba493 (add calendar)
 
 ## Regola Fondamentale
 
@@ -59,4 +63,8 @@ class RatingServiceProvider extends XotBaseServiceProvider
     
     // implementazione...
 }
+<<<<<<< HEAD
 ``` 
+=======
+``` 
+>>>>>>> d23ba493 (add calendar)

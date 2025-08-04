@@ -4,8 +4,8 @@
 <<<<<<< HEAD
 
 5693302 (.)
-
 b6f667c (.)
+<<<<<<< HEAD
 
 =======
 =======
@@ -23,6 +23,8 @@ b6f667c (.)
 =======
 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 # Correzioni PHPStan nel Modulo Xot
 
 ## Correzioni Implementate
@@ -150,6 +152,7 @@ aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 b6f667c (.)
 
@@ -164,6 +167,9 @@ b6f667c (.)
 b6f667c (.)
 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+b6f667c (.)
+>>>>>>> d23ba493 (add calendar)
 # Risoluzione Problemi PHPStan nel Modulo Xot
 
 Questo documento descrive i principali problemi PHPStan risolti nel modulo Xot e le strategie adottate per la loro risoluzione.
@@ -275,6 +281,7 @@ aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 b6f667c (.)
 
@@ -289,6 +296,9 @@ b6f667c (.)
 b6f667c (.)
 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+b6f667c (.)
+>>>>>>> d23ba493 (add calendar)
     // ...
 }
 ```
@@ -299,8 +309,8 @@ b6f667c (.)
 <<<<<<< HEAD
 
 5693302 (.)
-
 b6f667c (.)
+<<<<<<< HEAD
 
 =======
 =======
@@ -318,6 +328,8 @@ b6f667c (.)
 =======
 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 ### 2. Validazione Dati
 ```php
 /**
@@ -342,6 +354,7 @@ aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 b6f667c (.)
 
@@ -356,6 +369,9 @@ b6f667c (.)
 b6f667c (.)
 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+b6f667c (.)
+>>>>>>> d23ba493 (add calendar)
 ### Servizi e Dependency Injection
 
 **Problema**: Metodi che utilizzano dependency injection non avevano tipi ben definiti.
@@ -384,6 +400,7 @@ aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 b6f667c (.)
 
@@ -398,6 +415,9 @@ b6f667c (.)
 b6f667c (.)
 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+b6f667c (.)
+>>>>>>> d23ba493 (add calendar)
     // ...
 }
 ```
@@ -408,8 +428,8 @@ b6f667c (.)
 <<<<<<< HEAD
 
 5693302 (.)
-
 b6f667c (.)
+<<<<<<< HEAD
 
 =======
 =======
@@ -427,6 +447,8 @@ b6f667c (.)
 =======
 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 ### 3. Gestione Relazioni
 ```php
 /**
@@ -781,6 +803,7 @@ aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 b6f667c (.)
 
@@ -795,6 +818,9 @@ b6f667c (.)
 b6f667c (.)
 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+b6f667c (.)
+>>>>>>> d23ba493 (add calendar)
 ### Problemi con le Relazioni Eloquent
 
 **Problema**: PHPStan non riconosceva correttamente i tipi restituiti dalle relazioni Eloquent.
@@ -964,6 +990,7 @@ aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 b6f667c (.)
 
@@ -978,3 +1005,6 @@ b6f667c (.)
 b6f667c (.)
 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+b6f667c (.)
+>>>>>>> d23ba493 (add calendar)

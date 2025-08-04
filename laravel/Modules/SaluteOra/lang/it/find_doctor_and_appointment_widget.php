@@ -434,6 +434,9 @@ return array (
       'label' => 'appointment_time',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
     'test_field' => 
     array (
       'description' => 'test_field',
@@ -441,6 +444,7 @@ return array (
       'placeholder' => 'test_field',
       'label' => 'test_field',
     ),
+<<<<<<< HEAD
     'selected_studio' => 
     array (
       'description' => 'selected_studio',
@@ -497,6 +501,8 @@ return array (
 >>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> d23ba493 (add calendar)
   ),
 );
 >>>>>>> aurmich/dev

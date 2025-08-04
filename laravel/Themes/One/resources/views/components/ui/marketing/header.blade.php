@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
 <header class="text-white bg-emerald-700">
 	<div class="h-12 bg-emerald-900 min-h-12 navbar">
 		<div class="flex justify-between w-full max-w-screen-xl mx-auto">
 			<div class="flex-1 py-1">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 				<a class="text-sm" href="#">@lang('pub_theme::common.region_name')</a>
@@ -12,6 +16,9 @@
 =======
 				<a class="text-sm" href="#">Nome della Regione</a>
 >>>>>>> 54f4fa16 (.)
+=======
+				<a class="text-sm" href="#">Nome della Regione</a>
+>>>>>>> d23ba493 (add calendar)
 			</div>
 			<div class="flex-none">
 				<ul class="px-1 menu menu-horizontal">
@@ -22,6 +29,7 @@
 							<x-heroicon-o-user class="size-4" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 							<div class="hidden md:block">@lang('pub_theme::common.login_area')</div>
 =======
 							<div class="hidden md:block">Accedi all'area personale</div>
@@ -29,6 +37,9 @@
 =======
 							<div class="hidden md:block">Accedi all'area personale</div>
 >>>>>>> 54f4fa16 (.)
+=======
+							<div class="hidden md:block">Accedi all'area personale</div>
+>>>>>>> d23ba493 (add calendar)
 						</a>
 					</li>
 				</ul>
@@ -43,6 +54,7 @@
 					<div class="text-start">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 						<div class="text-2xl font-bold">@lang('pub_theme::common.municipality.name')</div>
 						<div class="text-sm">@lang('pub_theme::common.municipality.tagline')</div>
 =======
@@ -53,11 +65,16 @@
 						<div class="text-2xl font-bold">Il mio Comune</div>
 						<div class="text-sm">Un comune da vivere</div>
 >>>>>>> 54f4fa16 (.)
+=======
+						<div class="text-2xl font-bold">Il mio Comune</div>
+						<div class="text-sm">Un comune da vivere</div>
+>>>>>>> d23ba493 (add calendar)
 					</div>
 				</a>
 			</div>
 			<div class="flex-none">
 				<ul class="items-center hidden px-1 menu menu-horizontal md:inline-flex md:me-2">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 					<li> <a>@lang('pub_theme::common.follow_us')</a> </li>
@@ -67,6 +84,9 @@
 =======
 					<li> <a>Seguici su</a> </li>
 >>>>>>> 54f4fa16 (.)
+=======
+					<li> <a>Seguici su</a> </li>
+>>>>>>> d23ba493 (add calendar)
 					@foreach(['facebook', 'twitter', 'instagram', 'linkedin'] as $i)
 					<li>
 						<a class="p-2">
@@ -78,6 +98,7 @@
 				<ul class="items-center px-1 menu menu-horizontal">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 					<li class="hidden sm:block">@lang('pub_theme::common.search')</li>
 =======
 					<li class="hidden sm:block">Cerca</li>
@@ -85,6 +106,9 @@
 =======
 					<li class="hidden sm:block">Cerca</li>
 >>>>>>> 54f4fa16 (.)
+=======
+					<li class="hidden sm:block">Cerca</li>
+>>>>>>> d23ba493 (add calendar)
 					<li class="ms-2">
 						<a class="bg-white border-0 btn btn-circle hover:bg-emerald-50 text-emerald-800">
 							<x-heroicon-o-magnifying-glass class="size-5" />
@@ -119,6 +143,7 @@
 			</div>
 		</div>
 	</div>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 </header>
@@ -201,3 +226,6 @@
     </div>
 </header>
 >>>>>>> 15cb84fb (fix collisions)
+=======
+</header>
+>>>>>>> d23ba493 (add calendar)

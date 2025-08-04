@@ -7,6 +7,7 @@ namespace Modules\SaluteOra\Filament\Widgets\Patient;
 use Exception;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Filament\Forms;
 use Filament\Forms\Get;
@@ -90,18 +91,29 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\Wizard;
 use Filament\Forms\Form as FormBuilder;
+=======
+>>>>>>> d23ba493 (add calendar)
 use Filament\Forms\Get;
 use Filament\Forms\Set;
-use Filament\Notifications\Notification;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Session;
-use Modules\Geo\Models\Comune;
 use Modules\Geo\Models\Cap;
-use Modules\SaluteOra\Enums\AppointmentTypeEnum;
-use Modules\SaluteOra\Enums\DentistSpecializationEnum;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Modules\Geo\Models\Comune;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Auth;
 use Modules\Xot\Traits\HasCsrfToken;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Wizard;
+use Filament\Forms\Components as Form;
+use Filament\Forms\Components\Fieldset;
+use Filament\Forms\Components\Textarea;
+use Filament\Forms\Form as FormBuilder;
+use Illuminate\Support\Facades\Session;
+use Filament\Notifications\Notification;
+use Filament\Forms\Components\DatePicker;
+use Filament\Forms\Components\Placeholder;
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Modules\SaluteOra\Enums\AppointmentTypeEnum;
+use Coolsam\Flatpickr\Forms\Components\Flatpickr;
+use Modules\SaluteOra\Enums\DentistSpecializationEnum;
 
 class FindDoctorAndAppointmentWidget extends XotBaseWidget
 {
@@ -118,6 +130,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
         'cap' => null,
         'specialization' => null,
         'appointment_date' => null,
+        'test_field' => null,
         'appointment_type' => null,
         'appointment_time' => null,
         'notes' => null,
@@ -456,15 +469,15 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
                 Wizard\Step::make('search')
                     ->icon('heroicon-o-magnifying-glass')
                     ->schema($this->getSearchStep()),
-                    
+
                 Wizard\Step::make('date')
                     ->icon('heroicon-o-calendar')
                     ->schema($this->getDateStep()),
-                    
+
                 Wizard\Step::make('time')
                     ->icon('heroicon-o-clock')
                     ->schema($this->getTimeStep()),
-                    
+
                 Wizard\Step::make('confirm')
                     ->icon('heroicon-o-document-check')
                     ->schema($this->getConfirmStep()),
@@ -485,6 +498,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
      */
     protected function getSearchStep(): array
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         return [
@@ -696,6 +710,9 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
                                 $set('province', null);
 =======
         
+=======
+
+>>>>>>> d23ba493 (add calendar)
         return [
             'region' => Select::make('region')
                 ->options(function () {
@@ -704,7 +721,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
                     ->orderBy('regione->nome')
                     ->get()
                     ->pluck('regione.nome','regione.codice')
-                    
+
                     ->toArray();
                 })
                 ->searchable()
@@ -757,7 +774,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
                         ->get()
                         ->pluck('cap.0', 'cap.0')
                         ->toArray();
-                    
+
                     return $res;
                 })
                 ->searchable()
@@ -771,6 +788,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
     {
         return [
             'appointment_date' => DatePicker::make('appointment_date')
+<<<<<<< HEAD
                 ->label('saluteora::fields.appointment_date')
                 ->minDate(now())
                 ->maxDate(now()->addMonths(3))
@@ -937,6 +955,21 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
                 //->disablePopover()
                 ->closeOnDateSelection(false), // Mantiene il calendario aperto
                 
+=======
+            ->disabledDates(['2025-06-05','2025-06-21'])
+
+                ->native(false),
+            /*
+            'test_field' => Flatpickr::make('test_field')
+                //->allowInput()
+                ->inline(true)
+                ->format('Y-m-d')
+                ->altFormat('d/m/Y')
+                ->disabledDates(['2025-06-05','2025-06-21'])
+
+                ,
+            /*
+>>>>>>> d23ba493 (add calendar)
             'appointment_type' => Select::make('appointment_type')
                 ->label('saluteora::fields.appointment_type')
                 ->options(AppointmentTypeEnum::class)
@@ -948,39 +981,43 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
                     }
                 })
                 ->required(),
+<<<<<<< HEAD
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+            */
+>>>>>>> d23ba493 (add calendar)
         ];
     }
-    
+
     /**
      * Ottiene le date non disponibili per gli appuntamenti
-     * 
+     *
      * @return array<string> Date formattate nel formato Y-m-d
      */
     protected function getDisabledDates(): array
     {
         // Ottieni giorni non lavorativi (weekend o festivi)
         $disabledDates = [];
-        
+
         // Disabilita le domeniche per i prossimi 3 mesi
         $startDate = now();
         $endDate = now()->addMonths(3);
-        
+
         for ($date = $startDate->copy(); $date->lte($endDate); $date->addDay()) {
             // Disabilita le domeniche (0 = domenica in Carbon)
             if ($date->dayOfWeek === 0) {
                 $disabledDates[] = $date->format('Y-m-d');
             }
-            
+
             // Qui puoi aggiungere anche le festività nazionali o altri giorni di chiusura
         }
-        
+
         return $disabledDates;
     }
-    
+
     /**
      * Aggiorna gli slot orari disponibili in base alla data selezionata
-     * 
+     *
      * @param \Filament\Forms\Set $set
      * @param string|null $appointmentDate
      * @return void
@@ -1019,14 +1056,14 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
             'confirmation_message' => Placeholder::make('confirmation')
                 ->label('saluteora::messages.confirm_booking')
                 ->content('saluteora::messages.booking_summary'),
-                
+
             'notes' => Textarea::make('notes')
                 ->label('saluteora::fields.notes')
                 ->placeholder('saluteora::placeholders.optional_notes'),
         ];
     }
 
-    
+
     /**
      * Handle form submission.
      */
@@ -1040,7 +1077,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
 
             // Get form data
             $data = $this->form->getState();
-            
+
             // Log the booking attempt
             Log::info('New appointment booking', [
                 'user_id' => Auth::id(),
@@ -1048,19 +1085,19 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
             ]);
 
             // TODO: Implement actual booking logic here
-            
+
             // Show success notification
             Notification::make()
                 ->success()
                 ->title(trans('saluteora::notifications.booking_success'))
                 ->send();
-            
+
             // Reset form
             $this->form->fill();
-            
+
         } catch (\Exception $e) {
             Log::error('Booking error: ' . $e->getMessage());
-            
+
             Notification::make()
                 ->danger()
                 ->title(trans('saluteora::notifications.booking_error'))
@@ -1068,7 +1105,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
                 ->send();
         }
     }
-    
+
     /**
      * Get the CSRF token for the current request.
      *

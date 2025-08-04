@@ -1,5 +1,6 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 <<<<<<< HEAD
 =======
@@ -17,10 +18,15 @@ use Modules\SaluteOra\Models\User;
 
 use App\Models\User;
 >>>>>>> 15cb84fb (fix collisions)
+=======
+declare(strict_types=1);
+use Modules\SaluteOra\Models\User;
+>>>>>>> d23ba493 (add calendar)
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Auth\Events\Registered;
 use Livewire\Volt\Component;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -36,6 +42,8 @@ use Filament\Forms\Form;
 use Illuminate\Support\HtmlString;
 use Livewire\Attributes\Validate;
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 use function Laravel\Folio\{middleware, name};
 
 middleware(['guest']);
@@ -43,20 +51,11 @@ name('register');
 
 new class extends Component
 {
-    #[Validate('required')]
-    public $name = '';
+    public array $types = [];
 
-    #[Validate('required|email|unique:users')]
-    public $email = '';
-
-    #[Validate('required|min:8|same:passwordConfirmation')]
-    public $password = '';
-
-    #[Validate('required|min:8|same:password')]
-    public $passwordConfirmation = '';
-
-    public function register()
+    public function mount(): void
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         $this->types = (new User())->getChildTypes();
@@ -82,12 +81,15 @@ new class extends Component
 
         return redirect()->intended('/');
 >>>>>>> 15cb84fb (fix collisions)
+=======
+        $this->types = (new User())->getChildTypes();
+>>>>>>> d23ba493 (add calendar)
     }
 };
-
 ?>
 
 <x-layouts.app>
+<<<<<<< HEAD
 <<<<<<< HEAD
     @volt('register')
 <<<<<<< HEAD
@@ -112,21 +114,31 @@ new class extends Component
     <div class="min-h-screen bg-gradient-to-b from-blue-50 to-white py-12">
         <div class="max-w-lg mx-auto px-6">
 >>>>>>> 15cb84fb (fix collisions)
+=======
+    @volt('register')
+    <div class="register-container">
+        <div class="min-h-screen bg-[#E6EBF7] py-12">
+>>>>>>> d23ba493 (add calendar)
             <!-- Logo e intestazione -->
-            <div class="text-center mb-8">
+            <div class="text-center mb-16">
                 <div class="flex justify-center mb-4">
                     <x-ui.logo class="h-12 text-blue-900" />
                 </div>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 <h1 class="text-3xl font-light text-blue-900">Benvenuto in <span class="font-bold">SaluteOra</span></h1>
 =======
                 <h1 class="text-3xl font-light text-blue-900">Benvenuto in <span class="font-bold"><nome progetto></span></h1>
 >>>>>>> 15cb84fb (fix collisions)
+=======
+                <h1 class="text-3xl font-light text-blue-900">Benvenuto in <span class="font-bold">SaluteOra</span></h1>
+>>>>>>> d23ba493 (add calendar)
                 <p class="text-gray-600 mt-2">Crea il tuo account per accedere a tutti i servizi</p>
             </div>
 
             <!-- Card contenente il form di registrazione -->
+<<<<<<< HEAD
 <<<<<<< HEAD
             <div class="w-full flex justify-around">
                 @foreach($types as $type => $class)
@@ -190,6 +202,8 @@ new class extends Component
                         {{ ucfirst($type) }}
                     </x-filament::button>
 ========
+=======
+>>>>>>> d23ba493 (add calendar)
             <div class="w-full flex justify-around">
                 @foreach($types as $type => $class)
                 <a class="text-2xl text-[#1A467F] hover:text-primary-400 transition-colors" href="{{ route('register.type', ['type'=>$type]) }}" tag="a">
@@ -197,6 +211,7 @@ new class extends Component
                         {{ ucfirst($type) }}
                     </div>
                 </a>
+<<<<<<< HEAD
 >>>>>>>> 9457e4a5 (- rename file register):laravel/Themes/One/resources/views/pages/auth/register.blade.php
 >>>>>>> 9457e4a5 (- rename file register)
                 @endforeach
@@ -237,5 +252,15 @@ new class extends Component
             </div>
         </div>
 >>>>>>> 15cb84fb (fix collisions)
+=======
+                @endforeach
+            </div>
+        </div>
+
+        <div class="bg-[#E6EBF7] text-center text-sm text-gray-500">
+            <p>Hai bisogno di assistenza? <a href="#" class="text-blue-800 hover:underline">Contattaci</a></p>
+        </div>
+>>>>>>> d23ba493 (add calendar)
     </div>
+    @endvolt
 </x-layouts.app>

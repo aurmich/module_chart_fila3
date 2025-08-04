@@ -9,6 +9,7 @@ return array (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'startDate',
       'helper_text' => 'startDate',
       'placeholder' => 'startDate',
@@ -19,6 +20,9 @@ return array (
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+      'description' => 'startDate',
+>>>>>>> d23ba493 (add calendar)
     ),
     'endDate' => 
     array (

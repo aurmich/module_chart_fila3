@@ -88,6 +88,7 @@ trait HasTeams
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function belongsToTeam(TeamContract $team): bool
 =======
     public function belongsToTeam(\Modules\User\Contracts\TeamContract $team): bool
@@ -95,10 +96,10 @@ trait HasTeams
 =======
     public function belongsToTeam(?TeamContract $team): bool
 >>>>>>> 15cb84fb (fix collisions)
+=======
+    public function belongsToTeam(\Modules\User\Contracts\TeamContract $team): bool
+>>>>>>> d23ba493 (add calendar)
     {
-        if ($team === null) {
-            return false;
-        }
         $found = $this->teams()->where('teams.id', $team->id)->first();
         if ($found === null) {
             return false;
@@ -516,13 +517,17 @@ trait HasTeams
 <<<<<<< HEAD
      * @param TeamContract $team
      */
-    public function switchTeam(?TeamContract $team): bool
+    public function switchTeam(?\Modules\User\Contracts\TeamContract $team): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
         if ($team === null) {
             return false;
         }
 
+<<<<<<< HEAD
 =======
      * @param \Modules\User\Contracts\TeamContract $team
      */
@@ -538,6 +543,8 @@ trait HasTeams
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
         if (! $this->belongsToTeam($team)) {
             return false;
         }

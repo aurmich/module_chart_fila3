@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 return [
@@ -85,6 +86,8 @@ return [
 =======
 =======
 >>>>>>> ca5e1eaf (.)
+=======
+>>>>>>> d23ba493 (add calendar)
 return array (
   'fields' => 
   array (
@@ -123,8 +126,11 @@ return array (
   ),
 );
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 =======
 >>>>>>> ca5e1eaf (.)
+=======
+>>>>>>> d23ba493 (add calendar)

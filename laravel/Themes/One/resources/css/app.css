@@ -1,44 +1,30 @@
-/*
-@import "tailwindcss";
-*/
-
-/* Importa Filament CSS da node_modules */
-/*
-@import 'node_modules/@filamentphp/forms/dist/index.css';
-@import 'node_modules/@filamentphp/notifications/dist/index.css';
-@import 'node_modules/@filamentphp/support/dist/index.css';
-@import 'tailwindcss';
-*/
-
-@import "flowbite/src/themes/default";
-@plugin "flowbite/plugin";
-@source "../../node_modules/flowbite";
-/* Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @tailwind variants;
 
-/* Custom Filament button styles
-@layer components {
-
-}
-*/
 
 [x-cloak] {
     display: none;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
 
 /* Custom Filament button styles */
 @layer components {
     /* Bottoni Filament */
     .fi-btn {
 <<<<<<< HEAD
+<<<<<<< HEAD
         @apply !text-white !bg-[#FF5F7E] inline-flex items-center justify-center gap-1 rounded-lg px-3 py-2 text-sm font-medium shadow-sm ring-1 ring-inset transition-colors duration-75 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-70;
 =======
         @apply inline-flex items-center justify-center gap-1 rounded-lg px-3 py-2 text-sm font-medium shadow-sm ring-1 ring-inset transition-colors duration-75 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-70;
 >>>>>>> 54f4fa16 (.)
+=======
+        @apply inline-flex items-center justify-center gap-1 rounded-lg px-3 py-2 text-sm font-medium shadow-sm ring-1 ring-inset transition-colors duration-75 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-70;
+>>>>>>> d23ba493 (add calendar)
     }
 
     .fi-btn-primary {
@@ -68,14 +54,19 @@
 
     .login-button {
 <<<<<<< HEAD
+<<<<<<< HEAD
         @apply w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white !bg-[#0D9488] hover:bg-[#0D9488];
 =======
         @apply w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500;
 >>>>>>> 54f4fa16 (.)
+=======
+        @apply w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500;
+>>>>>>> d23ba493 (add calendar)
     }
 
     /* Bottoni generici */
     .btn {
+<<<<<<< HEAD
 <<<<<<< HEAD
         @apply inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium shadow-sm !bg-[#0D9488] focus:outline-none focus:ring-2 focus:ring-offset-2;
     }
@@ -83,12 +74,17 @@
     .btn-primary {
         @apply bg-[#FF5F7E] text-white px-4 py-2 rounded-lg;
 =======
+=======
+>>>>>>> d23ba493 (add calendar)
         @apply inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2;
     }
 
     .btn-primary {
         @apply bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> d23ba493 (add calendar)
     }
 
     .btn-secondary {
@@ -114,10 +110,14 @@
 
     .input-primary {
 <<<<<<< HEAD
+<<<<<<< HEAD
         @apply border-gray-300 focus:!border-[#FF5F7E] rounded-lg shadow-sm;
 =======
         @apply border-gray-300 focus:border-primary-500 focus:ring-primary-500 rounded-lg shadow-sm;
 >>>>>>> 54f4fa16 (.)
+=======
+        @apply border-gray-300 focus:border-primary-500 focus:ring-primary-500 rounded-lg shadow-sm;
+>>>>>>> d23ba493 (add calendar)
     }
 
     .card {
@@ -156,6 +156,7 @@
         @apply h-4 w-4 rounded border-gray-300 text-primary-600 focus:ring-primary-600 dark:border-white/10 dark:bg-white/5 dark:focus:ring-offset-white/10;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     .fi-fo-wizard-header {
         @apply hidden sm:grid !important;
@@ -172,11 +173,14 @@
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> d23ba493 (add calendar)
 }
 
 
 @layer base {
     :root {
+<<<<<<< HEAD
 <<<<<<< HEAD
         --color-primary-50:  255 95 126;
         --color-primary-100: 255 95 126;
@@ -190,6 +194,8 @@
         --color-primary-900: 255 95 126;
         --color-primary-950: 255 95 126;
 =======
+=======
+>>>>>>> d23ba493 (add calendar)
         --color-primary-50: 236 253 245;
         --color-primary-100: 209 250 229;
         --color-primary-200: 167 243 208;
@@ -201,7 +207,10 @@
         --color-primary-800: 6 95 70;
         --color-primary-900: 6 78 59;
         --color-primary-950: 2 44 34;
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> d23ba493 (add calendar)
 
         --color-danger-50: 254 242 242;
         --color-danger-100: 254 226 226;
@@ -269,10 +278,14 @@
 
     a {
 <<<<<<< HEAD
+<<<<<<< HEAD
         @apply text-primary-600;
 =======
         @apply text-primary-600 hover:text-primary-900;
 >>>>>>> 54f4fa16 (.)
+=======
+        @apply text-primary-600 hover:text-primary-900;
+>>>>>>> d23ba493 (add calendar)
     }
 
     /* Form */
@@ -284,18 +297,24 @@
     input[type="url"],
     textarea {
 <<<<<<< HEAD
+<<<<<<< HEAD
         @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-[#FF5F7E] focus:ring-[#FF5F7E] sm:text-sm;
     }
 
     select {
         @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-[#FF5F7E] focus:ring-[#FF5F7E] sm:text-sm;
 =======
+=======
+>>>>>>> d23ba493 (add calendar)
         @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm;
     }
 
     select {
         @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm;
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> d23ba493 (add calendar)
     }
 
     label {
@@ -328,17 +347,22 @@
         @apply rounded-xl bg-white shadow-sm ring-1 ring-gray-950/5 dark:bg-gray-900 dark:ring-white/10;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     .fi-btn {
         @apply !text-white;
     }
 =======
 
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> d23ba493 (add calendar)
     .fi-section-header {
         @apply border-b border-gray-200 px-4 py-2.5 dark:border-white/10 sm:px-6;
     }
 
     .fi-section-content {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         @apply bg-white px-4 py-6 sm:px-6;
@@ -387,3 +411,8 @@
 }
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+        @apply bg-[#E6EBF7] px-4 py-6 sm:px-6;
+    }
+}
+>>>>>>> d23ba493 (add calendar)

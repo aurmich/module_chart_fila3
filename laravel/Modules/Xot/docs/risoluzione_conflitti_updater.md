@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Il file presentava numerosi conflitti git non risolti, in particolare tra le branch `HEAD`, `50bb41c (fix: auto resolve conflict)` e `e2a4c5d (.)
 `. Questi conflitti bloccavano la validazione PHPStan di tutti i moduli che dipendono da questo trait, causando errori a cascata su modelli come `BaseModel` e tutti i modelli utente/tenant.
 =======
@@ -19,6 +20,9 @@ Il file presentava numerosi conflitti git non risolti, in particolare tra le bra
 Il file presentava numerosi conflitti git non risolti, in particolare tra le branch `HEAD`, `50bb41c (fix: auto resolve conflict)` e `e2a4c5d (.)
 `. Questi conflitti bloccavano la validazione PHPStan di tutti i moduli che dipendono da questo trait, causando errori a cascata su modelli come `BaseModel` e tutti i modelli utente/tenant.
 >>>>>>> 15cb84fb (fix collisions)
+=======
+Il file presentava numerosi conflitti git non risolti, in particolare tra le branch `HEAD`, `50bb41c (fix: auto resolve conflict)` e `e2a4c5d (.)`. Questi conflitti bloccavano la validazione PHPStan di tutti i moduli che dipendono da questo trait, causando errori a cascata su modelli come `BaseModel` e tutti i modelli utente/tenant.
+>>>>>>> d23ba493 (add calendar)
 
 ## Analisi delle differenze
 - Alcune versioni utilizzavano l'assegnazione diretta delle proprietà (`$model->created_by = authId();`), altre usavano il metodo `setAttribute` dopo aver verificato la presenza della chiave negli attributi.

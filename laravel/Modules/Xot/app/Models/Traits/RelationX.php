@@ -75,6 +75,7 @@ trait RelationX
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     /**
      * Define a polymorphic many-to-many relationship.
@@ -189,6 +190,8 @@ trait RelationX
     */
 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
     /**
      * @return \Illuminate\Database\Eloquent\Relations\Pivot
      */
@@ -200,13 +203,13 @@ trait RelationX
             class_basename($related),
         ];
         sort($model_names);
-        $msg='';
         $pivot_name = implode('', $model_names);
         $pivot_class = Str::of($this::class)
             ->beforeLast('\\')
             ->append('\\'.$pivot_name)
             ->toString();
         if (! class_exists($pivot_class)) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             /*
@@ -226,11 +229,14 @@ trait RelationX
 =======
             $msg .= 'pivot['.$pivot_class.'] not exists';
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
             $pivot_class = Str::of($related)
                 ->beforeLast('\\')
                 ->append('\\'.$pivot_name)
                 ->toString();
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
@@ -239,6 +245,8 @@ trait RelationX
             throw new \Exception($msg);
         }
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
         $pivot = app($pivot_class);
         Assert::isInstanceOf($pivot, \Illuminate\Database\Eloquent\Relations\Pivot::class);
 

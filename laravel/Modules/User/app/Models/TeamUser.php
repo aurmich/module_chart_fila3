@@ -43,6 +43,7 @@ use Illuminate\Support\Carbon;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 class TeamUser extends BaseTeamUser
 =======
 class TeamUser extends BasePivot
@@ -53,6 +54,9 @@ class TeamUser extends BaseTeamUser
 =======
 class TeamUser extends BasePivot
 >>>>>>> 15cb84fb (fix collisions)
+=======
+class TeamUser extends BaseTeamUser
+>>>>>>> d23ba493 (add calendar)
 {
     protected $connection = 'user';
 }

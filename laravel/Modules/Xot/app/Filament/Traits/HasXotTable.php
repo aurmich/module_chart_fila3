@@ -42,6 +42,7 @@ trait HasXotTable
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected static bool $canView = true;
 =======
 
@@ -56,6 +57,9 @@ trait HasXotTable
     protected static bool $canView = true;
 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+    protected static bool $canView = true;
+>>>>>>> d23ba493 (add calendar)
     protected static bool $canEdit = true;
 
     /**
@@ -264,12 +268,16 @@ trait HasXotTable
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> d23ba493 (add calendar)
             ->persistFiltersInSession()
             ->headerActions($this->getTableHeaderActions())
             ->actions($this->getTableActions())
             ->bulkActions($this->getTableBulkActions())
+<<<<<<< HEAD
 <<<<<<< HEAD
             ->actionsPosition(ActionsPosition::BeforeColumns)
             ->emptyStateActions($this->getTableEmptyStateActions())
@@ -325,6 +333,11 @@ trait HasXotTable
 
         $table = $table
 >>>>>>> 15cb84fb (fix collisions)
+=======
+            ->actionsPosition(ActionsPosition::BeforeColumns)
+            ->emptyStateActions($this->getTableEmptyStateActions())
+            ->striped()
+>>>>>>> d23ba493 (add calendar)
             ->paginated($this->getTablePaginated());
         /*
             ->defaultSort(

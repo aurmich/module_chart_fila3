@@ -1,10 +1,18 @@
 ---
+<<<<<<< HEAD
 description: Pattern e best practice per l'utilizzo di Spatie QueableActions in progetti Laraxot/<nome progetto>
+=======
+description: Pattern e best practice per l'utilizzo di Spatie QueableActions in progetti Laraxot/PTVX
+>>>>>>> d23ba493 (add calendar)
 globs: ["**/Actions/**/*.php", "**/Services/**/*.php"]
 alwaysApply: true
 ---
 
+<<<<<<< HEAD
 # Pattern per Spatie QueableActions in Laraxot/<nome progetto>
+=======
+# Pattern per Spatie QueableActions in Laraxot/PTVX
+>>>>>>> d23ba493 (add calendar)
 
 ## Principi Fondamentali
 
@@ -32,7 +40,11 @@ use Modules\ModuleName\Data\ResultData;
 class ProcessDataAction
 {
     use QueueableAction;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     /**
      * Crea una nuova istanza dell'azione.
      */
@@ -40,7 +52,11 @@ class ProcessDataAction
         private readonly \Modules\ModuleName\Repositories\RepositoryInterface $repository
     ) {
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     /**
      * Esegue l'azione.
      *
@@ -51,7 +67,11 @@ class ProcessDataAction
     {
         // Logica di elaborazione
         $result = $this->repository->process($input);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d23ba493 (add calendar)
         // Restituisci un oggetto Data
         return new ResultData(
             status: 'success',
@@ -86,7 +106,11 @@ class ProcessUserDataAction implements ShouldQueue
     use InteractsWithQueue;
     use Queueable;
     use SerializesModels;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     /**
      * Crea una nuova istanza dell'azione.
      */
@@ -94,7 +118,11 @@ class ProcessUserDataAction implements ShouldQueue
         private readonly \Modules\ModuleName\Repositories\UserRepositoryInterface $repository
     ) {
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     /**
      * Esegue l'azione.
      *
@@ -105,13 +133,21 @@ class ProcessUserDataAction implements ShouldQueue
     {
         // Elabora i dati dell'utente
         $processedUser = $this->repository->store($userData);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d23ba493 (add calendar)
         // Logga l'operazione
         \Log::info('User processed', [
             'id' => $processedUser->id,
             'name' => $processedUser->name,
         ]);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d23ba493 (add calendar)
         return $processedUser;
     }
 }
@@ -135,7 +171,11 @@ use Modules\ModuleName\Models\User;
 class NotifyUserAction implements ShouldQueue
 {
     use QueueableAction;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     /**
      * Esegue l'azione.
      *
@@ -147,6 +187,7 @@ class NotifyUserAction implements ShouldQueue
         if (!$userData->id) {
             throw new \InvalidArgumentException(__('modulename::errors.invalid_user_id'));
         }
+<<<<<<< HEAD
 
         $user = User::find($userData->id);
 
@@ -154,6 +195,15 @@ class NotifyUserAction implements ShouldQueue
             throw new \InvalidArgumentException(__('modulename::errors.user_not_found'));
         }
 
+=======
+        
+        $user = User::find($userData->id);
+        
+        if (!$user) {
+            throw new \InvalidArgumentException(__('modulename::errors.user_not_found'));
+        }
+        
+>>>>>>> d23ba493 (add calendar)
         $user->notify(new ActionCompletedNotification($userData));
     }
 }
@@ -174,7 +224,11 @@ use Modules\ModuleName\Data\UserData;
 class RegisterUserAction
 {
     use QueueableAction;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     /**
      * Crea una nuova istanza dell'azione.
      */
@@ -183,7 +237,11 @@ class RegisterUserAction
         private readonly NotifyUserAction $notifyAction
     ) {
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     /**
      * Esegue l'azione composta.
      *
@@ -194,10 +252,17 @@ class RegisterUserAction
     {
         // Prima process l'utente
         $processedUser = $this->processUserAction->execute($userData);
+<<<<<<< HEAD
 
         // Poi invia la notifica
         $this->notifyAction->execute($processedUser);
 
+=======
+        
+        // Poi invia la notifica
+        $this->notifyAction->execute($processedUser);
+        
+>>>>>>> d23ba493 (add calendar)
         return $processedUser;
     }
 }
@@ -232,17 +297,28 @@ class UserController extends Controller
     {
         // Validazione e conversione in un oggetto Data
         $userData = UserData::validateAndCreate($request->all());
+<<<<<<< HEAD
 
         // Esecuzione immediata dell'action
         $result = $action->execute($userData);
 
+=======
+        
+        // Esecuzione immediata dell'action
+        $result = $action->execute($userData);
+        
+>>>>>>> d23ba493 (add calendar)
         return response()->json([
             'success' => true,
             'data' => $result,
             'message' => __('modulename::messages.process_success'),
         ]);
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     /**
      * Processa i dati dell'utente in modo asincrono.
      *
@@ -254,10 +330,17 @@ class UserController extends Controller
     {
         // Validazione e conversione in un oggetto Data
         $userData = UserData::validateAndCreate($request->all());
+<<<<<<< HEAD
 
         // Accodamento dell'action
         $action->onQueue('users')->execute($userData);
 
+=======
+        
+        // Accodamento dell'action
+        $action->onQueue('users')->execute($userData);
+        
+>>>>>>> d23ba493 (add calendar)
         return response()->json([
             'success' => true,
             'message' => __('modulename::messages.process_queued'),
@@ -285,7 +368,11 @@ use Modules\ModuleName\Filament\Resources\UserResource;
 class CreateUser extends CreateRecord
 {
     protected static string $resource = UserResource::class;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     /**
      * Gestisce la creazione del record.
      *
@@ -296,6 +383,7 @@ class CreateUser extends CreateRecord
     {
         // Converti i dati del form in un oggetto Data
         $userData = UserData::from($data);
+<<<<<<< HEAD
 
         // Esegui l'action
         $processedData = app(ProcessUserDataAction::class)->execute($userData);
@@ -304,6 +392,16 @@ class CreateUser extends CreateRecord
         return $processedData->toModel();
     }
 
+=======
+        
+        // Esegui l'action
+        $processedData = app(ProcessUserDataAction::class)->execute($userData);
+        
+        // Crea e restituisci il modello
+        return $processedData->toModel();
+    }
+    
+>>>>>>> d23ba493 (add calendar)
     /**
      * Gestione del successo dopo la creazione.
      */
@@ -333,7 +431,11 @@ use Modules\ModuleName\Filament\Resources\UserResource;
 class ListUsers extends ListRecords
 {
     protected static string $resource = UserResource::class;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     /**
      * Configura le azioni bulk.
      *
@@ -350,10 +452,17 @@ class ListUsers extends ListRecords
                     $usersData = collect($records)->map(function ($user) {
                         return UserData::fromModel($user);
                     })->toArray();
+<<<<<<< HEAD
 
                     // Esegue l'action di processamento multiplo
                     app(ProcessMultipleUsersAction::class)->execute($usersData);
 
+=======
+                    
+                    // Esegue l'action di processamento multiplo
+                    app(ProcessMultipleUsersAction::class)->execute($usersData);
+                    
+>>>>>>> d23ba493 (add calendar)
                     // Notifica il successo
                     $this->notify('success', __('modulename::actions.process.success'));
                 })
@@ -380,7 +489,11 @@ class UserService
         // Logica di business direttamente nel servizio
         // senza tipizzazione dei parametri
         $user = \Modules\ModuleName\Models\User::create($data);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d23ba493 (add calendar)
         return $user;
     }
 }
@@ -395,7 +508,11 @@ namespace Modules\ModuleName\Actions;
 class UserManagerAction
 {
     use QueueableAction;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     public function execute(array $data)
     {
         // Troppe responsabilità in una singola Action
@@ -404,10 +521,17 @@ class UserManagerAction
         $this->assignRole($user, 'customer');
         $this->createProfile($user);
         $this->logActivity($user);
+<<<<<<< HEAD
 
         return $user;
     }
 
+=======
+        
+        return $user;
+    }
+    
+>>>>>>> d23ba493 (add calendar)
     // Metodi privati che dovrebbero essere Actions separate
     private function createUser(array $data) { /* ... */ }
     private function sendWelcomeEmail($user) { /* ... */ }
@@ -424,11 +548,19 @@ namespace Modules\ModuleName\Actions;
 class ProcessDataAction
 {
     use QueueableAction;
+<<<<<<< HEAD
 
     public function execute($data) // Tipo parametro mancante
     {
         // Logica...
 
+=======
+    
+    public function execute($data) // Tipo parametro mancante
+    {
+        // Logica...
+        
+>>>>>>> d23ba493 (add calendar)
         return $result; // Tipo di ritorno mancante
     }
 }
@@ -475,7 +607,11 @@ class UserService
     {
         return \Modules\ModuleName\Models\User::create($data);
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     public function update(int $id, array $data)
     {
         $user = \Modules\ModuleName\Models\User::findOrFail($id);
@@ -499,7 +635,11 @@ use Modules\ModuleName\Data\UserData;
 class CreateUserAction
 {
     use QueueableAction;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     /**
      * Esegue l'azione.
      *
@@ -512,7 +652,11 @@ class CreateUserAction
         $user->name = $data->name;
         $user->email = $data->email;
         $user->save();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d23ba493 (add calendar)
         return UserData::from($user);
     }
 }
@@ -520,7 +664,11 @@ class CreateUserAction
 class UpdateUserAction
 {
     use QueueableAction;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     /**
      * Esegue l'azione.
      *
@@ -533,12 +681,20 @@ class UpdateUserAction
         if (!$data->id) {
             throw new \InvalidArgumentException(__('modulename::errors.invalid_user_id'));
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d23ba493 (add calendar)
         $user = \Modules\ModuleName\Models\User::findOrFail($data->id);
         $user->name = $data->name;
         $user->email = $data->email;
         $user->save();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d23ba493 (add calendar)
         return UserData::from($user);
     }
 }
@@ -567,10 +723,17 @@ class UserController extends Controller
     {
         $data = UserData::validateAndCreate($request->all());
         $result = $action->execute($data);
+<<<<<<< HEAD
 
         return response()->json($result);
     }
 
+=======
+        
+        return response()->json($result);
+    }
+    
+>>>>>>> d23ba493 (add calendar)
     /**
      * Aggiorna un utente esistente.
      *
@@ -585,9 +748,15 @@ class UserController extends Controller
             $request->all(),
             ['id' => $id]
         ));
+<<<<<<< HEAD
 
         $result = $action->execute($data);
 
+=======
+        
+        $result = $action->execute($data);
+        
+>>>>>>> d23ba493 (add calendar)
         return response()->json($result);
     }
 }
@@ -603,6 +772,7 @@ Ogni modulo che utilizza Spatie QueableActions dovrebbe includere:
 2. **Esempio di Documentazione Actions**
    ```markdown
    # Actions in ModuleName
+<<<<<<< HEAD
 
    Questo modulo utilizza Spatie QueableActions per implementare la logica di business.
 
@@ -615,17 +785,36 @@ Ogni modulo che utilizza Spatie QueableActions dovrebbe includere:
    ### Restituisce
    - `UserData`: Dati dell'utente creato con ID assegnato
 
+=======
+   
+   Questo modulo utilizza Spatie QueableActions per implementare la logica di business.
+   
+   ## CreateUserAction
+   Crea un nuovo utente nel sistema.
+   
+   ### Parametri
+   - `UserData $data`: Dati dell'utente da creare
+   
+   ### Restituisce
+   - `UserData`: Dati dell'utente creato con ID assegnato
+   
+>>>>>>> d23ba493 (add calendar)
    ### Esempio d'uso
    ```php
    // Uso diretto
    $userData = new UserData(name: 'Mario', email: 'mario@example.com');
    $result = app(CreateUserAction::class)->execute($userData);
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> d23ba493 (add calendar)
    // Uso accodato
    app(CreateUserAction::class)
        ->onQueue('users')
        ->execute($userData);
    ```
+<<<<<<< HEAD
 
    ## UpdateUserAction
    Aggiorna un utente esistente.
@@ -639,3 +828,18 @@ Ogni modulo che utilizza Spatie QueableActions dovrebbe includere:
    ### Eccezioni
    - `InvalidArgumentException`: Se l'ID utente non è valido
    ```
+=======
+   
+   ## UpdateUserAction
+   Aggiorna un utente esistente.
+   
+   ### Parametri
+   - `UserData $data`: Dati dell'utente da aggiornare (deve includere l'ID)
+   
+   ### Restituisce
+   - `UserData`: Dati dell'utente aggiornati
+   
+   ### Eccezioni
+   - `InvalidArgumentException`: Se l'ID utente non è valido
+   ```
+>>>>>>> d23ba493 (add calendar)

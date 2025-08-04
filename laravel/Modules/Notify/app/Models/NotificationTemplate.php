@@ -109,7 +109,7 @@ class NotificationTemplate extends BaseModel
 =======
     ];
 
-    public function casts(): array
+    protected function casts(): array
     {
         return array_merge(parent::casts(), [
 >>>>>>> 54f4fa16 (.)
@@ -338,6 +338,7 @@ class NotificationTemplate extends BaseModel
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     public function getPreviewData(): array
     {
@@ -371,3 +372,6 @@ class NotificationTemplate extends BaseModel
 =======
 } 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+}
+>>>>>>> d23ba493 (add calendar)

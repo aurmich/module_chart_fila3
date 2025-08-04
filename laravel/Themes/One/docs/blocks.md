@@ -227,6 +227,9 @@ Assicurarsi che i nomi dei parametri nel database corrispondano a quelli attesi 
 - Il blocco `feature_sections` utilizza il parametro `sections` invece di `features`
 - Il blocco `stats` utilizza il parametro `number` invece di `value` per i valori delle statistiche
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
 
 ## Gestione Link Dinamici
 
@@ -383,6 +386,7 @@ Per aggiornare i blocchi esistenti:
 * [blocks.md](laravel/Themes/One/docs/blocks.md)
 * [blocks.md](laravel/Themes/One/docs/components/blocks.md)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ## Blocchi Legal
 
@@ -719,3 +723,5 @@ Dopo la creazione del file mancante, verificare:
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)

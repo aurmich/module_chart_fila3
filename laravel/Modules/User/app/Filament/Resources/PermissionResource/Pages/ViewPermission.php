@@ -7,6 +7,7 @@ namespace Modules\User\Filament\Resources\PermissionResource\Pages;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Actions\DeleteAction;
 use Filament\Actions\EditAction;
@@ -17,6 +18,8 @@ use Filament\Actions\EditAction;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\EditAction;
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 use Filament\Infolists\Components\TextEntry;
 use Modules\User\Filament\Resources\PermissionResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;

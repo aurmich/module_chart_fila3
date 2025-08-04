@@ -1,5 +1,8 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
   "mcpServers": {
     "sequential-thinking": {
       "command": "npx",
@@ -8,6 +11,7 @@
         "@modelcontextprotocol/server-sequential-thinking"
       ],
       "env": {}
+<<<<<<< HEAD
     },
     "memory": {
       "command": "npx",
@@ -44,20 +48,37 @@
           "@modelcontextprotocol/server-sequential-thinking"
         ]
       }
+=======
+>>>>>>> d23ba493 (add calendar)
     },
     "memory": {
       "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-memory"
-      ]
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
     },
-    "everything": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/html/_bases/"]
+    },
+    "puppeteer": {
       "command": "npx",
       "args": [
         "-y",
-        "@modelcontextprotocol/server-everything"
+        "@modelcontextprotocol/server-puppeteer"
+      ],
+      "env": {}
+    },
+    "mcp-package-docs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-package-docs"
       ]
     }
+<<<<<<< HEAD
   }
 >>>>>>> 54f4fa16 (.)
+=======
+  
+  }
+}
+>>>>>>> d23ba493 (add calendar)

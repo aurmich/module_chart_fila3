@@ -138,6 +138,7 @@ aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
@@ -146,6 +147,8 @@ aurmich/dev
 =======
 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 - Il metodo `registerConfig()` è stato aggiornato per utilizzare il percorso corretto da `modules.paths.generator.config.path`
 - È stato rimosso il codice commentato non necessario per `registerBladeComponents()`
 b6f667c (.)
@@ -153,6 +156,7 @@ b6f667c (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
@@ -161,6 +165,8 @@ b6f667c (.)
 =======
 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 La soluzione adottata privilegia la chiarezza del codice e l'organizzazione logica dei metodi, eliminando commenti non necessari e duplicazioni.
 
 ## XotBaseRouteServiceProvider.php
@@ -188,6 +194,7 @@ Mantenere il codice più semplice è preferibile, soprattutto quando le funziona
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 15cb84fb (fix collisions)
 
@@ -205,6 +212,10 @@ b6f667c (.)
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+b6f667c (.)
+
+>>>>>>> d23ba493 (add calendar)
 ## Conflitti risolti (14/06/2024)
 
 I seguenti conflitti sono stati risolti come parte dell'ultima manutenzione del modulo:
@@ -234,6 +245,7 @@ fc83074 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
@@ -242,6 +254,8 @@ fc83074 (.)
 =======
 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 Le modifiche sono state applicate seguendo le best practice documentate in `CONFLITTI_MERGE_RISOLTI.md`, privilegiando la chiarezza del codice e la coerenza con gli standard di progetto.
 
 ## Conflitti ancora da risolvere
@@ -280,6 +294,7 @@ aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 5693302 (.)
 b6f667c (.)
 * [Risoluzione Conflitti Xot](../../../Xot/docs/risoluzione_conflitti.md)
@@ -307,3 +322,9 @@ b6f667c (.)
 fc83074 (.)
 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+5693302 (.)b6f667c (.)* [Risoluzione Conflitti Xot](../../../Xot/docs/risoluzione_conflitti.md)
+* [Risoluzione Conflitti Tenant](../../../Tenant/docs/risoluzione_conflitti.md)
+* [Linee Guida Principali Risoluzione Conflitti](../../../../docs/conflict_resolution.md)
+fc83074 (.)
+>>>>>>> d23ba493 (add calendar)

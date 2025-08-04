@@ -4,6 +4,7 @@ namespace Modules\UI\Filament\Widgets;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 // TEMPORARILY DISABLED FOR PHPSTAN ANALYSIS
@@ -106,6 +107,11 @@ use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\XotData;
 >>>>>>> ca5e1eaf (.)
+=======
+
+use Illuminate\Support\Str;
+use Modules\Xot\Datas\XotData;
+>>>>>>> d23ba493 (add calendar)
 use App\Filament\Resources\EventResource;
 use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
 use Filament\Forms\Components\TextInput;
@@ -165,9 +171,12 @@ class UserCalendarWidget extends FullCalendarWidget
     }
     */
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 >>>>>>> 2099645a (.)
 =======
+=======
+>>>>>>> d23ba493 (add calendar)
 
     public function onDateSelect(string $start, ?string $end, bool $allDay, ?array $view, ?array $resource): void
     {
@@ -175,5 +184,9 @@ class UserCalendarWidget extends FullCalendarWidget
     }
 
     
+<<<<<<< HEAD
 }
 >>>>>>> ca5e1eaf (.)
+=======
+}
+>>>>>>> d23ba493 (add calendar)

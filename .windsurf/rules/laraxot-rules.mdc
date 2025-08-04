@@ -1,10 +1,18 @@
 ---
+<<<<<<< HEAD
 description: Regole fondamentali e best practices per lo sviluppo con Laraxot/WindSurf in <nome progetto>
+=======
+description: Regole fondamentali e best practices per lo sviluppo con Laraxot/WindSurf in PTVX
+>>>>>>> d23ba493 (add calendar)
 globs: ["**/*.php", "**/*.blade.php", "**/*.js", "**/*.ts", "**/*.vue"]
 alwaysApply: true
 ---
 
+<<<<<<< HEAD
 # Regole Fondamentali WindSurf/Laraxot - <nome progetto>
+=======
+# Regole Fondamentali WindSurf/Laraxot - PTVX
+>>>>>>> d23ba493 (add calendar)
 
 ## Struttura dei Modelli
 
@@ -96,7 +104,11 @@ alwaysApply: true
 ## PHPStan Compliance
 
 ### Esecuzione
+<<<<<<< HEAD
 - Eseguire PHPStan sempre da `/var/www/html/<nome progetto>/laravel`
+=======
+- Eseguire PHPStan sempre da `/var/www/html/ptvx/laravel`
+>>>>>>> d23ba493 (add calendar)
 - Utilizzare `./vendor/bin/phpstan analyze` (MAI `php artisan test:phpstan`)
 - Livello minimo 9 per tutti i moduli
 
@@ -133,6 +145,7 @@ alwaysApply: true
 - **HasTenants**: solo in modelli che implementano HasTenants di Filament
 - **HasAuthenticationLogTrait**: utilizzabile in qualsiasi modello che necessita logging
 
+<<<<<<< HEAD
 ## Console Commands (Standard Supremo da ChangeTypeCommand.php)
 
 ### Filosofia Fondamentale
@@ -177,9 +190,15 @@ class CommandNameCommand extends Command
 - *"Non avrai altro data access all'infuori di XotData e Contracts"*
 - Serenità interaction design, error handling preventivo, code commentato
 - **Riferimento**: [Modules/User/app/Console/Commands/ChangeTypeCommand.php](../../laravel/Modules/User/app/Console/Commands/ChangeTypeCommand.php)
+=======
+>>>>>>> d23ba493 (add calendar)
 ## Dipendenze tra Moduli
 - Ogni modulo dovrebbe usare modelli dal proprio namespace quando esistono
 - Minimizzare l'uso di modelli cross-module
 - Preferire trait per funzionalità condivise invece di ereditarietà diretta
 
+<<<<<<< HEAD
 Ultimo aggiornamento: 2025-06-05
+=======
+Ultimo aggiornamento: 2025-06-03
+>>>>>>> d23ba493 (add calendar)

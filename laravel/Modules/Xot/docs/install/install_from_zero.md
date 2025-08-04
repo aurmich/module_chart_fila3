@@ -93,6 +93,7 @@ edit file composer.json
         "laravel/framework": "^11.9",
 <<<<<<< HEAD
         "filament/filament": "^3.3",
+<<<<<<< HEAD
         "laravel/framework": "^12.0",
 =======
 >>>>>>> aurmich/dev
@@ -104,6 +105,9 @@ edit file composer.json
 =======
         "laravel/framework": "^12.0",
 >>>>>>> 15cb84fb (fix collisions)
+=======
+        "laravel/framework": "^11.9",
+>>>>>>> d23ba493 (add calendar)
         "nwidart/laravel-modules": "^11.0"
     },
     "require-dev": {

@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bead9c28 (fix case)
+=======
+>>>>>>> d23ba493 (add calendar)
 # Linee Guida PHPStan Livello 10
 
 ## Introduzione
@@ -101,12 +104,15 @@ public function processValue(?string $value): string
 - [Risoluzione Conflitti](./CONFLITTI_MERGE_RISOLTI.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> bead9c28 (fix case)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 # Linee Guida per PHPStan Livello 10 - Regole Comuni
 
 Questo documento contiene le linee guida generali e le regole comuni per risolvere gli errori PHPStan di livello 10 in tutti i moduli del progetto Laraxot.

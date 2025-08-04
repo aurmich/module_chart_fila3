@@ -200,6 +200,7 @@ Vedi anche [registerBladeIcons.md](./registerBladeIcons.md) per la gestione cent
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 15cb84fb (fix collisions)
 ## Console Commands: Religione, Politica, Filosofia, Zen
@@ -240,3 +241,5 @@ $this->commands([
 >>>>>>> 9df8f556 (fix .md)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)

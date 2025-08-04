@@ -171,9 +171,12 @@ use Illuminate\Support\Facades\Schema;
 <<<<<<< HEAD
 abstract class BaseUser extends Authenticatable implements HasName, HasTenants, UserContract,HasMedia
 {
+
+
     use HasApiTokens;
     use HasFactory;
     use HasRoles;
+<<<<<<< HEAD
 <<<<<<< HEAD
     // Guard coerente con Spatie/Permission
 =======
@@ -203,6 +206,9 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 >>>>>>> bead9c28 (fix case)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+    // Guard coerente con Spatie/Permission
+>>>>>>> d23ba493 (add calendar)
     use HasUuids;
     use Notifiable;
     use RelationX;
@@ -273,6 +279,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @var array<string, mixed>  */
     protected $attributes = [
         //'state' => Pending::class,
@@ -283,11 +290,14 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 
 =======
 >>>>>>> d4c0700e (♻️ (SelectStateColumn.php): refactor state retrieval logic to use $state directly for clarity)
+=======
+>>>>>>> d23ba493 (add calendar)
     /**
      * Guard coerente con Spatie/Permission: deve essere 'web'.
      * @var string
      */
     protected $guard_name = 'web';
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     protected $guard_name = "web";
@@ -297,6 +307,9 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+
+>>>>>>> d23ba493 (add calendar)
     /** @var \Illuminate\Database\Eloquent\Relations\Pivot|null */
     public $pivot;
 
@@ -559,6 +572,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 15cb84fb (fix collisions)
@@ -587,6 +601,8 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 >>>>>>> 2099645a (.)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 
     public function authentications(): MorphMany
     {
@@ -630,6 +646,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
         return false;
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -678,4 +695,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 >>>>>>> 2099645a (.)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+
+>>>>>>> d23ba493 (add calendar)
 }

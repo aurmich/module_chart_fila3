@@ -1,10 +1,18 @@
 ---
+<<<<<<< HEAD
 description: Regole dettagliate per l'implementazione di Action Filament personalizzate in progetti Laraxot/<nome progetto>
+=======
+description: Regole dettagliate per l'implementazione di Action Filament personalizzate in progetti Laraxot/PTVX
+>>>>>>> d23ba493 (add calendar)
 globs: ["**/Filament/Actions/*.php", "**/Filament/Resources/**/Actions/*.php", "**/Filament/Pages/**/Actions/*.php"]
 alwaysApply: true
 ---
 
+<<<<<<< HEAD
 # Regole per Azioni Filament Personalizzate in Laraxot/<nome progetto>
+=======
+# Regole per Azioni Filament Personalizzate in Laraxot/PTVX
+>>>>>>> d23ba493 (add calendar)
 
 ## Principi Fondamentali
 
@@ -38,7 +46,11 @@ class ApproveAction extends Action
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d23ba493 (add calendar)
         $this->label(__('modulename::actions.approve.label'))
             ->modalHeading(__('modulename::actions.approve.modal_heading'))
             ->modalDescription(__('modulename::actions.approve.modal_description'))
@@ -55,7 +67,11 @@ class ApproveAction extends Action
             })
             ->successNotificationTitle(__('modulename::actions.approve.notifications.success'));
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     /**
      * Processa l'approvazione.
      *
@@ -83,16 +99,28 @@ use Filament\Actions\Action;
 class ApproveAction extends Action
 {
     // ❌ Manca override di setUp()
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     // ❌ Configurazione sparsa invece che centralizzata in setUp()
     public function __construct()
     {
         parent::__construct();
+<<<<<<< HEAD
 
         $this->label('Approva'); // ❌ Stringa hardcoded
         $this->color('success'); // ❌ Valore hardcoded
     }
 
+=======
+        
+        $this->label('Approva'); // ❌ Stringa hardcoded
+        $this->color('success'); // ❌ Valore hardcoded
+    }
+    
+>>>>>>> d23ba493 (add calendar)
     // ❌ Manca tipizzazione del parametro e valore di ritorno
     public function processApproval($record)
     {
@@ -107,7 +135,11 @@ class ApproveAction extends Action
 public static function make(?string $name = null): static
 {
     $name = $name ?? 'approve_document';
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     return parent::make($name);
 }
 ```
@@ -145,7 +177,11 @@ return [
 protected function setUp(): void
 {
     parent::setUp();
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     $this->label(__('modulename::actions.assign.label'))
         ->form([
             Forms\Components\Select::make('user_id')
@@ -154,7 +190,11 @@ protected function setUp(): void
                 ->searchable()
                 ->preload()
                 ->required(),
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> d23ba493 (add calendar)
             Forms\Components\DatePicker::make('due_date')
                 ->label(__('modulename::actions.assign.fields.due_date.label')),
         ])
@@ -170,7 +210,11 @@ protected function setUp(): void
 protected function setUp(): void
 {
     parent::setUp();
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     $this->label(__('modulename::actions.delete.label'))
         ->requiresConfirmation()
         ->modalHeading(__('modulename::actions.delete.modal_heading'))
@@ -193,7 +237,11 @@ protected function setUp(): void
 protected function setUp(): void
 {
     parent::setUp();
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     $this->label(__('modulename::actions.bulk_archive.label'))
         ->icon('heroicon-o-archive-box')
         ->action(function (Collection $records): void {
@@ -285,21 +333,33 @@ class ApproveActionTest extends TestCase
         // Arrange
         $user = User::factory()->create();
         $record = ModelName::factory()->create();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d23ba493 (add calendar)
         // Act
         $this->actingAs($user)
             ->post(route('filament.resources.model-names.actions.approve', [
                 'record' => $record->id,
                 'data' => ['note' => 'Test note'],
             ]));
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d23ba493 (add calendar)
         // Assert
         $this->assertDatabaseHas('model_names', [
             'id' => $record->id,
             'status' => 'approved',
         ]);
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     /** @test */
     public function it_requires_permissions_to_approve(): void
     {
@@ -359,9 +419,15 @@ La documentazione delle azioni deve includere:
 protected function setUp(): void
 {
     parent::setUp();
+<<<<<<< HEAD
 
     $this->authorize('approve', fn ($record) => $record);
 
+=======
+    
+    $this->authorize('approve', fn ($record) => $record);
+    
+>>>>>>> d23ba493 (add calendar)
     // Resto della configurazione...
 }
 ```
@@ -391,7 +457,11 @@ class ApproveAction extends Action
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d23ba493 (add calendar)
         $this->label(__('modulename::actions.approve.label'))
             ->color(Color::GREEN)
             ->icon('heroicon-o-check-circle')
@@ -399,7 +469,11 @@ class ApproveAction extends Action
             ->authorize(fn (ModelName $record) => auth()->user()->can('approve', $record))
             ->action(function (ModelName $record): void {
                 $record->update(['status' => 'approved', 'approved_at' => now(), 'approved_by' => auth()->id()]);
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> d23ba493 (add calendar)
                 if ($record->user) {
                     $record->user->notify(new ApprovalNotification($record));
                 }
@@ -407,4 +481,8 @@ class ApproveAction extends Action
             ->successNotificationTitle(__('modulename::actions.approve.notifications.success'));
     }
 }
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> d23ba493 (add calendar)

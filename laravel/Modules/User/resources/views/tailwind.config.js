@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import preset from "./vendor/filament/support/tailwind.config.preset";
 =======
 import preset from './vendor/filament/support/tailwind.config.preset'
@@ -12,6 +13,9 @@ import preset from "./vendor/filament/support/tailwind.config.preset";
 =======
 import preset from './vendor/filament/support/tailwind.config.preset'
 >>>>>>> 15cb84fb (fix collisions)
+=======
+import preset from "./vendor/filament/support/tailwind.config.preset";
+>>>>>>> d23ba493 (add calendar)
 
 export default {
     presets: [preset],
@@ -34,6 +38,7 @@ export default {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     darkMode: "class",
 =======
     darkMode: 'class',
@@ -44,6 +49,9 @@ export default {
 =======
     darkMode: 'class',
 >>>>>>> 15cb84fb (fix collisions)
+=======
+    darkMode: "class",
+>>>>>>> d23ba493 (add calendar)
     theme: {
         extend: {
             colors: {
@@ -51,8 +59,11 @@ export default {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
+=======
+>>>>>>> d23ba493 (add calendar)
                     50: "#f0f9ff",
                     100: "#e0f2fe",
                     200: "#bae6fd",
@@ -64,6 +75,7 @@ export default {
                     800: "#075985",
                     900: "#0c4a6e",
                     950: "#082f49",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
                     50: '#f0f9ff',
@@ -78,21 +90,27 @@ export default {
                     900: '#0c4a6e',
                     950: '#082f49',
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
                 },
                 secondary: {
-                    50: '#f8fafc',
-                    100: '#f1f5f9',
-                    200: '#e2e8f0',
-                    300: '#cbd5e1',
-                    400: '#94a3b8',
-                    500: '#64748b',
-                    600: '#475569',
-                    700: '#334155',
-                    800: '#1e293b',
-                    900: '#0f172a',
+                    50: "#f8fafc",
+                    100: "#f1f5f9",
+                    200: "#e2e8f0",
+                    300: "#cbd5e1",
+                    400: "#94a3b8",
+                    500: "#64748b",
+                    600: "#475569",
+                    700: "#334155",
+                    800: "#1e293b",
+                    900: "#0f172a",
+                },
+                header: {
+                    700: "#1A467F",
                 },
             },
             fontFamily: {
+<<<<<<< HEAD
 <<<<<<< HEAD
                 sans: ["Figtree", "sans-serif"],
 =======
@@ -136,10 +154,14 @@ export default {
 =======
                 sans: ['Figtree', 'sans-serif'],
 >>>>>>> 15cb84fb (fix collisions)
+=======
+                sans: ["Figtree", "sans-serif"],
+>>>>>>> d23ba493 (add calendar)
             },
         },
     },
     plugins: [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -161,5 +183,10 @@ export default {
         require('@tailwindcss/typography'),
         require('flowbite/plugin'),
 >>>>>>> 15cb84fb (fix collisions)
+=======
+        require("@tailwindcss/forms"),
+        require("@tailwindcss/typography"),
+        require("flowbite/plugin"),
+>>>>>>> d23ba493 (add calendar)
     ],
 };

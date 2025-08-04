@@ -1,6 +1,9 @@
 {
   "mcpServers": {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
     "sequential-thinking": {
       "command": "npx",
       "args": [
@@ -8,6 +11,7 @@
         "@modelcontextprotocol/server-sequential-thinking"
       ],
       "env": {}
+<<<<<<< HEAD
     },
     "memory": {
       "command": "npx",
@@ -54,19 +58,36 @@
     "everything": {
       "url": "http://localhost:3000/mcp",
       "type": "http"
+=======
+>>>>>>> d23ba493 (add calendar)
     },
     "memory": {
-      "url": "http://localhost:3003/mcp",
-      "type": "http"
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/html/_bases/"]
     },
     "puppeteer": {
-      "url": "http://localhost:3006/mcp",
-      "type": "http"
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-puppeteer"
+      ],
+      "env": {}
     },
-    "sequential-thinking": {
-      "url": "http://localhost:3008/mcp",
-      "type": "http"
+    "mcp-package-docs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-package-docs"
+      ]
     }
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+  
+>>>>>>> d23ba493 (add calendar)
   }
 }

@@ -84,6 +84,7 @@ class RegistrationWidget extends XotBaseWidget
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->resource = XotData::make()->getUserResourceClassByType($type);
 =======
         $this->resource = XotData::make()->getUserTypeResourceClass($type);
@@ -94,6 +95,9 @@ class RegistrationWidget extends XotBaseWidget
 =======
         $this->resource = XotData::make()->getUserTypeResourceClass($type);
 >>>>>>> 15cb84fb (fix collisions)
+=======
+        $this->resource = XotData::make()->getUserResourceClassByType($type);
+>>>>>>> d23ba493 (add calendar)
         $this->form->fill();
     }
 

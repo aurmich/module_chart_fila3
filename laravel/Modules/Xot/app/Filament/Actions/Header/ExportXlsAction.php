@@ -33,6 +33,7 @@ class ExportXlsAction extends Action
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 
 =======
 >>>>>>> aurmich/dev
@@ -41,6 +42,8 @@ class ExportXlsAction extends Action
 =======
                 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
                 $resource = $livewire->getResource();
                 
                 /** @var array<int, string> $fields */
@@ -50,6 +53,7 @@ class ExportXlsAction extends Action
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   
 =======
 >>>>>>> aurmich/dev
@@ -58,6 +62,8 @@ class ExportXlsAction extends Action
 =======
                   
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
                     if (is_array($rawFields)) {
                         $fields = array_map(static function ($field): string {
                             if (is_object($field) && method_exists($field, '__toString')) {

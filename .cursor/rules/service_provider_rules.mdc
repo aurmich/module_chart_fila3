@@ -1,10 +1,18 @@
 ---
+<<<<<<< HEAD
 description: Rules for implementing and extending ServiceProviders in Laraxot <nome progetto>
+=======
+description: Rules for implementing and extending ServiceProviders in Laraxot PTVX
+>>>>>>> d23ba493 (add calendar)
 globs: ["**/Providers/*ServiceProvider.php", "**/Providers/Filament/*Provider.php"]
 alwaysApply: true
 ---
 
+<<<<<<< HEAD
 # ServiceProvider Implementation Rules in Laraxot <nome progetto>
+=======
+# ServiceProvider Implementation Rules in Laraxot PTVX
+>>>>>>> d23ba493 (add calendar)
 
 ## Core Principles
 
@@ -57,7 +65,11 @@ class {ModuleName}ServiceProvider extends XotBaseServiceProvider
     public function boot(): void
     {
         parent::boot();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d23ba493 (add calendar)
         // ONLY add module-specific customizations here
         // Do NOT duplicate functionality already provided by XotBaseServiceProvider
     }
@@ -74,7 +86,11 @@ class {ModuleName}ServiceProvider extends XotBaseServiceProvider
     public function register(): void
     {
         parent::register();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d23ba493 (add calendar)
         // ONLY register module-specific services not handled by XotBaseServiceProvider
     }
 }
@@ -181,7 +197,11 @@ ONLY add these module-specific customizations:
 - Always run analysis from Laravel root directory:
 
 ```bash
+<<<<<<< HEAD
 cd /var/www/html/<nome progetto>/laravel
+=======
+cd /var/www/html/ptvx/laravel
+>>>>>>> d23ba493 (add calendar)
 ./vendor/bin/phpstan analyze Modules/{ModuleName}/Providers --level=9
 ```
 
@@ -191,4 +211,8 @@ cd /var/www/html/<nome progetto>/laravel
 - Document all custom ServiceProvider functionality in the module's docs folder
 - Create bidirectional links between module docs and root docs
 
+<<<<<<< HEAD
 *Last updated: June 2025*
+=======
+*Last updated: June 2025*
+>>>>>>> d23ba493 (add calendar)

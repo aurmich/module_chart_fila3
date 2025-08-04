@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 15cb84fb (fix collisions)
 return array (
@@ -248,6 +249,8 @@ return array (
 );
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> d23ba493 (add calendar)
 declare(strict_types=1);
 
 return [
@@ -448,6 +451,9 @@ return [
         'error' => 'Si è verificato un errore durante l\'operazione',
     ],
 ];
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)

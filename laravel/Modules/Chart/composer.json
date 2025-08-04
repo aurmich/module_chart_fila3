@@ -22,6 +22,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "Modules\\Chart\\Providers\\ChartServiceProvider",
                 "Modules\\Chart\\Providers\\Filament\\AdminPanelProvider"
 =======
@@ -34,12 +35,17 @@
 =======
                 "Modules\\Chart\\Providers\\ChartServiceProvider"
 >>>>>>> 15cb84fb (fix collisions)
+=======
+                "Modules\\Chart\\Providers\\ChartServiceProvider",
+                "Modules\\Chart\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> d23ba493 (add calendar)
             ],
             "aliases": {}
         }
     },
     "autoload": {
         "psr-4": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -72,6 +78,11 @@
 =======
             "Modules\\Chart\\": "app/"
 >>>>>>> 15cb84fb (fix collisions)
+=======
+            "Modules\\Chart\\": "app/",
+            "Modules\\Chart\\Database\\Factories\\": "database/factories/",
+            "Modules\\Chart\\Database\\Seeders\\": "database/seeders/"
+>>>>>>> d23ba493 (add calendar)
         }
     },
     "require": {

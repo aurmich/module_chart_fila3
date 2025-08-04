@@ -31,6 +31,7 @@
     },
     "require": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "owenvoke/blade-fontawesome": "*",
         "saade/filament-fullcalendar": "^3.2"
     },
@@ -42,6 +43,11 @@
     },
     "require-dev": {},
 >>>>>>> 54f4fa16 (.)
+=======
+        "coolsam/flatpickr": "^4.1",
+        "owenvoke/blade-fontawesome": "*"
+    },
+>>>>>>> d23ba493 (add calendar)
     "repositories": [
         {
             "type": "path",
@@ -79,7 +85,11 @@
     "minimum-stability": "dev",
     "prefer-stable": true
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> 54f4fa16 (.)
+=======
+}
+>>>>>>> d23ba493 (add calendar)

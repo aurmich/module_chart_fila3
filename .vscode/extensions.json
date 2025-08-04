@@ -19,6 +19,7 @@
         "porifa.laravel-intelephense",
         "bmewburn.vscode-intelephense-client",
         "davidanson.vscode-markdownlint",
+<<<<<<< HEAD
         "tomoki1207.pdf",
         "mehedidracula.php-namespace-resolver"
 =======
@@ -36,5 +37,8 @@
         "bmewburn.vscode-intelephense-client",
         "davidanson.vscode-markdownlint"
 >>>>>>> 76e32659 (feat(docs): add new rules for SVG icons, XotBaseListRecords, icon naming, and model states best practices to improve consistency and maintainability across modules)
+=======
+        "tomoki1207.pdf"
+>>>>>>> d23ba493 (add calendar)
     ]
 }

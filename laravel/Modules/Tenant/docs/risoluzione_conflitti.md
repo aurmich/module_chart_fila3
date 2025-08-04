@@ -144,8 +144,11 @@ Questo errore indica che ci sono ancora conflitti git non risolti in altri modul
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> d23ba493 (add calendar)
 ## [AGGIORNAMENTO 2024-xx-xx] Risoluzione conflitto in app/Models/Tenant.php
 
 **Problema**: Conflitto tra due versioni delle relazioni `patients()` e `appointments()`, una puntava ai moduli `Patient` e `Dental`, l'altra a `SaluteOra`.
@@ -157,12 +160,15 @@ Questo errore indica che ci sono ancora conflitti git non risolti in altri modul
 **Backlink**: Consulta anche la [documentazione globale sulla risoluzione dei conflitti git](../../../docs/risoluzione_conflitti_git.md) per la procedura e le linee guida generali.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 ## Collegamenti Utili
 
 - [Documentazione Principale Tenant](module_tenant.md)
@@ -170,6 +176,7 @@ Questo errore indica che ci sono ancora conflitti git non risolti in altri modul
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Panoramica della Risoluzione dei Conflitti](../../../docs/risoluzione_conflitti_git.md)
 =======
 - [Panoramica della Risoluzione dei Conflitti](/docs/conflict_resolution_ui_tenant.md)
@@ -180,4 +187,7 @@ Questo errore indica che ci sono ancora conflitti git non risolti in altri modul
 =======
 - [Panoramica della Risoluzione dei Conflitti](/docs/conflict_resolution_ui_tenant.md)
 >>>>>>> 15cb84fb (fix collisions)
+=======
+- [Panoramica della Risoluzione dei Conflitti](../../../docs/risoluzione_conflitti_git.md)
+>>>>>>> d23ba493 (add calendar)
 

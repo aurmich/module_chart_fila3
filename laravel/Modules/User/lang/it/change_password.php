@@ -11,6 +11,7 @@ return array (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'placeholder' => 'new_password_confirmation',
 =======
 >>>>>>> 54f4fa16 (.)
@@ -19,6 +20,9 @@ return array (
 >>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+      'placeholder' => 'new_password_confirmation',
+>>>>>>> d23ba493 (add calendar)
     ),
     'changePassword' => 
     array (

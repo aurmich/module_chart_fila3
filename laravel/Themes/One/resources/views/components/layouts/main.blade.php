@@ -16,6 +16,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <meta name="description" content="SaluteOra - La piattaforma per la gestione della tua salute">
         <meta name="keywords" content="salute, medici, studi, appuntamenti, prenotazioni">
         <meta name="author" content="SaluteOra">
@@ -65,7 +66,15 @@
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
 >>>>>>> 15cb84fb (fix collisions)
+=======
 
+        {{--
+            Policy: il layout DEVE includere @livewireStyles e @livewireScripts per evitare errori 419 Page Expired nei widget Filament/Livewire.
+            Vedi docs/widget-deleting-method-error.md e docs/rules/filament_best_practices.md
+        --}}
+>>>>>>> d23ba493 (add calendar)
+
+        {!! $_theme->metatags() !!}
         <!-- Used to add dark mode right away, adding here prevents any flicker -->
         <script>
             if (typeof(Storage) !== "undefined") {
@@ -75,12 +84,16 @@
             }
         </script>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
         <style>
 			[x-cloak] {
 			display: none !important;
 			}
 		</style>
 		@filamentStyles
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         @livewireStyles
@@ -92,18 +105,15 @@
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+        @livewireStyles
+>>>>>>> d23ba493 (add calendar)
 
-        <!-- Styles -->
-        @filamentStyles
-        @vite(['resources/css/app.css', 'resources/js/app.js'],'themes/One')
+        @vite(['resources/css/app.css'],'themes/One')
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        <title>{{ $title ?? '<nome progetto> - La tua salute, ora' }}</title>
     </head>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <body class="min-h-screen flex flex-col bg-[#E6EBF7]">
@@ -177,8 +187,15 @@
 
         <!-- Notifiche e Script -->
 >>>>>>> 15cb84fb (fix collisions)
+=======
+    <body class="min-h-screen antialiased bg-white dark:bg-gradient-to-b dark:from-gray-950 dark:to-gray-900">
+        {{ $slot }}
+        {{--
+>>>>>>> d23ba493 (add calendar)
         <livewire:toast />
+        --}}
         @livewire('notifications')
+<<<<<<< HEAD
 <<<<<<< HEAD
 		@filamentScripts
 <<<<<<< HEAD
@@ -197,5 +214,11 @@
         @filamentScripts
         @vite(['resources/js/app.js'],'themes/One')
 >>>>>>> 15cb84fb (fix collisions)
+=======
+		@filamentScripts
+        @livewireScripts
+        @vite(['resources/js/app.js'],'themes/One')
+        <link rel="stylesheet" type="text/css" href="{{asset("vendor/cookie-consent/css/cookie-consent.css")}}">
+>>>>>>> d23ba493 (add calendar)
     </body>
 </html>

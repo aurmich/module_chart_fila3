@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
 declare(strict_types=1);
 
 return [
@@ -186,6 +189,7 @@ return [
         'verification_failed' => [
             'title' => 'Errore Verifica',
             'message' => 'Impossibile verificare il contatto: :error',
+<<<<<<< HEAD
 <<<<<<< HEAD
         ]
     ]
@@ -396,3 +400,9 @@ return array (
   ),
 );
 >>>>>>> 15cb84fb (fix collisions)
+=======
+        ],
+    ],
+    'messages' => [],
+];
+>>>>>>> d23ba493 (add calendar)

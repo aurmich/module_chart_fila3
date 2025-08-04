@@ -509,6 +509,7 @@ class RouteServiceProvider extends ServiceProvider
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 b6f667c (.)
 ### Errore: Eventi non ascoltati
@@ -531,6 +532,8 @@ b6f667c (.)
 b6f667c (.)
 ### Errore: Eventi non ascoltati
 >>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
+=======
+>>>>>>> d23ba493 (add calendar)
 
 **Soluzione:** Verificare che:
 1. L'Event Provider estenda `BaseEventServiceProvider`
@@ -554,6 +557,7 @@ b6f667c (.)
 - [XotBaseServiceProvider](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/Providers/XotBaseServiceProvider.php)
 - [XotBaseRouteServiceProvider](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/Providers/XotBaseRouteServiceProvider.php)
 - [BaseEventServiceProvider](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/Providers/BaseEventServiceProvider.php)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -833,3 +837,5 @@ public function boot(): void
 >>>>>>> 15cb84fb (fix collisions)
 =======
 >>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
+=======
+>>>>>>> d23ba493 (add calendar)

@@ -46,6 +46,7 @@ class UpdateAction
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
@@ -54,6 +55,8 @@ class UpdateAction
 =======
 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
          */
         $model = tap($model)->update($data);
 

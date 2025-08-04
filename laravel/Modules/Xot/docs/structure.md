@@ -257,6 +257,7 @@ laravel/Themes/[Nome]/
 <<<<<<< HEAD
 b6f667c (.)
 
+<<<<<<< HEAD
 
 =======
 =======
@@ -272,6 +273,8 @@ b6f667c (.)
 =======
 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 # Struttura del Modulo Xot
 
 ## Struttura delle Directory
@@ -1103,6 +1106,7 @@ aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 5693302 (.)
 b6f667c (.)
 
@@ -1117,6 +1121,9 @@ b6f667c (.)
 b6f667c (.)
 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+5693302 (.)b6f667c (.)
+>>>>>>> d23ba493 (add calendar)
 
 ## Regole sui Comandi Artisan Custom nei Moduli
 

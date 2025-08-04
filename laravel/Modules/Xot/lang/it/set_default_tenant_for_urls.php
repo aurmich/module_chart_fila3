@@ -532,8 +532,11 @@ return array (
       'placeholder' => 'remember',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
+=======
+>>>>>>> d23ba493 (add calendar)
     'cap' => 
     array (
       'description' => 'cap',
@@ -545,8 +548,11 @@ return array (
     array (
       'description' => 'city',
     ),
+<<<<<<< HEAD
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
   ),
 );

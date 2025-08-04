@@ -48,6 +48,7 @@ public function mount(string $type): void
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     $this->resource = XotData::make()->getUserResourceClassByType($type);
 =======
     $this->resource = XotData::make()->getUserTypeResourceClass($type);
@@ -58,6 +59,9 @@ public function mount(string $type): void
 =======
     $this->resource = XotData::make()->getUserTypeResourceClass($type);
 >>>>>>> 15cb84fb (fix collisions)
+=======
+    $this->resource = XotData::make()->getUserResourceClassByType($type);
+>>>>>>> d23ba493 (add calendar)
     $this->model = $this->resource::getModel();
     $this->action = Str::of($this->model)->replace('\\Models\\', '\\Actions\\')->append('\\RegisterAction')->toString();
     $this->form->fill();

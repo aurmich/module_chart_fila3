@@ -18,6 +18,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Questa regola si applica a **tutti** i moduli (Notify, Cms, Xot, ecc.), **inclusi i modelli**.
 - Evitare l'uso di proprietà deprecate come `protected $casts` nei modelli: preferire override tramite metodo `casts()`.
 - Per esempi specifici, vedere la documentazione nei singoli moduli:
@@ -36,6 +37,10 @@
 - Per esempi specifici, vedere la documentazione nei singoli moduli:
   - [Patient: Regole Modelli](../../Patient/docs/models.md)
 >>>>>>> 15cb84fb (fix collisions)
+=======
+- Questa regola si applica a **tutti** i moduli (Notify, Cms, Xot, ecc.).
+- Per esempi specifici, vedere la documentazione nei singoli moduli:
+>>>>>>> d23ba493 (add calendar)
   - [Notify Namespace Rules](../../Notify/docs/NAMESPACE_RULES.md)
 
 ## Collegamenti

@@ -108,11 +108,11 @@ new class extends Component
 
 {{-- Template standard per l'integrazione dei widget --}}
 <x-layouts.app>
-    <div class="page-container">
-        <div class="content-wrapper">
-            @livewire(\Modules\SaluteOra\Filament\Widgets\Patient\FindDoctorAndAppointmentWidget::class)
-        </div>
+<div class="page-container">
+    <div class="content-wrapper">
+        @livewire(\Modules\SaluteOra\Filament\Widgets\Patient\FindDoctorAndAppointmentWidget::class)
     </div>
-    </x-layouts.app>
+</div>
+</x-layouts.app>
 
 >>>>>>> 7bc70bf2 (🚀 (laravel/Themes/One): remove deprecated files and old theme structure to streamline the codebase and improve maintainability)

@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 description: Regole per i componenti Blade UI in Laraxot <nome progetto>
+=======
+description: Regole per i componenti Blade UI in Laraxot PTVX
+>>>>>>> d23ba493 (add calendar)
 globs: ["**/views/components/**/*.blade.php"]
 alwaysApply: true
 ---
@@ -145,4 +149,8 @@ Quando si modificano componenti UI esistenti:
 - [Modules/Cms/docs/ui_components.md](mdc:../../laravel/Modules/Cms/docs/ui_components.md)
 - [docs/UI_COMPONENTS.md](mdc:../../docs/UI_COMPONENTS.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: maggio 2025*
+=======
+*Ultimo aggiornamento: maggio 2025*
+>>>>>>> d23ba493 (add calendar)

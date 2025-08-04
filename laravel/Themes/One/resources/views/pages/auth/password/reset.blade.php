@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 declare(strict_types=1);
 
@@ -91,6 +92,9 @@ declare(strict_types=1);
 =======
 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+declare(strict_types=1);
+>>>>>>> d23ba493 (add calendar)
 use Illuminate\Support\Facades\Password;
 use function Laravel\Folio\name;
 use Livewire\Volt\Component;

@@ -15,12 +15,15 @@ use Webmozart\Assert\Assert;
 use function Safe\json_encode;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use function Safe\json_decode;
 use function Safe\file_get_contents;
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> d23ba493 (add calendar)
 use function Safe\unlink;
 
 trait SushiToJson
@@ -41,6 +44,7 @@ trait SushiToJson
         $data = json_decode(file_get_contents($path), true);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if(!is_array($data)){
             throw new \Exception('Data is not array ['.$path.']');
         }
@@ -59,6 +63,8 @@ trait SushiToJson
 =======
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> d23ba493 (add calendar)
         foreach($data as $id => $item){
             foreach($item as $key => $value){
                 if(is_array($value)){
@@ -70,9 +76,12 @@ trait SushiToJson
         }
         
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> d23ba493 (add calendar)
         return $data;
     }
 

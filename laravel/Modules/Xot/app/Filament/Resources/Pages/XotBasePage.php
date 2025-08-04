@@ -6,6 +6,7 @@ namespace Modules\Xot\Filament\Resources\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Closure;
 use Filament\Forms\Form;
 use Illuminate\Support\Str;
@@ -23,6 +24,8 @@ use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 =======
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> d23ba493 (add calendar)
 use Filament\Forms\Components\Component;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
@@ -35,6 +38,7 @@ use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 use Modules\Xot\Filament\Traits\TransTrait;
 use Webmozart\Assert\Assert;
 use Filament\Pages\Concerns\InteractsWithFormActions;
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
 /**
@@ -52,6 +56,8 @@ use Filament\Pages\Concerns\InteractsWithFormActions;
  */
 >>>>>>> aurmich/dev
 =======
+=======
+>>>>>>> d23ba493 (add calendar)
 /**
  * Base class for all custom pages in the application.
  *
@@ -61,7 +67,10 @@ use Filament\Pages\Concerns\InteractsWithFormActions;
  * @property ?string $model
  * @property ?array $data
  */
+<<<<<<< HEAD
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> d23ba493 (add calendar)
 abstract class XotBasePage extends FilamentPage implements HasForms
 {
     use InteractsWithForms;
@@ -74,6 +83,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static ?string $model = null;
 =======
     protected static ?string $model = null;
@@ -81,6 +91,9 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 =======
     protected static ?string $model = null;
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+    protected static ?string $model = null;
+>>>>>>> d23ba493 (add calendar)
 
     /**
      * The form data.
@@ -91,19 +104,25 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> d23ba493 (add calendar)
     /**
      * Default icon for navigation.
      */
     protected static ?string $navigationIcon = 'heroicon-o-document-text';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> d23ba493 (add calendar)
     /**
      * Get the view that should be used for the page.
      */
@@ -123,11 +142,14 @@ abstract class XotBasePage extends FilamentPage implements HasForms
                 ->kebab()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ->toString()
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> d23ba493 (add calendar)
             );
 
         return $view->toString();
@@ -146,6 +168,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getTitle(): string
     {
 <<<<<<< HEAD
@@ -161,6 +184,11 @@ abstract class XotBasePage extends FilamentPage implements HasForms
     {
         return static::transTitle();
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+    public function getTitle(): string
+    {
+        return static::transTitle();
+>>>>>>> d23ba493 (add calendar)
     }
 
     /**
@@ -185,6 +213,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      * Get the form schema for the page.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 <<<<<<< HEAD
      * @return array<string, Component>
@@ -198,6 +227,10 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 >>>>>>> a33c954b (fix: formattazione XotBasePage.php)
      * @return array<string, Component|array<string, Component>>
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+     *
+     * @return array<string, Component|array<string, Component>>
+>>>>>>> d23ba493 (add calendar)
      */
     protected function getFormSchema(): array
     {
@@ -211,11 +244,14 @@ abstract class XotBasePage extends FilamentPage implements HasForms
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @phpstan-ignore property.staticAccess */
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> d23ba493 (add calendar)
         return static::$model;
     }
 
@@ -231,6 +267,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /*
      * Hook chiamato all'inizializzazione del componente.
      
@@ -244,11 +281,17 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      * Hook chiamato all'inizializzazione del componente.
      */
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+    /**
+     * Hook chiamato all'inizializzazione del componente.
+     */
+>>>>>>> d23ba493 (add calendar)
     public function mount(int|string $record): void
     {
         parent::mount($record);
         $this->form->fill($this->data ?? []);
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     */
@@ -258,6 +301,9 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 =======
 
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+
+>>>>>>> d23ba493 (add calendar)
     /**
      * Get the view data for the page.
      *

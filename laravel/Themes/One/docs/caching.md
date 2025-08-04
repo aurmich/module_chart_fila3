@@ -90,6 +90,7 @@ class CacheViews extends Command
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Cache Action (Queueable)
 ```php
 // app/Actions/CacheAction.php
@@ -105,10 +106,15 @@ class CacheService
 =======
 ### Cache Action (Queueable)
 ```php
+=======
+### Cache Action (Queueable)
+```php
+>>>>>>> d23ba493 (add calendar)
 // app/Actions/CacheAction.php
 class CacheAction
 {
     use QueueableAction;
+<<<<<<< HEAD
 >>>>>>> 2099645a (.)
 =======
 ### Cache Service
@@ -116,6 +122,8 @@ class CacheAction
 // app/Services/CacheService.php
 class CacheService
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 {
     protected $cache;
     protected $prefix;
@@ -148,12 +156,16 @@ class CacheService
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2099645a (.)
+=======
+>>>>>>> d23ba493 (add calendar)
 // app/Actions/CacheTagAction.php
 class CacheTagAction
 {
     use QueueableAction;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 // app/Services/CacheTagService.php
@@ -165,6 +177,8 @@ class CacheTagService
 // app/Services/CacheTagService.php
 class CacheTagService
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 {
     protected $cache;
     

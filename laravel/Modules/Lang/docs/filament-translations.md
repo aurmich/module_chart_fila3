@@ -5,8 +5,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> d23ba493 (add calendar)
 # ⚠️ Regola fondamentale: MAI usare chiavi che terminano con `.navigation` nei file di traduzione
 
 - Usa sempre la struttura array per navigation:
@@ -29,12 +32,15 @@
   - [docs SaluteOra](../../SaluteOra/docs/translations.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 ## Struttura Corretta per le Traduzioni
 
 Le traduzioni in Filament devono seguire questa struttura nei file di traduzione:

@@ -124,6 +124,7 @@ new class extends Component
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <div id="doctor-section" class="rounded-2xl overflow-hidden">
 =======
         <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
@@ -134,6 +135,9 @@ new class extends Component
 =======
         <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
 >>>>>>> 15cb84fb (fix collisions)
+=======
+        <div id="doctor-section" class="rounded-2xl shadow-xl overflow-hidden">
+>>>>>>> d23ba493 (add calendar)
             <!-- Form di registrazione -->
             @livewire(\Modules\User\Filament\Widgets\RegistrationWidget::class, ['type' => $type])
         </div>
@@ -142,12 +146,16 @@ new class extends Component
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <!-- <div class="mt-8 text-center text-sm text-gray-500">
 =======
         <div class="mt-8 text-center text-sm text-gray-500">
 >>>>>>> 15cb84fb (fix collisions)
+=======
+        <!-- <div class="mt-8 text-center text-sm text-gray-500">
+>>>>>>> d23ba493 (add calendar)
             <p>Hai bisogno di assistenza? <a href="#" class="text-blue-800 hover:underline">Contattaci</a></p>
-        </div>
+        </div> -->
     </div>
     @endvolt
 >>>>>>> aurmich/dev

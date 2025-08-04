@@ -3,7 +3,11 @@
 return array (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   'navigation' => 
+=======
+  'navigation' =>
+>>>>>>> d23ba493 (add calendar)
   array (
     'icon' => 'heroicon-o-document-text',
     'label' => 'Template Notifiche',
@@ -78,20 +82,18 @@ return array (
   array (
     'icon' => 'icona-template-notifica',
     'sort' => 52,
-    'group' => 'notification template.navigation',
-    'label' => 'notification template.navigation',
   ),
-  'fields' => 
+  'fields' =>
   array (
-    'resetFilters' => 
+    'resetFilters' =>
     array (
       'label' => 'resetFilters',
     ),
-    'applyFilters' => 
+    'applyFilters' =>
     array (
       'label' => 'applyFilters',
     ),
-    'openFilters' => 
+    'openFilters' =>
     array (
       'label' => 'openFilters',
 >>>>>>> 54f4fa16 (.)

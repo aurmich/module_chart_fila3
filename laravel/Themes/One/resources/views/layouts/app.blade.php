@@ -1,76 +1,33 @@
-@extends('pub_theme::layouts.base')
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>{{ config('app.name', 'il progetto') }}</title>
+    <style>
+            [x-cloak] {
+                display: none !important;
+            }
+        </style>
 
-<x-filament-panels::layout.base :livewire="$livewire">
-    <div class="fi-layout flex min-h-screen w-full overflow-x-clip">
-        <div
-            x-cloak
-            x-data="{}"
-            x-on:click="$store.sidebar.close()"
-            x-show="$store.sidebar.isOpen"
-            x-transition.opacity.300ms
-            class="fi-sidebar-close-overlay fixed inset-0 z-30 bg-gray-950/50 transition duration-500 dark:bg-gray-950/75 lg:hidden"
-        ></div>
-
-        <x-filament-panels::sidebar :navigation="$navigation" />
-
-        <div
-            @if (filament()->isSidebarCollapsibleOnDesktop())
-                x-data="{}"
-                x-bind:class="{
-                    'fi-main-ctn-sidebar-open': $store.sidebar.isOpen,
-                }"
-                x-bind:style="'display: flex; opacity:1;'" {{-- Mimics `x-cloak`, as using `x-cloak` causes visual issues with chart widgets --}}
-            @elseif (filament()->isSidebarFullyCollapsibleOnDesktop())
-                x-data="{}"
-                x-bind:class="{
-                    'fi-main-ctn-sidebar-open': $store.sidebar.isOpen,
-                }"
-                x-bind:style="'display: flex; opacity:1;'" {{-- Mimics `x-cloak`, as using `x-cloak` causes visual issues with chart widgets --}}
-            @elseif (! (filament()->isSidebarCollapsibleOnDesktop() || filament()->isSidebarFullyCollapsibleOnDesktop() || filament()->hasTopNavigation()))
-                x-data="{}"
-                x-bind:style="'display: flex; opacity:1;'" {{-- Mimics `x-cloak`, as using `x-cloak` causes visual issues with chart widgets --}}
-            @endif
-            @class([
-                'fi-main-ctn w-screen flex-1 flex-col',
-                'h-full opacity-0 transition-all' => filament()->isSidebarCollapsibleOnDesktop() || filament()->isSidebarFullyCollapsibleOnDesktop(),
-                'opacity-0' => ! (filament()->isSidebarCollapsibleOnDesktop() || filament()->isSidebarFullyCollapsibleOnDesktop() || filament()->hasTopNavigation()),
-                'flex' => filament()->hasTopNavigation(),
-            ])
-        >
-            <x-filament-panels::topbar :navigation="$navigation" />
-
-            <main
-                @class([
-                    'fi-main mx-auto h-full w-full px-4 md:px-6 lg:px-8',
-                    match ($maxContentWidth ??= (filament()->getMaxContentWidth() ?? '7xl')) {
-                        'xl' => 'max-w-xl',
-                        '2xl' => 'max-w-2xl',
-                        '3xl' => 'max-w-3xl',
-                        '4xl' => 'max-w-4xl',
-                        '5xl' => 'max-w-5xl',
-                        '6xl' => 'max-w-6xl',
-                        '7xl' => 'max-w-7xl',
-                        'prose' => 'max-w-prose',
-                        'screen-sm' => 'max-w-screen-sm',
-                        'screen-md' => 'max-w-screen-md',
-                        'screen-lg' => 'max-w-screen-lg',
-                        'screen-xl' => 'max-w-screen-xl',
-                        'screen-2xl' => 'max-w-screen-2xl',
-                        'full' => 'max-w-full',
-                        default => $maxContentWidth,
-                    },
-                ])
-            >
-                {{ \Filament\Support\Facades\FilamentView::renderHook('panels::content.start') }}
-
-                {{ $slot }}
-
-                {{ \Filament\Support\Facades\FilamentView::renderHook('panels::content.end') }}
-            </main>
-
-            {{ \Filament\Support\Facades\FilamentView::renderHook('panels::footer') }}
+        @filamentStyles
+    @vite(['resources/css/app.css', 'resources/js/app.js'],'themes/One')
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="font-inter antialiased bg-base-100 text-base-content">
+    <div class="min-h-screen flex flex-col">
+        <div class="bg-primary text-primary-content py-2">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center text-sm font-medium">
+                    🎉 Benvenuti su il progetto - La piattaforma dedicata alla salute orale delle gestanti
+                </div>
+            </div>
         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
 
         <header class="sticky top-0 z-50 bg-base-100 shadow-sm">
             <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -90,6 +47,7 @@
                     <div class="hidden lg:flex lg:items-center lg:space-x-6">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <a href="{{ url('login') }}" class="text-base font-medium hover:text-primary transition-colors">@lang('pub_theme::common.buttons.login')</a>
                         <a href="{{ url('register') }}" class="btn btn-primary">@lang('pub_theme::common.buttons.register')</a>
 =======
@@ -100,6 +58,10 @@
                         <a href="{{ url('login') }}" class="text-base font-medium hover:text-primary transition-colors">Accedi</a>
                         <a href="{{ url('register') }}" class="btn btn-primary">Registrati</a>
 >>>>>>> 54f4fa16 (.)
+=======
+                        <a href="{{ url('login') }}" class="text-base font-medium hover:text-primary transition-colors">Accedi</a>
+                        <a href="{{ url('register') }}" class="btn btn-primary">Registrati</a>
+>>>>>>> d23ba493 (add calendar)
                     </div>
 
                     <div class="lg:hidden">
@@ -157,6 +119,7 @@
                             <li class="text-sm">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 <span class="opacity-90">@lang('pub_theme::common.contact.email'):</span><br>
                                 info@saluteora.it
                             </li>
@@ -165,20 +128,26 @@
 =======
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> d23ba493 (add calendar)
                                 <span class="opacity-90">Email:</span><br>
                                 info@saluteora.it
                             </li>
                             <li class="text-sm">
                                 <span class="opacity-90">Telefono:</span><br>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> d23ba493 (add calendar)
                                 +39 XXX XXX XXXX
                             </li>
                         </ul>
                     </div>
                     <div>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                         <h3 class="text-lg font-semibold mb-6">@lang('pub_theme::common.newsletter.title')</h3>
@@ -191,6 +160,8 @@
 =======
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> d23ba493 (add calendar)
                         <h3 class="text-lg font-semibold mb-6">Newsletter</h3>
                         <p class="text-sm opacity-90 mb-4">
                             Iscriviti per ricevere aggiornamenti e consigli sulla salute orale.
@@ -199,13 +170,17 @@
                             <input type="email" placeholder="La tua email" class="input input-bordered w-full bg-neutral-focus text-neutral-content" />
                             <button type="submit" class="btn btn-primary w-full">Iscriviti</button>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> d23ba493 (add calendar)
                         </form>
                     </div>
                 </div>
                 <div class="mt-12 pt-8 border-t border-neutral-focus text-center text-sm opacity-90">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                     <p>@lang('pub_theme::common.copyright', ['year' => date('Y'), 'name' => config('app.name')])</p>
@@ -220,5 +195,19 @@
         </footer>
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+                    <p>&copy; {{ date('Y') }} {{ config('app.name') }}. Tutti i diritti riservati.</p>
+                </div>
+            </div>
+        </footer>
+>>>>>>> d23ba493 (add calendar)
     </div>
-</x-filament-panels::layout.base>
+
+    <script>
+        document.querySelector('.lg\\:hidden button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+    @filamentScripts
+</body>
+</html>

@@ -29,8 +29,11 @@ class NotificationTemplateResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> d23ba493 (add calendar)
     protected static ?string $navigationIcon = 'heroicon-o-bell';
 
     protected static ?string $navigationGroup = 'Sistema';
@@ -51,10 +54,14 @@ class NotificationTemplateResource extends XotBaseResource
     {
         return __('notify::template.navigation.label');
     }
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+
+>>>>>>> d23ba493 (add calendar)
     public static function getFormSchema(): array
     {
         return [

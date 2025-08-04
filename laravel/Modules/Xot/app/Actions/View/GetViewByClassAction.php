@@ -12,6 +12,7 @@ use Modules\Xot\Actions\Module\GetModuleNameByModelClassAction;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * Classe per la conversione di nomi di classi in nomi di viste.
  */
@@ -24,6 +25,11 @@ use Modules\Xot\Actions\Module\GetModuleNameByModelClassAction;
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+/**
+ * Classe per la conversione di nomi di classi in nomi di viste.
+ */
+>>>>>>> d23ba493 (add calendar)
 class GetViewByClassAction
 {
     use QueueableAction;
@@ -32,8 +38,11 @@ class GetViewByClassAction
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> d23ba493 (add calendar)
      * Converte un nome di classe in un nome di vista.
      * Esempio: "Modules\UI\Filament\Widgets\GroupWidget" => "ui::filament.widgets.group"
      *
@@ -43,6 +52,7 @@ class GetViewByClassAction
      * @return string Il nome della vista
      * @throws \Exception Se la vista non esiste
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      * "Modules\UI\Filament\Widgets\GroupWidget" => "ui::filament.widgets.group"
      * @return view-string
@@ -53,6 +63,8 @@ class GetViewByClassAction
      * "Modules\UI\Filament\Widgets\GroupWidget" => "ui::filament.widgets.group"
      * @return view-string
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
      */
     public function execute(string $class, string $suffix = ''): string
     {

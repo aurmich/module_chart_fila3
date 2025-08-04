@@ -275,7 +275,7 @@ class LoginWidget extends XotBaseWidget
             $this->addError('email', $e->getMessage());
         } catch (Exception $e) {
             report($e);
-            $this->addError('email', __('Si è verificato un errore durante il login. Riprova più tardi.'));
+            $this->addError('email', __('Si è verificato un errore durante il login. Riprova più tardi.['.$e->getMessage().']'));
         }
     }
 >>>>>>> 54f4fa16 (.)

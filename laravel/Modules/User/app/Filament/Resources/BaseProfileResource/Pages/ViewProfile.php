@@ -8,6 +8,7 @@ use Filament\Actions\DeleteAction;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Actions\EditAction;
 >>>>>>> 54f4fa16 (.)
@@ -16,6 +17,8 @@ use Filament\Actions\EditAction;
 =======
 use Filament\Actions\EditAction;
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 use Filament\Infolists\Components;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Infolists\Infolist;
@@ -35,6 +38,7 @@ class ViewProfile extends \Modules\Xot\Filament\Resources\Pages\XotBaseViewRecor
 {
     protected static string $resource = BaseProfileResource::class;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -76,6 +80,8 @@ class ViewProfile extends \Modules\Xot\Filament\Resources\Pages\XotBaseViewRecor
 >>>>>>> 15cb84fb (fix collisions)
 =======
 >>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
+=======
+>>>>>>> d23ba493 (add calendar)
 
     /**
      * @return array<string, \Filament\Infolists\Components\Component>

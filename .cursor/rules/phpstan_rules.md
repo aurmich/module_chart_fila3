@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Regole PHPStan per il Progetto <nome progetto>
+=======
+# Regole PHPStan per il Progetto PTVX
+>>>>>>> d23ba493 (add calendar)
 
 Questo documento definisce le regole globali per garantire la compatibilità con PHPStan livello 9 in tutti i moduli.
 

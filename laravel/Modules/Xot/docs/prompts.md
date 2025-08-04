@@ -47,6 +47,7 @@ I prompt sono file di testo che contengono istruzioni per l'AI. Devono seguire q
 b6f667c (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 5. **Collegamenti**:
@@ -61,6 +62,8 @@ b6f667c (.)
 =======
 
 >>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
+=======
+>>>>>>> d23ba493 (add calendar)
 6. **Collegamenti**:
    - Questo documento deve essere collegato nella root `docs/` con un link bidirezionale
    - Gli altri moduli devono avere un link a questo documento
@@ -82,6 +85,7 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 15cb84fb (fix collisions)
 
@@ -99,6 +103,10 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+- [Miglioramenti al Prompt docs.txt](./prompt_docs_improvements.md)b6f667c (.)
+
+>>>>>>> d23ba493 (add calendar)
 ## Collegamenti tra versioni di prompts.md
 * [prompts.md](docs/prompts.md)
 * [prompts.md](../../../Xot/docs/prompts.md)
@@ -223,6 +231,7 @@ b6f667c (.)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
    ```
@@ -238,3 +247,5 @@ b6f667c (.)
 =======
 
 >>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
+=======
+>>>>>>> d23ba493 (add calendar)

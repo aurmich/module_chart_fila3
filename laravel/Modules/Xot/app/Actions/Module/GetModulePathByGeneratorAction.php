@@ -28,6 +28,7 @@ class GetModulePathByGeneratorAction
 =======
         $relativePath = config('modules.paths.generator.'.$generatorPath.'.path');
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
         $relativePath = Config::string('modules.paths.generator.'.$generatorPath.'.path');
@@ -44,6 +45,10 @@ class GetModulePathByGeneratorAction
             throw new \Exception($e->getMessage()."\n module name: [".$moduleName."]\n generator path: [". $generatorPath."]\n relative path: [". $relativePath."]");
         }
 >>>>>>> 15cb84fb (fix collisions)
+=======
+
+        $res = module_path($moduleName, $relativePath);
+>>>>>>> d23ba493 (add calendar)
         Assert::string($res);
 
         return $res;

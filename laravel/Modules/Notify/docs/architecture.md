@@ -1,51 +1,64 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Notify Module Architecture
 =======
 # Architettura del Modulo Notify
 >>>>>>> 15cb84fb (fix collisions)
+=======
+# Notify Module Architecture
+>>>>>>> d23ba493 (add calendar)
 
-## Domain-Driven Design
+## Overview
+This document outlines the architectural design of the Notify module, focusing on its structure and integration points within a Laravel application.
 
-### Bounded Context
-Il modulo Notify rappresenta un bounded context dedicato alla gestione delle notifiche all'interno dell'applicazione. Include:
+## Key Principles
+1. **Separation of Concerns**: Each component of the Notify module handles a specific aspect of notification management.
+2. **Flexibility**: Designed to support multiple notification channels and providers with ease.
+3. **Scalability**: Built to handle increasing notification volumes through queueing and optimization.
 
-- Gestione template
-- Invio notifiche
-- Tracking eventi
-- Analytics
+## Architecture Components
+### 1. Core Components
+- **Notification Service**: Central service for handling notification logic and dispatching.
+- **Channel Providers**: Interfaces for different notification channels like email, SMS, etc.
+- **Template Engine**: Manages notification content formatting and rendering.
 
-### Value Objects
-```php
-final class EmailAddress
-{
-    private string $value;
+### 2. Integration Points
+- **Laravel Integration**: Hooks into Laravel's event system and queue for notification triggering and processing.
+  ```php
+  // Example Event Listener for Notification
+  class UserRegisteredListener
+  {
+      public function handle(UserRegistered $event)
+      {
+          $event->user->notify(new WelcomeNotification());
+      }
+  }
+  ```
 
-    public function __construct(string $email)
-    {
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            throw new InvalidArgumentException('Email non valida');
-        }
-        $this->value = $email;
-    }
+### 3. Data Flow
+- Notifications are triggered by events or direct calls, processed by the notification service, and sent via the appropriate channel provider.
 
-    public function toString(): string
-    {
-        return $this->value;
-    }
-}
-```
+## Common Issues and Fixes
+- **Integration Errors**: Ensure event listeners are properly registered to trigger notifications.
+- **Channel Configuration**: Verify provider configurations to prevent delivery failures.
 
-## Layer Architetturali
+## Documentation and Updates
+- Document any architectural changes or new integration points in the relevant module's documentation folder.
+- Update this document if significant changes are made to the Notify module architecture.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
 ## Links to Related Documentation
 - [Notify Module Index](./INDEX.md)
 - [Notification Channels Implementation](./NOTIFICATION_CHANNELS_IMPLEMENTATION.md)
 - [Email Templates](./EMAIL_TEMPLATES.md)
 - [SMS Implementation](./SMS_IMPLEMENTATION.md)
 - [Troubleshooting](./TROUBLESHOOTING.md)
+<<<<<<< HEAD
 =======
 # Architettura del Modulo Notify
 =======
@@ -350,3 +363,5 @@ Per una lista completa di tutti i collegamenti tra i README.md, consultare il fi
 - Correlation ID
 - Distributed tracing 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)

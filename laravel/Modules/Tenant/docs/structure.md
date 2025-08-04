@@ -324,12 +324,16 @@ tests/Unit
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> d23ba493 (add calendar)
 ## Collegamenti sulla risoluzione dei conflitti
 
 - [Risoluzione conflitti nel modulo Tenant](risoluzione_conflitti.md)
 - [Linee guida globali per la risoluzione dei conflitti git](../../../docs/risoluzione_conflitti_git.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
@@ -337,6 +341,8 @@ tests/Unit
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)

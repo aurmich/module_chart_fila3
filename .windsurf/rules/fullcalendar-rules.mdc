@@ -1,12 +1,22 @@
 ---
+<<<<<<< HEAD
 description: Rules for FullCalendar component implementation in Laraxot/<nome progetto> projects
+=======
+description: Rules for FullCalendar component implementation in Laraxot/PTVX projects
+>>>>>>> d23ba493 (add calendar)
 globs: ["**/Filament/Widgets/*Calendar*.php", "**/resources/views/**/*calendar*.blade.php", "**/Models/Event.php", "**/Controllers/**/*Calendar*Controller.php"]
 alwaysApply: true
 ---
 
+<<<<<<< HEAD
 # FullCalendar Implementation Rules in Laraxot/<nome progetto>
 
 > **IMPORTANT NOTE**: This document is the official reference for implementing the Saade FullCalendar component for Filament in Laraxot <nome progetto> projects. The rules defined here must be strictly followed in all implementations.
+=======
+# FullCalendar Implementation Rules in Laraxot/PTVX
+
+> **IMPORTANT NOTE**: This document is the official reference for implementing the Saade FullCalendar component for Filament in Laraxot PTVX projects. The rules defined here must be strictly followed in all implementations.
+>>>>>>> d23ba493 (add calendar)
 
 ## Core Principles
 
@@ -38,7 +48,11 @@ class ModuleNameCalendarWidget extends BaseCalendarWidget
      * @var class-string<\Illuminate\Database\Eloquent\Model>
      */
     protected string $model = Event::class;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     /**
      * Configure widget properties.
      *
@@ -47,7 +61,11 @@ class ModuleNameCalendarWidget extends BaseCalendarWidget
     public function setUp(): void
     {
         parent::setUp();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d23ba493 (add calendar)
         $this->selectable(true)
             ->editable(true)
             ->timezone(config('app.timezone'))
@@ -75,13 +93,21 @@ public function getFormSchema(): array
             ->placeholder(__('modulename::calendar.fields.title.placeholder'))
             ->helperText(__('modulename::calendar.fields.title.help'))
             ->required(),
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> d23ba493 (add calendar)
         Forms\Components\Grid::make()
             ->schema([
                 Forms\Components\DateTimePicker::make('start_date')
                     ->label(__('modulename::calendar.fields.start_date.label'))
                     ->required(),
+<<<<<<< HEAD
 
+=======
+                    
+>>>>>>> d23ba493 (add calendar)
                 Forms\Components\DateTimePicker::make('end_date')
                     ->label(__('modulename::calendar.fields.end_date.label'))
                     ->required(),
@@ -100,7 +126,11 @@ public function getFormSchema(): array
         Forms\Components\TextInput::make('title')
             ->label('Title') // Hardcoded string
             ->placeholder('Enter an event title'), // Hardcoded string
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> d23ba493 (add calendar)
         Forms\Components\DateTimePicker::make('start_date')
             ->label('Start date'), // Hardcoded string
     ];
@@ -265,7 +295,11 @@ public function eventDidMount(): string
         // Alpine.js tooltip
         el.setAttribute("x-tooltip", "tooltip");
         el.setAttribute("x-data", "{ tooltip: '"+event.extendedProps.description || event.title+"' }");
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d23ba493 (add calendar)
         // Appearance customization
         if (event.extendedProps.priority === 'high') {
             el.classList.add('border-red-500', 'border-l-4');
@@ -355,7 +389,11 @@ Before considering a FullCalendar implementation complete:
 public function setUp(): void
 {
     parent::setUp();
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     $this->selectable()
         ->editable()
         ->timezone(config('app.timezone'))
@@ -370,7 +408,11 @@ public function setUp(): void
  * Fetch events to display in the calendar.
  *
  * @param array<string, mixed> $fetchInfo
+<<<<<<< HEAD
  *
+=======
+ * 
+>>>>>>> d23ba493 (add calendar)
  * @return array<int, array<string, mixed>>
  */
 public function fetchEvents(array $fetchInfo): array
@@ -425,4 +467,8 @@ class Event extends \Illuminate\Database\Eloquent\Model
 - [Cursor Rules](../.cursor/rules/fullcalendar-integration.mdc)
 - [Root Documentation](../../docs/full_calendar.md)
 
+<<<<<<< HEAD
 *Last updated: June 2025*
+=======
+*Last updated: June 2025*
+>>>>>>> d23ba493 (add calendar)

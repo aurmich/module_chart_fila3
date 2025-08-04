@@ -1,10 +1,18 @@
 ---
+<<<<<<< HEAD
 description: Regole complete per l'implementazione dei modelli in Laraxot/<nome progetto>
+=======
+description: Regole complete per l'implementazione dei modelli in Laraxot/PTVX
+>>>>>>> d23ba493 (add calendar)
 globs: ["**/*.php", "**/Models/*.php"]
 alwaysApply: true
 ---
 
+<<<<<<< HEAD
 # Regole per i Modelli in Laraxot/<nome progetto>
+=======
+# Regole per i Modelli in Laraxot/PTVX
+>>>>>>> d23ba493 (add calendar)
 
 ## Principi Fondamentali
 
@@ -76,7 +84,11 @@ class PerformanceIndividuale extends BaseModel
         'anno',
         'valutatore_id',
     ];
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     // resto dell'implementazione...
 }
 ```
@@ -368,4 +380,8 @@ class OrganizzativaTotStabi extends BaseModel
 - Specificare tutti i tipi di ritorno e parametri
 - Documentare tutte le proprietà con PHPDoc appropriato
 - Mantenere coerenza nei namespace e nelle importazioni
+<<<<<<< HEAD
 - Utilizzare type-hint per tutti i parametri dei metodi
+=======
+- Utilizzare type-hint per tutti i parametri dei metodi
+>>>>>>> d23ba493 (add calendar)

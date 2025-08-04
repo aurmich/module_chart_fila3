@@ -306,14 +306,18 @@ composer format        # Formatta il codice
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> d23ba493 (add calendar)
 Le modifiche vengono tracciate nel repository GitHub. 
 
 ## Collegamenti sulla risoluzione dei conflitti
 
 - [Risoluzione conflitti nel modulo Tenant](risoluzione_conflitti.md)
 - [Linee guida globali per la risoluzione dei conflitti git](../../../docs/risoluzione_conflitti_git.md) 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 Le modifiche vengono tracciate nel repository GitHub. 
@@ -323,3 +327,5 @@ Le modifiche vengono tracciate nel repository GitHub.
 =======
 Le modifiche vengono tracciate nel repository GitHub. 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)

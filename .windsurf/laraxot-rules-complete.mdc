@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Regole Fondamentali WindSurf/Laraxot - <nome progetto>
+=======
+# Regole Fondamentali WindSurf/Laraxot - PTVX
+>>>>>>> d23ba493 (add calendar)
 
 ## Struttura dei Modelli
 
@@ -90,7 +94,11 @@
 ## PHPStan Compliance
 
 ### Esecuzione
+<<<<<<< HEAD
 - Eseguire PHPStan sempre da `/var/www/html/<nome progetto>/laravel`
+=======
+- Eseguire PHPStan sempre da `/var/www/html/ptvx/laravel`
+>>>>>>> d23ba493 (add calendar)
 - Utilizzare `./vendor/bin/phpstan analyze` (MAI `php artisan test:phpstan`)
 - Livello minimo 9 per tutti i moduli
 
@@ -122,4 +130,8 @@
 - Seguire best practices di sicurezza documentate
 - Documentare ogni correzione di sicurezza
 
+<<<<<<< HEAD
 Ultimo aggiornamento: 2025-06-03
+=======
+Ultimo aggiornamento: 2025-06-03
+>>>>>>> d23ba493 (add calendar)

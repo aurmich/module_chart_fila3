@@ -106,6 +106,7 @@ class XotServiceProvider extends XotBaseServiceProvider
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         //$this->registerCommands();
 =======
         $this->registerCommands();
@@ -116,6 +117,9 @@ class XotServiceProvider extends XotBaseServiceProvider
 =======
         //$this->registerCommands();
 >>>>>>> 15cb84fb (fix collisions)
+=======
+        $this->registerCommands();
+>>>>>>> d23ba493 (add calendar)
     }
 
     public function registerProviders(): void

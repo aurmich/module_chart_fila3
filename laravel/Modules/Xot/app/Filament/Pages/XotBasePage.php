@@ -36,18 +36,28 @@ use Illuminate\Contracts\Auth\Authenticatable;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Log;
 use Modules\Xot\Actions\View\GetViewByClassAction;
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 
 /**
- * Undocumented class.
+ * Classe base astratta per tutte le pagine Filament non legate a risorse specifiche.
+ * Fornisce funzionalità comuni e standardizzate per la gestione delle pagine.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
  * Implementa:
  * - Sistema di traduzioni integrato
  * - Gestione autorizzazioni
@@ -55,6 +65,7 @@ use Modules\Xot\Actions\View\GetViewByClassAction;
  * - Rilevamento intelligente modello
  * - Metodi helper comuni
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property ?string              $model Il modello associato alla pagina
  * @property array<string, mixed> $data  I dati del form
@@ -92,14 +103,19 @@ use Modules\Xot\Actions\View\GetViewByClassAction;
  * @property ?string $model
 >>>>>>> 54f4fa16 (.)
 =======
+=======
+>>>>>>> d23ba493 (add calendar)
  * @property ?string $model Il modello associato alla pagina
  * @property array<string, mixed> $data I dati del form
  *
  * @see \Modules\Xot\docs\xotbasepage_implementation.md Documentazione completa
+<<<<<<< HEAD
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
  * @property ?string $model
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
  */
 abstract class XotBasePage extends Page implements HasForms
 {
@@ -110,12 +126,16 @@ abstract class XotBasePage extends Page implements HasForms
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
+=======
+>>>>>>> d23ba493 (add calendar)
     /**
      * Icona di navigazione predefinita per la pagina.
      * Può essere ridefinita nelle classi figlie.
      */
+<<<<<<< HEAD
     protected static ?string $navigationIcon = 'heroicon-o-computer-desktop';
 
 >>>>>>> aurmich/dev
@@ -246,62 +266,107 @@ abstract class XotBasePage extends Page implements HasForms
 
     protected static string $view = 'job::filament.pages.job-monitor';
 >>>>>>> 15cb84fb (fix collisions)
+=======
+    protected static ?string $navigationIcon = 'heroicon-o-computer-desktop';
 
-    protected static ?string $model = null; // ---
-    public ?array $data = [];
+    /**
+     * Vista predefinita per la pagina.
+     * Deve essere sovrascritta nelle classi figlie.
+     */
+    protected static string $view = '';
+>>>>>>> d23ba493 (add calendar)
 
-    // public function mount(): void {
-    //     $user = auth()->user();
-    //     if(!$user->hasRole('super-admin')){
-    //         redirect('/admin');
-    //     }
-    // }
+    /**
+     * Modello associato alla pagina.
+     * Se non specificato, verrà dedotto automaticamente dal nome della classe.
+     *
+     * @var class-string<Model>|null
+     */
+    protected static ?string $model = null;
+
+    /**
+     * Dati del form.
+     * Contiene i dati del form durante la gestione della pagina.
+     *
+     * @var array<string, mixed>
+     */
+    public array $data = [];
+
+    /**
+     * Cache timeout per operazioni di cache (in secondi).
+     */
+    protected static int $cacheTimeout = 3600;
+
+    /**
+     * Ottiene il nome del modulo dalla classe.
+     * Estrae il nome del modulo dal namespace della classe.
+     *
+     * @return string Il nome del modulo (es. 'SaluteOra', 'User', ecc.)
+     */
     public static function getModuleName(): string
     {
-        return Str::between(static::class, 'Modules\\', '\Filament');
+        $namespace = static::class;
+        $moduleName = Str::between($namespace, 'Modules\\', '\\Filament');
+
+        if ($moduleName === '') {
+            throw new \LogicException(
+                sprintf('Cannot extract module name from class %s', static::class)
+            );
+        }
+
+        return $moduleName;
     }
 
-    public static function trans(string $key): string
+    /**
+     * Ottiene la chiave di traduzione per un dato key.
+     * Genera un percorso di traduzione standardizzato basato sul modulo e sul nome della classe.
+     *
+     * @param string $key La chiave di traduzione specifica
+     * @param array<string, mixed> $replace Parametri di sostituzione per la traduzione
+     * @param string|null $locale Locale da utilizzare (null = locale corrente)
+     * @param bool $useFallback Se true, utilizza la chiave come fallback se la traduzione non esiste
+     *
+     * @return string La stringa tradotta o la chiave originale se non trovata
+     */
+    public static function trans(string $key, array $replace = [], ?string $locale = null, bool $useFallback = true): string
     {
         $moduleNameLow = Str::lower(static::getModuleName());
-
-        $p = Str::after(static::class, 'Filament\Pages\\');
+        $p = Str::after(static::class, 'Filament\\Pages\\');
         $p_arr = explode('\\', $p);
-        /*
-        dddx([
-            'methods' => static::class,
-            'p' => $p,
-            'p_a' => $p_arr,
-        ]);
-        // */
-        // RelationManager
-        // $slug = Str::kebab(Str::before($p_arr[0], 'Resource'));
-        // $slug .= '.'.Str::kebab(Str::before($p_arr[2], 'RelationManager'));
+        $slug = collect($p_arr)->map(static fn (string $item): string => Str::kebab($item))->implode('.');
 
-        // $modelNameSlug = Str::kebab(class_basename(static::class));
+        $translationKey = $moduleNameLow.'::'.$slug.'.'.$key;
+        $translation = __($translationKey, $replace, $locale);
 
-        $slug = collect($p_arr)->map(static fn ($item) => Str::kebab($item))->implode('.');
-        $res = $moduleNameLow.'::'.$slug.'.'.$key;
+        if ($translation === $translationKey && App::environment('local', 'development', 'testing')) {
+            Log::warning("Traduzione mancante: {$translationKey}");
+            return $useFallback ? $key : $translationKey;
+        }
 
-        return __($res);
+        return (string) $translation;
     }
 
+    /**
+     * Ottiene l'etichetta plurale del modello.
+     *
+     * @return string L'etichetta plurale del modello
+     */
     public static function getPluralModelLabel(): string
     {
-        return static::transFunc(__FUNCTION__);
+        return static::trans('plural_label');
     }
 
-    public static function getNavigationLabel(): string
-    {
-        return static::transFunc(__FUNCTION__);
-        // return static::trans('navigation.plural');
-    }
-
+    /**
+     * Ottiene il gruppo di navigazione.
+     *
+     * @return string Il gruppo di navigazione
+     */
     public static function getNavigationGroup(): string
     {
         return static::transFunc(__FUNCTION__);
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public static function getNavigationLabel(): string
@@ -317,12 +382,15 @@ abstract class XotBasePage extends Page implements HasForms
     }
 
 <<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
     /**
      * Ottiene il modello associato alla pagina.
      * Se non specificato esplicitamente, tenta di dedurlo dal nome della classe.
      *
      * @return class-string<Model> Il namespace completo della classe del modello
      */
+<<<<<<< HEAD
     public function getModel(): string
     {
 <<<<<<< HEAD
@@ -680,32 +748,121 @@ abstract class XotBasePage extends Page implements HasForms
         $res = 'Modules\\'.$moduleName.'\Models\\'.$modelName;
         $this->model = $res;
         // self::$model = $res;
+=======
+    public function getModel(): string
+    {
+        if (static::$model !== null) {
+            /** @var class-string<Model> $model */
+            $model = static::$model;
+            return $model;
+        }
+>>>>>>> d23ba493 (add calendar)
 
-        return $res;
+        $moduleName = static::getModuleName();
+        $className = class_basename(static::class);
+
+        // Rimuove suffissi comuni per ottenere il nome del modello
+        $modelName = Str::of($className)
+            ->before('Resource')
+            ->before('Page')
+            ->before('Dashboard')
+            ->before('Report')
+            ->trim()
+            ->toString();
+
+        if ($modelName === '') {
+            throw new \LogicException(
+                sprintf('Cannot determine model name from class %s', static::class)
+            );
+        }
+
+        $modelNamespace = 'Modules\\'.$moduleName.'\\Models\\'.$modelName;
+
+        // Verifica che la classe del modello esista
+        if (!class_exists($modelNamespace)) {
+            if (App::environment('local', 'development', 'testing')) {
+                Log::warning("Modello {$modelNamespace} non trovato. Specificare static::\$model nella classe ".static::class);
+            }
+            throw new \LogicException("Model class {$modelNamespace} does not exist");
+        }
+
+        /** @var class-string<Model> $modelNamespace */
+        return $modelNamespace;
     }
 
+    /**
+     * Configura il form della pagina.
+     * Imposta lo schema e il percorso dello stato per il form.
+     *
+     * @param Form $form Il form da configurare
+     * @return Form Il form configurato
+     */
     public function form(Form $form): Form
     {
-        return $form
-            ->schema($this->getFormSchema())
-            //->model($this->getUser())
-            ->statePath('data');
+        $form = $form->schema($this->getFormSchema());
+
+        // Controlla se il metodo statePath esiste prima di chiamarlo
+        if (method_exists($form, 'statePath')) {
+            $form->statePath('data');
+        }
+
+        $debounce = $this->getAutosaveDebounce();
+        if ($debounce !== null && method_exists($form, 'autosaveDebounce')) {
+            $form->autosaveDebounce($debounce);
+        }
+
+        return $form;
     }
 
-    protected function getFormSchema():array{
+    /**
+     * Ottiene il tempo di debounce per l'autosave in millisecondi.
+     * Sovrascrivere nelle classi figlie per modificare questo valore.
+     *
+     * @return int|null Il tempo di debounce in millisecondi o null per disabilitare l'autosave
+     */
+    protected function getAutosaveDebounce(): ?int
+    {
+        return null; // Disabilitato per default
+    }
+
+    /**
+     * Ottiene lo schema del form.
+     * Può essere sovrascritto nelle classi figlie per fornire uno schema personalizzato.
+     * RIMOSSO ABSTRACT - questo era l'errore principale!
+     *
+     * @return array<int|string, \Filament\Forms\Components\Component>
+     */
+    protected function getFormSchema(): array
+    {
         return [];
     }
 
+    /**
+     * Ottiene l'utente autenticato.
+     * Verifica che l'utente sia un'istanza di Model per permettere aggiornamenti.
+     *
+     * @return Authenticatable&Model L'utente autenticato
+     * @throws \RuntimeException Se l'utente non è autenticato o non è un'istanza di Model
+     */
     protected function getUser(): Authenticatable&Model
     {
         $user = Filament::auth()->user();
-        if (! $user instanceof Model) {
-            throw new \Exception('The authenticated user object must be an Eloquent model to allow the profile page to update it.');
+
+        if ($user === null) {
+            throw new \RuntimeException('Nessun utente autenticato trovato.');
         }
 
+        if (!$user instanceof Model) {
+            throw new \RuntimeException('L\'utente autenticato deve essere un modello Eloquent per permettere aggiornamenti.');
+        }
+
+        /** @var Authenticatable&Model $user */
         return $user;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
 
     /**
      * Verifica se l'utente ha l'accesso alla pagina.
@@ -811,6 +968,7 @@ abstract class XotBasePage extends Page implements HasForms
         // Per ora lasciamo vuoto, può essere implementato nelle classi figlie
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 >>>>>>> 54f4fa16 (.)
 =======
@@ -819,3 +977,6 @@ abstract class XotBasePage extends Page implements HasForms
 =======
 }
 >>>>>>> 15cb84fb (fix collisions)
+=======
+}
+>>>>>>> d23ba493 (add calendar)

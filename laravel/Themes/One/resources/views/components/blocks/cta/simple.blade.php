@@ -29,20 +29,28 @@
                 </h2>
             @endif
 <<<<<<< HEAD
+<<<<<<< HEAD
             
 =======
 
 >>>>>>> 7bc70bf2 (🚀 (laravel/Themes/One): remove deprecated files and old theme structure to streamline the codebase and improve maintainability)
+=======
+            
+>>>>>>> d23ba493 (add calendar)
             @if($description)
                 <p class="mt-4 max-w-2xl text-xl {{ $text_color }} lg:mx-auto">
                     {{ $description }}
                 </p>
             @endif
 <<<<<<< HEAD
+<<<<<<< HEAD
             
 =======
 
 >>>>>>> 7bc70bf2 (🚀 (laravel/Themes/One): remove deprecated files and old theme structure to streamline the codebase and improve maintainability)
+=======
+            
+>>>>>>> d23ba493 (add calendar)
             <div class="mt-8 flex justify-center">
                 <div class="inline-flex rounded-md shadow">
                     <a href="{{ $cta_link }}" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white {{ $cta_color }}">

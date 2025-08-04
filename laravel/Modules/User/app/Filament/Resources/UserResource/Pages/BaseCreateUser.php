@@ -9,6 +9,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 abstract class BaseCreateUser extends XotBaseCreateRecord
 =======
@@ -20,6 +21,10 @@ abstract class BaseCreateUser extends \Modules\Xot\Filament\Resources\Pages\XotB
 
 abstract class BaseCreateUser extends XotBaseCreateRecord
 >>>>>>> 2099645a (.)
+=======
+
+abstract class BaseCreateUser extends XotBaseCreateRecord
+>>>>>>> d23ba493 (add calendar)
 {
     // //
     protected static string $resource = UserResource::class;

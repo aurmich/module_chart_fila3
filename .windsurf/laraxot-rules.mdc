@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Regole e Best Practices Laraxot - <nome progetto>
+=======
+# Regole e Best Practices Laraxot - PTVX
+>>>>>>> d23ba493 (add calendar)
 
 ## Regole Fondamentali Modelli e Namespace
 
@@ -24,7 +28,11 @@
 
 ## PHPStan Compliance
 
+<<<<<<< HEAD
 - Eseguire PHPStan sempre da `/var/www/html/<nome progetto>/laravel`
+=======
+- Eseguire PHPStan sempre da `/var/www/html/ptvx/laravel`
+>>>>>>> d23ba493 (add calendar)
 - Usare minimo livello 9 (`./vendor/bin/phpstan analyze --level=9`)
 - Mai usare `$casts` property, utilizzare il metodo `casts()`:
   ```php
@@ -80,4 +88,8 @@
 - Documentare ogni correzione
 - Seguire best practices di sicurezza documentate
 
+<<<<<<< HEAD
 Ultimo aggiornamento: 2025-06-03
+=======
+Ultimo aggiornamento: 2025-06-03
+>>>>>>> d23ba493 (add calendar)

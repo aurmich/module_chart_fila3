@@ -7,11 +7,15 @@ namespace Modules\UI\Filament\Tables\Columns;
 use Exception;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
 use Illuminate\Support\Arr;
 use Spatie\ModelStates\State;
 use Modules\SaluteOra\Models\User;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Filament\Tables\Columns\SelectColumn;
@@ -34,6 +38,10 @@ use Modules\SaluteOra\Models\User;
 use Illuminate\Database\Eloquent\Model;
 use Filament\Tables\Columns\SelectColumn;
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+use Illuminate\Database\Eloquent\Model;
+use Filament\Tables\Columns\SelectColumn;
+>>>>>>> d23ba493 (add calendar)
 use Modules\SaluteOra\States\User\UserState;
 
 class SelectStateColumn extends SelectColumn
@@ -43,6 +51,7 @@ class SelectStateColumn extends SelectColumn
     {
         parent::setUp();
       //  $this->selectablePlaceholder(false);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -102,6 +111,8 @@ class SelectStateColumn extends SelectColumn
 }
 >>>>>>> aurmich/dev
 =======
+=======
+>>>>>>> d23ba493 (add calendar)
         $this->options(function (Model $record ,$state): array {
             $name=$this->getName();
             if($state==null){
@@ -132,6 +143,7 @@ class SelectStateColumn extends SelectColumn
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
    
 }
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
@@ -145,3 +157,9 @@ class SelectStateColumn extends SelectColumn
 
 }
 >>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
+=======
+
+
+
+}
+>>>>>>> d23ba493 (add calendar)

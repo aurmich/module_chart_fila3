@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Regole Cursor complete per Laraxot <nome progetto>
+=======
+# Regole Cursor complete per Laraxot PTVX
+>>>>>>> d23ba493 (add calendar)
 
 ## Modelli ed Ereditarietà
 
@@ -151,10 +155,17 @@ ModuleName/
 - Esempio:
   ```php
   <?php
+<<<<<<< HEAD
 
   use Illuminate\Database\Schema\Blueprint;
   use Modules\Xot\Database\Migrations\XotBaseMigration;
 
+=======
+  
+  use Illuminate\Database\Schema\Blueprint;
+  use Modules\Xot\Database\Migrations\XotBaseMigration;
+  
+>>>>>>> d23ba493 (add calendar)
   return new class extends XotBaseMigration {
       /**
        * Run the migrations.
@@ -163,7 +174,11 @@ ModuleName/
       {
           // Implementazione
       }
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> d23ba493 (add calendar)
       // Non implementare mai il metodo down
   };
   ```
@@ -253,7 +268,11 @@ public static function getTableColumns(): array
 public function setUp(): void
 {
     parent::setUp();
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     $this->label(trans('module-name::actions.export.label'))
          ->icon('heroicon-o-document-download')
          ->color('success')
@@ -327,7 +346,11 @@ return [
 ### Esecuzione
 - Eseguire sempre dalla directory Laravel root:
   ```bash
+<<<<<<< HEAD
   cd /var/www/html/<nome progetto>/laravel
+=======
+  cd /var/www/html/ptvx/laravel
+>>>>>>> d23ba493 (add calendar)
   ./vendor/bin/phpstan analyze [target] --level=9
   ```
 
@@ -336,7 +359,11 @@ return [
    ```php
    // ❌ ERRATO
    public function execute()
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> d23ba493 (add calendar)
    // ✅ CORRETTO
    public function execute(): ReturnType
    ```
@@ -345,7 +372,11 @@ return [
    ```php
    // ❌ ERRATO
    public function getAlAttribute($value)
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> d23ba493 (add calendar)
    // ✅ CORRETTO
    public function getAlAttribute(?string $value): ?string
    ```
@@ -354,7 +385,11 @@ return [
    ```php
    // ❌ ERRATO
    protected $fillable = ['field1', 'field2'];
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> d23ba493 (add calendar)
    // ✅ CORRETTO
    /** @var list<string> */
    protected $fillable = ['field1', 'field2'];
@@ -364,7 +399,11 @@ return [
    ```php
    // ❌ ERRATO: Accesso a proprietà non dichiarate
    $model->anno;
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> d23ba493 (add calendar)
    // ✅ CORRETTO: Dichiarazione proprietà
    /**
     * @property int $anno
@@ -380,7 +419,11 @@ return [
     * @return bool|Response
     */
    public function viewAny(User $user): bool
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> d23ba493 (add calendar)
    // ✅ CORRETTO: Allineamento tipi
    /**
     * @return bool
@@ -392,7 +435,11 @@ return [
    ```php
    // ❌ ERRATO: Accesso a proprietà indefinite
    $user->random_field;
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> d23ba493 (add calendar)
    // ✅ CORRETTO: Usare metodi corretti di Faker
    $faker->randomElement(['a', 'b', 'c']);
    ```
@@ -418,11 +465,19 @@ $message = "Value: " . (is_scalar($value) ? (string) $value : '');
 ## Documentazione e Manutenzione
 
 ### Struttura Documentazione
+<<<<<<< HEAD
 - **Documentazione Root**: `/var/www/html/<nome progetto>/docs/`
   - Linee guida globali
   - Standard di codice generali
   - Link bidirezionali a doc moduli
 
+=======
+- **Documentazione Root**: `/var/www/html/ptvx/docs/`
+  - Linee guida globali
+  - Standard di codice generali
+  - Link bidirezionali a doc moduli
+  
+>>>>>>> d23ba493 (add calendar)
 - **Documentazione Modulo**: `Modules/<NomeModulo>/docs/`
   - Architettura specifica del modulo
   - API e integrazione

@@ -55,6 +55,7 @@ class SettingsPage extends XotBasePage
 ### 2. override di metodi
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - implementare `getFormSchema()` per definire la struttura del form SOLO nelle classi figlie che ne hanno bisogno
 - NON dichiarare mai abstract getFormSchema() in XotBasePage
 =======
@@ -64,6 +65,10 @@ class SettingsPage extends XotBasePage
 - implementare `getFormSchema()` per definire la struttura del form SOLO nelle classi figlie che ne hanno bisogno
 - NON dichiarare mai abstract getFormSchema() in XotBasePage
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+- implementare `getFormSchema()` per definire la struttura del form SOLO nelle classi figlie che ne hanno bisogno
+- NON dichiarare mai abstract getFormSchema() in XotBasePage
+>>>>>>> d23ba493 (add calendar)
 - non sovrascrivere metodi dichiarati come `final`
 - estendere i metodi hook dove possibile
 
@@ -185,14 +190,20 @@ class DashboardSettingsPolicy
 - [best practices filament](/var/www/html/base_saluteora/laravel/Modules/SaluteOra/docs/filament-best-practices.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> d23ba493 (add calendar)
 
 ## ATTENZIONE: errori critici da evitare
 - NON dichiarare mai abstract getFormSchema() in XotBasePage: la classe base Filament lo implementa già. Fornire sempre una implementazione di default (array vuoto).
 - Se serve uno schema custom, sovrascrivere il metodo nella classe figlia.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> d23ba493 (add calendar)

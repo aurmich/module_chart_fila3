@@ -6,18 +6,23 @@ namespace Modules\Xot\Actions;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Contracts\View\View;
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
 use Illuminate\Contracts\View\View;
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+use Illuminate\Contracts\View\View;
+>>>>>>> d23ba493 (add calendar)
 use Illuminate\Support\Str;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * Classe per ottenere una vista basata su una classe.
  */
@@ -28,6 +33,11 @@ use Webmozart\Assert\Assert;
  * Classe per ottenere una vista basata su una classe.
  */
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+/**
+ * Classe per ottenere una vista basata su una classe.
+ */
+>>>>>>> d23ba493 (add calendar)
 class GetViewByClassAction
 {
     use QueueableAction;
@@ -35,8 +45,11 @@ class GetViewByClassAction
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> d23ba493 (add calendar)
      * Ottiene una vista basata su una classe.
      *
      * @param string $class Nome della classe
@@ -50,12 +63,15 @@ class GetViewByClassAction
         $viewName = $viewName ?? $this->getViewNameFromClass($class);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         
         /** @var view-string $viewName */
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> d23ba493 (add calendar)
         return view($viewName, $params);
     }
 
@@ -75,15 +91,19 @@ class GetViewByClassAction
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> d23ba493 (add calendar)
      * Risolve il percorso della view basato sul namespace della classe.
      *
      * @param string $class Il nome completo della classe
      * @return string Il percorso della view
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function executeOld(string $class): string
@@ -93,6 +113,9 @@ class GetViewByClassAction
 =======
     public function executeOld(string $class): string
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+    public function executeOld(string $class): string
+>>>>>>> d23ba493 (add calendar)
     {
         $arr = explode('\\', $class);
         Assert::isArray($arr);
@@ -106,6 +129,9 @@ class GetViewByClassAction
         $module_low = Str::lower($module);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
 
         // Estrai il nome della classe e convertilo in kebab-case
         $class_name = Str::kebab(class_basename($class));
@@ -114,6 +140,7 @@ class GetViewByClassAction
         return $module_low.'::pages.'.$class_name;
     }
 }
+<<<<<<< HEAD
 =======
         
 =======
@@ -131,3 +158,5 @@ class GetViewByClassAction
 =======
 }
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> d23ba493 (add calendar)

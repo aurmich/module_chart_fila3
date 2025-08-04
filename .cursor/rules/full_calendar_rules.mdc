@@ -1,10 +1,18 @@
 ---
+<<<<<<< HEAD
 description: Regole per l'implementazione del componente FullCalendar di Saade per Filament in Laraxot <nome progetto>
+=======
+description: Regole per l'implementazione del componente FullCalendar di Saade per Filament in Laraxot PTVX
+>>>>>>> d23ba493 (add calendar)
 globs: ["**/Filament/Widgets/*Calendar*.php", "**/Models/Evento.php"]
 alwaysApply: true
 ---
 
+<<<<<<< HEAD
 # Regole per il Componente FullCalendar in Laraxot <nome progetto>
+=======
+# Regole per il Componente FullCalendar in Laraxot PTVX
+>>>>>>> d23ba493 (add calendar)
 
 ## Struttura di Base
 
@@ -129,7 +137,11 @@ public function getFormSchema(): array
  * Recupera gli eventi da visualizzare nel calendario.
  *
  * @param array<string, mixed> $fetchInfo
+<<<<<<< HEAD
  *
+=======
+ * 
+>>>>>>> d23ba493 (add calendar)
  * @return array<int, array<string, mixed>>
  */
 public function fetchEvents(array $fetchInfo): array
@@ -322,4 +334,8 @@ Tutte le implementazioni devono:
 - [Documentazione Modulo Ptv](../../laravel/Modules/Ptv/docs/features/full_calendar.md)
 - [Documentazione Ufficiale Saade FullCalendar](https://github.com/saade/filament-fullcalendar)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025*
+=======
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> d23ba493 (add calendar)

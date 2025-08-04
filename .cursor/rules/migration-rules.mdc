@@ -1,10 +1,18 @@
 ---
+<<<<<<< HEAD
 description: Regole dettagliate per le migrazioni in Laraxot/<nome progetto>
+=======
+description: Regole dettagliate per le migrazioni in Laraxot/PTVX
+>>>>>>> d23ba493 (add calendar)
 globs: ["**/database/migrations/*.php"]
 alwaysApply: true
 ---
 
+<<<<<<< HEAD
 # Regole per le Migrazioni in Laraxot/<nome progetto>
+=======
+# Regole per le Migrazioni in Laraxot/PTVX
+>>>>>>> d23ba493 (add calendar)
 
 ## Principi Fondamentali
 
@@ -45,7 +53,11 @@ return new class extends XotBaseMigration
             $table->decimal('importo', 10, 2)->nullable();
             $table->timestamps();
         });
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d23ba493 (add calendar)
         // Aggiunta commento alla tabella
         $this->tableComment('nome_tabella', 'Descrizione della tabella');
     }
@@ -66,7 +78,11 @@ class CreateTableName extends Migration // NON estendere Migration
     {
         // ...
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     public function down() // MAI implementare down()
     {
         // ...
@@ -107,11 +123,19 @@ return new class extends XotBaseMigration
                 $table->string('nuova_colonna')->nullable();
                 $table->timestamps();
             });
+<<<<<<< HEAD
 
             $this->tableComment('nome_tabella', 'Descrizione della tabella');
             return;
         }
 
+=======
+            
+            $this->tableComment('nome_tabella', 'Descrizione della tabella');
+            return;
+        }
+        
+>>>>>>> d23ba493 (add calendar)
         // 2. Se la tabella esiste, aggiungi solo la nuova colonna
         if (! $this->hasColumn('nome_tabella', 'nuova_colonna')) {
             Schema::table('nome_tabella', function (Blueprint $table) {
@@ -138,7 +162,11 @@ class AddColumnToTable extends Migration
             $table->string('nuova_colonna');
         });
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     public function down()
     {
         Schema::table('nome_tabella', function (Blueprint $table) {
@@ -191,8 +219,13 @@ La colonna è stata aggiunta per tracciare l'utente che ha effettuato la valutaz
 - Nullable: true
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Performance/Models/PerformanceIndividuale.php](/var/www/html/<nome progetto>/laravel/Modules/Performance/Models/PerformanceIndividuale.php)
 - [Performance/docs/SCHEMA.md](/var/www/html/<nome progetto>/laravel/Modules/Performance/docs/SCHEMA.md)
+=======
+- [Performance/Models/PerformanceIndividuale.php](/var/www/html/ptvx/laravel/Modules/Performance/Models/PerformanceIndividuale.php)
+- [Performance/docs/SCHEMA.md](/var/www/html/ptvx/laravel/Modules/Performance/docs/SCHEMA.md)
+>>>>>>> d23ba493 (add calendar)
 ```
 
 ## Gestione delle Foreign Key
@@ -236,4 +269,8 @@ $table->softDeletes(); // deleted_at per soft delete
 - Verificare sempre che le migrazioni siano idempotenti (possono essere eseguite più volte senza errori)
 - Documentare ogni modifica significativa alla struttura del database
 - Aggiornare i modelli e le relazioni quando si modificano le tabelle
+<<<<<<< HEAD
 - MAI usare il comando `php artisan migrate:rollback` in produzione
+=======
+- MAI usare il comando `php artisan migrate:rollback` in produzione
+>>>>>>> d23ba493 (add calendar)

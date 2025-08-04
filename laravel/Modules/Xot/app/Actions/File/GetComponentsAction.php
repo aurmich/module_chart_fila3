@@ -57,6 +57,7 @@ class GetComponentsAction
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 >>>>>>> aurmich/dev
@@ -65,6 +66,8 @@ class GetComponentsAction
 =======
         
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 
         $files = File::allFiles($path);
         $comps = [];
@@ -106,6 +109,7 @@ class GetComponentsAction
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 
 =======
 
@@ -116,6 +120,9 @@ class GetComponentsAction
 =======
 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+                
+>>>>>>> d23ba493 (add calendar)
                 $comps[] = ComponentFileData::from([
                     'name' => $comp_name,
                     'class' => $class_name,
@@ -124,6 +131,7 @@ class GetComponentsAction
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 
             } catch (\Exception $e) {
                 /*
@@ -141,6 +149,11 @@ class GetComponentsAction
             } catch (\Exception $e) {
                 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+                
+            } catch (\Exception $e) {
+                /*
+>>>>>>> d23ba493 (add calendar)
                 dddx([
                     'comp_name' => $comp_name,
                     'class_name' => $class_name,
@@ -153,6 +166,7 @@ class GetComponentsAction
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 */
                 throw $e;
 =======
@@ -164,6 +178,10 @@ class GetComponentsAction
 =======
                 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+                */
+                throw $e;
+>>>>>>> d23ba493 (add calendar)
             }
         }
 

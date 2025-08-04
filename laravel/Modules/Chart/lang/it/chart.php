@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 
 return array (
@@ -15,6 +16,11 @@ return array (
 =======
 <?php return array (
 >>>>>>> 15cb84fb (fix collisions)
+=======
+<?php
+
+return array (
+>>>>>>> d23ba493 (add calendar)
   'fields' => 
   array (
     'id' => 
@@ -73,6 +79,7 @@ return array (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   'navigation' => 
   array (
     'sort' => 20,
@@ -83,12 +90,17 @@ return array (
 );
 >>>>>>> 54f4fa16 (.)
 =======
+=======
+>>>>>>> d23ba493 (add calendar)
   'navigation' => 
   array (
     'sort' => 20,
   ),
 );
+<<<<<<< HEAD
 >>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
 =======
 );
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)

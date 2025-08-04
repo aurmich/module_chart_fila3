@@ -30,6 +30,7 @@
         @if($item['type'] === 'link')
             <a href="{{ $item['url'] }}" 
 <<<<<<< HEAD
+<<<<<<< HEAD
                class="text-base font-medium text-gray-900 hover:text-primary-600">
 >>>>>>> 54f4fa16 (.)
 =======
@@ -38,11 +39,15 @@
 =======
                class="text-base font-medium text-gray-900 hover:text-primary-600">
 >>>>>>> 15cb84fb (fix collisions)
+=======
+               class="text-base font-medium !text-white">
+>>>>>>> d23ba493 (add calendar)
                 {{ $item['label'] }}
             </a>
         @elseif($item['type'] === 'dropdown')
             <div x-data="{ open: false }" class="relative">
                 <button @click="open = !open" 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -56,6 +61,9 @@
 =======
                         class="flex items-center text-base font-medium text-gray-900 hover:text-primary-600">
 >>>>>>> 15cb84fb (fix collisions)
+=======
+                        class="flex items-center text-base font-medium text-white hover:text-primary-600">
+>>>>>>> d23ba493 (add calendar)
                     {{ $item['label'] }}
                     <svg class="ml-1 h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />

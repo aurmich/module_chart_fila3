@@ -50,6 +50,7 @@ Modules/
 ## Motivazione
 Questa convenzione:
 <<<<<<< HEAD
+<<<<<<< HEAD
 # convenzioni per i namespace nei moduli
 
 ## regola assoluta e inviolabile
@@ -156,6 +157,8 @@ Questa convenzione:
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> d23ba493 (add calendar)
 # convenzioni per i namespace nei moduli
 
 ## regola assoluta e inviolabile
@@ -231,8 +234,11 @@ Modules/
           PatientResource.php  // namespace Modules\SaluteOra\Filament\Resources;
 ```
 
+<<<<<<< HEAD
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> d23ba493 (add calendar)
 ## come verificare i namespace
 
 ### verifica manuale
@@ -253,12 +259,15 @@ php artisan phpstan:analyse --level=1 Modules/SaluteOra
 
 ## motivazione di questa convenzione
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 - Mantiene i namespace puliti e coerenti
 - Evita confusione con la struttura delle directory
 - Facilita l'autoloading e la navigazione del codice
@@ -272,8 +281,11 @@ php artisan phpstan:analyse --level=1 Modules/SaluteOra
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> d23ba493 (add calendar)
 
 ## Errori Comuni
 
@@ -311,11 +323,14 @@ Configurare PHP Stan per verificare i namespace corretti:
 ```yaml
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> d23ba493 (add calendar)
 # phpstan.neon
 parameters:
   checkMissingIterableValueType: false
@@ -341,9 +356,12 @@ php artisan config:clear
 php artisan view:clear
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)

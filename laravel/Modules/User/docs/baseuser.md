@@ -3,41 +3,56 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # BaseUser
+=======
+# BaseUser Model in Laravel Modules
+>>>>>>> d23ba493 (add calendar)
 
-La classe `BaseUser` è una classe astratta che implementa le interfacce `UserContract` e `HasTeamsContract`. Fornisce l'implementazione base per la gestione degli utenti nel sistema.
+## Overview
+This document outlines the structure and usage of the `BaseUser` model within a Laravel module, serving as the foundation for user-related functionality.
 
-## Interfacce Implementate
+## Key Principles
+1. **Inheritance**: `BaseUser` provides common attributes and methods for all user types, allowing for easy extension.
+2. **Modularity**: Designed to be reusable across projects without modification.
+3. **Customization**: Can be extended to include specific user types like admin or customer.
 
-- `UserContract`: Contratto base per gli utenti
-- `HasTeamsContract`: Contratto per la gestione dei team
+## Implementation Guidelines
+### 1. Model Structure
+- The `BaseUser` model includes essential fields like `id`, `name`, `email`, and authentication-related attributes.
+  ```php
+  namespace Modules\User\Models;
 
-## Traits Utilizzati
+  use Illuminate\Foundation\Auth\User as Authenticatable;
 
-- `HasApiTokens`
-- `HasFactory`
-- `HasRoles`
-- `HasTeams`
-- `HasUuids`
-- `HasAuthenticationLogTrait`
-- `HasTenantsRelation`
-- `Notifiable`
-- `RelationX`
+  class BaseUser extends Authenticatable
+  {
+      protected $fillable = ['name', 'email', 'password'];
+      // Common methods and relationships
+  }
+  ```
 
-## Relazioni Principali
+### 2. Extending BaseUser
+- Create specific user models by extending `BaseUser` to add custom fields or logic.
+  ```php
+  namespace Modules\User\Models;
 
-- `tenants(): BelongsToMany<Tenant>` - Relazione many-to-many con i tenant
-- `teams(): BelongsToMany<Team>` - Relazione many-to-many con i team
-- `roles(): BelongsToMany<Role>` - Relazione many-to-many con i ruoli
-- `devices(): BelongsToMany<Device>` - Relazione many-to-many con i dispositivi
-- `socialiteUsers(): HasMany<SocialiteUser>` - Relazione one-to-many con gli account social
-- `authentications(): HasMany<AuthenticationLog>` - Relazione one-to-many con i log di autenticazione
+  class User extends BaseUser
+  {
+      protected $fillable = ['name', 'email', 'password', 'role'];
+      // Custom logic for this user type
+  }
+  ```
 
-## Metodi Principali
+### 3. Single Table Inheritance
+- Use single table inheritance to manage different user types within the same database table, using a `type` column to differentiate.
 
-### Team Management
+## Common Issues and Fixes
+- **Inheritance Conflicts**: Ensure that extending models do not redefine essential `BaseUser` methods unless intentional.
+- **Attribute Overlap**: Avoid duplicating attributes in child models that are already defined in `BaseUser`.
 
+<<<<<<< HEAD
 - `teamRole(Team $team): ?string` - Ottiene il ruolo dell'utente nel team specificato
 - `canRemoveTeamMember(Team $team, HasTeamsContract $user): bool` - Verifica se l'utente può rimuovere un membro del team
 - `canUpdateTeamMember(Team $team, HasTeamsContract $user): bool` - Verifica se l'utente può aggiornare un membro del team
@@ -124,12 +139,19 @@ La classe `BaseUser` è una classe astratta che implementa le interfacce `UserCo
 ## Collegamenti Correlati
 
 <<<<<<< HEAD
+=======
+## Documentation and Updates
+- Document any custom extensions or modifications to `BaseUser` in the relevant module's documentation folder.
+- Update this document if significant changes are made to the `BaseUser` structure or functionality.
+
+>>>>>>> d23ba493 (add calendar)
 ## Links to Related Documentation
 - [User Module Index](./INDEX.md)
 - [Authentication Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
 - [Profile Management](./PROFILE_MANAGEMENT.md)
 - [Routing Best Practices](./ROUTING_BEST_PRACTICES.md)
 - [Session Management](./SESSION_MANAGEMENT.md)
+<<<<<<< HEAD
 =======
 # BaseUser
 =======
@@ -194,6 +216,8 @@ This document outlines the structure and usage of the `BaseUser` model within a 
 >>>>>>> 9df8f556 (fix .md)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 - [[HasTeamsContract]]
 - [[UserContract]]
 - [[Team]]

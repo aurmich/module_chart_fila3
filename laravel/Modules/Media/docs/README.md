@@ -342,6 +342,7 @@ Per dettagli e best practice consulta la guida generale MCP nel workspace.
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 15cb84fb (fix collisions)
 ## Proprietà fondamentali del ServiceProvider (Laraxot/PTVX)
@@ -402,3 +403,5 @@ docs/
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)

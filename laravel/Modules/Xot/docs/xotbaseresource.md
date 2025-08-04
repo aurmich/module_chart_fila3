@@ -81,6 +81,7 @@ class NotificationResource extends XotBaseResource
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regole XotBaseResource](../../../docs/regole/xotbaseresource-rules.md)
 =======
 >>>>>>> aurmich/dev
@@ -89,6 +90,8 @@ class NotificationResource extends XotBaseResource
 =======
 - [Regole XotBaseResource](../../../docs/regole/xotbaseresource-rules.md)
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 
 ### Collegamenti ai Moduli
 - [Notify Resource](../../Notify/docs/filament-resources.md)

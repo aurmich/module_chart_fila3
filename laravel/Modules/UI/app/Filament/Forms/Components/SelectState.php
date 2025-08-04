@@ -13,6 +13,7 @@ use Filament\Tables\Columns\SelectColumn;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\ModelStates\HasStatesContract;
 =======
 >>>>>>> aurmich/dev
@@ -21,6 +22,8 @@ use Spatie\ModelStates\HasStatesContract;
 >>>>>>> 345f8677 (phpstan)
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> d23ba493 (add calendar)
 use Modules\SaluteOra\States\User\UserState;
 
 class SelectState extends Select
@@ -33,6 +36,7 @@ class SelectState extends Select
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->options(function (Model&HasStatesContract $record): array {
 =======
         $this->options(function (Model $record): array {
@@ -43,6 +47,9 @@ class SelectState extends Select
 =======
         $this->options(function (Model $record): array {
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+        $this->options(function (Model $record): array {
+>>>>>>> d23ba493 (add calendar)
             $name=$this->getName();
             $states=$record->getStatesFor($name)->toArray();
             /*
@@ -62,6 +69,7 @@ class SelectState extends Select
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             /**
              * @var array<int|string>
              * @phpstan-ignore argument.type
@@ -76,12 +84,15 @@ class SelectState extends Select
 >>>>>>> 345f8677 (phpstan)
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> d23ba493 (add calendar)
             return array_combine($states, $states);
         });
        
     }
 
    
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 }
@@ -91,3 +102,6 @@ class SelectState extends Select
 =======
 }
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+}
+>>>>>>> d23ba493 (add calendar)

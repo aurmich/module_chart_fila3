@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 use function Laravel\Folio\{middleware, name};
 use Filament\Notifications\Notification;
 use Filament\Notifications\Livewire\Notifications;
@@ -29,11 +29,12 @@ middleware($base_middleware);
 
 new class extends Component
 {
-   
+
 };
 
 ?>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <x-layouts.app>
 <<<<<<< HEAD
@@ -67,8 +68,17 @@ new class extends Component
 </x-layouts.app>
 =======
 <x-layouts.marketing>
+=======
+<x-layouts.app>
+    @volt('home')
+>>>>>>> d23ba493 (add calendar)
     <div>
-        {!! $_theme->showPageContent('home') !!}
+        <x-page side="content" slug="home" :type="auth()->user()?->type->value"/>
     </div>
+<<<<<<< HEAD
 </x-layouts.marketing>
 >>>>>>> 15cb84fb (fix collisions)
+=======
+    @endvolt
+</x-layouts.app>
+>>>>>>> d23ba493 (add calendar)

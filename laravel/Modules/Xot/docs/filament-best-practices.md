@@ -1,21 +1,74 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Filament Best Practices (Moduli Riutilizzabili)
+=======
+# Best Practices per Filament Resources in Laraxot
+>>>>>>> d23ba493 (add calendar)
 
-## Descrizione
-Best practice generiche per l'utilizzo di Filament in moduli Laravel riutilizzabili. Nessun riferimento a nomi di progetto o brand.
+Questo documento definisce le linee guida ufficiali e le best practices per l'implementazione delle risorse Filament all'interno del framework Laraxot.
 
-## Regole principali
-- NON estendere mai direttamente le classi di Filament: creare sempre wrapper personalizzati
-- Utilizzare traits per funzionalità riutilizzabili
-- Seguire il pattern di composizione invece dell'ereditarietà
-- Mantenere la compatibilità con gli aggiornamenti di Filament
-- Centralizzare le configurazioni comuni nelle classi base
-- Non inserire proprietà statiche custom nei resource (es. $navigationIcon, $navigationGroup, $translationPrefix)
-- Non usare ->label() direttamente nei form: usare sempre i file di traduzione
+## Regole Generali per XotBaseResource e Filament
 
-## Esempi
+## Filosofia del Progetto
+
+Il progetto utilizza un'architettura basata su classi base personalizzate (`XotBase*`) che estendono le classi Filament standard. Questo approccio garantisce:
+
+- **Centralizzazione**: Configurazioni e comportamenti comuni gestiti in un unico punto
+- **Coerenza**: Tutti i moduli seguono le stesse regole e convenzioni
+- **Manutenibilità**: Modifiche globali senza toccare ogni singola risorsa
+- **Scalabilità**: Architettura che cresce senza aumentare la complessità
+
+## Regole Fondamentali per XotBaseResource
+
+### Proprietà/Metodi VIETATI
+
+**Se una classe estende `XotBaseResource`, NON deve mai dichiarare:**
+
+- `protected static ?string $navigationGroup`
+- `protected static ?string $navigationLabel`
+- `protected static ?string $navigationIcon`
+- `protected static ?string $translationPrefix`
+- `public static function table(Table $table): Table`
+- `public static function getListTableColumns(): array`
+- `public static function getTableFilters(): array`
+- `public static function getBulkActions(): array`
+- `public static function getPages(): array` (se restituisce solo index,create,edit o index,create,edit,view)
+
+### Motivazioni
+
+1. **Gestione Centralizzata**: Queste proprietà sono gestite automaticamente dalla classe base o dai provider
+2. **Evitare Override**: Dichiarare questi elementi causa comportamenti incoerenti
+3. **Automazione**: La configurazione avviene tramite convenzioni e configurazioni centralizzate
+4. **Flessibilità**: I metodi che restituiscono array associativo permettono maggiore configurabilità
+
+## Namespace e Struttura File
+
+### Regola Critica
+**I file devono essere in `app/` ma il namespace NON include `app`**
+
+### Esempi Corretti
+- **File**: `Modules/<Nome>/app/Filament/Resources/UserResource.php`
+- **Namespace**: `Modules\<Nome>\Filament\Resources` (SENZA `app`)
+
+### Estensioni Obbligatorie
+- **Resources**: `Modules\Xot\Filament\Resources\XotBaseResource`
+- **Pages**: `Modules\Xot\Filament\Resources\Pages\XotBase*`
+- **Widgets**: `Modules\Xot\Filament\Widgets\XotBaseWidget`
+
+## Metodi con Array Associativo
+
+I seguenti metodi devono SEMPRE restituire un array associativo con chiavi string:
+
+- `getFormSchema(): array` - chiavi: sezioni del form
+- `getTableActions(): array` - chiavi: nomi delle azioni
+- `getTableColumns(): array` - chiavi: nomi delle colonne
+- `getTableFilters(): array` - chiavi: nomi dei filtri
+- `getTableBulkActions(): array` - chiavi: nomi delle azioni bulk
+
+### Esempio
 ```php
+<<<<<<< HEAD
 // ❌ Anti-pattern
 class MyResource extends \Filament\Resources\Resource {}
 =======
@@ -39,6 +92,8 @@ Best practice generiche per l'utilizzo di Filament in moduli Laravel riutilizzab
 ## Esempi
 ```php
 <<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
 public static function getFormSchema(): array
 {
     return [
@@ -167,14 +222,15 @@ Select::make('status')->options(StatusEnum::class)
 
 ```php
 use Modules\Xot\Filament\Resources\XotBaseResource;
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 // ❌ Anti-pattern
 class MyResource extends \Filament\Resources\Resource {}
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 
-// ✅ Best practice
-class MyResource extends \Modules\Xot\Filament\Resources\XotBaseResource {}
 class UserResource extends XotBaseResource
 {
     // ...
@@ -850,6 +906,7 @@ public static function table(Table $table): Table
 ## Troubleshooting
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Se compare un errore di override di proprietà statiche, rimuovere la proprietà dal resource e centralizzare nella base
 - Se le traduzioni non vengono applicate, controllare la struttura dei file lang e l'assenza di ->label() hardcoded
 
@@ -919,6 +976,9 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 
 
 =======
+=======
+
+>>>>>>> d23ba493 (add calendar)
 ### Problema: Form non visualizzato correttamente
 
 **Soluzione:** Assicurarsi di utilizzare `getFormSchema()` invece di `form()` e controllare che tutti i componenti siano configurati correttamente.
@@ -1109,6 +1169,7 @@ Appointment::where('doctor_id', $doctorId)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
@@ -1190,3 +1251,5 @@ Aggiornare sempre la documentazione e le regole di progetto. Applicare la stessa
 =======
 >>>>>>> 460d425 (.)
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)

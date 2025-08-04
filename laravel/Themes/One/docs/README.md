@@ -1,8 +1,40 @@
-# Tema One per <nome progetto>
+> **Collegamenti correlati**
+> - [README.md documentazione generale SaluteOra](../../../../docs/README.md)
+> - [README.md toolkit bashscripts](../../../../bashscripts/docs/README.md)
+> - [README.md modulo CMS](../../../../laravel/Modules/Cms/docs/README.md)
+> - [README.md modulo Dental](../../../../laravel/Modules/Dental/docs/README.md)
+> - [README.md modulo GDPR](../../../../laravel/Modules/Gdpr/docs/README.md)
+> - [README.md modulo User](../../../../laravel/Modules/User/docs/README.md)
+> - [README.md modulo Lang](../../../../laravel/Modules/Lang/docs/README.md)
+> - [README.md modulo Media](../../../../laravel/Modules/Media/docs/README.md)
+> - [README.md modulo Notify](../../../../laravel/Modules/Notify/docs/README.md)
+> - [README.md modulo Reporting](../../../../laravel/Modules/Reporting/docs/README.md)
+> - [README.md modulo Tenant](../../../../laravel/Modules/Tenant/docs/README.md)
+> - [README.md modulo UI](../../../../laravel/Modules/UI/docs/README.md)
+> - [README.md modulo Xot](../../../../laravel/Modules/Xot/docs/README.md)
+> - [README.md modulo Chart](../../../../laravel/Modules/Chart/docs/README.md)
+> - [README.md tema One](../../../../laravel/Themes/One/docs/README.md)
+> - [Collegamenti documentazione centrale](../../../../docs/collegamenti-documentazione.md)
+
+> - [README.md documentazione generale SaluteOra](../../../../docs/README.md)
+> - [README.md toolkit bashscripts](../../../../bashscripts/docs/README.md)
+> - [README.md modulo CMS](../../../../laravel/Modules/Cms/docs/README.md)
+> - [README.md modulo Dental](../../../../laravel/Modules/Dental/docs/README.md)
+> - [README.md modulo GDPR](../../../../laravel/Modules/Gdpr/docs/README.md)
+> - [README.md modulo User](../../../../laravel/Modules/User/docs/README.md)
+
+## Note sul Tema
+
+Il tema "laraxot/theme_one_fila3" è un pacchetto riutilizzabile e multiprogetto. Non è esclusivo per il progetto; tutti i riferimenti a il progetto sono stati rimossi o resi generici.
+
+# Tema One (laraxot/theme_one_fila3)
 
 ## Introduzione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
 Questo tema è un pacchetto riutilizzabile sviluppato da Laraxot e utilizzato in diversi progetti, incluso il progetto. Il nome del pacchetto è `laraxot/theme_one_fila3` e non deve essere modificato poiché è utilizzato anche in altri progetti.
 
 ---
@@ -91,11 +123,14 @@ Questo tema è un tema Laravel/Filament riutilizzabile, pensato per essere usato
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> d23ba493 (add calendar)
 # Installazione dipendenze Filament
 npm install tailwindcss@3 @tailwindcss/forms @tailwindcss/typography postcss postcss-nesting autoprefixer --save-dev
 ```
@@ -108,6 +143,7 @@ npm install tailwindcss@3 @tailwindcss/forms @tailwindcss/typography postcss pos
 - [Gestione Contenuti JSON](./JSON_CONTENT.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Sistema di Traduzioni](./i18n.md)
 - [Language Switcher Implementation](./language-switcher-implementation.md)
 - [Traduzioni Opening Hours](./opening_hours_translations_improvement.md)
@@ -116,6 +152,8 @@ npm install tailwindcss@3 @tailwindcss/forms @tailwindcss/typography postcss pos
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> d23ba493 (add calendar)
 
 ## Installazione
 
@@ -188,9 +226,12 @@ php artisan test --testsuite=theme-one
 ## Introduzione
 
 Il Tema One è il tema predefinito per il progetto, basato su Filament 3.3. Questo tema fornisce un'interfaccia moderna e responsive per il frontend del sito.
+<<<<<<< HEAD
 =======
 Il Tema One è il tema predefinito per <nome progetto>, basato su Filament 3.3. Questo tema fornisce un'interfaccia moderna e responsive per il frontend del sito.
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 
 ## Requisiti
 
@@ -205,13 +246,18 @@ Il Tema One è il tema predefinito per <nome progetto>, basato su Filament 3.3. 
 ```
 Themes/One/
 ├── app/
-│   └── Providers/
+│   └── providers/
 │       └── ThemeServiceProvider.php
 ├── config/
 │   └── theme.php
+├── database/
+│   └── content/
 ├── resources/
 │   └── views/
 │       ├── components/
+│       │   ├── sections/
+│       │   │   ├── header.blade.php
+│       │   │   └── footer.blade.php
 │       │   └── blocks/
 │       ├── layouts/
 │       └── pages/
@@ -219,6 +265,158 @@ Themes/One/
     ├── css/
     └── js/
 ```
+
+## Gestione dei Contenuti
+
+### Struttura dei Dati
+I contenuti sono organizzati in tre livelli principali:
+
+1. **Sezioni** (`/config/local/saluteora/database/content/sections/`)
+   - File numerati: `1.json`, `2.json`, ecc.
+   - Ogni sezione ha un ID univoco
+   - Contiene blocchi e attributi
+
+2. **Blocchi** (`/config/local/saluteora/database/content/blocks/`)
+   - File nominati: `navigation.json`, `actions.json`
+   - Riutilizzabili tra sezioni
+   - Supporto multilingua
+
+3. **Pagine** (`/config/local/saluteora/database/content/pages/`)
+   - Contenuti specifici delle pagine
+   - Struttura personalizzata
+   - Supporto multilingua
+
+### Esempio di Struttura JSON
+```json
+{
+    "id": 1,
+    "type": "header",
+    "attributes": {
+        "class": "bg-white",
+        "id": "main-header"
+    },
+    "blocks": {
+        "it": [
+            {
+                "type": "navigation",
+                "data": {
+                    "items": [
+                        {
+                            "title": "Home",
+                            "url": "/",
+                            "attributes": {
+                                "class": "nav-link"
+                            }
+                        },
+                        {
+                            "title": "Servizi",
+                            "url": "/servizi",
+                            "attributes": {
+                                "class": "nav-link"
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "en": [
+            {
+                "type": "navigation",
+                "data": {
+                    "items": [
+                        {
+                            "title": "Home",
+                            "url": "/",
+                            "attributes": {
+                                "class": "nav-link"
+                            }
+                        },
+                        {
+                            "title": "Services",
+                            "url": "/services",
+                            "attributes": {
+                                "class": "nav-link"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+```
+
+### Best Practices
+
+1. **Modifica dei Contenuti**
+   - Modificare i file JSON invece del codice
+   - Mantenere la struttura coerente
+   - Aggiornare tutte le traduzioni
+   - Versionare i contenuti
+
+2. **Struttura dei Dati**
+   - Usare ID numerici per le sezioni
+   - Organizzare i blocchi per lingua
+   - Mantenere la coerenza tra sezioni
+   - Documentare le modifiche
+
+3. **Performance**
+   - Cache dei contenuti
+   - Lazy loading dei blocchi
+   - Ottimizzazione delle query
+   - Minificazione dei JSON
+
+4. **Manutenzione**
+   - Testare le traduzioni
+   - Verificare la coerenza
+   - Aggiornare la documentazione
+   - Monitorare le performance
+
+## Convenzioni di Naming
+
+### Cartelle
+- Usare sempre minuscole
+- Usare trattini per spazi: `my-folder`
+- Esempi corretti:
+  - `database` non `Database`
+  - `resources` non `Resources`
+  - `config` non `Config`
+
+### File
+- Usare minuscole per i nomi
+- Usare underscore per spazi: `my_file.php`
+- Esempi corretti:
+  - `header.blade.php` non `Header.blade.php`
+  - `theme_service.php` non `ThemeService.php`
+
+### Namespace
+- Usare PascalCase per i namespace
+- Usare PascalCase per le classi
+- Esempi corretti:
+  - `Theme\One\Providers\ThemeServiceProvider`
+  - `Theme\One\Components\Header`
+
+### File JSON
+- Usare numeri per le sezioni: `1.json`, `2.json`
+- Usare nomi descrittivi per i blocchi
+- Mantenere la struttura coerente
+
+## Best Practices
+
+1. **Struttura**
+   - Mantenere la coerenza nelle maiuscole/minuscole
+   - Seguire le convenzioni di naming
+   - Verificare i percorsi prima di ogni modifica
+
+2. **Documentazione**
+   - Usare sempre minuscole nei percorsi
+   - Mantenere la coerenza con la struttura
+   - Aggiornare la documentazione quando si modifica la struttura
+
+3. **Sviluppo**
+   - Verificare i percorsi prima di ogni commit
+   - Mantenere la coerenza tra ambienti
+   - Testare su sistemi case-sensitive
 
 ## Blocchi Disponibili
 
@@ -260,11 +458,14 @@ Esempio:
 
 ## Integrazione con il Modulo CMS
 
-Il tema One si integra con il modulo CMS per la gestione dei contenuti. I contenuti sono definiti in file JSON nella directory `config/local/<nome progetto>/database/content/pages`.
+Il tema One si integra con il modulo CMS per la gestione dei contenuti. I contenuti sono definiti in file JSON nella directory `config/local/saluteora/database/content/pages`.
 
 ## Supporto
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
 Per supporto tecnico, contattare il team il progetto.
 
 # Tema One
@@ -306,6 +507,7 @@ Per supporto tecnico, contattare il team il progetto.
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Traduzioni
 - **Sistema Completo I18n**
   - Supporto per italiano (it) e inglese (en)
@@ -317,6 +519,8 @@ Per supporto tecnico, contattare il team il progetto.
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> d23ba493 (add calendar)
 ### Stili
 - **CSS**
   - Utilizzo dei preset Filament per Tailwind
@@ -447,6 +651,9 @@ Per supporto tecnico, contattare il team il progetto.
 - **Etica**: Ogni contributo deve essere guidato da onestà, rispetto, responsabilità e attenzione all'impatto sociale e ambientale.
 - **Zen**: Si valorizza la semplicità, la concentrazione sul presente, l'armonia tra le parti e la serenità nel processo di sviluppo.
 
+<<<<<<< HEAD
 =======
 Per supporto tecnico, contattare il team <nome progetto>. 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)

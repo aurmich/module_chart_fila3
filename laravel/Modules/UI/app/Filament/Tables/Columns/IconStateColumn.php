@@ -9,6 +9,7 @@ use Illuminate\Support\Arr;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 =======
 >>>>>>> 345f8677 (phpstan)
@@ -27,12 +28,17 @@ use Modules\SaluteOra\Models\User;
 use Spatie\ModelStates\State;
 use Modules\SaluteOra\Models\User;
 >>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
+=======
+use Spatie\ModelStates\State;
+use Modules\SaluteOra\Models\User;
+>>>>>>> d23ba493 (add calendar)
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Tables\Columns\IconColumn;
 use Illuminate\Database\Eloquent\Model;
 use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\SelectColumn;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -47,6 +53,10 @@ use Spatie\ModelStates\HasStatesContract;
 use Modules\SaluteOra\States\User\UserState;
 use Filament\Tables\Actions\Action;
 >>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
+=======
+use Modules\SaluteOra\States\User\UserState;
+use Filament\Tables\Actions\Action;
+>>>>>>> d23ba493 (add calendar)
 
 class IconStateColumn extends IconColumn
 {
@@ -55,6 +65,7 @@ class IconStateColumn extends IconColumn
     {
         parent::setUp();
         //$this->getStateUsing(fn() => true); // the column requires a state to be passed to it
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         $this->icon(fn($state): ?string => $state?->icon());
@@ -70,10 +81,16 @@ class IconStateColumn extends IconColumn
         $this->color(fn($state): string => $state->color()); // always show the 'edit' icon
         $this->tooltip(fn($state): string => $state->label());
 >>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
+=======
+        $this->icon(fn($state): string => $state->icon()); // always show the 'edit' icon
+        $this->color(fn($state): string => $state->color()); // always show the 'edit' icon
+        $this->tooltip(fn($state): string => $state->label());
+>>>>>>> d23ba493 (add calendar)
         //$this->label('aaa');
 
         $this->action(Action::make('change-state')
             ->form([
+<<<<<<< HEAD
 <<<<<<< HEAD
                 Select::make('state')
                     ->options(
@@ -146,6 +163,8 @@ class IconStateColumn extends IconColumn
                 ];
             })
 =======
+=======
+>>>>>>> d23ba493 (add calendar)
                 Select::make('state')->options(function (Model $record ,$state): array {
                     $name=$this->getName();
                     $state=$record->getAttribute($name);
@@ -171,7 +190,10 @@ class IconStateColumn extends IconColumn
                 'state' => $record->state::$name,
 
             ])
+<<<<<<< HEAD
 >>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
+=======
+>>>>>>> d23ba493 (add calendar)
             ->action(function($record, $data) {
                 //dddx(['record'=>$record, 'data'=>$data]);
                 $record->state->transitionTo($data['state'],$data['message']);
@@ -187,6 +209,7 @@ class IconStateColumn extends IconColumn
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
@@ -194,3 +217,6 @@ class IconStateColumn extends IconColumn
 =======
 }
 >>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
+=======
+}
+>>>>>>> d23ba493 (add calendar)

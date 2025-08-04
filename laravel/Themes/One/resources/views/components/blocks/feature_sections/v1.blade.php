@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="bg-[#E6EBF7] py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl lg:text-center">
@@ -28,6 +29,12 @@
         <div class="mx-auto max-w-2xl lg:text-center">
             <h2 class="text-base font-semibold leading-7 text-indigo-600">{{ $title }}</h2>
 >>>>>>> 15cb84fb (fix collisions)
+=======
+<div class="bg-[#E6EBF7] py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:text-center">
+            <h2 class="text-3xl font-bold leading-7 text-[#1A467F]">{{ $title }}</h2>
+>>>>>>> d23ba493 (add calendar)
             @if(isset($subtitle))
                 <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{{ $subtitle }}</p>
             @endif
@@ -42,6 +49,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-lg text-[#FF5F7E]">
 =======
                         <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
@@ -52,6 +60,9 @@
 =======
                         <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
 >>>>>>> 15cb84fb (fix collisions)
+=======
+                        <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-lg text-[#0D9488]">
+>>>>>>> d23ba493 (add calendar)
                             @if(isset($section['icon']))
                                 {{--
                                 <x-dynamic-component
@@ -59,6 +70,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     class="h-5 w-5 flex-none text-[#FF5F7E]"
 =======
                                     class="h-5 w-5 flex-none text-indigo-600"
@@ -69,6 +81,9 @@
 =======
                                     class="h-5 w-5 flex-none text-indigo-600"
 >>>>>>> 15cb84fb (fix collisions)
+=======
+                                    class="h-5 w-5 flex-none text-[#0D9488]"
+>>>>>>> d23ba493 (add calendar)
                                 />
                                 --}}
                                 <x-filament::icon
@@ -76,6 +91,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     class="h-5 w-5 flex-none text-[#FF5F7E]"
 =======
                                     class="h-5 w-5 flex-none text-indigo-600"
@@ -86,11 +102,15 @@
 =======
                                     class="h-5 w-5 flex-none text-indigo-600"
 >>>>>>> 15cb84fb (fix collisions)
+=======
+                                    class="h-5 w-5 flex-none text-[#0D9488]"
+>>>>>>> d23ba493 (add calendar)
                                 />
                             @endif
                             {{ $section['title'] }}
                         </dt>
                         <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -104,6 +124,9 @@
 =======
                             <p class="flex-auto">{{ $section['description'] }}</p>
 >>>>>>> 15cb84fb (fix collisions)
+=======
+                            <p class="flex-auto text-lg text-[#0D9488]">{{ $section['description'] }}</p>
+>>>>>>> d23ba493 (add calendar)
                             @if(isset($section['link']))
                                 <p class="mt-6">
                                     <a href="{{ $section['link'] }}" class="text-sm font-semibold leading-6 text-indigo-600">

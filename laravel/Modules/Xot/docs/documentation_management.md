@@ -228,6 +228,7 @@ b6f667c (.)
 =======
 
    - [ ] Testare applicabilità 
+<<<<<<< HEAD
 
 ## Gestione dei Prompt
 
@@ -291,3 +292,5 @@ b6f667c (.)
 >>>>>>> 15cb84fb (fix collisions)
 =======
 >>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
+=======
+>>>>>>> d23ba493 (add calendar)

@@ -1,6 +1,6 @@
 {
-    "name": "<nome progetto>/theme-one",
-    "description": "Tema One per <nome progetto>",
+    "name": "saluteora/theme-one",
+    "description": "Tema One per SaluteOra",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -24,6 +24,7 @@
 =======
         "filament/filament": "^3.3",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "filament/tables": "^3.3",
         "filament/forms": "^3.3"
 >>>>>>> aurmich/dev
@@ -35,5 +36,9 @@
 =======
         "filament/tables": "^3.3"
 >>>>>>> 15cb84fb (fix collisions)
+=======
+        "filament/tables": "^3.3",
+        "filament/forms": "^3.3"
+>>>>>>> d23ba493 (add calendar)
     }
 }

@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 description: Regole per l'implementazione di Azioni Filament personalizzate in progetti Laraxot/<nome progetto> (aggiornamento 2025-05)
+=======
+description: Regole per l'implementazione di Azioni Filament personalizzate in progetti Laraxot/PTVX (aggiornamento 2025-05)
+>>>>>>> d23ba493 (add calendar)
 globs: ["**/Filament/Actions/*.php", "**/Filament/Resources/**/Actions/*.php", "**/Filament/Pages/**/Actions/*.php"]
 alwaysApply: true
 ---
@@ -45,7 +49,11 @@ class CustomAction extends Action
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d23ba493 (add calendar)
         $this->label(__('modulename::actions.custom_action.label'))
             ->icon('heroicon-o-check-circle')
             ->color(Color::BLUE)
@@ -61,7 +69,11 @@ class CustomAction extends Action
             })
             ->successNotificationTitle(__('modulename::actions.custom_action.notifications.success'));
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     /**
      * Elabora l'azione.
      *
@@ -86,7 +98,11 @@ class BadAction extends Action
     public function __construct()
     {
         parent::__construct();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d23ba493 (add calendar)
         $this->label('Etichetta'); // NO: fuori da setUp e hardcoded
     }
 }
@@ -99,7 +115,11 @@ class BadAction extends Action
 protected function setUp(): void
 {
     parent::setUp();
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     $this->label('Approva')       // NO: etichetta hardcoded
         ->modalHeading('Conferma') // NO: heading hardcoded
         ->modalDescription('Sei sicuro?'); // NO: descrizione hardcoded
@@ -177,7 +197,11 @@ protected function getFormSchema(): array
 protected function setUp(): void
 {
     parent::setUp();
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     $this->authorize(fn (Model $record) => auth()->user()->can('update', $record))
         ->visible(fn (Model $record) => $record->status !== 'completed');
 }
@@ -201,7 +225,11 @@ class BulkCustomAction extends BulkAction
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d23ba493 (add calendar)
         $this->label(__('modulename::actions.bulk_custom.label'))
             ->icon('heroicon-o-check-badge')
             ->requiresConfirmation()
@@ -210,7 +238,11 @@ class BulkCustomAction extends BulkAction
                 $this->processBulkAction($records);
             });
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     /**
      * Elabora l'azione in blocco.
      *
@@ -305,14 +337,22 @@ class CustomActionTest extends TestCase
         // Arrange
         $user = User::factory()->create();
         $record = ModelName::factory()->create(['status' => 'pending']);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d23ba493 (add calendar)
         // Act
         $this->actingAs($user)
             ->post(route('filament.resources.model-names.actions.custom-action', [
                 'record' => $record->id,
                 'data' => ['field_name' => 'Test Value'],
             ]));
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d23ba493 (add calendar)
         // Assert
         $this->assertDatabaseHas('model_names', [
             'id' => $record->id,
@@ -328,6 +368,7 @@ class CustomActionTest extends TestCase
 protected function setUp(): void
 {
     parent::setUp();
+<<<<<<< HEAD
 
     $this->action(function (array $data, Model $record): void {
         try {
@@ -341,12 +382,31 @@ protected function setUp(): void
         } catch (\Exception $e) {
             DB::rollBack();
 
+=======
+    
+    $this->action(function (array $data, Model $record): void {
+        try {
+            DB::beginTransaction();
+            
+            // Azione...
+            
+            DB::commit();
+            
+            $this->success();
+        } catch (\Exception $e) {
+            DB::rollBack();
+            
+>>>>>>> d23ba493 (add calendar)
             \Log::error('Errore in CustomAction', [
                 'record_id' => $record->id,
                 'data' => $data,
                 'exception' => $e->getMessage(),
             ]);
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> d23ba493 (add calendar)
             $this->failure(__('modulename::actions.custom_action.notifications.error'));
         }
     });
@@ -359,7 +419,11 @@ protected function setUp(): void
 protected function setUp(): void
 {
     parent::setUp();
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     $this->mountUsing(function (Forms\Form $form, Model $record): void {
         $form->fill([
             'field_name' => $record->default_value,
@@ -368,7 +432,11 @@ protected function setUp(): void
     ->mutateRecordDataUsing(function (array $data): array {
         $data['user_id'] = auth()->id();
         $data['processed_at'] = now();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> d23ba493 (add calendar)
         return $data;
     });
 }
@@ -380,7 +448,11 @@ protected function setUp(): void
 protected function setUp(): void
 {
     parent::setUp();
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     $this->modalWidth('md')
         ->modalAlignment('center')
         ->modalIcon('heroicon-o-information-circle')
@@ -398,7 +470,11 @@ protected function setUp(): void
 protected function setUp(): void
 {
     parent::setUp();
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     $this->successNotificationTitle(__('modulename::actions.custom_action.notifications.success'))
         ->successNotificationBody(__('modulename::actions.custom_action.notifications.success_details'))
         ->failureNotificationTitle(__('modulename::actions.custom_action.notifications.error'))
@@ -441,4 +517,8 @@ Prima di considerare completa un'Action personalizzata, verificare:
 6. **Test**
    - [x] Test unitari o funzionali implementati
    - [x] Copertura dei casi di errore
+<<<<<<< HEAD
    - [x] Verifica del comportamento atteso
+=======
+   - [x] Verifica del comportamento atteso
+>>>>>>> d23ba493 (add calendar)

@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo Xot - Documentazione
 
 ## 🚀 Panoramica
@@ -199,47 +200,46 @@ class MyWidget extends XotBaseWidget
 =======
 # Modulo Xot
 >>>>>>> 15cb84fb (fix collisions)
+=======
+# Xot - Documentazione Principale
+>>>>>>> d23ba493 (add calendar)
 
-## Introduzione
+## Regole Generali del Progetto
 
-Il modulo Xot è il core del sistema, fornisce funzionalità base e componenti riutilizzabili per tutti gli altri moduli. Implementa pattern architetturali, gestione degli errori, e componenti UI comuni.
+### Filament e XotBaseResource
+- [📋 Filament Best Practices](filament-best-practices.md) - **REGOLE GENERALI**: XotBaseResource, namespace, traduzioni, enum
+- [🏗️ Architettura Filament](filament/README.md) - Documentazione architettura Filament
 
-## File Chiave
-- [BaseUser.php](../User/app/Models/BaseUser.php)
-- [User.php](../User/app/Models/User.php)
-- [Doctor.php](../Patient/app/Models/Doctor.php)
-- [DoctorResource.php](../Patient/app/Filament/Resources/DoctorResource.php)
-- [RegisterAction.php](../Patient/app/Actions/RegisterAction.php)
-- [RegistrationWidget.php](../User/app/Filament/Widgets/RegistrationWidget.php)
+### Sicurezza e Permessi
+- [🔐 Regole Roles/Permissions/Guard](roles-permissions.md) - Gestione ruoli e permessi
 
-## Componenti Principali
+### Architettura
+- [🏗️ Struttura Progetto](architecture/struttura-progetto.md) - Architettura generale del progetto
 
-### 1. Base Classes
-- `BaseModel`: Classe base per tutti i modelli
-- `BaseController`: Controller base con funzionalità comuni
-- `BaseService`: Service layer base
-- `BaseRepository`: Repository pattern base
+## Collegamenti Bidirezionali
 
-### 2. Traits
-- `HasUuid`: Generazione UUID per i modelli
-- `HasSlug`: Gestione slug automatica
-- `HasStatus`: Gestione stati dei modelli
-- `HasTimestamps`: Gestione timestamp estesa
+### Moduli che Utilizzano XotBase*
+- [📋 SaluteOra Filament Best Practices](../../SaluteOra/docs/filament-best-practices.mdc) - Implementazione specifica SaluteOra
+- [📁 SaluteOra Namespace Rules](../../SaluteOra/docs/namespace-vs-file-structure.md) - Regole namespace SaluteOra
 
-- [Volt Folio Best Practices](./VOLT_FOLIO_BEST_PRACTICES.md) - Best practices per Volt e Folio
-- [Volt Folio Best Practices](./VOLT_FOLIO_BEST_PRACTICES.md) - Best practices per Volt e Foliob6f667c (.)
+### Regole IDE
+- [📋 Regole Cursor XotBaseResource](../../../.cursor/rules/filament-xotbase-resource-best-practices.mdc) - Regole per IDE Cursor
+- [📋 Regole Windsurf XotBaseResource](../../../.windsurf/rules/filament-xotbase-resource-best-practices.mdc) - Regole per IDE Windsurf
+- [📁 Regole Namespace](../../../.cursor/rules/namespace-structure-rules.mdc) - Regole struttura namespace e directory
 
+## Filosofia del Progetto
 
-### Filament
-- [Filament Integration](./filament_integration.md) - Integrazione con Filament
-- [Widgets](./widgets.md) - Sistema widget
-- [Resources](./resources.md) - Gestione risorse
+### Principi Fondamentali
+- **DRY (Don't Repeat Yourself)**: Centralizzazione delle configurazioni comuni
+- **KISS (Keep It Simple, Stupid)**: Convenzioni chiare e semplici
+- **Coerenza**: Tutti i moduli seguono le stesse regole
+- **Manutenibilità**: Modifiche globali senza toccare ogni singola risorsa
+- **Scalabilità**: Architettura che cresce senza aumentare la complessità
 
-### 3. Interfaces
-- `RepositoryInterface`: Contratto base per i repository
-- `ServiceInterface`: Contratto base per i service
-- `ActionInterface`: Contratto base per le actions
+### Zen del Progetto
+> "La semplicità è la sofisticazione suprema. Un sistema ben progettato nasconde la complessità dietro un'interfaccia semplice."
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 ## Introduzione
@@ -1168,3 +1168,6 @@ docs/
 >>>>>>> 15cb84fb (fix collisions)
 =======
 >>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
+=======
+Altre sezioni...
+>>>>>>> d23ba493 (add calendar)

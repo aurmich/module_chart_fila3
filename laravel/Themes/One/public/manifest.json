@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "file": "assets/app-7PoISLAE.css",
 =======
 <<<<<<< HEAD
@@ -96,6 +97,9 @@
 =======
     "file": "assets/app-C7OaeTzW.css",
 >>>>>>> 15cb84fb (fix collisions)
+=======
+    "file": "assets/app-B9VPcr49.css",
+>>>>>>> d23ba493 (add calendar)
     "src": "resources/css/app.css",
     "isEntry": true
   },

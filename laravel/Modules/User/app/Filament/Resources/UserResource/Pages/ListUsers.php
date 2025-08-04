@@ -9,6 +9,7 @@ use Filament\Tables\Actions\Action;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Tables\Filters\Filter;
 use Illuminate\Database\Query\Builder;
 use Filament\Tables\Columns\TextColumn;
@@ -44,15 +45,21 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Actions\ExportBulkAction;
 use Filament\Tables\Columns\TextColumn;
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 use Filament\Tables\Filters\Filter;
 use Illuminate\Database\Query\Builder;
-use Modules\User\Filament\Actions\ChangePasswordAction;
-use Modules\User\Filament\Resources\UserResource;
-use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
+use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Contracts\UserContract;
+use Filament\Tables\Actions\ExportBulkAction;
+use Modules\User\Filament\Resources\UserResource;
+use Modules\User\Filament\Actions\ChangePasswordAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+use Modules\User\Filament\Resources\UserResource\Pages\BaseListUsers;
+use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
+use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
-class ListUsers extends XotBaseListRecords
+class ListUsers extends BaseListUsers
 {
     protected static string $resource = UserResource::class;
 
@@ -64,6 +71,7 @@ class ListUsers extends XotBaseListRecords
         return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'id' => TextColumn::make('id'),
 >>>>>>> 54f4fa16 (.)
 =======
@@ -72,6 +80,9 @@ class ListUsers extends XotBaseListRecords
 =======
             'id' => TextColumn::make('id'),
 >>>>>>> 15cb84fb (fix collisions)
+=======
+            //'id' => TextColumn::make('id'),
+>>>>>>> d23ba493 (add calendar)
             'name' => TextColumn::make('name')
                 ->searchable(),
             'email' => TextColumn::make('email')
@@ -79,12 +90,16 @@ class ListUsers extends XotBaseListRecords
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
+=======
+>>>>>>> d23ba493 (add calendar)
             //'email_verified_at' => TextColumn::make('email_verified_at')
             //    ->dateTime(),
             //'created_at' => TextColumn::make('created_at')
             //    ->dateTime(),
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -99,6 +114,8 @@ class ListUsers extends XotBaseListRecords
 >>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
         ];
     }
 

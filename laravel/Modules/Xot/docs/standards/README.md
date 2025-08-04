@@ -99,6 +99,7 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 15cb84fb (fix collisions)
 # Standard Xot: Ereditarietà dei Modelli
@@ -147,3 +148,5 @@ class Doctor extends User
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)

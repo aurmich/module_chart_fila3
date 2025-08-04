@@ -1,14 +1,19 @@
 {
   "mcpServers": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "sequential-thinking": {
 =======
     "sequential-thinking-npx": {
 >>>>>>> 54f4fa16 (.)
+=======
+    "sequential-thinking": {
+>>>>>>> d23ba493 (add calendar)
       "command": "npx",
       "args": [
         "-y",
         "@modelcontextprotocol/server-sequential-thinking"
+<<<<<<< HEAD
 <<<<<<< HEAD
       ],
       "env": {}
@@ -47,11 +52,35 @@
 }
 =======
       ]
+=======
+      ],
+      "env": {}
+>>>>>>> d23ba493 (add calendar)
     },
-    "datapilot": {
-      "url": "http://localhost:7700/sse",
-      "type": "sse"
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/html/_bases/"]
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-puppeteer"
+      ],
+      "env": {}
+    },
+    "mcp-package-docs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-package-docs"
+      ]
     }
+  
   }
 }
 >>>>>>> 54f4fa16 (.)

@@ -1,10 +1,18 @@
 ---
+<<<<<<< HEAD
 description: Convenzioni di naming per file e cartelle docs in Laraxot <nome progetto>
+=======
+description: Convenzioni di naming per file e cartelle docs in Laraxot PTVX
+>>>>>>> d23ba493 (add calendar)
 globs: ["**/docs/**/*"]
 alwaysApply: true
 ---
 
+<<<<<<< HEAD
 # Convenzioni di naming per cartelle docs in Laraxot <nome progetto>
+=======
+# Convenzioni di naming per cartelle docs in Laraxot PTVX
+>>>>>>> d23ba493 (add calendar)
 
 ## Regole fondamentali
 
@@ -62,4 +70,8 @@ Quando si crea nuova documentazione:
 3. Creare collegamenti bidirezionali appropriati
 4. Evitare duplicazione con documentazione esistente
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: Giugno 2025*
+=======
+*Ultimo aggiornamento: Giugno 2025*
+>>>>>>> d23ba493 (add calendar)

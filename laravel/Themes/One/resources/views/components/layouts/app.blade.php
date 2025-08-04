@@ -37,17 +37,11 @@
 >>>>>>> aurmich/dev
 =======
 <x-layouts.main>
-    <x-ui.marketing.header />
+    <x-section slug="header" />
 
-    <!-- Page Heading -->
-    @if (isset($header))
-        <header class="mb-6 bg-white shadow-sm border-b border-gray-100 dark:border-gray-800 dark:bg-gray-900/40">
-            <div class="px-4 py-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                {{ $header }}
-            </div>
-        </header>
-    @endif
+    {{ $slot }}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     <x-section slug="footer" />
 </x-layouts.main>
@@ -72,3 +66,7 @@
     @endif
 </x-layouts.main>
 >>>>>>> 15cb84fb (fix collisions)
+=======
+    <x-section slug="footer" />
+</x-layouts.main>
+>>>>>>> d23ba493 (add calendar)

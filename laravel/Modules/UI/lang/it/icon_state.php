@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 return [
     'fields' => [
         'name' => [
@@ -44,6 +45,8 @@ return [
 =======
 =======
 >>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
+=======
+>>>>>>> d23ba493 (add calendar)
 return array (
   'fields' => 
   array (
@@ -79,6 +82,9 @@ return array (
   ),
 );
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
+=======
+>>>>>>> d23ba493 (add calendar)

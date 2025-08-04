@@ -5,8 +5,11 @@ Questo documento definisce le linee guida ufficiali per la struttura dei moduli 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+>>>>>>> d23ba493 (add calendar)
 ---
 
 ## Gestione dati geografici statici: GeoJsonModel readonly (ispirato a Squire)
@@ -25,12 +28,15 @@ Per dettagli implementativi e best practice vedi:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 ## Service Provider
 
 ### Convenzioni Base

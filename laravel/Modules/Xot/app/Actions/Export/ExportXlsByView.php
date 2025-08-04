@@ -11,6 +11,7 @@ use Illuminate\Contracts\View\View;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
@@ -20,11 +21,15 @@ use Illuminate\Http\BinaryFileResponse;
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Http\BinaryFileResponse;
+>>>>>>> d23ba493 (add calendar)
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\Xot\Exports\ViewExport;
 use Spatie\QueueableAction\QueueableAction;
-use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 /**
  * Classe per l'esportazione di viste in formato Excel.
@@ -47,6 +52,11 @@ use Spatie\QueueableAction\QueueableAction;
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+/**
+ * Classe per l'esportazione di viste in formato Excel.
+ */
+>>>>>>> d23ba493 (add calendar)
 class ExportXlsByView
 {
     use QueueableAction;
@@ -54,6 +64,7 @@ class ExportXlsByView
     /**
      * Esporta una vista in Excel.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -102,25 +113,28 @@ class ExportXlsByView
 =======
      * @param View $view Vista da esportare
 >>>>>>> 15cb84fb (fix collisions)
+=======
+     * @param Collection<int|string, mixed> $rows La collezione da esportare
+     * @param array<int, string> $fields Campi da includere nell'export
+>>>>>>> d23ba493 (add calendar)
      * @param string $filename Nome del file Excel
-     * @param array<string>|null $fields Campi da includere nell'export
-     * 
+     * @param string|null $transKey Chiave di traduzione per i campi
+     *
      * @return BinaryFileResponse
      */
     public function execute(
-        View $view,
+        Collection $rows,
+        array $fields,
         string $filename = 'test.xlsx',
-        ?array $fields = null,
+        ?string $transKey = null,
     ): BinaryFileResponse {
-        // Se $fields non è null, assicuriamo che sia un array di stringhe
-        $stringFields = null;
-        if (is_array($fields)) {
-            $stringFields = array_map(function ($field) {
+        // Assicuriamo che $fields sia un array di stringhe
+        $stringFields = array_map(function (string|int|float|bool $field): string {
                 return strval($field);
             }, array_values($fields));
-        }
 
         $export = new ViewExport(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             view: $view,
@@ -137,6 +151,11 @@ class ExportXlsByView
             transKey: null,
             fields: $stringFields
 >>>>>>> 15cb84fb (fix collisions)
+=======
+            rows: $rows,
+            fields: $stringFields,
+            transKey: $transKey
+>>>>>>> d23ba493 (add calendar)
         );
 
         return Excel::download($export, $filename);

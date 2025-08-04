@@ -18,9 +18,16 @@ class ComponentFileData extends Data
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> d23ba493 (add calendar)
     public string $class;
+
     public ?string $module = null;
+
     public ?string $path = null;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 54f4fa16 (.)
@@ -38,6 +45,9 @@ class ComponentFileData extends Data
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+
+>>>>>>> d23ba493 (add calendar)
     public ?string $ns = null;
 
     public static function collection(EloquentCollection|Collection|array $data): DataCollection
@@ -46,6 +56,7 @@ class ComponentFileData extends Data
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 >>>>>>> aurmich/dev
@@ -54,5 +65,7 @@ class ComponentFileData extends Data
 =======
         
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
     }
 }

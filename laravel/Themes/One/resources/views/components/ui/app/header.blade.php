@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d23ba493 (add calendar)
 <header class="text-white bg-emerald-700">
 	<div class="h-12 bg-emerald-900 min-h-12 navbar">
 		<div class="flex justify-between w-full max-w-screen-xl mx-auto">
@@ -23,6 +26,7 @@
 							<x-heroicon-o-user class="size-4" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 							<div class="hidden md:block">@lang('pub_theme::navigation.main_menu.login.label')</div>
 =======
 							<div class="hidden md:block">Accedi all'area personale</div>
@@ -30,6 +34,9 @@
 =======
 							<div class="hidden md:block">Accedi all'area personale</div>
 >>>>>>> 54f4fa16 (.)
+=======
+							<div class="hidden md:block">Accedi all'area personale</div>
+>>>>>>> d23ba493 (add calendar)
 						</a>
 					</li>
 				</ul>
@@ -94,6 +101,7 @@
 			</div>
 		</div>
 	</div>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 </header>
@@ -181,3 +189,6 @@
     </div>
 </header>
 >>>>>>> 15cb84fb (fix collisions)
+=======
+</header>
+>>>>>>> d23ba493 (add calendar)

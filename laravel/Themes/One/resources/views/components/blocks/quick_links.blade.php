@@ -13,10 +13,14 @@
         4 => 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4',
     ][$columns] ?? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4';
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 7bc70bf2 (🚀 (laravel/Themes/One): remove deprecated files and old theme structure to streamline the codebase and improve maintainability)
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     // Assicuriamoci che links sia sempre un array
     $links = is_array($links) ? $links : [];
 @endphp
@@ -35,10 +39,14 @@
             </div>
         @endif
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 7bc70bf2 (🚀 (laravel/Themes/One): remove deprecated files and old theme structure to streamline the codebase and improve maintainability)
+=======
+        
+>>>>>>> d23ba493 (add calendar)
         <div class="grid {{ $gridClasses }} gap-6 lg:gap-8">
             @foreach($links as $link)
                 @php
@@ -50,10 +58,14 @@
                     $badgeColor = $link['badge_color'] ?? 'bg-blue-100 text-blue-800';
                 @endphp
 <<<<<<< HEAD
+<<<<<<< HEAD
                 
 =======
 
 >>>>>>> 7bc70bf2 (🚀 (laravel/Themes/One): remove deprecated files and old theme structure to streamline the codebase and improve maintainability)
+=======
+                
+>>>>>>> d23ba493 (add calendar)
                 <a href="{{ $url }}" class="group relative bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-500 rounded-lg border border-gray-100 hover:border-blue-200 transition-all duration-200 hover:shadow-md">
                     <div class="flex flex-col items-center text-center">
                         @if($icon)
@@ -62,10 +74,14 @@
                             </div>
                         @endif
 <<<<<<< HEAD
+<<<<<<< HEAD
                         
 =======
 
 >>>>>>> 7bc70bf2 (🚀 (laravel/Themes/One): remove deprecated files and old theme structure to streamline the codebase and improve maintainability)
+=======
+                        
+>>>>>>> d23ba493 (add calendar)
                         <div class="mt-4">
                             <h3 class="text-base font-semibold text-gray-900">
                                 <span class="absolute inset-0" aria-hidden="true"></span>
@@ -76,10 +92,14 @@
                             @endif
                         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         
 =======
 
 >>>>>>> 7bc70bf2 (🚀 (laravel/Themes/One): remove deprecated files and old theme structure to streamline the codebase and improve maintainability)
+=======
+                        
+>>>>>>> d23ba493 (add calendar)
                         @if(isset($badge))
                             <span class="mt-4 inline-flex items-center rounded-md px-2.5 py-0.5 text-sm font-medium {{ $badgeColor }}">
                                 {{ $badge }}

@@ -201,6 +201,7 @@ php artisan view:cache
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
@@ -224,3 +225,5 @@ php artisan view:cache
 >>>>>>> bead9c28 (fix case)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)

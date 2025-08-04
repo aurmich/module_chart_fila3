@@ -1,14 +1,26 @@
 ---
+<<<<<<< HEAD
 description: Regole per la documentazione in Laraxot <nome progetto>
+=======
+description: Regole per la documentazione in Laraxot PTVX
+>>>>>>> d23ba493 (add calendar)
 globs: ["**/docs/**/*.md", "docs/**/*.md"]
 alwaysApply: true
 ---
 
+<<<<<<< HEAD
 # Regole per la Documentazione in Laraxot <nome progetto>
 
 ## Struttura Documentazione
 
 ### Root Documentation (/var/www/html/<nome progetto>/docs/)
+=======
+# Regole per la Documentazione in Laraxot PTVX
+
+## Struttura Documentazione
+
+### Root Documentation (/var/www/html/ptvx/docs/)
+>>>>>>> d23ba493 (add calendar)
 Contiene documentazione globale del progetto:
 - Linee guida architetturali
 - Convenzioni di codice
@@ -149,4 +161,8 @@ Schema::table('performance_organizzativa', function (Blueprint $table) {
 - [Modules/Xot/docs/DOC_MAINTENANCE.md](mdc:../../laravel/Modules/Xot/docs/DOC_MAINTENANCE.md)
 - [Modules/Performance/docs/doc_guidelines.md](mdc:../../laravel/Modules/Performance/docs/doc_guidelines.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: maggio 2025*
+=======
+*Ultimo aggiornamento: maggio 2025*
+>>>>>>> d23ba493 (add calendar)

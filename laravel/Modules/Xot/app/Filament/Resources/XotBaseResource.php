@@ -121,15 +121,19 @@ abstract class XotBaseResource extends FilamentResource
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     abstract public static function getFormSchema(): array;
     
 =======
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> d23ba493 (add calendar)
     public static function getFormSchema(): array
     {
         return [];
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
@@ -140,6 +144,8 @@ abstract class XotBaseResource extends FilamentResource
 =======
     abstract public static function getFormSchema(): array;
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> d23ba493 (add calendar)
 
     final public static function form(Form $form): Form
     {
@@ -197,6 +203,7 @@ abstract class XotBaseResource extends FilamentResource
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
@@ -207,6 +214,9 @@ abstract class XotBaseResource extends FilamentResource
 =======
         
 >>>>>>> 15cb84fb (fix collisions)
+=======
+
+>>>>>>> d23ba493 (add calendar)
         /** @var array<string, \Filament\Resources\Pages\PageRegistration> $pages */
         $pages = [
             'index' => $index::route('/'),
@@ -233,6 +243,7 @@ abstract class XotBaseResource extends FilamentResource
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
@@ -243,6 +254,9 @@ abstract class XotBaseResource extends FilamentResource
 =======
         
 >>>>>>> 15cb84fb (fix collisions)
+=======
+
+>>>>>>> d23ba493 (add calendar)
         $path = Str::of($filename)
             ->before('.php')
             ->append(DIRECTORY_SEPARATOR)
@@ -254,6 +268,7 @@ abstract class XotBaseResource extends FilamentResource
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
@@ -264,6 +279,9 @@ abstract class XotBaseResource extends FilamentResource
 =======
         
 >>>>>>> 15cb84fb (fix collisions)
+=======
+
+>>>>>>> d23ba493 (add calendar)
         /** @var array<class-string<\Filament\Resources\RelationManagers\RelationManager>> $res */
         $res = [];
         foreach ($files as $file) {
@@ -275,6 +293,7 @@ abstract class XotBaseResource extends FilamentResource
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
@@ -285,6 +304,9 @@ abstract class XotBaseResource extends FilamentResource
 =======
             
 >>>>>>> 15cb84fb (fix collisions)
+=======
+
+>>>>>>> d23ba493 (add calendar)
             if (class_exists($className)) {
                 Assert::subclassOf($className, \Filament\Resources\RelationManagers\RelationManager::class);
                 $res[] = $className;

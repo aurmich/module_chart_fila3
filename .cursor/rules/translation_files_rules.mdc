@@ -1,10 +1,18 @@
 ---
+<<<<<<< HEAD
 description: Rules for implementing and structuring translation files in Laraxot <nome progetto>
+=======
+description: Rules for implementing and structuring translation files in Laraxot PTVX
+>>>>>>> d23ba493 (add calendar)
 globs: ["**/lang/**/*.php", "**/resources/lang/**/*.php"]
 alwaysApply: true
 ---
 
+<<<<<<< HEAD
 # Translation Files Implementation Rules in Laraxot <nome progetto>
+=======
+# Translation Files Implementation Rules in Laraxot PTVX
+>>>>>>> d23ba493 (add calendar)
 
 ## Core Principles
 
@@ -32,13 +40,21 @@ return [
         'icon' => 'icon-name', // Do not translate icon names
         'sort' => 50,
     ],
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     'page' => [
         'title' => 'Title in target language',
         'heading' => 'Heading in target language',
         'description' => 'Description in target language',
     ],
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     'fields' => [
         'field_name' => [
             'label' => 'Field label in target language',
@@ -47,7 +63,11 @@ return [
         ],
         // Other fields...
     ],
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     'actions' => [
         'action_name' => [
             'label' => 'Action label in target language',
@@ -57,12 +77,20 @@ return [
         ],
         // Other actions...
     ],
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     'validation' => [
         'error_type' => 'Validation error message in target language',
         // Other validation messages...
     ],
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d23ba493 (add calendar)
     'messages' => [
         'message_key' => 'Message in target language',
         // Other messages...
@@ -131,4 +159,8 @@ All action translations MUST include:
 - Create bidirectional links between module docs and root docs
 - Ensure all user-facing text comes from translation files, never hardcoded
 
+<<<<<<< HEAD
 *Last updated: June 2025*
+=======
+*Last updated: June 2025*
+>>>>>>> d23ba493 (add calendar)
