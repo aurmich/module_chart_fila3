@@ -54,10 +54,7 @@ Lo script `pdf_to_md_ocr.py` può essere eseguito dalla riga di comando con la s
 ## Esempio
 ```bash
 python3 pdf_to_md_ocr.py documento.pdf
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Output: documento.md
 ```
 
@@ -95,10 +92,7 @@ Script Python avanzato per convertire file PDF in formato Markdown (.md) utilizz
 
 **Su Ubuntu/Debian:**
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Installazione Tesseract e Poppler
 sudo apt update
 sudo apt install tesseract-ocr tesseract-ocr-ita poppler-utils
@@ -109,10 +103,7 @@ pip install pytesseract pdf2image Pillow
 
 **Su macOS (con Homebrew):**
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Installazione Tesseract e Poppler
 brew install tesseract tesseract-lang
 brew install poppler

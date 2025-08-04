@@ -12,7 +12,6 @@ INFO  Nothing to migrate.
 
 per vedere 
 http://ec2-54-194-72-103.eu-west-1.compute.amazonaws.com/it
-<<<<<<< HEAD
 nuova macchina
 http://ec2-54-217-13-148.eu-west-1.compute.amazonaws.com/it
 terza
@@ -24,8 +23,6 @@ http://ec2-34-247-221-151.eu-west-1.compute.amazonaws.com/it
 
 
 http://staging.saluteoraleingravidanza.it/
-=======
->>>>>>> aurmich/dev
 
 
 se si vedono dei |--35--

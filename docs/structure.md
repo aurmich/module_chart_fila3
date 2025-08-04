@@ -1,28 +1,9 @@
-<<<<<<< HEAD
 # Modulo Geo
-=======
-<<<<<<< HEAD
-# Modulo Chart
-=======
-# Modulo Geo
->>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
->>>>>>> aurmich/dev
 
 Data: 2025-04-23 19:09:55
 
 ## Informazioni generali
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-- **Namespace principale**: Modules\\Chart
-- **Pacchetto Composer**: laraxot/module_chart_fila3
-Marco Sottana
-- **Dipendenze**: amenadiel/jpgraph ^4.1 laraxot/module_xot_fila3 * thecodingmachine/safe ^2.5 driftingly/rector-laravel ^0.26.2 enlightn/enlightn ^2.5 laravel/pint ^1.13 nunomaduro/collision * larastan/larastan ^2.6 nunomaduro/phpinsights ^2.9 orchestra/testbench ^9.4 pestphp/pest * pestphp/pest-plugin-arch * pestphp/pest-plugin-laravel * phpstan/phpstan-deprecation-rules * phpstan/phpstan-phpunit * psalm/plugin-laravel * 
-- **Totale file PHP**: 58
-- **Totale classi/interfacce**: 42
-=======
->>>>>>> aurmich/dev
 - **Namespace principale**: Modules\\Geo
 Modules\\Geo\\Database\\Factories
 Modules\\Geo\\Database\\Seeders
@@ -31,44 +12,11 @@ Marco Sottana
 - **Dipendenze**: cheesegrits/filament-google-maps ^3.0 dotswan/filament-map-picker ^1.2 webbingbrasil/filament-maps ^3.0@beta repositories type path url ../Xot type path url ../Tenant type path url ../UI scripts post-autoload-dump_comment 
 - **Totale file PHP**: 197
 - **Totale classi/interfacce**: 129
-<<<<<<< HEAD
-=======
->>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
->>>>>>> aurmich/dev
 
 ## Struttura delle directory
 
 ```
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-.github
-.github/workflows
-.vscode
-Resources_old2
-_docs
-app
-app/Actions
-app/Actions/Chart
-app/Actions/JpGraph
-app/Actions/JpGraph/V1
-app/Console
-app/Console/Commands
-app/Datas
-app/Entities
-app/Enums
-app/Filament
-app/Filament/Pages
-app/Filament/Resources
-app/Filament/Resources/ChartResource
-app/Filament/Resources/ChartResource/Pages
-app/Filament/Resources/MixedChartResource
-app/Filament/Resources/MixedChartResource/Pages
-app/Filament/Widgets
-app/Filament/Widgets/Samples
-=======
->>>>>>> aurmich/dev
 .git
 .git/branches
 .git/hooks
@@ -379,40 +327,12 @@ app/Filament/Resources/LocationResource
 app/Filament/Resources/LocationResource/Pages
 app/Filament/Resources/Pages
 app/Filament/Widgets
-<<<<<<< HEAD
-=======
->>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
->>>>>>> aurmich/dev
 app/Http
 app/Http/Controllers
 app/Http/Livewire
 app/Http/Middleware
 app/Http/Requests
 app/Models
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-app/Providers
-app/Providers/Filament
-app/Tables
-app/Tables/Columns
-app/View
-app/View/Components
-config
-database
-database/Factories
-database/Migrations
-database/Seeders
-docs
-docs/.github
-docs/.github/workflows
-docs/advanced
-docs/components
-docs/components/chartjs
-docs/phpstan
-lang
-=======
->>>>>>> aurmich/dev
 app/Models/Policies
 app/Models/Traits
 app/Providers
@@ -436,40 +356,12 @@ docs
 docs/phpstan
 lang
 lang/en
-<<<<<<< HEAD
-=======
->>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
->>>>>>> aurmich/dev
 lang/it
 resources
 resources/assets
 resources/assets/js
 resources/assets/sass
 resources/css
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-resources/dist
-resources/dist/.vite
-resources/dist/assets
-resources/img
-resources/js
-resources/lang
-resources/lang/it
-resources/sass
-resources/svg
-resources/views
-resources/views/components
-resources/views/filament
-resources/views/filament/pages
-resources/views/filament/widgets
-resources/views/filament/widgets/samples
-resources/views/layouts
-resources/views/tables
-resources/views/tables/columns
-resources_old
-=======
->>>>>>> aurmich/dev
 resources/css/images
 resources/icons
 resources/img
@@ -528,10 +420,6 @@ resources/views/maps/farmshops/resources/js
 resources/views/maps/farmshops/resources/sass
 resources/views/maps/farmshops/webfonts
 resources/views/webfonts
-<<<<<<< HEAD
-=======
->>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
->>>>>>> aurmich/dev
 routes
 tests
 tests/Feature
@@ -543,25 +431,6 @@ tests/Unit
 ```json
     "autoload": {
         "psr-4": {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            "Modules\\Chart\\": "app/"
-        }
-    },
-    "require": {
-        "amenadiel/jpgraph": "^4.1"
-    },
-    "require_comment": {
-        "laraxot/module_xot_fila3": "*",
-        "thecodingmachine/safe": "^2.5"
-    },
-    "require-dev_comment": {
-        "driftingly/rector-laravel": "^0.26.2",
-        "enlightn/enlightn": "^2.5",
-        "laravel/pint": "^1.13",
-=======
->>>>>>> aurmich/dev
             "Modules\\Geo\\": "app/",
             "Modules\\Geo\\Database\\Factories\\": "database/factories/",
             "Modules\\Geo\\Database\\Seeders\\": "database/seeders/"
@@ -593,28 +462,10 @@ tests/Unit
         "allow-plugins": {
             "phpstan/extension-installer": true,
             "pestphp/pest-plugin": true,
-<<<<<<< HEAD
-=======
->>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
->>>>>>> aurmich/dev
 ```
 
 ## Dipendenze da altri moduli
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
--       2 Modules\Xot\Filament\Traits\TransTrait;
--       2 Modules\Xot\Filament\Resources\XotBaseResource;
--       2 Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
--       2 Modules\UI\Enums\TableLayoutEnum;
--       1 Modules\Xot\Traits\Updater;
--       1 Modules\Xot\Providers\XotBaseServiceProvider;
--       1 Modules\Xot\Providers\XotBaseRouteServiceProvider;
--       1 Modules\Xot\Providers\Filament\XotBasePanelProvider;
--       1 Modules\Xot\Actions\Factory\GetFactoryAction;
-=======
->>>>>>> aurmich/dev
 -       8 Modules\Xot\Filament\Pages\XotBasePage;
 -       4 Modules\Xot\Traits\Updater;
 -       2 Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -625,10 +476,6 @@ tests/Unit
 -       1 Modules\Xot\Providers\XotBaseEventServiceProvider;
 -       1 Modules\Xot\Providers\Filament\XotBasePanelProvider;
 -       1 Modules\Xot\Filament\Widgets\EnvWidget;
-<<<<<<< HEAD
-=======
->>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
->>>>>>> aurmich/dev
 
 ## Collegamenti alla documentazione generale
 

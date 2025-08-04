@@ -29,10 +29,7 @@ Verifica la qualità con:
 ## Utilizzo
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Esegui tutti i test
 ./run_tests.sh
 

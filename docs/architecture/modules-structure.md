@@ -211,10 +211,7 @@ ModuleName/
 ### Esempi di Path Corretti
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # ✅ CORRETTO
 Modules/User/Actions/User/DeleteUserAction.php
 
@@ -224,10 +221,7 @@ Modules/User/app/Actions/User/DeleteUserAction.php
 
 ### Documentazione Modulo
 ```markdown
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Modulo Nome
 
 ## Collegamenti

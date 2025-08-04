@@ -30,10 +30,7 @@ Gestisce gli aggiornamenti con:
 ## Utilizzo
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Manutenzione completa
 ./clear_cache.sh
 ./optimize_database.sh
