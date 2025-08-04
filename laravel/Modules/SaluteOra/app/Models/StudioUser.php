@@ -65,6 +65,7 @@ class StudioUser extends BasePivot
     protected $fillable = [
         //'doctor_id',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'id',
 <<<<<<< HEAD
 =======
@@ -95,6 +96,9 @@ class StudioUser extends BasePivot
 >>>>>>> 0015a493 (✨ (DoctorAvailabilitiesWidget): implement the DoctorAvailabilitiesWidget to provide doctors with a comprehensive overview of their availability across multiple studios, enhancing user experience and data management.)
 =======
 >>>>>>> 16ac401c (📝 (doctor-availabilities-widget): remove outdated documentation and files related to the DoctorAvailabilitiesWidget to streamline the codebase and improve maintainability.)
+=======
+        'id',
+>>>>>>> 0964f1b7 (✨ (DoctorAvailabilitiesWidget): introduce a new widget for doctors to manage their availability across multiple studios)
         'user_id',
         'studio_id',
         'schedule',

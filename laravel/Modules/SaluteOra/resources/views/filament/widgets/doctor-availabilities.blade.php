@@ -10,12 +10,16 @@
 <x-filament::widget>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 >>>>>>> 0015a493 (✨ (DoctorAvailabilitiesWidget): implement the DoctorAvailabilitiesWidget to provide doctors with a comprehensive overview of their availability across multiple studios, enhancing user experience and data management.)
 =======
     
 >>>>>>> b705fb0e (📝 (DoctorAvailabilitiesWidget.php): update documentation comment to improve clarity)
+=======
+    
+>>>>>>> 0964f1b7 (✨ (DoctorAvailabilitiesWidget): introduce a new widget for doctors to manage their availability across multiple studios)
     <x-filament::section>
         <div class="space-y-6">
             <div class="mb-6">
