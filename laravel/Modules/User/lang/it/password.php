@@ -76,9 +76,13 @@ return array (
       'description' => 'new_password',
       'helper_text' => 'new_password',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'placeholder' => 'new_password',
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+      'placeholder' => 'new_password',
+>>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
     ),
   ),
   'actions' => 

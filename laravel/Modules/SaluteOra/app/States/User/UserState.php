@@ -78,14 +78,19 @@ abstract class UserState extends State
             ->allowTransition(Pending::class, Rejected::class, Transitions\PendingToRejected::class)
             ->allowTransition(Pending::class, IntegrationRequested::class, Transitions\PendingToIntegrationRequested::class)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
 >>>>>>> f4ba6a58 (✨ (User.php): add user state transition classes to manage user state changes)
+=======
+
+>>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
             // Active transitions
             ->allowTransition(Active::class, Suspended::class, Transitions\ActiveToSuspended::class)
             ->allowTransition(Active::class, Inactive::class, Transitions\ActiveToInactive::class)
             ->allowTransition(Active::class, IntegrationRequested::class, Transitions\ActiveToIntegrationRequested::class)
+<<<<<<< HEAD
 <<<<<<< HEAD
 
             // IntegrationRequested transitions
@@ -119,13 +124,16 @@ abstract class UserState extends State
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
             
+=======
+
+>>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
             // Rejected transitions
             ->allowTransition(Rejected::class, Pending::class, Transitions\RejectedToPending::class)
-            
+
             // Suspended transitions
             ->allowTransition(Suspended::class, Active::class, Transitions\SuspendedToActive::class)
             ->allowTransition(Suspended::class, Inactive::class, Transitions\SuspendedToInactive::class)
-            
+
             // Register all states
 >>>>>>> f4ba6a58 (✨ (User.php): add user state transition classes to manage user state changes)
             ->registerState(Pending::class)

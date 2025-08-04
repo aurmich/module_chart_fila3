@@ -20,11 +20,12 @@ class ViewUser extends BaseUserViewPage
 =======
 namespace Modules\SaluteOra\Filament\Resources\UserResource\Pages;
 
+use Filament\Infolists;
 use Modules\SaluteOra\Filament\Resources\UserResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
-use Filament\Infolists;
+use Modules\SaluteOra\Filament\Resources\UserResource\Pages\BaseViewUser;
 
-class ViewUser extends XotBaseViewRecord
+class ViewUser extends BaseViewUser
 {
     protected static string $resource = UserResource::class;
 

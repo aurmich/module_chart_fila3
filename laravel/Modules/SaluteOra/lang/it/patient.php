@@ -1037,10 +1037,14 @@ return array (
       'label' => 'updated_at',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
     'created_at' => 
     array (
       'label' => 'created_at',
     ),
+<<<<<<< HEAD
     'id' => 
     array (
       'label' => 'id',
@@ -1061,6 +1065,8 @@ return array (
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
   ),
   'steps' => 
   array (

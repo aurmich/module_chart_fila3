@@ -15,6 +15,7 @@ return array (
     array (
       'label' => 'verified',
     ),
+<<<<<<< HEAD
     'email' => 
     array (
       'label' => 'email',
@@ -30,5 +31,7 @@ return array (
     ),
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
   ),
 );

@@ -15,13 +15,18 @@ use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+=======
+use Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager;
+>>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
 
 abstract class BaseListUsers extends XotBaseListRecords
 {
     protected static string $resource = UserResource::class;
 
     /**
+<<<<<<< HEAD
      * Get table columns for user records.
      *
 <<<<<<< HEAD
@@ -29,36 +34,60 @@ abstract class BaseListUsers extends XotBaseListRecords
 =======
      * @return array<string, TextColumn>
 >>>>>>> aurmich/dev
+=======
+     * @return array<string, TextColumn>
+>>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
      */
     public function getTableColumns(): array
     {
         return [
+<<<<<<< HEAD
+=======
+            //'id' => TextColumn::make('id'),
+>>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
             'name' => TextColumn::make('name')
                 ->searchable(),
             'email' => TextColumn::make('email')
                 ->searchable(),
+<<<<<<< HEAD
+=======
+            //'email_verified_at' => TextColumn::make('email_verified_at')
+            //    ->dateTime(),
+            //'created_at' => TextColumn::make('created_at')
+            //    ->dateTime(),
+>>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
         ];
     }
 
     /**
+<<<<<<< HEAD
      * Get table filters for user records.
      *
+=======
+>>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
      * @return array<Tables\Filters\BaseFilter>
      */
     public function getTableFilters(): array
     {
         return [
+<<<<<<< HEAD
             // Filtri disabilitati per ora, abilitare se necessario
             /*
+=======
+>>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
             Filter::make('verified')
                 ->query(static fn (Builder $query): Builder => $query->whereNotNull('email_verified_at')),
             Filter::make('unverified')
                 ->query(static fn (Builder $query): Builder => $query->whereNull('email_verified_at')),
+<<<<<<< HEAD
             */
+=======
+>>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
         ];
     }
 
     /**
+<<<<<<< HEAD
      * Get table actions for user records.
      *
 <<<<<<< HEAD
@@ -135,16 +164,49 @@ abstract class BaseListUsers extends XotBaseListRecords
      * Get table bulk actions for user records.
      *
      * @return array<\Filament\Tables\Actions\BulkAction>
+=======
+     * @return array<Action|Tables\Actions\ActionGroup>
+     */
+    public function getTableActions(): array
+    {
+        return [
+            ChangePasswordAction::make()
+                ->tooltip('Cambio Password')
+                ->iconButton(),
+            ...parent::getTableActions(),
+            Action::make('deactivate')
+                ->tooltip(__('filament-actions::delete.single.label'))
+                ->color('danger')
+                ->icon('heroicon-o-trash')
+                ->action(static fn (UserContract $user) => $user->delete()),
+        ];
+    }
+
+    protected function getHeaderWidgets(): array
+    {
+        return [
+            UserOverview::class,
+        ];
+    }
+
+    /**
+     * @return array<string, Tables\Actions\BulkAction>
+>>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
      */
     public function getTableBulkActions(): array
     {
         return [
+<<<<<<< HEAD
             Tables\Actions\DeleteBulkAction::make(),
 <<<<<<< HEAD
             //ExportBulkAction::make(),
 =======
             ExportBulkAction::make(),
 >>>>>>> aurmich/dev
+=======
+            'delete' => Tables\Actions\DeleteBulkAction::make(),
+            'export' => ExportBulkAction::make(),
+>>>>>>> be808045 (✨ (states.mdc): add new states configuration file to define state rules and transitions)
         ];
     }
 }

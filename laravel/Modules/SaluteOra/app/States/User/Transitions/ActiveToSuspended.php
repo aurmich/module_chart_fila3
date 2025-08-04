@@ -20,6 +20,7 @@ class ActiveToSuspended extends Transition
 
     public function handle(): User
     {
+        //dddx('a');
         $this->user->state = new Suspended($this->user);
         $this->user->save();
         return $this->user;
