@@ -284,6 +284,7 @@ class RegistrationWidget extends XotBaseWidget
         */
         $data = array_merge($data,parent::getFormFill() );
         $data['type'] = $this->type;
+<<<<<<< HEAD
         
 <<<<<<< HEAD
         // Se è un nuovo modello, restituisci solo i campi fillable con valori null
@@ -322,6 +323,8 @@ class RegistrationWidget extends XotBaseWidget
         //}
         
         $data['type'] = $this->type;
+=======
+>>>>>>> 17b35338 (add doctor-register-integration-completed  page)
         return $data;
     }
 
