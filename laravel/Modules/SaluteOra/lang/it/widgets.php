@@ -5,10 +5,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
 declare(strict_types=1);
 
+=======
+>>>>>>> 16ac401c (📝 (doctor-availabilities-widget): remove outdated documentation and files related to the DoctorAvailabilitiesWidget to streamline the codebase and improve maintainability.)
 return [
     'doctor_availabilities' => [
         'schedule' => [
@@ -512,6 +515,7 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ];
 >>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
 =======
@@ -561,3 +565,6 @@ return [
     ],
 ];
 >>>>>>> 0015a493 (✨ (DoctorAvailabilitiesWidget): implement the DoctorAvailabilitiesWidget to provide doctors with a comprehensive overview of their availability across multiple studios, enhancing user experience and data management.)
+=======
+];
+>>>>>>> 16ac401c (📝 (doctor-availabilities-widget): remove outdated documentation and files related to the DoctorAvailabilitiesWidget to streamline the codebase and improve maintainability.)

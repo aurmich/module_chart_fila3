@@ -89,7 +89,51 @@ return array (
       'help' => 'Attiva per aggiungere disponibilità extra in un giorno specifico. Disattiva per bloccare un periodo in cui normalmente saresti disponibile.',
     ),
   ),
-
+  'actions' => 
+  array (
+    'save' => 
+    array (
+      'label' => 'save',
+    ),
+    'add_exception' => 'Aggiungi Eccezione',
+    'approve' => 'Approva',
+    'reject' => 'Rifiuta',
+    'toggle_appointments' => 'Appuntamenti',
+    'toggle_availability' => 'Disponibilità',
+  ),
+  'notifications' => 
+  array (
+    'saved' => 
+    array (
+      'title' => 'Disponibilità salvate',
+      'body' => 'Le tue disponibilità sono state aggiornate con successo.',
+    ),
+    'not_doctor' => 
+    array (
+      'title' => 'Utente non autorizzato',
+      'body' => 'Solo i profili medico possono gestire le disponibilità.',
+    ),
+    'error' => 
+    array (
+      'title' => 'Errore durante il salvataggio',
+      'body' => 'Si è verificato un errore durante il salvataggio delle disponibilità.',
+    ),
+    'not_found' => 
+    array (
+      'title' => 'Appuntamento non trovato',
+      'body' => 'L\'appuntamento selezionato non esiste o non è associato al tuo profilo.',
+    ),
+    'appointment_approved' => 
+    array (
+      'title' => 'Appuntamento approvato',
+      'body' => 'L\'appuntamento è stato confermato con successo.',
+    ),
+    'appointment_rejected' => 
+    array (
+      'title' => 'Appuntamento rifiutato',
+      'body' => 'L\'appuntamento è stato rifiutato con successo.',
+    ),
+  ),
   'calendar' => 
   array (
     'month' => 'Mese',
@@ -119,6 +163,7 @@ return array (
     'no_pending_appointments_description' => 'Non ci sono appuntamenti in attesa di approvazione.',
   ),
   'available' => 'Disponibile',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -205,6 +250,8 @@ return array (
     ),
   ),
 >>>>>>> 0015a493 (✨ (DoctorAvailabilitiesWidget): implement the DoctorAvailabilitiesWidget to provide doctors with a comprehensive overview of their availability across multiple studios, enhancing user experience and data management.)
+=======
+>>>>>>> 16ac401c (📝 (doctor-availabilities-widget): remove outdated documentation and files related to the DoctorAvailabilitiesWidget to streamline the codebase and improve maintainability.)
 );
 =======
 =======

@@ -160,6 +160,7 @@ class DoctorAvailabilityPage extends XotBasePage
     {
         return $form
 <<<<<<< HEAD
+<<<<<<< HEAD
             ->schema([
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -181,16 +182,15 @@ class DoctorAvailabilityPage extends XotBasePage
 =======
             ->schema($this->getFormSchema())
 >>>>>>> 0015a493 (✨ (DoctorAvailabilitiesWidget): implement the DoctorAvailabilitiesWidget to provide doctors with a comprehensive overview of their availability across multiple studios, enhancing user experience and data management.)
+=======
+            ->schema([
+                'schedule'=>OpeningHoursField::make('schedule')
+                    //->label(__('saluteora::doctor_availability.sections.weekly_availability'))
+                    //->helperText(__('saluteora::doctor_availability.fields.is_available.help'))
+                    ->columnSpanFull(),
+            ])
+>>>>>>> 16ac401c (📝 (doctor-availabilities-widget): remove outdated documentation and files related to the DoctorAvailabilitiesWidget to streamline the codebase and improve maintainability.)
             ->statePath('data');
-    }
-
-
-    public function getFormSchema(): array
-    {
-        return [
-            OpeningHoursField::make('schedule')
-                ->columnSpanFull(),
-        ];
     }
 
     /**

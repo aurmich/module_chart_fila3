@@ -55,6 +55,7 @@ class StudioUser extends BasePivot
 {
     use HasChildren;
 
+
     protected $table = 'studio_user';
     /**
      * Gli attributi che sono mass assignable.
@@ -63,6 +64,7 @@ class StudioUser extends BasePivot
      */
     protected $fillable = [
         //'doctor_id',
+<<<<<<< HEAD
         'id',
 <<<<<<< HEAD
 =======
@@ -91,6 +93,8 @@ class StudioUser extends BasePivot
 >>>>>>> 9d3532ab (✨ (StudioUser.php): introduce StudioUser model to manage many-to-many)
 =======
 >>>>>>> 0015a493 (✨ (DoctorAvailabilitiesWidget): implement the DoctorAvailabilitiesWidget to provide doctors with a comprehensive overview of their availability across multiple studios, enhancing user experience and data management.)
+=======
+>>>>>>> 16ac401c (📝 (doctor-availabilities-widget): remove outdated documentation and files related to the DoctorAvailabilitiesWidget to streamline the codebase and improve maintainability.)
         'user_id',
         'studio_id',
         'schedule',
@@ -110,6 +114,7 @@ class StudioUser extends BasePivot
         ]);
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -177,4 +182,7 @@ class StudioUser extends BasePivot
         return $this->belongsTo(User::class, 'user_id');
     }
 >>>>>>> 0015a493 (✨ (DoctorAvailabilitiesWidget): implement the DoctorAvailabilitiesWidget to provide doctors with a comprehensive overview of their availability across multiple studios, enhancing user experience and data management.)
+=======
+
+>>>>>>> 16ac401c (📝 (doctor-availabilities-widget): remove outdated documentation and files related to the DoctorAvailabilitiesWidget to streamline the codebase and improve maintainability.)
 }
