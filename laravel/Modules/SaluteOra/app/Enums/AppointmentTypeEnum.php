@@ -36,10 +36,14 @@ enum AppointmentTypeEnum: string implements HasLabel, HasIcon, HasColor
      * Get the translated label for the appointment type.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getLabel(): string
 =======
     public function getLabel(): ?string
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+    public function getLabel(): string
+>>>>>>> 8e4d163b (phpstan)
     {
         return match ($this) {
             self::CONSULTATION => __('saluteora::enums.appointment_type.consultation'),
@@ -123,25 +127,34 @@ enum AppointmentTypeEnum: string implements HasLabel, HasIcon, HasColor
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      * Convert the enum cases to an array suitable for select inputs.
      *
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 8e4d163b (phpstan)
      * @return array<string, string>
      */
     public static function toSelectArray(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8e4d163b (phpstan)
         $result = [];
         foreach (self::cases() as $type) {
             $result[$type->value] = $type->getLabel();
         }
         return $result;
+<<<<<<< HEAD
 =======
         return collect(self::cases())
             ->mapWithKeys(fn (self $type) => [$type->value => $type->getLabel()])
             ->toArray();
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 8e4d163b (phpstan)
     }
 }
 

@@ -16,6 +16,7 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Filament\Resources\ReportResource\Pages;
 
 use Filament\Resources\Pages\CreateRecord;
+use Filament\Facades\Filament;
 use Modules\SaluteOra\Filament\Resources\ReportResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 use Modules\SaluteOra\Services\ReportGenerator;
@@ -43,7 +44,7 @@ class CreateReport extends XotBaseCreateRecord
         $report->status = 'pending';
         $report->parameters = $data;
         $report->created_by = auth()->id();
-        $report->tenant_id = tenant()->id;
+        $report->tenant_id = Filament::getTenant()?->getKey();
         $report->save();
         
         // Esecuzione asincrona dell'azione con Spatie QueueableAction

@@ -111,13 +111,18 @@ class FetchCalendarEventsAction
             'end' => $appointment->ends_at?->toIso8601String(),
 =======
             'start' => $appointment->start_time->toIso8601String(),
+<<<<<<< HEAD
             'end' => $appointment->end_time?->toIso8601String(),
 >>>>>>> 2099645a (.)
+=======
+            'end' => $appointment->end_time->toIso8601String(),
+>>>>>>> 8e4d163b (phpstan)
             'allDay' => false,
             'backgroundColor' => $color,
             'borderColor' => $color,
             'textColor' => $this->getContrastColor($color),
             'extendedProps' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
                 'type' => $appointment->type->value,
                 'status' => $appointment->status->value,
@@ -130,13 +135,21 @@ class FetchCalendarEventsAction
 =======
                 'type' => $appointment->type?->value,
                 'status' => $appointment->status?->value,
+=======
+                'type' => $appointment->type->value,
+                'status' => $appointment->status->value,
+>>>>>>> 8e4d163b (phpstan)
                 'patient_id' => $appointment->patient_id,
-                'patient_name' => $appointment->patient?->full_name,
+                'patient_name' => $appointment->patient->full_name,
                 'doctor_id' => $appointment->doctor_id,
-                'doctor_name' => $appointment->doctor?->full_name,
+                'doctor_name' => $appointment->doctor->full_name,
                 'studio_id' => $appointment->studio_id,
+<<<<<<< HEAD
                 'studio_name' => $appointment->studio?->name,
 >>>>>>> 2099645a (.)
+=======
+                'studio_name' => $appointment->studio->name,
+>>>>>>> 8e4d163b (phpstan)
                 'emergency' => $appointment->emergency,
                 'notes' => $appointment->notes,
             ],
@@ -171,10 +184,14 @@ class FetchCalendarEventsAction
         }
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($appointment->status !== \Modules\SaluteOra\Enums\AppointmentStatusEnum::CONFIRMED) {
 =======
         if ($appointment->status !== \Modules\SaluteOra\Enums\AppointmentStatus::CONFIRMED) {
 >>>>>>> 2099645a (.)
+=======
+        if ($appointment->status !== \Modules\SaluteOra\Enums\AppointmentStatusEnum::CONFIRMED) {
+>>>>>>> 8e4d163b (phpstan)
             $parts[] = '(' . $appointment->status->getLabel() . ')';
         }
         
@@ -265,7 +282,7 @@ class FetchCalendarEventsAction
         // Only allow editing if the appointment is not in the past
         // and the user is the assigned doctor or has admin rights
         return $appointment->start_time->isFuture() && 
-               ($user->hasRole('admin') || 
+               ($user->type === UserTypeEnum::ADMIN || 
                 $user->id === $appointment->doctor_id);
 >>>>>>> 2099645a (.)
     }

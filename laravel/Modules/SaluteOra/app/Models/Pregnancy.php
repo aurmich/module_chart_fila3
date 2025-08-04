@@ -82,10 +82,14 @@ class Pregnancy extends BaseModel
      * Gli attributi che sono mass assignable.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var list<string>
 =======
      * @var array<int, string>
 >>>>>>> 54f4fa16 (.)
+=======
+     * @var list<string>
+>>>>>>> 8e4d163b (phpstan)
      */
     protected $fillable = [
         'tenant_id',
@@ -169,11 +173,15 @@ class Pregnancy extends BaseModel
     public function daysUntilDelivery(): int
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return (int) now()->diffInDays($this->expected_delivery_date, false);
     }
 }
 =======
         return now()->diffInDays($this->expected_delivery_date, false);
+=======
+        return (int) now()->diffInDays($this->expected_delivery_date, false);
+>>>>>>> 8e4d163b (phpstan)
     }
 }
 >>>>>>> 54f4fa16 (.)

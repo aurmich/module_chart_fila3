@@ -5,6 +5,9 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Enums;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8e4d163b (phpstan)
 
 use Filament\Support\Contracts\HasLabel;
 use Filament\Support\Contracts\HasIcon;
@@ -19,9 +22,12 @@ use Filament\Support\Contracts\HasColor;
  * @method static self tryFromValue(string $value)
  * @method static self[] cases()
  */
+<<<<<<< HEAD
 =======
 use Filament\Support\Contracts\HasLabel;
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 8e4d163b (phpstan)
 
 enum DentistSpecializationEnum: string implements HasLabel
 {
@@ -38,10 +44,14 @@ enum DentistSpecializationEnum: string implements HasLabel
     case FORENSIC = 'forensic';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getLabel(): string
 =======
     public function getLabel(): ?string
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+    public function getLabel(): string
+>>>>>>> 8e4d163b (phpstan)
     {
         return match ($this) {
             self::GENERAL => __('saluteora::app.general_dentist'),

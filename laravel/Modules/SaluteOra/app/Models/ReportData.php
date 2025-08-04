@@ -9,7 +9,11 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 /**
  * ReportData model per i dati dettagliati dei report.
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
+=======
+ * 
+>>>>>>> 8e4d163b (phpstan)
  * @property int $id
  * @property int $report_id
  * @property string $key
@@ -22,6 +26,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
  * @property-read Report $report
+<<<<<<< HEAD
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property-read \Modules\SaluteOra\Models\Profile|null $creator
@@ -51,10 +56,13 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @mixin \Eloquent
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 8e4d163b (phpstan)
  */
 class ReportData extends BaseModel
 {
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Gli attributi che sono mass assignable.
      *
@@ -62,6 +70,11 @@ class ReportData extends BaseModel
 =======
      * @var array<int, string>
 >>>>>>> 54f4fa16 (.)
+=======
+     * Gli attributi che sono mass assignable.
+     *
+     * @var list<string>
+>>>>>>> 8e4d163b (phpstan)
      */
     protected $fillable = [
         'report_id',

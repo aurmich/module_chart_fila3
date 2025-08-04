@@ -5,10 +5,14 @@ declare(strict_types=1);
 namespace Modules\Chart\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8e4d163b (phpstan)
 use Modules\Xot\Traits\Updater;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
@@ -20,16 +24,21 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  *
 =======
 // ---------- traits
+=======
+>>>>>>> 8e4d163b (phpstan)
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-// //use Laravel\Scout\Searchable;
-use Illuminate\Database\Eloquent\Model;
-use Modules\Xot\Actions\Factory\GetFactoryAction;
-use Modules\Xot\Traits\Updater;
 
 /**
  * Class BaseModel.
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+ * 
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
+ *
+>>>>>>> 8e4d163b (phpstan)
  */
 abstract class BaseModel extends Model
 {

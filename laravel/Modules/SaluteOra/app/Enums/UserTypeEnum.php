@@ -53,11 +53,17 @@ enum UserTypeEnum: string implements HasLabel
     case ADMIN = 'admin';
     case DOCTOR = 'doctor';
     case PATIENT = 'patient';
+<<<<<<< HEAD
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+    case MODERATOR = 'moderator';
+    case STAFF = 'staff';
+>>>>>>> 8e4d163b (phpstan)
 
     /**
      * Get the translated label for the user type.
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
     public function getLabel(): string
     {
@@ -76,6 +82,17 @@ enum UserTypeEnum: string implements HasLabel
         return $this->transClass(self::class,$this->value.'.label');
 
 >>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
+=======
+    public function getLabel(): string
+    {
+        return match($this) {
+            self::PATIENT => 'Paziente',
+            self::DOCTOR => 'Dottore',
+            self::ADMIN => 'Amministratore',
+            self::MODERATOR => 'Moderatore',
+            self::STAFF => 'Staff',
+        };
+>>>>>>> 8e4d163b (phpstan)
     }
 
     /**
@@ -144,6 +161,8 @@ enum UserTypeEnum: string implements HasLabel
             self::ADMIN => false,
             self::DOCTOR => true,
             self::PATIENT => true,
+            self::MODERATOR => false,
+            self::STAFF => false,
         };
     }
 
@@ -248,7 +267,38 @@ enum UserTypeEnum: string implements HasLabel
     {
         return route($action.'.type', ['type' => $this->value]);
     }
+<<<<<<< HEAD
 >>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
+=======
+
+    /**
+     * Get the translated description for the user type.
+     */
+    public function getDescription(): string
+    {
+        return match($this) {
+            self::PATIENT => 'Utente paziente del sistema',
+            self::DOCTOR => 'Medico o dentista autorizzato',
+            self::ADMIN => 'Amministratore del sistema',
+            self::MODERATOR => 'Moderatore dei contenuti',
+            self::STAFF => 'Membro dello staff',
+        };
+    }
+
+    /**
+     * Restituisce la traduzione per la tipologia utente.
+     */
+    public function transClass(string $class, string $key): string
+    {
+        return match($this) {
+            self::PATIENT => __('saluteora::usertype.patient'),
+            self::DOCTOR => __('saluteora::usertype.doctor'),
+            self::ADMIN => __('saluteora::usertype.admin'),
+            self::MODERATOR => __('saluteora::usertype.moderator'),
+            self::STAFF => __('saluteora::usertype.staff'),
+        };
+    }
+>>>>>>> 8e4d163b (phpstan)
 }
 
 // Alias per retrocompatibilità

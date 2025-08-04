@@ -2,13 +2,17 @@ ssh saluteora
 cd /var/www/html/base_saluteora/laravel
 php -d memory_limit=-1 composer.phar selfupdate
 php -d memory_limit=-1 composer.phar update -W
+<<<<<<< HEAD
 rm -rf resources/views/vendor
+=======
+>>>>>>> 8e4d163b (phpstan)
 php artisan vendor:publish --all
 rm -rf database/migrations
 php artisan migrate
 lanciamo piu' volte php artinsa migrate finche' non esce
 INFO  Nothing to migrate.
 
+<<<<<<< HEAD
 
 per vedere 
 http://ec2-54-194-72-103.eu-west-1.compute.amazonaws.com/it
@@ -46,3 +50,5 @@ MAIL_PASSWORD=3b88a5ddd726a5
 
 MAIL_FROM_ADDRESS="hello@saluteora.com"
 MAIL_FROM_NAME="${APP_NAME}"
+=======
+>>>>>>> 8e4d163b (phpstan)

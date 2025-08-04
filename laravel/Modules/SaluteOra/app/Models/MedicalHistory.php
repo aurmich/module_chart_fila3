@@ -81,6 +81,7 @@ class MedicalHistory extends Model
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Gli attributi che sono mass assignable.
      *
      * @var list<string>
@@ -90,8 +91,11 @@ class MedicalHistory extends Model
         'patient_id',
 =======
      * The attributes that are mass assignable.
+=======
+     * Gli attributi che sono mass assignable.
+>>>>>>> 8e4d163b (phpstan)
      *
-     * @var array<int, string>
+     * @var list<string>
      */
     protected $fillable = [
         'user_id',

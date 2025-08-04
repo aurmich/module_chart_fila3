@@ -20,6 +20,7 @@ use Modules\Cms\Filament\Resources\PageContentResource;
 
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Lang\Filament\Resources\Pages\LangBaseListRecords;
 use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
 
@@ -27,12 +28,19 @@ class ListPageContents extends LangBaseListRecords
 {
     //use ListRecords\Concerns\Translatable;
 =======
+=======
+use Modules\Lang\Filament\Resources\Pages\LangBaseListRecords;
+>>>>>>> 8e4d163b (phpstan)
 use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
 
-class ListPageContents extends XotBaseListRecords
+class ListPageContents extends LangBaseListRecords
 {
+<<<<<<< HEAD
     use ListRecords\Concerns\Translatable;
 >>>>>>> 54f4fa16 (.)
+=======
+    //use ListRecords\Concerns\Translatable;
+>>>>>>> 8e4d163b (phpstan)
 
     // protected static string $resource = PageContentResource::class;
 
@@ -55,6 +63,7 @@ class ListPageContents extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     
     /*
@@ -106,6 +115,10 @@ class ListPageContents extends XotBaseListRecords
     }
 
 >>>>>>> 54f4fa16 (.)
+=======
+    
+    /*
+>>>>>>> 8e4d163b (phpstan)
     protected function getHeaderActions(): array
     {
         return [
@@ -114,9 +127,13 @@ class ListPageContents extends XotBaseListRecords
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     */
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+    */
+>>>>>>> 8e4d163b (phpstan)
 
     
 }

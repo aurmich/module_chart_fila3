@@ -38,6 +38,7 @@ enum AppointmentStatusEnum: string implements HasLabel, HasIcon, HasColor
     case PENDING = 'pending';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getLabel(): string
     {
 =======
@@ -47,6 +48,9 @@ enum AppointmentStatusEnum: string implements HasLabel, HasIcon, HasColor
         return AppointmentStatusEnum::from($this->value)->getLabel();
 =======
     public function getLabel(): ?string
+=======
+    public function getLabel(): string
+>>>>>>> 8e4d163b (phpstan)
     {
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
         return match ($this) {
@@ -62,10 +66,14 @@ enum AppointmentStatusEnum: string implements HasLabel, HasIcon, HasColor
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getIcon(): string
 =======
     public function getIcon(): ?string
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+    public function getIcon(): string
+>>>>>>> 8e4d163b (phpstan)
     {
         return match ($this) {
             self::SCHEDULED => 'heroicon-o-calendar',
@@ -80,10 +88,14 @@ enum AppointmentStatusEnum: string implements HasLabel, HasIcon, HasColor
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getColor(): string
 =======
     public function getColor(): string | array | null
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+    public function getColor(): string
+>>>>>>> 8e4d163b (phpstan)
     {
         return match ($this) {
             self::SCHEDULED => 'primary',
@@ -146,6 +158,7 @@ enum AppointmentStatusEnum: string implements HasLabel, HasIcon, HasColor
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @return array<string, string>
      */
@@ -182,10 +195,26 @@ enum AppointmentStatusEnum: string implements HasLabel, HasIcon, HasColor
             ->mapWithKeys(fn (self $status) => [$status->value => $status->getLabel()])
             ->toArray();
 >>>>>>> 2099645a (.)
+=======
+    /**
+     * @return array<string, string>
+     */
+    public static function toSelectArray(): array
+    {
+        $result = [];
+        foreach (self::cases() as $status) {
+            $result[$status->value] = $status->getLabel();
+        }
+        return $result;
+>>>>>>> 8e4d163b (phpstan)
     }
 
+    /**
+     * @return array<int, self>
+     */
     public static function getActiveStatuses(): array
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         return AppointmentStatusEnum::getActiveStatuses();
     }
@@ -198,6 +227,20 @@ enum AppointmentStatusEnum: string implements HasLabel, HasIcon, HasColor
     }
 
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+        $result = [];
+        foreach (self::cases() as $status) {
+            if ($status->isActive()) {
+                $result[] = $status;
+            }
+        }
+        return $result;
+    }
+
+    /**
+     * @return array<int, string>
+     */
+>>>>>>> 8e4d163b (phpstan)
     public static function getFinalStatuses(): array
     {
         return [
@@ -208,6 +251,7 @@ enum AppointmentStatusEnum: string implements HasLabel, HasIcon, HasColor
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<<< HEAD:laravel/Modules/SaluteOra/app/Enums/AppointmentStatus.php
 >>>>>>> 2099645a (.)
@@ -217,3 +261,5 @@ enum AppointmentStatusEnum: string implements HasLabel, HasIcon, HasColor
 class_alias(AppointmentStatusEnum::class, 'Modules\\SaluteOra\\Enums\\AppointmentStatus');
 >>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development):laravel/Modules/SaluteOra/app/Enums/AppointmentStatusEnum.php
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 8e4d163b (phpstan)

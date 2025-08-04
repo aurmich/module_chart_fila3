@@ -226,8 +226,14 @@ class Admin extends User
 
 
     /**
+<<<<<<< HEAD
      * @var array<int, string>
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+     * Gli attributi che sono mass assignable.
+     *
+     * @var list<string>
+>>>>>>> 8e4d163b (phpstan)
      */
     protected $fillable = [
         'user_id',

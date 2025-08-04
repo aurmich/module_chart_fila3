@@ -17,6 +17,7 @@ class Calendar extends Component
     public array $config = [];
     public array $events = [];
     public array $filters = [
+<<<<<<< HEAD
 =======
 use Modules\SaluteOra\Enums\AppointmentType;
 =======
@@ -29,11 +30,14 @@ class Calendar extends Component
     public $events = [];
     public $filters = [
 >>>>>>> 2099645a (.)
+=======
+>>>>>>> 8e4d163b (phpstan)
         'status' => null,
         'type' => null,
         'doctor_id' => null,
         'studio_id' => null,
     ];
+<<<<<<< HEAD
 <<<<<<< HEAD
     public array $availableSlots = [];
     public ?string $selectedDate = null;
@@ -43,6 +47,11 @@ class Calendar extends Component
     public $selectedDate;
     public $showSlotModal = false;
 >>>>>>> 2099645a (.)
+=======
+    public array $availableSlots = [];
+    public ?string $selectedDate = null;
+    public bool $showSlotModal = false;
+>>>>>>> 8e4d163b (phpstan)
 
     protected $listeners = [
         'refreshCalendar' => '$refresh',
@@ -51,10 +60,14 @@ class Calendar extends Component
     ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function mount(): void
 =======
     public function mount()
 >>>>>>> 2099645a (.)
+=======
+    public function mount(): void
+>>>>>>> 8e4d163b (phpstan)
     {
         $this->selectedDate = now()->toDateString();
         $this->loadConfig();
@@ -62,10 +75,14 @@ class Calendar extends Component
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function loadConfig(): void
 =======
     public function loadConfig()
 >>>>>>> 2099645a (.)
+=======
+    protected function loadConfig(): void
+>>>>>>> 8e4d163b (phpstan)
     {
         try {
             $response = Http::get(route('saluteora.calendar.config'));
@@ -77,6 +94,7 @@ class Calendar extends Component
         }
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     public function nextMonth(): void
     {
@@ -98,6 +116,9 @@ class Calendar extends Component
 =======
     public function fetchEvents()
 >>>>>>> 2099645a (.)
+=======
+    public function fetchEvents(): void
+>>>>>>> 8e4d163b (phpstan)
     {
         try {
             $start = now()->startOfMonth()->startOfDay()->toIso8601String();

@@ -5,6 +5,9 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Enums;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8e4d163b (phpstan)
 use Filament\Support\Contracts\HasLabel;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasColor;
@@ -19,13 +22,17 @@ use Filament\Support\Contracts\HasColor;
  * @method static self[] cases()
  */
 enum PatientStatusEnum: string implements HasLabel, HasIcon, HasColor
+<<<<<<< HEAD
 =======
 enum PatientStatusEnum implements FilamentSupportContractsHasLabel: string
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 8e4d163b (phpstan)
 {
     case PENDING = 'pending';
     case APPROVED = 'approved';
     case REJECTED = 'rejected';
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 // Alias per retrocompatibilità
@@ -36,15 +43,24 @@ enum PatientStatusEnum implements FilamentSupportContractsHasLabel: string
 // Alias per retrocompatibilità
 class_alias(PatientStatusEnum::class, 'Modules\\SaluteOra\\Enums\\PatientStatus');
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+
+// Alias per retrocompatibilità
+//class_alias(PatientStatusEnum::class, 'Modules\\SaluteOra\\Enums\\PatientStatus');
+>>>>>>> 8e4d163b (phpstan)
 
     /**
      * Get the translated label for the enum case.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getLabel(): string
 =======
     public function getLabel(): ?string
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+    public function getLabel(): string
+>>>>>>> 8e4d163b (phpstan)
     {
         return match ($this) {
             self::PENDING => __('saluteora::enums.patientstatus.pending'),
@@ -53,6 +69,9 @@ class_alias(PatientStatusEnum::class, 'Modules\\SaluteOra\\Enums\\PatientStatus'
         };
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8e4d163b (phpstan)
 
     public function getIcon(): string
     {
@@ -71,6 +90,10 @@ class_alias(PatientStatusEnum::class, 'Modules\\SaluteOra\\Enums\\PatientStatus'
             self::REJECTED => 'danger',
         };
     }
+<<<<<<< HEAD
 }
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+}
+>>>>>>> 8e4d163b (phpstan)

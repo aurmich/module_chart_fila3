@@ -26,6 +26,7 @@ class IconMediaColumn extends IconColumn
         $attachment=$this->getName();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->default(
             fn($record)=>$record->getFirstMedia($attachment))
                 ->icon('heroicon-o-document-text')
@@ -36,12 +37,20 @@ class IconMediaColumn extends IconColumn
                     // @phpstan-ignore method.nonObject
 =======
         $this->default(fn($record)=>$record->getFirstMedia($attachment))
+=======
+        $this->default(
+            fn($record)=>$record->getFirstMedia($attachment))
+>>>>>>> 8e4d163b (phpstan)
                 ->icon('heroicon-o-document-text')
                 ->color(fn ($record) => $record->getFirstMedia($attachment) ? 'success' : 'danger')
-                ->tooltip(fn ($record) => $record->getFirstMedia($attachment)?->file_name ?? 'Documento non caricato')
+                ->tooltip(fn ($record) => $record->getFirstMedia($attachment)->file_name ?? 'Documento non caricato')
 
                 ->action(function ($record) use ($attachment) {
+<<<<<<< HEAD
 >>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
+=======
+                    // @phpstan-ignore-next-line
+>>>>>>> 8e4d163b (phpstan)
                     $media = $record->getFirstMedia($attachment);
                     if (!$media) {
                         return;

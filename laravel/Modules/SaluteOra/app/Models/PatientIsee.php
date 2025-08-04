@@ -6,7 +6,11 @@ namespace Modules\SaluteOra\Models;
 
 /**
  * PatientIsee Model - wrapper per Isee con mapping campi specifici pazienti.
+<<<<<<< HEAD
  *
+=======
+ * 
+>>>>>>> 8e4d163b (phpstan)
  * @property int $id
  * @property int $patient_id
  * @property float|null $value
@@ -16,6 +20,7 @@ namespace Modules\SaluteOra\Models;
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
  * @property-read Patient $patient
+<<<<<<< HEAD
  * @property-read \Modules\SaluteOra\Models\Profile|null $creator
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
@@ -30,6 +35,8 @@ namespace Modules\SaluteOra\Models;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PatientIsee withoutTrashed()
  * @method static \Modules\SaluteOra\Database\Factories\PatientIseeFactory factory($count = null, $state = [])
  * @mixin \Eloquent
+=======
+>>>>>>> 8e4d163b (phpstan)
  */
 class PatientIsee extends Isee
 {

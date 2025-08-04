@@ -11,9 +11,13 @@ use Illuminate\Support\Facades\Validator;
 use Modules\SaluteOra\Models\Patient;
 use Modules\Tenant\Traits\BelongsToTenant;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Auth;
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+use Illuminate\Support\Facades\Auth;
+>>>>>>> 8e4d163b (phpstan)
 
 class PatientController extends Controller
 {
@@ -21,10 +25,14 @@ class PatientController extends Controller
      * Display a listing of the resource.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function index(): \Illuminate\Contracts\View\View
 =======
     public function index()
 >>>>>>> 54f4fa16 (.)
+=======
+    public function index(): \Illuminate\Contracts\View\View
+>>>>>>> 8e4d163b (phpstan)
     {
         return view('saluteora::index');
     }
@@ -33,10 +41,14 @@ class PatientController extends Controller
      * Show the form for creating a new resource.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function create(): \Illuminate\Contracts\View\View
 =======
     public function create()
 >>>>>>> 54f4fa16 (.)
+=======
+    public function create(): \Illuminate\Contracts\View\View
+>>>>>>> 8e4d163b (phpstan)
     {
         // Recupera i dati del paziente dalla sessione se esistono
         $patientData = Session::get('patient_data', []);
@@ -57,6 +69,7 @@ class PatientController extends Controller
      * Salva temporaneamente i dati del paziente durante il processo di wizard.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function saveDraft(): \Illuminate\Http\JsonResponse
     {
         // Salva i dati del form nella sessione
@@ -70,23 +83,31 @@ class PatientController extends Controller
             'current_step' => request()->input('current_step', 1)
 =======
     public function saveDraft(Request $request)
+=======
+    public function saveDraft(): \Illuminate\Http\JsonResponse
+>>>>>>> 8e4d163b (phpstan)
     {
         // Salva i dati del form nella sessione
-        $patientData = $request->except(['_token', 'current_step']);
+        $patientData = request()->except(['_token', 'current_step']);
         Session::put('patient_data', $patientData);
-        Session::put('current_step', $request->input('current_step', 1));
+        Session::put('current_step', request()->input('current_step', 1));
 
         return response()->json([
             'success' => true,
             'message' => 'Dati salvati temporaneamente',
+<<<<<<< HEAD
             'current_step' => $request->input('current_step', 1)
 >>>>>>> 54f4fa16 (.)
+=======
+            'current_step' => request()->input('current_step', 1)
+>>>>>>> 8e4d163b (phpstan)
         ]);
     }
 
     /**
      * Store a newly created resource in storage.
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
     public function store(): \Illuminate\Http\RedirectResponse
     {
@@ -96,9 +117,12 @@ class PatientController extends Controller
             'last_name' => 'required|string|max:255',
 =======
     public function store(Request $request)
+=======
+    public function store(): \Illuminate\Http\RedirectResponse
+>>>>>>> 8e4d163b (phpstan)
     {
         // Validazione dei dati
-        $validator = Validator::make($request->all(), [
+        $validator = Validator::make(request()->all(), [
             'name' => 'required|string|max:255',
 <<<<<<< HEAD
             'surname' => 'required|string|max:255',
@@ -145,6 +169,7 @@ class PatientController extends Controller
         $patient = new Patient();
         $patient->fill(request()->all());
         $patient->tenant_id = Auth::user()?->tenant_id ?? 1; // Assegna il tenant dell'utente autenticato o default
+<<<<<<< HEAD
         $patient->save();
 
         // Pulisci i dati della sessione
@@ -159,6 +184,8 @@ class PatientController extends Controller
         $patient = new Patient();
         $patient->fill($request->all());
         $patient->tenant_id = auth()->user()?->tenant_id ?? 1; // Assegna il tenant dell'utente autenticato o default
+=======
+>>>>>>> 8e4d163b (phpstan)
         $patient->save();
 
         // Pulisci i dati della sessione
@@ -179,10 +206,14 @@ class PatientController extends Controller
      * Show the specified resource.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function show(int $id): \Illuminate\Contracts\View\View
 =======
     public function show($id)
 >>>>>>> 54f4fa16 (.)
+=======
+    public function show(int $id): \Illuminate\Contracts\View\View
+>>>>>>> 8e4d163b (phpstan)
     {
         $patient = Patient::findOrFail($id);
         return view('saluteora::show', compact('patient'));
@@ -192,10 +223,14 @@ class PatientController extends Controller
      * Show the form for editing the specified resource.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function edit(int $id): \Illuminate\Contracts\View\View
 =======
     public function edit($id)
 >>>>>>> 54f4fa16 (.)
+=======
+    public function edit(int $id): \Illuminate\Contracts\View\View
+>>>>>>> 8e4d163b (phpstan)
     {
         $patient = Patient::findOrFail($id);
         return view('saluteora::edit', compact('patient'));
@@ -205,10 +240,14 @@ class PatientController extends Controller
      * Update the specified resource in storage.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function update(\Illuminate\Http\Request $request, int $id): \Illuminate\Http\RedirectResponse
 =======
     public function update(Request $request, $id)
 >>>>>>> 54f4fa16 (.)
+=======
+    public function update(\Illuminate\Http\Request $request, int $id): \Illuminate\Http\RedirectResponse
+>>>>>>> 8e4d163b (phpstan)
     {
         // Validazione dei dati
         $validator = Validator::make($request->all(), [
@@ -285,6 +324,9 @@ class PatientController extends Controller
      * Remove the specified resource from storage.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8e4d163b (phpstan)
     public function destroy(int $id): \Illuminate\Http\RedirectResponse
     {
         $patient = Patient::findOrFail($id);

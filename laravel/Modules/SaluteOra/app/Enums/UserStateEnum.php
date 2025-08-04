@@ -20,10 +20,14 @@ enum UserStateEnum: string implements HasLabel
     case INTEGRATION_REQUESTED = 'integration_requested';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getLabel(): string
 =======
     public function getLabel(): ?string
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+    public function getLabel(): string
+>>>>>>> 8e4d163b (phpstan)
     {
         return match($this) {
             self::PENDING => 'In attesa',

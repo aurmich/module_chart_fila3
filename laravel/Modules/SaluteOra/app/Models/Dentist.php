@@ -13,7 +13,11 @@ use Modules\Tenant\Traits\BelongsToTenant;
 /**
  * Modello Dentist per la gestione dei dentisti.
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
+=======
+ * 
+>>>>>>> 8e4d163b (phpstan)
  * @property int $id
  * @property string $name
  * @property string|null $first_name
@@ -22,6 +26,7 @@ use Modules\Tenant\Traits\BelongsToTenant;
  * @property string|null $specialization
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
+<<<<<<< HEAD
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\SaluteOra\Models\Appointment> $appointments
  * @property-read int|null $appointments_count
  * @property-read \Modules\SaluteOra\Models\Profile|null $creator
@@ -40,6 +45,8 @@ use Modules\Tenant\Traits\BelongsToTenant;
  * @mixin \Eloquent
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 8e4d163b (phpstan)
  */
 class Dentist extends BaseModel
 {
@@ -47,12 +54,16 @@ class Dentist extends BaseModel
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var list<string>
 =======
      * Gli attributi che sono mass assignable.
      *
      * @var array<int, string>
 >>>>>>> 54f4fa16 (.)
+=======
+     * @var list<string>
+>>>>>>> 8e4d163b (phpstan)
      */
     protected $fillable = [
         'tenant_id',

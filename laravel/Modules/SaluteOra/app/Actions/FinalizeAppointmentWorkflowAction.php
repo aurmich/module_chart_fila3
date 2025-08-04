@@ -12,9 +12,13 @@ use Modules\SaluteOra\Models\Dentist;
 use Modules\Notify\Actions\SendAppointmentNotificationAction;
 use Modules\SaluteOra\Models\Patient;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\SaluteOra\Enums\AppointmentStatusEnum;
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+use Modules\SaluteOra\Enums\AppointmentStatusEnum;
+>>>>>>> 8e4d163b (phpstan)
 use Spatie\QueueableAction\QueueableAction;
 
 class FinalizeAppointmentWorkflowAction
@@ -79,10 +83,14 @@ class FinalizeAppointmentWorkflowAction
                 $appointment->end_time = $dateData['end_time'] ?? null;
                 $appointment->type = $treatmentData['type'] ?? 'check-up';
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $appointment->status = AppointmentStatusEnum::CONFIRMED;
 =======
                 $appointment->status = 'confirmed';
 >>>>>>> 54f4fa16 (.)
+=======
+                $appointment->status = AppointmentStatusEnum::CONFIRMED;
+>>>>>>> 8e4d163b (phpstan)
                 $appointment->notes = $treatmentData['notes'] ?? '';
                 $appointment->treatment_plan = $treatmentData['treatment_plan'] ?? '';
                 $appointment->is_emergency = $treatmentData['is_emergency'] ?? false;

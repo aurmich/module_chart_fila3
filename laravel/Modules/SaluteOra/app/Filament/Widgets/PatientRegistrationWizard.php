@@ -246,6 +246,7 @@ class PatientRegistrationWizard extends Component
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * Renderizza il componente.
      *
@@ -255,6 +256,9 @@ class PatientRegistrationWizard extends Component
 =======
     public function render()
 >>>>>>> 54f4fa16 (.)
+=======
+    public function render(): \Illuminate\Contracts\View\View
+>>>>>>> 8e4d163b (phpstan)
     {
         return view('saluteora::widgets.patient-registration-wizard');
     }

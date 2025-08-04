@@ -102,12 +102,17 @@ final class FetchEventsAction
             'id' => $appointment->id,
             'title' => $title,
 <<<<<<< HEAD
+<<<<<<< HEAD
             'start' => $appointment->start_time->toIso8601String(),
             'end' => $appointment->end_time->toIso8601String(),
 =======
             'start' => $appointment->start_time?->toIso8601String(),
             'end' => $appointment->end_time?->toIso8601String(),
 >>>>>>> ca5e1eaf (.)
+=======
+            'start' => $appointment->start_time->toIso8601String(),
+            'end' => $appointment->end_time->toIso8601String(),
+>>>>>>> 8e4d163b (phpstan)
             'allDay' => false,
             'backgroundColor' => $color,
             'borderColor' => $color,

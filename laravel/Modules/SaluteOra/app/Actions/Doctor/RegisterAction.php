@@ -251,8 +251,12 @@ class RegisterAction
 =======
         // Debug sicuro del tipo
         dddx([
+<<<<<<< HEAD
             'type_value' => $doctor->type?->value ?? 'null',
 >>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
+=======
+            'type_value' => $doctor->type->value ?? 'null',
+>>>>>>> 8e4d163b (phpstan)
             'type_class' => get_class($doctor->type ?? new \stdClass()),
             'is_doctor' => $doctor->isDoctor(),
         ]);

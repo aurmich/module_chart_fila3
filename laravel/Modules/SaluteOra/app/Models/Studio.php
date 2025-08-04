@@ -41,6 +41,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 /**
+<<<<<<< HEAD
  * Modello Studio per il sistema multi-tenant.
  *
  * Rappresenta uno studio medico/dentistico che può avere
@@ -63,6 +64,16 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @property string|null $phone
  * @property string|null $email
 >>>>>>> 2099645a (.)
+=======
+ * Studio model for the SaluteOra module.
+ * 
+ * @property int $id
+ * @property string $name
+ * @property string|null $address
+ * @property string|null $phone
+ * @property string|null $email
+ * @property string|null $slug
+>>>>>>> 8e4d163b (phpstan)
  * @property string|null $website
  * @property string|null $registration_number
  * @property string|null $vat_number
@@ -70,6 +81,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @property array|null $opening_hours
  * @property array|null $services
  * @property bool $active
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property bool $is_active
  * @property int $owner_id
@@ -160,9 +172,13 @@ class Studio extends BaseTenant
 =======
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+=======
+ * @property \Carbon\Carbon $created_at
+ * @property \Carbon\Carbon $updated_at
+>>>>>>> 8e4d163b (phpstan)
  * @property \Illuminate\Support\Carbon|null $deleted_at
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\SaluteOra\Models\Doctor> $doctors
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\SaluteOra\Models\Appointment> $appointments
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, Doctor> $doctors
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, Appointment> $appointments
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Geo\Models\Address> $addresses
  */
 class Studio extends BaseTenant
@@ -341,10 +357,14 @@ class Studio extends BaseTenant
      * Scope per studi attivi.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function scopeActive(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
 =======
     public function scopeActive($query)
 >>>>>>> 2099645a (.)
+=======
+    public function scopeActive(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
+>>>>>>> 8e4d163b (phpstan)
     {
         return $query->where('active', true);
     }

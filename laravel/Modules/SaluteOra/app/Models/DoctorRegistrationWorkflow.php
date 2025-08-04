@@ -10,9 +10,15 @@ use Modules\Tenant\Traits\BelongsToTenant;
 use Illuminate\Support\Str;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * DoctorRegistrationWorkflow model per gestire il processo di registrazione dei dottori.
  *
+=======
+/**
+ * DoctorRegistrationWorkflow model per gestire il processo di registrazione dei dottori.
+ * 
+>>>>>>> 8e4d163b (phpstan)
  * @property int $id
  * @property int $doctor_id
  * @property string $current_step
@@ -27,6 +33,7 @@ use Illuminate\Support\Str;
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
  * @property-read Doctor $doctor
+<<<<<<< HEAD
  * @property \Illuminate\Support\Carbon|null $started_at Data e ora di inizio del workflow
  * @property \Illuminate\Support\Carbon|null $last_interaction_at Data e ora dell'ultima interazione
  * @property string|null $session_id ID della sessione
@@ -63,6 +70,8 @@ use Illuminate\Support\Str;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DoctorRegistrationWorkflow withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DoctorRegistrationWorkflow withoutTrashed()
  * @mixin \Eloquent
+=======
+>>>>>>> 8e4d163b (phpstan)
  */
 class DoctorRegistrationWorkflow extends BaseModel
 {
@@ -98,6 +107,7 @@ class DoctorRegistrationWorkflow extends BaseModel
      * Gli attributi che sono mass assignable.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var list<string>
      */
     protected $fillable = [
@@ -113,23 +123,27 @@ class DoctorRegistrationWorkflow extends BaseModel
         'completed_at',
 =======
      * @var array<string>
+=======
+     * @var list<string>
+>>>>>>> 8e4d163b (phpstan)
      */
     protected $fillable = [
-        'tenant_id',
         'doctor_id',
         'current_step',
         'status',
-        'step_data',
-        'started_at',
-        'completed_at',
-        'last_interaction_at',
-        'moderation_token',
+        'form_data',
+        'validation_results',
         'moderation_notes',
         'moderated_at',
         'moderated_by',
+<<<<<<< HEAD
         'created_by',
         'session_id',
 >>>>>>> 54f4fa16 (.)
+=======
+        'moderation_token',
+        'completed_at',
+>>>>>>> 8e4d163b (phpstan)
     ];
 
     /**

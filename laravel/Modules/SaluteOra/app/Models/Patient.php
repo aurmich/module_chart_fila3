@@ -36,6 +36,9 @@ use Spatie\Image\Enums\Fit;
  * @property string $user_id
  * @property string|null $date_of_birth
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8e4d163b (phpstan)
  * @property \Carbon\Carbon|null $birth_date Alias for date_of_birth
  * @property string|null $gender
  * @property string|null $address
@@ -43,21 +46,29 @@ use Spatie\Image\Enums\Fit;
  * @property string|null $fiscal_code
  * @property string|null $pregnancy_status
  * @property int|null $tenant_id
+<<<<<<< HEAD
 =======
  * @property string|null $gender
  * @property string|null $address
  * @property string|null $phone
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 8e4d163b (phpstan)
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property-read \Modules\SaluteOra\Models\User|null $user
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\SaluteOra\Models\Appointment> $appointments
  * @property-read \Modules\SaluteOra\Models\PatientIsee|null $isee
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\SaluteOra\Models\Appointment> $appointments
+ * @property-read \Modules\SaluteOra\Models\PatientIsee|null $isee
+>>>>>>> 8e4d163b (phpstan)
  * @method static \Illuminate\Database\Eloquent\Builder|Patient newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Patient newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Patient query()
@@ -228,7 +239,9 @@ class Patient extends User implements HasMedia
     use InteractsWithMedia;
 
     /**
-     * @var array<int, string>
+     * Gli attributi che sono mass assignable.
+     *
+     * @var list<string>
      */
     protected $fillable = [
 <<<<<<< HEAD

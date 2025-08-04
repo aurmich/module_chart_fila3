@@ -6,9 +6,13 @@ namespace Modules\Cms\Models;
 
 use Modules\Tenant\Models\Traits\SushiToJsons;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
+>>>>>>> 8e4d163b (phpstan)
 use Modules\Xot\Actions\Tree\GetTreeOptionsByModelClassAction;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
 
@@ -154,8 +158,12 @@ class Menu extends BaseModel implements HasRecursiveRelationshipsContract
  *
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 class Menu extends BaseModel
 >>>>>>> 54f4fa16 (.)
+=======
+class Menu extends BaseModel implements HasRecursiveRelationshipsContract
+>>>>>>> 8e4d163b (phpstan)
 {
     use HasRecursiveRelationships;
     use SushiToJsons;
@@ -180,10 +188,14 @@ class Menu extends BaseModel
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<int|string, string>
 =======
      * @return array<string, string>
 >>>>>>> 54f4fa16 (.)
+=======
+     * @return array<int|string, string>
+>>>>>>> 8e4d163b (phpstan)
      */
     public static function getTreeMenuOptions(): array
     {
@@ -198,13 +210,19 @@ class Menu extends BaseModel
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8e4d163b (phpstan)
     public function getLabel(): string
     {
         return $this->title;
     }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 8e4d163b (phpstan)
     /** @return array<string, string> */
     protected function casts(): array
     {

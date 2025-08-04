@@ -6,6 +6,7 @@ namespace Modules\Job\Http\Livewire\Schedule;
 
 use Exception;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Livewire\Component;
 use Modules\Job\Models\Task;
 use Webmozart\Assert\Assert;
@@ -18,11 +19,20 @@ use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Artisan;
+=======
+>>>>>>> 8e4d163b (phpstan)
 use Livewire\Component;
-use Modules\Job\Actions\ExecuteTaskAction;
 use Modules\Job\Models\Task;
+use Webmozart\Assert\Assert;
+use Illuminate\Support\Collection;
 use Modules\Xot\Actions\GetViewAction;
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+use Illuminate\Support\Facades\Artisan;
+use Modules\Job\Actions\ExecuteTaskAction;
+use Illuminate\Contracts\Support\Renderable;
+>>>>>>> 8e4d163b (phpstan)
 use Symfony\Component\Console\Command\Command;
 
 /**
@@ -96,10 +106,14 @@ class Crud extends Component
         return $all_commands->sortBy(
             static function (Command $command): string {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 Assert::string($name = $command->getName());
 =======
                 $name = $command->getName();
 >>>>>>> 54f4fa16 (.)
+=======
+                Assert::string($name = $command->getName());
+>>>>>>> 8e4d163b (phpstan)
                 if (mb_strpos($name, ':') === false) {
                     return ':'.$name;
                 }

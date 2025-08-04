@@ -22,6 +22,7 @@ class ListJobsWaiting extends XotBaseListRecords
     public static string $resource = JobsWaitingResource::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
     public function getHeaderActions(): array
@@ -29,6 +30,9 @@ class ListJobsWaiting extends XotBaseListRecords
         return [];
     }
 >>>>>>> 54f4fa16 (.)
+=======
+    
+>>>>>>> 8e4d163b (phpstan)
 
     public function getHeaderWidgets(): array
     {
@@ -37,6 +41,7 @@ class ListJobsWaiting extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
    
 =======
@@ -62,10 +67,14 @@ class ListJobsWaiting extends XotBaseListRecords
         return [];
     }
 >>>>>>> 54f4fa16 (.)
+=======
+   
+>>>>>>> 8e4d163b (phpstan)
 
     public function getTableColumns(): array
     {
         return [
+<<<<<<< HEAD
 <<<<<<< HEAD
             'id' => TextColumn::make('id')
                 ->searchable()
@@ -80,17 +89,24 @@ class ListJobsWaiting extends XotBaseListRecords
             'status' => TextColumn::make('status')
 =======
             TextColumn::make('id')
+=======
+            'id' => TextColumn::make('id')
+>>>>>>> 8e4d163b (phpstan)
                 ->searchable()
                 ->sortable(),
-            TextColumn::make('queue')
+            'queue' => TextColumn::make('queue')
                 ->searchable()
                 ->sortable(),
-            TextColumn::make('display_name')
+            'display_name' => TextColumn::make('display_name')
                 ->searchable()
                 ->sortable()
                 ->wrap(),
+<<<<<<< HEAD
             TextColumn::make('status')
 >>>>>>> 54f4fa16 (.)
+=======
+            'status' => TextColumn::make('status')
+>>>>>>> 8e4d163b (phpstan)
                 ->badge()
                 ->sortable()
                 ->color(
@@ -101,6 +117,7 @@ class ListJobsWaiting extends XotBaseListRecords
                         default => 'secondary',
                     }
                 ),
+<<<<<<< HEAD
 <<<<<<< HEAD
             'attempts' => TextColumn::make('attempts')
                 ->numeric()
@@ -117,19 +134,26 @@ class ListJobsWaiting extends XotBaseListRecords
             'updated_at' => TextColumn::make('updated_at')
 =======
             TextColumn::make('attempts')
+=======
+            'attempts' => TextColumn::make('attempts')
+>>>>>>> 8e4d163b (phpstan)
                 ->numeric()
                 ->sortable(),
-            TextColumn::make('available_at')
+            'available_at' => TextColumn::make('available_at')
                 ->dateTime()
                 ->sortable(),
-            TextColumn::make('reserved_at')
+            'reserved_at' => TextColumn::make('reserved_at')
                 ->dateTime()
                 ->sortable(),
-            TextColumn::make('created_at')
+            'created_at' => TextColumn::make('created_at')
                 ->dateTime()
                 ->sortable(),
+<<<<<<< HEAD
             TextColumn::make('updated_at')
 >>>>>>> 54f4fa16 (.)
+=======
+            'updated_at' => TextColumn::make('updated_at')
+>>>>>>> 8e4d163b (phpstan)
                 ->dateTime()
                 ->sortable(),
         ];

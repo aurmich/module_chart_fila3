@@ -7,9 +7,13 @@ namespace Modules\SaluteOra\Filament\Resources\AppointmentWorkflowResource\Forms
 use Filament\Forms;
 use Filament\Forms\Components\Component;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+use Filament\Infolists\Components\TextEntry;
+>>>>>>> 8e4d163b (phpstan)
 use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Log;
 use Modules\SaluteOra\Actions\CheckPatientEligibilityAction;
@@ -78,6 +82,7 @@ class EligibilityCheckForm
             Forms\Components\Section::make('Informazioni Paziente')
                 ->schema([
 <<<<<<< HEAD
+<<<<<<< HEAD
                     TextEntry::make('patient_name')
                         ->label('Nome completo')
                         ->state($patient->full_name),
@@ -93,19 +98,26 @@ class EligibilityCheckForm
                     TextEntry::make('patient_pregnancy_status')
 =======
                     Forms\Components\TextEntry::make('patient_name')
+=======
+                    TextEntry::make('patient_name')
+>>>>>>> 8e4d163b (phpstan)
                         ->label('Nome completo')
                         ->state($patient->full_name),
                         
-                    Forms\Components\TextEntry::make('patient_email')
+                    TextEntry::make('patient_email')
                         ->label('Email')
                         ->state($patient->user?->email ?? 'N/D'),
                         
-                    Forms\Components\TextEntry::make('patient_birth_date')
+                    TextEntry::make('patient_birth_date')
                         ->label('Data di nascita')
                         ->state($patient->birth_date ? $patient->birth_date->format('d/m/Y') : 'N/D'),
                         
+<<<<<<< HEAD
                     Forms\Components\TextEntry::make('patient_pregnancy_status')
 >>>>>>> 54f4fa16 (.)
+=======
+                    TextEntry::make('patient_pregnancy_status')
+>>>>>>> 8e4d163b (phpstan)
                         ->label('Stato di gravidanza')
                         ->state(fn () => $patient->pregnancy_status ? 'Sì' : 'No')
                         ->badge()
@@ -124,14 +136,19 @@ class EligibilityCheckForm
                         ->extraAttributes(['class' => $isEligible ? 'text-success-600 font-bold' : 'text-danger-600 font-bold']),
                         
 <<<<<<< HEAD
+<<<<<<< HEAD
                     TextEntry::make('isee_value')
 =======
                     Forms\Components\TextEntry::make('isee_value')
 >>>>>>> 54f4fa16 (.)
+=======
+                    TextEntry::make('isee_value')
+>>>>>>> 8e4d163b (phpstan)
                         ->label('Valore ISEE')
                         ->state(fn () => $workflow->step_data['eligibility_check']['isee_value'] ?? 'N/D')
                         ->money('EUR'),
                         
+<<<<<<< HEAD
 <<<<<<< HEAD
                     TextEntry::make('isee_validity')
                         ->label('Validità ISEE')
@@ -144,15 +161,22 @@ class EligibilityCheckForm
                     TextEntry::make('verification_reason')
 =======
                     Forms\Components\TextEntry::make('isee_validity')
+=======
+                    TextEntry::make('isee_validity')
+>>>>>>> 8e4d163b (phpstan)
                         ->label('Validità ISEE')
                         ->state(fn () => $workflow->step_data['eligibility_check']['isee_expiry_date'] ?? 'N/D'),
                         
-                    Forms\Components\TextEntry::make('verification_date')
+                    TextEntry::make('verification_date')
                         ->label('Data Verifica')
                         ->state(fn () => $workflow->step_data['eligibility_check']['verification_date'] ?? now()->format('d/m/Y')),
                         
+<<<<<<< HEAD
                     Forms\Components\TextEntry::make('verification_reason')
 >>>>>>> 54f4fa16 (.)
+=======
+                    TextEntry::make('verification_reason')
+>>>>>>> 8e4d163b (phpstan)
                         ->label('Note')
                         ->state(fn () => $workflow->step_data['eligibility_check']['reason'] ?? ($isEligible ? 'Tutte le condizioni soddisfatte' : 'Requisiti non soddisfatti'))
                         ->columnSpan(2),

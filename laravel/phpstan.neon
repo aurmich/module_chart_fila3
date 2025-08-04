@@ -22,10 +22,10 @@ parameters:
 
 parameters:
     level: 9
-    parallel:
-        maximumNumberOfProcesses: 32
-        jobSize: 20
-        minimumNumberOfJobsPerProcess: 2
+    #parallel:
+    #    maximumNumberOfProcesses: 4
+    #    jobSize: 1
+    #    minimumNumberOfJobsPerProcess: 1
 
     paths:
 <<<<<<< HEAD
@@ -87,7 +87,12 @@ parameters:
 
     bootstrapFiles:
         - ./phpstan_constants.php
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+        - ./vendor/amenadiel/jpgraph/src/config.inc.php
+
+>>>>>>> 8e4d163b (phpstan)
 
     scanFiles:
         - ./Modules/Xot/Helpers/Helper.php

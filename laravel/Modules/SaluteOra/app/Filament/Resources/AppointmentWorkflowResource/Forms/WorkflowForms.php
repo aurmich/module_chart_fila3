@@ -7,10 +7,15 @@ namespace Modules\SaluteOra\Filament\Resources\AppointmentWorkflowResource\Forms
 use Filament\Forms;
 use Filament\Forms\Components\Component;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 use Filament\Facades\Filament;
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+use Filament\Infolists\Components\TextEntry;
+use Filament\Facades\Filament;
+>>>>>>> 8e4d163b (phpstan)
 use Illuminate\Database\Eloquent\Builder;
 use Modules\SaluteOra\Filament\Components\AppointmentWorkflowProgress;
 use Modules\SaluteOra\Filament\Components\AppointmentWorkflowSummary;
@@ -52,6 +57,7 @@ class WorkflowForms
                     Forms\Components\Grid::make()
                         ->schema([
 <<<<<<< HEAD
+<<<<<<< HEAD
                             TextEntry::make('patient_name')
                                 ->label('Nome completo')
                                 ->state($patient->full_name),
@@ -67,19 +73,26 @@ class WorkflowForms
                             TextEntry::make('patient_birth_date')
 =======
                             Forms\Components\TextEntry::make('patient_name')
+=======
+                            TextEntry::make('patient_name')
+>>>>>>> 8e4d163b (phpstan)
                                 ->label('Nome completo')
                                 ->state($patient->full_name),
                                 
-                            Forms\Components\TextEntry::make('patient_email')
+                            TextEntry::make('patient_email')
                                 ->label('Email')
                                 ->state($patient->user?->email ?? 'N/A'),
                                 
-                            Forms\Components\TextEntry::make('patient_fiscal_code')
+                            TextEntry::make('patient_fiscal_code')
                                 ->label('Codice Fiscale')
                                 ->state($patient->fiscal_code),
                                 
+<<<<<<< HEAD
                             Forms\Components\TextEntry::make('patient_birth_date')
 >>>>>>> 54f4fa16 (.)
+=======
+                            TextEntry::make('patient_birth_date')
+>>>>>>> 8e4d163b (phpstan)
                                 ->label('Data di nascita')
                                 ->state($patient->birth_date ? $patient->birth_date->format('d/m/Y') : 'N/A'),
                         ])
@@ -154,10 +167,14 @@ class WorkflowForms
                         ->label('Seleziona il dentista per l\'appuntamento')
                         ->options(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
                             return Dentist::where('tenant_id', Filament::getTenant()?->getKey())
 =======
                             return Dentist::where('tenant_id', tenant()->id)
 >>>>>>> 54f4fa16 (.)
+=======
+                            return Dentist::where('tenant_id', Filament::getTenant()?->getKey())
+>>>>>>> 8e4d163b (phpstan)
                                 ->where('is_active', true)
                                 ->get()
                                 ->mapWithKeys(function ($dentist) {

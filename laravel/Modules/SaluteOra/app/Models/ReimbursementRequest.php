@@ -69,6 +69,7 @@ class ReimbursementRequest extends Model
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Gli attributi che sono mass assignable.
      *
      * @var list<string>
@@ -77,6 +78,11 @@ class ReimbursementRequest extends Model
      *
      * @var array<int, string>
 >>>>>>> 54f4fa16 (.)
+=======
+     * Gli attributi che sono mass assignable.
+     *
+     * @var list<string>
+>>>>>>> 8e4d163b (phpstan)
      */
     protected $fillable = [
         'patient_id',

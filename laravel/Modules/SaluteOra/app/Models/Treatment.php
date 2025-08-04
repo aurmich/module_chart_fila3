@@ -15,7 +15,11 @@ use Modules\Tenant\Traits\BelongsToTenant;
 /**
  * Modello Treatment per la gestione dei trattamenti odontoiatrici.
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
+=======
+ * 
+>>>>>>> 8e4d163b (phpstan)
  * @property int $id
  * @property int|null $tenant_id
  * @property int $patient_id
@@ -37,6 +41,7 @@ use Modules\Tenant\Traits\BelongsToTenant;
  * @property-read Patient $patient
  * @property-read Dentist|null $dentist
  * @property-read Appointment|null $appointment
+<<<<<<< HEAD
  * @property string $user_id
  * @property string|null $updated_by
  * @property string|null $created_by
@@ -80,6 +85,8 @@ use Modules\Tenant\Traits\BelongsToTenant;
  * @mixin \Eloquent
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 8e4d163b (phpstan)
  */
 class Treatment extends BaseModel
 {
@@ -89,10 +96,14 @@ class Treatment extends BaseModel
      * Gli attributi che sono mass assignable.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var list<string>
 =======
      * @var array<int, string>
 >>>>>>> 54f4fa16 (.)
+=======
+     * @var list<string>
+>>>>>>> 8e4d163b (phpstan)
      */
     protected $fillable = [
         'tenant_id',

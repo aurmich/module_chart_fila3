@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Enums;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Support\Contracts\HasLabel;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasColor;
@@ -20,12 +21,27 @@ use function Safe\class_alias;
  */
 enum DoctorRegistrationStatusEnum: string implements HasLabel, HasIcon, HasColor
 =======
+=======
+use Filament\Support\Contracts\HasLabel;
+use Filament\Support\Contracts\HasIcon;
+use Filament\Support\Contracts\HasColor;
+>>>>>>> 8e4d163b (phpstan)
 
 /**
- * Enum per gli stati del workflow di registrazione del dottore.
+ * Defines the different types of appointments in the system.
+ * 
+ * @method static self fromName(string $name)
+ * @method static self fromValue(string $value)
+ * @method static self tryFromName(string $name)
+ * @method static self tryFromValue(string $value)
+ * @method static self[] cases()
  */
+<<<<<<< HEAD
 enum DoctorRegistrationStatusEnum implements FilamentSupportContractsHasLabel: string
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+enum DoctorRegistrationStatusEnum: string implements HasLabel, HasIcon, HasColor
+>>>>>>> 8e4d163b (phpstan)
 {
     /**
      * Bozza - Il processo di registrazione è stato iniziato ma non completato.
@@ -68,6 +84,9 @@ enum DoctorRegistrationStatusEnum implements FilamentSupportContractsHasLabel: s
         };
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8e4d163b (phpstan)
 
     /**
      * Restituisce l'icona per lo stato.
@@ -100,8 +119,11 @@ enum DoctorRegistrationStatusEnum implements FilamentSupportContractsHasLabel: s
             self::COMPLETED => 'success',
         };
     }
+<<<<<<< HEAD
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 8e4d163b (phpstan)
     
     /**
      * Verifica se lo stato corrente è un stato finale (approvato, rifiutato o completato).

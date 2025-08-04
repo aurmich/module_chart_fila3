@@ -9,11 +9,18 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Modules\Tenant\Traits\BelongsToTenant;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8e4d163b (phpstan)
 use Carbon\Carbon;
 
 /**
  * AppointmentWorkflow Model
+<<<<<<< HEAD
  *
+=======
+ * 
+>>>>>>> 8e4d163b (phpstan)
  * @property int $id
  * @property int $tenant_id
  * @property int $patient_id
@@ -34,6 +41,7 @@ use Carbon\Carbon;
  * @property-read \Modules\SaluteOra\Models\Appointment|null $appointment
  * @property-read \Modules\SaluteOra\Models\Patient $patient
  * @property-read \Modules\SaluteOra\Models\Dentist|null $dentist
+<<<<<<< HEAD
  * @property string $user_id
  * @property string|null $updated_by
  * @property string|null $deleted_by
@@ -72,6 +80,9 @@ use Carbon\Carbon;
 =======
 
 >>>>>>> 54f4fa16 (.)
+=======
+ */
+>>>>>>> 8e4d163b (phpstan)
 class AppointmentWorkflow extends BaseModel
 {
     use HasFactory, SoftDeletes, BelongsToTenant;
@@ -91,19 +102,27 @@ class AppointmentWorkflow extends BaseModel
      * Gli attributi che sono mass assignable.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var list<string>
 =======
      * @var array<string>
 >>>>>>> 54f4fa16 (.)
+=======
+     * @var list<string>
+>>>>>>> 8e4d163b (phpstan)
      */
     protected $fillable = [
         'tenant_id',
         'appointment_id',
         'patient_id',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'dentist_id',
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+        'dentist_id',
+>>>>>>> 8e4d163b (phpstan)
         'current_step',
         'status',
         'step_data',
@@ -118,6 +137,7 @@ class AppointmentWorkflow extends BaseModel
     /**
      * Gli attributi che dovrebbero essere cast a tipi nativi.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @return array<string, string>
      */
@@ -138,18 +158,29 @@ class AppointmentWorkflow extends BaseModel
      * @return BelongsTo<\Modules\SaluteOra\Models\Appointment, $this>
 =======
      * @var array<string, string>
+=======
+     * @return array<string, string>
+>>>>>>> 8e4d163b (phpstan)
      */
-    protected $casts = [
-        'step_data' => 'array',
-        'meta' => 'array',
-        'started_at' => 'datetime',
-        'completed_at' => 'datetime',
-        'last_interaction_at' => 'datetime',
-    ];
+    protected function casts(): array
+    {
+        return array_merge(parent::casts(), [
+            'step_data' => 'array',
+            'meta' => 'array',
+            'started_at' => 'datetime',
+            'completed_at' => 'datetime',
+            'last_interaction_at' => 'datetime',
+        ]);
+    }
     
     /**
      * Relazione con l'appuntamento.
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+     *
+     * @return BelongsTo<\Modules\SaluteOra\Models\Appointment, $this>
+>>>>>>> 8e4d163b (phpstan)
      */
     public function appointment(): BelongsTo
     {
@@ -159,10 +190,15 @@ class AppointmentWorkflow extends BaseModel
     /**
      * Relazione con il paziente.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return BelongsTo<\Modules\SaluteOra\Models\Patient, $this>
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+     *
+     * @return BelongsTo<\Modules\SaluteOra\Models\Patient, $this>
+>>>>>>> 8e4d163b (phpstan)
      */
     public function patient(): BelongsTo
     {
@@ -171,6 +207,9 @@ class AppointmentWorkflow extends BaseModel
     
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8e4d163b (phpstan)
      * Relazione con il dentista.
      *
      * @return BelongsTo<\Modules\SaluteOra\Models\Dentist, $this>
@@ -181,8 +220,11 @@ class AppointmentWorkflow extends BaseModel
     }
     
     /**
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 8e4d163b (phpstan)
      * Controlla se questo workflow è completato.
      */
     public function isCompleted(): bool
@@ -230,6 +272,7 @@ class AppointmentWorkflow extends BaseModel
     {
         $steps = array_keys(self::getSteps());
 <<<<<<< HEAD
+<<<<<<< HEAD
         $index = array_search($this->current_step, $steps, true);
         return $index !== false ? $index : 0;
 =======
@@ -237,6 +280,10 @@ class AppointmentWorkflow extends BaseModel
             ? array_search($this->current_step, $steps)
             : 0;
 >>>>>>> 54f4fa16 (.)
+=======
+        $index = array_search($this->current_step, $steps, true);
+        return $index !== false ? $index : 0;
+>>>>>>> 8e4d163b (phpstan)
     }
     
     /**
@@ -268,12 +315,17 @@ class AppointmentWorkflow extends BaseModel
         ];
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         $currentStatusIndex = array_search($this->status, $statuses, true);
         $stepStatusIndex = array_search($stepsMap[$step], $statuses, true);
 =======
         $currentStatusIndex = array_search($this->status, $statuses);
         $stepStatusIndex = array_search($stepsMap[$step], $statuses);
 >>>>>>> 54f4fa16 (.)
+=======
+        $currentStatusIndex = array_search($this->status, $statuses, true);
+        $stepStatusIndex = array_search($stepsMap[$step], $statuses, true);
+>>>>>>> 8e4d163b (phpstan)
         
         return $currentStatusIndex !== false && $stepStatusIndex !== false && $currentStatusIndex >= $stepStatusIndex;
     }

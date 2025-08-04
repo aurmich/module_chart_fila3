@@ -81,10 +81,14 @@ class Isee extends BaseModel
      * Gli attributi che sono mass assignable.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var list<string>
 =======
      * @var array<int, string>
 >>>>>>> 54f4fa16 (.)
+=======
+     * @var list<string>
+>>>>>>> 8e4d163b (phpstan)
      */
     protected $fillable = [
         'tenant_id',
@@ -101,6 +105,7 @@ class Isee extends BaseModel
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Get the attributes that should be cast.
      *
      * @return array<string, string>
@@ -116,9 +121,13 @@ class Isee extends BaseModel
     }
 =======
      * Gli attributi da castare.
+=======
+     * Get the attributes that should be cast.
+>>>>>>> 8e4d163b (phpstan)
      *
-     * @var array<string, string>
+     * @return array<string, string>
      */
+<<<<<<< HEAD
     protected $casts = [
         'isee_value' => 'decimal:2',
         'isee_expiry_date' => 'date',
@@ -126,6 +135,17 @@ class Isee extends BaseModel
         'is_valid' => 'boolean',
     ];
 >>>>>>> 54f4fa16 (.)
+=======
+    protected function casts(): array
+    {
+        return [
+            'isee_value' => 'decimal:2',
+            'isee_expiry_date' => 'date',
+            'isee_issue_date' => 'date',
+            'is_valid' => 'boolean',
+        ];
+    }
+>>>>>>> 8e4d163b (phpstan)
 
     /**
      * Relazione con la paziente.
@@ -155,10 +175,14 @@ class Isee extends BaseModel
     public function isEligibleForProject(): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->isee_value <= 20000 && !$this->isExpired();
 =======
         return $this->isee_value <= 20000.00 && !$this->isExpired();
 >>>>>>> 54f4fa16 (.)
+=======
+        return $this->isee_value <= 20000 && !$this->isExpired();
+>>>>>>> 8e4d163b (phpstan)
     }
 
     /**
@@ -169,15 +193,20 @@ class Isee extends BaseModel
     public function daysUntilExpiry(): int
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return (int) now()->diffInDays($this->isee_expiry_date, false);
 =======
         return now()->diffInDays($this->isee_expiry_date, false);
 >>>>>>> 54f4fa16 (.)
+=======
+        return (int) now()->diffInDays($this->isee_expiry_date, false);
+>>>>>>> 8e4d163b (phpstan)
     }
 
     /**
      * Scope per filtrare gli ISEE validi per il progetto (sotto i 20.000 euro).
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @param \Illuminate\Database\Eloquent\Builder<static> $query
      * @return \Illuminate\Database\Eloquent\Builder<static>
@@ -191,10 +220,14 @@ class Isee extends BaseModel
 =======
      * @param \Illuminate\Database\Eloquent\Builder $query
      * @return \Illuminate\Database\Eloquent\Builder
+=======
+     * @param \Illuminate\Database\Eloquent\Builder<static> $query
+     * @return \Illuminate\Database\Eloquent\Builder<static>
+>>>>>>> 8e4d163b (phpstan)
      */
-    public function scopeEligibleForProject($query)
+    public function scopeEligibleForProject($query): \Illuminate\Database\Eloquent\Builder
     {
-        return $query->where('isee_value', '<=', 20000.00)
+        return $query->where('isee_value', '<=', 20000)
                      ->where('isee_expiry_date', '>', now());
     }
 }

@@ -247,6 +247,7 @@ use Spatie\Permission\Traits\HasRoles;
 use Modules\Gdpr\Models\Traits\HasGdpr;
 use Illuminate\Notifications\Notifiable;
 use Modules\SaluteOra\Enums\UserTypeEnum;
+use Modules\SaluteOra\Enums\UserStateEnum;
 use Modules\SaluteOra\States\User\Active;
 use Modules\SaluteOra\States\User\Pending;
 use Modules\SaluteOra\States\User\Inactive;
@@ -262,6 +263,30 @@ use Modules\SaluteOra\States\User\IntegrationRequested;
  *
  * Questo modello estende BaseUser e implementa Single Table Inheritance
  * per gestire i tipi di utente (doctor, patient).
+ *
+ * @property int $id
+ * @property string $name
+ * @property string $email
+ * @property string $password
+ * @property UserTypeEnum $type
+ * @property UserStateEnum $state
+ * @property string|null $first_name
+ * @property string|null $last_name
+ * @property \Carbon\Carbon|null $date_of_birth
+ * @property string|null $gender
+ * @property string|null $address
+ * @property string|null $city
+ * @property string|null $phone
+ * @property string|null $lang
+ * @property int|null $current_team_id
+ * @property bool $is_active
+ * @property bool $is_otp
+ * @property \Carbon\Carbon|null $password_expires_at
+ * @property int|null $studio_id
+ * @property string|null $continuation_token
+ * @property \Carbon\Carbon|null $email_verified_at
+ * @property \Carbon\Carbon $created_at
+ * @property \Carbon\Carbon $updated_at
  *
  * @see \Modules\User\Models\BaseUser
  * @see \Modules\SaluteOra\Models\Doctor
@@ -336,11 +361,14 @@ class User extends BaseUser implements HasMedia
 =======
 
 
+<<<<<<< HEAD
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
     /** @var array<int, string> */
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+    /** @var list<string> */
+>>>>>>> 8e4d163b (phpstan)
     protected $fillable = [
-        //'id',
         'name',
         'email',
         'password',
@@ -376,9 +404,14 @@ class User extends BaseUser implements HasMedia
         'lang',
         'current_team_id',
         'is_active',
-        'is_otp', // is One Time Password
+        'is_otp',
         'password_expires_at',
+<<<<<<< HEAD
 >>>>>>> adac82bd (rebase)
+=======
+        'studio_id',
+        'continuation_token',
+>>>>>>> 8e4d163b (phpstan)
     ];
 
 
@@ -665,10 +698,14 @@ class User extends BaseUser implements HasMedia
      * Scope per query: solo admin.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function scopeAdmins(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
 =======
     public function scopeAdmins($query)
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+    public function scopeAdmins(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
+>>>>>>> 8e4d163b (phpstan)
     {
         return $query->where('type', UserTypeEnum::ADMIN->value);
     }
@@ -677,10 +714,14 @@ class User extends BaseUser implements HasMedia
      * Scope per query: solo dottori.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function scopeDoctors(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
 =======
     public function scopeDoctors($query)
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+    public function scopeDoctors(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
+>>>>>>> 8e4d163b (phpstan)
     {
         return $query->where('type', UserTypeEnum::DOCTOR->value);
     }
@@ -688,6 +729,7 @@ class User extends BaseUser implements HasMedia
     /**
      * Scope per query: solo pazienti.
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
     public function scopePatients(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
     {
@@ -814,6 +856,9 @@ class User extends BaseUser implements HasMedia
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
     public function scopePatients($query)
+=======
+    public function scopePatients(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
+>>>>>>> 8e4d163b (phpstan)
     {
         return $query->where('type', UserTypeEnum::PATIENT->value);
     }

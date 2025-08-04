@@ -5,6 +5,9 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Enums;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8e4d163b (phpstan)
 use Filament\Support\Contracts\HasLabel;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasColor;
@@ -19,13 +22,17 @@ use Filament\Support\Contracts\HasColor;
  * @method static self[] cases()
  */
 enum DoctorStatusEnum: string implements HasLabel, HasIcon, HasColor
+<<<<<<< HEAD
 =======
 enum DoctorStatusEnum implements FilamentSupportContractsHasLabel: string
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 8e4d163b (phpstan)
 {
     case PENDING = 'pending';
     case APPROVED = 'approved';
     case REJECTED = 'rejected';
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -37,15 +44,25 @@ enum DoctorStatusEnum implements FilamentSupportContractsHasLabel: string
 // Alias per retrocompatibilità
 class_alias(DoctorStatusEnum::class, 'Modules\\SaluteOra\\Enums\\DoctorStatus');
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+
+
+    // Alias per retrocompatibilità
+    //class_alias(DoctorStatusEnum::class, 'Modules\\SaluteOra\\Enums\\DoctorStatus');
+>>>>>>> 8e4d163b (phpstan)
 
     /**
      * Get the translated label for the enum case.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getLabel(): string
 =======
     public function getLabel(): ?string
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+    public function getLabel(): string
+>>>>>>> 8e4d163b (phpstan)
     {
         return match ($this) {
             self::PENDING => __('saluteora::enums.doctorstatus.pending'),
@@ -54,6 +71,9 @@ class_alias(DoctorStatusEnum::class, 'Modules\\SaluteOra\\Enums\\DoctorStatus');
         };
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8e4d163b (phpstan)
 
     /**
      * Get the icon for the enum case.
@@ -78,6 +98,10 @@ class_alias(DoctorStatusEnum::class, 'Modules\\SaluteOra\\Enums\\DoctorStatus');
             self::REJECTED => 'danger',
         };
     }
+<<<<<<< HEAD
 }
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+}
+>>>>>>> 8e4d163b (phpstan)
