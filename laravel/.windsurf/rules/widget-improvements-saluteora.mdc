@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 description: 
 globs: 
 alwaysApply: false
@@ -112,3 +113,9 @@ Il modulo SaluteOra dimostra come implementare correttamente:
 
 *Ultimo aggiornamento: Gennaio 2025*
 *Status: ✅ PRODUCTION READY - Homepage dottore OPERATIVA*
+=======
+description:
+globs:
+alwaysApply: false
+---
+>>>>>>> b6f55f10 (✨ (DoctorAvailabilitiesWidget): introduce a new widget for managing doctor availability in a multi-tenant context to enhance usability and streamline scheduling for doctors.)

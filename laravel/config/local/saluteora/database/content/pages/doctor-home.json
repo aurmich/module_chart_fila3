@@ -85,6 +85,13 @@
                     "cta_link": "/doctor/patients"
 >>>>>>> f2140a80 (- continuo style landing page;)
                 }
+            },
+            {
+                "type": "widget",
+                "data": {
+                    "view": "pub_theme::components.blocks.widget.simple",
+                    "widget":  "Modules\\SaluteOra\\Filament\\Widgets\\DoctorAvailabilitiesWidget"
+                }
             }
         ]
     },

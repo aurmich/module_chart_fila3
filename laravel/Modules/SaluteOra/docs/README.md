@@ -1064,6 +1064,9 @@ La pagina ListStudios ora implementa correttamente il metodo getTableColumns() s
 - [Xot/docs/filament/listrecords.md](../../Xot/docs/filament/listrecords.md)
 - [SaluteOra/docs/resources/studio-resource.md](./resources/studio-resource.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b6f55f10 (✨ (DoctorAvailabilitiesWidget): introduce a new widget for managing doctor availability in a multi-tenant context to enhance usability and streamline scheduling for doctors.)
 
 ## Widget Filament
 
@@ -1104,6 +1107,7 @@ Il modulo implementa diversi widget Filament per le dashboard:
 
 - **DoctorCalendarWidget**: Implementazione perfetta con trait `HasFullCalendarConfig`, multi-tenancy, e security robusta
 - **BaseTransition Pattern**: Capolavoro di DRY & KISS per gestione stati
+<<<<<<< HEAD
 
 ### Policy e Autorizzazioni
 
@@ -1165,3 +1169,5 @@ class ModelPolicy extends XotBasePolicy
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 =======
 >>>>>>> 2bcfd382 (fix Address)
+=======
+>>>>>>> b6f55f10 (✨ (DoctorAvailabilitiesWidget): introduce a new widget for managing doctor availability in a multi-tenant context to enhance usability and streamline scheduling for doctors.)
