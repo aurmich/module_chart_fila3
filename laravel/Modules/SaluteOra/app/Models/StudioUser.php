@@ -55,7 +55,6 @@ class StudioUser extends BasePivot
 {
     use HasChildren;
 
-
     protected $table = 'studio_user';
     /**
      * Gli attributi che sono mass assignable.

@@ -42,6 +42,7 @@ use Modules\UI\Filament\Forms\Components\OpeningHoursField;
  * Widget per visualizzare tutti gli studi in cui lavora il dottore
  * e i relativi orari di disponibilità (schedule) configurati.
  * .
+<<<<<<< HEAD
  * Caratteristiche:
  * - Multi-studio overview per dottori
  * - Visualizzazione schedule dal pivot studio_user
@@ -141,6 +142,8 @@ use Modules\UI\Filament\Forms\Components\OpeningHoursField;
  * Widget per visualizzare tutti gli studi in cui lavora il dottore
  * e i relativi orari di disponibilità (schedule) configurati.
  * 
+=======
+>>>>>>> b705fb0e (📝 (DoctorAvailabilitiesWidget.php): update documentation comment to improve clarity)
  * Caratteristiche:
  * - Multi-studio overview per dottori
  * - Visualizzazione schedule dal pivot studio_user

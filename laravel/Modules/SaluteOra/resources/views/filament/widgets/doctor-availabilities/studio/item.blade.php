@@ -9,6 +9,7 @@
     - $schedule: Array schedule dal pivot
     - $isPrimary: Boolean se studio principale
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 --}}
 
@@ -18,6 +19,9 @@
     $isPrimary = $studio->pivot->is_primary ?? false;
     $schedule = $studio->pivot->schedule ?? [];
 =======
+=======
+    
+>>>>>>> b705fb0e (📝 (DoctorAvailabilitiesWidget.php): update documentation comment to improve clarity)
 --}}
 
 @props(['studio', 'doctor', 'schedule', 'isPrimary'])
