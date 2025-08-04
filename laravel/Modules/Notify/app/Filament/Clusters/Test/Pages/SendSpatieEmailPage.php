@@ -19,9 +19,13 @@ use Filament\Forms\Contracts\HasForms;
 use Modules\Notify\Emails\SpatieEmail;
 use Illuminate\Database\Eloquent\Model;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Notify\Models\MailTemplate;
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+use Modules\Notify\Models\MailTemplate;
+>>>>>>> 85c2afe6 (✨ (SpatieEmail.php): add dynamic theme support for email layout path to enhance customization)
 use Modules\Notify\Emails\EmailDataEmail;
 use Modules\Notify\Filament\Clusters\Test;
 use Modules\Xot\Filament\Pages\XotBasePage;
@@ -79,6 +83,9 @@ class SendSpatieEmailPage extends XotBasePage
                 ->email()
                 ->required(),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 85c2afe6 (✨ (SpatieEmail.php): add dynamic theme support for email layout path to enhance customization)
             /*
             Forms\Components\TextInput::make('subject')
                 ->required(),
@@ -86,10 +93,13 @@ class SendSpatieEmailPage extends XotBasePage
             Forms\Components\Select::make('mail_template_slug')
                 ->options(MailTemplate::all()->pluck('slug', 'slug'))
                 ->required(),
+<<<<<<< HEAD
 =======
             Forms\Components\TextInput::make('subject')
                 ->required(),
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 85c2afe6 (✨ (SpatieEmail.php): add dynamic theme support for email layout path to enhance customization)
             Forms\Components\RichEditor::make('body_html')
                 ->required(),
         ];
@@ -132,6 +142,7 @@ class SendSpatieEmailPage extends XotBasePage
              ->send($email);
         */
 <<<<<<< HEAD
+<<<<<<< HEAD
         Assert::string($mail_template_slug=$data['mail_template_slug']);
         $notify=(new RecordNotification($user,$mail_template_slug))->mergeData($data);
 
@@ -144,6 +155,13 @@ class SendSpatieEmailPage extends XotBasePage
             //->locale('it')
             ->notify(new RecordNotification($user,'due'));
 >>>>>>> 54f4fa16 (.)
+=======
+        $notify=(new RecordNotification($user,$data['mail_template_slug']))->mergeData($data);
+
+        Notification::route('mail', $data['to'])
+            //->locale('it')
+            ->notify($notify);
+>>>>>>> 85c2afe6 (✨ (SpatieEmail.php): add dynamic theme support for email layout path to enhance customization)
 
 
         FilamentNotification::make()

@@ -2,14 +2,19 @@
 
 return array (
 <<<<<<< HEAD
+<<<<<<< HEAD
   'navigation' => 
 =======
   'navigation' =>
 >>>>>>> 54f4fa16 (.)
+=======
+  'navigation' => 
+>>>>>>> 85c2afe6 (✨ (SpatieEmail.php): add dynamic theme support for email layout path to enhance customization)
   array (
     'label' => 'Invio Email (Spatie)',
     'group' => 'Notifiche',
   ),
+<<<<<<< HEAD
 <<<<<<< HEAD
   'actions' => 
   array (
@@ -19,10 +24,16 @@ return array (
   array (
     'emailFormActions' =>
 >>>>>>> 54f4fa16 (.)
+=======
+  'actions' => 
+  array (
+    'emailFormActions' => 
+>>>>>>> 85c2afe6 (✨ (SpatieEmail.php): add dynamic theme support for email layout path to enhance customization)
     array (
       'label' => 'emailFormActions',
     ),
   ),
+<<<<<<< HEAD
 <<<<<<< HEAD
   'fields' => 
   array (
@@ -32,6 +43,11 @@ return array (
   array (
     'body_html' =>
 >>>>>>> 54f4fa16 (.)
+=======
+  'fields' => 
+  array (
+    'body_html' => 
+>>>>>>> 85c2afe6 (✨ (SpatieEmail.php): add dynamic theme support for email layout path to enhance customization)
     array (
       'description' => 'body_html',
       'helper_text' => 'body_html',
@@ -39,10 +55,14 @@ return array (
       'label' => 'body_html',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
     'subject' => 
 =======
     'subject' =>
 >>>>>>> 54f4fa16 (.)
+=======
+    'subject' => 
+>>>>>>> 85c2afe6 (✨ (SpatieEmail.php): add dynamic theme support for email layout path to enhance customization)
     array (
       'description' => 'subject',
       'helper_text' => 'subject',
@@ -50,10 +70,14 @@ return array (
       'label' => 'subject',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
     'to' => 
 =======
     'to' =>
 >>>>>>> 54f4fa16 (.)
+=======
+    'to' => 
+>>>>>>> 85c2afe6 (✨ (SpatieEmail.php): add dynamic theme support for email layout path to enhance customization)
     array (
       'description' => 'to',
       'helper_text' => 'to',
@@ -61,6 +85,9 @@ return array (
       'label' => 'to',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 85c2afe6 (✨ (SpatieEmail.php): add dynamic theme support for email layout path to enhance customization)
     'mail_templates' => 
     array (
       'description' => 'mail_templates',
@@ -74,7 +101,10 @@ return array (
       'placeholder' => 'mail_template_slug',
       'label' => 'mail_template_slug',
     ),
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 85c2afe6 (✨ (SpatieEmail.php): add dynamic theme support for email layout path to enhance customization)
   ),
 );
