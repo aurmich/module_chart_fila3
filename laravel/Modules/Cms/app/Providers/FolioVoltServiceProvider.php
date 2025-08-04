@@ -22,9 +22,13 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;
 use Modules\Tenant\Services\TenantService;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 =======
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+>>>>>>> dadf311f (re-enable en)
 
 class FolioVoltServiceProvider extends ServiceProvider
 {
@@ -74,10 +78,14 @@ class FolioVoltServiceProvider extends ServiceProvider
 
         Folio::path($theme_path)
 <<<<<<< HEAD
+<<<<<<< HEAD
             ->uri(LaravelLocalization::setLocale() ?? app()->getLocale() )
 =======
             ->uri( app()->getLocale() )
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+            ->uri(LaravelLocalization::setLocale() ?? app()->getLocale() )
+>>>>>>> dadf311f (re-enable en)
             ->middleware([
                 '*' => $base_middleware,
             ]);
@@ -96,10 +104,14 @@ class FolioVoltServiceProvider extends ServiceProvider
             $paths[] = $path;
             Folio::path($path)
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ->uri( LaravelLocalization::setLocale() ?? app()->getLocale() )
 =======
                 ->uri( app()->getLocale() )
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+                ->uri( LaravelLocalization::setLocale() ?? app()->getLocale() )
+>>>>>>> dadf311f (re-enable en)
                 ->middleware([
                     '*' => $base_middleware
                 ]);
