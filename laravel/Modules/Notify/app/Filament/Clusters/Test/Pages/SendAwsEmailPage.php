@@ -112,10 +112,14 @@ class SendAwsEmailPage extends XotBasePage
 
         try {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 345f8677 (phpstan)
             $to = is_string($data['to']) ? $data['to'] : '';
             $subject = is_string($data['subject']) ? $data['subject'] : '';
             $bodyHtml = is_string($data['body_html']) ? $data['body_html'] : '';
 
+<<<<<<< HEAD
             $emailData = new EmailData(
                 $to,
                 $subject,
@@ -127,11 +131,18 @@ class SendAwsEmailPage extends XotBasePage
                 bodyHtml: $data['body_html'],
                 templateName: $data['template']
 >>>>>>> aurmich/dev
+=======
+            $emailData = new EmailData(
+                $to,
+                $subject,
+                $bodyHtml
+>>>>>>> 345f8677 (phpstan)
             );
 
             // Configurare lo specifico driver AWS SES per questo test
             config(['mail.default' => 'ses']);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
             // Invia l'email utilizzando il servizio SES
             Mail::to($to)
@@ -158,6 +169,11 @@ class SendAwsEmailPage extends XotBasePage
             Mail::to($data['to'])
                 ->send(new EmailDataEmail($emailData, $attachments));
 >>>>>>> aurmich/dev
+=======
+            // Invia l'email utilizzando il servizio SES
+            Mail::to($to)
+                ->send(new EmailDataEmail($emailData));
+>>>>>>> 345f8677 (phpstan)
 
             FilamentNotification::make()
                 ->success()

@@ -8,9 +8,13 @@ use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Actions\Action;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 =======
 >>>>>>> aurmich/dev
+=======
+use Webmozart\Assert\Assert;
+>>>>>>> 345f8677 (phpstan)
 use Filament\Facades\Filament;
 use Modules\Notify\Datas\EmailData;
 use Illuminate\Support\Facades\Mail;
@@ -124,11 +128,16 @@ class SendSpatieEmailPage extends XotBasePage
              ->send($email);
         */
 <<<<<<< HEAD
+<<<<<<< HEAD
         Assert::string($mail_template_slug=$data['mail_template_slug']);
         $notify=(new RecordNotification($user,$mail_template_slug))->mergeData($data);
 =======
         $notify=(new RecordNotification($user,$data['mail_template_slug']))->mergeData($data);
 >>>>>>> aurmich/dev
+=======
+        Assert::string($mail_template_slug=$data['mail_template_slug']);
+        $notify=(new RecordNotification($user,$mail_template_slug))->mergeData($data);
+>>>>>>> 345f8677 (phpstan)
 
         Notification::route('mail', $data['to'])
             //->locale('it')

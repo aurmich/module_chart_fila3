@@ -38,12 +38,15 @@ use Spatie\Translatable\HasTranslations;
  * @property \Carbon\Carbon $updated_at
  * @property \Carbon\Carbon|null $deleted_at
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property-read string $channels_label
  * @property NotificationTypeEnum $type
  * @property-read \Modules\User\Models\Profile|null $creator
 =======
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Notify\Models\NotificationTemplateVersion> $versions
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Notify\Models\NotificationLog> $logs
+=======
+>>>>>>> 345f8677 (phpstan)
  * @property-read string $channels_label
  * @property NotificationTypeEnum $type
  * @property-read \Modules\SaluteOra\Models\Profile|null $creator
@@ -144,10 +147,14 @@ class NotificationTemplate extends BaseModel implements HasMedia
             ->singleFile();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*
 =======
 
 >>>>>>> aurmich/dev
+=======
+/*
+>>>>>>> 345f8677 (phpstan)
     public function versions(): HasMany
     {
         return $this->hasMany(NotificationTemplateVersion::class, 'template_id')
@@ -159,22 +166,31 @@ class NotificationTemplate extends BaseModel implements HasMedia
         return $this->hasMany(NotificationLog::class, 'template_id');
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 */
     /*
 =======
 
     /**
 >>>>>>> aurmich/dev
+=======
+*/
+    /*
+>>>>>>> 345f8677 (phpstan)
      * Create a new version of the template.
      *
      * @param string $createdBy The user who created the version
      * @param string|null $notes Optional notes about the changes
      * @return self
 <<<<<<< HEAD
+<<<<<<< HEAD
      
 =======
      */
 >>>>>>> aurmich/dev
+=======
+     
+>>>>>>> 345f8677 (phpstan)
     public function createNewVersion(string $createdBy, ?string $notes = null): self
     {
         $this->versions()->create([
@@ -193,10 +209,14 @@ class NotificationTemplate extends BaseModel implements HasMedia
         return $this;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 */
 =======
 
 >>>>>>> aurmich/dev
+=======
+*/
+>>>>>>> 345f8677 (phpstan)
     /**
      * Compile the template with the given data.
      *
@@ -211,10 +231,14 @@ class NotificationTemplate extends BaseModel implements HasMedia
 
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'subject' => $subject ?? '',
 =======
             'subject' => $subject,
 >>>>>>> aurmich/dev
+=======
+            'subject' => $subject ?? '',
+>>>>>>> 345f8677 (phpstan)
             'body_html' => $bodyHtml,
             'body_text' => $bodyText,
         ];
@@ -349,30 +373,45 @@ class NotificationTemplate extends BaseModel implements HasMedia
     public function getPreviewSubject(): string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $result = $this->getTranslation('subject', app()->getLocale());
         return is_string($result) ? $result : '';
 =======
         return $this->getTranslation('subject', app()->getLocale());
 >>>>>>> aurmich/dev
+=======
+        $result = $this->getTranslation('subject', app()->getLocale());
+        return is_string($result) ? $result : '';
+>>>>>>> 345f8677 (phpstan)
     }
 
     public function getPreviewBodyText(): string
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         $result = $this->getTranslation('body_text', app()->getLocale());
         return is_string($result) ? $result : '';
 =======
         return $this->getTranslation('body_text', app()->getLocale());
 >>>>>>> aurmich/dev
+=======
+        $result = $this->getTranslation('body_text', app()->getLocale());
+        return is_string($result) ? $result : '';
+>>>>>>> 345f8677 (phpstan)
     }
 
     public function getPreviewBodyHtml(): string
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         $result = $this->getTranslation('body_html', app()->getLocale());
         return is_string($result) ? $result : '';
 =======
         return $this->getTranslation('body_html', app()->getLocale());
 >>>>>>> aurmich/dev
+=======
+        $result = $this->getTranslation('body_html', app()->getLocale());
+        return is_string($result) ? $result : '';
+>>>>>>> 345f8677 (phpstan)
     }
 }

@@ -32,7 +32,7 @@ use Modules\Xot\Traits\Updater;
  */
 class NotificationTemplateVersion extends BaseModel
 {
-    use Updater;
+    
 
     protected $fillable = [
         'template_id',
@@ -78,6 +78,7 @@ class NotificationTemplateVersion extends BaseModel
     {
         $template = $this->template;
         
+<<<<<<< HEAD:laravel/Modules/Notify/app/Models/NotificationTemplateVersion.php
 <<<<<<< HEAD
         if (!$template) {
             throw new \RuntimeException('Template not found for version ' . $this->id);
@@ -91,6 +92,12 @@ class NotificationTemplateVersion extends BaseModel
             'variables' => $this->variables ?? null,
             'conditions' => $this->conditions ?? null,
 =======
+=======
+        if ($template === null) {
+            throw new \RuntimeException('Template non trovato per questa versione');
+        }
+        
+>>>>>>> 345f8677 (phpstan):laravel/Modules/Notify/app/Models/NotificationTemplateVersion.php.old
         $template->update([
             'subject' => $this->subject,
             'body_html' => $this->body_html,

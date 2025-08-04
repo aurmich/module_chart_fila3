@@ -118,15 +118,22 @@ class MailTemplateVersion extends BaseModel
         $template = $this->template;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 345f8677 (phpstan)
         if ($template === null) {
             throw new \RuntimeException('Template non trovato per questa versione');
         }
 
+<<<<<<< HEAD
         $template->update([
 =======
         $template->update([
             'mailable' => $this->mailable,
 >>>>>>> aurmich/dev
+=======
+        $template->update([
+>>>>>>> 345f8677 (phpstan)
             'subject' => $this->subject,
             'html_template' => $this->html_template,
             'text_template' => $this->text_template,

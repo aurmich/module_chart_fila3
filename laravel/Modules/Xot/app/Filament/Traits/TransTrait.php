@@ -8,9 +8,13 @@ use TypeError;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 =======
 >>>>>>> aurmich/dev
+=======
+use Webmozart\Assert\Assert;
+>>>>>>> 345f8677 (phpstan)
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 
@@ -83,10 +87,14 @@ trait TransTrait
     {
         $piece=Str::of($class)->explode('\\')->toArray();
 <<<<<<< HEAD
+<<<<<<< HEAD
         Assert::string($type=$piece[2]);
 =======
         $type=$piece[2];
 >>>>>>> aurmich/dev
+=======
+        Assert::string($type=$piece[2]);
+>>>>>>> 345f8677 (phpstan)
         $module=Str::of($class)->between('Modules\\','\\'.$type.'\\')->toString();
 
         $module_low=Str::of($module)->lower()->toString();

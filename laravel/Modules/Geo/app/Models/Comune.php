@@ -70,6 +70,7 @@ class Comune extends BaseModel
     public $translatable = [
     ];
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     /** @var list<string> */
 =======
@@ -79,6 +80,10 @@ class Comune extends BaseModel
      * @var array<int, string>
      */
 >>>>>>> aurmich/dev
+=======
+    
+    /** @var list<string> */
+>>>>>>> 345f8677 (phpstan)
     protected $fillable = [
         'id',
         'codice',

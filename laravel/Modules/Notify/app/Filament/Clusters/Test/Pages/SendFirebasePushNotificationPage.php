@@ -109,12 +109,16 @@ class SendFirebasePushNotificationPage extends XotBasePage
         try {
             // Creare i dati della notifica Firebase
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 345f8677 (phpstan)
             $notificationData = FirebaseNotificationData::from([
                 'type' => $data['notification_type'] ?? 'message',
                 'title' => $data['title'] ?? '',
                 'body' => $data['body'] ?? '',
                 'data' => $data['custom_data'] ?? [],
             ]);
+<<<<<<< HEAD
             
             // TODO: Implementare PushNotification class
             // Inviare la notifica push
@@ -130,11 +134,19 @@ class SendFirebasePushNotificationPage extends XotBasePage
                 highPriority: $data['high_priority'] ?? false,
                 customData: $data['custom_data'] ?? []
             );
+=======
+>>>>>>> 345f8677 (phpstan)
             
+            // TODO: Implementare PushNotification class
             // Inviare la notifica push
+<<<<<<< HEAD
             Notification::route('firebase', $data['token'])
                 ->notify(new PushNotification($notificationData));
 >>>>>>> aurmich/dev
+=======
+            // Notification::route('firebase', $data['token'])
+            //     ->notify(new PushNotification($notificationData));
+>>>>>>> 345f8677 (phpstan)
             
             // Notificare il successo
             FilamentNotification::make()

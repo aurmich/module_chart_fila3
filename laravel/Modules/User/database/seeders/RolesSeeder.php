@@ -23,6 +23,7 @@ class RolesSeeder extends Seeder
     ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
     /**
@@ -36,6 +37,9 @@ class RolesSeeder extends Seeder
         ['name' => 'guest', 'guard_name' => 'web'],
     ];
 >>>>>>> aurmich/dev
+=======
+    
+>>>>>>> 345f8677 (phpstan)
 
     /**
      * Run the database seeds.
@@ -44,6 +48,7 @@ class RolesSeeder extends Seeder
     {
         $roles = [];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -74,6 +79,9 @@ class RolesSeeder extends Seeder
             );
         }
 >>>>>>> aurmich/dev
+=======
+
+>>>>>>> 345f8677 (phpstan)
 
         // Display results in a table format
         $this->displayResults($roles);

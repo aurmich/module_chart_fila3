@@ -11,9 +11,13 @@ use Filament\Forms\Components\Select;
 use Illuminate\Database\Eloquent\Model;
 use Filament\Tables\Columns\SelectColumn;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\ModelStates\HasStatesContract;
 =======
 >>>>>>> aurmich/dev
+=======
+use Spatie\ModelStates\HasStatesContract;
+>>>>>>> 345f8677 (phpstan)
 use Modules\SaluteOra\States\User\UserState;
 
 class SelectState extends Select
@@ -24,10 +28,14 @@ class SelectState extends Select
         parent::setUp();
       //  $this->selectablePlaceholder(false);
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->options(function (Model&HasStatesContract $record): array {
 =======
         $this->options(function (Model $record): array {
 >>>>>>> aurmich/dev
+=======
+        $this->options(function (Model&HasStatesContract $record): array {
+>>>>>>> 345f8677 (phpstan)
             $name=$this->getName();
             $states=$record->getStatesFor($name)->toArray();
             /*
@@ -45,12 +53,19 @@ class SelectState extends Select
             ]);
             */
 <<<<<<< HEAD
+<<<<<<< HEAD
             /**
              * @var array<int|string>
              * @phpstan-ignore argument.type
              */
 =======
 >>>>>>> aurmich/dev
+=======
+            /**
+             * @var array<int|string>
+             * @phpstan-ignore-next-line
+             */
+>>>>>>> 345f8677 (phpstan)
             return array_combine($states, $states);
         });
        

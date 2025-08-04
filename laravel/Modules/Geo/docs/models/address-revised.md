@@ -101,6 +101,7 @@ class Address extends Model implements HasGeolocation
     use SoftDeletes;
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** list<string> */
    protected $fillable = [
 =======
@@ -111,6 +112,10 @@ class Address extends Model implements HasGeolocation
      */
     protected $fillable = [
 >>>>>>> aurmich/dev
+=======
+    /** list<string> */
+   protected $fillable = [
+>>>>>>> 345f8677 (phpstan)
         'name',
         'description',
         'route',

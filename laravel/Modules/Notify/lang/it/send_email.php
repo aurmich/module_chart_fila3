@@ -277,6 +277,7 @@ return array (
       'description' => 'Oggetto email',
       'helper_text' => 'Inserisci l\'oggetto dell\'email',
       'label' => 'Oggetto',
+<<<<<<< HEAD
       'placeholder' => 'subject',
 =======
       'description' => 'subject',
@@ -285,6 +286,9 @@ return array (
       'label' => 'subject',
 >>>>>>> c0c82b7e (- updated template email)
 >>>>>>> aurmich/dev
+=======
+      'placeholder' => 'Inserisci l\'oggetto dell\'email',
+>>>>>>> 345f8677 (phpstan)
     ),
   ),
   'actions' => 

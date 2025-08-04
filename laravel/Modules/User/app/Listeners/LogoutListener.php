@@ -82,10 +82,14 @@ class LogoutListener
             Log::info('Logout effettuato', [
                 'user_id' => $event->user->getAuthIdentifier(),
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'device_id' => $device->id,
 =======
                 'device_id' => $device?->id,
 >>>>>>> aurmich/dev
+=======
+                'device_id' => $device->id,
+>>>>>>> 345f8677 (phpstan)
                 'timestamp' => now()
             ]);
 
@@ -94,10 +98,14 @@ class LogoutListener
                 'error' => $e->getMessage(),
                 'trace' => $e->getTraceAsString(),
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'user_id' => $event->user->getAuthIdentifier()
 =======
                 'user_id' => $event->user?->getAuthIdentifier()
 >>>>>>> aurmich/dev
+=======
+                'user_id' => $event->user->getAuthIdentifier()
+>>>>>>> 345f8677 (phpstan)
             ]);
         }
     }

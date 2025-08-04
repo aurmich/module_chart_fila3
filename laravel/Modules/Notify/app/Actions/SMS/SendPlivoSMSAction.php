@@ -22,6 +22,7 @@ final class SendPlivoSMSAction implements SmsActionContract
     use QueueableAction;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @var PlivoData */
     private PlivoData $plivoData;
 
@@ -34,14 +35,33 @@ final class SendPlivoSMSAction implements SmsActionContract
     /** @var string|null */
     protected ?string $defaultSender = null;
 =======
+=======
+    /** @var string */
+>>>>>>> 345f8677 (phpstan)
     private string $authId;
+
+    /** @var string */
     private string $authToken;
+
+    /** @var string */
     private string $baseUrl = 'https://api.plivo.com/v1/Account/';
+
+    /** @var array<string, mixed> */
     private array $vars = [];
+
+    /** @var bool */
     protected bool $debug;
+
+    /** @var int */
     protected int $timeout;
+<<<<<<< HEAD
     protected ?string $defaultSender;
 >>>>>>> aurmich/dev
+=======
+
+    /** @var string|null */
+    protected ?string $defaultSender = null;
+>>>>>>> 345f8677 (phpstan)
 
     /**
      * Create a new action instance.
@@ -75,11 +95,16 @@ final class SendPlivoSMSAction implements SmsActionContract
 
         // Parametri a livello di root
 <<<<<<< HEAD
+<<<<<<< HEAD
         $sender = config('sms.from');
         $this->defaultSender = is_string($sender) ? $sender : null;
         $this->debug = (bool) config('sms.debug', false);
 =======
         $this->defaultSender = config('sms.from');
+=======
+        $sender = config('sms.from');
+        $this->defaultSender = is_string($sender) ? $sender : null;
+>>>>>>> 345f8677 (phpstan)
         $this->debug = (bool) config('sms.debug', false);
         $this->timeout = (int) config('sms.timeout', 30);
 >>>>>>> aurmich/dev
@@ -95,6 +120,7 @@ final class SendPlivoSMSAction implements SmsActionContract
     public function execute(SmsData $smsData): array
     {
         // Normalizza il numero di telefono
+<<<<<<< HEAD
 <<<<<<< HEAD
         $to = (string) $smsData->to;
         if (Str::startsWith($to, '00')) {
@@ -112,6 +138,15 @@ final class SendPlivoSMSAction implements SmsActionContract
         if (!Str::startsWith($smsData->to, '+')) {
             $smsData->to = '+39' . $smsData->to;
 >>>>>>> aurmich/dev
+=======
+        $to = (string) $smsData->to;
+        if (Str::startsWith($to, '00')) {
+            $to = $to !== '' ? ('+' . substr($to, 2)) : $to;
+        }
+
+        if (!Str::startsWith($to, '+')) {
+            $to = '+39' . $to;
+>>>>>>> 345f8677 (phpstan)
         }
 
         $from = $smsData->from ?? $this->defaultSender;
@@ -141,10 +176,14 @@ final class SendPlivoSMSAction implements SmsActionContract
                 'json' => [
                     'src' => $from,
 <<<<<<< HEAD
+<<<<<<< HEAD
                     'dst' => $to,
 =======
                     'dst' => $smsData->to,
 >>>>>>> aurmich/dev
+=======
+                    'dst' => $to,
+>>>>>>> 345f8677 (phpstan)
                     'text' => $smsData->body,
                 ]
             ]);

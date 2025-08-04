@@ -8,6 +8,7 @@ use Spatie\MailTemplates\Models\MailTemplate;
 class MailTemplatesSeeder extends Seeder
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function run(): void
     {
         // Template Welcome
@@ -20,6 +21,13 @@ class MailTemplatesSeeder extends Seeder
         MailTemplate::create([
             'mailable' => \Modules\Notify\Mail\WelcomeMail::class,
 >>>>>>> aurmich/dev
+=======
+    public function run(): void
+    {
+        // Template Welcome
+        MailTemplate::create([
+            'mailable' => 'Modules\Notify\Mail\WelcomeMail',
+>>>>>>> 345f8677 (phpstan)
             'subject' => 'Welcome to {{ app_name }}',
             'html_template' => '
                 <h1 style="color: #2D3748; font-size: 24px; margin: 0 0 20px 0;">Welcome to {{ app_name }}!</h1>
@@ -38,10 +46,14 @@ class MailTemplatesSeeder extends Seeder
         // Template Order Confirmation
         MailTemplate::create([
 <<<<<<< HEAD
+<<<<<<< HEAD
             'mailable' => 'Modules\Notify\Mail\OrderConfirmationMail',
 =======
             'mailable' => \Modules\Notify\Mail\OrderConfirmationMail::class,
 >>>>>>> aurmich/dev
+=======
+            'mailable' => 'Modules\Notify\Mail\OrderConfirmationMail',
+>>>>>>> 345f8677 (phpstan)
             'subject' => 'Order #{{ order_id }} Confirmed',
             'html_template' => '
                 <h1 style="color: #2D3748; font-size: 24px; margin: 0 0 20px 0;">Order Confirmed!</h1>

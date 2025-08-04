@@ -36,6 +36,7 @@ enum DayOfWeek: int implements HasLabel, HasColor, HasIcon, HasDescription
      * Implementazione dell'interfaccia HasLabel di Filament.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getLabel(): string
     {
         $carbon = Carbon::now()->startOfWeek()->addDays($this->value - 1);
@@ -46,6 +47,13 @@ enum DayOfWeek: int implements HasLabel, HasColor, HasIcon, HasDescription
     {
         return Carbon::create()->startOfWeek()->addDays($this->value - 1)->locale('it')->isoFormat('dddd');
 >>>>>>> aurmich/dev
+=======
+    public function getLabel(): string
+    {
+        $carbon = Carbon::now()->startOfWeek()->addDays($this->value - 1);
+        $carbon->locale('it');
+        return (string) $carbon->isoFormat('dddd');
+>>>>>>> 345f8677 (phpstan)
     }
 
     /**
@@ -53,10 +61,14 @@ enum DayOfWeek: int implements HasLabel, HasColor, HasIcon, HasDescription
      * Implementazione dell'interfaccia HasColor di Filament.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getColor(): string
 =======
     public function getColor(): string|array|null
 >>>>>>> aurmich/dev
+=======
+    public function getColor(): string
+>>>>>>> 345f8677 (phpstan)
     {
         return match($this) {
             self::MONDAY => 'primary',
@@ -74,10 +86,14 @@ enum DayOfWeek: int implements HasLabel, HasColor, HasIcon, HasDescription
      * Implementazione dell'interfaccia HasIcon di Filament.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getIcon(): string
 =======
     public function getIcon(): ?string
 >>>>>>> aurmich/dev
+=======
+    public function getIcon(): string
+>>>>>>> 345f8677 (phpstan)
     {
         return match($this) {
             self::MONDAY => 'heroicon-o-calendar',
@@ -95,10 +111,14 @@ enum DayOfWeek: int implements HasLabel, HasColor, HasIcon, HasDescription
      * Implementazione dell'interfaccia HasDescription di Filament.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getDescription(): string
 =======
     public function getDescription(): ?string
 >>>>>>> aurmich/dev
+=======
+    public function getDescription(): string
+>>>>>>> 345f8677 (phpstan)
     {
         return match($this) {
             self::MONDAY => __('saluteora::common.days.description.monday'),
@@ -117,12 +137,18 @@ enum DayOfWeek: int implements HasLabel, HasColor, HasIcon, HasDescription
     public function shortLabel(): string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $carbon = Carbon::now()->startOfWeek()->addDays($this->value - 1);
         $carbon->locale('it');
         return (string) $carbon->isoFormat('ddd');
 =======
         return Carbon::create()->startOfWeek()->addDays($this->value - 1)->locale('it')->isoFormat('ddd');
 >>>>>>> aurmich/dev
+=======
+        $carbon = Carbon::now()->startOfWeek()->addDays($this->value - 1);
+        $carbon->locale('it');
+        return (string) $carbon->isoFormat('ddd');
+>>>>>>> 345f8677 (phpstan)
     }
 
     /**
@@ -133,21 +159,28 @@ enum DayOfWeek: int implements HasLabel, HasColor, HasIcon, HasDescription
     public static function toArray(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 345f8677 (phpstan)
         $result = [];
         foreach (self::cases() as $case) {
             $result[$case->value] = $case->getLabel();
         }
         return $result;
+<<<<<<< HEAD
 =======
         return collect(self::cases())->mapWithKeys(fn ($case) => [
             $case->value => $case->getLabel()
         ])->toArray();
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 345f8677 (phpstan)
     }
 
     /**
      * Restituisce una collezione dei giorni lavorativi (lunedì-venerdì).
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @return Collection<int, self>
      */
@@ -163,11 +196,21 @@ enum DayOfWeek: int implements HasLabel, HasColor, HasIcon, HasDescription
     {
         return collect(self::cases())->filter(fn ($day) => $day->value <= 5);
 >>>>>>> aurmich/dev
+=======
+     * @return Collection<int, self>
+     */
+    public static function workingDays(): Collection
+    {
+        /** @var Collection<int, self> $filtered */
+        $filtered = collect(self::cases())->filter(fn (self $day): bool => $day->value <= 5);
+        return $filtered;
+>>>>>>> 345f8677 (phpstan)
     }
 
     /**
      * Restituisce una collezione dei giorni del weekend (sabato-domenica).
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @return Collection<int, self>
      */
@@ -183,6 +226,15 @@ enum DayOfWeek: int implements HasLabel, HasColor, HasIcon, HasDescription
     {
         return collect(self::cases())->filter(fn ($day) => $day->value > 5);
 >>>>>>> aurmich/dev
+=======
+     * @return Collection<int, self>
+     */
+    public static function weekendDays(): Collection
+    {
+        /** @var Collection<int, self> $filtered */
+        $filtered = collect(self::cases())->filter(fn (self $day): bool => $day->value > 5);
+        return $filtered;
+>>>>>>> 345f8677 (phpstan)
     }
 
     /**

@@ -198,7 +198,11 @@ class GeoDataService
         }
 
         /** @var Collection<int, array> $result */
+<<<<<<< HEAD
         $result = new Collection($data['regions']);
+=======
+        $result = collect($data['regions']);
+>>>>>>> 345f8677 (phpstan)
 
         return $result;
     }

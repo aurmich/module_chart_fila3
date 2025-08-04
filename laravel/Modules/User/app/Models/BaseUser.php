@@ -337,10 +337,14 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
      * Get the socialite users associated with the user.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return HasMany<SocialiteUser, $this>
 =======
      * @return HasMany<SocialiteUser, static>
 >>>>>>> aurmich/dev
+=======
+     * @return HasMany<SocialiteUser, $this>
+>>>>>>> 345f8677 (phpstan)
      */
     public function socialiteUsers(): HasMany
     {

@@ -14,10 +14,14 @@ use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\Permission\Traits\HasRoles;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttributes;
 =======
 use Spatie\SchemalessAttributes\HasSchemalessAttributes;
 >>>>>>> aurmich/dev
+=======
+use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttributes;
+>>>>>>> 345f8677 (phpstan)
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 
@@ -89,6 +93,9 @@ class Profile extends BaseProfile implements HasMedia
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 345f8677 (phpstan)
      * The schemaless attributes.
      *
      * @var list<string>
@@ -98,13 +105,17 @@ class Profile extends BaseProfile implements HasMedia
     ];
 
     /**
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 345f8677 (phpstan)
      * The table associated with the model.
      *
      * @var string
      */
     protected $table = 'profiles';
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -291,4 +302,6 @@ class Profile extends BaseProfile implements HasMedia
         return ProfileFactory::new();
     }
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 345f8677 (phpstan)
 }

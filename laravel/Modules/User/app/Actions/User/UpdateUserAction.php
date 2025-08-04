@@ -58,6 +58,7 @@ class UpdateUserAction
             
             Log::info("Utente aggiornato con successo", [
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'user_id' => $user->getKey(),
                 'updated_fields' => array_keys($updateData)
             ]);
@@ -75,16 +76,32 @@ class UpdateUserAction
             
             return $user->fresh();
 >>>>>>> aurmich/dev
+=======
+                'user_id' => $user->getKey(),
+                'updated_fields' => array_keys($updateData)
+            ]);
+            
+            $updatedUser = $user->fresh();
+            if (!$updatedUser instanceof Model) {
+                throw new \Exception('Failed to refresh user model after update');
+            }
+            
+            return $updatedUser;
+>>>>>>> 345f8677 (phpstan)
             
         } catch (\Exception $e) {
             DB::rollBack();
             
             Log::error("Errore nell'aggiornamento utente", [
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'user_id' => $user->getKey(),
 =======
                 'user_id' => $user->id ?? null,
 >>>>>>> aurmich/dev
+=======
+                'user_id' => $user->getKey(),
+>>>>>>> 345f8677 (phpstan)
                 'error' => $e->getMessage(),
                 'data' => $updateData ?? []
             ]);
@@ -120,21 +137,29 @@ class UpdateUserAction
             } else {
                 // Hash della password se presente
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $updateData['password'] = Hash::make(SafeStringCastAction::cast($updateData['password']));
 =======
                 $updateData['password'] = Hash::make($updateData['password']);
 >>>>>>> aurmich/dev
+=======
+                $updateData['password'] = Hash::make((string) $updateData['password']);
+>>>>>>> 345f8677 (phpstan)
             }
         }
         
         // Gestione dell'email per evitare duplicati
         if (isset($updateData['email'])) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             $email = SafeStringCastAction::cast($updateData['email']);
             $updateData['email'] = strtolower($email);
 =======
             $updateData['email'] = strtolower($updateData['email']);
 >>>>>>> aurmich/dev
+=======
+            $updateData['email'] = strtolower((string) $updateData['email']);
+>>>>>>> 345f8677 (phpstan)
         }
         
         return $updateData;
@@ -156,10 +181,14 @@ class UpdateUserAction
             $existingUser = $user->newQuery()
                 ->where('email', $data['email'])
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ->where('id', '!=', $user->getKey())
 =======
                 ->where('id', '!=', $user->id)
 >>>>>>> aurmich/dev
+=======
+                ->where('id', '!=', $user->getKey())
+>>>>>>> 345f8677 (phpstan)
                 ->first();
                 
             if ($existingUser) {

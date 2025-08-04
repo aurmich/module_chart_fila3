@@ -75,10 +75,14 @@ class Login extends Component implements HasForms
                 ->autofocus()
                 ->live()
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ->afterStateUpdated(fn ($state) => $this->validateOnly('email'))
 =======
                 ->afterStateUpdated(fn ($state) => $this->validateEmail($state))
 >>>>>>> aurmich/dev
+=======
+                ->afterStateUpdated(fn ($state) => $this->validateOnly('email'))
+>>>>>>> 345f8677 (phpstan)
                 ->dehydrated(),
 
             TextInput::make('password')

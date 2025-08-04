@@ -65,9 +65,13 @@ enum TelegramDriverEnum: string
         $default = config('telegram.default', self::TELEGRAM->value);
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         return self::from(is_string($default) ? $default : self::TELEGRAM->value);
 =======
         return self::from($default);
 >>>>>>> aurmich/dev
+=======
+        return self::from((string) $default);
+>>>>>>> 345f8677 (phpstan)
     }
 }

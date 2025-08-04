@@ -62,10 +62,14 @@ class MailTemplateResource extends LangBaseResource
                 ->viewData(fn ($record) => ['params' => $record?->params])
                 ->columnSpanFull()
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ->visible(fn ($record): bool => !empty($record->params)),
 =======
                 ->visible(fn ($record): bool => !empty($record?->params)),
 >>>>>>> aurmich/dev
+=======
+                ->visible(fn ($record): bool => !empty($record->params)),
+>>>>>>> 345f8677 (phpstan)
 
            
 

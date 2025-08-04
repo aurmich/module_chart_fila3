@@ -30,9 +30,12 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
  * - Facilmente estendibile (2FA, captcha, login social)
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @property-read static string $view La view del widget segue il pattern {module}::filament.widgets.{type}
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 345f8677 (phpstan)
  * @property array<string, mixed>|null $data
  */
 class LoginWidget extends XotBaseWidget
@@ -91,10 +94,14 @@ class LoginWidget extends XotBaseWidget
      * Get the form model.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return \Illuminate\Database\Eloquent\Model|null
 =======
      * @return \Illuminate\Database\Eloquent\Model|string|null
 >>>>>>> aurmich/dev
+=======
+     * @return \Illuminate\Database\Eloquent\Model|null
+>>>>>>> 345f8677 (phpstan)
      */
     protected function getFormModel(): ?\Illuminate\Database\Eloquent\Model
     {
@@ -182,10 +189,14 @@ class LoginWidget extends XotBaseWidget
             $this->form->fill();
             $this->form->saveRelationships();
 <<<<<<< HEAD
+<<<<<<< HEAD
             //$this->form->callAfter();
 =======
             $this->form->callAfter();
 >>>>>>> aurmich/dev
+=======
+            //$this->form->callAfter();
+>>>>>>> 345f8677 (phpstan)
             
             $this->addError('email', __('Si è verificato un errore durante il login. Riprova più tardi.'));
         }

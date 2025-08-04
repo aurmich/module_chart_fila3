@@ -12,10 +12,14 @@ class EditNotificationTemplate extends XotBaseEditRecord
 {
     protected static string $resource = NotificationTemplateResource::class;
 <<<<<<< HEAD
+<<<<<<< HEAD
     /*
 =======
 
 >>>>>>> aurmich/dev
+=======
+    /*
+>>>>>>> 345f8677 (phpstan)
     protected function getRedirectUrl(): string
     {
         return $this->getResource()::getUrl('index');
@@ -32,8 +36,13 @@ class EditNotificationTemplate extends XotBaseEditRecord
         return $data;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     */
 } 
 =======
 } 
 >>>>>>> aurmich/dev
+=======
+    */
+} 
+>>>>>>> 345f8677 (phpstan)

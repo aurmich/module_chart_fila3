@@ -23,11 +23,17 @@ class ViewSection extends LangBaseViewRecord
         //$view='pub_theme::components.sections.'.$this->record->slug;
         $view='cms::sections.preview';
 <<<<<<< HEAD
+<<<<<<< HEAD
         if(!view()->exists($view)){
             throw new \Exception('View '.$view.' not found');
         }
 =======
 >>>>>>> aurmich/dev
+=======
+        if(!view()->exists($view)){
+            throw new \Exception('View '.$view.' not found');
+        }
+>>>>>>> 345f8677 (phpstan)
         return [
             Section::make('Anteprima')
                 ->schema([

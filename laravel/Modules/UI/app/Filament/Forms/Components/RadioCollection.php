@@ -83,6 +83,7 @@ class RadioCollection extends Field
     /**
      * Comparazione type-safe per determinare se un'opzione è selezionata.
 <<<<<<< HEAD
+<<<<<<< HEAD
      * 
      * @param mixed $option
      * @return bool
@@ -95,6 +96,11 @@ class RadioCollection extends Field
         /** @phpstan-ignore-next-line */
         $optionValue = SafeStringCastAction::cast($optionData);
 =======
+=======
+     * 
+     * @param mixed $option
+     * @return bool
+>>>>>>> 345f8677 (phpstan)
      */
     public function isOptionSelected($option): bool
     {

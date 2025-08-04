@@ -152,25 +152,14 @@ class RegistrationWidget extends XotBaseWidget
 =======
     public function getFormFill(): array
     {
-
-        //$model=$this->getFormModel();
-        //$studio=\Modules\SaluteOra\Models\Studio::inRandomOrder()->first();
-        //$model->studio()->save($studio);
-        
-       
         $data = [];
         
-        /*
-        $data['studio']=[];
-        $data['studio']['description'] = null;
-        $data['studio']['address']=[];
-        $data['studio']['address']['administrative_area_level_1'] = null;
-        $data['studio']['address']['administrative_area_level_2'] = null;
-        $data['studio']['address']['administrative_area_level_3'] = null;
-        $data['studio']['address']['locality'] = null;
-        $data['studio']['address']['postal_code'] = null;
-        */
-        $data = array_merge($data,parent::getFormFill() );
+        // Ottieni i dati dal parent e assicurati che sia sempre un array
+        $parentData = parent::getFormFill();
+        //if (is_array($parentData)) {
+            $data = array_merge($data, $parentData);
+        //}
+        
         $data['type'] = $this->type;
         return $data;
     }
@@ -192,6 +181,7 @@ class RegistrationWidget extends XotBaseWidget
         return redirect()->route('pages.view', ['slug' => $this->type . '_register_complete']);
 =======
         $record = $this->record;
+        /** @phpstan-ignore-next-line */
         $data=array_merge($this->data,$data);
         if(!isset($data['name']) && isset($data['email'])){
             $data['name']=Str::of($data['email'])->before('@')->toString();

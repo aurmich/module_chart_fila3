@@ -165,6 +165,7 @@ enum ConsentType: string
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
     /**
@@ -183,4 +184,7 @@ enum ConsentType: string
         return $result;
     }
 >>>>>>> aurmich/dev
+=======
+    
+>>>>>>> 345f8677 (phpstan)
 }

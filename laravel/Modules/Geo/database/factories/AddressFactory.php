@@ -46,13 +46,20 @@ class AddressFactory extends Factory
         // Seleziona una città casuale
         /** @var string $cityName */
         $cityName = $this->faker->randomElement(array_keys($italianCities));
+        /** @var array<string, mixed> $cityData */
         $cityData = $italianCities[$cityName];
         
         // Aggiungi variazione alle coordinate (±0.05 gradi per simulare diversi indirizzi nella stessa città)
         /** @var float $lat */
+<<<<<<< HEAD
         $lat = (float) $cityData['lat'];
         /** @var float $lng */
         $lng = (float) $cityData['lng'];
+=======
+        $lat = $cityData['lat'];
+        /** @var float $lng */
+        $lng = $cityData['lng'];
+>>>>>>> 345f8677 (phpstan)
         $latitude = $lat + $this->faker->randomFloat(4, -0.05, 0.05);
         $longitude = $lng + $this->faker->randomFloat(4, -0.05, 0.05);
         

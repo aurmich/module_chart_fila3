@@ -22,6 +22,7 @@ final class SendSmsFactorSMSAction implements SmsActionContract
     use QueueableAction;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @var SmsFactorData */
     private SmsFactorData $smsFactorData;
 
@@ -34,13 +35,30 @@ final class SendSmsFactorSMSAction implements SmsActionContract
     /** @var string|null */
     protected ?string $defaultSender = null;
 =======
+=======
+    /** @var string */
+>>>>>>> 345f8677 (phpstan)
     private string $token;
+
+    /** @var string */
     private string $baseUrl;
+
+    /** @var array<string, mixed> */
     private array $vars = [];
+
+    /** @var bool */
     protected bool $debug;
+
+    /** @var int */
     protected int $timeout;
+<<<<<<< HEAD
     protected ?string $defaultSender;
 >>>>>>> aurmich/dev
+=======
+
+    /** @var string|null */
+    protected ?string $defaultSender = null;
+>>>>>>> 345f8677 (phpstan)
 
     /**
      * Create a new action instance.
@@ -72,7 +90,8 @@ final class SendSmsFactorSMSAction implements SmsActionContract
         $this->baseUrl = $config['base_url'] ?? 'https://api.smsfactor.com';
 
         // Parametri a livello di root
-        $this->defaultSender = config('sms.from');
+        $sender = config('sms.from');
+        $this->defaultSender = is_string($sender) ? $sender : null;
         $this->debug = (bool) config('sms.debug', false);
         $this->timeout = (int) config('sms.timeout', 30);
 >>>>>>> aurmich/dev
@@ -106,14 +125,19 @@ final class SendSmsFactorSMSAction implements SmsActionContract
         ];
 
         // Normalizza il numero di telefono
-        $smsData->to .= '';
-        if (Str::startsWith($smsData->to, '00')) {
-            $smsData->to = '+' . mb_substr($smsData->to, 2);
+        $to = (string) $smsData->to;
+        if (Str::startsWith($to, '00')) {
+            $to = $to !== '' ? ('+' . substr($to, 2)) : $to;
         }
 
+<<<<<<< HEAD
         if (!Str::startsWith($smsData->to, '+')) {
             $smsData->to = '+39' . $smsData->to;
 >>>>>>> aurmich/dev
+=======
+        if (!Str::startsWith($to, '+')) {
+            $to = '+39' . $to;
+>>>>>>> 345f8677 (phpstan)
         }
 
         $body = [
@@ -122,10 +146,14 @@ final class SendSmsFactorSMSAction implements SmsActionContract
             'recipients' => [
                 [
 <<<<<<< HEAD
+<<<<<<< HEAD
                     'phone' => $to,
 =======
                     'phone' => $smsData->to,
 >>>>>>> aurmich/dev
+=======
+                    'phone' => $to,
+>>>>>>> 345f8677 (phpstan)
                 ],
             ],
             'type' => 'sms',

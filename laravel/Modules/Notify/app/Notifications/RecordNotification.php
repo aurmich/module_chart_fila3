@@ -28,13 +28,19 @@ class RecordNotification extends Notification
 
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 345f8677 (phpstan)
     /** 
      * @param object $notifiable
      * @return array<string|class-string>
      */
+<<<<<<< HEAD
 =======
 
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 345f8677 (phpstan)
     public function via($notifiable): array
     {
         $channels = [];
@@ -52,10 +58,14 @@ class RecordNotification extends Notification
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 345f8677 (phpstan)
     /**
      * @param object $notifiable
      * @return SpatieEmail
      */
+<<<<<<< HEAD
     public function toMail($notifiable): SpatieEmail
     {
         
@@ -65,6 +75,8 @@ class RecordNotification extends Notification
         $email=$email->addAttachments($this->attachments);
         
 =======
+=======
+>>>>>>> 345f8677 (phpstan)
     public function toMail($notifiable): SpatieEmail
     {
         $email = new SpatieEmail($this->record, $this->slug);
@@ -131,13 +143,13 @@ class RecordNotification extends Notification
         // If the notifiable entity has a routeNotificationForSms method,
         // we'll use that to get the destination phone number
         //dddx($notifiable);//Illuminate\Notifications\AnonymousNotifiable
-
+        $to=null;
         if (method_exists($notifiable, 'routeNotificationFor')) {
             $to = $notifiable->routeNotificationFor('sms');
         }
-        //if($to==null){
-        //    return null;
-        //}
+        if($to==null){
+            return null;
+        }
 
         $smsData = SmsData::from(['from'=>'Xot','to'=>$to,'body'=>'test']);
 >>>>>>> aurmich/dev
