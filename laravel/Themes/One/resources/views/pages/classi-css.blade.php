@@ -336,5 +336,10 @@
 >>>>>>> f2140a80 (- continuo style landing page;)
 =======
 <div class="bg-gradient-to-white from-[#1A467F]">Gradient</div>
+<<<<<<< HEAD
 </x-layouts.app>
 >>>>>>> 8acca8e8 (- continuo style pagina di registrazione;)
+=======
+<div class="h-96"></div>
+</x-layouts.app>
+>>>>>>> cecdd8e5 (- rename file dettaglio-paziente;)

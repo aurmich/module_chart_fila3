@@ -16,6 +16,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "file": "assets/app-7PoISLAE.css",
 =======
 <<<<<<< HEAD
@@ -142,6 +143,9 @@
 =======
     "file": "assets/app-DpVlLzWv.css",
 >>>>>>> c9dfd052 (style: update CSS styles for improved consistency and readability across the application)
+=======
+    "file": "assets/app-B1ErEWAr.css",
+>>>>>>> cecdd8e5 (- rename file dettaglio-paziente;)
     "src": "resources/css/app.css",
     "isEntry": true
   },
