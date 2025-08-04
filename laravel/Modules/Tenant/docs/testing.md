@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Testing nel Modulo Tenant
 
 ## Introduzione
@@ -286,3 +287,6 @@ jobs:
 - [Struttura del Modulo](structure.md)
 - [Best Practices](README.md#best-practices)
 - [Documentazione PHPUnit](https://phpunit.de/documentation.html) 
+=======
+ 
+>>>>>>> eec4376e (📝 (README.md): update documentation to provide a comprehensive overview of the Tenant module and its architecture, principles, best practices, and integration guidelines to enhance understanding for developers)

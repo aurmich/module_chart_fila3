@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo Tenant - Modular Monolith
 
 ## Architettura Modular Monolith: Best Practices 2025
@@ -277,15 +278,226 @@ return [
 - [Documentazione Filament](filament_resources.md)
 =======
 # Modulo Tenant
+=======
+# Modulo Tenant - Modular Monolith
+>>>>>>> eec4376e (📝 (README.md): update documentation to provide a comprehensive overview of the Tenant module and its architecture, principles, best practices, and integration guidelines to enhance understanding for developers)
 
-## Panoramica
-Il modulo Tenant gestisce il multi-tenancy dell'applicazione, fornendo un sistema completo per la gestione di tenant multipli, isolamento dei dati e configurazioni specifiche per ogni tenant.
+## Introduzione
 
-### Versione HEAD
+Il modulo Tenant implementa un sistema di multi-tenancy seguendo l'approccio Modular Monolith, che combina i vantaggi dell'architettura modulare con la semplicità di un'applicazione monolitica.
 
+## Architettura
 
+<<<<<<< HEAD
 ### Versione Incoming
 >>>>>>> 54f4fa16 (.)
+=======
+### Principi Fondamentali
+
+1. **Isolamento dei Moduli**
+   - Ogni modulo è un'unità indipendente con le proprie:
+     - Migrazioni
+     - Modelli
+     - Controller
+     - Viste
+     - Test
+     - Configurazioni
+
+2. **Comunicazione tra Moduli**
+   - Eventi e Listener per comunicazione asincrona
+   - Service Provider per registrazione dei servizi
+   - Contracts per definire interfacce tra moduli
+
+3. **Gestione delle Dipendenze**
+   - Dipendenze esplicite tra moduli
+   - Uso di interfacce per il disaccoppiamento
+   - Iniezione delle dipendenze tramite Service Container
+
+### Struttura del Modulo
+
+```
+Tenant/
+├── Actions/           # Azioni di business logic
+├── Console/          # Comandi Artisan
+├── Contracts/        # Interfacce pubbliche
+├── Database/         # Migrazioni e seeders
+├── Events/           # Eventi del modulo
+├── Exceptions/       # Eccezioni personalizzate
+├── Http/             # Controller e Middleware
+├── Listeners/        # Listener per gli eventi
+├── Models/           # Modelli del modulo
+├── Providers/        # Service Provider
+├── Resources/        # Assets e viste
+├── Routes/           # Definizione delle rotte
+├── Services/         # Servizi del modulo
+└── Tests/            # Test unitari e di integrazione
+```
+
+## Best Practices
+
+### 1. Isolamento
+
+- Ogni modulo deve essere il più possibile indipendente
+- Evitare dipendenze circolari tra moduli
+- Utilizzare eventi per la comunicazione tra moduli
+- Definire interfacce chiare per l'interazione tra moduli
+
+### 2. Gestione delle Dipendenze
+
+```php
+// Service Provider del modulo
+public function register()
+{
+    $this->app->bind(TenantRepositoryInterface::class, TenantRepository::class);
+    $this->app->bind(TenantServiceInterface::class, TenantService::class);
+}
+```
+
+### 3. Eventi e Listener
+
+```php
+// Evento
+class TenantCreated
+{
+    public function __construct(public Tenant $tenant)
+    {
+    }
+}
+
+// Listener
+class HandleTenantCreated
+{
+    public function handle(TenantCreated $event): void
+    {
+        // Logica di gestione
+    }
+}
+```
+
+### 4. Contracts e Interfacce
+
+```php
+interface TenantRepositoryInterface
+{
+    public function findById(int $id): ?Tenant;
+    public function create(array $data): Tenant;
+    public function update(Tenant $tenant, array $data): bool;
+}
+```
+
+## Integrazione con Altri Moduli
+
+### 1. Service Provider
+
+```php
+class TenantServiceProvider extends ServiceProvider
+{
+    public function register()
+    {
+        // Registrazione dei servizi
+    }
+
+    public function boot()
+    {
+        // Caricamento delle configurazioni
+        $this->loadMigrationsFrom(__DIR__.'/../Database/Migrations');
+        $this->loadRoutesFrom(__DIR__.'/../Routes/web.php');
+    }
+}
+```
+
+### 2. Eventi tra Moduli
+
+```php
+// Nel modulo Tenant
+event(new TenantCreated($tenant));
+
+// Nel modulo User
+Event::listen(TenantCreated::class, function ($event) {
+    // Gestione della creazione del tenant
+});
+```
+
+## Testing
+
+### 1. Test Unitari
+
+```php
+class TenantTest extends TestCase
+{
+    public function test_can_create_tenant()
+    {
+        $tenant = Tenant::factory()->create();
+        $this->assertInstanceOf(Tenant::class, $tenant);
+    }
+}
+```
+
+### 2. Test di Integrazione
+
+```php
+class TenantIntegrationTest extends TestCase
+{
+    public function test_tenant_creation_triggers_events()
+    {
+        Event::fake();
+        
+        $tenant = Tenant::factory()->create();
+        
+        Event::assertDispatched(TenantCreated::class);
+    }
+}
+```
+
+## Deployment
+
+### 1. Migrazioni
+
+- Le migrazioni sono caricate automaticamente dal Service Provider
+- Utilizzare il comando `php artisan migrate` per applicare le migrazioni
+
+### 2. Configurazione
+
+```php
+// config/tenant.php
+return [
+    'default' => env('TENANT_CONNECTION', 'tenant'),
+    'connections' => [
+        'tenant' => [
+            'driver' => 'mysql',
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'forge'),
+            'username' => env('DB_USERNAME', 'forge'),
+            'password' => env('DB_PASSWORD', ''),
+        ],
+    ],
+];
+```
+
+## Manutenzione
+
+### 1. Aggiornamenti
+
+- Mantenere le dipendenze aggiornate
+- Testare gli aggiornamenti in ambiente di sviluppo
+- Documentare le modifiche breaking
+
+### 2. Debugging
+
+- Utilizzare il logging per tracciare le operazioni
+- Implementare monitoraggio delle performance
+- Gestire correttamente le eccezioni
+
+## Collegamenti Correlati
+
+- [Struttura del Modulo](structure.md)
+- [Gestione dei Pacchetti](packages.md)
+- [Risoluzione dei Conflitti](risoluzione_conflitti.md)
+- [Roadmap](roadmap.md)
+- [Documentazione Filament](filament_resources.md)
+>>>>>>> eec4376e (📝 (README.md): update documentation to provide a comprehensive overview of the Tenant module and its architecture, principles, best practices, and integration guidelines to enhance understanding for developers)
 
 ## Collegamenti correlati
 - [README.md documentazione generale](../../../docs/README.md)
