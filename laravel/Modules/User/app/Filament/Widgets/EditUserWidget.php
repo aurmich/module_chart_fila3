@@ -35,8 +35,11 @@ use Illuminate\Support\Facades\Log;
  * Il widget è completamente generico e riutilizzabile per qualsiasi tipo di utente.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * 
 =======
+=======
+>>>>>>> b94d1b23 (✨ (User Module): introduce UpdateUserAction for doctor-specific user updates)
  *
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
  * @property-read string $type
@@ -78,7 +81,17 @@ class EditUserWidget extends XotBaseWidget
 >>>>>>> b58de900 (.)
 =======
     
+<<<<<<< HEAD
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+=======
+ */
+class EditUserWidget extends XotBaseWidget
+{
+    public ?array $data = [];
+    protected int | string | array $columnSpan = 'full';
+>>>>>>> 999c8e14 (✨ (User Module): introduce EditUserWidget for user data modification)
+>>>>>>> b94d1b23 (✨ (User Module): introduce UpdateUserAction for doctor-specific user updates)
     public string $type;
     public string $resource;
     public string $model;
@@ -95,6 +108,7 @@ class EditUserWidget extends XotBaseWidget
 >>>>>>> aurmich/dev
     protected static string $view = 'pub_theme::filament.widgets.edit-user';
 
+<<<<<<< HEAD
     /**
      * Initialize the widget with user type and optional user ID.
      *
@@ -103,6 +117,7 @@ class EditUserWidget extends XotBaseWidget
      * @return void
      */
 =======
+<<<<<<< HEAD
     
     protected static string $view = 'pub_theme::filament.widgets.edit-user';
 
@@ -117,6 +132,9 @@ class EditUserWidget extends XotBaseWidget
      * @return void
      */
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+>>>>>>> 999c8e14 (✨ (User Module): introduce EditUserWidget for user data modification)
+>>>>>>> b94d1b23 (✨ (User Module): introduce UpdateUserAction for doctor-specific user updates)
     public function mount(string $type, ?int $userId = null): void
     {
         $this->type = $type;
@@ -138,9 +156,14 @@ class EditUserWidget extends XotBaseWidget
      * Se viene fornito un userId, carica quell'utente, altrimenti usa l'utente autenticato.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b94d1b23 (✨ (User Module): introduce UpdateUserAction for doctor-specific user updates)
      *
      * @param int|null $userId
      * @return Model
+=======
+>>>>>>> 999c8e14 (✨ (User Module): introduce EditUserWidget for user data modification)
      */
     protected function getFormModel(?int $userId = null): Model
 =======
@@ -180,6 +203,7 @@ class EditUserWidget extends XotBaseWidget
      * Ottiene i dati per il riempimento del form.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return array<string, mixed>
 =======
@@ -188,6 +212,12 @@ class EditUserWidget extends XotBaseWidget
      *
      * @return array<string, mixed>
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+     *
+     * @return array<string, mixed>
+=======
+>>>>>>> 999c8e14 (✨ (User Module): introduce EditUserWidget for user data modification)
+>>>>>>> b94d1b23 (✨ (User Module): introduce UpdateUserAction for doctor-specific user updates)
      */
     public function getFormFill(): array
     {
@@ -235,6 +265,7 @@ class EditUserWidget extends XotBaseWidget
      * Ottiene lo schema del form dalla resource.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return array<int|string, \Filament\Forms\Components\Component>
 =======
@@ -243,6 +274,12 @@ class EditUserWidget extends XotBaseWidget
      *
      * @return array<string, mixed>
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+     *
+     * @return array<string, mixed>
+=======
+>>>>>>> 999c8e14 (✨ (User Module): introduce EditUserWidget for user data modification)
+>>>>>>> b94d1b23 (✨ (User Module): introduce UpdateUserAction for doctor-specific user updates)
      */
     public function getFormSchema(): array
     {
@@ -255,6 +292,7 @@ class EditUserWidget extends XotBaseWidget
      * @see https://filamentphp.com/docs/3.x/forms/adding-a-form-to-a-livewire-component
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return \Illuminate\Http\RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
 =======
@@ -263,6 +301,12 @@ class EditUserWidget extends XotBaseWidget
      *
      * @return \Illuminate\Http\RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+     *
+     * @return \Illuminate\Http\RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
+=======
+>>>>>>> 999c8e14 (✨ (User Module): introduce EditUserWidget for user data modification)
+>>>>>>> b94d1b23 (✨ (User Module): introduce UpdateUserAction for doctor-specific user updates)
      */
     public function updateUser(): \Illuminate\Http\RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
     {
@@ -285,6 +329,7 @@ class EditUserWidget extends XotBaseWidget
      * Controlla se l'utente può modificare il record corrente.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return bool
 =======
@@ -293,6 +338,12 @@ class EditUserWidget extends XotBaseWidget
      *
      * @return bool
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+     *
+     * @return bool
+=======
+>>>>>>> 999c8e14 (✨ (User Module): introduce EditUserWidget for user data modification)
+>>>>>>> b94d1b23 (✨ (User Module): introduce UpdateUserAction for doctor-specific user updates)
      */
     public function canEdit(): bool
     {
@@ -319,6 +370,7 @@ class EditUserWidget extends XotBaseWidget
             $currentUser->id === $this->record->user_id ?? null
         );
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 } 
 >>>>>>> b58de900 (.)
@@ -573,4 +625,9 @@ class EditUserWidget extends XotBaseWidget implements HasForms
     }
 =======
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+>>>>>>> b94d1b23 (✨ (User Module): introduce UpdateUserAction for doctor-specific user updates)
 }
+=======
+} 
+>>>>>>> 999c8e14 (✨ (User Module): introduce EditUserWidget for user data modification)
