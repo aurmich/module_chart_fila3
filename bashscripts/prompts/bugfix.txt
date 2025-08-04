@@ -18,6 +18,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Guida Completa per Bug Fixing - Laraxot SaluteOra
 =======
 Please remember ___ @Memory . Prima di correggere un errore, comprendi la causa, aggiorna la documentazione nella cartella docs più vicina all'errore (esclusa la cartella docs della root), crea collegamenti bidirezionali ai file della cartella docs principale, studia approfonditamente le cartelle docs coinvolte prima di implementare qualsiasi correzione; procedi con le correzioni secondo un ordine di priorità che ritieni opportuno; ricorda che il namespace corretto è Modules<nome modulo>\Filament e non Modules<nome modulo>\App\Filament anche quando lavori nella cartella laravel/Modules/<nome modulo>/app/Filament; utilizza i file di traduzione del modulo dentro Modules/<nome modulo>/lang/<lingua> anziché ->label(); le regole generali vanno documentate nella cartella docs del modulo Xot con collegamenti bidirezionali dagli altri moduli; gli elementi frontend vanno nel modulo Cms; ogni modulo ha uno scopo specifico; aggiorna continuamente la tua comprensione delle cartelle docs, delle regole e delle memorie; quando modifichi file, progettali pensando che dovranno superare controlli di qualità elevati in futuro; segui i principi DRY (Don't Repeat Yourself) e KISS (Keep It Simple, Stupid); considera sempre le implicazioni di politica, filosofia, religione e zen nelle tue soluzioni; quando trovi un errore, correggi tutti i file che contengono lo stesso problema. Non estendiamo mai classi filament direttamente, estendiamo sempre una classe astratta con lo stesso nome ma con il prefisso XotBase , rispettiamo anche la struttura del namespace di filament che per esempio se una classe estendeva \Filament\Resources\Pages\Page  ora estenderà Modules\Xot\Filament\Resources\Pages\XotBasePage. non usiamo ->label( perche' tramite langserviceprovider utilizziamo direttamente i files di traduzioni all'interno del modulo, chi estende XotBaseResource non vuole getTableColumn ne getTableFilters ne getBulkActions ne table e se getPages restituisce solo index,create,edit o index,create,edit,view togliamo anche il metodo getPages, se in un form la select ha degli options che sono un array, passare agli enum, il namespace non e' Modules\<nome>\App\  ma e' Modules\<nome>\, i metodi getFormSchema,getTableActions,getTableColumns,getTableFilters,getTableBulkActions restituiscono sempre un array associativo in cui le chiavi sono stringhe, devi ragionare sul perche' , capire il tuo errore, aggiornare/studiare le cartelle docs coinvolte, aggiorna le tue rules, le tue memories, .windsurf/rules, .cursor/rules, .cursor/memories, fa tutto il possibile per non fare mai piu' questo errore, e poi implementa correzione, dopo correggi sempre gli altri file che hanno lo stesso errore. questa correzzione devi capire il perche' devi analizzare in quale punto del codice viene fatto, documentare il tutto nelle cartelle docs coinvolte, creare aggiornare i files .mdc, ti ricordo che i files .mdc vanno dentro .windsurf/rules  e dentro .cursor/rules questi percordi dalla root del progetto, aggiornare tutto quello che serve per cursor , per windsurf e per te per ricordare e poi correggi. le classi che estendono \Filament\Resources\Pages\ListRecords devono ora estendere \Modules\Xot\Filament\Resources\Pages\XotBaseListRecords, le classi che estendevano \Filament\Resources\Pages\ListRecords  ora estendono \Modules\Xot\Filament\Resources\Pages\XotBaseListRecords , non XotBasePage, ti ricordo che protected $casts e' deprecato, e' deprecato anche protected $dates , dentro le cartelle docs i files e le sottocartelle non devono contenere caratteri maiuscoli ad eccezzione di README.md
@@ -174,6 +175,107 @@ Un errore `ParseError: syntax error, unexpected token "protected", expecting end
 3. **Eliminare se inutile**: Se il metodo non serve più, eliminarlo
 
 ### Esempio Corretto
+=======
+# Bug Fixing Guidelines and Best Practices
+
+## Core Principles
+- Always analyze the root cause through thorough code and context analysis
+- Follow a systematic approach to bug resolution
+- Maintain documentation integrity throughout the process
+- Respect module boundaries and responsibilities
+
+## Documentation Process
+1. **Before Making Changes**
+   - Study the documentation in the module's `docs` folder (not the root `docs`)
+   - Create bidirectional links between module and root documentation
+   - Update relevant documentation before implementing fixes
+
+## Code Organization
+- **Namespace Structure**:
+  - Use `Modules\<module>\` (NOT `Modules\<module>\App\`)
+  - Filament components: `Modules\<module>\Filament`
+  - Never extend Filament classes directly - use XotBase classes
+
+## Translation Guidelines
+- **Never** use `->label()` directly
+- Use the LangServiceProvider for all translations
+- Store translations in: `Modules/<module>/lang/<language>/`
+- Follow the expanded translation structure
+
+## Common Fix Patterns
+1. **Resource Classes**:
+   - Remove `getTableColumn`, `getTableFilters`, `getBulkActions` if empty
+   - Remove `getPages` if it only returns default pages
+   - Use associative arrays with string keys for all methods
+
+2. **Form Handling**:
+   - Convert array options to enums for type safety
+   - Use proper validation rules
+   - Implement proper error handling
+
+## Implementation Strategy
+1. **Analysis Phase**:
+   - Understand the error context
+   - Check related components
+   - Review recent changes
+
+2. **Documentation Update**:
+   - Update module documentation
+   - Create/update root documentation
+   - Add bidirectional links
+
+3. **Implementation**:
+   - Follow DRY and KISS principles
+   - Consider architectural implications
+   - Maintain backward compatibility
+
+4. **Testing**:
+   - Test the fix
+   - Check for regressions
+   - Update tests if needed
+
+## Quality Assurance
+- Run PHPStan (level 10)
+- Ensure PSR-12 compliance
+- Verify type safety
+- Check for security implications
+
+## Best Practices
+- Keep changes minimal and focused
+- Document decisions and rationale
+- Consider performance implications
+- Follow the principle of least surprise
+
+## Common Pitfalls to Avoid
+- Direct Filament class extensions
+- Hardcoded strings and labels
+- Ignoring module boundaries
+- Skipping documentation updates
+
+## Review Process
+- Self-review changes
+- Check for similar issues in the codebase
+- Update relevant documentation
+- Consider creating automated tests
+
+# Gestione ParseError: metodi fuori dalla classe in PHP
+
+## Causa
+Un errore di tipo `ParseError: syntax error, unexpected token "protected", expecting end of file` si verifica quando una funzione (es. `protected function getUserTypeOptions()`) viene dichiarata **fuori dal blocco della classe**. Questo accade spesso dopo una parentesi graffa di chiusura `}` della classe, lasciando il metodo "orfano".
+
+## Soluzione
+- Spostare sempre i metodi all'interno della classe corretta.
+- Verificare che la parentesi graffa di chiusura della classe sia l'ultima istruzione del file.
+- Se il metodo non serve più, eliminarlo.
+
+## Best Practice
+- Ogni funzione/membro deve essere dichiarato **all'interno** della classe.
+- La chiusura della classe (`}`) deve essere l'ultima istruzione del file.
+- Dopo ogni refactor, controllare che non restino metodi orfani.
+- Usare sempre editor con linting attivo per prevenire errori di sintassi.
+
+## Esempio (corretto)
+>>>>>>> b9902ce9 (feat: add revoke module to console command)
 ```php
 class Example {
     public function foo() {}
@@ -181,6 +283,7 @@ class Example {
 } // <--- questa DEVE essere l'ultima parentesi graffa
 ```
 
+<<<<<<< HEAD
 ## Processo di Revisione
 
 ### Auto-Revisione
@@ -320,3 +423,42 @@ Please remember ___ @Memory . Prima di correggere qualsiasi errore, è fondament
 Best Practices & Architectural Guidelines Processo di Correzione Errori 1. Analisi della Causa Radice - Analizzare stack trace e contesto - Comprendere il flusso di esecuzione 2. Documentazione docs/ ├── modulo_correlato/ # Aggiornare prima qui └── _links/ # Collegamenti bidirezionali 3. Implementazione - Correggere in ordine di priorità - Applicare fix a tutti i casi simili 4. Verifica - Test di regressione - Check cross-module Struttura del Progetto Namespace // Corretto Modules\Blog\Filament\Resources\PostResource // Da evitare Modules\Blog\App\Filament\Resources\PostResource Service Providers class BlogServiceProvider extends XotBaseServiceProvider { // Non estendere mai Illuminate\Support\ServiceProvider } Frontend - Tutti gli elementi UI vanno nel modulo Cms - Componenti riutilizzabili in Cms\Components Gestione File Media Library // Sostituire FileUpload con: use Filament\SpatieMediaLibrary\Forms\Components\SpatieMediaLibraryFileUpload Struttura Directory bashscripts/ └── deployment/ # Script .sh qui docs/ ├── xot/ # Regole globali └── blog/ # Docs specifiche Convenzioni di Codice Traduzioni // Buona pratica trans('blog::post.title') // Da evitare $form->select('status')->label('Status') Type Safety // Preferire enum PostStatus: string { case Draft = 'draft'; case Published = 'published'; } // Invece di ['draft' => 'Draft', 'published' => 'Published'] Filament Specifics Risorse class PostResource extends XotBaseResource { // Eliminare se restituisce solo DeleteAction public static function getHeaderActions(): array { return []; } } Pagine class ListPosts extends XotBaseListRecords { protected function getTableColumns(): array { return [ 'title' => TextColumn::make('title'), // Chiavi stringa esplicite ]; } } Documentazione Regole - File .mdc in: .windsurf/rules/ .cursor/rules/ Struttura - Nomi file in lowercase (tranne README.md) - Niente duplicati tra moduli Commit & QA # Messaggio di commit fix(blog): risolto problema salvataggio draft # Controlli pre-commit phpstan livello 9 pint --test Principi Fondamentali 1. DRY (Don't Repeat Yourself) 2. KISS (Keep It Simple, Stupid) 3. Type Safety ovunque possibile 4. Separation of Concerns rigorosa 5. Documentazione come parte integrante del codice
 >>>>>>> 063a7d6c (.)
 >>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
+=======
+## Caso reale
+- Errore su `Modules/User/app/Filament/Widgets/Auth/RegisterWidget.php` risolto spostando la funzione orfana all'interno della classe o eliminandola se non più necessaria.
+
+## Filosofia
+- La coerenza strutturale del codice è fondamentale per la manutenibilità e la prevenzione di bug sistemici.
+- Ogni correzione va documentata nella cartella docs più vicina e nel knowledge base dei bugfix.
+
+# Gestione ParseError: metodi fuori dalla classe in PHP
+
+## Causa
+Un errore di tipo `ParseError: syntax error, unexpected token "protected", expecting end of file` si verifica quando una funzione (es. `protected function getUserTypeOptions()`) viene dichiarata **fuori dal blocco della classe**. Questo accade spesso dopo una parentesi graffa di chiusura `}` della classe, lasciando il metodo "orfano".
+
+## Soluzione
+- Spostare sempre i metodi all'interno della classe corretta.
+- Verificare che la parentesi graffa di chiusura della classe sia l'ultima istruzione del file.
+- Se il metodo non serve più, eliminarlo.
+
+## Best Practice
+- Ogni funzione/membro deve essere dichiarato **all'interno** della classe.
+- La chiusura della classe (`}`) deve essere l'ultima istruzione del file.
+- Dopo ogni refactor, controllare che non restino metodi orfani.
+- Usare sempre editor con linting attivo per prevenire errori di sintassi.
+
+## Esempio (corretto)
+```php
+class Example {
+    public function foo() {}
+    // ...
+} // <--- questa DEVE essere l'ultima parentesi graffa
+```
+
+## Caso reale
+- Errore su `Modules/User/app/Filament/Widgets/Auth/RegisterWidget.php` risolto spostando la funzione orfana all'interno della classe o eliminandola se non più necessaria.
+
+## Filosofia
+- La coerenza strutturale del codice è fondamentale per la manutenibilità e la prevenzione di bug sistemici.
+- Ogni correzione va documentata nella cartella docs più vicina e nel knowledge base dei bugfix.
+>>>>>>> b9902ce9 (feat: add revoke module to console command)
