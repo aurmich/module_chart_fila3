@@ -12,6 +12,7 @@ use Illuminate\Support\Arr;
 use Filament\Facades\Filament;
 use Modules\SaluteOra\Models\Doctor;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Facades\Storage;
@@ -70,12 +71,17 @@ use Illuminate\Support\Arr;
 use Filament\Facades\Filament;
 =======
 >>>>>>> f3e4ec66 (.)
+=======
+use Filament\Tables\Columns\IconColumn;
+>>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
 use Filament\Tables\Columns\TextColumn;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Eloquent\Builder;
 use Filament\Support\Facades\FilamentView;
 >>>>>>> 2bcfd382 (fix Address)
 use Modules\SaluteOra\Filament\Resources\DoctorResource;
 use Modules\Media\Filament\Tables\Columns\IconMediaColumn;
+use Modules\Xot\Actions\File\DownloadZipByPathsDiskAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Modules\SaluteOra\Filament\Resources\UserResource\Pages\ListUsers;
 
@@ -87,11 +93,21 @@ class ListDoctors extends ListUsers
     {
         $columns= parent::getTableColumns();   
         $columns=Arr::except($columns,['type']);
+        /*
         $attachments = Doctor::$attachments;
 
+        
         foreach ($attachments as $attachment) {
             $columns[$attachment] = IconMediaColumn::make($attachment);
         }
+            */
+        $columns['certifications'] = IconColumn::make('certifications')
+        ->icon('heroicon-o-document-text')
+        ->tooltip(function($record,$state, $rowLoop){
+            return 'Download Zip';
+        })->action(function ($record,$state){
+            return app(DownloadZipByPathsDiskAction::class)->execute($state,'local');
+        });
 
         return $columns;
     }

@@ -1192,6 +1192,10 @@ return array (
     array (
       'label' => 'attach',
     ),
+    'certificates' => 
+    array (
+      'label' => 'certificates',
+    ),
   ),
   'filters' => 
   array (

@@ -8,14 +8,18 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use Spatie\QueueableAction\QueueableAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
 
 class DownloadZipByPathsDiskAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * Crea un file ZIP dai percorsi forniti e lo restituisce come download.
@@ -28,6 +32,9 @@ class DownloadZipByPathsDiskAction
 =======
     public function execute(array $attachments,string $disk)
 >>>>>>> aurmich/dev
+=======
+    public function execute(array $attachments,string $disk)
+>>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
     {
         $zipFileName = 'temp_zip_' .uniqid() . '.zip';
         $zipPath = 'temp/' . $zipFileName;
@@ -46,6 +53,7 @@ class DownloadZipByPathsDiskAction
                 if (Storage::disk($disk)->exists($filePath)) {
                     $fileContent = Storage::disk($disk)->get($filePath);
 <<<<<<< HEAD
+<<<<<<< HEAD
                     if ($fileContent !== null) {
                         $zip->addFromString($attachment . '.pdf', $fileContent);
                     }
@@ -56,12 +64,18 @@ class DownloadZipByPathsDiskAction
                 }else{
                     dddx(['filePath'=>$filePath]);
 >>>>>>> aurmich/dev
+=======
+                    $zip->addFromString($attachment . '.pdf', $fileContent);
+                }else{
+                    dddx(['filePath'=>$filePath]);
+>>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
                 }
             }
             $zip->close();
             
             $downloadFileName = 'attachments_' . uniqid() . '.zip';
             
+<<<<<<< HEAD
 <<<<<<< HEAD
             // Usa response()->download() per il download
             return response()->download($tempFilePath, $downloadFileName, [
@@ -71,11 +85,16 @@ class DownloadZipByPathsDiskAction
         
         return null;
 =======
+=======
+>>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
             // Usa Storage per il download e elimina dopo
             return Storage::disk('local')->download($zipPath, $downloadFileName, [
                 'Content-Type' => 'application/zip'
             ]);//->deleteFileAfterSend(true);
         }
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
     }
 }

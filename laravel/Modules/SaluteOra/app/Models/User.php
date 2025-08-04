@@ -507,7 +507,11 @@ class User extends BaseUser implements HasMedia
 =======
         'studio_id',
         'continuation_token',
+<<<<<<< HEAD
 >>>>>>> 8e4d163b (phpstan)
+=======
+        'certificates'
+>>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
     ];
 
 

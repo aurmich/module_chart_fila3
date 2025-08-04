@@ -415,7 +415,7 @@ class Doctor extends User
 
 =======
         'specialization',
-        //'certifications',
+        'certifications',
         'availability',
         'status',
     ];
@@ -449,8 +449,13 @@ class Doctor extends User
     {
         return array_merge(parent::casts(), [
 <<<<<<< HEAD
+<<<<<<< HEAD
             //'certification' => 'array',  // OBBLIGATORIO: campo in $attachments DEVE essere array per FileUpload
             'certifications' => 'array', // Per retrocompatibilità
+=======
+            'certifications' => 'array',
+          //  'availability' => 'array',
+>>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
         ]);
     }
 

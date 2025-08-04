@@ -52,7 +52,7 @@ use Modules\Xot\Contracts\UserContract;
 use Illuminate\Database\Eloquent\Model;
 >>>>>>> aa30b366 (✨ (mail_template.php): add 'slug' label and description to Italian mail template for better localization support)
 use Filament\Forms\Components\TextInput;
-use Modules\User\Contracts\UserContract;
+use Modules\Xot\Contracts\UserContract;
 use Filament\Forms\Components\Wizard\Step;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
@@ -89,6 +89,7 @@ class RegistrationWidget extends XotBaseWidget
     public string $resource;
     public string $model;
     public string $action;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public Model $record;
@@ -184,6 +185,9 @@ class RegistrationWidget extends XotBaseWidget
 =======
     public Model $record;
 >>>>>>> aa30b366 (✨ (mail_template.php): add 'slug' label and description to Italian mail template for better localization support)
+=======
+    public UserContract $record;
+>>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
     protected static string $view = 'pub_theme::filament.widgets.registration';
 
     public function mount(string $type,Request $request): void
@@ -298,6 +302,7 @@ class RegistrationWidget extends XotBaseWidget
     {
         $data = $this->form->getState();
         $record=$this->record;
+       
         $user=app($this->action)->execute($record,$data);
         //$post = $this->model::create($this->form->getState());
 

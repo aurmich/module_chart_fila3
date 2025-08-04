@@ -236,18 +236,25 @@ return array (
       'label' => 'reorderRecords',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
     'resetFilters' => 
     array (
       'label' => 'resetFilters',
     ),
+<<<<<<< HEAD
     'applyFilters' => 
     array (
       'label' => 'applyFilters',
     ),
+=======
+>>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
     'openFilters' => 
     array (
       'label' => 'openFilters',
     ),
+<<<<<<< HEAD
     'attach' => 
     array (
       'label' => 'attach',
@@ -294,6 +301,8 @@ return array (
       'success' => 'Medico verificato con successo',
       'error' => 'Errore durante la verifica del medico',
 =======
+=======
+>>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
   ),
   'actions' => 
   array (
