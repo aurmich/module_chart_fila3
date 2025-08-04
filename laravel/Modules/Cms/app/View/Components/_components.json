@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [{"name":"app-layout","class":"AppLayout","module":null,"path":null,"ns":"Modules\\Cms\\View\\Components\\AppLayout"},{"name":"guest-layout","class":"GuestLayout","module":null,"path":null,"ns":"Modules\\Cms\\View\\Components\\GuestLayout"},{"name":"page","class":"Page","module":null,"path":null,"ns":"Modules\\Cms\\View\\Components\\Page"},{"name":"page-content","class":"PageContent","module":null,"path":null,"ns":"Modules\\Cms\\View\\Components\\PageContent"},{"name":"section","class":"Section","module":null,"path":null,"ns":"Modules\\Cms\\View\\Components\\Section"}]
 =======
 [
@@ -32,3 +33,6 @@
     }
 ]
 >>>>>>> 54f4fa16 (.)
+=======
+[{"name":"app-layout","class":"AppLayout","module":null,"path":null,"ns":"Modules\\Cms\\View\\Components\\AppLayout"},{"name":"guest-layout","class":"GuestLayout","module":null,"path":null,"ns":"Modules\\Cms\\View\\Components\\GuestLayout"},{"name":"page-content","class":"PageContent","module":null,"path":null,"ns":"Modules\\Cms\\View\\Components\\PageContent"},{"name":"section","class":"Section","module":null,"path":null,"ns":"Modules\\Cms\\View\\Components\\Section"}]
+>>>>>>> 5d95df2f (feat(chart): add autoloading for factories and seeders in composer.json to improve module structure)

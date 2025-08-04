@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [{"name":"analyze-translation-files","class":"AnalyzeTranslationFiles","module":null,"path":null,"ns":"Modules\\Notify\\Console\\Commands\\AnalyzeTranslationFiles"},{"name":"send-mail-command","class":"SendMailCommand","module":null,"path":null,"ns":"Modules\\Notify\\Console\\Commands\\SendMailCommand"},{"name":"telegram-webhook","class":"TelegramWebhook","module":null,"path":null,"ns":"Modules\\Notify\\Console\\Commands\\TelegramWebhook"}]
 =======
 [{"name":"cleanup-notification-logs-command","class":"CleanupNotificationLogsCommand","module":null,"path":null,"ns":"Modules\\Notify\\Console\\Commands\\CleanupNotificationLogsCommand"},{"name":"send-mail-command","class":"SendMailCommand","module":null,"path":null,"ns":"Modules\\Notify\\Console\\Commands\\SendMailCommand"},{"name":"telegram-webhook","class":"TelegramWebhook","module":null,"path":null,"ns":"Modules\\Notify\\Console\\Commands\\TelegramWebhook"}]
 >>>>>>> 54f4fa16 (.)
+=======
+[{"name":"analyze-translation-files","class":"AnalyzeTranslationFiles","module":null,"path":null,"ns":"Modules\\Notify\\Console\\Commands\\AnalyzeTranslationFiles"},{"name":"cleanup-notification-logs-command","class":"CleanupNotificationLogsCommand","module":null,"path":null,"ns":"Modules\\Notify\\Console\\Commands\\CleanupNotificationLogsCommand"},{"name":"send-mail-command","class":"SendMailCommand","module":null,"path":null,"ns":"Modules\\Notify\\Console\\Commands\\SendMailCommand"},{"name":"telegram-webhook","class":"TelegramWebhook","module":null,"path":null,"ns":"Modules\\Notify\\Console\\Commands\\TelegramWebhook"}]
+>>>>>>> 5d95df2f (feat(chart): add autoloading for factories and seeders in composer.json to improve module structure)

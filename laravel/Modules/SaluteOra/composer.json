@@ -45,6 +45,7 @@
     },
     "require": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "saade/filament-fullcalendar": "^3.2",
         "spatie/laravel-permission": "^6.0",
         "spatie/opening-hours": "^4.2",
@@ -55,6 +56,10 @@
     },
     "require-dev": {},
 >>>>>>> 54f4fa16 (.)
+=======
+        "saade/filament-fullcalendar": "^3.2"
+    },
+>>>>>>> 5d95df2f (feat(chart): add autoloading for factories and seeders in composer.json to improve module structure)
     "repositories": [
         {
             "type": "path",

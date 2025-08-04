@@ -39,9 +39,13 @@ class GetComponentsAction
 
         $exists = File::exists($components_json);
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+        
+>>>>>>> 5d95df2f (feat(chart): add autoloading for factories and seeders in composer.json to improve module structure)
         if ($exists && ! $force_recreate) {
             Assert::string($content = File::get($components_json), '['.__LINE__.']['.class_basename(static::class).']');
             $comps = json_decode($content, false);
@@ -96,15 +100,20 @@ class GetComponentsAction
                     continue;
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
                 
 =======
 
 >>>>>>> 54f4fa16 (.)
+=======
+                
+>>>>>>> 5d95df2f (feat(chart): add autoloading for factories and seeders in composer.json to improve module structure)
                 $comps[] = ComponentFileData::from([
                     'name' => $comp_name,
                     'class' => $class_name,
                     'ns' => $comp_ns,
                 ])->toArray();
+<<<<<<< HEAD
 <<<<<<< HEAD
                 
             } catch (\Exception $e) {
@@ -113,6 +122,11 @@ class GetComponentsAction
 
             } catch (\Exception $e) {
 >>>>>>> 54f4fa16 (.)
+=======
+                
+            } catch (\Exception $e) {
+                /*
+>>>>>>> 5d95df2f (feat(chart): add autoloading for factories and seeders in composer.json to improve module structure)
                 dddx([
                     'comp_name' => $comp_name,
                     'class_name' => $class_name,
@@ -123,10 +137,15 @@ class GetComponentsAction
                     'message' => $e->getMessage(),
                 ]);
 <<<<<<< HEAD
+<<<<<<< HEAD
                 */
                 throw $e;
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+                */
+                throw $e;
+>>>>>>> 5d95df2f (feat(chart): add autoloading for factories and seeders in composer.json to improve module structure)
             }
         }
 

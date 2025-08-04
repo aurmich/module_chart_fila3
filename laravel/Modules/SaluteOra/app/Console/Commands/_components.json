@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [{"name":"analyze-patient-data-command","class":"AnalyzePatientDataCommand","module":null,"path":null,"ns":"Modules\\SaluteOra\\Console\\Commands\\AnalyzePatientDataCommand"},{"name":"send-appointment-reminders-command","class":"SendAppointmentRemindersCommand","module":null,"path":null,"ns":"Modules\\SaluteOra\\Console\\Commands\\SendAppointmentRemindersCommand"}]
 =======
 [
@@ -11,3 +12,6 @@
     }
 ]
 >>>>>>> 54f4fa16 (.)
+=======
+[{"name":"analyze-patient-data-command","class":"AnalyzePatientDataCommand","module":null,"path":null,"ns":"Modules\\SaluteOra\\Console\\Commands\\AnalyzePatientDataCommand"},{"name":"send-appointment-reminders-command","class":"SendAppointmentRemindersCommand","module":null,"path":null,"ns":"Modules\\SaluteOra\\Console\\Commands\\SendAppointmentRemindersCommand"}]
+>>>>>>> 5d95df2f (feat(chart): add autoloading for factories and seeders in composer.json to improve module structure)

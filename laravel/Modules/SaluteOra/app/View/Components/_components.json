@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 []
 =======
 [
@@ -11,3 +12,6 @@
     }
 ]
 >>>>>>> 54f4fa16 (.)
+=======
+[{"name":"patient-registration-wizard","class":"PatientRegistrationWizard","module":null,"path":null,"ns":"Modules\\SaluteOra\\View\\Components\\PatientRegistrationWizard"},{"name":"reporting-chart-assets","class":"ReportingChartAssets","module":null,"path":null,"ns":"Modules\\SaluteOra\\View\\Components\\ReportingChartAssets"}]
+>>>>>>> 5d95df2f (feat(chart): add autoloading for factories and seeders in composer.json to improve module structure)
