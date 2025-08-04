@@ -21,7 +21,10 @@ use Modules\Xot\Traits\Updater;
  * Class BaseModel.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> bb8acfef (.)
  * 
 >>>>>>> bf0cd1be (phpstan)
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
@@ -29,12 +32,21 @@ use Modules\Xot\Traits\Updater;
   */
 abstract class BaseModel extends EloquentModel
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  */
 abstract class BaseModel extends Model
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> bf0cd1be (phpstan)
+=======
+=======
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
+  */
+abstract class BaseModel extends Model
+>>>>>>> 0734d5c9 (.)
+>>>>>>> bb8acfef (.)
 {
     use HasFactory;
     use Updater;

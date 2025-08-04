@@ -28,6 +28,9 @@ use Sushi\Sushi;
  * @method static \Illuminate\Database\Eloquent\Builder|Domain whereName($value)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bb8acfef (.)
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
 =======
@@ -39,6 +42,11 @@ use Sushi\Sushi;
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
 >>>>>>> bf0cd1be (phpstan)
  * @method static \Modules\Tenant\Database\Factories\DomainFactory factory($count = null, $state = [])
+=======
+* @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
+  * @method static \Modules\Tenant\Database\Factories\DomainFactory factory($count = null, $state = [])
+>>>>>>> 0734d5c9 (.)
  * @mixin \Eloquent
  */
 class Domain extends BaseModel

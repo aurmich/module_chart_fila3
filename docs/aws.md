@@ -15,6 +15,7 @@ INFO  Nothing to migrate.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 per vedere 
 http://ec2-54-194-72-103.eu-west-1.compute.amazonaws.com/it
@@ -57,6 +58,8 @@ MAIL_FROM_NAME="${APP_NAME}"
 =======
 =======
 >>>>>>> 41fc4dec (merge)
+=======
+>>>>>>> bb8acfef (.)
 
 per vedere 
 http://ec2-54-194-72-103.eu-west-1.compute.amazonaws.com/it
@@ -65,6 +68,11 @@ http://ec2-54-194-72-103.eu-west-1.compute.amazonaws.com/it
 >>>>>>> 281fd24d (add scripts)
 =======
 =======
+=======
+
+-----
+url:http://ec2-54-194-72-103.eu-west-1.compute.amazonaws.com/
+>>>>>>> 0734d5c9 (.)
 ----
 
 se si vedono dei |--35--
