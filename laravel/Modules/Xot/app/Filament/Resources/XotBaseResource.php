@@ -393,6 +393,9 @@ abstract class XotBaseResource extends FilamentResource
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1f285b76 (♻️ (XotBaseRelationManager.php, XotBaseResource.php, XotBaseManageRelatedRecords.php, profile.blade.php): refactor code to improve readability and maintainability by removing unused variables and comments, and updating method checks for better error handling.)
         if(!method_exists($model,'getAttachments')){
             return [];
         }

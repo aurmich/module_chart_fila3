@@ -25,12 +25,15 @@ use Webmozart\Assert\Assert;
  * @template TModel of Model
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @extends FilamentManageRelatedRecords<TModel>
 >>>>>>> aurmich/dev
 =======
  * @extends FilamentManageRelatedRecords<TModel>
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 1f285b76 (♻️ (XotBaseRelationManager.php, XotBaseResource.php, XotBaseManageRelatedRecords.php, profile.blade.php): refactor code to improve readability and maintainability by removing unused variables and comments, and updating method checks for better error handling.)
  */
 abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 {
@@ -151,12 +154,15 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         Assert::true(method_exists($this, 'getFormSchema'), 'Devi implementare getFormSchema() nella classe figlia.');
 >>>>>>> aurmich/dev
 =======
         Assert::true(method_exists($this, 'getFormSchema'), 'Devi implementare getFormSchema() nella classe figlia.');
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 1f285b76 (♻️ (XotBaseRelationManager.php, XotBaseResource.php, XotBaseManageRelatedRecords.php, profile.blade.php): refactor code to improve readability and maintainability by removing unused variables and comments, and updating method checks for better error handling.)
         /** @var array<\Filament\Forms\Components\Component> $schema */
         $schema = $this->getFormSchema();
         return $form->schema($schema);

@@ -88,7 +88,11 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @phpstan-ignore method.nonObject */
+=======
+        /** @phpstan-ignore-next-line */
+>>>>>>> 1f285b76 (♻️ (XotBaseRelationManager.php, XotBaseResource.php, XotBaseManageRelatedRecords.php, profile.blade.php): refactor code to improve readability and maintainability by removing unused variables and comments, and updating method checks for better error handling.)
         $index_page=$index->getPage();
         
         if(!method_exists($index_page,'getTableColumns')){
