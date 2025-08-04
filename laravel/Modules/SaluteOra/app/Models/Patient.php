@@ -21,13 +21,18 @@ use Parental\HasParent;
 >>>>>>> 54f4fa16 (.)
 =======
 use Parental\HasParent;
+use Spatie\Image\Enums\Fit;
 use Spatie\MediaLibrary\HasMedia;
 use Modules\SaluteOra\Models\User;
 use Spatie\MediaLibrary\InteractsWithMedia;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
+<<<<<<< HEAD
 use Spatie\Image\Enums\Fit;
 >>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
+=======
+>>>>>>> 0cff2983 (📝 (docs): remove unused Blade file for appointments to clean up the codebase)
 
 /**
  * Class Patient
@@ -640,5 +645,11 @@ class Patient extends User implements HasMedia
             }
         }
         return true;
+    }
+
+
+    public function appointments(): HasMany
+    {
+        return $this->hasMany(Appointment::class,'patient_id');
     }
 }

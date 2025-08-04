@@ -35,6 +35,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "file": "assets/app-7PoISLAE.css",
 =======
 <<<<<<< HEAD
@@ -218,6 +219,9 @@
 =======
     "file": "assets/app-5jqdZTEn.css",
 >>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
+=======
+    "file": "assets/app-Dr7VE1hH.css",
+>>>>>>> 0cff2983 (📝 (docs): remove unused Blade file for appointments to clean up the codebase)
     "src": "resources/css/app.css",
     "isEntry": true
   },

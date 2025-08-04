@@ -19,11 +19,16 @@
     $locale = LaravelLocalization::getCurrentLocale();
     $isLoggedIn = auth()->check(); 
 <<<<<<< HEAD
+<<<<<<< HEAD
     */
     $appointments=$user->appointments;
 @endphp
 =======
 
+=======
+    $appointments=$user->appointments;
+    $appointments=collect();
+>>>>>>> 0cff2983 (📝 (docs): remove unused Blade file for appointments to clean up the codebase)
 @endphp
 
 >>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
@@ -237,40 +242,8 @@
                     </div>
                 </div>
             </div> -->
-
-            <!-- Colonna destra: Appuntamento -->
-            <div class="w-full lg:w-2/4 flex justify-center items-center p-5">
-                <div class="w-full lg:w-2/4 bg-white rounded-lg shadow-lg">
-                    <div class="p-5">
-                        <h4 class="mb-5 font-semibold">Appuntamento in programma</h4>
-
-                        <div class="flex flex-row items-center mb-2">
-                            <span class="mr-2 font-medium">Data:</span>
-                            <p>19/06/2025</p>
-                        </div>
-                        <div class="flex flex-row items-center mb-2">
-                            <span class="mr-2 font-medium">Orario:</span>
-                            <p>10:00 - 11:00</p>
-                        </div>
-                        <div class="flex flex-row items-center mb-2">
-                            <span class="mr-2 font-medium">Studio:</span>
-                            <p>OralB</p>
-                        </div>
-                        <div class="flex flex-row items-center mb-2">
-                            <span class="mr-2 font-medium">Indirizzo studio:</span>
-                            <p>Via dei test 79</p>
-                        </div>
-                        <div class="flex flex-row items-center mb-2">
-                            <span class="mr-2 font-medium">Telefono:</span>
-                            <p>0425 57899</p>
-                        </div>
-                        <div class="flex flex-row items-center">
-                            <span class="mr-2 font-medium">Email:</span>
-                            <p>studioralb@email.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        @each('pub_theme::appointment.item', $appointments, 'appointment','pub_theme::appointment.vodo')
+           
         </div>
     </div>  
 </div>

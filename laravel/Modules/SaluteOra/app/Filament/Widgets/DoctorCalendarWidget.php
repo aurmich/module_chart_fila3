@@ -210,10 +210,12 @@ class DoctorCalendarWidget extends FullCalendarWidget
         return [
             'firstDay' => 1,
             'headerToolbar' => [
-                'left' => 'dayGridWeek,dayGridMonth',
+                //'left' => 'dayGridWeek,dayGridMonth',
+                'left' => 'prev',
                 'center' => 'title',
                 //'right' => 'today prev,next',
-                'right' => 'prev,next',
+                //'right' => 'prev,next',
+                'right' => 'next',
             ],
             'titleFormat' => [
                 'year' => 'numeric',
