@@ -7,6 +7,7 @@ use Filament\Forms;
 use Filament\Forms\Form;
 use Illuminate\Support\Facades\Auth;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\ComponentContainer;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
@@ -28,6 +29,13 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
 >>>>>>> 54f4fa16 (.)
+=======
+use Filament\Forms\ComponentContainer;
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+/**
+ * @property ComponentContainer $form
+ */
+>>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
 class LoginWidget extends XotBaseWidget
 {
     public ?array $data = [];

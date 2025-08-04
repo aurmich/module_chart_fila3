@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets\Auth;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms;
 use Filament\Forms\Form;
 <<<<<<< HEAD
@@ -88,13 +89,54 @@ use Filament\Forms\Form;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Str;
+=======
+>>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
 use Filament\Forms;
+use Filament\Forms\Form;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Hash;
+use Filament\Forms\ComponentContainer;
+use Filament\Forms\Components\Section;
+use Filament\Forms\Components\TextInput;
+use Illuminate\Support\Facades\Password;
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
-class ResetPasswordWidget extends BaseAuthWidget
+/**
+ * @property ComponentContainer $form
+ */
+class ResetPasswordWidget extends XotBaseWidget
 {
     protected static string $view = 'user::widgets.auth.reset-password-widget';
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+    /**
+     * Get the form schema for this widget.
+     *
+     * @return array<string, \Filament\Forms\Components\Component>
+     */
+    public function getFormSchema(): array
+    {
+        return [
+            'email' => TextInput::make('email')
+                ->email()
+                ->required()
+                ->autocomplete('email'),
+            'password' => TextInput::make('password')
+                ->password()
+                ->required()
+                ->minLength(8)
+                ->same('password_confirmation')
+                ->autocomplete('new-password'),
+            'password_confirmation' => TextInput::make('password_confirmation')
+                ->password()
+                ->required()
+                ->autocomplete('new-password'),
+        ];
+    }
+
+>>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
     public function form(Form $form): Form
     {
         return $form
@@ -197,6 +239,7 @@ class ResetPasswordWidget extends BaseAuthWidget
             $this->addError('email', __($status));
         }
     }
+<<<<<<< HEAD
 
     protected function getFormSchema(): array
     {
@@ -219,4 +262,6 @@ class ResetPasswordWidget extends BaseAuthWidget
         ];
     }
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
 }

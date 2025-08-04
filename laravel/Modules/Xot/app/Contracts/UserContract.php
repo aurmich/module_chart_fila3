@@ -51,9 +51,13 @@ use Spatie\Permission\Contracts\Role;
  * @property string|null                                                                $last_name
  * @property string|null                                                                $full_name
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property \BackedEnum&\Filament\Support\Contracts\HasLabel                           $type
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+ * @property \BackedEnum&\Filament\Support\Contracts\HasLabel                           $type
+>>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
  * @property string|null                                                                $password
  * @property string|int|null                                                            $current_team_id
  * @property string|null                                                                $phone

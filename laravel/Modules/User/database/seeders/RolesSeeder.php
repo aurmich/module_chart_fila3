@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Database\Seeders;
 
 use Illuminate\Database\Seeder;
+<<<<<<< HEAD
 use Illuminate\Support\Collection;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -15,18 +16,26 @@ use Modules\User\Enums\UserType;
 =======
 use Modules\User\Enums\UserTypeEnum;
 >>>>>>> 2bcfd382 (fix Address)
+=======
+>>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
 use Modules\User\Models\Role;
 
 class RolesSeeder extends Seeder
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
     /**
      * Table headers for output display.
      *
      * @var array<int, string>
      */
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
     private static array $OUTPUT_TABLE_HEADERS = [
         '#',
         'Name',
@@ -56,11 +65,23 @@ class RolesSeeder extends Seeder
 =======
 >>>>>>> 54f4fa16 (.)
     /**
+     * Default roles to be created.
+     *
+     * @var array<int, array<string, string>>
+     */
+    private static array $DEFAULT_ROLES = [
+        ['name' => 'admin', 'guard_name' => 'web'],
+        ['name' => 'user', 'guard_name' => 'web'],
+        ['name' => 'guest', 'guard_name' => 'web'],
+    ];
+
+    /**
      * Run the database seeds.
      */
     public function run(): void
     {
         $roles = [];
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -129,6 +150,12 @@ class RolesSeeder extends Seeder
                     );
                 },
             );
+=======
+        
+        foreach (self::$DEFAULT_ROLES as $roleData) {
+            $roles[] = Role::firstOrCreate($roleData);
+        }
+>>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
 
         $this->command->getOutput()->comment('<info>Newly created roles</info>');
         $this->command->getOutput()->table(

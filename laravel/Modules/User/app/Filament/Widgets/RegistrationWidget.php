@@ -229,6 +229,7 @@ class RegistrationWidget extends XotBaseWidget
     /**
      * @see https://filamentphp.com/docs/3.x/forms/adding-a-form-to-a-livewire-component
      */
+<<<<<<< HEAD
     public function register(): \Illuminate\Http\RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
     {
         $data = $this->form->getState();
@@ -263,6 +264,9 @@ class RegistrationWidget extends XotBaseWidget
      */
 >>>>>>> aa30b366 (✨ (mail_template.php): add 'slug' label and description to Italian mail template for better localization support)
     public function register()
+=======
+    public function register():\Illuminate\Http\RedirectResponse
+>>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
     {
         $data = $this->form->getState();
         $user=app($this->action)->execute($data);

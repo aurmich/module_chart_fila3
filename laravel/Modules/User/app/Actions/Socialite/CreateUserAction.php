@@ -9,15 +9,24 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Socialite;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 =======
 >>>>>>> 54f4fa16 (.)
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Modules\Xot\Contracts\UserContract;
+=======
+use Webmozart\Assert\Assert;
+>>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
 use Modules\Xot\Datas\XotData;
+use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
+=======
+use Laravel\Socialite\Contracts\User as SocialiteUserContract;
+>>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
 
 /**
  * Handles the creation of a new user from a socialite authentication.
@@ -70,6 +79,7 @@ class CreateUserAction
             'email' => $userAttributes->email,
         ]);
 <<<<<<< HEAD
+<<<<<<< HEAD
         
         // Ensure the created user implements UserContract
         Assert::isInstanceOf($newlyCreatedUser, Model::class);
@@ -77,6 +87,9 @@ class CreateUserAction
         
         // Assign default roles to the new user
 =======
+=======
+        Assert::implementsInterface($newlyCreatedUser, UserContract::class);
+>>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
         // Finally, assign the default set of roles
 >>>>>>> 54f4fa16 (.)
         app(SetDefaultRolesBySocialiteUserAction::class, [
