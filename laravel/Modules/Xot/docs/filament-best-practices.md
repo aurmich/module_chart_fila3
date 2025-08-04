@@ -1047,16 +1047,13 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 =======
 >>>>>>> 5ae95119 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking to enhance code quality and maintainability across modules.)
 ## Problema: Form non visualizzato correttamente
-<<<<<<< HEAD
 
 **Soluzione:** Assicurarsi di utilizzare `getFormSchema()` invece di `form()` e controllare che tutti i componenti siano configurati correttamente.
 
 ## Problema: Label non tradotte
 
-=======
 ### Problema: Form non visualizzato correttamente
 =======
->>>>>>> 4c632a28 (✨ (bashscripts): add new scripts for managing MCP MySQL server and PHPStan analysis)
 
 **Soluzione:** Assicurarsi di utilizzare `getFormSchema()` invece di `form()` e controllare che tutti i componenti siano configurati correttamente.
 
@@ -1107,8 +1104,8 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 =======
 >>>>>>> 5ae95119 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking to enhance code quality and maintainability across modules.)
 ## Problema: Relazioni non caricate correttamente
-<<<<<<< HEAD
 ### Problema: Relazioni non caricate correttamente
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> a39073f3 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking)
@@ -1119,6 +1116,8 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 =======
 >>>>>>> 4c632a28 (✨ (bashscripts): add new scripts for managing MCP MySQL server and PHPStan analysis)
 >>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
+=======
+>>>>>>> 8c63452e (🐛 (ConsentType.php, BaseListUsers.php, code_quality.md, filament-best-practices.md): resolve merge conflicts and clean up code by removing conflict markers)
 
 **Soluzione:** Verificare che:
 1. I nomi delle relazioni e delle colonne siano corretti
@@ -1461,6 +1460,7 @@ Appointment::where('doctor_id', $doctorId)
 - DRY, KISS, serenità del codice
 - Refactoring sicuro, massima estendibilità
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> a39073f3 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking)
 <<<<<<< HEAD
 >>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
@@ -1469,3 +1469,5 @@ Appointment::where('doctor_id', $doctorId)
 >>>>>>> 207b1a7 (.)
 >>>>>>> 4c632a28 (✨ (bashscripts): add new scripts for managing MCP MySQL server and PHPStan analysis)
 >>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
+=======
+>>>>>>> 8c63452e (🐛 (ConsentType.php, BaseListUsers.php, code_quality.md, filament-best-practices.md): resolve merge conflicts and clean up code by removing conflict markers)
