@@ -13,12 +13,16 @@ use Modules\Notify\Actions\SendAppointmentNotificationAction;
 use Modules\SaluteOra\Models\Patient;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\SaluteOra\Enums\AppointmentStatusEnum;
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 use Modules\SaluteOra\Enums\AppointmentStatusEnum;
 >>>>>>> 8e4d163b (phpstan)
+=======
+use Modules\SaluteOra\Enums\AppointmentStatus;
+>>>>>>> cb74b7d6 (delete _old folder)
 use Spatie\QueueableAction\QueueableAction;
 
 class FinalizeAppointmentWorkflowAction
@@ -84,6 +88,7 @@ class FinalizeAppointmentWorkflowAction
                 $appointment->type = $treatmentData['type'] ?? 'check-up';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $appointment->status = AppointmentStatusEnum::CONFIRMED;
 =======
                 $appointment->status = 'confirmed';
@@ -91,6 +96,9 @@ class FinalizeAppointmentWorkflowAction
 =======
                 $appointment->status = AppointmentStatusEnum::CONFIRMED;
 >>>>>>> 8e4d163b (phpstan)
+=======
+                $appointment->status = AppointmentStatus::CONFIRMED;
+>>>>>>> cb74b7d6 (delete _old folder)
                 $appointment->notes = $treatmentData['notes'] ?? '';
                 $appointment->treatment_plan = $treatmentData['treatment_plan'] ?? '';
                 $appointment->is_emergency = $treatmentData['is_emergency'] ?? false;
@@ -168,10 +176,14 @@ class FinalizeAppointmentWorkflowAction
                 
                 // Aggiorna sempre lo stato a confirmed
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $appointment->status = AppointmentStatusEnum::CONFIRMED;
 =======
                 $appointment->status = 'confirmed';
 >>>>>>> 54f4fa16 (.)
+=======
+                $appointment->status = AppointmentStatus::CONFIRMED;
+>>>>>>> cb74b7d6 (delete _old folder)
                 $appointment->save();
                 
                 // Invia notifiche se richiesto
