@@ -41,18 +41,25 @@ class PasswordResetWidget extends XotBaseWidget
      * Get the form schema for password reset.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      * @return array<string, mixed>
 >>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
+=======
+>>>>>>> f28f27db (✨ (PasswordResetConfirmWidget.php, PasswordResetWidget.php, UserServiceProvider.php): refactor password reset forms to improve code readability and maintainability)
      */
     public function getFormSchema(): array
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'email'=>Forms\Components\TextInput::make('email')
 =======
             Forms\Components\TextInput::make('email')
 >>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
+=======
+            'email'=>Forms\Components\TextInput::make('email')
+>>>>>>> f28f27db (✨ (PasswordResetConfirmWidget.php, PasswordResetWidget.php, UserServiceProvider.php): refactor password reset forms to improve code readability and maintainability)
                 ->email()
                 ->required()
                 ->autocomplete('email')

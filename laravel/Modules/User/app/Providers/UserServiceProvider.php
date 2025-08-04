@@ -10,10 +10,13 @@ namespace Modules\User\Providers;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> f28f27db (✨ (PasswordResetConfirmWidget.php, PasswordResetWidget.php, UserServiceProvider.php): refactor password reset forms to improve code readability and maintainability)
 use Webmozart\Assert\Assert;
 use Laravel\Passport\Passport;
 use Illuminate\Support\Facades\Log;
@@ -183,9 +186,12 @@ class UserServiceProvider extends XotBaseServiceProvider
 >>>>>>> aurmich/dev
             */
             Assert::isInstanceOf($notifiable, Model::class);
+<<<<<<< HEAD
 =======
             */
 >>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
+=======
+>>>>>>> f28f27db (✨ (PasswordResetConfirmWidget.php, PasswordResetWidget.php, UserServiceProvider.php): refactor password reset forms to improve code readability and maintainability)
             $email = new SpatieEmail($notifiable, 'reset-password');
             $email->mergeData([
                 'token' => $token,
