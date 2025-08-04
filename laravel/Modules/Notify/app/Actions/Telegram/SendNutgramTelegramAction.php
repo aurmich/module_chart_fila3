@@ -8,6 +8,7 @@ use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use Illuminate\Support\Facades\Log;
+<<<<<<< HEAD
 
 use Modules\Notify\Datas\TelegramData;
 use Spatie\QueueableAction\QueueableAction;
@@ -15,11 +16,23 @@ use function Safe\json_encode;
 use function Safe\json_decode;
 
 final class SendNutgramTelegramAction
+=======
+use Modules\Notify\Contracts\TelegramProviderActionInterface;
+use Modules\Notify\Datas\TelegramData;
+use Spatie\QueueableAction\QueueableAction;
+
+final class SendNutgramTelegramAction implements TelegramProviderActionInterface
+>>>>>>> aurmich/dev
 {
     use QueueableAction;
 
     private string $token;
     private string $apiUrl;
+<<<<<<< HEAD
+=======
+    private ?string $webhookUrl;
+    private bool $polling;
+>>>>>>> aurmich/dev
     private array $vars = [];
     protected bool $debug;
     protected int $timeout;
@@ -35,6 +48,7 @@ final class SendNutgramTelegramAction
             throw new Exception('put [TELEGRAM_BOT_TOKEN] variable to your .env and config [services.telegram.token]');
         }
         $this->token = $token;
+<<<<<<< HEAD
         /** @var string $apiUrl */
         $apiUrl = config('services.telegram.api_url', 'https://api.telegram.org');
         $this->apiUrl = $apiUrl;
@@ -45,6 +59,16 @@ final class SendNutgramTelegramAction
         $this->parseMode = $parseMode;
         $this->debug = (bool) config('telegram.debug', false);
         $this->timeout = app(\Modules\Xot\Actions\Cast\SafeIntCastAction::class)->execute(config('telegram.timeout'), 30);
+=======
+        $this->apiUrl = config('services.telegram.api_url', 'https://api.telegram.org');
+        $this->webhookUrl = config('services.telegram.webhook_url');
+        $this->polling = (bool) config('services.telegram.polling', false);
+
+        // Parametri a livello di root
+        $this->parseMode = config('telegram.parse_mode');
+        $this->debug = (bool) config('telegram.debug', false);
+        $this->timeout = (int) config('telegram.timeout', 30);
+>>>>>>> aurmich/dev
     }
 
     /**
@@ -113,7 +137,10 @@ final class SendNutgramTelegramAction
             
             $statusCode = $response->getStatusCode();
             $responseContent = $response->getBody()->getContents();
+<<<<<<< HEAD
             /** @var array $responseData */
+=======
+>>>>>>> aurmich/dev
             $responseData = json_decode($responseContent, true);
             
             // Salva i dati della risposta nelle variabili dell'azione
@@ -135,7 +162,10 @@ final class SendNutgramTelegramAction
         } catch (ClientException $e) {
             $response = $e->getResponse();
             $statusCode = $response->getStatusCode();
+<<<<<<< HEAD
             /** @var array $responseBody */
+=======
+>>>>>>> aurmich/dev
             $responseBody = json_decode($response->getBody()->getContents(), true);
             
             // Salva i dati dell'errore nelle variabili dell'azione

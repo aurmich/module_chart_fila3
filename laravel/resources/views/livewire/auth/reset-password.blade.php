@@ -77,7 +77,11 @@ new #[Layout('components.layouts.auth')] class extends Component {
     <form wire:submit="resetPassword" class="flex flex-col gap-6">
         <!-- Email Address -->
         <flux:input
+<<<<<<< HEAD
             wire:model="email"
+=======
+            wire:model.live="email"
+>>>>>>> aurmich/dev
             :label="__('Email')"
             type="email"
             required
@@ -86,24 +90,38 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
         <!-- Password -->
         <flux:input
+<<<<<<< HEAD
             wire:model="password"
+=======
+            wire:model.live="password"
+>>>>>>> aurmich/dev
             :label="__('Password')"
             type="password"
             required
             autocomplete="new-password"
             :placeholder="__('Password')"
+<<<<<<< HEAD
             viewable
+=======
+>>>>>>> aurmich/dev
         />
 
         <!-- Confirm Password -->
         <flux:input
+<<<<<<< HEAD
             wire:model="password_confirmation"
+=======
+            wire:model.live="password_confirmation"
+>>>>>>> aurmich/dev
             :label="__('Confirm password')"
             type="password"
             required
             autocomplete="new-password"
             :placeholder="__('Confirm password')"
+<<<<<<< HEAD
             viewable
+=======
+>>>>>>> aurmich/dev
         />
 
         <div class="flex items-center justify-end">

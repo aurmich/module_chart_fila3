@@ -106,7 +106,10 @@ Basandoci sulla documentazione di Laravel Modules ([https://laravelmodules.com/d
 - **Manutenzione**: La separazione tra logica di scrittura (aggregate) e lettura (proiettori) facilita gli aggiornamenti e le ottimizzazioni.
 
 ## Flusso dei Dati
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 ### 4. Interfaccia (Interface Layer)
 
 #### API REST
@@ -116,7 +119,10 @@ Basandoci sulla documentazione di Laravel Modules ([https://laravelmodules.com/d
 
 #### Comandi Console
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Gestione Mercati
 market:create
 market:close

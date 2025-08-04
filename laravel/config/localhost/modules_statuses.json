@@ -25,7 +25,10 @@
     "Seo": true,
     "User": true,
     "Activity": true,
+<<<<<<< HEAD
     "FormBuilder": true,
+=======
+>>>>>>> aurmich/dev
     "Gdpr": true,
     "AI": true
 

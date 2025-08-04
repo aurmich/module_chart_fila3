@@ -16,6 +16,7 @@ class PdfByHtmlAction
 
     public PdfEngineEnum $engine;
 
+<<<<<<< HEAD
     /**
      * Genera un PDF dall'HTML fornito.
      *
@@ -27,6 +28,8 @@ class PdfByHtmlAction
      * @param PdfEngineEnum $engine Engine da utilizzare
      * @return string|BinaryFileResponse
      */
+=======
+>>>>>>> aurmich/dev
     public function execute(
         string $html,
         string $filename = 'my_doc.pdf',
@@ -35,6 +38,7 @@ class PdfByHtmlAction
         string $orientation = 'P',
         PdfEngineEnum $engine = PdfEngineEnum::SPIPU,
     ): string|BinaryFileResponse {
+<<<<<<< HEAD
         $data = PdfData::from([
             'html' => $html,
             'filename' => $filename,
@@ -53,5 +57,15 @@ class PdfByHtmlAction
             'path' => $data->getPath(),
             default => $data->getPath(),
         };
+=======
+        return $data = PdfData::from([
+            'html'->$html,
+            'filename' -> $filename,
+            'disk' -> $disk,
+            'out' -> $out,
+            'orientation' -> $orientation,
+            'engine' -> $engine,
+            ]);
+>>>>>>> aurmich/dev
     }
 }

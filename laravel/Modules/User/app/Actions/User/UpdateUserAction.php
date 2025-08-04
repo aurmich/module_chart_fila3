@@ -4,12 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\User\Actions\User;
 
+<<<<<<< HEAD
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Validation\ValidationException;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+=======
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Validation\ValidationException;
+>>>>>>> aurmich/dev
 
 /**
  * UpdateUserAction: Action generica per l'aggiornamento dei dati utente.
@@ -49,6 +57,7 @@ class UpdateUserAction
             DB::commit();
             
             Log::info("Utente aggiornato con successo", [
+<<<<<<< HEAD
                 'user_id' => $user->getKey(),
                 'updated_fields' => array_keys($updateData)
             ]);
@@ -59,12 +68,23 @@ class UpdateUserAction
             }
             
             return $updatedUser;
+=======
+                'user_id' => $user->id,
+                'updated_fields' => array_keys($updateData)
+            ]);
+            
+            return $user->fresh();
+>>>>>>> aurmich/dev
             
         } catch (\Exception $e) {
             DB::rollBack();
             
             Log::error("Errore nell'aggiornamento utente", [
+<<<<<<< HEAD
                 'user_id' => $user->getKey(),
+=======
+                'user_id' => $user->id ?? null,
+>>>>>>> aurmich/dev
                 'error' => $e->getMessage(),
                 'data' => $updateData ?? []
             ]);
@@ -99,14 +119,22 @@ class UpdateUserAction
                 unset($updateData['password']);
             } else {
                 // Hash della password se presente
+<<<<<<< HEAD
                 $updateData['password'] = Hash::make(SafeStringCastAction::cast($updateData['password']));
+=======
+                $updateData['password'] = Hash::make($updateData['password']);
+>>>>>>> aurmich/dev
             }
         }
         
         // Gestione dell'email per evitare duplicati
         if (isset($updateData['email'])) {
+<<<<<<< HEAD
             $email = SafeStringCastAction::cast($updateData['email']);
             $updateData['email'] = strtolower($email);
+=======
+            $updateData['email'] = strtolower($updateData['email']);
+>>>>>>> aurmich/dev
         }
         
         return $updateData;
@@ -127,7 +155,11 @@ class UpdateUserAction
         if (isset($data['email'])) {
             $existingUser = $user->newQuery()
                 ->where('email', $data['email'])
+<<<<<<< HEAD
                 ->where('id', '!=', $user->getKey())
+=======
+                ->where('id', '!=', $user->id)
+>>>>>>> aurmich/dev
                 ->first();
                 
             if ($existingUser) {

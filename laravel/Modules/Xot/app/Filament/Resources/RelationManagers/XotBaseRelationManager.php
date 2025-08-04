@@ -47,7 +47,11 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     {
         return $this->getResource()::getFormSchema();
     }
+<<<<<<< HEAD
 //*
+=======
+/*
+>>>>>>> aurmich/dev
     public function getTableColumns(): array
     {
         $index=Arr::get($this->getResource()::getPages(),'index');
@@ -55,6 +59,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
             //throw new \Exception('Index page not found');
             return [];
         }
+<<<<<<< HEAD
         /** @phpstan-ignore method.nonObject */
         $index_page=$index->getPage();
         
@@ -68,6 +73,16 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         return $res;
     }
 //*/
+=======
+        if(!method_exists($index,'getTableColumns')){
+            return [];
+        }
+        $res= $index->getTableColumns();
+
+        return $res;
+    }
+*/
+>>>>>>> aurmich/dev
     public function getTableActions(): array
     {
         return [

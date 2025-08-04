@@ -19,4 +19,7 @@ class DomainFactory extends Factory
         return [];
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev

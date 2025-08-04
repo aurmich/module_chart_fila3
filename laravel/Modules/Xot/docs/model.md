@@ -8,7 +8,10 @@ section: content
 ### Versione HEAD
 
 # Model Queuable Actions
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 ## Collegamenti tra versioni di model.md
 * [model.md](../../../Xot/docs/model.md)
 * [model.md](../../../Xot/docs/service/model.md)

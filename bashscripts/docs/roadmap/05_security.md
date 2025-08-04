@@ -7,7 +7,10 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -133,7 +136,10 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 ### Q4 2025
 - Deployment produzione
 - Monitoraggio continuo
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -259,7 +265,10 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 ### Q4 2025
 - Deployment produzione
 - Monitoraggio continuo
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -387,7 +396,10 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 - Monitoraggio continuo
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -518,7 +530,10 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 
 
 aurmich/dev
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -644,7 +659,10 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 ### Q4 2025
 - Deployment produzione
 - Monitoraggio continuo
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -770,7 +788,10 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 ### Q4 2025
 - Deployment produzione
 - Monitoraggio continuo
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica

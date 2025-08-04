@@ -24,7 +24,10 @@ Questa guida fornisce le procedure standard per la risoluzione dei conflitti Git
 
 ### 1. Analisi Preliminare
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Verifica lo stato dei file in conflitto
 git status
 
@@ -97,7 +100,10 @@ class TenantConfig extends XotBaseTenantConfig
 
 ### Git
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Visualizza conflitti in dettaglio
 git diff --name-only --diff-filter=U
 
@@ -113,7 +119,10 @@ git checkout --theirs [file]
 
 ### Composer
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Risolve conflitti nelle dipendenze
 composer update --with-dependencies
 
@@ -161,7 +170,10 @@ composer validate
    - Incorporare nuovi casi
    - Aggiornare le best practices
    - Mantenere gli esempi aggiornati 
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)

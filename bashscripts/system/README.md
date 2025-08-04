@@ -48,7 +48,10 @@ system/
 
 ### Comandi Comuni
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Monitoraggio sistema
 ./monitoring/check_resources.sh
 

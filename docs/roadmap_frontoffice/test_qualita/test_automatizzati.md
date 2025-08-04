@@ -96,7 +96,10 @@ tests/
 ### Comandi Base
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Esegui tutti i test
 php artisan test
 
@@ -113,7 +116,10 @@ php artisan test --coverage-html=coverage
 ### Opzioni Avanzate
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Esegui i test in parallelo
 php artisan test --parallel
 

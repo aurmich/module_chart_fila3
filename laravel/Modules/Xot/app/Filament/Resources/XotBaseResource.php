@@ -5,12 +5,16 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources;
 
 use Filament\Forms;
+<<<<<<< HEAD
 use Filament\Forms\Set;
+=======
+>>>>>>> aurmich/dev
 use function Safe\glob;
 use Filament\Forms\Form;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
+<<<<<<< HEAD
 use Illuminate\Support\HtmlString;
 
 use Illuminate\Contracts\View\View;
@@ -24,6 +28,15 @@ use Filament\Resources\Resource as FilamentResource;
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
+=======
+use Illuminate\Contracts\View\View;
+use Filament\Pages\SubNavigationPosition;
+
+use Illuminate\Contracts\Support\Renderable;
+use Modules\Xot\Actions\ModelClass\CountAction;
+use Filament\Resources\Resource as FilamentResource;
+use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+>>>>>>> aurmich/dev
 
 /**
  * @method static string getUrl(string $name, array<string, mixed> $parameters = [], bool $isAbsolute = true)
@@ -62,9 +75,13 @@ abstract class XotBaseResource extends FilamentResource
     public static function getModel(): string
     {
         if (null != static::$model) {
+<<<<<<< HEAD
             $res = static::$model;
             Assert::subclassOf($res, \Illuminate\Database\Eloquent\Model::class, sprintf('Class %s must extend Eloquent Model', $res));
             return $res;
+=======
+            return static::$model;
+>>>>>>> aurmich/dev
         }
         $moduleName = static::getModuleName();
         $modelName = Str::before(class_basename(static::class), 'Resource');
@@ -79,8 +96,15 @@ abstract class XotBaseResource extends FilamentResource
     /**
      * @return array<string|int,\Filament\Forms\Components\Component>
      */
+<<<<<<< HEAD
     abstract public static function getFormSchema(): array;
     
+=======
+    public static function getFormSchema(): array
+    {
+        return [];
+    }
+>>>>>>> aurmich/dev
 
     final public static function form(Form $form): Form
     {
@@ -187,6 +211,7 @@ abstract class XotBaseResource extends FilamentResource
         return $res;
     }
 
+<<<<<<< HEAD
     public static function getWizardSubmitAction():Htmlable
     {
         $submit_view = 'pub_theme::filament.wizard.submit-button';
@@ -195,10 +220,17 @@ abstract class XotBaseResource extends FilamentResource
         }
         $render= view($submit_view)->render();
         return new HtmlString($render);
+=======
+    public static function getWizardSubmitAction():View
+    {
+        $submit_view = 'pub_theme::filament.wizard.submit-button';
+        return view($submit_view);
+>>>>>>> aurmich/dev
     }
 
     public static function getAttachmentsSchema(bool $multiple=true): array{
         $model = static::getModel();
+<<<<<<< HEAD
         if(!method_exists($model,'getAttachments')){
             return [];
         }
@@ -211,6 +243,51 @@ abstract class XotBaseResource extends FilamentResource
 
     
 
+=======
+        $attachments = $model::$attachments;
+        $uuid = Str::uuid()->toString();
+        $schema = [];
+        
+        foreach ($attachments as $attachment) {
+            $schema[] = Forms\Components\FileUpload::make($attachment)
+                ->disk('local')
+                ->directory('documents/'.$attachment.'/'.$uuid)
+                //->downloadable()
+                //->openable()
+                ->acceptedFileTypes(['application/pdf', 'image/*'])
+                ->maxSize(5120)
+                ->required()
+                ->reorderable()
+                ->multiple($multiple)
+                ->preserveFilenames()
+                ->columnSpanFull()
+                ->afterStateUpdated(function ($state, Forms\Set $set) use ($attachment) {
+                    if (!$state) return;
+                    $state=Arr::wrap($state);
+                    $sessionId = session()->getId();
+                    $sessionDir = "session-uploads/{$sessionId}";
+                    $sessionFiles = [];
+                    
+                    foreach ($state as $file) {
+                        if ($file instanceof \Livewire\Features\SupportFileUploads\TemporaryUploadedFile) {
+                            // Salva direttamente nella directory di sessione
+                            $fileName = time() . '_' . $file->getClientOriginalName();
+                            $sessionPath = $file->storeAs($sessionDir, $fileName, 'local');
+                            $sessionFiles[] = $sessionPath;
+                        } else {
+                            // È già un percorso salvato
+                            $sessionFiles[] = $file;
+                        }
+                    }
+                    
+                    $set($attachment, $sessionFiles);
+                })
+                ;
+        }
+        return $schema;
+    }
+
+>>>>>>> aurmich/dev
     protected static function getStepByName(string $name): Forms\Components\Wizard\Step
     {
         $schema=Str::of($name)->snake()->studly()->prepend('get')->append('Schema')->toString();

@@ -6,12 +6,32 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\SaluteOra\Models\Appointment;
 use Modules\SaluteOra\Models\Doctor;
 use Modules\SaluteOra\Models\Patient;
+<<<<<<< HEAD
+=======
+use Modules\SaluteOra\Models\Studio;
+>>>>>>> aurmich/dev
 use Modules\Tenant\Models\Tenant;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration
 {
+<<<<<<< HEAD
     
+=======
+    /**
+     * Nome della tabella.
+     *
+     * @var string
+     */
+    protected string $table = 'appointments';
+    
+    /**
+     * Classe del modello associato.
+     *
+     * @var string|null
+     */
+    protected ?string $model_class = Appointment::class;
+>>>>>>> aurmich/dev
 
     /**
      * Run the migrations.
@@ -22,8 +42,15 @@ return new class extends XotBaseMigration
         $this->tableCreate(
             function (Blueprint $table): void {
                 $table->id();
+<<<<<<< HEAD
                 $table->foreignIdFor(Patient::class);
                 $table->foreignIdFor(Doctor::class);
+=======
+                //$table->foreignIdFor(Tenant::class);
+                $table->foreignIdFor(Patient::class,'patient_id');
+                $table->foreignIdFor(Doctor::class,'doctor_id');
+                $table->foreignIdFor(Studio::class,'studio_id');
+>>>>>>> aurmich/dev
                 $table->date('date');
                 $table->time('start_time');
                 $table->time('end_time');
@@ -80,5 +107,15 @@ return new class extends XotBaseMigration
         );
     }
 
+<<<<<<< HEAD
    
+=======
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        $this->tableDrop();
+    }
+>>>>>>> aurmich/dev
 };

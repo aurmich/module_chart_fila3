@@ -190,7 +190,10 @@ CREATE TRIGGER patient_data_integrity
 
 #### HTTPS e TLS Configuration
 ```nginx
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Configurazione nginx security headers
 server {
     listen 443 ssl http2;

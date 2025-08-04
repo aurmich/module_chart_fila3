@@ -139,7 +139,10 @@ ALTER TABLE users ADD INDEX idx_created_at (created_at);
 
 ### Script Utili
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Analisi statica del codice
 ./vendor/bin/phpstan analyse
 

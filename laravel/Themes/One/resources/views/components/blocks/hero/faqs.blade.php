@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 <div class="flex flex-col justify-center items-center">
 
     <!-- Back Button -->
     <div class="w-full flex justify-start">
         {{-- DA AGGIORNARE URL --}}
         <a href="{{ route('home') }}">
+=======
+<div class="bg-[#E6EBF7] flex flex-col justify-center items-center">
+
+    <!-- Back Button -->
+    <div class="w-full flex justify-start p-6">
+        {{-- DA AGGIORNARE URL --}}
+        <a href="/it">
+>>>>>>> aurmich/dev
             <div class="cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                      stroke-width="1.5" stroke="currentColor" class="size-9">
@@ -24,58 +33,116 @@
 
         <!-- FAQ Item -->
         <div>
+<<<<<<< HEAD
             <h3 class="text-[#272C4D]">@lang('pub_theme::faqs.questions.who_is_service_for.question.label')</h3>
             <p class="text-[#272C4D] pt-2 text-lg">
                 @lang('pub_theme::faqs.questions.who_is_service_for.answer.label')
+=======
+            <h3 class="text-[#272C4D]">A chi é rivolto questo servizio?</h3>
+            <p class="text-[#272C4D] pt-2">
+                Il portale Salute Orale nasce per aiutare donne in stato di gravidanza con un ISEE inferiore a 20.000 euro.
+                Ogni paziente ha diritto ad una sola visita per la durata del progetto.
+>>>>>>> aurmich/dev
             </p>
         </div>
 
         <div class="mt-5">
+<<<<<<< HEAD
             <h3 class="text-[#272C4D]">@lang('pub_theme::faqs.questions.what_service_offers.question.label')</h3>
             <p class="text-[#272C4D] pt-2 text-lg">
                 @lang('pub_theme::faqs.questions.what_service_offers.answer.label')
+=======
+            <h3 class="text-[#272C4D]">Cosa offre questo servizio?</h3>
+            <p class="text-[#272C4D] pt-2">
+                Il servizio fornisce una prima visita odontoiatrica completa (controllo+igiene) a titolo completamente gratuito
+                per le pazienti in stato di gravidanza.
+>>>>>>> aurmich/dev
             </p>
         </div>
 
         <div class="mt-5">
+<<<<<<< HEAD
             <h3 class="text-[#272C4D]">@lang('pub_theme::faqs.questions.how_to_access.question.label')</h3>
             <p class="text-[#272C4D] pt-2 text-lg">
                 @lang('pub_theme::faqs.questions.how_to_access.answer.label')
+=======
+            <h3 class="text-[#272C4D]">Da dove posso accedere al servizio?</h3>
+            <p class="text-[#272C4D] pt-2">
+                Il servizio è disponibile come webapp mobile first. Questo vuol dire che è disponibile liberamente sul web,
+                non richiede di scaricare nulla, ed è accessibile via pc o smartphone.
+>>>>>>> aurmich/dev
             </p>
         </div>
 
         <div class="mt-5">
+<<<<<<< HEAD
             <h3 class="text-[#272C4D]">@lang('pub_theme::faqs.questions.how_to_request_visit.question.label')</h3>
             <p class="text-[#272C4D] pt-2 text-lg">
                 @lang('pub_theme::faqs.questions.how_to_request_visit.answer.label')
+=======
+            <h3 class="text-[#272C4D]">Come posso chiedere una visita?</h3>
+            <p class="text-[#272C4D] pt-2">
+                Registrati e prenota la tua visita da questo portale. Assicurati di avere con te dati personali,
+                autocertificazione ISEE e certificato medico di gravidanza.
+>>>>>>> aurmich/dev
             </p>
         </div>
 
         <div class="mt-5">
+<<<<<<< HEAD
             <h3 class="text-[#272C4D]">@lang('pub_theme::faqs.questions.how_to_book_appointment.question.label')</h3>
             <p class="text-[#272C4D] pt-2 text-lg">
                 @lang('pub_theme::faqs.questions.how_to_book_appointment.answer.label')
+=======
+            <h3 class="text-[#272C4D]">Come prenoto un appuntamento?</h3>
+            <p class="text-[#272C4D] pt-2">
+                Una volta registrata potrai cercare tutti gli studi dentistici attivi all’interno di un’area precisa
+                e scegliere quello migliore in base a posizione e disponibilità oraria.
+>>>>>>> aurmich/dev
             </p>
         </div>
 
         <div class="mt-5">
+<<<<<<< HEAD
             <h3 class="text-[#272C4D]">@lang('pub_theme::faqs.questions.location_flexibility.question.label')</h3>
             <p class="text-[#272C4D] pt-2 text-lg">
                 @lang('pub_theme::faqs.questions.location_flexibility.answer.label')
+=======
+            <h3 class="text-[#272C4D]">Devo prenotare uno studio vicino a casa mia?</h3>
+            <p class="text-[#272C4D] pt-2">
+                Puoi prenotare il tuo appuntamento dove vuoi, a patto di riuscire a raggiungere lo studio in tempo per la tua visita.
+>>>>>>> aurmich/dev
             </p>
         </div>
 
         <div class="mt-5">
+<<<<<<< HEAD
             <h3 class="text-[#272C4D]">@lang('pub_theme::faqs.questions.appointment_rejection.question.label')</h3>
             <p class="text-[#272C4D] pt-2 text-lg">
                 @lang('pub_theme::faqs.questions.appointment_rejection.answer.label')
+=======
+            <h3 class="text-[#272C4D]">Cosa succede se l'appuntamento viene rifiutato?</h3>
+            <p class="text-[#272C4D] pt-2">
+                Può essere che il dentista rifiuti il tuo appuntamento. Non preoccuparti: potrai prenotare un nuovo appuntamento
+                cambiando orario, dentista o area di ricerca.
+>>>>>>> aurmich/dev
             </p>
         </div>
 
         <div class="mt-5">
+<<<<<<< HEAD
             <h3 class="text-[#272C4D]">@lang('pub_theme::faqs.questions.cancelling_appointment.question.label')</h3>
             <p class="text-[#272C4D] pt-2 text-lg">
                 @lang('pub_theme::faqs.questions.cancelling_appointment.answer.label')
+=======
+            <h3 class="text-[#272C4D]">Cosa devo fare se non posso andare ad un appuntamento già accettato?</h3>
+            <p class="text-[#272C4D] pt-2">
+                Se non riesci ad andare ad un appuntamento già confermato, contatta il medico appena possibile
+                (almeno 24h prima dell’appuntamento) e informalo della tua assenza!
+                In questo modo potrai prenotare una nuova visita. Troverai i suoi contatti (telefono e mail)
+                all’interno della tua scheda appuntamento.
+                <strong>MANCARE UN APPUNTAMENTO SENZA CONTATTARE IL MEDICO IMPEDISCE DI ACCEDERE NUOVAMENTE AL SERVIZIO.</strong>
+>>>>>>> aurmich/dev
             </p>
         </div>
 
@@ -88,29 +155,59 @@
             <div class="pt-5 flex flex-col lg:flex-row justify-center items-center">
 
                 <!-- Card 1 -->
+<<<<<<< HEAD
                 <div class="w-64 h-44 bg-cover bg-[#FCD5D0] rounded-[25px] shadow-2xl m-5 transform origin-center scale-100 hover:scale-110 transition-transform duration-100">
+=======
+                <div class="w-64 h-44 bg-cover bg-[#FCD5D0] rounded-[25px] shadow-2xl m-5">
+>>>>>>> aurmich/dev
                     <div class="grid grid-cols-2">
                         <div class="flex justify-center">
                             <img class="h-44 px-2 pt-2" src="/img/woman-characterrr.png" />
                         </div>
                         <div class="flex flex-col items-center justify-center">
                             <span class="text-[#FF5F7E] text-xl lg:text-2xl">
+<<<<<<< HEAD
                                 Vai alla guida
                             </span>
+=======
+                                Vai <br /> alla <br /> guida
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                 viewBox="0 0 24 24" stroke-width="1.5"
+                                 stroke="#FF5F7E" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="m16.49 12 3.75 3.75m0 0-3.75 3.75m3.75-3.75H3.74V4.499" />
+                            </svg>
+>>>>>>> aurmich/dev
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
+<<<<<<< HEAD
                 <div class="w-64 h-44 bg-[#FCD5D0] rounded-[25px] shadow-2xl m-5 transform origin-center scale-100 hover:scale-110 transition-transform duration-100">
+=======
+                <div class="w-64 h-44 bg-[#FCD5D0] rounded-[25px] shadow-2xl m-5">
+>>>>>>> aurmich/dev
                     <div class="grid grid-cols-2 gap-2">
                         <div class="flex justify-center">
                             <img class="h-44 p-2" src="/img/dentist.png" />
                         </div>
                         <div class="flex flex-col items-center justify-center">
                             <span class="text-[#FF5F7E] text-xl lg:text-2xl">
+<<<<<<< HEAD
                                 Vai alla guida
                             </span>
+=======
+                                Vai <br /> alla <br /> guida
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                 viewBox="0 0 24 24" stroke-width="1.5"
+                                 stroke="#FF5F7E" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="m16.49 12 3.75 3.75m0 0-3.75 3.75m3.75-3.75H3.74V4.499" />
+                            </svg>
+>>>>>>> aurmich/dev
                         </div>
                     </div>
                 </div>

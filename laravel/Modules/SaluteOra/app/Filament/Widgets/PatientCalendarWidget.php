@@ -13,12 +13,16 @@ use Modules\SaluteOra\Models\Appointment;
 use Modules\SaluteOra\Traits\HasFullCalendarConfig;
 use Saade\FilamentFullCalendar\Data\EventData;
 use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
+<<<<<<< HEAD
 use function Safe\strtotime;
+=======
+>>>>>>> aurmich/dev
 
 /**
  * Widget FullCalendar per pazienti.
  *
  * Permette ai pazienti di visualizzare i propri appuntamenti in modalità sola lettura.
+<<<<<<< HEAD
  */
 class PatientCalendarWidget extends FullCalendarWidget
 {
@@ -30,6 +34,13 @@ class PatientCalendarWidget extends FullCalendarWidget
      * @var string
      */
     public string $currentDate;
+=======
+ * Utilizza il trait HasFullCalendarConfig per configurazioni comuni.
+ */
+class PatientCalendarWidget extends FullCalendarWidget
+{
+    use HasFullCalendarConfig;
+>>>>>>> aurmich/dev
 
     /**
      * Modello associato al widget.
@@ -51,6 +62,7 @@ class PatientCalendarWidget extends FullCalendarWidget
      * @var string|null
      */
     protected static ?string $maxHeight = '600px';
+<<<<<<< HEAD
     
     /**
      * Inizializza il widget impostando la data corrente.
@@ -112,6 +124,8 @@ class PatientCalendarWidget extends FullCalendarWidget
         $this->currentDate = now()->format('Y-m-d');
         $this->dispatch('refetchEvents');
     }
+=======
+>>>>>>> aurmich/dev
 
     /**
      * Verifica se l'utente può visualizzare il widget.
@@ -133,6 +147,7 @@ class PatientCalendarWidget extends FullCalendarWidget
     {
         $cacheKey = $this->getCacheKey($fetchInfo);
 
+<<<<<<< HEAD
         /** @var array<int, array<string, mixed>> $events */
         $events = cache()->remember($cacheKey, 300, function () use ($fetchInfo): array {
             return Appointment::query()
@@ -184,6 +199,18 @@ class PatientCalendarWidget extends FullCalendarWidget
                 'status' => $appointment->status,
             ],
         ];
+=======
+        return cache()->remember($cacheKey, 300, function () use ($fetchInfo) {
+            return Appointment::query()
+                ->where('patient_id', Auth::id())
+                ->whereBetween('start_time', [$fetchInfo['start'], $fetchInfo['end']])
+                ->with(['doctor', 'studio'])
+                ->limit(100)
+                ->get()
+                ->map(fn($appointment) => $this->transformToEventData($appointment))
+                ->toArray();
+        });
+>>>>>>> aurmich/dev
     }
 
     /**
@@ -230,6 +257,7 @@ class PatientCalendarWidget extends FullCalendarWidget
     public function onEventClick(array $info): void
     {
         // I pazienti possono solo visualizzare i dettagli
+<<<<<<< HEAD
         if (!isset($info['event']) || !is_array($info['event'])) {
             return;
         }
@@ -244,16 +272,30 @@ class PatientCalendarWidget extends FullCalendarWidget
         }
     }
 
+=======
+        $this->dispatch('open-appointment-details', [
+            'appointmentId' => $info['event']['id'],
+            'readonly' => true,
+        ]);
+    }
+
+
+
+>>>>>>> aurmich/dev
     /**
      * Gestisce il drop di eventi.
      * I pazienti non possono spostare appuntamenti.
      *
+<<<<<<< HEAD
      * @param array<string, mixed> $event
      * @param array<string, mixed> $oldEvent
      * @param array<string, mixed> $relatedEvents
      * @param array<string, mixed> $delta
      * @param array<string, mixed>|null $oldResource
      * @param array<string, mixed>|null $newResource
+=======
+     * @param array<string, mixed> $info
+>>>>>>> aurmich/dev
      * @return bool
      */
     public function onEventDrop(array $event, array $oldEvent, array $relatedEvents, array $delta, ?array $oldResource, ?array $newResource): bool
@@ -266,11 +308,15 @@ class PatientCalendarWidget extends FullCalendarWidget
      * Gestisce il resize di eventi.
      * I pazienti non possono ridimensionare appuntamenti.
      *
+<<<<<<< HEAD
      * @param array<string, mixed> $event
      * @param array<string, mixed> $oldEvent
      * @param array<string, mixed> $relatedEvents
      * @param array<string, mixed> $startDelta
      * @param array<string, mixed> $endDelta
+=======
+     * @param array<string, mixed> $info
+>>>>>>> aurmich/dev
      * @return bool
      */
     public function onEventResize(array $event, array $oldEvent, array $relatedEvents, array $startDelta, array $endDelta): bool

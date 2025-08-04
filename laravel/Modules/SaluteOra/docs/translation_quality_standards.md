@@ -49,6 +49,7 @@ return [ /* contenuto */ ];
 'campo' => 'Etichetta semplice',  // NON CONFORME
 ```
 
+<<<<<<< HEAD
 ### 4. Helper Text OBBLIGATORIO
 ```php
 // ✅ HELPER TEXT CORRETTO
@@ -67,6 +68,8 @@ return [ /* contenuto */ ];
 ],
 ```
 
+=======
+>>>>>>> aurmich/dev
 ## 🏥 Traduzioni Specifiche Sanitarie
 
 ### Campi Anagrafici Standard
@@ -75,29 +78,41 @@ return [ /* contenuto */ ];
     'label' => 'Nome',
     'placeholder' => 'Inserisci il nome',
     'help' => 'Nome del paziente come da documento d\'identità',
+<<<<<<< HEAD
     'description' => 'Nome dell\'utente',
     'helper_text' => '',
+=======
+>>>>>>> aurmich/dev
 ],
 'last_name' => [
     'label' => 'Cognome', 
     'placeholder' => 'Inserisci il cognome',
     'help' => 'Cognome del paziente come da documento d\'identità',
+<<<<<<< HEAD
     'description' => 'Cognome dell\'utente',
     'helper_text' => '',
+=======
+>>>>>>> aurmich/dev
 ],
 'fiscal_code' => [
     'label' => 'Codice fiscale',
     'placeholder' => 'Inserisci il codice fiscale',
     'help' => 'Codice fiscale come da tessera sanitaria',
+<<<<<<< HEAD
     'description' => 'Codice fiscale dell\'utente',
     'helper_text' => '',
+=======
+>>>>>>> aurmich/dev
 ],
 'birth_date' => [
     'label' => 'Data di nascita',
     'placeholder' => 'Seleziona la data di nascita',
     'help' => 'Data di nascita nel formato gg/mm/aaaa',
+<<<<<<< HEAD
     'description' => 'Data di nascita dell\'utente',
     'helper_text' => '',
+=======
+>>>>>>> aurmich/dev
 ],
 ```
 
@@ -107,8 +122,11 @@ return [ /* contenuto */ ];
     'label' => 'Urgenza',
     'placeholder' => 'Seleziona il livello di urgenza',
     'help' => 'Classificazione dell\'urgenza medica',
+<<<<<<< HEAD
     'description' => 'Livello di urgenza dell\'appuntamento',
     'helper_text' => '',
+=======
+>>>>>>> aurmich/dev
     'options' => [
         'low' => 'Bassa priorità',
         'medium' => 'Media priorità', 
@@ -120,8 +138,11 @@ return [ /* contenuto */ ];
     'label' => 'Anamnesi',
     'placeholder' => 'Inserisci l\'anamnesi del paziente',
     'help' => 'Storia medica e patologie pregresse',
+<<<<<<< HEAD
     'description' => 'Anamnesi medica del paziente',
     'helper_text' => '',
+=======
+>>>>>>> aurmich/dev
 ],
 ```
 
@@ -129,10 +150,13 @@ return [ /* contenuto */ ];
 ```php
 'appointment_status' => [
     'label' => 'Stato appuntamento',
+<<<<<<< HEAD
     'placeholder' => 'Seleziona lo stato',
     'help' => 'Stato corrente dell\'appuntamento',
     'description' => 'Stato dell\'appuntamento medico',
     'helper_text' => '',
+=======
+>>>>>>> aurmich/dev
     'options' => [
         'scheduled' => 'Programmato',
         'confirmed' => 'Confermato',
@@ -153,7 +177,10 @@ Il modulo implementa controlli automatici per:
 - ✅ Struttura espansa completa
 - ✅ Traduzioni semantiche corrette
 - ✅ Campi anagrafici standard
+<<<<<<< HEAD
 - ✅ Helper text non uguali alle chiavi
+=======
+>>>>>>> aurmich/dev
 
 ### Workflow di Validazione
 Eseguire `/translation-validate` per attivare:
@@ -172,7 +199,10 @@ Modules/SaluteOra/lang/it/
 ├── doctor_availability.php # Disponibilità medici
 ├── patient.php             # Traduzioni pazienti ⭐ STANDARDIZZATO
 ├── patient-resource.php    # Risorsa pazienti
+<<<<<<< HEAD
 ├── profile_widget.php      # Widget profilo ⭐ CORRETTO (Gennaio 2025)
+=======
+>>>>>>> aurmich/dev
 ├── studio.php              # Traduzioni studi medici
 ├── user.php                # Traduzioni utenti
 └── widgets.php             # Traduzioni widget
@@ -188,6 +218,7 @@ Il file `patient.php` rappresenta l'**eccellenza** nella standardizzazione:
 - ✅ Campi anagrafici standardizzati
 - ✅ Terminologia medica appropriata
 
+<<<<<<< HEAD
 ### File profile_widget.php - Caso Studio (Gennaio 2025)
 Il file `profile_widget.php` è stato **corretto** seguendo gli standard:
 - ✅ Convertito da `array()` a `[]`
@@ -196,6 +227,8 @@ Il file `profile_widget.php` è stato **corretto** seguendo gli standard:
 - ✅ Impostato `helper_text = ''` dove uguale alla chiave
 - ✅ Mantenuta coerenza multilingua (it, en, de)
 
+=======
+>>>>>>> aurmich/dev
 ### Navigation Unificata
 ```php
 'navigation' => [
@@ -233,7 +266,10 @@ Il file `profile_widget.php` è stato **corretto** seguendo gli standard:
 
 ### Casi di Studio Risolti
 - **Dicembre 2024**: `patient.php` convertito da `array()` a `[]`
+<<<<<<< HEAD
 - **Gennaio 2025**: `profile_widget.php` corretto con traduzioni semantiche
+=======
+>>>>>>> aurmich/dev
 - **Standardizzazione**: Campi anagrafici unificati su semantic naming
 - **UX Improvement**: Gruppo navigazione unificato in "Agenda"
 
@@ -244,6 +280,7 @@ Il file `profile_widget.php` è stato **corretto** seguendo gli standard:
 - **Strict Types**: 100% file con `declare(strict_types=1)`
 - **Struttura Espansa**: 100% campi con label/placeholder/help
 - **Traduzioni Semantiche**: 100% italiano corretto
+<<<<<<< HEAD
 - **Helper Text**: 100% non uguali alle chiavi
 
 ### Controllo Continuo
@@ -257,6 +294,13 @@ grep -r "array(" Modules/SaluteOra/lang/ --include="*.php" | wc -l
 # Comando per verifica helper_text
 grep -r "helper_text.*=>.*'[a-z_]*'" Modules/SaluteOra/lang/ --include="*.php" | wc -l
 
+=======
+
+### Controllo Continuo
+```bash
+# Comando per verifica stato qualità
+grep -r "array(" Modules/SaluteOra/lang/ --include="*.php" | wc -l
+>>>>>>> aurmich/dev
 # Risultato atteso: 0
 ```
 
@@ -266,7 +310,10 @@ grep -r "helper_text.*=>.*'[a-z_]*'" Modules/SaluteOra/lang/ --include="*.php" |
 - [Translation Validation Workflow](workflows/translation_validation_workflow.md)
 - [Regole .cursor](../../.cursor/rules/translation_files_array_syntax.mdc)
 - [Regole .windsurf](../../.windsurf/rules/translation_files_array_syntax.mdc)
+<<<<<<< HEAD
 - [Helper Text Standards](../../../docs/translation-helper-text-standards.md)
+=======
+>>>>>>> aurmich/dev
 
 ### Standard di Riferimento
 - [PSR-12 Coding Standard](https://www.php-fig.org/psr/psr-12/)
@@ -277,6 +324,10 @@ grep -r "helper_text.*=>.*'[a-z_]*'" Modules/SaluteOra/lang/ --include="*.php" |
 
 **IL MODULO SALUTEORA È IL BENCHMARK DI QUALITÀ PER LE TRADUZIONI LARAXOT**
 
+<<<<<<< HEAD
 *Aggiornato: Gennaio 2025*  
+=======
+*Aggiornato: Dicembre 2024*  
+>>>>>>> aurmich/dev
 *Status: ✅ FULL COMPLIANCE*  
 *Prossimo Review: Controllo automatico continuo* 

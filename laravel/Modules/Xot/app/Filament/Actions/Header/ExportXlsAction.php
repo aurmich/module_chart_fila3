@@ -30,14 +30,20 @@ class ExportXlsAction extends Action
                 $transKey .= '.fields';
                 $query = $livewire->getFilteredTableQuery();
                 $rows = $query->get();
+<<<<<<< HEAD
                 
+=======
+>>>>>>> aurmich/dev
                 $resource = $livewire->getResource();
                 
                 /** @var array<int, string> $fields */
                 $fields = [];
                 if (method_exists($resource, 'getXlsFields')) {
                     $rawFields = $resource::getXlsFields($livewire->tableFilters);
+<<<<<<< HEAD
                   
+=======
+>>>>>>> aurmich/dev
                     if (is_array($rawFields)) {
                         $fields = array_map(static function ($field): string {
                             if (is_object($field) && method_exists($field, '__toString')) {

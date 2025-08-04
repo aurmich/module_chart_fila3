@@ -7,14 +7,20 @@ return [
             'placeholder' => 'Enter template name',
             'help' => 'The identifying name of the template',
             'tooltip' => 'This field is required',
+<<<<<<< HEAD
             'helper_text' => 'Inserisci un nome descrittivo per il template',
+=======
+>>>>>>> aurmich/dev
         ],
         'subject' => [
             'label' => 'Subject',
             'placeholder' => 'Enter notification subject',
             'help' => 'The subject that will appear in the notification',
             'tooltip' => 'This field is required',
+<<<<<<< HEAD
             'helper_text' => 'Oggetto visualizzato nella notifica (es. oggetto email)',
+=======
+>>>>>>> aurmich/dev
         ],
         'body_text' => [
             'label' => 'Text',
@@ -34,6 +40,7 @@ return [
             'help' => 'The data used to display the preview',
             'tooltip' => 'JSON format',
         ],
+<<<<<<< HEAD
         'description' => [
             'label' => 'Descrizione',
             'tooltip' => 'Descrizione del template',
@@ -89,6 +96,13 @@ return [
         'name' => 'Template Notifiche',
         'plural' => 'Template Notifiche',
         'sort' => '48',
+=======
+    ],
+    'navigation' => [
+        'label' => 'Notification Templates',
+        'group' => 'Notifications',
+        'icon' => 'heroicon-o-bell',
+>>>>>>> aurmich/dev
     ],
     'messages' => [
         'success' => [
@@ -100,6 +114,7 @@ return [
             'not_found' => 'Template not found',
             'unauthorized' => 'Unauthorized',
         ],
+<<<<<<< HEAD
         'error' => 'Si è verificato un errore durante l\'operazione',
         'confirmation' => 'Sei sicuro di voler procedere con questa operazione?',
         'template_created' => 'Il template è stato creato con successo',
@@ -134,3 +149,7 @@ return [
         ],
     ],
 ];
+=======
+    ],
+]; 
+>>>>>>> aurmich/dev

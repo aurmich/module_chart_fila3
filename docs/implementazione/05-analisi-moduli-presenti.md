@@ -35,7 +35,10 @@ Durante l'analisi dell'integrazione dei moduli Laraxot, è stata fatta una scope
 Per completare l'installazione dei moduli Laraxot mancanti, procederemo con l'integrazione dei tre moduli ancora assenti:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 1. Modulo Notify (sistema notifiche)
 git subtree add --prefix laravel/Modules/Notify git@github.com:laraxot/module_notify_fila3.git dev --squash
 

@@ -15,7 +15,10 @@ class RecordNotification extends Notification
     protected Model $record;
     protected string $slug;
     public array $data=[];
+<<<<<<< HEAD
     public array $attachments=[];
+=======
+>>>>>>> aurmich/dev
 
     public function __construct(Model $record, string $slug)
     {
@@ -24,10 +27,14 @@ class RecordNotification extends Notification
         
 
     }
+<<<<<<< HEAD
     /** 
      * @param object $notifiable
      * @return array<string|class-string>
      */
+=======
+
+>>>>>>> aurmich/dev
     public function via($notifiable): array
     {
         $channels = [];
@@ -44,6 +51,7 @@ class RecordNotification extends Notification
         return $channels;
     }
 
+<<<<<<< HEAD
     /**
      * @param object $notifiable
      * @return SpatieEmail
@@ -56,16 +64,28 @@ class RecordNotification extends Notification
         
         $email=$email->addAttachments($this->attachments);
         
+=======
+    public function toMail($notifiable): SpatieEmail
+    {
+        $email = new SpatieEmail($this->record, $this->slug);
+        $email=$email->mergeData($this->data);
+
+>>>>>>> aurmich/dev
         // Importante: garantisci che ci sia sempre un destinatario
         if (method_exists($notifiable, 'routeNotificationFor')) {
             // Ottieni l'email dal notifiable
             $to=$notifiable->routeNotificationFor('mail');
             $email->to($to);
+<<<<<<< HEAD
             if ($to) {
                 $email->setRecipient($to);
             }
         }
         
+=======
+        }
+
+>>>>>>> aurmich/dev
         return $email;
     }
 
@@ -78,6 +98,7 @@ class RecordNotification extends Notification
     public function toSms(object $notifiable): ?SmsData
     {
         $email = new SpatieEmail($this->record, $this->slug);
+<<<<<<< HEAD
         
         $email=$email->mergeData($this->data);
        
@@ -97,6 +118,29 @@ class RecordNotification extends Notification
             'to'=>$to,
             'body'=>$email->buildSms(),
         ]);
+=======
+        /*
+        dddx([
+            'methods' => get_class_methods($email),
+           // 'text' => $email->text(),
+           'getHtmlLayout' => $email->getHtmlLayout(),
+
+
+        ]);
+        */
+        // If the notifiable entity has a routeNotificationForSms method,
+        // we'll use that to get the destination phone number
+        //dddx($notifiable);//Illuminate\Notifications\AnonymousNotifiable
+
+        if (method_exists($notifiable, 'routeNotificationFor')) {
+            $to = $notifiable->routeNotificationFor('sms');
+        }
+        //if($to==null){
+        //    return null;
+        //}
+
+        $smsData = SmsData::from(['from'=>'Xot','to'=>$to,'body'=>'test']);
+>>>>>>> aurmich/dev
 
 
         return $smsData;
@@ -107,6 +151,7 @@ class RecordNotification extends Notification
         $this->data=array_merge($this->data,$data);
         return $this;
     }
+<<<<<<< HEAD
 
     public function addAttachments(array $attachments): self
     {
@@ -114,3 +159,6 @@ class RecordNotification extends Notification
         return $this;
     }
 }
+=======
+}
+>>>>>>> aurmich/dev

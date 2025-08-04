@@ -8,6 +8,10 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Notification;
 use Modules\Notify\Datas\SmsData;
+<<<<<<< HEAD
+=======
+use Modules\Notify\Notifications\Channels\SmsChannel;
+>>>>>>> aurmich/dev
 
 /**
  * Class SmsNotification
@@ -45,6 +49,7 @@ class SmsNotification extends Notification implements ShouldQueue
         if ($content instanceof SmsData) {
             $this->smsData = $content;
         } else {
+<<<<<<< HEAD
             $to = $config['to'] ?? '';
             $from = $config['from'] ?? '';
             
@@ -54,6 +59,18 @@ class SmsNotification extends Notification implements ShouldQueue
             $this->smsData->to = (string) $to;
             /** @phpstan-ignore-next-line */
             $this->smsData->from = (string) $from;
+=======
+            $this->smsData = new SmsData();
+            $this->smsData->body = $content;
+            
+            if (isset($config['to'])) {
+                $this->smsData->to = $config['to'];
+            }
+            
+            if (isset($config['from'])) {
+                $this->smsData->from = $config['from'];
+            }
+>>>>>>> aurmich/dev
         }
         
         $this->config = $config;
@@ -67,8 +84,12 @@ class SmsNotification extends Notification implements ShouldQueue
      */
     public function via(mixed $notifiable): array
     {
+<<<<<<< HEAD
         // TODO: Implementare SmsChannel quando disponibile
         return ['sms'];
+=======
+        return [SmsChannel::class];
+>>>>>>> aurmich/dev
     }
 
     /**
@@ -81,9 +102,14 @@ class SmsNotification extends Notification implements ShouldQueue
     {
         // If the notifiable entity has a routeNotificationForSms method,
         // we'll use that to get the destination phone number
+<<<<<<< HEAD
         if (is_object($notifiable) && method_exists($notifiable, 'routeNotificationForSms')) {
             $routeResult = $notifiable->routeNotificationForSms($this);
             $this->smsData->to = (string) ($routeResult ?? '');
+=======
+        if (method_exists($notifiable, 'routeNotificationForSms')) {
+            $this->smsData->to = $notifiable->routeNotificationForSms($this);
+>>>>>>> aurmich/dev
         }
 
         return $this->smsData;
@@ -106,7 +132,11 @@ class SmsNotification extends Notification implements ShouldQueue
      */
     public function getProvider(): ?string
     {
+<<<<<<< HEAD
         $provider = $this->config['provider'] ?? null;
         return is_string($provider) ? $provider : null;
+=======
+        return $this->config['provider'] ?? null;
+>>>>>>> aurmich/dev
     }
 }

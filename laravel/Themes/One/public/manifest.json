@@ -1,6 +1,81 @@
 {
   "resources/css/app.css": {
+<<<<<<< HEAD
     "file": "assets/app-7PoISLAE.css",
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "file": "assets/app-CizGm5hC.css",
+=======
+    "file": "assets/app-Dph1A97d.css",
+>>>>>>> 8acca8e8 (- continuo style pagina di registrazione;)
+=======
+    "file": "assets/app-Dph1A97d.css",
+=======
+    "file": "assets/app-CEDafcW-.css",
+>>>>>>> 7f5c184c (feat(gdpr): add ConsentType enum to define available consent types and their labels for better consent management)
+>>>>>>> adac82bd (rebase)
+=======
+    "file": "assets/app-DpVlLzWv.css",
+>>>>>>> c9dfd052 (style: update CSS styles for improved consistency and readability across the application)
+=======
+    "file": "assets/app-B1ErEWAr.css",
+>>>>>>> cecdd8e5 (- rename file dettaglio-paziente;)
+=======
+    "file": "assets/app-CiFaG0te.css",
+>>>>>>> 58d017c2 (- aggiornato stile dettaglio paziente)
+=======
+    "file": "assets/app-DdH0QB6i.css",
+>>>>>>> ff138484 (- update dettaglio paziente)
+=======
+    "file": "assets/app-C0SPCnMN.css",
+>>>>>>> b2a39a21 (- update footer)
+=======
+    "file": "assets/app-DX1dIpus.css",
+>>>>>>> 89a8313a (- update primary colors)
+=======
+    "file": "assets/app-CfdGE3gz.css",
+>>>>>>> 6a8817e6 (- creata pagina dettaglio dottore)
+=======
+    "file": "assets/app-NB7MBAoQ.css",
+>>>>>>> 46477621 (- update contenuto pagine appuntamento)
+=======
+    "file": "assets/app-C-UfjyNv.css",
+>>>>>>> eb36972d (- create pagina: "partners";)
+=======
+    "file": "assets/app-B6ruuQZt.css",
+>>>>>>> f7d3ce4f (- update landing-page;)
+=======
+    "file": "assets/app-CVLTvScD.css",
+>>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
+=======
+    "file": "assets/app-lXfxA-ro.css",
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+    "file": "assets/app-nbmSffLk.css",
+>>>>>>> 9dcbbc15 (- updated login e reset view)
+=======
+    "file": "assets/app-CmtP7Gk3.css",
+>>>>>>> c0c82b7e (- updated template email)
+=======
+    "file": "assets/app-DLjS0eik.css",
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
+>>>>>>> aurmich/dev
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -10,4 +85,8 @@
     "src": "resources/js/app.js",
     "isEntry": true
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> aurmich/dev

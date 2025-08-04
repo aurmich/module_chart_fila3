@@ -44,7 +44,11 @@ new #[Layout('components.layouts.auth')] class extends Component {
     <form wire:submit="register" class="flex flex-col gap-6">
         <!-- Name -->
         <flux:input
+<<<<<<< HEAD
             wire:model="name"
+=======
+            wire:model.live="name"
+>>>>>>> aurmich/dev
             :label="__('Name')"
             type="text"
             required
@@ -55,7 +59,11 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
         <!-- Email Address -->
         <flux:input
+<<<<<<< HEAD
             wire:model="email"
+=======
+            wire:model.live="email"
+>>>>>>> aurmich/dev
             :label="__('Email address')"
             type="email"
             required
@@ -65,24 +73,38 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
         <!-- Password -->
         <flux:input
+<<<<<<< HEAD
             wire:model="password"
+=======
+            wire:model.live="password"
+>>>>>>> aurmich/dev
             :label="__('Password')"
             type="password"
             required
             autocomplete="new-password"
             :placeholder="__('Password')"
+<<<<<<< HEAD
             viewable
+=======
+>>>>>>> aurmich/dev
         />
 
         <!-- Confirm Password -->
         <flux:input
+<<<<<<< HEAD
             wire:model="password_confirmation"
+=======
+            wire:model.live="password_confirmation"
+>>>>>>> aurmich/dev
             :label="__('Confirm password')"
             type="password"
             required
             autocomplete="new-password"
             :placeholder="__('Confirm password')"
+<<<<<<< HEAD
             viewable
+=======
+>>>>>>> aurmich/dev
         />
 
         <div class="flex items-center justify-end">
@@ -92,8 +114,13 @@ new #[Layout('components.layouts.auth')] class extends Component {
         </div>
     </form>
 
+<<<<<<< HEAD
     <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-600 dark:text-zinc-400">
         <span>{{ __('Already have an account?') }}</span>
+=======
+    <div class="space-x-1 text-center text-sm text-zinc-600 dark:text-zinc-400">
+        {{ __('Already have an account?') }}
+>>>>>>> aurmich/dev
         <flux:link :href="route('login')" wire:navigate>{{ __('Log in') }}</flux:link>
     </div>
 </div>

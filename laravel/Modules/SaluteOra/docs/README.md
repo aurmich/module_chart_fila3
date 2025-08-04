@@ -21,7 +21,10 @@ Il modulo Patient gestisce tutte le informazioni relative ai pazienti e ai medic
 - [Single Table Inheritance](single_table_inheritance.md) - Pattern STI per i modelli utente
 - [Best Practices per l'Ereditarietà](inheritance_best_practices.md) - Linee guida per l'ereditarietà delle classi
 - [Model Inheritance Pattern](model_inheritance_pattern.md) - Pattern di ereditarietà per i modelli
+<<<<<<< HEAD
 - [Policies di Autorizzazione](policies.md) - Sistema completo di autorizzazioni e permessi
+=======
+>>>>>>> aurmich/dev
 
 ### Best Practices
 
@@ -33,7 +36,10 @@ Il modulo Patient gestisce tutte le informazioni relative ai pazienti e ai medic
 
 ### Widgets
 
+<<<<<<< HEAD
 - [StudioFilterWidget](widgets/studio-filter-widget.md) - Widget per la selezione e gestione degli studi medici
+=======
+>>>>>>> aurmich/dev
 - [FindDoctorAndAppointmentWidget Errors](widgets/find-doctor-appointment-widget-errors.md) - Analisi e soluzioni per il widget di prenotazione appuntamenti
 - [📊 FindDoctorAndAppointmentWidget Analysis](widgets/find-doctor-appointment-widget-analysis.md) - **CORE**: Analisi completa e roadmap implementazione Step 2, integrazione componenti UI riutilizzabili
 - [🛠️ FindDoctorWidget Step 2 Implementation](widgets/find-doctor-appointment-widget-step2-implementation.md) - **IMPLEMENTATION**: Guida dettagliata implementazione secondo step con componenti UI creati
@@ -42,7 +48,10 @@ Il modulo Patient gestisce tutte le informazioni relative ai pazienti e ai medic
 
 - [🚨 Array to String Conversion User Registration](errori/array-to-string-conversion-user-registration.md) - **CRITICO**: Errore durante registrazione paziente con allegati, conflitto architetturale Media Library vs Database
 - [📧 MissingMailTemplate SpatieEmail](errori/missing-mail-template-spatie-email.md) - **CRITICO**: Template email mancante durante invio notifiche, conflitto timing Spatie MailTemplates
+<<<<<<< HEAD
 - [🔄 Sync Pivot Schedule Issue](sync_pivot_schedule_issue.md) - **CRITICO**: Campo schedule non aggiornato nel pivot durante sync, problema con belongsToManyX
+=======
+>>>>>>> aurmich/dev
 
 ### Filament
 
@@ -793,6 +802,7 @@ Il modulo implementa diversi widget Filament per le dashboard:
 
 - **DoctorCalendarWidget**: Implementazione perfetta con trait `HasFullCalendarConfig`, multi-tenancy, e security robusta
 - **BaseTransition Pattern**: Capolavoro di DRY & KISS per gestione stati
+<<<<<<< HEAD
 
 ### Policy e Autorizzazioni
 
@@ -844,3 +854,5 @@ class ModelPolicy extends XotBasePolicy
 - Controlli basati su ruoli e relazioni tra modelli
 - Metodi specifici per azioni di dominio (es. `confirm`, `cancel`, `finalize`)
 - Documentazione completa con PHPDoc
+=======
+>>>>>>> aurmich/dev

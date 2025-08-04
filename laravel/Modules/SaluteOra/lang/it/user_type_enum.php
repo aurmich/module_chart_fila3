@@ -21,6 +21,7 @@ return [
         'icon' => 'heroicon-o-user',
         'image' => '/img/donna-personaggio.png',
     ],
+<<<<<<< HEAD
     'descriptions' => [
         'patient' => 'Destinatario di servizi sanitari',
         'doctor' => 'Professionista sanitario',
@@ -31,4 +32,6 @@ return [
         'doctor' => 'Dottori',
         'admin' => 'Amministratori',
     ],
+=======
+>>>>>>> aurmich/dev
 ];

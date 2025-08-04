@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <x-filament-widgets::widget>
+=======
+<x-filament-widgets::widget class="!bg-[#E6EBF7]">
+>>>>>>> aurmich/dev
     <x-filament::section>
         <div class="max-w-4xl mx-auto">
             @if($this->canEdit())

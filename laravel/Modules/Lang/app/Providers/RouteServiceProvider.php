@@ -37,7 +37,11 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
     public function boot(): void
     {
         parent::boot();
+<<<<<<< HEAD
         // $this->registerLang(); // ✅ Temporaneamente disabilitato per debug
+=======
+        $this->registerLang();
+>>>>>>> aurmich/dev
     }
 
     /**
@@ -55,9 +59,13 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
     public function registerLang(): void
     {
         /** @var array<string, array<string, string>>|null $locales */
+<<<<<<< HEAD
         $locales = config()->has('laravellocalization.supportedLocales') 
             ? config('laravellocalization.supportedLocales') 
             : null;
+=======
+        $locales = config('laravellocalization.supportedLocales');
+>>>>>>> aurmich/dev
 
         if (! \is_array($locales)) {
             $locales = ['it' => ['name' => 'it'], 'en' => ['name' => 'en']];

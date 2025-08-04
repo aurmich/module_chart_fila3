@@ -1,7 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
+=======
+>>>>>>> aurmich/dev
 return [
     'title' => 'Find a dentist',
     'messages' => [
@@ -12,6 +15,7 @@ return [
     'fields' => [
         'region' => [
             'label' => 'Region',
+<<<<<<< HEAD
             'placeholder' => 'Select a region',
         ],
         'province' => [
@@ -33,6 +37,23 @@ return [
         'time' => [
             'label' => 'Time',
             'placeholder' => 'Select a time',
+=======
+        ],
+        'province' => [
+            'label' => 'Province',
+        ],
+        'city' => [
+            'label' => 'City',
+        ],
+        'cap' => [
+            'label' => 'Postal Code',
+        ],
+        'date' => [
+            'label' => 'Date',
+        ],
+        'time' => [
+            'label' => 'Time',
+>>>>>>> aurmich/dev
         ],
     ],
     'steps' => [
@@ -49,4 +70,8 @@ return [
             'description' => 'Summary and booking confirmation',
         ],
     ],
+<<<<<<< HEAD
 ];
+=======
+]; 
+>>>>>>> aurmich/dev

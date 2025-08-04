@@ -126,7 +126,10 @@
 - [Fase 6: Monitoraggio](./roadmap/06_monitoring.md)
 - [Fase 7: AI Integration](./roadmap/07_ai_integration.md)
 - [Fase 8: Cloud Integration](./roadmap/08_cloud_integration.md)
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 🗺️ Roadmap del Progetto
 
 ## 📋 Indice delle Fasi

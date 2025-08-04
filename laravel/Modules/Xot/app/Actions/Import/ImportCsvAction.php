@@ -53,6 +53,10 @@ class ImportCsvAction
 
         // Build SQL query
         $sql = $this->buildSql($path, $db, $tbl, $fieldsUpList, $columns);
+<<<<<<< HEAD
+=======
+
+>>>>>>> aurmich/dev
         // Enable local infile
         $pdo->exec('SET GLOBAL local_infile=1;');
 

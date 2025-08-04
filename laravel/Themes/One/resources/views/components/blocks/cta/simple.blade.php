@@ -1,7 +1,11 @@
 @props([
     'title' => '',
     'description' => '',
+<<<<<<< HEAD
     'cta_text' => __('pub_theme::components.cta.simple.text'),
+=======
+    'cta_text' => 'Scopri di più',
+>>>>>>> aurmich/dev
     'cta_link' => '#',
     'background_color' => 'bg-white',
     'text_color' => 'text-gray-900',

@@ -41,10 +41,15 @@ view('pub_theme::filament.wizard.submit-button')
 
 2. **Traduzioni**
    - Utilizzare il namespace del tema per le traduzioni
+<<<<<<< HEAD
    - Esempio: `{{ __('pub_theme::auth.login.title') }}`
    - Le traduzioni sono in `/laravel/Themes/One/lang/`
    - **Traduzioni Autenticazione**: Sistema completo implementato per login, registrazione, reset password
    - [Documentazione Completa Traduzioni Auth](../../laravel/Themes/One/docs/auth-translations.md)
+=======
+   - Esempio: `{{ __('pub_theme::wizard.submit.label') }}`
+   - Le traduzioni dovrebbero essere in `/laravel/Themes/One/lang/`
+>>>>>>> aurmich/dev
 
 3. **Componenti Filament**
    - I componenti specifici di Filament dovrebbero essere nella directory `filament/`
@@ -114,6 +119,7 @@ php artisan view:clear
 php artisan cache:clear
 ```
 
+<<<<<<< HEAD
 ## REGOLA CRITICA: Separazione Namespace Modulo vs Tema
 
 ⚠️ **ASSOLUTA SEPARAZIONE** tra namespace di moduli e temi:
@@ -182,10 +188,16 @@ Il tema può sovrascrivere le view dei moduli mantenendo l'indipendenza:
 4. **Deployment**: Moduli disaccoppiabili dal tema
 5. **Scalabilità**: Facile aggiungere nuovi temi senza toccare moduli
 
+=======
+>>>>>>> aurmich/dev
 ## Note Importanti
 
 1. Il namespace `pub_theme::` è un alias che punta al tema attivo
 2. Le viste nel tema hanno la precedenza sulle viste del modulo
 3. Le traduzioni nel tema hanno la precedenza sulle traduzioni del modulo
+<<<<<<< HEAD
 4. I componenti Filament nel tema possono estendere quelli di base
 5. **CRITICO**: I widget dei moduli NON devono mai usare `pub_theme::` 
+=======
+4. I componenti Filament nel tema possono estendere quelli di base 
+>>>>>>> aurmich/dev

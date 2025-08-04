@@ -20,9 +20,15 @@ name('login');
             <path fill="#A5B4FC" fill-opacity="0.1" d="M0,224L60,213.3C120,203,240,181,360,176C480,171,600,181,720,181.3C840,181,960,171,1080,160C1200,149,1320,139,1380,133.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
         </svg>
 
+<<<<<<< HEAD
         <div class="flex justify-center">
             <img class="w-[300px] lg:w-[350px]" src="/img/logo-v2.png"/>
         </div>
+=======
+<div class="flex justify-center">
+    <img class="w-[300px] lg:w-[350px]" src="/img/logo-v2.png"/>
+</div>
+>>>>>>> aurmich/dev
 
         <div class="mt-8 mx-auto w-full max-w-md relative">
             <!-- Glassmorphism login card -->
@@ -33,19 +39,32 @@ name('login');
             </a>
 
             <h2 class="mt-5 text-2xl font-extrabold leading-9 text-center text-[#272C4D]">
+<<<<<<< HEAD
                 {{ __('pub_theme::auth.login.title') }}
             </h2>
             <div class="text-sm leading-5 text-center text-gray-600 dark:text-gray-400 space-x-0.5">
                 <span>{{ __('pub_theme::auth.login.or') }}</span>
                 <a href="{{ route('register') }}" class="text-[#FF5F7E] font-medium">
                     {{ __('pub_theme::auth.login.create_account') }}
+=======
+                {{ __('auth.login.title') }}
+            </h2>
+            <div class="text-sm leading-5 text-center text-gray-600 dark:text-gray-400 space-x-0.5">
+                <span>{{ __('auth.login.or') }}</span>
+                <a href="{{ route('register') }}" class="text-[#FF5F7E] font-medium">
+                    {{ __('auth.login.create_account') }}
+>>>>>>> aurmich/dev
                 </a>
             </div>
         </div>
                 <!-- Livewire Login Form -->
                 <div class="space-y-6 flex flex-col justify-center">
                     @livewire(\Modules\User\Filament\Widgets\LoginWidget::class)
+<<<<<<< HEAD
                     <a href="/{{ $lang }}/auth/password/reset" class="text-[#FF5F7E] text-center text-sm !mt-0">{{ __('pub_theme::auth.login.forgot_password') }}</a>
+=======
+                    <a href="/it/auth/password/reset" class="text-[#FF5F7E] text-center text-sm !mt-0">Hai dimenticato la password?</a>
+>>>>>>> aurmich/dev
                 </div>
             </div>
         </div>

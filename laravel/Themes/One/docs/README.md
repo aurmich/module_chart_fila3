@@ -117,7 +117,10 @@ Questo tema è un tema Laravel/Filament riutilizzabile, pensato per essere usato
 
 ## Dipendenze CSS
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Installazione dipendenze Filament
 npm install tailwindcss@3 @tailwindcss/forms @tailwindcss/typography postcss postcss-nesting autoprefixer --save-dev
 ```
@@ -128,10 +131,13 @@ npm install tailwindcss@3 @tailwindcss/forms @tailwindcss/typography postcss pos
 - [Componenti UI](./COMPONENTS.md)
 - [Gestione Asset](./ASSETS.md)
 - [Gestione Contenuti JSON](./JSON_CONTENT.md)
+<<<<<<< HEAD
 - [Sistema di Traduzioni](./i18n.md)
 - [Language Switcher Implementation](./language-switcher-implementation.md)
 - [Traduzioni Opening Hours](./opening_hours_translations_improvement.md)
 - [Migliorie Traduzioni](./translation_improvements.md)
+=======
+>>>>>>> aurmich/dev
 
 ## Installazione
 
@@ -473,6 +479,7 @@ Per supporto tecnico, contattare il team il progetto.
   - `resources/views/filament/`: Componenti e widget Filament personalizzati
   - Tutti i componenti seguono le convenzioni di stile di Filament
 
+<<<<<<< HEAD
 ### Traduzioni
 - **Sistema Completo I18n**
   - Supporto per italiano (it) e inglese (en)
@@ -480,6 +487,8 @@ Per supporto tecnico, contattare il team il progetto.
   - Namespace `pub_theme::` per accesso alle traduzioni
   - [Documentazione Traduzioni Auth](./auth-translations.md)
 
+=======
+>>>>>>> aurmich/dev
 ### Stili
 - **CSS**
   - Utilizzo dei preset Filament per Tailwind

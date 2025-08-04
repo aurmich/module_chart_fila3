@@ -13,7 +13,15 @@
 	"php-cs-fixer.allowRisky": true,
 	"editor.defaultFormatter": "junstyle.php-cs-fixer",
 	"[php]": {
+<<<<<<< HEAD
 		"editor.defaultFormatter": "fterrag.vscode-php-cs-fixer"
+=======
+<<<<<<< HEAD
+		"editor.defaultFormatter": "junstyle.php-cs-fixer"
+=======
+		"editor.defaultFormatter": "fterrag.vscode-php-cs-fixer"
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+>>>>>>> aurmich/dev
 	},
 	"editor.tokenColorCustomizations": {
 		"semanticHighlighting": true
@@ -38,4 +46,12 @@
 	"[vue]": {
 		"editor.defaultFormatter": "octref.vetur"
 	}
+<<<<<<< HEAD
 }
+=======
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+>>>>>>> aurmich/dev

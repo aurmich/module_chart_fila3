@@ -4,7 +4,10 @@
         "it": "SaluteOra - Promozione della salute orale per le gestanti"
     },
     "slug": "appuntamenti-rifiutati",
+<<<<<<< HEAD
     "middleware":["auth","\\Modules\\User\\Http\\Middleware\\EnsureUserHasType:doctor"],
+=======
+>>>>>>> aurmich/dev
     "content": null,
     "content_blocks": {
         "it": [

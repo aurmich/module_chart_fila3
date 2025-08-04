@@ -47,4 +47,8 @@ return new class extends XotBaseMigration
             }
         );
     }
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> aurmich/dev

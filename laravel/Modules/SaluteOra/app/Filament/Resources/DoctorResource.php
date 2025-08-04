@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Filament\Resources;
 
 use Filament\Forms;
+<<<<<<< HEAD
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Fieldset;
 use Filament\Forms\Components\FileUpload;
@@ -51,6 +52,50 @@ use Modules\User\Models\Device;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Spatie\MailTemplates\TemplateMailable;
 use Spatie\Permission\Traits\HasRoles;
+=======
+use Filament\Tables;
+use Filament\Forms\Form;
+use Filament\Tables\Table;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
+use Illuminate\Validation\Rule;
+use Modules\User\Models\Device;
+use Filament\Resources\Resource;
+use Illuminate\Support\HtmlString;
+use Modules\SaluteOra\Models\User;
+use Filament\Forms\Components\Grid;
+use Illuminate\Contracts\View\View;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
+use Modules\SaluteOra\Models\Doctor;
+use Filament\Forms\Components\Select;
+use Modules\SaluteOra\Models\Patient;
+use Modules\Notify\Emails\SpatieEmail;
+use Spatie\Permission\Traits\HasRoles;
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\TextColumn;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Validation\Rules\Unique;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\DatePicker;
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\TimePicker;
+use Modules\SaluteOra\Enums\UserStateEnum;
+use Spatie\MailTemplates\TemplateMailable;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\SaluteOra\Models\DoctorRegistrationWorkflow;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
+use Modules\UI\Filament\Forms\Components\OpeningHoursField;
+use Modules\SaluteOra\Actions\ProcessDoctorModerationAction;
+use Modules\SaluteOra\Filament\Resources\DoctorResource\Pages;
+use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
+use Modules\SaluteOra\Filament\Resources\DoctorResource\RelationManagers;
+>>>>>>> aurmich/dev
 
 /**
  * Class DoctorResource
@@ -69,6 +114,7 @@ class DoctorResource extends XotBaseResource
 
     public static function getFormSchema(): array
     {
+<<<<<<< HEAD
          //$schema = parent::getFormSchema();
 
         // Aggiungi qui eventuali campi specifici per SaluteMo
@@ -90,11 +136,15 @@ class DoctorResource extends XotBaseResource
                 ,
                 ...self::getAttachmentsSchema(false),
         ];
+=======
+        return static::getFormSchemaWidget();
+>>>>>>> aurmich/dev
     }
 
 
     public static function getFormSchemaWidget(): array
     {
+<<<<<<< HEAD
         
         return [
             Forms\Components\Wizard::make(self::getWizardSteps())
@@ -103,10 +153,33 @@ class DoctorResource extends XotBaseResource
             ->persistStepInQueryString()
             //->startOnStep(fn(Get $get)=>static::getWizardStartOnStep($get))
             //->live()
+=======
+
+        //$submit_view = 'pub_theme::filament.wizard.submit-button';
+        
+        return [
+            Forms\Components\Wizard::make([
+                self::getPersonalInfoStep(),
+                self::getStudioStep(), 
+                self::getAvailabilityStep(),
+            ])
+            ->skippable(false)
+            ->submitAction(static::getWizardSubmitAction())
+            ->persistStepInQueryString()
+            ->startOnStep(function($get){
+
+                if($get('id')!==null){
+                    return 2;
+                }
+                return 1;
+            })
+            ->live()
+>>>>>>> aurmich/dev
             ->columnSpanFull(),
         ];
     }
 
+<<<<<<< HEAD
     public static function getWizardStartOnStep(Get $get):int{
         if($get('id')!==null){
             return 0;
@@ -128,12 +201,63 @@ class DoctorResource extends XotBaseResource
     }            
 
 
+=======
+                
+
+                
+    protected static function getDocumentsSchema(): array
+    {
+        $attachments = Doctor::$attachments;
+        $uuid = Str::uuid()->toString();
+        $schema = [];
+        
+        foreach ($attachments as $attachment) {
+            $schema[] = Forms\Components\FileUpload::make($attachment)
+                ->disk('local')
+                ->directory('documents/'.$attachment.'/'.$uuid)
+                //->downloadable()
+                //->openable()
+                ->acceptedFileTypes(['application/pdf', 'image/*'])
+                ->maxSize(5120)
+                ->required()
+                ->reorderable()
+                ->multiple()
+                ->preserveFilenames()
+                ->columnSpanFull()
+                ->afterStateUpdated(function ($state, Forms\Set $set) use ($attachment) {
+                    if (!$state) return;
+                    
+                    $sessionId = session()->getId();
+                    $sessionDir = "session-uploads/{$sessionId}";
+                    $sessionFiles = [];
+                    
+                    foreach ($state as $file) {
+                        if ($file instanceof \Livewire\Features\SupportFileUploads\TemporaryUploadedFile) {
+                            // Salva direttamente nella directory di sessione
+                            $fileName = time() . '_' . $file->getClientOriginalName();
+                            $sessionPath = $file->storeAs($sessionDir, $fileName, 'local');
+                            $sessionFiles[] = $sessionPath;
+                        } else {
+                            // È già un percorso salvato
+                            $sessionFiles[] = $file;
+                        }
+                    }
+                    
+                    $set($attachment, $sessionFiles);
+                })
+                ;
+        }
+        return $schema;
+    }
+
+>>>>>>> aurmich/dev
     /**
      * Step UI allineato a /docs/images/13.md, 13.html, 13.blade.php
      * - Campo full_name per Nome e Cognome (come da convenzioni naming)
      * - FileUpload certification (Certificazione iscrizione Ordine)
      * - Nessun altro campo
      */
+<<<<<<< HEAD
     protected static function getPersonalInfoStepSchema(): array
     {
         return [
@@ -189,10 +313,62 @@ class DoctorResource extends XotBaseResource
                 ->columnSpanFull(),
             */
         ]  ;
+=======
+    protected static function getPersonalInfoStep(): Forms\Components\Wizard\Step
+    {
+        // Non utilizzare $translationPrefix, ma direttamente il namespace di traduzione
+
+        return Forms\Components\Wizard\Step::make('personal_info')
+            ->icon('heroicon-o-user')
+            ->schema([
+                'personal_section' => Forms\Components\Section::make()
+                    ->schema([
+                        'id' => Forms\Components\Hidden::make('id'),
+                        'first_name' => Forms\Components\TextInput::make('first_name')
+                            ->required()
+                            ->maxLength(255)
+                            ->autocomplete('given-name')
+                            ,
+                        'last_name' => Forms\Components\TextInput::make('last_name')
+                            ->required()
+                            ->maxLength(255)
+                            ->autocomplete('family-name')
+                            ,
+
+                        'email' => Forms\Components\TextInput::make('email')
+                            ->required()
+                            ->email()
+                            ->maxLength(255)
+                            ->autocomplete('email')
+                            ->readonly(fn($get) => $get('id') !== null)
+                            ->extraAttributes(function ($get) {
+                                return $get('id') !== null
+                                    ? ['class' => 'bg-gray-100 border-gray-300 cursor-not-allowed opacity-90']
+                                    : [];
+                            })
+                            ->rules(function ($get) {
+                                $rules = [];
+                                // Applica unique solo se il record è nuovo (id è null)
+                                //if ($get('id') === null) {
+                                    //$rules[] = Rule::unique(User::class, 'email');
+                                    $rules[] = Rule::unique(User::class,'email')->ignore($get('id'));
+                                //}
+                                
+                                return $rules;
+                            }),
+                        ...self::getDocumentsSchema(),
+
+                    ]),
+            ])->visible(function ($model,$record) {
+                return true;
+            //dddx([$model,$record]);
+            });
+>>>>>>> aurmich/dev
     }
 
     
 
+<<<<<<< HEAD
     protected static function getStudioStepSchema (): array
     {
         $schema = StudioResource::getFormSchemaForWizard();
@@ -234,6 +410,65 @@ class DoctorResource extends XotBaseResource
             //'newsletter' => Forms\Components\Checkbox::make('newsletter')
            //     ->columnSpanFull(),
         ];
+=======
+    protected static function getStudioStep(): Forms\Components\Wizard\Step
+    {
+        // Non utilizzare $translationPrefix, ma direttamente il namespace di traduzione
+
+        return Forms\Components\Wizard\Step::make('studio')
+            ->icon('heroicon-o-envelope')
+            
+            ->schema([
+                Forms\Components\Section::make('Dati Studio')
+                ->relationship('studio')  
+                ->schema(StudioResource::getFormSchema())
+                ])
+            ->visible(fn ($get) => $get('id')!==null)
+            ;
+    }
+
+    protected static function getProfessionalStep(): Forms\Components\Wizard\Step
+    {
+        // Non utilizzare $translationPrefix, ma direttamente il namespace di traduzione
+
+        return Forms\Components\Wizard\Step::make('professional')
+            ->icon('heroicon-o-academic-cap')
+            ->schema([
+                'registration_number' => Forms\Components\TextInput::make('registration_number')
+                    ->required()
+                    ->unique(ignoreRecord: true)
+                    ->placeholder(__('saluteora::doctor-resource.registration_number')),
+
+                'certifications' => Forms\Components\FileUpload::make('certifications')
+                    ->multiple()
+                    ->directory('doctors/certifications')
+                    ->acceptedFileTypes(['application/pdf'])
+                    ->maxSize(10240)
+                    ->downloadable()
+                    ->openable()
+                    ->reorderable()
+                    ->columnSpanFull()
+                    ->placeholder(__('saluteora::doctor-resource.certifications')),
+
+            ])
+            ->visible(fn ($get) => $get('id')!==null);
+    }
+
+    protected static function getAvailabilityStep(): Forms\Components\Wizard\Step
+    {
+        // Non utilizzare $translationPrefix, ma direttamente il namespace di traduzione
+
+        return Forms\Components\Wizard\Step::make('availability')
+            ->icon('heroicon-o-calendar')
+            ->schema([
+                'availability_section' => OpeningHoursField::make('schedule')
+                    ->label(__('saluteora::doctor_availability.sections.weekly_availability'))
+                    ->helperText(__('saluteora::doctor_availability.fields.is_available.help'))
+                    ->columnSpanFull(),
+                    
+            ])
+            ->visible(fn ($get) => $get('id')!==null);
+>>>>>>> aurmich/dev
     }
 
     public static function getPages(): array
@@ -245,7 +480,39 @@ class DoctorResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
    
+=======
+    // Metodo per generare e inviare il link di continuazione dopo la moderazione
+    public static function sendContinuationLink(Doctor $doctor): void
+    {
+        if ($doctor->state === UserStateEnum::APPROVED) {
+            $token = sha1($doctor->email . now());
+            $continuationUrl = URL::temporarySignedRoute(
+                'doctor.registration.continue',
+                now()->addDays(7),
+                ['doctor' => $doctor->id, 'token' => $token]
+            );
+
+            // Invio email con il link di continuazione utilizzando SpatieEmail
+            $email = new SpatieEmail($doctor, 'registration_moderated');
+            Mail::to($doctor->email)->locale('it')->send($email);
+
+            // Salva il token nel database per verifica successiva (opzionale)
+            $doctor->update(['continuation_token' => $token]);
+        }
+    }
+
+    // Metodo per riprendere la registrazione
+    public static function resumeRegistration(int $doctorId, string $token): \Illuminate\Http\RedirectResponse
+    {
+        $doctor = Doctor::findOrFail($doctorId);
+        if (hash_equals($doctor->continuation_token, $token) && $doctor->state === UserStateEnum::APPROVED) {
+            return redirect()->route('filament.resources.doctors.edit', $doctor);
+        }
+        abort(403, 'Link non valido o scaduto.');
+    }
+>>>>>>> aurmich/dev
 
     /**
      * @return array<class-string>

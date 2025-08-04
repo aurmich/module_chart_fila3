@@ -28,7 +28,10 @@ Questa regola garantisce:
 
 ## Esempi
 ```plaintext
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # ❌ Errore
 docs/ErroriGravi/
 docs/Implementazione/
@@ -51,3 +54,7 @@ docs/form-architecture.md
 ## Collegamenti Correlati
 - [Struttura Documentazione](../struttura-documentazione.md)
 - [Best Practices](../best-practices.md)
+<<<<<<< HEAD
+=======
+- [Standard di Codice](../standards/coding-standards.md) 
+>>>>>>> aurmich/dev

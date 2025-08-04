@@ -47,6 +47,7 @@ return [
             'driver' => 'local',
             'root' => storage_path('app'),
         ],
+<<<<<<< HEAD
         'private' => [
             'driver' => 'local',
             'root' => storage_path('app'),
@@ -57,6 +58,8 @@ return [
             'visibility' => 'private',
             'throw' => true,
         ],
+=======
+>>>>>>> aurmich/dev
 
         'public' => [
             'driver' => 'local',

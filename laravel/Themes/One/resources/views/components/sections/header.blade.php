@@ -13,14 +13,21 @@
     $componentsBlocks = is_array($blocks) && isset($blocks[$locale]) ? $blocks[$locale] : $blocks;
     $page = request()->url();
     $isLanding =Route::currentRouteName()=='home' && !Auth::check();
+<<<<<<< HEAD
     $userAgent = request()->header('User-Agent');
     $isMobile = preg_match('/Mobile|Android|iPhone|iPad|Opera Mini|IEMobile|WPDesktop/i', $userAgent);
+=======
+>>>>>>> aurmich/dev
 @endphp
 
 {{-- !fixed top-0 left-0 right-0 z-50 da inserire dentro alla classe dell' header --}}
 @if(!$isLanding)
 <header {{ $attributes->merge([
+<<<<<<< HEAD
     'class' => 'bg-[#272C4D]  h-24 flex items-center sticky top-0 z-10',
+=======
+    'class' => 'bg-[#272C4D]  h-24 flex items-center',
+>>>>>>> aurmich/dev
     'id' => ($section['attributes']['id'] ?? ''),
     'x-data' => "{ mobileMenuOpen: false }"
     ]) }}>
@@ -72,5 +79,9 @@
         --}}
     </div>
 </header>
+<<<<<<< HEAD
 
 @endif
+=======
+@endif
+>>>>>>> aurmich/dev

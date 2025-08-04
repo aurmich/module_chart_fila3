@@ -26,7 +26,10 @@
     "Ticket": true,
     "Rating": true,
     "Comment": true,
+<<<<<<< HEAD
     "FormBuilder": true,
     "DbForge": true,
+=======
+>>>>>>> aurmich/dev
     "Doctor": true
 }

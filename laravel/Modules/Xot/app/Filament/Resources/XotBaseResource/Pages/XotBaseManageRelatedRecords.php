@@ -23,6 +23,10 @@ use Webmozart\Assert\Assert;
  * specifiche per il framework Laraxot.
  *
  * @template TModel of Model
+<<<<<<< HEAD
+=======
+ * @extends FilamentManageRelatedRecords<TModel>
+>>>>>>> aurmich/dev
  */
 abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 {
@@ -141,6 +145,10 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      */
     public function form(Form $form): Form
     {
+<<<<<<< HEAD
+=======
+        Assert::true(method_exists($this, 'getFormSchema'), 'Devi implementare getFormSchema() nella classe figlia.');
+>>>>>>> aurmich/dev
         /** @var array<\Filament\Forms\Components\Component> $schema */
         $schema = $this->getFormSchema();
         return $form->schema($schema);

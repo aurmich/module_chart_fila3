@@ -62,4 +62,8 @@ enum DoctorStatusEnum: string implements HasLabel, HasIcon, HasColor
             self::REJECTED => 'danger',
         };
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> aurmich/dev

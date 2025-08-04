@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -14,5 +15,17 @@ return [
         'saturday' => 'Sabato',
         'sunday' => 'Domenica',
     ],
+=======
+return [
+    'days' => [
+                'monday' => 'Lunedì',
+                'tuesday' => 'Martedì',
+                'wednesday' => 'Mercoledì',
+                'thursday' => 'Giovedì',
+                'friday' => 'Venerdì',
+                'saturday' => 'Sabato',
+                'sunday' => 'Domenica',
+            ],
+>>>>>>> aurmich/dev
 ];
   

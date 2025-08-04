@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # Regola: StudioSelectorButtons Pattern - SaluteOra (DRY + KISS)
 
 ## Ambito
@@ -206,3 +207,5 @@ Ogni livello ha la sua responsabilità specifica, nessuna duplicazione.
 
 ## Ultimo aggiornamento
 2025-01-16 - Pattern DRY + KISS implementato
+=======
+>>>>>>> aurmich/dev

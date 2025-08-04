@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Contracts;
 
+<<<<<<< HEAD
 use Laravel\Passport\Token;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\Permission\Contracts\Role;
@@ -18,6 +19,19 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 use Spatie\MediaLibrary\MediaCollections\FileAdder;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+=======
+use Filament\Models\Contracts\FilamentUser;
+use Illuminate\Contracts\Auth\Access\Authorizable;
+use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Contracts\Auth\CanResetPassword;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
+use Laravel\Passport\Token;
+use Modules\User\Contracts\HasTeamsContract;
+use Spatie\Permission\Contracts\Role;
+>>>>>>> aurmich/dev
 
 // use Filament\Models\Contracts\HasTenants;
 
@@ -38,14 +52,21 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @property \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Role>   $roles
  * @property \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Tenant> $tenants
  *
+<<<<<<< HEAD
  * @method  FileAdder addMediaFromDisk(string $key, ?string $disk = null)
+=======
+>>>>>>> aurmich/dev
  * @method bool canAccessSocialite()
  *
  * @phpstan-require-extends Model
  *
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 interface UserContract extends Authenticatable, Authorizable, CanResetPassword, FilamentUser, HasTeamsContract, ModelContract, MustVerifyEmail, PassportHasApiTokensContract,HasMedia
+=======
+interface UserContract extends Authenticatable, Authorizable, CanResetPassword, FilamentUser, HasTeamsContract, ModelContract, MustVerifyEmail, PassportHasApiTokensContract
+>>>>>>> aurmich/dev
 {
     /*
     public function isSuperAdmin();
@@ -124,6 +145,7 @@ interface UserContract extends Authenticatable, Authorizable, CanResetPassword, 
     public function tenants(): BelongsToMany;
 
     // public function canAccessSocialite(): bool;
+<<<<<<< HEAD
 
     /**
      * Get all consents for the model (polymorphic).
@@ -131,4 +153,6 @@ interface UserContract extends Authenticatable, Authorizable, CanResetPassword, 
      */
     //public function consents(): MorphMany;
     
+=======
+>>>>>>> aurmich/dev
 }

@@ -17,7 +17,10 @@ namespace Modules\Tenant\Repositories;
 ### Esempi Errati
 ```php
 namespace Modules\Xot\app\Console\Commands;
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 ### Versione HEAD
 
 
@@ -50,7 +53,10 @@ Modules/
 
 ## Motivazione
 Questa convenzione:
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # convenzioni per i namespace nei moduli
 
 ## regola assoluta e inviolabile
@@ -190,7 +196,10 @@ grep -r "namespace Modules\\\\.*\\\\App\\\\" /var/www/html/base_saluteora/larave
 Configurare PHP Stan per verificare i namespace corretti:
 
 ```yaml
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # phpstan.neon
 parameters:
   checkMissingIterableValueType: false

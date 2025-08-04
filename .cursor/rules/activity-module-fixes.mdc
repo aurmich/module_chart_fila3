@@ -3,7 +3,10 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> aurmich/dev

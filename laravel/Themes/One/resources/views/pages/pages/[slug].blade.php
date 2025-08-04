@@ -8,12 +8,16 @@ use Filament\Support\Enums\Alignment;
 use Filament\Support\Enums\VerticalAlignment;
 use Livewire\Volt\Component;
 use Modules\Tenant\Services\TenantService;
+<<<<<<< HEAD
 use Modules\Cms\Models\Page;
 use Modules\Cms\Http\Middleware\PageSlugMiddleware;
+=======
+>>>>>>> aurmich/dev
 
 /** @var array */
 //$middleware=TenantService::config('middleware');
 //$base_middleware=Arr::get($middleware,'base',[]);
+<<<<<<< HEAD
 
 $base_middleware=[];
 
@@ -25,14 +29,23 @@ if(isset($slug)){
 }
 */
 middleware(PageSlugMiddleware::class);
+=======
+$base_middleware=[];
+
+name('pages.view');
+middleware($base_middleware);
+>>>>>>> aurmich/dev
 
 
 
 new class extends Component
 {
     public string $slug;
+<<<<<<< HEAD
 
    
+=======
+>>>>>>> aurmich/dev
 };
 
 ?>

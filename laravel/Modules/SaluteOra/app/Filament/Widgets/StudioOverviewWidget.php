@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Filament\Widgets;
 
 use Filament\Widgets\Widget;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Auth;
 use Modules\SaluteOra\Models\Studio;
 use Illuminate\Support\Facades\DB;
@@ -26,6 +27,15 @@ class StudioOverviewWidget extends Widget
      *
      * @return array<string, mixed>
      */
+=======
+use Modules\SaluteOra\Models\Studio;
+use Illuminate\Support\Facades\DB;
+
+class StudioOverviewWidget extends Widget
+{
+    protected static string $view = 'saluteora::filament.widgets.studio-overview';
+
+>>>>>>> aurmich/dev
     protected function getViewData(): array
     {
         $stats = [
@@ -35,8 +45,13 @@ class StudioOverviewWidget extends Widget
             'cities' => Studio::distinct('city')->count('city'),
             'doctors' => Studio::withCount('doctors')->sum('doctors_count'),
             'appointments' => Studio::withCount(['appointments' => function ($query) {
+<<<<<<< HEAD
                 $query->whereMonth('starts_at', now()->month)
                     ->whereYear('starts_at', now()->year);
+=======
+                $query->whereMonth('start_time', now()->month)
+                    ->whereYear('start_time', now()->year);
+>>>>>>> aurmich/dev
             }])->sum('appointments_count'),
         ];
 
@@ -55,6 +70,7 @@ class StudioOverviewWidget extends Widget
         ];
     }
 
+<<<<<<< HEAD
     /**
      * Verifica se l'utente può visualizzare il widget.
      *
@@ -67,3 +83,10 @@ class StudioOverviewWidget extends Widget
         return $user !== null && method_exists($user, 'can') && $user->can('view_any_studio');
     }
 }
+=======
+    public static function canView(): bool
+    {
+        return auth()->user()->can('view_any_studio');
+    }
+}
+>>>>>>> aurmich/dev

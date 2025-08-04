@@ -45,7 +45,11 @@ trait RelationX
             $table = $pivotDbName.'.'.$table;
         }
         // }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> aurmich/dev
         return $this->belongsToMany(
             related: $related,
             table: $table,
@@ -60,6 +64,7 @@ trait RelationX
             ->withTimestamps();
     }
 
+<<<<<<< HEAD
 
     /**
      * Define a polymorphic many-to-many relationship.
@@ -122,17 +127,24 @@ trait RelationX
         return $pivot;
     }
 
+=======
+>>>>>>> aurmich/dev
     /**
      * Guess the pivot class for a many-to-many relationship.
      *
      * @param string $related The related model class name
+<<<<<<< HEAD
      * @param string|class-string|null $class The class to use for parent class lookup (used internally)
+=======
+     * @param string|null $class The class to use for parent class lookup (used internally)
+>>>>>>> aurmich/dev
      * @return \Illuminate\Database\Eloquent\Relations\Pivot
      */
     public function guessPivot(string $related, ?string $class = null)
     {
         $class = $class ?? $this::class;
         $model_names = [
+<<<<<<< HEAD
             class_basename($class),
             class_basename($related),
         ];
@@ -141,12 +153,36 @@ trait RelationX
         $pivot_name = implode('', $model_names);
         
         $pivot_class = $this->guessPivotFullClass($pivot_name, $related, $class);
+=======
+            class_basename($this::class),
+            class_basename($related),
+        ];
+        sort($model_names);
+        $pivot_name = implode('', $model_names);
+        $pivot_class = Str::of($this::class)
+            ->beforeLast('\\')
+            ->append('\\'.$pivot_name)
+            ->toString();
+        if (! class_exists($pivot_class)) {
+            /*
+            //$pivot_class = 'Modules\Xot\Models\Pivot\\'.$pivot_name;
+            dddx([
+                'pivot_class' => $pivot_class,
+                'related' => $related,
+                'class' => $class,
+                'class1' => get_parent_class($class),
+            ]);
+            */
+            return $this->guessPivot($related, get_parent_class($class));
+        }
+>>>>>>> aurmich/dev
         
         $pivot = app($pivot_class);
         Assert::isInstanceOf($pivot, \Illuminate\Database\Eloquent\Relations\Pivot::class);
 
         return $pivot;
     }
+<<<<<<< HEAD
 
     public function guessPivotFullClass(string $pivot_name, string $related, ?string $class = null):string{
         $class = $class ?? $this::class;
@@ -177,4 +213,6 @@ trait RelationX
         }
         return $pivot_class;
     }
+=======
+>>>>>>> aurmich/dev
 }

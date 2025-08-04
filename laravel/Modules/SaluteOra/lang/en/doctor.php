@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -164,10 +165,71 @@ return [
             'tooltip' => 'Medical practice address',
             'helper_text' => '',
             'description' => 'Complete practice address',
+=======
+return [
+    'steps' => [
+        'personal_info' => [
+            'label' => 'Personal Information',
+            'description' => 'Enter your personal information',
+        ],
+        'moderation' => [
+            'label' => 'Moderation',
+            'description' => 'Profile verification and approval',
+        ],
+        'contacts' => [
+            'label' => 'Contacts',
+            'description' => 'Enter your contact information',
+        ],
+        'professional' => [
+            'label' => 'Professional Information',
+            'description' => 'Enter your professional information',
+        ],
+        'availability' => [
+            'label' => 'Availability',
+            'description' => 'Set your availability schedule',
+        ],
+    ],
+    'fields' => [
+        'full_name' => [
+            'label' => 'Full Name',
+            'placeholder' => 'Enter full name',
+        ],
+        'certification' => [
+            'label' => 'Certification',
+            'tooltip' => 'Upload your professional certification',
+        ],
+        'moderation_status' => [
+            'label' => 'Moderation Status',
+        ],
+        'moderation_notes' => [
+            'label' => 'Moderation Notes',
+            'placeholder' => 'Enter any moderation notes',
+        ],
+        'fiscal_code' => [
+            'label' => 'Fiscal Code',
+            'placeholder' => 'Enter fiscal code',
+        ],
+        'birth_date' => [
+            'label' => 'Date of Birth',
+            'placeholder' => 'Select date of birth',
+        ],
+        'email' => [
+            'label' => 'Email',
+            'placeholder' => 'Enter email address',
+        ],
+        'phone' => [
+            'label' => 'Phone',
+            'placeholder' => 'Enter phone number',
+        ],
+        'address' => [
+            'label' => 'Address',
+            'placeholder' => 'Enter practice address',
+>>>>>>> aurmich/dev
         ],
         'city' => [
             'label' => 'City',
             'placeholder' => 'Enter city',
+<<<<<<< HEAD
             'tooltip' => 'City where the practice is located',
             'helper_text' => '',
             'description' => 'City where the practice is located',
@@ -240,10 +302,28 @@ return [
             'tooltip' => 'Days and hours available for visits',
             'helper_text' => '',
             'description' => 'Availability calendar for appointments',
+=======
+        ],
+        'registration_number' => [
+            'label' => 'Registration Number',
+            'placeholder' => 'Enter professional registration number',
+        ],
+        'specialties' => [
+            'label' => 'Specialties',
+            'placeholder' => 'Select specialties',
+        ],
+        'certifications' => [
+            'label' => 'Certifications',
+            'tooltip' => 'Upload any additional certifications',
+        ],
+        'availability' => [
+            'label' => 'Availability Schedule',
+>>>>>>> aurmich/dev
         ],
         'day' => [
             'label' => 'Day',
             'placeholder' => 'Select day',
+<<<<<<< HEAD
             'tooltip' => 'Day of the week for availability',
             'helper_text' => '',
             'description' => 'Day of the week for availability',
@@ -256,17 +336,25 @@ return [
                 'saturday' => 'Saturday',
                 'sunday' => 'Sunday',
             ],
+=======
+            'helper_text' => 'Select the day of the week',
+>>>>>>> aurmich/dev
         ],
         'start_time' => [
             'label' => 'Start Time',
             'placeholder' => 'Select start time',
+<<<<<<< HEAD
             'tooltip' => 'Start time of availability',
             'helper_text' => '',
             'description' => 'Daily availability start time',
+=======
+            'helper_text' => 'When the availability period begins',
+>>>>>>> aurmich/dev
         ],
         'end_time' => [
             'label' => 'End Time',
             'placeholder' => 'Select end time',
+<<<<<<< HEAD
             'tooltip' => 'End time of availability',
             'helper_text' => '',
             'description' => 'Daily availability end time',
@@ -496,5 +584,19 @@ return [
       'description' => 'Privacy form to be completed and signed',
       'success' => 'Privacy form downloaded successfully',
       'error' => 'An error occurred while downloading the form',
+=======
+            'helper_text' => 'When the availability period ends',
+        ],
+        'last_name' => [
+            'label' => 'Last Name',
+            'placeholder' => 'Enter last name',
+            'helper_text' => 'Your family name',
+        ],
+        'first_name' => [
+            'label' => 'First Name',
+            'placeholder' => 'Enter first name',
+            'helper_text' => 'Your given name',
+        ],
+>>>>>>> aurmich/dev
     ],
 ];

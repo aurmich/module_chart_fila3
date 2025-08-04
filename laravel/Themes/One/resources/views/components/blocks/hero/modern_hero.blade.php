@@ -92,7 +92,11 @@
                 @if(!empty($primaryCta) || !empty($secondaryCtaData))
                     <div class="flex flex-row justify-center gap-4 pt-4">
                         @if(!empty($primaryCta))
+<<<<<<< HEAD
                             <a href="{{ route('home') }}" 
+=======
+                            <a href="/it" 
+>>>>>>> aurmich/dev
                                class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md !text-white bg-[#FF5F7E] md:py-4 md:text-lg md:px-10">
                                 {{ $primaryCta['text'] }}
                             </a>
@@ -102,7 +106,11 @@
 
                 <!-- Immagine centrata sotto il bottone -->
                 <div class="pt-6">
+<<<<<<< HEAD
                     <img class="mx-auto h-64 w-auto" src="/img/sala-attesa-2.svg" alt="@lang('pub_theme::content.hero.modern.room_image_alt.label')" />
+=======
+                    <img class="mx-auto h-64 w-auto" src="/img/sala-attesa-2.svg" alt="Sala d'attesa" />
+>>>>>>> aurmich/dev
                 </div>
 
             </div>

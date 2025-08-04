@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> aurmich/dev
 return [
     'general' => [
         'all' => 'Alle',
@@ -11,8 +16,11 @@ return [
         'buttons' => [
             'save' => 'Speichern',
             'update' => 'Aktualisieren',
+<<<<<<< HEAD
             'add' => 'Aggiungi',
             'edit' => 'Cambia',
+=======
+>>>>>>> aurmich/dev
         ],
         'hide' => 'Verstecken',
         'inactive' => 'Inactive',

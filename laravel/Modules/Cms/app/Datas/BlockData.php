@@ -28,4 +28,8 @@ class BlockData extends Data implements Wireable
         }
         $this->view=$view;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> aurmich/dev

@@ -61,6 +61,7 @@ return array (
     array (
       'label' => 'applyFilters',
     ),
+<<<<<<< HEAD
     'toggleColumns' => 
     array (
       'label' => 'toggleColumns',
@@ -107,6 +108,8 @@ return array (
     array (
       'label' => 'id',
     ),
+=======
+>>>>>>> aurmich/dev
   ),
   'roles' => 
   array (

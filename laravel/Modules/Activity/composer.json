@@ -30,7 +30,11 @@
         "spatie/laravel-event-sourcing": "*"
     },
     "require-dev": {},
+<<<<<<< HEAD
     "repositories_comment": [
+=======
+    "repositories": [
+>>>>>>> aurmich/dev
         {
             "type": "path",
             "url": "../Xot"

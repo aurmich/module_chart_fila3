@@ -13,11 +13,17 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Filament\Widgets\Widget;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
 use Illuminate\Validation\Rule;
 use Filament\Resources\Resource;
 use Spatie\MediaLibrary\HasMedia;
 use Illuminate\Support\HtmlString;
 use Modules\SaluteOra\Models\User;
+=======
+use Filament\Resources\Resource;
+use Spatie\MediaLibrary\HasMedia;
+use Illuminate\Support\HtmlString;
+>>>>>>> aurmich/dev
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Filament\Forms\Components\Wizard;
@@ -30,6 +36,7 @@ use Modules\Xot\Contracts\UserContract;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Wizard\Step;
+<<<<<<< HEAD
 use Modules\SaluteOra\Enums\NationalityEnum;
 use Modules\SaluteOra\Enums\YearsInItalyEnum;
 use Filament\Forms\Concerns\InteractsWithForms;
@@ -42,6 +49,16 @@ use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Modules\Lang\Filament\Forms\Components\NationalFlagSelect;
 use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
 use Tapp\FilamentCountryCodeField\Forms\Components\CountryCodeSelect;
+=======
+use Filament\Forms\Concerns\InteractsWithForms;
+use Modules\Xot\Actions\View\GetViewPathAction;
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+
+use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\Patient\Filament\Components\HealthCardUpload;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
+use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
+>>>>>>> aurmich/dev
 use Modules\Media\Filament\Resources\PatientResource\Pages\PreviewAttachment;
 
 class PatientResource extends XotBaseResource
@@ -82,6 +99,7 @@ class PatientResource extends XotBaseResource
 
     protected static function getPersonalDataStepSchema(): array
     {
+<<<<<<< HEAD
         $family_members_options=[
             '1' => 'Sola',
             '2' => '2',
@@ -167,6 +185,27 @@ class PatientResource extends XotBaseResource
                         return $rules;
                     }),
             
+=======
+        return [
+            Forms\Components\TextInput::make('first_name')
+                ->required()
+                ->maxLength(255),
+            Forms\Components\TextInput::make('last_name')
+                ->required()
+                ->maxLength(255),
+            Forms\Components\TextInput::make('address')
+                ->maxLength(255),
+            Forms\Components\TextInput::make('city')
+                ->maxLength(255),
+            Forms\Components\TextInput::make('phone')
+                ->tel()
+                ->maxLength(255),
+            Forms\Components\TextInput::make('email')
+                ->email()
+                ->required()
+                ->maxLength(255)
+                ->unique(Patient::class),
+>>>>>>> aurmich/dev
         ];
     }
 
@@ -181,10 +220,15 @@ class PatientResource extends XotBaseResource
     protected static function getPreVisitStepSchema(): array
     {
         return [
+<<<<<<< HEAD
             //Forms\Components\DatePicker::make('last_dental_visit')
             //    ->maxDate(now()),
             Forms\Components\Select::make('last_dental_visit_period')
                 ->options(LastDentalVisitPeriodEnum::class),
+=======
+            Forms\Components\DatePicker::make('last_dental_visit')
+                ->maxDate(now()),
+>>>>>>> aurmich/dev
             Forms\Components\Textarea::make('dental_problems')
                 ->maxLength(65535),
         ];
@@ -200,6 +244,7 @@ class PatientResource extends XotBaseResource
     protected static function getPrivacyStepSchema(): array
     {
         return [
+<<<<<<< HEAD
             'privacy_policy' => Forms\Components\View::make('pub_theme::gdpr.patient-privacy-policy')
                 ->columnSpanFull(),
             'privacy_acceptance' => Forms\Components\Checkbox::make('privacy_acceptance')
@@ -208,6 +253,15 @@ class PatientResource extends XotBaseResource
                 ->columnSpanFull(),
             //'newsletter' => Forms\Components\Checkbox::make('newsletter')
            //     ->columnSpanFull(),
+=======
+            Forms\Components\View::make('saluteora::privacy-policy')
+                ->columnSpanFull(),
+            Forms\Components\Checkbox::make('privacy_acceptance')
+                ->required()
+                ->columnSpanFull(),
+            Forms\Components\Checkbox::make('newsletter')
+                ->columnSpanFull(),
+>>>>>>> aurmich/dev
         ];
     }
 
@@ -229,8 +283,11 @@ class PatientResource extends XotBaseResource
         </div>');
     }
 
+<<<<<<< HEAD
     
 
+=======
+>>>>>>> aurmich/dev
     /**
      * Get the form schema for standard forms
      *
@@ -238,16 +295,26 @@ class PatientResource extends XotBaseResource
      */
     public static function getFormSchema(): array
     {
+<<<<<<< HEAD
         return self::getPersonalDataStepSchema();
         /*
         $schema= [
+=======
+        return [
+>>>>>>> aurmich/dev
             'first_name' => Forms\Components\TextInput::make('first_name')
                 ->required()
                 ->maxLength(255),
             'last_name' => Forms\Components\TextInput::make('last_name')
                 ->required()
                 ->maxLength(255),
+<<<<<<< HEAD
             
+=======
+            'fiscal_code' => Forms\Components\TextInput::make('fiscal_code')
+                ->required()
+                ->maxLength(16),
+>>>>>>> aurmich/dev
             'email' => Forms\Components\TextInput::make('email')
                 ->email()
                 ->required()
@@ -256,6 +323,7 @@ class PatientResource extends XotBaseResource
                 ->tel()
                 ->required()
                 ->maxLength(20),
+<<<<<<< HEAD
             'nationality' => NationalFlagSelect::make('nationality'),
             ...self::getAttachmentsSchema(),
         ];
@@ -264,6 +332,9 @@ class PatientResource extends XotBaseResource
         
         return $schema;
         */
+=======
+        ];
+>>>>>>> aurmich/dev
     }
 
     public static function getThankYouView(): string

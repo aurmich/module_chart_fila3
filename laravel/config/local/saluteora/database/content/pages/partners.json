@@ -1,14 +1,19 @@
 {
     "id": "28",
     "title": {
+<<<<<<< HEAD
         "it": "SaluteOra - Promozione della salute orale per le gestanti",
         "en": "SaluteOra - Oral Health Promotion for Pregnant Women"
+=======
+        "it": "SaluteOra - Promozione della salute orale per le gestanti"
+>>>>>>> aurmich/dev
     },
     "slug": "partners",
     "content": null,
     "content_blocks": {
         "it": [
             {
+<<<<<<< HEAD
                 "type": "feature_sections",
                 "data": {
                     "view": "pub_theme::components.blocks.feature_sections.cta2",
@@ -72,6 +77,21 @@
                 }
             }
 
+=======
+                "type": "hero",
+                "data": {
+                    "view": "pub_theme::components.blocks.hero.partners",
+                    "title": "Benvenuta su Salute Orale,",
+                    "subtitle": "il portale che vuole garantire alle pazienti vulnerabili in stato di gravidanza la possibilità di accedere a servizi odontoiatrici di prevenzione a titolo completamente gratuito.",
+                    "image": "https://www.materdomini.it/wp-content/uploads/2021/04/Sorriso-Denti-bianchi-donna-apparecchio-denti-e-salute-1.jpg",
+                    "cta_text": "INIZIA ORA",
+                    "cta_link": "{{ route('register') }}",
+                    "background_color": "bg-white",
+                    "text_color": "text-gray-900",
+                    "cta_color": "bg-indigo-600 hover:bg-indigo-700"
+                }
+            }
+>>>>>>> aurmich/dev
         ]
     },
     "sidebar_blocks": {

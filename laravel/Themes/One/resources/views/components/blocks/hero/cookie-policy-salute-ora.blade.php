@@ -1,7 +1,13 @@
 <div>
+<<<<<<< HEAD
 <div class="w-full flex justify-start">
         {{-- DA AGGIORNARE URL --}}
         <a href="{{ route('home') }}">
+=======
+<div class="w-full flex justify-start p-6">
+        {{-- DA AGGIORNARE URL --}}
+        <a href="/it">
+>>>>>>> aurmich/dev
             <div class="cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                      stroke-width="1.5" stroke="currentColor" class="size-9">
@@ -16,4 +22,8 @@
     </div>
 </div>
 
+<<<<<<< HEAD
 <!-- /{{ $lang }}/auth/password/reset -->
+=======
+<!-- /it/auth/password/reset -->
+>>>>>>> aurmich/dev

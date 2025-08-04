@@ -27,7 +27,10 @@ Livewire: [wire:model="data.first_name"] property does not exist on component
 Prima di ogni modifica a `XotBaseWidget`, eseguire questi controlli:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Verifica presenza della proprietà $data
 grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
 

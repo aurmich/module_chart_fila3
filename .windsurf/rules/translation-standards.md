@@ -63,7 +63,10 @@ Il sistema controllerà automaticamente che:
 ## Comandi Utili
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Verifica le traduzioni mancanti
 php artisan translation:check
 

@@ -60,7 +60,10 @@ return array (
       'label' => 'Nome Studio',
       'placeholder' => 'Studio Medico Dr. Rossi',
       'helper_text' => 'Nome completo e identificativo dello studio medico',
+<<<<<<< HEAD
       'description' => 'name',
+=======
+>>>>>>> aurmich/dev
     ),
     'address' => 
     array (
@@ -73,35 +76,50 @@ return array (
       'label' => 'Telefono',
       'placeholder' => '+39 059 1234567',
       'helper_text' => 'Numero di telefono principale per contatti',
+<<<<<<< HEAD
       'description' => 'phone',
+=======
+>>>>>>> aurmich/dev
     ),
     'email' => 
     array (
       'label' => 'Email',
       'placeholder' => 'info@studiorossi.it',
       'helper_text' => 'Indirizzo email per comunicazioni ufficiali',
+<<<<<<< HEAD
       'description' => 'email',
+=======
+>>>>>>> aurmich/dev
     ),
     'website' => 
     array (
       'label' => 'Sito Web',
       'placeholder' => 'https://www.studiorossi.it',
       'helper_text' => 'URL del sito web ufficiale dello studio',
+<<<<<<< HEAD
       'description' => 'website',
+=======
+>>>>>>> aurmich/dev
     ),
     'registration_number' => 
     array (
       'label' => 'Numero di Registrazione',
       'placeholder' => 'RM-123456',
       'helper_text' => 'Numero di registrazione presso l\'Ordine dei Medici',
+<<<<<<< HEAD
       'description' => 'registration_number',
+=======
+>>>>>>> aurmich/dev
     ),
     'vat_number' => 
     array (
       'label' => 'Partita IVA',
       'placeholder' => 'IT01234567890',
       'helper_text' => 'Partita IVA dello studio medico',
+<<<<<<< HEAD
       'description' => 'vat_number',
+=======
+>>>>>>> aurmich/dev
     ),
     'opening_hours' => 
     array (
@@ -170,14 +188,18 @@ return array (
     'description' => 
     array (
       'description' => 'description',
+<<<<<<< HEAD
       'helper_text' => 'description',
       'placeholder' => 'description',
       'label' => 'description',
+=======
+>>>>>>> aurmich/dev
     ),
     'reorderRecords' => 
     array (
       'label' => 'reorderRecords',
     ),
+<<<<<<< HEAD
     'resetFilters' => 
     array (
       'label' => 'resetFilters',
@@ -218,6 +240,8 @@ return array (
     array (
       'label' => 'view',
     ),
+=======
+>>>>>>> aurmich/dev
   ),
   'actions' => 
   array (

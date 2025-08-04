@@ -12,12 +12,16 @@ use Illuminate\Support\Str;
 use Modules\Notify\Contracts\SmsActionContract;
 use Modules\Notify\Datas\SmsData;
 use Spatie\QueueableAction\QueueableAction;
+<<<<<<< HEAD
 use function Safe\preg_replace;
+=======
+>>>>>>> aurmich/dev
 
 final class SendNetfunSMSAction implements SmsActionContract
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     /** @var string */
     private string $token;
 
@@ -35,6 +39,14 @@ final class SendNetfunSMSAction implements SmsActionContract
 
     /** @var string|null */
     protected ?string $defaultSender = null;
+=======
+    private string $token;
+    private string $endpoint;
+    private array $vars = [];
+    protected bool $debug;
+    protected int $timeout;
+    protected ?string $defaultSender;
+>>>>>>> aurmich/dev
 
     /**
      * Create a new action instance.
@@ -49,6 +61,7 @@ final class SendNetfunSMSAction implements SmsActionContract
             throw new Exception('put [NETFUN_TOKEN] variable to your .env and config [sms.drivers.netfun.token]');
         }
         $this->token = $token;
+<<<<<<< HEAD
         $endpoint = config('sms.drivers.netfun.api_url', 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json');
         $this->endpoint = is_string($endpoint) ? $endpoint : 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json';
         // Parametri a livello di root
@@ -56,6 +69,14 @@ final class SendNetfunSMSAction implements SmsActionContract
         $this->defaultSender = is_string($sender) ? $sender : null;
         $this->debug = (bool) config('sms.debug', false);
         $this->timeout = is_numeric(config('sms.timeout', 30)) ? (int) config('sms.timeout', 30) : 30;
+=======
+        $this->endpoint = config('sms.drivers.netfun.api_url', 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json');
+
+        // Parametri a livello di root
+        $this->defaultSender = config('sms.from');
+        $this->debug = (bool) config('sms.debug', false);
+        $this->timeout = (int) config('sms.timeout', 30);
+>>>>>>> aurmich/dev
     }
 
     /**
@@ -73,23 +94,41 @@ final class SendNetfunSMSAction implements SmsActionContract
         ];
 
         // Normalizza il numero di telefono
+<<<<<<< HEAD
         $to = (string) $smsData->to;
         if (Str::startsWith($to, '00')) {
             $to = $to !== '' ? ('+' . mb_substr($to, 2)) : $to;
         }
         if (!Str::startsWith($to, '+')) {
             $to = '+39' . $to;
+=======
+        $smsData->to .= '';
+        if (Str::startsWith($smsData->to, '00')) {
+            $smsData->to = '+39' . mb_substr($smsData->to, 2);
+        }
+
+        if (!Str::startsWith($smsData->to, '+')) {
+            $smsData->to = '+39' . $smsData->to;
+>>>>>>> aurmich/dev
         }
 
         $body = [
             'api_token' => $this->token,
+<<<<<<< HEAD
             'sender' => $smsData->from ?? $this->defaultSender,
+=======
+            'sender' => $smsData->from,
+>>>>>>> aurmich/dev
             'text_template' => $smsData->body,
             'async' => true,
             'utf8_enabled' => true,
             'destinations' => [
                 [
+<<<<<<< HEAD
                     'number' => $to,
+=======
+                    'number' => $smsData->to,
+>>>>>>> aurmich/dev
                 ],
             ],
         ];
@@ -117,16 +156,20 @@ final class SendNetfunSMSAction implements SmsActionContract
      * @param string $phoneNumber Numero di telefono da normalizzare
      * @return string Numero di telefono normalizzato in formato E.164
      */
+<<<<<<< HEAD
     /**
      * Normalizza il numero di telefono nel formato E.164
      *
      * @param string $phoneNumber Numero di telefono da normalizzare
      * @return string Numero di telefono normalizzato in formato E.164
      */
+=======
+>>>>>>> aurmich/dev
     protected function normalizePhoneNumber(string $phoneNumber): string
     {
         // Rimuovi tutti i caratteri non numerici tranne il +
         $cleaned = preg_replace('/[^0-9+]/', '', $phoneNumber);
+<<<<<<< HEAD
         
         // Se preg_replace restituisce null (non dovrebbe succedere con input string)
         if (!is_string($cleaned) || $cleaned === '') {
@@ -138,6 +181,14 @@ final class SendNetfunSMSAction implements SmsActionContract
             $cleaned = '+39' . ltrim($cleaned, '0');
         }
         
+=======
+
+        // Se il numero non inizia con '+'
+        if (!Str::startsWith($cleaned, '+')) {
+            $cleaned = '+39' . $cleaned;
+        }
+
+>>>>>>> aurmich/dev
         return $cleaned;
     }
 }

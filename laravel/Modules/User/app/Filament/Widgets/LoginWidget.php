@@ -5,12 +5,20 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets;
 
 use Exception;
+<<<<<<< HEAD
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form as FilamentForm;
 use Filament\Notifications\Notification;
+=======
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Toggle;
+use Filament\Forms\Form as FilamentForm;
+use Filament\Notifications\Notification;
+use Illuminate\Support\Facades\Auth;
+>>>>>>> aurmich/dev
 use Illuminate\Validation\ValidationException;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
@@ -21,6 +29,10 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
  * - Validazione e sicurezza integrate
  * - Facilmente estendibile (2FA, captcha, login social)
  *
+<<<<<<< HEAD
+=======
+ * @property-read static string $view La view del widget segue il pattern {module}::filament.widgets.{type}
+>>>>>>> aurmich/dev
  * @property array<string, mixed>|null $data
  */
 class LoginWidget extends XotBaseWidget
@@ -33,8 +45,12 @@ class LoginWidget extends XotBaseWidget
      * @see \Modules\User\docs\WIDGETS_STRUCTURE.md - Sezione B
      * @var view-string
      */
+<<<<<<< HEAD
     /** @phpstan-ignore-next-line property.defaultValue */
     protected static string $view = 'pub_theme::filament.widgets.auth.login';
+=======
+    protected static string $view = 'user::filament.widgets.login';
+>>>>>>> aurmich/dev
     
    
     /**
@@ -62,15 +78,23 @@ class LoginWidget extends XotBaseWidget
             TextInput::make('password')
                 ->password()
                 ->required(),
+<<<<<<< HEAD
             Toggle::make('remember')
             ->visible(false),
+=======
+            Toggle::make('remember'),
+>>>>>>> aurmich/dev
         ];
     }
 
     /**
      * Get the form model.
      *
+<<<<<<< HEAD
      * @return \Illuminate\Database\Eloquent\Model|null
+=======
+     * @return \Illuminate\Database\Eloquent\Model|string|null
+>>>>>>> aurmich/dev
      */
     protected function getFormModel(): ?\Illuminate\Database\Eloquent\Model
     {
@@ -104,9 +128,17 @@ class LoginWidget extends XotBaseWidget
             
             // Cast esplicito per type safety PHPStan
             $remember = (bool) ($data['remember'] ?? false);
+<<<<<<< HEAD
             $attempt_data =Arr::only($data,['email','password']);
             
             if (!Auth::attempt($attempt_data, $remember)) {
+=======
+            
+            if (!Auth::attempt([
+                'email' => (string) $data['email'],
+                'password' => (string) $data['password']
+            ], $remember)) {
+>>>>>>> aurmich/dev
                 throw ValidationException::withMessages([
                     'email' => [__('Le credenziali fornite non sono corrette.')],
                 ]);
@@ -149,7 +181,11 @@ class LoginWidget extends XotBaseWidget
                 
             $this->form->fill();
             $this->form->saveRelationships();
+<<<<<<< HEAD
             //$this->form->callAfter();
+=======
+            $this->form->callAfter();
+>>>>>>> aurmich/dev
             
             $this->addError('email', __('Si è verificato un errore durante il login. Riprova più tardi.'));
         }

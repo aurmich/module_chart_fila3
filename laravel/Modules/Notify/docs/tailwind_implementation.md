@@ -4,7 +4,10 @@
 
 ### 1.1 Installazione
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Installazione dipendenze
 npm install -D tailwindcss postcss autoprefixer
 

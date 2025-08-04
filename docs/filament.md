@@ -1,3 +1,29 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+https://medium.com/@laravelprotips/filament-streamline-multiple-widgets-with-one-dynamic-livewire-filter-ed05c978a97f
+
+
+
+https://github.com/awcodes/overlook?tab=readme-ov-file
+
+## Collegamenti
+* [README.md](README.md)
+* [bottlenecks.md](bottlenecks.md)
+* [errori.md](errori.md)
+* [translations.md](translations.md)
+## Collegamenti tra versioni di filament.md
+* [filament.md](docs/tecnico/filament/filament.md)
+* [filament.md](laravel/Modules/Chart/docs/filament.md)
+* [filament.md](laravel/Modules/Gdpr/docs/filament.md)
+* [filament.md](laravel/Modules/Xot/docs/technical/filament.md)
+* [filament.md](laravel/Modules/Xot/docs/roadmap/integration/filament.md)
+* [filament.md](laravel/Modules/Lang/docs/filament.md)
+* [filament.md](laravel/Modules/Job/docs/filament.md)
+* [filament.md](laravel/Modules/Activity/docs/filament.md)
+* [filament.md](laravel/Modules/Cms/docs/filament.md)
+=======
+>>>>>>> aurmich/dev
 
 -----------------------------------------------------------------------------------
 https://github.com/cheesegrits/filament-google-maps
@@ -65,6 +91,7 @@ function showPosition(position) {
 https://polodev.github.io/tuts/2018/11/05/nearby-location-using-latitude-and-longitude-in-laravel-application-mysql-query-plus-vue-implementation/
 
 https://github.com/geocoder-php/GeocoderLaravel
+<<<<<<< HEAD
 
 # Integrazione Filament nel Modulo Geo
 
@@ -155,4 +182,7 @@ Modules/Geo/app/Filament/Resources/
 - **Filosofia**: Un solo punto di verità, nessun path assoluto, nessun lock-in.
 - **Religione**: "Non avrai altro path all'infuori del relativo".
 - **Zen**: Serenità nella navigazione, nessun errore di path, nessun link rotto dopo un refactor.
+=======
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+>>>>>>> aurmich/dev
 

@@ -128,7 +128,11 @@ class RadioCardSelector extends Field
     /**
      * Ottiene le card per la visualizzazione.
      *
+<<<<<<< HEAD
      * 
+=======
+     * @return array<int, array<string, mixed>>
+>>>>>>> aurmich/dev
      */
     public function getCards(): array
     {

@@ -29,6 +29,7 @@ class AddressField extends Forms\Components\Field
                 'state' => null,
                 'zip' => null,
             ];
+<<<<<<< HEAD
             
             //if ($record && method_exists($record, 'getRelationValue')) {
                 $relationship = $this->getRelationship();
@@ -39,6 +40,14 @@ class AddressField extends Forms\Components\Field
                     }
                 }
             //}
+=======
+            $address = $record->getRelationValue($this->getRelationship());
+            if (null !== $address && is_object($address) && method_exists($address, 'toArray')) {
+                $data = $address->toArray();
+            }
+
+            $component->state($data);
+>>>>>>> aurmich/dev
         });
 
         $this->dehydrated(false);
@@ -66,7 +75,11 @@ class AddressField extends Forms\Components\Field
             $relationship->updateOrCreate($state);
         }
 
+<<<<<<< HEAD
         $record?->touch();
+=======
+        $record->touch();
+>>>>>>> aurmich/dev
     }
 
     public function getChildComponents(): array

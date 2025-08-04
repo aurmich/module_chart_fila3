@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # Regola Cursor - RadioCardSelector Pattern
 
 ## Ambito
@@ -186,3 +187,5 @@ RadioCardSelector::make('property_id')
 
 ## Ultimo aggiornamento
 Gennaio 2025 - Pattern consolidato e production-ready
+=======
+>>>>>>> aurmich/dev

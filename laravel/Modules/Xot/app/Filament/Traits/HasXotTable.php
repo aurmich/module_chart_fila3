@@ -45,7 +45,11 @@ trait HasXotTable
     /**
      * Get table header actions.
      *
+<<<<<<< HEAD
      * @return array<string, \Filament\Tables\Actions\Action|\Filament\Tables\Actions\ActionGroup>
+=======
+     * @return array<string, Action|ActionGroup>
+>>>>>>> aurmich/dev
      */
     public function getTableHeaderActions(): array
     {
@@ -209,10 +213,14 @@ trait HasXotTable
         $table = $table
             ->recordTitleAttribute($this->getTableRecordTitleAttribute())
             ->heading($this->getTableHeading())
+<<<<<<< HEAD
             ->columns($this->layoutView->getTableColumns(
                 $this->getTableColumns(),
                 $this->getGridTableColumns()
             ))
+=======
+            ->columns($this->layoutView->getTableColumns())
+>>>>>>> aurmich/dev
             ->contentGrid($this->layoutView->getTableContentGrid())
             ->filters($this->getTableFilters())
             ->filtersLayout(FiltersLayout::AboveContent)

@@ -1,10 +1,19 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> aurmich/dev
 return [
     'backend' => [
         'access' => [
             'users' => [
+<<<<<<< HEAD
                 'delete_user_confirm' => 'Are you sure you want to delete this user permanently? Anywhere in the application that references this user\'s id will most likely error. Proceed at your own risk. This can not be un-done.',
+=======
+                'delete_user_confirm' => "Are you sure you want to delete this user permanently? Anywhere in the application that references this user's id will most likely error. Proceed at your own risk. This can not be un-done.",
+>>>>>>> aurmich/dev
                 'if_confirmed_off' => '(If confirmed is off)',
                 'restore_user_confirm' => 'Restore this user to its original state?',
             ],
@@ -35,9 +44,15 @@ return [
                 'offline' => 'Offline',
             ],
             'you_have' => [
+<<<<<<< HEAD
                 'messages' => '{0} You don\'t have messages|{1} You have 1 message|[2,Inf] You have :number messages',
                 'notifications' => '{0} You don\'t have notifications|{1} You have 1 notification|[2,Inf] You have :number notifications',
                 'tasks' => '{0} You don\'t have tasks|{1} You have 1 task|[2,Inf] You have :number tasks',
+=======
+                'messages' => "{0} You don't have messages|{1} You have 1 message|[2,Inf] You have :number messages",
+                'notifications' => "{0} You don't have notifications|{1} You have 1 notification|[2,Inf] You have :number notifications",
+                'tasks' => "{0} You don't have tasks|{1} You have 1 task|[2,Inf] You have :number tasks",
+>>>>>>> aurmich/dev
             ],
         ],
         'search' => [
@@ -49,10 +64,17 @@ return [
         'voucher' => [
             'title' => 'Voucher Title',
         ],
+<<<<<<< HEAD
         'welcome' => '<p>This is the AdminLTE theme by <a href=\"https://almsaeedstudio.com/\" target=\"_blank\">https://almsaeedstudio.com/</a>. This is a stripped down version with only the necessary styles and scripts to get it running. Download the full version to start adding components to your dashboard.</p>
 <p>All the functionality is for show with the exception of the <strong>User Management</strong> to the left. This boilerplate comes with a fully functional access control library to manage users/roles/permissions.</p>
 <p>Keep in mind it is a work in progress and their may be bugs or other issues I have not come across. I will do my best to fix them as I receive them.</p>
 <p>Hope you enjoy all of the work I have put into this. Please visit the <a href=\"https://github.com/rappasoft/laravel-5-boilerplate\" target=\"_blank\">GitHub</a> page for more information and report any <a href=\"https://github.com/rappasoft/Laravel-5-Boilerplate/issues\" target=\"_blank\">issues here</a>.</p>
+=======
+        'welcome' => '<p>This is the AdminLTE theme by <a href="https://almsaeedstudio.com/" target="_blank">https://almsaeedstudio.com/</a>. This is a stripped down version with only the necessary styles and scripts to get it running. Download the full version to start adding components to your dashboard.</p>
+<p>All the functionality is for show with the exception of the <strong>User Management</strong> to the left. This boilerplate comes with a fully functional access control library to manage users/roles/permissions.</p>
+<p>Keep in mind it is a work in progress and their may be bugs or other issues I have not come across. I will do my best to fix them as I receive them.</p>
+<p>Hope you enjoy all of the work I have put into this. Please visit the <a href="https://github.com/rappasoft/laravel-5-boilerplate" target="_blank">GitHub</a> page for more information and report any <a href="https://github.com/rappasoft/Laravel-5-Boilerplate/issues" target="_blank">issues here</a>.</p>
+>>>>>>> aurmich/dev
 <p><strong>This project is very demanding to keep up with given the rate at which the master Laravel branch changes, so any help is appreciated.</strong></p>
 <p>- Anthony Rappa</p>',
     ],
@@ -61,7 +83,11 @@ return [
             'error' => 'Whoops!',
             'greeting' => 'Hello!',
             'regards' => 'Regards,',
+<<<<<<< HEAD
             'trouble_clicking_button' => 'If you’re having trouble clicking the \":actionText\" button, copy and paste the URL below into your web browser:',
+=======
+            'trouble_clicking_button' => 'If you’re having trouble clicking the ":actionText" button, copy and paste the URL below into your web browser:',
+>>>>>>> aurmich/dev
             'thank_you_for_using_app' => 'Thank you for using our application!',
             'password_reset_subject' => 'Reset Password',
             'password_cause_of_email' => 'You are receiving this email because we received a password reset request for your account.',
@@ -80,18 +106,31 @@ return [
             'js_injected_from_controller' => 'Javascript Injected from a Controller',
             'using_blade_extensions' => 'Using Blade Extensions',
             'using_access_helper' => [
+<<<<<<< HEAD
                 'array_permissions' => 'Using Access Helper with Array of Permission Names or ID\'s where the user does have to possess all.',
                 'array_permissions_not' => 'Using Access Helper with Array of Permission Names or ID\'s where the user does not have to possess all.',
                 'array_roles' => 'Using Access Helper with Array of Role Names or ID\'s where the user does have to possess all.',
                 'array_roles_not' => 'Using Access Helper with Array of Role Names or ID\'s where the user does not have to possess all.',
+=======
+                'array_permissions' => "Using Access Helper with Array of Permission Names or ID's where the user does have to possess all.",
+                'array_permissions_not' => "Using Access Helper with Array of Permission Names or ID's where the user does not have to possess all.",
+                'array_roles' => "Using Access Helper with Array of Role Names or ID's where the user does have to possess all.",
+                'array_roles_not' => "Using Access Helper with Array of Role Names or ID's where the user does not have to possess all.",
+>>>>>>> aurmich/dev
                 'permission_id' => 'Using Access Helper with Permission ID',
                 'permission_name' => 'Using Access Helper with Permission Name',
                 'role_id' => 'Using Access Helper with Role ID',
                 'role_name' => 'Using Access Helper with Role Name',
             ],
+<<<<<<< HEAD
             'view_console_it_works' => 'View console, you should see \'it works!\' which is coming from FrontendController@index',
             'you_can_see_because' => 'You can see this because you have the role of \':role\'!',
             'you_can_see_because_permission' => 'You can see this because you have the permission of \':permission\'!',
+=======
+            'view_console_it_works' => "View console, you should see 'it works!' which is coming from FrontendController@index",
+            'you_can_see_because' => "You can see this because you have the role of ':role'!",
+            'you_can_see_because_permission' => "You can see this because you have the permission of ':permission'!",
+>>>>>>> aurmich/dev
         ],
         'user' => [
             'profile_updated' => 'Profile successfully updated.',

@@ -17,6 +17,7 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class ExceptionHandler 
 {
+<<<<<<< HEAD
     /**
      * Configura la gestione delle eccezioni.
      *
@@ -24,6 +25,9 @@ class ExceptionHandler
      * @return void
      */
     public static function handles(Exceptions $exceptions): void
+=======
+    public static function handles(Exceptions $exceptions)
+>>>>>>> aurmich/dev
     {
         
         $exceptions->render(function (HttpException $e,Request $request) {

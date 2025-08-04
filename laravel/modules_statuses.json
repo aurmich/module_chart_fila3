@@ -1,14 +1,26 @@
 {
+<<<<<<< HEAD
     "Activity": true,
     "Chart": true,
     "Cms": true,
     "DbForge": true,
     "Gdpr": true,
     "Geo": true,
+=======
+    "Patient": true,
+    "Xot": true,
+    "Dental": true,
+    "Reporting": true,
+    "Activity": true,
+    "Chart": true,
+    "Cms": true,
+    "Gdpr": true,
+>>>>>>> aurmich/dev
     "Job": true,
     "Lang": true,
     "Media": true,
     "Notify": true,
+<<<<<<< HEAD
     "SaluteMo": true,
     "SaluteOra": true,
     "Tenant": true,
@@ -16,4 +28,12 @@
     "User": true,
     "Xot": true,
     "FormBuilder": true
+=======
+    "Tenant": true,
+    "UI": true,
+    "User": true,
+    "SaluteOra": true,
+    "SaluteMo": true,
+    "Geo": true
+>>>>>>> aurmich/dev
 }

@@ -4,21 +4,33 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Models;
 
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Spatie\Activitylog\LogOptions;
 use Modules\User\Models\BaseTenant;
 use Spatie\OpeningHours\OpeningHours;
+=======
+use Spatie\Activitylog\LogOptions;
+use Modules\User\Models\BaseTenant;
+>>>>>>> aurmich/dev
 use Filament\Models\Contracts\HasName;
 use Modules\SaluteOra\Models\BaseModel;
 use Modules\User\Models\Traits\IsTenant;
 use Modules\Xot\Models\Traits\RelationX;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
+=======
+>>>>>>> aurmich/dev
 use Modules\Geo\Models\Traits\HasAddress;
 use Modules\User\Contracts\TenantContract;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+<<<<<<< HEAD
+=======
+use Illuminate\Database\Eloquent\Builder;
+>>>>>>> aurmich/dev
 
 /**
  * Studio model for the SaluteOra module.
@@ -36,8 +48,11 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @property array|null $opening_hours
  * @property array|null $services
  * @property bool $active
+<<<<<<< HEAD
  * @property bool $is_active
  * @property int $owner_id
+=======
+>>>>>>> aurmich/dev
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
  * @property \Illuminate\Support\Carbon|null $deleted_at
@@ -89,6 +104,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Studio whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Studio whereVatNumber($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Studio whereWebsite($value)
+<<<<<<< HEAD
  * @property string|null $city
  * @property string|null $postal_code
  * @property string|null $province
@@ -112,6 +128,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @method static Builder<static>|Studio whereRegion($value)
  * @method static Builder<static>|Studio whereSettings($value)
  * @method static Builder<static>|Studio whereTaxCode($value)
+=======
+>>>>>>> aurmich/dev
  * @mixin \Eloquent
  */
 class Studio extends BaseTenant
@@ -307,8 +325,13 @@ class Studio extends BaseTenant
     public function getCurrentMonthAppointmentsCount(): int
     {
         return $this->appointments()
+<<<<<<< HEAD
             ->whereMonth('starts_at', now()->month)
             ->whereYear('starts_at', now()->year)
+=======
+            ->whereMonth('start_time', now()->month)
+            ->whereYear('start_time', now()->year)
+>>>>>>> aurmich/dev
             ->count();
     }
 
@@ -339,6 +362,7 @@ class Studio extends BaseTenant
             $q->where('postal_code', $cap);
         });
     }
+<<<<<<< HEAD
 
     public function getEnabledDatesByMonth(string $month): array
     {
@@ -406,4 +430,6 @@ class Studio extends BaseTenant
         }
         return $dates;
     }
+=======
+>>>>>>> aurmich/dev
 }

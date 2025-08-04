@@ -17,6 +17,10 @@ return [
     'tenant_class' => 'Modules\SaluteOra\Models\Studio',
     'colors' => [
         'primary' => '#FF5F7E',
+<<<<<<< HEAD
     ],
     'force_ssl' => env('FORCE_SSL', false),
+=======
+    ]
+>>>>>>> aurmich/dev
 ];

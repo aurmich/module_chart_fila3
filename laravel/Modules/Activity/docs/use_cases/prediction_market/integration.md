@@ -298,7 +298,10 @@ Route::middleware('auth:api')->group(function () {
 
 ### 8.1 Comandi per il Monitoraggio
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Visualizza lo stato dei proiettori
 php artisan event-sourcing:list-projectors
 

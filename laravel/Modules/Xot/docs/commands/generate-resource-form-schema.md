@@ -53,6 +53,12 @@ return [
 5. Documentazione inline completa
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Filament Best Practices](../filament-best-practices.md)
 - [Form Components](../COMPONENTI_PERSONALIZZATI.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md) 
+=======
+- [Filament Best Practices](../FILAMENT-BEST-PRACTICES.md)
+- [Form Components](../COMPONENTI_PERSONALIZZATI.md)
+- [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md) 
+>>>>>>> aurmich/dev

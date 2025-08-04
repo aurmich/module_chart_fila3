@@ -70,4 +70,8 @@ enum RegistrationStatusEnum: string implements HasLabel, HasIcon, HasColor
             self::EXPIRED => 'gray',
         };
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> aurmich/dev

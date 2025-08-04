@@ -1,6 +1,7 @@
 <?php
 
 return array (
+<<<<<<< HEAD
   'navigation' => 
   array (
     'label' => 'Studi',
@@ -58,11 +59,22 @@ return array (
       'label' => 'Nome Studio',
       'placeholder' => 'Inserisci il nome dello studio odontoiatrico',
       'help' => 'Denominazione ufficiale dello studio o della struttura sanitaria',
+=======
+  'single' => 'Studio',
+  'plural' => 'Studi',
+  'fields' => 
+  array (
+    'name' => 
+    array (
+      'label' => 'nome studio',
+      'placeholder' => 'nome studio',
+>>>>>>> aurmich/dev
       'helper_text' => '',
       'description' => '',
     ),
     'address' => 
     array (
+<<<<<<< HEAD
       'label' => 'Indirizzo Completo',
       'placeholder' => 'Via/Piazza e numero civico dello studio',
       'help' => 'Indirizzo fisico completo dove si trova lo studio',
@@ -96,19 +108,39 @@ return array (
       'label' => 'Numero di Telefono',
       'placeholder' => 'Inserisci il numero di telefono dello studio',
       'help' => 'Numero di telefono principale per contatti e prenotazioni',
+=======
+      'full_address' => 
+      array (
+        'label' => 'address.full_address',
+      ),
+      'label' => 'address',
+    ),
+    'city' => 'Città',
+    'postal_code' => 'CAP',
+    'phone' => 
+    array (
+      'label' => 'phone',
+      'placeholder' => 'phone',
+>>>>>>> aurmich/dev
       'helper_text' => '',
       'description' => '',
     ),
     'email' => 
     array (
+<<<<<<< HEAD
       'label' => 'Email Studio',
       'placeholder' => 'Inserisci l\'email di contatto dello studio',
       'help' => 'Indirizzo email ufficiale per comunicazioni professionali',
+=======
+      'label' => 'email',
+      'placeholder' => 'email',
+>>>>>>> aurmich/dev
       'helper_text' => '',
       'description' => '',
     ),
     'website' => 
     array (
+<<<<<<< HEAD
       'label' => 'Sito Web',
       'placeholder' => 'Inserisci l\'URL del sito web (es. https://studio.it)',
       'help' => 'Indirizzo del sito web ufficiale dello studio odontoiatrico',
@@ -210,10 +242,93 @@ return array (
       'help' => 'Data di eliminazione logica dello studio dal sistema',
       'helper_text' => '',
       'description' => '',
+=======
+      'description' => 'website',
+      'helper_text' => '',
+      'placeholder' => 'website',
+      'label' => 'website',
+    ),
+    'registration_number' => 
+    array (
+      'description' => 'registration_number',
+      'helper_text' => '',
+      'placeholder' => 'registration_number',
+      'label' => 'registration_number',
+    ),
+    'vat_number' => 
+    array (
+      'description' => 'vat_number',
+      'helper_text' => '',
+      'placeholder' => 'vat_number',
+      'label' => 'vat_number',
+    ),
+    'description' => 
+    array (
+      'description' => 'description',
+      'helper_text' => '',
+      'placeholder' => 'description',
+      'label' => 'description',
+    ),
+    'opening_hours' => 'Orari di apertura',
+    'services' => 'Servizi',
+    'active' => 
+    array (
+      'description' => 'active',
+      'label' => 'active',
+    ),
+    'created_at' => 
+    array (
+      'label' => 'created_at',
+    ),
+    'updated_at' => 'Aggiornato il',
+    'deleted_at' => 'Eliminato il',
+    'resetFilters' => 
+    array (
+      'label' => 'resetFilters',
+    ),
+    'addresses' => 
+    array (
+      'description' => 'addresses',
+      'helper_text' => 'addresses',
+      'placeholder' => 'addresses',
+      'label' => 'addresses',
+    ),
+    'applyFilters' => 
+    array (
+      'label' => 'applyFilters',
+    ),
+    'toggleColumns' => 
+    array (
+      'label' => 'toggleColumns',
+    ),
+    'reorderRecords' => 
+    array (
+      'label' => 'reorderRecords',
+    ),
+    'openFilters' => 
+    array (
+      'label' => 'openFilters',
+    ),
+    'id' => 
+    array (
+      'label' => 'id',
+    ),
+    'attach' => 
+    array (
+      'label' => 'attach',
+    ),
+    'is_primary' => 
+    array (
+      'description' => 'is_primary',
+      'label' => 'is_primary',
+      'placeholder' => 'is_primary',
+      'helper_text' => 'is_primary',
+>>>>>>> aurmich/dev
     ),
   ),
   'actions' => 
   array (
+<<<<<<< HEAD
     'create' => 
     array (
       'label' => 'Nuovo Studio',
@@ -324,10 +439,18 @@ return array (
     array (
       'label' => 'Filtra per Regione',
       'placeholder' => 'Seleziona una regione',
+=======
+    'activate' => 'Attiva',
+    'deactivate' => 'Disattiva',
+    'register_tenant' => 
+    array (
+      'label' => 'Aggiungi Studio',
+>>>>>>> aurmich/dev
     ),
   ),
   'messages' => 
   array (
+<<<<<<< HEAD
     'empty_state' => 'Nessuno studio registrato',
     'loading' => 'Caricamento dati studi...',
     'saved' => 'Modifiche salvate correttamente',
@@ -375,5 +498,20 @@ return array (
       'label' => 'Informazioni Commerciali',
       'description' => 'Dati fiscali e commerciali dello studio',
     ),
+=======
+    'activated' => 'Studio attivato con successo.',
+    'deactivated' => 'Studio disattivato con successo.',
+  ),
+  'navigation' => 
+  array (
+    'sort' => 18,
+    'label' => 'Studi',
+    'icon' => 'saluteora-studio',
+    'group' => 'Gestione Studi',
+  ),
+  'model' => 
+  array (
+    'label' => 'Studio',
+>>>>>>> aurmich/dev
   ),
 );

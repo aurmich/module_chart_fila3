@@ -42,7 +42,10 @@ class LangServiceProvider extends XotBaseServiceProvider
         // $this->registerTranslator();
         $this->translatableComponents();
         $this->registerFilamentLabel();
+<<<<<<< HEAD
         
+=======
+>>>>>>> aurmich/dev
     }
 
     public function register(): void
@@ -50,9 +53,13 @@ class LangServiceProvider extends XotBaseServiceProvider
         parent::register();
 
         // Registra il service provider di laravel-localization
+<<<<<<< HEAD
         // $this->app->register(LaravelLocalizationServiceProvider::class);
         // NOTA: Il LaravelLocalizationServiceProvider viene già registrato automaticamente
         // tramite package discovery di Laravel (vedere composer.json del package)
+=======
+        $this->app->register(LaravelLocalizationServiceProvider::class);
+>>>>>>> aurmich/dev
 
         // Carica la configurazione di laravel-localization
         // $this->mergeConfigFrom(
@@ -116,11 +123,17 @@ class LangServiceProvider extends XotBaseServiceProvider
 
             return $component;
         });
+<<<<<<< HEAD
 
         
         Step::configureUsing(function (Step $component) {
             $component = app(AutoLabelAction::class)->execute($component);
             
+=======
+        Step::configureUsing(function (Step $component) {
+            $component = app(AutoLabelAction::class)->execute($component);
+
+>>>>>>> aurmich/dev
             // ->translateLabel()
             return $component;
         });

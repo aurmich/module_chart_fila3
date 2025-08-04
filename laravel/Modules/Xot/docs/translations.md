@@ -64,7 +64,10 @@ Modules/<NomeModulo>/
 ## Esempio di File translations.md
 
 ```markdown
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Traduzioni del Modulo <NomeModulo>
 
 ## Collegamenti
@@ -325,7 +328,10 @@ TextInput::make('cognome')
 // Utilizzo in Actions
 Action::make('save')
 Action::make('delete')
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 ### Versione HEAD
 
 ```
@@ -367,7 +373,10 @@ Action::make('delete')
 - Test di coerenza
 - Validazione formati
 - Test di performance 
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 ## Collegamenti tra versioni di translations.md
 * [translations.md](../../../Chart/docs/translations.md)
 * [translations.md](../../../Reporting/docs/translations.md)

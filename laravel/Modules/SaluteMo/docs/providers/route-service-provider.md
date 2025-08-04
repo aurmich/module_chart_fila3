@@ -419,7 +419,10 @@ The route mapping process is responsible for loading and registering all routes:
 For production performance, routes should be cached:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Cache routes
 php artisan route:cache
 

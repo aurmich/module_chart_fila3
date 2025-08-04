@@ -33,7 +33,11 @@ return [
 
         'sqlite' => [
             'driver' => 'sqlite',
+<<<<<<< HEAD
             'url' => env('DB_URL'),
+=======
+            'url' => env('DATABASE_URL'),
+>>>>>>> aurmich/dev
             'database' => env('DB_DATABASE', database_path('database.sqlite')),
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
@@ -44,6 +48,7 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
+<<<<<<< HEAD
             'url' => env('DB_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
@@ -53,6 +58,37 @@ return [
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => env('DB_CHARSET', 'utf8mb4'),
             'collation' => env('DB_COLLATION', 'utf8mb4_unicode_ci'),
+=======
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'saluteora_data'),
+            'username' => env('DB_USERNAME', 'marco'),
+            'password' => env('DB_PASSWORD', 'marco'),
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+        ],
+
+        'user' => [
+            'driver' => 'mysql',
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_USER_HOST', '127.0.0.1'),
+            'port' => env('DB_USER_PORT', '3306'),
+            'database' => env('DB_USER_DATABASE', 'saluteora_user'),
+            'username' => env('DB_USER_USERNAME', 'marco'),
+            'password' => env('DB_USER_PASSWORD', 'marco'),
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+>>>>>>> aurmich/dev
             'prefix' => '',
             'prefix_indexes' => true,
             'strict' => true,
@@ -82,6 +118,30 @@ return [
             ]) : [],
         ],
 
+<<<<<<< HEAD
+=======
+        'setting' => [
+
+            'driver' => 'mysql',
+            'url' => env('SETTING_DATABASE_URL'),
+            'host' => env('SETTING_DB_HOST', '127.0.0.1'),
+            'port' => env('SETTING_DB_PORT', '3306'),
+            'database' => env('SETTING_DB_DATABASE', 'setting'),
+            'username' => env('SETTING_DB_USERNAME', 'root'),
+            'password' => env('SETTING_DB_PASSWORD', ''),
+            'unix_socket' => env('SETTING_DB_SOCKET', ''),
+            'charset' => env('SETTING_DB_CHARSET', 'utf8mb4'),
+            'collation' => env('SETTING_DB_COLLATION', 'utf8mb4_unicode_ci'),
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('SETTING_MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+        ],
+
+>>>>>>> aurmich/dev
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DB_URL'),
@@ -108,8 +168,31 @@ return [
             'charset' => env('DB_CHARSET', 'utf8'),
             'prefix' => '',
             'prefix_indexes' => true,
+<<<<<<< HEAD
             // 'encrypt' => env('DB_ENCRYPT', 'yes'),
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
+=======
+        ],
+
+        'xot' => [
+            'driver' => 'mysql',
+            'url' => env('DB_URL'),
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'laravel'),
+            'username' => env('DB_USERNAME', 'root'),
+            'password' => env('DB_PASSWORD', ''),
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => env('DB_CHARSET', 'utf8mb4'),
+            'collation' => env('DB_COLLATION', 'utf8mb4_unicode_ci'),
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+>>>>>>> aurmich/dev
         ],
 
     ],

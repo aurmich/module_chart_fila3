@@ -1,0 +1,28 @@
+{
+<<<<<<< HEAD
+    "name": "Chart",
+    "alias": "chart",
+    "description": "Modulo per la generazione e visualizzazione di grafici e dashboard analitici",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Chart\\Providers\\ChartServiceProvider",
+        "Modules\\Chart\\Providers\\Filament\\AdminPanelProvider"
+    ],
+    "files": []
+}
+=======
+    "name": "Geo",
+    "alias": "geo",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Geo\\Providers\\GeoServiceProvider",
+        "Modules\\Geo\\Providers\\Filament\\AdminPanelProvider"
+    ],
+    "aliases": [],
+    "files": [],
+    "requires": []
+}
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)

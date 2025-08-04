@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Cms\Models;
 
+<<<<<<< HEAD
 
 use Spatie\Translatable\HasTranslations;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Tenant\Models\Traits\SushiToJsons;
+=======
+use Modules\Tenant\Models\Traits\SushiToJsons;
+use Spatie\Translatable\HasTranslations;
+>>>>>>> aurmich/dev
 
 /**
  * Modules\Cms\Models\Section
@@ -25,8 +30,13 @@ use Modules\Tenant\Models\Traits\SushiToJsons;
  * @method static \Illuminate\Database\Eloquent\Builder|Section  newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Section  newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Section  query()
+<<<<<<< HEAD
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
+=======
+ * @property-read \Modules\SaluteOra\Models\Profile|null $creator
+ * @property-read \Modules\SaluteOra\Models\Profile|null $updater
+>>>>>>> aurmich/dev
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Section whereBlocks($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Section whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Section whereCreatedBy($value)
@@ -44,7 +54,10 @@ use Modules\Tenant\Models\Traits\SushiToJsons;
 class Section extends BaseModelLang
 {
     use SushiToJsons;
+<<<<<<< HEAD
     use Traits\HasBlocks;
+=======
+>>>>>>> aurmich/dev
 
     /** @var array<int, string> */
     public $translatable = [

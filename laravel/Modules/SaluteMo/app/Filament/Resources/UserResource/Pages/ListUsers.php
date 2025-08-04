@@ -39,14 +39,21 @@ class ListUsers extends BaseListUsers
         //'state'=>SelectStateColumn::make('state'),
         //'state'=>SelectColumn::make('state')->options(UserStateEnum::class)
         //'state'=>SelectColumn::make('state')->options(UserState::class)
+<<<<<<< HEAD
         'state'=>IconStateColumn::make('state'),
+=======
+        IconStateColumn::make('state'),
+>>>>>>> aurmich/dev
 
     ];
    }
 
+<<<<<<< HEAD
     /**
      * @return array<\Filament\Tables\Actions\Action>
      */
+=======
+>>>>>>> aurmich/dev
     public function getTableActions(): array
     {
         return [

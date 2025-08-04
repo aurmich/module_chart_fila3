@@ -12,8 +12,12 @@ namespace Modules\SaluteOra\States\User;
  */
 class Rejected extends UserState
 {
+<<<<<<< HEAD
     /** @var string */
     public static string $name = 'rejected';
+=======
+    public static $name = 'rejected';
+>>>>>>> aurmich/dev
     public function label(): string
     {
         return 'Rifiutato';

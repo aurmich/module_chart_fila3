@@ -41,7 +41,10 @@ mix.js('resources/js/app.js', 'public/js')
 
 ### Sviluppo
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Installazione dipendenze
 npm install
 composer install
@@ -53,7 +56,10 @@ php artisan serve
 
 ### Produzione
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Build assets
 npm run prod
 
@@ -98,7 +104,10 @@ return [
 ### Script di Deployment
 ```bash
 #!/bin/bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # deploy.sh
 
 # Pull ultime modifiche

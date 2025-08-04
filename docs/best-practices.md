@@ -366,7 +366,10 @@ Forms\Components\Select::make('day')
 
 ### Esempi
 ```markdown
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Titolo
 
 ## Descrizione

@@ -1,11 +1,15 @@
 # Componenti Form
 
 ## Introduzione
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 I componenti form forniscono elementi di input e validazione per la creazione di form complessi e interattivi.
 
 ## Componenti Disponibili
 
+<<<<<<< HEAD
 ### InlineDatePicker
 
 Un componente avanzato per la selezione di date che mostra un calendario inline con la possibilità di abilitare/disabilitare date specifiche.
@@ -143,6 +147,8 @@ public function form(Form $form): Form
 }
 ```
 
+=======
+>>>>>>> aurmich/dev
 ### Input
 ```blade
 <x-ui::input 

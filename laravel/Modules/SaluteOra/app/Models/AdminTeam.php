@@ -6,6 +6,11 @@ namespace Modules\SaluteOra\Models;
 use Parental\HasParent;
 
 /**
+<<<<<<< HEAD
+=======
+ * 
+ *
+>>>>>>> aurmich/dev
  * @property string $id
  * @property int $team_id
  * @property string|null $user_id

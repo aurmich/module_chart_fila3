@@ -54,9 +54,12 @@
     },
     "require_comment": {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> cb26a2b (.)
+=======
+>>>>>>> aurmich/dev
         "laraxot/module_tenant_fila3": "*"
     },
     "require-dev": {

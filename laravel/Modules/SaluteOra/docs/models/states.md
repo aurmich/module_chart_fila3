@@ -441,6 +441,7 @@ class PendingToActive extends BaseTransition
 }
 ```
 
+<<<<<<< HEAD
 ➡️ **Documentazione completa**: [Pattern BaseTransition](base-transition-pattern.md)
 
 ## 🏥 **Stati degli Appuntamenti** (NUOVO - Gennaio 2025)
@@ -496,3 +497,6 @@ Le notifiche includono automaticamente:
 - `message`: Messaggio personalizzato
 
 📋 **Documentazione completa**: [Appointment States](appointment-states.md) 
+=======
+➡️ **Documentazione completa**: [Pattern BaseTransition](base-transition-pattern.md) 
+>>>>>>> aurmich/dev

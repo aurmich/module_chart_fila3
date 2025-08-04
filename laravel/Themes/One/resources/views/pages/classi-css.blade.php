@@ -153,6 +153,7 @@
 <div class="mx-40">mx 40</div>
 <div class="mx-56">mx 56</div>
 <div class="mx-60">mx 60</div>
+<<<<<<< HEAD
 <div class="m-auto">mx auto</div>
 <div class="ring-[#FF5F7E]">ring pink</div>
 <div class="shadow-[0_10px_40px_rgba(0,0,0,0.2)]">shadow</div>
@@ -206,3 +207,6 @@
 <div class="p-4">p 4</div>
 <div class="ipad:mt-60">mt 28 ipad</div>
 </x-layouts.app>
+=======
+</x-layouts.app>
+>>>>>>> aurmich/dev

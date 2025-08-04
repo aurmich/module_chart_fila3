@@ -42,7 +42,10 @@ class XotData extends Data implements Wireable
     public string $register_type = '0';
     public string $verification_type = '';
     public bool $login_verified = false;
+<<<<<<< HEAD
     public bool $force_ssl = false;
+=======
+>>>>>>> aurmich/dev
     public bool $disable_frontend_dynamic_route = false;
     public bool $disable_admin_dynamic_route = false;
     public bool $disable_database_notifications = true;
@@ -294,9 +297,12 @@ class XotData extends Data implements Wireable
         if(is_null($class)){
             throw new \Exception('type '.$type.' not found in class '.$user_class);
         }
+<<<<<<< HEAD
         Assert::classExists($class, '['.__LINE__.']['.class_basename($this).']');
         Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
         Assert::implementsInterface($class, UserContract::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
+=======
+>>>>>>> aurmich/dev
         return $class;
     }
 
@@ -338,6 +344,7 @@ class XotData extends Data implements Wireable
     public function getUserChildTypeClass(): string
     {
         $user_class = $this->getUserClass();
+<<<<<<< HEAD
         $user_instance=app($user_class);
         //$enum_class = Arr::get($user_class::casts(),'type',null);
         $enum_class = Arr::get($user_instance->getCasts(),'type',null);
@@ -345,11 +352,18 @@ class XotData extends Data implements Wireable
             $enum_class=Str::of($user_class)->replace('\\Models\\', '\\Enums\\')->append('TypeEnum')->toString();
         }
         Assert::stringNotEmpty($enum_class, 'enum_class is empty');
+=======
+        $enum_class = Arr::get($user_class::casts(),'type',null);
+        if($enum_class==null){
+            $enum_class=Str::of($user_class)->replace('\\Models\\', '\\Enums\\')->append('TypeEnum')->toString();
+        }
+>>>>>>> aurmich/dev
         return $enum_class;
         //$userInstance = app($user_class);
         //return $userInstance->getChildTypes();
     }
 
+<<<<<<< HEAD
 
     public function forceSSL(): bool
     {
@@ -371,4 +385,6 @@ class XotData extends Data implements Wireable
         return true;
     }
 
+=======
+>>>>>>> aurmich/dev
 }

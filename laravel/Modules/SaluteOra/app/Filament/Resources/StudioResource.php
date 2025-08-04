@@ -6,6 +6,7 @@ namespace Modules\SaluteOra\Filament\Resources;
 
 use Filament\Forms;
 use Filament\Tables;
+<<<<<<< HEAD
 use Filament\Forms\Get;
 use Filament\Forms\Set;
 use Filament\Infolists;
@@ -24,6 +25,22 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Geo\Filament\Forms\Components\AddressField;
 use Modules\SaluteOra\Filament\Resources\StudioResource\Pages;
 use Modules\SaluteOra\Filament\Resources\StudioResource\RelationManagers;
+=======
+use Filament\Infolists;
+use Filament\Forms\Form;
+use Filament\Forms\Get;
+use Filament\Tables\Table;
+use Filament\Infolists\Infolist;
+use Modules\SaluteOra\Models\Studio;
+use Illuminate\Database\Eloquent\Builder;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\SaluteOra\Filament\Resources\StudioResource\Pages;
+use Modules\SaluteOra\Filament\Resources\StudioResource\RelationManagers;
+use Modules\Geo\Models\Address;
+use Modules\Geo\Filament\Resources\AddressResource;
+use Filament\Forms\Components\Component;
+use Modules\Geo\Filament\Forms\Components\AddressField;
+>>>>>>> aurmich/dev
 
 class StudioResource extends XotBaseResource
 {
@@ -41,12 +58,18 @@ class StudioResource extends XotBaseResource
 
             'phone' => Forms\Components\TextInput::make('phone')
                 ->tel()
+<<<<<<< HEAD
                 ->required()
+=======
+>>>>>>> aurmich/dev
                 ->maxLength(30),
 
             'email' => Forms\Components\TextInput::make('email')
                 ->email()
+<<<<<<< HEAD
                 ->required()
+=======
+>>>>>>> aurmich/dev
                 ->maxLength(100),
 
             'website' => Forms\Components\TextInput::make('website')
@@ -65,6 +88,7 @@ class StudioResource extends XotBaseResource
             
             'address' => AddressField::make('address')
                 ->relationship('address'),
+<<<<<<< HEAD
         ];
     }
 
@@ -78,4 +102,13 @@ class StudioResource extends XotBaseResource
         return $schema;
         
     }
+=======
+                
+            
+            
+        ];
+    }
+
+   
+>>>>>>> aurmich/dev
 }

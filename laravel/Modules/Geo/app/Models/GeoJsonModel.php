@@ -5,8 +5,11 @@ declare(strict_types=1);
 namespace Modules\Geo\Models;
 
 use Illuminate\Support\Collection;
+<<<<<<< HEAD
 use function Safe\file_get_contents;
 use function Safe\json_decode;
+=======
+>>>>>>> aurmich/dev
 
 /**
  * Base model readonly per dati geografici statici (ispirato a Squire).
@@ -27,9 +30,12 @@ abstract class GeoJsonModel
         $path = module_path('Geo', static::$jsonFile);
         $cacheKey = 'geo_comuni_json_' . md5($path);
         $data = cache()->rememberForever($cacheKey, fn() => json_decode(file_get_contents($path), true));
+<<<<<<< HEAD
         /**
          * @phpstan-ignore argument.type, argument.templateType, argument.templateType
          */
+=======
+>>>>>>> aurmich/dev
         return collect($data);
     }
 
@@ -43,6 +49,7 @@ abstract class GeoJsonModel
 
     /**
      * Filtra la collection per chiave/valore.
+<<<<<<< HEAD
      * 
      * @phpstan-ignore missingType.parameter, missingType.generics
      */
@@ -51,6 +58,11 @@ abstract class GeoJsonModel
         /**
          * @phpstan-ignore-next-line
          */
+=======
+     */
+    public static function where(string $key, $value): Collection
+    {
+>>>>>>> aurmich/dev
         return static::all()->where($key, $value);
     }
 }

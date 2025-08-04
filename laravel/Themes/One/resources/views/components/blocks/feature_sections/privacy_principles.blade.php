@@ -26,7 +26,11 @@ new class extends Component {
 
 @props([
     'title' => 'I nostri principi di protezione dati',
+<<<<<<< HEAD
     'subtitle' => __('pub_theme::components.privacy_principles.subtitle'),
+=======
+    'subtitle' => 'Ogni processo è progettato per massimizzare la tua privacy e sicurezza',
+>>>>>>> aurmich/dev
     'sections' => []
 ])
 

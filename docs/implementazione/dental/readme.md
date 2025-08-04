@@ -7,7 +7,10 @@ Il modulo Dental gestisce le visite odontoiatriche, i trattamenti e il piano ter
 
 ### Installazione
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Creazione del modulo
 php artisan module:make Dental
 
@@ -898,7 +901,10 @@ class AppointmentApiTest extends TestCase
     }
 }
 ``` 
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)

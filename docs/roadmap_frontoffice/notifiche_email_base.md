@@ -11,7 +11,10 @@ Sistema di notifiche email basilare per le comunicazioni essenziali della piatta
 
 ### 1. Conferme Registrazione
 ```yaml
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Email di Benvenuto
 Trigger: Registrazione completata con successo
 Template: Welcome email con link verifica
@@ -42,7 +45,10 @@ class EmailVerificationService
 
 ### 3. Reset Password
 ```yaml
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Password Reset Flow
 Trigger: Richiesta reset password
 Security: Token sicuro con scadenza 1 ora
@@ -72,7 +78,10 @@ Success Rate: 97.2%
 
 ## Performance Metrics
 ```yaml
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # KPIs Attuali
 Delivery Rate: 98.5%
 Open Rate: 67.3%
@@ -91,3 +100,7 @@ Spam Rate: 0.03%
 - [Sistema Notifiche Base](./notifiche_base.md)
 - [Registrazione Autenticazione](./registrazione_autenticazione/README.md)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Dicembre 2024*
+>>>>>>> aurmich/dev

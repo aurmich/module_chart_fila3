@@ -214,10 +214,14 @@ return [
 
                 'timeout' => env('FIREBASE_HTTP_CLIENT_TIMEOUT'),
 
+<<<<<<< HEAD
                 'guzzle_middlewares' => [
                     // MyInvokableMiddleware::class,
                     // [MyMiddleware::class, 'static_method'],
                 ],
+=======
+                'guzzle_middlewares' => [],
+>>>>>>> aurmich/dev
             ],
         ],
     ],

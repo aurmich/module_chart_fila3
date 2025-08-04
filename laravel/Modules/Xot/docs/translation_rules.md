@@ -63,6 +63,7 @@ return [
    );
    ```
 
+<<<<<<< HEAD
 2. **Dichiarazione strict types**:
    ```php
    <?php
@@ -75,6 +76,9 @@ return [
    ```
 
 3. **Indentazione e formattazione coerente**:
+=======
+2. **Indentazione e formattazione coerente**:
+>>>>>>> aurmich/dev
    - Utilizzare 4 spazi per l'indentazione
    - Mantenere coerenza tra virgole e parentesi
    - Chiudere sempre correttamente gli array annidati
@@ -123,9 +127,12 @@ return [
 3. **Etichette non tradotte (stesse chiavi come valori)**
 4. **Mescolanza di stili array (`array()` e `[]`)**
 5. **Riferimenti a traduzioni inesistenti**
+<<<<<<< HEAD
 6. **Mancanza di `declare(strict_types=1);`**
 7. **Campi `helper_text` vuoti o duplicati**
 8. **Conflitti di merge non risolti**
+=======
+>>>>>>> aurmich/dev
 
 ## Manutenzione dei file di traduzione
 

@@ -9,6 +9,11 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Modules\Xot\Traits\Updater;
 
 /**
+<<<<<<< HEAD
+=======
+ * 
+ *
+>>>>>>> aurmich/dev
  * @property int $id
  * @property int $mail_template_id
  * @property int $version
@@ -23,11 +28,19 @@ use Modules\Xot\Traits\Updater;
  * @property \Carbon\Carbon|null $deleted_at
  * @property string|null $updated_by
  * @property string|null $deleted_by
+<<<<<<< HEAD
  * @property-read \Modules\User\Models\Profile|null $creator
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
  * @property-read \Modules\Notify\Models\MailTemplate|null $template
  * @property-read \Modules\User\Models\Profile|null $updater
+=======
+ * @property-read \Modules\SaluteOra\Models\Profile|null $creator
+ * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
+ * @property-read int|null $media_count
+ * @property-read \Modules\Notify\Models\MailTemplate|null $template
+ * @property-read \Modules\SaluteOra\Models\Profile|null $updater
+>>>>>>> aurmich/dev
  * @method static \Modules\Notify\Database\Factories\MailTemplateVersionFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MailTemplateVersion newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MailTemplateVersion newQuery()
@@ -70,6 +83,7 @@ class MailTemplateVersion extends BaseModel
         'change_notes',
     ];
 
+<<<<<<< HEAD
     /**
      * Get the attributes that should be cast.
      *
@@ -84,6 +98,15 @@ class MailTemplateVersion extends BaseModel
             'deleted_at' => 'datetime',
         ];
     }
+=======
+    /** @var array<string, string> */
+    protected $casts = [
+        'metadata' => 'array',
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
+        'deleted_at' => 'datetime',
+    ];
+>>>>>>> aurmich/dev
 
     public function template(): BelongsTo
     {
@@ -94,11 +117,16 @@ class MailTemplateVersion extends BaseModel
     {
         $template = $this->template;
 
+<<<<<<< HEAD
         if ($template === null) {
             throw new \RuntimeException('Template non trovato per questa versione');
         }
 
         $template->update([
+=======
+        $template->update([
+            'mailable' => $this->mailable,
+>>>>>>> aurmich/dev
             'subject' => $this->subject,
             'html_template' => $this->html_template,
             'text_template' => $this->text_template,

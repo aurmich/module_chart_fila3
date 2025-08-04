@@ -7,7 +7,11 @@ namespace Modules\SaluteOra\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
+<<<<<<< HEAD
 
+=======
+use Modules\Tenant\Traits\BelongsToTenant;
+>>>>>>> aurmich/dev
 
 /**
  * Modello Pregnancy per la gestione dei dati relativi alla gravidanza.
@@ -60,12 +64,19 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy whereWeeksPregnant($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Pregnancy withoutTrashed()
+<<<<<<< HEAD
  * @method static \Modules\SaluteOra\Database\Factories\PregnancyFactory factory($count = null, $state = [])
+=======
+>>>>>>> aurmich/dev
  * @mixin \Eloquent
  */
 class Pregnancy extends BaseModel
 {
+<<<<<<< HEAD
     
+=======
+    use HasFactory, SoftDeletes, BelongsToTenant;
+>>>>>>> aurmich/dev
 
     /**
      * Gli attributi che sono mass assignable.
@@ -155,4 +166,8 @@ class Pregnancy extends BaseModel
     {
         return (int) now()->diffInDays($this->expected_delivery_date, false);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> aurmich/dev

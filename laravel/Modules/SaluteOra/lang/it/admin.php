@@ -1,6 +1,7 @@
 <?php
 
 return array (
+<<<<<<< HEAD
   'model' => 
   array (
     'label' => 'Amministratore',
@@ -299,5 +300,24 @@ return array (
     'validation_errors' => 'Controlla i campi evidenziati e riprova',
     'empty_state' => 'Nessun amministratore registrato nel sistema',
     'search_no_results' => 'Nessun amministratore trovato con i criteri di ricerca specificati',
+=======
+  'navigation' => 
+  array (
+    'label' => 'Segreteria',
+    'group' => 'Gestione Utenti',
+    'icon' => 'saluteora-admin',
+    'sort' => 95,
+  ),
+  'fields' => 
+  array (
+    'applyFilters' => 
+    array (
+      'label' => 'applyFilters',
+    ),
+    'toggleColumns' => 
+    array (
+      'label' => 'toggleColumns',
+    ),
+>>>>>>> aurmich/dev
   ),
 );

@@ -30,7 +30,15 @@ jobs:
       run: cd docs && npm run prod
 
     - name: CNAME
+<<<<<<< HEAD
       run: cd docs && echo "laraxot.github.io/module_geo" > ./build_production/CNAME
+=======
+<<<<<<< HEAD
+      run: cd docs && echo "laraxot.github.io/module_chart" > ./build_production/CNAME
+=======
+      run: cd docs && echo "laraxot.github.io/module_geo" > ./build_production/CNAME
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+>>>>>>> aurmich/dev
 
     - name: gh-pages
       uses: JamesIves/github-pages-deploy-action@v4.4.2

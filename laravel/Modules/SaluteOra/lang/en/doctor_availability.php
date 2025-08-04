@@ -5,6 +5,7 @@ return [
         'label' => 'Doctor Availability',
         'group' => 'Management',
         'icon' => 'heroicon-o-calendar',
+<<<<<<< HEAD
         'sort' => '6',
     ],
     'model' => [
@@ -114,4 +115,8 @@ return [
         'no_pending_appointments_description' => 'Non ci sono appuntamenti in attesa di approvazione.',
     ],
     'available' => 'Disponibile',
+=======
+        'sort' => 6,
+    ],
+>>>>>>> aurmich/dev
 ];

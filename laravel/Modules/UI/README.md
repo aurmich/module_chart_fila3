@@ -78,7 +78,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 👤 Author
 Marco Sottana
 Discover more of my work at marco76tv!
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 ### Versione HEAD
 
 
@@ -114,7 +117,10 @@ Il modulo UI fornisce un set completo di componenti di interfaccia utente riutil
 - ✅ Componenti Filament
 - ✅ Widgets dashboard
 - ✅ Form personalizzati
+<<<<<<< HEAD
 - ✅ InlineDatePicker con date selettive
+=======
+>>>>>>> aurmich/dev
 - ✅ Stili CSS moderni
 
 ### 🚀 Installazione
@@ -143,7 +149,10 @@ The UI module provides a complete set of reusable user interface components for 
 - ✅ Filament components
 - ✅ Dashboard widgets
 - ✅ Custom forms
+<<<<<<< HEAD
 - ✅ InlineDatePicker with selective dates
+=======
+>>>>>>> aurmich/dev
 - ✅ Modern CSS styles
 
 ### 🚀 Installation
@@ -172,7 +181,10 @@ El módulo UI proporciona un conjunto completo de componentes de interfaz de usu
 - ✅ Componentes Filament
 - ✅ Widgets de dashboard
 - ✅ Formularios personalizados
+<<<<<<< HEAD
 - ✅ InlineDatePicker con fechas selectivas
+=======
+>>>>>>> aurmich/dev
 - ✅ Estilos CSS modernos
 
 ### 🚀 Instalación

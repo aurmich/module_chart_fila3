@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Filament\Forms\Components;
 
 use Modules\Xot\Filament\Forms\Components\XotBaseField;
+<<<<<<< HEAD
 
 use Illuminate\Contracts\View\View;
 use Spatie\OpeningHours\OpeningHours;
@@ -14,6 +15,13 @@ use function Safe\json_encode;
 class OpeningHoursField extends XotBaseField
 {
     /** @phpstan-ignore property.defaultValue */
+=======
+use Illuminate\Contracts\View\View;
+use Spatie\OpeningHours\OpeningHours;
+
+class OpeningHoursField extends XotBaseField
+{
+>>>>>>> aurmich/dev
     protected string $view = 'saluteora::filament.forms.components.opening-hours-field';
     
     protected function setUp(): void
@@ -29,10 +37,14 @@ class OpeningHoursField extends XotBaseField
                 $state = $this->getDefaultState();
             }
             
+<<<<<<< HEAD
             // ⚠️ RIMOZIONE CHIAMATA RICORSIVA - causa loop infinito
             // $component->state($state); // QUESTO CAUSAVA IL LOOP!
             
             // ✅ Lo state è già gestito dal framework, non serve forzarlo
+=======
+            $component->state($state);
+>>>>>>> aurmich/dev
         });
         
         $this->dehydrateStateUsing(function ($state) {
@@ -51,7 +63,11 @@ class OpeningHoursField extends XotBaseField
         ]);
     }
     
+<<<<<<< HEAD
     public function getDefaultState(): array
+=======
+    protected function getDefaultState(): array
+>>>>>>> aurmich/dev
     {
         return [
             'monday' => [],
@@ -67,8 +83,15 @@ class OpeningHoursField extends XotBaseField
     
     public function isOpenNow(): bool
     {
+<<<<<<< HEAD
         /** @phpstan-ignore argument.type */
         $openingHours = OpeningHours::create($this->getState());
         return $openingHours->isOpen();
     }
 }
+=======
+        $openingHours = OpeningHours::create($this->getState());
+        return $openingHours->isOpen();
+    }
+}
+>>>>>>> aurmich/dev

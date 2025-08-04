@@ -20,7 +20,10 @@
     ],
     "require": {
         "php": "^8.2",
+<<<<<<< HEAD
         "aaronfrancis/fast-paginate": "^2.0",
+=======
+>>>>>>> aurmich/dev
         "calebporzio/sushi": "^2.5",
         "coolsam/panel-modules": "*",
         "doctrine/dbal": "*",
@@ -28,15 +31,23 @@
         "filament/filament": "^3.4",
         "filament/spatie-laravel-media-library-plugin": "^3.2",
         "filament/spatie-laravel-translatable-plugin": "^3.2",
+<<<<<<< HEAD
+=======
+        "aaronfrancis/fast-paginate":"*",
+>>>>>>> aurmich/dev
         "guzzlehttp/guzzle": "*",
         "laravel/folio": "^1.1",
         "laravel/framework": "*",
         "laravel/pennant": "^1.11",
         "laravel/pulse": "^1.2",
+<<<<<<< HEAD
         "laravel/tinker": "^2.10.1",
         "livewire/livewire": "^3.0",
         "livewire/flux": "^2.1.1",
         "livewire/volt": "^1.0",
+=======
+        "livewire/livewire": "*",
+>>>>>>> aurmich/dev
         "maatwebsite/excel": "^3.1",
         "nwidart/laravel-modules": "*",
         "predis/predis": "^2.2",
@@ -47,6 +58,7 @@
         "spatie/laravel-model-status": "*",
         "spatie/laravel-package-tools": "*",
         "spatie/laravel-permission": "*",
+<<<<<<< HEAD
         "spatie/laravel-queueable-action": "^2.16",
         "spatie/laravel-responsecache": "^7.6",
         "spatie/laravel-schemaless-attributes": "^2.5",
@@ -58,6 +70,20 @@
         "symfony/dom-crawler": "*",
         "thecodingmachine/safe": "^3.0",
         "tightenco/parental": "*"
+=======
+        "spatie/laravel-schemaless-attributes": "^2.5",
+        "spatie/laravel-sluggable": "^3.6",
+        "spatie/laravel-responsecache": "^7.6",
+        "spipu/html2pdf": "^5.2",
+        "staudenmeir/laravel-adjacency-list": "^1.22",
+        "staudenmeir/eloquent-has-many-deep": "*",
+        "symfony/dom-crawler": "*",
+        "thecodingmachine/safe": "^3.0",
+        "spatie/laravel-tags": "*",
+        "livewire/volt": "*",
+        "tightenco/parental": "*",
+        "spatie/laravel-queueable-action": "*"
+>>>>>>> aurmich/dev
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.14",
@@ -65,6 +91,7 @@
         "fakerphp/faker": "^1.24",
         "larastan/larastan": "*",
         "laravel/pint": "^1.18",
+<<<<<<< HEAD
         "laravel/sail": "^1.41",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.6",
@@ -73,6 +100,15 @@
         "pestphp/pest-plugin-laravel": "^3.2",
         "spatie/laravel-error-solutions": "*",
         "thecodingmachine/phpstan-safe-rule": "*"
+=======
+        "laravel/sail": "^1.39",
+        "mockery/mockery": "^1.6",
+        "nunomaduro/collision": "^8.5",
+        "pestphp/pest": "^3.5",
+        "thecodingmachine/phpstan-safe-rule": "*",
+        "spatie/laravel-error-solutions": "*",
+        "orchestra/testbench": "*"
+>>>>>>> aurmich/dev
     },
     "repositories": [
         {
@@ -93,12 +129,17 @@
             "Modules\\Xot\\": "app/",
             "Modules\\Xot\\Database\\Factories\\": "database/factories/",
             "Modules\\Xot\\Database\\Seeders\\": "database/seeders/",
+<<<<<<< HEAD
             "Modules\\Xot\\Tests\\": "tests/",
             "Coolsam\\FilamentModules\\": "packages/coolsam/panel-modules/src/"
             
         },
         "psr-4_comment": {
             "Modules\\Xot\\Database\\Migrations\\": "database/migrations/"
+=======
+            "Modules\\Xot\\Database\\Migrations\\": "database/migrations/",
+            "Coolsam\\FilamentModules\\": "packages/coolsam/panel-modules/src/"
+>>>>>>> aurmich/dev
         },
         "files": [
             "Helpers/Helper.php"
@@ -123,6 +164,10 @@
         "laravel": {
             "providers": [
                 "Modules\\Xot\\Providers\\XotServiceProvider",
+<<<<<<< HEAD
+=======
+                "Modules\\Xot\\Providers\\Filament\\ModulesServiceProvider",
+>>>>>>> aurmich/dev
                 "Modules\\Xot\\Providers\\Filament\\AdminPanelProvider"
             ],
             "aliases": {}

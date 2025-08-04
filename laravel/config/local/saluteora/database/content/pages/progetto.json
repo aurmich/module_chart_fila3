@@ -1,8 +1,12 @@
 {
     "id": "20",
     "title": {
+<<<<<<< HEAD
         "it": "Chi Siamo - SaluteOra",
         "en": "About Us - SaluteOra"
+=======
+        "it": "Chi Siamo - SaluteOra"
+>>>>>>> aurmich/dev
     },
     "slug": "progetto",
     "content": null,
@@ -12,9 +16,14 @@
                 "type": "hero",
                 "data": {
                     "view": "pub_theme::components.blocks.hero.progetto",
+<<<<<<< HEAD
                     "title": "Il Progetto",
                     "subtitle": "Unendo tecnologia, competenza medica e cura umana per promuovere la salute orale delle gestanti e delle loro famiglie.",
                     "description": "<p class=\"text-[#272C4D] pt-2 text-lg\">\n           Il progetto Salute Orale ha l'obiettivo di assicurare una copertura odontoiatrica di base alle donne in stato di gravidanza, una categoria di pazienti particolarmente fragili.\n            <\/p>\n            <p class=\"text-[#272C4D] pt-2 text-lg\">\n            Numerosi studi scientifici riportano l'importanza di una corretta salute orale sin dai primi mesi della gravidanza. Malattie dentali molto comuni, come la carie, possono causare malformazioni o infezioni nel feto già a partire dal primo trimestre di gravidanza.Per mantenere la salute di madre e bambino è fondamentale, oltre ad una dieta sana e una corretta pulizia dei denti, affidarsi alle cure e all'esame di un odontoiatra.\n            <\/p>\n            <p class=\"text-[#272C4D] pt-2 text-lg\">\n            Con questo in mente, il progetto Salute Orale si propone di garantire, a titolo completamente gratuito, una prima visita odontoiatrica completa a pazienti in stato di gravidanza con ISEE uguale o inferiore ai 20.000 euro.\n            <\/p>\n            <p class=\"text-[#272C4D] pt-2 text-lg\">\n            Alle Pazienti, il servizio offre una visita odontoiatrica gratuita, composta da esame di controllo e procedura di igiene dentale. Questa visita può essere richiesta presso uno degli odontoiatri sul territorio che parteciperanno all'iniziativa tramite l'utilizzo di questo portale. Al termine della visita, la paziente riceverà un referto da parte del suo medico curante, dettagliato nel presentare anche ad altri professionisti lo stato della propria salute orale.\n            <\/p>\n            <p class=\"text-[#272C4D] pt-2 text-lg\">\n            Agli Odontoiatri, il servizio offre la possibilità di partecipare attivamente a questo progetto di salute e solidarietà sul territorio, offrendo un servizio tangibile ad una fascia vulnerabile della popolazione. A seguito dell'iscrizione, l'Odontoiatra potrà gestire le proprie disponibilità orarie e i propri appuntamenti direttamente dalla piattaforma e, nel caso lo desideri, richiedere un rimborso per la propria attività. \n            <\/p>\n            <p class=\"text-[#272C4D] pt-2 text-lg\">\n            Il progetto è patrocinato da INMP - Istituto Nazionale per la promozione della salute delle popolazioni Migranti e per il contrasto delle malattie della Povertà  con la collaborazione di Fondazione ANDI ETS e COI - Cooperazione Odontoiatrica Internazionale.\n            <\/p>",
+=======
+                    "title": "La tua salute orale, la nostra missione",
+                    "subtitle": "Unendo tecnologia, competenza medica e cura umana per promuovere la salute orale delle gestanti e delle loro famiglie.",
+>>>>>>> aurmich/dev
                     "image": "/img/hero-team-medical.jpg",
                     "background_gradient": "from-blue-50 to-teal-50",
                     "text_color": "text-gray-900",
@@ -22,6 +31,7 @@
                     "cta_link": "/servizi",
                     "cta_color": "bg-teal-600 hover:bg-teal-700 text-white"
                 }
+<<<<<<< HEAD
             },
             {
                 "type": "feature_sections",
@@ -87,6 +97,8 @@
                         }
                     ]
                 }
+=======
+>>>>>>> aurmich/dev
             }
         ]
     },

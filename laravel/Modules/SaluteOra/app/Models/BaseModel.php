@@ -86,6 +86,7 @@ abstract class BaseModel extends Model implements HasMedia
             'deleted_by' => 'string',
         ];
     }
+<<<<<<< HEAD
 
     public function toArrayForce(): array
     {
@@ -105,4 +106,6 @@ abstract class BaseModel extends Model implements HasMedia
             return $data;
         }
     }
+=======
+>>>>>>> aurmich/dev
 }

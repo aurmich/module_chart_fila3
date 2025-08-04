@@ -9,7 +9,10 @@ use Spatie\Activitylog\Traits\LogsActivity;
 use Spatie\Activitylog\LogOptions;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
+<<<<<<< HEAD
 use Modules\SaluteOra\Models\Patient;
+=======
+>>>>>>> aurmich/dev
 
 /**
  * Modello per la storia clinica del paziente (MedicalHistory).
@@ -33,7 +36,10 @@ use Modules\SaluteOra\Models\Patient;
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Activity\Models\Activity> $activities
  * @property-read int|null $activities_count
  * @property-read \Modules\SaluteOra\Models\User|null $user
+<<<<<<< HEAD
  * @property-read \Modules\SaluteOra\Models\Patient|null $patient
+=======
+>>>>>>> aurmich/dev
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory onlyTrashed()
@@ -75,7 +81,10 @@ class MedicalHistory extends Model
      */
     protected $fillable = [
         'user_id',
+<<<<<<< HEAD
         'patient_id',
+=======
+>>>>>>> aurmich/dev
         'date',
         'type',
         'description',
@@ -114,6 +123,7 @@ class MedicalHistory extends Model
     {
         return $this->belongsTo(User::class);
     }
+<<<<<<< HEAD
 
     /**
      * Get the patient that owns the medical history.
@@ -124,4 +134,6 @@ class MedicalHistory extends Model
     {
         return $this->belongsTo(Patient::class);
     }
+=======
+>>>>>>> aurmich/dev
 }

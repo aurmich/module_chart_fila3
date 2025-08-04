@@ -9,11 +9,21 @@ use Modules\Xot\Traits\Updater;
 
 // BaseModel in same namespace provides common behaviors
 /**
+<<<<<<< HEAD
  * @property-read \Modules\User\Models\Profile|null $creator
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
  * @property-read \Modules\Notify\Models\NotificationTemplate|null $template
  * @property-read \Modules\User\Models\Profile|null $updater
+=======
+ * 
+ *
+ * @property-read \Modules\SaluteOra\Models\Profile|null $creator
+ * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
+ * @property-read int|null $media_count
+ * @property-read \Modules\Notify\Models\NotificationTemplate|null $template
+ * @property-read \Modules\SaluteOra\Models\Profile|null $updater
+>>>>>>> aurmich/dev
  * @method static \Modules\Notify\Database\Factories\NotificationTemplateVersionFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|NotificationTemplateVersion newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|NotificationTemplateVersion newQuery()
@@ -37,6 +47,7 @@ class NotificationTemplateVersion extends BaseModel
         'change_notes',
     ];
 
+<<<<<<< HEAD
     /**
      * Get the attributes that should be cast.
      *
@@ -50,6 +61,13 @@ class NotificationTemplateVersion extends BaseModel
             'conditions' => 'array',
         ];
     }
+=======
+    protected $casts = [
+        'channels' => 'array',
+        'variables' => 'array',
+        'conditions' => 'array',
+    ];
+>>>>>>> aurmich/dev
 
     public function template(): BelongsTo
     {
@@ -60,6 +78,7 @@ class NotificationTemplateVersion extends BaseModel
     {
         $template = $this->template;
         
+<<<<<<< HEAD
         if (!$template) {
             throw new \RuntimeException('Template not found for version ' . $this->id);
         }
@@ -71,6 +90,15 @@ class NotificationTemplateVersion extends BaseModel
             'channels' => $this->channels ?? null,
             'variables' => $this->variables ?? null,
             'conditions' => $this->conditions ?? null,
+=======
+        $template->update([
+            'subject' => $this->subject,
+            'body_html' => $this->body_html,
+            'body_text' => $this->body_text,
+            'channels' => $this->channels,
+            'variables' => $this->variables,
+            'conditions' => $this->conditions,
+>>>>>>> aurmich/dev
         ]);
 
         return $template;

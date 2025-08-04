@@ -28,6 +28,7 @@
                             "type": "link"
                         },
                         {
+<<<<<<< HEAD
                             "label": "{{ __('pub_theme::header.links.Project.label') }}",
                             "url": "{{ route('pages.view',['slug'=>'progetto']) }}",
                             "type": "link"
@@ -35,6 +36,15 @@
                         {
                             "label": "Partecipanti",
                             "url": "{{ route('pages.view',['slug'=>'partners']) }}",
+=======
+                            "label": "Progetto",
+                            "url": "/it/pages/progetto",
+                            "type": "link"
+                        },
+                        {
+                            "label": "Partners",
+                            "url": "/it/pages/partners",
+>>>>>>> aurmich/dev
                             "type": "link"
                         }
                     ],
@@ -51,10 +61,22 @@
                     "menu_items": [
                         {
                             "label": "Profilo",
+<<<<<<< HEAD
                             "url": "/it/profile",
                             "icon": "heroicon-o-user"
                         },
                         {
+=======
+                            "url": "{{ $profiloUrl }}",
+                            "icon": "heroicon-o-user"
+                        },
+                        {
+                            "label": "Impostazioni",
+                            "url": "/impostazioni",
+                            "icon": "heroicon-o-cog-6-tooth"
+                        },
+                        {
+>>>>>>> aurmich/dev
                             "type": "divider"
                         },
                         {
@@ -66,12 +88,19 @@
                 }
             },
             {
+<<<<<<< HEAD
                 "name": "Dropdown Lang",
                 "type": "lang-switcher",
                 "data": {
                     "view":"pub_theme::components.blocks.language-selector",
                     "view1": "pub_theme::components.blocks.navigation.language-switcher"
                     
+=======
+                "name": "Selettore Lingua",
+                "type": "language-selector",
+                "data": {
+                    "view": "pub_theme::components.blocks.language-selector"
+>>>>>>> aurmich/dev
                 }
             }
         ]

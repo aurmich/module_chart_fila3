@@ -32,6 +32,7 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
     'resources' => [
         'section' => [
             'label' => 'Sezione',
@@ -112,4 +113,6 @@ return [
             ],
         ],
     ],
+=======
+>>>>>>> aurmich/dev
 ];

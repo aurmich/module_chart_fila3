@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -13,3 +14,17 @@ return [
         'tooltip' => 'Gestisci le prestazioni e i trattamenti disponibili',
     ],
 ];
+=======
+return array (
+  'name' => 'Trattamenti',
+  'navigation' => 
+  array (
+    'label' => 'Prestazioni',
+    'group' => 'Servizi',
+    'icon' => 'heroicon-o-beaker',
+    'color' => 'violet',
+    'sort' => 5,
+    'tooltip' => 'Gestisci le prestazioni e i trattamenti disponibili',
+  ),
+);
+>>>>>>> aurmich/dev

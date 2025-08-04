@@ -98,4 +98,8 @@
             @endforeach
         </div>
     </div>
+<<<<<<< HEAD
 </div> 
+=======
+</div> 
+>>>>>>> aurmich/dev

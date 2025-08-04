@@ -8,7 +8,11 @@ return [
             'plural' => 'Email Templates',
             'singular' => 'Email Template',
             'icon' => 'heroicon-o-envelope',
+<<<<<<< HEAD
             'sort' => '1',
+=======
+            'sort' => 1,
+>>>>>>> aurmich/dev
         ],
         'sections' => [
             'main' => 'Main Information',

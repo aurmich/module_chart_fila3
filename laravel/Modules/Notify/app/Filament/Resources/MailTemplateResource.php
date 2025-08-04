@@ -61,15 +61,22 @@ class MailTemplateResource extends LangBaseResource
             'params_display' => Forms\Components\View::make('notify::filament.components.params-badges')
                 ->viewData(fn ($record) => ['params' => $record?->params])
                 ->columnSpanFull()
+<<<<<<< HEAD
                 ->visible(fn ($record): bool => !empty($record->params)),
+=======
+                ->visible(fn ($record): bool => !empty($record?->params)),
+>>>>>>> aurmich/dev
 
            
 
             'text_template' => Forms\Components\Textarea::make('text_template')
                 ->maxLength(65535)
                 ->columnSpanFull(),
+<<<<<<< HEAD
             'sms_template' => Forms\Components\Textarea::make('sms_template')
                 ->columnSpanFull(),
+=======
+>>>>>>> aurmich/dev
         ];
     }
 }

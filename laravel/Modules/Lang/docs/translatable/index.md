@@ -6,9 +6,14 @@ Questa documentazione descrive l'implementazione e l'utilizzo del pacchetto `spa
 
 1. [Gestione delle traduzioni mancanti](./gestione-traduzioni-mancanti.md)
 2. [Implementazione nel progetto](./implementazione-nel-progetto.md)
+<<<<<<< HEAD
 3. [Best Practices](./best-practices.md)
 4. [Gestione Traduzioni Contenuti JSON](./json-content-translation.md)
 5. [API e utilizzo comune](#api-e-utilizzo-comune)
+=======
+3. [API e utilizzo comune](#api-e-utilizzo-comune)
+4. [Best Practices](#best-practices)
+>>>>>>> aurmich/dev
 
 ## Introduzione
 
@@ -20,6 +25,7 @@ Il pacchetto è già installato nel progetto. La configurazione principale si tr
 
 - `Modules/Lang/app/Providers/TranslatableServiceProvider.php`
 
+<<<<<<< HEAD
 ## Integrazione con Filament
 
 Il progetto utilizza il plugin ufficiale `filament/spatie-laravel-translatable-plugin` per l'integrazione con Filament, configurato in:
@@ -28,6 +34,8 @@ Il progetto utilizza il plugin ufficiale `filament/spatie-laravel-translatable-p
 - `Modules/UI/app/Providers/Filament/AdminPanelProvider.php`
 - `Modules/Lang/app/Providers/Filament/AdminPanelProvider.php`
 
+=======
+>>>>>>> aurmich/dev
 ## API e utilizzo comune
 
 ### Dichiarazione di campi traducibili
@@ -73,6 +81,7 @@ $model->field_name; // Restituisce nella lingua di app()->getLocale()
 $model->forgetTranslation('field_name', 'en');
 ```
 
+<<<<<<< HEAD
 ## Gestione Contenuti JSON
 
 Il sistema supporta anche la traduzione di contenuti JSON per pagine dinamiche. Vedi [Gestione Traduzioni Contenuti JSON](./json-content-translation.md) per dettagli completi.
@@ -110,6 +119,8 @@ Il sistema supporta anche la traduzione di contenuti JSON per pagine dinamiche. 
 }
 ```
 
+=======
+>>>>>>> aurmich/dev
 ## Best Practices
 
 1. **Traduzione di tutti i campi necessari**:
@@ -127,14 +138,20 @@ Il sistema supporta anche la traduzione di contenuti JSON per pagine dinamiche. 
 5. **Integrazione con l'UI**:
    - Utilizzare componenti UI che supportano la modifica di contenuti multilingua
 
+<<<<<<< HEAD
 6. **Contenuti JSON**:
    - Tradurre solo i campi testuali (title, subtitle, cta_text, description)
    - Non tradurre percorsi, widget, immagini o link
    - Mantenere la stessa struttura tra le diverse lingue
 
+=======
+>>>>>>> aurmich/dev
 ## Risorse
 
 - [Documentazione ufficiale](https://spatie.be/docs/laravel-translatable)
 - [Repository GitHub](https://github.com/spatie/laravel-translatable)
 - [Issues e discussioni](https://github.com/spatie/laravel-translatable/issues)
+<<<<<<< HEAD
 - [Plugin Filament](https://filamentphp.com/plugins/filament-spatie-translatable)
+=======
+>>>>>>> aurmich/dev

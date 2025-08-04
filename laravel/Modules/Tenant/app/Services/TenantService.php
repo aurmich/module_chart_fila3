@@ -130,10 +130,13 @@ class TenantService
             foreach ($modules as $module) {
                 $name = $module->getSnakeName();
                 if (! isset($extra_conf['connections'][$name])) {
+<<<<<<< HEAD
                     // Skip if the default connection doesn't exist in extra_conf (e.g., 'testing' connection)
                     if (! isset($extra_conf['connections'][$default])) {
                         continue;
                     }
+=======
+>>>>>>> aurmich/dev
                     $extra_conf['connections'][$name] = $extra_conf['connections'][$default];
                 }
             }

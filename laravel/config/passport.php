@@ -4,6 +4,43 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+<<<<<<< HEAD
+=======
+    | Passport Configuration
+    |--------------------------------------------------------------------------
+    |
+    | Here you may configure your Passport settings. The default values are
+    | set for most applications, but you can adjust them as needed.
+    |
+    */
+
+    'private_key' => storage_path('oauth-private.key'),
+    'public_key' => storage_path('oauth-public.key'),
+
+    'token_lifetime' => env('PASSPORT_TOKEN_LIFETIME', 60),
+
+    'refresh_token_lifetime' => env('PASSPORT_REFRESH_TOKEN_LIFETIME', 20160),
+
+    'personal_access_client' => [
+        'id' => env('PASSPORT_PERSONAL_ACCESS_CLIENT_ID'),
+        'secret' => env('PASSPORT_PERSONAL_ACCESS_CLIENT_SECRET'),
+    ],
+
+    'password_client' => [
+        'id' => env('PASSPORT_PASSWORD_CLIENT_ID'),
+        'secret' => env('PASSPORT_PASSWORD_CLIENT_SECRET'),
+    ],
+
+    'first_party_clients' => [
+        [
+            'id' => env('PASSPORT_FIRST_PARTY_CLIENT_ID'),
+            'secret' => env('PASSPORT_FIRST_PARTY_CLIENT_SECRET'),
+        ],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+>>>>>>> aurmich/dev
     | Passport Guard
     |--------------------------------------------------------------------------
     |
@@ -17,6 +54,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+<<<<<<< HEAD
     | Encryption Keys
     |--------------------------------------------------------------------------
     |
@@ -32,6 +70,8 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+=======
+>>>>>>> aurmich/dev
     | Passport Database Connection
     |--------------------------------------------------------------------------
     |
@@ -41,7 +81,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'connection' => env('PASSPORT_CONNECTION'),
+=======
+    'connection' => env('PASSPORT_CONNECTION','user'),
+>>>>>>> aurmich/dev
 
     /*
     |--------------------------------------------------------------------------
@@ -56,6 +100,7 @@ return [
 
     'client_uuids' => false,
 
+<<<<<<< HEAD
     /*
     |--------------------------------------------------------------------------
     | Personal Access Client
@@ -72,4 +117,6 @@ return [
         'secret' => env('PASSPORT_PERSONAL_ACCESS_CLIENT_SECRET'),
     ],
 
+=======
+>>>>>>> aurmich/dev
 ];

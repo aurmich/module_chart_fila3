@@ -25,9 +25,12 @@ export default {
     ],
     theme: {
         extend: {
+<<<<<<< HEAD
             screens: {
                 'ipad': {'min': '677px', 'max': '1030px'},
             },
+=======
+>>>>>>> aurmich/dev
             colors: {
                 danger: {
                     50: "rgb(var(--color-danger-50) / <alpha-value>)",

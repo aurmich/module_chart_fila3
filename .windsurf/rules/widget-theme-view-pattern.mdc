@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 description: 
 globs: 
 alwaysApply: false
@@ -224,3 +225,9 @@ Questo pattern può essere riutilizzato per:
 - Appointment management widgets
 - Complex form wizards
 - Dashboard widgets con UI custom
+=======
+description:
+globs:
+alwaysApply: false
+---
+>>>>>>> aurmich/dev

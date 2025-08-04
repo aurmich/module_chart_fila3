@@ -13,8 +13,11 @@ use Modules\Tenant\Services\TenantService;
 use Webmozart\Assert\Assert;
 
 use function Safe\json_encode;
+<<<<<<< HEAD
 use function Safe\json_decode;
 use function Safe\file_get_contents;
+=======
+>>>>>>> aurmich/dev
 use function Safe\unlink;
 
 trait SushiToJson
@@ -33,6 +36,7 @@ trait SushiToJson
         
         $path = $this->getJsonFile();
         $data = json_decode(file_get_contents($path), true);
+<<<<<<< HEAD
         if(!is_array($data)){
             throw new \Exception('Data is not array ['.$path.']');
         }
@@ -48,6 +52,18 @@ trait SushiToJson
             $data[$id]=$item;
         }
         Assert::isArray($data);
+=======
+        foreach($data as $id => $item){
+            foreach($item as $key => $value){
+                if(is_array($value)){
+                    $value=json_encode($value);
+                }
+                $item[$key]=$value;
+            }
+            $data[$id]=$item;
+        }
+        
+>>>>>>> aurmich/dev
         return $data;
     }
 

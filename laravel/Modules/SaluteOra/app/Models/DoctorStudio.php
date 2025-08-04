@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Models;
 
+<<<<<<< HEAD
 
 use Carbon\Carbon;
 use Parental\HasParent;
@@ -13,6 +14,11 @@ use Spatie\OpeningHours\OpeningHours;
 use Modules\SaluteOra\Models\BasePivot;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Safe\DateTime;
+=======
+use Parental\HasParent;
+use Modules\SaluteOra\Models\BasePivot;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+>>>>>>> aurmich/dev
 
 /**
  * Modello pivot per la relazione many-to-many tra Doctor e Studio.
@@ -56,12 +62,16 @@ use Safe\DateTime;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DoctorStudio whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DoctorStudio whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DoctorStudio whereUserId($value)
+<<<<<<< HEAD
  * @property-read \Modules\SaluteOra\Models\User|null $user
+=======
+>>>>>>> aurmich/dev
  * @mixin \Eloquent
  */
 class DoctorStudio extends StudioUser
 {
     use HasParent;
+<<<<<<< HEAD
      /**
      * Gli attributi che sono mass assignable.
      *
@@ -233,3 +243,6 @@ class DoctorStudio extends StudioUser
     }
 }
 
+=======
+}
+>>>>>>> aurmich/dev

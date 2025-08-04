@@ -175,7 +175,10 @@ return [
 Create detailed documentation:
 
 ```markdown
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # FullCalendar in {ModuleName} Module
 
 ## Introduction

@@ -34,6 +34,7 @@ class DoctorsRelationManager extends XotBaseRelationManager
     /**
      * Get the table columns.
      *
+<<<<<<< HEAD
      * @return array<string, \Filament\Tables\Columns\Column>
      */
     public function getTableColumns(): array
@@ -49,24 +50,42 @@ class DoctorsRelationManager extends XotBaseRelationManager
         }
         
         return $filteredColumns;
+=======
+     * @return array<string, Tables\Columns\Column>
+     */
+    public function getTableColumns(): array
+    {
+
+        return app(ListDoctors::class)->getTableColumns();
+>>>>>>> aurmich/dev
     }
 
     /**
      * Get the table filters.
      *
+<<<<<<< HEAD
      * @return array<string, Tables\Filters\Filter|Tables\Filters\SelectFilter>
+=======
+     * @return array<string, Tables\Filters\Filter>
+>>>>>>> aurmich/dev
      */
     public function getTableFilters(): array
     {
         return [
+<<<<<<< HEAD
             /*
+=======
+>>>>>>> aurmich/dev
             'status' => Tables\Filters\SelectFilter::make('status')
                 ->options([
                     'pending' => 'Pending',
                     'active' => 'Active',
                     'suspended' => 'Suspended',
                 ]),
+<<<<<<< HEAD
                 */
+=======
+>>>>>>> aurmich/dev
             /*
             'specialization' => Tables\Filters\SelectFilter::make('specialization')
                 ->options(function () {
@@ -91,7 +110,11 @@ class DoctorsRelationManager extends XotBaseRelationManager
     public function getTableHeaderActions(): array
     {
         return [
+<<<<<<< HEAD
             'attach' => Tables\Actions\AttachAction::make()
+=======
+            Tables\Actions\AttachAction::make()
+>>>>>>> aurmich/dev
                 ->preloadRecordSelect(false) // Importante: non precaricare tutti i record
                 // Soluzione per database cross-database compatibile con Filament 3
                 ->recordSelect(
@@ -105,7 +128,10 @@ class DoctorsRelationManager extends XotBaseRelationManager
                                     ->orWhere('email', 'like', "%{$search}%");
                             })
                             // Escludiamo manualmente i dottori già associati invece di usare JOIN
+<<<<<<< HEAD
                             /** @phpstan-ignore property.notFound */
+=======
+>>>>>>> aurmich/dev
                             ->whereNotIn('id', $this->getOwnerRecord()->doctors->modelKeys())
                             ->limit(10)
                             ->get()

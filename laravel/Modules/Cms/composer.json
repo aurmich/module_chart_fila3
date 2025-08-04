@@ -13,7 +13,11 @@
             "providers": [
                 "Modules\\Cms\\Providers\\CmsServiceProvider",
                 "Modules\\Cms\\Providers\\Filament\\AdminPanelProvider",
+<<<<<<< HEAD
                 "Modules\\Cms\\Providers\\FolioVoltServiceProvider"
+=======
+                "Modules\\Cms\\Providers\\Filament\\FrontPanelProvider"
+>>>>>>> aurmich/dev
             ],
             "aliases": {
 
@@ -24,13 +28,43 @@
         "psr-4": {
             "Modules\\Cms\\": "app/",
             "Modules\\Cms\\Database\\Factories\\": "database/factories/",
+<<<<<<< HEAD
             "Modules\\Cms\\Database\\Seeders\\": "database/seeders/",
             "Modules\\Cms\\Tests\\": "tests/"
+=======
+            "Modules\\Cms\\Database\\Seeders\\": "database/seeders/"
+>>>>>>> aurmich/dev
         }
     },
     "require": {
 
     },
+<<<<<<< HEAD
+=======
+    "require_comment": {
+        "ryangjchandler/orbit": "*",
+        "illuminate/contracts": "^10.0|^11.0",
+        "laraxot/module_lang_fila3": "*",
+        "laraxot/module_user_fila3": "*",
+        "laraxot/module_tenant_fila3": "*",
+        "laraxot/module_ui": "*",
+        "laraxot/module_xot_fila3": "*",
+        "spatie/laravel-package-tools": "^1.11.3"
+    },
+    "require-dev_comment": {
+        "laravel/pint": "^1.0",
+        "nunomaduro/collision": "^7.9",
+        "larastan/larastan": "^2.0.1",
+        "orchestra/testbench": "^8.0",
+        "pestphp/pest": "^2.0",
+        "pestphp/pest-plugin-arch": "^2.0",
+        "pestphp/pest-plugin-laravel": "^2.0",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan-deprecation-rules": "^1.0",
+        "phpstan/phpstan-phpunit": "^1.0",
+        "spatie/laravel-ray": "^1.26"
+    },
+>>>>>>> aurmich/dev
     "repositories": [
         {
             "type": "path",

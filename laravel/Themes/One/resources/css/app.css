@@ -123,6 +123,10 @@
     .mobile-friendly-wizard {
         @apply overflow-x-auto;
     }
+<<<<<<< HEAD
+=======
+    
+>>>>>>> aurmich/dev
 }
 
 
@@ -262,6 +266,7 @@
     .fi-section-content {
         @apply bg-white px-4 py-6 sm:px-6;
     }
+<<<<<<< HEAD
     .filament-fullcalendar {
         --fc-small-font-size: 0.85em;
         --fc-page-bg-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
@@ -290,5 +295,10 @@
         --fc-highlight-color: rgba(var(--primary-500), 0.1);
         --fc-today-bg-color: rgba(var(--primary-500), 0.2);
         --fc-now-indicator-color: red;
+=======
+
+    .filepond--item[data-filepond-item-state="processing-complete"] .filepond--panel {
+        background-color: #FF5F7E !important; 
+>>>>>>> aurmich/dev
     }
 }

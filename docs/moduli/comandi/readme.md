@@ -2,7 +2,10 @@
 
 ## Installazione
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Installare un modulo
 composer require vendor/module-name
 
@@ -21,7 +24,10 @@ php artisan module:enabled
 
 ## Configurazione
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Pubblicare assets
 php artisan vendor:publish --provider="Vendor\ModuleName\Providers\ModuleServiceProvider"
 
@@ -37,7 +43,10 @@ php artisan vendor:publish --provider="Vendor\ModuleName\Providers\ModuleService
 
 ## Database
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Eseguire migrazioni
 php artisan module:migrate ModuleName
 
@@ -56,7 +65,10 @@ php artisan module:migrate-refresh ModuleName
 
 ## Testing
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Eseguire test
 php artisan module:test ModuleName
 
@@ -72,7 +84,10 @@ php artisan module:test ModuleName --parallel
 
 ## Cache
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Pulire cache
 php artisan module:cache:clear ModuleName
 
@@ -88,7 +103,10 @@ php artisan module:view:clear ModuleName
 
 ## Manutenzione
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Aggiornare dipendenze
 composer update vendor/module-name
 
@@ -107,7 +125,10 @@ php artisan module:doc ModuleName
 - Testare in ambiente staging
 - Verificare compatibilità versioni
 - Documentare breaking changes 
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)

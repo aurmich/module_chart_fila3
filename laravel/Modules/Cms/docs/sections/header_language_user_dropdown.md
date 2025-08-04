@@ -21,7 +21,10 @@ Questo documento descrive l'implementazione di due nuovi componenti nell'header 
 
 ### Struttura dei Componenti
 
+<<<<<<< HEAD
 I componenti seguono un'architettura modulare standard:
+=======
+>>>>>>> aurmich/dev
 I componenti seguono l'architettura modulare di SaluteOra:
 
 1. **Definizione JSON**: I componenti sono definiti nel file JSON dell'header
@@ -150,7 +153,10 @@ Il selettore di lingua si integra con il sistema di localizzazione:
 
 ## Implementazione nel File JSON dell'Header
 
+<<<<<<< HEAD
 Il file JSON dell'header (`/config/local/<directory progetto>/database/content/sections/1.json`) deve essere aggiornato per includere i nuovi blocchi:
+=======
+>>>>>>> aurmich/dev
 Il file JSON dell'header (`/config/local/saluteora/database/content/sections/1.json`) deve essere aggiornato per includere i nuovi blocchi:
 
 ```json
@@ -229,7 +235,10 @@ Il file JSON dell'header (`/config/local/saluteora/database/content/sections/1.j
 
 ## Utilizzo dei Componenti SVG delle Bandiere
 
+<<<<<<< HEAD
 Per rendere il selettore di lingue più accattivante e visibile, utilizziamo i componenti SVG delle bandiere forniti dal modulo UI. Questi componenti sono autoregistrati e possono essere facilmente integrati nell'header.
+=======
+>>>>>>> aurmich/dev
 Per rendere il selettore di lingue più accattivante e visibile, utilizziamo i componenti SVG delle bandiere forniti dal modulo UI di SaluteOra. Questi componenti sono autoregistrati e possono essere facilmente integrati nell'header.
 
 ### Vantaggi dei Componenti SVG
@@ -238,7 +247,10 @@ Per rendere il selettore di lingue più accattivante e visibile, utilizziamo i c
 2. **Personalizzazione**: Facile da personalizzare con classi CSS
 3. **Prestazioni**: Gli SVG sono leggeri e non richiedono richieste HTTP aggiuntive
 4. **Accessibilità**: Possibilità di aggiungere attributi di accessibilità
+<<<<<<< HEAD
 5. **Coerenza**: Utilizzo di componenti nativi del sistema
+=======
+>>>>>>> aurmich/dev
 5. **Coerenza**: Utilizzo di componenti nativi di SaluteOra
 
 ### Sintassi di Utilizzo
@@ -280,7 +292,10 @@ Il componente Dropdown Utente deve essere compatibile con il sistema di gestione
 
 L'implementazione del selettore di lingua e del dropdown utente nell'header migliorerà significativamente l'esperienza utente, consentendo un facile cambio di lingua e un accesso rapido alle funzionalità relative all'utente, incluso il logout.
 
+<<<<<<< HEAD
 Questa implementazione segue le convenzioni standard per la gestione dei contenuti statici e l'integrazione con i sistemi di autenticazione e localizzazione.
+=======
+>>>>>>> aurmich/dev
 Questa implementazione segue le convenzioni di SaluteOra per la gestione dei contenuti statici e l'integrazione con i sistemi di autenticazione e localizzazione.
 
 Per i dettagli specifici sull'implementazione nel tema One, consultare la [documentazione del tema](/laravel/Themes/One/docs/sections/HEADER_LANGUAGE_USER_DROPDOWN.md).

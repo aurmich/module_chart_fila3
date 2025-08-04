@@ -332,7 +332,10 @@ try {
 
 ### Struttura README.md
 ```markdown
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Nome Modulo
 
 ## Descrizione

@@ -77,9 +77,12 @@ return array (
     'recordId' => 
     array (
       'label' => 'recordId',
+<<<<<<< HEAD
       'description' => 'recordId',
       'helper_text' => 'recordId',
       'placeholder' => 'recordId',
+=======
+>>>>>>> aurmich/dev
     ),
     'personal_team' => 
     array (
@@ -88,6 +91,7 @@ return array (
     'role' => 
     array (
       'label' => 'role',
+<<<<<<< HEAD
       'description' => 'role',
       'helper_text' => 'role',
       'placeholder' => 'role',
@@ -97,6 +101,8 @@ return array (
       'description' => 'description',
       'helper_text' => 'description',
       'placeholder' => 'description',
+=======
+>>>>>>> aurmich/dev
     ),
   ),
   'actions' => 

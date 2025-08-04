@@ -4,7 +4,10 @@
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 aurmich/dev
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -101,7 +104,10 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 ### Altri
 - Logging strutturato
 - Monitoraggio performance
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -204,7 +210,10 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
  43df3e0 (.)
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -301,7 +310,10 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 ### Altri
 - Logging strutturato
 - Monitoraggio performance
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -400,7 +412,10 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 - Monitoraggio performance
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -700,7 +715,10 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 
 
 aurmich/dev
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica

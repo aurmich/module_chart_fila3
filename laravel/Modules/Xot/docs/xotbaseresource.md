@@ -78,7 +78,10 @@ class NotificationResource extends XotBaseResource
 ### Collegamenti nella Root
 - [Architettura Filament](../../../docs/architecture/filament.md)
 - [Gestione Risorse](../../../docs/architecture/resources.md)
+<<<<<<< HEAD
 - [Regole XotBaseResource](../../../docs/regole/xotbaseresource-rules.md)
+=======
+>>>>>>> aurmich/dev
 
 ### Collegamenti ai Moduli
 - [Notify Resource](../../Notify/docs/filament-resources.md)

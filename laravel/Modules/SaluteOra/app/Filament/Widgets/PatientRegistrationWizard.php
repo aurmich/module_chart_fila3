@@ -12,12 +12,16 @@ use Filament\Forms\Components\Toggle;
 use Filament\Forms\Components\Wizard;
 use Filament\Forms\Components\Wizard\Step;
 use Filament\Forms\Concerns\InteractsWithForms;
+<<<<<<< HEAD
 use Filament\Forms\Contracts\HasForms;
+=======
+>>>>>>> aurmich/dev
 use Filament\Forms\Form;
 use Livewire\Component;
 use Illuminate\Support\HtmlString;
 use Modules\SaluteOra\Models\Patient;
 
+<<<<<<< HEAD
 /**
  * Widget wizard per la registrazione di nuovi pazienti.
  * 
@@ -53,6 +57,19 @@ class PatientRegistrationWizard extends Component implements HasForms
      * @param \Filament\Forms\Form $form
      * @return \Filament\Forms\Form
      */
+=======
+class PatientRegistrationWizard extends Component
+{
+    use InteractsWithForms;
+
+    public ?array $data = [];
+
+    public function mount(): void
+    {
+        $this->form->fill();
+    }
+
+>>>>>>> aurmich/dev
     public function form(Form $form): Form
     {
         return $form
@@ -60,11 +77,14 @@ class PatientRegistrationWizard extends Component implements HasForms
             ->statePath('data');
     }
 
+<<<<<<< HEAD
     /**
      * Schema del form wizard.
      *
      * @return array<int, \Filament\Forms\Components\Component>
      */
+=======
+>>>>>>> aurmich/dev
     protected function getFormSchema(): array
     {
         return [
@@ -196,6 +216,7 @@ class PatientRegistrationWizard extends Component implements HasForms
         ];
     }
 
+<<<<<<< HEAD
     /**
      * Gestisce l'invio del form.
      *
@@ -205,17 +226,25 @@ class PatientRegistrationWizard extends Component implements HasForms
     {
         /** @var array<string, mixed> $data */
         $data = $this->form(Form::make($this))->getState();
+=======
+    public function submit(): void
+    {
+        $data = $this->form->getState();
+>>>>>>> aurmich/dev
 
         $patient = Patient::create($data);
 
         $this->dispatch('patient-registered', patientId: $patient->id);
     }
 
+<<<<<<< HEAD
     /**
      * Renderizza il componente.
      *
      * @return \Illuminate\Contracts\View\View
      */
+=======
+>>>>>>> aurmich/dev
     public function render(): \Illuminate\Contracts\View\View
     {
         return view('saluteora::widgets.patient-registration-wizard');

@@ -18,9 +18,14 @@ class PendingToActive extends BaseTransition
     
 
     public function getNotificationData(): array{
+<<<<<<< HEAD
         $user=$this->record;
         $password=Str::random(10);
         $user->update(['password'=>$password]);
+=======
+        $password=Str::random(10);
+        $this->user->update(['password'=>$password]);
+>>>>>>> aurmich/dev
 
         $data = [
             'message' => $this->message,
@@ -29,6 +34,9 @@ class PendingToActive extends BaseTransition
         return $data;
     }
 }
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> aurmich/dev

@@ -5,7 +5,10 @@
 Se l'installazione Laravel esiste già in una posizione errata, è possibile spostarla nella posizione corretta con un semplice comando:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Spostare l'installazione Laravel dalla posizione errata a quella corretta
 mv /var/www/html/saluteora/public_html/laravel /var/www/html/saluteora/laravel
 ```
@@ -82,7 +85,10 @@ laravel/Modules/[NomeModulo]/
 
 ### 1. Preparazione
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Rimuovere le migrazioni centrali per evitare conflitti
 rm -rf database/migrations
 
@@ -92,7 +98,10 @@ php artisan migrate:status
 
 ### 2. Esecuzione
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Eseguire tutte le migrazioni
 php artisan migrate
 
@@ -102,7 +111,10 @@ php artisan migrate --force
 
 ### 3. Rollback
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Annullare l'ultima migrazione
 php artisan migrate:rollback
 
@@ -117,7 +129,10 @@ php artisan migrate:refresh
 
 ### 1. Installazione Nuovo Modulo
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 1. Aggiungere il modulo con git subtree
 git subtree add --prefix laravel/Modules/[NomeModulo] git@github.com:laraxot/module_[nome]_fila3.git dev
 
@@ -130,7 +145,10 @@ php artisan migrate
 
 ### 2. Aggiornamento Modulo
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 1. Aggiornare il modulo
 git subtree pull --prefix laravel/Modules/[NomeModulo] git@github.com:laraxot/module_[nome]_fila3.git dev
 
@@ -143,7 +161,10 @@ php artisan migrate
 
 ### 3. Rimozione Modulo
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 1. Rimuovere il modulo
 git subtree remove --prefix laravel/Modules/[NomeModulo] git@github.com:laraxot/module_[nome]_fila3.git dev
 
@@ -158,12 +179,18 @@ php artisan migrate
 
 ### 1. Conflitti di Migrazione
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Se ci sono conflitti durante l'aggiornamento
 git subtree pull --prefix laravel/Modules/[NomeModulo] git@github.com:laraxot/module_[nome]_fila3.git dev --squash
 
 # Risolvere i conflitti manualmente
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Poi eseguire
 rm -rf database/migrations
 php artisan migrate
@@ -171,7 +198,10 @@ php artisan migrate
 
 ### 2. Migrazioni Mancanti
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Verificare lo stato
 php artisan migrate:status
 
@@ -181,7 +211,10 @@ php artisan migrate --force
 
 ### 3. Rollback Parziale
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Annullare le migrazioni di un modulo specifico
 php artisan migrate:rollback --path=laravel/Modules/[NomeModulo]/Database/Migrations
 ```

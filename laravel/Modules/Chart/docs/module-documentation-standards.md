@@ -20,7 +20,10 @@ Nei file di documentazione all'interno delle cartelle `docs` dei moduli **non de
 
 #### Non corretto ❌
 ```markdown
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Modulo Chart per il progetto
 
 Questo modulo fornisce funzionalità di grafici per l'applicazione il progetto.
@@ -31,7 +34,10 @@ Per supporto e domande, contattare support@<nome progetto>.com
 
 #### Corretto ✅
 ```markdown
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Modulo Chart
 
 Questo modulo fornisce funzionalità avanzate per la creazione e gestione di grafici.

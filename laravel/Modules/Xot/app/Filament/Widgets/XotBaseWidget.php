@@ -5,10 +5,15 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Widgets;
 
 use Filament\Forms;
+<<<<<<< HEAD
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Filament\Actions\Action;
 use Webmozart\Assert\Assert;
+=======
+use Illuminate\Support\Str;
+use Filament\Actions\Action;
+>>>>>>> aurmich/dev
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Cache;
@@ -17,12 +22,18 @@ use Filament\Forms\ComponentContainer;
 use Filament\Forms\Contracts\HasForms;
 use Illuminate\Database\Eloquent\Model;
 use Filament\Forms\Form as FilamentForm;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Traits\TransTrait;
 use Filament\Widgets\Widget as FilamentWidget;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Widgets\Concerns\InteractsWithPageFilters;
 use Filament\Actions\Concerns\InteractsWithActions;
 use Filament\Actions\Contracts\HasActions;
+=======
+use Filament\Widgets\Widget as FilamentWidget;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Widgets\Concerns\InteractsWithPageFilters;
+>>>>>>> aurmich/dev
 
 /**
  * Classe base astratta per tutti i widget Filament.
@@ -34,6 +45,7 @@ use Filament\Actions\Contracts\HasActions;
  * @property array<string, mixed>|null $data Dati del form
  * @property ComponentContainer $form
  */
+<<<<<<< HEAD
 abstract class XotBaseWidget extends FilamentWidget implements HasForms,HasActions
 {
     use TransTrait;
@@ -41,6 +53,13 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms,HasActio
     //use InteractsWithPageTable;
     use InteractsWithForms;
     use InteractsWithActions;
+=======
+abstract class XotBaseWidget extends FilamentWidget implements HasForms
+{
+    use InteractsWithPageFilters;
+    //use InteractsWithPageTable;
+    use InteractsWithForms;
+>>>>>>> aurmich/dev
 
     public string $title = '';
     public string $icon = '';
@@ -116,9 +135,12 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms,HasActio
         if($model==null){
             return [];
         }
+<<<<<<< HEAD
         if(is_string($model)){
             Assert::isInstanceOf($model=app($model),Model::class);
         }
+=======
+>>>>>>> aurmich/dev
 
        
         // Se il modello ha un ID, significa che è stato trovato nel database
@@ -127,6 +149,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms,HasActio
                 
                 //dddx($model->getArrayableRelations());
                 $res= $model->toArray();
+<<<<<<< HEAD
                 
                 if(method_exists($model,'getDataDefaults')){
                     $defaults=$model->getDataDefaults();
@@ -140,6 +163,8 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms,HasActio
                     $res=$merge1;
                 }
                 
+=======
+>>>>>>> aurmich/dev
                 return $res;
                 //dddx($model->with('studio')->relationsToArray());
                 
@@ -224,11 +249,16 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms,HasActio
      */
     public static function getNavigationLabel(): string
     {
+<<<<<<< HEAD
         /*
         return (string) (static::$navigationLabel ?? (string) str(static::getLabel())
             ->headline());
         */
         return static::transFunc(__FUNCTION__);
+=======
+        return (string) (static::$navigationLabel ?? (string) str(static::getLabel())
+            ->headline());
+>>>>>>> aurmich/dev
     }
 
     protected function getStepByName(string $name): Forms\Components\Wizard\Step
@@ -238,6 +268,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms,HasActio
         return Forms\Components\Wizard\Step::make($name)
             ->schema($this->$schema());
     }
+<<<<<<< HEAD
 
 
     public function getWizardSubmitAction(): Action{
@@ -250,4 +281,6 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms,HasActio
             ->submit('save')
             ->view($submit_view);
     }
+=======
+>>>>>>> aurmich/dev
 }

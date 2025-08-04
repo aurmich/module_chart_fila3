@@ -468,7 +468,10 @@ La documentazione dei widget deve includere:
 Esempio di struttura di documentazione:
 
 ```markdown
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # ModuleNameCalendarWidget
 
 ## Descrizione

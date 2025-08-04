@@ -82,7 +82,10 @@
 
 ### 1. Comandi Artisan
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Verifica convenzioni
 php artisan xot:check-conventions
 

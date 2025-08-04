@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Models;
 
 use Parental\HasParent;
+<<<<<<< HEAD
 use Spatie\Image\Enums\Fit;
 use Spatie\MediaLibrary\HasMedia;
 use Modules\SaluteOra\Models\User;
@@ -12,6 +13,14 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
+=======
+use Spatie\MediaLibrary\HasMedia;
+use Modules\SaluteOra\Models\User;
+use Spatie\MediaLibrary\InteractsWithMedia;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use Spatie\Image\Enums\Fit;
+>>>>>>> aurmich/dev
 
 /**
  * Class Patient
@@ -81,6 +90,10 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Gdpr\Models\Consent> $consents
  * @property-read int|null $consents_count
  * @property-read \Modules\User\Models\Team|null $currentTeam
+<<<<<<< HEAD
+=======
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Xot\Contracts\UserContract> $all_team_users
+>>>>>>> aurmich/dev
  * @property-read \Modules\User\Models\AuthenticationLog|null $latestAuthentication
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
@@ -141,6 +154,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Patient withoutRole($roles, $guard = null)
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Device> $devices
  * @property-read int|null $devices_count
+<<<<<<< HEAD
  * @property string|null $dental_problems
  * @property string|null $last_dental_visit
  * @property string|null $pregnancy_certificate
@@ -178,6 +192,8 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Patient whereLastDentalVisitPeriod($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Patient whereNationality($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Patient whereYearsInItaly($value)
+=======
+>>>>>>> aurmich/dev
  * @mixin \Eloquent
  */
 class Patient extends User implements HasMedia
@@ -204,6 +220,7 @@ class Patient extends User implements HasMedia
         'identity_document',
         'isee_certificate',
         'pregnancy_certificate',
+<<<<<<< HEAD
         'country_code',
         'nationality',
         'years_in_italy',
@@ -212,6 +229,8 @@ class Patient extends User implements HasMedia
         'last_dental_visit_period',
 
         'fiscal_code',
+=======
+>>>>>>> aurmich/dev
 
     ];
     protected $appends = [
@@ -242,6 +261,7 @@ class Patient extends User implements HasMedia
         */
     ];
 
+<<<<<<< HEAD
     public static function getAttachments():array{
         return [
             'health_card',
@@ -250,6 +270,14 @@ class Patient extends User implements HasMedia
             'pregnancy_certificate',
         ];
     }
+=======
+    public static array $attachments = [
+        'health_card',
+        'identity_document',
+        'isee_certificate',
+        'pregnancy_certificate',
+    ];
+>>>>>>> aurmich/dev
 
     /**
      * Get the attributes that should be cast.
@@ -273,15 +301,23 @@ class Patient extends User implements HasMedia
         $this
             ->addMediaConversion('preview')
             ->fit(Fit::Contain, 300, 300)
+<<<<<<< HEAD
             //->nonQueued()
             ;
+=======
+            ->nonQueued();
+>>>>>>> aurmich/dev
 
         // Conversione per le immagini dei documenti
         $this
             ->addMediaConversion('document')
             ->fit(Fit::Contain, 800, 800)
+<<<<<<< HEAD
             //->nonQueued()
             ;
+=======
+            ->nonQueued();
+>>>>>>> aurmich/dev
     }
 
     /**
@@ -289,7 +325,11 @@ class Patient extends User implements HasMedia
      */
     public function registerMediaCollections(): void
     {
+<<<<<<< HEAD
         foreach (self::getAttachments() as $attachment) {
+=======
+        foreach (self::$attachments as $attachment) {
+>>>>>>> aurmich/dev
             $this
                 ->addMediaCollection($attachment)
                 ->singleFile()
@@ -333,7 +373,11 @@ class Patient extends User implements HasMedia
     public function getAttachmentsCount(): int
     {
         $count = 0;
+<<<<<<< HEAD
         foreach (self::getAttachments() as $type) {
+=======
+        foreach (self::$attachments as $type) {
+>>>>>>> aurmich/dev
             if ($this->hasAttachment($type)) {
                 $count++;
             }
@@ -354,6 +398,7 @@ class Patient extends User implements HasMedia
         }
         return true;
     }
+<<<<<<< HEAD
 
 
     public function appointments(): HasMany
@@ -392,3 +437,6 @@ class Patient extends User implements HasMedia
         return $res;
     }
 }
+=======
+}
+>>>>>>> aurmich/dev

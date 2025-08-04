@@ -67,6 +67,7 @@ class XotComposer
         $view->with('lang', $lang);
         $view->with('_theme', $this);
 
+<<<<<<< HEAD
         if(class_exists('\Jenssegers\Agent\Agent')){
             $agent = new \Jenssegers\Agent\Agent();
             $view->with('isMobile', $agent->isMobile());
@@ -78,6 +79,12 @@ class XotComposer
             $profile = XotData::make()->getProfileModel();
             $view->with('profile', $profile);
             $view->with('user', auth()->user());
+=======
+        if (Auth::check()) {
+            $profile = XotData::make()->getProfileModel();
+            $view->with('_profile', $profile);
+            $view->with('_user', auth()->user());
+>>>>>>> aurmich/dev
         }
     }
 

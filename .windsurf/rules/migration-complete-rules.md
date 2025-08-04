@@ -256,7 +256,10 @@ Prima di aggiungere o modificare:
 ### Esempio di Documentazione
 
 ```markdown
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Aggiornamento Tabella prodotti
 
 ## Modifiche apportate

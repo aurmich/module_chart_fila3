@@ -10,6 +10,11 @@ use Livewire\Volt\Component;
 use Modules\Tenant\Services\TenantService;
 
 /** @var array */
+<<<<<<< HEAD
+=======
+//$middleware=TenantService::config('middleware');
+//$base_middleware=Arr::get($middleware,'base',[]);
+>>>>>>> aurmich/dev
 $base_middleware=[];
 
 name('home');
@@ -25,9 +30,18 @@ new class extends Component
 ?>
 
 <x-layouts.app>
+<<<<<<< HEAD
  @volt('home')
     <div>
         <x-page side="content" slug="home" :type="auth()->user()?->type?->value"/>
     </div>
  @endvolt
+=======
+    @volt('home')
+    <div>
+        {{--  route('pages.view',['slug'=>'patient_register_complete'])  --}}
+        <x-page side="content" slug="home" :type="auth()->user()?->type?->value ?? 'patient'"/>
+    </div>
+    @endvolt
+>>>>>>> aurmich/dev
 </x-layouts.app>

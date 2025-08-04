@@ -13,13 +13,17 @@ use Webmozart\Assert\Assert;
 use Modules\Xot\Datas\XotData;
 use Livewire\Attributes\Validate;
 use Illuminate\Support\HtmlString;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Log;
+=======
+>>>>>>> aurmich/dev
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Filament\Forms\Contracts\HasForms;
 use Illuminate\Auth\Events\Registered;
 use Filament\Forms\Components\Checkbox;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Wizard\Step;
@@ -33,31 +37,61 @@ class RegistrationWidget extends XotBaseWidget
     
     public ?array $data = [];
     protected int | string | array $columnSpan = 'full';
+=======
+use Filament\Forms\Components\TextInput;
+use Modules\Xot\Contracts\UserContract;
+use Filament\Forms\Components\Wizard\Step;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Illuminate\Support\Facades\Log;
+
+class RegistrationWidget extends XotBaseWidget
+{
+    //public ?array $data = []; //moved to XotBaseWidget
+    //protected int | string | array $columnSpan = 'full'; //moved to XotBaseWidget
+>>>>>>> aurmich/dev
     public string $type;
     public string $resource;
     public string $model;
     public string $action;
     public Model $record;
     
+<<<<<<< HEAD
     /**
      * @phpstan-var class-string
      * @phpstan-ignore-next-line
      */
+=======
+    
+    
+>>>>>>> aurmich/dev
     protected static string $view = 'pub_theme::filament.widgets.registration';
 
     public function mount(string $type, Request $request): void
     {
         $this->type = $type;
+<<<<<<< HEAD
+=======
+        
+>>>>>>> aurmich/dev
         $this->resource = XotData::make()->getUserResourceClassByType($type);
         $this->model = $this->resource::getModel();
         $this->action = Str::of($this->model)->replace('\\Models\\', '\\Actions\\')->append('\\RegisterAction')->toString();
         $record = $this->getFormModel();
         $data = $this->getFormFill();
+<<<<<<< HEAD
         $this->data = $data; 
         $this->form->fill($data);
         $this->form->model($record);
         $this->record = $record;
         
+=======
+        
+        $this->form->fill($data);
+        $this->form->model($record);
+        $this->data = $data;
+        $this->record = $record;
+>>>>>>> aurmich/dev
     }
 
     public function getFormModel(): Model
@@ -67,6 +101,10 @@ class RegistrationWidget extends XotBaseWidget
         $token = Arr::get($data, 'token');
 
         $user = $this->model::firstWhere('email', $email);
+<<<<<<< HEAD
+=======
+        
+>>>>>>> aurmich/dev
         if ($user === null) {
             return app($this->model);
         }
@@ -78,10 +116,15 @@ class RegistrationWidget extends XotBaseWidget
         }
         
         if ($remember_token === $token) {
+<<<<<<< HEAD
+=======
+            
+>>>>>>> aurmich/dev
             $this->record = $user;
             return $user;
         }
         
+<<<<<<< HEAD
         return app($this->model);
     }
 
@@ -94,11 +137,46 @@ class RegistrationWidget extends XotBaseWidget
 
    
 
+=======
+        
+        return app($this->model);
+    }
+    
+>>>>>>> aurmich/dev
     public function getFormSchema(): array
     {
         return $this->resource::getFormSchemaWidget();
     }
 
+<<<<<<< HEAD
+=======
+    public function getFormFill(): array
+    {
+
+        //$model=$this->getFormModel();
+        //$studio=\Modules\SaluteOra\Models\Studio::inRandomOrder()->first();
+        //$model->studio()->save($studio);
+        
+       
+        $data = [];
+        
+        /*
+        $data['studio']=[];
+        $data['studio']['description'] = null;
+        $data['studio']['address']=[];
+        $data['studio']['address']['administrative_area_level_1'] = null;
+        $data['studio']['address']['administrative_area_level_2'] = null;
+        $data['studio']['address']['administrative_area_level_3'] = null;
+        $data['studio']['address']['locality'] = null;
+        $data['studio']['address']['postal_code'] = null;
+        */
+        $data = array_merge($data,parent::getFormFill() );
+        $data['type'] = $this->type;
+        
+        return $data;
+    }
+
+>>>>>>> aurmich/dev
     /**
      * @see https://filamentphp.com/docs/3.x/forms/adding-a-form-to-a-livewire-component
      */
@@ -106,12 +184,24 @@ class RegistrationWidget extends XotBaseWidget
     {
         $data = $this->form->getState();
         
+<<<<<<< HEAD
         $data=array_merge($this->data ?? [],$data);
         $record = $this->record;
        
         $user = app($this->action)->execute($record, $data);
 
         return redirect()->route('pages.view', ['slug' => $this->type . '_register_complete']);
+=======
+        $record = $this->record;
+        $data=array_merge($this->data,$data);
+        if(!isset($data['name']) && isset($data['email'])){
+            $data['name']=Str::of($data['email'])->before('@')->toString();
+        }
+        $user = app($this->action)->execute($record, $data);
+        $slug=$this->type . '_register_'.Str::snake($user->state::$name);
+        $slug=Str::slug($slug);
+        return redirect()->route('pages.view', ['slug' => $slug]);
+>>>>>>> aurmich/dev
     }
 
     

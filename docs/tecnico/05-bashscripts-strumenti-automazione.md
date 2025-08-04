@@ -48,7 +48,10 @@ Gli script bash possono essere eseguiti dalla radice del progetto. È consigliab
 ### Esempio di Utilizzo
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Per sincronizzare tutti i subtree del progetto
 cd /var/www/html/saluteora
 ./bashscripts/git_sync_subtrees.sh

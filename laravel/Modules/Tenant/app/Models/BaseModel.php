@@ -38,7 +38,11 @@ abstract class BaseModel extends EloquentModel
     protected $perPage = 30;
 
     /** @var string */
+<<<<<<< HEAD
     protected $connection = 'tenant';
+=======
+    protected $connection = 'setting';
+>>>>>>> aurmich/dev
 
     /** @var list<string> */
     protected $appends = [];

@@ -8,7 +8,10 @@ Questo documento descrive il processo di deployment del tema "One", inclusi gli 
 
 ### Sviluppo (Development)
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Configurazione
 APP_ENV=local
 APP_DEBUG=true
@@ -30,7 +33,10 @@ QUEUE_DRIVER=sync
 
 ### Staging
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Configurazione
 APP_ENV=staging
 APP_DEBUG=false
@@ -52,7 +58,10 @@ QUEUE_DRIVER=redis
 
 ### Produzione
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Configurazione
 APP_ENV=production
 APP_DEBUG=false
@@ -76,7 +85,10 @@ QUEUE_DRIVER=redis
 
 ### 1. Preparazione
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Pull ultime modifiche
 git pull origin main
 
@@ -95,7 +107,10 @@ php artisan view:clear
 
 ### 2. Database
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Migrazioni
 php artisan migrate --force
 
@@ -105,7 +120,10 @@ php artisan db:seed --force
 
 ### 3. Ottimizzazione
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Ottimizzazione configurazione
 php artisan config:cache
 php artisan route:cache
@@ -117,7 +135,10 @@ composer dump-autoload --optimize
 
 ### 4. Verifica
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Test
 php artisan test
 

@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+name: Static Analysis
+
+on: [push]
+=======
+>>>>>>> aurmich/dev
 name: PHPStan
 
 on:
@@ -10,6 +18,10 @@ on:
       - '**.php'
       - 'phpstan.neon.dist'
 
+<<<<<<< HEAD
+=======
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+>>>>>>> aurmich/dev
 
 jobs:
   phpstan:
@@ -21,6 +33,20 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+          php-version: '8.2'
+          coverage: none
+
+      - name: Install composer dependencies
+        run: composer install -n --prefer-dist
+
+      - name: Run Static Analysis
+        run: ./vendor/bin/phpstan --error-format=github
+
+=======
+>>>>>>> aurmich/dev
           php-version: '8.1'
           coverage: none
 
@@ -29,3 +55,7 @@ jobs:
 
       - name: Run PHPStan
         run: ./vendor/bin/phpstan --error-format=github
+<<<<<<< HEAD
+=======
+>>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+>>>>>>> aurmich/dev

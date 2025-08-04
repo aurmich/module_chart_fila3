@@ -9,6 +9,11 @@ use Modules\Tenant\Actions\Domains\GetDomainsArrayAction;
 use Sushi\Sushi;
 
 /**
+<<<<<<< HEAD
+=======
+ * 
+ *
+>>>>>>> aurmich/dev
  * @property int|null $id
  * @property string|null $name
  * @method static \Illuminate\Database\Eloquent\Builder|Domain newModelQuery()

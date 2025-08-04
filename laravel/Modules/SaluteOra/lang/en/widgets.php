@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 return [
     'doctor_availabilities' => [
         'schedule' => [
@@ -168,6 +169,11 @@ return [
             'studio_change_error' => 'Error changing studio',
         ],
     ],
+=======
+declare(strict_types=1);
+
+return [
+>>>>>>> aurmich/dev
     'find_doctor_widget' => [
         'title' => 'Find Dentist and Book Appointment',
         'steps' => [
@@ -190,6 +196,7 @@ return [
             'error_booking_appointment' => 'An error occurred while booking the appointment',
         ],
     ],
+<<<<<<< HEAD
     'doctor_appointments' => [
         'title' => 'Pending Appointments',
         'empty' => [
@@ -266,4 +273,6 @@ return [
             ],
         ],
     ],
+=======
+>>>>>>> aurmich/dev
 ];

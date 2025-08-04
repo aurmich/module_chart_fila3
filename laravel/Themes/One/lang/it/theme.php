@@ -109,6 +109,7 @@ return [
             'message' => 'Non sei connesso a Internet',
         ],
     ],
+<<<<<<< HEAD
 
     /*
     |--------------------------------------------------------------------------
@@ -249,4 +250,6 @@ return [
         'view_house' => 'Visita immobile con agente immobiliare',
         'bank_meeting' => 'Incontro con il direttore di banca',
     ],
+=======
+>>>>>>> aurmich/dev
 ];

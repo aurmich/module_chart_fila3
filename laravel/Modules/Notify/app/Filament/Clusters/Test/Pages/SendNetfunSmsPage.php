@@ -111,12 +111,20 @@ class SendNetfunSmsPage extends XotBasePage
     {
         $data = $this->smsForm->getState();
 
+<<<<<<< HEAD
         $smsData = SmsData::from($data);
         /*
         $smsData->to = $data['to'];
         $smsData->from = $data['from'];
         $smsData->body = $data['body'];
         */
+=======
+        $smsData = new SmsData();
+        $smsData->to = $data['to'];
+        $smsData->from = $data['from'];
+        $smsData->body = $data['body'];
+
+>>>>>>> aurmich/dev
         $provider = $data['provider'] ?? 'netfun';
 
         try {

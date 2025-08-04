@@ -101,7 +101,10 @@ Class Modules\User\Enums\LanguageEnum located in ./Modules/User/app/Enums/Enums/
 ## Comandi utili
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Verifica PSR-4
 composer dump-autoload --optimize
 

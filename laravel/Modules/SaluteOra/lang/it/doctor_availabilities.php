@@ -8,6 +8,7 @@ return array (
       'label' => 'Modifica Disponibilità',
     ),
   ),
+<<<<<<< HEAD
   'fields' => 
   array (
     'schedule' => 
@@ -18,4 +19,6 @@ return array (
       'label' => 'schedule',
     ),
   ),
+=======
+>>>>>>> aurmich/dev
 );

@@ -5,11 +5,15 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Filament\Widgets\Patient;
 
 use Exception;
+<<<<<<< HEAD
 use Carbon\Carbon;
+=======
+>>>>>>> aurmich/dev
 use Filament\Forms;
 use Filament\Forms\Get;
 use Filament\Forms\Set;
 use Filament\Forms\Form;
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Modules\Geo\Models\Cap;
 use Filament\Actions\Action;
@@ -24,6 +28,15 @@ use Modules\Geo\Models\Province;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Auth;
 use Modules\SaluteOra\Models\Doctor;
+=======
+use Modules\Geo\Models\Cap;
+use Filament\Actions\Action;
+use Filament\Widgets\Widget;
+use Illuminate\Support\View;
+use Modules\Geo\Models\Comune;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Auth;
+>>>>>>> aurmich/dev
 use Modules\SaluteOra\Models\Studio;
 use Filament\Forms\Components\Hidden;
 use Filament\Forms\Components\Select;
@@ -35,6 +48,7 @@ use Filament\Notifications\Notification;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\TimePicker;
 use Filament\Support\Facade\FilamentView;
+<<<<<<< HEAD
 use Modules\SaluteOra\Models\Appointment;
 use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\Wizard\Step;
@@ -49,6 +63,12 @@ use Illuminate\Support\Facades\Notification as LaravelNotification;
 /**
  * --
  */
+=======
+use Filament\Forms\Components\Wizard\Step;
+use Livewire\Component as LivewireComponent;
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+
+>>>>>>> aurmich/dev
 class FindDoctorAndAppointmentWidget extends XotBaseWidget
 {
     /**
@@ -56,6 +76,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
      */
     protected static string $view = 'pub_theme::filament.widgets.patient.find-doctor-and-appointment-widget';
 
+<<<<<<< HEAD
     
 
     /**
@@ -65,6 +86,18 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
      */
     public string $currentCalendarMonth;
 
+=======
+    /**
+     * Filtri attivi per il widget.
+     *
+     * @var array|null
+     */
+    public ?array $filters = null;
+
+   
+
+   
+>>>>>>> aurmich/dev
     /**
      * Mount the component.
      *
@@ -72,15 +105,19 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
      */
     public function mount(): void
     {
+<<<<<<< HEAD
         // ✅ Inizializza sempre con valore valido
         if (empty($this->currentCalendarMonth)) {
             $this->currentCalendarMonth = now()->format('Y-m');
         }
+=======
+>>>>>>> aurmich/dev
         
         $this->form->fill();
     }
 
     /**
+<<<<<<< HEAD
      * Getter sicuro per currentCalendarMonth - garantisce sempre un valore valido.
      *
      * @return string
@@ -125,6 +162,8 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
     }
 
     /**
+=======
+>>>>>>> aurmich/dev
      * Get the form schema for the widget.
      *
      * @return array<int|string, mixed>
@@ -133,7 +172,11 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
     {
         return [
             Forms\Components\Wizard::make()
+<<<<<<< HEAD
                 //->startOnStep($this->getStartStep())
+=======
+                ->startOnStep($this->getStartStep())
+>>>>>>> aurmich/dev
                 ->steps([
                     $this->getStepByName('search_step')
                         ->icon('heroicon-o-map-pin'),
@@ -141,6 +184,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
                         ->icon('heroicon-o-building-office'),
                     $this->getStepByName('date_step')
                         ->icon('heroicon-o-calendar'),
+<<<<<<< HEAD
                     $this->getStepByName('confirm_step')
                         ->icon('heroicon-o-check-circle')
                 ])
@@ -149,6 +193,18 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
                         ->label(__('saluteora::widgets.find_doctor_and_appointment.submit'))
                         ->action(fn() => $this->submit())
                 )*/
+=======
+                    $this->getStepByName('time_step')
+                        ->icon('heroicon-o-clock'),
+                    $this->getStepByName('confirm_step')
+                        ->icon('heroicon-o-check-circle')
+                ])
+                ->submitAction(
+                    Action::make('submit')
+                        ->label(__('saluteora::widgets.find_doctor_and_appointment.submit'))
+                        ->action(fn() => $this->submit())
+                )
+>>>>>>> aurmich/dev
         ];
     }
     
@@ -157,11 +213,16 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
      *
      * @return int
      */
+<<<<<<< HEAD
     protected function getWizardStartOnStep(): int
+=======
+    protected function getStartStep(): int
+>>>>>>> aurmich/dev
     {
         return 0; // Prima pagina
     }
 
+<<<<<<< HEAD
     protected function getTestStepSchema(): array
     {
         return [
@@ -173,6 +234,8 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
         ];
     }
 
+=======
+>>>>>>> aurmich/dev
 
     
 
@@ -187,7 +250,16 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
         return [
             'region' => Select::make('region')
                 ->options(function () {
+<<<<<<< HEAD
                     return Region::orderBy('name')->get()->pluck("name", "id");
+=======
+                    return Comune::select('regione')
+                    ->distinct()
+                    ->orderBy('regione->nome')
+                    ->get()
+                    ->pluck('regione.nome','regione.codice')
+                    ->toArray();
+>>>>>>> aurmich/dev
                 })
                 ->searchable()
                 ->required()
@@ -202,11 +274,22 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
                     if (!$region) {
                         return [];
                     }
+<<<<<<< HEAD
                     return Province::where('region_id',$region)
                     ->orderBy('name')
                     ->get()
                     ->pluck("name", "id")
                     ->toArray();
+=======
+                    return Comune::query()
+                        ->where('regione->codice', $region)
+                        ->select('provincia')
+                        ->distinct()
+                        ->orderBy('provincia->nome')
+                        ->get()
+                        ->pluck('provincia.nome', 'provincia.codice')
+                        ->toArray();
+>>>>>>> aurmich/dev
                 })
                 ->searchable()
                 ->required()
@@ -222,6 +305,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
                     if (!$province) {
                         return [];
                     }
+<<<<<<< HEAD
                    
                     return Locality::query()
                         ->where('region_id', $region)
@@ -232,6 +316,16 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
                         ->orderBy('postal_code')
                         ->get()
                         ->pluck('postal_code', 'postal_code')
+=======
+                    return Comune::query()
+                        ->where('regione->codice', $region)
+                        ->where('provincia->codice', $province)
+                        ->select('cap')
+                        ->distinct()
+                        ->orderBy('cap')
+                        ->get()
+                        ->pluck('cap.0', 'cap.0')
+>>>>>>> aurmich/dev
                         ->toArray();
                 })
                 ->searchable()
@@ -245,6 +339,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
     {
         
         return [
+<<<<<<< HEAD
             
             RadioCollection::make('studio_id')
                 ->options(fn($get) => Studio::ofCap($get('cap'))->whereHas('doctors')->get()) // La tua collection
@@ -347,6 +442,53 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
         return $options;
     }
 
+=======
+            \Modules\SaluteOra\Filament\Forms\Components\StudioSelectorButtons::make('studio_selection')
+                ->sectionTitle(__('saluteora::widgets.find_doctor_and_appointment.studio_list.title'))
+                ->studios(fn($get) => Studio::ofCap($get('cap'))->get()) // Empty Eloquent collection
+                ->populatesStudioField('studio_id')
+                ->populatesDoctorField('doctor_id')
+                ->emptyStateTitle(__('saluteora::widgets.find_doctor_and_appointment.studio_list.empty_state.title'))
+                ->emptyStateDescription(__('saluteora::widgets.find_doctor_and_appointment.studio_list.empty_state.description'))
+                ->required()
+                ->columnSpanFull(),
+                
+            Hidden::make('studio_id')->required(),
+            Hidden::make('doctor_id')->required(),
+        ];
+    }
+
+    
+
+    
+
+   
+
+    /**
+     * Metodo Livewire per selezionare uno studio.
+     *
+     * @param int $studioId
+     * @return void
+     */
+    public function selectStudio(int $studioId): void
+    {
+        $studio = \Modules\SaluteOra\Models\Studio::find($studioId);
+        if ($studio) {
+            $this->data['selected_studio'] = $studioId;
+            $this->data['selected_studio_name'] = $studio->name;
+        }
+    }
+
+    protected function getDateStepSchema(): array
+    {
+        return [
+            'appointment_date' => DatePicker::make('appointment_date')
+            ->disabledDates(['2025-06-05','2025-06-21'])
+                ->native(false),
+        ];
+    }
+
+>>>>>>> aurmich/dev
     /**
      * Ottiene le date non disponibili per gli appuntamenti
      *
@@ -378,6 +520,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
             return;
         }
         
+<<<<<<< HEAD
         // Reset appointment time when date changes
         $set('appointment_time', null);
         
@@ -392,6 +535,53 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
     
 
     
+=======
+        // Qui implementeremo la vera logica per ottenere gli slot disponibili dal server
+        // Per ora restituiamo degli esempi
+        
+        // Se è un weekend, meno slot disponibili
+        $isWeekend = in_array(date('w', strtotime($appointmentDate)), [0, 6]);
+        $isMonday = date('w', strtotime($appointmentDate)) == 1;
+        
+        $availableSlots = $this->generateTimeSlots($isWeekend, $isMonday);
+        
+        // Log per debug
+        Log::info('Time slots updated', [
+            'date' => $appointmentDate,
+            'is_weekend' => $isWeekend,
+            'is_monday' => $isMonday,
+            'slots_count' => count($availableSlots)
+        ]);
+        
+        // Aggiorna il componente con gli slot disponibili
+        $this->availableTimeSlots = $availableSlots;
+    }
+
+    protected function getTimeStepSchema(): array
+    {
+        return [
+            'appointment_time' => Select::make('appointment_time')
+                ->label('saluteora::fields.appointment_time')
+                ->options([
+                    '09:00' => '09:00',
+                    '09:30' => '09:30',
+                    '10:00' => '10:00',
+                    '10:30' => '10:30',
+                    '11:00' => '11:00',
+                    '11:30' => '11:30',
+                    '12:00' => '12:00',
+                    '15:00' => '15:00',
+                    '15:30' => '15:30',
+                    '16:00' => '16:00',
+                    '16:30' => '16:30',
+                    '17:00' => '17:00',
+                    '17:30' => '17:30',
+                    '18:00' => '18:00',
+                ])
+                ->required(),
+        ];
+    }
+>>>>>>> aurmich/dev
 
     /**
      * Get the confirmation step form schema.
@@ -401,6 +591,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
     protected function getConfirmStepSchema(): array
     {
         return [
+<<<<<<< HEAD
             'confirm'=>Forms\Components\Section::make(__('saluteora::widgets.find_doctor_and_appointment.confirm_step.title'))
                 ->description(__('saluteora::widgets.find_doctor_and_appointment.confirm_step.description'))
                 ->schema([
@@ -465,10 +656,40 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
                         ->rows(3)
                         ->columnSpan('full')
                         ->maxLength(500), // Limite di caratteri per le note
+=======
+            Forms\Components\Section::make(__('saluteora::widgets.find_doctor_and_appointment.confirm_step.title'))
+                ->description(__('saluteora::widgets.find_doctor_and_appointment.confirm_step.description'))
+                ->schema([
+                    Forms\Components\TextInput::make('studio_name')
+                        ->label(__('saluteora::widgets.find_doctor_and_appointment.fields.studio.label'))
+                        ->default(function (Get $get) {
+                            $studioId = $get('studio_id');
+                            if (!$studioId) return null;
+                            
+                            $studio = \Modules\SaluteOra\Models\Studio::find($studioId);
+                            return $studio ? $studio->name : null;
+                        })
+                        ->readOnly(),
+                        
+                    Forms\Components\TextInput::make('appointment_date')
+                        ->label(__('saluteora::widgets.find_doctor_and_appointment.fields.appointment_date.label'))
+                        ->readOnly(),
+                        
+                    Forms\Components\TextInput::make('appointment_time')
+                        ->label(__('saluteora::widgets.find_doctor_and_appointment.fields.appointment_time.label'))
+                        ->readOnly(),
+                        
+                    Textarea::make('notes')
+                        ->label(__('saluteora::widgets.find_doctor_and_appointment.fields.notes.label'))
+                        ->placeholder(__('saluteora::widgets.find_doctor_and_appointment.fields.notes.placeholder'))
+                        ->rows(3)
+                        ->columnSpan('full'),
+>>>>>>> aurmich/dev
                 ]),
         ];
     }
 
+<<<<<<< HEAD
 
     public function register(): \Illuminate\Http\RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
     {
@@ -499,6 +720,51 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
     }
 
     
+=======
+    /**
+     * Handle form submission.
+     *
+     * @return void
+     */
+    public function submit(): void
+    {
+        try {
+            if (!request()->hasValidSignature()) {
+                throw new \Exception('Invalid request signature');
+            }
+
+            // Get form data
+            $data = $this->form->getState();
+
+            // Log the booking attempt
+            Log::info('New appointment booking', [
+                'user_id' => Auth::id(),
+                'data' => $data
+            ]);
+
+            // TODO: Implement actual booking logic here
+
+            // Show success notification
+            Notification::make()
+                ->success()
+                ->title(trans('saluteora::notifications.booking_success'))
+                ->send();
+
+            // Reset form
+            $this->form->fill();
+
+        } catch (\Exception $e) {
+            Log::error('Booking error: ' . $e->getMessage());
+
+            Notification::make()
+                ->danger()
+                ->title(trans('saluteora::notifications.booking_error'))
+                ->body($e->getMessage())
+                ->send();
+        }
+    }
+
+>>>>>>> aurmich/dev
     /**
      * Get the CSRF token for the current request.
      *

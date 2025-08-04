@@ -8,11 +8,19 @@ export default defineConfig({
     plugins: [
         laravel({
             input: ['resources/css/app.css', 'resources/js/app.js'],
+<<<<<<< HEAD
             refresh: true,
+=======
+            refresh: [`resources/views/**/*`],
+>>>>>>> aurmich/dev
         }),
         tailwindcss(),
     ],
     server: {
         cors: true,
     },
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> aurmich/dev

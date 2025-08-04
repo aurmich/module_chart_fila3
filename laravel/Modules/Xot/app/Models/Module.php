@@ -14,6 +14,11 @@ use function Safe\json_encode;
 use Sushi\Sushi;
 
 /**
+<<<<<<< HEAD
+=======
+ * 
+ *
+>>>>>>> aurmich/dev
  * @property int         $id
  * @property string|null $name
  * @property string|null $description

@@ -252,7 +252,10 @@ jobs:
 ### 2. Code Coverage
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # phpunit.xml
 <coverage>
     <include>

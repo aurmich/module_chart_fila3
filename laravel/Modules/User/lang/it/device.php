@@ -90,10 +90,13 @@ return array (
     array (
       'label' => 'openFilters',
     ),
+<<<<<<< HEAD
     'login_at' => 
     array (
       'label' => 'login_at',
     ),
+=======
+>>>>>>> aurmich/dev
   ),
   'actions' => 
   array (
@@ -118,8 +121,11 @@ return array (
       'label' => 'create',
     ),
   ),
+<<<<<<< HEAD
   'model' => 
   array (
     'label' => 'device.model',
   ),
+=======
+>>>>>>> aurmich/dev
 );

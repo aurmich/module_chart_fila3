@@ -15,6 +15,7 @@ return array (
     array (
       'label' => 'request',
     ),
+<<<<<<< HEAD
     'activeLocale' => 
     array (
       'label' => 'activeLocale',
@@ -39,6 +40,8 @@ return array (
     array (
       'label' => 'create',
     ),
+=======
+>>>>>>> aurmich/dev
   ),
   'fields' => 
   array (
@@ -46,21 +49,33 @@ return array (
     array (
       'label' => 'email',
       'description' => 'email',
+<<<<<<< HEAD
       'helper_text' => '',
+=======
+      'helper_text' => 'email',
+>>>>>>> aurmich/dev
       'placeholder' => 'email',
     ),
     'password' => 
     array (
       'label' => 'password',
       'description' => 'password',
+<<<<<<< HEAD
       'helper_text' => '',
+=======
+      'helper_text' => 'password',
+>>>>>>> aurmich/dev
       'placeholder' => 'password',
     ),
     'remember' => 
     array (
       'label' => 'remember',
       'description' => 'remember',
+<<<<<<< HEAD
       'helper_text' => '',
+=======
+      'helper_text' => 'remember',
+>>>>>>> aurmich/dev
       'placeholder' => 'remember',
     ),
     'cap' => 
@@ -74,6 +89,7 @@ return array (
     array (
       'description' => 'city',
     ),
+<<<<<<< HEAD
     'options' => 
     array (
       'prefix-icon-color' => 
@@ -492,5 +508,7 @@ return array (
     array (
       'label' => 'Credenziali',
     ),
+=======
+>>>>>>> aurmich/dev
   ),
 );

@@ -7,7 +7,10 @@ namespace Modules\SaluteOra\Enums;
 use Filament\Support\Contracts\HasLabel;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasColor;
+<<<<<<< HEAD
 use function Safe\class_alias;
+=======
+>>>>>>> aurmich/dev
 
 /**
  * Defines the different types of appointments in the system.
@@ -128,4 +131,8 @@ enum AppointmentTypeEnum: string implements HasLabel, HasIcon, HasColor
 }
 
 // Alias for backward compatibility
+<<<<<<< HEAD
 //class_alias(AppointmentTypeEnum::class, 'Modules\\SaluteOra\\Enums\\AppointmentType');
+=======
+class_alias(AppointmentTypeEnum::class, 'Modules\\SaluteOra\\Enums\\AppointmentType');
+>>>>>>> aurmich/dev

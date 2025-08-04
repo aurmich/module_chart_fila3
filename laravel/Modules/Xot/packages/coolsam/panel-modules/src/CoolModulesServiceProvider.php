@@ -13,6 +13,7 @@ use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class CoolModulesServiceProvider extends PackageServiceProvider
 {
+<<<<<<< HEAD
     /**
      * Traccia i panel che hanno già gli hook registrati.
      * 
@@ -20,6 +21,8 @@ class CoolModulesServiceProvider extends PackageServiceProvider
      */
     private static array $processedPanels = [];
 
+=======
+>>>>>>> aurmich/dev
     public function configurePackage(Package $package): void
     {
         /*
@@ -37,6 +40,7 @@ class CoolModulesServiceProvider extends PackageServiceProvider
         $this->app->register(LaravelModulesServiceProvider::class);
 
         $this->app->afterResolving('filament', function () {
+<<<<<<< HEAD
             $panels = Filament::getPanels();
            
             foreach ($panels as $panel) {
@@ -52,11 +56,21 @@ class CoolModulesServiceProvider extends PackageServiceProvider
                     $title = $id->replace(['::', '-'], [' ', ' '])->title()->toString();
                     $panel
                    
+=======
+            foreach (Filament::getPanels() as $panel) {
+                $id = Str::of($panel->getId());
+                if ($id->contains('::')) {
+                    $title = $id->replace(['::', '-'], [' ', ' '])->title()->toString();
+                    $panel
+>>>>>>> aurmich/dev
                         ->renderHook(
                             'panels::sidebar.nav.start',
                             fn () => new HtmlString("<h2 class='m-2 p-2 font-black text-xl'>$title</h2>"),
                         )
+<<<<<<< HEAD
                             
+=======
+>>>>>>> aurmich/dev
                         ->renderHook(
                             'panels::sidebar.nav.end',
                             fn () => new HtmlString(
@@ -68,9 +82,12 @@ class CoolModulesServiceProvider extends PackageServiceProvider
                                       </a>'
                             ),
                         );
+<<<<<<< HEAD
                     
                     // Marca questo panel come processato
                     self::$processedPanels[$panelId] = true;
+=======
+>>>>>>> aurmich/dev
                 }
             }
         });

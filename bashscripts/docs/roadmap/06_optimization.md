@@ -7,7 +7,10 @@
  43df3e0 (.)
 
 aurmich/dev
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # ⚡ Fase 6: Ottimizzazione
 
 ## 📋 Panoramica
@@ -110,6 +113,32 @@ Questa fase si concentra sull'ottimizzazione e il miglioramento continuo del sis
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 5: Monitoraggio](../roadmap/05_monitoring.md)
+<<<<<<< HEAD
+=======
+- [Fase 7: Documentazione](../roadmap/07_documentation.md)
+
+## 📅 Timeline
+
+### Q1 2026
+- Analisi iniziale
+- Benchmark
+- Pianificazione
+
+### Q2 2026
+- Ottimizzazione core
+- Miglioramenti infrastruttura
+- Test iniziali
+
+### Q3 2026
+- Validazione
+- Documentazione
+- Deployment
+
+### Q4 2026
+- Monitoraggio
+- Fine-tuning
+- Manutenzione
+>>>>>>> aurmich/dev
 
 
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
@@ -157,6 +186,7 @@ aurmich/dev
 * [06_optimization.md](docs/roadmap/06_optimization.md)
 
 
+<<<<<<< HEAD
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
 aurmich/dev
 
@@ -203,3 +233,5 @@ aurmich/dev
 * [06_optimization.md](docs/roadmap/06_optimization.md)
 
 
+=======
+>>>>>>> aurmich/dev

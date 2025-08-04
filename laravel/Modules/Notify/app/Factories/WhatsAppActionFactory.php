@@ -11,7 +11,10 @@ use Modules\Notify\Actions\WhatsApp\SendFacebookWhatsAppAction;
 use Modules\Notify\Actions\WhatsApp\SendTwilioWhatsAppAction;
 use Modules\Notify\Actions\WhatsApp\SendVonageWhatsAppAction;
 use Modules\Notify\Contracts\WhatsAppProviderActionInterface;
+<<<<<<< HEAD
 use function Safe\preg_replace;
+=======
+>>>>>>> aurmich/dev
 
 /**
  * Factory per la creazione di azioni WhatsApp.
@@ -41,14 +44,22 @@ final class WhatsAppActionFactory
         $driver = $driver ?? Config::get('whatsapp.default', 'twilio');
         
         // Gestione speciale per driver con caratteri non alfanumerici (es. 360dialog)
+<<<<<<< HEAD
         $normalizedDriver = preg_replace('/[^a-zA-Z0-9]/', '', ucfirst(strtolower(is_string($driver) ? $driver : '')));
+=======
+        $normalizedDriver = preg_replace('/[^a-zA-Z0-9]/', '', ucfirst(strtolower($driver)));
+>>>>>>> aurmich/dev
         
         // Costruisci il nome completo della classe
         $className = "\\Modules\\Notify\\Actions\\WhatsApp\\Send{$normalizedDriver}WhatsAppAction";
         
         // Verifica se la classe esiste
         if (!class_exists($className)) {
+<<<<<<< HEAD
             throw new Exception("Unsupported WhatsApp driver: " . (is_string($driver) ? $driver : '') . ". Class {$className} not found.");
+=======
+            throw new Exception("Unsupported WhatsApp driver: {$driver}. Class {$className} not found.");
+>>>>>>> aurmich/dev
         }
         
         // Verifica se la classe implementa l'interfaccia richiesta

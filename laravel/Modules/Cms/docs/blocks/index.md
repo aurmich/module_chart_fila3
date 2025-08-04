@@ -6,11 +6,14 @@
 - [Blocchi](../blocks.md)
 - [Componenti Blocchi Contenuto](../componenti-blocchi-contenuto.md)
 - [Namespace Componenti Blocchi](../namespace-componenti-blocchi.md)
+<<<<<<< HEAD
 - [Documentazione Generale](../../../../../docs/README.md)
 - [Collegamenti Documentazione](../../../../../docs/collegamenti-documentazione.md)
 
 ## Panoramica
 I blocchi sono componenti riutilizzabili che compongono le sezioni del sito. Ogni blocco ha uno scopo specifico e può essere inserito in diverse sezioni tramite i file JSON di configurazione.
+=======
+>>>>>>> aurmich/dev
 - [Documentazione Generale SaluteOra](../../../../../docs/README.md)
 - [Collegamenti Documentazione](../../../../../docs/collegamenti-documentazione.md)
 
@@ -52,7 +55,10 @@ I blocchi sono componenti riutilizzabili che compongono le sezioni del sito Salu
 Ogni blocco segue una struttura standardizzata:
 
 1. **View Blade**: `Modules/Cms/resources/views/blocks/[nome-blocco].blade.php`
+<<<<<<< HEAD
 2. **Configurazione JSON**: Definita nei file `config/local/<directory progetto>/database/content/sections/[id].json`
+=======
+>>>>>>> aurmich/dev
 2. **Configurazione JSON**: Definita nei file `config/local/saluteora/database/content/sections/[id].json`
 3. **Stili CSS**: Definiti in `Themes/One/resources/css/blocks/[nome-blocco].css`
 

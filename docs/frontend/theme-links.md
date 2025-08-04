@@ -21,7 +21,10 @@ Questo tema è un pacchetto riutilizzabile che può essere utilizzato in progett
 - [Documentazione Build Process](laravel/Themes/One/docs/build-process.md)
 - [Documentazione Componenti](laravel/Themes/One/docs/COMPONENTS.md)
 - [Documentazione Assets](laravel/Themes/One/docs/ASSETS.md)
+<<<<<<< HEAD
 - [Language Switcher Implementation](laravel/Themes/One/docs/language-switcher-implementation.md)
+=======
+>>>>>>> aurmich/dev
 - [Documentazione Best Practices](laravel/Themes/One/docs/best-practices.md)
 - [Documentazione Personalizzazione](laravel/Themes/One/docs/README.md)
 

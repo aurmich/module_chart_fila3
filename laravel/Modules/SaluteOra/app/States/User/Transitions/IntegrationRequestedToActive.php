@@ -4,15 +4,23 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\States\User\Transitions;
 
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Modules\SaluteOra\Models\User;
 use Spatie\ModelStates\Transition;
 use Modules\SaluteOra\States\User\Active;
 use Modules\SaluteOra\States\User\IntegrationRequested;
+=======
+use Spatie\ModelStates\Transition;
+use Modules\SaluteOra\States\User\IntegrationRequested;
+use Modules\SaluteOra\States\User\Active;
+use Modules\SaluteOra\Models\User;
+>>>>>>> aurmich/dev
 
 class IntegrationRequestedToActive extends BaseTransition
 {
     //---
+<<<<<<< HEAD
     public function getNotificationData(): array{
         $user=$this->record;
         $password=Str::random(10);
@@ -22,4 +30,6 @@ class IntegrationRequestedToActive extends BaseTransition
             'password' => $password,
         ];
     }
+=======
+>>>>>>> aurmich/dev
 }

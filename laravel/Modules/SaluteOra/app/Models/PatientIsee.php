@@ -28,7 +28,10 @@ namespace Modules\SaluteOra\Models;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PatientIsee tenant(?int $tenantId = null)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PatientIsee withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PatientIsee withoutTrashed()
+<<<<<<< HEAD
  * @method static \Modules\SaluteOra\Database\Factories\PatientIseeFactory factory($count = null, $state = [])
+=======
+>>>>>>> aurmich/dev
  * @mixin \Eloquent
  */
 class PatientIsee extends Isee

@@ -5,10 +5,18 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Models;
 
 use Modules\User\Models\BaseProfile;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 
 
 /**
+=======
+
+
+/**
+ * 
+ *
+>>>>>>> aurmich/dev
  * @property string $id
  * @property string|null $first_name
  * @property string|null $last_name
@@ -74,12 +82,22 @@ use Illuminate\Database\Eloquent\Builder;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile whereUserId($value)
+<<<<<<< HEAD
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile withExtraAttributes()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile withoutPermission($permissions)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile withoutRole($roles, $guard = null)
+=======
+ * @method static Builder<static>|Profile withExtraAttributes()
+ * @method static Builder<static>|Profile withoutPermission($permissions)
+ * @method static Builder<static>|Profile withoutRole($roles, $guard = null)
+>>>>>>> aurmich/dev
  * @mixin \Eloquent
  */
 class Profile extends BaseProfile{
     /** @var string */
     protected $connection = 'salute_ora';
+<<<<<<< HEAD
 } 
+=======
+} 
+>>>>>>> aurmich/dev

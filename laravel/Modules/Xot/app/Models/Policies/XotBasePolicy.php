@@ -19,7 +19,11 @@ abstract class XotBasePolicy
 
     public function before(UserContract $user, string $ability): ?bool
     {
+<<<<<<< HEAD
         return once(function () use ($user) {
+=======
+        return once(function () use ($user, $ability) {
+>>>>>>> aurmich/dev
             if ($user->hasRole('super-admin')) {
                 return true;
             }

@@ -12,7 +12,10 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Illuminate\Database\Eloquent\Model;
 use Filament\Tables\Columns\SelectColumn;
+<<<<<<< HEAD
 use Spatie\ModelStates\HasStatesContract;
+=======
+>>>>>>> aurmich/dev
 use Modules\SaluteOra\States\User\UserState;
 
 class SelectStateColumn extends SelectColumn
@@ -22,7 +25,11 @@ class SelectStateColumn extends SelectColumn
     {
         parent::setUp();
       //  $this->selectablePlaceholder(false);
+<<<<<<< HEAD
         $this->options(function (Model&HasStatesContract $record ,$state): array {
+=======
+        $this->options(function (Model $record ,$state): array {
+>>>>>>> aurmich/dev
             $name=$this->getName();
             if($state==null){
 
@@ -43,9 +50,14 @@ class SelectStateColumn extends SelectColumn
         });
 
 
+<<<<<<< HEAD
         $this->beforeStateUpdated(function (Model&HasStatesContract $record, $state) {
             $message='';
             /** @phpstan-ignore property.notFound */
+=======
+        $this->beforeStateUpdated(function (Model $record, $state) {
+            $message='';
+>>>>>>> aurmich/dev
             $record->state->transitionTo($state,$message);
         });
 
@@ -55,4 +67,8 @@ class SelectStateColumn extends SelectColumn
 
 
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> aurmich/dev

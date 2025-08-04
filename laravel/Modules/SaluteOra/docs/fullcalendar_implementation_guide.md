@@ -41,7 +41,10 @@ Questa guida fornisce istruzioni dettagliate per implementare i widget FullCalen
 ### 1. Installazione Dipendenze
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Plugin FullCalendar per Filament
 composer require saade/filament-fullcalendar
 

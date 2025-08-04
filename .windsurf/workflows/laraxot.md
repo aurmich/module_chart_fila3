@@ -64,7 +64,10 @@ Questo documento fornisce una panoramica di tutti i workflow automatizzati dispo
 
 ```bash
 .windsurf/workflows/module-setup.md
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Seguire le istruzioni per inserire nome modulo
 ```
 
@@ -195,7 +198,10 @@ Il Project Health Check calcola un punteggio su 100 basato su:
 
 ### Daily Routine
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 1. Health check giornaliero
 .windsurf/workflows/project-health-check.md
 
@@ -206,7 +212,10 @@ Il Project Health Check calcola un punteggio su 100 basato su:
 
 ### Before Commit
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 1. Provider validation
 .windsurf/workflows/provider-validation.md
 
@@ -219,7 +228,10 @@ Il Project Health Check calcola un punteggio su 100 basato su:
 
 ### Weekly Maintenance
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 1. Naming convention audit
 .windsurf/workflows/naming-convention-audit.md
 
@@ -232,7 +244,10 @@ Il Project Health Check calcola un punteggio su 100 basato su:
 
 ### New Module Creation
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 1. Setup nuovo modulo
 .windsurf/workflows/module-setup.md
 
@@ -268,7 +283,10 @@ jobs:
 ### Pre-commit Hook
 ```bash
 #!/bin/sh
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # .git/hooks/pre-commit
 .windsurf/workflows/provider-validation.md
 .windsurf/workflows/code-quality-check.md
@@ -276,7 +294,10 @@ jobs:
 
 ### Cron Jobs
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # Daily health check
 0 6 * * * /path/to/project/.windsurf/workflows/project-health-check.md
 
@@ -359,3 +380,7 @@ jobs:
 
 **Ultimo aggiornamento**: $(date)  
 **Versione**: 2.0  
+<<<<<<< HEAD
+=======
+**Compatibilità**: Laravel 12+, PHP 8.1+, Laraxot Framework
+>>>>>>> aurmich/dev

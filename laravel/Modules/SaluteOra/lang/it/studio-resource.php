@@ -1,7 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
+=======
+>>>>>>> aurmich/dev
 return [
     'title' => [
         'singular' => 'Studio Medico',
@@ -103,4 +106,8 @@ return [
         'fiscal_info' => 'Informazioni Fiscali',
         'operations' => 'Operatività',
     ],
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> aurmich/dev

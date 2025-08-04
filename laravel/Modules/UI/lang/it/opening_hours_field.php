@@ -7,6 +7,7 @@ return array (
     array (
       'morning' => 
       array (
+<<<<<<< HEAD
         'label' => 'Mattina Lunedì',
         'placeholder' => 'Seleziona orario mattutino',
         'helper_text' => 'Orario di apertura del lunedì mattina',
@@ -16,31 +17,63 @@ return array (
         'label' => 'Pomeriggio Lunedì',
         'placeholder' => 'Seleziona orario pomeridiano',
         'helper_text' => 'Orario di apertura del lunedì pomeriggio',
+=======
+        'label' => 'monday.morning',
+        'placeholder' => 'monday.morning',
+        'helper_text' => 'monday.morning',
+        'description' => 'monday.morning',
+      ),
+      'afternoon' => 
+      array (
+        'label' => 'monday.afternoon',
+        'placeholder' => 'monday.afternoon',
+        'helper_text' => 'monday.afternoon',
+        'description' => 'monday.afternoon',
+>>>>>>> aurmich/dev
       ),
       'morning_from' => 
       array (
         'label' => '',
+<<<<<<< HEAD
         'placeholder' => '08:00',
         'helper_text' => '',
         'description' => 'monday.morning_from',
+=======
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+>>>>>>> aurmich/dev
       ),
       'morning_to' => 
       array (
         'label' => '',
+<<<<<<< HEAD
         'placeholder' => '12:00',
         'helper_text' => '',
         'description' => 'monday.morning_to',
+=======
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+>>>>>>> aurmich/dev
       ),
       'afternoon_from' => 
       array (
         'label' => '',
+<<<<<<< HEAD
         'placeholder' => '14:00',
         'helper_text' => '',
         'description' => 'monday.afternoon_from',
+=======
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+>>>>>>> aurmich/dev
       ),
       'afternoon_to' => 
       array (
         'label' => '',
+<<<<<<< HEAD
         'placeholder' => '18:00',
         'helper_text' => '',
         'description' => 'monday.afternoon_to',
@@ -56,12 +89,18 @@ return array (
         'label' => 'Etichetta Pomeriggio',
         'placeholder' => 'es. Consulenze',
         'helper_text' => 'Descrizione attività pomeridiane del lunedì',
+=======
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+>>>>>>> aurmich/dev
       ),
     ),
     'tuesday' => 
     array (
       'morning' => 
       array (
+<<<<<<< HEAD
         'label' => 'Mattina Martedì',
         'placeholder' => 'Seleziona orario mattutino',
         'helper_text' => 'Orario di apertura del martedì mattina',
@@ -71,31 +110,63 @@ return array (
         'label' => 'Pomeriggio Martedì',
         'placeholder' => 'Seleziona orario pomeridiano',
         'helper_text' => 'Orario di apertura del martedì pomeriggio',
+=======
+        'label' => '',
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+      ),
+      'afternoon' => 
+      array (
+        'label' => '',
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+>>>>>>> aurmich/dev
       ),
       'morning_from' => 
       array (
         'label' => '',
+<<<<<<< HEAD
         'placeholder' => '08:00',
         'helper_text' => '',
         'description' => 'tuesday.morning_from',
+=======
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+>>>>>>> aurmich/dev
       ),
       'morning_to' => 
       array (
         'label' => '',
+<<<<<<< HEAD
         'placeholder' => '12:00',
         'helper_text' => '',
         'description' => 'tuesday.morning_to',
+=======
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+>>>>>>> aurmich/dev
       ),
       'afternoon_from' => 
       array (
         'label' => '',
+<<<<<<< HEAD
         'placeholder' => '14:00',
         'helper_text' => '',
         'description' => 'tuesday.afternoon_from',
+=======
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+>>>>>>> aurmich/dev
       ),
       'afternoon_to' => 
       array (
         'label' => '',
+<<<<<<< HEAD
         'placeholder' => '18:00',
         'helper_text' => '',
         'description' => 'tuesday.afternoon_to',
@@ -111,12 +182,18 @@ return array (
         'label' => 'Etichetta Pomeriggio',
         'placeholder' => 'es. Consulenze',
         'helper_text' => 'Descrizione attività pomeridiane del martedì',
+=======
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+>>>>>>> aurmich/dev
       ),
     ),
     'wednesday' => 
     array (
       'morning' => 
       array (
+<<<<<<< HEAD
         'label' => 'Mattina Mercoledì',
         'placeholder' => 'Seleziona orario mattutino',
         'helper_text' => 'Orario di apertura del mercoledì mattina',
@@ -126,31 +203,63 @@ return array (
         'label' => 'Pomeriggio Mercoledì',
         'placeholder' => 'Seleziona orario pomeridiano',
         'helper_text' => 'Orario di apertura del mercoledì pomeriggio',
+=======
+        'label' => '',
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+      ),
+      'afternoon' => 
+      array (
+        'label' => '',
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+>>>>>>> aurmich/dev
       ),
       'morning_from' => 
       array (
         'label' => '',
+<<<<<<< HEAD
         'placeholder' => '08:00',
         'helper_text' => '',
         'description' => 'wednesday.morning_from',
+=======
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+>>>>>>> aurmich/dev
       ),
       'morning_to' => 
       array (
         'label' => '',
+<<<<<<< HEAD
         'placeholder' => '12:00',
         'helper_text' => '',
         'description' => 'wednesday.morning_to',
+=======
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+>>>>>>> aurmich/dev
       ),
       'afternoon_from' => 
       array (
         'label' => '',
+<<<<<<< HEAD
         'placeholder' => '14:00',
         'helper_text' => '',
         'description' => 'wednesday.afternoon_from',
+=======
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+>>>>>>> aurmich/dev
       ),
       'afternoon_to' => 
       array (
         'label' => '',
+<<<<<<< HEAD
         'placeholder' => '18:00',
         'helper_text' => '',
         'description' => 'wednesday.afternoon_to',
@@ -166,12 +275,18 @@ return array (
         'label' => 'Etichetta Pomeriggio',
         'placeholder' => 'es. Consulenze',
         'helper_text' => 'Descrizione attività pomeridiane del mercoledì',
+=======
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+>>>>>>> aurmich/dev
       ),
     ),
     'thursday' => 
     array (
       'morning' => 
       array (
+<<<<<<< HEAD
         'label' => 'Mattina Giovedì',
         'placeholder' => 'Seleziona orario mattutino',
         'helper_text' => 'Orario di apertura del giovedì mattina',
@@ -181,31 +296,63 @@ return array (
         'label' => 'Pomeriggio Giovedì',
         'placeholder' => 'Seleziona orario pomeridiano',
         'helper_text' => 'Orario di apertura del giovedì pomeriggio',
+=======
+        'label' => '',
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+      ),
+      'afternoon' => 
+      array (
+        'label' => '',
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+>>>>>>> aurmich/dev
       ),
       'morning_from' => 
       array (
         'label' => '',
+<<<<<<< HEAD
         'placeholder' => '08:00',
         'helper_text' => '',
         'description' => 'thursday.morning_from',
+=======
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+>>>>>>> aurmich/dev
       ),
       'morning_to' => 
       array (
         'label' => '',
+<<<<<<< HEAD
         'placeholder' => '12:00',
         'helper_text' => '',
         'description' => 'thursday.morning_to',
+=======
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+>>>>>>> aurmich/dev
       ),
       'afternoon_from' => 
       array (
         'label' => '',
+<<<<<<< HEAD
         'placeholder' => '14:00',
         'helper_text' => '',
         'description' => 'thursday.afternoon_from',
+=======
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+>>>>>>> aurmich/dev
       ),
       'afternoon_to' => 
       array (
         'label' => '',
+<<<<<<< HEAD
         'placeholder' => '18:00',
         'helper_text' => '',
         'description' => 'thursday.afternoon_to',
@@ -221,12 +368,18 @@ return array (
         'label' => 'Etichetta Pomeriggio',
         'placeholder' => 'es. Consulenze',
         'helper_text' => 'Descrizione attività pomeridiane del giovedì',
+=======
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+>>>>>>> aurmich/dev
       ),
     ),
     'friday' => 
     array (
       'morning' => 
       array (
+<<<<<<< HEAD
         'label' => 'Mattina Venerdì',
         'placeholder' => 'Seleziona orario mattutino',
         'helper_text' => 'Orario di apertura del venerdì mattina',
@@ -276,12 +429,54 @@ return array (
         'label' => 'Etichetta Pomeriggio',
         'placeholder' => 'es. Consulenze',
         'helper_text' => 'Descrizione attività pomeridiane del venerdì',
+=======
+        'label' => '',
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+      ),
+      'afternoon' => 
+      array (
+        'label' => '',
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+      ),
+      'afternoon_to' => 
+      array (
+        'description' => '',
+        'helper_text' => '',
+        'placeholder' => '',
+        'label' => '',
+      ),
+      'afternoon_from' => 
+      array (
+        'description' => '',
+        'helper_text' => '',
+        'placeholder' => '',
+        'label' => '',
+      ),
+      'morning_to' => 
+      array (
+        'description' => '',
+        'helper_text' => '',
+        'placeholder' => '',
+        'label' => '',
+      ),
+      'morning_from' => 
+      array (
+        'description' => '',
+        'helper_text' => '',
+        'label' => '',
+        'placeholder' => '',
+>>>>>>> aurmich/dev
       ),
     ),
     'saturday' => 
     array (
       'morning' => 
       array (
+<<<<<<< HEAD
         'label' => 'Mattina Sabato',
         'placeholder' => 'Seleziona orario mattutino',
         'helper_text' => 'Orario di apertura del sabato mattina',
@@ -430,5 +625,48 @@ return array (
     'no_availability' => 'Nessuna disponibilità configurata',
     'schedule_saved' => 'Orari salvati correttamente',
     'invalid_time_range' => 'Orario non valido: l\'ora di fine deve essere successiva all\'ora di inizio',
+=======
+        'label' => '',
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+      ),
+      'afternoon' => 
+      array (
+        'label' => '',
+        'placeholder' => '',
+        'helper_text' => '',
+        'description' => '',
+      ),
+      'afternoon_to' => 
+      array (
+        'description' => '',
+        'helper_text' => '',
+        'placeholder' => '',
+        'label' => '',
+      ),
+      'afternoon_from' => 
+      array (
+        'description' => '',
+        'helper_text' => '',
+        'placeholder' => '',
+        'label' => '',
+      ),
+      'morning_to' => 
+      array (
+        'description' => '',
+        'helper_text' => '',
+        'placeholder' => '',
+        'label' => '',
+      ),
+      'morning_from' => 
+      array (
+        'description' => '',
+        'helper_text' => '',
+        'placeholder' => '',
+        'label' => '',
+      ),
+    ),
+>>>>>>> aurmich/dev
   ),
 );

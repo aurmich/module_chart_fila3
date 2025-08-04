@@ -21,8 +21,13 @@
     $studioUserId = $studio->pivot->id ?? null;
     
 @endphp
+<<<<<<< HEAD
 <div class="w-full flex justify-center">
 <div class="w-full lg:w-7/12 bg-white rounded-xl shadow-sm border border-gray-200 p-6 dark:bg-gray-900">
+=======
+
+<div class="studio-availability-card bg-white rounded-xl shadow-sm border border-gray-200 p-6 dark:bg-gray-900">
+>>>>>>> aurmich/dev
     {{-- Header Studio --}}
     <div class="studio-header flex items-center justify-between p-4 border-b {{ $isPrimary ? 'border-blue-200 dark:border-blue-700' : 'border-gray-200 dark:border-gray-700' }}">
         <div class="flex items-center space-x-3">
@@ -62,5 +67,9 @@
         @include('pub_theme::components.blocks.schedule.simple', ['schedule' => $schedule])
         
     </div>
+<<<<<<< HEAD
 </div> 
 </div>
+=======
+</div> 
+>>>>>>> aurmich/dev

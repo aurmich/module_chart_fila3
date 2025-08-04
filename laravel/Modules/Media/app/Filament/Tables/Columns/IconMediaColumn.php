@@ -31,23 +31,33 @@ class IconMediaColumn extends IconColumn
                 ->color(fn ($record) => $record->getFirstMedia($attachment) ? 'success' : 'danger')
                 ->tooltip(fn ($record) => $record->getFirstMedia($attachment)->file_name ?? 'Documento non caricato')
 
+<<<<<<< HEAD
                 ->action(function ($record,\Illuminate\Http\Request $request) use ($attachment) {
                     // @phpstan-ignore method.nonObject
+=======
+                ->action(function ($record) use ($attachment) {
+                    // @phpstan-ignore-next-line
+>>>>>>> aurmich/dev
                     $media = $record->getFirstMedia($attachment);
                     if (!$media) {
                         return;
                     }
 
+<<<<<<< HEAD
                     return $media->toInlineResponse($request);
                     //return $media->toResponse($request);
 
                     //return Storage::disk($media->disk)->download($media->getPathRelativeToRoot());
                     //return Storage::disk($media->disk)
                     //    ->temporaryUploadUrl($media->getPathRelativeToRoot(),now()->addMinutes(5));
+=======
+                    return Storage::disk($media->disk)->download($media->getPathRelativeToRoot());
+>>>>>>> aurmich/dev
 
                     //return response()->streamDownload(function () use ($media) {
                     //    echo $media->get();
                     //}, $media->file_name);
+<<<<<<< HEAD
                     /*
                     $headers=[
                         'Content-Type' => $media->mime_type,
@@ -59,6 +69,9 @@ class IconMediaColumn extends IconColumn
                     /*
                     return Storage::disk($media->disk)->response($media->getPathRelativeToRoot(), null, $headers);
                     */
+=======
+
+>>>>>>> aurmich/dev
                 })
                 ;
 

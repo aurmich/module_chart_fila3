@@ -145,6 +145,7 @@ return array (
       'placeholder' => 'name, email, date, company',
       'description' => 'Parametri disponibili per il template email',
     ),
+<<<<<<< HEAD
     'delete' => 
     array (
       'label' => 'delete',
@@ -172,6 +173,8 @@ return array (
     array (
       'label' => 'counter',
     ),
+=======
+>>>>>>> aurmich/dev
   ),
   'actions' => 
   array (
@@ -210,10 +213,13 @@ return array (
       'success_message' => 'Template importato con successo',
       'error_message' => 'Errore nell\'importazione del template',
     ),
+<<<<<<< HEAD
     'activeLocale' => 
     array (
       'label' => 'activeLocale',
     ),
+=======
+>>>>>>> aurmich/dev
   ),
   'messages' => 
   array (

@@ -47,6 +47,7 @@ class ComuneJson extends GeoJsonModel
 
     /**
      * Get comuni by region code
+<<<<<<< HEAD
      * 
      * @return Collection<int, array{
      *     nome: string,
@@ -57,11 +58,14 @@ class ComuneJson extends GeoJsonModel
      *     codiceCatastale: string,
      *     popolazione: int
      * }>
+=======
+>>>>>>> aurmich/dev
      */
     public static function byRegion(string $regionCode): Collection
     {
         $cacheKey = "geo_region_{$regionCode}";
         
+<<<<<<< HEAD
         /** @var Collection<int, array{
          *     nome: string,
          *     codice: string,
@@ -72,11 +76,15 @@ class ComuneJson extends GeoJsonModel
          *     popolazione: int
          * }> $result */
         $result = Cache::remember($cacheKey, self::CACHE_TTL, function () use ($regionCode) {
+=======
+        return Cache::remember($cacheKey, self::CACHE_TTL, function () use ($regionCode) {
+>>>>>>> aurmich/dev
             return static::all()
                 ->where('regione.codice', $regionCode)
                 ->sortBy('nome')
                 ->values();
         });
+<<<<<<< HEAD
         
         /** @var Collection<int, array{
          *     nome: string,
@@ -88,10 +96,13 @@ class ComuneJson extends GeoJsonModel
          *     popolazione: int
          * }> $result */
         return $result;
+=======
+>>>>>>> aurmich/dev
     }
 
     /**
      * Get comuni by province code
+<<<<<<< HEAD
      * 
      * @return Collection<int, array{
      *     nome: string,
@@ -102,11 +113,14 @@ class ComuneJson extends GeoJsonModel
      *     codiceCatastale: string,
      *     popolazione: int
      * }>
+=======
+>>>>>>> aurmich/dev
      */
     public static function byProvince(string $provinceCode): Collection
     {
         $cacheKey = "geo_province_{$provinceCode}";
         
+<<<<<<< HEAD
         /** @var Collection<int, array{
          *     nome: string,
          *     codice: string,
@@ -117,11 +131,15 @@ class ComuneJson extends GeoJsonModel
          *     popolazione: int
          * }> $result */
         $result = Cache::remember($cacheKey, self::CACHE_TTL, function () use ($provinceCode) {
+=======
+        return Cache::remember($cacheKey, self::CACHE_TTL, function () use ($provinceCode) {
+>>>>>>> aurmich/dev
             return static::all()
                 ->where('provincia.codice', $provinceCode)
                 ->sortBy('nome')
                 ->values();
         });
+<<<<<<< HEAD
         
         /** @var Collection<int, array{
          *     nome: string,
@@ -133,6 +151,8 @@ class ComuneJson extends GeoJsonModel
          *     popolazione: int
          * }> $result */
         return $result;
+=======
+>>>>>>> aurmich/dev
     }
 
     /**
@@ -140,6 +160,7 @@ class ComuneJson extends GeoJsonModel
      * 
      * @param string $name Nome parziale del comune da cercare
      * @param int $limit Numero massimo di risultati (0 = nessun limite)
+<<<<<<< HEAD
      * @return Collection<int, array{
      *     nome: string,
      *     codice: string,
@@ -149,12 +170,16 @@ class ComuneJson extends GeoJsonModel
      *     codiceCatastale: string,
      *     popolazione: int
      * }> Comuni che corrispondono alla ricerca
+=======
+     * @return Collection<array-key, array> Comuni che corrispondono alla ricerca
+>>>>>>> aurmich/dev
      */
     public static function searchByName(string $name, int $limit = 0): Collection
     {
         $name = mb_strtolower($name);
         $cacheKey = "geo_search_" . md5($name) . "_" . $limit;
         
+<<<<<<< HEAD
         /** @var Collection<int, array{
          *     nome: string,
          *     codice: string,
@@ -168,10 +193,16 @@ class ComuneJson extends GeoJsonModel
             $results = static::all()
                 /** @phpstan-ignore nullCoalesce.offset */
                 ->filter(fn($item) => str_contains(mb_strtolower($item['nome'] ?? ''), $name))
+=======
+        return Cache::remember($cacheKey, self::CACHE_TTL, function () use ($name, $limit) {
+            $results = static::all()
+                ->filter(fn($item) => str_contains(mb_strtolower($item['nome']), $name))
+>>>>>>> aurmich/dev
                 ->sortBy('nome');
                 
             return $limit > 0 ? $results->take($limit)->values() : $results->values();
         });
+<<<<<<< HEAD
         
         /** @var Collection<int, array{
          *     nome: string,
@@ -183,10 +214,13 @@ class ComuneJson extends GeoJsonModel
          *     popolazione: int
          * }> $result */
         return $result;
+=======
+>>>>>>> aurmich/dev
     }
 
     /**
      * Get comuni by CAP
+<<<<<<< HEAD
      * 
      * @return Collection<int, array{
      *     nome: string,
@@ -216,6 +250,15 @@ class ComuneJson extends GeoJsonModel
             ->values();
             
         return $filtered;
+=======
+     */
+    public static function byCap(string $cap): Collection
+    {
+        return static::all()
+            ->filter(fn($item) => in_array($cap, $item['cap'], true))
+            ->sortBy('nome')
+            ->values();
+>>>>>>> aurmich/dev
     }
 
     /**
@@ -225,15 +268,22 @@ class ComuneJson extends GeoJsonModel
      */
     public static function allRegions(): Collection
     {
+<<<<<<< HEAD
         /** @var Collection<string, string> $result */
         $result = Cache::remember('geo_all_regions', self::CACHE_TTL, function () {
+=======
+        return Cache::remember('geo_all_regions', self::CACHE_TTL, function () {
+>>>>>>> aurmich/dev
             return static::all()
                 ->pluck('regione.nome', 'regione.codice')
                 ->unique()
                 ->sort();
         });
+<<<<<<< HEAD
         
         return $result;
+=======
+>>>>>>> aurmich/dev
     }
 
     /**
@@ -243,15 +293,22 @@ class ComuneJson extends GeoJsonModel
      */
     public static function allProvinces(): Collection
     {
+<<<<<<< HEAD
         /** @var Collection<string, string> $result */
         $result = Cache::remember('geo_all_provinces', self::CACHE_TTL, function () {
+=======
+        return Cache::remember('geo_all_provinces', self::CACHE_TTL, function () {
+>>>>>>> aurmich/dev
             return static::all()
                 ->pluck('provincia.nome', 'provincia.codice')
                 ->unique()
                 ->sort();
         });
+<<<<<<< HEAD
         
         return $result;
+=======
+>>>>>>> aurmich/dev
     }
 
     /**
@@ -263,20 +320,28 @@ class ComuneJson extends GeoJsonModel
     {
         $cacheKey = "geo_region_{$regionCode}_provinces";
         
+<<<<<<< HEAD
         /** @var Collection<string, string> $result */
         $result = Cache::remember($cacheKey, self::CACHE_TTL, function () use ($regionCode) {
+=======
+        return Cache::remember($cacheKey, self::CACHE_TTL, function () use ($regionCode) {
+>>>>>>> aurmich/dev
             return static::all()
                 ->where('regione.codice', $regionCode)
                 ->pluck('provincia.nome', 'provincia.codice')
                 ->unique()
                 ->sort();
         });
+<<<<<<< HEAD
         
         return $result;
+=======
+>>>>>>> aurmich/dev
     }
 
     /**
      * Get all CAPs for a specific city
+<<<<<<< HEAD
      * 
      * @return Collection<int, string> List of CAP codes for the city
      */
@@ -284,14 +349,23 @@ class ComuneJson extends GeoJsonModel
     {
         /** @var Collection<int, string> $result */
         $result = static::all()
+=======
+     */
+    public static function getCapsByCity(string $cityName): Collection
+    {
+        return static::all()
+>>>>>>> aurmich/dev
             ->where('nome', $cityName)
             ->pluck('cap')
             ->flatten()
             ->unique()
             ->sort()
             ->values();
+<<<<<<< HEAD
             
         return $result;
+=======
+>>>>>>> aurmich/dev
     }
 
     /**
@@ -357,18 +431,25 @@ class ComuneJson extends GeoJsonModel
     {
         $cacheKey = "geo_valid_cap_{$cap}";
         
+<<<<<<< HEAD
         /** @var bool $result */
         $result = Cache::remember($cacheKey, self::CACHE_TTL, function () use ($cap) {
             return static::byCap($cap)->isNotEmpty();
         });
         
         return $result;
+=======
+        return Cache::remember($cacheKey, self::CACHE_TTL, function () use ($cap) {
+            return static::byCap($cap)->isNotEmpty();
+        });
+>>>>>>> aurmich/dev
     }
     
     /**
      * Ottiene la gerarchia completa per un comune (regione, provincia, comune, cap)
      * 
      * @param string $comuneNome Nome esatto del comune
+<<<<<<< HEAD
      * @return array{
      *     regione: array{codice: string, nome: string}|null,
      *     provincia: array{codice: string, nome: string}|null,
@@ -380,11 +461,15 @@ class ComuneJson extends GeoJsonModel
      *     },
      *     cap: array<int, string>
      * }|null Gerarchia completa o null se il comune non esiste
+=======
+     * @return array|null Gerarchia completa o null se il comune non esiste
+>>>>>>> aurmich/dev
      */
     public static function getGerarchia(string $comuneNome): ?array
     {
         $cacheKey = "geo_gerarchia_" . md5($comuneNome);
         
+<<<<<<< HEAD
         /** @var array{
          *     regione: array{codice: string, nome: string}|null,
          *     provincia: array{codice: string, nome: string}|null,
@@ -407,6 +492,10 @@ class ComuneJson extends GeoJsonModel
              *     popolazione: int
              * }|null $comune */
             $comune = static::searchByName($comuneNome, 1)->first();
+=======
+        return Cache::remember($cacheKey, self::CACHE_TTL, function () use ($comuneNome) {
+            $comune = static::all()->firstWhere('nome', $comuneNome);
+>>>>>>> aurmich/dev
             
             if (!$comune) {
                 return null;
@@ -424,8 +513,11 @@ class ComuneJson extends GeoJsonModel
                 'cap' => $comune['cap'] ?? [],
             ];
         });
+<<<<<<< HEAD
         
         return $result;
+=======
+>>>>>>> aurmich/dev
     }
     
     /**

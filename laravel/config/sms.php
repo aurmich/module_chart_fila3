@@ -12,7 +12,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'default' => env('SMS_DRIVER', 'agiletelecom'),
+=======
+    'default' => env('SMS_DRIVER', 'netfun'),
+>>>>>>> aurmich/dev
 
     /*
     |--------------------------------------------------------------------------
@@ -64,12 +68,15 @@ return [
                 'timeout' => env('NETFUN_CIRCUIT_BREAKER_TIMEOUT', 60),
             ],
         ],
+<<<<<<< HEAD
         'agiletelecom' => [
             'username' => env('AGILETELECOM_USERNAME'),
             'password' => env('AGILETELECOM_PASSWORD'),
             'sender' => env('AGILETELECOM_SENDER', 'MyApp'),
             'endpoint' => env('AGILETELECOM_API_URL','https://sms.agiletelecom.com/ApiHttp/send.aspx'),
         ],
+=======
+>>>>>>> aurmich/dev
     ],
 
 

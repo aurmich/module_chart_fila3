@@ -1,3 +1,29 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+---
+title: Installazione Automatizzata
+description: Installazione Automatizzata
+extends: _layouts.documentation
+section: content
+---
+
+# Installazione {#installazione}
+
+Un'applicazione Laravel fresca è il modo ideale per iniziare con questo pacchetto. 
+
+Per installare il bacchetto basta mettere il seguente comando nella linea di comando:
+
+```console
+composer require laraxot/module_chart
+
+php artisan module_chart:install
+```
+```
+## Collegamenti tra versioni di installazione.md
+* [installazione.md](docs/installazione.md)
+=======
+>>>>>>> aurmich/dev
 # Guida all'Installazione di il progetto
 
 ## Prerequisiti
@@ -82,7 +108,10 @@ php artisan serve
 Quando si aggiorna un modulo:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> aurmich/dev
 # 1. Aggiornare il modulo
 git subtree pull --prefix laravel/Modules/[NomeModulo] git@github.com:laraxot/module_[nome]_fila3.git dev
 
@@ -171,6 +200,10 @@ composer dump-autoload
 ## Collegamenti tra versioni di installazione.md
 * [setup.md](../bashscripts/docs/wsl/setup.md)
 * [installazione.md](installazione.md)
+<<<<<<< HEAD
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> aurmich/dev
 * [installazione.md](laravel/Modules/Chart/docs/installazione.md)
 * [installazione.md](laravel/Modules/Cms/docs/installazione.md)
 

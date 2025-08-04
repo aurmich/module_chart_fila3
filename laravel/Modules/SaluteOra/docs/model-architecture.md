@@ -165,6 +165,7 @@ Quando si migra un modello da `Model` a `BaseModel`, è importante:
 3. Implementare correttamente gli eventi e i mutatori
 4. Adattare i casting specifici per compatibilità con `BaseModel`
 
+<<<<<<< HEAD
 ## Nota sui campi multipli e cast array (aggiornamento 2024)
 
 Quando si utilizza un campo Select multiplo in Filament (es: Select::make('specify_diseases')->multiple()), il campo corrispondente nel modello deve essere SEMPRE cast a 'array' nella funzione casts().
@@ -248,6 +249,8 @@ public function casts(): array {
 - Pattern Laraxot per Select multiplo enum
 - Vedi anche docs/enum-handling-in-extended-models.md
 
+=======
+>>>>>>> aurmich/dev
 ## Conclusione
 
 Seguire l'architettura standardizzata dei modelli in SaluteOra è essenziale per mantenere la coerenza, la manutenibilità e la scalabilità dell'applicazione. Tutti i modelli devono estendere `BaseModel` e seguire le convenzioni documentate in questo documento.
@@ -256,4 +259,8 @@ Seguire l'architettura standardizzata dei modelli in SaluteOra è essenziale per
 
 - [Documentazione Laravel Eloquent](https://laravel.com/docs/10.x/eloquent)
 - [Spatie Media Library](https://spatie.be/docs/laravel-medialibrary)
+<<<<<<< HEAD
 - [Single Table Inheritance](model_inheritance.md)
+=======
+- [Single Table Inheritance](model_inheritance.md)
+>>>>>>> aurmich/dev

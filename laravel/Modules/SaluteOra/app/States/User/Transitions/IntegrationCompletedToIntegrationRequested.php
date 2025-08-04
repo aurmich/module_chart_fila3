@@ -4,10 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\States\User\Transitions;
 
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
 use Modules\SaluteOra\Models\User;
 
+=======
+>>>>>>> aurmich/dev
 /**
  * Transizione da IntegrationCompleted a IntegrationRequested.
  * 
@@ -17,6 +20,7 @@ use Modules\SaluteOra\Models\User;
 class IntegrationCompletedToIntegrationRequested extends BaseTransition
 {
     //---
+<<<<<<< HEAD
     public function getNotificationData(): array{
         $user=$this->record;
         Assert::isInstanceOf($user, User::class);
@@ -37,4 +41,6 @@ class IntegrationCompletedToIntegrationRequested extends BaseTransition
         ];
         return $data;
     }
+=======
+>>>>>>> aurmich/dev
 } 
