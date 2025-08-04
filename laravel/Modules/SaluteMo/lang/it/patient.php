@@ -3,6 +3,7 @@
 return array (
   'navigation' => 
   array (
+<<<<<<< HEAD
     'label' => 'Pazienti',
     'group' => 'Gestione Utenti',
     'icon' => 'heroicon-o-users',
@@ -615,4 +616,10 @@ return array (
     ),
   ),
   'search_placeholder' => 'Cerca per nome, email, telefono o codice fiscale...',
+=======
+    'label' => 'patient.navigation',
+    'group' => 'patient.navigation',
+    'icon' => 'patient.navigation',
+  ),
+>>>>>>> 1b052af9 (♻️ (HealthCardUpload.php): remove HealthCardUpload component as it is no longer needed)
 );
