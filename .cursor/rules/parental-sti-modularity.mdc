@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # Regola: Modularità con Parental STI (Single Table Inheritance)
 
 ## Principio Fondamentale
@@ -91,3 +92,5 @@ Dicembre 2024 - Correzione comando ChangeTypeCommand per compliance modularità
 
 ---
 **Questa regola DEVE essere copiata identica in .windsurf/rules/**
+=======
+>>>>>>> e79b3c05 (fix tenant)

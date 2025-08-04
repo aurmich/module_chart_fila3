@@ -1,6 +1,7 @@
 # Regola Critica: getTableColumns() Obbligatorio in XotBaseListRecords
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Problema Risolto (Pattern Ricorrente)
 `BadMethodCallException: Method getTableColumns does not exist` in tutte le pagine che estendono `XotBaseListRecords`.
 
@@ -13,15 +14,29 @@
 `BadMethodCallException: Method getTableColumns does not exist` in tutte le pagine che estendono `XotBaseListRecords`.
 
 >>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+=======
+## Problema Risolto (Pattern Ricorrente)
+`BadMethodCallException: Method getTableColumns does not exist` in tutte le pagine che estendono `XotBaseListRecords`.
+
+**Casi risolti:**
+1. ✅ ListAppointments
+2. ✅ ListAppointmentWorkflows
+3. ⚠️ **Prossimi probabili**: ListPatients, ListDoctors, ListStudios, ListTreatments
+
+>>>>>>> e79b3c05 (fix tenant)
 ## Regola Obbligatoria
 - Tutte le pagine che estendono `XotBaseListRecords` DEVONO implementare il metodo `getTableColumns()`.
 - Il metodo deve restituire un array associativo con chiavi stringa (nome campo).
 - Le colonne vanno ricavate dal modello e dalla migrazione, senza inventare campi.
 - Le etichette sono gestite solo tramite i file di traduzione del modulo (mai ->label()).
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Badge colorati semantici per stati e tipi.
 =======
 >>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+=======
+- Badge colorati semantici per stati e tipi.
+>>>>>>> e79b3c05 (fix tenant)
 
 ## Motivazione
 - Coerenza architetturale con `TableLayoutEnum` e `HasXotTable`

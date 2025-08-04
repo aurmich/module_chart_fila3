@@ -31,9 +31,13 @@ Questa directory contiene tutti i workflow automatizzati per il progetto Laraxot
 | [📝 naming-convention-audit.md](naming-convention-audit.md) | Audit convenzioni naming | Settimanale | 2-3 min |
 | [📚 documentation-sync.md](documentation-sync.md) | Sync documentazione | Dopo modifiche docs | 1-2 min |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | [⚡ console-command-creation.md](console-command-creation.md) | Creazione Console Commands standard | Nuovi comandi | 2-3 min |
 =======
 >>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+=======
+| [⚡ console-command-creation.md](console-command-creation.md) | Creazione Console Commands standard | Nuovi comandi | 2-3 min |
+>>>>>>> e79b3c05 (fix tenant)
 | [📋 laraxot.md](laraxot.md) | Overview completo sistema | Reference, onboarding | - |
 
 ## 🎯 Filosofia dei Workflow

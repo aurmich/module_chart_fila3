@@ -10,7 +10,10 @@ Garantire che i moduli User rimangano generici e riutilizzabili, senza dipendenz
 
 ### 1. Verifica Dipendenze Modulo User
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> e79b3c05 (fix tenant)
 # Controlla import da moduli specifici
 grep -r "use Modules\\" Modules/User/ --include="*.php" | grep -v "use Modules\\User\\" | grep -v "use Modules\\Xot\\"
 
@@ -19,14 +22,20 @@ grep -r "use Modules\\" Modules/User/ --include="*.php" | grep -v "use Modules\\
 
 ### 2. Controllo BaseUser Configuration
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> e79b3c05 (fix tenant)
 # Verifica che BaseUser abbia $childTypes vuoto
 grep -A 5 "protected \$childTypes" Modules/User/app/Models/BaseUser.php
 ```
 
 ### 3. Controllo Comandi Console
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> e79b3c05 (fix tenant)
 # Cerca enum specifici nei comandi User
 grep -r "Enum::" Modules/User/app/Console/Commands/ --include="*.php"
 
