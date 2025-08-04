@@ -174,11 +174,17 @@ class DoctorStudio extends StudioUser
     {
         $schedule = $this->schedule;
 <<<<<<< HEAD
+<<<<<<< HEAD
         if(!$schedule){
             return OpeningHours::create([]);
         }
 =======
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+        if(!$schedule){
+            return OpeningHours::create([]);
+        }
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
         $days=[];
         foreach($schedule as $day=>$hours){
             $days[$day]=[];

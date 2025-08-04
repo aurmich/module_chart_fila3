@@ -24,8 +24,12 @@ class EnsureUserHasType
      */
     public function handle(Request $request, Closure $next, string $type): Response
     {
+<<<<<<< HEAD
         
         if ($request->user()?->type->value !== $type) {
+=======
+        if ($request->user()->type->value !== $type) {
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
             // Redirect...
             return redirect()->route('home');
         }

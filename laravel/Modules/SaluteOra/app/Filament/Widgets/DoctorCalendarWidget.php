@@ -178,7 +178,7 @@ class DoctorCalendarWidget extends FullCalendarWidget
     protected function headerActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            //Actions\CreateAction::make(),
             /*
             \Filament\Actions\Action::make('studio')
             ->label(fn () => 'Studio: ' . optional($this->studio)->name)
@@ -201,6 +201,23 @@ class DoctorCalendarWidget extends FullCalendarWidget
         return [
             Actions\EditAction::make(),
             Actions\DeleteAction::make(),
+        ];
+    }
+
+    public function config(): array
+    {
+        return [
+            'firstDay' => 1,
+            'headerToolbar' => [
+                'left' => 'dayGridWeek,dayGridMonth',
+                'center' => 'title',
+                //'right' => 'today prev,next',
+                'right' => 'prev,next',
+            ],
+            'titleFormat' => [
+                'year' => 'numeric',
+                'month' => 'long' // Questo dovrebbe capitalizzare automaticamente
+            ],
         ];
     }
 

@@ -58,6 +58,7 @@
             },
             // ✅ Metodi per navigazione mese - chiamata diretta al widget parent
             previousMonth() {
+<<<<<<< HEAD
                 dddx('a');
 <<<<<<< HEAD
 =======
@@ -67,6 +68,8 @@
 >>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
 =======
 >>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
+=======
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
                 $wire.call('previousMonth');
             },
             nextMonth() {

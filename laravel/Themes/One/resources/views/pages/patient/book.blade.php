@@ -2,6 +2,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
 <?php
 
 declare(strict_types=1);
@@ -15,12 +18,15 @@ name('patient.book');
 
 
 ?>
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 =======
 >>>>>>> 7bc70bf2 (🚀 (laravel/Themes/One): remove deprecated files and old theme structure to streamline the codebase and improve maintainability)
+=======
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
 {{--
     Questa pagina include direttamente il widget Filament modularizzato per la prenotazione paziente.
     Policy: nessun form custom, solo widget Filament.
@@ -109,12 +115,14 @@ new class extends Component
 {{-- Template standard per l'integrazione dei widget --}}
 <x-layouts.app>
 <div>
+    @volt('patient.book')
     <div class="w-full min-h-[600px] lg:min-h-[725px] bg-[#E6EBF7] flex flex-col items-center">
         <h1 class="m-5">Prenota la tua visita</h1>
         <div class="w-full lg:w-2/4 p-5">
             @livewire(\Modules\SaluteOra\Filament\Widgets\Patient\FindDoctorAndAppointmentWidget::class)
         </div>
     </div>
+    @endvolt
 </div>
 </x-layouts.app>
 

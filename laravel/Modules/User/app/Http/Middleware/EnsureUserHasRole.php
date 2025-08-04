@@ -24,7 +24,11 @@ class EnsureUserHasRole
      */
     public function handle(Request $request, Closure $next, string $role): Response
     {
+<<<<<<< HEAD
         if (! $request->user()?->hasRole($role)) {
+=======
+        if (! $request->user()->hasRole($role)) {
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
             // Redirect...
             return redirect()->route('home');
         }

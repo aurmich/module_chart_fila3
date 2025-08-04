@@ -407,7 +407,7 @@ class Address extends BaseModel
         $res= Comune::where('codice', $this->locality)
         ->distinct()
         ->first()
-        ->toArray()
+        ?->toArray()
         ;
         return $res;
     }

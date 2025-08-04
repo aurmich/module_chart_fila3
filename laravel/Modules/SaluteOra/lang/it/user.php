@@ -4,14 +4,19 @@
 <<<<<<< HEAD
 return array (
 <<<<<<< HEAD
+<<<<<<< HEAD
   'navigation' => 
 =======
   'fields' =>
+=======
+  'fields' => 
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
   array (
-    'id' =>
+    'id' => 
     array (
       'label' => 'ID',
     ),
+<<<<<<< HEAD
     'name' =>
 =======
 return array (
@@ -27,6 +32,9 @@ return array (
 =======
     'name' =>
 >>>>>>> 2bcfd382 (fix Address)
+=======
+    'name' => 
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
     array (
       'label' => 'Nome',
       'placeholder' => 'Inserisci il nome',
@@ -36,6 +44,7 @@ return array (
     ),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'email' =>
 =======
     'email' => 
@@ -43,6 +52,9 @@ return array (
 =======
     'email' =>
 >>>>>>> 2bcfd382 (fix Address)
+=======
+    'email' => 
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
     array (
       'label' => 'Email',
       'placeholder' => 'Inserisci l\'email',
@@ -50,6 +62,7 @@ return array (
       'description' => 'email',
       'helper_text' => 'email',
     ),
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     'type' =>
@@ -68,6 +81,12 @@ return array (
       'label' => 'Tipo',
       'options' =>
 >>>>>>> 2bcfd382 (fix Address)
+=======
+    'type' => 
+    array (
+      'label' => 'Tipo',
+      'options' => 
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
       array (
         'patient' => 'Paziente',
         'doctor' => 'Dottore',
@@ -77,6 +96,7 @@ return array (
       'helper_text' => 'type',
       'placeholder' => 'type',
     ),
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     'state' =>
@@ -95,6 +115,12 @@ return array (
       'label' => 'Stato',
       'options' =>
 >>>>>>> 2bcfd382 (fix Address)
+=======
+    'state' => 
+    array (
+      'label' => 'Stato',
+      'options' => 
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
       array (
         'pending' => 'In attesa',
         'approved' => 'Approvato',
@@ -108,34 +134,42 @@ return array (
     ),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'phone' =>
+=======
+    'phone' => 
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
     array (
       'label' => 'Telefono',
+      'description' => 'phone',
+      'helper_text' => 'phone',
+      'placeholder' => 'phone',
     ),
-    'address' =>
+    'address' => 
     array (
       'label' => 'Indirizzo',
     ),
-    'city' =>
+    'city' => 
     array (
       'label' => 'Città',
     ),
-    'registration_number' =>
+    'registration_number' => 
     array (
       'label' => 'Numero iscrizione',
     ),
-    'status' =>
+    'status' => 
     array (
       'label' => 'Status',
     ),
-    'certifications' =>
+    'certifications' => 
     array (
       'label' => 'Certificazioni',
     ),
-    'moderation_data' =>
+    'moderation_data' => 
     array (
       'label' => 'Dati moderazione',
     ),
+<<<<<<< HEAD
     'password' =>
 =======
     'phone' => 
@@ -175,6 +209,9 @@ return array (
 =======
     'password' =>
 >>>>>>> 2bcfd382 (fix Address)
+=======
+    'password' => 
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
     array (
       'label' => 'Password',
       'placeholder' => 'Inserisci la password',
@@ -182,18 +219,23 @@ return array (
     ),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'password_confirmation' =>
+=======
+    'password_confirmation' => 
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
     array (
       'label' => 'Conferma password',
     ),
-    'created_at' =>
+    'created_at' => 
     array (
       'label' => 'Data creazione',
     ),
-    'updated_at' =>
+    'updated_at' => 
     array (
       'label' => 'Data aggiornamento',
     ),
+<<<<<<< HEAD
     'roles' =>
 =======
     'password_confirmation' => 
@@ -217,6 +259,9 @@ return array (
 =======
     'roles' =>
 >>>>>>> 2bcfd382 (fix Address)
+=======
+    'roles' => 
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
     array (
       'label' => 'Ruoli',
       'placeholder' => 'Seleziona i ruoli',
@@ -224,91 +269,100 @@ return array (
     ),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'applyFilters' =>
+=======
+    'applyFilters' => 
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
     array (
       'label' => 'applyFilters',
     ),
-    'toggleColumns' =>
+    'toggleColumns' => 
     array (
       'label' => 'toggleColumns',
     ),
-    'reorderRecords' =>
+    'reorderRecords' => 
     array (
       'label' => 'reorderRecords',
     ),
-    'resetFilters' =>
+    'resetFilters' => 
     array (
       'label' => 'resetFilters',
     ),
-    'openFilters' =>
+    'openFilters' => 
     array (
       'label' => 'openFilters',
     ),
-    'last_name' =>
+    'last_name' => 
     array (
       'label' => 'Cognome',
       'placeholder' => 'Inserisci il cognome',
       'help' => 'Inserisci il cognome completo',
+      'description' => 'last_name',
+      'helper_text' => 'last_name',
     ),
-    'first_name' =>
+    'first_name' => 
     array (
       'label' => 'Nome',
       'placeholder' => 'Inserisci il nome',
       'help' => 'Inserisci il nome completo',
+      'description' => 'first_name',
+      'helper_text' => 'first_name',
     ),
-    'edit_name' =>
+    'edit_name' => 
     array (
       'label' => 'edit_name',
     ),
-    'edit-name' =>
+    'edit-name' => 
     array (
       'label' => 'edit-name',
     ),
-    'name_edit' =>
+    'name_edit' => 
     array (
       'label' => 'name_edit',
     ),
   ),
-  'actions' =>
+  'actions' => 
   array (
-    'approve' =>
+    'approve' => 
     array (
       'label' => 'approve',
     ),
-    'reject' =>
+    'reject' => 
     array (
       'label' => 'reject',
     ),
     'request_integration' => 'Richiedi integrazione',
-    'reinstate' =>
+    'reinstate' => 
     array (
       'label' => 'reinstate',
     ),
-    'suspend' =>
+    'suspend' => 
     array (
       'label' => 'suspend',
     ),
-    'view' =>
+    'view' => 
     array (
       'label' => 'view',
     ),
-    'edit' =>
+    'edit' => 
     array (
       'label' => 'Modifica',
       'icon' => 'heroicon-o-pencil',
       'color' => 'primary',
     ),
-    'delete' =>
+    'delete' => 
     array (
       'label' => 'Elimina',
       'icon' => 'heroicon-o-trash',
       'color' => 'danger',
     ),
-    'create' =>
+    'create' => 
     array (
       'label' => 'create',
     ),
   ),
+<<<<<<< HEAD
   'navigation' =>
 >>>>>>> aurmich/dev
   array (
@@ -804,6 +858,9 @@ return [
     ),
   ),
   'navigation' =>
+=======
+  'navigation' => 
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
   array (
     'label' => 'Utenti Generici',
     'group' => 'Gestione Utenti',
@@ -811,7 +868,7 @@ return [
     'color' => 'primary',
     'sort' => 44,
   ),
-  'model' =>
+  'model' => 
   array (
     'label' => 'Utente',
   ),

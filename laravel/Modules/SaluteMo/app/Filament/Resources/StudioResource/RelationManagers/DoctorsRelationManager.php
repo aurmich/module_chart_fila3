@@ -10,12 +10,16 @@ use Filament\Forms\Form;
 use Filament\Tables\Table;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
 use Filament\Tables\Actions\Action;
 use Modules\SaluteOra\Models\Doctor;
 use Filament\Tables\Columns\IconColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\SaluteMo\Filament\Resources\DoctorResource;
 use Modules\UI\Filament\Forms\Components\OpeningHoursField;
+<<<<<<< HEAD
 =======
 use Modules\SaluteMo\Models\Doctor;
 =======
@@ -24,6 +28,8 @@ use Modules\SaluteOra\Models\Doctor;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\SaluteMo\Filament\Resources\DoctorResource;
 >>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
+=======
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
 use Modules\SaluteMo\Filament\Resources\DoctorResource\Pages\ListDoctors;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
@@ -56,6 +62,9 @@ class DoctorsRelationManager extends XotBaseRelationManager
     {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
         //return app(ListDoctors::class)->getTableColumns();
         $columns = parent::getTableColumns();
         /*
@@ -82,9 +91,12 @@ class DoctorsRelationManager extends XotBaseRelationManager
         ->action($action);
         */
         return $columns;
+<<<<<<< HEAD
 =======
         return app(ListDoctors::class)->getTableColumns();
 >>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
+=======
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
     }
 
     /**
@@ -108,9 +120,13 @@ class DoctorsRelationManager extends XotBaseRelationManager
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             /*
 =======
 >>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
+=======
+            /*
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
             'status' => Tables\Filters\SelectFilter::make('status')
                 ->options([
                     'pending' => 'Pending',
@@ -118,9 +134,13 @@ class DoctorsRelationManager extends XotBaseRelationManager
                     'suspended' => 'Suspended',
                 ]),
 <<<<<<< HEAD
+<<<<<<< HEAD
                 */
 =======
 >>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
+=======
+                */
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
             /*
             'specialization' => Tables\Filters\SelectFilter::make('specialization')
                 ->options(function () {

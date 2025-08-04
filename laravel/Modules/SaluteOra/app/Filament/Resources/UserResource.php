@@ -63,6 +63,7 @@ class UserResource extends BaseUserResource
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             Forms\Components\TextInput::make('first_name')
                 ->required()
                 ->maxLength(255)
@@ -106,13 +107,23 @@ class UserResource extends BaseUserResource
 
 =======
             Forms\Components\TextInput::make('name')
+=======
+            Forms\Components\TextInput::make('first_name')
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
                 ->required()
-                ->maxLength(255),
+                ->maxLength(255)
+                ,
+            Forms\Components\TextInput::make('last_name')
+                ->required()
+                ->maxLength(255)
+                ,
             Forms\Components\TextInput::make('email')
                 ->email()
                 ->required()
                 ->maxLength(255)
                 ->unique(ignoreRecord: true),
+
+            Forms\Components\TextInput::make('phone'),
             Forms\Components\Select::make('type')
                 ->options(UserTypeEnum::class)
                 ->enum(UserTypeEnum::class)

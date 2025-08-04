@@ -554,6 +554,10 @@ return array (
       'placeholder' => 'appointment_time',
       'label' => 'appointment_time',
     ),
+    'change-password' => 
+    array (
+      'label' => 'change-password',
+    ),
   ),
   'actions' => 
   array (
@@ -725,6 +729,13 @@ return array (
     array (
       'label' => 'view',
     ),
+<<<<<<< HEAD
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
+=======
+    'change-password' => 
+    array (
+      'label' => 'change-password',
+    ),
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
   ),
 );

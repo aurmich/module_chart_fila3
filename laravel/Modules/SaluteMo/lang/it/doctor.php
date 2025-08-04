@@ -421,7 +421,18 @@ return array (
       'placeholder' => 'first_name',
       'label' => 'first_name',
     ),
+<<<<<<< HEAD
 >>>>>>> 23f43388 (feat: add openingHoursField to studiorelationmanager of doctorresource)
+=======
+    'change-schedule' => 
+    array (
+      'label' => 'change-schedule',
+    ),
+    'schedule' => 
+    array (
+      'label' => 'schedule',
+    ),
+>>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
   ),
   'actions' => 
   array (
