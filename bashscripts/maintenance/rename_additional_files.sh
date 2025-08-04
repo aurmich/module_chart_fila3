@@ -5,6 +5,9 @@
 # Array dei file da rinominare
 files=(
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 281fd24d (add scripts)
   "/var/www/html/YOUR_PROJECT/laravel/Modules/Activity/CHANGELOG.md"
   "/var/www/html/base_project/laravel/Modules/Chart/.github/CONTRIBUTING.md"
   "/var/www/html/base_project/laravel/Modules/Notify/app/Datas/NetfunSMSMessage.php"
@@ -17,6 +20,7 @@ files=(
   "/var/www/html/base_project/laravel/Themes/One/docs/JSON_CONTENT.md"
   "/var/www/html/base_project/laravel/Themes/One/docs/LINKS.md"
   "/var/www/html/base_project/laravel/Themes/One/docs/THEME.md"
+<<<<<<< HEAD
 =======
   "/var/www/html/base_saluteora/laravel/Modules/Activity/CHANGELOG.md"
   "/var/www/html/base_saluteora/laravel/Modules/Chart/.github/CONTRIBUTING.md"
@@ -31,6 +35,8 @@ files=(
   "/var/www/html/base_saluteora/laravel/Themes/One/docs/LINKS.md"
   "/var/www/html/base_saluteora/laravel/Themes/One/docs/THEME.md"
 >>>>>>> 35e9b7ea (feat(scripts): add script to rename files to lowercase while preserving README.md case for consistency and organization)
+=======
+>>>>>>> 281fd24d (add scripts)
 )
 
 # Rinomina i file in minuscolo

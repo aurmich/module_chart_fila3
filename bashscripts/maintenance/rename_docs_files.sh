@@ -3,10 +3,14 @@
 # This script renames all files in the docs directory to lowercase, except for README.md
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 find /var/www/html/YOUR_PROJECT/docs -type f -name "*[A-Z]*" | grep -v "README\.md" | while read file; do
 =======
 find /var/www/html/base_saluteora/docs -type f -name "*[A-Z]*" | grep -v "README\.md" | while read file; do
 >>>>>>> 9df8f556 (fix .md)
+=======
+find /var/www/html/YOUR_PROJECT/docs -type f -name "*[A-Z]*" | grep -v "README\.md" | while read file; do
+>>>>>>> 281fd24d (add scripts)
   dir=$(dirname "$file")
   filename=$(basename "$file")
   lowercase_filename=$(echo "$filename" | tr '[:upper:]' '[:lower:]')

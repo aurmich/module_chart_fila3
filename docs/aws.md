@@ -13,6 +13,7 @@ lanciamo piu' volte php artinsa migrate finche' non esce
 INFO  Nothing to migrate.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 per vedere 
 http://ec2-54-194-72-103.eu-west-1.compute.amazonaws.com/it
@@ -52,3 +53,9 @@ MAIL_FROM_ADDRESS="hello@saluteora.com"
 MAIL_FROM_NAME="${APP_NAME}"
 =======
 >>>>>>> 8e4d163b (phpstan)
+=======
+
+per vedere 
+http://ec2-54-194-72-103.eu-west-1.compute.amazonaws.com/it
+
+>>>>>>> 281fd24d (add scripts)
