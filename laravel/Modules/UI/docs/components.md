@@ -9,6 +9,9 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 =======
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 ### InlineDatePicker
@@ -60,6 +63,7 @@ InlineDatePicker::make('date')
 [**📖 Documentazione Completa**](./components/inline-date-picker.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
 =======
@@ -68,6 +72,8 @@ InlineDatePicker::make('date')
 ## Componenti Form Avanzati
 
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 ### StudioCardSelector
 
 Componente Filament Form per la selezione di studi medici attraverso interfaccia card visuale.

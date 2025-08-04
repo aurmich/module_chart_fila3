@@ -18,6 +18,7 @@ class AddressField extends Forms\Components\Section
     //protected string $view = 'filament-forms::components.group';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected bool $disableLiveUpdates = false;
 
     protected function setUp(): void
@@ -35,18 +36,35 @@ class AddressField extends Forms\Components\Section
         $this->disableLiveUpdates = $disable;
         return $this;
 =======
+=======
+    protected bool $disableLiveUpdates = false;
+
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
     protected function setUp(): void
     {
         parent::setUp();
 
-        $this->schema(AddressResource::getFormSchema());
         $this->schema($this->getAddressFormSchema());
+<<<<<<< HEAD
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+        $this->columns(2);
+    }
+
+    /**
+     * Disabilita gli aggiornamenti live per evitare loop infiniti nei wizard di creazione
+     */
+    public function disableLiveUpdates(bool $disable = true): static
+    {
+        $this->disableLiveUpdates = $disable;
+        return $this;
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
     }
 
     protected function getAddressFormSchema(): array
     {
         $baseSchema = AddressResource::getFormSchema();
+<<<<<<< HEAD
 <<<<<<< HEAD
         
         // Rimuovi campi non necessari per relazioni semplici
@@ -99,12 +117,56 @@ class AddressField extends Forms\Components\Section
 
     
 =======
+=======
+        
+        // Rimuovi campi non necessari per relazioni semplici
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
         unset($baseSchema['name']);
         unset($baseSchema['is_primary']);
         
+        // Se i live updates sono disabilitati, rimuovi la reattività
+        if ($this->disableLiveUpdates) {
+            $baseSchema = $this->removeReactivityFromSchema($baseSchema);
+        }
+        
         return $baseSchema;
     }
+<<<<<<< HEAD
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+
+    /**
+     * Rimuove tutti i pattern reattivi dai campi per prevenire loop infiniti
+     *
+     * @param array<string, mixed> $schema
+     * @return array<string, mixed>
+     */
+    protected function removeReactivityFromSchema(array $schema): array
+    {
+        foreach ($schema as $key => $field) {
+            if (method_exists($field, 'live')) {
+                // Rimuovi reattività live
+                $field->live(false);
+            }
+            
+            if (method_exists($field, 'afterStateUpdated')) {
+                // Rimuovi callback afterStateUpdated
+                $field->afterStateUpdated(null);
+            }
+            
+            if (method_exists($field, 'disabled')) {
+                // Rimuovi condizioni disabled dinamiche
+                $field->disabled(false);
+            }
+            
+            $schema[$key] = $field;
+        }
+        
+        return $schema;
+    }
+
+    
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
     /*
     public function saveRelationships(): void
     {

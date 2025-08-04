@@ -123,6 +123,7 @@ Il modulo UI fornisce un set completo di componenti di interfaccia utente riutil
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ InlineDatePicker con date selettive
 =======
 >>>>>>> aurmich/dev
@@ -131,6 +132,9 @@ Il modulo UI fornisce un set completo di componenti di interfaccia utente riutil
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+- ✅ InlineDatePicker con date selettive
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 - ✅ Stili CSS moderni
 
 ### 🚀 Installazione
@@ -162,6 +166,7 @@ The UI module provides a complete set of reusable user interface components for 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ InlineDatePicker with selective dates
 =======
 >>>>>>> aurmich/dev
@@ -170,6 +175,9 @@ The UI module provides a complete set of reusable user interface components for 
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+- ✅ InlineDatePicker with selective dates
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 - ✅ Modern CSS styles
 
 ### 🚀 Installation
@@ -201,6 +209,7 @@ El módulo UI proporciona un conjunto completo de componentes de interfaz de usu
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ InlineDatePicker con fechas selectivas
 =======
 >>>>>>> aurmich/dev
@@ -209,6 +218,9 @@ El módulo UI proporciona un conjunto completo de componentes de interfaz de usu
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+- ✅ InlineDatePicker con fechas selectivas
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 - ✅ Estilos CSS modernos
 
 ### 🚀 Instalación

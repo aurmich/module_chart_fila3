@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\View\Composers;
 
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Log;
 use Illuminate\View\View;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
@@ -13,6 +11,7 @@ use Webmozart\Assert\Assert;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Datas\MetatagData;
 use Nwidart\Modules\Facades\Module;
+use Illuminate\Support\Facades\Auth;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Nwidart\Modules\Laravel\Module as LaravelModule;
 
@@ -64,20 +63,11 @@ class XotComposer
      */
     public function compose(View $view): void
     {
-        // ✅ Protezione anti-loop infinito
-        static $composing = false;
-        
-        if ($composing) {
-            return; // Evita chiamate ricorsive
-        }
-        
-        $composing = true;
-        
-        try {
-            $lang = app()->getLocale();
-            $view->with('lang', $lang);
-            $view->with('_theme', $this);
+        $lang = app()->getLocale();
+        $view->with('lang', $lang);
+        $view->with('_theme', $this);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -99,10 +89,13 @@ class XotComposer
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
         if (Auth::check()) {
             $profile = XotData::make()->getProfileModel();
             $view->with('_profile', $profile);
             $view->with('_user', auth()->user());
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
@@ -154,6 +147,8 @@ class XotComposer
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
+=======
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
         }
     }
 

@@ -9,6 +9,7 @@ namespace Modules\SaluteOra\Models;
 <<<<<<< HEAD
 use Parental\HasParent;
 use Modules\Geo\Models\Address;
+<<<<<<< HEAD
 use Spatie\MediaLibrary\HasMedia;
 use Modules\SaluteOra\Enums\UserTypeEnum;
 use Modules\SaluteOra\Models\Appointment;
@@ -205,12 +206,15 @@ use Modules\SaluteOra\Models\DoctorStudio;
 =======
 use Parental\HasParent;
 >>>>>>> de1d4084 (✨ (DoctorResource.php, PatientResource.php, StudioResource.php): introduce new Studio resource and update Doctor resource to include studio relationship)
+=======
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 use Modules\SaluteOra\Enums\UserTypeEnum;
 use Modules\SaluteOra\Enums\UserStateEnum;
 use Modules\SaluteOra\Models\DoctorStudio;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasOneThrough;
 
 /**
  * Doctor model for the SaluteOra module.
@@ -457,14 +461,24 @@ class Doctor extends User
 
     /** @var list<string>     */
     protected $with = [
-        'studio',
-        'studio.address',
+        //'studio',
+        //'studio.address',
     ];
 
     /** @var array<string, mixed>  */
-    protected $attributes = [
-        //'state' => Pending::class,
-        //'state' => 'pending',
+    protected $attributes_old = [
+        'id'=>null,
+        'first_name'=>null,
+        'last_name'=>null,
+        'email'=>null,
+        'phone'=>null,
+        'address'=>null,
+        'city'=>null,
+        'registration_number'=>null,
+        //'specialization',
+        //'certifications'=>null,
+        //'availability',
+        'status'=>null,
         'is_otp'=>false,
         'is_active'=>true,
         
@@ -531,12 +545,18 @@ class Doctor extends User
         return $this->morphOne(Studio::class, 'model');
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 
     public function address(): MorphOne{
         return $this->morphOne(Address::class, 'model');
     }
+<<<<<<< HEAD
 =======
 >>>>>>> de1d4084 (✨ (DoctorResource.php, PatientResource.php, StudioResource.php): introduce new Studio resource and update Doctor resource to include studio relationship)
+=======
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
     // Implementazione della relazione BelongsToMany con Studio completata
 
 /*

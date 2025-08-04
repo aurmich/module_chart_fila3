@@ -481,6 +481,11 @@ return array (
 =======
 >>>>>>> 77f21bed (✨ (AddressResource.php): refactor address form schema to conditionally show the name field based on the number of addresses, enhancing user experience)
     ),
+    'administrative_area_level_1' => 
+    array (
+      'description' => 'administrative_area_level_1',
+      'helper_text' => 'administrative_area_level_1',
+    ),
   ),
   'actions' => 
   array (

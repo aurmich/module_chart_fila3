@@ -273,6 +273,7 @@ return array (
       'description' => 'aaa',
       'helper_text' => 'aaa',
       'placeholder' => 'aaa',
+<<<<<<< HEAD
 =======
       'helper_text' => 'map',
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
@@ -281,6 +282,9 @@ return array (
       'helper_text' => '',
     ),
 >>>>>>> f2140a80 (- continuo style landing page;)
+=======
+    ),
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
   ),
   'columns' => 
   array (

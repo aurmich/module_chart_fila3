@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Components\Field;
 use Filament\Forms\Form;
 use Modules\UI\Filament\Forms\Components\InlineDatePicker;
@@ -211,14 +212,19 @@ function invokeMethod(object $object, string $methodName, array $parameters = []
 
     return $method->invokeArgs($object, $parameters);
 =======
+=======
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 namespace Modules\UI\Tests\Feature;
 
 use Filament\Forms\Components\Field;
 use Filament\Forms\Form;
 use Modules\UI\Filament\Forms\Components\InlineDatePicker;
 use Modules\UI\Tests\TestCase;
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Illuminate\Support\Facades\App;
+=======
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 
 class InlineDatePickerTest extends TestCase
 {
@@ -359,6 +365,7 @@ class InlineDatePickerTest extends TestCase
         $this->assertTrue($component->isDateEnabled('2025-06-15 14:30:00'));
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 =======
 
@@ -458,4 +465,6 @@ class InlineDatePickerTest extends TestCase
         return $method->invokeArgs($object, $parameters);
     }
 >>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
+=======
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 }

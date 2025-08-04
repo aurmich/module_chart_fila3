@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # InlineDatePicker Component Rules
 
 ## Principi Architetturali
@@ -234,3 +235,5 @@ public function it_integrates_with_wizard_correctly(): void
 *Ultimo aggiornamento: Gennaio 2025*
 *Versione: 1.0.0*
 *Principi: Fenomenologia, Zen, Fisica Quantistica, Governance Democratica*
+=======
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)

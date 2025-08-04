@@ -9,9 +9,12 @@
         init() {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             // Initialize with selected date if any - no more Livewire listeners needed
             console.log('InlineDatePicker initialized with frontend-only navigation');
 =======
+=======
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
             // Initialize with selected date if any
             if (this.selectedDate) {
                 this.updateDisplayedMonth(this.selectedDate);
@@ -23,16 +26,20 @@
                     this.calendar = @js($getCalendarData());
                 }
             });
+<<<<<<< HEAD
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 =======
             // Initialize with selected date if any - no more Livewire listeners needed
             console.log('InlineDatePicker initialized with frontend-only navigation');
 >>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
+=======
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
         },
         
         selectDate(date) {
             this.selectedDate = date;
             this.$wire.set('{{ $getStatePath() }}', date, false);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             
@@ -231,6 +238,22 @@
             const today = new Date();
             return date.toDateString() === today.toDateString();
 >>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
+=======
+        },
+        
+        updateDisplayedMonth(dateString) {
+            const date = new Date(dateString);
+            this.$wire.set('displayDate', date.toISOString().split('T')[0], false);
+            this.$wire.dispatch('inline-date-picker-updated', { id: '{{ $getId() }}' });
+        },
+        
+        navigateToPreviousMonth() {
+            this.$wire.previousMonth();
+        },
+        
+        navigateToNextMonth() {
+            this.$wire.nextMonth();
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
         },
         
         getDayClasses(day) {

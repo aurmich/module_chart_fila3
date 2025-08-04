@@ -34,6 +34,7 @@ class AddressField extends Forms\Components\Field
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             
             //if ($record && method_exists($record, 'getRelationValue')) {
                 $relationship = $this->getRelationship();
@@ -48,11 +49,18 @@ class AddressField extends Forms\Components\Field
 =======
                 if ($relationship && $record?->relationLoaded($relationship)) {
 >>>>>>> 345f8677 (phpstan)
+=======
+            
+            if ($record && method_exists($record, 'getRelationValue')) {
+                $relationship = $this->getRelationship();
+                if ($relationship && $record->relationLoaded($relationship)) {
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
                     $address = $record->getRelationValue($relationship);
                     if (null !== $address && is_object($address) && method_exists($address, 'toArray')) {
                         $data = $address->toArray();
                     }
                 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             //}
@@ -88,6 +96,9 @@ class AddressField extends Forms\Components\Field
 >>>>>>> 345f8677 (phpstan)
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+            }
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
         });
 
         $this->dehydrated(false);

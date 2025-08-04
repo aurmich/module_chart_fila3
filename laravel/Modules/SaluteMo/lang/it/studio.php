@@ -228,6 +228,7 @@ return array (
     array (
       'label' => 'reorderRecords',
     ),
+<<<<<<< HEAD
     'resetFilters' => 
     array (
       'label' => 'resetFilters',
@@ -292,6 +293,8 @@ return array (
 >>>>>>> 8d44f10d (feat: studio trans , radio collection)
 =======
 >>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
+=======
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
   ),
   'actions' => 
   array (

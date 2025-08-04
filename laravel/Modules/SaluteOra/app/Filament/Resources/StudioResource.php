@@ -7,6 +7,7 @@ namespace Modules\SaluteOra\Filament\Resources;
 use Filament\Forms;
 use Filament\Tables;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Get;
 use Filament\Forms\Set;
 use Filament\Infolists;
@@ -26,16 +27,27 @@ use Modules\Geo\Filament\Forms\Components\AddressField;
 use Modules\SaluteOra\Filament\Resources\StudioResource\Pages;
 use Modules\SaluteOra\Filament\Resources\StudioResource\RelationManagers;
 =======
+=======
+use Filament\Forms\Get;
+use Filament\Forms\Set;
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 use Filament\Infolists;
 use Filament\Forms\Form;
-use Filament\Forms\Get;
 use Filament\Tables\Table;
+use Modules\Geo\Models\Comune;
+use Modules\Geo\Models\Address;
 use Filament\Infolists\Infolist;
 use Modules\SaluteOra\Models\Studio;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Fieldset;
+use Filament\Forms\Components\Component;
 use Illuminate\Database\Eloquent\Builder;
+use Modules\Geo\Filament\Resources\AddressResource;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\Geo\Filament\Forms\Components\AddressField;
 use Modules\SaluteOra\Filament\Resources\StudioResource\Pages;
 use Modules\SaluteOra\Filament\Resources\StudioResource\RelationManagers;
+<<<<<<< HEAD
 use Modules\Geo\Models\Address;
 use Modules\Geo\Filament\Resources\AddressResource;
 <<<<<<< HEAD
@@ -47,6 +59,8 @@ use Filament\Forms\Components\Component;
 =======
 use Modules\Geo\Filament\Forms\Components\AddressField;
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 
 class StudioResource extends XotBaseResource
 {
@@ -398,13 +412,23 @@ class StudioResource extends XotBaseResource
 =======
             
             'address' => AddressField::make('address')
-               ->relationship('address'),
-                
-            
-            
+                ->relationship('address'),
         ];
     }
 
+<<<<<<< HEAD
    
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+    /**
+     * Schema semplificato per wizard di creazione senza reattività
+     * per prevenire loop infiniti quando il record non esiste ancora
+     */
+    public static function getFormSchemaForWizard(): array
+    {
+        $schema=self::getFormSchema();
+        return $schema;
+        
+    }
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 }

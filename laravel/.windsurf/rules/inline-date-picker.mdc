@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 description: 
 globs: 
 alwaysApply: true
@@ -311,3 +312,9 @@ public function generateCalendarData(): array {
 // ✅ Blade view ora usa:
 $isCurrentMonth = $day['isCurrentMonth']; // Corretta chiave
 ```
+=======
+description:
+globs:
+alwaysApply: false
+---
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)

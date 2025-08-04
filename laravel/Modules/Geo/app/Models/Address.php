@@ -212,6 +212,7 @@ class Address extends BaseModel
     }
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     /*
      * Get the city relationship.
      *
@@ -224,10 +225,18 @@ class Address extends BaseModel
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+    /*
+     * Get the city relationship.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
     public function city(): BelongsTo
     {
         return $this->belongsTo(City::class, 'locality', 'name');
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
     */
     /*
@@ -334,6 +343,9 @@ class Address extends BaseModel
 
 =======
     
+=======
+    */
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
     /**
      * Get the province relationship.
      *

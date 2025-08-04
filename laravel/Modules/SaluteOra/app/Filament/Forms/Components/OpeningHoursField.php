@@ -38,13 +38,19 @@ class OpeningHoursField extends XotBaseField
             }
             
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
             // ⚠️ RIMOZIONE CHIAMATA RICORSIVA - causa loop infinito
             // $component->state($state); // QUESTO CAUSAVA IL LOOP!
             
             // ✅ Lo state è già gestito dal framework, non serve forzarlo
+<<<<<<< HEAD
 =======
             $component->state($state);
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
         });
         
         $this->dehydrateStateUsing(function ($state) {

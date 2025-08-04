@@ -7,6 +7,7 @@ namespace Modules\SaluteOra\Filament\Resources;
 use Filament\Forms;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Fieldset;
 use Filament\Forms\Components\FileUpload;
@@ -67,24 +68,38 @@ use Modules\User\Models\Device;
 use Filament\Resources\Resource;
 use Illuminate\Support\HtmlString;
 use Modules\SaluteOra\Models\User;
+=======
+use Filament\Forms\Components\DatePicker;
+use Filament\Forms\Components\Fieldset;
+use Filament\Forms\Components\FileUpload;
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 use Filament\Forms\Components\Grid;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\TimePicker;
+use Filament\Forms\Form;
+use Filament\Forms\Get;
+use Filament\Resources\Resource;
+use Filament\Tables;
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Table;
 use Illuminate\Contracts\View\View;
-use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\URL;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
-use Modules\SaluteOra\Models\Doctor;
-use Filament\Forms\Components\Select;
-use Modules\SaluteOra\Models\Patient;
-use Modules\Notify\Emails\SpatieEmail;
-use Spatie\Permission\Traits\HasRoles;
-use Filament\Tables\Columns\IconColumn;
-use Filament\Tables\Columns\TextColumn;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\URL;
+use Illuminate\Support\HtmlString;
+use Illuminate\Support\Str;
+use Illuminate\Validation\Rule;
 use Illuminate\Validation\Rules\Unique;
+<<<<<<< HEAD
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\FileUpload;
@@ -101,8 +116,17 @@ use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Modules\UI\Filament\Forms\Components\OpeningHoursField;
 use Modules\SaluteOra\Actions\ProcessDoctorModerationAction;
 use Modules\SaluteOra\Filament\Resources\DoctorResource\Pages;
+=======
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
+use Modules\Geo\Filament\Forms\Components\AddressField;
+use Modules\Geo\Filament\Resources\AddressResource;
+use Modules\Notify\Emails\SpatieEmail;
+use Modules\SaluteOra\Actions\ProcessDoctorModerationAction;
+use Modules\SaluteOra\Enums\UserStateEnum;
+use Modules\SaluteOra\Filament\Resources\DoctorResource\Pages;
 use Modules\SaluteOra\Filament\Resources\DoctorResource\RelationManagers;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f622d84c (✨ (DoctorResource.php, RegistrationWidget.php, passport.php): enhance user authentication by adding remember token checks and improving Passport configuration for better security and flexibility.)
@@ -111,6 +135,17 @@ use Illuminate\Validation\Rules\Unique;
 >>>>>>> de1d4084 (✨ (DoctorResource.php, PatientResource.php, StudioResource.php): introduce new Studio resource and update Doctor resource to include studio relationship)
 =======
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+use Modules\SaluteOra\Models\Doctor;
+use Modules\SaluteOra\Models\DoctorRegistrationWorkflow;
+use Modules\SaluteOra\Models\Patient;
+use Modules\SaluteOra\Models\User;
+use Modules\UI\Filament\Forms\Components\OpeningHoursField;
+use Modules\User\Models\Device;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+use Spatie\MailTemplates\TemplateMailable;
+use Spatie\Permission\Traits\HasRoles;
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 
 /**
  * Class DoctorResource
@@ -225,30 +260,19 @@ class DoctorResource extends XotBaseResource
 
     public static function getFormSchemaWidget(): array
     {
-
-        //$submit_view = 'pub_theme::filament.wizard.submit-button';
         
         return [
-            Forms\Components\Wizard::make([
-                self::getPersonalInfoStep(),
-                self::getStudioStep(), 
-                self::getAvailabilityStep(),
-            ])
+            Forms\Components\Wizard::make(self::getWizardSteps())
             ->skippable(false)
             ->submitAction(static::getWizardSubmitAction())
             ->persistStepInQueryString()
-            ->startOnStep(function($get){
-
-                if($get('id')!==null){
-                    return 2;
-                }
-                return 1;
-            })
-            ->live()
+            //->startOnStep(fn(Get $get)=>static::getWizardStartOnStep($get))
+            //->live()
             ->columnSpanFull(),
         ];
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -267,6 +291,26 @@ class DoctorResource extends XotBaseResource
 =======
 >>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
         
+=======
+    public static function getWizardStartOnStep(Get $get):int{
+        if($get('id')!==null){
+            return 0;
+        }
+        return 0;
+    }
+
+    public static function getWizardSteps():array{
+        return [
+            self::getStepByName('personal_info_step')
+                ->icon('heroicon-o-user'),
+            self::getStepByName('studio_step')
+                ->icon('heroicon-o-building-office'),
+            self::getStepByName('availability_step')
+                ->icon('heroicon-o-calendar'),
+        ];
+    }            
+
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 
 >>>>>>> f3e4ec66 (.)
     /**
@@ -275,6 +319,7 @@ class DoctorResource extends XotBaseResource
      * - FileUpload certification (Certificazione iscrizione Ordine)
      * - Nessun altro campo
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
     protected static function getPersonalInfoStepSchema(): array
     {
@@ -378,81 +423,74 @@ class DoctorResource extends XotBaseResource
         ];
 =======
     protected static function getPersonalInfoStep(): Forms\Components\Wizard\Step
+=======
+    protected static function getPersonalInfoStepSchema (): array
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
     {
         // Non utilizzare $translationPrefix, ma direttamente il namespace di traduzione
 
-        return Forms\Components\Wizard\Step::make('personal_info')
-            ->icon('heroicon-o-user')
-            ->schema([
-                
-                        'id' => Forms\Components\Hidden::make('id'),
-                        'first_name' => Forms\Components\TextInput::make('first_name')
-                            ->required()
-                            ->maxLength(255)
-                            ->autocomplete('given-name')
-                            ,
-                        'last_name' => Forms\Components\TextInput::make('last_name')
-                            ->required()
-                            ->maxLength(255)
-                            ->autocomplete('family-name')
-                            ,
+        return [
+                'id' => Forms\Components\Hidden::make('id'),
+                'first_name' => Forms\Components\TextInput::make('first_name')
+                    ->required()
+                    ->maxLength(255)
+                    ->autocomplete('given-name')
+                    ,
+                'last_name' => Forms\Components\TextInput::make('last_name')
+                    ->required()
+                    ->maxLength(255)
+                    ->autocomplete('family-name')
+                    ,
 
-                        'email' => Forms\Components\TextInput::make('email')
-                            ->required()
-                            ->email()
-                            ->maxLength(255)
-                            ->autocomplete('email')
-                            ->readonly(fn($get) => $get('id') !== null)
-                            ->extraAttributes(function ($get) {
-                                return $get('id') !== null
-                                    ? ['class' => 'bg-gray-100 border-gray-300 cursor-not-allowed opacity-90']
-                                    : [];
-                            })
-                            ->rules(function ($get) {
-                                $rules = [];
-                                // Applica unique solo se il record è nuovo (id è null)
-                                //if ($get('id') === null) {
-                                    //$rules[] = Rule::unique(User::class, 'email');
-                                    $rules[] = Rule::unique(User::class,'email')->ignore($get('id'));
-                                //}
-                                
-                                return $rules;
-                            }),
-                        ...self::getAttachmentsSchema(false),
+                'email' => Forms\Components\TextInput::make('email')
+                    ->required()
+                    ->email()
+                    ->maxLength(255)
+                    ->autocomplete('email')
+                    ->readonly(fn($get) => $get('id') !== null)
+                    ->extraAttributes(function ($get) {
+                        return $get('id') !== null
+                            ? ['class' => 'bg-gray-100 border-gray-300 cursor-not-allowed opacity-90']
+                            : [];
+                    })
+                    ->rules(function ($get) {
+                        $rules = [];
+                        // Applica unique solo se il record è nuovo (id è null)
+                        //if ($get('id') === null) {
+                            //$rules[] = Rule::unique(User::class, 'email');
+                            $rules[] = Rule::unique(User::class,'email')->ignore($get('id'));
+                        //}
+                        
+                        return $rules;
+                    }),
+                ...self::getAttachmentsSchema(false),
 
-            ]);
+            ];
     }
 
     
 
-    protected static function getStudioStep(): Forms\Components\Wizard\Step
+    protected static function getStudioStepSchema (): array
     {
-        // Non utilizzare $translationPrefix, ma direttamente il namespace di traduzione
-
-        return Forms\Components\Wizard\Step::make('studio')
-            ->icon('heroicon-o-envelope')
-            
-            ->schema([
+        $schema = StudioResource::getFormSchemaForWizard();
+        
+        return [
                 Forms\Components\Section::make('Dati Studio')
                 ->relationship('studio')  
-                ->schema(StudioResource::getFormSchema())
-                ])
-            //->visible(fn ($get) => $get('id')!==null)
-            ;
+                ->schema($schema)
+            ];
     }
 
    
-
-    protected static function getAvailabilityStep(): Forms\Components\Wizard\Step
+    protected static function getAvailabilityStepSchema (): array
     {
-        return Forms\Components\Wizard\Step::make('availability')
-            ->icon('heroicon-o-calendar')
-            ->schema([
+        return [
                 'availability_section' => OpeningHoursField::make('schedule')
-                    ->label(__('saluteora::doctor_availability.sections.weekly_availability'))
-                    ->helperText(__('saluteora::doctor_availability.fields.is_available.help'))
-                    ->columnSpanFull(),
+                //    ->label(__('saluteora::doctor_availability.sections.weekly_availability'))
+                    //->helperText(__('saluteora::doctor_availability.fields.is_available.help'))
+                //    ->columnSpanFull(),
                     
+<<<<<<< HEAD
             ])
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -467,6 +505,9 @@ class DoctorResource extends XotBaseResource
             ->visible(fn ($get) => $get('id')!==null)
             ;
 >>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
+=======
+            ];
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
     }
 
     public static function getPages(): array

@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 description: 
 globs: 
 alwaysApply: true
@@ -332,3 +333,9 @@ public function previousMonth(): void {
 **Status**: ✅ PRODUCTION READY - Architettura DRY+KISS
 **Principi**: Separazione responsabilità + Zero duplicazione
 **Ultimo Aggiornamento**: Gennaio 2025
+=======
+description:
+globs:
+alwaysApply: false
+---
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)

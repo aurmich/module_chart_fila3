@@ -372,6 +372,7 @@ abstract class XotBaseResource extends FilamentResource
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if(!method_exists($model,'getAttachments')){
             return [];
         }
@@ -403,6 +404,9 @@ abstract class XotBaseResource extends FilamentResource
 =======
         $attachments = property_exists($model, 'attachments') ? $model::$attachments : [];
 >>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
+=======
+        $attachments = $model::$attachments;
+>>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
         $uuid = Str::uuid()->toString();
         $schema = [];
         
@@ -469,10 +473,10 @@ abstract class XotBaseResource extends FilamentResource
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     protected static function getStepByName(string $name): Forms\Components\Wizard\Step
     {
-        $schema = Str::of($name)->snake()->studly()->prepend('get')->append('Schema')->toString();
+        $schema=Str::of($name)->snake()->studly()->prepend('get')->append('Schema')->toString();
         
         return Forms\Components\Wizard\Step::make($name)
-            ->schema(static::{$schema}());
+            ->schema(static::$schema());
     }
 <<<<<<< HEAD
 =======
