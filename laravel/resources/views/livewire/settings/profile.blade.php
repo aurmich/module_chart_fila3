@@ -74,43 +74,10 @@ new class extends Component {
 
     <x-settings.layout :heading="__('Profile')" :subheading="__('Update your name and email address')">
         <form wire:submit="updateProfileInformation" class="my-6 w-full space-y-6">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
             <flux:input wire:model="name" :label="__('Name')" type="text" required autofocus autocomplete="name" />
 
             <div>
                 <flux:input wire:model="email" :label="__('Email')" type="email" required autocomplete="email" />
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-            <flux:input wire:model.live="name" :label="__('Name')" type="text" required autofocus autocomplete="name" />
-
-            <div>
-                <flux:input wire:model.live="email" :label="__('Email')" type="email" required autocomplete="email" />
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
-=======
-            <flux:input wire:model.live="name" :label="__('Name')" type="text" required autofocus autocomplete="name" />
-
-            <div>
-                <flux:input wire:model.live="email" :label="__('Email')" type="email" required autocomplete="email" />
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
-            <flux:input wire:model="name" :label="__('Name')" type="text" required autofocus autocomplete="name" />
-
-            <div>
-                <flux:input wire:model="email" :label="__('Email')" type="email" required autocomplete="email" />
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
 
                 @if (auth()->user() instanceof \Illuminate\Contracts\Auth\MustVerifyEmail &&! auth()->user()->hasVerifiedEmail())
                     <div>

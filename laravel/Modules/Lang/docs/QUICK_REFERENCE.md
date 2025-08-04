@@ -89,13 +89,6 @@ __('patient.profile.title')
 ## Comandi Utili
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 9df8f556 (fix .md)
-=======
->>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
 # Pubblicare file di lingua
 php artisan lang:publish
 

@@ -1,19 +1,5 @@
 <?php
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
 /*
 use App\Http\Controllers\Auth\VerifyEmailController;
 use Illuminate\Support\Facades\Route;
@@ -48,16 +34,4 @@ Route::middleware('auth')->group(function () {
 
 Route::post('logout', App\Livewire\Actions\Logout::class)
     ->name('logout');
-<<<<<<< HEAD
 */
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-*/
-=======
-*/
->>>>>>> aurmich/dev
-=======
-*/
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev

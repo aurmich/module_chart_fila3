@@ -53,22 +53,6 @@ If the project maintainer has any additional requirements, you will find them li
 - **Send coherent history** - Make sure each individual commit in your pull request is meaningful. If you had to make multiple intermediate commits while developing, please [squash them](https://www.git-scm.com/book/en/v2/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages) before submitting.
 
 **Happy coding**!
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 35e9b7ea (feat(scripts): add script to rename files to lowercase while preserving README.md case for consistency and organization)
-=======
-=======
-=======
->>>>>>> 7440f060 (delete duplicate folder + add .md)
->>>>>>> aurmich/dev
 # Contributing
 
 Contributions are **welcome** and will be fully **credited**.
@@ -124,9 +108,6 @@ If the project maintainer has any additional requirements, you will find them li
 - **Send coherent history** - Make sure each individual commit in your pull request is meaningful. If you had to make multiple intermediate commits while developing, please [squash them](https://www.git-scm.com/book/en/v2/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages) before submitting.
 
 **Happy coding**!
-<<<<<<< HEAD
-=======
->>>>>>> bac26886 (delete replicate folder)
 # Contributing
 
 Contributions are **welcome** and will be fully **credited**.
@@ -182,11 +163,6 @@ If the project maintainer has any additional requirements, you will find them li
 - **Send coherent history** - Make sure each individual commit in your pull request is meaningful. If you had to make multiple intermediate commits while developing, please [squash them](https://www.git-scm.com/book/en/v2/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages) before submitting.
 
 **Happy coding**!
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 54f4fa16 (.)
-=======
 # Contributing
 
 Contributions are **welcome** and will be fully **credited**.
@@ -242,14 +218,3 @@ If the project maintainer has any additional requirements, you will find them li
 - **Send coherent history** - Make sure each individual commit in your pull request is meaningful. If you had to make multiple intermediate commits while developing, please [squash them](https://www.git-scm.com/book/en/v2/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages) before submitting.
 
 **Happy coding**!
->>>>>>> 35e9b7ea (feat(scripts): add script to rename files to lowercase while preserving README.md case for consistency and organization)
-=======
->>>>>>> 21462f4 (feat: add initial project structure with configuration files and actions for chart generation)
-<<<<<<< HEAD
->>>>>>> bac26886 (delete replicate folder)
-=======
->>>>>>> aa3c639 (✨ (initial): add initial project structure with configuration files and actions for chart generation)
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
->>>>>>> 15cb84fb (fix collisions)
->>>>>>> aurmich/dev

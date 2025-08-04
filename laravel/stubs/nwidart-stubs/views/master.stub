@@ -27,18 +27,4 @@
         {{-- Vite JS --}}
         {{-- {{ module_vite('build-$LOWER_NAME$', 'resources/assets/js/app.js') }} --}}
     </body>
-<<<<<<< HEAD
 </html>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-</html>
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
-=======
-</html>
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev

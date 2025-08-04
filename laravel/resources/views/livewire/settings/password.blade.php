@@ -43,81 +43,21 @@ new class extends Component {
     <x-settings.layout :heading="__('Update password')" :subheading="__('Ensure your account is using a long, random password to stay secure')">
         <form wire:submit="updatePassword" class="mt-6 space-y-6">
             <flux:input
-<<<<<<< HEAD
                 wire:model="current_password"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                wire:model="current_password"
-=======
-                wire:model.live="current_password"
->>>>>>> aurmich/dev
-=======
-                wire:model="current_password"
->>>>>>> 54f4fa16 (.)
-=======
-                wire:model.live="current_password"
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
-                wire:model="current_password"
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
                 :label="__('Current password')"
                 type="password"
                 required
                 autocomplete="current-password"
             />
             <flux:input
-<<<<<<< HEAD
                 wire:model="password"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                wire:model="password"
-=======
-                wire:model.live="password"
->>>>>>> aurmich/dev
-=======
-                wire:model="password"
->>>>>>> 54f4fa16 (.)
-=======
-                wire:model.live="password"
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
-                wire:model="password"
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
                 :label="__('New password')"
                 type="password"
                 required
                 autocomplete="new-password"
             />
             <flux:input
-<<<<<<< HEAD
                 wire:model="password_confirmation"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                wire:model="password_confirmation"
-=======
-                wire:model.live="password_confirmation"
->>>>>>> aurmich/dev
-=======
-                wire:model="password_confirmation"
->>>>>>> 54f4fa16 (.)
-=======
-                wire:model.live="password_confirmation"
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
-                wire:model="password_confirmation"
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
                 :label="__('Confirm Password')"
                 type="password"
                 required

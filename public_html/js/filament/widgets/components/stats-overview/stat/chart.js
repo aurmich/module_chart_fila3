@@ -4,46 +4,7 @@ function rt(){}var Hs=function(){let i=0;return function(){return i++}}();functi
 /*! Bundled license information:
 
 chart.js/dist/chunks/helpers.segment.mjs:
-<<<<<<< HEAD
 chart.js/dist/chart.mjs:
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-chart.js/dist/chart.mjs:
-=======
->>>>>>> 54f4fa16 (.)
-=======
-chart.js/dist/chart.mjs:
->>>>>>> 2ef417db (.)
-=======
->>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
-=======
-chart.js/dist/chart.mjs:
->>>>>>> 85399184 (add .prettierrc)
-=======
->>>>>>> 127a3c9b (📝 (documentation): remove outdated documentation files for various modules to streamline the codebase and improve maintainability.)
-=======
-chart.js/dist/chart.mjs:
->>>>>>> e577f0ca (feat: getDataDefault for fix livewire form data)
-=======
->>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
-=======
-chart.js/dist/chart.mjs:
->>>>>>> f80feb52 (bug:calkendat)
-=======
->>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
-=======
-chart.js/dist/chart.mjs:
->>>>>>> 4cfbf172 (📝 (studio-filter-widget.md): update documentation to provide complete overview and usage instructions in Italian, enhancing clarity and accessibility for Italian-speaking users.)
->>>>>>> aurmich/dev
   (*!
    * Chart.js v3.9.1
    * https://www.chartjs.org
@@ -58,57 +19,4 @@ chart.js/dist/chunks/helpers.segment.mjs:
    * (c) 2022 Jukka Kurkela
    * Released under the MIT License
    *)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
-=======
->>>>>>> 127a3c9b (📝 (documentation): remove outdated documentation files for various modules to streamline the codebase and improve maintainability.)
-=======
->>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
-=======
->>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
-
-chart.js/dist/chart.mjs:
-  (*!
-   * Chart.js v3.9.1
-   * https://www.chartjs.org
-   * (c) 2022 Chart.js Contributors
-   * Released under the MIT License
-   *)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 2ef417db (.)
-=======
->>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
-=======
->>>>>>> 85399184 (add .prettierrc)
-=======
->>>>>>> 127a3c9b (📝 (documentation): remove outdated documentation files for various modules to streamline the codebase and improve maintainability.)
-=======
->>>>>>> e577f0ca (feat: getDataDefault for fix livewire form data)
-=======
->>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
-=======
->>>>>>> f80feb52 (bug:calkendat)
-=======
->>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
-=======
->>>>>>> 4cfbf172 (📝 (studio-filter-widget.md): update documentation to provide complete overview and usage instructions in Italian, enhancing clarity and accessibility for Italian-speaking users.)
->>>>>>> aurmich/dev
 */

@@ -31,27 +31,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
     <form wire:submit="sendPasswordResetLink" class="flex flex-col gap-6">
         <!-- Email Address -->
         <flux:input
-<<<<<<< HEAD
             wire:model="email"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            wire:model="email"
-=======
-            wire:model.live="email"
->>>>>>> aurmich/dev
-=======
-            wire:model="email"
->>>>>>> 54f4fa16 (.)
-=======
-            wire:model.live="email"
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
-            wire:model="email"
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
             :label="__('Email Address')"
             type="email"
             required
@@ -62,28 +42,8 @@ new #[Layout('components.layouts.auth')] class extends Component {
         <flux:button variant="primary" type="submit" class="w-full">{{ __('Email password reset link') }}</flux:button>
     </form>
 
-<<<<<<< HEAD
     <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-400">
         <span>{{ __('Or, return to') }}</span>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-400">
-        <span>{{ __('Or, return to') }}</span>
-=======
-    <div class="space-x-1 text-center text-sm text-zinc-400">
-        {{ __('Or, return to') }}
->>>>>>> aurmich/dev
-=======
-    <div class="space-x-1 text-center text-sm text-zinc-400">
-        {{ __('Or, return to') }}
->>>>>>> 54f4fa16 (.)
-=======
-    <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-400">
-        <span>{{ __('Or, return to') }}</span>
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
         <flux:link :href="route('login')" wire:navigate>{{ __('log in') }}</flux:link>
     </div>
 </div>
