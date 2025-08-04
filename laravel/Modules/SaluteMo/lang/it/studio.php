@@ -3,6 +3,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0acdadac (🌐 (studio.php): update Italian localization file to improve structure and readability)
 return array (
   'navigation' => 
   array (
@@ -63,7 +66,10 @@ return array (
       'label' => 'Nome Studio',
       'placeholder' => 'Studio Medico Dr. Rossi',
       'helper_text' => 'Nome completo e identificativo dello studio medico',
+<<<<<<< HEAD
       'description' => 'name',
+=======
+>>>>>>> 0acdadac (🌐 (studio.php): update Italian localization file to improve structure and readability)
     ),
     'address' => 
     array (
@@ -76,35 +82,50 @@ return array (
       'label' => 'Telefono',
       'placeholder' => '+39 059 1234567',
       'helper_text' => 'Numero di telefono principale per contatti',
+<<<<<<< HEAD
       'description' => 'phone',
+=======
+>>>>>>> 0acdadac (🌐 (studio.php): update Italian localization file to improve structure and readability)
     ),
     'email' => 
     array (
       'label' => 'Email',
       'placeholder' => 'info@studiorossi.it',
       'helper_text' => 'Indirizzo email per comunicazioni ufficiali',
+<<<<<<< HEAD
       'description' => 'email',
+=======
+>>>>>>> 0acdadac (🌐 (studio.php): update Italian localization file to improve structure and readability)
     ),
     'website' => 
     array (
       'label' => 'Sito Web',
       'placeholder' => 'https://www.studiorossi.it',
       'helper_text' => 'URL del sito web ufficiale dello studio',
+<<<<<<< HEAD
       'description' => 'website',
+=======
+>>>>>>> 0acdadac (🌐 (studio.php): update Italian localization file to improve structure and readability)
     ),
     'registration_number' => 
     array (
       'label' => 'Numero di Registrazione',
       'placeholder' => 'RM-123456',
       'helper_text' => 'Numero di registrazione presso l\'Ordine dei Medici',
+<<<<<<< HEAD
       'description' => 'registration_number',
+=======
+>>>>>>> 0acdadac (🌐 (studio.php): update Italian localization file to improve structure and readability)
     ),
     'vat_number' => 
     array (
       'label' => 'Partita IVA',
       'placeholder' => 'IT01234567890',
       'helper_text' => 'Partita IVA dello studio medico',
+<<<<<<< HEAD
       'description' => 'vat_number',
+=======
+>>>>>>> 0acdadac (🌐 (studio.php): update Italian localization file to improve structure and readability)
     ),
     'opening_hours' => 
     array (
@@ -170,6 +191,7 @@ return array (
     array (
       'label' => 'toggleColumns',
     ),
+<<<<<<< HEAD
     'description' => 
     array (
       'description' => 'description',
@@ -221,6 +243,8 @@ return array (
     array (
       'label' => 'view',
     ),
+=======
+>>>>>>> 0acdadac (🌐 (studio.php): update Italian localization file to improve structure and readability)
   ),
   'actions' => 
   array (
@@ -376,6 +400,7 @@ return array (
   ),
   'search_placeholder' => 'Cerca per nome, indirizzo, telefono, email o specializzazione...',
 );
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
@@ -860,3 +885,5 @@ return array (
 >>>>>>> 51b181ea (📝 (studio.php): resolve merge conflicts and clean up translation file for SaluteMo module to ensure proper localization and functionality)
 =======
 >>>>>>> 4c5dd975 (🌐 (studio.php): update Italian translations for medical studio module to enhance clarity and consistency in terminology and user experience)
+=======
+>>>>>>> 0acdadac (🌐 (studio.php): update Italian localization file to improve structure and readability)
