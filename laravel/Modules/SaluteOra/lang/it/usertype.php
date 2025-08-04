@@ -19,6 +19,10 @@ return [
         'label' => 'Paziente',
         'color' => 'success',
         'icon' => 'heroicon-o-user',
+<<<<<<< HEAD
         'image' => '/img/donna-personaggio.png',
+=======
+        'image' => '/img/patient.jpg',
+>>>>>>> 1def8bbe (fix hint)
     ],
 ];

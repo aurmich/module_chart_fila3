@@ -16,6 +16,7 @@ INFO  Nothing to migrate.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 per vedere 
 http://ec2-54-194-72-103.eu-west-1.compute.amazonaws.com/it
@@ -60,10 +61,13 @@ MAIL_FROM_NAME="${APP_NAME}"
 >>>>>>> 41fc4dec (merge)
 =======
 >>>>>>> bb8acfef (.)
+=======
+>>>>>>> 1def8bbe (fix hint)
 
 per vedere 
 http://ec2-54-194-72-103.eu-west-1.compute.amazonaws.com/it
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 281fd24d (add scripts)
 =======
@@ -74,11 +78,16 @@ http://ec2-54-194-72-103.eu-west-1.compute.amazonaws.com/it
 url:http://ec2-54-194-72-103.eu-west-1.compute.amazonaws.com/
 >>>>>>> 0734d5c9 (.)
 ----
+=======
+>>>>>>> 1def8bbe (fix hint)
 
 se si vedono dei |--35--
 dalla cartella laravel
 php artisan filament:upgrade
 php artisan filament:optimize
 php artisan optimize
+<<<<<<< HEAD
 >>>>>>> 74e04743 (tips)
 >>>>>>> 41fc4dec (merge)
+=======
+>>>>>>> 1def8bbe (fix hint)

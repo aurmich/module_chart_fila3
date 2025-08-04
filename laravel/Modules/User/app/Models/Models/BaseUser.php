@@ -39,7 +39,7 @@ abstract class BaseUser extends Authenticatable
 >>>>>>> 15cb84fb (fix collisions)
 =======
      *
-     * @return MorphMany<\Illuminate\Notifications\DatabaseNotification, static>
+     * @return MorphMany<\Illuminate\Notifications\DatabaseNotification, $this>
      */
     public function notifications(): MorphMany
     {

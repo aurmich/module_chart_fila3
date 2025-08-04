@@ -10,6 +10,7 @@ use Filament\Support\Contracts\HasLabel;
 use Modules\Xot\Filament\Traits\TransTrait;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
+<<<<<<< HEAD
 
 /**
  * Defines the different types of users in the system.
@@ -35,6 +36,8 @@ enum UserTypeEnum: string implements HasLabel
 =======
 use Modules\Xot\Filament\Traits\TransTrait;
 >>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
+=======
+>>>>>>> 1def8bbe (fix hint)
 
 /**
  * Defines the different types of users in the system.
@@ -50,15 +53,21 @@ use Modules\Xot\Filament\Traits\TransTrait;
 enum UserTypeEnum: string implements HasLabel
 {
     use TransTrait;
+    
     case ADMIN = 'admin';
     case DOCTOR = 'doctor';
     case PATIENT = 'patient';
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 =======
     case MODERATOR = 'moderator';
     case STAFF = 'staff';
 >>>>>>> 8e4d163b (phpstan)
+=======
+    //case MODERATOR = 'moderator';
+    //case STAFF = 'staff';
+>>>>>>> 1def8bbe (fix hint)
 
     /**
      * Get the translated label for the user type.
@@ -89,8 +98,8 @@ enum UserTypeEnum: string implements HasLabel
             self::PATIENT => 'Paziente',
             self::DOCTOR => 'Dottore',
             self::ADMIN => 'Amministratore',
-            self::MODERATOR => 'Moderatore',
-            self::STAFF => 'Staff',
+            //self::MODERATOR => 'Moderatore',
+            //self::STAFF => 'Staff',
         };
 >>>>>>> 8e4d163b (phpstan)
     }
@@ -150,8 +159,17 @@ enum UserTypeEnum: string implements HasLabel
         */
     }
 
+    /**
+     * Get the translated description for the user type.
+     */
+    public function getDescription(): string
+    {
+        return $this->transClass(self::class,$this->value.'.description');
+    }
+
     public function getImage(): string
     {
+        //return 'https://placehold.co/600x400';
         return $this->transClass(self::class,$this->value.'.image');
     }
 
@@ -161,11 +179,12 @@ enum UserTypeEnum: string implements HasLabel
             self::ADMIN => false,
             self::DOCTOR => true,
             self::PATIENT => true,
-            self::MODERATOR => false,
-            self::STAFF => false,
+            //self::MODERATOR => false,
+            //self::STAFF => false,
         };
     }
 
+<<<<<<< HEAD
     /**
      * Get the translated description for the user type.
      */
@@ -240,6 +259,9 @@ enum UserTypeEnum: string implements HasLabel
             self::PATIENT->value => __('saluteora::enums.user_type.patient'),
         ];
     }
+=======
+    
+>>>>>>> 1def8bbe (fix hint)
 
     // Nota: tryFrom() è un metodo nativo di PHP 8.1+ per gli enum backed (con valore)
     // Non implementare mai un metodo tryFrom() personalizzato perché entra in conflitto
@@ -271,20 +293,9 @@ enum UserTypeEnum: string implements HasLabel
 >>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
 =======
 
-    /**
-     * Get the translated description for the user type.
-     */
-    public function getDescription(): string
-    {
-        return match($this) {
-            self::PATIENT => 'Utente paziente del sistema',
-            self::DOCTOR => 'Medico o dentista autorizzato',
-            self::ADMIN => 'Amministratore del sistema',
-            self::MODERATOR => 'Moderatore dei contenuti',
-            self::STAFF => 'Membro dello staff',
-        };
-    }
+    
 
+<<<<<<< HEAD
     /**
      * Restituisce la traduzione per la tipologia utente.
      */
@@ -299,6 +310,9 @@ enum UserTypeEnum: string implements HasLabel
         };
     }
 >>>>>>> 8e4d163b (phpstan)
+=======
+   
+>>>>>>> 1def8bbe (fix hint)
 }
 
 // Alias per retrocompatibilità

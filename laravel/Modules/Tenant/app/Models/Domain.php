@@ -29,6 +29,7 @@ use Sushi\Sushi;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bb8acfef (.)
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
@@ -43,10 +44,11 @@ use Sushi\Sushi;
 >>>>>>> bf0cd1be (phpstan)
  * @method static \Modules\Tenant\Database\Factories\DomainFactory factory($count = null, $state = [])
 =======
+=======
+>>>>>>> 1def8bbe (fix hint)
 * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
   * @method static \Modules\Tenant\Database\Factories\DomainFactory factory($count = null, $state = [])
->>>>>>> 0734d5c9 (.)
  * @mixin \Eloquent
  */
 class Domain extends BaseModel

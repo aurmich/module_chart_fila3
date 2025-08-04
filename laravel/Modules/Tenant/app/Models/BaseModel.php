@@ -22,6 +22,7 @@ use Modules\Xot\Traits\Updater;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> bb8acfef (.)
@@ -41,12 +42,17 @@ abstract class BaseModel extends Model
 >>>>>>> bf0cd1be (phpstan)
 =======
 =======
+=======
+>>>>>>> 1def8bbe (fix hint)
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
   */
 abstract class BaseModel extends Model
+<<<<<<< HEAD
 >>>>>>> 0734d5c9 (.)
 >>>>>>> bb8acfef (.)
+=======
+>>>>>>> 1def8bbe (fix hint)
 {
     use HasFactory;
     use Updater;

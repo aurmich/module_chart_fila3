@@ -86,10 +86,13 @@ use Illuminate\Notifications\DatabaseNotificationCollection;
 /**
  * Modules\User\Models\User.
  *
+<<<<<<< HEAD
  * @template TModel of \Illuminate\Database\Eloquent\Model
  * @template TRelatedModel of \Illuminate\Database\Eloquent\Model
  *
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 1def8bbe (fix hint)
  * @property Collection<int, OauthClient> $clients
  * @property int|null $clients_count
  * @property Team|null $currentTeam
@@ -461,12 +464,16 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Get the devices associated with the user.
      *
      * @return BelongsToMany<Device, static>
 =======
      * @return BelongsToMany<Device, static|$this>
 >>>>>>> 54f4fa16 (.)
+=======
+     * @return BelongsToMany<Device, static>
+>>>>>>> 1def8bbe (fix hint)
      */
     public function devices(): BelongsToMany
     {
@@ -504,11 +511,15 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
      */
     public function socialiteUsers(): HasMany
     {
+<<<<<<< HEAD
         /** @var class-string<SocialiteUser> $socialiteUserClass */
         $socialiteUserClass = SocialiteUser::class;
         
         return $this->hasMany($socialiteUserClass);
 >>>>>>> a3174e5b (phpstan)
+=======
+        return $this->hasMany(SocialiteUser::class);
+>>>>>>> 1def8bbe (fix hint)
     }
 
     public function getProviderField(string $provider, string $field): string
