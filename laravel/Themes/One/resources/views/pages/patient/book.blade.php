@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
@@ -18,11 +19,14 @@ name('patient.book');
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 7bc70bf2 (🚀 (laravel/Themes/One): remove deprecated files and old theme structure to streamline the codebase and improve maintainability)
 {{--
     Questa pagina include direttamente il widget Filament modularizzato per la prenotazione paziente.
     Policy: nessun form custom, solo widget Filament.
     Vedi docs/roadmap_frontoffice/30-patient-book.md e docs/rules/filament_best_practices.md
 --}}
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 {{-- Template standard per l'integrazione dei widget --}}
@@ -100,3 +104,15 @@ new class extends Component
 =======
 
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+
+{{-- Template standard per l'integrazione dei widget --}}
+<x-layouts.app>
+    <div class="page-container">
+        <div class="content-wrapper">
+            @livewire(\Modules\SaluteOra\Filament\Widgets\Patient\FindDoctorAndAppointmentWidget::class)
+        </div>
+    </div>
+    </x-layouts.app>
+
+>>>>>>> 7bc70bf2 (🚀 (laravel/Themes/One): remove deprecated files and old theme structure to streamline the codebase and improve maintainability)

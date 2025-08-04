@@ -5,6 +5,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="calendar-container">
     @livewire(\Modules\UI\Filament\Widgets\UserCalendarWidget::class, ['type' => $type])
 =======
@@ -24,4 +25,8 @@
 <div class="calendar-container">
     @livewire(\Modules\UI\Filament\Widgets\UserCalendarWidget::class, ['type' => $type])
 >>>>>>> ca5e1eaf (.)
+=======
+<div class="calendar-container">
+    @livewire(\Modules\UI\Filament\Widgets\UserCalendarWidget::class, ['type' => $type])
+>>>>>>> 7bc70bf2 (🚀 (laravel/Themes/One): remove deprecated files and old theme structure to streamline the codebase and improve maintainability)
 </div>
