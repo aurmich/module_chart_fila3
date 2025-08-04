@@ -2,6 +2,9 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
 declare(strict_types=1);
 
 return [
@@ -15,6 +18,7 @@ return [
         'tooltip' => 'Gestisci le prestazioni e i trattamenti disponibili',
     ],
 ];
+<<<<<<< HEAD
 =======
 return array (
   'name' => 'Trattamenti',
@@ -43,3 +47,5 @@ return array (
   ),
 );
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)

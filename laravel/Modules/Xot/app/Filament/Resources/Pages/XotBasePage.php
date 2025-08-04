@@ -77,11 +77,15 @@ use Modules\Xot\Filament\Traits\NavigationLabelTrait;
  * @property ?string $model
  * @property ?array $data
  * @property ComponentContainer $form
+<<<<<<< HEAD
  */
 <<<<<<< HEAD
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
 >>>>>>> d23ba493 (add calendar)
+=======
+*/
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
 abstract class XotBasePage extends FilamentPage implements HasForms
 {
     use InteractsWithForms;
@@ -198,8 +202,12 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 =======
     public function getTitle(): string
     {
+<<<<<<< HEAD
         return static::transTitle();
 >>>>>>> d23ba493 (add calendar)
+=======
+        return static::transFunc(__FUNCTION__);
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
     }
 
     /**

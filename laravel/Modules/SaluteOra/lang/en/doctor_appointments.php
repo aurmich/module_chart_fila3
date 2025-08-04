@@ -1,11 +1,15 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
 declare(strict_types=1);
 
 return [
     'title' => 'Doctor Appointments',
     'description' => 'Appointment management for doctors',
+<<<<<<< HEAD
     'actions' => [
         'proBonoAction' => [
             'label' => 'Pro Bono',
@@ -108,24 +112,35 @@ return [
             'success' => 'Appointment marked as completed',
             'error' => 'Error completing appointment',
         ],
+=======
+    
+    'actions' => [
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
         'delete' => [
             'label' => 'Delete',
             'tooltip' => 'Delete this appointment',
             'confirmation' => 'Are you sure you want to delete this appointment?',
+<<<<<<< HEAD
             'success' => 'Appointment deleted successfully',
             'error' => 'Error deleting appointment',
+=======
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
         ],
         'accept' => [
             'label' => 'Accept',
             'tooltip' => 'Accept this appointment',
             'confirmation' => 'Are you sure you want to accept this appointment?',
+<<<<<<< HEAD
             'success' => 'Appointment accepted successfully',
             'error' => 'Error accepting appointment',
+=======
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
         ],
         'confirm' => [
             'label' => 'Confirm',
             'tooltip' => 'Confirm this appointment',
             'confirmation' => 'Are you sure you want to confirm this appointment?',
+<<<<<<< HEAD
             'success' => 'Appointment confirmed successfully',
             'error' => 'Error confirming appointment',
         ],
@@ -193,11 +208,34 @@ return [
             'error' => 'Error adding note',
         ],
     ],
+=======
+        ],
+        'confirmed' => [
+            'label' => 'Confirmed',
+            'tooltip' => 'Appointment confirmed',
+        ],
+        'confirmAction' => [
+            'label' => 'Confirm Action',
+            'tooltip' => 'Execute confirmation action',
+        ],
+        'rejectAction' => [
+            'label' => 'Reject',
+            'tooltip' => 'Reject this appointment',
+            'confirmation' => 'Are you sure you want to reject this appointment?',
+        ],
+        'info' => [
+            'label' => 'Information',
+            'tooltip' => 'View detailed information',
+        ],
+    ],
+    
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
     'messages' => [
         'appointment_accepted' => 'Appointment accepted successfully',
         'appointment_confirmed' => 'Appointment confirmed successfully',
         'appointment_rejected' => 'Appointment rejected successfully',
         'appointment_deleted' => 'Appointment deleted successfully',
+<<<<<<< HEAD
         'appointment_rescheduled' => 'Appointment rescheduled successfully',
         'appointment_completed' => 'Appointment completed successfully',
         'appointment_cancelled' => 'Appointment cancelled successfully',
@@ -206,12 +244,18 @@ return [
         'no_appointments_found' => 'No appointments found',
         'appointment_not_found' => 'Appointment not found',
     ],
+=======
+        'error_occurred' => 'An error occurred',
+    ],
+    
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
     'status' => [
         'pending' => 'Pending',
         'confirmed' => 'Confirmed',
         'rejected' => 'Rejected',
         'completed' => 'Completed',
         'cancelled' => 'Cancelled',
+<<<<<<< HEAD
         'rescheduled' => 'Rescheduled',
         'in_progress' => 'In Progress',
     ],
@@ -338,3 +382,7 @@ return array (
   ),
 );
 >>>>>>> 4c10a600 (trans)
+=======
+    ],
+];
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)

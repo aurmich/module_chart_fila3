@@ -537,6 +537,7 @@ class XotData extends Data implements Wireable
         if($enum_class==null){
             $enum_class=Str::of($user_class)->replace('\\Models\\', '\\Enums\\')->append('TypeEnum')->toString();
         }
+<<<<<<< HEAD
 >>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
 =======
         $enum_class=$this->getUserChildTypeClass();
@@ -573,6 +574,9 @@ class XotData extends Data implements Wireable
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 6aa6d801 (fix change type command)
+=======
+        Assert::stringNotEmpty($enum_class, 'enum_class is empty');
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
         return $enum_class;
         //$userInstance = app($user_class);
         //return $userInstance->getChildTypes();

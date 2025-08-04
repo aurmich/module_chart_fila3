@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
 return [
     'fields' => [
         'studio_selection' => [
@@ -10,4 +15,8 @@ return [
             'description' => 'Medical studio for the service',
         ],
     ],
+<<<<<<< HEAD
 ];
+=======
+]; 
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)

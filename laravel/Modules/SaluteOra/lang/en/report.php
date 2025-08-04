@@ -3,6 +3,10 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
+=======
+    'name' => 'Reports',
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
     'navigation' => [
         'label' => 'Reports & Statistics',
         'group' => 'Administration',
@@ -16,6 +20,7 @@ return [
         'plural' => 'Reports',
         'description' => 'System reports and statistics',
     ],
+<<<<<<< HEAD
     'fields' => [
         'has_mouth_or_teeth_pain' => [
             'label' => 'Mouth or teeth pain (last 12 months)',
@@ -200,3 +205,6 @@ return [
         'exported' => 'Reports exported successfully',
     ],
 ];
+=======
+]; 
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)

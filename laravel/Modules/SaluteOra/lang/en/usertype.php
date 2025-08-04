@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
 return [
     'admin' => [
         'label' => 'Administrator',
@@ -19,4 +24,8 @@ return [
         'icon' => 'heroicon-o-user',
         'image' => '/img/donna-personaggio.png',
     ],
+<<<<<<< HEAD
 ];
+=======
+]; 
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)

@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
 return [
     'title' => [
         'singular' => 'Medical Studio',
@@ -101,4 +106,8 @@ return [
         'fiscal_info' => 'Fiscal Information',
         'operations' => 'Operations',
     ],
+<<<<<<< HEAD
 ];
+=======
+]; 
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)

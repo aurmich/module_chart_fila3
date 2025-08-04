@@ -2,6 +2,9 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
 declare(strict_types=1);
 
 return [
@@ -15,6 +18,7 @@ return [
         ],
     ],
 ];
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
@@ -34,3 +38,5 @@ return array (
 >>>>>>> aurmich/dev
 =======
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)

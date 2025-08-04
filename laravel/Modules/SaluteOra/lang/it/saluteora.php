@@ -2,12 +2,17 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> fb6fbaa2 (move resources/lang to lang)
+=======
+declare(strict_types=1);
+
+>>>>>>> fa888974 (✨ (SaluteOra): add new language files for English and Italian translations)
 return [
     'fields' => [
         'region' => 'Regione',
