@@ -630,12 +630,16 @@ Please follow the project's coding standards and submit pull requests to the `de
 
 This widget is part of the SaluteOra module and is licensed under the [MIT license](LICENSE).
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
 ## Policy view widget
 La view deve essere solo un wrapper per $this->form. Niente markup custom, niente logica Livewire/AlpineJS, niente gestione CSRF manuale. Tutta la logica va nel widget PHP o nel tema. Motivazione: coerenza, DRY, KISS, troubleshooting semplificato. Collegamento a docs/rules/filament_best_practices.md e docs/xot.md.
 
 ## Regola: vietato usare ->label() e ->placeholder() nei form component
 Tutti i form component devono usare solo chiavi campo, senza label o placeholder inline. Le etichette e i placeholder sono gestiti tramite i file di traduzione del modulo e il LangServiceProvider. Motivazione: coerenza, centralizzazione, override semplice, policy di qualità. Collegamento a docs/rules/filament_best_practices.md e docs/xot.md.
+<<<<<<< HEAD
 
 ## Policy DRY: disponibilità e appuntamenti
 
@@ -659,3 +663,5 @@ Appointment::where('doctor_id', $doctorId)
 - Refactoring sicuro, massima estendibilità
 =======
 >>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)

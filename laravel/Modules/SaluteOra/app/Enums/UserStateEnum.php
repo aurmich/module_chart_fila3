@@ -67,8 +67,14 @@ enum UserStateEnum: string implements HasLabel
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 // Alias for backward compatibility
 //class_alias(UserStateEnum::class, 'Modules\SaluteOra\Enums\UserState');
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+
+// Alias for backward compatibility
+class_alias(UserStateEnum::class, 'Modules\SaluteOra\Enums\UserState');
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)

@@ -406,6 +406,9 @@ class AppointmentCalendarTest extends TestCase
    - Resource timeline view
    - Custom views for different user roles
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
 ## Path corretto per AppointmentType:
 ## Modules/SaluteOra/app/Enums/AppointmentType.php
@@ -413,7 +416,10 @@ use Modules\SaluteOra\App\Enums\AppointmentType;
 
 > **Nota di prevenzione:**
 > L'enum AppointmentType deve essere sempre posizionato in `Modules/SaluteOra/app/Enums/AppointmentType.php` e importato con il namespace corretto. Aggiornare sempre la documentazione e i file .mdc windsurf/cursor in caso di modifica del path.
+<<<<<<< HEAD
 
 > **ATTENZIONE:** Tutti i riferimenti a start_time/end_time vanno sostituiti con starts_at/ends_at. Vedi appointment_resource_corrections.md e plan.md per il piano di refactoring.
 =======
 >>>>>>> 2099645a (.)
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)

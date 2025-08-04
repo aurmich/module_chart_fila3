@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 # 🗺️ Roadmap del Progetto SaluteOra
 
 ## 🎯 Visione del Progetto
@@ -70,6 +73,7 @@ SaluteOra mira a diventare la piattaforma di riferimento per la promozione della
 - [ ] Sistema di fatturazione integrato
 - [ ] Compliance internazionale
 - [ ] White-label solution
+<<<<<<< HEAD
 
 ## 📈 Metriche di Successo
 
@@ -632,80 +636,179 @@ Questo documento serve come indice principale per tutte le roadmap del progetto 
 - [ ] App mobile
 - [ ] Notifiche push
 - [ ] Dashboard personalizzata
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
 ## 📈 Metriche di Successo
 
-### 🎯 Obiettivi a Breve Termine
-- [ ] Riduzione del 50% dei conflitti manuali
-- [ ] Automazione del 80% delle operazioni routine
-- [ ] Tempo di risoluzione problemi ridotto del 60%
+### KPI Tecnici
+- **Performance**: < 200ms response time
+- **Uptime**: 99.9% SLA
+- **Test Coverage**: > 80%
+- **PHPStan**: Level 9 compliance
+- **Security**: OWASP Top 10 compliance
 
-### 🎯 Obiettivi a Medio Termine
-- [ ] Zero errori in produzione
-- [ ] 100% copertura test
-- [ ] Tempo di deploy ridotto del 75%
+### KPI Business
+- **Utenti Attivi**: 10,000+ entro 2025
+- **Cliniche Partner**: 500+ entro 2025
+- **Visite Gestite**: 100,000+ annue
+- **Soddisfazione**: NPS > 70
 
-### 🎯 Obiettivi a Lungo Termine
-- [ ] Sistema completamente autonomo
-- [ ] Integrazione con tutti i principali cloud provider
-- [ ] Supporto multi-lingua
+## 🛠️ Stack Tecnologico
 
-## 📝 Note di Sviluppo
+### Backend
+- **Framework**: Laravel 11.x → 12.x
+- **PHP**: 8.2 → 8.3
+- **Database**: MySQL 8.0
+- **Cache**: Redis 7.x
+- **Queue**: Laravel Horizon
 
-### 🚧 Priorità Immediate
-1. Completamento della Fase 4
-2. Implementazione sicurezza base
-3. Miglioramento logging
+### Frontend
+- **Admin**: Filament 3.x
+- **Public**: Folio + Livewire 3
+- **CSS**: Tailwind CSS 3.x
+- **JS**: Alpine.js 3.x
+- **Build**: Vite 5.x
 
-### 🔄 Processo di Sviluppo
-- Sprint settimanali
-- Review code giornaliere
-- Test continui
-- Documentazione aggiornata
+### Infrastructure
+- **Hosting**: AWS/Azure
+- **CDN**: CloudFlare
+- **Storage**: S3-compatible
+- **Monitoring**: Sentry + New Relic
+- **CI/CD**: GitHub Actions
 
-### 📚 Risorse Necessarie
-- Server di test dedicato
-- Ambiente di staging
-- Tool di monitoraggio
-- Documentazione aggiornata
+## 🔐 Security Roadmap
 
-## 🔄 Collegamenti Utili
-- [Documentazione Script](./project.md)
-- [Fase 1: Core Git Operations](./roadmap/01_core_git_operations.md)
-- [Fase 2: Manutenzione](./roadmap/02_maintenance.md)
-- [Fase 3: Verifica](./roadmap/03_verification.md)
-- [Fase 4: Automazione Avanzata](./roadmap/04_advanced_automation.md)
-- [Fase 5: Sicurezza](./roadmap/05_security.md)
-- [Fase 6: Monitoraggio](./roadmap/06_monitoring.md)
-- [Fase 7: AI Integration](./roadmap/07_ai_integration.md)
-- [Fase 8: Cloud Integration](./roadmap/08_cloud_integration.md)
-- [Fase 9: UI/UX](./roadmap/09_ui_ux.md)
+### Q2 2025
+- [ ] Penetration testing completo
+- [ ] ISO 27001 preparation
+- [ ] GDPR audit completo
+- [ ] 2FA per tutti gli utenti
 
-# Roadmap Progetto
+### Q3 2025
+- [ ] Zero-trust architecture
+- [ ] End-to-end encryption
+- [ ] Blockchain audit trail
+- [ ] Bug bounty program
 
-> **Nota**: Per una versione più aggiornata e dettagliata di questa documentazione, consulta [Roadmap in Bashscripts](../bashscripts/docs/roadmap.md)
+## 🌍 Internazionalizzazione
 
-## Collegamenti tra versioni di roadmap.md
-* [roadmap.md](../bashscripts/docs/roadmap.md)
-* [roadmap.md](roadmap.md)
-* [roadmap.md](../laravel/Modules/Gdpr/docs/roadmap.md)
-* [roadmap.md](../laravel/Modules/Notify/docs/roadmap.md)
-* [roadmap.md](../laravel/Modules/Xot/docs/roadmap.md)
-* [roadmap.md](../laravel/Modules/Dental/docs/roadmap.md)
-* [roadmap.md](../laravel/Modules/User/docs/roadmap.md)
-* [roadmap.md](../laravel/Modules/UI/docs/roadmap.md)
-* [roadmap.md](../laravel/Modules/Lang/docs/roadmap.md)
-* [roadmap.md](../laravel/Modules/Job/docs/roadmap.md)
-* [roadmap.md](../laravel/Modules/Media/docs/roadmap.md)
-* [roadmap.md](../laravel/Modules/Tenant/docs/roadmap.md)
-* [roadmap.md](../laravel/Modules/Activity/docs/roadmap.md)
-* [roadmap.md](../laravel/Modules/Patient/docs/roadmap.md)
-* [roadmap.md](../laravel/Modules/Cms/docs/roadmap.md)
-* [roadmap.md](../laravel/Themes/One/docs/roadmap.md)
+### Lingue Supportate
+- ✅ Italiano (100%)
+- ✅ Inglese (90%)
+- 📅 Spagnolo (Q3 2025)
+- 📅 Francese (Q4 2025)
+- 📅 Tedesco (Q1 2026)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 - [Documentazione modulo Tenant](../laravel/Modules/Tenant/docs/README.md)
 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+### Localizzazione
+- [ ] Formati data/ora regionali
+- [ ] Valute multiple
+- [ ] Normative locali
+- [ ] Integrazioni SSN regionali
+
+## 🤝 Partnership e Integrazioni
+
+### In Corso
+- ANDI (Associazione Nazionale Dentisti Italiani)
+- INMP (Istituto Nazionale Migrazione e Povertà)
+- Università partner per ricerca
+
+### Pianificate
+- Ministero della Salute
+- Regioni italiane
+- Assicurazioni sanitarie
+- Provider tecnologici
+
+## 📱 Mobile Roadmap
+
+### MVP (Q2 2025)
+- [ ] Accesso pazienti
+- [ ] Prenotazione appuntamenti
+- [ ] Visualizzazione cartella clinica
+- [ ] Notifiche push
+
+### Full Release (Q3 2025)
+- [ ] Telemedicina mobile
+- [ ] Upload documenti
+- [ ] Chat con medico
+- [ ] Pagamenti in-app
+
+## 🎯 Milestone Principali
+
+### Q2 2025
+- **Release 1.0**: Sistema completo per cliniche
+- **Mobile Beta**: App per pazienti
+- **API v1**: REST API pubblica
+
+### Q3 2025
+- **Release 2.0**: Telemedicina integrata
+- **Mobile 1.0**: App completa
+- **Analytics Pro**: Dashboard avanzate
+
+### Q4 2025
+- **Enterprise**: White-label solution
+- **Compliance**: ISO 27001
+- **Scale**: 10k+ utenti attivi
+
+### Q1 2026
+- **AI Integration**: Diagnostica assistita
+- **IoT**: Dispositivi connessi
+- **Global**: Espansione internazionale
+
+## 📊 Budget e Risorse
+
+### Team Attuale
+- 2 Backend Developer
+- 1 Frontend Developer
+- 1 UI/UX Designer
+- 1 Project Manager
+- 1 QA Engineer
+
+### Espansione Pianificata
+- +2 Mobile Developer (Q2 2025)
+- +1 DevOps Engineer (Q3 2025)
+- +1 Data Scientist (Q4 2025)
+- +2 Support Engineer (Q1 2026)
+
+## 🔗 Documentazione Correlata
+
+- 📋 [Stato Avanzamento Dettagliato](stato_avanzamenti_lavori_2025_05_28.md)
+- 💼 [Piano Business](business-plan.md)
+- 🔧 [Architettura Tecnica](architecture/README.md)
+- 📊 [Analisi di Mercato](analisi/mercato.md)
+- 🚀 [Piano di Deployment](deployment-plan.md)
+
+## 📝 Note di Versione
+
+### v0.9.0 (Current)
+- Core system completo
+- Gestione pazienti funzionale
+- Multi-tenant operativo
+- Admin panel completo
+
+### v1.0.0 (Target: Giugno 2025)
+- Tutti i moduli core stabili
+- App mobile beta
+- API pubblica v1
+- Documentazione completa
+
+### v2.0.0 (Target: Settembre 2025)
+- Telemedicina integrata
+- AI features base
+- Mobile app completa
+- Enterprise features
+
+---
+
+**Ultimo Aggiornamento**: 2025-05-28  
+**Responsabile**: Team SaluteOra  
+**Review Prossima**: 2025-06-15
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)

@@ -123,7 +123,10 @@ class AppointmentController extends Controller { ... }
 
 1. **Comandi Artisan**
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 # Verifica struttura moduli
 php artisan module:check-structure
 
@@ -133,7 +136,10 @@ php artisan make:module:enum SaluteOra AppointmentType
 
 2. **Script di Validazione**
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 # Verifica percorsi
 ./vendor/bin/phpstan analyse --paths-file=paths.txt
 
@@ -169,3 +175,7 @@ php artisan make:module:enum SaluteOra AppointmentType
 
 ---
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 28 Maggio 2025* 
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)

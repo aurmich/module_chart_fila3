@@ -9,6 +9,7 @@ use Livewire\Component;
 use Illuminate\Support\Facades\Http;
 use Modules\SaluteOra\Enums\AppointmentStatus;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\SaluteOra\Enums\AppointmentTypeEnum;
 
 class Calendar extends Component
@@ -18,6 +19,9 @@ class Calendar extends Component
     public array $filters = [
 =======
 use Modules\SaluteOra\Enums\AppointmentType;
+=======
+use Modules\SaluteOra\Enums\AppointmentTypeEnum;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
 class Calendar extends Component
 {
@@ -160,10 +164,14 @@ class Calendar extends Component
     public function getTypesProperty()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return collect(AppointmentTypeEnum::cases())->mapWithKeys(fn ($type) => [
 =======
         return collect(AppointmentType::cases())->mapWithKeys(fn ($type) => [
 >>>>>>> 2099645a (.)
+=======
+        return collect(AppointmentTypeEnum::cases())->mapWithKeys(fn ($type) => [
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
             $type->value => $type->getLabel()
         ]);
     }

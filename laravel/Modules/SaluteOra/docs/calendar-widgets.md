@@ -15,9 +15,13 @@ namespace Modules\SaluteOra\Filament\Widgets;
 use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
 use Modules\SaluteOra\Models\Appointment;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\SaluteOra\App\Enums\AppointmentType;
 =======
 >>>>>>> 2099645a (.)
+=======
+use Modules\SaluteOra\App\Enums\AppointmentType;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
 class DoctorScheduleWidget extends \Saade\FilamentFullCalendar\Widgets\FullCalendarWidget
 {
@@ -83,9 +87,13 @@ namespace Modules\SaluteOra\Filament\Widgets;
 use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
 use Modules\SaluteOra\Models\Appointment;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\SaluteOra\App\Enums\AppointmentType;
 =======
 >>>>>>> 2099645a (.)
+=======
+use Modules\SaluteOra\App\Enums\AppointmentType;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
 class PatientAppointmentsWidget extends \Saade\FilamentFullCalendar\Widgets\FullCalendarWidget
 {
@@ -224,9 +232,13 @@ use Livewire\Component;
 use Modules\SaluteOra\Models\Appointment;
 use Modules\SaluteOra\Models\Patient;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\SaluteOra\App\Enums\AppointmentType;
 =======
 >>>>>>> 2099645a (.)
+=======
+use Modules\SaluteOra\App\Enums\AppointmentType;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
 class AppointmentModal extends Component
 {
@@ -516,9 +528,13 @@ use App\Models\User;
 use Modules\SaluteOra\Models\Appointment;
 use Tests\TestCase;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\SaluteOra\App\Enums\AppointmentType;
 =======
 >>>>>>> 2099645a (.)
+=======
+use Modules\SaluteOra\App\Enums\AppointmentType;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
 class CalendarWidgetsTest extends TestCase
 {
@@ -667,8 +683,14 @@ public function boot()
    - Configure logging
    - Set up performance monitoring
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 > **Nota di prevenzione:**
 > L'enum AppointmentType deve essere sempre posizionato in `Modules/SaluteOra/app/Enums/AppointmentType.php` e importato con il namespace corretto. Aggiornare sempre la documentazione e i file .mdc windsurf/cursor in caso di modifica del path.
 =======
 >>>>>>> 2099645a (.)
+=======
+
+> **Nota di prevenzione:**
+> L'enum AppointmentType deve essere sempre posizionato in `Modules/SaluteOra/app/Enums/AppointmentType.php` e importato con il namespace corretto. Aggiornare sempre la documentazione e i file .mdc windsurf/cursor in caso di modifica del path.
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)

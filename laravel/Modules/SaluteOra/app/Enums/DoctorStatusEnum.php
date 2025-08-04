@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Enums;
 
+<<<<<<< HEAD
 use Filament\Support\Contracts\HasLabel;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasColor;
@@ -18,19 +19,33 @@ use Filament\Support\Contracts\HasColor;
  * @method static self[] cases()
  */
 enum DoctorStatusEnum: string implements HasLabel, HasIcon, HasColor
+=======
+enum DoctorStatusEnum implements FilamentSupportContractsHasLabel: string
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 {
     case PENDING = 'pending';
     case APPROVED = 'approved';
     case REJECTED = 'rejected';
+<<<<<<< HEAD
 
 
     // Alias per retrocompatibilità
     //class_alias(DoctorStatusEnum::class, 'Modules\\SaluteOra\\Enums\\DoctorStatus');
+=======
+}
+
+// Alias per retrocompatibilità
+class_alias(DoctorStatusEnum::class, 'Modules\\SaluteOra\\Enums\\DoctorStatus');
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
     /**
      * Get the translated label for the enum case.
      */
+<<<<<<< HEAD
     public function getLabel(): string
+=======
+    public function getLabel(): ?string
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     {
         return match ($this) {
             self::PENDING => __('saluteora::enums.doctorstatus.pending'),
@@ -38,6 +53,7 @@ enum DoctorStatusEnum: string implements HasLabel, HasIcon, HasColor
             self::REJECTED => __('saluteora::enums.doctorstatus.rejected'),
         };
     }
+<<<<<<< HEAD
 
     /**
      * Get the icon for the enum case.
@@ -63,3 +79,5 @@ enum DoctorStatusEnum: string implements HasLabel, HasIcon, HasColor
         };
     }
 }
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)

@@ -11,9 +11,13 @@ use Modules\Notify\Actions\SendNotificationAction;
 use Modules\SaluteOra\Models\Patient;
 use Spatie\QueueableAction\QueueableAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\SaluteOra\Enums\AppointmentTypeEnum;
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+use Modules\SaluteOra\Enums\AppointmentTypeEnum;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
 /**
  * Azione per inviare notifiche relative agli appuntamenti.

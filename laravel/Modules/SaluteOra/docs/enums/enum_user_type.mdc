@@ -4,6 +4,7 @@ globs:
 alwaysApply: false
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regola Enum UserTypeEnum (STI Parental)
 
 ## Obiettivo
@@ -14,6 +15,12 @@ Gestire SEMPRE il tipo utente tramite enum PHP 8.1+ (UserTypeEnum), MAI tramite 
 ## Obiettivo
 Gestire SEMPRE il tipo utente tramite enum PHP 8.1+ (UserType), MAI tramite costanti stringa o integer.
 >>>>>>> bead9c28 (fix case)
+=======
+# Regola Enum UserTypeEnum (STI Parental)
+
+## Obiettivo
+Gestire SEMPRE il tipo utente tramite enum PHP 8.1+ (UserTypeEnum), MAI tramite costanti stringa o integer.
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
 ## Definizione
 ```php
@@ -22,10 +29,14 @@ namespace Modules\SaluteOra\Enums;
 use Filament\Support\Contracts\HasLabel;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 enum UserTypeEnum: string implements HasLabel
 =======
 enum UserType: string implements HasLabel
 >>>>>>> bead9c28 (fix case)
+=======
+enum UserTypeEnum: string implements HasLabel
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 {
     case ADMIN = 'admin';
     case DOCTOR = 'doctor';
@@ -44,6 +55,7 @@ enum UserType: string implements HasLabel
 
 ## Regole
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Usare SEMPRE l'enum UserTypeEnum per il campo `type` nei modelli User/Patient/Doctor/Admin (STI Parental)
 - Cast automatico Eloquent:
   ```php
@@ -56,6 +68,13 @@ enum UserType: string implements HasLabel
   protected $casts = [
       'type' => UserType::class,
 >>>>>>> bead9c28 (fix case)
+=======
+- Usare SEMPRE l'enum UserTypeEnum per il campo `type` nei modelli User/Patient/Doctor/Admin (STI Parental)
+- Cast automatico Eloquent:
+  ```php
+  protected $casts = [
+      'type' => UserTypeEnum::class,
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
   ];
   ```
 - In Filament, usare l'enum per:
@@ -70,10 +89,14 @@ enum UserType: string implements HasLabel
 - Usare l'enum direttamente in Select/Radio/Badge:
   ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
   Select::make('type')->options(UserTypeEnum::class)
 =======
   Select::make('type')->options(UserType::class)
 >>>>>>> bead9c28 (fix case)
+=======
+  Select::make('type')->options(UserTypeEnum::class)
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
   ```
 - Vedi: [Filament Enums Docs](mdc:https:/filamentphp.com/docs/3.x/support/enums)
 

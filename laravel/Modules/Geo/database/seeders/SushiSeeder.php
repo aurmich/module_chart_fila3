@@ -7,7 +7,10 @@ namespace Modules\Geo\Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\DB;
+<<<<<<< HEAD
 use function Safe\json_decode;
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
 class SushiSeeder extends Seeder
 {
@@ -32,6 +35,7 @@ class SushiSeeder extends Seeder
         
         DB::table('comuni')->truncate();
         
+<<<<<<< HEAD
         // Esempio di come implementare il seeding con type safety se necessario:
         if (is_array($data)) {
             foreach ($data as $comune) {
@@ -51,10 +55,25 @@ class SushiSeeder extends Seeder
                     ]);
                 }
             }
+=======
+        foreach ($data as $comune) {
+            DB::table('comuni')->insert([
+                'id' => $comune['id'],
+                'regione' => $comune['regione'],
+                'provincia' => $comune['provincia'],
+                'comune' => $comune['comune'],
+                'cap' => $comune['cap'],
+                'lat' => $comune['lat'],
+                'lng' => $comune['lng'],
+                'created_at' => $comune['created_at'] ?? now(),
+                'updated_at' => $comune['updated_at'] ?? now(),
+            ]);
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
         }
         
         $this->command->info('Database Sushi popolato con successo');
     }
+<<<<<<< HEAD
     
     /**
      * Valida la struttura dati di un comune.
@@ -74,4 +93,6 @@ class SushiSeeder extends Seeder
         
         return true;
     }
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 } 

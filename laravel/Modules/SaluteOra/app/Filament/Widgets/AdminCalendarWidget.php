@@ -14,6 +14,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\SaluteOra\Enums\AppointmentStatusEnum;
 use Modules\SaluteOra\Enums\AppointmentTypeEnum;
 use Modules\SaluteOra\Enums\UserTypeEnum;
@@ -28,6 +29,11 @@ use function Safe\strtotime;
 use Modules\SaluteOra\Enums\AppointmentStatus;
 use Modules\SaluteOra\Enums\AppointmentType;
 use Modules\SaluteOra\Enums\UserType;
+=======
+use Modules\SaluteOra\Enums\AppointmentStatusEnum;
+use Modules\SaluteOra\Enums\AppointmentTypeEnum;
+use Modules\SaluteOra\Enums\UserTypeEnum;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 use Modules\SaluteOra\Models\Appointment;
 use Modules\SaluteOra\Models\Studio;
 use Modules\SaluteOra\Traits\HasFullCalendarConfig;
@@ -167,6 +173,7 @@ class AdminCalendarWidget extends FullCalendarWidget
     public static function canView(): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Auth::check() && Auth::user()?->type === UserTypeEnum::ADMIN->value;
     }
 
@@ -252,6 +259,9 @@ class AdminCalendarWidget extends FullCalendarWidget
      * Fetch events for the calendar.
 =======
         return Auth::check() && Auth::user()?->type === UserType::ADMIN;
+=======
+        return Auth::check() && Auth::user()?->type === UserTypeEnum::ADMIN->value;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     }
 
     /**
@@ -372,10 +382,14 @@ class AdminCalendarWidget extends FullCalendarWidget
                         ->searchable()
                         ->required(),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
                     'type' => Select::make('type')
                         ->label('Tipo')
                         ->options(AppointmentTypeEnum::class)
                         ->searchable()
+<<<<<<< HEAD
                         ->required(),
                     DateTimePicker::make('starts_at')
                         ->required(),
@@ -389,15 +403,25 @@ class AdminCalendarWidget extends FullCalendarWidget
 =======
                     Select::make('type')
                         ->options(AppointmentType::class)
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
                         ->required(),
                     DateTimePicker::make('start_time')
                         ->required(),
                     DateTimePicker::make('end_time')
                         ->required(),
+<<<<<<< HEAD
                     Select::make('status')
                         ->options(AppointmentStatus::class)
                         ->default(AppointmentStatus::SCHEDULED),
 >>>>>>> 2099645a (.)
+=======
+                    'status' => Select::make('status')
+                        ->label('Stato')
+                        ->options(AppointmentStatusEnum::class)
+                        ->searchable()
+                        ->default(AppointmentStatusEnum::SCHEDULED->value),
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
                     Textarea::make('notes')
                         ->rows(3),
                     Toggle::make('emergency'),
@@ -461,10 +485,14 @@ class AdminCalendarWidget extends FullCalendarWidget
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
 =======
         /**
 >>>>>>> 2099645a (.)
+=======
+    /**
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
      * Gestisce la selezione di un range di date.
      *
      * @param string $start
@@ -628,7 +656,7 @@ class AdminCalendarWidget extends FullCalendarWidget
 =======
             'today_appointments' => Appointment::whereDate('start_time', $today)->count(),
             'week_appointments' => Appointment::whereBetween('start_time', [$today, $endOfWeek])->count(),
-            'pending_appointments' => Appointment::where('status', AppointmentStatus::PENDING)->count(),
+            'pending_appointments' => Appointment::where('status', AppointmentStatusEnum::PENDING->value)->count(),
             'emergency_appointments' => Appointment::emergency()->whereDate('start_time', '>=', $today)->count(),
 >>>>>>> 2099645a (.)
             'total_studios' => Studio::where('active', true)->count(),

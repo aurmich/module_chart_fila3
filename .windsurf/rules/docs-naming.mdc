@@ -1,7 +1,11 @@
 ---
 description:
 globs:
+<<<<<<< HEAD
 alwaysApply: true
+=======
+alwaysApply: false
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 ---
 # Documentation Naming Convention Rule
 
@@ -30,6 +34,7 @@ docs/form-architecture.md
 ```
 
 ## Related
+<<<<<<< HEAD
 - [Documentation Structure](mdc:../../docs/struttura-documentazione.md)
 - [Best Practices](mdc:../../docs/best-practices.md)
 - [Coding Standards](mdc:../../docs/standards/coding-standards.md)
@@ -42,3 +47,8 @@ docs/form-architecture.md
 - Filosofia: un solo punto di verità.
 - Religione: "Non avrai altro path all'infuori del relativo".
 - Zen: serenità nella navigazione, nessun link rotto dopo un refactor.
+=======
+- [Documentation Structure](../../docs/struttura-documentazione.md)
+- [Best Practices](../../docs/best-practices.md)
+- [Coding Standards](../../docs/standards/coding-standards.md)
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)

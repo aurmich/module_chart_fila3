@@ -14,10 +14,13 @@ use Webmozart\Assert\Assert;
 
 use function Safe\json_encode;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use function Safe\json_decode;
 use function Safe\file_get_contents;
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 use function Safe\unlink;
 
 trait SushiToJson
@@ -37,6 +40,7 @@ trait SushiToJson
         $path = $this->getJsonFile();
         $data = json_decode(file_get_contents($path), true);
 <<<<<<< HEAD
+<<<<<<< HEAD
         if(!is_array($data)){
             throw new \Exception('Data is not array ['.$path.']');
         }
@@ -53,6 +57,8 @@ trait SushiToJson
         }
         Assert::isArray($data);
 =======
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
         foreach($data as $id => $item){
             foreach($item as $key => $value){
                 if(is_array($value)){
@@ -63,7 +69,10 @@ trait SushiToJson
             $data[$id]=$item;
         }
         
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
         return $data;
     }
 

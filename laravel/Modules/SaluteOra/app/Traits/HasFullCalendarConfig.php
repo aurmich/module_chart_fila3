@@ -8,10 +8,14 @@ use Filament\Facades\Filament;
 use Modules\SaluteOra\Models\Appointment;
 use Modules\SaluteOra\Models\Studio;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\SaluteOra\Enums\UserTypeEnum;
 =======
 use Modules\SaluteOra\Enums\UserType;
 >>>>>>> 2099645a (.)
+=======
+use Modules\SaluteOra\Enums\UserTypeEnum;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
 /**
  * Trait per configurazioni comuni dei widget FullCalendar.
@@ -228,6 +232,7 @@ trait HasFullCalendarConfig
 
         return match ($user->type) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             UserTypeEnum::ADMIN => true,
             UserTypeEnum::DOCTOR => $appointment->doctor_id === $user->id ||
                                $user->hasRole('studio_admin'),
@@ -238,6 +243,12 @@ trait HasFullCalendarConfig
                                $user->hasRole('studio_admin'),
             UserType::PATIENT => false,
 >>>>>>> 2099645a (.)
+=======
+            UserTypeEnum::ADMIN => true,
+            UserTypeEnum::DOCTOR => $appointment->doctor_id === $user->id ||
+                               $user->hasRole('studio_admin'),
+            UserTypeEnum::PATIENT => false,
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
             default => false,
         };
     }
@@ -258,6 +269,7 @@ trait HasFullCalendarConfig
 
         return match ($user->type) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             UserTypeEnum::ADMIN => true,
             UserTypeEnum::DOCTOR => $appointment->doctor_id === $user->id ||
                                ($user->hasRole('studio_admin') &&
@@ -270,6 +282,13 @@ trait HasFullCalendarConfig
                                 $appointment->studio_id === $user->studio_id),
             UserType::PATIENT => $appointment->patient_id === $user->id,
 >>>>>>> 2099645a (.)
+=======
+            UserTypeEnum::ADMIN => true,
+            UserTypeEnum::DOCTOR => $appointment->doctor_id === $user->id ||
+                               ($user->hasRole('studio_admin') &&
+                                $appointment->studio_id === $user->studio_id),
+            UserTypeEnum::PATIENT => $appointment->patient_id === $user->id,
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
             default => false,
         };
     }

@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
@@ -15,11 +16,14 @@ name('patient.book');
 ?>
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 {{--
     Questa pagina include direttamente il widget Filament modularizzato per la prenotazione paziente.
     Policy: nessun form custom, solo widget Filament.
     Vedi docs/roadmap_frontoffice/30-patient-book.md e docs/rules/filament_best_practices.md
 --}}
+<<<<<<< HEAD
 
 {{-- Template standard per l'integrazione dei widget --}}
 <x-layouts.app>
@@ -80,17 +84,19 @@ new class extends Component
 };
 
 ?>
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
+{{-- Template standard per l'integrazione dei widget --}}
 <x-layouts.app>
-    @volt('patient.book')
-    <div class="min-h-screen bg-gradient-to-b from-blue-50 to-white py-12">
-
-        <!-- Card contenente il form di registrazione -->
-        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
-            @livewire(\Modules\SaluteOra\Filament\Widgets\Patient\FindDoctorAndAppointmentWidget::class, [])
-        </div>
-
+<div class="page-container">
+    <div class="content-wrapper">
+        @livewire(\Modules\SaluteOra\Filament\Widgets\Patient\FindDoctorAndAppointmentWidget::class)
     </div>
-    @endvolt
+</div>
 </x-layouts.app>
+<<<<<<< HEAD
 >>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
+=======
+
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)

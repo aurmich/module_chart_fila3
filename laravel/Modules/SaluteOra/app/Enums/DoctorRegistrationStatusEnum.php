@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\SaluteOra\Enums;
+<<<<<<< HEAD
 use Filament\Support\Contracts\HasLabel;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasColor;
@@ -18,6 +19,13 @@ use function Safe\class_alias;
  * @method static self[] cases()
  */
 enum DoctorRegistrationStatusEnum: string implements HasLabel, HasIcon, HasColor
+=======
+
+/**
+ * Enum per gli stati del workflow di registrazione del dottore.
+ */
+enum DoctorRegistrationStatusEnum implements FilamentSupportContractsHasLabel: string
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 {
     /**
      * Bozza - Il processo di registrazione è stato iniziato ma non completato.
@@ -59,6 +67,7 @@ enum DoctorRegistrationStatusEnum: string implements HasLabel, HasIcon, HasColor
             self::COMPLETED => 'Completato',
         };
     }
+<<<<<<< HEAD
 
     /**
      * Restituisce l'icona per lo stato.
@@ -91,6 +100,8 @@ enum DoctorRegistrationStatusEnum: string implements HasLabel, HasIcon, HasColor
             self::COMPLETED => 'success',
         };
     }
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     
     /**
      * Verifica se lo stato corrente è un stato finale (approvato, rifiutato o completato).
@@ -121,4 +132,8 @@ enum DoctorRegistrationStatusEnum: string implements HasLabel, HasIcon, HasColor
 }
 
 // Alias for backward compatibility
+<<<<<<< HEAD
 //class_alias(DoctorRegistrationStatusEnum::class, 'Modules\SaluteOra\Enums\DoctorRegistrationStatus');
+=======
+class_alias(DoctorRegistrationStatusEnum::class, 'Modules\SaluteOra\Enums\DoctorRegistrationStatus');
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)

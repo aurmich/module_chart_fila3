@@ -170,9 +170,9 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
-use Modules\SaluteOra\Enums\AppointmentStatus;
-use Modules\SaluteOra\Enums\AppointmentType;
-use Modules\SaluteOra\Enums\UserType;
+use Modules\SaluteOra\Enums\AppointmentStatusEnum;
+use Modules\SaluteOra\Enums\AppointmentTypeEnum;
+use Modules\SaluteOra\Enums\UserTypeEnum;
 use Modules\SaluteOra\Models\Appointment;
 use Modules\SaluteOra\Models\Patient;
 use Modules\SaluteOra\Traits\HasFullCalendarConfig;
@@ -217,9 +217,10 @@ class DoctorCalendarWidget extends FullCalendarWidget
      */
     public static function canView(): bool
     {
-        return Auth::check() &&
-               Auth::user()?->type === UserType::DOCTOR &&
-               Filament::getTenant() !== null;
+        if (!Auth::check() || Auth::user()?->type !== UserTypeEnum::DOCTOR->value) {
+            return false;
+        }
+        return Filament::getTenant() !== null;
     }
 
     /**
@@ -240,7 +241,7 @@ class DoctorCalendarWidget extends FullCalendarWidget
 
             // Se non è admin, mostra solo propri appuntamenti
             $user = Auth::user();
-            if ($user && $user->type !== UserType::ADMIN) {
+            if ($user && $user->type !== UserTypeEnum::ADMIN->value) {
                 $query->where('doctor_id', Auth::id());
             }
 
@@ -265,16 +266,18 @@ class DoctorCalendarWidget extends FullCalendarWidget
                         ->relationship('patient', 'full_name')
                         ->searchable()
                         ->required(),
-                    Select::make('type')
-                        ->options(AppointmentType::class)
-                        ->required(),
+                    'type' => Select::make('type')
+                        ->label('Tipo')
+                        ->options(AppointmentTypeEnum::class)
+                        ->searchable(),
                     DateTimePicker::make('start_time')
                         ->required(),
                     DateTimePicker::make('end_time')
                         ->required(),
-                    Select::make('status')
-                        ->options(AppointmentStatus::class)
-                        ->default(AppointmentStatus::SCHEDULED),
+                    'status' => Select::make('status')
+                        ->label('Stato')
+                        ->options(AppointmentStatusEnum::class)
+                        ->searchable(),
                     Textarea::make('notes')
                         ->rows(3),
                     Toggle::make('emergency'),

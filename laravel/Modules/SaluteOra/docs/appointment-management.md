@@ -37,7 +37,10 @@ enum AppointmentTypeEnum: string
     case CHECKUP = 'checkup';
     case CONSULTATION = 'consultation';
     case TREATMENT = 'treatment';
+<<<<<<< HEAD
     case AVAILABILITY = 'availability';
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
     public function getLabel(): string
     {
@@ -45,7 +48,10 @@ enum AppointmentTypeEnum: string
             self::CHECKUP => 'Controllo',
             self::CONSULTATION => 'Consulenza',
             self::TREATMENT => 'Trattamento',
+<<<<<<< HEAD
             self::AVAILABILITY => 'Disponibilità',
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
         };
     }
 }
@@ -56,7 +62,10 @@ enum AppointmentStatusEnum: string
     case CONFIRMED = 'confirmed';
     case CANCELLED = 'cancelled';
     case COMPLETED = 'completed';
+<<<<<<< HEAD
     case AVAILABLE = 'available';
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
     public function getColor(): string
     {
@@ -65,7 +74,10 @@ enum AppointmentStatusEnum: string
             self::CONFIRMED => 'success',
             self::CANCELLED => 'danger',
             self::COMPLETED => 'info',
+<<<<<<< HEAD
             self::AVAILABLE => 'success',
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
         };
     }
 }
@@ -372,6 +384,7 @@ class AppointmentLogger
 
 - [Implementazione del Calendario](calendar-date-picker-implementation.md)
 - [Best Practices per i Calendari](calendar-best-practices.md)
+<<<<<<< HEAD
 - [Documentazione Filament](https://filamentphp.com/docs)
 
 ## [AGGIORNAMENTO 2024-06-XX] - Standardizzazione Traduzioni
@@ -566,3 +579,6 @@ class DoctorAvailabilityCalendarWidget extends FullCalendarWidget
 - Un solo punto di verità: sintassi e import corretti, configurazione centralizzata
 - DRY, KISS, serenità del codice: niente hack, niente override strani, tutto documentato e coerente
 - Politica: ogni modulo è autonomo, ma rispetta la centralizzazione delle entità e dei componenti
+=======
+- [Documentazione Filament](https://filamentphp.com/docs) 
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)

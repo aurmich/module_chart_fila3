@@ -15,7 +15,7 @@ use Filament\Tables\Filters\SelectFilter;
 use Modules\SaluteOra\Enums\UserTypeEnum;
 =======
 use Filament\Forms\Components\Select;
-use Modules\SaluteOra\Enums\UserType;
+use Modules\SaluteOra\Enums\UserTypeEnum;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
@@ -48,6 +48,7 @@ class AdminResource extends XotBaseResource
                 ->unique(ignoreRecord: true),
             Forms\Components\Select::make('type')
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ->options(UserTypeEnum::class)
                 ->enum(UserTypeEnum::class)
                 ->required()
@@ -57,6 +58,11 @@ class AdminResource extends XotBaseResource
                 ->required()
                 ->default(UserType::ADMIN),
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+                ->options(UserTypeEnum::class)
+                ->required()
+                ->default(UserTypeEnum::ADMIN),
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
             SelectState::make('state'),
         ];
     }
@@ -91,10 +97,14 @@ class AdminResource extends XotBaseResource
             ->filters([
                 SelectFilter::make('type')
 <<<<<<< HEAD
+<<<<<<< HEAD
                     ->options(UserTypeEnum::class),
 =======
                     ->options(UserType::class),
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+                    ->options(UserTypeEnum::class),
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
                 SelectFilter::make('state')
                     ->options(UserStateEnum::class),
             ])

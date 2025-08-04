@@ -37,10 +37,14 @@ Assicurati di utilizzare PHP 8.1+ e Laravel 9+. Non sono necessari pacchetti agg
 namespace App\Enums;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 enum UserTypeEnum: string
 =======
 enum UserType: string
 >>>>>>> 9df8f556 (fix .md)
+=======
+enum UserTypeEnum: string
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 {
     case ADMIN = 'admin';
     case DOCTOR = 'doctor';
@@ -69,10 +73,14 @@ enum UserType: string
 ## Enum per i Tipi Utente
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### UserTypeEnum Enum
 =======
 ### UserType Enum
 >>>>>>> 9df8f556 (fix .md)
+=======
+### UserTypeEnum Enum
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
 ```php
 <?php
@@ -82,10 +90,14 @@ namespace App\Enums;
 use Filament\Support\Contracts\HasLabel;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 enum UserTypeEnum: string implements HasLabel
 =======
 enum UserType: string implements HasLabel
 >>>>>>> 9df8f556 (fix .md)
+=======
+enum UserTypeEnum: string implements HasLabel
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 {
     case ADMIN = 'admin';
     case DOCTOR = 'doctor';
@@ -143,10 +155,14 @@ enum UserType: string implements HasLabel
 namespace App\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Enums\UserTypeEnum;
 =======
 use App\Enums\UserType;
 >>>>>>> 9df8f556 (fix .md)
+=======
+use App\Enums\UserTypeEnum;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 use Illuminate\Database\Eloquent\Model;
 use Parental\HasChildren;
 
@@ -164,14 +180,19 @@ class User extends Authenticatable
     
     protected $casts = [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'type' => UserTypeEnum::class,
 =======
         'type' => UserType::class,
 >>>>>>> 9df8f556 (fix .md)
+=======
+        'type' => UserTypeEnum::class,
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
         'email_verified_at' => 'datetime',
     ];
     
     protected $childTypes = [
+<<<<<<< HEAD
 <<<<<<< HEAD
         UserTypeEnum::ADMIN->value => Admin::class,
         UserTypeEnum::DOCTOR->value => Doctor::class,
@@ -181,62 +202,91 @@ class User extends Authenticatable
         UserType::DOCTOR->value => Doctor::class,
         UserType::PATIENT->value => Patient::class,
 >>>>>>> 9df8f556 (fix .md)
+=======
+        UserTypeEnum::ADMIN->value => Admin::class,
+        UserTypeEnum::DOCTOR->value => Doctor::class,
+        UserTypeEnum::PATIENT->value => Patient::class,
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     ];
     
     // Metodi di utilità
     public function isAdmin(): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->type === UserTypeEnum::ADMIN;
 =======
         return $this->type === UserType::ADMIN;
 >>>>>>> 9df8f556 (fix .md)
+=======
+        return $this->type === UserTypeEnum::ADMIN;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     }
     
     public function isDoctor(): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->type === UserTypeEnum::DOCTOR;
 =======
         return $this->type === UserType::DOCTOR;
 >>>>>>> 9df8f556 (fix .md)
+=======
+        return $this->type === UserTypeEnum::DOCTOR;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     }
     
     public function isPatient(): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->type === UserTypeEnum::PATIENT;
 =======
         return $this->type === UserType::PATIENT;
 >>>>>>> 9df8f556 (fix .md)
+=======
+        return $this->type === UserTypeEnum::PATIENT;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     }
     
     // Scope per query
     public function scopeAdmins($query)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $query->where('type', UserTypeEnum::ADMIN->value);
 =======
         return $query->where('type', UserType::ADMIN->value);
 >>>>>>> 9df8f556 (fix .md)
+=======
+        return $query->where('type', UserTypeEnum::ADMIN->value);
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     }
     
     public function scopeDoctors($query)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $query->where('type', UserTypeEnum::DOCTOR->value);
 =======
         return $query->where('type', UserType::DOCTOR->value);
 >>>>>>> 9df8f556 (fix .md)
+=======
+        return $query->where('type', UserTypeEnum::DOCTOR->value);
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     }
     
     public function scopePatients($query)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $query->where('type', UserTypeEnum::PATIENT->value);
 =======
         return $query->where('type', UserType::PATIENT->value);
 >>>>>>> 9df8f556 (fix .md)
+=======
+        return $query->where('type', UserTypeEnum::PATIENT->value);
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     }
 }
 ```
@@ -247,14 +297,19 @@ class User extends Authenticatable
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Enums\UserTypeEnum;
 =======
 use App\Enums\UserType;
 >>>>>>> 9df8f556 (fix .md)
+=======
+use App\Enums\UserTypeEnum;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 use Filament\Forms\Components\Select;
 
 Select::make('type')
     ->label('Tipo Utente')
+<<<<<<< HEAD
 <<<<<<< HEAD
     ->options(UserTypeEnum::class) // Sfrutta l'interfaccia HasLabel
     ->enum(UserTypeEnum::class)
@@ -262,6 +317,10 @@ Select::make('type')
     ->options(UserType::class) // Sfrutta l'interfaccia HasLabel
     ->enum(UserType::class)
 >>>>>>> 9df8f556 (fix .md)
+=======
+    ->options(UserTypeEnum::class) // Sfrutta l'interfaccia HasLabel
+    ->enum(UserTypeEnum::class)
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     ->required()
     ->searchable()
     ->reactive()
@@ -274,19 +333,27 @@ Select::make('type')
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Enums\UserTypeEnum;
 =======
 use App\Enums\UserType;
 >>>>>>> 9df8f556 (fix .md)
+=======
+use App\Enums\UserTypeEnum;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 use Filament\Tables\Filters\SelectFilter;
 
 SelectFilter::make('type')
     ->label('Filtra per Tipo')
 <<<<<<< HEAD
+<<<<<<< HEAD
     ->options(UserTypeEnum::class) // Sfrutta l'interfaccia HasLabel
 =======
     ->options(UserType::class) // Sfrutta l'interfaccia HasLabel
 >>>>>>> 9df8f556 (fix .md)
+=======
+    ->options(UserTypeEnum::class) // Sfrutta l'interfaccia HasLabel
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     ->multiple()
     ->query(function (Builder $query, array $state) {
         if (! empty($state['values'])) {
@@ -299,15 +366,20 @@ SelectFilter::make('type')
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Enums\UserTypeEnum;
 =======
 use App\Enums\UserType;
 >>>>>>> 9df8f556 (fix .md)
+=======
+use App\Enums\UserTypeEnum;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 use Filament\Tables\Columns\TextColumn;
 
 TextColumn::make('type')
     ->label('Tipo')
     ->badge()
+<<<<<<< HEAD
 <<<<<<< HEAD
     ->color(fn (string $state): string => UserTypeEnum::from($state)->getColor())
     ->formatStateUsing(fn (string $state): string => UserTypeEnum::from($state)->getLabel())
@@ -315,6 +387,10 @@ TextColumn::make('type')
     ->color(fn (string $state): string => UserType::from($state)->getColor())
     ->formatStateUsing(fn (string $state): string => UserType::from($state)->getLabel())
 >>>>>>> 9df8f556 (fix .md)
+=======
+    ->color(fn (string $state): string => UserTypeEnum::from($state)->getColor())
+    ->formatStateUsing(fn (string $state): string => UserTypeEnum::from($state)->getLabel())
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     ->sortable()
     ->searchable();
 ```
@@ -338,16 +414,21 @@ use Illuminate\Validation\Rules\Enum;
 
 $request->validate([
 <<<<<<< HEAD
+<<<<<<< HEAD
     'type' => ['required', new Enum(UserTypeEnum::class)],
 =======
     'type' => ['required', new Enum(UserType::class)],
 >>>>>>> 9df8f556 (fix .md)
+=======
+    'type' => ['required', new Enum(UserTypeEnum::class)],
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 ]);
 ```
 
 ### Cast Personalizzato
 
 ```php
+<<<<<<< HEAD
 <<<<<<< HEAD
 use App\Enums\UserTypeEnum;
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
@@ -360,24 +441,35 @@ class UserTypeEnumCast implements CastsAttributes
         return UserTypeEnum::from($value);
 =======
 use App\Enums\UserType;
+=======
+use App\Enums\UserTypeEnum;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 use Illuminate\Database\Eloquent\Model;
 
-class UserTypeCast implements CastsAttributes
+class UserTypeEnumCast implements CastsAttributes
 {
     public function get(Model $model, string $key, $value, array $attributes)
     {
+<<<<<<< HEAD
         return UserType::from($value);
 >>>>>>> 9df8f556 (fix .md)
+=======
+        return UserTypeEnum::from($value);
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     }
 
     public function set(Model $model, string $key, $value, array $attributes)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($value instanceof UserTypeEnum) {
 =======
         if ($value instanceof UserType) {
 >>>>>>> 9df8f556 (fix .md)
+=======
+        if ($value instanceof UserTypeEnum) {
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
             return $value->value;
         }
         
@@ -391,10 +483,14 @@ class UserTypeCast implements CastsAttributes
 ```php
 protected $casts = [
 <<<<<<< HEAD
+<<<<<<< HEAD
     'type' => UserTypeEnumCast::class,
 =======
     'type' => UserTypeCast::class,
 >>>>>>> 9df8f556 (fix .md)
+=======
+    'type' => UserTypeEnumCast::class,
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 ];
 ```
 
@@ -406,6 +502,7 @@ Crea un file di traduzione in `lang/en/enums.php`:
 return [
     'user_type' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         UserTypeEnum::ADMIN->value => 'Administrator',
         UserTypeEnum::DOCTOR->value => 'Doctor',
         UserTypeEnum::PATIENT->value => 'Patient',
@@ -414,6 +511,11 @@ return [
         UserType::DOCTOR->value => 'Doctor',
         UserType::PATIENT->value => 'Patient',
 >>>>>>> 9df8f556 (fix .md)
+=======
+        UserTypeEnum::ADMIN->value => 'Administrator',
+        UserTypeEnum::DOCTOR->value => 'Doctor',
+        UserTypeEnum::PATIENT->value => 'Patient',
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     ],
 ];
 ```

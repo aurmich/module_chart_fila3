@@ -272,6 +272,9 @@ return array (
       'label' => 'date_time',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     'confirm' => 
     array (
       'label' => 'confirm',
@@ -284,6 +287,7 @@ return array (
     array (
       'label' => 'date',
     ),
+<<<<<<< HEAD
     'Conferma' => 
     array (
       'label' => 'Conferma',
@@ -312,6 +316,8 @@ return array (
 >>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
 =======
 >>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
   ),
   'fields' => 
   array (
@@ -376,11 +382,17 @@ return array (
     array (
       'description' => 'city',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => 'city',
       'placeholder' => 'city',
       'label' => 'city',
 =======
 >>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
+=======
+      'helper_text' => 'city',
+      'placeholder' => 'city',
+      'label' => 'city',
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     ),
     'region' => 
     array (
@@ -397,6 +409,9 @@ return array (
       'label' => 'province',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     'appointment_date' => 
     array (
       'description' => 'appointment_date',
@@ -418,6 +433,7 @@ return array (
       'placeholder' => 'appointment_time',
       'label' => 'appointment_time',
     ),
+<<<<<<< HEAD
     'test_field' => 
     array (
       'description' => 'test_field',
@@ -479,6 +495,8 @@ return array (
 >>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
 =======
 >>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
   ),
 );
 >>>>>>> aurmich/dev

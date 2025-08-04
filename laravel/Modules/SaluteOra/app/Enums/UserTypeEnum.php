@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Enums;
 
 use Filament\Support\Contracts\HasLabel;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Traits\TransTrait;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -29,13 +30,34 @@ enum UserTypeEnum: string implements HasLabel
     case PATIENT = 'patient';
     //case MODERATOR = 'moderator';
     //case STAFF = 'staff';
+=======
+
+/**
+ * Defines the different types of users in the system.
+ */
+enum UserTypeEnum: string implements HasLabel
+{
+    case ADMIN = 'admin';
+    case DOCTOR = 'doctor';
+    case PATIENT = 'patient';
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
     /**
      * Get the translated label for the user type.
      */
+<<<<<<< HEAD
     public function getLabel(): string
     {
         return $this->transClass(self::class,$this->value.'.label');
+=======
+    public function getLabel(): ?string
+    {
+        return match ($this) {
+            self::ADMIN => __('saluteora::enums.user_type.admin'),
+            self::DOCTOR => __('saluteora::enums.user_type.doctor'),
+            self::PATIENT => __('saluteora::enums.user_type.patient'),
+        };
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     }
 
     /**
@@ -43,8 +65,16 @@ enum UserTypeEnum: string implements HasLabel
      */
     public function getColor(): string
     {
+<<<<<<< HEAD
         return $this->transClass(self::class,$this->value.'.color');
 
+=======
+        return match ($this) {
+            self::ADMIN => 'danger',
+            self::DOCTOR => 'primary',
+            self::PATIENT => 'success',
+        };
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     }
 
     /**
@@ -52,13 +82,17 @@ enum UserTypeEnum: string implements HasLabel
      */
     public function getIcon(): string
     {
+<<<<<<< HEAD
         return $this->transClass(self::class,$this->value.'.icon');
         /*
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
         return match ($this) {
             self::ADMIN => 'heroicon-o-shield-check',
             self::DOCTOR => 'heroicon-o-user-circle',
             self::PATIENT => 'heroicon-o-user',
         };
+<<<<<<< HEAD
         */
     }
 
@@ -116,6 +150,21 @@ enum UserTypeEnum: string implements HasLabel
     
 
    
+=======
+    }
+
+    /**
+     * Convert the enum cases to an array suitable for select inputs.
+     *
+     * @return array<string, string>
+     */
+    public static function toSelectArray(): array
+    {
+        return collect(self::cases())
+            ->mapWithKeys(fn (self $type) => [$type->value => $type->getLabel()])
+            ->toArray();
+    }
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 }
 
 // Alias per retrocompatibilità

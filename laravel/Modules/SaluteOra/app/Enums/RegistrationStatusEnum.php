@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Enums;
 
+<<<<<<< HEAD
 use Filament\Support\Contracts\HasLabel;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasColor;
@@ -18,26 +19,41 @@ use Filament\Support\Contracts\HasColor;
  * @method static self[] cases()
  */
 enum RegistrationStatusEnum: string implements HasLabel, HasIcon, HasColor
+=======
+enum RegistrationStatusEnum implements FilamentSupportContractsHasLabel: string
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 {
     case PENDING = 'pending';
     case APPROVED = 'approved';
     case REJECTED = 'rejected';
+<<<<<<< HEAD
     case CANCELLED = 'cancelled';
     case EXPIRED = 'expired';
 
 
 // Alias per retrocompatibilità
 //class_alias(RegistrationStatusEnum::class, 'Modules\\SaluteOra\\Enums\\RegistrationStatus');
+=======
+}
+
+// Alias per retrocompatibilità
+class_alias(RegistrationStatusEnum::class, 'Modules\\SaluteOra\\Enums\\RegistrationStatus');
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
     /**
      * Get the translated label for the enum case.
      */
+<<<<<<< HEAD
     public function getLabel(): string
+=======
+    public function getLabel(): ?string
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     {
         return match ($this) {
             self::PENDING => __('saluteora::enums.registrationstatus.pending'),
             self::APPROVED => __('saluteora::enums.registrationstatus.approved'),
             self::REJECTED => __('saluteora::enums.registrationstatus.rejected'),
+<<<<<<< HEAD
             self::CANCELLED => __('saluteora::enums.registrationstatus.cancelled'),
             self::EXPIRED => __('saluteora::enums.registrationstatus.expired'),
         };
@@ -71,3 +87,7 @@ enum RegistrationStatusEnum: string implements HasLabel, HasIcon, HasColor
         };
     }
 }
+=======
+        };
+    }
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)

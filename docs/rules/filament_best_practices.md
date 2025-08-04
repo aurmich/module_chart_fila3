@@ -447,11 +447,17 @@ ViewEntry::make('preview')
    - ✅ Mantenere la sicurezza dei dati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Root element unico nei widget Livewire/Filament
 Ogni widget Livewire/Filament DEVE restituire un solo root element HTML (es. <div> o <section>). Mai markup "sciolto" o più root. Questo per evitare errori MultipleRootElementsDetectedException. Aggiornare sempre la view e la docstring del widget. Vedi anche docs/xot.md.
 
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+## Root element unico nei widget Livewire/Filament
+Ogni widget Livewire/Filament DEVE restituire un solo root element HTML (es. <div> o <section>). Mai markup "sciolto" o più root. Questo per evitare errori MultipleRootElementsDetectedException. Aggiornare sempre la view e la docstring del widget. Vedi anche docs/xot.md.
+
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 ## Collegamenti tra versioni di filament_best_practices.md
 * [filament_best_practices.md](../../laravel/Modules/Xot/docs/filament/filament_best_practices.md)
 * [filament_best_practices.md](../../laravel/Modules/Xot/docs/filament_best_practices.md)
@@ -459,6 +465,9 @@ Ogni widget Livewire/Filament DEVE restituire un solo root element HTML (es. <di
 * [filament_best_practices.md](../../laravel/Modules/Job/docs/filament_best_practices.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 > [2025-05-28] Policy aggiornata: tutte le pagine di form devono includere direttamente solo widget Filament modulari, mai form custom. Motivazione: coerenza architetturale, manutenzione, DRY, troubleshooting semplificato.
 
 ## Livewire e Filament: inclusione obbligatoria di @livewireStyles e @livewireScripts
@@ -473,5 +482,8 @@ Tutti i form component devono usare solo chiavi campo, senza label o placeholder
 ## Regola: trait solo se riusabili
 I trait vanno creati solo se riutilizzati in più classi. Vietato creare trait per una sola classe. Se la logica è specifica di un solo modello, va implementata direttamente nella classe. Motivazione: semplicità, KISS, manutenibilità, evitare complessità inutile. Collegamento a docs/xot.md.
 
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)

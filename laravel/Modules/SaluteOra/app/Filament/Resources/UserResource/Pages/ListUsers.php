@@ -73,7 +73,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 use Filament\Actions;
-use Modules\SaluteOra\Enums\UserType;
+use Modules\SaluteOra\Enums\UserTypeEnum;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Model;
@@ -105,7 +105,7 @@ class ListUsers extends BaseListUsers
         'last_name' => TextColumn::make('last_name')
                 ->searchable(),
 
-        'type'=>SelectColumn::make('type')->options(UserType::class),
+        'type'=>SelectColumn::make('type')->options(UserTypeEnum::class),
         //'state'=>SelectStateColumn::make('state'),
         //'state'=>SelectColumn::make('state')->options(UserStateEnum::class)
         //'state'=>SelectColumn::make('state')->options(UserState::class)

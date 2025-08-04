@@ -10,12 +10,17 @@ use Illuminate\Support\Facades\Auth;
 use Spatie\QueueableAction\QueueableAction;
 use Modules\SaluteOra\Models\Appointment;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\SaluteOra\Enums\UserTypeEnum;
 use Modules\SaluteOra\Enums\AppointmentTypeEnum;
 =======
 use Modules\SaluteOra\Enums\UserType;
 use Modules\SaluteOra\Enums\AppointmentType;
 >>>>>>> 2099645a (.)
+=======
+use Modules\SaluteOra\Enums\UserTypeEnum;
+use Modules\SaluteOra\Enums\AppointmentTypeEnum;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
 class FetchCalendarEventsAction
 {
@@ -64,12 +69,17 @@ class FetchCalendarEventsAction
         if ($user) {
             match ($user->type) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 UserTypeEnum::DOCTOR => $query->where('doctor_id', $user->id),
                 UserTypeEnum::PATIENT => $query->where('patient_id', $user->id),
 =======
                 UserType::DOCTOR => $query->where('doctor_id', $user->id),
                 UserType::PATIENT => $query->where('patient_id', $user->id),
 >>>>>>> 2099645a (.)
+=======
+                UserTypeEnum::DOCTOR => $query->where('doctor_id', $user->id),
+                UserTypeEnum::PATIENT => $query->where('patient_id', $user->id),
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
                 default => $query,
             };
         }
@@ -185,6 +195,9 @@ class FetchCalendarEventsAction
         
         return match ($appointment->type) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
             AppointmentTypeEnum::CONSULTATION->value => '#fd7e14',
             AppointmentTypeEnum::CLEANING->value => '#17a2b8',
             AppointmentTypeEnum::TREATMENT->value => '#28a745',
@@ -193,6 +206,7 @@ class FetchCalendarEventsAction
             AppointmentTypeEnum::SURGERY->value => '#6f42c1',
             AppointmentTypeEnum::ORTHODONTICS->value => '#6f42c1',
             AppointmentTypeEnum::PREVENTION->value => '#17a2b8',
+<<<<<<< HEAD
 =======
             AppointmentType::CONSULTATION->value => '#fd7e14',
             AppointmentType::CLEANING->value => '#17a2b8',
@@ -203,6 +217,8 @@ class FetchCalendarEventsAction
             AppointmentType::ORTHODONTICS->value => '#6f42c1',
             AppointmentType::PREVENTION->value => '#17a2b8',
 >>>>>>> 2099645a (.)
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
             default => '#3490dc',
         };
     }

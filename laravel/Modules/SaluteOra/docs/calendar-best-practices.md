@@ -235,6 +235,7 @@ Log::channel('appointments')->info('Date disponibili calcolate', [
 
 - [Implementazione del Calendario](calendar-date-picker-implementation.md)
 - [Gestione degli Appuntamenti](appointment-management.md)
+<<<<<<< HEAD
 - [Documentazione Filament](https://filamentphp.com/docs)
 
 ## Gestione Orari di Apertura: Best Practice
@@ -262,3 +263,6 @@ Appointment::where('doctor_id', $doctorId)
 - Un solo punto di verità: nessuna duplicazione, nessun lock-in
 - DRY, KISS, serenità del codice
 - Refactoring sicuro, massima estendibilità
+=======
+- [Documentazione Filament](https://filamentphp.com/docs) 
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)

@@ -240,7 +240,7 @@ use Modules\User\Models\BaseUser;
 use Spatie\ModelStates\HasStates;
 use Spatie\Activitylog\LogOptions;
 
-use Modules\SaluteOra\Enums\UserType;
+use Modules\SaluteOra\Enums\UserTypeEnum;
 use Illuminate\Notifications\Notifiable;
 use Modules\SaluteOra\States\User\Active;
 use Modules\SaluteOra\States\User\Pending;
@@ -272,11 +272,14 @@ class User extends BaseUser
     protected $connection = 'user';
 
 
-    /** @var array<string, string> */
+    /**
+     * Mappatura dei tipi di utente con le relative classi
+     * Utilizziamo l'enum UserTypeEnum per una gestione tipizzata e sicura
+     */
     protected $childTypes = [
-        'patient' => Patient::class,
-        'doctor' => Doctor::class,
-        'admin' => Admin::class,
+        UserTypeEnum::ADMIN->value => Admin::class,
+        UserTypeEnum::DOCTOR->value => Doctor::class,
+        UserTypeEnum::PATIENT->value => Patient::class,
     ];
 
     /** @var array<string, mixed>  */
@@ -382,6 +385,7 @@ class User extends BaseUser
             'password' => 'hashed',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'type' => UserTypeEnum::class, // Sintassi corretta per Laravel 12
             'state' => UserState::class,
             'certifications' => 'array',
@@ -396,6 +400,9 @@ class User extends BaseUser
 =======
 =======
             'type' => UserType::class,
+=======
+            'type' => UserTypeEnum::class,
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
             'state' => UserState::class,
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
             'certifications' => 'array',
@@ -538,7 +545,25 @@ class User extends BaseUser
         return $this->state->equals(IntegrationRequested::class);
     }
 
+<<<<<<< HEAD
 
+=======
+    /**
+     * Get the user's type as a UserTypeEnum enum.
+     */
+    public function getTypeAttribute($value): UserTypeEnum
+    {
+        return $value instanceof UserTypeEnum ? $value : UserTypeEnum::from($value);
+    }
+
+    /**
+     * Set the user's type using a UserTypeEnum enum.
+     */
+    public function setTypeAttribute($value): void
+    {
+        $this->attributes['type'] = $value instanceof UserTypeEnum ? $value->value : $value;
+    }
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
     /**
      * Determine if the user is an admin.
@@ -567,7 +592,11 @@ class User extends BaseUser
     /**
      * Scope per query: solo admin.
      */
+<<<<<<< HEAD
     public function scopeAdmins(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
+=======
+    public function scopeAdmins($query)
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     {
         return $query->where('type', UserTypeEnum::ADMIN->value);
     }
@@ -575,7 +604,11 @@ class User extends BaseUser
     /**
      * Scope per query: solo dottori.
      */
+<<<<<<< HEAD
     public function scopeDoctors(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
+=======
+    public function scopeDoctors($query)
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     {
         return $query->where('type', UserTypeEnum::DOCTOR->value);
     }
@@ -583,6 +616,7 @@ class User extends BaseUser
     /**
      * Scope per query: solo pazienti.
      */
+<<<<<<< HEAD
     public function scopePatients(\Illuminate\Database\Eloquent\Builder $query): \Illuminate\Database\Eloquent\Builder
     {
         return $query->where('type', UserTypeEnum::PATIENT->value);
@@ -706,4 +740,10 @@ class User extends BaseUser
         return $this->state->equals(IntegrationRequested::class);
     }
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+    public function scopePatients($query)
+    {
+        return $query->where('type', UserTypeEnum::PATIENT->value);
+    }
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 }

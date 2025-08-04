@@ -7,7 +7,10 @@ namespace Modules\SaluteOra\Enums;
 use Filament\Support\Contracts\HasLabel;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasColor;
+<<<<<<< HEAD
 use function Safe\class_alias;
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
 /**
  * Defines the different types of appointments in the system.
@@ -32,7 +35,11 @@ enum AppointmentTypeEnum: string implements HasLabel, HasIcon, HasColor
     /**
      * Get the translated label for the appointment type.
      */
+<<<<<<< HEAD
     public function getLabel(): string
+=======
+    public function getLabel(): ?string
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     {
         return match ($this) {
             self::CONSULTATION => __('saluteora::enums.appointment_type.consultation'),
@@ -115,17 +122,32 @@ enum AppointmentTypeEnum: string implements HasLabel, HasIcon, HasColor
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Convert the enum cases to an array suitable for select inputs.
+     *
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
      * @return array<string, string>
      */
     public static function toSelectArray(): array
     {
+<<<<<<< HEAD
         $result = [];
         foreach (self::cases() as $type) {
             $result[$type->value] = $type->getLabel();
         }
         return $result;
+=======
+        return collect(self::cases())
+            ->mapWithKeys(fn (self $type) => [$type->value => $type->getLabel()])
+            ->toArray();
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     }
 }
 
 // Alias for backward compatibility
+<<<<<<< HEAD
 //class_alias(AppointmentTypeEnum::class, 'Modules\\SaluteOra\\Enums\\AppointmentType');
+=======
+class_alias(AppointmentTypeEnum::class, 'Modules\\SaluteOra\\Enums\\AppointmentType');
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)

@@ -184,11 +184,17 @@ class Appointment extends Model
 ```php
 // AppointmentType.php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Path corretto: Modules/SaluteOra/app/Enums/AppointmentType.php
 use Modules\SaluteOra\App\Enums\AppointmentType;
 
 =======
 >>>>>>> 2099645a (.)
+=======
+// Path corretto: Modules/SaluteOra/app/Enums/AppointmentType.php
+use Modules\SaluteOra\App\Enums\AppointmentType;
+
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 enum AppointmentType: string implements HasLabel
 {
     case CONSULTATION = 'consultation';
@@ -232,11 +238,17 @@ enum AppointmentStatus: string implements HasLabel
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 > **Nota di prevenzione:**
 > L'enum AppointmentType deve essere sempre posizionato in `Modules/SaluteOra/app/Enums/AppointmentType.php` e importato con il namespace corretto. Aggiornare sempre la documentazione e i file .mdc windsurf/cursor in caso di modifica del path.
 
 =======
 >>>>>>> 2099645a (.)
+=======
+> **Nota di prevenzione:**
+> L'enum AppointmentType deve essere sempre posizionato in `Modules/SaluteOra/app/Enums/AppointmentType.php` e importato con il namespace corretto. Aggiornare sempre la documentazione e i file .mdc windsurf/cursor in caso di modifica del path.
+
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 ## Widget FullCalendar
 
 ### 1. PatientCalendarWidget

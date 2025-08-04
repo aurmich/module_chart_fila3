@@ -530,6 +530,20 @@ return array (
       'helper_text' => 'remember',
       'placeholder' => 'remember',
     ),
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+    'cap' => 
+    array (
+      'description' => 'cap',
+      'helper_text' => 'cap',
+      'placeholder' => 'cap',
+      'label' => 'cap',
+    ),
+    'city' => 
+    array (
+      'description' => 'city',
+    ),
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
   ),
 );

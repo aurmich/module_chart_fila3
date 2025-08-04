@@ -8,11 +8,16 @@ use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\Section;
 use Illuminate\Database\Eloquent\Model;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Auth;
 use Modules\SaluteOra\Enums\UserTypeEnum;
 =======
 use Modules\SaluteOra\Enums\UserType;
 >>>>>>> 2099645a (.)
+=======
+use Illuminate\Support\Facades\Auth;
+use Modules\SaluteOra\Enums\UserTypeEnum;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 use Modules\SaluteOra\Models\Appointment;
 use Modules\SaluteOra\Traits\HasFullCalendarConfig;
 use Saade\FilamentFullCalendar\Data\EventData;
@@ -139,10 +144,14 @@ class PatientCalendarWidget extends FullCalendarWidget
     public static function canView(): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Auth::check() && Auth::user()?->type === UserTypeEnum::PATIENT->value;
 =======
         return auth()->check() && auth()->user()?->type === UserType::PATIENT;
 >>>>>>> 2099645a (.)
+=======
+        return Auth::check() && Auth::user()?->type === UserTypeEnum::PATIENT->value;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     }
 
     /**
@@ -210,7 +219,7 @@ class PatientCalendarWidget extends FullCalendarWidget
 =======
         return cache()->remember($cacheKey, 300, function () use ($fetchInfo) {
             return Appointment::query()
-                ->where('patient_id', auth()->id())
+                ->where('patient_id', Auth::id())
                 ->whereBetween('start_time', [$fetchInfo['start'], $fetchInfo['end']])
                 ->with(['doctor', 'studio'])
                 ->limit(100)

@@ -108,6 +108,9 @@ In case of issues, have a rollback plan:
 
 For any issues during migration, please refer to the [Geo Module Documentation](./architecture.md) or contact the development team.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
 # Guida alla Migrazione da GeoJsonModel a Sushi
 
@@ -129,7 +132,10 @@ composer require calebporzio/sushi
 
 ### 2. Backup
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 # Backup del file JSON
 cp database/content/comuni.json database/content/comuni.json.bak
 
@@ -538,5 +544,8 @@ git checkout -- app/Models/Comune.php
 - [Comune Model](comune-model.md)
 - [Sushi Configuration](sushi-configuration.md)
 - [Sushi Command](sushi-command.md)
+<<<<<<< HEAD
 =======
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)

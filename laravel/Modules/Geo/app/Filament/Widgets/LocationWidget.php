@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Geo\Filament\Widgets;
 
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
@@ -13,6 +14,12 @@ namespace Modules\Geo\App\Filament\Widgets;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Modules\Geo\App\Filament\Forms\LocationForm;
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+namespace Modules\Geo\Filament\Widgets;
+
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Modules\Geo\Filament\Forms\LocationForm;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
 /**
  * Widget per la selezione della località.
@@ -58,10 +65,14 @@ class LocationWidget extends XotBaseWidget
      * Form per la selezione della località.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     private \Modules\Geo\Filament\Forms\LocationForm $locationForm;
 =======
     private LocationForm $locationForm;
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+    private \Modules\Geo\Filament\Forms\LocationForm $locationForm;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
     /**
      * Costruttore.
@@ -72,8 +83,12 @@ class LocationWidget extends XotBaseWidget
         $this->locationForm = new \Modules\Geo\Filament\Forms\LocationForm();
 =======
         parent::__construct();
+<<<<<<< HEAD
         $this->locationForm = new LocationForm();
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+        $this->locationForm = new \Modules\Geo\Filament\Forms\LocationForm();
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
     }
 
     /**

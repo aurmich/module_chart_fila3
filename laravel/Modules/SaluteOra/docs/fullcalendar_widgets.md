@@ -66,10 +66,14 @@ use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
 use Modules\SaluteOra\Models\Appointment;
 use Modules\SaluteOra\Enums\AppointmentStatus;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\SaluteOra\App\Enums\AppointmentType;
 =======
 use Modules\SaluteOra\Enums\AppointmentType;
 >>>>>>> 2099645a (.)
+=======
+use Modules\SaluteOra\App\Enums\AppointmentType;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 use Saade\FilamentFullCalendar\Data\EventData;
 use Filament\Forms;
 
@@ -762,10 +766,14 @@ I widget FullCalendar per SaluteOra forniscono una base solida per la gestione d
 - [Documentazione FullCalendar](https://fullcalendar.io/docs)
 - [Plugin Saade](https://filamentphp.com/plugins/saade-fullcalendar)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 - [Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 
 > **Nota di prevenzione:**
 > L'enum AppointmentType deve essere sempre posizionato in `Modules/SaluteOra/app/Enums/AppointmentType.php` e importato con il namespace corretto. Aggiornare sempre la documentazione e i file .mdc windsurf/cursor in caso di modifica del path.
+<<<<<<< HEAD
 
 > **ATTENZIONE:** Tutti i riferimenti a start_time/end_time vanno sostituiti con starts_at/ends_at. Vedi appointment_resource_corrections.md e plan.md per il piano di refactoring.
 
@@ -804,3 +812,5 @@ I widget FullCalendar per SaluteOra forniscono una base solida per la gestione d
 =======
 - [Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets) 
 >>>>>>> 2099645a (.)
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)

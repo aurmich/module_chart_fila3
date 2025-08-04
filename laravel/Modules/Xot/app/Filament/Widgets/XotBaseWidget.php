@@ -98,6 +98,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
     public string $icon = '';
     protected int|string|array $columnSpan = 'full';
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     /**
      * Lista degli eventi ascoltati dal widget.
@@ -121,6 +122,8 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
      * @var view-string
      */
     protected static string $view = '';
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
     /**
      * Lista degli eventi ascoltati dal widget.

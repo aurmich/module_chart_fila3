@@ -136,8 +136,14 @@ class Comune extends Model
 **Ultimo aggiornamento:** {{date('Y-m-d')}}
 Responsabile: Cascade AI 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## Policy aggiornata: niente trait per una sola classe
 Non creare trait come ComuneSushiTrait se usati solo in un modello. I trait vanno creati solo se riutilizzati in più classi. Se la logica è specifica di un solo modello, va implementata direttamente nella classe. Motivazione: semplicità, KISS, manutenibilità, evitare complessità inutile. Collegamento a docs/xot.md.
 =======
 >>>>>>> 893fe63f (✨ (Geo Module): add comprehensive documentation for Comune model)
+=======
+
+## Policy aggiornata: niente trait per una sola classe
+Non creare trait come ComuneSushiTrait se usati solo in un modello. I trait vanno creati solo se riutilizzati in più classi. Se la logica è specifica di un solo modello, va implementata direttamente nella classe. Motivazione: semplicità, KISS, manutenibilità, evitare complessità inutile. Collegamento a docs/xot.md.
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)

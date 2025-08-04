@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Geo\Filament\Forms;
 
 use Filament\Forms\Components\Select;
@@ -11,6 +12,9 @@ use Illuminate\Support\Collection;
 use Modules\Geo\Models\ComuneJson;
 =======
 namespace Modules\Geo\App\Filament\Forms;
+=======
+namespace Modules\Geo\Filament\Forms;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
 use Filament\Forms\Components\Select;
 use Filament\Forms\Get;
@@ -24,9 +28,13 @@ use Modules\Geo\App\Services\GeoDataService;
  * 
  * @see \Modules\Geo\docs\json-database.md
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @see Modules\Geo\Filament\Forms\LocationForm
 =======
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+ * @see Modules\Geo\Filament\Forms\LocationForm
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
  */
 class LocationForm
 {

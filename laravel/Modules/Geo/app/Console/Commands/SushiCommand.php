@@ -8,8 +8,11 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\DB;
 use Modules\Geo\Models\Comune;
+<<<<<<< HEAD
 use function Safe\json_decode;
 use function Safe\json_encode;
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
 class SushiCommand extends Command
 {
@@ -38,11 +41,16 @@ class SushiCommand extends Command
             'refresh' => $this->refresh(),
             'clear' => $this->clear(),
             'status' => $this->status(),
+<<<<<<< HEAD
             default => $this->handleUnknownAction(),
+=======
+            default => $this->error('Azione non valida'),
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
         };
     }
 
     /**
+<<<<<<< HEAD
      * Gestisce azioni sconosciute.
      */
     protected function handleUnknownAction(): int
@@ -52,6 +60,8 @@ class SushiCommand extends Command
     }
 
     /**
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
      * Aggiorna il database SQLite di Sushi
      */
     protected function refresh(): int
@@ -66,6 +76,7 @@ class SushiCommand extends Command
                 return 1;
             }
             
+<<<<<<< HEAD
             // Uso Safe\json_decode per evitare false return
             /** @var mixed $rawData */
             $rawData = json_decode(File::get($path), true);
@@ -110,6 +121,28 @@ class SushiCommand extends Command
                     'lng' => is_numeric($validComune['lng'] ?? null) ? (float) $validComune['lng'] : 0.0,
                     'created_at' => $validComune['created_at'] ?? now(),
                     'updated_at' => $validComune['updated_at'] ?? now(),
+=======
+            $data = json_decode(File::get($path), true);
+            
+            if (json_last_error() !== JSON_ERROR_NONE) {
+                $this->error('Errore nel parsing del file JSON: ' . json_last_error_msg());
+                return 1;
+            }
+            
+            DB::table('comuni')->truncate();
+            
+            foreach ($data as $comune) {
+                DB::table('comuni')->insert([
+                    'id' => $comune['id'],
+                    'regione' => $comune['regione'],
+                    'provincia' => $comune['provincia'],
+                    'comune' => $comune['comune'],
+                    'cap' => $comune['cap'],
+                    'lat' => $comune['lat'],
+                    'lng' => $comune['lng'],
+                    'created_at' => $comune['created_at'] ?? now(),
+                    'updated_at' => $comune['updated_at'] ?? now(),
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
                 ]);
             }
             
@@ -122,6 +155,7 @@ class SushiCommand extends Command
     }
 
     /**
+<<<<<<< HEAD
      * Valida i dati di un comune.
      * 
      * @param array<mixed, mixed> $comune
@@ -141,6 +175,8 @@ class SushiCommand extends Command
     }
 
     /**
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
      * Pulisce il database SQLite di Sushi
      */
     protected function clear(): int

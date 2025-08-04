@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Collection;
 use Spatie\QueueableAction\QueueableAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\SaluteOra\Enums\UserTypeEnum;
 use Modules\SaluteOra\Enums\AppointmentStatusEnum;
 use Modules\SaluteOra\Enums\AppointmentTypeEnum;
@@ -17,6 +18,11 @@ use Modules\SaluteOra\Enums\UserType;
 use Modules\SaluteOra\Enums\AppointmentStatus;
 use Modules\SaluteOra\Enums\AppointmentType;
 >>>>>>> ca5e1eaf (.)
+=======
+use Modules\SaluteOra\Enums\UserTypeEnum;
+use Modules\SaluteOra\Enums\AppointmentStatusEnum;
+use Modules\SaluteOra\Enums\AppointmentTypeEnum;
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 use Modules\SaluteOra\Models\Appointment;
 
 /**
@@ -38,10 +44,14 @@ final class FetchEventsAction
             $user = Auth::user();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (!$user || $user->type !== UserTypeEnum::PATIENT) {
 =======
             if (!$user || $user->type !== UserType::PATIENT) {
 >>>>>>> ca5e1eaf (.)
+=======
+            if (!$user || $user->type !== UserTypeEnum::PATIENT) {
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
                 throw new \RuntimeException('Unauthorized: User is not a patient');
             }
 
@@ -151,6 +161,9 @@ final class FetchEventsAction
         }
         return match ($appointment->type) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
             AppointmentTypeEnum::CONSULTATION => '#fd7e14',
             AppointmentTypeEnum::CLEANING => '#17a2b8',
             AppointmentTypeEnum::TREATMENT => '#28a745',
@@ -159,6 +172,7 @@ final class FetchEventsAction
             AppointmentTypeEnum::SURGERY => '#6f42c1',
             AppointmentTypeEnum::ORTHODONTICS => '#6f42c1',
             AppointmentTypeEnum::PREVENTION => '#17a2b8',
+<<<<<<< HEAD
 =======
             AppointmentType::CONSULTATION => '#fd7e14',
             AppointmentType::CLEANING => '#17a2b8',
@@ -169,6 +183,8 @@ final class FetchEventsAction
             AppointmentType::ORTHODONTICS => '#6f42c1',
             AppointmentType::PREVENTION => '#17a2b8',
 >>>>>>> ca5e1eaf (.)
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
             default => '#3490dc',
         };
     }

@@ -25,6 +25,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+<<<<<<< HEAD
         <title>{{ $title ?? 'SaluteOra - La tua salute, ora' }}</title>
     </head>
     <body>
@@ -43,13 +44,18 @@
         @vite(['resources/js/app.js'],'themes/One')
 =======
 
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
         {{--
             Policy: il layout DEVE includere @livewireStyles e @livewireScripts per evitare errori 419 Page Expired nei widget Filament/Livewire.
             Vedi docs/widget-deleting-method-error.md e docs/rules/filament_best_practices.md
         --}}
+<<<<<<< HEAD
 =======
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
         {!! $_theme->metatags() !!}
         <!-- Used to add dark mode right away, adding here prevents any flicker -->
@@ -67,10 +73,14 @@
 		</style>
 		@filamentStyles
 <<<<<<< HEAD
+<<<<<<< HEAD
         @livewireStyles
 =======
 
 >>>>>>> 54f4fa16 (.)
+=======
+        @livewireStyles
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 
         @vite(['resources/css/app.css'],'themes/One')
 
@@ -88,6 +98,9 @@
         @livewire('notifications')
 		@filamentScripts
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
         @livewireScripts
         @vite(['resources/js/app.js'],'themes/One')
         <link rel="stylesheet" type="text/css" href="{{asset("vendor/cookie-consent/css/cookie-consent.css")}}">

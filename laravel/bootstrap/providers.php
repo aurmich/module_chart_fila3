@@ -19,9 +19,13 @@ return [
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
 =======
     App\Providers\Filament\AdminPanelProvider::class,
+<<<<<<< HEAD
 
     // App\Providers\FolioServiceProvider::class,
     // App\Providers\VoltServiceProvider::class,
 
 >>>>>>> 54f4fa16 (.)
+=======
+    App\Providers\FolioServiceProvider::class,
+>>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 ];
