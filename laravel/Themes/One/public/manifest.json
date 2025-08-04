@@ -2,6 +2,7 @@
   "resources/css/app.css": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "file": "assets/app-CizGm5hC.css",
 =======
     "file": "assets/app-Dph1A97d.css",
@@ -12,6 +13,9 @@
     "file": "assets/app-CEDafcW-.css",
 >>>>>>> 7f5c184c (feat(gdpr): add ConsentType enum to define available consent types and their labels for better consent management)
 >>>>>>> adac82bd (rebase)
+=======
+    "file": "assets/app-DpVlLzWv.css",
+>>>>>>> c9dfd052 (style: update CSS styles for improved consistency and readability across the application)
     "src": "resources/css/app.css",
     "isEntry": true
   },
