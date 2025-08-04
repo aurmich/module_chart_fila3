@@ -72,26 +72,8 @@ abstract class XotBaseRelationManager extends RelationManager
      */
     public function getTableColumns(): array
     {
-<<<<<<< HEAD
         return [];
         //return $this->getResource()::getTableColumns();
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        return [];
-        //return $this->getResource()::getTableColumns();
-=======
-        return $this->getResource()::getTableColumns();
->>>>>>> aurmich/dev
-=======
-        return $this->getResource()::getTableColumns();
->>>>>>> 54f4fa16 (.)
-=======
-        return [];
-        //return $this->getResource()::getTableColumns();
->>>>>>> 13ea6524 (phpstan)
->>>>>>> aurmich/dev
     }
 
     // public function table(Table $table): Table
@@ -131,19 +113,7 @@ abstract class XotBaseRelationManager extends RelationManager
     {
         // Get the resource class via parent method first
         try {
-<<<<<<< HEAD
             // @phpstan-ignore staticMethod.notFound
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            // @phpstan-ignore staticMethod.notFound
-=======
-            // @phpstan-ignore-next-line
->>>>>>> aurmich/dev
-=======
-            // @phpstan-ignore-next-line
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
             $parentResource = parent::getResource();
             if (is_subclass_of($parentResource, \Modules\Xot\Filament\Resources\XotBaseResource::class)) {
                 /** @var class-string<\Modules\Xot\Filament\Resources\XotBaseResource> $parentResource */

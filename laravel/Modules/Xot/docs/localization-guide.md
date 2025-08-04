@@ -171,18 +171,7 @@ protected $middlewareGroups = [
 È buona pratica utilizzare un Enum per gestire le lingue supportate:
 
 ```php
-<<<<<<< HEAD
 namespace Modules\Xot\app\Enums;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-namespace Modules\Xot\app\Enums;
-=======
->>>>>>> 54f4fa16 (.)
-=======
-namespace Modules\Xot\app\Enums;
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev
 namespace Modules\Xot\Enums;
 
 enum SupportedLocale: string
@@ -306,25 +295,4 @@ php artisan lang:clear
 
 ## Conclusione
 
-<<<<<<< HEAD
 Seguendo queste linee guida, potrai implementare un sistema di localizzazione robusto e manutenibile all'interno del framework Laraxot <nome progetto>. Ricorda che i file di localizzazione devono rimanere nella directory `lang` alla radice del modulo, rispettando le convenzioni standard di Laravel. 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Seguendo queste linee guida, potrai implementare un sistema di localizzazione robusto e manutenibile all'interno del framework Laraxot <nome progetto>. Ricorda che i file di localizzazione devono rimanere nella directory `lang` alla radice del modulo, rispettando le convenzioni standard di Laravel. 
-=======
-Seguendo queste linee guida, potrai implementare un sistema di localizzazione robusto e manutenibile all'interno del framework Laraxot <nome progetto>. Ricorda che i file di localizzazione devono rimanere nella directory `lang` alla radice del modulo, rispettando le convenzioni standard di Laravel. 
->>>>>>> 54f4fa16 (.)
-=======
-Seguendo queste linee guida, potrai implementare un sistema di localizzazione robusto e manutenibile all'interno del framework Laraxot <nome progetto>. Ricorda che i file di localizzazione devono rimanere nella directory `lang` alla radice del modulo, rispettando le convenzioni standard di Laravel. 
->>>>>>> 9df8f556 (fix .md)
-=======
-Seguendo queste linee guida, potrai implementare un sistema di localizzazione robusto e manutenibile all'interno del framework Laraxot <nome progetto>. Ricorda che i file di localizzazione devono rimanere nella directory `lang` alla radice del modulo, rispettando le convenzioni standard di Laravel. 
-Seguendo queste linee guida, potrai implementare un sistema di localizzazione robusto e manutenibile all'interno del framework Laraxot <nome progetto>. Ricorda che i file di localizzazione devono rimanere nella directory `lang` alla radice del modulo, rispettando le convenzioni standard di Laravel. 
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
-Seguendo queste linee guida, potrai implementare un sistema di localizzazione robusto e manutenibile all'interno del framework Laraxot <nome progetto>. Ricorda che i file di localizzazione devono rimanere nella directory `lang` alla radice del modulo, rispettando le convenzioni standard di Laravel. 
->>>>>>> bead9c28 (fix case)
->>>>>>> aurmich/dev

@@ -4,28 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Pages;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Filament\Facades\Filament;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Filament\Facades\Filament;
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
-=======
-use Filament\Facades\Filament;
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
-=======
->>>>>>> 93990a83 (rebase 1/1)
-=======
-use Filament\Facades\Filament;
->>>>>>> ad93170c (rebase 10)
 use Filament\Pages\Dashboard;
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
@@ -47,51 +26,14 @@ class MainDashboard extends Dashboard
 
     public function mount(): void
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
-=======
-        
->>>>>>> e9942509 (fix: session)
->>>>>>> aurmich/dev
-=======
->>>>>>> 93990a83 (rebase 1/1)
-=======
-        
->>>>>>> ad93170c (rebase 10)
         Assert::notNull($user = auth()->user(), '['.__LINE__.']['.class_basename($this).']');
         $modules = $user->roles->filter(
             static function ($item) {
                 return Str::endsWith($item->name, '::admin');
             }
         );
-<<<<<<< HEAD
-<<<<<<< HEAD
         
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        
-=======
-
->>>>>>> aurmich/dev
-=======
-
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
-=======
-        
->>>>>>> 67a24ea7 (- updated error pages)
         if (1 === $modules->count()) {
             Assert::notNull($module_first = $modules->first(), '['.__LINE__.']['.class_basename($this).']');
             $panel_name = $module_first->name;

@@ -10,31 +10,11 @@ return new class extends XotBaseMigration {
     protected ?string $model_class = HealthCheckResultHistoryItem::class;
 
     /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
      * Run the migrations.
      *
      * @return void
      */
     public function up(): void
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 54f4fa16 (.)
-     * Undocumented function.
-     *
-     * @return void
-     */
-    public function up()
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
     {
         // -- CREATE --
         $this->tableCreate(
@@ -55,19 +35,7 @@ return new class extends XotBaseMigration {
         // -- UPDATE --
         $this->tableUpdate(
             function (Blueprint $table): void {
-<<<<<<< HEAD
                 $this->updateTimestamps($table, false);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                $this->updateTimestamps($table, false);
-=======
-                $this->updateTimestamps(table: $table, hasSoftDeletes: false);
->>>>>>> aurmich/dev
-=======
-                $this->updateTimestamps(table: $table, hasSoftDeletes: false);
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
             }
         );
     }

@@ -108,19 +108,7 @@ Per la versione dark:
 - [Architettura Folio + Volt](FOLIO_VOLT_ARCHITECTURE.md)
 - [Regole per la Case Sensitivity](DIRECTORY-CASE-SENSITIVITY.md)
 - [Regole per i Namespace](NAMESPACE-RULES.md)
-<<<<<<< HEAD
 - [Convenzioni di Naming](naming-conventions.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Convenzioni di Naming](naming-conventions.md)
-=======
-- [Convenzioni di Naming](NAMING-CONVENTIONS.md)
->>>>>>> aurmich/dev
-=======
-- [Convenzioni di Naming](NAMING-CONVENTIONS.md)
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 
 ### Collegamenti alla Root del Progetto
 - [Linee Guida per i Loghi](../../../docs/standards/logo_guidelines.md)

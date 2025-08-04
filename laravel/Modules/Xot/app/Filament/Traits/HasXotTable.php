@@ -39,49 +39,13 @@ trait HasXotTable
     public TableLayoutEnum $layoutView = TableLayoutEnum::LIST;
 
     protected static bool $canReplicate = false;
-<<<<<<< HEAD
     protected static bool $canView = true;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    protected static bool $canView = true;
-=======
-
-    protected static bool $canView = true;
-
->>>>>>> 54f4fa16 (.)
-=======
-    protected static bool $canView = true;
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
-
-    protected static bool $canView = true;
-
->>>>>>> 15cb84fb (fix collisions)
-=======
-    protected static bool $canView = true;
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
     protected static bool $canEdit = true;
 
     /**
      * Get table header actions.
      *
-<<<<<<< HEAD
      * @return array<string, \Filament\Tables\Actions\Action|\Filament\Tables\Actions\ActionGroup>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @return array<string, \Filament\Tables\Actions\Action|\Filament\Tables\Actions\ActionGroup>
-=======
-     * @return array<string, Action|ActionGroup>
->>>>>>> aurmich/dev
-=======
-     * @return array<string, Action|ActionGroup>
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
      */
     public function getTableHeaderActions(): array
     {
@@ -169,25 +133,8 @@ trait HasXotTable
      *
      * @return array<string, Tables\Columns\Column>
      */
-<<<<<<< HEAD
     abstract public function getTableColumns(): array;
     
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    abstract public function getTableColumns(): array;
-    
-=======
-    public function getTableColumns(): array
-    {
-        return [];
-    }
->>>>>>> 54f4fa16 (.)
-=======
-    abstract public function getTableColumns(): array;
-    
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
 
     /**
      * Get table filters form columns.
@@ -262,116 +209,21 @@ trait HasXotTable
         $table = $table
             ->recordTitleAttribute($this->getTableRecordTitleAttribute())
             ->heading($this->getTableHeading())
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 598d3378 (test)
->>>>>>> aurmich/dev
             ->columns($this->layoutView->getTableColumns(
                 $this->getTableColumns(),
                 $this->getGridTableColumns()
             ))
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-            ->columns($this->layoutView->getTableColumns())
->>>>>>> aurmich/dev
-=======
-            ->columns($this->layoutView->getTableColumns())
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 598d3378 (test)
->>>>>>> aurmich/dev
             ->contentGrid($this->layoutView->getTableContentGrid())
             ->filters($this->getTableFilters())
             ->filtersLayout(FiltersLayout::AboveContent)
             ->filtersFormColumns($this->getTableFiltersFormColumns())
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
             ->persistFiltersInSession()
             ->headerActions($this->getTableHeaderActions())
             ->actions($this->getTableActions())
             ->bulkActions($this->getTableBulkActions())
-<<<<<<< HEAD
             ->actionsPosition(ActionsPosition::BeforeColumns)
             ->emptyStateActions($this->getTableEmptyStateActions())
             ->striped()
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            ->actionsPosition(ActionsPosition::BeforeColumns)
-            ->emptyStateActions($this->getTableEmptyStateActions())
-            ->striped()
-=======
-            ->persistFiltersInSession();
-
-        // Verifica i metodi disponibili prima di chiamarli
-        if (method_exists($this, 'getTableHeaderActions')) {
-            $table = $table->headerActions($this->getTableHeaderActions());
-        }
-
-        if (method_exists($this, 'getTableActions')) {
-            $table = $table->actions($this->getTableActions());
-        }
-
-        if (method_exists($this, 'getTableBulkActions')) {
-            $table = $table->bulkActions($this->getTableBulkActions());
-        }
-
-        $table = $table
-            ->actionsPosition(ActionsPosition::BeforeColumns)
-            ->emptyStateActions($this->getTableEmptyStateActions())
-            ->striped();
-
-        $table = $table
->>>>>>> 54f4fa16 (.)
-=======
-            ->actionsPosition(ActionsPosition::BeforeColumns)
-            ->emptyStateActions($this->getTableEmptyStateActions())
-            ->striped()
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
-            ->persistFiltersInSession();
-
-        // Verifica i metodi disponibili prima di chiamarli
-        if (method_exists($this, 'getTableHeaderActions')) {
-            $table = $table->headerActions($this->getTableHeaderActions());
-        }
-
-        if (method_exists($this, 'getTableActions')) {
-            $table = $table->actions($this->getTableActions());
-        }
-
-        if (method_exists($this, 'getTableBulkActions')) {
-            $table = $table->bulkActions($this->getTableBulkActions());
-        }
-
-        $table = $table
-            ->actionsPosition(ActionsPosition::BeforeColumns)
-            ->emptyStateActions($this->getTableEmptyStateActions())
-            ->striped();
-
-        $table = $table
->>>>>>> 15cb84fb (fix collisions)
-=======
-            ->actionsPosition(ActionsPosition::BeforeColumns)
-            ->emptyStateActions($this->getTableEmptyStateActions())
-            ->striped()
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
             ->paginated($this->getTablePaginated());
         /*
             ->defaultSort(

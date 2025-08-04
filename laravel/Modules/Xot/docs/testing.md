@@ -607,14 +607,7 @@ test('framework maintains backward compatibility', function (): void {
 ### Comandi Base
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
->>>>>>> aurmich/dev
 # Tutti i test del framework Xot
 ./vendor/bin/pest Modules/Xot/tests/
 
@@ -637,14 +630,7 @@ test('framework maintains backward compatibility', function (): void {
 ### Debugging Framework
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
->>>>>>> aurmich/dev
 # Test in modalità debug
 ./vendor/bin/pest Modules/Xot/tests/ --debug
 
@@ -706,10 +692,3 @@ test('no memory leaks in repeated operations', function (): void {
 **Ultimo aggiornamento**: Dicembre 2024  
 **Framework**: Pest v2.x  
 **Coverage Target**: 90%+ per core framework  
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-**Responsabile**: Team Core Framework Laraxot 
->>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
->>>>>>> aurmich/dev

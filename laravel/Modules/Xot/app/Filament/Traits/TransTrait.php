@@ -7,25 +7,7 @@ namespace Modules\Xot\Filament\Traits;
 use TypeError;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-<<<<<<< HEAD
 use Webmozart\Assert\Assert;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Webmozart\Assert\Assert;
-=======
->>>>>>> aurmich/dev
-=======
-use Webmozart\Assert\Assert;
->>>>>>> 345f8677 (phpstan)
-=======
->>>>>>> 54f4fa16 (.)
-=======
-use Webmozart\Assert\Assert;
->>>>>>> 345f8677 (phpstan)
->>>>>>> aurmich/dev
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 
@@ -92,39 +74,12 @@ trait TransTrait
     }
 
     /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
->>>>>>> aurmich/dev
      * Get translation key for a given class name.
      */
     public static function getKeyTransClass(string $class): string
     {
         $piece=Str::of($class)->explode('\\')->toArray();
-<<<<<<< HEAD
         Assert::string($type=$piece[2]);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        Assert::string($type=$piece[2]);
-=======
-        $type=$piece[2];
->>>>>>> aurmich/dev
-=======
-        Assert::string($type=$piece[2]);
->>>>>>> 345f8677 (phpstan)
-=======
-        $type=$piece[2];
->>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
-=======
-        Assert::string($type=$piece[2]);
->>>>>>> 345f8677 (phpstan)
->>>>>>> aurmich/dev
         $module=Str::of($class)->between('Modules\\','\\'.$type.'\\')->toString();
 
         $module_low=Str::of($module)->lower()->toString();
@@ -147,14 +102,6 @@ trait TransTrait
     }
 
     /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
->>>>>>> aurmich/dev
      * Get translation for a given function name.
      */
     public static function transFunc(string $func, bool $exceptionIfNotExist = false): string

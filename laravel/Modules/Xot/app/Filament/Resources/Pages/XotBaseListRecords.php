@@ -27,11 +27,6 @@ abstract class XotBaseListRecords extends FilamentListRecords
 {
     use HasXotTable;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     /*
      * Get the table columns.
      *
@@ -39,29 +34,6 @@ abstract class XotBaseListRecords extends FilamentListRecords
      
     abstract public function getTableColumns(): array;
     */
-<<<<<<< HEAD
-=======
-=======
-    /**
-     * Get the table columns.
-     *
-     * @return array<string, Tables\Columns\Column>
-     */
-    public function getTableColumns(): array
-    {
-        return [];
-    }
->>>>>>> 54f4fa16 (.)
-=======
-    /*
-     * Get the table columns.
-     *
-     * @return array<string, Tables\Columns\Column>
-     
-    abstract public function getTableColumns(): array;
-    */
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
 
     
     /**
@@ -77,41 +49,13 @@ abstract class XotBaseListRecords extends FilamentListRecords
     /**
      * Get the header actions.
      *
-<<<<<<< HEAD
      * @return array<string, \Filament\Actions\Action>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @return array<string, \Filament\Actions\Action>
-=======
-     * @return array<int, \Filament\Actions\Action>
->>>>>>> aurmich/dev
-=======
-     * @return array<int, \Filament\Actions\Action>
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
      */
     protected function getHeaderActions(): array
     {
         return [
             // \Filament\Actions\CreateAction::make(),
-<<<<<<< HEAD
            // ExportXlsAction::make('export_xls'),
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-           // ExportXlsAction::make('export_xls'),
-=======
-            ExportXlsAction::make('export_xls'),
->>>>>>> aurmich/dev
-=======
-            ExportXlsAction::make('export_xls'),
->>>>>>> 54f4fa16 (.)
-=======
-           // ExportXlsAction::make('export_xls'),
->>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
->>>>>>> aurmich/dev
         ];
     }
 
@@ -128,30 +72,10 @@ abstract class XotBaseListRecords extends FilamentListRecords
         return $resource;
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     /** 
      * Paginate the table query.
     */
     protected function paginateTableQueryTMP(Builder $query): Paginator
-<<<<<<< HEAD
-=======
-=======
-    /**
-     * Paginate the table query.
-     */
-    protected function paginateTableQuery(Builder $query): Paginator
->>>>>>> 54f4fa16 (.)
-=======
-    /** 
-     * Paginate the table query.
-    */
-    protected function paginateTableQueryTMP(Builder $query): Paginator
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
     {
         return $query->fastPaginate(
             ('all' === $this->getTableRecordsPerPage()) 

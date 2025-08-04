@@ -302,14 +302,7 @@ $userClass::factory()->create();
 
 ### **Fase 1: Identificazione Violazioni**
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
->>>>>>> aurmich/dev
 # Cerca import diretti tra moduli
 grep -r "use Modules\.*Models\User" --include="*.php" ./
 
@@ -351,10 +344,3 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 
 **Ultimo Aggiornamento**: Gennaio 2025  
 **Stato**: ✅ Pattern Documentato e Implementato  
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-**Responsabile**: Team Architettura Laraxot 
->>>>>>> 3671307a (✨ (Cms): add comprehensive testing strategy for the RegistrationWidget and Login functionalities to ensure robust user authentication and registration processes. This includes separation of concerns between page and widget tests, dynamic type handling, and error management.)
->>>>>>> aurmich/dev

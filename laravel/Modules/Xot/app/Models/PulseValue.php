@@ -5,19 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Models;
 
 /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- * 
- *
->>>>>>> aurmich/dev
-=======
- * 
- *
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  * @method static \Modules\Xot\Database\Factories\PulseValueFactory factory($count = null, $state = [])

@@ -38,34 +38,14 @@ Il nome specifico del progetto (es: "il progetto") NON DEVE MAI apparire nella d
 
 #### ✅ CORRETTO (in un modulo)
 ```markdown
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Modulo di Gestione Pazienti
 Questo modulo fornisce funzionalità per la gestione dei pazienti in una clinica odontoiatrica.
 ```
 
 #### ❌ ERRATO (in un modulo)
 ```markdown
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Modulo Pazienti il progetto
 Questo modulo gestisce i pazienti nella piattaforma il progetto.
 ```
@@ -93,14 +73,3 @@ Prima di committare modifiche alla documentazione di un modulo, verificare:
 ## Collegamenti
 - [Struttura Moduli](module-structure.md)
 - [Convenzioni Generali](conventions.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [Best Practices Documentazione](documentation-guidelines.md) 
->>>>>>> aurmich/dev
-=======
-- [Best Practices Documentazione](documentation-guidelines.md) 
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev

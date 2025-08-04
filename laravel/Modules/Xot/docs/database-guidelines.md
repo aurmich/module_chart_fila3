@@ -100,17 +100,7 @@ Per ogni database, mantenere un file `schema.json` aggiornato che descrive la st
 Generare e mantenere aggiornata una documentazione dettagliata in formato Markdown per ogni tabella del database:
 
 ```markdown
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 ## Tabella: nome_tabella
 
 **Descrizione:** Questa tabella contiene dati relativi a...
@@ -239,13 +229,6 @@ class NomeModello extends Model
 
     // Relazioni e metodi...
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev
 
 ## Linee guida sulle Migrazioni
 
@@ -306,14 +289,6 @@ return new class extends XotBaseMigration {
     {
         return $this->hasMany(SocioRichiestaConvenzione::class, 'id_socio', 'id_socio');
     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 9df8f556 (fix .md)
->>>>>>> aurmich/dev
 ```
 
 ### 2. Documentazione delle Relazioni
@@ -452,17 +427,7 @@ public function up(): void
 ### 1. Generazione Documentazione
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Genera documentazione dello schema da un file JSON
 php artisan xot:generate-db-documentation /path/to/schema.json /path/to/output
 
@@ -473,17 +438,7 @@ php artisan schema:generate-diagram --tables=tabella1,tabella2 --path=/path/to/o
 ### 2. Analisi del Database
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Esporta lo schema del database in JSON
 php artisan db:export-schema --connection=nome_connessione --output=/path/to/output.json
 

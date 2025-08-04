@@ -145,17 +145,7 @@ Modules/
 ### 1. Identificare i File da Correggere
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Trova tutti i file PHP che usano ->label()
 grep -r "->label(" . --include="*.php"
 ```
@@ -234,14 +224,3 @@ php artisan view:clear
 - [Documentazione Laravel Translations](https://laravel.com/docs/localization)
 - [Filament Form Components](https://filamentphp.com/docs/forms)
 - [Best Practices Filament](../docs/filament-best-practices.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [Schema Conventions](../docs/schema-conventions.md) 
->>>>>>> aurmich/dev
-=======
-- [Schema Conventions](../docs/schema-conventions.md) 
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev

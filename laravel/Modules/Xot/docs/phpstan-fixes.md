@@ -1,37 +1,10 @@
 
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-5693302 (.)
-b6f667c (.)
-<<<<<<< HEAD
-
-=======
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> aurmich/dev
 
 5693302 (.)
 
 b6f667c (.)
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> 15cb84fb (fix collisions)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 # Correzioni PHPStan nel Modulo Xot
 
 ## Correzioni Implementate
@@ -145,48 +118,14 @@ public function execute(string $modelClass): AbstractSchemaManager
 {
     Assert::classExists($modelClass);
     Assert::subclassOf($modelClass, Model::class);
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 ### Versione HEAD
 
 aurmich/dev
 5693302 (.)
-<<<<<<< HEAD
 
 b6f667c (.)
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-b6f667c (.)
-
-=======
-b6f667c (.)
->>>>>>> aurmich/dev
-=======
-b6f667c (.)
->>>>>>> 54f4fa16 (.)
-=======
-
-b6f667c (.)
-
->>>>>>> 15cb84fb (fix collisions)
-=======
-b6f667c (.)
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 # Risoluzione Problemi PHPStan nel Modulo Xot
 
 Questo documento descrive i principali problemi PHPStan risolti nel modulo Xot e le strategie adottate per la loro risoluzione.
@@ -295,71 +234,20 @@ class XotBaseModel extends Model
 aurmich/dev
 aurmich/dev
 5693302 (.)
-<<<<<<< HEAD
 
 b6f667c (.)
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-b6f667c (.)
-
-=======
-b6f667c (.)
->>>>>>> aurmich/dev
-=======
-b6f667c (.)
->>>>>>> 54f4fa16 (.)
-=======
-
-b6f667c (.)
-
->>>>>>> 15cb84fb (fix collisions)
-=======
-b6f667c (.)
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
     // ...
 }
 ```
 
 
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-5693302 (.)
-b6f667c (.)
-<<<<<<< HEAD
-
-=======
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> aurmich/dev
 
 5693302 (.)
 
 b6f667c (.)
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> 15cb84fb (fix collisions)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 ### 2. Validazione Dati
 ```php
 /**
@@ -370,48 +258,14 @@ private function validateData(array $data): void
 {
     Assert::keyExists($data, 'required_field');
     Assert::string($data['required_field']);
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 ### Versione HEAD
 
 aurmich/dev
 5693302 (.)
-<<<<<<< HEAD
 
 b6f667c (.)
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-b6f667c (.)
-
-=======
-b6f667c (.)
->>>>>>> aurmich/dev
-=======
-b6f667c (.)
->>>>>>> 54f4fa16 (.)
-=======
-
-b6f667c (.)
-
->>>>>>> 15cb84fb (fix collisions)
-=======
-b6f667c (.)
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 ### Servizi e Dependency Injection
 
 **Problema**: Metodi che utilizzano dependency injection non avevano tipi ben definiti.
@@ -437,71 +291,20 @@ public function process(ServiceInterface $service): ResponseInterface
 aurmich/dev
 aurmich/dev
 5693302 (.)
-<<<<<<< HEAD
 
 b6f667c (.)
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-b6f667c (.)
-
-=======
-b6f667c (.)
->>>>>>> aurmich/dev
-=======
-b6f667c (.)
->>>>>>> 54f4fa16 (.)
-=======
-
-b6f667c (.)
-
->>>>>>> 15cb84fb (fix collisions)
-=======
-b6f667c (.)
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
     // ...
 }
 ```
 
 
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-5693302 (.)
-b6f667c (.)
-<<<<<<< HEAD
-
-=======
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> aurmich/dev
 
 5693302 (.)
 
 b6f667c (.)
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> 15cb84fb (fix collisions)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 ### 3. Gestione Relazioni
 ```php
 /**
@@ -594,17 +397,7 @@ public function execute(Model $model, array $data): array
 - ✅ Risolto: Implementato `getTableColumns()` e `getTableConfiguration()`
 
 ### 2. Metodo Final Override in UsersRelationManager
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 ### Versione HEAD
 
 - ❌ Errore: Cannot override final method `Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager::form()`
@@ -631,17 +424,7 @@ public function execute(Model $model, array $data): array
   - Implementare la logica corretta per la gestione delle relazioni
 
 ### 3. Metodo Final Override in DomainsRelationManager
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 ### Versione HEAD
 
 - ❌ Errore: Cannot override final method `Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager::form()`
@@ -713,17 +496,7 @@ public function execute(Model $model, array $data): array
 
 3. **Azioni e Validazione**
    ```php
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 ### Versione HEAD
 
    public function getTableActions(): array
@@ -769,17 +542,7 @@ Best Practices:
 - Utilizzare i metodi previsti per la personalizzazione invece di sovrascrivere metodi final
 - Mantenere la coerenza nella struttura dei form tra i vari RelationManager
 - Validare i dati utilizzando le regole di validazione di Laravel
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 ### Versione HEAD
 
 
@@ -869,33 +632,9 @@ Questo permette a phpstan di trovare correttamente il file durante l'analisi sta
 
 aurmich/dev
 5693302 (.)
-<<<<<<< HEAD
 
 b6f667c (.)
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-b6f667c (.)
-
-=======
-b6f667c (.)
->>>>>>> aurmich/dev
-=======
-b6f667c (.)
->>>>>>> 54f4fa16 (.)
-=======
-
-b6f667c (.)
-
->>>>>>> 15cb84fb (fix collisions)
-=======
-b6f667c (.)
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 ### Problemi con le Relazioni Eloquent
 
 **Problema**: PHPStan non riconosceva correttamente i tipi restituiti dalle relazioni Eloquent.
@@ -1062,30 +801,6 @@ interface AuthenticatableRequest
 aurmich/dev
 aurmich/dev
 5693302 (.)
-<<<<<<< HEAD
 
 b6f667c (.)
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-b6f667c (.)
-
-=======
-b6f667c (.)
->>>>>>> aurmich/dev
-=======
-b6f667c (.)
->>>>>>> 54f4fa16 (.)
-=======
-
-b6f667c (.)
-
->>>>>>> 15cb84fb (fix collisions)
-=======
-b6f667c (.)
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev

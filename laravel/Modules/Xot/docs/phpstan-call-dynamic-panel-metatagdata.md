@@ -62,30 +62,3 @@ Questo pattern consente:
 6. Le eccezioni sono gestite e documentate
 7. I valori null sono esplicitamente dichiarati
 8. Le strutture dati complesse sono tipizzate con array shapes
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-
-## Collegamenti tra versioni di PHPSTAN-CALL-DYNAMIC-PANEL-METATAGDATA.md
-* [PHPSTAN-CALL-DYNAMIC-PANEL-METATAGDATA.md](../../../Xot/docs/phpstan/PHPSTAN-CALL-DYNAMIC-PANEL-METATAGDATA.md)
-* [PHPSTAN-CALL-DYNAMIC-PANEL-METATAGDATA.md](../../../Xot/docs/PHPSTAN-CALL-DYNAMIC-PANEL-METATAGDATA.md)
-
-
-## Collegamenti tra versioni di phpstan-call-dynamic-panel-metatagdata.md
-* [phpstan-call-dynamic-panel-metatagdata.md](phpstan/phpstan-call-dynamic-panel-metatagdata.md)
-
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 9df8f556 (fix .md)
-=======
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
->>>>>>> bead9c28 (fix case)
->>>>>>> aurmich/dev

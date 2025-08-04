@@ -162,29 +162,8 @@ Line 147: Method Modules\Xot\Filament\Resources\XotBaseResource::getRelations() 
 ### 22. Errori in Filament/Resources/XotBaseResource/RelationManager/XotBaseRelationManager.php
 
 ```
-<<<<<<< HEAD
 Line 111: Static access to instance property Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager::$resource.
 Line 112: Dead catch - Exception is never thrown in the try block.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Line 111: Static access to instance property Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager::$resource.
-=======
-Line 111: Static access to instance property Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager::$resource.
->>>>>>> 54f4fa16 (.)
-=======
-Line 111: Static access to instance property Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager::$resource.
->>>>>>> 9df8f556 (fix .md)
-Line 112: Dead catch - Exception is never thrown in the try block.
-=======
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
-Line 111: Static access to instance property Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager::$resource.
-Line 112: Dead catch - Exception is never thrown in the try block.
->>>>>>> bead9c28 (fix case)
->>>>>>> aurmich/dev
 ```
 
 ### 23. Errore in Filament/Widgets/XotBaseWidget.php
@@ -839,40 +818,3 @@ protected array $listeners = [
 ```
 
 L'aggiunta dell'annotazione `@phpstan-var` fornisce a PHPStan un'informazione più specifica sul tipo della proprietà, permettendogli di verificare correttamente che tutti gli elementi dell'array siano stringhe. Questo è particolarmente utile quando si lavora con Livewire, dove i listener sono definiti come un array associativo di eventi e metodi da chiamare.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-### Versione HEAD
-
-
-### Versione Incoming
-
-<<<<<<< HEAD
-Le correzioni apportate al modulo Xot hanno migliorato significativamente la qualità del codice e ridotto la possibilità di errori runtime. Queste modifiche sono in linea con le best practice moderne di PHP e contribuiscono a un codebase più robusto e manutenibile. 
-=======
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-
-## Collegamenti tra versioni di phpstan_fixes.md
-* [phpstan_fixes.md](../../../Xot/docs/phpstan_fixes.md)
-* [phpstan_fixes.md](../../../User/docs/phpstan_fixes.md)
-* [phpstan_fixes.md](../../../User/docs/fixes/phpstan_fixes.md)
-* [phpstan_fixes.md](../../../Activity/docs/phpstan_fixes.md)
-
-
----
-
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 9df8f556 (fix .md)
-=======
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
->>>>>>> bead9c28 (fix case)
->>>>>>> aurmich/dev

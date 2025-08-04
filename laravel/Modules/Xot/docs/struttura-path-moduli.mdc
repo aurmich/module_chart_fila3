@@ -3,55 +3,21 @@
 Tutti i file di risorsa (Resource), enum e pages dei moduli Laravel devono essere posizionati in `Modules/<NomeModulo>/app/` e **mai** direttamente nella root del modulo o in sottocartelle come `Filament/Resources/` o `Enums/` fuori da `app/`.
 
 ## Esempio corretto
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 74316a37 (✨ (docs): add new documentation for FullCalendar widget implementation and best practices to improve clarity and maintainability)
 # Regola struttura path per i moduli Laravel
 
 Tutti i file di risorsa (Resource), enum e pages dei moduli Laravel devono essere posizionati in `Modules/<NomeModulo>/app/` e **mai** direttamente nella root del modulo o in sottocartelle come `Filament/Resources/` o `Enums/` fuori da `app/`.
 
 ## Esempio corretto
-=======
->>>>>>> d23ba493 (add calendar)
 # Regola struttura path per i moduli Laravel
 
 Tutti i file di risorsa (Resource), enum e pages dei moduli Laravel devono essere posizionati in `Modules/<NomeModulo>/app/` e **mai** direttamente nella root del modulo o in sottocartelle come `Filament/Resources/` o `Enums/` fuori da `app/`.
 
 ## Esempio corretto
->>>>>>> aurmich/dev
 # Regola struttura path per i moduli Laravel
 
 Tutti i file di risorsa (Resource), enum e pages dei moduli Laravel devono essere posizionati in `Modules/<NomeModulo>/app/` e **mai** direttamente nella root del modulo o in sottocartelle come `Filament/Resources/` o `Enums/` fuori da `app/`.
 
 ## Esempio corretto
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
->>>>>>> 74316a37 (✨ (docs): add new documentation for FullCalendar widget implementation and best practices to improve clarity and maintainability)
-=======
->>>>>>> aurmich/dev
-# Regola struttura path per i moduli Laravel
-
-Tutti i file di risorsa (Resource), enum e pages dei moduli Laravel devono essere posizionati in `Modules/<NomeModulo>/app/` e **mai** direttamente nella root del modulo o in sottocartelle come `Filament/Resources/` o `Enums/` fuori da `app/`.
-
-## Esempio corretto
-<<<<<<< HEAD
-# Regola struttura path per i moduli Laravel
-
-Tutti i file di risorsa (Resource), enum e pages dei moduli Laravel devono essere posizionati in `Modules/<NomeModulo>/app/` e **mai** direttamente nella root del modulo o in sottocartelle come `Filament/Resources/` o `Enums/` fuori da `app/`.
-
-## Esempio corretto
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 - Modules/SaluteOra/app/Filament/Resources/UserResource.php
 - Modules/SaluteOra/app/Filament/Resources/UserResource/Pages/CreateUser.php
 - Modules/SaluteOra/app/Enums/UserType.php
@@ -119,16 +85,6 @@ class User extends Model {
 - [SaluteOra/docs/uso-label-filament.mdc](../../SaluteOra/docs/uso-label-filament.mdc)
 - https://github.com/spatie/laravel-model-states
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> bac26886 (delete replicate folder)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 ---
 
 # Regole pratiche per gestione di enum e state class
@@ -222,15 +178,3 @@ namespace Modules\SaluteOra\App\Actions\Patient\Calendar;
 ```
 
 Vedi anche: SaluteOra/docs/directory-structure.md
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-[← Torna a SaluteOra/docs](../../SaluteOra/docs/uso-label-filament.mdc)
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
->>>>>>> 74316a37 (✨ (docs): add new documentation for FullCalendar widget implementation and best practices to improve clarity and maintainability)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev

@@ -67,15 +67,6 @@ class XotComposer
         $view->with('lang', $lang);
         $view->with('_theme', $this);
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
         if(class_exists('\Jenssegers\Agent\Agent')){
             $agent = new \Jenssegers\Agent\Agent();
             $view->with('isMobile', $agent->isMobile());
@@ -87,74 +78,6 @@ class XotComposer
             $profile = XotData::make()->getProfileModel();
             $view->with('profile', $profile);
             $view->with('user', auth()->user());
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
-        if (Auth::check()) {
-            $profile = XotData::make()->getProfileModel();
-            $view->with('_profile', $profile);
-            $view->with('_user', auth()->user());
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
-=======
->>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
-            // Safely check authentication without triggering guards
-            if (auth()->check()) {
-                try {
-                    $profile = XotData::make()->getProfileModel();
-                    $view->with('_profile', $profile);
-                    $view->with('_user', auth()->user());
-                } catch (\Throwable $e) {
-                    // Silently fail if we can't load the profile
-                    \Log::warning('Failed to load user profile in XotComposer: ' . $e->getMessage());
-                }
-            }
-        } finally {
-            $composing = false; // Reset flag sempre, anche in caso di eccezione
-        }
-    }
-    
-    /**
-     * Controllo sicuro per verificare se l'auth è pronto.
-     */
-    private function isAuthenticationSafe(): bool
-    {
-        try {
-            // Verifica se l'app è completamente inizializzata
-            if (!app()->bound('auth')) {
-                return false;
-            }
-            
-            // Verifica se c'è una sessione attiva
-            if (!app()->bound('session') || !session()->isStarted()) {
-                return false;
-            }
-            
-            // Verifica Auth senza scatenare risoluzione complessa
-            return Auth::hasUser() || Auth::guest();
-            
-        } catch (\Exception $e) {
-            return false; // In caso di errore, considera auth non sicuro
-<<<<<<< HEAD
->>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
-=======
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
-=======
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
->>>>>>> aurmich/dev
         }
     }
 

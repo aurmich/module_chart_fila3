@@ -4,64 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Blocks;
 
-<<<<<<< HEAD
 use Filament\Forms\Components\Select;
 use Modules\Xot\Filament\Traits\TransTrait;
 use Filament\Forms\Components\Builder\Block;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Filament\Forms\Components\Select;
-use Modules\Xot\Filament\Traits\TransTrait;
-use Filament\Forms\Components\Builder\Block;
-=======
-use Filament\Forms\Components\Builder\Block;
-use Filament\Forms\Components\Select;
->>>>>>> aurmich/dev
-=======
-use Filament\Forms\Components\Select;
-use Modules\Xot\Filament\Traits\TransTrait;
-use Filament\Forms\Components\Builder\Block;
->>>>>>> 345f8677 (phpstan)
-=======
-use Filament\Forms\Components\Builder\Block;
-use Filament\Forms\Components\Select;
->>>>>>> 54f4fa16 (.)
-=======
-use Filament\Forms\Components\Select;
-use Modules\Xot\Filament\Traits\TransTrait;
-use Filament\Forms\Components\Builder\Block;
->>>>>>> 345f8677 (phpstan)
->>>>>>> aurmich/dev
 use Modules\Xot\Actions\Filament\Block\GetViewBlocksOptionsByTypeAction;
 
 abstract class XotBaseBlock
 {
-<<<<<<< HEAD
     use TransTrait;
     
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    use TransTrait;
-    
-=======
->>>>>>> aurmich/dev
-=======
-    use TransTrait;
-    
->>>>>>> 345f8677 (phpstan)
-=======
->>>>>>> 54f4fa16 (.)
-=======
-    use TransTrait;
-    
->>>>>>> 345f8677 (phpstan)
->>>>>>> aurmich/dev
     public static function make(
         string $name = 'article_list',
         string $context = 'form',

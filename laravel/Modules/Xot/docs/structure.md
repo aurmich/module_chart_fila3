@@ -132,17 +132,7 @@ find /var/www/html/<nome progetto>/laravel/Modules/Chart -type f -name "*.php" |
 done
 
 # Ripeti lo stesso processo per gli altri moduli
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # ...
 ```
 
@@ -236,17 +226,7 @@ laravel/Themes/[Nome]/
    - Mantenere la struttura standard
    - Non modificare la gerarchia delle cartelle
    - Usare sempre percorsi relativi
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 ### Versione HEAD
 
    - Documentare le personalizzazioni 
@@ -261,34 +241,9 @@ laravel/Themes/[Nome]/
 
 ---
 
-<<<<<<< HEAD
 b6f667c (.)
 
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-b6f667c (.)
-
-<<<<<<< HEAD
-
-=======
-=======
-b6f667c (.)
-
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
-=======
-b6f667c (.)
-
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> 15cb84fb (fix collisions)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 # Struttura del Modulo Xot
 
 ## Struttura delle Directory
@@ -325,29 +280,11 @@ Modules/Xot/
 3. **Best Practices**
    - Mantenere una struttura di directory pulita e organizzata
    - Seguire le convenzioni di Laravel per la struttura delle directory
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 
 ### Versione HEAD
 
    - Utilizzare i namespace appropriati che riflettono la struttura delle directory 
 
-<<<<<<< HEAD
-=======
-=======
-### Versione HEAD
-
-   - Utilizzare i namespace appropriati che riflettono la struttura delle directory 
->>>>>>> aurmich/dev
-=======
-### Versione HEAD
-
-   - Utilizzare i namespace appropriati che riflettono la struttura delle directory 
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Modulo Xot
 
 Data: 2025-04-23 19:09:56
@@ -1123,33 +1060,9 @@ tests_old
 ---
 
 aurmich/dev
-<<<<<<< HEAD
 5693302 (.)
 b6f667c (.)
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-5693302 (.)
-b6f667c (.)
-
-=======
-5693302 (.)b6f667c (.)
->>>>>>> aurmich/dev
-=======
-5693302 (.)b6f667c (.)
->>>>>>> 54f4fa16 (.)
-=======
-5693302 (.)
-b6f667c (.)
-
->>>>>>> 15cb84fb (fix collisions)
-=======
-5693302 (.)b6f667c (.)
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 
 ## Regole sui Comandi Artisan Custom nei Moduli
 

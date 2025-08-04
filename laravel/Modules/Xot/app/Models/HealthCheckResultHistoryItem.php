@@ -11,19 +11,6 @@ namespace Modules\Xot\Models;
 use Spatie\Health\Models\HealthCheckResultHistoryItem as BaseHealthCheckResultHistoryItem;
 
 /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- * 
- *
->>>>>>> aurmich/dev
-=======
- * 
- *
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
  * @property int                             $id
  * @property string $check_name
  * @property string $check_label

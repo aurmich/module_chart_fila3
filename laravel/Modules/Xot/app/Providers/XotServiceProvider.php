@@ -4,15 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers;
 
-<<<<<<< HEAD
 use Filament\Forms\Set;
 use function Safe\realpath;
 use Illuminate\Support\Str;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-use function Safe\realpath;
->>>>>>> aurmich/dev
 use Webmozart\Assert\Assert;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Datas\XotData;
@@ -38,56 +32,11 @@ use Illuminate\Auth\AuthenticationException;
 use Filament\Forms\Components\DateTimePicker;
 use Illuminate\Database\Events\MigrationsEnded;
 use Illuminate\Contracts\Debug\ExceptionHandler;
-<<<<<<< HEAD
 
 use Modules\Xot\Exceptions\Handlers\HandlerDecorator;
 use Modules\Xot\Exceptions\Handlers\HandlersRepository;
 use Modules\Xot\Exceptions\Formatters\WebhookErrorFormatter;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-=======
-use Modules\Xot\Exceptions\Handlers\HandlerDecorator;
-use Modules\Xot\Exceptions\Handlers\HandlersRepository;
-
-use Modules\Xot\Exceptions\Formatters\WebhookErrorFormatter;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-=======
-=======
->>>>>>> 54f4fa16 (.)
-use Filament\Forms\Components\DatePicker;
-use Filament\Forms\Components\DateTimePicker;
-use Filament\Forms\Components\Field;
-use Filament\Forms\Components\Placeholder;
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\TimePicker;
-use Filament\Infolists\Components\Entry;
-use Filament\Support\Components\Component;
-use Filament\Support\Concerns\Configurable;
-use Filament\Tables\Columns\Column;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Filters\BaseFilter;
-use Illuminate\Auth\AuthenticationException;
-use Illuminate\Contracts\Debug\ExceptionHandler;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Events\MigrationsEnded;
-use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\Event;
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\URL;
-use Illuminate\Support\Facades\View;
-use Modules\Xot\Exceptions\Handlers\HandlerDecorator;
-use Modules\Xot\Exceptions\Handlers\HandlersRepository;
-use Modules\Xot\Exceptions\Formatters\WebhookErrorFormatter;
-use Modules\Xot\View\Composers\XotComposer;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Webmozart\Assert\Assert;
-
-use function Safe\realpath;
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 
 /**
  * Class XotServiceProvider.
@@ -108,10 +57,7 @@ class XotServiceProvider extends XotBaseServiceProvider
         $this->registerEvents();
         //$this->registerExceptionHandler(); // guardare come fa sentry
         $this->registerTimezone();
-<<<<<<< HEAD
         $this->registerFilamentMacros();
-=======
->>>>>>> aurmich/dev
         $this->registerProviders();
     }
 
@@ -121,27 +67,7 @@ class XotServiceProvider extends XotBaseServiceProvider
         $this->registerConfig();
         //$this->registerExceptionHandlersRepository();
         //$this->extendExceptionHandler();
-<<<<<<< HEAD
         //$this->registerCommands();
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        //$this->registerCommands();
-=======
-        $this->registerCommands();
->>>>>>> aurmich/dev
-=======
-        $this->registerCommands();
->>>>>>> 54f4fa16 (.)
-=======
-        //$this->registerCommands();
->>>>>>> 15cb84fb (fix collisions)
-=======
-        $this->registerCommands();
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
     }
 
     public function registerProviders(): void
@@ -163,7 +89,6 @@ class XotServiceProvider extends XotBaseServiceProvider
         DatePicker::configureUsing(fn (DatePicker $component) => $component->timezone($timezone)->displayFormat($date_format));
         TimePicker::configureUsing(fn (TimePicker $component) => $component->timezone($timezone));
         TextColumn::configureUsing(fn (TextColumn $column) => $column->timezone($timezone));
-<<<<<<< HEAD
 
         
     }
@@ -182,8 +107,6 @@ class XotServiceProvider extends XotBaseServiceProvider
             });
             return $this;
         });
-=======
->>>>>>> aurmich/dev
     }
 
     /*
@@ -271,11 +194,6 @@ class XotServiceProvider extends XotBaseServiceProvider
     */
     private function redirectSSL(): void
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
         if(app()->runningInConsole()){
             return;
         };
@@ -284,20 +202,6 @@ class XotServiceProvider extends XotBaseServiceProvider
             //config('xra.forcessl') && (isset($_SERVER['SERVER_NAME']) && 'localhost' !== $_SERVER['SERVER_NAME']
             //&& isset($_SERVER['REQUEST_SCHEME']) && 'http' === $_SERVER['REQUEST_SCHEME'])
             XotData::make()->forceSSL()
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 54f4fa16 (.)
-        // --- meglio ficcare un controllo anche sull'env
-        if (
-            config('xra.forcessl') && (isset($_SERVER['SERVER_NAME']) && 'localhost' !== $_SERVER['SERVER_NAME']
-            && isset($_SERVER['REQUEST_SCHEME']) && 'http' === $_SERVER['REQUEST_SCHEME'])
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
         ) {
             URL::forceScheme('https');
             /*

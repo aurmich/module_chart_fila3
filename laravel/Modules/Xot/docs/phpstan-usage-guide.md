@@ -63,17 +63,7 @@ PHPStan offre più livelli di rigore nell'analisi (da 0 a 10). Il framework Lara
 - **Livello 10:** Obiettivo futuro (massima rigidità)
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Analisi a livello 9 (standard corrente)
 ./vendor/bin/phpstan analyse Modules/NomeModulo --level=9
 
@@ -205,17 +195,7 @@ public function post(): \Illuminate\Database\Eloquent\Relations\BelongsTo
 È consigliabile integrare PHPStan nel flusso CI/CD per garantire che tutti i commit rispettino gli standard:
 
 ```yaml
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Esempio per GitHub Actions
 name: PHPStan
 
@@ -247,17 +227,7 @@ Seguendo questa guida, sarai in grado di utilizzare efficacemente PHPStan all'in
 ## Promemoria Rapido
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Dalla directory laravel del progetto
 cd /percorso/al/progetto/laravel
 
@@ -269,46 +239,3 @@ cd /percorso/al/progetto/laravel
 
 # Analisi con output dettagliato
 ./vendor/bin/phpstan analyse Modules/NomeModulo --level=9 --verbose
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-``` 
->>>>>>> aurmich/dev
-=======
-=======
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-``` 
-## Collegamenti tra versioni di PHPSTAN-USAGE-GUIDE.md
-* [PHPSTAN-USAGE-GUIDE.md](../../../Xot/docs/phpstan/PHPSTAN-USAGE-GUIDE.md)
-* [PHPSTAN-USAGE-GUIDE.md](../../../Xot/docs/PHPSTAN-USAGE-GUIDE.md)
-
-
-## Collegamenti tra versioni di phpstan-usage-guide.md
-### Versione HEAD
-
-* [phpstan-usage-guide.md](../phpstan-usage-guide.md)
-
-### Versione Incoming
-
-* [phpstan-usage-guide.md](phpstan/phpstan-usage-guide.md)
-
----
-
-
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
-``` 
->>>>>>> 9df8f556 (fix .md)
-=======
-``` 
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
-``` 
->>>>>>> bead9c28 (fix case)
->>>>>>> aurmich/dev
