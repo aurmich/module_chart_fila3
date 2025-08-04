@@ -456,6 +456,7 @@ return [
         'action' => 'Create the first appointment',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'states' => [
         'confirmed' => [
             'label' => 'Confirm',
@@ -596,4 +597,22 @@ return [
     ],
 =======
 >>>>>>> 8d591468 (fields translations)
+=======
+    'states' => [
+        'confirmed' => [
+            'label' => 'Conferma',
+            'color' => 'success',
+            'icon' => 'heroicon-o-check-circle',
+            'modal_heading' => 'Accetta appuntamento',
+            'modal_description' => 'Sei sicuro di voler accettare questo appuntamento?',
+        ],
+        'rejected' => [
+            'label' => 'Rifiuta',
+            'color' => 'danger',
+            'icon' => 'heroicon-o-x-mark',
+            'modal_heading' => 'Rifiuta appuntamento',
+            'modal_description' => 'Sei sicuro di voler rifiutare questo appuntamento?',
+        ],
+    ],
+>>>>>>> 49a567a1 (✨ (appointment.php): add new appointment states for confirmed and rejected to enhance user experience and provide clear actions)
 ];
