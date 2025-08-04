@@ -5,10 +5,14 @@
         </x-slot>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         <div>
 =======
         <div class="space-y-4 max-h-96 overflow-y-auto">
 >>>>>>> 2df8b507 (bozza widget doctor appointments)
+=======
+        <div>
+>>>>>>> 0c7257a8 (- updated testi sale d'attesa)
             @if($this->appointments->isNotEmpty())
                 @each('pub_theme::appointment.doctor-pending-item', $this->appointments, 'appointment')
             @else

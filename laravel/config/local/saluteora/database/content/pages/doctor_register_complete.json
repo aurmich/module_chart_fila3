@@ -15,6 +15,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         "it": "Hai completato la tua registrazione!",
                         "en": "You have completed your registration!"
                     },
@@ -45,6 +46,14 @@
                         "it": "Grazie per esserti unito alla nostra community. La tua richiesta è in fase di verifica. Riceverai una email dal backoffice con tutte le informazioni per completare la registrazione!",
                         "en": "Thank you for joining our community. Your request is currently being reviewed. You will receive an email from our back office with all the information needed to complete your registration!"
 >>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
+=======
+                        "it": "Hai completato la tua registrazione!",
+                        "en": "You have completed your registration!"
+                    },
+                    "subtitle": {
+                        "it": "Grazie per esserti unito alla nostra community. La tua richiesta è in fase di verifica. Riceverai una email di conferma dal backoffice!",
+                        "en": "Thank you for joining our community. Your request is currently being reviewed. You will receive a confirmation email from the back office!"
+>>>>>>> 0c7257a8 (- updated testi sale d'attesa)
                     },
                     "image": "/img/registration-complete.jpg",
                     "cta": [

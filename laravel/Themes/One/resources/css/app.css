@@ -466,8 +466,12 @@
     .filament-fullcalendar {
         --fc-small-font-size: 0.85em;
         --fc-page-bg-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+<<<<<<< HEAD
         --fc-neutral-bg-color: rgba(var(--gray-50), var(--tw-bg-opacity));
 >>>>>>> 97dc5c13 (-updated privacy policy paziente)
+=======
+        --fc-neutral-bg-color: transparent;
+>>>>>>> 0c7257a8 (- updated testi sale d'attesa)
         --fc-neutral-text-color: grey;
         --fc-border-color: rgba(var(--gray-200));
         --fc-button-text-color: #fff;

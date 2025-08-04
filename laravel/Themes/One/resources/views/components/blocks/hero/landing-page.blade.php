@@ -161,7 +161,7 @@
   >
     <!-- INIZIO HEADER -->
     <div>
-      <div class="w-full h-32 p-2 lg:p-8 flex flex-row items-center justify-between">
+      <div class="w-full h-18 p-2 lg:p-8 flex flex-row items-center justify-between">
         <div>
           <img src="/img/logo.png" class="h-7 lg:h-14" />
         </div>
@@ -349,12 +349,12 @@
 =======
 >>>>>>> f7d3ce4f (- update landing-page;)
     <!-- INIZIO PRIMA SECTION -->
-    <div class="p-6 lg:mt-60 lg:ml-32 lg:w-2/5 flex flex-col justify-start">
+    <div class="w-4/5 p-6 lg:mt-60 lg:ml-32 lg:w-2/5 flex flex-col justify-start">
       <h1 class="text-[#FF5F7E] text-[40px] lg:text-8xl leading-tight font-bold mb-2.5">
         Benvenuta su <br />
         Salute Orale
       </h1>
-      <span class="w-56 lg:w-auto text-[#FCD5D0] text-lg lg:text-2xl leading-slug">
+      <span class="w-4/5 lg:w-auto text-[#FCD5D0] text-lg lg:text-2xl leading-slug">
         Il portale che vuole garantire alle pazienti vulnerabili in stato di
         gravidanza la possibilità di accedere a servizi odonoiatrici di
         prevenzione a titolo completamente gratuito
@@ -370,7 +370,7 @@
     <!-- FINE PRIMA SECTION -->
     <!-- INIZIO SECONDA SECTION -->
     <div>
-      <div class="p-6 mt-12 lg:mt-52 flex justify-center">
+      <div class="md:w-2/4 lg:w-full p-6 mt-12 lg:mt-52 flex justify-center">
         <h2 class="text-[#FF5F7E] text-3xl lg:text-4xl text-center">
           Perché é importante la salute orale in gravidanza?
         </h2>
@@ -442,8 +442,12 @@
          <h1 class="text-[#FF5F7E] text-3xl">Per informazioni aggiuntive</h1>
        </div>
        <div class="h-auto pt-5 flex flex-col lg:flex-row justify-center items-center">
+<<<<<<< HEAD
          <div class="w-64 h-auto bg-cover bg-[#FCD5D0] rounded-[25px] m-5">
 >>>>>>> 8d28bdca (- updated style area dottore)
+=======
+         <div class="w-3/5 lg:w-1/5 h-auto bg-cover bg-[#FCD5D0] rounded-[25px] m-5">
+>>>>>>> 0c7257a8 (- updated testi sale d'attesa)
            <div class="grid grid-cols-2">
              <div class="flex justify-center">
                <img class="h-44 px-2 pt-2" src="/img/woman-characterrr.png" />
@@ -481,8 +485,12 @@
              </div>
            </div>
          </div>
+<<<<<<< HEAD
          <div class="w-64 h-auto bg-[#FCD5D0] rounded-[25px] m-5">
 >>>>>>> 8d28bdca (- updated style area dottore)
+=======
+         <div class="w-3/5 lg:w-1/5 h-auto bg-[#FCD5D0] rounded-[25px] m-5">
+>>>>>>> 0c7257a8 (- updated testi sale d'attesa)
            <div class="grid grid-cols-2 gap-2">
              <div class="flex justify-center">
                <img class="h-44 p-2" src="/img/dentist.png" />
