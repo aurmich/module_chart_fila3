@@ -27,8 +27,11 @@
 
 =======
     $appointments=$user->appointments;
+<<<<<<< HEAD
     $appointments=collect();
 >>>>>>> 0cff2983 (📝 (docs): remove unused Blade file for appointments to clean up the codebase)
+=======
+>>>>>>> 1a3f150d (- change profilo paziente)
 @endphp
 
 >>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
