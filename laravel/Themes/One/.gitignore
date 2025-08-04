@@ -4,9 +4,6 @@
 vendor
 node_modules
 *.log
-<<<<<<< HEAD
 *.old
-=======
->>>>>>> aurmich/dev
 
 

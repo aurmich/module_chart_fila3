@@ -13,14 +13,6 @@ use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class CoolModulesServiceProvider extends PackageServiceProvider
 {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
->>>>>>> aurmich/dev
     /**
      * Traccia i panel che hanno già gli hook registrati.
      * 
@@ -28,16 +20,6 @@ class CoolModulesServiceProvider extends PackageServiceProvider
      */
     private static array $processedPanels = [];
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
->>>>>>> aurmich/dev
     public function configurePackage(Package $package): void
     {
         /*
@@ -55,15 +37,6 @@ class CoolModulesServiceProvider extends PackageServiceProvider
         $this->app->register(LaravelModulesServiceProvider::class);
 
         $this->app->afterResolving('filament', function () {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
->>>>>>> aurmich/dev
             $panels = Filament::getPanels();
            
             foreach ($panels as $panel) {
@@ -79,49 +52,11 @@ class CoolModulesServiceProvider extends PackageServiceProvider
                     $title = $id->replace(['::', '-'], [' ', ' '])->title()->toString();
                     $panel
                    
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 54f4fa16 (.)
-            foreach (Filament::getPanels() as $panel) {
-=======
-            $panels=Filament::getPanels();
-           
-            foreach ($panels as $panel) {
->>>>>>> 8d591468 (fields translations)
-                $id = Str::of($panel->getId());
-                if ($id->contains('::')) {
-                    $title = $id->replace(['::', '-'], [' ', ' '])->title()->toString();
-                    $panel
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
-=======
-                   
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
                         ->renderHook(
                             'panels::sidebar.nav.start',
                             fn () => new HtmlString("<h2 class='m-2 p-2 font-black text-xl'>$title</h2>"),
                         )
-<<<<<<< HEAD
                             
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
-=======
-                            
->>>>>>> 8d591468 (fields translations)
->>>>>>> aurmich/dev
                         ->renderHook(
                             'panels::sidebar.nav.end',
                             fn () => new HtmlString(
@@ -133,27 +68,9 @@ class CoolModulesServiceProvider extends PackageServiceProvider
                                       </a>'
                             ),
                         );
-<<<<<<< HEAD
                     
                     // Marca questo panel come processato
                     self::$processedPanels[$panelId] = true;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    
-                    // Marca questo panel come processato
-                    self::$processedPanels[$panelId] = true;
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
-=======
-                    
-                    // Marca questo panel come processato
-                    self::$processedPanels[$panelId] = true;
->>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
->>>>>>> aurmich/dev
                 }
             }
         });

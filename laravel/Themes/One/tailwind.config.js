@@ -1,44 +1,9 @@
-<<<<<<< HEAD
 import preset from "./vendor/filament/support/tailwind.config.preset";
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-import preset from "./vendor/filament/support/tailwind.config.preset";
-=======
-import preset from './vendor/filament/support/tailwind.config.preset'
->>>>>>> 54f4fa16 (.)
-=======
-import preset from "./vendor/filament/support/tailwind.config.preset";
->>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
-
-=======
->>>>>>> 15cb84fb (fix collisions)
-/** @type {import('tailwindcss').Config} */
-import preset from './vendor/filament/support/tailwind.config.preset'
-=======
-import preset from "./vendor/filament/support/tailwind.config.preset";
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 
 /** @type {import('tailwindcss').Config} */
 export default {
     presets: [preset],
-<<<<<<< HEAD
     darkMode: "class",
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    darkMode: "class",
-=======
->>>>>>> 15cb84fb (fix collisions)
-=======
-    darkMode: "class",
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
     content: [
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
@@ -60,18 +25,9 @@ export default {
     ],
     theme: {
         extend: {
-<<<<<<< HEAD
             screens: {
                 'ipad': {'min': '677px', 'max': '1030px'},
             },
-=======
-<<<<<<< HEAD
-            screens: {
-                'ipad': {'min': '677px', 'max': '1030px'},
-            },
-=======
->>>>>>> aurmich/dev
->>>>>>> aurmich/dev
             colors: {
                 danger: {
                     50: "rgb(var(--color-danger-50) / <alpha-value>)",
@@ -140,156 +96,12 @@ export default {
             },
             fontFamily: {
                 sans: ["Figtree", "sans-serif"],
-<<<<<<< HEAD
-=======
-=======
-    darkMode: 'class',
-=======
-    darkMode: "class",
->>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
-    content: [
-        "./resources/**/*.blade.php",
-        "./resources/**/*.js",
-        "./resources/**/*.vue",
-        "./assets/**/*.js",
-        "./assets/**/*.css",
-        "../../app/Filament/**/*.php",
-        "../../resources/views/**/*.blade.php",
-        "../../vendor/filament/**/*.blade.php",
-        "../../Modules/**/Filament/**/*.php",
-        "../../Modules/**/resources/views/**/*.blade.php",
-        "../../storage/framework/views/*.php",
-        "../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
-        "./node_modules/flowbite/**/*.js",
-        "../../../public_html/vendor/**/*.blade.php",
-        "./app/Filament/**/*.php",
-        "./resources/views/filament/**/*.blade.php",
-        "./vendor/filament/**/*.blade.php",
-    ],
-    theme: {
-        extend: {
-            colors: {
-                danger: {
-                    50: "rgb(var(--color-danger-50) / <alpha-value>)",
-                    100: "rgb(var(--color-danger-100) / <alpha-value>)",
-                    200: "rgb(var(--color-danger-200) / <alpha-value>)",
-                    300: "rgb(var(--color-danger-300) / <alpha-value>)",
-                    400: "rgb(var(--color-danger-400) / <alpha-value>)",
-                    500: "rgb(var(--color-danger-500) / <alpha-value>)",
-                    600: "rgb(var(--color-danger-600) / <alpha-value>)",
-                    700: "rgb(var(--color-danger-700) / <alpha-value>)",
-                    800: "rgb(var(--color-danger-800) / <alpha-value>)",
-                    900: "rgb(var(--color-danger-900) / <alpha-value>)",
-                    950: "rgb(var(--color-danger-950) / <alpha-value>)",
-                },
-                primary: {
-                    50: "rgb(var(--color-primary-50) / <alpha-value>)",
-                    100: "rgb(var(--color-primary-100) / <alpha-value>)",
-                    200: "rgb(var(--color-primary-200) / <alpha-value>)",
-                    300: "rgb(var(--color-primary-300) / <alpha-value>)",
-                    400: "rgb(var(--color-primary-400) / <alpha-value>)",
-                    500: "#FF5F7E",
-                    600: "rgb(var(--color-primary-600) / <alpha-value>)",
-                    700: "rgb(var(--color-primary-700) / <alpha-value>)",
-                    800: "rgb(var(--color-primary-800) / <alpha-value>)",
-                    900: "rgb(var(--color-primary-900) / <alpha-value>)",
-                    950: "rgb(var(--color-primary-950) / <alpha-value>)",
-                },
-                success: {
-                    50: "rgb(var(--color-success-50) / <alpha-value>)",
-                    100: "rgb(var(--color-success-100) / <alpha-value>)",
-                    200: "rgb(var(--color-success-200) / <alpha-value>)",
-                    300: "rgb(var(--color-success-300) / <alpha-value>)",
-                    400: "rgb(var(--color-success-400) / <alpha-value>)",
-                    500: "rgb(var(--color-success-500) / <alpha-value>)",
-                    600: "rgb(var(--color-success-600) / <alpha-value>)",
-                    700: "rgb(var(--color-success-700) / <alpha-value>)",
-                    800: "rgb(var(--color-success-800) / <alpha-value>)",
-                    900: "rgb(var(--color-success-900) / <alpha-value>)",
-                    950: "rgb(var(--color-success-950) / <alpha-value>)",
-                },
-                warning: {
-                    50: "rgb(var(--color-warning-50) / <alpha-value>)",
-                    100: "rgb(var(--color-warning-100) / <alpha-value>)",
-                    200: "rgb(var(--color-warning-200) / <alpha-value>)",
-                    300: "rgb(var(--color-warning-300) / <alpha-value>)",
-                    400: "rgb(var(--color-warning-400) / <alpha-value>)",
-                    500: "rgb(var(--color-warning-500) / <alpha-value>)",
-                    600: "rgb(var(--color-warning-600) / <alpha-value>)",
-                    700: "rgb(var(--color-warning-700) / <alpha-value>)",
-                    800: "rgb(var(--color-warning-800) / <alpha-value>)",
-                    900: "rgb(var(--color-warning-900) / <alpha-value>)",
-                    950: "rgb(var(--color-warning-950) / <alpha-value>)",
-                },
-                secondary: {
-                    50: "#f8fafc",
-                    100: "#f1f5f9",
-                    200: "#e2e8f0",
-                    300: "#cbd5e1",
-                    400: "#94a3b8",
-                    500: "#64748b",
-                    600: "#475569",
-                    700: "#334155",
-                    800: "#1e293b",
-                    900: "#0f172a",
-                },
-            },
-            fontFamily: {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                sans: ['Figtree', 'sans-serif'],
->>>>>>> 54f4fa16 (.)
-=======
-                sans: ["Figtree", "sans-serif"],
->>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
-=======
-                sans: ['Figtree', 'sans-serif'],
->>>>>>> 15cb84fb (fix collisions)
-=======
-                sans: ["Figtree", "sans-serif"],
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
             },
         },
     },
     plugins: [
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        require("@tailwindcss/forms"),
-        require("@tailwindcss/typography"),
-        require("flowbite/plugin"),
-=======
-        require('@tailwindcss/forms'),
-        require('@tailwindcss/typography'),
-        require('flowbite/plugin'),
->>>>>>> 15cb84fb (fix collisions)
-    ],
-};
-=======
-        require('@tailwindcss/forms'),
-        require('@tailwindcss/typography'),
-        require('flowbite/plugin'),
-=======
-        require("@tailwindcss/forms"),
-        require("@tailwindcss/typography"),
-        require("flowbite/plugin"),
->>>>>>> d23ba493 (add calendar)
-    ],
-}
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> aurmich/dev
         require("@tailwindcss/forms"),
         require("@tailwindcss/typography"),
         require("flowbite/plugin"),
     ],
 };
-<<<<<<< HEAD
-=======
->>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
->>>>>>> aurmich/dev
