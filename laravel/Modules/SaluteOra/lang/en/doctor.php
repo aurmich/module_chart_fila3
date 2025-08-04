@@ -4,6 +4,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b1d9f49d (translations)
 declare(strict_types=1);
 
 return [
@@ -983,6 +986,7 @@ return array (
   array (
     'personal_info' => 
     array (
+<<<<<<< HEAD
       'label' => 'personal_info',
     ),
     'moderation' => 
@@ -1000,12 +1004,37 @@ return array (
     'availability' => 
     array (
       'label' => 'availability',
+=======
+      'label' => 'Personal Information',
+      'description' => 'Enter your personal information',
+    ),
+    'moderation' => 
+    array (
+      'label' => 'Moderation',
+      'description' => 'Profile verification and approval',
+    ),
+    'contacts' => 
+    array (
+      'label' => 'Contacts',
+      'description' => 'Enter your contact information',
+    ),
+    'professional' => 
+    array (
+      'label' => 'Professional Information',
+      'description' => 'Enter your professional information',
+    ),
+    'availability' => 
+    array (
+      'label' => 'Availability',
+      'description' => 'Set your availability schedule',
+>>>>>>> b1d9f49d (translations)
     ),
   ),
   'fields' => 
   array (
     'full_name' => 
     array (
+<<<<<<< HEAD
       'label' => 'full_name',
       'placeholder' => 'full_name',
       'helper_text' => 'full_name',
@@ -1116,3 +1145,106 @@ return array (
     ],
 ];
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+      'label' => 'Full Name',
+      'placeholder' => 'Enter full name',
+    ),
+    'certification' => 
+    array (
+      'label' => 'Certification',
+      'tooltip' => 'Upload your professional certification',
+    ),
+    'moderation_status' => 
+    array (
+      'label' => 'Moderation Status',
+    ),
+    'moderation_notes' => 
+    array (
+      'label' => 'Moderation Notes',
+      'placeholder' => 'Enter any moderation notes',
+    ),
+    'fiscal_code' => 
+    array (
+      'label' => 'Fiscal Code',
+      'placeholder' => 'Enter fiscal code',
+    ),
+    'birth_date' => 
+    array (
+      'label' => 'Date of Birth',
+      'placeholder' => 'Select date of birth',
+    ),
+    'email' => 
+    array (
+      'label' => 'Email',
+      'placeholder' => 'Enter email address',
+      'description' => 'email',
+      'helper_text' => 'email',
+    ),
+    'phone' => 
+    array (
+      'label' => 'Phone',
+      'placeholder' => 'Enter phone number',
+    ),
+    'address' => 
+    array (
+      'label' => 'Address',
+      'placeholder' => 'Enter practice address',
+    ),
+    'city' => 
+    array (
+      'label' => 'City',
+      'placeholder' => 'Enter city',
+    ),
+    'registration_number' => 
+    array (
+      'label' => 'Registration Number',
+      'placeholder' => 'Enter professional registration number',
+    ),
+    'specialties' => 
+    array (
+      'label' => 'Specialties',
+      'placeholder' => 'Select specialties',
+    ),
+    'certifications' => 
+    array (
+      'label' => 'Certifications',
+      'tooltip' => 'Upload any additional certifications',
+    ),
+    'availability' => 
+    array (
+      'label' => 'Availability Schedule',
+    ),
+    'day' => 
+    array (
+      'label' => 'Day',
+      'placeholder' => 'Select day',
+      'helper_text' => 'Select the day of the week',
+    ),
+    'start_time' => 
+    array (
+      'label' => 'Start Time',
+      'placeholder' => 'Select start time',
+      'helper_text' => 'When the availability period begins',
+    ),
+    'end_time' => 
+    array (
+      'label' => 'End Time',
+      'placeholder' => 'Select end time',
+      'helper_text' => 'When the availability period ends',
+    ),
+    'last_name' => 
+    array (
+      'label' => 'Last Name',
+      'placeholder' => 'Enter last name',
+      'helper_text' => 'Your family name',
+    ),
+    'first_name' => 
+    array (
+      'label' => 'First Name',
+      'placeholder' => 'Enter first name',
+      'helper_text' => 'Your given name',
+    ),
+  ),
+);
+>>>>>>> 1c0ba5b2 (translations)
+>>>>>>> b1d9f49d (translations)

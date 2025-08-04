@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -31,3 +32,17 @@ return [
         'language_valid' => 'Selected language is not valid',
     ],
 ];
+=======
+return array (
+  'fields' => 
+  array (
+    'schedule' => 
+    array (
+      'label' => 'schedule',
+      'placeholder' => 'schedule',
+      'helper_text' => 'schedule',
+      'description' => 'schedule',
+    ),
+  ),
+);
+>>>>>>> b1d9f49d (translations)

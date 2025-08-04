@@ -1,9 +1,13 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array (
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+return array (
+>>>>>>> b1d9f49d (translations)
   'title' => 
   array (
     'label' => 'Calendario Medico',
@@ -17,16 +21,22 @@ return array (
     'icon' => 'heroicon-o-calendar-days',
     'sort' => 20,
   ),
+<<<<<<< HEAD
 =======
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
 =======
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
+=======
+>>>>>>> b1d9f49d (translations)
   'actions' => 
   array (
     'create' => 
     array (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b1d9f49d (translations)
       'label' => 'Nuovo Appuntamento',
       'tooltip' => 'Crea un nuovo appuntamento',
       'modal_heading' => 'Nuovo Appuntamento',
@@ -92,6 +102,7 @@ return array (
       'success' => 'Studio cambiato con successo',
       'error' => 'Errore durante il cambio studio',
     ),
+<<<<<<< HEAD
     'view' => 
     array (
       'label' => 'view',
@@ -121,6 +132,11 @@ return array (
   array (
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+  ),
+  'fields' => 
+  array (
+>>>>>>> b1d9f49d (translations)
     'starts_at' => 
     array (
       'label' => 'Inizio',
@@ -461,6 +477,7 @@ return array (
     'completed_appointments' => 'Appuntamenti Completati',
     'no_show_rate' => 'Tasso di Assenza',
     'average_duration' => 'Durata Media',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
@@ -939,3 +956,7 @@ return [
     ],
 ];
 >>>>>>> 98867c82 (translations)
+=======
+  ),
+);
+>>>>>>> b1d9f49d (translations)
