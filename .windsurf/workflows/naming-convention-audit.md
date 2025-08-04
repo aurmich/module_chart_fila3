@@ -286,10 +286,7 @@ done
 echo "=== Generating Naming Report ==="
 
 cat > reports/naming_convention_report.md << 'EOF'
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Naming Convention Audit Report
 
 Data generazione: $(date)
@@ -428,19 +425,13 @@ done
 
 ### Correzione Namespace
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Implementare script di correzione automatica namespace
 ```
 
 ### Standardizzazione Import
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Implementare script per rimuovere import inutili
 ```
 
@@ -532,7 +523,3 @@ echo "✅ Naming Convention Audit completed. Check reports/ directory for detail
 - [Naming Philosophy](../rules/naming_philosophy.mdc)
 - [Laravel Conventions](../rules/laravel_conventions.mdc)
 - [PSR Standards](../rules/psr_standards.mdc)
-<<<<<<< HEAD
-=======
-- [Database Standards](../rules/database_standards.mdc)
->>>>>>> aurmich/dev

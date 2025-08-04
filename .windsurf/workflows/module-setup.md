@@ -34,10 +34,7 @@ Controlla che:
 Crea la struttura completa:
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Directory principale modulo
 mkdir -p Modules/{ModuleName}
 
@@ -620,10 +617,7 @@ Crea le pagine di base:
 Crea `Modules/{ModuleName}/README.md`:
 
 ```markdown
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # {ModuleName} Module
 
 {Descrizione dettagliata del modulo}
@@ -780,18 +774,12 @@ php artisan route:cache
 
 ### 13.3 Test Funzionalità Base
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Test delle route
 php artisan route:list | grep {module-name-lowercase}
 
 # Test del panel Filament
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Accedi a /{module-name-lowercase} via browser
 ```
 
@@ -801,10 +789,7 @@ php artisan route:list | grep {module-name-lowercase}
 Esegui i controlli di qualità del progetto:
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # PHPStan
 ./vendor/bin/phpstan analyze Modules/{ModuleName} --level=9
 
@@ -839,7 +824,3 @@ Il nuovo modulo sarà immediatamente funzionante e conforme a tutti gli standard
 
 ---
 
-<<<<<<< HEAD
-=======
-**Workflow completato!** Il modulo {ModuleName} è ora pronto per lo sviluppo.
->>>>>>> aurmich/dev

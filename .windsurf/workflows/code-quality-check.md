@@ -36,10 +36,7 @@ Questo workflow automatizza tutti i controlli di qualità del codice per garanti
 
 ### 1. Environment Check
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Verifica ambiente e dipendenze
 echo "=== Environment Check ==="
 php --version
@@ -213,10 +210,7 @@ echo "=== Generating Quality Report ==="
 
 # Crea report completo
 cat > ../docs/reports/quality_report.md << 'EOF'
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Code Quality Report
 
 Data generazione: $(date)
@@ -339,10 +333,7 @@ done
 
 # Remove unused imports
 echo "Removing unused imports..."
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Implementa rimozione import inutili
 ```
 
@@ -410,10 +401,7 @@ jobs:
 ### Pre-commit Hook
 ```bash
 #!/bin/sh
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # .git/hooks/pre-commit
 cd laravel
 ./vendor/bin/phpstan analyze --level=9 --memory-limit=2G
@@ -426,7 +414,3 @@ cd laravel
 - [PHPStan Configuration](../rules/phpstan_configuration.mdc)
 - [Laravel 12 Best Practices](../rules/laravel12.mdc)
 - [Security Guidelines](../rules/security_guidelines.mdc)
-<<<<<<< HEAD
-=======
-- [Performance Guidelines](../rules/performance_guidelines.mdc)
->>>>>>> aurmich/dev
