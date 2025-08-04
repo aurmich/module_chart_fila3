@@ -74,6 +74,7 @@ use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Widgets\Widget as FilamentWidget;
 =======
 use Filament\Forms;
+<<<<<<< HEAD
 use Filament\Forms\Form as FilamentForm;
 >>>>>>> d23ba493 (add calendar)
 use Illuminate\Support\Facades\Cache;
@@ -81,10 +82,19 @@ use Filament\Forms\Contracts\HasForms;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Widgets\Widget as FilamentWidget;
 use Filament\Widgets\Concerns\InteractsWithPageFilters;
+=======
+>>>>>>> aa30b366 (✨ (mail_template.php): add 'slug' label and description to Italian mail template for better localization support)
 use Filament\Actions\Action;
 use Illuminate\Contracts\View\View;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Cache;
+use Modules\SaluteOra\Models\Patient;
+use Filament\Forms\Contracts\HasForms;
+use Illuminate\Database\Eloquent\Model;
+use Filament\Forms\Form as FilamentForm;
+use Filament\Widgets\Widget as FilamentWidget;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Widgets\Concerns\InteractsWithPageFilters;
 
 /**
  * Classe base astratta per tutti i widget Filament.
@@ -249,6 +259,8 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
 
         //if (method_exists($form, 'statePath')) {
             $form->statePath('data');
+            //dddx($this->getModel());//Method Modules\User\Filament\Widgets\RegistrationWidget::getModel does not exist.
+            $form->model(Patient::class);
         //}
 
         return $form;

@@ -132,10 +132,14 @@ return array (
       'label' => 'layout',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> aa30b366 (✨ (mail_template.php): add 'slug' label and description to Italian mail template for better localization support)
     'slug' => 
     array (
       'label' => 'slug',
       'description' => 'slug',
+<<<<<<< HEAD
       'helper_text' => 'slug',
       'placeholder' => 'slug',
     ),
@@ -182,6 +186,9 @@ return array (
     ),
 =======
 >>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
+=======
+    ),
+>>>>>>> aa30b366 (✨ (mail_template.php): add 'slug' label and description to Italian mail template for better localization support)
   ),
   'actions' => 
   array (
