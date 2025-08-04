@@ -7,6 +7,7 @@ chart.js/dist/chunks/helpers.segment.mjs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 chart.js/dist/chart.mjs:
 =======
 >>>>>>> 54f4fa16 (.)
@@ -15,6 +16,9 @@ chart.js/dist/chart.mjs:
 >>>>>>> 2ef417db (.)
 =======
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+chart.js/dist/chart.mjs:
+>>>>>>> 85399184 (add .prettierrc)
   (*!
    * Chart.js v3.9.1
    * https://www.chartjs.org
@@ -32,6 +36,7 @@ chart.js/dist/chunks/helpers.segment.mjs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
@@ -49,4 +54,6 @@ chart.js/dist/chart.mjs:
 >>>>>>> 2ef417db (.)
 =======
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+>>>>>>> 85399184 (add .prettierrc)
 */
