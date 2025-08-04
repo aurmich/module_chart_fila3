@@ -1,6 +1,7 @@
 @foreach($blocks as $block)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     {{--
     <x-dynamic-component component="blocks.ticket-list.agid" />
@@ -11,6 +12,8 @@
     <x-dynamic-component component="blocks.ticket-list.agid" />
     --}}
 >>>>>>> 8e074dc7 (.)
+=======
+>>>>>>> fa0c34e2 (♻️ (page-content.blade.php): refactor page content component by removing commented-out code to enhance readability and maintainability)
     @include($block->view,$block->data)
 @endforeach
 
