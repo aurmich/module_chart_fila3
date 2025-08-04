@@ -1,6 +1,7 @@
 # Componenti UI
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Componenti Form Avanzati
 
 <<<<<<< HEAD
@@ -411,57 +412,46 @@ Tutti i componenti UI condivisi devono essere posizionati in `Modules/UI/resourc
 >>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
 =======
 ## Indice
+=======
+## Componenti SVG
+>>>>>>> 9df8f556 (fix .md)
 
-### Versione Dettagliata
-- [Panoramica](#panoramica)
-- [Componenti Filament](#componenti-filament)
-  - [Componenti UI di Base](#componenti-ui-di-base)
-  - [Componenti per le Azioni](#componenti-per-le-azioni)
-  - [Componenti per i Form](#componenti-per-i-form)
-  - [Componenti per le Tabelle](#componenti-per-le-tabelle)
-- [Componenti Personalizzati](#componenti-personalizzati)
-  - [Form Components](#form-components)
-  - [Table Components](#table-components)
-  - [Chart Components](#chart-components)
-  - [Layout Components](#layout-components)
-- [Best Practices](#best-practices)
-- [Traduzioni](#traduzioni)
-- [Temi e Stili](#temi-e-stili)
-- [Collegamenti](#collegamenti)
+### Bandiere (Flags)
 
-### Versione Alternativa
-- [Componenti Base](#componenti-base)
-- [Form Components](#form-components)
-- [Table Components](#table-components)
-- [Chart Components](#chart-components)
-- [Layout Components](#layout-components)
-- [Traduzioni](#traduzioni)
+I componenti SVG per le bandiere sono registrati automaticamente e possono essere utilizzati con il prefisso `ui-flags`. 
 
-## Decisione Architetturale
-Questa documentazione integra entrambe le versioni emerse dal conflitto per fornire sia una panoramica rapida sia una guida dettagliata, facilitando la consultazione a diversi livelli di approfondimento.
+#### Utilizzo
+```blade
+{{-- Bandiera italiana --}}
+<x-ui-flags.it class="w-6 h-4" />
 
-## Backlink
-- [Torna a docs/links.md](../../../../docs/links.md)
-- [Vedi anche: UI/docs/README.md](./README.md)
-- [Vedi anche: Xot/docs/README.md](../../Xot/docs/README.md)
+{{-- Bandiera inglese --}}
+<x-ui-flags.gb class="w-6 h-4" />
+```
 
-## Panoramica
-Il modulo UI fornisce un set di componenti personalizzati che estendono i componenti base di Filament. Tutti i componenti sono progettati per essere accessibili, responsive e facilmente personalizzabili.
+#### Caratteristiche
+- Registrazione automatica dei componenti
+- Supporto per tutte le bandiere del mondo
+- Dimensioni ottimizzate
+- Colori ufficiali
+- ViewBox corretto per il mantenimento delle proporzioni
 
-### Principi Fondamentali
-1. **Accessibilità**
-   - Supporto completo per ARIA
-   - Navigazione da tastiera
-   - Contrasto adeguato
-   - Test con screen reader
+#### Best Practices
+1. **Dimensioni**
+   - Utilizzare classi Tailwind per le dimensioni
+   - Mantenere le proporzioni originali (3:2)
+   - Esempio: `class="w-6 h-4"`
 
-2. **Responsive Design**
-   - Layout fluido
-   - Breakpoints standard
-   - Mobile-first approach
-   - Touch-friendly
+2. **Accessibilità**
+   - Aggiungere attributi `aria-label` quando necessario
+   - Fornire testo alternativo per screen reader
+   - Esempio:
+     ```blade
+     <x-ui-flags.it class="w-6 h-4" aria-label="Bandiera italiana" />
+     ```
 
 3. **Performance**
+<<<<<<< HEAD
    - Lazy loading
    - Bundle splitting
    - Caching ottimizzato
@@ -1561,3 +1551,21 @@ Non è necessario:
 - Creare controller personalizzati
 - Gestire manualmente le rotte
 >>>>>>> 54f4fa16 (.)
+=======
+   - Gli SVG sono ottimizzati
+   - Non richiedono richieste HTTP aggiuntive
+   - Caching automatico
+
+4. **Personalizzazione**
+   - Possibilità di modificare i colori via CSS
+   - Supporto per classi Tailwind
+   - Esempio:
+     ```blade
+     <x-ui-flags.it class="w-6 h-4 text-primary-600" />
+     ```
+
+## Collegamenti Correlati
+- [Documentazione SVG](./SVG.md)
+- [Best Practices UI](./UI_BEST_PRACTICES.md)
+- [Guida Componenti](./COMPONENTS_GUIDE.md) 
+>>>>>>> 9df8f556 (fix .md)

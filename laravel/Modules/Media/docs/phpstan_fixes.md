@@ -32,6 +32,7 @@ while (! feof($this->stream) && $this->start <= $this->end) {
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo controllo garantisce che `fread()` venga chiamato solo con un valore positivo per il parametro `$length`, evitando anche potenziali loop infiniti nel caso in cui `$bytesToRead` fosse zero o negativo. 
 =======
 Questo controllo garantisce che `fread()` venga chiamato solo con un valore positivo per il parametro `$length`, evitando anche potenziali loop infiniti nel caso in cui `$bytesToRead` fosse zero o negativo. 
@@ -52,3 +53,6 @@ Questo controllo garantisce che `fread()` venga chiamato solo con un valore posi
 * [phpstan_fixes.md](../../Activity/docs/phpstan_fixes.md)
 
 >>>>>>> 54f4fa16 (.)
+=======
+Questo controllo garantisce che `fread()` venga chiamato solo con un valore positivo per il parametro `$length`, evitando anche potenziali loop infiniti nel caso in cui `$bytesToRead` fosse zero o negativo. 
+>>>>>>> 9df8f556 (fix .md)

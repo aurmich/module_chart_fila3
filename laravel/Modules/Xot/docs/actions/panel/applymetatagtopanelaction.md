@@ -32,6 +32,7 @@ Applica le configurazioni metatag al pannello Filament.
 La correzione dell'errore PHPStan richiede la modifica del metodo chiamato da `getColors()` a `getFilamentColors()`. Questo metodo è specificamente progettato per restituire i colori nel formato richiesto da Filament.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Collegamenti
 - [MetatagData](../../datas/MetatagData.md)
 <<<<<<< HEAD
@@ -69,3 +70,9 @@ con la nuova:
 ## Collegamenti tra versioni di applymetatagtopanelaction.md
 * [applymetatagtopanelaction.md](../applymetatagtopanelaction.md)
 >>>>>>> 54f4fa16 (.)
+=======
+## Collegamenti
+- [MetatagData](../../datas/MetatagData.md)
+- [Filament Best Practices](../../FILAMENT-BEST-PRACTICES.md)
+- [PHPStan Common Exceptions](../../PHPSTAN-COMMON-EXCEPTIONS.md) 
+>>>>>>> 9df8f556 (fix .md)

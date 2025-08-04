@@ -128,6 +128,7 @@ Questo approccio incrementale permette di ridurre gradualmente gli errori, mante
 - [Documentazione PHPStan sui Generics](https://phpstan.org/blog/generics-in-php-using-phpdocs)
 - [Guida Risoluzione Problemi di Proprietà Undefined](https://phpstan.org/blog/solving-phpstan-access-to-undefined-property)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Solving Template Type Issues](https://phpstan.org/blog/solving-phpstan-error-unable-to-resolve-template-type) 
 =======
 - [Solving Template Type Issues](https://phpstan.org/blog/solving-phpstan-error-unable-to-resolve-template-type) 
@@ -140,3 +141,6 @@ Questo approccio incrementale permette di ridurre gradualmente gli errori, mante
 * [phpstan-fixes-summary-2.md](phpstan/phpstan-fixes-summary-2.md)
 
 >>>>>>> 54f4fa16 (.)
+=======
+- [Solving Template Type Issues](https://phpstan.org/blog/solving-phpstan-error-unable-to-resolve-template-type) 
+>>>>>>> 9df8f556 (fix .md)

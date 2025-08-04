@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Risoluzione Conflitto in ExportXlsByView
 
 ## Problema
@@ -47,29 +48,54 @@ public function execute(string $view, array $data, string $filename): BinaryFile
 Questa modifica migliora la documentazione del codice e facilita l'analisi statica con PHPStan, mantenendo la compatibilità con il livello massimo di analisi.
 =======
 # Risoluzione Conflitti in ExportXlsByView
+=======
+# Risoluzione Conflitto in ExportXlsByView
+>>>>>>> 9df8f556 (fix .md)
 
-## Contesto e Scopo
+## Problema
 
-L'action `ExportXlsByView` è un componente essenziale nel framework Laraxot PTVX che consente l'esportazione di dati in formato Excel direttamente da una vista Blade. Questa action si basa sul pattern QueueableAction di Spatie, rispettando le linee guida del progetto che preferiscono questo approccio rispetto ai Services tradizionali.
+Nel file `ExportXlsByView.php` è stato identificato un conflitto di merge non risolto nella documentazione del metodo `execute()`. Il conflitto riguarda principalmente la formattazione e la completezza delle annotazioni PHPDoc.
 
-## Problematiche Riscontrate
+## Contesto
 
+Il conflitto si è verificato durante il merge tra due branch di sviluppo, dove entrambe le versioni avevano aggiornato la documentazione del metodo `execute()` per migliorare la compatibilità con PHPStan.
 
-Il file presenta un marker di conflitto `
-5693302 (.):docs/actions/export/ExportXlsByView_conflict.mdIl file presenta un marker di conflitto `
+## Soluzione Proposta
 
-b6f667c (.)
-Il file presenta un marker di conflitto `origin/dev` che indica un merge non completato tra due rami di sviluppo.Durante lo sviluppo del progetto, questo file ha subito conflitti di merge causati da:
+La soluzione mantiene la versione più completa e ben formattata della documentazione, rimuovendo le righe vuote non necessarie e assicurando che la documentazione dei parametri segua le convenzioni PHPDoc.
 
-1. Differenti approcci nella documentazione PHPDoc per PHPStan livello 9
-2. Cambiamenti nella gestione dei tipi dei parametri
-3. Modifiche al comportamento della funzionalità di esportazione
-4. Ottimizzazioni e miglioramenti del codice
-fc83074 (.)
+### Codice Corretto
 
-## Decisioni Architetturali
+```php
+/**
+ * Export data to Excel file using a view.
+ *
+ * @param string $view The view name to use for the export
+ * @param array<string, mixed> $data The data to pass to the view
+ * @param string $filename The name of the output file
+ *
+ * @return \Symfony\Component\HttpFoundation\BinaryFileResponse
+ */
+public function execute(string $view, array $data, string $filename): BinaryFileResponse
+{
+    $html = view($view, $data)->render();
+    $tempFile = tempnam(sys_get_temp_dir(), 'xls_');
+    
+    if ($tempFile === false) {
+        throw new \RuntimeException('Could not create temporary file');
+    }
+    
+    file_put_contents($tempFile, $html);
+    
+    return response()->download($tempFile, $filename, [
+        'Content-Type' => 'application/vnd.ms-excel',
+    ])->deleteFileAfterSend(true);
+}
+```
 
+## Impatto
 
+<<<<<<< HEAD
 aurmich/dev
 aurmich/dev
 5693302 (.):docs/actions/export/ExportXlsByView_conflict.mdb6f667c (.)
@@ -131,3 +157,6 @@ La versione risolta del file presenta:
 2. I campi nullabili devono sempre essere gestiti correttamente per evitare errori a runtime.
 3. Le annotazioni PHPDoc devono essere mantenute aggiornate in tutte le future modifiche al file.
 >>>>>>> 54f4fa16 (.)
+=======
+Questa modifica migliora la documentazione del codice e facilita l'analisi statica con PHPStan, mantenendo la compatibilità con il livello massimo di analisi.
+>>>>>>> 9df8f556 (fix .md)

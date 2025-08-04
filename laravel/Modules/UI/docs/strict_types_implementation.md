@@ -3,10 +3,14 @@
 ## Importanza di declare(strict_types=1)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 L'utilizzo di `declare(strict_types=1)` è **obbligatorio** in tutti i file PHP del modulo UI che contengono logica di business, in conformità con le [regole generali del progetto](../../Xot/docs/php-strict-types.md) e per garantire la compatibilità con PHPStan livello 10.
 =======
 L'utilizzo di `declare(strict_types=1)` è **obbligatorio** in tutti i file PHP del modulo UI che contengono logica di business, in conformità con le [regole generali del progetto](../../Xot/docs/PHP-STRICT-TYPES.md) e per garantire la compatibilità con PHPStan livello 10.
 >>>>>>> aurmich/dev
+=======
+L'utilizzo di `declare(strict_types=1)` è **obbligatorio** in tutti i file PHP del modulo UI che contengono logica di business, in conformità con le [regole generali del progetto](../../Xot/docs/PHP-STRICT-TYPES.md) e per garantire la compatibilità con PHPStan livello 10.
+>>>>>>> 9df8f556 (fix .md)
 
 ### Vantaggi per il Modulo UI
 
@@ -56,10 +60,14 @@ Durante la risoluzione dei conflitti Git, è fondamentale assicurarsi che la dic
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regole Generali per strict_types](../../Xot/docs/php-strict-types.md)
 =======
 - [Regole Generali per strict_types](../../Xot/docs/PHP-STRICT-TYPES.md)
 >>>>>>> aurmich/dev
+=======
+- [Regole Generali per strict_types](../../Xot/docs/PHP-STRICT-TYPES.md)
+>>>>>>> 9df8f556 (fix .md)
 - [Linee Guida PHPStan Livello 10](../../Xot/docs/PHPStan/LEVEL10_LINEE_GUIDA.md)
 - [Conflitti Merge Risolti](./CONFLITTI_MERGE_RISOLTI.md)
 - [README del Modulo UI](./README.md)

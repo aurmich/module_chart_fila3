@@ -16,6 +16,7 @@
 
 ## Applicazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Questa regola si applica a **tutti** i moduli (Notify, Cms, Xot, ecc.), **inclusi i modelli**.
 - Evitare l'uso di proprietà deprecate come `protected $casts` nei modelli: preferire override tramite metodo `casts()`.
 - Per esempi specifici, vedere la documentazione nei singoli moduli:
@@ -24,6 +25,10 @@
 - Questa regola si applica a **tutti** i moduli (Notify, Cms, Xot, ecc.).
 - Per esempi specifici, vedere la documentazione nei singoli moduli:
 >>>>>>> aurmich/dev
+=======
+- Questa regola si applica a **tutti** i moduli (Notify, Cms, Xot, ecc.).
+- Per esempi specifici, vedere la documentazione nei singoli moduli:
+>>>>>>> 9df8f556 (fix .md)
   - [Notify Namespace Rules](../../Notify/docs/NAMESPACE_RULES.md)
 
 ## Collegamenti

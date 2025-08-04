@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Notify Module Architecture
 
 ## Overview
@@ -47,37 +48,49 @@ This document outlines the architectural design of the Notify module, focusing o
 - [Troubleshooting](./TROUBLESHOOTING.md)
 =======
 # Architettura del Modulo Notify
+=======
+# Notify Module Architecture
+>>>>>>> 9df8f556 (fix .md)
 
-## Panoramica
+## Overview
+This document outlines the architectural design of the Notify module, focusing on its structure and integration points within a Laravel application.
 
-Il modulo Notify è stato riprogettato per utilizzare due pattern architetturali principali:
+## Key Principles
+1. **Separation of Concerns**: Each component of the Notify module handles a specific aspect of notification management.
+2. **Flexibility**: Designed to support multiple notification channels and providers with ease.
+3. **Scalability**: Built to handle increasing notification volumes through queueing and optimization.
 
-1. Laravel Queueable Actions (spatie/laravel-queueable-action) per la logica di business
-2. Filament Blade Components per l'interfaccia utente
+## Architecture Components
+### 1. Core Components
+- **Notification Service**: Central service for handling notification logic and dispatching.
+- **Channel Providers**: Interfaces for different notification channels like email, SMS, etc.
+- **Template Engine**: Manages notification content formatting and rendering.
 
-## Queueable Actions
+### 2. Integration Points
+- **Laravel Integration**: Hooks into Laravel's event system and queue for notification triggering and processing.
+  ```php
+  // Example Event Listener for Notification
+  class UserRegisteredListener
+  {
+      public function handle(UserRegistered $event)
+      {
+          $event->user->notify(new WelcomeNotification());
+      }
+  }
+  ```
 
-### Struttura
-Le Actions sostituiscono i precedenti Services e sono organizzate nelle seguenti categorie:
+### 3. Data Flow
+- Notifications are triggered by events or direct calls, processed by the notification service, and sent via the appropriate channel provider.
 
-```
-app/Actions/
-├── Notification/
-│   ├── SendNotificationAction.php
-│   ├── CreateNotificationAction.php
-│   └── DeleteNotificationAction.php
-├── Email/
-│   ├── SendEmailAction.php
-│   ├── CreateTemplateAction.php
-│   └── ValidateEmailAction.php
-└── Queue/
-    ├── ProcessQueueAction.php
-    └── MonitorQueueAction.php
-```
+## Common Issues and Fixes
+- **Integration Errors**: Ensure event listeners are properly registered to trigger notifications.
+- **Channel Configuration**: Verify provider configurations to prevent delivery failures.
 
-### Implementazione
-Ogni Action implementa l'interfaccia `Spatie\QueueableAction\QueueableAction`:
+## Documentation and Updates
+- Document any architectural changes or new integration points in the relevant module's documentation folder.
+- Update this document if significant changes are made to the Notify module architecture.
 
+<<<<<<< HEAD
 ```php
 use Spatie\QueueableAction\QueueableAction;
 
@@ -195,3 +208,11 @@ Per contribuire alla documentazione, seguire le [Linee Guida](../../../docs/line
 ## Collegamenti Completi
 Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../docs/README_links.md). 
 >>>>>>> 54f4fa16 (.)
+=======
+## Links to Related Documentation
+- [Notify Module Index](./INDEX.md)
+- [Notification Channels Implementation](./NOTIFICATION_CHANNELS_IMPLEMENTATION.md)
+- [Email Templates](./EMAIL_TEMPLATES.md)
+- [SMS Implementation](./SMS_IMPLEMENTATION.md)
+- [Troubleshooting](./TROUBLESHOOTING.md)
+>>>>>>> 9df8f556 (fix .md)

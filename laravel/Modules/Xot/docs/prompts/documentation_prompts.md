@@ -58,9 +58,12 @@ Questo documento descrive le regole e le best practices per i prompt di document
 ### Formato Corretto
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)
 # Collegamenti Corretti
 [Documento Correlato](../documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
@@ -71,9 +74,12 @@ Questo documento descrive le regole e le best practices per i prompt di document
 ### Formato Non Corretto
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)
 # Collegamenti Non Corretti
 [Documento Correlato](/var/www/html/saluteora/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/saluteora/progetto/blob/main/docs/documento.md)

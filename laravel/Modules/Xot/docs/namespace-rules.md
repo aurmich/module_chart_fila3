@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regole per i Namespace nei Moduli Laraxot
 
 Questo documento definisce le regole ufficiali per l'utilizzo dei namespace all'interno dei moduli Laraxot.
@@ -7,6 +8,11 @@ Questo documento definisce le regole ufficiali per l'utilizzo dei namespace all'
 
 Questo documento definisce le regole ufficiali per l'utilizzo dei namespace all'interno dei moduli il progetto, con particolare attenzione alla struttura corretta e alle convenzioni di naming.
 >>>>>>> 54f4fa16 (.)
+=======
+# Regole per i Namespace nei Moduli Laraxot
+
+Questo documento definisce le regole ufficiali per l'utilizzo dei namespace all'interno dei moduli Laraxot.
+>>>>>>> 9df8f556 (fix .md)
 
 ## Struttura Corretta dei Namespace
 
@@ -18,10 +24,13 @@ La struttura corretta dei namespace nei moduli **NON** include il segmento `app`
 namespace Modules\NomeModulo\Providers;
 namespace Modules\NomeModulo\Http\Controllers;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 namespace Modules\NomeModulo\Filament\Widgets;
 namespace Modules\NomeModulo\Livewire\Auth;
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)
 ```
 
 ### ❌ ERRATO
@@ -30,10 +39,13 @@ namespace Modules\NomeModulo\Livewire\Auth;
 namespace Modules\NomeModulo\app\Providers;
 namespace Modules\NomeModulo\app\Http\Controllers;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 namespace Modules\NomeModulo\app\Filament\Widgets;
 namespace Modules\NomeModulo\app\Livewire\Auth;
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)
 ```
 
 ## Regole per RouteServiceProvider
@@ -70,6 +82,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 2. I controller devono avere il namespace `Modules\NomeModulo\Http\Controllers`
 3. I provider devono avere il namespace `Modules\NomeModulo\Providers`
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. La proprietà `$name` nel RouteServiceProvider è obbligatoria e deve essere impostata al nome del modulo
 5. La proprietà `$moduleNamespace` deve puntare a `Modules\NomeModulo\Http\Controllers`
 =======
@@ -78,11 +91,16 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 6. La proprietà `$name` nel RouteServiceProvider è obbligatoria e deve essere impostata al nome del modulo
 7. La proprietà `$moduleNamespace` deve puntare a `Modules\NomeModulo\Http\Controllers`
 >>>>>>> 54f4fa16 (.)
+=======
+4. La proprietà `$name` nel RouteServiceProvider è obbligatoria e deve essere impostata al nome del modulo
+5. La proprietà `$moduleNamespace` deve puntare a `Modules\NomeModulo\Http\Controllers`
+>>>>>>> 9df8f556 (fix .md)
 
 ## Motivo di questa regola
 
 Questa struttura di namespace mantiene compatibilità con la convenzione di Laravel e il sistema di moduli Nwidart, anche se i file sono fisicamente organizzati in modo diverso.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 ## Esempi di Namespace per Componenti Comuni
@@ -143,12 +161,15 @@ return redirect()->route('home');
 ```
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)
 ## Verifica e correzione
 
 Se incontri errori come `name is empty on [Modules\NomeModulo\Providers\RouteServiceProvider]`, verifica:
 
 1. Che il namespace sia corretto (senza `app`)
 2. Che la proprietà `$name` sia definita e valorizzata
+<<<<<<< HEAD
 <<<<<<< HEAD
 3. Che il `$moduleNamespace` punti alla posizione corretta dei controller 
 =======
@@ -186,3 +207,6 @@ Se incontri errori come `name is empty on [Modules\NomeModulo\Providers\RouteSer
 - [FOLIO_VOLT_FILAMENT_INTEGRATION.md](./FOLIO_VOLT_FILAMENT_INTEGRATION.md) - Integrazione Folio, Volt e Filament
 - [filament/widgets/xot-base-widget.md](./filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget 
 >>>>>>> 54f4fa16 (.)
+=======
+3. Che il `$moduleNamespace` punti alla posizione corretta dei controller 
+>>>>>>> 9df8f556 (fix .md)

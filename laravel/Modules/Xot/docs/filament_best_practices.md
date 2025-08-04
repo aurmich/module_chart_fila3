@@ -532,6 +532,7 @@ Prima di considerare completa una risorsa Filament, verificare:
    - **Dati bancari**: iban, intestatario, banca, filiale
    - **Modalità di ricezione**: Lista di modalità selezionabili
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 ## Collegamenti tra versioni di FILAMENT_BEST_PRACTICES.md
@@ -548,3 +549,5 @@ Prima di considerare completa una risorsa Filament, verificare:
 * [filament_best_practices.md](../../Job/docs/filament_best_practices.md)
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)

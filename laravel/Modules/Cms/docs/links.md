@@ -14,12 +14,16 @@
 - [Modulo Patient](../Patient/docs/LINKS.md)
 - [Modulo Dental](../Dental/docs/LINKS.md) 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9df8f556 (fix .md)
 ## Collegamenti tra versioni di LINKS.md
 * [LINKS.md](laravel/Modules/Xot/docs/LINKS.md)
 * [LINKS.md](laravel/Modules/User/docs/LINKS.md)
 * [LINKS.md](laravel/Modules/UI/docs/LINKS.md)
 * [LINKS.md](laravel/Modules/Cms/docs/LINKS.md)
 * [LINKS.md](laravel/Themes/One/docs/LINKS.md)
+<<<<<<< HEAD
 =======
 ## Collegamenti tra versioni di links.md
 * [links.md](laravel/Modules/Gdpr/docs/links.md)
@@ -33,4 +37,6 @@
 * [links.md](laravel/Modules/Cms/docs/links.md)
 * [links.md](laravel/Themes/One/docs/links.md)
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)
 

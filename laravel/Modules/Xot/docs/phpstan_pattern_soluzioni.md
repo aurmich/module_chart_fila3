@@ -279,6 +279,7 @@ Questi pattern rappresentano le soluzioni standard da adottare in tutto il modul
 1. Applicare sistematicamente questi pattern a tutto il codice del modulo Xot
 2. Estendere questi pattern ad altri moduli del progetto
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. Aggiornare regolarmente questo documento con nuovi pattern identificati 
 =======
 3. Aggiornare regolarmente questo documento con nuovi pattern identificati 
@@ -300,3 +301,6 @@ Questi pattern rappresentano le soluzioni standard da adottare in tutto il modul
 
 
 >>>>>>> 54f4fa16 (.)
+=======
+3. Aggiornare regolarmente questo documento con nuovi pattern identificati 
+>>>>>>> 9df8f556 (fix .md)

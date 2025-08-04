@@ -44,7 +44,10 @@
 Ogni file README.md di un modulo deve seguire questa struttura:
 
 ```markdown
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9df8f556 (fix .md)
 # Modulo NomeModulo
 
 ## Panoramica

@@ -11,9 +11,12 @@
 ### Views
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)
 # ❌ ERRATO
 laravel/Modules/User/Resources/views/filament/widgets/auth/login.blade.php
 
@@ -25,18 +28,24 @@ Modules/User/resources/views/filament/widgets/auth/login.blade.php
 ### Actions
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)
 # ❌ ERRATO
 laravel/Modules/User/Actions/User/DeleteUserAction.php
 
 # ✅ CORRETTO
 laravel/Modules/User/app/Actions/User/DeleteUserAction.php
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)
 # ✅ CORRETTO
 Modules/User/app/Actions/User/DeleteUserAction.php
 
@@ -47,9 +56,12 @@ Modules/User/Actions/User/DeleteUserAction.php
 ### Controllers
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)
 # ✅ CORRETTO
 laravel/Modules/User/app/Http/Controllers/UserController.php
 
@@ -64,9 +76,12 @@ Modules/User/Http/Controllers/UserController.php
 ### Livewire Components
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)
 # ✅ CORRETTO
 Modules/User/app/Http/Livewire/Profile/DeleteAccount.php
 
@@ -77,9 +92,12 @@ Modules/User/Http/Livewire/Profile/DeleteAccount.php
 ### Livewire Components
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)
 # ✅ CORRETTO
 Modules/User/app/Http/Livewire/Profile/DeleteAccount.php
 
@@ -186,9 +204,12 @@ fi
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)
 # Trova cartelle con nomi errati
 find . -type d \( -name "Resources" -o -name "Lang" -o -name "Actions" -o -name "Http" \)
 
@@ -214,9 +235,12 @@ chmod -R 644 resources/views/
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)
 # Prima
 laravel/Modules/User/
 ├── Actions/

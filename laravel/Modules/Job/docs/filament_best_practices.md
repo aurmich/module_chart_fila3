@@ -78,6 +78,7 @@ public static function getFormSchema(): array
 Questo pattern è stato corretto nelle seguenti risorse:
 - `ExportResource`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `FailedImportRowResource` 
 =======
 ### Versione HEAD
@@ -104,3 +105,6 @@ Questo pattern è stato corretto nelle seguenti risorse:
 ---
 
 >>>>>>> 54f4fa16 (.)
+=======
+- `FailedImportRowResource` 
+>>>>>>> 9df8f556 (fix .md)

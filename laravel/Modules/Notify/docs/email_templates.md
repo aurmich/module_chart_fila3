@@ -4,6 +4,7 @@
 
 Il modulo Notify implementa un sistema avanzato di gestione delle email template basato su [spatie/laravel-database-mail-templates](https://github.com/spatie/laravel-database-mail-templates). Questo sistema permette di gestire e personalizzare facilmente i template delle email direttamente dal database.
 
+<<<<<<< HEAD
 ## 🚨 Errore Critico Identificato
 
 **Data**: 26 Giugno 2025  
@@ -30,6 +31,8 @@ php artisan tinker
 >>> \Modules\Notify\Models\MailTemplate::where('slug', 'patient-pending')->exists()
 ```
 
+=======
+>>>>>>> 9df8f556 (fix .md)
 ## Struttura del Sistema
 
 ### Componenti Principali
@@ -39,7 +42,10 @@ php artisan tinker
    - Gestisce il layout HTML e i dati aggiuntivi
    - Supporta la personalizzazione del layout
    - Supporta l'identificazione dei template tramite slug
+<<<<<<< HEAD
    - ⚠️ **ATTENZIONE**: Constructor può fallire se template mancante
+=======
+>>>>>>> 9df8f556 (fix .md)
 
 2. **MailTemplate** (`app/Models/MailTemplate.php`)
    - Model per la gestione dei template nel database
@@ -47,7 +53,10 @@ php artisan tinker
    - Gestisce versioni dei template
    - Traccia i log delle email inviate
    - Include identificatore slug per i template
+<<<<<<< HEAD
    - ⚠️ **ATTENZIONE**: Richiede pre-creazione per template critici
+=======
+>>>>>>> 9df8f556 (fix .md)
 
 ### Database
 
@@ -88,6 +97,7 @@ MailTemplate::create([
     ]
 ]);
 
+<<<<<<< HEAD
 // ✅ TEMPLATE CRITICI - Registrazione Pazienti
 MailTemplate::create([
     'mailable' => \Modules\Notify\Emails\SpatieEmail::class,
@@ -103,6 +113,32 @@ MailTemplate::create([
     'subject' => ['it' => 'Account attivato con successo'],
     'html_template' => ['it' => '<p>Gentile {{ first_name }},</p><p>Il tuo account è stato attivato.</p>'],
     'text_template' => ['it' => 'Il tuo account è stato attivato.']
+=======
+// Esempio: Template Email per Completamento Registrazione
+MailTemplate::create([
+    'mailable' => \Modules\Notify\Emails\SpatieEmail::class,
+    'slug' => 'complete-registration',
+    'subject' => [
+        'it' => 'Completa la tua registrazione',
+        'en' => 'Complete your registration'
+    ],
+    'html_template' => [
+        'it' => '
+            <h1>Completa la tua registrazione</h1>
+            <p>Gentile {{ last_name }},</p>
+            <p>Per completare la registrazione del tuo account, clicca sul link sottostante:</p>
+            <p><a href="{{ registration_link }}">Completa Registrazione</a></p>
+            <p>Il link scadrà tra 24 ore.</p>
+        ',
+        'en' => '
+            <h1>Complete your registration</h1>
+            <p>Dear {{ last_name }},</p>
+            <p>To complete your account registration, click the link below:</p>
+            <p><a href="{{ registration_link }}">Complete Registration</a></p>
+            <p>The link will expire in 24 hours.</p>
+        '
+    ]
+>>>>>>> 9df8f556 (fix .md)
 ]);
 ```
 
@@ -112,6 +148,7 @@ MailTemplate::create([
 use Modules\Notify\Emails\SpatieEmail;
 use Illuminate\Support\Facades\Mail;
 
+<<<<<<< HEAD
 // ✅ CORRETTO - Con validazione slug
 try {
     $user = User::find(1);
@@ -129,6 +166,16 @@ try {
 // ❌ ERRATO - Senza validazione (può causare MissingMailTemplate)
 $user = User::find(1);
 Mail::to($user->email)->send(new SpatieEmail($user, 'welcome-email'));
+=======
+// Email di benvenuto usando lo slug
+$user = User::find(1);
+Mail::to($user->email)->send(new SpatieEmail($user, 'welcome-email'));
+
+// Email per completamento registrazione usando lo slug
+$user = User::find(1);
+$user->registration_link = route('complete-registration', ['token' => $token]);
+Mail::to($user->email)->send(new SpatieEmail($user, 'complete-registration'));
+>>>>>>> 9df8f556 (fix .md)
 ```
 
 ### 3. Personalizzazione del Layout
@@ -147,6 +194,7 @@ public function getHtmlLayout(): string
 
 ## Best Practices
 
+<<<<<<< HEAD
 1. **Prevenzione Errori MissingMailTemplate** ⚠️ **CRITICO**
    - **SEMPRE** creare seeder per template critici
    - **SEMPRE** validare esistenza template prima dell'invio
@@ -154,30 +202,50 @@ public function getHtmlLayout(): string
    - **MAI** generare slug dinamici senza validazione
 
 2. **Gestione delle Versioni**
+=======
+1. **Gestione delle Versioni**
+>>>>>>> 9df8f556 (fix .md)
    - Utilizzare il sistema di versioning per tracciare le modifiche ai template
    - Documentare le modifiche significative
    - Mantenere lo slug costante tra le versioni
 
+<<<<<<< HEAD
 3. **Traduzioni**
+=======
+2. **Traduzioni**
+>>>>>>> 9df8f556 (fix .md)
    - Mantenere sempre le traduzioni in italiano e inglese
    - Utilizzare chiavi di traduzione coerenti
    - Utilizzare lo slug come chiave di traduzione quando appropriato
 
+<<<<<<< HEAD
 4. **Variabili nei Template**
+=======
+3. **Variabili nei Template**
+>>>>>>> 9df8f556 (fix .md)
    - Utilizzare nomi descrittivi per le variabili
    - Documentare tutte le variabili disponibili
    - Validare la presenza delle variabili richieste
 
+<<<<<<< HEAD
 5. **Testing**
+=======
+4. **Testing**
+>>>>>>> 9df8f556 (fix .md)
    - Testare i template con dati reali
    - Verificare il rendering in diversi client email
    - Controllare le traduzioni in tutte le lingue supportate
 
+<<<<<<< HEAD
 6. **Gestione degli Slug**
+=======
+5. **Gestione degli Slug**
+>>>>>>> 9df8f556 (fix .md)
    - Utilizzare kebab-case per gli slug
    - Mantenere gli slug brevi e descrittivi
    - Evitare caratteri speciali
    - Verificare l'unicità degli slug
+<<<<<<< HEAD
    - **✅ NUOVO**: Implementare validazione slug robusti
 
 ## Template Critici per il Sistema
@@ -201,6 +269,8 @@ Questi template DEVONO esistere per il funzionamento del sistema:
 'system-notification' // Notifica generica
 'default-notification' // Template di emergenza
 ```
+=======
+>>>>>>> 9df8f556 (fix .md)
 
 ## Esempi di Template Comuni
 
@@ -255,6 +325,7 @@ MailTemplate::create([
 
 ### Problemi Comuni
 
+<<<<<<< HEAD
 1. **🚨 CRITICO: MissingMailTemplate Exception**
    ```
    Spatie\MailTemplates\Exceptions\MissingMailTemplate
@@ -303,6 +374,22 @@ php artisan tinker
 - [Array to String Conversion](../../../docs/errori_gravi/array-to-string-conversion-patterns.md) - Errore correlato
 
 ### **Documentazione Tecnica**
+=======
+1. **Template non trovato**
+   - Verificare che il template esista nel database
+   - Controllare che la classe Mailable sia corretta
+
+2. **Variabili mancanti**
+   - Assicurarsi che tutti i dati necessari siano passati al costruttore
+   - Verificare i nomi delle variabili nel template
+
+3. **Problemi di traduzione**
+   - Controllare che tutte le traduzioni necessarie siano presenti
+   - Verificare la configurazione della lingua corrente
+
+## Collegamenti Correlati
+
+>>>>>>> 9df8f556 (fix .md)
 - [Documentazione Spatie Mail Templates](https://github.com/spatie/laravel-database-mail-templates)
 - [Gestione Traduzioni](../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Configurazione Email](../../../docs/email-configuration.md)
@@ -313,9 +400,12 @@ php artisan tinker
 - [Notification Channels Implementation](./NOTIFICATION_CHANNELS_IMPLEMENTATION.md)
 - [SMS Implementation](./SMS_IMPLEMENTATION.md)
 - [Troubleshooting](./TROUBLESHOOTING.md)
+<<<<<<< HEAD
 
 ---
 
 **Ultimo aggiornamento**: 26 Giugno 2025  
 **Status**: Aggiornato per errore critico MissingMailTemplate  
 **Priorità**: URGENT - Fix sistema registrazione
+=======
+>>>>>>> 9df8f556 (fix .md)

@@ -6,10 +6,14 @@ L'azione `ApplyMetatagToPanelAction` è responsabile di applicare i metatag al p
 ## Funzionalità
 - Applica i colori del tema al panel
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Configura il logo del brand
 =======
 - Configura il logo del brand utilizzando i metodi semantici
 >>>>>>> 54f4fa16 (.)
+=======
+- Configura il logo del brand
+>>>>>>> 9df8f556 (fix .md)
 - Imposta il nome del brand
 - Configura il logo per la modalità scura
 - Imposta l'altezza del logo
@@ -36,6 +40,7 @@ Applica i metatag al panel Filament.
 - `Panel`: Il panel configurato con i metatag
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ## Esempio di Configurazione
 ```php
@@ -48,12 +53,15 @@ $panel
 ```
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)
 ## Gestione Errori
 In caso di errore durante l'applicazione dei metatag:
 - L'errore viene registrato nel log
 - Il panel originale viene restituito senza modifiche
 - L'applicazione continua a funzionare
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ## Collegamenti
 - [MetatagData](../datas/MetatagData.md)
@@ -83,10 +91,16 @@ In caso di errore durante l'applicazione dei metatag:
 - [Color Management](../colors.md)
 - [Semantic Methods](../philosophy/semantic_methods.md)
 >>>>>>> 54f4fa16 (.)
+=======
+## Collegamenti
+- [MetatagData](../datas/MetatagData.md)
+- [Filament Panel Documentation](https://filamentphp.com/docs/panels)
+>>>>>>> 9df8f556 (fix .md)
 
 ## Note
 - Questa azione utilizza il trait `QueueableAction` di Spatie
 - Tutti i metodi sono fortemente tipizzati per PHPStan livello 10
+<<<<<<< HEAD
 <<<<<<< HEAD
 - La documentazione è mantenuta aggiornata nella cartella docs 
 =======
@@ -101,3 +115,6 @@ In caso di errore durante l'applicazione dei metatag:
 * [applymetatagtopanelaction.md](panel/applymetatagtopanelaction.md)
 
 >>>>>>> 54f4fa16 (.)
+=======
+- La documentazione è mantenuta aggiornata nella cartella docs 
+>>>>>>> 9df8f556 (fix .md)

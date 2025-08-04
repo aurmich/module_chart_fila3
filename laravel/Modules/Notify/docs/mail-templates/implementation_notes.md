@@ -131,6 +131,7 @@ L'implementazione corretta dimostra che:
    - Considerare la validazione
    - Implementare logging
    - Aggiungere monitoraggio 
+<<<<<<< HEAD
 
 ## Visualizzazione Parametri come Badge
 
@@ -181,3 +182,5 @@ L'implementazione corretta dimostra che:
 Input: "name, email, company, date"
 Output: [name] [email] [company] [date] (come badge blu)
 ``` 
+=======
+>>>>>>> 9df8f556 (fix .md)

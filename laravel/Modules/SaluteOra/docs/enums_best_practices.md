@@ -113,7 +113,11 @@ class Doctor extends User
 {
     // ...
     
+<<<<<<< HEAD
     protected function casts(): array
+=======
+    public function casts(): array
+>>>>>>> 9df8f556 (fix .md)
     {
         return array_merge(parent::casts(), [
             'status' => DoctorStatus::class,

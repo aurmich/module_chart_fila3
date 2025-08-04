@@ -76,6 +76,9 @@ Quando si identifica una nuova regola o pattern importante:
    - Mantenere coerenza con altre documentazioni
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9df8f556 (fix .md)
 ### 3. Gestione dei Prompt
 
 1. **Struttura dei Prompt**
@@ -102,8 +105,11 @@ Quando si identifica una nuova regola o pattern importante:
    - Aggiornare la documentazione in tempo reale
    - Verificare la coerenza con le convenzioni esistenti
 
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)
 ### 3. Best Practices
 
 1. **Coerenza**
@@ -146,6 +152,7 @@ Quando si identifica una nuova regola o pattern importante:
 4. **Windsurf**
    - [ ] Aggiornare .windsurfrules
    - [ ] Verificare coerenza
+<<<<<<< HEAD
 <<<<<<< HEAD
    - [ ] Testare applicabilità 
 =======
@@ -205,3 +212,6 @@ Modules/Xot/docs/
 b6f667c (.)
    - Verifica dei collegamenti 
 >>>>>>> 54f4fa16 (.)
+=======
+   - [ ] Testare applicabilità 
+>>>>>>> 9df8f556 (fix .md)

@@ -1,8 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ### Versione HEAD
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)
 # Correzioni PHPStan Livello 7 - Modulo User
 
 Questo documento traccia gli errori PHPStan di livello 7 identificati nel modulo User e le relative soluzioni implementate.
@@ -39,6 +42,7 @@ Il problema è che i tag PHPDoc facevano riferimento a una classe `Builder` nel 
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Versione HEAD
 
 Questo garantisce che PHPStan possa risolvere correttamente il tipo `Builder` utilizzando il namespace completo `\Illuminate\Database\Eloquent\Builder`. 
@@ -65,10 +69,22 @@ Questo garantisce che PHPStan possa risolvere correttamente il tipo `Builder` ut
 * [phpstan_fixes.md](../../../User/docs/fixes/phpstan_fixes.md)
 * [phpstan_fixes.md](../../../Activity/docs/phpstan_fixes.md)
 >>>>>>> 54f4fa16 (.)
+=======
+### Versione HEAD
+
+Questo garantisce che PHPStan possa risolvere correttamente il tipo `Builder` utilizzando il namespace completo `\Illuminate\Database\Eloquent\Builder`. 
+## Collegamenti tra versioni di PHPSTAN_FIXES.md
+* [PHPSTAN_FIXES.md](../../../Xot/docs/phpstan/PHPSTAN_FIXES.md)
+* [PHPSTAN_FIXES.md](../../../Xot/docs/PHPSTAN_FIXES.md)
+* [PHPSTAN_FIXES.md](../../../User/docs/PHPSTAN_FIXES.md)
+* [PHPSTAN_FIXES.md](../../../UI/docs/PHPSTAN_FIXES.md)
+* [PHPSTAN_FIXES.md](../../../Media/docs/PHPSTAN_FIXES.md)
+>>>>>>> 9df8f556 (fix .md)
 
 
 ### Versione Incoming
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Questo garantisce che PHPStan possa risolvere correttamente il tipo `Builder` utilizzando il namespace completo `\Illuminate\Database\Eloquent\Builder`. 
 =======
@@ -163,6 +179,9 @@ Questo garantisce che PHPStan possa risolvere correttamente il tipo `Builder` ut
 4. Aggiornare la documentazione delle classi
 5. Eseguire nuovamente PHPStan per verificare le correzioni 
 >>>>>>> 54f4fa16 (.)
+=======
+Questo garantisce che PHPStan possa risolvere correttamente il tipo `Builder` utilizzando il namespace completo `\Illuminate\Database\Eloquent\Builder`. 
+>>>>>>> 9df8f556 (fix .md)
 
 ---
 

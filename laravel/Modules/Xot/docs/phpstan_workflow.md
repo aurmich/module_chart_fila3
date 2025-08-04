@@ -166,6 +166,7 @@ class MyModel extends BaseModel
      - .cursor/rules per Cursor AI
      - .windsurfrules per Windsurf
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Mantenere coerenza tra le diverse documentazioni 
 =======
    - Mantenere coerenza tra le diverse documentazioni 
@@ -187,3 +188,6 @@ class MyModel extends BaseModel
 
 
 >>>>>>> 54f4fa16 (.)
+=======
+   - Mantenere coerenza tra le diverse documentazioni 
+>>>>>>> 9df8f556 (fix .md)

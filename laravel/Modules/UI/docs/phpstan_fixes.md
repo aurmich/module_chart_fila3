@@ -47,6 +47,7 @@ if ($livewire) {
 
 Questo approccio è più robusto e previene errori a runtime quando l'oggetto `$livewire` non ha i metodi o le proprietà previste.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 ## Collegamenti tra versioni di PHPSTAN_FIXES.md
@@ -66,3 +67,5 @@ Questo approccio è più robusto e previene errori a runtime quando l'oggetto `$
 * [phpstan_fixes.md](../../Activity/docs/phpstan_fixes.md)
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)

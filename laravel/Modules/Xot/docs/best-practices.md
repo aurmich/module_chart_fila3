@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Best Practices
 
@@ -158,6 +159,8 @@ class LoginTest extends TestCase
 ```
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)
 # Best Practices per Laraxot
 
 ## Riferimenti al modello User
@@ -226,6 +229,7 @@ public function process(\Modules\User\Models\User $user) {
     // Codice
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 ``` 
 =======
 ``` 
@@ -236,3 +240,6 @@ public function process(\Modules\User\Models\User $user) {
 * [best-practices.md](../../../Themes/One/docs/best-practices.md)
 
 >>>>>>> 54f4fa16 (.)
+=======
+``` 
+>>>>>>> 9df8f556 (fix .md)

@@ -63,6 +63,7 @@ class YourModel extends Model
 - [Laravel Relationships](https://laravel.com/docs/relationships)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices](BEST-PRACTICES.md) 
 =======
 - [Best Practices](BEST-PRACTICES.md) 
@@ -70,3 +71,6 @@ class YourModel extends Model
 * [refactoring.md](../../../../docs/refactoring.md)
 
 >>>>>>> 54f4fa16 (.)
+=======
+- [Best Practices](BEST-PRACTICES.md) 
+>>>>>>> 9df8f556 (fix .md)

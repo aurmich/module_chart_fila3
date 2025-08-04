@@ -45,9 +45,13 @@ public function comments(): HasMany
 public function tags(): BelongsToMany
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return $this->belongsToManyX(Tag::class);
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+    return $this->belongsToManyX(Tag::class);
+>>>>>>> 9df8f556 (fix .md)
     return $this->belongsToMany(Tag::class);
 }
 ```
@@ -148,6 +152,7 @@ class UserRepository implements UserRepositoryInterface
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Segui queste linee guida per risolvere la maggior parte degli errori relativi ai tipi generici nei tuoi modelli e relazioni Laravel. 
 =======
 Segui queste linee guida per risolvere la maggior parte degli errori relativi ai tipi generici nei tuoi modelli e relazioni Laravel. 
@@ -169,3 +174,6 @@ Segui queste linee guida per risolvere la maggior parte degli errori relativi ai
 
 
 >>>>>>> 54f4fa16 (.)
+=======
+Segui queste linee guida per risolvere la maggior parte degli errori relativi ai tipi generici nei tuoi modelli e relazioni Laravel. 
+>>>>>>> 9df8f556 (fix .md)

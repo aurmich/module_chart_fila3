@@ -114,6 +114,7 @@ class BrainServiceProvider extends XotBaseServiceProvider
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ### 4. Gestione delle Traduzioni
 
@@ -148,6 +149,8 @@ $this->loadTranslationsFrom($langPath, $this->nameLower);
 Applicare la stessa regola per la registrazione delle traduzioni JSON.
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)
 ## Implementazione Dettagliata per Tipo di Provider
 
 ### 1. Provider Principale del Modulo
@@ -457,11 +460,15 @@ class RouteServiceProvider extends ServiceProvider
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Troubleshooting
 =======
 
 ### Errore: Eventi non ascoltati## Troubleshooting
 >>>>>>> 54f4fa16 (.)
+=======
+## Troubleshooting
+>>>>>>> 9df8f556 (fix .md)
 
 ### Problema: Traduzioni non caricate
 
@@ -480,10 +487,13 @@ class RouteServiceProvider extends ServiceProvider
 
 ### Problema: Eventi non ascoltati
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 b6f667c (.)
 ### Errore: Eventi non ascoltati
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)
 
 **Soluzione:** Verificare che:
 1. L'Event Provider estenda `BaseEventServiceProvider`
@@ -507,6 +517,7 @@ b6f667c (.)
 - [XotBaseServiceProvider](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/Providers/XotBaseServiceProvider.php)
 - [XotBaseRouteServiceProvider](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/Providers/XotBaseRouteServiceProvider.php)
 - [BaseEventServiceProvider](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/Providers/BaseEventServiceProvider.php)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -760,3 +771,5 @@ public function boot(): void
 **Collegamento:** Vedi anche [XotBaseServiceProvider.md](./XotBaseServiceProvider.md)
 - [filament-best-practices.md](filament-best-practices.md)
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)

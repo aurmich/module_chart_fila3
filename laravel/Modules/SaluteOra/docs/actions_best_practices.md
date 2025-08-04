@@ -4,6 +4,7 @@
 
 Le Actions sono classi che implementano una singola responsabilità (principio SRP) e rappresentano un'operazione o un caso d'uso specifico dell'applicazione. In questo modulo, utilizziamo il pattern Action per incapsulare la logica di business e renderla riutilizzabile e testabile.
 
+<<<<<<< HEAD
 ## Convenzioni dei Nomi e dei Namespace
 
 ### Struttura dei Namespace
@@ -28,6 +29,8 @@ Dove:
 - I nomi dei file devono corrispondere esattamente ai nomi delle classi
 - I namespace non devono contenere `App\`
 
+=======
+>>>>>>> 9df8f556 (fix .md)
 ## Struttura di una Action
 
 Una Action ben strutturata dovrebbe seguire questi principi:
@@ -487,6 +490,7 @@ public function execute(array $data): Doctor
 ## Conclusione
 
 Le Actions sono un pattern potente per organizzare la logica di business nell'applicazione. Seguendo le best practices descritte in questo documento, puoi creare Actions robuste, testabili e manutenibili che rappresentano i casi d'uso della tua applicazione in modo chiaro e conciso.
+<<<<<<< HEAD
 
 # Best Practices per Actions (Queueable)
 
@@ -520,3 +524,5 @@ final class FetchEventsAction
 - [directory-structure.md](directory-structure.md)
 - [README.md](README.md)
 - [fullcalendar_parental_widgets.md](fullcalendar_parental_widgets.md)
+=======
+>>>>>>> 9df8f556 (fix .md)

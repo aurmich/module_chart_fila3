@@ -187,6 +187,7 @@ Il trait include meccanismi di gestione degli errori, ad esempio:
 - Utilizzare i metodi con i tipi di ritorno corretti come indicato nei PHPDoc
 - Non definire azioni duplicate con lo stesso nome
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 ## Collegamenti tra versioni di FILAMENT-TABLES.md
@@ -207,3 +208,5 @@ Il trait include meccanismi di gestione degli errori, ad esempio:
 
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)

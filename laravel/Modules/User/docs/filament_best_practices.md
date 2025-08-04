@@ -3,6 +3,7 @@
 Questo documento descrive le best practices da seguire quando si creano o modificano risorse Filament nel modulo User.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ## Struttura Corretta dei File e Namespace
 
@@ -29,6 +30,8 @@ namespace Modules\User\App\Filament\Widgets;
 ```
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)
 ## Rimozione del metodo `getPages()`
 
 Quando una risorsa estende `XotBaseResource`, il metodo `getPages()` può essere completamente rimosso se:
@@ -96,6 +99,7 @@ public static function getFormSchema(): array
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ## Mai Usare `->label()` nei Componenti Filament
 
@@ -141,6 +145,8 @@ public static function getFormSchema(): array
 ```
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)
 ## Integrazione con PHPStan
 
 Questa best practice risolve anche errori PHPStan di livello 9 e superiore relativi al tipo di ritorno del metodo `getFormSchema()`:
@@ -149,6 +155,7 @@ Questa best practice risolve anche errori PHPStan di livello 9 e superiore relat
 Method Resource::getFormSchema() should return array<string, Filament\Forms\Components\Component> but returns array<int, Component>
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Seguendo queste best practices si assicura che il codice passi i controlli statici di PHPStan e sia più facile da mantenere. 
 =======
@@ -204,3 +211,6 @@ use InteractsWithForms;
 * [filament_best_practices.md](../../Job/docs/filament_best_practices.md)
 
 >>>>>>> 54f4fa16 (.)
+=======
+Seguendo queste best practices si assicura che il codice passi i controlli statici di PHPStan e sia più facile da mantenere. 
+>>>>>>> 9df8f556 (fix .md)

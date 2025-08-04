@@ -2,11 +2,15 @@
 
 ## Descrizione
 <<<<<<< HEAD
+<<<<<<< HEAD
 `XotBaseServiceProvider` è una classe astratta che fornisce l'implementazione base per i Service Provider di tutti i moduli . Estende `Illuminate\Support\ServiceProvider` e implementa funzionalità comuni per la registrazione di componenti, traduzioni, configurazioni e altro.
 `XotBaseServiceProvider` è una classe astratta che fornisce l'implementazione base per i Service Provider di tutti i moduli in SaluteOra. Estende `Illuminate\Support\ServiceProvider` e implementa funzionalità comuni per la registrazione di componenti, traduzioni, configurazioni e altro.
 =======
 `XotBaseServiceProvider` è una classe astratta che fornisce l'implementazione base per i Service Provider di tutti i moduli in il progetto. Estende `Illuminate\Support\ServiceProvider` e implementa funzionalità comuni per la registrazione di componenti, traduzioni, configurazioni e altro.
 >>>>>>> 54f4fa16 (.)
+=======
+`XotBaseServiceProvider` è una classe astratta che fornisce l'implementazione base per i Service Provider di tutti i moduli . Estende `Illuminate\Support\ServiceProvider` e implementa funzionalità comuni per la registrazione di componenti, traduzioni, configurazioni e altro.
+>>>>>>> 9df8f556 (fix .md)
 
 ## Caratteristiche Principali
 
@@ -26,19 +30,26 @@ public function boot(): void
 {
     $this->registerTranslations();
 <<<<<<< HEAD
+<<<<<<< HEAD
     $this->registerConfig();
 =======
     // $this->registerConfig(); // to register
 >>>>>>> 54f4fa16 (.)
+=======
+    $this->registerConfig();
+>>>>>>> 9df8f556 (fix .md)
     $this->registerViews();
     $this->loadMigrationsFrom($this->module_dir.'/../Database/Migrations');
     $this->registerLivewireComponents();
     $this->registerBladeComponents();
     $this->registerCommands();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // $this->registerBladeIcons(); deve stare in register
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)
 }
 ```
 
@@ -49,6 +60,7 @@ public function register(): void
     $this->nameLower = Str::lower($this->name);
     $this->module_ns = collect(explode('\\', $this->module_ns))->slice(0, -1)->implode('\\');
 <<<<<<< HEAD
+<<<<<<< HEAD
     $this->app->register($this->module_ns.'\Providers\RouteServiceProvider');
     $this->app->register($this->module_ns.'\Providers\EventServiceProvider');
     $this->registerBladeIcons();
@@ -58,6 +70,11 @@ public function register(): void
     $this->registerConfig();
     $this->registerBladeIcons(); // to boot
 >>>>>>> 54f4fa16 (.)
+=======
+    $this->app->register($this->module_ns.'\Providers\RouteServiceProvider');
+    $this->app->register($this->module_ns.'\Providers\EventServiceProvider');
+    $this->registerBladeIcons();
+>>>>>>> 9df8f556 (fix .md)
 }
 ```
 
@@ -192,6 +209,7 @@ try {
 3. I percorsi sono relativi alla root del modulo
 4. Le eccezioni vengono gestite con fallback appropriati
 <<<<<<< HEAD
+<<<<<<< HEAD
 5. La registrazione dei componenti è automatica ma configurabile 
 =======
 5. La registrazione dei componenti è automatica ma configurabile 
@@ -204,3 +222,6 @@ try {
 * [xotbaseserviceprovider.md](../../../Notify/docs/providers/xotbaseserviceprovider.md)
 
 >>>>>>> 54f4fa16 (.)
+=======
+5. La registrazione dei componenti è automatica ma configurabile 
+>>>>>>> 9df8f556 (fix .md)

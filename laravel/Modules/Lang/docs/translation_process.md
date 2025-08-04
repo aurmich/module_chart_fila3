@@ -76,7 +76,10 @@ lang/
 Per le traduzioni di base di Laravel:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9df8f556 (fix .md)
 # Installazione
 composer require laravel-lang/common --dev
 
@@ -109,7 +112,10 @@ Traduci in italiano mantenendo la struttura JSON:
 ### 1. Branch di Traduzione
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9df8f556 (fix .md)
 # Creare un branch dedicato
 git checkout -b feature/italian-translations
 
@@ -121,7 +127,10 @@ git commit -m "Aggiunte traduzioni in italiano"
 ### 2. Verifica delle Traduzioni
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9df8f556 (fix .md)
 # Verificare le traduzioni mancanti
 php artisan translations:missing it
 
@@ -214,7 +223,10 @@ jobs:
 ### 1. Traduzioni Mancanti
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9df8f556 (fix .md)
 # Verificare le chiavi mancanti
 php artisan translations:missing it
 
@@ -228,7 +240,10 @@ php artisan config:clear
 Assicurarsi che i file siano salvati in UTF-8 senza BOM:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9df8f556 (fix .md)
 # Convertire in UTF-8 senza BOM
 find lang -type f -name "*.php" -o -name "*.json" | xargs dos2unix
 ```

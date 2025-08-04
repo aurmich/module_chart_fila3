@@ -71,6 +71,7 @@ public static function getFormSchema(): array
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ### Versione HEAD
 
@@ -157,6 +158,8 @@ Per maggiori dettagli e motivazioni, consulta la [documentazione completa sulle 
 ---
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)
 #### ❌ DON'T - Non utilizzare il metodo form()
 
 ```php
@@ -835,6 +838,7 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 - [Documentazione Filament](https://filamentphp.com/docs)
 - [Documentazione XotBaseResource](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/docs/resource.md)
 - [Best Practices Laraxot](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -974,3 +978,5 @@ Aggiornare sempre la documentazione e le regole di progetto. Applicare la stessa
 
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)

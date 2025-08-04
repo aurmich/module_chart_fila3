@@ -1,6 +1,7 @@
 # Roadmap Modulo Patient
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Stato Attuale: 70% Completato
 
 ### Gestione Utenti [100%]
@@ -9,12 +10,18 @@
 - [✓] Documentazione Utenti [100%](roadmap/utenti-docs.md)
 =======
 ## Stato Attuale: 68% Completato
+=======
+## Stato Attuale: 70% Completato
+>>>>>>> 9df8f556 (fix .md)
 
-### Gestione Utenti [95%]
-- [✓] Moderazione Utenti [100%]
+### Gestione Utenti [100%]
 - [✓] Anagrafica Base [100%](roadmap/anagrafica.md)
 - [✓] Documenti [85%](roadmap/documenti.md)
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+- [✓] Documentazione Utenti [100%](roadmap/utenti-docs.md)
+>>>>>>> 9df8f556 (fix .md)
 - [-] Storia Clinica [55%](roadmap/storia-clinica.md)
 
 ### Cartelle Cliniche [70%]
@@ -61,6 +68,7 @@
 
 ## Note
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Priorità alta: Storia Clinica, Timeline e Utenti
 - Focus su usabilità e performance
 - Mantenere conformità GDPR
@@ -73,12 +81,18 @@
 
 - **2025-05-16**: Completata la moderazione utenti, aggiornato stato complessivo al 68%.
 >>>>>>> 54f4fa16 (.)
+=======
+- Priorità alta: Storia Clinica, Timeline e Utenti
+- Focus su usabilità e performance
+- Mantenere conformità GDPR
+>>>>>>> 9df8f556 (fix .md)
 
 ## Collegamenti
 - [Documentazione Patient](./README.md)
 - [Guida Sviluppo](./DEVELOPMENT.md)
 - [Best Practices](./BEST-PRACTICES.md)
 - [Integrazione Dental](./DENTAL-INTEGRATION.md) 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ## Collegamenti tra versioni di ROADMAP.md
 * [ROADMAP.md](laravel/Modules/Dental/docs/ROADMAP.md)
@@ -102,3 +116,8 @@
 * [roadmap.md](laravel/Modules/Cms/docs/roadmap.md)
 * [roadmap.md](laravel/Themes/One/docs/roadmap.md)
 >>>>>>> 54f4fa16 (.)
+=======
+## Collegamenti tra versioni di ROADMAP.md
+* [ROADMAP.md](laravel/Modules/Dental/docs/ROADMAP.md)
+* [ROADMAP.md](laravel/Modules/Patient/docs/ROADMAP.md)
+>>>>>>> 9df8f556 (fix .md)

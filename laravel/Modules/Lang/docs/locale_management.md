@@ -238,7 +238,10 @@ if (Session::has('locale')) {
 ## Comandi Artisan Utili
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9df8f556 (fix .md)
 # Pubblicare le traduzioni di Laravel
 php artisan lang:publish
 

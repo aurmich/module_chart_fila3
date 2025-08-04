@@ -126,6 +126,7 @@ class BlogServiceProvider extends XotBaseServiceProvider {
 }
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 ## Collegamenti tra versioni di module-structure.md
@@ -133,3 +134,5 @@ class BlogServiceProvider extends XotBaseServiceProvider {
 * [module-structure.md](architecture/module-structure.md)
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)

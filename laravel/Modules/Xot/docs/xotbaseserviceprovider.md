@@ -198,6 +198,7 @@ Applicare la stessa regola per la registrazione delle traduzioni JSON.
 Vedi anche [registerBladeIcons.md](./registerBladeIcons.md) per la gestione centralizzata dei path.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Console Commands: Religione, Politica, Filosofia, Zen
 
 ### Principio
@@ -231,3 +232,5 @@ $this->commands([
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Filament Best Practices
 
 ## Visibilità dei Metodi
@@ -37,238 +38,39 @@ class ListPosts extends XotBaseListRecords
         ];
 =======
 # Best Practices per Filament Resources in Laraxot
+=======
+# Filament Best Practices
+>>>>>>> 9df8f556 (fix .md)
 
-Questo documento definisce le linee guida ufficiali e le best practices per l'implementazione delle risorse Filament all'interno del framework Laraxot.
+## Visibilità dei Metodi
 
-## Regole Fondamentali
+### Principio di Liskov
+Quando si estendono le classi base di Filament o XotBase, è fondamentale rispettare il principio di sostituzione di Liskov. Questo significa che:
+- La visibilità dei metodi non può essere ridotta nelle classi figlie
+- I tipi di ritorno devono essere compatibili
+- I parametri devono essere compatibili
 
-### 1. Utilizzo delle Classi Base Corrette
+### Metodi Comuni e loro Visibilità
+| Metodo | Classe Base | Visibilità Richiesta |
+|--------|-------------|---------------------|
+| getTableActions() | XotBaseListRecords | public |
+| getFormSchema() | XotBaseCreateRecord | public |
+| getFormSchema() | XotBaseEditRecord | public |
+| getHeaderActions() | XotBaseListRecords | public |
+| getTableColumns() | XotBaseListRecords | public |
 
-#### ✅ DO - Estendere XotBaseResource
-
-È **obbligatorio** che tutte le risorse Filament estendano `XotBaseResource` invece della classe standard di Filament:
+### Esempi di Implementazione Corretta
 
 ```php
-use Modules\Xot\Filament\Resources\XotBaseResource;
-
-class UserResource extends XotBaseResource
+class ListPosts extends XotBaseListRecords
 {
-    // ...
-}
-```
-
-#### ❌ DON'T - Non estendere mai direttamente la classe base di Filament
-
-```php
-// NON FARE MAI QUESTO
-use Filament\Resources\Resource;
-
-class UserResource extends Resource
-{
-    // ...
-}
-```
-
-### 2. Definizione Form Schema
-
-#### ✅ DO - Utilizzare getFormSchema()
-
-Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che restituisce un array di componenti:
-
-```php
-public static function getFormSchema(): array
-{
-    return [
-        TextInput::make('nome')->required(),
-        TextInput::make('cognome')->required(),
-        DatePicker::make('data_nascita'),
-        // altri componenti...
-    ];
-}
-```
-
-### Versione HEAD
-
-### 3. Gestione delle Traduzioni
-
-#### ✅ DO - Utilizzare il Sistema di Traduzioni Automatiche
-
-**Non utilizzare mai** il metodo `->label()` nei componenti Filament. Le etichette vengono gestite automaticamente dal `LangServiceProvider` attraverso i file di traduzione.
-
-```php
-// ✅ CORRETTO: Non specificare l'etichetta
-Forms\Components\TextInput::make('first_name')
-    ->required();
-```
-
-#### ❌ DON'T - Non Specificare Manualmente le Etichette
-
-```php
-// ❌ ERRATO: Specificare manualmente l'etichetta
-Forms\Components\TextInput::make('first_name')
-    ->label('Nome')
-    ->required();
-```
-
-Per maggiori dettagli e motivazioni, consulta la [documentazione completa sulle traduzioni automatiche](../../Lang/docs/automatic-translations.md).
-
-### 4. Implementazione dei Wizard
-
-#### ✅ DO - Estrarre gli Step in Metodi Dedicati
-
-Quando si implementa un `Wizard` in Filament, ogni step deve essere definito in un metodo dedicato che restituisce un oggetto `Forms\Components\Wizard\Step`:
-
-```php
-// ✅ CORRETTO
-public static function getFormSchemaWidget(): array
-{
-    return [
-        Forms\Components\Wizard::make([
-            self::getPersonalDataStep(),
-            self::getContactsStep(),
-            self::getPrivacyStep(),
-        ])
-        ->skippable(false)
-    ];
-}
-
-protected static function getPersonalDataStep(): Forms\Components\Wizard\Step
-{
-    return Forms\Components\Wizard\Step::make('Dati Personali')
-        ->icon('heroicon-o-user')
-        ->description('Inserisci i tuoi dati personali')
-        ->schema([
-            // ...componenti del form
-        ]);
-}
-```
-
-#### ❌ DON'T - Non Definire gli Step Direttamente nel Wizard
-
-```php
-// ❌ ERRATO
-public static function getFormSchemaWidget(): array
-{
-    return [
-        Forms\Components\Wizard::make([
-            Forms\Components\Wizard\Step::make('Dati Personali')
-                ->icon('heroicon-o-user')
-                ->description('Inserisci i tuoi dati personali')
-                ->schema([
-                    // ...componenti del form
-                ]),
-            // ...altri step
-        ])
-    ];
-}
-```
-
-Per maggiori dettagli e motivazioni, consulta la [documentazione completa sulle best practices per i wizard](../../UI/docs/filament/wizard-best-practices.md).
-
-
-### Versione Incoming
-
-
----
-
-#### ❌ DON'T - Non utilizzare il metodo form()
-
-```php
-// NON FARE MAI QUESTO
-public static function form(Form $form): Form
-{
-    return $form->schema([
-        // componenti...
-    ]);
-}
-```
-
-### 3. Traduzioni e Label
-
-#### ✅ DO - Utilizzare i file di traduzione
-
-Non specificare le label direttamente nei componenti. Invece, definire le traduzioni nei file di lingua:
-
-```php
-// Componente senza label esplicita
-TextInput::make('nome')->required()
-```
-
-Con corrispondenza nel file di traduzione:
-
-```php
-// resources/lang/it/nome-resource.php
-return [
-    'fields' => [
-        'nome' => [
-            'label' => 'Nome Utente',
-            'tooltip' => 'Nome completo dell\'utente',
-            'placeholder' => 'Inserisci il nome'
-        ],
-    ],
-];
-```
-
-#### ❌ DON'T - Non utilizzare il metodo label() direttamente
-
-```php
-// NON FARE MAI QUESTO
-TextInput::make('nome')
-    ->label('Nome Utente')
-    ->required()
-```
-
-## Struttura Completa di una Risorsa
-
-```php
-<?php
-
-namespace Modules\Brain\Filament\Resources;
-
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\DatePicker;
-use Filament\Forms\Components\Select;
-use Filament\Forms\Components\Toggle;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Columns\BooleanColumn;
-use Filament\Tables\Filters\SelectFilter;
-use Filament\Tables\Actions\Action;
-use Illuminate\Database\Eloquent\Builder;
-use Modules\Xot\Filament\Resources\XotBaseResource;
-use Modules\Brain\Models\Socio;
-
-class SocioResource extends XotBaseResource
-{
-    protected static ?string $model = Socio::class;
-    
-    protected static ?string $navigationIcon = 'heroicon-o-user';
-    
-    protected static ?int $navigationSort = 1;
-    
-    // Form Schema - CORRETTO ✅
-    public static function getFormSchema(): array
+    public function getTableActions(): array
     {
         return [
-            TextInput::make('cognome')
-                ->required()
-                ->maxLength(255),
-            
-            TextInput::make('nome')
-                ->required()
-                ->maxLength(255),
-            
-            DatePicker::make('data_nascita'),
-            
-            TextInput::make('email')
-                ->email()
-                ->required(),
-            
-            Select::make('id_stato_socio')
-                ->relationship('statoSocio', 'descrizione'),
-            
-            Toggle::make('is_attivo'),
+            // Le tue azioni personalizzate
         ];
     }
+<<<<<<< HEAD
     
     // Table - CORRETTO ✅
     public static function table(\Filament\Tables\Table $table): \Filament\Tables\Table
@@ -706,49 +508,43 @@ class SocioResource extends XotBaseResource
     protected static ?string $model = Socio::class;
     
     public static function getFormSchema(): array
+=======
+
+    public function getTableColumns(): array
+>>>>>>> 9df8f556 (fix .md)
     {
         return [
-            TextInput::make('nome')->required(),
-            TextInput::make('cognome')->required(),
+            // Le tue colonne personalizzate
         ];
-    }
-    
-    public static function table(\Filament\Tables\Table $table): \Filament\Tables\Table
-    {
-        return $table
-            ->columns([
-                TextColumn::make('nome'),
-                TextColumn::make('cognome'),
-            ]);
     }
 }
 ```
 
-### Risorsa Avanzata
+### Errori Comuni da Evitare
 
-Consulta l'esempio completo all'inizio di questo documento per una implementazione avanzata.
+1. Riduzione della Visibilità
+```php
+// ❌ SBAGLIATO: Riduzione della visibilità
+protected function getTableActions(): array
 
-## Riferimenti
+// ✅ CORRETTO: Mantenimento della visibilità
+public function getTableActions(): array
+```
 
-- [Documentazione Filament](https://filamentphp.com/docs)
-- [Documentazione XotBaseResource](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/docs/resource.md)
-- [Best Practices Laraxot](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
+2. Tipo di Ritorno Incompatibile
+```php
+// ❌ SBAGLIATO: Tipo di ritorno incompatibile
+public function getTableActions(): Collection
 
-## Collegamenti tra versioni di FILAMENT-BEST-PRACTICES.md
-* [FILAMENT-BEST-PRACTICES.md](../../../Xot/docs/filament/FILAMENT-BEST-PRACTICES.md)
-* [FILAMENT-BEST-PRACTICES.md](../../../Xot/docs/FILAMENT-BEST-PRACTICES.md)
+// ✅ CORRETTO: Tipo di ritorno compatibile
+public function getTableActions(): array
+```
 
-
-## Collegamenti tra versioni di filament-best-practices.md
-### Versione HEAD
-
-* [filament-best-practices.md](filament/filament-best-practices.md)
-
-### Versione Incoming
-
-* [filament-best-practices.md](../filament-best-practices.md)
-
----
-
-
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+## Collegamenti
+- [Documentazione Filament Ufficiale](https://filamentphp.com/)
+- [Principio di Sostituzione di Liskov](https://it.wikipedia.org/wiki/Principio_di_sostituzione_di_Liskov)
+- [Best Practices PHP](../PHP-STRICT-TYPES.md) 
+>>>>>>> 9df8f556 (fix .md)

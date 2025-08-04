@@ -224,6 +224,7 @@ return [
 Il `LangServiceProvider` gestisce automaticamente le traduzioni delle label basandosi sulla struttura dei file di traduzione. Aggiungere manualmente le label compromette questo meccanismo automatico e crea incoerenze nel sistema.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Infatti, il servizio `AutoLabelAction` intercetta la creazione dei componenti e applica automaticamente le traduzioni corrette, rendendo superfluo (e dannoso) l'uso esplicito del metodo `->label()`. 
 =======
 Infatti, il servizio `AutoLabelAction` intercetta la creazione dei componenti e applica automaticamente le traduzioni corrette, rendendo superfluo (e dannoso) l'uso esplicito del metodo `->label()`. 
@@ -236,3 +237,6 @@ Infatti, il servizio `AutoLabelAction` intercetta la creazione dei componenti e 
 * [infolist_schema_guidelines.md](../../../UI/docs/infolist_schema_guidelines.md)
 
 >>>>>>> 54f4fa16 (.)
+=======
+Infatti, il servizio `AutoLabelAction` intercetta la creazione dei componenti e applica automaticamente le traduzioni corrette, rendendo superfluo (e dannoso) l'uso esplicito del metodo `->label()`. 
+>>>>>>> 9df8f556 (fix .md)

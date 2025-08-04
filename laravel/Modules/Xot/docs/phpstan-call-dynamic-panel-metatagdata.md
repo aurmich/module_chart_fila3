@@ -63,6 +63,7 @@ Questo pattern consente:
 7. I valori null sono esplicitamente dichiarati
 8. Le strutture dati complesse sono tipizzate con array shapes
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 ## Collegamenti tra versioni di PHPSTAN-CALL-DYNAMIC-PANEL-METATAGDATA.md
@@ -74,3 +75,5 @@ Questo pattern consente:
 * [phpstan-call-dynamic-panel-metatagdata.md](phpstan/phpstan-call-dynamic-panel-metatagdata.md)
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)

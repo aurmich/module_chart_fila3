@@ -1,6 +1,7 @@
 # MetatagData
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ## Filosofia dei Getter
 
@@ -120,6 +121,8 @@ $colors = $metatag->getThemeColors();
 - [Linee Guida Filament](../filament-best-practices.md)
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)
 ## Descrizione
 La classe `MetatagData` gestisce i meta tag e le configurazioni visive dell'applicazione, inclusi colori, loghi e favicon.
 
@@ -163,6 +166,7 @@ Restituisce tutti i colori configurati nel formato chiave-valore.
 
 ### getLogoHeader()
 <<<<<<< HEAD
+<<<<<<< HEAD
 Restituisce il percorso del logo dell'header.
 
 ### getLogoHeaderDark()
@@ -180,6 +184,12 @@ Restituisce l'URL del logo principale per il brand, pensato per l’uso in Filam
 $panel->brandLogo($metatag->getBrandLogo());
 ```
 >>>>>>> 54f4fa16 (.)
+=======
+Restituisce il percorso del logo dell'header.
+
+### getLogoHeaderDark()
+Restituisce il percorso del logo dell'header per la modalità scura.
+>>>>>>> 9df8f556 (fix .md)
 
 ### getFavicon()
 Restituisce il percorso del favicon.
@@ -261,6 +271,7 @@ Restituisce una versione semplificata dei colori.
 
 ### getLogoHeader(): string
 <<<<<<< HEAD
+<<<<<<< HEAD
 Restituisce il percorso del logo dell'header.
 
 ### getLogoHeaderDark(): string
@@ -271,13 +282,20 @@ Restituisce il percorso del favicon.
 =======
 **@deprecated** Usa `getBrandLogo()` per operazioni di branding.
 Resituisce il percorso del logo dell'header (metodo deprecato).
+=======
+Restituisce il percorso del logo dell'header.
+>>>>>>> 9df8f556 (fix .md)
 
 ### getLogoHeaderDark(): string
-Resituisce il percorso del logo dell'header per il tema scuro.
+Restituisce il percorso del logo dell'header per il tema scuro.
 
 ### getFavicon(): string
+<<<<<<< HEAD
 Resituisce il percorso del favicon.
 >>>>>>> 54f4fa16 (.)
+=======
+Restituisce il percorso del favicon.
+>>>>>>> 9df8f556 (fix .md)
 
 ## Errori PHPStan Comuni
 1. Chiamata al metodo inesistente `getColors()`
@@ -296,5 +314,9 @@ Resituisce il percorso del favicon.
 =======
 - [Filament Best Practices](../FILAMENT-BEST-PRACTICES.md)
 - [PHPStan Common Exceptions](../PHPSTAN-COMMON-EXCEPTIONS.md)
+<<<<<<< HEAD
 - [Data Queableactions](../DATA-QUEABLEACTIONS.md) 
 >>>>>>> 54f4fa16 (.)
+=======
+- [Data Queableactions](../DATA-QUEABLEACTIONS.md) 
+>>>>>>> 9df8f556 (fix .md)

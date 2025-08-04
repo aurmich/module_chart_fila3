@@ -47,10 +47,14 @@ Quando si estende `XotBaseListRecords`, è necessario implementare i seguenti me
 1. **Prefisso List**:
    - Tutti i metodi relativi alla tabella DEVONO avere il prefisso "List"
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Es: `getTableColumns()` invece di `getListTableColumns()`
 =======
    - Es: `getTableColumns()` invece di `getTableColumns()`
 >>>>>>> 54f4fa16 (.)
+=======
+   - Es: `getTableColumns()` invece di `getListTableColumns()`
+>>>>>>> 9df8f556 (fix .md)
 
 2. **Visibilità dei Metodi**:
    - Tutti i metodi devono essere `public`
@@ -136,6 +140,9 @@ Quando si estende `XotBaseListRecords`, è necessario implementare i seguenti me
 3. Mantenere la coerenza in tutto il progetto usando sempre XotBaseListRecords
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9df8f556 (fix .md)
 > **AVVISO IMPORTANTE (2025-05-13):**
 > Il metodo standard per la definizione delle colonne della tabella è ora `getTableColumns`. Il vecchio `getListTableColumns` è deprecato: aggiorna tutte le implementazioni e la documentazione. Questa scelta garantisce allineamento con Filament e coerenza tra tutti i moduli Laraxot.
 
@@ -160,12 +167,15 @@ public function getTableColumns(): array
     ];
 }
 ```
+<<<<<<< HEAD
 
 ## PROPAGAZIONE (2025-05-28):
 La pagina ListStudios del modulo SaluteOra implementa ora correttamente il metodo getTableColumns() secondo questa policy, con array associativo e chiavi stringa. Vedi esempio e dettagli in [SaluteOra/docs/resources/studio-resource.md](../../SaluteOra/docs/resources/studio-resource.md).
 =======
 ## Nota storica:
 Il metodo `getListTableColumns` è stato rinominato in `getTableColumns` per aderire allo standard Filament e Laraxot. Tutte le implementazioni e la documentazione devono ora usare `getTableColumns`.
+=======
+>>>>>>> 9df8f556 (fix .md)
 
 ```php
 declare(strict_types=1);

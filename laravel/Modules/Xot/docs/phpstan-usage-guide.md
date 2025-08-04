@@ -259,6 +259,7 @@ cd /percorso/al/progetto/laravel
 ./vendor/bin/phpstan analyse Modules/NomeModulo --level=9 --verbose
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ``` 
 >>>>>>> aurmich/dev
@@ -282,3 +283,6 @@ cd /percorso/al/progetto/laravel
 
 
 >>>>>>> 54f4fa16 (.)
+=======
+``` 
+>>>>>>> 9df8f556 (fix .md)

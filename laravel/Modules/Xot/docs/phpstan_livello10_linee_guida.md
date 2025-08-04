@@ -203,6 +203,7 @@ private $fileHandle = null;
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 4. Pattern per Controller
 <<<<<<< HEAD
 
@@ -210,6 +211,9 @@ private $fileHandle = null;
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+### 4. Pattern per Controller
+>>>>>>> 9df8f556 (fix .md)
 ### 4. Gestione delle API Fluenti di Librerie Esterne
 
 Le API fluenti (method chaining) di alcune librerie esterne come Laravel-FFMpeg possono causare problemi con PHPStan a livello 10, in particolare quando i metodi intermedi restituiscono tipi non standard o quando la catena è lunga e complessa.
@@ -268,6 +272,7 @@ public function show(string $id): \Illuminate\View\View|\Illuminate\Http\Redirec
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 5. Gestione delle Proprietà Dinamiche
 <<<<<<< HEAD
 
@@ -275,6 +280,9 @@ public function show(string $id): \Illuminate\View\View|\Illuminate\Http\Redirec
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+### 5. Gestione delle Proprietà Dinamiche
+>>>>>>> 9df8f556 (fix .md)
 ### 6. Gestione delle Proprietà Dinamiche
 
 Per le proprietà dinamiche nei modelli, utilizzare annotazioni PHPDoc complete:
@@ -292,6 +300,7 @@ class User extends Model
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 6. Conversione Sicura da `mixed` a Tipi Scalari
 <<<<<<< HEAD
 
@@ -299,6 +308,9 @@ class User extends Model
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+### 6. Conversione Sicura da `mixed` a Tipi Scalari
+>>>>>>> 9df8f556 (fix .md)
 ### 7. Conversione Sicura da `mixed` a Tipi Scalari
 
 Quando si lavora con valori `mixed` da convertire in tipi scalari (string, int, float, bool), utilizzare controlli di tipo prima della conversione:
@@ -342,6 +354,7 @@ if ($value !== null) {
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 7. Gestione Sicura di Array con Chiavi Miste
 <<<<<<< HEAD
 
@@ -349,6 +362,9 @@ if ($value !== null) {
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+### 7. Gestione Sicura di Array con Chiavi Miste
+>>>>>>> 9df8f556 (fix .md)
 ### 8. Gestione Sicura di Array con Chiavi Miste
 
 Quando si ottengono array da fonti esterne (es. funzioni Laravel che restituiscono array con chiavi miste):
@@ -367,6 +383,7 @@ foreach ($componentsWithMixedKeys as $key => $component) {
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 8. Tipi Unione con Null
 <<<<<<< HEAD
 
@@ -374,6 +391,9 @@ foreach ($componentsWithMixedKeys as $key => $component) {
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+### 8. Tipi Unione con Null
+>>>>>>> 9df8f556 (fix .md)
 ### 9. Tipi Unione con Null
 
 Preferire la sintassi nullable (`?tipo`) per i tipi che possono essere null:
@@ -386,6 +406,7 @@ public function findById(?int $id): ?User
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 9. Parametri Variabili (Variadic)
 <<<<<<< HEAD
 
@@ -393,6 +414,9 @@ public function findById(?int $id): ?User
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+### 9. Parametri Variabili (Variadic)
+>>>>>>> 9df8f556 (fix .md)
 ### 10. Parametri Variabili (Variadic)
 
 Per i parametri variabili, specificare il tipo di ogni elemento nell'array risultante:
@@ -411,12 +435,16 @@ public function buildPath(string ...$segments): string
 ### 10. Callback e Closure
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
 ### 11. Callback e Closure
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+### 11. Callback e Closure
+>>>>>>> 9df8f556 (fix .md)
 
 Per i callback e le closure, utilizzare `callable` con specifiche di tipo dettagliate:
 
@@ -650,15 +678,20 @@ Uno degli errori più frequenti riguarda il namespace delle Actions:
 - ✅ **CORRETTO**: `namespace Modules\Xot\Actions;`
 - ❌ **ERRATO**: `namespace Modules\Xot\app\Actions;`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ❌ **ERRATO**: `namespace Modules\Xot\Actions;`
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+- ❌ **ERRATO**: `namespace Modules\Xot\Actions;`
+>>>>>>> 9df8f556 (fix .md)
 
 Anche se il file Actions si trova fisicamente in `Modules/Xot/app/Actions/`, il namespace deve sempre essere `Modules\Xot\Actions` (senza il segmento `app`).
 
 Gli errori PHPStan relativi a questo problema sono spesso del tipo:
 ```
 Class 'Modules\Xot\app\Actions\MyAction' not found.
+<<<<<<< HEAD
 <<<<<<< HEAD
 Class 'Modules\Xot\Actions\MyAction' not found.
 ```
@@ -679,6 +712,11 @@ namespace Modules\Xot\app\Console\Commands;
 Errori PHPStan come `Class Modules\Xot\app\Console\Commands\DatabaseSchemaExportCommand not found` indicano che è necessario rimuovere il segmento `app` dal namespace.
 
 >>>>>>> 54f4fa16 (.)
+=======
+Class 'Modules\Xot\Actions\MyAction' not found.
+```
+
+>>>>>>> 9df8f556 (fix .md)
 #### Namespace Corretti per i Componenti Principali
 
 | Tipo di Componente       | Percorso Fisico                         | Namespace Corretto                 |
@@ -694,12 +732,16 @@ Errori PHPStan come `Class Modules\Xot\app\Console\Commands\DatabaseSchemaExport
 #### Esempio per i Comandi Console
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9df8f556 (fix .md)
 ```php
 // CORRETTO
 namespace Modules\Xot\Console\Commands;
 
 // ERRATO
 namespace Modules\Xot\app\Console\Commands;
+<<<<<<< HEAD
 ```
 
 Errori PHPStan come `Class Modules\Xot\app\Console\Commands\DatabaseSchemaExportCommand not found` indicano che è necessario rimuovere il segmento `app` dal namespace.
@@ -708,14 +750,16 @@ namespace Modules\Xot\Console\Commands;
 
 Errori PHPStan come `Class Modules\Xot\Console\Commands\DatabaseSchemaExportCommand not found` indicano che è necessario rimuovere il segmento `app` dal namespace.
 =======
+=======
+>>>>>>> 9df8f556 (fix .md)
 ```
 
-## Collegamenti tra versioni di PHPSTAN_LIVELLO10_LINEE_GUIDA.md
-* [PHPSTAN_LIVELLO10_LINEE_GUIDA.md](../../../Xot/docs/phpstan/PHPSTAN_LIVELLO10_LINEE_GUIDA.md)
-* [PHPSTAN_LIVELLO10_LINEE_GUIDA.md](../../../Xot/docs/PHPSTAN_LIVELLO10_LINEE_GUIDA.md)
+Errori PHPStan come `Class Modules\Xot\app\Console\Commands\DatabaseSchemaExportCommand not found` indicano che è necessario rimuovere il segmento `app` dal namespace.
+namespace Modules\Xot\Console\Commands;
+```
 
-
-## Collegamenti tra versioni di phpstan_livello10_linee_guida.md
-* [phpstan_livello10_linee_guida.md](phpstan/phpstan_livello10_linee_guida.md)
-
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+Errori PHPStan come `Class Modules\Xot\Console\Commands\DatabaseSchemaExportCommand not found` indicano che è necessario rimuovere il segmento `app` dal namespace.
+>>>>>>> 9df8f556 (fix .md)

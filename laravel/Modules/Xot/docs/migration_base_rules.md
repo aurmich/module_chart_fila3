@@ -32,6 +32,7 @@
 
 Ultimo aggiornamento: 2025-05-13
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ---
 
@@ -78,3 +79,5 @@ Ultimo aggiornamento: 2025-05-13
 ---
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)

@@ -236,6 +236,9 @@ class NomeModello extends Model
     // Relazioni e metodi...
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9df8f556 (fix .md)
 
 ## Linee guida sulle Migrazioni
 
@@ -296,8 +299,11 @@ return new class extends XotBaseMigration {
     {
         return $this->hasMany(SocioRichiestaConvenzione::class, 'id_socio', 'id_socio');
     }
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9df8f556 (fix .md)
 ```
 
 ### 2. Documentazione delle Relazioni

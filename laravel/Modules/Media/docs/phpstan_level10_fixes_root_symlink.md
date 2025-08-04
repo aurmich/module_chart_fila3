@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 PHPSTAN_LEVEL10_FIXES_media.md
 =======
 ### Versione HEAD
@@ -20,3 +21,6 @@ PHPSTAN_LEVEL10_FIXES_media.md
 ---
 
 >>>>>>> 54f4fa16 (.)
+=======
+PHPSTAN_LEVEL10_FIXES_media.md
+>>>>>>> 9df8f556 (fix .md)

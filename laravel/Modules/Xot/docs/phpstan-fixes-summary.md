@@ -195,6 +195,7 @@ Per una comprensione più completa delle correzioni necessarie, consultare:
 1. [NAMESPACE-RULES.md](./NAMESPACE-RULES.md) - Per le regole sui namespace
 2. [PHPSTAN-LEVEL9-GUIDE.md](./PHPSTAN-LEVEL9-GUIDE.md) - Per dettagli su come gestire errori livello 9
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. [FILAMENT-TABLES.md](./FILAMENT-TABLES.md) - Per problemi specifici di Filament 
 =======
 3. [FILAMENT-TABLES.md](./FILAMENT-TABLES.md) - Per problemi specifici di Filament 
@@ -216,3 +217,6 @@ Per una comprensione più completa delle correzioni necessarie, consultare:
 
 
 >>>>>>> 54f4fa16 (.)
+=======
+3. [FILAMENT-TABLES.md](./FILAMENT-TABLES.md) - Per problemi specifici di Filament 
+>>>>>>> 9df8f556 (fix .md)

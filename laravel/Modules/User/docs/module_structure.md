@@ -100,9 +100,12 @@ return [
     'namespace' => 'Modules\User\Http\Controllers',
 ];
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)
 # Struttura Standard dei Moduli Laravel
 
 ## Struttura Base Corretta
@@ -286,9 +289,12 @@ laravel/Modules/ModuleName/
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)
 # Verifica struttura cartelle
 tree -L 3 laravel/Modules/User/
 

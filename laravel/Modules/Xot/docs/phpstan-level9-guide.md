@@ -171,6 +171,7 @@ Per categorie specifiche:
 /** @phpstan-ignore offsetAccess.nonOffsetAccessible */
 $value = $data['key'];
 <<<<<<< HEAD
+<<<<<<< HEAD
 ``` 
 =======
 ``` 
@@ -192,3 +193,6 @@ $value = $data['key'];
 
 
 >>>>>>> 54f4fa16 (.)
+=======
+``` 
+>>>>>>> 9df8f556 (fix .md)

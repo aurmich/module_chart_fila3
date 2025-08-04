@@ -51,9 +51,12 @@ class UserServiceProvider extends XotBaseServiceProvider
         // ERRORE: Aggiungere path personalizzati per risolvere problemi specifici
         View::addNamespace('user-widgets', __DIR__.'/../resources/views/filament/widgets');
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)
 # ⚠️ ATTENZIONE: Modifiche al ServiceProvider
 
 ## Regole Critiche per Estendere XotBaseServiceProvider
@@ -135,9 +138,12 @@ Le modifiche ai ServiceProvider possono sembrare una soluzione rapida per proble
 
 **Ricorda**: È sempre meglio adattarsi all'architettura esistente piuttosto che forzare l'architettura ad adattarsi alle proprie esigenze immediate.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9df8f556 (fix .md)
 ## Collegamenti
 - [XotBaseServiceProvider.md](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/Xot/docs/providers/xotbaseserviceprovider.md)
 - [SERVICE-PROVIDER-BEST-PRACTICES.md](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/Xot/docs/SERVICE-PROVIDER-BEST-PRACTICES.md)
