@@ -2,6 +2,7 @@
 
 return array (
 <<<<<<< HEAD
+<<<<<<< HEAD
   'title' => 
   array (
     'label' => 'Calendario Medico',
@@ -17,10 +18,13 @@ return array (
   ),
 =======
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
+=======
+>>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
   'actions' => 
   array (
     'create' => 
     array (
+<<<<<<< HEAD
 <<<<<<< HEAD
       'label' => 'Nuovo Appuntamento',
       'tooltip' => 'Crea un nuovo appuntamento',
@@ -91,6 +95,8 @@ return array (
     array (
       'label' => 'view',
 =======
+=======
+>>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
       'label' => 'create',
     ),
     'edit' => 
@@ -104,11 +110,15 @@ return array (
     'studio' => 
     array (
       'label' => 'studio',
+<<<<<<< HEAD
+>>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
+=======
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
     ),
   ),
   'fields' => 
   array (
+<<<<<<< HEAD
 <<<<<<< HEAD
     'starts_at' => 
     array (
@@ -451,6 +461,8 @@ return array (
     'no_show_rate' => 'Tasso di Assenza',
     'average_duration' => 'Durata Media',
 =======
+=======
+>>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
     'ends_at' => 
     array (
       'description' => 'ends_at',
@@ -546,6 +558,9 @@ return array (
       'placeholder' => 'authorId',
       'label' => 'authorId',
     ),
+<<<<<<< HEAD
+>>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
+=======
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
   ),
 );

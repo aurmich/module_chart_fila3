@@ -246,6 +246,7 @@ class Appointment extends BaseModel
         'reminder_sent_at',
         'state',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'starts_at',
         'ends_at',
         'invoice',//fattura
@@ -277,6 +278,10 @@ class Appointment extends BaseModel
 >>>>>>> 8e4d163b (phpstan)
 =======
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
+=======
+        'starts_at',
+        'ends_at',
+>>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
     ];
 
     /**
@@ -323,6 +328,8 @@ class Appointment extends BaseModel
             'eligibility_confirmed' => 'boolean',
             'reminder_sent' => 'boolean',
             'reminder_sent_at' => 'datetime',
+            'starts_at' => 'datetime',
+            'ends_at' => 'datetime',
         ]);
     }
 >>>>>>> 2099645a (.)

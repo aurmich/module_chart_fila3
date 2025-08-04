@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
+<<<<<<< HEAD
 use Modules\SaluteOra\Models\Appointment;
 use Modules\SaluteOra\Models\Doctor;
 use Modules\SaluteOra\Models\Patient;
@@ -10,6 +11,23 @@ use Modules\SaluteOra\Models\Patient;
 =======
 use Modules\SaluteOra\Models\Studio;
 >>>>>>> aurmich/dev
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+use Modules\SaluteOra\Models\Appointment;
+use Modules\SaluteOra\Models\Doctor;
+<<<<<<< HEAD
+=======
+=======
+use Modules\SaluteOra\Models\Appointment;
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+use Modules\SaluteOra\Models\Dentist;
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
+use Modules\SaluteOra\Models\Patient;
+use Modules\SaluteOra\Models\Studio;
+>>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
 use Modules\Tenant\Models\Tenant;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
@@ -24,6 +42,12 @@ return new class extends XotBaseMigration
      * @var string
      */
     protected string $table = 'appointments';
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
     
     /**
      * Classe del modello associato.
@@ -31,7 +55,11 @@ return new class extends XotBaseMigration
      * @var string|null
      */
     protected ?string $model_class = Appointment::class;
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+>>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
 
     /**
      * Run the migrations.
@@ -43,15 +71,37 @@ return new class extends XotBaseMigration
             function (Blueprint $table): void {
                 $table->id();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $table->foreignIdFor(Patient::class);
                 $table->foreignIdFor(Doctor::class);
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                $table->foreignIdFor(Patient::class);
+                $table->foreignIdFor(Doctor::class);
+=======
+                $this->foreignIdFor($table,Tenant::class);
+                $this->foreignIdFor($table,Patient::class);
+                $this->foreignIdFor($table,Dentist::class);
+>>>>>>> 54f4fa16 (.)
+=======
+                $table->foreignIdFor(Tenant::class);
+                $table->foreignIdFor(Patient::class);
+                $table->foreignIdFor(Dentist::class);
+>>>>>>> 35a7c2ee (- homeboarding chiara)
+=======
+>>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
                 //$table->foreignIdFor(Tenant::class);
 <<<<<<< HEAD:laravel/Modules/SaluteOra/database/migrations/2024_03_31_000006_create_appointments_table.php
                 $table->foreignIdFor(Patient::class,'patient_id');
                 $table->foreignIdFor(Doctor::class,'doctor_id');
                 $table->foreignIdFor(Studio::class,'studio_id');
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
+>>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
 =======
                 $table->foreignIdFor(Patient::class,'patient_id')->nullable();
                 $table->foreignIdFor(Doctor::class,'doctor_id')->nullable();
@@ -71,6 +121,13 @@ return new class extends XotBaseMigration
             function (Blueprint $table): void {
                 // Aggiunta dei timestamp e soft delete
                 $this->updateTimestamps($table, false);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+>>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
                 
                 // Aggiunta dei campi per il calendario
                 if (!$this->hasColumn('studio_id')) {
@@ -128,13 +185,30 @@ return new class extends XotBaseMigration
                 if (!$this->hasIndex('appointments_status_index')) {
                     $table->index('status', 'appointments_status_index');
                 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+>>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
             }
         );
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
    
 =======
+=======
+<<<<<<< HEAD
+   
+=======
+
+>>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
     /**
      * Reverse the migrations.
      */
@@ -142,5 +216,9 @@ return new class extends XotBaseMigration
     {
         $this->tableDrop();
     }
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+>>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
 };

@@ -1,7 +1,8 @@
 <?php
 
-// declare(strict_types=1);
+declare(strict_types=1);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -50,17 +51,21 @@ namespace App\Providers\Filament;
 =======
 // namespace App\Providers\Filament;
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+ namespace App\Providers\Filament;
+>>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
 
-// use Modules\Xot\Providers\Filament\XotBaseMainPanelProvider;
-// use Filament\Panel;
+ use Modules\Xot\Providers\Filament\XotBaseMainPanelProvider;
+ use Filament\Panel;
 
-// class AdminPanelProvider extends XotBaseMainPanelProvider
-// {
-//     public function panel(Panel $panel): Panel
+ class AdminPanelProvider extends XotBaseMainPanelProvider
+ {
+     public function panel(Panel $panel): Panel
 
 
-//     {
+     {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
         return parent::panel($panel)
@@ -83,15 +88,20 @@ namespace App\Providers\Filament;
 <<<<<<< HEAD
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 =======
+=======
+>>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
          return parent::panel($panel)
            //->default()
            //->login()
              ;
      }
 }
+<<<<<<< HEAD
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
 =======
 }
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+>>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
