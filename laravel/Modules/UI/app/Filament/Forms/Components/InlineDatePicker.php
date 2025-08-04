@@ -228,6 +228,7 @@ class InlineDatePicker extends DatePicker
         $this->afterStateHydrated(static function (self $component, $state): void {
             
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($state) {
                 $date = Carbon::parse($state);
                 $component->currentViewMonth = $date->format('Y-m');
@@ -266,6 +267,8 @@ class InlineDatePicker extends DatePicker
 
         // Hydration/Dehydration del valore
         $this->afterStateHydrated(static function (self $component, $state): void {
+=======
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
             if ($state) {
                 $date = Carbon::parse($state);
                 $component->currentViewMonth = $date->format('Y-m');
@@ -291,6 +294,7 @@ class InlineDatePicker extends DatePicker
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 =======
         $this->dehydrateStateUsing(static function (self $component, $state) {
+            
             return $state ? Carbon::parse($state)->format('Y-m-d') : null;
 >>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
         });

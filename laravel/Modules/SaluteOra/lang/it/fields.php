@@ -23,6 +23,7 @@ return [
         'helper_text' => 'Scegli la data per il tuo appuntamento',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'description' => 'Data selezionata per l\'appuntamento medico',
     ],
     
@@ -54,10 +55,24 @@ return [
     
     'notes' => [
 <<<<<<< HEAD
+=======
+        'description' => 'Data selezionata per la prenotazione',
+    ],
+    
+    'appointment_time_display' => [
+        'label' => 'Orario Appuntamento',
+        'placeholder' => 'Seleziona un orario',
+        'helper_text' => 'Scegli l\'orario più comodo per il tuo appuntamento',
+        'description' => 'Fascia oraria selezionata per la visita',
+    ],
+    
+    'notes' => [
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
         'label' => 'Note Aggiuntive',
         'placeholder' => 'Inserisci eventuali note o richieste particolari...',
         'helper_text' => 'Informazioni aggiuntive per il tuo appuntamento (opzionale)',
         'description' => 'Campo per comunicazioni speciali o richieste particolari',
+<<<<<<< HEAD
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 =======
         'label' => 'Note',
@@ -65,6 +80,8 @@ return [
         'helper_text' => 'Informazioni aggiuntive per il dottore (opzionale)',
         'description' => 'Note aggiuntive per l\'appuntamento',
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
+=======
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
     ],
     
     // Altri campi del widget per completezza
@@ -84,6 +101,7 @@ return [
     
     'cap' => [
         'label' => 'CAP',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         'placeholder' => 'Inserisci il CAP',
@@ -123,10 +141,26 @@ return [
     
     'doctor_id' => [
 <<<<<<< HEAD
+=======
+        'placeholder' => 'Seleziona un CAP',
+        'helper_text' => 'Codice di Avviamento Postale della zona',
+        'description' => 'CAP specifico per la ricerca di studi vicini',
+    ],
+    
+    'studio_id' => [
+        'label' => 'Studio Selezionato',
+        'placeholder' => 'ID dello studio selezionato',
+        'helper_text' => 'Identificativo dello studio per la prenotazione',
+        'description' => 'Studio medico scelto per l\'appuntamento',
+    ],
+    
+    'doctor_id' => [
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
         'label' => 'Dottore Selezionato',
         'placeholder' => 'ID del dottore selezionato',
         'helper_text' => 'Identificativo del dottore per la prenotazione',
         'description' => 'Medico scelto per la visita',
+<<<<<<< HEAD
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 =======
         'label' => 'ID Dottore',
@@ -134,11 +168,14 @@ return [
         'helper_text' => 'Identificativo unico del dottore',
         'description' => 'ID univoco del dottore nel sistema',
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
+=======
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
     ],
     
     'appointment_date' => [
         'label' => 'Data Appuntamento',
         'placeholder' => 'Seleziona una data',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         'helper_text' => 'Seleziona la data per il tuo appuntamento',
@@ -214,5 +251,16 @@ return [
         'helper_text' => 'Indirizzo email dello studio',
         'description' => 'Contatto email dello studio medico',
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
+=======
+        'helper_text' => 'Scegli la data per il tuo appuntamento',
+        'description' => 'Data della prenotazione medica',
+    ],
+    
+    'appointment_time' => [
+        'label' => 'Orario Appuntamento',
+        'placeholder' => 'Seleziona un orario',
+        'helper_text' => 'Scegli l\'orario più comodo per il tuo appuntamento',
+        'description' => 'Orario della visita medica',
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
     ],
 ]; 

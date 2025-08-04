@@ -9,12 +9,16 @@ use Exception;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 use Carbon\Carbon;
 use Filament\Forms;
 use Filament\Forms\Get;
 use Filament\Forms\Set;
 use Filament\Forms\Form;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 use Modules\Geo\Models\Cap;
 use Filament\Actions\Action;
 use Filament\Widgets\Widget;
@@ -100,6 +104,8 @@ use Filament\Forms;
 use Filament\Forms\Get;
 use Filament\Forms\Set;
 use Filament\Forms\Form;
+=======
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 use Modules\Geo\Models\Cap;
 use Filament\Actions\Action;
 use Filament\Widgets\Widget;
@@ -118,12 +124,16 @@ use Filament\Notifications\Notification;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\TimePicker;
 use Filament\Support\Facade\FilamentView;
+use Modules\SaluteOra\Models\Appointment;
+use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\Wizard\Step;
+use Modules\SaluteOra\Models\DoctorStudio;
 use Livewire\Component as LivewireComponent;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Modules\Notify\Notifications\RecordNotification;
 use Modules\UI\Filament\Forms\Components\RadioCollection;
 use Modules\UI\Filament\Forms\Components\InlineDatePicker;
-use Carbon\Carbon;
+use Illuminate\Support\Facades\Notification as LaravelNotification;
 
 class FindDoctorAndAppointmentWidget extends XotBaseWidget
 {
@@ -307,7 +317,6 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
                 //->startOnStep($this->getStartStep())
 >>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
                 ->steps([
-                    //$this->getStepByName('test_step'),
                     $this->getStepByName('search_step')
                         ->icon('heroicon-o-map-pin'),
                     $this->getStepByName('studio_step')
@@ -316,10 +325,13 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
                         ->icon('heroicon-o-calendar'),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                     $this->getStepByName('availability_step')
                         ->icon('heroicon-o-user-circle'),
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
                     $this->getStepByName('confirm_step')
                         ->icon('heroicon-o-check-circle')
                 ])
@@ -916,12 +928,22 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
         return [
             
             RadioCollection::make('studio_id')
-                ->label('Studio')      
-                ->options(fn($get) => Studio::ofCap($get('cap'))->get()) // La tua collection
+                ->options(fn($get) => Studio::ofCap($get('cap'))->whereHas('doctors')->get()) // La tua collection
                 
                 ->itemView('pub_theme::filament.forms.components.studio-item') // La tua blade personalizzata
                 //->emptyView('pub_theme::filament.forms.components.studio-empty') // La tua blade personalizzata
                 ->valueKey('id') // Campo da usare come valore (default: 'id'),
+                
+                ->afterStateUpdated(function (Set $set, Get $get){
+                    
+                    $options=$this->getDoctorsOptionsByStudioId($get('studio_id'));
+                    $options=array_keys($options);
+                    if(isset($options[0])){
+                        $set('doctor_id', $options[0]);
+                    }
+                    
+                })
+                    
                 ,
         ];
     }
@@ -930,15 +952,10 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
 
     protected function getDateStepSchema(): array
     {
-        $times=collect([
-            collect((object)['id'=>'09:00','label'=>'09:00']),
-            collect((object)['id'=>'10:00','label'=>'10:00']),
-            collect((object)['id'=>'11:00','label'=>'11:00']),
-            collect((object)['id'=>'12:00','label'=>'12:00']),
-            
-        ]);
+       
 
         return [
+<<<<<<< HEAD
 <<<<<<< HEAD
             'appointment_date' => DatePicker::make('appointment_date')
 <<<<<<< HEAD
@@ -1142,6 +1159,15 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
 =======
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 =======
+=======
+
+            'doctor_id'=>Select::make('doctor_id')
+                ->options(fn(Get $get)=>$this->getDoctorsOptionsByStudioId($get('studio_id')))
+                ->searchable()
+                //->default(fn(Get $get)=>dddx('a'))
+                ->preload()
+                ->required(),
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
             'appointment_date' => InlineDatePicker::make('appointment_date')
 <<<<<<< HEAD
                 ->enabledDates(['2025-06-05','2025-06-21'])
@@ -1162,40 +1188,73 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
 >>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
                 ->view('pub_theme::filament.forms.components.inline-date-picker')
                 ->currentViewMonth($this->getCurrentCalendarMonth()),
+            
             'appointment_time'=>  RadioCollection::make('appointment_time')
-                ->label('Orario')      
-                ->options(fn() => $times) // La tua collection
+                ->options(fn(Get $get) => $this->getAvailableTimeSlots($get)) // La tua collection
                 ->itemView('pub_theme::filament.forms.components.studio-time') // La tua blade personalizzata
                 ->valueKey('id') 
+<<<<<<< HEAD
 >>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+            
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
         ];
     }
 
+    public function getAvailableTimeSlots(Get $get): \Illuminate\Support\Collection
+    {
+
+        $studioId = $get('studio_id');
+        $doctorId = $get('doctor_id');
+        $date = $get('appointment_date');
+        if(!$date){
+
+            return collect([]);
+        }
+        
+        $pivot = DoctorStudio::where('studio_id',$studioId)->where('user_id',$doctorId)->first();
+        
+        if (!$pivot) {
+            return collect([]);
+        }
+        
+        return $pivot->getAvailableTimeSlotsByDate($date);
+        
+        
+    }
 
     public function getEnabledDates(Get $get): array
     {   
-        /*
-        dddx([
-            'currentCalendarMonth'=>$this->currentCalendarMonth,
-            'studio_id'=>$get('studio_id'),
-        ]); //2025-07
-        */
-        /*
-        return [
-            $this->currentCalendarMonth.'-15',
-            $this->currentCalendarMonth.'-20',
-        ];
-        */
         
         $studioId = $get('studio_id');
+        $doctorId = $get('doctor_id');
         $studio = Studio::find($studioId);
         if(!$studio){
             return [];
         }
-        $enabledDates = $studio->getEnabledDatesByMonth($this->currentCalendarMonth);
+        $pivot = DoctorStudio::where('studio_id',$studioId)->where('user_id',$doctorId)->first();
+        
+        if (!$pivot) {
+            return [];
+        }
+        $enabledDates = $pivot->getEnabledDatesByMonth($this->currentCalendarMonth);
 
         return $enabledDates;
         
+    }
+
+    public function getDoctorsOptionsByStudioId(int|string|null $studioId): array
+    {
+        $studio = Studio::find($studioId);
+        if(!$studio){
+            return [];
+        }
+        $doctors = $studio->doctors()->get();
+        $options = $doctors->mapWithKeys(function($doctor){
+            return [$doctor->id => $doctor->first_name.' '.$doctor->last_name];
+        })->toArray();
+        
+        return $options;
     }
 
     /**
@@ -1240,105 +1299,9 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
         ]);
     }
 
-    protected function getTimeStepSchema(): array
-    {
-        return [
-            'appointment_time' => Select::make('appointment_time')
-                ->label('saluteora::fields.appointment_time')
-                ->options([
-                    '09:00' => '09:00',
-                    '09:30' => '09:30',
-                    '10:00' => '10:00',
-                    '10:30' => '10:30',
-                    '11:00' => '11:00',
-                    '11:30' => '11:30',
-                    '12:00' => '12:00',
-                    '15:00' => '15:00',
-                    '15:30' => '15:30',
-                    '16:00' => '16:00',
-                    '16:30' => '16:30',
-                    '17:00' => '17:00',
-                    '17:30' => '17:30',
-                    '18:00' => '18:00',
-                ])
-                ->required(),
-        ];
-    }
+    
 
-    /**
-     * Get the availability step form schema.
-     *
-     * @return array<string, \Filament\Forms\Components\Component>
-     */
-    protected function getAvailabilityStepSchema(): array
-    {
-        return [
-            
-        ];
-    }
-
-    /**
-     * Get available time slots for a specific doctor on a specific date.
-     *
-     * @param int $doctorId
-     * @param string $appointmentDate
-     * @return array<string, string>
-     */
-    protected function getAvailableTimeSlotsForDoctor(int $doctorId, string $appointmentDate): array
-    {
-        try {
-            // TODO: Implement real availability check with database
-            // For now, return example time slots
-            
-            $isWeekend = in_array(date('w', strtotime($appointmentDate)), [0, 6]);
-            $isMonday = date('w', strtotime($appointmentDate)) == 1;
-            
-            if ($isWeekend) {
-                // Limited hours on weekends
-                return [
-                    '09:00' => '09:00',
-                    '10:00' => '10:00',
-                    '11:00' => '11:00',
-                ];
-            }
-            
-            if ($isMonday) {
-                // Different schedule on Mondays
-                return [
-                    '10:00' => '10:00',
-                    '11:00' => '11:00',
-                    '15:00' => '15:00',
-                    '16:00' => '16:00',
-                    '17:00' => '17:00',
-                ];
-            }
-            
-            // Regular weekday schedule
-            return [
-                '09:00' => '09:00',
-                '09:30' => '09:30',
-                '10:00' => '10:00',
-                '10:30' => '10:30',
-                '11:00' => '11:00',
-                '11:30' => '11:30',
-                '15:00' => '15:00',
-                '15:30' => '15:30',
-                '16:00' => '16:00',
-                '16:30' => '16:30',
-                '17:00' => '17:00',
-                '17:30' => '17:30',
-            ];
-            
-        } catch (\Exception $e) {
-            Log::error('Error getting available time slots', [
-                'doctor_id' => $doctorId,
-                'appointment_date' => $appointmentDate,
-                'error' => $e->getMessage()
-            ]);
-            
-            return [];
-        }
-    }
+    
 
     /**
      * Get the confirmation step form schema.
@@ -1351,77 +1314,96 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
             Forms\Components\Section::make(__('saluteora::widgets.find_doctor_and_appointment.confirm_step.title'))
                 ->description(__('saluteora::widgets.find_doctor_and_appointment.confirm_step.description'))
                 ->schema([
-                    Forms\Components\TextInput::make('studio_name')
+                    Placeholder::make('studio_name')
                         ->label(__('saluteora::widgets.find_doctor_and_appointment.fields.studio.label'))
-                        ->default(function (Get $get) {
+                        ->content(function (Get $get) {
                             $studioId = $get('studio_id');
-                            if (!$studioId) return null;
+                            if (!$studioId) {
+                                return __('saluteora::widgets.find_doctor_and_appointment.fields.studio.placeholder');
+                            }
                             
                             $studio = \Modules\SaluteOra\Models\Studio::find($studioId);
-                            return $studio ? $studio->name : null;
-                        })
-                        ->readOnly(),
+                            return $studio ? $studio->name : __('saluteora::widgets.find_doctor_and_appointment.fields.studio.placeholder');
+                        }),
                         
-                    Forms\Components\TextInput::make('appointment_date')
+                    Placeholder::make('doctor_name')
+                        ->label(__('saluteora::widgets.find_doctor_and_appointment.fields.doctor.label'))
+                        ->content(function (Get $get) {
+                            $doctorId = $get('doctor_id');
+                            $studioId = $get('studio_id');
+                            if (!$doctorId || !$studioId) {
+                                return __('saluteora::widgets.find_doctor_and_appointment.fields.doctor.placeholder');
+                            }
+                            
+                            // Recupera il dottore tramite la relazione studio->doctors
+                            $studio = \Modules\SaluteOra\Models\Studio::find($studioId);
+                            if (!$studio) {
+                                return __('saluteora::widgets.find_doctor_and_appointment.fields.doctor.placeholder');
+                            }
+                            
+                            $doctor = $studio->doctors()->where('users.id', $doctorId)->first();
+                            return $doctor ? ($doctor->first_name . ' ' . $doctor->last_name) : __('saluteora::widgets.find_doctor_and_appointment.fields.doctor.placeholder');
+                        }),
+                        
+                    Placeholder::make('appointment_date_display')
                         ->label(__('saluteora::widgets.find_doctor_and_appointment.fields.appointment_date.label'))
-                        ->readOnly(),
+                        ->content(function (Get $get) {
+                            $date = $get('appointment_date');
+                            if (!$date) {
+                                return __('saluteora::widgets.find_doctor_and_appointment.fields.appointment_date.placeholder');
+                            }
+                            
+                            // Formatta la data in modo più leggibile (es: "Lunedì 15 Giugno 2025")
+                            try {
+                                $carbonDate = Carbon::createFromFormat('Y-m-d', $date);
+                                return $carbonDate->locale('it')->isoFormat('dddd DD MMMM YYYY');
+                            } catch (\Exception $e) {
+                                return $date; // Fallback al formato originale
+                            }
+                        }),
                         
-                    Forms\Components\TextInput::make('appointment_time')
+                    Placeholder::make('appointment_time_display')
                         ->label(__('saluteora::widgets.find_doctor_and_appointment.fields.appointment_time.label'))
-                        ->readOnly(),
+                        ->content(function (Get $get) {
+                            $time = $get('appointment_time');
+                            return $time ? $time : __('saluteora::widgets.find_doctor_and_appointment.fields.appointment_time.placeholder');
+                        }),
                         
                     Textarea::make('notes')
-                        ->label(__('saluteora::widgets.find_doctor_and_appointment.fields.notes.label'))
-                        ->placeholder(__('saluteora::widgets.find_doctor_and_appointment.fields.notes.placeholder'))
                         ->rows(3)
-                        ->columnSpan('full'),
+                        ->columnSpan('full')
+                        ->maxLength(500), // Limite di caratteri per le note
                 ]),
         ];
     }
 
-    /**
-     * Handle form submission.
-     *
-     * @return void
-     */
-    public function submit(): void
+
+    public function register(): \Illuminate\Http\RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
     {
-        try {
-            if (!request()->hasValidSignature()) {
-                throw new \Exception('Invalid request signature');
-            }
-
-            // Get form data
-            $data = $this->form->getState();
-
-            // Log the booking attempt
-            Log::info('New appointment booking', [
-                'user_id' => Auth::id(),
-                'data' => $data
-            ]);
-
-            // TODO: Implement actual booking logic here
-
-            // Show success notification
-            Notification::make()
-                ->success()
-                ->title(trans('saluteora::notifications.booking_success'))
-                ->send();
-
-            // Reset form
-            $this->form->fill();
-
-        } catch (\Exception $e) {
-            Log::error('Booking error: ' . $e->getMessage());
-
-            Notification::make()
-                ->danger()
-                ->title(trans('saluteora::notifications.booking_error'))
-                ->body($e->getMessage())
-                ->send();
-        }
+        $data=$this->form->getState();
+        $appointment_data=[
+            'patient_id'=>Auth::id(),
+            'doctor_id'=>$data['doctor_id'],
+            'studio_id'=>$data['studio_id'],
+            'start_time'=>Carbon::parse($data['appointment_date'].' '.$data['appointment_time']),
+            'end_time'=>Carbon::parse($data['appointment_date'].' '.$data['appointment_time'])->addMinutes(60),
+            'notes'=>$data['notes'],
+            'state'=>'pending',
+        ];
+        $appointment=Appointment::create($appointment_data);
+        $slug='patient_appointment_'.Str::snake($appointment->state::$name);
+        $slug=Str::slug($slug);
+        /*---
+        $notify=new RecordNotification($appointment,$slug);
+        LaravelNotification::route('mail', $data['email'])
+        //->locale('it')
+        ->notify($notify);
+        --*/
+        return redirect()->route('pages.view', ['slug' => $slug]);
+       
     }
 
+    
     /**
      * Get the CSRF token for the current request.
      *

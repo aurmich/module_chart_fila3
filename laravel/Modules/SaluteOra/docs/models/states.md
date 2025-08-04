@@ -617,6 +617,9 @@ class PendingToActive extends BaseTransition
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 ➡️ **Documentazione completa**: [Pattern BaseTransition](base-transition-pattern.md)
 
 ## 🏥 **Stati degli Appuntamenti** (NUOVO - Gennaio 2025)
@@ -671,6 +674,7 @@ Le notifiche includono automaticamente:
 - `studio_name`: Nome dello studio
 - `message`: Messaggio personalizzato
 
+<<<<<<< HEAD
 📋 **Documentazione completa**: [Appointment States](appointment-states.md) 
 =======
    - Registrare le modifiche e le correzioni 
@@ -678,3 +682,6 @@ Le notifiche includono automaticamente:
 =======
 ➡️ **Documentazione completa**: [Pattern BaseTransition](base-transition-pattern.md) 
 >>>>>>> 6232c656 (✨ (IntegrationCompleted State): introduce new state `IntegrationCompleted` in user workflow to manage users who completed data integration but are not yet approved by the administrator)
+=======
+📋 **Documentazione completa**: [Appointment States](appointment-states.md) 
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)

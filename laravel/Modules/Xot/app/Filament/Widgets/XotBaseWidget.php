@@ -683,6 +683,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
     public function getWizardSubmitAction(): Action{
@@ -691,16 +692,22 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
             throw new \Exception("View {$submit_view} does not exist");
         }
 =======
+=======
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 
 
     public function getWizardSubmitAction(){
         $submit_view='pub_theme::filament.wizard.submit-button';
+<<<<<<< HEAD
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
+=======
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
         return Action::make('submit')
             ->label(__('filament-panels::resources/pages/edit-record.form.actions.save.label'))
             ->submit('save')
             ->view($submit_view);
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
@@ -737,4 +744,6 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 }

@@ -6,6 +6,7 @@ namespace Modules\SaluteOra\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\ModelStates\HasStates;
 use Spatie\Activitylog\LogOptions;
 use Illuminate\Database\Eloquent\Model;
@@ -127,12 +128,16 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Spatie\Activitylog\Traits\LogsActivity;
 =======
 >>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
+=======
+use Spatie\ModelStates\HasStates;
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 use Spatie\Activitylog\LogOptions;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Modules\SaluteOra\Enums\AppointmentTypeEnum;
 use Modules\SaluteOra\Enums\AppointmentStatusEnum;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Modules\SaluteOra\States\Appointment\AppointmentState;
 
 /**
  * Appointment Model for the SaluteOra Module.
@@ -211,6 +216,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Appointment extends BaseModel
 {
     use LogsActivity;
+    use HasStates;
 
     /**
      * Gli attributi che sono mass assignable.
@@ -239,6 +245,7 @@ class Appointment extends BaseModel
         'reminder_sent',
         'reminder_sent_at',
         'state',
+<<<<<<< HEAD
         'starts_at',
         'ends_at',
         'invoice',//fattura
@@ -268,6 +275,8 @@ class Appointment extends BaseModel
         'reminder_sent',
         'reminder_sent_at',
 >>>>>>> 8e4d163b (phpstan)
+=======
+>>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
     ];
 
     /**
@@ -309,6 +318,7 @@ class Appointment extends BaseModel
             'end_time' => 'datetime',
             'type' => AppointmentTypeEnum::class,
             'status' => AppointmentStatusEnum::class,
+            'state' => AppointmentState::class,
             'emergency' => 'boolean',
             'eligibility_confirmed' => 'boolean',
             'reminder_sent' => 'boolean',
