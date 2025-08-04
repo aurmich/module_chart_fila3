@@ -11,6 +11,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "file": "assets/app-CizGm5hC.css",
 =======
     "file": "assets/app-Dph1A97d.css",
@@ -67,6 +68,9 @@
 =======
     "file": "assets/app-B6ruuQZt.css",
 >>>>>>> f7d3ce4f (- update landing-page;)
+=======
+    "file": "assets/app-CVLTvScD.css",
+>>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
     "src": "resources/css/app.css",
     "isEntry": true
   },
