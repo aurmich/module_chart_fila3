@@ -169,6 +169,7 @@ class ChangeTypeCommand extends Command
 
         $childTypes = $xot->getUserChildTypes();
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @phpstan-ignore nullsafe.neverNull */
         $this->info("Current user type: {$user->type?->getLabel()}");
 =======
@@ -183,6 +184,10 @@ class ChangeTypeCommand extends Command
         $this->info("Current user type: {$user->type->getLabel()}");
 >>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 >>>>>>> aurmich/dev
+=======
+        /** @phpstan-ignore-next-line */
+        $this->info("Current user type: {$user->type?->getLabel()}");
+>>>>>>> 3042b6c3 (fix: type null on change-type)
         
         $typeClass = $xot->getUserChildTypeClass();
         $options = Arr::mapWithKeys($childTypes, function ($item, int|string $key){

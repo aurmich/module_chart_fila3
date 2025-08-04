@@ -3,13 +3,6 @@ description:
 globs:
 alwaysApply: false
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
->>>>>>> aurmich/dev
 # Memoria: Struttura Directory e Namespace
 
 ## Regola Critica da Ricordare SEMPRE
@@ -21,23 +14,8 @@ alwaysApply: false
 - **Namespace**: `Modules\<Nome>\Filament\Resources` (SENZA `app`)
 
 ### Errori da NON Ripetere MAI
-<<<<<<< HEAD
 - ❌ File fuori da `app/`: `Modules/<nome progetto>/Enums/UserType.php`
 - ❌ Namespace con `app`: `Modules\<nome progetto>\app\Filament\Resources`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- ❌ File fuori da `app/`: `Modules/<nome progetto>/Enums/UserType.php`
-- ❌ Namespace con `app`: `Modules\<nome progetto>\app\Filament\Resources`
-=======
-- ❌ File fuori da `app/`: `Modules/SaluteOra/Enums/UserType.php`
-- ❌ Namespace con `app`: `Modules\SaluteOra\app\Filament\Resources`
->>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
-=======
-- ❌ File fuori da `app/`: `Modules/<nome progetto>/Enums/UserType.php`
-- ❌ Namespace con `app`: `Modules\<nome progetto>\app\Filament\Resources`
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 
 ### Estensioni Obbligatorie
 - Filament Resources → `Modules\Xot\Filament\Resources\XotBaseResource`
@@ -62,11 +40,3 @@ alwaysApply: false
 - [ ] Nessun `->label()`?
 
 **Questa memoria va consultata PRIMA di ogni modifica ai file PHP.**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
->>>>>>> aurmich/dev

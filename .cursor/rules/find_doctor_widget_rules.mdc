@@ -1,47 +1,14 @@
 ---
-<<<<<<< HEAD
 description:
 globs:
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-description:
-globs:
-=======
-description: 
-globs: 
->>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
-=======
-description:
-globs:
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 alwaysApply: true
 ---
 # FindDoctorAndAppointmentWidget Rules
 
 ## Architecture Rules
-<<<<<<< HEAD
 1. Use correct namespace: `Modules\<nome progetto>\Filament\Widgets\Patient`
 2. Extend `XotBaseWidget` from `Modules\Xot\Filament\Widgets`
 3. Use module's translation files in `Modules/<nome progetto>/lang/<language>`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-1. Use correct namespace: `Modules\<nome progetto>\Filament\Widgets\Patient`
-2. Extend `XotBaseWidget` from `Modules\Xot\Filament\Widgets`
-3. Use module's translation files in `Modules/<nome progetto>/lang/<language>`
-=======
-1. Use correct namespace: `Modules\SaluteOra\Filament\Widgets\Patient`
-2. Extend `XotBaseWidget` from `Modules\Xot\Filament\Widgets`
-3. Use module's translation files in `Modules/SaluteOra/lang/<language>`
->>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
-=======
-1. Use correct namespace: `Modules\<nome progetto>\Filament\Widgets\Patient`
-2. Extend `XotBaseWidget` from `Modules\Xot\Filament\Widgets`
-3. Use module's translation files in `Modules/<nome progetto>/lang/<language>`
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 4. Never use `->label()` directly, use translation files
 5. Separate wizard steps into distinct functions for clean code
 

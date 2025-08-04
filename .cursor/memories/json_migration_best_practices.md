@@ -1,16 +1,4 @@
-<<<<<<< HEAD
 # JSON Migration Best Practices in Laravel & <nome progetto>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# JSON Migration Best Practices in Laravel & <nome progetto>
-=======
-# JSON Migration Best Practices in Laravel & SaluteOra
->>>>>>> 54f4fa16 (.)
-=======
-# JSON Migration Best Practices in Laravel & <nome progetto>
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 
 ## Critical Error Identified
 
@@ -18,19 +6,7 @@ The error `SQLSTATE[22032]: <<Unknown error>>: 3140 Invalid JSON text: "Invalid 
 
 ## Root Cause
 
-<<<<<<< HEAD
 When using `XotBaseMigration` in <nome progetto>:
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-When using `XotBaseMigration` in <nome progetto>:
-=======
-When using `XotBaseMigration` in SaluteOra:
->>>>>>> 54f4fa16 (.)
-=======
-When using `XotBaseMigration` in <nome progetto>:
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 
 1. The pattern `$table->json('field_name')->nullable()->change()` directly attempts to convert existing data
 2. This fails if any record in the column contains data that is not valid JSON
@@ -94,16 +70,4 @@ Before running migrations that involve JSON conversions:
 4. ✅ Consider chunking for large tables to avoid memory issues
 5. ✅ Always have a backup of the database before running JSON migrations
 
-<<<<<<< HEAD
 This memory replaces any previous guidance on JSON migrations and must be followed for all migrations in <nome progetto> that involve JSON columns.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-This memory replaces any previous guidance on JSON migrations and must be followed for all migrations in <nome progetto> that involve JSON columns.
-=======
-This memory replaces any previous guidance on JSON migrations and must be followed for all migrations in SaluteOra that involve JSON columns.
->>>>>>> 54f4fa16 (.)
-=======
-This memory replaces any previous guidance on JSON migrations and must be followed for all migrations in <nome progetto> that involve JSON columns.
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev

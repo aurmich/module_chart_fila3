@@ -8,19 +8,7 @@
 
 ## Errore Identificato
 
-<<<<<<< HEAD
 Il file `calendar.blade.php` del tema One conteneva un'implementazione completa di FullCalendar da zero (697 righe), duplicando funzionalità già presenti nei widget Filament del modulo <nome progetto>.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Il file `calendar.blade.php` del tema One conteneva un'implementazione completa di FullCalendar da zero (697 righe), duplicando funzionalità già presenti nei widget Filament del modulo <nome progetto>.
-=======
-Il file `calendar.blade.php` del tema One conteneva un'implementazione completa di FullCalendar da zero (697 righe), duplicando funzionalità già presenti nei widget Filament del modulo SaluteOra.
->>>>>>> 2099645a (.)
-=======
-Il file `calendar.blade.php` del tema One conteneva un'implementazione completa di FullCalendar da zero (697 righe), duplicando funzionalità già presenti nei widget Filament del modulo <nome progetto>.
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 
 ### Problemi Specifici
 1. **Duplicazione Codice**: Ricreava tutto il calendario invece di usare widget esistenti
@@ -89,19 +77,7 @@ Theme Component → Widget Filament → Trait Config → Sicurezza Centralizzata
 ### Pattern Corretto
 ```php
 // ✅ CORRETTO
-<<<<<<< HEAD
 @livewire(\Modules\<nome progetto>\Filament\Widgets\PatientCalendarWidget::class)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-@livewire(\Modules\<nome progetto>\Filament\Widgets\PatientCalendarWidget::class)
-=======
-@livewire(\Modules\SaluteOra\Filament\Widgets\PatientCalendarWidget::class)
->>>>>>> 2099645a (.)
-=======
-@livewire(\Modules\<nome progetto>\Filament\Widgets\PatientCalendarWidget::class)
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 
 // ❌ SBAGLIATO
 <div id="calendar"></div>
@@ -112,19 +88,7 @@ Theme Component → Widget Filament → Trait Config → Sicurezza Centralizzata
 
 1. `laravel/Themes/One/resources/views/components/blocks/calendar.blade.php` - Completamente riscritto
 2. `laravel/Themes/One/README.md` - Documentazione aggiornata
-<<<<<<< HEAD
 3. `laravel/Modules/<nome progetto>/docs/theme-calendar-integration.md` - Nuova documentazione
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-3. `laravel/Modules/<nome progetto>/docs/theme-calendar-integration.md` - Nuova documentazione
-=======
-3. `laravel/Modules/SaluteOra/docs/theme-calendar-integration.md` - Nuova documentazione
->>>>>>> 2099645a (.)
-=======
-3. `laravel/Modules/<nome progetto>/docs/theme-calendar-integration.md` - Nuova documentazione
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 4. `.cursor/rules/theme-widget-integration.mdc` - Nuove regole
 5. `.windsurf/rules/theme-widget-integration.mdc` - Nuove regole
 
