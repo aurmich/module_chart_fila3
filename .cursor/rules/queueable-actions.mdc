@@ -1,13 +1,8 @@
 ---
-<<<<<<< HEAD
 description:
 globs:
 alwaysApply: false
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 74316a37 (✨ (docs): add new documentation for FullCalendar widget implementation and best practices to improve clarity and maintainability)
 # Regole per Queueable Actions (Spatie)
 
 ## Regola Fondamentale
@@ -44,21 +39,12 @@ Repository: https://github.com/spatie/laravel-queueable-action
 ```php
 <?php
 
-<<<<<<< HEAD
-namespace Modules\<nome progetto>\Actions;
-
-use Spatie\QueueableAction\QueueableAction;
-use Modules\<nome progetto>\Models\Appointment;
-use Modules\<nome progetto>\Models\Patient;
-use Modules\<nome progetto>\Models\Doctor;
-=======
 namespace Modules\SaluteOra\Actions;
 
 use Spatie\QueueableAction\QueueableAction;
 use Modules\SaluteOra\Models\Appointment;
 use Modules\SaluteOra\Models\Patient;
 use Modules\SaluteOra\Models\Doctor;
->>>>>>> 74316a37 (✨ (docs): add new documentation for FullCalendar widget implementation and best practices to improve clarity and maintainability)
 
 class CreateAppointmentAction
 {
@@ -92,21 +78,12 @@ class CreateAppointmentAction
 ```php
 <?php
 
-<<<<<<< HEAD
-namespace Modules\<nome progetto>\Actions;
-
-use Spatie\QueueableAction\QueueableAction;
-use Illuminate\Contracts\Queue\ShouldQueue;
-use Modules\<nome progetto>\Models\Appointment;
-use Modules\<nome progetto>\Notifications\AppointmentReminderNotification;
-=======
 namespace Modules\SaluteOra\Actions;
 
 use Spatie\QueueableAction\QueueableAction;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Modules\SaluteOra\Models\Appointment;
 use Modules\SaluteOra\Notifications\AppointmentReminderNotification;
->>>>>>> 74316a37 (✨ (docs): add new documentation for FullCalendar widget implementation and best practices to improve clarity and maintainability)
 
 class SendAppointmentReminderAction implements ShouldQueue
 {
@@ -117,11 +94,7 @@ class SendAppointmentReminderAction implements ShouldQueue
         $appointment->patient->notify(
             new AppointmentReminderNotification($appointment)
         );
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 74316a37 (✨ (docs): add new documentation for FullCalendar widget implementation and best practices to improve clarity and maintainability)
         $appointment->update([
             'reminder_sent_at' => now(),
         ]);
@@ -133,17 +106,10 @@ class SendAppointmentReminderAction implements ShouldQueue
 ```php
 <?php
 
-<<<<<<< HEAD
-namespace Modules\<nome progetto>\Http\Controllers;
-
-use Modules\<nome progetto>\Actions\CreateAppointmentAction;
-use Modules\<nome progetto>\Actions\SendAppointmentReminderAction;
-=======
 namespace Modules\SaluteOra\Http\Controllers;
 
 use Modules\SaluteOra\Actions\CreateAppointmentAction;
 use Modules\SaluteOra\Actions\SendAppointmentReminderAction;
->>>>>>> 74316a37 (✨ (docs): add new documentation for FullCalendar widget implementation and best practices to improve clarity and maintainability)
 
 class AppointmentController extends Controller
 {
@@ -172,17 +138,10 @@ class AppointmentController extends Controller
 ```php
 <?php
 
-<<<<<<< HEAD
-namespace Modules\<nome progetto>\Filament\Widgets;
-
-use Modules\<nome progetto>\Actions\GetAppointmentsForCalendarAction;
-use Modules\<nome progetto>\Actions\UpdateAppointmentAction;
-=======
 namespace Modules\SaluteOra\Filament\Widgets;
 
 use Modules\SaluteOra\Actions\GetAppointmentsForCalendarAction;
 use Modules\SaluteOra\Actions\UpdateAppointmentAction;
->>>>>>> 74316a37 (✨ (docs): add new documentation for FullCalendar widget implementation and best practices to improve clarity and maintainability)
 
 class DoctorCalendarWidget extends XotBaseFullCalendarWidget
 {
@@ -216,15 +175,9 @@ class DoctorCalendarWidget extends XotBaseFullCalendarWidget
 namespace Tests\Unit\Actions;
 
 use Tests\TestCase;
-<<<<<<< HEAD
-use Modules\<nome progetto>\Actions\CreateAppointmentAction;
-use Modules\<nome progetto>\Models\Patient;
-use Modules\<nome progetto>\Models\Doctor;
-=======
 use Modules\SaluteOra\Actions\CreateAppointmentAction;
 use Modules\SaluteOra\Models\Patient;
 use Modules\SaluteOra\Models\Doctor;
->>>>>>> 74316a37 (✨ (docs): add new documentation for FullCalendar widget implementation and best practices to improve clarity and maintainability)
 
 class CreateAppointmentActionTest extends TestCase
 {
@@ -232,11 +185,7 @@ class CreateAppointmentActionTest extends TestCase
     {
         $patient = Patient::factory()->create();
         $doctor = Doctor::factory()->create();
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 74316a37 (✨ (docs): add new documentation for FullCalendar widget implementation and best practices to improve clarity and maintainability)
         $appointment = CreateAppointmentAction::make()->execute(
             patient: $patient,
             doctor: $doctor,
@@ -257,11 +206,7 @@ class CreateAppointmentActionTest extends TestCase
 
 ## Struttura Directory
 ```
-<<<<<<< HEAD
-Modules/<nome progetto>/
-=======
 Modules/SaluteOra/
->>>>>>> 74316a37 (✨ (docs): add new documentation for FullCalendar widget implementation and best practices to improve clarity and maintainability)
 ├── Actions/
 │   ├── Appointments/
 │   │   ├── CreateAppointmentAction.php
@@ -316,11 +261,7 @@ class AppointmentAction
 class CreateAppointmentAction
 {
     use QueueableAction;
-<<<<<<< HEAD
-
-=======
     
->>>>>>> 74316a37 (✨ (docs): add new documentation for FullCalendar widget implementation and best practices to improve clarity and maintainability)
     public function execute(Patient $patient, Doctor $doctor, ...): Appointment
     {
         // Logica specifica e testabile
@@ -348,11 +289,7 @@ class CreateAppointmentAction
         private AppointmentRepository $repository,
         private NotificationService $notifications
     ) {}
-<<<<<<< HEAD
-
-=======
     
->>>>>>> 74316a37 (✨ (docs): add new documentation for FullCalendar widget implementation and best practices to improve clarity and maintainability)
     public function execute(...): Appointment
     {
         $appointment = $this->repository->create(...);
@@ -367,11 +304,7 @@ class CreateAppointmentAction
 class CreateAppointmentAction
 {
     use QueueableAction;
-<<<<<<< HEAD
-
-=======
     
->>>>>>> 74316a37 (✨ (docs): add new documentation for FullCalendar widget implementation and best practices to improve clarity and maintainability)
     public function execute(array $data): Appointment
     {
         $validated = validator($data, [
@@ -380,11 +313,7 @@ class CreateAppointmentAction
             'start_time' => 'required|date|after:now',
             'end_time' => 'required|date|after:start_time',
         ])->validate();
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 74316a37 (✨ (docs): add new documentation for FullCalendar widget implementation and best practices to improve clarity and maintainability)
         return Appointment::create($validated);
     }
 }
@@ -397,11 +326,7 @@ class CreateAppointmentAction
 class GetAppointmentsForCalendarAction
 {
     use QueueableAction;
-<<<<<<< HEAD
-
-=======
     
->>>>>>> 74316a37 (✨ (docs): add new documentation for FullCalendar widget implementation and best practices to improve clarity and maintainability)
     public function execute(string $startDate, string $endDate, int $doctorId): array
     {
         return cache()->remember(
@@ -418,17 +343,6 @@ class GetAppointmentsForCalendarAction
 class CreateAppointmentAction
 {
     use QueueableAction;
-<<<<<<< HEAD
-
-    public function execute(...): Appointment
-    {
-        Log::info('Creating appointment', ['patient_id' => $patient->id]);
-
-        $appointment = Appointment::create([...]);
-
-        Log::info('Appointment created', ['appointment_id' => $appointment->id]);
-
-=======
     
     public function execute(...): Appointment
     {
@@ -438,28 +352,9 @@ class CreateAppointmentAction
         
         Log::info('Appointment created', ['appointment_id' => $appointment->id]);
         
->>>>>>> 74316a37 (✨ (docs): add new documentation for FullCalendar widget implementation and best practices to improve clarity and maintainability)
         return $appointment;
     }
 }
 ```
 
-<<<<<<< HEAD
-## Questa regola è FONDAMENTALE e deve essere sempre seguita in tutto il progetto <nome progetto>.
-=======
->>>>>>> 2099645a (.)
-=======
-<<<<<<< HEAD
-trigger: manual
-description:
-globs:
-=======
-description:
-globs:
-alwaysApply: false
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
----
->>>>>>> 8081e528 (fix case cursor and windsurf)
-=======
 ## Questa regola è FONDAMENTALE e deve essere sempre seguita in tutto il progetto SaluteOra.
->>>>>>> 74316a37 (✨ (docs): add new documentation for FullCalendar widget implementation and best practices to improve clarity and maintainability)
