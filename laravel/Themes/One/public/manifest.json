@@ -1,10 +1,17 @@
 {
   "resources/css/app.css": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "file": "assets/app-CizGm5hC.css",
 =======
     "file": "assets/app-Dph1A97d.css",
 >>>>>>> 8acca8e8 (- continuo style pagina di registrazione;)
+=======
+    "file": "assets/app-Dph1A97d.css",
+=======
+    "file": "assets/app-CEDafcW-.css",
+>>>>>>> 7f5c184c (feat(gdpr): add ConsentType enum to define available consent types and their labels for better consent management)
+>>>>>>> adac82bd (rebase)
     "src": "resources/css/app.css",
     "isEntry": true
   },
