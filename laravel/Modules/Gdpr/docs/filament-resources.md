@@ -46,30 +46,7 @@ Gestisce le richieste di accesso, modifica o cancellazione dei dati personali.
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Documentazione Generale GDPR](./readme.md)
 - [Documentazione Generale GDPR](./README.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione Generale GDPR](./readme.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [Documentazione Generale GDPR](./readme.md)
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-- [Documentazione Generale GDPR](./README.md)
-=======
->>>>>>> 54f4fa16 (.)
-=======
-- [Documentazione Generale GDPR](./README.md)
->>>>>>> 9df8f556 (fix .md)
-=======
->>>>>>> 15cb84fb (fix collisions)
-=======
-- [Documentazione Generale GDPR](./README.md)
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 - [Configurazione del Modulo](./configuration.md)
 - [Gestione dei Consensi](./consent-management.md)

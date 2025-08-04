@@ -32,34 +32,18 @@ class RecentSubmissionsWidget extends BaseWidget
             ->query($this->getTableQuery())
             ->columns([
                 Tables\Columns\TextColumn::make('form.name')
-<<<<<<< HEAD
-=======
-                    ->label('Form')
->>>>>>> aurmich/dev
                     ->searchable()
                     ->sortable(),
 
                 Tables\Columns\TextColumn::make('submitted_at')
-<<<<<<< HEAD
-=======
-                    ->label('Data Submission')
->>>>>>> aurmich/dev
                     ->dateTime()
                     ->sortable(),
 
                 Tables\Columns\TextColumn::make('data_count')
-<<<<<<< HEAD
-=======
-                    ->label('Campi Compilati')
->>>>>>> aurmich/dev
                     ->getStateUsing(fn (FormSubmission $record): int => count($record->data))
                     ->sortable(),
 
                 Tables\Columns\BadgeColumn::make('status')
-<<<<<<< HEAD
-=======
-                    ->label('Stato')
->>>>>>> aurmich/dev
                     ->colors([
                         'success' => 'completed',
                         'warning' => 'pending',

@@ -2,30 +2,10 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 namespace Modules\Geo\Filament\Widgets;
 
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Modules\Geo\Filament\Forms\LocationForm;
-<<<<<<< HEAD
-=======
-=======
-namespace Modules\Geo\App\Filament\Widgets;
-
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
-use Modules\Geo\App\Filament\Forms\LocationForm;
->>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
-=======
-namespace Modules\Geo\Filament\Widgets;
-
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
-use Modules\Geo\Filament\Forms\LocationForm;
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
 
 /**
  * Widget per la selezione della località.
@@ -70,42 +50,14 @@ class LocationWidget extends XotBaseWidget
     /**
      * Form per la selezione della località.
      */
-<<<<<<< HEAD
     private \Modules\Geo\Filament\Forms\LocationForm $locationForm;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    private \Modules\Geo\Filament\Forms\LocationForm $locationForm;
-=======
-    private LocationForm $locationForm;
->>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
-=======
-    private \Modules\Geo\Filament\Forms\LocationForm $locationForm;
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
 
     /**
      * Costruttore.
      */
     public function __construct()
     {
-<<<<<<< HEAD
         $this->locationForm = new \Modules\Geo\Filament\Forms\LocationForm();
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
-        $this->locationForm = new \Modules\Geo\Filament\Forms\LocationForm();
-=======
-        parent::__construct();
-<<<<<<< HEAD
-        $this->locationForm = new LocationForm();
->>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
-=======
-        $this->locationForm = new \Modules\Geo\Filament\Forms\LocationForm();
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
     }
 
     /**
@@ -121,19 +73,7 @@ class LocationWidget extends XotBaseWidget
     /**
      * Ottiene lo schema del form.
      * 
-<<<<<<< HEAD
      * @return array<int, \Filament\Forms\Components\Component>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @return array<int, \Filament\Forms\Components\Component>
-=======
-     * @return array<string, mixed>
->>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
-=======
-     * @return array<int, \Filament\Forms\Components\Component>
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
->>>>>>> aurmich/dev
      */
     public function getFormSchema(): array
     {
@@ -151,27 +91,11 @@ class LocationWidget extends XotBaseWidget
 
         $this->dispatch('location-selected', $data);
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
->>>>>>> aurmich/dev
         // Utilizzo metodo Livewire per notifiche
         $this->dispatch('notify', [
             'type' => 'success',
             'message' => __('geo::widgets.location.messages.success')
         ]);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-        $this->notify('success', __('geo::widgets.location.messages.success'));
->>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
-=======
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
->>>>>>> aurmich/dev
     }
 
     /**

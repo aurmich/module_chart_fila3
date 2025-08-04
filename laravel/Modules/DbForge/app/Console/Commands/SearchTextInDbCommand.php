@@ -32,15 +32,7 @@ class SearchTextInDbCommand extends Command
         // Get tables either from specific option or all tables
         $tables = empty($specificTables)
             ? collect(DB::select('SHOW TABLES'))
-<<<<<<< HEAD
             : collect((array) $specificTables);
-=======
-<<<<<<< HEAD
-            : collect((array) $specificTables);
-=======
-            : collect($specificTables);
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
->>>>>>> aurmich/dev
 
         foreach ($tables as $table) {
             // Get table name with proper type checking
@@ -106,26 +98,12 @@ class SearchTextInDbCommand extends Command
                                 ])
                                 ->toArray()
                         );
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-                        $this->newLine();
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
->>>>>>> aurmich/dev
                     }
                 }
             }
         }
 
-<<<<<<< HEAD
         $this->info('Search completed successfully');
-=======
-<<<<<<< HEAD
-        $this->info('Search completed successfully');
-=======
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
->>>>>>> aurmich/dev
         return Command::SUCCESS;
     }
 }

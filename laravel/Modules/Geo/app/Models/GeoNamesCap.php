@@ -33,15 +33,7 @@ class GeoNamesCap extends Model
      */
     /*
     function __construct(){
-<<<<<<< HEAD
-<<<<<<< HEAD
         $this->setConnection('user');
-=======
-        $this->setConnection('liveuser_general');
->>>>>>> aurmich/dev
-=======
-        $this->setConnection('user');
->>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
         parent::__construct();
     }//end construct
     */

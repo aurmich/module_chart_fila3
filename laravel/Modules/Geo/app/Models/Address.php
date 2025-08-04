@@ -16,19 +16,7 @@ use Modules\Geo\Enums\AddressTypeEnum;
  * Class Address
  * 
  * Implementazione di Schema.org PostalAddress
-<<<<<<< HEAD
  *
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
- *
-=======
- * 
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
-=======
- *
->>>>>>> f3e4ec66 (.)
->>>>>>> aurmich/dev
  * @property int $id
  * @property string|null $model_type
  * @property int|null $model_id
@@ -53,36 +41,15 @@ use Modules\Geo\Enums\AddressTypeEnum;
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * // implements HasGeolocation
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f3e4ec66 (.)
->>>>>>> aurmich/dev
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_by
  * @property-read \Illuminate\Database\Eloquent\Model|\Eloquent|null $addressable
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
  * @property-read \Modules\User\Models\Profile|null $creator
  * @property-read string $full_address
  * @property-read string $street_address
  * @property-read \Illuminate\Database\Eloquent\Model|\Eloquent|null $model
  * @property-read \Modules\User\Models\Profile|null $updater
-<<<<<<< HEAD
-=======
-=======
- * @property-read \Modules\SaluteOra\Models\Profile|null $creator
- * @property-read string $full_address
- * @property-read string $street_address
- * @property-read \Illuminate\Database\Eloquent\Model|\Eloquent|null $model
- * @property-read \Modules\SaluteOra\Models\Profile|null $updater
->>>>>>> f3e4ec66 (.)
->>>>>>> aurmich/dev
  * @method static \Modules\Geo\Database\Factories\AddressFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Address nearby(float $latitude, float $longitude, float $radiusKm = '10')
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Address newModelQuery()
@@ -117,39 +84,12 @@ use Modules\Geo\Enums\AddressTypeEnum;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Address whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Address whereUpdatedBy($value)
  * @mixin \Eloquent
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
  */
 class Address extends BaseModel 
 {
         
     /** @var list<string> */
    protected $fillable = [
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> f3e4ec66 (.)
- */
-class Address extends BaseModel 
-{
-    use HasFactory;
-        
-<<<<<<< HEAD
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<string>
-     */
-    protected $fillable = [
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
-=======
-    /** @var list<string> */
-   protected $fillable = [
->>>>>>> 345f8677 (phpstan)
->>>>>>> aurmich/dev
         'model_type',
         'model_id',
         'name',
@@ -172,10 +112,6 @@ class Address extends BaseModel
     ];
     
     /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
      * Get the attributes that should be cast.
      *
      * @return array<string, string>
@@ -191,35 +127,6 @@ class Address extends BaseModel
         ];
     }
     
-<<<<<<< HEAD
-=======
-=======
-     * The attributes that should be cast.
-     *
-     * @var array<string, string>
-     */
-    protected $casts = [
-        'latitude' => 'float',
-        'longitude' => 'float',
-        'is_primary' => 'boolean',
-        'extra_data' => 'array',
-        'type' => AddressTypeEnum::class,
-    ];
-    
-<<<<<<< HEAD
-    /**
-     * Create a new factory instance for the model.
-     *
-     * @return \Illuminate\Database\Eloquent\Factories\Factory<static>
-     */
-    protected static function newFactory()
-    {
-        return AddressFactory::new();
-    }
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
-=======
->>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
->>>>>>> aurmich/dev
     
     /**
      * Get the parent model.
@@ -241,47 +148,17 @@ class Address extends BaseModel
         return $this->morphTo('model');
     }
     
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     /*
      * Get the city relationship.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      
-<<<<<<< HEAD
-=======
-=======
-    /**
-     * Get the city relationship.
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
-=======
-    /*
-     * Get the city relationship.
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
->>>>>>> aurmich/dev
     public function city(): BelongsTo
     {
         return $this->belongsTo(City::class, 'locality', 'name');
     }
-<<<<<<< HEAD
     */
     /*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    */
-    /*
-<<<<<<< HEAD
->>>>>>> aurmich/dev
      * Get the province relationship.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
@@ -383,119 +260,6 @@ class Address extends BaseModel
             $this->country
         ]);
 
-<<<<<<< HEAD
-=======
-=======
-    
-=======
-    */
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
-    /**
-=======
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
-     * Get the province relationship.
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     
-    public function provincia(): BelongsTo
-    {
-        return $this->belongsTo(Provincia::class, 'administrative_area_level_2', 'name');
-    }
-    */
-    /*
-     * Get the region relationship.
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     
-    public function regione(): BelongsTo
-    {
-        return $this->belongsTo(Regione::class, 'administrative_area_level_1', 'name');
-    }
-     */
-    public function getRegione():?array{
-        /** @phpstan-ignore-next-line */
-        $res= Comune::select('regione')
-        ->distinct()
-        ->orderBy('regione->nome')
-        ->where('regione->codice', $this->administrative_area_level_1)
-        ->get()
-        /** @phpstan-ignore-next-line */
-        ->map(function($item){
-            /** @phpstan-ignore-next-line */
-            return ['codice'=>$item->regione['codice'],'nome'=>$item->regione['nome']];
-        })
-        ;
-        
-        
-        return $res->first();
-    }
-
-    public function getProvincia():?array{
-        /** @phpstan-ignore-next-line */
-        $res= Comune::select('provincia')
-        ->distinct()
-        ->orderBy('provincia->nome')
-        ->where('provincia->codice', $this->administrative_area_level_2)
-        ->get()
-        /** @phpstan-ignore-next-line */
-        ->map(function($item){
-            /** @phpstan-ignore-next-line */
-            return [
-                /** @phpstan-ignore-next-line */
-                'codice'=>$item->provincia['codice'],
-                /** @phpstan-ignore-next-line */
-                'nome'=>$item->provincia['nome']
-            ];
-        })
-        ;
-        return $res->first();
-    }
-
-
-    public function getLocality():?array{
-        /** @phpstan-ignore-next-line */
-        $res= Comune::where('codice', $this->locality)
-        ->distinct()
-        ->first()
-        ?->toArray()
-        ;
-        return $res;
-    }
-    
-    /**
-     * Getter per l'indirizzo completo in formato italiano
-     *
-     * @return string
-     */
-    public function getFullAddressAttribute(): string
-    {
-        
-        $parts = array_filter([
-            $this->route . ($this->street_number ? ' ' . $this->street_number : ''),
-            $this->locality,
-            $this->administrative_area_level_3, // Provincia
-            $this->administrative_area_level_2, // Regione
-            $this->postal_code,
-            $this->country
-        ]);
-
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
-        return implode(', ', $parts);
-    }
-
-
-    public function getFullAddress(): ?string
-    {
-        $parts = array_filter([
-            $this->route . ($this->street_number ? ' ' . $this->street_number : ''),
-            $this->locality,
-            $this->administrative_area_level_3, // Provincia
-            $this->administrative_area_level_2, // Regione
-            $this->postal_code,
-            $this->country
-        ]);
-
->>>>>>> aurmich/dev
         return implode(', ', $parts);
     }
     
@@ -514,30 +278,10 @@ class Address extends BaseModel
      *
      * @return string
      */
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     public function getFormattedAddressAttribute(?string $value): ?string
     {
         if ($value) {
             return $value;
-<<<<<<< HEAD
-=======
-=======
-    public function getFormattedAddressAttribute(): ?string
-    {
-        if ($this->formatted_address) {
-            return $this->formatted_address;
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
-=======
-    public function getFormattedAddressAttribute(?string $value): ?string
-    {
-        if ($value) {
-            return $value;
->>>>>>> a872e835 (✨ (AddressResource.php): replace locality text input with a searchable select)
->>>>>>> aurmich/dev
         }
         
         $parts = [];
@@ -635,50 +379,7 @@ class Address extends BaseModel
         ];
     }
     
-<<<<<<< HEAD
    
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-   
-=======
-    /**
-     * Metodo statico per creare da risposta Google Maps
-     *
-     * @param array<string, mixed> $googleData
-     * @param string|null $name
-     * @param string|null $description
-     * @return static
-     */
-    public static function createFromGoogleMaps(array $googleData, ?string $name = null, ?string $description = null): self
-    {
-        $components = collect($googleData['address_components'] ?? [])
-            ->keyBy(fn($component) => $component['types'][0] ?? 'unknown');
-
-        return self::create([
-            'name' => $name,
-            'description' => $description,
-            'street_number' => $components->get('street_number')['long_name'] ?? null,
-            'route' => $components->get('route')['long_name'] ?? null,
-            'locality' => $components->get('locality')['long_name'] ?? 
-                        $components->get('administrative_area_level_3')['long_name'] ?? null,
-            'administrative_area_level_3' => $components->get('administrative_area_level_2')['long_name'] ?? null, // Provincia
-            'administrative_area_level_2' => $components->get('administrative_area_level_1')['long_name'] ?? null, // Regione
-            'administrative_area_level_1' => $components->get('country')['long_name'] ?? null,
-            'country' => $components->get('country')['short_name'] ?? null,
-            'postal_code' => $components->get('postal_code')['long_name'] ?? null,
-            'formatted_address' => $googleData['formatted_address'] ?? null,
-            'place_id' => $googleData['place_id'] ?? null,
-            'latitude' => $googleData['geometry']['location']['lat'] ?? null,
-            'longitude' => $googleData['geometry']['location']['lng'] ?? null,
-        ]);
-    }
-    
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
-=======
-   
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
->>>>>>> aurmich/dev
     /**
      * Scope per cercare indirizzi nelle vicinanze
      *
@@ -720,16 +421,4 @@ class Address extends BaseModel
     {
         return $query->where('type', $type instanceof AddressTypeEnum ? $type->value : $type);
     }
-<<<<<<< HEAD
 }
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
-=======
-}
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
