@@ -4,6 +4,9 @@ globs:
 alwaysApply: false
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d55a72aa (.)
 # Regole Filament: Campi Condizionali UX Intelligente
 
 ## Pattern: Repeater con Campi Condizionali e Esclusività
@@ -154,5 +157,8 @@ use Filament\Forms\Components\Component;
 
 ---
 *Pattern UX Avanzato - Dicembre 2024*
+<<<<<<< HEAD
 =======
 >>>>>>> e79b3c05 (fix tenant)
+=======
+>>>>>>> d55a72aa (.)

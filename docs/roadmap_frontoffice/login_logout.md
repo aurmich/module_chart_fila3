@@ -49,7 +49,10 @@ class LoginController extends Controller
 
 ### Step 2: Sicurezza e Rate Limiting
 ```yaml
+<<<<<<< HEAD
 
+=======
+>>>>>>> d55a72aa (.)
 # Security Measures
 Rate Limiting: 5 tentativi per IP ogni 15 minuti
 Session Security: Regenerate session ID dopo login
@@ -205,7 +208,10 @@ const LoginForm = () => {
 
 ### Authentication Security
 ```yaml
+<<<<<<< HEAD
 
+=======
+>>>>>>> d55a72aa (.)
 # Security Headers
 Content-Security-Policy: Strict policy per XSS prevention
 X-Frame-Options: DENY per clickjacking protection
@@ -249,7 +255,10 @@ class LoginAuditLogger
 
 ### Session Storage Optimization
 ```yaml
+<<<<<<< HEAD
 
+=======
+>>>>>>> d55a72aa (.)
 # Session Configuration
 Driver: Redis per performance e scalabilità
 Lifetime: 120 minuti default
@@ -271,7 +280,10 @@ CREATE INDEX idx_login_attempts_email_timestamp ON login_attempts(email, created
 
 ### Login Metrics
 ```yaml
+<<<<<<< HEAD
 
+=======
+>>>>>>> d55a72aa (.)
 # Performance KPIs (Current)
 Login Success Rate: 96.8%
 Average Login Time: 1.2 secondi
@@ -296,7 +308,10 @@ Multi-device Users: 45.7% utenti accedono da più dispositivi
 
 ### User-Friendly Messages
 ```yaml
+<<<<<<< HEAD
 
+=======
+>>>>>>> d55a72aa (.)
 # Error Messages Localized
 Credenziali Invalide: "Email o password non corretti"
 Account Bloccato: "Account temporaneamente bloccato. Contatta il supporto"
@@ -314,7 +329,10 @@ Manutenzione: "Sistema in manutenzione. Riprova più tardi"
 
 ### Third-Party Authentication (Future)
 ```yaml
+<<<<<<< HEAD
 
+=======
+>>>>>>> d55a72aa (.)
 # Planned Integrations
 OAuth2 Providers: Google, Facebook, Apple
 SAML: Enterprise SSO per grandi studi
@@ -378,3 +396,7 @@ class LoginTest extends TestCase
 - [Recupero Password](./recupero_password.md)
 - [Verifica Email](./verifica_email.md)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Dicembre 2024*
+>>>>>>> d55a72aa (.)

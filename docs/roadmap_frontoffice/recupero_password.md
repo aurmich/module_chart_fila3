@@ -11,7 +11,10 @@ Il sistema di recupero password di SaluteOra garantisce sicurezza e usabilità, 
 
 ### Step 1: Richiesta Reset Password
 ```yaml
+<<<<<<< HEAD
 
+=======
+>>>>>>> d55a72aa (.)
 # User Experience Flow
 1. Utente clicca "Password dimenticata?" nel form di login
 2. Viene reindirizzato a pagina dedicata reset password
@@ -42,7 +45,10 @@ public function sendPasswordResetNotification($token)
 
 ### Step 3: Email di Reset
 ```yaml
+<<<<<<< HEAD
 
+=======
+>>>>>>> d55a72aa (.)
 # Contenuto Email Template
 Subject: "Reset Password - SaluteOra"
 Content: 
@@ -91,7 +97,10 @@ public function resetPassword(Request $request)
 
 ### Prevenzione Abusi
 ```yaml
+<<<<<<< HEAD
 
+=======
+>>>>>>> d55a72aa (.)
 # Rate Limiting Rules
 Max Requests: 3 per email ogni 15 minuti
 IP Blocking: 10 richieste per IP ogni ora
@@ -118,7 +127,10 @@ Token Uniqueness: Ogni token utilizzabile una sola volta
 
 ### KPI Attuali
 ```yaml
+<<<<<<< HEAD
 
+=======
+>>>>>>> d55a72aa (.)
 # Performance Metrics
 Success Rate: 94.7% (reset completati vs richiesti)
 Email Delivery: 99.2% (SES reliability)
@@ -205,3 +217,7 @@ DO DELETE FROM password_resets
 - [Login e Logout](./login_logout.md)
 - [Verifica Email](./verifica_email.md)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Dicembre 2024*
+>>>>>>> d55a72aa (.)

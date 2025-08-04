@@ -26,9 +26,13 @@ return [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'Inserisci il nome completo',
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+            'help' => 'Inserisci il nome completo',
+>>>>>>> d55a72aa (.)
         ],
         'last_name' => [
             'label' => 'Cognome',
@@ -54,6 +58,7 @@ return [
             'label' => 'Telefono',
             'placeholder' => 'Inserisci il numero di telefono',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'help' => 'Numero di telefono per contatti',
         ],
         'email' => [
@@ -66,6 +71,14 @@ return [
             'label' => 'Email',
             'placeholder' => 'Inserisci l\'indirizzo email',
 >>>>>>> 54f4fa16 (.)
+=======
+            'help' => 'Numero di telefono per contatti',
+        ],
+        'email' => [
+            'label' => 'Email',
+            'placeholder' => 'Inserisci l\'email',
+            'help' => 'Indirizzo email valido',
+>>>>>>> d55a72aa (.)
         ],
         'health_card' => [
             'label' => 'Tessera Sanitaria',
@@ -85,6 +98,7 @@ return [
         ],
         'fiscal_code' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'label' => 'Codice fiscale',
             'placeholder' => 'Inserisci il codice fiscale',
             'help' => 'Codice fiscale come da tessera sanitaria',
@@ -100,6 +114,16 @@ return [
         'birth_date' => [
             'label' => 'Data di Nascita',
 >>>>>>> 54f4fa16 (.)
+=======
+            'label' => 'Codice fiscale',
+            'placeholder' => 'Inserisci il codice fiscale',
+            'help' => 'Codice fiscale come da tessera sanitaria',
+        ],
+        'birth_date' => [
+            'label' => 'Data di nascita',
+            'placeholder' => 'Seleziona la data di nascita',
+            'help' => 'Inserisci la data di nascita nel formato gg/mm/aaaa',
+>>>>>>> d55a72aa (.)
         ],
         'last_dental_visit' => [
             'label' => 'Ultima Visita Dentistica',
@@ -118,13 +142,19 @@ return [
             'tooltip' => 'Vuoi ricevere aggiornamenti via email?',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d55a72aa (.)
         'gender' => [
             'label' => 'Sesso',
             'placeholder' => 'Seleziona il sesso',
             'help' => 'Seleziona il sesso anagrafico',
         ],
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> d55a72aa (.)
     ],
     'buttons' => [
         'submit' => [

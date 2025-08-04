@@ -66,6 +66,7 @@ return array (
         'placeholder' => 'Inserisci il nome',
         'help' => 'Inserisci il nome completo',
       ],
+<<<<<<< HEAD
     ),
     'current_step' =>
     array (
@@ -249,6 +250,8 @@ return array (
         'placeholder' => 'Inserisci il cognome',
         'help' => 'Inserisci il cognome completo',
       ],
+=======
+>>>>>>> d55a72aa (.)
     ),
     'current_step' =>
     array (

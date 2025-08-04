@@ -96,7 +96,10 @@ tests/
 ### Comandi Base
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> d55a72aa (.)
 # Esegui tutti i test
 php artisan test
 
@@ -113,7 +116,10 @@ php artisan test --coverage-html=coverage
 ### Opzioni Avanzate
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> d55a72aa (.)
 # Esegui i test in parallelo
 php artisan test --parallel
 

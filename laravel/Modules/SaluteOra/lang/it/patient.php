@@ -685,6 +685,7 @@ return array (
     array (
       'label' => 'Nome',
       'placeholder' => 'Inserisci il nome',
+      'help' => 'Inserisci il nome completo',
       'helper_text' => 'Nome del paziente',
 <<<<<<< HEAD
       'description' => 'Il tuo nome anagrafico',
@@ -707,6 +708,7 @@ return array (
     'fiscal_code' => 
     array (
       'label' => 'Codice fiscale',
+<<<<<<< HEAD
       'placeholder' => 'Inserisci il codice fiscale',
       'help' => 'Codice fiscale come da tessera sanitaria',
       'description' => 'fiscal_code',
@@ -839,22 +841,24 @@ return array (
       'description' => 'Comune di residenza',
 =======
       'label' => 'Data di Nascita',
+=======
+      'placeholder' => 'Inserisci il codice fiscale',
+      'help' => 'Codice fiscale come da tessera sanitaria',
+    ),
+    'birth_date' => 
+    array (
+      'label' => 'Data di nascita',
+>>>>>>> d55a72aa (.)
       'placeholder' => 'Seleziona la data di nascita',
-      'helper_text' => 'Data di nascita del paziente',
+      'help' => 'Inserisci la data di nascita nel formato gg/mm/aaaa',
       'description' => 'Data di nascita come indicata sul documento d\'identità',
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     ),
     'gender' => 
     array (
-      'label' => 'Genere',
-      'placeholder' => 'Seleziona il genere',
-      'helper_text' => 'Genere del paziente',
-      'options' => 
-      array (
-        'M' => 'Maschio',
-        'F' => 'Femmina',
-        'O' => 'Altro',
-      ),
+      'label' => 'Sesso',
+      'placeholder' => 'Seleziona il sesso',
+      'help' => 'Seleziona il sesso anagrafico',
     ),
     'is_pregnant' => 
     array (
@@ -865,19 +869,22 @@ return array (
     'email' => 
     array (
       'label' => 'Email',
+<<<<<<< HEAD
       'placeholder' => 'Inserisci l\'indirizzo email',
       'helper_text' => 'Indirizzo email valido',
       'description' => 'Email del paziente',
       'tooltip' => 'Verrà utilizzata per le comunicazioni importanti',
 >>>>>>> 54f4fa16 (.)
+=======
+      'placeholder' => 'Inserisci l\'email',
+      'help' => 'Indirizzo email valido',
+>>>>>>> d55a72aa (.)
     ),
     'phone' => 
     array (
       'label' => 'Telefono',
       'placeholder' => 'Inserisci il numero di telefono',
-      'helper_text' => 'Numero di telefono principale',
-      'description' => 'Numero di telefono del paziente',
-      'tooltip' => 'Preferibilmente un numero mobile',
+      'help' => 'Numero di telefono per contatti',
     ),
     'address' => 
     array (

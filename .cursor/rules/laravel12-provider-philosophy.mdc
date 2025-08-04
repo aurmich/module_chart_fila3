@@ -4,6 +4,9 @@ globs:
 alwaysApply: false
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d55a72aa (.)
 # Regole Provider Laravel 12
 
 ## Principio Fondamentale
@@ -250,5 +253,8 @@ class SaluteMoServiceProvider extends ServiceProvider
 
 ---
 **Questa regola è vincolante e va applicata in tutti i moduli che usano provider.**
+<<<<<<< HEAD
 =======
 >>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
+=======
+>>>>>>> d55a72aa (.)
