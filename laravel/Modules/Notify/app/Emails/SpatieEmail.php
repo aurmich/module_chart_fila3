@@ -157,6 +157,7 @@ class SpatieEmail extends TemplateMailable
         ]);
         
         $data=$record->toArray();
+        $this->data['logo_header']=MetatagData::make()->getBrandLogo();
         $this->data=array_merge($this->data,$data);
         $this->setAdditionalData($this->data);
         
