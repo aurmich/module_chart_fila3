@@ -168,6 +168,7 @@ use Illuminate\Support\Facades\Schema;
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 abstract class BaseUser extends Authenticatable implements HasName, HasTenants, UserContract,HasMedia
 {
 
@@ -187,7 +188,12 @@ abstract class BaseUser extends Authenticatable
      */
     protected $guard_name = 'web'; implements HasName, HasTenants, UserContract
 >>>>>>> bead9c28 (fix case)
+=======
+abstract class BaseUser extends Authenticatable implements HasName, HasTenants, UserContract
+>>>>>>> d4c0700e (♻️ (SelectStateColumn.php): refactor state retrieval logic to use $state directly for clarity)
 {
+    
+
     use HasApiTokens;
     use HasFactory;
     use HasRoles;
@@ -264,6 +270,7 @@ abstract class BaseUser extends Authenticatable
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @var array<string, mixed>  */
     protected $attributes = [
         //'state' => Pending::class,
@@ -272,14 +279,19 @@ abstract class BaseUser extends Authenticatable
         'is_active'=>true,
     ];
 
+=======
+>>>>>>> d4c0700e (♻️ (SelectStateColumn.php): refactor state retrieval logic to use $state directly for clarity)
     /**
      * Guard coerente con Spatie/Permission: deve essere 'web'.
      * @var string
      */
     protected $guard_name = 'web';
+<<<<<<< HEAD
 =======
     protected $guard_name = "web";
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> d4c0700e (♻️ (SelectStateColumn.php): refactor state retrieval logic to use $state directly for clarity)
 
     /** @var \Illuminate\Database\Eloquent\Relations\Pivot|null */
     public $pivot;
