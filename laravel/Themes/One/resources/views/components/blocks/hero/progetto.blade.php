@@ -1,5 +1,6 @@
 <div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="w-full flex justify-start">
         {{-- DA AGGIORNARE URL --}}
         <a href="{{ route('home') }}">
@@ -8,6 +9,11 @@
         {{-- DA AGGIORNARE URL --}}
         <a href="/it">
 >>>>>>> aurmich/dev
+=======
+<div class="w-full flex justify-start p-6">
+        {{-- DA AGGIORNARE URL --}}
+        <a href="/it">
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
             <div class="cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                      stroke-width="1.5" stroke="currentColor" class="size-9">
@@ -18,6 +24,7 @@
         </a>
     </div>
     <div class="flex justify-center">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <h1 class="text-[#272C4D]">{{ $title }}</h1>
     </div>
@@ -59,4 +66,9 @@
 >>>>>>> aurmich/dev
         </div>
     </div>
+=======
+        <h1 class="text-[#272C4D]">Il Progetto</h1>
+    </div>
+
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
 </div>

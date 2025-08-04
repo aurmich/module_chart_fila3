@@ -91,6 +91,9 @@
                     </svg>
                 </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
                 <div x-data="{ showInfo: false }" class="relative">
                     <div @click="showInfo = true" class="mr-5">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -121,12 +124,15 @@
                             </div>
                         </div>
                     </div>
+<<<<<<< HEAD
 =======
                 <div class="flex flex-col-reverse items-center lg:flex-row">
                     <p class="text-[#3E783E] text-sm pr-1">Apri dettaglio</p>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3E783E" class="size-6">
                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                     </svg>
+=======
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
                 </div>
             </div>
              </div>
@@ -279,6 +285,7 @@
     </div>
 
      </div>
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
 </div>
@@ -289,3 +296,6 @@
 
      </div>
 >>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
+=======
+</div>
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")

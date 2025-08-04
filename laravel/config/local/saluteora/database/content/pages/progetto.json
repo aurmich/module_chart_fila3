@@ -20,6 +20,7 @@
                 "type": "hero",
                 "data": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "view": "pub_theme::components.blocks.hero.progetto",
 <<<<<<< HEAD
                     "title": "Il Progetto",
@@ -31,6 +32,9 @@
 >>>>>>> aurmich/dev
 =======
                     "view": "pub_theme::components.blocks.hero.contact",
+=======
+                    "view": "pub_theme::components.blocks.hero.progetto",
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
                     "title": "La tua salute orale, la nostra missione",
                     "subtitle": "Unendo tecnologia, competenza medica e cura umana per promuovere la salute orale delle gestanti e delle loro famiglie.",
 >>>>>>> 802c7073 (- update name file progetto.json)
@@ -41,6 +45,7 @@
                     "cta_link": "/servizi",
                     "cta_color": "bg-teal-600 hover:bg-teal-700 text-white"
                 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -411,6 +416,8 @@
                     }
                 }
 >>>>>>> 802c7073 (- update name file progetto.json)
+=======
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
             }
         ]
     },

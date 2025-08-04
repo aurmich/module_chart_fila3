@@ -547,6 +547,7 @@
       <div class="flex flex-col lg:flex-row items-center">
         <div class="p-5">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <img class="h-16 lg:h-[150px]" src="/img/coi-logo-updated.png" />
         </div>
         <div class="p-5">
@@ -557,13 +558,20 @@
 >>>>>>> aurmich/dev
 =======
           <img class="h-16 lg:h-[150px]" src="/img/logo-coi.png" />
+=======
+          <img class="h-16 lg:h-[150px]" src="/img/coi-logo-updated.png" />
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
         </div>
         <div class="p-5">
-          <img class="h-16 lg:h-[150px]" src="/img/andi-fondazione-logo.png" />
+          <img class="h-16 lg:h-[150px]" src="/img/fondazione-andi-logo-updated.png" />
         </div>
         <div class="p-5">
+<<<<<<< HEAD
           <img class="h-16 lg:h-[150px]" src="/img/inmp-logo-piccolo.png" />
 >>>>>>> f7d3ce4f (- update landing-page;)
+=======
+          <img class="h-16 lg:h-[150px]" src="/img/inmp-logo-piccolo-updated.png" />
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
         </div>
       </div>
     </div>

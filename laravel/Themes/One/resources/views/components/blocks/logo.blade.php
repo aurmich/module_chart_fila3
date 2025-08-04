@@ -11,19 +11,27 @@
 ])
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <a href="{{ route('home') }}">
 =======
 <a href="/it">
 >>>>>>> aurmich/dev
+=======
+<a href="/it">
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     <div class="my-12" {{ $attributes->merge(['class' => 'p-4 flex items-center space-x-3']) }}>
         <!-- @if($icon)
             <x-filament::icon :name="$icon" :class="$size" class="text-primary-600 dark:text-primary-400" />
         @elseif($src) -->
 <<<<<<< HEAD
+<<<<<<< HEAD
             <img class="h-7 lg:h-12" src="/img/logo.png"/>
 =======
             <img class="h-8 lg:h-12" src="/img/logo.png"/>
 >>>>>>> aurmich/dev
+=======
+            <img class="h-8 lg:h-12" src="/img/logo.png"/>
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
         @endif
     
         <!-- @if($title || $description)
@@ -38,6 +46,7 @@
         @endif -->
     </div>
 </a>
+<<<<<<< HEAD
 =======
 
 <div class="my-12" {{ $attributes->merge(['class' => 'p-4 flex items-center space-x-3']) }}>
@@ -59,3 +68,5 @@
     @endif -->
 </div>
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")

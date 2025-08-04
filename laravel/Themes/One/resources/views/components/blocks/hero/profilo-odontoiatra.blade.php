@@ -49,6 +49,7 @@
                     <img class="h-40 object-contain" src="/img/dentist.png" />
                 </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <h1 class="text-center mt-5 text-3xl lg:text-4xl">{{$user?->name}}</h1>
                
 =======
@@ -80,9 +81,12 @@
 >>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
                 </div>
                 <h1 class="text-center">Samuel Tarly</h1>
+=======
+                <h1 class="text-center mt-5">Samuel Tarly</h1>
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
                 {{-- Form Dati Utente --}}
                 <div class="w-full flex flex-col items-center mt-10">
-                    <div class="w-full lg:w-3/4 bg-[#E6EBF7] shadow-2xl rounded-[15px] mt-5 lg:mt-0">
+                    <div class="w-full lg:w-3/4 bg-[#E6EBF7] shadow-2xl rounded-[15px] lg:mt-0">
                     <div class="flex flex-row items-center justify-between bg-[#E6EBF7] m-5 px-2">
                       <h2>I miei dati</h2>
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 cursor-pointer">

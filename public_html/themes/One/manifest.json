@@ -22,6 +22,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "file": "assets/app-7PoISLAE.css",
 =======
 <<<<<<< HEAD
@@ -193,6 +194,9 @@
 =======
     "file": "assets/app-CVLTvScD.css",
 >>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
+=======
+    "file": "assets/app-lXfxA-ro.css",
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     "src": "resources/css/app.css",
     "isEntry": true
   },

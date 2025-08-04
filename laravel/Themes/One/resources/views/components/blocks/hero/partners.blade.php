@@ -47,12 +47,16 @@
     <div class="w-full lg:w-2/4 grid-cols-1 lg:grid grid-cols-2 gap-4 justify-center items-center p-10">
         <div class="flex justify-center">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <img class="h-[100px]" src="/img/coi-logo-updated.png" />
         </div>
         <span class="ml-0 lg:ml-5">
 >>>>>>> aurmich/dev
 =======
             <img class="h-[100px]" src="/img/logo-coi.png" />
+=======
+            <img class="h-[100px]" src="/img/coi-logo-updated.png" />
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
         </div>
         <span class="ml-0 lg:ml-5">
 >>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
@@ -70,8 +74,12 @@
 =======
     <div class="w-full lg:w-2/4 grid grid-cols-1 lg:grid-cols-2 gap-4 justify-center items-center p-10">
     <div class="flex justify-center">
+<<<<<<< HEAD
         <img class="h-48" src="/img/andi-fondazione-logo.png" />
 >>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
+=======
+        <img class="h-48" src="/img/fondazione-andi-logo-updated.png" />
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     </div>
         <span class="ml-0 lg:ml-5">
         Fondazione ANDI ETS promuove la salute orale di tutti con particolare

@@ -1,23 +1,35 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array (
   'navigation' => 
   array (
 <<<<<<< HEAD
+=======
+return array (
+  'navigation' => 
+  array (
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     'label' => 'Pazienti',
     'group' => 'Gestione Utenti',
     'icon' => 'heroicon-o-users',
     'sort' => 20,
+<<<<<<< HEAD
     'tooltip' => 'Gestisci i pazienti registrati nel sistema',
     'helper_text' => '',
+=======
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
   ),
   'model' => 
   array (
     'label' => 'Paziente',
     'plural' => 'Pazienti',
+<<<<<<< HEAD
     'description' => 'Gestione completa dei pazienti',
     'icon' => 'heroicon-o-user',
+=======
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
   ),
   'pages' => 
   array (
@@ -25,29 +37,42 @@ return array (
     array (
       'title' => 'Elenco Pazienti',
       'subtitle' => 'Gestisci i pazienti registrati nell\'app mobile',
+<<<<<<< HEAD
       'description' => 'Visualizza e gestisci tutti i pazienti del sistema',
+=======
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     ),
     'create' => 
     array (
       'title' => 'Nuovo Paziente',
       'subtitle' => 'Registra un nuovo paziente',
+<<<<<<< HEAD
       'description' => 'Inserisci i dati per registrare un nuovo paziente',
+=======
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     ),
     'edit' => 
     array (
       'title' => 'Modifica Paziente',
       'subtitle' => 'Modifica le informazioni del paziente',
+<<<<<<< HEAD
       'description' => 'Aggiorna le informazioni del paziente selezionato',
+=======
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     ),
     'view' => 
     array (
       'title' => 'Dettagli Paziente',
       'subtitle' => 'Visualizza le informazioni complete del paziente',
+<<<<<<< HEAD
       'description' => 'Informazioni dettagliate sul paziente selezionato',
+=======
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     ),
   ),
   'fields' => 
   array (
+<<<<<<< HEAD
     'personal_info_section' => 
     array (
       'label' => 'Informazioni Personali',
@@ -69,10 +94,13 @@ return array (
       'tooltip' => 'Contatti e informazioni di emergenza',
       'helper_text' => '',
     ),
+=======
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     'full_name' => 
     array (
       'label' => 'Nome e Cognome',
       'placeholder' => 'Inserisci nome e cognome completi',
+<<<<<<< HEAD
       'help' => 'Nome e cognome del paziente',
       'tooltip' => 'Nome completo del paziente',
       'helper_text' => '',
@@ -100,35 +128,51 @@ return array (
       'help' => 'Nome completo del paziente',
       'tooltip' => 'Nome e cognome del paziente',
       'helper_text' => '',
+=======
+      'helper_text' => 'Nome e cognome del paziente',
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     ),
     'email' => 
     array (
       'label' => 'Email',
       'placeholder' => 'email@esempio.com',
+<<<<<<< HEAD
       'help' => 'Indirizzo email per le comunicazioni',
       'tooltip' => 'Email del paziente',
       'helper_text' => '',
+=======
+      'helper_text' => 'Indirizzo email per le comunicazioni',
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     ),
     'phone' => 
     array (
       'label' => 'Telefono',
       'placeholder' => '+39 123 456 7890',
+<<<<<<< HEAD
       'help' => 'Numero di telefono principale',
       'tooltip' => 'Telefono del paziente',
       'helper_text' => '',
+=======
+      'helper_text' => 'Numero di telefono principale',
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     ),
     'fiscal_code' => 
     array (
       'label' => 'Codice Fiscale',
       'placeholder' => 'RSSMRA80A01H501Z',
+<<<<<<< HEAD
       'help' => 'Codice fiscale del paziente',
       'tooltip' => 'Codice fiscale italiano',
       'helper_text' => '',
+=======
+      'helper_text' => 'Codice fiscale del paziente',
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     ),
     'birth_date' => 
     array (
       'label' => 'Data di Nascita',
       'placeholder' => 'Seleziona la data',
+<<<<<<< HEAD
       'help' => 'Data di nascita del paziente',
       'tooltip' => 'Data di nascita',
       'helper_text' => '',
@@ -140,14 +184,21 @@ return array (
       'help' => 'Data di nascita del paziente',
       'tooltip' => 'Data di nascita',
       'helper_text' => '',
+=======
+      'helper_text' => 'Data di nascita del paziente',
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     ),
     'gender' => 
     array (
       'label' => 'Sesso',
       'placeholder' => 'Seleziona il sesso',
+<<<<<<< HEAD
       'help' => 'Sesso del paziente',
       'tooltip' => 'Sesso biologico',
       'helper_text' => '',
+=======
+      'helper_text' => 'Sesso del paziente',
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
       'options' => 
       array (
         'male' => 'Maschio',
@@ -159,22 +210,31 @@ return array (
     array (
       'label' => 'Indirizzo',
       'placeholder' => 'Via Roma, 123',
+<<<<<<< HEAD
       'help' => 'Indirizzo di residenza',
       'tooltip' => 'Indirizzo completo',
       'helper_text' => '',
+=======
+      'helper_text' => 'Indirizzo di residenza',
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     ),
     'city' => 
     array (
       'label' => 'Città',
       'placeholder' => 'Milano',
+<<<<<<< HEAD
       'help' => 'Città di residenza',
       'tooltip' => 'Città di residenza',
       'helper_text' => '',
+=======
+      'helper_text' => 'Città di residenza',
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     ),
     'postal_code' => 
     array (
       'label' => 'CAP',
       'placeholder' => '20100',
+<<<<<<< HEAD
       'help' => 'Codice di avviamento postale',
       'tooltip' => 'Codice postale',
       'helper_text' => '',
@@ -360,60 +420,116 @@ return array (
       'help' => 'Certificazioni e documenti del paziente',
       'tooltip' => 'Certificazioni',
       'helper_text' => '',
+=======
+      'helper_text' => 'Codice di avviamento postale',
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     ),
     'emergency_contact_name' => 
     array (
       'label' => 'Contatto Emergenza - Nome',
       'placeholder' => 'Nome del contatto di emergenza',
+<<<<<<< HEAD
       'help' => 'Nome della persona da contattare in caso di emergenza',
       'tooltip' => 'Nome contatto emergenza',
       'helper_text' => '',
+=======
+      'helper_text' => 'Nome della persona da contattare in caso di emergenza',
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     ),
     'emergency_contact_phone' => 
     array (
       'label' => 'Contatto Emergenza - Telefono',
       'placeholder' => '+39 123 456 7890',
+<<<<<<< HEAD
       'help' => 'Telefono del contatto di emergenza',
       'tooltip' => 'Telefono contatto emergenza',
       'helper_text' => '',
+=======
+      'helper_text' => 'Telefono del contatto di emergenza',
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     ),
     'allergies' => 
     array (
       'label' => 'Allergie',
       'placeholder' => 'Elenco delle allergie note',
+<<<<<<< HEAD
       'help' => 'Allergie note del paziente',
       'tooltip' => 'Allergie del paziente',
       'helper_text' => '',
+=======
+      'helper_text' => 'Allergie note del paziente',
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     ),
     'medications' => 
     array (
       'label' => 'Farmaci',
       'placeholder' => 'Farmaci attualmente assunti',
+<<<<<<< HEAD
       'help' => 'Farmaci che il paziente sta assumendo',
       'tooltip' => 'Farmaci in uso',
       'helper_text' => '',
+=======
+      'helper_text' => 'Farmaci che il paziente sta assumendo',
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     ),
     'medical_history' => 
     array (
       'label' => 'Storia Clinica',
       'placeholder' => 'Note sulla storia clinica',
+<<<<<<< HEAD
       'help' => 'Informazioni rilevanti sulla storia clinica',
       'tooltip' => 'Storia clinica',
       'helper_text' => '',
+=======
+      'helper_text' => 'Informazioni rilevanti sulla storia clinica',
+    ),
+    'is_active' => 
+    array (
+      'label' => 'Attivo',
+      'helper_text' => 'Il paziente può prenotare visite',
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     ),
     'device_token' => 
     array (
       'label' => 'Token Dispositivo',
+<<<<<<< HEAD
       'help' => 'Token per le notifiche push',
       'tooltip' => 'Token dispositivo',
       'helper_text' => '',
+=======
+      'helper_text' => 'Token per le notifiche push',
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     ),
     'last_login' => 
     array (
       'label' => 'Ultimo Accesso',
+<<<<<<< HEAD
       'help' => 'Data e ora dell\'ultimo accesso all\'app',
       'tooltip' => 'Ultimo accesso',
       'helper_text' => '',
+=======
+      'helper_text' => 'Data e ora dell\'ultimo accesso all\'app',
+    ),
+    'reset_filters' => 
+    array (
+      'label' => 'Azzera Filtri',
+    ),
+    'apply_filters' => 
+    array (
+      'label' => 'Applica Filtri',
+    ),
+    'open_filters' => 
+    array (
+      'label' => 'Apri Filtri',
+    ),
+    'toggle_columns' => 
+    array (
+      'label' => 'Mostra/Nascondi Colonne',
+    ),
+    'reorder_records' => 
+    array (
+      'label' => 'Riordina Record',
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     ),
     'applyFilters' => 
     array (
@@ -423,6 +539,7 @@ return array (
     array (
       'label' => 'toggleColumns',
     ),
+<<<<<<< HEAD
     'value' => 
     array (
       'description' => 'value',
@@ -458,6 +575,8 @@ return array (
     array (
       'label' => 'state',
     ),
+=======
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
   ),
   'actions' => 
   array (
@@ -491,6 +610,7 @@ return array (
       'icon' => 'heroicon-o-plus-circle',
       'tooltip' => 'Aggiungi una nota medica',
     ),
+<<<<<<< HEAD
     'create' => 
     array (
       'label' => 'Crea Paziente',
@@ -521,6 +641,8 @@ return array (
       'icon' => 'heroicon-o-key',
       'tooltip' => 'Cambia la password del paziente',
     ),
+=======
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
   ),
   'filters' => 
   array (
@@ -540,6 +662,7 @@ return array (
     array (
       'label' => 'Per Città',
     ),
+<<<<<<< HEAD
     'is_pregnant' => 
     array (
       'label' => 'In Gravidanza',
@@ -548,6 +671,8 @@ return array (
     array (
       'label' => 'Fascia ISEE',
     ),
+=======
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
   ),
   'bulk_actions' => 
   array (
@@ -561,6 +686,7 @@ return array (
       'label' => 'Esporta Selezionati',
       'icon' => 'heroicon-o-arrow-down-tray',
     ),
+<<<<<<< HEAD
     'activate_selected' => 
     array (
       'label' => 'Attiva Selezionati',
@@ -571,6 +697,8 @@ return array (
       'label' => 'Disattiva Selezionati',
       'icon' => 'heroicon-o-x-circle',
     ),
+=======
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
   ),
   'messages' => 
   array (
@@ -578,6 +706,7 @@ return array (
     'notification_sent' => 'Notifica inviata con successo',
     'medical_note_added' => 'Nota medica aggiunta con successo',
     'export_completed' => 'Esportazione completata',
+<<<<<<< HEAD
     'activated_successfully' => 'Paziente attivato con successo',
   ),
   'notifications' => 
@@ -848,3 +977,8 @@ return [
     'search_placeholder' => 'Cerca per nome, email, telefono o codice fiscale...',
 ];
 >>>>>>> f3e4ec66 (.)
+=======
+  ),
+  'search_placeholder' => 'Cerca per nome, email, telefono o codice fiscale...',
+);
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")

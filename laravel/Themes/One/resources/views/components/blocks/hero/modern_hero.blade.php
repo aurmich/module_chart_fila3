@@ -59,6 +59,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <section class="relative min-h-[700px] flex items-center justify-center overflow-hidden {{ $className }}" 
 =======
 <section class="relative {{ $minHeight }} flex items-center overflow-hidden {{ $className }}" 
@@ -66,6 +67,9 @@
 =======
 <section class="relative min-h-[700px] flex items-center overflow-hidden {{ $className }}" 
 >>>>>>> ff138484 (- update dettaglio paziente)
+=======
+<section class="relative min-h-[700px] flex items-center justify-center overflow-hidden {{ $className }}" 
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
          x-data="{ 
             scrolled: false,
             mounted: false,
@@ -79,6 +83,7 @@
 <<<<<<< HEAD
          }">
 
+<<<<<<< HEAD
     <!-- Overlay -->
     @if($overlay !== 'none')
         <div class="inset-0 -z-10 bg-[#E6EBF7]"></div>
@@ -111,12 +116,15 @@
 
 >>>>>>> ff138484 (- update dettaglio paziente)
 
+=======
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
     <!-- Overlay -->
     @if($overlay !== 'none')
-        <div class="absolute inset-0 -z-10 bg-[#E6EBF7]"></div>
+        <div class="inset-0 -z-10 bg-[#E6EBF7]"></div>
     @endif
 
     <!-- Content -->
+<<<<<<< HEAD
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div class="max-w-4xl mx-auto {{ $contentPositionClasses }} flex flex-col gap-6">
 <<<<<<< HEAD
@@ -127,6 +135,10 @@
             <div class="space-y-6 text-[#1A467F]"
 >>>>>>> ff138484 (- update dettaglio paziente)
 =======
+=======
+    <div class="container mx-auto px-4 sm:px-6 py-1 lg:py-8 lg:px-8 w-full">
+        <div class="max-w-4xl mx-auto flex flex-col gap-6 items-center text-center {{ $contentPositionClasses }}">
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
             <div class="space-y-6 text-[#272C4D]"
 >>>>>>> 89a8313a (- update primary colors)
                  x-data="{ 
@@ -139,6 +151,7 @@
                  }"
                  x-init="mounted()"
                  x-intersect="show = true">
+<<<<<<< HEAD
 <<<<<<< HEAD
 
                 <h1 class="text-4xl md:text-5xl lg:text-3xl font-bold leading-tight">
@@ -176,6 +189,8 @@
 =======
                 
         
+=======
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
 
                 <h1 class="text-4xl md:text-5xl lg:text-3xl font-bold leading-tight">
                     {{ $title }}
@@ -187,20 +202,29 @@
 
                 @if(!empty($primaryCta) || !empty($secondaryCtaData))
                     <div class="flex flex-row justify-center gap-4 pt-4">
-                        
                         @if(!empty($primaryCta))
-                            <a href="{{ $primaryCta['url'] }}" 
+                            <a href="/it" 
                                class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md !text-white bg-[#FF5F7E] md:py-4 md:text-lg md:px-10">
                                 {{ $primaryCta['text'] }}
                             </a>
                         @endif
                     </div>
                 @endif
+<<<<<<< HEAD
 >>>>>>> 12c6456b (✨ (blocks.md): add Aesthetic Block guidelines and example for elegant components)
+=======
+
+                <!-- Immagine centrata sotto il bottone -->
+                <div class="pt-6">
+                    <img class="mx-auto h-64 w-auto" src="/img/sala-attesa-2.svg" alt="Sala d'attesa" />
+                </div>
+
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
             </div>
         </div>
     </div>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 </section>
 
@@ -240,3 +264,8 @@
 >>>>>>> 12c6456b (✨ (blocks.md): add Aesthetic Block guidelines and example for elegant components)
 =======
 >>>>>>> ff138484 (- update dettaglio paziente)
+=======
+</section>
+
+
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")

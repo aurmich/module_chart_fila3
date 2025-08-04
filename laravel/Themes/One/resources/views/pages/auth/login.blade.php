@@ -164,10 +164,14 @@ $authenticate = function() {
                 <div class="space-y-6 flex flex-col justify-center">
                     @livewire(\Modules\User\Filament\Widgets\LoginWidget::class)
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <a href="/{{ $lang }}/auth/password/reset" class="text-[#FF5F7E] text-center text-sm !mt-0">{{ __('pub_theme::auth.login.forgot_password') }}</a>
 =======
                     <a href="/it/auth/password/reset" class="text-[#FF5F7E] text-center text-sm !mt-0">Hai dimenticato la password?</a>
 >>>>>>> aurmich/dev
+=======
+                    <a href="/it/auth/password/reset" class="text-[#FF5F7E] text-center text-sm !mt-0">Hai dimenticato la password?</a>
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
                 </div>
             </div>
         </div>

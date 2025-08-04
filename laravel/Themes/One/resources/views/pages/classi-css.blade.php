@@ -204,11 +204,15 @@
 <div class="lg:ml-5">large margin left</div>
 <div class="h-52">height 208 px</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
 <div class="lg:min-h-36">large footer height</div>
 <div class="left-[15%]">left 15%</div>
 <div class="right-[15%]">right 15%</div>
 <div class="mt-10">margin-top 10</div>
 <div class="lg:py-8">large py-8</div>
+<<<<<<< HEAD
 <div class="text-[#F38B8B]">testo rosa chiaro</div>
 <div class="mx-10">mx 10</div>
 <div class="mx-24">mx 24</div>
@@ -424,3 +428,6 @@
 <div class=""></div>
 </x-layouts.app>
 >>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
+=======
+</x-layouts.app>
+>>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
