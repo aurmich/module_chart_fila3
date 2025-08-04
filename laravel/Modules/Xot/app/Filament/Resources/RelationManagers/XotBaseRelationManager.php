@@ -99,7 +99,11 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
             //throw new \Exception('method  getTableColumns on '.print_r($index_page,true).' not found');
             return [];
         }
+<<<<<<< HEAD
         /** @phpstan-ignore argument.type */
+=======
+        /** @phpstan-ignore-next-line */
+>>>>>>> a272e7ba (♻️ (XotBasePage.php, XotBaseRelationManager.php): reorganize and clean up import statements for better readability and maintainability)
         $res= app($index_page)->getTableColumns();
 
         return $res;

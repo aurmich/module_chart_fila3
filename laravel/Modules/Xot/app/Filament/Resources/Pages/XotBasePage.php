@@ -7,6 +7,7 @@ namespace Modules\Xot\Filament\Resources\Pages;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Closure;
 use Filament\Forms\Form;
 use Illuminate\Support\Str;
@@ -29,15 +30,21 @@ use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 use Filament\Forms\Components\Component;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
+=======
+>>>>>>> a272e7ba (♻️ (XotBasePage.php, XotBaseRelationManager.php): reorganize and clean up import statements for better readability and maintainability)
 use Filament\Forms\Form;
-use Filament\Pages\Page as FilamentPage;
-use Illuminate\Contracts\View\View;
-use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
-use Modules\Xot\Filament\Traits\NavigationLabelTrait;
-use Modules\Xot\Filament\Traits\TransTrait;
 use Webmozart\Assert\Assert;
+use Illuminate\Support\Collection;
+use Illuminate\Contracts\View\View;
+use Filament\Forms\ComponentContainer;
+use Filament\Forms\Contracts\HasForms;
+use Filament\Forms\Components\Component;
+use Filament\Pages\Page as FilamentPage;
+use Modules\Xot\Filament\Traits\TransTrait;
+use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Pages\Concerns\InteractsWithFormActions;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
@@ -58,6 +65,9 @@ use Filament\Pages\Concerns\InteractsWithFormActions;
 =======
 =======
 >>>>>>> d23ba493 (add calendar)
+=======
+use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+>>>>>>> a272e7ba (♻️ (XotBasePage.php, XotBaseRelationManager.php): reorganize and clean up import statements for better readability and maintainability)
 /**
  * Base class for all custom pages in the application.
  *
@@ -66,6 +76,7 @@ use Filament\Pages\Concerns\InteractsWithFormActions;
  *
  * @property ?string $model
  * @property ?array $data
+ * @property ComponentContainer $form
  */
 <<<<<<< HEAD
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
