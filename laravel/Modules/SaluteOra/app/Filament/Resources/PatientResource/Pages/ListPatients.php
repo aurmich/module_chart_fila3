@@ -6,9 +6,15 @@ namespace Modules\SaluteOra\Filament\Resources\PatientResource\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Filament\Tables;
 use Illuminate\Support\Arr;
+=======
+use Filament\Tables;
+use Illuminate\Support\Arr;
+use Illuminate\Database\Eloquent\Builder;
+>>>>>>> 86036e79 (✨ (CreateAdmin, EditAdmin, ListAdmins, CreateDoctor, EditDoctor, ListDoctors, CreatePatient, EditPatient, ListPatients): refactor admin, doctor, and patient resources to extend user resource classes for better code reuse and maintainability)
 use Modules\SaluteOra\Models\Patient;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Eloquent\Builder;
@@ -26,14 +32,20 @@ use Modules\SaluteOra\Models\Patient;
 >>>>>>> adac82bd (rebase)
 use Modules\SaluteOra\Filament\Resources\PatientResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+use Modules\SaluteOra\Filament\Resources\UserResource\Pages\ListUsers;
 
+<<<<<<< HEAD
 class ListPatients extends XotBaseListRecords
 >>>>>>> 54f4fa16 (.)
+=======
+class ListPatients extends ListUsers
+>>>>>>> 86036e79 (✨ (CreateAdmin, EditAdmin, ListAdmins, CreateDoctor, EditDoctor, ListDoctors, CreatePatient, EditPatient, ListPatients): refactor admin, doctor, and patient resources to extend user resource classes for better code reuse and maintainability)
 {
     protected static string $resource = PatientResource::class;
 
     public function getTableColumns(): array
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         $columns = parent::getTableColumns();
@@ -100,4 +112,13 @@ class ListPatients extends XotBaseListRecords
         ];
     }
 >>>>>>> 54f4fa16 (.)
+=======
+        $columns = parent::getTableColumns();   
+        $columns = Arr::except($columns, ['type']);
+        return $columns;
+    }
+
+  
+        
+>>>>>>> 86036e79 (✨ (CreateAdmin, EditAdmin, ListAdmins, CreateDoctor, EditDoctor, ListDoctors, CreatePatient, EditPatient, ListPatients): refactor admin, doctor, and patient resources to extend user resource classes for better code reuse and maintainability)
 }

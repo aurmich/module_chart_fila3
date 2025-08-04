@@ -4,6 +4,7 @@ return array (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   'model' => 
   array (
     'label' => 'Amministratore',
@@ -303,6 +304,8 @@ return array (
     'empty_state' => 'Nessun amministratore registrato nel sistema',
     'search_no_results' => 'Nessun amministratore trovato con i criteri di ricerca specificati',
 =======
+=======
+>>>>>>> 86036e79 (✨ (CreateAdmin, EditAdmin, ListAdmins, CreateDoctor, EditDoctor, ListDoctors, CreatePatient, EditPatient, ListPatients): refactor admin, doctor, and patient resources to extend user resource classes for better code reuse and maintainability)
   'navigation' => 
   array (
     'label' => 'Segreteria',
@@ -316,6 +319,7 @@ return array (
     array (
       'label' => 'applyFilters',
     ),
+<<<<<<< HEAD
     'toggleColumns' => 
     array (
       'label' => 'toggleColumns',
@@ -339,5 +343,7 @@ return array (
     'icon' => 'saluteora-admin',
     'sort' => 95,
 >>>>>>> a0fd0fbf (feat(i18n): add Italian language support for admin navigation and user registration)
+=======
+>>>>>>> 86036e79 (✨ (CreateAdmin, EditAdmin, ListAdmins, CreateDoctor, EditDoctor, ListDoctors, CreatePatient, EditPatient, ListPatients): refactor admin, doctor, and patient resources to extend user resource classes for better code reuse and maintainability)
   ),
 );
