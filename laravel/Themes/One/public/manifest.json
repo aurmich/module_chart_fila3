@@ -32,6 +32,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "file": "assets/app-7PoISLAE.css",
 =======
 <<<<<<< HEAD
@@ -206,6 +207,9 @@
 =======
     "file": "assets/app-Cq5pA5gf.css",
 >>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
+=======
+    "file": "assets/app-ClobuGkB.css",
+>>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
     "src": "resources/css/app.css",
     "isEntry": true
   },

@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 use Livewire\Volt\Component;
 
@@ -36,6 +37,9 @@ $user=auth()->user();
     
 =======
 <div class="bg-[#E6EBF7]">
+=======
+<div>
+>>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
     <div>
         {{-- Freccia di ritorno --}}
         <div class="w-full flex justify-start p-6">

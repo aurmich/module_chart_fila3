@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
@@ -55,6 +56,9 @@ new class extends Component {
 =======
 >>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
 <div class="bg-[#E6EBF7] p-5">
+=======
+<div class="p-5">
+>>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
     {{-- Header con freccia per tornare indietro --}}
     <div class="w-full flex justify-start p-6">
         {{-- DA AGGIORNARE URL --}}

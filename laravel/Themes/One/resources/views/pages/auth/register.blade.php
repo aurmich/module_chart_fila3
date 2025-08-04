@@ -129,7 +129,7 @@ new class extends Component
 =======
     @volt('register')
     <!-- background-image: url('/img/background-filigrana-chiaro.png'); background-size: cover; background-position: center -->
-    <div class="bg-[#E6EBF7] p-5 m-auto">
+    <div class="p-5 m-auto">
     <div class="register-container">
 <<<<<<< HEAD
 <<<<<<< HEAD

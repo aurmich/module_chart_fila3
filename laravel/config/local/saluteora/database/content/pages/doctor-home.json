@@ -29,6 +29,7 @@
                     "cta_text": "Continua la registrazione",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "cta_link": "/doctor/patients",
                     "widget": "Modules\\SaluteOra\\Filament\\Widgets\\DoctorCalendarWidget"
                 }
@@ -91,6 +92,10 @@
                 "data": {
                     "view": "pub_theme::components.blocks.widget.simple",
                     "widget":  "Modules\\SaluteOra\\Filament\\Widgets\\DoctorCalendarWidget"
+=======
+                    "cta_link": "/doctor/patients",
+                    "widget": "Modules\\SaluteOra\\Filament\\Widgets\\DoctorCalendarWidget"
+>>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
                 }
             },
             {

@@ -236,11 +236,15 @@
 <div class="p-9">padding 9</div>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
 <div class="bg-[url('/img/inmp-logo-trasparenza.svg')]">bg inmp</div>
 <div class="my-5">margin top bottom 5</div>
 <div class="w-10/12">width 83%</div>
 <div class="w-8/12">width 60%</div>
 <div class="w-7/12">width 50%</div>
+<<<<<<< HEAD
 <div class="text-[40px]">testo 40px</div>
 <div class="w-60 h-60">width e height 15rem</div>
 <div class="lg:justify-evenly">large justify-evenly</div>
@@ -452,3 +456,6 @@
 =======
 </x-layouts.app>
 >>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
+=======
+</x-layouts.app>
+>>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))

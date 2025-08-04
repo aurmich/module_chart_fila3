@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div>
    <div class="w-full flex justify-center p-10">
        <h1 class="text-[#272C4D]">@lang('pub_theme::content.partners.our_partners.label')</h1>
@@ -40,6 +41,9 @@
 =======
 >>>>>>> 0e655426 (- aggiunti modal di delete e di dettaglio nelle pagine degli appuntamenti;)
 <div class="bg-[#E6EBF7] flex-1">
+=======
+<div>
+>>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
    <div class="w-full flex justify-center p-10">
        <h1>I nostri Partners</h1>
    </div>

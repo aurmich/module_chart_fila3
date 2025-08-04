@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 use Livewire\Volt\Component;
 use Modules\SaluteOra\Models\Appointment;
@@ -196,6 +197,9 @@ new class extends Component {
 </div>
 =======
 <div class="bg-[#E6EBF7]">
+=======
+<div>
+>>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
     <!-- Back button -->
     <div class="w-full flex justify-start p-6">
         {{-- DA AGGIORNARE URL --}}

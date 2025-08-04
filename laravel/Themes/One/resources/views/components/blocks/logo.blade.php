@@ -25,6 +25,7 @@
         @elseif($src) -->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <img class="h-7 lg:h-12" src="/img/logo.png"/>
 =======
             <img class="h-8 lg:h-12" src="/img/logo.png"/>
@@ -32,6 +33,9 @@
 =======
             <img class="h-8 lg:h-12" src="/img/logo.png"/>
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+            <img class="h-7 lg:h-12" src="/img/logo.png"/>
+>>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
         @endif
     
         <!-- @if($title || $description)

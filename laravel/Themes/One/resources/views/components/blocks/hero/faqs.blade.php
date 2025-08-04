@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="flex flex-col justify-center items-center">
 
     <!-- Back Button -->
@@ -9,6 +10,9 @@
         <a href="{{ route('home') }}">
 =======
 <div class="bg-[#E6EBF7] flex flex-col justify-center items-center">
+=======
+<div class="flex flex-col justify-center items-center">
+>>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
 
     <!-- Back Button -->
     <div class="w-full flex justify-start p-6">

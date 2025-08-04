@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @php
  /*
     use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -151,6 +152,10 @@
 >>>>>>> c0c82b7e (- updated template email)
 <div class="bg-[#E6EBF7] p-5">
     <div class="bg-[#E6EBF7]">
+=======
+<div class="p-5">
+    <div>
+>>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
         <!-- Back button -->
         <div class="w-full flex justify-start p-6">
             <!-- DA AGGIORNARE URL -->

@@ -44,6 +44,7 @@
 @endphp
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="w-full flex justify-center">
 <div class="w-full lg:w-7/12 bg-white rounded-xl shadow-sm border border-gray-200 p-6 dark:bg-gray-900">
 =======
@@ -58,6 +59,10 @@
 =======
 <div class="studio-availability-card bg-white rounded-xl shadow-sm border border-gray-200 p-6 dark:bg-gray-900">
 >>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
+=======
+<div class="w-full flex justify-center">
+<div class="w-full lg:w-7/12 bg-white rounded-xl shadow-sm border border-gray-200 p-6 dark:bg-gray-900">
+>>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
     {{-- Header Studio --}}
     <div class="studio-header flex items-center justify-between p-4 border-b {{ $isPrimary ? 'border-blue-200 dark:border-blue-700' : 'border-gray-200 dark:border-gray-700' }}">
         <div class="flex items-center space-x-3">
@@ -114,6 +119,7 @@
         
     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 </div> 
 </div>
 =======
@@ -127,3 +133,7 @@
     </div>
 </div> 
 >>>>>>> 69133b6d (.)
+=======
+</div> 
+</div>
+>>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
