@@ -92,6 +92,7 @@ new class extends Component
     @volt('register.type')
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -100,11 +101,14 @@ new class extends Component
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> be245520 (♻️ (header.blade.php, register.blade.php): refactor header component to remove unnecessary classes and comments for cleaner code)
     <div >
         
         
         <div class="mt-8 mx-auto w-full max-w-4xl ">
             <div class=" bg-white m-6 z-10 backdrop-blur-md rounded-2xl p-8 shadow-lg ring-1 ring-white/20">
+<<<<<<< HEAD
 =======
     <div id="wave-container" class="flex flex-col items-stretch justify-center w-full min-h-screen py-10 sm:items-center relative overflow-hidden">
         <!-- Reactive subtle background waves -->
@@ -121,6 +125,8 @@ new class extends Component
             <!-- Glassmorphism registration card -->
             <div class="relative bg-white m-6 z-10 backdrop-blur-md rounded-2xl p-8 shadow-lg ring-1 ring-white/20">
 >>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
+=======
+>>>>>>> be245520 (♻️ (header.blade.php, register.blade.php): refactor header component to remove unnecessary classes and comments for cleaner code)
                 <div class="mx-auto w-full">
                     <!-- Header -->
                     <div class="text-center mb-8">
@@ -166,6 +172,7 @@ new class extends Component
 <<<<<<< HEAD
                         @livewire(\Modules\User\Filament\Widgets\RegistrationWidget::class, ['type' => $type])
                     </div>
+<<<<<<< HEAD
                     
                 </div>
             </div>
@@ -228,6 +235,8 @@ new class extends Component
                     
                     
 
+=======
+>>>>>>> be245520 (♻️ (header.blade.php, register.blade.php): refactor header component to remove unnecessary classes and comments for cleaner code)
                     
                 </div>
 >>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
@@ -294,6 +303,7 @@ new class extends Component
     </div>
     @endvolt
 
+<<<<<<< HEAD
     <!-- Mousemove handler for wave effect -->
     <script>
         document.getElementById('wave-container').addEventListener('mousemove', function(e) {
@@ -322,5 +332,8 @@ new class extends Component
 </x-layouts.main>
 >>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
 =======
+=======
+   
+>>>>>>> be245520 (♻️ (header.blade.php, register.blade.php): refactor header component to remove unnecessary classes and comments for cleaner code)
 </x-layouts.app>
 >>>>>>> 5ba41858 (✨ (register.blade.php, login.blade.php): update layout component from x-layouts.main to x-layouts.app for consistency in theme structure)
