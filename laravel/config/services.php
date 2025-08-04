@@ -20,6 +20,7 @@ return [
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -43,6 +44,8 @@ return [
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 93990a83 (rebase 1/1)
+=======
+>>>>>>> ad93170c (rebase 10)
     'ses' => [
         'key' => env('AWS_ACCESS_KEY_ID'),
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
@@ -51,6 +54,7 @@ return [
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -59,10 +63,13 @@ return [
 =======
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> ad93170c (rebase 10)
     'resend' => [
         'key' => env('RESEND_KEY'),
     ],
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -74,6 +81,8 @@ return [
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 93990a83 (rebase 1/1)
+=======
+>>>>>>> ad93170c (rebase 10)
     'slack' => [
         'notifications' => [
             'bot_user_oauth_token' => env('SLACK_BOT_USER_OAUTH_TOKEN'),

@@ -15,6 +15,7 @@ return [
     |
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     | Supported: "file", "cookie", "database", "apc",
     |            "memcached", "redis", "dynamodb", "array"
 =======
@@ -40,6 +41,10 @@ return [
     | Supported: "file", "cookie", "database", "memcached",
     |            "redis", "dynamodb", "array"
 >>>>>>> 93990a83 (rebase 1/1)
+=======
+    | Supported: "file", "cookie", "database", "apc",
+    |            "memcached", "redis", "dynamodb", "array"
+>>>>>>> ad93170c (rebase 10)
     |
     */
 
@@ -124,6 +129,7 @@ return [
     |
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     | Affects: "apc", "dynamodb", "memcached", "redis"
 =======
 <<<<<<< HEAD
@@ -143,6 +149,9 @@ return [
 =======
     | Affects: "dynamodb", "memcached", "redis"
 >>>>>>> 93990a83 (rebase 1/1)
+=======
+    | Affects: "apc", "dynamodb", "memcached", "redis"
+>>>>>>> ad93170c (rebase 10)
     |
     */
 
@@ -176,6 +185,7 @@ return [
         'SESSION_COOKIE',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Str::slug(env('APP_NAME', 'laravel'), '_').'_session'
 =======
 <<<<<<< HEAD
@@ -195,6 +205,9 @@ return [
 =======
         Str::slug(env('APP_NAME', 'laravel')).'-session'
 >>>>>>> 93990a83 (rebase 1/1)
+=======
+        Str::slug(env('APP_NAME', 'laravel'), '_').'_session'
+>>>>>>> ad93170c (rebase 10)
     ),
 
     /*

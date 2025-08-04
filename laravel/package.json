@@ -1,5 +1,4 @@
 {
-    "$schema": "https://json.schemastore.org/package.json",
     "private": true,
     "type": "module",
 <<<<<<< HEAD
@@ -18,6 +17,7 @@
         "build": "vite build",
         "dev": "vite"
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -63,10 +63,13 @@
         "axios": "^1.8.2",
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> ad93170c (rebase 10)
     "dependencies": {
         "@tailwindcss/vite": "^4.0.7",
         "autoprefixer": "^10.4.20",
         "axios": "^1.7.4",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> e9942509 (fix: session)
@@ -76,10 +79,17 @@
         "@tailwindcss/vite": "^4.0.0",
         "axios": "^1.8.2",
 >>>>>>> 93990a83 (rebase 1/1)
+=======
+>>>>>>> ad93170c (rebase 10)
         "concurrently": "^9.0.1",
-        "laravel-vite-plugin": "^1.2.0",
-        "tailwindcss": "^4.0.0",
-        "vite": "^6.2.4"
+        "laravel-vite-plugin": "^1.0",
+        "tailwindcss": "^4.0.7",
+        "vite": "^6.0"
+    },
+    "optionalDependencies": {
+        "@rollup/rollup-linux-x64-gnu": "4.9.5",
+        "@tailwindcss/oxide-linux-x64-gnu": "^4.0.1",
+        "lightningcss-linux-x64-gnu": "^1.29.1"
     }
 <<<<<<< HEAD
 =======

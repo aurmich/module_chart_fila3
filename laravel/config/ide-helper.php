@@ -142,6 +142,7 @@ return [
     'model_locations' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'Modules/*/app/Models',
 =======
 <<<<<<< HEAD
@@ -167,6 +168,9 @@ return [
         //'app',
         'Modules/*/app/Models',
 >>>>>>> 93990a83 (rebase 1/1)
+=======
+        'app',
+>>>>>>> ad93170c (rebase 10)
     ],
 
     /*

@@ -520,6 +520,7 @@ return [
     'httpMethodsIgnored' => ['POST', 'PUT', 'PATCH', 'DELETE'],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ];
 =======
 <<<<<<< HEAD
@@ -549,3 +550,6 @@ return [
 =======
 ];
 >>>>>>> 93990a83 (rebase 1/1)
+=======
+];
+>>>>>>> ad93170c (rebase 10)

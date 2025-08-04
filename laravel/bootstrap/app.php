@@ -49,6 +49,7 @@ return Application::configure(basePath: dirname(__DIR__))
     )
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     ->withMiddleware(function (Middleware $middleware) {
 =======
 <<<<<<< HEAD
@@ -62,9 +63,12 @@ return Application::configure(basePath: dirname(__DIR__))
 =======
     ->withMiddleware(function (Middleware $middleware): void {
 >>>>>>> 93990a83 (rebase 1/1)
+=======
+    ->withMiddleware(function (Middleware $middleware) {
+>>>>>>> ad93170c (rebase 10)
         //
     })
-    ->withExceptions(function (Exceptions $exceptions): void {
+    ->withExceptions(function (Exceptions $exceptions) {
         //
 <<<<<<< HEAD
 =======

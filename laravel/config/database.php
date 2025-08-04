@@ -62,15 +62,6 @@ return [
             'synchronous' => null,
         ],
 
-        'testing' => [
-            'driver' => 'sqlite',
-            'url' => env('DATABASE_URL'),
-            'database' => env('DB_DATABASE', database_path('database.sqlite')),
-            'prefix' => '',
-            'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
-            'foreign_key_constraints' => true,
-        ],
-
         'mysql' => [
             'driver' => 'mysql',
 <<<<<<< HEAD
@@ -334,6 +325,7 @@ return [
             'cluster' => env('REDIS_CLUSTER', 'redis'),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
 =======
 <<<<<<< HEAD
@@ -353,6 +345,9 @@ return [
 =======
             'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel')).'-database-'),
 >>>>>>> 93990a83 (rebase 1/1)
+=======
+            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
+>>>>>>> ad93170c (rebase 10)
             'persistent' => env('REDIS_PERSISTENT', false),
         ],
 

@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -18,6 +19,9 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Str;
 =======
 >>>>>>> 93990a83 (rebase 1/1)
+=======
+use Illuminate\Support\Str;
+>>>>>>> ad93170c (rebase 10)
 
 /**
  * 
@@ -177,6 +181,7 @@ class User extends Authenticatable
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -184,6 +189,8 @@ class User extends Authenticatable
 =======
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> ad93170c (rebase 10)
 
     /**
      * Get the user's initials
@@ -197,6 +204,7 @@ class User extends Authenticatable
             ->implode('');
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -208,4 +216,6 @@ class User extends Authenticatable
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 93990a83 (rebase 1/1)
+=======
+>>>>>>> ad93170c (rebase 10)
 }

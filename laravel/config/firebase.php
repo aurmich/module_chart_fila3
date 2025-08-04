@@ -216,6 +216,7 @@ return [
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -223,10 +224,13 @@ return [
 =======
 >>>>>>> e9942509 (fix: session)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> ad93170c (rebase 10)
                 'guzzle_middlewares' => [
                     // MyInvokableMiddleware::class,
                     // [MyMiddleware::class, 'static_method'],
                 ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -242,6 +246,8 @@ return [
 =======
                 'guzzle_middlewares' => [],
 >>>>>>> 93990a83 (rebase 1/1)
+=======
+>>>>>>> ad93170c (rebase 10)
             ],
         ],
     ],

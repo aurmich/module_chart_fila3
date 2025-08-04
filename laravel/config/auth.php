@@ -130,6 +130,7 @@ return [
     |
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     | Here you may define the amount of seconds before a password confirmation
 =======
 <<<<<<< HEAD
@@ -149,6 +150,9 @@ return [
 =======
     | Here you may define the number of seconds before a password confirmation
 >>>>>>> 93990a83 (rebase 1/1)
+=======
+    | Here you may define the amount of seconds before a password confirmation
+>>>>>>> ad93170c (rebase 10)
     | window expires and users are asked to re-enter their password via the
     | confirmation screen. By default, the timeout lasts for three hours.
     |

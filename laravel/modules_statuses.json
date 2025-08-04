@@ -1,6 +1,7 @@
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -11,10 +12,14 @@
     "Dental": true,
     "Reporting": true,
 >>>>>>> 93990a83 (rebase 1/1)
+=======
+>>>>>>> ad93170c (rebase 10)
     "Activity": true,
     "Chart": true,
     "Cms": true,
+    "DbForge": true,
     "Gdpr": true,
+<<<<<<< HEAD
 <<<<<<< HEAD
     "Geo": true,
 <<<<<<< HEAD
@@ -39,10 +44,14 @@
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 93990a83 (rebase 1/1)
+=======
+    "Geo": true,
+>>>>>>> ad93170c (rebase 10)
     "Job": true,
     "Lang": true,
     "Media": true,
     "Notify": true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -93,4 +102,12 @@
     "Geo": true,
     "DbForge": true
 >>>>>>> 93990a83 (rebase 1/1)
+=======
+    "SaluteMo": true,
+    "SaluteOra": true,
+    "Tenant": true,
+    "UI": true,
+    "User": true,
+    "Xot": true
+>>>>>>> ad93170c (rebase 10)
 }

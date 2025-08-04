@@ -100,6 +100,7 @@ return [
             'handler' => StreamHandler::class,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -136,6 +137,12 @@ return [
             ],
             'formatter' => env('LOG_STDERR_FORMATTER'),
 >>>>>>> 93990a83 (rebase 1/1)
+=======
+            'formatter' => env('LOG_STDERR_FORMATTER'),
+            'with' => [
+                'stream' => 'php://stderr',
+            ],
+>>>>>>> ad93170c (rebase 10)
             'processors' => [PsrLogMessageProcessor::class],
         ],
 

@@ -6,6 +6,7 @@ namespace Modules\Xot\Filament\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Facades\Filament;
 =======
 <<<<<<< HEAD
@@ -22,6 +23,9 @@ use Filament\Facades\Filament;
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 93990a83 (rebase 1/1)
+=======
+use Filament\Facades\Filament;
+>>>>>>> ad93170c (rebase 10)
 use Filament\Pages\Dashboard;
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
@@ -45,6 +49,7 @@ class MainDashboard extends Dashboard
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 <<<<<<< HEAD
@@ -61,6 +66,9 @@ class MainDashboard extends Dashboard
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 93990a83 (rebase 1/1)
+=======
+        
+>>>>>>> ad93170c (rebase 10)
         Assert::notNull($user = auth()->user(), '['.__LINE__.']['.class_basename($this).']');
         $modules = $user->roles->filter(
             static function ($item) {
