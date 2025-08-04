@@ -260,6 +260,9 @@ return array (
       'label' => 'search',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
     'confirmation' => 
     array (
       'label' => 'confirmation',
@@ -268,6 +271,7 @@ return array (
     array (
       'label' => 'date_time',
     ),
+<<<<<<< HEAD
     'confirm' => 
     array (
       'label' => 'confirm',
@@ -306,6 +310,8 @@ return array (
     ),
 =======
 >>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
+=======
+>>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
   ),
   'fields' => 
   array (
@@ -331,6 +337,9 @@ return array (
       'description' => 'appointment_type',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
     'time' => 
     array (
       'description' => 'time',
@@ -345,6 +354,7 @@ return array (
       'helper_text' => 'date',
       'description' => 'date',
     ),
+<<<<<<< HEAD
     'cap' => 
     array (
       'description' => 'cap',
@@ -458,6 +468,8 @@ return array (
     array (
       'label' => 'submit',
     ),
+=======
+>>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
   ),
 );
 >>>>>>> aurmich/dev

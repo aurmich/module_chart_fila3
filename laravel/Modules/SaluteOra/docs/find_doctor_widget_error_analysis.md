@@ -91,6 +91,7 @@ Il widget `FindDoctorAndAppointmentWidget` è stato implementato in modo diverso
 - Mantenere la coerenza con il design system esistente
 - Seguire le best practices di Filament e del modulo Xot
 - Aggiornare regolarmente la documentazione quando si fanno modifiche
+<<<<<<< HEAD
 - Separare gli step del wizard in metodi dedicati per migliorare la manutenibilità
 
 # Analisi errori FindDoctorAndAppointmentWidget.php
@@ -141,3 +142,6 @@ Il widget `FindDoctorAndAppointmentWidget` è stato implementato in modo diverso
 ---
 
 **Ultimo aggiornamento:** {{DATA}} 
+=======
+- Separare gli step del wizard in metodi dedicati per migliorare la manutenibilità 
+>>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)

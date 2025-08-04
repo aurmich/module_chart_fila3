@@ -1,10 +1,13 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
 return [
     'title' => 'Find a dentist',
     'messages' => [
@@ -15,6 +18,7 @@ return [
     'fields' => [
         'region' => [
             'label' => 'Region',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'placeholder' => 'Select a region',
         ],
@@ -38,6 +42,8 @@ return [
             'label' => 'Time',
             'placeholder' => 'Select a time',
 =======
+=======
+>>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
         ],
         'province' => [
             'label' => 'Province',
@@ -53,7 +59,10 @@ return [
         ],
         'time' => [
             'label' => 'Time',
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
         ],
     ],
     'steps' => [
@@ -71,7 +80,11 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 ];
 =======
 ]; 
 >>>>>>> aurmich/dev
+=======
+]; 
+>>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)

@@ -85,25 +85,39 @@ use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Wizard;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
 use Filament\Forms\Form;
+use Filament\Forms\Get;
+use Filament\Forms\Set;
 use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Modules\SaluteOra\Enums\AppointmentType;
 use Modules\SaluteOra\Enums\DentistSpecialization;
+use Modules\SaluteOra\Models\Region;
+use Modules\SaluteOra\Models\Province;
+use Modules\SaluteOra\Models\City;
+use Modules\SaluteOra\Models\Cap;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Spatie\Permission\Traits\HasRoles;
 
 /**
  * Widget per la ricerca e prenotazione del dentista.
- * ATTENZIONE: Non usare ->label(), ->placeholder(), __() nei form component.
- * La localizzazione è gestita centralmente tramite LangServiceProvider e file di lingua.
- * Le chiavi dei campi devono corrispondere ai file di lingua del modulo.
- * Vedi anche: ../../../../Xot/docs/filament_widget_regole.md
+ *
+ * Policy e principi seguiti:
+ * - Clean Code: ogni step in una funzione separata. Vedi SaluteOra/docs/clean-code.md, wizard-clean-code.md
+ * - DRY: logica centralizzata. Vedi SaluteOra/docs/filosofia-politica-zen.md
+ * - KISS: semplificazione e responsabilità singola
+ * - NESSUN uso di ->label(), placeholder(), __()
+ * - Traduzioni solo tramite file lang del modulo
+ * - Enum per select statiche
+ * - PSR-12, strict_types, niente protected $casts/dates
+ * - Collegamenti: Xot/docs/filosofia.md, Xot/docs/clean-code.md
  */
-class FindDoctorAndAppointmentWidget extends XotBaseWidget
+class FindDoctorAndAppointmentWidget extends XotBaseWidget implements HasForms
 {
-    //use HasRoles;
+    use InteractsWithForms;
 
     /**
      * The sort order of the widget in the sidebar.
@@ -163,8 +177,14 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
 
     public function mount(): void
     {
+<<<<<<< HEAD
 >>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
         $this->form->fill();
+=======
+        $this->form = Form::make($this)
+            ->schema($this->getFormSchema())
+            ->statePath('data');
+>>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
     }
 
     /**
@@ -219,8 +239,12 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
 =======
      * Get the form schema for the widget.
      *
+<<<<<<< HEAD
      * @return array<int|string, \Filament\Forms\Components\Component>
 >>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
+=======
+     * @return array<string, \Filament\Forms\Components\Component>
+>>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
      */
     public function getFormSchema(): array
     {
@@ -468,11 +492,6 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
         ];
     }
 
-    /**
-     * Get the search step schema.
-     *
-     * @return array<int, \Filament\Forms\Components\Component>
-     */
     protected function getSearchStep(): array
     {
         return [
@@ -480,22 +499,41 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
                 ->schema([
                     Fieldset::make('dentist_search')
                         ->schema([
-                            Select::make('specialization')
-                                ->options(DentistSpecialization::class)
+                            Select::make('region')
+                                ->options(fn () => Region::all()->pluck('name', 'id'))
                                 ->searchable()
-                                ->required(),
-                            TextInput::make('location')
-                                ->required(),
-                            Select::make('appointment_type')
-                                ->options(AppointmentType::class)
                                 ->required()
-                                ->default(AppointmentType::CHECKUP->value),
+                                ->live()
+                                ->afterStateUpdated(fn (Set $set) => $set('province', null)),
+                            
+                            Select::make('province')
+                                ->options(fn (Get $get) => Province::where('region_id', $get('region'))->pluck('name', 'id'))
+                                ->searchable()
+                                ->required()
+                                ->live()
+                                ->afterStateUpdated(fn (Set $set) => $set('city', null))
+                                ->visible(fn (Get $get) => filled($get('region'))),
+                            
+                            Select::make('city')
+                                ->options(fn (Get $get) => City::where('province_id', $get('province'))->pluck('name', 'id'))
+                                ->searchable()
+                                ->required()
+                                ->live()
+                                ->afterStateUpdated(fn (Set $set) => $set('cap', null))
+                                ->visible(fn (Get $get) => filled($get('province'))),
+                            
+                            Select::make('cap')
+                                ->options(fn (Get $get) => Cap::where('city_id', $get('city'))->pluck('code', 'id'))
+                                ->searchable()
+                                ->required()
+                                ->visible(fn (Get $get) => filled($get('city'))),
                         ]),
                 ])
 >>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
         ];
     }
 
+<<<<<<< HEAD
     /**
 <<<<<<< HEAD
      * Aggiorna gli slot orari disponibili in base alla data selezionata
@@ -648,6 +686,8 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
      *
      * @return array<int, \Filament\Forms\Components\Component>
      */
+=======
+>>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
     protected function getDateTimeStep(): array
     {
         return [
@@ -659,29 +699,24 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
                                 ->required()
                                 ->minDate(now())
                                 ->live()
-                                ->afterStateUpdated(fn (callable $set) => $set('time', null)),
+                                ->afterStateUpdated(fn (Set $set) => $set('time', null)),
                             Select::make('time')
                                 ->options($this->availableSlots)
                                 ->required()
-                                ->disabled(fn (callable $get) => !$get('date')),
+                                ->disabled(fn (Get $get) => !$get('date')),
                             $this->getLoadingState()
                         ]),
                 ])
         ];
     }
 
-    /**
-     * Get the confirmation step schema.
-     *
-     * @return array<int, \Filament\Forms\Components\Component>
-     */
     protected function getConfirmationStep(): array
     {
         return [
             Wizard\Step::make('confirmation')
                 ->schema([
                     Placeholder::make('confirmation_message')
-                        ->content(fn (callable $get) => $this->getConfirmationContent($get)),
+                        ->content(fn (Get $get) => $this->getConfirmationContent($get)),
                 ])
         ];
     }
@@ -746,49 +781,26 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
         }
     }
 
-    /**
-     * Create a new appointment.
-     */
     protected function createAppointment(array $data): array
     {
-        return [
-            'id' => uniqid('appt_', true),
-            'reference' => 'APT-' . strtoupper(uniqid()),
-            'date' => $data['appointment_date'] ?? null,
-            'time' => $data['appointment_time'] ?? null,
-            'type' => $data['appointment_type'] ?? null,
-            'specialization' => $data['specialization'] ?? null,
-            'location' => $data['location'] ?? null,
-            'status' => 'scheduled',
-            'created_at' => now(),
-            'updated_at' => now(),
-        ];
+        // TODO: Implement appointment creation
+        return [];
     }
 
-    /**
-     * Send confirmation for the booked appointment.
-     */
     protected function sendConfirmation(array $appointment): void
     {
-        // Implementation for sending confirmation
-        // This could send an email, SMS, or notification to the patient
+        // TODO: Implement confirmation sending
     }
 
-    /**
-     * Determine if the widget should be visible to the current user.
-     *
-     * @return bool
-     */
     public static function canView(): bool
     {
-        if (!Auth::check()) {
-            return false;
-        }
+        return true;
+    }
 
-        /** @var \Modules\Xot\Models\User $user */
-        $user = Auth::user();
-
-        return $user->hasRole('patient');
+    protected function getConfirmationContent(callable $get): string
+    {
+        // TODO: Implement confirmation content
+        return '';
     }
 >>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
 }
