@@ -93,10 +93,14 @@
                 <div class="mt-6 grid grid-cols-7 text-xs/6 text-gray-500">
                     @foreach($weekdays as $weekday)
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <div class="uppercase">{{ $weekday }}</div>
 =======
                         <div>{{ $weekday }}</div>
 >>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+                        <div class="uppercase">{{ $weekday }}</div>
+>>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
                     @endforeach
                 </div>
                 
@@ -113,6 +117,7 @@
                                     // ✅ Pre-calcolo classi CSS per performance
                                     if ($isSelected) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         $classes = 'relative py-2 px-1 text-sm font-semibold bg-[#FF5F7E] text-white ring-2 ring-[#FF5F7E] shadow-lg z-10';
                                         $onclick = "deSelectDate()";
                                     } elseif ($isEnabled && $isCurrentMonth) {
@@ -126,8 +131,11 @@
                                         $onclick = "deSelectDate()";
 =======
                                         $classes = 'relative py-2 px-1 text-sm font-semibold bg-blue-600 text-white ring-2 ring-blue-600 ring-offset-2 shadow-lg z-10';
+=======
+                                        $classes = 'relative py-2 px-1 text-sm font-semibold bg-[#FF5F7E] text-white ring-2 ring-[#FF5F7E] shadow-lg z-10';
+>>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
                                     } elseif ($isEnabled && $isCurrentMonth) {
-                                        $classes = 'relative py-2 px-1 text-sm font-semibold bg-green-50 text-green-700 border-2 border-green-200 hover:bg-green-100 cursor-pointer hover:scale-105 transform transition-all duration-200';
+                                        $classes = 'relative py-2 px-1 text-sm font-semibold bg-blue-100 text-[#272C4D] border-2 border-blue-300 cursor-pointer hover:scale-105 transform transition-all duration-200';
                                     } elseif ($isCurrentMonth) {
                                         $classes = 'relative py-2 px-1 text-sm font-medium bg-gray-50 text-gray-400 border border-gray-200 cursor-not-allowed opacity-60';
                                     } else {
@@ -159,6 +167,7 @@
                                     @if($isSelected)
                                         {{-- Barra pulsante blu sotto la data selezionata --}}
                                         <div class="absolute bottom-0 left-0 right-0 h-1 bg-white"></div>
+<<<<<<< HEAD
 =======
                                     @if($isEnabled && $isCurrentMonth)
                                         <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-green-500 rounded-full"></span>
@@ -179,6 +188,8 @@
                                         {{-- Barra pulsante blu sotto la data selezionata --}}
                                         <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-b-md shadow-inner animate-pulse"></div>
 >>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
+=======
+>>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
                                     @endif
                                 </button>
                             @endforeach

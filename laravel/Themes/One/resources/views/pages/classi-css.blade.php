@@ -155,10 +155,14 @@
 <div class="mx-60">mx 60</div>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
 <div class="m-auto">mx auto</div>
 <div class="ring-[#FF5F7E]">ring pink</div>
 <div class="shadow-[0_10px_40px_rgba(0,0,0,0.2)]">shadow</div>
 <div class="p-9">padding 9</div>
+<<<<<<< HEAD
 <div class="bg-[url('/img/inmp-logo-trasparenza.svg')]">bg inmp</div>
 <div class="my-5">margin top bottom 5</div>
 <div class="w-10/12">width 83%</div>
@@ -215,3 +219,6 @@
 <div class="m-auto">mx 60</div>
 </x-layouts.app>
 >>>>>>> 3ad9917a (- fix styles registration)
+=======
+</x-layouts.app>
+>>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
