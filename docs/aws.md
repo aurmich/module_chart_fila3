@@ -27,6 +27,7 @@ http://ec2-54-194-72-103.eu-west-1.compute.amazonaws.com/it
 nuova macchina
 http://ec2-54-217-13-148.eu-west-1.compute.amazonaws.com/it
 <<<<<<< HEAD
+<<<<<<< HEAD
 terza
 ec2-54-247-235-109.eu-west-1.compute.amazonaws.com
 quarta
@@ -38,6 +39,10 @@ http://ec2-34-247-221-151.eu-west-1.compute.amazonaws.com/it
 http://staging.saluteoraleingravidanza.it/
 =======
 >>>>>>> e0966b44 (add new site url)
+=======
+terza
+ec2-54-247-235-109.eu-west-1.compute.amazonaws.com
+>>>>>>> 460b44f0 (add new site url)
 
 
 se si vedono dei |--35--
