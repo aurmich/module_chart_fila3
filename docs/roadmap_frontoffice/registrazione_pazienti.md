@@ -11,10 +11,7 @@ Il sistema di registrazione pazienti di SaluteOra garantisce un onboarding fluid
 
 ### Step 1: Landing e Call-to-Action
 ```yaml
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Entry Points
 Homepage: Bottone "Registrati" prominente
 Login Page: Link "Non hai un account? Registrati"
@@ -45,10 +42,7 @@ class RegistrationStepOne extends FormRequest
 
 ### Step 3: Validazione e Controlli Sicurezza
 ```yaml
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Validation Rules
 Email Uniqueness: Controllo duplicati nel database
 Password Strength: Minimo 8 caratteri, maiuscole, numeri
@@ -99,10 +93,7 @@ public function createPatientAccount(array $validatedData)
 
 ### Step 5: Email Verification Flow
 ```yaml
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Email Verification Process
 1. Sistema genera token sicuro univoco
 2. Invia email con link di verifica personalizzato
@@ -171,10 +162,7 @@ const RegistrationForm = () => {
 
 ### Data Protection
 ```yaml
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Privacy Compliance
 GDPR: Consenso granulare per processing dati
 Encryption: AES-256 per dati sensibili in storage
@@ -253,10 +241,7 @@ CREATE TABLE patient_profiles (
 
 ### Conversion Funnel
 ```yaml
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Registration Metrics (Current)
 Landing Page Views: 12,547/month
 Registration Starts: 4,321/month (34.4% conversion)
@@ -269,10 +254,7 @@ Total Conversion: 21.4% (landing to verified account)
 
 ### Quality Metrics
 ```yaml
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Account Quality
 Active After 30 Days: 87.3% verified accounts
 First Appointment Booked: 76.2% within 7 days
@@ -328,10 +310,7 @@ class RegistrationTest extends TestCase
 
 ### Common Issues Resolution
 ```yaml
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # FAQ Integration
 Email Non Ricevuta: Istruzioni check spam/promotion folders
 Password Troppo Debole: Requisiti chiari con esempi
@@ -367,7 +346,3 @@ Problemi Mobile: Download app suggestion e troubleshooting
 - [Verifica Email](./verifica_email.md)
 - [Recupero Password](./recupero_password.md)
 
-<<<<<<< HEAD
-=======
-*Ultimo aggiornamento: Dicembre 2024*
->>>>>>> aurmich/dev

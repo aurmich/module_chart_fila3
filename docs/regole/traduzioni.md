@@ -25,38 +25,24 @@ Modules/
 ### ✅ FARE QUESTO
 
 ```php
-<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
 
-=======
-// lang/it/fields.php
->>>>>>> aurmich/dev
 return [
     'name' => [
         'label' => 'Nome',
         'placeholder' => 'Inserisci il nome',
         'help' => 'Il nome completo dell\'utente',
         'tooltip' => 'Questo campo è obbligatorio',
-<<<<<<< HEAD
         'helper_text' => '', // Se uguale alla chiave, altrimenti testo descrittivo
     ],
 ];
-=======
-    ],
-];
-
-// Nel codice
-Forms\Components\TextInput::make('name')
-    // Non usare ->label() o altri metodi di testo
->>>>>>> aurmich/dev
 ```
 
 ### ❌ NON FARE QUESTO
 
 ```php
-<<<<<<< HEAD
 // Sintassi array vecchia
 return array(
     'name' => 'Nome',
@@ -72,12 +58,6 @@ return [
     'label' => 'Nome',
     'helper_text' => 'name', // ERRORE: deve essere vuoto o diverso
 ];
-=======
-Forms\Components\TextInput::make('name')
-    ->label('Nome')
-    ->placeholder('Inserisci il nome')
-    ->helperText('Il nome completo dell\'utente')
->>>>>>> aurmich/dev
 ```
 
 ## Struttura delle Chiavi
@@ -89,10 +69,7 @@ Forms\Components\TextInput::make('name')
     'placeholder' => 'Testo placeholder',
     'help' => 'Testo di aiuto',
     'tooltip' => 'Testo tooltip',
-<<<<<<< HEAD
     'helper_text' => '', // Se uguale alla chiave, altrimenti testo descrittivo
-=======
->>>>>>> aurmich/dev
     'validation' => [
         'required' => 'Il campo è obbligatorio',
         'min' => 'Il campo deve contenere almeno :min caratteri',
@@ -106,11 +83,8 @@ Forms\Components\TextInput::make('name')
     'label' => 'Etichetta menu',
     'group' => 'Gruppo menu',
     'icon' => 'heroicon-o-users',
-<<<<<<< HEAD
     'tooltip' => 'Descrizione del menu',
     'helper_text' => '',
-=======
->>>>>>> aurmich/dev
 ],
 ```
 
@@ -129,7 +103,6 @@ Forms\Components\TextInput::make('name')
 ],
 ```
 
-<<<<<<< HEAD
 ## Regole Critiche
 
 ### 1. Strict Types OBBLIGATORIO
@@ -218,8 +191,6 @@ TextInput::make('name')
 - **SEMPRE** mantenere la stessa struttura in tutte le lingue
 - **SEMPRE** verificare che tutte le chiavi esistano in tutte le lingue
 
-=======
->>>>>>> aurmich/dev
 ## Best Practices
 
 1. **Organizzazione**
@@ -237,7 +208,6 @@ TextInput::make('name')
    - Rimuovere traduzioni non utilizzate
    - Documentare le modifiche
 
-<<<<<<< HEAD
 4. **Controlli Qualità**
    - Verificare che non ci siano traduzioni hardcoded
    - Controllare che tutte le lingue abbiano le stesse sezioni
@@ -278,8 +248,6 @@ TextInput::make('name')
 - [ ] Testare funzionalità in ambiente di sviluppo
 - [ ] Aggiornare documentazione
 
-=======
->>>>>>> aurmich/dev
 ## Collegamenti Bidirezionali
 
 ### Collegamenti nella Root
@@ -289,11 +257,8 @@ TextInput::make('name')
 ### Collegamenti ai Moduli
 - [LangServiceProvider](../../laravel/Modules/Lang/docs/service-provider.md)
 - [Traduzioni Notify](../../laravel/Modules/Notify/docs/translations.md)
-<<<<<<< HEAD
 - [Regole Xot](../../laravel/Modules/Xot/docs/translation_rules.md)
 - [Regole User](../../laravel/Modules/User/docs/translation_keys_rules.md)
-=======
->>>>>>> aurmich/dev
 
 ## Note Importanti
 
@@ -301,7 +266,6 @@ TextInput::make('name')
 2. Mantenere le traduzioni aggiornate
 3. Seguire la struttura standard
 4. Documentare le modifiche
-<<<<<<< HEAD
 5. Testare tutte le lingue
 6. Preservare sempre il contenuto esistente
 7. Usare terminologia appropriata per il contesto
@@ -312,6 +276,3 @@ TextInput::make('name')
 **Ultimo aggiornamento**: Giugno 2025
 **Versione**: 2.0
 **Compatibilità**: Laravel 12.x, Filament 3.x 
-=======
-5. Testare tutte le lingue 
->>>>>>> aurmich/dev

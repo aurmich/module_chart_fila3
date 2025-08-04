@@ -135,10 +135,7 @@ La Fase 2 rappresenta il cuore funzionale di SaluteOra, implementando le funzion
 
 ### Microservices Evolution
 ```yaml
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Service Architecture
 User Service: Registration, authentication, profile management
 Booking Service: Appointment scheduling e availability management
@@ -156,10 +153,7 @@ Shared Libraries: Common utilities e business logic
 
 ### Data Architecture
 ```yaml
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Database Design
 User Database: Patient profiles, provider information
 Booking Database: Appointments, availability, scheduling rules
@@ -190,10 +184,7 @@ CQRS: Separated read/write patterns per performance
 
 ### Frontend Improvements
 ```yaml
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Performance Optimizations
 Code Splitting: Route-based e component-based splitting
 Lazy Loading: Progressive loading per large datasets
@@ -223,10 +214,7 @@ Loading States: Smooth user experience durante operations
 
 ### Testing Strategy
 ```yaml
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Automated Testing
 Unit Tests: 92% code coverage per business logic
 Integration Tests: API endpoints e service interactions
@@ -243,10 +231,7 @@ Mobile Testing: iOS e Android device validation
 
 ### Monitoring & Analytics
 ```yaml
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Application Monitoring
 Performance: Real-time response time tracking
 Error Tracking: Automatic error detection e alerting
@@ -276,10 +261,7 @@ Security Monitoring: Intrusion detection e audit logs
 
 ### Financial Operations
 ```yaml
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Revenue Management
 Commission Structure: Transparent fee calculation
 Payout Processing: Automated settlement to practices
@@ -297,10 +279,7 @@ Marketing Costs: Performance-based acquisition spending
 
 ### Healthcare Data Protection
 ```yaml
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Data Security
 Encryption: AES-256 per data at rest
 Transport Security: TLS 1.3 per data in transit
@@ -330,10 +309,7 @@ Consent Management: Granular privacy controls
 
 ### Technical KPIs
 ```yaml
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Current Performance (Fase 2)
 Page Load Time: 1.8s average (improved from 2.1s)
 API Response Time: 234ms average (improved from 287ms)
@@ -350,10 +326,7 @@ Document Storage: 2.3TB con efficient retrieval
 
 ### Business KPIs
 ```yaml
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # User Engagement
 Monthly Active Users: 4,247 (growth +89% from Fase 1)
 Appointment Conversion: 73% (search to booking)
@@ -389,10 +362,7 @@ Revenue per User: €23.40 monthly
 
 ### Sprint Planning (Next 4 settimane)
 ```yaml
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Sprint 1 (Week 1-2)
 Notification System: Complete personalization engine
 Payment Integration: Subscription billing completion
@@ -422,10 +392,7 @@ Security: Final penetration testing e fixes
 
 ### Preparatory Activities
 ```yaml
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Technical Preparation
 API Standardization: RESTful API refinement per partner integration
 Data Architecture: Scalability planning per advanced features
@@ -464,7 +431,3 @@ Budget Planning: Fase 3 investment planning
 - [Integrazione Pagamenti](./integrazione_pagamenti.md)
 - [Documenti Digitali](./documenti_digitali.md)
 
-<<<<<<< HEAD
-=======
-*Ultimo aggiornamento: Dicembre 2024*
->>>>>>> aurmich/dev
