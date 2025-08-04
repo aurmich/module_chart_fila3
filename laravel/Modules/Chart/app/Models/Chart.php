@@ -47,12 +47,17 @@ use Webmozart\Assert\Assert;
  * @method static Builder|Chart newQuery()
  * @method static Builder|Chart query()
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
 =======
  * @property-read \Modules\Blog\Models\Profile|null $creator
  * @property-read \Modules\Blog\Models\Profile|null $updater
 >>>>>>> 54f4fa16 (.)
+=======
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
+>>>>>>> 345f8677 (phpstan)
  * @mixin \Eloquent
  */
 class Chart extends BaseModel

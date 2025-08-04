@@ -62,7 +62,11 @@ class SendNotificationJob implements ShouldQueue
         $this->tries = config('notify.queue.tries', 3);
         $this->timeout = config('notify.queue.retry_after', 60);
         $this->onQueue(config('notify.queue.queue', 'notifications'));
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> 345f8677 (phpstan)
     }
 
     /**

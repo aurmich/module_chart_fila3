@@ -119,6 +119,7 @@ class Address extends BaseModel
 {
     use HasFactory;
         
+<<<<<<< HEAD
     /**
      * The attributes that are mass assignable.
      *
@@ -126,6 +127,10 @@ class Address extends BaseModel
      */
     protected $fillable = [
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+    /** @var list<string> */
+   protected $fillable = [
+>>>>>>> 345f8677 (phpstan)
         'model_type',
         'model_id',
         'name',

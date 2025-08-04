@@ -33,7 +33,13 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\Notify\Models\MailTemplate;
 use Illuminate\Mail\Mailables\Attachment;
 use Spatie\MailTemplates\TemplateMailable;
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+use Spatie\MailTemplates\Interfaces\MailTemplateInterface;
+
+use function Safe\file_get_contents;
+>>>>>>> 345f8677 (phpstan)
 
 /**
  * @see https://github.com/spatie/laravel-database-mail-templates
@@ -41,6 +47,7 @@ use Spatie\MailTemplates\TemplateMailable;
 class SpatieEmail extends TemplateMailable
 {
     // use our custom mail template model
+<<<<<<< HEAD
 <<<<<<< HEAD
     /** @var class-string<MailTemplateInterface> */
     protected static  $templateModelClass = MailTemplate::class;
@@ -124,6 +131,10 @@ class SpatieEmail extends TemplateMailable
         return $envelope;
 =======
     protected static $templateModelClass = MailTemplate::class;
+=======
+    /** @var class-string<MailTemplateInterface> */
+    protected static  $templateModelClass = MailTemplate::class;
+>>>>>>> 345f8677 (phpstan)
     public string $slug;
      /** @var array<int, Attachment> */
     protected array $customAttachments = [];

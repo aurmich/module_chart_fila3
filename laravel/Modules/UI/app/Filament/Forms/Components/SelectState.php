@@ -14,6 +14,7 @@ use Filament\Tables\Columns\SelectColumn;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\ModelStates\HasStatesContract;
 =======
 >>>>>>> aurmich/dev
@@ -24,6 +25,9 @@ use Spatie\ModelStates\HasStatesContract;
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
 >>>>>>> d23ba493 (add calendar)
+=======
+use Spatie\ModelStates\HasStatesContract;
+>>>>>>> 345f8677 (phpstan)
 use Modules\SaluteOra\States\User\UserState;
 
 class SelectState extends Select
@@ -37,6 +41,7 @@ class SelectState extends Select
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->options(function (Model&HasStatesContract $record): array {
 =======
         $this->options(function (Model $record): array {
@@ -50,6 +55,9 @@ class SelectState extends Select
 =======
         $this->options(function (Model $record): array {
 >>>>>>> d23ba493 (add calendar)
+=======
+        $this->options(function (Model&HasStatesContract $record): array {
+>>>>>>> 345f8677 (phpstan)
             $name=$this->getName();
             $states=$record->getStatesFor($name)->toArray();
             /*
@@ -70,6 +78,7 @@ class SelectState extends Select
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             /**
              * @var array<int|string>
              * @phpstan-ignore argument.type
@@ -77,15 +86,20 @@ class SelectState extends Select
 =======
 >>>>>>> aurmich/dev
 =======
+=======
+>>>>>>> 345f8677 (phpstan)
             /**
              * @var array<int|string>
              * @phpstan-ignore-next-line
              */
+<<<<<<< HEAD
 >>>>>>> 345f8677 (phpstan)
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
 >>>>>>> d23ba493 (add calendar)
+=======
+>>>>>>> 345f8677 (phpstan)
             return array_combine($states, $states);
         });
        

@@ -4,11 +4,15 @@ namespace Modules\Notify\Notifications\Channels;
 
 use Illuminate\Notifications\Notification;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Log;
 =======
 use Modules\Notify\Actions\Telegram\BotTelegramAction;
 use Modules\Notify\Datas\TelegramMessageData;
 >>>>>>> 54f4fa16 (.)
+=======
+use Illuminate\Support\Facades\Log;
+>>>>>>> 345f8677 (phpstan)
 
 class TelegramChannel
 {
@@ -26,6 +30,7 @@ class TelegramChannel
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!is_object($notifiable) || !method_exists($notifiable, 'routeNotificationForTelegram')) {
             throw new \Exception('Il metodo routeNotificationForTelegram() non è definito nel notifiable.');
         }
@@ -39,6 +44,14 @@ class TelegramChannel
 
         $message = $notification->toTelegram($notifiable);
 >>>>>>> 54f4fa16 (.)
+=======
+        if (!is_object($notifiable) || !method_exists($notifiable, 'routeNotificationForTelegram')) {
+            throw new \Exception('Il metodo routeNotificationForTelegram() non è definito nel notifiable.');
+        }
+
+        // TODO: Implementare il metodo toTelegram nella notifica
+        $message = 'Messaggio Telegram placeholder';
+>>>>>>> 345f8677 (phpstan)
         $chatId = $notifiable->routeNotificationForTelegram();
 
         if (empty($chatId)) {
@@ -46,12 +59,16 @@ class TelegramChannel
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 345f8677 (phpstan)
         // TODO: Implementare BotTelegramAction e TelegramMessageData
         // Per ora, logghiamo solo l'intento di invio
         Log::info('Telegram notification would be sent', [
             'chat_id' => $chatId,
             'message' => $message
         ]);
+<<<<<<< HEAD
 =======
         $action = new BotTelegramAction();
         $result = $action->execute(new TelegramMessageData(
@@ -63,5 +80,7 @@ class TelegramChannel
             throw new \Exception('Errore nell\'invio del messaggio Telegram: ' . ($result['error'] ?? 'Errore sconosciuto'));
         }
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 345f8677 (phpstan)
     }
 }

@@ -8,6 +8,7 @@ use Webmozart\Assert\Assert;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Config;
 =======
 >>>>>>> aurmich/dev
@@ -16,6 +17,9 @@ use Illuminate\Support\Facades\Config;
 >>>>>>> 345f8677 (phpstan)
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+use Illuminate\Support\Facades\Config;
+>>>>>>> 345f8677 (phpstan)
 
 class GetModulePathByGeneratorAction
 {
@@ -24,6 +28,7 @@ class GetModulePathByGeneratorAction
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $relativePath = Config::string('modules.paths.generator.'.$generatorPath.'.path');
 =======
         $relativePath = config('modules.paths.generator.'.$generatorPath.'.path');
@@ -36,6 +41,9 @@ class GetModulePathByGeneratorAction
 =======
         $relativePath = config('modules.paths.generator.'.$generatorPath.'.path');
 >>>>>>> 54f4fa16 (.)
+=======
+        $relativePath = Config::string('modules.paths.generator.'.$generatorPath.'.path');
+>>>>>>> 345f8677 (phpstan)
 
         $res = module_path($moduleName, $relativePath);
 =======

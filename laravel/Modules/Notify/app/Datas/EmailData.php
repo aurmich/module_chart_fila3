@@ -22,10 +22,14 @@ class EmailData extends Data
     public string $body_html;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public string $body='';
 =======
     public string $body;
 >>>>>>> 54f4fa16 (.)
+=======
+    public string $body='';
+>>>>>>> 345f8677 (phpstan)
 
     public array $attachments = [];
 
@@ -74,10 +78,14 @@ class EmailData extends Data
     public function getMimeEmail(): MimeEmail
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ( $this->body=='') {
 =======
         if (!isset($this->body)) {
 >>>>>>> 54f4fa16 (.)
+=======
+        if ( $this->body=='') {
+>>>>>>> 345f8677 (phpstan)
             $this->body = strip_tags($this->body_html);
         }
 

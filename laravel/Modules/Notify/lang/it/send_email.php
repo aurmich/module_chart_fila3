@@ -268,6 +268,7 @@ return array (
       'description' => 'Oggetto email',
       'helper_text' => 'Inserisci l\'oggetto dell\'email',
       'label' => 'Oggetto',
+<<<<<<< HEAD
       'placeholder' => 'subject',
 =======
       'description' => 'subject',
@@ -275,6 +276,9 @@ return array (
       'placeholder' => 'subject',
       'label' => 'subject',
 >>>>>>> c0c82b7e (- updated template email)
+=======
+      'placeholder' => 'Inserisci l\'oggetto dell\'email',
+>>>>>>> 345f8677 (phpstan)
     ),
   ),
   'actions' => 

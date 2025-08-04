@@ -10,9 +10,13 @@ use Illuminate\Support\Arr;
 use Webmozart\Assert\Assert;
 use Modules\Xot\Datas\XotData;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Collection;
 =======
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+use Illuminate\Support\Collection;
+>>>>>>> 345f8677 (phpstan)
 use Nwidart\Modules\Facades\Module;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;

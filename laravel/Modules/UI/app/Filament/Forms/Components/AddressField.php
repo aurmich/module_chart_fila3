@@ -51,15 +51,20 @@ class AddressField extends Forms\Components\Field
 >>>>>>> 345f8677 (phpstan)
 =======
             
-            if ($record && method_exists($record, 'getRelationValue')) {
+            //if ($record && method_exists($record, 'getRelationValue')) {
                 $relationship = $this->getRelationship();
+<<<<<<< HEAD
                 if ($relationship && $record->relationLoaded($relationship)) {
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+                if ($relationship && $record?->relationLoaded($relationship)) {
+>>>>>>> 345f8677 (phpstan)
                     $address = $record->getRelationValue($relationship);
                     if (null !== $address && is_object($address) && method_exists($address, 'toArray')) {
                         $data = $address->toArray();
                     }
                 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -99,6 +104,9 @@ class AddressField extends Forms\Components\Field
 =======
             }
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+            //}
+>>>>>>> 345f8677 (phpstan)
         });
 
         $this->dehydrated(false);
@@ -129,6 +137,7 @@ class AddressField extends Forms\Components\Field
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $record?->touch();
 =======
         $record->touch();
@@ -139,6 +148,9 @@ class AddressField extends Forms\Components\Field
 =======
         $record->touch();
 >>>>>>> 54f4fa16 (.)
+=======
+        $record?->touch();
+>>>>>>> 345f8677 (phpstan)
     }
 
     public function getChildComponents(): array

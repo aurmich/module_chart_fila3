@@ -16,9 +16,13 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use function Safe\json_decode;
 =======
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+use function Safe\json_decode;
+>>>>>>> 345f8677 (phpstan)
 
 /**
  * Servizio per la gestione dei dati geografici.
@@ -69,6 +73,7 @@ class GeoDataService
     public function getRegions(): Collection
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var Collection<int, array{name: string, code: string}> $result */
         $result = Cache::remember(
             self::CACHE_KEY_REGIONS,
@@ -79,11 +84,20 @@ class GeoDataService
         return $result;
 =======
         return Cache::remember(
+=======
+        /** @var Collection<int, array{name: string, code: string}> $result */
+        $result = Cache::remember(
+>>>>>>> 345f8677 (phpstan)
             self::CACHE_KEY_REGIONS,
             self::CACHE_TTL,
             fn () => $this->loadData()->pluck('name', 'code')
         );
+<<<<<<< HEAD
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+
+        return $result;
+>>>>>>> 345f8677 (phpstan)
     }
 
     /**
@@ -96,6 +110,7 @@ class GeoDataService
     {
         $cacheKey = sprintf(self::CACHE_KEY_PROVINCES, $regionCode);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         /** @var Collection<int, array{name: string, code: string}> $result */
         $result = Cache::remember(
@@ -121,6 +136,10 @@ class GeoDataService
         return $result;
 =======
         return Cache::remember(
+=======
+        /** @var Collection<int, array{name: string, code: string}> $result */
+        $result = Cache::remember(
+>>>>>>> 345f8677 (phpstan)
             $cacheKey,
             self::CACHE_TTL,
             function () use ($regionCode) {
@@ -128,7 +147,12 @@ class GeoDataService
                 return $region ? collect($region['provinces'])->pluck('name', 'code') : collect();
             }
         );
+<<<<<<< HEAD
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+
+        return $result;
+>>>>>>> 345f8677 (phpstan)
     }
 
     /**
@@ -141,6 +165,7 @@ class GeoDataService
     {
         $cacheKey = sprintf(self::CACHE_KEY_CITIES, $provinceCode);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         /** @var Collection<int, array{name: string, code: string}> $result */
         $result = Cache::remember(
@@ -168,6 +193,10 @@ class GeoDataService
         return $result;
 =======
         return Cache::remember(
+=======
+        /** @var Collection<int, array{name: string, code: string}> $result */
+        $result = Cache::remember(
+>>>>>>> 345f8677 (phpstan)
             $cacheKey,
             self::CACHE_TTL,
             function () use ($provinceCode) {
@@ -178,7 +207,12 @@ class GeoDataService
                 return $province ? collect($province['cities'])->pluck('name', 'code') : collect();
             }
         );
+<<<<<<< HEAD
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+
+        return $result;
+>>>>>>> 345f8677 (phpstan)
     }
 
     /**
@@ -192,6 +226,7 @@ class GeoDataService
     {
         $cacheKey = sprintf(self::CACHE_KEY_CAP, $provinceCode, $cityCode);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         /** @var string|null $result */
         $result = Cache::remember(
@@ -223,6 +258,10 @@ class GeoDataService
         return $result;
 =======
         return Cache::remember(
+=======
+        /** @var string|null $result */
+        $result = Cache::remember(
+>>>>>>> 345f8677 (phpstan)
             $cacheKey,
             self::CACHE_TTL,
             function () use ($provinceCode, $cityCode) {
@@ -240,7 +279,12 @@ class GeoDataService
                 return $city ? $city['cap'] : null;
             }
         );
+<<<<<<< HEAD
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+
+        return $result;
+>>>>>>> 345f8677 (phpstan)
     }
 
     /**
@@ -256,15 +300,20 @@ class GeoDataService
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var array $data */
 =======
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+        /** @var array $data */
+>>>>>>> 345f8677 (phpstan)
         $data = json_decode(File::get(base_path(self::JSON_PATH)), true);
 
         if (!$this->validator->checkIntegrity($data)) {
             throw new \RuntimeException('Il file JSON dei comuni non è valido');
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         /** @var Collection<int, array> $result */
         $result = new Collection($data['regions']);
@@ -273,6 +322,12 @@ class GeoDataService
 =======
         return collect($data['regions']);
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+        /** @var Collection<int, array> $result */
+        $result = collect($data['regions']);
+
+        return $result;
+>>>>>>> 345f8677 (phpstan)
     }
 
     /**
@@ -284,6 +339,7 @@ class GeoDataService
     {
         Cache::forget(self::CACHE_KEY_REGIONS);
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Nota: forgetPattern non esiste in Laravel Cache, usiamo forget per le chiavi specifiche
         // In un'implementazione reale, dovremmo mantenere traccia delle chiavi create
 =======
@@ -291,5 +347,9 @@ class GeoDataService
         Cache::forgetPattern(self::CACHE_KEY_CITIES . '*');
         Cache::forgetPattern(self::CACHE_KEY_CAP . '*');
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+        // Nota: forgetPattern non esiste in Laravel Cache, usiamo forget per le chiavi specifiche
+        // In un'implementazione reale, dovremmo mantenere traccia delle chiavi create
+>>>>>>> 345f8677 (phpstan)
     }
 } 

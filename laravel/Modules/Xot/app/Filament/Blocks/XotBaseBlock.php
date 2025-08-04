@@ -7,6 +7,7 @@ namespace Modules\Xot\Filament\Blocks;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Components\Select;
 use Modules\Xot\Filament\Traits\TransTrait;
 use Filament\Forms\Components\Builder\Block;
@@ -23,6 +24,11 @@ use Filament\Forms\Components\Builder\Block;
 use Filament\Forms\Components\Builder\Block;
 use Filament\Forms\Components\Select;
 >>>>>>> 54f4fa16 (.)
+=======
+use Filament\Forms\Components\Select;
+use Modules\Xot\Filament\Traits\TransTrait;
+use Filament\Forms\Components\Builder\Block;
+>>>>>>> 345f8677 (phpstan)
 use Modules\Xot\Actions\Filament\Block\GetViewBlocksOptionsByTypeAction;
 
 abstract class XotBaseBlock
@@ -30,6 +36,7 @@ abstract class XotBaseBlock
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     use TransTrait;
     
 =======
@@ -40,6 +47,10 @@ abstract class XotBaseBlock
 >>>>>>> 345f8677 (phpstan)
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+    use TransTrait;
+    
+>>>>>>> 345f8677 (phpstan)
     public static function make(
         string $name = 'article_list',
         string $context = 'form',

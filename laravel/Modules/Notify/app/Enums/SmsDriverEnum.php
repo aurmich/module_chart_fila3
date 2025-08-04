@@ -112,9 +112,13 @@ enum SmsDriverEnum: string
         $default = config('sms.default', self::SMSFACTOR->value);
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         return self::from(is_string($default) ? $default : self::SMSFACTOR->value);
 =======
         return self::from($default);
 >>>>>>> 54f4fa16 (.)
+=======
+        return self::from((string) $default);
+>>>>>>> 345f8677 (phpstan)
     }
 }

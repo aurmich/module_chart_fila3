@@ -22,6 +22,7 @@ abstract class XotBasePolicy
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         return once(function () use ($user) {
 =======
         return once(function () use ($user, $ability) {
@@ -32,6 +33,9 @@ abstract class XotBasePolicy
 =======
         return once(function () use ($user, $ability) {
 >>>>>>> 54f4fa16 (.)
+=======
+        return once(function () use ($user) {
+>>>>>>> 345f8677 (phpstan)
             if ($user->hasRole('super-admin')) {
                 return true;
             }

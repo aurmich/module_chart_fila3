@@ -10,13 +10,17 @@ use Illuminate\Support\Arr;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Str;
+=======
+>>>>>>> 345f8677 (phpstan)
 =======
 >>>>>>> 345f8677 (phpstan)
 use Webmozart\Assert\Assert;
 use Spatie\ModelStates\State;
 use Modules\SaluteOra\Models\User;
 use Filament\Tables\Actions\Action;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 use Spatie\ModelStates\State;
@@ -32,12 +36,15 @@ use Modules\SaluteOra\Models\User;
 use Spatie\ModelStates\State;
 use Modules\SaluteOra\Models\User;
 >>>>>>> d23ba493 (add calendar)
+=======
+>>>>>>> 345f8677 (phpstan)
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Tables\Columns\IconColumn;
 use Illuminate\Database\Eloquent\Model;
 use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\SelectColumn;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -60,6 +67,9 @@ use Filament\Tables\Actions\Action;
 use Modules\SaluteOra\States\User\UserState;
 use Filament\Tables\Actions\Action;
 >>>>>>> d23ba493 (add calendar)
+=======
+use Spatie\ModelStates\HasStatesContract;
+>>>>>>> 345f8677 (phpstan)
 
 class IconStateColumn extends IconColumn
 {
@@ -193,8 +203,12 @@ class IconStateColumn extends IconColumn
 =======
                 Select::make('state')
                     ->options(
+<<<<<<< HEAD
                         function (Model $record ,string $state): array {
 >>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
+=======
+                        function (Model&HasStatesContract $record ,string $state): array {
+>>>>>>> 345f8677 (phpstan)
 
                             $name=$this->getName();
                             $state=$record->getAttribute($name);
@@ -202,12 +216,14 @@ class IconStateColumn extends IconColumn
                                 $states=Arr::wrap($record->getDefaultStateFor($name));
                                 return array_combine($states, $states);
                             }
+                            Assert::isInstanceOf($state, State::class);
                             try{
                                 //$states=$record->getAttribute($name)->transitionableStates();
                                 $states=$state->transitionableStates();
                             }catch(Exception $e){
                                 $states=$record->getStatesFor($name)->toArray();;
                             }
+                            /** @phpstan-ignore-next-line */
                             $states=[$state::$name, ...$states];
                             $states=array_combine($states, $states);
                             //dddx(['state'=>$state, 'state1'=>$record->getAttribute($name),'record'=>$record]);

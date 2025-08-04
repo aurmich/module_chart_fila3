@@ -185,6 +185,7 @@ class LocationSelector extends Group
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     return is_string($region) ? $this->getProvinceOptions($region) : [];
 =======
                     return $region ? $this->getProvinceOptions($region) : [];
@@ -195,6 +196,9 @@ class LocationSelector extends Group
 =======
                     return $region ? $this->getProvinceOptions($region) : [];
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+                    return is_string($region) ? $this->getProvinceOptions($region) : [];
+>>>>>>> 345f8677 (phpstan)
                 })
                 ->searchable($this->searchable)
                 ->required($this->required)
@@ -217,6 +221,7 @@ class LocationSelector extends Group
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     return (is_string($region) && is_string($province)) ? $this->getCapOptions($region, $province) : [];
 =======
                     return ($region && $province) ? $this->getCapOptions($region, $province) : [];
@@ -227,6 +232,9 @@ class LocationSelector extends Group
 =======
                     return ($region && $province) ? $this->getCapOptions($region, $province) : [];
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+                    return (is_string($region) && is_string($province)) ? $this->getCapOptions($region, $province) : [];
+>>>>>>> 345f8677 (phpstan)
                 })
                 ->searchable($this->searchable)
                 ->required($this->required)
@@ -247,6 +255,7 @@ class LocationSelector extends Group
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             /** @phpstan-ignore return.type */
 =======
 >>>>>>> aurmich/dev
@@ -255,6 +264,9 @@ class LocationSelector extends Group
 >>>>>>> 345f8677 (phpstan)
 =======
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+            /** @phpstan-ignore-next-line */
+>>>>>>> 345f8677 (phpstan)
             return Comune::select('regione')
                 ->distinct()
                 ->orderBy('regione->nome')
@@ -283,6 +295,7 @@ class LocationSelector extends Group
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             /** @phpstan-ignore return.type */
 =======
 >>>>>>> aurmich/dev
@@ -291,6 +304,9 @@ class LocationSelector extends Group
 >>>>>>> 345f8677 (phpstan)
 =======
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+            /** @phpstan-ignore-next-line */
+>>>>>>> 345f8677 (phpstan)
             return Comune::query()
                 ->where('regione->codice', $region)
                 ->select('provincia')
@@ -322,6 +338,7 @@ class LocationSelector extends Group
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             /** @phpstan-ignore return.type */
 =======
 >>>>>>> aurmich/dev
@@ -330,6 +347,9 @@ class LocationSelector extends Group
 >>>>>>> 345f8677 (phpstan)
 =======
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+            /** @phpstan-ignore-next-line */
+>>>>>>> 345f8677 (phpstan)
             return Comune::query()
                 ->where('regione->codice', $region)
                 ->where('provincia->codice', $province)
@@ -362,6 +382,7 @@ class LocationSelector extends Group
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @phpstan-ignore offsetAccess.nonOffsetAccessible, offsetAccess.nonOffsetAccessible */
 =======
 >>>>>>> aurmich/dev
@@ -370,11 +391,15 @@ class LocationSelector extends Group
 >>>>>>> 345f8677 (phpstan)
 =======
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+        /** @phpstan-ignore-next-line */
+>>>>>>> 345f8677 (phpstan)
         if (!empty($state[$this->provinceFieldName]) && empty($state[$this->regionFieldName])) {
             $errors[] = __('ui::location_selector.validation.region_required_for_province');
         }
 
         // Verifica che se è selezionato un CAP, siano selezionate regione e provincia
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -392,6 +417,10 @@ class LocationSelector extends Group
         if (!empty($state[$this->capFieldName]) && 
             (empty($state[$this->regionFieldName]) || empty($state[$this->provinceFieldName]))) {
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+        /** @phpstan-ignore-next-line */
+        if (!empty($state[$this->capFieldName]) && (empty($state[$this->regionFieldName]) || empty($state[$this->provinceFieldName]))) {
+>>>>>>> 345f8677 (phpstan)
             $errors[] = __('ui::location_selector.validation.region_province_required_for_cap');
         }
 
@@ -409,6 +438,7 @@ class LocationSelector extends Group
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @phpstan-ignore offsetAccess.nonOffsetAccessible */
 =======
         
@@ -419,6 +449,9 @@ class LocationSelector extends Group
 =======
         
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+        /** @phpstan-ignore-next-line */
+>>>>>>> 345f8677 (phpstan)
         if (empty($state[$this->regionFieldName])) {
             return null;
         }
@@ -430,6 +463,7 @@ class LocationSelector extends Group
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             /** @phpstan-ignore offsetAccess.nonOffsetAccessible */
 =======
 >>>>>>> aurmich/dev
@@ -438,6 +472,9 @@ class LocationSelector extends Group
 >>>>>>> 345f8677 (phpstan)
 =======
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+            /** @phpstan-ignore-next-line */
+>>>>>>> 345f8677 (phpstan)
             if (!empty($state[$this->provinceFieldName])) {
                 $query->where('provincia->codice', $state[$this->provinceFieldName]);
             }
@@ -445,6 +482,7 @@ class LocationSelector extends Group
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             /** @phpstan-ignore offsetAccess.nonOffsetAccessible */
 =======
 >>>>>>> aurmich/dev
@@ -453,6 +491,9 @@ class LocationSelector extends Group
 >>>>>>> 345f8677 (phpstan)
 =======
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+            /** @phpstan-ignore-next-line */
+>>>>>>> 345f8677 (phpstan)
             if (!empty($state[$this->capFieldName])) {
                 $query->where('cap->0', $state[$this->capFieldName]);
             }
@@ -475,6 +516,7 @@ class LocationSelector extends Group
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 /** @phpstan-ignore offsetAccess.nonOffsetAccessible */
                 'cap' => $state[$this->capFieldName] ?? null,
                 /** @phpstan-ignore-next-line */
@@ -489,6 +531,11 @@ class LocationSelector extends Group
 =======
                 'cap' => $state[$this->capFieldName] ?? null,
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+                /** @phpstan-ignore-next-line */
+                'cap' => $state[$this->capFieldName] ?? null,
+                /** @phpstan-ignore-next-line */
+>>>>>>> 345f8677 (phpstan)
                 'city' => $comune->nome ?? null,
             ];
         } catch (\Exception $e) {

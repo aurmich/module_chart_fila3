@@ -205,11 +205,8 @@ class Comune extends BaseModel
     /** @var array<int, string> */
     public $translatable = [
     ];
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
+    
+    /** @var list<string> */
     protected $fillable = [
         'id',
         'codice',

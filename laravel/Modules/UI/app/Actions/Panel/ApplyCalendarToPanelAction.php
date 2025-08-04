@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Gate;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Config;
 =======
 >>>>>>> aurmich/dev
@@ -20,6 +21,9 @@ use Illuminate\Support\Facades\Config;
 >>>>>>> 345f8677 (phpstan)
 =======
 >>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
+=======
+use Illuminate\Support\Facades\Config;
+>>>>>>> 345f8677 (phpstan)
 use Spatie\QueueableAction\QueueableAction;
 use Modules\User\Filament\Pages\Tenancy\RegisterTenant;
 use Modules\User\Filament\Pages\Tenancy\EditTenantProfile;
@@ -34,11 +38,15 @@ class ApplyCalendarToPanelAction
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 345f8677 (phpstan)
         $timezone = Config::string('fullcalendar.localization.timezone', 'Europe/Rome');
         $locale = Config::string('fullcalendar.localization.locale', 'it');
         $calendarPlugin = FilamentFullCalendarPlugin::make()
         ->selectable(true)
         ->editable(true)
+<<<<<<< HEAD
 <<<<<<< HEAD
         ->timezone($timezone)
         ->locale($locale)
@@ -72,6 +80,10 @@ class ApplyCalendarToPanelAction
         ->timezone(config('fullcalendar.localization.timezone', 'Europe/Rome'))
         ->locale(config('fullcalendar.localization.locale', 'it'))
 >>>>>>> 6581c95e (♻️ (ListActivities.php, ListStoredEvents.php, LogoutListener.php): refactor code to improve readability and maintainability by removing unused imports and comments)
+=======
+        ->timezone($timezone)
+        ->locale($locale)
+>>>>>>> 345f8677 (phpstan)
         ->plugins([
             'dayGrid',
             'timeGrid',

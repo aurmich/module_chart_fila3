@@ -10,6 +10,7 @@ use GuzzleHttp\Exception\ClientException;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Notify\Datas\WhatsAppData;
 use Spatie\QueueableAction\QueueableAction;
 use function Safe\json_decode;
@@ -17,11 +18,18 @@ use function Safe\json_decode;
 final class SendVonageWhatsAppAction
 =======
 use Modules\Notify\Contracts\WhatsAppProviderActionInterface;
+=======
+>>>>>>> 345f8677 (phpstan)
 use Modules\Notify\Datas\WhatsAppData;
 use Spatie\QueueableAction\QueueableAction;
+use function Safe\json_decode;
 
+<<<<<<< HEAD
 final class SendVonageWhatsAppAction implements WhatsAppProviderActionInterface
 >>>>>>> 54f4fa16 (.)
+=======
+final class SendVonageWhatsAppAction
+>>>>>>> 345f8677 (phpstan)
 {
     use QueueableAction;
 
@@ -52,6 +60,7 @@ final class SendVonageWhatsAppAction implements WhatsAppProviderActionInterface
 
         // Parametri a livello di root
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var string|null $defaultSender */
         $defaultSender = config('whatsapp.from');
         $this->defaultSender = $defaultSender;
@@ -59,6 +68,11 @@ final class SendVonageWhatsAppAction implements WhatsAppProviderActionInterface
         $this->timeout = is_numeric(config('whatsapp.timeout', 30)) ? (int) config('whatsapp.timeout', 30) : 30;
 =======
         $this->defaultSender = config('whatsapp.from');
+=======
+        /** @var string|null $defaultSender */
+        $defaultSender = config('whatsapp.from');
+        $this->defaultSender = $defaultSender;
+>>>>>>> 345f8677 (phpstan)
         $this->debug = (bool) config('whatsapp.debug', false);
         $this->timeout = (int) config('whatsapp.timeout', 30);
 >>>>>>> 54f4fa16 (.)
@@ -137,9 +151,13 @@ final class SendVonageWhatsAppAction implements WhatsAppProviderActionInterface
             $statusCode = $response->getStatusCode();
             $responseContent = $response->getBody()->getContents();
 <<<<<<< HEAD
+<<<<<<< HEAD
             /** @var array $responseData */
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+            /** @var array $responseData */
+>>>>>>> 345f8677 (phpstan)
             $responseData = json_decode($responseContent, true);
             
             // Salva i dati della risposta nelle variabili dell'azione
@@ -162,9 +180,13 @@ final class SendVonageWhatsAppAction implements WhatsAppProviderActionInterface
             $response = $e->getResponse();
             $statusCode = $response->getStatusCode();
 <<<<<<< HEAD
+<<<<<<< HEAD
             /** @var array $responseBody */
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+            /** @var array $responseBody */
+>>>>>>> 345f8677 (phpstan)
             $responseBody = json_decode($response->getBody()->getContents(), true);
             
             // Salva i dati dell'errore nelle variabili dell'azione

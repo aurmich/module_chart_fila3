@@ -90,6 +90,7 @@ class RadioCollection extends Field
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * 
      * @param mixed $option
      * @return bool
@@ -109,6 +110,11 @@ class RadioCollection extends Field
 >>>>>>> 345f8677 (phpstan)
 =======
 >>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
+=======
+     * 
+     * @param mixed $option
+     * @return bool
+>>>>>>> 345f8677 (phpstan)
      */
     public function isOptionSelected($option): bool
     {

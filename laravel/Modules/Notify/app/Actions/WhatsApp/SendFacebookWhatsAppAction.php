@@ -10,6 +10,7 @@ use GuzzleHttp\Exception\ClientException;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 use Modules\Notify\Datas\WhatsAppData;
 use Spatie\QueueableAction\QueueableAction;
@@ -18,11 +19,19 @@ use function Safe\json_decode;
 final class SendFacebookWhatsAppAction
 =======
 use Modules\Notify\Contracts\WhatsAppProviderActionInterface;
+=======
+
+>>>>>>> 345f8677 (phpstan)
 use Modules\Notify\Datas\WhatsAppData;
 use Spatie\QueueableAction\QueueableAction;
+use function Safe\json_decode;
 
+<<<<<<< HEAD
 final class SendFacebookWhatsAppAction implements WhatsAppProviderActionInterface
 >>>>>>> 54f4fa16 (.)
+=======
+final class SendFacebookWhatsAppAction
+>>>>>>> 345f8677 (phpstan)
 {
     use QueueableAction;
 
@@ -118,9 +127,13 @@ final class SendFacebookWhatsAppAction implements WhatsAppProviderActionInterfac
             $statusCode = $response->getStatusCode();
             $responseContent = $response->getBody()->getContents();
 <<<<<<< HEAD
+<<<<<<< HEAD
             /** @var array $responseData */
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+            /** @var array $responseData */
+>>>>>>> 345f8677 (phpstan)
             $responseData = json_decode($responseContent, true);
             
             // Salva i dati della risposta nelle variabili dell'azione
@@ -143,9 +156,13 @@ final class SendFacebookWhatsAppAction implements WhatsAppProviderActionInterfac
             $response = $e->getResponse();
             $statusCode = $response->getStatusCode();
 <<<<<<< HEAD
+<<<<<<< HEAD
             /** @var array $responseBody */
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+            /** @var array $responseBody */
+>>>>>>> 345f8677 (phpstan)
             $responseBody = json_decode($response->getBody()->getContents(), true);
             
             // Salva i dati dell'errore nelle variabili dell'azione

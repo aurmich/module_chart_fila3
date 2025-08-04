@@ -69,6 +69,7 @@ class OpeningHoursField extends Field
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             /** @phpstan-ignore method.nonObject */
             $dayKey = strtolower(Carbon::create()->startOfWeek()->addDays($day - 1)->format('l'));
             /** @phpstan-ignore method.nonObject */
@@ -83,6 +84,11 @@ class OpeningHoursField extends Field
 =======
             $dayKey = strtolower(Carbon::create()->startOfWeek()->addDays($day - 1)->format('l'));
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+            /** @phpstan-ignore-next-line */
+            $dayKey = strtolower(Carbon::create()->startOfWeek()->addDays($day - 1)->format('l'));
+            /** @phpstan-ignore-next-line */
+>>>>>>> 345f8677 (phpstan)
             $dayLabel = ucfirst(Carbon::create()->startOfWeek()->addDays($day - 1)->isoFormat('dddd'));
             return [$dayKey => $dayLabel];
         });

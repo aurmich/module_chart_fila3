@@ -380,6 +380,9 @@ abstract class XotBaseMigration extends Migration
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 345f8677 (phpstan)
     /**
      * Add a foreign ID column to the table based on a related model.
      *
@@ -390,6 +393,7 @@ abstract class XotBaseMigration extends Migration
      */
     public function foreignIdFor($table, string $class, ?string $column = null) {
         return $table->foreignIdFor($class, $column);
+<<<<<<< HEAD
     } 
     
     /**
@@ -412,8 +416,17 @@ abstract class XotBaseMigration extends Migration
     public function foreignIdFor($table, $class, $column = null) {
         $table->foreignIdFor($class, $column);
 >>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
+=======
+>>>>>>> 345f8677 (phpstan)
     } 
-    public function hasTable($table) {
+    
+    /**
+     * Determine if the given table exists.
+     *
+     * @param  string  $table
+     * @return bool
+     */
+    public function hasTable(string $table): bool {
         return $this->getConn()->hasTable($table);
     } 
 <<<<<<< HEAD

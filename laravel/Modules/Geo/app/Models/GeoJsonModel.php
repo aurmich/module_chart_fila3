@@ -6,10 +6,14 @@ namespace Modules\Geo\Models;
 
 use Illuminate\Support\Collection;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use function Safe\file_get_contents;
 use function Safe\json_decode;
 =======
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+use function Safe\file_get_contents;
+>>>>>>> 345f8677 (phpstan)
 
 /**
  * Base model readonly per dati geografici statici (ispirato a Squire).

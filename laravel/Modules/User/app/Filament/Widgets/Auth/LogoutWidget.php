@@ -199,9 +199,13 @@ class LogoutWidget extends XotBaseWidget
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 ========
      * The view for this widget.
+<<<<<<< HEAD
      *
      * @var view-string
 >>>>>>> b0db4ea8 (fixes)
+=======
+     * @phpstan-ignore-next-line
+>>>>>>> 345f8677 (phpstan)
      */
     protected static string $view = 'user::widgets.auth.logout-widget';
 

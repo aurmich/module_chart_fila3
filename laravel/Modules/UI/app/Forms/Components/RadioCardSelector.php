@@ -131,6 +131,7 @@ class RadioCardSelector extends Field
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * 
 =======
      * @return array<int, array<string, mixed>>
@@ -141,6 +142,9 @@ class RadioCardSelector extends Field
 =======
      * @return array<int, array<string, mixed>>
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+     * 
+>>>>>>> 345f8677 (phpstan)
      */
     public function getCards(): array
     {

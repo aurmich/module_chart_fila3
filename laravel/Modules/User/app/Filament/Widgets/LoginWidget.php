@@ -54,9 +54,12 @@ use Filament\Forms\Components\Checkbox as FormsCheckbox;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @property-read static string $view La view del widget segue il pattern {module}::filament.widgets.{type}
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 345f8677 (phpstan)
 =======
 >>>>>>> 345f8677 (phpstan)
  * @property array<string, mixed>|null $data
@@ -183,6 +186,7 @@ class LoginWidget extends XotBaseWidget
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return \Illuminate\Database\Eloquent\Model|null
 =======
      * @return \Illuminate\Database\Eloquent\Model|string|null
@@ -242,6 +246,9 @@ class LoginWidget extends XotBaseWidget
      * Get the form model.
      *
      * @return \Illuminate\Database\Eloquent\Model|string|null
+=======
+     * @return \Illuminate\Database\Eloquent\Model|null
+>>>>>>> 345f8677 (phpstan)
      */
     protected function getFormModel(): ?\Illuminate\Database\Eloquent\Model
     {
@@ -420,7 +427,7 @@ class LoginWidget extends XotBaseWidget
                 
             $this->form->fill();
             $this->form->saveRelationships();
-            $this->form->callAfter();
+            //$this->form->callAfter();
             
             $this->addError('email', __('Si è verificato un errore durante il login. Riprova più tardi.'));
         }

@@ -8,9 +8,13 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\DB;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use function Safe\json_decode;
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+use function Safe\json_decode;
+>>>>>>> 345f8677 (phpstan)
 
 class SushiSeeder extends Seeder
 {

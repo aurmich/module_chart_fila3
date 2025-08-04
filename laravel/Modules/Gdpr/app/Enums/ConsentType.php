@@ -167,6 +167,7 @@ enum ConsentType: string
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 =======
@@ -203,4 +204,7 @@ enum ConsentType: string
 >>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
 =======
 >>>>>>> 5ae95119 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking to enhance code quality and maintainability across modules.)
+=======
+    
+>>>>>>> 345f8677 (phpstan)
 }

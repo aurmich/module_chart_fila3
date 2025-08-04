@@ -68,8 +68,12 @@ class MailTemplateResource extends LangBaseResource
             'params_display' => Forms\Components\View::make('notify::filament.components.params-badges')
                 ->viewData(fn ($record) => ['params' => $record?->params])
                 ->columnSpanFull()
+<<<<<<< HEAD
                 ->visible(fn ($record): bool => !empty($record?->params)),
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+                ->visible(fn ($record): bool => !empty($record->params)),
+>>>>>>> 345f8677 (phpstan)
 
            
 

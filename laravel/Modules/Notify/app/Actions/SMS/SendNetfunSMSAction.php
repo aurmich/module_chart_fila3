@@ -13,14 +13,19 @@ use Modules\Notify\Contracts\SmsActionContract;
 use Modules\Notify\Datas\SmsData;
 use Spatie\QueueableAction\QueueableAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use function Safe\preg_replace;
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+use function Safe\preg_replace;
+>>>>>>> 345f8677 (phpstan)
 
 final class SendNetfunSMSAction implements SmsActionContract
 {
     use QueueableAction;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /** @var string */
     private string $token;
@@ -40,13 +45,30 @@ final class SendNetfunSMSAction implements SmsActionContract
     /** @var string|null */
     protected ?string $defaultSender = null;
 =======
+=======
+    /** @var string */
+>>>>>>> 345f8677 (phpstan)
     private string $token;
+
+    /** @var string */
     private string $endpoint;
+
+    /** @var array<string, mixed> */
     private array $vars = [];
+
+    /** @var bool */
     protected bool $debug;
+
+    /** @var int */
     protected int $timeout;
+<<<<<<< HEAD
     protected ?string $defaultSender;
 >>>>>>> 54f4fa16 (.)
+=======
+
+    /** @var string|null */
+    protected ?string $defaultSender = null;
+>>>>>>> 345f8677 (phpstan)
 
     /**
      * Create a new action instance.
@@ -62,6 +84,7 @@ final class SendNetfunSMSAction implements SmsActionContract
         }
         $this->token = $token;
 <<<<<<< HEAD
+<<<<<<< HEAD
         $endpoint = config('sms.drivers.netfun.api_url', 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json');
         $this->endpoint = is_string($endpoint) ? $endpoint : 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json';
         // Parametri a livello di root
@@ -72,8 +95,13 @@ final class SendNetfunSMSAction implements SmsActionContract
 =======
         $this->endpoint = config('sms.drivers.netfun.api_url', 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json');
 
+=======
+        $endpoint = config('sms.drivers.netfun.api_url', 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json');
+        $this->endpoint = is_string($endpoint) ? $endpoint : 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json';
+>>>>>>> 345f8677 (phpstan)
         // Parametri a livello di root
-        $this->defaultSender = config('sms.from');
+        $sender = config('sms.from');
+        $this->defaultSender = is_string($sender) ? $sender : null;
         $this->debug = (bool) config('sms.debug', false);
         $this->timeout = (int) config('sms.timeout', 30);
 >>>>>>> 54f4fa16 (.)
@@ -95,6 +123,7 @@ final class SendNetfunSMSAction implements SmsActionContract
 
         // Normalizza il numero di telefono
 <<<<<<< HEAD
+<<<<<<< HEAD
         $to = (string) $smsData->to;
         if (Str::startsWith($to, '00')) {
             $to = $to !== '' ? ('+' . mb_substr($to, 2)) : $to;
@@ -110,25 +139,41 @@ final class SendNetfunSMSAction implements SmsActionContract
         if (!Str::startsWith($smsData->to, '+')) {
             $smsData->to = '+39' . $smsData->to;
 >>>>>>> 54f4fa16 (.)
+=======
+        $to = (string) $smsData->to;
+        if (Str::startsWith($to, '00')) {
+            $to = $to !== '' ? ('+' . mb_substr($to, 2)) : $to;
+        }
+        if (!Str::startsWith($to, '+')) {
+            $to = '+39' . $to;
+>>>>>>> 345f8677 (phpstan)
         }
 
         $body = [
             'api_token' => $this->token,
 <<<<<<< HEAD
+<<<<<<< HEAD
             'sender' => $smsData->from ?? $this->defaultSender,
 =======
             'sender' => $smsData->from,
 >>>>>>> 54f4fa16 (.)
+=======
+            'sender' => $smsData->from ?? $this->defaultSender,
+>>>>>>> 345f8677 (phpstan)
             'text_template' => $smsData->body,
             'async' => true,
             'utf8_enabled' => true,
             'destinations' => [
                 [
 <<<<<<< HEAD
+<<<<<<< HEAD
                     'number' => $to,
 =======
                     'number' => $smsData->to,
 >>>>>>> 54f4fa16 (.)
+=======
+                    'number' => $to,
+>>>>>>> 345f8677 (phpstan)
                 ],
             ],
         ];
@@ -157,25 +202,35 @@ final class SendNetfunSMSAction implements SmsActionContract
      * @return string Numero di telefono normalizzato in formato E.164
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 345f8677 (phpstan)
     /**
      * Normalizza il numero di telefono nel formato E.164
      *
      * @param string $phoneNumber Numero di telefono da normalizzare
      * @return string Numero di telefono normalizzato in formato E.164
      */
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 345f8677 (phpstan)
     protected function normalizePhoneNumber(string $phoneNumber): string
     {
         // Rimuovi tutti i caratteri non numerici tranne il +
         $cleaned = preg_replace('/[^0-9+]/', '', $phoneNumber);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 345f8677 (phpstan)
         
         // Se preg_replace restituisce null (non dovrebbe succedere con input string)
         if (!is_string($cleaned) || $cleaned === '') {
             $cleaned = '';
         }
         
+<<<<<<< HEAD
         // Se il numero non inizia con '+'
         if (!Str::startsWith($cleaned, '+')) {
             $cleaned = '+39' . ltrim($cleaned, '0');
@@ -183,12 +238,18 @@ final class SendNetfunSMSAction implements SmsActionContract
         
 =======
 
+=======
+>>>>>>> 345f8677 (phpstan)
         // Se il numero non inizia con '+'
         if (!Str::startsWith($cleaned, '+')) {
-            $cleaned = '+39' . $cleaned;
+            $cleaned = '+39' . ltrim($cleaned, '0');
         }
+<<<<<<< HEAD
 
 >>>>>>> 54f4fa16 (.)
+=======
+        
+>>>>>>> 345f8677 (phpstan)
         return $cleaned;
     }
 }

@@ -14,8 +14,11 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Notification;
 use Modules\Notify\Datas\WhatsAppData;
+<<<<<<< HEAD
 use Modules\Notify\Notifications\Channels\WhatsAppChannel;
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 345f8677 (phpstan)
 
 /**
  * Class WhatsAppNotification
@@ -54,6 +57,7 @@ class WhatsAppNotification extends Notification implements ShouldQueue
             $this->whatsappData = $content;
         } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
             $to = $config['to'] ?? '';
             $from = $config['from'] ?? null;
             
@@ -75,6 +79,16 @@ class WhatsAppNotification extends Notification implements ShouldQueue
                 $this->whatsappData->from = $config['from'];
             }
 >>>>>>> 54f4fa16 (.)
+=======
+            $to = $config['to'] ?? '';
+            $from = $config['from'] ?? null;
+            
+            $this->whatsappData = new WhatsAppData(
+                to: (string) $to,
+                body: $content,
+                from: $from !== null ? (string) $from : null
+            );
+>>>>>>> 345f8677 (phpstan)
         }
         
         $this->config = $config;
@@ -89,11 +103,16 @@ class WhatsAppNotification extends Notification implements ShouldQueue
     public function via(mixed $notifiable): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         // TODO: Implementare WhatsAppChannel quando disponibile
         return ['whatsapp'];
 =======
         return [WhatsAppChannel::class];
 >>>>>>> 54f4fa16 (.)
+=======
+        // TODO: Implementare WhatsAppChannel quando disponibile
+        return ['whatsapp'];
+>>>>>>> 345f8677 (phpstan)
     }
 
     /**
@@ -107,6 +126,7 @@ class WhatsAppNotification extends Notification implements ShouldQueue
         // If the notifiable entity has a routeNotificationForWhatsApp method,
         // we'll use that to get the destination phone number
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (is_object($notifiable) && method_exists($notifiable, 'routeNotificationForWhatsApp')) {
             $routeResult = $notifiable->routeNotificationForWhatsApp($this);
             $this->whatsappData->to = app(\Modules\Xot\Actions\Cast\SafeStringCastAction::class)->execute($routeResult);
@@ -114,6 +134,10 @@ class WhatsAppNotification extends Notification implements ShouldQueue
         if (method_exists($notifiable, 'routeNotificationForWhatsApp')) {
             $this->whatsappData->to = $notifiable->routeNotificationForWhatsApp($this);
 >>>>>>> 54f4fa16 (.)
+=======
+        if (is_object($notifiable) && method_exists($notifiable, 'routeNotificationForWhatsApp')) {
+            $this->whatsappData->to = (string) $notifiable->routeNotificationForWhatsApp($this);
+>>>>>>> 345f8677 (phpstan)
         }
 
         return $this->whatsappData;
@@ -137,10 +161,15 @@ class WhatsAppNotification extends Notification implements ShouldQueue
     public function getProvider(): ?string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $provider = $this->config['provider'] ?? null;
         return is_string($provider) ? $provider : null;
 =======
         return $this->config['provider'] ?? null;
 >>>>>>> 54f4fa16 (.)
+=======
+        $provider = $this->config['provider'] ?? null;
+        return is_string($provider) ? $provider : null;
+>>>>>>> 345f8677 (phpstan)
     }
 }

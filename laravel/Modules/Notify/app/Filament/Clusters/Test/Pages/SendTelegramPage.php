@@ -35,9 +35,12 @@ use Modules\Notify\Datas\TelegramData;
 /**
  * @property ComponentContainer $telegramForm
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @extends XotBasePage
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 345f8677 (phpstan)
  */
 class SendTelegramPage extends XotBasePage implements HasForms
 {
@@ -84,10 +87,14 @@ class SendTelegramPage extends XotBasePage implements HasForms
                 ->default('bot')
                 ->required(),
 <<<<<<< HEAD
+<<<<<<< HEAD
             Forms\Components\Select::make('parse_mode')
 =======
             Forms\Components\TextInput::make('parse_mode')
 >>>>>>> 54f4fa16 (.)
+=======
+            Forms\Components\Select::make('parse_mode')
+>>>>>>> 345f8677 (phpstan)
                 ->options([
                     'HTML' => 'HTML',
                     'Markdown' => 'Markdown',
@@ -124,6 +131,7 @@ class SendTelegramPage extends XotBasePage implements HasForms
             $user = $this->getUser();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             $message = is_string($data['text']) ? $data['text'] : '';
 
             Notification::route('telegram', $data['chat_id'])
@@ -132,6 +140,12 @@ class SendTelegramPage extends XotBasePage implements HasForms
             Notification::route('telegram', $data['chat_id'])
                 ->notify(new TelegramNotification($data['text'], [
 >>>>>>> 54f4fa16 (.)
+=======
+            $message = is_string($data['text']) ? $data['text'] : '';
+
+            Notification::route('telegram', $data['chat_id'])
+                ->notify(new TelegramNotification($message, [
+>>>>>>> 345f8677 (phpstan)
                     'driver' => $data['driver'],
                     'parse_mode' => $data['parse_mode'] ?? null,
                     'disable_web_page_preview' => $data['disable_web_page_preview'] ?? false,
@@ -174,10 +188,13 @@ class SendTelegramPage extends XotBasePage implements HasForms
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 345f8677 (phpstan)
     protected function fillForms(): void
     {
         // $data = $this->getUser()->attributesToArray();

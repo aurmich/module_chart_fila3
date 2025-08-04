@@ -21,6 +21,7 @@ use Illuminate\Database\Eloquent\Model;
 use Filament\Tables\Columns\SelectColumn;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\ModelStates\HasStatesContract;
 =======
 >>>>>>> aurmich/dev
@@ -42,6 +43,9 @@ use Filament\Tables\Columns\SelectColumn;
 use Illuminate\Database\Eloquent\Model;
 use Filament\Tables\Columns\SelectColumn;
 >>>>>>> d23ba493 (add calendar)
+=======
+use Spatie\ModelStates\HasStatesContract;
+>>>>>>> 345f8677 (phpstan)
 use Modules\SaluteOra\States\User\UserState;
 
 class SelectStateColumn extends SelectColumn
@@ -51,6 +55,7 @@ class SelectStateColumn extends SelectColumn
     {
         parent::setUp();
       //  $this->selectablePlaceholder(false);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -114,6 +119,9 @@ class SelectStateColumn extends SelectColumn
 =======
 >>>>>>> d23ba493 (add calendar)
         $this->options(function (Model $record ,$state): array {
+=======
+        $this->options(function (Model&HasStatesContract $record ,$state): array {
+>>>>>>> 345f8677 (phpstan)
             $name=$this->getName();
             if($state==null){
 
@@ -134,8 +142,9 @@ class SelectStateColumn extends SelectColumn
         });
 
 
-        $this->beforeStateUpdated(function (Model $record, $state) {
+        $this->beforeStateUpdated(function (Model&HasStatesContract $record, $state) {
             $message='';
+            /** @phpstan-ignore-next-line */
             $record->state->transitionTo($state,$message);
         });
 

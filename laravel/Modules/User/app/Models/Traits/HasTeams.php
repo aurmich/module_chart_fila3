@@ -568,6 +568,7 @@ trait HasTeams
 >>>>>>> a3174e5b (phpstan)
 =======
      *
+<<<<<<< HEAD
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Contracts\TeamContract, $this>
 >>>>>>> 1def8bbe (fix hint)
 =======
@@ -585,6 +586,9 @@ trait HasTeams
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Contracts\TeamContract, $this>
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, $this>
+>>>>>>> 345f8677 (phpstan)
      */
     public function currentTeam(): BelongsTo
     {
@@ -606,6 +610,7 @@ trait HasTeams
     /**
      * Get the teams owned by the user.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -640,6 +645,9 @@ trait HasTeams
 =======
      * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\User\Contracts\TeamContract, $this>
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, $this>
+>>>>>>> 345f8677 (phpstan)
      */
     public function ownedTeams(): HasMany
     {
@@ -682,6 +690,7 @@ trait HasTeams
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Get all team users.
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\User\Models\Membership, $this>
@@ -712,11 +721,15 @@ trait HasTeams
 >>>>>>> 345f8677 (phpstan)
 =======
      * Get all of the pending invitations for the team.
+=======
+     * Get all team users.
+>>>>>>> 345f8677 (phpstan)
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Illuminate\Database\Eloquent\Model, $this>
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\User\Models\Membership, $this>
      */
-    public function teamInvitations(): HasMany
+    public function teamUsers(): HasMany
     {
+<<<<<<< HEAD
         $invitationModel = app('team_invitation_model');
         return $this->hasMany($invitationModel, 'team_id');
 <<<<<<< HEAD
@@ -785,6 +798,11 @@ trait HasTeams
 >>>>>>> b58de900 (.)
 =======
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+        /** @var \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\User\Models\Membership, $this> $relation */
+        $relation = $this->hasMany(\Modules\User\Models\Membership::class, 'user_id');
+        return $relation;
+>>>>>>> 345f8677 (phpstan)
     }
 
     /**
@@ -1073,6 +1091,7 @@ trait HasTeams
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return BelongsToMany<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, \Illuminate\Database\Eloquent\Model>
 =======
      * @return BelongsToMany<\Modules\User\Contracts\TeamContract, static>
@@ -1102,6 +1121,9 @@ trait HasTeams
      * @return BelongsToMany<\Modules\User\Contracts\TeamContract, static>
      * @phpstan-return BelongsToMany<\Modules\User\Contracts\TeamContract&\Illuminate\Database\Eloquent\Model, static>
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+     * @return BelongsToMany<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, \Illuminate\Database\Eloquent\Model>
+>>>>>>> 345f8677 (phpstan)
      */
     public function teams(): BelongsToMany
     {
@@ -1111,6 +1133,9 @@ trait HasTeams
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 345f8677 (phpstan)
 =======
 >>>>>>> 345f8677 (phpstan)
         /** @var BelongsToMany<\Illuminate\Database\Eloquent\Model&\Modules\User\Contracts\TeamContract, \Illuminate\Database\Eloquent\Model> $relation */
@@ -1123,6 +1148,7 @@ trait HasTeams
 
         return $relation;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         return $this->belongsToManyX($teamClass, null, null, 'team_id');
         // ->as('membership')
@@ -1133,6 +1159,8 @@ trait HasTeams
         return $this->belongsToManyX($teamClass, null, null, 'team_id');
         // ->as('membership')
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 345f8677 (phpstan)
     }
 
     /**

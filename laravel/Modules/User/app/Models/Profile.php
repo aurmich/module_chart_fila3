@@ -68,7 +68,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\Permission\Traits\HasRoles;
-use Spatie\SchemalessAttributes\HasSchemalessAttributes;
+use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttributes;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 
@@ -203,6 +203,9 @@ class Profile extends BaseProfile implements HasMedia
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 345f8677 (phpstan)
 =======
 >>>>>>> 345f8677 (phpstan)
      * The schemaless attributes.
@@ -215,17 +218,21 @@ class Profile extends BaseProfile implements HasMedia
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 345f8677 (phpstan)
 =======
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+>>>>>>> 345f8677 (phpstan)
      * The table associated with the model.
      *
      * @var string
      */
     protected $table = 'profiles';
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -560,6 +567,8 @@ class Profile extends BaseProfile implements HasMedia
     }
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 345f8677 (phpstan)
 =======
 >>>>>>> 345f8677 (phpstan)
 }

@@ -31,10 +31,14 @@ return [
 
     // Footer text for all emails
 <<<<<<< HEAD
+<<<<<<< HEAD
     //'footer_text' => env('MAIL_FOOTER_TEXT', '© ' . date('Y') . ' ' . config('app.name') . '. All rights reserved.'),
 =======
     'footer_text' => env('MAIL_FOOTER_TEXT', '© ' . date('Y') . ' ' . config('app.name') . '. All rights reserved.'),
 >>>>>>> 54f4fa16 (.)
+=======
+    //'footer_text' => env('MAIL_FOOTER_TEXT', '© ' . date('Y') . ' ' . config('app.name') . '. All rights reserved.'),
+>>>>>>> 345f8677 (phpstan)
 
     // Social media links
     'social_links' => [

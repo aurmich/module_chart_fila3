@@ -10,6 +10,7 @@ use Illuminate\Support\Str;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 =======
 >>>>>>> aurmich/dev
@@ -18,6 +19,9 @@ use Webmozart\Assert\Assert;
 >>>>>>> 345f8677 (phpstan)
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+use Webmozart\Assert\Assert;
+>>>>>>> 345f8677 (phpstan)
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 
@@ -96,6 +100,7 @@ trait TransTrait
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Assert::string($type=$piece[2]);
 =======
         $type=$piece[2];
@@ -106,6 +111,9 @@ trait TransTrait
 =======
         $type=$piece[2];
 >>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
+=======
+        Assert::string($type=$piece[2]);
+>>>>>>> 345f8677 (phpstan)
         $module=Str::of($class)->between('Modules\\','\\'.$type.'\\')->toString();
 
         $module_low=Str::of($module)->lower()->toString();

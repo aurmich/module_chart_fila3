@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Notify\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 
@@ -14,29 +15,15 @@ class NotificationLog extends Model
      * The attributes that are mass assignable.
 =======
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+=======
+>>>>>>> 345f8677 (phpstan)
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
-use Modules\Xot\Traits\Updater;
-use Modules\User\Models\Traits\HasTenants;
-/**
- * Modello per il logging delle notifiche inviate.
- */
+
 class NotificationLog extends Model
 {
-    use HasFactory;
-    use HasTenants;
-    use Updater;
-
-    public const STATUS_PENDING = 'pending';
-    public const STATUS_PROCESSING = 'processing';
-    public const STATUS_SENT = 'sent';
-    public const STATUS_DELIVERED = 'delivered';
-    public const STATUS_FAILED = 'failed';
-    public const STATUS_OPENED = 'opened';
-    public const STATUS_CLICKED = 'clicked';
-
     /**
+<<<<<<< HEAD
      * Tabella associata al modello.
      *
      * @var string
@@ -46,10 +33,14 @@ class NotificationLog extends Model
     /**
      * Gli attributi che sono assegnabili in massa.
 >>>>>>> 54f4fa16 (.)
+=======
+     * The attributes that are mass assignable.
+>>>>>>> 345f8677 (phpstan)
      *
      * @var array<int, string>
      */
     protected $fillable = [
+<<<<<<< HEAD
 <<<<<<< HEAD
         'notifiable_type',
         'notifiable_id',
@@ -69,28 +60,34 @@ class NotificationLog extends Model
      * The attributes that should be cast.
 =======
         'template_id',
+=======
+>>>>>>> 345f8677 (phpstan)
         'notifiable_type',
         'notifiable_id',
+        'type',
         'channel',
+        'recipient',
+        'subject',
+        'message',
         'status',
-        'status_message',
-        'data',
-        'metadata',
         'sent_at',
-        'delivered_at',
-        'failed_at',
-        'opened_at',
-        'clicked_at',
-        'tenant_id',
+        'read_at',
+        'error_message',
+        'metadata',
     ];
-    
+
     /**
+<<<<<<< HEAD
      * Gli attributi da castare.
 >>>>>>> 54f4fa16 (.)
+=======
+     * The attributes that should be cast.
+>>>>>>> 345f8677 (phpstan)
      *
      * @var array<string, string>
      */
     protected $casts = [
+<<<<<<< HEAD
 <<<<<<< HEAD
         'sent_at' => 'datetime',
         'read_at' => 'datetime',
@@ -113,23 +110,37 @@ class NotificationLog extends Model
 =======
         'data' => 'array',
         'metadata' => 'array',
+=======
+>>>>>>> 345f8677 (phpstan)
         'sent_at' => 'datetime',
-        'delivered_at' => 'datetime',
-        'failed_at' => 'datetime',
-        'opened_at' => 'datetime',
-        'clicked_at' => 'datetime',
+        'read_at' => 'datetime',
+        'metadata' => 'array',
     ];
-    
+
     /**
-     * Ottiene l'entità notificabile.
+     * The possible status values.
      *
+<<<<<<< HEAD
      * @return MorphTo
 >>>>>>> 54f4fa16 (.)
+=======
+     * @var array<string, string>
+     */
+    public const STATUS_PENDING = 'pending';
+    public const STATUS_SENT = 'sent';
+    public const STATUS_DELIVERED = 'delivered';
+    public const STATUS_FAILED = 'failed';
+    public const STATUS_READ = 'read';
+
+    /**
+     * Get the parent notifiable model.
+>>>>>>> 345f8677 (phpstan)
      */
     public function notifiable(): MorphTo
     {
         return $this->morphTo();
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     
@@ -241,4 +252,6 @@ class NotificationLog extends Model
         return __('notify::notification.fields.channel.options.' . $this->channel . '.label');
     }
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 345f8677 (phpstan)
 }

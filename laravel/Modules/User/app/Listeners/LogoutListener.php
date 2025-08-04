@@ -87,6 +87,7 @@ class LogoutListener
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'device_id' => $device->id,
 =======
                 'device_id' => $device?->id,
@@ -112,6 +113,9 @@ class LogoutListener
 =======
                 'device_id' => $device?->id,
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+                'device_id' => $device->id,
+>>>>>>> 345f8677 (phpstan)
                 'timestamp' => now()
             ]);
 
@@ -125,6 +129,7 @@ class LogoutListener
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'user_id' => $event->user->getAuthIdentifier()
 =======
                 'user_id' => $event->user?->getAuthIdentifier()
@@ -150,6 +155,9 @@ class LogoutListener
 =======
                 'user_id' => $event->user?->getAuthIdentifier()
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+                'user_id' => $event->user->getAuthIdentifier()
+>>>>>>> 345f8677 (phpstan)
             ]);
         }
     }

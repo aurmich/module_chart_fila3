@@ -12,7 +12,11 @@ use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Notification;
 use Modules\Notify\Models\NotificationLog;
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> 345f8677 (phpstan)
 use Modules\Notify\Models\NotificationTemplate;
 use Modules\Notify\Notifications\GenericNotification;
 use Spatie\QueueableAction\QueueableAction;
@@ -38,7 +42,11 @@ class SendNotificationAction
      * @return bool
 =======
      * @return NotificationLog
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> 345f8677 (phpstan)
      * @throws \Exception Se il template non esiste o non è attivo
      */
     public function execute(
@@ -51,7 +59,11 @@ class SendNotificationAction
     ): bool {
 =======
     ): NotificationLog {
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> 345f8677 (phpstan)
         // Recupera il template
         $template = NotificationTemplate::where('code', $templateCode)
             ->where('is_active', true)
@@ -67,7 +79,11 @@ class SendNotificationAction
             return false;
 =======
             return $this->createSkippedNotification($recipient, $template, $data);
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> 345f8677 (phpstan)
         }
 
         // Compila il template
@@ -101,7 +117,11 @@ class SendNotificationAction
                 $this->sendViaChannel($recipient, $channel, $compiled, $options, $log);
             } catch (\Exception $e) {
                 $log->markAsFailed($e->getMessage());
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> 345f8677 (phpstan)
                 continue;
             }
         }
@@ -110,7 +130,11 @@ class SendNotificationAction
         return true;
 =======
         return $log;
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> 345f8677 (phpstan)
     }
 
     /**
@@ -123,7 +147,11 @@ class SendNotificationAction
 <<<<<<< HEAD
 =======
      * @param NotificationLog $log
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> 345f8677 (phpstan)
      * @return void
      */
     protected function sendViaChannel(
@@ -157,7 +185,11 @@ class SendNotificationAction
                 break;
             case 'sms':
                 $this->sendSms($recipient, $compiled, $options, $log);
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> 345f8677 (phpstan)
                 break;
             default:
                 throw new \Exception("Canale {$channel} non supportato");
@@ -171,7 +203,11 @@ class SendNotificationAction
     protected function sendMail(Model $recipient, array $compiled, array $options): void
 =======
     protected function sendMail(Model $recipient, array $compiled, array $options, NotificationLog $log): void
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> 345f8677 (phpstan)
     {
         if (!method_exists($recipient, 'routeNotificationForMail')) {
             throw new \Exception('Il destinatario non supporta le notifiche email');
@@ -216,7 +252,11 @@ class SendNotificationAction
         ));
 
         $log->markAsSent();
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> 345f8677 (phpstan)
     }
 
     /**
@@ -226,7 +266,11 @@ class SendNotificationAction
     protected function sendDatabase(Model $recipient, array $compiled, array $options): void
 =======
     protected function sendDatabase(Model $recipient, array $compiled, array $options, NotificationLog $log): void
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> 345f8677 (phpstan)
     {
         Notification::send($recipient, new GenericNotification(
             $compiled['subject'],
@@ -238,7 +282,11 @@ class SendNotificationAction
 =======
 
         $log->markAsSent();
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> 345f8677 (phpstan)
     }
 
     /**
@@ -248,7 +296,11 @@ class SendNotificationAction
     protected function sendSms(Model $recipient, array $compiled, array $options): void
 =======
     protected function sendSms(Model $recipient, array $compiled, array $options, NotificationLog $log): void
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> 345f8677 (phpstan)
     {
         if (!method_exists($recipient, 'routeNotificationForSms')) {
             throw new \Exception('Il destinatario non supporta le notifiche SMS');
@@ -296,6 +348,10 @@ class SendNotificationAction
             'data' => $data,
             'tenant_id' => $template->tenant_id,
         ]);
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> 345f8677 (phpstan)
     }
 }

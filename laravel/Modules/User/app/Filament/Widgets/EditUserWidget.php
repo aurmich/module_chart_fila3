@@ -90,7 +90,7 @@ class EditUserWidget extends XotBaseWidget
     /** @var array<string, mixed>|null */
     public ?array $data = [];
     
-    /** @var int|string|array<string, mixed> */
+    /** @var array<string, int|null>|int|string */
     protected int | string | array $columnSpan = 'full';
 <<<<<<< HEAD
 >>>>>>> b58de900 (.)
@@ -296,6 +296,7 @@ class EditUserWidget extends XotBaseWidget
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if (isset($attributes['type']) && property_exists($model, 'type') && $model->type instanceof \BackedEnum) {
 =======
                 if (isset($attributes['type']) && $model->type instanceof \BackedEnum) {
@@ -306,6 +307,9 @@ class EditUserWidget extends XotBaseWidget
 =======
                 if (isset($attributes['type']) && $model->type instanceof \BackedEnum) {
 >>>>>>> b58de900 (.)
+=======
+                if (isset($attributes['type']) && property_exists($model, 'type') && $model->type instanceof \BackedEnum) {
+>>>>>>> 345f8677 (phpstan)
                     $attributes['type'] = $model->type->value;
                 }
                 
@@ -459,6 +463,7 @@ class EditUserWidget extends XotBaseWidget
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             (property_exists($currentUser, 'id') && property_exists($this->record, 'id') && $currentUser->id === $this->record->id) ||
             (property_exists($currentUser, 'id') && $currentUser->id === ($this->record->user_id ?? null))
 =======
@@ -473,6 +478,10 @@ class EditUserWidget extends XotBaseWidget
 =======
             $currentUser->id === $this->record->id ||
             $currentUser->id === ($this->record->user_id ?? null)
+=======
+            (property_exists($currentUser, 'id') && property_exists($this->record, 'id') && $currentUser->id === $this->record->id) ||
+            (property_exists($currentUser, 'id') && $currentUser->id === ($this->record->user_id ?? null))
+>>>>>>> 345f8677 (phpstan)
         );
     }
 <<<<<<< HEAD

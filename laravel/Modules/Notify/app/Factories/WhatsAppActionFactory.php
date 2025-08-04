@@ -12,9 +12,13 @@ use Modules\Notify\Actions\WhatsApp\SendTwilioWhatsAppAction;
 use Modules\Notify\Actions\WhatsApp\SendVonageWhatsAppAction;
 use Modules\Notify\Contracts\WhatsAppProviderActionInterface;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use function Safe\preg_replace;
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+use function Safe\preg_replace;
+>>>>>>> 345f8677 (phpstan)
 
 /**
  * Factory per la creazione di azioni WhatsApp.
@@ -45,10 +49,14 @@ final class WhatsAppActionFactory
         
         // Gestione speciale per driver con caratteri non alfanumerici (es. 360dialog)
 <<<<<<< HEAD
+<<<<<<< HEAD
         $normalizedDriver = preg_replace('/[^a-zA-Z0-9]/', '', ucfirst(strtolower(is_string($driver) ? $driver : '')));
 =======
         $normalizedDriver = preg_replace('/[^a-zA-Z0-9]/', '', ucfirst(strtolower($driver)));
 >>>>>>> 54f4fa16 (.)
+=======
+        $normalizedDriver = preg_replace('/[^a-zA-Z0-9]/', '', ucfirst(strtolower((string) $driver)));
+>>>>>>> 345f8677 (phpstan)
         
         // Costruisci il nome completo della classe
         $className = "\\Modules\\Notify\\Actions\\WhatsApp\\Send{$normalizedDriver}WhatsAppAction";
@@ -56,10 +64,14 @@ final class WhatsAppActionFactory
         // Verifica se la classe esiste
         if (!class_exists($className)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             throw new Exception("Unsupported WhatsApp driver: " . (is_string($driver) ? $driver : '') . ". Class {$className} not found.");
 =======
             throw new Exception("Unsupported WhatsApp driver: {$driver}. Class {$className} not found.");
 >>>>>>> 54f4fa16 (.)
+=======
+            throw new Exception("Unsupported WhatsApp driver: " . (string) $driver . ". Class {$className} not found.");
+>>>>>>> 345f8677 (phpstan)
         }
         
         // Verifica se la classe implementa l'interfaccia richiesta

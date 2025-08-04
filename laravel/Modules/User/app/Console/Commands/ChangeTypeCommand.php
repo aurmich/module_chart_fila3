@@ -99,6 +99,7 @@ class ChangeTypeCommand extends Command
         
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var UserContract $user */
 =======
         /** @var UserContract|null */
@@ -124,6 +125,9 @@ class ChangeTypeCommand extends Command
         
         /** @var UserContract|null */
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+        /** @var UserContract $user */
+>>>>>>> 345f8677 (phpstan)
         $user = XotData::make()->getUserByEmail($email);
 
         if (!$user) {
@@ -139,6 +143,7 @@ class ChangeTypeCommand extends Command
         }
 
         $childTypes = $xot->getUserChildTypes();
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         /** @phpstan-ignore nullsafe.neverNull */
@@ -191,11 +196,14 @@ class ChangeTypeCommand extends Command
 
         $childTypes = $xot->getUserChildTypes();
         $this->info("Current user type: {$user->type?->getLabel()}");
+=======
+        $this->info("Current user type: {$user->type->getLabel()}");
+>>>>>>> 345f8677 (phpstan)
         
         $typeClass = $xot->getUserChildTypeClass();
-        $options = Arr::mapWithKeys($childTypes, function ($item, string $key) use ($typeClass) {
-            $val = $typeClass::tryFrom($key)?->getLabel();
-            return [$key => $val];
+        $options = Arr::mapWithKeys($childTypes, function ($item, int|string $key) use ($typeClass) {
+            $val = $typeClass::tryFrom((string) $key)?->getLabel();
+            return [(string) $key => $val];
         });
 
         $newType = select('Select new user type:', $options);

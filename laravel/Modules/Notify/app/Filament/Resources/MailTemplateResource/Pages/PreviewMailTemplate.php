@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Notify\Filament\Resources\MailTemplateResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Resources\Pages\Page;
 use Modules\Notify\Models\MailTemplate;
@@ -15,10 +16,20 @@ use Modules\Notify\Filament\Resources\MailTemplateResource;
  */
 =======
 use Modules\Notify\Filament\Resources\MailTemplateResource;
+=======
+>>>>>>> 345f8677 (phpstan)
 use Filament\Actions\Action;
 use Filament\Resources\Pages\Page;
+use Modules\Notify\Models\MailTemplate;
+use Modules\Notify\Filament\Resources\MailTemplateResource;
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+/**
+ * @property MailTemplate $record
+ */
+>>>>>>> 345f8677 (phpstan)
 class PreviewMailTemplate extends Page
 {
     protected static string $resource = MailTemplateResource::class;

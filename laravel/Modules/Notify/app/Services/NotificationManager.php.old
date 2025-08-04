@@ -18,7 +18,11 @@ class NotificationManager
      * Invia una notifica a un destinatario.
 =======
      * Invia una notifica utilizzando un template.
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> 345f8677 (phpstan)
      *
      * @param Model $recipient Il destinatario della notifica
      * @param string $templateCode Il codice del template da utilizzare
@@ -30,7 +34,11 @@ class NotificationManager
      * @return array
 =======
      * @return NotificationLog
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> 345f8677 (phpstan)
      */
     public function send(
         Model $recipient,
@@ -59,7 +67,11 @@ class NotificationManager
             $channels,
             $options
         );
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> 345f8677 (phpstan)
     }
 
     /**
@@ -69,7 +81,11 @@ class NotificationManager
      * @param array $recipients I destinatari delle notifiche
 =======
      * @param array $recipients Array di destinatari
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> 345f8677 (phpstan)
      * @param string $templateCode Il codice del template da utilizzare
      * @param array $data I dati per compilare il template
      * @param array $channels I canali da utilizzare (opzionale)
@@ -79,7 +95,11 @@ class NotificationManager
      * @return array<array>
 =======
      * @return array<NotificationLog>
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> 345f8677 (phpstan)
      */
     public function sendMultiple(
         array $recipients,
@@ -173,7 +193,11 @@ class NotificationManager
             'failed' => $logs->where('status', NotificationLog::STATUS_FAILED)->count(),
             'opened' => $logs->where('status', NotificationLog::STATUS_OPENED)->count(),
             'clicked' => $logs->where('status', NotificationLog::STATUS_CLICKED)->count(),
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> 345f8677 (phpstan)
         ];
     }
 
@@ -214,7 +238,11 @@ class NotificationManager
             'failed' => $logs->where('status', NotificationLog::STATUS_FAILED)->count(),
             'opened' => $logs->where('status', NotificationLog::STATUS_OPENED)->count(),
             'clicked' => $logs->where('status', NotificationLog::STATUS_CLICKED)->count(),
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
+>>>>>>> 345f8677 (phpstan)
         ];
     }
 } 
