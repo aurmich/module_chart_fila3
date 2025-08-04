@@ -135,6 +135,7 @@
                         }
                     ]
                 }
+<<<<<<< HEAD
             },
             {
 <<<<<<< HEAD
@@ -157,6 +158,8 @@
 =======
 >>>>>>> a25008e1 (- Rename file: header, footer, home;)
                 }
+=======
+>>>>>>> f4cd9d71 (- updated testo sala d'attesa registrazione paziente)
             }
         ]
     },

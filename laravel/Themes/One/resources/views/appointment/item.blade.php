@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
  
 use Livewire\Volt\Component;
@@ -96,6 +97,9 @@ new class extends Component  {
 =======
 <div class="w-full lg:w-2/4 flex items-center p-9">
 =======
+=======
+<div class="w-full flex justify-center">
+>>>>>>> f4cd9d71 (- updated testo sala d'attesa registrazione paziente)
 <div class="w-full lg:w-2/4 flex items-center justify-center p-9">
 >>>>>>> 0c7257a8 (- updated testi sale d'attesa)
     <div class="w-full lg:w-2/4 bg-white rounded-lg shadow-2xl">
@@ -128,6 +132,7 @@ new class extends Component  {
             </div>
         </div>
     </div>
+</div>
 </div>
 
 
