@@ -2,6 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <title>{{ $title ?? config('app.name') }}</title>
 
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -10,6 +11,9 @@
 =======
 <title>{{ $title ?? 'Laravel' }}</title>
 >>>>>>> aurmich/dev
+=======
+<title>{{ $title ?? 'Laravel' }}</title>
+>>>>>>> 54f4fa16 (.)
 
 <link rel="preconnect" href="https://fonts.bunny.net">
 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />

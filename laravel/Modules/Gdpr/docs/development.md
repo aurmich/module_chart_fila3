@@ -177,7 +177,10 @@ trait HasConsent
 
 ### 2. Commit
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # Formato messaggi commit
 feat(gdpr): aggiunta gestione consensi cookie
 fix(gdpr): correzione validazione consensi
@@ -194,7 +197,10 @@ docs(gdpr): aggiornamento documentazione
 
 ### 1. PHPStan
 ```neon
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # phpstan.neon.dist
 parameters:
     level: 5
@@ -253,7 +259,10 @@ public function storeConsent(User $user, array $data): Consent
 
 ### 1. CI/CD
 ```yaml
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # .github/workflows/gdpr.yml
 name: Gdpr CI
 

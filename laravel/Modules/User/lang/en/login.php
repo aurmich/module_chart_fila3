@@ -6,6 +6,7 @@ return array (
     'email' => 
     array (
 <<<<<<< HEAD
+<<<<<<< HEAD
       'label' => 'Email',
       'placeholder' => 'Enter your email',
       'help' => 'Enter your email address to log in',
@@ -16,6 +17,8 @@ return array (
       'placeholder' => 'Enter your password',
       'help' => 'Enter your account password',
 =======
+=======
+>>>>>>> 54f4fa16 (.)
       'label' => 'email',
       'placeholder' => 'email',
       'helper_text' => 'email',
@@ -26,11 +29,15 @@ return array (
       'label' => 'password',
       'placeholder' => 'password',
       'helper_text' => 'password',
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
       'description' => 'password',
     ),
     'remember' => 
     array (
+<<<<<<< HEAD
 <<<<<<< HEAD
       'label' => 'Remember me',
       'placeholder' => '',
@@ -88,11 +95,16 @@ return array (
     'general_error' => 'An error occurred. Please try again later.',
     'unauthorized' => 'You do not have the necessary permissions for this operation.',
 =======
+=======
+>>>>>>> 54f4fa16 (.)
       'label' => 'remember',
       'description' => 'remember',
       'placeholder' => 'remember',
       'helper_text' => 'remember',
     ),
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
   ),
 );

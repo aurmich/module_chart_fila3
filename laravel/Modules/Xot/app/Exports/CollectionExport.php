@@ -17,18 +17,24 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     use Exportable;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public Collection $collection;
     public array $headings;
 =======
     public array $headings;
 
 >>>>>>> aurmich/dev
+=======
+    public array $headings;
+
+>>>>>>> 54f4fa16 (.)
     public ?string $transKey;
 
     /** @var array<int, string> */
     public ?array $fields = null;
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @param Collection $collection
      * @param string|null $transKey  
@@ -41,6 +47,8 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     ) {
         $this->collection = $collection;
 =======
+=======
+>>>>>>> 54f4fa16 (.)
      * @param array<int, string> $fields
      */
     public function __construct(
@@ -48,7 +56,10 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
         ?string $transKey = null,
         array $fields = [],
     ) {
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         $this->transKey = $transKey;
         $this->fields = $fields;
     }

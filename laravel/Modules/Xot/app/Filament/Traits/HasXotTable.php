@@ -39,17 +39,27 @@ trait HasXotTable
     public TableLayoutEnum $layoutView = TableLayoutEnum::LIST;
 
     protected static bool $canReplicate = false;
+<<<<<<< HEAD
     protected static bool $canView = true;
+=======
+
+    protected static bool $canView = true;
+
+>>>>>>> 54f4fa16 (.)
     protected static bool $canEdit = true;
 
     /**
      * Get table header actions.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, \Filament\Tables\Actions\Action|\Filament\Tables\Actions\ActionGroup>
 =======
      * @return array<string, Action|ActionGroup>
 >>>>>>> aurmich/dev
+=======
+     * @return array<string, Action|ActionGroup>
+>>>>>>> 54f4fa16 (.)
      */
     public function getTableHeaderActions(): array
     {
@@ -137,8 +147,15 @@ trait HasXotTable
      *
      * @return array<string, Tables\Columns\Column>
      */
+<<<<<<< HEAD
     abstract public function getTableColumns(): array;
     
+=======
+    public function getTableColumns(): array
+    {
+        return [];
+    }
+>>>>>>> 54f4fa16 (.)
 
     /**
      * Get table filters form columns.
@@ -214,6 +231,7 @@ trait HasXotTable
             ->recordTitleAttribute($this->getTableRecordTitleAttribute())
             ->heading($this->getTableHeading())
 <<<<<<< HEAD
+<<<<<<< HEAD
             ->columns($this->layoutView->getTableColumns(
                 $this->getTableColumns(),
                 $this->getGridTableColumns()
@@ -221,10 +239,14 @@ trait HasXotTable
 =======
             ->columns($this->layoutView->getTableColumns())
 >>>>>>> aurmich/dev
+=======
+            ->columns($this->layoutView->getTableColumns())
+>>>>>>> 54f4fa16 (.)
             ->contentGrid($this->layoutView->getTableContentGrid())
             ->filters($this->getTableFilters())
             ->filtersLayout(FiltersLayout::AboveContent)
             ->filtersFormColumns($this->getTableFiltersFormColumns())
+<<<<<<< HEAD
             ->persistFiltersInSession()
             ->headerActions($this->getTableHeaderActions())
             ->actions($this->getTableActions())
@@ -232,6 +254,29 @@ trait HasXotTable
             ->actionsPosition(ActionsPosition::BeforeColumns)
             ->emptyStateActions($this->getTableEmptyStateActions())
             ->striped()
+=======
+            ->persistFiltersInSession();
+
+        // Verifica i metodi disponibili prima di chiamarli
+        if (method_exists($this, 'getTableHeaderActions')) {
+            $table = $table->headerActions($this->getTableHeaderActions());
+        }
+
+        if (method_exists($this, 'getTableActions')) {
+            $table = $table->actions($this->getTableActions());
+        }
+
+        if (method_exists($this, 'getTableBulkActions')) {
+            $table = $table->bulkActions($this->getTableBulkActions());
+        }
+
+        $table = $table
+            ->actionsPosition(ActionsPosition::BeforeColumns)
+            ->emptyStateActions($this->getTableEmptyStateActions())
+            ->striped();
+
+        $table = $table
+>>>>>>> 54f4fa16 (.)
             ->paginated($this->getTablePaginated());
         /*
             ->defaultSort(

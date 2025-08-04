@@ -1,10 +1,15 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
 >>>>>>> aurmich/dev
+=======
+declare(strict_types=1);
+
+>>>>>>> 54f4fa16 (.)
 return [
     'login' => [
         'username_or_email' => 'Benutzername oder E-Mail',
@@ -118,9 +123,12 @@ return [
                 'invalid_code' => 'Der von Ihnen eingegebene Code ist ungültig.',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'must_enable' => 'Per utilizzare questa applicazione devi abilitare la 2FA.',
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         ],
         'sanctum' => [
             'title' => 'API Tokens',
@@ -131,19 +139,25 @@ return [
                     'label' => 'Erstellen',
                 ],
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'message' => 'Il tuo token viene mostrato solo una volta. Se perdi il token, dovrai cancellarlo e crearne uno nuovo.',
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
             ],
             'update' => [
                 'notify' => 'Token erfolgreich aktualisiert!',
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             'copied' => [
                 'label' => 'Ho copiato il mio token',
             ],
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         ],
     ],
     'clipboard' => [
@@ -165,11 +179,14 @@ return [
         'created' => 'Erstellt',
         'expired' => 'Abgelaufen',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'avatar' => 'Avatar',
         'token_expiry' => 'Scadenza del Token',
         'expires' => 'Scade',
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
     ],
     'or' => 'Oder',
     'cancel' => 'Abbrechen',

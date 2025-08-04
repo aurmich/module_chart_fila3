@@ -157,6 +157,7 @@ Class "Modules\SaluteOra\app\Providers\SaluteOraServiceProvider" not found
 **Consulta anche:**
 - [MIGLIORAMENTI_E_CORREZIONI.md](./MIGLIORAMENTI_E_CORREZIONI.md)
 - [naming-conventions.md](./naming-conventions.md)
+<<<<<<< HEAD
 
 ## Errori Comuni e Come Evitarli
 
@@ -210,3 +211,5 @@ find laravel/Modules/SaluteOra -type f -name "*.php" | grep -v "app/"
 # Verifica i namespace
 grep -r "namespace Modules\\SaluteOra\\app" laravel/Modules/SaluteOra
 ```
+=======
+>>>>>>> 54f4fa16 (.)

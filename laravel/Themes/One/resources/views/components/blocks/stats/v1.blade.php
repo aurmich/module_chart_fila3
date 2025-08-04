@@ -1,5 +1,6 @@
 @props([
     'title',
+<<<<<<< HEAD
     'stats' => [],
     'description' => null
 ])
@@ -38,10 +39,18 @@
 >>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
 =======
 >>>>>>> aurmich/dev
+=======
+    'stats' => []
+])
+
+<div class="bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+>>>>>>> 54f4fa16 (.)
         <div class="mx-auto max-w-2xl lg:text-center">
             <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{{ $title }}</h2>
             @if(isset($description))
                 <p class="mt-6 text-lg leading-8 text-gray-600">{{ $description }}</p>
+<<<<<<< HEAD
 <<<<<<< HEAD
             @if(isset($description))
                 <p class="mt-6 text-lg leading-8 text-[#1A467F]">{{ $description }}</p>
@@ -52,12 +61,15 @@
                 <p class="mt-6 text-lg leading-8 text-[#1A467F]">{{ $description }}</p>
 >>>>>>> d23ba493 (add calendar)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
             @endif
         </div>
         <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
             <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
                 @foreach($stats as $stat)
                     <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+<<<<<<< HEAD
 <<<<<<< HEAD
                         <dt class="text-base leading-7 text-gray-600">{{ $stat['label'] ?? '' }}</dt>
                         <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
@@ -86,6 +98,11 @@
                             {{ $stat['number'] }}
 >>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
 >>>>>>> aurmich/dev
+=======
+                        <dt class="text-base leading-7 text-gray-600">{{ $stat['label'] }}</dt>
+                        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                            {{ $stat['number'] }}
+>>>>>>> 54f4fa16 (.)
                         </dd>
                     </div>
                 @endforeach
@@ -94,8 +111,11 @@
     </div>
 </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 
 >>>>>>> ff138484 (- update dettaglio paziente)
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)

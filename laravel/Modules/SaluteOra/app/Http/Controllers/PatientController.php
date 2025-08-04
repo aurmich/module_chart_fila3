@@ -10,14 +10,21 @@ use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 use Modules\SaluteOra\Models\Patient;
 use Modules\Tenant\Traits\BelongsToTenant;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Auth;
+=======
+>>>>>>> 54f4fa16 (.)
 
 class PatientController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
+<<<<<<< HEAD
     public function index(): \Illuminate\Contracts\View\View
+=======
+    public function index()
+>>>>>>> 54f4fa16 (.)
     {
         return view('saluteora::index');
     }
@@ -25,18 +32,27 @@ class PatientController extends Controller
     /**
      * Show the form for creating a new resource.
      */
+<<<<<<< HEAD
     public function create(): \Illuminate\Contracts\View\View
+=======
+    public function create()
+>>>>>>> 54f4fa16 (.)
     {
         // Recupera i dati del paziente dalla sessione se esistono
         $patientData = Session::get('patient_data', []);
         $currentStep = Session::get('current_step', 1);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 54f4fa16 (.)
         return view('saluteora::pages.patient.create', compact('patientData', 'currentStep'));
     }
 
     /**
      * Salva temporaneamente i dati del paziente durante il processo di wizard.
      */
+<<<<<<< HEAD
     public function saveDraft(): \Illuminate\Http\JsonResponse
     {
         // Salva i dati del form nella sessione
@@ -48,18 +64,40 @@ class PatientController extends Controller
             'success' => true,
             'message' => 'Dati salvati temporaneamente',
             'current_step' => request()->input('current_step', 1)
+=======
+    public function saveDraft(Request $request)
+    {
+        // Salva i dati del form nella sessione
+        $patientData = $request->except(['_token', 'current_step']);
+        Session::put('patient_data', $patientData);
+        Session::put('current_step', $request->input('current_step', 1));
+        
+        return response()->json([
+            'success' => true,
+            'message' => 'Dati salvati temporaneamente',
+            'current_step' => $request->input('current_step', 1)
+>>>>>>> 54f4fa16 (.)
         ]);
     }
 
     /**
      * Store a newly created resource in storage.
      */
+<<<<<<< HEAD
     public function store(): \Illuminate\Http\RedirectResponse
     {
         // Validazione dei dati
         $validator = Validator::make(request()->all(), [
             'name' => 'required|string|max:255',
             'last_name' => 'required|string|max:255',
+=======
+    public function store(Request $request)
+    {
+        // Validazione dei dati
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string|max:255',
+            'surname' => 'required|string|max:255',
+>>>>>>> 54f4fa16 (.)
             'fiscal_code' => 'required|string|size:16|unique:patients,fiscal_code',
             'birth_date' => 'required|date',
             'gender' => 'required|in:M,F,O',
@@ -77,13 +115,18 @@ class PatientController extends Controller
             'notes' => 'nullable|string|max:65535',
             'privacy_consent' => 'required|accepted',
         ]);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 54f4fa16 (.)
         if ($validator->fails()) {
             return redirect()
                 ->route('patient.create')
                 ->withErrors($validator)
                 ->withInput();
         }
+<<<<<<< HEAD
 
         // Creazione del paziente
         $patient = new Patient();
@@ -94,6 +137,18 @@ class PatientController extends Controller
         // Pulisci i dati della sessione
         Session::forget(['patient_data', 'current_step']);
 
+=======
+        
+        // Creazione del paziente
+        $patient = new Patient();
+        $patient->fill($request->all());
+        $patient->tenant_id = auth()->user()?->tenant_id ?? 1; // Assegna il tenant dell'utente autenticato o default
+        $patient->save();
+        
+        // Pulisci i dati della sessione
+        Session::forget(['patient_data', 'current_step']);
+        
+>>>>>>> 54f4fa16 (.)
         // Redirect con messaggio di successo
         return redirect()
             ->route('patient.show', $patient->id)
@@ -103,7 +158,11 @@ class PatientController extends Controller
     /**
      * Show the specified resource.
      */
+<<<<<<< HEAD
     public function show(int $id): \Illuminate\Contracts\View\View
+=======
+    public function show($id)
+>>>>>>> 54f4fa16 (.)
     {
         $patient = Patient::findOrFail($id);
         return view('saluteora::show', compact('patient'));
@@ -112,7 +171,11 @@ class PatientController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
+<<<<<<< HEAD
     public function edit(int $id): \Illuminate\Contracts\View\View
+=======
+    public function edit($id)
+>>>>>>> 54f4fa16 (.)
     {
         $patient = Patient::findOrFail($id);
         return view('saluteora::edit', compact('patient'));
@@ -121,12 +184,20 @@ class PatientController extends Controller
     /**
      * Update the specified resource in storage.
      */
+<<<<<<< HEAD
     public function update(\Illuminate\Http\Request $request, int $id): \Illuminate\Http\RedirectResponse
+=======
+    public function update(Request $request, $id)
+>>>>>>> 54f4fa16 (.)
     {
         // Validazione dei dati
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
+<<<<<<< HEAD
             'last_name' => 'required|string|max:255',
+=======
+            'surname' => 'required|string|max:255',
+>>>>>>> 54f4fa16 (.)
             'fiscal_code' => 'required|string|size:16|unique:patients,fiscal_code,' . $id,
             'birth_date' => 'required|date',
             'gender' => 'required|in:M,F,O',
@@ -143,19 +214,31 @@ class PatientController extends Controller
             'isee_expiry_date' => 'nullable|date',
             'notes' => 'nullable|string|max:65535',
         ]);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 54f4fa16 (.)
         if ($validator->fails()) {
             return redirect()
                 ->route('patient.edit', $id)
                 ->withErrors($validator)
                 ->withInput();
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 54f4fa16 (.)
         // Aggiornamento del paziente
         $patient = Patient::findOrFail($id);
         $patient->fill($request->all());
         $patient->save();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 54f4fa16 (.)
         // Redirect con messaggio di successo
         return redirect()
             ->route('patient.show', $patient->id)
@@ -165,11 +248,19 @@ class PatientController extends Controller
     /**
      * Remove the specified resource from storage.
      */
+<<<<<<< HEAD
     public function destroy(int $id): \Illuminate\Http\RedirectResponse
     {
         $patient = Patient::findOrFail($id);
         $patient->delete();
 
+=======
+    public function destroy($id)
+    {
+        $patient = Patient::findOrFail($id);
+        $patient->delete();
+        
+>>>>>>> 54f4fa16 (.)
         return redirect()
             ->route('patient.index')
             ->with('success', 'Paziente eliminato con successo');

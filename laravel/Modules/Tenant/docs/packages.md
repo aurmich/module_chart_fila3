@@ -70,11 +70,14 @@
 ### Versione Incoming
 
 
+<<<<<<< HEAD
 ## Collegamenti sulla risoluzione dei conflitti
 
 - [Risoluzione conflitti nel modulo Tenant](risoluzione_conflitti.md)
 - [Linee guida globali per la risoluzione dei conflitti git](../../../docs/risoluzione_conflitti_git.md)
 
 
+=======
+>>>>>>> 54f4fa16 (.)
 ---
 

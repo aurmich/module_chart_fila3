@@ -8,10 +8,15 @@ use Illuminate\Notifications\DatabaseNotification as BaseNotification;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * 
  *
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 54f4fa16 (.)
  * @property \Illuminate\Database\Eloquent\Model|\Eloquent $notifiable
  * @method static \Illuminate\Notifications\DatabaseNotificationCollection<int, static> all($columns = ['*'])
  * @method static \Illuminate\Notifications\DatabaseNotificationCollection<int, static> get($columns = ['*'])

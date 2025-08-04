@@ -1,15 +1,21 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
 >>>>>>> aurmich/dev
+=======
+declare(strict_types=1);
+
+>>>>>>> 54f4fa16 (.)
 return [
     'fields' => [
         'name' => 'Name',
         'name.placeholder' => 'Enter provider name',
         'name.helper_text' => 'The name of the social provider (e.g. Facebook, Google)',
+<<<<<<< HEAD
 <<<<<<< HEAD
         'scopes' => 'Scopes',
         'scopes.placeholder' => 'Enter access scopes',
@@ -24,6 +30,8 @@ return [
         'socialite' => 'Socialite',
         'socialite.helper_text' => 'Whether the provider uses Laravel Socialite',
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 
         'scopes' => 'Scopes',
         'scopes.placeholder' => 'Enter access scopes',
@@ -42,7 +50,10 @@ return [
         'socialite' => 'Socialite',
         'socialite.helper_text' => 'Whether the provider uses Laravel Socialite',
 
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         'svg' => 'SVG',
         'svg.placeholder' => 'Enter the SVG icon code',
         'svg.helper_text' => 'The SVG icon for the social provider',

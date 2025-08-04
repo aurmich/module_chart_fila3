@@ -8,10 +8,15 @@ use Webmozart\Assert\Assert;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * 
  *
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 54f4fa16 (.)
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  * @method static \Illuminate\Database\Eloquent\Builder|PermissionRole newModelQuery()

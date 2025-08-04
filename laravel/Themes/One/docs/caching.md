@@ -87,12 +87,19 @@ class CacheViews extends Command
 
 ## Cache di Dati
 
+<<<<<<< HEAD
 ### Cache Action (Queueable)
 ```php
 // app/Actions/CacheAction.php
 class CacheAction
 {
     use QueueableAction;
+=======
+### Cache Service
+```php
+// app/Services/CacheService.php
+class CacheService
+>>>>>>> 54f4fa16 (.)
 {
     protected $cache;
     protected $prefix;
@@ -122,10 +129,15 @@ class CacheAction
 
 ### Cache Tags
 ```php
+<<<<<<< HEAD
 // app/Actions/CacheTagAction.php
 class CacheTagAction
 {
     use QueueableAction;
+=======
+// app/Services/CacheTagService.php
+class CacheTagService
+>>>>>>> 54f4fa16 (.)
 {
     protected $cache;
     

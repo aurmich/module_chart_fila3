@@ -19,12 +19,20 @@ use Filament\Tables\Actions\DeleteBulkAction;
 use Modules\Cms\Filament\Resources\PageContentResource;
 
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+<<<<<<< HEAD
 use Modules\Lang\Filament\Resources\Pages\LangBaseListRecords;
 use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
 
 class ListPageContents extends LangBaseListRecords
 {
     //use ListRecords\Concerns\Translatable;
+=======
+use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
+
+class ListPageContents extends XotBaseListRecords
+{
+    use ListRecords\Concerns\Translatable;
+>>>>>>> 54f4fa16 (.)
 
     // protected static string $resource = PageContentResource::class;
 
@@ -47,8 +55,57 @@ class ListPageContents extends LangBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
     
     /*
+=======
+    public function getTableFilters(): array
+    {
+        return [
+        ];
+    }
+
+    public function getTableActions(): array
+    {
+        return [
+            ViewAction::make()
+                ->label(''),
+            EditAction::make()
+                ->label(''),
+            DeleteAction::make()
+                ->label('')
+                ->requiresConfirmation(),
+        ];
+    }
+
+    public function getTableBulkActions(): array
+    {
+        return [
+            DeleteBulkAction::make(),
+        ];
+    }
+
+    public function table(Table $table): Table
+    {
+        return $table
+            // ->columns($this->getTableColumns())
+            ->columns($this->layoutView->getTableColumns())
+            ->contentGrid($this->layoutView->getTableContentGrid())
+            ->headerActions($this->getTableHeaderActions())
+
+            ->filters($this->getTableFilters())
+            ->filtersLayout(FiltersLayout::AboveContent)
+            ->persistFiltersInSession()
+            ->actions($this->getTableActions())
+            ->bulkActions($this->getTableBulkActions())
+            ->actionsPosition(ActionsPosition::BeforeColumns)
+            ->defaultSort(
+                column: 'created_at',
+                direction: 'DESC',
+            );
+    }
+
+>>>>>>> 54f4fa16 (.)
     protected function getHeaderActions(): array
     {
         return [
@@ -56,7 +113,10 @@ class ListPageContents extends LangBaseListRecords
             Actions\LocaleSwitcher::make(),
         ];
     }
+<<<<<<< HEAD
     */
+=======
+>>>>>>> 54f4fa16 (.)
 
     
 }

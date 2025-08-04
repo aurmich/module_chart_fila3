@@ -78,11 +78,19 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'locale' => env('APP_LOCALE', 'en'),
 
     'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
 
     'faker_locale' => env('APP_FAKER_LOCALE', 'en_US'),
+=======
+    'locale' => env('APP_LOCALE', 'it'),
+
+    'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
+
+    'faker_locale' => env('APP_FAKER_LOCALE', 'it_IT'),
+>>>>>>> 54f4fa16 (.)
 
     /*
     |--------------------------------------------------------------------------
@@ -125,6 +133,7 @@ return [
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ];
 =======
 ];
@@ -132,3 +141,6 @@ return [
 =======
 ];
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+];
+>>>>>>> 54f4fa16 (.)

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
+<<<<<<< HEAD
 use Filament\Forms\Form;
 use Filament\Forms\ComponentContainer;
 use Filament\Forms\Components\Section;
@@ -34,6 +35,18 @@ class ForgotPasswordWidget extends XotBaseWidget
         ];
     }
 
+=======
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Section;
+use Filament\Forms\Form;
+use Illuminate\Support\Facades\Password;
+use Filament\Forms\Components\TextInput as FormsTextInput;
+
+class ForgotPasswordWidget extends BaseAuthWidget
+{
+    protected static string $view = 'user::widgets.auth.forgot-password-widget';
+
+>>>>>>> 54f4fa16 (.)
     public function form(Form $form): Form
     {
         return $form

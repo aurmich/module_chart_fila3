@@ -38,9 +38,12 @@ Prima di utilizzare un componente Filament, verificarne l'esistenza nel progetto
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Cerca nel codice sorgente Filament
 grep -r "dropdown.separator" vendor/filament
 

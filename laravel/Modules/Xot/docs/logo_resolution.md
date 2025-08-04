@@ -109,10 +109,14 @@ Per la versione dark:
 - [Regole per la Case Sensitivity](DIRECTORY-CASE-SENSITIVITY.md)
 - [Regole per i Namespace](NAMESPACE-RULES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Convenzioni di Naming](naming-conventions.md)
 =======
 - [Convenzioni di Naming](NAMING-CONVENTIONS.md)
 >>>>>>> aurmich/dev
+=======
+- [Convenzioni di Naming](NAMING-CONVENTIONS.md)
+>>>>>>> 54f4fa16 (.)
 
 ### Collegamenti alla Root del Progetto
 - [Linee Guida per i Loghi](../../../docs/standards/logo_guidelines.md)

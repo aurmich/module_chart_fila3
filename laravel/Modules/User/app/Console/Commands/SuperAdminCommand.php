@@ -27,10 +27,14 @@ class SuperAdminCommand extends Command
      * The console command description.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var string
 =======
      * @var string|null
 >>>>>>> aurmich/dev
+=======
+     * @var string|null
+>>>>>>> 54f4fa16 (.)
      */
     protected $description = 'Assign super-admin to user';
 
@@ -54,6 +58,7 @@ class SuperAdminCommand extends Command
         /** @var UserContract */
         $user = XotData::make()->getUserByEmail($email);
 
+<<<<<<< HEAD
         // Create super-admin role with web guard
         $role = Role::firstOrCreate(
             ['name' => 'super-admin']
@@ -67,6 +72,14 @@ class SuperAdminCommand extends Command
             $role = Role::firstOrCreate(
                 ['name' => $role_name]
             );
+=======
+        $role = Role::firstOrCreate(['name' => 'super-admin']);
+        $user->assignRole($role);
+        $modules_opts = array_keys(Module::all());
+        foreach ($modules_opts as $module) {
+            $role_name = Str::lower($module).'::admin';
+            $role = Role::firstOrCreate(['name' => $role_name]);
+>>>>>>> 54f4fa16 (.)
             $user->assignRole($role);
         }
 

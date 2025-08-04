@@ -13,10 +13,14 @@ return [
     */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     'default' => env('SMS_DRIVER', 'agiletelecom'),
 =======
     'default' => env('SMS_DRIVER', 'netfun'),
 >>>>>>> aurmich/dev
+=======
+    'default' => env('SMS_DRIVER', 'netfun'),
+>>>>>>> 54f4fa16 (.)
 
     /*
     |--------------------------------------------------------------------------
@@ -69,6 +73,7 @@ return [
             ],
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
         'agiletelecom' => [
             'username' => env('AGILETELECOM_USERNAME'),
             'password' => env('AGILETELECOM_PASSWORD'),
@@ -77,6 +82,8 @@ return [
         ],
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
     ],
 
 

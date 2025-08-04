@@ -20,10 +20,13 @@ class AppointmentWorkflowResource extends XotBaseResource
     protected static ?string $pluralLabel = 'Workflow Prenotazioni';
     protected static ?string $slug = 'appointment-workflows';
 
+<<<<<<< HEAD
     //protected static ?string $tenantOwnershipRelationshipName = 'studio';
     //protected static ?string $tenantRelationshipName = 'studio';
     protected static bool $isScopedToTenant = false;
 
+=======
+>>>>>>> 54f4fa16 (.)
     /**
      * Ottiene lo schema del form per la resource AppointmentWorkflow.
      *
@@ -207,6 +210,7 @@ class AppointmentWorkflowResource extends XotBaseResource
                 }),
         ];
     }
+<<<<<<< HEAD
     
     /**
      * Ottiene le pagine per la risorsa AppointmentWorkflow.
@@ -223,4 +227,6 @@ class AppointmentWorkflowResource extends XotBaseResource
             'workflow' => Pages\WorkflowAppointment::route('/{record}/workflow'),
         ];
     }
+=======
+>>>>>>> 54f4fa16 (.)
 }

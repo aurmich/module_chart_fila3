@@ -6,15 +6,24 @@ namespace Modules\Tenant\Models;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model as EloquentModel;
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> 54f4fa16 (.)
 use Modules\Xot\Traits\Updater;
 
 /**
  * Class BaseModel.
+<<<<<<< HEAD
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
   */
 abstract class BaseModel extends EloquentModel
+=======
+ */
+abstract class BaseModel extends Model
+>>>>>>> 54f4fa16 (.)
 {
     use HasFactory;
     use Updater;
@@ -39,10 +48,14 @@ abstract class BaseModel extends EloquentModel
 
     /** @var string */
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $connection = 'tenant';
 =======
     protected $connection = 'setting';
 >>>>>>> aurmich/dev
+=======
+    protected $connection = 'setting';
+>>>>>>> 54f4fa16 (.)
 
     /** @var list<string> */
     protected $appends = [];
@@ -69,7 +82,11 @@ abstract class BaseModel extends EloquentModel
     }
 
     /** @return array<string, string> */
+<<<<<<< HEAD
     protected function casts(): array
+=======
+    public function casts(): array
+>>>>>>> 54f4fa16 (.)
     {
         return [
             'id' => 'string',

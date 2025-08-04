@@ -10,6 +10,7 @@ use Spatie\Activitylog\LogOptions;
 
 /**
  * PatientDocument Model for the Patient Module.
+<<<<<<< HEAD
  * 
  * Represents a document uploaded by or for a patient, such as clinical documentation.
  *
@@ -39,6 +40,10 @@ use Spatie\Activitylog\LogOptions;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PatientDocument whereUploadDate($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PatientDocument whereUploadedBy($value)
  * @mixin \Eloquent
+=======
+ *
+ * Represents a document uploaded by or for a patient, such as clinical documentation.
+>>>>>>> 54f4fa16 (.)
  */
 class PatientDocument extends Model
 {
@@ -59,9 +64,15 @@ class PatientDocument extends Model
     protected $table = 'patient_documents';
 
     /**
+<<<<<<< HEAD
      * Gli attributi che sono mass assignable.
      *
      * @var list<string>
+=======
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+>>>>>>> 54f4fa16 (.)
      */
     protected $fillable = [
         'patient_id',

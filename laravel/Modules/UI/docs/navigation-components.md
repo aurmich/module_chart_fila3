@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Componenti di Navigazione 
 
 ## Indice
@@ -30,6 +31,8 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
     'width' => '48',
     'contentClasses' => 'py-1 bg-white dark:bg-gray-800',
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 # Componenti Navigazione
 
 ## 🧭 Menu Principale
@@ -60,7 +63,10 @@ Il componente `user-dropdown` è progettato per gestire automaticamente la visua
           <li><a class="dropdown-item" href="#">Servizio 1</a></li>
           <li><a class="dropdown-item" href="#">Servizio 2</a></li>
         </ul>
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
       </li>
     </ul>
   </div>

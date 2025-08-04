@@ -1,8 +1,11 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return [
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 declare(strict_types=1);
 
 return [
@@ -17,7 +20,10 @@ return [
     |
     */
 
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
     'backend' => [
         'access' => [
             'roles' => [
@@ -31,9 +37,13 @@ return [
                 'update_error' => 'Beim aktualisieren der Rolle ist ein Fehler aufgetreten. Bitte versuche es erneut.',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> aurmich/dev
+=======
+
+>>>>>>> 54f4fa16 (.)
             'users' => [
                 'cant_deactivate_self' => 'Du kannst das nicht mit dir selber machen.',
                 'cant_delete_self' => 'Du kannst dich nciht selber löschen.',
@@ -53,9 +63,13 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> aurmich/dev
+=======
+
+>>>>>>> 54f4fa16 (.)
     'frontend' => [
         'auth' => [
             'confirmation' => [
@@ -65,6 +79,7 @@ return [
                 'mismatch' => 'Der Aktivierungscode ist nicht korrekt.',
                 'not_found' => 'Der Aktivierungscode existiert nicht.',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'resend' => 'Dein Account ist nicht aktiviert. Bitte klicke auf den Link in der Aktivierungsmail, oder klicke hier</a> um die aktivierungsmail erneut zu senden.',
                 'success' => 'Dein Account wurde aktiviert!',
                 'resent' => 'Eine neue aktivierungsmail wurde an die hinterlegte E-Mailadresse gesendet.',
@@ -72,6 +87,8 @@ return [
             'deactivated' => 'Dein Account wurde deaktiviert.',
             'email_taken' => 'Diese E-Mailadresse wird schon verwendet.',
 =======
+=======
+>>>>>>> 54f4fa16 (.)
                 'resend' => 'Dein Account ist nicht aktiviert. Bitte klicke auf den Link in der Aktivierungsmail, oder <a href="'.route('frontend.auth.account.confirm.resend', ':user_id').'">klicke hier</a> um die aktivierungsmail erneut zu senden.',
                 'success' => 'Dein Account wurde aktiviert!',
                 'resent' => 'Eine neue aktivierungsmail wurde an die hinterlegte E-Mailadresse gesendet.',
@@ -80,7 +97,10 @@ return [
             'deactivated' => 'Dein Account wurde deaktiviert.',
             'email_taken' => 'Diese E-Mailadresse wird schon verwendet.',
 
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
             'password' => [
                 'change_mismatch' => 'Das ist nicht dein altes Passwort.',
             ],

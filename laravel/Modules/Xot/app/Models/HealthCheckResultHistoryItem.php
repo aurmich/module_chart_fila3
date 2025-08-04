@@ -12,10 +12,15 @@ use Spatie\Health\Models\HealthCheckResultHistoryItem as BaseHealthCheckResultHi
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * 
  *
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 54f4fa16 (.)
  * @property int                             $id
  * @property string $check_name
  * @property string $check_label

@@ -56,10 +56,14 @@
                         <p class="text-sm text-gray-600">
                             <span class="font-medium">Data:</span> 
 <<<<<<< HEAD
+<<<<<<< HEAD
                             {{ $appointment->starts_at->format('d/m/Y') }}
 =======
                             {{ $appointment->date->format('d/m/Y') }}
 >>>>>>> aurmich/dev
+=======
+                            {{ $appointment->date->format('d/m/Y') }}
+>>>>>>> 54f4fa16 (.)
                         </p>
                         <p class="text-sm text-gray-600">
                             <span class="font-medium">Orario:</span> 
@@ -124,7 +128,11 @@ function confirmCancel(appointmentId) {
 }
 </script>
 <<<<<<< HEAD
+<<<<<<< HEAD
 @endpush 
 =======
 @endpush 
 >>>>>>> aurmich/dev
+=======
+@endpush 
+>>>>>>> 54f4fa16 (.)

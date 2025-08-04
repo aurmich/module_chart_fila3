@@ -55,10 +55,14 @@ return [
                 'mismatch' => 'Uw bevestigingscode komt niet overeen.',
                 'not_found' => 'De bevestigingscode bestaat niet.',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'resend' => 'Uw account kon niet worden bevestigd. Klik op de informatie link in de email die u heeft ontvangen, of klik hier</a> om de bevestigingsemail opnieuw te versturen.',
 =======
                 'resend' => 'Uw account kon niet worden bevestigd. Klik op de informatie link in de email die u heeft ontvangen, of <a href="'.route('frontend.auth.account.confirm.resend', ':user_id').'">klik hier</a> om de bevestigingsemail opnieuw te versturen.',
 >>>>>>> aurmich/dev
+=======
+                'resend' => 'Uw account kon niet worden bevestigd. Klik op de informatie link in de email die u heeft ontvangen, of <a href="'.route('frontend.auth.account.confirm.resend', ':user_id').'">klik hier</a> om de bevestigingsemail opnieuw te versturen.',
+>>>>>>> 54f4fa16 (.)
                 'success' => 'Uw account is succesvol bevestigd!',
                 'resent' => 'Een nieuwe bevestigings email is naar het ingegeven adres verstuurd.',
             ],

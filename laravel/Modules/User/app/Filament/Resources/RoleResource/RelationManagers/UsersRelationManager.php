@@ -11,7 +11,11 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\UI\Enums\TableLayoutEnum;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+=======
+use Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager;
+>>>>>>> 54f4fa16 (.)
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\Filament\Traits\TransTrait;
 
@@ -31,14 +35,24 @@ use Modules\Xot\Filament\Traits\TransTrait;
  */
 final class UsersRelationManager extends XotBaseRelationManager
 {
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 54f4fa16 (.)
     protected static string $relationship = 'users';
 
     protected static ?string $inverseRelationship = 'roles';
 
+<<<<<<< HEAD
 
 
 
+=======
+    
+
+    
+>>>>>>> 54f4fa16 (.)
 
 
     /**
@@ -118,9 +132,17 @@ final class UsersRelationManager extends XotBaseRelationManager
         ];
     }
 
+<<<<<<< HEAD
 
 
 
 
 
+=======
+    
+
+   
+
+   
+>>>>>>> 54f4fa16 (.)
 }

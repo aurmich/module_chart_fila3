@@ -98,7 +98,11 @@ protected $casts = [
 ];
 
 // In Laravel 12.x, utilizzare il metodo casts()
+<<<<<<< HEAD
 protected function casts(): array
+=======
+public function casts(): array
+>>>>>>> 54f4fa16 (.)
 {
     return array_merge(parent::casts(), [
         'certifications' => 'array',
@@ -110,7 +114,11 @@ protected function casts(): array
 
 ```php
 // Nel modello Doctor
+<<<<<<< HEAD
 protected function casts(): array
+=======
+public function casts(): array
+>>>>>>> 54f4fa16 (.)
 {
     return array_merge(parent::casts(), [
         'certifications' => 'array',

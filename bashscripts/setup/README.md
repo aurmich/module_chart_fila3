@@ -30,7 +30,10 @@ Configura i moduli con:
 ## Utilizzo
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # Setup completo
 ./setup_environment.sh
 ./setup_database.sh

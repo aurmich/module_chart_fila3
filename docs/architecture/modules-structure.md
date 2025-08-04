@@ -211,7 +211,10 @@ ModuleName/
 ### Esempi di Path Corretti
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # ✅ CORRETTO
 Modules/User/Actions/User/DeleteUserAction.php
 
@@ -221,7 +224,10 @@ Modules/User/app/Actions/User/DeleteUserAction.php
 
 ### Documentazione Modulo
 ```markdown
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # Modulo Nome
 
 ## Collegamenti

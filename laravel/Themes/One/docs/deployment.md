@@ -9,9 +9,12 @@ Questo documento descrive il processo di deployment del tema "One", inclusi gli 
 ### Sviluppo (Development)
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Configurazione
 APP_ENV=local
 APP_DEBUG=true
@@ -34,9 +37,12 @@ QUEUE_DRIVER=sync
 ### Staging
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Configurazione
 APP_ENV=staging
 APP_DEBUG=false
@@ -59,9 +65,12 @@ QUEUE_DRIVER=redis
 ### Produzione
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Configurazione
 APP_ENV=production
 APP_DEBUG=false
@@ -86,9 +95,12 @@ QUEUE_DRIVER=redis
 ### 1. Preparazione
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Pull ultime modifiche
 git pull origin main
 
@@ -108,9 +120,12 @@ php artisan view:clear
 ### 2. Database
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Migrazioni
 php artisan migrate --force
 
@@ -121,9 +136,12 @@ php artisan db:seed --force
 ### 3. Ottimizzazione
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Ottimizzazione configurazione
 php artisan config:cache
 php artisan route:cache
@@ -136,9 +154,12 @@ composer dump-autoload --optimize
 ### 4. Verifica
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Test
 php artisan test
 

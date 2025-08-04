@@ -28,6 +28,10 @@ use function Safe\json_encode;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property Consent|null                    $consent
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> 54f4fa16 (.)
  * @method static \Modules\Gdpr\Database\Factories\EventFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|Event   newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Event   newQuery()
@@ -41,14 +45,26 @@ use function Safe\json_encode;
  * @method static \Illuminate\Database\Eloquent\Builder|Event   whereSubjectId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Event   whereTreatmentId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Event   whereUpdatedAt($value)
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> 54f4fa16 (.)
  * @property string|null                     $updated_by
  * @property string|null                     $created_by
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * @property string|null                     $deleted_by
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> 54f4fa16 (.)
  * @method static \Illuminate\Database\Eloquent\Builder|Event whereCreatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Event whereDeletedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Event whereDeletedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Event whereUpdatedBy($value)
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> 54f4fa16 (.)
  * @property string $id
  * @property string|null                     $treatment_id
  * @property string|null                     $consent_id
@@ -63,6 +79,10 @@ use function Safe\json_encode;
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * @property string|null                     $deleted_by
  * @property Consent|null                    $consent
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> 54f4fa16 (.)
  * @method static \Modules\Gdpr\Database\Factories\EventFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|Event   newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Event   newQuery()
@@ -80,8 +100,15 @@ use function Safe\json_encode;
  * @method static \Illuminate\Database\Eloquent\Builder|Event   whereTreatmentId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Event   whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Event   whereUpdatedBy($value)
+<<<<<<< HEAD
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
+=======
+ *
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ *
+>>>>>>> 54f4fa16 (.)
  * @mixin \Eloquent
  */
 class Event extends BaseModel

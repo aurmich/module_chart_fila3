@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # Memoria: Struttura Directory e Namespace
 
 ## Regola Critica da Ricordare SEMPRE
@@ -40,3 +41,5 @@ alwaysApply: false
 - [ ] Nessun `->label()`?
 
 **Questa memoria va consultata PRIMA di ogni modifica ai file PHP.**
+=======
+>>>>>>> 54f4fa16 (.)

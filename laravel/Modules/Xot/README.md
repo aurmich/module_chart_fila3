@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo Xot
 
 ## Descrizione
@@ -102,6 +103,8 @@ Il modulo può essere configurato tramite il file `config/module_xot.php`:
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Module Xot Fila3 🔥 The Ultimate Laravel Multi-module Solution 🚀
 
 [![Latest Release](https://img.shields.io/github/v/release/laraxot/module_xot_fila3)](https://github.com/laraxot/module_xot_fila3/releases)

@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/module_chart_fila3",
     "description": "chart module that manages your data and represents them in graphs",
     "keywords": [
@@ -125,10 +126,13 @@
     "prefer-stable": true
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 54f4fa16 (.)
     "require-dev": {
         "phpstan/phpstan": "^2.1"
     },
     "require": {
+<<<<<<< HEAD
         "dotswan/filament-grapesjs-v3": "*",
         "spatie/laravel-queueable-action": "^2.16"
     }
@@ -205,3 +209,8 @@
 =======
 }
 >>>>>>> 8f11126c (Squashed 'laravel/Modules/Geo/' content from commit 9f987ec)
+=======
+        "dotswan/filament-grapesjs-v3": "*"
+    }
+}
+>>>>>>> 54f4fa16 (.)

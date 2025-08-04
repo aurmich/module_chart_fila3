@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Pattern di Estensione Filament nel Framework Xot
 
 ## Regola Fondamentale: "Mai Estendere Filament Direttamente"
@@ -153,3 +154,17 @@ return [
 3. **Array Non Associativi**: Convertire tutti gli array di form e tabelle in array associativi
 4. **Uso di ->label()**: Rimuovere e utilizzare i file di traduzione
 5. **Metodi Ridondanti**: Rimuovere metodi `getPages()`, `getRelations()` se standard/vuoti
+=======
+# Filament Extension Pattern
+
+**When** you are creating or modifying Filament components in the project
+
+**Then** always extend the XotBase classes from the Xot module instead of directly extending Filament classes. For example, use `XotBasePage` instead of `Page`.
+
+**Because** this ensures centralized customization, simplifies updates, and maintains consistency across the application.
+
+**Examples**
+
+- Correct: `class MyPage extends XotBasePage`
+- Incorrect: `class MyPage extends \Filament\Pages\Page`
+>>>>>>> 54f4fa16 (.)

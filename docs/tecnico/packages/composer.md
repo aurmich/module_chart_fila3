@@ -117,7 +117,10 @@ composer --version
 
 ### Gestione Dipendenze
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # Installare dipendenze
 composer install
 
@@ -133,7 +136,10 @@ composer require package/name
 
 ### Gestione Autoload
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # Rigenerare autoload
 composer dump-autoload
 
@@ -143,7 +149,10 @@ composer dump-autoload -o
 
 ### Diagnostica
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # Verificare dipendenze
 composer diagnose
 
@@ -158,3 +167,7 @@ composer licenses
 - Mantenere sempre aggiornato composer
 - Verificare la compatibilità delle dipendenze
 - Utilizzare versioni specifiche per stabilità
+<<<<<<< HEAD
+=======
+- Documentare le dipendenze aggiunte 
+>>>>>>> 54f4fa16 (.)

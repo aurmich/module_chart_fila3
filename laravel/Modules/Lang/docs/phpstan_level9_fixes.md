@@ -26,3 +26,15 @@ Durante un controllo di routine sono stati rilevati diversi conflitti Git non ri
 **Vedi anche:**
 - [PHPStan Level 10 Fixes](PHPSTAN_LEVEL10_FIXES.md)
 - [module_lang.md](module_lang.md)
+<<<<<<< HEAD
+=======
+
+## Collegamenti tra versioni di PHPSTAN_LEVEL9_FIXES.md
+* [PHPSTAN_LEVEL9_FIXES.md](../../../User/docs/PHPSTAN_LEVEL9_FIXES.md)
+* [PHPSTAN_LEVEL9_FIXES.md](../../../Lang/docs/PHPSTAN_LEVEL9_FIXES.md)
+
+
+## Collegamenti tra versioni di phpstan_level9_fixes.md
+* [phpstan_level9_fixes.md](../../User/docs/phpstan_level9_fixes.md)
+
+>>>>>>> 54f4fa16 (.)

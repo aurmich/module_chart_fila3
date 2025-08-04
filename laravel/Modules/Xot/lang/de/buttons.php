@@ -1,10 +1,15 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
 >>>>>>> aurmich/dev
+=======
+declare(strict_types=1);
+
+>>>>>>> 54f4fa16 (.)
 return [
     'backend' => [
         'access' => [
@@ -38,10 +43,13 @@ return [
         'view' => 'Anzeigen',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'save' => 'Salva',
     'close' => 'Chiudi',
     'back' => 'Indietro',
     'confirm' => 'Conferma',
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ];

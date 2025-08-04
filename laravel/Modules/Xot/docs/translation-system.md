@@ -146,9 +146,12 @@ Modules/
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Trova tutti i file PHP che usano ->label()
 grep -r "->label(" . --include="*.php"
 ```
@@ -228,6 +231,10 @@ php artisan view:clear
 - [Filament Form Components](https://filamentphp.com/docs/forms)
 - [Best Practices Filament](../docs/filament-best-practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Schema Conventions](../docs/schema-conventions.md) 
 >>>>>>> aurmich/dev
+=======
+- [Schema Conventions](../docs/schema-conventions.md) 
+>>>>>>> 54f4fa16 (.)

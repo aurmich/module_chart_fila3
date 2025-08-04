@@ -141,10 +141,14 @@ return [
 
     'model_locations' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         //'app',
 >>>>>>> aurmich/dev
         'Modules/*/app/Models',
+=======
+        'app',
+>>>>>>> 54f4fa16 (.)
     ],
 
     /*

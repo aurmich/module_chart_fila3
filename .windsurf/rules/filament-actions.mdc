@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 description: Regole specifiche per le Action Filament custom in Laraxot/<nome progetto>
 globs: ["**/*.php", "**/app/Filament/**/*.php", "**/Filament/**/*.php"]
 alwaysApply: true
@@ -155,3 +156,9 @@ public function table(Table $table): Table
 - Documentare sempre gli effetti collaterali delle azioni
 - Utilizzare tipizzazione rigorosa per tutti i metodi
 - Implementare autorizzazioni appropriate per ogni azione
+=======
+description:
+globs:
+alwaysApply: false
+---
+>>>>>>> 54f4fa16 (.)

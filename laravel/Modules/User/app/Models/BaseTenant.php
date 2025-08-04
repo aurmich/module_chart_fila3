@@ -85,8 +85,12 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
         $userClass = $xot->getUserClass();
 
         // $this->setConnection('mysql');
+<<<<<<< HEAD
         //return $this->belongsToManyX($userClass, null, 'tenant_id', 'user_id');
         return $this->belongsToManyX($userClass);
+=======
+        return $this->belongsToManyX($userClass, null, 'tenant_id', 'user_id');
+>>>>>>> 54f4fa16 (.)
         // ->as('membership')
     }
 

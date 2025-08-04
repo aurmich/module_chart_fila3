@@ -1,10 +1,15 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
 >>>>>>> aurmich/dev
+=======
+declare(strict_types=1);
+
+>>>>>>> 54f4fa16 (.)
 return [
     'accepted' => 'The :attribute rmust be accepted.',
     'active_url' => 'The :attribute is not a valid URL.',
@@ -448,6 +453,7 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'password' => [
         'letters' => 'Il campo :attribute deve contenere almeno una lettera.',
         'mixed' => 'Il campo :attribute deve contenere almeno una lettera maiuscola e una minuscola.',
@@ -457,4 +463,6 @@ return [
     ],
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ];

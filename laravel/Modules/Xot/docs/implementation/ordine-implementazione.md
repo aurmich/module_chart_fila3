@@ -8,9 +8,12 @@ Questa guida definisce l'ordine corretto per l'implementazione del progetto il p
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Installazione Laravel Installer
 composer global require laravel/installer
 
@@ -30,9 +33,12 @@ php artisan vendor:publish --provider="Nwidart\Modules\LaravelModulesServiceProv
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # 1. Modulo Xot (base)
 git subtree add --prefix laravel/Modules/Xot git@github.com:laraxot/module_xot_fila3.git dev --squash
 
@@ -50,9 +56,12 @@ git subtree add --prefix laravel/Modules/UI git@github.com:laraxot/module_ui_fil
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Tema One (dipende da UI)
 git subtree add --prefix laravel/Themes/One git@github.com:laraxot/theme_one_fila3.git dev --squash
 ```
@@ -61,9 +70,12 @@ git subtree add --prefix laravel/Themes/One git@github.com:laraxot/theme_one_fil
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # 5. Modulo User (dipende da Xot, Tenant)
 git subtree add --prefix laravel/Modules/User git@github.com:laraxot/module_user_fila3.git dev --squash
 
@@ -90,9 +102,12 @@ git subtree add --prefix laravel/Modules/Job git@github.com:laraxot/module_job_f
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Aggiornamento dipendenze
 composer update
 
@@ -121,9 +136,12 @@ Dopo l'installazione dei moduli base Laraxot, procedere con l'implementazione de
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Pubblicazione configurazione Filament
 php artisan vendor:publish --tag=filament-config
 

@@ -50,10 +50,13 @@ use Modules\Xot\Datas\Transformers\AssetTransformer;
  * @property string $favicon
  * @property array<string, array{key?: string, color: string, hex?: string}> $colors
 <<<<<<< HEAD
+<<<<<<< HEAD
  * 
  * @method string getBrandLogoBase64() Get the brand logo as base64 data URI for inline embedding
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
  */
 class MetatagData extends Data implements Wireable
 {
@@ -236,6 +239,7 @@ class MetatagData extends Data implements Wireable
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Get the brand logo as base64 data URI for inline embedding.
      * This method reflects the semantic purpose of getting the brand logo
      * as a base64 data URI that can be embedded directly in HTML img tags.
@@ -318,6 +322,8 @@ class MetatagData extends Data implements Wireable
     /**
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
      * Get the theme colors.
      * This method reflects the semantic purpose of getting theme colors,
      * rather than exposing the raw color data structure.
@@ -326,6 +332,7 @@ class MetatagData extends Data implements Wireable
      */
     public function getThemeColors(): array
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         $filamentColors = $this->getFilamentColors();
         $defaults = [];
@@ -341,6 +348,9 @@ class MetatagData extends Data implements Wireable
 =======
         $defaults = $this->getFilamentColors();
 >>>>>>> aurmich/dev
+=======
+        $defaults = $this->getFilamentColors();
+>>>>>>> 54f4fa16 (.)
         $custom = [];
         foreach ($this->colors as $key => $value) {
             if (Arr::has($value, 'color')) {
@@ -348,9 +358,12 @@ class MetatagData extends Data implements Wireable
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         return array_merge($defaults, $custom);
     }
 
@@ -446,9 +459,13 @@ class MetatagData extends Data implements Wireable
      */
     public function getColors(): array
     {
+<<<<<<< HEAD
 
         return ($this->colors);
         //return $this->getThemeColors();
+=======
+        return $this->getThemeColors();
+>>>>>>> 54f4fa16 (.)
     }
 
     /**
@@ -470,16 +487,21 @@ class MetatagData extends Data implements Wireable
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Get all colors with proper type handling.
      * Converts custom colors to Filament color format for compatibility.
 =======
      * Get the colors array with proper type handling.
 >>>>>>> aurmich/dev
+=======
+     * Get the colors array with proper type handling.
+>>>>>>> 54f4fa16 (.)
      *
      * @return array<string, array<int, string>>
      */
     public function getAllColors(): array
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         $filamentColors = $this->getFilamentColors();
         $customColors = [];
@@ -497,6 +519,9 @@ class MetatagData extends Data implements Wireable
 =======
         return array_merge($this->getFilamentColors(), $this->colors);
 >>>>>>> aurmich/dev
+=======
+        return array_merge($this->getFilamentColors(), $this->colors);
+>>>>>>> 54f4fa16 (.)
     }
 
     /**

@@ -200,8 +200,11 @@ return array (
     'json' => 'JSON',
     'xml' => 'XML',
   ),
+<<<<<<< HEAD
   'model' => 
   array (
     'label' => 'job batch.model',
   ),
+=======
+>>>>>>> 54f4fa16 (.)
 );

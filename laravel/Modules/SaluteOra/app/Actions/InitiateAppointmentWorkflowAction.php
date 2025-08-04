@@ -8,7 +8,10 @@ use Illuminate\Support\Str;
 use Modules\SaluteOra\Models\AppointmentWorkflow;
 use Modules\SaluteOra\Models\Patient;
 use Spatie\QueueableAction\QueueableAction;
+<<<<<<< HEAD
 use Filament\Facades\Filament;
+=======
+>>>>>>> 54f4fa16 (.)
 
 class InitiateAppointmentWorkflowAction
 {
@@ -32,8 +35,13 @@ class InitiateAppointmentWorkflowAction
     ): AppointmentWorkflow {
         // Crea il workflow
         $workflow = new AppointmentWorkflow();
+<<<<<<< HEAD
         $workflow->tenant_id = Filament::getTenant()?->id;
         $workflow->patient_id = $patient !== null ? $patient->id : null;
+=======
+        $workflow->tenant_id = $patient?->tenant_id ?? tenant()->id;
+        $workflow->patient_id = $patient?->id;
+>>>>>>> 54f4fa16 (.)
         $workflow->current_step = 'patient_info';
         $workflow->status = AppointmentWorkflow::STATUS_DRAFT;
         $workflow->step_data = $initialData;

@@ -14,6 +14,7 @@ return [
     'disable_frontend_dynamic_route' => false,
     'register_adm_theme' => false,
     'register_pub_theme' => true,
+<<<<<<< HEAD
     'tenant_class' => 'Modules\SaluteOra\Models\Studio',
     'colors' => [
         'primary' => '#FF5F7E',
@@ -23,4 +24,6 @@ return [
 =======
     ]
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ];

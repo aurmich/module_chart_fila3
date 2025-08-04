@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -8,6 +9,8 @@
 
 aurmich/dev
 
+=======
+>>>>>>> 54f4fa16 (.)
 # 📚 Fase 7: Documentazione
 
 ## 📋 Panoramica
@@ -110,6 +113,7 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
+<<<<<<< HEAD
 
 
 - [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 
@@ -230,5 +234,30 @@ aurmich/dev
 ## Collegamenti tra versioni di 07_documentation.md
 * [07_documentation.md](bashscripts/docs/roadmap/07_documentation.md)
 * [07_documentation.md](docs/roadmap/07_documentation.md)
+=======
+- [Fase 8: Manutenzione](../roadmap/08_maintenance.md)
+
+## 📅 Timeline
+
+### Q1 2026
+- Setup strumenti
+- Struttura base
+- Template
+
+### Q2 2026
+- Documentazione tecnica
+- Guide utente
+- Procedure
+
+### Q3 2026
+- Review
+- Feedback
+- Miglioramenti
+
+### Q4 2026
+- Finalizzazione
+- Pubblicazione
+- Manutenzione
+>>>>>>> 54f4fa16 (.)
 
 

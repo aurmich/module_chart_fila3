@@ -1,7 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
+=======
+>>>>>>> 54f4fa16 (.)
 return [
     'navigation' => [
         'name' => 'Eventi Archiviati',
@@ -14,6 +17,7 @@ return [
         'sort' => 62,
         'icon' => 'activity-stored-event-animated',
     ],
+<<<<<<< HEAD
     
     'fields' => [
         'id' => [
@@ -348,4 +352,6 @@ return [
         'performance_tracking' => true,
         'audit_trail' => true,
     ],
+=======
+>>>>>>> 54f4fa16 (.)
 ];

@@ -288,7 +288,10 @@ Patient::where('tenant_id', $tenantId)
 
 ### Comandi per l'Installazione
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # Creare le migrazioni
 php artisan make:migration create_tenants_table
 php artisan make:migration create_patients_table
@@ -339,7 +342,10 @@ class PatientFactory extends Factory
     }
 }
 ``` 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 ## Collegamenti tra versioni di database.md
 * [database.md](docs/tecnico/database/database.md)
 * [database.md](laravel/Modules/Xot/docs/install/database.md)

@@ -84,10 +84,13 @@ return array (
     array (
       'label' => 'reorderRecords',
     ),
+<<<<<<< HEAD
     'resetFilters' => 
     array (
       'label' => 'resetFilters',
     ),
+=======
+>>>>>>> 54f4fa16 (.)
   ),
   'formats' => 
   array (

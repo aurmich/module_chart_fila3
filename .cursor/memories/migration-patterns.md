@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Pattern di Migrazione in <nome progetto>
+=======
+# Pattern di Migrazione in SaluteOra
+>>>>>>> 54f4fa16 (.)
 
 ## Pattern XotBaseMigration
 

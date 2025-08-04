@@ -6,8 +6,11 @@ namespace Modules\SaluteOra\Filament\Resources\AppointmentWorkflowResource\Forms
 
 use Filament\Forms;
 use Filament\Forms\Components\Component;
+<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 use Filament\Facades\Filament;
+=======
+>>>>>>> 54f4fa16 (.)
 use Illuminate\Database\Eloquent\Builder;
 use Modules\SaluteOra\Filament\Components\AppointmentWorkflowProgress;
 use Modules\SaluteOra\Filament\Components\AppointmentWorkflowSummary;
@@ -48,6 +51,7 @@ class WorkflowForms
                 ->schema([
                     Forms\Components\Grid::make()
                         ->schema([
+<<<<<<< HEAD
                             TextEntry::make('patient_name')
                                 ->label('Nome completo')
                                 ->state($patient->full_name),
@@ -61,6 +65,21 @@ class WorkflowForms
                                 ->state($patient->fiscal_code),
                                 
                             TextEntry::make('patient_birth_date')
+=======
+                            Forms\Components\TextEntry::make('patient_name')
+                                ->label('Nome completo')
+                                ->state($patient->full_name),
+                                
+                            Forms\Components\TextEntry::make('patient_email')
+                                ->label('Email')
+                                ->state($patient->user?->email ?? 'N/A'),
+                                
+                            Forms\Components\TextEntry::make('patient_fiscal_code')
+                                ->label('Codice Fiscale')
+                                ->state($patient->fiscal_code),
+                                
+                            Forms\Components\TextEntry::make('patient_birth_date')
+>>>>>>> 54f4fa16 (.)
                                 ->label('Data di nascita')
                                 ->state($patient->birth_date ? $patient->birth_date->format('d/m/Y') : 'N/A'),
                         ])
@@ -134,7 +153,11 @@ class WorkflowForms
                     Forms\Components\Radio::make('dentist_id')
                         ->label('Seleziona il dentista per l\'appuntamento')
                         ->options(function () {
+<<<<<<< HEAD
                             return Dentist::where('tenant_id', Filament::getTenant()?->getKey())
+=======
+                            return Dentist::where('tenant_id', tenant()->id)
+>>>>>>> 54f4fa16 (.)
                                 ->where('is_active', true)
                                 ->get()
                                 ->mapWithKeys(function ($dentist) {

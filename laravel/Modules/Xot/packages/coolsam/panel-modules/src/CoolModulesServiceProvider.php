@@ -14,6 +14,7 @@ use Spatie\LaravelPackageTools\PackageServiceProvider;
 class CoolModulesServiceProvider extends PackageServiceProvider
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * Traccia i panel che hanno già gli hook registrati.
      * 
@@ -23,6 +24,8 @@ class CoolModulesServiceProvider extends PackageServiceProvider
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
     public function configurePackage(Package $package): void
     {
         /*
@@ -41,6 +44,7 @@ class CoolModulesServiceProvider extends PackageServiceProvider
 
         $this->app->afterResolving('filament', function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
             $panels = Filament::getPanels();
            
             foreach ($panels as $panel) {
@@ -57,20 +61,28 @@ class CoolModulesServiceProvider extends PackageServiceProvider
                     $panel
                    
 =======
+=======
+>>>>>>> 54f4fa16 (.)
             foreach (Filament::getPanels() as $panel) {
                 $id = Str::of($panel->getId());
                 if ($id->contains('::')) {
                     $title = $id->replace(['::', '-'], [' ', ' '])->title()->toString();
                     $panel
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
                         ->renderHook(
                             'panels::sidebar.nav.start',
                             fn () => new HtmlString("<h2 class='m-2 p-2 font-black text-xl'>$title</h2>"),
                         )
 <<<<<<< HEAD
+<<<<<<< HEAD
                             
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
                         ->renderHook(
                             'panels::sidebar.nav.end',
                             fn () => new HtmlString(
@@ -83,11 +95,14 @@ class CoolModulesServiceProvider extends PackageServiceProvider
                             ),
                         );
 <<<<<<< HEAD
+<<<<<<< HEAD
                     
                     // Marca questo panel come processato
                     self::$processedPanels[$panelId] = true;
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
                 }
             }
         });

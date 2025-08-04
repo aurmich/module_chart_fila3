@@ -1570,6 +1570,7 @@ trait HasPassportConfiguration
 ### 4.2 Changelog
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 # Changelog
 
@@ -1580,6 +1581,11 @@ trait HasPassportConfiguration
 
 ## [1.0.0] - 2024-03-20
 >>>>>>> aurmich/dev
+=======
+# Changelog
+
+## [1.0.0] - 2024-03-20
+>>>>>>> 54f4fa16 (.)
 ### Added
 - Implementazione iniziale dei trait di configurazione
 - Supporto per Passport e Socialite
@@ -1655,9 +1661,12 @@ trait HasPassportConfiguration
 
 // ... existing code ...
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ## Collegamenti tra versioni di passport.md
 * [passport.md](../../Tenant/docs/it/config/passport.md)
 

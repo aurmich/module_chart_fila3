@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
 use Filament\Panel;
 use Parental\HasChildren;
 use Illuminate\Support\Str;
@@ -45,6 +46,43 @@ use Illuminate\Notifications\DatabaseNotificationCollection;
  * This is the base user model that provides the core authentication and authorization
  * functionality for the application. It extends Laravel's Authenticatable class
  * and implements the required interfaces for Filament and multi-tenancy.
+=======
+use Filament\Models\Contracts\HasName;
+use Filament\Models\Contracts\HasTenants;
+use Filament\Panel;
+use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Concerns\HasUuids;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Illuminate\Database\Eloquent\Relations\MorphOne;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\DatabaseNotification;
+use Illuminate\Notifications\DatabaseNotificationCollection;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Str;
+use Laravel\Passport\HasApiTokens;
+use Modules\User\Database\Factories\UserFactory;
+use Modules\User\Models\Traits\HasTeams;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
+use Modules\Xot\Models\Traits\RelationX;
+use Spatie\Permission\Traits\HasRoles;
+use Parental\HasChildren;
+use Illuminate\Support\Facades\Schema;
+
+/**
+ * Modules\User\Models\User.
+ *
+ * @template TModel of \Illuminate\Database\Eloquent\Model
+ * @template TRelatedModel of \Illuminate\Database\Eloquent\Model
+ *
+>>>>>>> 54f4fa16 (.)
  * @property Collection<int, OauthClient> $clients
  * @property int|null $clients_count
  * @property Team|null $currentTeam
@@ -66,7 +104,11 @@ use Illuminate\Notifications\DatabaseNotificationCollection;
  * @property int|null $tenants_count
  * @property Collection<int, OauthAccessToken> $tokens
  * @property int|null $tokens_count
+<<<<<<< HEAD
  * @property string $last_name
+=======
+ * @property string $surname
+>>>>>>> 54f4fa16 (.)
  * @property string|null $facebook_id
  * @property Collection<int, SocialiteUser> $socialiteUsers
  * @property int|null $socialite_users_count
@@ -124,6 +166,7 @@ use Illuminate\Notifications\DatabaseNotificationCollection;
  *
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 abstract class BaseUser extends Authenticatable implements HasName, HasTenants, UserContract,HasMedia
 {
 
@@ -132,6 +175,13 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     use HasFactory;
     use HasRoles;
     // Guard coerente con Spatie/Permission
+=======
+abstract class BaseUser extends Authenticatable implements HasName, HasTenants, UserContract
+{
+    use HasApiTokens;
+    use HasFactory;
+    use HasRoles;
+>>>>>>> 54f4fa16 (.)
     use HasUuids;
     use Notifiable;
     use RelationX;
@@ -139,7 +189,10 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     use Traits\HasTenants;
     use Traits\HasTeams;
     use HasChildren;
+<<<<<<< HEAD
     use InteractsWithMedia;
+=======
+>>>>>>> 54f4fa16 (.)
 
 
     public $incrementing = false;
@@ -195,6 +248,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 
     ];
 
+<<<<<<< HEAD
     /** @var array<string, mixed>  */
     protected $attributes = [
         //'state' => Pending::class,
@@ -221,6 +275,11 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
         parent::__construct($attributes);
     }
 
+=======
+    /** @var \Illuminate\Database\Eloquent\Relations\Pivot|null */
+    public $pivot;
+
+>>>>>>> 54f4fa16 (.)
     public function canAccessFilament(?Panel $panel = null): bool
     {
         // return $this->role_id === Role::ROLE_ADMINISTRATOR;
@@ -323,9 +382,13 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     }
 
     /**
+<<<<<<< HEAD
      * Get the devices associated with the user.
      *
      * @return BelongsToMany<Device, static>
+=======
+     * @return BelongsToMany<Device, static|$this>
+>>>>>>> 54f4fa16 (.)
      */
     public function devices(): BelongsToMany
     {
@@ -333,6 +396,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
             ->belongsToManyX(Device::class);
     }
 
+<<<<<<< HEAD
     /**
      * Get the socialite users associated with the user.
      *
@@ -349,6 +413,12 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     public function socialiteUsers(): HasMany
     {
         return $this->hasMany(SocialiteUser::class);
+=======
+    public function socialiteUsers(): HasMany
+    {
+        return $this
+            ->hasMany(SocialiteUser::class);
+>>>>>>> 54f4fa16 (.)
     }
 
     public function getProviderField(string $provider, string $field): string
@@ -415,10 +485,14 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     protected static function newFactory()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return app(GetFactoryAction::class)->execute(static::class);
 =======
         return UserFactory::new();
 >>>>>>> aurmich/dev
+=======
+        return UserFactory::new();
+>>>>>>> 54f4fa16 (.)
     }
 
     /** @return array<string, string> */
@@ -448,6 +522,28 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 
 
 
+<<<<<<< HEAD
+=======
+    /**
+     * Get the role name for the current team.
+     *
+     * @return array<int, string>
+     */
+    /**
+     * Get all role names associated with the user.
+     *
+     * @return array<int, string>
+     */
+    public function getRoleNames(): array
+    {
+        /** @var array<int, string> */
+        return $this->roles()->pluck('name')->filter()->values()->toArray();
+    }
+
+
+
+
+>>>>>>> 54f4fa16 (.)
 
     public function authentications(): MorphMany
     {
@@ -491,5 +587,30 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
         return false;
     }
 
+<<<<<<< HEAD
 
+=======
+    /**
+     * Get all permission names associated with the user's roles.
+     *
+     * @return array<int, string>
+     */
+    public function getPermissionNames(): array
+    {
+        $roles = $this->roles()->with('permissions')->get();
+        if ($roles->isEmpty()) {
+            return [];
+        }
+
+        $permissions = collect();
+        foreach ($roles as $role) {
+            if (isset($role->permissions) && $role->permissions !== null) {
+                $permissions = $permissions->merge($role->permissions);
+            }
+        }
+
+        /** @var array<int, string> */
+        return $permissions->pluck('name')->values()->toArray();
+    }
+>>>>>>> 54f4fa16 (.)
 }

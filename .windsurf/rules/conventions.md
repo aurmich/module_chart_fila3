@@ -332,7 +332,10 @@ try {
 
 ### Struttura README.md
 ```markdown
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # Nome Modulo
 
 ## Descrizione

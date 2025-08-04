@@ -7,6 +7,7 @@ namespace Modules\User\Models;
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
+<<<<<<< HEAD
  * ProfileTeam Model
 <<<<<<< HEAD
  * 
@@ -51,3 +52,15 @@ class ProfileTeam extends TeamUser
      */
     protected $table = 'profile_team';
 }
+=======
+ * 
+ *
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|ProfileTeam query()
+ * @mixin \Eloquent
+ */
+class ProfileTeam extends TeamUser {}
+>>>>>>> 54f4fa16 (.)

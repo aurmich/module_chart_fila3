@@ -54,10 +54,14 @@ return [
                 'mismatch' => 'Seu código de confirmação não corresponde.',
                 'not_found' => 'Esse código de confirmação não existe.',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'resend' => 'Sua conta não está confirmada. Por favor, clique no link de confirmação em seu e-mail, ou clique aqui</a> para reenviar o e-mail de confirmação.',
 =======
                 'resend' => 'Sua conta não está confirmada. Por favor, clique no link de confirmação em seu e-mail, ou <a href="'.route('frontend.auth.account.confirm.resend', ':user_id').'">clique aqui</a> para reenviar o e-mail de confirmação.',
 >>>>>>> aurmich/dev
+=======
+                'resend' => 'Sua conta não está confirmada. Por favor, clique no link de confirmação em seu e-mail, ou <a href="'.route('frontend.auth.account.confirm.resend', ':user_id').'">clique aqui</a> para reenviar o e-mail de confirmação.',
+>>>>>>> 54f4fa16 (.)
                 'success' => 'Sua conta foi confirmada com sucesso!',
                 'resent' => 'Um novo e-mail de confirmação foi enviado para você.',
             ],

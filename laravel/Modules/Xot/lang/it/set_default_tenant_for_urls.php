@@ -16,6 +16,7 @@ return array (
       'label' => 'request',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
     'activeLocale' => 
     array (
       'label' => 'activeLocale',
@@ -42,6 +43,8 @@ return array (
     ),
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
   ),
   'fields' => 
   array (
@@ -50,27 +53,36 @@ return array (
       'label' => 'email',
       'description' => 'email',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'email',
 >>>>>>> aurmich/dev
       'placeholder' => 'email',
+=======
+      'helper_text' => 'email',
+>>>>>>> 54f4fa16 (.)
     ),
     'password' => 
     array (
       'label' => 'password',
       'description' => 'password',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'helper_text' => '',
 =======
       'helper_text' => 'password',
 >>>>>>> aurmich/dev
+=======
+      'helper_text' => 'password',
+>>>>>>> 54f4fa16 (.)
       'placeholder' => 'password',
     ),
     'remember' => 
     array (
       'label' => 'remember',
       'description' => 'remember',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'helper_text' => '',
 =======
@@ -510,5 +522,10 @@ return array (
     ),
 =======
 >>>>>>> aurmich/dev
+=======
+      'helper_text' => 'remember',
+      'placeholder' => 'remember',
+    ),
+>>>>>>> 54f4fa16 (.)
   ),
 );

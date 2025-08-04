@@ -16,6 +16,7 @@ return new class extends Migration
                 $table->id();
                 $table->foreignId('patient_id')->constrained('users')->onDelete('cascade');
                 $table->foreignId('doctor_id')->constrained('users')->onDelete('cascade');
+<<<<<<< HEAD
                 $table->foreignId('studio_id')->nullable()->constrained('studios')->onDelete('cascade');
                 $table->string('title')->nullable();
                 $table->dateTime('start_time')->nullable();
@@ -33,6 +34,14 @@ return new class extends Migration
                 $table->index(['patient_id', 'start_time']);
                 $table->index(['type', 'status']);
                 $table->index('emergency');
+=======
+                $table->dateTime('appointment_date');
+                $table->dateTime('appointment_time');
+                $table->enum('status', ['pending', 'confirmed', 'cancelled', 'rejected'])->default('pending');
+                $table->text('reason')->nullable();
+                $table->text('notes')->nullable();
+                $table->timestamps();
+>>>>>>> 54f4fa16 (.)
             });
         }
     }

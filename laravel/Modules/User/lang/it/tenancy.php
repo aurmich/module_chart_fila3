@@ -12,9 +12,12 @@ return [
         'phone' => 'Telefono',
         'email' => 'Email',
     ],
+<<<<<<< HEAD
     'actions' => [
         'register_tenant' => [
             'label' => 'Aggiungi Studio',
         ],
     ],
+=======
+>>>>>>> 54f4fa16 (.)
 ];

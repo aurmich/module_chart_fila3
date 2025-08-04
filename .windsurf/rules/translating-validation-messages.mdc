@@ -1,6 +1,10 @@
 # Traduzione dei Messaggi di Validazione
 
+<<<<<<< HEAD
 Questa regola copre la personalizzazione e traduzione dei messaggi di validazione nel progetto `<nome progetto>`:
+=======
+Questa regola copre la personalizzazione e traduzione dei messaggi di validazione nel progetto `saluteora`:
+>>>>>>> 54f4fa16 (.)
 - Usare `attributes()` nelle classi di richiesta per personalizzare i nomi dei campi, traducendoli con `__()`.
 - Usare `messages()` per definire messaggi di validazione personalizzati, con placeholder come `:position` per array.
 - Aggiungere traduzioni per nomi dei campi e messaggi nei file di lingua (es. `lang/it/general.php`).

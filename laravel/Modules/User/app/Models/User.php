@@ -80,6 +80,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static \Illuminate\Database\Eloquent\Builder|User whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|User withoutPermission($permissions)
  * @method static \Illuminate\Database\Eloquent\Builder|User withoutRole($roles, $guard = null)
+<<<<<<< HEAD
  * @property string $last_name
 <<<<<<< HEAD
  * @property-read \Modules\User\Models\Team|null $currentTeam
@@ -92,6 +93,17 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\User> $all_team_users
 =======
 >>>>>>> aurmich/dev
+=======
+ * @property string $surname
+ * @property string|null $facebook_id
+ * @property Team|null $currentTeam
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereFacebookId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereIsOtp($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User wherePasswordExpiresAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereSurname($value)
+ * @property \Illuminate\Database\Eloquent\Collection<int, SocialiteUser> $socialiteUsers
+ * @property int|null $socialite_users_count
+>>>>>>> 54f4fa16 (.)
  * @mixin \Eloquent
  */
 class User extends BaseUser

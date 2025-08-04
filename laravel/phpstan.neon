@@ -3,6 +3,7 @@ includes:
     - ./vendor/larastan/larastan/extension.neon
     - ./vendor/nesbot/carbon/extension.neon
     - ./vendor/phpstan/phpstan/conf/bleedingEdge.neon
+<<<<<<< HEAD
     - ./vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
 
 parameters:
@@ -15,6 +16,20 @@ parameters:
     paths:
         # - ./Modules/*/app/*
         - ./Modules/
+=======
+    # Temporaneamente disabilito per risolvere il problema con JsonException
+    # - ./vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
+
+parameters:
+    level: 9
+    parallel:
+        maximumNumberOfProcesses: 32
+        jobSize: 20
+        minimumNumberOfJobsPerProcess: 2
+
+    paths:
+        - ./Modules
+>>>>>>> 54f4fa16 (.)
         # - ./Themes
         # - ./app
 
@@ -25,7 +40,11 @@ parameters:
         - "#^Unsafe usage of new static#"
         - '#Method .+::.+ should return .+<.+, (.+)> but returns .+<.+, \$this\(\1\)>#' # Ignora errori di covarianza nei tipi generici delle relazioni Eloquent
         - '#Cannot cast mixed to (string|float|double|int|bool|boolean).#' # Ignora errori di cast da mixed a tipi specifici
+<<<<<<< HEAD
         - '#Call to function is_object\(\) with .+ will always evaluate to true.#' 
+=======
+        - '#Call to function is_object\(\) with .+ will always evaluate to true.#' # Ignora errori su controlli di oggetti già verificati
+>>>>>>> 54f4fa16 (.)
         - identifier: missingType.generics
         - identifier: missingType.iterableValue
         - identifier: larastan.noEnvCallsOutsideOfConfig
@@ -43,6 +62,7 @@ parameters:
         - ./*/rector.php
         - ./Modules/*/packages/*
         - ./Modules/Xot/app/Filament/Traits/HasXotTable.php
+<<<<<<< HEAD
         - ./Modules/Activity
         - ./Modules/*/database_old/*
         - ./Modules/*/scripts/*
@@ -54,6 +74,14 @@ parameters:
         - ./phpstan_constants.php
         - ./vendor/amenadiel/jpgraph/src/config.inc.php
 
+=======
+        # - ./Modules/*/database_old/*
+        - ./Modules/*/scripts/*
+        - ./Modules/*/tests/*
+
+    bootstrapFiles:
+        - ./phpstan_constants.php
+>>>>>>> 54f4fa16 (.)
 
     scanFiles:
         - ./Modules/Xot/Helpers/Helper.php

@@ -1,5 +1,6 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 declare(strict_types=1);
 
@@ -83,6 +84,8 @@ name('password.request');
     </script>
 </x-layouts.main>
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 declare(strict_types=1);
 use Illuminate\Support\Facades\Password;
 use function Laravel\Folio\name;
@@ -120,12 +123,21 @@ new class extends Component
 
     <div class="flex flex-col items-stretch justify-center w-screen min-h-screen py-10 sm:items-center">
 
+<<<<<<< HEAD
         <div class="sm:mx-auto sm:w-full sm:max-w-md flex flex-col items-center">
             <x-ui.link href="{{ route('home') }}">
             <img class="w-[300px] lg:w-[350px] text-center" src="/img/logo-v2.png">
             </x-ui.link>
 
             <h2 class="mt-5 text-2xl font-extrabold leading-9 text-center text-[#272C4D]">
+=======
+        <div class="sm:mx-auto sm:w-full sm:max-w-md">
+            <x-ui.link href="{{ route('home') }}">
+                <x-ui.logo class="w-auto h-10 mx-auto text-gray-700 fill-current dark:text-gray-100" />
+            </x-ui.link>
+
+            <h2 class="mt-5 text-2xl font-extrabold leading-9 text-center text-gray-800 dark:text-gray-200">
+>>>>>>> 54f4fa16 (.)
                 Reset password
             </h2>
             <div class="text-sm leading-5 text-center text-gray-600 dark:text-gray-400 space-x-0.5">
@@ -154,6 +166,7 @@ new class extends Component
                     </div>
                 </div>
                 @else
+<<<<<<< HEAD
                 <form wire:submit="sendResetPasswordLink" class="space-y-6 flex flex-col items-center justify-center">
                     <div class="w-full">
                         <x-ui.input class="w-full" label="Email address" type="email" id="email" name="email" wire:model="email" />
@@ -161,12 +174,24 @@ new class extends Component
                     <div>
                         <button class="w-full py-3 px-3 rounded bg-[#FF5F7E] text-white font-bold transition" submit="true">Send password reset link</button>
                     </div>
+=======
+                <form wire:submit="sendResetPasswordLink" class="space-y-6">
+                    <x-ui.input label="Email address" type="email" id="email" name="email" wire:model="email" />
+                    <x-ui.button type="primary" rounded="md" submit="true">Send password reset link</x-ui.button>
+>>>>>>> 54f4fa16 (.)
                 </form>
                 @endif
             </div>
         </div>
         @endvolt
+<<<<<<< HEAD
     </div>
 
 </x-layouts.main>
 >>>>>>> aurmich/dev
+=======
+
+    </div>
+
+</x-layouts.main>
+>>>>>>> 54f4fa16 (.)

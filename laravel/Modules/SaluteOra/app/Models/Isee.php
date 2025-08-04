@@ -7,6 +7,7 @@ namespace Modules\SaluteOra\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
+<<<<<<< HEAD
 
 
 /**
@@ -65,11 +66,25 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Isee extends BaseModel
 {
     
+=======
+use Modules\Tenant\Traits\BelongsToTenant;
+
+/**
+ * Modello Isee per la gestione dei dati relativi all'ISEE delle pazienti.
+ */
+class Isee extends BaseModel
+{
+    use HasFactory, SoftDeletes, BelongsToTenant;
+>>>>>>> 54f4fa16 (.)
 
     /**
      * Gli attributi che sono mass assignable.
      *
+<<<<<<< HEAD
      * @var list<string>
+=======
+     * @var array<int, string>
+>>>>>>> 54f4fa16 (.)
      */
     protected $fillable = [
         'tenant_id',
@@ -85,6 +100,7 @@ class Isee extends BaseModel
     ];
 
     /**
+<<<<<<< HEAD
      * Get the attributes that should be cast.
      *
      * @return array<string, string>
@@ -98,6 +114,18 @@ class Isee extends BaseModel
             'is_valid' => 'boolean',
         ];
     }
+=======
+     * Gli attributi da castare.
+     *
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'isee_value' => 'decimal:2',
+        'isee_expiry_date' => 'date',
+        'isee_issue_date' => 'date',
+        'is_valid' => 'boolean',
+    ];
+>>>>>>> 54f4fa16 (.)
 
     /**
      * Relazione con la paziente.
@@ -126,7 +154,11 @@ class Isee extends BaseModel
      */
     public function isEligibleForProject(): bool
     {
+<<<<<<< HEAD
         return $this->isee_value <= 20000 && !$this->isExpired();
+=======
+        return $this->isee_value <= 20000.00 && !$this->isExpired();
+>>>>>>> 54f4fa16 (.)
     }
 
     /**
@@ -136,12 +168,17 @@ class Isee extends BaseModel
      */
     public function daysUntilExpiry(): int
     {
+<<<<<<< HEAD
         return (int) now()->diffInDays($this->isee_expiry_date, false);
+=======
+        return now()->diffInDays($this->isee_expiry_date, false);
+>>>>>>> 54f4fa16 (.)
     }
 
     /**
      * Scope per filtrare gli ISEE validi per il progetto (sotto i 20.000 euro).
      *
+<<<<<<< HEAD
      * @param \Illuminate\Database\Eloquent\Builder<static> $query
      * @return \Illuminate\Database\Eloquent\Builder<static>
      */
@@ -151,3 +188,14 @@ class Isee extends BaseModel
                      ->where('isee_expiry_date', '>', now());
     }
 }
+=======
+     * @param \Illuminate\Database\Eloquent\Builder $query
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeEligibleForProject($query)
+    {
+        return $query->where('isee_value', '<=', 20000.00)
+                     ->where('isee_expiry_date', '>', now());
+    }
+}
+>>>>>>> 54f4fa16 (.)

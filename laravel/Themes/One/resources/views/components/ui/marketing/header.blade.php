@@ -3,10 +3,14 @@
 		<div class="flex justify-between w-full max-w-screen-xl mx-auto">
 			<div class="flex-1 py-1">
 <<<<<<< HEAD
+<<<<<<< HEAD
 				<a class="text-sm" href="#">@lang('pub_theme::common.region_name')</a>
 =======
 				<a class="text-sm" href="#">Nome della Regione</a>
 >>>>>>> aurmich/dev
+=======
+				<a class="text-sm" href="#">Nome della Regione</a>
+>>>>>>> 54f4fa16 (.)
 			</div>
 			<div class="flex-none">
 				<ul class="px-1 menu menu-horizontal">
@@ -16,10 +20,14 @@
 						<a class="flex items-center space-x-1" href="{{ route('login') }}">
 							<x-heroicon-o-user class="size-4" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 							<div class="hidden md:block">@lang('pub_theme::common.login_area')</div>
 =======
 							<div class="hidden md:block">Accedi all'area personale</div>
 >>>>>>> aurmich/dev
+=======
+							<div class="hidden md:block">Accedi all'area personale</div>
+>>>>>>> 54f4fa16 (.)
 						</a>
 					</li>
 				</ul>
@@ -33,22 +41,31 @@
 					<x-heroicon-o-shield-check class="stroke-1 size-16" />
 					<div class="text-start">
 <<<<<<< HEAD
+<<<<<<< HEAD
 						<div class="text-2xl font-bold">@lang('pub_theme::common.municipality.name')</div>
 						<div class="text-sm">@lang('pub_theme::common.municipality.tagline')</div>
 =======
 						<div class="text-2xl font-bold">Il mio Comune</div>
 						<div class="text-sm">Un comune da vivere</div>
 >>>>>>> aurmich/dev
+=======
+						<div class="text-2xl font-bold">Il mio Comune</div>
+						<div class="text-sm">Un comune da vivere</div>
+>>>>>>> 54f4fa16 (.)
 					</div>
 				</a>
 			</div>
 			<div class="flex-none">
 				<ul class="items-center hidden px-1 menu menu-horizontal md:inline-flex md:me-2">
 <<<<<<< HEAD
+<<<<<<< HEAD
 					<li> <a>@lang('pub_theme::common.follow_us')</a> </li>
 =======
 					<li> <a>Seguici su</a> </li>
 >>>>>>> aurmich/dev
+=======
+					<li> <a>Seguici su</a> </li>
+>>>>>>> 54f4fa16 (.)
 					@foreach(['facebook', 'twitter', 'instagram', 'linkedin'] as $i)
 					<li>
 						<a class="p-2">
@@ -59,10 +76,14 @@
 				</ul>
 				<ul class="items-center px-1 menu menu-horizontal">
 <<<<<<< HEAD
+<<<<<<< HEAD
 					<li class="hidden sm:block">@lang('pub_theme::common.search')</li>
 =======
 					<li class="hidden sm:block">Cerca</li>
 >>>>>>> aurmich/dev
+=======
+					<li class="hidden sm:block">Cerca</li>
+>>>>>>> 54f4fa16 (.)
 					<li class="ms-2">
 						<a class="bg-white border-0 btn btn-circle hover:bg-emerald-50 text-emerald-800">
 							<x-heroicon-o-magnifying-glass class="size-5" />
@@ -98,7 +119,11 @@
 		</div>
 	</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 </header>
 =======
 </header>
 >>>>>>> aurmich/dev
+=======
+</header>
+>>>>>>> 54f4fa16 (.)

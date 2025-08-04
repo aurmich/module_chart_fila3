@@ -10,12 +10,15 @@ use Livewire\Component;
 use Modules\User\Actions\User\DeleteUserAction;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Contracts\UserContract;
 =======
 >>>>>>> aurmich/dev
 =======
 use Modules\User\Contracts\UserContract;
 >>>>>>> 345f8677 (phpstan)
+=======
+>>>>>>> 54f4fa16 (.)
 
 class DeleteAccount extends Component
 {
@@ -30,12 +33,15 @@ class DeleteAccount extends Component
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var \Modules\User\Models\User|null $user */
 =======
 >>>>>>> aurmich/dev
 =======
         /** @var \Modules\User\Models\User|null $user */
 >>>>>>> 345f8677 (phpstan)
+=======
+>>>>>>> 54f4fa16 (.)
         $user = Auth::user();
         if (!$user) {
             $this->dispatch('toast', [
@@ -45,6 +51,7 @@ class DeleteAccount extends Component
             return;
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -63,6 +70,8 @@ class DeleteAccount extends Component
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 345f8677 (phpstan)
+=======
+>>>>>>> 54f4fa16 (.)
         $result = app(DeleteUserAction::class)->execute($user, $this->delete_confirm_password);
 
         if (!$result['success']) {

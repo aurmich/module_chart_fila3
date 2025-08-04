@@ -11,18 +11,24 @@ return new class extends XotBaseMigration {
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Run the migrations.
      *
      * @return void
      */
     public function up(): void
 =======
+=======
+>>>>>>> 54f4fa16 (.)
      * Undocumented function.
      *
      * @return void
      */
     public function up()
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
     {
         // -- CREATE --
         $this->tableCreate(
@@ -44,10 +50,14 @@ return new class extends XotBaseMigration {
         $this->tableUpdate(
             function (Blueprint $table): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $this->updateTimestamps($table, false);
 =======
                 $this->updateTimestamps(table: $table, hasSoftDeletes: false);
 >>>>>>> aurmich/dev
+=======
+                $this->updateTimestamps(table: $table, hasSoftDeletes: false);
+>>>>>>> 54f4fa16 (.)
             }
         );
     }

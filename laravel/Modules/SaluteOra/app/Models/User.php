@@ -2,6 +2,7 @@
 declare(strict_types=1);
 namespace Modules\SaluteOra\Models;
 
+<<<<<<< HEAD
 
 use Modules\User\Models\BaseUser;
 use Spatie\MediaLibrary\HasMedia;
@@ -229,12 +230,97 @@ class User extends BaseUser implements HasMedia,HasStatesContract
 
 
     /** @var list<string> */
+=======
+use Modules\User\Models\BaseUser;
+use Modules\SaluteOra\Models\Doctor;
+use Modules\SaluteOra\Models\Patient;
+use Illuminate\Database\Eloquent\Model;
+use Spatie\Activitylog\Traits\LogsActivity;
+use Spatie\Activitylog\LogOptions;
+use Illuminate\Notifications\Notifiable;
+
+/**
+ * Modello User per il modulo Patient.
+ *
+ * Questo modello estende BaseUser e implementa Single Table Inheritance
+ * per gestire i tipi di utente (doctor, patient).
+ *
+ * @see \Modules\User\Models\BaseUser
+ * @see \Modules\SaluteOra\Models\Doctor
+ * @see \Modules\SaluteOra\Models\Patient
+ */
+class User extends BaseUser
+{
+    use LogsActivity, Notifiable;
+
+    /**
+     * La connessione al database.
+     *
+     * @var string
+     */
+    protected $connection = 'user';
+
+    /**
+     * La colonna che determina il tipo di utente.
+     *
+     * @var string
+     */
+    protected $childColumn = 'type';
+
+    /**
+     * I tipi di utente supportati.
+     *
+     * @var array<string, string>
+     */
+    protected $childTypes = [
+        'patient' => Patient::class,
+        'doctor' => Doctor::class,
+    ];
+
+    /**
+     * Gli attributi predefiniti.
+     *
+     * @var array<string, mixed>
+     */
+    protected $attributes = [
+        'state' => 'pending',
+    ];
+
+    /**
+     * Gli attributi che devono essere nascosti nelle serializzazioni.
+     *
+     * @var array<int, string>
+     */
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
+
+    /**
+     * Gli attributi che devono essere convertiti in date.
+     *
+     * @var array<int, string>
+     */
+    protected $dates = [
+        'email_verified_at',
+        'created_at',
+        'updated_at',
+        'deleted_at',
+    ];
+
+    /**
+     * Gli attributi che possono essere assegnati in massa.
+     *
+     * @var array<int, string>
+     */
+>>>>>>> 54f4fa16 (.)
     protected $fillable = [
         'name',
         'email',
         'password',
         'type',
         'state',
+<<<<<<< HEAD
         'first_name',
         'last_name',
         'date_of_birth',
@@ -260,6 +346,16 @@ class User extends BaseUser implements HasMedia,HasStatesContract
      * - Motivazione: evitare di sporcare il modulo User condiviso tra più progetti.
      * - Filosofia: ogni modulo è autonomo, nessun lock-in, rispetto della modularità.
      * - Politica: type safety, DRY, serenità del codice, nessun errore di cast.
+=======
+        'email_verified_at',
+        'last_action_by',
+        'last_action_at',
+        'last_reason',
+    ];
+
+    /**
+     * Override dei cast degli attributi.
+>>>>>>> 54f4fa16 (.)
      *
      * @return array<string, string>
      */
@@ -268,6 +364,7 @@ class User extends BaseUser implements HasMedia,HasStatesContract
         return array_merge(parent::casts(), [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+<<<<<<< HEAD
             'type' => UserTypeEnum::class, // Sintassi corretta per Laravel 12
             'state' => UserState::class,
             'certifications' => 'array',
@@ -279,6 +376,23 @@ class User extends BaseUser implements HasMedia,HasStatesContract
     }
 
    
+=======
+            'certifications' => 'array',
+            'moderation_data' => 'array',
+        ]);
+    }
+
+    /**
+     * Implement ownsTeam method to satisfy HasTeamsContract by delegating to ownsTeamTrait.
+     *
+     * @param \Modules\User\Contracts\TeamContract $team
+     * @return bool
+     */
+    public function ownsTeam(\Modules\User\Contracts\TeamContract $team): bool
+    {
+        return $this->ownsTeamTrait($team);
+    }
+>>>>>>> 54f4fa16 (.)
 
     /**
      * Configurazione per il logging delle attività.
@@ -288,6 +402,7 @@ class User extends BaseUser implements HasMedia,HasStatesContract
     public function getActivitylogOptions(): LogOptions
     {
         return LogOptions::defaults()
+<<<<<<< HEAD
             ->logOnly(['name', 'email', 'type', 'state'])
             ->logOnlyDirty();
     }
@@ -450,4 +565,9 @@ class User extends BaseUser implements HasMedia,HasStatesContract
     {
         return $query->where('type', UserTypeEnum::PATIENT->value);
     }
+=======
+            ->logOnly(['state', 'moderation_data', 'type'])
+            ->logOnlyDirty();
+    }
+>>>>>>> 54f4fa16 (.)
 }

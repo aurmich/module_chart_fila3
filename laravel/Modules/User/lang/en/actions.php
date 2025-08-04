@@ -1,10 +1,15 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
 >>>>>>> aurmich/dev
+=======
+declare(strict_types=1);
+
+>>>>>>> 54f4fa16 (.)
 return [
     'attach_user' => 'Attach User',
     'associate_user' => 'Associate User',
@@ -20,8 +25,11 @@ return [
     'success_detached' => 'User successfully detached',
     'success_deleted' => 'Users successfully deleted',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'delete' => 'Cancella',
     'replicate' => 'Duplica',
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ];

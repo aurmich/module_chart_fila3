@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 description:
 globs:
@@ -19,6 +20,9 @@ Best practices for using Filament in modular Laravel projects, specifically tail
 Best practices for using Filament in modular Laravel projects, specifically tailored for the  project.
 
 # Filament Best Practices for
+=======
+# Filament Best Practices for 
+>>>>>>> 54f4fa16 (.)
 
 ## Overview
 Best practices for using Filament in modular Laravel projects, specifically tailored for the  project.
@@ -96,18 +100,30 @@ class DoctorResource extends XotBaseResource
     protected static ?string $navigationIcon = 'heroicon-o-user';  // NOT NECESSARY
     protected static ?string $navigationGroup = 'Gestione';        // NOT NECESSARY
     protected static ?int $navigationSort = 1;                     // NOT NECESSARY
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 54f4fa16 (.)
     // ❌ ERROR: Use getListTableColumns() instead of getTableColumns()
     public static function getTableColumns(): array                // NOT NECESSARY
     {
         return [...];
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 54f4fa16 (.)
     public static function getRelations(): array                   // NOT NECESSARY
     {
         return [...];
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 54f4fa16 (.)
     public static function getPages(): array                       // NOT NECESSARY if using only index, create, edit
     {
         return [
@@ -127,7 +143,11 @@ class DoctorResource extends XotBaseResource
             // Module-specific schema
         ]);
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 54f4fa16 (.)
     // Implement getPages() ONLY if adding custom pages beyond index, create, edit
     public static function getPages(): array
     {
@@ -166,6 +186,7 @@ class MyResource extends XotBaseResource
 - If translations are not applied, check the structure of the lang files and the absence of hardcoded `->label()`.
 
 ## Related Rules
+<<<<<<< HEAD
 - [Filament Resources](mdc:filament-resources.mdc)
 - [Filament Components](mdc:filament-components.mdc)
 - [Translation System](mdc:translation-system-rules.mdc)
@@ -385,3 +406,11 @@ class DoctorStudio extends BasePivot
 - Tutto il calendario lavora su appointments, distinguendo tra disponibilità e appuntamenti tramite i campi esistenti.
 - Motivazione: un solo punto di verità, DRY, KISS, nessun lock-in, serenità del codice, nessuna duplicazione, massima compatibilità con FullCalendar e Filament.
 - Checklist: vedi docs/appointment-management.md, docs/calendar/doctor-availability-management.md, docs/fullcalendar_parental_widgets.md, docs/calendar/widgets/doctor-calendar-widget.md
+=======
+- [Filament Resources](filament-resources.mdc)
+- [Filament Components](filament-components.mdc)
+- [Translation System](translation-system-rules.mdc)
+- [Filament Docs](https://filamentphp.com/docs)
+- [Best practices for reusable modules](module-documentation-neutrality.mdc)
+- [Model inheritance best practices](model-inheritance-best-practices.mdc)
+>>>>>>> 54f4fa16 (.)

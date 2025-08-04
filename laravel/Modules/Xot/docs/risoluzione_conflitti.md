@@ -136,17 +136,23 @@ Il conflitto nel file `XotBaseServiceProvider.php` è stato risolto mantenendo:
 aurmich/dev
 5693302 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 - Il metodo `registerConfig()` è stato aggiornato per utilizzare il percorso corretto da `modules.paths.generator.config.path`
 - È stato rimosso il codice commentato non necessario per `registerBladeComponents()`
 b6f667c (.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 La soluzione adottata privilegia la chiarezza del codice e l'organizzazione logica dei metodi, eliminando commenti non necessari e duplicazioni.
 
 ## XotBaseRouteServiceProvider.php
@@ -172,6 +178,7 @@ Mantenere il codice più semplice è preferibile, soprattutto quando le funziona
 
 5693302 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 b6f667c (.)
 
@@ -180,6 +187,10 @@ b6f667c (.)
 b6f667c (.)
 
 >>>>>>> aurmich/dev
+=======
+b6f667c (.)
+
+>>>>>>> 54f4fa16 (.)
 ## Conflitti risolti (14/06/2024)
 
 I seguenti conflitti sono stati risolti come parte dell'ultima manutenzione del modulo:
@@ -207,9 +218,12 @@ I seguenti conflitti sono stati risolti come parte dell'ultima manutenzione del 
 fc83074 (.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 Le modifiche sono state applicate seguendo le best practice documentate in `CONFLITTI_MERGE_RISOLTI.md`, privilegiando la chiarezza del codice e la coerenza con gli standard di progetto.
 
 ## Conflitti ancora da risolvere
@@ -246,6 +260,7 @@ La risoluzione dei conflitti rimanenti dovrebbe seguire questi principi:
 
 aurmich/dev
 <<<<<<< HEAD
+<<<<<<< HEAD
 5693302 (.)
 b6f667c (.)
 * [Risoluzione Conflitti Xot](../../../Xot/docs/risoluzione_conflitti.md)
@@ -254,8 +269,13 @@ b6f667c (.)
 fc83074 (.)
 
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 5693302 (.)b6f667c (.)* [Risoluzione Conflitti Xot](../../../Xot/docs/risoluzione_conflitti.md)
 * [Risoluzione Conflitti Tenant](../../../Tenant/docs/risoluzione_conflitti.md)
 * [Linee Guida Principali Risoluzione Conflitti](../../../../docs/conflict_resolution.md)
 fc83074 (.)
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)

@@ -2,6 +2,7 @@
 
 Questo documento definisce le linee guida ufficiali per la struttura dei moduli all'interno del framework <nome progetto>.
 
+<<<<<<< HEAD
 ---
 
 ## Gestione dati geografici statici: GeoJsonModel readonly (ispirato a Squire)
@@ -19,6 +20,8 @@ Per dettagli implementativi e best practice vedi:
 
 ---
 
+=======
+>>>>>>> 54f4fa16 (.)
 ## Service Provider
 
 ### Convenzioni Base
@@ -122,3 +125,11 @@ class BlogServiceProvider extends XotBaseServiceProvider {
     }
 }
 ```
+<<<<<<< HEAD
+=======
+
+## Collegamenti tra versioni di module-structure.md
+* [module-structure.md](laraxot/module-structure.md)
+* [module-structure.md](architecture/module-structure.md)
+
+>>>>>>> 54f4fa16 (.)

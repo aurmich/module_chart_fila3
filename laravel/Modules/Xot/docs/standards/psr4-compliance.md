@@ -102,9 +102,12 @@ Class Modules\User\Enums\LanguageEnum located in ./Modules/User/app/Enums/Enums/
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Verifica PSR-4
 composer dump-autoload --optimize
 

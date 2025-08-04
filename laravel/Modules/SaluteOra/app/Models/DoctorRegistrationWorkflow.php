@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Modules\Tenant\Traits\BelongsToTenant;
 use Illuminate\Support\Str;
 
+<<<<<<< HEAD
 /**
  * DoctorRegistrationWorkflow model per gestire il processo di registrazione dei dottori.
  *
@@ -67,6 +68,12 @@ class DoctorRegistrationWorkflow extends BaseModel
 {
     use SoftDeletes, BelongsToTenant;
 
+=======
+class DoctorRegistrationWorkflow extends BaseModel
+{
+    use SoftDeletes, BelongsToTenant;
+    
+>>>>>>> 54f4fa16 (.)
     /**
      * Connessione al database da utilizzare.
      *
@@ -86,6 +93,7 @@ class DoctorRegistrationWorkflow extends BaseModel
     /**
      * Gli attributi che sono mass assignable.
      *
+<<<<<<< HEAD
      * @var list<string>
      */
     protected $fillable = [
@@ -99,6 +107,25 @@ class DoctorRegistrationWorkflow extends BaseModel
         'moderated_by',
         'moderation_token',
         'completed_at',
+=======
+     * @var array<string>
+     */
+    protected $fillable = [
+        'tenant_id',
+        'doctor_id',
+        'current_step',
+        'status',
+        'step_data',
+        'started_at',
+        'completed_at',
+        'last_interaction_at',
+        'moderation_token',
+        'moderation_notes',
+        'moderated_at',
+        'moderated_by',
+        'created_by',
+        'session_id',
+>>>>>>> 54f4fa16 (.)
     ];
 
     /**
@@ -106,7 +133,11 @@ class DoctorRegistrationWorkflow extends BaseModel
      *
      * @return array<string, string>
      */
+<<<<<<< HEAD
     protected function casts(): array
+=======
+    public function casts(): array
+>>>>>>> 54f4fa16 (.)
     {
         return [
             'step_data' => 'array',
@@ -249,4 +280,8 @@ class DoctorRegistrationWorkflow extends BaseModel
 
         return $stepIndex !== false && $currentIndex >= $stepIndex;
     }
+<<<<<<< HEAD
 }
+=======
+} 
+>>>>>>> 54f4fa16 (.)

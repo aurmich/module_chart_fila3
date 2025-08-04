@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Convenzioni di Namespace nel Modulo User
 
 ## Principi Fondamentali
@@ -50,6 +51,8 @@ pub_theme::filament.widgets.auth.password.reset
 - **Personalizzazioni specifiche del progetto**
 - **Layout globali del sito**
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 # Convenzioni di Namespace per Filament nel Modulo User
 
 > **Regola fondamentale:** Il namespace dei componenti Filament è sempre `Modules\User\Filament`, anche se i file si trovano fisicamente in `app/Filament`. **Non va mai aggiunto `App` nel namespace.**
@@ -75,13 +78,17 @@ namespace Modules\User\App\Filament\Widgets;
 ## Motivazione
 
 Questa convenzione garantisce coerenza tra tutti i moduli e semplifica l'autoloading e la risoluzione delle classi. Anche se i file sono fisicamente collocati in `app/Filament`, il namespace deve sempre essere `Modules\User\Filament` per mantenere la coerenza con l'architettura modulare.
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 
 ## Esempi Pratici
 
 ### Widget di Autenticazione
 
 ```php
+<<<<<<< HEAD
 <<<<<<< HEAD
 // Modulo User - sempre user::
 namespace Modules\User\Filament\Widgets\Auth;
@@ -225,6 +232,8 @@ Se l'override del tema non funziona:
 *Documento creato: Dicembre 2024*
 *Ultimo aggiornamento: Dicembre 2024*
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 // ✅ CORRETTO
 namespace Modules\User\Filament\Widgets\Auth;
 
@@ -263,5 +272,8 @@ Quando crei nuovi componenti Filament, assicurati sempre di:
 * [namespace-conventions.md](../../../Xot/docs/namespace-conventions.md)
 * [namespace-conventions.md](../../../User/docs/namespace-conventions.md)
 * [namespace-conventions.md](../../../Cms/docs/best-practices/namespace-conventions.md)
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 

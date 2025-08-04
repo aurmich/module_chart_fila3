@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 @php
     $isLanding =Route::currentRouteName()=='home' && !Auth::check();
     $margin = $isLanding ? "margin: 0px" : "margin: 20px";
@@ -34,3 +35,12 @@
     <x-section slug="footer" />
 </x-layouts.main>
 >>>>>>> aurmich/dev
+=======
+<x-layouts.main>
+    <x-section slug="header" />
+
+    {{ $slot }}
+
+    <x-section slug="footer" />
+</x-layouts.main>
+>>>>>>> 54f4fa16 (.)

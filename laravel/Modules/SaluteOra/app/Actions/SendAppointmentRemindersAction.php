@@ -7,7 +7,10 @@ namespace Modules\SaluteOra\Actions;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Log;
 use Modules\SaluteOra\Models\Appointment;
+<<<<<<< HEAD
 use Modules\SaluteOra\Enums\AppointmentStatusEnum;
+=======
+>>>>>>> 54f4fa16 (.)
 use Modules\Notify\Actions\SendAppointmentNotificationAction;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -40,7 +43,11 @@ class SendAppointmentRemindersAction
 
             // Recupera gli appuntamenti per la data target che non hanno ancora ricevuto il promemoria
             $appointments = Appointment::whereDate('date', $targetDate->format('Y-m-d'))
+<<<<<<< HEAD
                 ->where('status', '!=', AppointmentStatusEnum::CANCELLED->value)
+=======
+                ->where('status', '!=', Appointment::STATUS_CANCELLED)
+>>>>>>> 54f4fa16 (.)
                 ->where('reminder_sent', false)
                 ->take($batchSize)
                 ->get();

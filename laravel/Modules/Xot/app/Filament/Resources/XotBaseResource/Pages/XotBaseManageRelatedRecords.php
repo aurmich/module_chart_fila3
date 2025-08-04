@@ -24,9 +24,13 @@ use Webmozart\Assert\Assert;
  *
  * @template TModel of Model
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @extends FilamentManageRelatedRecords<TModel>
 >>>>>>> aurmich/dev
+=======
+ * @extends FilamentManageRelatedRecords<TModel>
+>>>>>>> 54f4fa16 (.)
  */
 abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 {
@@ -146,9 +150,13 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     public function form(Form $form): Form
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         Assert::true(method_exists($this, 'getFormSchema'), 'Devi implementare getFormSchema() nella classe figlia.');
 >>>>>>> aurmich/dev
+=======
+        Assert::true(method_exists($this, 'getFormSchema'), 'Devi implementare getFormSchema() nella classe figlia.');
+>>>>>>> 54f4fa16 (.)
         /** @var array<\Filament\Forms\Components\Component> $schema */
         $schema = $this->getFormSchema();
         return $form->schema($schema);

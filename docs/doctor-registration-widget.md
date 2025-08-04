@@ -56,7 +56,11 @@ class RegistrationWidget extends XotBaseWidget
     public function mount(string $type): void
     {
         $this->type = $type;
+<<<<<<< HEAD
         $this->resource = XotData::make()->getUserResourceClassByType($type);
+=======
+        $this->resource = XotData::make()->getUserTypeResourceClass($type);
+>>>>>>> 54f4fa16 (.)
         $this->form->fill();
     }
 

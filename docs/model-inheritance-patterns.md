@@ -75,7 +75,11 @@ Per i modelli che rappresentano tipi specifici di utenti:
 
 3. **Utilizzare il Metodo casts() invece della Proprietà $casts**:
    ```php
+<<<<<<< HEAD
    protected function casts(): array
+=======
+   public function casts(): array
+>>>>>>> 54f4fa16 (.)
    {
        return array_merge(parent::casts(), [
            'my_field' => 'array',

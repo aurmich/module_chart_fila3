@@ -12,10 +12,15 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * 
  *
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 54f4fa16 (.)
  * @property int $id
  * @property string $authenticatable_type
  * @property int $authenticatable_id

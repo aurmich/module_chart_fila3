@@ -24,7 +24,10 @@ I console commands nel modulo Shop forniscono un'interfaccia a riga di comando c
 ### 2.1 Convenzioni di Naming
 
 ```markdown
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # Buono
 shop:cart:create
 shop:order:process

@@ -39,14 +39,22 @@ final class TelegramActionFactory
         $driver = $driver ?? Config::get('telegram.default', 'official');
         
         // Normalizza il nome del driver (prima lettera maiuscola, il resto minuscolo)
+<<<<<<< HEAD
         $normalizedDriver = ucfirst(strtolower(is_string($driver) ? $driver : ''));
+=======
+        $normalizedDriver = ucfirst(strtolower($driver));
+>>>>>>> 54f4fa16 (.)
         
         // Costruisci il nome completo della classe
         $className = "\\Modules\\Notify\\Actions\\Telegram\\Send{$normalizedDriver}TelegramAction";
         
         // Verifica se la classe esiste
         if (!class_exists($className)) {
+<<<<<<< HEAD
             throw new Exception("Unsupported Telegram driver: " . (is_string($driver) ? $driver : '') . ". Class {$className} not found.");
+=======
+            throw new Exception("Unsupported Telegram driver: {$driver}. Class {$className} not found.");
+>>>>>>> 54f4fa16 (.)
         }
         
         // Verifica se la classe implementa l'interfaccia richiesta

@@ -13,10 +13,15 @@ use Modules\Xot\Contracts\ProfileContract;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * 
  *
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 54f4fa16 (.)
  * @property int|null $id
  * @property string|null $name
  * @property array|null $scopes

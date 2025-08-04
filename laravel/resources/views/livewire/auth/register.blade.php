@@ -45,10 +45,14 @@ new #[Layout('components.layouts.auth')] class extends Component {
         <!-- Name -->
         <flux:input
 <<<<<<< HEAD
+<<<<<<< HEAD
             wire:model="name"
 =======
             wire:model.live="name"
 >>>>>>> aurmich/dev
+=======
+            wire:model="name"
+>>>>>>> 54f4fa16 (.)
             :label="__('Name')"
             type="text"
             required
@@ -60,10 +64,14 @@ new #[Layout('components.layouts.auth')] class extends Component {
         <!-- Email Address -->
         <flux:input
 <<<<<<< HEAD
+<<<<<<< HEAD
             wire:model="email"
 =======
             wire:model.live="email"
 >>>>>>> aurmich/dev
+=======
+            wire:model="email"
+>>>>>>> 54f4fa16 (.)
             :label="__('Email address')"
             type="email"
             required
@@ -74,37 +82,51 @@ new #[Layout('components.layouts.auth')] class extends Component {
         <!-- Password -->
         <flux:input
 <<<<<<< HEAD
+<<<<<<< HEAD
             wire:model="password"
 =======
             wire:model.live="password"
 >>>>>>> aurmich/dev
+=======
+            wire:model="password"
+>>>>>>> 54f4fa16 (.)
             :label="__('Password')"
             type="password"
             required
             autocomplete="new-password"
             :placeholder="__('Password')"
 <<<<<<< HEAD
+<<<<<<< HEAD
             viewable
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         />
 
         <!-- Confirm Password -->
         <flux:input
 <<<<<<< HEAD
+<<<<<<< HEAD
             wire:model="password_confirmation"
 =======
             wire:model.live="password_confirmation"
 >>>>>>> aurmich/dev
+=======
+            wire:model="password_confirmation"
+>>>>>>> 54f4fa16 (.)
             :label="__('Confirm password')"
             type="password"
             required
             autocomplete="new-password"
             :placeholder="__('Confirm password')"
 <<<<<<< HEAD
+<<<<<<< HEAD
             viewable
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         />
 
         <div class="flex items-center justify-end">
@@ -115,12 +137,17 @@ new #[Layout('components.layouts.auth')] class extends Component {
     </form>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-600 dark:text-zinc-400">
         <span>{{ __('Already have an account?') }}</span>
 =======
     <div class="space-x-1 text-center text-sm text-zinc-600 dark:text-zinc-400">
         {{ __('Already have an account?') }}
 >>>>>>> aurmich/dev
+=======
+    <div class="space-x-1 text-center text-sm text-zinc-600 dark:text-zinc-400">
+        {{ __('Already have an account?') }}
+>>>>>>> 54f4fa16 (.)
         <flux:link :href="route('login')" wire:navigate>{{ __('Log in') }}</flux:link>
     </div>
 </div>

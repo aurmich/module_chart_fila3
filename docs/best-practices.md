@@ -366,7 +366,10 @@ Forms\Components\Select::make('day')
 
 ### Esempi
 ```markdown
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # Titolo
 
 ## Descrizione

@@ -126,9 +126,12 @@ class ThemeServiceProvider extends ServiceProvider
 ### Aggiornamento Dipendenze
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Aggiornamento Composer
 composer update --no-dev
 composer update --with-dependencies

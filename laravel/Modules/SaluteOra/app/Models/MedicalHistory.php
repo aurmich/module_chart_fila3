@@ -9,11 +9,17 @@ use Spatie\Activitylog\Traits\LogsActivity;
 use Spatie\Activitylog\LogOptions;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
+<<<<<<< HEAD
 use Modules\SaluteOra\Models\Patient;
 
 /**
  * Modello per la storia clinica del paziente (MedicalHistory).
  * 
+=======
+
+/**
+ * Modello per la storia clinica del paziente (MedicalHistory).
+>>>>>>> 54f4fa16 (.)
  * Rappresenta una voce di documentazione clinica associata a un utente/paziente.
  *
  * @property int $id
@@ -22,6 +28,7 @@ use Modules\SaluteOra\Models\Patient;
  * @property string|null $type
  * @property string|null $description
  * @property string|null $attachments
+<<<<<<< HEAD
  * @see User
  * @property int $patient_id
  * @property string $condition
@@ -49,6 +56,10 @@ use Modules\SaluteOra\Models\Patient;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MedicalHistory withoutTrashed()
  * @mixin \Eloquent
+=======
+ *
+ * @see User
+>>>>>>> 54f4fa16 (.)
  */
 class MedicalHistory extends Model
 {
@@ -69,6 +80,7 @@ class MedicalHistory extends Model
     protected $table = 'medical_histories';
 
     /**
+<<<<<<< HEAD
      * Gli attributi che sono mass assignable.
      *
      * @var list<string>
@@ -76,6 +88,14 @@ class MedicalHistory extends Model
     protected $fillable = [
         'user_id',
         'patient_id',
+=======
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'user_id',
+>>>>>>> 54f4fa16 (.)
         'date',
         'type',
         'description',
@@ -114,6 +134,7 @@ class MedicalHistory extends Model
     {
         return $this->belongsTo(User::class);
     }
+<<<<<<< HEAD
 
     /**
      * Get the patient that owns the medical history.
@@ -124,4 +145,6 @@ class MedicalHistory extends Model
     {
         return $this->belongsTo(Patient::class);
     }
+=======
+>>>>>>> 54f4fa16 (.)
 }

@@ -54,10 +54,14 @@ return [
                 'mismatch' => 'Din bekræftelseskode matcher ikke.',
                 'not_found' => 'Denne bekræftelseskode findes ikke.',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'resend' => 'Din konto er ikke bekræftet. Klik på linket i bekræftelsesmailen eller klik her</a> for at gensende bekræftelsesmailen.',
 =======
                 'resend' => 'Din konto er ikke bekræftet. Klik på linket i bekræftelsesmailen eller <a href="'.route('frontend.auth.account.confirm.resend', ':user_id').'">klik her</a> for at gensende bekræftelsesmailen.',
 >>>>>>> aurmich/dev
+=======
+                'resend' => 'Din konto er ikke bekræftet. Klik på linket i bekræftelsesmailen eller <a href="'.route('frontend.auth.account.confirm.resend', ':user_id').'">klik her</a> for at gensende bekræftelsesmailen.',
+>>>>>>> 54f4fa16 (.)
                 'success' => 'Din konto er blevet bekræftet!',
                 'resent' => 'En ny bekræftelsesmail er blevet sendt til den kendte e-mailadresse.',
             ],

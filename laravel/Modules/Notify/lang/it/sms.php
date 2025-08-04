@@ -42,7 +42,10 @@ return [
         'plivo' => 'Plivo',
         'gammu' => 'Gammu',
         'netfun' => 'Netfun',
+<<<<<<< HEAD
         'agiletelecom' => 'Agile Telecom',
+=======
+>>>>>>> 54f4fa16 (.)
     ],
     'actions' => [
         'send' => 'Invia SMS',

@@ -21,10 +21,14 @@
 						<a class="flex items-center space-x-1" href="{{ route('login') }}">
 							<x-heroicon-o-user class="size-4" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 							<div class="hidden md:block">@lang('pub_theme::navigation.main_menu.login.label')</div>
 =======
 							<div class="hidden md:block">Accedi all'area personale</div>
 >>>>>>> aurmich/dev
+=======
+							<div class="hidden md:block">Accedi all'area personale</div>
+>>>>>>> 54f4fa16 (.)
 						</a>
 					</li>
 				</ul>
@@ -90,7 +94,11 @@
 		</div>
 	</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 </header>
 =======
 </header>
 >>>>>>> aurmich/dev
+=======
+</header>
+>>>>>>> 54f4fa16 (.)

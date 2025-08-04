@@ -25,6 +25,7 @@ return new class extends XotBaseMigration
                 $table->string('status')->default('pending');
                 $table->json('parameters')->nullable();
                 $table->dateTime('last_generated_at')->nullable();
+<<<<<<< HEAD
                 // if ($this->hasTable('users')) {
                     $table->foreignIdFor(User::class, 'created_by')->constrained('users');
                 // }
@@ -37,6 +38,20 @@ return new class extends XotBaseMigration
                 // if (!$this->hasTable('tenants')) {
                     // $table->string('tenant_id',36)->nullable();
                 // }
+=======
+                if ($this->hasTable('users')) {
+                    $table->foreignIdFor(User::class, 'created_by')->constrained('users');
+                }
+                if (!$this->hasTable('users')) {
+                    $table->string('created_by',36)->nullable();
+                }
+                if ($this->hasTable('tenants')) {
+                    $table->foreignIdFor(Tenant::class)->constrained();
+                }
+                if (!$this->hasTable('tenants')) {
+                    $table->string('tenant_id',36)->nullable();
+                }
+>>>>>>> 54f4fa16 (.)
             }
         );
 

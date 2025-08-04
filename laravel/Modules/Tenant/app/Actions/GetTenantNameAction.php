@@ -26,12 +26,21 @@ class GetTenantNameAction
         if (! \is_string($default)) {
             $default = 'localhost';
         }
+<<<<<<< HEAD
         
         $default = Str::after($default, '//');
         
         $server_name = $this->getServerName($default);
         $server_name = Str::of($server_name)->replace('www.', '')->toString();
         
+=======
+
+        $default = Str::after($default, '//');
+
+        $server_name = $this->getServerName($default);
+        $server_name = Str::of($server_name)->replace('www.', '')->toString();
+
+>>>>>>> 54f4fa16 (.)
         /** @var Collection<int, string> $parts */
         $parts = collect(explode('.', $server_name))
             ->map(static fn (string $item): string => Str::slug($item))
@@ -55,9 +64,13 @@ class GetTenantNameAction
         }
 
         // Fallback al default
+<<<<<<< HEAD
         $part=explode('.', $default);
         $inverted=array_reverse($part);
         $default_path=implode('/', $inverted);
+=======
+        $default_path = str_replace('.', '/', $default);
+>>>>>>> 54f4fa16 (.)
         if ($default_path !== '' && file_exists(base_path('config/'.$default_path))) {
             return $default_path;
         }

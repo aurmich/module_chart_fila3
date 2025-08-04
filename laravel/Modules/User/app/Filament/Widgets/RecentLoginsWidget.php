@@ -43,10 +43,13 @@ class RecentLoginsWidget extends BaseWidget
     /**
      * Optionally configure additional table settings.
 <<<<<<< HEAD
+<<<<<<< HEAD
      * 
      * @return array<string, \Filament\Tables\Actions\Action|\Filament\Tables\Actions\ActionGroup>
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
      */
     public function getTableActions(): array
     {

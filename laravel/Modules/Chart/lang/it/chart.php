@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 <?php
 
 return array (
+=======
+<?php return array (
+>>>>>>> 54f4fa16 (.)
   'fields' => 
   array (
     'id' => 
@@ -56,9 +60,13 @@ return array (
       'label' => 'transparency',
     ),
   ),
+<<<<<<< HEAD
   'navigation' => 
   array (
     'sort' => 20,
     'icon' => 'chart.navigation',
   ),
 );
+=======
+);
+>>>>>>> 54f4fa16 (.)

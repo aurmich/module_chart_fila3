@@ -21,6 +21,7 @@ use Modules\Xot\Traits\Updater;
  * @property \Carbon\Carbon|null $created_at
  * @property \Carbon\Carbon|null $updated_at
  * @property \Carbon\Carbon|null $deleted_at
+<<<<<<< HEAD
  * @property string|null $updated_by
  * @property string|null $deleted_by
  * @property-read \Modules\User\Models\Profile|null $creator
@@ -50,6 +51,8 @@ use Modules\Xot\Traits\Updater;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MailTemplateVersion withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|MailTemplateVersion withoutTrashed()
  * @mixin \Eloquent
+=======
+>>>>>>> 54f4fa16 (.)
  */
 class MailTemplateVersion extends BaseModel
 {
@@ -58,7 +61,11 @@ class MailTemplateVersion extends BaseModel
     /** @var string */
     protected $connection = 'notify';
 
+<<<<<<< HEAD
     /** @var list<string> */
+=======
+    /** @var array<string> */
+>>>>>>> 54f4fa16 (.)
     protected $fillable = [
         'template_id',
         'mailable',
@@ -70,6 +77,7 @@ class MailTemplateVersion extends BaseModel
         'change_notes',
     ];
 
+<<<<<<< HEAD
     /**
      * Get the attributes that should be cast.
      *
@@ -84,6 +92,15 @@ class MailTemplateVersion extends BaseModel
             'deleted_at' => 'datetime',
         ];
     }
+=======
+    /** @var array<string, string> */
+    protected $casts = [
+        'metadata' => 'array',
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime',
+        'deleted_at' => 'datetime',
+    ];
+>>>>>>> 54f4fa16 (.)
 
     public function template(): BelongsTo
     {
@@ -94,11 +111,16 @@ class MailTemplateVersion extends BaseModel
     {
         $template = $this->template;
 
+<<<<<<< HEAD
         if ($template === null) {
             throw new \RuntimeException('Template non trovato per questa versione');
         }
 
         $template->update([
+=======
+        $template->update([
+            'mailable' => $this->mailable,
+>>>>>>> 54f4fa16 (.)
             'subject' => $this->subject,
             'html_template' => $this->html_template,
             'text_template' => $this->text_template,

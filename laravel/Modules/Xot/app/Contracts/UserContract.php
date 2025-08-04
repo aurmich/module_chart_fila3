@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Contracts;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Laravel\Passport\Token;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\Permission\Contracts\Role;
@@ -20,6 +21,8 @@ use Spatie\MediaLibrary\MediaCollections\FileAdder;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 use Filament\Models\Contracts\FilamentUser;
 use Illuminate\Contracts\Auth\Access\Authorizable;
 use Illuminate\Contracts\Auth\Authenticatable;
@@ -31,7 +34,10 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 use Laravel\Passport\Token;
 use Modules\User\Contracts\HasTeamsContract;
 use Spatie\Permission\Contracts\Role;
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 
 // use Filament\Models\Contracts\HasTenants;
 
@@ -44,7 +50,10 @@ use Spatie\Permission\Contracts\Role;
  * @property string|null                                                                $first_name
  * @property string|null                                                                $last_name
  * @property string|null                                                                $full_name
+<<<<<<< HEAD
  * @property \BackedEnum&\Filament\Support\Contracts\HasLabel                           $type
+=======
+>>>>>>> 54f4fa16 (.)
  * @property string|null                                                                $password
  * @property string|int|null                                                            $current_team_id
  * @property string|null                                                                $phone
@@ -53,9 +62,12 @@ use Spatie\Permission\Contracts\Role;
  * @property \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Tenant> $tenants
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method  FileAdder addMediaFromDisk(string $key, ?string $disk = null)
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
  * @method bool canAccessSocialite()
  *
  * @phpstan-require-extends Model
@@ -63,10 +75,14 @@ use Spatie\Permission\Contracts\Role;
  * @mixin \Eloquent
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 interface UserContract extends Authenticatable, Authorizable, CanResetPassword, FilamentUser, HasTeamsContract, ModelContract, MustVerifyEmail, PassportHasApiTokensContract,HasMedia
 =======
 interface UserContract extends Authenticatable, Authorizable, CanResetPassword, FilamentUser, HasTeamsContract, ModelContract, MustVerifyEmail, PassportHasApiTokensContract
 >>>>>>> aurmich/dev
+=======
+interface UserContract extends Authenticatable, Authorizable, CanResetPassword, FilamentUser, HasTeamsContract, ModelContract, MustVerifyEmail, PassportHasApiTokensContract
+>>>>>>> 54f4fa16 (.)
 {
     /*
     public function isSuperAdmin();
@@ -146,6 +162,7 @@ interface UserContract extends Authenticatable, Authorizable, CanResetPassword, 
 
     // public function canAccessSocialite(): bool;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     /**
      * Get all consents for the model (polymorphic).
@@ -155,4 +172,6 @@ interface UserContract extends Authenticatable, Authorizable, CanResetPassword, 
     
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 }

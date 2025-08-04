@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Modulo Tenant - Modular Monolith
 
 ## Architettura Modular Monolith: Best Practices 2025
@@ -274,6 +275,17 @@ return [
 - [Risoluzione dei Conflitti](risoluzione_conflitti.md)
 - [Roadmap](roadmap.md)
 - [Documentazione Filament](filament_resources.md)
+=======
+# Modulo Tenant
+
+## Panoramica
+Il modulo Tenant gestisce il multi-tenancy dell'applicazione, fornendo un sistema completo per la gestione di tenant multipli, isolamento dei dati e configurazioni specifiche per ogni tenant.
+
+### Versione HEAD
+
+
+### Versione Incoming
+>>>>>>> 54f4fa16 (.)
 
 ## Collegamenti correlati
 - [README.md documentazione generale](../../../docs/README.md)
@@ -582,8 +594,11 @@ Tenant::current()->configure([
 
 ---
 
+<<<<<<< HEAD
 ## Collegamenti sulla risoluzione dei conflitti
 
 - [Risoluzione conflitti nel modulo Tenant](risoluzione_conflitti.md)
 - [Linee guida globali per la risoluzione dei conflitti git](../../../docs/risoluzione_conflitti_git.md)
 
+=======
+>>>>>>> 54f4fa16 (.)

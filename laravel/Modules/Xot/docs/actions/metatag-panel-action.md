@@ -29,10 +29,14 @@ L'azione accetta un'istanza di `Panel` come parametro di riferimento e applica l
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament Best Practices](../filament-best-practices.md)
 =======
 - [Filament Best Practices](../FILAMENT-BEST-PRACTICES.md)
 >>>>>>> aurmich/dev
+=======
+- [Filament Best Practices](../FILAMENT-BEST-PRACTICES.md)
+>>>>>>> 54f4fa16 (.)
 - [PHPStan Guidelines](../PHPSTAN-LEVEL9-GUIDE.md)
 - [Spatie QueueableAction Documentation](../DATA-QUEABLEACTIONS.md)
 
@@ -41,7 +45,11 @@ L'azione accetta un'istanza di `Panel` come parametro di riferimento e applica l
 - Aggiunta di type hints appropriati
 - Implementazione della gestione degli errori
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Documentazione del codice 
 =======
 - Documentazione del codice 
 >>>>>>> aurmich/dev
+=======
+- Documentazione del codice 
+>>>>>>> 54f4fa16 (.)

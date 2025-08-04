@@ -14,7 +14,10 @@ return [
     'register_adm_theme' => false, //da eliminare
     'register_pub_theme' => true,
 <<<<<<< HEAD
+<<<<<<< HEAD
     'force_ssl' => env('FORCE_SSL', false),
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ];

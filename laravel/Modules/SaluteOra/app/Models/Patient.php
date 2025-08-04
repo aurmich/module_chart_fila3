@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Models;
 
+<<<<<<< HEAD
 use Parental\HasParent;
 use Spatie\Image\Enums\Fit;
 use Spatie\MediaLibrary\HasMedia;
@@ -12,6 +13,11 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
+=======
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Modules\SaluteOra\Models\User;
+use Parental\HasParent;
+>>>>>>> 54f4fa16 (.)
 
 /**
  * Class Patient
@@ -19,6 +25,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
  * @property string $id
  * @property string $user_id
  * @property string|null $date_of_birth
+<<<<<<< HEAD
  * @property \Carbon\Carbon|null $birth_date Alias for date_of_birth
  * @property string|null $gender
  * @property string|null $address
@@ -26,13 +33,21 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
  * @property string|null $fiscal_code
  * @property string|null $pregnancy_status
  * @property int|null $tenant_id
+=======
+ * @property string|null $gender
+ * @property string|null $address
+ * @property string|null $phone
+>>>>>>> 54f4fa16 (.)
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property-read \Modules\SaluteOra\Models\User|null $user
+<<<<<<< HEAD
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\SaluteOra\Models\Appointment> $appointments
  * @property-read \Modules\SaluteOra\Models\PatientIsee|null $isee
+=======
+>>>>>>> 54f4fa16 (.)
  * @method static \Illuminate\Database\Eloquent\Builder|Patient newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Patient newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Patient query()
@@ -46,6 +61,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Media;
  * @method static \Illuminate\Database\Eloquent\Builder|Patient whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Patient whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Patient whereUserId($value)
+<<<<<<< HEAD
  * @property string|null $name
  * @property string|null $first_name
  * @property string|null $last_name
@@ -193,10 +209,30 @@ class Patient extends User implements HasMedia
     protected $fillable = [
         'first_name',
         'last_name',
+=======
+ * @mixin \Eloquent
+ */
+class Patient extends User
+{
+    use HasFactory;
+    use HasParent;
+
+    /**
+     * @var string
+     */
+    protected $table = 'patients';
+
+    /**
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'user_id',
+>>>>>>> 54f4fa16 (.)
         'date_of_birth',
         'gender',
         'address',
         'phone',
+<<<<<<< HEAD
         'last_dental_visit',
         'dental_problems',
 
@@ -250,21 +286,31 @@ class Patient extends User implements HasMedia
             'pregnancy_certificate',
         ];
     }
+=======
+    ];
+>>>>>>> 54f4fa16 (.)
 
     /**
      * Get the attributes that should be cast.
      *
      * @return array<string, string>
      */
+<<<<<<< HEAD
     protected function casts(): array
     {
         return [
             ...parent::casts(),
+=======
+    public function casts(): array
+    {
+        return [
+>>>>>>> 54f4fa16 (.)
             'date_of_birth' => 'date',
         ];
     }
 
     /**
+<<<<<<< HEAD
      * Registra le conversioni per i media
      */
     public function registerMediaConversions(?Media $media = null): void
@@ -390,5 +436,12 @@ class Patient extends User implements HasMedia
             }
         }
         return $res;
+=======
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function user()
+    {
+        return parent::belongsTo(User::class, 'user_id');
+>>>>>>> 54f4fa16 (.)
     }
 }

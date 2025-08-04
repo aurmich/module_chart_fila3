@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Providers;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use function Safe\realpath;
 use Webmozart\Assert\Assert;
 use Illuminate\Support\Carbon;
@@ -37,6 +38,8 @@ use Modules\Xot\Exceptions\Handlers\HandlersRepository;
 use Modules\Xot\Exceptions\Formatters\WebhookErrorFormatter;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Field;
@@ -67,7 +70,10 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Webmozart\Assert\Assert;
 
 use function Safe\realpath;
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 
 /**
  * Class XotServiceProvider.
@@ -98,10 +104,14 @@ class XotServiceProvider extends XotBaseServiceProvider
         //$this->registerExceptionHandlersRepository();
         //$this->extendExceptionHandler();
 <<<<<<< HEAD
+<<<<<<< HEAD
         //$this->registerCommands();
 =======
         $this->registerCommands();
 >>>>>>> aurmich/dev
+=======
+        $this->registerCommands();
+>>>>>>> 54f4fa16 (.)
     }
 
     public function registerProviders(): void
@@ -211,6 +221,7 @@ class XotServiceProvider extends XotBaseServiceProvider
     private function redirectSSL(): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if(app()->runningInConsole()){
             return;
         };
@@ -220,11 +231,16 @@ class XotServiceProvider extends XotBaseServiceProvider
             //&& isset($_SERVER['REQUEST_SCHEME']) && 'http' === $_SERVER['REQUEST_SCHEME'])
             XotData::make()->forceSSL()
 =======
+=======
+>>>>>>> 54f4fa16 (.)
         // --- meglio ficcare un controllo anche sull'env
         if (
             config('xra.forcessl') && (isset($_SERVER['SERVER_NAME']) && 'localhost' !== $_SERVER['SERVER_NAME']
             && isset($_SERVER['REQUEST_SCHEME']) && 'http' === $_SERVER['REQUEST_SCHEME'])
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         ) {
             URL::forceScheme('https');
             /*

@@ -375,6 +375,7 @@ abstract class XotBaseMigration extends Migration
     {
         return DB::connection($this->getConnection())->getDriverName();
     }
+<<<<<<< HEAD
     /**
      * Add a foreign ID column to the table based on a related model.
      *
@@ -396,4 +397,6 @@ abstract class XotBaseMigration extends Migration
     public function hasTable(string $table): bool {
         return $this->getConn()->hasTable($table);
     } 
+=======
+>>>>>>> 54f4fa16 (.)
 }// end XotBaseMigration

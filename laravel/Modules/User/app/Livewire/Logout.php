@@ -5,6 +5,7 @@ namespace Modules\User\Livewire;
 
 use Livewire\Component;
 use Illuminate\Support\Facades\Auth;
+<<<<<<< HEAD
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Contracts\View\View;
 
@@ -22,6 +23,14 @@ class Logout extends Component
      * Handle user logout process.
      */
     public function logout(): ?RedirectResponse
+=======
+
+class Logout extends Component
+{
+    public $processing = false;
+
+    public function logout()
+>>>>>>> 54f4fa16 (.)
     {
         $this->processing = true;
 
@@ -34,6 +43,7 @@ class Logout extends Component
         } catch (\Exception $e) {
             $this->processing = false;
             session()->flash('error', __('Errore durante il logout. Riprova.'));
+<<<<<<< HEAD
             return null;
         }
     }
@@ -42,6 +52,12 @@ class Logout extends Component
      * Render the logout component view.
      */
     public function render(): View
+=======
+        }
+    }
+
+    public function render()
+>>>>>>> 54f4fa16 (.)
     {
         return view('user::livewire.logout');
     }

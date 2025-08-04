@@ -111,6 +111,7 @@ $res = [
             'strict' => false,
             'engine' => null,
         ],
+<<<<<<< HEAD
 'setting' => [
 
             'driver' => 'mysql',
@@ -131,6 +132,9 @@ $res = [
                 PDO::MYSQL_ATTR_SSL_CA => env('SETTING_MYSQL_ATTR_SSL_CA'),
             ]) : [],
         ],
+=======
+
+>>>>>>> 54f4fa16 (.)
         
 
     ],

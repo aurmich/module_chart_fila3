@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo UI - Documentazione
 
 ## Panoramica
@@ -56,6 +57,8 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 
 *Ultimo aggiornamento: gennaio 2025* 
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 # Modulo UI
 
 ## Panoramica
@@ -68,6 +71,7 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
 - MoneyInput: Input per valori monetari con formattazione automatica
 - DateRangePicker: Selezione intervalli di date
 - FileUpload: Upload file con preview e validazione
+<<<<<<< HEAD
 - **OpeningHoursField**: Campo per gestione orari settimanali (mattina/pomeriggio) - [Documentazione](components/opening-hours-field.md)
   - ⚠️ **ERRORE CRITICO RISOLTO** (Dic 2024): Proprietà `$view` mancante causava runtime error
   - ✅ **CORREZIONE**: Vista Blade personalizzata + traduzioni complete
@@ -78,6 +82,8 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
   - 🎯 **NUOVO COMPONENTE** (Gen 2025): Riutilizzabile cross-module per healthcare applications
   - ✅ **FEATURES**: Layout responsive, accessibilità, Alpine.js integration
   - 🔧 **UTILIZZO**: Widget SaluteOra per studio selection in appointment booking
+=======
+>>>>>>> 54f4fa16 (.)
 
 ### Tables
 - CustomDataTable: Tabella dati avanzata con ordinamento e filtri
@@ -134,6 +140,7 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
 
 - Livewire 
 
+<<<<<<< HEAD
 ## Componenti View Aggiornati (Gen 2025)
 
 ### Studio Selector Component
@@ -161,3 +168,7 @@ Form\View::make('ui::ui.studio-selector')
 ---
 
 >>>>>>> aurmich/dev
+=======
+---
+
+>>>>>>> 54f4fa16 (.)

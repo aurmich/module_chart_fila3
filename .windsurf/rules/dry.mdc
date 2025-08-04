@@ -1,6 +1,7 @@
 ---
 description:
 globs:
+<<<<<<< HEAD
 alwaysApply: true
 ---
 # DRY Principle (Don't Repeat Yourself)
@@ -43,3 +44,7 @@ Tutti i modelli di un modulo devono estendere il BaseModel del modulo stesso (es
 - [ ] Tutti i modelli estendono il BaseModel del modulo
 - [ ] La logica comune è centralizzata
 - [ ] La documentazione è aggiornata
+=======
+alwaysApply: false
+---
+>>>>>>> 54f4fa16 (.)

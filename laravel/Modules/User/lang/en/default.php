@@ -1,10 +1,15 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
 >>>>>>> aurmich/dev
+=======
+declare(strict_types=1);
+
+>>>>>>> 54f4fa16 (.)
 return [
     'password_confirm' => [
         'heading' => 'Confirm password',
@@ -60,18 +65,24 @@ return [
             'not_enabled' => [
                 'title' => 'You have not enabled two factor authentication.',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'description' => 'When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone\'s Google Authenticator application.',
             ],
             'finish_enabling' => [
                 'title' => 'Finish enabling two factor authentication.',
                 'description' => 'To finish enabling two factor authentication, scan the following QR code using your phone\'s authenticator application or enter the setup key and provide the generated OTP code.',
 =======
+=======
+>>>>>>> 54f4fa16 (.)
                 'description' => "When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone's Google Authenticator application.",
             ],
             'finish_enabling' => [
                 'title' => 'Finish enabling two factor authentication.',
                 'description' => "To finish enabling two factor authentication, scan the following QR code using your phone's authenticator application or enter the setup key and provide the generated OTP code.",
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
             ],
             'enabled' => [
                 'notify' => 'Two factor authentication enabled.',
@@ -132,6 +143,7 @@ return [
     'or' => 'Or',
     'cancel' => 'Cancel',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'login' => [
         'username_or_email' => 'Username o Email',
         'forgot_password_link' => 'Password dimenticata?',
@@ -169,4 +181,6 @@ return [
     ],
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ];

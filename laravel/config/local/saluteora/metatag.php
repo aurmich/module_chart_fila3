@@ -3,9 +3,15 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'title' => 'SaluteOra',
     'sitename' => 'SaluteOra',
     'subtitle' => 'slogan',
+=======
+    'title' => 'Test',
+    'sitename' => 'foodfriendfinder',
+    'subtitle' => 'Find restaurants, specials, and coupons for free',
+>>>>>>> 54f4fa16 (.)
     'sottotitolo_comune' => '',
     'generator' => '',
     'charset' => 'UTF-8',
@@ -15,6 +21,7 @@ return [
     'nome_regione' => '',
     'nome_comune' => '',
     'site_title' => '',
+<<<<<<< HEAD
     'logo_img' => '/img/logo.svg',
     'logo_square' => 'saluteora::images/logo.svg',
     'logo_footer_img' => 'saluteora::images/logo.svg',
@@ -26,6 +33,14 @@ return [
     'logo_header_dark' => 'saluteora::images/logo.svg',
     'logo_header' => 'saluteora::images/logo.svg',
 >>>>>>> aurmich/dev
+=======
+    'logo_img' => 'saluteora::images/logo.svg',
+    'logo_square' => 'saluteora::images/logo.svg',
+    'logo_footer_img' => 'saluteora::images/logo.svg',
+    'logo_alt' => 'Logo',
+    'logo_header_dark' => 'saluteora::images/logo.svg',
+    'logo_header' => 'saluteora::images/logo.svg',
+>>>>>>> 54f4fa16 (.)
     'hide_megamenu' => false,
     'hero_type' => 'with_megamenu_bottom',
     'facebook_href' => 'aa',
@@ -37,8 +52,12 @@ return [
     'color_megamenu' => '#d60021',
     'color_hamburger' => '#000',
     'color_banner' => '#000',
+<<<<<<< HEAD
     'colors' => [
         'primary' => '#FF5F7E',
     ]
 ];
 
+=======
+];
+>>>>>>> 54f4fa16 (.)

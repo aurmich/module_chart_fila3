@@ -53,17 +53,23 @@ public/storage
 public/hot
 public_html/storage
 public_html/hot
+<<<<<<< HEAD
 laravel_bak/
+=======
+>>>>>>> 54f4fa16 (.)
 .git-rewrite
 .fuse_hidden*
 .fuse_hidden**.lock
 *.lock
+<<<<<<< HEAD
 *.old
 *.old1
 *.old2
 backup*/
 *.bak 
 *.backup 
+=======
+>>>>>>> 54f4fa16 (.)
 package-lock.json
 .php-cs-fixer.cache
 *.phar
@@ -96,6 +102,7 @@ cache/
 
 !laravel/Themes/One/yarn.lock
 laravel/database/migrations
+<<<<<<< HEAD
 laravel/storage/framework/views/*
 laravel/storage/attachments/*
 laravel/_ide_helper.php
@@ -106,3 +113,5 @@ laravel/_ide_helper_models.php
 package-lock.json
 *.phar
 .git-rewrite
+=======
+>>>>>>> 54f4fa16 (.)

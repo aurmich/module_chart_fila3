@@ -49,9 +49,12 @@ This one has a large community and supports a lot of languages besides PHP.
 
 Deptrac
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Versione HEAD
 
 
@@ -196,9 +199,12 @@ class UserData extends Data
 ### Comandi Artisan
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Generare helper IDE
 php artisan ide-helper:generate
 

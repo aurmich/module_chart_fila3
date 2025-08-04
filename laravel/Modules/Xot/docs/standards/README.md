@@ -12,9 +12,12 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 
 Questi standard si applicano a tutti i moduli del progetto e devono essere seguiti per mantenere la coerenza del codice. 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
@@ -94,6 +97,7 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](../../../../Themes/One/docs/README.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Standard Xot: Ereditarietà dei Modelli
 
 ## Gestione campi e Single Table Inheritance (STI)
@@ -135,3 +139,5 @@ class Doctor extends User
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)

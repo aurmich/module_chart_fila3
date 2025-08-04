@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Modulo SaluteOra
 
 Modulo specializzato per la gestione di studi medici e appuntamenti sanitari.
@@ -237,6 +238,54 @@ SaluteOra/
 - [Linee Guida API](docs/api-guidelines.md)
 - [Convenzioni di Testing](docs/testing-conventions.md)
 - [Deployment](docs/deployment.md)
+=======
+# Modulo Patient
+
+## Descrizione
+Modulo per la gestione dei pazienti nel sistema sanitario.
+
+## Struttura del Modulo
+```
+Patient/
+├── Config/
+├── Console/
+├── Database/
+│   ├── Migrations/
+│   └── Seeders/
+├── Http/
+│   ├── Controllers/
+│   ├── Middleware/
+│   └── Requests/
+├── Models/
+├── Resources/
+│   ├── js/
+│   └── views/
+├── Routes/
+└── Services/
+```
+
+## Checklist di Riavvio
+- [ ] Verificare le dipendenze nel `composer.json`
+- [ ] Controllare le migrazioni pendenti
+- [ ] Verificare i service provider registrati
+- [ ] Controllare le traduzioni
+- [ ] Verificare le configurazioni
+- [ ] Testare le funzionalità principali
+
+## Best Practices
+1. **Naming Conventions**
+   - Utilizzare PascalCase per i nomi delle classi
+   - Utilizzare camelCase per i metodi e le proprietà
+   - Utilizzare snake_case per i nomi dei file di migrazione
+
+2. **Struttura del Codice**
+   - Mantenere i controller snelli
+   - Utilizzare i service layer per la logica di business
+   - Implementare le interfacce per i servizi principali
+
+3. **Gestione dei File**
+   - Utilizzare il sistema di storage configurato
+>>>>>>> 54f4fa16 (.)
    - Implementare la validazione dei file
    - Gestire correttamente i permessi
 
@@ -365,7 +414,10 @@ Se il modulo viene installato come package, assicurati che il ServiceProvider si
 **Riferimenti:**
 - [Documentazione Laravel Blade Components](https://laravel.com/docs/12.x/blade#manually-registering-components)
 - [Esempio di registrazione namespace Blade](https://laravel.com/docs/12.x/blade#registering-package-components)
+<<<<<<< HEAD
 
 ---
 
 *Ultimo aggiornamento: Dicembre 2024*
+=======
+>>>>>>> 54f4fa16 (.)

@@ -10,6 +10,7 @@ use Spatie\Activitylog\LogOptions;
 
 /**
  * DoctorValidation Model for the Patient Module.
+<<<<<<< HEAD
  * 
  * Represents the validation process for a doctor's registration.
  *
@@ -41,6 +42,10 @@ use Spatie\Activitylog\LogOptions;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DoctorValidation whereValidationStatus($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DoctorValidation whereValidatorId($value)
  * @mixin \Eloquent
+=======
+ *
+ * Represents the validation process for a doctor's registration.
+>>>>>>> 54f4fa16 (.)
  */
 class DoctorValidation extends Model
 {
@@ -61,9 +66,15 @@ class DoctorValidation extends Model
     protected $table = 'doctor_validations';
 
     /**
+<<<<<<< HEAD
      * Gli attributi che sono mass assignable.
      *
      * @var list<string>
+=======
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+>>>>>>> 54f4fa16 (.)
      */
     protected $fillable = [
         'doctor_id',

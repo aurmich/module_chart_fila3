@@ -4,7 +4,10 @@
 
 ### 1.1 Installazione
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # Installazione dipendenze
 npm install -D tailwindcss postcss autoprefixer
 

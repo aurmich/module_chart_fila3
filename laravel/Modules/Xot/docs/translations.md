@@ -65,9 +65,12 @@ Modules/<NomeModulo>/
 
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Traduzioni del Modulo <NomeModulo>
 
 ## Collegamenti
@@ -329,9 +332,12 @@ TextInput::make('cognome')
 Action::make('save')
 Action::make('delete')
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Versione HEAD
 
 ```
@@ -374,9 +380,12 @@ Action::make('delete')
 - Validazione formati
 - Test di performance 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ## Collegamenti tra versioni di translations.md
 * [translations.md](../../../Chart/docs/translations.md)
 * [translations.md](../../../Reporting/docs/translations.md)

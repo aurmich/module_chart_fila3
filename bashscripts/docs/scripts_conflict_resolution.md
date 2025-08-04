@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Script di Risoluzione dei Conflitti
 
 ## Panoramica
@@ -84,6 +85,64 @@ Verifica e corregge i problemi comuni di namespace nei file PHP, che sono spesso
 
 #### Descrizione
 Analizza i conflitti e fornisce statistiche e suggerimenti per la risoluzione.
+=======
+# Risoluzione Conflitti negli Script Bash
+
+## Problema
+
+Durante lo sviluppo del progetto sono stati identificati diversi script bash con conflitti di merge non risolti. Questi conflitti sono caratterizzati da marker di conflitto Git che impediscono la corretta esecuzione degli script e introducono potenziali problemi.
+
+## Script con Conflitti Identificati
+
+I seguenti script contengono marker di conflitto git:
+
+1. `bashscripts/fix_structure.sh` - Script per la sistemazione della struttura delle directory
+2. `bashscripts/git_pull_org.sh` - Script per sincronizzare con una repository remota
+3. `bashscripts/git_push_subtree_org.sh` - Script per eseguire push di un subtree git
+4. `bashscripts/git_sync_subtree.sh.old` - Versione precedente script per sincronizzare subtree
+5. `bashscripts/sync_to_disk.sh` - Script per sincronizzare con un disco esterno
+6. `bashscripts/git_pull_subtree_org.sh` - Script per pull di subtree da repository organizzativa
+
+## Analisi dei Conflitti
+
+### fix_structure.sh
+
+Il file presenta un conflitto complesso con versioni multiple dello stesso script, con differenze sia nell'approccio generale che nei dettagli implementativi:
+
+1. **Versione 1**: Implementazione avanzata con funzioni di logging colorate e gestione strutturata delle cartelle
+2. **Versione 2**: Implementazione più semplice che rinomina direttamente le cartelle
+
+### git_pull_org.sh
+
+Il file presenta un conflitto in diverse parti:
+
+1. **Validazione input**: Presente in tutte le versioni
+2. **Configurazione Git**: Approcci differenti nelle diverse versioni
+3. **Gestione errori**: Differenze nella robustezza dell'error handling
+4. **Logging**: Versioni differenti per metodologia di logging
+
+### git_push_subtree_org.sh
+
+Il file presenta un conflitto che riguarda:
+
+1. **Messaggio di utilizzo**: Differenze minori nella formattazione
+2. **Implementazione**: Differenze nella robustezza e completezza
+
+### git_pull_subtree_org.sh
+
+Il file presenta un conflitto riguardante:
+
+1. **Numero di parametri**: Due versioni con diverse esigenze di parametri
+   - Versione 1: Richiede 2 parametri (path, remote_repo)
+   - Versione 2: Richiede 3 parametri (path, remote_repo, branch)
+
+### git_sync_subtree.sh.old
+
+Il file presenta un conflitto complesso con duplicazioni multiple dello stesso script e annotazioni di risoluzione:
+
+1. **Struttura principale**: Duplicazione dell'intero script, con marker di conflitto nidificati
+2. **Messaggi di sistema**: Presenza di messaggi informativi sulla risoluzione del conflitto
+>>>>>>> 54f4fa16 (.)
 
 ### sync_to_disk.sh
 
@@ -188,7 +247,10 @@ I seguenti file sono stati recentemente risolti:
 [Backlink: Documentazione Globale](/docs/README.md)
 [Backlink: fix_all_git_conflicts.md](fix_all_git_conflicts.md)
 [Backlink: git_conflicts_resolution.md](git_conflicts_resolution.md)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 ### fix_structure.sh
 
 Mantenere la versione più avanzata con funzioni di logging colorate, migliorando:
@@ -255,6 +317,7 @@ I seguenti file sono stati recentemente risolti:
 - `sync_to_disk.sh`: Mantenuta versione avanzata con migliore feedback e gestione esclusioni
 - `fix_merge_conflicts.sh`: Corretta la logica di individuazione e rimozione dei marker di conflitto per garantire la pulizia completa di tutti i tre tipi di marker 
 
+<<<<<<< HEAD
 Questa documentazione è collegata bidirezionalmente con la [documentazione principale sulla risoluzione dei conflitti](../../docs/bashscripts_conflict_resolution.md) nella root del progetto. 
 
 #### Utilizzo
@@ -400,3 +463,8 @@ Per pulire un repository con molti conflitti non risolti:
 - [Conflitti nei File di Configurazione](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/config_file_conflicts.md)
 - [Convenzioni di Namespace](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/NAMESPACE-CONVENTIONS.md)
 - [Risoluzione Conflitti nei Moduli](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/conflitti_merge_risolti.md)
+=======
+=======
+>>>>>>> 4d4d6cb7 (.)
+Questa documentazione è collegata bidirezionalmente con la [documentazione principale sulla risoluzione dei conflitti](../../docs/bashscripts_conflict_resolution.md) nella root del progetto. 
+>>>>>>> 54f4fa16 (.)

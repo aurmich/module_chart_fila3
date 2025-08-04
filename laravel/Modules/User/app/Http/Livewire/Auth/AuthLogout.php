@@ -7,17 +7,21 @@ namespace Modules\User\Http\Livewire\Auth;
 use Livewire\Component;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Auth;
 =======
 >>>>>>> aurmich/dev
 =======
 use Illuminate\Support\Facades\Auth;
 >>>>>>> 345f8677 (phpstan)
+=======
+>>>>>>> 54f4fa16 (.)
 
 class AuthLogout extends Component
 {
     public function mount(): void
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         Auth::logout();
@@ -51,5 +55,13 @@ class AuthLogout extends Component
         $view_params=[];
         return view($view,$view_params);
 >>>>>>> 345f8677 (phpstan)
+=======
+        auth()->logout();
+    }
+
+    public function render()
+    {
+        return view('livewire.auth.logout');
+>>>>>>> 54f4fa16 (.)
     }
 }

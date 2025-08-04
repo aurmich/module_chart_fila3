@@ -24,9 +24,12 @@
 ### 1. Analisi
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Verifica lo stato
 git status
 
@@ -39,30 +42,40 @@ git diff --name-only --diff-filter=U
 #### Approccio Manuale
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 # Apri i file in conflitto
 
 =======
 # Apri i file in conflitto
 >>>>>>> aurmich/dev
+=======
+# Apri i file in conflitto
+>>>>>>> 54f4fa16 (.)
 # Cerca i marcatori di conflitto:
 codice nel tuo branch
 codice nel branch da mergeare
 
 # Decidi quale codice mantenere
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Rimuovi i marcatori di conflitto
 ```
 
 #### Strumenti Visuali
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Usa uno strumento di merge
 git mergetool
 
@@ -92,9 +105,12 @@ git config --global merge.tool vscode
 ### 1. Conflitti nei File di Configurazione
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Usa la strategia ours per file di configurazione locali
 git checkout --ours config/local.php
 git add config/local.php
@@ -107,9 +123,12 @@ git add config/shared.php
 ### 2. Conflitti nei File di Lock
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Risolvi conflitti in composer.lock
 git checkout --theirs composer.lock
 composer install
@@ -119,6 +138,7 @@ git add composer.lock
 ### 3. Conflitti nelle Migrazioni
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 # Rinomina le migrazioni in conflitto
 git checkout --ours database/migrations/*
@@ -127,6 +147,10 @@ git checkout --ours database/migrations/*
 # Rinomina le migrazioni in conflitto
 git checkout --ours database/migrations/*
 >>>>>>> aurmich/dev
+=======
+# Rinomina le migrazioni in conflitto
+git checkout --ours database/migrations/*
+>>>>>>> 54f4fa16 (.)
 # Aggiorna i timestamp
 php artisan migration:fresh
 ```
@@ -135,9 +159,12 @@ php artisan migration:fresh
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Annulla merge in corso
 git merge --abort
 
@@ -173,13 +200,17 @@ git branch --no-merged
 ### 1. Rebase Interattivo
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Inizia rebase interattivo
 git rebase -i main
 
 # Comandi disponibili:
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 # pick - usa il commit
@@ -193,15 +224,23 @@ git rebase -i main
 # squash - unisci con il commit precedente
 # edit - modifica il commit
 >>>>>>> aurmich/dev
+=======
+# pick - usa il commit
+# squash - unisci con il commit precedente
+# edit - modifica il commit
+>>>>>>> 54f4fa16 (.)
 # drop - elimina il commit
 ```
 
 ### 2. Cherry-Pick
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Seleziona commit specifici
 git cherry-pick <commit-hash>
 
@@ -215,9 +254,12 @@ git cherry-pick --continue
 1. **Test Automatici**
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Esegui tutti i test
 php artisan test
 

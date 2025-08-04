@@ -16,9 +16,15 @@ class EventServiceProvider extends ServiceProvider
      * @var array<string, array<int, string>>
      */
     protected $listen = [
+<<<<<<< HEAD
         //UserModerationStatusUpdated::class => [
          //   UserModerationListener::class,
         //],
+=======
+        UserModerationStatusUpdated::class => [
+            UserModerationListener::class,
+        ],
+>>>>>>> 54f4fa16 (.)
     ];
 
     /**

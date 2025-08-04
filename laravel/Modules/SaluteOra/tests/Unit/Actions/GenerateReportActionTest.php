@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // NOTE: Questo è un test di esempio per dimostrare la conversione da PHPUnit a Pest
 // Le classi referenziate (Report, ReportData, GenerateReportAction, etc.) sono esempi
 // e dovranno essere sostituite con le classi reali del modulo quando implementate
@@ -103,6 +104,8 @@ test('pulisce i dati precedenti prima di generare un nuovo report', function () 
         ->and($cleanedData->contains('item3'))->toBeTrue();
 });
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 namespace Modules\SaluteOra\Tests\Unit\Actions;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -294,4 +297,7 @@ class GenerateReportActionTest extends TestCase
         parent::tearDown();
     }
 }
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)

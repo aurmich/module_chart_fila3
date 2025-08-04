@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Registrazione',
         'group' => 'Gestione Utenti',
@@ -286,6 +287,8 @@ return [
             'registration' => 'Registrazione completata con successo! Riceverai una email di conferma',
             'step' => 'Passaggio completato correttamente',
 =======
+=======
+>>>>>>> 54f4fa16 (.)
     'steps' => [
         'Dati Personali' => [
             'label' => 'Dati Personali',
@@ -346,8 +349,13 @@ return [
         'name' => [
             'label' => 'name',
         ],
+<<<<<<< HEAD
         'last_name' => [
             'label' => 'last_name',
+=======
+        'surname' => [
+            'label' => 'surname',
+>>>>>>> 54f4fa16 (.)
         ],
         'email' => [
             'label' => 'Email',
@@ -591,7 +599,10 @@ return [
         ],
         'moderation_notes' => [
             'label' => 'moderation_notes',
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         ],
     ],
 ];

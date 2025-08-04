@@ -118,6 +118,7 @@ public function testWidgetRendering()
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 5. Integrazione con Filtri Dashboard
 - Utilizzare accesso sicuro ai filtri della pagina
 - Implementare fallback appropriati quando i filtri non sono disponibili
@@ -126,6 +127,8 @@ public function testWidgetRendering()
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ## Checklist di Verifica
 
 1. [ ] I dati sono validati prima dell'uso

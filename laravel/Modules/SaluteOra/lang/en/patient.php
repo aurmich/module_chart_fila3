@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -39,6 +40,8 @@ return [
             'subtitle' => 'Full record view',
             'description' => 'View all demographic, health and documentation data registered for this patient',
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 return [
     'name' => 'Patients',
     'navigation' => [
@@ -215,12 +218,16 @@ return [
             'placeholder' => 'Select if you want to subscribe to the newsletter',
             'description' => 'Subscribe to our newsletter to receive updates and news',
             'tooltip' => 'You can unsubscribe at any time'
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         ],
     ],
     'steps' => [
         'personal_data_step' => [
             'label' => 'Personal Data',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'description' => 'Enter name, surname, tax code and date of birth',
             'icon' => 'heroicon-o-identification',
@@ -742,6 +749,8 @@ return [
     ],
 ];
 =======
+=======
+>>>>>>> 54f4fa16 (.)
             'description' => 'Enter your personal information',
             'icon' => 'heroicon-o-user',
             'color' => 'primary'
@@ -808,5 +817,9 @@ return [
             'tooltip' => 'View patient details'
         ]
     ]
+<<<<<<< HEAD
 ]; 
 >>>>>>> aurmich/dev
+=======
+]; 
+>>>>>>> 54f4fa16 (.)

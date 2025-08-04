@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Modules\Tenant\Traits\BelongsToTenant;
 use Modules\Xot\Models\XotBaseModel;
 
+<<<<<<< HEAD
 /**
  * 
  *
@@ -55,6 +56,8 @@ use Modules\Xot\Models\XotBaseModel;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Anamnesis withoutTrashed()
  * @mixin \Eloquent
  */
+=======
+>>>>>>> 54f4fa16 (.)
 class Anamnesis extends XotBaseModel
 {
     use HasFactory, SoftDeletes, BelongsToTenant;
@@ -75,7 +78,11 @@ class Anamnesis extends XotBaseModel
      *
      * @return array<string, string>
      */
+<<<<<<< HEAD
     protected function casts(): array
+=======
+    public function casts(): array
+>>>>>>> 54f4fa16 (.)
     {
         return array_merge(parent::casts(), [
             'allergies' => 'array',

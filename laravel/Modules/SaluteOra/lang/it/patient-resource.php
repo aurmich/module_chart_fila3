@@ -25,12 +25,18 @@ return [
         'first_name' => [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome',
+<<<<<<< HEAD
             'help' => 'Inserisci il nome completo',
+=======
+>>>>>>> 54f4fa16 (.)
         ],
         'last_name' => [
             'label' => 'Cognome',
             'placeholder' => 'Inserisci il cognome',
+<<<<<<< HEAD
             'help' => 'Inserisci il cognome completo',
+=======
+>>>>>>> 54f4fa16 (.)
         ],
         'address' => [
             'label' => 'Indirizzo',
@@ -43,12 +49,19 @@ return [
         'phone' => [
             'label' => 'Telefono',
             'placeholder' => 'Inserisci il numero di telefono',
+<<<<<<< HEAD
             'help' => 'Numero di telefono per contatti',
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci l\'email',
             'help' => 'Indirizzo email valido',
+=======
+        ],
+        'email' => [
+            'label' => 'Email',
+            'placeholder' => 'Inserisci l\'indirizzo email',
+>>>>>>> 54f4fa16 (.)
         ],
         'health_card' => [
             'label' => 'Tessera Sanitaria',
@@ -67,6 +80,7 @@ return [
             'tooltip' => 'Carica il certificato di gravidanza se applicabile',
         ],
         'fiscal_code' => [
+<<<<<<< HEAD
             'label' => 'Codice fiscale',
             'placeholder' => 'Inserisci il codice fiscale',
             'help' => 'Codice fiscale come da tessera sanitaria',
@@ -75,6 +89,13 @@ return [
             'label' => 'Data di nascita',
             'placeholder' => 'Seleziona la data di nascita',
             'help' => 'Inserisci la data di nascita nel formato gg/mm/aaaa',
+=======
+            'label' => 'Codice Fiscale',
+            'placeholder' => 'Inserisci il tuo codice fiscale',
+        ],
+        'birth_date' => [
+            'label' => 'Data di Nascita',
+>>>>>>> 54f4fa16 (.)
         ],
         'last_dental_visit' => [
             'label' => 'Ultima Visita Dentistica',
@@ -92,15 +113,22 @@ return [
             'label' => 'Newsletter',
             'tooltip' => 'Vuoi ricevere aggiornamenti via email?',
         ],
+<<<<<<< HEAD
         'gender' => [
             'label' => 'Sesso',
             'placeholder' => 'Seleziona il sesso',
             'help' => 'Seleziona il sesso anagrafico',
         ],
+=======
+>>>>>>> 54f4fa16 (.)
     ],
     'buttons' => [
         'submit' => [
             'label' => 'ACCETTA E CONTINUA',
         ],
     ],
+<<<<<<< HEAD
 ];
+=======
+]; 
+>>>>>>> 54f4fa16 (.)

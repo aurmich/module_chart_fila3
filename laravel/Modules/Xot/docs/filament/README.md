@@ -13,9 +13,12 @@ Questa cartella contiene la documentazione relativa all'implementazione di Filam
 
 Questa documentazione si applica a tutti i moduli che utilizzano Filament per il backend. 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
@@ -94,6 +97,7 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 
+<<<<<<< HEAD
 ## Regola sulle closure void nelle azioni custom Filament
 
 ### Motivazione
@@ -160,3 +164,5 @@ $prefix = static::$translationPrefix;
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)

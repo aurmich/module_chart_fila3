@@ -9,9 +9,17 @@
     "providers": [
         "Modules\\Cms\\Providers\\CmsServiceProvider",
         "Modules\\Cms\\Providers\\Filament\\AdminPanelProvider",
+<<<<<<< HEAD
         "Modules\\Cms\\Providers\\FolioVoltServiceProvider"
+=======
+        "Modules\\Cms\\Providers\\Filament\\FrontPanelProvider"
+>>>>>>> 54f4fa16 (.)
     ],
     "aliases": [],
     "files": [],
     "requires": []
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 54f4fa16 (.)

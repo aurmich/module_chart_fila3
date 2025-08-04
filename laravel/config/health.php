@@ -149,6 +149,7 @@ return [
     'secret_token' => env('HEALTH_SECRET_TOKEN') ?? null,
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * By default, conditionally skipped health checks are treated as failures.
  * You can override this behavior by uncommenting the configuration below.
@@ -157,6 +158,8 @@ return [
  */
     // 'treat_skipped_as_failure' => false
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 
     /**
      * By default, conditionally skipped health checks are treated as failures.
@@ -164,5 +167,8 @@ return [
      * @link https://spatie.be/docs/laravel-health/v1/basic-usage/conditionally-running-or-modifying-checks
      */
     //'treat_skipped_as_failure' => false
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ];

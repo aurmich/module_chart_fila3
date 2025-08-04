@@ -42,7 +42,11 @@ class RegistrationForm extends Component
                                 ->required()
                                 ->maxLength(255),
 
+<<<<<<< HEAD
                             TextInput::make('last_name')
+=======
+                            TextInput::make('surname')
+>>>>>>> 54f4fa16 (.)
                                 ->label('Cognome')
                                 ->required()
                                 ->maxLength(255),
@@ -97,7 +101,11 @@ class RegistrationForm extends Component
 
         /** @var UserContract $user */
         $user = app(UserContract::class);
+<<<<<<< HEAD
         $user->name = $state['name'] . ' ' . $state['last_name'];
+=======
+        $user->name = $state['name'] . ' ' . $state['surname'];
+>>>>>>> 54f4fa16 (.)
         $user->email = $state['email'];
         $user->password = Hash::make($state['password']);
         $user->save();

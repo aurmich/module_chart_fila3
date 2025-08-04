@@ -32,10 +32,14 @@ new #[Layout('components.layouts.auth')] class extends Component {
         <!-- Email Address -->
         <flux:input
 <<<<<<< HEAD
+<<<<<<< HEAD
             wire:model="email"
 =======
             wire:model.live="email"
 >>>>>>> aurmich/dev
+=======
+            wire:model="email"
+>>>>>>> 54f4fa16 (.)
             :label="__('Email Address')"
             type="email"
             required
@@ -47,12 +51,17 @@ new #[Layout('components.layouts.auth')] class extends Component {
     </form>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-400">
         <span>{{ __('Or, return to') }}</span>
 =======
     <div class="space-x-1 text-center text-sm text-zinc-400">
         {{ __('Or, return to') }}
 >>>>>>> aurmich/dev
+=======
+    <div class="space-x-1 text-center text-sm text-zinc-400">
+        {{ __('Or, return to') }}
+>>>>>>> 54f4fa16 (.)
         <flux:link :href="route('login')" wire:navigate>{{ __('log in') }}</flux:link>
     </div>
 </div>

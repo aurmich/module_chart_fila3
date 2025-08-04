@@ -1,9 +1,12 @@
 # Module User Fila3 🔥 Ultimate User, Roles & Permissions Manager for FilamentPHP 🚀
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
 # 👤 User Module - Advanced User Management
+=======
+>>>>>>> 54f4fa16 (.)
 
 [![Latest Release](https://img.shields.io/github/v/release/laraxot/module_user_fila3)](https://github.com/laraxot/module_user_fila3/releases)
 [![Build Status](https://img.shields.io/travis/laraxot/module_user_fila3/master)](https://travis-ci.org/laraxot/module_user_fila3)
@@ -17,9 +20,12 @@ Manage users, roles, and permissions with lightning speed ⚡ through this Larav
 - **Dynamic Module Assignment**: Control user access to specific modules through `php artisan user:assign-module`. 🎯
 - **Complete Team Management**: Manage teams with simple commands like `php artisan team:create` and `php artisan team:assign-user`. 👥
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Versione HEAD
 
 - **Permissions that Fit**: Set flexible roles and permissions to fit your app's unique needs! 🔑
@@ -137,6 +143,7 @@ Give your Laravel app the **edge** it deserves with **Module User Fila3**. Try i
 
 
 ### Versione Incoming
+<<<<<<< HEAD
 [![PHP Version](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
 [![Laravel Version](https://img.shields.io/badge/Laravel-11.x-orange.svg)](https://laravel.com)
 [![Filament Version](https://img.shields.io/badge/Filament-3.x-purple.svg)](https://filamentphp.com)
@@ -321,6 +328,8 @@ This module is open-sourced software licensed under the [MIT License](LICENSE).
 ---
 
 Give your Laravel application the **powerful user management** it deserves with this comprehensive module. Try it today! 🚀
+=======
+>>>>>>> 54f4fa16 (.)
 
 # 👤 User Module - Gestione Utenti Avanzata
 
@@ -497,9 +506,12 @@ L'account potrà accedere al modulo assegnato.
 
 ## [Gestione dei Team](docs/teams.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Versione HEAD
 
 
@@ -534,6 +546,7 @@ php artisan db:seed --class=\\Modules\\User\\Database\\Seeders\\UserDatabaseSeed
 - Social authentication
 - API authentication
 - Multi-tenancy support
+<<<<<<< HEAD
 - Team management with binding resolution
 
 ## Critical Fixes
@@ -547,6 +560,8 @@ Fixed critical `BindingResolutionException` for team models by registering prope
 **Impact**: Restored full team functionality across all modules using the `HasTeams` trait.
 
 **Documentation**: See [Team Bindings Fix](docs/team-bindings-fix.md) for complete details.
+=======
+>>>>>>> 54f4fa16 (.)
 
 ## Permissions
 

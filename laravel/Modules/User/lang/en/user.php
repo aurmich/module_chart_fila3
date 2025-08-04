@@ -1,10 +1,15 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
 >>>>>>> aurmich/dev
+=======
+declare(strict_types=1);
+
+>>>>>>> 54f4fa16 (.)
 return [
     'actions' => [
         'attach_user' => 'Attach User',
@@ -26,6 +31,7 @@ return [
         'associate' => 'Associate User',
         'bulk_delete' => 'Delete Selected',
         'bulk_detach' => 'Detach Selected',
+<<<<<<< HEAD
 <<<<<<< HEAD
         'impersonate' => 'Impersona Utente',
         'stop_impersonating' => 'Termina Impersonificazione',
@@ -152,6 +158,8 @@ return [
             'label' => 'attach',
         ],
 =======
+=======
+>>>>>>> 54f4fa16 (.)
     ],
     'fields' => [
         'name' => 'Name',
@@ -164,7 +172,10 @@ return [
         'password' => 'Password',
         'password_confirmation' => 'Confirm Password',
         'email_verified_at' => 'Email Verified At',
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
     ],
     'filters' => [
         'active_users' => 'Active Users',
@@ -179,6 +190,7 @@ return [
         'loading' => 'Loading users...',
         'search' => 'Search users...',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'created' => 'Utente creato con successo',
         'updated' => 'Utente aggiornato con successo',
         'deleted' => 'Utente eliminato con successo',
@@ -189,6 +201,8 @@ return [
         'impersonating' => 'Stai impersonando l\'utente :name',
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
     ],
     'modals' => [
         'create' => [
@@ -249,6 +263,7 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => [
         'name' => 'Utenti',
         'plural' => 'Utenti',
@@ -279,4 +294,6 @@ return [
     ],
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ];

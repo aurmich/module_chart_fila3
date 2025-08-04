@@ -5,9 +5,12 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Facades\Filament;
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 use Filament\Pages\Dashboard;
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
@@ -30,9 +33,12 @@ class MainDashboard extends Dashboard
     public function mount(): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         Assert::notNull($user = auth()->user(), '['.__LINE__.']['.class_basename($this).']');
         $modules = $user->roles->filter(
             static function ($item) {
@@ -40,10 +46,14 @@ class MainDashboard extends Dashboard
             }
         );
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> aurmich/dev
+=======
+
+>>>>>>> 54f4fa16 (.)
         if (1 === $modules->count()) {
             Assert::notNull($module_first = $modules->first(), '['.__LINE__.']['.class_basename($this).']');
             $panel_name = $module_first->name;

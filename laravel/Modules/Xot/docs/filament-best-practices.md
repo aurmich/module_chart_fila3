@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Filament Best Practices (Moduli Riutilizzabili)
 
 ## Descrizione
@@ -16,6 +17,22 @@ Best practice generiche per l'utilizzo di Filament in moduli Laravel riutilizzab
 ```php
 // ❌ Anti-pattern
 class MyResource extends \Filament\Resources\Resource {}
+=======
+# Best Practices per Filament Resources in Laraxot
+
+Questo documento definisce le linee guida ufficiali e le best practices per l'implementazione delle risorse Filament all'interno del framework Laraxot.
+
+## Regole Fondamentali
+
+### 1. Utilizzo delle Classi Base Corrette
+
+#### ✅ DO - Estendere XotBaseResource
+
+È **obbligatorio** che tutte le risorse Filament estendano `XotBaseResource` invece della classe standard di Filament:
+
+```php
+use Modules\Xot\Filament\Resources\XotBaseResource;
+>>>>>>> 54f4fa16 (.)
 
 class UserResource extends XotBaseResource
 {
@@ -53,6 +70,93 @@ public static function getFormSchema(): array
 }
 ```
 
+<<<<<<< HEAD
+=======
+### Versione HEAD
+
+
+### Versione Incoming
+
+### 3. Gestione delle Traduzioni
+
+#### ✅ DO - Utilizzare il Sistema di Traduzioni Automatiche
+
+**Non utilizzare mai** il metodo `->label()` nei componenti Filament. Le etichette vengono gestite automaticamente dal `LangServiceProvider` attraverso i file di traduzione.
+
+```php
+// ✅ CORRETTO: Non specificare l'etichetta
+Forms\Components\TextInput::make('first_name')
+    ->required();
+```
+
+#### ❌ DON'T - Non Specificare Manualmente le Etichette
+
+```php
+// ❌ ERRATO: Specificare manualmente l'etichetta
+Forms\Components\TextInput::make('first_name')
+    ->label('Nome')
+    ->required();
+```
+
+Per maggiori dettagli e motivazioni, consulta la [documentazione completa sulle traduzioni automatiche](../../Lang/docs/automatic-translations.md).
+
+### 4. Implementazione dei Wizard
+
+#### ✅ DO - Estrarre gli Step in Metodi Dedicati
+
+Quando si implementa un `Wizard` in Filament, ogni step deve essere definito in un metodo dedicato che restituisce un oggetto `Forms\Components\Wizard\Step`:
+
+```php
+// ✅ CORRETTO
+public static function getFormSchemaWidget(): array
+{
+    return [
+        Forms\Components\Wizard::make([
+            self::getPersonalDataStep(),
+            self::getContactsStep(),
+            self::getPrivacyStep(),
+        ])
+        ->skippable(false)
+    ];
+}
+
+protected static function getPersonalDataStep(): Forms\Components\Wizard\Step
+{
+    return Forms\Components\Wizard\Step::make('Dati Personali')
+        ->icon('heroicon-o-user')
+        ->description('Inserisci i tuoi dati personali')
+        ->schema([
+            // ...componenti del form
+        ]);
+}
+```
+
+#### ❌ DON'T - Non Definire gli Step Direttamente nel Wizard
+
+```php
+// ❌ ERRATO
+public static function getFormSchemaWidget(): array
+{
+    return [
+        Forms\Components\Wizard::make([
+            Forms\Components\Wizard\Step::make('Dati Personali')
+                ->icon('heroicon-o-user')
+                ->description('Inserisci i tuoi dati personali')
+                ->schema([
+                    // ...componenti del form
+                ]),
+            // ...altri step
+        ])
+    ];
+}
+```
+
+Per maggiori dettagli e motivazioni, consulta la [documentazione completa sulle best practices per i wizard](../../UI/docs/filament/wizard-best-practices.md).
+
+
+---
+
+>>>>>>> 54f4fa16 (.)
 #### ❌ DON'T - Non utilizzare il metodo form()
 
 ```php
@@ -65,6 +169,7 @@ public static function form(Form $form): Form
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ### 3. Traduzioni e Label
 =======
@@ -122,6 +227,9 @@ class DoctorResource extends XotBaseResource
 
 ### 4. Traduzioni e Label
 >>>>>>> aurmich/dev
+=======
+### 3. Traduzioni e Label
+>>>>>>> 54f4fa16 (.)
 
 #### ✅ DO - Utilizzare i file di traduzione
 
@@ -180,6 +288,7 @@ class SocioResource extends XotBaseResource
     protected static ?string $model = Socio::class;
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected static ?string $navigationIcon = 'heroicon-o-user';
     
     protected static ?int $navigationSort = 1;
@@ -187,6 +296,11 @@ class SocioResource extends XotBaseResource
     // NON definire $navigationIcon quando si estende XotBaseResource
     // NON definire $navigationSort quando si estende XotBaseResource
 >>>>>>> aurmich/dev
+=======
+    protected static ?string $navigationIcon = 'heroicon-o-user';
+    
+    protected static ?int $navigationSort = 1;
+>>>>>>> 54f4fa16 (.)
     
     // Form Schema - CORRETTO ✅
     public static function getFormSchema(): array
@@ -579,6 +693,7 @@ public static function table(Table $table): Table
 ```
 
 ## Troubleshooting
+<<<<<<< HEAD
 - Se compare un errore di override di proprietà statiche, rimuovere la proprietà dal resource e centralizzare nella base
 - Se le traduzioni non vengono applicate, controllare la struttura dei file lang e l'assenza di ->label() hardcoded
 
@@ -629,12 +744,15 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 - [Ereditarietà modelli](../model-inheritance-best-practices.md)
 
 <<<<<<< HEAD
+=======
+>>>>>>> 54f4fa16 (.)
 
 ### Problema: Form non visualizzato correttamente
 
 **Soluzione:** Assicurarsi di utilizzare `getFormSchema()` invece di `form()` e controllare che tutti i componenti siano configurati correttamente.
 
 ### Problema: Label non tradotte
+<<<<<<< HEAD
 =======
 ## Problema: Form non visualizzato correttamente
 
@@ -649,6 +767,8 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 
 ## Problema: Label non tradotte
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 
 **Soluzione:** Verificare che:
 1. Non si stia utilizzando `->label()` direttamente sui componenti
@@ -656,9 +776,12 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 3. Le chiavi dei campi nel form corrispondano esattamente alle chiavi dei campi nel file di traduzione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ## Problema: Relazioni non caricate correttamente
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Problema: Relazioni non caricate correttamente
 
 **Soluzione:** Verificare che:
@@ -713,6 +836,7 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 - [Documentazione XotBaseResource](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/docs/resource.md)
 - [Best Practices Laraxot](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -791,3 +915,62 @@ Appointment::where('doctor_id', $doctorId)
 
 =======
 >>>>>>> aurmich/dev
+=======
+## Collegamenti tra versioni di FILAMENT-BEST-PRACTICES.md
+* [FILAMENT-BEST-PRACTICES.md](../../../Xot/docs/filament/FILAMENT-BEST-PRACTICES.md)
+* [FILAMENT-BEST-PRACTICES.md](../../../Xot/docs/FILAMENT-BEST-PRACTICES.md)
+
+
+## Collegamenti tra versioni di filament-best-practices.md
+### Versione HEAD
+
+* [filament-best-practices.md](../filament-best-practices.md)
+
+### Versione Incoming
+
+* [filament-best-practices.md](filament/filament-best-practices.md)
+
+---
+
+## Collocazione dei metodi tabellari
+
+**Regola:**
+I metodi `getTableColumns`, `getTableFilters`, `getTableActions`, `getTableBulkActions` vanno sempre implementati nella pagina collegata (es. `ListXResource`), **mai** nella Resource, secondo le regole Filament e Laraxot. La Resource deve solo definire le pagine e la form schema.
+
+**Motivazione:**
+- Rispetta la separazione delle responsabilità tra Resource e Page
+- Permette override e personalizzazione per singola pagina
+- Facilita la manutenzione e la testabilità
+- Allinea il codice agli standard Filament e Laraxot
+
+**Esempio corretto:**
+```php
+// In Resource:
+public static function getPages(): array {
+    return [
+        'index' => Pages\ListPerformanceFondos::route('/'),
+        // ...
+    ];
+}
+
+// In Pages/ListPerformanceFondos.php:
+public function getTableColumns(): array { /* ... */ }
+public function getTableFilters(): array { /* ... */ }
+public function getTableActions(): array { /* ... */ }
+public function getTableBulkActions(): array { /* ... */ }
+```
+
+**Esempio sbagliato:**
+```php
+// In Resource:
+public static function getTableColumns(): array { /* ... */ }
+```
+
+**Nota:**
+Aggiornare sempre la documentazione e le regole di progetto. Applicare la stessa regola a tutti i moduli e risorse Filament, anche custom.
+
+**Vedi anche:**
+- [Best Practices Filament per il modulo Performance](../../Performance/docs/filament.md)
+
+
+>>>>>>> 54f4fa16 (.)

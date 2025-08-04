@@ -4,7 +4,10 @@
 
 - [Modulo Lang](../../Lang/docs/module_lang.md) - Documentazione principale sulle traduzioni
 - [Regole Generali Traduzioni](../../Xot/docs/translations.md)
+<<<<<<< HEAD
 - [Activity Module Fixes](../../.cursor/rules/activity-module-fixes.mdc) - Correzioni applicate dicembre 2024
+=======
+>>>>>>> 54f4fa16 (.)
 
 ## Struttura
 
@@ -12,16 +15,21 @@
 Modules/Activity/
 └── lang/
     ├── it/
+<<<<<<< HEAD
     │   ├── activity.php
     │   ├── stored_event.php
     │   ├── snapshots.php
     │   ├── dashboard.php
     │   ├── log.php
     │   └── snapshot.php
+=======
+    │   └── activity.php
+>>>>>>> 54f4fa16 (.)
     └── en/
         └── activity.php
 ```
 
+<<<<<<< HEAD
 ## Aggiornamenti Dicembre 2024
 
 ### Conformità alle Regole Laraxot
@@ -172,6 +180,44 @@ Traduzioni specifiche per gli eventi archiviati:
 3. **Localizzazione**: Considerare traduzioni per altre lingue mantenendo la stessa struttura
 4. **Validazione**: Includere controlli automatici per verificare la conformità
 
+=======
+## Contenuto
+
+Il file `activity.php` contiene le traduzioni per:
+- Log attività
+- Eventi di sistema
+- Azioni utente
+- Notifiche attività
+- Filtri attività
+- Report attività
+- Timeline
+- Statistiche
+- Esportazione dati
+- Configurazione attività
+
+## Esempi
+
+```php
+return [
+    'logs' => [
+        'label' => 'Log Attività',
+        'tooltip' => 'Visualizza il registro delle attività'
+    ],
+    'events' => [
+        'label' => 'Eventi',
+        'tooltip' => 'Gestisci gli eventi di sistema'
+    ],
+    'notifications' => [
+        'label' => 'Notifiche',
+        'tooltip' => 'Configura le notifiche attività'
+    ],
+    'reports' => [
+        'label' => 'Report',
+        'tooltip' => 'Genera report sulle attività'
+    ]
+];
+``` 
+>>>>>>> 54f4fa16 (.)
 ## Collegamenti tra versioni di translations.md
 * [translations.md](laravel/Modules/Chart/docs/translations.md)
 * [translations.md](laravel/Modules/Reporting/docs/translations.md)

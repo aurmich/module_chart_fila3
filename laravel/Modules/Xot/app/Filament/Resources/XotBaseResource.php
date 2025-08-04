@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
+<<<<<<< HEAD
 use Filament\Forms;
 <<<<<<< HEAD
 use Filament\Forms\Set;
@@ -37,6 +38,17 @@ use Modules\Xot\Actions\ModelClass\CountAction;
 use Filament\Resources\Resource as FilamentResource;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 >>>>>>> aurmich/dev
+=======
+use Filament\Forms\Form;
+use Filament\Pages\SubNavigationPosition;
+use Filament\Resources\Resource as FilamentResource;
+use Illuminate\Support\Str;
+use Modules\Xot\Actions\ModelClass\CountAction;
+use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+use Webmozart\Assert\Assert;
+
+use function Safe\glob;
+>>>>>>> 54f4fa16 (.)
 
 /**
  * @method static string getUrl(string $name, array<string, mixed> $parameters = [], bool $isAbsolute = true)
@@ -66,14 +78,18 @@ abstract class XotBaseResource extends FilamentResource
         return true;
     }
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 54f4fa16 (.)
     /**
      * @return class-string<\Illuminate\Database\Eloquent\Model>
      */
     public static function getModel(): string
     {
+<<<<<<< HEAD
         if (null != static::$model) {
 <<<<<<< HEAD
             $res = static::$model;
@@ -83,6 +99,11 @@ abstract class XotBaseResource extends FilamentResource
             return static::$model;
 >>>>>>> aurmich/dev
         }
+=======
+        // if (null != static::$model) {
+        //    return static::$model;
+        // }
+>>>>>>> 54f4fa16 (.)
         $moduleName = static::getModuleName();
         $modelName = Str::before(class_basename(static::class), 'Resource');
         $res = 'Modules\\'.$moduleName.'\Models\\'.$modelName;
@@ -97,6 +118,7 @@ abstract class XotBaseResource extends FilamentResource
      * @return array<string|int,\Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     abstract public static function getFormSchema(): array;
     
 =======
@@ -105,6 +127,9 @@ abstract class XotBaseResource extends FilamentResource
         return [];
     }
 >>>>>>> aurmich/dev
+=======
+    abstract public static function getFormSchema(): array;
+>>>>>>> 54f4fa16 (.)
 
     final public static function form(Form $form): Form
     {
@@ -159,7 +184,11 @@ abstract class XotBaseResource extends FilamentResource
         $edit = $edit;
         /** @var class-string<\Filament\Resources\Pages\Page> $view */
         $view = $view;
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 54f4fa16 (.)
         /** @var array<string, \Filament\Resources\Pages\PageRegistration> $pages */
         $pages = [
             'index' => $index::route('/'),
@@ -183,7 +212,11 @@ abstract class XotBaseResource extends FilamentResource
         $reflector = new \ReflectionClass(static::class);
         $filename = $reflector->getFileName();
         Assert::string($filename);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 54f4fa16 (.)
         $path = Str::of($filename)
             ->before('.php')
             ->append(DIRECTORY_SEPARATOR)
@@ -192,7 +225,11 @@ abstract class XotBaseResource extends FilamentResource
 
         $files = glob($path.DIRECTORY_SEPARATOR.'*RelationManager.php');
         Assert::isArray($files);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 54f4fa16 (.)
         /** @var array<class-string<\Filament\Resources\RelationManagers\RelationManager>> $res */
         $res = [];
         foreach ($files as $file) {
@@ -201,7 +238,11 @@ abstract class XotBaseResource extends FilamentResource
                 ->before('.php')
                 ->prepend(static::class.'\RelationManagers\\')
                 ->toString();
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> 54f4fa16 (.)
             if (class_exists($className)) {
                 Assert::subclassOf($className, \Filament\Resources\RelationManagers\RelationManager::class);
                 $res[] = $className;
@@ -210,6 +251,7 @@ abstract class XotBaseResource extends FilamentResource
 
         return $res;
     }
+<<<<<<< HEAD
 
 <<<<<<< HEAD
     public static function getWizardSubmitAction():Htmlable
@@ -303,4 +345,6 @@ abstract class XotBaseResource extends FilamentResource
         return Forms\Components\Wizard\Step::make($name)
             ->schema(static::$schema());
     }
+=======
+>>>>>>> 54f4fa16 (.)
 }

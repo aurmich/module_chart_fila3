@@ -8,6 +8,11 @@ use Spatie\LaravelData\Data;
 use Spatie\LaravelData\Attributes\Validation\Email;
 use Spatie\LaravelData\Attributes\Validation\Required;
 use Spatie\LaravelData\Attributes\Validation\StringType;
+<<<<<<< HEAD
+=======
+use Spatie\LaravelData\Attributes\WithCast;
+use Spatie\LaravelData\Casts\ArrayCast;
+>>>>>>> 54f4fa16 (.)
 
 class DoctorData extends Data
 {
@@ -24,6 +29,10 @@ class DoctorData extends Data
         #[Email]
         public readonly string $email,
 
+<<<<<<< HEAD
+=======
+        #[WithCast(ArrayCast::class)]
+>>>>>>> 54f4fa16 (.)
         public readonly ?array $certifications = null,
 
         public readonly ?string $phone = null,
@@ -34,6 +43,10 @@ class DoctorData extends Data
         
         public readonly ?string $registration_number = null,
         
+<<<<<<< HEAD
+=======
+        #[WithCast(ArrayCast::class)]
+>>>>>>> 54f4fa16 (.)
         public readonly ?array $availability = null,
     ) {
     }
@@ -42,6 +55,7 @@ class DoctorData extends Data
      * Crea un'istanza di DoctorData da un array di dati.
      *
      * @param array<string, mixed> $data
+<<<<<<< HEAD
      * @return static
      */
     public static function fromArray(array $data): static
@@ -56,6 +70,22 @@ class DoctorData extends Data
             city: isset($data['city']) ? (string) $data['city'] : null,
             registration_number: isset($data['registration_number']) ? (string) $data['registration_number'] : null,
             availability: is_array($data['availability'] ?? null) ? $data['availability'] : null,
+=======
+     * @return self
+     */
+    public static function from(array $data): self
+    {
+        return new self(
+            first_name: $data['first_name'] ?? '',
+            last_name: $data['last_name'] ?? '',
+            email: $data['email'] ?? '',
+            certifications: $data['certifications'] ?? null,
+            phone: $data['phone'] ?? null,
+            address: $data['address'] ?? null,
+            city: $data['city'] ?? null,
+            registration_number: $data['registration_number'] ?? null,
+            availability: $data['availability'] ?? null,
+>>>>>>> 54f4fa16 (.)
         );
     }
 }

@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Modules\Tenant\Traits\BelongsToTenant;
 use Modules\Xot\Models\XotBaseModel;
 
+<<<<<<< HEAD
 /**
  * 
  *
@@ -64,6 +65,8 @@ use Modules\Xot\Models\XotBaseModel;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Document withoutTrashed()
  * @mixin \Eloquent
  */
+=======
+>>>>>>> 54f4fa16 (.)
 class Document extends XotBaseModel
 {
     use HasFactory, SoftDeletes, BelongsToTenant;
@@ -88,7 +91,11 @@ class Document extends XotBaseModel
      *
      * @return array<string, string>
      */
+<<<<<<< HEAD
     protected function casts(): array
+=======
+    public function casts(): array
+>>>>>>> 54f4fa16 (.)
     {
         return array_merge(parent::casts(), [
             'expiry_date' => 'date',
@@ -111,12 +118,20 @@ class Document extends XotBaseModel
         $bytes = $this->file_size;
         $units = ['B', 'KB', 'MB', 'GB', 'TB'];
         $i = 0;
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 54f4fa16 (.)
         while ($bytes >= 1024 && $i < count($units) - 1) {
             $bytes /= 1024;
             $i++;
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 54f4fa16 (.)
         return round($bytes, 2) . ' ' . $units[$i];
     }
 }

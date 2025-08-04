@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
@@ -17,6 +18,12 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+//use Illuminate\Foundation\Application;
+use App\Application;
+use Illuminate\Foundation\Configuration\Exceptions;
+use Illuminate\Foundation\Configuration\Middleware;
+>>>>>>> 54f4fa16 (.)
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
@@ -24,6 +31,7 @@ return Application::configure(basePath: dirname(__DIR__))
         commands: __DIR__.'/../routes/console.php',
         health: '/up',
     )
+<<<<<<< HEAD
     ->withMiddleware(function (Middleware $middleware): void {
         //
     })
@@ -37,4 +45,11 @@ return Application::configure(basePath: dirname(__DIR__))
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+    ->withMiddleware(function (Middleware $middleware) {
+        //
+    })
+    ->withExceptions(function (Exceptions $exceptions) {
+        //
+>>>>>>> 54f4fa16 (.)
     })->create();

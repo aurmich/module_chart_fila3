@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 use function Laravel\Folio\{middleware, name};
 use Filament\Notifications\Notification;
 use Filament\Notifications\Livewire\Notifications;
@@ -22,6 +23,8 @@ new class extends Component
 {
 
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 use function Livewire\Volt\{state, mount};
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -64,11 +67,15 @@ $updatePassword = function () {
 
     $this->reset(['current_password', 'new_password', 'new_password_confirmation']);
     $this->dispatch('password-updated');
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 };
 
 ?>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <x-layouts.app>
     @volt('profile')
@@ -79,6 +86,8 @@ $updatePassword = function () {
     @endvolt
 </x-layouts.app>
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 @volt
 <x-layouts.app>
     <x-slot name="title">
@@ -125,4 +134,7 @@ $updatePassword = function () {
     </div>
 </x-layouts.app>
 @endvolt
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)

@@ -15,10 +15,15 @@ use Sushi\Sushi;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * 
  *
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 54f4fa16 (.)
  * @property int         $id
  * @property string|null $name
  * @property string|null $description

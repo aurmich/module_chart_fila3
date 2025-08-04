@@ -45,6 +45,7 @@ $darkLogo = $metatag->getLogoHeaderDark();
 // Ottiene l'altezza del logo
 $height = $metatag->getLogoHeight();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 // 🆕 Ottiene il logo come data URI base64 per embedding inline
 $base64Logo = $metatag->getBrandLogoBase64();
@@ -166,6 +167,8 @@ $logoSrc = getCompanyLogo();
 echo "<img src='{$logoSrc}' alt='Logo'>";
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ```
 
 ### Gestione Colori

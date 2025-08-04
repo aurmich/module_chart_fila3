@@ -1,15 +1,24 @@
 <?php
 
+<<<<<<< HEAD
 return [
     'navigation' => [
         'group' => [
             'name' => 'Notifiche',
             'description' => 'Gestione delle notifiche email e dei relativi template',
         ],
+=======
+declare(strict_types=1);
+
+return [
+    'navigation' => [
+        'group' => 'Notifications',
+>>>>>>> 54f4fa16 (.)
         'label' => 'Email Templates',
         'plural' => 'Email Templates',
         'singular' => 'Email Template',
         'icon' => 'heroicon-o-envelope',
+<<<<<<< HEAD
         'sort' => '1',
         'name' => 'Template Email',
     ],
@@ -17,34 +26,54 @@ return [
         'id' => [
             'label' => 'ID',
             'helper_text' => 'Identificativo univoco del template',
+=======
+        'sort' => 1,
+    ],
+
+    'fields' => [
+        'id' => [
+            'label' => 'ID',
+>>>>>>> 54f4fa16 (.)
         ],
         'mailable' => [
             'label' => 'Mailable Class',
             'placeholder' => 'Enter the Mailable class name',
             'help' => 'The PHP class that handles email sending',
+<<<<<<< HEAD
             'helper_text' => 'Classe PHP che gestisce l\'invio dell\'email',
             'description' => 'mailable',
+=======
+>>>>>>> 54f4fa16 (.)
         ],
         'subject' => [
             'label' => 'Subject',
             'placeholder' => 'Enter the email subject',
             'help' => 'The subject that will appear in the email',
+<<<<<<< HEAD
             'helper_text' => 'Oggetto dell\'email',
             'description' => 'subject',
+=======
+>>>>>>> 54f4fa16 (.)
         ],
         'html_template' => [
             'label' => 'HTML Content',
             'placeholder' => 'Enter the email HTML content',
             'help' => 'The email content in HTML format',
+<<<<<<< HEAD
             'helper_text' => 'Contenuto HTML del template email',
             'description' => 'html_template',
+=======
+>>>>>>> 54f4fa16 (.)
         ],
         'text_template' => [
             'label' => 'Text Content',
             'placeholder' => 'Enter the email text content',
             'help' => 'Text version of the email for clients that don\'t support HTML',
+<<<<<<< HEAD
             'helper_text' => 'Versione testuale del template email',
             'description' => 'text_template',
+=======
+>>>>>>> 54f4fa16 (.)
         ],
         'version' => [
             'label' => 'Version',
@@ -52,6 +81,7 @@ return [
         ],
         'created_at' => [
             'label' => 'Created At',
+<<<<<<< HEAD
             'helper_text' => 'Data di creazione del template',
         ],
         'updated_at' => [
@@ -118,6 +148,14 @@ return [
             'description' => 'Parametri disponibili per il template email',
         ],
     ],
+=======
+        ],
+        'updated_at' => [
+            'label' => 'Last Modified',
+        ],
+    ],
+
+>>>>>>> 54f4fa16 (.)
     'filters' => [
         'search_placeholder' => 'Search templates...',
         'version' => [
@@ -125,6 +163,10 @@ return [
             'placeholder' => 'Select version',
         ],
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 54f4fa16 (.)
     'actions' => [
         'create' => [
             'label' => 'New Template',
@@ -169,6 +211,7 @@ return [
                 'submit' => 'Create Version',
             ],
         ],
+<<<<<<< HEAD
         'preview' => [
             'label' => 'Anteprima',
             'tooltip' => 'Visualizza anteprima dell\'email',
@@ -200,6 +243,10 @@ return [
             'error_message' => 'Errore nell\'importazione del template',
         ],
     ],
+=======
+    ],
+
+>>>>>>> 54f4fa16 (.)
     'messages' => [
         'created' => 'Email template created successfully.',
         'updated' => 'Email template updated successfully.',
@@ -207,6 +254,7 @@ return [
         'restored' => 'Email template restored successfully.',
         'force_deleted' => 'Email template permanently deleted.',
         'version_created' => 'New template version created successfully.',
+<<<<<<< HEAD
         'success' => 'Operazione completata con successo',
         'error' => 'Si è verificato un errore durante l\'operazione',
         'confirmation' => 'Sei sicuro di voler procedere con questa operazione?',
@@ -214,6 +262,10 @@ return [
         'template_updated' => 'Il template email è stato aggiornato con successo',
         'template_deleted' => 'Il template email è stato eliminato con successo',
     ],
+=======
+    ],
+
+>>>>>>> 54f4fa16 (.)
     'sections' => [
         'template' => [
             'label' => 'Template',
@@ -227,6 +279,7 @@ return [
             'label' => 'Logs',
             'description' => 'Template sending history',
         ],
+<<<<<<< HEAD
         'main' => 'Informazioni Principali',
         'content' => 'Contenuto',
         'styling' => 'Stile',
@@ -248,5 +301,7 @@ return [
     ],
     'model' => [
         'label' => 'mail template.model',
+=======
+>>>>>>> 54f4fa16 (.)
     ],
 ];

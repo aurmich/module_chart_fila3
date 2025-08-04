@@ -48,10 +48,14 @@ class HealthPage extends Page
             Checks\FlareErrorOccurrenceCountCheck::new(),
             Checks\HorizonCheck::new(),
 <<<<<<< HEAD
+<<<<<<< HEAD
             //Checks\MeiliSearchCheck::new(),
 =======
             Checks\MeiliSearchCheck::new(),
 >>>>>>> aurmich/dev
+=======
+            Checks\MeiliSearchCheck::new(),
+>>>>>>> 54f4fa16 (.)
             Checks\QueueCheck::new(),
             Checks\RedisCheck::new(),
             Checks\ScheduleCheck::new(),

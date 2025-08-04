@@ -1,10 +1,15 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
 >>>>>>> aurmich/dev
+=======
+declare(strict_types=1);
+
+>>>>>>> 54f4fa16 (.)
 return [
     'new_password' => [
         'label' => 'New Password',
@@ -14,6 +19,7 @@ return [
         'label' => 'Confirm Password',
         'placeholder' => 'Confirm your new password',
     ],
+<<<<<<< HEAD
 <<<<<<< HEAD
     'name' => 'Nome',
     'slug' => 'Slug',
@@ -29,4 +35,6 @@ return [
     ],
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ];

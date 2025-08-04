@@ -10,6 +10,10 @@ return [
         'links' => [
             'label' => 'Footer Links',
             'links' => [
+<<<<<<< HEAD
+=======
+                'label' => 'Link',
+>>>>>>> 54f4fa16 (.)
                 'label' => 'Link Label',
                 'url' => 'Link URL',
                 'icon' => 'Link Icon',
@@ -29,6 +33,7 @@ return [
             'label' => 'Footer Quick Links',
             'links' => [
                 'label' => 'Quick Links',
+<<<<<<< HEAD
             ],
         ],
     ],
@@ -109,6 +114,9 @@ return [
                         ],
                     ],
                 ],
+=======
+                'label' => 'Label',
+>>>>>>> 54f4fa16 (.)
             ],
         ],
     ],

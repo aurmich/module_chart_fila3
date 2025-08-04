@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -640,10 +641,13 @@ return [
     ],
 ];
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 return array (
   'name' => 'Pazienti',
   'navigation' => 
   array (
+<<<<<<< HEAD
     'label' => 'Anagrafica Pazienti',
     'group' => 'Pazienti',
     'icon' => 'heroicon-o-users',
@@ -661,10 +665,39 @@ return array (
       'helper_text' => 'Nome del paziente',
       'description' => 'Il nome anagrafico del paziente',
       'tooltip' => 'Deve corrispondere al nome sul documento d\'identità',
+=======
+    'label' => 'Pazienti',
+    'sort' => 37,
+    'group' => 'patient.navigation',
+  ),
+  'fields' => 
+  array (
+    'newsletter' => 
+    array (
+      'label' => 'Newsletter',
+      'helper_text' => 'Iscrizione alla newsletter',
+      'placeholder' => 'Seleziona se desideri iscriverti alla newsletter',
+      'description' => 'Ricevi aggiornamenti sulle novità e promozioni',
+    ),
+    'privacy_acceptance' => 
+    array (
+      'label' => 'Accettazione Privacy',
+      'placeholder' => 'Accetta l\'informativa sulla privacy',
+      'helper_text' => 'Consenso obbligatorio',
+      'description' => 'Accetto il trattamento dei miei dati personali',
+    ),
+    'first_name' => 
+    array (
+      'label' => 'Nome',
+      'placeholder' => 'Inserisci il tuo nome',
+      'helper_text' => 'Nome del paziente',
+      'description' => 'Il tuo nome anagrafico',
+>>>>>>> 54f4fa16 (.)
     ),
     'last_name' => 
     array (
       'label' => 'Cognome',
+<<<<<<< HEAD
       'description' => 'last_name',
       'helper_text' => 'last_name',
       'placeholder' => 'last_name',
@@ -711,18 +744,30 @@ return array (
       'help' => 'Numero di telefono per contatti',
       'description' => 'phone',
       'helper_text' => 'phone',
+=======
+      'placeholder' => 'Inserisci il tuo cognome',
+      'helper_text' => 'Cognome del paziente',
+      'description' => 'Il tuo cognome anagrafico',
+>>>>>>> 54f4fa16 (.)
     ),
     'address' => 
     array (
       'label' => 'Indirizzo',
+<<<<<<< HEAD
       'placeholder' => 'Inserisci l\'indirizzo completo',
       'helper_text' => 'Via/Piazza, numero civico',
       'description' => 'Indirizzo di residenza del paziente',
       'tooltip' => 'Inserisci l\'indirizzo completo con numero civico',
+=======
+      'placeholder' => 'Inserisci il tuo indirizzo',
+      'helper_text' => 'Indirizzo di residenza',
+      'description' => 'Via/Piazza, numero civico',
+>>>>>>> 54f4fa16 (.)
     ),
     'city' => 
     array (
       'label' => 'Città',
+<<<<<<< HEAD
       'placeholder' => 'Inserisci la città',
       'helper_text' => 'Città di residenza',
       'description' => 'Città di residenza del paziente',
@@ -770,6 +815,26 @@ return array (
       'placeholder' => 'Seleziona la data di scadenza',
       'helper_text' => 'Data di scadenza ISEE',
       'description' => 'Inserisci la data di scadenza del certificato ISEE',
+=======
+      'placeholder' => 'Inserisci la tua città',
+      'helper_text' => 'Città di residenza',
+      'description' => 'Comune di residenza',
+    ),
+    'phone' => 
+    array (
+      'label' => 'Telefono',
+      'placeholder' => 'Inserisci il tuo numero di telefono',
+      'helper_text' => 'Numero di telefono',
+      'description' => 'Numero di telefono per comunicazioni',
+    ),
+    'email' => 
+    array (
+      'label' => 'Email',
+      'placeholder' => 'Inserisci la tua email',
+      'helper_text' => 'Indirizzo email',
+      'description' => 'Email del paziente',
+      'tooltip' => 'Verrà utilizzata per le comunicazioni importanti',
+>>>>>>> 54f4fa16 (.)
     ),
     'health_card' => 
     array (
@@ -792,7 +857,11 @@ return array (
       'label' => 'Certificato ISEE',
       'placeholder' => 'Carica il certificato ISEE',
       'helper_text' => 'Carica una copia del certificato ISEE',
+<<<<<<< HEAD
       'description' => 'Certificato ISEE valido',
+=======
+      'description' => 'Certificato ISEE in corso di validità',
+>>>>>>> 54f4fa16 (.)
       'tooltip' => 'Necessario per accedere alle agevolazioni',
     ),
     'pregnancy_certificate' => 
@@ -819,6 +888,7 @@ return array (
       'description' => 'Problemi dentali attuali o recenti',
       'tooltip' => 'Includi dolori, sensibilità o altri disturbi',
     ),
+<<<<<<< HEAD
     'notes' => 
     array (
       'label' => 'Note',
@@ -886,12 +956,15 @@ return array (
     array (
       'label' => 'all_tenants',
     ),
+=======
+>>>>>>> 54f4fa16 (.)
   ),
   'steps' => 
   array (
     'personal_data_step' => 
     array (
       'label' => 'Dati Personali',
+<<<<<<< HEAD
       'description' => 'Inserisci i tuoi dati personali',
       'icon' => 'heroicon-o-user',
       'color' => 'primary',
@@ -902,6 +975,12 @@ return array (
       'description' => 'Inserisci i dati di contatto del paziente',
       'icon' => 'heroicon-o-phone',
     ),
+=======
+      'description' => 'Inserisci i tuoi dati anagrafici',
+      'icon' => 'heroicon-o-user',
+      'color' => 'primary',
+    ),
+>>>>>>> 54f4fa16 (.)
     'documents_step' => 
     array (
       'label' => 'Documenti',
@@ -916,12 +995,15 @@ return array (
       'icon' => 'heroicon-o-clipboard-document-list',
       'color' => 'warning',
     ),
+<<<<<<< HEAD
     'health' => 
     array (
       'label' => 'Stato di Salute',
       'description' => 'Inserisci le informazioni sullo stato di salute',
       'icon' => 'heroicon-o-heart',
     ),
+=======
+>>>>>>> 54f4fa16 (.)
     'privacy_step' => 
     array (
       'label' => 'Privacy',
@@ -972,9 +1054,13 @@ return array (
       'tooltip' => 'Visualizza i dettagli del paziente',
     ),
   ),
+<<<<<<< HEAD
   'model' => 
   array (
     'label' => 'patient.model',
   ),
 );
 >>>>>>> aurmich/dev
+=======
+);
+>>>>>>> 54f4fa16 (.)

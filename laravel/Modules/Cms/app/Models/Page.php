@@ -22,6 +22,10 @@ use Spatie\Translatable\HasTranslations;
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * @property string|null                     $deleted_by
  * @property array|null                      $content_blocks
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> 54f4fa16 (.)
  * @method static \Illuminate\Database\Eloquent\Builder|Page newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Page newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Page onlyTrashed()
@@ -39,20 +43,41 @@ use Spatie\Translatable\HasTranslations;
  * @method static \Illuminate\Database\Eloquent\Builder|Page whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Page withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder|Page withoutTrashed()
+<<<<<<< HEAD
  * @property array|null $sidebar_blocks
  * @property array      $footer_blocks
  * @method static \Illuminate\Database\Eloquent\Builder|Page whereFooterBlocks($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Page whereSidebarBlocks($value)
  * @property mixed $translations
+=======
+ *
+ * @property array|null $sidebar_blocks
+ * @property array      $footer_blocks
+ *
+ * @method static \Illuminate\Database\Eloquent\Builder|Page whereFooterBlocks($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Page whereSidebarBlocks($value)
+ *
+ * @property mixed $translations
+ *
+>>>>>>> 54f4fa16 (.)
  * @method static \Illuminate\Database\Eloquent\Builder|Page whereLocale(string $column, string $locale)
  * @method static \Illuminate\Database\Eloquent\Builder|Page whereLocales(string $column, array $locales)
  * @method static \Illuminate\Database\Eloquent\Builder|Page whereJsonContainsLocale(string $column, string $locale, ?mixed $value)
  * @method static \Illuminate\Database\Eloquent\Builder|Page whereJsonContainsLocales(string $column, array $locales, ?mixed $value)
+<<<<<<< HEAD
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  * @method static \Modules\Cms\Database\Factories\PageFactory factory($count = null, $state = [])
  * @property array<array-key, mixed>|null $middleware
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Page whereMiddleware($value)
+=======
+ *
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ *
+ * @method static \Modules\Cms\Database\Factories\PageFactory factory($count = null, $state = [])
+ *
+>>>>>>> 54f4fa16 (.)
  * @mixin \Eloquent
  */
 class Page extends BaseModelLang
@@ -72,7 +97,10 @@ class Page extends BaseModelLang
         'content',
         'slug',
         'title',
+<<<<<<< HEAD
         'middleware',
+=======
+>>>>>>> 54f4fa16 (.)
         'content_blocks',
         'sidebar_blocks',
         'footer_blocks',
@@ -82,7 +110,10 @@ class Page extends BaseModelLang
         'id' => 'integer',
         'title' => 'json',
         'slug' => 'string',
+<<<<<<< HEAD
         'middleware' => 'json',
+=======
+>>>>>>> 54f4fa16 (.)
         'content' => 'string',
 
         'content_blocks' => 'json',
@@ -121,6 +152,7 @@ class Page extends BaseModelLang
             'content_blocks' => 'array',
             'sidebar_blocks' => 'array',
             'footer_blocks' => 'array',
+<<<<<<< HEAD
             'middleware' => 'array',
         ];
     }
@@ -131,4 +163,8 @@ class Page extends BaseModelLang
         $page = self::where('slug', $slug)->first();
         return $page->middleware ?? [];
     }
+=======
+        ];
+    }
+>>>>>>> 54f4fa16 (.)
 }

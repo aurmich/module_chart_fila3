@@ -172,7 +172,10 @@ public function execute(ChartData $chartData): Graph {
 - Utilizzare Laravel Horizon per monitoraggio code
 - Implementare circuit breaker per operazioni critiche
 - Aggiungere metrics per monitoraggio performance 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # Colli di Bottiglia e Soluzioni - Modulo Chart
 
 ## Panoramica

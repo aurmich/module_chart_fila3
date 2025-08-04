@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Models;
 
 use Modules\User\Models\BaseProfile;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 
 
@@ -83,3 +84,11 @@ class Profile extends BaseProfile{
     /** @var string */
     protected $connection = 'salute_ora';
 } 
+=======
+
+
+class Profile extends BaseProfile{
+    /** @var string */
+    protected $connection = 'patient';
+} 
+>>>>>>> 54f4fa16 (.)

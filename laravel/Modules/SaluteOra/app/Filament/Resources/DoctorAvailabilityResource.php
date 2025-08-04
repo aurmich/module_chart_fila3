@@ -10,7 +10,10 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class DoctorAvailabilityResource extends XotBaseResource
 {
     protected static ?string $model = DoctorAvailability::class;
+<<<<<<< HEAD
     protected static bool $shouldRegisterNavigation = false;
+=======
+>>>>>>> 54f4fa16 (.)
 
     public static function getFormSchema(): array
     {

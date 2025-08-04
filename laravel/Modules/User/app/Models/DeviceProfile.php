@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 /**
+<<<<<<< HEAD
  * DeviceProfile Model
 <<<<<<< HEAD
  * 
@@ -13,6 +14,9 @@ namespace Modules\User\Models;
 >>>>>>> aurmich/dev
  * Represents the relationship between a device and a user profile.
  * Extends the base DeviceUser model to add specific functionality.
+=======
+ * 
+>>>>>>> 54f4fa16 (.)
  *
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property Device|null $device
@@ -24,6 +28,7 @@ namespace Modules\User\Models;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DeviceProfile query()
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 class DeviceProfile extends DeviceUser
 {
     /**
@@ -36,3 +41,6 @@ class DeviceProfile extends DeviceUser
         parent::__construct($attributes);
     }
 }
+=======
+class DeviceProfile extends DeviceUser {}
+>>>>>>> 54f4fa16 (.)

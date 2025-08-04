@@ -128,9 +128,12 @@ return [
 ### Regole di Alert
 ```yaml
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # alerting/rules.yml
 groups:
   - name: theme_one

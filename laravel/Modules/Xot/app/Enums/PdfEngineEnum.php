@@ -5,10 +5,14 @@ declare(strict_types=1);
 namespace Modules\Xot\Enums;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 //use Modules\Xot\Datas\PdfData;
 =======
 use Modules\Xot\Datas\PdfData;
 >>>>>>> aurmich/dev
+=======
+use Modules\Xot\Datas\PdfData;
+>>>>>>> 54f4fa16 (.)
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasLabel;

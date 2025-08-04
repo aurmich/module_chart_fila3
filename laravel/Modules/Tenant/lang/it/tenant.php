@@ -77,7 +77,11 @@ return [
             ],
             'fields' => [
                 'name' => 'Nome',
+<<<<<<< HEAD
                 'last_name' => 'Cognome',
+=======
+                'surname' => 'Cognome',
+>>>>>>> 54f4fa16 (.)
                 'tax_code' => 'Codice Fiscale',
                 'email' => 'Email',
                 'phone' => 'Telefono',

@@ -11,7 +11,10 @@ use Modules\SaluteOra\Models\AppointmentWorkflow;
 use Modules\SaluteOra\Models\Dentist;
 use Modules\Notify\Actions\SendAppointmentNotificationAction;
 use Modules\SaluteOra\Models\Patient;
+<<<<<<< HEAD
 use Modules\SaluteOra\Enums\AppointmentStatusEnum;
+=======
+>>>>>>> 54f4fa16 (.)
 use Spatie\QueueableAction\QueueableAction;
 
 class FinalizeAppointmentWorkflowAction
@@ -75,7 +78,11 @@ class FinalizeAppointmentWorkflowAction
                 $appointment->start_time = $dateData['start_time'] ?? null;
                 $appointment->end_time = $dateData['end_time'] ?? null;
                 $appointment->type = $treatmentData['type'] ?? 'check-up';
+<<<<<<< HEAD
                 $appointment->status = AppointmentStatusEnum::CONFIRMED;
+=======
+                $appointment->status = 'confirmed';
+>>>>>>> 54f4fa16 (.)
                 $appointment->notes = $treatmentData['notes'] ?? '';
                 $appointment->treatment_plan = $treatmentData['treatment_plan'] ?? '';
                 $appointment->is_emergency = $treatmentData['is_emergency'] ?? false;
@@ -152,7 +159,11 @@ class FinalizeAppointmentWorkflowAction
                 }
                 
                 // Aggiorna sempre lo stato a confirmed
+<<<<<<< HEAD
                 $appointment->status = AppointmentStatusEnum::CONFIRMED;
+=======
+                $appointment->status = 'confirmed';
+>>>>>>> 54f4fa16 (.)
                 $appointment->save();
                 
                 // Invia notifiche se richiesto
@@ -190,11 +201,14 @@ class FinalizeAppointmentWorkflowAction
      */
     private function sendNotifications(Appointment $appointment): void
     {
+<<<<<<< HEAD
         if ($this->notificationAction === null) {
             Log::warning('Cannot send notification: notification action is not configured');
             return;
         }
         
+=======
+>>>>>>> 54f4fa16 (.)
         try {
             $this->notificationAction
                 ->onQueue('notifications')

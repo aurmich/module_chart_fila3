@@ -157,9 +157,12 @@
 - [Best Practices](BEST-PRACTICES.md)
 - [Testing](testing.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Versione HEAD
 
 

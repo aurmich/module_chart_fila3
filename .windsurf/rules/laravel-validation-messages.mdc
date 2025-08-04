@@ -1,6 +1,7 @@
 ---
 description:
 globs:
+<<<<<<< HEAD
 alwaysApply: true
 ---
 # Best Practices Messaggi di Validazione Laravel
@@ -87,3 +88,16 @@ R: Usa la sintassi `campo.*.sotto_campo` e placeholder `:position`.
 - [Laravel Validation Docs](mdc:https:/laravel.com/docs/validation)
 - [Laravel Lang](mdc:https:/github.com/Laravel-Lang/lang)
 - [README validazione](mdc:../../Modules/Lang/docs/validation-messages.md)
+=======
+alwaysApply: false
+---
+# Best Practices Messaggi di Validazione Laravel
+
+- Personalizza sempre i nomi dei campi con `attributes()` usando la funzione `__()`
+- Per array di campi, usa `campo.*.sotto_campo` e placeholder `:position`
+- Scrivi messaggi custom con `messages()` per i casi complessi
+- Centralizza i messaggi comuni in `validation.php`, override solo se necessario
+- Aggiorna la documentazione in `/Modules/Lang/docs/validation-messages.md`
+- Usa sempre i file del pacchetto Laravel-Lang/lang per copertura multilingua
+- Documenta ogni eccezione o regola custom
+>>>>>>> 54f4fa16 (.)

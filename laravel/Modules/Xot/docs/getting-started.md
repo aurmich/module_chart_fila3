@@ -69,13 +69,17 @@ Now that you’ve edited your configuration variables and know how to customize 
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # build static files with Jigsaw
 ./vendor/bin/jigsaw build
 
 # compile assets with Laravel Mix
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 # options: dev, prod
@@ -87,6 +91,11 @@ npm run dev
 npm run dev
 ```
 >>>>>>> aurmich/dev
+=======
+# options: dev, prod
+npm run dev
+```
+>>>>>>> 54f4fa16 (.)
 ### Versione HEAD
 
 

@@ -22,9 +22,12 @@ app/
 
 ## Dipendenze
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Moduli Required
 - User
 - Media
@@ -32,9 +35,12 @@ app/
 
 ## Database
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Factories
 Namespace: `Modules\Tenant\Database\Factories`
 
@@ -62,9 +68,12 @@ composer format        # Formatta il codice
 
 ## Configurazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Tenant
 - Configurazione in `config/tenant.php`
 - Middleware in `app/Http/Middleware`
@@ -87,9 +96,12 @@ composer format        # Formatta il codice
 
 ## Troubleshooting
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Problemi Comuni
 1. **Errori di Isolamento**
    - Verificare middleware tenant
@@ -108,9 +120,12 @@ composer format        # Formatta il codice
 
 ## Sicurezza
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Isolamento
 - Separazione dati tra tenant
 - Autenticazione tenant-specific
@@ -129,9 +144,12 @@ composer format        # Formatta il codice
 
 ## Changelog
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Versione HEAD
 
 
@@ -161,9 +179,12 @@ app/
 
 ## Dipendenze
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Moduli Required
 - User
 - Media
@@ -171,9 +192,12 @@ app/
 
 ## Database
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Factories
 Namespace: `Modules\Tenant\Database\Factories`
 
@@ -201,9 +225,12 @@ composer format        # Formatta il codice
 
 ## Configurazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Tenant
 - Configurazione in `config/tenant.php`
 - Middleware in `app/Http/Middleware`
@@ -226,9 +253,12 @@ composer format        # Formatta il codice
 
 ## Troubleshooting
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Problemi Comuni
 1. **Errori di Isolamento**
    - Verificare middleware tenant
@@ -247,9 +277,12 @@ composer format        # Formatta il codice
 
 ## Sicurezza
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Isolamento
 - Separazione dati tra tenant
 - Autenticazione tenant-specific
@@ -270,9 +303,13 @@ composer format        # Formatta il codice
 
 ---
 
+<<<<<<< HEAD
 Le modifiche vengono tracciate nel repository GitHub. 
 
 ## Collegamenti sulla risoluzione dei conflitti
 
 - [Risoluzione conflitti nel modulo Tenant](risoluzione_conflitti.md)
 - [Linee guida globali per la risoluzione dei conflitti git](../../../docs/risoluzione_conflitti_git.md) 
+=======
+Le modifiche vengono tracciate nel repository GitHub. 
+>>>>>>> 54f4fa16 (.)

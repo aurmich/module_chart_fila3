@@ -9,6 +9,7 @@ declare(strict_types=1);
 namespace Modules\User\Providers;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 use Laravel\Passport\Passport;
 use Illuminate\Support\Facades\Log;
@@ -32,6 +33,8 @@ use Illuminate\Notifications\Messages\MailMessage;
 use Modules\User\Models\OauthPersonalAccessClient;
 use SocialiteProviders\Manager\ServiceProvider as SocialiteServiceProvider;
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 use Illuminate\Auth\Notifications\ResetPassword;
 use Illuminate\Auth\Notifications\VerifyEmail;
 use Illuminate\Notifications\Messages\MailMessage;
@@ -50,7 +53,10 @@ use Modules\Xot\Providers\XotBaseServiceProvider;
 use SocialiteProviders\Manager\ServiceProvider as SocialiteServiceProvider;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 
 class UserServiceProvider extends XotBaseServiceProvider
 {
@@ -71,6 +77,7 @@ class UserServiceProvider extends XotBaseServiceProvider
     public function register(): void
     {
         parent::register();
+<<<<<<< HEAD
         $this->registerTeamModelBindings();
     }
 
@@ -86,6 +93,8 @@ class UserServiceProvider extends XotBaseServiceProvider
         $this->app->bind('team_invitation_model', function () {
             return \Modules\User\Models\TeamInvitation::class;
         });
+=======
+>>>>>>> 54f4fa16 (.)
     }
 
     public function registerMailsNotification(): void
@@ -96,11 +105,15 @@ class UserServiceProvider extends XotBaseServiceProvider
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         ResetPassword::toMailUsing(function ($notifiable, string $token): SpatieEmail {
             /*
 =======
         ResetPassword::toMailUsing(function ($notifiable, string $token): MailMessage {
 >>>>>>> aurmich/dev
+=======
+        ResetPassword::toMailUsing(function ($notifiable, string $token): MailMessage {
+>>>>>>> 54f4fa16 (.)
             return (new MailMessage)
                 ->template('user::notifications.email')
                 ->subject(__('user::reset_password.password_reset_subject'))
@@ -109,6 +122,7 @@ class UserServiceProvider extends XotBaseServiceProvider
                 ->line(__('user::reset_password.password_if_not_requested'))
                 ->line(__('user::reset_password.thank_you_for_using_app'))
                 ->salutation(__('user::reset_password.regards'));
+<<<<<<< HEAD
 <<<<<<< HEAD
             */
             Assert::isInstanceOf($notifiable, Model::class);
@@ -134,6 +148,8 @@ class UserServiceProvider extends XotBaseServiceProvider
             return $email;
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         });
 
         $salutation = __('user::verify_email.salutation', ['app_name' => $app_name]);

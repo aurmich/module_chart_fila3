@@ -116,7 +116,11 @@ class AnalyzeTranslationFiles extends Command
             $topLevelKeys = [];
 
             foreach (array_keys($keys) as $key) {
+<<<<<<< HEAD
                 $parts = explode('.', (string) $key);
+=======
+                $parts = explode('.', $key);
+>>>>>>> 54f4fa16 (.)
                 $topLevelKeys[$parts[0]] = true;
             }
 
@@ -222,8 +226,13 @@ class AnalyzeTranslationFiles extends Command
             $navigationKeys = [];
 
             foreach (array_keys($keys) as $key) {
+<<<<<<< HEAD
                 if (strpos((string) $key, 'navigation.') === 0) {
                     $navigationKeys[] = str_replace('navigation.', '', (string) $key);
+=======
+                if (strpos($key, 'navigation.') === 0) {
+                    $navigationKeys[] = str_replace('navigation.', '', $key);
+>>>>>>> 54f4fa16 (.)
                 }
             }
 
@@ -248,4 +257,8 @@ class AnalyzeTranslationFiles extends Command
 
         $table->render();
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 54f4fa16 (.)

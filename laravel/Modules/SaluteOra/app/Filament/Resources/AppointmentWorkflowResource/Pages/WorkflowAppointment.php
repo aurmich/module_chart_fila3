@@ -4,15 +4,24 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Filament\Resources\AppointmentWorkflowResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Actions;
+=======
+>>>>>>> 54f4fa16 (.)
 use Filament\Forms;
 use Filament\Forms\Components\Component;
 use Filament\Forms\Form;
 use Filament\Pages\Concerns\InteractsWithFormActions;
+<<<<<<< HEAD
 use Filament\Support\Exceptions\Halt;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\HtmlString;
 use Illuminate\Contracts\View\View;
+=======
+use Filament\Resources\Pages\Page;
+use Filament\Support\Exceptions\Halt;
+use Illuminate\Support\HtmlString;
+>>>>>>> 54f4fa16 (.)
 use Livewire\Attributes\Computed;
 use Modules\SaluteOra\Actions\FinalizeAppointmentWorkflowAction;
 use Modules\SaluteOra\Actions\UpdateAppointmentWorkflowStepAction;
@@ -20,13 +29,19 @@ use Modules\SaluteOra\Filament\Resources\AppointmentWorkflowResource;
 use Modules\SaluteOra\Models\AppointmentWorkflow;
 use Modules\SaluteOra\Models\Dentist;
 use Modules\SaluteOra\Models\Patient;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\Pages\XotBaseResourcePage;
 
 class WorkflowAppointment extends XotBaseResourcePage
+=======
+
+class WorkflowAppointment extends Page
+>>>>>>> 54f4fa16 (.)
 {
     use InteractsWithFormActions;
     
     protected static string $resource = AppointmentWorkflowResource::class;
+<<<<<<< HEAD
     
     protected static ?string $navigationIcon = 'heroicon-o-clipboard-document-check';
     
@@ -39,12 +54,34 @@ class WorkflowAppointment extends XotBaseResourcePage
      * Nome del passo corrente.
      */
     protected string $currentStep = 'patient_info';
+=======
+    protected static ?string $view = null; // Utilizziamo la vista predefinita di Filament
+    protected static ?string $title = 'Workflow Prenotazione Appuntamento';
+    
+    /**
+     * @var AppointmentWorkflow
+     */
+    public $record;
+    
+    /**
+     * @var array<string, mixed>
+     */
+    public $data = [];
+    
+    /**
+     * Nome del passo corrente.
+     *
+     * @var string
+     */
+    public string $currentStep;
+>>>>>>> 54f4fa16 (.)
     
     /**
      * Elenco di tutti i passi disponibili.
      *
      * @var array<string, string>
      */
+<<<<<<< HEAD
     protected array $steps = [];
     
     /**
@@ -53,6 +90,9 @@ class WorkflowAppointment extends XotBaseResourcePage
      * @var Model|int|string|null
      */
     public Model|int|string|null $record;
+=======
+    protected array $steps;
+>>>>>>> 54f4fa16 (.)
     
     /**
      * Hook chiamato all'inizializzazione del componente.
@@ -265,7 +305,11 @@ class WorkflowAppointment extends XotBaseResourcePage
     /**
      * Ottiene le azioni del form.
      */
+<<<<<<< HEAD
     public function getFormActions(): array
+=======
+    protected function getFormActions(): array
+>>>>>>> 54f4fa16 (.)
     {
         return [
             $this->getSubmitFormAction(),
@@ -284,11 +328,18 @@ class WorkflowAppointment extends XotBaseResourcePage
     
     /**
      * Ottiene i bottoni di navigazione del form.
+<<<<<<< HEAD
      * 
      * @return string L'allineamento delle azioni del form
      */
     public function getFormActionsAlignment(): string
     {
         return \Filament\Support\Enums\Alignment::Center->value;
+=======
+     */
+    protected function getFormActionsAlignment(): string
+    {
+        return \Filament\Support\Enums\Alignment::Center;
+>>>>>>> 54f4fa16 (.)
     }
 }

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Filament\Resources\AppointmentWorkflowResource\Pages;
 
 use Filament\Actions;
+<<<<<<< HEAD
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\BadgeColumn;
 use Filament\Tables\Columns\IconColumn;
@@ -12,6 +13,11 @@ use Filament\Resources\Pages\ListRecords;
 use Modules\SaluteOra\Actions\InitiateAppointmentWorkflowAction;
 use Modules\SaluteOra\Filament\Resources\AppointmentWorkflowResource;
 use Modules\SaluteOra\Models\AppointmentWorkflow;
+=======
+use Filament\Resources\Pages\ListRecords;
+use Modules\SaluteOra\Actions\InitiateAppointmentWorkflowAction;
+use Modules\SaluteOra\Filament\Resources\AppointmentWorkflowResource;
+>>>>>>> 54f4fa16 (.)
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListAppointmentWorkflows extends XotBaseListRecords
@@ -19,6 +25,7 @@ class ListAppointmentWorkflows extends XotBaseListRecords
     protected static string $resource = AppointmentWorkflowResource::class;
 
     /**
+<<<<<<< HEAD
      * Define the table columns for the appointment workflows list.
      *
      * @return array<string, \Filament\Tables\Columns\Column>
@@ -96,6 +103,8 @@ class ListAppointmentWorkflows extends XotBaseListRecords
     }
 
     /**
+=======
+>>>>>>> 54f4fa16 (.)
      * Definisce le azioni nell'header della pagina.
      *
      * @return array<Actions\Action>
@@ -104,6 +113,11 @@ class ListAppointmentWorkflows extends XotBaseListRecords
     {
         return [
             Actions\CreateAction::make()
+<<<<<<< HEAD
+=======
+                ->label('Crea Nuovo Workflow')
+                ->icon('heroicon-o-plus')
+>>>>>>> 54f4fa16 (.)
                 ->after(function (array $data, $record): void {
                     // Dopo la creazione del record, inizializza il workflow
                     // con l'action Spatie QueueableAction

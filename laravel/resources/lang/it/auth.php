@@ -4,7 +4,11 @@ return [
     'login' => [
         'title' => 'Accedi',
         'or' => 'oppure',
+<<<<<<< HEAD
         'create_account' => 'Crea un account',
+=======
+        'create_account' => 'crea un account',
+>>>>>>> 54f4fa16 (.)
         'email' => 'Email',
         'password' => 'Password',
         'remember_me' => 'Ricordami',

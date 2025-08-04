@@ -11,7 +11,11 @@ MAI utilizzare il nome specifico del progetto nella documentazione dei moduli. I
 - "questo modulo"
 
 ### Termini da Evitare
+<<<<<<< HEAD
 - Nomi specifici di progetti (es. "<nome progetto>", "ProjectX", ecc.)
+=======
+- Nomi specifici di progetti (es. "SaluteOra", "ProjectX", ecc.)
+>>>>>>> 54f4fa16 (.)
 - Riferimenti a domini specifici associati a un singolo progetto
 - Nomi di organizzazioni specifiche
 
@@ -25,7 +29,11 @@ Mantenere la documentazione dei moduli generica consente di:
 ## Esempi
 
 ### ❌ Errato
+<<<<<<< HEAD
 "Il modulo Notify gestisce tutte le notifiche e le comunicazioni via email del sistema <nome progetto>."
+=======
+"Il modulo Notify gestisce tutte le notifiche e le comunicazioni via email del sistema SaluteOra."
+>>>>>>> 54f4fa16 (.)
 
 ### ✅ Corretto
 "Il modulo Notify gestisce tutte le notifiche e le comunicazioni via email del sistema."

@@ -10,6 +10,7 @@ use Spatie\Activitylog\LogOptions;
 
 /**
  * ReimbursementRequest Model for the Patient Module.
+<<<<<<< HEAD
  * 
  * Represents a request for reimbursement submitted by a patient.
  *
@@ -43,6 +44,10 @@ use Spatie\Activitylog\LogOptions;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|ReimbursementRequest whereStatus($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|ReimbursementRequest whereUpdatedAt($value)
  * @mixin \Eloquent
+=======
+ *
+ * Represents a request for reimbursement submitted by a patient.
+>>>>>>> 54f4fa16 (.)
  */
 class ReimbursementRequest extends Model
 {
@@ -63,9 +68,15 @@ class ReimbursementRequest extends Model
     protected $table = 'reimbursement_requests';
 
     /**
+<<<<<<< HEAD
      * Gli attributi che sono mass assignable.
      *
      * @var list<string>
+=======
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+>>>>>>> 54f4fa16 (.)
      */
     protected $fillable = [
         'patient_id',

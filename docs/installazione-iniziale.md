@@ -1,5 +1,8 @@
 # Installazione Iniziale di il progetto
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # Installazione Iniziale
 
 > **Nota**: Questo documento è correlato a [Configurazione Server](/bashscripts/docs/server_setup.md). Per una panoramica completa, consulta entrambi i documenti.

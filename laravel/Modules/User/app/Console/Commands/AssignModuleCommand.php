@@ -29,7 +29,11 @@ class AssignModuleCommand extends Command
      *
      * @var string
      */
+<<<<<<< HEAD
     protected $description = 'Assign or revoke modules to/from user';
+=======
+    protected $description = 'Assign a module to user';
+>>>>>>> 54f4fa16 (.)
 
     /**
      * Create a new command instance.
@@ -47,11 +51,15 @@ class AssignModuleCommand extends Command
     public function handle(): void
     {
         $email = text('email ?');
+<<<<<<< HEAD
         
+=======
+>>>>>>> 54f4fa16 (.)
         /**
          * @var UserContract $user
          */
         $user = XotData::make()->getUserByEmail($email);
+<<<<<<< HEAD
         
         if (!$user) {
             $this->error("User with email '{$email}' not found.");
@@ -135,6 +143,36 @@ class AssignModuleCommand extends Command
         }
         
         return $moduleRoles;
+=======
+        /*
+        $modules = collect(Module::all())->map(function ($module) {
+            return $module->getName();
+        })->toArray();
+        */
+        $modules_opts = array_keys(Module::all());
+        $modules_opts = array_combine($modules_opts, $modules_opts);
+
+        $modules = multiselect(
+            label: 'What modules',
+            options: $modules_opts,
+            required: true,
+            scroll: 10,
+            // validate: function (array $values) {
+            //  return ! \in_array(\count($values), [1, 2], false)
+            //    ? 'A maximum of two'
+            //  : null;
+            // }
+        );
+
+        foreach ($modules as $module) {
+            $module_low = Str::lower(is_string($module) ? $module : (string) $module);
+            $role = $module_low.'::admin';
+            $role = Role::firstOrCreate(['name' => $role]);
+            $user->assignRole($role);
+        }
+
+        $this->info(implode(', ', $modules).' assigned to '.$email);
+>>>>>>> 54f4fa16 (.)
     }
 
     /**

@@ -20,7 +20,11 @@ class ListSnapshots extends XotBaseListRecords
     /**
      * Get the list table columns.
      *
+<<<<<<< HEAD
      * @return array<Tables\Columns\Column>
+=======
+     * @return array<string, Tables\Columns\Column>
+>>>>>>> 54f4fa16 (.)
      */
     public function getTableColumns(): array
     {
@@ -44,12 +48,20 @@ class ListSnapshots extends XotBaseListRecords
     }
 
     /**
+<<<<<<< HEAD
      * @return array<Tables\Filters\BaseFilter>
+=======
+     * @return array<string, Tables\Filters\BaseFilter>
+>>>>>>> 54f4fa16 (.)
      */
     public function getTableFilters(): array
     {
         return [
+<<<<<<< HEAD
             Tables\Filters\SelectFilter::make('aggregate_type')
+=======
+            'aggregate_type' => Tables\Filters\SelectFilter::make('aggregate_type')
+>>>>>>> 54f4fa16 (.)
                 ->options([
                     'user' => 'User',
                     'profile' => 'Profile',
@@ -72,12 +84,20 @@ class ListSnapshots extends XotBaseListRecords
     }
 
     /**
+<<<<<<< HEAD
      * @return array<Tables\Actions\BulkAction>
+=======
+     * @return array<string, Tables\Actions\BulkAction>
+>>>>>>> 54f4fa16 (.)
      */
     public function getTableBulkActions(): array
     {
         return [
+<<<<<<< HEAD
             Tables\Actions\DeleteBulkAction::make(),
+=======
+            'delete' => Tables\Actions\DeleteBulkAction::make(),
+>>>>>>> 54f4fa16 (.)
         ];
     }
 }

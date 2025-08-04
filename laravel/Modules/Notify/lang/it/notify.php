@@ -217,6 +217,7 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
     'template' => [
         'navigation' => [
             'label' => 'Template Notifiche',
@@ -267,4 +268,7 @@ return [
             'push' => 'Notifica Push',
         ],
     ],
+=======
+    'messages' => [],
+>>>>>>> 54f4fa16 (.)
 ];

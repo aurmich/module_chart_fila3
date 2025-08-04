@@ -45,19 +45,26 @@ new #[Layout('components.layouts.auth')] class extends Component {
         <!-- Password -->
         <flux:input
 <<<<<<< HEAD
+<<<<<<< HEAD
             wire:model="password"
 =======
             wire:model.live="password"
 >>>>>>> aurmich/dev
+=======
+            wire:model="password"
+>>>>>>> 54f4fa16 (.)
             :label="__('Password')"
             type="password"
             required
             autocomplete="new-password"
             :placeholder="__('Password')"
 <<<<<<< HEAD
+<<<<<<< HEAD
             viewable
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         />
 
         <flux:button variant="primary" type="submit" class="w-full">{{ __('Confirm') }}</flux:button>

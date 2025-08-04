@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return [
     'general' => [
         'home' => [
@@ -51,6 +52,8 @@ return [
                 'icon' => 'heroicon-o-user-circle',
             ],
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 declare(strict_types=1);
 
 return [
@@ -69,7 +72,10 @@ return [
             'change_password' => 'Change Password',
             'my_information' => 'My Information',
             'profile' => 'Profile',
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
             'address_book' => 'Address Book',
             'order_history' => 'Order History',
             'credit_cards' => 'Credit Cards',

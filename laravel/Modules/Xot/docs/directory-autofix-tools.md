@@ -199,9 +199,12 @@ mv Modules/Rating/Models/Rating.php Modules/Rating/app/Models/
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Nel pre-commit hook
 ./bashscripts/fix_directory_structure.sh --all
 ```
@@ -217,6 +220,10 @@ Durante lo sviluppo, è possibile eseguire lo script solo sul modulo in fase di 
 ## Conclusione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Lo script di correzione automatica della struttura delle directory è uno strumento essenziale per mantenere la coerenza e seguire le convenzioni del framework Laraxot <nome progetto>. Utilizzandolo regolarmente, è possibile garantire che il codice segua sempre la struttura richiesta, facilitando la manutenzione e l'interoperabilità tra i vari moduli. 
 >>>>>>> aurmich/dev
+=======
+Lo script di correzione automatica della struttura delle directory è uno strumento essenziale per mantenere la coerenza e seguire le convenzioni del framework Laraxot <nome progetto>. Utilizzandolo regolarmente, è possibile garantire che il codice segua sempre la struttura richiesta, facilitando la manutenzione e l'interoperabilità tra i vari moduli. 
+>>>>>>> 54f4fa16 (.)

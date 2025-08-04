@@ -31,6 +31,7 @@
         <title>{{ $title ?? '- La tua salute, ora' }}</title>
     </head>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <body>
         <div>
             <!-- Contenuto principale -->
@@ -40,6 +41,8 @@
 
           
 =======
+=======
+>>>>>>> 54f4fa16 (.)
     <body class="min-h-screen antialiased bg-gray-50 dark:bg-gradient-to-b dark:from-gray-950 dark:to-gray-900 font-sans">
         <div class="flex flex-col min-h-screen">
             <!-- Contenuto principale -->
@@ -100,7 +103,10 @@
                     </div>
                 </div>
             </footer>
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         </div>
 
         <!-- Notifiche e Script -->

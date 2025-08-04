@@ -25,8 +25,13 @@ return new class extends XotBaseMigration
         $this->tableCreate(
             function (Blueprint $table): void {
                 $table->id();
+<<<<<<< HEAD
                  //$this->foreignIdFor($table,Tenant::class);
                 $this->foreignIdFor($table,Patient::class,'patient_id');
+=======
+                $this->foreignIdFor($table,Tenant::class);
+                $this->foreignIdFor($table,Patient::class);
+>>>>>>> 54f4fa16 (.)
                 $table->string('type');
                 $table->string('title');
                 $table->text('description')->nullable();

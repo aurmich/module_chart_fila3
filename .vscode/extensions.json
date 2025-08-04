@@ -11,6 +11,7 @@
         "codingyu.laravel-goto-view",
         "damms005.devdb",
         "mohamedbenhida.laravel-intellisense",
+<<<<<<< HEAD
         "block.vscode-mcp-extension",
         "aurorabiz.blade-ui-kit",
         "laravel.vscode-laravel",
@@ -19,5 +20,8 @@
         "davidanson.vscode-markdownlint",
         "tomoki1207.pdf",
         "mehedidracula.php-namespace-resolver"
+=======
+        "block.vscode-mcp-extension"
+>>>>>>> 54f4fa16 (.)
     ]
 }

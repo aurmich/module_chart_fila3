@@ -7,7 +7,10 @@ namespace Modules\Notify\Filament\Clusters\Test\Pages;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Actions\Action;
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
+=======
+>>>>>>> 54f4fa16 (.)
 use Filament\Facades\Filament;
 use Modules\Notify\Datas\EmailData;
 use Illuminate\Support\Facades\Mail;
@@ -15,7 +18,10 @@ use Filament\Forms\ComponentContainer;
 use Filament\Forms\Contracts\HasForms;
 use Modules\Notify\Emails\SpatieEmail;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use Modules\Notify\Models\MailTemplate;
+=======
+>>>>>>> 54f4fa16 (.)
 use Modules\Notify\Emails\EmailDataEmail;
 use Modules\Notify\Filament\Clusters\Test;
 use Modules\Xot\Filament\Pages\XotBasePage;
@@ -72,6 +78,7 @@ class SendSpatieEmailPage extends XotBasePage
             Forms\Components\TextInput::make('to')
                 ->email()
                 ->required(),
+<<<<<<< HEAD
             /*
             Forms\Components\TextInput::make('subject')
                 ->required(),
@@ -79,6 +86,10 @@ class SendSpatieEmailPage extends XotBasePage
             Forms\Components\Select::make('mail_template_slug')
                 ->options(MailTemplate::all()->pluck('slug', 'slug'))
                 ->required(),
+=======
+            Forms\Components\TextInput::make('subject')
+                ->required(),
+>>>>>>> 54f4fa16 (.)
             Forms\Components\RichEditor::make('body_html')
                 ->required(),
         ];
@@ -120,12 +131,19 @@ class SendSpatieEmailPage extends XotBasePage
              ->locale('it')
              ->send($email);
         */
+<<<<<<< HEAD
         Assert::string($mail_template_slug=$data['mail_template_slug']);
         $notify=(new RecordNotification($user,$mail_template_slug))->mergeData($data);
 
         Notification::route('mail', $data['to'])
             //->locale('it')
             ->notify($notify);
+=======
+
+        Notification::route('mail', $data['to'])
+            //->locale('it')
+            ->notify(new RecordNotification($user,'due'));
+>>>>>>> 54f4fa16 (.)
 
 
         FilamentNotification::make()

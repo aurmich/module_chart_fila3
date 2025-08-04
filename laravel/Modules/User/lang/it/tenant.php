@@ -19,6 +19,7 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'first_name' => [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome',
@@ -82,6 +83,8 @@ return [
             'description' => 'Azione per applicare i filtri configurati',
             'helper_text' => '',
 =======
+=======
+>>>>>>> 54f4fa16 (.)
         'first_name' => 'Nome',
         'last_name' => 'Cognome',
         'secondary_color' => [
@@ -104,7 +107,10 @@ return [
         ],
         'applyFilters' => [
             'label' => 'applyFilters',
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         ],
     ],
     'actions' => [

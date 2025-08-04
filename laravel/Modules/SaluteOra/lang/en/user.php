@@ -2,6 +2,7 @@
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Generic Users',
         'group' => 'User Management',
@@ -316,6 +317,8 @@ return [
             'color' => 'info',
         ],
 =======
+=======
+>>>>>>> 54f4fa16 (.)
     'fields' => [
         'id' => [ 'label' => 'ID' ],
         'name' => [ 'label' => 'Name' ],
@@ -354,6 +357,9 @@ return [
         'approve' => 'Approve',
         'reject' => 'Reject',
         'request_integration' => 'Request integration',
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
     ],
 ];

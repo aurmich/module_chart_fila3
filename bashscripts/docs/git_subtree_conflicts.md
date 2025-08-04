@@ -56,7 +56,10 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -177,6 +180,7 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
+<<<<<<< HEAD
 
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
@@ -309,6 +313,8 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 
 source ./bashscripts/lib/custom.sh
 
+=======
+>>>>>>> 54f4fa16 (.)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -382,7 +388,11 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
+<<<<<<< HEAD
 5338a990 (.)
+=======
+=======
+>>>>>>> 54f4fa16 (.)
 # Risoluzione dei Conflitti negli Script Git Subtree
 
 ## Problema
@@ -514,8 +524,14 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
+<<<<<<< HEAD
 f000df5 (.)
 
+=======
+>>>>>>> 5338a990 (.)
+=======
+# Risoluzione dei Conflitti negli Script Git Subtree
+>>>>>>> 54f4fa16 (.)
 
 ## Problema
 
@@ -780,8 +796,12 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
 =======
 >>>>>>> 4d4d6cb7 (.)
+<<<<<<< HEAD
 =======
 >>>>>>> d83fe8da (.)
 - [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
 =======
 >>>>>>> a76e699 (.)
+=======
+- [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
+>>>>>>> 54f4fa16 (.)

@@ -14,6 +14,7 @@ Il modulo Patient gestisce tutte le informazioni relative ai pazienti e ai medic
 
 ## Indice della Documentazione
 
+<<<<<<< HEAD
 - [Indice Completo](index.md) - Panoramica di tutta la documentazione disponibile
 
 ### Architettura e Pattern
@@ -101,13 +102,46 @@ Pending → IntegrationRequested → IntegrationCompleted → Active
 ```
 
 Questo nuovo flusso permette di separare il completamento dei dati dall'approvazione amministrativa, migliorando il tracking del processo di onboarding e fornendo una migliore UX con stati chiari e distinti.
+=======
+- [Indice Completo](INDEX.md) - Panoramica di tutta la documentazione disponibile
+
+### Architettura e Pattern
+
+- [Single Table Inheritance](SINGLE_TABLE_INHERITANCE.md) - Pattern STI per i modelli utente
+- [Best Practices per l'Ereditarietà](INHERITANCE_BEST_PRACTICES.md) - Linee guida per l'ereditarietà delle classi
+- [Model Inheritance Pattern](MODEL_INHERITANCE_PATTERN.md) - Pattern di ereditarietà per i modelli
+
+### Best Practices
+
+- [Actions Best Practices](ACTIONS_BEST_PRACTICES.md) - Linee guida per le Actions
+- [Data Transfer Objects](DATA_TRANSFER_OBJECTS_COMPLETE.md) - Implementazione e utilizzo dei DTO
+- [Migrations Best Practices](MIGRATIONS_BEST_PRACTICES.md) - Linee guida per le migrazioni
+- [Error Handling Best Practices](ERROR_HANDLING_BEST_PRACTICES.md) - Gestione degli errori
+- [Enums Best Practices](ENUMS_BEST_PRACTICES.md) - Utilizzo degli enum in PHP 8.2+
+
+### Filament
+
+- [Filament Label Translation System](FILAMENT_LABEL_TRANSLATION_SYSTEM.md) - Sistema di traduzione delle etichette
+- [Filament Resources Implementation](FILAMENT_RESOURCES_IMPLEMENTATION.md) - Implementazione dei resource
+
+### Modelli
+
+- [Doctor](Models/Doctor.md) - Documentazione del modello Doctor
+- [User](Models/User.md) - Documentazione del modello User
+- [DoctorRegistrationWorkflow](Models/DoctorRegistrationWorkflow.md) - Workflow di registrazione dei medici
+>>>>>>> 54f4fa16 (.)
 
 > **Nota:** La moderazione utenti è ora gestita direttamente tramite il modello User. Vedi [moderation-architettura.md](./moderation-architettura.md)
 
 ### Processi
 
+<<<<<<< HEAD
 - [Doctor Registration Process](doctor_registration_process.md) - Processo di registrazione dei medici
 - [Doctor Registration Workflow](doctor_registration_workflow.md) - Workflow di registrazione dei medici
+=======
+- [Doctor Registration Process](DOCTOR_REGISTRATION_PROCESS.md) - Processo di registrazione dei medici
+- [Doctor Registration Workflow](DOCTOR_REGISTRATION_WORKFLOW.md) - Workflow di registrazione dei medici
+>>>>>>> 54f4fa16 (.)
 
 ## Regole Fondamentali
 
@@ -137,6 +171,7 @@ Questo nuovo flusso permette di separare il completamento dei dati dall'approvaz
 ### 3. Ereditarietà dei Modelli
 
 **Regole per l'ereditarietà:**
+<<<<<<< HEAD
 - I modelli specializzati (es. Doctor, Patient, Studio, ecc.) **devono** estendere il modello BaseModel del modulo di appartenenza (es. `Modules\SaluteOra\Models\BaseModel`), **mai** direttamente `Illuminate\Database\Eloquent\Model`.
 - Devono usare sempre il trait `\Parental\HasParent` per il corretto funzionamento dello STI (se applicabile).
 - MAI ridichiarare trait già presenti nelle classi genitori (es. HasFactory).
@@ -154,6 +189,12 @@ Questo nuovo flusso permette di separare il completamento dei dati dall'approvaz
 - [ ] Tutti i modelli estendono il BaseModel del modulo
 - [ ] La logica comune è centralizzata
 - [ ] La documentazione è aggiornata
+=======
+- I modelli specializzati (es. Doctor, Patient) **devono** estendere il modello User del modulo Patient
+- Devono usare sempre il trait `\Parental\HasParent` per il corretto funzionamento dello STI
+- MAI ridichiarare trait già presenti nelle classi genitori (es. HasFactory)
+- Tutta la logica comune va nel modello User, mentre i modelli specializzati contengono solo le specificità
+>>>>>>> 54f4fa16 (.)
 
 ## Funzionalità Core
 
@@ -181,6 +222,7 @@ Questo nuovo flusso permette di separare il completamento dei dati dall'approvaz
 - Farmaci e terapie
 - Note cliniche
 
+<<<<<<< HEAD
 ### 5. Gestione Disponibilità Dottori
 - **Multi-Tenancy**: Disponibilità specifica per studio-dottore
 - **OpeningHoursField**: Componente UI per gestione orari settimanali
@@ -218,6 +260,8 @@ Questo nuovo flusso permette di separare il completamento dei dati dall'approvaz
 - Comandi di debug per identificazione rapida
 - Documentazione dettagliata per ogni risoluzione
 
+=======
+>>>>>>> 54f4fa16 (.)
 ## Integrazioni
 
 ### Con Modulo Dental
@@ -252,6 +296,7 @@ Questo nuovo flusso permette di separare il completamento dei dati dall'approvaz
 - [Value Objects](./value-objects/README.md) - Documentazione sui Value Objects utilizzati
 - [Standard](./standards/README.md) - Standard specifici del modulo
 
+<<<<<<< HEAD
 ## Features UI Avanzate
 
 ### Campi Condizionali nei Repeater
@@ -266,10 +311,14 @@ Il modulo implementa un pattern avanzato per campi condizionali nei repeater Fil
 ## Collegamenti Bidirezionali
 
 ### Moduli Correlati
+=======
+## Collegamenti Bidirezionali
+>>>>>>> 54f4fa16 (.)
 - [Modulo Dental](../Dental/docs/README.md) - Integrazione con servizi dentistici
 - [Modulo Reporting](../Reporting/docs/README.md) - Generazione report e statistiche
 - [Modulo User](../User/docs/README.md) - Gestione utenti e autenticazione
 
+<<<<<<< HEAD
 ### Documentazione Generale (Xot)
 - [📋 Filament Best Practices Xot](../Xot/docs/filament-best-practices.md) - **REGOLE GENERALI**: XotBaseResource e architettura Filament
 - [🏗️ Architettura Progetto](../Xot/docs/architecture/struttura-progetto.md) - Struttura generale del progetto
@@ -279,6 +328,8 @@ Il modulo implementa un pattern avanzato per campi condizionali nei repeater Fil
 - [📋 Regole Windsurf XotBaseResource](../../../.windsurf/rules/filament-xotbase-resource-best-practices.mdc) - Regole per IDE Windsurf
 - [📁 Regole Namespace](../../../.cursor/rules/namespace-structure-rules.mdc) - Regole struttura namespace e directory
 
+=======
+>>>>>>> 54f4fa16 (.)
 ## Vedi Anche
 - [Documentazione Principale](../../docs/INDEX.md) - Indice generale della documentazione
 - [Architettura Moduli](../../docs/architecture/modules-structure.md) - Struttura generale dei moduli
@@ -391,6 +442,7 @@ Per dettagli e motivazioni vedi:
 - Motivazione: centralizzazione, DRY, coerenza, override gestito dalla base.
 - Vedi anche: [filament-resources.md](filament-resources.md)
 
+<<<<<<< HEAD
 ## ⚠️ REGOLA CRITICA: getTableColumns() Obbligatorio in ListRecords
 
 **Problema ricorrente (PATTERN SISTEMICO):** `BadMethodCallException: Method getTableColumns does not exist`
@@ -431,6 +483,8 @@ public function getTableColumns(): array
 - [.cursor/rules/gettablecolumns_mandatory_fix.mdc](../../../.cursor/rules/gettablecolumns_mandatory_fix.mdc)
 - [.windsurf/rules/gettablecolumns_mandatory_fix.mdc](../../../.windsurf/rules/gettablecolumns_mandatory_fix.mdc)
 
+=======
+>>>>>>> 54f4fa16 (.)
 ## Regola fondamentale: aggiornamento documentazione e XotBaseResource
 
 - Prima di ogni implementazione o modifica, aggiornare sempre la documentazione nelle cartelle docs del modulo coinvolto.
@@ -457,6 +511,62 @@ public function getTableColumns(): array
 
 ## Collegamenti
 - [Modello Doctor](./Models/Doctor.md)
+<<<<<<< HEAD
+=======
+- [DoctorResource: Step Informazioni Personali](./filament/resources/doctor-resource.md)
+- [Standard Xot: Ereditarietà dei Modelli](../Xot/docs/standards/README.md)
+- [Struttura progetto e STI](./architecture/struttura-progetto.md)
+- [Migrazioni e database](./database/migrations.md)
+
+# Errori di Validazione Custom
+
+Per restituire errori custom nei form, usa sempre:
+
+```php
+throw \Illuminate\Validation\ValidationException::withMessages([
+    'campo' => ['Messaggio di errore personalizzato.'],
+]);
+```
+
+Vedi dettagli in [errors/validation.md](./errors/validation.md)
+
+# Regola: Non duplicare trait già presenti nei modelli base
+
+Se un trait (es. HasFactory) è già presente in un modello base (es. BaseUser), **non aggiungerlo** nei modelli che lo estendono (es. User, Doctor, Patient).
+
+Motivazione: evitare ridondanza, warning, confusione e problemi di override.
+
+## Checklist di Ripartenza (dopo restart)
+- Verifica che tutte le migration siano applicate (`users` aggiornata per STI)
+- Controlla che i trait NON siano duplicati nei modelli specializzati
+- Verifica la catena di ereditarietà: Doctor → User → BaseUser
+- Controlla che le ValidationException usino sempre `withMessages`
+- Assicurati che la documentazione sia aggiornata e neutra
+- Controlla i file chiave:
+  - [Doctor.php](app/Models/Doctor.php)
+  - [User.php](app/Models/User.php)
+  - [BaseUser.php](../User/app/Models/BaseUser.php)
+  - [DoctorResource.php](app/Filament/Resources/DoctorResource.php)
+  - [RegisterAction.php](app/Actions/RegisterAction.php)
+  - [RegistrationWidget.php](../User/app/Filament/Widgets/RegistrationWidget.php)
+- Consulta le sezioni:
+  - [Modello Doctor](Models/Doctor.md)
+  - [Errori di Validazione](errors/validation.md)
+  - [Migrazioni e STI](database/migrations.md)
+  - [Best Practices](ACTIONS_BEST_PRACTICES.md)
+  - [Ereditarietà](INHERITANCE_BEST_PRACTICES.md)
+  - [Analisi UserModeration](UserModeration_model_valutazione.md)
+
+## Regole Fondamentali
+- Documentazione sempre neutra
+- Mai duplicare trait già presenti nei modelli base
+- Usare sempre il trait HasParent per STI
+- Validazione custom solo con ValidationException::withMessages
+- Aggiornare sempre la doc PRIMA di ogni modifica
+
+## Collegamenti
+- [Modello Doctor](Models/Doctor.md)
+>>>>>>> 54f4fa16 (.)
 - [Migrazioni](database/migrations.md)
 - [Errori di Validazione](errors/validation.md)
 - [Ereditarietà](INHERITANCE_BEST_PRACTICES.md)
@@ -506,12 +616,15 @@ La configurazione di navigazione e la definizione della tabella sono centralizza
 **Vedi anche:**
 - [filament-xotbase-resource-best-practices.mdc](../../../.cursor/rules/filament-xotbase-resource-best-practices.mdc)
 
+<<<<<<< HEAD
 # Correzione Namespace e Metodi Vietati nelle Resource Filament
 
 - [2024-05-XX] Corretto il namespace delle risorse Filament da `Modules\\SaluteOra\\App\\Filament\\Resources` a `Modules\\SaluteOra\\Filament\\Resources`.
 - Rimossi i metodi `getTableFilters` e `getBulkActions` da tutte le risorse che estendono XotBaseResource, come da regole centrali Xot.
 - Vedi anche: [Regole generali Xot](../Xot/docs/README.md)
 
+=======
+>>>>>>> 54f4fa16 (.)
 # Correzioni e Migliorie Post-Unificazione
 
 Dopo l'unificazione dei moduli Patient, Dental e Reporting in SaluteOra, sono necessarie le seguenti correzioni e migliorie trasversali:
@@ -633,6 +746,7 @@ Vedi anche: [MIGLIORAMENTI_E_CORREZIONI.md](./MIGLIORAMENTI_E_CORREZIONI.md)
 
 ---
 
+<<<<<<< HEAD
 ## Best practice per le traduzioni
 
 - Non usare chiavi che terminano con `.navigation`, ma usare valori localizzati e descrittivi per `label`, `group`, `icon`.
@@ -844,3 +958,5 @@ class ModelPolicy extends XotBasePolicy
 - Controlli basati su ruoli e relazioni tra modelli
 - Metodi specifici per azioni di dominio (es. `confirm`, `cancel`, `finalize`)
 - Documentazione completa con PHPDoc
+=======
+>>>>>>> 54f4fa16 (.)

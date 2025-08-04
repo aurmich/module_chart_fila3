@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Cms\Models;
 
+<<<<<<< HEAD
 
 use Spatie\Translatable\HasTranslations;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Tenant\Models\Traits\SushiToJsons;
+=======
+use Modules\Tenant\Models\Traits\SushiToJsons;
+use Spatie\Translatable\HasTranslations;
+>>>>>>> 54f4fa16 (.)
 
 /**
  * Modules\Cms\Models\Section
@@ -21,10 +26,15 @@ use Modules\Tenant\Models\Traits\SushiToJsons;
  * @property string|null                                 $created_by
  * @property string|null                                 $updated_by
  * @property mixed                                       $translations
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> 54f4fa16 (.)
  * @method static \Modules\Cms\Database\Factories\SectionFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|Section  newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Section  newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Section  query()
+<<<<<<< HEAD
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Section whereBlocks($value)
@@ -40,11 +50,16 @@ use Modules\Tenant\Models\Traits\SushiToJsons;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Section whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Section whereUpdatedBy($value)
  * @mixin \Eloquent
+=======
+>>>>>>> 54f4fa16 (.)
  */
 class Section extends BaseModelLang
 {
     use SushiToJsons;
+<<<<<<< HEAD
     use Traits\HasBlocks;
+=======
+>>>>>>> 54f4fa16 (.)
 
     /** @var array<int, string> */
     public $translatable = [

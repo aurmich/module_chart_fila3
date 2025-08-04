@@ -16,7 +16,11 @@ use Modules\User\Filament\Resources\PermissionResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+=======
+use Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager;
+>>>>>>> 54f4fa16 (.)
 
 class ListPermissions extends XotBaseListRecords
 {
@@ -71,6 +75,7 @@ class ListPermissions extends XotBaseListRecords
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @return array<string, \Filament\Actions\Action>
      */
@@ -79,11 +84,16 @@ class ListPermissions extends XotBaseListRecords
         return [
             'create' => CreateAction::make(),
 =======
+=======
+>>>>>>> 54f4fa16 (.)
     protected function getHeaderActions(): array
     {
         return [
             CreateAction::make(),
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         ];
     }
 
@@ -102,7 +112,11 @@ class ListPermissions extends XotBaseListRecords
                         foreach ($collection as $record) {
                             // Verifichiamo che $record sia un'istanza di Model prima di procedere
                             Assert::isInstanceOf($record, \Illuminate\Database\Eloquent\Model::class, '['.__LINE__.']['.__CLASS__.']');
+<<<<<<< HEAD
 
+=======
+                            
+>>>>>>> 54f4fa16 (.)
                             // Poi verifichiamo che il modello abbia il metodo roles() prima di chiamarlo
                             if (method_exists($record, 'roles')) {
                                 $record->roles()->sync($data['role']);

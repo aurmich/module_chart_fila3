@@ -6,9 +6,12 @@ return array (
     'startDate' => 
     array (
       'label' => 'startDate',
+<<<<<<< HEAD
       'description' => 'startDate',
       'helper_text' => 'startDate',
       'placeholder' => 'startDate',
+=======
+>>>>>>> 54f4fa16 (.)
     ),
     'endDate' => 
     array (

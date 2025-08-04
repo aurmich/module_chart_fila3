@@ -25,8 +25,15 @@ return new class extends XotBaseMigration
         $this->tableCreate(
             static function (Blueprint $table): void {
                 $table->id();
+<<<<<<< HEAD
                 $table->string('first_name');
                 $table->string('last_name');
+=======
+                $table->foreignIdFor(Tenant::class)->constrained()
+                    ->onDelete('cascade')->onUpdate('cascade');
+                $table->string('name');
+                $table->string('surname');
+>>>>>>> 54f4fa16 (.)
                 $table->string('fiscal_code')->nullable()->unique();
                 $table->date('birth_date')->nullable();
                 $table->string('phone')->nullable();

@@ -26,6 +26,10 @@ use Filament\Notifications\Notification as FilamentNotification;
 
 /**
  * @property ComponentContainer $whatsappForm
+<<<<<<< HEAD
+=======
+ * @extends XotBasePage
+>>>>>>> 54f4fa16 (.)
  */
 class SendWhatsAppPage extends XotBasePage
 {
@@ -109,10 +113,15 @@ class SendWhatsAppPage extends XotBasePage
             $data = $this->whatsappForm->getState();
             $user = $this->getUser();
 
+<<<<<<< HEAD
             $message = is_string($data['message']) ? $data['message'] : '';
 
             Notification::route('whatsapp', $data['to'])
                 ->notify(new WhatsAppNotification($message, [
+=======
+            Notification::route('whatsapp', $data['to'])
+                ->notify(new WhatsAppNotification($data['message'], [
+>>>>>>> 54f4fa16 (.)
                     'driver' => $data['driver'],
                     'template' => $data['template'] ?? null,
                     'parameters' => $data['parameters'] ?? null,

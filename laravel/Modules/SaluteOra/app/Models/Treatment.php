@@ -14,6 +14,7 @@ use Modules\Tenant\Traits\BelongsToTenant;
 
 /**
  * Modello Treatment per la gestione dei trattamenti odontoiatrici.
+<<<<<<< HEAD
  *
  * @property int $id
  * @property int|null $tenant_id
@@ -77,6 +78,8 @@ use Modules\Tenant\Traits\BelongsToTenant;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Treatment withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Treatment withoutTrashed()
  * @mixin \Eloquent
+=======
+>>>>>>> 54f4fa16 (.)
  */
 class Treatment extends BaseModel
 {
@@ -85,7 +88,11 @@ class Treatment extends BaseModel
     /**
      * Gli attributi che sono mass assignable.
      *
+<<<<<<< HEAD
      * @var list<string>
+=======
+     * @var array<int, string>
+>>>>>>> 54f4fa16 (.)
      */
     protected $fillable = [
         'tenant_id',

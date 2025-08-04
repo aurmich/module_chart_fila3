@@ -6,22 +6,30 @@ namespace Modules\User\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Collection;
+<<<<<<< HEAD
 use Modules\User\Enums\UserTypeEnum;
+=======
+use Modules\User\Enums\UserType;
+>>>>>>> 54f4fa16 (.)
 use Modules\User\Models\Role;
 
 class RolesSeeder extends Seeder
 {
+<<<<<<< HEAD
     /**
      * Table headers for output display.
      *
      * @var array<int, string>
      */
+=======
+>>>>>>> 54f4fa16 (.)
     private static array $OUTPUT_TABLE_HEADERS = [
         '#',
         'Name',
         'Guard',
     ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     
@@ -41,6 +49,8 @@ class RolesSeeder extends Seeder
     
 >>>>>>> 345f8677 (phpstan)
 
+=======
+>>>>>>> 54f4fa16 (.)
     /**
      * Run the database seeds.
      */
@@ -48,6 +58,7 @@ class RolesSeeder extends Seeder
     {
         $roles = [];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -102,5 +113,31 @@ class RolesSeeder extends Seeder
                 $role->guard_name,
             ];
         })->toArray());
+=======
+        Collection::make(UserType::cases())
+            ->each(
+                static function (UserType $userType) use (&$roles): void {
+                    $roles[] = Role::firstOrCreate(
+                        [
+                            'name' => $userType->value,
+                            'guard_name' => $userType->getDefaultGuard(),
+                        ]
+                    );
+                },
+            );
+
+        $this->command->getOutput()->comment('<info>Newly created roles</info>');
+        $this->command->getOutput()->table(
+            self::$OUTPUT_TABLE_HEADERS,
+            array_map(
+                static fn (Role $role): array => [
+                    $role->id,
+                    $role->name,
+                    $role->guard_name,
+                ],
+                $roles,
+            ),
+        );
+>>>>>>> 54f4fa16 (.)
     }
 }

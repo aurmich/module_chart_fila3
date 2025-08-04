@@ -13,6 +13,11 @@ class LogoutListener
      */
     public function handle(Logout $event): void
     {
+<<<<<<< HEAD
         // Implementazione del logout tracking
+=======
+        // ...
+        // dddx('aa');
+>>>>>>> 54f4fa16 (.)
     }
 }

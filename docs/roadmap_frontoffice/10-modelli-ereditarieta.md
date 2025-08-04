@@ -84,7 +84,11 @@ class Doctor extends User
      *
      * @return array<string, string>
      */
+<<<<<<< HEAD
     protected function casts(): array
+=======
+    public function casts(): array
+>>>>>>> 54f4fa16 (.)
     {
         return array_merge(parent::casts(), [
             'certifications' => 'array',
@@ -176,7 +180,11 @@ class DoctorRegistrationWorkflow extends Model
      *
      * @return array<string, string>
      */
+<<<<<<< HEAD
     protected function casts(): array
+=======
+    public function casts(): array
+>>>>>>> 54f4fa16 (.)
     {
         return [
             'started_at' => 'datetime',

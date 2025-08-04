@@ -44,7 +44,10 @@ docs/
 
 ### 2. Esempio di File
 ```markdown
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # Titolo
 
 ## Descrizione
@@ -71,9 +74,13 @@ Note aggiuntive.
 
 ### 3. Collegamenti Bidirezionali
 ```markdown
+<<<<<<< HEAD
 
 # File A
 
+=======
+# File A
+>>>>>>> 54f4fa16 (.)
 ## Collegamenti
 - [File B](file-b.md)
 - [File C](file-c.md)
@@ -82,7 +89,10 @@ Note aggiuntive.
 - [File F](file-f.md)
 
 # File B
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 ## Collegamenti
 - [File A](file-a.md)
 - [File C](file-c.md)

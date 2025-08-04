@@ -55,10 +55,14 @@ return [
                 'mismatch' => 'Din bekräftelsekod för aktivering stämmer inte.',
                 'not_found' => 'Din bekräftelsekod för aktivering stämmer inte.',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'resend' => 'Du måste bekräfta och aktivera ditt konto för att fortsätta. Bekräfta och aktivera ditt konto genom länken i mailet vi skickade till dig. Klicka här</a> för att skicka mailet en gång till.',
 =======
                 'resend' => 'Du måste bekräfta och aktivera ditt konto för att fortsätta. Bekräfta och aktivera ditt konto genom länken i mailet vi skickade till dig. <a href="'.route('frontend.auth.account.confirm.resend', ':user_id').'">Klicka här</a> för att skicka mailet en gång till.',
 >>>>>>> aurmich/dev
+=======
+                'resend' => 'Du måste bekräfta och aktivera ditt konto för att fortsätta. Bekräfta och aktivera ditt konto genom länken i mailet vi skickade till dig. <a href="'.route('frontend.auth.account.confirm.resend', ':user_id').'">Klicka här</a> för att skicka mailet en gång till.',
+>>>>>>> 54f4fa16 (.)
                 'success' => 'Ditt konto har nu bekräftats och aktiverats.',
                 'resent' => 'Ett nytt mail med länk för bekräftelse och aktivering har nu skickats till den angivna e-posten.',
             ],

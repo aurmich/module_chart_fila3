@@ -5,9 +5,13 @@
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 
 aurmich/dev
 
+=======
+aurmich/dev
+>>>>>>> 54f4fa16 (.)
 # 🎯 Fase 10: Conclusione
 
 ## 📋 Panoramica
@@ -21,7 +25,10 @@ Questa fase rappresenta la conclusione del progetto e la consegna finale.
 - [Fase 9: Scalabilità](../roadmap/09_scalability.md) 
 
 aurmich/dev
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # 🎯 Fase 10: Conclusione
 
 ## 📋 Panoramica
@@ -34,7 +41,10 @@ Questa fase rappresenta la conclusione del progetto e la consegna finale.
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 aurmich/dev
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # 🎯 Fase 10: Conclusione
 
 ## 📋 Panoramica
@@ -67,7 +77,10 @@ Questa fase rappresenta la conclusione del progetto e la consegna finale.
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (21 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 aurmich/dev
 
 ## Collegamenti tra versioni di 10_conclusion.md

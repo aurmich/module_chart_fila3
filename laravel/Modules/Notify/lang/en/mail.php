@@ -8,7 +8,11 @@ return [
             'plural' => 'Email Templates',
             'singular' => 'Email Template',
             'icon' => 'heroicon-o-envelope',
+<<<<<<< HEAD
             'sort' => '1',
+=======
+            'sort' => 1,
+>>>>>>> 54f4fa16 (.)
         ],
         'sections' => [
             'main' => 'Main Information',

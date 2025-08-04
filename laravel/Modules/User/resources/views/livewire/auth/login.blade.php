@@ -50,10 +50,14 @@
                             class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
                         <label for="remember" class="ml-2 block text-sm text-gray-900">
 <<<<<<< HEAD
+<<<<<<< HEAD
                             {{ __('pub_theme::auth.login.remember') }}
 =======
                             {{ __('auth.login.remember') }}
 >>>>>>> aurmich/dev
+=======
+                            {{ __('auth.login.remember') }}
+>>>>>>> 54f4fa16 (.)
                         </label>
                     </div>
 
@@ -61,10 +65,14 @@
                         <div class="text-sm">
                             <a href="{{ route('password.request') }}" class="font-medium text-blue-600 hover:text-blue-500">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 {{ __('pub_theme::auth.login.forgot_password') }}
 =======
                                 {{ __('auth.login.forgot_password') }}
 >>>>>>> aurmich/dev
+=======
+                                {{ __('auth.login.forgot_password') }}
+>>>>>>> 54f4fa16 (.)
                             </a>
                         </div>
                     @endif
@@ -79,10 +87,14 @@
                             </svg>
                         </span>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         {{ __('pub_theme::auth.login.submit') }}
 =======
                         {{ __('auth.login.submit') }}
 >>>>>>> aurmich/dev
+=======
+                        {{ __('auth.login.submit') }}
+>>>>>>> 54f4fa16 (.)
                     </button>
                 </div>
             </form>

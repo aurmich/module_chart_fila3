@@ -6,6 +6,7 @@ return [
     'fields' => [
         'message' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'label' => 'Messaggio',
             'placeholder' => 'Inserisci un messaggio',
             'tooltip' => 'Messaggio informativo',
@@ -47,6 +48,8 @@ return [
             'description' => 'Configurazione del layout di visualizzazione',
             'helper_text' => '',
 =======
+=======
+>>>>>>> 54f4fa16 (.)
             'label' => 'message',
         ],
         'delete' => [
@@ -63,11 +66,15 @@ return [
         ],
         'layout' => [
             'label' => 'layout',
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         ],
     ],
     'actions' => [
         'create' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
             'label' => 'Crea Nuovo',
             'tooltip' => 'Crea un nuovo elemento',
@@ -78,11 +85,16 @@ return [
             'tooltip' => 'Esporta dati in formato Excel',
             'description' => 'Azione per esportare i dati in un file Excel',
 =======
+=======
+>>>>>>> 54f4fa16 (.)
             'label' => 'create',
         ],
         'export_xls' => [
             'label' => 'export_xls',
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         ],
     ],
 ];

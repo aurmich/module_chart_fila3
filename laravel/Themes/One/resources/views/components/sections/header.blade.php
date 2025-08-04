@@ -3,14 +3,19 @@
     'blocks' => [],
     'class' => '',
     'componentsBlocks' => [],
+<<<<<<< HEAD
     'x-data' => "{ mobileMenuOpen: false }",
     'slug', 'isLanding' => false
+=======
+    'x-data' => "{ mobileMenuOpen: false }"
+>>>>>>> 54f4fa16 (.)
 ])
 
 @php
     use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
     $locale = LaravelLocalization::getCurrentLocale();
     $componentsBlocks = is_array($blocks) && isset($blocks[$locale]) ? $blocks[$locale] : $blocks;
+<<<<<<< HEAD
     $page = request()->url();
     $isLanding =Route::currentRouteName()=='home' && !Auth::check();
 <<<<<<< HEAD
@@ -33,21 +38,44 @@
     ]) }}>
     <div class="!m-0 !p-0 w-full">
         <div class="flex h-16 items-center justify-between px-5">
+=======
+@endphp
+
+<header {{ $attributes->merge([
+    'class' => 'bg-white dark:bg-gray-900 shadow',
+    'id' => ($section['attributes']['id'] ?? ''),
+    'x-data' => "{ mobileMenuOpen: false }"
+]) }}>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+>>>>>>> 54f4fa16 (.)
             @foreach($componentsBlocks as $block)
                 @include($block->view,$block->data)
             @endforeach
             <div class="flex md:hidden">
                 <button type="button"
+<<<<<<< HEAD
                     class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
+=======
+                    class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
+>>>>>>> 54f4fa16 (.)
                     @click="mobileMenuOpen = !mobileMenuOpen"
                     aria-expanded="false">
                     <span class="sr-only">Apri menu principale</span>
                     {{-- Hamburger Icon --}}
+<<<<<<< HEAD
                     <svg x-show="!mobileMenuOpen" class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
                     {{-- Close Icon --}}
                     <svg x-show="mobileMenuOpen" class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+=======
+                    <svg x-show="!mobileMenuOpen" class="h-6 w-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                    {{-- Close Icon --}}
+                    <svg x-show="mobileMenuOpen" class="h-6 w-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+>>>>>>> 54f4fa16 (.)
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
@@ -80,8 +108,11 @@
     </div>
 </header>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 @endif
 =======
 @endif
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)

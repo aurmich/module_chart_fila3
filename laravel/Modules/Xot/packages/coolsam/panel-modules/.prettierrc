@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "singleQuote": true,
     "endOfLine": "auto",
     "proseWrap": "preserve",
@@ -23,3 +24,9 @@
     "htmlWhitespaceSensitivity": "ignore"
   }
   
+=======
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+}
+>>>>>>> 54f4fa16 (.)

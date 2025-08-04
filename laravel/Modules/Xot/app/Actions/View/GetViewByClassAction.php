@@ -9,14 +9,18 @@ use Illuminate\Support\Str;
 use Spatie\QueueableAction\QueueableAction;
 use Modules\Xot\Actions\Module\GetModuleNameByModelClassAction;
 
+<<<<<<< HEAD
 /**
  * Classe per la conversione di nomi di classi in nomi di viste.
  */
+=======
+>>>>>>> 54f4fa16 (.)
 class GetViewByClassAction
 {
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
      * Converte un nome di classe in un nome di vista.
      * Esempio: "Modules\UI\Filament\Widgets\GroupWidget" => "ui::filament.widgets.group"
      *
@@ -25,6 +29,10 @@ class GetViewByClassAction
      *
      * @return string Il nome della vista
      * @throws \Exception Se la vista non esiste
+=======
+     * "Modules\UI\Filament\Widgets\GroupWidget" => "ui::filament.widgets.group"
+     * @return view-string
+>>>>>>> 54f4fa16 (.)
      */
     public function execute(string $class, string $suffix = ''): string
     {

@@ -41,10 +41,15 @@ I prompt sono file di testo che contengono istruzioni per l'AI. Devono seguire q
    ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 5. **Collegamenti**:
 b6f667c (.)
 >>>>>>> aurmich/dev
+=======
+5. **Collegamenti**:
+b6f667c (.)
+>>>>>>> 54f4fa16 (.)
 6. **Collegamenti**:
    - Questo documento deve essere collegato nella root `docs/` con un link bidirezionale
    - Gli altri moduli devono avere un link a questo documento
@@ -64,6 +69,7 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 - [Miglioramenti al Prompt docs.txt](./prompt_docs_improvements.md)b6f667c (.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 - [Miglioramenti al Prompt docs.txt](./prompt_docs_improvements.md)b6f667c (.)
 
@@ -72,6 +78,10 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 - [Miglioramenti al Prompt docs.txt](./prompt_docs_improvements.md)b6f667c (.)
 
 >>>>>>> aurmich/dev
+=======
+- [Miglioramenti al Prompt docs.txt](./prompt_docs_improvements.md)b6f667c (.)
+
+>>>>>>> 54f4fa16 (.)
 ## Collegamenti tra versioni di prompts.md
 * [prompts.md](docs/prompts.md)
 * [prompts.md](../../../Xot/docs/prompts.md)
@@ -188,9 +198,15 @@ Il prompt `docs.txt` serve come:
    ```markdown
    [Documento](./path/relativo) #tag-correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
    ```
 =======
    ```
 b6f667c (.)
 
 >>>>>>> aurmich/dev
+=======
+   ```
+b6f667c (.)
+
+>>>>>>> 54f4fa16 (.)

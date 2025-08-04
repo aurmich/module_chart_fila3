@@ -31,7 +31,11 @@ abstract class BasePivot extends Pivot
     protected $perPage = 30;
 
     /** @var string */
+<<<<<<< HEAD
     protected $connection = 'salute_ora';
+=======
+    protected $connection = 'patient';
+>>>>>>> 54f4fa16 (.)
 
     /** @var list<string> */
     protected $appends = [];

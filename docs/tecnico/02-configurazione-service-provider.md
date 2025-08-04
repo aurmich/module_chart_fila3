@@ -317,7 +317,10 @@ Cause possibili:
 
 Soluzione:
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # Verificare presenza del file
 find /var/www/html/saluteora/laravel/Modules -name "XYZServiceProvider.php"
 

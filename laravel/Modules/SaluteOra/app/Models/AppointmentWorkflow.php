@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Modules\Tenant\Traits\BelongsToTenant;
+<<<<<<< HEAD
 use Carbon\Carbon;
 
 /**
@@ -68,6 +69,9 @@ use Carbon\Carbon;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|AppointmentWorkflow withoutTrashed()
  * @mixin \Eloquent
  */
+=======
+
+>>>>>>> 54f4fa16 (.)
 class AppointmentWorkflow extends BaseModel
 {
     use HasFactory, SoftDeletes, BelongsToTenant;
@@ -86,13 +90,20 @@ class AppointmentWorkflow extends BaseModel
     /**
      * Gli attributi che sono mass assignable.
      *
+<<<<<<< HEAD
      * @var list<string>
+=======
+     * @var array<string>
+>>>>>>> 54f4fa16 (.)
      */
     protected $fillable = [
         'tenant_id',
         'appointment_id',
         'patient_id',
+<<<<<<< HEAD
         'dentist_id',
+=======
+>>>>>>> 54f4fa16 (.)
         'current_step',
         'status',
         'step_data',
@@ -107,6 +118,7 @@ class AppointmentWorkflow extends BaseModel
     /**
      * Gli attributi che dovrebbero essere cast a tipi nativi.
      *
+<<<<<<< HEAD
      * @return array<string, string>
      */
     protected function casts(): array
@@ -124,6 +136,20 @@ class AppointmentWorkflow extends BaseModel
      * Relazione con l'appuntamento.
      *
      * @return BelongsTo<\Modules\SaluteOra\Models\Appointment, $this>
+=======
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'step_data' => 'array',
+        'meta' => 'array',
+        'started_at' => 'datetime',
+        'completed_at' => 'datetime',
+        'last_interaction_at' => 'datetime',
+    ];
+    
+    /**
+     * Relazione con l'appuntamento.
+>>>>>>> 54f4fa16 (.)
      */
     public function appointment(): BelongsTo
     {
@@ -132,8 +158,11 @@ class AppointmentWorkflow extends BaseModel
     
     /**
      * Relazione con il paziente.
+<<<<<<< HEAD
      *
      * @return BelongsTo<\Modules\SaluteOra\Models\Patient, $this>
+=======
+>>>>>>> 54f4fa16 (.)
      */
     public function patient(): BelongsTo
     {
@@ -141,6 +170,7 @@ class AppointmentWorkflow extends BaseModel
     }
     
     /**
+<<<<<<< HEAD
      * Relazione con il dentista.
      *
      * @return BelongsTo<\Modules\SaluteOra\Models\Dentist, $this>
@@ -151,6 +181,8 @@ class AppointmentWorkflow extends BaseModel
     }
     
     /**
+=======
+>>>>>>> 54f4fa16 (.)
      * Controlla se questo workflow è completato.
      */
     public function isCompleted(): bool
@@ -197,8 +229,14 @@ class AppointmentWorkflow extends BaseModel
     public function getCurrentStepIndex(): int
     {
         $steps = array_keys(self::getSteps());
+<<<<<<< HEAD
         $index = array_search($this->current_step, $steps, true);
         return $index !== false ? $index : 0;
+=======
+        return array_search($this->current_step, $steps) !== false
+            ? array_search($this->current_step, $steps)
+            : 0;
+>>>>>>> 54f4fa16 (.)
     }
     
     /**
@@ -229,8 +267,13 @@ class AppointmentWorkflow extends BaseModel
             self::STATUS_CONFIRMED,
         ];
         
+<<<<<<< HEAD
         $currentStatusIndex = array_search($this->status, $statuses, true);
         $stepStatusIndex = array_search($stepsMap[$step], $statuses, true);
+=======
+        $currentStatusIndex = array_search($this->status, $statuses);
+        $stepStatusIndex = array_search($stepsMap[$step], $statuses);
+>>>>>>> 54f4fa16 (.)
         
         return $currentStatusIndex !== false && $stepStatusIndex !== false && $currentStatusIndex >= $stepStatusIndex;
     }

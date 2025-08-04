@@ -157,9 +157,12 @@
 - [Best Practices](BEST-PRACTICES.md)
 - [Testing](testing.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Versione HEAD
 
 
@@ -282,9 +285,12 @@ Overall Module Completion: 60%
    - Cache implementation
    - Priority: High
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # 🗺️ UI Module Roadmap
 
 ## 📊 Progress Overview

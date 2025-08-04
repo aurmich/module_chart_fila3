@@ -7,6 +7,7 @@ namespace Modules\Xot\Filament\Widgets;
 use Filament\Forms;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 17b35338 (add doctor-register-integration-completed  page)
 use Illuminate\Support\Arr;
@@ -57,16 +58,37 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms,HasActio
     use InteractsWithForms;
     use InteractsWithActions;
 =======
+=======
+use Filament\Forms\Form;
+use Illuminate\Support\Facades\Cache;
+use Filament\Forms\Contracts\HasForms;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Widgets\WidgetConfiguration;
+use Filament\Widgets\Widget as FilamentWidget;
+use Modules\Xot\Actions\View\GetViewByClassAction;
+use Filament\Widgets\Concerns\InteractsWithPageTable;
+use Filament\Widgets\Concerns\InteractsWithPageFilters;
+use Filament\Actions\Action;
+
+/**
+ * @property bool $shouldRender
+ *
+ */
+>>>>>>> 54f4fa16 (.)
 abstract class XotBaseWidget extends FilamentWidget implements HasForms
 {
     use InteractsWithPageFilters;
     //use InteractsWithPageTable;
     use InteractsWithForms;
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 
     public string $title = '';
     public string $icon = '';
     protected int|string|array $columnSpan = 'full';
+<<<<<<< HEAD
 
     /**
      * Lista degli eventi ascoltati dal widget.
@@ -82,6 +104,25 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
      *
      * @var array<string, mixed>
      */
+=======
+    /**
+     * The view that should be rendered for the widget.
+     *
+     * This property allows either a string that can be rendered as a view
+     * (prefixed with a namespace like 'module-name::view-name') or a path to a
+     * Blade view file.
+     *
+     * @var view-string
+     */
+    protected static string $view;
+
+
+    public array $listener = [
+        'filters-updated' => 'filtersUpdated',
+
+    ];
+
+>>>>>>> 54f4fa16 (.)
     public ?array $data = [];
 
     /*
@@ -101,6 +142,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
     }
     */
 
+<<<<<<< HEAD
     /**
      * Ottiene lo schema del form.
      * Deve essere implementato nelle classi figlie.
@@ -213,6 +255,25 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
      * @return array<int|string, Action>
      */
     protected function getFormActions(): array
+=======
+
+    abstract public function getFormSchema(): array;
+
+    /**
+     *  Cannot override final method Modules\Xot\Filament\Widgets\XotBaseWidget::form()
+     * percio' non finalize, se togli la funzione form non funziona
+     */
+    public function form(Form $form): Form
+    {
+        return $form
+            ->schema($this->getFormSchema())
+            //->columns(2)
+            ->statePath('data');
+    }
+
+
+     protected function getFormActions(): array
+>>>>>>> 54f4fa16 (.)
     {
         return [
             Action::make('save')
@@ -221,6 +282,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
         ];
     }
 
+<<<<<<< HEAD
     /**
      * Ottiene il modello per il form.
      * Può essere sovrascritto nelle classi figlie per fornire un modello specifico.
@@ -302,4 +364,10 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
+=======
+    public function save(): void
+    {
+
+    }
+>>>>>>> 54f4fa16 (.)
 }

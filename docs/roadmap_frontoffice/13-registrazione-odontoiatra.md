@@ -927,7 +927,10 @@ class DoctorRegistrationApprovedNotification extends Notification
 ```php
 // /laravel/Modules/Patient/resources/views/emails/doctor-registration-approved.blade.php
 @component('mail::message')
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # Registrazione Approvata
 
 Gentile {{ $notifiable->first_name }},

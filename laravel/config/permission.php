@@ -173,10 +173,14 @@ return [
      * If you need to modify delimiters, override the class and specify its name here.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     // 'wildcard_permission' => Spatie\Permission\WildcardPermission::class,
 =======
     // 'permission.wildcard_permission' => Spatie\Permission\WildcardPermission::class,
 >>>>>>> aurmich/dev
+=======
+    // 'permission.wildcard_permission' => Spatie\Permission\WildcardPermission::class,
+>>>>>>> 54f4fa16 (.)
 
     /* Cache-specific settings */
 

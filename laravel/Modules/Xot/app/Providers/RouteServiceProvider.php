@@ -46,6 +46,7 @@ class RouteServiceProvider extends ServiceProvider
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         // $this->registerLang(); // ✅ Temporaneamente disabilitato per debug
 =======
         $this->registerLang();
@@ -53,6 +54,9 @@ class RouteServiceProvider extends ServiceProvider
 =======
         // $this->registerLang(); // ✅ Temporaneamente disabilitato per debug
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+        $this->registerLang();
+>>>>>>> 54f4fa16 (.)
         $this->registerRoutePattern($router);
         $this->registerMyMiddleware($router);
     }
@@ -105,6 +109,7 @@ class RouteServiceProvider extends ServiceProvider
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         
@@ -119,6 +124,9 @@ class RouteServiceProvider extends ServiceProvider
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+        $locales = config('laravellocalization.supportedLocales');
+>>>>>>> 54f4fa16 (.)
         if (is_array($locales)) {
             $langs = array_keys($locales);
         }
@@ -139,6 +147,7 @@ class RouteServiceProvider extends ServiceProvider
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         // ✅ Controllo sicuro della configurazione laravellocalization
@@ -152,6 +161,9 @@ class RouteServiceProvider extends ServiceProvider
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+        $langs = config('laravellocalization.supportedLocales');
+>>>>>>> 54f4fa16 (.)
         if (! is_array($langs)) {
             $langs = ['it' => 'it', 'en' => 'en'];
         }

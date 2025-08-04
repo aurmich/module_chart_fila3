@@ -52,11 +52,14 @@ class HandlerDecorator implements ExceptionHandler
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @phpstan-ignore-next-line
      */
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
     public function renderForConsole($output, \Throwable $e): void
     {
         foreach ($this->repository->getConsoleRenderersByException($e) as $renderer) {
@@ -66,9 +69,12 @@ class HandlerDecorator implements ExceptionHandler
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @phpstan-ignore-next-line */
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         $this->defaultHandler->renderForConsole($output, $e);
     }
 

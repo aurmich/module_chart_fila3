@@ -49,8 +49,11 @@ Homestead.json
 *.exe
 *:Zone.Identifier
 .DS_Store
+<<<<<<< HEAD
 *.old
 *.old1
+=======
+>>>>>>> 54f4fa16 (.)
 
 # Caches specifiche
 docs/cache/

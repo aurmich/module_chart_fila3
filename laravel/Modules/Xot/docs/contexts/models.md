@@ -80,9 +80,12 @@ Per validare i contesti dei modelli:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Validare tutti i modelli
 php artisan mcp:validate
 

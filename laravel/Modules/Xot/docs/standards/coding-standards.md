@@ -75,9 +75,12 @@ Ogni modifica ai dati sensibili deve essere:
 
 Il codice del progetto il progetto **deve** aderire ai seguenti principi fondamentali:# Standard di Codice
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Standard di Codice per il progetto
 
 > **Nota**: Questo documento è correlato a [Convenzioni](../../../docs/conventions.md) e [Naming Conventions](../../../docs/naming-conventions.md). Per una panoramica completa, consulta tutti i documenti correlati.
@@ -154,10 +157,15 @@ Ogni modifica ai dati sensibili deve essere:
 
 Il codice del progetto **deve** aderire ai seguenti principi fondamentali:
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 b6f667c (.)
 Il codice del progetto il progetto **deve** aderire ai seguenti principi fondamentali:
 >>>>>>> aurmich/dev
+=======
+b6f667c (.)
+Il codice del progetto il progetto **deve** aderire ai seguenti principi fondamentali:
+>>>>>>> 54f4fa16 (.)
 
 1. **Robustezza**: Il codice deve funzionare correttamente anche in condizioni impreviste o avverse
 2. **Solidità**: La struttura deve essere manutenibile, scalabile e testabile
@@ -335,7 +343,10 @@ class StorePatientRequest extends FormRequest
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 
             'tax_code' => ['required', 'string', 'size:16', 'unique:patients,tax_code'],
             'first_name' => ['required', 'string', 'max:255'],
@@ -355,7 +366,10 @@ class StorePatientRequest extends FormRequest
             'birth_date' => ['required', 'date', 'before:today'],
             'tax_code' => ['required', 'string', 'size:16', 'unique:patients,tax_code'],
 b6f667c (.)
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
             'tax_code' => ['required', 'string', 'size:16', 'unique:patients,tax_code'],
             'first_name' => ['required', 'string', 'max:255'],
             'last_name' => ['required', 'string', 'max:255'],
@@ -592,9 +606,12 @@ class PatientPolicy
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # ❌ NO: Commit message non descrittivo
 git commit -m "fix"
 
@@ -636,17 +653,23 @@ git commit -m "fix: correzione calcolo età paziente"
 - Monitorare performance
 - Alert su errori 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di coding-standards.md
 * [coding-standards.md](../../../Xot/docs/standards/coding-standards.md)
 * [coding-standards.md](../../../Xot/docs/conventions/coding-standards.md)
 
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 ## Collegamenti tra versioni di coding-standards.md
 * [coding-standards.md](../../../Xot/docs/standards/coding-standards.md)
 * [coding-standards.md](../../../Xot/docs/conventions/coding-standards.md)
 b6f667c (.)
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ## Collegamenti Correlati
 
 - [Convenzioni](../../../docs/conventions.md)

@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 54f4fa16 (.)
 return [
     'name' => 'Snapshots',
     'fields' => [
@@ -75,4 +80,8 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
 ];
+=======
+]; 
+>>>>>>> 54f4fa16 (.)

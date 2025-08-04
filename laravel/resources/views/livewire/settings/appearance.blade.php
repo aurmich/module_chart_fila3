@@ -7,10 +7,14 @@ new class extends Component {
 }; ?>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <section class="w-full">
 =======
 <div class="flex flex-col items-start">
 >>>>>>> aurmich/dev
+=======
+<div class="flex flex-col items-start">
+>>>>>>> 54f4fa16 (.)
     @include('partials.settings-heading')
 
     <x-settings.layout :heading="__('Appearance')" :subheading=" __('Update the appearance settings for your account')">
@@ -21,7 +25,11 @@ new class extends Component {
         </flux:radio.group>
     </x-settings.layout>
 <<<<<<< HEAD
+<<<<<<< HEAD
 </section>
 =======
 </div>
 >>>>>>> aurmich/dev
+=======
+</div>
+>>>>>>> 54f4fa16 (.)

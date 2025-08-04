@@ -6,6 +6,7 @@ namespace Modules\UI\Enums;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Arr;
 use Webmozart\Assert\Assert;
 use Filament\Support\Contracts\HasIcon;
@@ -21,6 +22,14 @@ use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
 use Webmozart\Assert\Assert;
 >>>>>>> aurmich/dev
+=======
+use Filament\Resources\Pages\ListRecords;
+use Filament\Support\Contracts\HasColor;
+use Filament\Support\Contracts\HasIcon;
+use Filament\Support\Contracts\HasLabel;
+use Illuminate\Support\Arr;
+use Webmozart\Assert\Assert;
+>>>>>>> 54f4fa16 (.)
 
 enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
 {
@@ -86,6 +95,7 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
      /**
 =======
     /**
@@ -99,6 +109,15 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
     public function getTableColumns(array $listColumns, array $gridColumns): array
     {
 <<<<<<< HEAD
+=======
+    /**
+     * Undocumented function.
+     *
+     * @return array<\Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component>
+     */
+    public function getTableColumns(): array
+    {
+>>>>>>> 54f4fa16 (.)
         $trace = debug_backtrace();
         /** @var ListRecords $caller */
         $caller = Arr::get($trace, '1.object');
@@ -113,6 +132,7 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
         $columns = $this->isGridLayout()
             ? $caller->getGridTableColumns()
 <<<<<<< HEAD
+<<<<<<< HEAD
             /** @phpstan-ignore method.protected */
 =======
 >>>>>>> aurmich/dev
@@ -120,6 +140,9 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
 =======
         $columns = $this->isGridLayout() ? $gridColumns : $listColumns;
 >>>>>>> 345f8677 (phpstan)
+=======
+            : $caller->getTableColumns();
+>>>>>>> 54f4fa16 (.)
 
         Assert::isArray($columns);
 

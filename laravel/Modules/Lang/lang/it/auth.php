@@ -17,7 +17,11 @@ return [
     'throttle' => 'Troppi tentativi di accesso. Riprova tra :seconds secondi.',
 
     'login' => [
+<<<<<<< HEAD
         'title' => 'Accedi',
+=======
+        'title' => 'Accedi al tuo account',
+>>>>>>> 54f4fa16 (.)
         'email' => 'Email',
         'password' => 'Password',
         'remember_me' => 'Ricordami',
@@ -29,7 +33,11 @@ return [
     ],
 
     'register' => [
+<<<<<<< HEAD
         'title' => 'Registati',
+=======
+        'title' => 'Crea un nuovo account',
+>>>>>>> 54f4fa16 (.)
         'name' => 'Nome',
         'email' => 'Email',
         'password' => 'Password',

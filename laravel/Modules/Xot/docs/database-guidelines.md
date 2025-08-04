@@ -101,9 +101,12 @@ Generare e mantenere aggiornata una documentazione dettagliata in formato Markdo
 
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ## Tabella: nome_tabella
 
 **Descrizione:** Questa tabella contiene dati relativi a...
@@ -232,6 +235,7 @@ class NomeModello extends Model
 
     // Relazioni e metodi...
 }
+<<<<<<< HEAD
 
 ## Linee guida sulle Migrazioni
 
@@ -292,6 +296,8 @@ return new class extends XotBaseMigration {
     {
         return $this->hasMany(SocioRichiestaConvenzione::class, 'id_socio', 'id_socio');
     }
+=======
+>>>>>>> 54f4fa16 (.)
 ```
 
 ### 2. Documentazione delle Relazioni
@@ -431,9 +437,12 @@ public function up(): void
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Genera documentazione dello schema da un file JSON
 php artisan xot:generate-db-documentation /path/to/schema.json /path/to/output
 
@@ -445,9 +454,12 @@ php artisan schema:generate-diagram --tables=tabella1,tabella2 --path=/path/to/o
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Esporta lo schema del database in JSON
 php artisan db:export-schema --connection=nome_connessione --output=/path/to/output.json
 

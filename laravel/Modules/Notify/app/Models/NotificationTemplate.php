@@ -6,6 +6,7 @@ namespace Modules\Notify\Models;
 
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Facades\Blade;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\Notify\Enums\NotificationTypeEnum;
@@ -13,6 +14,8 @@ use Modules\Xot\Traits\HasFactory;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\Translatable\HasTranslations;
+=======
+>>>>>>> 54f4fa16 (.)
 
 /**
  * Class NotificationTemplate.
@@ -37,6 +40,7 @@ use Spatie\Translatable\HasTranslations;
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
  * @property \Carbon\Carbon|null $deleted_at
+<<<<<<< HEAD
  * @property-read string $channels_label
  * @property NotificationTypeEnum $type
  * @property-read \Modules\User\Models\Profile|null $creator
@@ -64,6 +68,14 @@ class NotificationTemplate extends BaseModel implements HasMedia
     use HasTranslations;
     use InteractsWithMedia;
 
+=======
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Notify\Models\NotificationTemplateVersion> $versions
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Notify\Models\NotificationLog> $logs
+ * @property-read string $channels_label
+ */
+class NotificationTemplate extends BaseModel
+{
+>>>>>>> 54f4fa16 (.)
     protected $fillable = [
         'name',
         'code',
@@ -81,6 +93,7 @@ class NotificationTemplate extends BaseModel implements HasMedia
         'version',
         'tenant_id',
         'grapesjs_data',
+<<<<<<< HEAD
         'type',
     ];
 
@@ -93,6 +106,13 @@ class NotificationTemplate extends BaseModel implements HasMedia
     {
         return [
             'type' => NotificationTypeEnum::class,
+=======
+    ];
+
+    public function casts(): array
+    {
+        return array_merge(parent::casts(), [
+>>>>>>> 54f4fa16 (.)
             'preview_data' => 'array',
             'body_html' => 'string',
             'body_text' => 'string',
@@ -102,6 +122,7 @@ class NotificationTemplate extends BaseModel implements HasMedia
             'metadata' => 'array',
             'is_active' => 'boolean',
             'grapesjs_data' => 'array',
+<<<<<<< HEAD
         ];
     }
 
@@ -117,6 +138,11 @@ class NotificationTemplate extends BaseModel implements HasMedia
             ->singleFile();
     }
 /*
+=======
+        ]);
+    }
+
+>>>>>>> 54f4fa16 (.)
     public function versions(): HasMany
     {
         return $this->hasMany(NotificationTemplateVersion::class, 'template_id')
@@ -127,14 +153,23 @@ class NotificationTemplate extends BaseModel implements HasMedia
     {
         return $this->hasMany(NotificationLog::class, 'template_id');
     }
+<<<<<<< HEAD
 */
     /*
+=======
+
+    /**
+>>>>>>> 54f4fa16 (.)
      * Create a new version of the template.
      *
      * @param string $createdBy The user who created the version
      * @param string|null $notes Optional notes about the changes
      * @return self
+<<<<<<< HEAD
      
+=======
+     */
+>>>>>>> 54f4fa16 (.)
     public function createNewVersion(string $createdBy, ?string $notes = null): self
     {
         $this->versions()->create([
@@ -152,7 +187,11 @@ class NotificationTemplate extends BaseModel implements HasMedia
         $this->increment('version');
         return $this;
     }
+<<<<<<< HEAD
 */
+=======
+
+>>>>>>> 54f4fa16 (.)
     /**
      * Compile the template with the given data.
      *
@@ -166,7 +205,11 @@ class NotificationTemplate extends BaseModel implements HasMedia
         $bodyText = $this->compileString($this->body_text, $data);
 
         return [
+<<<<<<< HEAD
             'subject' => $subject ?? '',
+=======
+            'subject' => $subject,
+>>>>>>> 54f4fa16 (.)
             'body_html' => $bodyHtml,
             'body_text' => $bodyText,
         ];
@@ -292,6 +335,7 @@ class NotificationTemplate extends BaseModel implements HasMedia
         $this->grapesjs_data = $data;
         return $this;
     }
+<<<<<<< HEAD
 
     public function getPreviewData(): array
     {
@@ -316,3 +360,6 @@ class NotificationTemplate extends BaseModel implements HasMedia
         return is_string($result) ? $result : '';
     }
 }
+=======
+} 
+>>>>>>> 54f4fa16 (.)

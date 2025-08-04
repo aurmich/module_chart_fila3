@@ -54,9 +54,12 @@ Per correggere questa situazione, è necessario:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Creare la directory Themes se non esiste
 mkdir -p /laravel/Themes
 
@@ -76,9 +79,12 @@ Quando si aggiunge un tema con git subtree, utilizzare il seguente formato:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Corretto
 git subtree add -P Themes/NomeTema git@repository:owner/theme.git branch --squash
 

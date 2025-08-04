@@ -16,6 +16,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. **SEMPRE** implementare `getFormSchema()`:
    ```php
    public static function getFormSchema(): array
@@ -50,16 +51,22 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    // ✅ CORRETTO
    TextInput::make('name') // Label gestita da LangServiceProvider
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 2. **SEMPRE** impostare correttamente le proprietà statiche:
    ```php
    protected static ?string $model = Cliente::class;
    protected static ?string $navigationIcon = 'heroicon-o-users';
    protected static ?string $cluster = ClienteCluster::class; // Se applicabile
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
    ```
 
 ### Pagine
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 1. **SEMPRE** estendere le classi base di Xot:
    ```php
@@ -362,6 +369,8 @@ Prima di considerare completa una risorsa Filament, verificare:
 
 *Ultimo aggiornamento: gennaio 2025 - Correzioni per campi reali e rimozione label hardcoded*
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 1. Per le pagine di **creazione**:
    ```php
    // CORRETTO ✅
@@ -511,7 +520,10 @@ Prima di considerare completa una risorsa Filament, verificare:
 
 ## Creazione di ClienteFromBrain
 
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 1. **ESATTA SEQUENZA** di campi da mantenere:
    - **Dati anagrafici**: titolo_id, nome, cognome, sesso, data_nascita, etc.
    - **Classificazione professionale**: tipologia_cliente_id, stato_id, etc.
@@ -519,3 +531,20 @@ Prima di considerare completa una risorsa Filament, verificare:
    - **Indirizzo e contatti**: via, cap, regione_id, provincia_id, etc.
    - **Dati bancari**: iban, intestatario, banca, filiale
    - **Modalità di ricezione**: Lista di modalità selezionabili
+<<<<<<< HEAD
+=======
+
+## Collegamenti tra versioni di FILAMENT_BEST_PRACTICES.md
+* [FILAMENT_BEST_PRACTICES.md](../../../Xot/docs/filament/FILAMENT_BEST_PRACTICES.md)
+* [FILAMENT_BEST_PRACTICES.md](../../../Xot/docs/FILAMENT_BEST_PRACTICES.md)
+* [FILAMENT_BEST_PRACTICES.md](../../../User/docs/FILAMENT_BEST_PRACTICES.md)
+* [FILAMENT_BEST_PRACTICES.md](../../../Job/docs/FILAMENT_BEST_PRACTICES.md)
+
+
+## Collegamenti tra versioni di filament_best_practices.md
+* [filament_best_practices.md](../../../../docs/rules/filament_best_practices.md)
+* [filament_best_practices.md](filament/filament_best_practices.md)
+* [filament_best_practices.md](../../User/docs/filament_best_practices.md)
+* [filament_best_practices.md](../../Job/docs/filament_best_practices.md)
+
+>>>>>>> 54f4fa16 (.)

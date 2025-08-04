@@ -106,7 +106,10 @@
 
 ## Comandi per la Riorganizzazione
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # Per ogni modulo (Patient, Dental, Reporting)
 cd /var/www/html/saluteora/laravel/Modules/[ModuleName]
 
@@ -130,3 +133,7 @@ mv Tests/* tests/
 
 # Aggiornare i namespace nei file
 find . -type f -name "*.php" -exec sed -i 's/Modules\\[ModuleName]/Modules\\[ModuleName]\\App/g' {} +
+<<<<<<< HEAD
+=======
+``` 
+>>>>>>> 54f4fa16 (.)

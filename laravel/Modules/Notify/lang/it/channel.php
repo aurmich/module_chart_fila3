@@ -176,5 +176,9 @@ return [
             'message' => 'Impossibile inviare il messaggio di test: :error',
         ],
     ],
+<<<<<<< HEAD
     
+=======
+    'messages' => [],
+>>>>>>> 54f4fa16 (.)
 ];

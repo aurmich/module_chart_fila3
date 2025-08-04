@@ -44,10 +44,14 @@ new class extends Component {
         <form wire:submit="updatePassword" class="mt-6 space-y-6">
             <flux:input
 <<<<<<< HEAD
+<<<<<<< HEAD
                 wire:model="current_password"
 =======
                 wire:model.live="current_password"
 >>>>>>> aurmich/dev
+=======
+                wire:model="current_password"
+>>>>>>> 54f4fa16 (.)
                 :label="__('Current password')"
                 type="password"
                 required
@@ -55,10 +59,14 @@ new class extends Component {
             />
             <flux:input
 <<<<<<< HEAD
+<<<<<<< HEAD
                 wire:model="password"
 =======
                 wire:model.live="password"
 >>>>>>> aurmich/dev
+=======
+                wire:model="password"
+>>>>>>> 54f4fa16 (.)
                 :label="__('New password')"
                 type="password"
                 required
@@ -66,10 +74,14 @@ new class extends Component {
             />
             <flux:input
 <<<<<<< HEAD
+<<<<<<< HEAD
                 wire:model="password_confirmation"
 =======
                 wire:model.live="password_confirmation"
 >>>>>>> aurmich/dev
+=======
+                wire:model="password_confirmation"
+>>>>>>> 54f4fa16 (.)
                 :label="__('Confirm Password')"
                 type="password"
                 required

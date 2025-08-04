@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
@@ -25,6 +26,8 @@ Route::middleware(['auth'])->group(function () {
 require __DIR__.'/auth.php';
 */
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 declare(strict_types=1);
 
 /**
@@ -43,7 +46,11 @@ declare(strict_types=1);
 
 // Questo file è intenzionalmente vuoto.
 // Le rotte frontend sono gestite tramite Laravel Folio + Volt.
+<<<<<<< HEAD
 // Le rotte backend sono definite nei rispettivi moduli.
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+// Le rotte backend sono definite nei rispettivi moduli.
+>>>>>>> 54f4fa16 (.)

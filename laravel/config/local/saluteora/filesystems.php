@@ -48,6 +48,7 @@ return [
             'root' => storage_path('app'),
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
         'private' => [
             'driver' => 'local',
             'root' => storage_path('app'),
@@ -60,6 +61,8 @@ return [
         ],
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 
         'public' => [
             'driver' => 'local',

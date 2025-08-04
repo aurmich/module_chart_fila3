@@ -8,10 +8,15 @@ use Modules\Xot\Models\Extra as XotBaseExtra;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * 
  *
 >>>>>>> aurmich/dev
+=======
+ * 
+ *
+>>>>>>> 54f4fa16 (.)
  * @property \Spatie\SchemalessAttributes\SchemalessAttributes $extra_attributes
  * @method static \Illuminate\Database\Eloquent\Builder|Extra newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Extra newQuery()

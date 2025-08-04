@@ -7,6 +7,7 @@ namespace Modules\Xot\Actions\Collection;
 // use Modules\Xot\Services\ArrayService;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 use Illuminate\Support\Collection;
 use Spatie\QueueableAction\QueueableAction;
@@ -16,18 +17,24 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
  * Action per la traduzione di elementi di una collezione.
  */
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 class TransCollectionAction
 {
     use QueueableAction;
 
     public ?string $transKey;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * Esegue la traduzione di una collezione.
@@ -39,20 +46,27 @@ class TransCollectionAction
      */
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
     public function execute(
         Collection $collection,
         ?string $transKey,
     ): Collection {
         if (null === $transKey) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             return $collection->map(fn (mixed $item): string => SafeStringCastAction::cast($item));
 =======
             return $collection;
 >>>>>>> aurmich/dev
+=======
+            return $collection;
+>>>>>>> 54f4fa16 (.)
         }
 
         $this->transKey = $transKey;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         return $collection->map(fn (mixed $item): string => $this->trans($item));
     }
@@ -96,6 +110,8 @@ class TransCollectionAction
 
         // Se nessuna traduzione è stata trovata, restituisce l'elemento originale
 =======
+=======
+>>>>>>> 54f4fa16 (.)
         return $collection->map(fn ($item): string => $this->trans($item));
     }
 
@@ -126,7 +142,10 @@ class TransCollectionAction
             return $trans;
         }
 
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         return $item;
     }
 }

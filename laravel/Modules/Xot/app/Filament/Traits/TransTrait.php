@@ -9,12 +9,15 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 =======
 >>>>>>> aurmich/dev
 =======
 use Webmozart\Assert\Assert;
 >>>>>>> 345f8677 (phpstan)
+=======
+>>>>>>> 54f4fa16 (.)
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 
@@ -81,6 +84,7 @@ trait TransTrait
     }
 
     /**
+<<<<<<< HEAD
      * Get translation key for a given class name.
      */
     public static function getKeyTransClass(string $class): string
@@ -117,6 +121,8 @@ trait TransTrait
     }
 
     /**
+=======
+>>>>>>> 54f4fa16 (.)
      * Get translation for a given function name.
      */
     public static function transFunc(string $func, bool $exceptionIfNotExist = false): string

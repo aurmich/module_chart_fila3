@@ -3,19 +3,26 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 namespace Modules\User\Tests\Feature;
 
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 use Modules\User\Models\User;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Illuminate\Support\Facades\Hash;
 use function Pest\Laravel\{actingAs, post};
@@ -86,6 +93,8 @@ test('cannot change password with wrong current password', function (): void {
     expect(Hash::check('old_password', $user->fresh()->password))->toBeTrue();
 }); 
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 use Tests\TestCase;
 use Illuminate\Support\Facades\Hash;
 
@@ -158,5 +167,9 @@ class ChangeProfilePasswordTest extends TestCase
         // Verifica che la password non sia stata cambiata
         $this->assertTrue(Hash::check('old_password', $user->fresh()->password));
     }
+<<<<<<< HEAD
 } 
 >>>>>>> aurmich/dev
+=======
+} 
+>>>>>>> 54f4fa16 (.)

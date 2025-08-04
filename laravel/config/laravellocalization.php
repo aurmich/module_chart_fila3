@@ -1,6 +1,7 @@
 <?php
 
 return [
+<<<<<<< HEAD
     /*
     |--------------------------------------------------------------------------
     | Supported Locales
@@ -13,6 +14,13 @@ return [
     */
     'supportedLocales' => [
 <<<<<<< HEAD
+=======
+
+    // Uncomment the languages that your site supports - or add new ones.
+    // These are sorted by the native name, which is the order you might show them in a language selector.
+    // Regional languages are sorted by their base language, so "British English" sorts as "English, British"
+    'supportedLocales' => [
+>>>>>>> 54f4fa16 (.)
         //'ace'         => ['name' => 'Achinese',               'script' => 'Latn', 'native' => 'Aceh', 'regional' => ''],
         //'af'          => ['name' => 'Afrikaans',              'script' => 'Latn', 'native' => 'Afrikaans', 'regional' => 'af_ZA'],
         //'agq'         => ['name' => 'Aghem',                  'script' => 'Latn', 'native' => 'Aghem', 'regional' => ''],
@@ -55,10 +63,14 @@ return [
         //'en-CA'       => ['name' => 'Canadian English',       'script' => 'Latn', 'native' => 'Canadian English', 'regional' => 'en_CA'],
         //'en-US'       => ['name' => 'U.S. English',           'script' => 'Latn', 'native' => 'U.S. English', 'regional' => 'en_US'],
 <<<<<<< HEAD
+<<<<<<< HEAD
         //'es'          => ['name' => 'Spanish',                'script' => 'Latn', 'native' => 'español', 'regional' => 'es_ES'],
 =======
         'es'          => ['name' => 'Spanish',                'script' => 'Latn', 'native' => 'español', 'regional' => 'es_ES'],
 >>>>>>> aurmich/dev
+=======
+        'es'          => ['name' => 'Spanish',                'script' => 'Latn', 'native' => 'español', 'regional' => 'es_ES'],
+>>>>>>> 54f4fa16 (.)
         //'eo'          => ['name' => 'Esperanto',              'script' => 'Latn', 'native' => 'esperanto', 'regional' => ''],
         //'eu'          => ['name' => 'Basque',                 'script' => 'Latn', 'native' => 'euskara', 'regional' => 'eu_ES'],
         //'ewo'         => ['name' => 'Ewondo',                 'script' => 'Latn', 'native' => 'ewondo', 'regional' => ''],
@@ -307,6 +319,7 @@ return [
         //'vai'         => ['name' => 'Vai (Vai)',              'script' => 'Vaii', 'native' => 'ꕙꔤ', 'regional' => ''],
         //'jv-Java'     => ['name' => 'Javanese (Javanese)',    'script' => 'Java', 'native' => 'ꦧꦱꦗꦮ', 'regional' => ''],
         //'ko'          => ['name' => 'Korean',                 'script' => 'Hang', 'native' => '한국어', 'regional' => 'ko_KR'],
+<<<<<<< HEAD
 =======
         'it' => [
             'name' => 'Italiano',
@@ -407,12 +420,60 @@ return [
     */
     'utf8suffix' => env('LARAVELLOCALIZATION_UTF8SUFFIX', '.UTF-8'),
 <<<<<<< HEAD
+=======
+    ],
+
+    // Requires middleware `LaravelSessionRedirect.php`.
+    //
+    // Automatically determine locale from browser (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language)
+    // on first call if it's not defined in the URL. Redirect user to computed localized url.
+    // For example, if users browser language is `de`, and `de` is active in the array `supportedLocales`,
+    // the `/about` would be redirected to `/de/about`.
+    //
+    // The locale will be stored in session and only be computed from browser
+    // again if the session expires.
+    //
+    // If false, system will take app.php locale attribute
+    'useAcceptLanguageHeader' => true,
+
+    // If `hideDefaultLocaleInURL` is true, then a url without locale
+    // is identical with the same url with default locale.
+    // For example, if `en` is default locale, then `/en/about` and `/about`
+    // would be identical.
+    //
+    // If in addition the middleware `LaravelLocalizationRedirectFilter` is active, then
+    // every url with default locale is redirected to url without locale.
+    // For example, `/en/about` would be redirected to `/about`.
+    // It is recommended to use `hideDefaultLocaleInURL` only in
+    // combination with the middleware `LaravelLocalizationRedirectFilter`
+    // to avoid duplicate content (SEO).
+    //
+    // If `useAcceptLanguageHeader` is true, then the first time
+    // the locale will be determined from browser and redirect to that language.
+    // After that, `hideDefaultLocaleInURL` behaves as usual.
+    'hideDefaultLocaleInURL' => false,
+
+    // If you want to display the locales in particular order in the language selector you should write the order here.
+    //CAUTION: Please consider using the appropriate locale code otherwise it will not work
+    //Example: 'localesOrder' => ['es','en'],
+    'localesOrder' => [],
+
+    // If you want to use custom language URL segments like 'at' instead of 'de-AT', you can map them to allow the
+    // LanguageNegotiator to assign the desired locales based on HTTP Accept Language Header. For example, if you want
+    // to use 'at' instead of 'de-AT', you would map 'de-AT' to 'at' (ie. ['de-AT' => 'at']).
+    'localesMapping' => [],
+
+    // Locale suffix for LC_TIME and LC_MONETARY
+    // Defaults to most common ".UTF-8". Set to blank on Windows systems, change to ".utf8" on CentOS and similar.
+    'utf8suffix' => env('LARAVELLOCALIZATION_UTF8SUFFIX', '.UTF-8'),
+>>>>>>> 54f4fa16 (.)
 
     // URLs which should not be processed, e.g. '/nova', '/nova/*', '/nova-api/*' or specific application URLs
     // Defaults to []
     'urlsIgnored' => ['/skipped'],
 
     'httpMethodsIgnored' => ['POST', 'PUT', 'PATCH', 'DELETE'],
+<<<<<<< HEAD
 <<<<<<< HEAD
 ];
 =======
@@ -421,3 +482,6 @@ return [
 =======
 ]; 
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+];
+>>>>>>> 54f4fa16 (.)

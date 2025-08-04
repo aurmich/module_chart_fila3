@@ -5,13 +5,26 @@ declare(strict_types=1);
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Tenant\Models\Tenant;
 use Modules\SaluteOra\Models\Patient;
+<<<<<<< HEAD
 use Modules\SaluteOra\Models\Doctor;
+=======
+use Modules\SaluteOra\Models\Dentist;
+>>>>>>> 54f4fa16 (.)
 use Modules\SaluteOra\Models\Appointment;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration
 {
+<<<<<<< HEAD
     
+=======
+    /**
+     * Nome della tabella.
+     *
+     * @var string
+     */
+    protected string $table = 'treatments';
+>>>>>>> 54f4fa16 (.)
 
     /**
      * Run the migrations.
@@ -22,10 +35,17 @@ return new class extends XotBaseMigration
         $this->tableCreate(
             function (Blueprint $table): void {
                 $table->id();
+<<<<<<< HEAD
                 //$this->foreignIdFor($table,Tenant::class);
                 $this->foreignIdFor($table,Patient::class,'patient_id');
                 $this->foreignIdFor($table,Doctor::class,'doctor_id');
                 $this->foreignIdFor($table,Appointment::class,'appointment_id');
+=======
+                $this->foreignIdFor($table,Tenant::class);
+                $this->foreignIdFor($table,Patient::class);
+                $this->foreignIdFor($table,Dentist::class);
+                $this->foreignIdFor($table,Appointment::class);
+>>>>>>> 54f4fa16 (.)
                 $table->string('type');
                 $table->text('description')->nullable();
                 $table->text('notes')->nullable();
@@ -47,4 +67,8 @@ return new class extends XotBaseMigration
             }
         );
     }
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> 54f4fa16 (.)

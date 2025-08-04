@@ -4,7 +4,11 @@
 
 ### 1. Models
 ```php
+<<<<<<< HEAD
 namespace Modules\Patient\Models;
+=======
+namespace Modules\SaluteOra\Models;
+>>>>>>> 54f4fa16 (.)
 
 abstract class BaseModel extends XotBaseModel
 {
@@ -31,7 +35,11 @@ class Doctor extends BaseModel
 
 ### 2. Resources
 ```php
+<<<<<<< HEAD
 namespace Modules\Patient\Filament\Resources;
+=======
+namespace Modules\SaluteOra\Filament\Resources;
+>>>>>>> 54f4fa16 (.)
 
 class DoctorResource extends XotBaseResource
 {
@@ -53,7 +61,11 @@ class DoctorResource extends XotBaseResource
 
 ### 3. Providers
 ```php
+<<<<<<< HEAD
 namespace Modules\Patient\Providers;
+=======
+namespace Modules\SaluteOra\Providers;
+>>>>>>> 54f4fa16 (.)
 
 class PatientServiceProvider extends XotBaseServiceProvider
 {

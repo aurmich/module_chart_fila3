@@ -83,6 +83,7 @@ class LogoutListener
                 'user_id' => $event->user->getAuthIdentifier(),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'device_id' => $device->id,
 =======
                 'device_id' => $device?->id,
@@ -90,6 +91,9 @@ class LogoutListener
 =======
                 'device_id' => $device->id,
 >>>>>>> 345f8677 (phpstan)
+=======
+                'device_id' => $device?->id,
+>>>>>>> 54f4fa16 (.)
                 'timestamp' => now()
             ]);
 
@@ -99,6 +103,7 @@ class LogoutListener
                 'trace' => $e->getTraceAsString(),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'user_id' => $event->user->getAuthIdentifier()
 =======
                 'user_id' => $event->user?->getAuthIdentifier()
@@ -106,6 +111,9 @@ class LogoutListener
 =======
                 'user_id' => $event->user->getAuthIdentifier()
 >>>>>>> 345f8677 (phpstan)
+=======
+                'user_id' => $event->user?->getAuthIdentifier()
+>>>>>>> 54f4fa16 (.)
             ]);
         }
     }

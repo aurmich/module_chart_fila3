@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     'fields' => [
         'email' => [
             'label' => 'Email',
@@ -82,6 +83,8 @@ return [
         ],
     ],
 =======
+=======
+>>>>>>> 54f4fa16 (.)
     'login' => [
         'title' => 'Sign in to your account',
         'subtitle' => 'Enter your credentials to access',
@@ -150,5 +153,8 @@ return [
 
     'login-in' => 'Sign in',
     'sign-up' => 'Sign up',
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ];

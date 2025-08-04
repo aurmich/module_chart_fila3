@@ -4,15 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Filament\Resources\AppointmentResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\BadgeColumn;
 use Filament\Tables\Columns\IconColumn;
+=======
+>>>>>>> 54f4fa16 (.)
 use Modules\SaluteOra\Filament\Resources\AppointmentResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListAppointments extends XotBaseListRecords
 {
     protected static string $resource = AppointmentResource::class;
+<<<<<<< HEAD
 
     /**
      * Define the table columns for the appointments list.
@@ -76,4 +80,6 @@ class ListAppointments extends XotBaseListRecords
                 ->toggleable(isToggledHiddenByDefault: true),
         ];
     }
+=======
+>>>>>>> 54f4fa16 (.)
 }

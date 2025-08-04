@@ -170,7 +170,10 @@ per le funzioni che andrà a svolgere in piattaforma
 
 ```
 ![](./images/15.png)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 ## Iscrizione odontoiatra
 
 
@@ -182,7 +185,10 @@ per le funzioni che andrà a svolgere in piattaforma
 Orari di disponibilità al servizio
 ```
 ![](./images/16.png)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 ## Iscrizione odontoiatra
 
 
@@ -219,7 +225,10 @@ All’interno di questa sarà possibile interagire con essi, al fine di:
 ```
  Annullare, per cause di forza maggiore, l’appuntamento fissato
 ```
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 ## Appuntamenti accettati
 
 
@@ -276,7 +285,10 @@ funzioni principali:
 
 ```
 ![](./images/22.png)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 ## Schermata di accesso
 
 ![](./images/23.png)

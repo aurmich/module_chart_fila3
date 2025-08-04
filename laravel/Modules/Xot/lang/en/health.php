@@ -1,10 +1,15 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
 >>>>>>> aurmich/dev
+=======
+declare(strict_types=1);
+
+>>>>>>> 54f4fa16 (.)
 return [
     'pages' => [
         'health_check_results' => [
@@ -12,25 +17,36 @@ return [
                 'refresh' => 'Refresh',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'heading' => 'Application Health',
 =======
 
             'heading' => 'Application Health',
 
 >>>>>>> aurmich/dev
+=======
+
+            'heading' => 'Application Health',
+
+>>>>>>> 54f4fa16 (.)
             'navigation' => [
                 'group' => 'Settings',
                 'label' => 'Application Health',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> aurmich/dev
+=======
+
+>>>>>>> 54f4fa16 (.)
             'notifications' => [
                 'check_results' => 'Check results from',
             ],
         ],
     ],
+<<<<<<< HEAD
 <<<<<<< HEAD
     'navigation' => [
         'name' => 'Stato Sistema',
@@ -188,4 +204,6 @@ return [
     'title' => 'health',
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ];

@@ -27,6 +27,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
 {
     use HasXotTable;
 
+<<<<<<< HEAD
     /*
      * Get the table columns.
      *
@@ -34,6 +35,17 @@ abstract class XotBaseListRecords extends FilamentListRecords
      
     abstract public function getTableColumns(): array;
     */
+=======
+    /**
+     * Get the table columns.
+     *
+     * @return array<string, Tables\Columns\Column>
+     */
+    public function getTableColumns(): array
+    {
+        return [];
+    }
+>>>>>>> 54f4fa16 (.)
 
     
     /**
@@ -50,20 +62,28 @@ abstract class XotBaseListRecords extends FilamentListRecords
      * Get the header actions.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, \Filament\Actions\Action>
 =======
      * @return array<int, \Filament\Actions\Action>
 >>>>>>> aurmich/dev
+=======
+     * @return array<int, \Filament\Actions\Action>
+>>>>>>> 54f4fa16 (.)
      */
     protected function getHeaderActions(): array
     {
         return [
             // \Filament\Actions\CreateAction::make(),
 <<<<<<< HEAD
+<<<<<<< HEAD
            // ExportXlsAction::make('export_xls'),
 =======
             ExportXlsAction::make('export_xls'),
 >>>>>>> aurmich/dev
+=======
+            ExportXlsAction::make('export_xls'),
+>>>>>>> 54f4fa16 (.)
         ];
     }
 
@@ -80,10 +100,17 @@ abstract class XotBaseListRecords extends FilamentListRecords
         return $resource;
     }
 
+<<<<<<< HEAD
     /** 
      * Paginate the table query.
     */
     protected function paginateTableQueryTMP(Builder $query): Paginator
+=======
+    /**
+     * Paginate the table query.
+     */
+    protected function paginateTableQuery(Builder $query): Paginator
+>>>>>>> 54f4fa16 (.)
     {
         return $query->fastPaginate(
             ('all' === $this->getTableRecordsPerPage()) 

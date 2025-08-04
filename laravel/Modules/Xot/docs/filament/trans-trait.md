@@ -45,6 +45,7 @@ class MyResource
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament Best Practices](../filament-best-practices.md)
 - [Translation Guidelines](../TRANSLATIONS-BEST-PRACTICES.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md) 
@@ -53,3 +54,8 @@ class MyResource
 - [Translation Guidelines](../TRANSLATIONS-BEST-PRACTICES.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md) 
 >>>>>>> aurmich/dev
+=======
+- [Filament Best Practices](../FILAMENT-BEST-PRACTICES.md)
+- [Translation Guidelines](../TRANSLATIONS-BEST-PRACTICES.md)
+- [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md) 
+>>>>>>> 54f4fa16 (.)

@@ -1,11 +1,19 @@
 <?php
 declare(strict_types=1);
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Support\Arr;
 use Livewire\Volt\Component;
 use Modules\Xot\Datas\XotData;
+=======
+use Modules\SaluteOra\Models\User;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Auth\Events\Registered;
+use Livewire\Volt\Component;
+>>>>>>> 54f4fa16 (.)
 use function Laravel\Folio\{middleware, name};
 
 middleware(['guest']);
@@ -17,13 +25,18 @@ new class extends Component
 
     public function mount(): void
     {
+<<<<<<< HEAD
         $this->types=XotData::make()->getUserChildTypes();
+=======
+        $this->types = (new User())->getChildTypes();
+>>>>>>> 54f4fa16 (.)
     }
 };
 ?>
 
 <x-layouts.app>
     @volt('register')
+<<<<<<< HEAD
     <!-- background-image: url('/img/background-filigrana-chiaro.png'); background-size: cover; background-position: center -->
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -75,6 +88,32 @@ new class extends Component
             </div>
         </div>
     </div>
+=======
+    <div class="register-container">
+        <div class="min-h-screen bg-gradient-to-b from-blue-50 to-white py-12">
+            <!-- Logo e intestazione -->
+            <div class="text-center mb-8">
+                <div class="flex justify-center mb-4">
+                    <x-ui.logo class="h-12 text-blue-900" />
+                </div>
+                <h1 class="text-3xl font-light text-blue-900">Benvenuto in <span class="font-bold">SaluteOra</span></h1>
+                <p class="text-gray-600 mt-2">Crea il tuo account per accedere a tutti i servizi4</p>
+            </div>
+
+            <!-- Card contenente il form di registrazione -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                @foreach($types as $type => $class)
+                    <x-filament::button size="sm" href="{{ route('register.type', ['type'=>$type]) }}" tag="a">
+                        {{ ucfirst($type) }}
+                    </x-filament::button>
+                @endforeach
+            </div>
+        </div>
+
+        <div class="mt-8 text-center text-sm text-gray-500">
+            <p>Hai bisogno di assistenza? <a href="#" class="text-blue-800 hover:underline">Contattaci</a></p>
+        </div>
+>>>>>>> 54f4fa16 (.)
     </div>
     @endvolt
 </x-layouts.app>

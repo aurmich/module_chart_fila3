@@ -5,6 +5,7 @@ declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  namespace App\Providers\Filament;
 
  use Modules\Xot\Providers\Filament\XotBaseMainPanelProvider;
@@ -43,11 +44,26 @@ namespace App\Providers\Filament;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+namespace App\Providers\Filament;
+
+use Modules\Xot\Providers\Filament\XotBaseMainPanelProvider;
+use Filament\Panel;
+
+class AdminPanelProvider extends XotBaseMainPanelProvider
+{
+    public function panel(Panel $panel): Panel
+
+
+    {
+
+>>>>>>> 54f4fa16 (.)
         return parent::panel($panel)
           ->default()
           ->login()
             ;
     }
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 }
 =======
@@ -66,3 +82,6 @@ namespace App\Providers\Filament;
      }
 }
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
+=======
+}
+>>>>>>> 54f4fa16 (.)

@@ -6,6 +6,7 @@ return array (
     'view' => 
     array (
 <<<<<<< HEAD
+<<<<<<< HEAD
       'label' => 'Visualizza',
       'description' => 'Visualizza dettagli elemento',
       'placeholder' => 'Clicca per visualizzare',
@@ -273,6 +274,11 @@ return array (
     'submit' => 
     array (
       'label' => 'submit',
+=======
+      'label' => 'view',
+      'description' => 'view',
+      'helper_text' => 'view',
+>>>>>>> 54f4fa16 (.)
     ),
   ),
 );

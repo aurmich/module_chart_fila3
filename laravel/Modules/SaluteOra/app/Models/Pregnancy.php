@@ -7,6 +7,7 @@ namespace Modules\SaluteOra\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
+<<<<<<< HEAD
 
 
 /**
@@ -66,11 +67,25 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Pregnancy extends BaseModel
 {
     
+=======
+use Modules\Tenant\Traits\BelongsToTenant;
+
+/**
+ * Modello Pregnancy per la gestione dei dati relativi alla gravidanza.
+ */
+class Pregnancy extends BaseModel
+{
+    use HasFactory, SoftDeletes, BelongsToTenant;
+>>>>>>> 54f4fa16 (.)
 
     /**
      * Gli attributi che sono mass assignable.
      *
+<<<<<<< HEAD
      * @var list<string>
+=======
+     * @var array<int, string>
+>>>>>>> 54f4fa16 (.)
      */
     protected $fillable = [
         'tenant_id',
@@ -153,6 +168,12 @@ class Pregnancy extends BaseModel
      */
     public function daysUntilDelivery(): int
     {
+<<<<<<< HEAD
         return (int) now()->diffInDays($this->expected_delivery_date, false);
     }
 }
+=======
+        return now()->diffInDays($this->expected_delivery_date, false);
+    }
+}
+>>>>>>> 54f4fa16 (.)

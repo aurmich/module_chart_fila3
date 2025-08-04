@@ -47,6 +47,9 @@ Gestisce le richieste di accesso, modifica o cancellazione dei dati personali.
 ## Collegamenti
 
 - [Documentazione Generale GDPR](./readme.md)
+<<<<<<< HEAD
 - [Documentazione Generale GDPR](./README.md)
+=======
+>>>>>>> 54f4fa16 (.)
 - [Configurazione del Modulo](./configuration.md)
 - [Gestione dei Consensi](./consent-management.md)

@@ -47,6 +47,7 @@ trait RelationX
         // }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
@@ -54,6 +55,9 @@ trait RelationX
 =======
         
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+
+>>>>>>> 54f4fa16 (.)
         return $this->belongsToMany(
             related: $related,
             table: $table,
@@ -68,6 +72,7 @@ trait RelationX
             ->withTimestamps();
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     /**
@@ -158,6 +163,14 @@ trait RelationX
         
         $pivot_class = $this->guessPivotFullClass($pivot_name, $related, $class);
 =======
+=======
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\Pivot
+     */
+    public function guessPivot(string $related)
+    {
+        $model_names = [
+>>>>>>> 54f4fa16 (.)
             class_basename($this::class),
             class_basename($related),
         ];
@@ -168,6 +181,7 @@ trait RelationX
             ->append('\\'.$pivot_name)
             ->toString();
         if (! class_exists($pivot_class)) {
+<<<<<<< HEAD
             /*
             //$pivot_class = 'Modules\Xot\Models\Pivot\\'.$pivot_name;
             dddx([
@@ -181,11 +195,19 @@ trait RelationX
         }
 >>>>>>> aurmich/dev
         
+=======
+            $pivot_class = Str::of($related)
+                ->beforeLast('\\')
+                ->append('\\'.$pivot_name)
+                ->toString();
+        }
+>>>>>>> 54f4fa16 (.)
         $pivot = app($pivot_class);
         Assert::isInstanceOf($pivot, \Illuminate\Database\Eloquent\Relations\Pivot::class);
 
         return $pivot;
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     public function guessPivotFullClass(string $pivot_name, string $related, ?string $class = null):string{
@@ -219,4 +241,6 @@ trait RelationX
     }
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 }

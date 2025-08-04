@@ -58,6 +58,7 @@ class MailTemplateResource extends LangBaseResource
                 ->required()
                 ->columnSpanFull(),
 
+<<<<<<< HEAD
             'params_display' => Forms\Components\View::make('notify::filament.components.params-badges')
                 ->viewData(fn ($record) => ['params' => $record?->params])
                 ->columnSpanFull()
@@ -70,6 +71,11 @@ class MailTemplateResource extends LangBaseResource
                 ->columnSpanFull(),
             'sms_template' => Forms\Components\Textarea::make('sms_template')
                 ->columnSpanFull(),
+=======
+            'text_template' => Forms\Components\Textarea::make('text_template')
+                ->maxLength(65535)
+                ->columnSpanFull(),
+>>>>>>> 54f4fa16 (.)
         ];
     }
 }

@@ -3,6 +3,7 @@
 return array (
   'navigation' => 
   array (
+<<<<<<< HEAD
     'label' => 'Disponibilità Medici',
     'group' => 'Agenda',
     'icon' => 'heroicon-o-calendar',
@@ -140,4 +141,11 @@ return array (
     'no_pending_appointments_description' => 'Non ci sono appuntamenti in attesa di approvazione.',
   ),
   'available' => 'Disponibile',
+=======
+    'label' => 'doctor availability.navigation',
+    'group' => 'doctor availability.navigation',
+    'icon' => 'doctor availability.navigation',
+    'sort' => 6,
+  ),
+>>>>>>> 54f4fa16 (.)
 );

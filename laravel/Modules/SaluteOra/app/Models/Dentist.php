@@ -12,6 +12,7 @@ use Modules\Tenant\Traits\BelongsToTenant;
 
 /**
  * Modello Dentist per la gestione dei dentisti.
+<<<<<<< HEAD
  *
  * @property int $id
  * @property string $name
@@ -37,18 +38,30 @@ use Modules\Tenant\Traits\BelongsToTenant;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Dentist withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Dentist withoutTrashed()
  * @mixin \Eloquent
+=======
+>>>>>>> 54f4fa16 (.)
  */
 class Dentist extends BaseModel
 {
     use HasFactory, SoftDeletes, BelongsToTenant;
 
     /**
+<<<<<<< HEAD
      * @var list<string>
+=======
+     * Gli attributi che sono mass assignable.
+     *
+     * @var array<int, string>
+>>>>>>> 54f4fa16 (.)
      */
     protected $fillable = [
         'tenant_id',
         'name',
+<<<<<<< HEAD
         'last_name',
+=======
+        'surname',
+>>>>>>> 54f4fa16 (.)
         'email',
         'phone',
         'specialization',
@@ -85,7 +98,11 @@ class Dentist extends BaseModel
      */
     public function getFullNameAttribute(): string
     {
+<<<<<<< HEAD
         return "{$this->name} {$this->last_name}";
+=======
+        return "{$this->name} {$this->surname}";
+>>>>>>> 54f4fa16 (.)
     }
 
     /**

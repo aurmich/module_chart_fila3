@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LangServiceProvider: Label automatiche nei Filament Forms (modulo SaluteOra)
 
 ## Nota
@@ -75,13 +76,28 @@ Nel `FindDoctorAndAppointmentWidget` tutti i campi seguono questa regola:
 - `doctor_id` → `Select::make('doctor_id')` (senza ->label())
 - `appointment_time` → `RadioCollection::make('appointment_time')` (senza ->label())
 
+=======
+# LangServiceProvider: Label automatiche nei Filament Forms (modulo Patient)
+
+## Nota
+In questo modulo le label dei campi sono gestite esclusivamente tramite LangServiceProvider e i file di traduzione. Non va mai usato il metodo `->label()` nei componenti Filament.
+
+## Esempio pratico
+```php
+TextInput::make('first_name') // la label viene risolta automaticamente
+```
+
+>>>>>>> 54f4fa16 (.)
 ## Motivazione e dettagli
 Vedi la [doc generale in Xot](../../Xot/docs/langserviceprovider-labels.md) per motivazione, vantaggi e struttura dei file di lingua.
 
 ## Collegamenti
 - [Doc generale LangServiceProvider in Xot](../../Xot/docs/langserviceprovider-labels.md)
+<<<<<<< HEAD
 - [File traduzioni fields.php](../lang/it/fields.php)
 - [FindDoctorAndAppointmentWidget](../app/Filament/Widgets/Patient/FindDoctorAndAppointmentWidget.php)
+=======
+>>>>>>> 54f4fa16 (.)
 
 **Questa regola è obbligatoria per tutti i moduli.**
 
@@ -91,7 +107,11 @@ Vedi la [doc generale in Xot](../../Xot/docs/langserviceprovider-labels.md) per 
 # Gestione Label con LangServiceProvider
 
 ## Regola Fondamentale
+<<<<<<< HEAD
 NON utilizzare mai il metodo `->label()`, `->placeholder()`, `->helperText()` nei componenti Filament. Le etichette vengono gestite automaticamente dal `LangServiceProvider`.
+=======
+NON utilizzare mai il metodo `->label()` nei componenti Filament. Le etichette vengono gestite automaticamente dal `LangServiceProvider`.
+>>>>>>> 54f4fa16 (.)
 
 ## Struttura Corretta
 ```php
@@ -100,6 +120,7 @@ Forms\Components\TextInput::make('first_name')
     ->required()
     ->maxLength(255);
 
+<<<<<<< HEAD
 // Nel file di traduzione (lang/it/fields.php)
 return [
     'first_name' => [
@@ -107,6 +128,16 @@ return [
         'placeholder' => 'Inserisci il nome',
         'helper_text' => 'Il tuo nome di battesimo',
         'description' => 'Nome come appare sui documenti ufficiali'
+=======
+// Nel file di traduzione (lang/it/patient-resource.php)
+return [
+    'fields' => [
+        'first_name' => [
+            'label' => 'Nome',
+            'placeholder' => 'Inserisci il nome',
+            'tooltip' => 'Il tuo nome di battesimo'
+        ]
+>>>>>>> 54f4fa16 (.)
     ]
 ];
 ```
@@ -116,6 +147,7 @@ return [
 2. Supporto multilingua nativo
 3. Manutenzione semplificata
 4. Performance ottimizzate
+<<<<<<< HEAD
 5. Coerenza nell'interfaccia utente
 6. Automazione delle chiavi mancanti
 
@@ -123,6 +155,8 @@ return [
 ✅ **FindDoctorAndAppointmentWidget** - Tutti i campi seguono il pattern LangServiceProvider
 ✅ **File fields.php** - Struttura espansa implementata con tutte le chiavi
 ✅ **Documentazione** - Aggiornata con esempi pratici
+=======
+>>>>>>> 54f4fa16 (.)
 
 ## Collegamenti
 - [Documentazione Traduzioni](translations.md)

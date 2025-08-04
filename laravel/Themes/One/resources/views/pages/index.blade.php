@@ -11,10 +11,15 @@ use Modules\Tenant\Services\TenantService;
 
 /** @var array */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 //$middleware=TenantService::config('middleware');
 //$base_middleware=Arr::get($middleware,'base',[]);
 >>>>>>> aurmich/dev
+=======
+//$middleware=TenantService::config('middleware');
+//$base_middleware=Arr::get($middleware,'base',[]);
+>>>>>>> 54f4fa16 (.)
 $base_middleware=[];
 
 name('home');
@@ -31,6 +36,7 @@ new class extends Component
 
 <x-layouts.app>
 <<<<<<< HEAD
+<<<<<<< HEAD
  @volt('home')
     <div>
         <x-page side="content" slug="home" :type="auth()->user()?->type?->value"/>
@@ -44,4 +50,9 @@ new class extends Component
     </div>
     @endvolt
 >>>>>>> aurmich/dev
+=======
+    <div>
+       <x-page-content slug="home" />
+    </div>
+>>>>>>> 54f4fa16 (.)
 </x-layouts.app>

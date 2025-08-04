@@ -451,6 +451,7 @@ class Doctor extends Model // ❌ Non estende User
 - [ ] Relazioni
 - [ ] Performance
 - [ ] Copertura 
+<<<<<<< HEAD
 
 ## Regole Aggiuntive
 - Le relazioni tra Studio e Doctor devono usare solo belongsToManyX senza chaining superfluo (niente ->using, ->withPivot, ->withTimestamps). Motivazione: DRY, centralizzazione, zen, nessun lock-in. Vedi anche: [<nome progetto>/docs/models/doctor.md](../../laravel/Modules/<nome progetto>/docs/models/doctor.md)
@@ -460,3 +461,5 @@ class Doctor extends Model // ❌ Non estende User
 - Nelle migrazioni che estendono XotBaseMigration non si usa mai $table->timestamps(), ma si usa sempre $this->tableUpdate con updateTimestamps($table, true) dopo la creazione della tabella. Motivazione: centralizzazione, coerenza, DRY, gestione automatica di soft delete e campi utente, filosofia zen. Vedi anche: [<nome progetto>/docs/models/doctor.md](../../laravel/Modules/<nome progetto>/docs/models/doctor.md)
 - Chi estende BasePivot non deve mai dichiarare protected $table: la gestione del nome tabella è centralizzata in BasePivot/Xot. Motivazione: DRY, coerenza, nessun lock-in, filosofia zen. Vedi anche: [<nome progetto>/docs/models/doctor.md](../../laravel/Modules/<nome progetto>/docs/models/doctor.md)
 - Ogni RelationManager che gestisce relazioni cross-db (es. Studio-Doctor) deve implementare AttachAction personalizzato su entrambi i lati, con query manuali e connessione esplicita tramite on(). Motivazione: simmetria, coerenza, nessun lock-in, policy multi-tenant, zen. Vedi anche: [<nome progetto>/docs/filament-relation-managers.md](../../laravel/Modules/<nome progetto>/docs/filament-relation-managers.md)
+=======
+>>>>>>> 54f4fa16 (.)

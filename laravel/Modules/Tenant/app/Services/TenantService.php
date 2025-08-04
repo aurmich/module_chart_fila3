@@ -44,6 +44,10 @@ class TenantService
         if (isRunningTestBench()) {
             return realpath(__DIR__.'/../Config').DIRECTORY_SEPARATOR.$filename;
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 54f4fa16 (.)
         $path = base_path('config/'.self::getName().'/'.$filename);
 
         return str_replace(['/', '\\'], [\DIRECTORY_SEPARATOR, \DIRECTORY_SEPARATOR], $path);
@@ -131,12 +135,15 @@ class TenantService
                 $name = $module->getSnakeName();
                 if (! isset($extra_conf['connections'][$name])) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     // Skip if the default connection doesn't exist in extra_conf (e.g., 'testing' connection)
                     if (! isset($extra_conf['connections'][$default])) {
                         continue;
                     }
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
                     $extra_conf['connections'][$name] = $extra_conf['connections'][$default];
                 }
             }

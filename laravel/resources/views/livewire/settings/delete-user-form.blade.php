@@ -45,6 +45,7 @@ new class extends Component {
             </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             <flux:input wire:model="password" :label="__('Password')" type="password" />
 
             <div class="flex justify-end space-x-2 rtl:space-x-reverse">
@@ -53,6 +54,11 @@ new class extends Component {
 
             <div class="flex justify-end space-x-2">
 >>>>>>> aurmich/dev
+=======
+            <flux:input wire:model="password" :label="__('Password')" type="password" />
+
+            <div class="flex justify-end space-x-2">
+>>>>>>> 54f4fa16 (.)
                 <flux:modal.close>
                     <flux:button variant="filled">{{ __('Cancel') }}</flux:button>
                 </flux:modal.close>

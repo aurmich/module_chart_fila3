@@ -133,9 +133,12 @@ done
 
 # Ripeti lo stesso processo per gli altri moduli
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # ...
 ```
 
@@ -230,9 +233,12 @@ laravel/Themes/[Nome]/
    - Non modificare la gerarchia delle cartelle
    - Usare sempre percorsi relativi
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Versione HEAD
 
    - Documentare le personalizzazioni 
@@ -248,6 +254,7 @@ laravel/Themes/[Nome]/
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 b6f667c (.)
 
 
@@ -256,6 +263,11 @@ b6f667c (.)
 b6f667c (.)
 
 >>>>>>> aurmich/dev
+=======
+=======
+b6f667c (.)
+
+>>>>>>> 54f4fa16 (.)
 # Struttura del Modulo Xot
 
 ## Struttura delle Directory
@@ -293,6 +305,7 @@ Modules/Xot/
    - Mantenere una struttura di directory pulita e organizzata
    - Seguire le convenzioni di Laravel per la struttura delle directory
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ### Versione HEAD
 
@@ -303,6 +316,11 @@ Modules/Xot/
 
    - Utilizzare i namespace appropriati che riflettono la struttura delle directory 
 >>>>>>> aurmich/dev
+=======
+### Versione HEAD
+
+   - Utilizzare i namespace appropriati che riflettono la struttura delle directory 
+>>>>>>> 54f4fa16 (.)
 # Modulo Xot
 
 Data: 2025-04-23 19:09:56
@@ -1079,12 +1097,16 @@ tests_old
 
 aurmich/dev
 <<<<<<< HEAD
+<<<<<<< HEAD
 5693302 (.)
 b6f667c (.)
 
 =======
 5693302 (.)b6f667c (.)
 >>>>>>> aurmich/dev
+=======
+5693302 (.)b6f667c (.)
+>>>>>>> 54f4fa16 (.)
 
 ## Regole sui Comandi Artisan Custom nei Moduli
 

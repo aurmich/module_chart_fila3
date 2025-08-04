@@ -85,9 +85,12 @@ Prima di ogni commit, verificare che le risorse Filament non contengano metodi n
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Cerca risorse che contengono form() o table() o getPages() standard
 grep -r "public static function form" --include="*.php" /path/to/resources
 grep -r "public static function table" --include="*.php" /path/to/resources

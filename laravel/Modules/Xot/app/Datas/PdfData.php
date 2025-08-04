@@ -98,9 +98,12 @@ class PdfData extends Data
                 $html2pdf->output($this->getPath(), $this->dest);
                 break;
 <<<<<<< HEAD
+<<<<<<< HEAD
                 /*
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
             case PdfEngineEnum::SPATIE:
                 Pdf::html($this->html)
                 ->orientation(Orientation::Portrait)
@@ -110,12 +113,16 @@ class PdfData extends Data
                 ->save($this->getPath());
                 ;
 <<<<<<< HEAD
+<<<<<<< HEAD
                 
                 break;
                 */
 =======
                 break;
 >>>>>>> aurmich/dev
+=======
+                break;
+>>>>>>> 54f4fa16 (.)
         }
 
 
@@ -154,11 +161,14 @@ class PdfData extends Data
     public function view(string $view, array $params=[]): self
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if(!view()->exists($view)){
             throw new \Exception('View '.$view.' not found');
         }
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         $out = view($view, $params);
         $this->html = $out->render();
         return $this->fromHtml($this->html);

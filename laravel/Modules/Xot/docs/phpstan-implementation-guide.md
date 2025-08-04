@@ -236,9 +236,12 @@ Creare script di shell per automatizzare l'analisi e la verifica:
 ```bash
 #!/bin/bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # analyze_module.sh
 MODULE=$1
 echo "Analizzando il modulo $MODULE..."
@@ -274,9 +277,12 @@ Ogni modulo dovrebbe documentare le soluzioni ai problemi PHPStan specifici in `
 
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Soluzioni PHPStan per il Modulo NomeModulo
 
 ## Problema: Namespace Errati
@@ -301,6 +307,18 @@ Ogni modulo dovrebbe documentare le soluzioni ai problemi PHPStan specifici in `
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Seguendo questa guida pratica, potrai affrontare e risolvere in modo metodico i problemi rilevati da PHPStan nel tuo codebase Laraxot <nome progetto>, migliorando la qualità complessiva del codice e riducendo gli errori a runtime. 
 >>>>>>> aurmich/dev
+=======
+Seguendo questa guida pratica, potrai affrontare e risolvere in modo metodico i problemi rilevati da PHPStan nel tuo codebase Laraxot <nome progetto>, migliorando la qualità complessiva del codice e riducendo gli errori a runtime. 
+## Collegamenti tra versioni di PHPSTAN-IMPLEMENTATION-GUIDE.md
+* [PHPSTAN-IMPLEMENTATION-GUIDE.md](../../../Xot/docs/phpstan/PHPSTAN-IMPLEMENTATION-GUIDE.md)
+* [PHPSTAN-IMPLEMENTATION-GUIDE.md](../../../Xot/docs/PHPSTAN-IMPLEMENTATION-GUIDE.md)
+
+
+## Collegamenti tra versioni di phpstan-implementation-guide.md
+* [phpstan-implementation-guide.md](phpstan/phpstan-implementation-guide.md)
+
+>>>>>>> 54f4fa16 (.)

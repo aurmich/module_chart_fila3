@@ -5,22 +5,46 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\BaseProfileResource\Pages;
 
 use Filament\Actions\DeleteAction;
+<<<<<<< HEAD
+=======
+use Filament\Actions\EditAction;
+>>>>>>> 54f4fa16 (.)
 use Filament\Infolists\Components;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Infolists\Infolist;
 use Modules\User\Filament\Resources\BaseProfileResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+=======
+use Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager;
+>>>>>>> 54f4fa16 (.)
 
 class ViewProfile extends \Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord
 {
     protected static string $resource = BaseProfileResource::class;
 
+<<<<<<< HEAD
+=======
+    /*
+    protected function getHeaderActions(): array
+    {
+        return [
+            Actions\EditAction::make(),
+            Actions\DeleteAction::make(),
+        ];
+    }
+    */
+>>>>>>> 54f4fa16 (.)
 
     /**
      * @return array<string, \Filament\Infolists\Components\Component>
      */
+<<<<<<< HEAD
     public function getInfolistSchema(): array
+=======
+    public function getInfolistSchema(): array 
+>>>>>>> 54f4fa16 (.)
     {
         return [
             'profile_info' => Components\Section::make()

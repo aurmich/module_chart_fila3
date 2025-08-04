@@ -10,7 +10,11 @@
             {
                 "type": "hero",
                 "data": {
+<<<<<<< HEAD
                     "view": "pub_theme::components.blocks.hero.simple",
+=======
+                    "view": "ui::components.blocks.hero.simple",
+>>>>>>> 54f4fa16 (.)
                     "title": "Chi Siamo",
                     "subtitle": "Scopri la nostra storia e la nostra missione",
                     "image": "\/img\/about-hero.jpg",
@@ -24,7 +28,11 @@
             {
                 "type": "feature_sections",
                 "data": {
+<<<<<<< HEAD
                     "view": "pub_theme::components.blocks.feature_sections.v1",
+=======
+                    "view": "ui::components.blocks.feature_sections.v1",
+>>>>>>> 54f4fa16 (.)
                     "title": "La Nostra Missione",
                     "sections": [
                         {
@@ -48,7 +56,11 @@
             {
                 "type": "team",
                 "data": {
+<<<<<<< HEAD
                     "view": "pub_theme::components.blocks.team.v1",
+=======
+                    "view": "ui::components.blocks.team.v1",
+>>>>>>> 54f4fa16 (.)
                     "title": "Il Nostro Team",
                     "description": "Professionisti dedicati al tuo benessere",
                     "members": [
@@ -70,7 +82,11 @@
             {
                 "type": "stats",
                 "data": {
+<<<<<<< HEAD
                     "view": "pub_theme::components.blocks.stats.v1",
+=======
+                    "view": "ui::components.blocks.stats.v1",
+>>>>>>> 54f4fa16 (.)
                     "title": "I Nostri Numeri",
                     "stats": [
                         {
@@ -91,7 +107,11 @@
             {
                 "type": "cta",
                 "data": {
+<<<<<<< HEAD
                     "view": "pub_theme::components.blocks.cta.v1",
+=======
+                    "view": "ui::components.blocks.cta.v1",
+>>>>>>> 54f4fa16 (.)
                     "title": "Pronto a Iniziare?",
                     "description": "Contattaci per una consulenza personalizzata",
                     "button_text": "Contattaci",
@@ -118,4 +138,8 @@
     "updated_at": "2025-04-28T17:37:51.000000Z",
     "created_by": "9c63325e-ce65-4632-bc54-1ef576839de5",
     "updated_by": "01967bd5-7a4d-71c6-b1aa-594f6e9dee10"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 54f4fa16 (.)

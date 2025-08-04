@@ -138,6 +138,7 @@ return array (
     array (
       'label' => 'reorderRecords',
     ),
+<<<<<<< HEAD
     'resetFilters' => 
     array (
       'label' => 'resetFilters',
@@ -146,6 +147,8 @@ return array (
     array (
       'label' => 'applyFilters',
     ),
+=======
+>>>>>>> 54f4fa16 (.)
   ),
   'actions' => 
   array (

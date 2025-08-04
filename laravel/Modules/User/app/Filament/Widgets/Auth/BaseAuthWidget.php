@@ -31,6 +31,7 @@ abstract class BaseAuthWidget extends Widget
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 345f8677 (phpstan)
 
@@ -46,4 +47,6 @@ abstract class BaseAuthWidget extends Widget
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 345f8677 (phpstan)
+=======
+>>>>>>> 54f4fa16 (.)
 }

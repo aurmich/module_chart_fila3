@@ -18,9 +18,12 @@ namespace Modules\Tenant\Repositories;
 ```php
 namespace Modules\Xot\app\Console\Commands;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Versione HEAD
 
 
@@ -53,6 +56,7 @@ Modules/
 
 ## Motivazione
 Questa convenzione:
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -151,6 +155,8 @@ php artisan phpstan:analyse --level=1 Modules/SaluteOra
 ```
 
 ## motivazione di questa convenzione
+=======
+>>>>>>> 54f4fa16 (.)
 - Mantiene i namespace puliti e coerenti
 - Evita confusione con la struttura delle directory
 - Facilita l'autoloading e la navigazione del codice
@@ -161,6 +167,7 @@ php artisan phpstan:analyse --level=1 Modules/SaluteOra
 - Non ci sono eccezioni a questa regola
 - I file possono essere fisicamente in `app/` ma il namespace non deve rifletterlo
 - Questa convenzione è obbligatoria per mantenere la compatibilità con il framework
+<<<<<<< HEAD
 
 ## Errori Comuni
 
@@ -224,3 +231,5 @@ php artisan cache:clear
 php artisan config:clear
 php artisan view:clear
 ```
+=======
+>>>>>>> 54f4fa16 (.)

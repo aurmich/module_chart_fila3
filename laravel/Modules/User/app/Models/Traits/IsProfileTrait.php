@@ -55,10 +55,14 @@ trait IsProfileTrait
         $userClass = XotData::make()->getUserClass();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         // @phpstan-ignore return.type
 =======
         // @phpstan-ignore-next-line
 >>>>>>> aurmich/dev
+=======
+        // @phpstan-ignore-next-line
+>>>>>>> 54f4fa16 (.)
         return $this->belongsTo($userClass);
     }
 
@@ -221,10 +225,14 @@ trait IsProfileTrait
     public function mobileDevices(): BelongsToMany
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         // @phpstan-ignore return.type
 =======
         // @phpstan-ignore-next-line
 >>>>>>> aurmich/dev
+=======
+        // @phpstan-ignore-next-line
+>>>>>>> 54f4fa16 (.)
         return $this->belongsToMany(Device::class, 'mobile_device_users', 'profile_id', 'device_id')
             ->withPivot('token')
             ->withTimestamps();
@@ -237,7 +245,14 @@ trait IsProfileTrait
      */
     public function devices(): BelongsToMany
     {
+<<<<<<< HEAD
         return $this->belongsToManyX(Device::class);
+=======
+        // @phpstan-ignore-next-line
+        return $this->belongsToMany(Device::class, 'device_users', 'profile_id', 'device_id')
+            ->withPivot('token')
+            ->withTimestamps();
+>>>>>>> 54f4fa16 (.)
     }
 
     /**
@@ -248,10 +263,14 @@ trait IsProfileTrait
     public function mobileDeviceUsers(): HasMany
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         // @phpstan-ignore return.type
 =======
         // @phpstan-ignore-next-line
 >>>>>>> aurmich/dev
+=======
+        // @phpstan-ignore-next-line
+>>>>>>> 54f4fa16 (.)
         return $this->hasMany(DeviceUser::class, 'profile_id')->where('type', 'mobile');
     }
 
@@ -263,10 +282,14 @@ trait IsProfileTrait
     public function deviceUsers(): HasMany
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         // @phpstan-ignore return.type
 =======
         // @phpstan-ignore-next-line
 >>>>>>> aurmich/dev
+=======
+        // @phpstan-ignore-next-line
+>>>>>>> 54f4fa16 (.)
         return $this->hasMany(DeviceUser::class, 'profile_id');
     }
 

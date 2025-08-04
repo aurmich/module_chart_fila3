@@ -1,15 +1,21 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
 >>>>>>> aurmich/dev
+=======
+declare(strict_types=1);
+
+>>>>>>> 54f4fa16 (.)
 return [
     'fields' => [
         'name' => 'Name',
         'name.placeholder' => 'Enter tenant name',
         'name.helper_text' => 'The organization name',
+<<<<<<< HEAD
 <<<<<<< HEAD
         'slug' => 'Slug',
         'slug.helper_text' => 'Unique identifier automatically generated from name',
@@ -30,6 +36,8 @@ return [
         'secondary_color' => 'Secondary Color',
         'secondary_color.helper_text' => 'Secondary brand color',
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 
         'slug' => 'Slug',
         'slug.helper_text' => 'Unique identifier automatically generated from name',
@@ -56,7 +64,10 @@ return [
         'secondary_color' => 'Secondary Color',
         'secondary_color.helper_text' => 'Secondary brand color',
 
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         'domain' => 'Domain',
         'domain.placeholder' => 'Enter domain',
         'domain.helper_text' => 'Custom domain for this tenant',

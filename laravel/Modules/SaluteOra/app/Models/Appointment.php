@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Models;
 
+<<<<<<< HEAD
 use Spatie\ModelStates\HasStates;
 use Spatie\Activitylog\LogOptions;
 use Illuminate\Database\Eloquent\Model;
@@ -119,10 +120,44 @@ class Appointment extends BaseModel implements HasStatesContract
      * Gli attributi che sono mass assignable.
      *
      * @var list<string>
+=======
+use Illuminate\Database\Eloquent\Model;
+use Spatie\Activitylog\Traits\LogsActivity;
+use Spatie\Activitylog\LogOptions;
+
+/**
+ * Appointment Model for the Patient Module.
+ *
+ * Represents an appointment booked by a patient with a doctor.
+ */
+class Appointment extends Model
+{
+    use LogsActivity;
+
+    /**
+     * The connection to the database.
+     *
+     * @var string
+     */
+    protected $connection = 'mysql';
+
+    /**
+     * The table associated with the model.
+     *
+     * @var string
+     */
+    protected $table = 'appointments';
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+>>>>>>> 54f4fa16 (.)
      */
     protected $fillable = [
         'patient_id',
         'doctor_id',
+<<<<<<< HEAD
         'studio_id',
         //'tenant_id',
         'title',
@@ -138,11 +173,19 @@ class Appointment extends BaseModel implements HasStatesContract
         'starts_at',
         'ends_at',
         'invoice',//fattura
+=======
+        'appointment_date',
+        'appointment_time',
+        'status',
+        'reason',
+        'notes',
+>>>>>>> 54f4fa16 (.)
     ];
 
     /**
      * The attributes that should be cast.
      *
+<<<<<<< HEAD
      * @return array<string, string>
      */
     protected function casts(): array
@@ -159,6 +202,14 @@ class Appointment extends BaseModel implements HasStatesContract
             'ends_at' => 'datetime',
         ]);
     }
+=======
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'appointment_date' => 'datetime',
+        'appointment_time' => 'datetime',
+    ];
+>>>>>>> 54f4fa16 (.)
 
     /**
      * Get the options for activity logging.
@@ -168,6 +219,7 @@ class Appointment extends BaseModel implements HasStatesContract
     public function getActivitylogOptions(): LogOptions
     {
         return LogOptions::defaults()
+<<<<<<< HEAD
             ->logOnly([
                 'patient_id',
                 'doctor_id',
@@ -178,6 +230,9 @@ class Appointment extends BaseModel implements HasStatesContract
                 'notes',
                 'state',
             ])
+=======
+            ->logOnly(['patient_id', 'doctor_id', 'appointment_date', 'appointment_time', 'status', 'reason', 'notes'])
+>>>>>>> 54f4fa16 (.)
             ->logOnlyDirty()
             ->dontSubmitEmptyLogs();
     }
@@ -185,9 +240,15 @@ class Appointment extends BaseModel implements HasStatesContract
     /**
      * Get the patient that booked the appointment.
      *
+<<<<<<< HEAD
      * @return BelongsTo<Patient, Appointment>
      */
     public function patient(): BelongsTo
+=======
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function patient()
+>>>>>>> 54f4fa16 (.)
     {
         return $this->belongsTo(Patient::class);
     }
@@ -195,6 +256,7 @@ class Appointment extends BaseModel implements HasStatesContract
     /**
      * Get the doctor for the appointment.
      *
+<<<<<<< HEAD
      * @return BelongsTo<Doctor, Appointment>
      */
     public function doctor(): BelongsTo
@@ -370,4 +432,12 @@ class Appointment extends BaseModel implements HasStatesContract
               ->orWhere('type', AppointmentTypeEnum::EMERGENCY);
         });
     }
+=======
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function doctor()
+    {
+        return $this->belongsTo(Doctor::class);
+    }
+>>>>>>> 54f4fa16 (.)
 }

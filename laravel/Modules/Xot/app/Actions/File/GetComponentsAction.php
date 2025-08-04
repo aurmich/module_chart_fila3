@@ -38,7 +38,10 @@ class GetComponentsAction
         }
 
         $exists = File::exists($components_json);
+<<<<<<< HEAD
         
+=======
+>>>>>>> 54f4fa16 (.)
         if ($exists && ! $force_recreate) {
             Assert::string($content = File::get($components_json), '['.__LINE__.']['.class_basename(static::class).']');
             $comps = json_decode($content, false);
@@ -48,9 +51,12 @@ class GetComponentsAction
             return ComponentFileData::collection($comps);
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 
         $files = File::allFiles($path);
         $comps = [];
@@ -89,15 +95,24 @@ class GetComponentsAction
                 if ($reflection->isAbstract()) {
                     continue;
                 }
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> 54f4fa16 (.)
                 $comps[] = ComponentFileData::from([
                     'name' => $comp_name,
                     'class' => $class_name,
                     'ns' => $comp_ns,
                 ])->toArray();
+<<<<<<< HEAD
                 
             } catch (\Exception $e) {
                 /*
+=======
+
+            } catch (\Exception $e) {
+>>>>>>> 54f4fa16 (.)
                 dddx([
                     'comp_name' => $comp_name,
                     'class_name' => $class_name,
@@ -107,8 +122,11 @@ class GetComponentsAction
                     'prefix' => $prefix,
                     'message' => $e->getMessage(),
                 ]);
+<<<<<<< HEAD
                 */
                 throw $e;
+=======
+>>>>>>> 54f4fa16 (.)
             }
         }
 

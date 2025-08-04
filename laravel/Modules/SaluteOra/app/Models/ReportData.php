@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * ReportData model per i dati dettagliati dei report.
+<<<<<<< HEAD
  *
  * @property int $id
  * @property int $report_id
@@ -48,13 +49,19 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|ReportData whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|ReportData whereValue($value)
  * @mixin \Eloquent
+=======
+>>>>>>> 54f4fa16 (.)
  */
 class ReportData extends BaseModel
 {
     /**
+<<<<<<< HEAD
      * Gli attributi che sono mass assignable.
      *
      * @var list<string>
+=======
+     * @var array<int, string>
+>>>>>>> 54f4fa16 (.)
      */
     protected $fillable = [
         'report_id',

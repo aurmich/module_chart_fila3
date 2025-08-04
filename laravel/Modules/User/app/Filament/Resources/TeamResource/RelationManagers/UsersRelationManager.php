@@ -8,7 +8,11 @@ use Filament\Forms\Form;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Modules\User\Filament\Resources\UserResource;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+=======
+use Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager;
+>>>>>>> 54f4fa16 (.)
 use Filament\Tables;
 
 class UsersRelationManager extends XotBaseRelationManager
@@ -30,7 +34,11 @@ class UsersRelationManager extends XotBaseRelationManager
             'role' => TextColumn::make('role'),
         ];
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 54f4fa16 (.)
     /**
      * @return array<string, \Filament\Tables\Actions\Action>
      */
@@ -40,7 +48,11 @@ class UsersRelationManager extends XotBaseRelationManager
             'attach' => Tables\Actions\AttachAction::make(),
         ];
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 54f4fa16 (.)
     /**
      * @return array<string, \Filament\Tables\Actions\Action|\Filament\Tables\Actions\ActionGroup>
      */
@@ -53,7 +65,11 @@ class UsersRelationManager extends XotBaseRelationManager
             'delete' => Tables\Actions\DeleteAction::make(),
         ];
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 54f4fa16 (.)
     /**
      * @return array<string, \Filament\Tables\Actions\BulkAction>
      */

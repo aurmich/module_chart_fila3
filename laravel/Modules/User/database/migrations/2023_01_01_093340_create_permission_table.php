@@ -45,6 +45,7 @@ return new class extends XotBaseMigration
         try {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
             // Verifica se l'applicazione è completamente inizializzata
@@ -58,17 +59,22 @@ return new class extends XotBaseMigration
             // Silently ignore cache errors during package discovery
             // echo $e->getMessage();
 =======
+=======
+>>>>>>> 54f4fa16 (.)
             app('cache')
                 ->store($cache_store !== 'default' ? $cache_store : null)
                 ->forget($cache_key);
         } catch (Exception $e) {
             echo $e->getMessage();
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
         } catch (Exception $e) {
             // Silently ignore cache errors during package discovery
             // echo $e->getMessage();
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+>>>>>>> 54f4fa16 (.)
         }
     }
 

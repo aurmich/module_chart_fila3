@@ -39,7 +39,11 @@ return [
         ],
 
         'database' => [
+<<<<<<< HEAD
             'driver' => 'database',
+=======
+            'driver' => 'file',
+>>>>>>> 54f4fa16 (.)
             'connection' => env('DB_CACHE_CONNECTION'),
             'table' => env('DB_CACHE_TABLE', 'cache'),
             'lock_connection' => env('DB_CACHE_LOCK_CONNECTION'),
@@ -104,9 +108,13 @@ return [
     */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     'prefix' => env('CACHE_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_cache_'),
 =======
     'prefix' => env('CACHE_PREFIX', Str::slug(env('APP_NAME', 'laravel')).'-cache-'),
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+    'prefix' => env('CACHE_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_cache_'),
+>>>>>>> 54f4fa16 (.)
 
 ];

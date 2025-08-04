@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\Xot\Traits\Updater;
 
 // BaseModel in same namespace provides common behaviors
+<<<<<<< HEAD
 /**
  * @property-read \Modules\User\Models\Profile|null $creator
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
@@ -20,6 +21,8 @@ use Modules\Xot\Traits\Updater;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|NotificationTemplateVersion query()
  * @mixin \Eloquent
  */
+=======
+>>>>>>> 54f4fa16 (.)
 class NotificationTemplateVersion extends BaseModel
 {
     use Updater;
@@ -37,6 +40,7 @@ class NotificationTemplateVersion extends BaseModel
         'change_notes',
     ];
 
+<<<<<<< HEAD
     /**
      * Get the attributes that should be cast.
      *
@@ -50,6 +54,13 @@ class NotificationTemplateVersion extends BaseModel
             'conditions' => 'array',
         ];
     }
+=======
+    protected $casts = [
+        'channels' => 'array',
+        'variables' => 'array',
+        'conditions' => 'array',
+    ];
+>>>>>>> 54f4fa16 (.)
 
     public function template(): BelongsTo
     {
@@ -60,6 +71,7 @@ class NotificationTemplateVersion extends BaseModel
     {
         $template = $this->template;
         
+<<<<<<< HEAD
         if (!$template) {
             throw new \RuntimeException('Template not found for version ' . $this->id);
         }
@@ -71,6 +83,15 @@ class NotificationTemplateVersion extends BaseModel
             'channels' => $this->channels ?? null,
             'variables' => $this->variables ?? null,
             'conditions' => $this->conditions ?? null,
+=======
+        $template->update([
+            'subject' => $this->subject,
+            'body_html' => $this->body_html,
+            'body_text' => $this->body_text,
+            'channels' => $this->channels,
+            'variables' => $this->variables,
+            'conditions' => $this->conditions,
+>>>>>>> 54f4fa16 (.)
         ]);
 
         return $template;

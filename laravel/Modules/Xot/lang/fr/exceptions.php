@@ -55,10 +55,14 @@ return [
                 'mismatch' => 'Votre code de confirmation est invalide.',
                 'not_found' => "Votre code de confirmation n'existe pas.",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'resend' => 'Votre compte n\'est pas confirmé. Veuillez utiliser le lien qui vous a été envoyé par email, ou cliquez ici </a> pour recevoir un email de nouveau.',
 =======
                 'resend' => 'Votre compte n\'est pas confirmé. Veuillez utiliser le lien qui vous a été envoyé par email, ou <a href="'.route('frontend.auth.account.confirm.resend', ':user_id').'">cliquez ici </a> pour recevoir un email de nouveau.',
 >>>>>>> aurmich/dev
+=======
+                'resend' => 'Votre compte n\'est pas confirmé. Veuillez utiliser le lien qui vous a été envoyé par email, ou <a href="'.route('frontend.auth.account.confirm.resend', ':user_id').'">cliquez ici </a> pour recevoir un email de nouveau.',
+>>>>>>> 54f4fa16 (.)
                 'success' => 'Votre compte est dorénavant confirmé !',
                 'resent' => "Un nouvel email a été envoyé à l'adresse enregistrée.",
             ],

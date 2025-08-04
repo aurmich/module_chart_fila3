@@ -64,9 +64,12 @@ PHPStan offre più livelli di rigore nell'analisi (da 0 a 10). Il framework Lara
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Analisi a livello 9 (standard corrente)
 ./vendor/bin/phpstan analyse Modules/NomeModulo --level=9
 
@@ -199,9 +202,12 @@ public function post(): \Illuminate\Database\Eloquent\Relations\BelongsTo
 
 ```yaml
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Esempio per GitHub Actions
 name: PHPStan
 
@@ -234,9 +240,12 @@ Seguendo questa guida, sarai in grado di utilizzare efficacemente PHPStan all'in
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Dalla directory laravel del progetto
 cd /percorso/al/progetto/laravel
 
@@ -249,6 +258,27 @@ cd /percorso/al/progetto/laravel
 # Analisi con output dettagliato
 ./vendor/bin/phpstan analyse Modules/NomeModulo --level=9 --verbose
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ``` 
 >>>>>>> aurmich/dev
+=======
+``` 
+## Collegamenti tra versioni di PHPSTAN-USAGE-GUIDE.md
+* [PHPSTAN-USAGE-GUIDE.md](../../../Xot/docs/phpstan/PHPSTAN-USAGE-GUIDE.md)
+* [PHPSTAN-USAGE-GUIDE.md](../../../Xot/docs/PHPSTAN-USAGE-GUIDE.md)
+
+
+## Collegamenti tra versioni di phpstan-usage-guide.md
+### Versione HEAD
+
+* [phpstan-usage-guide.md](../phpstan-usage-guide.md)
+
+### Versione Incoming
+
+* [phpstan-usage-guide.md](phpstan/phpstan-usage-guide.md)
+
+---
+
+
+>>>>>>> 54f4fa16 (.)

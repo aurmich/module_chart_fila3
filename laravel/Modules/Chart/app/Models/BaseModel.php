@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Chart\Models;
 
+<<<<<<< HEAD
 use Modules\Xot\Traits\Updater;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Contracts\ProfileContract;
@@ -17,6 +18,18 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
  *
+=======
+// ---------- traits
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+// //use Laravel\Scout\Searchable;
+use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Actions\Factory\GetFactoryAction;
+use Modules\Xot\Traits\Updater;
+
+/**
+ * Class BaseModel.
+>>>>>>> 54f4fa16 (.)
  */
 abstract class BaseModel extends Model
 {
@@ -47,6 +60,7 @@ abstract class BaseModel extends Model
     /** @var string */
     protected $connection = 'chart';
 
+<<<<<<< HEAD
     /**
      * Get the attributes that should be cast.
      *
@@ -56,6 +70,10 @@ abstract class BaseModel extends Model
     {
         return ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
     }
+=======
+    /** @var array<string, string> */
+    protected $casts = ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
+>>>>>>> 54f4fa16 (.)
 
     /** @var string */
     protected $primaryKey = 'id';

@@ -758,6 +758,7 @@ Ogni blocco dovrebbe avere test per:
 * [blocks.md](laravel/Themes/One/docs/blocks.md)
 * [blocks.md](laravel/Themes/One/docs/components/blocks.md)
 
+<<<<<<< HEAD
 ## Blocco Estetico (Aesthetic Block)
 Per creare componenti di tipo blocco eleganti e armoniosi, segui queste linee guida:
 
@@ -790,3 +791,5 @@ Per creare componenti di tipo blocco eleganti e armoniosi, segui queste linee gu
 ```
 
 > **Nota**: Questo blocco utilizza il plugin [filament-spatie-translatable](https://github.com/filamentphp/spatie-laravel-translatable-plugin) per gestire automaticamente le traduzioni. Di conseguenza, nei template Blade dei blocchi puoi usare direttamente le variabili translatabili come `$title`, `$subtitle` senza accedere manualmente all'array di data.
+=======
+>>>>>>> 54f4fa16 (.)

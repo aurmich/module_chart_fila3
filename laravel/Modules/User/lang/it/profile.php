@@ -5,6 +5,7 @@ declare(strict_types=1);
 return [
     'navigation' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'label' => 'Profilo',
         'plural' => 'Profili',
         'group' => [
@@ -50,6 +51,8 @@ return [
             'label' => 'Attivo',
             'help' => 'Stato attivo del profilo',
 =======
+=======
+>>>>>>> 54f4fa16 (.)
         'name' => 'Profilo',
         'plural' => 'Profili',
         'group' => [
@@ -94,7 +97,10 @@ return [
             'confirm_password' => 'Conferma Password',
             'two_factor' => 'Autenticazione a Due Fattori',
             'recovery_codes' => 'Codici di Recupero',
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         ],
         'id' => [
             'label' => 'ID',
@@ -105,6 +111,7 @@ return [
         'matr' => [
             'label' => 'Matricola',
         ],
+<<<<<<< HEAD
 <<<<<<< HEAD
         // ... altri campi ...
     ],
@@ -125,6 +132,8 @@ return [
         'no_permission' => 'Non hai i permessi per modificare questo profilo.',
     ],
 =======
+=======
+>>>>>>> 54f4fa16 (.)
         'first_name' => [
             'label' => 'Nome',
             'fields' => [
@@ -173,6 +182,7 @@ return [
         ],
         'notify' => 'Profilo aggiornato correttamente!',
     ],
+<<<<<<< HEAD
     'edit_profile_title' => 'Modifica Profilo',
     'edit_tooltip' => 'Modifica i tuoi dati',
     'save_changes' => 'Salva Modifiche',
@@ -181,4 +191,6 @@ return [
     'no_permission' => 'Non hai i permessi per modificare questo profilo.',
     'profile' => 'Profilo',
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ];

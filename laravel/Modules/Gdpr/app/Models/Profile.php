@@ -45,6 +45,10 @@ use Modules\User\Models\BaseProfile;
  * @property int|null                                                                                                      $teams_count
  * @property \Modules\Xot\Contracts\UserContract|null                                                                      $user
  * @property string|null                                                                                                   $user_name
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> 54f4fa16 (.)
  * @method static \Modules\Gdpr\Database\Factories\ProfileFactory   factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|Profile     newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Profile     newQuery()
@@ -68,8 +72,15 @@ use Modules\User\Models\BaseProfile;
  * @method static \Illuminate\Database\Eloquent\Builder|BaseProfile withExtraAttributes()
  * @method static \Illuminate\Database\Eloquent\Builder|BaseProfile withoutPermission($permissions)
  * @method static \Illuminate\Database\Eloquent\Builder|BaseProfile withoutRole($roles, $guard = null)
+<<<<<<< HEAD
  * @property string|null $deleted_by
  * @property int         $is_active
+=======
+ *
+ * @property string|null $deleted_by
+ * @property int         $is_active
+ *
+>>>>>>> 54f4fa16 (.)
  * @method static \Modules\Gdpr\Database\Factories\ProfileFactory   factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|Profile     newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Profile     newQuery()
@@ -93,8 +104,15 @@ use Modules\User\Models\BaseProfile;
  * @method static \Illuminate\Database\Eloquent\Builder|BaseProfile withExtraAttributes()
  * @method static \Illuminate\Database\Eloquent\Builder|BaseProfile withoutPermission($permissions)
  * @method static \Illuminate\Database\Eloquent\Builder|BaseProfile withoutRole($roles, $guard = null)
+<<<<<<< HEAD
  * @property string|null $deleted_by
  * @property int         $is_active
+=======
+ *
+ * @property string|null $deleted_by
+ * @property int         $is_active
+ *
+>>>>>>> 54f4fa16 (.)
  * @method static \Modules\Gdpr\Database\Factories\ProfileFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|Profile   newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Profile   newQuery()
@@ -113,12 +131,17 @@ use Modules\User\Models\BaseProfile;
  * @method static \Illuminate\Database\Eloquent\Builder|Profile   whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Profile   whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Profile   whereUserId($value)
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> 54f4fa16 (.)
  * @property \Modules\User\Models\DeviceUser             $pivot
  * @property \Modules\User\Models\Membership             $membership
  * @property string $credits
  * @property string|null                                 $slug
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
+<<<<<<< HEAD
  * @method static \Illuminate\Database\Eloquent\Builder|Profile whereCredits($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Profile whereExtra($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Profile whereSlug($value)
@@ -141,6 +164,23 @@ use Modules\User\Models\BaseProfile;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile whereCountry($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile wherePhone($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile wherePostalCode($value)
+=======
+ *
+ * @method static \Illuminate\Database\Eloquent\Builder|Profile whereCredits($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Profile whereExtra($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Profile whereSlug($value)
+ *
+ * @property int $oauth_enable
+ * @property int $credentials_enable
+ *
+ * @method static \Illuminate\Database\Eloquent\Builder|Profile whereCredentialsEnable($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Profile whereOauthEnable($value)
+ *
+ * @property string $uuid
+ *
+ * @method static \Illuminate\Database\Eloquent\Builder|Profile whereUuid($value)
+ *
+>>>>>>> 54f4fa16 (.)
  * @mixin \Eloquent
  */
 class Profile extends BaseProfile

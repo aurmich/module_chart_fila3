@@ -70,6 +70,7 @@ class XotComposer
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if(class_exists('\Jenssegers\Agent\Agent')){
             $agent = new \Jenssegers\Agent\Agent();
             $view->with('isMobile', $agent->isMobile());
@@ -84,10 +85,13 @@ class XotComposer
 =======
 =======
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+>>>>>>> 54f4fa16 (.)
         if (Auth::check()) {
             $profile = XotData::make()->getProfileModel();
             $view->with('_profile', $profile);
             $view->with('_user', auth()->user());
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
@@ -131,6 +135,8 @@ class XotComposer
 >>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
 =======
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+>>>>>>> 54f4fa16 (.)
         }
     }
 

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Export;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
@@ -22,6 +23,16 @@ use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 /**
  * Classe per l'esportazione di collezioni in formato Excel.
  */
+=======
+use Illuminate\Support\Collection;
+use Maatwebsite\Excel\Facades\Excel;
+use Modules\Xot\Exports\CollectionExport;
+use Spatie\QueueableAction\QueueableAction;
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
+
+>>>>>>> 54f4fa16 (.)
 class ExportXlsByCollection
 {
     use QueueableAction;
@@ -29,6 +40,7 @@ class ExportXlsByCollection
     /**
      * Esporta una collezione in Excel.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @param Collection<int|string, mixed>|EloquentCollection<int, \Illuminate\Database\Eloquent\Model> $collection La collezione da esportare
 =======
@@ -46,10 +58,22 @@ class ExportXlsByCollection
 =======
         Collection $collection,
 >>>>>>> aurmich/dev
+=======
+     * @param Collection $collection La collezione da esportare
+     * @param string $filename Nome del file Excel
+     * @param string|null $transKey Chiave di traduzione per i campi
+     * @param array<int, string> $fields Campi da includere nell'export
+     * 
+     * @return BinaryFileResponse
+     */
+    public function execute(
+        Collection $collection,
+>>>>>>> 54f4fa16 (.)
         string $filename = 'test.xlsx',
         ?string $transKey = null,
         array $fields = [],
     ): BinaryFileResponse {
+<<<<<<< HEAD
 <<<<<<< HEAD
         // Converte EloquentCollection in Support\Collection se necessario
         if ($collection instanceof EloquentCollection) {
@@ -67,6 +91,12 @@ class ExportXlsByCollection
             return strval($field);
         }, array_values($fields));
 >>>>>>> aurmich/dev
+=======
+        // Assicuriamo che $fields sia un array di stringhe
+        $stringFields = array_map(function (string|int|float|bool $field): string {
+            return (string) $field;
+        }, array_values($fields));
+>>>>>>> 54f4fa16 (.)
 
         $export = new CollectionExport(
             collection: $collection,
@@ -80,6 +110,7 @@ class ExportXlsByCollection
     /**
      * Esporta una collezione in Excel utilizzando PhpSpreadsheet direttamente.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @param Collection<int|string, mixed>|EloquentCollection<int, \Illuminate\Database\Eloquent\Model> $rows La collezione da esportare
 =======
@@ -102,6 +133,16 @@ class ExportXlsByCollection
     public function executeWithSpreadsheet(Collection $rows, array $fields, string $filename): string
     {
 >>>>>>> aurmich/dev
+=======
+     * @param Collection $rows La collezione da esportare
+     * @param array<string> $fields Campi da includere nell'export
+     * @param string $filename Nome del file Excel
+     * 
+     * @return string Il percorso del file generato
+     */
+    public function executeWithSpreadsheet(Collection $rows, array $fields, string $filename): string
+    {
+>>>>>>> 54f4fa16 (.)
         $spreadsheet = new Spreadsheet();
         $sheet = $spreadsheet->getActiveSheet();
 
@@ -117,10 +158,17 @@ class ExportXlsByCollection
     /**
      * Scrive l'intestazione nel foglio Excel.
      *
+<<<<<<< HEAD
      * @param Worksheet $sheet Il foglio Excel
      * @param array<int, string> $fields I campi da utilizzare come intestazioni
      */
     protected function writeHeader(Worksheet $sheet, array $fields): void
+=======
+     * @param \PhpOffice\PhpSpreadsheet\Worksheet\Worksheet $sheet Il foglio Excel
+     * @param array<string> $fields I campi da utilizzare come intestazioni
+     */
+    protected function writeHeader(\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet $sheet, array $fields): void
+>>>>>>> 54f4fa16 (.)
     {
         foreach ($fields as $col => $field) {
             $sheet->setCellValueByColumnAndRow($col + 1, 1, $field);
@@ -130,18 +178,29 @@ class ExportXlsByCollection
     /**
      * Scrive le righe nel foglio di lavoro.
      *
+<<<<<<< HEAD
      * @param Worksheet $sheet Il foglio di lavoro
      * @param Collection<int|string, mixed> $rows I dati da scrivere
      * @param array<int, string> $fields I campi da utilizzare per le colonne
      */
     protected function writeRows(Worksheet $sheet, Collection $rows, array $fields): void
+=======
+     * @param \PhpOffice\PhpSpreadsheet\Worksheet\Worksheet $sheet Il foglio di lavoro
+     * @param \Illuminate\Support\Collection $rows I dati da scrivere
+     * @param array<string> $fields I campi da utilizzare per le colonne
+     */
+    protected function writeRows(\PhpOffice\PhpSpreadsheet\Worksheet\Worksheet $sheet, Collection $rows, array $fields): void
+>>>>>>> 54f4fa16 (.)
     {
         $row = 2;
         foreach ($rows as $data) {
             foreach ($fields as $col => $field) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $value = $this->extractValue($data, $field);
 =======
+=======
+>>>>>>> 54f4fa16 (.)
                 $value = '';
 
                 // Verifica che $data supporti il metodo get
@@ -153,12 +212,16 @@ class ExportXlsByCollection
                     $value = $data->{$field} ?? '';
                 }
 
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
                 $sheet->setCellValueByColumnAndRow($col + 1, $row, $value);
             }
             $row++;
         }
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     /**
@@ -187,4 +250,6 @@ class ExportXlsByCollection
     }
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 }

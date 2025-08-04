@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "file": "assets/app-7PoISLAE.css",
 =======
 <<<<<<< HEAD
@@ -84,6 +85,9 @@
 =======
     "file": "assets/app-Cq5pA5gf.css",
 >>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
+=======
+    "file": "assets/app-C7OaeTzW.css",
+>>>>>>> 54f4fa16 (.)
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -94,7 +98,11 @@
     "isEntry": true
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> aurmich/dev
+=======
+}
+>>>>>>> 54f4fa16 (.)

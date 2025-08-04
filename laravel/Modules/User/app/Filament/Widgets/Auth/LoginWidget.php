@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Widgets\Auth;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Illuminate\Support\Facades\Auth;
+<<<<<<< HEAD
 use Filament\Forms\ComponentContainer;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
@@ -23,10 +24,15 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
 >>>>>>> aurmich/dev
  * @property ComponentContainer $form
  */
+=======
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+
+>>>>>>> 54f4fa16 (.)
 class LoginWidget extends XotBaseWidget
 {
     public ?array $data = [];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * Blade view del widget nel modulo User.
@@ -41,32 +47,47 @@ class LoginWidget extends XotBaseWidget
 =======
     protected static string $view = 'user::filament.widgets.auth.login';
 >>>>>>> aurmich/dev
+=======
+    protected static string $view = 'user::filament.widgets.auth.login';
+>>>>>>> 54f4fa16 (.)
 
     public function getFormSchema(): array
     {
         return [
             Forms\Components\TextInput::make('email')
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 ->label(__('user::auth.email'))
 >>>>>>> aurmich/dev
+=======
+                ->label(__('user::auth.email'))
+>>>>>>> 54f4fa16 (.)
                 ->email()
                 ->required(),
 
             Forms\Components\TextInput::make('password')
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 ->label(__('user::auth.password'))
 >>>>>>> aurmich/dev
+=======
+                ->label(__('user::auth.password'))
+>>>>>>> 54f4fa16 (.)
                 ->password()
                 ->required(),
 
             Forms\Components\Checkbox::make('remember')
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ,
 =======
                 ->label(__('user::auth.remember_me')),
 >>>>>>> aurmich/dev
+=======
+                ->label(__('user::auth.remember_me')),
+>>>>>>> 54f4fa16 (.)
         ];
     }
 
@@ -74,6 +95,7 @@ class LoginWidget extends XotBaseWidget
     {
         $data = $this->form->getState();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         $credentials = [
             'email' => is_string($data['email'] ?? null) ? $data['email'] : '',
@@ -88,6 +110,11 @@ class LoginWidget extends XotBaseWidget
             session()->regenerate();
             redirect()->intended(route('filament.admin.pages.dashboard'));
 >>>>>>> aurmich/dev
+=======
+        if (Auth::attempt($data)) {
+            session()->regenerate();
+            redirect()->intended(route('filament.admin.pages.dashboard'));
+>>>>>>> 54f4fa16 (.)
         }
 
         $this->addError('email', __('auth.failed'));

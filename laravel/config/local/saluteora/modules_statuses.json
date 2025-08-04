@@ -4,7 +4,10 @@
     "Cms": true,
     "Dental": true,
     "SaluteOra": true,
+<<<<<<< HEAD
     "SaluteMo": true,
+=======
+>>>>>>> 54f4fa16 (.)
     "Gdpr": true,
     "Job": true,
     "Lang": true,
@@ -14,6 +17,10 @@
     "Xot": true,
     "Seo": true,
     "AI": true,
+<<<<<<< HEAD
+=======
+    "Limesurvey": true,
+>>>>>>> 54f4fa16 (.)
     "Geo": true,
     "User": true,
     "Setting": true,
@@ -27,9 +34,12 @@
     "Rating": true,
     "Comment": true,
 <<<<<<< HEAD
+<<<<<<< HEAD
     "FormBuilder": true,
     "DbForge": true,
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
     "Doctor": true
 }

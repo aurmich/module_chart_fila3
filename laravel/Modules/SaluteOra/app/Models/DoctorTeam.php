@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Models;
 
+<<<<<<< HEAD
 use Parental\HasParent;
 
 /**
@@ -38,4 +39,9 @@ class DoctorTeam extends TeamUser
     use HasParent;
     
     //protected $connection = 'salute_ora'; //in teamuser è già impostato
+=======
+class DoctorTeam extends BasePivot
+{
+    protected $connection = 'patient';
+>>>>>>> 54f4fa16 (.)
 }

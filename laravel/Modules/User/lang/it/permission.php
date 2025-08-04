@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array (
   'navigation' => 
   array (
@@ -161,6 +162,8 @@ return array (
   ),
 );
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 declare(strict_types=1);
 /**
  * ---.
@@ -296,4 +299,7 @@ return [
         'full' => 'Accesso Completo',
     ],
 ];
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)

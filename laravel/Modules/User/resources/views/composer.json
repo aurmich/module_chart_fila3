@@ -16,7 +16,12 @@
         }
     },
     "require": {
+<<<<<<< HEAD
         "filament/filament": "^3.4",
         "filament/tables": "^3.4"
+=======
+        "filament/filament": "^3.3",
+        "filament/tables": "^3.3"
+>>>>>>> 54f4fa16 (.)
     }
 }

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Filament\Resources\MailTemplateResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Resources\Pages\Page;
 use Modules\Notify\Models\MailTemplate;
@@ -12,6 +13,12 @@ use Modules\Notify\Filament\Resources\MailTemplateResource;
 /**
  * @property MailTemplate $record
  */
+=======
+use Modules\Notify\Filament\Resources\MailTemplateResource;
+use Filament\Actions\Action;
+use Filament\Resources\Pages\Page;
+
+>>>>>>> 54f4fa16 (.)
 class PreviewMailTemplate extends Page
 {
     protected static string $resource = MailTemplateResource::class;
@@ -33,4 +40,8 @@ class PreviewMailTemplate extends Page
                 ->url(fn () => MailTemplateResource::getUrl('edit', ['record' => $this->record])),
         ];
     }
+<<<<<<< HEAD
 } 
+=======
+} 
+>>>>>>> 54f4fa16 (.)

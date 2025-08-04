@@ -28,6 +28,9 @@
         {{-- {{ module_vite('build-$LOWER_NAME$', 'resources/assets/js/app.js') }} --}}
     </body>
 <<<<<<< HEAD
+<<<<<<< HEAD
 </html>
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)

@@ -76,6 +76,7 @@ class Login extends Component implements HasForms
                 ->live()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ->afterStateUpdated(fn ($state) => $this->validateOnly('email'))
 =======
                 ->afterStateUpdated(fn ($state) => $this->validateEmail($state))
@@ -83,6 +84,9 @@ class Login extends Component implements HasForms
 =======
                 ->afterStateUpdated(fn ($state) => $this->validateOnly('email'))
 >>>>>>> 345f8677 (phpstan)
+=======
+                ->afterStateUpdated(fn ($state) => $this->validateEmail($state))
+>>>>>>> 54f4fa16 (.)
                 ->dehydrated(),
 
             TextInput::make('password')
@@ -133,11 +137,15 @@ class Login extends Component implements HasForms
                 session()->regenerate();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 // Redirect intelligente basato sui ruoli dell'utente
                 return $this->getRedirectUrl();
 =======
                 return redirect()->intended();
 >>>>>>> aurmich/dev
+=======
+                return redirect()->intended();
+>>>>>>> 54f4fa16 (.)
             }
 
             $this->addError('email', __('Le credenziali fornite non sono corrette.'));
@@ -148,6 +156,7 @@ class Login extends Component implements HasForms
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Determina l'URL di redirect appropriato per l'utente autenticato.
      *
@@ -185,6 +194,8 @@ class Login extends Component implements HasForms
     /**
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
      * Renderizza il componente.
      *
      * @return \Illuminate\Contracts\View\View|\Illuminate\Contracts\View\Factory

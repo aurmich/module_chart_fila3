@@ -28,6 +28,7 @@ use Spatie\MailTemplates\Models\MailTemplate as SpatieMailTemplate;
  * @property \Carbon\Carbon|null $deleted_at
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Notify\Models\MailTemplateVersion> $versions
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Notify\Models\MailTemplateLog> $logs
+<<<<<<< HEAD
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_by
@@ -63,6 +64,8 @@ use Spatie\MailTemplates\Models\MailTemplate as SpatieMailTemplate;
  * @method static Builder<static>|MailTemplate whereCounter($value)
  * @method static Builder<static>|MailTemplate whereSmsTemplate($value)
  * @mixin \Eloquent
+=======
+>>>>>>> 54f4fa16 (.)
  */
 class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
 {
@@ -74,7 +77,11 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
     protected $connection = 'notify';
 
     /** @var list<string> */
+<<<<<<< HEAD
     public array $translatable = ['subject', 'html_template', 'text_template','sms_template'];
+=======
+    public array $translatable = ['subject', 'html_template', 'text_template'];
+>>>>>>> 54f4fa16 (.)
 
     /** @var list<string> */
     protected $fillable = [
@@ -84,10 +91,14 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
         'subject',
         'html_template',
         'text_template',
+<<<<<<< HEAD
         'sms_template',
         //'version',  //under development
         'params',
         'counter',
+=======
+        //'version',  //under development
+>>>>>>> 54f4fa16 (.)
     ];
 
     /**
@@ -95,7 +106,11 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
      *
      * @return array<string, string>
      */
+<<<<<<< HEAD
     protected function casts(): array
+=======
+    public function casts(): array
+>>>>>>> 54f4fa16 (.)
     {
         return [
             'created_at' => 'datetime',
@@ -116,6 +131,7 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
 
     public function scopeForMailable(Builder $query, Mailable $mailable): Builder
     {
+<<<<<<< HEAD
         if(!method_exists($mailable, 'getSlug')){
             throw new \Exception('Il metodo getSlug() non è definito nella classe '.$mailable::class);
         }
@@ -123,6 +139,12 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
         return $query
             ->where('mailable', get_class($mailable))
             ->where('slug', $slug);
+=======
+
+        return $query
+            ->where('mailable', get_class($mailable))
+            ->where('slug', $mailable->getSlug());
+>>>>>>> 54f4fa16 (.)
     }
 
 

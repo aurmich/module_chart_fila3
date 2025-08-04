@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 use Modules\Tenant\Models\Domain;
@@ -33,6 +34,8 @@ test('get rows method works correctly', function (): void {
     expect($rows[1]['name'])->toBe('example.org');
 });
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 namespace Modules\Tenant\Tests\Unit;
 
 use Modules\Tenant\Models\Domain;
@@ -78,4 +81,7 @@ class DomainTest extends TestCase
         $this->assertEquals('example.org', $rows[1]['name']);
     }
 }
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)

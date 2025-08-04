@@ -8,7 +8,10 @@
 
 @php
     use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+<<<<<<< HEAD
     use Modules\SaluteOra\Enums\UserTypeEnum;
+=======
+>>>>>>> 54f4fa16 (.)
 
     // Inizializzazione delle variabili con valori di default
     $user = $user ?? auth()->user();
@@ -31,6 +34,7 @@
         }
         return '';
     };
+<<<<<<< HEAD
 $isDoctor  = $user && $user->type == UserTypeEnum::DOCTOR ? true:false;
 
     $profiloUrl = isset($user) ? $user->type === 'doctor'
@@ -44,6 +48,8 @@ $isDoctor  = $user && $user->type == UserTypeEnum::DOCTOR ? true:false;
 
         
 
+=======
+>>>>>>> 54f4fa16 (.)
 @endphp
 
 @if($isLoggedIn)
@@ -58,6 +64,7 @@ $isDoctor  = $user && $user->type == UserTypeEnum::DOCTOR ? true:false;
         {{-- Trigger Button --}}
         <x-slot name="trigger">
             <x-filament::button
+<<<<<<< HEAD
                 color="white"
                 style="border-radius: 70px; background-color: transparent !important; border: 1px solid white"
                 icon="heroicon-o-user"
@@ -65,6 +72,13 @@ $isDoctor  = $user && $user->type == UserTypeEnum::DOCTOR ? true:false;
                 aria-label="{{ __('ui::navigation.user_menu') }}">
                 <span class="hidden sm:inline">{{$user?->name}}</span>
         </x-filament::button>
+=======
+                color="gray"
+                icon="heroicon-o-user"
+                :label="$user?->name"
+                aria-label="{{ __('ui::navigation.user_menu') }}"
+            />
+>>>>>>> 54f4fa16 (.)
         </x-slot>
         <x-filament::dropdown.list>
         {{-- Menu Items --}}
@@ -78,6 +92,7 @@ $isDoctor  = $user && $user->type == UserTypeEnum::DOCTOR ? true:false;
             @endif
         @endforeach
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         <x-filament::dropdown.list.item     tag="a"
          :href="$isLoggedIn && $isDoctor ? '/it/pages/profilo-odontoiatra':'/it/pages/profilo-paziente'"
@@ -90,6 +105,8 @@ $isDoctor  = $user && $user->type == UserTypeEnum::DOCTOR ? true:false;
             </div>
         </x-filament::dropdown.list.item>
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         </x-filament::dropdown.list>
     </x-filament::dropdown>
 
@@ -106,4 +123,7 @@ $isDoctor  = $user && $user->type == UserTypeEnum::DOCTOR ? true:false;
     {{-- Vista per utenti non autenticati --}}
     @include($guest_view)
 @endif
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)

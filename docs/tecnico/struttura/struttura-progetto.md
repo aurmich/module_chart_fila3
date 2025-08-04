@@ -43,7 +43,10 @@
 ## Comandi di Installazione
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54f4fa16 (.)
 # 1. Installare Laravel Installer globalmente
 composer global require laravel/installer -W
 

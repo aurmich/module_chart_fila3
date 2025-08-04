@@ -9,11 +9,19 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 use Modules\Notify\Datas\WhatsAppData;
 use Spatie\QueueableAction\QueueableAction;
 use function Safe\json_decode;
 
 final class SendVonageWhatsAppAction
+=======
+use Modules\Notify\Contracts\WhatsAppProviderActionInterface;
+use Modules\Notify\Datas\WhatsAppData;
+use Spatie\QueueableAction\QueueableAction;
+
+final class SendVonageWhatsAppAction implements WhatsAppProviderActionInterface
+>>>>>>> 54f4fa16 (.)
 {
     use QueueableAction;
 
@@ -43,11 +51,17 @@ final class SendVonageWhatsAppAction
         $this->apiSecret = $apiSecret;
 
         // Parametri a livello di root
+<<<<<<< HEAD
         /** @var string|null $defaultSender */
         $defaultSender = config('whatsapp.from');
         $this->defaultSender = $defaultSender;
         $this->debug = (bool) config('whatsapp.debug', false);
         $this->timeout = is_numeric(config('whatsapp.timeout', 30)) ? (int) config('whatsapp.timeout', 30) : 30;
+=======
+        $this->defaultSender = config('whatsapp.from');
+        $this->debug = (bool) config('whatsapp.debug', false);
+        $this->timeout = (int) config('whatsapp.timeout', 30);
+>>>>>>> 54f4fa16 (.)
     }
 
     /**
@@ -122,7 +136,10 @@ final class SendVonageWhatsAppAction
             
             $statusCode = $response->getStatusCode();
             $responseContent = $response->getBody()->getContents();
+<<<<<<< HEAD
             /** @var array $responseData */
+=======
+>>>>>>> 54f4fa16 (.)
             $responseData = json_decode($responseContent, true);
             
             // Salva i dati della risposta nelle variabili dell'azione
@@ -144,7 +161,10 @@ final class SendVonageWhatsAppAction
         } catch (ClientException $e) {
             $response = $e->getResponse();
             $statusCode = $response->getStatusCode();
+<<<<<<< HEAD
             /** @var array $responseBody */
+=======
+>>>>>>> 54f4fa16 (.)
             $responseBody = json_decode($response->getBody()->getContents(), true);
             
             // Salva i dati dell'errore nelle variabili dell'azione

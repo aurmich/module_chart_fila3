@@ -31,6 +31,7 @@ class AddressField extends Forms\Components\Field
             ];
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             
             //if ($record && method_exists($record, 'getRelationValue')) {
                 $relationship = $this->getRelationship();
@@ -54,12 +55,15 @@ class AddressField extends Forms\Components\Field
 <<<<<<< HEAD
             //}
 =======
+=======
+>>>>>>> 54f4fa16 (.)
             $address = $record->getRelationValue($this->getRelationship());
             if (null !== $address && is_object($address) && method_exists($address, 'toArray')) {
                 $data = $address->toArray();
             }
 
             $component->state($data);
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
             }
@@ -67,6 +71,8 @@ class AddressField extends Forms\Components\Field
 =======
             //}
 >>>>>>> 345f8677 (phpstan)
+=======
+>>>>>>> 54f4fa16 (.)
         });
 
         $this->dehydrated(false);
@@ -96,6 +102,7 @@ class AddressField extends Forms\Components\Field
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $record?->touch();
 =======
         $record->touch();
@@ -103,6 +110,9 @@ class AddressField extends Forms\Components\Field
 =======
         $record?->touch();
 >>>>>>> 345f8677 (phpstan)
+=======
+        $record->touch();
+>>>>>>> 54f4fa16 (.)
     }
 
     public function getChildComponents(): array

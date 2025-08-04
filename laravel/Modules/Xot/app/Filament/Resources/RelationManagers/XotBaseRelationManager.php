@@ -5,7 +5,11 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources\RelationManagers;
 
 use Filament\Forms\Form;
+<<<<<<< HEAD
 use Filament\Resources\RelationManagers\RelationManager as FilamentRelationManager;
+=======
+use Filament\Resources\RelationManagers\RelationManager;
+>>>>>>> 54f4fa16 (.)
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Model;
@@ -18,7 +22,11 @@ use Webmozart\Assert\Assert;
 /**
  * @property class-string<Model> $resource
  */
+<<<<<<< HEAD
 abstract class XotBaseRelationManager extends FilamentRelationManager
+=======
+abstract class XotBaseRelationManager extends RelationManager
+>>>>>>> 54f4fa16 (.)
 {
     use HasXotTable;
 
@@ -45,6 +53,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
 
     public function getFormSchema(): array
     {
+<<<<<<< HEAD
         return $this->getResource()::getFormSchema();
     }
 <<<<<<< HEAD
@@ -83,28 +92,45 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     }
 */
 >>>>>>> aurmich/dev
+=======
+        return [];
+    }
+
+>>>>>>> 54f4fa16 (.)
     public function getTableActions(): array
     {
         return [
             Tables\Actions\EditAction::make(),
+<<<<<<< HEAD
             //Tables\Actions\DeleteAction::make(),
             Tables\Actions\DetachAction::make(),
+=======
+            Tables\Actions\DeleteAction::make(),
+>>>>>>> 54f4fa16 (.)
         ];
     }
 
     public function getTableBulkActions(): array
     {
         return [
+<<<<<<< HEAD
             //Tables\Actions\DeleteBulkAction::make(),
             Tables\Actions\DetachBulkAction::make(),
+=======
+            Tables\Actions\DeleteBulkAction::make(),
+>>>>>>> 54f4fa16 (.)
         ];
     }
 
     public function getTableHeaderActions(): array
     {
+<<<<<<< HEAD
         return [
             Tables\Actions\AttachAction::make(),
         ];
+=======
+        return [];
+>>>>>>> 54f4fa16 (.)
     }
 
     public function getTableFilters(): array

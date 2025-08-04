@@ -3,15 +3,28 @@
 declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
+<<<<<<< HEAD
 use Modules\SaluteOra\Models\Appointment;
 use Modules\SaluteOra\Models\Doctor;
+=======
+use Modules\SaluteOra\Models\Dentist;
+>>>>>>> 54f4fa16 (.)
 use Modules\SaluteOra\Models\Patient;
 use Modules\Tenant\Models\Tenant;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration
 {
+<<<<<<< HEAD
     
+=======
+    /**
+     * Nome della tabella.
+     *
+     * @var string
+     */
+    protected string $table = 'appointments';
+>>>>>>> 54f4fa16 (.)
 
     /**
      * Run the migrations.
@@ -22,8 +35,14 @@ return new class extends XotBaseMigration
         $this->tableCreate(
             function (Blueprint $table): void {
                 $table->id();
+<<<<<<< HEAD
                 $table->foreignIdFor(Patient::class);
                 $table->foreignIdFor(Doctor::class);
+=======
+                $this->foreignIdFor($table,Tenant::class);
+                $this->foreignIdFor($table,Patient::class);
+                $this->foreignIdFor($table,Dentist::class);
+>>>>>>> 54f4fa16 (.)
                 $table->date('date');
                 $table->time('start_time');
                 $table->time('end_time');
@@ -38,6 +57,7 @@ return new class extends XotBaseMigration
             function (Blueprint $table): void {
                 // Aggiunta dei timestamp e soft delete
                 $this->updateTimestamps($table, false);
+<<<<<<< HEAD
                 
                 // Aggiunta dei campi per il calendario
                 if (!$this->hasColumn('studio_id')) {
@@ -76,9 +96,15 @@ return new class extends XotBaseMigration
                 if (!$this->hasIndex('appointments_status_index')) {
                     $table->index('status', 'appointments_status_index');
                 }
+=======
+>>>>>>> 54f4fa16 (.)
             }
         );
     }
 
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> 54f4fa16 (.)
 };

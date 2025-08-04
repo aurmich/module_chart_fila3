@@ -1,10 +1,15 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
 >>>>>>> aurmich/dev
+=======
+declare(strict_types=1);
+
+>>>>>>> 54f4fa16 (.)
 return [
     'general' => [
         'all' => 'Alle',
@@ -17,10 +22,13 @@ return [
             'save' => 'Speichern',
             'update' => 'Aktualisieren',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'add' => 'Aggiungi',
             'edit' => 'Cambia',
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         ],
         'hide' => 'Verstecken',
         'inactive' => 'Inactive',

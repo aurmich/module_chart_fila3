@@ -78,10 +78,14 @@ new #[Layout('components.layouts.auth')] class extends Component {
         <!-- Email Address -->
         <flux:input
 <<<<<<< HEAD
+<<<<<<< HEAD
             wire:model="email"
 =======
             wire:model.live="email"
 >>>>>>> aurmich/dev
+=======
+            wire:model="email"
+>>>>>>> 54f4fa16 (.)
             :label="__('Email')"
             type="email"
             required
@@ -91,37 +95,51 @@ new #[Layout('components.layouts.auth')] class extends Component {
         <!-- Password -->
         <flux:input
 <<<<<<< HEAD
+<<<<<<< HEAD
             wire:model="password"
 =======
             wire:model.live="password"
 >>>>>>> aurmich/dev
+=======
+            wire:model="password"
+>>>>>>> 54f4fa16 (.)
             :label="__('Password')"
             type="password"
             required
             autocomplete="new-password"
             :placeholder="__('Password')"
 <<<<<<< HEAD
+<<<<<<< HEAD
             viewable
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         />
 
         <!-- Confirm Password -->
         <flux:input
 <<<<<<< HEAD
+<<<<<<< HEAD
             wire:model="password_confirmation"
 =======
             wire:model.live="password_confirmation"
 >>>>>>> aurmich/dev
+=======
+            wire:model="password_confirmation"
+>>>>>>> 54f4fa16 (.)
             :label="__('Confirm password')"
             type="password"
             required
             autocomplete="new-password"
             :placeholder="__('Confirm password')"
 <<<<<<< HEAD
+<<<<<<< HEAD
             viewable
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
         />
 
         <div class="flex items-center justify-end">

@@ -19,16 +19,22 @@ class TranslationData extends Data
 
     public string $item;
 
+<<<<<<< HEAD
     public ?string $filename=null;
 
+=======
+>>>>>>> 54f4fa16 (.)
     // public string $key;
     public int|string|null $value = null;
 
     public function getFilename(): string
     {
+<<<<<<< HEAD
         if($this->filename!=null){
             return $this->filename;
         }
+=======
+>>>>>>> 54f4fa16 (.)
         $hints = app('translator')->getLoader()->namespaces();
         $path = collect($hints)->get($this->namespace);
         if (null === $path) {
@@ -38,8 +44,12 @@ class TranslationData extends Data
         // Verifichiamo che $path sia una stringa
         Assert::string($path, 'Il percorso del namespace deve essere una stringa');
 
+<<<<<<< HEAD
         $this->filename= app(\Modules\Xot\Actions\File\FixPathAction::class)->execute($path.'/'.$this->lang.'/'.$this->group.'.php');
         return $this->filename;
+=======
+        return app(\Modules\Xot\Actions\File\FixPathAction::class)->execute($path.'/'.$this->lang.'/'.$this->group.'.php');
+>>>>>>> 54f4fa16 (.)
     }
 
     public function getData(): array

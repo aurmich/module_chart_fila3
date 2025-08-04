@@ -4,11 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Models;
 
+<<<<<<< HEAD
 use Spatie\Activitylog\Models\Activity as SpatieActivity;
 
 /**
  * Class Activity.
  * 
+=======
+/**
+ * Class Activity.
+ *
+>>>>>>> 54f4fa16 (.)
  * This class extends the BaseActivity model to represent activities in the application.
  *
  * @property int $id
@@ -57,7 +63,11 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Activity whereUpdatedBy($value)
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 class Activity extends SpatieActivity
+=======
+class Activity extends BaseActivity
+>>>>>>> 54f4fa16 (.)
 {
     /** @var list<string> */
     protected $fillable = [

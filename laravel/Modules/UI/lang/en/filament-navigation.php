@@ -1,10 +1,15 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
 >>>>>>> aurmich/dev
+=======
+declare(strict_types=1);
+
+>>>>>>> 54f4fa16 (.)
 return [
     'attributes' => [
         'external-link' => 'External link',
@@ -17,17 +22,25 @@ return [
         'updated_at' => 'Updated at',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> aurmich/dev
+=======
+
+>>>>>>> 54f4fa16 (.)
     'select-options' => [
         'same-tab' => 'Same tab',
         'new-tab' => 'New tab',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> aurmich/dev
+=======
+
+>>>>>>> 54f4fa16 (.)
     'items' => [
         'empty' => 'No items.',
         'add-item' => 'Add item',
@@ -38,12 +51,17 @@ return [
         'dedent' => 'Dedent',
         'remove' => 'Remove',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'sorted' => 'Ordinato',
     ],
 =======
     ],
 
 >>>>>>> aurmich/dev
+=======
+    ],
+
+>>>>>>> 54f4fa16 (.)
     'items-modal' => [
         'title' => 'Item',
         'label' => 'Label',

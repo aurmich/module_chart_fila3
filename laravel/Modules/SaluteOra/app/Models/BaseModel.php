@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Models;
 
+<<<<<<< HEAD
 use Modules\Xot\Traits\Updater;
 use Spatie\MediaLibrary\HasMedia;
 use Illuminate\Database\Eloquent\Model;
@@ -11,6 +12,14 @@ use Modules\Xot\Models\Traits\RelationX;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+=======
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Traits\Updater;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
+>>>>>>> 54f4fa16 (.)
 
 /**
  * Class BaseModel.
@@ -21,7 +30,10 @@ abstract class BaseModel extends Model implements HasMedia
     use HasFactory;
     use InteractsWithMedia;
     use Updater;
+<<<<<<< HEAD
     use RelationX;
+=======
+>>>>>>> 54f4fa16 (.)
 
     /**
      * Indicates whether attributes are snake cased on arrays.
@@ -42,7 +54,11 @@ abstract class BaseModel extends Model implements HasMedia
     protected $perPage = 30;
 
     /** @var string */
+<<<<<<< HEAD
     protected $connection = 'salute_ora';
+=======
+    protected $connection = 'patient';
+>>>>>>> 54f4fa16 (.)
 
     /** @var list<string> */
     protected $appends = [];
@@ -69,7 +85,11 @@ abstract class BaseModel extends Model implements HasMedia
     }
 
     /** @return array<string, string> */
+<<<<<<< HEAD
     protected function casts(): array
+=======
+    public function casts(): array
+>>>>>>> 54f4fa16 (.)
     {
         return [
             'id' => 'string',
@@ -86,6 +106,7 @@ abstract class BaseModel extends Model implements HasMedia
             'deleted_by' => 'string',
         ];
     }
+<<<<<<< HEAD
 
     public function toArrayForce(): array
     {
@@ -105,4 +126,6 @@ abstract class BaseModel extends Model implements HasMedia
             return $data;
         }
     }
+=======
+>>>>>>> 54f4fa16 (.)
 }

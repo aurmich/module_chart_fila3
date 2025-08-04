@@ -130,6 +130,7 @@ Prima di creare nuovi file Filament:
 ## Collegamenti
 - [namespace-vs-file-structure.md](./namespace-vs-file-structure.md)
 - [WINDSURF_RULES.md](./WINDSURF_RULES.md)
+<<<<<<< HEAD
 - [CURSOR_RULES.md](./CURSOR_RULES.md)
 
 ## Widget Filament
@@ -159,3 +160,6 @@ use Filament\Widgets\StatsOverview\Stat;  // Per le statistiche
 2. Il namespace deve essere `Modules\SaluteOra\Filament\Widgets`
 3. Utilizzare sempre i namespace corretti per i componenti Filament
 4. Le traduzioni vanno gestite tramite LangServiceProvider 
+=======
+- [CURSOR_RULES.md](./CURSOR_RULES.md) 
+>>>>>>> 54f4fa16 (.)

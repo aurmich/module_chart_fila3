@@ -22,9 +22,12 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 ### Formato Corretto
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Collegamenti Corretti
 [Documento Correlato](./documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
@@ -35,9 +38,12 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 ### Formato Non Corretto
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Collegamenti Non Corretti
 [Documento Correlato](/var/www/html/saluteora/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/saluteora/progetto/blob/main/docs/documento.md)
@@ -64,9 +70,12 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 ### Formato Corretto
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Collegamenti Corretti
 [Documento Correlato](./documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
@@ -77,9 +86,12 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 ### Formato Non Corretto
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Collegamenti Non Corretti
 [Documento Correlato](/var/www/html/saluteora/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/saluteora/progetto/blob/main/docs/documento.md)
@@ -94,9 +106,12 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [ ] I percorsi sono compatibili con diversi sistemi operativib6f667c (.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 - [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
 
 ## Validazione dei Collegamenti
@@ -110,9 +125,12 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 ### Formato Corretto
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Collegamenti Corretti
 [Documento Correlato](./documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
@@ -123,9 +141,12 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 ### Formato Non Corretto
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Collegamenti Non Corretti
 [Documento Correlato](/var/www/html/saluteora/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/saluteora/progetto/blob/main/docs/documento.md)
@@ -140,9 +161,12 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [ ] I percorsi sono compatibili con diversi sistemi operativib6f667c (.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ## 1. Regole Fondamentali
 
 ### Nomi di Progetto
@@ -175,17 +199,23 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - La documentazione deve spiegare il "perché" delle regole, non solo il "come"b6f667c (.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 - Devono essere documentati nelle cartelle docs appropriate
 - Ogni modifica al prompt deve essere accompagnata da aggiornamenti alla documentazione
 - La documentazione deve spiegare il "perché" delle regole, non solo il "come"b6f667c (.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ## 2. Struttura della Documentazione
 
 ### Documentazione Generica

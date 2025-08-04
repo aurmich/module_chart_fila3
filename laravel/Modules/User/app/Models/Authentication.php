@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
@@ -70,6 +71,16 @@ class Authentication extends Model
         'ip_address',
         'user_agent',
         'location',
+=======
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphTo;
+
+class Authentication extends Model
+{
+    protected $fillable = [
+        'ip_address',
+        'user_agent',
+>>>>>>> 54f4fa16 (.)
         'login_at',
         'login_successful',
         'logout_at',
@@ -77,6 +88,7 @@ class Authentication extends Model
         'authenticatable_id',
     ];
 
+<<<<<<< HEAD
     /**
      * The attributes that should be cast.
      *
@@ -90,6 +102,13 @@ class Authentication extends Model
             'login_successful' => 'boolean',
         ];
     }
+=======
+    protected $casts = [
+        'login_at' => 'datetime',
+        'logout_at' => 'datetime',
+        'login_successful' => 'boolean',
+    ];
+>>>>>>> 54f4fa16 (.)
 
     public function authenticatable(): MorphTo
     {

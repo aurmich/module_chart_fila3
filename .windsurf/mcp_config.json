@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "mcpServers": {
     "sequential-thinking": {
       "command": "npx",
@@ -34,3 +35,29 @@
   
   }
 }
+=======
+    "mcpServers": {
+      "sequential-thinking": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-sequential-thinking"
+        ]
+      }
+    },
+    "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ]
+    },
+    "everything": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-everything"
+      ]
+    }
+  }
+>>>>>>> 54f4fa16 (.)

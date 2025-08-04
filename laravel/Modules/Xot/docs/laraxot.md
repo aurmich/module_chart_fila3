@@ -1027,9 +1027,12 @@ return new AddressData(
 
 ## Componenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Form Builder
 - Creazione form dinamici
 - Validazione integrata
@@ -1052,12 +1055,16 @@ return new AddressData(
 
 ## Troubleshooting
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ### Problemi Comuni
 
 =======
 ### Problemi Comuni
 >>>>>>> aurmich/dev
+=======
+### Problemi Comuni
+>>>>>>> 54f4fa16 (.)
 #### Widget Issues
 - Percorsi viste non corretti
   - Soluzione: Spostare in `resources/views/filament/widgets/`
@@ -1080,9 +1087,12 @@ return new AddressData(
 
 ## Aggiornamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Procedura
 1. Backup dati
 2. Aggiornamento dipendenze
@@ -1660,9 +1670,12 @@ return [
 - Struttura standardizzata con chiave 'navigation'
 - Definizione completa di gruppo, label, icona e ordinamento
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Laraxot Framework
 
 ## Panoramica
@@ -2337,9 +2350,12 @@ npm install
 ### Comandi Build
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Development build
 npm run dev
 
@@ -2582,9 +2598,12 @@ F:\var\www\fixcity\
 ### ✅ Modo Corretto
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Posizionarsi nella directory laravel
 cd F:\var\www\fixcity\laravel
 
@@ -2597,9 +2616,12 @@ php artisan config:clear
 ### ❌ Modi Errati
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # ❌ ERRATO: dalla root del progetto
 cd F:\var\www\fixcity
 php artisan module:seed Fixcity  # Non funzionerà
@@ -2612,9 +2634,12 @@ php artisan module:seed Fixcity  # Non funzionerà
 ## Comandi Comuni
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Dalla directory F:\var\www\fixcity\laravel
 php artisan module:seed Fixcity          # Seeding modulo
 php artisan module:make-model Report     # Creare model
@@ -3401,9 +3426,12 @@ return [
 Se hai bisogno della funzionalità commenti:
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # 1. Installa il pacchetto
 composer require spatie/laravel-comments
 
@@ -3581,9 +3609,12 @@ $remember = $data['remember'] ?? false;
 ### Installazione
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Nella directory del tema
 cd laravel/Themes/Sixteen
 
@@ -3780,9 +3811,12 @@ input: [
 ### 1. Installazione
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Nella directory del tema
 cd laravel/Themes/Sixteen
 
@@ -3799,9 +3833,12 @@ yarn run build && yarn run copy
 ### 2. Verifica Build
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Controlla output directory
 ls resources/dist/css
 
@@ -6117,9 +6154,12 @@ return [
 Se hai bisogno della funzionalità commenti:
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # 1. Installa il pacchetto
 composer require spatie/laravel-comments
 
@@ -6297,9 +6337,12 @@ $remember = $data['remember'] ?? false;
 ### Installazione
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Nella directory del tema
 cd laravel/Themes/Sixteen
 
@@ -6496,9 +6539,12 @@ input: [
 ### 1. Installazione
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Nella directory del tema
 cd laravel/Themes/Sixteen
 
@@ -6515,9 +6561,12 @@ yarn run build && yarn run copy
 ### 2. Verifica Build
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Controlla output directory
 ls resources/dist/css
 

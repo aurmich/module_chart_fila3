@@ -1,5 +1,6 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 declare(strict_types=1);
 
@@ -11,6 +12,8 @@ name('password.reset');
 $token = $token ?? null;
 $email = request()->query('email', '');
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 declare(strict_types=1);
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Auth;
@@ -75,11 +78,15 @@ new class extends Component
         $this->addError('email', trans($response));
     }
 };
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 
 ?>
 
 <x-layouts.main>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <div id="wave-container" class="flex flex-col items-stretch justify-center w-full min-h-screen py-10 sm:items-center relative overflow-hidden">
         <!-- Reactive subtle background waves -->
@@ -183,6 +190,8 @@ new class extends Component
     </script>
 </x-layouts.main>
 =======
+=======
+>>>>>>> 54f4fa16 (.)
     <div class="flex flex-col items-stretch justify-center w-screen min-h-screen py-10 sm:items-center">
 
         <div class="sm:mx-auto sm:w-full sm:max-w-md">
@@ -205,5 +214,9 @@ new class extends Component
             </div>
         </div>
     </div>
+<<<<<<< HEAD
 </x-layouts.main>
 >>>>>>> aurmich/dev
+=======
+</x-layouts.main>
+>>>>>>> 54f4fa16 (.)

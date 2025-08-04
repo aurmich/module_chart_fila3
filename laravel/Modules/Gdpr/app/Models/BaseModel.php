@@ -66,7 +66,11 @@ abstract class BaseModel extends Model
     }
 
     /** @return array<string, string> */
+<<<<<<< HEAD
     protected function casts(): array
+=======
+    public function casts(): array
+>>>>>>> 54f4fa16 (.)
     {
         return [
             'id' => 'string',

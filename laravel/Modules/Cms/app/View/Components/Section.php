@@ -31,7 +31,11 @@ class Section extends Component
     public ?string $name = null;
     public ?string $class = null;
     public ?string $id = null;
+<<<<<<< HEAD
     public ?string $tpl = null;
+=======
+
+>>>>>>> 54f4fa16 (.)
     /**
      * Create a new component instance.
      *
@@ -42,14 +46,53 @@ class Section extends Component
     public function __construct(
         string $slug,
         ?string $class = null,
+<<<<<<< HEAD
         ?string $id = null,
         ?string $tpl = null
+=======
+        ?string $id = null
+>>>>>>> 54f4fa16 (.)
     ) {
         $this->slug = $slug;
         $this->class = $class;
         $this->id = $id;
+<<<<<<< HEAD
         $this->tpl = $tpl;
         $this->blocks = SectionModel::getBlocksBySlug($this->slug);
+=======
+
+        $where = ['slug' => $slug];
+        $update = [
+            'title' => $slug,
+            'blocks' => [],
+            'attributes' => [
+                'class' => $class,
+                'id' => $id
+            ]
+        ];
+
+        Assert::isInstanceOf(
+            $section = SectionModel::firstOrCreate($where, $update),
+            SectionModel::class,
+            '['.__LINE__.']['.__FILE__.']'
+        );
+
+        $this->name = $section->getTranslation('name', app()->getLocale());
+
+        $blocks = $section->blocks;
+
+        if(!is_array($blocks)){
+            $primary_lang=XotData::make()->primary_lang;
+            $blocks = $section->getTranslation('blocks',$primary_lang);
+        }
+        
+        
+        if(!is_array($blocks)){
+            $blocks = [];
+        }
+
+        $this->blocks = BlockData::collect($blocks);
+>>>>>>> 54f4fa16 (.)
     }
 
     /**
@@ -57,6 +100,7 @@ class Section extends Component
      */
     public function render(): ViewContract
     {
+<<<<<<< HEAD
         $view='pub_theme::components.sections.'.$this->slug;
         if($this->tpl){
             $view.='.'.$this->tpl;
@@ -65,5 +109,8 @@ class Section extends Component
             throw new \Exception('View '.$view.' not found');
         }
         return view($view);
+=======
+        return view('pub_theme::components.sections.'.$this->slug);
+>>>>>>> 54f4fa16 (.)
     }
 }

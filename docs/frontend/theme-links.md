@@ -21,7 +21,10 @@ Questo tema è un pacchetto riutilizzabile che può essere utilizzato in progett
 - [Documentazione Build Process](laravel/Themes/One/docs/build-process.md)
 - [Documentazione Componenti](laravel/Themes/One/docs/COMPONENTS.md)
 - [Documentazione Assets](laravel/Themes/One/docs/ASSETS.md)
+<<<<<<< HEAD
 - [Language Switcher Implementation](laravel/Themes/One/docs/language-switcher-implementation.md)
+=======
+>>>>>>> 54f4fa16 (.)
 - [Documentazione Best Practices](laravel/Themes/One/docs/best-practices.md)
 - [Documentazione Personalizzazione](laravel/Themes/One/docs/README.md)
 
@@ -51,6 +54,7 @@ Per compilare e pubblicare un tema:
    npm run copy
    ```
 
+<<<<<<< HEAD
 Per maggiori dettagli, consultare la [documentazione completa sulla compilazione dei temi](laravel/Modules/Cms/docs/theme_compilation.md).
 
 # Collegamenti Temi Frontend
@@ -87,3 +91,6 @@ Per maggiori dettagli, consultare la [documentazione completa sulla compilazione
 - Ogni componente deve avere documentazione in `docs/frontend/`
 - Collegamenti bidirezionali obbligatori
 - Esempi di utilizzo inclusi
+=======
+Per maggiori dettagli, consultare la [documentazione completa sulla compilazione dei temi](laravel/Modules/Cms/docs/theme_compilation.md).
+>>>>>>> 54f4fa16 (.)

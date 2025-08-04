@@ -1,5 +1,6 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 declare(strict_types=1);
 
@@ -8,6 +9,8 @@ use Livewire\Volt\Component;
 use Livewire\Attributes\Validate;
 
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 declare(strict_types=1);
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
@@ -18,7 +21,10 @@ use function Laravel\Folio\{middleware, name};
 use Livewire\Attributes\Validate;
 
 
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 middleware(['guest']);
 name('register.type');
 
@@ -27,6 +33,7 @@ new class extends Component
     #[Validate('required')]
     public $type;
 <<<<<<< HEAD
+<<<<<<< HEAD
     public $isDoctor;
 
     public function mount()
@@ -34,6 +41,8 @@ new class extends Component
         $this->isDoctor = $this->type === 'doctor';
     }
 =======
+=======
+>>>>>>> 54f4fa16 (.)
 
     //public function mount(string $type)
     //{
@@ -41,13 +50,17 @@ new class extends Component
     //}
 
     // Logica del componente se necessaria
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 };
 
 ?>
 
 <x-layouts.app>
     @volt('register.type')
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <div >
@@ -95,6 +108,9 @@ new class extends Component
 =======
     <div class="min-h-screen bg-[#E6EBF7] pb-5">
 >>>>>>> 3ad9917a (- fix styles registration)
+=======
+    <div class="min-h-screen bg-gradient-to-b from-blue-50 to-white py-12">
+>>>>>>> 54f4fa16 (.)
         <!-- Logo e intestazione -->
         <div class="text-center mb-8">
             <div class="flex justify-center mb-4">
@@ -105,16 +121,28 @@ new class extends Component
         </div>
 
         <!-- Card contenente il form di registrazione -->
+<<<<<<< HEAD
         <div id="doctor-section" class="rounded-2xl overflow-hidden">
+=======
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+>>>>>>> 54f4fa16 (.)
             <!-- Form di registrazione -->
             @livewire(\Modules\User\Filament\Widgets\RegistrationWidget::class, ['type' => $type])
         </div>
 
         <!-- Footer con informazioni aggiuntive -->
+<<<<<<< HEAD
         <!-- <div class="mt-8 text-center text-sm text-gray-500">
             <p>Hai bisogno di assistenza? <a href="#" class="text-blue-800 hover:underline">Contattaci</a></p>
         </div> -->
     </div>
     @endvolt
 >>>>>>> aurmich/dev
+=======
+        <div class="mt-8 text-center text-sm text-gray-500">
+            <p>Hai bisogno di assistenza? <a href="#" class="text-blue-800 hover:underline">Contattaci</a></p>
+        </div>
+    </div>
+    @endvolt
+>>>>>>> 54f4fa16 (.)
 </x-layouts.app>

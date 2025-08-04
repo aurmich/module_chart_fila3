@@ -1,6 +1,7 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 5693302 (.)
 
@@ -8,10 +9,15 @@ b6f667c (.)
 
 =======
 =======
+>>>>>>> 54f4fa16 (.)
+=======
 
 5693302 (.)
 b6f667c (.)
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 # Correzioni PHPStan nel Modulo Xot
 
 ## Correzioni Implementate
@@ -126,13 +132,17 @@ public function execute(string $modelClass): AbstractSchemaManager
     Assert::classExists($modelClass);
     Assert::subclassOf($modelClass, Model::class);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Versione HEAD
 
 aurmich/dev
 5693302 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 b6f667c (.)
@@ -140,6 +150,9 @@ b6f667c (.)
 =======
 b6f667c (.)
 >>>>>>> aurmich/dev
+=======
+b6f667c (.)
+>>>>>>> 54f4fa16 (.)
 # Risoluzione Problemi PHPStan nel Modulo Xot
 
 Questo documento descrive i principali problemi PHPStan risolti nel modulo Xot e le strategie adottate per la loro risoluzione.
@@ -249,18 +262,23 @@ aurmich/dev
 aurmich/dev
 5693302 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 b6f667c (.)
 
 =======
 b6f667c (.)
 >>>>>>> aurmich/dev
+=======
+b6f667c (.)
+>>>>>>> 54f4fa16 (.)
     // ...
 }
 ```
 
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 5693302 (.)
@@ -269,10 +287,15 @@ b6f667c (.)
 
 =======
 =======
+>>>>>>> 54f4fa16 (.)
+=======
 
 5693302 (.)
 b6f667c (.)
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### 2. Validazione Dati
 ```php
 /**
@@ -284,13 +307,17 @@ private function validateData(array $data): void
     Assert::keyExists($data, 'required_field');
     Assert::string($data['required_field']);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Versione HEAD
 
 aurmich/dev
 5693302 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 b6f667c (.)
@@ -298,6 +325,9 @@ b6f667c (.)
 =======
 b6f667c (.)
 >>>>>>> aurmich/dev
+=======
+b6f667c (.)
+>>>>>>> 54f4fa16 (.)
 ### Servizi e Dependency Injection
 
 **Problema**: Metodi che utilizzano dependency injection non avevano tipi ben definiti.
@@ -324,18 +354,23 @@ aurmich/dev
 aurmich/dev
 5693302 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 b6f667c (.)
 
 =======
 b6f667c (.)
 >>>>>>> aurmich/dev
+=======
+b6f667c (.)
+>>>>>>> 54f4fa16 (.)
     // ...
 }
 ```
 
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 5693302 (.)
@@ -344,10 +379,15 @@ b6f667c (.)
 
 =======
 =======
+>>>>>>> 54f4fa16 (.)
+=======
 
 5693302 (.)
 b6f667c (.)
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### 3. Gestione Relazioni
 ```php
 /**
@@ -441,9 +481,12 @@ public function execute(Model $model, array $data): array
 
 ### 2. Metodo Final Override in UsersRelationManager
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Versione HEAD
 
 - ❌ Errore: Cannot override final method `Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager::form()`
@@ -471,9 +514,12 @@ public function execute(Model $model, array $data): array
 
 ### 3. Metodo Final Override in DomainsRelationManager
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Versione HEAD
 
 - ❌ Errore: Cannot override final method `Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager::form()`
@@ -546,9 +592,12 @@ public function execute(Model $model, array $data): array
 3. **Azioni e Validazione**
    ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Versione HEAD
 
    public function getTableActions(): array
@@ -595,9 +644,12 @@ Best Practices:
 - Mantenere la coerenza nella struttura dei form tra i vari RelationManager
 - Validare i dati utilizzando le regole di validazione di Laravel
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 54f4fa16 (.)
 ### Versione HEAD
 
 
@@ -688,12 +740,16 @@ Questo permette a phpstan di trovare correttamente il file durante l'analisi sta
 aurmich/dev
 5693302 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 b6f667c (.)
 
 =======
 b6f667c (.)
 >>>>>>> aurmich/dev
+=======
+b6f667c (.)
+>>>>>>> 54f4fa16 (.)
 ### Problemi con le Relazioni Eloquent
 
 **Problema**: PHPStan non riconosceva correttamente i tipi restituiti dalle relazioni Eloquent.
@@ -861,9 +917,13 @@ aurmich/dev
 aurmich/dev
 5693302 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 b6f667c (.)
 
 =======
 b6f667c (.)
 >>>>>>> aurmich/dev
+=======
+b6f667c (.)
+>>>>>>> 54f4fa16 (.)
