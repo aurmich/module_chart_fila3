@@ -103,8 +103,12 @@
 >>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
 =======
   "resources/css/app.css": {
+<<<<<<< HEAD
     "file": "assets/app-C7OaeTzW.css",
 >>>>>>> 54f4fa16 (.)
+=======
+    "file": "assets/app-B9VPcr49.css",
+>>>>>>> 59cacf62 (aggiornamento-stile)
     "src": "resources/css/app.css",
     "isEntry": true
   },
