@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/module_chart_fila3",
     "description": "chart module that manages your data and represents them in graphs",
     "keywords": [
@@ -195,10 +196,25 @@
             "merge-extra": false,
             "merge-extra-deep": false,
             "merge-scripts": false
+=======
+    "name": "exabyte/base_saluteora",
+    "description": "Progetto SaluteOra basato su framework Laraxot",
+    "type": "project",
+    "config": {
+        "vendor-dir": "laravel/vendor",
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "": "laravel/app/"
+>>>>>>> 4171c7dc (chore: remove unused DentistData and SearchDentistData classes to clean up the codebase)
         }
     },
     "scripts": {
         "post-install-cmd": [
+<<<<<<< HEAD
             "@composer install --working-dir=laravel"
         ],
         "post-update-cmd": [
@@ -213,14 +229,27 @@
     },
 <<<<<<< HEAD
 =======
+=======
+            "cd laravel && composer install --no-dev --optimize-autoloader"
+        ],
+        "post-update-cmd": [
+            "cd laravel && composer update --no-dev --optimize-autoloader"
+        ]
+    },
+>>>>>>> 4171c7dc (chore: remove unused DentistData and SearchDentistData classes to clean up the codebase)
     "repositories": [
         {
             "type": "path",
             "url": "laravel"
         }
     ],
+<<<<<<< HEAD
 >>>>>>> 631510b4 (fix bashscripts structure + translation of module saluteMo)
     "minimum-stability": "dev",
+    "prefer-stable": true
+>>>>>>> 4171c7dc (chore: remove unused DentistData and SearchDentistData classes to clean up the codebase)
+=======
+    "minimum-stability": "stable",
     "prefer-stable": true
 >>>>>>> 4171c7dc (chore: remove unused DentistData and SearchDentistData classes to clean up the codebase)
 }
