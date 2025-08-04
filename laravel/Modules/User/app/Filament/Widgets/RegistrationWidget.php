@@ -57,6 +57,7 @@ use Filament\Forms\Components\Wizard\Step;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Actions\Concerns\InteractsWithRecord;
 
 
@@ -79,6 +80,9 @@ class RegistrationWidget extends XotBaseWidget
     //protected int | string | array $columnSpan = 'full'; //moved to XotBaseWidget
 >>>>>>> aurmich/dev
 =======
+=======
+use Illuminate\Support\Facades\Log;
+>>>>>>> de1d4084 (✨ (DoctorResource.php, PatientResource.php, StudioResource.php): introduce new Studio resource and update Doctor resource to include studio relationship)
 
 class RegistrationWidget extends XotBaseWidget
 {
@@ -89,6 +93,7 @@ class RegistrationWidget extends XotBaseWidget
     public string $resource;
     public string $model;
     public string $action;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -188,6 +193,10 @@ class RegistrationWidget extends XotBaseWidget
 =======
     public UserContract $record;
 >>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
+=======
+    public Model $record;
+    
+>>>>>>> de1d4084 (✨ (DoctorResource.php, PatientResource.php, StudioResource.php): introduce new Studio resource and update Doctor resource to include studio relationship)
     protected static string $view = 'pub_theme::filament.widgets.registration';
 
     public function mount(string $type,Request $request): void
@@ -196,23 +205,23 @@ class RegistrationWidget extends XotBaseWidget
         $this->resource = XotData::make()->getUserResourceClassByType($type);
         $this->model = $this->resource::getModel();
         $this->action=Str::of($this->model)->replace('\Models\\', '\Actions\\')->append('\RegisterAction')->toString();
-        $obj=app($this->model);
-        //Assert::implementsInterface($obj,UserContract::class);
-        Assert::isInstanceOf($obj,Model::class);
-        $fields=array_merge($obj->getFillable(),$obj->getAppends());
+        $record=$this->getFormModel();
+        $data=$this->getFormFill();
+        $this->form->fill($data);
+        $this->form->model($record);
+        $this->data=$data;
+        $this->record=$record;
+    }
 
-        $fieldsWithNulls = Arr::mapWithKeys($fields, fn($field) => [$field=>null]);
-        $this->form->fill($fieldsWithNulls);
-        $this->form->model($obj);
-        $this->record=$obj;
-
-        $data=$request->all();
+    public function getFormModel(): Model
+    {
+        $data=request()->all();
         $email=Arr::get($data,'email');//,'marco1@gmail.com';
         $token=Arr::get($data,'token');//'$2y$12$M9lZbLr8T.2GktlJjl1w6OoKHFX5MXnYV/ZePL7N4Rls0.pgkPczK';
 
         $user=$this->model::firstWhere('email',$email);
         if($user==null){
-            return ;
+            return app($this->model);
         }
         $remember_token = $user->remember_token;
         if($remember_token==null){
@@ -221,11 +230,41 @@ class RegistrationWidget extends XotBaseWidget
         }
         
         if($remember_token==$token){
-
-            $this->form->fill($user->toArray());
-            $this->form->model($user);
             $this->record=$user;
+            return $user;
         }
+        return app($this->model);
+        
+    }
+
+    public function getFormFill(): array
+    {
+        $model = $this->getFormModel();
+        
+        // Se il modello ha un ID, significa che è stato trovato nel database
+        if ($model->exists) {
+            try {
+                return $model->toArray();
+            } catch (\Exception $e) {
+                // Se toArray() fallisce (problemi con enum), usa getAttributes()
+                Log::warning("Errore in toArray() per modello {$this->model}: " . $e->getMessage());
+                $attributes = $model->getAttributes();
+                
+                // Gestisci specificamente gli enum se presenti
+                if (isset($attributes['type']) && $model->type instanceof \BackedEnum) {
+                    $attributes['type'] = $model->type->value;
+                }
+                
+                return $attributes;
+            }
+        }
+        
+        // Se è un nuovo modello, restituisci solo i campi fillable con valori null
+        $fillable = $model->getFillable();
+        $appends = $model->getAppends();
+        $fields = array_merge($fillable, $appends);
+        
+        return array_fill_keys($fields, null);
     }
 
 

@@ -6,6 +6,7 @@ namespace Modules\SaluteOra\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Parental\HasParent;
 use Modules\Geo\Models\Address;
 use Spatie\MediaLibrary\HasMedia;
@@ -201,9 +202,15 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 >>>>>>> 2bcfd382 (fix Address)
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Modules\SaluteOra\Models\DoctorStudio;
+=======
+use Parental\HasParent;
+>>>>>>> de1d4084 (✨ (DoctorResource.php, PatientResource.php, StudioResource.php): introduce new Studio resource and update Doctor resource to include studio relationship)
 use Modules\SaluteOra\Enums\UserTypeEnum;
 use Modules\SaluteOra\Enums\UserStateEnum;
-use Parental\HasParent;
+use Modules\SaluteOra\Models\DoctorStudio;
+use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\MorphOne;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 /**
  * Doctor model for the SaluteOra module.
@@ -481,10 +488,13 @@ class Doctor extends User
     {
         return $this->morphOne(Studio::class, 'model');
     }
+<<<<<<< HEAD
 
     public function address(): MorphOne{
         return $this->morphOne(Address::class, 'model');
     }
+=======
+>>>>>>> de1d4084 (✨ (DoctorResource.php, PatientResource.php, StudioResource.php): introduce new Studio resource and update Doctor resource to include studio relationship)
     // Implementazione della relazione BelongsToMany con Studio completata
 
 /*
