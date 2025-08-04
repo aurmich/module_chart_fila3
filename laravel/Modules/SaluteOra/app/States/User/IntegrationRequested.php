@@ -12,12 +12,8 @@ namespace Modules\SaluteOra\States\User;
  */
 class IntegrationRequested extends UserState
 {
-<<<<<<< HEAD
     /** @var string */
     public static string $name = 'integration_requested';
-=======
-    public static $name = 'integration_requested';
->>>>>>> aurmich/dev
     public function label(): string
     {
         return 'Integrazione richiesta';

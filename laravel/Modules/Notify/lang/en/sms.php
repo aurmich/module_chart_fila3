@@ -1,10 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> aurmich/dev
 return [
     'resource' => [
         'name' => 'SMS',
@@ -19,11 +14,7 @@ return [
         ],
         'label' => 'Send SMS',
         'icon' => 'heroicon-o-device-phone-mobile',
-<<<<<<< HEAD
         'sort' => '10',
-=======
-        'sort' => 10,
->>>>>>> aurmich/dev
     ],
     'fields' => [
         'to' => [

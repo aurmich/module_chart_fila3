@@ -10,11 +10,6 @@ use Parental\HasChildren;
 
 
 /**
-<<<<<<< HEAD
-=======
- * 
- *
->>>>>>> aurmich/dev
  * @property string $id
  * @property string|null $type
  * @property string $user_id
@@ -44,11 +39,8 @@ use Parental\HasChildren;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|StudioUser whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|StudioUser whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|StudioUser whereUserId($value)
-<<<<<<< HEAD
  * @property-read \Modules\SaluteOra\Models\Studio|null $studio
  * @property-read \Modules\SaluteOra\Models\User|null $user
-=======
->>>>>>> aurmich/dev
  * @mixin \Eloquent
  */
 class StudioUser extends BasePivot
@@ -85,7 +77,6 @@ class StudioUser extends BasePivot
     }
 
 
-<<<<<<< HEAD
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
@@ -97,6 +88,4 @@ class StudioUser extends BasePivot
     }
 
 
-=======
->>>>>>> aurmich/dev
 }

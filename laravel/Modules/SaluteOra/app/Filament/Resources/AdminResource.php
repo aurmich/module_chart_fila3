@@ -6,20 +6,12 @@ use Filament\Forms;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Modules\SaluteOra\Models\User;
-<<<<<<< HEAD
 use Modules\SaluteOra\Models\Admin;
 use Filament\Forms\Components\Select;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Modules\SaluteOra\Enums\UserTypeEnum;
-=======
-use Filament\Forms\Components\Select;
-use Modules\SaluteOra\Enums\UserTypeEnum;
-use Filament\Tables\Actions\EditAction;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Filters\SelectFilter;
->>>>>>> aurmich/dev
 use Modules\SaluteOra\Enums\UserStateEnum;
 use Filament\Tables\Actions\BulkActionGroup;
 use Filament\Tables\Actions\DeleteBulkAction;
@@ -29,11 +21,7 @@ use Modules\SaluteOra\Filament\Resources\AdminResource\Pages;
 
 class AdminResource extends XotBaseResource
 {
-<<<<<<< HEAD
     protected static ?string $model = Admin::class;
-=======
-    protected static ?string $model = User::class;
->>>>>>> aurmich/dev
 
     public static function getFormSchema(): array
     {

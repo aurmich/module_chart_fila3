@@ -25,7 +25,6 @@ SaluteMo è un modulo progettato per gestire funzionalità specifiche per dispos
 - [Struttura Filament](filament/structure.md)
 - [Convenzioni Dashboard](filament/dashboard-conventions.md)
 - [Widget](filament/widgets.md)
-<<<<<<< HEAD
 - [RelationManager](filament/relationmanagers.md) - Gestione relazioni cross-module
 - [Admin Resource](filament/admin-resource.md) - Gestione utenti backoffice
 - [Dashboard Charts Implementation](dashboard-charts-implementation.md) - Widget grafici per dashboard
@@ -34,8 +33,6 @@ SaluteMo è un modulo progettato per gestire funzionalità specifiche per dispos
 - [Regole Consolidate Widget](./widget-rules-consolidated.md) - Regole complete per widget custom
 - [AppointmentOverviewWidget Design](./appointment-overview-widget-design.md) - Design e implementazione widget appuntamenti
 - [Struttura Traduzioni Widget](./widget-translations-structure.md) - Traduzioni specifiche per widget
-=======
->>>>>>> aurmich/dev
 
 ### Service Provider
 - [Service Provider](providers/service-provider.md)
@@ -55,7 +52,6 @@ SaluteMo è un modulo progettato per gestire funzionalità specifiche per dispos
 - [Convenzioni di Naming Corrette](issues/filament-implementation/correct-naming-conventions.md)
 - [Sintesi e Prossimi Passi](issues/summary-and-next-steps.md)
 
-<<<<<<< HEAD
 ## Cross-Module Relations
 
 ### RelationManager Architecture
@@ -93,8 +89,6 @@ Il modulo SaluteMo implementa un widget personalizzato per la visualizzazione de
 - [Struttura Traduzioni Widget](./widget-translations-structure.md) - Traduzioni specifiche
 - [XotBaseWidget](../../Xot/docs/filament/widgets/xot-base-widget.md) - Classe base widget
 
-=======
->>>>>>> aurmich/dev
 ## Problemi Critici Identificati
 
 ### 1. Service Provider
@@ -137,11 +131,8 @@ Punti chiave:
 - Push notification handling
 - Offline data synchronization
 - Mobile-specific configurations
-<<<<<<< HEAD
 - Cross-module relation management via Filament
 - Custom widgets for appointment statistics
-=======
->>>>>>> aurmich/dev
 
 ## Installation
 

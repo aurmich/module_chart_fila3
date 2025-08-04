@@ -5,10 +5,7 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Enums;
 
 use Filament\Support\Contracts\HasLabel;
-<<<<<<< HEAD
 use function Safe\class_alias;
-=======
->>>>>>> aurmich/dev
 
 enum UserStateEnum: string implements HasLabel
 {
@@ -64,8 +61,4 @@ enum UserStateEnum: string implements HasLabel
 }
 
 // Alias for backward compatibility
-<<<<<<< HEAD
 //class_alias(UserStateEnum::class, 'Modules\SaluteOra\Enums\UserState');
-=======
-class_alias(UserStateEnum::class, 'Modules\SaluteOra\Enums\UserState');
->>>>>>> aurmich/dev

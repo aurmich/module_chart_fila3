@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Models;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Spatie\ModelStates\HasStates;
 use Spatie\Activitylog\LogOptions;
 use Illuminate\Database\Eloquent\Model;
@@ -16,21 +14,6 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 use Modules\SaluteOra\Enums\AppointmentStatusEnum;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\SaluteOra\States\Appointment\AppointmentState;
-=======
-=======
-use Spatie\ModelStates\HasStates;
->>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
-use Spatie\Activitylog\LogOptions;
-use Illuminate\Database\Eloquent\Model;
-use Spatie\Activitylog\Traits\LogsActivity;
-use Modules\SaluteOra\Enums\AppointmentTypeEnum;
-use Modules\SaluteOra\Enums\AppointmentStatusEnum;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
-use Modules\SaluteOra\States\Appointment\AppointmentState;
->>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 
 /**
  * Appointment Model for the SaluteOra Module.
@@ -40,23 +23,14 @@ use Modules\SaluteOra\States\Appointment\AppointmentState;
  *
  * @property int $id
  * @property int $patient_id
-<<<<<<< HEAD
  * @property AppointmentState $state
-=======
->>>>>>> aurmich/dev
  * @property int $doctor_id
  * @property int $dentist_id Alias for doctor_id (legacy compatibility)
  * @property int $studio_id
  * @property int|null $tenant_id
  * @property string $title
-<<<<<<< HEAD
  * @property \Illuminate\Support\Carbon|null $starts_at
  * @property \Illuminate\Support\Carbon|null $ends_at
-=======
- * @property \Carbon\Carbon $start_time
- * @property \Carbon\Carbon $end_time
- * @property \Carbon\Carbon|null $date Alias for start_time date
->>>>>>> aurmich/dev
  * @property AppointmentTypeEnum $type
  * @property AppointmentStatusEnum $status
  * @property string|null $notes
@@ -65,15 +39,9 @@ use Modules\SaluteOra\States\Appointment\AppointmentState;
  * @property bool $is_emergency Alias for emergency
  * @property bool $eligibility_confirmed
  * @property bool $reminder_sent
-<<<<<<< HEAD
  * @property \Illuminate\Support\Carbon|null $reminder_sent_at
  * @property \Illuminate\Support\Carbon $created_at
  * @property \Illuminate\Support\Carbon $updated_at
-=======
- * @property \Carbon\Carbon|null $reminder_sent_at
- * @property \Carbon\Carbon $created_at
- * @property \Carbon\Carbon $updated_at
->>>>>>> aurmich/dev
  * @property-read Patient $patient
  * @property-read Doctor $doctor
  * @property-read Studio $studio
@@ -82,12 +50,9 @@ use Modules\SaluteOra\States\Appointment\AppointmentState;
  * @property string|null $created_by
  * @property string|null $start_datetime
  * @property string|null $end_datetime
-<<<<<<< HEAD
  * @property \Illuminate\Support\Carbon|null $date
  * @property \Illuminate\Support\Carbon|null $start_time
  * @property \Illuminate\Support\Carbon|null $end_time
-=======
->>>>>>> aurmich/dev
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Activity\Models\Activity> $activities
  * @property-read int|null $activities_count
  * @property-read \Modules\SaluteOra\Models\Profile|null $creator
@@ -125,7 +90,6 @@ use Modules\SaluteOra\States\Appointment\AppointmentState;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Appointment whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Appointment whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Appointment whereUserId($value)
-<<<<<<< HEAD
  * @property \Illuminate\Support\Carbon|null $starts_at
  * @property \Illuminate\Support\Carbon|null $ends_at
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Appointment orWhereNotState(string $column, $states)
@@ -150,17 +114,6 @@ class Appointment extends BaseModel implements HasStatesContract
 {
     use LogsActivity;
     use HasStates;
-=======
- * @mixin \Eloquent
- */
-class Appointment extends BaseModel
-{
-    use LogsActivity;
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
-    use HasStates;
->>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 
     /**
      * Gli attributi che sono mass assignable.
@@ -171,19 +124,8 @@ class Appointment extends BaseModel
         'patient_id',
         'doctor_id',
         'studio_id',
-<<<<<<< HEAD
-<<<<<<< HEAD
         //'tenant_id',
         'title',
-=======
-        'tenant_id',
-=======
-        //'tenant_id',
->>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
-        'title',
-        'start_time',
-        'end_time',
->>>>>>> aurmich/dev
         'type',
         'status',
         'notes',
@@ -192,20 +134,10 @@ class Appointment extends BaseModel
         'eligibility_confirmed',
         'reminder_sent',
         'reminder_sent_at',
-<<<<<<< HEAD
-<<<<<<< HEAD
         'state',
         'starts_at',
         'ends_at',
-<<<<<<< HEAD
         'invoice',//fattura
-=======
->>>>>>> aurmich/dev
-=======
-        'state',
->>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
-=======
->>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
     ];
 
     /**
@@ -216,34 +148,15 @@ class Appointment extends BaseModel
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
-<<<<<<< HEAD
             'type' => AppointmentTypeEnum::class,
             'status' => AppointmentStatusEnum::class,
             'state' => AppointmentState::class,
-=======
-            'start_time' => 'datetime',
-            'end_time' => 'datetime',
-            'type' => AppointmentTypeEnum::class,
-            'status' => AppointmentStatusEnum::class,
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
-            'state' => AppointmentState::class,
->>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
             'emergency' => 'boolean',
             'eligibility_confirmed' => 'boolean',
             'reminder_sent' => 'boolean',
             'reminder_sent_at' => 'datetime',
-<<<<<<< HEAD
-<<<<<<< HEAD
             'starts_at' => 'datetime',
             'ends_at' => 'datetime',
-=======
->>>>>>> aurmich/dev
-=======
-            'starts_at' => 'datetime',
-            'ends_at' => 'datetime',
->>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
         ]);
     }
 
@@ -260,19 +173,10 @@ class Appointment extends BaseModel
                 'doctor_id',
                 'studio_id',
                 'title',
-<<<<<<< HEAD
                 'starts_at',
                 'ends_at',
                 'notes',
                 'state',
-=======
-                'start_time',
-                'end_time',
-                'type',
-                'status',
-                'notes',
-                'emergency'
->>>>>>> aurmich/dev
             ])
             ->logOnlyDirty()
             ->dontSubmitEmptyLogs();
@@ -308,7 +212,6 @@ class Appointment extends BaseModel
         return $this->belongsTo(Studio::class);
     }
 
-<<<<<<< HEAD
     public function report(): HasOne
     {
         return $this->hasOne(Report::class);
@@ -325,8 +228,6 @@ class Appointment extends BaseModel
         return $this->report()->exists();
     }
 
-=======
->>>>>>> aurmich/dev
     /**
      * Get the formatted title for calendar display.
      *
@@ -341,14 +242,11 @@ class Appointment extends BaseModel
         return $this->title ?: $this->type->getLabel();
     }
 
-<<<<<<< HEAD
     public function getTimeRangeAttribute(): string
     {
         return $this->starts_at?->format('H:i') . ' - ' . $this->ends_at?->format('H:i');
     }
 
-=======
->>>>>>> aurmich/dev
     /**
      * Get the duration in minutes.
      *
@@ -356,11 +254,7 @@ class Appointment extends BaseModel
      */
     public function getDurationAttribute(): int
     {
-<<<<<<< HEAD
         return (int) $this->starts_at?->diffInMinutes($this->ends_at);
-=======
-        return (int) $this->start_time->diffInMinutes($this->end_time);
->>>>>>> aurmich/dev
     }
 
     /**
@@ -413,11 +307,7 @@ class Appointment extends BaseModel
      */
     public function scopeInDateRange($query, string $start, string $end)
     {
-<<<<<<< HEAD
         return $query->whereBetween('starts_at', [$start, $end]);
-=======
-        return $query->whereBetween('start_time', [$start, $end]);
->>>>>>> aurmich/dev
     }
 
     /**

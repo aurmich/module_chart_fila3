@@ -13,36 +13,7 @@ use Modules\SaluteOra\States\Appointment\AppointmentState;
  */
 class Scheduled extends AppointmentState
 {
-<<<<<<< HEAD
     /** @var string */
     public static string $name = 'scheduled';
 
-=======
-    public static $name = 'scheduled';
-
-    public function label(): string
-    {
-        return 'Programmato';
-    }
-
-    public function color(): string
-    {
-        return 'info';
-    }
-
-    public function icon(): string
-    {
-        return 'heroicon-o-calendar';
-    }
-
-    public function canBeModified(): bool
-    {
-        return true;
-    }
-
-    public function isActive(): bool
-    {
-        return true;
-    }
->>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 }

@@ -24,25 +24,9 @@ class ListStudios extends XotBaseListRecords
                 ->sortable(),
             'active' => Tables\Columns\IconColumn::make('active')
                 ->boolean(),
-<<<<<<< HEAD
             'full_address' => Tables\Columns\TextColumn::make('full_address')
                 ->searchable()
                     ,
-=======
-            'full_address' => Tables\Columns\TextColumn::make('address')
-                ->searchable()
-                ->default(function($record){
-                    $address = $record?->address()->first();
-                    if($address==null){
-                        return null;
-                    }
-                    $locality=$address->getLocality();
-                    if($locality==null){
-                        return null;
-                    }
-                    return $address->street_address.' '.$address->street_number.' '.implode('',$locality['cap']).' '.$locality['nome'].' ('.$locality['provincia']['nome'].') - '.$locality['regione']['nome'];
-                }),
->>>>>>> aurmich/dev
                 
             'name' => Tables\Columns\TextColumn::make('name')
                 ->searchable()

@@ -366,10 +366,7 @@ return [
 
 ### 2.2 Environment Variables
 ```env
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Netfun specific
 NETFUN_TOKEN=your_token_here
 NETFUN_ENDPOINT=https://v2.smsviainternet.it/api/rest/v1/sms-batch.json

@@ -27,10 +27,7 @@ Questo documento descrive il sistema di template email utilizzato nel modulo Not
 ```php
 // resources/views/vendor/notifications/email/welcome.blade.php
 @component('mail::message')
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Benvenuto in {{ config('app.name') }}
 
 Grazie per esserti registrato.

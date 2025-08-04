@@ -14,38 +14,22 @@ class PatientRegistrationWizard extends Component
      * Numero di step totali nel wizard.
      */
     public int $totalSteps = 4;
-<<<<<<< HEAD
     
-=======
-
->>>>>>> aurmich/dev
     /**
      * Step corrente del wizard.
      */
     public int $currentStep = 1;
-<<<<<<< HEAD
     
-=======
-
->>>>>>> aurmich/dev
     /**
      * Dati temporanei del paziente.
      */
     public array $patientData = [];
-<<<<<<< HEAD
     
-=======
-
->>>>>>> aurmich/dev
     /**
      * Indica se il form è stato inviato.
      */
     public bool $isSubmitted = false;
-<<<<<<< HEAD
     
-=======
-
->>>>>>> aurmich/dev
     /**
      * Create the component instance.
      */
@@ -64,11 +48,7 @@ class PatientRegistrationWizard extends Component
     {
         return view('saluteora::components.patient-registration-wizard');
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> aurmich/dev
     /**
      * Restituisce il titolo dello step corrente.
      */
@@ -82,11 +62,7 @@ class PatientRegistrationWizard extends Component
             default => 'Registrazione Paziente',
         };
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> aurmich/dev
     /**
      * Restituisce la descrizione dello step corrente.
      */
@@ -100,11 +76,7 @@ class PatientRegistrationWizard extends Component
             default => 'Completa tutti i campi richiesti',
         };
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> aurmich/dev
     /**
      * Verifica se lo step corrente è valido.
      */
@@ -118,41 +90,24 @@ class PatientRegistrationWizard extends Component
             default => false,
         };
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> aurmich/dev
     /**
      * Verifica se lo step 1 è valido.
      */
     private function isStep1Valid(): bool
     {
-<<<<<<< HEAD
         return isset($this->patientData['name']) && 
                isset($this->patientData['surname']) && 
                isset($this->patientData['fiscal_code']) && 
                isset($this->patientData['birth_date']);
     }
     
-=======
-        return isset($this->patientData['name']) &&
-               isset($this->patientData['last_name']) &&
-               isset($this->patientData['fiscal_code']) &&
-               isset($this->patientData['birth_date']);
-    }
-
->>>>>>> aurmich/dev
     /**
      * Verifica se lo step 2 è valido.
      */
     private function isStep2Valid(): bool
     {
-<<<<<<< HEAD
         return isset($this->patientData['email']) && 
-=======
-        return isset($this->patientData['email']) &&
->>>>>>> aurmich/dev
                isset($this->patientData['phone']);
     }
 

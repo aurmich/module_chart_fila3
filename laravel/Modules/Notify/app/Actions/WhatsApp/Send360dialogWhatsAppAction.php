@@ -9,40 +9,16 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 use Modules\Notify\Datas\WhatsAppData;
 use Spatie\QueueableAction\QueueableAction;
 use function Safe\json_decode;
 
 final class Send360dialogWhatsAppAction
-=======
-use Modules\Notify\Contracts\WhatsAppProviderActionInterface;
-=======
-
->>>>>>> 345f8677 (phpstan)
-use Modules\Notify\Datas\WhatsAppData;
-use Spatie\QueueableAction\QueueableAction;
-use function Safe\json_decode;
-
-<<<<<<< HEAD
-final class Send360dialogWhatsAppAction implements WhatsAppProviderActionInterface
->>>>>>> aurmich/dev
-=======
-final class Send360dialogWhatsAppAction
->>>>>>> 345f8677 (phpstan)
 {
     use QueueableAction;
 
     private string $apiKey;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    private string $phoneNumberId;
->>>>>>> aurmich/dev
-=======
->>>>>>> 345f8677 (phpstan)
     private string $baseUrl = 'https://waba.360dialog.io/v1';
     private array $vars = [];
     protected bool $debug;
@@ -59,24 +35,9 @@ final class Send360dialogWhatsAppAction
         }
         $this->apiKey = $apiKey;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         // Parametri a livello di root
         $this->debug = (bool) config('whatsapp.debug', false);
         $this->timeout = app(\Modules\Xot\Actions\Cast\SafeIntCastAction::class)->execute(config('whatsapp.timeout'), 30);
-=======
-        $phoneNumberId = config('services.360dialog.phone_number_id');
-        if (!is_string($phoneNumberId)) {
-            throw new Exception('put [360DIALOG_PHONE_NUMBER_ID] variable to your .env and config [services.360dialog.phone_number_id]');
-        }
-        $this->phoneNumberId = $phoneNumberId;
-
-=======
->>>>>>> 345f8677 (phpstan)
-        // Parametri a livello di root
-        $this->debug = (bool) config('whatsapp.debug', false);
-        $this->timeout = (int) config('whatsapp.timeout', 30);
->>>>>>> aurmich/dev
     }
 
     /**
@@ -138,14 +99,7 @@ final class Send360dialogWhatsAppAction
             
             $statusCode = $response->getStatusCode();
             $responseContent = $response->getBody()->getContents();
-<<<<<<< HEAD
-<<<<<<< HEAD
             /** @var array $responseData */
-=======
->>>>>>> aurmich/dev
-=======
-            /** @var array $responseData */
->>>>>>> 345f8677 (phpstan)
             $responseData = json_decode($responseContent, true);
             
             // Salva i dati della risposta nelle variabili dell'azione
@@ -167,14 +121,7 @@ final class Send360dialogWhatsAppAction
         } catch (ClientException $e) {
             $response = $e->getResponse();
             $statusCode = $response->getStatusCode();
-<<<<<<< HEAD
-<<<<<<< HEAD
             /** @var array $responseBody */
-=======
->>>>>>> aurmich/dev
-=======
-            /** @var array $responseBody */
->>>>>>> 345f8677 (phpstan)
             $responseBody = json_decode($response->getBody()->getContents(), true);
             
             // Salva i dati dell'errore nelle variabili dell'azione

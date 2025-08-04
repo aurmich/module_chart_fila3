@@ -24,7 +24,6 @@ class AppointmentResource extends XotBaseResource
     public static function getFormSchema(): array
     {
         return [
-<<<<<<< HEAD
             Forms\Components\Select::make('patient_id')
                 ->relationship('patient', 'full_name')
                 ->searchable()
@@ -55,36 +54,6 @@ class AppointmentResource extends XotBaseResource
 
             /*
             'treatment_id' => Forms\Components\Select::make('treatment', 'name')
-=======
-
-
-            'patient_id' => Forms\Components\Select::make('patient_id')
-                ->relationship('patient', 'full_name')
-                ->searchable()
-                ->preload()
-                ->createOptionForm(
-                    fn (Forms\Get $get): array => PatientResource::getFormSchema()
-                )
-                ->required(),
-
-
-            'doctor_id' => Forms\Components\Select::make('doctor_id')
-                ->relationship('doctor', 'full_name')
-                ->searchable()
-                ->preload()
-                ->createOptionForm(
-                    fn (Forms\Get $get): array => DoctorResource::getFormSchema()
-                )
-                ->required(),
-
-            'start_time' => Forms\Components\DateTimePicker::make('start_time')
-                ->required(),
-
-            'end_time' => Forms\Components\DateTimePicker::make('end_time')
-                ->after('start_time'),
-            /*
-            'treatment_id' => Forms\Components\Select::make('treatment_id')
->>>>>>> aurmich/dev
                 ->relationship('treatment', 'name')
                 ->searchable()
                 ->preload(),

@@ -10,11 +10,8 @@ use Illuminate\Support\Arr;
 use Modules\SaluteOra\Models\Patient;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Eloquent\Builder;
-<<<<<<< HEAD
 use Modules\SaluteOra\States\User\UserState;
 use Modules\Xot\Filament\Widgets\StateOverviewWidget;
-=======
->>>>>>> aurmich/dev
 use Modules\SaluteOra\Filament\Resources\PatientResource;
 use Modules\Media\Filament\Tables\Columns\IconMediaColumn;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -28,22 +25,16 @@ class ListPatients extends ListUsers
     {
         $columns = parent::getTableColumns();
         $columns = Arr::except($columns, ['type']);
-<<<<<<< HEAD
         $columns['nationality'] = Tables\Columns\TextColumn::make('nationality');
         $columns['country_code'] = Tables\Columns\TextColumn::make('country_code');
         $columns['years_in_italy'] = Tables\Columns\TextColumn::make('years_in_italy');
         $columns['family_members'] = Tables\Columns\TextColumn::make('family_members');
         $columns['children_count'] = Tables\Columns\TextColumn::make('children_count');
         $attachments = Patient::getAttachments();
-=======
-
-        $attachments = Patient::$attachments;
->>>>>>> aurmich/dev
 
         foreach ($attachments as $attachment) {
             $columns[$attachment] = IconMediaColumn::make($attachment);
         }
-<<<<<<< HEAD
         
         return $columns;
     }
@@ -57,12 +48,5 @@ class ListPatients extends ListUsers
             StateOverviewWidget::class,
         ];
     }
-=======
-
-        return $columns;
-    }
-
-
->>>>>>> aurmich/dev
 
 }

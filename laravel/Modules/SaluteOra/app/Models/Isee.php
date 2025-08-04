@@ -7,11 +7,7 @@ namespace Modules\SaluteOra\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
-<<<<<<< HEAD
 
-=======
-use Modules\Tenant\Traits\BelongsToTenant;
->>>>>>> aurmich/dev
 
 /**
  * Modello Isee per la gestione dei dati relativi all'ISEE delle pazienti.
@@ -63,19 +59,12 @@ use Modules\Tenant\Traits\BelongsToTenant;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee whereUserId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Isee withoutTrashed()
-<<<<<<< HEAD
  * @method static \Modules\SaluteOra\Database\Factories\IseeFactory factory($count = null, $state = [])
-=======
->>>>>>> aurmich/dev
  * @mixin \Eloquent
  */
 class Isee extends BaseModel
 {
-<<<<<<< HEAD
     
-=======
-    use HasFactory, SoftDeletes, BelongsToTenant;
->>>>>>> aurmich/dev
 
     /**
      * Gli attributi che sono mass assignable.
@@ -161,8 +150,4 @@ class Isee extends BaseModel
         return $query->where('isee_value', '<=', 20000)
                      ->where('isee_expiry_date', '>', now());
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> aurmich/dev

@@ -91,20 +91,12 @@ class StudiosRelationManager extends XotBaseRelationManager
     /**
      * Get the table filters.
      *
-<<<<<<< HEAD
      * @return array<string, Tables\Filters\Filter|Tables\Filters\SelectFilter>
-=======
-     * @return array<string, Tables\Filters\Filter>
->>>>>>> aurmich/dev
      */
     public function getTableFilters(): array
     {
         return [
-<<<<<<< HEAD
             //'active' => Tables\Filters\TernaryFilter::make('active'),
-=======
-            'active' => Tables\Filters\TernaryFilter::make('active'),
->>>>>>> aurmich/dev
         ];
     }
 
@@ -120,11 +112,7 @@ class StudiosRelationManager extends XotBaseRelationManager
     public function getTableHeaderActions(): array
     {
         return [
-<<<<<<< HEAD
             'attach'=>Tables\Actions\AttachAction::make()
-=======
-            Tables\Actions\AttachAction::make()
->>>>>>> aurmich/dev
                 ->preloadRecordSelect(false)
                 ->recordSelect(
                     fn (Forms\Components\Select $select) => $select
@@ -138,10 +126,7 @@ class StudiosRelationManager extends XotBaseRelationManager
                                             ->orWhere('address', 'like', "%{$search}%");
                                     })
                                     // Escludiamo manualmente gli studi già associati
-<<<<<<< HEAD
                                     /** @phpstan-ignore property.notFound */
-=======
->>>>>>> aurmich/dev
                                     ->whereNotIn('id', $this->getOwnerRecord()->studios->modelKeys())
                                     ->limit(10)
                                     ->get()

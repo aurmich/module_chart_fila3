@@ -8,11 +8,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration
 {
-<<<<<<< HEAD
    
-=======
-
->>>>>>> aurmich/dev
     /**
      * Run the migrations.
      */
@@ -22,21 +18,12 @@ return new class extends XotBaseMigration
         $this->tableCreate(
             function (Blueprint $table): void {
             $table->id();
-<<<<<<< HEAD
             
             // $this->foreignIdFor($table,Tenant::class);
             $table->foreignIdFor(Tenant::class);
             
             $table->string('name');
             $table->string('surname');
-=======
-
-            // $this->foreignIdFor($table,Tenant::class);
-            $table->foreignIdFor(Tenant::class);
-
-            $table->string('name');
-            $table->string('last_name');
->>>>>>> aurmich/dev
             $table->string('email')->nullable();
             $table->string('phone')->nullable();
             $table->string('specialization')->nullable();
@@ -47,11 +34,7 @@ return new class extends XotBaseMigration
             $table->boolean('is_active')->default(true);
             }
         );
-<<<<<<< HEAD
         
-=======
-
->>>>>>> aurmich/dev
         // -- UPDATE --
         $this->tableUpdate(
             function (Blueprint $table): void {

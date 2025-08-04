@@ -8,41 +8,17 @@ use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use Illuminate\Support\Facades\Log;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Modules\Notify\Datas\TelegramData;
 use Spatie\QueueableAction\QueueableAction;
 use function Safe\json_encode;
 use function Safe\json_decode;
 
 final class SendBotmanTelegramAction
-=======
-use Modules\Notify\Contracts\TelegramProviderActionInterface;
-=======
->>>>>>> 345f8677 (phpstan)
-use Modules\Notify\Datas\TelegramData;
-use Spatie\QueueableAction\QueueableAction;
-use function Safe\json_encode;
-use function Safe\json_decode;
-
-<<<<<<< HEAD
-final class SendBotmanTelegramAction implements TelegramProviderActionInterface
->>>>>>> aurmich/dev
-=======
-final class SendBotmanTelegramAction
->>>>>>> 345f8677 (phpstan)
 {
     use QueueableAction;
 
     private string $token;
     private string $apiUrl;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    private ?string $webhookUrl;
->>>>>>> aurmich/dev
-=======
->>>>>>> 345f8677 (phpstan)
     private array $vars = [];
     protected bool $debug;
     protected int $timeout;
@@ -58,34 +34,16 @@ final class SendBotmanTelegramAction
             throw new Exception('put [TELEGRAM_BOT_TOKEN] variable to your .env and config [services.telegram.token]');
         }
         $this->token = $token;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 345f8677 (phpstan)
         /** @var string $apiUrl */
         $apiUrl = config('services.telegram.api_url', 'https://api.telegram.org');
         $this->apiUrl = $apiUrl;
         
-<<<<<<< HEAD
         // Parametri a livello di root
         /** @var string|null $parseMode */
         $parseMode = config('telegram.parse_mode');
         $this->parseMode = $parseMode;
         $this->debug = (bool) config('telegram.debug', false);
         $this->timeout = app(\Modules\Xot\Actions\Cast\SafeIntCastAction::class)->execute(config('telegram.timeout'), 30);
-=======
-        $this->apiUrl = config('services.telegram.api_url', 'https://api.telegram.org');
-        $this->webhookUrl = config('services.telegram.webhook_url');
-
-=======
->>>>>>> 345f8677 (phpstan)
-        // Parametri a livello di root
-        /** @var string|null $parseMode */
-        $parseMode = config('telegram.parse_mode');
-        $this->parseMode = $parseMode;
-        $this->debug = (bool) config('telegram.debug', false);
-        $this->timeout = (int) config('telegram.timeout', 30);
->>>>>>> aurmich/dev
     }
 
     /**
@@ -154,14 +112,7 @@ final class SendBotmanTelegramAction
             
             $statusCode = $response->getStatusCode();
             $responseContent = $response->getBody()->getContents();
-<<<<<<< HEAD
-<<<<<<< HEAD
             /** @var array $responseData */
-=======
->>>>>>> aurmich/dev
-=======
-            /** @var array $responseData */
->>>>>>> 345f8677 (phpstan)
             $responseData = json_decode($responseContent, true);
             
             // Salva i dati della risposta nelle variabili dell'azione
@@ -183,14 +134,7 @@ final class SendBotmanTelegramAction
         } catch (ClientException $e) {
             $response = $e->getResponse();
             $statusCode = $response->getStatusCode();
-<<<<<<< HEAD
-<<<<<<< HEAD
             /** @var array $responseBody */
-=======
->>>>>>> aurmich/dev
-=======
-            /** @var array $responseBody */
->>>>>>> 345f8677 (phpstan)
             $responseBody = json_decode($response->getBody()->getContents(), true);
             
             // Salva i dati dell'errore nelle variabili dell'azione

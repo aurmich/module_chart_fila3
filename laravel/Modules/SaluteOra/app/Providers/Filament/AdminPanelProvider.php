@@ -6,7 +6,6 @@ namespace Modules\SaluteOra\Providers\Filament;
 
 use Filament\Panel;
 use Illuminate\Http\Request;
-<<<<<<< HEAD
 use LaraZeus\Bolt\BoltPlugin;
 use Filament\Facades\Filament;
 use Illuminate\Support\Facades\Auth;
@@ -16,27 +15,15 @@ use Modules\SaluteOra\Enums\UserTypeEnum;
 
 use Filament\Http\Middleware\Authenticate;
 use Filament\SpatieLaravelTranslatablePlugin;
-=======
-use Filament\Facades\Filament;
-use Illuminate\Support\Facades\Auth;
-use Modules\SaluteOra\Enums\UserTypeEnum;
-use Filament\Http\Middleware\Authenticate;
->>>>>>> aurmich/dev
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
-<<<<<<< HEAD
 use Modules\UI\Actions\Panel\ApplyCalendarToPanelAction;
 use Modules\Xot\Actions\Panel\ApplyTenancyToPanelAction;
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
-=======
-use Modules\Xot\Actions\Panel\ApplyTenancyToPanelAction;
-use Modules\Xot\Providers\Filament\XotBasePanelProvider;
-use Modules\UI\Actions\Panel\ApplyCalendarToPanelAction;
->>>>>>> aurmich/dev
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Saade\FilamentFullCalendar\FilamentFullCalendarPlugin;
@@ -66,7 +53,6 @@ class AdminPanelProvider extends XotBasePanelProvider
     {
         $panel = parent::panel($panel);
        
-<<<<<<< HEAD
         // Applica tenancy e calendar
         $panel = app(ApplyTenancyToPanelAction::class)->execute($panel);
         $panel = app(ApplyCalendarToPanelAction::class)->execute($panel);
@@ -81,11 +67,6 @@ class AdminPanelProvider extends XotBasePanelProvider
         ];
         
         $panel->plugins($plugins);
-=======
-        
-        $panel = app(ApplyTenancyToPanelAction::class)->execute($panel);
-        $panel = app(ApplyCalendarToPanelAction::class)->execute($panel);
->>>>>>> aurmich/dev
 
         return $panel;
     }

@@ -4,24 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\States\User\Transitions;
 
-<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
 use Modules\SaluteOra\Models\User;
 use Spatie\ModelStates\Transition;
 use Modules\SaluteOra\States\User\Active;
 use Modules\SaluteOra\States\User\IntegrationRequested;
-=======
-use Spatie\ModelStates\Transition;
-use Modules\SaluteOra\States\User\Active;
-use Modules\SaluteOra\States\User\IntegrationRequested;
-use Modules\SaluteOra\Models\User;
->>>>>>> aurmich/dev
 
 class ActiveToIntegrationRequested extends BaseTransition
 {
     //--- 
-<<<<<<< HEAD
     public function getNotificationData(): array{
 
         $user=$this->record;
@@ -43,6 +35,4 @@ class ActiveToIntegrationRequested extends BaseTransition
         ];
         return $data;
     }
-=======
->>>>>>> aurmich/dev
 }

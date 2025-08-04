@@ -46,19 +46,13 @@ return array (
     'id' => 
     array (
       'label' => 'ID',
-<<<<<<< HEAD
       'placeholder' => 'ID generato automaticamente',
       'help' => 'Identificativo univoco dell\'utente',
-=======
-      'placeholder' => '',
-      'helper_text' => '',
->>>>>>> aurmich/dev
     ),
     'name' => 
     array (
       'label' => 'Nome',
       'placeholder' => 'Mario Rossi',
-<<<<<<< HEAD
       'help' => 'Nome completo dell\'utente',
     ),
     'first_name' => 
@@ -72,25 +66,17 @@ return array (
       'label' => 'Cognome',
       'placeholder' => 'Rossi',
       'help' => 'Cognome dell\'utente',
-=======
-      'helper_text' => 'Nome completo dell\'utente',
->>>>>>> aurmich/dev
     ),
     'email' => 
     array (
       'label' => 'Email',
       'placeholder' => 'utente@email.com',
-<<<<<<< HEAD
       'help' => 'Indirizzo email per l\'accesso',
-=======
-      'helper_text' => 'Indirizzo email per l\'accesso',
->>>>>>> aurmich/dev
     ),
     'role' => 
     array (
       'label' => 'Ruolo',
       'placeholder' => 'Seleziona il ruolo',
-<<<<<<< HEAD
       'help' => 'Ruolo assegnato all\'utente',
     ),
     'type' => 
@@ -98,48 +84,29 @@ return array (
       'label' => 'Tipo',
       'placeholder' => 'Seleziona il tipo',
       'help' => 'Tipologia di utente nel sistema',
-=======
-      'helper_text' => 'Ruolo assegnato all\'utente',
->>>>>>> aurmich/dev
     ),
     'active' => 
     array (
       'label' => 'Attivo',
-<<<<<<< HEAD
       'placeholder' => 'Stato di attivazione',
       'help' => 'L\'utente è attivo e può accedere',
-=======
-      'placeholder' => '',
-      'helper_text' => 'L\'utente è attivo e può accedere',
->>>>>>> aurmich/dev
     ),
     'created_at' => 
     array (
       'label' => 'Data Creazione',
-<<<<<<< HEAD
       'placeholder' => 'Data di registrazione',
       'help' => 'Data di registrazione dell\'utente',
-=======
-      'placeholder' => '',
-      'helper_text' => 'Data di registrazione dell\'utente',
->>>>>>> aurmich/dev
     ),
     'updated_at' => 
     array (
       'label' => 'Ultima Modifica',
-<<<<<<< HEAD
       'placeholder' => 'Data ultima modifica',
       'help' => 'Data ultima modifica profilo',
-=======
-      'placeholder' => '',
-      'helper_text' => 'Data ultima modifica profilo',
->>>>>>> aurmich/dev
     ),
     'toggleColumns' => 
     array (
       'label' => 'toggleColumns',
     ),
-<<<<<<< HEAD
   ),
   'actions' => 
   array (
@@ -176,71 +143,18 @@ return array (
       'confirmation' => 'Sei sicuro di voler attivare questo utente?',
       'success' => 'Utente attivato con successo',
       'error' => 'Errore durante l\'attivazione dell\'utente',
-=======
-<<<<<<< HEAD
-=======
-    'reorderRecords' => 
-    array (
-      'label' => 'reorderRecords',
-    ),
-    'resetFilters' => 
-    array (
-      'label' => 'resetFilters',
-    ),
-    'applyFilters' => 
-    array (
-      'label' => 'applyFilters',
-    ),
-    'openFilters' => 
-    array (
-      'label' => 'openFilters',
-    ),
-<<<<<<< HEAD
->>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
-=======
-    'type' => 
-    array (
-      'label' => 'type',
-    ),
-    'last_name' => 
-    array (
-      'label' => 'last_name',
-    ),
-<<<<<<< HEAD
->>>>>>> e577f0ca (feat: getDataDefault for fix livewire form data)
-=======
-    'first_name' => 
-    array (
-      'label' => 'first_name',
-    ),
->>>>>>> 3ad9917a (- fix styles registration)
-  ),
-  'actions' => 
-  array (
-    'activate' => 
-    array (
-      'label' => 'Attiva',
-      'icon' => 'heroicon-o-check-circle',
-      'tooltip' => 'Rendi l\'utente attivo',
->>>>>>> aurmich/dev
     ),
     'deactivate' => 
     array (
       'label' => 'Disattiva',
-<<<<<<< HEAD
       'tooltip' => 'Disattiva temporaneamente l\'utente',
       'confirmation' => 'Sei sicuro di voler disattivare questo utente?',
       'success' => 'Utente disattivato con successo',
       'error' => 'Errore durante la disattivazione dell\'utente',
-=======
-      'icon' => 'heroicon-o-x-circle',
-      'tooltip' => 'Disattiva temporaneamente l\'utente',
->>>>>>> aurmich/dev
     ),
     'reset_password' => 
     array (
       'label' => 'Reset Password',
-<<<<<<< HEAD
       'tooltip' => 'Invia una nuova password all\'utente',
       'modal_heading' => 'Reset Password',
       'modal_description' => 'Verrà generata una nuova password temporanea e inviata via email',
@@ -272,10 +186,6 @@ return array (
     array (
       'label' => 'Riordina Record',
       'tooltip' => 'Riordina i record della tabella',
-=======
-      'icon' => 'heroicon-o-key',
-      'tooltip' => 'Invia una nuova password all\'utente',
->>>>>>> aurmich/dev
     ),
   ),
   'filters' => 
@@ -283,16 +193,12 @@ return array (
     'active' => 
     array (
       'label' => 'Solo Attivi',
-<<<<<<< HEAD
       'placeholder' => 'Filtra per utenti attivi',
       'help' => 'Mostra solo gli utenti attualmente attivi',
-=======
->>>>>>> aurmich/dev
     ),
     'role' => 
     array (
       'label' => 'Per Ruolo',
-<<<<<<< HEAD
       'placeholder' => 'Seleziona ruolo',
       'help' => 'Filtra per ruolo specifico',
     ),
@@ -307,8 +213,6 @@ return array (
       'label' => 'Data Registrazione',
       'placeholder' => 'Seleziona periodo',
       'help' => 'Filtra per periodo di registrazione',
-=======
->>>>>>> aurmich/dev
     ),
   ),
   'bulk_actions' => 
@@ -316,31 +220,22 @@ return array (
     'activate_selected' => 
     array (
       'label' => 'Attiva Selezionati',
-<<<<<<< HEAD
       'tooltip' => 'Attiva tutti gli utenti selezionati',
       'confirmation' => 'Sei sicuro di voler attivare tutti gli utenti selezionati?',
       'success' => 'Utenti attivati con successo',
       'error' => 'Errore durante l\'attivazione degli utenti',
-=======
-      'icon' => 'heroicon-o-check-circle',
->>>>>>> aurmich/dev
     ),
     'deactivate_selected' => 
     array (
       'label' => 'Disattiva Selezionati',
-<<<<<<< HEAD
       'tooltip' => 'Disattiva tutti gli utenti selezionati',
       'confirmation' => 'Sei sicuro di voler disattivare tutti gli utenti selezionati?',
       'success' => 'Utenti disattivati con successo',
       'error' => 'Errore durante la disattivazione degli utenti',
-=======
-      'icon' => 'heroicon-o-x-circle',
->>>>>>> aurmich/dev
     ),
     'reset_password_selected' => 
     array (
       'label' => 'Reset Password Selezionati',
-<<<<<<< HEAD
       'tooltip' => 'Reimposta password per tutti gli utenti selezionati',
       'modal_heading' => 'Reset Password Multiplo',
       'modal_description' => 'Verranno generate nuove password temporanee per tutti gli utenti selezionati',
@@ -355,9 +250,6 @@ return array (
       'confirmation' => 'Sei sicuro di voler eliminare tutti gli utenti selezionati? Questa azione non può essere annullata.',
       'success' => 'Utenti eliminati con successo',
       'error' => 'Errore durante l\'eliminazione degli utenti',
-=======
-      'icon' => 'heroicon-o-key',
->>>>>>> aurmich/dev
     ),
   ),
   'messages' => 
@@ -365,7 +257,6 @@ return array (
     'activated_successfully' => 'Utente attivato con successo',
     'deactivated_successfully' => 'Utente disattivato con successo',
     'password_reset_successfully' => 'Password reimpostata con successo',
-<<<<<<< HEAD
     'email_sent' => 'Email di notifica inviata',
     'empty_state' => 'Nessun utente trovato',
     'loading' => 'Caricamento utenti in corso...',
@@ -438,8 +329,4 @@ return array (
     'pending' => 'In attesa',
     'suspended' => 'Sospeso',
   ),
-=======
-  ),
-  'search_placeholder' => 'Cerca per nome, email o ruolo...',
->>>>>>> aurmich/dev
 );

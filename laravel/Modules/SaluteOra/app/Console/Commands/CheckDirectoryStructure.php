@@ -4,10 +4,7 @@ namespace Modules\SaluteOra\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
-<<<<<<< HEAD
 use function Safe\preg_match;
-=======
->>>>>>> aurmich/dev
 
 class CheckDirectoryStructure extends Command
 {
@@ -67,8 +64,4 @@ class CheckDirectoryStructure extends Command
             }
         }
     }
-<<<<<<< HEAD
 } 
-=======
-} 
->>>>>>> aurmich/dev

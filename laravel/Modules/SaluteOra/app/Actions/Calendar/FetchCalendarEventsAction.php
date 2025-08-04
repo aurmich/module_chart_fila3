@@ -31,11 +31,7 @@ class FetchCalendarEventsAction
     ): Collection {
         $query = Appointment::query()
             ->with(['patient', 'doctor', 'studio'])
-<<<<<<< HEAD
             ->whereBetween('starts_at', [$start, $end]);
-=======
-            ->whereBetween('start_time', [$start, $end]);
->>>>>>> aurmich/dev
 
         $this->applyFilters($query, $filters);
 
@@ -86,13 +82,8 @@ class FetchCalendarEventsAction
         return [
             'id' => $appointment->id,
             'title' => $title,
-<<<<<<< HEAD
             'start' => $appointment->starts_at?->toIso8601String(),
             'end' => $appointment->ends_at?->toIso8601String(),
-=======
-            'start' => $appointment->start_time->toIso8601String(),
-            'end' => $appointment->end_time->toIso8601String(),
->>>>>>> aurmich/dev
             'allDay' => false,
             'backgroundColor' => $color,
             'borderColor' => $color,
@@ -101,11 +92,7 @@ class FetchCalendarEventsAction
                 'type' => $appointment->type->value,
                 'status' => $appointment->status->value,
                 'patient_id' => $appointment->patient_id,
-<<<<<<< HEAD
                 'patient_name' =>  $appointment->patient->full_name,
-=======
-                'patient_name' => $appointment->patient->full_name,
->>>>>>> aurmich/dev
                 'doctor_id' => $appointment->doctor_id,
                 'doctor_name' => $appointment->doctor->full_name,
                 'studio_id' => $appointment->studio_id,
@@ -128,11 +115,7 @@ class FetchCalendarEventsAction
         $parts = [];
         
         if ($appointment->patient) {
-<<<<<<< HEAD
             $parts[] =  $appointment->patient->full_name;
-=======
-            $parts[] = $appointment->patient->full_name;
->>>>>>> aurmich/dev
         }
         
         if ($appointment->type) {
@@ -200,7 +183,6 @@ class FetchCalendarEventsAction
     protected function isEditable(Appointment $appointment): bool
     {
         $user = Auth::user();
-<<<<<<< HEAD
         if (!$user) {
             return false;
         }
@@ -208,17 +190,5 @@ class FetchCalendarEventsAction
         // and the user is the assigned doctor or has admin rights
         return ($appointment->starts_at instanceof \Carbon\CarbonInterface && $appointment->starts_at->isFuture()) &&
                ($user->type === UserTypeEnum::ADMIN || $user->id === $appointment->doctor_id);
-=======
-        
-        if (!$user) {
-            return false;
-        }
-
-        // Only allow editing if the appointment is not in the past
-        // and the user is the assigned doctor or has admin rights
-        return $appointment->start_time->isFuture() && 
-               ($user->type === UserTypeEnum::ADMIN || 
-                $user->id === $appointment->doctor_id);
->>>>>>> aurmich/dev
     }
 }

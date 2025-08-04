@@ -13,11 +13,8 @@ use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Eloquent\Builder;
 use Filament\Support\Facades\FilamentView;
-<<<<<<< HEAD
 use Modules\SaluteOra\States\User\UserState;
 use Modules\Xot\Filament\Widgets\StateOverviewWidget;
-=======
->>>>>>> aurmich/dev
 use Modules\SaluteOra\Filament\Resources\DoctorResource;
 use Modules\Media\Filament\Tables\Columns\IconMediaColumn;
 use Modules\Xot\Actions\File\DownloadZipByPathsDiskAction;
@@ -32,23 +29,14 @@ class ListDoctors extends ListUsers
     {
         $columns= parent::getTableColumns();   
         $columns=Arr::except($columns,['type']);
-<<<<<<< HEAD
         
         $attachments = Doctor::getAttachments();
-=======
-        /*
-        $attachments = Doctor::$attachments;
->>>>>>> aurmich/dev
 
         
         foreach ($attachments as $attachment) {
             $columns[$attachment] = IconMediaColumn::make($attachment);
         }
-<<<<<<< HEAD
         /*
-=======
-            */
->>>>>>> aurmich/dev
         $columns['certifications'] = IconColumn::make('certifications')
         ->icon('heroicon-o-document-text')
         ->tooltip(function($record,$state, $rowLoop){
@@ -56,7 +44,6 @@ class ListDoctors extends ListUsers
         })->action(function ($record,$state){
             return app(DownloadZipByPathsDiskAction::class)->execute($state,'local');
         });
-<<<<<<< HEAD
         */
         return $columns;
     }
@@ -68,10 +55,6 @@ class ListDoctors extends ListUsers
             //Widgets\AppointmentOverviewWidget::make(['paperino'=>'pluto']),
             StateOverviewWidget::make(['stateClass'=>UserState::class,'model'=>Doctor::class]),
         ];
-=======
-
-        return $columns;
->>>>>>> aurmich/dev
     }
 
    

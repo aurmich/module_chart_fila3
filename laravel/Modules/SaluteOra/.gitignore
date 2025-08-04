@@ -49,11 +49,8 @@ Homestead.json
 *.exe
 *:Zone.Identifier
 .DS_Store
-<<<<<<< HEAD
 *.old
 *.old1
-=======
->>>>>>> aurmich/dev
 
 # Caches specifiche
 docs/cache/

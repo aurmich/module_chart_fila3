@@ -5,8 +5,6 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Models;
 
 use Parental\HasParent;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Modules\Geo\Models\Address;
 use Spatie\MediaLibrary\HasMedia;
 use Modules\SaluteOra\Enums\UserTypeEnum;
@@ -20,28 +18,12 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasOneThrough;
-=======
-=======
-use Modules\Geo\Models\Address;
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
-use Modules\SaluteOra\Enums\UserTypeEnum;
-use Modules\SaluteOra\Enums\UserStateEnum;
-use Modules\SaluteOra\Models\DoctorStudio;
-use Illuminate\Database\Eloquent\Relations\HasOne;
-use Illuminate\Database\Eloquent\Relations\MorphOne;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
-use Illuminate\Database\Eloquent\Relations\HasOneThrough;
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 
 /**
  * Doctor model for the SaluteOra module.
  * 
  * Extends the User model to provide doctor-specific functionality.
  *
-<<<<<<< HEAD
  * @property string $id
  * @property string|null $name
  * @property string|null $first_name
@@ -59,26 +41,6 @@ use Illuminate\Database\Eloquent\Relations\HasOneThrough;
  * @property string|null $fiscal_code
  * @property string|null $dental_problems
  * @property string|null $last_dental_visit
-=======
- * @property int $id
- * @property string $name
- * @property string $email
- * @property UserTypeEnum $type
- * @property UserStateEnum $state
- * @property string|null $continuation_token
- * @property \Carbon\Carbon $created_at
- * @property \Carbon\Carbon $updated_at
- * @property-read \Illuminate\Database\Eloquent\Collection<int, Studio> $studios
- * @property-read \Illuminate\Database\Eloquent\Collection<int, Appointment> $appointments
- * @property-read DoctorRegistrationWorkflow|null $registrationWorkflow
- * @see \Modules\SaluteOra\Models\User
- * @property string|null $first_name
- * @property string|null $last_name
- * @property string|null $phone
- * @property string|null $address
- * @property string|null $city
- * @property string|null $registration_number
->>>>>>> aurmich/dev
  * @property string|null $status
  * @property array<array-key, mixed>|null $certifications
  * @property \Illuminate\Support\Carbon|null $email_verified_at
@@ -87,7 +49,6 @@ use Illuminate\Database\Eloquent\Relations\HasOneThrough;
  * @property int|null $current_team_id
  * @property string|null $profile_photo_path
  * @property \Illuminate\Support\Carbon|null $deleted_at
-<<<<<<< HEAD
  * @property string|null $lang
  * @property UserTypeEnum|null $type
  * @property string|null $data_privacy_form
@@ -113,29 +74,12 @@ use Illuminate\Database\Eloquent\Relations\HasOneThrough;
  * @property string|null $full_name
  * @property string|null $certificates
  * @property string|null $last_dental_visit_period
-=======
- * @property array<array-key, mixed>|null $moderation_data
- * @property string|null $lang
- * @property string|null $date_of_birth
- * @property string|null $gender
- * @property bool $is_active
- * @property bool $is_otp
- * @property \Illuminate\Support\Carbon|null $password_expires_at
- * @property string|null $uuid
- * @property string|null $full_name
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property string|null $deleted_by
->>>>>>> aurmich/dev
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Gdpr\Models\Consent> $activeConsents
  * @property-read int|null $active_consents_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Activity\Models\Activity> $activities
  * @property-read int|null $activities_count
-<<<<<<< HEAD
  * @property-read \Illuminate\Database\Eloquent\Collection<int, Appointment> $appointments
  * @property-read int|null $appointments_count
-=======
->>>>>>> aurmich/dev
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Authentication> $authentications
  * @property-read int|null $authentications_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Laravel\Passport\Client> $clients
@@ -143,14 +87,10 @@ use Illuminate\Database\Eloquent\Relations\HasOneThrough;
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Gdpr\Models\Consent> $consents
  * @property-read int|null $consents_count
  * @property-read \Modules\User\Models\Team|null $currentTeam
-<<<<<<< HEAD
  * @property-read \Modules\User\Models\Membership|DoctorStudio|\Modules\User\Models\DeviceUser|null $pivot
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Device> $devices
  * @property-read int|null $devices_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\User> $all_team_users
-=======
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Xot\Contracts\UserContract> $all_team_users
->>>>>>> aurmich/dev
  * @property-read \Modules\User\Models\AuthenticationLog|null $latestAuthentication
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
@@ -165,16 +105,11 @@ use Illuminate\Database\Eloquent\Relations\HasOneThrough;
  * @property-read int|null $roles_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\SocialiteUser> $socialiteUsers
  * @property-read int|null $socialite_users_count
-<<<<<<< HEAD
  * @property-read \Modules\SaluteOra\Models\Studio|null $studio
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\SaluteOra\Models\Studio> $studios
  * @property-read int|null $studios_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Membership> $teamUsers
  * @property-read int|null $team_users_count
-=======
- * @property-read \Modules\SaluteOra\Models\DoctorTeam|DoctorStudio|null $pivot
- * @property-read int|null $studios_count
->>>>>>> aurmich/dev
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Team> $teams
  * @property-read int|null $teams_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\SaluteOra\Models\Studio> $tenants
@@ -183,16 +118,9 @@ use Illuminate\Database\Eloquent\Relations\HasOneThrough;
  * @property-read int|null $tokens_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Gdpr\Models\Treatment> $treatments
  * @property-read int|null $treatments_count
-<<<<<<< HEAD
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor admins()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor doctors()
  * @method static \Modules\SaluteOra\Database\Factories\DoctorFactory factory($count = null, $state = [])
-=======
- * @property-read \Modules\SaluteOra\Models\DoctorRegistrationWorkflow|null $workflow
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor admins()
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor doctors()
- * @method static \Modules\User\Database\Factories\UserFactory factory($count = null, $state = [])
->>>>>>> aurmich/dev
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor orWhereNotState(string $column, $states)
@@ -202,7 +130,6 @@ use Illuminate\Database\Eloquent\Relations\HasOneThrough;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor query()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor role($roles, $guard = null, $without = false)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereAddress($value)
-<<<<<<< HEAD
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereCertificates($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereCertification($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereCertifications($value)
@@ -238,36 +165,11 @@ use Illuminate\Database\Eloquent\Relations\HasOneThrough;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereModerationData($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereNationality($value)
-=======
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereCertifications($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereCity($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereCreatedBy($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereCurrentTeamId($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereDateOfBirth($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereDeletedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereDeletedBy($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereEmail($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereEmailVerifiedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereFirstName($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereFullName($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereGender($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereIsActive($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereIsOtp($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereLang($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereLastName($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereModerationData($value)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereName($value)
->>>>>>> aurmich/dev
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereNotState(string $column, $states)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor wherePassword($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor wherePasswordExpiresAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor wherePhone($value)
-<<<<<<< HEAD
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor wherePregnancyCertificate($value)
-=======
->>>>>>> aurmich/dev
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereProfilePhotoPath($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereRegistrationNumber($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereRememberToken($value)
@@ -277,7 +179,6 @@ use Illuminate\Database\Eloquent\Relations\HasOneThrough;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereUuid($value)
-<<<<<<< HEAD
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor whereYearsInItaly($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor withoutPermission($permissions)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor withoutRole($roles, $guard = null)
@@ -287,17 +188,6 @@ class Doctor extends User implements HasMedia
 {
     use HasParent;
     use InteractsWithMedia;
-=======
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor withoutPermission($permissions)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Doctor withoutRole($roles, $guard = null)
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Device> $devices
- * @property-read int|null $devices_count
- * @mixin \Eloquent
- */
-class Doctor extends User
-{
-    use HasParent;
->>>>>>> aurmich/dev
 
    
     /** @var list<string>     */
@@ -311,7 +201,6 @@ class Doctor extends User
         'city',
         'registration_number',
         //'specialization',
-<<<<<<< HEAD
         'certifications', // Mantenuto per retrocompatibilità
         'certification', // 
         'doctor_certificate',
@@ -319,22 +208,13 @@ class Doctor extends User
         'status',
         'country_code',
         'data_privacy_form',
-=======
-        'certifications',
-        //'availability',
-        'status',
->>>>>>> aurmich/dev
     ];
 
     /** @var list<string>     */
     protected $appends = [
         //'health_card',
         //'identity_document',
-<<<<<<< HEAD
         
-=======
-        //'isee_certificate',
->>>>>>> aurmich/dev
         //'pregnancy_certificate',
         // 'certifications', // Gestito da getter personalizzato
         //'studio',
@@ -342,7 +222,6 @@ class Doctor extends User
         //'studio:address',
     ];
 
-<<<<<<< HEAD
     /** @return list<string>     */
     public static function getAttachments():array{
         return  [
@@ -351,50 +230,19 @@ class Doctor extends User
             'data_privacy_form',
         ];
     }
-=======
-    /** @var list<string>     */
-    public static array $attachments = [
-        'certifications',
-       
-    ];
->>>>>>> aurmich/dev
 
     /** @var list<string>     */
     protected $with = [
-        //'studio',
-        //'studio.address',
+        'studio',
+        'studio.address',
     ];
 
-<<<<<<< HEAD
    
-=======
-    /** @var array<string, mixed>  */
-    protected $attributes_old = [
-        'id'=>null,
-        'first_name'=>null,
-        'last_name'=>null,
-        'email'=>null,
-        'phone'=>null,
-        'address'=>null,
-        'city'=>null,
-        'registration_number'=>null,
-        //'specialization',
-        //'certifications'=>null,
-        //'availability',
-        'status'=>null,
-        'is_otp'=>false,
-        'is_active'=>true,
-        
-    ];
->>>>>>> aurmich/dev
 
     public function getDataDefaults(): array
     {
         return [
-<<<<<<< HEAD
             //'certification'=> null,
-=======
->>>>>>> aurmich/dev
             'studio'=>[
                 'description' => null,
                 'address'=>[
@@ -416,30 +264,12 @@ class Doctor extends User
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
-<<<<<<< HEAD
             //'certification' => 'array',  // OBBLIGATORIO: campo in $attachments DEVE essere array per FileUpload
             'certifications' => 'array', // Per retrocompatibilità
         ]);
     }
 
     
-=======
-            'certifications' => 'array',
-          //  'availability' => 'array',
-        ]);
-    }
-
-    /**
-     * Get the workflow for this doctor's registration.
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasOne
-     */
-    public function workflow(): HasOne
-    {
-        return $this->hasOne(DoctorRegistrationWorkflow::class, 'doctor_id');
-    }
-
->>>>>>> aurmich/dev
     /**
      * Relazione molti-a-molti con gli studi in cui il dottore lavora.
      *
@@ -461,19 +291,10 @@ class Doctor extends User
     {
         return $this->morphOne(Studio::class, 'model');
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 
     public function address(): MorphOne{
         return $this->morphOne(Address::class, 'model');
     }
-<<<<<<< HEAD
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
     // Implementazione della relazione BelongsToMany con Studio completata
 
 /*
@@ -498,7 +319,6 @@ class Doctor extends User
         }
     }
         */
-<<<<<<< HEAD
 
     public function appointments(): HasMany
     {
@@ -506,6 +326,4 @@ class Doctor extends User
     }
 
 
-=======
->>>>>>> aurmich/dev
 }

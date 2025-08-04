@@ -1,23 +1,12 @@
 <?php
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> aurmich/dev
 return [
     'navigation' => [
         'icon' => 'heroicon-o-document-text',
         'label' => 'Notification Templates',
         'group' => 'System',
-<<<<<<< HEAD
         'sort' => '52',
     ],
-=======
-        'sort' => 52,
-    ],
-    
->>>>>>> aurmich/dev
     'fields' => [
         'name' => [
             'label' => 'Name',
@@ -44,10 +33,6 @@ return [
             'helper' => 'JSON data for preview',
         ],
     ],
-<<<<<<< HEAD
-=======
-    
->>>>>>> aurmich/dev
     'columns' => [
         'name' => 'Name',
         'subject' => 'Subject',
@@ -55,17 +40,9 @@ return [
         'created_at' => 'Created At',
         'updated_at' => 'Updated At',
     ],
-<<<<<<< HEAD
     'actions' => [
         'preview' => 'Preview',
     ],
-=======
-    
-    'actions' => [
-        'preview' => 'Preview',
-    ],
-    
->>>>>>> aurmich/dev
     'enums' => [
         'notification_type' => [
             'email' => 'Email',

@@ -5,10 +5,7 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Actions\Doctor;
 
 use Illuminate\Support\Str;
-<<<<<<< HEAD
 use Webmozart\Assert\Assert;
-=======
->>>>>>> aurmich/dev
 use Modules\Geo\Models\Address;
 use Illuminate\Support\Facades\DB;
 use Modules\SaluteOra\Models\User;
@@ -22,15 +19,10 @@ use Modules\SaluteOra\Datas\DoctorData;
 use Modules\Xot\Contracts\UserContract;
 use Modules\SaluteOra\Enums\DoctorStatus;
 use Modules\SaluteOra\Enums\UserTypeEnum;
-<<<<<<< HEAD
 use Modules\SaluteOra\Models\DoctorStudio;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Validation\ValidationException;
 use Modules\Media\Actions\SaveAttachmentsAction;
-=======
-use Illuminate\Support\Facades\Notification;
-use Illuminate\Validation\ValidationException;
->>>>>>> aurmich/dev
 use Modules\Notify\Notifications\RecordNotification;
 use Modules\SaluteOra\States\User\IntegrationCompleted;
 use Modules\SaluteOra\Models\DoctorRegistrationWorkflow;
@@ -47,18 +39,9 @@ class RegisterAction
      */
     public function execute(UserContract $record,array $data): Doctor
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         if(!isset($data['name']) && isset($data['email']) && is_string($data['email'])){
             $data['name']=Str::of($data['email'])->before('@')->append('-')->append(Str::random(3))->toString();
-=======
-        if(isset($data['studio'])){
-            unset($data['studio']);
->>>>>>> aurmich/dev
         }
-=======
-        
->>>>>>> 17b35338 (add doctor-register-integration-completed  page)
         if(isset($data['id'])){
             $doctor = $record;
             $doctor->update($data);
@@ -68,7 +51,6 @@ class RegisterAction
             $doctor->save();
             //$doctor = Doctor::create($data);
         }
-<<<<<<< HEAD
         Assert::isInstanceOf($doctor, Doctor::class);
         if(isset($data['schedule'])){
             if(!is_array($data['studio'])){
@@ -132,27 +114,12 @@ class RegisterAction
         //$record->update($data);
         /*
         $attachments = Doctor::getAttachments();
-=======
-        if(isset($data['schedule'])){
-            $studio = Studio::create($data['studio']);
-            $address = Address::create($data['studio']['address']);
-            $studio->address()->save($address);
-            $doctor->studio()->save($studio);
-            $doctor->studios()->attach($studio,['schedule'=>$data['schedule']]);
-        }
-
-        //$record->save();
-        //$record->update($data);
-        /*
-        $attachments = Doctor::$attachments;
->>>>>>> aurmich/dev
         foreach ($attachments as $attachment) {
                 $doctor->addMediaFromDisk($data[$attachment],'local')
                     ->toMediaCollection($attachment);
 
         }
         */
-<<<<<<< HEAD
         Assert::isInstanceOf($doctor, Doctor::class);
         
         if($data['state']=='integration_requested'){
@@ -163,15 +130,6 @@ class RegisterAction
         }
 
         /** @phpstan-ignore binaryOp.invalid, binaryOp.invalid */
-=======
-        
-        if($data['state']=='integration_requested'){
-            $doctor->state->transitionTo(IntegrationCompleted::class);
-            return $doctor;
-        }
-
-
->>>>>>> aurmich/dev
         $mail_slug=Str::slug($data['type'].'-'.$data['state']);
         
 

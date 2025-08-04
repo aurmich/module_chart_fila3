@@ -1,10 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> aurmich/dev
 return [
     'resource' => [
         'name' => 'WhatsApp',
@@ -19,11 +14,7 @@ return [
         ],
         'label' => 'Send WhatsApp',
         'icon' => 'heroicon-o-chat-bubble-left-right',
-<<<<<<< HEAD
         'sort' => '20',
-=======
-        'sort' => 20,
->>>>>>> aurmich/dev
     ],
     'fields' => [
         'to' => [

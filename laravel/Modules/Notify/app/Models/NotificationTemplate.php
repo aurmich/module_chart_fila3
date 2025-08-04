@@ -37,29 +37,14 @@ use Spatie\Translatable\HasTranslations;
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
  * @property \Carbon\Carbon|null $deleted_at
-<<<<<<< HEAD
-<<<<<<< HEAD
  * @property-read string $channels_label
  * @property NotificationTypeEnum $type
  * @property-read \Modules\User\Models\Profile|null $creator
-=======
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Notify\Models\NotificationTemplateVersion> $versions
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Notify\Models\NotificationLog> $logs
-=======
->>>>>>> 345f8677 (phpstan)
- * @property-read string $channels_label
- * @property NotificationTypeEnum $type
- * @property-read \Modules\SaluteOra\Models\Profile|null $creator
->>>>>>> aurmich/dev
  * @property-read int|null $logs_count
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
  * @property-read mixed $translations
-<<<<<<< HEAD
  * @property-read \Modules\User\Models\Profile|null $updater
-=======
- * @property-read \Modules\SaluteOra\Models\Profile|null $updater
->>>>>>> aurmich/dev
  * @property-read int|null $versions_count
  * @method static \Illuminate\Database\Eloquent\Builder<static>|NotificationTemplate active()
  * @method static \Modules\Notify\Database\Factories\NotificationTemplateFactory factory($count = null, $state = [])
@@ -99,7 +84,6 @@ class NotificationTemplate extends BaseModel implements HasMedia
         'type',
     ];
 
-<<<<<<< HEAD
     /**
      * Get the attributes that should be cast.
      *
@@ -120,20 +104,6 @@ class NotificationTemplate extends BaseModel implements HasMedia
             'grapesjs_data' => 'array',
         ];
     }
-=======
-    protected $casts = [
-        'type' => NotificationTypeEnum::class,
-        'preview_data' => 'array',
-        'body_html' => 'string',
-        'body_text' => 'string',
-        'channels' => 'array',
-        'variables' => 'array',
-        'conditions' => 'array',
-        'metadata' => 'array',
-        'is_active' => 'boolean',
-        'grapesjs_data' => 'array',
-    ];
->>>>>>> aurmich/dev
 
     public array $translatable = [
         'subject',
@@ -146,15 +116,7 @@ class NotificationTemplate extends BaseModel implements HasMedia
         $this->addMediaCollection('attachments')
             ->singleFile();
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 /*
-=======
-
->>>>>>> aurmich/dev
-=======
-/*
->>>>>>> 345f8677 (phpstan)
     public function versions(): HasMany
     {
         return $this->hasMany(NotificationTemplateVersion::class, 'template_id')
@@ -165,32 +127,14 @@ class NotificationTemplate extends BaseModel implements HasMedia
     {
         return $this->hasMany(NotificationLog::class, 'template_id');
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 */
     /*
-=======
-
-    /**
->>>>>>> aurmich/dev
-=======
-*/
-    /*
->>>>>>> 345f8677 (phpstan)
      * Create a new version of the template.
      *
      * @param string $createdBy The user who created the version
      * @param string|null $notes Optional notes about the changes
      * @return self
-<<<<<<< HEAD
-<<<<<<< HEAD
      
-=======
-     */
->>>>>>> aurmich/dev
-=======
-     
->>>>>>> 345f8677 (phpstan)
     public function createNewVersion(string $createdBy, ?string $notes = null): self
     {
         $this->versions()->create([
@@ -208,15 +152,7 @@ class NotificationTemplate extends BaseModel implements HasMedia
         $this->increment('version');
         return $this;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 */
-=======
-
->>>>>>> aurmich/dev
-=======
-*/
->>>>>>> 345f8677 (phpstan)
     /**
      * Compile the template with the given data.
      *
@@ -230,15 +166,7 @@ class NotificationTemplate extends BaseModel implements HasMedia
         $bodyText = $this->compileString($this->body_text, $data);
 
         return [
-<<<<<<< HEAD
-<<<<<<< HEAD
             'subject' => $subject ?? '',
-=======
-            'subject' => $subject,
->>>>>>> aurmich/dev
-=======
-            'subject' => $subject ?? '',
->>>>>>> 345f8677 (phpstan)
             'body_html' => $bodyHtml,
             'body_text' => $bodyText,
         ];
@@ -372,46 +300,19 @@ class NotificationTemplate extends BaseModel implements HasMedia
 
     public function getPreviewSubject(): string
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         $result = $this->getTranslation('subject', app()->getLocale());
         return is_string($result) ? $result : '';
-=======
-        return $this->getTranslation('subject', app()->getLocale());
->>>>>>> aurmich/dev
-=======
-        $result = $this->getTranslation('subject', app()->getLocale());
-        return is_string($result) ? $result : '';
->>>>>>> 345f8677 (phpstan)
     }
 
     public function getPreviewBodyText(): string
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         $result = $this->getTranslation('body_text', app()->getLocale());
         return is_string($result) ? $result : '';
-=======
-        return $this->getTranslation('body_text', app()->getLocale());
->>>>>>> aurmich/dev
-=======
-        $result = $this->getTranslation('body_text', app()->getLocale());
-        return is_string($result) ? $result : '';
->>>>>>> 345f8677 (phpstan)
     }
 
     public function getPreviewBodyHtml(): string
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         $result = $this->getTranslation('body_html', app()->getLocale());
         return is_string($result) ? $result : '';
-=======
-        return $this->getTranslation('body_html', app()->getLocale());
->>>>>>> aurmich/dev
-=======
-        $result = $this->getTranslation('body_html', app()->getLocale());
-        return is_string($result) ? $result : '';
->>>>>>> 345f8677 (phpstan)
     }
 }

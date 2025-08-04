@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\States\User;
 
-<<<<<<< HEAD
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Spatie\ModelStates\State;
@@ -14,10 +13,6 @@ use Modules\Xot\States\XotBaseState;
 use Filament\Forms\Components\Textarea;
 use Modules\SaluteOra\Models\Appointment;
 use Modules\Xot\Filament\Traits\TransTrait;
-=======
-use Spatie\ModelStates\State;
-use Spatie\ModelStates\StateConfig;
->>>>>>> aurmich/dev
 //use Filament\Support\Contracts\HasLabel;
 
 /**
@@ -26,28 +21,9 @@ use Spatie\ModelStates\StateConfig;
  * Questa classe definisce le transizioni di stato consentite e i metodi astratti
  * che devono essere implementati da ogni stato concreto.
  */
-<<<<<<< HEAD
 abstract class UserState extends XotBaseState
 {
     
-=======
-abstract class UserState extends State
-{
-    /**
-     * Restituisce l'etichetta leggibile dello stato.
-     */
-    abstract public function label(): string;
-
-    /**
-     * Restituisce il colore associato allo stato.
-     */
-    abstract public function color(): string;
-
-    /**
-     * Restituisce l'icona associata allo stato.
-     */
-    abstract public function icon(): string;
->>>>>>> aurmich/dev
 
     /**
      * Configura le transizioni di stato consentite.
@@ -95,10 +71,7 @@ abstract class UserState extends State
             ->registerState(IntegrationRequested::class)
             ->registerState(IntegrationCompleted::class);
     }
-<<<<<<< HEAD
 
 
    
-=======
->>>>>>> aurmich/dev
 }

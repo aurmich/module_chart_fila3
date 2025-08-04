@@ -8,13 +8,6 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use NotificationChannels\Twilio\TwilioSmsMessage;
->>>>>>> aurmich/dev
-=======
->>>>>>> 345f8677 (phpstan)
 
 /**
  * Notifica generica configurabile per il sistema il progetto.
@@ -86,16 +79,8 @@ class GenericNotification extends Notification implements ShouldQueue
 
         // Aggiungi eventuali azioni se specificate nei dati
         if (isset($this->data['action_text']) && isset($this->data['action_url'])) {
-<<<<<<< HEAD
-<<<<<<< HEAD
             /** @phpstan-ignore-next-line */
             $mail->action((string) $this->data['action_text'], (string) $this->data['action_url']);
-=======
-            $mail->action($this->data['action_text'], $this->data['action_url']);
->>>>>>> aurmich/dev
-=======
-            $mail->action((string) $this->data['action_text'], (string) $this->data['action_url']);
->>>>>>> 345f8677 (phpstan)
         }
 
         // Aggiungi eventuali linee aggiuntive
@@ -113,21 +98,9 @@ class GenericNotification extends Notification implements ShouldQueue
      * Ottiene la rappresentazione SMS della notifica.
      *
      * @param mixed $notifiable
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @return array<string, mixed>
      */
     public function toTwilio($notifiable): array
-=======
-     * @return TwilioSmsMessage
-     */
-    public function toTwilio($notifiable): TwilioSmsMessage
->>>>>>> aurmich/dev
-=======
-     * @return array<string, mixed>
-     */
-    public function toTwilio($notifiable): array
->>>>>>> 345f8677 (phpstan)
     {
         $content = "il progetto: {$this->title}\n{$this->message}";
         
@@ -136,32 +109,17 @@ class GenericNotification extends Notification implements ShouldQueue
             $content = mb_substr($content, 0, 317) . '...';
         }
         
-<<<<<<< HEAD
-<<<<<<< HEAD
         // TODO: Implementare TwilioSmsMessage quando disponibile
         $to = '';
         if (is_object($notifiable) && method_exists($notifiable, 'routeNotificationForTwilio')) {
             $routeResult = $notifiable->routeNotificationForTwilio($this);
             $to = (string) ($routeResult ?? '');
-=======
-        // TODO: Implementare TwilioSmsMessage quando disponibile
-        $to = '';
-        if (is_object($notifiable) && method_exists($notifiable, 'routeNotificationForTwilio')) {
-            $to = (string) $notifiable->routeNotificationForTwilio($this);
->>>>>>> 345f8677 (phpstan)
         }
         
         return [
             'content' => $content,
             'to' => $to,
         ];
-<<<<<<< HEAD
-=======
-        return (new TwilioSmsMessage())
-            ->content($content);
->>>>>>> aurmich/dev
-=======
->>>>>>> 345f8677 (phpstan)
     }
 
     /**
@@ -189,8 +147,6 @@ class GenericNotification extends Notification implements ShouldQueue
     protected function getRecipientName($notifiable): string
     {
         // Tenta di ottenere il nome dal destinatario in vari modi
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (is_object($notifiable) && method_exists($notifiable, 'getFullName')) {
             return $notifiable->getFullName();
         }
@@ -205,30 +161,6 @@ class GenericNotification extends Notification implements ShouldQueue
         
         if (is_object($notifiable) && property_exists($notifiable, 'name') && $notifiable->name) {
             return (string) ($notifiable->name ?? '');
-=======
-        if (method_exists($notifiable, 'getFullName')) {
-=======
-        if (is_object($notifiable) && method_exists($notifiable, 'getFullName')) {
->>>>>>> 345f8677 (phpstan)
-            return $notifiable->getFullName();
-        }
-        
-        if (is_object($notifiable) && property_exists($notifiable, 'full_name') && $notifiable->full_name) {
-            return (string) $notifiable->full_name;
-        }
-        
-        if (is_object($notifiable) && property_exists($notifiable, 'first_name') && $notifiable->first_name) {
-            return (string) $notifiable->first_name;
-        }
-        
-<<<<<<< HEAD
-        if (property_exists($notifiable, 'name') && $notifiable->name) {
-            return $notifiable->name;
->>>>>>> aurmich/dev
-=======
-        if (is_object($notifiable) && property_exists($notifiable, 'name') && $notifiable->name) {
-            return (string) $notifiable->name;
->>>>>>> 345f8677 (phpstan)
         }
         
         return 'Utente';

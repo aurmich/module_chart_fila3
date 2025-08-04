@@ -60,18 +60,7 @@ return array (
       'label' => 'Nome Studio',
       'placeholder' => 'Studio Medico Dr. Rossi',
       'helper_text' => 'Nome completo e identificativo dello studio medico',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'description' => 'name',
-=======
->>>>>>> aurmich/dev
-=======
-      'description' => 'name',
->>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
-=======
-      'description' => 'name',
->>>>>>> 3ad9917a (- fix styles registration)
     ),
     'address' => 
     array (
@@ -84,90 +73,35 @@ return array (
       'label' => 'Telefono',
       'placeholder' => '+39 059 1234567',
       'helper_text' => 'Numero di telefono principale per contatti',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'description' => 'phone',
-=======
->>>>>>> aurmich/dev
-=======
-      'description' => 'phone',
->>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
-=======
-      'description' => 'phone',
->>>>>>> 3ad9917a (- fix styles registration)
     ),
     'email' => 
     array (
       'label' => 'Email',
       'placeholder' => 'info@studiorossi.it',
       'helper_text' => 'Indirizzo email per comunicazioni ufficiali',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'description' => 'email',
-=======
->>>>>>> aurmich/dev
-=======
-      'description' => 'email',
->>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
-=======
-      'description' => 'email',
->>>>>>> 3ad9917a (- fix styles registration)
     ),
     'website' => 
     array (
       'label' => 'Sito Web',
       'placeholder' => 'https://www.studiorossi.it',
       'helper_text' => 'URL del sito web ufficiale dello studio',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'description' => 'website',
-=======
->>>>>>> aurmich/dev
-=======
-      'description' => 'website',
->>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
-=======
-      'description' => 'website',
->>>>>>> 3ad9917a (- fix styles registration)
     ),
     'registration_number' => 
     array (
       'label' => 'Numero di Registrazione',
       'placeholder' => 'RM-123456',
       'helper_text' => 'Numero di registrazione presso l\'Ordine dei Medici',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'description' => 'registration_number',
-=======
->>>>>>> aurmich/dev
-=======
-      'description' => 'registration_number',
->>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
-=======
-      'description' => 'registration_number',
->>>>>>> 3ad9917a (- fix styles registration)
     ),
     'vat_number' => 
     array (
       'label' => 'Partita IVA',
       'placeholder' => 'IT01234567890',
       'helper_text' => 'Partita IVA dello studio medico',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'description' => 'vat_number',
-=======
->>>>>>> aurmich/dev
-=======
-      'description' => 'vat_number',
->>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
-=======
-      'description' => 'vat_number',
->>>>>>> 3ad9917a (- fix styles registration)
     ),
     'opening_hours' => 
     array (
@@ -236,48 +170,18 @@ return array (
     'description' => 
     array (
       'description' => 'description',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       'helper_text' => 'description',
       'placeholder' => 'description',
       'label' => 'description',
-=======
->>>>>>> aurmich/dev
-=======
-      'helper_text' => 'description',
-      'placeholder' => 'description',
-      'label' => 'description',
->>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
-=======
-      'helper_text' => 'description',
-      'placeholder' => 'description',
-      'label' => 'description',
->>>>>>> 3ad9917a (- fix styles registration)
     ),
     'reorderRecords' => 
     array (
       'label' => 'reorderRecords',
     ),
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 8d44f10d (feat: studio trans , radio collection)
-=======
->>>>>>> 3ad9917a (- fix styles registration)
     'resetFilters' => 
     array (
       'label' => 'resetFilters',
     ),
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
-=======
->>>>>>> 3ad9917a (- fix styles registration)
     'applyFilters' => 
     array (
       'label' => 'applyFilters',
@@ -286,8 +190,6 @@ return array (
     array (
       'label' => 'openFilters',
     ),
-<<<<<<< HEAD
-<<<<<<< HEAD
     'delete' => 
     array (
       'label' => 'delete',
@@ -316,16 +218,6 @@ return array (
     array (
       'label' => 'view',
     ),
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 8d44f10d (feat: studio trans , radio collection)
-=======
->>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
-=======
->>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
-=======
->>>>>>> 3ad9917a (- fix styles registration)
   ),
   'actions' => 
   array (

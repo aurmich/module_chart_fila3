@@ -753,10 +753,7 @@ public function routeNotificationForTwilio()
 
 **Soluzione**: Verificare la presenza di tutte le variabili d'ambiente:
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # .env
 TWILIO_ACCOUNT_SID=AC123...
 TWILIO_AUTH_TOKEN=abc123...

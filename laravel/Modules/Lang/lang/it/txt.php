@@ -10,11 +10,7 @@ return array (
       'tooltip' => 'Usa un indirizzo email valido',
       'icon' => 'heroicon-o-mail',
       'description' => 'email',
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'email',
->>>>>>> aurmich/dev
     ),
     'password' => 
     array (
@@ -23,18 +19,13 @@ return array (
       'tooltip' => 'La password deve contenere almeno 8 caratteri',
       'icon' => 'heroicon-o-lock-closed',
       'description' => 'password',
-<<<<<<< HEAD
       'helper_text' => '',
-=======
-      'helper_text' => 'password',
->>>>>>> aurmich/dev
     ),
     'remember' => 
     array (
       'label' => 'Ricordami',
       'tooltip' => 'Mantieni l\'accesso attivo su questo dispositivo',
       'description' => 'remember',
-<<<<<<< HEAD
       'helper_text' => '',
       'placeholder' => 'remember',
     ),
@@ -478,11 +469,6 @@ return array (
       'helper_text' => 'responses_exists',
       'placeholder' => 'responses_exists',
     ),
-=======
-      'helper_text' => 'remember',
-      'placeholder' => 'remember',
-    ),
->>>>>>> aurmich/dev
   ),
   'actions' => 
   array (
@@ -504,7 +490,6 @@ return array (
     array (
       'label' => 'request',
     ),
-<<<<<<< HEAD
     'cancel' => 
     array (
       'label' => 'cancel',
@@ -529,7 +514,5 @@ return array (
     array (
       'label' => 'createAnother',
     ),
-=======
->>>>>>> aurmich/dev
   ),
 );

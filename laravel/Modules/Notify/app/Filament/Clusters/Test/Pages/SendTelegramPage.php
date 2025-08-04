@@ -34,13 +34,6 @@ use Modules\Notify\Datas\TelegramData;
 
 /**
  * @property ComponentContainer $telegramForm
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- * @extends XotBasePage
->>>>>>> aurmich/dev
-=======
->>>>>>> 345f8677 (phpstan)
  */
 class SendTelegramPage extends XotBasePage implements HasForms
 {
@@ -86,15 +79,7 @@ class SendTelegramPage extends XotBasePage implements HasForms
                 ])
                 ->default('bot')
                 ->required(),
-<<<<<<< HEAD
-<<<<<<< HEAD
             Forms\Components\Select::make('parse_mode')
-=======
-            Forms\Components\TextInput::make('parse_mode')
->>>>>>> aurmich/dev
-=======
-            Forms\Components\Select::make('parse_mode')
->>>>>>> 345f8677 (phpstan)
                 ->options([
                     'HTML' => 'HTML',
                     'Markdown' => 'Markdown',
@@ -130,22 +115,10 @@ class SendTelegramPage extends XotBasePage implements HasForms
             $data = $this->telegramForm->getState();
             $user = $this->getUser();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
             $message = is_string($data['text']) ? $data['text'] : '';
 
             Notification::route('telegram', $data['chat_id'])
                 ->notify(new TelegramNotification($message, [
-=======
-            Notification::route('telegram', $data['chat_id'])
-                ->notify(new TelegramNotification($data['text'], [
->>>>>>> aurmich/dev
-=======
-            $message = is_string($data['text']) ? $data['text'] : '';
-
-            Notification::route('telegram', $data['chat_id'])
-                ->notify(new TelegramNotification($message, [
->>>>>>> 345f8677 (phpstan)
                     'driver' => $data['driver'],
                     'parse_mode' => $data['parse_mode'] ?? null,
                     'disable_web_page_preview' => $data['disable_web_page_preview'] ?? false,
@@ -187,14 +160,6 @@ class SendTelegramPage extends XotBasePage implements HasForms
         ];
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-
->>>>>>> aurmich/dev
-=======
->>>>>>> 345f8677 (phpstan)
     protected function fillForms(): void
     {
         // $data = $this->getUser()->attributesToArray();

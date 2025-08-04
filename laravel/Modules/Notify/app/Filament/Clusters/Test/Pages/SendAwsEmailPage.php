@@ -111,69 +111,22 @@ class SendAwsEmailPage extends XotBasePage
         $data = $this->emailForm->getState();
 
         try {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 345f8677 (phpstan)
             $to = is_string($data['to']) ? $data['to'] : '';
             $subject = is_string($data['subject']) ? $data['subject'] : '';
             $bodyHtml = is_string($data['body_html']) ? $data['body_html'] : '';
 
-<<<<<<< HEAD
             $emailData = new EmailData(
                 $to,
                 $subject,
                 $bodyHtml
-=======
-            $emailData = new EmailData(
-                to: $data['to'],
-                subject: $data['subject'],
-                bodyHtml: $data['body_html'],
-                templateName: $data['template']
->>>>>>> aurmich/dev
-=======
-            $emailData = new EmailData(
-                $to,
-                $subject,
-                $bodyHtml
->>>>>>> 345f8677 (phpstan)
             );
 
             // Configurare lo specifico driver AWS SES per questo test
             config(['mail.default' => 'ses']);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
             // Invia l'email utilizzando il servizio SES
             Mail::to($to)
                 ->send(new EmailDataEmail($emailData));
-=======
-            // Aggiungere degli allegati di esempio se richiesto
-            $attachments = [];
-            if ($data['add_attachments'] ?? false) {
-                $attachments = [
-                    [
-                        'path' => public_path('images/logo.png'),
-                        'as' => 'logo.png',
-                        'mime' => 'image/png',
-                    ],
-                    [
-                        'path' => public_path('docs/example.pdf'),
-                        'as' => 'example.pdf',
-                        'mime' => 'application/pdf',
-                    ],
-                ];
-            }
-
-            // Invia l'email utilizzando il servizio SES
-            Mail::to($data['to'])
-                ->send(new EmailDataEmail($emailData, $attachments));
->>>>>>> aurmich/dev
-=======
-            // Invia l'email utilizzando il servizio SES
-            Mail::to($to)
-                ->send(new EmailDataEmail($emailData));
->>>>>>> 345f8677 (phpstan)
 
             FilamentNotification::make()
                 ->success()

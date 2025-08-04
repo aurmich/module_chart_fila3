@@ -1,6 +1,5 @@
 <?php
 
-<<<<<<< HEAD
 namespace Modules\SaluteOra\Filament\Resources\ReportResource\Pages;
 
 use Modules\SaluteOra\Filament\Resources\ReportResource;
@@ -15,25 +14,6 @@ class ListReports extends ListRecords
     {
         return [
             Actions\CreateAction::make(),
-=======
-declare(strict_types=1);
-
-namespace Modules\SaluteOra\Filament\Resources\ReportResource\Pages;
-
-use Filament\Actions;
-use Filament\Resources\Pages\ListRecords;
-use Modules\SaluteOra\Filament\Resources\ReportResource;
-use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
-
-class ListReports extends XotBaseListRecords
-{
-    protected static string $resource = ReportResource::class;
-
-    public function getTableColumns(): array
-    {
-        return [
-            // Implementation of getTableColumns method
->>>>>>> aurmich/dev
         ];
     }
 }

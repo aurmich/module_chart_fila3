@@ -125,10 +125,7 @@
 
 ### 1. Comandi Artisan
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Test connessione provider
 php artisan sms:test-connection
 

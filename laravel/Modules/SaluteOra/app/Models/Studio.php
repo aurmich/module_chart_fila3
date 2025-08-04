@@ -4,46 +4,21 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Models;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 use Carbon\Carbon;
 use Spatie\Activitylog\LogOptions;
 use Modules\User\Models\BaseTenant;
 use Spatie\OpeningHours\OpeningHours;
-<<<<<<< HEAD
-=======
-use Spatie\Activitylog\LogOptions;
-use Modules\User\Models\BaseTenant;
->>>>>>> aurmich/dev
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 use Filament\Models\Contracts\HasName;
 use Modules\SaluteOra\Models\BaseModel;
 use Modules\User\Models\Traits\IsTenant;
 use Modules\Xot\Models\Traits\RelationX;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
-=======
->>>>>>> aurmich/dev
-=======
-use Illuminate\Database\Eloquent\Builder;
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 use Modules\Geo\Models\Traits\HasAddress;
 use Modules\User\Contracts\TenantContract;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Illuminate\Database\Eloquent\Builder;
->>>>>>> aurmich/dev
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 
 /**
  * Studio model for the SaluteOra module.
@@ -61,11 +36,8 @@ use Illuminate\Database\Eloquent\Builder;
  * @property array|null $opening_hours
  * @property array|null $services
  * @property bool $active
-<<<<<<< HEAD
  * @property bool $is_active
  * @property int $owner_id
-=======
->>>>>>> aurmich/dev
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
  * @property \Illuminate\Support\Carbon|null $deleted_at
@@ -117,7 +89,6 @@ use Illuminate\Database\Eloquent\Builder;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Studio whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Studio whereVatNumber($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Studio whereWebsite($value)
-<<<<<<< HEAD
  * @property string|null $city
  * @property string|null $postal_code
  * @property string|null $province
@@ -141,8 +112,6 @@ use Illuminate\Database\Eloquent\Builder;
  * @method static Builder<static>|Studio whereRegion($value)
  * @method static Builder<static>|Studio whereSettings($value)
  * @method static Builder<static>|Studio whereTaxCode($value)
-=======
->>>>>>> aurmich/dev
  * @mixin \Eloquent
  */
 class Studio extends BaseTenant
@@ -338,13 +307,8 @@ class Studio extends BaseTenant
     public function getCurrentMonthAppointmentsCount(): int
     {
         return $this->appointments()
-<<<<<<< HEAD
             ->whereMonth('starts_at', now()->month)
             ->whereYear('starts_at', now()->year)
-=======
-            ->whereMonth('start_time', now()->month)
-            ->whereYear('start_time', now()->year)
->>>>>>> aurmich/dev
             ->count();
     }
 
@@ -375,10 +339,6 @@ class Studio extends BaseTenant
             $q->where('postal_code', $cap);
         });
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 
     public function getEnabledDatesByMonth(string $month): array
     {
@@ -391,26 +351,9 @@ class Studio extends BaseTenant
         $dates=[];
         $doctors=$this->doctors()->get();
         foreach($doctors as $doctor){
-<<<<<<< HEAD
-<<<<<<< HEAD
             //** @phpstan-ignore property.notFound */
             $tmp=$this->getDoctorEnabledDatesByMonth($doctor->id, $month);
             $dates=array_merge($dates, $tmp);
-=======
-            $pivot=DoctorStudio::where('studio_id',$this->id)->where('user_id',$doctor->id)->first();
-            $openingHours=$pivot->getOpeningHours();
-            for($i=1;$i<=31;$i++){
-                $date = Carbon::parse($month.'-'.$i);
-                $date1=$date->format('Y-m-d');
-                if($openingHours->isOpenOn($date1)){
-                    $dates[] = $date1;
-                }
-            }
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
-            $tmp=$this->getDoctorEnabledDatesByMonth($doctor->id, $month);
-            $dates=array_merge($dates, $tmp);
->>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
             
         }
         return $dates;
@@ -441,7 +384,6 @@ class Studio extends BaseTenant
             }
         }
             */
-<<<<<<< HEAD
         //return $dates;
        
     }
@@ -464,33 +406,4 @@ class Studio extends BaseTenant
         }
         return $dates;
     }
-=======
->>>>>>> aurmich/dev
-=======
-        return $dates;
-       
-    }
-<<<<<<< HEAD
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
-
-
-    public function getDoctorEnabledDatesByMonth(int|string|null $doctorId, string $month): array
-    {
-        $dates=[];
-        $pivot=DoctorStudio::where('studio_id',$this->id)->where('user_id',$doctorId)->first();
-        if(!$pivot){
-            return [];
-        }
-        $openingHours=$pivot->getOpeningHours();
-        for($i=1;$i<=31;$i++){
-            $date = Carbon::parse($month.'-'.$i);
-            $date1=$date->format('Y-m-d');
-            if($openingHours->isOpenOn($date1)){
-                $dates[] = $date1;
-            }
-        }
-        return $dates;
-    }
->>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 }

@@ -13,14 +13,9 @@ use Spatie\Permission\Traits\HasRoles;
 use Modules\Gdpr\Models\Traits\HasGdpr;
 use Illuminate\Notifications\Notifiable;
 use Modules\SaluteOra\Enums\UserTypeEnum;
-<<<<<<< HEAD
 use Modules\SaluteOra\States\User\Active;
 use Spatie\ModelStates\HasStatesContract;
 use Modules\SaluteOra\Enums\UserStateEnum;
-=======
-use Modules\SaluteOra\Enums\UserStateEnum;
-use Modules\SaluteOra\States\User\Active;
->>>>>>> aurmich/dev
 use Modules\SaluteOra\States\User\Pending;
 use Modules\SaluteOra\States\User\Inactive;
 use Modules\SaluteOra\States\User\Rejected;
@@ -41,11 +36,7 @@ use Modules\SaluteOra\States\User\IntegrationRequested;
  * @property string $email
  * @property string $password
  * @property UserTypeEnum $type
-<<<<<<< HEAD
  * @property UserState $state
-=======
- * @property UserStateEnum $state
->>>>>>> aurmich/dev
  * @property string|null $first_name
  * @property string|null $last_name
  * @property \Carbon\Carbon|null $date_of_birth
@@ -92,10 +83,6 @@ use Modules\SaluteOra\States\User\IntegrationRequested;
  * @property-read \Modules\SaluteOra\Models\StudioUser|\Modules\SaluteOra\Models\TeamUser|\Modules\User\Models\DeviceUser|null $pivot
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Device> $devices
  * @property-read int|null $devices_count
-<<<<<<< HEAD
-=======
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Xot\Contracts\UserContract> $all_team_users
->>>>>>> aurmich/dev
  * @property-read \Modules\User\Models\AuthenticationLog|null $latestAuthentication
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
@@ -165,7 +152,6 @@ use Modules\SaluteOra\States\User\IntegrationRequested;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereUuid($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User withoutPermission($permissions)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User withoutRole($roles, $guard = null)
-<<<<<<< HEAD
  * @property string|null $dental_problems
  * @property string|null $last_dental_visit
  * @property string|null $pregnancy_certificate
@@ -206,11 +192,6 @@ use Modules\SaluteOra\States\User\IntegrationRequested;
  * @mixin \Eloquent
  */
 class User extends BaseUser implements HasMedia,HasStatesContract 
-=======
- * @mixin \Eloquent
- */
-class User extends BaseUser implements HasMedia
->>>>>>> aurmich/dev
 {
     use LogsActivity;
     use HasStates;
@@ -290,30 +271,14 @@ class User extends BaseUser implements HasMedia
             'type' => UserTypeEnum::class, // Sintassi corretta per Laravel 12
             'state' => UserState::class,
             'certifications' => 'array',
-<<<<<<< HEAD
             'certification' => 'array',  // ESSENZIALE: Evita "foreach() argument must be of type array|object, string given"
-=======
->>>>>>> aurmich/dev
             'moderation_data' => 'array',
         ]);
 
         
     }
 
-<<<<<<< HEAD
    
-=======
-    /**
-     * Implement ownsTeam method to satisfy HasTeamsContract by delegating to ownsTeamTrait.
-     *
-     * @param \Modules\User\Contracts\TeamContract $team
-     * @return bool
-     */
-    public function ownsTeam(\Modules\User\Contracts\TeamContract $team): bool
-    {
-        return $this->ownsTeamTrait($team);
-    }
->>>>>>> aurmich/dev
 
     /**
      * Configurazione per il logging delle attività.

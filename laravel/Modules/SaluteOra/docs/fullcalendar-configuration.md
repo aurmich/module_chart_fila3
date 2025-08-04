@@ -301,10 +301,7 @@ return [
 Aggiungere al file `.env`:
 
 ```env
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # FullCalendar Configuration
 FULLCALENDAR_LICENSE_KEY=your_license_key_here
 FULLCALENDAR_DEFAULT_VIEW=timeGridWeek

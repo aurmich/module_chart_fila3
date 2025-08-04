@@ -1,136 +1,17 @@
-# Documentazione SaluteOra
-
-Documentazione completa del modulo SaluteOra per la gestione di studi dentistici e appuntamenti medici.
-
-## 📚 Indice Generale
-
-### 🏗️ Architettura e Pattern
-- [**Lessons Learned**](lessons-learned.md) - Lezioni apprese e best practices fondamentali ⭐
-- [**Widget Development**](patterns/widget-development.md) - Pattern sviluppo widget Filament ⭐
-- [**Event System**](patterns/event-system.md) - Sistema eventi Livewire
-- [**LangServiceProvider Labels**](langserviceprovider-labels.md) - Gestione automatica traduzioni
-
-### 🛠️ Componenti e Widget
-- [**StudioFilterWidget**](studio-filter-widget.md) - Widget filtro studio completo
-- [**FindDoctorAndAppointmentWidget**](find-doctor-appointment-widget.md) - Widget prenotazione appuntamenti
-
-### 📊 Stati e Workflow
-- [**Appointment States**](appointment-states.md) - Stati degli appuntamenti e transizioni
-- [**User States**](user-states.md) - Stati degli utenti
-- [**BaseTransition Pattern**](patterns/base-transition.md) - Pattern transizioni automatiche
-
-### 🔧 Implementazione Tecnica
-- [**Model Context Protocol**](model-context-protocol.md) - Gestione contesto modelli
-- [**Filament Wizard Best Practices**](filament-wizard-best-practices.md) - Best practices wizard
-- [**Translation Guidelines**](translation-guidelines.md) - Linee guida traduzioni
-
-### 🗄️ Database e Modelli
-- [**Schema Database**](schema-database.md) - Struttura database completa
-- [**Relazioni STI**](relazioni-sti.md) - Single Table Inheritance per User
-
-## 🚀 Quick Start
-
-### Per Sviluppatori Nuovi al Progetto
-1. **Inizia qui**: [Lessons Learned](lessons-learned.md) - Contiene tutto quello che DEVI sapere
-2. **Pattern Widget**: [Widget Development](patterns/widget-development.md) - Come creare widget correttamente
-3. **Eventi**: [Event System](patterns/event-system.md) - Comunicazione tra componenti
-4. **Traduzioni**: [LangServiceProvider Labels](langserviceprovider-labels.md) - Mai più label hardcoded
-
-### Per Creare un Nuovo Widget
-1. Seguire [Widget Development](patterns/widget-development.md)
-2. Consultare [StudioFilterWidget](studio-filter-widget.md) come esempio
-3. Implementare [Event System](patterns/event-system.md) per comunicazione
-4. Aggiungere traduzioni seguendo [LangServiceProvider](langserviceprovider-labels.md)
-
-### Per Gestire Stati e Transizioni
-1. Leggere [Appointment States](appointment-states.md) per comprendere il workflow
-2. Implementare transizioni usando il pattern [BaseTransition](patterns/base-transition.md)
-3. Seguire le convenzioni negli [User States](user-states.md)
-
-## 📋 Documenti Aggiornati Recentemente
-
-### ⭐ Gennaio 2025 - Major Updates
-- **NEW**: [Lessons Learned](lessons-learned.md) - Raccoglie tutta l'esperienza del progetto
-- **NEW**: [Widget Development Patterns](patterns/widget-development.md) - Pattern completi per widget
-- **NEW**: [Event System](patterns/event-system.md) - Sistema eventi documentato
-- **UPDATED**: [Appointment States](appointment-states.md) - Corretti stati e transizioni
-- **UPDATED**: [LangServiceProvider](langserviceprovider-labels.md) - Pattern StudioFilterWidget
-- **UPDATED**: [StudioFilterWidget](studio-filter-widget.md) - Documentazione completa
-
-## 🎯 Best Practices Essenziali
-
-### ✅ Da Fare SEMPRE
-- Estendere `XotBaseWidget` (mai `Widget` direttamente)
-- Implementare `getFormSchema()` e `canView()` in ogni widget
-- Usare sistema eventi per comunicazione tra componenti
-- Affidarsi a LangServiceProvider per traduzioni (mai `->label()`)
-- Verificare sempre permessi utente e multi-tenancy
-- Gestire stati vuoti nelle viste Blade
-- Documentare ogni nuovo pattern o componente
-
-### ❌ Da Evitare ASSOLUTAMENTE
-- Label hardcoded (`->label()`, `->placeholder()`, `->helperText()`)
-- Bypass controlli di sicurezza
-- Widget che estendono direttamente `Widget`
-- Stati semanticamente sbagliati per il dominio
-- Eventi senza dati o naming scorretto
-- Query N+1 (sempre eager loading)
-- Viste senza gestione stato vuoto
-
-## 🔗 Collegamenti Esterni
-
-### Documentazione Correlata
-- [Modules/Xot - Base Framework](../../Xot/docs/)
-- [Root Documentation](../../../docs/)
-- [Laravel Filament](https://filamentphp.com/docs)
-- [Livewire Events](https://laravel-livewire.com/docs/events)
-
-### Risorse Sviluppo
-- [PHPStan Level 9+](https://phpstan.org/)
-- [Laravel Coding Standards](https://laravel.com/docs/contributions#coding-style)
-- [Filament Best Practices](https://filamentphp.com/docs/support/upgrade-guide)
-
-## 📈 Metriche Progetto
-
-### Componenti Implementati
-- ✅ **StudioFilterWidget** - Widget filtro studio completo
-- ✅ **FindDoctorAndAppointmentWidget** - Widget prenotazione
-- ✅ **Appointment States** - 9 stati + transizioni
-- ✅ **User States** - STI con Doctor/Patient/Admin
-- ✅ **Event System** - Comunicazione reattiva
-- ✅ **Translation System** - Zero-config multilingua
-
-### Pattern Consolidati
-- ✅ **XotBaseWidget Pattern** - Template per tutti i widget
-- ✅ **BaseTransition Pattern** - Transizioni automatiche
-- ✅ **LangServiceProvider Pattern** - Traduzioni seamless
-- ✅ **Event Communication Pattern** - Architettura disaccoppiata
-- ✅ **Multi-Tenancy Pattern** - Sicurezza studio-based
-- ✅ **Responsive UI Pattern** - Design coerente
-
-## 💡 Contribuire alla Documentazione
-
-### Per Aggiungere Nuova Documentazione
-1. Creare il file nella cartella appropriata (`patterns/`, `components/`, etc.)
-2. Seguire il template esistente per coerenza
-3. Aggiornare questo README.md con il nuovo documento
-4. Creare collegamenti bidirezionali con docs correlate
-5. Aggiungere esempi pratici e anti-pattern
-
-### Template Documento Standard
-```markdown
-# Titolo Documento
+# Modulo Patient
 
 ## Panoramica
-Breve descrizione dello scopo
 
-## Pattern/Implementazione
-Codice e esempi
+Il modulo Patient gestisce tutte le informazioni relative ai pazienti e ai medici, incluse le loro interazioni con il sistema. Questo modulo implementa funzionalità per la gestione dell'anagrafica, la registrazione di pazienti e medici, la gestione delle visite e dei trattamenti, e l'integrazione con altri moduli del sistema.
 
-## Best Practices
-Cosa fare e cosa evitare
+## File Chiave
+- [Doctor.php](app/Models/Doctor.php)
+- [User.php](app/Models/User.php)
+- [BaseUser.php](../User/app/Models/BaseUser.php)
+- [DoctorResource.php](app/Filament/Resources/DoctorResource.php)
+- [RegisterAction.php](app/Actions/RegisterAction.php)
+- [RegistrationWidget.php](../User/app/Filament/Widgets/RegistrationWidget.php)
 
-<<<<<<< HEAD
 ## Indice della Documentazione
 
 - [Indice Completo](index.md) - Panoramica di tutta la documentazione disponibile
@@ -140,10 +21,7 @@ Cosa fare e cosa evitare
 - [Single Table Inheritance](single_table_inheritance.md) - Pattern STI per i modelli utente
 - [Best Practices per l'Ereditarietà](inheritance_best_practices.md) - Linee guida per l'ereditarietà delle classi
 - [Model Inheritance Pattern](model_inheritance_pattern.md) - Pattern di ereditarietà per i modelli
-<<<<<<< HEAD
 - [Policies di Autorizzazione](policies.md) - Sistema completo di autorizzazioni e permessi
-=======
->>>>>>> aurmich/dev
 
 ### Best Practices
 
@@ -155,14 +33,7 @@ Cosa fare e cosa evitare
 
 ### Widgets
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [StudioFilterWidget](widgets/studio-filter-widget.md) - Widget per la selezione e gestione degli studi medici
-=======
->>>>>>> aurmich/dev
-=======
-- [StudioFilterWidget](widgets/studio-filter-widget.md) - Widget per la selezione e gestione degli studi medici
->>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
 - [FindDoctorAndAppointmentWidget Errors](widgets/find-doctor-appointment-widget-errors.md) - Analisi e soluzioni per il widget di prenotazione appuntamenti
 - [📊 FindDoctorAndAppointmentWidget Analysis](widgets/find-doctor-appointment-widget-analysis.md) - **CORE**: Analisi completa e roadmap implementazione Step 2, integrazione componenti UI riutilizzabili
 - [🛠️ FindDoctorWidget Step 2 Implementation](widgets/find-doctor-appointment-widget-step2-implementation.md) - **IMPLEMENTATION**: Guida dettagliata implementazione secondo step con componenti UI creati
@@ -171,10 +42,7 @@ Cosa fare e cosa evitare
 
 - [🚨 Array to String Conversion User Registration](errori/array-to-string-conversion-user-registration.md) - **CRITICO**: Errore durante registrazione paziente con allegati, conflitto architetturale Media Library vs Database
 - [📧 MissingMailTemplate SpatieEmail](errori/missing-mail-template-spatie-email.md) - **CRITICO**: Template email mancante durante invio notifiche, conflitto timing Spatie MailTemplates
-<<<<<<< HEAD
 - [🔄 Sync Pivot Schedule Issue](sync_pivot_schedule_issue.md) - **CRITICO**: Campo schedule non aggiornato nel pivot durante sync, problema con belongsToManyX
-=======
->>>>>>> aurmich/dev
 
 ### Filament
 
@@ -586,24 +454,215 @@ public function getTableColumns(): array
 > Con Single Table Inheritance (STI), **tutti i campi usati dai modelli specializzati devono essere presenti nella tabella base** (`users`).
 > Se aggiungi un campo (es. `certifications`), aggiorna la migration della tabella `users` e documenta la modifica.
 > Esempio di errore tipico: `Unknown column 'certifications' in 'field list'`.
-=======
-## Troubleshooting
-Problemi comuni e soluzioni
->>>>>>> 1dc4ede7 (📝 (README.md): update documentation for SaluteOra module to improve clarity and organization of information, including a comprehensive table of contents and sections for best practices, quick start guides, and recent updates)
 
 ## Collegamenti
-Link a documentazione correlata
-
-*Ultimo aggiornamento: [Data]*
-```
+- [Modello Doctor](./Models/Doctor.md)
+- [Migrazioni](database/migrations.md)
+- [Errori di Validazione](errors/validation.md)
+- [Ereditarietà](INHERITANCE_BEST_PRACTICES.md)
+- [Struttura progetto](../Xot/docs/architecture/struttura-progetto.md)
 
 ---
 
-*Ultima revisione: Gennaio 2025*  
-*Versione documentazione: 2.0*  
-*Maintainer: Team SaluteOra*
+Per dettagli su ogni processo, consulta le relative sezioni interne. Dopo ogni restart, esegui la checklist sopra per evitare errori ricorrenti.
 
-<<<<<<< HEAD
+# AVVISO IMPORTANTE: Regole Fondamentali e Checklist di Ripartenza
+
+> **Prima di ogni sviluppo o dopo ogni riavvio:**
+> - Consulta la [checklist di ripartenza](../Xot/docs/checklist-di-ripartenza.md) o la versione locale se presente
+> - Applica SEMPRE le [Filament Best Practices](./filament-best-practices.md)
+> - Ricorda: nessun riferimento a progetti/brand nelle doc dei moduli
+> - Non duplicare mai trait già presenti nei modelli base
+> - Usa solo ValidationException::withMessages per errori custom
+> - Aggiorna la doc PRIMA di ogni modifica
+> - Se trovi un warning o errore, aggiorna subito la doc e segnala la regola
+
+## Collegamenti rapidi
+- [Filament Best Practices](./filament-best-practices.md)
+- [Neutralità documentazione](../module-documentation-neutrality.md)
+- [Ereditarietà modelli](../model-inheritance-best-practices.md)
+- [Checklist di ripartenza](../Xot/docs/checklist-di-ripartenza.md)
+
+---
+
+# Patient Module
+
+> **Nota fondamentale:**
+> Se stai creando o modificando una Filament Resource che estende XotBaseResource, NON dichiarare mai le proprietà statiche $navigationGroup, $navigationLabel, né il metodo statico table(Table $table): Table. Segui la regola documentata in [filament-best-practices.mdc](./filament-best-practices.mdc).
+
+## Best Practices Filament/XotBaseResource
+
+> **Regola vincolante:** Se una risorsa estende `XotBaseResource`, NON deve mai dichiarare:
+> - `protected static ?string $navigationGroup`
+> - `protected static ?string $navigationLabel`
+> - `public static function table(Table $table): Table`
+
+La configurazione di navigazione e la definizione della tabella sono centralizzate nella classe base o nei provider.
+
+**Checklist:**
+- [ ] Nessuna dichiarazione di navigationGroup/navigationLabel/table() nelle risorse che estendono XotBaseResource
+- [ ] Configurazione centralizzata e DRY
+
+**Vedi anche:**
+- [filament-xotbase-resource-best-practices.mdc](../../../.cursor/rules/filament-xotbase-resource-best-practices.mdc)
+
+# Correzione Namespace e Metodi Vietati nelle Resource Filament
+
+- [2024-05-XX] Corretto il namespace delle risorse Filament da `Modules\\SaluteOra\\App\\Filament\\Resources` a `Modules\\SaluteOra\\Filament\\Resources`.
+- Rimossi i metodi `getTableFilters` e `getBulkActions` da tutte le risorse che estendono XotBaseResource, come da regole centrali Xot.
+- Vedi anche: [Regole generali Xot](../Xot/docs/README.md)
+
+# Correzioni e Migliorie Post-Unificazione
+
+Dopo l'unificazione dei moduli Patient, Dental e Reporting in SaluteOra, sono necessarie le seguenti correzioni e migliorie trasversali:
+
+## 1. Uniformare Modelli e Enum
+- **Priorità:** Altissima
+- **Motivazione:** Eliminare duplicazioni, garantire type safety, semplificare la manutenzione.
+- **Azioni:**
+  - Unificare tutti i modelli utente (User, Doctor, Patient) in un'unica gerarchia STI.
+  - Usare solo enum PHP 8.1+ per tutti i tipi, stati, ruoli (vedi [ENUMS_BEST_PRACTICES.md](./ENUMS_BEST_PRACTICES.md)).
+  - Aggiornare i cast nei modelli.
+- **Impatto:** Riduzione bug, maggiore coerenza tra viste, policies e risorse Filament.
+
+## 2. Refactoring Risorse Filament
+- **Priorità:** Alta
+- **Motivazione:** Evitare duplicazioni, migliorare la UX, semplificare la navigation.
+- **Azioni:**
+  - Centralizzare le risorse comuni (pazienti, appuntamenti, trattamenti, report) in SaluteOra.
+  - Rimuovere/archiviare le vecchie risorse duplicate.
+  - Aggiornare la navigation dinamica in base a UserType/tenancy.
+- **Impatto:** Navigazione più chiara, meno errori di permessi, manutenzione facilitata.
+
+## 3. Ottimizzazione Performance e Query
+- **Priorità:** Alta
+- **Motivazione:** Migliorare tempi di risposta, ridurre carico server, evitare timeout.
+- **Azioni:**
+  - Applicare tutte le ottimizzazioni documentate in [roadmap/bottlenecks.md](./roadmap/bottlenecks.md): lazy loading, caching, indici DB, batch, lock, streaming file, ricerca full-text.
+  - Monitorare i colli di bottiglia con strumenti di profiling.
+- **Impatto:** Applicazione più veloce e scalabile.
+
+## 4. Revisione Policies e Permessi
+- **Priorità:** Media
+- **Motivazione:** Garantire sicurezza e coerenza tra i diversi tipi utente.
+- **Azioni:**
+  - Unificare le policies per pazienti, dottori, admin.
+  - Usare solo UserType enum per i controlli.
+  - Aggiornare i test di autorizzazione.
+- **Impatto:** Sicurezza rafforzata, meno bug di visibilità.
+
+## 5. Aggiornamento Documentazione e Naming
+- **Priorità:** Media
+- **Motivazione:** Evitare confusione, facilitare onboarding e manutenzione.
+- **Azioni:**
+  - Aggiornare tutti i riferimenti a Patient/Dental/Reporting in SaluteOra.
+  - Uniformare nomi file, classi, route, translation keys.
+  - Aggiornare tutti i README, roadmap, bottlenecks, standards.
+- **Impatto:** Documentazione chiara, onboarding più rapido.
+
+## 6. Test e Copertura
+- **Priorità:** Alta
+- **Motivazione:** Garantire stabilità dopo la fusione.
+- **Azioni:**
+  - Aggiornare/creare test di integrazione e feature per i flussi critici.
+  - Validare edge case di tenancy, permessi, ricerca, upload.
+- **Impatto:** Riduzione regressioni, maggiore affidabilità.
+
+## 7. Migliorie UI/UX
+- **Priorità:** Media
+- **Motivazione:** Migliorare l'esperienza utente e la produttività degli operatori.
+- **Azioni:**
+  - Uniformare layout, badge, icone, colori, filtri tra le vecchie sezioni.
+  - Introdurre feedback visivi per operazioni batch/lente.
+- **Impatto:** Interfaccia più moderna e coerente.
+
+## 8. Refactoring Migrazioni e Seeder
+- **Priorità:** Media
+- **Motivazione:** Evitare dati incoerenti e duplicati.
+- **Azioni:**
+  - Unificare le migrazioni e i seeder di Patient, Dental, Reporting.
+  - Rimuovere tabelle/colonne obsolete.
+- **Impatto:** Database più pulito e coerente.
+
+## 9. Aggiornamento Roadmap e Bottlenecks
+- **Priorità:** Alta
+- **Motivazione:** Tenere traccia delle attività e delle criticità post-unificazione.
+- **Azioni:**
+  - Aggiornare [roadmap/bottlenecks.md](./roadmap/bottlenecks.md) con i nuovi colli di bottiglia e le soluzioni adottate.
+  - Mantenere aggiornata la roadmap delle attività.
+
+---
+
+**Nota:** Tutte le correzioni e migliorie devono essere documentate anche nei file roadmap, standards e README delle sottosezioni tecniche.
+
+---
+
+# Errore Critico: Struttura Cartelle fuori da app/
+
+> **Attenzione:** È stato riscontrato un errore ricorrente: la creazione di cartelle come `Enums`, `Actions`, `Models`, `Providers`, `View` direttamente nella root del modulo anziché in `app/`.
+>
+> - **Regola vincolante:** Tutti i file PHP devono essere in `app/`.
+> - **Causa:** Errata comprensione della mappatura PSR-4 e delle regole Laravel Modules.
+> - **Impatto:** Autoloading rotto, namespace incoerenti, problemi di refactoring, test, CI/CD, difficoltà di manutenzione.
+> - **Checklist:**
+>   - [ ] Prima di creare una cartella/file, verifica che sia sotto `app/`
+>   - [ ] Controlla sempre la configurazione PSR-4 in composer.json
+>   - [ ] Consulta le regole in [namespace-vs-file-structure.md](./namespace-vs-file-structure.md), [filament-namespace-rules.md](./filament-namespace-rules.md), [WINDSURF_RULES.md](./WINDSURF_RULES.md), [CURSOR_RULES.md](./CURSOR_RULES.md)
+
+---
+
+# Gestione Provider e Autoloading
+
+Quando si sposta, rinomina o elimina un ServiceProvider (es. SaluteOraServiceProvider):
+1. **Cerca tutti i riferimenti** al provider nel progetto (`composer.json`, `module.json`, `config/app.php`, ecc.)
+2. **Aggiorna o rimuovi** i riferimenti obsoleti
+3. **Esegui** `composer dump-autoload`
+4. **Verifica** che nessun errore di autoloading si presenti (`php artisan`, `composer diagnose`)
+5. **Documenta** la modifica nella doc tecnica e nella changelog del modulo
+
+> **Warning:** Un provider mancante o referenziato erroneamente blocca l'avvio di Laravel e genera errori critici di autoloading.
+
+**Checklist rapida:**
+- [ ] Nessun provider referenziato che non esiste più
+- [ ] Tutti i riferimenti aggiornati dopo spostamento/rinominamento
+- [ ] Autoload Composer aggiornato
+- [ ] Test di avvio superati
+- [ ] Modifica documentata
+
+Vedi anche: [MIGLIORAMENTI_E_CORREZIONI.md](./MIGLIORAMENTI_E_CORREZIONI.md)
+
+---
+
+## Best practice per le traduzioni
+
+- Non usare chiavi che terminano con `.navigation`, ma usare valori localizzati e descrittivi per `label`, `group`, `icon`.
+- Tutte le label, placeholder, help, tooltip, description devono essere presenti nei file lang del modulo.
+- Aggiorna sempre la struttura delle traduzioni quando aggiungi nuovi campi o azioni.
+
+### Esempio corretto
+```php
+'navigation' => [
+    'label' => 'Gestione Pazienti',
+    'group' => 'Pazienti',
+    'icon' => 'heroicon-o-user-group',
+    'color' => 'primary',
+],
+'fields' => [
+    'first_name' => [
+        'label' => 'Nome',
+        'placeholder' => 'Inserisci il nome',
+        'helper_text' => 'Nome del paziente',
+        'description' => 'Il nome anagrafico del paziente',
+        'tooltip' => 'Deve corrispondere al nome sul documento d\'identità'
+    ],
+    // ...
+],
+```
+
+- Se trovi chiavi `.navigation`, correggile subito e aggiorna la documentazione.
+
+## ⚠️ Regola fondamentale: MAI usare enum PHP per i campi di stato
+
 - Per tutti i campi che rappresentano uno stato (es. user.state, moderation.state) si usa **solo** [spatie/laravel-model-states](https://github.com/spatie/laravel-model-states).
 - Le enum PHP (anche se chiamate UserStateEnum, ecc.) sono ammesse **solo** per tipi statici (es. UserType), **mai** per workflow, moderazione, pubblicazione, ecc.
 
@@ -734,7 +793,6 @@ Il modulo implementa diversi widget Filament per le dashboard:
 
 - **DoctorCalendarWidget**: Implementazione perfetta con trait `HasFullCalendarConfig`, multi-tenancy, e security robusta
 - **BaseTransition Pattern**: Capolavoro di DRY & KISS per gestione stati
-<<<<<<< HEAD
 
 ### Policy e Autorizzazioni
 
@@ -786,8 +844,3 @@ class ModelPolicy extends XotBasePolicy
 - Controlli basati su ruoli e relazioni tra modelli
 - Metodi specifici per azioni di dominio (es. `confirm`, `cancel`, `finalize`)
 - Documentazione completa con PHPDoc
-=======
->>>>>>> aurmich/dev
-=======
-**Per supporto o domande**: Consultare prima [Lessons Learned](lessons-learned.md), poi aprire issue nel repository.
->>>>>>> 1dc4ede7 (📝 (README.md): update documentation for SaluteOra module to improve clarity and organization of information, including a comprehensive table of contents and sections for best practices, quick start guides, and recent updates)

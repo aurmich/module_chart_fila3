@@ -24,11 +24,7 @@ class ListStudios extends XotBaseListRecords
                 ->sortable(),
             'active' => Tables\Columns\IconColumn::make('active')
                 ->boolean(),
-<<<<<<< HEAD
             'full_address' => Tables\Columns\TextColumn::make('full_address')
-=======
-            'full_address' => Tables\Columns\TextColumn::make('address')
->>>>>>> aurmich/dev
                 ->searchable()
                 ->default(function($record){
                     $address = $record?->address()->first();

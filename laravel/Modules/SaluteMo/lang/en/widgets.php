@@ -10,7 +10,6 @@ return [
         'increase' => ':percent% increase',
         'decrease' => ':percent% decrease',
     ],
-<<<<<<< HEAD
     'appointment_overview' => [
         'title' => 'Appointments Overview',
         'description' => 'Compact overview of appointments by status',
@@ -154,6 +153,4 @@ return [
         'refresh' => 'Refresh data',
         'loading' => 'Loading dashboard...',
     ],
-=======
->>>>>>> aurmich/dev
 ];

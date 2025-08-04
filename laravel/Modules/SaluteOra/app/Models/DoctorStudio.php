@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Models;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 use Carbon\Carbon;
 use Parental\HasParent;
@@ -15,25 +13,6 @@ use Spatie\OpeningHours\OpeningHours;
 use Modules\SaluteOra\Models\BasePivot;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Safe\DateTime;
-=======
-=======
-use DateTime;
-use Carbon\Carbon;
->>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
-use Parental\HasParent;
-use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\Log;
-use Spatie\OpeningHours\OpeningHours;
-use Modules\SaluteOra\Models\BasePivot;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
-use Spatie\OpeningHours\OpeningHours;
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
->>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 
 /**
  * Modello pivot per la relazione many-to-many tra Doctor e Studio.
@@ -77,19 +56,12 @@ use Spatie\OpeningHours\OpeningHours;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DoctorStudio whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DoctorStudio whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|DoctorStudio whereUserId($value)
-<<<<<<< HEAD
  * @property-read \Modules\SaluteOra\Models\User|null $user
-=======
->>>>>>> aurmich/dev
  * @mixin \Eloquent
  */
 class DoctorStudio extends StudioUser
 {
     use HasParent;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
      /**
      * Gli attributi che sono mass assignable.
      *
@@ -121,12 +93,9 @@ class DoctorStudio extends StudioUser
     public function getOpeningHours(): OpeningHours
     {
         $schedule = $this->schedule;
-<<<<<<< HEAD
         if(!$schedule){
             return OpeningHours::create([]);
         }
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         $days=[];
         foreach($schedule as $day=>$hours){
             $days[$day]=[];
@@ -137,10 +106,6 @@ class DoctorStudio extends StudioUser
                 $days[$day][]=$hours['afternoon_from'].'-'.$hours['afternoon_to'];
             }
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 
 
         $days['exceptions'] = [
@@ -149,7 +114,6 @@ class DoctorStudio extends StudioUser
                 '01-01'      => [],                // Recurring on each 1st of January
                 '12-25'      => ['09:00-12:00'],   // Recurring on each 25th of December
         ];
-<<<<<<< HEAD
         /** @phpstan-ignore argument.type */
         return OpeningHours::create($days);
     }
@@ -267,129 +231,5 @@ class DoctorStudio extends StudioUser
         }
         return $dates;
     }
-=======
-        
-        return OpeningHours::create($days);
-    }
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 }
 
-=======
-}
->>>>>>> aurmich/dev
-=======
-        
-        return OpeningHours::create($days);
-    }
-
-
-    /**
-     * Get available time slots for a specific date.
-     * 
-     * @param string $date The date in Y-m-d format
-     * @return array Array of time slot objects with id, label, value, and time properties
-     */
-    public function getAvailableTimeSlotsByDate(?string $date): Collection
-    {
-        if (!$date) {
-            return collect([]);
-        }
-
-        $dateTime = new DateTime($date);
-        
-        // Ottieni gli orari di apertura tramite getOpeningHours()
-        $openingHours = $this->getOpeningHours();
-        
-        // Verifica se è aperto nel giorno della settimana
-        if (!$openingHours->isOpenOn($date)) {
-            return collect([]);
-        }
-        
-        // Ottieni gli orari di apertura per il giorno della settimana
-        $openingHoursForDay = $openingHours->forDate($dateTime);
-        $slots = collect();
-        foreach ($openingHoursForDay as $timeRange) {
-            $start = Carbon::createFromFormat('H:i', $timeRange->start()->format());
-            $end = Carbon::createFromFormat('H:i', $timeRange->end()->format());
-            
-            // Genera slot di 60 minuti dall'inizio alla fine
-            $current = $start->copy();
-            while ($current->lt($end)) {
-                $time = $current->format('H:i');
-                $slots->push(collect(
-                    (object)['id' => $time,
-                    'label' => $time,
-                
-                ]));
-                $current->addHour();
-            }
-        }
-        return $slots;
-        
-        
-            
-      
-    }
-    
-    /**
-     * Genera slot di tempo per un range specifico
-     *
-     * @param string $startTime Orario di inizio (es: "08:00")
-     * @param string $endTime Orario di fine (es: "10:00") 
-     * @param int $slotDurationMinutes Durata slot in minuti
-     * @return array Array di oggetti slot
-     */
-    private function generateSlotsForRange(string $startTime, string $endTime, int $slotDurationMinutes): array
-    {
-        $slots = [];
-        
-        try {
-            $start = Carbon::createFromFormat('H:i', $startTime);
-            $end = Carbon::createFromFormat('H:i', $endTime);
-            
-            $currentTime = $start->copy();
-            
-            // Genera slot fino all'orario di fine (escluso)
-            while ($currentTime->lt($end)) {
-                $slotTime = $currentTime->format('H:i');
-                
-                // Crea oggetto slot per RadioCollection
-                $slots[] = (object) [
-                    'id' => $slotTime,
-                    'label' => $slotTime,
-                    'value' => $slotTime,
-                    'time' => $slotTime
-                ];
-                
-                // Avanza di slot duration
-                $currentTime->addMinutes($slotDurationMinutes);
-            }
-            
-        } catch (\Exception $e) {
-            Log::error('Errore nella generazione slot per range', [
-                'start_time' => $startTime,
-                'end_time' => $endTime,
-                'error' => $e->getMessage()
-            ]);
-        }
-        
-        return $slots;
-    }
-
-
-    public function getEnabledDatesByMonth(string $month): array
-    {
-        $dates=[];
-        $openingHours=$this->getOpeningHours();
-        for($i=1;$i<=31;$i++){
-            $date = Carbon::parse($month.'-'.$i);
-            $date1=$date->format('Y-m-d');
-            if($openingHours->isOpenOn($date1)){
-                $dates[] = $date1;
-            }
-        }
-        return $dates;
-    }
-}
-
->>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)

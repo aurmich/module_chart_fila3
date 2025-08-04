@@ -9,27 +9,17 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 use Modules\Notify\Contracts\SMS\SmsActionContract;
 use Modules\Notify\Datas\SmsData;
-<<<<<<< HEAD
 use Modules\Notify\Datas\SMS\GammuData;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\Process\Process;
 use function Safe\tempnam;
 use function Safe\file_put_contents;
 use function Safe\unlink;
-<<<<<<< HEAD
-=======
-use Spatie\QueueableAction\QueueableAction;
-use Symfony\Component\Process\Process;
->>>>>>> aurmich/dev
-=======
->>>>>>> 345f8677 (phpstan)
 
 final class SendGammuSMSAction implements SmsActionContract
 {
     use QueueableAction;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     /** @var GammuData */
     private GammuData $gammuData;
 
@@ -41,38 +31,12 @@ final class SendGammuSMSAction implements SmsActionContract
 
     /** @var string|null */
     protected ?string $defaultSender = null;
-=======
-=======
-    /** @var string */
->>>>>>> 345f8677 (phpstan)
-    private string $path;
-
-    /** @var string */
-    private string $config;
-
-    /** @var array<string, mixed> */
-    private array $vars = [];
-
-    /** @var bool */
-    protected bool $debug;
-
-    /** @var int */
-    protected int $timeout;
-<<<<<<< HEAD
-    protected ?string $defaultSender;
->>>>>>> aurmich/dev
-=======
-
-    /** @var string|null */
-    protected ?string $defaultSender = null;
->>>>>>> 345f8677 (phpstan)
 
     /**
      * Create a new action instance.
      */
     public function __construct()
     {
-<<<<<<< HEAD
         $this->gammuData = GammuData::make();
         
         if (!$this->gammuData->path) {
@@ -80,38 +44,13 @@ final class SendGammuSMSAction implements SmsActionContract
         }
 
         if (!$this->gammuData->config) {
-=======
-        $config = config('sms.drivers.gammu');
-        if (!is_array($config)) {
-            throw new Exception('Configurazione Gammu non trovata in sms.php');
-        }
-
-        $this->path = $config['path'] ?? '/usr/bin/gammu';
-        if (!is_string($this->path)) {
-            throw new Exception('Path Gammu non configurato in sms.php');
-        }
-
-        $this->config = $config['config'] ?? '/etc/gammurc';
-        if (!is_string($this->config)) {
->>>>>>> aurmich/dev
             throw new Exception('Config Gammu non configurato in sms.php');
         }
 
         // Parametri a livello di root
-<<<<<<< HEAD
-<<<<<<< HEAD
         $sender = config('sms.from');
         $this->defaultSender = is_string($sender) ? $sender : null;
         $this->debug = (bool) config('sms.debug', false);
-=======
-        $this->defaultSender = config('sms.from');
-=======
-        $sender = config('sms.from');
-        $this->defaultSender = is_string($sender) ? $sender : null;
->>>>>>> 345f8677 (phpstan)
-        $this->debug = (bool) config('sms.debug', false);
-        $this->timeout = (int) config('sms.timeout', 30);
->>>>>>> aurmich/dev
     }
 
     /**
@@ -124,8 +63,6 @@ final class SendGammuSMSAction implements SmsActionContract
     public function execute(SmsData $smsData): array
     {
         // Normalizza il numero di telefono
-<<<<<<< HEAD
-<<<<<<< HEAD
         $to = (string) $smsData->to;
         if (Str::startsWith($to, '00')) {
             $to = '+' . mb_substr($to, 2);
@@ -133,24 +70,6 @@ final class SendGammuSMSAction implements SmsActionContract
 
         if (!Str::startsWith($to, '+')) {
             $to = '+39' . $to;
-=======
-        $smsData->to .= '';
-        if (Str::startsWith($smsData->to, '00')) {
-            $smsData->to = '+' . mb_substr($smsData->to, 2);
-        }
-
-        if (!Str::startsWith($smsData->to, '+')) {
-            $smsData->to = '+39' . $smsData->to;
->>>>>>> aurmich/dev
-=======
-        $to = (string) $smsData->to;
-        if (Str::startsWith($to, '00')) {
-            $to = '+' . mb_substr($to, 2);
-        }
-
-        if (!Str::startsWith($to, '+')) {
-            $to = '+39' . $to;
->>>>>>> 345f8677 (phpstan)
         }
 
         // Prepara il messaggio per Gammu
@@ -159,46 +78,22 @@ final class SendGammuSMSAction implements SmsActionContract
 
         // Esegue il comando Gammu per inviare l'SMS
         $process = new Process([
-<<<<<<< HEAD
             $this->gammuData->getPath(),
             '-c', $this->gammuData->getConfig(),
             'sendsms',
             'TEXT',
             $to,
-=======
-            $this->path,
-            '-c', $this->config,
-            'sendsms',
-            'TEXT',
-<<<<<<< HEAD
-            $smsData->to,
->>>>>>> aurmich/dev
-=======
-            $to,
->>>>>>> 345f8677 (phpstan)
             '-text',
             $tempFile
         ]);
 
-<<<<<<< HEAD
         $process->setTimeout($this->gammuData->getTimeout());
-=======
-        $process->setTimeout($this->timeout);
->>>>>>> aurmich/dev
 
         try {
             $process->run();
 
             // Rimuove il file temporaneo
-<<<<<<< HEAD
-<<<<<<< HEAD
             unlink($tempFile);
-=======
-            @unlink($tempFile);
->>>>>>> aurmich/dev
-=======
-            unlink($tempFile);
->>>>>>> 345f8677 (phpstan)
 
             if (!$process->isSuccessful()) {
                 throw new Exception('Gammu error: ' . $process->getErrorOutput());
@@ -210,15 +105,7 @@ final class SendGammuSMSAction implements SmsActionContract
             return $this->vars;
         } catch (Exception $exception) {
             // Rimuove il file temporaneo in caso di errore
-<<<<<<< HEAD
-<<<<<<< HEAD
             unlink($tempFile);
-=======
-            @unlink($tempFile);
->>>>>>> aurmich/dev
-=======
-            unlink($tempFile);
->>>>>>> 345f8677 (phpstan)
 
             throw new Exception(
                 $exception->getMessage() . '[' . __LINE__ . '][' . class_basename($this) . ']',

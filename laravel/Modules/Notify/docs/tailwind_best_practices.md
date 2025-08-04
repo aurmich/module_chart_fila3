@@ -277,10 +277,7 @@ module.exports = {
 ### 7.2 Esempi e Pattern
 ```php
 // docs/examples/button-variants.md
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Varianti Bottoni
 
 ## Primario

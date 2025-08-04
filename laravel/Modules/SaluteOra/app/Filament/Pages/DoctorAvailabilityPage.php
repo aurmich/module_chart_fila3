@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Filament\Pages;
 
-<<<<<<< HEAD
 use Filament\Forms\Form;
 use Filament\Actions\Action;
 use Webmozart\Assert\Assert;
@@ -19,18 +18,6 @@ use Modules\SaluteOra\Models\StudioUser;
 use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Filament\Pages\XotBasePage;
 use Modules\UI\Filament\Forms\Components\OpeningHoursField;
-=======
-use Filament\Actions\Action;
-use Filament\Facades\Filament;
-use Filament\Forms\Form;
-use Filament\Notifications\Notification;
-use Illuminate\Contracts\Support\Htmlable;
-use Modules\SaluteOra\Models\Studio;
-use Modules\SaluteOra\Models\StudioUser;
-use Modules\SaluteOra\Models\User;
-use Modules\UI\Filament\Forms\Components\OpeningHoursField;
-use Modules\Xot\Filament\Pages\XotBasePage;
->>>>>>> aurmich/dev
 
 /**
  * DoctorAvailabilityPage
@@ -46,10 +33,7 @@ use Modules\Xot\Filament\Pages\XotBasePage;
  * - Supporto per dottori con più studi
  * 
  * @property array $data
-<<<<<<< HEAD
  * @property ComponentContainer $form
-=======
->>>>>>> aurmich/dev
  */
 class DoctorAvailabilityPage extends XotBasePage
 {
@@ -185,11 +169,7 @@ class DoctorAvailabilityPage extends XotBasePage
     /**
      * Ottiene l'utente dottore corrente.
      */
-<<<<<<< HEAD
     protected function getCurrentDoctor(): Doctor
-=======
-    protected function getCurrentDoctor(): User
->>>>>>> aurmich/dev
     {
         /** @var User $user */
         $user = auth()->user();
@@ -197,11 +177,7 @@ class DoctorAvailabilityPage extends XotBasePage
         //if (!$user instanceof User || $user->type !== 'doctor') {
         //    abort(403, __('saluteora::doctor_availability.notifications.not_doctor.body'));
         //}
-<<<<<<< HEAD
         Assert::isInstanceOf($user, Doctor::class);
-=======
-        
->>>>>>> aurmich/dev
         return $user;
     }
 
@@ -255,11 +231,7 @@ class DoctorAvailabilityPage extends XotBasePage
         $pivot = $this->getDoctorStudioPivot();
         
         $this->data = [
-<<<<<<< HEAD
             'schedule' => $pivot->schedule ?? $this->getDefaultSchedule(),
-=======
-            'schedule' => $pivot?->schedule ?? $this->getDefaultSchedule(),
->>>>>>> aurmich/dev
         ];
     }
 

@@ -17,15 +17,7 @@ use Filament\Tables\Actions\BulkActionGroup;
 use Filament\Tables\Actions\DeleteBulkAction;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\UI\Filament\Forms\Components\SelectState;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Modules\SaluteOra\Filament\Resources\UserResource\Pages;
-=======
-use Modules\SaluteMo\Filament\Resources\UserResource\Pages;
->>>>>>> aurmich/dev
-=======
-use Modules\SaluteOra\Filament\Resources\UserResource\Pages;
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 
 class UserResource extends BaseUserResource
 {
@@ -37,7 +29,6 @@ class UserResource extends BaseUserResource
     public static function getFormSchema(): array
     {
         return [
-<<<<<<< HEAD
             Forms\Components\TextInput::make('first_name')
                 ->required()
                 ->maxLength(255)
@@ -46,21 +37,13 @@ class UserResource extends BaseUserResource
                 ->required()
                 ->maxLength(255)
                 ,
-=======
-            Forms\Components\TextInput::make('name')
-                ->required()
-                ->maxLength(255),
->>>>>>> aurmich/dev
             Forms\Components\TextInput::make('email')
                 ->email()
                 ->required()
                 ->maxLength(255)
                 ->unique(ignoreRecord: true),
-<<<<<<< HEAD
 
             Forms\Components\TextInput::make('phone'),
-=======
->>>>>>> aurmich/dev
             Forms\Components\Select::make('type')
                 ->options(UserTypeEnum::class)
                 ->enum(UserTypeEnum::class)
