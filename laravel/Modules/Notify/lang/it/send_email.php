@@ -61,7 +61,11 @@ return array (
 >>>>>>> b2a39a21 (- update footer)
 =======
       'placeholder' => 'body_html',
+<<<<<<< HEAD
 >>>>>>> 89a8313a (- update primary colors)
+=======
+      'label' => 'body_html',
+>>>>>>> 85c2afe6 (✨ (SpatieEmail.php): add dynamic theme support for email layout path to enhance customization)
     ),
   ),
   'actions' => 
