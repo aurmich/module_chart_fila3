@@ -441,6 +441,7 @@ class PatientResource extends XotBaseResource
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'privacy_policy' => Forms\Components\View::make('pub_theme::gdpr.patient-privacy-policy')
                 ->columnSpanFull(),
             'privacy_acceptance' => Forms\Components\Checkbox::make('privacy_acceptance')
@@ -460,6 +461,9 @@ class PatientResource extends XotBaseResource
 =======
             'privacy_policy' => Forms\Components\View::make('pub_theme::gdpr.privacy-policy')
 >>>>>>> 8d591468 (fields translations)
+=======
+            'privacy_policy' => Forms\Components\View::make('pub_theme::gdpr.patient-privacy-policy')
+>>>>>>> 7afe3887 (✨ (RegisterAction.php): add consent management for privacy and newsletter)
                 ->columnSpanFull(),
             'privacy_acceptance' => Forms\Components\Checkbox::make('privacy_acceptance')
                 ->required()

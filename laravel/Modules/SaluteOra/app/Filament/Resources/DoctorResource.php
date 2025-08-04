@@ -506,6 +506,25 @@ class DoctorResource extends XotBaseResource
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
     }
 
+
+     /**
+     * Get privacy step schema for the wizard
+     *
+     * @return array<string, \Filament\Forms\Components\Component>
+     */
+    protected static function getPrivacyStepSchema(): array
+    {
+        return [
+            'privacy_policy' => Forms\Components\View::make('pub_theme::gdpr.doctor-privacy-policy')
+                ->columnSpanFull(),
+            'privacy_acceptance' => Forms\Components\Checkbox::make('privacy_acceptance')
+                ->required()
+                ->columnSpanFull(),
+            //'newsletter' => Forms\Components\Checkbox::make('newsletter')
+           //     ->columnSpanFull(),
+        ];
+    }
+
     public static function getPages(): array
     {
         return [

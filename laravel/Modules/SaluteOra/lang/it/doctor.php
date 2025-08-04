@@ -356,6 +356,14 @@ return array (
 =======
 >>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
     ),
+    'privacy_step' => 
+    array (
+      'label' => 'Privacy e Consensi',
+      'description' => 'Consenso al trattamento dati e comunicazioni marketing',
+      'icon' => 'heroicon-o-shield-check',
+      'color' => 'info',
+      'help' => 'Il consenso privacy è obbligatorio per legge, la newsletter è facoltativa',
+    ),
   ),
   'fields' => 
   array (
@@ -832,6 +840,13 @@ return array (
     'openFilters' => 
     array (
       'label' => 'openFilters',
+    ),
+    'privacy_acceptance' => 
+    array (
+      'label' => 'Accettazione Privacy',
+      'tooltip' => 'Devi accettare l\'informativa sulla privacy per continuare',
+      'description' => 'privacy_acceptance',
+      'helper_text' => 'privacy_acceptance',
     ),
   ),
   'filters' => 
