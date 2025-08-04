@@ -1,19 +1,7 @@
 ---
-<<<<<<< HEAD
 description: Guidelines for using XotBaseMigration and naming conventions for user type and state fields.
 globs: []
 alwaysApply: false
-=======
-<<<<<<< HEAD
-trigger: model_decision
-description: Guidelines for using XotBaseMigration and naming conventions for user type and state fields.
-globs: []
-=======
-description: Guidelines for using XotBaseMigration and naming conventions for user type and state fields.
-globs: []
-alwaysApply: false
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 ---
 
 # Migration Base Class Rule
@@ -50,15 +38,6 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends XotBaseMigration
 {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    /**
-     * Run the migrations.
-     */
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
     public function up(): void
     {
         // -- CREATE --
@@ -77,14 +56,7 @@ return new class extends XotBaseMigration
             }
         );
     }
-<<<<<<< HEAD
     // ...
-=======
-<<<<<<< HEAD
-=======
-    // ...
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 };
 
 // Correct usage with tableCreate and tableUpdate

@@ -1,35 +1,14 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: manual
-description:
-globs:
----
-# Regola Cursor: Migrazioni XotBaseMigration
-=======
->>>>>>> aurmich/dev
 description:
 globs:
 alwaysApply: false
 ---
 # Regola Windsurf: Migrazioni XotBaseMigration
-<<<<<<< HEAD
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 
 ## Regola
 - Usare SEMPRE `$this->hasColumn('nome_colonna')` nelle migrazioni che estendono XotBaseMigration.
 - NON usare mai `Schema::hasColumn`.
-<<<<<<< HEAD
 - La proprietà `$connection` deve essere dichiarata come `protected ?string $connection = 'mysql';` (o altro valore appropriato), mai solo `string`.
-=======
-<<<<<<< HEAD
-=======
-- La proprietà `$connection` deve essere dichiarata come `protected ?string $connection = 'mysql';` (o altro valore appropriato), mai solo `string`.
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 
 ## Esempio
 ```php

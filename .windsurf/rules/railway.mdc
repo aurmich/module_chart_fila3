@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: model_decision
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 description: This rule outlines the best practices and coding standards for developing and deploying applications on the Railway platform, covering aspects from code organization to security and performance.
 globs: *.js,*.jsx,*.ts,*.tsx,*.py,*.go,*.java,*.rs,*.c,*.cpp,*.cs,*.html,*.css,*.yml,*.yaml,*.json,*.sh
 ---

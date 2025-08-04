@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: model_decision
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 description: This rule provides comprehensive best practices for htmx development, covering code organization, security, performance, testing, and common pitfalls. It aims to guide developers in building robust, maintainable, and secure htmx applications.
 globs: *.html
 ---

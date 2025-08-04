@@ -16,27 +16,9 @@
 
 *Correct*:
 ```php
-<<<<<<< HEAD
 namespace Modules\<nome progetto>\Models;
 
 use Modules\<nome progetto>\Models\User;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-namespace Modules\<nome progetto>\Models;
-
-use Modules\<nome progetto>\Models\User;
-=======
-namespace Modules\SaluteOra\Models;
-
-use Modules\SaluteOra\Models\User;
->>>>>>> 54f4fa16 (.)
-=======
-namespace Modules\<nome progetto>\Models;
-
-use Modules\<nome progetto>\Models\User;
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 
 class Doctor extends User
 {
@@ -46,19 +28,7 @@ class Doctor extends User
 
 *Incorrect*:
 ```php
-<<<<<<< HEAD
 namespace Modules\<nome progetto>\App\Models;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-namespace Modules\<nome progetto>\App\Models;
-=======
-namespace Modules\SaluteOra\App\Models;
->>>>>>> 54f4fa16 (.)
-=======
-namespace Modules\<nome progetto>\App\Models;
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 
 use Illuminate\Database\Eloquent\Model;
 

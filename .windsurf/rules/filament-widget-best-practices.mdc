@@ -3,13 +3,6 @@ description:
 globs:
 alwaysApply: false
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 7ee226dd (docs(geo-best-practices.mdc): add best practices for Geo module to ensure consistency and maintainability)
->>>>>>> aurmich/dev
 # Best Practices per i Widget Filament
 
 ## Regole Fondamentali
@@ -62,11 +55,3 @@ alwaysApply: false
 - [README Filament Widget](../../laravel/Modules/Xot/docs/filament_widget_regole.md)
 - [Best Practices Filament](../../laravel/Modules/Xot/docs/filament-best-practices.md)
 - [Pattern di Estensione](../../laravel/Modules/Xot/docs/filament_extension_pattern.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
-=======
->>>>>>> 7ee226dd (docs(geo-best-practices.mdc): add best practices for Geo module to ensure consistency and maintainability)
->>>>>>> aurmich/dev

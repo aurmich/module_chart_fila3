@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: model_decision
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 description: Comprehensive best practices for Jenkins, covering code organization, security, performance, testing, and common pitfalls.  Provides guidelines for writing robust, maintainable, and secure Jenkins pipelines and configurations.
 globs: Jenkinsfile,*.jenkins,*.groovy
 ---

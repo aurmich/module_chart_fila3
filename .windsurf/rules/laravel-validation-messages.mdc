@@ -1,26 +1,7 @@
 ---
-<<<<<<< HEAD
 description:
 globs:
 alwaysApply: true
-=======
-<<<<<<< HEAD
-description:
-globs:
-<<<<<<< HEAD
-alwaysApply: true
-=======
-<<<<<<< HEAD
-trigger: always_on
-description:
-globs:
-=======
-description:
-globs:
-alwaysApply: true
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> 8081e528 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 ---
 # Best Practices Messaggi di Validazione Laravel
 
@@ -46,73 +27,23 @@ alwaysApply: true
 
 ### FormRequest
 ```php
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-class StoreUserRequest extends BaseFormRequest {
-    public function rules() {
-        return [
-            'email' => ['required', 'email', 'max:255'],
-            'password' => ['required', 'min:8'],
-=======
->>>>>>> 8081e528 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 class StoreSpotRequest extends BaseFormRequest {
     public function rules() {
         return [
             'name' => ['required', 'string', 'max:255'],
             'location' => ['required', 'string'],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> 8081e528 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
         ];
     }
     public function messages() {
         return [
-<<<<<<< HEAD
             'name.required' => __('windsurf.fields.name_required'),
             'location.required' => __('windsurf.fields.location_required'),
-=======
-<<<<<<< HEAD
-            'name.required' => __('windsurf.fields.name_required'),
-            'location.required' => __('windsurf.fields.location_required'),
-=======
-<<<<<<< HEAD
-            'email.required' => __('user.fields.email_required'),
-            'password.min' => __('user.fields.password_min'),
-=======
-            'name.required' => __('windsurf.fields.name_required'),
-            'location.required' => __('windsurf.fields.location_required'),
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> 8081e528 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
         ];
     }
     public function attributes() {
         return [
-<<<<<<< HEAD
             'name' => __('windsurf.fields.name'),
             'location' => __('windsurf.fields.location'),
-=======
-<<<<<<< HEAD
-            'name' => __('windsurf.fields.name'),
-            'location' => __('windsurf.fields.location'),
-=======
-<<<<<<< HEAD
-            'email' => __('user.fields.email'),
-            'password' => __('user.fields.password'),
-=======
-            'name' => __('windsurf.fields.name'),
-            'location' => __('windsurf.fields.location'),
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> 8081e528 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
         ];
     }
 }
@@ -120,21 +51,6 @@ class StoreSpotRequest extends BaseFormRequest {
 
 ### File di traduzione
 ```php
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-// resources/lang/it/user.php
-return [
-    'fields' => [
-        'email' => 'Email',
-        'password' => 'Password',
-        'email_required' => 'L\'email è obbligatoria',
-        'password_min' => 'La password deve essere di almeno 8 caratteri',
-=======
->>>>>>> 8081e528 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 // resources/lang/it/windsurf.php
 return [
     'fields' => [
@@ -142,13 +58,6 @@ return [
         'location' => 'Località',
         'name_required' => 'Il nome è obbligatorio',
         'location_required' => 'La località è obbligatoria',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> 8081e528 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
     ],
 ];
 ```
@@ -178,22 +87,3 @@ R: Usa la sintassi `campo.*.sotto_campo` e placeholder `:position`.
 - [Laravel Validation Docs](mdc:https:/laravel.com/docs/validation)
 - [Laravel Lang](mdc:https:/github.com/Laravel-Lang/lang)
 - [README validazione](mdc:../../Modules/Lang/docs/validation-messages.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-alwaysApply: false
----
-# Best Practices Messaggi di Validazione Laravel
-
-- Personalizza sempre i nomi dei campi con `attributes()` usando la funzione `__()`
-- Per array di campi, usa `campo.*.sotto_campo` e placeholder `:position`
-- Scrivi messaggi custom con `messages()` per i casi complessi
-- Centralizza i messaggi comuni in `validation.php`, override solo se necessario
-- Aggiorna la documentazione in `/Modules/Lang/docs/validation-messages.md`
-- Usa sempre i file del pacchetto Laravel-Lang/lang per copertura multilingua
-- Documenta ogni eccezione o regola custom
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 8081e528 (fix case cursor and windsurf)
->>>>>>> aurmich/dev

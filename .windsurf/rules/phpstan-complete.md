@@ -30,14 +30,7 @@ cd /var/www/html/<nome progetto>/laravel
 ### ❌ DON'T - MAI usare artisan per phpstan
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 # MAI fare questo
 php artisan test:phpstan
 ```
@@ -240,14 +233,7 @@ public function getLabel(): string
 ### Utilizzo di Baseline
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 # Generare baseline
 ./vendor/bin/phpstan analyze --generate-baseline
 

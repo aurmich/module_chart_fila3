@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
----
-description:
-globs:
-alwaysApply: true
----
-=======
->>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
-=======
->>>>>>> aurmich/dev
 ---
 description:
 globs:
@@ -22,10 +8,6 @@ alwaysApply: true
 ## Overview
 Best practices for using Filament in modular Laravel projects, specifically tailored for the  project.
 
-<<<<<<< HEAD
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
 # Filament Best Practices for
 
 ## Overview
@@ -37,20 +19,6 @@ Best practices for using Filament in modular Laravel projects, specifically tail
 Best practices for using Filament in modular Laravel projects, specifically tailored for the  project.
 
 # Filament Best Practices for
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-## Overview
-Best practices for using Filament in modular Laravel projects, specifically tailored for the  project.
-
-# Filament Best Practices for
-=======
-# Filament Best Practices for 
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
->>>>>>> aurmich/dev
 
 ## Overview
 Best practices for using Filament in modular Laravel projects, specifically tailored for the  project.
@@ -128,54 +96,18 @@ class DoctorResource extends XotBaseResource
     protected static ?string $navigationIcon = 'heroicon-o-user';  // NOT NECESSARY
     protected static ?string $navigationGroup = 'Gestione';        // NOT NECESSARY
     protected static ?int $navigationSort = 1;                     // NOT NECESSARY
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
->>>>>>> aurmich/dev
     // ❌ ERROR: Use getListTableColumns() instead of getTableColumns()
     public static function getTableColumns(): array                // NOT NECESSARY
     {
         return [...];
     }
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
->>>>>>> aurmich/dev
     public static function getRelations(): array                   // NOT NECESSARY
     {
         return [...];
     }
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
->>>>>>> aurmich/dev
     public static function getPages(): array                       // NOT NECESSARY if using only index, create, edit
     {
         return [
@@ -195,19 +127,7 @@ class DoctorResource extends XotBaseResource
             // Module-specific schema
         ]);
     }
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 54f4fa16 (.)
-=======
-
->>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
->>>>>>> aurmich/dev
     // Implement getPages() ONLY if adding custom pages beyond index, create, edit
     public static function getPages(): array
     {
@@ -246,23 +166,12 @@ class MyResource extends XotBaseResource
 - If translations are not applied, check the structure of the lang files and the absence of hardcoded `->label()`.
 
 ## Related Rules
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
->>>>>>> aurmich/dev
 - [Filament Resources](mdc:filament-resources.mdc)
 - [Filament Components](mdc:filament-components.mdc)
 - [Translation System](mdc:translation-system-rules.mdc)
 - [Filament Docs](mdc:https:/filamentphp.com/docs)
 - [Best practices for reusable modules](mdc:module-documentation-neutrality.mdc)
 - [Model inheritance best practices](mdc:model-inheritance-best-practices.mdc)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 
 # Regola: Path View Widget Filament e Localizzazione
 
@@ -476,244 +385,3 @@ class DoctorStudio extends BasePivot
 - Tutto il calendario lavora su appointments, distinguendo tra disponibilità e appuntamenti tramite i campi esistenti.
 - Motivazione: un solo punto di verità, DRY, KISS, nessun lock-in, serenità del codice, nessuna duplicazione, massima compatibilità con FullCalendar e Filament.
 - Checklist: vedi docs/appointment-management.md, docs/calendar/doctor-availability-management.md, docs/fullcalendar_parental_widgets.md, docs/calendar/widgets/doctor-calendar-widget.md
-<<<<<<< HEAD
-=======
-=======
-- [Filament Resources](filament-resources.mdc)
-- [Filament Components](filament-components.mdc)
-- [Translation System](translation-system-rules.mdc)
-- [Filament Docs](https://filamentphp.com/docs)
-- [Best practices for reusable modules](module-documentation-neutrality.mdc)
-- [Model inheritance best practices](model-inheritance-best-practices.mdc)
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
-=======
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
-
-# Regola: Path View Widget Filament e Localizzazione
-
-- Tutti i widget Filament devono avere la view in `modulo::filament.widgets.nome-widget`.
-- Non usare mai `modulo::widgets.nome-widget` o altri path non standard.
-- Non usare mai ->label(), ->placeholder(), __() o trans() nei form component (TextInput, Select, ecc).
-- La localizzazione è centralizzata tramite LangServiceProvider e i file di lingua del modulo.
-- Le chiavi dei campi devono corrispondere a quelle dei file di lingua.
-
-## Esempio corretto
-```php
-protected static string $view = '<nome progetto>::filament.widgets.find-doctor-and-appointment';
-TextInput::make('location')->required()
-```
-
-## Esempio errato
-```php
-protected static string $view = '<nome progetto>::widgets.find-doctor-and-appointment';
-TextInput::make('location')->label(__('modulo::campo.label'))
-```
-
-**Motivazione:** coerenza, manutenzione, override, policy di qualità.
-
-> Aggiornare sempre anche i file .mdc in .cursor/rules
-
-# Regola: Ereditarietà e Trait nei Widget Filament
-
-- Non replicare mai trait, interfacce o logica già presenti nella classe base che si estende (es. XotBaseWidget).
-- Studiare sempre la classe base prima di estendere.
-- Se serve estendere il comportamento, usare override o metodi custom, non duplicare trait/interfacce.
-
-## Esempio errato
-```php
-class FindDoctorAndAppointmentWidget extends XotBaseWidget implements HasForms
-{
-    use InteractsWithForms; // ERRORE: già presente in XotBaseWidget
-}
-```
-
-## Esempio corretto
-```php
-class FindDoctorAndAppointmentWidget extends XotBaseWidget
-{
-    // NIENTE implements HasForms, NIENTE use InteractsWithForms
-}
-```
-
-**Motivazione:** DRY, KISS, manutenzione, coerenza, evitare conflitti e ridondanza.
-
-> Aggiornare sempre anche i file .mdc in .cursor/rules
-<<<<<<< HEAD
->>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
-=======
-
-> [2025-05-28] Policy aggiornata: tutte le pagine di form devono includere direttamente solo widget Filament modulari, mai form custom. Motivazione: coerenza architetturale, manutenzione, DRY, troubleshooting semplificato.
-
-## Livewire e Filament: inclusione obbligatoria di @livewireStyles e @livewireScripts
-Per evitare errori 419 Page Expired nei widget Filament/Livewire, il layout DEVE includere @livewireStyles subito dopo @filamentStyles e @livewireScripts subito dopo @filamentScripts. Vedi anche docs/widget-deleting-method-error.md.
-
-## View widget: solo wrapper per $this->form
-Le view dei widget Filament devono essere solo wrapper per $this->form. Niente markup custom, niente logica Livewire/AlpineJS, niente gestione CSRF manuale. Tutta la logica va nel widget PHP o nel tema. Motivazione: coerenza, DRY, KISS, troubleshooting semplificato. Collegamento a docs/xot.md.
-
-## Vietato ->label() e ->placeholder() nei form component
-Tutti i form component devono usare solo chiavi campo, senza label o placeholder inline. Le etichette e i placeholder sono gestiti tramite i file di traduzione del modulo e il LangServiceProvider. Motivazione: coerenza, centralizzazione, override semplice, policy di qualità. Collegamento a docs/xot.md.
-<<<<<<< HEAD
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
-=======
-
-## Regola: trait solo se riusabili
-I trait vanno creati solo se riutilizzati in più classi. Vietato creare trait per una sola classe. Se la logica è specifica di un solo modello, va implementata direttamente nella classe. Motivazione: semplicità, KISS, manutenibilità, evitare complessità inutile. Collegamento a docs/xot.md.
-
-## Policy di naming enum
-Il nome della classe enum DEVE sempre corrispondere al nome del file (es. UserTypeEnum.php -> enum UserTypeEnum: string ...). Aggiornare sempre sia il nome del file che il nome della classe. Motivazione: coerenza, autoloading, refactoring semplice. Collegamento a docs/xot.md e docs/enum-naming-policy.md.
-<<<<<<< HEAD
->>>>>>> f5caa3ff (add ai rules)
-=======
-
-## Regola Obbligatoria: getTableColumns nelle ListRecords
-
-- Tutte le pagine che estendono XotBaseListRecords DEVONO implementare il metodo getTableColumns().
-- Il metodo deve restituire un array associativo con chiavi stringa (nome campo).
-- Le colonne vanno ricavate dal modello e dalla migrazione, senza inventare campi.
-- Le etichette sono gestite solo tramite i file di traduzione del modulo (mai ->label()).
-- Motivazione: coerenza, automazione, DRY, compatibilità con TableLayoutEnum e HasXotTable.
-- Aggiornare sempre anche questa regola nei file .mdc locali.
-
-## Regola: Relazioni molti-a-molti tra entità
-
-- Se due entità possono essere collegate in modo simmetrico (es. uno studio ha molti dottori e un dottore può lavorare in più studi), usare sempre belongsToManyX.
-- La tabella pivot deve essere gestita in modo centralizzato e documentata.
-- Motivazione filosofica: massima flessibilità, nessun lock-in, simmetria tra le entità.
-- Politica: ogni modulo può estendere la relazione senza vincoli.
-- Zen: la relazione è fluida, ogni entità può collaborare con più controparti.
-- I RelationManager devono usare la relazione belongsToManyX e la chiave corretta.
-- Aggiornare sempre la documentazione locale e globale.
-
-## Regola: Vietato duplicare trait già presenti nella catena di ereditarietà
-
-- I trait (es. SoftDeletes, BelongsToTenant, RelationX, HasFactory, Notifiable, ecc.) vanno dichiarati **solo** nella classe base o dove servono per la prima volta.
-- Vietato ridichiararli nei modelli figli (es. Doctor, Patient) se già presenti in User/BaseUser.
-- Motivazione filosofica: centralizzazione, DRY, nessun lock-in, serenità del codice.
-- Politica: evitare conflitti, warning, override indesiderati.
-- Zen: un solo punto di verità, codice pulito e manutenibile.
-
-**Esempio corretto:**
-```php
-class Doctor extends User {
-    use HasParent;
-    // NIENTE altri trait già ereditati
-}
-```
-
-**Esempio errato:**
-```php
-class Doctor extends User {
-    use HasParent, SoftDeletes, BelongsToTenant, RelationX; // ❌ ERRORE
-}
-```
-
-Aggiornare sempre la documentazione locale e globale se si modifica la catena di ereditarietà.
-
-## Regola: Modello pivot custom per relazioni molti-a-molti con dati aggiuntivi
-
-- Se una relazione molti-a-molti richiede dati aggiuntivi (es. orari, flag, policy), usare sempre un modello pivot custom (es. DoctorStudio).
-- La tabella pivot deve avere chiave primaria composta e campi aggiuntivi documentati.
-- Motivazione filosofica: la relazione è un'entità a sé, non solo un legame.
-- Politica: audit trail, policy multi-tenant, massima estendibilità.
-- Zen: la relazione è fluida, ma tracciabile e arricchita di significato.
-- Aggiornare sempre la documentazione locale e globale se si aggiungono/modificano campi o logiche nella tabella pivot.
-
-**Nota importante:**
-La logica di `belongsToManyX` centralizza automaticamente la gestione del modello pivot, dei campi extra e delle policy multi-tenant. **Non va mai** aggiunto chaining come `->using()`, `->withPivot()`, `->withTimestamps()`: è tutto gestito dal trait.
-
-**Motivazione:** DRY, nessun lock-in, un solo punto di verità, coerenza con la filosofia Xot.
-
-**Esempio:**
-```php
-public function studios(): BelongsToMany
-{
-    return $this->belongsToManyX(Studio::class);
-}
-```
-
-## Regola: Chiavi esterne nelle tabelle pivot
-
-- Usare sempre `$table->foreignIdFor(Modello::class)` per le chiavi esterne nelle tabelle pivot (es. doctor_id, studio_id).
-- Non usare mai `$table->uuid()` o `$table->integer()` manuale: si perde type safety, coerenza e integrazione con Eloquent.
-- Motivazione: coerenza, type safety, DRY, migliore integrazione con Eloquent, nessun lock-in.
-- Filosofia: un solo punto di verità, nessuna duplicazione, rispetto della struttura modulare.
-- Politica: audit trail, policy multi-tenant, massima estendibilità.
-- Zen: serenità del codice, nessun errore di mapping, refactoring sicuro.
-
-**Esempio corretto:**
-```php
-$table->foreignIdFor(\Modules\<nome progetto>\Models\Doctor::class)
-    ->comment('ID del dottore (riferimento alla tabella users)');
-$table->foreignIdFor(\Modules\<nome progetto>\Models\Studio::class)
-    ->comment('ID dello studio (riferimento alla tabella studios)');
-```
-
-## Regola: Niente metodo down() nelle migration che estendono XotBaseMigration
-
-- Chi estende `XotBaseMigration` **non deve mai** dichiarare il metodo `down()`.
-- La gestione del rollback è centralizzata e automatica nella base Xot, per evitare duplicazione, errori e conflitti.
-- Motivazione: DRY, coerenza, nessun lock-in, manutenzione semplificata.
-- Filosofia: un solo punto di verità, nessuna duplicazione, serenità del codice.
-- Politica: rollback sicuro, refactoring semplice, policy multi-tenant.
-- Zen: codice pulito, nessun errore di override.
-
-**Esempio corretto:**
-```php
-return new class() extends XotBaseMigration {
-    public function up(): void
-    {
-        $this->tableCreate(function (Blueprint $table): void {
-            // ...
-        });
-    }
-    // NIENTE metodo down()
-};
-```
-
-## Regola: Timestamp e soft delete nelle migration XotBaseMigration
-
-- Per aggiungere timestamp e soft delete, usare **solo** `$this->updateTimestamps($table, true)` dentro il blocco `tableUpdate`.
-- Non usare mai `$table->timestamps()` direttamente: si rischia di perdere coerenza, duplicare logica e rompere la policy di centralizzazione Xot.
-- Motivazione: DRY, coerenza, nessun lock-in, manutenzione semplificata.
-- Filosofia: un solo punto di verità, nessuna duplicazione, serenità del codice.
-- Politica: gestione centralizzata, refactoring semplice, policy multi-tenant.
-- Zen: codice pulito, nessun errore di override.
-
-**Esempio corretto:**
-```php
-$this->tableUpdate(function (Blueprint $table): void {
-    $this->updateTimestamps($table, true);
-});
-```
-
-## Regola: Pivot custom devono estendere BasePivot e niente protected $table
-
-- I pivot custom (es. DoctorStudio) devono **sempre** estendere BasePivot.
-- Non dichiarare mai `protected $table`: la gestione della tabella è centralizzata e automatica secondo la filosofia Xot.
-- Motivazione: type safety, DRY, coerenza, nessun lock-in, serenità del codice.
-- Filosofia: un solo punto di verità, nessuna duplicazione, rispetto della struttura modulare.
-- Politica: gestione centralizzata, refactoring semplice, policy multi-tenant.
-- Zen: codice pulito, nessun errore di mapping o override.
-
-**Esempio corretto:**
-```php
-class DoctorStudio extends BasePivot
-{
-    // NIENTE protected $table
-    // ...
-}
-```
-<<<<<<< HEAD
->>>>>>> 2bcfd382 (fix Address)
-=======
-
-## [AGGIORNAMENTO 2024-06-XX] - Disponibilità solo su appointments
-- Le disponibilità dei dottori vanno gestite solo tramite la tabella appointments (con patient_id null o type AVAILABILITY).
-- Vietato creare tabelle o modelli separati (es. doctor_availabilities) per le disponibilità.
-- Tutto il calendario lavora su appointments, distinguendo tra disponibilità e appuntamenti tramite i campi esistenti.
-- Motivazione: un solo punto di verità, DRY, KISS, nessun lock-in, serenità del codice, nessuna duplicazione, massima compatibilità con FullCalendar e Filament.
-- Checklist: vedi docs/appointment-management.md, docs/calendar/doctor-availability-management.md, docs/fullcalendar_parental_widgets.md, docs/calendar/widgets/doctor-calendar-widget.md
->>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
->>>>>>> aurmich/dev

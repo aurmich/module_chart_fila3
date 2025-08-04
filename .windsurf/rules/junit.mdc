@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: model_decision
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 description: Comprehensive guidelines and best practices for writing effective, maintainable, and performant JUnit tests in Java projects. This rule file covers code organization, patterns, performance, security, testing strategies, common pitfalls, and tooling.
 globs: *Test.java
 ---

@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: model_decision
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 description: Enforces best practices for GitLab CI/CD configurations, promoting efficient, maintainable, and secure pipelines. This rule covers aspects from code organization to security and testing strategies.
 globs: .gitlab-ci.yml
 ---

@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: model_decision
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 description: This rule file provides comprehensive best practices for using Pylint to ensure high-quality, maintainable, and secure Python code. It covers code organization, common patterns, performance, security, testing, and tooling.
 globs: *.py
 ---

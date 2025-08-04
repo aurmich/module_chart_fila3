@@ -3,20 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
-<<<<<<< HEAD
 # Regole Icone SVG Custom (<nome progetto>, windsurf)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Regole Icone SVG Custom (<nome progetto>, windsurf)
-=======
-# Regole Icone SVG Custom (SaluteOra, windsurf)
->>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
-=======
-# Regole Icone SVG Custom (<nome progetto>, windsurf)
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 
 ## Regole fondamentali
 - Tutte le icone SVG devono essere stile outline, ispirate a Heroicons
@@ -43,18 +30,4 @@ alwaysApply: false
 ```
 
 ## Collegamenti
-<<<<<<< HEAD
 - [<nome progetto>/docs/icone.mdc](../../laravel/Modules/<nome progetto>/docs/icone.mdc)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [<nome progetto>/docs/icone.mdc](../../laravel/Modules/<nome progetto>/docs/icone.mdc)
-=======
->>>>>>> 2bcfd382 (fix Address)
-=======
-- [SaluteOra/docs/icone.mdc](../../laravel/Modules/SaluteOra/docs/icone.mdc)
->>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
-=======
-- [<nome progetto>/docs/icone.mdc](../../laravel/Modules/<nome progetto>/docs/icone.mdc)
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev

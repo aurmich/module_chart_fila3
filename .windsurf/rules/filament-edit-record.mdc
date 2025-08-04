@@ -3,13 +3,6 @@ description:
 globs:
 alwaysApply: false
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 7274ba81 (✨ (vscode): add new recommended extensions for Laravel development to improve developer experience)
->>>>>>> aurmich/dev
 # Regole per l'Utilizzo di XotBaseEditRecord
 
 ## When
@@ -53,11 +46,3 @@ class EditYourRecord extends XotBasePage // ERRORE: Usa XotBaseEditRecord
 - Estendere XotBasePage invece di XotBaseEditRecord
 - Non implementare i metodi richiesti
 - Modificare il livello di accesso dei metodi ereditati
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
->>>>>>> 7274ba81 (✨ (vscode): add new recommended extensions for Laravel development to improve developer experience)
->>>>>>> aurmich/dev

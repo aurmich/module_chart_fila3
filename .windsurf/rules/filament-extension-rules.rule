@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
----
-trigger: manual
-description:
-globs:
-----------------------------|----------------------------|
-=======
->>>>>>> aurmich/dev
 # Regole di Estensione delle Classi Filament
 
 ## Regola Fondamentale
@@ -18,10 +8,6 @@ globs:
 
 | ❌ Classe Filament (NON USARE) | ✅ Classe XotBase (DA USARE) |
 |-------------------------------|----------------------------|
-<<<<<<< HEAD
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 | `\Filament\Pages\Page` | `\Modules\Xot\Filament\Pages\XotBasePage` |
 | `\Filament\Resources\Resource` | `\Modules\Xot\Filament\Resources\XotBaseResource` |
 | `\Filament\Resources\Pages\CreateRecord` | `\Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord` |
@@ -52,12 +38,4 @@ class SendSMSPage extends XotBasePage
 ```
 
 ## Riferimenti
-<<<<<<< HEAD
 - [Modules/Notify/docs/FILAMENT_EXTENSION_RULES.md](file:///var/www/html//laravel/Modules/Notify/docs/FILAMENT_EXTENSION_RULES.md)
-=======
-<<<<<<< HEAD
-- [Modules/Notify/docs/FILAMENT_EXTENSION_RULES.md](file:///var/www/html/<nome progetto>/laravel/Modules/Notify/docs/FILAMENT_EXTENSION_RULES.md)
-=======
-- [Modules/Notify/docs/FILAMENT_EXTENSION_RULES.md](file:///var/www/html//laravel/Modules/Notify/docs/FILAMENT_EXTENSION_RULES.md)
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev

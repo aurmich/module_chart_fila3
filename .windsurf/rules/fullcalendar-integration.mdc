@@ -2,36 +2,12 @@
 
 ## Project Standards Compliance
 
-<<<<<<< HEAD
 This document outlines the standards and best practices for integrating FullCalendar with Filament in the <nome progetto> module, following the project's architecture and coding standards.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-This document outlines the standards and best practices for integrating FullCalendar with Filament in the <nome progetto> module, following the project's architecture and coding standards.
-=======
-This document outlines the standards and best practices for integrating FullCalendar with Filament in the SaluteOra module, following the project's architecture and coding standards.
->>>>>>> 2099645a (.)
-=======
-This document outlines the standards and best practices for integrating FullCalendar with Filament in the <nome progetto> module, following the project's architecture and coding standards.
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 
 ## Important Notes
 
 1. **Base Classes**: Always extend from XotBase classes
-<<<<<<< HEAD
 2. **Namespaces**: Use `Modules\<nome progetto>\Filament` for all Filament components
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-2. **Namespaces**: Use `Modules\<nome progetto>\Filament` for all Filament components
-=======
-2. **Namespaces**: Use `Modules\SaluteOra\Filament` for all Filament components
->>>>>>> 2099645a (.)
-=======
-2. **Namespaces**: Use `Modules\<nome progetto>\Filament` for all Filament components
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 3. **Translations**: Utilize language files instead of `->label()` methods
 4. **Documentation**: Keep documentation in sync with code changes
 5. **Testing**: Ensure all integrations are properly tested
@@ -43,19 +19,7 @@ This document outlines the standards and best practices for integrating FullCale
 All calendar widgets must extend `XotBaseFullCalendarWidget`:
 
 ```php
-<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Widgets;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-namespace Modules\<nome progetto>\Filament\Widgets;
-=======
-namespace Modules\SaluteOra\Filament\Widgets;
->>>>>>> 2099645a (.)
-=======
-namespace Modules\<nome progetto>\Filament\Widgets;
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 
 use Modules\Xot\Filament\Widgets\XotBaseFullCalendarWidget;
 
@@ -95,33 +59,11 @@ abstract class BaseCalendarWidget extends XotBaseFullCalendarWidget
     // Required properties
     protected static ?string $model = null;
     protected static string $heading = 'Calendar';
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 
     // Required methods
     abstract protected function getEventsQuery();
     abstract protected function mapToEvent($model): array;
 
-<<<<<<< HEAD
-=======
-=======
-    
-    // Required methods
-    abstract protected function getEventsQuery();
-    abstract protected function mapToEvent($model): array;
-    
->>>>>>> 2099645a (.)
-=======
-
-    // Required methods
-    abstract protected function getEventsQuery();
-    abstract protected function mapToEvent($model): array;
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
     // Recommended to override
     protected function getCalendarConfig(): array;
     protected function getHeaderActions(): array;
@@ -140,55 +82,19 @@ protected function mapToEvent($model): array
         'title' => $model->title,
         'start' => $model->start,
         'end' => $model->end,
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> 2099645a (.)
-=======
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
         // Recommended fields
         'allDay' => (bool) $model->all_day,
         'backgroundColor' => $model->color,
         'borderColor' => $model->color,
         'textColor' => $this->getContrastColor($model->color),
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> 2099645a (.)
-=======
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
         // Extended properties
         'extendedProps' => [
             'description' => $model->description,
             // Add other model attributes as needed
         ],
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> 2099645a (.)
-=======
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
         // URLs
         'url' => route('filament.resources.appointments.edit', $model),
     ];
@@ -204,19 +110,7 @@ protected function mapToEvent($model): array
 protected function getEventsQuery()
 {
     $doctor = Filament::auth()->user()->doctor;
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 2099645a (.)
-=======
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
     return parent::getEventsQuery()
         ->where('doctor_id', $doctor->id)
         ->where('clinic_id', Filament::getTenant()?->id)
@@ -274,19 +168,7 @@ use Illuminate\Support\Facades\Cache;
 public function fetchEvents(array $fetchInfo): array
 {
     $cacheKey = 'calendar-events-' . Filament::getTenant()?->id . '-' . md5(json_encode($fetchInfo));
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 2099645a (.)
-=======
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
     return Cache::remember($cacheKey, now()->addHour(), function () use ($fetchInfo) {
         return parent::fetchEvents($fetchInfo);
     });
@@ -365,19 +247,7 @@ public function fetchEvents(array $fetchInfo): array
     if (!Gate::allows('viewAny', Appointment::class)) {
         return [];
     }
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 2099645a (.)
-=======
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
     return parent::fetchEvents($fetchInfo);
 }
 ```
@@ -395,33 +265,11 @@ public function onEventDrop($eventId, $eventData): void
         'start' => 'required|date',
         'end' => 'required|date|after:start',
     ]);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 
     if ($validator->fails()) {
         throw new \Exception('Invalid event data');
     }
 
-<<<<<<< HEAD
-=======
-=======
-    
-    if ($validator->fails()) {
-        throw new \Exception('Invalid event data');
-    }
-    
->>>>>>> 2099645a (.)
-=======
-
-    if ($validator->fails()) {
-        throw new \Exception('Invalid event data');
-    }
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
     // Process the update
 }
 ```
@@ -436,33 +284,11 @@ public function test_doctor_can_view_own_appointments()
     $doctor = User::factory()->doctor()->create();
     $clinic = Clinic::factory()->create();
     $doctor->clinics()->attach($clinic);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 
     $appointment = Appointment::factory()
         ->for($clinic)
         ->create(['doctor_id' => $doctor->id]);
 
-<<<<<<< HEAD
-=======
-=======
-    
-    $appointment = Appointment::factory()
-        ->for($clinic)
-        ->create(['doctor_id' => $doctor->id]);
-    
->>>>>>> 2099645a (.)
-=======
-
-    $appointment = Appointment::factory()
-        ->for($clinic)
-        ->create(['doctor_id' => $doctor->id]);
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
     $this->actingAs($doctor)
         ->get(route('filament.resources.appointments.index'))
         ->assertOk()

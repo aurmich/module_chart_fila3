@@ -1,34 +1,10 @@
 ---
-<<<<<<< HEAD
 description: Regole complete Windsurf per Laraxot <nome progetto>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-description: Regole complete Windsurf per Laraxot <nome progetto>
-=======
-description: Regole complete Windsurf per Laraxot PTVX
->>>>>>> d23ba493 (add calendar)
-=======
-description: Regole complete Windsurf per Laraxot <nome progetto>
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 globs: ["**/*.php"]
 alwaysApply: true
 ---
 
-<<<<<<< HEAD
 # Regole Windsurf per Laraxot <nome progetto> (Giugno 2025)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Regole Windsurf per Laraxot <nome progetto> (Giugno 2025)
-=======
-# Regole Windsurf per Laraxot PTVX (Giugno 2025)
->>>>>>> d23ba493 (add calendar)
-=======
-# Regole Windsurf per Laraxot <nome progetto> (Giugno 2025)
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 
 ## Modelli e ORM
 
@@ -38,19 +14,7 @@ alwaysApply: true
 - **Esempio corretto**:
   ```php
   namespace Modules\IndennitaCondizioniLavoro\Models;
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> d23ba493 (add calendar)
-=======
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
   class CondizioniLavoro extends BaseModel
   {
       // Implementazione modello
@@ -59,30 +23,10 @@ alwaysApply: true
 - **Anti-pattern**:
   ```php
   namespace Modules\IndennitaCondizioniLavoro\Models;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 
   use Illuminate\Database\Eloquent\Model;
   // oppure use Modules\Xot\Models\XotBaseModel;
 
-<<<<<<< HEAD
-=======
-=======
-  
-  use Illuminate\Database\Eloquent\Model;
-  // oppure use Modules\Xot\Models\XotBaseModel;
-  
->>>>>>> d23ba493 (add calendar)
-=======
-
-  use Illuminate\Database\Eloquent\Model;
-  // oppure use Modules\Xot\Models\XotBaseModel;
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
   class CondizioniLavoro extends Model // oppure XotBaseModel
   {
       // Implementazione modello
@@ -195,19 +139,7 @@ return new class extends XotBaseMigration {
                 $table->timestamps();
             });
         }
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> d23ba493 (add calendar)
-=======
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
         // Aggiunta colonna se non esiste
         if (! $this->hasColumn('performance_organizzativa', 'valutatore_id')) {
             $this->tableUpdate('performance_organizzativa', function (Blueprint $table) {
@@ -215,19 +147,7 @@ return new class extends XotBaseMigration {
             });
         }
     }
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> d23ba493 (add calendar)
-=======
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
     // Non implementare mai il metodo down
 };
 ```
@@ -300,19 +220,7 @@ return new class extends XotBaseMigration {
 ## PHPStan
 
 ### Esecuzione
-<<<<<<< HEAD
 - **Directory**: Sempre da `/var/www/html/<nome progetto>/laravel`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Directory**: Sempre da `/var/www/html/<nome progetto>/laravel`
-=======
-- **Directory**: Sempre da `/var/www/html/ptvx/laravel`
->>>>>>> d23ba493 (add calendar)
-=======
-- **Directory**: Sempre da `/var/www/html/<nome progetto>/laravel`
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 - **Comando**: `./vendor/bin/phpstan analyze [target] --level=[1-9]`
 - **Livello minimo**: 9
 - **Memoria**: `--memory-limit=2G` per moduli grandi
@@ -334,19 +242,7 @@ return new class extends XotBaseMigration {
 
 ### Struttura
 - **Moduli**: Documentazione in `Modules/<NomeModulo>/docs/`
-<<<<<<< HEAD
 - **Root**: Documentazione globale in `/var/www/html/<nome progetto>/docs/`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Root**: Documentazione globale in `/var/www/html/<nome progetto>/docs/`
-=======
-- **Root**: Documentazione globale in `/var/www/html/ptvx/docs/`
->>>>>>> d23ba493 (add calendar)
-=======
-- **Root**: Documentazione globale in `/var/www/html/<nome progetto>/docs/`
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 - **Collegamenti**: Mantenere collegamenti bidirezionali
 
 ### Standard di Qualità

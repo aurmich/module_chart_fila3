@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: model_decision
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 description: This rule provides comprehensive best practices for developing secure, maintainable, and performant applications using the Pyramid web framework for Python. It covers code structure, security, testing, and deployment considerations.
 globs: *.py
 ---

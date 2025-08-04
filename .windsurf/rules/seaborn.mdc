@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: model_decision
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 description: This rule provides best practices for coding standards in Seaborn, emphasizing clear, reproducible code, optimal performance, and secure data handling within AI and machine learning data science development.
 globs: *.py
 ---

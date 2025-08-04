@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: model_decision
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 description: Comprehensive best practices and coding standards for Python projects using the nose2 testing framework. Covers code organization, common patterns, performance, security, testing, and tooling.
 globs: *test*.py
 ---

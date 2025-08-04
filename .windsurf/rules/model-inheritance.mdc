@@ -1,19 +1,7 @@
 ---
-<<<<<<< HEAD
 description:
 globs:
 alwaysApply: false
-=======
-<<<<<<< HEAD
-trigger: manual
-description:
-globs:
-=======
-description:
-globs:
-alwaysApply: false
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 ---
 # Ereditarietà Modelli: STI e Parental
 
@@ -38,22 +26,8 @@ Schema::table('users', function ($table) {
 - [ ] Documentazione aggiornata in docs
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-- [Patient/SINGLE_TABLE_INHERITANCE.md](../../laravel/Modules/Patient/docs/SINGLE_TABLE_INHERITANCE.md)
-- [Xot/single-table-inheritance.md](../../laravel/Modules/Xot/docs/single-table-inheritance.md)
-- [model-inheritance-patterns.md](../../docs/model-inheritance-patterns.md)
-- [README centrale](../../docs/README.md)
-- [Patient/README](../../laravel/Modules/Patient/docs/README.md)
-=======
->>>>>>> aurmich/dev
 - [Patient/SINGLE_TABLE_INHERITANCE.md](mdc:../../laravel/Modules/Patient/docs/SINGLE_TABLE_INHERITANCE.md)
 - [Xot/single-table-inheritance.md](mdc:../../laravel/Modules/Xot/docs/single-table-inheritance.md)
 - [model-inheritance-patterns.md](mdc:../../docs/model-inheritance-patterns.md)
 - [README centrale](mdc:../../docs/README.md)
 - [Patient/README](mdc:../../laravel/Modules/Patient/docs/README.md)
-<<<<<<< HEAD
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev

@@ -1,34 +1,10 @@
 ---
-<<<<<<< HEAD
 description: Regole per l'implementazione e l'utilizzo del componente FullCalendar di Saade per Filament in Laraxot <nome progetto>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-description: Regole per l'implementazione e l'utilizzo del componente FullCalendar di Saade per Filament in Laraxot <nome progetto>
-=======
-description: Regole per l'implementazione e l'utilizzo del componente FullCalendar di Saade per Filament in Laraxot PTVX
->>>>>>> d23ba493 (add calendar)
-=======
-description: Regole per l'implementazione e l'utilizzo del componente FullCalendar di Saade per Filament in Laraxot <nome progetto>
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 globs: ["**/Filament/Widgets/*Calendar*.php", "**/Models/Evento.php"]
 alwaysApply: true
 ---
 
-<<<<<<< HEAD
 # Regole per il Componente FullCalendar in Laraxot <nome progetto>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Regole per il Componente FullCalendar in Laraxot <nome progetto>
-=======
-# Regole per il Componente FullCalendar in Laraxot PTVX
->>>>>>> d23ba493 (add calendar)
-=======
-# Regole per il Componente FullCalendar in Laraxot <nome progetto>
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 
 ## Architettura
 
@@ -75,19 +51,7 @@ class CalendarioEventiWidget extends BaseCalendarWidget
      * @var class-string<\Illuminate\Database\Eloquent\Model>
      */
     public string $model = Evento::class;
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> d23ba493 (add calendar)
-=======
-
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
     // Implementazione specifica
 }
 ```
@@ -306,19 +270,7 @@ Il metodo `fetchEvents` **DEVE**:
  * Recupera gli eventi da visualizzare nel calendario.
  *
  * @param array<string, mixed> $fetchInfo
-<<<<<<< HEAD
  *
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
- *
-=======
- * 
->>>>>>> d23ba493 (add calendar)
-=======
- *
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
  * @return array<int, array<string, mixed>>
  */
 public function fetchEvents(array $fetchInfo): array
@@ -464,16 +416,4 @@ class PtvServiceProvider extends ServiceProvider
 - [Regole Migrazione](../rules/migration_rules.mdc)
 - [Regole PHPStan](../rules/phpstan_rules.mdc)
 
-<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-*Ultimo aggiornamento: giugno 2025*
-=======
-*Ultimo aggiornamento: giugno 2025*
->>>>>>> d23ba493 (add calendar)
-=======
-*Ultimo aggiornamento: giugno 2025*
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev

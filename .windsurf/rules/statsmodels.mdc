@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: model_decision
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 description: A comprehensive guide to best practices for using the statsmodels library in Python, covering code organization, performance, testing, and common pitfalls. These guidelines promote maintainable, reliable, and efficient statsmodels code.
 globs: *.py
 ---

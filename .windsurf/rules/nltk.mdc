@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: model_decision
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 description: Provides comprehensive guidance on best practices for coding standards, performance, security, and testing in NLTK projects. This rule helps developers write clean, maintainable, and efficient NLP code using NLTK.
 globs: *.py
 ---

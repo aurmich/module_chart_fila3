@@ -3,28 +3,10 @@ description:
 globs:
 alwaysApply: false
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 # Regola: Widget Filament (XotBase) - Label, Placeholder, Path View
 
 - Non usare MAI ->label(), ->placeholder(), né stringhe tradotte direttamente nei componenti Filament.
 - Tutte le label, placeholder, titoli e descrizioni sono risolte tramite i file di traduzione del modulo (es: Modules/<nome progetto>/lang/it/widgets.php).
-<<<<<<< HEAD
-=======
-=======
-# Regola: Widget Filament (XotBase) - Label, Placeholder, Path View
-
-- Non usare MAI ->label(), ->placeholder(), né stringhe tradotte direttamente nei componenti Filament.
-<<<<<<< HEAD
-- Tutte le label, placeholder, titoli e descrizioni sono risolte tramite i file di traduzione del modulo (es: Modules/SaluteOra/lang/it/widgets.php).
->>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
-=======
-- Tutte le label, placeholder, titoli e descrizioni sono risolte tramite i file di traduzione del modulo (es: Modules/<nome progetto>/lang/it/widgets.php).
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 - Chi estende XotBaseWidget, XotBaseResource, XotBasePage deve affidarsi solo alle chiavi di traduzione.
 - Tutte le view dei widget Filament devono essere referenziate come 'modulo::filament.widgets.nome-widget'.
 - La struttura delle cartelle deve essere sempre resources/views/filament/widgets/.
@@ -32,46 +14,13 @@ alwaysApply: false
 
 **Esempio corretto:**
 ```php
-<<<<<<< HEAD
 protected static string $view = '<nome progetto>::filament.widgets.find-doctor-and-appointment';
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-protected static string $view = '<nome progetto>::filament.widgets.find-doctor-and-appointment';
-=======
-protected static string $view = 'saluteora::filament.widgets.find-doctor-and-appointment';
->>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
-=======
-protected static string $view = '<nome progetto>::filament.widgets.find-doctor-and-appointment';
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
->>>>>>> aurmich/dev
 Forms\Components\TextInput::make('location');
 ```
 **Esempio sbagliato:**
 ```php
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 protected static string $view = '<nome progetto>::widgets.find-doctor-and-appointment';
 Forms\Components\TextInput::make('location')->label(__('<nome progetto>::widgets.find_doctor.location_label'));
 ```
 
 Vedi anche: modules/xot/docs/filament_widget_regole.md
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
-=======
-protected static string $view = 'saluteora::widgets.find-doctor-and-appointment';
-Forms\Components\TextInput::make('location')->label(__('saluteora::widgets.find_doctor.location_label'));
-=======
-protected static string $view = '<nome progetto>::widgets.find-doctor-and-appointment';
-Forms\Components\TextInput::make('location')->label(__('<nome progetto>::widgets.find_doctor.location_label'));
->>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
-```
-
-Vedi anche: modules/xot/docs/filament_widget_regole.md
->>>>>>> 832cff2a (🐛 (GeoJsonModel, Province, Region): fix incorrect paths and keys in GeoJsonModel and related classes to ensure proper data loading and access)
->>>>>>> aurmich/dev

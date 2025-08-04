@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: model_decision
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 description: Enforces PostgreSQL coding standards, best practices, and performance optimization techniques to ensure maintainable, efficient, and secure database interactions. This rule covers code formatting, data integrity, security, and performance considerations.
 globs: *.sql,*.plpgsql,*.c,*.h
 ---

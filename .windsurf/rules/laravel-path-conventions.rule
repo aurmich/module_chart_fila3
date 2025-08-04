@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
----
-trigger: manual
-description:
-globs:
--------------|---------------|-----------------|
-=======
->>>>>>> aurmich/dev
 # Convenzioni dei Path in Laravel
 
 ## Regole Fondamentali per i Path di Cartelle
@@ -18,10 +8,6 @@ In Laravel, i nomi delle cartelle principali (come definite nella struttura stan
 
 | Nome Cartella  | Caso Corretto | Caso Errato     |
 |----------------|---------------|-----------------|
-<<<<<<< HEAD
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 | `app`          | lowercase     | `App`           |
 | `bootstrap`    | lowercase     | `Bootstrap`     |
 | `config`       | lowercase     | `Config`        |
@@ -38,29 +24,13 @@ In Laravel, i nomi delle cartelle principali (come definite nella struttura stan
 Le viste in Laravel devono essere collocate in:
 
 ```
-<<<<<<< HEAD
 /var/www/html//laravel/Modules/Notify/resources/views/
-=======
-<<<<<<< HEAD
-/var/www/html/<nome progetto>/laravel/Modules/Notify/resources/views/
-=======
-/var/www/html//laravel/Modules/Notify/resources/views/
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 ```
 
 **NON** in:
 
 ```
-<<<<<<< HEAD
 /var/www/html//laravel/Modules/Notify/Resources/views/
-=======
-<<<<<<< HEAD
-/var/www/html/<nome progetto>/laravel/Modules/Notify/Resources/views/
-=======
-/var/www/html//laravel/Modules/Notify/Resources/views/
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 ```
 
 ## Importanza
@@ -71,12 +41,4 @@ Le viste in Laravel devono essere collocate in:
 
 ## Riferimenti
 
-<<<<<<< HEAD
 - [Documentazione completa](/var/www/html//laravel/Modules/Notify/docs/LARAVEL_PATH_CONVENTIONS.md)
-=======
-<<<<<<< HEAD
-- [Documentazione completa](/var/www/html/<nome progetto>/laravel/Modules/Notify/docs/LARAVEL_PATH_CONVENTIONS.md)
-=======
-- [Documentazione completa](/var/www/html//laravel/Modules/Notify/docs/LARAVEL_PATH_CONVENTIONS.md)
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev

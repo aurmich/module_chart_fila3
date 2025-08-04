@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-trigger: model_decision
-=======
->>>>>>> 3b8e8240 (fix case cursor and windsurf)
->>>>>>> aurmich/dev
 description: This rule provides comprehensive guidelines for using the Guzzle HTTP client in PHP projects, covering code organization, common patterns, performance, security, testing, and tooling.
 globs: *.php
 ---

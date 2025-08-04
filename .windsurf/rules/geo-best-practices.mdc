@@ -3,13 +3,6 @@ description:
 globs:
 alwaysApply: false
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 7ee226dd (docs(geo-best-practices.mdc): add best practices for Geo module to ensure consistency and maintainability)
->>>>>>> aurmich/dev
 # Best Practices Modulo Geo
 
 ## 1. Fonte Dati
@@ -67,11 +60,3 @@ alwaysApply: false
 
 ---
 **Questa regola è vincolante e va applicata in tutti i moduli che utilizzano il modulo Geo.**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
-=======
->>>>>>> 7ee226dd (docs(geo-best-practices.mdc): add best practices for Geo module to ensure consistency and maintainability)
->>>>>>> aurmich/dev
