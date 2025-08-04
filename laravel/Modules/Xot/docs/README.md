@@ -3,6 +3,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
 # Modulo Xot - Documentazione
 
 ## 🚀 Panoramica
@@ -188,6 +191,7 @@ class MyWidget extends XotBaseWidget
 **Ultimo aggiornamento**: Dicembre 2024  
 **Versione**: 2.1.0  
 **Compatibilità**: Laravel 12+, PHP 8.3+  
+<<<<<<< HEAD
 **Status**: 🟢 **Production Ready** - Tutti i loop infiniti risolti 
 =======
 # Modulo Xot
@@ -1171,3 +1175,6 @@ docs/
 =======
 Altre sezioni...
 >>>>>>> d23ba493 (add calendar)
+=======
+**Status**: 🟢 **Production Ready** - Tutti i loop infiniti risolti 
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)

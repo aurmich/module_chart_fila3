@@ -397,8 +397,12 @@ abstract class XotBaseResource extends FilamentResource
 
     public static function getAttachmentsSchema(bool $multiple=true): array{
         $model = static::getModel();
+<<<<<<< HEAD
         $attachments = $model::$attachments;
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+        $attachments = property_exists($model, 'attachments') ? $model::$attachments : [];
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
         $uuid = Str::uuid()->toString();
         $schema = [];
         
@@ -465,10 +469,10 @@ abstract class XotBaseResource extends FilamentResource
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
     protected static function getStepByName(string $name): Forms\Components\Wizard\Step
     {
-        $schema=Str::of($name)->snake()->studly()->prepend('get')->append('Schema')->toString();
+        $schema = Str::of($name)->snake()->studly()->prepend('get')->append('Schema')->toString();
         
         return Forms\Components\Wizard\Step::make($name)
-            ->schema(static::$schema());
+            ->schema(static::{$schema}());
     }
 <<<<<<< HEAD
 =======

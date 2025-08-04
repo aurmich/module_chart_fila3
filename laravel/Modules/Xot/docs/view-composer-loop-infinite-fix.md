@@ -202,7 +202,10 @@ La **prevenzione** è superiore alla **cura**. Meglio controlli preventivi che d
 ### Pattern da Verificare
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
 =======
 >>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
 # Cerca altri composer che potrebbero avere problemi simili
@@ -231,6 +234,10 @@ grep -r "auth()->user()" Modules/*/View/Composers/
 **Impatto**: Sistema completamente non funzionale  
 **Tempo di risoluzione**: 15 minuti  
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+**Pattern**: View Composer Loop Prevention 
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
 =======
 **Pattern**: View Composer Loop Prevention 
 >>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)

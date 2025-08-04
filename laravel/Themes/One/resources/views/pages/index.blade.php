@@ -48,6 +48,7 @@ new class extends Component
 =======
     @volt('home')
     <div>
+<<<<<<< HEAD
         {{--  route('pages.view',['slug'=>'patient_register_complete'])  --}}
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -55,6 +56,9 @@ new class extends Component
 =======
         <x-page side="content" slug="home" :type="auth()->user()?->type?->value ?? 'patient'"/>
 >>>>>>> e577f0ca (feat: getDataDefault for fix livewire form data)
+=======
+        <x-page side="content" slug="home" :type="auth()->user()?->type?->value"/>
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
     </div>
     @endvolt
 >>>>>>> aurmich/dev

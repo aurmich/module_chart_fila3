@@ -251,6 +251,7 @@ class DoctorResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 =======
@@ -263,45 +264,9 @@ class DoctorResource extends XotBaseResource
         $attachments = Doctor::$attachments;
         $uuid = Str::uuid()->toString();
         $schema = [];
+=======
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
         
-        foreach ($attachments as $attachment) {
-            $schema[] = Forms\Components\FileUpload::make($attachment)
-                ->disk('local')
-                ->directory('documents/'.$attachment.'/'.$uuid)
-                //->downloadable()
-                //->openable()
-                ->acceptedFileTypes(['application/pdf', 'image/*'])
-                ->maxSize(5120)
-                ->required()
-                ->reorderable()
-                ->multiple()
-                ->preserveFilenames()
-                ->columnSpanFull()
-                ->afterStateUpdated(function ($state, Forms\Set $set) use ($attachment) {
-                    if (!$state) return;
-                    
-                    $sessionId = session()->getId();
-                    $sessionDir = "session-uploads/{$sessionId}";
-                    $sessionFiles = [];
-                    
-                    foreach ($state as $file) {
-                        if ($file instanceof \Livewire\Features\SupportFileUploads\TemporaryUploadedFile) {
-                            // Salva direttamente nella directory di sessione
-                            $fileName = time() . '_' . $file->getClientOriginalName();
-                            $sessionPath = $file->storeAs($sessionDir, $fileName, 'local');
-                            $sessionFiles[] = $sessionPath;
-                        } else {
-                            // È già un percorso salvato
-                            $sessionFiles[] = $file;
-                        }
-                    }
-                    
-                    $set($attachment, $sessionFiles);
-                })
-                ;
-        }
-        return $schema;
-    }
 
 >>>>>>> f3e4ec66 (.)
     /**
@@ -419,8 +384,7 @@ class DoctorResource extends XotBaseResource
         return Forms\Components\Wizard\Step::make('personal_info')
             ->icon('heroicon-o-user')
             ->schema([
-                'personal_section' => Forms\Components\Section::make()
-                    ->schema([
+                
                         'id' => Forms\Components\Hidden::make('id'),
                         'first_name' => Forms\Components\TextInput::make('first_name')
                             ->required()
@@ -454,13 +418,9 @@ class DoctorResource extends XotBaseResource
                                 
                                 return $rules;
                             }),
-                        ...self::getDocumentsSchema(),
+                        ...self::getAttachmentsSchema(false),
 
-                    ]),
-            ])->visible(function ($model,$record) {
-                return true;
-            //dddx([$model,$record]);
-            });
+            ]);
     }
 
     
@@ -477,41 +437,14 @@ class DoctorResource extends XotBaseResource
                 ->relationship('studio')  
                 ->schema(StudioResource::getFormSchema())
                 ])
-            ->visible(fn ($get) => $get('id')!==null)
+            //->visible(fn ($get) => $get('id')!==null)
             ;
     }
 
-    protected static function getProfessionalStep(): Forms\Components\Wizard\Step
-    {
-        // Non utilizzare $translationPrefix, ma direttamente il namespace di traduzione
-
-        return Forms\Components\Wizard\Step::make('professional')
-            ->icon('heroicon-o-academic-cap')
-            ->schema([
-                'registration_number' => Forms\Components\TextInput::make('registration_number')
-                    ->required()
-                    ->unique(ignoreRecord: true)
-                    ->placeholder(__('saluteora::doctor-resource.registration_number')),
-
-                'certifications' => Forms\Components\FileUpload::make('certifications')
-                    ->multiple()
-                    ->directory('doctors/certifications')
-                    ->acceptedFileTypes(['application/pdf'])
-                    ->maxSize(10240)
-                    ->downloadable()
-                    ->openable()
-                    ->reorderable()
-                    ->columnSpanFull()
-                    ->placeholder(__('saluteora::doctor-resource.certifications')),
-
-            ])
-            ->visible(fn ($get) => $get('id')!==null);
-    }
+   
 
     protected static function getAvailabilityStep(): Forms\Components\Wizard\Step
     {
-        // Non utilizzare $translationPrefix, ma direttamente il namespace di traduzione
-
         return Forms\Components\Wizard\Step::make('availability')
             ->icon('heroicon-o-calendar')
             ->schema([
@@ -522,6 +455,7 @@ class DoctorResource extends XotBaseResource
                     
             ])
 <<<<<<< HEAD
+<<<<<<< HEAD
             ->visible(fn () => request()->has('token') ||
                 (session()->has('doctor_registration_workflow_id') &&
                 DoctorRegistrationWorkflow::find(session('doctor_registration_workflow_id'))?->isModerationApproved()));
@@ -529,6 +463,10 @@ class DoctorResource extends XotBaseResource
 =======
             ->visible(fn ($get) => $get('id')!==null);
 >>>>>>> de1d4084 (✨ (DoctorResource.php, PatientResource.php, StudioResource.php): introduce new Studio resource and update Doctor resource to include studio relationship)
+=======
+            ->visible(fn ($get) => $get('id')!==null)
+            ;
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
     }
 
     public static function getPages(): array
@@ -540,6 +478,7 @@ class DoctorResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
    
 
@@ -582,6 +521,9 @@ class DoctorResource extends XotBaseResource
         abort(403, 'Link non valido o scaduto.');
 >>>>>>> 54f4fa16 (.)
     }
+=======
+   
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
 
     /**
      * @return array<class-string>

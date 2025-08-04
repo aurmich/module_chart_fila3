@@ -67,9 +67,13 @@ return array (
       'placeholder' => 'Studio Medico Dr. Rossi',
       'helper_text' => 'Nome completo e identificativo dello studio medico',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'name',
 =======
 >>>>>>> 0acdadac (🌐 (studio.php): update Italian localization file to improve structure and readability)
+=======
+      'description' => 'name',
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
     ),
     'address' => 
     array (
@@ -83,9 +87,13 @@ return array (
       'placeholder' => '+39 059 1234567',
       'helper_text' => 'Numero di telefono principale per contatti',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'phone',
 =======
 >>>>>>> 0acdadac (🌐 (studio.php): update Italian localization file to improve structure and readability)
+=======
+      'description' => 'phone',
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
     ),
     'email' => 
     array (
@@ -93,9 +101,13 @@ return array (
       'placeholder' => 'info@studiorossi.it',
       'helper_text' => 'Indirizzo email per comunicazioni ufficiali',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'email',
 =======
 >>>>>>> 0acdadac (🌐 (studio.php): update Italian localization file to improve structure and readability)
+=======
+      'description' => 'email',
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
     ),
     'website' => 
     array (
@@ -103,9 +115,13 @@ return array (
       'placeholder' => 'https://www.studiorossi.it',
       'helper_text' => 'URL del sito web ufficiale dello studio',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'website',
 =======
 >>>>>>> 0acdadac (🌐 (studio.php): update Italian localization file to improve structure and readability)
+=======
+      'description' => 'website',
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
     ),
     'registration_number' => 
     array (
@@ -113,9 +129,13 @@ return array (
       'placeholder' => 'RM-123456',
       'helper_text' => 'Numero di registrazione presso l\'Ordine dei Medici',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'registration_number',
 =======
 >>>>>>> 0acdadac (🌐 (studio.php): update Italian localization file to improve structure and readability)
+=======
+      'description' => 'registration_number',
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
     ),
     'vat_number' => 
     array (
@@ -123,9 +143,13 @@ return array (
       'placeholder' => 'IT01234567890',
       'helper_text' => 'Partita IVA dello studio medico',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'vat_number',
 =======
 >>>>>>> 0acdadac (🌐 (studio.php): update Italian localization file to improve structure and readability)
+=======
+      'description' => 'vat_number',
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
     ),
     'opening_hours' => 
     array (
@@ -209,6 +233,9 @@ return array (
       'label' => 'resetFilters',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
     'applyFilters' => 
     array (
       'label' => 'applyFilters',
@@ -217,6 +244,7 @@ return array (
     array (
       'label' => 'openFilters',
     ),
+<<<<<<< HEAD
     'delete' => 
     array (
       'label' => 'delete',
@@ -262,6 +290,8 @@ return array (
 >>>>>>> 3224efcd (- format files)
 =======
 >>>>>>> 8d44f10d (feat: studio trans , radio collection)
+=======
+>>>>>>> 53293856 (✨ (laravel): add infinite loop prevention rules and documentation for Sushi models)
   ),
   'actions' => 
   array (

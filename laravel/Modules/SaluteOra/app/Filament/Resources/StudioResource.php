@@ -398,7 +398,7 @@ class StudioResource extends XotBaseResource
 =======
             
             'address' => AddressField::make('address')
-                ->relationship('address'),
+               ->relationship('address'),
                 
             
             
