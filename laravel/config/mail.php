@@ -86,9 +86,13 @@ return [
                 'log',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'retry_after' => 60,
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+            'retry_after' => 60,
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         ],
 
         'roundrobin' => [
@@ -98,9 +102,13 @@ return [
                 'postmark',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'retry_after' => 60,
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+            'retry_after' => 60,
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         ],
 
     ],

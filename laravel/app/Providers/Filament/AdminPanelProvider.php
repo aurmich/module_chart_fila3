@@ -1,7 +1,8 @@
 <?php
 
-declare(strict_types=1);
+// declare(strict_types=1);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -46,17 +47,21 @@ namespace App\Providers\Filament;
 <<<<<<< HEAD
 =======
 namespace App\Providers\Filament;
+=======
+// namespace App\Providers\Filament;
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 
-use Modules\Xot\Providers\Filament\XotBaseMainPanelProvider;
-use Filament\Panel;
+// use Modules\Xot\Providers\Filament\XotBaseMainPanelProvider;
+// use Filament\Panel;
 
-class AdminPanelProvider extends XotBaseMainPanelProvider
-{
-    public function panel(Panel $panel): Panel
+// class AdminPanelProvider extends XotBaseMainPanelProvider
+// {
+//     public function panel(Panel $panel): Panel
 
 
-    {
+//     {
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
         return parent::panel($panel)
           ->default()
@@ -67,12 +72,15 @@ class AdminPanelProvider extends XotBaseMainPanelProvider
 >>>>>>> aurmich/dev
 }
 =======
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 //         return parent::panel($panel)
 //           ->default()
 //           ->login()
 //             ;
 //     }
 // }
+<<<<<<< HEAD
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 =======
          return parent::panel($panel)
@@ -85,3 +93,5 @@ class AdminPanelProvider extends XotBaseMainPanelProvider
 =======
 }
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)

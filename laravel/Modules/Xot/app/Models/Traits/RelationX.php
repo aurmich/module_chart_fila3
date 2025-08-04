@@ -48,6 +48,7 @@ trait RelationX
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
@@ -58,6 +59,9 @@ trait RelationX
 =======
 
 >>>>>>> 54f4fa16 (.)
+=======
+        
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         return $this->belongsToMany(
             related: $related,
             table: $table,

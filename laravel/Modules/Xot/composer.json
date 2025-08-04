@@ -23,6 +23,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "aaronfrancis/fast-paginate": "^2.0",
 =======
 >>>>>>> aurmich/dev
@@ -31,6 +32,9 @@
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+        "aaronfrancis/fast-paginate": "^2.0",
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         "calebporzio/sushi": "^2.5",
         "coolsam/panel-modules": "*",
         "doctrine/dbal": "*",
@@ -43,6 +47,7 @@
 <<<<<<< HEAD
         "filament/spatie-laravel-media-library-plugin": "^3.2",
         "filament/spatie-laravel-translatable-plugin": "^3.2",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -73,6 +78,8 @@
 >>>>>>> f3af6b23 (📝 (bugfix.txt): remove merge conflict markers and clean up documentation for clarity and readability)
         "aaronfrancis/fast-paginate":"*",
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         "guzzlehttp/guzzle": "*",
         "laravel/folio": "^1.1",
         "laravel/framework": "*",
@@ -87,6 +94,7 @@
 =======
         "livewire/livewire": "*",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
         "livewire/volt": "*",
@@ -94,6 +102,9 @@
 =======
         "livewire/livewire": "*",
 >>>>>>> 54f4fa16 (.)
+=======
+        "livewire/volt": "*",
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         "maatwebsite/excel": "^3.1",
         "nwidart/laravel-modules": "*",
         "predis/predis": "^2.2",
@@ -104,6 +115,7 @@
         "spatie/laravel-model-status": "*",
         "spatie/laravel-package-tools": "*",
         "spatie/laravel-permission": "*",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -133,14 +145,19 @@
         "thecodingmachine/safe": "^3.0",
 <<<<<<< HEAD
 =======
+=======
+        "spatie/laravel-queueable-action": "*",
+        "spatie/laravel-responsecache": "^7.6",
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         "spatie/laravel-schemaless-attributes": "^2.5",
         "spatie/laravel-sluggable": "^3.6",
-        "spatie/laravel-responsecache": "^7.6",
+        "spatie/laravel-tags": "*",
         "spipu/html2pdf": "^5.2",
-        "staudenmeir/laravel-adjacency-list": "^1.22",
         "staudenmeir/eloquent-has-many-deep": "*",
+        "staudenmeir/laravel-adjacency-list": "^1.22",
         "symfony/dom-crawler": "*",
         "thecodingmachine/safe": "^3.0",
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
         "spatie/laravel-tags": "*",
         "livewire/volt": "*",
@@ -153,6 +170,9 @@
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+        "tightenco/parental": "*"
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.14",

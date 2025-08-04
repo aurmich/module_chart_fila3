@@ -14,10 +14,14 @@
                 "Modules\\Cms\\Providers\\CmsServiceProvider",
                 "Modules\\Cms\\Providers\\Filament\\AdminPanelProvider",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "Modules\\Cms\\Providers\\FolioVoltServiceProvider"
 =======
                 "Modules\\Cms\\Providers\\Filament\\FrontPanelProvider"
 >>>>>>> 54f4fa16 (.)
+=======
+                "Modules\\Cms\\Providers\\FolioVoltServiceProvider"
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
             ],
             "aliases": {
 
@@ -39,6 +43,7 @@
     "require": {
 
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     "require_comment": {
@@ -65,6 +70,8 @@
         "spatie/laravel-ray": "^1.26"
     },
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
     "repositories": [
         {
             "type": "path",

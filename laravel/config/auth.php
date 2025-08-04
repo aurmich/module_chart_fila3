@@ -66,6 +66,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'model' => env('AUTH_MODEL', \Modules\SaluteOra\Models\User::class),
 =======
             'model' => Modules\SaluteOra\Models\User::class,
@@ -79,6 +80,9 @@ return [
 =======
             'model' => Modules\SaluteOra\Models\User::class,
 >>>>>>> 2099645a (.)
+=======
+            'model' => env('AUTH_MODEL', App\Models\User::class),
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         ],
 
         // 'users' => [
@@ -121,10 +125,14 @@ return [
     |--------------------------------------------------------------------------
     |
 <<<<<<< HEAD
+<<<<<<< HEAD
     | Here you may define the number of seconds before a password confirmation
 =======
     | Here you may define the amount of seconds before a password confirmation
 >>>>>>> 54f4fa16 (.)
+=======
+    | Here you may define the number of seconds before a password confirmation
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
     | window expires and users are asked to re-enter their password via the
     | confirmation screen. By default, the timeout lasts for three hours.
     |

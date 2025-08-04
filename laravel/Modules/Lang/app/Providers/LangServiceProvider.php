@@ -54,12 +54,18 @@ class LangServiceProvider extends XotBaseServiceProvider
 
         // Registra il service provider di laravel-localization
 <<<<<<< HEAD
+<<<<<<< HEAD
         // $this->app->register(LaravelLocalizationServiceProvider::class);
         // NOTA: Il LaravelLocalizationServiceProvider viene già registrato automaticamente
         // tramite package discovery di Laravel (vedere composer.json del package)
 =======
         $this->app->register(LaravelLocalizationServiceProvider::class);
 >>>>>>> 54f4fa16 (.)
+=======
+        // $this->app->register(LaravelLocalizationServiceProvider::class);
+        // NOTA: Il LaravelLocalizationServiceProvider viene già registrato automaticamente
+        // tramite package discovery di Laravel (vedere composer.json del package)
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 
         // Carica la configurazione di laravel-localization
         // $this->mergeConfigFrom(

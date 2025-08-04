@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
@@ -54,3 +55,5 @@ declare(strict_types=1);
 =======
 // Le rotte backend sono definite nei rispettivi moduli.
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)

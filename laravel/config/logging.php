@@ -99,6 +99,7 @@ return [
             'level' => env('LOG_LEVEL', 'debug'),
             'handler' => StreamHandler::class,
 <<<<<<< HEAD
+<<<<<<< HEAD
             'handler_with' => [
                 'stream' => 'php://stderr',
             ],
@@ -109,6 +110,12 @@ return [
                 'stream' => 'php://stderr',
             ],
 >>>>>>> 54f4fa16 (.)
+=======
+            'handler_with' => [
+                'stream' => 'php://stderr',
+            ],
+            'formatter' => env('LOG_STDERR_FORMATTER'),
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
             'processors' => [PsrLogMessageProcessor::class],
         ],
 

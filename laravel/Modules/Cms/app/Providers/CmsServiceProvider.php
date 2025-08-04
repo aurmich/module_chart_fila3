@@ -1,16 +1,20 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 /**
  * @see https://github.com/laravel/framework/discussions/49574
  */
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 declare(strict_types=1);
 
 namespace Modules\Cms\Providers;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
@@ -37,11 +41,15 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 use Modules\Xot\Services\LivewireService;
 use Nwidart\Modules\Facades\Module;
+=======
+use Illuminate\Support\Str;
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 use Webmozart\Assert\Assert;
+use Modules\Xot\Datas\XotData;
+use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\Facades\Config;
+use Modules\Xot\Providers\XotBaseServiceProvider;
 
-/**
- * Undocumented class.
- */
 class CmsServiceProvider extends XotBaseServiceProvider
 {
     public string $name = 'Cms';
@@ -52,12 +60,17 @@ class CmsServiceProvider extends XotBaseServiceProvider
 =======
 >>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
     protected string $module_dir = __DIR__;
+
     protected string $module_ns = __NAMESPACE__;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
     public function boot(): void
     {
         parent::boot();
@@ -67,6 +80,7 @@ class CmsServiceProvider extends XotBaseServiceProvider
         if ($this->xot->register_pub_theme) {
             $this->registerNamespaces('pub_theme');
 
+<<<<<<< HEAD
 <<<<<<< HEAD
             //$this->registerThemeConfig('pub_theme');
             //$this->registerThemeLivewireComponents();
@@ -97,27 +111,45 @@ class CmsServiceProvider extends XotBaseServiceProvider
                 $defaultLocale,
                 implode(', ', array_keys($supportedLocales))
             ));
+=======
+            //$this->registerThemeConfig('pub_theme');
+            //$this->registerThemeLivewireComponents();
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         }
+        
     }
 
+    /**
+     * Register the service provider.
+     */
     public function register(): void
     {
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         parent::register();
 
         $this->xot = XotData::make();
 
         // Verifica che la configurazione di LaravelLocalization sia caricata
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         // NOTA: La configurazione è già gestita dal modulo Lang
         // if (!config()->has('laravellocalization.supportedLocales')) {
         //     $this->mergeConfigFrom(__DIR__.'/../config/laravellocalization.php', 'laravellocalization');
         // }
+<<<<<<< HEAD
 =======
         if (!config()->has('laravellocalization.supportedLocales')) {
             $this->mergeConfigFrom(__DIR__.'/../config/laravellocalization.php', 'laravellocalization');
         }
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 
         if ($this->xot->register_pub_theme) {
             Assert::isArray($paths = config('view.paths'));
@@ -126,6 +158,7 @@ class CmsServiceProvider extends XotBaseServiceProvider
             Config::set('view.paths', $paths);
             Config::set('livewire.view_path', $theme_path.'/livewire');
             Config::set('livewire.class_namespace', 'Themes\\'.$this->xot->pub_theme.'\Http\Livewire');
+<<<<<<< HEAD
 <<<<<<< HEAD
             //$this->registerFolio();
         }
@@ -136,17 +169,16 @@ class CmsServiceProvider extends XotBaseServiceProvider
 
 =======
             $this->registerFolio();
+=======
+            //$this->registerFolio();
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         }
+
+        
     }
 
-    public function registerFolio(): void
-    {
-        $middleware = TenantService::config('middleware');
-        if (! is_array($middleware)) {
-            $middleware = [];
-        }
-        Assert::isArray($base_middleware = Arr::get($middleware, 'base', []));
 
+<<<<<<< HEAD
         //$base_middleware[]=\Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRoutes::class;
         $base_middleware[]=\Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect::class;
         $base_middleware[]=\Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter::class;
@@ -219,6 +251,8 @@ class CmsServiceProvider extends XotBaseServiceProvider
      * Undocumented function.
      */
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
     public function registerNamespaces(string $theme_type): void
     {
         $xot = $this->xot;
@@ -234,6 +268,7 @@ class CmsServiceProvider extends XotBaseServiceProvider
         
         app('view')->addNamespace($theme_type, $theme_dir);
         $this->loadTranslationsFrom($lang_dir, $theme_type);
+<<<<<<< HEAD
 
         $componentViewPath = app(\Modules\Xot\Actions\File\FixPathAction::class)->execute(base_path($resource_path.'/views/components'));
         
@@ -279,5 +314,11 @@ class CmsServiceProvider extends XotBaseServiceProvider
 
         // ---------------------
 >>>>>>> 54f4fa16 (.)
+=======
+
+        $componentViewPath = app(\Modules\Xot\Actions\File\FixPathAction::class)->execute(base_path($resource_path.'/views/components'));
+        
+        Blade::anonymousComponentPath($componentViewPath);
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
     }
 }

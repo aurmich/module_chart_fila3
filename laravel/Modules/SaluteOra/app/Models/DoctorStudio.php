@@ -26,6 +26,7 @@ use Parental\HasParent;
 >>>>>>> 15b0d65c (refactor(DoctorStudio.php): simplify DoctorStudio model by extending StudioUser and removing unnecessary properties and methods to enhance maintainability and clarity)
 use Modules\SaluteOra\Models\BasePivot;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Spatie\OpeningHours\OpeningHours;
 
 /**
  * Modello pivot per la relazione many-to-many tra Doctor e Studio.
@@ -107,6 +108,7 @@ class DoctorStudio extends StudioUser
     protected $fillable = [
         //'doctor_id',
         'id',
+<<<<<<< HEAD
 =======
  */
 class DoctorStudio extends StudioUser
@@ -136,6 +138,8 @@ class DoctorStudio extends StudioUser
     protected $fillable = [
         //'doctor_id',
 >>>>>>> 2bcfd382 (fix Address)
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         'user_id',
         'studio_id',
         'schedule',
@@ -156,13 +160,19 @@ class DoctorStudio extends StudioUser
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 
     public function getOpeningHours(): OpeningHours
     {
         $schedule = $this->schedule;
+<<<<<<< HEAD
         if(!$schedule){
             return OpeningHours::create([]);
         }
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         $days=[];
         foreach($schedule as $day=>$hours){
             $days[$day]=[];
@@ -173,6 +183,7 @@ class DoctorStudio extends StudioUser
                 $days[$day][]=$hours['afternoon_from'].'-'.$hours['afternoon_to'];
             }
         }
+<<<<<<< HEAD
 
 
         $days['exceptions'] = [
@@ -298,6 +309,11 @@ class DoctorStudio extends StudioUser
         }
         return $dates;
     }
+=======
+        
+        return OpeningHours::create($days);
+    }
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 }
 
 =======

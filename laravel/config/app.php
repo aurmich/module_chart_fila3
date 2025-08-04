@@ -79,6 +79,7 @@ return [
     */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     'locale' => env('APP_LOCALE', 'en'),
 
     'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
@@ -91,6 +92,13 @@ return [
 
     'faker_locale' => env('APP_FAKER_LOCALE', 'it_IT'),
 >>>>>>> 54f4fa16 (.)
+=======
+    'locale' => env('APP_LOCALE', 'en'),
+
+    'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
+
+    'faker_locale' => env('APP_FAKER_LOCALE', 'en_US'),
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 
     /*
     |--------------------------------------------------------------------------
@@ -134,6 +142,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ];
 =======
 ];
@@ -144,3 +153,6 @@ return [
 =======
 ];
 >>>>>>> 54f4fa16 (.)
+=======
+];
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)

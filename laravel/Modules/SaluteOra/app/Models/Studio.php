@@ -6,10 +6,14 @@ namespace Modules\SaluteOra\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 use Carbon\Carbon;
 use Spatie\Activitylog\LogOptions;
 use Modules\User\Models\BaseTenant;
 use Spatie\OpeningHours\OpeningHours;
+<<<<<<< HEAD
 use Filament\Models\Contracts\HasName;
 use Modules\SaluteOra\Models\BaseModel;
 use Modules\User\Models\Traits\IsTenant;
@@ -29,17 +33,19 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Spatie\Activitylog\LogOptions;
 use Modules\User\Models\BaseTenant;
 >>>>>>> 2bcfd382 (fix Address)
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 use Filament\Models\Contracts\HasName;
 use Modules\SaluteOra\Models\BaseModel;
 use Modules\User\Models\Traits\IsTenant;
 use Modules\Xot\Models\Traits\RelationX;
+use Illuminate\Database\Eloquent\Builder;
 use Modules\Geo\Models\Traits\HasAddress;
 use Modules\User\Contracts\TenantContract;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Builder;
 
 /**
 <<<<<<< HEAD
@@ -553,6 +559,9 @@ class Studio extends BaseTenant
         });
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 
     public function getEnabledDatesByMonth(string $month): array
     {
@@ -565,9 +574,21 @@ class Studio extends BaseTenant
         $dates=[];
         $doctors=$this->doctors()->get();
         foreach($doctors as $doctor){
+<<<<<<< HEAD
             //** @phpstan-ignore property.notFound */
             $tmp=$this->getDoctorEnabledDatesByMonth($doctor->id, $month);
             $dates=array_merge($dates, $tmp);
+=======
+            $pivot=DoctorStudio::where('studio_id',$this->id)->where('user_id',$doctor->id)->first();
+            $openingHours=$pivot->getOpeningHours();
+            for($i=1;$i<=31;$i++){
+                $date = Carbon::parse($month.'-'.$i);
+                $date1=$date->format('Y-m-d');
+                if($openingHours->isOpenOn($date1)){
+                    $dates[] = $date1;
+                }
+            }
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
             
         }
         return $dates;
@@ -598,6 +619,7 @@ class Studio extends BaseTenant
             }
         }
             */
+<<<<<<< HEAD
         //return $dates;
        
     }
@@ -626,4 +648,9 @@ class Studio extends BaseTenant
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 =======
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+        return $dates;
+       
+    }
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 }

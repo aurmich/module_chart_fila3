@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
@@ -15,8 +18,11 @@ class ExampleTest extends TestCase
         $this->assertTrue(true);
     }
 }
+<<<<<<< HEAD
 =======
 test('that true is true', function () {
     expect(true)->toBeTrue();
 });
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
