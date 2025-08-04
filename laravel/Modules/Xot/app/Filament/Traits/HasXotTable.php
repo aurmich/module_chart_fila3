@@ -251,16 +251,22 @@ trait HasXotTable
             ->heading($this->getTableHeading())
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 598d3378 (test)
             ->columns($this->layoutView->getTableColumns(
                 $this->getTableColumns(),
                 $this->getGridTableColumns()
             ))
+<<<<<<< HEAD
 =======
             ->columns($this->layoutView->getTableColumns())
 >>>>>>> aurmich/dev
 =======
             ->columns($this->layoutView->getTableColumns())
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 598d3378 (test)
             ->contentGrid($this->layoutView->getTableContentGrid())
             ->filters($this->getTableFilters())
             ->filtersLayout(FiltersLayout::AboveContent)

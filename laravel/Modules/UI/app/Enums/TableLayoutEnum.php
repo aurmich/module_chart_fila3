@@ -8,6 +8,7 @@ namespace Modules\UI\Enums;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Arr;
 use Webmozart\Assert\Assert;
 use Filament\Support\Contracts\HasIcon;
@@ -32,6 +33,13 @@ use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
 use Webmozart\Assert\Assert;
 >>>>>>> 54f4fa16 (.)
+=======
+use Illuminate\Support\Arr;
+use Webmozart\Assert\Assert;
+use Filament\Support\Contracts\HasIcon;
+use Filament\Support\Contracts\HasColor;
+use Filament\Support\Contracts\HasLabel;
+>>>>>>> 598d3378 (test)
 
 enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
 {
@@ -98,6 +106,7 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      /**
 =======
     /**
@@ -113,16 +122,20 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
 <<<<<<< HEAD
 =======
     /**
+=======
+     /**
+>>>>>>> 598d3378 (test)
      * Undocumented function.
      *
-     * @param array<\Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component> $listColumns
-     * @param array<\Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component> $gridColumns
      * @return array<\Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component>
      */
-    public function getTableColumns(array $listColumns, array $gridColumns): array
+    public function getTableColumns(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 598d3378 (test)
         $trace = debug_backtrace();
         /** @var ListRecords $caller */
         $caller = Arr::get($trace, '1.object');
@@ -134,6 +147,7 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
             throw new \Exception('method getTableColumns not found in ['.get_class($caller).']');
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         $columns = $this->isGridLayout()
@@ -173,6 +187,11 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
 =======
         $columns = $this->isGridLayout() ? $gridColumns : $listColumns;
 >>>>>>> 345f8677 (phpstan)
+=======
+        $columns = $this->isGridLayout()
+            ? $caller->getGridTableColumns()
+            : $caller->getTableColumns();
+>>>>>>> 598d3378 (test)
 
         Assert::isArray($columns);
 
