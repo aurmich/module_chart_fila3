@@ -4,6 +4,9 @@ globs:
 alwaysApply: false
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7274ba81 (✨ (vscode): add new recommended extensions for Laravel development to improve developer experience)
 # Regole per l'Utilizzo di XotBaseCreateRecord
 
 ## When
@@ -47,5 +50,8 @@ class CreateYourRecord extends XotBasePage // ERRORE: Usa XotBaseCreateRecord
 - Estendere XotBasePage invece di XotBaseCreateRecord
 - Non implementare i metodi richiesti
 - Modificare il livello di accesso dei metodi ereditati
+<<<<<<< HEAD
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> 7274ba81 (✨ (vscode): add new recommended extensions for Laravel development to improve developer experience)

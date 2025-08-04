@@ -12,6 +12,7 @@
         "damms005.devdb",
         "mohamedbenhida.laravel-intellisense",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "block.vscode-mcp-extension",
         "aurorabiz.blade-ui-kit",
         "laravel.vscode-laravel",
@@ -23,5 +24,11 @@
 =======
         "block.vscode-mcp-extension"
 >>>>>>> 54f4fa16 (.)
+=======
+        "block.vscode-mcp-extension",
+        "aurorabiz.blade-ui-kit",
+        "laravel.vscode-laravel",
+        "porifa.laravel-intelephense"
+>>>>>>> 7274ba81 (✨ (vscode): add new recommended extensions for Laravel development to improve developer experience)
     ]
 }

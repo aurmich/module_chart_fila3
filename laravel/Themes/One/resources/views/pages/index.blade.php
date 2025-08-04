@@ -37,6 +37,7 @@ new class extends Component
 <x-layouts.app>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  @volt('home')
     <div>
         <x-page side="content" slug="home" :type="auth()->user()?->type?->value"/>
@@ -51,8 +52,15 @@ new class extends Component
     @endvolt
 >>>>>>> aurmich/dev
 =======
+=======
+    @volt('home')
+>>>>>>> 7274ba81 (✨ (vscode): add new recommended extensions for Laravel development to improve developer experience)
     <div>
-       <x-page-content slug="home" />
+        <x-page side="content" slug="home" :type="auth()->user()?->type->value"/>
     </div>
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+    @endvolt
+>>>>>>> 7274ba81 (✨ (vscode): add new recommended extensions for Laravel development to improve developer experience)
 </x-layouts.app>

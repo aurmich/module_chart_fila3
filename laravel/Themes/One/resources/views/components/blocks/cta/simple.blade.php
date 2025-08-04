@@ -2,10 +2,14 @@
     'title' => '',
     'description' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'cta_text' => __('pub_theme::components.cta.simple.text'),
 =======
     'cta_text' => 'Scopri di più',
 >>>>>>> aurmich/dev
+=======
+    'cta_text' => 'Scopri di più',
+>>>>>>> 7274ba81 (✨ (vscode): add new recommended extensions for Laravel development to improve developer experience)
     'cta_link' => '#',
     'background_color' => 'bg-white',
     'text_color' => 'text-gray-900',

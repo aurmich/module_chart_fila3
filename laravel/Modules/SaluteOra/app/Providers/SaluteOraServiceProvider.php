@@ -57,13 +57,13 @@ class SaluteOraServiceProvider extends XotBaseServiceProvider
     public function boot(): void
     {
         parent::boot();
-        
+
         // Registra il panel Filament
         $this->app->register(AdminPanelProvider::class);
-        
-        
+
+
     }
-    
+
     /**
      * Registra gli stati per i modelli.
      */
@@ -89,6 +89,7 @@ class SaluteOraServiceProvider extends XotBaseServiceProvider
         FilamentIcon::register([
             'saluteora-doctor' => asset('modules/SaluteOra/resources/svg/doctor.svg'),
             'saluteora-patient' => asset('modules/SaluteOra/resources/svg/patient.svg'),
+            'saluteora-users' => asset('modules/SaluteOra/resources/svg/users.svg'),
         ]);
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     }

@@ -1,6 +1,7 @@
 @props([
     'title',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'stats' => [],
     'description' => null
 ])
@@ -41,6 +42,10 @@
 >>>>>>> aurmich/dev
 =======
     'stats' => []
+=======
+    'stats' => [],
+    'description' => null
+>>>>>>> 7274ba81 (✨ (vscode): add new recommended extensions for Laravel development to improve developer experience)
 ])
 
 <div class="bg-white py-24 sm:py-32">
@@ -48,7 +53,7 @@
 >>>>>>> 54f4fa16 (.)
         <div class="mx-auto max-w-2xl lg:text-center">
             <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{{ $title }}</h2>
-            @if(isset($description))
+            @if($description)
                 <p class="mt-6 text-lg leading-8 text-gray-600">{{ $description }}</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -69,6 +74,7 @@
             <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
                 @foreach($stats as $stat)
                     <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                         <dt class="text-base leading-7 text-gray-600">{{ $stat['label'] ?? '' }}</dt>
@@ -103,6 +109,11 @@
                         <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
                             {{ $stat['number'] }}
 >>>>>>> 54f4fa16 (.)
+=======
+                        <dt class="text-base leading-7 text-gray-600">{{ $stat['label'] ?? '' }}</dt>
+                        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                            {{ $stat['value'] ?? '0' }}
+>>>>>>> 7274ba81 (✨ (vscode): add new recommended extensions for Laravel development to improve developer experience)
                         </dd>
                     </div>
                 @endforeach
