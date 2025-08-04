@@ -1,10 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 
 return array (
 =======
 <?php return array (
 >>>>>>> 54f4fa16 (.)
+=======
+<?php
+
+return array (
+>>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
   'fields' => 
   array (
     'id' => 
@@ -61,6 +67,7 @@ return array (
     ),
   ),
 <<<<<<< HEAD
+<<<<<<< HEAD
   'navigation' => 
   array (
     'sort' => 20,
@@ -70,3 +77,10 @@ return array (
 =======
 );
 >>>>>>> 54f4fa16 (.)
+=======
+  'navigation' => 
+  array (
+    'sort' => 20,
+  ),
+);
+>>>>>>> 3b3eb49d (- aggiornato stile della landing page;)

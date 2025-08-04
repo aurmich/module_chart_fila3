@@ -318,6 +318,7 @@
 
     .fi-section-content {
 <<<<<<< HEAD
+<<<<<<< HEAD
         @apply bg-white px-4 py-6 sm:px-6;
     }
 <<<<<<< HEAD
@@ -357,5 +358,8 @@
 =======
         @apply px-4 py-6 sm:px-6;
 >>>>>>> 54f4fa16 (.)
+=======
+        @apply bg-[#E6EBF7] px-4 py-6 sm:px-6;
+>>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
     }
 }

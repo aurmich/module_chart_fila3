@@ -42,7 +42,7 @@
 @endphp
 
 <header {{ $attributes->merge([
-    'class' => 'bg-white dark:bg-gray-900 shadow',
+    'class' => 'bg-[#1A467F]',
     'id' => ($section['attributes']['id'] ?? ''),
     'x-data' => "{ mobileMenuOpen: false }"
 ]) }}>
@@ -55,14 +55,19 @@
             <div class="flex md:hidden">
                 <button type="button"
 <<<<<<< HEAD
+<<<<<<< HEAD
                     class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
 =======
                     class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
 >>>>>>> 54f4fa16 (.)
+=======
+                    class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
+>>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
                     @click="mobileMenuOpen = !mobileMenuOpen"
                     aria-expanded="false">
                     <span class="sr-only">Apri menu principale</span>
                     {{-- Hamburger Icon --}}
+<<<<<<< HEAD
 <<<<<<< HEAD
                     <svg x-show="!mobileMenuOpen" class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -76,6 +81,13 @@
                     {{-- Close Icon --}}
                     <svg x-show="mobileMenuOpen" class="h-6 w-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
 >>>>>>> 54f4fa16 (.)
+=======
+                    <svg x-show="!mobileMenuOpen" class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                    {{-- Close Icon --}}
+                    <svg x-show="mobileMenuOpen" class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+>>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
