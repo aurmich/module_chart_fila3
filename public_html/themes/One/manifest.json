@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "resources/css/app.css": {
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -146,6 +147,10 @@
 >>>>>>> 8acca8e8 (- continuo style pagina di registrazione;)
 =======
 >>>>>>> 31e6799c (rebase)
+=======
+  "resources/css/app.css": {
+    "file": "assets/app-DpVlLzWv.css",
+>>>>>>> aa548d83 (.)
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -155,6 +160,7 @@
     "src": "resources/js/app.js",
     "isEntry": true
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -186,3 +192,6 @@
 }
 >>>>>>> 1e6905a0 (add css)
 >>>>>>> 31e6799c (rebase)
+=======
+}
+>>>>>>> aa548d83 (.)
