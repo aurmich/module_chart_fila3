@@ -1,10 +1,29 @@
 {
+<<<<<<< HEAD
   "resources/css/app.css": {
 <<<<<<< HEAD
     "file": "assets/app-CizGm5hC.css",
 =======
     "file": "assets/app-Dph1A97d.css",
 >>>>>>> 8acca8e8 (- continuo style pagina di registrazione;)
+=======
+<<<<<<< HEAD
+    "resources/css/app.css": {
+        "file": "assets/app-Dph1A97d.css",
+        "src": "resources/css/app.css",
+        "isEntry": true
+    },
+    "resources/js/app.js": {
+        "file": "assets/app-C7gSxAp2.js",
+        "name": "app",
+        "src": "resources/js/app.js",
+        "isEntry": true
+    }
+}
+=======
+  "resources/css/app.css": {
+    "file": "assets/app-CEDafcW-.css",
+>>>>>>> 31e6799c (rebase)
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -14,4 +33,9 @@
     "src": "resources/js/app.js",
     "isEntry": true
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1e6905a0 (add css)
+>>>>>>> 31e6799c (rebase)
