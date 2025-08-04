@@ -450,10 +450,7 @@ EventData::make()
 
 ### .env Configuration Obbligatoria
 ```env
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # FullCalendar Scheduler License (opzionale)
 FULLCALENDAR_SCHEDULER_LICENSE_KEY=your-license-key-here
 
