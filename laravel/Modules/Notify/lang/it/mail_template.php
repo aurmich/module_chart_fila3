@@ -44,9 +44,13 @@ return array (
       'helper_text' => 'Classe PHP che gestisce l\'invio dell\'email',
       'placeholder' => 'es: App\\Mail\\WelcomeEmail',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'mailable',
 =======
 >>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
+=======
+      'description' => 'mailable',
+>>>>>>> 4047cb2d (✨ (mail_template.php, send_email.php): add descriptions and placeholders for mail template fields to enhance clarity for users)
     ),
     'subject' => 
     array (
@@ -143,9 +147,19 @@ return array (
 <<<<<<< HEAD
       'helper_text' => 'slug',
       'placeholder' => 'slug',
+<<<<<<< HEAD
 =======
       'helper_text' => 'slug',
 >>>>>>> 89a8313a (- update primary colors)
+=======
+    ),
+    'name' => 
+    array (
+      'description' => 'name',
+      'helper_text' => 'name',
+      'placeholder' => 'name',
+      'label' => 'name',
+>>>>>>> 4047cb2d (✨ (mail_template.php, send_email.php): add descriptions and placeholders for mail template fields to enhance clarity for users)
     ),
     'name' => 
     array (
