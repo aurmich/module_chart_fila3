@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Risoluzione Conflitti di Merge in Laraxot PTVX
 
@@ -361,52 +362,47 @@ b6f667c (.)
 =======
 # Risoluzione Conflitti Merge
 >>>>>>> d23ba493 (add calendar)
+=======
+# Risoluzione Conflitti di Merge 
+>>>>>>> d9d8610a (docs)
 
-## Introduzione
-Questo documento descrive i conflitti di merge risolti nel modulo Xot e le relative soluzioni adottate.
+## Problema
 
-## Conflitti Risolti
+Durante lo sviluppo del progetto SaluteOra, sono stati identificati diversi file con conflitti di merge non risolti. Questi conflitti erano indicati dalla presenza di marcatori  nel codice sorgente. I conflitti non risolti impedivano la corretta esecuzione del codice e causavano errori durante l'analisi statica con PHPStan.
 
-### 1. ExportXlsByCollection
-- **File**: `app/Actions/Export/ExportXlsByCollection.php`
-- **Problema**: Conflitto nella documentazione del metodo `writeRows()`
-- **Soluzione**: Mantenuta la versione più completa delle annotazioni PHPDoc
-- **Impatto**: Migliorata la compatibilità con PHPStan livello 10
-- **Documentazione**: [Dettagli](./actions/export/ExportXlsByCollection_conflict.md)
+I file principali con conflitti erano:
+- `Modules/Xot/app/Datas/MetatagData.php`
+- `Modules/Xot/app/Actions/Array/SaveJsonArrayAction.php`
+- `Modules/Xot/app/Actions/Panel/ApplyMetatagToPanelAction.php`
+- `Modules/Xot/app/Actions/Query/GetFieldnamesByTablenameAction.php`
+- `Modules/Xot/app/Actions/Export/ExportXlsStreamByLazyCollection.php`
+- `Modules/Media/app/Support/TemporaryUploadPathGenerator.php`
+- `Modules/Media/app/Actions/Video/ConvertVideoByMediaConvertAction.php`
+- `Modules/Media/app/Actions/Video/ConvertVideoByConvertDataAction.php`
+- `Modules/Media/app/Filament/Resources/HasMediaResource/RelationManagers/MediaRelationManager.php`
+- `Modules/Lang/app/Models/Post.php`
+- `Modules/Xot/app/Exceptions/Formatters/WebhookErrorFormatter.php`
 
-### 2. ExportXlsByView
-- **File**: `app/Actions/Export/ExportXlsByView.php`
-- **Problema**: Conflitto nella documentazione del metodo `execute()`
-- **Soluzione**: Mantenuta la versione più completa delle annotazioni PHPDoc
-- **Impatto**: Migliorata la compatibilità con PHPStan livello 10
-- **Documentazione**: [Dettagli](./actions/export/ExportXlsByView_conflict.md)
+## Analisi
 
-### 3. GetViewByClassAction
-- **File**: `app/Actions/View/GetViewByClassAction.php`
-- **Problema**: Conflitto nella conversione del nome della classe in nome della vista
-- **Soluzione**: Implementata la conversione esplicita con `strval()`
-- **Impatto**: Migliorata la robustezza del codice
-- **Documentazione**: [Dettagli](./actions/view/GetViewByClassAction_conflict.md)
+L'analisi dei file ha rivelato molteplici conflitti di merge non risolti, principalmente riguardanti:
 
-## Best Practices per la Risoluzione dei Conflitti
+1. Dichiarazioni di importazione (use statements)
+2. Definizione delle proprietà della classe
+3. Implementazione dei metodi
+4. Tipi di ritorno e annotazioni PHPDoc
+5. Gestione delle eccezioni
+6. Parametri dei metodi e loro tipizzazione
 
-1. **Documentazione**
-   - Mantenere sempre la documentazione più completa e aggiornata
-   - Assicurare la compatibilità con PHPStan livello 10
-   - Documentare le decisioni prese nella risoluzione
+I conflitti erano il risultato di un merge incompleto tra il branch `HEAD` e `origin/dev`, con alcune sezioni che presentavano conflitti annidati (conflitti all'interno di conflitti).
 
-2. **Codice**
-   - Preferire le soluzioni più robuste e type-safe
-   - Mantenere la coerenza con le convenzioni del progetto
-   - Evitare duplicazioni di codice
+### Tipologie di Conflitti Riscontrati
 
-3. **Testing**
-   - Verificare che le modifiche non introducano regressioni
-   - Assicurare la copertura dei test
-   - Validare con PHPStan livello 10
+#### 1. Conflitti nelle Dichiarazioni di Tipo
 
-## Collegamenti Correlati
+In `GetFieldnamesByTablenameAction.php`, c'erano conflitti relativi alla gestione dei tipi di parametri:
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ```php
 if (! $this->isValidConnection(is_string($connectionName) ? $connectionName : (string) $connectionName)) {
@@ -1128,6 +1124,8 @@ In `GetFieldnamesByTablenameAction.php`, c'erano conflitti relativi alla gestion
 - [Code Standards](./CODE-STANDARDS.md)
 >>>>>>> bead9c28 (fix case)
 =======
+=======
+>>>>>>> d9d8610a (docs)
 ```php
 if (! $this->isValidConnection(is_string($connectionName) ? $connectionName : (string) $connectionName)) {
     // ...
@@ -1206,9 +1204,12 @@ Durante la risoluzione dei conflitti, nel file `Modules/Xot/app/Filament/Resourc
 ## Conclusioni
 
 La risoluzione dei conflitti di merge ha ripristinato la corretta funzionalità delle classi nel modulo Xot, permettendo l'analisi statica con PHPStan e garantendo il corretto funzionamento dell'applicazione. Le soluzioni implementate hanno mantenuto la coerenza del codice e migliorato la robustezza delle classi interessate.
+<<<<<<< HEAD
 >>>>>>> 15cb84fb (fix collisions)
 =======
 - [PHPStan Level 10 Guide](./PHPSTAN_LIVELLO10_LINEE_GUIDA.md)
 - [Best Practices](./BEST-PRACTICES.md)
 - [Code Standards](./CODE-STANDARDS.md)
 >>>>>>> d23ba493 (add calendar)
+=======
+>>>>>>> d9d8610a (docs)
