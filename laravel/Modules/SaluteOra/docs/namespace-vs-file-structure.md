@@ -203,10 +203,7 @@ Prima di creare nuovi file o spostare file esistenti:
 Per verificare la struttura corretta:
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Verifica la struttura delle directory
 find laravel/Modules/SaluteOra -type f -name "*.php" | grep -v "app/"
 

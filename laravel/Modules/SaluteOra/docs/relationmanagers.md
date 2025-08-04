@@ -4,7 +4,6 @@
 
 I RelationManager sono componenti Filament che permettono di gestire le relazioni tra diverse entità del sistema direttamente dall'interfaccia di amministrazione. Questo documento descrive l'implementazione delle relazioni tra Studio e Doctor nel modulo SaluteOra.
 
-<<<<<<< HEAD
 ## Architettura Cross-Module
 
 ### Implementazioni Multiple
@@ -14,8 +13,6 @@ Le relazioni Doctor-Studio sono implementate in due moduli:
 
 > **Nota**: Per la documentazione completa del RelationManager di amministrazione, vedere [RelationManager SaluteMo](/var/www/html/base_saluteora/laravel/Modules/SaluteMo/docs/filament/relationmanagers.md)
 
-=======
->>>>>>> aurmich/dev
 ## Struttura dei Namespace
 
 Tutti i RelationManager devono seguire questa struttura di namespace:
@@ -105,7 +102,6 @@ public static function getRelations(): array
 4. Includere solo le azioni pertinenti nel contesto della relazione
 5. Assicurarsi che le autorizzazioni siano configurate correttamente
 
-<<<<<<< HEAD
 ## Documentazione Cross-Module
 
 ### Modulo SaluteMo
@@ -125,10 +121,3 @@ public static function getRelations(): array
 *Ultimo aggiornamento: Gennaio 2025*
 *Versione: 1.1*
 *Compatibilità: Laraxot SaluteOra, Filament 3.x*
-=======
-## Collegamenti ad Altri Documenti
-
-- [Filament Best Practices](/var/www/html/_bases/base_saluteora/laravel/Modules/SaluteOra/docs/filament_best_practices.md)
-- [Studio Model](/var/www/html/_bases/base_saluteora/laravel/Modules/SaluteOra/docs/models/studio.md)
-- [Doctor Model](/var/www/html/_bases/base_saluteora/laravel/Modules/SaluteOra/docs/models/doctor.md)
->>>>>>> aurmich/dev

@@ -578,8 +578,4 @@ Il componente può essere facilmente integrato con altre funzionalità del siste
 - [Documentazione ufficiale spatie/opening-hours](https://github.com/spatie/opening-hours)
 - [Articolo introduttivo di Freek Van der Herten](https://freek.dev/595-managing-opening-hours-with-php)
 - [Documentazione Filament Form Components](https://filamentphp.com/docs/3.x/forms/custom-fields)
-<<<<<<< HEAD
 - [Esempi di UI per selezione orari](https://tailwindui.com/components/application-ui/forms/form-layouts)
-=======
-- [Esempi di UI per selezione orari](https://tailwindui.com/components/application-ui/forms/form-layouts)
->>>>>>> aurmich/dev

@@ -43,7 +43,6 @@
 ## Best Practices
 
 1. **Casts e Attributes**:
-<<<<<<< HEAD
    - Usare sempre il metodo `casts()` invece della proprietà `$casts`
    - Documentare tutti i cast nel PHPDoc della classe
    
@@ -77,13 +76,6 @@
            'pregnancy_week' => 'integer',
        ];
    }
-=======
-   ```php
-   protected $casts = [
-       'email_verified_at' => 'datetime',
-       'password' => 'hashed',
-       'certifications' => 'array',
->>>>>>> aurmich/dev
    ];
 
    protected $attributes = [
