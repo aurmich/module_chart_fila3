@@ -49,6 +49,7 @@ new class extends Component
 <x-layouts.app>
     @volt('register.type')
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div >
         
         
@@ -91,6 +92,9 @@ new class extends Component
    
 =======
     <div class="min-h-screen bg-white pb-5">
+=======
+    <div class="min-h-screen bg-[#E6EBF7] pb-5">
+>>>>>>> 3ad9917a (- fix styles registration)
         <!-- Logo e intestazione -->
         <div class="text-center mb-8">
             <div class="flex justify-center mb-4">

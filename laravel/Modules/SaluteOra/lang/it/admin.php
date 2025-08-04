@@ -318,6 +318,13 @@ return array (
     array (
       'label' => 'toggleColumns',
     ),
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+    'reorderRecords' => 
+    array (
+      'label' => 'reorderRecords',
+    ),
+>>>>>>> 3ad9917a (- fix styles registration)
   ),
 );

@@ -154,6 +154,7 @@
 <div class="mx-56">mx 56</div>
 <div class="mx-60">mx 60</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="m-auto">mx auto</div>
 <div class="ring-[#FF5F7E]">ring pink</div>
 <div class="shadow-[0_10px_40px_rgba(0,0,0,0.2)]">shadow</div>
@@ -210,3 +211,7 @@
 =======
 </x-layouts.app>
 >>>>>>> aurmich/dev
+=======
+<div class="m-auto">mx 60</div>
+</x-layouts.app>
+>>>>>>> 3ad9917a (- fix styles registration)

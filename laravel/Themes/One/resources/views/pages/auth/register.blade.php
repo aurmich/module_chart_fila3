@@ -26,10 +26,14 @@ new class extends Component
     @volt('register')
     <!-- background-image: url('/img/background-filigrana-chiaro.png'); background-size: cover; background-position: center -->
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div class="p-5 m-auto">
 =======
     <div class="bg-[#E6EBF7] p-5">
 >>>>>>> aurmich/dev
+=======
+    <div class="bg-[#E6EBF7] p-5 m-auto">
+>>>>>>> 3ad9917a (- fix styles registration)
     <div class="register-container">
         <div class="mb-16">
             <!-- Logo e intestazione -->

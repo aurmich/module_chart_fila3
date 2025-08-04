@@ -206,7 +206,14 @@ return array (
     array (
       'label' => 'last_name',
     ),
+<<<<<<< HEAD
 >>>>>>> e577f0ca (feat: getDataDefault for fix livewire form data)
+=======
+    'first_name' => 
+    array (
+      'label' => 'first_name',
+    ),
+>>>>>>> 3ad9917a (- fix styles registration)
   ),
   'actions' => 
   array (
