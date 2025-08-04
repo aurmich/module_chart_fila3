@@ -11,10 +11,7 @@
 
 ### Comandi di Setup
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Installazione via composer
 composer require modules/gdpr
 
@@ -128,10 +125,7 @@ return [
 
 ### Views
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Pubblicazione views
 php artisan vendor:publish --tag=gdpr-views
 
@@ -149,10 +143,7 @@ resources/views/vendor/gdpr/
 
 ### Traduzioni
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Pubblicazione traduzioni
 php artisan vendor:publish --tag=gdpr-translations
 
@@ -166,10 +157,7 @@ resources/lang/vendor/gdpr/
 
 ### Assets
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Pubblicazione assets
 php artisan vendor:publish --tag=gdpr-assets
 
@@ -213,10 +201,7 @@ public/vendor/gdpr/
 - [Roadmap](./roadmap.md)
 - [Bottlenecks](./bottlenecks.md)
 - [Implementazione](./implementation.md) 
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 ## Collegamenti tra versioni di configuration.md
 * [configuration.md](../../../../docs/configuration.md)
 * [configuration.md](../../Xot/docs/configuration.md)
