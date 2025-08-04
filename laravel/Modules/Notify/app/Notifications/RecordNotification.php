@@ -25,10 +25,14 @@ class RecordNotification extends Notification
     protected Model $record;
     protected string $slug;
 <<<<<<< HEAD
+<<<<<<< HEAD
     public array $data=[];
     public array $attachments=[];
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+    public array $data=[];
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 
     public function __construct(Model $record, string $slug)
     {
@@ -82,6 +86,7 @@ class RecordNotification extends Notification
         
 =======
         $this->slug = $slug;
+
     }
 
     public function via($notifiable): array
@@ -96,29 +101,20 @@ class RecordNotification extends Notification
         if($notifiable->routeNotificationFor('sms')) {
             $channels[] = SmsChannel::class;
         }
+
         return $channels;
     }
 
     public function toMail($notifiable): SpatieEmail
     {
-
-        if (!MailTemplate::where('slug', $this->slug)->exists()) {
-            MailTemplate::create([
-                'mailable' => SpatieEmail::class,
-                'slug' => $this->slug,
-                'subject' => 'Benvenuto, {{ first_name }}',
-                'html_template' => '<p>Gentile {{ first_name }} {{ last_name }},</p><p>La tua registrazione  è in attesa di approvazione. Ti contatteremo presto.</p>',
-                'text_template' => 'Gentile {{ first_name }} {{ last_name }}, la tua registrazione  è in attesa di approvazione. Ti contatteremo presto.'
-            ]);
-        }
-        
         $email = new SpatieEmail($this->record, $this->slug);
-        
+        $email=$email->mergeData($this->data);
 
         // Importante: garantisci che ci sia sempre un destinatario
         if (method_exists($notifiable, 'routeNotificationFor')) {
             // Ottieni l'email dal notifiable
-            $email->to($notifiable->routeNotificationFor('mail'));
+            $to=$notifiable->routeNotificationFor('mail');
+            $email->to($to);
         }
 
 >>>>>>> 54f4fa16 (.)
@@ -189,12 +185,16 @@ class RecordNotification extends Notification
         return $smsData;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 
     public function mergeData(array $data): self
     {
         $this->data=array_merge($this->data,$data);
         return $this;
     }
+<<<<<<< HEAD
 
     public function addAttachments(array $attachments): self
     {
@@ -205,3 +205,6 @@ class RecordNotification extends Notification
 =======
 }
 >>>>>>> 54f4fa16 (.)
+=======
+}
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)

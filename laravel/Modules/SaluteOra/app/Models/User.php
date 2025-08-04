@@ -7,6 +7,7 @@ namespace Modules\SaluteOra\Models;
 
 use Modules\User\Models\BaseUser;
 use Spatie\MediaLibrary\HasMedia;
+<<<<<<< HEAD
 use Spatie\ModelStates\HasStates;
 use Spatie\Activitylog\LogOptions;
 use Illuminate\Support\Facades\Log;
@@ -236,11 +237,13 @@ class User extends BaseUser implements HasMedia,HasStatesContract
 
 >>>>>>> f4ba6a58 (✨ (User.php): add user state transition classes to manage user state changes)
 use Modules\User\Models\BaseUser;
+=======
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 use Spatie\ModelStates\HasStates;
 use Spatie\Activitylog\LogOptions;
 use Illuminate\Support\Facades\Log;
-use Spatie\Permission\Traits\HasRoles;
 
+use Spatie\Permission\Traits\HasRoles;
 use Modules\Gdpr\Models\Traits\HasGdpr;
 use Illuminate\Notifications\Notifiable;
 use Modules\SaluteOra\Enums\UserTypeEnum;
@@ -249,6 +252,7 @@ use Modules\SaluteOra\States\User\Pending;
 use Modules\SaluteOra\States\User\Inactive;
 use Modules\SaluteOra\States\User\Rejected;
 use Spatie\Activitylog\Traits\LogsActivity;
+use Spatie\MediaLibrary\InteractsWithMedia;
 use Modules\SaluteOra\States\User\Suspended;
 use Modules\SaluteOra\States\User\UserState;
 use Modules\SaluteOra\States\User\IntegrationRequested;
@@ -263,11 +267,12 @@ use Modules\SaluteOra\States\User\IntegrationRequested;
  * @see \Modules\SaluteOra\Models\Doctor
  * @see \Modules\SaluteOra\Models\Patient
  */
-class User extends BaseUser
+class User extends BaseUser implements HasMedia
 {
     use LogsActivity;
     use HasStates;
     use HasGdpr;
+    use InteractsWithMedia;
 
     /** @var string  */
     //protected $connection = 'user';
@@ -352,6 +357,7 @@ class User extends BaseUser
         'gender',
         'address',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'city',
         'phone',
         'lang',
@@ -363,6 +369,9 @@ class User extends BaseUser
         //'continuation_token',
         'certifications'
 =======
+=======
+        'city',
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
         'phone',
         'lang',
         'current_team_id',
@@ -372,7 +381,7 @@ class User extends BaseUser
 >>>>>>> adac82bd (rebase)
     ];
 
-    
+
 
 <<<<<<< HEAD
     /**

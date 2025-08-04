@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Widgets;
 
 use Filament\Forms\Form;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Filament\Widgets\Widget;
@@ -19,6 +20,9 @@ use Illuminate\Support\Facades\Log;
 =======
 >>>>>>> aurmich/dev
 =======
+=======
+use Illuminate\Support\Arr;
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 use Illuminate\Support\Str;
 use Filament\Widgets\Widget;
 use Modules\Xot\Datas\XotData;
@@ -172,7 +176,10 @@ class RegistrationWidget extends XotBaseWidget
         $this->resource = XotData::make()->getUserResourceClassByType($type);
         $this->model = $this->resource::getModel();
         $this->action=Str::of($this->model)->replace('\Models\\', '\Actions\\')->append('\RegisterAction')->toString();
-        $this->form->fill();
+        $obj=app($this->model);
+        $fields=array_merge($obj->getFillable(),$obj->getAppends());
+        $fieldsWithNulls = Arr::mapWithKeys($fields, fn($field) => [$field=>null]);
+        $this->form->fill($fieldsWithNulls);
     }
 
 
@@ -236,36 +243,7 @@ class RegistrationWidget extends XotBaseWidget
         $data = $this->form->getState();
         $user=app($this->action)->execute($data);
         return redirect()->route('pages.view',['slug'=>$this->type.'_register_complete']);
-        //route('pages.view',['slug'=>'patient_register_complete'])
-        /*
-        // Validazione dei dati
-        $this->validate();
 
-        // Creazione del dottore
-        $doctor = \Modules\SaluteOra\Models\Doctor::create([
-            'full_name' => $data['full_name'] ?? ($data['first_name'] . ' ' . $data['last_name']),
-            'email' => $data['email'] ?? '',
-            'phone' => $data['phone'] ?? '',
-            'certification' => $data['certification'] ?? null,
-            'state' => \Modules\SaluteOra\States\Pending::class, // Imposta lo stato iniziale
-        ]);
-
-        // Creazione del workflow di registrazione
-        $workflow = \Modules\SaluteOra\Models\DoctorRegistrationWorkflow::create([
-            'doctor_id' => $doctor->id,
-            'current_step' => 'personal_info_step',
-            'status' => \Modules\SaluteOra\Models\DoctorRegistrationWorkflow::STATUS_PENDING_MODERATION,
-            'started_at' => now(),
-            'last_interaction_at' => now(),
-            'session_id' => session()->getId(),
-        ]);
-
-        // Invio email di conferma
-        $this->sendConfirmationEmail($doctor);
-
-        // Reindirizzamento alla pagina di conferma
-        return redirect()->route('doctor.registration.confirmation');
-        */
     }
 
     /**

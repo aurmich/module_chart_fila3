@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 return [
     'fields' => [
         'change-state' => [
@@ -25,3 +26,28 @@ return [
         ],
     ],
 ];
+=======
+return array (
+  'fields' => 
+  array (
+    'change-state' => 
+    array (
+      'label' => 'change-state',
+    ),
+    'state' => 
+    array (
+      'label' => 'state',
+      'placeholder' => 'state',
+      'helper_text' => 'state',
+      'description' => 'state',
+    ),
+    'message' => 
+    array (
+      'label' => 'message',
+      'placeholder' => 'message',
+      'helper_text' => 'message',
+      'description' => 'message',
+    ),
+  ),
+);
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)

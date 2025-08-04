@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Parental\HasParent;
 use Spatie\Image\Enums\Fit;
 use Spatie\MediaLibrary\HasMedia;
@@ -18,6 +19,15 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Modules\SaluteOra\Models\User;
 use Parental\HasParent;
 >>>>>>> 54f4fa16 (.)
+=======
+use Parental\HasParent;
+use Spatie\MediaLibrary\HasMedia;
+use Modules\SaluteOra\Models\User;
+use Spatie\MediaLibrary\InteractsWithMedia;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use Spatie\Image\Enums\Fit;
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 
 /**
  * Class Patient
@@ -212,33 +222,53 @@ class Patient extends User implements HasMedia
 =======
  * @mixin \Eloquent
  */
-class Patient extends User
+class Patient extends User implements HasMedia
 {
     use HasParent;
-
-
+    use InteractsWithMedia;
 
     /**
      * @var array<int, string>
      */
     protected $fillable = [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'user_id',
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> adac82bd (rebase)
+=======
+        'first_name',
+        'last_name',
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
         'date_of_birth',
         'gender',
         'address',
         'phone',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'last_dental_visit',
         'dental_problems',
 
+=======
+        'last_dental_visit',
+        'dental_problems',
+
+    ];
+    protected $appends = [
+        //'health_card',
+        //'identity_document',
+        //'isee_certificate',
+        //'pregnancy_certificate',
+    ];
+
+    public static array $attachments = [
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
         'health_card',
         'identity_document',
         'isee_certificate',
         'pregnancy_certificate',
+<<<<<<< HEAD
         'country_code',
         'nationality',
         'years_in_italy',
@@ -248,6 +278,8 @@ class Patient extends User
 
         'fiscal_code',
 
+=======
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
     ];
     protected $appends = [
         //'health_card',
@@ -316,8 +348,12 @@ class Patient extends User
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
 <<<<<<< HEAD
+=======
+    /**
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
      * Registra le conversioni per i media
      */
     public function registerMediaConversions(?Media $media = null): void
@@ -326,6 +362,7 @@ class Patient extends User
         $this
             ->addMediaConversion('preview')
             ->fit(Fit::Contain, 300, 300)
+<<<<<<< HEAD
             //->nonQueued()
             ;
 
@@ -453,5 +490,85 @@ class Patient extends User
     }
 =======
 >>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
+=======
+            ->nonQueued();
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 
+        // Conversione per le immagini dei documenti
+        $this
+            ->addMediaConversion('document')
+            ->fit(Fit::Contain, 800, 800)
+            ->nonQueued();
+    }
+
+    /**
+     * Registra le collezioni di media
+     */
+    public function registerMediaCollections(): void
+    {
+        foreach (self::$attachments as $attachment) {
+            $this
+                ->addMediaCollection($attachment)
+                ->singleFile()
+                ->useDisk('local');
+        }
+    }
+
+        /**
+     * Verifica se un allegato specifico esiste
+     */
+    public function hasAttachment(string $type): bool
+    {
+        return $this->getFirstMedia($type) !== null;
+    }
+
+    /**
+     * Ottiene l'URL sicuro per visualizzare un allegato
+     */
+    public function getAttachmentUrl(string $type): ?string
+    {
+        $media = $this->getFirstMedia($type);
+        if (!$media) {
+            return null;
+        }
+
+        return route('patients.view-pdf', [
+            'patient' => $this->id,
+            'type' => $type,
+            'token' => encrypt([
+                'patient_id' => $this->id,
+                'type' => $type,
+                'user_id' => auth()->id(),
+                'expires_at' => now()->addHour()
+            ])
+        ]);
+    }
+
+    /**
+     * Conta il numero di allegati presenti
+     */
+    public function getAttachmentsCount(): int
+    {
+        $count = 0;
+        foreach (self::$attachments as $type) {
+            if ($this->hasAttachment($type)) {
+                $count++;
+            }
+        }
+        return $count;
+    }
+
+    /**
+     * Verifica se tutti gli allegati obbligatori sono presenti
+     */
+    public function hasRequiredAttachments(): bool
+    {
+        $required = ['health_card', 'identity_document'];
+        foreach ($required as $type) {
+            if (!$this->hasAttachment($type)) {
+                return false;
+            }
+        }
+        return true;
+    }
 }

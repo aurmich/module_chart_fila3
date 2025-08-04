@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 return array (
   'resource' => 
   array (
@@ -40,7 +43,10 @@ return array (
       'label' => 'Classe Mailable',
       'helper_text' => 'Classe PHP che gestisce l\'invio dell\'email',
       'placeholder' => 'es: App\\Mail\\WelcomeEmail',
+<<<<<<< HEAD
       'description' => 'mailable',
+=======
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
     ),
     'subject' => 
     array (
@@ -125,6 +131,7 @@ return array (
     array (
       'label' => 'layout',
     ),
+<<<<<<< HEAD
     'slug' => 
     array (
       'label' => 'slug',
@@ -173,6 +180,8 @@ return array (
     array (
       'label' => 'counter',
     ),
+=======
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
   ),
   'actions' => 
   array (
@@ -211,10 +220,13 @@ return array (
       'success_message' => 'Template importato con successo',
       'error_message' => 'Errore nell\'importazione del template',
     ),
+<<<<<<< HEAD
     'activeLocale' => 
     array (
       'label' => 'activeLocale',
     ),
+=======
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
   ),
   'messages' => 
   array (
@@ -240,6 +252,7 @@ return array (
     'label' => 'mail template.model',
   ),
 );
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
@@ -374,3 +387,5 @@ return [
     ],
 ];
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)

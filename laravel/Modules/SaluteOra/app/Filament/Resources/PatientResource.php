@@ -8,6 +8,9 @@ use Filament\Forms;
 use Filament\Tables;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 use Filament\Forms\Get;
 use Filament\Forms\Set;
 use Livewire\Component;
@@ -59,6 +62,7 @@ use Livewire\Component;
 use Filament\Widgets\Widget;
 use Modules\Xot\Datas\XotData;
 use Filament\Resources\Resource;
+use Spatie\MediaLibrary\HasMedia;
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -81,9 +85,14 @@ use Modules\Xot\Actions\View\GetViewPathAction;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Patient\Filament\Components\HealthCardUpload;
-use Modules\Xot\Filament\Resources\XotBaseResource\Pages;
+
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
+<<<<<<< HEAD
 >>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
+=======
+use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
+use Modules\Media\Filament\Resources\PatientResource\Pages\PreviewAttachment;
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 
 class PatientResource extends XotBaseResource
 {
@@ -93,6 +102,7 @@ class PatientResource extends XotBaseResource
     //protected static ?string $tenantOwnershipRelationshipName = 'tenants';
     //protected static ?string $tenantRelationshipName = 'studios';
     protected static bool $isScopedToTenant = true;
+<<<<<<< HEAD
 
     public array $data = [];
 
@@ -225,8 +235,10 @@ class PatientResource extends XotBaseResource
     //protected static ?string $tenantOwnershipRelationshipName = 'tenants';
     //protected static ?string $tenantRelationshipName = 'studios';
 >>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
+=======
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 
-    
+    public array $data = [];
 
     public static function getFormSchemaWidget(): array
     {
@@ -299,57 +311,24 @@ class PatientResource extends XotBaseResource
 
     protected static function getDocumentsStepSchema(): array
     {
-        return [
-            // Tessera Sanitaria
-            Forms\Components\SpatieMediaLibraryFileUpload::make('health_card')
-                ->collection('tessera_sanitaria')
-                //->hint(__('saluteora::patient-resource.fields.health_card.hint'))
-                //->hintIcon('heroicon-o-information-circle')
+        $attachments = Patient::$attachments;
+        $schema = [];
+        foreach ($attachments as $attachment) {
+            $schema[] = Forms\Components\FileUpload::make($attachment)
+            //$schema[] = Forms\Components\SpatieMediaLibraryFileUpload::make($attachment)
+                ->disk('local')
+                //->collection($attachment)
+                ->directory('documents/'.$attachment)
                 ->downloadable()
                 ->openable()
-                ->preserveFilenames()
                 ->acceptedFileTypes(['application/pdf', 'image/*'])
                 ->maxSize(5120)
                 ->required()
-                ->columnSpanFull(),
-
-            // Documento di Identità
-            Forms\Components\SpatieMediaLibraryFileUpload::make('identity_document')
-                ->collection('documento_identita')
-                //->hint(__('saluteora::patient-resource.fields.identity_document.hint'))
-                //->hintIcon('heroicon-o-information-circle')
-                ->downloadable()
-                ->openable()
-                ->preserveFilenames()
-                ->acceptedFileTypes(['application/pdf', 'image/*'])
-                ->maxSize(5120)
-                ->required()
-                ->columnSpanFull(),
-
-            // Certificazione ISEE
-            Forms\Components\SpatieMediaLibraryFileUpload::make('isee_certificate')
-                ->collection('certificazione_isee')
-                //->hint(__('saluteora::patient-resource.fields.isee_certificate.hint'))
-                //->hintIcon('heroicon-o-information-circle')
-                ->downloadable()
-                ->openable()
-                ->preserveFilenames()
-                ->acceptedFileTypes(['application/pdf', 'image/*'])
-                ->maxSize(5120)
-                ->columnSpanFull(),
-
-            // Certificato di Gravidanza
-            Forms\Components\SpatieMediaLibraryFileUpload::make('pregnancy_certificate')
-                ->collection('certificato_gravidanza')
-                //->hint(__('saluteora::patient-resource.fields.pregnancy_certificate.hint'))
-                //->hintIcon('heroicon-o-information-circle')
-                ->downloadable()
-                ->openable()
-                ->preserveFilenames()
-                ->acceptedFileTypes(['application/pdf', 'image/*'])
-                ->maxSize(5120)
-                ->columnSpanFull(),
-        ];
+                ->reorderable()
+                ->columnSpanFull()
+                ;
+        }
+        return $schema;
     }
 
     /**
@@ -515,6 +494,9 @@ class PatientResource extends XotBaseResource
     // 2. getPages() contiene solo route standard
     // Secondo le regole del progetto questi metodi sono ridondanti quando estendi XotBaseResource
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 
     /**
      * @return array<string, \Filament\Resources\Pages\PageRegistration>
@@ -526,6 +508,9 @@ class PatientResource extends XotBaseResource
          //   'preview-attachment' => PreviewAttachment::route('/{record}/preview/{type}'),
         ];
     }
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 }

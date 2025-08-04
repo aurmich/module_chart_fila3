@@ -7,6 +7,9 @@ namespace Modules\Notify\Models;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Facades\Blade;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\Notify\Enums\NotificationTypeEnum;
@@ -14,8 +17,11 @@ use Modules\Xot\Traits\HasFactory;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\Translatable\HasTranslations;
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 
 /**
  * Class NotificationTemplate.
@@ -73,9 +79,15 @@ class NotificationTemplate extends BaseModel implements HasMedia
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Notify\Models\NotificationLog> $logs
  * @property-read string $channels_label
  */
-class NotificationTemplate extends BaseModel
+class NotificationTemplate extends BaseModel implements HasMedia
 {
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+    use HasTranslations;
+    use InteractsWithMedia;
+
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
     protected $fillable = [
         'name',
         'code',
@@ -94,6 +106,7 @@ class NotificationTemplate extends BaseModel
         'tenant_id',
         'grapesjs_data',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'type',
     ];
 
@@ -107,10 +120,33 @@ class NotificationTemplate extends BaseModel
         return [
             'type' => NotificationTypeEnum::class,
 =======
+=======
+        'type',
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
     ];
 
-    protected function casts(): array
+    protected $casts = [
+        'type' => NotificationTypeEnum::class,
+        'preview_data' => 'array',
+        'body_html' => 'string',
+        'body_text' => 'string',
+        'channels' => 'array',
+        'variables' => 'array',
+        'conditions' => 'array',
+        'metadata' => 'array',
+        'is_active' => 'boolean',
+        'grapesjs_data' => 'array',
+    ];
+
+    public array $translatable = [
+        'subject',
+        'body_text',
+        'body_html',
+    ];
+
+    public function registerMediaCollections(): void
     {
+<<<<<<< HEAD
         return array_merge(parent::casts(), [
 >>>>>>> 54f4fa16 (.)
             'preview_data' => 'array',
@@ -140,6 +176,10 @@ class NotificationTemplate extends BaseModel
 /*
 =======
         ]);
+=======
+        $this->addMediaCollection('attachments')
+            ->singleFile();
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
     }
 
 >>>>>>> 54f4fa16 (.)
@@ -339,6 +379,9 @@ class NotificationTemplate extends BaseModel
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 
     public function getPreviewData(): array
     {
@@ -347,20 +390,32 @@ class NotificationTemplate extends BaseModel
 
     public function getPreviewSubject(): string
     {
+<<<<<<< HEAD
         $result = $this->getTranslation('subject', app()->getLocale());
         return is_string($result) ? $result : '';
+=======
+        return $this->getTranslation('subject', app()->getLocale());
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
     }
 
     public function getPreviewBodyText(): string
     {
+<<<<<<< HEAD
         $result = $this->getTranslation('body_text', app()->getLocale());
         return is_string($result) ? $result : '';
+=======
+        return $this->getTranslation('body_text', app()->getLocale());
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
     }
 
     public function getPreviewBodyHtml(): string
     {
+<<<<<<< HEAD
         $result = $this->getTranslation('body_html', app()->getLocale());
         return is_string($result) ? $result : '';
+=======
+        return $this->getTranslation('body_html', app()->getLocale());
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
     }
 }
 =======

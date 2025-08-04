@@ -7,6 +7,7 @@ namespace Modules\SaluteOra\Filament\Resources\PatientResource\Pages;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Filament\Tables;
 use Illuminate\Support\Arr;
@@ -20,6 +21,14 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\SaluteOra\States\User\UserState;
 use Modules\Xot\Filament\Widgets\StateOverviewWidget;
+=======
+use Carbon\Carbon;
+use Filament\Tables;
+use Illuminate\Support\Arr;
+use Modules\SaluteOra\Models\Patient;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Database\Eloquent\Builder;
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 use Modules\SaluteOra\Filament\Resources\PatientResource;
 use Modules\Media\Filament\Tables\Columns\IconMediaColumn;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -45,6 +54,7 @@ class ListPatients extends ListUsers
 
     public function getTableColumns(): array
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -114,11 +124,26 @@ class ListPatients extends ListUsers
 >>>>>>> 54f4fa16 (.)
 =======
         $columns = parent::getTableColumns();   
+=======
+        $columns = parent::getTableColumns();
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
         $columns = Arr::except($columns, ['type']);
+
+        $attachments = Patient::$attachments;
+
+        foreach ($attachments as $attachment) {
+            $columns[$attachment] = IconMediaColumn::make($attachment);
+        }
+
         return $columns;
     }
 
+<<<<<<< HEAD
   
         
 >>>>>>> 86036e79 (✨ (CreateAdmin, EditAdmin, ListAdmins, CreateDoctor, EditDoctor, ListDoctors, CreatePatient, EditPatient, ListPatients): refactor admin, doctor, and patient resources to extend user resource classes for better code reuse and maintainability)
+=======
+
+
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 }

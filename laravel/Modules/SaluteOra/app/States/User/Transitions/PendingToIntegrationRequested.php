@@ -3,6 +3,7 @@
 namespace Modules\SaluteOra\States\User\Transitions;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
 use Modules\SaluteOra\Models\User;
@@ -39,10 +40,14 @@ class PendingToIntegrationRequested extends BaseTransition
 
 
 =======
+=======
+use Modules\SaluteOra\Models\User;
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 use Spatie\ModelStates\Transition;
 use Modules\SaluteOra\States\User\Pending;
+use Illuminate\Support\Facades\Notification;
+use Modules\Notify\Notifications\RecordNotification;
 use Modules\SaluteOra\States\User\IntegrationRequested;
-use Modules\SaluteOra\Models\User;
 
 class PendingToIntegrationRequested extends Transition
 {
@@ -57,6 +62,16 @@ class PendingToIntegrationRequested extends Transition
 
     public function handle(): User
     {
+        $notify = new RecordNotification(
+            $this->user,
+            $this->user->type->value . '_integration_requested'
+        );
+
+        $notify = $notify->mergeData(['message' => $this->message]);
+        Notification::route('mail', $this->user->email)
+            //->locale('it')
+            ->notify($notify);
+dddx('a');
         $this->user->state = new IntegrationRequested($this->user);
         $this->user->save();
 

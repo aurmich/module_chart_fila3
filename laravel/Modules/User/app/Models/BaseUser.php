@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Panel;
 use Parental\HasChildren;
 use Illuminate\Support\Str;
@@ -49,32 +50,38 @@ use Illuminate\Notifications\DatabaseNotificationCollection;
 =======
 use Filament\Models\Contracts\HasName;
 use Filament\Models\Contracts\HasTenants;
+=======
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 use Filament\Panel;
+use Parental\HasChildren;
+use Illuminate\Support\Str;
+use Modules\Xot\Datas\XotData;
+use Spatie\MediaLibrary\HasMedia;
+use Laravel\Passport\HasApiTokens;
+use Filament\Models\Contracts\HasName;
+use Illuminate\Support\Facades\Schema;
+use Spatie\Permission\Traits\HasRoles;
+use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Contracts\UserContract;
+use Illuminate\Notifications\Notifiable;
+use Modules\User\Models\Traits\HasTeams;
+use Modules\Xot\Models\Traits\RelationX;
+use Filament\Models\Contracts\HasTenants;
+use Spatie\MediaLibrary\InteractsWithMedia;
 use Illuminate\Database\Eloquent\Collection;
+use Modules\User\Database\Factories\UserFactory;
+use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\HasOne;
-use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\DatabaseNotification;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Notifications\DatabaseNotificationCollection;
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Support\Str;
-use Laravel\Passport\HasApiTokens;
-use Modules\User\Database\Factories\UserFactory;
-use Modules\User\Models\Traits\HasTeams;
-use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Datas\XotData;
-use Modules\Xot\Models\Traits\RelationX;
-use Spatie\Permission\Traits\HasRoles;
-use Parental\HasChildren;
-use Illuminate\Support\Facades\Schema;
 
 /**
  * Modules\User\Models\User.
@@ -173,6 +180,9 @@ use Illuminate\Support\Facades\Schema;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 abstract class BaseUser extends Authenticatable implements HasName, HasTenants, UserContract,HasMedia
 {
 
@@ -221,9 +231,13 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     use Traits\HasTeams;
     use HasChildren;
 <<<<<<< HEAD
+<<<<<<< HEAD
     use InteractsWithMedia;
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+    use InteractsWithMedia;
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
 
 
     public $incrementing = false;
@@ -334,7 +348,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
 >>>>>>> 54f4fa16 (.)
 =======
         $this->fillable = array_merge(parent::getFillable(), $this->getFillable());
-        
+
         parent::__construct($attributes);
     }
 

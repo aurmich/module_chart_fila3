@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array (
   'navigation' => 
   array (
@@ -196,12 +197,65 @@ return array (
       'description' => 'Abilita il tracking per monitorare l\'engagement',
       'tooltip' => 'Il tracking permette di monitorare l\'apertura e i click',
       'helper_text' => '',
+=======
+return array (
+  'resource' => 
+  array (
+    'name' => 'Invio Email',
+    'plural' => 'Invio Email',
+  ),
+  'navigation' => 
+  array (
+    'name' => 'Invio Email',
+    'plural' => 'Invio Email',
+    'group' => 
+    array (
+      'name' => 'Sistema',
+      'description' => 'Funzionalità per l\'invio di email attraverso il sistema di notifiche',
+    ),
+    'label' => 'Invio Email',
+    'icon' => 'notify-email-animated',
+    'sort' => 49,
+  ),
+  'fields' => 
+  array (
+    'object' => 
+    array (
+      'description' => 'Oggetto della email',
+      'placeholder' => 'Inserisci l\'oggetto',
+      'label' => 'Oggetto',
+    ),
+    'template_id' => 
+    array (
+      'description' => 'ID del template',
+      'placeholder' => 'Seleziona il template email',
+      'label' => 'Template ID',
+    ),
+    'to' => 
+    array (
+      'description' => 'Destinatario',
+      'placeholder' => 'Inserisci l\'indirizzo email',
+      'label' => 'Destinatario',
+    ),
+    'content' => 
+    array (
+      'description' => 'Contenuto email',
+      'placeholder' => 'Inserisci il contenuto',
+      'label' => 'Contenuto',
+    ),
+    'parameters' => 
+    array (
+      'description' => 'Parametri del template',
+      'placeholder' => 'Inserisci i parametri',
+      'label' => 'Parametri',
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
     ),
   ),
   'actions' => 
   array (
     'send' => 
     array (
+<<<<<<< HEAD
       'label' => 'Invia Email',
       'success' => 'Email inviata con successo al destinatario',
       'error' => 'Errore nell\'invio dell\'email. Verifica la configurazione.',
@@ -214,10 +268,17 @@ return array (
         'confirm' => 'Invia Email',
         'cancel' => 'Annulla',
       ),
+=======
+      'label' => 'Invia',
+      'tooltip' => 'Invia l\'email al destinatario',
+      'success_message' => 'Email inviata con successo',
+      'error_message' => 'Errore nell\'invio dell\'email',
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
     ),
     'preview' => 
     array (
       'label' => 'Anteprima',
+<<<<<<< HEAD
       'success' => 'Anteprima dell\'email generata correttamente',
       'error' => 'Errore nella generazione dell\'anteprima',
       'tooltip' => 'Visualizza l\'anteprima dell\'email prima dell\'invio',
@@ -271,6 +332,11 @@ return array (
         'confirm' => 'Esegui Test',
         'cancel' => 'Annulla',
       ),
+=======
+      'tooltip' => 'Visualizza l\'anteprima dell\'email',
+      'success_message' => 'Anteprima generata',
+      'error_message' => 'Errore nella generazione dell\'anteprima',
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
     ),
     'emailFormActions' => 
     array (
@@ -279,6 +345,7 @@ return array (
   ),
   'messages' => 
   array (
+<<<<<<< HEAD
     'success' => 'Email inviata con successo! Controlla la casella email del destinatario.',
     'error' => 'Si è verificato un errore durante l\'invio dell\'email. Verifica la configurazione SMTP.',
     'draft_saved' => 'Bozza salvata correttamente. Puoi recuperarla dalla sezione Bozze.',
@@ -452,3 +519,10 @@ return [
     ],
 ];
 >>>>>>> 54f4fa16 (.)
+=======
+    'success' => 'Email inviata con successo',
+    'error' => 'Si è verificato un errore durante l\'invio dell\'email',
+    'confirmation' => 'Sei sicuro di voler inviare questa email?',
+  ),
+);
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)

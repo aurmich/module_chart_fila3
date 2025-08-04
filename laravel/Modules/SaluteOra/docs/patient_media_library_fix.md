@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Patient Media Library Fix - Riferimenti Rapidi
 
 ## 🚨 Errore Critico Attivo
@@ -74,3 +75,6 @@ php artisan test --filter=MediaLibraryTest
 **Status**: 🚨 BLOCCA REGISTRAZIONE PAZIENTI  
 **Priorità**: MASSIMA  
 **Tempo stimato fix**: 2-4 ore  
+=======
+ 
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)

@@ -121,24 +121,34 @@ class SpatieEmail extends TemplateMailable
     protected static $templateModelClass = MailTemplate::class;
     public string $slug;
      /** @var array<int, Attachment> */
-     protected array $customAttachments = [];
+    protected array $customAttachments = [];
+
+    public array $data=[];
 
     public function __construct(Model $record, string $slug)
     {
-        if (!MailTemplate::where('slug', $slug)->exists()) {
-            MailTemplate::create([
-                'mailable' => SpatieEmail::class,
-                'slug' => $slug,
-                'subject' => 'Benvenuto, {{ first_name }}',
-                'html_template' => '<p>Gentile {{ first_name }} {{ last_name }},</p><p>La tua registrazione  è in attesa di approvazione. Ti contatteremo presto.</p>',
-                'text_template' => 'Gentile {{ first_name }} {{ last_name }}, la tua registrazione  è in attesa di approvazione. Ti contatteremo presto.'
-            ]);
-        }
+        MailTemplate::firstOrCreate([
+            'mailable' => SpatieEmail::class,
+            'slug' => $slug,
+        ],[
+            'subject' => 'Benvenuto, {{ first_name }}',
+            'html_template' => '<p>Gentile {{ first_name }} {{ last_name }},</p><p>La tua registrazione  è in attesa di approvazione. Ti contatteremo presto.</p>',
+            'text_template' => 'Gentile {{ first_name }} {{ last_name }}, la tua registrazione  è in attesa di approvazione. Ti contatteremo presto.'
+        ]);
         $data=$record->toArray();
-        $this->setAdditionalData($data);
+        $this->data=array_merge($this->data,$data);
+        $this->setAdditionalData($this->data);
         $this->slug = $slug;
 
 >>>>>>> 54f4fa16 (.)
+    }
+
+    public function mergeData(array $data): self
+    {
+        $this->data=array_merge($this->data,$data);
+        $this->setAdditionalData($this->data);
+
+        return $this;
     }
 
     public function getHtmlLayout(): string
@@ -248,28 +258,32 @@ class SpatieEmail extends TemplateMailable
 
 =======
         $attachmentObjects = [];
-        
+
         foreach ($attachments as $item) {
             if (!isset($item['path']) || !file_exists($item['path'])) {
                 continue;
             }
-            
+
             $attachment = Attachment::fromPath($item['path']);
-            
+
             if (isset($item['as'])) {
                 $attachment = $attachment->as($item['as']);
             }
-            
+
             if (isset($item['mime'])) {
                 $attachment = $attachment->withMime($item['mime']);
             }
-            
+
             $attachmentObjects[] = $attachment;
         }
-        
+
         $this->customAttachments = $attachmentObjects;
+<<<<<<< HEAD
         
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
         return $this;
     }
 
