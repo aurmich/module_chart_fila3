@@ -28,16 +28,6 @@ use Illuminate\Support\Carbon;
  * @property string      $namespace
  * @property string      $group
  * @property string|null $item
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- *
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> f3e4ec66 (.)
->>>>>>> aurmich/dev
  * @method static \Illuminate\Database\Eloquent\Builder|Translation   newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Translation   newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Translation   ofTranslatedGroup(string $group)
@@ -56,25 +46,8 @@ use Illuminate\Support\Carbon;
  * @method static \Illuminate\Database\Eloquent\Builder|Translation   whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Translation   whereValue($value)
  * @method static \Modules\Lang\Database\Factories\TranslationFactory factory($count = null, $state = [])
-<<<<<<< HEAD
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
- * @property \Modules\Xot\Contracts\ProfileContract|null $creator
- * @property \Modules\Xot\Contracts\ProfileContract|null $updater
-=======
- *
- * @property \Modules\Xot\Contracts\ProfileContract|null $creator
- * @property \Modules\Xot\Contracts\ProfileContract|null $updater
- *
->>>>>>> 54f4fa16 (.)
-=======
- * @property \Modules\Xot\Contracts\ProfileContract|null $creator
- * @property \Modules\Xot\Contracts\ProfileContract|null $updater
->>>>>>> f3e4ec66 (.)
->>>>>>> aurmich/dev
  * @mixin \Eloquent
  */
 class Translation extends BaseModel

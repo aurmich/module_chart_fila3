@@ -12,14 +12,6 @@ use Eloquent;
 use Filament\Actions\Exports\Models\Export as BaseExport;
 
 /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
- * 
- *
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
  * @method static \Modules\Job\Database\Factories\ExportFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|Export newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Export newQuery()

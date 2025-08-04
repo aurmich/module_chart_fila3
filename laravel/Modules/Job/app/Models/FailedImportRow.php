@@ -9,14 +9,6 @@ declare(strict_types=1);
 namespace Modules\Job\Models;
 
 /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
- * 
- *
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
  * @method static \Modules\Job\Database\Factories\FailedImportRowFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder|FailedImportRow newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|FailedImportRow newQuery()

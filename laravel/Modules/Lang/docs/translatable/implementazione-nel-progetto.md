@@ -1,9 +1,5 @@
 # Implementazione di Spatie Laravel Translatable nel Progetto
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 Questo documento descrive come è implementato e configurato il pacchetto `spatie/laravel-translatable` nel nostro progetto, con particolare attenzione all'integrazione con i moduli esistenti e il plugin Filament.
 
 ## Integrazione con Filament
@@ -75,12 +71,6 @@ public static function getFormSchema(): array
     ];
 }
 ```
-<<<<<<< HEAD
-=======
-=======
-Questo documento descrive come è implementato e configurato il pacchetto `spatie/laravel-translatable` nel nostro progetto, con particolare attenzione all'integrazione con i moduli esistenti.
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 
 ## Integrazione con i Moduli
 
@@ -232,10 +222,6 @@ trait HasStrictTranslations
 }
 ```
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 ## Gestione Contenuti JSON
 
 ### File di Contenuto Traducibili
@@ -280,11 +266,6 @@ I contenuti JSON come quelli in `config/local/saluteora/database/content/pages/`
 3. **Mantieni la struttura**: replicare esattamente la struttura del blocco "it"
 4. **Usa traduzioni appropriate**: adatta il contenuto al contesto culturale
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 ## Test delle Traduzioni
 
 Per testare correttamente le traduzioni, utilizzare:
@@ -312,18 +293,7 @@ public function testTranslations()
 ## Collegamenti ad Altri Documenti
 
 - [Gestione delle Traduzioni Mancanti](./gestione-traduzioni-mancanti.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 - [Best Practices per Laravel Translatable](./best-practices.md)
 - [Configurazione Laravel Localization](../../Cms/docs/localization/localization-setup.md)
 - [Documentazione Ufficiale Spatie Translatable](https://spatie.be/docs/laravel-translatable/v6/basic-usage/handling-missing-translations)
 - [Documentazione Plugin Filament](https://filamentphp.com/plugins/filament-spatie-translatable)
-<<<<<<< HEAD
-=======
-=======
-- [Configurazione Laravel Localization](../../Cms/docs/localization/localization-setup.md)
-- [Documentazione Ufficiale](https://spatie.be/docs/laravel-translatable/v6/basic-usage/handling-missing-translations)
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev

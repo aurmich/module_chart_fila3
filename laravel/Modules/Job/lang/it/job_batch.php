@@ -200,23 +200,8 @@ return array (
     'json' => 'JSON',
     'xml' => 'XML',
   ),
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f2140a80 (- continuo style landing page;)
->>>>>>> aurmich/dev
   'model' => 
   array (
     'label' => 'job batch.model',
   ),
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> f2140a80 (- continuo style landing page;)
->>>>>>> aurmich/dev
 );

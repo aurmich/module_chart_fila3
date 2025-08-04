@@ -131,14 +131,7 @@ class ProcessDataAction
 
 ### Comandi Artisan
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Creare un nuovo job
 php artisan make:job ProcessData
 

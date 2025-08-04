@@ -279,15 +279,6 @@ Per blocchi di testo lunghi, valuta se usare chiavi dedicate in PHP (es. `onboar
   - Nei Blade, sostituire blocchi condizionali con `trans_choice()` o `@choice()`.
   - Evitare l'uso del JSON per le stringhe plurali.
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
 ## [AGGIORNAMENTO 2024-06-XX] - Correzione appointment.php
 
 La traduzione appointment.php del modulo SaluteOra è stata riscritta secondo le regole di centralizzazione, DRY, KISS, nessun lock-in, e struttura gerarchica inglese. Tutte le chiavi sono ora coerenti con enums, actions, messages, filters, calendar, notifications. La motivazione è filosofica (un solo punto di verità), logica (manutenzione semplice), religiosa (nessuna duplicazione), politica (nessun lock-in tra moduli), zen (serenità del codice).
@@ -301,39 +292,6 @@ Vedi esempio e motivazione in [SaluteOra/docs/appointment-management.md](../../S
 - Non duplicare chiavi tra moduli
 - Seguire sempre la filosofia DRY, KISS, centralizzazione
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 9df8f556 (fix .md)
-=======
-## ⚠️ Regola fondamentale: MAI usare chiavi che terminano con `.navigation` nei file di traduzione
-
-- Usa sempre la struttura array per navigation:
-  ```php
-  'navigation' => [
-      'label' => 'Gestione Pazienti',
-      'group' => 'Pazienti',
-      'icon' => 'heroicon-o-user-group',
-      'color' => 'primary',
-  ],
-  ```
-- **Esempio ERRATO:**
-  ```php
-  'group' => 'patient.navigation',
-  'label' => 'patient.navigation',
-  ```
-- Consulta anche:
-  - [translation_keys_rules.md](./translation_keys_rules.md)
-  - [filament-translations.md](./filament-translations.md)
-  - [docs SaluteOra](../../SaluteOra/docs/translations.md)
-
->>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
-=======
->>>>>>> bead9c28 (fix case)
-=======
->>>>>>> 2bcfd382 (fix Address)
->>>>>>> aurmich/dev
 ## Conclusione
 
 Seguire queste best practices per le chiavi di traduzione garantirà un'applicazione più manutenibile, coerente e facile da tradurre in più lingue. Ricorda sempre di utilizzare chiavi strutturate in inglese e mai stringhe in italiano come chiavi di traduzione.

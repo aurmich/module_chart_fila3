@@ -119,14 +119,7 @@ public function handle(Request $request, Closure $next): Response
 ## Comandi Utili
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Lista delle route tradotte
 php artisan route:trans:list {locale}
 
