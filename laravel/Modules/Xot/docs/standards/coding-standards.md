@@ -74,17 +74,7 @@ Ogni modifica ai dati sensibili deve essere:
 ## Principi Fondamentali
 
 Il codice del progetto il progetto **deve** aderire ai seguenti principi fondamentali:# Standard di Codice
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Standard di Codice per il progetto
 
 > **Nota**: Questo documento è correlato a [Convenzioni](../../../docs/conventions.md) e [Naming Conventions](../../../docs/naming-conventions.md). Per una panoramica completa, consulta tutti i documenti correlati.
@@ -160,19 +150,6 @@ Ogni modifica ai dati sensibili deve essere:
 ## Principi Fondamentali
 
 Il codice del progetto **deve** aderire ai seguenti principi fondamentali:
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-b6f667c (.)
-Il codice del progetto il progetto **deve** aderire ai seguenti principi fondamentali:
->>>>>>> aurmich/dev
-=======
-b6f667c (.)
-Il codice del progetto il progetto **deve** aderire ai seguenti principi fondamentali:
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 
 1. **Robustezza**: Il codice deve funzionare correttamente anche in condizioni impreviste o avverse
 2. **Solidità**: La struttura deve essere manutenibile, scalabile e testabile
@@ -349,50 +326,6 @@ class StorePatientRequest extends FormRequest
     public function rules(): array
     {
         return [
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 54f4fa16 (.)
-
-            'tax_code' => ['required', 'string', 'size:16', 'unique:patients,tax_code'],
-            'first_name' => ['required', 'string', 'max:255'],
-            'last_name' => ['required', 'string', 'max:255'],
-            'birth_date' => ['required', 'date', 'before:today'],
-            'gender' => ['required', 'string', 'in:' . implode(',', array_column(GenderType::cases(), 'value'))],
-            'email' => ['required', 'email', 'unique:patients,email'],
-            'phone' => ['required', 'string', 'max:20'],
-            'address' => ['required', 'string', 'max:255'],
-            'city' => ['required', 'string', 'max:255'],
-            'province' => ['required', 'string', 'size:2'],
-            'postal_code' => ['required', 'string', 'size:5'],
-            'isee' => ['required', 'numeric', 'min:0'],
-            'is_pregnant' => ['boolean'],            'first_name' => ['required', 'string', 'max:255'],
-            'last_name' => ['required', 'string', 'max:255'],
-            'gender' => ['required', 'string', 'in:' . implode(',', GenderType::values())],
-            'birth_date' => ['required', 'date', 'before:today'],
-            'tax_code' => ['required', 'string', 'size:16', 'unique:patients,tax_code'],
-b6f667c (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
-=======
-=======
-
->>>>>>> 0e2182f (.)
->>>>>>> 15cb84fb (fix collisions)
-=======
-
->>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
             'tax_code' => ['required', 'string', 'size:16', 'unique:patients,tax_code'],
             'first_name' => ['required', 'string', 'max:255'],
             'last_name' => ['required', 'string', 'max:255'],
@@ -628,17 +561,7 @@ class PatientPolicy
 - Mantenere la storia pulita
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # ❌ NO: Commit message non descrittivo
 git commit -m "fix"
 
@@ -679,43 +602,11 @@ git commit -m "fix: correzione calcolo età paziente"
 - Implementare logging
 - Monitorare performance
 - Alert su errori 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 
 ## Collegamenti tra versioni di coding-standards.md
 * [coding-standards.md](../../../Xot/docs/standards/coding-standards.md)
 * [coding-standards.md](../../../Xot/docs/conventions/coding-standards.md)
 
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 54f4fa16 (.)
-## Collegamenti tra versioni di coding-standards.md
-* [coding-standards.md](../../../Xot/docs/standards/coding-standards.md)
-* [coding-standards.md](../../../Xot/docs/conventions/coding-standards.md)
-b6f667c (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
-=======
-=======
-
->>>>>>> 0e2182f (.)
->>>>>>> 15cb84fb (fix collisions)
-=======
-
->>>>>>> 3bd2031f (📝 (documentation): resolve merge conflicts in multiple documentation files to ensure clarity and consistency across the project documentation. This improves the overall quality and accessibility of the documentation for future reference.)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
 ## Collegamenti Correlati
 
 - [Convenzioni](../../../docs/conventions.md)

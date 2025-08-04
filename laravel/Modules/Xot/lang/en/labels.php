@@ -1,18 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> aurmich/dev
-=======
-declare(strict_types=1);
-
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 return [
     'general' => [
         'actions' => 'Action',
@@ -24,19 +11,8 @@ return [
         'buttons' => [
             'save' => 'Save',
             'update' => 'Update',
-<<<<<<< HEAD
             'add' => 'Aggiungi',
             'edit' => 'Cambia',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'add' => 'Aggiungi',
-            'edit' => 'Cambia',
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
         ],
         'hide' => 'Hide',
         'inactive' => 'Inactive',

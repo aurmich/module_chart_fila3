@@ -88,52 +88,10 @@ edit file composer.json
     "license": "MIT",
     "require": {
         "php": "^8.2",
-<<<<<<< HEAD
         "filament/filament": "^3.4",
         "laravel/framework": "^11.9",
         "filament/filament": "^3.3",
         "laravel/framework": "^12.0",
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "filament/filament": "^3.4",
-=======
-<<<<<<< HEAD
-        "filament/filament": "^4.0",
-=======
-        "filament/filament": "^3.3",
->>>>>>> ebf7989 (.)
-=======
-        "filament/filament": "^3.3",
->>>>>>> 4ec8f92 (.)
->>>>>>> b58de900 (.)
-=======
-        "filament/filament": "^3.3",
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
-=======
-        "filament/filament": "^3.4",
->>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
-        "laravel/framework": "^11.9",
-<<<<<<< HEAD
-        "filament/filament": "^3.3",
-<<<<<<< HEAD
-        "laravel/framework": "^12.0",
-=======
->>>>>>> aurmich/dev
-=======
-        "filament/filament": "^3.3",
-<<<<<<< HEAD
-        "laravel/framework": "^11.9",
->>>>>>> 54f4fa16 (.)
-=======
-        "laravel/framework": "^12.0",
->>>>>>> 15cb84fb (fix collisions)
-=======
-        "laravel/framework": "^11.9",
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
         "nwidart/laravel-modules": "^11.0"
     },
     "require-dev": {

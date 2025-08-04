@@ -1,66 +1,21 @@
 <?php
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> aurmich/dev
-=======
-declare(strict_types=1);
-
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 return [
     'pages' => [
         'health_check_results' => [
             'buttons' => [
                 'refresh' => 'Refresh',
             ],
-<<<<<<< HEAD
             'heading' => 'Application Health',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'heading' => 'Application Health',
-=======
-
-            'heading' => 'Application Health',
-
->>>>>>> aurmich/dev
-=======
-
-            'heading' => 'Application Health',
-
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
             'navigation' => [
                 'group' => 'Settings',
                 'label' => 'Application Health',
             ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> aurmich/dev
-=======
-
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
             'notifications' => [
                 'check_results' => 'Check results from',
             ],
         ],
     ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     'navigation' => [
         'name' => 'Stato Sistema',
         'plural' => 'Stato Sistema',
@@ -215,11 +170,4 @@ return [
         ],
     ],
     'title' => 'health',
-<<<<<<< HEAD
-=======
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 ];

@@ -54,19 +54,7 @@ return [
                 'created_confirm' => 'Your account was successfully created. We have sent you an e-mail to confirm your account.',
                 'mismatch' => 'Your confirmation code does not match.',
                 'not_found' => 'That confirmation code does not exist.',
-<<<<<<< HEAD
                 'resend' => 'Your account is not confirmed. Please click the confirmation link in your e-mail, or click here</a> to resend the confirmation e-mail.',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                'resend' => 'Your account is not confirmed. Please click the confirmation link in your e-mail, or click here</a> to resend the confirmation e-mail.',
-=======
-                'resend' => 'Your account is not confirmed. Please click the confirmation link in your e-mail, or <a href="'.route('frontend.auth.account.confirm.resend', ':user_id').'">click here</a> to resend the confirmation e-mail.',
->>>>>>> aurmich/dev
-=======
-                'resend' => 'Your account is not confirmed. Please click the confirmation link in your e-mail, or <a href="'.route('frontend.auth.account.confirm.resend', ':user_id').'">click here</a> to resend the confirmation e-mail.',
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
                 'success' => 'Your account has been successfully confirmed!',
                 'resent' => 'A new confirmation e-mail has been sent to the address on file.',
             ],

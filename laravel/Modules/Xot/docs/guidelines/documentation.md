@@ -25,17 +25,7 @@
 
 ### 1. Intestazione
 ```markdown
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Titolo del Documento
 
 Breve descrizione dello scopo del documento (1-2 frasi).
@@ -47,17 +37,7 @@ Breve descrizione dello scopo del documento (1-2 frasi).
 
 ### 2. Struttura delle Sezioni
 ```markdown
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 ## Nome Sezione
 
 ### Sottosezione
@@ -111,17 +91,7 @@ Modules/{ModuleName}/docs/
 
 ### 2. File README.md
 ```markdown
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Nome Modulo
 
 Breve descrizione...
@@ -156,17 +126,7 @@ Breve descrizione...
 ## Testing della Documentazione
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Verifica collegamenti
 markdown-link-check **/*.md
 

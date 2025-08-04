@@ -1,18 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> aurmich/dev
-=======
-declare(strict_types=1);
-
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 return [
     'actions' => [
         'export_xls' => [
@@ -32,16 +19,4 @@ return [
         'no_data' => 'No data to export',
         'processing' => 'Processing...',
     ],
-<<<<<<< HEAD
 ];
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-];
-=======
-]; 
->>>>>>> aurmich/dev
-=======
-]; 
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev

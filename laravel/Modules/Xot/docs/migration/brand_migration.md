@@ -140,32 +140,12 @@ public function getBrandLogo(): string
 #### Documentazione
 ```markdown
 // ❌ VECCHIO
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Logo Header
 The logo header is used in the top navigation bar.
 
 // ✅ NUOVO
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Brand Logo
 The brand logo represents the visual identity of the application.
 It is used consistently across the interface to maintain brand recognition.
