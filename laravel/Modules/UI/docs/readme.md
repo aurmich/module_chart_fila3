@@ -80,6 +80,7 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **OpeningHoursField**: Campo per gestione orari settimanali (mattina/pomeriggio) - [Documentazione](components/opening-hours-field.md)
   - ⚠️ **ERRORE CRITICO RISOLTO** (Dic 2024): Proprietà `$view` mancante causava runtime error
   - ✅ **CORREZIONE**: Vista Blade personalizzata + traduzioni complete
@@ -96,6 +97,11 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+- **OpeningHoursField**: Campo per gestione orari settimanali (mattina/pomeriggio) - [Documentazione](components/opening-hours-field.md)
+  - ⚠️ **ERRORE CRITICO RISOLTO** (Dic 2024): Proprietà `$view` mancante causava runtime error
+  - ✅ **CORREZIONE**: Vista Blade personalizzata + traduzioni complete
+>>>>>>> 34a4b9e3 (readme)
 
 ### Tables
 - CustomDataTable: Tabella dati avanzata con ordinamento e filtri
