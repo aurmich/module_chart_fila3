@@ -51,6 +51,7 @@ use Webmozart\Assert\Assert;
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @property-read \Modules\Blog\Models\Profile|null $creator
  * @property-read \Modules\Blog\Models\Profile|null $updater
@@ -67,6 +68,8 @@ use Webmozart\Assert\Assert;
 =======
  * @phpstan-type Chart array{id: int|null, type: string|null, width: int|null, height: int|null}
 >>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
+=======
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
  * @mixin \Eloquent
  */
 class Chart extends BaseModel
@@ -105,9 +108,9 @@ class Chart extends BaseModel
     /** @var  array<string, mixed>   */
 =======
     /**
-     * Default attributes for the model.
+     * Undocumented variable.
      *
-     * @var array<string, mixed>
+     * @var array
      */
 >>>>>>> 54f4fa16 (.)
     protected $attributes = [
@@ -125,6 +128,7 @@ class Chart extends BaseModel
         'plot_value_color' => '#000000',
     ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -147,10 +151,13 @@ class Chart extends BaseModel
     public function getPanelRow(string $parent_field, string $my_field): int|string|null
     {
 =======
+=======
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
     /** @var array<string, string> */
     protected $casts = [
         'colors' => 'array',
     ];
+<<<<<<< HEAD
 =======
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
@@ -159,6 +166,8 @@ class Chart extends BaseModel
         ];
     }
 >>>>>>> c99763dd (✨ (studio-filter-widget-lessons.mdc): add comprehensive guidelines and patterns for StudioFilterWidget to enhance code quality and maintainability)
+=======
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
 
     // /**
     //  * @return int|string|null
@@ -296,6 +305,7 @@ class Chart extends BaseModel
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $res = $this->attributes['type'] ?? (string) $this->getPanelRow('chart_type', 'type');
         Assert::string($res);
         return $res;
@@ -311,6 +321,9 @@ class Chart extends BaseModel
         $panelValue = $this->getPanelRow('chart_type', 'type');
         return $panelValue !== null ? (string) $panelValue : null;
 >>>>>>> c99763dd (✨ (studio-filter-widget-lessons.mdc): add comprehensive guidelines and patterns for StudioFilterWidget to enhance code quality and maintainability)
+=======
+        return $this->attributes['type'] ?? (string) $this->getPanelRow('chart_type', 'type');
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
     }
 
     public function getWidthAttribute(?string $value): ?int

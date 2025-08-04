@@ -80,10 +80,9 @@ class AnswersChartData extends Data
                 $other = $this->chart->max - $sum;
                 if ($other > 0.01) {
                     $data[] = $other;
-                    $labels = $this->answers->toCollection()->pluck('label')->all();
                     $labels[] = $this->chart->answer_value_no_txt ?? 'answer_value_no_txt';
                     if (\count($labels) === 2 && \strlen($labels[0]) < 3) {
-                        $labels[0] = $this->chart->answer_value_txt ?? $labels[0];
+                        $labels[0] = $this->chart->answer_value_txt;
                     }
                 }
             }
@@ -117,11 +116,10 @@ class AnswersChartData extends Data
                 $other = $this->chart->max - $sum;
                 if ($other > 0.01) {
                     $data[] = $other;
-                    $labels = $this->answers->toCollection()->pluck('label')->all();
                     $labels[] = $this->chart->answer_value_no_txt ?? 'answer_value_no_txt';
                     Assert::notNull($labels[0], '['.__FILE__.']['.__LINE__.']');
                     if (\count($labels) === 2 && \strlen($labels[0]) < 3) {
-                        $labels[0] = $this->chart->answer_value_txt ?? $labels[0];
+                        $labels[0] = $this->chart->answer_value_txt;
                     }
                 }
             }
@@ -129,6 +127,7 @@ class AnswersChartData extends Data
             /** @phpstan-ignore offsetAccess.nonOffsetAccessible */
 =======
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
             if (isset($this->answers->toCollection()->pluck('avg')[0]) && ! \is_string($this->answers->toCollection()->pluck('avg')[0])) {
@@ -142,7 +141,12 @@ class AnswersChartData extends Data
                 $label = 'Media';
             } elseif (is_array($firstAvgItem) && array_key_exists('avg', $firstAvgItem)) {
 >>>>>>> c99763dd (✨ (studio-filter-widget-lessons.mdc): add comprehensive guidelines and patterns for StudioFilterWidget to enhance code quality and maintainability)
+=======
+            if (isset($this->answers->toCollection()->pluck('avg')[0]) && ! \is_string($this->answers->toCollection()->pluck('avg')[0])) {
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
                 $label = 'Media';
+            } else {
+                $label = 'Percentuale';
             }
 
             $datasets = [
@@ -422,8 +426,9 @@ class AnswersChartData extends Data
         }
         $first_answer = $this->answers->first();
         $label = '--';
-        if ($first_answer !== null) {
+        if ($first_answer != null) {
             Assert::isInstanceOf($first_answer, AnswerData::class, '['.__LINE__.']['.__FILE__.']');
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             /** @phpstan-ignore property.nonObject */
@@ -435,6 +440,9 @@ class AnswersChartData extends Data
             $avgValue = $first_answer->avg;
             $label = is_numeric($avgValue) ? round((float) $avgValue, 2) : '--';
 >>>>>>> c99763dd (✨ (studio-filter-widget-lessons.mdc): add comprehensive guidelines and patterns for StudioFilterWidget to enhance code quality and maintainability)
+=======
+            $label = round((float) $this->answers->first()->avg, 2);
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
         }
         $js = <<<JS
             scales: {
@@ -510,12 +518,9 @@ class AnswersChartData extends Data
         $options['plugins']['datalabels'] = [
             'display' => false,
         ];
-        $firstAnswer = $this->answers->first();
-        Assert::isInstanceOf($firstAnswer, AnswerData::class, '['.__LINE__.']['.__FILE__.']');
-        /** @var AnswerData $firstAnswer */
-        $avgValue = $firstAnswer->avg;
+        Assert::isInstanceOf($this->answers->first(), AnswerData::class, '['.__LINE__.']['.__FILE__.']');
         $options['plugins']['doughnutLabel'] = [
-            'label' => is_numeric($avgValue) ? round((float) $avgValue, 2) : '--',
+            'label' => round((float) $this->answers->first()->avg, 2),
         ];
 
         return $options;

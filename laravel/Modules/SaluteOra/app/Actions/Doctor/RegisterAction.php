@@ -66,8 +66,6 @@ use Modules\Notify\Notifications\RecordNotification;
 use Modules\SaluteOra\States\User\IntegrationCompleted;
 use Modules\SaluteOra\Models\DoctorRegistrationWorkflow;
 use Modules\SaluteOra\Enums\DoctorRegistrationStatusEnum;
-use Webmozart\Assert\Assert;
-use Modules\SaluteOra\Enums\UserStateEnum;
 
 >>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
 
@@ -77,8 +75,9 @@ class RegisterAction
      * Esegue l'azione di registrazione del dottore.
      *
      * @param array<string, mixed> $data
-     * @return \Modules\SaluteOra\Models\Doctor
+     * @return Doctor
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -228,11 +227,12 @@ class RegisterAction
             $doctor->studios()->attach($studio,['schedule'=>$data['schedule']]);
 =======
     public function execute(array $data): Doctor
+=======
+    public function execute(UserContract $record,array $data): Doctor
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
     {
-        // Creazione dello studio con validazione dei dati
-        $studioData = $data['studio'] ?? [];
-        Assert::isArray($studioData, 'Studio data must be an array');
         
+<<<<<<< HEAD
         $studio = Studio::create($studioData);
 
         // Creazione dell'indirizzo se presente
@@ -240,45 +240,50 @@ class RegisterAction
             $addressData = $data['studio']['address'];
             $address = Address::create($addressData);
 >>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
+=======
+        if(isset($data['id'])){
+            $doctor = $record;
+            $doctor->update($data);
+        }else{
+            $doctor= new Doctor();
+            $doctor->fill($data);
+            $doctor->save();
+            //$doctor = Doctor::create($data);
+        }
+        if(isset($data['schedule'])){
+            $studio = Studio::create($data['studio']);
+            $address = Address::create($data['studio']['address']);
+            $studio->address()->save($address);
+            $doctor->studio()->save($studio);
+            $doctor->studios()->attach($studio,['schedule'=>$data['schedule']]);
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
         }
 
-        // Creazione dell'utente dottore
-        $user = app(UserContract::class);
-        Assert::isInstanceOf($user, UserContract::class);
+        //$record->save();
+        //$record->update($data);
+        /*
+        $attachments = Doctor::$attachments;
+        foreach ($attachments as $attachment) {
+                $doctor->addMediaFromDisk($data[$attachment],'local')
+                    ->toMediaCollection($attachment);
+
+        }
+        */
         
-        // Cast sicuro a Doctor dopo la verifica
-        if (!$user instanceof Doctor) {
-            throw new \InvalidArgumentException('User must be an instance of Doctor');
+        if($data['state']=='integration_requested'){
+            $doctor->state->transitionTo(IntegrationCompleted::class);
+            return $doctor;
         }
 
-        // Associazione con lo studio
-        if (method_exists($user, 'studio')) {
-            $user->studio()->associate($studio);
-        }
+
+        $mail_slug=Str::slug($data['type'].'-'.$data['state']);
         
-        if (method_exists($user, 'studios')) {
-            $user->studios()->attach($studio->id);
-        }
 
-        // Aggiornamento del state
-        if (property_exists($user, 'state')) {
-            $user->state = UserStateEnum::PENDING;
-        }
+        Notification::route('mail', $data['email'])
+        //->locale('it')
+        ->notify(new RecordNotification($doctor,$mail_slug));
 
-        $user->save();
-
-        // Gestione sicura della concatenazione per l'email
-        $doctorName = $data['first_name'] ?? '';
-        $doctorLastName = $data['last_name'] ?? '';
-        $fullName = trim($doctorName . ' ' . $doctorLastName);
-
-        // Invio notifica se l'utente è un Model
-        if ($user instanceof \Illuminate\Database\Eloquent\Model) {
-            $mailSlug = 'doctor-registration';
-            $user->notify(new RecordNotification($user, $mailSlug));
-        }
-
-        return $user;
+        return $doctor;
     }
 
 <<<<<<< HEAD

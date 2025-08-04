@@ -21,6 +21,7 @@ use Modules\SaluteOra\Enums\UserTypeEnum;
 use Modules\SaluteOra\Models\Appointment;
 use Modules\SaluteOra\Models\Studio;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\SaluteOra\Traits\HasFullCalendarConfig;
 use Illuminate\Support\Facades\Log;
 use Saade\FilamentFullCalendar\Data\EventData;
@@ -45,6 +46,10 @@ use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
 use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
 use function Safe\strtotime;
 >>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
+=======
+use Modules\SaluteOra\Traits\HasFullCalendarConfig;
+use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
 
 /**
  * Widget FullCalendar per amministratori.
@@ -59,10 +64,14 @@ use function Safe\strtotime;
 class AdminCalendarWidget extends FullCalendarWidget
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
     //use HasFullCalendarConfig;
 >>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
+=======
+    use HasFullCalendarConfig;
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
     
     /**
      * Riferimento alla data corrente del calendario.
@@ -209,6 +218,7 @@ class AdminCalendarWidget extends FullCalendarWidget
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Generate a cache key for the events query.
      *
      * @param array<string, mixed> $fetchInfo
@@ -301,12 +311,16 @@ class AdminCalendarWidget extends FullCalendarWidget
 =======
      * Recupera gli eventi del calendario.
 >>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
+=======
+     * Recupera gli eventi per il calendario.
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
      *
      * @param array<string, mixed> $fetchInfo
      * @return array<int, array<string, mixed>>
      */
     public function fetchEvents(array $fetchInfo): array
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         try {
@@ -359,6 +373,19 @@ class AdminCalendarWidget extends FullCalendarWidget
 
         return $events;
 >>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
+=======
+        $cacheKey = $this->getCacheKey($fetchInfo);
+
+        return cache()->remember($cacheKey, 300, function () use ($fetchInfo) {
+            return Appointment::query()
+                ->whereBetween('start_time', [$fetchInfo['start'], $fetchInfo['end']])
+                ->with(['patient', 'doctor', 'studio'])
+                ->limit(100) // Limite per performance
+                ->get()
+                ->map(fn($appointment) => $this->transformToEventData($appointment))
+                ->toArray();
+        });
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
     }
 
     /**
@@ -654,25 +681,37 @@ class AdminCalendarWidget extends FullCalendarWidget
 
 =======
     /**
-     * Formatta un appuntamento come evento calendario.
+     * Trasforma un appuntamento in EventData con colori specifici per admin.
      *
-     * @param \Modules\SaluteOra\Models\Appointment $appointment
-     * @return array<string, mixed>
+     * @param Appointment $appointment
+     * @return \Saade\FilamentFullCalendar\Data\EventData
      */
-    protected function formatAppointmentAsEvent($appointment): array
+    protected function transformToEventData(Appointment $appointment): \Saade\FilamentFullCalendar\Data\EventData
     {
-        return [
-            'id' => (string) $appointment->id,
-            'title' => $this->getEventTitle($appointment),
-            'start' => $appointment->start_time->toISOString(),
-            'end' => $appointment->end_time->toISOString(),
-            'extendedProps' => [
-                'patient_name' => $appointment->patient->full_name ?? 'N/A',
-                'doctor_name' => $appointment->doctor->full_name ?? 'N/A', 
-                'studio_name' => $appointment->studio->name ?? 'N/A',
-                'emergency' => $appointment->emergency ?? false,
-            ],
-        ];
+        return \Saade\FilamentFullCalendar\Data\EventData::make()
+            ->id($appointment->id)
+            ->title($this->formatEventTitle($appointment))
+            ->start($appointment->start_time)
+            ->end($appointment->end_time)
+            ->backgroundColor($this->getStudioColor($appointment->studio))
+            ->borderColor($this->getAppointmentStatusColor($appointment->status->value))
+            ->textColor('#ffffff')
+            ->extendedProps([
+                'patient_id' => $appointment->patient_id,
+                'patient_name' => $appointment->patient?->full_name,
+                'doctor_id' => $appointment->doctor_id,
+                'doctor_name' => $appointment->doctor?->full_name,
+                'studio_id' => $appointment->studio_id,
+                'studio_name' => $appointment->studio?->name,
+                'status' => $appointment->status->value,
+                'type' => $appointment->type->value,
+                'emergency' => $appointment->emergency,
+                'tooltip' => $this->formatTooltip($appointment),
+                'can_edit' => true, // Admin può sempre modificare
+                'can_view' => true,
+                'duration' => $appointment->duration,
+                'notes' => $appointment->notes ? Str::limit($appointment->notes, 100) : null,
+            ]);
     }
 >>>>>>> 2099645a (.)
 

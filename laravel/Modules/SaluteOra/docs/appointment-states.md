@@ -30,25 +30,29 @@ Il sistema di gestione degli stati degli appuntamenti utilizza il pattern State 
 - **Transizioni possibili**: InProgress, Cancelled, NoShow, Rescheduled
 - **Colore**: info
 - **Icona**: heroicon-o-calendar
+- **Modificabile**: true
+- **Attivo**: true
 
 ### 4. InProgress (In corso)
 - Visita medica attualmente in corso
-- **Transizioni possibili**: Completed, Cancelled
-- **Colore**: info (aggiornato da warning)
-- **Icona**: heroicon-o-play-circle (aggiornato)
+- **Transizioni possibili**: Completed
+- **Colore**: warning
+- **Icona**: heroicon-o-clock
+- **Attivo**: true
 
 ### 5. Completed (Completato)
-- Appuntamento completato con successo
-- **Stato finale** - nessuna transizione
+- Visita terminata con successo
+- **Stato finale** - nessuna transizione possibile
 - **Colore**: success
 - **Icona**: heroicon-o-check-badge
+- **Completato**: true
 
 ### 6. Cancelled (Annullato)
-- Appuntamento annullato da una delle parti
-- **Stato finale** - nessuna transizione
+- Appuntamento annullato
 - **Colore**: danger
 - **Icona**: heroicon-o-x-circle
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ### 7. Rejected (Rifiutato)
 - Appuntamento rifiutato dal dottore o sistema
@@ -61,23 +65,25 @@ Il sistema di gestione degli stati degli appuntamenti utilizza il pattern State 
 - Appuntamento respinto dal personale medico
 - **Stato finale** - nessuna transizione
 >>>>>>> 1dc4ede7 (📝 (README.md): update documentation for SaluteOra module to improve clarity and organization of information, including a comprehensive table of contents and sections for best practices, quick start guides, and recent updates)
+=======
+### 7. Rejected (Rifiutato)
+- Appuntamento rifiutato dal dottore o sistema
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
 - **Colore**: danger
-- **Icona**: heroicon-o-x-mark (aggiornato)
-- **Label**: "Respinto" (aggiornato da "Rifiutato")
+- **Icona**: heroicon-o-no-symbol
 
 ### 8. NoShow (Assente)
-- Paziente non si è presentato senza preavviso
-- **Stato finale** - nessuna transizione
-- **Colore**: warning (aggiornato da danger)
-- **Icona**: heroicon-o-user-minus (aggiornato)
+- Paziente non si è presentato
+- **Colore**: danger
+- **Icona**: heroicon-o-exclamation-circle
 
 ### 9. Rescheduled (Riprogrammato)
-- Appuntamento spostato a nuova data/ora
-- **Transizioni possibili**: Confirmed
+- Appuntamento spostato a nuovo orario
 - **Colore**: info
 - **Icona**: heroicon-o-arrow-path
+- **Modificabile**: true
 
-## Flusso degli Stati
+## Diagramma delle Transizioni
 
 ```
 Pending → Confirmed → Scheduled → InProgress → Completed
@@ -89,11 +95,15 @@ Rejected ↔ Confirmed   ↑
    ↓          ↓          ↓
 Cancelled   Cancelled   NoShow
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
+=======
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
             ↓          
           Rescheduled ← Scheduled
                         ↓
                     Cancelled
+<<<<<<< HEAD
 ```
 
 <<<<<<< HEAD
@@ -112,59 +122,34 @@ La cancellazione diretta da `Pending` non è permessa - un appuntamento in attes
 
 ## Correzioni Implementate
 >>>>>>> 1dc4ede7 (📝 (README.md): update documentation for SaluteOra module to improve clarity and organization of information, including a comprehensive table of contents and sections for best practices, quick start guides, and recent updates)
+=======
+```
 
-### Rimossi Stati Non Pertinenti
-- ❌ **IntegrationRequested**: Non applicabile agli appuntamenti
-- ❌ **IntegrationCompleted**: Non applicabile agli appuntamenti
+## Implementazione
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
 
-### Miglioramenti Visuali
-- 🎨 **InProgress**: Icona cambiata da `clock` a `play-circle`
-- 🎨 **Rejected**: Icona cambiata da `no-symbol` a `x-mark`
-- 🎨 **NoShow**: Icona cambiata da `exclamation-circle` a `user-minus`
-- 🎨 **NoShow**: Colore cambiato da `danger` a `warning`
-
-### Miglioramenti Traduzioni
-- 📝 **Rejected**: Label migliorata da "Rifiutato" a "Respinto"
-- 📝 **InProgress**: Label ottimizzata
-
-## Architettura Tecnica
-
-### Classe Base
+### Classe Base: AppointmentState
 ```php
 abstract class AppointmentState extends State
 {
     abstract public function label(): string;
     abstract public function color(): string;
     abstract public function icon(): string;
-}
-```
-
-### Pattern BaseTransition
-Il modulo implementa un pattern **BaseTransition** che automatizza:
-
-```php
-class BaseTransition extends Transition
-{
-    public function __construct(public Appointment $appointment, public ?string $message='') {}
     
-    public function handle(): Appointment
-    {
-        $this->sendNotification();
-        // Auto-discovery del nuovo stato dal nome della classe
-        $class = static::class;
-        $newStateClass = Str::of($class)->afterLast('To')->prepend('Modules\\SaluteOra\\States\\Appointment\\\\')->toString();
-        
-        $this->appointment->state = new $newStateClass($this->appointment);
-        $this->appointment->save();
-        
-        return $this->appointment;
-    }
+    public function canBeModified(): bool { return false; }
+    public function isActive(): bool { return false; }
+    public function isPending(): bool { return false; }
+    public function isCompleted(): bool { return false; }
 }
 ```
+
+### BaseTransition per Appuntamenti
+Estende il pattern BaseTransition con:
+- Notifiche automatiche a paziente e dottore
+- Dati contestuali (data appuntamento, nomi, etc.)
+- Gestione automatica del cambio stato
 
 ### Transizioni Implementate
-
-#### Da Pending
 - `PendingToConfirmed`
 <<<<<<< HEAD
 - `PendingToRejected`
@@ -175,82 +160,92 @@ class BaseTransition extends Transition
 - `RejectedToConfirmed`
 =======
 - `PendingToCancelled`
-
-#### Da Confirmed
 - `ConfirmedToScheduled`
 - `ConfirmedToCancelled`
 - `ConfirmedToRescheduled`
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 =======
 
 #### Da Scheduled
 >>>>>>> 1dc4ede7 (📝 (README.md): update documentation for SaluteOra module to improve clarity and organization of information, including a comprehensive table of contents and sections for best practices, quick start guides, and recent updates)
+=======
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
 - `ScheduledToInProgress`
 - `ScheduledToCancelled`
 - `ScheduledToNoShow`
 - `ScheduledToRescheduled`
-
-#### Da InProgress
 - `InProgressToCompleted`
 <<<<<<< HEAD
 - `RescheduledToConfirmed`
 =======
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 
-#### Da Rescheduled
-- `RescheduledToConfirmed`
+## Pattern di Utilizzo
 
-## Utilizzo
-
-### Configurazione States
 ```php
-public static function config(): StateConfig
-{
-    return parent::config()
-        ->default(Pending::class)
-        
-        // Pending transitions
-        ->allowTransition(Pending::class, Confirmed::class, 
-            Transitions\PendingToConfirmed::class)
-        ->allowTransition(Pending::class, Cancelled::class, 
-            Transitions\PendingToCancelled::class)
-        
-        // ... altre transizioni
+// Cambio stato con transizione
+$appointment->state->transitionTo(Confirmed::class, 'Confermato dal paziente');
+
+// Controllo proprietà stato
+if ($appointment->state->canBeModified()) {
+    // Appuntamento modificabile
 }
+
+if ($appointment->state->isActive()) {
+    // Appuntamento attivo
+}
+
+// Accesso alle proprietà dello stato
+$color = $appointment->state->color();
+$icon = $appointment->state->icon();
+$label = $appointment->state->label();
 ```
 
-### Ottenere Stati Disponibili
-```php
-$statuses = AppointmentState::getStatuses();
-// Restituisce array con label localizzate automaticamente
-```
+## Notifiche Automatiche
 
-### Transizioni
-```php
-// Esempio di transizione
-$appointment->state->transitionTo(Confirmed::class);
-```
+Le transizioni inviano automaticamente notifiche via email a:
+- **Paziente**: Per tutte le transizioni
+- **Dottore**: Per tutte le transizioni
+
+### Dati Inclusi nelle Notifiche
+- Messaggio personalizzato
+- Data e ora appuntamento
+- Nome paziente
+- Nome dottore
+- Slug: `appointment-[nome-transizione]`
+
+## Integrazione con Widget
+
+Il sistema è integrato con il `FindDoctorAndAppointmentWidget` che:
+1. Crea appuntamenti in stato `Pending`
+2. Permette transizioni verso `Scheduled`
+3. Gestisce automaticamente le notifiche
 
 ## Best Practices
 
-### Sviluppo
-1. **Usare BaseTransition**: Per tutte le nuove transizioni
-2. **Nome Classes Descrittivi**: `FromStateToToState`
-3. **Label Localizzate**: Sempre in italiano comprensibile
-4. **Icone Semantiche**: Che rappresentano chiaramente lo stato
-5. **Colori Consistenti**: Seguire la palette definita
+1. **Sempre usare transizioni**: Non modificare direttamente lo stato
+2. **Messaggi descrittivi**: Fornire sempre un messaggio nelle transizioni
+3. **Gestire le eccezioni**: Le transizioni possono fallire
+4. **Testing completo**: Testare tutti i percorsi di transizione
+5. **Logging**: Tutte le transizioni sono automaticamente loggare
 
-### Business Logic
-1. **Stati Finali**: Completed, Cancelled, Rejected, NoShow
-2. **Stati Attivi**: Pending, Confirmed, Scheduled, InProgress
-3. **Stati Modificabili**: Rescheduled può tornare a Confirmed
+## File Implementati
 
-### UX
-1. **Feedback Visivo**: Colori e icone immediate
-2. **Traduzioni Chiare**: Comprensibili per utenti finali
-3. **Transizioni Logiche**: Flusso naturale del processo
+### Stati
+- `app/States/Appointment/AppointmentState.php` (classe base)
+- `app/States/Appointment/Pending.php`
+- `app/States/Appointment/Confirmed.php`
+- `app/States/Appointment/Scheduled.php`
+- `app/States/Appointment/InProgress.php`
+- `app/States/Appointment/Completed.php`
+- `app/States/Appointment/Cancelled.php`
+- `app/States/Appointment/Rejected.php`
+- `app/States/Appointment/NoShow.php`
+- `app/States/Appointment/Rescheduled.php`
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ### Transizioni
 - `app/States/Appointment/Transitions/BaseTransition.php`
@@ -263,16 +258,25 @@ $appointment->state->transitionTo(Confirmed::class);
 - `app/States/Appointment/Transitions/ConfirmedToRejected.php`
 - `app/States/Appointment/Transitions/RejectedToConfirmed.php`
 =======
+=======
+### Transizioni
+- `app/States/Appointment/Transitions/BaseTransition.php`
+- `app/States/Appointment/Transitions/PendingToConfirmed.php`
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
 - `app/States/Appointment/Transitions/PendingToCancelled.php`
 - `app/States/Appointment/Transitions/ConfirmedToScheduled.php`
 - `app/States/Appointment/Transitions/ConfirmedToCancelled.php`
 - `app/States/Appointment/Transitions/ConfirmedToRescheduled.php`
+<<<<<<< HEAD
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
+=======
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
 - `app/States/Appointment/Transitions/ScheduledToInProgress.php`
 - `app/States/Appointment/Transitions/ScheduledToCancelled.php`
 - `app/States/Appointment/Transitions/ScheduledToNoShow.php`
 - `app/States/Appointment/Transitions/ScheduledToRescheduled.php`
 - `app/States/Appointment/Transitions/InProgressToCompleted.php`
+<<<<<<< HEAD
 <<<<<<< HEAD
 - `app/States/Appointment/Transitions/RescheduledToConfirmed.php`
 =======
@@ -294,14 +298,17 @@ dd($appointment->state::class);
 dd($appointment->state->transitionableStates());
 ```
 >>>>>>> 1dc4ede7 (📝 (README.md): update documentation for SaluteOra module to improve clarity and organization of information, including a comprehensive table of contents and sections for best practices, quick start guides, and recent updates)
+=======
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
 
 ## Collegamenti
 
-### File Correlati
-- `app/States/Appointment/AppointmentState.php`
-- `app/States/Appointment/Transitions/BaseTransition.php`
-- `app/Models/Appointment.php`
+- [AppointmentStatusEnum](../app/Enums/AppointmentStatusEnum.php)
+- [Appointment Model](../app/Models/Appointment.php)
+- [User States Pattern](user-states.md)
+- [BaseTransition Pattern](../app/States/User/Transitions/BaseTransition.php)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025 - Aggiunta transizione RejectedToConfirmed* 
@@ -317,3 +324,6 @@ dd($appointment->state->transitionableStates());
 *Ultimo aggiornamento: Gennaio 2025*
 *Versione: 2.0 - Correzioni IntegrationStates* 
 >>>>>>> 1dc4ede7 (📝 (README.md): update documentation for SaluteOra module to improve clarity and organization of information, including a comprehensive table of contents and sections for best practices, quick start guides, and recent updates)
+=======
+*Ultimo aggiornamento: Dicembre 2024* 
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)

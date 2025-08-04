@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Auth;
 use Modules\SaluteOra\Enums\UserTypeEnum;
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
 use Modules\SaluteOra\Models\Appointment;
-//use Modules\SaluteOra\Traits\HasFullCalendarConfig;
+use Modules\SaluteOra\Traits\HasFullCalendarConfig;
 use Saade\FilamentFullCalendar\Data\EventData;
 use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
 <<<<<<< HEAD
@@ -36,10 +36,14 @@ use function Safe\strtotime;
 class PatientCalendarWidget extends FullCalendarWidget
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
    
 =======
     //use HasFullCalendarConfig;
 >>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
+=======
+    use HasFullCalendarConfig;
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
     
     /**
      * Riferimento alla data corrente del calendario.

@@ -92,6 +92,7 @@ class DoctorsRelationManager extends XotBaseRelationManager
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, Tables\Filters\Filter|Tables\Filters\SelectFilter>
 =======
      * @return array<string, Tables\Filters\Filter>
@@ -99,6 +100,9 @@ class DoctorsRelationManager extends XotBaseRelationManager
 =======
      * @return array<string, Tables\Filters\SelectFilter>
 >>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
+=======
+     * @return array<string, Tables\Filters\Filter>
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
      */
     public function getTableFilters(): array
     {
@@ -136,11 +140,12 @@ class DoctorsRelationManager extends XotBaseRelationManager
      * le query per evitare problemi con i database multipli. Per dettagli vedere:
      * docs/filament/cross-database-relations.md
      *
-     * @return array{attach: Tables\Actions\AttachAction}
+     * @return array<string, Tables\Actions\Action>
      */
     public function getTableHeaderActions(): array
     {
         return [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             'attach' => Tables\Actions\AttachAction::make()
@@ -150,6 +155,9 @@ class DoctorsRelationManager extends XotBaseRelationManager
 =======
             'attach' => Tables\Actions\AttachAction::make()
 >>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
+=======
+            Tables\Actions\AttachAction::make()
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
                 ->preloadRecordSelect(false) // Importante: non precaricare tutti i record
                 // Soluzione per database cross-database compatibile con Filament 3
                 ->recordSelect(
@@ -158,14 +166,12 @@ class DoctorsRelationManager extends XotBaseRelationManager
                     ->getSearchResultsUsing(
                         function (string $search):array {
                         // Query sui dottori con la connessione corretta (user database)
-                        /** @var \Modules\SaluteOra\Models\Studio $ownerRecord */
-                        $ownerRecord = $this->getOwnerRecord();
-                        
                         return Doctor::where(function (Builder $query) use ($search) {
                                 $query->where('name', 'like', "%{$search}%")
                                     ->orWhere('email', 'like', "%{$search}%");
                             })
                             // Escludiamo manualmente i dottori già associati invece di usare JOIN
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                             /** @phpstan-ignore property.notFound */
@@ -179,6 +185,9 @@ class DoctorsRelationManager extends XotBaseRelationManager
                                     ->where('studio_id', $this->getOwnerRecord()->getKey());
                             })
 >>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
+=======
+                            ->whereNotIn('id', $this->getOwnerRecord()->doctors->modelKeys())
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
                             ->limit(10)
                             ->get()
                             ->mapWithKeys(

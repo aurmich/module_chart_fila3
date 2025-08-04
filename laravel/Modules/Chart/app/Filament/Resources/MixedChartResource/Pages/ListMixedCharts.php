@@ -22,12 +22,16 @@ use Modules\Xot\Filament\Traits\TransTrait;
  *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @phpstan-import-type MixedChart from \Modules\Chart\Models\MixedChart
 >>>>>>> 54f4fa16 (.)
 =======
  * @phpstan-import-type MixedChartArray from \Modules\Chart\Models\MixedChart
 >>>>>>> c99763dd (✨ (studio-filter-widget-lessons.mdc): add comprehensive guidelines and patterns for StudioFilterWidget to enhance code quality and maintainability)
+=======
+ * @phpstan-import-type MixedChart from \Modules\Chart\Models\MixedChart
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
  */
 class ListMixedCharts extends XotBaseListRecords
 {

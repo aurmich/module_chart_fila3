@@ -47,6 +47,7 @@ class SaluteOraServiceProvider extends XotBaseServiceProvider
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected string $moduleName = 'SaluteOra';
     protected string $moduleNameLower = 'saluteora';
 =======
@@ -61,11 +62,15 @@ class SaluteOraServiceProvider extends XotBaseServiceProvider
     protected string $moduleName = 'SaluteOra';
     protected string $moduleNameLower = 'saluteora';
 >>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
+=======
+    protected $moduleName = 'SaluteOra';
+    protected $moduleNameLower = 'saluteora';
+>>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
 
     public function boot(): void
     {
         parent::boot();
-        /*
+
         // Merge auth configuration
         $this->mergeConfigFrom(
             __DIR__.'/../../config/auth.php', 'auth'
@@ -76,7 +81,6 @@ class SaluteOraServiceProvider extends XotBaseServiceProvider
 
         // Registra il namespace pub_theme per le views
         $this->loadViewsFrom(__DIR__.'/../../resources/views', 'pub_theme');
-        */
     }
     
     /**
@@ -84,7 +88,7 @@ class SaluteOraServiceProvider extends XotBaseServiceProvider
      */
     protected function bootObservers(): void
     {
-        //\Modules\SaluteOra\Models\Studio::observe(\Modules\SaluteOra\Observers\StudioObserver::class);
+        \Modules\SaluteOra\Models\Studio::observe(\Modules\SaluteOra\Observers\StudioObserver::class);
     }
 
     /*
