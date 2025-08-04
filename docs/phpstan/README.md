@@ -104,6 +104,7 @@ parameters:
 
 ### Baseline
 ```bash
+
 # Generare baseline
 php artisan phpstan:generate-baseline
 
@@ -169,6 +170,7 @@ public function getChartData(): array {
 
 ### Analisi
 ```bash
+
 # Analisi completa
 php artisan phpstan:analyse
 
@@ -181,6 +183,7 @@ php artisan phpstan:analyse --debug
 
 ### Fixing
 ```bash
+
 # Fix automatici
 php artisan phpstan:fix
 
