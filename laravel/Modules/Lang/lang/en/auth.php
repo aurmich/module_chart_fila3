@@ -1,10 +1,7 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
 
-=======
->>>>>>> aurmich/dev
 return [
     /*
     |--------------------------------------------------------------------------
@@ -30,11 +27,7 @@ return [
         'submit' => 'Sign in',
         'or' => 'or',
         'create_account' => 'create a new account',
-<<<<<<< HEAD
         'link' => 'Sign in',
-=======
-        'link' => 'Login',
->>>>>>> aurmich/dev
     ],
 
     'register' => [
@@ -49,19 +42,13 @@ return [
     ],
 
     'verify' => [
-<<<<<<< HEAD
         'title' => 'Verify your email address',
         'success' => 'A new verification link has been sent to your email address.',
-=======
-        'title' => 'Verify Your Email Address',
-        'success' => 'A fresh verification link has been sent to your email address.',
->>>>>>> aurmich/dev
         'notice' => 'Before proceeding, please check your email for a verification link. If you did not receive the email,',
         'another_request' => 'click here to request another',
     ],
 
     'forgot_password' => [
-<<<<<<< HEAD
         'title' => 'Forgot password',
         'email' => 'Email',
         'submit' => 'Send reset link',
@@ -69,15 +56,6 @@ return [
 
     'reset_password' => [
         'title' => 'Reset password',
-=======
-        'title' => 'Forgot Password',
-        'email' => 'Email',
-        'submit' => 'Send Password Reset Link',
-    ],
-
-    'reset_password' => [
-        'title' => 'Reset Password',
->>>>>>> aurmich/dev
         'email' => 'Email',
         'password' => 'Password',
         'password_confirmation' => 'Confirm Password',
@@ -85,11 +63,7 @@ return [
     ],
 
     'confirm_password' => [
-<<<<<<< HEAD
         'title' => 'Confirm password',
-=======
-        'title' => 'Confirm Password',
->>>>>>> aurmich/dev
         'password' => 'Password',
         'submit' => 'Confirm',
     ],
@@ -97,7 +71,6 @@ return [
     'logout' => [
         'submit' => 'Logout',
         'title' => 'Logout',
-<<<<<<< HEAD
         'success_title' => 'Logout successful',
         'success_message' => 'You have been successfully logged out.',
         'error_title' => 'Error during logout',
@@ -107,17 +80,6 @@ return [
         'cancel_button' => 'Cancel',
         'back_to_home' => 'Back to home',
         'try_again' => 'Try again',
-=======
-        'success_title' => 'Logged Out Successfully',
-        'success_message' => 'You have been successfully logged out.',
-        'error_title' => 'Logout Error',
-        'error_message' => 'An error occurred during logout. Please try again.',
-        'confirm_message' => 'Are you sure you want to log out?',
-        'confirm_button' => 'Confirm Logout',
-        'cancel_button' => 'Cancel',
-        'back_to_home' => 'Back to Home',
-        'try_again' => 'Try Again',
->>>>>>> aurmich/dev
         'processing' => 'Logging out...',
     ],
     
@@ -125,10 +87,6 @@ return [
         'manage_account' => 'Manage Account',
         'profile' => 'Profile',
         'settings' => 'Settings',
-<<<<<<< HEAD
         'logout' => 'Logout',
-=======
-        'logout' => 'Log Out',
->>>>>>> aurmich/dev
     ],
 ];

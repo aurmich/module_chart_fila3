@@ -4,17 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Providers\Filament;
 
-<<<<<<< HEAD
 use Filament\Panel;
 use Filament\SpatieLaravelTranslatablePlugin;
-=======
->>>>>>> aurmich/dev
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 class AdminPanelProvider extends XotBasePanelProvider
 {
     protected string $module = 'Lang';
-<<<<<<< HEAD
 
     public function panel(Panel $panel): Panel
     {
@@ -35,6 +31,4 @@ class AdminPanelProvider extends XotBasePanelProvider
 
         return $panel;
     }
-=======
->>>>>>> aurmich/dev
 }

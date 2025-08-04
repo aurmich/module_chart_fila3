@@ -37,15 +37,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
     public function boot(): void
     {
         parent::boot();
-<<<<<<< HEAD
-<<<<<<< HEAD
         // $this->registerLang(); // ✅ Temporaneamente disabilitato per debug
-=======
-        $this->registerLang();
->>>>>>> aurmich/dev
-=======
-        // $this->registerLang(); // ✅ Temporaneamente disabilitato per debug
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
     }
 
     /**
@@ -63,19 +55,9 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
     public function registerLang(): void
     {
         /** @var array<string, array<string, string>>|null $locales */
-<<<<<<< HEAD
-<<<<<<< HEAD
         $locales = config()->has('laravellocalization.supportedLocales') 
             ? config('laravellocalization.supportedLocales') 
             : null;
-=======
-        $locales = config('laravellocalization.supportedLocales');
->>>>>>> aurmich/dev
-=======
-        $locales = config()->has('laravellocalization.supportedLocales') 
-            ? config('laravellocalization.supportedLocales') 
-            : null;
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 
         if (! \is_array($locales)) {
             $locales = ['it' => ['name' => 'it'], 'en' => ['name' => 'en']];
