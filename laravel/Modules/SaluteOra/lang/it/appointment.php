@@ -4,6 +4,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 98867c82 (translations)
 declare(strict_types=1);
 
 return [
@@ -49,6 +52,7 @@ return [
     ],
 
     'fields' => [
+<<<<<<< HEAD
         'patient' => [
             'label' => 'Paziente',
             'placeholder' => 'Seleziona il paziente',
@@ -61,12 +65,15 @@ return [
             'help' => 'Medico che terrà l\'appuntamento',
             'helper_text' => '',
         ],
+=======
+>>>>>>> 98867c82 (translations)
         'title' => [
             'label' => 'Titolo',
             'placeholder' => 'Inserisci un titolo per l\'appuntamento',
             'help' => 'Breve descrizione dell\'appuntamento',
             'helper_text' => '',
         ],
+<<<<<<< HEAD
         'starts_at' => [
             'label' => 'Data e Ora Inizio',
             'placeholder' => 'Seleziona data e ora di inizio',
@@ -79,6 +86,8 @@ return [
             'help' => 'Quando termina l\'appuntamento',
             'helper_text' => '',
         ],
+=======
+>>>>>>> 98867c82 (translations)
         'patient_id' => [
             'label' => 'Paziente',
             'placeholder' => 'Seleziona il paziente',
@@ -376,6 +385,7 @@ return [
         'description' => 'Non ci sono appuntamenti per i criteri selezionati',
         'action' => 'Crea il primo appuntamento',
     ],
+<<<<<<< HEAD
     'states' => [
         'pending' => [
             'label' => 'In attesa',
@@ -1187,3 +1197,6 @@ return [
 >>>>>>> 2bcfd382 (fix Address)
 =======
 >>>>>>> 8aab2e4a (📝 (route-service-provider.md): update documentation for route service provider to improve clarity and organization)
+=======
+];
+>>>>>>> 98867c82 (translations)

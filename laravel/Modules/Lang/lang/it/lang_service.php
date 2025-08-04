@@ -1118,7 +1118,18 @@ return array (
       'label' => 'Scarica',
       'tooltip' => 'Scarica il file',
     ),
+<<<<<<< HEAD
 >>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
+=======
+    'export_xls' => 
+    array (
+      'label' => 'export_xls',
+    ),
+    'createAnother' => 
+    array (
+      'label' => 'createAnother',
+    ),
+>>>>>>> 98867c82 (translations)
   ),
   'messages' => 
   array (

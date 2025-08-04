@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array (
   'navigation' => 
   array (
@@ -518,6 +519,8 @@ return array (
   ),
 );
 =======
+=======
+>>>>>>> 98867c82 (translations)
 declare(strict_types=1);
 
 return [
@@ -527,11 +530,19 @@ return [
         'icon' => 'heroicon-o-user',
         'sort' => 40,
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 98867c82 (translations)
     'model' => [
         'label' => 'Utente',
         'plural' => 'Utenti',
         'description' => 'Gestione degli utenti della piattaforma',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 98867c82 (translations)
     'pages' => [
         'index' => [
             'title' => 'Elenco Utenti',
@@ -554,25 +565,53 @@ return [
             'description' => 'Dettagli completi del profilo utente',
         ],
     ],
+<<<<<<< HEAD
     'fields' => [
         'id' => [
             'label' => 'ID',
             'placeholder' => '',
             'helper_text' => '',
+=======
+
+    'fields' => [
+        'id' => [
+            'label' => 'ID',
+            'placeholder' => 'ID generato automaticamente',
+            'help' => 'Identificativo univoco dell\'utente',
+>>>>>>> 98867c82 (translations)
         ],
         'name' => [
             'label' => 'Nome',
             'placeholder' => 'Mario Rossi',
+<<<<<<< HEAD
             'helper_text' => 'Nome completo dell\'utente',
+=======
+            'help' => 'Nome completo dell\'utente',
+        ],
+        'first_name' => [
+            'label' => 'Nome',
+            'placeholder' => 'Mario',
+            'help' => 'Nome di battesimo dell\'utente',
+        ],
+        'last_name' => [
+            'label' => 'Cognome',
+            'placeholder' => 'Rossi',
+            'help' => 'Cognome dell\'utente',
+>>>>>>> 98867c82 (translations)
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'utente@email.com',
+<<<<<<< HEAD
             'helper_text' => 'Indirizzo email per l\'accesso',
+=======
+            'help' => 'Indirizzo email per l\'accesso',
+>>>>>>> 98867c82 (translations)
         ],
         'role' => [
             'label' => 'Ruolo',
             'placeholder' => 'Seleziona il ruolo',
+<<<<<<< HEAD
             'helper_text' => 'Ruolo assegnato all\'utente',
         ],
         'active' => [
@@ -630,10 +669,162 @@ return [
             'icon' => 'heroicon-o-key',
         ],
     ],
+=======
+            'help' => 'Ruolo assegnato all\'utente',
+        ],
+        'type' => [
+            'label' => 'Tipo',
+            'placeholder' => 'Seleziona il tipo',
+            'help' => 'Tipologia di utente nel sistema',
+        ],
+        'active' => [
+            'label' => 'Attivo',
+            'placeholder' => 'Stato di attivazione',
+            'help' => 'L\'utente è attivo e può accedere',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+            'placeholder' => 'Data di registrazione',
+            'help' => 'Data di registrazione dell\'utente',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+            'placeholder' => 'Data ultima modifica',
+            'help' => 'Data ultima modifica profilo',
+        ],
+    ],
+
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Utente',
+            'tooltip' => 'Registra un nuovo utente',
+            'modal_heading' => 'Nuovo Utente',
+            'modal_description' => 'Inserisci i dati per registrare un nuovo utente',
+            'success' => 'Utente creato con successo',
+            'error' => 'Errore durante la creazione dell\'utente',
+        ],
+        'edit' => [
+            'label' => 'Modifica',
+            'tooltip' => 'Modifica i dati dell\'utente',
+            'modal_heading' => 'Modifica Utente',
+            'modal_description' => 'Aggiorna le informazioni dell\'utente',
+            'success' => 'Utente aggiornato con successo',
+            'error' => 'Errore durante l\'aggiornamento dell\'utente',
+        ],
+        'delete' => [
+            'label' => 'Elimina',
+            'tooltip' => 'Elimina l\'utente',
+            'confirmation' => 'Sei sicuro di voler eliminare questo utente? Questa azione non può essere annullata.',
+            'success' => 'Utente eliminato con successo',
+            'error' => 'Errore durante l\'eliminazione dell\'utente',
+        ],
+        'activate' => [
+            'label' => 'Attiva',
+            'tooltip' => 'Rendi l\'utente attivo',
+            'confirmation' => 'Sei sicuro di voler attivare questo utente?',
+            'success' => 'Utente attivato con successo',
+            'error' => 'Errore durante l\'attivazione dell\'utente',
+        ],
+        'deactivate' => [
+            'label' => 'Disattiva',
+            'tooltip' => 'Disattiva temporaneamente l\'utente',
+            'confirmation' => 'Sei sicuro di voler disattivare questo utente?',
+            'success' => 'Utente disattivato con successo',
+            'error' => 'Errore durante la disattivazione dell\'utente',
+        ],
+        'reset_password' => [
+            'label' => 'Reset Password',
+            'tooltip' => 'Invia una nuova password all\'utente',
+            'modal_heading' => 'Reset Password',
+            'modal_description' => 'Verrà generata una nuova password temporanea e inviata via email',
+            'confirmation' => 'Sei sicuro di voler reimpostare la password di questo utente?',
+            'success' => 'Password reimpostata con successo',
+            'error' => 'Errore durante il reset della password',
+        ],
+        'apply_filters' => [
+            'label' => 'Applica Filtri',
+            'tooltip' => 'Applica i filtri selezionati',
+        ],
+        'reset_filters' => [
+            'label' => 'Azzera Filtri',
+            'tooltip' => 'Rimuovi tutti i filtri applicati',
+        ],
+        'open_filters' => [
+            'label' => 'Apri Filtri',
+            'tooltip' => 'Mostra pannello filtri',
+        ],
+        'toggle_columns' => [
+            'label' => 'Mostra/Nascondi Colonne',
+            'tooltip' => 'Personalizza le colonne visualizzate',
+        ],
+        'reorder_records' => [
+            'label' => 'Riordina Record',
+            'tooltip' => 'Riordina i record della tabella',
+        ],
+    ],
+
+    'filters' => [
+        'active' => [
+            'label' => 'Solo Attivi',
+            'placeholder' => 'Filtra per utenti attivi',
+            'help' => 'Mostra solo gli utenti attualmente attivi',
+        ],
+        'role' => [
+            'label' => 'Per Ruolo',
+            'placeholder' => 'Seleziona ruolo',
+            'help' => 'Filtra per ruolo specifico',
+        ],
+        'type' => [
+            'label' => 'Per Tipo',
+            'placeholder' => 'Seleziona tipo',
+            'help' => 'Filtra per tipologia di utente',
+        ],
+        'created_at' => [
+            'label' => 'Data Registrazione',
+            'placeholder' => 'Seleziona periodo',
+            'help' => 'Filtra per periodo di registrazione',
+        ],
+    ],
+
+    'bulk_actions' => [
+        'activate_selected' => [
+            'label' => 'Attiva Selezionati',
+            'tooltip' => 'Attiva tutti gli utenti selezionati',
+            'confirmation' => 'Sei sicuro di voler attivare tutti gli utenti selezionati?',
+            'success' => 'Utenti attivati con successo',
+            'error' => 'Errore durante l\'attivazione degli utenti',
+        ],
+        'deactivate_selected' => [
+            'label' => 'Disattiva Selezionati',
+            'tooltip' => 'Disattiva tutti gli utenti selezionati',
+            'confirmation' => 'Sei sicuro di voler disattivare tutti gli utenti selezionati?',
+            'success' => 'Utenti disattivati con successo',
+            'error' => 'Errore durante la disattivazione degli utenti',
+        ],
+        'reset_password_selected' => [
+            'label' => 'Reset Password Selezionati',
+            'tooltip' => 'Reimposta password per tutti gli utenti selezionati',
+            'modal_heading' => 'Reset Password Multiplo',
+            'modal_description' => 'Verranno generate nuove password temporanee per tutti gli utenti selezionati',
+            'confirmation' => 'Sei sicuro di voler reimpostare le password di tutti gli utenti selezionati?',
+            'success' => 'Password reimpostate con successo',
+            'error' => 'Errore durante il reset delle password',
+        ],
+        'delete_selected' => [
+            'label' => 'Elimina Selezionati',
+            'tooltip' => 'Elimina tutti gli utenti selezionati',
+            'confirmation' => 'Sei sicuro di voler eliminare tutti gli utenti selezionati? Questa azione non può essere annullata.',
+            'success' => 'Utenti eliminati con successo',
+            'error' => 'Errore durante l\'eliminazione degli utenti',
+        ],
+    ],
+
+>>>>>>> 98867c82 (translations)
     'messages' => [
         'activated_successfully' => 'Utente attivato con successo',
         'deactivated_successfully' => 'Utente disattivato con successo',
         'password_reset_successfully' => 'Password reimpostata con successo',
+<<<<<<< HEAD
     ],
     'search_placeholder' => 'Cerca per nome, email o ruolo...'
 ];
@@ -648,3 +839,73 @@ return [
   'search_placeholder' => 'Cerca per nome, email o ruolo...',
 );
 >>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
+=======
+        'email_sent' => 'Email di notifica inviata',
+        'empty_state' => 'Nessun utente trovato',
+        'loading' => 'Caricamento utenti in corso...',
+    ],
+
+    'notifications' => [
+        'created' => 'Utente creato con successo',
+        'updated' => 'Utente aggiornato con successo',
+        'deleted' => 'Utente eliminato con successo',
+        'error' => 'Si è verificato un errore durante l\'operazione',
+        'permission_denied' => 'Non hai i permessi per eseguire questa operazione',
+    ],
+
+    'validation' => [
+        'required' => 'Il campo :attribute è obbligatorio',
+        'email' => 'Il campo :attribute deve essere un indirizzo email valido',
+        'unique' => 'Il valore del campo :attribute è già stato utilizzato',
+        'min' => [
+            'string' => 'Il campo :attribute deve contenere almeno :min caratteri',
+        ],
+        'max' => [
+            'string' => 'Il campo :attribute non può superare :max caratteri',
+        ],
+        'confirmed' => 'La conferma del campo :attribute non corrisponde',
+        'password_format' => 'La password deve contenere almeno 8 caratteri',
+    ],
+
+    'search' => [
+        'placeholder' => 'Cerca per nome, email o ruolo...',
+        'label' => 'Cerca',
+        'help' => 'Inserisci il termine di ricerca',
+    ],
+
+    'empty_state' => [
+        'heading' => 'Nessun utente trovato',
+        'description' => 'Non sono stati trovati utenti corrispondenti ai criteri di ricerca',
+        'action' => 'Aggiungi il primo utente',
+    ],
+
+    'sections' => [
+        'personal_info' => [
+            'label' => 'Informazioni Personali',
+            'description' => 'Dati anagrafici dell\'utente',
+        ],
+        'account_settings' => [
+            'label' => 'Impostazioni Account',
+            'description' => 'Configurazioni di accesso e sicurezza',
+        ],
+        'permissions' => [
+            'label' => 'Permessi',
+            'description' => 'Ruoli e autorizzazioni assegnate',
+        ],
+    ],
+
+    'roles' => [
+        'admin' => 'Amministratore',
+        'user' => 'Utente',
+        'moderator' => 'Moderatore',
+        'guest' => 'Ospite',
+    ],
+
+    'statuses' => [
+        'active' => 'Attivo',
+        'inactive' => 'Inattivo',
+        'pending' => 'In attesa',
+        'suspended' => 'Sospeso',
+    ],
+];
+>>>>>>> 98867c82 (translations)
