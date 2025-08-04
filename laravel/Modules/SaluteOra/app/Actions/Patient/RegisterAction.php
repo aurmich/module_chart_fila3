@@ -5,12 +5,17 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Actions\Patient;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
+=======
+use Illuminate\Support\Str;
+>>>>>>> 86a4d226 (✨ (patient.php): add new localization keys for reorderRecords, resetFilters, and openFilters to enhance user interface)
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Modules\SaluteOra\Models\Patient;
 use Modules\Xot\Contracts\UserContract;
+<<<<<<< HEAD
 use Modules\SaluteOra\States\User\Pending;
 use Illuminate\Support\Facades\Notification;
 use Modules\Media\Actions\SaveAttachmentsAction;
@@ -29,6 +34,9 @@ use Illuminate\Support\Str;
 <<<<<<< HEAD
 >>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
 =======
+=======
+use Modules\SaluteOra\States\User\Pending;
+>>>>>>> 86a4d226 (✨ (patient.php): add new localization keys for reorderRecords, resetFilters, and openFilters to enhance user interface)
 use Illuminate\Support\Facades\Notification;
 use Modules\Notify\Notifications\RecordNotification;
 
@@ -42,6 +50,7 @@ class RegisterAction
      * @param array<string, mixed> $data
      * @return Patient
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
     public function execute(UserContract $record,array $data): Patient
     {
@@ -116,6 +125,9 @@ class RegisterAction
         
 =======
     public function execute(array $data): Patient
+=======
+    public function execute(UserContract $record,array $data): Patient
+>>>>>>> 86a4d226 (✨ (patient.php): add new localization keys for reorderRecords, resetFilters, and openFilters to enhance user interface)
     {
         return DB::transaction(function () use ($data) {
 

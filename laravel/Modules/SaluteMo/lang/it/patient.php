@@ -540,6 +540,7 @@ return array (
       'label' => 'toggleColumns',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
     'value' => 
     array (
       'description' => 'value',
@@ -577,6 +578,20 @@ return array (
     ),
 =======
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+    'reorderRecords' => 
+    array (
+      'label' => 'reorderRecords',
+    ),
+    'resetFilters' => 
+    array (
+      'label' => 'resetFilters',
+    ),
+    'openFilters' => 
+    array (
+      'label' => 'openFilters',
+    ),
+>>>>>>> 86a4d226 (✨ (patient.php): add new localization keys for reorderRecords, resetFilters, and openFilters to enhance user interface)
   ),
   'actions' => 
   array (

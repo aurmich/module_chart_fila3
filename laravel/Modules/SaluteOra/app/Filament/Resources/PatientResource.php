@@ -16,6 +16,7 @@ use Filament\Forms\Set;
 use Livewire\Component;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 use Filament\Widgets\Widget;
 use Modules\Xot\Datas\XotData;
 use Illuminate\Validation\Rule;
@@ -59,6 +60,8 @@ use Modules\Xot\Filament\Resources\XotBaseResource\Pages;
 =======
 use Livewire\Component;
 >>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
+=======
+>>>>>>> 86a4d226 (✨ (patient.php): add new localization keys for reorderRecords, resetFilters, and openFilters to enhance user interface)
 use Filament\Widgets\Widget;
 use Modules\Xot\Datas\XotData;
 use Filament\Resources\Resource;
@@ -83,9 +86,9 @@ use Livewire\Component;
 =======
 use Modules\Xot\Actions\View\GetViewPathAction;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
+
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Patient\Filament\Components\HealthCardUpload;
-
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 <<<<<<< HEAD
 >>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
@@ -314,27 +317,42 @@ class PatientResource extends XotBaseResource
     protected static function getDocumentsStepSchema(): array
     {
         $attachments = Patient::$attachments;
+        $uuid = Str::uuid()->toString();
         $schema = [];
+        
         foreach ($attachments as $attachment) {
             $schema[] = Forms\Components\FileUpload::make($attachment)
-            //$schema[] = Forms\Components\SpatieMediaLibraryFileUpload::make($attachment)
                 ->disk('local')
-                //->collection($attachment)
-                ->directory('documents/'.$attachment)
-                ->downloadable()
-                ->openable()
+                ->directory('documents/'.$attachment.'/'.$uuid)
+                //->downloadable()
+                //->openable()
                 ->acceptedFileTypes(['application/pdf', 'image/*'])
                 ->maxSize(5120)
                 ->required()
                 ->reorderable()
+                //->multiple()
+                ->preserveFilenames()
                 ->columnSpanFull()
-                //->afterStateUpdated(
-                //    function (HasForms $livewire, SpatieMediaLibraryFileUpload $component, TemporaryUploadedFile //$state, Get $get, ?HasMedia $record) {
-                //        dddx(['record'=>$record,'livewire'=>$livewire,'component'=>$component,'state'=>$state,//'get'=>$get,
-                        //'a'=>self::$record,
-                //    ]);
-                //    }
-                //)
+                ->afterStateUpdated(function ($state, Forms\Set $set) use ($attachment) {
+                    if (!$state) return;
+                    $state=Arr::wrap($state);
+                    $sessionId = session()->getId();
+                    $sessionDir = "session-uploads/{$sessionId}";
+                    $sessionFiles = [];
+                    foreach ($state as $file) {
+                        if ($file instanceof \Livewire\Features\SupportFileUploads\TemporaryUploadedFile) {
+                            // Salva direttamente nella directory di sessione
+                            $fileName = time() . '_' . $file->getClientOriginalName();
+                            $sessionPath = $file->storeAs($sessionDir, $fileName, 'local');
+                            $sessionFiles[] = $sessionPath;
+                        } else {
+                            // È già un percorso salvato
+                            $sessionFiles[] = $file;
+                        }
+                    }
+                    
+                    $set($attachment, $sessionFiles);
+                })
                 ;
         }
         return $schema;
