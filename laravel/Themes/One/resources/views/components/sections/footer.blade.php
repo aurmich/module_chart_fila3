@@ -69,8 +69,9 @@
     'id' => ($section['attributes']['id'] ?? '')
 ]) }}>
     <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
+        <div class="w-full flex flex-col justify-center">
             <!-- Colonna Logo e Descrizione -->
+<<<<<<< HEAD
             <div class="space-y-6 flex-col justify-center">
                 <img src="/img/saluteOra-new-logo.png" alt="{{ config('app.name') }}" class="h-24 w-auto">
                 <p class="text-medium text-white">
@@ -111,6 +112,17 @@
                     </div>
                 </form>
 >>>>>>> 54f4fa16 (.)
+=======
+           
+                <div class="w-full flex justify-center">
+                    <img src="/img/saluteOra-new-logo.png" alt="{{ config('app.name') }}" class="h-24 w-auto">
+                </div>
+                <div class="w-full flex justify-center">
+                    <p class="text-medium text-white">
+                        Promuoviamo la salute orale delle gestanti attraverso prevenzione e assistenza specialistica.
+                    </p>
+                </div>          
+>>>>>>> 7e1c3ad6 (- sistemato footer;)
             </div>
         </div>
 
@@ -125,11 +137,8 @@
 >>>>>>> aurmich/dev
 =======
         <div class="mt-12 pt-8 border-t border-neutral-focus">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="text-center md:text-left">
-                    <p class="text-sm text-white">&copy; {{ date('Y') }} {{ config('app.name') }}. Tutti i diritti riservati.</p>
-                </div>
-                <div class="text-center md:text-right space-x-4">
+            <div class="flex justify-center">
+                <div class="text-center m-6 md:text-right space-x-4">
                     <a href="{{ url('privacy') }}" class="text-[#0D9488] text-sm hover:text-primary-400 transition-colors">Privacy Policy</a>
                     <a href="{{ url('terms') }}" class="text-[#0D9488] text-sm hover:text-primary-400 transition-colors">Termini e Condizioni</a>
                     <a href="{{ url('cookies') }}" class="text-[#0D9488] text-sm hover:text-primary-400 transition-colors">Cookie Policy</a>

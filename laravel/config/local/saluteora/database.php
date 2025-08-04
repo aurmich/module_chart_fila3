@@ -112,6 +112,9 @@ $res = [
             'engine' => null,
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7e1c3ad6 (- sistemato footer;)
 'setting' => [
 
             'driver' => 'mysql',
@@ -132,9 +135,12 @@ $res = [
                 PDO::MYSQL_ATTR_SSL_CA => env('SETTING_MYSQL_ATTR_SSL_CA'),
             ]) : [],
         ],
+<<<<<<< HEAD
 =======
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 7e1c3ad6 (- sistemato footer;)
         
 
     ],

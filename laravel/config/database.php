@@ -154,9 +154,12 @@ return [
 =======
         'setting' => [
 
+<<<<<<< HEAD
 =======
         'setting' => [
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 7e1c3ad6 (- sistemato footer;)
             'driver' => 'mysql',
             'url' => env('SETTING_DATABASE_URL'),
             'host' => env('SETTING_DB_HOST', '127.0.0.1'),
