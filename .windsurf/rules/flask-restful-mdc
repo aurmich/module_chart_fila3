@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: A comprehensive guide to best practices for developing RESTful APIs using Flask and Flask-RESTful, covering code organization, performance, security, and testing.
 globs: *.py
 ---

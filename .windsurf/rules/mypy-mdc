@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: This rule file outlines best practices for using mypy in Python projects, emphasizing gradual adoption, consistent configuration, and leveraging advanced features for improved code quality and maintainability. It covers code organization, performance, security, testing, common pitfalls, and tooling.
 globs: *.py
 ---

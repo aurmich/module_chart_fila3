@@ -1,6 +1,12 @@
 ---
+<<<<<<< HEAD
 trigger: always_on
 description:
 globs:
+=======
+description:
+globs:
+alwaysApply: false
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 ---
 # Contratti e Interfacce per la Moderazione Utenti

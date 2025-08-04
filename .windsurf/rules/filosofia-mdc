@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 trigger: manual
 description:
 globs:
@@ -33,3 +34,13 @@ La filosofia è la disciplina che si occupa di riflettere criticamente sui princ
 - Valori aziendali
 - Codici etici
 - Analisi delle conseguenze delle scelte progettuali
+=======
+description:
+globs:
+alwaysApply: false
+---
+## Console Commands Filosofia
+- La responsabilità della registrazione dei comandi console è della base, non del modulo
+- Ogni modulo si occupa solo della propria logica di dominio
+- Chiarezza e separazione delle responsabilità = codice più pulito
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)

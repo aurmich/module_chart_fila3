@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: Regole per mantenere la neutralità nella documentazione dei moduli, assicurando che la documentazione sia generica, riutilizzabile e priva di riferimenti specifici a progetti particolari.
 globs: *.md, docs/**/*.md, Modules/*/docs/**/*.md
 ---
@@ -88,9 +91,15 @@ Consigli per l'utilizzo ottimale.
 ```php
 // ERRATO
 $config = [
+<<<<<<< HEAD
     'database' => '<nome progetto>_production',
     'domain' => '<nome progetto>.com',
     'admin_email' => 'admin@<nome progetto>.com',
+=======
+    'database' => '_production',
+    'domain' => '.com',
+    'admin_email' => 'admin@.com',
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 ];
 
 // CORRETTO

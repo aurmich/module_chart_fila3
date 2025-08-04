@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: This rule provides comprehensive guidelines for GitHub Actions development, covering best practices, coding standards, performance, security, and testing.  It aims to ensure efficient, reliable, secure, and maintainable workflows.
 globs: .github/workflows/*.yml
 ---

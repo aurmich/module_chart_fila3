@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 trigger: manual
 description:
 globs:
@@ -29,6 +30,12 @@ globs:
 - [Documentazione Stati <nome progetto>](mdc:../../laravel/Modules/<nome progetto>/docs/STATES.md)
 - [Regole Generali Stati](mdc:../../laravel/Modules/Xot/docs/STATES.md)
 
+=======
+description:
+globs:
+alwaysApply: false
+---
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 # Regole per Stati e Transizioni
 
 ## Quando
@@ -86,5 +93,13 @@ class ActiveToSuspended extends Transition
 ```
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Documentazione Stati](mdc:../laravel/Modules/<nome progetto>/docs/STATES.md)
+=======
+<<<<<<< HEAD
+- [Documentazione Stati](mdc:../laravel/Modules/<nome progetto>/docs/STATES.md)
+=======
+- [Documentazione Stati](mdc:../laravel/Modules/SaluteOra/docs/STATES.md)
+>>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 - [Documentazione Spatie Model States](mdc:https:/spatie.be/docs/laravel-model-states)

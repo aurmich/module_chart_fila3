@@ -1,8 +1,21 @@
+<<<<<<< HEAD
 ---
 trigger: manual
 description:
 globs:
 -------|-------------|
+=======
+# Convenzioni di Naming per Acronimi
+
+## Regola Fondamentale
+
+Nel sistema, gli acronimi nei nomi delle classi e dei file devono utilizzare **PascalCase** e non tutte maiuscole.
+
+## Esempi Corretti vs Errati
+
+| ❌ Errato | ✅ Corretto |
+|----------|-------------|
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 | `SendSMSPage` | `SendSmsPage` |
 | `SendAWSEmailPage` | `SendAwsEmailPage` |
 | `HTTPService` | `HttpService` |
@@ -26,6 +39,10 @@ Questa regola si applica a:
 
 ## Riferimenti
 
+<<<<<<< HEAD
 - [Modules/Notify/docs/ACRONYM_NAMING_CONVENTIONS.md](file:///var/www/html/<nome progetto>/laravel/Modules/Notify/docs/ACRONYM_NAMING_CONVENTIONS.md)
+=======
+- [Modules/Notify/docs/ACRONYM_NAMING_CONVENTIONS.md](file:///var/www/html//laravel/Modules/Notify/docs/ACRONYM_NAMING_CONVENTIONS.md)
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 - [PSR-1: Basic Coding Standard](https://www.php-fig.org/psr/psr-1/)
 - [Laravel Documentation - Coding Style](https://laravel.com/docs/10.x/contributions#coding-style)

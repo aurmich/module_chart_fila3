@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: This rule provides comprehensive guidance on NestJS best practices, coding standards, and architectural patterns. It aims to help developers build scalable, maintainable, and performant NestJS applications by covering code organization, security, testing, and other essential aspects.
 globs: *.ts
 ---

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Filament Resource Rules for <nome progetto> Project
+=======
+# Filament Resource Rules for SaluteOra Project
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 
 ## Rule 1: Classes Extending XotBaseResource
 
@@ -67,7 +71,11 @@ class MedicalHistoryResource extends XotBaseResource
 **Examples**:
 ```php
 // Correct Namespace
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Resources;
+=======
+namespace Modules\SaluteOra\Filament\Resources;
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 
 use Modules\Xot\Filament\Resources\XotBaseResource;
 

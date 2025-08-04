@@ -40,6 +40,7 @@ Il principio DRY afferma che "ogni pezzo di conoscenza deve avere una singola, i
 - Non duplicare mai la registrazione dei comandi console nei ServiceProvider dei moduli
 - Usare sempre l'autoregistrazione centralizzata (es. XotBaseServiceProvider)
 - Ogni eccezione va documentata e motivata
+<<<<<<< HEAD
 
 ## Regola AddressResource
 
@@ -79,3 +80,5 @@ Tutti i modelli di un modulo devono estendere il BaseModel del modulo stesso (es
 - [ ] Tutti i modelli estendono il BaseModel del modulo
 - [ ] La logica comune è centralizzata
 - [ ] La documentazione è aggiornata
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)

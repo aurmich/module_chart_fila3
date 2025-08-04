@@ -1,7 +1,13 @@
 ---
+<<<<<<< HEAD
 trigger: always_on
 description:
 globs:
+=======
+description:
+globs:
+alwaysApply: true
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 ---
 # Best Practices Messaggi di Validazione Laravel
 
@@ -27,23 +33,41 @@ globs:
 
 ### FormRequest
 ```php
+<<<<<<< HEAD
 class StoreUserRequest extends BaseFormRequest {
     public function rules() {
         return [
             'email' => ['required', 'email', 'max:255'],
             'password' => ['required', 'min:8'],
+=======
+class StoreSpotRequest extends BaseFormRequest {
+    public function rules() {
+        return [
+            'name' => ['required', 'string', 'max:255'],
+            'location' => ['required', 'string'],
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
         ];
     }
     public function messages() {
         return [
+<<<<<<< HEAD
             'email.required' => __('user.fields.email_required'),
             'password.min' => __('user.fields.password_min'),
+=======
+            'name.required' => __('windsurf.fields.name_required'),
+            'location.required' => __('windsurf.fields.location_required'),
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
         ];
     }
     public function attributes() {
         return [
+<<<<<<< HEAD
             'email' => __('user.fields.email'),
             'password' => __('user.fields.password'),
+=======
+            'name' => __('windsurf.fields.name'),
+            'location' => __('windsurf.fields.location'),
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
         ];
     }
 }
@@ -51,6 +75,7 @@ class StoreUserRequest extends BaseFormRequest {
 
 ### File di traduzione
 ```php
+<<<<<<< HEAD
 // resources/lang/it/user.php
 return [
     'fields' => [
@@ -58,6 +83,15 @@ return [
         'password' => 'Password',
         'email_required' => 'L\'email è obbligatoria',
         'password_min' => 'La password deve essere di almeno 8 caratteri',
+=======
+// resources/lang/it/windsurf.php
+return [
+    'fields' => [
+        'name' => 'Nome',
+        'location' => 'Località',
+        'name_required' => 'Il nome è obbligatorio',
+        'location_required' => 'La località è obbligatoria',
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
     ],
 ];
 ```

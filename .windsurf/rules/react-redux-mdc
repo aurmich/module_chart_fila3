@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: Enforces best practices for structuring and maintaining React-Redux applications, focusing on code organization, performance, and maintainability. This rule provides guidelines for developers to write efficient, scalable, and testable React-Redux code.
 globs: *.js,*.jsx,*.ts,*.tsx
 ---

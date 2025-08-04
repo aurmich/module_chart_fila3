@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 trigger: always_on
 description:
 globs:
@@ -47,3 +48,9 @@ class ApproveOrderAction extends Action
 - [Migration Best Practices](mdc:migrations.mdc)
 - [Error Handling](mdc:error-handling.mdc)
 - [Checklist di Ripartenza](mdc:../docs/checklist-di-ripartenza.md)
+=======
+description:
+globs:
+alwaysApply: false
+---
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)

@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 trigger: manual
 description:
 globs:
@@ -33,3 +34,13 @@ Lo zen è una scuola di pensiero e pratica spirituale che pone l'accento sulla m
 - Semplicità nel design
 - Pause mindful durante il lavoro
 - Eliminazione di attività non essenziali
+=======
+description:
+globs:
+alwaysApply: false
+---
+## Console Commands Zen
+- La registrazione dei comandi console deve essere automatica e invisibile
+- Meno codice scritto = meno errori, più armonia
+- "Il miglior comando è quello che non devi mai registrare a mano"
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)

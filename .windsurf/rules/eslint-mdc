@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: This rule provides comprehensive guidelines for ESLint, covering code organization, common patterns, performance, security, testing, and tooling, ensuring high-quality, maintainable JavaScript/TypeScript code.
 globs: *.js,*.jsx,*.ts,*.tsx,*.vue
 ---

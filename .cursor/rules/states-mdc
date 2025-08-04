@@ -26,7 +26,11 @@ alwaysApply: false
 - Definire le transizioni nel metodo `config()`
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Documentazione Stati <nome progetto>](mdc:../../laravel/Modules/<nome progetto>/docs/STATES.md)
+=======
+- [Documentazione Stati SaluteOra](mdc:../../laravel/Modules/SaluteOra/docs/STATES.md)
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 - [Regole Generali Stati](mdc:../../laravel/Modules/Xot/docs/STATES.md)
 
 # Regole per Stati e Transizioni
@@ -86,5 +90,9 @@ class ActiveToSuspended extends Transition
 ```
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Documentazione Stati](mdc:../laravel/Modules/<nome progetto>/docs/STATES.md)
+=======
+- [Documentazione Stati](mdc:../laravel/Modules/SaluteOra/docs/STATES.md)
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 - [Documentazione Spatie Model States](mdc:https:/spatie.be/docs/laravel-model-states)

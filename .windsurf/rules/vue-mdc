@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: Comprehensive guidelines for Vue.js development, covering code structure, performance, security, testing, and tooling best practices. This rule provides actionable guidance to enhance code quality, maintainability, and developer productivity in Vue.js projects.
 globs: *.vue, *.js, *.ts
 ---

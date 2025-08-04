@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: This rule provides best practices and coding standards for developing with the AnyIO library, focusing on structured concurrency, task management, and proper use of synchronization primitives to create robust, cross-backend asynchronous applications.
 globs: *.py
 ---

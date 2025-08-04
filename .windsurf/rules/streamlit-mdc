@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: This rule provides guidelines and best practices for developing maintainable, performant, and secure Streamlit applications. It covers code organization, performance optimization, security considerations, testing strategies, and common pitfalls to avoid.
 globs: *.py
 ---

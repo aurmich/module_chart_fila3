@@ -1,7 +1,13 @@
 ---
+<<<<<<< HEAD
 trigger: manual
 description:
 globs:
+=======
+description:
+globs:
+alwaysApply: false
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 ---
 # Actions Queueable: Regole Trasversali
 
@@ -31,8 +37,16 @@ class ApproveUserAction {
 - [ ] Test per ogni Action
 
 ## Collegamenti correlati
+<<<<<<< HEAD
 - [User/actions.mdc](../../laravel/Modules/User/docs/actions.mdc)
 - [Patient/ACTIONS_BEST_PRACTICES.md](../../laravel/Modules/Patient/docs/ACTIONS_BEST_PRACTICES.md)
 - [actions-system.md](../../docs/actions-system.md)
 - [README centrale](../../docs/README.md)
 - [User/README](../../laravel/Modules/User/docs/README.md)
+=======
+- [User/actions.mdc](mdc:../../laravel/Modules/User/docs/actions.mdc)
+- [Patient/ACTIONS_BEST_PRACTICES.md](mdc:../../laravel/Modules/Patient/docs/ACTIONS_BEST_PRACTICES.md)
+- [actions-system.md](mdc:../../docs/actions-system.md)
+- [README centrale](mdc:../../docs/README.md)
+- [User/README](mdc:../../laravel/Modules/User/docs/README.md)
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)

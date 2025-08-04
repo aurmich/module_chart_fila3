@@ -6,7 +6,11 @@ alwaysApply: false
 # Regole per FetchEventsAction
 
 ## Namespace
+<<<<<<< HEAD
 - Il namespace deve essere `Modules\<nome progetto>\Actions\Patient\Calendar`
+=======
+- Il namespace deve essere `Modules\SaluteOra\Actions\Patient\Calendar`
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 
 ## Struttura
 - La classe deve estendere `Modules\Xot\Actions\Action`

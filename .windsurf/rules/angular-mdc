@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: This rule provides comprehensive guidelines for Angular development, covering coding standards, best practices, performance optimization, security considerations, and testing approaches to ensure maintainable, scalable, and high-performing applications.
 globs: *.ts,*.html,*.scss,*.css
 ---

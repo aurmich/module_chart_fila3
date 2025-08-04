@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: This rule provides best practices and coding standards for developing command-line interfaces (CLIs) using the Typer library in Python. It includes guidelines for code organization, performance, security, and testing, aiming to enhance usability and maintainability.
 globs: *.py
 ---

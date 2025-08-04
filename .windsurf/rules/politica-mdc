@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 trigger: manual
 description:
 globs:
@@ -33,3 +34,12 @@ La politica è l'insieme delle attività, processi e principi che regolano la ge
 - Policy di sicurezza informatica
 - Regolamenti interni di progetto
 - Linee guida etiche
+=======
+description:
+globs:
+alwaysApply: false
+---
+## Console Commands Politica
+- Vietata la registrazione manuale dei comandi console nei moduli
+- La coerenza è garantita dalla base comune (XotBaseServiceProvider)
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)

@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: A comprehensive guide to best practices for developing REST APIs using Django REST Framework (DRF), covering code structure, design patterns, security, performance, and testing.
 globs: *.py
 ---

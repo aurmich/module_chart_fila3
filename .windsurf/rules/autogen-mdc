@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: Provides coding standards, best practices, and guidance specific to the AutoGen library, covering aspects from code structure to security and performance.
 globs: *.py
 ---

@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: Comprehensive guide to Emacs Lisp coding standards, best practices, and common pitfalls. Focuses on maintainability, readability, and performance for building robust Emacs extensions.
 globs: *.el
 ---

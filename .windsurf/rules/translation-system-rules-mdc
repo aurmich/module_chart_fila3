@@ -1,7 +1,13 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
 description: Regole per il sistema di traduzione in applicazioni Laravel con Filament, che definiscono la struttura delle chiavi di traduzione, l'organizzazione dei file e le best practices per garantire un'applicazione multilingua manutenibile e scalabile.
 globs: *.php, *.blade.php, resources/lang/**/*.php
+=======
+description: Regole per il sistema di traduzione in applicazioni Laravel con Filament, che definiscono la struttura delle chiavi di traduzione, l'organizzazione dei file e le best practices per garantire un'applicazione multilingua manutenibile e scalabile.
+globs: *.php, *.blade.php, resources/lang/**/*.php
+alwaysApply: false
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 ---
 
 # Regole per il Sistema di Traduzione
@@ -33,13 +39,18 @@ globs: *.php, *.blade.php, resources/lang/**/*.php
 ### Struttura Gerarchica delle Chiavi
 ```php
 // CORRETTO
+<<<<<<< HEAD
 __('patient::doctor-resource.fields.first_name.label')
+=======
+__('windsurf::spot-resource.fields.name.label')
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 // ERRATO
 __('Nome')
 ```
 
 ### Organizzazione File
 ```php
+<<<<<<< HEAD
 // resources/lang/it/patient/doctor-resource.php
 return [
     'fields' => [
@@ -47,6 +58,15 @@ return [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome',
             'help' => 'Inserisci il nome del dottore',
+=======
+// resources/lang/it/windsurf/spot-resource.php
+return [
+    'fields' => [
+        'name' => [
+            'label' => 'Nome',
+            'placeholder' => 'Inserisci il nome',
+            'help' => 'Inserisci il nome dello spot',
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
         ],
     ],
 ];
@@ -55,17 +75,30 @@ return [
 ### Componenti Filament
 ```php
 // CORRETTO
+<<<<<<< HEAD
 TextInput::make('first_name') // Traduzione automatica
 // ERRATO
 TextInput::make('first_name')->label('Nome')
+=======
+TextInput::make('name') // Traduzione automatica
+// ERRATO
+TextInput::make('name')->label('Nome')
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 ```
 
 ### Enum
 ```php
+<<<<<<< HEAD
 enum DoctorStatus: string {
     case PENDING = 'pending';
     public function getLabel(): string {
         return __('patient::enums.doctor_status.pending');
+=======
+enum SpotStatus: string {
+    case ACTIVE = 'active';
+    public function getLabel(): string {
+        return __('windsurf::enums.spot_status.active');
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
     }
 }
 ```

@@ -1,13 +1,25 @@
 ---
+<<<<<<< HEAD
 trigger: manual
 description:
 globs:
 ---
 # Regola Cursor: Migrazioni XotBaseMigration
+=======
+description:
+globs:
+alwaysApply: false
+---
+# Regola Windsurf: Migrazioni XotBaseMigration
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 
 ## Regola
 - Usare SEMPRE `$this->hasColumn('nome_colonna')` nelle migrazioni che estendono XotBaseMigration.
 - NON usare mai `Schema::hasColumn`.
+<<<<<<< HEAD
+=======
+- La proprietà `$connection` deve essere dichiarata come `protected ?string $connection = 'mysql';` (o altro valore appropriato), mai solo `string`.
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 
 ## Esempio
 ```php

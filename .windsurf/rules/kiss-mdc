@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 trigger: manual
 description:
 globs:
@@ -35,3 +36,12 @@ Il principio KISS suggerisce che i sistemi funzionano meglio se mantenuti sempli
 
 ## Limiti
 - Alcuni problemi richiedono soluzioni complesse: valutare sempre il contesto.
+=======
+description:
+globs:
+alwaysApply: false
+---
+## Console Commands KISS
+- Non registrare mai manualmente i comandi console
+- Lascia che la base faccia il lavoro
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)

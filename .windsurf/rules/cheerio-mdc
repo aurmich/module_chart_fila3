@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: This rule provides best practices for using Cheerio for web scraping and HTML parsing in JavaScript, covering code organization, performance, security, testing, and common pitfalls.
 globs: *.js
 ---

@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: This rule file provides comprehensive best practices for Remix development, covering code organization, performance, security, testing, and more. It aims to guide developers in building maintainable, scalable, and secure Remix applications.
 globs: *.js,*.jsx,*.ts,*.tsx
 ---

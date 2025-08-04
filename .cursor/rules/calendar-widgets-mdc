@@ -5,12 +5,20 @@
 1. **Widget Naming**
    - Use `BaseCalendarWidget` as the base class for all calendar widgets
    - Follow the naming pattern `{UserType}CalendarWidget` (e.g., `DoctorCalendarWidget`)
+<<<<<<< HEAD
    - Place widgets in `Modules/<nome progetto>/Filament/Widgets/{UserType}/`
+=======
+   - Place widgets in `Modules/SaluteOra/Filament/Widgets/{UserType}/`
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 
 2. **File Structure**
    ```
    Modules/
+<<<<<<< HEAD
    └── <nome progetto>/
+=======
+   └── SaluteOra/
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
        ├── Filament/
        │   └── Widgets/
        │       ├── BaseCalendarWidget.php
@@ -45,7 +53,11 @@ abstract class BaseCalendarWidget extends FullCalendarWidget
 {
     protected static ?string $model = null;
     protected static string $heading = 'Calendar';
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
     protected function getEventsQuery();
     abstract protected function mapToEvent($model): array;
     protected function getCalendarConfig(): array;

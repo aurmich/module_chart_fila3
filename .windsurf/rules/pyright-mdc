@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: This rule provides comprehensive best practices for using pyright and BasedPyright in Python projects, covering code organization, patterns, performance, security, testing, common pitfalls, and tooling.
 globs: *.py
 ---

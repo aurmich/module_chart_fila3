@@ -1,7 +1,13 @@
 ---
+<<<<<<< HEAD
 trigger: always_on
 description:
 globs:
+=======
+description:
+globs:
+alwaysApply: false
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 ---
 # Best Practices Event Sourcing & CQRS (Modulo Activity)
 
@@ -30,5 +36,10 @@ globs:
 - https://github.com/spatie/laravel-event-sourcing
 - https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing
 - https://github.com/spatie/larabank-event-projector
+<<<<<<< HEAD
 - [README Activity](mdc:../../laravel/Modules/Activity/docs/README.md)
 - [event-sourcing.md](mdc:../../laravel/Modules/Activity/docs/event-sourcing.md)
+=======
+- [README Activity](../../laravel/Modules/Activity/docs/README.md)
+- [event-sourcing.md](../../laravel/Modules/Activity/docs/event-sourcing.md)
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)

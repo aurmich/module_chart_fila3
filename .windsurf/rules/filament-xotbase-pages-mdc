@@ -1,5 +1,11 @@
 ---
+<<<<<<< HEAD
 trigger: manual
 description:
 globs:
+=======
+description:
+globs:
+alwaysApply: false
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 ---

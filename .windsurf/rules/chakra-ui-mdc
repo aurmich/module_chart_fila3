@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: This rule enforces best practices and coding standards for Chakra UI projects, including accessibility, styling, performance, and security. It aims to provide clear, actionable guidance for developers using Chakra UI.
 globs: *.js,*.jsx,*.ts,*.tsx
 ---

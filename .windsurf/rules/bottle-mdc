@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: Comprehensive coding standards, best practices, and architectural guidelines for Python backend development with the Bottle microframework, designed to improve code quality, maintainability, and security.
 globs: *.py
 ---

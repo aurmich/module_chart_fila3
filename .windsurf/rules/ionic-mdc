@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: This rule provides comprehensive best practices for Ionic Framework development, covering code organization, performance, security, testing, and more.  Following these guidelines will result in more maintainable, performant, and secure Ionic applications.
 globs: *.ts,*.html,*.scss
 ---

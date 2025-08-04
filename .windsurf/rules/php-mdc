@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: This rule provides guidelines for PHP coding best practices, covering code structure, security, performance, and testing to improve code quality and maintainability.
 globs: *.php
 ---

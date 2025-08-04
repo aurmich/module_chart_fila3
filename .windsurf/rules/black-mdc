@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: Enforces consistent code formatting using Black, the uncompromising Python code formatter, promoting readability and reducing diffs. Covers best practices related to Black's configuration, usage, and integrations.
 globs: *.py
 ---

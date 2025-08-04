@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: This rule outlines coding standards, best practices, and common pitfalls for developing scientific computing applications using the SciPy library. It emphasizes clarity, maintainability, performance, and security for efficient SciPy development.
 globs: *.py
 ---

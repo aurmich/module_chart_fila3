@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: This rule enforces best practices for using the `net/http` ServeMux in Go, promoting clean, maintainable, and efficient code. It covers routing, handler design, and error handling specifics to help developers leverage ServeMux effectively.
 globs: *.go
 ---

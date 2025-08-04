@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 trigger: always_on
 description:
 globs:
@@ -42,3 +43,9 @@ Agile è un insieme di valori e principi per lo sviluppo software che privilegia
 - Richiede disciplina e coinvolgimento
 - Non adatto a tutti i contesti organizzativi
 - Può essere frainteso come assenza di regole
+=======
+description:
+globs:
+alwaysApply: false
+---
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)

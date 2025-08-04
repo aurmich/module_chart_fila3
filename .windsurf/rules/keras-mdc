@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: This rule enforces Keras library best practices, focusing on code clarity, modularity, performance optimization, and security considerations. It provides actionable guidance for developers to improve the quality and maintainability of Keras-based machine learning projects.
 globs: *.py
 ---

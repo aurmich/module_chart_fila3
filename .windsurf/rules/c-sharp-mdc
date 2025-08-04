@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: This rule file provides a comprehensive guide to C# best practices, coding standards, and common patterns for writing maintainable, performant, and secure code.
 globs: *.cs
 ---

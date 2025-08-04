@@ -8,14 +8,23 @@ Le icone SVG devono essere referenziate utilizzando la convenzione `{nome-modulo
 
 ### Corretto
 ```php
+<<<<<<< HEAD
 'icon' => '<nome progetto>-patient',
 'icon' => '<nome progetto>-doctor',
+=======
+'icon' => 'saluteora-patient',
+'icon' => 'saluteora-doctor',
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 ```
 
 ### Errato
 ```php
 'icon' => 'svg/patient.svg',
+<<<<<<< HEAD
 'icon' => 'modules/<nome progetto>/resources/svg/patient.svg',
+=======
+'icon' => 'modules/saluteora/resources/svg/patient.svg',
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 ```
 
 ## Motivazione
@@ -31,7 +40,11 @@ Le icone SVG devono essere referenziate utilizzando la convenzione `{nome-modulo
 2. Registrare l'icona nel metodo `register()` del ServiceProvider:
    ```php
    FilamentIcon::register([
+<<<<<<< HEAD
        '<nome progetto>-patient' => asset('modules/<nome progetto>/resources/svg/patient.svg'),
+=======
+       'saluteora-patient' => asset('modules/SaluteOra/resources/svg/patient.svg'),
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
    ]);
    ```
 3. Utilizzare l'icona nei componenti con il nome registrato

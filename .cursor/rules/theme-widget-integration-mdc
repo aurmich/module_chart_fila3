@@ -27,12 +27,21 @@ I temi NON devono mai ricreare funzionalità esistenti nei moduli Filament. Devo
 // Fare questo - richiama widget esistente
 @php
     $widgetClass = match (auth()->user()?->type) {
+<<<<<<< HEAD
         \Modules\<nome progetto>\Enums\UserTypeEnum::PATIENT =>
             \Modules\<nome progetto>\Filament\Widgets\PatientCalendarWidget::class,
         \Modules\<nome progetto>\Enums\UserTypeEnum::DOCTOR =>
             \Modules\<nome progetto>\Filament\Widgets\DoctorCalendarWidget::class,
         \Modules\<nome progetto>\Enums\UserTypeEnum::ADMIN =>
             \Modules\<nome progetto>\Filament\Widgets\AdminCalendarWidget::class,
+=======
+        \Modules\SaluteOra\Enums\UserType::PATIENT =>
+            \Modules\SaluteOra\Filament\Widgets\PatientCalendarWidget::class,
+        \Modules\SaluteOra\Enums\UserType::DOCTOR =>
+            \Modules\SaluteOra\Filament\Widgets\DoctorCalendarWidget::class,
+        \Modules\SaluteOra\Enums\UserType::ADMIN =>
+            \Modules\SaluteOra\Filament\Widgets\AdminCalendarWidget::class,
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
         default => null
     };
 @endphp
@@ -140,7 +149,11 @@ private function getWidgetProps(): array
 </script>
 
 // ✅ CORRETTO
+<<<<<<< HEAD
 @livewire(\Modules\<nome progetto>\Filament\Widgets\PatientCalendarWidget::class)
+=======
+@livewire(\Modules\SaluteOra\Filament\Widgets\PatientCalendarWidget::class)
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 ```
 
 ### Form Widget
@@ -151,7 +164,11 @@ private function getWidgetProps(): array
 </form>
 
 // ✅ CORRETTO
+<<<<<<< HEAD
 @livewire(\Modules\<nome progetto>\Filament\Widgets\AppointmentFormWidget::class)
+=======
+@livewire(\Modules\SaluteOra\Filament\Widgets\AppointmentFormWidget::class)
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 ```
 
 ## Documentazione Richiesta

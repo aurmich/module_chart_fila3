@@ -1,9 +1,17 @@
 ---
+<<<<<<< HEAD
 trigger: manual
 description:
 globs:
 ---
 # Best Practice: XotBaseMigration (Cursor)
+=======
+description:
+globs:
+alwaysApply: false
+---
+# Best Practice: XotBaseMigration (Windsurf)
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 
 ## Introduzione
 Per tutte le migrazioni dei moduli, si utilizza la classe base personalizzata `XotBaseMigration` invece delle classi standard Laravel. Questo garantisce coerenza, estendibilità e compatibilità con le regole del progetto.
@@ -44,3 +52,9 @@ if (!Schema::hasColumn('users', 'state')) {
 ## Collegamenti
 - [Migrazioni del Database](../../docs/database-migrations.md)
 - [Best Practice: ActivityLog per la Moderazione Utenti](../../laravel/Modules/User/docs/ACTIVITYLOG_MODERATION_BEST_PRACTICES.mdc)
+<<<<<<< HEAD
+=======
+
+## Nuova Regola
+- La proprietà `$connection` nelle migrazioni che estendono XotBaseMigration deve essere dichiarata come `protected ?string $connection = 'mysql';` (o altro valore appropriato), mai solo `string`.
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)

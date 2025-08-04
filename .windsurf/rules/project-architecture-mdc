@@ -1,7 +1,13 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
 description: Overview of the architectural structure of the project.
 globs: []
+=======
+description: Overview of the architectural structure of the project.
+globs: []
+alwaysApply: false
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 ---
 
 # Project Architecture Overview
@@ -10,6 +16,7 @@ globs: []
 This document outlines the architectural structure of the project, based on an analysis of the codebase and documentation directories. The goal is to provide a clear understanding of how the system is organized and how different components interact.
 
 ## Core Architecture
+<<<<<<< HEAD
 - **Laravel Framework**: The project is built on Laravel 11.x/12.x, utilizing its modular structure with `nwidart/laravel-modules` and `laraxot/modules` for organizing code into distinct modules.
 - **Multi-Tenant System**: Managed through the `Tenant` module, supporting different user groups and data isolation.
 - **Filament Admin Interface**: Used for backend administration, with custom resources and components defined in various modules.
@@ -24,19 +31,44 @@ The project is divided into several key modules, each with specific responsibili
 - **Tenant**: Manages multi-tenancy features.
 - **Cms**: Manages content through a custom CMS system integrated with Filament.
 - **Notify**: Handles notifications to users.
+=======
+- **Framework**: The project is built on a modular framework, utilizing its structure for organizing code into distinct modules.
+- **Multi-Tenant System**: Managed through a dedicated module, supporting different user groups and data isolation.
+- **Admin Interface**: Used for backend administration, with custom resources and components defined in various modules.
+
+## Modules
+The project is divided into several key modules, each with specific responsibilities:
+- **User**: Handles user management, authentication, roles, and permissions.
+- **Data Management**: Manages data and related functionalities.
+- **Services**: Focuses on service-related functionalities.
+- **Reporting**: Provides statistical and reporting capabilities.
+- **UI**: Contains user interface components for consistent design across the application.
+- **Multi-Tenancy**: Manages multi-tenancy features.
+- **Content Management**: Manages content through a custom system.
+- **Notifications**: Handles notifications to users.
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 
 ## Key Design Patterns
 - **Modular Design**: Code is organized into modules to ensure separation of concerns and reusability.
 - **Event-Driven Architecture**: Used for handling state transitions and notifications, especially in user moderation workflows.
+<<<<<<< HEAD
 - **Queueable Actions**: Asynchronous processing of tasks using `spatie/laravel-queueable-action`.
 - **Activity Logging**: Comprehensive logging with `spatie/laravel-activitylog` for tracking user and system activities.
+=======
+- **Queueable Actions**: Asynchronous processing of tasks.
+- **Activity Logging**: Comprehensive logging for tracking user and system activities.
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 
 ## Documentation Structure
 - Extensive documentation is found in the `/docs` directory, covering project details, roadmaps, standards, and technical guides.
 - Each module often contains its own `docs` folder for specific documentation related to its functionality.
 
 ## Coding Standards
+<<<<<<< HEAD
 - **PSR-12**: Followed for PHP code styling.
+=======
+- **PSR-12**: Followed for code styling.
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 - **Type Hints and Return Types**: Mandatory for all methods to ensure clarity and robustness.
 - **Docblocks**: Required for public methods to aid in documentation and IDE support.
 

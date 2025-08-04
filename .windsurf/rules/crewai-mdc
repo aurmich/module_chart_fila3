@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: This rule provides comprehensive best practices for developing with the CrewAI library, covering code organization, performance, security, testing, and common pitfalls. It serves as a guide for building robust and scalable AI applications using CrewAI.
 globs: *.py
 ---

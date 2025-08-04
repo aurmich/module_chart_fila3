@@ -1,6 +1,12 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
 description: 
 globs: 
+=======
+description: 
+globs: 
+alwaysApply: false
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 ---
 composer global require laravel/installer -W

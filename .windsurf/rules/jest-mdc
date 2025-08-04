@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: This rule provides guidelines for writing clean, maintainable, and effective tests using Jest. It covers code organization, performance, common pitfalls, and best practices for testing JavaScript and TypeScript projects.
 globs: *.js,*.jsx,*.ts,*.tsx,*.mjs,*.cjs,*.mts,*.cts
 ---

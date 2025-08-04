@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: This rule enforces best practices and coding standards for Playwright tests, including stable selectors, test isolation, user-centric testing, and performance considerations.
 globs: *.spec.ts
 ---

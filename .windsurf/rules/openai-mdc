@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: Comprehensive best practices and coding standards for projects using the openai library, covering code structure, performance, security, and common pitfalls.
 globs: *.py
 ---

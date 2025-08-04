@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: Comprehensive best practices for using pdoc to generate and maintain Python project documentation. Covers code structure, performance, security, testing, and tooling to ensure high-quality documentation and maintainable projects.
 globs: *.py
 ---

@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 trigger: manual
 description:
 globs:
@@ -30,3 +31,40 @@ Ogni evento deve avere:
 - Deve utilizzare `XotData` per la gestione delle risorse
 - Deve essere compatibile con `UserCalendarWidget`
 - Deve seguire le convenzioni di Filament per gli URL
+=======
+description:
+globs:
+alwaysApply: false
+---
+# Regole Windsurf per FetchEventsAction
+
+## Struttura del Modulo
+<<<<<<< HEAD
+- L'azione deve essere nel modulo <nome progetto>
+=======
+- L'azione deve essere nel modulo SaluteOra
+>>>>>>> ca5e1eaf (.)
+- Deve seguire la struttura delle azioni del modulo
+- Deve essere documentata nella cartella docs del modulo
+
+## Convenzioni
+- Utilizzare strict types
+- Seguire le convenzioni PSR-12
+- Documentare tutte le funzionalità
+- Mantenere la coerenza con il resto del modulo
+
+## Integrazione
+- Compatibile con il sistema di calendario
+- Integrata con il sistema di routing
+- Utilizza le risorse del modulo correttamente
+
+## Sicurezza
+- Validare i parametri di input
+- Gestire correttamente le date
+- Proteggere gli URL generati
+
+## Performance
+- Ottimizzare le query al database
+- Utilizzare la cache quando appropriato
+- Minimizzare il carico di memoria
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)

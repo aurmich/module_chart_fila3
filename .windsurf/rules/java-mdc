@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: Enforces best practices for Java development, covering code style, performance, security, and testing. Provides guidelines for writing clean, maintainable, and efficient Java code.
 globs: *.java
 ---

@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: This rule provides comprehensive guidelines for developing robust, secure, and performant Tauri applications. It covers code organization, security best practices, performance optimization, testing strategies, and common pitfalls to avoid.
 globs: *.(rs|js|ts|html|css|json|toml|md)
 ---

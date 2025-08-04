@@ -1,5 +1,8 @@
 ---
+<<<<<<< HEAD
 trigger: model_decision
+=======
+>>>>>>> 3b8e8240 (fix case cursor and windsurf)
 description: This rule set provides comprehensive guidance on best practices for using Poetry in Python projects, including dependency management, project structure, and coding standards. It covers various aspects such as code organization, performance considerations, security, testing, and tooling.
 globs: *.py
 ---
