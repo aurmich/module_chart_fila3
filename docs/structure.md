@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 # Modulo Geo
+=======
+# Modulo Chart
+>>>>>>> 8c16842 (.)
 
 Data: 2025-04-23 19:09:55
 
 ## Informazioni generali
 
+<<<<<<< HEAD
 - **Namespace principale**: Modules\\Geo
 Modules\\Geo\\Database\\Factories
 Modules\\Geo\\Database\\Seeders
@@ -12,11 +17,20 @@ Marco Sottana
 - **Dipendenze**: cheesegrits/filament-google-maps ^3.0 dotswan/filament-map-picker ^1.2 webbingbrasil/filament-maps ^3.0@beta repositories type path url ../Xot type path url ../Tenant type path url ../UI scripts post-autoload-dump_comment 
 - **Totale file PHP**: 197
 - **Totale classi/interfacce**: 129
+=======
+- **Namespace principale**: Modules\\Chart
+- **Pacchetto Composer**: laraxot/module_chart_fila3
+Marco Sottana
+- **Dipendenze**: amenadiel/jpgraph ^4.1 laraxot/module_xot_fila3 * thecodingmachine/safe ^2.5 driftingly/rector-laravel ^0.26.2 enlightn/enlightn ^2.5 laravel/pint ^1.13 nunomaduro/collision * larastan/larastan ^2.6 nunomaduro/phpinsights ^2.9 orchestra/testbench ^9.4 pestphp/pest * pestphp/pest-plugin-arch * pestphp/pest-plugin-laravel * phpstan/phpstan-deprecation-rules * phpstan/phpstan-phpunit * psalm/plugin-laravel * 
+- **Totale file PHP**: 58
+- **Totale classi/interfacce**: 42
+>>>>>>> 8c16842 (.)
 
 ## Struttura delle directory
 
 ```
 
+<<<<<<< HEAD
 .git
 .git/branches
 .git/hooks
@@ -327,12 +341,39 @@ app/Filament/Resources/LocationResource
 app/Filament/Resources/LocationResource/Pages
 app/Filament/Resources/Pages
 app/Filament/Widgets
+=======
+.github
+.github/workflows
+.vscode
+Resources_old2
+_docs
+app
+app/Actions
+app/Actions/Chart
+app/Actions/JpGraph
+app/Actions/JpGraph/V1
+app/Console
+app/Console/Commands
+app/Datas
+app/Entities
+app/Enums
+app/Filament
+app/Filament/Pages
+app/Filament/Resources
+app/Filament/Resources/ChartResource
+app/Filament/Resources/ChartResource/Pages
+app/Filament/Resources/MixedChartResource
+app/Filament/Resources/MixedChartResource/Pages
+app/Filament/Widgets
+app/Filament/Widgets/Samples
+>>>>>>> 8c16842 (.)
 app/Http
 app/Http/Controllers
 app/Http/Livewire
 app/Http/Middleware
 app/Http/Requests
 app/Models
+<<<<<<< HEAD
 app/Models/Policies
 app/Models/Traits
 app/Providers
@@ -356,12 +397,34 @@ docs
 docs/phpstan
 lang
 lang/en
+=======
+app/Providers
+app/Providers/Filament
+app/Tables
+app/Tables/Columns
+app/View
+app/View/Components
+config
+database
+database/Factories
+database/Migrations
+database/Seeders
+docs
+docs/.github
+docs/.github/workflows
+docs/advanced
+docs/components
+docs/components/chartjs
+docs/phpstan
+lang
+>>>>>>> 8c16842 (.)
 lang/it
 resources
 resources/assets
 resources/assets/js
 resources/assets/sass
 resources/css
+<<<<<<< HEAD
 resources/css/images
 resources/icons
 resources/img
@@ -420,6 +483,27 @@ resources/views/maps/farmshops/resources/js
 resources/views/maps/farmshops/resources/sass
 resources/views/maps/farmshops/webfonts
 resources/views/webfonts
+=======
+resources/dist
+resources/dist/.vite
+resources/dist/assets
+resources/img
+resources/js
+resources/lang
+resources/lang/it
+resources/sass
+resources/svg
+resources/views
+resources/views/components
+resources/views/filament
+resources/views/filament/pages
+resources/views/filament/widgets
+resources/views/filament/widgets/samples
+resources/views/layouts
+resources/views/tables
+resources/views/tables/columns
+resources_old
+>>>>>>> 8c16842 (.)
 routes
 tests
 tests/Feature
@@ -431,6 +515,7 @@ tests/Unit
 ```json
     "autoload": {
         "psr-4": {
+<<<<<<< HEAD
             "Modules\\Geo\\": "app/",
             "Modules\\Geo\\Database\\Factories\\": "database/factories/",
             "Modules\\Geo\\Database\\Seeders\\": "database/seeders/"
@@ -462,10 +547,27 @@ tests/Unit
         "allow-plugins": {
             "phpstan/extension-installer": true,
             "pestphp/pest-plugin": true,
+=======
+            "Modules\\Chart\\": "app/"
+        }
+    },
+    "require": {
+        "amenadiel/jpgraph": "^4.1"
+    },
+    "require_comment": {
+        "laraxot/module_xot_fila3": "*",
+        "thecodingmachine/safe": "^2.5"
+    },
+    "require-dev_comment": {
+        "driftingly/rector-laravel": "^0.26.2",
+        "enlightn/enlightn": "^2.5",
+        "laravel/pint": "^1.13",
+>>>>>>> 8c16842 (.)
 ```
 
 ## Dipendenze da altri moduli
 
+<<<<<<< HEAD
 -       8 Modules\Xot\Filament\Pages\XotBasePage;
 -       4 Modules\Xot\Traits\Updater;
 -       2 Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -476,6 +578,17 @@ tests/Unit
 -       1 Modules\Xot\Providers\XotBaseEventServiceProvider;
 -       1 Modules\Xot\Providers\Filament\XotBasePanelProvider;
 -       1 Modules\Xot\Filament\Widgets\EnvWidget;
+=======
+-       2 Modules\Xot\Filament\Traits\TransTrait;
+-       2 Modules\Xot\Filament\Resources\XotBaseResource;
+-       2 Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+-       2 Modules\UI\Enums\TableLayoutEnum;
+-       1 Modules\Xot\Traits\Updater;
+-       1 Modules\Xot\Providers\XotBaseServiceProvider;
+-       1 Modules\Xot\Providers\XotBaseRouteServiceProvider;
+-       1 Modules\Xot\Providers\Filament\XotBasePanelProvider;
+-       1 Modules\Xot\Actions\Factory\GetFactoryAction;
+>>>>>>> 8c16842 (.)
 
 ## Collegamenti alla documentazione generale
 

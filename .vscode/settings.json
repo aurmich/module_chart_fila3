@@ -13,7 +13,11 @@
 	"php-cs-fixer.allowRisky": true,
 	"editor.defaultFormatter": "junstyle.php-cs-fixer",
 	"[php]": {
+<<<<<<< HEAD
 		"editor.defaultFormatter": "fterrag.vscode-php-cs-fixer"
+=======
+		"editor.defaultFormatter": "junstyle.php-cs-fixer"
+>>>>>>> 8c16842 (.)
 	},
 	"editor.tokenColorCustomizations": {
 		"semanticHighlighting": true
@@ -38,4 +42,8 @@
 	"[vue]": {
 		"editor.defaultFormatter": "octref.vetur"
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 8c16842 (.)

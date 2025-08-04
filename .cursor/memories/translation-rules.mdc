@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regole Critiche per Traduzioni e Documentazione
 
 ## REGOLA ASSOLUTA: MAI USARE ->label()
@@ -117,5 +118,8 @@ return [
 - [ ] Aggiornare regole e memorie dopo ogni correzione
 
 ULTIMO AGGIORNAMENTO: 2025-01-27 - REGOLA CRITICA DA RICORDARE SEMPRE
+=======
+---
+>>>>>>> 8c16842 (.)
 alwaysApply: true
 ---
