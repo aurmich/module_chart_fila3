@@ -201,6 +201,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 >>>>>>> 2bcfd382 (fix Address)
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Modules\SaluteOra\Models\DoctorStudio;
+use Modules\SaluteOra\Enums\UserTypeEnum;
 use Parental\HasParent;
 
 /**
@@ -233,6 +234,21 @@ use Parental\HasParent;
 class Doctor extends User
 {
     use HasParent;
+
+    /**
+     * Boot method per impostare automaticamente il type per i Doctor.
+     */
+    protected static function boot(): void
+    {
+        parent::boot();
+
+        static::creating(function ($doctor) {
+            // Imposta automaticamente il type se non è già impostato
+            if (empty($doctor->type)) {
+                $doctor->type = UserTypeEnum::DOCTOR;
+            }
+        });
+    }
 
     /**
      * Gli attributi che sono mass assignable.
@@ -410,8 +426,6 @@ class Doctor extends User
 <<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
-
-
 
     /**
      * Relazione molti-a-molti con gli studi in cui il dottore lavora.

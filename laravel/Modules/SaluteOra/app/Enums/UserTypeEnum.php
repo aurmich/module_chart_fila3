@@ -90,6 +90,7 @@ enum UserTypeEnum: string implements HasLabel
 =======
 =======
         return $this->transClass(self::class,$this->value.'.color');
+<<<<<<< HEAD
         /*
 >>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
         return match ($this) {
@@ -102,6 +103,9 @@ enum UserTypeEnum: string implements HasLabel
 =======
         */
 >>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
+=======
+
+>>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
     }
 
     /**
@@ -127,6 +131,20 @@ enum UserTypeEnum: string implements HasLabel
 <<<<<<< HEAD
 <<<<<<< HEAD
         */
+    }
+
+    public function getImage(): string
+    {
+        return $this->transClass(self::class,$this->value.'.image');
+    }
+
+    public function canRegister(): bool
+    {
+        return match ($this) {
+            self::ADMIN => false,
+            self::DOCTOR => true,
+            self::PATIENT => true,
+        };
     }
 
     /**
@@ -221,7 +239,16 @@ enum UserTypeEnum: string implements HasLabel
     {
         return self::PATIENT;
     }
+<<<<<<< HEAD
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+
+
+    public function getRoute(string $action): string
+    {
+        return route($action.'.type', ['type' => $this->value]);
+    }
+>>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
 }
 
 // Alias per retrocompatibilità

@@ -431,10 +431,14 @@ class User extends BaseUser implements HasMedia
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'type' => UserTypeEnum::class, // Sintassi corretta per Laravel 12
 =======
             //'type' => UserTypeEnum::class, // Sintassi corretta per Laravel 12
 >>>>>>> 2bcfd382 (fix Address)
+=======
+            'type' => UserTypeEnum::class, // Sintassi corretta per Laravel 12
+>>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
             'state' => UserState::class,
             'certifications' => 'array',
             'certification' => 'array',  // ESSENZIALE: Evita "foreach() argument must be of type array|object, string given"
@@ -594,6 +598,7 @@ class User extends BaseUser implements HasMedia
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     /**
@@ -628,6 +633,9 @@ class User extends BaseUser implements HasMedia
         $this->attributes['type'] = $value instanceof UserTypeEnum ? $value->value : $value;
     }
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+
+>>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
 
     /**
      * Determine if the user is an admin.

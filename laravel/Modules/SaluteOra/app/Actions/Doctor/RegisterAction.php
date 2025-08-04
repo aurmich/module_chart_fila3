@@ -39,10 +39,17 @@ use Modules\SaluteOra\Datas\DoctorData;
 use Modules\Notify\Emails\SpatieEmail;
 use Modules\Notify\Models\MailTemplate;
 use Modules\SaluteOra\Enums\DoctorStatus;
+use Modules\SaluteOra\Enums\UserTypeEnum;
 use Illuminate\Validation\ValidationException;
-use Modules\SaluteOra\Enums\DoctorRegistrationStatus;
+use Modules\SaluteOra\Enums\DoctorRegistrationStatusEnum;
 use Modules\SaluteOra\Models\DoctorRegistrationWorkflow;
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+use Illuminate\Support\Facades\Notification;
+use Modules\Notify\Notifications\RecordNotification;
+
+>>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
 
 class RegisterAction
 {
@@ -161,115 +168,22 @@ class RegisterAction
 =======
     public function execute(array $data): Doctor
     {
-        // Verifica se esiste già un utente con questa email
-        // Nota: Dobbiamo cercare nella tabella users, non solo tra i dottori
-        $existingUser = Doctor::where('email', $data['email'])->first();
-        if ($existingUser) {
-            /*
-            throw new \Illuminate\Validation\ValidationException([
-                'email' => ['Un dottore con questa email è già registrato.'],
-            ]);
-            */
-            $error = \Illuminate\Validation\ValidationException::withMessages([
-                'email' => ['Validation Message #1'],
-                'field_name_2' => ['Validation Message #2'],
-             ]);
-             throw $error;
-        }
+
         $doctor = Doctor::create($data);
-        // Creazione del workflow di registrazione
-        DoctorRegistrationWorkflow::create([
-            'doctor_id' => $doctor->id,
-            'current_step' => 'personal-info',
-            'status' => 'pending',
-            'started_at' => now(),
-            'last_interaction_at' => now(),
-            'session_id' => session()->getId(),
-        ]);
-        // Invio email di conferma
-        $this->sendConfirmationEmail($doctor);
+
+        Notification::route('mail', $data['email'])
+        //->locale('it')
+        ->notify(new RecordNotification($doctor,'doctor_registration_pending'));
+
         return $doctor;
-        /*
-        if ($existingUser) {
-            // Se l'utente esiste già, verifica se è già un dottore
-            if ($existingUser->type === 'doctor') {
-                // L'utente è già registrato come dottore
-                throw new \Illuminate\Validation\ValidationException(
-                    validator([], [])->errors()->add('email', 'Un dottore con questa email è già registrato.')
-                );
-            }
-
-            // Utilizziamo una transazione per garantire l'integrità dei dati
-            return DB::transaction(function () use ($existingUser, $data) {
-                // Se l'utente esiste ma non è un dottore, aggiorna i suoi dati
-                $existingUser->update([
-                    'type' => 'doctor',
-                    'first_name' => $data['first_name'],
-                    'last_name' => $data['last_name'],
-                    'certifications' => $data['certifications'] ?? null,
-                ]);
-
-                // Ricarica l'utente per ottenere l'istanza di Doctor usando il pattern STI
-                // Nota: Con Single Table Inheritance, l'utente è direttamente il dottore
-                // dopo aver cambiato il type a 'doctor'
-                $doctor = Doctor::find($existingUser->id);
-
-                if ($doctor) {
-                    return $doctor;
-                }
-
-                // Se non esiste un record Doctor, crealo
-                $status = $this->getDoctorRegistrationStatus();
-                $doctorData = array_merge(
-                    $data,
-                    ['user_id' => $existingUser->id, 'status' => $status]
-                );
-                unset($doctorData['email'], $doctorData['password'], $doctorData['first_name'], $doctorData['last_name']);
-
-                return Doctor::create($doctorData);
-            });
-        } else {
-            // Se l'utente non esiste, crealo utilizzando una transazione
-            return DB::transaction(function () use ($data) {
-                $userData = [
-                    'first_name' => $data['first_name'],
-                    'last_name' => $data['last_name'],
-                    'email' => $data['email'],
-                    'password' => Hash::make($data['password']),
-                    'type' => 'doctor',
-                ];
-
-                $user = User::create($userData);
-
-                $status = $this->getDoctorRegistrationStatus();
-                $doctorData = array_merge(
-                    $data,
-                    ['user_id' => $user->id, 'status' => $status]
-                );
-                unset($doctorData['first_name'], $doctorData['last_name'], $doctorData['email'], $doctorData['password']);
-
-                $doctor = Doctor::create($doctorData);
-
-                // Creazione del workflow di registrazione
-                DoctorRegistrationWorkflow::create([
-                    'doctor_id' => $doctor->id,
-                    'current_step' => 'personal-info',
-                    'status' => 'pending',
-                    'started_at' => now(),
-                    'last_interaction_at' => now(),
-                    'session_id' => session()->getId(),
-                ]);
-
-                // Invio email di conferma
-                $this->sendConfirmationEmail($doctor);
-
-                return $doctor;
-            });
-        }
-        */
     }
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+
+
+>>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
     /**
      * Ottiene lo stato di registrazione del dottore.
      *
@@ -278,19 +192,27 @@ class RegisterAction
     private function getDoctorRegistrationStatus(): string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!class_exists(DoctorRegistrationStatusEnum::class)) {
 =======
         if (!class_exists(DoctorRegistrationStatus::class)) {
 >>>>>>> 54f4fa16 (.)
+=======
+        if (!class_exists(DoctorRegistrationStatusEnum::class)) {
+>>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
             return 'pending';
         }
 
         try {
 <<<<<<< HEAD
+<<<<<<< HEAD
             $cases = DoctorRegistrationStatusEnum::cases();
 =======
             $cases = DoctorRegistrationStatus::cases();
 >>>>>>> 54f4fa16 (.)
+=======
+            $cases = DoctorRegistrationStatusEnum::cases();
+>>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
             foreach ($cases as $case) {
                 if (strtolower($case->name) === 'pending') {
                     return $case->value;
@@ -322,15 +244,24 @@ class RegisterAction
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Debug sicuro del tipo
         dddx([
             'type_value' => $doctor->type->value ?? 'null',
+=======
+        // Debug sicuro del tipo
+        dddx([
+            'type_value' => $doctor->type?->value ?? 'null',
+>>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
             'type_class' => get_class($doctor->type ?? new \stdClass()),
             'is_doctor' => $doctor->isDoctor(),
         ]);
 
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
         $email = new SpatieEmail($doctor, 'doctor_registration_pending');
         Mail::to($doctor->email)
             ->locale(app()->getLocale())

@@ -20,12 +20,17 @@ use App\Models\User;
 >>>>>>> 15cb84fb (fix collisions)
 =======
 declare(strict_types=1);
+<<<<<<< HEAD
 use Modules\SaluteOra\Models\User;
 >>>>>>> d23ba493 (add calendar)
+=======
+>>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Auth\Events\Registered;
+use Illuminate\Support\Arr;
 use Livewire\Volt\Component;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -44,6 +49,9 @@ use Livewire\Attributes\Validate;
 >>>>>>> 15cb84fb (fix collisions)
 =======
 >>>>>>> d23ba493 (add calendar)
+=======
+use Modules\Xot\Datas\XotData;
+>>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
 use function Laravel\Folio\{middleware, name};
 
 middleware(['guest']);
@@ -55,6 +63,7 @@ new class extends Component
 
     public function mount(): void
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -84,6 +93,9 @@ new class extends Component
 =======
         $this->types = (new User())->getChildTypes();
 >>>>>>> d23ba493 (add calendar)
+=======
+        $this->types=XotData::make()->getUserChildTypes();
+>>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
     }
 };
 ?>
@@ -260,6 +272,7 @@ new class extends Component
 =======
 =======
             <div class="w-full lg:flex justify-around">
+<<<<<<< HEAD
                 @foreach($types as $type => $class)
 <<<<<<< HEAD
 <div class="flex justify-center">
@@ -274,29 +287,42 @@ new class extends Component
 </div>
 >>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
 =======
+=======
+                @foreach($types as $type )
+                @if($type->canRegister())
+>>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
                 <div class="flex justify-center">
-                    <a class="w-full flex flex-col items-center mb-7" href="{{ route('register.type', ['type'=>$type]) }}" tag="a">
+                    <a class="w-full flex flex-col items-center mb-7" href="{{ $type->getRoute('register') }}" tag="a">
                         <div class="w-80 h-80 rounded-full bg-white shadow-2xl overflow-hidden">
-                        <img src="/img/{{ $type }}.jpg" class="w-full h-full object-cover"/>
+                        <img src="{{ $type->getImage() }}" class="w-full h-full object-cover"/>
                         </div>
                     <x-filament::button class="text-2xl !text-white transition-colors rounded-lg flex justify-center items-center !bg-[#1A467F] hover:bg-[#0D9488] hover:cursor-pointer shadow-2xl mt-5 text-lg p-5">
-                            {{ ucfirst($type) }}
+                            {{ $type->getLabel() }}
                     </x-filament::button>
                     </a>
                 </div>
+<<<<<<< HEAD
 >>>>>>> 7e1c3ad6 (- sistemato footer;)
+=======
+                @endif
+>>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
                 @endforeach
             </div>
         </div>
 
-        <!-- <div class="bg-[#E6EBF7] text-center text-sm text-gray-500">
+        {{--   <div class="bg-[#E6EBF7] text-center text-sm text-gray-500">
             <p>Hai bisogno di assistenza? <a href="#" class="text-blue-800 hover:underline">Contattaci</a></p>
+<<<<<<< HEAD
 <<<<<<< HEAD
         </div>
 >>>>>>> d23ba493 (add calendar)
 =======
         </div> -->
 >>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
+=======
+        </div>
+        --}}
+>>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
     </div>
     @endvolt
 </x-layouts.app>

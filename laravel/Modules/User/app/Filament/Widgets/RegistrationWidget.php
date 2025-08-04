@@ -230,6 +230,7 @@ class RegistrationWidget extends XotBaseWidget
      * @see https://filamentphp.com/docs/3.x/forms/adding-a-form-to-a-livewire-component
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function register(): \Illuminate\Http\RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
     {
         $data = $this->form->getState();
@@ -267,6 +268,9 @@ class RegistrationWidget extends XotBaseWidget
 =======
     public function register():\Illuminate\Http\RedirectResponse
 >>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
+=======
+    public function register():\Illuminate\Http\RedirectResponse|\Livewire\Features\SupportRedirects\Redirector
+>>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
     {
         $data = $this->form->getState();
         $user=app($this->action)->execute($data);

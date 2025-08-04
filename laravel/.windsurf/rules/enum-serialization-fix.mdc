@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # Regola: Gestione Sicura Serializzazione Enum in Laraxot SaluteOra
 
 ## Problema
@@ -78,3 +79,5 @@ private function safeToArray($model): array
 
 ## Ultimo Aggiornamento
 Dicembre 2024 - Correzione errore RegisterAction UserTypeEnum
+=======
+>>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
