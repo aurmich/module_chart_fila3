@@ -116,9 +116,13 @@ new class extends Component
 <x-layouts.app>
 <div>
 <<<<<<< HEAD
+<<<<<<< HEAD
     @volt('patient.book')
     <div class="w-full min-h-[600px] lg:min-h-[725px] bg-[#E6EBF7] flex flex-col items-center">
 =======
+=======
+    @volt('patient.book')
+>>>>>>> edc37a42 (✨ (DoctorAvailabilitiesWidget): introduce DoctorAvailabilitiesWidget to display)
     <div class="w-full min-h-[600px] lg:min-h-[725px] flex flex-col items-center">
 >>>>>>> 8da6447c (- updated style dettaglio-dottore (new calendar))
         <h1 class="m-5">Prenota la tua visita</h1>
