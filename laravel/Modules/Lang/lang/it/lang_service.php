@@ -631,6 +631,13 @@ return array (
     array (
       'label' => 'register',
     ),
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+    'view' => 
+    array (
+      'label' => 'view',
+    ),
+>>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
   ),
 );

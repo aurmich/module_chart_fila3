@@ -903,6 +903,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
             'patient_id'=>Auth::id(),
             'doctor_id'=>$data['doctor_id'],
             'studio_id'=>$data['studio_id'],
+<<<<<<< HEAD
             /** @phpstan-ignore binaryOp.invalid, binaryOp.invalid */
             'starts_at'=>Carbon::parse($data['appointment_date'].' '.$data['appointment_time']),
             /** @phpstan-ignore binaryOp.invalid, binaryOp.invalid */
@@ -944,6 +945,10 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
             'studio_id'=>$data['studio_id'],
             'start_time'=>Carbon::parse($data['appointment_date'].' '.$data['appointment_time']),
             'end_time'=>Carbon::parse($data['appointment_date'].' '.$data['appointment_time'])->addMinutes(60),
+=======
+            'starts_at'=>Carbon::parse($data['appointment_date'].' '.$data['appointment_time']),
+            'ends_at'=>Carbon::parse($data['appointment_date'].' '.$data['appointment_time'])->addMinutes(60),
+>>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
             'notes'=>$data['notes'],
             'state'=>'pending',
         ];

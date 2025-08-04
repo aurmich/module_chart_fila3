@@ -3,6 +3,7 @@
 return [
     App\Providers\AppServiceProvider::class,
 <<<<<<< HEAD
+<<<<<<< HEAD
     App\Providers\Filament\AdminPanelProvider::class,
 <<<<<<< HEAD
     //App\Providers\BoltServiceProvider::class,
@@ -12,4 +13,7 @@ return [
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+    App\Providers\Filament\AdminPanelProvider::class,
+>>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
 ];

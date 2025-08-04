@@ -37,9 +37,13 @@ Il modulo Patient gestisce tutte le informazioni relative ai pazienti e ai medic
 ### Widgets
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [StudioFilterWidget](widgets/studio-filter-widget.md) - Widget per la selezione e gestione degli studi medici
 =======
 >>>>>>> aurmich/dev
+=======
+- [StudioFilterWidget](widgets/studio-filter-widget.md) - Widget per la selezione e gestione degli studi medici
+>>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
 - [FindDoctorAndAppointmentWidget Errors](widgets/find-doctor-appointment-widget-errors.md) - Analisi e soluzioni per il widget di prenotazione appuntamenti
 - [📊 FindDoctorAndAppointmentWidget Analysis](widgets/find-doctor-appointment-widget-analysis.md) - **CORE**: Analisi completa e roadmap implementazione Step 2, integrazione componenti UI riutilizzabili
 - [🛠️ FindDoctorWidget Step 2 Implementation](widgets/find-doctor-appointment-widget-step2-implementation.md) - **IMPLEMENTATION**: Guida dettagliata implementazione secondo step con componenti UI creati
