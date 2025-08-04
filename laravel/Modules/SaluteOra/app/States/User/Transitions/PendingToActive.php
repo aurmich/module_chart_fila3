@@ -8,6 +8,7 @@ use Spatie\ModelStates\Transition;
 use Modules\SaluteOra\States\User\Pending;
 use Modules\SaluteOra\States\User\Active;
 use Modules\SaluteOra\Models\User;
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Notification;
 use Modules\Notify\Notifications\RecordNotification;
@@ -32,3 +33,22 @@ class PendingToActive extends BaseTransition
 
 
 
+=======
+
+class PendingToActive extends Transition
+{
+    public function __construct(
+        public User $user
+    ) {
+    }
+
+    public function handle(): User
+    {
+        // Additional logic before transition can be added here
+        //$this->user->state = new Active($this->user);
+        //$this->user->save();
+        dddx('a');
+        return $this->user;
+    }
+}
+>>>>>>> f4ba6a58 (✨ (User.php): add user state transition classes to manage user state changes)

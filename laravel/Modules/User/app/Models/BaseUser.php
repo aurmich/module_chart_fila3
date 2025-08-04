@@ -192,7 +192,7 @@ abstract class BaseUser extends Authenticatable
 abstract class BaseUser extends Authenticatable implements HasName, HasTenants, UserContract
 >>>>>>> d4c0700e (♻️ (SelectStateColumn.php): refactor state retrieval logic to use $state directly for clarity)
 {
-    
+
 
     use HasApiTokens;
     use HasFactory;

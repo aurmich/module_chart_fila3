@@ -3,6 +3,7 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 use Modules\User\Models\BaseUser;
 use Spatie\MediaLibrary\HasMedia;
@@ -231,12 +232,14 @@ class User extends BaseUser implements HasMedia,HasStatesContract
 
     /** @var list<string> */
 =======
+=======
+
+>>>>>>> f4ba6a58 (✨ (User.php): add user state transition classes to manage user state changes)
 use Modules\User\Models\BaseUser;
 use Spatie\ModelStates\HasStates;
 use Spatie\Activitylog\LogOptions;
-use Modules\SaluteOra\Enums\UserType;
 
-use Modules\SaluteOra\States\User\UserState;
+use Modules\SaluteOra\Enums\UserType;
 use Illuminate\Notifications\Notifiable;
 use Modules\SaluteOra\States\User\Active;
 use Modules\SaluteOra\States\User\Pending;
@@ -244,6 +247,7 @@ use Modules\SaluteOra\States\User\Inactive;
 use Modules\SaluteOra\States\User\Rejected;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Modules\SaluteOra\States\User\Suspended;
+use Modules\SaluteOra\States\User\UserState;
 use Modules\SaluteOra\States\User\IntegrationRequested;
 
 /**
@@ -275,7 +279,7 @@ class User extends BaseUser
     /** @var array<string, mixed>  */
     protected $attributes = [
         //'state' => Pending::class,
-        // 'state' => 'pending',
+        //'state' => 'pending',
     ];
 <<<<<<< HEAD
 <<<<<<< HEAD
