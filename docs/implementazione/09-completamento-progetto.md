@@ -44,10 +44,7 @@ L'analisi completa del progetto il progetto ha rivelato che l'implementazione è
 
 #### 1.2 Risoluzione Duplicazione CMS/Cms
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Verificare quale versione è corretta
 cd /var/www/html/saluteora/laravel
 php artisan module:list
@@ -57,13 +54,9 @@ php artisan module:list
 
 #### 1.3 Verifica Namespace dei Moduli
 ```bash
-<<<<<<< HEAD
 
 # Controllare che tutti i namespace seguano la convenzione corretta
 
-=======
-# Controllare che tutti i namespace seguano la convenzione corretta
->>>>>>> aurmich/dev
 # Modules\ModuleName\ invece di Modules\ModuleName\App\
 ```
 
@@ -188,10 +181,7 @@ Cache::tags(['tenant:'.$tenantId])->remember('key', $ttl, function () {
 
 ### Completamento Core System
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Navigare nella directory del progetto
 cd /var/www/html/saluteora/laravel
 
@@ -210,10 +200,7 @@ php artisan view:cache
 
 ### Verifica Integrità Sistema
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Verificare lo stato dei moduli
 php artisan module:list
 
@@ -226,10 +213,7 @@ php artisan about
 
 ### Avvio Server di Sviluppo
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Avviare il server di sviluppo
 cd /var/www/html/saluteora/laravel
 php artisan serve

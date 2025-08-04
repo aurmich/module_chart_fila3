@@ -36,10 +36,7 @@ laravel/Modules/[NomeModulo]/
 ### 1. Modulo Patient
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Creazione struttura base
 mkdir -p laravel/Modules/Patient/{Config,Console,Database/{Factories,Migrations,Seeders},Filament/{Resources,Pages,Widgets},Http/{Controllers,Middleware,Requests},Models,Providers,Resources/{js,lang,views},Routes,Services,Tests}
 ```
@@ -141,10 +138,7 @@ class PatientResource extends XotBaseResource
 ### 2. Modulo Dental
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Creazione struttura base
 mkdir -p laravel/Modules/Dental/{Config,Console,Database/{Factories,Migrations,Seeders},Filament/{Resources,Pages,Widgets},Http/{Controllers,Middleware,Requests},Models,Providers,Resources/{js,lang,views},Routes,Services,Tests}
 ```
@@ -254,10 +248,7 @@ class VisitResource extends XotBaseResource
 ### 3. Modulo ISEE
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Creazione struttura base
 mkdir -p laravel/Modules/ISEE/{Config,Console,Database/{Factories,Migrations,Seeders},Filament/{Resources,Pages,Widgets},Http/{Controllers,Middleware,Requests},Models,Providers,Resources/{js,lang,views},Routes,Services,Tests}
 ```
@@ -423,7 +414,3 @@ class PatientServiceProvider extends ServiceProvider
 5. **Sicurezza**:
    - Implementare le policies
    - Verificare i permessi
-<<<<<<< HEAD
-=======
-   - Proteggere i dati sensibili 
->>>>>>> aurmich/dev

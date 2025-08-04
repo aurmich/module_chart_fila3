@@ -65,10 +65,7 @@ Prima di creare qualsiasi widget:
 
 ## Comandi Utili
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Pulire la cache delle viste dopo modifiche
 php artisan view:clear
 

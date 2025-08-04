@@ -248,10 +248,7 @@ if (is_array($value) && !$this->hasValidCast($key)) {
 
 ### Pattern di Review
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Cerca potenziali problemi
 grep -r "->create(" Modules/ | grep -v test
 grep -r "\$fillable.*=" Modules/ | grep -v test
@@ -277,7 +274,3 @@ grep -r "array.*=" Modules/ | grep -v test
 
 **Ultimo aggiornamento**: 26 Giugno 2025  
 **Status**: Pattern documentato, caso critico SaluteOra identificato  
-<<<<<<< HEAD
-=======
-**Prossimi step**: Implementazione fixes e prevenzione proattiva 
->>>>>>> aurmich/dev
