@@ -65,6 +65,7 @@ class StudioUser extends BasePivot
     protected $fillable = [
         //'doctor_id',
         'id',
+<<<<<<< HEAD
 =======
 =======
 use Parental\HasChildren;
@@ -89,6 +90,8 @@ class StudioUser extends BasePivot
     protected $fillable = [
         //'doctor_id',
 >>>>>>> 9d3532ab (✨ (StudioUser.php): introduce StudioUser model to manage many-to-many)
+=======
+>>>>>>> 0015a493 (✨ (DoctorAvailabilitiesWidget): implement the DoctorAvailabilitiesWidget to provide doctors with a comprehensive overview of their availability across multiple studios, enhancing user experience and data management.)
         'user_id',
         'studio_id',
         'schedule',
@@ -108,6 +111,7 @@ class StudioUser extends BasePivot
         ]);
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -157,4 +161,21 @@ class StudioUser extends BasePivot
 =======
 
 >>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
+=======
+    /**
+     * Relazione con lo studio.
+     */
+    public function studio(): BelongsTo
+    {
+        return $this->belongsTo(Studio::class, 'studio_id');
+    }
+
+    /**
+     * Relazione con l'utente (dottore).
+     */
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
+>>>>>>> 0015a493 (✨ (DoctorAvailabilitiesWidget): implement the DoctorAvailabilitiesWidget to provide doctors with a comprehensive overview of their availability across multiple studios, enhancing user experience and data management.)
 }

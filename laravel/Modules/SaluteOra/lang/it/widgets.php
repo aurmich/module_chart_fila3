@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
 declare(strict_types=1);
@@ -489,6 +490,10 @@ declare(strict_types=1);
 
 =======
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+declare(strict_types=1);
+
+>>>>>>> 0015a493 (✨ (DoctorAvailabilitiesWidget): implement the DoctorAvailabilitiesWidget to provide doctors with a comprehensive overview of their availability across multiple studios, enhancing user experience and data management.)
 return [
     'studio_overview' => [
         'title' => 'Panoramica Studi',
@@ -506,8 +511,53 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 ];
 >>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
 =======
 ];
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+    'doctor_availabilities' => [
+        'title' => 'I Miei Orari di Disponibilità',
+        'description' => 'Visualizza e gestisci gli orari di tutti i tuoi studi',
+        'stats' => [
+            'total_studios' => 'Studi totali',
+            'configured_studios' => 'Orari configurati',
+            'unconfigured_studios' => 'Da configurare',
+        ],
+        'studio' => [
+            'primary_badge' => 'Principale',
+            'configured_badge' => 'Configurato',
+            'unconfigured_badge' => 'Da configurare',
+            'edit_schedule' => 'Modifica orari',
+            'configure_now' => 'Configura ora',
+        ],
+        'schedule' => [
+            'title' => 'Orari di Disponibilità',
+            'description' => 'Visualizza e modifica gli orari di apertura per questo studio',
+            'not_configured' => 'Orari non configurati',
+            'configure_description' => 'Configura gli orari di disponibilità per questo studio',
+            'no_schedule' => 'Nessun orario configurato',
+            'click_edit_to_configure' => 'Clicca sul pulsante modifica per configurare gli orari',
+            'closed' => 'Chiuso',
+        ],
+        'empty_states' => [
+            'no_studios' => 'Nessuno studio associato',
+            'no_studios_description' => 'Contatta l\'amministratore per associarti a uno studio',
+            'no_schedule' => 'Orari non ancora configurati per questo studio',
+            'no_schedule_description' => 'Configura gli orari di disponibilità',
+        ],
+        'actions' => [
+            'edit_schedule' => [
+                'label' => 'Modifica orari',
+                'tooltip' => 'Apri la pagina di configurazione orari per questo studio',
+            ],
+            'configure_schedule' => [
+                'label' => 'Configura ora',
+                'tooltip' => 'Configura gli orari di disponibilità per questo studio',
+            ],
+        ],
+    ],
+];
+>>>>>>> 0015a493 (✨ (DoctorAvailabilitiesWidget): implement the DoctorAvailabilitiesWidget to provide doctors with a comprehensive overview of their availability across multiple studios, enhancing user experience and data management.)

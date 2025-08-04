@@ -159,6 +159,7 @@ class DoctorAvailabilityPage extends XotBasePage
     public function form(Form $form): Form
     {
         return $form
+<<<<<<< HEAD
             ->schema([
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -177,7 +178,19 @@ class DoctorAvailabilityPage extends XotBasePage
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
                     ->columnSpanFull(),
             ])
+=======
+            ->schema($this->getFormSchema())
+>>>>>>> 0015a493 (✨ (DoctorAvailabilitiesWidget): implement the DoctorAvailabilitiesWidget to provide doctors with a comprehensive overview of their availability across multiple studios, enhancing user experience and data management.)
             ->statePath('data');
+    }
+
+
+    public function getFormSchema(): array
+    {
+        return [
+            OpeningHoursField::make('schedule')
+                ->columnSpanFull(),
+        ];
     }
 
     /**

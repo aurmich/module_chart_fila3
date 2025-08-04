@@ -5,6 +5,7 @@ return array (
   array (
     'editSchedule' => 
     array (
+<<<<<<< HEAD
       'label' => 'Modifica Disponibilità',
     ),
   ),
@@ -21,4 +22,9 @@ return array (
   ),
 =======
 >>>>>>> aurmich/dev
+=======
+      'label' => 'editSchedule',
+    ),
+  ),
+>>>>>>> 0015a493 (✨ (DoctorAvailabilitiesWidget): implement the DoctorAvailabilitiesWidget to provide doctors with a comprehensive overview of their availability across multiple studios, enhancing user experience and data management.)
 );
