@@ -317,10 +317,7 @@ Cause possibili:
 
 Soluzione:
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Verificare presenza del file
 find /var/www/html/saluteora/laravel/Modules -name "XYZServiceProvider.php"
 

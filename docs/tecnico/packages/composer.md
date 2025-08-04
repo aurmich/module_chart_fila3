@@ -117,10 +117,7 @@ composer --version
 
 ### Gestione Dipendenze
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Installare dipendenze
 composer install
 
@@ -136,10 +133,7 @@ composer require package/name
 
 ### Gestione Autoload
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Rigenerare autoload
 composer dump-autoload
 
@@ -149,10 +143,7 @@ composer dump-autoload -o
 
 ### Diagnostica
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Verificare dipendenze
 composer diagnose
 
@@ -167,7 +158,3 @@ composer licenses
 - Mantenere sempre aggiornato composer
 - Verificare la compatibilità delle dipendenze
 - Utilizzare versioni specifiche per stabilità
-<<<<<<< HEAD
-=======
-- Documentare le dipendenze aggiunte 
->>>>>>> aurmich/dev

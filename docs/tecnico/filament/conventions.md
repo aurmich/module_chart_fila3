@@ -237,10 +237,7 @@ class ModelNameResource extends XotBaseResource
 
 ### 2. README
 ```markdown
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Module Name
 
 ## Filament Resources
@@ -261,17 +258,11 @@ class ModelNameResource extends XotBaseResource
 
 ### 1. CHANGELOG
 ```markdown
-<<<<<<< HEAD
 
 # Changelog
 
 ## [1.0.0] - 2024-03-26
 
-=======
-# Changelog
-
-## [1.0.0] - 2024-03-26
->>>>>>> aurmich/dev
 ### Added
 - Resource `ModelNameResource`
 - Page `ListModelName`
@@ -290,10 +281,7 @@ class ModelNameResource extends XotBaseResource
 - Major: Cambiamenti non retrocompatibili
 - Minor: Nuove funzionalità retrocompatibili
 - Patch: Bugfix retrocompatibili 
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 ## Collegamenti tra versioni di conventions.md
 * [conventions.md](docs/tecnico/filament/conventions.md)
 * [conventions.md](docs/conventions.md)

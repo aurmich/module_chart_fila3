@@ -11,10 +11,7 @@ Questa sezione contiene tutta la documentazione tecnica necessaria per lo svilup
 ### Stack Tecnologico
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Backend
 Laravel 10.x LTS
 PHP 8.2+
@@ -170,10 +167,7 @@ class Patient extends User
 ### API REST Endpoints
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Autenticazione
 POST /api/auth/login
 POST /api/auth/logout  
@@ -219,10 +213,7 @@ Route::middleware('throttle:60,1')->group(function () {
 ### Configurazione Server
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Nginx Configuration
 server {
     listen 80;
@@ -247,10 +238,7 @@ server {
 ### Environment Configuration
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # .env Production
 APP_ENV=production
 APP_DEBUG=false
@@ -277,10 +265,7 @@ MAIL_PASSWORD=app_password
 ### Queue Workers
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Supervisor Configuration
 [program:saluteora-worker]
 process_name=%(program_name)s_%(process_num)02d
@@ -377,10 +362,7 @@ tests/
 ### Code Quality Tools
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # PHPStan (Analisi statica)
 ./vendor/bin/phpstan analyse --level=8
 
@@ -399,10 +381,7 @@ tests/
 ### Backup & Recovery
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Script backup database
 #!/bin/bash
 BACKUP_DIR="/backups/saluteora"
@@ -419,10 +398,7 @@ find $BACKUP_DIR -name "*.tar.gz" -mtime +30 -delete
 ### Maintenance Mode
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Entrata in manutenzione
 php artisan down --refresh=15 --retry=60 --secret="maintenance-token"
 
@@ -436,10 +412,7 @@ php artisan schedule:run
 ### Performance Optimization
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Cache optimization
 php artisan config:cache
 php artisan route:cache
@@ -460,10 +433,7 @@ php artisan storage:link
 ### Common Issues
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Permission issues
 sudo chown -R www-data:www-data /var/www/html/_bases/base_saluteora
 sudo chmod -R 755 /var/www/html/_bases/base_saluteora
@@ -511,7 +481,3 @@ php artisan view:clear
 
 **📅 Ultimo aggiornamento**: 5 Giugno 2025  
 **🔄 Versione documentazione**: 1.2  
-<<<<<<< HEAD
-=======
-**✅ Stato**: Completa e aggiornata
->>>>>>> aurmich/dev

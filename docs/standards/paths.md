@@ -123,10 +123,7 @@ class AppointmentController extends Controller { ... }
 
 1. **Comandi Artisan**
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Verifica struttura moduli
 php artisan module:check-structure
 
@@ -136,10 +133,7 @@ php artisan make:module:enum SaluteOra AppointmentType
 
 2. **Script di Validazione**
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Verifica percorsi
 ./vendor/bin/phpstan analyse --paths-file=paths.txt
 
@@ -175,7 +169,3 @@ php artisan make:module:enum SaluteOra AppointmentType
 
 ---
 
-<<<<<<< HEAD
-=======
-*Ultimo aggiornamento: 28 Maggio 2025* 
->>>>>>> aurmich/dev

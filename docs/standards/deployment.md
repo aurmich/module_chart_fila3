@@ -21,10 +21,7 @@
 
 ### 1. Ambiente di Sviluppo
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Clona il repository
 git clone https://github.com/username/repo.git
 
@@ -46,10 +43,7 @@ php artisan serve
 
 ### 2. Ambiente di Staging
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Clona il repository
 git clone https://github.com/username/repo.git
 
@@ -74,10 +68,7 @@ php artisan serve
 
 ### 3. Ambiente di Produzione
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Clona il repository
 git clone https://github.com/username/repo.git
 

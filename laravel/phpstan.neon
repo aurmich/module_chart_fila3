@@ -2,18 +2,8 @@ includes:
     - ./phpstan-baseline.neon
     - ./vendor/larastan/larastan/extension.neon
     - ./vendor/nesbot/carbon/extension.neon
-<<<<<<< HEAD
     - ./vendor/phpstan/phpstan/conf/bleedingEdge.neon
-<<<<<<< HEAD
     - ./vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
-=======
-    # Temporaneamente disabilito per risolvere il problema con JsonException
-    # - ./vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
->>>>>>> aurmich/dev
-=======
-    # - ./vendor/phpstan/phpstan/conf/bleedingEdge.neon
-    - ./vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
->>>>>>> 345f8677 (phpstan)
 
 parameters:
     level: 9
@@ -35,11 +25,7 @@ parameters:
         - "#^Unsafe usage of new static#"
         - '#Method .+::.+ should return .+<.+, (.+)> but returns .+<.+, \$this\(\1\)>#' # Ignora errori di covarianza nei tipi generici delle relazioni Eloquent
         - '#Cannot cast mixed to (string|float|double|int|bool|boolean).#' # Ignora errori di cast da mixed a tipi specifici
-<<<<<<< HEAD
         - '#Call to function is_object\(\) with .+ will always evaluate to true.#' 
-=======
-        - '#Call to function is_object\(\) with .+ will always evaluate to true.#' # Ignora errori su controlli di oggetti già verificati
->>>>>>> aurmich/dev
         - identifier: missingType.generics
         - identifier: missingType.iterableValue
         - identifier: larastan.noEnvCallsOutsideOfConfig
@@ -57,12 +43,8 @@ parameters:
         - ./*/rector.php
         - ./Modules/*/packages/*
         - ./Modules/Xot/app/Filament/Traits/HasXotTable.php
-<<<<<<< HEAD
         - ./Modules/Activity
         - ./Modules/*/database_old/*
-=======
-        # - ./Modules/*/database_old/*
->>>>>>> aurmich/dev
         - ./Modules/*/scripts/*
         - ./Modules/*/tests/*
         - ./Modules/*/vendor/*

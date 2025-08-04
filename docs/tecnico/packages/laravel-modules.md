@@ -31,10 +31,7 @@ composer require nwidart/laravel-modules
 
 ### 5. Pubblicazione dei File di Configurazione
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Pubblica tutti i file (config, stubs, vite)
 php artisan vendor:publish --provider="Nwidart\Modules\LaravelModulesServiceProvider"
 
@@ -127,10 +124,7 @@ Modules/
 
 ### Creazione Moduli
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Crea un nuovo modulo
 php artisan module:make ModuleName
 
@@ -143,10 +137,7 @@ php artisan module:make ModuleName --controller --model --migration
 
 ### Gestione Moduli
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> aurmich/dev
 # Lista tutti i moduli
 php artisan module:list
 
@@ -484,7 +475,3 @@ return [
 3. **Dipendenze**:
    - Gestire attentamente le dipendenze tra moduli
    - Evitare dipendenze circolari
-<<<<<<< HEAD
-=======
-   - Documentare le dipendenze nel `module.json` 
->>>>>>> aurmich/dev
