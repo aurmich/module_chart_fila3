@@ -7,6 +7,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mb-3 pb-2 border-b border-gray-200 dark:border-gray-700">
             <div class="text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 @lang('pub_theme::opening_hours.headers.day.label')
             </div>
             <div class="text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide text-center">
@@ -15,6 +16,8 @@
             <div class="text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide text-center">
                 @lang('pub_theme::opening_hours.headers.afternoon.label')
 =======
+=======
+>>>>>>> 98275f8c (✨ (DoctorAvailabilitiesWidget): update view path to use pub_theme for better theming support)
                 {{ __('ui::opening_hours.headers.day') }}
             </div>
             <div class="text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide text-center">
@@ -22,7 +25,10 @@
             </div>
             <div class="text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide text-center">
                 {{ __('ui::opening_hours.headers.afternoon') }}
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 98275f8c (✨ (DoctorAvailabilitiesWidget): update view path to use pub_theme for better theming support)
             </div>
         </div>
         

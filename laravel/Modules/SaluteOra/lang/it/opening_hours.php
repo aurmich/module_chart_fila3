@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -16,6 +17,8 @@ return [
         'sunday' => 'Domenica',
     ],
 =======
+=======
+>>>>>>> 98275f8c (✨ (DoctorAvailabilitiesWidget): update view path to use pub_theme for better theming support)
 return [
     'days' => [
                 'monday' => 'Lunedì',
@@ -26,6 +29,9 @@ return [
                 'saturday' => 'Sabato',
                 'sunday' => 'Domenica',
             ],
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 98275f8c (✨ (DoctorAvailabilitiesWidget): update view path to use pub_theme for better theming support)
 ];
   

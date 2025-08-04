@@ -6,6 +6,7 @@ return array (
     'editSchedule' => 
     array (
 <<<<<<< HEAD
+<<<<<<< HEAD
       'label' => 'Modifica Disponibilità',
     ),
   ),
@@ -27,4 +28,9 @@ return array (
     ),
   ),
 >>>>>>> 0015a493 (✨ (DoctorAvailabilitiesWidget): implement the DoctorAvailabilitiesWidget to provide doctors with a comprehensive overview of their availability across multiple studios, enhancing user experience and data management.)
+=======
+      'label' => 'Modifica Disponibilità',
+    ),
+  ),
+>>>>>>> 98275f8c (✨ (DoctorAvailabilitiesWidget): update view path to use pub_theme for better theming support)
 );
