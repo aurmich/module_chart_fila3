@@ -9,14 +9,7 @@ use Illuminate\Support\Str;
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\DataCollection;
 use Webmozart\Assert\Assert;
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeFloatCastAction;
-=======
-<<<<<<< HEAD
-use Modules\Xot\Actions\Cast\SafeFloatCastAction;
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 
 class AnswersChartData extends Data
 {
@@ -107,15 +100,7 @@ class AnswersChartData extends Data
         } else {
             $data = $this->answers->toCollection()->pluck('avg')->all();
             foreach ($data as $key => $item) {
-<<<<<<< HEAD
                 $data[$key] = number_format(\Modules\Xot\Actions\Cast\SafeFloatCastAction::cast($item, 0.0), 2, '.', '');
-=======
-<<<<<<< HEAD
-                $data[$key] = number_format(\Modules\Xot\Actions\Cast\SafeFloatCastAction::cast($item, 0.0), 2, '.', '');
-=======
-                $data[$key] = number_format((float) $item, 2, '.', '');
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
             }
 
             if (isset($this->chart->max)) {
@@ -131,36 +116,8 @@ class AnswersChartData extends Data
                     }
                 }
             }
-<<<<<<< HEAD
             /** @phpstan-ignore offsetAccess.nonOffsetAccessible */
             if (isset($this->answers->toCollection()->pluck('avg')[0]) && ! \is_string($this->answers->toCollection()->pluck('avg')[0])) {
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            /** @phpstan-ignore offsetAccess.nonOffsetAccessible */
-=======
-
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
-            /** @phpstan-ignore-next-line */
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
-            if (isset($this->answers->toCollection()->pluck('avg')[0]) && ! \is_string($this->answers->toCollection()->pluck('avg')[0])) {
-=======
-            // Check if the first element of the avg collection exists and has proper properties
-            $avgCollection = $this->answers->toCollection()->pluck('avg');
-            $firstAvgItem = $avgCollection->first();
-            
-            $label = 'Percentuale'; // Default label
-            if (is_object($firstAvgItem) && property_exists($firstAvgItem, 'avg')) {
-                $label = 'Media';
-            } elseif (is_array($firstAvgItem) && array_key_exists('avg', $firstAvgItem)) {
->>>>>>> c99763dd (✨ (studio-filter-widget-lessons.mdc): add comprehensive guidelines and patterns for StudioFilterWidget to enhance code quality and maintainability)
-=======
-            if (isset($this->answers->toCollection()->pluck('avg')[0]) && ! \is_string($this->answers->toCollection()->pluck('avg')[0])) {
->>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
->>>>>>> aurmich/dev
                 $label = 'Media';
             } else {
                 $label = 'Percentuale';
@@ -445,30 +402,8 @@ class AnswersChartData extends Data
         $label = '--';
         if ($first_answer != null) {
             Assert::isInstanceOf($first_answer, AnswerData::class, '['.__LINE__.']['.__FILE__.']');
-<<<<<<< HEAD
             /** @phpstan-ignore property.nonObject */
             $label = round((float) $this->answers->first()->avg, 2);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            /** @phpstan-ignore property.nonObject */
-=======
->>>>>>> 54f4fa16 (.)
-=======
-            /** @phpstan-ignore-next-line */
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
-            $label = round((float) $this->answers->first()->avg, 2);
-=======
-            /** @var AnswerData $first_answer */
-            $avgValue = $first_answer->avg;
-            $label = is_numeric($avgValue) ? round((float) $avgValue, 2) : '--';
->>>>>>> c99763dd (✨ (studio-filter-widget-lessons.mdc): add comprehensive guidelines and patterns for StudioFilterWidget to enhance code quality and maintainability)
-=======
-            $label = round((float) $this->answers->first()->avg, 2);
->>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
->>>>>>> aurmich/dev
         }
         $js = <<<JS
             scales: {

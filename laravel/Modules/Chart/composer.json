@@ -19,117 +19,22 @@
     "extra": {
         "laravel": {
             "providers": [
-<<<<<<< HEAD
                 "Modules\\Chart\\Providers\\ChartServiceProvider",
                 "Modules\\Chart\\Providers\\Filament\\AdminPanelProvider"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                "Modules\\Chart\\Providers\\ChartServiceProvider",
-                "Modules\\Chart\\Providers\\Filament\\AdminPanelProvider"
-=======
-                "Modules\\Chart\\Providers\\ChartServiceProvider"
->>>>>>> 54f4fa16 (.)
-=======
-                "Modules\\Chart\\Providers\\ChartServiceProvider",
-                "Modules\\Chart\\Providers\\Filament\\AdminPanelProvider"
->>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
-=======
-                "Modules\\Chart\\Providers\\ChartServiceProvider"
->>>>>>> 15cb84fb (fix collisions)
-=======
-                "Modules\\Chart\\Providers\\ChartServiceProvider",
-                "Modules\\Chart\\Providers\\Filament\\AdminPanelProvider"
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
             ],
             "aliases": {}
         }
     },
     "autoload": {
         "psr-4": {
-<<<<<<< HEAD
             "Modules\\Chart\\": "app/",
             "Modules\\Chart\\Database\\Factories\\": "database/factories/",
             "Modules\\Chart\\Database\\Seeders\\": "database/seeders/"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "Modules\\Chart\\": "app/",
-            "Modules\\Chart\\Database\\Factories\\": "database/factories/",
-            "Modules\\Chart\\Database\\Seeders\\": "database/seeders/"
-=======
-            "Modules\\Chart\\": "app/"
->>>>>>> 54f4fa16 (.)
-=======
-            "Modules\\Chart\\": "app/",
-            "Modules\\Chart\\Database\\Factories\\": "database/factories/",
-            "Modules\\Chart\\Database\\Seeders\\": "database/seeders/"
->>>>>>> 5d95df2f (feat(chart): add autoloading for factories and seeders in composer.json to improve module structure)
-=======
-            "Modules\\Chart\\": "app/"
-=======
-            "Modules\\Chart\\": "app/",
-            "Modules\\Chart\\Database\\Factories\\": "database/factories/",
-            "Modules\\Chart\\Database\\Seeders\\": "database/seeders/"
->>>>>>> 21462f4 (feat: add initial project structure with configuration files and actions for chart generation)
->>>>>>> bac26886 (delete replicate folder)
-=======
-            "Modules\\Chart\\": "app/",
-            "Modules\\Chart\\Database\\Factories\\": "database/factories/",
-            "Modules\\Chart\\Database\\Seeders\\": "database/seeders/"
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
-            "Modules\\Chart\\": "app/"
->>>>>>> 15cb84fb (fix collisions)
-=======
-            "Modules\\Chart\\": "app/",
-            "Modules\\Chart\\Database\\Factories\\": "database/factories/",
-            "Modules\\Chart\\Database\\Seeders\\": "database/seeders/"
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
         }
     },
     "require": {
         "amenadiel/jpgraph": "^4.1"
     },
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-    "require_comment": {
-        "laraxot/module_xot_fila3": "*",
-        "thecodingmachine/safe": "^2.5"
-    },
-    "require-dev_comment": {
-        "driftingly/rector-laravel": "^0.26.2",
-        "enlightn/enlightn": "^2.5",
-        "laravel/pint": "^1.13",
-        "nunomaduro/collision": "*",
-        "larastan/larastan": "^2.6",
-        "nunomaduro/phpinsights": "^2.9",
-        "orchestra/testbench": "^9.4",
-        "pestphp/pest": "*",
-        "pestphp/pest-plugin-arch": "*",
-        "pestphp/pest-plugin-laravel": "*",
-        "phpstan/phpstan-deprecation-rules": "*",
-        "phpstan/phpstan-phpunit": "*",
-        "psalm/plugin-laravel": "*",
-        "rector/phpstan-rules": "*",
-        "rector/rector": "*",
-        "spatie/laravel-ray": "*",
-        "thecodingmachine/phpstan-safe-rule": "^1.2",
-        "tightenco/duster": "^2.2",
-        "vimeo/psalm": "^5.15"
-    },
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
     "repositories": [ {
         "type": "path",
         "url": "../Xot"

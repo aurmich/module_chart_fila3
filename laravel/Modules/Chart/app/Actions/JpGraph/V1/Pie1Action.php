@@ -11,10 +11,6 @@ use Modules\Chart\Actions\JpGraph\ApplyGraphStyleAction;
 use Modules\Chart\Datas\AnswersChartData;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 use function Safe\define;
 
 // JpGraph font constants - these are global constants defined by JpGraph
@@ -26,11 +22,6 @@ if (!defined('Amenadiel\\JpGraph\\FF_ARIAL')) {
     \Safe\define('Amenadiel\\JpGraph\\FS_BOLD', 1);
     \Safe\define('Amenadiel\\JpGraph\\FS_NORMAL', 0);
 }
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 
 class Pie1Action
 {

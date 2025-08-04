@@ -9,29 +9,9 @@
     "providers": [
         "Modules\\Cms\\Providers\\CmsServiceProvider",
         "Modules\\Cms\\Providers\\Filament\\AdminPanelProvider",
-<<<<<<< HEAD
         "Modules\\Cms\\Providers\\FolioVoltServiceProvider"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "Modules\\Cms\\Providers\\FolioVoltServiceProvider"
-=======
-        "Modules\\Cms\\Providers\\Filament\\FrontPanelProvider"
->>>>>>> 54f4fa16 (.)
-=======
-        "Modules\\Cms\\Providers\\FolioVoltServiceProvider"
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
->>>>>>> aurmich/dev
     ],
     "aliases": [],
     "files": [],
     "requires": []
-<<<<<<< HEAD
 }
-=======
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev

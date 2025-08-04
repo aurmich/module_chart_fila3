@@ -18,15 +18,7 @@ Secondo le regole di organizzazione della documentazione:
 ## Convenzioni e Regole
 
 - [Convenzioni Namespace](../../Xot/docs/NAMESPACE-CONVENTIONS.md) - Regole per i namespace
-<<<<<<< HEAD
 - [Convenzioni di Nomenclatura](../../Xot/docs/naming-conventions.md) - Regole per la nomenclatura
-=======
-<<<<<<< HEAD
-- [Convenzioni di Nomenclatura](../../Xot/docs/naming-conventions.md) - Regole per la nomenclatura
-=======
-- [Convenzioni di Nomenclatura](../../Xot/docs/NAMING-CONVENTIONS.md) - Regole per la nomenclatura
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 
 ## Collegamento Bidirezionale
 

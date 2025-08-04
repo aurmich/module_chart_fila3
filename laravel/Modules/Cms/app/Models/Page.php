@@ -22,16 +22,6 @@ use Spatie\Translatable\HasTranslations;
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * @property string|null                     $deleted_by
  * @property array|null                      $content_blocks
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- *
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> f3e4ec66 (.)
->>>>>>> aurmich/dev
  * @method static \Illuminate\Database\Eloquent\Builder|Page newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Page newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Page onlyTrashed()
@@ -49,62 +39,20 @@ use Spatie\Translatable\HasTranslations;
  * @method static \Illuminate\Database\Eloquent\Builder|Page whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Page withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder|Page withoutTrashed()
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
  * @property array|null $sidebar_blocks
  * @property array      $footer_blocks
  * @method static \Illuminate\Database\Eloquent\Builder|Page whereFooterBlocks($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Page whereSidebarBlocks($value)
  * @property mixed $translations
-<<<<<<< HEAD
-=======
-=======
- *
-=======
->>>>>>> f3e4ec66 (.)
- * @property array|null $sidebar_blocks
- * @property array      $footer_blocks
- * @method static \Illuminate\Database\Eloquent\Builder|Page whereFooterBlocks($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Page whereSidebarBlocks($value)
- * @property mixed $translations
-<<<<<<< HEAD
- *
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> f3e4ec66 (.)
->>>>>>> aurmich/dev
  * @method static \Illuminate\Database\Eloquent\Builder|Page whereLocale(string $column, string $locale)
  * @method static \Illuminate\Database\Eloquent\Builder|Page whereLocales(string $column, array $locales)
  * @method static \Illuminate\Database\Eloquent\Builder|Page whereJsonContainsLocale(string $column, string $locale, ?mixed $value)
  * @method static \Illuminate\Database\Eloquent\Builder|Page whereJsonContainsLocales(string $column, array $locales, ?mixed $value)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  * @method static \Modules\Cms\Database\Factories\PageFactory factory($count = null, $state = [])
  * @property array<array-key, mixed>|null $middleware
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Page whereMiddleware($value)
-<<<<<<< HEAD
-=======
-=======
- *
-=======
->>>>>>> f3e4ec66 (.)
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $updater
- * @method static \Modules\Cms\Database\Factories\PageFactory factory($count = null, $state = [])
-<<<<<<< HEAD
- *
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> f3e4ec66 (.)
->>>>>>> aurmich/dev
  * @mixin \Eloquent
  */
 class Page extends BaseModelLang
@@ -124,14 +72,7 @@ class Page extends BaseModelLang
         'content',
         'slug',
         'title',
-<<<<<<< HEAD
         'middleware',
-=======
-<<<<<<< HEAD
-        'middleware',
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
         'content_blocks',
         'sidebar_blocks',
         'footer_blocks',
@@ -141,14 +82,7 @@ class Page extends BaseModelLang
         'id' => 'integer',
         'title' => 'json',
         'slug' => 'string',
-<<<<<<< HEAD
         'middleware' => 'json',
-=======
-<<<<<<< HEAD
-        'middleware' => 'json',
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
         'content' => 'string',
 
         'content_blocks' => 'json',
@@ -187,10 +121,6 @@ class Page extends BaseModelLang
             'content_blocks' => 'array',
             'sidebar_blocks' => 'array',
             'footer_blocks' => 'array',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
             'middleware' => 'array',
         ];
     }
@@ -201,11 +131,4 @@ class Page extends BaseModelLang
         $page = self::where('slug', $slug)->first();
         return $page->middleware ?? [];
     }
-<<<<<<< HEAD
-=======
-=======
-        ];
-    }
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 }

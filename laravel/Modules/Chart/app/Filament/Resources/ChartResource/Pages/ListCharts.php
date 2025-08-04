@@ -20,24 +20,6 @@ use Modules\Xot\Filament\Traits\TransTrait;
 /**
  * Pagina di elenco per le risorse Chart.
  *
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- * @phpstan-import-type Chart from \Modules\Chart\Models\Chart
->>>>>>> 54f4fa16 (.)
-=======
- * @phpstan-import-type ChartArray from \Modules\Chart\Models\Chart
->>>>>>> c99763dd (✨ (studio-filter-widget-lessons.mdc): add comprehensive guidelines and patterns for StudioFilterWidget to enhance code quality and maintainability)
-=======
- * @phpstan-import-type Chart from \Modules\Chart\Models\Chart
->>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
-=======
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
->>>>>>> aurmich/dev
  */
 class ListCharts extends XotBaseListRecords
 {
@@ -58,23 +40,11 @@ class ListCharts extends XotBaseListRecords
     /**
      * Definisce le colonne della tabella.
      *
-<<<<<<< HEAD
      * @return array<string, TextColumn>
-=======
-<<<<<<< HEAD
-     * @return array<string, TextColumn>
-=======
-     * @return array<int, TextColumn>
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
      */
     public function getTableColumns(): array
     {
         return [
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
             'id' => TextColumn::make('id')
                 ->sortable()
                 ->searchable(),
@@ -97,43 +67,8 @@ class ListCharts extends XotBaseListRecords
             'font_style' => TextColumn::make('font_style')
                 ->searchable(),
             'font_size' => TextColumn::make('font_size')
-<<<<<<< HEAD
-=======
-=======
-            TextColumn::make('id')
-                ->sortable()
-                ->searchable(),
-            TextColumn::make('type')
-                ->sortable()
-                ->searchable(),
-            TextColumn::make('group_by')
-                ->sortable()
-                ->searchable(),
-            TextColumn::make('sort_by')
-                ->sortable(),
-            TextColumn::make('width')
-                ->numeric()
-                ->sortable(),
-            TextColumn::make('height')
-                ->numeric()
-                ->sortable(),
-            TextColumn::make('font_family')
-                ->searchable(),
-            TextColumn::make('font_style')
-                ->searchable(),
-            TextColumn::make('font_size')
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
                 ->numeric()
                 ->sortable(),
         ];
     }
-<<<<<<< HEAD
 } 
-=======
-<<<<<<< HEAD
-} 
-=======
-}
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev

@@ -4,21 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Chart\Models;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
 use Modules\Xot\Traits\Updater;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
@@ -28,26 +17,6 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
  *
-<<<<<<< HEAD
-=======
-=======
-// ---------- traits
-=======
->>>>>>> 8e4d163b (phpstan)
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-
-/**
- * Class BaseModel.
-<<<<<<< HEAD
->>>>>>> 54f4fa16 (.)
-=======
- * 
- * @property-read ProfileContract|null $creator
- * @property-read ProfileContract|null $updater
- *
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
  */
 abstract class BaseModel extends Model
 {
@@ -78,10 +47,6 @@ abstract class BaseModel extends Model
     /** @var string */
     protected $connection = 'chart';
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
     /**
      * Get the attributes that should be cast.
      *
@@ -91,13 +56,6 @@ abstract class BaseModel extends Model
     {
         return ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
     }
-<<<<<<< HEAD
-=======
-=======
-    /** @var array<string, string> */
-    protected $casts = ['published_at' => 'datetime', 'created_at' => 'datetime', 'updated_at' => 'datetime'];
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 
     /** @var string */
     protected $primaryKey = 'id';

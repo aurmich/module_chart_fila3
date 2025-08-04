@@ -14,14 +14,7 @@
 ### 1. Installazione delle Dipendenze
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Installare le dipendenze PHP
 composer require spatie/laravel-event-sourcing laravel/sanctum
 
@@ -123,14 +116,7 @@ tests/
 ### Esecuzione dei Test
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Esegui tutti i test
 php artisan test
 
@@ -289,14 +275,7 @@ php artisan migrate
 1. **Ottimizzazione**
 
 ```bash
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Ottimizza il caricamento delle classi
 composer install --optimize-autoloader --no-dev
 

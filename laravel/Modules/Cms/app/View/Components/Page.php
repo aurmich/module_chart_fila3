@@ -28,27 +28,11 @@ class Page extends Component
         }
         $this->slug = $slug;
         $field=$side.'_blocks';
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
->>>>>>> aurmich/dev
         //Assert::isInstanceOf($page = PageModel::firstOrCreate(['slug' => $slug], ['title' => $slug, $field => []]), PageModel::class, '['.__LINE__.']['.__FILE__.']');
         $page=PageModel::firstWhere(['slug' => $slug]);
         if($page===null){
             abort(404,'page not found: '.$slug);
         }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-        Assert::isInstanceOf($page = PageModel::firstOrCreate(['slug' => $slug], ['title' => $slug, $field => []]), PageModel::class, '['.__LINE__.']['.__FILE__.']');
->>>>>>> 7274ba81 (✨ (vscode): add new recommended extensions for Laravel development to improve developer experience)
-=======
->>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
->>>>>>> aurmich/dev
         $blocks = $page->$field ;
         if(!is_array($blocks)){
             $primary_lang=XotData::make()->primary_lang;
@@ -57,20 +41,8 @@ class Page extends Component
         if(!is_array($blocks)){
             $blocks = [];
         }
-<<<<<<< HEAD
                
         
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-               
-        
-=======
->>>>>>> 7274ba81 (✨ (vscode): add new recommended extensions for Laravel development to improve developer experience)
-=======
-        
->>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
->>>>>>> aurmich/dev
         $this->blocks = BlockData::collect($blocks);
     }
     /**
@@ -78,29 +50,7 @@ class Page extends Component
      */
     public function render(): ViewContract
     {
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-        /*
-        $comps=Blade::getClassComponentAliases();
-        $paths = Blade::getAnonymousComponentPaths();
-        $filtered=Arr::where($comps,function ($value,$key){
-            return Str::startsWith($key,'blocks.');
-        });
-        dddx([
-            'filtered'=>$filtered
-            ,'paths'=>$paths
-        ]);
-        */
->>>>>>> 7274ba81 (✨ (vscode): add new recommended extensions for Laravel development to improve developer experience)
-=======
-
->>>>>>> ca5e1eaf (.)
->>>>>>> aurmich/dev
         $view = 'cms::components.page-content';
         $view_params = [];
         if (! view()->exists($view)) {

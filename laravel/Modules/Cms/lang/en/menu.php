@@ -9,15 +9,7 @@ return [
             'description' => 'Manage website menus',
         ],
         'label' => 'Menus',
-<<<<<<< HEAD
         'sort' => '57',
-=======
-<<<<<<< HEAD
-        'sort' => '57',
-=======
-        'sort' => 57,
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
         'icon' => 'heroicon-o-bars-3',
     ],
     'fields' => [
@@ -55,10 +47,6 @@ return [
                 'draft' => 'Draft',
             ],
         ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
         'toggleColumns' => [
             'label' => 'toggleColumns',
         ],
@@ -83,11 +71,6 @@ return [
         'title' => [
             'label' => 'title',
         ],
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
     ],
     'actions' => [
         'create' => 'Create Menu',
@@ -108,16 +91,7 @@ return [
         'slug_unique' => 'The slug must be unique',
         'type_in' => 'The type must be one of: main, footer, sidebar',
     ],
-<<<<<<< HEAD
     'model' => [
         'label' => 'menu.model',
     ],
-=======
-<<<<<<< HEAD
-    'model' => [
-        'label' => 'menu.model',
-    ],
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 ];

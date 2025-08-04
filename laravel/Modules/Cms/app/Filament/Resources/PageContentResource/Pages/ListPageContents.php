@@ -19,34 +19,12 @@ use Filament\Tables\Actions\DeleteBulkAction;
 use Modules\Cms\Filament\Resources\PageContentResource;
 
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 use Modules\Lang\Filament\Resources\Pages\LangBaseListRecords;
 use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
 
 class ListPageContents extends LangBaseListRecords
 {
     //use ListRecords\Concerns\Translatable;
-<<<<<<< HEAD
-=======
-=======
-=======
-use Modules\Lang\Filament\Resources\Pages\LangBaseListRecords;
->>>>>>> 8e4d163b (phpstan)
-use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
-
-class ListPageContents extends LangBaseListRecords
-{
-<<<<<<< HEAD
-    use ListRecords\Concerns\Translatable;
->>>>>>> 54f4fa16 (.)
-=======
-    //use ListRecords\Concerns\Translatable;
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
 
     // protected static string $resource = PageContentResource::class;
 
@@ -69,67 +47,8 @@ class ListPageContents extends LangBaseListRecords
         ];
     }
 
-<<<<<<< HEAD
     
     /*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-    /*
-=======
-    public function getTableFilters(): array
-    {
-        return [
-        ];
-    }
-
-    public function getTableActions(): array
-    {
-        return [
-            ViewAction::make()
-                ->label(''),
-            EditAction::make()
-                ->label(''),
-            DeleteAction::make()
-                ->label('')
-                ->requiresConfirmation(),
-        ];
-    }
-
-    public function getTableBulkActions(): array
-    {
-        return [
-            DeleteBulkAction::make(),
-        ];
-    }
-
-    public function table(Table $table): Table
-    {
-        return $table
-            // ->columns($this->getTableColumns())
-            ->columns($this->layoutView->getTableColumns())
-            ->contentGrid($this->layoutView->getTableContentGrid())
-            ->headerActions($this->getTableHeaderActions())
-
-            ->filters($this->getTableFilters())
-            ->filtersLayout(FiltersLayout::AboveContent)
-            ->persistFiltersInSession()
-            ->actions($this->getTableActions())
-            ->bulkActions($this->getTableBulkActions())
-            ->actionsPosition(ActionsPosition::BeforeColumns)
-            ->defaultSort(
-                column: 'created_at',
-                direction: 'DESC',
-            );
-    }
-
->>>>>>> 54f4fa16 (.)
-=======
-    
-    /*
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
     protected function getHeaderActions(): array
     {
         return [
@@ -137,18 +56,7 @@ class ListPageContents extends LangBaseListRecords
             Actions\LocaleSwitcher::make(),
         ];
     }
-<<<<<<< HEAD
     */
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    */
-=======
->>>>>>> 54f4fa16 (.)
-=======
-    */
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
 
     
 }

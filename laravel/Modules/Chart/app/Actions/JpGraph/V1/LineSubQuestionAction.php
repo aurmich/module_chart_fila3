@@ -7,10 +7,6 @@ namespace Modules\Chart\Actions\JpGraph\V1;
 use Amenadiel\JpGraph\Graph\Graph;
 use Amenadiel\JpGraph\Plot\LinePlot;
 use Modules\Chart\Actions\JpGraph\GetGraphAction;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 use Modules\Chart\Datas\AnswersChartData;
 use Modules\Chart\Datas\AnswerData;
 use Modules\Xot\Actions\XotBaseAction;
@@ -37,15 +33,6 @@ if (!defined('Amenadiel\\JpGraph\\MARK_FILLEDCIRCLE')) {
     \Safe\define('Amenadiel\\JpGraph\\MARK_RIGHTTRIANGLE', 11);
     \Safe\define('Amenadiel\\JpGraph\\MARK_FLASH', 12);
 }
-<<<<<<< HEAD
-=======
-=======
-use Modules\Chart\Datas\AnswerData;
-use Modules\Chart\Datas\AnswersChartData;
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 
 class LineSubQuestionAction
 {

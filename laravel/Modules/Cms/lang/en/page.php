@@ -9,15 +9,7 @@ return [
             'description' => 'Manage website pages',
         ],
         'label' => 'Pages',
-<<<<<<< HEAD
         'sort' => '5',
-=======
-<<<<<<< HEAD
-        'sort' => '5',
-=======
-        'sort' => 5,
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
         'icon' => 'heroicon-o-document',
     ],
     'fields' => [
@@ -83,10 +75,6 @@ return [
         'toggleColumns' => [
             'label' => 'Toggle Columns',
         ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
         'reorderRecords' => [
             'label' => 'reorderRecords',
         ],
@@ -125,14 +113,6 @@ return [
         'create' => [
             'label' => 'Crea Pagina',
         ],
-<<<<<<< HEAD
-=======
-=======
-    ],
-    'actions' => [
-        'create' => 'Create Page',
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
         'edit' => 'Edit Page',
         'delete' => 'Delete Page',
         'publish' => 'Publish',
@@ -140,18 +120,9 @@ return [
         'archive' => 'Archive',
         'restore' => 'Restore',
         'preview' => 'Preview',
-<<<<<<< HEAD
         'activeLocale' => [
             'label' => 'activeLocale',
         ],
-=======
-<<<<<<< HEAD
-        'activeLocale' => [
-            'label' => 'activeLocale',
-        ],
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
     ],
     'messages' => [
         'created' => 'Page created successfully',
@@ -167,16 +138,7 @@ return [
         'slug_unique' => 'The slug must be unique',
         'content_required' => 'The content is required',
     ],
-<<<<<<< HEAD
     'model' => [
         'label' => 'page.model',
     ],
-=======
-<<<<<<< HEAD
-    'model' => [
-        'label' => 'page.model',
-    ],
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 ];

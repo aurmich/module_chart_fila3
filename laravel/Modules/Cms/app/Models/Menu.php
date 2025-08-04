@@ -5,18 +5,7 @@ declare(strict_types=1);
 namespace Modules\Cms\Models;
 
 use Modules\Tenant\Models\Traits\SushiToJsons;
-<<<<<<< HEAD
 use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
-=======
->>>>>>> 54f4fa16 (.)
-=======
-use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
 use Modules\Xot\Actions\Tree\GetTreeOptionsByModelClassAction;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
 
@@ -32,16 +21,6 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
  * @property string|null                     $created_by
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * @property string|null                     $deleted_by
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- *
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> f3e4ec66 (.)
->>>>>>> aurmich/dev
  * @method static \Illuminate\Database\Eloquent\Builder|Menu newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Menu newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Menu onlyTrashed()
@@ -57,16 +36,6 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
  * @method static \Illuminate\Database\Eloquent\Builder|Menu whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Menu withTrashed()
  * @method static \Illuminate\Database\Eloquent\Builder|Menu withoutTrashed()
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- *
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> f3e4ec66 (.)
->>>>>>> aurmich/dev
  * @property string                                                                                                     $title
  * @property int|null                                                                                                   $parent_id
  * @property \Staudenmeir\LaravelAdjacencyList\Eloquent\Collection|Menu[]                                               $children
@@ -93,16 +62,6 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
  * @property int|null                                                                                                   $siblings_count
  * @property \Staudenmeir\LaravelAdjacencyList\Eloquent\Collection|Menu[]                                               $siblingsAndSelf            All the parent's children.
  * @property int|null                                                                                                   $siblings_and_self_count
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- *
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> f3e4ec66 (.)
->>>>>>> aurmich/dev
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Collection<int, static> all($columns = ['*'])
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Builder|Menu            breadthFirst()
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Builder|Menu            depthFirst()
@@ -134,25 +93,8 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Collection<int, static> get($columns = ['*'])
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Collection<int, static> all($columns = ['*'])
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Collection<int, static> get($columns = ['*'])
-<<<<<<< HEAD
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
- * @property \Modules\Xot\Contracts\ProfileContract|null $creator
- * @property \Modules\Xot\Contracts\ProfileContract|null $updater
-=======
- *
- * @property \Modules\Xot\Contracts\ProfileContract|null $creator
- * @property \Modules\Xot\Contracts\ProfileContract|null $updater
- *
->>>>>>> 54f4fa16 (.)
-=======
- * @property \Modules\Xot\Contracts\ProfileContract|null $creator
- * @property \Modules\Xot\Contracts\ProfileContract|null $updater
->>>>>>> f3e4ec66 (.)
->>>>>>> aurmich/dev
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Collection<int, static> all($columns = ['*'])
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Collection<int, static> get($columns = ['*'])
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Collection<int, static> all($columns = ['*'])
@@ -179,36 +121,12 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Collection<int, static> get($columns = ['*'])
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Collection<int, static> all($columns = ['*'])
  * @method static \Staudenmeir\LaravelAdjacencyList\Eloquent\Collection<int, static> get($columns = ['*'])
-<<<<<<< HEAD
  * @method static \Modules\Cms\Database\Factories\MenuFactory factory($count = null, $state = [])
  * @property-read int $depth
  * @property-read string $path
  * @mixin \Eloquent
  */
 class Menu extends BaseModel implements HasRecursiveRelationshipsContract
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
- * @method static \Modules\Cms\Database\Factories\MenuFactory factory($count = null, $state = [])
- * @property-read int $depth
- * @property-read string $path
-=======
- * @method static \Modules\Cms\Database\Factories\MenuFactory factory($count = null, $state = [])
->>>>>>> f3e4ec66 (.)
- * @mixin \Eloquent
- */
-class Menu extends BaseModel implements HasRecursiveRelationshipsContract
-=======
- *
- * @mixin \Eloquent
- */
-<<<<<<< HEAD
-class Menu extends BaseModel
->>>>>>> 54f4fa16 (.)
-=======
-class Menu extends BaseModel implements HasRecursiveRelationshipsContract
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
 {
     use HasRecursiveRelationships;
     use SushiToJsons;
@@ -232,19 +150,7 @@ class Menu extends BaseModel implements HasRecursiveRelationshipsContract
     ];
 
     /**
-<<<<<<< HEAD
      * @return array<int|string, string>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @return array<int|string, string>
-=======
-     * @return array<string, string>
->>>>>>> 54f4fa16 (.)
-=======
-     * @return array<int|string, string>
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
      */
     public static function getTreeMenuOptions(): array
     {
@@ -258,26 +164,11 @@ class Menu extends BaseModel implements HasRecursiveRelationshipsContract
         return $this->getSushiRows();
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
     public function getLabel(): string
     {
         return $this->title;
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 54f4fa16 (.)
-=======
->>>>>>> 8e4d163b (phpstan)
->>>>>>> aurmich/dev
     /** @return array<string, string> */
     protected function casts(): array
     {

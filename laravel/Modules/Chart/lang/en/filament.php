@@ -7,15 +7,7 @@ return [
                 'name' => 'Name',
                 'charts' => 'Charts',
                 'created_at' => 'Creation Date',
-<<<<<<< HEAD
                 'updated_at' => 'Last Update',
-=======
-<<<<<<< HEAD
-                'updated_at' => 'Last Update',
-=======
-                'updated_at' => 'Last Update'
->>>>>>> fb6fbaa2 (move resources/lang to lang)
->>>>>>> aurmich/dev
             ],
             'placeholders' => [
                 'name' => 'Enter mixed chart name',

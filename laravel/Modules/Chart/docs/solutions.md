@@ -396,14 +396,7 @@ public function up(): void
 - Hit rate indici: > 90%
 - Riduzione scan tabelle: -80% 
 - Riduzione scan tabelle: -80% 
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 ## Collegamenti tra versioni di solutions.md
 * [solutions.md](../../Gdpr/docs/solutions.md)
 * [solutions.md](../../Xot/docs/solutions.md)

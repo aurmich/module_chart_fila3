@@ -1,61 +1,7 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
-return array (
-  'navigation' => 
-  array (
-    'name' => 'Eventi Archiviati',
-    'plural' => 'Eventi Archiviati',
-    'group' => 
-    array (
-      'name' => 'Monitoraggio',
-      'description' => 'Gestione degli eventi di sistema archiviati',
-    ),
-    'label' => 'Eventi Archiviati',
-    'sort' => 62,
-    'icon' => 'activity-stored-event-animated',
-  ),
-  'fields' => 
-  array (
-    'toggleColumns' => 
-    array (
-      'label' => 'toggleColumns',
-    ),
-  ),
-);
-=======
-<<<<<<< HEAD
-=======
->>>>>>> c5f8a42 (.)
->>>>>>> b58de900 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
-=======
->>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
-=======
->>>>>>> 5ae95119 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking to enhance code quality and maintainability across modules.)
-declare(strict_types=1);
-
-=======
->>>>>>> 54f4fa16 (.)
-=======
-declare(strict_types=1);
-
->>>>>>> f3e4ec66 (.)
->>>>>>> aurmich/dev
 return [
     'navigation' => [
         'name' => 'Eventi Archiviati',
@@ -68,14 +14,6 @@ return [
         'sort' => 62,
         'icon' => 'activity-stored-event-animated',
     ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     
     'fields' => [
         'id' => [
@@ -84,220 +22,76 @@ return [
             'validation' => 'required|integer|min:1',
         ],
         
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-    'fields' => [
->>>>>>> f3e4ec66 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
         'event_class' => [
             'label' => 'Classe Evento',
             'placeholder' => 'Inserisci la classe dell\'evento',
             'help' => 'Nome completo della classe che rappresenta l\'evento',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
             'validation' => 'required|string|max:255',
             'searchable' => true,
         ],
         
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-        ],
->>>>>>> f3e4ec66 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
         'event_properties' => [
             'label' => 'Proprietà Evento',
             'placeholder' => 'Proprietà dell\'evento',
             'help' => 'Dati e proprietà specifiche dell\'evento',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
             'validation' => 'required|json',
             'type' => 'json',
             'format' => 'json',
         ],
         
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-        ],
->>>>>>> f3e4ec66 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
         'aggregate_uuid' => [
             'label' => 'UUID Aggregato',
             'placeholder' => 'UUID dell\'aggregato',
             'help' => 'Identificativo unico dell\'aggregato di appartenenza',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
             'validation' => 'required|uuid',
             'searchable' => true,
         ],
         
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-        ],
->>>>>>> f3e4ec66 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
         'aggregate_version' => [
             'label' => 'Versione Aggregato',
             'placeholder' => 'Inserisci la versione',
             'help' => 'Numero di versione dell\'aggregato',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
             'validation' => 'required|integer|min:1',
             'sortable' => true,
         ],
         
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-        ],
->>>>>>> f3e4ec66 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
         'event_version' => [
             'label' => 'Versione Evento',
             'placeholder' => 'Versione dell\'evento',
             'help' => 'Numero di versione del formato evento',
-<<<<<<< HEAD
             'validation' => 'nullable|string|max:20',
         ],
         
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'validation' => 'nullable|string|max:20',
-        ],
-        
-=======
-        ],
->>>>>>> f3e4ec66 (.)
-=======
-            'validation' => 'nullable|string|max:20',
-        ],
-        
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
         'meta_data' => [
             'label' => 'Metadata',
             'placeholder' => 'Metadata aggiuntivi',
             'help' => 'Informazioni metadata aggiuntive sull\'evento',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
             'validation' => 'nullable|json',
             'type' => 'json',
             'format' => 'json',
         ],
         
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-        ],
->>>>>>> f3e4ec66 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
         'created_at' => [
             'label' => 'Data Creazione',
             'placeholder' => 'Seleziona data e ora',
             'help' => 'Timestamp di quando l\'evento è stato creato',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
             'validation' => 'required|date',
             'format' => 'd/m/Y H:i:s',
             'sortable' => true,
         ],
         
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-        ],
->>>>>>> f3e4ec66 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
         'created_by' => [
             'label' => 'Creato Da',
             'placeholder' => 'Utente creatore',
             'help' => 'Utente che ha generato l\'evento',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
             'validation' => 'nullable|integer|exists:users,id',
             'searchable' => true,
         ],
         
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-        ],
->>>>>>> f3e4ec66 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
         'updated_by' => [
             'label' => 'Aggiornato Da',
             'placeholder' => 'Utente aggiornatore',
             'help' => 'Utente che ha aggiornato l\'evento',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
             'validation' => 'nullable|integer|exists:users,id',
         ],
         
@@ -317,28 +111,12 @@ return [
             'sortable' => true,
         ],
         
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-        ],
->>>>>>> f3e4ec66 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
         'toggleColumns' => [
             'label' => 'Mostra/Nascondi Colonne',
             'placeholder' => '',
             'help' => 'Configura la visibilità delle colonne nella tabella',
         ],
     ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     
     'filters' => [
         'event_class' => [
@@ -398,27 +176,12 @@ return [
         ],
     ],
     
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> f3e4ec66 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     'actions' => [
         'view' => [
             'label' => 'Visualizza',
             'success' => 'Evento caricato con successo',
             'error' => 'Errore nel caricamento dell\'evento',
         ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
         
         'view_json' => [
             'label' => 'Visualizza JSON',
@@ -428,26 +191,11 @@ return [
             'error' => 'Errore nel caricamento dei dati JSON',
         ],
         
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> f3e4ec66 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
         'replay' => [
             'label' => 'Replay Evento',
             'success' => 'Replay dell\'evento completato con successo',
             'error' => 'Errore durante il replay dell\'evento',
             'confirmation' => 'Sei sicuro di voler eseguire il replay di questo evento?',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
             'requires_permission' => 'events.replay',
         ],
         
@@ -461,28 +209,12 @@ return [
             'requires_permission' => 'events.replay_from',
         ],
         
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-        ],
->>>>>>> f3e4ec66 (.)
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
         'export' => [
             'label' => 'Esporta Eventi',
             'success' => 'Eventi esportati con successo',
             'error' => 'Errore durante l\'esportazione',
             'confirmation' => 'Vuoi esportare gli eventi selezionati?',
         ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
         
         'snapshot_create' => [
             'label' => 'Crea Snapshot',
@@ -492,10 +224,6 @@ return [
             'error' => 'Errore nella creazione dello snapshot',
             'confirmation' => 'Vuoi creare uno snapshot dell\'aggregato a questo punto?',
             'requires_permission' => 'events.snapshot',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> aurmich/dev
         ],
         
         'bulk_replay' => [
@@ -509,46 +237,10 @@ return [
         ],
     ],
     
-<<<<<<< HEAD
-=======
-=======
-    ],
-    'filters' => [
-        'event_class' => [
-            'label' => 'Classe Evento',
-            'placeholder' => 'Filtra per classe',
-            'help' => 'Filtra gli eventi per tipo di classe',
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
-        ],
-        
-        'bulk_replay' => [
-            'label' => 'Replay Multiplo',
-            'icon' => 'heroicon-o-forward',
-            'color' => 'danger',
-            'success' => 'Replay multiplo completato',
-            'error' => 'Errore durante il replay multiplo',
-            'confirmation' => 'ATTENZIONE: Vuoi eseguire il replay di tutti gli eventi selezionati? Questa è un\'operazione critica.',
-            'requires_permission' => 'events.bulk_replay',
-        ],
-    ],
-<<<<<<< HEAD
->>>>>>> f3e4ec66 (.)
-=======
-    
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
     'messages' => [
         'no_events' => 'Nessun evento trovato',
         'event_replayed' => 'Evento riprodotto con successo',
         'events_exported' => 'Eventi esportati con successo',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
->>>>>>> aurmich/dev
         'loading' => 'Caricamento eventi in corso...',
         'error_loading' => 'Errore nel caricamento degli eventi',
         'snapshot_created' => 'Snapshot creato con successo',
@@ -557,149 +249,6 @@ return [
             'description' => 'Non ci sono eventi archiviati nel sistema. Gli eventi appariranno qui quando verranno generati e archiviati.',
         ],
         'replay_warning' => 'Il replay degli eventi può modificare lo stato del sistema. Procedi con cautela.',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    ],
-    
-    'export' => [
-        'formats' => [
-            'json' => [
-                'label' => 'JSON',
-                'mime_type' => 'application/json',
-                'extension' => 'json',
-                'icon' => 'heroicon-o-code-bracket',
-            ],
-            'csv' => [
-                'label' => 'CSV',
-                'mime_type' => 'text/csv',
-                'extension' => 'csv',
-                'icon' => 'heroicon-o-document-text',
-            ],
-            'excel' => [
-                'label' => 'Excel',
-                'mime_type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-                'extension' => 'xlsx',
-                'icon' => 'heroicon-o-table-cells',
-            ],
-        ],
-        'columns' => [
-            'id' => [
-                'label' => 'ID',
-                'sortable' => true,
-            ],
-            'created_at' => [
-                'label' => 'Data',
-                'format' => 'd/m/Y H:i:s',
-                'sortable' => true,
-            ],
-            'event_class' => [
-                'label' => 'Classe',
-                'sortable' => true,
-            ],
-            'aggregate_uuid' => [
-                'label' => 'UUID Aggregato',
-                'sortable' => false,
-            ],
-            'aggregate_version' => [
-                'label' => 'Versione',
-                'sortable' => true,
-            ],
-            'stream_name' => [
-                'label' => 'Stream',
-                'sortable' => true,
-            ],
-            'stream_position' => [
-                'label' => 'Posizione',
-                'sortable' => true,
-            ],
-        ],
-        'filename_pattern' => 'eventi_archiviati_{date}_{time}',
-        'max_records' => 50000,
-        'include_properties' => false, // Per performance, escludi di default i JSON payload
-    ],
-    
-    'permissions' => [
-        'view' => 'stored_events.view',
-        'create' => 'stored_events.create',
-        'update' => 'stored_events.update',
-        'delete' => 'stored_events.delete',
-        'export' => 'stored_events.export',
-        'replay' => 'stored_events.replay',
-        'replay_from' => 'stored_events.replay_from',
-        'bulk_replay' => 'stored_events.bulk_replay',
-        'snapshot' => 'stored_events.snapshot',
-    ],
-    
-    'pagination' => [
-        'per_page' => 50,
-        'options' => [25, 50, 100, 200],
-        'simple' => false, // Usa paginazione completa per event sourcing
-    ],
-    
-    'cache' => [
-        'ttl' => 600, // 10 minuti - cache più lunga per eventi immutabili
-        'tags' => ['stored_events', 'event_sourcing', 'monitoring'],
-    ],
-    
-    'event_sourcing' => [
-        'replay_batch_size' => 100,
-        'snapshot_frequency' => 1000, // Crea snapshot ogni 1000 eventi
-        'retention_days' => 2555, // ~7 anni di ritenzione per compliance
-        'stream_patterns' => [
-            'user' => 'user-{uuid}',
-            'order' => 'order-{uuid}',
-            'payment' => 'payment-{uuid}',
-        ],
-    ],
-    
-    'monitoring' => [
-        'alert_on_replay_errors' => true,
-        'alert_on_missing_events' => true,
-        'performance_tracking' => true,
-        'audit_trail' => true,
-    ],
-<<<<<<< HEAD
-=======
->>>>>>> 54f4fa16 (.)
-];
-=======
-return array (
-  'navigation' => 
-  array (
-    'name' => 'Eventi Archiviati',
-    'plural' => 'Eventi Archiviati',
-    'group' => 
-    array (
-      'name' => 'Monitoraggio',
-      'description' => 'Gestione degli eventi di sistema archiviati',
-    ),
-    'label' => 'Eventi Archiviati',
-    'sort' => 62,
-    'icon' => 'activity-stored-event-animated',
-  ),
-  'fields' => 
-  array (
-    'toggleColumns' => 
-    array (
-      'label' => 'toggleColumns',
-    ),
-  ),
-);
->>>>>>> f2140a80 (- continuo style landing page;)
-=======
-    ],
-];
-<<<<<<< HEAD
->>>>>>> f3e4ec66 (.)
-=======
-<<<<<<< HEAD
->>>>>>> a0afe1b (.)
-=======
->>>>>>> c5f8a42 (.)
->>>>>>> b58de900 (.)
-=======
->>>>>>> aurmich/dev
     ],
     
     'export' => [
@@ -800,17 +349,3 @@ return array (
         'audit_trail' => true,
     ],
 ];
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
-=======
-];
->>>>>>> fb6fbaa2 (move resources/lang to lang)
-=======
->>>>>>> a0afe1b (.)
->>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
-=======
->>>>>>> 5ae95119 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking to enhance code quality and maintainability across modules.)
->>>>>>> aurmich/dev

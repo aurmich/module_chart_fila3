@@ -9,34 +9,12 @@ use Laravel\Folio\Folio;
 use Illuminate\Support\Arr;
 use Webmozart\Assert\Assert;
 use Modules\Xot\Datas\XotData;
-<<<<<<< HEAD
 use Illuminate\Support\Collection;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Illuminate\Support\Collection;
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
-use Illuminate\Support\Collection;
->>>>>>> 345f8677 (phpstan)
->>>>>>> aurmich/dev
 use Nwidart\Modules\Facades\Module;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;
 use Modules\Tenant\Services\TenantService;
-<<<<<<< HEAD
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
-=======
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
-use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
->>>>>>> dadf311f (re-enable en)
->>>>>>> aurmich/dev
 
 class FolioVoltServiceProvider extends ServiceProvider
 {
@@ -85,19 +63,7 @@ class FolioVoltServiceProvider extends ServiceProvider
         //$currentLocale = LaravelLocalization::setLocale() ?? app()->getLocale();
 
         Folio::path($theme_path)
-<<<<<<< HEAD
             ->uri(LaravelLocalization::setLocale() ?? app()->getLocale() )
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            ->uri(LaravelLocalization::setLocale() ?? app()->getLocale() )
-=======
-            ->uri( app()->getLocale() )
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
-            ->uri(LaravelLocalization::setLocale() ?? app()->getLocale() )
->>>>>>> dadf311f (re-enable en)
->>>>>>> aurmich/dev
             ->middleware([
                 '*' => $base_middleware,
             ]);
@@ -115,19 +81,7 @@ class FolioVoltServiceProvider extends ServiceProvider
             }
             $paths[] = $path;
             Folio::path($path)
-<<<<<<< HEAD
                 ->uri( LaravelLocalization::setLocale() ?? app()->getLocale() )
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                ->uri( LaravelLocalization::setLocale() ?? app()->getLocale() )
-=======
-                ->uri( app()->getLocale() )
->>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
-=======
-                ->uri( LaravelLocalization::setLocale() ?? app()->getLocale() )
->>>>>>> dadf311f (re-enable en)
->>>>>>> aurmich/dev
                 ->middleware([
                     '*' => $base_middleware
                 ]);

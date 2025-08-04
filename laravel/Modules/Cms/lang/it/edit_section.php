@@ -1,12 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> e2c13fb7 (✨ (cms-translation-standards): add CMS translation standards documentation to ensure consistency in translations and improve localization practices)
->>>>>>> aurmich/dev
 declare(strict_types=1);
 
 return [
@@ -211,21 +204,8 @@ return [
             'label' => 'Lingua Attiva',
             'description' => 'Seleziona la lingua per le traduzioni della sezione',
         ],
-<<<<<<< HEAD
         'add_block' => 'Aggiungi blocco',
         'remove_block' => 'Rimuovi blocco',
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        'add_block' => 'Aggiungi blocco',
-        'remove_block' => 'Rimuovi blocco',
-=======
->>>>>>> e2c13fb7 (✨ (cms-translation-standards): add CMS translation standards documentation to ensure consistency in translations and improve localization practices)
-=======
-        'add_block' => 'Aggiungi blocco',
-        'remove_block' => 'Rimuovi blocco',
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
->>>>>>> aurmich/dev
     ],
     
     'sections' => [
@@ -253,13 +233,6 @@ return [
             'label' => 'Social Media',
             'description' => 'Profili e collegamenti social',
         ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
->>>>>>> aurmich/dev
         'settings' => [
             'label' => 'Impostazioni',
             'description' => 'Configurazioni generali della sezione',
@@ -268,14 +241,6 @@ return [
             'label' => 'SEO',
             'description' => 'Ottimizzazione per motori di ricerca',
         ],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> e2c13fb7 (✨ (cms-translation-standards): add CMS translation standards documentation to ensure consistency in translations and improve localization practices)
-=======
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
->>>>>>> aurmich/dev
     ],
     
     'messages' => [
@@ -284,25 +249,6 @@ return [
         'validation_errors' => 'Controlla i campi evidenziati in rosso',
         'unsaved_changes' => 'Hai modifiche non salvate in questa sezione',
         'confirm_navigation' => 'Vuoi davvero lasciare questa pagina? Le modifiche non salvate andranno perse.',
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    ],
-    
-    'actions' => [
-        'save' => 'Salva modifiche',
-        'cancel' => 'Annulla',
-        'add_block' => 'Aggiungi blocco',
-        'remove_block' => 'Rimuovi blocco',
-    ],
-    
-    'messages' => [
->>>>>>> e2c13fb7 (✨ (cms-translation-standards): add CMS translation standards documentation to ensure consistency in translations and improve localization practices)
-=======
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
->>>>>>> aurmich/dev
         'saved' => 'Sezione salvata con successo',
         'error' => 'Si è verificato un errore durante il salvataggio',
         'confirm_delete' => 'Sei sicuro di voler eliminare questa sezione?',
@@ -313,167 +259,4 @@ return [
         'slug_exists' => 'Questo slug è già in uso',
         'min' => 'Il valore deve essere almeno :min',
     ],
-<<<<<<< HEAD
 ];
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-];
-=======
-return array (
-  'fields' => 
-  array (
-    'name' => 
-    array (
-      'label' => 'name',
-    ),
-    'slug' => 
-    array (
-      'label' => 'slug',
-    ),
-    'blocks' => 
-    array (
-      'label' => 'blocks',
-    ),
-    'logo' => 
-    array (
-      'label' => 'logo',
-    ),
-    'company_name' => 
-    array (
-      'label' => 'company_name',
-    ),
-    'description' => 
-    array (
-      'label' => 'description',
-    ),
-    'email' => 
-    array (
-      'label' => 'email',
-    ),
-    'phone' => 
-    array (
-      'label' => 'phone',
-    ),
-    'address' => 
-    array (
-      'label' => 'address',
-    ),
-    'title' => 
-    array (
-      'label' => 'title',
-    ),
-    'links' => 
-    array (
-      'label' => 'links',
-    ),
-    'label' => 
-    array (
-      'label' => 'label',
-    ),
-    'url' => 
-    array (
-      'label' => 'url',
-    ),
-    'icon' => 
-    array (
-      'label' => 'icon',
-    ),
-    'social_links' => 
-    array (
-      'label' => 'social_links',
-    ),
-    'platform' => 
-    array (
-      'label' => 'platform',
-    ),
-    'target' => 
-    array (
-      'label' => 'target',
-    ),
-    'view' => 
-    array (
-      'label' => 'view',
-    ),
-    'copyright' => 
-    array (
-      'label' => 'copyright',
-    ),
-    'cta_color' => 
-    array (
-      'label' => 'cta_color',
-    ),
-    'text_color' => 
-    array (
-      'label' => 'text_color',
-    ),
-    'height' => 
-    array (
-      'label' => 'height',
-    ),
-    'width' => 
-    array (
-      'label' => 'width',
-    ),
-    'content' => 
-    array (
-      'label' => 'content',
-    ),
-    'error_message' => 
-    array (
-      'label' => 'error_message',
-    ),
-    'success_message' => 
-    array (
-      'label' => 'success_message',
-    ),
-    'caption' => 
-    array (
-      'label' => 'caption',
-    ),
-    'video' => 
-    array (
-      'label' => 'video',
-    ),
-    'img_uuid' => 
-    array (
-      'label' => 'img_uuid',
-    ),
-    'level' => 
-    array (
-      'label' => 'level',
-    ),
-    'text' => 
-    array (
-      'label' => 'text',
-    ),
-  ),
-  'actions' => 
-  array (
-    'save' => 
-    array (
-      'label' => 'save',
-    ),
-    'cancel' => 
-    array (
-      'label' => 'cancel',
-    ),
-    'activeLocale' => 
-    array (
-      'label' => 'activeLocale',
-    ),
-  ),
-);
->>>>>>> 54f4fa16 (.)
-=======
-    
-    'sections' => [
-        'content' => 'Contenuto',
-        'settings' => 'Impostazioni',
-        'seo' => 'SEO',
-    ],
-=======
->>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
-];
->>>>>>> e2c13fb7 (✨ (cms-translation-standards): add CMS translation standards documentation to ensure consistency in translations and improve localization practices)
->>>>>>> aurmich/dev

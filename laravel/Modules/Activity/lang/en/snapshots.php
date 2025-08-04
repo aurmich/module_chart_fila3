@@ -1,13 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 return [
     'name' => 'Snapshots',
     'fields' => [
@@ -83,12 +75,4 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
 ];
-=======
-<<<<<<< HEAD
-];
-=======
-]; 
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
