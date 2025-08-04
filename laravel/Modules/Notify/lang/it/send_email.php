@@ -54,6 +54,10 @@ return array (
     'body_html' => 
     array (
       'description' => 'body_html',
+<<<<<<< HEAD
+=======
+      'helper_text' => 'body_html',
+>>>>>>> b2a39a21 (- update footer)
     ),
   ),
   'actions' => 
