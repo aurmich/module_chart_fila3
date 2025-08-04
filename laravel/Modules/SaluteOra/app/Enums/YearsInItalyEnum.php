@@ -8,7 +8,11 @@ use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasLabel;
 use Modules\Xot\Filament\Traits\TransTrait;
+<<<<<<< HEAD
 
+=======
+use Modules\SaluteOra\Enums\YearsInItalyEnum;
+>>>>>>> 5f5e25a8 (✨ (YearsInItalyEnum.php): introduce YearsInItalyEnum to define years in Italy options for the application)
 
 /**
  * Defines the different types of appointments in the system.
