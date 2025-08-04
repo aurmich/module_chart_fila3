@@ -82,6 +82,7 @@ class RegisterAction
 <<<<<<< HEAD
     public function execute(UserContract $record,array $data): Doctor
     {
+<<<<<<< HEAD
         if(!isset($data['name']) && isset($data['email']) && is_string($data['email'])){
             $data['name']=Str::of($data['email'])->before('@')->append('-')->append(Str::random(3))->toString();
         }
@@ -194,6 +195,11 @@ class RegisterAction
     public function execute(UserContract $record,array $data): Doctor
 >>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
     {
+=======
+        if(isset($data['studio'])){
+            unset($data['studio']);
+        }
+>>>>>>> 3f885cdc (♻️ (RegisterAction.php): refactor execute method to remove 'studio' from data array to ensure cleaner data handling during doctor registration)
         //$data['type']=UserTypeEnum::DOCTOR;
         if(isset($data['id'])){
             $doctor = $record;
