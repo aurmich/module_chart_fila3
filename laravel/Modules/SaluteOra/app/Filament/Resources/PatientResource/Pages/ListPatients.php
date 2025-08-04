@@ -66,6 +66,7 @@ class ListPatients extends ListUsers
         $columns['family_members'] = Tables\Columns\TextColumn::make('family_members');
         $columns['children_count'] = Tables\Columns\TextColumn::make('children_count');
 <<<<<<< HEAD
+<<<<<<< HEAD
         $attachments = Patient::getAttachments();
 
         foreach ($attachments as $attachment) {
@@ -133,6 +134,9 @@ class ListPatients extends ListUsers
 =======
 >>>>>>> 8d591468 (fields translations)
         $attachments = Patient::$attachments;
+=======
+        $attachments = Patient::getAttachments();
+>>>>>>> 12a79d3a (.)
 
         foreach ($attachments as $attachment) {
             $columns[$attachment] = IconMediaColumn::make($attachment);

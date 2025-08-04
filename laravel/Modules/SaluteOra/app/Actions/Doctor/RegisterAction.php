@@ -269,7 +269,7 @@ class RegisterAction
 
          //-------------------------------------------------
              //*
-             $attachments = Doctor::$attachments;
+             $attachments = Doctor::getAttachments();
              foreach ($attachments as $attachment) {
                      /** @phpstan-ignore-next-line */
                      $doctor->addMediaFromDisk($data[$attachment],'local')
@@ -282,7 +282,7 @@ class RegisterAction
         //$record->save();
         //$record->update($data);
         /*
-        $attachments = Doctor::$attachments;
+        $attachments = Doctor::getAttachments();
         foreach ($attachments as $attachment) {
                 $doctor->addMediaFromDisk($data[$attachment],'local')
                     ->toMediaCollection($attachment);

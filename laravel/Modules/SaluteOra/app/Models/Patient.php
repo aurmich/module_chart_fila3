@@ -302,6 +302,8 @@ class Patient extends User implements HasMedia
         'children_count',
         'last_dental_visit_period',
 
+        'fiscal_code',
+
     ];
     protected $appends = [
         //'health_card',
@@ -331,6 +333,7 @@ class Patient extends User implements HasMedia
         */
     ];
 
+<<<<<<< HEAD
     public static array $attachments = [
 >>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
         'health_card',
@@ -378,6 +381,8 @@ class Patient extends User implements HasMedia
         */
     ];
 
+=======
+>>>>>>> 12a79d3a (.)
     public static function getAttachments():array{
         return [
             'health_card',
@@ -386,9 +391,12 @@ class Patient extends User implements HasMedia
             'pregnancy_certificate',
         ];
     }
+<<<<<<< HEAD
 =======
     ];
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 12a79d3a (.)
 
     /**
      * Get the attributes that should be cast.
@@ -450,6 +458,7 @@ class Patient extends User implements HasMedia
     public function registerMediaCollections(): void
     {
         foreach (self::getAttachments() as $attachment) {
+<<<<<<< HEAD
             $this
                 ->addMediaCollection($attachment)
                 ->singleFile()
@@ -582,6 +591,8 @@ class Patient extends User implements HasMedia
     public function registerMediaCollections(): void
     {
         foreach (self::$attachments as $attachment) {
+=======
+>>>>>>> 12a79d3a (.)
             $this
                 ->addMediaCollection($attachment)
                 ->singleFile()
@@ -625,7 +636,7 @@ class Patient extends User implements HasMedia
     public function getAttachmentsCount(): int
     {
         $count = 0;
-        foreach (self::$attachments as $type) {
+        foreach (self::getAttachments() as $type) {
             if ($this->hasAttachment($type)) {
                 $count++;
             }

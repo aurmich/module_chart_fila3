@@ -84,6 +84,14 @@ return [
         'label' => 'Integrazione in attesa',
         'color' => 'warning',
     ],
+    'integration_completed' => [
+        'label' => 'Integrazione completata',
+        'color' => 'success',
+    ],
+    'integration_cancelled' => [
+        'label' => 'Integrazione annullata',
+        'color' => 'danger',
+    ],
     
 >>>>>>> 90ef519a (✨ (IconStateColumn.php): add localization support for state labels using)
 ];

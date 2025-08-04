@@ -493,10 +493,15 @@ class PatientResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+    
+
+>>>>>>> 12a79d3a (.)
     /**
      * Get the form schema for standard forms
      *
@@ -505,12 +510,16 @@ class PatientResource extends XotBaseResource
     public static function getFormSchema(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return self::getPersonalDataStepSchema();
         /*
         $schema= [
 =======
         return [
 >>>>>>> 54f4fa16 (.)
+=======
+        $schema= [
+>>>>>>> 12a79d3a (.)
             'first_name' => Forms\Components\TextInput::make('first_name')
                 ->required()
                 ->maxLength(255),
@@ -533,17 +542,23 @@ class PatientResource extends XotBaseResource
                 ->required()
                 ->maxLength(20),
 <<<<<<< HEAD
+<<<<<<< HEAD
             'nationality' => NationalFlagSelect::make('nationality'),
+=======
+>>>>>>> 12a79d3a (.)
             ...self::getAttachmentsSchema(),
         ];
 
        
         
         return $schema;
+<<<<<<< HEAD
         */
 =======
         ];
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 12a79d3a (.)
     }
 
     public static function getThankYouView(): string

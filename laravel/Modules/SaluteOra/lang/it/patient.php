@@ -1905,6 +1905,7 @@ return array (
         'regex' => 'Il codice fiscale deve essere nel formato italiano corretto (16 caratteri)',
         'unique' => 'Questo codice fiscale è già registrato nel sistema',
       ),
+      'description' => 'fiscal_code',
     ),
     'birth_date' => 
     array (
@@ -2086,6 +2087,7 @@ return array (
         'mimes' => 'Formati supportati: JPG, JPEG, PNG, PDF',
         'max' => 'Dimensione massima consentita: 5MB per file',
       ),
+      'description' => 'health_card',
     ),
     'identity_document' => 
     array (
@@ -2099,6 +2101,7 @@ return array (
         'mimes' => 'Formati supportati: JPG, JPEG, PNG, PDF',
         'max' => 'Dimensione massima consentita: 5MB per file',
       ),
+      'description' => 'identity_document',
     ),
     'isee_certificate' => 
     array (
@@ -2111,6 +2114,7 @@ return array (
         'mimes' => 'Formati supportati: JPG, JPEG, PNG, PDF',
         'max' => 'Dimensione massima consentita: 5MB per file',
       ),
+      'description' => 'isee_certificate',
     ),
     'pregnancy_certificate' => 
     array (
@@ -2123,6 +2127,7 @@ return array (
         'mimes' => 'Formati supportati: JPG, JPEG, PNG, PDF',
         'max' => 'Dimensione massima consentita: 5MB per file',
       ),
+      'description' => 'pregnancy_certificate',
     ),
     'is_pregnant' => 
     array (
@@ -2145,6 +2150,7 @@ return array (
         'date' => 'Inserisci una data valida',
         'before_or_equal' => 'La data dell\'ultima visita non può essere futura',
       ),
+      'description' => 'last_dental_visit',
     ),
     'last_dental_visit_period' => 
     array (
@@ -2227,6 +2233,7 @@ return array (
       'label' => 'Iscrizione Newsletter Informativa',
       'placeholder' => 'Desidero ricevere comunicazioni periodiche via email',
       'helper_text' => '',
+      'description' => 'newsletter',
     ),
     'marketing_communications' => 
     array (

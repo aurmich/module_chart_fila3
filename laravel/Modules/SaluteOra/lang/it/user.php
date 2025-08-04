@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array (
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -366,6 +367,10 @@ return array (
 <<<<<<< HEAD
   'navigation' =>
 >>>>>>> aurmich/dev
+=======
+return array (
+  'navigation' => 
+>>>>>>> 12a79d3a (.)
   array (
     'label' => 'Utenti Generici',
     'group' => 'Gestione Utenti',
@@ -374,6 +379,9 @@ return array (
     'sort' => 44,
   ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 12a79d3a (.)
   'model' => 
   array (
     'label' => 'Utente',
@@ -399,12 +407,22 @@ return array (
       'label' => 'Nome',
       'placeholder' => 'Inserisci il nome',
       'help' => 'Nome di battesimo dell\'utente',
+<<<<<<< HEAD
+=======
+      'description' => 'first_name',
+      'helper_text' => 'first_name',
+>>>>>>> 12a79d3a (.)
     ),
     'last_name' => 
     array (
       'label' => 'Cognome',
       'placeholder' => 'Inserisci il cognome',
       'help' => 'Cognome di famiglia dell\'utente',
+<<<<<<< HEAD
+=======
+      'description' => 'last_name',
+      'helper_text' => 'last_name',
+>>>>>>> 12a79d3a (.)
     ),
     'email' => 
     array (
@@ -417,6 +435,11 @@ return array (
         'email' => 'Inserisci un indirizzo email valido',
         'unique' => 'Questo indirizzo email è già in uso',
       ),
+<<<<<<< HEAD
+=======
+      'description' => 'email',
+      'helper_text' => 'email',
+>>>>>>> 12a79d3a (.)
     ),
     'password' => 
     array (
@@ -441,6 +464,11 @@ return array (
       'label' => 'Numero di Telefono',
       'placeholder' => 'Inserisci numero telefono (es. +39 333 123 4567)',
       'help' => 'Numero di telefono per contatti diretti e urgenze',
+<<<<<<< HEAD
+=======
+      'description' => 'phone',
+      'helper_text' => 'phone',
+>>>>>>> 12a79d3a (.)
     ),
     'address' => 
     array (
@@ -465,6 +493,11 @@ return array (
         'doctor' => 'Dottore/Medico',
         'admin' => 'Amministratore',
       ),
+<<<<<<< HEAD
+=======
+      'description' => 'type',
+      'helper_text' => 'type',
+>>>>>>> 12a79d3a (.)
     ),
     'state' => 
     array (
@@ -522,6 +555,7 @@ return array (
       'placeholder' => 'Data ultima modifica automatica',
       'help' => 'Data e ora dell\'ultima modifica ai dati dell\'utente',
     ),
+<<<<<<< HEAD
 =======
     'applyFilters' => 
     array (
@@ -587,6 +621,11 @@ return array (
   array (
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+  ),
+  'actions' => 
+  array (
+>>>>>>> 12a79d3a (.)
     'create' => 
     array (
       'label' => 'Crea Nuovo Utente',
@@ -708,6 +747,7 @@ return array (
     'account_suspended' => 'Il tuo account è stato temporaneamente sospeso',
     'account_reinstated' => 'Il tuo account è stato ripristinato e puoi accedere nuovamente',
   ),
+<<<<<<< HEAD
   'states' => [
     'pending' => [
       'label' => 'In Attesa',
@@ -1128,3 +1168,6 @@ return [
     ],
 ];
 >>>>>>> 8d591468 (fields translations)
+=======
+);
+>>>>>>> 12a79d3a (.)

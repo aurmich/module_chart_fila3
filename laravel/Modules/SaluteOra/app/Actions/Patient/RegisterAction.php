@@ -154,7 +154,7 @@ class RegisterAction
 
             //-------------------------------------------------
              //*
-            $attachments = Patient::$attachments;
+            $attachments = Patient::getAttachments();
             foreach ($attachments as $attachment) {
                     /** @phpstan-ignore-next-line */
                     $patient->addMediaFromDisk($data[$attachment],'local')

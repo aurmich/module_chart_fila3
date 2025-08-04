@@ -297,6 +297,8 @@ return array (
       'label' => 'Stato Corrente',
       'placeholder' => 'Stato del workflow',
       'help' => 'Stato attuale dell\'elemento nel flusso di lavoro',
+      'description' => 'state',
+      'helper_text' => 'state',
     ),
     'newstate' => 
     array (
@@ -1162,7 +1164,14 @@ return array (
       'helper_text' => '',
       'description' => '',
     ),
+<<<<<<< HEAD
 >>>>>>> 98867c82 (translations)
+=======
+    'change-password' => 
+    array (
+      'label' => 'change-password',
+    ),
+>>>>>>> 12a79d3a (.)
   ),
   'messages' => 
   array (

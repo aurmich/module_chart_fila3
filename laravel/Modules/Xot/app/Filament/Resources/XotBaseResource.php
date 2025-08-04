@@ -60,13 +60,19 @@ use Webmozart\Assert\Assert;
 use Illuminate\Support\HtmlString;
 use Illuminate\Contracts\View\View;
 
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\FileUpload;
 use Filament\Pages\SubNavigationPosition;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Contracts\Support\Renderable;
 use Modules\Xot\Actions\ModelClass\CountAction;
 use Filament\Resources\Resource as FilamentResource;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+<<<<<<< HEAD
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
+>>>>>>> 12a79d3a (.)
 
 /**
  * @method static string getUrl(string $name, array<string, mixed> $parameters = [], bool $isAbsolute = true)
@@ -385,6 +391,7 @@ abstract class XotBaseResource extends FilamentResource
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if(!method_exists($model,'getAttachments')){
             return [];
         }
@@ -419,17 +426,43 @@ abstract class XotBaseResource extends FilamentResource
 =======
         $attachments = $model::$attachments;
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
+=======
+        $attachments = $model::getAttachments();
+>>>>>>> 12a79d3a (.)
         $uuid = Str::uuid()->toString();
         $schema = [];
-        
         foreach ($attachments as $attachment) {
-            $schema[] = Forms\Components\FileUpload::make($attachment)
+            
+            
+            $schema[$attachment]=FileUpload::make($attachment);
+            /*
+            ->formatStateUsing(function($state) {
+                return [];
+                $state=Arr::wrap($state);
+                    $sessionId = session()->getId();
+                    $sessionDir = "session-uploads/{$sessionId}";
+                    $sessionFiles = [];
+                    
+                    foreach ($state as $file) {
+                        if ($file instanceof \Livewire\Features\SupportFileUploads\TemporaryUploadedFile) {
+                            // Salva direttamente nella directory di sessione
+                            $fileName = time() . '_' . $file->getClientOriginalName();
+                            $sessionPath = $file->storeAs($sessionDir, $fileName, 'local');
+                            $sessionFiles[] = $sessionPath;
+                        } else {
+                            // È già un percorso salvato
+                            $sessionFiles[] = $file;
+                        }
+                    }
+                    return $sessionFiles;
+            });
+            */
+            /*
+            $schema[$attachment]=Forms\Components\FileUpload::make($attachment) 
                 ->disk('local')
-                ->directory('documents/'.$attachment.'/'.$uuid)
-                //->downloadable()
-                //->openable()
                 ->acceptedFileTypes(['application/pdf', 'image/jpeg', 'image/png', 'image/jpg'])
                 ->maxSize(5120*2)
+<<<<<<< HEAD
                 ->required()
                 ->reorderable()
 <<<<<<< HEAD
@@ -445,9 +478,9 @@ abstract class XotBaseResource extends FilamentResource
 =======
                 //->multiple($multiple)
 >>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+=======
+>>>>>>> 12a79d3a (.)
                 ->preserveFilenames()
-                ->columnSpanFull()
-                
                 ->afterStateUpdated(function ($state, Forms\Set $set) use ($attachment) {
                     if (!$state) return;
 <<<<<<< HEAD
@@ -476,15 +509,16 @@ abstract class XotBaseResource extends FilamentResource
                     }
                     
                     $set($attachment, $sessionFiles);
-                })
-                
-                ;
+                });
+            */
         }
+        
         return $schema;
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
@@ -505,6 +539,9 @@ abstract class XotBaseResource extends FilamentResource
                 ->preserveFilenames()  // Mantieni il nome originale del file
                 ->rules(['file', 'mimes:pdf,jpg,jpeg,png', 'max:5120']),  // Regole di validazione
                 */
+=======
+    
+>>>>>>> 12a79d3a (.)
 
 >>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
     protected static function getStepByName(string $name): Forms\Components\Wizard\Step
