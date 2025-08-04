@@ -454,10 +454,17 @@
         @apply bg-white px-4 py-6 sm:px-6;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     .filament-fullcalendar {
         --fc-small-font-size: 0.85em;
         --fc-page-bg-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
         --fc-neutral-bg-color: transparent;
+=======
+    .filament-fullcalendar {
+        --fc-small-font-size: 0.85em;
+        --fc-page-bg-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+        --fc-neutral-bg-color: rgba(var(--gray-50), var(--tw-bg-opacity));
+>>>>>>> 97dc5c13 (-updated privacy policy paziente)
         --fc-neutral-text-color: grey;
         --fc-border-color: rgba(var(--gray-200));
         --fc-button-text-color: #fff;
@@ -482,6 +489,7 @@
         --fc-highlight-color: rgba(var(--primary-500), 0.1);
         --fc-today-bg-color: rgba(var(--primary-500), 0.2);
         --fc-now-indicator-color: red;
+<<<<<<< HEAD
 =======
 
     .filepond--item[data-filepond-item-state="processing-complete"] .filepond--panel {
@@ -493,6 +501,8 @@
 =======
         @apply bg-[#E6EBF7] px-4 py-6 sm:px-6;
 >>>>>>> 3b3eb49d (- aggiornato stile della landing page;)
+=======
+>>>>>>> 97dc5c13 (-updated privacy policy paziente)
     }
 }
 =======
