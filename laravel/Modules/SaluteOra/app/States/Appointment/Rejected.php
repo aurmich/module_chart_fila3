@@ -70,7 +70,7 @@ class Rejected extends AppointmentState
     {
         $appointment = $this->getModel();
         return static::transClass(__CLASS__,'states.'.static::$name.'.modal_description');
-        //return 'Sei sicuro di voler rifiutare l\'appuntamento con '.$appointment->patient->full_name.' ?';
+        //return 'Sei sicuro di voler rifiutare l\'appuntamento con '. $appointment->patient?->full_name.' ?';
     }
 >>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
 }

@@ -130,7 +130,7 @@ trait HasFullCalendarConfig
         ];
 
         if ($appointment->patient) {
-            $lines[] = "Paziente: {$appointment->patient->full_name}";
+            $lines[] = "Paziente: { $appointment->patient?->full_name}";
         }
 
         if ($appointment->doctor) {

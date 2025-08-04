@@ -127,6 +127,7 @@ class FetchCalendarEventsAction
                 'type' => $appointment->type->value,
                 'status' => $appointment->status->value,
                 'patient_id' => $appointment->patient_id,
+<<<<<<< HEAD
                 'patient_name' =>  $appointment->patient->full_name,
                 'doctor_id' => $appointment->doctor_id,
                 'doctor_name' => $appointment->doctor->full_name,
@@ -141,6 +142,9 @@ class FetchCalendarEventsAction
 >>>>>>> 8e4d163b (phpstan)
                 'patient_id' => $appointment->patient_id,
                 'patient_name' => $appointment->patient->full_name,
+=======
+                'patient_name' =>  $appointment->patient?->full_name,
+>>>>>>> f1cb7934 (♻️ (FetchCalendarEventsAction.php, DoctorAvailabilityCalendar.php, etc.): refactor patient name access to use null-safe operator for better safety against null values)
                 'doctor_id' => $appointment->doctor_id,
                 'doctor_name' => $appointment->doctor->full_name,
                 'studio_id' => $appointment->studio_id,
@@ -169,10 +173,14 @@ class FetchCalendarEventsAction
         
         if ($appointment->patient) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             $parts[] =  $appointment->patient->full_name;
 =======
             $parts[] = $appointment->patient->full_name;
 >>>>>>> 2099645a (.)
+=======
+            $parts[] =  $appointment->patient?->full_name;
+>>>>>>> f1cb7934 (♻️ (FetchCalendarEventsAction.php, DoctorAvailabilityCalendar.php, etc.): refactor patient name access to use null-safe operator for better safety against null values)
         }
         
         if ($appointment->type) {

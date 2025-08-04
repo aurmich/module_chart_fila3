@@ -54,6 +54,7 @@
                                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-200">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         {{  $appointment->patient?->full_name }}
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
@@ -65,6 +66,9 @@
 =======
 >>>>>>> d18a3adf (✨ (saluteora): implement new DoctorAvailabilityCalendar widget to manage doctor availability using FullCalendar)
                                         {{ $appointment->patient->full_name }}
+=======
+                                        {{  $appointment->patient?->full_name }}
+>>>>>>> f1cb7934 (♻️ (FetchCalendarEventsAction.php, DoctorAvailabilityCalendar.php, etc.): refactor patient name access to use null-safe operator for better safety against null values)
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
                                         {{ $appointment->start_time->format('d/m/Y') }}
