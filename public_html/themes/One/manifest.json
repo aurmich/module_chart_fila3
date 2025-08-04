@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "resources/css/app.css": {
 <<<<<<< HEAD
     "file": "assets/app-CizGm5hC.css",
@@ -24,6 +25,10 @@
   "resources/css/app.css": {
     "file": "assets/app-CEDafcW-.css",
 >>>>>>> 31e6799c (rebase)
+=======
+  "resources/css/app.css": {
+    "file": "assets/app-DpVlLzWv.css",
+>>>>>>> aa548d83 (.)
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -34,8 +39,12 @@
     "isEntry": true
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> 1e6905a0 (add css)
 >>>>>>> 31e6799c (rebase)
+=======
+}
+>>>>>>> aa548d83 (.)
