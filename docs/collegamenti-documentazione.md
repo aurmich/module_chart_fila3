@@ -119,6 +119,7 @@
 - [Componenti](/docs/components) ↔ [Sections](/docs/sections.md)
 - [Frontend Development](/docs/frontend-development.md) ↔ [Verificare Homepage](/docs/verificare-homepage.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Widget View Namespaces](/docs/frontend/widget-view-namespaces.md) ↔ [Auth Widgets Namespaces](/laravel/Modules/User/docs/auth-widgets-view-namespaces.md)
 =======
 <<<<<<< HEAD
@@ -126,6 +127,9 @@
 =======
 >>>>>>> 54f4fa16 (.)
 >>>>>>> aurmich/dev
+=======
+- [Widget View Namespaces](/docs/frontend/widget-view-namespaces.md) ↔ [Auth Widgets Namespaces](/laravel/Modules/User/docs/auth-widgets-view-namespaces.md)
+>>>>>>> 29015705 (docs)
 
 ### Sezioni
 - [Sezioni](/docs/sections.md) ↔ [Sezioni CMS](/laravel/Modules/Cms/docs/sections.md)
