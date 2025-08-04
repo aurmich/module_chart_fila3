@@ -20,6 +20,7 @@ class ViewAppointmentWorkflow extends XotBaseViewRecord
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Restituisce lo schema dell'infolist per visualizzare i dettagli del workflow.
      * 
      * @return array<string, \Filament\Infolists\Components\Component>
@@ -29,12 +30,21 @@ class ViewAppointmentWorkflow extends XotBaseViewRecord
         return [
 =======
      * Configura l'infolist per visualizzare i dettagli del workflow.
+=======
+     * Restituisce lo schema dell'infolist per visualizzare i dettagli del workflow.
+     * 
+     * @return array<string, \Filament\Infolists\Components\Component>
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
      */
-    public function infolist(Infolist $infolist): void
+    protected function getInfolistSchema(): array
     {
+<<<<<<< HEAD
         $infolist
             ->schema([
 >>>>>>> 54f4fa16 (.)
+=======
+        return [
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
                 Section::make('Informazioni Workflow')
                     ->schema([
                         TextEntry::make('patient.full_name')
@@ -98,10 +108,14 @@ class ViewAppointmentWorkflow extends XotBaseViewRecord
                             ->view('dental::appointment-workflow.step-data-view'),
                     ]),
 <<<<<<< HEAD
+<<<<<<< HEAD
         ];
 =======
             ]);
 >>>>>>> 54f4fa16 (.)
+=======
+        ];
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     }
 
     /**

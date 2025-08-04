@@ -63,7 +63,10 @@ Il sistema controllerà automaticamente che:
 ## Comandi Utili
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 # Verifica le traduzioni mancanti
 php artisan translation:check
 

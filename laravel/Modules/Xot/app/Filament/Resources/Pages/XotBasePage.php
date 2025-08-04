@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Closure;
 use Filament\Forms\Form;
 use Illuminate\Support\Str;
@@ -20,6 +21,8 @@ use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Pages\Concerns\InteractsWithFormActions;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 =======
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 use Filament\Forms\Components\Component;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
@@ -32,6 +35,7 @@ use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 use Modules\Xot\Filament\Traits\TransTrait;
 use Webmozart\Assert\Assert;
 use Filament\Pages\Concerns\InteractsWithFormActions;
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 /**
  * Base class for all custom pages in the application.
@@ -47,6 +51,17 @@ use Filament\Pages\Concerns\InteractsWithFormActions;
 =======
  */
 >>>>>>> aurmich/dev
+=======
+/**
+ * Base class for all custom pages in the application.
+ * 
+ * This class provides common functionality for custom pages,
+ * following the architectural pattern of never extending Filament classes directly.
+ * 
+ * @property ?string $model
+ * @property ?array $data
+ */
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 abstract class XotBasePage extends FilamentPage implements HasForms
 {
     use InteractsWithForms;
@@ -58,10 +73,14 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      * The model class associated with this page, if any.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static ?string $model = null;
 =======
     protected static ?string $model = null;
 >>>>>>> aurmich/dev
+=======
+    protected static ?string $model = null;
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 
     /**
      * The form data.
@@ -71,14 +90,20 @@ abstract class XotBasePage extends FilamentPage implements HasForms
     public ?array $data = [];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     /**
      * Default icon for navigation.
      */
     protected static ?string $navigationIcon = 'heroicon-o-document-text';
 
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     /**
      * Get the view that should be used for the page.
      */
@@ -97,9 +122,12 @@ abstract class XotBasePage extends FilamentPage implements HasForms
                 ->afterLast('\\')
                 ->kebab()
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ->toString()
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
             );
 
         return $view->toString();
@@ -116,6 +144,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
     /**
      * Get page title with automatic translation.
      */
+<<<<<<< HEAD
     public function getTitle(): string
     {
 <<<<<<< HEAD
@@ -123,6 +152,11 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 =======
         return static::transTitle();
 >>>>>>> aurmich/dev
+=======
+    public function getTitle(): string 
+    {
+        return static::transTitle();
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     }
 
     /**
@@ -145,12 +179,17 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 
     /**
      * Get the form schema for the page.
+<<<<<<< HEAD
      *
 <<<<<<< HEAD
      * @return array<string, Component>
 =======
      * @return array<string, Component|array<string, Component>>
 >>>>>>> aurmich/dev
+=======
+     * 
+     * @return array<string, Component|array<string, Component>>
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
      */
     protected function getFormSchema(): array
     {
@@ -163,9 +202,12 @@ abstract class XotBasePage extends FilamentPage implements HasForms
     public static function getModel(): ?string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @phpstan-ignore property.staticAccess */
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
         return static::$model;
     }
 
@@ -180,6 +222,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /*
      * Hook chiamato all'inizializzazione del componente.
      
@@ -188,16 +231,25 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      * Hook chiamato all'inizializzazione del componente.
      */
 >>>>>>> aurmich/dev
+=======
+    /**
+     * Hook chiamato all'inizializzazione del componente.
+     */
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     public function mount(int|string $record): void
     {
         parent::mount($record);
         $this->form->fill($this->data ?? []);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     */
 =======
 
 >>>>>>> aurmich/dev
+=======
+
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     /**
      * Get the view data for the page.
      *

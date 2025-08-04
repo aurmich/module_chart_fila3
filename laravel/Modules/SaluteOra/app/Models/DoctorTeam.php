@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Parental\HasParent;
 
 /**
@@ -48,4 +49,13 @@ class DoctorTeam extends BasePivot
 =======
     protected $connection = 'salute_ora';
 >>>>>>> 2e1ed088 (chore(docs): delete troubleshooting.md as it is no longer relevant)
+=======
+use Parental\HasParent;
+
+class DoctorTeam extends TeamUser
+{
+    use HasParent;
+    
+    //protected $connection = 'salute_ora'; //in teamuser è già impostato
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 }

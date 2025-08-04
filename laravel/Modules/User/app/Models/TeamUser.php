@@ -41,10 +41,14 @@ use Illuminate\Support\Carbon;
  * @mixin \Eloquent
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 class TeamUser extends BaseTeamUser
 =======
 class TeamUser extends BasePivot
 >>>>>>> 54f4fa16 (.)
+=======
+class TeamUser extends BaseTeamUser
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 {
     protected $connection = 'user';
 }

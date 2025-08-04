@@ -394,6 +394,13 @@ return array (
       'label' => '946595X2259X48869SQ01',
 >>>>>>> 54f4fa16 (.)
     ),
+    'state' => 
+    array (
+      'label' => 'state',
+      'description' => 'state',
+      'helper_text' => 'state',
+      'placeholder' => 'state',
+    ),
   ),
   'actions' => 
   array (

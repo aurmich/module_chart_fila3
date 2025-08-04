@@ -18,9 +18,12 @@
     "Seo": true,
     "AI": true,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     "Limesurvey": true,
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     "Geo": true,
     "User": true,
     "Setting": true,

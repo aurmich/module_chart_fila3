@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # Gestione delle Icone nel Modulo SaluteOra
 
 ## Convenzione di Naming
@@ -49,3 +50,5 @@ resources/
 | Nome | Descrizione | File |
 |------|-------------|------|
 | `saluteora-doctor` | Icona del medico | `doctor.svg` |
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)

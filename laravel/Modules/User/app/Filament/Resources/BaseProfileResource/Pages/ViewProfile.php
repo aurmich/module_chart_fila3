@@ -6,9 +6,12 @@ namespace Modules\User\Filament\Resources\BaseProfileResource\Pages;
 
 use Filament\Actions\DeleteAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Actions\EditAction;
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 use Filament\Infolists\Components;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Infolists\Infolist;
@@ -25,6 +28,7 @@ class ViewProfile extends \Modules\Xot\Filament\Resources\Pages\XotBaseViewRecor
     protected static string $resource = BaseProfileResource::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /*
     protected function getHeaderActions(): array
@@ -37,6 +41,9 @@ class ViewProfile extends \Modules\Xot\Filament\Resources\Pages\XotBaseViewRecor
     */
 >>>>>>> 54f4fa16 (.)
 
+=======
+   
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     /**
      * @return array<string, \Filament\Infolists\Components\Component>
      */

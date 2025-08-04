@@ -1,6 +1,7 @@
 <?php
 
 return array (
+<<<<<<< HEAD
   'navigation' =>
   array (
     'label' => 'Flusso Appuntamenti',
@@ -182,5 +183,13 @@ return array (
     array (
       'delete' => 'Sei sicuro di voler eliminare questo flusso di appuntamento?',
     ),
+=======
+  'navigation' => 
+  array (
+    'label' => 'Temporary Label',
+    'group' => 'Temporary Group',
+    'icon' => 'heroicon-o-document',
+    'sort' => 60,
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
   ),
 );

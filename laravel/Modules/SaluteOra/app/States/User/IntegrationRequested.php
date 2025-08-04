@@ -12,8 +12,12 @@ namespace Modules\SaluteOra\States\User;
  */
 class IntegrationRequested extends UserState
 {
+<<<<<<< HEAD
     /** @var string */
     public static string $name = 'integration_requested';
+=======
+    public static $name = 'integration_requested';
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     public function label(): string
     {
         return 'Integrazione richiesta';

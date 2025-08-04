@@ -1,21 +1,37 @@
-# Convenzioni per i Namespace nei Moduli
+# convenzioni per i namespace nei moduli
 
-## Struttura Base
-I namespace nei moduli di OrisBroker Framework devono seguire una struttura precisa per mantenere la coerenza del codebase.
+## regola assoluta e inviolabile
 
-### Regola Fondamentale
-Il namespace base di ogni modulo è `Modules\{ModuleName}`. È importante notare che **NON** si deve includere `app` nel namespace.
+il namespace base di ogni modulo è **sempre e solo** `Modules\{ModuleName}` (dove ModuleName è il nome del modulo con la prima lettera maiuscola).
 
-### Esempi Corretti
+### errore comune da evitare assolutamente
+
+**MAI** includere `App` o `app` nel namespace, anche se i file sono fisicamente nella cartella `app/`.
+
+Questo è l'errore più comune e grave nelle convenzioni di namespace:
+
 ```php
-namespace Modules\Xot\Console\Commands;
-namespace Modules\Broker\Models;
-namespace Modules\User\Services;
-namespace Modules\Tenant\Repositories;
+// GRAVEMENTE ERRATO
+namespace Modules\SaluteOra\App\Controllers;
+
+// CORRETTO
+namespace Modules\SaluteOra\Controllers;
 ```
 
-### Esempi Errati
+## esempi corretti vs errati
+
+### corretti ✓
 ```php
+namespace Modules\Xot\Console\Commands;
+namespace Modules\SaluteOra\Models;
+namespace Modules\User\Services;
+namespace Modules\Tenant\Repositories;
+namespace Modules\SaluteOra\Filament\Resources;
+```
+
+### errati ✗
+```php
+<<<<<<< HEAD
 namespace Modules\Xot\app\Console\Commands;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -36,24 +52,51 @@ namespace Modules\Xot\Console\Commands;
 namespace Modules\Broker\app\Models;
 namespace Modules\User\app\Services;
 namespace Modules\Tenant\app\Repositories;
+=======
+namespace Modules\Xot\app\Console\Commands;       // errato: 'app' nel namespace
+namespace Modules\SaluteOra\App\Models;           // errato: 'App' nel namespace
+namespace Modules\User\App\Services;              // errato: 'App' nel namespace
+namespace Modules\Tenant\app\Repositories;        // errato: 'app' nel namespace
+namespace App\Modules\SaluteOra\Controllers;      // errato: struttura completamente sbagliata
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 ```
 
-## Struttura delle Directory
-Anche se i file possono essere fisicamente collocati in una directory `app/`, il namespace non deve riflettere questa struttura.
+## struttura fisica vs namespace
 
-### Esempio di Struttura Directory
+### importante: separazione tra percorso fisico e namespace
+
+Anche se i file sono fisicamente collocati in una directory `app/`, il namespace **non deve mai riflettere** questa struttura.
+
+```
+Percorso fisico:    /Modules/SaluteOra/app/Models/Patient.php
+Namespace corretto: namespace Modules\SaluteOra\Models;
+```
+
+### mappatura corretta percorso-namespace
+
+| percorso fisico | namespace corretto |
+|-----------------|--------------------|
+| `/Modules/SaluteOra/app/Models/Patient.php` | `Modules\SaluteOra\Models` |
+| `/Modules/SaluteOra/app/Filament/Resources/PatientResource.php` | `Modules\SaluteOra\Filament\Resources` |
+| `/Modules/Xot/app/Providers/XotServiceProvider.php` | `Modules\Xot\Providers` |
+
+### struttura directory completa
+
 ```
 Modules/
-  Xot/
-    app/
+  SaluteOra/
+    app/                        // directory fisica
       Console/
         Commands/
-          ImportMdbToMySQL.php  // namespace Modules\Xot\Console\Commands;
-    Models/
-    Services/
-    Repositories/
+          ImportPatient.php     // namespace Modules\SaluteOra\Console\Commands;
+      Models/
+        Patient.php            // namespace Modules\SaluteOra\Models;
+      Filament/
+        Resources/
+          PatientResource.php  // namespace Modules\SaluteOra\Filament\Resources;
 ```
 
+<<<<<<< HEAD
 ## Motivazione
 Questa convenzione:
 <<<<<<< HEAD
@@ -136,6 +179,8 @@ Modules/
           PatientResource.php  // namespace Modules\SaluteOra\Filament\Resources;
 ```
 
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 ## come verificare i namespace
 
 ### verifica manuale
@@ -155,8 +200,11 @@ php artisan phpstan:analyse --level=1 Modules/SaluteOra
 ```
 
 ## motivazione di questa convenzione
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 - Mantiene i namespace puliti e coerenti
 - Evita confusione con la struttura delle directory
 - Facilita l'autoloading e la navigazione del codice
@@ -168,6 +216,9 @@ php artisan phpstan:analyse --level=1 Modules/SaluteOra
 - I file possono essere fisicamente in `app/` ma il namespace non deve rifletterlo
 - Questa convenzione è obbligatoria per mantenere la compatibilità con il framework
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 
 ## Errori Comuni
 
@@ -204,9 +255,12 @@ Configurare PHP Stan per verificare i namespace corretti:
 
 ```yaml
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 # phpstan.neon
 parameters:
   checkMissingIterableValueType: false
@@ -231,5 +285,8 @@ php artisan cache:clear
 php artisan config:clear
 php artisan view:clear
 ```
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)

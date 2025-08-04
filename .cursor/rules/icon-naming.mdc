@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # Regole per la Nomenclatura delle Icone in Filament
 
 ## Formato del Nome
@@ -44,3 +45,5 @@ FilamentIcon::register([
 - Verificare che l'icona sia registrata nel ServiceProvider del modulo
 - Aggiornare la documentazione del modulo con le nuove icone
 - Testare l'icona in modalità chiara e scura
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)

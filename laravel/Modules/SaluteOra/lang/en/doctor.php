@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -167,6 +168,8 @@ return [
             'helper_text' => '',
             'description' => 'Complete practice address',
 =======
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 return [
     'steps' => [
         'personal_info' => [
@@ -225,11 +228,15 @@ return [
         'address' => [
             'label' => 'Address',
             'placeholder' => 'Enter practice address',
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
         ],
         'city' => [
             'label' => 'City',
             'placeholder' => 'Enter city',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => 'City where the practice is located',
             'helper_text' => '',
@@ -304,6 +311,8 @@ return [
             'helper_text' => '',
             'description' => 'Availability calendar for appointments',
 =======
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
         ],
         'registration_number' => [
             'label' => 'Registration Number',
@@ -319,11 +328,15 @@ return [
         ],
         'availability' => [
             'label' => 'Availability Schedule',
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
         ],
         'day' => [
             'label' => 'Day',
             'placeholder' => 'Select day',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => 'Day of the week for availability',
             'helper_text' => '',
@@ -340,10 +353,14 @@ return [
 =======
             'helper_text' => 'Select the day of the week',
 >>>>>>> aurmich/dev
+=======
+            'helper_text' => 'Select the day of the week',
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
         ],
         'start_time' => [
             'label' => 'Start Time',
             'placeholder' => 'Select start time',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => 'Start time of availability',
             'helper_text' => '',
@@ -351,10 +368,14 @@ return [
 =======
             'helper_text' => 'When the availability period begins',
 >>>>>>> aurmich/dev
+=======
+            'helper_text' => 'When the availability period begins',
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
         ],
         'end_time' => [
             'label' => 'End Time',
             'placeholder' => 'Select end time',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => 'End time of availability',
             'helper_text' => '',
@@ -586,6 +607,8 @@ return [
       'success' => 'Privacy form downloaded successfully',
       'error' => 'An error occurred while downloading the form',
 =======
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
             'helper_text' => 'When the availability period ends',
         ],
         'last_name' => [
@@ -598,6 +621,7 @@ return [
             'placeholder' => 'Enter first name',
             'helper_text' => 'Your given name',
         ],
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
     ],
 ];
@@ -736,3 +760,7 @@ return array (
   ),
 );
 >>>>>>> 54f4fa16 (.)
+=======
+    ],
+];
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)

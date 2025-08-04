@@ -112,6 +112,7 @@ class MyCustomPage extends Page // ⚠️ ERRATO!
 3. **Rispettare il Namespace**: Utilizzare `Modules\<nome modulo>\Filament\Pages` per le classi che estendono XotBasePage
 4. **Utilizzare le Traduzioni**: Sfruttare il sistema di traduzione automatico invece di hardcodare le etichette
 
+<<<<<<< HEAD
 ## ⚠️ ERRORI GRAVI DA EVITARE
 
 ### Duplicazione di Trait e Interfacce
@@ -163,6 +164,8 @@ class MyPage extends XotBasePage
 - `InteractsWithFormActions` trait
 
 **NON ridichiarare mai questi elementi nelle classi che estendono XotBasePage.**
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 ## Compatibilità con Filament
 
 La classe è progettata per essere compatibile con Filament v3+ e garantisce il corretto funzionamento di tutte le funzionalità native di Filament\Pages\Page.

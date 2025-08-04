@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -28,3 +29,14 @@ return array (
   ),
 );
 >>>>>>> aurmich/dev
+=======
+return array (
+  'navigation' => 
+  array (
+    'label' => 'Temporary Label',
+    'group' => 'Temporary Group',
+    'icon' => 'heroicon-o-document',
+    'sort' => 89,
+  ),
+);
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)

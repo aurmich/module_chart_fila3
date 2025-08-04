@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\UI\Filament\Tables\Columns;
 
 use Exception;
+<<<<<<< HEAD
 use Illuminate\Support\Arr;
 use Spatie\ModelStates\State;
 use Modules\SaluteOra\Models\User;
@@ -20,6 +21,12 @@ use Spatie\ModelStates\HasStatesContract;
 =======
 use Spatie\ModelStates\HasStatesContract;
 >>>>>>> 345f8677 (phpstan)
+=======
+use Spatie\ModelStates\State;
+use Modules\SaluteOra\Models\User;
+use Illuminate\Database\Eloquent\Model;
+use Filament\Tables\Columns\SelectColumn;
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 use Modules\SaluteOra\States\User\UserState;
 
 class SelectStateColumn extends SelectColumn
@@ -29,6 +36,7 @@ class SelectStateColumn extends SelectColumn
     {
         parent::setUp();
       //  $this->selectablePlaceholder(false);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         $this->options(function (Model&HasStatesContract $record ,$state): array {
@@ -86,3 +94,24 @@ class SelectStateColumn extends SelectColumn
 =======
 }
 >>>>>>> aurmich/dev
+=======
+        $this->options(function (Model $record ,$state): array {
+            $name=$this->getName();
+            
+            
+            try{
+                $states=$record->getAttribute($name)->transitionableStates();
+            }catch(Exception $e){
+                $states=$states=$record->getStatesFor($name)->toArray();;
+            }
+            $states[]=$state::$name;
+
+            
+            return array_combine($states, $states);
+        });
+       
+    }
+
+   
+}
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)

@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 return array (
   'navigation' => 
   array (
@@ -149,3 +150,13 @@ return array (
   ),
 >>>>>>> 54f4fa16 (.)
 );
+=======
+return [
+    'navigation' => [
+        'label' => 'Disponibilità Medici',
+        'group' => 'Gestione',
+        'icon' => 'heroicon-o-calendar',
+        'sort' => 6,
+    ],
+];
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)

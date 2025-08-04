@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Enums;
 
 use Filament\Support\Contracts\HasLabel;
+<<<<<<< HEAD
 use function Safe\class_alias;
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 
 enum UserStateEnum: string implements HasLabel
 {
@@ -16,7 +19,11 @@ enum UserStateEnum: string implements HasLabel
     case SUSPENDED = 'suspended';
     case INTEGRATION_REQUESTED = 'integration_requested';
 
+<<<<<<< HEAD
     public function getLabel(): string
+=======
+    public function getLabel(): ?string
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     {
         return match($this) {
             self::PENDING => 'In attesa',
@@ -59,6 +66,9 @@ enum UserStateEnum: string implements HasLabel
             ->toArray();
     }
 }
+<<<<<<< HEAD
 
 // Alias for backward compatibility
 //class_alias(UserStateEnum::class, 'Modules\SaluteOra\Enums\UserState');
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)

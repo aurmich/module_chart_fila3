@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # Regole per la Nomenclatura delle Icone
 
 ## Formato del Nome
@@ -38,3 +39,5 @@ FilamentIcon::register([
 2. Documentare le icone personalizzate nel README del modulo
 3. Utilizzare nomi descrittivi e significativi
 4. Evitare nomi generici o ambigui
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)

@@ -4,19 +4,26 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions;
 
+<<<<<<< HEAD
 use Illuminate\Contracts\View\View;
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 use Illuminate\Support\Str;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 /**
  * Classe per ottenere una vista basata su una classe.
  */
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 class GetViewByClassAction
 {
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
      * Ottiene una vista basata su una classe.
      *
      * @param string $class Nome della classe
@@ -51,12 +58,18 @@ class GetViewByClassAction
     }
 
     /**
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
      * Risolve il percorso della view basato sul namespace della classe.
      *
      * @param string $class Il nome completo della classe
      * @return string Il percorso della view
      */
+<<<<<<< HEAD
     public function executeOld(string $class): string
+=======
+    public function execute(string $class): string
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     {
         $arr = explode('\\', $class);
         Assert::isArray($arr);
@@ -68,6 +81,7 @@ class GetViewByClassAction
 
         $module = $arr[1];
         $module_low = Str::lower($module);
+<<<<<<< HEAD
 
         // Estrai il nome della classe e convertilo in kebab-case
         $class_name = Str::kebab(class_basename($class));
@@ -76,3 +90,13 @@ class GetViewByClassAction
         return $module_low.'::pages.'.$class_name;
     }
 }
+=======
+        
+        // Estrai il nome della classe e convertilo in kebab-case
+        $class_name = Str::kebab(class_basename($class));
+        
+        // Costruisci il percorso della view
+        return $module_low.'::pages.'.$class_name;
+    }
+} 
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)

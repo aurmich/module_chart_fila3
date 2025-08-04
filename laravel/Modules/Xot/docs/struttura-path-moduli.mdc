@@ -3,6 +3,7 @@
 Tutti i file di risorsa (Resource), enum e pages dei moduli Laravel devono essere posizionati in `Modules/<NomeModulo>/app/` e **mai** direttamente nella root del modulo o in sottocartelle come `Filament/Resources/` o `Enums/` fuori da `app/`.
 
 ## Esempio corretto
+<<<<<<< HEAD
 # Regola struttura path per i moduli Laravel
 
 Tutti i file di risorsa (Resource), enum e pages dei moduli Laravel devono essere posizionati in `Modules/<NomeModulo>/app/` e **mai** direttamente nella root del modulo o in sottocartelle come `Filament/Resources/` o `Enums/` fuori da `app/`.
@@ -18,6 +19,8 @@ Tutti i file di risorsa (Resource), enum e pages dei moduli Laravel devono esser
 Tutti i file di risorsa (Resource), enum e pages dei moduli Laravel devono essere posizionati in `Modules/<NomeModulo>/app/` e **mai** direttamente nella root del modulo o in sottocartelle come `Filament/Resources/` o `Enums/` fuori da `app/`.
 
 ## Esempio corretto
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 - Modules/SaluteOra/app/Filament/Resources/UserResource.php
 - Modules/SaluteOra/app/Filament/Resources/UserResource/Pages/CreateUser.php
 - Modules/SaluteOra/app/Enums/UserType.php
@@ -85,6 +88,7 @@ class User extends Model {
 - [SaluteOra/docs/uso-label-filament.mdc](../../SaluteOra/docs/uso-label-filament.mdc)
 - https://github.com/spatie/laravel-model-states
 
+<<<<<<< HEAD
 ---
 
 # Regole pratiche per gestione di enum e state class
@@ -178,3 +182,6 @@ namespace Modules\SaluteOra\App\Actions\Patient\Calendar;
 ```
 
 Vedi anche: SaluteOra/docs/directory-structure.md
+=======
+[← Torna a SaluteOra/docs](../../SaluteOra/docs/uso-label-filament.mdc)
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)

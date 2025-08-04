@@ -667,36 +667,31 @@ return array (
       'tooltip' => 'Deve corrispondere al nome sul documento d\'identità',
 =======
     'label' => 'Pazienti',
-    'sort' => 37,
-    'group' => 'patient.navigation',
+    'group' => 'Gestione Utenti',
+    'icon' => 'saluteora-patient',
+    'color' => 'primary',
+    'sort' => 7,
+    'tooltip' => 'Gestione dei pazienti e delle loro informazioni anagrafiche',
   ),
   'fields' => 
   array (
-    'newsletter' => 
-    array (
-      'label' => 'Newsletter',
-      'helper_text' => 'Iscrizione alla newsletter',
-      'placeholder' => 'Seleziona se desideri iscriverti alla newsletter',
-      'description' => 'Ricevi aggiornamenti sulle novità e promozioni',
-    ),
-    'privacy_acceptance' => 
-    array (
-      'label' => 'Accettazione Privacy',
-      'placeholder' => 'Accetta l\'informativa sulla privacy',
-      'helper_text' => 'Consenso obbligatorio',
-      'description' => 'Accetto il trattamento dei miei dati personali',
-    ),
     'first_name' => 
     array (
       'label' => 'Nome',
-      'placeholder' => 'Inserisci il tuo nome',
+      'placeholder' => 'Inserisci il nome',
       'helper_text' => 'Nome del paziente',
+<<<<<<< HEAD
       'description' => 'Il tuo nome anagrafico',
 >>>>>>> 54f4fa16 (.)
+=======
+      'description' => 'Il nome anagrafico del paziente',
+      'tooltip' => 'Deve corrispondere al nome sul documento d\'identità',
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     ),
     'last_name' => 
     array (
       'label' => 'Cognome',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'description' => 'last_name',
       'helper_text' => 'last_name',
@@ -749,9 +744,16 @@ return array (
       'helper_text' => 'Cognome del paziente',
       'description' => 'Il tuo cognome anagrafico',
 >>>>>>> 54f4fa16 (.)
+=======
+      'placeholder' => 'Inserisci il cognome',
+      'helper_text' => 'Cognome del paziente',
+      'description' => 'Il cognome anagrafico del paziente',
+      'tooltip' => 'Deve corrispondere al cognome sul documento d\'identità',
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     ),
-    'address' => 
+    'fiscal_code' => 
     array (
+<<<<<<< HEAD
       'label' => 'Indirizzo',
 <<<<<<< HEAD
       'placeholder' => 'Inserisci l\'indirizzo completo',
@@ -763,9 +765,16 @@ return array (
       'helper_text' => 'Indirizzo di residenza',
       'description' => 'Via/Piazza, numero civico',
 >>>>>>> 54f4fa16 (.)
+=======
+      'label' => 'Codice Fiscale',
+      'placeholder' => 'Inserisci il codice fiscale',
+      'helper_text' => 'Codice fiscale del paziente',
+      'description' => 'Codice fiscale come indicato sulla tessera sanitaria',
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     ),
-    'city' => 
+    'birth_date' => 
     array (
+<<<<<<< HEAD
       'label' => 'Città',
 <<<<<<< HEAD
       'placeholder' => 'Inserisci la città',
@@ -819,22 +828,106 @@ return array (
       'placeholder' => 'Inserisci la tua città',
       'helper_text' => 'Città di residenza',
       'description' => 'Comune di residenza',
+=======
+      'label' => 'Data di Nascita',
+      'placeholder' => 'Seleziona la data di nascita',
+      'helper_text' => 'Data di nascita del paziente',
+      'description' => 'Data di nascita come indicata sul documento d\'identità',
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     ),
-    'phone' => 
+    'gender' => 
     array (
-      'label' => 'Telefono',
-      'placeholder' => 'Inserisci il tuo numero di telefono',
-      'helper_text' => 'Numero di telefono',
-      'description' => 'Numero di telefono per comunicazioni',
+      'label' => 'Genere',
+      'placeholder' => 'Seleziona il genere',
+      'helper_text' => 'Genere del paziente',
+      'options' => 
+      array (
+        'M' => 'Maschio',
+        'F' => 'Femmina',
+        'O' => 'Altro',
+      ),
+    ),
+    'is_pregnant' => 
+    array (
+      'label' => 'Gravidanza',
+      'helper_text' => 'Indica se il paziente è in gravidanza',
+      'description' => 'Seleziona se il paziente è attualmente in gravidanza',
     ),
     'email' => 
     array (
       'label' => 'Email',
-      'placeholder' => 'Inserisci la tua email',
-      'helper_text' => 'Indirizzo email',
+      'placeholder' => 'Inserisci l\'indirizzo email',
+      'helper_text' => 'Indirizzo email valido',
       'description' => 'Email del paziente',
       'tooltip' => 'Verrà utilizzata per le comunicazioni importanti',
 >>>>>>> 54f4fa16 (.)
+    ),
+    'phone' => 
+    array (
+      'label' => 'Telefono',
+      'placeholder' => 'Inserisci il numero di telefono',
+      'helper_text' => 'Numero di telefono principale',
+      'description' => 'Numero di telefono del paziente',
+      'tooltip' => 'Preferibilmente un numero mobile',
+    ),
+    'address' => 
+    array (
+      'label' => 'Indirizzo',
+      'placeholder' => 'Inserisci l\'indirizzo completo',
+      'helper_text' => 'Via/Piazza, numero civico',
+      'description' => 'Indirizzo di residenza del paziente',
+      'tooltip' => 'Inserisci l\'indirizzo completo con numero civico',
+    ),
+    'city' => 
+    array (
+      'label' => 'Città',
+      'placeholder' => 'Inserisci la città',
+      'helper_text' => 'Città di residenza',
+      'description' => 'Città di residenza del paziente',
+      'tooltip' => 'Inserisci la città di residenza attuale',
+    ),
+    'postal_code' => 
+    array (
+      'label' => 'CAP',
+      'placeholder' => 'Inserisci il CAP',
+      'helper_text' => 'Codice di avviamento postale',
+      'description' => 'Inserisci il CAP della città di residenza',
+    ),
+    'province' => 
+    array (
+      'label' => 'Provincia',
+      'placeholder' => 'Inserisci la provincia',
+      'helper_text' => 'Provincia di residenza',
+      'description' => 'Inserisci la provincia di residenza',
+    ),
+    'country' => 
+    array (
+      'label' => 'Paese',
+      'placeholder' => 'Inserisci il paese',
+      'helper_text' => 'Paese di residenza',
+      'description' => 'Inserisci il paese di residenza',
+      'default' => 'Italia',
+    ),
+    'isee_code' => 
+    array (
+      'label' => 'Codice ISEE',
+      'placeholder' => 'Inserisci il codice ISEE',
+      'helper_text' => 'Codice identificativo ISEE',
+      'description' => 'Inserisci il codice identificativo del certificato ISEE',
+    ),
+    'isee_value' => 
+    array (
+      'label' => 'Valore ISEE',
+      'placeholder' => 'Inserisci il valore ISEE',
+      'helper_text' => 'Valore economico ISEE',
+      'description' => 'Inserisci il valore economico del certificato ISEE',
+    ),
+    'isee_expiry_date' => 
+    array (
+      'label' => 'Scadenza ISEE',
+      'placeholder' => 'Seleziona la data di scadenza',
+      'helper_text' => 'Data di scadenza ISEE',
+      'description' => 'Inserisci la data di scadenza del certificato ISEE',
     ),
     'health_card' => 
     array (
@@ -858,10 +951,14 @@ return array (
       'placeholder' => 'Carica il certificato ISEE',
       'helper_text' => 'Carica una copia del certificato ISEE',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'Certificato ISEE valido',
 =======
       'description' => 'Certificato ISEE in corso di validità',
 >>>>>>> 54f4fa16 (.)
+=======
+      'description' => 'Certificato ISEE valido',
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
       'tooltip' => 'Necessario per accedere alle agevolazioni',
     ),
     'pregnancy_certificate' => 
@@ -889,6 +986,9 @@ return array (
       'tooltip' => 'Includi dolori, sensibilità o altri disturbi',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     'notes' => 
     array (
       'label' => 'Note',
@@ -936,6 +1036,7 @@ return array (
     array (
       'label' => 'updated_at',
     ),
+<<<<<<< HEAD
     'created_at' => 
     array (
       'label' => 'created_at',
@@ -958,12 +1059,15 @@ return array (
     ),
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
   ),
   'steps' => 
   array (
     'personal_data_step' => 
     array (
       'label' => 'Dati Personali',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'description' => 'Inserisci i tuoi dati personali',
       'icon' => 'heroicon-o-user',
@@ -981,6 +1085,18 @@ return array (
       'color' => 'primary',
     ),
 >>>>>>> 54f4fa16 (.)
+=======
+      'description' => 'Inserisci i tuoi dati personali',
+      'icon' => 'heroicon-o-user',
+      'color' => 'primary',
+    ),
+    'contacts' => 
+    array (
+      'label' => 'Contatti',
+      'description' => 'Inserisci i dati di contatto del paziente',
+      'icon' => 'heroicon-o-phone',
+    ),
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     'documents_step' => 
     array (
       'label' => 'Documenti',
@@ -996,14 +1112,20 @@ return array (
       'color' => 'warning',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     'health' => 
     array (
       'label' => 'Stato di Salute',
       'description' => 'Inserisci le informazioni sullo stato di salute',
       'icon' => 'heroicon-o-heart',
     ),
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     'privacy_step' => 
     array (
       'label' => 'Privacy',
@@ -1055,6 +1177,9 @@ return array (
     ),
   ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
   'model' => 
   array (
     'label' => 'patient.model',

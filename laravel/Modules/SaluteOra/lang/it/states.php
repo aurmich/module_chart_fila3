@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -367,6 +368,8 @@ return [
     ],
 ]; 
 =======
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 return [
     'pending' => [
         'label' => 'In attesa',
@@ -398,5 +401,9 @@ return [
         'description' => 'Richiesta di integrazione in corso',
         'tooltip' => 'L\'utente ha richiesto l\'integrazione',
     ],
+<<<<<<< HEAD
 ]; 
 >>>>>>> aurmich/dev
+=======
+]; 
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)

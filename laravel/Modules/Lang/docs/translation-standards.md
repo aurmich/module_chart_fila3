@@ -122,6 +122,7 @@ return [
 - Le traduzioni sono gestite automaticamente dal `LangServiceProvider`
 - Non è necessario usare `->label()` nei componenti Filament
 - Le etichette vengono risolte automaticamente in base al nome del campo
+<<<<<<< HEAD
 
 ## [AGGIORNAMENTO 2024-06-XX] - Esempio appointment.php
 
@@ -173,3 +174,5 @@ return [
 - Aggiornare la documentazione ogni volta che si modifica una risorsa clinica
 - Non duplicare chiavi tra moduli
 - Seguire sempre la filosofia DRY, KISS, centralizzazione
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)

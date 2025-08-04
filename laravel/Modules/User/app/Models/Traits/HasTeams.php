@@ -518,9 +518,16 @@ trait HasTeams
 =======
      * @param \Modules\User\Contracts\TeamContract $team
      */
-    public function switchTeam(\Modules\User\Contracts\TeamContract $team): bool
+    public function switchTeam(?\Modules\User\Contracts\TeamContract $team): bool
     {
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+        if ($team === null) {
+            return false;
+        }
+
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
         if (! $this->belongsToTeam($team)) {
             return false;
         }

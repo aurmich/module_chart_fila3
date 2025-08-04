@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\States\User;
 
+<<<<<<< HEAD
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Spatie\ModelStates\State;
@@ -13,10 +14,15 @@ use Modules\Xot\States\XotBaseState;
 use Filament\Forms\Components\Textarea;
 use Modules\SaluteOra\Models\Appointment;
 use Modules\Xot\Filament\Traits\TransTrait;
+=======
+use Spatie\ModelStates\State;
+use Spatie\ModelStates\StateConfig;
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 //use Filament\Support\Contracts\HasLabel;
 
 /**
  * Classe astratta base per la gestione degli stati dell'utente.
+<<<<<<< HEAD
  *
  * Questa classe definisce le transizioni di stato consentite e i metodi astratti
  * che devono essere implementati da ogni stato concreto.
@@ -25,6 +31,29 @@ abstract class UserState extends XotBaseState
 {
     
 
+=======
+ * 
+ * Questa classe definisce le transizioni di stato consentite e i metodi astratti
+ * che devono essere implementati da ogni stato concreto.
+ */
+abstract class UserState extends State  
+{
+    /**
+     * Restituisce l'etichetta leggibile dello stato.
+     */
+    abstract public function label(): string;
+    
+    /**
+     * Restituisce il colore associato allo stato.
+     */
+    abstract public function color(): string;
+    
+    /**
+     * Restituisce l'icona associata allo stato.
+     */
+    abstract public function icon(): string;
+    
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     /**
      * Configura le transizioni di stato consentite.
      */
@@ -32,6 +61,7 @@ abstract class UserState extends XotBaseState
     {
         return parent::config()
             ->default(Pending::class)
+<<<<<<< HEAD
             // Pending transitions
             ->allowTransition(Pending::class, Active::class, Transitions\PendingToActive::class)
             ->allowTransition(Pending::class, Rejected::class, Transitions\PendingToRejected::class)
@@ -63,15 +93,28 @@ abstract class UserState extends XotBaseState
             ->allowTransition(Inactive::class, Active::class, Transitions\InactiveToActive::class)
 
             // Register all states
+=======
+            ->allowTransition(Pending::class, Active::class)
+            ->allowTransition(Pending::class, Rejected::class)
+            ->allowTransition(Active::class, Suspended::class)
+            ->allowTransition([Active::class, Suspended::class], Inactive::class)
+            ->allowTransition([Pending::class, Suspended::class], Active::class)
+            ->allowTransition([Active::class, Pending::class], IntegrationRequested::class)
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
             ->registerState(Pending::class)
             ->registerState(Active::class)
             ->registerState(Inactive::class)
             ->registerState(Rejected::class)
             ->registerState(Suspended::class)
+<<<<<<< HEAD
             ->registerState(IntegrationRequested::class)
             ->registerState(IntegrationCompleted::class);
     }
 
 
    
+=======
+            ->registerState(IntegrationRequested::class);
+    }
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 }

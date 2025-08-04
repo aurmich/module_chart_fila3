@@ -6,6 +6,7 @@ return [
         'group' => 'Management',
         'icon' => 'heroicon-o-calendar',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'sort' => '6',
     ],
     'model' => [
@@ -119,4 +120,8 @@ return [
         'sort' => 6,
     ],
 >>>>>>> aurmich/dev
+=======
+        'sort' => 6,
+    ],
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 ];

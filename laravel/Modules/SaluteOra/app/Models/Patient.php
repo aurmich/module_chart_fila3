@@ -217,10 +217,7 @@ class Patient extends User
     use HasFactory;
     use HasParent;
 
-    /**
-     * @var string
-     */
-    protected $table = 'patients';
+   
 
     /**
      * @var array<int, string>
@@ -304,7 +301,11 @@ class Patient extends User
     public function casts(): array
     {
         return [
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+            ...parent::casts(),
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
             'date_of_birth' => 'date',
         ];
     }
@@ -443,5 +444,17 @@ class Patient extends User
     {
         return parent::belongsTo(User::class, 'user_id');
 >>>>>>> 54f4fa16 (.)
+    }
+
+    /**
+     * Verifica se il paziente ha dati validi per la transizione di stato.
+     *
+     * @return bool
+     */
+    public function hasValidData(): bool
+    {
+        return parent::hasValidData() &&
+            !empty($this->date_of_birth) &&
+            !empty($this->gender);
     }
 }

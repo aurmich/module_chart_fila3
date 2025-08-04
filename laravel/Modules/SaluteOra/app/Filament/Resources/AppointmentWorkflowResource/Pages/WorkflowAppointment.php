@@ -5,13 +5,18 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Filament\Resources\AppointmentWorkflowResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Actions;
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+use Filament\Actions;
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 use Filament\Forms;
 use Filament\Forms\Components\Component;
 use Filament\Forms\Form;
 use Filament\Pages\Concerns\InteractsWithFormActions;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Filament\Support\Exceptions\Halt;
 use Illuminate\Database\Eloquent\Model;
@@ -19,9 +24,16 @@ use Illuminate\Support\HtmlString;
 use Illuminate\Contracts\View\View;
 =======
 use Filament\Resources\Pages\Page;
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 use Filament\Support\Exceptions\Halt;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\HtmlString;
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+use Illuminate\Contracts\View\View;
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 use Livewire\Attributes\Computed;
 use Modules\SaluteOra\Actions\FinalizeAppointmentWorkflowAction;
 use Modules\SaluteOra\Actions\UpdateAppointmentWorkflowStepAction;
@@ -30,6 +42,7 @@ use Modules\SaluteOra\Models\AppointmentWorkflow;
 use Modules\SaluteOra\Models\Dentist;
 use Modules\SaluteOra\Models\Patient;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\Pages\XotBaseResourcePage;
 
 class WorkflowAppointment extends XotBaseResourcePage
@@ -37,10 +50,16 @@ class WorkflowAppointment extends XotBaseResourcePage
 
 class WorkflowAppointment extends Page
 >>>>>>> 54f4fa16 (.)
+=======
+use Modules\Xot\Filament\Resources\Pages\XotBaseResourcePage;
+
+class WorkflowAppointment extends XotBaseResourcePage
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 {
     use InteractsWithFormActions;
     
     protected static string $resource = AppointmentWorkflowResource::class;
+<<<<<<< HEAD
 <<<<<<< HEAD
     
     protected static ?string $navigationIcon = 'heroicon-o-clipboard-document-check';
@@ -57,24 +76,25 @@ class WorkflowAppointment extends Page
 =======
     protected static ?string $view = null; // Utilizziamo la vista predefinita di Filament
     protected static ?string $title = 'Workflow Prenotazione Appuntamento';
+=======
+    
+    protected static ?string $navigationIcon = 'heroicon-o-clipboard-document-check';
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     
     /**
-     * @var AppointmentWorkflow
+     * Dati del form.
      */
-    public $record;
-    
-    /**
-     * @var array<string, mixed>
-     */
-    public $data = [];
+    public array $data = [];
     
     /**
      * Nome del passo corrente.
-     *
-     * @var string
      */
+<<<<<<< HEAD
     public string $currentStep;
 >>>>>>> 54f4fa16 (.)
+=======
+    protected string $currentStep = 'patient_info';
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     
     /**
      * Elenco di tutti i passi disponibili.
@@ -82,6 +102,9 @@ class WorkflowAppointment extends Page
      * @var array<string, string>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     protected array $steps = [];
     
     /**
@@ -90,9 +113,12 @@ class WorkflowAppointment extends Page
      * @var Model|int|string|null
      */
     public Model|int|string|null $record;
+<<<<<<< HEAD
 =======
     protected array $steps;
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     
     /**
      * Hook chiamato all'inizializzazione del componente.
@@ -306,10 +332,14 @@ class WorkflowAppointment extends Page
      * Ottiene le azioni del form.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormActions(): array
 =======
     protected function getFormActions(): array
 >>>>>>> 54f4fa16 (.)
+=======
+    public function getFormActions(): array
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     {
         return [
             $this->getSubmitFormAction(),
@@ -329,6 +359,7 @@ class WorkflowAppointment extends Page
     /**
      * Ottiene i bottoni di navigazione del form.
 <<<<<<< HEAD
+<<<<<<< HEAD
      * 
      * @return string L'allineamento delle azioni del form
      */
@@ -336,10 +367,18 @@ class WorkflowAppointment extends Page
     {
         return \Filament\Support\Enums\Alignment::Center->value;
 =======
+=======
+     * 
+     * @return string L'allineamento delle azioni del form
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
      */
-    protected function getFormActionsAlignment(): string
+    public function getFormActionsAlignment(): string
     {
+<<<<<<< HEAD
         return \Filament\Support\Enums\Alignment::Center;
 >>>>>>> 54f4fa16 (.)
+=======
+        return \Filament\Support\Enums\Alignment::Center->value;
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     }
 }

@@ -402,5 +402,22 @@ class Doctor extends User
     {
         return $this->hasOne(DoctorRegistrationWorkflow::class, 'doctor_id');
     }
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+
+    /**
+     * Verifica se il dottore ha dati validi per la transizione di stato.
+     *
+     * @return bool
+     */
+    public function hasValidData(): bool
+    {
+        return parent::hasValidData() &&
+            !empty($this->first_name) &&
+            !empty($this->last_name) &&
+            !empty($this->registration_number) &&
+            !empty($this->specialization);
+    }
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 }

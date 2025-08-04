@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 namespace Modules\SaluteOra\Providers\Filament;
@@ -75,19 +76,24 @@ class AdminPanelProvider extends XotBasePanelProvider
 
 
 =======
+=======
+declare(strict_types=1);
+
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 namespace Modules\SaluteOra\Providers\Filament;
 
-use Modules\Xot\Providers\XotBaseServiceProvider;
 use Filament\Panel;
+use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
-class AdminPanelProvider extends XotBaseServiceProvider
+class AdminPanelProvider extends XotBasePanelProvider
 {
-    public string $name = 'SaluteOra';
+    protected string $module = 'SaluteOra';
 
     public function panel(Panel $panel): Panel
     {
+        $panel = parent::panel($panel);
 
-        return parent::panel($panel);
+        return $panel;
     }
 >>>>>>> 54f4fa16 (.)
 }

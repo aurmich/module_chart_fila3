@@ -9,11 +9,15 @@ use Modules\SaluteOra\Models\User;
 use Parental\HasParent;
 
 /**
+<<<<<<< HEAD
  * Class Admin
  * 
  * NOTA: Il trait HasFactory è stato rimosso perché già incluso nella catena di ereditarietà (BaseUser -> User -> Admin).
  * Dichiararlo qui è ridondante e può causare warning o confusione.
  * Vedi docs/DRY-model-traits.md
+=======
+ * Class Patient
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
  *
  * @property string $id
  * @property string $user_id
@@ -26,6 +30,7 @@ use Parental\HasParent;
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property-read \Modules\SaluteOra\Models\User|null $user
+<<<<<<< HEAD
  * @method static \Illuminate\Database\Eloquent\Builder|Admin newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Admin newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Admin query()
@@ -171,10 +176,26 @@ use Parental\HasParent;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereLastDentalVisitPeriod($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereNationality($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereYearsInItaly($value)
+=======
+ * @method static \Illuminate\Database\Eloquent\Builder|Patient newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Patient newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Patient query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Patient whereAddress($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Patient whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Patient whereCreatedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Patient whereDateOfBirth($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Patient whereGender($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Patient whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Patient wherePhone($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Patient whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Patient whereUpdatedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Patient whereUserId($value)
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
  * @mixin \Eloquent
  */
 class Admin extends User
 {
+<<<<<<< HEAD
     use HasParent;
 
 
@@ -182,6 +203,18 @@ class Admin extends User
      * Gli attributi che sono mass assignable.
      *
      * @var list<string>
+=======
+    use HasFactory;
+    use HasParent;
+
+    /**
+     * @var string
+     */
+    protected $table = 'patients';
+
+    /**
+     * @var array<int, string>
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
      */
     protected $fillable = [
         'user_id',
@@ -196,6 +229,7 @@ class Admin extends User
      *
      * @return array<string, string>
      */
+<<<<<<< HEAD
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
@@ -205,4 +239,32 @@ class Admin extends User
     }
 
 
+=======
+    public function casts(): array
+    {
+        return [
+            'date_of_birth' => 'date',
+        ];
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function user()
+    {
+        return parent::belongsTo(User::class, 'user_id');
+    }
+
+    /**
+     * Verifica se il paziente ha dati validi per la transizione di stato.
+     *
+     * @return bool
+     */
+    public function hasValidData(): bool
+    {
+        return parent::hasValidData() &&
+            !empty($this->date_of_birth) &&
+            !empty($this->gender);
+    }
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 }

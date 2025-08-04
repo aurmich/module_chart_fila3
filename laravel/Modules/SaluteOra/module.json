@@ -5,10 +5,14 @@
     "keywords": ["pazienti", "isee", "anamnesi", "documenti", "gestanti"],
     "priority": 10,
 <<<<<<< HEAD
+<<<<<<< HEAD
     "active": 1,
 =======
     "active": 0,
 >>>>>>> 54f4fa16 (.)
+=======
+    "active": 1,
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     "order": 10,
     "providers": [
         "Modules\\SaluteOra\\Providers\\SaluteOraServiceProvider",

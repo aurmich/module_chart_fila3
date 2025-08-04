@@ -211,6 +211,9 @@ class AppointmentWorkflowResource extends XotBaseResource
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     
     /**
      * Ottiene le pagine per la risorsa AppointmentWorkflow.
@@ -227,6 +230,9 @@ class AppointmentWorkflowResource extends XotBaseResource
             'workflow' => Pages\WorkflowAppointment::route('/{record}/workflow'),
         ];
     }
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 }

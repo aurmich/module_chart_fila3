@@ -40,12 +40,16 @@ trait HasXotTable
 
     protected static bool $canReplicate = false;
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected static bool $canView = true;
 =======
 
     protected static bool $canView = true;
 
 >>>>>>> 54f4fa16 (.)
+=======
+    protected static bool $canView = true;
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     protected static bool $canEdit = true;
 
     /**
@@ -247,10 +251,14 @@ trait HasXotTable
             ->filtersLayout(FiltersLayout::AboveContent)
             ->filtersFormColumns($this->getTableFiltersFormColumns())
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
             ->persistFiltersInSession()
             ->headerActions($this->getTableHeaderActions())
             ->actions($this->getTableActions())
             ->bulkActions($this->getTableBulkActions())
+<<<<<<< HEAD
             ->actionsPosition(ActionsPosition::BeforeColumns)
             ->emptyStateActions($this->getTableEmptyStateActions())
             ->striped()
@@ -277,6 +285,11 @@ trait HasXotTable
 
         $table = $table
 >>>>>>> 54f4fa16 (.)
+=======
+            ->actionsPosition(ActionsPosition::BeforeColumns)
+            ->emptyStateActions($this->getTableEmptyStateActions())
+            ->striped()
+>>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
             ->paginated($this->getTablePaginated());
         /*
             ->defaultSort(
