@@ -91,6 +91,7 @@ edit file composer.json
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "filament/filament": "^3.4",
 =======
 <<<<<<< HEAD
@@ -105,6 +106,9 @@ edit file composer.json
 =======
         "filament/filament": "^3.3",
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+        "filament/filament": "^3.4",
+>>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
         "laravel/framework": "^11.9",
 <<<<<<< HEAD
         "filament/filament": "^3.3",

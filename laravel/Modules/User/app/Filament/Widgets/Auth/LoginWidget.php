@@ -5,6 +5,8 @@ namespace Modules\User\Filament\Widgets\Auth;
 
 use Filament\Forms;
 use Filament\Forms\Form;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
 use Illuminate\Support\Facades\Auth;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -52,6 +54,8 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
 >>>>>>> e02686c3 (Here is a clean and descriptive commit message:)
 class LoginWidget extends XotBaseWidget
 {
+    
+    
     public ?array $data = [];
 
 <<<<<<< HEAD

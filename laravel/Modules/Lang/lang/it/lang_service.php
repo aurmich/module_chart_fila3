@@ -472,6 +472,8 @@ return array (
       'placeholder' => 'Inserisci documento di identità',
       'tooltip' => 'Documento di identità valido',
     ),
+<<<<<<< HEAD
+=======
     'certifications' => 
     array (
       'label' => 'Certificazioni',
@@ -500,6 +502,7 @@ return array (
       'helper_text' => 'Modalità di visualizzazione',
       'placeholder' => 'Seleziona la vista',
     ),
+>>>>>>> c8ed798 (.)
   ),
   'actions' => 
   array (

@@ -8,6 +8,17 @@ namespace Modules\User\Filament\Widgets\Auth;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+use Filament\Forms\Form;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
+use Modules\User\Models\User;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+>>>>>>> a39073f3 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking)
+>>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
 use Filament\Forms\ComponentContainer;
 use Filament\Forms\Components\Grid;
 use Filament\Forms\Components\Section;
@@ -27,8 +38,32 @@ use Webmozart\Assert\Assert;
 class RegisterWidget extends XotBaseWidget
 {
     protected static string $view = 'user::widgets.auth.register-widget';
+<<<<<<< HEAD
     protected static ?int $sort = 2;
     protected static ?string $maxHeight = '600px';
+=======
+    
+    public function getFormSchema(): array
+    {
+        return [
+            Form\Components\TextInput::make('name')
+                ->label('Nome')
+                ->required()
+                ->maxLength(255),
+            Forms\Components\TextInput::make('email')
+                ->label('Email')
+                ->email()
+                ->required()
+                ->maxLength(255),
+
+            Forms\Components\TextInput::make('password')
+                ->label('Password')
+                ->password()
+                ->required()
+                ->minLength(8),
+        ];
+    }
+>>>>>>> a39073f3 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking)
 
     public static function canView(): bool
     {

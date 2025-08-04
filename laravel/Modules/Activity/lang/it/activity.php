@@ -5,10 +5,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f2140a80 (- continuo style landing page;)
 =======
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
 return array (
   'navigation' => 
   array (
@@ -23,6 +26,7 @@ return array (
     'sort' => 60,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'icon' => 'heroicon-o-activity',
 =======
     'icon' => 'activity-activity-animated',
@@ -30,12 +34,16 @@ return array (
 =======
     'icon' => 'activity-activity-animated',
 >>>>>>> b58de900 (.)
+=======
+    'icon' => 'activity-activity-animated',
+>>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
   ),
   'fields' => 
   array (
     'user' => 
     array (
       'label' => 'Utente',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       'placeholder' => 'Seleziona un utente',
@@ -71,10 +79,16 @@ return array (
       'email' => 'Email',
       'role' => 'Ruolo',
 >>>>>>> b58de900 (.)
+=======
+      'name' => 'Nome',
+      'email' => 'Email',
+      'role' => 'Ruolo',
+>>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
     ),
     'action' => 
     array (
       'label' => 'Azione',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       'placeholder' => 'Seleziona un\'azione',
@@ -134,6 +148,8 @@ return array (
 =======
 =======
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
       'created' => 'Creato',
       'updated' => 'Modificato',
       'deleted' => 'Eliminato',
@@ -143,13 +159,17 @@ return array (
       'logged_in' => 'Accesso',
       'logged_out' => 'Uscita',
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> f2140a80 (- continuo style landing page;)
 =======
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
     ),
     'subject' => 
     array (
       'label' => 'Oggetto',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       'placeholder' => 'Seleziona un oggetto',
@@ -243,6 +263,8 @@ return array (
 =======
 =======
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
       'type' => 'Tipo',
       'id' => 'ID',
       'name' => 'Nome',
@@ -265,13 +287,17 @@ return array (
     array (
       'label' => 'reorderRecords',
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> f2140a80 (- continuo style landing page;)
 =======
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
     ),
   ),
   'filters' => 
   array (
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     'user' => 
@@ -377,6 +403,8 @@ return array (
 =======
 =======
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
     'user' => 'Utente',
     'action' => 'Azione',
     'subject_type' => 'Tipo Oggetto',
@@ -395,14 +423,18 @@ return array (
     'cleared' => 'Attività vecchie eliminate con successo',
     'exported' => 'Attività esportate con successo',
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> f2140a80 (- continuo style landing page;)
 =======
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
   ),
   'export' => 
   array (
     'formats' => 
     array (
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       'csv' => 
@@ -492,6 +524,8 @@ return array (
       0 => 'activities',
       1 => 'monitoring',
 =======
+=======
+>>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
       'csv' => 'CSV',
       'excel' => 'Excel',
       'pdf' => 'PDF',
@@ -503,11 +537,15 @@ return array (
       'action' => 'Azione',
       'subject' => 'Oggetto',
       'ip' => 'IP',
+<<<<<<< HEAD
 >>>>>>> b58de900 (.)
+=======
+>>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
     ),
   ),
 );
 =======
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -515,6 +553,8 @@ return array (
 >>>>>>> b58de900 (.)
 =======
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+>>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
 declare(strict_types=1);
 
 >>>>>>> f3e4ec66 (.)
@@ -926,6 +966,10 @@ return [
     ],
 ];
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 =======
 >>>>>>> fb6fbaa2 (move resources/lang to lang)
+=======
+>>>>>>> a0afe1b (.)
+>>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)

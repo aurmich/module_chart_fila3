@@ -19,6 +19,7 @@
         "filament/filament": "^3.4",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "filament/tables": "^3.4"
 =======
         "filament/filament": "^3.3",
@@ -34,5 +35,11 @@
 =======
         "filament/tables": "^3.4"
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+        "filament/tables": "^3.4"
+=======
+        "filament/tables": "*"
+>>>>>>> a39073f3 (✨ (phpstan): add multiple PHPStan analysis scripts for systematic error checking)
+>>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
     }
 }

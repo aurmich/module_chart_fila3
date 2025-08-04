@@ -5,7 +5,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
 return array (
   'navigation' => 
   array (
@@ -29,11 +32,14 @@ return array (
   ),
 );
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> c5f8a42 (.)
 >>>>>>> b58de900 (.)
 =======
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+>>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)
 declare(strict_types=1);
 
 =======
@@ -693,7 +699,11 @@ return array (
         'audit_trail' => true,
     ],
 ];
+<<<<<<< HEAD
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 =======
 ];
 >>>>>>> fb6fbaa2 (move resources/lang to lang)
+=======
+>>>>>>> a0afe1b (.)
+>>>>>>> 2d644a13 (📝 (docs): resolve merge conflicts and clean up documentation files for localization and PHPStan integration)

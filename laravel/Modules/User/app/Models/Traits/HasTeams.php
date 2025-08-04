@@ -968,7 +968,7 @@ trait HasTeams
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
      * @param TeamContract $team
      */
-    public function switchTeam(?TeamContract $team): bool
+    public function switchTeam(?\Modules\User\Contracts\TeamContract $team): bool
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
