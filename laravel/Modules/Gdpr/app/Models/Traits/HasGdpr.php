@@ -23,11 +23,7 @@ trait HasGdpr
     /**
      * Get all consents for the model (polymorphic).
      *
-<<<<<<< HEAD
      * @return \Illuminate\Database\Eloquent\Relations\MorphMany<\Modules\Gdpr\Models\Consent, $this>
-=======
-     * @return \Illuminate\Database\Eloquent\Relations\MorphMany<Consent>
->>>>>>> aurmich/dev
      */
     public function consents(): MorphMany
     {
@@ -37,11 +33,7 @@ trait HasGdpr
     /**
      * Get only active (non-revoked) consents.
      *
-<<<<<<< HEAD
      * @return \Illuminate\Database\Eloquent\Relations\MorphMany<\Modules\Gdpr\Models\Consent, $this>
-=======
-     * @return \Illuminate\Database\Eloquent\Relations\MorphMany<Consent>
->>>>>>> aurmich/dev
      */
     public function activeConsents(): MorphMany
     {
@@ -51,11 +43,7 @@ trait HasGdpr
     /**
      * Get the treatments associated with the user through consents.
      * 
-<<<<<<< HEAD
      * @return \Illuminate\Database\Eloquent\Relations\HasManyThrough<\Modules\Gdpr\Models\Treatment, \Modules\Gdpr\Models\Consent, $this>
-=======
-     * @return \Illuminate\Database\Eloquent\Relations\HasManyThrough<Treatment>
->>>>>>> aurmich/dev
      */
     public function treatments()
     {
@@ -79,11 +67,7 @@ trait HasGdpr
     public function hasGivenConsent(ConsentType|string $type, bool $cached = true): bool
     {
         $type = $type instanceof ConsentType ? $type->value : $type;
-<<<<<<< HEAD
         $cacheKey = 'user_' . (string) $this->getKey() . '_consent_' . $type;
-=======
-        $cacheKey = "user_{$this->getKey()}_consent_{$type}";
->>>>>>> aurmich/dev
         
         if ($cached && Cache::has($cacheKey)) {
             return (bool) Cache::get($cacheKey);
@@ -103,30 +87,18 @@ trait HasGdpr
      * 
      * @param  ConsentType|string  $type
      * @param  array<string, mixed>  $metadata
-<<<<<<< HEAD
      * @return \Modules\Gdpr\Models\Consent
-=======
-     * @return Consent
->>>>>>> aurmich/dev
      */
     public function giveConsent(ConsentType|string $type, array $metadata = []): Consent
     {
         $type = $type instanceof ConsentType ? $type->value : $type;
         
-<<<<<<< HEAD
         /** @var \Modules\Gdpr\Models\Consent $consent */
         $consent = $this->consents()->create([
             'type' => $type,
             'metadata' => $metadata,
             'ip_address' => request()->ip(),
             'user_agent' => request()->userAgent(),
-=======
-        $consent = $this->consents()->create([
-            'type' => $type,
-            'metadata' => $metadata,
-            'ip_address' => request()?->ip(),
-            'user_agent' => request()?->userAgent(),
->>>>>>> aurmich/dev
             'accepted_at' => now(),
         ]);
 
@@ -149,11 +121,7 @@ trait HasGdpr
             ->where('type', $type)
             ->update([
                 'revoked_at' => now(),
-<<<<<<< HEAD
                 'revoked_ip_address' => request()->ip(),
-=======
-                'revoked_ip_address' => request()?->ip(),
->>>>>>> aurmich/dev
             ]);
 
         if ($updated > 0) {
@@ -172,11 +140,7 @@ trait HasGdpr
      */
     protected function clearConsentCache(string $type): void
     {
-<<<<<<< HEAD
         $cacheKey = 'user_' . (string) $this->getKey() . '_consent_' . $type;
-=======
-        $cacheKey = "user_{$this->getKey()}_consent_{$type}";
->>>>>>> aurmich/dev
         Cache::forget($cacheKey);
     }
 

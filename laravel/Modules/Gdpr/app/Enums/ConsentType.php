@@ -164,27 +164,5 @@ enum ConsentType: string
         ];
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     
-=======
-    /**
-     * Get consent types as a flattened array for forms.
-     * 
-     * @return array<string, string>
-     */
-    public static function forFormSelect(): array
-    {
-        $result = [];
-        
-        foreach (self::groupedByCategory() as $category => $types) {
-            $result[__("gdpr::consent.categories.$category")] = $types;
-        }
-        
-        return $result;
-    }
->>>>>>> aurmich/dev
-=======
-    
->>>>>>> 345f8677 (phpstan)
 }
