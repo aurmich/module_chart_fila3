@@ -1143,6 +1143,7 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
 =======
             'appointment_date' => InlineDatePicker::make('appointment_date')
+<<<<<<< HEAD
                 ->enabledDates(['2025-06-05','2025-06-21'])
 <<<<<<< HEAD
             ,
@@ -1156,6 +1157,9 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
             ->valueKey('id') 
 >>>>>>> b13ef45d (✨ (InlineDatePicker): add comprehensive documentation for the InlineDatePicker component to improve developer understanding and usage)
 =======
+=======
+                ->enabledDates(fn(Get $get)=>$this->getEnabledDates($get))
+>>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
                 ->view('pub_theme::filament.forms.components.inline-date-picker')
                 ->currentViewMonth($this->getCurrentCalendarMonth()),
             'appointment_time'=>  RadioCollection::make('appointment_time')
@@ -1165,6 +1169,28 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
                 ->valueKey('id') 
 >>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
         ];
+    }
+
+
+    public function getEnabledDates(Get $get): array
+    {   
+        /*
+        dddx([
+            'currentCalendarMonth'=>$this->currentCalendarMonth,
+            'studio_id'=>$get('studio_id'),
+        ]); //2025-07
+        */
+        return [
+            $this->currentCalendarMonth.'-15',
+            $this->currentCalendarMonth.'-20',
+        ];
+        /*
+        $studioId = $get('studio_id');
+        $studio = Studio::find($studioId);
+        $enabledDates = $studio->getEnabledDatesByMonth($this->currentCalendarMonth);
+
+        return $enabledDates;
+        */
     }
 
     /**

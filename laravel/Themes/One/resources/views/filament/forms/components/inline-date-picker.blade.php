@@ -57,11 +57,14 @@
             // ✅ Metodi per navigazione mese - chiamata diretta al widget parent
             previousMonth() {
                 dddx('a');
+<<<<<<< HEAD
 =======
             },
             // ✅ Metodi per navigazione mese - chiamata diretta al widget parent
             previousMonth() {
 >>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+>>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
                 $wire.call('previousMonth');
             },
             nextMonth() {
@@ -153,8 +156,12 @@
 =======
                                         $classes = 'relative py-2 px-1 text-sm font-semibold bg-blue-600 text-white ring-2 ring-blue-600 ring-offset-2 shadow-lg z-10';
                                     } elseif ($isEnabled && $isCurrentMonth) {
+<<<<<<< HEAD
                                         $classes = 'relative py-2 px-1 text-sm font-semibold bg-green-50 text-green-700 border-2 border-green-200 hover:bg-green-100 cursor-pointer';
 >>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+                                        $classes = 'relative py-2 px-1 text-sm font-semibold bg-green-50 text-green-700 border-2 border-green-200 hover:bg-green-100 cursor-pointer hover:scale-105 transform transition-all duration-200';
+>>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
                                     } elseif ($isCurrentMonth) {
                                         $classes = 'relative py-2 px-1 text-sm font-medium bg-gray-50 text-gray-400 border border-gray-200 cursor-not-allowed opacity-60';
                                     } else {
@@ -184,6 +191,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     {{-- ✨ INDICATORI ELEGANTI PER DATE DISPONIBILI --}}
                                     @if($isEnabled && $isCurrentMonth && !$isSelected)
                                         {{-- Barra sottile verde sotto la data disponibile --}}
@@ -199,10 +207,13 @@
                                     @if($isEnabled && $isCurrentMonth)
                                         <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-green-500 rounded-full"></span>
 =======
+=======
+>>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
                                     {{-- ✨ INDICATORI ELEGANTI PER DATE DISPONIBILI --}}
                                     @if($isEnabled && $isCurrentMonth && !$isSelected)
                                         {{-- Barra sottile verde sotto la data disponibile --}}
                                         <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-8 h-0.5 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full"></div>
+<<<<<<< HEAD
 >>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
                                     @endif
                                     
@@ -220,16 +231,25 @@
 =======
                                     @if($isEnabled && $isCurrentMonth)
                                         <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+=======
+>>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
                                     @endif
                                     
+                                    {{-- ✨ INDICATORI ELEGANTI PER DATA SELEZIONATA --}}
                                     @if($isSelected)
+<<<<<<< HEAD
                                         <span class="absolute -top-1 -right-1 w-2 h-2 bg-blue-400 rounded-full"></span>
 >>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+                                        {{-- Barra pulsante blu sotto la data selezionata --}}
+                                        <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-b-md shadow-inner animate-pulse"></div>
+>>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
                                     @endif
                                 </button>
                             @endforeach
                         @endforeach
                     @else
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -243,6 +263,9 @@
 =======
                         <div class="col-span-7 p-4 text-center text-gray-500">Caricamento calendario...</div>
 >>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+                        <x-filament::loading-indicator class="h-5 w-5" />
+>>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
                     @endif
                 </div>
 
@@ -252,6 +275,7 @@
     </div>
 </x-dynamic-component>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -310,6 +334,11 @@
 {{-- ✨ CSS ELEGANTE MIGLIORATO --}}
 <style>
 .inline-date-picker button {
+=======
+{{-- ✨ CSS ELEGANTE MIGLIORATO --}}
+<style>
+.inline-date-picker button {
+>>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
     transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -349,8 +378,11 @@
 
 .inline-date-picker .absolute.-top-1 {
     animation: fadeInScale 0.4s ease-out;
+<<<<<<< HEAD
 >>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
 =======
 >>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+>>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
 }
 </style> 

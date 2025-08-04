@@ -7,6 +7,7 @@ namespace Modules\UI\Filament\Forms\Components;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Closure;
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
@@ -64,10 +65,15 @@ class InlineDatePicker extends DatePicker
 >>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
 =======
 use Filament\Forms\Components\DatePicker;
+=======
+>>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
 use Closure;
 use Carbon\Carbon;
-use Illuminate\Support\Facades\App;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\App;
+use Filament\Forms\Components\DatePicker;
+use Filament\Actions\Contracts\HasActions;
+use Filament\Actions\Concerns\InteractsWithActions;
 
 /**
  * InlineDatePicker - Calendario inline minimalista e multilingua
@@ -80,6 +86,7 @@ use Illuminate\Support\Collection;
  */
 class InlineDatePicker extends DatePicker
 {
+    
     /**
      * Date abilitate per la selezione.
 <<<<<<< HEAD
@@ -598,6 +605,8 @@ class InlineDatePicker extends DatePicker
         
         return $this;
     }
+
+    
 
     /**
      * Ottiene le date abilitate risolte.
