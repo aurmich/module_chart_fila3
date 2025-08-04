@@ -1030,12 +1030,16 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
 >>>>>>> aurmich/dev
+=======
+
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
 ## Regole per Widget Filament: Path View e Localizzazione
 
 - Tutti i widget Filament devono avere la view in `modulo::filament.widgets.nome-widget`.
@@ -1061,6 +1065,7 @@ TextInput::make('location')->label(__('modulo::campo.label'))
 > Aggiornare sempre anche i file .mdc in .windsurf/rules e .cursor/rules
 
 **Vedi anche:** [filament-best-practices.mdc](../../../.windsurf/rules/filament-best-practices.mdc)
+<<<<<<< HEAD
 
 ## Regole di Ereditarietà: Trait e Interfacce
 
@@ -1179,3 +1184,5 @@ Aggiornare sempre la documentazione e le regole di progetto. Applicare la stessa
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 =======
 >>>>>>> bead9c28 (fix case)
+=======
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)

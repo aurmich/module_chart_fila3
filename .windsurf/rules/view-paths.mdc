@@ -17,13 +17,21 @@ protected static string $view = 'modulename::filament.widgets.view-name';
 
 ### Correct
 ```php
+<<<<<<< HEAD
 protected static string $view = '<nome progetto>::filament.widgets.find-doctor';
+=======
+protected static string $view = 'saluteora::filament.widgets.find-doctor';
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
 ```
 
 ### Incorrect
 ```php
 // Missing 'filament' segment
+<<<<<<< HEAD
 protected static string $view = '<nome progetto>::widgets.find-doctor';
+=======
+protected static string $view = 'saluteora::widgets.find-doctor';
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
 ```
 
 ## How to Fix

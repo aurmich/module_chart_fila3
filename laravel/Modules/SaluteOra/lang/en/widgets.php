@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return [
     'doctor_availabilities' => [
         'schedule' => [
@@ -174,6 +175,11 @@ declare(strict_types=1);
 
 return [
 >>>>>>> aurmich/dev
+=======
+declare(strict_types=1);
+
+return [
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
     'find_doctor_widget' => [
         'title' => 'Find Dentist and Book Appointment',
         'steps' => [
@@ -196,6 +202,7 @@ return [
             'error_booking_appointment' => 'An error occurred while booking the appointment',
         ],
     ],
+<<<<<<< HEAD
 <<<<<<< HEAD
     'doctor_appointments' => [
         'title' => 'Pending Appointments',
@@ -275,4 +282,6 @@ return [
     ],
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
 ];

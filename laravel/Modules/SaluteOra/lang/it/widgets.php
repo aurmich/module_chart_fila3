@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
 declare(strict_types=1);
@@ -482,3 +483,31 @@ return [
     ],
 ];
 >>>>>>> aurmich/dev
+=======
+declare(strict_types=1);
+
+return [
+    'find_doctor_widget' => [
+        'title' => 'Trova Dentista e Prenota Appuntamento',
+        'steps' => [
+            'search' => 'Cerca Dentista',
+            'date_time' => 'Data e Ora',
+            'confirmation' => 'Conferma',
+        ],
+        'fields' => [
+            'dentist_search' => 'Cerca un Dentista',
+            'specialization' => 'Specializzazione',
+            'location' => 'Località',
+            'appointment_type' => 'Tipo di Appuntamento',
+            'appointment_details' => 'Dettagli Appuntamento',
+            'date' => 'Data',
+            'time' => 'Orario',
+        ],
+        'messages' => [
+            'loading_available_slots' => 'Caricamento orari disponibili...',
+            'appointment_booked_successfully' => 'Appuntamento prenotato con successo!',
+            'error_booking_appointment' => 'Si è verificato un errore durante la prenotazione',
+        ],
+    ],
+];
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)

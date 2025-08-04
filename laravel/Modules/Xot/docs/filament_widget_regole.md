@@ -17,10 +17,14 @@
 ## Label e Placeholder
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Non usare MAI // Label gestita automaticamente da LangServiceProvider, ->placeholder(), né stringhe tradotte direttamente nei componenti Filament.
 =======
 - Non usare MAI ->label(), ->placeholder(), né stringhe tradotte direttamente nei componenti Filament.
 >>>>>>> aurmich/dev
+=======
+- Non usare MAI ->label(), ->placeholder(), né stringhe tradotte direttamente nei componenti Filament.
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
 - Tutte le label, placeholder, titoli e descrizioni sono risolte tramite i file di traduzione del modulo (es: Modules/SaluteOra/lang/it/widgets.php).
 - Chi estende XotBaseWidget, XotBaseResource, XotBasePage deve affidarsi solo alle chiavi di traduzione.
 - **Esempio corretto:**
@@ -30,10 +34,14 @@
 - **Esempio sbagliato:**
   ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
   Forms\Components\TextInput::make('location')// Label gestita automaticamente da LangServiceProvider);
 =======
   Forms\Components\TextInput::make('location')->label(__('saluteora::widgets.find_doctor.location_label'));
 >>>>>>> aurmich/dev
+=======
+  Forms\Components\TextInput::make('location')->label(__('saluteora::widgets.find_doctor.location_label'));
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
   ```
 
 ---

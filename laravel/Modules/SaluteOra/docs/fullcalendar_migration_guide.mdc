@@ -4,6 +4,9 @@ globs:
 alwaysApply: false
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
 # Guida Migrazione FullCalendar: Da Legacy a Parental STI
 
 ## 📋 Panoramica Migrazione
@@ -573,5 +576,8 @@ Appointment::with(['patient', 'doctor', 'studio'])
 ---
 
 **Nota**: Questa migrazione introduce cambiamenti significativi nell'architettura. Testare accuratamente in ambiente di staging prima del deploy in produzione.
+<<<<<<< HEAD
 =======
 >>>>>>> 2099645a (.)
+=======
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)

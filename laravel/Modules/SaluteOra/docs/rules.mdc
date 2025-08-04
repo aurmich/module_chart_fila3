@@ -4,6 +4,7 @@ globs:
 alwaysApply: false
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regole SaluteOra
 
 ## Crosscheck documentazione wizard/UI
@@ -12,6 +13,10 @@ alwaysApply: false
 - Aggiornare la documentazione se necessario e cross-referenziare tra codice e documentazione.
 
 
+=======
+# Regole SaluteOra
+
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
 ## Namespace
 
 ### Quando
@@ -39,5 +44,8 @@ namespace Modules\SaluteOra\App\Actions\Patient\Calendar;
 ```
 
 ## ... existing rules ...
+<<<<<<< HEAD
 =======
 >>>>>>> ca5e1eaf (.)
+=======
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)

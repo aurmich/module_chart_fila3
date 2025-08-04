@@ -2,6 +2,7 @@
 
 ## Overview
 
+<<<<<<< HEAD
 The `FindDoctorAndAppointmentWidget` provides a multi-step wizard interface for patients to find available dentists and book appointments, following Clean Code, DRY, and KISS principles.
 
 ## View Implementation (Theme)
@@ -110,6 +111,20 @@ Il tema One permette di personalizzare:
 - Responsive design following Filament best practices
 - Comprehensive form validation with user-friendly messages
 - Centralized error handling and user feedback
+=======
+The `FindDoctorAndAppointmentWidget` provides a multi-step wizard interface for patients to find available dentists and book appointments.
+
+## Features
+
+- Multi-step wizard interface
+- Location-based dentist search
+- Specialization filtering
+- Real-time availability checking
+- Responsive design
+- Form validation
+- Error handling
+- Loading states
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
 
 ## Implementation Details
 
@@ -119,6 +134,7 @@ Il tema One permette di personalizzare:
 class FindDoctorAndAppointmentWidget extends XotBaseWidget
 {
     protected static string $view = 'saluteora::widgets.find-doctor-and-appointment';
+<<<<<<< HEAD
     protected static ?int $sort = 1;
     protected int|string|array $columnSpan = 'full';
     public ?array $data = [];
@@ -212,6 +228,31 @@ protected function getFormSchema(): array
            ->schema($this->getConfirmationStepSchema());
    }
    ```
+=======
+    protected int|string|array $columnSpan = 'full';
+    public ?array $data = [];
+    
+    // ...
+}
+```
+
+### Methods
+
+#### `form(Form $form): Form`
+Defines the wizard form structure with multiple steps:
+1. **Search Criteria**
+   - Location input
+   - Specialization dropdown
+   - Appointment type selection
+2. **Date & Time Selection**
+   - Date picker
+   - Time slot selection
+   - Duration options
+3. **Confirmation**
+   - Appointment summary
+   - Patient details form
+   - Terms acceptance
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
 
 #### `submit()`
 Handles form submission, including:
@@ -221,6 +262,7 @@ Handles form submission, including:
 - Success/error notifications
 - Redirection
 
+<<<<<<< HEAD
 ## Schema Implementation
 
 ### Search Step Schema
@@ -295,6 +337,16 @@ protected function getConfirmationStepSchema(): array
    - Lazy loading of options
    - Minimal database queries
    - Optimized re-rendering
+=======
+## View Components
+
+The widget uses the following Blade components:
+- `filament::widgets.widget`
+- `filament-forms::wizard`
+- Custom form components
+- Loading indicators
+- Error messages
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
 
 ## Usage Example
 
@@ -305,12 +357,15 @@ Filament\Facades\Filament::registerWidgets([
 ]);
 ```
 
+<<<<<<< HEAD
 ## Related Documentation
 
 - [Clean Code Wizard Steps](../clean-code-wizard-steps.md)
 - [Filament Widgets Documentation](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Form Components Reference](https://filamentphp.com/docs/3.x/forms/fields)
 
+=======
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
 ## Styling
 
 Uses Tailwind CSS classes for styling. Custom styles can be added in:
@@ -383,6 +438,7 @@ Please follow the project's coding standards and submit pull requests to the `de
 ## License
 
 This widget is part of the SaluteOra module and is licensed under the [MIT license](LICENSE).
+<<<<<<< HEAD
 
 ## Policy view widget
 La view deve essere solo un wrapper per $this->form. Niente markup custom, niente logica Livewire/AlpineJS, niente gestione CSRF manuale. Tutta la logica va nel widget PHP o nel tema. Motivazione: coerenza, DRY, KISS, troubleshooting semplificato. Collegamento a docs/rules/filament_best_practices.md e docs/xot.md.
@@ -410,3 +466,5 @@ Appointment::where('doctor_id', $doctorId)
 - Un solo punto di verità: nessuna duplicazione, nessun lock-in
 - DRY, KISS, serenità del codice
 - Refactoring sicuro, massima estendibilità
+=======
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)

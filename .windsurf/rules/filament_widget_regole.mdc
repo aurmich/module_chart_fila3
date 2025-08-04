@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # Regola: Widget Filament (XotBase) - Label, Placeholder, Path View
 
 - Non usare MAI ->label(), ->placeholder(), né stringhe tradotte direttamente nei componenti Filament.
@@ -24,3 +25,5 @@ Forms\Components\TextInput::make('location')->label(__('<nome progetto>::widgets
 ```
 
 Vedi anche: modules/xot/docs/filament_widget_regole.md
+=======
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)

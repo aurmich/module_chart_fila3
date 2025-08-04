@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -249,6 +250,8 @@ return [
     ],
 ];
 =======
+=======
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
 return array (
   'steps' => 
   array (
@@ -256,6 +259,7 @@ return array (
     array (
       'label' => 'search',
     ),
+<<<<<<< HEAD
     'confirmation' => 
     array (
       'label' => 'confirmation',
@@ -300,6 +304,8 @@ return array (
     array (
       'label' => 'search_step',
     ),
+=======
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
   ),
   'fields' => 
   array (
@@ -324,6 +330,7 @@ return array (
       'helper_text' => 'appointment_type',
       'description' => 'appointment_type',
     ),
+<<<<<<< HEAD
     'time' => 
     array (
       'description' => 'time',
@@ -454,3 +461,7 @@ return array (
   ),
 );
 >>>>>>> aurmich/dev
+=======
+  ),
+);
+>>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
