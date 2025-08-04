@@ -40,10 +40,9 @@ Queste Action devono occuparsi di:
 <<<<<<< HEAD
 - [EditUserWidget.php](../../app/Filament/Widgets/EditUserWidget.php) - Widget per modifica dati utente
 - [Documentazione EditUserWidget](./edit-user-widget.md) - Documentazione completa dell'EditUserWidget
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [EditUserWidget.php](../../app/Filament/Widgets/EditUserWidget.php) - Widget per modifica dati utente
 - [Documentazione EditUserWidget](./edit-user-widget.md) - Documentazione completa dell'EditUserWidget
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [EditUserWidget.php](../../app/Filament/Widgets/EditUserWidget.php) - Widget per modifica dati utente
 - [Documentazione EditUserWidget](./edit-user-widget.md) - Documentazione completa dell'EditUserWidget
@@ -77,6 +76,8 @@ Queste Action devono occuparsi di:
 >>>>>>> b94d1b23 (✨ (User Module): introduce UpdateUserAction for doctor-specific user updates)
 =======
 =======
+=======
+>>>>>>> e33bf4c8 (📝 (registration-widget.md): remove merge conflict markers and clean up documentation for EditUserWidget links)
 - [EditUserWidget.php](../../app/Filament/Widgets/EditUserWidget.php) - Widget per modifica dati utente
 - [Documentazione EditUserWidget](./edit-user-widget.md) - Documentazione completa dell'EditUserWidget
 >>>>>>> aurmich/dev
