@@ -215,6 +215,7 @@
             </div>
         </div>
         @endif
+<<<<<<< HEAD
         <div class="w-8 lg:w-9 h-auto">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -269,6 +270,9 @@
 >>>>>>> 8d28bdca (- updated style area dottore)
 >>>>>>> aurmich/dev
         </div>
+=======
+     
+>>>>>>> 44693e01 (- updated style confirm reset password)
       </div>
     </div>
     <!-- FINE HEADER -->
