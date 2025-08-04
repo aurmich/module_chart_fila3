@@ -17,10 +17,14 @@ $user=auth()->user();
     <div class="w-full flex justify-start">
         {{-- DA AGGIORNARE URL --}}
 <<<<<<< HEAD
+<<<<<<< HEAD
         <a href="{{ route('home') }}">
 =======
         <a href="/it">
 >>>>>>> 9fa97684 (✨ (appointment states): add complete standardization for appointment states to ensure consistency and improve maintainability)
+=======
+        <a href="{{ route('home') }}">
+>>>>>>> 198c0c0a (✨ (DoctorAppointmentsWidget.php, DoctorCalendarWidget.php): refactor appointment loading logic to use doctor_id instead of auth user id for better clarity and functionality)
             <div class="cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                      stroke-width="1.5" stroke="currentColor" class="size-9">
@@ -77,7 +81,7 @@ $user=auth()->user();
     <!-- Page title -->
     <div class="p-10">
         <div class="w-full flex justify-center">
-            <h1 class="text-center">Appuntamenti Rifiutati</h1>
+            <h1 class="text-center">@lang('pub_theme::appointment.hero.rejected_appointments.title')</h1>
         </div>
     </div>
 <<<<<<< HEAD

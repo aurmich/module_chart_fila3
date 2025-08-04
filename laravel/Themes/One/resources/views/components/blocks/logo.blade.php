@@ -12,6 +12,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <a href="{{ route('home') }}">
 =======
 <a href="/it">
@@ -19,6 +20,9 @@
 =======
 <a href="/it">
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+<a href="{{ route('home') }}">
+>>>>>>> 198c0c0a (✨ (DoctorAppointmentsWidget.php, DoctorCalendarWidget.php): refactor appointment loading logic to use doctor_id instead of auth user id for better clarity and functionality)
     <div class="my-12" {{ $attributes->merge(['class' => 'p-4 flex items-center space-x-3']) }}>
         <!-- @if($icon)
             <x-filament::icon :name="$icon" :class="$size" class="text-primary-600 dark:text-primary-400" />

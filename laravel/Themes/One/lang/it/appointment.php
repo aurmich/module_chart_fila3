@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 198c0c0a (✨ (DoctorAppointmentsWidget.php, DoctorCalendarWidget.php): refactor appointment loading logic to use doctor_id instead of auth user id for better clarity and functionality)
 declare(strict_types=1);
 
 return [
@@ -37,6 +40,7 @@ return [
             'description' => 'Visualizza tutti i nuovi appuntamenti richiesti',
         ],
     ],
+<<<<<<< HEAD
     'fields' => [
         'state' => [
             'label' => 'Stato',
@@ -89,6 +93,8 @@ return [
             'help' => 'Indica se l\'appuntamento è urgente',
         ],
     ],
+=======
+>>>>>>> 198c0c0a (✨ (DoctorAppointmentsWidget.php, DoctorCalendarWidget.php): refactor appointment loading logic to use doctor_id instead of auth user id for better clarity and functionality)
     'states' => [
         'pending' => 'In attesa',
         'confirmed' => 'Confermato',
@@ -100,6 +106,7 @@ return [
         'no_show' => 'Non presentato',
         'rescheduled' => 'Riprogrammato',
     ],
+<<<<<<< HEAD
     'fields' => [
         'name' => [
             'label' => 'Nome',
@@ -336,3 +343,6 @@ return [
 =======
 return [];
 >>>>>>> 0cff2983 (📝 (docs): remove unused Blade file for appointments to clean up the codebase)
+=======
+];
+>>>>>>> 198c0c0a (✨ (DoctorAppointmentsWidget.php, DoctorCalendarWidget.php): refactor appointment loading logic to use doctor_id instead of auth user id for better clarity and functionality)

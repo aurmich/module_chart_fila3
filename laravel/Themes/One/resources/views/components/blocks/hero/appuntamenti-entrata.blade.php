@@ -44,6 +44,7 @@ new class extends Component {
     <div class="w-full flex justify-start">
         {{-- DA AGGIORNARE URL --}}
         <a href="{{ route('home') }}">
+<<<<<<< HEAD
 =======
 <div class="bg-[#E6EBF7]">
     <!-- Back button -->
@@ -51,6 +52,8 @@ new class extends Component {
         {{-- DA AGGIORNARE URL --}}
         <a href="/it">
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 198c0c0a (✨ (DoctorAppointmentsWidget.php, DoctorCalendarWidget.php): refactor appointment loading logic to use doctor_id instead of auth user id for better clarity and functionality)
             <div class="cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                      stroke-width="1.5" stroke="currentColor" class="size-9">
@@ -65,6 +68,7 @@ new class extends Component {
     <div class="p-10">
         <div class="w-full flex justify-center">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <h1 class="text-center">@lang('pub_theme::appointment.hero.entry_appointments.title')</h1>
         </div>
     </div>
@@ -75,6 +79,9 @@ new class extends Component {
     
 =======
             <h1 class="text-center">Appuntamenti in Entrata</h1>
+=======
+            <h1 class="text-center">@lang('pub_theme::appointment.hero.entry_appointments.title')</h1>
+>>>>>>> 198c0c0a (✨ (DoctorAppointmentsWidget.php, DoctorCalendarWidget.php): refactor appointment loading logic to use doctor_id instead of auth user id for better clarity and functionality)
         </div>
     </div>
 <<<<<<< HEAD

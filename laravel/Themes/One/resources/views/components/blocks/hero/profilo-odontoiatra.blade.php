@@ -19,6 +19,7 @@
         {{-- Pulsante Indietro --}}
         <div class="w-full flex justify-start">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <a href="{{ route('home') }}">
 =======
 =======
@@ -38,6 +39,9 @@
 >>>>>>> aurmich/dev
 =======
 >>>>>>> f7d3ce4f (- update landing-page;)
+=======
+            <a href="{{ route('home') }}">
+>>>>>>> 198c0c0a (✨ (DoctorAppointmentsWidget.php, DoctorCalendarWidget.php): refactor appointment loading logic to use doctor_id instead of auth user id for better clarity and functionality)
                 <div class="cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke-width="1.5" stroke="currentColor" class="size-9">

@@ -5,6 +5,7 @@
 <div class="w-full flex justify-start">
         {{-- DA AGGIORNARE URL --}}
         <a href="{{ route('home') }}">
+<<<<<<< HEAD
 =======
 <div class="w-full flex justify-start p-6">
 =======
@@ -18,6 +19,8 @@
         {{-- DA AGGIORNARE URL --}}
         <a href="/it">
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+>>>>>>> 198c0c0a (✨ (DoctorAppointmentsWidget.php, DoctorCalendarWidget.php): refactor appointment loading logic to use doctor_id instead of auth user id for better clarity and functionality)
             <div class="cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                      stroke-width="1.5" stroke="currentColor" class="size-9">

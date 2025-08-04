@@ -198,6 +198,7 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
     private function loadAppointments(): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         
         $this->invalidateCache();
         $cacheKey = $this->getCacheKey();
@@ -213,13 +214,17 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
                 ->limit(100)
 =======
         $user = auth()->user();
+=======
+        
+>>>>>>> 198c0c0a (✨ (DoctorAppointmentsWidget.php, DoctorCalendarWidget.php): refactor appointment loading logic to use doctor_id instead of auth user id for better clarity and functionality)
 
         $cacheKey = $this->getCacheKey();
         
-        $this->appointments = Cache::remember($cacheKey, 300, function () use ($user) {
+        
+        $this->appointments = Cache::remember($cacheKey, 300, function ()  {
             return Appointment::query()
                 ->with(['patient', 'doctor', 'studio'])
-                //->where('doctor_id', $user->id)
+                ->where('doctor_id', $this->doctor_id)
                 //->whereState('state', Pending::class)
                 ->where('state', $this->state)
                 ->orderBy('starts_at', 'asc')
@@ -234,6 +239,7 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
      */
     private function getCacheKey(): string
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
        
@@ -256,11 +262,14 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
             
 =======
         $user_id = auth()->id();
+=======
+        
+>>>>>>> 198c0c0a (✨ (DoctorAppointmentsWidget.php, DoctorCalendarWidget.php): refactor appointment loading logic to use doctor_id instead of auth user id for better clarity and functionality)
        
        
         $key= sprintf(
             'doctor_appointments_%s_%s',
-            $user_id ?? 0,
+            $this->doctor_id ?? 0,
             $this->state,
 >>>>>>> 9fa97684 (✨ (appointment states): add complete standardization for appointment states to ensure consistency and improve maintainability)
         );

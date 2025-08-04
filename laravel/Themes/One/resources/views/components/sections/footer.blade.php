@@ -31,6 +31,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <a href="{{ route('home') }}" class="text-white text-md m-1">@lang('pub_theme::navigation.main_menu.home.label')</a>
                 <a href="/{{ $lang }}/pages/progetto" class="text-white text-md m-1">@lang('pub_theme::navigation.main_menu.project.label')</a>
                 </div>
@@ -155,11 +156,14 @@
                     <a href="/it/pages/cookie-policy-salute-ora" class="text-white text-sm transition-colors">Cookie Policy</a>
 =======
                 <a href="/it" class="text-white text-sm m-1">Home</a>
+=======
+                <a href="{{ route('home') }}" class="text-white text-sm m-1">Home</a>
+>>>>>>> 198c0c0a (✨ (DoctorAppointmentsWidget.php, DoctorCalendarWidget.php): refactor appointment loading logic to use doctor_id instead of auth user id for better clarity and functionality)
                 <a href="/it/pages/progetto" class="text-white text-sm m-1">Progetto</a>
 >>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
                 </div>
             </div>
-            <a href="/it">
+            <a href="{{ route('home') }}">
                 <div class="flex justify-center">
                     <img src="/img/saluteOra-new-logo.png" alt="{{ config('app.name') }}" class="h-16 lg:h-24 w-auto">
                 </div>

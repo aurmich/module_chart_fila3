@@ -76,7 +76,7 @@ $user=auth()->user();
 >>>>>>> 9fa97684 (✨ (appointment states): add complete standardization for appointment states to ensure consistency and improve maintainability)
     <div class="w-full flex justify-start">
         {{-- DA AGGIORNARE URL --}}
-        <a href="/it">
+        <a href="{{ route('home') }}" title="@lang('pub_theme::appointment.hero.accepted_appointments.back_button.tooltip')">
             <div class="cursor-pointer">
 <<<<<<< HEAD
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -541,7 +541,7 @@ $user=auth()->user();
     <!-- Page title -->
     <div class="p-10">
         <div class="w-full flex justify-center">
-            <h1 class="text-center">Appuntamenti Accettati</h1>
+            <h1 class="text-center">@lang('pub_theme::appointment.hero.accepted_appointments.title')</h1>
         </div>
     </div>
     

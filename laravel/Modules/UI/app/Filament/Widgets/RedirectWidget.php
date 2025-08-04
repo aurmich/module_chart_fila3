@@ -55,8 +55,44 @@ class RedirectWidget extends XotBaseWidget
      */
     protected static string $view = 'ui::filament.widgets.redirect-widget';
     
+<<<<<<< HEAD
     
 
+=======
+    //public function __construct(array $config = [])
+   // {
+    //    dddx($config);
+   // }
+
+    
+
+
+    /**
+     * Configura il widget con i parametri specificati.
+     *
+     * @param  array<string, mixed>  $config
+     * @return static
+     */
+    public static function configure(array $config = [])
+    {
+        $instance = new static();
+        
+        // Imposta la vista personalizzata se specificata nella configurazione
+        if (isset($config['view'])) {
+            $instance::$view = $config['view'];
+        }
+        
+        // Imposta le proprietà dalla configurazione
+        foreach (['to', 'label', 'icon', 'class', 'external'] as $property) {
+            if (isset($config[$property])) {
+                $instance->$property = $config[$property];
+            }
+        }
+        
+        return $instance;
+    }
+
+>>>>>>> 198c0c0a (✨ (DoctorAppointmentsWidget.php, DoctorCalendarWidget.php): refactor appointment loading logic to use doctor_id instead of auth user id for better clarity and functionality)
     /**
      * Implementazione richiesta da XotBaseWidget.
      * Per questo widget non abbiamo form, quindi restituiamo array vuoto.
