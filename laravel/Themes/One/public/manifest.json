@@ -1,6 +1,10 @@
 {
   "resources/css/app.css": {
+<<<<<<< HEAD
     "file": "assets/app-CizGm5hC.css",
+=======
+    "file": "assets/app-Dph1A97d.css",
+>>>>>>> 8acca8e8 (- continuo style pagina di registrazione;)
     "src": "resources/css/app.css",
     "isEntry": true
   },
