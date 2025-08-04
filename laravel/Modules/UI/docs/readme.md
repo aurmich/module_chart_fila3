@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo UI - Documentazione
 
 ## Panoramica
@@ -65,6 +66,8 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> 275f385b (- deleted files .md)
 # Modulo UI
 
 ## Panoramica
@@ -77,6 +80,7 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
 - MoneyInput: Input per valori monetari con formattazione automatica
 - DateRangePicker: Selezione intervalli di date
 - FileUpload: Upload file con preview e validazione
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -102,6 +106,17 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
   - ⚠️ **ERRORE CRITICO RISOLTO** (Dic 2024): Proprietà `$view` mancante causava runtime error
   - ✅ **CORREZIONE**: Vista Blade personalizzata + traduzioni complete
 >>>>>>> 34a4b9e3 (readme)
+=======
+- **OpeningHoursField**: Campo per gestione orari settimanali (mattina/pomeriggio) - [Documentazione](components/opening-hours-field.md)
+  - ⚠️ **ERRORE CRITICO RISOLTO** (Dic 2024): Proprietà `$view` mancante causava runtime error
+  - ✅ **CORREZIONE**: Vista Blade personalizzata + traduzioni complete
+- **OpeningHoursField**: Campo per gestione orari settimanali (mattina/pomeriggio) - [Documentazione](components/opening-hours-field.md)
+  - ⚠️ **ERRORE CRITICO RISOLTO** (Dic 2024): Proprietà `$view` mancante causava runtime error
+  - ✅ **CORREZIONE**: Vista Blade personalizzata + traduzioni complete
+- **OpeningHoursField**: Campo per gestione orari settimanali (mattina/pomeriggio) - [Documentazione](components/opening-hours-field.md)
+  - ⚠️ **ERRORE CRITICO RISOLTO** (Dic 2024): Proprietà `$view` mancante causava runtime error
+  - ✅ **CORREZIONE**: Vista Blade personalizzata + traduzioni complete
+>>>>>>> 275f385b (- deleted files .md)
 
 ### Tables
 - CustomDataTable: Tabella dati avanzata con ordinamento e filtri
@@ -161,6 +176,7 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Componenti View Aggiornati (Gen 2025)
 
 ### Studio Selector Component
@@ -200,3 +216,7 @@ Form\View::make('ui::ui.studio-selector')
 ---
 
 >>>>>>> 15cb84fb (fix collisions)
+=======
+---
+
+>>>>>>> 275f385b (- deleted files .md)
