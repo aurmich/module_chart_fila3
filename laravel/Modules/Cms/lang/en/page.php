@@ -9,11 +9,7 @@ return [
             'description' => 'Manage website pages',
         ],
         'label' => 'Pages',
-<<<<<<< HEAD
         'sort' => '5',
-=======
-        'sort' => 5,
->>>>>>> aurmich/dev
         'icon' => 'heroicon-o-document',
     ],
     'fields' => [
@@ -79,7 +75,6 @@ return [
         'toggleColumns' => [
             'label' => 'Toggle Columns',
         ],
-<<<<<<< HEAD
         'reorderRecords' => [
             'label' => 'reorderRecords',
         ],
@@ -118,11 +113,6 @@ return [
         'create' => [
             'label' => 'Crea Pagina',
         ],
-=======
-    ],
-    'actions' => [
-        'create' => 'Create Page',
->>>>>>> aurmich/dev
         'edit' => 'Edit Page',
         'delete' => 'Delete Page',
         'publish' => 'Publish',
@@ -130,12 +120,9 @@ return [
         'archive' => 'Archive',
         'restore' => 'Restore',
         'preview' => 'Preview',
-<<<<<<< HEAD
         'activeLocale' => [
             'label' => 'activeLocale',
         ],
-=======
->>>>>>> aurmich/dev
     ],
     'messages' => [
         'created' => 'Page created successfully',
@@ -151,10 +138,7 @@ return [
         'slug_unique' => 'The slug must be unique',
         'content_required' => 'The content is required',
     ],
-<<<<<<< HEAD
     'model' => [
         'label' => 'page.model',
     ],
-=======
->>>>>>> aurmich/dev
 ];

@@ -8,10 +8,7 @@
 
 ## Panoramica
 
-<<<<<<< HEAD
 Questo documento descrive come implementare nell'header della piattaforma:
-=======
->>>>>>> aurmich/dev
 Questo documento descrive come implementare nell'header di SaluteOra:
 1. Un selettore di lingua
 2. Un dropdown con l'avatar dell'utente contenente il link di logout
@@ -20,10 +17,7 @@ Questo documento descrive come implementare nell'header di SaluteOra:
 
 L'header è gestito tramite:
 - **Componente Blade**: `/Themes/One/resources/views/components/sections/header.blade.php`
-<<<<<<< HEAD
 - **Configurazione JSON**: `/config/local/tenant/database/content/sections/1.json`
-=======
->>>>>>> aurmich/dev
 - **Configurazione JSON**: `/config/local/saluteora/database/content/sections/1.json`
 
 Il componente header legge i blocchi dal file JSON e li renderizza in base alla lingua corrente. Attualmente l'header contiene:
@@ -214,10 +208,7 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
                 "data": {
                     "view": "cms::blocks.logo",
                     "src": "patient::images/logo.svg",
-<<<<<<< HEAD
                     "alt": "Logo Piattaforma",
-=======
->>>>>>> aurmich/dev
                     "alt": "Logo SaluteOra",
                     "width": 150,
                     "height": 32
@@ -292,10 +283,7 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
                 "data": {
                     "view": "cms::blocks.logo",
                     "src": "patient::images/logo.svg",
-<<<<<<< HEAD
                     "alt": "Platform Logo",
-=======
->>>>>>> aurmich/dev
                     "alt": "SaluteOra Logo",
                     "width": 150,
                     "height": 32

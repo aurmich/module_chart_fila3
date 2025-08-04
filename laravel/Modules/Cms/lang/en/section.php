@@ -5,16 +5,9 @@ return [
         'label' => 'Sections',
         'group' => 'Content Management',
         'icon' => 'heroicon-o-rectangle-stack',
-<<<<<<< HEAD
         'sort' => '85',
     ],
     'fields' => [
-=======
-        'sort' => 85,
-    ],
-    'fields' => [
-        // ... altri campi ...
->>>>>>> aurmich/dev
         'image' => [
             'label' => 'Image',
         ],
@@ -120,7 +113,6 @@ return [
         'children' => [
             'label' => 'Children',
         ],
-<<<<<<< HEAD
         'toggleColumns' => [
             'label' => 'Mostra/Nascondi Colonne',
         ],
@@ -281,8 +273,5 @@ return [
         'updated' => 'Sezione aggiornata con successo',
         'deleted' => 'Sezione eliminata con successo',
         'bulk_deleted' => 'Sezioni eliminate con successo',
-=======
-        // ... altri campi ...
->>>>>>> aurmich/dev
     ],
 ];
