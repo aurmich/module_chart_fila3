@@ -213,6 +213,7 @@
 <div class="mt-10">margin-top 10</div>
 <div class="lg:py-8">large py-8</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="text-[#F38B8B]">testo rosa chiaro</div>
 <div class="mx-10">mx 10</div>
 <div class="mx-24">mx 24</div>
@@ -431,3 +432,7 @@
 =======
 </x-layouts.app>
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+<div class="text-[#F38B8B]">testo rosa chiaro</div>
+</x-layouts.app>
+>>>>>>> c0c82b7e (- updated template email)

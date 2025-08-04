@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -41,181 +42,23 @@
  */
 --}}
 
+=======
+>>>>>>> c0c82b7e (- updated template email)
 <!DOCTYPE html>
-<html lang="it" class="h-full">
+<html lang="it">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Oops! Pagina non trovata - SaluteOra</title>
-    <meta name="robots" content="noindex, nofollow">
-
-    {{-- Tailwind CSS CDN per sviluppo --}}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Errore 404</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
-    {{-- Custom Tailwind Configuration --}}
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    animation: {
-                        'float': 'float 6s ease-in-out infinite',
-                        'float-slow': 'float 8s ease-in-out infinite',
-                        'float-delayed': 'float 6s ease-in-out 2s infinite',
-                        'wiggle': 'wiggle 1s ease-in-out infinite',
-                        'heartbeat': 'heartbeat 1.5s ease-in-out infinite',
-                        'bounce-gentle': 'bounce-gentle 2s ease-in-out infinite',
-                        'rotate-slow': 'rotate-slow 10s linear infinite',
-                        'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
-                        'shake': 'shake 0.5s linear',
-                        'dance': 'dance 3s ease-in-out infinite'
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
-                            '50%': { transform: 'translateY(-20px) rotate(5deg)' }
-                        },
-                        wiggle: {
-                            '0%, 100%': { transform: 'rotate(-3deg)' },
-                            '50%': { transform: 'rotate(3deg)' }
-                        },
-                        heartbeat: {
-                            '0%, 100%': { transform: 'scale(1)' },
-                            '50%': { transform: 'scale(1.1)' }
-                        },
-                        'bounce-gentle': {
-                            '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-10px)' }
-                        },
-                        'rotate-slow': {
-                            '0%': { transform: 'rotate(0deg)' },
-                            '100%': { transform: 'rotate(360deg)' }
-                        },
-                        'pulse-glow': {
-                            '0%, 100%': { boxShadow: '0 0 20px rgba(20, 184, 166, 0.5)' },
-                            '50%': { boxShadow: '0 0 40px rgba(20, 184, 166, 0.8)' }
-                        },
-                        shake: {
-                            '0%, 100%': { transform: 'translateX(0)' },
-                            '25%': { transform: 'translateX(-5px)' },
-                            '75%': { transform: 'translateX(5px)' }
-                        },
-                        dance: {
-                            '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
-                            '25%': { transform: 'translateY(-5px) rotate(-2deg)' },
-                            '50%': { transform: 'translateY(-10px) rotate(0deg)' },
-                            '75%': { transform: 'translateY(-5px) rotate(2deg)' }
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-
-    {{-- Favicon medico --}}
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>">
 </head>
-
-<body class="h-full bg-gradient-to-br from-teal-50 via-blue-50 to-indigo-100 font-sans antialiased overflow-x-hidden"
-      x-data="{
-          isVisible: false,
-          errorMood: 'curious',
-          searchQuery: '',
-          showEasterEgg: false,
-          clickCount: 0,
-          suggestions: [
-              { text: '🏠 Torna alla Home', url: '/', icon: '🏠' },
-              { text: '📞 Contatti e Prenotazioni', url: '/contatti', icon: '📞' },
-              { text: '🦷 Servizi Odontoiatrici', url: '/servizi', icon: '🦷' },
-              { text: '🤰 Odontoiatria in Gravidanza', url: '/gravidanza', icon: '🤰' },
-              { text: '📋 Prenota una Visita', url: '/prenota', icon: '📋' },
-              { text: '📚 Blog e Consigli', url: '/blog', icon: '📚' },
-              { text: '❓ FAQ Frequenti', url: '/faq', icon: '❓' },
-              { text: '🚨 Emergenze 24/7', url: 'tel:+39800123456', icon: '🚨' }
-          ],
-          filteredSuggestions: [],
-          currentTime: '',
-          funnyMessages: [
-              'Questa pagina è andata dal dentista e non è ancora tornata! 🦷',
-              'Errore 404: Pagina in sala d\'attesa infinita 🪑',
-              'La pagina che cerchi ha preso un appuntamento... altrove! 📅',
-              'Houston, abbiamo un problema... dentale! 🚀🦷',
-              'Questa pagina si è persa nel labirinto delle gengive! 🌀',
-              'Errore: Pagina sotto anestesia locale 💉',
-              'La pagina è in quarantena per controllo igiene! 🧼'
-          ],
-          currentMessage: '',
-          messageIndex: 0
-      }"
-      x-init="
-          // Initialize visibility
-          setTimeout(() => { isVisible = true; }, 100);
-
-          // Update current time
-          setInterval(() => {
-              currentTime = new Date().toLocaleTimeString('it-IT', {
-                  hour: '2-digit',
-                  minute: '2-digit',
-                  second: '2-digit'
-              });
-          }, 1000);
-
-          // Initialize suggestions
-          filteredSuggestions = suggestions;
-
-          // Initialize funny message
-          currentMessage = funnyMessages[0];
-
-          // Rotate funny messages
-          setInterval(() => {
-              messageIndex = (messageIndex + 1) % funnyMessages.length;
-              currentMessage = funnyMessages[messageIndex];
-          }, 5000);
-      "
-      x-intersect="isVisible = true">
-
-    {{-- Floating Medical Elements Background --}}
-    <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
-        {{-- Floating Stethoscope --}}
-        <div class="absolute top-20 left-10 text-6xl opacity-20 animate-float text-teal-400">
-            🩺
-        </div>
-
-        {{-- Floating Teeth --}}
-        <div class="absolute top-1/4 right-20 text-8xl opacity-15 animate-float-delayed text-blue-400">
-            🦷
-        </div>
-
-        {{-- Floating Pills --}}
-        <div class="absolute bottom-1/4 left-1/4 text-5xl opacity-25 animate-bounce-gentle text-green-400">
-            💊
-        </div>
-
-        {{-- Floating Syringe --}}
-        <div class="absolute top-1/2 right-1/4 text-4xl opacity-20 animate-float-slow text-purple-400">
-            💉
-        </div>
-
-        {{-- Floating Heart --}}
-        <div class="absolute bottom-20 right-10 text-7xl opacity-30 animate-heartbeat text-red-400">
-            ❤️
-        </div>
-
-        {{-- Floating Medical Cross --}}
-        <div class="absolute top-40 left-1/2 text-5xl opacity-15 animate-rotate-slow text-red-500">
-            ➕
-        </div>
-
-        {{-- Additional Small Elements --}}
-        <div class="absolute bottom-1/3 right-1/3 text-3xl opacity-20 animate-dance text-yellow-400">
-            🌟
-        </div>
-
-        <div class="absolute top-3/4 left-20 text-4xl opacity-25 animate-wiggle text-pink-400">
-            🏥
-        </div>
+<body class="min-h-screen flex items-center justify-center bg-gray-100 text-center">
+    <div>
+        <h1 class="text-4xl font-bold mb-4">Errore 404</h1>
+        <p class="text-lg text-gray-700">Pagina non trovata</p>
     </div>
 
+<<<<<<< HEAD
     {{-- Main Content Container --}}
     <div class="relative z-10 min-h-full flex items-center justify-center p-4">
         <div class="max-w-4xl mx-auto text-center">
@@ -505,5 +348,7 @@
         });
     </script>
 >>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
+=======
+>>>>>>> c0c82b7e (- updated template email)
 </body>
 </html>

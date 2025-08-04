@@ -480,6 +480,7 @@
 =======
         @apply bg-white px-4 py-6 sm:px-6;
     }
+<<<<<<< HEAD
     .fi-icon-btn {
         @apply !bg-transparent !border-transparent;
     }
@@ -500,6 +501,11 @@
     .fi-input {
         @apply focus:border-[#FF5F7E] focus:ring-[#FF5F7E];
 >>>>>>> 89a8313a (- update primary colors)
+=======
+
+    .filepond--item[data-filepond-item-state="processing-complete"] .filepond--panel {
+        background-color: #FF5F7E !important; 
+>>>>>>> c0c82b7e (- updated template email)
     }
 }
 >>>>>>> d23ba493 (add calendar)

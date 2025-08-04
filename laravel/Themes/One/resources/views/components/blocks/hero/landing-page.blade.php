@@ -453,8 +453,12 @@
     <div class="w-full flex justify-center">
       <h1 class="text-[#FF5F7E] text-3xl">Per informazioni aggiuntive</h1>
     </div>
+<<<<<<< HEAD
     <div class="h-96 pt-5 flex flex-col lg:flex-row justify-center items-center">
 >>>>>>> f7d3ce4f (- update landing-page;)
+=======
+    <div class="h-64 pt-5 flex flex-col lg:flex-row justify-center items-center">
+>>>>>>> c0c82b7e (- updated template email)
       <div class="w-64 h-44 bg-cover bg-[#FCD5D0] rounded-[25px] m-5">
         <div class="grid grid-cols-2">
           <div class="flex justify-center">
@@ -552,6 +556,7 @@
         </div>
         <div class="p-5">
           <img class="h-16 lg:h-[150px]" src="/img/fondazione-andi-white.png" />
+<<<<<<< HEAD
         </div>
         <div class="p-5">
           <img class="h-16 lg:h-[150px]" src="/img/inmp-logo-piccolo-updated.png" />
@@ -564,6 +569,8 @@
         </div>
         <div class="p-5">
           <img class="h-16 lg:h-[150px]" src="/img/fondazione-andi-logo-updated.png" />
+=======
+>>>>>>> c0c82b7e (- updated template email)
         </div>
         <div class="p-5">
 <<<<<<< HEAD
