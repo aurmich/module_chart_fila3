@@ -305,6 +305,7 @@ class ComponentBrowserTest extends DuskTestCase
 
 # Componenti del Tema One
 
+<<<<<<< HEAD
 > **NOTA**: La documentazione generale sui componenti UI è centralizzata nel [modulo UI](../../../Modules/UI/docs/components.md). Questa sezione documenta solo i componenti specifici del tema One.
 
 ## Collegamenti
@@ -314,6 +315,8 @@ class ComponentBrowserTest extends DuskTestCase
 - [Componenti layout](../../../Modules/UI/docs/layout-components.md)
 >>>>>>> 54f4fa16 (.)
 
+=======
+>>>>>>> 35e9b7ea (feat(scripts): add script to rename files to lowercase while preserving README.md case for consistency and organization)
 ## Logo
 
 Il componente `x-ui.logo` è un SVG che rappresenta il logo dell'applicazione. 
@@ -339,6 +342,7 @@ Il componente `x-ui.logo` è un SVG che rappresenta il logo dell'applicazione.
 - Per header e navbar, usare dimensioni tra h-8 e h-16
 - Per hero sections e splash screens, considerare dimensioni maggiori
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 ## Collegamenti tra versioni di components.md
@@ -348,3 +352,6 @@ Il componente `x-ui.logo` è un SVG che rappresenta il logo dell'applicazione.
 * [components.md](laravel/Themes/One/docs/components.md)
 
 >>>>>>> 54f4fa16 (.)
+=======
+ 
+>>>>>>> 35e9b7ea (feat(scripts): add script to rename files to lowercase while preserving README.md case for consistency and organization)

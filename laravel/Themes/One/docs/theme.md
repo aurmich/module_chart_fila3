@@ -197,6 +197,7 @@ php artisan view:cache
 - [Laravel Blade](https://laravel.com/docs/blade)
 - [Vite](https://vitejs.dev/guide/) 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 ## Collegamenti tra versioni di theme.md
@@ -204,3 +205,6 @@ php artisan view:cache
 * [theme.md](laravel/Themes/One/docs/theme.md)
 
 >>>>>>> 54f4fa16 (.)
+=======
+ 
+>>>>>>> 35e9b7ea (feat(scripts): add script to rename files to lowercase while preserving README.md case for consistency and organization)
