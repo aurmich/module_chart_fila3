@@ -251,7 +251,14 @@ return array (
     array (
       'description' => 'description',
     ),
+<<<<<<< HEAD
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+    'reorderRecords' => 
+    array (
+      'label' => 'reorderRecords',
+    ),
+>>>>>>> 3224efcd (- format files)
   ),
   'actions' => 
   array (

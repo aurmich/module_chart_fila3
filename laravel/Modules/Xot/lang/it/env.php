@@ -1,6 +1,9 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3224efcd (- format files)
 return array (
   'navigation' => 
   array (
@@ -167,6 +170,7 @@ return array (
   ),
   'title' => 'env',
 );
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
@@ -306,3 +310,5 @@ return [
     'title' => 'env',
 ];
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 3224efcd (- format files)

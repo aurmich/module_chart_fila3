@@ -3,8 +3,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 15cb84fb (fix collisions)
+=======
+>>>>>>> 3224efcd (- format files)
 return array (
   'resource' => 
   array (
@@ -248,6 +251,7 @@ return array (
   ),
 );
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> d23ba493 (add calendar)
@@ -457,3 +461,5 @@ return [
 >>>>>>> 15cb84fb (fix collisions)
 =======
 >>>>>>> d23ba493 (add calendar)
+=======
+>>>>>>> 3224efcd (- format files)
