@@ -5,6 +5,9 @@
 I RelationManager sono componenti Filament che permettono di gestire le relazioni tra diverse entità del sistema direttamente dall'interfaccia di amministrazione. Questo documento descrive l'implementazione delle relazioni tra Studio e Doctor nel modulo SaluteOra.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 23f43388 (feat: add openingHoursField to studiorelationmanager of doctorresource)
 ## Architettura Cross-Module
 
 ### Implementazioni Multiple
@@ -14,8 +17,11 @@ Le relazioni Doctor-Studio sono implementate in due moduli:
 
 > **Nota**: Per la documentazione completa del RelationManager di amministrazione, vedere [RelationManager SaluteMo](/var/www/html/base_saluteora/laravel/Modules/SaluteMo/docs/filament/relationmanagers.md)
 
+<<<<<<< HEAD
 =======
 >>>>>>> 2bcfd382 (fix Address)
+=======
+>>>>>>> 23f43388 (feat: add openingHoursField to studiorelationmanager of doctorresource)
 ## Struttura dei Namespace
 
 Tutti i RelationManager devono seguire questa struttura di namespace:
@@ -106,6 +112,7 @@ public static function getRelations(): array
 5. Assicurarsi che le autorizzazioni siano configurate correttamente
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Documentazione Cross-Module
 
 ### Modulo SaluteMo
@@ -132,3 +139,24 @@ public static function getRelations(): array
 - [Studio Model](/var/www/html/_bases/base_saluteora/laravel/Modules/SaluteOra/docs/models/studio.md)
 - [Doctor Model](/var/www/html/_bases/base_saluteora/laravel/Modules/SaluteOra/docs/models/doctor.md)
 >>>>>>> 2bcfd382 (fix Address)
+=======
+## Documentazione Cross-Module
+
+### Modulo SaluteMo
+- **[RelationManager SaluteMo](/var/www/html/base_saluteora/laravel/Modules/SaluteMo/docs/filament/relationmanagers.md)** - Implementazione completa per l'interfaccia amministrativa
+
+### Modulo SaluteOra (Corrente)
+- [Studio Model](/var/www/html/base_saluteora/laravel/Modules/SaluteOra/docs/models/studio.md)
+- [Doctor Model](/var/www/html/base_saluteora/laravel/Modules/SaluteOra/docs/models/doctor.md)
+- [DoctorStudio Pivot](/var/www/html/base_saluteora/laravel/Modules/SaluteOra/docs/models/doctor-studio.md)
+
+### Root Documentation  
+- [Cross-Module Relations](/var/www/html/base_saluteora/docs/cross-module-relations.md)
+- [Filament Best Practices](/var/www/html/base_saluteora/docs/filament_best_practices.md)
+
+---
+
+*Ultimo aggiornamento: Gennaio 2025*
+*Versione: 1.1*
+*Compatibilità: Laraxot SaluteOra, Filament 3.x*
+>>>>>>> 23f43388 (feat: add openingHoursField to studiorelationmanager of doctorresource)

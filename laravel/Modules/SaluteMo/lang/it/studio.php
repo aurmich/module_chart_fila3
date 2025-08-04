@@ -277,6 +277,9 @@ return array (
     ),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 23f43388 (feat: add openingHoursField to studiorelationmanager of doctorresource)
     'delete' => 
     array (
       'label' => 'delete',
@@ -301,6 +304,7 @@ return array (
     array (
       'label' => 'change-schedule',
     ),
+<<<<<<< HEAD
     'view' => 
     array (
       'label' => 'view',
@@ -328,6 +332,8 @@ return array (
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
 =======
 >>>>>>> 3ad9917a (- fix styles registration)
+=======
+>>>>>>> 23f43388 (feat: add openingHoursField to studiorelationmanager of doctorresource)
   ),
   'actions' => 
   array (

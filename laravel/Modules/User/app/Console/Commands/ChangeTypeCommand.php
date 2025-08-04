@@ -146,6 +146,7 @@ class ChangeTypeCommand extends Command
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @phpstan-ignore nullsafe.neverNull */
         $this->info("Current user type: {$user->type?->getLabel()}");
         
@@ -204,6 +205,16 @@ class ChangeTypeCommand extends Command
         $options = Arr::mapWithKeys($childTypes, function ($item, int|string $key) use ($typeClass) {
             $val = $typeClass::tryFrom((string) $key)?->getLabel();
             return [(string) $key => $val];
+=======
+        $this->info("Current user type: {$user->type?->getLabel()}");
+        
+        $typeClass = $xot->getUserChildTypeClass();
+        $options = Arr::mapWithKeys($childTypes, function ($item, int|string $key) use ($typeClass) {
+            //dddx($item->getLabel());
+            //$val = $typeClass::tryFrom((string) $key)?->getLabel();
+            //return [(string) $key => '['.$key.'] '.$val.''];
+            return[$item->value => $item->getLabel()];
+>>>>>>> 23f43388 (feat: add openingHoursField to studiorelationmanager of doctorresource)
         });
 
         $newType = select('Select new user type:', $options);

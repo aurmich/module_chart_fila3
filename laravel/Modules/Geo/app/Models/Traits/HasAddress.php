@@ -102,11 +102,15 @@ trait HasAddress
         if($address==null){
             return null;
         }
+<<<<<<< HEAD
         /** @phpstan-ignore method.notFound */
+=======
+>>>>>>> 23f43388 (feat: add openingHoursField to studiorelationmanager of doctorresource)
         $locality=$address->getLocality();
         if($locality==null){
             return null;
         }
+<<<<<<< HEAD
         /** @phpstan-ignore property.notFound, property.notFound */
         return $address->street_address.' '.$address->street_number.' '.implode('',$locality['cap']).' '.$locality['nome'].' ('.$locality['provincia']['nome'].') - '.$locality['regione']['nome'];
 =======
@@ -115,6 +119,9 @@ trait HasAddress
 =======
         return $address ? $address->getFullAddress() : null;
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+        return $address->street_address.' '.$address->street_number.' '.implode('',$locality['cap']).' '.$locality['nome'].' ('.$locality['provincia']['nome'].') - '.$locality['regione']['nome'];
+>>>>>>> 23f43388 (feat: add openingHoursField to studiorelationmanager of doctorresource)
     }
     
     /**

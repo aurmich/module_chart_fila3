@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\SaluteMo\Filament\Resources;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms;
 use Modules\SaluteOra\Models\Doctor;
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -12,6 +13,9 @@ use Modules\SaluteOra\Filament\Resources\DoctorResource as BaseDoctorResource;
 
 class DoctorResource extends BaseDoctorResource
 =======
+=======
+use Filament\Forms;
+>>>>>>> 23f43388 (feat: add openingHoursField to studiorelationmanager of doctorresource)
 use Modules\SaluteOra\Models\Doctor;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 //use Modules\SaluteOra\Filament\Resources\PatientResource as BasePatientResource;
@@ -31,7 +35,22 @@ class DoctorResource extends XotBaseResource
 
         // Aggiungi qui eventuali campi specifici per SaluteMo
         //return $schema;
-        return [];
+        return [
+        
+            'first_name' => Forms\Components\TextInput::make('first_name')
+                ->required()
+                ->maxLength(255)
+                ->autocomplete('given-name')
+                ,
+            'last_name' => Forms\Components\TextInput::make('last_name')
+                ->required()
+                ->maxLength(255)
+                ->autocomplete('family-name')
+                ,
+            'email' => Forms\Components\TextInput::make('email')
+                ->required()
+                ,
+        ];
     }
 >>>>>>> f3e4ec66 (.)
 }

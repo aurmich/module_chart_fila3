@@ -41,8 +41,12 @@ class ListStudios extends XotBaseListRecords
 =======
             'active' => Tables\Columns\IconColumn::make('active')
                 ->boolean(),
+<<<<<<< HEAD
             'full_address' => Tables\Columns\TextColumn::make('address')
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+            'full_address' => Tables\Columns\TextColumn::make('full_address')
+>>>>>>> 23f43388 (feat: add openingHoursField to studiorelationmanager of doctorresource)
                 ->searchable()
                 ->default(function($record){
                     $address = $record?->address()->first();

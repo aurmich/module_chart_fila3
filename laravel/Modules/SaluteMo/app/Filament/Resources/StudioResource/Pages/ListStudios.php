@@ -25,6 +25,7 @@ class ListStudios extends XotBaseListRecords
             'active' => Tables\Columns\IconColumn::make('active')
                 ->boolean(),
 <<<<<<< HEAD
+<<<<<<< HEAD
             'full_address' => Tables\Columns\TextColumn::make('full_address')
                 ->searchable()
                     ,
@@ -43,6 +44,11 @@ class ListStudios extends XotBaseListRecords
                     return $address->street_address.' '.$address->street_number.' '.implode('',$locality['cap']).' '.$locality['nome'].' ('.$locality['provincia']['nome'].') - '.$locality['regione']['nome'];
                 }),
 >>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
+=======
+            'full_address' => Tables\Columns\TextColumn::make('full_address')
+                ->searchable()
+                    ,
+>>>>>>> 23f43388 (feat: add openingHoursField to studiorelationmanager of doctorresource)
                 
             'name' => Tables\Columns\TextColumn::make('name')
                 ->searchable()
