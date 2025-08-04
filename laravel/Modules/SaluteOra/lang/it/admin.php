@@ -3,6 +3,7 @@
 return array (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   'model' => 
   array (
     'label' => 'Amministratore',
@@ -329,10 +330,13 @@ return array (
 >>>>>>> 3ad9917a (- fix styles registration)
 =======
   'navigation' => 
+=======
+  'navigation' =>
+>>>>>>> 2bcfd382 (fix Address)
   array (
-    'label' => 'admin.navigation',
-    'group' => 'admin.navigation',
-    'icon' => 'admin.navigation',
+    'label' => 'Segreteria',
+    'group' => 'Gestione Utenti',
+    'icon' => 'saluteora-admin',
     'sort' => 95,
 >>>>>>> a0fd0fbf (feat(i18n): add Italian language support for admin navigation and user registration)
   ),

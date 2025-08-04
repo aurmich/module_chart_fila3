@@ -385,6 +385,9 @@ class AppointmentLogger
 - [Implementazione del Calendario](calendar-date-picker-implementation.md)
 - [Best Practices per i Calendari](calendar-best-practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2bcfd382 (fix Address)
 - [Documentazione Filament](https://filamentphp.com/docs)
 
 ## [AGGIORNAMENTO 2024-06-XX] - Standardizzazione Traduzioni
@@ -448,6 +451,7 @@ return [
 Per dettagli sulle regole di traduzione, vedi anche:
 - [Lang/translation-standards.md](../../Lang/docs/translation-standards.md)
 - [Lang/translation_keys_best_practices.md](../../Lang/docs/translation_keys_best_practices.md)
+<<<<<<< HEAD
 - [SaluteOra/filament-best-practices.mdc](./filament-best-practices.mdc)
 
 ## [AGGIORNAMENTO 2024-06-XX] - Disponibilità solo su appointments
@@ -582,3 +586,6 @@ class DoctorAvailabilityCalendarWidget extends FullCalendarWidget
 =======
 - [Documentazione Filament](https://filamentphp.com/docs) 
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+- [SaluteOra/filament-best-practices.mdc](./filament-best-practices.mdc) 
+>>>>>>> 2bcfd382 (fix Address)

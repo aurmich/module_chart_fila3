@@ -561,7 +561,11 @@ class Address extends BaseModel
         return $query->where('type', $type instanceof AddressTypeEnum ? $type->value : $type);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+}
+>>>>>>> 2bcfd382 (fix Address)

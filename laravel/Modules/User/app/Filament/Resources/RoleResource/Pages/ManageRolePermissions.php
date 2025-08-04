@@ -15,10 +15,14 @@ use Modules\User\Filament\Resources\RoleResource;
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 =======
 use Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager;
 >>>>>>> 54f4fa16 (.)
+=======
+use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+>>>>>>> 2bcfd382 (fix Address)
 
 
 
@@ -40,6 +44,7 @@ class ManageRolePermissions extends ManageRelatedRecords
     public function getFormSchema(): array
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
     return [
@@ -51,13 +56,21 @@ class ManageRolePermissions extends ManageRelatedRecords
 =======
     
         
+=======
+
+
+>>>>>>> 2bcfd382 (fix Address)
     return [
-              
+
                 Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255),
+<<<<<<< HEAD
             
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 2bcfd382 (fix Address)
       ];
 }
 

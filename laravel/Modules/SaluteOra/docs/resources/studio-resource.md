@@ -29,10 +29,14 @@ La classe principale `StudioResource` estende `XotBaseResource` e implementa i s
 
 - `getFormSchema()`: Schema del form per la creazione e modifica degli studi
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `getTableColumns()`: Colonne da visualizzare nella lista degli studi (ora implementato in `ListStudios` come richiesto da XotBaseListRecords, array associativo con chiavi stringa, colonne ricavate dal modello e dalla migrazione)
 =======
 - `getListTableColumns()`: Colonne da visualizzare nella lista degli studi
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+- `getTableColumns()`: Colonne da visualizzare nella lista degli studi (ora implementato in `ListStudios` come richiesto da XotBaseListRecords, array associativo con chiavi stringa, colonne ricavate dal modello e dalla migrazione)
+>>>>>>> 2bcfd382 (fix Address)
 - `getListTableFilters()`: Filtri disponibili per la lista degli studi
 - `getListTableActions()`: Azioni disponibili nella lista degli studi
 
@@ -41,10 +45,14 @@ La classe principale `StudioResource` estende `XotBaseResource` e implementa i s
 La risorsa Studio implementa le seguenti pagine standard:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `ListStudios`: Visualizzazione e gestione dell'elenco degli studi. Implementa il metodo `getTableColumns()` secondo la policy aggiornata (vedi anche [Xot/docs/filament/listrecords.md](../../../Xot/docs/filament/listrecords.md)).
 =======
 - `ListStudios`: Visualizzazione e gestione dell'elenco degli studi
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+- `ListStudios`: Visualizzazione e gestione dell'elenco degli studi. Implementa il metodo `getTableColumns()` secondo la policy aggiornata (vedi anche [Xot/docs/filament/listrecords.md](../../../Xot/docs/filament/listrecords.md)).
+>>>>>>> 2bcfd382 (fix Address)
 - `CreateStudio`: Creazione di un nuovo studio
 - `EditStudio`: Modifica di uno studio esistente
 
@@ -112,6 +120,7 @@ La risorsa Studio implementa le seguenti funzionalità:
 La risorsa Studio mantiene relazioni con altre entità del sistema:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Doctors**: Relazione molti-a-molti con i dottori che lavorano nello studio (belongsToManyX)
 - **Appointments**: Relazione one-to-many con gli appuntamenti che si svolgono presso lo studio
 - **Addresses**: Relazione polimorfica con gli indirizzi associati allo studio
@@ -150,6 +159,40 @@ Per visualizzare e gestire i dottori che lavorano in uno studio e gli studi in c
 - **Addresses**: Relazione polimorfica con gli indirizzi associati allo studio
 
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+- **Doctors**: Relazione molti-a-molti con i dottori che lavorano nello studio (belongsToManyX)
+- **Appointments**: Relazione one-to-many con gli appuntamenti che si svolgono presso lo studio
+- **Addresses**: Relazione polimorfica con gli indirizzi associati allo studio
+
+## RelationManager: Associazione Dottori-Studi
+
+Per visualizzare e gestire i dottori che lavorano in uno studio e gli studi in cui lavora un dottore, sono implementati i RelationManager Filament:
+
+- **StudioResource/RelationManagers/DoctorsRelationManager.php**: mostra i dottori associati a uno studio (relazione molti-a-molti tramite belongsToManyX).
+- **DoctorResource/RelationManagers/StudiosRelationManager.php**: mostra gli studi associati a un dottore (relazione molti-a-molti tramite belongsToManyX).
+
+### Filosofia, logica e motivazione
+- La relazione molti-a-molti riflette la realtà sanitaria: un dottore può lavorare in più studi e uno studio può avere più dottori.
+- Si usa belongsToManyX per massima flessibilità, DRY, e per supportare pivot custom e policy multi-tenant.
+- La simmetria della relazione permette una gestione coerente, audit trail e policy di sicurezza centralizzate.
+- La documentazione e la struttura del codice sono pensate per essere zen, chiare e facilmente estendibili.
+
+### Best Practice
+- Seguire la struttura: ogni RelationManager in una sottocartella RelationManagers della rispettiva risorsa.
+- Usare sempre XotBaseRelationManager come classe base.
+- Le colonne della tabella devono essere coerenti con il modello e la migrazione.
+- Nessun uso di ->label(), solo traduzioni da file lang.
+- Documentare sempre la relazione e aggiornare la documentazione correlata.
+- Vedi anche: [Xot/docs/filament/listrecords.md](../../../Xot/docs/filament/listrecords.md)
+
+### Collegamenti
+- [Modello Studio](../../app/Models/Studio.php)
+- [Modello Doctor](../../app/Models/Doctor.php)
+- [Best Practices Filament](../filament-best-practices.mdc)
+- [README SaluteOra](../README.md)
+- [README Xot Filament](../../../Xot/docs/filament/README.md)
+
+>>>>>>> 2bcfd382 (fix Address)
 ## Best Practices
 
 Nell'implementazione di questa risorsa sono state seguite queste best practices:
@@ -174,6 +217,7 @@ Se una closure dichiarata come `fn (Studio $record): void => ...` restituisce un
 - Scrivere `->action(fn (Studio $record): void => $record->activate())` è errato se `activate()` restituisce qualcosa.
 
 ### Soluzione
+<<<<<<< HEAD
 <<<<<<< HEAD
 - Usare closure senza dichiarazione `: void`
 =======
@@ -240,3 +284,6 @@ La gestione degli indirizzi in StudioResource avviene tramite un repeater che ri
 - [../../Geo/docs/models/address.md](../../Geo/docs/models/address.md)
 - [../../Geo/docs/has-address-trait.md](../../Geo/docs/has-address-trait.md)
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+- Usare closure senza dichiarazione `: void`
+>>>>>>> 2bcfd382 (fix Address)

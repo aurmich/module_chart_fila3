@@ -18,15 +18,20 @@ use Filament\Infolists\Infolist;
 use Modules\User\Filament\Resources\BaseProfileResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 =======
 use Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager;
 >>>>>>> 54f4fa16 (.)
+=======
+use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+>>>>>>> 2bcfd382 (fix Address)
 
 class ViewProfile extends \Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord
 {
     protected static string $resource = BaseProfileResource::class;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -52,6 +57,13 @@ class ViewProfile extends \Modules\Xot\Filament\Resources\Pages\XotBaseViewRecor
 =======
     public function getInfolistSchema(): array 
 >>>>>>> 54f4fa16 (.)
+=======
+
+    /**
+     * @return array<string, \Filament\Infolists\Components\Component>
+     */
+    public function getInfolistSchema(): array
+>>>>>>> 2bcfd382 (fix Address)
     {
         return [
             'profile_info' => Components\Section::make()

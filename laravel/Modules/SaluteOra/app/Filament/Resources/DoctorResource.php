@@ -63,6 +63,7 @@ use Modules\SaluteOra\Models\Doctor;
 use Modules\SaluteOra\Models\DoctorRegistrationWorkflow;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\SaluteOra\Filament\Resources\DoctorResource\Pages;
+use Modules\SaluteOra\Filament\Resources\DoctorResource\RelationManagers;
 use Filament\Forms\Components\Grid;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\DatePicker;
@@ -90,6 +91,7 @@ use Illuminate\Support\Facades\Gate;
  */
 class DoctorResource extends XotBaseResource
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     protected static ?string $tenantOwnershipRelationshipName = 'studios';
     protected static bool $isTenantFilterable = true;
@@ -160,6 +162,27 @@ class DoctorResource extends XotBaseResource
 
 =======
     use HasRoles; // Aggiungo l'uso del trait HasRoles
+=======
+    /**
+     * Specifica la relazione da utilizzare per il multi-tenancy.
+     *
+     * Poiché la relazione effettiva è 'studios' (plurale) ma Filament cerca
+     * una relazione singolare 'studio', dobbiamo specificarla esplicitamente.
+     *
+     * @var string|null
+     */
+    protected static ?string $tenantOwnershipRelationshipName = 'studios';
+
+    /**
+     * Disabilitiamo il tenant filtering automatico di Filament poiché lo implementiamo manualmente.
+     * Questo è necessario per evitare conflitti nelle query cross-database.
+     *
+     * @var bool
+     */
+    protected static bool $isTenantFilterable = true;
+
+
+>>>>>>> 2bcfd382 (fix Address)
 
     protected static ?string $model = Doctor::class;
 
@@ -347,7 +370,7 @@ class DoctorResource extends XotBaseResource
                             ->placeholder(__('saluteora::doctor-resource.certifications')),
                     ]),
             ])
-            
+
             ->afterValidation(function (Forms\Set $set, Form $form) {
                 // Crea o recupera il workflow
                 $workflow = DoctorRegistrationWorkflow::firstOrCreate(
@@ -597,5 +620,15 @@ class DoctorResource extends XotBaseResource
         }
         abort(403, 'Link non valido o scaduto.');
 >>>>>>> 54f4fa16 (.)
+    }
+
+    /**
+     * @return array<class-string>
+     */
+    public static function getRelations(): array
+    {
+        return [
+            //RelationManagers\StudiosRelationManager::class,
+        ];
     }
 }

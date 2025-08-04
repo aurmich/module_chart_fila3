@@ -7,10 +7,14 @@ namespace Modules\User\Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Collection;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Enums\UserTypeEnum;
 =======
 use Modules\User\Enums\UserType;
 >>>>>>> 54f4fa16 (.)
+=======
+use Modules\User\Enums\UserTypeEnum;
+>>>>>>> 2bcfd382 (fix Address)
 use Modules\User\Models\Role;
 
 class RolesSeeder extends Seeder

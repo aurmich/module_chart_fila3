@@ -1,17 +1,26 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array (
   'navigation' => 
   array (
 <<<<<<< HEAD
     'label' => 'Disponibilità Medici',
     'group' => 'Agenda',
+=======
+return array (
+  'navigation' => 
+  array (
+    'label' => 'Disponibilità Medici',
+    'group' => 'Gestione',
+>>>>>>> 2bcfd382 (fix Address)
     'icon' => 'heroicon-o-calendar',
     'sort' => 6,
   ),
   'model' => 
   array (
+<<<<<<< HEAD
     'label' => 'Disponibilità Medico',
     'plural' => 'Disponibilità Medici',
   ),
@@ -160,3 +169,8 @@ return [
     ],
 ];
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+    'label' => 'doctor availability.model',
+  ),
+);
+>>>>>>> 2bcfd382 (fix Address)

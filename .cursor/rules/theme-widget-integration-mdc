@@ -28,6 +28,7 @@ I temi NON devono mai ricreare funzionalità esistenti nei moduli Filament. Devo
 @php
     $widgetClass = match (auth()->user()?->type) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         \Modules\<nome progetto>\Enums\UserTypeEnum::PATIENT =>
             \Modules\<nome progetto>\Filament\Widgets\PatientCalendarWidget::class,
         \Modules\<nome progetto>\Enums\UserTypeEnum::DOCTOR =>
@@ -36,10 +37,13 @@ I temi NON devono mai ricreare funzionalità esistenti nei moduli Filament. Devo
             \Modules\<nome progetto>\Filament\Widgets\AdminCalendarWidget::class,
 =======
         \Modules\SaluteOra\Enums\UserType::PATIENT =>
+=======
+        \Modules\SaluteOra\Enums\UserTypeEnum::PATIENT =>
+>>>>>>> 2bcfd382 (fix Address)
             \Modules\SaluteOra\Filament\Widgets\PatientCalendarWidget::class,
-        \Modules\SaluteOra\Enums\UserType::DOCTOR =>
+        \Modules\SaluteOra\Enums\UserTypeEnum::DOCTOR =>
             \Modules\SaluteOra\Filament\Widgets\DoctorCalendarWidget::class,
-        \Modules\SaluteOra\Enums\UserType::ADMIN =>
+        \Modules\SaluteOra\Enums\UserTypeEnum::ADMIN =>
             \Modules\SaluteOra\Filament\Widgets\AdminCalendarWidget::class,
 >>>>>>> 3b8e8240 (fix case cursor and windsurf)
         default => null

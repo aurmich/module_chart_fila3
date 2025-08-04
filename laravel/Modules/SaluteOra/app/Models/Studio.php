@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Spatie\Activitylog\LogOptions;
 use Modules\User\Models\BaseTenant;
@@ -24,13 +25,20 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 /**
  * Studio model for the SaluteOra module.
 =======
+=======
+use Spatie\Activitylog\LogOptions;
+use Modules\User\Models\BaseTenant;
+>>>>>>> 2bcfd382 (fix Address)
 use Filament\Models\Contracts\HasName;
 use Modules\SaluteOra\Models\BaseModel;
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\SoftDeletes;
+use Modules\User\Models\Traits\IsTenant;
+use Modules\Xot\Models\Traits\RelationX;
 use Modules\Geo\Models\Traits\HasAddress;
+use Modules\User\Contracts\TenantContract;
 use Spatie\Activitylog\Traits\LogsActivity;
-use Spatie\Activitylog\LogOptions;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 /**
  * Modello Studio per il sistema multi-tenant.
@@ -157,11 +165,13 @@ class Studio extends BaseTenant
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\SaluteOra\Models\Appointment> $appointments
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Geo\Models\Address> $addresses
  */
-class Studio extends BaseModel implements HasName
+class Studio extends BaseTenant
 {
     use LogsActivity;
     use HasAddress;
+    
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /** @var string */
     protected $connection = 'mysql';
@@ -169,6 +179,10 @@ class Studio extends BaseModel implements HasName
 =======
     // La connessione è già definita in BaseModel come 'salute_ora'
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+   /** @var string */
+   protected $connection = 'salute_ora';
+>>>>>>> 2bcfd382 (fix Address)
 
     /** @var string */
     protected $table = 'studios';
@@ -183,12 +197,16 @@ class Studio extends BaseModel implements HasName
     protected $fillable = [
         'name',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'address',
         'city',
         'postal_code',
 >>>>>>> 2099645a (.)
 =======
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+        'slug',
+>>>>>>> 2bcfd382 (fix Address)
         'phone',
         'email',
         'website',
@@ -219,6 +237,7 @@ class Studio extends BaseModel implements HasName
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /*
      * Implementazione del contratto HasName per Filament tenancy.
     
@@ -227,15 +246,24 @@ class Studio extends BaseModel implements HasName
      * Implementazione del contratto HasName per Filament tenancy.
      */
 >>>>>>> 2099645a (.)
+=======
+    /*
+     * Implementazione del contratto HasName per Filament tenancy.
+    
+>>>>>>> 2bcfd382 (fix Address)
     public function getFilamentName(): string
     {
         return $this->name;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     */
 =======
 
 >>>>>>> 2099645a (.)
+=======
+    */
+>>>>>>> 2bcfd382 (fix Address)
     /**
      * Configurazione per il logging delle attività.
      */
@@ -263,6 +291,9 @@ class Studio extends BaseModel implements HasName
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2bcfd382 (fix Address)
      * Relazione molti-a-molti con i dottori che lavorano nello studio.
      * 
      * IMPORTANTE: Questa è una relazione cross-database, dove:
@@ -271,6 +302,7 @@ class Studio extends BaseModel implements HasName
      * - doctor_studio (pivot) risiede nel database 'salute_ora'
      *
      * @return BelongsToMany
+<<<<<<< HEAD
      */
     public function doctors(): BelongsToMany
     {
@@ -279,11 +311,19 @@ class Studio extends BaseModel implements HasName
         return $this->belongsToManyX(Doctor::class);
 =======
      * Relazione con i dottori dello studio.
+=======
+>>>>>>> 2bcfd382 (fix Address)
      */
-    public function doctors(): HasMany
+    public function doctors(): BelongsToMany
     {
+<<<<<<< HEAD
         return $this->hasMany(Doctor::class, 'tenant_id');
 >>>>>>> 2099645a (.)
+=======
+        // Per una relazione cross-database, non possiamo usare belongsToManyX
+        // Dobbiamo specificare esplicitamente tutti i parametri
+        return $this->belongsToManyX(Doctor::class);
+>>>>>>> 2bcfd382 (fix Address)
     }
 
     /**

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Models;
 
+<<<<<<< HEAD
 
 use Carbon\Carbon;
 use Parental\HasParent;
@@ -17,13 +18,27 @@ use Safe\DateTime;
 /**
  * Modello pivot per la relazione many-to-many tra Doctor e Studio.
  * 
+=======
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Modules\SaluteOra\Models\BasePivot;
+
+/**
+ * Modello pivot per la relazione many-to-many tra Doctor e Studio.
+ *
+>>>>>>> 2bcfd382 (fix Address)
  * IMPORTANTE: Questa relazione attraversa database differenti:
  * - Doctor risiede nel database 'user'
  * - Studio risiede nel database 'salute_ora'
  * - DoctorStudio deve utilizzare la stessa connessione di Studio
+<<<<<<< HEAD
  * 
  * Estende BasePivot per garantire compatibilità con belongsToManyX e policy Xot.
  *
+=======
+ *
+ * Estende BasePivot per garantire compatibilità con belongsToManyX e policy Xot.
+ * 
+>>>>>>> 2bcfd382 (fix Address)
  * @property int $id
  * @property string $doctor_id
  * @property string $studio_id
@@ -37,6 +52,7 @@ use Safe\DateTime;
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * @property-read \Modules\SaluteOra\Models\Doctor $doctor
  * @property-read \Modules\SaluteOra\Models\Studio $studio
+<<<<<<< HEAD
  * @property string|null $type
  * @property string $user_id
  * @property-read \Modules\SaluteOra\Models\Profile|null $creator
@@ -70,6 +86,34 @@ class DoctorStudio extends StudioUser
     protected $fillable = [
         //'doctor_id',
         'id',
+=======
+ */
+class DoctorStudio extends BasePivot
+{
+    /**
+     * In questo caso specifico, dobbiamo dichiarare esplicitamente la tabella e la connection
+     * perché stiamo lavorando con una relazione cross-database.
+     * 
+     * @var string
+     */
+    protected $table = 'doctor_studio';
+    
+    /**
+     * La connection deve essere la stessa di Studio, non quella di Doctor.
+     * Questo è cruciale per relazioni cross-database.
+     *
+     * @var string
+     */
+    protected $connection = 'salute_ora';
+
+    /**
+     * Gli attributi che sono mass assignable.
+     *
+     * @var array<string>
+     */
+    protected $fillable = [
+        //'doctor_id',
+>>>>>>> 2bcfd382 (fix Address)
         'user_id',
         'studio_id',
         'schedule',
@@ -89,6 +133,7 @@ class DoctorStudio extends StudioUser
         ]);
     }
 
+<<<<<<< HEAD
 
     public function getOpeningHours(): OpeningHours
     {
@@ -233,3 +278,36 @@ class DoctorStudio extends StudioUser
     }
 }
 
+=======
+    /**
+     * Ottiene il dottore associato a questa relazione.
+     * Specifica esplicitamente la chiave esterna e la chiave primaria
+     * per gestire la relazione cross-database (DB user <-> DB salute_ora).
+     *
+     * @return BelongsTo<Doctor, DoctorStudio>
+     */
+    public function doctor(): BelongsTo
+    {
+        // Specificare esplicitamente la chiave esterna e la connection corretta
+        // perché questa relazione attraversa database differenti
+        return $this->belongsTo(
+            Doctor::class,
+            'doctor_id',
+            'id',
+            'doctor'
+        )->withoutGlobalScopes();
+    }
+
+    /**
+     * Ottiene lo studio associato a questa relazione.
+     * Questa relazione rimane nello stesso database.
+     *
+     * @return BelongsTo<Studio, DoctorStudio>
+     */
+    public function studio(): BelongsTo
+    {
+        // La relazione con Studio è nello stesso database, quindi è più semplice
+        return $this->belongsTo(Studio::class, 'studio_id', 'id', 'studio');
+    }
+}
+>>>>>>> 2bcfd382 (fix Address)

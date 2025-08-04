@@ -192,6 +192,9 @@ public function up(): void
 - [Single Table Inheritance](../SINGLE_TABLE_INHERITANCE.md)
 - [Best Practices per l'Ereditarietà](../INHERITANCE_BEST_PRACTICES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2bcfd382 (fix Address)
 
 ## Policy sulle migration XotBaseMigration
 
@@ -230,5 +233,8 @@ $this->tableUpdate(function (Blueprint $table): void {
     $this->updateTimestamps($table, true);
 });
 ```
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 2bcfd382 (fix Address)

@@ -60,6 +60,7 @@ class AdminResource extends XotBaseResource
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 =======
                 ->options(UserTypeEnum::class)
+                ->enum(UserTypeEnum::class)
                 ->required()
                 ->default(UserTypeEnum::ADMIN),
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)

@@ -92,6 +92,7 @@ return new class extends XotBaseMigration
             }
         );
     }
+<<<<<<< HEAD
 };
 =======
         if (!Schema::connection('mysql')->hasTable('studios')) {
@@ -140,3 +141,6 @@ return new class extends XotBaseMigration
 =======
 };
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+};
+>>>>>>> 2bcfd382 (fix Address)

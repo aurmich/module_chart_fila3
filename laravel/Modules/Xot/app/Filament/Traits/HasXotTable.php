@@ -152,6 +152,7 @@ trait HasXotTable
      * @return array<string, Tables\Columns\Column>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     abstract public function getTableColumns(): array;
     
 =======
@@ -160,6 +161,10 @@ trait HasXotTable
         return [];
     }
 >>>>>>> 54f4fa16 (.)
+=======
+    abstract public function getTableColumns(): array;
+    
+>>>>>>> 2bcfd382 (fix Address)
 
     /**
      * Get table filters form columns.

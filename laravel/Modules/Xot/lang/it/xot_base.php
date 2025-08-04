@@ -280,5 +280,21 @@ return array (
       'helper_text' => 'view',
 >>>>>>> 54f4fa16 (.)
     ),
+    'delete' => 
+    array (
+      'label' => 'delete',
+    ),
+    'edit' => 
+    array (
+      'label' => 'edit',
+    ),
+    'detach' => 
+    array (
+      'label' => 'detach',
+    ),
+    'attach' => 
+    array (
+      'label' => 'attach',
+    ),
   ),
 );

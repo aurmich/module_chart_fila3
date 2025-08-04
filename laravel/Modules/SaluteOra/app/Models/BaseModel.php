@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Traits\Updater;
 use Spatie\MediaLibrary\HasMedia;
 use Illuminate\Database\Eloquent\Model;
@@ -16,10 +17,19 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+=======
+>>>>>>> 2bcfd382 (fix Address)
 use Modules\Xot\Traits\Updater;
 use Spatie\MediaLibrary\HasMedia;
+use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Models\Traits\RelationX;
 use Spatie\MediaLibrary\InteractsWithMedia;
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+>>>>>>> 2bcfd382 (fix Address)
 
 /**
  * Class BaseModel.
@@ -31,9 +41,13 @@ abstract class BaseModel extends Model implements HasMedia
     use InteractsWithMedia;
     use Updater;
 <<<<<<< HEAD
+<<<<<<< HEAD
     use RelationX;
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+    use RelationX;
+>>>>>>> 2bcfd382 (fix Address)
 
     /**
      * Indicates whether attributes are snake cased on arrays.

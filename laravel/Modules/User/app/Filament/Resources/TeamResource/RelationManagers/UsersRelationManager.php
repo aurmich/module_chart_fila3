@@ -9,10 +9,14 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Modules\User\Filament\Resources\UserResource;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 =======
 use Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager;
 >>>>>>> 54f4fa16 (.)
+=======
+use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+>>>>>>> 2bcfd382 (fix Address)
 use Filament\Tables;
 
 class UsersRelationManager extends XotBaseRelationManager
@@ -35,10 +39,14 @@ class UsersRelationManager extends XotBaseRelationManager
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 2bcfd382 (fix Address)
     /**
      * @return array<string, \Filament\Tables\Actions\Action>
      */
@@ -49,10 +57,14 @@ class UsersRelationManager extends XotBaseRelationManager
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 2bcfd382 (fix Address)
     /**
      * @return array<string, \Filament\Tables\Actions\Action|\Filament\Tables\Actions\ActionGroup>
      */
@@ -66,10 +78,14 @@ class UsersRelationManager extends XotBaseRelationManager
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 2bcfd382 (fix Address)
     /**
      * @return array<string, \Filament\Tables\Actions\BulkAction>
      */

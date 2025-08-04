@@ -21,6 +21,7 @@ class EditDoctor extends XotBaseEditRecord
 {
     protected static string $resource = DoctorResource::class;
 
+<<<<<<< HEAD
     protected function getHeaderActions(): array
     {
         return [
@@ -28,4 +29,7 @@ class EditDoctor extends XotBaseEditRecord
         ];
     }
 >>>>>>> 54f4fa16 (.)
+=======
+   
+>>>>>>> 2bcfd382 (fix Address)
 }

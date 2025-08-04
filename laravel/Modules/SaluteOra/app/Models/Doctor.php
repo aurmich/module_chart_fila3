@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Parental\HasParent;
 use Modules\Geo\Models\Address;
 use Spatie\MediaLibrary\HasMedia;
@@ -195,9 +196,11 @@ class Doctor extends User implements HasMedia
     protected $fillable = [
         //'tenant_id',
 =======
+=======
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+>>>>>>> 2bcfd382 (fix Address)
 use Illuminate\Database\Eloquent\Relations\HasOne;
-use Illuminate\Database\Eloquent\SoftDeletes;
-use Modules\Tenant\Traits\BelongsToTenant;
+use Modules\SaluteOra\Models\DoctorStudio;
 use Parental\HasParent;
 
 /**
@@ -230,8 +233,6 @@ use Parental\HasParent;
 class Doctor extends User
 {
     use HasParent;
-    use SoftDeletes;
-    use BelongsToTenant;
 
     /**
      * Gli attributi che sono mass assignable.
@@ -410,18 +411,47 @@ class Doctor extends User
 >>>>>>> 54f4fa16 (.)
 =======
 
+
+
     /**
-     * Verifica se il dottore ha dati validi per la transizione di stato.
+     * Relazione molti-a-molti con gli studi in cui il dottore lavora.
      *
-     * @return bool
+     * IMPORTANTE: Questa è una relazione cross-database, dove:
+     * - Doctor risiede nel database 'user'
+     * - Studio risiede nel database 'salute_ora'
+     * - doctor_studio (pivot) risiede nel database 'saluteora_data'
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
-    public function hasValidData(): bool
+    public function studios(): BelongsToMany
     {
-        return parent::hasValidData() &&
-            !empty($this->first_name) &&
-            !empty($this->last_name) &&
-            !empty($this->registration_number) &&
-            !empty($this->specialization);
+        /*
+        // Utilizziamo parametri espliciti per la relazione cross-database
+        $pivot = \Modules\SaluteOra\Models\DoctorStudio::class;
+        $pivotModel = app($pivot);
+
+        // Definiamo esplicitamente le tabelle con le loro connessioni
+        $studioTable = 'salute_ora.studios'; // Specifichiamo esplicitamente il database
+        $pivotTable = $pivotModel->getConnection()->getDatabaseName() . '.' . $pivotModel->getTable();
+
+        return $this->belongsToMany(
+            \Modules\SaluteOra\Models\Studio::class,
+            $pivotTable,
+            'user_id',
+            'studio_id',
+            'id',
+            'id',
+            'studios'
+        )
+        ->using($pivot)
+        ->withPivot(['is_primary', 'schedule'])
+        ->withTimestamps();
+        */
+        return $this->belongsToManyX(Studio::class);
     }
+<<<<<<< HEAD
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+    // Implementazione della relazione BelongsToMany con Studio completata
+>>>>>>> 2bcfd382 (fix Address)
 }

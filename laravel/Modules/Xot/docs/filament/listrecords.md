@@ -1,11 +1,17 @@
 # List Records in Filament
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 > **AGGIORNAMENTO 2025-05-28:**
 > Questa policy è stata aggiornata e propagata anche in [SaluteOra/docs/resources/studio-resource.md](../../SaluteOra/docs/resources/studio-resource.md) e [SaluteOra/docs/README.md](../../SaluteOra/docs/README.md). Vedi esempi di implementazione e note di propagazione.
 
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+> **AGGIORNAMENTO 2025-05-28:**
+> Questa policy è stata aggiornata e propagata anche in [SaluteOra/docs/resources/studio-resource.md](../../SaluteOra/docs/resources/studio-resource.md) e [SaluteOra/docs/README.md](../../SaluteOra/docs/README.md). Vedi esempi di implementazione e note di propagazione.
+
+>>>>>>> 2bcfd382 (fix Address)
 ## Estensione Corretta
 
 ```php
@@ -193,6 +199,7 @@ Il metodo `getListTableColumns` è stato rinominato in `getTableColumns` per ade
 =======
 >>>>>>> 9df8f556 (fix .md)
 
+<<<<<<< HEAD
 ```php
 declare(strict_types=1);
 
@@ -293,3 +300,7 @@ class ListXXX extends XotBaseListRecords
 }
 ```
 >>>>>>> 54f4fa16 (.)
+=======
+## PROPAGAZIONE (2025-05-28):
+La pagina ListStudios del modulo SaluteOra implementa ora correttamente il metodo getTableColumns() secondo questa policy, con array associativo e chiavi stringa. Vedi esempio e dettagli in [SaluteOra/docs/resources/studio-resource.md](../../SaluteOra/docs/resources/studio-resource.md).
+>>>>>>> 2bcfd382 (fix Address)

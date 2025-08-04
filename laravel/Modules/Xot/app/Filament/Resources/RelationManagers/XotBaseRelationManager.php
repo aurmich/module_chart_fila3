@@ -54,6 +54,7 @@ abstract class XotBaseRelationManager extends RelationManager
     public function getFormSchema(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->getResource()::getFormSchema();
     }
 <<<<<<< HEAD
@@ -94,6 +95,9 @@ abstract class XotBaseRelationManager extends RelationManager
 >>>>>>> aurmich/dev
 =======
         return [];
+=======
+        return $this->getResource()::getFormSchema();
+>>>>>>> 2bcfd382 (fix Address)
     }
 
 >>>>>>> 54f4fa16 (.)
@@ -102,11 +106,16 @@ abstract class XotBaseRelationManager extends RelationManager
         return [
             Tables\Actions\EditAction::make(),
 <<<<<<< HEAD
+<<<<<<< HEAD
             //Tables\Actions\DeleteAction::make(),
             Tables\Actions\DetachAction::make(),
 =======
             Tables\Actions\DeleteAction::make(),
 >>>>>>> 54f4fa16 (.)
+=======
+            //Tables\Actions\DeleteAction::make(),
+            Tables\Actions\DetachAction::make(),
+>>>>>>> 2bcfd382 (fix Address)
         ];
     }
 
@@ -114,16 +123,22 @@ abstract class XotBaseRelationManager extends RelationManager
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             //Tables\Actions\DeleteBulkAction::make(),
             Tables\Actions\DetachBulkAction::make(),
 =======
             Tables\Actions\DeleteBulkAction::make(),
 >>>>>>> 54f4fa16 (.)
+=======
+            //Tables\Actions\DeleteBulkAction::make(),
+            Tables\Actions\DetachBulkAction::make(),
+>>>>>>> 2bcfd382 (fix Address)
         ];
     }
 
     public function getTableHeaderActions(): array
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         return [
             Tables\Actions\AttachAction::make(),
@@ -131,6 +146,11 @@ abstract class XotBaseRelationManager extends RelationManager
 =======
         return [];
 >>>>>>> 54f4fa16 (.)
+=======
+        return [
+            Tables\Actions\AttachAction::make(),
+        ];
+>>>>>>> 2bcfd382 (fix Address)
     }
 
     public function getTableFilters(): array

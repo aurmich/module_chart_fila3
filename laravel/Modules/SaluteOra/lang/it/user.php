@@ -15,14 +15,18 @@ return array (
     'name' =>
 =======
 return array (
-  'fields' => 
+  'fields' =>
   array (
-    'id' => 
+    'id' =>
     array (
       'label' => 'ID',
     ),
+<<<<<<< HEAD
     'name' => 
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+    'name' =>
+>>>>>>> 2bcfd382 (fix Address)
     array (
       'label' => 'Nome',
       'placeholder' => 'Inserisci il nome',
@@ -31,10 +35,14 @@ return array (
       'helper_text' => 'name',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
     'email' =>
 =======
     'email' => 
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+    'email' =>
+>>>>>>> 2bcfd382 (fix Address)
     array (
       'label' => 'Email',
       'placeholder' => 'Inserisci l\'email',
@@ -42,6 +50,7 @@ return array (
       'description' => 'email',
       'helper_text' => 'email',
     ),
+<<<<<<< HEAD
 <<<<<<< HEAD
     'type' =>
     array (
@@ -53,6 +62,12 @@ return array (
       'label' => 'Tipo',
       'options' => 
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+    'type' =>
+    array (
+      'label' => 'Tipo',
+      'options' =>
+>>>>>>> 2bcfd382 (fix Address)
       array (
         'patient' => 'Paziente',
         'doctor' => 'Dottore',
@@ -62,6 +77,7 @@ return array (
       'helper_text' => 'type',
       'placeholder' => 'type',
     ),
+<<<<<<< HEAD
 <<<<<<< HEAD
     'state' =>
     array (
@@ -73,6 +89,12 @@ return array (
       'label' => 'Stato',
       'options' => 
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+    'state' =>
+    array (
+      'label' => 'Stato',
+      'options' =>
+>>>>>>> 2bcfd382 (fix Address)
       array (
         'pending' => 'In attesa',
         'approved' => 'Approvato',
@@ -84,6 +106,7 @@ return array (
       'helper_text' => 'state',
       'placeholder' => 'state',
     ),
+<<<<<<< HEAD
 <<<<<<< HEAD
     'phone' =>
     array (
@@ -116,40 +139,48 @@ return array (
     'password' =>
 =======
     'phone' => 
+=======
+    'phone' =>
+>>>>>>> 2bcfd382 (fix Address)
     array (
       'label' => 'Telefono',
     ),
-    'address' => 
+    'address' =>
     array (
       'label' => 'Indirizzo',
     ),
-    'city' => 
+    'city' =>
     array (
       'label' => 'Città',
     ),
-    'registration_number' => 
+    'registration_number' =>
     array (
       'label' => 'Numero iscrizione',
     ),
-    'status' => 
+    'status' =>
     array (
       'label' => 'Status',
     ),
-    'certifications' => 
+    'certifications' =>
     array (
       'label' => 'Certificazioni',
     ),
-    'moderation_data' => 
+    'moderation_data' =>
     array (
       'label' => 'Dati moderazione',
     ),
+<<<<<<< HEAD
     'password' => 
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+    'password' =>
+>>>>>>> 2bcfd382 (fix Address)
     array (
       'label' => 'Password',
       'placeholder' => 'Inserisci la password',
       'tooltip' => 'Password dell\'utente',
     ),
+<<<<<<< HEAD
 <<<<<<< HEAD
     'password_confirmation' =>
     array (
@@ -166,24 +197,32 @@ return array (
     'roles' =>
 =======
     'password_confirmation' => 
+=======
+    'password_confirmation' =>
+>>>>>>> 2bcfd382 (fix Address)
     array (
       'label' => 'Conferma password',
     ),
-    'created_at' => 
+    'created_at' =>
     array (
       'label' => 'Data creazione',
     ),
-    'updated_at' => 
+    'updated_at' =>
     array (
       'label' => 'Data aggiornamento',
     ),
+<<<<<<< HEAD
     'roles' => 
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+    'roles' =>
+>>>>>>> 2bcfd382 (fix Address)
     array (
       'label' => 'Ruoli',
       'placeholder' => 'Seleziona i ruoli',
       'tooltip' => 'Ruoli assegnati all\'utente',
     ),
+<<<<<<< HEAD
 <<<<<<< HEAD
     'applyFilters' =>
     array (
@@ -435,17 +474,25 @@ return array (
     ),
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     'toggleColumns' => 
+=======
+    'applyFilters' =>
+    array (
+      'label' => 'applyFilters',
+    ),
+    'toggleColumns' =>
+>>>>>>> 2bcfd382 (fix Address)
     array (
       'label' => 'toggleColumns',
     ),
-    'reorderRecords' => 
+    'reorderRecords' =>
     array (
       'label' => 'reorderRecords',
     ),
-    'resetFilters' => 
+    'resetFilters' =>
     array (
       'label' => 'resetFilters',
     ),
+<<<<<<< HEAD
 <<<<<<< HEAD
     'applyFilters' => 
     array (
@@ -454,32 +501,36 @@ return array (
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     'openFilters' => 
+=======
+    'openFilters' =>
+>>>>>>> 2bcfd382 (fix Address)
     array (
       'label' => 'openFilters',
     ),
-    'last_name' => 
+    'last_name' =>
     array (
       'label' => 'last_name',
     ),
-    'first_name' => 
+    'first_name' =>
     array (
       'label' => 'first_name',
     ),
-    'edit_name' => 
+    'edit_name' =>
     array (
       'label' => 'edit_name',
     ),
-    'edit-name' => 
+    'edit-name' =>
     array (
       'label' => 'edit-name',
     ),
-    'name_edit' => 
+    'name_edit' =>
     array (
       'label' => 'name_edit',
     ),
   ),
-  'actions' => 
+  'actions' =>
   array (
+<<<<<<< HEAD
 <<<<<<< HEAD
     'create' => 
     array (
@@ -712,54 +763,57 @@ return [
 >>>>>>> 54f4fa16 (.)
 =======
     'approve' => 
+=======
+    'approve' =>
+>>>>>>> 2bcfd382 (fix Address)
     array (
       'label' => 'approve',
     ),
-    'reject' => 
+    'reject' =>
     array (
       'label' => 'reject',
     ),
     'request_integration' => 'Richiedi integrazione',
-    'reinstate' => 
+    'reinstate' =>
     array (
       'label' => 'reinstate',
     ),
-    'suspend' => 
+    'suspend' =>
     array (
       'label' => 'suspend',
     ),
-    'view' => 
+    'view' =>
     array (
       'label' => 'view',
     ),
-    'edit' => 
+    'edit' =>
     array (
       'label' => 'Modifica',
       'icon' => 'heroicon-o-pencil',
       'color' => 'primary',
     ),
-    'delete' => 
+    'delete' =>
     array (
       'label' => 'Elimina',
       'icon' => 'heroicon-o-trash',
       'color' => 'danger',
     ),
-    'create' => 
+    'create' =>
     array (
       'label' => 'create',
     ),
   ),
-  'navigation' => 
+  'navigation' =>
   array (
-    'label' => 'Utenti',
+    'label' => 'Utenti Generici',
     'group' => 'Gestione Utenti',
     'icon' => 'heroicon-o-user',
     'color' => 'primary',
     'sort' => 44,
   ),
-  'model' => 
+  'model' =>
   array (
-    'label' => 'user.model',
+    'label' => 'Utente',
   ),
 );
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)

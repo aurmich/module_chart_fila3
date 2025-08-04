@@ -17,10 +17,14 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Nwidart\Modules\Facades\Module;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 =======
 use Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager;
 >>>>>>> 54f4fa16 (.)
+=======
+use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+>>>>>>> 2bcfd382 (fix Address)
 
 class ListModules extends XotBaseListRecords
 {
@@ -84,10 +88,14 @@ class ListModules extends XotBaseListRecords
                 ,
             DeleteAction::make()
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
                 
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 2bcfd382 (fix Address)
                 ->requiresConfirmation(),
         ];
     }

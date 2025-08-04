@@ -5,9 +5,13 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Filament\Resources\StudioResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Tables;
 =======
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+use Filament\Tables;
+>>>>>>> 2bcfd382 (fix Address)
 use Modules\SaluteOra\Filament\Resources\StudioResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
@@ -15,6 +19,9 @@ class ListStudios extends XotBaseListRecords
 {
     protected static string $resource = StudioResource::class;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2bcfd382 (fix Address)
 
     /**
      * Get the table columns.
@@ -26,6 +33,7 @@ class ListStudios extends XotBaseListRecords
         return [
             'id' => Tables\Columns\TextColumn::make('id')
                 ->sortable(),
+<<<<<<< HEAD
             'active' => Tables\Columns\IconColumn::make('active')
                 ->boolean(),
             'full_address' => Tables\Columns\TextColumn::make('full_address')
@@ -41,6 +49,8 @@ class ListStudios extends XotBaseListRecords
                     }
                     return $address->street_address.' '.$address->street_number.' '.implode('',$locality['cap']).' '.$locality['nome'].' ('.$locality['provincia']['nome'].') - '.$locality['regione']['nome'];
                 }),
+=======
+>>>>>>> 2bcfd382 (fix Address)
                 
             'name' => Tables\Columns\TextColumn::make('name')
                 ->searchable()
@@ -58,6 +68,7 @@ class ListStudios extends XotBaseListRecords
                 
             'vat_number' => Tables\Columns\TextColumn::make('vat_number'),
                 
+<<<<<<< HEAD
             
             
             
@@ -67,3 +78,14 @@ class ListStudios extends XotBaseListRecords
 =======
 }
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+            'active' => Tables\Columns\IconColumn::make('active')
+                ->boolean(),
+                
+            'created_at' => Tables\Columns\TextColumn::make('created_at')
+                ->dateTime()
+                ->sortable(),
+        ];
+    }
+}
+>>>>>>> 2bcfd382 (fix Address)

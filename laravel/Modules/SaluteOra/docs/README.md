@@ -987,12 +987,16 @@ Tutte le viste, risorse Filament e API devono ora usare la relazione `addresses`
 ### Form Components Custom
 - [OpeningHoursField: gestione orari di apertura](form-components/opening-hours-field.md) - Campo custom Filament per orari di apertura, compatibile Spatie/opening-hours, UX avanzata
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2bcfd382 (fix Address)
 
 ## Aggiornamento 2025-05-28: Colonne tabella ListStudios
 
 La pagina ListStudios ora implementa correttamente il metodo getTableColumns() secondo la policy Xot (array associativo, chiavi stringa, colonne ricavate dal modello e dalla migrazione). Vedi:
 - [Xot/docs/filament/listrecords.md](../../Xot/docs/filament/listrecords.md)
 - [SaluteOra/docs/resources/studio-resource.md](./resources/studio-resource.md)
+<<<<<<< HEAD
 
 ## Widget Filament
 
@@ -1092,3 +1096,5 @@ class ModelPolicy extends XotBasePolicy
 >>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
 =======
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+>>>>>>> 2bcfd382 (fix Address)

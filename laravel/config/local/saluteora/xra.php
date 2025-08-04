@@ -15,6 +15,7 @@ return [
     'register_adm_theme' => false,
     'register_pub_theme' => true,
 <<<<<<< HEAD
+<<<<<<< HEAD
     'tenant_class' => 'Modules\SaluteOra\Models\Studio',
     'colors' => [
         'primary' => '#FF5F7E',
@@ -26,4 +27,7 @@ return [
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+    'tenant_class' => 'Modules\SaluteOra\Models\Studio',
+>>>>>>> 2bcfd382 (fix Address)
 ];

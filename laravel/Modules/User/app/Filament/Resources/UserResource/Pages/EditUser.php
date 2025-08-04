@@ -17,10 +17,14 @@ use Modules\User\Models\User;
 use Webmozart\Assert\Assert;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 =======
 use Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager;
 >>>>>>> 54f4fa16 (.)
+=======
+use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+>>>>>>> 2bcfd382 (fix Address)
 
 /**
  * Pagina per la modifica degli utenti con particolare gestione della password.
@@ -41,6 +45,7 @@ class EditUser extends EditRecord
         Assert::notNull($this->record);
         Assert::isInstanceOf($this->record, User::class);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         // Gestione sicura del tipo di password per evitare errori di cast
         $newPassword = $data['new_password'];
@@ -51,6 +56,12 @@ class EditUser extends EditRecord
         $newPassword = $data['new_password'];
         
 >>>>>>> 54f4fa16 (.)
+=======
+
+        // Gestione sicura del tipo di password per evitare errori di cast
+        $newPassword = $data['new_password'];
+
+>>>>>>> 2bcfd382 (fix Address)
         // Verifichiamo il tipo e convertiamo in modo sicuro
         if (!is_string($newPassword)) {
             if (!is_scalar($newPassword)) {
@@ -59,10 +70,14 @@ class EditUser extends EditRecord
             $newPassword = (string) $newPassword;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 2bcfd382 (fix Address)
         $this->record->update(['password' => Hash::make($newPassword)]);
         return $data;
     }

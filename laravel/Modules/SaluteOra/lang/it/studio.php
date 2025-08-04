@@ -65,9 +65,9 @@ return array (
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
   'single' => 'Studio',
   'plural' => 'Studi',
-  'fields' => 
+  'fields' =>
   array (
-    'name' => 
+    'name' =>
     array (
 <<<<<<< HEAD
       'label' => 'nome studio',
@@ -129,7 +129,7 @@ return array (
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     'city' => 'Città',
     'postal_code' => 'CAP',
-    'phone' => 
+    'phone' =>
     array (
       'label' => 'phone',
       'placeholder' => 'phone',
@@ -262,14 +262,14 @@ return array (
       'helper_text' => 'phone',
       'description' => 'phone',
     ),
-    'email' => 
+    'email' =>
     array (
       'label' => 'email',
       'placeholder' => 'email',
       'helper_text' => 'email',
       'description' => 'email',
     ),
-    'website' => 
+    'website' =>
     array (
       'description' => 'website',
       'helper_text' => 'website',
@@ -277,7 +277,7 @@ return array (
       'placeholder' => 'website',
       'label' => 'website',
     ),
-    'registration_number' => 
+    'registration_number' =>
     array (
       'description' => 'registration_number',
 <<<<<<< HEAD
@@ -288,7 +288,7 @@ return array (
       'placeholder' => 'registration_number',
       'label' => 'registration_number',
     ),
-    'vat_number' => 
+    'vat_number' =>
     array (
       'description' => 'vat_number',
 <<<<<<< HEAD
@@ -299,7 +299,7 @@ return array (
       'placeholder' => 'vat_number',
       'label' => 'vat_number',
     ),
-    'description' => 
+    'description' =>
     array (
       'description' => 'description',
 <<<<<<< HEAD
@@ -312,9 +312,10 @@ return array (
     ),
     'opening_hours' => 'Orari di apertura',
     'services' => 'Servizi',
-    'active' => 
+    'active' =>
     array (
       'description' => 'active',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'label' => 'active',
     ),
@@ -326,23 +327,32 @@ return array (
     ),
     'created_at' => 'Creato il',
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+      'label' => 'active',
+    ),
+    'created_at' =>
+    array (
+      'label' => 'created_at',
+    ),
+>>>>>>> 2bcfd382 (fix Address)
     'updated_at' => 'Aggiornato il',
     'deleted_at' => 'Eliminato il',
-    'resetFilters' => 
+    'resetFilters' =>
     array (
       'label' => 'resetFilters',
     ),
-    'addresses' => 
+    'addresses' =>
     array (
       'description' => 'addresses',
       'helper_text' => 'addresses',
       'placeholder' => 'addresses',
       'label' => 'addresses',
     ),
-    'applyFilters' => 
+    'applyFilters' =>
     array (
       'label' => 'applyFilters',
     ),
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -558,21 +568,44 @@ return array (
 =======
 =======
 >>>>>>> a872e835 (✨ (AddressResource.php): replace locality text input with a searchable select)
+=======
+    'toggleColumns' =>
+    array (
+      'label' => 'toggleColumns',
+    ),
+    'reorderRecords' =>
+    array (
+      'label' => 'reorderRecords',
+    ),
+    'openFilters' =>
+    array (
+      'label' => 'openFilters',
+    ),
+    'id' =>
+    array (
+      'label' => 'id',
+    ),
+    'attach' =>
+    array (
+      'label' => 'attach',
+    ),
+>>>>>>> 2bcfd382 (fix Address)
   ),
-  'actions' => 
+  'actions' =>
   array (
     'activate' => 'Attiva',
     'deactivate' => 'Disattiva',
   ),
-  'messages' => 
+  'messages' =>
   array (
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
     'activated' => 'Studio attivato con successo.',
     'deactivated' => 'Studio disattivato con successo.',
   ),
-  'navigation' => 
+  'navigation' =>
   array (
     'sort' => 18,
+<<<<<<< HEAD
 <<<<<<< HEAD
     'label' => 'Studi',
     'icon' => 'saluteora-studio',
@@ -586,10 +619,19 @@ return array (
     'label' => 'studio.navigation',
     'icon' => 'studio.navigation',
     'group' => 'studio.navigation',
+=======
+    'label' => 'Studi',
+    'icon' => 'saluteora-studio',
+    'group' => 'Gestione Studi',
+>>>>>>> 2bcfd382 (fix Address)
   ),
-  'model' => 
+  'model' =>
   array (
+<<<<<<< HEAD
     'label' => 'studio.model',
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+    'label' => 'Studio',
+>>>>>>> 2bcfd382 (fix Address)
   ),
 );

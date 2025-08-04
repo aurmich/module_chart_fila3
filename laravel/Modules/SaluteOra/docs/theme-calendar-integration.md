@@ -79,6 +79,7 @@ Il componente tema deve:
         
         match ($user->type) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             \Modules\SaluteOra\Enums\UserTypeEnum::PATIENT => [
                 $widgetClass = \Modules\SaluteOra\Filament\Widgets\PatientCalendarWidget::class,
                 $canView = true
@@ -90,15 +91,22 @@ Il componente tema deve:
             \Modules\SaluteOra\Enums\UserTypeEnum::ADMIN => [
 =======
             \Modules\SaluteOra\Enums\UserType::PATIENT => [
+=======
+            \Modules\SaluteOra\Enums\UserTypeEnum::PATIENT => [
+>>>>>>> 2bcfd382 (fix Address)
                 $widgetClass = \Modules\SaluteOra\Filament\Widgets\PatientCalendarWidget::class,
                 $canView = true
             ],
-            \Modules\SaluteOra\Enums\UserType::DOCTOR => [
+            \Modules\SaluteOra\Enums\UserTypeEnum::DOCTOR => [
                 $widgetClass = \Modules\SaluteOra\Filament\Widgets\DoctorCalendarWidget::class,
                 $canView = \Filament\Facades\Filament::getTenant() !== null
             ],
+<<<<<<< HEAD
             \Modules\SaluteOra\Enums\UserType::ADMIN => [
 >>>>>>> 2099645a (.)
+=======
+            \Modules\SaluteOra\Enums\UserTypeEnum::ADMIN => [
+>>>>>>> 2bcfd382 (fix Address)
                 $widgetClass = \Modules\SaluteOra\Filament\Widgets\AdminCalendarWidget::class,
                 $canView = true
             ],

@@ -2,7 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\SaluteOra\Http\Middleware;
+=======
+namespace Modules\SaluteOra\app\Http\Middleware;
+>>>>>>> 2bcfd382 (fix Address)
 
 use Filament\Facades\Filament;
 use Filament\Http\Middleware\IdentifyTenant;
@@ -49,7 +53,11 @@ class CrossDatabaseTenantMiddleware extends IdentifyTenant
 
     /**
      * Registra uno scope personalizzato per gestire correttamente le query cross-database
+<<<<<<< HEAD
      *
+=======
+     * 
+>>>>>>> 2bcfd382 (fix Address)
      * @param Model $tenant Il tenant corrente
      * @return void
      */
@@ -75,7 +83,11 @@ class CrossDatabaseTenantMiddleware extends IdentifyTenant
             public function apply(Builder $builder, Model $model): void
             {
                 $relationshipName = $this->getOwnershipRelationship($model);
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> 2bcfd382 (fix Address)
                 if (empty($relationshipName) || !method_exists($model, $relationshipName)) {
                     return;
                 }
@@ -93,8 +105,13 @@ class CrossDatabaseTenantMiddleware extends IdentifyTenant
                         ->from(DB::raw($tenantTable))
                         ->join(
                             'saluteora_data.doctor_studio',
+<<<<<<< HEAD
                             $tenantTable . '.id',
                             '=',
+=======
+                            $tenantTable . '.id', 
+                            '=', 
+>>>>>>> 2bcfd382 (fix Address)
                             'saluteora_data.doctor_studio.studio_id'
                         )
                         ->whereColumn(
@@ -109,6 +126,7 @@ class CrossDatabaseTenantMiddleware extends IdentifyTenant
             protected function getOwnershipRelationship(Model $model): ?string
             {
                 $resource = Filament::getResourceForModel($model::class);
+<<<<<<< HEAD
 
                 if ($resource === null) {
                     return null;
@@ -118,6 +136,17 @@ class CrossDatabaseTenantMiddleware extends IdentifyTenant
                     return $resource::$tenantOwnershipRelationshipName;
                 }
 
+=======
+                
+                if ($resource === null) {
+                    return null;
+                }
+                
+                if (property_exists($resource, 'tenantOwnershipRelationshipName')) {
+                    return $resource::$tenantOwnershipRelationshipName;
+                }
+                
+>>>>>>> 2bcfd382 (fix Address)
                 return (string) str($this->tenantModel)
                     ->classBasename()
                     ->pluralStudly()
@@ -130,7 +159,11 @@ class CrossDatabaseTenantMiddleware extends IdentifyTenant
 
     /**
      * Risolve il tenant dalla richiesta
+<<<<<<< HEAD
      *
+=======
+     * 
+>>>>>>> 2bcfd382 (fix Address)
      * @param \Illuminate\Http\Request $request
      * @return Model|null
      */

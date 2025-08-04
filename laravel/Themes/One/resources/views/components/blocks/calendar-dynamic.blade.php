@@ -21,10 +21,14 @@
 
 @php
 <<<<<<< HEAD
+<<<<<<< HEAD
     use Modules\SaluteOra\Enums\UserTypeEnum;
 =======
     use Modules\SaluteOra\Enums\UserType;
 >>>>>>> 2099645a (.)
+=======
+    use Modules\SaluteOra\Enums\UserTypeEnum;
+>>>>>>> 2bcfd382 (fix Address)
     use Modules\SaluteOra\Filament\Widgets\PatientCalendarWidget;
     use Modules\SaluteOra\Filament\Widgets\DoctorCalendarWidget;
     use Modules\SaluteOra\Filament\Widgets\AdminCalendarWidget;

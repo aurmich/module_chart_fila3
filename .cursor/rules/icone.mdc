@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # Regole Icone SVG Custom (<nome progetto>, cursor)
 
 ## Regole fondamentali
@@ -31,3 +32,5 @@ alwaysApply: false
 
 ## Collegamenti
 - [<nome progetto>/docs/icone.mdc](../../laravel/Modules/<nome progetto>/docs/icone.mdc)
+=======
+>>>>>>> 2bcfd382 (fix Address)

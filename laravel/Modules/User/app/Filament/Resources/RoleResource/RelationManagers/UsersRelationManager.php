@@ -12,10 +12,14 @@ use Filament\Tables\Filters\Filter;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\UI\Enums\TableLayoutEnum;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 =======
 use Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager;
 >>>>>>> 54f4fa16 (.)
+=======
+use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+>>>>>>> 2bcfd382 (fix Address)
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\Filament\Traits\TransTrait;
 
@@ -36,14 +40,19 @@ use Modules\Xot\Filament\Traits\TransTrait;
 final class UsersRelationManager extends XotBaseRelationManager
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 2bcfd382 (fix Address)
     protected static string $relationship = 'users';
 
     protected static ?string $inverseRelationship = 'roles';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -53,6 +62,11 @@ final class UsersRelationManager extends XotBaseRelationManager
 
     
 >>>>>>> 54f4fa16 (.)
+=======
+
+
+
+>>>>>>> 2bcfd382 (fix Address)
 
 
     /**
@@ -133,6 +147,7 @@ final class UsersRelationManager extends XotBaseRelationManager
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -140,9 +155,16 @@ final class UsersRelationManager extends XotBaseRelationManager
 
 =======
     
+=======
+>>>>>>> 2bcfd382 (fix Address)
 
-   
 
+<<<<<<< HEAD
    
 >>>>>>> 54f4fa16 (.)
+=======
+
+
+
+>>>>>>> 2bcfd382 (fix Address)
 }

@@ -234,6 +234,9 @@ class Doctor extends User {
 Motivazione: evitare ridondanza, warning, confusione e problemi di override.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2bcfd382 (fix Address)
 ## RelationManager in Filament
 
 Entrambi i RelationManager (StudioResource/DoctorsRelationManager e DoctorResource/StudiosRelationManager) devono implementare AttachAction personalizzato per la gestione cross-db, con query manuali e connessione esplicita tramite on().
@@ -403,6 +406,9 @@ class DoctorStudio extends BasePivot
 }
 ```
 
+<<<<<<< HEAD
 =======
 >>>>>>> bead9c28 (fix case)
+=======
+>>>>>>> 2bcfd382 (fix Address)
 ---

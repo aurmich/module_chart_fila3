@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description:
 globs:
 alwaysApply: true
@@ -11,14 +12,16 @@ Le classi che estendono \Modules\Xot\Filament\Resources\Pages\XotBaseListRecords
 =======
 description: >
   Regola fondamentale per la correzione degli errori e la propagazione delle best practice nei moduli Laravel/Filament/Xot.
+=======
+description:
+>>>>>>> 2bcfd382 (fix Address)
 globs:
-  - '**/*.php'
-  - 'laravel/Modules/*/app/Filament/**/*.php'
-  - 'laravel/Modules/*/lang/*/*.php'
 alwaysApply: true
 ---
-# Correzione errori, documentazione e propagazione
+Ultimo aggiornamento: 2025-05-27
+Responsabile: Cascade AI
 
+<<<<<<< HEAD
 ## Procedura obbligatoria
 1. Prima di correggere un errore, comprendi a fondo la causa leggendo tutto il codice e tutte le cartelle docs coinvolte (mai solo la root, sempre la cartella docs più vicina).
 2. Aggiorna la documentazione nella cartella docs del modulo coinvolto, crea collegamenti bidirezionali ai file docs principali (es. Xot/docs, Cms/docs).
@@ -41,6 +44,9 @@ alwaysApply: true
 - Aggiorna anche questa regola in `.cursor/rules/correzioni-e-propagazione.mdc`.
 - Aggiorna le tue memories interne e la knowledge base.
 >>>>>>> 9bb1b9f9 (feat: add new rules and documentation for implementing wizards in SaluteOra to enhance code quality and maintainability)
+=======
+Le classi che estendono \Modules\Xot\Filament\Resources\Pages\XotBaseListRecords devono avere il metodo getTableColumns() che restituisce un array associativo con chiavi stringa, colonne ricavate dal modello o dalla migrazione. Policy aggiornata e propagata in [Xot/docs/filament/listrecords.md](mdc:../../laravel/Modules/Xot/docs/filament/listrecords.md) e [SaluteOra/docs/resources/studio-resource.md](mdc:../../laravel/Modules/SaluteOra/docs/resources/studio-resource.md).
+>>>>>>> 2bcfd382 (fix Address)
 
 ---
 Ultimo aggiornamento: 2025-05-27

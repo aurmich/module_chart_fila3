@@ -11,9 +11,13 @@ class DoctorAvailabilityResource extends XotBaseResource
 {
     protected static ?string $model = DoctorAvailability::class;
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected static bool $shouldRegisterNavigation = false;
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+    protected static bool $shouldRegisterNavigation = false;
+>>>>>>> 2bcfd382 (fix Address)
 
     public static function getFormSchema(): array
     {

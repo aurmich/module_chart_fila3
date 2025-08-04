@@ -28,6 +28,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
     use HasXotTable;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /*
      * Get the table columns.
      *
@@ -46,6 +47,15 @@ abstract class XotBaseListRecords extends FilamentListRecords
         return [];
     }
 >>>>>>> 54f4fa16 (.)
+=======
+    /*
+     * Get the table columns.
+     *
+     * @return array<string, Tables\Columns\Column>
+     
+    abstract public function getTableColumns(): array;
+    */
+>>>>>>> 2bcfd382 (fix Address)
 
     
     /**
@@ -101,6 +111,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** 
      * Paginate the table query.
     */
@@ -111,6 +122,12 @@ abstract class XotBaseListRecords extends FilamentListRecords
      */
     protected function paginateTableQuery(Builder $query): Paginator
 >>>>>>> 54f4fa16 (.)
+=======
+    /** 
+     * Paginate the table query.
+    */
+    protected function paginateTableQueryTMP(Builder $query): Paginator
+>>>>>>> 2bcfd382 (fix Address)
     {
         return $query->fastPaginate(
             ('all' === $this->getTableRecordsPerPage()) 

@@ -34,6 +34,7 @@ use Modules\SaluteOra\Models\Studio;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\SaluteOra\Filament\Resources\StudioResource\Pages;
+use Modules\SaluteOra\Filament\Resources\StudioResource\RelationManagers;
 use Modules\Geo\Models\Address;
 use Modules\Geo\Filament\Resources\AddressResource;
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
@@ -128,7 +129,7 @@ class StudioResource extends XotBaseResource
 
             'services' => Forms\Components\TagsInput::make('services')
                 ->columnSpanFull(),
-            
+
             'active' => Forms\Components\Toggle::make('active')
                 ->default(true),
             */
@@ -146,6 +147,7 @@ class StudioResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     public static function getListTableColumns(): array
     {
@@ -309,4 +311,7 @@ class StudioResource extends XotBaseResource
 =======
     
 >>>>>>> a872e835 (✨ (AddressResource.php): replace locality text input with a searchable select)
+=======
+   
+>>>>>>> 2bcfd382 (fix Address)
 }
