@@ -706,3 +706,5 @@ Questo documento serve come indice principale per tutte le roadmap del progetto 
 * [roadmap.md](../laravel/Themes/One/docs/roadmap.md)
 >>>>>>> 54f4fa16 (.)
 
+- [Documentazione modulo Tenant](../laravel/Modules/Tenant/docs/README.md)
+
