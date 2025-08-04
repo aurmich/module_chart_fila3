@@ -172,7 +172,6 @@ class RegistrationWidget extends XotBaseWidget
         */
         $data = array_merge($data,parent::getFormFill() );
         $data['type'] = $this->type;
-        
         return $data;
     }
 

@@ -6,6 +6,9 @@ namespace Modules\Xot\Filament\Widgets;
 
 use Filament\Forms;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 17b35338 (add doctor-register-integration-completed  page)
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Filament\Actions\Action;
@@ -150,7 +153,10 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
                 //dddx($model->getArrayableRelations());
                 $res= $model->toArray();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 
+=======
+>>>>>>> 17b35338 (add doctor-register-integration-completed  page)
                 if(method_exists($model,'getDataDefaults')){
                     $defaults=$model->getDataDefaults();
                     $merge1=array_merge($defaults,$res);
@@ -163,8 +169,11 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
                     $res=$merge1;
                 }
                 
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 17b35338 (add doctor-register-integration-completed  page)
                 return $res;
                 //dddx($model->with('studio')->relationsToArray());
                 

@@ -48,6 +48,7 @@ class RegisterAction
     public function execute(UserContract $record,array $data): Doctor
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if(!isset($data['name']) && isset($data['email']) && is_string($data['email'])){
             $data['name']=Str::of($data['email'])->before('@')->append('-')->append(Str::random(3))->toString();
 =======
@@ -55,6 +56,9 @@ class RegisterAction
             unset($data['studio']);
 >>>>>>> aurmich/dev
         }
+=======
+        
+>>>>>>> 17b35338 (add doctor-register-integration-completed  page)
         if(isset($data['id'])){
             $doctor = $record;
             $doctor->update($data);
