@@ -4,6 +4,9 @@ globs:
 alwaysApply: false
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 513a7c7b (📝 (mdc files): add comprehensive documentation for various patterns to improve maintainability and consistency across modules)
 # Regola Cursor - RadioCardSelector Pattern
 
 ## Ambito
@@ -187,5 +190,8 @@ RadioCardSelector::make('property_id')
 
 ## Ultimo aggiornamento
 Gennaio 2025 - Pattern consolidato e production-ready
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 513a7c7b (📝 (mdc files): add comprehensive documentation for various patterns to improve maintainability and consistency across modules)
