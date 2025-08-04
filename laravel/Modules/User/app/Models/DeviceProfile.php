@@ -22,6 +22,9 @@ namespace Modules\User\Models;
  * DeviceProfile Model
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
  *
+ * Represents the relationship between a device and a user profile.
+ * Extends the base DeviceUser model to add specific functionality.
+ *
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property Device|null $device
  * @property \Modules\Xot\Contracts\ProfileContract|null $profile
@@ -74,5 +77,14 @@ class DeviceProfile extends DeviceUser {
 =======
 class DeviceProfile extends DeviceUser
 {
+    /**
+     * Create a new model instance.
+     *
+     * @param array<string, mixed> $attributes
+     */
+    public function __construct(array $attributes = [])
+    {
+        parent::__construct($attributes);
+    }
 }
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)

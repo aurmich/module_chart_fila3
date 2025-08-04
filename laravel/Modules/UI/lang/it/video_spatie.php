@@ -7,11 +7,17 @@ return array (
     array (
       'label' => 'img_uuid',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'img_uuid',
       'helper_text' => 'img_uuid',
       'placeholder' => 'img_uuid',
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+      'description' => 'img_uuid',
+      'helper_text' => 'img_uuid',
+      'placeholder' => 'img_uuid',
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
     ),
     'video' => 
     array (

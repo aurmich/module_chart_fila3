@@ -11,17 +11,23 @@ return [
         'or' => 'or',
         'create_account' => 'create an account',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'link' => 'Sign in',
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
     ],
     'register' => [
         'title' => 'Register',
         'submit' => 'Register',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'link' => 'Register',
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
     ],
     'logout' => [
         'title' => 'Logout',
@@ -37,6 +43,7 @@ return [
     ],
     'failed' => 'These credentials do not match our records.',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
+<<<<<<< HEAD
 <<<<<<< HEAD
     'profile' => [
         'title' => 'Profile',
@@ -67,4 +74,6 @@ return [
     ],
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
 ];

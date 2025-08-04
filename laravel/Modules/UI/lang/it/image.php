@@ -44,21 +44,33 @@ return array (
     array (
       'label' => 'url',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'url',
       'helper_text' => 'url',
       'placeholder' => 'url',
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+      'description' => 'url',
+      'helper_text' => 'url',
+      'placeholder' => 'url',
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
     ),
     'image' => 
     array (
       'label' => 'image',
+<<<<<<< HEAD
 <<<<<<< HEAD
       'description' => 'image',
       'helper_text' => 'image',
       'placeholder' => 'image',
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+      'description' => 'image',
+      'helper_text' => 'image',
+      'placeholder' => 'image',
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
     ),
   ),
 );

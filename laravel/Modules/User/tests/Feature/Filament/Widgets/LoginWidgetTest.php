@@ -3,18 +3,25 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Form;
 =======
+=======
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
 namespace Modules\User\Tests\Feature\Filament\Widgets;
 
 use Filament\Forms\Form;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
 use Modules\User\Filament\Widgets\LoginWidget;
 use Modules\User\Models\User;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use function Pest\Laravel\assertAuthenticatedAs;
 =======
@@ -90,6 +97,10 @@ test('it requires email and password', function (): void {
         ->toThrow(ValidationException::class);
 });
 =======
+=======
+use Tests\TestCase;
+
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
 class LoginWidgetTest extends TestCase
 {
     use RefreshDatabase;
@@ -125,11 +136,14 @@ class LoginWidgetTest extends TestCase
     /** @test */
     public function it_can_authenticate_user()
     {
+<<<<<<< HEAD
         // Skip if we can't use the database
         if (!class_exists('CreateUsersTable')) {
             $this->markTestSkipped('Database not available for testing');
             return;
         }
+=======
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
         $user = User::factory()->create([
             'email' => 'test@example.com',
             'password' => Hash::make('password123'),
@@ -172,4 +186,7 @@ class LoginWidgetTest extends TestCase
         $this->widget->save();
     }
 }
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> fb6fbaa2 (move resources/lang to lang)

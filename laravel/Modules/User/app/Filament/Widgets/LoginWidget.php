@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Exception;
 <<<<<<< HEAD
 use Illuminate\Support\Arr;
@@ -23,18 +24,25 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 =======
+=======
+use Exception;
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
-use Filament\Forms\Form;
+use Filament\Forms\Form as FilamentForm;
+use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
+<<<<<<< HEAD
 use Exception;
 use Illuminate\Http\RedirectResponse;
 use Livewire\Attributes\Layout;
 use Filament\Forms\Components\TextInput as FormsTextInput;
 use Filament\Forms\Components\Checkbox as FormsCheckbox;
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
 
 /**
  * LoginWidget: Widget di login conforme alle regole Windsurf/Xot.
@@ -123,6 +131,11 @@ class LoginWidget extends XotBaseWidget
     public ?array $data = [];
 
     /**
+     * @var \Filament\Forms\Form
+     */
+    public ?\Filament\Forms\Form $form = null;
+
+    /**
      * Inizializza il widget quando viene montato.
 <<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
@@ -133,8 +146,10 @@ class LoginWidget extends XotBaseWidget
      */
     public function mount(): void
     {
+        $this->form = $this->makeForm();
         $this->form->fill();
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
     
     /**
@@ -143,15 +158,23 @@ class LoginWidget extends XotBaseWidget
      * @return array<int, \Filament\Forms\Components\Component>
 =======
 
+=======
+    
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
     /**
-     * Definisce lo schema del form di login.
+     * Get the form schema for the login form.
      *
+<<<<<<< HEAD
      * @return array<string, \Filament\Forms\Components\Component>
 >>>>>>> 54f4fa16 (.)
+=======
+     * @return array<int, \Filament\Forms\Components\Component>
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
      */
     public function getFormSchema(): array
     {
         return [
+<<<<<<< HEAD
 <<<<<<< HEAD
             TextInput::make('email')
                 ->email()
@@ -209,20 +232,48 @@ class LoginWidget extends XotBaseWidget
      */
 =======
             'email' => TextInput::make('email')
+=======
+            TextInput::make('email')
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
                 ->email()
                 ->required()
                 ->autofocus(),
-            'password' => TextInput::make('password')
+            TextInput::make('password')
                 ->password()
                 ->required(),
-            'remember' => Toggle::make('remember')
-                ->label('Ricordami'),
+            Toggle::make('remember')
+                ->label(__('user::auth.remember_me')),
         ];
     }
 
 <<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
+    /**
+     * Get the form model.
+     *
+     * @return \Illuminate\Database\Eloquent\Model|string|null
+     */
+    protected function getFormModel(): ?\Illuminate\Database\Eloquent\Model
+    {
+        return null;
+    }
+    
+    /**
+     * Get the form fill data.
+     *
+     * @return array<string, mixed>
+     */
+    public function getFormFill(): array
+    {
+        return [
+            'email' => old('email'),
+            'remember' => true,
+        ];
+    }
+
+
+
     /**
      * Handle login form submission.
      *
@@ -294,6 +345,9 @@ class LoginWidget extends XotBaseWidget
             session()->regenerate();
             
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
             Notification::make()
                 ->title('Accesso effettuato con successo')
                 ->success()
@@ -301,6 +355,7 @@ class LoginWidget extends XotBaseWidget
                 
             $this->redirect(route('home'));
             
+<<<<<<< HEAD
         } catch (ValidationException $e) {
             Notification::make()
                 ->title('Errore di validazione')
@@ -346,12 +401,45 @@ class LoginWidget extends XotBaseWidget
 
 =======
             redirect()->intended(route('home'));
+=======
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
         } catch (ValidationException $e) {
-            $this->addError('email', $e->getMessage());
+            Notification::make()
+                ->title('Errore di validazione')
+                ->body($e->getMessage())
+                ->danger()
+                ->send();
+                
+            $this->form->fill();
+            $this->form->saveRelationships();
+            $this->form->callAfter();
+            
+            foreach ($e->errors() as $field => $messages) {
+                $this->form->getComponent($field)?->getContainer()->getParentComponent()?->getStatePath()
+                    ? $this->addError($field, implode(' ', $messages))
+                    : $this->addError('email', implode(' ', $messages));
+            }
+            
         } catch (Exception $e) {
             report($e);
-            $this->addError('email', __('Si è verificato un errore durante il login. Riprova più tardi.['.$e->getMessage().']'));
+            
+            Notification::make()
+                ->title('Errore durante il login')
+                ->body(__('Si è verificato un errore durante il login. Riprova più tardi.'))
+                ->danger()
+                ->send();
+                
+            $this->form->fill();
+            $this->form->saveRelationships();
+            $this->form->callAfter();
+            
+            $this->addError('email', __('Si è verificato un errore durante il login. Riprova più tardi.'));
         }
     }
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+    
+
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
 }

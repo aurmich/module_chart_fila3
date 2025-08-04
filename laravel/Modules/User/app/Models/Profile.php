@@ -265,6 +265,7 @@ class Profile extends BaseProfile implements HasMedia
      * The attributes that should be cast.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var array<string, string>
      */
     protected $casts = [
@@ -284,6 +285,15 @@ class Profile extends BaseProfile implements HasMedia
         ];
     }
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'email_verified_at' => 'datetime',
+        'preferences' => 'array',
+        'extra' => 'array',
+    ];
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
 
     /**
      * The accessors to append to the model's array form.
@@ -308,12 +318,18 @@ class Profile extends BaseProfile implements HasMedia
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Restituisce il nome completo dell'utente.
      *
      * @return string
 =======
      * Get the user's full name.
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+     * Restituisce il nome completo dell'utente.
+     *
+     * @return string
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
      */
     public function getFullNameAttribute(): string
     {
@@ -322,12 +338,18 @@ class Profile extends BaseProfile implements HasMedia
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Restituisce il display name dell'utente.
      *
      * @return string
 =======
      * Get the user's display name.
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+     * Restituisce il display name dell'utente.
+     *
+     * @return string
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
      */
     public function getDisplayNameAttribute(): string
     {
@@ -336,16 +358,23 @@ class Profile extends BaseProfile implements HasMedia
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Restituisce le iniziali dell'utente.
      *
      * @return string
 =======
      * Get the user's initials.
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+     * Restituisce le iniziali dell'utente.
+     *
+     * @return string
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
      */
     public function getInitialsAttribute(): string
     {
         return strtoupper(
+<<<<<<< HEAD
 <<<<<<< HEAD
             substr((string) $this->first_name, 0, 1) .
             substr((string) $this->last_name, 0, 1)
@@ -353,10 +382,15 @@ class Profile extends BaseProfile implements HasMedia
             substr($this->first_name, 0, 1) . 
             substr($this->last_name, 0, 1)
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+            substr((string) $this->first_name, 0, 1) .
+            substr((string) $this->last_name, 0, 1)
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
         );
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Restituisce l'URL dell'avatar dell'utente.
      *
@@ -364,6 +398,11 @@ class Profile extends BaseProfile implements HasMedia
 =======
      * Get the URL to the user's profile photo.
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+     * Restituisce l'URL dell'avatar dell'utente.
+     *
+     * @return string|null
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
      */
     public function getAvatarUrlAttribute(): ?string
     {
@@ -372,12 +411,18 @@ class Profile extends BaseProfile implements HasMedia
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Relazione con l'utente proprietario del profilo.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
 =======
      * Get the user that owns the profile.
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+     * Relazione con l'utente proprietario del profilo.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
      */
     public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
@@ -386,12 +431,18 @@ class Profile extends BaseProfile implements HasMedia
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Relazione con i dispositivi associati al profilo.
      *
      * @return HasManyThrough
 =======
      * Get all of the profile's devices.
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+     * Relazione con i dispositivi associati al profilo.
+     *
+     * @return HasManyThrough
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
      */
     public function devices(): HasManyThrough
     {
@@ -407,12 +458,18 @@ class Profile extends BaseProfile implements HasMedia
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Relazione con i device user associati al profilo.
      *
      * @return HasMany
 =======
      * Get all of the profile's device users.
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+     * Relazione con i device user associati al profilo.
+     *
+     * @return HasMany
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
      */
     public function deviceUsers(): HasMany
     {
@@ -421,12 +478,18 @@ class Profile extends BaseProfile implements HasMedia
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Relazione con il creatore del profilo.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
 =======
      * Get the profile's creator.
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+     * Relazione con il creatore del profilo.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
      */
     public function creator(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
@@ -435,12 +498,18 @@ class Profile extends BaseProfile implements HasMedia
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Relazione con l'ultimo utente che ha aggiornato il profilo.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
 =======
      * Get the profile's last updater.
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+     * Relazione con l'ultimo utente che ha aggiornato il profilo.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
      */
     public function updater(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
@@ -449,12 +518,18 @@ class Profile extends BaseProfile implements HasMedia
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Relazione con i team associati al profilo.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
 =======
      * Get the profile's teams.
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+     * Relazione con i team associati al profilo.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
      */
     public function teams(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
     {
@@ -466,12 +541,18 @@ class Profile extends BaseProfile implements HasMedia
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Crea una nuova factory per il modello.
      *
      * @return ProfileFactory
 =======
      * Create a new factory instance for the model.
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+     * Crea una nuova factory per il modello.
+     *
+     * @return ProfileFactory
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
      */
     protected static function newFactory(): ProfileFactory
     {

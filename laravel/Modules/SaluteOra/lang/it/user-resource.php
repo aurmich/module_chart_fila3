@@ -1,10 +1,13 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
 return [
     'fields' => [
         'name' => [

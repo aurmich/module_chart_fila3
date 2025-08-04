@@ -501,10 +501,14 @@ return array (
       'color' => 'success',
     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
     'request' => 
     array (
       'label' => 'request',
     ),
+<<<<<<< HEAD
     'cancel' => 
     array (
       'label' => 'cancel',
@@ -531,5 +535,7 @@ return array (
     ),
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
   ),
 );

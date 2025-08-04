@@ -125,6 +125,7 @@ abstract class BaseListUsers extends XotBaseListRecords
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             // Filtri disabilitati per ora, abilitare se necessario
             /*
 =======
@@ -160,6 +161,9 @@ abstract class BaseListUsers extends XotBaseListRecords
 >>>>>>> b58de900 (.)
 =======
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+            // Filtri disabilitati per ora, abilitare se necessario
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
         ];
     }
 

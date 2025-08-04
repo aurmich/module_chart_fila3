@@ -4,6 +4,7 @@ https://github.com/nowendwell/laravel-terms
 =======
 >>>>>>> 4211a572 (merge docs folders)
 https://github.com/nowendwell/laravel-terms
+https://github.com/nowendwell/laravel-terms
 
 
 

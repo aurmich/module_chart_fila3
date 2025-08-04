@@ -553,6 +553,7 @@ return [
         'performance_tracking' => true,
         'audit_trail' => true,
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
 ];
@@ -693,3 +694,6 @@ return array (
     ],
 ];
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+];
+>>>>>>> fb6fbaa2 (move resources/lang to lang)

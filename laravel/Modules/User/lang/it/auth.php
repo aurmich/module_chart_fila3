@@ -39,7 +39,6 @@ return [
     'Sign in' => 'Accedi',
     'login-in' => 'Accedi',
     'sign-up' => 'Registrati',
-
     'password_expired' => [
         'title' => 'Password Scaduta, Reimposta Password',
         'heading' => 'Crea una Nuova Password',

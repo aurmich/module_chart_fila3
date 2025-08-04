@@ -13,6 +13,7 @@ namespace Modules\User\Actions\Socialite;
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
@@ -51,6 +52,13 @@ use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 >>>>>>> b58de900 (.)
 =======
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+use Laravel\Socialite\Contracts\User as SocialiteUserContract;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
 
 /**
  * Handles the creation of a new user from a socialite authentication.

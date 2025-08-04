@@ -24,6 +24,7 @@
     <form wire:submit.prevent="save" class="space-y-4">
         {{ $this->form }}
 <<<<<<< HEAD
+<<<<<<< HEAD
         <button type="submit" class="w-full py-3 rounded bg-blue-600 text-white font-bold hover:bg-blue-700 transition">{{ __('Accedi') }}</button>
 =======
 >>>>>>> b58de900 (.)
@@ -66,10 +67,13 @@
 =======
         <button type="submit" class="w-full py-3 rounded bg-[#FF5F7E] text-white font-bold hover:bg-[#E5556E] transition">{{ __('Accedi') }}</button>
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+        <button type="submit" class="w-full py-3 rounded bg-blue-600 text-white font-bold hover:bg-blue-700 transition">{{ __('Accedi') }}</button>
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
     </form>
     <div class="text-center text-sm text-gray-500 mt-2">
         @if (Route::has('password.request'))
-            <a href="{{ route('password.request') }}" class="underline hover:text-[#FF5F7E]">{{ __('Password dimenticata?') }}</a>
+            <a href="{{ route('password.request') }}" class="underline hover:text-blue-700">{{ __('Password dimenticata?') }}</a>
         @endif
     </div>
 </div>

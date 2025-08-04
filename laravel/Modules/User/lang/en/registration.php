@@ -6,103 +6,144 @@ return [
             'label' => 'First Name',
             'placeholder' => 'Enter your first name',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => 'Enter your first name',
 =======
             'tooltip' => 'Enter your first name'
 >>>>>>> aurmich/dev
+=======
+            'tooltip' => 'Enter your first name'
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
         ],
         'last_name' => [
             'label' => 'Last Name',
             'placeholder' => 'Enter your last name',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => 'Enter your last name',
             'help' => 'Il tuo cognome di famiglia',
 =======
             'tooltip' => 'Enter your last name'
 >>>>>>> aurmich/dev
+=======
+            'tooltip' => 'Enter your last name'
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Enter your email',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => 'Enter a valid email address',
             'help' => 'Indirizzo email valido che utilizzerai per accedere',
 =======
             'tooltip' => 'Enter a valid email address'
 >>>>>>> aurmich/dev
+=======
+            'tooltip' => 'Enter a valid email address'
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
         ],
         'phone' => [
             'label' => 'Phone',
             'placeholder' => 'Enter your phone number',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => 'Enter a valid phone number',
             'help' => 'Numero di telefono per essere contattato',
 =======
             'tooltip' => 'Enter a valid phone number'
 >>>>>>> aurmich/dev
+=======
+            'tooltip' => 'Enter a valid phone number'
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
         ],
         'address' => [
             'label' => 'Address',
             'placeholder' => 'Enter your address',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => 'Enter your residential address',
             'help' => 'Via/Piazza e numero civico di residenza',
 =======
             'tooltip' => 'Enter your residential address'
 >>>>>>> aurmich/dev
+=======
+            'tooltip' => 'Enter your residential address'
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
         ],
         'city' => [
             'label' => 'City',
             'placeholder' => 'Enter your city',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => 'Enter your city of residence',
             'help' => 'Città di residenza o domicilio',
 =======
             'tooltip' => 'Enter your city of residence'
 >>>>>>> aurmich/dev
+=======
+            'tooltip' => 'Enter your city of residence'
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
         ],
         'postal_code' => [
             'label' => 'Postal Code',
             'placeholder' => 'Enter postal code',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => 'Enter your postal code',
 =======
             'tooltip' => 'Enter your postal code'
 >>>>>>> aurmich/dev
+=======
+            'tooltip' => 'Enter your postal code'
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
         ],
         'province' => [
             'label' => 'Province',
             'placeholder' => 'Enter province',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => 'Enter your province of residence',
 =======
             'tooltip' => 'Enter your province of residence'
 >>>>>>> aurmich/dev
+=======
+            'tooltip' => 'Enter your province of residence'
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
         ],
         'country' => [
             'label' => 'Country',
             'placeholder' => 'Enter country',
             'tooltip' => 'Enter your country of residence',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'default' => 'Italy',
             'help' => 'Paese di residenza',
 =======
             'default' => 'Italy'
 >>>>>>> aurmich/dev
+=======
+            'default' => 'Italy'
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
         ],
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Enter your password',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => 'Password must be at least 8 characters long',
             'help' => 'Minimo 8 caratteri con lettere, numeri e simboli',
 =======
             'tooltip' => 'Password must be at least 8 characters long'
 >>>>>>> aurmich/dev
+=======
+            'tooltip' => 'Password must be at least 8 characters long'
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
         ],
         'password_confirmation' => [
             'label' => 'Confirm Password',
             'placeholder' => 'Confirm your password',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => 'Re-enter your password for confirmation',
             'help' => 'Inserisci nuovamente la password per confermarla',
@@ -228,6 +269,8 @@ return [
             'help' => 'Eventuali annotazioni del team di moderazione',
         ],
 =======
+=======
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
             'tooltip' => 'Re-enter your password for confirmation'
         ],
         'terms' => [
@@ -238,12 +281,16 @@ return [
             'label' => 'Subscribe to newsletter',
             'tooltip' => 'Receive updates and news via email'
         ]
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
     ],
     'buttons' => [
         'register' => 'Register',
         'next' => 'Next',
         'back' => 'Back',
+<<<<<<< HEAD
 <<<<<<< HEAD
         'complete' => 'Complete Registration',
     ],
@@ -266,17 +313,23 @@ return [
             'validation' => 'Alcuni campi contengono errori, controllali e riprova',
         ],
 =======
+=======
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
         'complete' => 'Complete Registration'
     ],
     'messages' => [
         'success' => 'Registration completed successfully!',
         'error' => 'An error occurred during registration.',
         'validation_error' => 'Please fill in all required fields to proceed.'
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
     ],
     'steps' => [
         'personal_data' => [
             'title' => 'Personal Data',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'description' => 'Enter your personal information',
         ],
@@ -394,6 +447,8 @@ return [
     ],
 ];
 =======
+=======
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
             'description' => 'Enter your personal information'
         ],
         'contacts' => [
@@ -409,5 +464,9 @@ return [
             'description' => 'Verify your information before completing registration'
         ]
     ]
+<<<<<<< HEAD
 ]; 
 >>>>>>> aurmich/dev
+=======
+]; 
+>>>>>>> fb6fbaa2 (move resources/lang to lang)

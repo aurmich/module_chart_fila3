@@ -17,6 +17,8 @@ use Modules\Xot\Contracts\ProfileContract;
 >>>>>>> aurmich/dev
  * Represents the relationship between a profile and a team, including the user's role.
  *
+ * Represents the relationship between a profile and a team, including the user's role.
+ *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  * @property string $id

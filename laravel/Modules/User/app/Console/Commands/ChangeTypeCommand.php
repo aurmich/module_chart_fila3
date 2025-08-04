@@ -132,6 +132,7 @@ class ChangeTypeCommand extends Command
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!method_exists($user, 'getChildTypes')) {
             $this->error('User model does not have childTypes method.');
             return;
@@ -180,6 +181,8 @@ class ChangeTypeCommand extends Command
         if(!method_exists($user,'getChildTypes')){
 =======
 
+=======
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
         if (!method_exists($user, 'getChildTypes')) {
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
             $this->error('User model does not have childTypes method.');

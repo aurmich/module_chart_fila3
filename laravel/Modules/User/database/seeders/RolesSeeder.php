@@ -9,6 +9,7 @@ use Illuminate\Support\Collection;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Enums\UserTypeEnum;
 =======
 use Modules\User\Enums\UserType;
@@ -30,6 +31,9 @@ use Modules\User\Enums\UserTypeEnum;
 =======
 use Modules\SaluteOra\Enums\UserTypeEnum;
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+use Modules\User\Enums\UserTypeEnum;
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
 use Modules\User\Models\Role;
 
 class RolesSeeder extends Seeder

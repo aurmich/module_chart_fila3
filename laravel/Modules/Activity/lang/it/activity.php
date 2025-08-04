@@ -925,4 +925,7 @@ return [
         'tags' => ['activities', 'monitoring'],
     ],
 ];
+<<<<<<< HEAD
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+>>>>>>> fb6fbaa2 (move resources/lang to lang)

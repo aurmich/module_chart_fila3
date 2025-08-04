@@ -29,13 +29,18 @@ class IconMediaColumn extends IconColumn
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
         $this->default(fn($record)=>$record->getFirstMedia($attachment))
+=======
+        $this->default(
+            fn($record)=>$record->getFirstMedia($attachment))
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
                 ->icon('heroicon-o-document-text')
                 ->color(fn ($record) => $record->getFirstMedia($attachment) ? 'success' : 'danger')
-                ->tooltip(fn ($record) => $record->getFirstMedia($attachment)?->file_name ?? 'Documento non caricato')
+                ->tooltip(fn ($record) => $record->getFirstMedia($attachment)->file_name ?? 'Documento non caricato')
 
                 ->action(function ($record) use ($attachment) {
 <<<<<<< HEAD

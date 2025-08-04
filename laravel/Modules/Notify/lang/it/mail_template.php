@@ -47,6 +47,7 @@ return array (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       'description' => 'mailable',
 =======
 >>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
@@ -64,6 +65,9 @@ return array (
 =======
       'description' => 'mailable'
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
+=======
+      'description' => 'mailable',
+>>>>>>> fb6fbaa2 (move resources/lang to lang)
     ),
     'subject' => 
     array (
