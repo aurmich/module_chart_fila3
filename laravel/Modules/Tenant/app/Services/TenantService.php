@@ -45,9 +45,12 @@ class TenantService
             return realpath(__DIR__.'/../Config').DIRECTORY_SEPARATOR.$filename;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> fad5a9ca (fix tenant default name)
         $path = base_path('config/'.self::getName().'/'.$filename);
 
         return str_replace(['/', '\\'], [\DIRECTORY_SEPARATOR, \DIRECTORY_SEPARATOR], $path);

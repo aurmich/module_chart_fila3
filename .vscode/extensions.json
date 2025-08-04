@@ -20,6 +20,7 @@
         "bmewburn.vscode-intelephense-client",
         "davidanson.vscode-markdownlint",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "tomoki1207.pdf",
         "mehedidracula.php-namespace-resolver"
 =======
@@ -40,5 +41,9 @@
 =======
         "tomoki1207.pdf"
 >>>>>>> d23ba493 (add calendar)
+=======
+        "tomoki1207.pdf",
+        "mehedidracula.php-namespace-resolver"
+>>>>>>> fad5a9ca (fix tenant default name)
     ]
 }
