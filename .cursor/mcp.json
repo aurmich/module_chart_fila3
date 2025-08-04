@@ -47,6 +47,7 @@
         "-y",
         "playwright-mcp"
       ]
+<<<<<<< HEAD
     }
   }
 }
@@ -79,8 +80,9 @@
         "-y",
         "mcp-package-docs"
       ]
+=======
+>>>>>>> 3042dbb7 (✨ (mcp.json, DRY-model-traits.mdc): add playwright-mcp command configuration to support Playwright integration and enhance documentation structure with metadata in DRY model traits file)
     }
-  
   }
 }
 >>>>>>> 54f4fa16 (.)
