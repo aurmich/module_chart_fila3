@@ -345,5 +345,9 @@ return array (
     array (
       'label' => 'info',
     ),
+    'info' => 
+    array (
+      'label' => 'info',
+    ),
   ),
 );

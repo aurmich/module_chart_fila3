@@ -6,6 +6,9 @@
             <div class="flex flex-row items-center">
                 <div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fe3a45b0 (- variazioni)
                     <span class="text-lg">{{ $appointment->patient?->full_name }}</span>
                     <div>
                         <p class="text-xs">{{ $appointment->starts_at?->format('d/m/Y') }}</p>
@@ -19,8 +22,6 @@
                         <p class="text-xs">{{ $appointment->starts_at?->format('d/m/Y') }}</p>
 >>>>>>> 6953d97e (✨ (appointment-state-methods-fix.md): add documentation for fixing appointment state methods to ensure consistency and completeness of state behavior)
                         <p class="text-xs">{{ $appointment->time_range }}</p>
-                        
-                       
                     </div>
                 </div>
             </div>
@@ -78,14 +79,14 @@
 =======
                             <h2 class="text-lg font-semibold text-gray-800 mb-4">Dettagli Appuntamento</h2>
                             <div class="text-sm text-gray-700 space-y-2">
-                                <p><strong>Nome:</strong> {{ $appointment->patient->full_name }}</p>
+                                <p><strong>Nome:</strong> {{ $appointment->patient?->full_name }}</p>
                                 <p><strong>Data:</strong> {{ $appointment->starts_at?->format('d F Y') }}</p>
                                 <p><strong>Orario:</strong> {{ $appointment->time_range }}</p>
-                                @if($appointment->patient->phone)
-                                    <p><strong>Cellulare:</strong> {{ $appointment->patient->phone }}</p>
+                                @if($appointment->patient?->phone)
+                                    <p><strong>Cellulare:</strong> {{ $appointment->patient?->phone }}</p>
                                 @endif
-                                @if($appointment->patient->email)
-                                    <p><strong>Email:</strong> {{ $appointment->patient->email }}</p>
+                                @if($appointment->patient?->email)
+                                    <p><strong>Email:</strong> {{ $appointment->patient?->email }}</p>
                                 @endif
                                 @if($appointment->notes)
                                     <p><strong>Note:</strong> {{ $appointment->notes }}</p>
@@ -127,10 +128,14 @@
                         <div class="bg-white p-6 rounded-xl max-w-md w-3/4 lg:w-full">
                             <h2 class="text-[#272C4D] text-lg font-semibold mb-4">Accetta Appuntamento</h2>
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <p class="text-sm text-gray-600">Sei sicuro di voler accettare l'appuntamento con {{ $appointment->patient?->full_name }}?</p>
 =======
                             <p class="text-sm text-gray-600">Sei sicuro di voler accettare l'appuntamento con {{ $appointment->patient->full_name }}?</p>
 >>>>>>> 2df8b507 (bozza widget doctor appointments)
+=======
+                            <p class="text-sm text-gray-600">Sei sicuro di voler accettare l'appuntamento con {{ $appointment->patient?->full_name }}?</p>
+>>>>>>> fe3a45b0 (- variazioni)
                             <div class="mt-6 flex justify-end gap-2">
                                 <button @click="showInfo = false" class="px-4 py-2 bg-gray-200 rounded-md">
                                     Annulla
@@ -164,10 +169,14 @@
                         <div class="bg-white p-6 rounded-xl max-w-md w-3/4 lg:w-full">
                             <h2 class="text-[#272C4D] text-lg font-semibold mb-4">Rifiuta Appuntamento</h2>
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <p class="text-sm text-gray-600">Sei sicuro di voler rifiutare l'appuntamento con {{ $appointment->patient?->full_name }}?</p>
 =======
                             <p class="text-sm text-gray-600">Sei sicuro di voler rifiutare l'appuntamento con {{ $appointment->patient->full_name }}?</p>
 >>>>>>> 2df8b507 (bozza widget doctor appointments)
+=======
+                            <p class="text-sm text-gray-600">Sei sicuro di voler rifiutare l'appuntamento con {{ $appointment->patient?->full_name }}?</p>
+>>>>>>> fe3a45b0 (- variazioni)
                             <div class="mt-6 flex justify-end gap-2">
                                 <button @click="open = false" class="px-4 py-2 bg-gray-200 rounded-md">
                                     Annulla
