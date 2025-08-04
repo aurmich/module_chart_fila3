@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\States\User\Transitions;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
 =======
@@ -14,6 +15,8 @@ use Modules\SaluteOra\States\User\IntegrationRequested;
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
 use Modules\SaluteOra\Models\User;
 
+=======
+>>>>>>> 6232c656 (✨ (IntegrationCompleted State): introduce new state `IntegrationCompleted` in user workflow to manage users who completed data integration but are not yet approved by the administrator)
 /**
  * Transizione da IntegrationCompleted a IntegrationRequested.
  * 
@@ -22,6 +25,7 @@ use Modules\SaluteOra\Models\User;
  */
 class IntegrationCompletedToIntegrationRequested extends BaseTransition
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     //---
     public function getNotificationData(): array{
@@ -47,4 +51,7 @@ class IntegrationCompletedToIntegrationRequested extends BaseTransition
 =======
    ///---
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+    //---
+>>>>>>> 6232c656 (✨ (IntegrationCompleted State): introduce new state `IntegrationCompleted` in user workflow to manage users who completed data integration but are not yet approved by the administrator)
 } 

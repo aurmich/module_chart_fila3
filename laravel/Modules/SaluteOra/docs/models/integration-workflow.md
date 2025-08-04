@@ -70,10 +70,14 @@ Lo stato `IntegrationCompleted` può transitare verso tre stati diversi in base 
 ### Transizioni Specifiche del Workflow
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6232c656 (✨ (IntegrationCompleted State): introduce new state `IntegrationCompleted` in user workflow to manage users who completed data integration but are not yet approved by the administrator)
 ⭐ **PATTERN UTILIZZATO**: Tutte le transizioni seguono il **BaseTransition pattern** (DRY + KISS)
 
 Le transizioni sono implementate come classi quasi vuote che estendono `BaseTransition`:
 
+<<<<<<< HEAD
 #### 1. IntegrationRequestedToIntegrationCompleted
 ```php
 class IntegrationRequestedToIntegrationCompleted extends BaseTransition
@@ -92,12 +96,13 @@ class IntegrationCompletedToActive extends BaseTransition
         $this->user->update(['password' => $password]);
         return ['message' => $this->message, 'password' => $password];
 =======
+=======
+>>>>>>> 6232c656 (✨ (IntegrationCompleted State): introduce new state `IntegrationCompleted` in user workflow to manage users who completed data integration but are not yet approved by the administrator)
 #### 1. IntegrationRequestedToIntegrationCompleted
 ```php
-namespace Modules\SaluteOra\States\User\Transitions;
-
-class IntegrationRequestedToIntegrationCompleted extends Transition
+class IntegrationRequestedToIntegrationCompleted extends BaseTransition
 {
+<<<<<<< HEAD
     public function handle(): User
     {
         $this->user->state = new IntegrationCompleted($this->user);
@@ -142,56 +147,59 @@ class IntegrationCompletedToIntegrationRequested extends BaseTransition
 **Quando utilizzare**: Quando l'utente ha fornito tutti i dati richiesti.
 
 #### 2. IntegrationCompletedToActive
-```php
-namespace Modules\SaluteOra\States\User\Transitions;
-
-class IntegrationCompletedToActive extends Transition
-{
-    public function handle(): User
-    {
-        $this->user->state = new Active($this->user);
-        $this->user->save();
-        return $this->user;
-    }
+=======
+    //--- (Auto-discovery: IntegrationRequested → IntegrationCompleted)
 }
 ```
 
-**Quando utilizzare**: Quando l'amministratore approva l'utente dopo verifica positiva.
+#### 2. IntegrationCompletedToActive  
+>>>>>>> 6232c656 (✨ (IntegrationCompleted State): introduce new state `IntegrationCompleted` in user workflow to manage users who completed data integration but are not yet approved by the administrator)
+```php
+class IntegrationCompletedToActive extends BaseTransition
+{
+    // Override solo per generare password di attivazione
+    public function getNotificationData(): array {
+        $password = Str::random(10);
+        $this->user->update(['password' => $password]);
+        return ['message' => $this->message, 'password' => $password];
+    }
+}
+```
 
 #### 3. IntegrationCompletedToRejected
 ```php
-namespace Modules\SaluteOra\States\User\Transitions;
-
-class IntegrationCompletedToRejected extends Transition
+class IntegrationCompletedToRejected extends BaseTransition
 {
-    public function handle(): User
-    {
-        $this->user->state = new Rejected($this->user);
-        $this->user->save();
-        return $this->user;
-    }
+    //--- (Auto-discovery: IntegrationCompleted → Rejected)
 }
 ```
-
-**Quando utilizzare**: Quando l'amministratore respinge l'utente dopo aver verificato i dati completati (documenti falsi, criteri non rispettati, ecc.).
 
 #### 4. IntegrationCompletedToIntegrationRequested
 ```php
-namespace Modules\SaluteOra\States\User\Transitions;
-
-class IntegrationCompletedToIntegrationRequested extends Transition
+class IntegrationCompletedToIntegrationRequested extends BaseTransition
 {
-    public function handle(): User
-    {
-        $this->user->state = new IntegrationRequested($this->user);
-        $this->user->save();
-        return $this->user;
-    }
+    //--- (Auto-discovery: IntegrationCompleted → IntegrationRequested)
 }
 ```
 
+<<<<<<< HEAD
 **Quando utilizzare**: Quando durante la verifica si scopre che servono ulteriori documenti o correzioni.
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+### Vantaggi del Pattern BaseTransition
+
+- ✅ **Zero duplicazione**: Logica centralizzata in una classe base
+- ✅ **Auto-discovery**: Stato target ricavato automaticamente dal nome della classe  
+- ✅ **Notifiche automatiche**: Email generate automaticamente con slug appropriati
+- ✅ **Semplicità**: 99% delle transizioni sono vuote (3 righe di codice)
+- ✅ **Estendibilità**: Override di `getNotificationData()` solo quando serve
+
+**Quando utilizzare**: 
+- **Transizione semplice**: Solo `//---` (BaseTransition fa tutto)
+- **Dati custom**: Override `getNotificationData()` per email personalizzate
+
+➡️ **Documentazione completa**: [Pattern BaseTransition](base-transition-pattern.md)
+>>>>>>> 6232c656 (✨ (IntegrationCompleted State): introduce new state `IntegrationCompleted` in user workflow to manage users who completed data integration but are not yet approved by the administrator)
 
 ### Esempi Pratici
 

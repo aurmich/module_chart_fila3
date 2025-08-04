@@ -4,6 +4,9 @@ globs:
 alwaysApply: false
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6232c656 (✨ (IntegrationCompleted State): introduce new state `IntegrationCompleted` in user workflow to manage users who completed data integration but are not yet approved by the administrator)
 # Regola: Stato IntegrationCompleted nel Workflow Utenti
 
 ## Contesto
@@ -154,5 +157,8 @@ class IntegrationCompletedToActive extends BaseTransition
 **Creato**: Dicembre 2024
 **Versione**: 1.0
 **Applicabilità**: Modulo SaluteOra
+<<<<<<< HEAD
 =======
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
+=======
+>>>>>>> 6232c656 (✨ (IntegrationCompleted State): introduce new state `IntegrationCompleted` in user workflow to manage users who completed data integration but are not yet approved by the administrator)

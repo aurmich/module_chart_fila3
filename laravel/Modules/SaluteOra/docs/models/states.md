@@ -574,6 +574,9 @@ WHERE state = 'Modules\\SaluteOra\\States\\Active';
    - Mantenere aggiornata la documentazione degli stati
    - Documentare le transizioni consentite
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6232c656 (✨ (IntegrationCompleted State): introduce new state `IntegrationCompleted` in user workflow to manage users who completed data integration but are not yet approved by the administrator)
    - Registrare le modifiche e le correzioni 
 
 ## Pattern BaseTransition (DRY + KISS)
@@ -613,6 +616,7 @@ class PendingToActive extends BaseTransition
 }
 ```
 
+<<<<<<< HEAD
 ➡️ **Documentazione completa**: [Pattern BaseTransition](base-transition-pattern.md)
 
 ## 🏥 **Stati degli Appuntamenti** (NUOVO - Gennaio 2025)
@@ -671,3 +675,6 @@ Le notifiche includono automaticamente:
 =======
    - Registrare le modifiche e le correzioni 
 >>>>>>> bead9c28 (fix case)
+=======
+➡️ **Documentazione completa**: [Pattern BaseTransition](base-transition-pattern.md) 
+>>>>>>> 6232c656 (✨ (IntegrationCompleted State): introduce new state `IntegrationCompleted` in user workflow to manage users who completed data integration but are not yet approved by the administrator)
