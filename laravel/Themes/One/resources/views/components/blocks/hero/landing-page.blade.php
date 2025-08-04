@@ -213,9 +213,12 @@
         <div class="w-8 lg:w-9 h-auto">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           <img src="/img/bandiera-italiana.png" class="m-4" />
 >>>>>>> aurmich/dev
 =======
+=======
+>>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
         <x-filament::dropdown>
     <x-slot name="trigger">
         <x-filament::icon-button
@@ -242,10 +245,13 @@
         @endforeach
     </x-filament::dropdown.list>
 </x-filament::dropdown>
+<<<<<<< HEAD
 >>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
 =======
           <img src="/img/bandiera-italiana.png" class="m-4" />
 >>>>>>> f7d3ce4f (- update landing-page;)
+=======
+>>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
         </div>
       </div>
     </div>

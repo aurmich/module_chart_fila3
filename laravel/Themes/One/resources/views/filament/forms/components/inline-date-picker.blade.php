@@ -107,6 +107,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <div class="uppercase">{{ $weekday }}</div>
 =======
                         <div>{{ $weekday }}</div>
@@ -117,6 +118,9 @@
 =======
                         <div>{{ $weekday }}</div>
 >>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+                        <div class="uppercase">{{ $weekday }}</div>
+>>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
                     @endforeach
                 </div>
                 
@@ -132,6 +136,7 @@
                                     
                                     // ✅ Pre-calcolo classi CSS per performance
                                     if ($isSelected) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -162,6 +167,11 @@
 =======
                                         $classes = 'relative py-2 px-1 text-sm font-semibold bg-green-50 text-green-700 border-2 border-green-200 hover:bg-green-100 cursor-pointer hover:scale-105 transform transition-all duration-200';
 >>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
+=======
+                                        $classes = 'relative py-2 px-1 text-sm font-semibold bg-[#FF5F7E] text-white ring-2 ring-[#FF5F7E] shadow-lg z-10';
+                                    } elseif ($isEnabled && $isCurrentMonth) {
+                                        $classes = 'relative py-2 px-1 text-sm font-semibold bg-blue-100 text-[#272C4D] border-2 border-blue-300 cursor-pointer hover:scale-105 transform transition-all duration-200';
+>>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
                                     } elseif ($isCurrentMonth) {
                                         $classes = 'relative py-2 px-1 text-sm font-medium bg-gray-50 text-gray-400 border border-gray-200 cursor-not-allowed opacity-60';
                                     } else {
@@ -202,6 +212,7 @@
                                     @if($isSelected)
                                         {{-- Barra pulsante blu sotto la data selezionata --}}
                                         <div class="absolute bottom-0 left-0 right-0 h-1 bg-white"></div>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
                                     @if($isEnabled && $isCurrentMonth)
@@ -244,6 +255,8 @@
                                         {{-- Barra pulsante blu sotto la data selezionata --}}
                                         <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-b-md shadow-inner animate-pulse"></div>
 >>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
+=======
+>>>>>>> 08fef506 (- create dettaglio paziente (lasciato commentato in attesa di logiche);)
                                     @endif
                                 </button>
                             @endforeach
