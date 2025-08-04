@@ -88,7 +88,7 @@ new class extends Component
 
 ?>
 
-<x-layouts.main>
+<x-layouts.app>
     @volt('register.type')
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -318,5 +318,9 @@ new class extends Component
             }
         });
     </script>
+<<<<<<< HEAD
 </x-layouts.main>
 >>>>>>> a7d04d78 (✨ (auth): implement password reset functionality with new widgets and views to enhance user experience)
+=======
+</x-layouts.app>
+>>>>>>> 5ba41858 (✨ (register.blade.php, login.blade.php): update layout component from x-layouts.main to x-layouts.app for consistency in theme structure)

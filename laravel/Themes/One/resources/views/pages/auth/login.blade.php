@@ -135,11 +135,17 @@ $authenticate = function() {
 >>>>>>> aurmich/dev
 =======
 
+<<<<<<< HEAD
 <div class="flex justify-center">
     <img class="w-[300px] lg:w-[350px]" src="/img/logo-v2.png"/>
 </div>
 >>>>>>> 58d017c2 (- aggiornato stile dettaglio paziente)
 >>>>>>> aurmich/dev
+=======
+        <div class="flex justify-center">
+            <img class="w-[300px] lg:w-[350px]" src="/img/logo-v2.png"/>
+        </div>
+>>>>>>> 5ba41858 (✨ (register.blade.php, login.blade.php): update layout component from x-layouts.main to x-layouts.app for consistency in theme structure)
 
         <div class="mt-8 mx-auto w-full max-w-md relative">
             <!-- Glassmorphism login card -->
