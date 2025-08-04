@@ -208,6 +208,7 @@ return array (
     array (
       'label' => 'resetFilters',
     ),
+<<<<<<< HEAD
     'applyFilters' => 
     array (
       'label' => 'applyFilters',
@@ -259,6 +260,8 @@ return array (
       'label' => 'reorderRecords',
     ),
 >>>>>>> 3224efcd (- format files)
+=======
+>>>>>>> 8d44f10d (feat: studio trans , radio collection)
   ),
   'actions' => 
   array (
