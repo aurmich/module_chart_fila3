@@ -8,6 +8,7 @@ chart.js/dist/chunks/helpers.segment.mjs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 chart.js/dist/chart.mjs:
 =======
 >>>>>>> 54f4fa16 (.)
@@ -19,6 +20,8 @@ chart.js/dist/chart.mjs:
 =======
 chart.js/dist/chart.mjs:
 >>>>>>> 85399184 (add .prettierrc)
+=======
+>>>>>>> 127a3c9b (📝 (documentation): remove outdated documentation files for various modules to streamline the codebase and improve maintainability.)
   (*!
    * Chart.js v3.9.1
    * https://www.chartjs.org
@@ -37,9 +40,12 @@ chart.js/dist/chunks/helpers.segment.mjs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+>>>>>>> 127a3c9b (📝 (documentation): remove outdated documentation files for various modules to streamline the codebase and improve maintainability.)
 
 chart.js/dist/chart.mjs:
   (*!
@@ -49,6 +55,7 @@ chart.js/dist/chart.mjs:
    * Released under the MIT License
    *)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 2ef417db (.)
@@ -56,4 +63,6 @@ chart.js/dist/chart.mjs:
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
 =======
 >>>>>>> 85399184 (add .prettierrc)
+=======
+>>>>>>> 127a3c9b (📝 (documentation): remove outdated documentation files for various modules to streamline the codebase and improve maintainability.)
 */
