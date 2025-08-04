@@ -13,6 +13,7 @@ chart.js/dist/chunks/helpers.segment.mjs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 chart.js/dist/chart.mjs:
 =======
 >>>>>>> 54f4fa16 (.)
@@ -36,6 +37,9 @@ chart.js/dist/chart.mjs:
 >>>>>>> f80feb52 (bug:calkendat)
 =======
 >>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
+=======
+chart.js/dist/chart.mjs:
+>>>>>>> 4cfbf172 (📝 (studio-filter-widget.md): update documentation to provide complete overview and usage instructions in Italian, enhancing clarity and accessibility for Italian-speaking users.)
   (*!
    * Chart.js v3.9.1
    * https://www.chartjs.org
@@ -59,6 +63,7 @@ chart.js/dist/chunks/helpers.segment.mjs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
@@ -97,4 +102,6 @@ chart.js/dist/chart.mjs:
 >>>>>>> f80feb52 (bug:calkendat)
 =======
 >>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)
+=======
+>>>>>>> 4cfbf172 (📝 (studio-filter-widget.md): update documentation to provide complete overview and usage instructions in Italian, enhancing clarity and accessibility for Italian-speaking users.)
 */
