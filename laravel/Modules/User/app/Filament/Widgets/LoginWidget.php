@@ -173,11 +173,16 @@ class LoginWidget extends XotBaseWidget
                 ->required(),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             Toggle::make('remember')
             ->visible(false),
 =======
             Toggle::make('remember'),
 >>>>>>> aurmich/dev
+=======
+            Toggle::make('remember')
+            ->visible(false),
+>>>>>>> 91aa094a (♻️ (LoginWidget.php): refactor remember toggle to be hidden by default for better user experience)
         ];
     }
 
