@@ -7,9 +7,13 @@ namespace Modules\SaluteOra\Filament\Widgets;
 use Livewire\Attributes\On;
 use Filament\Facades\Filament;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Notifications\Notification;
 =======
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
+=======
+use Filament\Notifications\Notification;
+>>>>>>> 13ea6524 (phpstan)
 use Illuminate\Support\Facades\Auth;
 use Modules\SaluteOra\Models\Studio;
 use Modules\SaluteOra\Models\Doctor;
@@ -42,16 +46,21 @@ class StudioFilterWidget extends XotBaseWidget
      * Dati dello studio corrente.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var \Modules\SaluteOra\Models\Studio|null
 =======
      * @var Studio|null
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
+=======
+     * @var \Modules\SaluteOra\Models\Studio|null
+>>>>>>> 13ea6524 (phpstan)
      */
     public ?Studio $currentStudio = null;
 
     /**
      * Lista degli studi disponibili per il dottore.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @var \Illuminate\Support\Collection<int, \Modules\SaluteOra\Models\Studio>|null
      */
@@ -63,16 +72,25 @@ class StudioFilterWidget extends XotBaseWidget
      * @return void
 =======
      * @var \Illuminate\Support\Collection
+=======
+     * @var \Illuminate\Support\Collection<int, \Modules\SaluteOra\Models\Studio>|null
+>>>>>>> 13ea6524 (phpstan)
      */
-    public $availableStudios;
+    public ?\Illuminate\Support\Collection $availableStudios = null;
 
     /**
      * Mount del widget.
+<<<<<<< HEAD
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
+=======
+     *
+     * @return void
+>>>>>>> 13ea6524 (phpstan)
      */
     public function mount(): void
     {
         // Imposta lo studio corrente dal tenant di Filament o dal primo studio disponibile
+<<<<<<< HEAD
 <<<<<<< HEAD
         $tenant = Filament::getTenant();
         $this->currentStudioId = $tenant->id ?? $this->getFirstAvailableStudioId();
@@ -86,6 +104,11 @@ class StudioFilterWidget extends XotBaseWidget
             $this->form->fill();
         }
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
+=======
+        $tenant = Filament::getTenant();
+        $this->currentStudioId = $tenant->id ?? $this->getFirstAvailableStudioId();
+        $this->loadStudioData();
+>>>>>>> 13ea6524 (phpstan)
     }
 
     /**
@@ -100,6 +123,7 @@ class StudioFilterWidget extends XotBaseWidget
         
         // Solo i dottori possono visualizzare questo widget
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $user instanceof Doctor && 
                $user->type === UserTypeEnum::DOCTOR;
 =======
@@ -107,6 +131,10 @@ class StudioFilterWidget extends XotBaseWidget
                $user->type === UserTypeEnum::DOCTOR &&
                $user instanceof Doctor;
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
+=======
+        return $user instanceof Doctor && 
+               $user->type === UserTypeEnum::DOCTOR;
+>>>>>>> 13ea6524 (phpstan)
     }
 
     /**
@@ -156,10 +184,14 @@ class StudioFilterWidget extends XotBaseWidget
         
         if (!$studio) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             Notification::make()
 =======
             $this->notification()
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
+=======
+            Notification::make()
+>>>>>>> 13ea6524 (phpstan)
                 ->title(__('saluteora::widgets.studio_filter.errors.unauthorized'))
                 ->danger()
                 ->send();
@@ -171,12 +203,16 @@ class StudioFilterWidget extends XotBaseWidget
 
         // Dispatcha eventi per notificare altri componenti del cambio studio
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 13ea6524 (phpstan)
         if ($this->currentStudio) {
             $this->dispatch('studio-changed', [
                 'studioId' => $studioId,
                 'studio' => $this->currentStudio->toArray(),
             ]);
         }
+<<<<<<< HEAD
 
         // Aggiorna anche il tenant di Filament se necessario
         $tenant = Filament::getTenant();
@@ -198,12 +234,16 @@ class StudioFilterWidget extends XotBaseWidget
             'studioId' => $studioId,
             'studio' => $this->currentStudio->toArray(),
         ]);
+=======
+>>>>>>> 13ea6524 (phpstan)
 
         // Aggiorna anche il tenant di Filament se necessario
-        if (Filament::getTenant()?->id !== $studioId) {
+        $tenant = Filament::getTenant();
+        if ($tenant && $tenant->getKey() !== $studioId) {
             session(['tenant_id' => $studioId]);
         }
 
+<<<<<<< HEAD
         $this->notification()
             ->title(__('saluteora::widgets.studio_filter.messages.studio_changed'))
             ->body(__('saluteora::widgets.studio_filter.messages.studio_changed_body', [
@@ -212,26 +252,45 @@ class StudioFilterWidget extends XotBaseWidget
             ->success()
             ->send();
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
+=======
+        if ($this->currentStudio) {
+            Notification::make()
+                ->title(__('saluteora::widgets.studio_filter.messages.studio_changed'))
+                ->body(__('saluteora::widgets.studio_filter.messages.studio_changed_body', [
+                    'studio' => $this->currentStudio->name
+                ]))
+                ->success()
+                ->send();
+        }
+>>>>>>> 13ea6524 (phpstan)
     }
 
     /**
      * Listener per eventi esterni di cambio studio.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array<string, mixed> $data
 =======
      * @param array $data
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
+=======
+     * @param array<string, mixed> $data
+>>>>>>> 13ea6524 (phpstan)
      * @return void
      */
     #[On('studio-selected')]
     public function onStudioSelected(array $data): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (isset($data['studioId']) && is_int($data['studioId'])) {
 =======
         if (isset($data['studioId'])) {
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
+=======
+        if (isset($data['studioId']) && is_int($data['studioId'])) {
+>>>>>>> 13ea6524 (phpstan)
             $this->changeStudio($data['studioId']);
         }
     }
@@ -254,6 +313,7 @@ class StudioFilterWidget extends XotBaseWidget
             ->with(['address'])
             ->where('active', true)
             ->orderBy('name')
+<<<<<<< HEAD
 <<<<<<< HEAD
             ->get()
             ->filter(fn($studio) => $studio instanceof Studio)
@@ -279,19 +339,38 @@ class StudioFilterWidget extends XotBaseWidget
             $this->currentStudioId = is_int($firstStudioId) ? $firstStudioId : (int) $firstStudioId;
 =======
             ->get();
+=======
+            ->get()
+            ->filter(fn($studio) => $studio instanceof Studio)
+            ->values();
+>>>>>>> 13ea6524 (phpstan)
 
         // Carica lo studio corrente
         if ($this->currentStudioId) {
-            $this->currentStudio = $this->availableStudios
+            $foundStudio = $this->availableStudios
                 ->where('id', $this->currentStudioId)
                 ->first();
+            
+            if ($foundStudio instanceof Studio) {
+                $this->currentStudio = $foundStudio;
+            }
         }
 
         // Se non è stato trovato uno studio corrente, prendi il primo disponibile
+<<<<<<< HEAD
         if (!$this->currentStudio && $this->availableStudios->isNotEmpty()) {
             $this->currentStudio = $this->availableStudios->first();
             $this->currentStudioId = $this->currentStudio->id;
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
+=======
+        if (!$this->currentStudio && $this->availableStudios && $this->availableStudios->isNotEmpty()) {
+            $firstStudio = $this->availableStudios->first();
+            //if ($firstStudio instanceof Studio) {
+                $this->currentStudio = $firstStudio;
+                $firstStudioId = $this->currentStudio->getKey();
+                $this->currentStudioId = is_int($firstStudioId) ? $firstStudioId : (int) $firstStudioId;
+            //}
+>>>>>>> 13ea6524 (phpstan)
         }
     }
 
@@ -314,15 +393,21 @@ class StudioFilterWidget extends XotBaseWidget
             ->first();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 13ea6524 (phpstan)
         if (!$firstStudio instanceof Studio) {
             return null;
         }
 
         $studioId = $firstStudio->getKey();
         return is_int($studioId) ? $studioId : (is_numeric($studioId) ? (int) $studioId : null);
+<<<<<<< HEAD
 =======
         return $firstStudio?->id;
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
+=======
+>>>>>>> 13ea6524 (phpstan)
     }
 
     /**
@@ -361,6 +446,7 @@ class StudioFilterWidget extends XotBaseWidget
     public function getStudioFullAddress(): ?string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!$this->currentStudio) {
             return null;
         }
@@ -384,9 +470,20 @@ class StudioFilterWidget extends XotBaseWidget
 =======
         if (!$this->currentStudio || !$this->currentStudio->address) {
             return $this->currentStudio?->address ?? null;
+=======
+        if (!$this->currentStudio) {
+            return null;
+>>>>>>> 13ea6524 (phpstan)
         }
 
+        // Se address è una stringa, restituiscila direttamente
+        if (is_string($this->currentStudio->address)) {
+            return $this->currentStudio->address;
+        }
+
+        // Se address è un oggetto con proprietà, costruisci l'indirizzo
         $address = $this->currentStudio->address;
+<<<<<<< HEAD
         
         return trim(implode(', ', array_filter([
             $address->street ?? null,
@@ -394,5 +491,16 @@ class StudioFilterWidget extends XotBaseWidget
             $address->postal_code ?? null,
         ])));
 >>>>>>> 18569998 (✨ (StudioFilterWidget): introduce a new widget for selecting and displaying the current studio for doctors, enhancing user experience by allowing easy studio management)
+=======
+        if (is_object($address)) {
+            return trim(implode(', ', array_filter([
+                $address->street ?? null,
+                $address->city ?? null,
+                $address->postal_code ?? null,
+            ])));
+        }
+
+        return null;
+>>>>>>> 13ea6524 (phpstan)
     }
 }

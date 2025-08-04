@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Filament\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Form;
 use Filament\Actions\Action;
 use Webmozart\Assert\Assert;
@@ -22,15 +23,26 @@ use Modules\UI\Filament\Forms\Components\OpeningHoursField;
 =======
 use Filament\Actions\Action;
 use Filament\Facades\Filament;
+=======
+>>>>>>> 13ea6524 (phpstan)
 use Filament\Forms\Form;
-use Filament\Notifications\Notification;
-use Illuminate\Contracts\Support\Htmlable;
-use Modules\SaluteOra\Models\Studio;
-use Modules\SaluteOra\Models\StudioUser;
+use Filament\Actions\Action;
+use Webmozart\Assert\Assert;
+use function Safe\preg_match;
+use Filament\Facades\Filament;
 use Modules\SaluteOra\Models\User;
-use Modules\UI\Filament\Forms\Components\OpeningHoursField;
+use Modules\SaluteOra\Models\Doctor;
+use Modules\SaluteOra\Models\Studio;
+use Filament\Forms\ComponentContainer;
+use Filament\Notifications\Notification;
+use Modules\SaluteOra\Models\StudioUser;
+use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Filament\Pages\XotBasePage;
+<<<<<<< HEAD
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+use Modules\UI\Filament\Forms\Components\OpeningHoursField;
+>>>>>>> 13ea6524 (phpstan)
 
 /**
  * DoctorAvailabilityPage
@@ -47,9 +59,13 @@ use Modules\Xot\Filament\Pages\XotBasePage;
  * 
  * @property array $data
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property ComponentContainer $form
 =======
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+ * @property ComponentContainer $form
+>>>>>>> 13ea6524 (phpstan)
  */
 class DoctorAvailabilityPage extends XotBasePage
 {
@@ -211,10 +227,14 @@ class DoctorAvailabilityPage extends XotBasePage
      * Ottiene l'utente dottore corrente.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected function getCurrentDoctor(): Doctor
 =======
     protected function getCurrentDoctor(): User
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+    protected function getCurrentDoctor(): Doctor
+>>>>>>> 13ea6524 (phpstan)
     {
         /** @var User $user */
         $user = auth()->user();
@@ -223,10 +243,14 @@ class DoctorAvailabilityPage extends XotBasePage
         //    abort(403, __('saluteora::doctor_availability.notifications.not_doctor.body'));
         //}
 <<<<<<< HEAD
+<<<<<<< HEAD
         Assert::isInstanceOf($user, Doctor::class);
 =======
         
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+        Assert::isInstanceOf($user, Doctor::class);
+>>>>>>> 13ea6524 (phpstan)
         return $user;
     }
 
@@ -281,10 +305,14 @@ class DoctorAvailabilityPage extends XotBasePage
         
         $this->data = [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'schedule' => $pivot->schedule ?? $this->getDefaultSchedule(),
 =======
             'schedule' => $pivot?->schedule ?? $this->getDefaultSchedule(),
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+            'schedule' => $pivot->schedule ?? $this->getDefaultSchedule(),
+>>>>>>> 13ea6524 (phpstan)
         ];
     }
 

@@ -6,6 +6,7 @@ namespace Modules\SaluteOra\States\Appointment\Transitions;
 
 use Illuminate\Support\Str;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 use Spatie\ModelStates\Transition;
 use Modules\Xot\Contracts\UserContract;
@@ -44,7 +45,11 @@ abstract class BaseTransition extends XotBaseTransition
             'doctor_name' => $record->doctor->name ?? 'N/A',
 =======
 use Modules\SaluteOra\Models\Appointment;
+=======
+>>>>>>> 13ea6524 (phpstan)
 use Spatie\ModelStates\Transition;
+use Modules\SaluteOra\Models\Appointment;
+use Illuminate\Support\Facades\Notification;
 use Modules\Notify\Notifications\RecordNotification;
 
 abstract class BaseTransition extends Transition
@@ -57,6 +62,7 @@ abstract class BaseTransition extends Transition
         $this->sendNotification();
         $class = static::class;
         $newStateClass = Str::of($class)->afterLast('To')->prepend('Modules\SaluteOra\States\Appointment\\')->toString();
+        /** @phpstan-ignore-next-line */
         $this->appointment->state = new $newStateClass($this->appointment);
         $this->appointment->save();
         return $this->appointment;
@@ -65,7 +71,7 @@ abstract class BaseTransition extends Transition
     public function sendNotification(): void
     {
         $slug = 'appointment-' . Str::of(class_basename(static::class))->kebab()->toString();
-        $slug = \Illuminate\Support\Str::slug($slug);
+        $slug = Str::slug($slug);
         
         $notify = new RecordNotification(
             $this->appointment,
@@ -77,13 +83,13 @@ abstract class BaseTransition extends Transition
         
         // Notifica al paziente
         if ($this->appointment->patient && $this->appointment->patient->email) {
-            \Illuminate\Support\Facades\Notification::route('mail', $this->appointment->patient->email)
+            Notification::route('mail', $this->appointment->patient->email)
                 ->notify($notify);
         }
         
         // Notifica al dottore
         if ($this->appointment->doctor && $this->appointment->doctor->email) {
-            \Illuminate\Support\Facades\Notification::route('mail', $this->appointment->doctor->email)
+            Notification::route('mail', $this->appointment->doctor->email)
                 ->notify($notify);
         }
     }

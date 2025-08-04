@@ -92,19 +92,27 @@ class StudiosRelationManager extends XotBaseRelationManager
      * Get the table filters.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, Tables\Filters\Filter|Tables\Filters\SelectFilter>
 =======
      * @return array<string, Tables\Filters\Filter>
 >>>>>>> 2bcfd382 (fix Address)
+=======
+     * @return array<string, Tables\Filters\Filter|Tables\Filters\SelectFilter>
+>>>>>>> 13ea6524 (phpstan)
      */
     public function getTableFilters(): array
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             //'active' => Tables\Filters\TernaryFilter::make('active'),
 =======
             'active' => Tables\Filters\TernaryFilter::make('active'),
 >>>>>>> 2bcfd382 (fix Address)
+=======
+            //'active' => Tables\Filters\TernaryFilter::make('active'),
+>>>>>>> 13ea6524 (phpstan)
         ];
     }
 
@@ -121,10 +129,14 @@ class StudiosRelationManager extends XotBaseRelationManager
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'attach'=>Tables\Actions\AttachAction::make()
 =======
             Tables\Actions\AttachAction::make()
 >>>>>>> 2bcfd382 (fix Address)
+=======
+            'attach'=>Tables\Actions\AttachAction::make()
+>>>>>>> 13ea6524 (phpstan)
                 ->preloadRecordSelect(false)
                 ->recordSelect(
                     fn (Forms\Components\Select $select) => $select
@@ -139,9 +151,13 @@ class StudiosRelationManager extends XotBaseRelationManager
                                     })
                                     // Escludiamo manualmente gli studi già associati
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     /** @phpstan-ignore property.notFound */
 =======
 >>>>>>> 2bcfd382 (fix Address)
+=======
+                                    /** @phpstan-ignore-next-line */
+>>>>>>> 13ea6524 (phpstan)
                                     ->whereNotIn('id', $this->getOwnerRecord()->studios->modelKeys())
                                     ->limit(10)
                                     ->get()

@@ -142,18 +142,26 @@ class DoctorsRelationManager extends XotBaseRelationManager
      * Get the table filters.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, Tables\Filters\Filter|Tables\Filters\SelectFilter>
 =======
      * @return array<string, Tables\Filters\Filter>
 >>>>>>> 2bcfd382 (fix Address)
+=======
+     * @return array<string, Tables\Filters\Filter|Tables\Filters\SelectFilter>
+>>>>>>> 13ea6524 (phpstan)
      */
     public function getTableFilters(): array
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             /*
 =======
 >>>>>>> 2bcfd382 (fix Address)
+=======
+            /*
+>>>>>>> 13ea6524 (phpstan)
             'status' => Tables\Filters\SelectFilter::make('status')
                 ->options([
                     'pending' => 'Pending',
@@ -161,9 +169,13 @@ class DoctorsRelationManager extends XotBaseRelationManager
                     'suspended' => 'Suspended',
                 ]),
 <<<<<<< HEAD
+<<<<<<< HEAD
                 */
 =======
 >>>>>>> 2bcfd382 (fix Address)
+=======
+                */
+>>>>>>> 13ea6524 (phpstan)
             /*
             'specialization' => Tables\Filters\SelectFilter::make('specialization')
                 ->options(function () {
@@ -189,10 +201,14 @@ class DoctorsRelationManager extends XotBaseRelationManager
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'attach' => Tables\Actions\AttachAction::make()
 =======
             Tables\Actions\AttachAction::make()
 >>>>>>> 2bcfd382 (fix Address)
+=======
+            'attach' => Tables\Actions\AttachAction::make()
+>>>>>>> 13ea6524 (phpstan)
                 ->preloadRecordSelect(false) // Importante: non precaricare tutti i record
                 // Soluzione per database cross-database compatibile con Filament 3
                 ->recordSelect(
@@ -207,9 +223,13 @@ class DoctorsRelationManager extends XotBaseRelationManager
                             })
                             // Escludiamo manualmente i dottori già associati invece di usare JOIN
 <<<<<<< HEAD
+<<<<<<< HEAD
                             /** @phpstan-ignore property.notFound */
 =======
 >>>>>>> 2bcfd382 (fix Address)
+=======
+                            /** @phpstan-ignore-next-line */
+>>>>>>> 13ea6524 (phpstan)
                             ->whereNotIn('id', $this->getOwnerRecord()->doctors->modelKeys())
                             ->limit(10)
                             ->get()

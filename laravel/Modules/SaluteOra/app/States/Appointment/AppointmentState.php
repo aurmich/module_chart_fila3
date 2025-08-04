@@ -87,8 +87,8 @@ abstract class AppointmentState extends State
 =======
     {
         return parent::config()
-            ->default(static::class === self::class ? Pending::class : static::class)
-            
+            //->default(static::class === self::class ? Pending::class : static::class)
+            ->default(Pending::class)
             // Pending transitions
             ->allowTransition(Pending::class, Confirmed::class, Transitions\PendingToConfirmed::class)
             ->allowTransition(Pending::class, Cancelled::class, Transitions\PendingToCancelled::class)
@@ -111,6 +111,7 @@ abstract class AppointmentState extends State
             ->allowTransition(Rescheduled::class, Confirmed::class, Transitions\RescheduledToConfirmed::class);
     }
     
+<<<<<<< HEAD
     /**
      * Get the available statuses for the appointment.
      * 
@@ -138,4 +139,7 @@ abstract class AppointmentState extends State
         ];
     }
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
+=======
+    
+>>>>>>> 13ea6524 (phpstan)
 }

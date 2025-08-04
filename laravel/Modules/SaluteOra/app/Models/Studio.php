@@ -144,6 +144,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Studio whereVatNumber($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Studio whereWebsite($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 13ea6524 (phpstan)
  * @property string|null $city
  * @property string|null $postal_code
  * @property string|null $province
@@ -576,7 +579,11 @@ class Studio extends BaseTenant
         foreach($doctors as $doctor){
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             //** @phpstan-ignore property.notFound */
+=======
+            //** @phpstan-ignore-next-line */
+>>>>>>> 13ea6524 (phpstan)
             $tmp=$this->getDoctorEnabledDatesByMonth($doctor->id, $month);
             $dates=array_merge($dates, $tmp);
 =======
@@ -625,6 +632,9 @@ class Studio extends BaseTenant
         }
             */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 13ea6524 (phpstan)
         //return $dates;
        
     }

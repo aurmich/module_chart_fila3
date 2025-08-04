@@ -87,7 +87,7 @@ use Modules\Xot\Contracts\ProfileContract;
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
 /**
  * User Profile Model
- *
+ * 
  * Represents a user profile with relationships to devices, teams, and roles.
  *
  * @property int $id

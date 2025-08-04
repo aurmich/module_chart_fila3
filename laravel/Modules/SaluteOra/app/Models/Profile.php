@@ -6,6 +6,7 @@ namespace Modules\SaluteOra\Models;
 
 use Modules\User\Models\BaseProfile;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 
 
@@ -85,6 +86,9 @@ class Profile extends BaseProfile{
     protected $connection = 'salute_ora';
 } 
 =======
+=======
+use Illuminate\Database\Eloquent\Builder;
+>>>>>>> 13ea6524 (phpstan)
 
 
 /**
@@ -155,9 +159,9 @@ class Profile extends BaseProfile{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile whereUserId($value)
- * @method static Builder<static>|Profile withExtraAttributes()
- * @method static Builder<static>|Profile withoutPermission($permissions)
- * @method static Builder<static>|Profile withoutRole($roles, $guard = null)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile withExtraAttributes()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile withoutPermission($permissions)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile withoutRole($roles, $guard = null)
  * @mixin \Eloquent
  */
 class Profile extends BaseProfile{

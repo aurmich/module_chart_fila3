@@ -6,9 +6,13 @@ namespace Modules\SaluteOra\Enums;
 
 use Filament\Support\Contracts\HasLabel;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use function Safe\class_alias;
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+use function Safe\class_alias;
+>>>>>>> 13ea6524 (phpstan)
 
 enum UserStateEnum: string implements HasLabel
 {
@@ -75,6 +79,7 @@ enum UserStateEnum: string implements HasLabel
 
 // Alias for backward compatibility
 <<<<<<< HEAD
+<<<<<<< HEAD
 //class_alias(UserStateEnum::class, 'Modules\SaluteOra\Enums\UserState');
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
@@ -92,3 +97,6 @@ class_alias(UserStateEnum::class, 'Modules\\SaluteOra\\Enums\\UserState');
 =======
 class_alias(UserStateEnum::class, 'Modules\SaluteOra\Enums\UserState');
 >>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+=======
+//class_alias(UserStateEnum::class, 'Modules\SaluteOra\Enums\UserState');
+>>>>>>> 13ea6524 (phpstan)

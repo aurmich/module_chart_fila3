@@ -8,6 +8,7 @@ namespace Modules\SaluteOra\Enums;
 use Filament\Support\Contracts\HasLabel;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasColor;
+use function Safe\class_alias;
 
 /**
  * Defines the different types of appointments in the system.
@@ -156,6 +157,7 @@ enum DoctorRegistrationStatusEnum: string implements HasLabel, HasIcon, HasColor
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 //class_alias(DoctorRegistrationStatusEnum::class, 'Modules\SaluteOra\Enums\DoctorRegistrationStatus');
 =======
 class_alias(DoctorRegistrationStatusEnum::class, 'Modules\SaluteOra\Enums\DoctorRegistrationStatus');
@@ -166,3 +168,6 @@ class_alias(DoctorRegistrationStatusEnum::class, 'Modules\\\\SaluteOra\\\\Enums\
 =======
 class_alias(DoctorRegistrationStatusEnum::class, 'Modules\SaluteOra\Enums\DoctorRegistrationStatus');
 >>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+=======
+//class_alias(DoctorRegistrationStatusEnum::class, 'Modules\SaluteOra\Enums\DoctorRegistrationStatus');
+>>>>>>> 13ea6524 (phpstan)

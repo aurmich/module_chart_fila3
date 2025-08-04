@@ -39,7 +39,10 @@ use Modules\SaluteOra\Enums\UserTypeEnum;
 use Modules\SaluteOra\Models\Appointment;
 use Modules\SaluteOra\Models\Studio;
 use Modules\SaluteOra\Traits\HasFullCalendarConfig;
+use Illuminate\Support\Facades\Log;
+use Saade\FilamentFullCalendar\Data\EventData;
 use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
+<<<<<<< HEAD
 >>>>>>> 2099645a (.)
 =======
 //use Modules\SaluteOra\Traits\HasFullCalendarConfig;
@@ -50,6 +53,9 @@ use function Safe\strtotime;
 use Modules\SaluteOra\Traits\HasFullCalendarConfig;
 use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
 >>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+=======
+use function Safe\strtotime;
+>>>>>>> 13ea6524 (phpstan)
 
 /**
  * Widget FullCalendar per amministratori.
@@ -58,11 +64,15 @@ use Saade\FilamentFullCalendar\Widgets\FullCalendarWidget;
  * con vista globale, filtri avanzati e funzionalità CRUD complete.
  * Utilizza il trait HasFullCalendarConfig per configurazioni comuni.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 13ea6524 (phpstan)
  * @property ?array $filters
  * @property ?string $filter
  */
 class AdminCalendarWidget extends FullCalendarWidget
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     
@@ -72,6 +82,9 @@ class AdminCalendarWidget extends FullCalendarWidget
 =======
     use HasFullCalendarConfig;
 >>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+=======
+    
+>>>>>>> 13ea6524 (phpstan)
     
     /**
      * Riferimento alla data corrente del calendario.
@@ -122,6 +135,7 @@ class AdminCalendarWidget extends FullCalendarWidget
 =======
 >>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
     
+    
     /**
      * Inizializza il widget impostando la data corrente.
      *
@@ -130,9 +144,12 @@ class AdminCalendarWidget extends FullCalendarWidget
     public function mount(): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         parent::mount();
 >>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
+=======
+>>>>>>> 13ea6524 (phpstan)
         $this->currentDate = now()->format('Y-m-d');
     }
     
@@ -219,6 +236,9 @@ class AdminCalendarWidget extends FullCalendarWidget
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 13ea6524 (phpstan)
      * Generate a cache key for the events query.
      *
      * @param array<string, mixed> $fetchInfo
@@ -283,8 +303,13 @@ class AdminCalendarWidget extends FullCalendarWidget
         return [
             'id' => $appointment->id,
             'title' => $appointment->title ?? 'Appuntamento',
+<<<<<<< HEAD
             'start' => $appointment->starts_at,
             'end' => $appointment->ends_at,
+=======
+            'start' => $appointment->start_time,
+            'end' => $appointment->end_time,
+>>>>>>> 13ea6524 (phpstan)
             'allDay' => false,
             'extendedProps' => [
                 'doctor' => $appointment->doctor->name,
@@ -298,6 +323,7 @@ class AdminCalendarWidget extends FullCalendarWidget
 
     /**
      * Fetch events for the calendar.
+<<<<<<< HEAD
 =======
         return Auth::check() && Auth::user()?->type === UserType::ADMIN;
 =======
@@ -314,6 +340,8 @@ class AdminCalendarWidget extends FullCalendarWidget
 =======
      * Recupera gli eventi per il calendario.
 >>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+=======
+>>>>>>> 13ea6524 (phpstan)
      *
      * @param array<string, mixed> $fetchInfo
      * @return array<int, array<string, mixed>>
@@ -323,11 +351,15 @@ class AdminCalendarWidget extends FullCalendarWidget
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 13ea6524 (phpstan)
         try {
             $cacheKey = $this->getCacheKey($fetchInfo);
             
             return cache()->remember($cacheKey, 300, function () use ($fetchInfo): array {
                 $query = $this->getEventsQuery()
+<<<<<<< HEAD
                     ->whereBetween('starts_at', [
                         $fetchInfo['start'],
                         $fetchInfo['end']
@@ -386,11 +418,30 @@ class AdminCalendarWidget extends FullCalendarWidget
                 ->toArray();
         });
 >>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+=======
+                    ->whereBetween('start_time', [
+                        $fetchInfo['start'],
+                        $fetchInfo['end']
+                    ]);
+
+                $this->applyFilters($query);
+
+                return $query->get()
+                    ->map(fn(Appointment $appointment) => $this->transformToEventData($appointment))
+                    ->values()
+                    ->all();
+            });
+        } catch (\Exception $e) {
+            \Log::error('Error fetching calendar events: ' . $e->getMessage());
+            return [];
+        }
+>>>>>>> 13ea6524 (phpstan)
     }
 
     /**
      * Applica i filtri alla query.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @param \Illuminate\Database\Eloquent\Builder<Appointment> $query
      * @return void
@@ -415,25 +466,35 @@ class AdminCalendarWidget extends FullCalendarWidget
             $query->where('type', $filters['type']);
 =======
      * @param \Illuminate\Database\Eloquent\Builder $query
+=======
+     * @param \Illuminate\Database\Eloquent\Builder<Appointment> $query
+>>>>>>> 13ea6524 (phpstan)
      * @return void
      */
-    protected function applyFilters($query): void
+    protected function applyFilters(\Illuminate\Database\Eloquent\Builder $query): void
     {
-        if ($this->filters['studio_id']) {
-            $query->where('studio_id', $this->filters['studio_id']);
+        $filters = $this->filters ?? [];
+        
+        if (isset($filters['studio_id'])) {
+            $query->where('studio_id', $filters['studio_id']);
         }
 
-        if ($this->filters['status']) {
-            $query->where('status', $this->filters['status']);
+        if (isset($filters['doctor_id'])) {
+            $query->where('doctor_id', $filters['doctor_id']);
         }
 
-        if ($this->filters['type']) {
-            $query->where('type', $this->filters['type']);
+        if (isset($filters['status'])) {
+            $query->where('status', $filters['status']);
         }
 
+<<<<<<< HEAD
         if ($this->filters['emergency_only']) {
             $query->emergency();
 >>>>>>> 2099645a (.)
+=======
+        if (isset($filters['type'])) {
+            $query->where('type', $filters['type']);
+>>>>>>> 13ea6524 (phpstan)
         }
     }
 
@@ -535,6 +596,9 @@ class AdminCalendarWidget extends FullCalendarWidget
     public function onEventClick(array $info): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 13ea6524 (phpstan)
         $event = $info['event'] ?? null;
         
         if (!is_array($event)) {
@@ -542,9 +606,12 @@ class AdminCalendarWidget extends FullCalendarWidget
         }
 
         $appointmentId = $event['id'] ?? null;
+<<<<<<< HEAD
 =======
         $appointmentId = $info['event']['id'] ?? null;
 >>>>>>> 2099645a (.)
+=======
+>>>>>>> 13ea6524 (phpstan)
 
         if (!$appointmentId) {
             return;
@@ -612,10 +679,14 @@ class AdminCalendarWidget extends FullCalendarWidget
         $appointment = Appointment::find($appointmentId);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!$appointment instanceof Appointment) {
 =======
         if (!$appointment) {
 >>>>>>> 2099645a (.)
+=======
+        if (!$appointment instanceof Appointment) {
+>>>>>>> 13ea6524 (phpstan)
             return false;
         }
 
@@ -655,10 +726,14 @@ class AdminCalendarWidget extends FullCalendarWidget
         $appointment = Appointment::find($appointmentId);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!$appointment instanceof Appointment) {
 =======
         if (!$appointment) {
 >>>>>>> 2099645a (.)
+=======
+        if (!$appointment instanceof Appointment) {
+>>>>>>> 13ea6524 (phpstan)
             return false;
         }
 
@@ -675,6 +750,7 @@ class AdminCalendarWidget extends FullCalendarWidget
         return true;
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -714,6 +790,11 @@ class AdminCalendarWidget extends FullCalendarWidget
             ]);
     }
 >>>>>>> 2099645a (.)
+=======
+
+
+
+>>>>>>> 13ea6524 (phpstan)
 
     /**
      * Ottiene le statistiche per il widget.
@@ -735,8 +816,12 @@ class AdminCalendarWidget extends FullCalendarWidget
             'today_appointments' => Appointment::whereDate('start_time', $today)->count(),
             'week_appointments' => Appointment::whereBetween('start_time', [$today, $endOfWeek])->count(),
             'pending_appointments' => Appointment::where('status', AppointmentStatusEnum::PENDING->value)->count(),
+<<<<<<< HEAD
             'emergency_appointments' => Appointment::emergency()->whereDate('start_time', '>=', $today)->count(),
 >>>>>>> 2099645a (.)
+=======
+            'emergency_appointments' => Appointment::where('emergency', true)->whereDate('start_time', '>=', $today)->count(),
+>>>>>>> 13ea6524 (phpstan)
             'total_studios' => Studio::where('active', true)->count(),
         ];
     }
@@ -763,6 +848,7 @@ class AdminCalendarWidget extends FullCalendarWidget
         return sprintf(
             'Vista globale: %d appuntamenti oggi, %d questa settimana, %d emergenze attive',
 <<<<<<< HEAD
+<<<<<<< HEAD
             (int) $stats['today_appointments'],
             (int) $stats['week_appointments'],
             (int) $stats['emergency_appointments']
@@ -771,6 +857,11 @@ class AdminCalendarWidget extends FullCalendarWidget
             $stats['week_appointments'],
             $stats['emergency_appointments']
 >>>>>>> 2099645a (.)
+=======
+            (int) $stats['today_appointments'],
+            (int) $stats['week_appointments'],
+            (int) $stats['emergency_appointments']
+>>>>>>> 13ea6524 (phpstan)
         );
     }
 
@@ -812,6 +903,7 @@ class AdminCalendarWidget extends FullCalendarWidget
     protected function refreshCalendar(): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->invalidateCache();
         $this->dispatch('refresh-calendar');
     }
@@ -822,4 +914,11 @@ class AdminCalendarWidget extends FullCalendarWidget
         $this->dispatch('refresh-calendar');
     }
 >>>>>>> 2099645a (.)
+=======
+        $this->invalidateCache();
+        $this->dispatch('refresh-calendar');
+    }
+
+
+>>>>>>> 13ea6524 (phpstan)
 }

@@ -148,6 +148,7 @@ use Filament\Forms;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Filament\Actions\Action;
+use Webmozart\Assert\Assert;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Cache;
@@ -156,6 +157,7 @@ use Filament\Forms\ComponentContainer;
 use Filament\Forms\Contracts\HasForms;
 use Illuminate\Database\Eloquent\Model;
 use Filament\Forms\Form as FilamentForm;
+use Modules\Xot\Filament\Traits\TransTrait;
 use Filament\Widgets\Widget as FilamentWidget;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Widgets\Concerns\InteractsWithPageFilters;
@@ -175,6 +177,7 @@ use Filament\Widgets\Concerns\InteractsWithPageFilters;
 >>>>>>> 54f4fa16 (.)
 abstract class XotBaseWidget extends FilamentWidget implements HasForms
 {
+    use TransTrait;
     use InteractsWithPageFilters;
     //use InteractsWithPageTable;
     use InteractsWithForms;
@@ -383,6 +386,9 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
         if($model==null){
             return [];
         }
+        if(is_string($model)){
+            Assert::isInstanceOf($model=app($model),Model::class);
+        }
 
        
         // Se il modello ha un ID, significa che è stato trovato nel database
@@ -487,9 +493,15 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
      */
     public static function getNavigationLabel(): string
     {
+        /*
         return (string) (static::$navigationLabel ?? (string) str(static::getLabel())
             ->headline());
+<<<<<<< HEAD
 >>>>>>> d23ba493 (add calendar)
+=======
+        */
+        return static::transFunc(__FUNCTION__);
+>>>>>>> 13ea6524 (phpstan)
     }
 
 <<<<<<< HEAD
@@ -696,7 +708,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasForms
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
 
 
-    public function getWizardSubmitAction(){
+    public function getWizardSubmitAction(): Action{
         $submit_view='pub_theme::filament.wizard.submit-button';
 <<<<<<< HEAD
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)

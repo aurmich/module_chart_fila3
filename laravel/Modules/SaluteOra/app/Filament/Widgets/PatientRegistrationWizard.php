@@ -13,15 +13,22 @@ use Filament\Forms\Components\Wizard;
 use Filament\Forms\Components\Wizard\Step;
 use Filament\Forms\Concerns\InteractsWithForms;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Contracts\HasForms;
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+use Filament\Forms\Contracts\HasForms;
+>>>>>>> 13ea6524 (phpstan)
 use Filament\Forms\Form;
 use Livewire\Component;
 use Illuminate\Support\HtmlString;
 use Modules\SaluteOra\Models\Patient;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 13ea6524 (phpstan)
 /**
  * Widget wizard per la registrazione di nuovi pazienti.
  * 
@@ -29,6 +36,7 @@ use Modules\SaluteOra\Models\Patient;
  * tutte le informazioni necessarie per la registrazione.
  */
 class PatientRegistrationWizard extends Component implements HasForms
+<<<<<<< HEAD
 {
     use InteractsWithForms;
 
@@ -59,17 +67,40 @@ class PatientRegistrationWizard extends Component implements HasForms
      */
 =======
 class PatientRegistrationWizard extends Component
+=======
+>>>>>>> 13ea6524 (phpstan)
 {
     use InteractsWithForms;
 
+    /**
+     * Dati del form del wizard.
+     *
+     * @var array<string, mixed>
+     */
     public ?array $data = [];
 
+
+
+    /**
+     * Inizializza il componente.
+     *
+     * @return void
+     */
     public function mount(): void
     {
-        $this->form->fill();
+        $this->form(Form::make($this))->fill();
     }
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+    /**
+     * Configura il form del wizard.
+     *
+     * @param \Filament\Forms\Form $form
+     * @return \Filament\Forms\Form
+     */
+>>>>>>> 13ea6524 (phpstan)
     public function form(Form $form): Form
     {
         return $form
@@ -78,13 +109,19 @@ class PatientRegistrationWizard extends Component
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 13ea6524 (phpstan)
     /**
      * Schema del form wizard.
      *
      * @return array<int, \Filament\Forms\Components\Component>
      */
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 13ea6524 (phpstan)
     protected function getFormSchema(): array
     {
         return [
@@ -225,11 +262,15 @@ class PatientRegistrationWizard extends Component
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 13ea6524 (phpstan)
     /**
      * Gestisce l'invio del form.
      *
      * @return void
      */
+<<<<<<< HEAD
     public function submit(): void
     {
         /** @var array<string, mixed> $data */
@@ -239,6 +280,12 @@ class PatientRegistrationWizard extends Component
     {
         $data = $this->form->getState();
 >>>>>>> 54f4fa16 (.)
+=======
+    public function submit(): void
+    {
+        /** @var array<string, mixed> $data */
+        $data = $this->form(Form::make($this))->getState();
+>>>>>>> 13ea6524 (phpstan)
 
         $patient = Patient::create($data);
 
@@ -247,6 +294,9 @@ class PatientRegistrationWizard extends Component
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 13ea6524 (phpstan)
     /**
      * Renderizza il componente.
      *

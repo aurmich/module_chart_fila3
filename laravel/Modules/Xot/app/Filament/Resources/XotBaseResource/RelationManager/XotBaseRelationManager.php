@@ -74,6 +74,7 @@ abstract class XotBaseRelationManager extends RelationManager
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         return [];
         //return $this->getResource()::getTableColumns();
 =======
@@ -82,6 +83,10 @@ abstract class XotBaseRelationManager extends RelationManager
 =======
         return $this->getResource()::getTableColumns();
 >>>>>>> 54f4fa16 (.)
+=======
+        return [];
+        //return $this->getResource()::getTableColumns();
+>>>>>>> 13ea6524 (phpstan)
     }
 
     // public function table(Table $table): Table

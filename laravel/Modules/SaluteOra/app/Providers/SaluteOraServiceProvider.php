@@ -48,6 +48,7 @@ class SaluteOraServiceProvider extends XotBaseServiceProvider
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected string $moduleName = 'SaluteOra';
     protected string $moduleNameLower = 'saluteora';
 =======
@@ -66,21 +67,16 @@ class SaluteOraServiceProvider extends XotBaseServiceProvider
     protected $moduleName = 'SaluteOra';
     protected $moduleNameLower = 'saluteora';
 >>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+=======
+    protected string $moduleName = 'SaluteOra';
+    protected string $moduleNameLower = 'saluteora';
+>>>>>>> 13ea6524 (phpstan)
 
     public function boot(): void
     {
         parent::boot();
 
-        // Merge auth configuration
-        $this->mergeConfigFrom(
-            __DIR__.'/../../config/auth.php', 'auth'
-        );
-        
-        // Registra gli observer dei modelli
-        $this->bootObservers();
-
-        // Registra il namespace pub_theme per le views
-        $this->loadViewsFrom(__DIR__.'/../../resources/views', 'pub_theme');
+       
     }
     
     /**
@@ -88,7 +84,7 @@ class SaluteOraServiceProvider extends XotBaseServiceProvider
      */
     protected function bootObservers(): void
     {
-        \Modules\SaluteOra\Models\Studio::observe(\Modules\SaluteOra\Observers\StudioObserver::class);
+       // \Modules\SaluteOra\Models\Studio::observe(\Modules\SaluteOra\Observers\StudioObserver::class);
     }
 
     /*

@@ -33,6 +33,7 @@ use Filament\Forms\Components\Field;
 <<<<<<< HEAD
 use Filament\Forms\Components\Section;
 use function Safe\json_encode;
+<<<<<<< HEAD
 =======
 =======
 use Filament\Forms\Components\Section;
@@ -45,6 +46,8 @@ use Filament\Forms\Components\Section;
 =======
 
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+>>>>>>> 13ea6524 (phpstan)
 // use Squire\Models\Country;
 
 class OpeningHoursField extends Field

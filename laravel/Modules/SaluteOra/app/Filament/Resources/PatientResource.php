@@ -361,6 +361,7 @@ class PatientResource extends XotBaseResource
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'privacy_policy' => Forms\Components\View::make('pub_theme::gdpr.patient-privacy-policy')
                 ->columnSpanFull(),
             'privacy_acceptance' => Forms\Components\Checkbox::make('privacy_acceptance')
@@ -374,11 +375,14 @@ class PatientResource extends XotBaseResource
 
 =======
             Forms\Components\View::make('saluteora::privacy-policy')
+=======
+            'privacy_policy' => Forms\Components\View::make('saluteora::privacy-policy')
+>>>>>>> 13ea6524 (phpstan)
                 ->columnSpanFull(),
-            Forms\Components\Checkbox::make('privacy_acceptance')
+            'privacy_acceptance' => Forms\Components\Checkbox::make('privacy_acceptance')
                 ->required()
                 ->columnSpanFull(),
-            Forms\Components\Checkbox::make('newsletter')
+            'newsletter' => Forms\Components\Checkbox::make('newsletter')
                 ->columnSpanFull(),
         ];
     }

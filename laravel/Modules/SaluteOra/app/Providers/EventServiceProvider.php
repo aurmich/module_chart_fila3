@@ -17,6 +17,7 @@ class EventServiceProvider extends ServiceProvider
      */
     protected $listen = [
 <<<<<<< HEAD
+<<<<<<< HEAD
         //UserModerationStatusUpdated::class => [
          //   UserModerationListener::class,
         //],
@@ -25,6 +26,11 @@ class EventServiceProvider extends ServiceProvider
             UserModerationListener::class,
         ],
 >>>>>>> 54f4fa16 (.)
+=======
+        //UserModerationStatusUpdated::class => [
+         //   UserModerationListener::class,
+        //],
+>>>>>>> 13ea6524 (phpstan)
     ];
 
     /**

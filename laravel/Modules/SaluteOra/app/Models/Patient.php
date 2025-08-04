@@ -122,9 +122,12 @@ use Spatie\Image\Enums\Fit;
  * @property-read int|null $consents_count
  * @property-read \Modules\User\Models\Team|null $currentTeam
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Xot\Contracts\UserContract> $all_team_users
 >>>>>>> f3e4ec66 (.)
+=======
+>>>>>>> 13ea6524 (phpstan)
  * @property-read \Modules\User\Models\AuthenticationLog|null $latestAuthentication
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
@@ -186,6 +189,9 @@ use Spatie\Image\Enums\Fit;
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Device> $devices
  * @property-read int|null $devices_count
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 13ea6524 (phpstan)
  * @property string|null $dental_problems
  * @property string|null $last_dental_visit
  * @property string|null $pregnancy_certificate
@@ -202,6 +208,7 @@ use Spatie\Image\Enums\Fit;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Patient whereIseeCertificate($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Patient whereLastDentalVisit($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Patient wherePregnancyCertificate($value)
+<<<<<<< HEAD
  * @property string|null $country_code
  * @property string|null $children_count
  * @property string|null $family_members
@@ -225,6 +232,8 @@ use Spatie\Image\Enums\Fit;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Patient whereYearsInItaly($value)
 =======
 >>>>>>> f3e4ec66 (.)
+=======
+>>>>>>> 13ea6524 (phpstan)
  * @mixin \Eloquent
  */
 class Patient extends User implements HasMedia
@@ -412,6 +421,7 @@ class Patient extends User implements HasMedia
             ->addMediaConversion('preview')
             ->fit(Fit::Contain, 300, 300)
 <<<<<<< HEAD
+<<<<<<< HEAD
             //->nonQueued()
             ;
 
@@ -542,12 +552,17 @@ class Patient extends User implements HasMedia
 =======
             ->nonQueued();
 >>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
+=======
+            //->nonQueued()
+            ;
+>>>>>>> 13ea6524 (phpstan)
 
         // Conversione per le immagini dei documenti
         $this
             ->addMediaConversion('document')
             ->fit(Fit::Contain, 800, 800)
-            ->nonQueued();
+            //->nonQueued()
+            ;
     }
 
     /**

@@ -30,7 +30,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 >>>>>>> 54f4fa16 (.)
 =======
  * Team Permission Model
- *
+ * 
  * Represents a permission assigned to a user within a team context.
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
  *

@@ -6,6 +6,7 @@ namespace Modules\SaluteOra\Filament\Widgets;
 
 use Filament\Widgets\Widget;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Auth;
 use Modules\SaluteOra\Models\Studio;
 use Illuminate\Support\Facades\DB;
@@ -28,14 +29,33 @@ class StudioOverviewWidget extends Widget
      * @return array<string, mixed>
      */
 =======
+=======
+use Illuminate\Support\Facades\Auth;
+>>>>>>> 13ea6524 (phpstan)
 use Modules\SaluteOra\Models\Studio;
 use Illuminate\Support\Facades\DB;
 
+/**
+ * Widget per la panoramica degli studi.
+ * 
+ * Mostra statistiche generali e informazioni sugli studi presenti nel sistema.
+ */
 class StudioOverviewWidget extends Widget
 {
+    /**
+     * Vista del widget.
+     */
     protected static string $view = 'saluteora::filament.widgets.studio-overview';
 
+<<<<<<< HEAD
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+    /**
+     * Prepara i dati per la vista.
+     *
+     * @return array<string, mixed>
+     */
+>>>>>>> 13ea6524 (phpstan)
     protected function getViewData(): array
     {
         $stats = [
@@ -71,11 +91,15 @@ class StudioOverviewWidget extends Widget
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 13ea6524 (phpstan)
     /**
      * Verifica se l'utente può visualizzare il widget.
      *
      * @return bool
      */
+<<<<<<< HEAD
     public static function canView(): bool
     {
         $user = Auth::user();
@@ -84,9 +108,13 @@ class StudioOverviewWidget extends Widget
     }
 }
 =======
+=======
+>>>>>>> 13ea6524 (phpstan)
     public static function canView(): bool
     {
-        return auth()->user()->can('view_any_studio');
+        $user = Auth::user();
+        
+        return $user !== null && method_exists($user, 'can') && $user->can('view_any_studio');
     }
 }
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)

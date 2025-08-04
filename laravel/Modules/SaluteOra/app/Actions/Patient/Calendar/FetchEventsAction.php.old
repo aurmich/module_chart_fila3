@@ -118,10 +118,10 @@ final class FetchEventsAction
             'borderColor' => $color,
             'textColor' => $this->getContrastColor($color),
             'extendedProps' => [
-                'type' => $appointment->type?->value,
-                'status' => $appointment->status?->value,
-                'doctor_name' => $appointment->doctor?->full_name,
-                'studio_name' => $appointment->studio?->name,
+                'type' => $appointment->type->value,
+                'status' => $appointment->status->value,
+                'doctor_name' => $appointment->doctor->full_name,
+                'studio_name' => $appointment->studio->name,
                 'emergency' => $appointment->emergency,
                 'notes' => $appointment->notes,
             ],
@@ -170,10 +170,11 @@ final class FetchEventsAction
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
             AppointmentTypeEnum::CONSULTATION => '#fd7e14',
-            AppointmentTypeEnum::CLEANING => '#17a2b8',
+            AppointmentTypeEnum::CLEANING, AppointmentTypeEnum::PREVENTION => '#17a2b8',
             AppointmentTypeEnum::TREATMENT => '#28a745',
             AppointmentTypeEnum::EMERGENCY => '#dc3545',
             AppointmentTypeEnum::FOLLOWUP => '#ffc107',
+<<<<<<< HEAD:laravel/Modules/SaluteOra/app/Actions/Patient/Calendar/FetchEventsAction.php
             AppointmentTypeEnum::SURGERY => '#6f42c1',
             AppointmentTypeEnum::ORTHODONTICS => '#6f42c1',
             AppointmentTypeEnum::PREVENTION => '#17a2b8',
@@ -190,6 +191,9 @@ final class FetchEventsAction
 >>>>>>> ca5e1eaf (.)
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+            AppointmentTypeEnum::SURGERY, AppointmentTypeEnum::ORTHODONTICS => '#6f42c1',
+>>>>>>> 13ea6524 (phpstan):laravel/Modules/SaluteOra/app/Actions/Patient/Calendar/FetchEventsAction.php.old
             default => '#3490dc',
         };
     }

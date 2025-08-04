@@ -9,6 +9,7 @@ namespace Modules\User\Models;
 <<<<<<< HEAD
  * DeviceProfile Model
 <<<<<<< HEAD
+<<<<<<< HEAD
  * 
 =======
  *
@@ -22,6 +23,9 @@ namespace Modules\User\Models;
  * DeviceProfile Model
 >>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
  *
+=======
+ * 
+>>>>>>> 13ea6524 (phpstan)
  * Represents the relationship between a device and a user profile.
  * Extends the base DeviceUser model to add specific functionality.
  *

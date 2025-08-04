@@ -54,9 +54,12 @@ class DoctorsRelationManager extends XotBaseRelationManager
      * Get the table columns.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      * @return array<string, Tables\Columns\Column>
 >>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
+=======
+>>>>>>> 13ea6524 (phpstan)
      */
     public function getTableColumns(): array
     {
@@ -172,6 +175,7 @@ class DoctorsRelationManager extends XotBaseRelationManager
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'attach' => Tables\Actions\AttachAction::make()
 =======
             Tables\Actions\AttachAction::make()
@@ -182,6 +186,9 @@ class DoctorsRelationManager extends XotBaseRelationManager
 =======
             Tables\Actions\AttachAction::make()
 >>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+=======
+            'attach' => Tables\Actions\AttachAction::make()
+>>>>>>> 13ea6524 (phpstan)
                 ->preloadRecordSelect(false) // Importante: non precaricare tutti i record
                 // Soluzione per database cross-database compatibile con Filament 3
                 ->recordSelect(
@@ -198,9 +205,13 @@ class DoctorsRelationManager extends XotBaseRelationManager
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                             /** @phpstan-ignore property.notFound */
 =======
 >>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
+=======
+                            /** @phpstan-ignore-next-line */
+>>>>>>> 13ea6524 (phpstan)
                             ->whereNotIn('id', $this->getOwnerRecord()->doctors->modelKeys())
 =======
                             ->whereNotIn('id', function($query) {

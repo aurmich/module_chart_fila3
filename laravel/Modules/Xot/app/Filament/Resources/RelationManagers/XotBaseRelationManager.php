@@ -82,7 +82,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     {
         $index=Arr::get($this->getResource()::getPages(),'index');
         if(!$index){
-            throw new \Exception('Index page not found');
+            //throw new \Exception('Index page not found');
             return [];
         }
 <<<<<<< HEAD
@@ -107,8 +107,12 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         $index_page=$index->getPage();
         
         if(!method_exists($index_page,'getTableColumns')){
+<<<<<<< HEAD
             throw new \Exception('method  getTableColumns on '.print_r($index_page,true).' not found');
 >>>>>>> 23f43388 (feat: add openingHoursField to studiorelationmanager of doctorresource)
+=======
+            //throw new \Exception('method  getTableColumns on '.print_r($index_page,true).' not found');
+>>>>>>> 13ea6524 (phpstan)
             return [];
         }
         $res= app($index_page)->getTableColumns();

@@ -63,12 +63,17 @@ use Spatie\MailTemplates\Models\MailTemplate as SpatieMailTemplate;
  * @method static Builder<static>|MailTemplate whereUpdatedAt($value)
  * @method static Builder<static>|MailTemplate whereUpdatedBy($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property string|null $params
  * @method static Builder<static>|MailTemplate whereParams($value)
  * @property array<array-key, mixed>|null $sms_template
  * @property int $counter
  * @method static Builder<static>|MailTemplate whereCounter($value)
  * @method static Builder<static>|MailTemplate whereSmsTemplate($value)
+=======
+ * @property string|null $params
+ * @method static Builder<static>|MailTemplate whereParams($value)
+>>>>>>> 13ea6524 (phpstan)
  * @mixin \Eloquent
 =======
 >>>>>>> 54f4fa16 (.)

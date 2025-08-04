@@ -5,9 +5,13 @@ namespace Modules\SaluteOra\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use function Safe\preg_match;
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+use function Safe\preg_match;
+>>>>>>> 13ea6524 (phpstan)
 
 class CheckDirectoryStructure extends Command
 {

@@ -57,9 +57,11 @@ use Filament\Forms\Form;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
+use Illuminate\Support\HtmlString;
 use Illuminate\Contracts\View\View;
-use Filament\Pages\SubNavigationPosition;
 
+use Filament\Pages\SubNavigationPosition;
+use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Contracts\Support\Renderable;
 use Modules\Xot\Actions\ModelClass\CountAction;
 use Filament\Resources\Resource as FilamentResource;
@@ -129,7 +131,9 @@ abstract class XotBaseResource extends FilamentResource
 >>>>>>> 54f4fa16 (.)
 =======
         if (null != static::$model) {
-            return static::$model;
+            $res = static::$model;
+            Assert::subclassOf($res, \Illuminate\Database\Eloquent\Model::class, sprintf('Class %s must extend Eloquent Model', $res));
+            return $res;
         }
 >>>>>>> 61a631a5 (✨ (lang_service.php, PreviewAttachment.php, IconMediaColumn.php, NotificationType.php, SpatieEmail.php, NotificationTemplateResource.php, ListMailTemplates.php, PreviewNotificationTemplate.php, NotificationTemplate.php, RecordNotification.php, notification-templates.md): add new features including language support for new document types, a preview attachment page, and notification templates with improved structure and functionality)
         $moduleName = static::getModuleName();
@@ -347,6 +351,7 @@ abstract class XotBaseResource extends FilamentResource
 <<<<<<< HEAD
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getWizardSubmitAction():Htmlable
     {
         $submit_view = 'pub_theme::filament.wizard.submit-button';
@@ -365,6 +370,13 @@ abstract class XotBaseResource extends FilamentResource
         return view($submit_view);
 <<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+    public static function getWizardSubmitAction():Htmlable
+    {
+        $submit_view = 'pub_theme::filament.wizard.submit-button';
+        $render= view($submit_view)->render();
+        return new HtmlString($render);
+>>>>>>> 13ea6524 (phpstan)
     }
 
     public static function getAttachmentsSchema(bool $multiple=true): array{

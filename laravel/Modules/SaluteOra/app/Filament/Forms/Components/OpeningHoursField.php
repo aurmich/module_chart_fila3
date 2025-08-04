@@ -6,6 +6,7 @@ namespace Modules\SaluteOra\Filament\Forms\Components;
 
 use Modules\Xot\Filament\Forms\Components\XotBaseField;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 use Illuminate\Contracts\View\View;
 use Spatie\OpeningHours\OpeningHours;
@@ -16,12 +17,21 @@ class OpeningHoursField extends XotBaseField
 {
     /** @phpstan-ignore property.defaultValue */
 =======
+=======
+
+>>>>>>> 13ea6524 (phpstan)
 use Illuminate\Contracts\View\View;
 use Spatie\OpeningHours\OpeningHours;
+use function Safe\json_decode;
+use function Safe\json_encode;
 
 class OpeningHoursField extends XotBaseField
 {
+<<<<<<< HEAD
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+    /** @phpstan-ignore-next-line */
+>>>>>>> 13ea6524 (phpstan)
     protected string $view = 'saluteora::filament.forms.components.opening-hours-field';
     
     protected function setUp(): void
@@ -70,10 +80,14 @@ class OpeningHoursField extends XotBaseField
     }
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getDefaultState(): array
 =======
     protected function getDefaultState(): array
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+    public function getDefaultState(): array
+>>>>>>> 13ea6524 (phpstan)
     {
         return [
             'monday' => [],
@@ -90,7 +104,11 @@ class OpeningHoursField extends XotBaseField
     public function isOpenNow(): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @phpstan-ignore argument.type */
+=======
+        /** @phpstan-ignore-next-line */
+>>>>>>> 13ea6524 (phpstan)
         $openingHours = OpeningHours::create($this->getState());
         return $openingHours->isOpen();
     }

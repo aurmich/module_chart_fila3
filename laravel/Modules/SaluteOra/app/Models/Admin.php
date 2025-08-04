@@ -95,10 +95,14 @@ use Parental\HasParent;
  * @property-read int|null $consents_count
  * @property-read \Modules\User\Models\Team|null $currentTeam
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\User> $all_team_users
 =======
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Xot\Contracts\UserContract> $all_team_users
 >>>>>>> f3e4ec66 (.)
+=======
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\User> $all_team_users
+>>>>>>> 13ea6524 (phpstan)
  * @property-read \Modules\User\Models\AuthenticationLog|null $latestAuthentication
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property-read int|null $media_count
@@ -160,6 +164,9 @@ use Parental\HasParent;
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Device> $devices
  * @property-read int|null $devices_count
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 13ea6524 (phpstan)
  * @property string|null $dental_problems
  * @property string|null $last_dental_visit
  * @property string|null $pregnancy_certificate
@@ -176,6 +183,7 @@ use Parental\HasParent;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereIseeCertificate($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereLastDentalVisit($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin wherePregnancyCertificate($value)
+<<<<<<< HEAD
  * @property string|null $country_code
  * @property string|null $children_count
  * @property string|null $family_members
@@ -215,6 +223,8 @@ use Parental\HasParent;
 >>>>>>> ba775c8f (📝 (address.php, lang_service.php, UserTypeEnum.php, PatientResource.php, UserResource.php, Admin.php, Patient.php, StudioUser.php, AdminStudio.php, PatientStudio.php, AdminPanelProvider.php, RegisterTenant.php, various lang files): update translation files to use short array syntax for consistency and readability; remove redundant code and comments to improve clarity and maintainability.)
 =======
 >>>>>>> f3e4ec66 (.)
+=======
+>>>>>>> 13ea6524 (phpstan)
  * @mixin \Eloquent
  */
 class Admin extends User
