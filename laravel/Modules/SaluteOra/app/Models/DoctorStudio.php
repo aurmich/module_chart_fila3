@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 use Carbon\Carbon;
 use Parental\HasParent;
@@ -20,7 +21,11 @@ use Safe\DateTime;
  * 
 =======
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+=======
+use Parental\HasParent;
+>>>>>>> 15b0d65c (refactor(DoctorStudio.php): simplify DoctorStudio model by extending StudioUser and removing unnecessary properties and methods to enhance maintainability and clarity)
 use Modules\SaluteOra\Models\BasePivot;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * Modello pivot per la relazione many-to-many tra Doctor e Studio.
@@ -88,8 +93,9 @@ class DoctorStudio extends StudioUser
         'id',
 =======
  */
-class DoctorStudio extends BasePivot
+class DoctorStudio extends StudioUser
 {
+<<<<<<< HEAD
     /**
      * In questo caso specifico, dobbiamo dichiarare esplicitamente la tabella e la connection
      * perché stiamo lavorando con una relazione cross-database.
@@ -309,5 +315,8 @@ class DoctorStudio extends BasePivot
         // La relazione con Studio è nello stesso database, quindi è più semplice
         return $this->belongsTo(Studio::class, 'studio_id', 'id', 'studio');
     }
+=======
+    use HasParent;
+>>>>>>> 15b0d65c (refactor(DoctorStudio.php): simplify DoctorStudio model by extending StudioUser and removing unnecessary properties and methods to enhance maintainability and clarity)
 }
 >>>>>>> 2bcfd382 (fix Address)
