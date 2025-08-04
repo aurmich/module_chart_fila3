@@ -11,6 +11,7 @@ Fondazione ANDI E.T.S. sui suoi dati personali nell'ambito del Progetto
 "Salute Ora" e le indica i diritti che la normativa le garantisce.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
@@ -22,6 +23,8 @@ Fondazione ANDI E.T.S. sui suoi dati personali nell'ambito del Progetto
 
 Il logo di Salute ORAle presenta uno sfondo blu scuro (navy) con la scritta "SALUTE ORAle" in bianco. Il design è elegante e minimalista, con le lettere "S" e "O" più sottili e la porzione "le" in corsivo grigio chiaro, creando un contrasto visivo che trasmette professionalità e affidabilità.
 
+=======
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
 # Presentazione del Portale
 
 ## Homepage
@@ -114,6 +117,7 @@ Durante il primo accesso:
 - Organizzazione dati secondo logiche concordate
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 
 # INFORMATIVA PRIVACY DETTAGLIATA
@@ -127,6 +131,13 @@ Durante il primo accesso:
 >>>>>>> f25a0df8 (.)
 >>>>>>> 9df8f556 (fix .md)
 **Dati personali**
+=======
+---
+
+# INFORMATIVA PRIVACY DETTAGLIATA
+
+## Dati personali
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
 
 # Quali dati personali raccogliamo?
 
@@ -140,6 +151,7 @@ Fondazione ANDI ETS raccoglie i seguenti dati:
 
 - dati relativi alle visite svolte nell'ambito del progetto "Salute
   Ora".
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -161,6 +173,8 @@ Il form di registrazione è ottimizzato sia per dispositivi mobili che desktop, 
 =======
 >>>>>>> f25a0df8 (.)
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
 # Per quali finalità utilizziamo i suoi dati personali?
 
 Trattiamo i dati personali per le seguenti finalità:
@@ -177,6 +191,7 @@ Trattiamo i dati personali per le seguenti finalità:
 - Procedere al pagamento del compenso per le visite che effettua
   nell'ambito del progetto (la legittimazione del trattamento si fonda
   sull'esecuzione di obblighi normativi e contrattuali)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -198,6 +213,8 @@ La dashboard odontoiatri presenta un'interfaccia mobile con tre sezioni principa
 =======
 >>>>>>> f25a0df8 (.)
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
 # Con quali modalità Fondazione ANDI ETS tratta i suoi dati personali e per quanto tempo li conserva?
 
 I suoi dati personali sono trattati sia in modalità cartacea che
@@ -211,6 +228,7 @@ supporto digitale sono eliminati con procedura informatica, a meno che
 non esistano obblighi di legge specifici che ne impongano la
 conservazione ulteriore. I tempi di conservazione specifici possono
 essere richiesti in ogni momento al Titolare.
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -232,6 +250,8 @@ L'immagine mostra un'interfaccia dedicata alla gestione dei dati personali, con 
 =======
 >>>>>>> f25a0df8 (.)
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
 # A chi comunichiamo i suoi dati personali?
 
 Possono accedere ai Suoi dati personali i dipendenti e collaboratori che
@@ -258,6 +278,7 @@ personali. Inoltre, i suoi dati personali potranno essere comunicati ad
 Autorità, Enti ed Istituzioni qualora tale comunicazione avvenga in
 esecuzione di un obbligo normativo.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
@@ -278,6 +299,8 @@ Il diagramma mostra il flusso dei dati personali all'interno del sistema, illust
 =======
 >>>>>>> f25a0df8 (.)
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
 # Quali sono i suoi diritti come interessato al trattamento e come può esercitarli?
 
 Il Regolamento europeo in materia di protezione dei dati personali
@@ -291,6 +314,7 @@ decisione basata unicamente sul trattamento automatizzato (art. 22), il
 diritto di revocare il consenso prestato, il diritto di proporre reclamo
 all'Autorità Garante della protezione dei dati qualora ritenga che il
 trattamento dei suoi dati sia contrario alla normativa in vigore.
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -312,6 +336,8 @@ L'infografica illustra in modo chiaro e comprensibile i diritti garantiti dal GD
 =======
 >>>>>>> f25a0df8 (.)
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
 # Come può contattarci?
 
 La presente informativa ha lo scopo di informarLa su quali siano i Suoi
@@ -328,6 +354,7 @@ Il Titolare del Trattamento ha designato, ai sensi dell'art. 37 del
 GDPR, il Responsabile per la Protezione dei Dati, i cui dati di contatto
 sono: <dpo@fondazioneandi.org>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ---
 
@@ -375,11 +402,54 @@ L'infografica illustra in modo chiaro e comprensibile i diritti garantiti dal GD
 =======
 >>>>>>> f25a0df8 (.)
 >>>>>>> 9df8f556 (fix .md)
+=======
+---
 
+# APPENDICE: SCREENSHOT DEL PORTALE
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
+
+## Logo Salute ORAle
+![Logo Salute ORAle](images/0.png)
+[Versione Markdown](images/0.md) | [Versione HTML](images/0.html) | [Versione Blade](images/0.blade.php)
+
+Il logo di Salute ORAle presenta uno sfondo blu scuro (navy) con la scritta "SALUTE ORAle" in bianco. Il design è elegante e minimalista, con le lettere "S" e "O" più sottili e la porzione "le" in corsivo grigio chiaro, creando un contrasto visivo che trasmette professionalità e affidabilità.
+
+## Form di registrazione odontoiatri
+![Form di registrazione odontoiatri](images/1.png)
+[Versione Markdown](images/1.md) | [Versione HTML](images/1.html) | [Versione Blade](images/1.blade.php)
+
+Il form di registrazione è ottimizzato sia per dispositivi mobili che desktop, con un layout responsive che si adatta alle diverse dimensioni dello schermo. Utilizza Tailwind CSS per lo styling e garantisce un'esperienza utente fluida e professionale.
+
+## Dashboard odontoiatri
+![Dashboard odontoiatri](images/2.png)
+[Versione Markdown](images/2.md) | [Versione HTML](images/2.html) | [Versione Blade](images/2.blade.php)
+
+La dashboard odontoiatri presenta un'interfaccia mobile con tre sezioni principali: un'intestazione bianca con logo e selettore lingua, una sezione centrale blu navy con il messaggio di benvenuto e i passaggi del programma, e un piè di pagina con i loghi dei partner. Il design è minimalista e professionale, con un forte contrasto tra testo bianco su sfondo blu e testo blu su sfondo bianco.
+
+## Gestione dati personali
+![Gestione dati personali](images/3.png)
+[Versione Markdown](images/3.md) | [Versione HTML](images/3.html) | [Versione Blade](images/3.blade.php)
+
+L'immagine mostra un'interfaccia dedicata alla gestione dei dati personali, con un design pulito e organizzato che facilita la visualizzazione e la gestione delle informazioni sensibili.
+
+## Flusso dati
+![Flusso dati](images/4.png)
+[Versione Markdown](images/4.md) | [Versione HTML](images/4.html) | [Versione Blade](images/4.blade.php)
+
+Il diagramma mostra il flusso dei dati personali all'interno del sistema, illustrando come le informazioni vengono gestite e protette durante tutto il processo di trattamento.
+
+## Diritti GDPR
+![Diritti GDPR](images/5.png)
+[Versione Markdown](images/5.md) | [Versione HTML](images/5.html) | [Versione Blade](images/5.blade.php)
+
+L'infografica illustra in modo chiaro e comprensibile i diritti garantiti dal GDPR, aiutando gli utenti a comprendere le loro prerogative in materia di protezione dei dati personali.
+
+## Contatti
 ![Contatti](images/6.png)
 [Versione Markdown](images/6.md) | [Versione HTML](images/6.html) | [Versione Blade](images/6.blade.php)
 
 L'immagine mostra le informazioni di contatto in un formato chiaro e accessibile, con il logo dell'organizzazione e i dettagli per contattare il Responsabile della Protezione dei Dati.
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -388,3 +458,5 @@ L'immagine mostra le informazioni di contatto in un formato chiaro e accessibile
 =======
 >>>>>>> f25a0df8 (.)
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)

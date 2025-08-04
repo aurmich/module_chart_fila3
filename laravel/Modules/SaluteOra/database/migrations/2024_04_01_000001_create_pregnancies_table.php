@@ -26,10 +26,14 @@ return new class extends XotBaseMigration
              function (Blueprint $table): void {
                 $table->id();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 //$this->foreignIdFor($table,Tenant::class);
 =======
                 $this->foreignIdFor($table,Tenant::class);
 >>>>>>> 54f4fa16 (.)
+=======
+                //$this->foreignIdFor($table,Tenant::class);
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
                 $this->foreignIdFor($table,Patient::class);
                 $table->date('expected_delivery_date')->nullable();
                 $table->integer('weeks_pregnant')->nullable();

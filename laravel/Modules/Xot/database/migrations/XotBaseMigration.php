@@ -379,6 +379,7 @@ abstract class XotBaseMigration extends Migration
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * Add a foreign ID column to the table based on a related model.
      *
@@ -407,6 +408,10 @@ abstract class XotBaseMigration extends Migration
 >>>>>>> d23ba493 (add calendar)
     public function foreignIdFor($table, $class) {
         $table->foreignIdFor($class);
+=======
+    public function foreignIdFor($table, $class, $column = null) {
+        $table->foreignIdFor($class, $column);
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
     } 
     public function hasTable($table) {
         return $this->getConn()->hasTable($table);

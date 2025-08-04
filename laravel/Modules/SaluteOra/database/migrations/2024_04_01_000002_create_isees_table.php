@@ -10,6 +10,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 return new class extends XotBaseMigration
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
     /**
@@ -20,6 +21,9 @@ return new class extends XotBaseMigration
     protected string $table = 'isees';
 
 >>>>>>> 54f4fa16 (.)
+=======
+    
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
     /**
      * Run the migrations.
      */
@@ -30,10 +34,14 @@ return new class extends XotBaseMigration
             function (Blueprint $table): void {
                 $table->id();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 //$this->foreignIdFor($table,Tenant::class);
 =======
                 $this->foreignIdFor($table,Tenant::class);
 >>>>>>> 54f4fa16 (.)
+=======
+                //$this->foreignIdFor($table,Tenant::class);
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
                 $this->foreignIdFor($table,Patient::class);
                 $table->string('isee_code')->nullable();
                 $table->decimal('isee_value', 10, 2)->nullable();

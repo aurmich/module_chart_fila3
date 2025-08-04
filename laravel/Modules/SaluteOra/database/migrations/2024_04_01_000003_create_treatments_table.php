@@ -6,15 +6,20 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\Tenant\Models\Tenant;
 use Modules\SaluteOra\Models\Patient;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\SaluteOra\Models\Doctor;
 =======
 use Modules\SaluteOra\Models\Dentist;
 >>>>>>> 54f4fa16 (.)
+=======
+use Modules\SaluteOra\Models\Doctor;
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
 use Modules\SaluteOra\Models\Appointment;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     
 =======
@@ -25,6 +30,9 @@ return new class extends XotBaseMigration
      */
     protected string $table = 'treatments';
 >>>>>>> 54f4fa16 (.)
+=======
+    
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
 
     /**
      * Run the migrations.
@@ -36,16 +44,22 @@ return new class extends XotBaseMigration
             function (Blueprint $table): void {
                 $table->id();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
                 //$this->foreignIdFor($table,Tenant::class);
                 $this->foreignIdFor($table,Patient::class,'patient_id');
                 $this->foreignIdFor($table,Doctor::class,'doctor_id');
                 $this->foreignIdFor($table,Appointment::class,'appointment_id');
+<<<<<<< HEAD
 =======
                 $this->foreignIdFor($table,Tenant::class);
                 $this->foreignIdFor($table,Patient::class);
                 $this->foreignIdFor($table,Dentist::class);
                 $this->foreignIdFor($table,Appointment::class);
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
                 $table->string('type');
                 $table->text('description')->nullable();
                 $table->text('notes')->nullable();

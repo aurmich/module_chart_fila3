@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <x-layouts.marketing>
 
 =======
@@ -503,3 +504,6 @@ name('genesis.power-ups');
 =======
 </x-layouts.marketing>
 >>>>>>> 54f4fa16 (.)
+=======
+ 
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)

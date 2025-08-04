@@ -7,13 +7,17 @@ use Illuminate\Database\Schema\Blueprint;
 <<<<<<< HEAD
 use Modules\SaluteOra\Models\Appointment;
 use Modules\SaluteOra\Models\Doctor;
+<<<<<<< HEAD
 =======
 =======
 use Modules\SaluteOra\Models\Appointment;
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 use Modules\SaluteOra\Models\Dentist;
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
 use Modules\SaluteOra\Models\Patient;
+use Modules\SaluteOra\Models\Studio;
 use Modules\Tenant\Models\Tenant;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
@@ -51,6 +55,7 @@ return new class extends XotBaseMigration
                 $table->id();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $table->foreignIdFor(Patient::class);
                 $table->foreignIdFor(Doctor::class);
 =======
@@ -63,6 +68,12 @@ return new class extends XotBaseMigration
                 $table->foreignIdFor(Patient::class);
                 $table->foreignIdFor(Dentist::class);
 >>>>>>> 35a7c2ee (- homeboarding chiara)
+=======
+                //$table->foreignIdFor(Tenant::class);
+                $table->foreignIdFor(Patient::class,'patient_id');
+                $table->foreignIdFor(Doctor::class,'doctor_id');
+                $table->foreignIdFor(Studio::class,'studio_id');
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
                 $table->date('date');
                 $table->time('start_time');
                 $table->time('end_time');

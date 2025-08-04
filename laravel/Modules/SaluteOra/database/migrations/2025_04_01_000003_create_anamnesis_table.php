@@ -24,12 +24,17 @@ return new class extends XotBaseMigration
             function (Blueprint $table): void {
                 $table->id();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 //$this->foreignIdFor($table,Tenant::class);
                 $this->foreignIdFor($table,Patient::class,'patient_id');
 =======
                 $this->foreignIdFor($table,Tenant::class);
                 $this->foreignIdFor($table,Patient::class);
 >>>>>>> 54f4fa16 (.)
+=======
+                //$this->foreignIdFor($table,Tenant::class);
+                $this->foreignIdFor($table,Patient::class,'patient_id');
+>>>>>>> 14549b25 (chore(composer.json): update composer configuration to include keywords, license, and additional plugins for better project management and tooling integration)
                 $table->json('allergies')->nullable();
                 $table->json('chronic_diseases')->nullable();
                 $table->json('medications')->nullable();
