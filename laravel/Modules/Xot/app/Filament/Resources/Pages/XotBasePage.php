@@ -54,10 +54,10 @@ use Filament\Pages\Concerns\InteractsWithFormActions;
 =======
 /**
  * Base class for all custom pages in the application.
- * 
+ *
  * This class provides common functionality for custom pages,
  * following the architectural pattern of never extending Filament classes directly.
- * 
+ *
  * @property ?string $model
  * @property ?array $data
  */
@@ -145,6 +145,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      * Get page title with automatic translation.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getTitle(): string
     {
 <<<<<<< HEAD
@@ -154,6 +155,9 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 >>>>>>> aurmich/dev
 =======
     public function getTitle(): string 
+=======
+    public function getTitle(): string
+>>>>>>> a33c954b (fix: formattazione XotBasePage.php)
     {
         return static::transTitle();
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
@@ -180,6 +184,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
     /**
      * Get the form schema for the page.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 <<<<<<< HEAD
      * @return array<string, Component>
@@ -188,6 +193,9 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 >>>>>>> aurmich/dev
 =======
      * 
+=======
+     *
+>>>>>>> a33c954b (fix: formattazione XotBasePage.php)
      * @return array<string, Component|array<string, Component>>
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
      */
