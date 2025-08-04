@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 # Regole Critiche per Traduzioni e Documentazione
 
 ## REGOLA ASSOLUTA: MAI USARE ->label()
@@ -40,7 +39,6 @@ enum MyEnum: string {
     
     public function getHelperText(): string {
         return $this->transClass(self::class, $this->value.'.helper_text');
-=======
 # Regole Critiche per Traduzioni - Windsurf Rules
 
 ## REGOLA ASSOLUTA: MAI USARE ->label()
@@ -111,19 +109,15 @@ enum MyEnum: string implements HasColor, HasIcon, HasLabel
     public function getHelperText(): string
     {
         return $this->transClass(self::class, $this->value . '.helper_text');
->>>>>>> 8c16842 (.)
     }
 }
 ```
 
-<<<<<<< HEAD
 ## REGOLA CRITICA PER DOCUMENTAZIONE: MAI ESEMPI CON ->label()
 - **VIETATO**: Scrivere esempi con `->label()` nella documentazione
 - **OBBLIGATORIO**: Esempi puliti senza hardcoded strings
 - **PATTERN CORRETTO PER DOCUMENTAZIONE**:
-=======
 ## PATTERN CORRETTO PER DOCUMENTAZIONE
->>>>>>> 8c16842 (.)
 ```php
 // ✅ CORRETTO - Solo make() senza ->label()
 TextColumn::make('name')
@@ -140,7 +134,6 @@ Select::make('status')
     ]),
 ```
 
-<<<<<<< HEAD
 ## REGOLA CRITICA PER FILE DI TRADUZIONE: STRUTTURA ESPANSA
 - **OBBLIGATORIO**: Struttura espansa per tutti i campi
 - **PATTERN CORRETTO PER FILE DI TRADUZIONE**:
@@ -196,7 +189,6 @@ return [
 - [ ] Aggiornare regole e memorie dopo ogni correzione
 
 ULTIMO AGGIORNAMENTO: 2025-01-27 - REGOLA CRITICA DA RICORDARE SEMPRE
-=======
 ## PATTERN CORRETTO PER FILE DI TRADUZIONE
 ```php
 // lang/it/my-module.php
@@ -236,4 +228,3 @@ return [
 - Evitare errori e duplicazioni
 - Standardizzazione della documentazione
 - Pulizia del repository Git
->>>>>>> 8c16842 (.)

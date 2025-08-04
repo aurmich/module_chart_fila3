@@ -1,21 +1,6 @@
-<<<<<<< HEAD
-name: PHPStan
-
-on:
-  push:
-    paths:
-      - '**.php'
-      - 'phpstan.neon.dist'
-  pull_request:
-    paths:
-      - '**.php'
-      - 'phpstan.neon.dist'
-
-=======
 name: Static Analysis
 
 on: [push]
->>>>>>> 8c16842 (.)
 
 jobs:
   phpstan:
@@ -27,16 +12,6 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-<<<<<<< HEAD
-          php-version: '8.1'
-          coverage: none
-
-      - name: Install composer dependencies
-        uses: ramsey/composer-install@v2
-
-      - name: Run PHPStan
-        run: ./vendor/bin/phpstan --error-format=github
-=======
           php-version: '8.2'
           coverage: none
 
@@ -46,4 +21,3 @@ jobs:
       - name: Run Static Analysis
         run: ./vendor/bin/phpstan --error-format=github
 
->>>>>>> 8c16842 (.)

@@ -50,7 +50,6 @@ Ho identificato e corretto tutti i file `readme.md` in minuscolo, implementando 
   - **Azione**: Rimosso `readme.md` (minuscolo)
   - **Risultato**: Solo `README.md` (maiuscolo) mantenuto
 
-<<<<<<< HEAD
 ### Terza Sessione (Correzione Critica - 27 Gennaio 2025)
 
 #### ⚠️ CORREZIONE CRITICA: File nelle Cartelle Docs
@@ -79,7 +78,6 @@ Ho identificato e corretto tutti i file `readme.md` in minuscolo, implementando 
 
 ### 2. Memorie Cursor (.cursor/memories/)
 - **File**: `docs-naming-convention.mdc`
-=======
 ## Sistema di Prevenzione Implementato
 
 ### 1. Regole Cursor (.cursor/rules/)
@@ -90,17 +88,13 @@ Ho identificato e corretto tutti i file `readme.md` in minuscolo, implementando 
 
 ### 2. Memorie Cursor (.cursor/memories/)
 - **File**: `readme-naming-convention.mdc`
->>>>>>> 8c16842 (.)
 - **Contenuto**: Memoria permanente per evitare errori futuri
 - **Comandi**: Script per trovare e correggere file problematici
 - **Checklist**: Procedura completa di verifica
 
 ### 3. Documentazione Root (docs/)
-<<<<<<< HEAD
 - **File**: `docs-naming-convention.md`
-=======
 - **File**: `readme-naming-convention.md`
->>>>>>> 8c16842 (.)
 - **Contenuto**: Guida completa con esempi e best practices
 - **Motivazione**: Documentazione dettagliata per il team
 - **Collegamenti**: Link a documentazione correlata
@@ -111,7 +105,6 @@ Ho identificato e corretto tutti i file `readme.md` in minuscolo, implementando 
 - **Posizione**: Sezione Coding Standards
 - **Priorità**: Marcatura come CRITICO
 
-<<<<<<< HEAD
 ## Regole Fondamentali Implementate
 
 ### ⚠️ REGOLA CRITICA 1: README.md in Maiuscolo (Solo fuori docs)
@@ -128,7 +121,6 @@ Ho identificato e corretto tutti i file `readme.md` in minuscolo, implementando 
 - **README.md maiuscolo**: Coerenza con standard GitHub/Git
 - **File docs minuscolo**: Coerenza con convenzioni documentazione
 - **Separazione chiara**: Due regole distinte per contesti diversi
-=======
 ## Regola Fondamentale Implementata
 
 ### ⚠️ REGOLA CRITICA ⚠️
@@ -141,7 +133,6 @@ Ho identificato e corretto tutti i file `readme.md` in minuscolo, implementando 
 - Riconoscimento automatico da parte di editor e sistemi
 - Standardizzazione cross-platform
 - Migliore visibilità e identificazione
->>>>>>> 8c16842 (.)
 
 ## Procedura per Conflitti Futuri
 
@@ -173,7 +164,6 @@ ls -la README.md
 
 ### Trova File Problematici
 ```bash
-<<<<<<< HEAD
 # Trova tutti i file readme.md in minuscolo (fuori docs)
 find . -name "readme.md" -type f -not -path "./docs/*"
 
@@ -182,13 +172,11 @@ find . -name "README.md" -type f -not -path "./docs/*"
 
 # Trova file con caratteri maiuscoli nelle cartelle docs
 find docs -name "*[A-Z]*" -type f
-=======
 # Trova tutti i file readme.md in minuscolo
 find . -name "readme.md" -type f
 
 # Trova tutti i file README.md in maiuscolo
 find . -name "README.md" -type f
->>>>>>> 8c16842 (.)
 
 # Trova conflitti (entrambi esistono)
 find . -name "readme.md" -type f | while read file; do dir=$(dirname "$file"); if [ -f "$dir/README.md" ]; then echo "CONFLITTO: $file e $dir/README.md"; fi; done
@@ -196,21 +184,17 @@ find . -name "readme.md" -type f | while read file; do dir=$(dirname "$file"); i
 
 ### Correzione Automatica
 ```bash
-<<<<<<< HEAD
 # Script per rinominare tutti i file readme.md in README.md (fuori docs)
 find . -name "readme.md" -type f -not -path "./docs/*" -exec bash -c 'mv "$1" "$(dirname "$1")/README.md"' _ {} \;
 
 # Script per rinominare tutti i file con caratteri maiuscoli in minuscolo (in docs)
 find docs -name "*[A-Z]*" -type f -exec bash -c 'mv "$1" "$(dirname "$1")/$(basename "$1" | tr "[:upper:]" "[:lower:]")"' _ {} \;
-=======
 # Script per rinominare tutti i file readme.md in README.md
 find . -name "readme.md" -type f -exec bash -c 'mv "$1" "$(dirname "$1")/README.md"' _ {} \;
->>>>>>> 8c16842 (.)
 ```
 
 ## Checklist Completata
 
-<<<<<<< HEAD
 - [x] Verificare esistenza di file `readme.md` in minuscolo (fuori docs)
 - [x] Confrontare contenuti con `README.md` se esistente (fuori docs)
 - [x] Assemblare contenuti se necessario (fuori docs)
@@ -218,13 +202,11 @@ find . -name "readme.md" -type f -exec bash -c 'mv "$1" "$(dirname "$1")/README.
 - [x] Verificare che tutti i file nelle cartelle docs siano in minuscolo
 - [x] Rinominare tutti i file con caratteri maiuscoli in minuscolo (in docs)
 - [x] Aggiornare riferimenti nei file
-=======
 - [x] Verificare esistenza di file `readme.md` in minuscolo
 - [x] Confrontare contenuti con `README.md` se esistente
 - [x] Assemblare contenuti se necessario
 - [x] Mantenere solo `README.md` in maiuscolo
 - [x] Aggiornare riferimenti nei file correlati
->>>>>>> 8c16842 (.)
 - [x] Documentare la correzione
 - [x] Implementare sistema di prevenzione
 - [x] Aggiornare regole e memorie Cursor
@@ -241,7 +223,6 @@ find . -name "readme.md" -type f -exec bash -c 'mv "$1" "$(dirname "$1")/README.
 - ✅ `laravel/Modules/Activity/docs/readme.md` → rimosso
 
 ### File Corretti (Seconda Sessione - Oggi)
-<<<<<<< HEAD
 - ✅ **21 file rinominati** da `readme.md` a `README.md` (fuori docs)
 - ✅ **1 conflitto risolto** in `laravel/Modules/User/.devcontainer/`
 - ✅ **1 file rinominato** in `laravel/Modules/Lang/docs/_integration/`
@@ -251,12 +232,10 @@ find . -name "readme.md" -type f -exec bash -c 'mv "$1" "$(dirname "$1")/README.
 - ✅ **50+ file README.md** rinominati in `readme.md` in tutte le sottocartelle docs
 - ✅ **Tutti i file** nelle cartelle docs ora in minuscolo
 
-=======
 - ✅ **21 file rinominati** da `readme.md` a `README.md`
 - ✅ **1 conflitto risolto** in `laravel/Modules/User/.devcontainer/`
 - ✅ **1 file rinominato** in `laravel/Modules/Lang/docs/_integration/`
 
->>>>>>> 8c16842 (.)
 ### Sistema Prevenzione
 - ✅ Regole Cursor aggiornate
 - ✅ Memorie Cursor aggiornate
@@ -264,40 +243,31 @@ find . -name "readme.md" -type f -exec bash -c 'mv "$1" "$(dirname "$1")/README.
 - ✅ Indice documentazione aggiornato
 
 ### Conformità
-<<<<<<< HEAD
 - ✅ Tutti i file README.md fuori docs ora in maiuscolo
 - ✅ Tutti i file nelle cartelle docs ora in minuscolo
 - ✅ Nessun file con caratteri maiuscoli rimasto nelle cartelle docs
-=======
 - ✅ Tutti i file README.md ora in maiuscolo
 - ✅ Nessun file readme.md in minuscolo rimasto (escluso vendor)
->>>>>>> 8c16842 (.)
 - ✅ Sistema di prevenzione implementato
 - ✅ Documentazione completa e aggiornata
 
 ## Note Importanti
 
-<<<<<<< HEAD
 1. **Coerenza**: Due regole distinte per contesti diversi
 2. **Prevenzione**: Sistema implementato per evitare ricorrenze future
 3. **Documentazione**: Guida completa per il team
 4. **Automazione**: Script disponibili per correzioni future
 5. **Completezza**: Corretti tutti i file nel progetto
-=======
 1. **Coerenza**: Tutti i file README.md ora seguono la convenzione standard
 2. **Prevenzione**: Sistema implementato per evitare ricorrenze future
 3. **Documentazione**: Guida completa per il team
 4. **Automazione**: Script disponibili per correzioni future
 5. **Completezza**: Corretti tutti i file nel progetto (escluso vendor/node_modules)
->>>>>>> 8c16842 (.)
 
 ## Collegamenti
 
 - [Convenzione Naming README.md](readme-naming-convention.md)
-<<<<<<< HEAD
 - [Convenzione Naming Docs](docs-naming-convention.md)
-=======
->>>>>>> 8c16842 (.)
 - [Indice Documentazione](indice_documentazione.md)
 - [Best Practices](best-practices.md)
 
