@@ -36,6 +36,7 @@ return new class extends XotBaseMigration
             function (Blueprint $table): void {
                 $table->id();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $table->foreignIdFor(Patient::class);
                 $table->foreignIdFor(Doctor::class);
 =======
@@ -43,6 +44,11 @@ return new class extends XotBaseMigration
                 $this->foreignIdFor($table,Patient::class);
                 $this->foreignIdFor($table,Dentist::class);
 >>>>>>> 54f4fa16 (.)
+=======
+                $table->foreignIdFor(Tenant::class);
+                $table->foreignIdFor(Patient::class);
+                $table->foreignIdFor(Dentist::class);
+>>>>>>> 35a7c2ee (- homeboarding chiara)
                 $table->date('date');
                 $table->time('start_time');
                 $table->time('end_time');
