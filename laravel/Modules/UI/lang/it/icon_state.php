@@ -1,11 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 return [
     'fields' => [
         'name' => [
@@ -45,52 +39,3 @@ return [
         ],
     ],
 ];
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
-=======
->>>>>>> d23ba493 (add calendar)
-return array (
-  'fields' => 
-  array (
-    'name' => 
-    array (
-      'label' => 'name',
-      'placeholder' => 'name',
-      'helper_text' => 'name',
-      'description' => 'name',
-    ),
-    'edit-name' => 
-    array (
-      'label' => 'edit-name',
-    ),
-    'change-state' => 
-    array (
-      'label' => 'cambia stato',
-    ),
-    'state' => 
-    array (
-      'description' => 'state',
-      'helper_text' => 'state',
-      'placeholder' => 'state',
-      'label' => 'state',
-    ),
-    'message' => 
-    array (
-      'description' => 'message',
-      'helper_text' => 'message',
-      'placeholder' => 'message',
-      'label' => 'message',
-    ),
-  ),
-);
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev

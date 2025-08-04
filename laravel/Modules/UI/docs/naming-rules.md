@@ -13,34 +13,14 @@ I moduli devono essere generici e riutilizzabili. L'uso di nomi specifici dell'a
 
 ❌ **Non Corretto**:
 ```md
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Design System il progetto
 Il design system di il progetto definisce...
 ```
 
 ✅ **Corretto**:
 ```md
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> aurmich/dev
-=======
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
 # Design System
 Il design system definisce...
 ```
@@ -65,14 +45,3 @@ I nomi specifici dell'applicazione devono apparire solo:
 ## Vedi Anche
 - [Documentazione Principale](../../../docs/README.md)
 - [Standard di Codice](../../../docs/standards/coding-standards.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-- [Best Practices](../../../docs/standards/best-practices.md) 
->>>>>>> aurmich/dev
-=======
-- [Best Practices](../../../docs/standards/best-practices.md) 
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev

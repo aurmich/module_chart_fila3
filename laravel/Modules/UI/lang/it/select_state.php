@@ -1,11 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
 declare(strict_types=1);
 
 return [
@@ -26,37 +20,3 @@ return [
         ],
     ],
 ];
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
-=======
->>>>>>> d23ba493 (add calendar)
-return array (
-  'fields' => 
-  array (
-    'state' => 
-    array (
-      'label' => 'state',
-      'placeholder' => 'state',
-      'helper_text' => 'state',
-      'description' => 'state',
-    ),
-    'message' => 
-    array (
-      'label' => 'message',
-      'placeholder' => 'message',
-      'helper_text' => 'message',
-      'description' => 'message',
-    ),
-  ),
-);
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 1be5d4cb (✨ (state-transitions): add comprehensive documentation for state transitions)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev

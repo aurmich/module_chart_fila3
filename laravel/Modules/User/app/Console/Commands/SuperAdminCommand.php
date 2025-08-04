@@ -26,19 +26,7 @@ class SuperAdminCommand extends Command
     /**
      * The console command description.
      *
-<<<<<<< HEAD
      * @var string
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @var string
-=======
-     * @var string|null
->>>>>>> aurmich/dev
-=======
-     * @var string|null
->>>>>>> 54f4fa16 (.)
->>>>>>> aurmich/dev
      */
     protected $description = 'Assign super-admin to user';
 
@@ -62,74 +50,19 @@ class SuperAdminCommand extends Command
         /** @var UserContract */
         $user = XotData::make()->getUserByEmail($email);
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
         // Create super-admin role with web guard
         $role = Role::firstOrCreate(
             ['name' => 'super-admin']
         );
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        $role = Role::firstOrCreate(['name' => 'super-admin']);
->>>>>>> 15cb84fb (fix collisions)
-=======
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
         $user->assignRole($role);
 
         // Create module admin roles
         $modules_opts = array_keys(Module::all());
         foreach ($modules_opts as $module) {
             $role_name = Str::lower($module).'::admin';
-<<<<<<< HEAD
             $role = Role::firstOrCreate(
                 ['name' => $role_name]
             );
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            $role = Role::firstOrCreate(
-                ['name' => $role_name]
-            );
-=======
-        $role = Role::firstOrCreate(['name' => 'super-admin']);
-=======
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-        $user->assignRole($role);
-
-        // Create module admin roles
-        $modules_opts = array_keys(Module::all());
-        foreach ($modules_opts as $module) {
-            $role_name = Str::lower($module).'::admin';
-<<<<<<< HEAD
-            $role = Role::firstOrCreate(['name' => $role_name]);
->>>>>>> 54f4fa16 (.)
-=======
-            $role = Role::firstOrCreate(
-                ['name' => $role_name]
-            );
->>>>>>> 7440f060 (delete duplicate folder + add .md)
-=======
-            $role = Role::firstOrCreate(['name' => $role_name]);
->>>>>>> 15cb84fb (fix collisions)
-=======
-            $role = Role::firstOrCreate(
-                ['name' => $role_name]
-            );
->>>>>>> d23ba493 (add calendar)
->>>>>>> aurmich/dev
             $user->assignRole($role);
         }
 

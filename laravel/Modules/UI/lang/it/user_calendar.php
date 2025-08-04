@@ -1,17 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
-=======
->>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
->>>>>>> aurmich/dev
 return [
     'months' => [
         'long' => [
@@ -88,61 +76,3 @@ return [
         'after' => 'La data di fine deve essere successiva alla data di inizio'
     ]
 ];
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> ca5e1eaf (.)
-=======
->>>>>>> d23ba493 (add calendar)
-return array (
-  'fields' => 
-  array (
-    'title' => 
-    array (
-      'label' => 'title',
-      'placeholder' => 'title',
-      'helper_text' => 'title',
-      'description' => 'title',
-    ),
-    'starts_at' => 
-    array (
-      'label' => 'starts_at',
-      'placeholder' => 'starts_at',
-      'helper_text' => 'starts_at',
-      'description' => 'starts_at',
-    ),
-    'ends_at' => 
-    array (
-      'label' => 'ends_at',
-      'placeholder' => 'ends_at',
-      'helper_text' => 'ends_at',
-      'description' => 'ends_at',
-    ),
-  ),
-  'actions' => 
-  array (
-    'delete' => 
-    array (
-      'label' => 'delete',
-    ),
-    'edit' => 
-    array (
-      'label' => 'edit',
-    ),
-  ),
-);
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> aurmich/dev
-=======
->>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
-=======
->>>>>>> ca5e1eaf (.)
-=======
->>>>>>> d23ba493 (add calendar)
-=======
->>>>>>> 794947dd (✨ (InlineDatePicker): introduce InlineDatePicker component with multilingual support and enhanced navigation features)
->>>>>>> aurmich/dev
