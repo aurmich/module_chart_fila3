@@ -10,6 +10,7 @@ use Filament\Forms;
 use Modules\SaluteOra\Models\Doctor;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\SaluteOra\Filament\Resources\DoctorResource as BaseDoctorResource;
+<<<<<<< HEAD
 
 class DoctorResource extends BaseDoctorResource
 =======
@@ -22,10 +23,15 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class DoctorResource extends XotBaseResource
 >>>>>>> f3e4ec66 (.)
+=======
+
+class DoctorResource extends BaseDoctorResource
+>>>>>>> f158a85a (✨ (lang_service.php, doctor.php, xot_base.php): add Italian translations for doctor certificate fields to enhance localization support)
 {
     protected static ?string $model = Doctor::class;
     protected static bool $isScopedToTenant = false;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
    
 =======
@@ -53,4 +59,7 @@ class DoctorResource extends XotBaseResource
         ];
     }
 >>>>>>> f3e4ec66 (.)
+=======
+   
+>>>>>>> f158a85a (✨ (lang_service.php, doctor.php, xot_base.php): add Italian translations for doctor certificate fields to enhance localization support)
 }

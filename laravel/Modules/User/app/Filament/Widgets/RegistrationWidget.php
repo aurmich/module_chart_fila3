@@ -26,6 +26,7 @@ use Modules\Xot\Datas\XotData;
 use Livewire\Attributes\Validate;
 use Illuminate\Support\HtmlString;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Log;
 =======
 >>>>>>> aurmich/dev
@@ -42,6 +43,9 @@ use Modules\Xot\Datas\XotData;
 use Livewire\Attributes\Validate;
 use Illuminate\Support\HtmlString;
 >>>>>>> 54f4fa16 (.)
+=======
+use Illuminate\Support\Facades\Log;
+>>>>>>> f158a85a (✨ (lang_service.php, doctor.php, xot_base.php): add Italian translations for doctor certificate fields to enhance localization support)
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Filament\Forms\Contracts\HasForms;
@@ -50,6 +54,7 @@ use Filament\Forms\Components\Checkbox;
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
 =======
@@ -74,14 +79,19 @@ class RegistrationWidget extends XotBaseWidget
     protected int | string | array $columnSpan = 'full';
 =======
 use Filament\Forms\Components\TextInput;
+=======
+>>>>>>> f158a85a (✨ (lang_service.php, doctor.php, xot_base.php): add Italian translations for doctor certificate fields to enhance localization support)
 use Modules\Xot\Contracts\UserContract;
+use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Wizard\Step;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
-use Illuminate\Support\Facades\Log;
+use Filament\Actions\Concerns\InteractsWithRecord;
+
 
 class RegistrationWidget extends XotBaseWidget
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     //public ?array $data = []; //moved to XotBaseWidget
     //protected int | string | array $columnSpan = 'full'; //moved to XotBaseWidget
@@ -94,6 +104,9 @@ use Illuminate\Support\Facades\Log;
 
 class RegistrationWidget extends XotBaseWidget
 {
+=======
+    
+>>>>>>> f158a85a (✨ (lang_service.php, doctor.php, xot_base.php): add Italian translations for doctor certificate fields to enhance localization support)
     public ?array $data = [];
     protected int | string | array $columnSpan = 'full';
 >>>>>>> 54f4fa16 (.)
@@ -230,9 +243,9 @@ class RegistrationWidget extends XotBaseWidget
         $record = $this->getFormModel();
         $data = $this->getFormFill();
         $this->data = $data; 
-        $this->record = $record;
         $this->form->fill($data);
         $this->form->model($record);
+        $this->record = $record;
         
     }
 
@@ -261,7 +274,14 @@ class RegistrationWidget extends XotBaseWidget
         return app($this->model);
     }
 
-    public function getFormFill(): array
+    public function getFormFill(): array{
+        $data=parent::getFormFill();
+        $data['type']=$this->type;
+        
+        return $data;
+    }
+
+    public function getFormFillOLD(): array
     {
         $model = $this->getFormModel();
         
@@ -395,9 +415,13 @@ class RegistrationWidget extends XotBaseWidget
     {
         $data = $this->form->getState();
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 <<<<<<< HEAD
         $data=array_merge($this->data ?? [],$data);
+=======
+        $data=array_merge($this->data,$data);
+>>>>>>> f158a85a (✨ (lang_service.php, doctor.php, xot_base.php): add Italian translations for doctor certificate fields to enhance localization support)
         $record = $this->record;
        
         $user = app($this->action)->execute($record, $data);

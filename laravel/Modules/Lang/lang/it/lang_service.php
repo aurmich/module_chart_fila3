@@ -885,6 +885,13 @@ return array (
       'description' => '',
 >>>>>>> 0cff2983 (📝 (docs): remove unused Blade file for appointments to clean up the codebase)
     ),
+    'doctor_certificate' => 
+    array (
+      'description' => 'certificato',
+      'helper_text' => 'Tesserino sanitario O certificato di iscrizione all\'Ordine',
+      'placeholder' => 'certificato',
+      'label' => 'certificato',
+    ),
   ),
   'actions' => 
   array (

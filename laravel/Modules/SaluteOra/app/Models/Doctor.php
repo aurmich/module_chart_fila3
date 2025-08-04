@@ -401,6 +401,7 @@ class Doctor extends User implements HasMedia
         'certifications', // Mantenuto per retrocompatibilità
         'certification', // 
 <<<<<<< HEAD
+<<<<<<< HEAD
         'doctor_certificate',
         //'availability',
         'status',
@@ -462,6 +463,9 @@ class Doctor extends User implements HasMedia
         'certifications',
 =======
 >>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+=======
+        'doctor_certificate',
+>>>>>>> f158a85a (✨ (lang_service.php, doctor.php, xot_base.php): add Italian translations for doctor certificate fields to enhance localization support)
         //'availability',
         'status',
         'country_code',
@@ -488,7 +492,8 @@ class Doctor extends User implements HasMedia
     /** @var list<string>     */
     public static function getAttachments():array{
         return  [
-            'certification', // Gestito come allegato singolo
+            //'certification', // Gestito come allegato singolo
+            'doctor_certificate',
         ];
     }
 

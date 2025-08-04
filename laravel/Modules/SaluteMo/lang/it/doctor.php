@@ -170,6 +170,7 @@ return array (
 <<<<<<< HEAD
       'help' => 'Indirizzo email per le comunicazioni',
       'description' => 'email',
+<<<<<<< HEAD
 =======
       'helper_text' => 'Indirizzo email per le comunicazioni',
 <<<<<<< HEAD
@@ -183,6 +184,8 @@ return array (
 =======
       'help' => 'Indirizzo email per le comunicazioni',
 >>>>>>> 8d591468 (fields translations)
+=======
+>>>>>>> f158a85a (✨ (lang_service.php, doctor.php, xot_base.php): add Italian translations for doctor certificate fields to enhance localization support)
     ),
     'phone' => 
     array (

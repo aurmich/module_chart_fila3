@@ -52,14 +52,15 @@ use function Safe\glob;
 >>>>>>> 54f4fa16 (.)
 =======
 use Filament\Forms;
+use Filament\Forms\Set;
 use function Safe\glob;
 use Filament\Forms\Form;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
 use Illuminate\Support\HtmlString;
-use Illuminate\Contracts\View\View;
 
+use Illuminate\Contracts\View\View;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\FileUpload;
 use Filament\Pages\SubNavigationPosition;
@@ -432,31 +433,43 @@ abstract class XotBaseResource extends FilamentResource
         $uuid = Str::uuid()->toString();
         $schema = [];
         foreach ($attachments as $attachment) {
-            
-            
-            $schema[$attachment]=FileUpload::make($attachment);
-            /*
-            ->formatStateUsing(function($state) {
-                return [];
+            $schema[$attachment]=FileUpload::make($attachment)
+            //$schema[$attachment]=SpatieMediaLibraryFileUpload::make($attachment)
+            ->disk('local')
+            ->acceptedFileTypes(['application/pdf', 'image/jpeg', 'image/png', 'image/jpg'])
+            ->maxSize(5120*2)
+            ->preserveFilenames()
+            ->required()
+            ->afterStateUpdated(function ($state, Set $set) use ($attachment) {
+                if (!$state) return;
                 $state=Arr::wrap($state);
-                    $sessionId = session()->getId();
-                    $sessionDir = "session-uploads/{$sessionId}";
-                    $sessionFiles = [];
-                    
-                    foreach ($state as $file) {
-                        if ($file instanceof \Livewire\Features\SupportFileUploads\TemporaryUploadedFile) {
-                            // Salva direttamente nella directory di sessione
-                            $fileName = time() . '_' . $file->getClientOriginalName();
-                            $sessionPath = $file->storeAs($sessionDir, $fileName, 'local');
-                            $sessionFiles[] = $sessionPath;
-                        } else {
-                            // È già un percorso salvato
-                            $sessionFiles[] = $file;
-                        }
+                $sessionId = session()->getId();
+                $sessionDir = "session-uploads/{$sessionId}";
+                $sessionFiles = [];
+                
+                foreach ($state as $file) {
+                    if ($file instanceof \Livewire\Features\SupportFileUploads\TemporaryUploadedFile) {
+                        // Salva direttamente nella directory di sessione
+                        $fileName = time() . '_' . $file->getClientOriginalName();
+                        $sessionPath = $file->storeAs($sessionDir, $fileName, 'local');
+                        $sessionFiles[] = $sessionPath;
+                    } else {
+                        // È già un percorso salvato
+                        $sessionFiles[] = $file;
                     }
-                    return $sessionFiles;
+                }
+                
+                $set($attachment, $sessionFiles);
+            })
+            ;
+            
+            /*
+            ->afterStateUpdated(function (FileUpload $component) use ($attachment) {
+                $component->saveUploadedFiles($component);
+                //$this->updateMedia();
             });
             */
+<<<<<<< HEAD
             /*
             $schema[$attachment]=Forms\Components\FileUpload::make($attachment) 
                 ->disk('local')
@@ -511,6 +524,10 @@ abstract class XotBaseResource extends FilamentResource
                     $set($attachment, $sessionFiles);
                 });
             */
+=======
+
+            
+>>>>>>> f158a85a (✨ (lang_service.php, doctor.php, xot_base.php): add Italian translations for doctor certificate fields to enhance localization support)
         }
         
         return $schema;
