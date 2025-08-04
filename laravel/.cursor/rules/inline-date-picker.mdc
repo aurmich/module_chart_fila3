@@ -1,62 +1,61 @@
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 description: 
 globs: 
 alwaysApply: true
+=======
+description:
+globs:
+alwaysApply: false
+>>>>>>> 024cd359 (📝 (inline-date-picker.mdc): update inline date picker documentation to reflect)
 ---
-# InlineDatePicker - SOLUZIONE KISS FINALE ✅
+# InlineDatePicker Component Rules
 
-## 🚨 PROBLEMI RISOLTI
+## Namespace e Importazione
+- **Namespace**: `Modules\UI\Filament\Forms\Components\InlineDatePicker`
+- **Estende**: `Filament\Forms\Components\DatePicker`
+- **Import**: `use Modules\UI\Filament\Forms\Components\InlineDatePicker;`
 
-### 1. Navigazione Funzionante ✅
-**Problema**: I pulsanti previousMonth/nextMonth non funzionavano
-**Causa**: Metodi del widget non potevano accedere al componente nel wizard
-**Soluzione**: Proprietà pubblica `currentCalendarMonth` + refresh form
-
+## Utilizzo Base
 ```php
-class FindDoctorAndAppointmentWidget extends XotBaseWidget
-{
-    public string $currentCalendarMonth;
-    
-    public function previousMonth(): void {
-        $currentDate = Carbon::createFromFormat('Y-m', $this->currentCalendarMonth);
-        $this->currentCalendarMonth = $currentDate->subMonthNoOverflow()->format('Y-m');
-        $this->form->fill($this->form->getState()); // ✅ Refresh
-    }
-}
+InlineDatePicker::make('appointment_date')
+    ->enabledDates(['2025-06-05', '2025-06-21'])
+    ->required();
 ```
 
-### 2. UX Date Evidenti ✅
-**Problema**: Non si capiva quali date erano cliccabili
-**Soluzione**: Sistema visuale a tre livelli
+## Filosofia e Architettura
+- **Cronologia Selettiva**: Non tutte le date sono uguali nel continuum temporale
+- **Fenomenologia dell'Attesa**: Solo alcune date hanno il potere ontologico di essere scelte
+- **Democrazia Temporale**: L'utente ha il controllo, ma entro i confini del possibile
+- **Estetica Minimale**: L'interfaccia ridotta all'essenziale del tempo
 
-#### Stili Implementati:
-- 🟢 **Date Abilitate**: Verde, bordo spesso, hover scale, puntino verde
-- 🔵 **Data Selezionata**: Blu prominente, ring, pallino indicatore
-- ⚪ **Date Disabilitate**: Grigie, opache, cursor not-allowed
+## Metodi Principali
+- `enabledDates(array|Closure $dates)`: Definisce le date selezionabili
+- `calendarConfig(array $config)`: Configura i parametri del calendario
+- `setCurrentMonth(int $year, int $month)`: Imposta mese visualizzato
 
-#### Legenda Visuale:
-- 📅 Lista date disponibili sotto il calendario
-- ✓ Checkmark per data selezionata
-- • Bullet per date disponibili
-- ⚠️ Warning se nessuna data nel mese
+## Caratteristiche Tecniche
+- Vista: `ui::filament.forms.components.inline-date-picker`
+- Griglia 7x6 per armonia settimanale
+- Navigazione mesi con validazione (1900-2100)
+- Stati visivi: abilitato/disabilitato/selezionato/oggi
+- Supporto dark mode automatico
+- Responsive design con breakpoint mobile
 
-### 3. ERRORE RISOLTO: "Property must not be accessed before initialization" ✅
-**Problema**: `currentCalendarMonth` chiamata prima di inizializzazione
-**Causa**: `getDateStepSchema()` chiamato prima di `mount()`
-**Soluzione**: Tripla protezione implementata
+## Best Practice
+- Utilizzare closure per date dinamiche
+- Localizzazione italiana di default
+- Primo giorno settimana = Lunedì
+- Validazione parametri temporali sempre attiva
+- Debug info solo in sviluppo
 
-#### Protezioni Implementate:
-```php
-// ✅ 1. Getter sicuro nel widget
-protected function getCurrentCalendarMonth(): string {
-    if (empty($this->currentCalendarMonth)) {
-        $this->currentCalendarMonth = now()->format('Y-m');
-    }
-    return $this->currentCalendarMonth;
-}
+## Documentazione
+- [Modulo UI](../laravel/Modules/UI/docs/form-components.md)
+- [Componente Specifico](../laravel/Modules/UI/docs/components/inline-date-picker-component.md)
 
+<<<<<<< HEAD
 // ✅ 2. Validazione nel componente currentViewMonth()
 public function currentViewMonth(string $month): static {
     if (empty($month) || !preg_match('/^\d{4}-\d{2}$/', $month)) {
@@ -675,3 +674,7 @@ public function previousMonth(): void {
 **Principi**: Separazione responsabilità + Zero duplicazione
 **Ultimo Aggiornamento**: Gennaio 2025
 >>>>>>> 16a242b3 (✨ (InlineDatePicker): implement advanced navigation architecture for better UX and performance)
+=======
+## Ultimo Aggiornamento
+2025-01-04 - Implementazione iniziale con filosofia temporale quantistica
+>>>>>>> 024cd359 (📝 (inline-date-picker.mdc): update inline date picker documentation to reflect)
