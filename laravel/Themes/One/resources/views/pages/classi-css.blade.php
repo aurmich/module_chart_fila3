@@ -105,10 +105,14 @@
 <div class="bg-transparent"></div>
 <div class="bg-gradient-to-r from-cyan-500 to-blue-500">gradiant</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="bg-gradient-to-r from-cyan-500 to-[#272C4D]">gradient</div>
 =======
 <div class="bg-gradient-to-r from-cyan-500 to-[#1A467F]">gradient</div>
 >>>>>>> ff138484 (- update dettaglio paziente)
+=======
+<div class="bg-gradient-to-r from-cyan-500 to-[#272C4D]">gradient</div>
+>>>>>>> 6a8817e6 (- creata pagina dettaglio dottore)
 <div class="min-h-screen">screen height</div>
 <div class="border-[#1A467F]"></div>
 <div class="min-h-[50vh]">min height</div>
@@ -125,6 +129,9 @@
 <div class="focus:border-[#FF5F7E]">focus primary</div>
 <div class="focus:ring-[#FF5F7E]">focus ring primary</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6a8817e6 (- creata pagina dettaglio dottore)
 <div class="fixed top-0 left-0 right-0 z-50">header fixed</div>
 <div class="mt-1.5">margin bottom header</div>
 <div class="fixed top-0 left-0 right-0 z-50 h-24">fixed</div>
@@ -140,6 +147,7 @@
 <div class="text-[#272C4D]"></div>
 <div class="justify-evenly">justify evenly</div>
 <div class="lg:w-7/12">large width calendar</div>
+<<<<<<< HEAD
 <div class="mt-9">margin top 9</div>
 <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block bg-gray-800 text-white text-sm px-2 py-1 rounded z-10">tooltip</div>
 <div class="my-9">margin-top-bottom</div>
@@ -387,3 +395,6 @@
 =======
 </x-layouts.app>    
 >>>>>>> 89a8313a (- update primary colors)
+=======
+</x-layouts.app>
+>>>>>>> 6a8817e6 (- creata pagina dettaglio dottore)

@@ -221,6 +221,9 @@
     :root {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6a8817e6 (- creata pagina dettaglio dottore)
         --color-primary-50:  255 95 126;
         --color-primary-100: 255 95 126;
         --color-primary-200: 255 95 126;
@@ -232,6 +235,7 @@
         --color-primary-800: 255 95 126;
         --color-primary-900: 255 95 126;
         --color-primary-950: 255 95 126;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> d23ba493 (add calendar)
@@ -250,6 +254,8 @@
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> d23ba493 (add calendar)
+=======
+>>>>>>> 6a8817e6 (- creata pagina dettaglio dottore)
 
         --color-danger-50: 254 242 242;
         --color-danger-100: 254 226 226;
@@ -480,15 +486,16 @@
     .fi-fo-wizard-header-step-label {
         @apply !text-[#FF5F7E];
     }
-    .fi-fo-wizard-header-step-indicator {
-        @apply !text-[#FF5F7E];
-    }
     .fi-fo-wizard-header-step-icon {
+<<<<<<< HEAD
 <<<<<<< HEAD
         @apply !border-[#0D9488];
 >>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
 =======
         @apply !border-[#FF5F7E];
+=======
+        @apply !border-[#FF5F7E] !text-[#FF5F7E];
+>>>>>>> 6a8817e6 (- creata pagina dettaglio dottore)
     }
     .fi-input {
         @apply focus:border-[#FF5F7E] focus:ring-[#FF5F7E];

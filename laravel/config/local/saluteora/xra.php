@@ -19,6 +19,7 @@ return [
     'tenant_class' => 'Modules\SaluteOra\Models\Studio',
     'colors' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'primary' => '#FF5F7E',
 <<<<<<< HEAD
     ],
@@ -33,6 +34,9 @@ return [
 >>>>>>> 2bcfd382 (fix Address)
 =======
         'primary' => '#0D9488',
+=======
+        'primary' => '#FF5F7E',
+>>>>>>> 6a8817e6 (- creata pagina dettaglio dottore)
     ]
 >>>>>>> 58d017c2 (- aggiornato stile dettaglio paziente)
 ];
