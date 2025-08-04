@@ -34,6 +34,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             wire:model="email"
 =======
             wire:model.live="email"
@@ -44,6 +45,9 @@ new #[Layout('components.layouts.auth')] class extends Component {
 =======
             wire:model.live="email"
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+            wire:model="email"
+>>>>>>> e9942509 (fix: session)
             :label="__('Email Address')"
             type="email"
             required
@@ -56,6 +60,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-400">
         <span>{{ __('Or, return to') }}</span>
 =======
@@ -66,6 +71,10 @@ new #[Layout('components.layouts.auth')] class extends Component {
     <div class="space-x-1 text-center text-sm text-zinc-400">
         {{ __('Or, return to') }}
 >>>>>>> 54f4fa16 (.)
+=======
+    <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-400">
+        <span>{{ __('Or, return to') }}</span>
+>>>>>>> e9942509 (fix: session)
         <flux:link :href="route('login')" wire:navigate>{{ __('log in') }}</flux:link>
     </div>
 </div>

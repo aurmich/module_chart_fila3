@@ -15,6 +15,7 @@ return [
     |
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     | Supported: "file", "cookie", "database", "memcached",
     |            "redis", "dynamodb", "array"
 =======
@@ -25,6 +26,10 @@ return [
     | Supported: "file", "cookie", "database", "memcached",
     |            "redis", "dynamodb", "array"
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+    | Supported: "file", "cookie", "database", "apc",
+    |            "memcached", "redis", "dynamodb", "array"
+>>>>>>> e9942509 (fix: session)
     |
     */
 
@@ -109,6 +114,7 @@ return [
     |
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     | Affects: "dynamodb", "memcached", "redis"
 =======
     | Affects: "apc", "dynamodb", "memcached", "redis"
@@ -116,6 +122,9 @@ return [
 =======
     | Affects: "dynamodb", "memcached", "redis"
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+    | Affects: "apc", "dynamodb", "memcached", "redis"
+>>>>>>> e9942509 (fix: session)
     |
     */
 
@@ -149,6 +158,7 @@ return [
         'SESSION_COOKIE',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Str::slug(env('APP_NAME', 'laravel')).'-session'
 =======
         Str::slug(env('APP_NAME', 'laravel'), '_').'_session'
@@ -156,6 +166,9 @@ return [
 =======
         Str::slug(env('APP_NAME', 'laravel')).'-session'
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+        Str::slug(env('APP_NAME', 'laravel'), '_').'_session'
+>>>>>>> e9942509 (fix: session)
     ),
 
     /*

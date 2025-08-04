@@ -7,6 +7,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> f622d84c (✨ (DoctorResource.php, RegistrationWidget.php, passport.php): enhance user authentication by adding remember token checks and improving Passport configuration for better security and flexibility.)
@@ -50,6 +51,8 @@ return [
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> f622d84c (✨ (DoctorResource.php, RegistrationWidget.php, passport.php): enhance user authentication by adding remember token checks and improving Passport configuration for better security and flexibility.)
+=======
+>>>>>>> e9942509 (fix: session)
     | Passport Guard
     |--------------------------------------------------------------------------
     |
@@ -66,8 +69,11 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> e9942509 (fix: session)
     | Encryption Keys
     |--------------------------------------------------------------------------
     |
@@ -84,12 +90,15 @@ return [
     /*
     |--------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> f622d84c (✨ (DoctorResource.php, RegistrationWidget.php, passport.php): enhance user authentication by adding remember token checks and improving Passport configuration for better security and flexibility.)
+=======
+>>>>>>> e9942509 (fix: session)
     | Passport Database Connection
     |--------------------------------------------------------------------------
     |
@@ -102,6 +111,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'connection' => env('PASSPORT_CONNECTION'),
 =======
     'connection' => env('PASSPORT_CONNECTION','user'),
@@ -112,6 +122,9 @@ return [
 =======
     'connection' => env('PASSPORT_CONNECTION','user'),
 >>>>>>> f622d84c (✨ (DoctorResource.php, RegistrationWidget.php, passport.php): enhance user authentication by adding remember token checks and improving Passport configuration for better security and flexibility.)
+=======
+    'connection' => env('PASSPORT_CONNECTION'),
+>>>>>>> e9942509 (fix: session)
 
     /*
     |--------------------------------------------------------------------------
@@ -129,8 +142,11 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> e9942509 (fix: session)
     /*
     |--------------------------------------------------------------------------
     | Personal Access Client
@@ -148,10 +164,13 @@ return [
     ],
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> f622d84c (✨ (DoctorResource.php, RegistrationWidget.php, passport.php): enhance user authentication by adding remember token checks and improving Passport configuration for better security and flexibility.)
+=======
+>>>>>>> e9942509 (fix: session)
 ];

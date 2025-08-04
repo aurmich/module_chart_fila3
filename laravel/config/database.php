@@ -58,15 +58,6 @@ return [
             'synchronous' => null,
         ],
 
-        'testing' => [
-            'driver' => 'sqlite',
-            'url' => env('DATABASE_URL'),
-            'database' => env('DB_DATABASE', database_path('database.sqlite')),
-            'prefix' => '',
-            'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
-            'foreign_key_constraints' => true,
-        ],
-
         'mysql' => [
             'driver' => 'mysql',
 <<<<<<< HEAD
@@ -316,6 +307,7 @@ return [
             'cluster' => env('REDIS_CLUSTER', 'redis'),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel')).'-database-'),
 =======
             'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
@@ -323,6 +315,9 @@ return [
 =======
             'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel')).'-database-'),
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
+>>>>>>> e9942509 (fix: session)
             'persistent' => env('REDIS_PERSISTENT', false),
         ],
 

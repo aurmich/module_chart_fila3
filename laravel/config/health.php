@@ -150,6 +150,9 @@ return [
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9942509 (fix: session)
 /**
  * By default, conditionally skipped health checks are treated as failures.
  * You can override this behavior by uncommenting the configuration below.
@@ -157,6 +160,7 @@ return [
  * @link https://spatie.be/docs/laravel-health/v1/basic-usage/conditionally-running-or-modifying-checks
  */
     // 'treat_skipped_as_failure' => false
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 54f4fa16 (.)
@@ -171,4 +175,6 @@ return [
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> e9942509 (fix: session)
 ];

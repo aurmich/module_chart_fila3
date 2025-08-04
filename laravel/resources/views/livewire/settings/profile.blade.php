@@ -77,6 +77,7 @@ new class extends Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
             <flux:input wire:model="name" :label="__('Name')" type="text" required autofocus autocomplete="name" />
@@ -98,6 +99,12 @@ new class extends Component {
             <div>
                 <flux:input wire:model.live="email" :label="__('Email')" type="email" required autocomplete="email" />
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+            <flux:input wire:model="name" :label="__('Name')" type="text" required autofocus autocomplete="name" />
+
+            <div>
+                <flux:input wire:model="email" :label="__('Email')" type="email" required autocomplete="email" />
+>>>>>>> e9942509 (fix: session)
 
                 @if (auth()->user() instanceof \Illuminate\Contracts\Auth\MustVerifyEmail &&! auth()->user()->hasVerifiedEmail())
                     <div>

@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Tests\Feature;
 
 use Tests\TestCase;
@@ -44,3 +45,10 @@ class ExampleTest extends TestCase
     }
 }
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+test('returns a successful response', function () {
+    $response = $this->get('/');
+
+    $response->assertStatus(200);
+});
+>>>>>>> e9942509 (fix: session)

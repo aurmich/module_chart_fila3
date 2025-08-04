@@ -4,6 +4,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9942509 (fix: session)
 /*
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
@@ -25,6 +28,7 @@ Route::middleware(['auth'])->group(function () {
 });
 
 require __DIR__.'/auth.php';
+<<<<<<< HEAD
 */
 =======
 =======
@@ -57,3 +61,6 @@ declare(strict_types=1);
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+*/
+>>>>>>> e9942509 (fix: session)

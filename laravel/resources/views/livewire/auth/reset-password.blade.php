@@ -80,6 +80,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             wire:model="email"
 =======
             wire:model.live="email"
@@ -90,6 +91,9 @@ new #[Layout('components.layouts.auth')] class extends Component {
 =======
             wire:model.live="email"
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+            wire:model="email"
+>>>>>>> e9942509 (fix: session)
             :label="__('Email')"
             type="email"
             required
@@ -101,6 +105,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             wire:model="password"
 =======
             wire:model.live="password"
@@ -111,6 +116,9 @@ new #[Layout('components.layouts.auth')] class extends Component {
 =======
             wire:model.live="password"
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+            wire:model="password"
+>>>>>>> e9942509 (fix: session)
             :label="__('Password')"
             type="password"
             required
@@ -118,15 +126,20 @@ new #[Layout('components.layouts.auth')] class extends Component {
             :placeholder="__('Password')"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             viewable
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+            viewable
+>>>>>>> e9942509 (fix: session)
         />
 
         <!-- Confirm Password -->
         <flux:input
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -140,6 +153,9 @@ new #[Layout('components.layouts.auth')] class extends Component {
 =======
             wire:model.live="password_confirmation"
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+            wire:model="password_confirmation"
+>>>>>>> e9942509 (fix: session)
             :label="__('Confirm password')"
             type="password"
             required
@@ -147,11 +163,15 @@ new #[Layout('components.layouts.auth')] class extends Component {
             :placeholder="__('Confirm password')"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             viewable
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+            viewable
+>>>>>>> e9942509 (fix: session)
         />
 
         <div class="flex items-center justify-end">

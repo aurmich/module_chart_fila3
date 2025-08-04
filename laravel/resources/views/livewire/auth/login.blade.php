@@ -85,6 +85,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             wire:model="email"
 =======
             wire:model.live="email"
@@ -95,6 +96,9 @@ new #[Layout('components.layouts.auth')] class extends Component {
 =======
             wire:model.live="email"
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+            wire:model="email"
+>>>>>>> e9942509 (fix: session)
             :label="__('Email address')"
             type="email"
             required
@@ -109,6 +113,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 wire:model="password"
 =======
                 wire:model.live="password"
@@ -119,11 +124,15 @@ new #[Layout('components.layouts.auth')] class extends Component {
 =======
                 wire:model.live="password"
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+                wire:model="password"
+>>>>>>> e9942509 (fix: session)
                 :label="__('Password')"
                 type="password"
                 required
                 autocomplete="current-password"
                 :placeholder="__('Password')"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 viewable
@@ -142,12 +151,20 @@ new #[Layout('components.layouts.auth')] class extends Component {
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+                viewable
+            />
+
+            @if (Route::has('password.request'))
+                <flux:link class="absolute end-0 top-0 text-sm" :href="route('password.request')" wire:navigate>
+>>>>>>> e9942509 (fix: session)
                     {{ __('Forgot your password?') }}
                 </flux:link>
             @endif
         </div>
 
         <!-- Remember Me -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -161,6 +178,9 @@ new #[Layout('components.layouts.auth')] class extends Component {
 =======
         <flux:checkbox wire:model.live="remember" :label="__('Remember me')" />
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+        <flux:checkbox wire:model="remember" :label="__('Remember me')" />
+>>>>>>> e9942509 (fix: session)
 
         <div class="flex items-center justify-end">
             <flux:button variant="primary" type="submit" class="w-full">{{ __('Log in') }}</flux:button>
@@ -168,6 +188,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
     </form>
 
     @if (Route::has('register'))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-600 dark:text-zinc-400">
@@ -180,6 +201,10 @@ new #[Layout('components.layouts.auth')] class extends Component {
         <div class="space-x-1 text-center text-sm text-zinc-600 dark:text-zinc-400">
             {{ __('Don\'t have an account?') }}
 >>>>>>> 54f4fa16 (.)
+=======
+        <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-600 dark:text-zinc-400">
+            <span>{{ __('Don\'t have an account?') }}</span>
+>>>>>>> e9942509 (fix: session)
             <flux:link :href="route('register')" wire:navigate>{{ __('Sign up') }}</flux:link>
         </div>
     @endif

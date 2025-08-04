@@ -46,6 +46,7 @@ new class extends Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 wire:model="current_password"
 =======
                 wire:model.live="current_password"
@@ -56,6 +57,9 @@ new class extends Component {
 =======
                 wire:model.live="current_password"
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+                wire:model="current_password"
+>>>>>>> e9942509 (fix: session)
                 :label="__('Current password')"
                 type="password"
                 required
@@ -65,6 +69,7 @@ new class extends Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 wire:model="password"
 =======
                 wire:model.live="password"
@@ -75,6 +80,9 @@ new class extends Component {
 =======
                 wire:model.live="password"
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+                wire:model="password"
+>>>>>>> e9942509 (fix: session)
                 :label="__('New password')"
                 type="password"
                 required
@@ -84,6 +92,7 @@ new class extends Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 wire:model="password_confirmation"
 =======
                 wire:model.live="password_confirmation"
@@ -94,6 +103,9 @@ new class extends Component {
 =======
                 wire:model.live="password_confirmation"
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+                wire:model="password_confirmation"
+>>>>>>> e9942509 (fix: session)
                 :label="__('Confirm Password')"
                 type="password"
                 required

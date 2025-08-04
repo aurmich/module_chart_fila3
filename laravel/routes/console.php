@@ -4,10 +4,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> e9942509 (fix: session)
 /*
 use Illuminate\Foundation\Inspiring;
 use Illuminate\Support\Facades\Artisan;
@@ -17,6 +20,7 @@ Artisan::command('inspire', function () {
 })->purpose('Display an inspiring quote');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 */
 =======
 */
@@ -30,3 +34,6 @@ Artisan::command('inspire', function () {
 =======
 
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+*/
+>>>>>>> e9942509 (fix: session)

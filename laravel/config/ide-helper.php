@@ -143,6 +143,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         //'app',
 >>>>>>> aurmich/dev
@@ -154,6 +155,9 @@ return [
         //'app',
         'Modules/*/app/Models',
 >>>>>>> f3e4ec66 (.)
+=======
+        'app',
+>>>>>>> e9942509 (fix: session)
     ],
 
     /*

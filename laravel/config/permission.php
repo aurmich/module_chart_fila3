@@ -174,6 +174,7 @@ return [
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     // 'wildcard_permission' => Spatie\Permission\WildcardPermission::class,
 =======
     // 'permission.wildcard_permission' => Spatie\Permission\WildcardPermission::class,
@@ -181,6 +182,9 @@ return [
 =======
     // 'permission.wildcard_permission' => Spatie\Permission\WildcardPermission::class,
 >>>>>>> 54f4fa16 (.)
+=======
+    // 'wildcard_permission' => Spatie\Permission\WildcardPermission::class,
+>>>>>>> e9942509 (fix: session)
 
     /* Cache-specific settings */
 

@@ -6,6 +6,7 @@
     <body class="min-h-screen bg-white dark:bg-zinc-800">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <flux:sidebar sticky stashable class="border-e border-zinc-200 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900">
             <flux:sidebar.toggle class="lg:hidden" icon="x-mark" />
 
@@ -21,6 +22,12 @@
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+        <flux:sidebar sticky stashable class="border-e border-zinc-200 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900">
+            <flux:sidebar.toggle class="lg:hidden" icon="x-mark" />
+
+            <a href="{{ route('dashboard') }}" class="me-5 flex items-center space-x-2 rtl:space-x-reverse" wire:navigate>
+>>>>>>> e9942509 (fix: session)
                 <x-app-logo />
             </a>
 
@@ -39,6 +46,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <flux:navlist.item icon="book-open-text" href="https://laravel.com/docs/starter-kits#livewire" target="_blank">
 =======
                 <flux:navlist.item icon="book-open-text" href="https://laravel.com/docs/starter-kits" target="_blank">
@@ -46,11 +54,15 @@
 =======
                 <flux:navlist.item icon="book-open-text" href="https://laravel.com/docs/starter-kits" target="_blank">
 >>>>>>> 54f4fa16 (.)
+=======
+                <flux:navlist.item icon="book-open-text" href="https://laravel.com/docs/starter-kits#livewire" target="_blank">
+>>>>>>> e9942509 (fix: session)
                 {{ __('Documentation') }}
                 </flux:navlist.item>
             </flux:navlist>
 
             <!-- Desktop User Menu -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             <flux:dropdown class="hidden lg:block" position="bottom" align="start">
@@ -70,11 +82,19 @@
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+            <flux:dropdown class="hidden lg:block" position="bottom" align="start">
+                <flux:profile
+                    :name="auth()->user()->name"
+                    :initials="auth()->user()->initials()"
+                    icon:trailing="chevrons-up-down"
+>>>>>>> e9942509 (fix: session)
                 />
 
                 <flux:menu class="w-[220px]">
                     <flux:menu.radio.group>
                         <div class="p-0 text-sm font-normal">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                             <div class="flex items-center gap-2 px-1 py-1.5 text-start text-sm">
@@ -84,6 +104,9 @@
 =======
                             <div class="flex items-center gap-2 px-1 py-1.5 text-left text-sm">
 >>>>>>> 54f4fa16 (.)
+=======
+                            <div class="flex items-center gap-2 px-1 py-1.5 text-start text-sm">
+>>>>>>> e9942509 (fix: session)
                                 <span class="relative flex h-8 w-8 shrink-0 overflow-hidden rounded-lg">
                                     <span
                                         class="flex h-full w-full items-center justify-center rounded-lg bg-neutral-200 text-black dark:bg-neutral-700 dark:text-white"
@@ -94,6 +117,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 <div class="grid flex-1 text-start text-sm leading-tight">
 =======
                                 <div class="grid flex-1 text-left text-sm leading-tight">
@@ -101,6 +125,9 @@
 =======
                                 <div class="grid flex-1 text-left text-sm leading-tight">
 >>>>>>> 54f4fa16 (.)
+=======
+                                <div class="grid flex-1 text-start text-sm leading-tight">
+>>>>>>> e9942509 (fix: session)
                                     <span class="truncate font-semibold">{{ auth()->user()->name }}</span>
                                     <span class="truncate text-xs">{{ auth()->user()->email }}</span>
                                 </div>
@@ -143,6 +170,7 @@
                         <div class="p-0 text-sm font-normal">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <div class="flex items-center gap-2 px-1 py-1.5 text-start text-sm">
 =======
                             <div class="flex items-center gap-2 px-1 py-1.5 text-left text-sm">
@@ -150,6 +178,9 @@
 =======
                             <div class="flex items-center gap-2 px-1 py-1.5 text-left text-sm">
 >>>>>>> 54f4fa16 (.)
+=======
+                            <div class="flex items-center gap-2 px-1 py-1.5 text-start text-sm">
+>>>>>>> e9942509 (fix: session)
                                 <span class="relative flex h-8 w-8 shrink-0 overflow-hidden rounded-lg">
                                     <span
                                         class="flex h-full w-full items-center justify-center rounded-lg bg-neutral-200 text-black dark:bg-neutral-700 dark:text-white"
@@ -160,6 +191,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 <div class="grid flex-1 text-start text-sm leading-tight">
 =======
                                 <div class="grid flex-1 text-left text-sm leading-tight">
@@ -167,6 +199,9 @@
 =======
                                 <div class="grid flex-1 text-left text-sm leading-tight">
 >>>>>>> 54f4fa16 (.)
+=======
+                                <div class="grid flex-1 text-start text-sm leading-tight">
+>>>>>>> e9942509 (fix: session)
                                     <span class="truncate font-semibold">{{ auth()->user()->name }}</span>
                                     <span class="truncate text-xs">{{ auth()->user()->email }}</span>
                                 </div>

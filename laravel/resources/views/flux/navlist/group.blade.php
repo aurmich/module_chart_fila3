@@ -17,6 +17,7 @@
     >
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <div class="ps-3 pe-4">
 =======
         <div class="pl-3 pr-4">
@@ -24,6 +25,9 @@
 =======
         <div class="pl-3 pr-4">
 >>>>>>> 54f4fa16 (.)
+=======
+        <div class="ps-3 pe-4">
+>>>>>>> e9942509 (fix: session)
             <flux:icon.chevron-down class="hidden size-3! group-data-open/disclosure-button:block" />
             <flux:icon.chevron-right class="block size-3! group-data-open/disclosure-button:hidden" />
         </div>
@@ -31,6 +35,7 @@
         <span class="text-sm font-medium leading-none">{{ $heading }}</span>
     </button>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <div class="relative hidden space-y-[2px] ps-7 data-open:block" @if ($expanded === true) data-open @endif>
@@ -43,6 +48,10 @@
     <div class="relative hidden space-y-[2px] pl-7 data-open:block" @if ($expanded === true) data-open @endif>
         <div class="absolute inset-y-[3px] left-0 ml-4 w-px bg-zinc-200 dark:bg-white/30"></div>
 >>>>>>> 54f4fa16 (.)
+=======
+    <div class="relative hidden space-y-[2px] ps-7 data-open:block" @if ($expanded === true) data-open @endif>
+        <div class="absolute inset-y-[3px] start-0 ms-4 w-px bg-zinc-200 dark:bg-white/30"></div>
+>>>>>>> e9942509 (fix: session)
 
         {{ $slot }}
     </div>

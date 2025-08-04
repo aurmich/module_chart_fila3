@@ -55,13 +55,18 @@ public/hot
 public_html/storage
 public_html/hot
 <<<<<<< HEAD
+<<<<<<< HEAD
 laravel_bak/
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+laravel_bak/
+>>>>>>> e9942509 (fix: session)
 .git-rewrite
 .fuse_hidden*
 .fuse_hidden**.lock
 *.lock
+<<<<<<< HEAD
 <<<<<<< HEAD
 *.old
 *.old1
@@ -71,6 +76,11 @@ backup*/
 *.backup 
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+*.old
+*.old1
+*.old2  
+>>>>>>> e9942509 (fix: session)
 package-lock.json
 .php-cs-fixer.cache
 *.phar

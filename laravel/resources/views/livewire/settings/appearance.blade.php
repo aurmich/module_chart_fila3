@@ -8,6 +8,7 @@ new class extends Component {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <section class="w-full">
 =======
 <div class="flex flex-col items-start">
@@ -15,6 +16,9 @@ new class extends Component {
 =======
 <div class="flex flex-col items-start">
 >>>>>>> 54f4fa16 (.)
+=======
+<section class="w-full">
+>>>>>>> e9942509 (fix: session)
     @include('partials.settings-heading')
 
     <x-settings.layout :heading="__('Appearance')" :subheading=" __('Update the appearance settings for your account')">
@@ -26,6 +30,7 @@ new class extends Component {
     </x-settings.layout>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 </section>
 =======
 </div>
@@ -33,3 +38,6 @@ new class extends Component {
 =======
 </div>
 >>>>>>> 54f4fa16 (.)
+=======
+</section>
+>>>>>>> e9942509 (fix: session)

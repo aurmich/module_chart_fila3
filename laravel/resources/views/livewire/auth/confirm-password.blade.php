@@ -47,6 +47,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             wire:model="password"
 =======
             wire:model.live="password"
@@ -57,6 +58,9 @@ new #[Layout('components.layouts.auth')] class extends Component {
 =======
             wire:model.live="password"
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+            wire:model="password"
+>>>>>>> e9942509 (fix: session)
             :label="__('Password')"
             type="password"
             required
@@ -64,11 +68,15 @@ new #[Layout('components.layouts.auth')] class extends Component {
             :placeholder="__('Password')"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             viewable
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+            viewable
+>>>>>>> e9942509 (fix: session)
         />
 
         <flux:button variant="primary" type="submit" class="w-full">{{ __('Confirm') }}</flux:button>

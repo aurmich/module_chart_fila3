@@ -216,16 +216,22 @@ return [
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9942509 (fix: session)
                 'guzzle_middlewares' => [
                     // MyInvokableMiddleware::class,
                     // [MyMiddleware::class, 'static_method'],
                 ],
+<<<<<<< HEAD
 =======
                 'guzzle_middlewares' => [],
 >>>>>>> aurmich/dev
 =======
                 'guzzle_middlewares' => [],
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> e9942509 (fix: session)
             ],
         ],
     ],

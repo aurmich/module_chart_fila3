@@ -43,10 +43,14 @@ return Application::configure(basePath: dirname(__DIR__))
     )
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     ->withMiddleware(function (Middleware $middleware): void {
+=======
+    ->withMiddleware(function (Middleware $middleware) {
+>>>>>>> e9942509 (fix: session)
         //
     })
-    ->withExceptions(function (Exceptions $exceptions): void {
+    ->withExceptions(function (Exceptions $exceptions) {
         //
 <<<<<<< HEAD
 <<<<<<< HEAD

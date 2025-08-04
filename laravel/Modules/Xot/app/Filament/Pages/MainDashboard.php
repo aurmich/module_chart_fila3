@@ -6,11 +6,15 @@ namespace Modules\Xot\Filament\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Facades\Filament;
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+use Filament\Facades\Filament;
+>>>>>>> e9942509 (fix: session)
 use Filament\Pages\Dashboard;
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
@@ -34,11 +38,15 @@ class MainDashboard extends Dashboard
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+        
+>>>>>>> e9942509 (fix: session)
         Assert::notNull($user = auth()->user(), '['.__LINE__.']['.class_basename($this).']');
         $modules = $user->roles->filter(
             static function ($item) {

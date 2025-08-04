@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "Activity": true,
     "Chart": true,
     "Cms": true,
@@ -11,21 +12,32 @@
     "Xot": true,
     "Dental": true,
     "Reporting": true,
+=======
+>>>>>>> e9942509 (fix: session)
     "Activity": true,
     "Chart": true,
     "Cms": true,
+    "DbForge": true,
     "Gdpr": true,
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+    "Geo": true,
+>>>>>>> e9942509 (fix: session)
     "Job": true,
     "Lang": true,
     "Media": true,
     "Notify": true,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e9942509 (fix: session)
     "SaluteMo": true,
     "SaluteOra": true,
     "Tenant": true,
     "UI": true,
     "User": true,
+<<<<<<< HEAD
     "Xot": true,
     "FormBuilder": true
 =======
@@ -45,4 +57,7 @@
     "Geo": true,
     "DbForge": true
 >>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
+=======
+    "Xot": true
+>>>>>>> e9942509 (fix: session)
 }

@@ -47,6 +47,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             wire:model="name"
 =======
             wire:model.live="name"
@@ -57,6 +58,9 @@ new #[Layout('components.layouts.auth')] class extends Component {
 =======
             wire:model.live="name"
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+            wire:model="name"
+>>>>>>> e9942509 (fix: session)
             :label="__('Name')"
             type="text"
             required
@@ -70,6 +74,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             wire:model="email"
 =======
             wire:model.live="email"
@@ -80,6 +85,9 @@ new #[Layout('components.layouts.auth')] class extends Component {
 =======
             wire:model.live="email"
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+            wire:model="email"
+>>>>>>> e9942509 (fix: session)
             :label="__('Email address')"
             type="email"
             required
@@ -92,6 +100,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             wire:model="password"
 =======
             wire:model.live="password"
@@ -102,6 +111,9 @@ new #[Layout('components.layouts.auth')] class extends Component {
 =======
             wire:model.live="password"
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+            wire:model="password"
+>>>>>>> e9942509 (fix: session)
             :label="__('Password')"
             type="password"
             required
@@ -109,15 +121,20 @@ new #[Layout('components.layouts.auth')] class extends Component {
             :placeholder="__('Password')"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             viewable
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+            viewable
+>>>>>>> e9942509 (fix: session)
         />
 
         <!-- Confirm Password -->
         <flux:input
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -131,6 +148,9 @@ new #[Layout('components.layouts.auth')] class extends Component {
 =======
             wire:model.live="password_confirmation"
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+            wire:model="password_confirmation"
+>>>>>>> e9942509 (fix: session)
             :label="__('Confirm password')"
             type="password"
             required
@@ -138,11 +158,15 @@ new #[Layout('components.layouts.auth')] class extends Component {
             :placeholder="__('Confirm password')"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             viewable
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+            viewable
+>>>>>>> e9942509 (fix: session)
         />
 
         <div class="flex items-center justify-end">
@@ -152,6 +176,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
         </div>
     </form>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-600 dark:text-zinc-400">
@@ -164,6 +189,10 @@ new #[Layout('components.layouts.auth')] class extends Component {
     <div class="space-x-1 text-center text-sm text-zinc-600 dark:text-zinc-400">
         {{ __('Already have an account?') }}
 >>>>>>> 54f4fa16 (.)
+=======
+    <div class="space-x-1 rtl:space-x-reverse text-center text-sm text-zinc-600 dark:text-zinc-400">
+        <span>{{ __('Already have an account?') }}</span>
+>>>>>>> e9942509 (fix: session)
         <flux:link :href="route('login')" wire:navigate>{{ __('Log in') }}</flux:link>
     </div>
 </div>

@@ -1,6 +1,8 @@
-import { defineConfig } from 'vite';
+import {
+    defineConfig
+} from 'vite';
 import laravel from 'laravel-vite-plugin';
-import tailwindcss from '@tailwindcss/vite';
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
     plugins: [
@@ -28,5 +30,12 @@ export default defineConfig({
         }),
         tailwindcss(),
     ],
+<<<<<<< HEAD
 });
 >>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
+=======
+    server: {
+        cors: true,
+    },
+});
+>>>>>>> e9942509 (fix: session)
