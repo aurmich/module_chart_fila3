@@ -254,6 +254,11 @@ return array (
     array (
       'description' => 'body_html',
     ),
+    'body_html' => 
+    array (
+      'description' => 'body_html',
+      'helper_text' => 'body_html',
+    ),
   ),
   'actions' => 
   array (

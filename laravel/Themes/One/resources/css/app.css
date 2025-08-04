@@ -306,6 +306,7 @@
     a {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         @apply text-primary-600;
 =======
         @apply text-primary-600 hover:text-primary-900;
@@ -313,6 +314,9 @@
 =======
         @apply text-primary-600 hover:text-primary-900;
 >>>>>>> d23ba493 (add calendar)
+=======
+        @apply text-primary-600;
+>>>>>>> b2a39a21 (- update footer)
     }
 
     /* Form */

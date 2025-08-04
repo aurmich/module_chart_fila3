@@ -131,9 +131,9 @@
 =======
             <div class="w-[700px] flex justify-center">
                 <div class="text-center m-6 md:text-right space-x-4">
-                    <a href="{{ url('privacy') }}" class="text-white text-sm hover:text-primary-400 transition-colors">Privacy Policy</a>
-                    <a href="{{ url('terms') }}" class="text-white text-sm hover:text-primary-400 transition-colors">Termini e Condizioni</a>
-                    <a href="{{ url('cookies') }}" class="text-white text-sm hover:text-primary-400 transition-colors">Cookie Policy</a>
+                    <a href="{{ url('privacy') }}" class="text-white text-sm transition-colors">Privacy Policy</a>
+                    <a href="{{ url('terms') }}" class="text-white text-sm transition-colors">Termini e Condizioni</a>
+                    <a href="{{ url('cookies') }}" class="text-white text-sm transition-colors">Cookie Policy</a>
                 </div>
             </div>
             <div class="w-full flex justify-center">
@@ -141,10 +141,10 @@
             </div>
             <div class="w-[700px] flex justify-center">
                 <div class="text-center m-6 md:text-right">
-                    <a href="{{ url('privacy') }}" class="text-white text-sm hover:text-primary-400 transition-colors">Home</a>
-                    <a href="{{ url('terms') }}" class="text-white text-sm hover:text-primary-400 transition-colors">Progetto</a>
-                    <a href="{{ url('cookies') }}" class="text-white text-sm hover:text-primary-400 transition-colors">Partners</a>
-                    <a href="{{ url('cookies') }}" class="text-white text-sm hover:text-primary-400 transition-colors">FAQ'S</a>
+                    <a href="{{ url('privacy') }}" class="text-white text-sm m-1">Home</a>
+                    <a href="{{ url('terms') }}" class="text-white text-sm m-1">Progetto</a>
+                    <a href="{{ url('cookies') }}" class="text-white text-sm m-1">Partners</a>
+                    <a href="{{ url('cookies') }}" class="text-white text-sm">FAQ'S</a>
                 </div>
             </div>          
 >>>>>>> ff138484 (- update dettaglio paziente)
