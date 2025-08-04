@@ -155,7 +155,11 @@ enum DoctorRegistrationStatusEnum: string implements HasLabel, HasIcon, HasColor
 
 // Alias for backward compatibility
 <<<<<<< HEAD
+<<<<<<< HEAD
 //class_alias(DoctorRegistrationStatusEnum::class, 'Modules\SaluteOra\Enums\DoctorRegistrationStatus');
 =======
 class_alias(DoctorRegistrationStatusEnum::class, 'Modules\SaluteOra\Enums\DoctorRegistrationStatus');
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+class_alias(DoctorRegistrationStatusEnum::class, 'Modules\\\\SaluteOra\\\\Enums\\\\DoctorRegistrationStatus');
+>>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)

@@ -93,9 +93,14 @@ abstract class BaseTransition extends Transition
         return [
             'message' => $this->message,
             'appointment_date' => $this->appointment->start_time->format('d/m/Y H:i'),
+<<<<<<< HEAD
             'patient_name' => $this->appointment->patient?->name ?? 'N/A',
             'doctor_name' => $this->appointment->doctor?->name ?? 'N/A',
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
+=======
+            'patient_name' => $this->appointment->patient->name ?? 'N/A',
+            'doctor_name' => $this->appointment->doctor->name ?? 'N/A',
+>>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
         ];
     }
 } 

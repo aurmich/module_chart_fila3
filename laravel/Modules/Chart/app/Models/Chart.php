@@ -61,8 +61,12 @@ use Webmozart\Assert\Assert;
 >>>>>>> 345f8677 (phpstan)
 =======
  * @property array<string, mixed> $attributes
+<<<<<<< HEAD
  * @phpstan-type ChartArray array{id: int|null, type: string|null, width: int|null, height: int|null}
 >>>>>>> c99763dd (✨ (studio-filter-widget-lessons.mdc): add comprehensive guidelines and patterns for StudioFilterWidget to enhance code quality and maintainability)
+=======
+ * @phpstan-type Chart array{id: int|null, type: string|null, width: int|null, height: int|null}
+>>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
  * @mixin \Eloquent
  */
 class Chart extends BaseModel

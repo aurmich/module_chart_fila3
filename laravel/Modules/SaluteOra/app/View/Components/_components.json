@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 []
 =======
 [
@@ -15,3 +16,6 @@
 =======
 [{"name":"patient-registration-wizard","class":"PatientRegistrationWizard","module":null,"path":null,"ns":"Modules\\SaluteOra\\View\\Components\\PatientRegistrationWizard"},{"name":"reporting-chart-assets","class":"ReportingChartAssets","module":null,"path":null,"ns":"Modules\\SaluteOra\\View\\Components\\ReportingChartAssets"}]
 >>>>>>> 5d95df2f (feat(chart): add autoloading for factories and seeders in composer.json to improve module structure)
+=======
+[]
+>>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)

@@ -66,6 +66,8 @@ use Modules\Notify\Notifications\RecordNotification;
 use Modules\SaluteOra\States\User\IntegrationCompleted;
 use Modules\SaluteOra\Models\DoctorRegistrationWorkflow;
 use Modules\SaluteOra\Enums\DoctorRegistrationStatusEnum;
+use Webmozart\Assert\Assert;
+use Modules\SaluteOra\Enums\UserStateEnum;
 
 >>>>>>> 0dec23f0 (✨ (enum-serialization-fix): add new rules for enum serialization to prevent errors during model creation and serialization)
 
@@ -75,8 +77,9 @@ class RegisterAction
      * Esegue l'azione di registrazione del dottore.
      *
      * @param array<string, mixed> $data
-     * @return Doctor
+     * @return \Modules\SaluteOra\Models\Doctor
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -223,33 +226,59 @@ class RegisterAction
             $studio->address()->save($address);
             $doctor->studio()->save($studio);
             $doctor->studios()->attach($studio,['schedule'=>$data['schedule']]);
-        }
-
-        //$record->save();
-        //$record->update($data);
-        /*
-        $attachments = Doctor::$attachments;
-        foreach ($attachments as $attachment) {
-                $doctor->addMediaFromDisk($data[$attachment],'local')
-                    ->toMediaCollection($attachment);
-
-        }
-        */
+=======
+    public function execute(array $data): Doctor
+    {
+        // Creazione dello studio con validazione dei dati
+        $studioData = $data['studio'] ?? [];
+        Assert::isArray($studioData, 'Studio data must be an array');
         
-        if($data['state']=='integration_requested'){
-            $doctor->state->transitionTo(IntegrationCompleted::class);
-            return $doctor;
+        $studio = Studio::create($studioData);
+
+        // Creazione dell'indirizzo se presente
+        if (isset($data['studio']['address']) && is_array($data['studio']['address'])) {
+            $addressData = $data['studio']['address'];
+            $address = Address::create($addressData);
+>>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
         }
 
-
-        $mail_slug=Str::slug($data['type'].'-'.$data['state']);
+        // Creazione dell'utente dottore
+        $user = app(UserContract::class);
+        Assert::isInstanceOf($user, UserContract::class);
         
+        // Cast sicuro a Doctor dopo la verifica
+        if (!$user instanceof Doctor) {
+            throw new \InvalidArgumentException('User must be an instance of Doctor');
+        }
 
-        Notification::route('mail', $data['email'])
-        //->locale('it')
-        ->notify(new RecordNotification($doctor,$mail_slug));
+        // Associazione con lo studio
+        if (method_exists($user, 'studio')) {
+            $user->studio()->associate($studio);
+        }
+        
+        if (method_exists($user, 'studios')) {
+            $user->studios()->attach($studio->id);
+        }
 
-        return $doctor;
+        // Aggiornamento del state
+        if (property_exists($user, 'state')) {
+            $user->state = UserStateEnum::PENDING;
+        }
+
+        $user->save();
+
+        // Gestione sicura della concatenazione per l'email
+        $doctorName = $data['first_name'] ?? '';
+        $doctorLastName = $data['last_name'] ?? '';
+        $fullName = trim($doctorName . ' ' . $doctorLastName);
+
+        // Invio notifica se l'utente è un Model
+        if ($user instanceof \Illuminate\Database\Eloquent\Model) {
+            $mailSlug = 'doctor-registration';
+            $user->notify(new RecordNotification($user, $mailSlug));
+        }
+
+        return $user;
     }
 
 <<<<<<< HEAD

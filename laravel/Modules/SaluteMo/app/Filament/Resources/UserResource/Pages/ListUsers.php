@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\SaluteMo\Filament\Resources\UserResource\Pages;
 
 use Filament\Actions;
@@ -23,6 +25,11 @@ class ListUsers extends BaseListUsers
 {
     protected static string $resource = UserResource::class;
 
+   /**
+    * Get the table columns.
+    *
+    * @return array<string, \Filament\Tables\Columns\TextColumn|\Filament\Tables\Columns\SelectColumn|\Modules\UI\Filament\Tables\Columns\IconStateColumn>
+    */
    public function getTableColumns(): array
    {
 
@@ -40,10 +47,14 @@ class ListUsers extends BaseListUsers
         //'state'=>SelectColumn::make('state')->options(UserStateEnum::class)
         //'state'=>SelectColumn::make('state')->options(UserState::class)
 <<<<<<< HEAD
+<<<<<<< HEAD
         'state'=>IconStateColumn::make('state'),
 =======
         IconStateColumn::make('state'),
 >>>>>>> c6edea7c (.)
+=======
+        'state' => IconStateColumn::make('state'),
+>>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
 
     ];
    }

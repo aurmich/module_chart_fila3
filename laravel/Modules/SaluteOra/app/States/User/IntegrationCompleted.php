@@ -13,9 +13,13 @@ namespace Modules\SaluteOra\States\User;
 class IntegrationCompleted extends UserState
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @var string */
     public static string $name = 'integration_completed';
 =======
+=======
+    /** @var string */
+>>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
     public static $name = 'integration_completed';
 >>>>>>> c9c4a8bd (feat: use BaseTransition in all Transactions of SaluteOra)
     

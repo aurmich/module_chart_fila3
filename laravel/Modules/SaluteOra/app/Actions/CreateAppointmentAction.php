@@ -10,6 +10,8 @@ use Modules\SaluteOra\Models\Dentist;
 use Modules\SaluteOra\Models\Patient;
 use Modules\SaluteOra\Models\Treatment;
 use Spatie\QueueableAction\QueueableAction;
+use Safe\DateTime;
+
 
 class CreateAppointmentAction
 {
@@ -42,6 +44,7 @@ class CreateAppointmentAction
 <<<<<<< HEAD
                     // Ensure start_time is a valid datetime string
                     $startTimeStr = is_string($data['start_time']) ? $data['start_time'] : '';
+<<<<<<< HEAD
                     $startTime = new \DateTime($startTimeStr);
 =======
                     $startTime = new \DateTime($data['start_time']);
@@ -51,6 +54,9 @@ class CreateAppointmentAction
                     $startTimeStr = is_string($data['start_time']) ? $data['start_time'] : '';
                     $startTime = new \DateTime($startTimeStr);
 >>>>>>> 8e4d163b (phpstan)
+=======
+                    $startTime = new DateTime($startTimeStr);
+>>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
                     $endTime = (clone $startTime)->modify("+{$treatment->duration_minutes} minutes");
                     $data['end_time'] = $endTime->format('Y-m-d H:i:s');
                 }
