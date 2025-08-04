@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo UI - Documentazione
 
 ## Panoramica
@@ -59,6 +60,8 @@ Il modulo UI fornisce componenti, widget e funzionalità di interfaccia utente c
 =======
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 # Modulo UI
 
 ## Panoramica
@@ -72,6 +75,7 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
 - DateRangePicker: Selezione intervalli di date
 - FileUpload: Upload file con preview e validazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **OpeningHoursField**: Campo per gestione orari settimanali (mattina/pomeriggio) - [Documentazione](components/opening-hours-field.md)
   - ⚠️ **ERRORE CRITICO RISOLTO** (Dic 2024): Proprietà `$view` mancante causava runtime error
   - ✅ **CORREZIONE**: Vista Blade personalizzata + traduzioni complete
@@ -84,6 +88,8 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
   - 🔧 **UTILIZZO**: Widget SaluteOra per studio selection in appointment booking
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 
 ### Tables
 - CustomDataTable: Tabella dati avanzata con ordinamento e filtri
@@ -141,6 +147,7 @@ Il modulo UI fornisce componenti e layout standardizzati per l'interfaccia utent
 - Livewire 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Componenti View Aggiornati (Gen 2025)
 
 ### Studio Selector Component
@@ -172,3 +179,7 @@ Form\View::make('ui::ui.studio-selector')
 ---
 
 >>>>>>> 54f4fa16 (.)
+=======
+---
+
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

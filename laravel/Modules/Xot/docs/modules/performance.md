@@ -9,8 +9,12 @@ Il modulo Performance gestisce le valutazioni delle performance e la distribuzio
 Il modulo Performance mantiene documentazione dettagliata nelle seguenti aree:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Struttura e Funzionamento Generale](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Performance/docs/readme.md)
 <<<<<<< HEAD
+=======
+- [Struttura e Funzionamento Generale](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Performance/docs/readme.md)
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 - [Struttura e Funzionamento Generale](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Performance/docs/README.md)
 =======
 >>>>>>> 54f4fa16 (.)

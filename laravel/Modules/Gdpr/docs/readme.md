@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 # Jigsaw Docs Starter Template
 
 This is a starter template for creating a beautiful, customizable documentation site for your project with minimal effort. You’ll only have to change a few settings and you’re ready to go.
@@ -96,7 +99,10 @@ Now that you’ve edited your configuration variables and know how to customize 
 npm run dev
 ```
 =======
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 # Modulo GDPR
 
 ## Panoramica

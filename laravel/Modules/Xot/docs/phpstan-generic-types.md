@@ -153,8 +153,11 @@ class UserRepository implements UserRepositoryInterface
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Segui queste linee guida per risolvere la maggior parte degli errori relativi ai tipi generici nei tuoi modelli e relazioni Laravel. 
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 Segui queste linee guida per risolvere la maggior parte degli errori relativi ai tipi generici nei tuoi modelli e relazioni Laravel. 
 ## Collegamenti tra versioni di PHPSTAN-GENERIC-TYPES.md
 * [PHPSTAN-GENERIC-TYPES.md](../../../Xot/docs/phpstan/PHPSTAN-GENERIC-TYPES.md)
@@ -173,7 +176,11 @@ Segui queste linee guida per risolvere la maggior parte degli errori relativi ai
 ---
 
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 Segui queste linee guida per risolvere la maggior parte degli errori relativi ai tipi generici nei tuoi modelli e relazioni Laravel. 
 >>>>>>> 9df8f556 (fix .md)
+=======
+Segui queste linee guida per risolvere la maggior parte degli errori relativi ai tipi generici nei tuoi modelli e relazioni Laravel. 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

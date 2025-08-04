@@ -79,6 +79,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
         <flux:input
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             wire:model="email"
 =======
             wire:model.live="email"
@@ -86,6 +87,9 @@ new #[Layout('components.layouts.auth')] class extends Component {
 =======
             wire:model="email"
 >>>>>>> 54f4fa16 (.)
+=======
+            wire:model.live="email"
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
             :label="__('Email')"
             type="email"
             required
@@ -96,6 +100,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
         <flux:input
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             wire:model="password"
 =======
             wire:model.live="password"
@@ -103,6 +108,9 @@ new #[Layout('components.layouts.auth')] class extends Component {
 =======
             wire:model="password"
 >>>>>>> 54f4fa16 (.)
+=======
+            wire:model.live="password"
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
             :label="__('Password')"
             type="password"
             required
@@ -121,6 +129,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
         <flux:input
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             wire:model="password_confirmation"
 =======
             wire:model.live="password_confirmation"
@@ -128,6 +137,9 @@ new #[Layout('components.layouts.auth')] class extends Component {
 =======
             wire:model="password_confirmation"
 >>>>>>> 54f4fa16 (.)
+=======
+            wire:model.live="password_confirmation"
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
             :label="__('Confirm password')"
             type="password"
             required

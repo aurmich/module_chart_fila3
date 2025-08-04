@@ -4,7 +4,10 @@ Questo documento descrive le best practices da seguire quando si creano o modifi
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ## Struttura Corretta dei File e Namespace
 
 ### Posizionamento dei File
@@ -29,9 +32,12 @@ namespace Modules\User\Filament\Widgets;
 namespace Modules\User\App\Filament\Widgets;
 ```
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ## Rimozione del metodo `getPages()`
 
 Quando una risorsa estende `XotBaseResource`, il metodo `getPages()` può essere completamente rimosso se:
@@ -100,7 +106,10 @@ public static function getFormSchema(): array
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ## Mai Usare `->label()` nei Componenti Filament
 
 - Le etichette sono gestite automaticamente dal LangServiceProvider
@@ -144,9 +153,12 @@ public static function getFormSchema(): array
 }
 ```
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ## Integrazione con PHPStan
 
 Questa best practice risolve anche errori PHPStan di livello 9 e superiore relativi al tipo di ritorno del metodo `getFormSchema()`:
@@ -157,8 +169,11 @@ Method Resource::getFormSchema() should return array<string, Filament\Forms\Comp
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Seguendo queste best practices si assicura che il codice passi i controlli statici di PHPStan e sia più facile da mantenere. 
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 Seguendo queste best practices si assicura che il codice passi i controlli statici di PHPStan e sia più facile da mantenere.
 
 ## Traits con Namespace Completo
@@ -210,7 +225,11 @@ use InteractsWithForms;
 * [filament_best_practices.md](../../Xot/docs/filament_best_practices.md)
 * [filament_best_practices.md](../../Job/docs/filament_best_practices.md)
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 Seguendo queste best practices si assicura che il codice passi i controlli statici di PHPStan e sia più facile da mantenere. 
 >>>>>>> 9df8f556 (fix .md)
+=======
+Seguendo queste best practices si assicura che il codice passi i controlli statici di PHPStan e sia più facile da mantenere. 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

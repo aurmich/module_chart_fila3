@@ -28,7 +28,10 @@ Durante un controllo di routine sono stati rilevati diversi conflitti Git non ri
 - [module_lang.md](module_lang.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 
 ## Collegamenti tra versioni di PHPSTAN_LEVEL9_FIXES.md
 * [PHPSTAN_LEVEL9_FIXES.md](../../../User/docs/PHPSTAN_LEVEL9_FIXES.md)
@@ -38,6 +41,9 @@ Durante un controllo di routine sono stati rilevati diversi conflitti Git non ri
 ## Collegamenti tra versioni di phpstan_level9_fixes.md
 * [phpstan_level9_fixes.md](../../User/docs/phpstan_level9_fixes.md)
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

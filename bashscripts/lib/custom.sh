@@ -226,6 +226,7 @@ dummy_push(){
     find . -type f -name "*:Zone.Identifier" -exec rm -f {} \;
     git add -A
 <<<<<<< HEAD
+<<<<<<< HEAD
     git commit -am "$msg"
     git push -u "$org" HEAD:"$branch"
 =======
@@ -233,6 +234,11 @@ dummy_push(){
     #git push -u "$org" HEAD:"$branch"
     oco --yes
 >>>>>>> 54f4fa16 (.)
+=======
+    git commit -am "$msg"
+    git push -u "$org" HEAD:"$branch"
+    #oco --yes
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 }
 
 declare -A PARSED_KV  # Dizionario globale (o può essere passato per riferimento)

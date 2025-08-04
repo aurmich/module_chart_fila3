@@ -278,6 +278,7 @@ class User extends BaseUser
         // 'state' => 'pending',
     ];
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     /**
      * Gli attributi che devono essere nascosti nelle serializzazioni.
@@ -310,6 +311,10 @@ class User extends BaseUser
 =======
     
     
+=======
+
+
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
     /** @var array<int, string> */
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     protected $fillable = [
@@ -599,7 +604,7 @@ class User extends BaseUser
     {
         return !empty($this->name) && !empty($this->email);
     }
-    
+
     /**
      * Transizione allo stato attivo.
      *
@@ -610,7 +615,7 @@ class User extends BaseUser
     {
         $this->state->transitionTo(Active::class);
     }
-    
+
     /**
      * Transizione allo stato sospeso.
      *
@@ -621,7 +626,7 @@ class User extends BaseUser
     {
         $this->state->transitionTo(Suspended::class);
     }
-    
+
     /**
      * Transizione allo stato rifiutato.
      *
@@ -632,7 +637,7 @@ class User extends BaseUser
     {
         $this->state->transitionTo(Rejected::class);
     }
-    
+
     /**
      * Transizione allo stato di richiesta integrazione.
      *
@@ -643,7 +648,7 @@ class User extends BaseUser
     {
         $this->state->transitionTo(IntegrationRequested::class);
     }
-    
+
     /**
      * Verifica se l'utente è attivo.
      *
@@ -653,7 +658,7 @@ class User extends BaseUser
     {
         return $this->state->equals(Active::class);
     }
-    
+
     /**
      * Verifica se l'utente è in attesa.
      *
@@ -663,7 +668,7 @@ class User extends BaseUser
     {
         return $this->state->equals(Pending::class);
     }
-    
+
     /**
      * Verifica se l'utente è sospeso.
      *
@@ -673,7 +678,7 @@ class User extends BaseUser
     {
         return $this->state->equals(Suspended::class);
     }
-    
+
     /**
      * Verifica se l'utente è rifiutato.
      *
@@ -683,7 +688,7 @@ class User extends BaseUser
     {
         return $this->state->equals(Rejected::class);
     }
-    
+
     /**
      * Verifica se è richiesta un'integrazione.
      *

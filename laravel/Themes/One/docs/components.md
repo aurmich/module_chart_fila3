@@ -306,6 +306,9 @@ class ComponentBrowserTest extends DuskTestCase
 # Componenti del Tema One
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 > **NOTA**: La documentazione generale sui componenti UI è centralizzata nel [modulo UI](../../../Modules/UI/docs/components.md). Questa sezione documenta solo i componenti specifici del tema One.
 
 ## Collegamenti
@@ -313,10 +316,14 @@ class ComponentBrowserTest extends DuskTestCase
 - [Documentazione generale componenti UI](../../../Modules/UI/docs/components.md)
 - [Componenti form](../../../Modules/UI/docs/form-components.md)
 - [Componenti layout](../../../Modules/UI/docs/layout-components.md)
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 
 =======
 >>>>>>> 35e9b7ea (feat(scripts): add script to rename files to lowercase while preserving README.md case for consistency and organization)
+=======
+
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ## Logo
 
 Il componente `x-ui.logo` è un SVG che rappresenta il logo dell'applicazione. 
@@ -343,7 +350,10 @@ Il componente `x-ui.logo` è un SVG che rappresenta il logo dell'applicazione.
 - Per hero sections e splash screens, considerare dimensioni maggiori
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 
 ## Collegamenti tra versioni di components.md
 * [components.md](laravel/Modules/UI/docs/components.md)
@@ -351,7 +361,11 @@ Il componente `x-ui.logo` è un SVG che rappresenta il logo dell'applicazione.
 * [components.md](laravel/Modules/Cms/docs/components.md)
 * [components.md](laravel/Themes/One/docs/components.md)
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
  
 >>>>>>> 35e9b7ea (feat(scripts): add script to rename files to lowercase while preserving README.md case for consistency and organization)
+=======
+ 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

@@ -260,10 +260,13 @@ cd /percorso/al/progetto/laravel
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ``` 
 >>>>>>> aurmich/dev
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ``` 
 ## Collegamenti tra versioni di PHPSTAN-USAGE-GUIDE.md
 * [PHPSTAN-USAGE-GUIDE.md](../../../Xot/docs/phpstan/PHPSTAN-USAGE-GUIDE.md)
@@ -282,7 +285,11 @@ cd /percorso/al/progetto/laravel
 ---
 
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 ``` 
 >>>>>>> 9df8f556 (fix .md)
+=======
+``` 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

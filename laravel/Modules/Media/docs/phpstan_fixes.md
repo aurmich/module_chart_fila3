@@ -33,8 +33,11 @@ while (! feof($this->stream) && $this->start <= $this->end) {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo controllo garantisce che `fread()` venga chiamato solo con un valore positivo per il parametro `$length`, evitando anche potenziali loop infiniti nel caso in cui `$bytesToRead` fosse zero o negativo. 
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 Questo controllo garantisce che `fread()` venga chiamato solo con un valore positivo per il parametro `$length`, evitando anche potenziali loop infiniti nel caso in cui `$bytesToRead` fosse zero o negativo. 
 ## Collegamenti tra versioni di PHPSTAN_FIXES.md
 * [PHPSTAN_FIXES.md](../../../Xot/docs/phpstan/PHPSTAN_FIXES.md)
@@ -52,7 +55,11 @@ Questo controllo garantisce che `fread()` venga chiamato solo con un valore posi
 * [phpstan_fixes.md](../../UI/docs/phpstan_fixes.md)
 * [phpstan_fixes.md](../../Activity/docs/phpstan_fixes.md)
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 Questo controllo garantisce che `fread()` venga chiamato solo con un valore positivo per il parametro `$length`, evitando anche potenziali loop infiniti nel caso in cui `$bytesToRead` fosse zero o negativo. 
 >>>>>>> 9df8f556 (fix .md)
+=======
+Questo controllo garantisce che `fread()` venga chiamato solo con un valore positivo per il parametro `$length`, evitando anche potenziali loop infiniti nel caso in cui `$bytesToRead` fosse zero o negativo. 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

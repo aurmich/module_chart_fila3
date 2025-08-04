@@ -45,6 +45,7 @@ new class extends Component {
             <flux:input
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 wire:model="current_password"
 =======
                 wire:model.live="current_password"
@@ -52,12 +53,16 @@ new class extends Component {
 =======
                 wire:model="current_password"
 >>>>>>> 54f4fa16 (.)
+=======
+                wire:model.live="current_password"
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
                 :label="__('Current password')"
                 type="password"
                 required
                 autocomplete="current-password"
             />
             <flux:input
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 wire:model="password"
@@ -67,12 +72,16 @@ new class extends Component {
 =======
                 wire:model="password"
 >>>>>>> 54f4fa16 (.)
+=======
+                wire:model.live="password"
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
                 :label="__('New password')"
                 type="password"
                 required
                 autocomplete="new-password"
             />
             <flux:input
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 wire:model="password_confirmation"
@@ -82,6 +91,9 @@ new class extends Component {
 =======
                 wire:model="password_confirmation"
 >>>>>>> 54f4fa16 (.)
+=======
+                wire:model.live="password_confirmation"
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
                 :label="__('Confirm Password')"
                 type="password"
                 required

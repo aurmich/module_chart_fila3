@@ -1,5 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+# Regole per i Namespace nei Moduli il progetto
+
+Questo documento definisce le regole ufficiali per l'utilizzo dei namespace all'interno dei moduli il progetto, con particolare attenzione alla struttura corretta e alle convenzioni di naming.
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 # Regole per i Namespace nei Moduli Laraxot
 
 Questo documento definisce le regole ufficiali per l'utilizzo dei namespace all'interno dei moduli Laraxot.
@@ -25,12 +31,17 @@ namespace Modules\NomeModulo\Providers;
 namespace Modules\NomeModulo\Http\Controllers;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 namespace Modules\NomeModulo\Filament\Widgets;
 namespace Modules\NomeModulo\Livewire\Auth;
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+namespace Modules\NomeModulo\Filament\Widgets;
+namespace Modules\NomeModulo\Livewire\Auth;
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ```
 
 ### ❌ ERRATO
@@ -40,12 +51,17 @@ namespace Modules\NomeModulo\app\Providers;
 namespace Modules\NomeModulo\app\Http\Controllers;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 namespace Modules\NomeModulo\app\Filament\Widgets;
 namespace Modules\NomeModulo\app\Livewire\Auth;
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+namespace Modules\NomeModulo\app\Filament\Widgets;
+namespace Modules\NomeModulo\app\Livewire\Auth;
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ```
 
 ## Regole per RouteServiceProvider
@@ -83,6 +99,13 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 3. I provider devono avere il namespace `Modules\NomeModulo\Providers`
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+4. I widget Filament devono avere il namespace `Modules\NomeModulo\Filament\Widgets`
+5. I componenti Livewire/Volt devono avere il namespace `Modules\NomeModulo\Livewire`
+6. La proprietà `$name` nel RouteServiceProvider è obbligatoria e deve essere impostata al nome del modulo
+7. La proprietà `$moduleNamespace` deve puntare a `Modules\NomeModulo\Http\Controllers`
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 4. La proprietà `$name` nel RouteServiceProvider è obbligatoria e deve essere impostata al nome del modulo
 5. La proprietà `$moduleNamespace` deve puntare a `Modules\NomeModulo\Http\Controllers`
 =======
@@ -102,7 +125,10 @@ Questa struttura di namespace mantiene compatibilità con la convenzione di Lara
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ## Esempi di Namespace per Componenti Comuni
 
 ### Filament Widgets
@@ -160,9 +186,12 @@ return redirect()->route('home');
 ?>
 ```
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ## Verifica e correzione
 
 Se incontri errori come `name is empty on [Modules\NomeModulo\Providers\RouteServiceProvider]`, verifica:
@@ -171,8 +200,11 @@ Se incontri errori come `name is empty on [Modules\NomeModulo\Providers\RouteSer
 2. Che la proprietà `$name` sia definita e valorizzata
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. Che il `$moduleNamespace` punti alla posizione corretta dei controller 
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 3. Che il `$moduleNamespace` punti alla posizione corretta dei controller
 
 ## Regole Specifiche per Filament
@@ -206,7 +238,11 @@ Se incontri errori come `name is empty on [Modules\NomeModulo\Providers\RouteSer
 - [MODULE_STRUCTURE.md](./MODULE_STRUCTURE.md) - Struttura standard dei moduli
 - [FOLIO_VOLT_FILAMENT_INTEGRATION.md](./FOLIO_VOLT_FILAMENT_INTEGRATION.md) - Integrazione Folio, Volt e Filament
 - [filament/widgets/xot-base-widget.md](./filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 3. Che il `$moduleNamespace` punti alla posizione corretta dei controller 
 >>>>>>> 9df8f556 (fix .md)
+=======
+3. Che il `$moduleNamespace` punti alla posizione corretta dei controller 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

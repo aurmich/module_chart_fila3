@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # Regole per l'Utilizzo di XotBaseListRecords
 
 ## When
@@ -46,3 +47,5 @@ class ListYourRecords extends XotBasePage // ERRORE: Usa XotBaseListRecords
 - Estendere XotBasePage invece di XotBaseListRecords
 - Non implementare i metodi richiesti
 - Modificare il livello di accesso dei metodi ereditati
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

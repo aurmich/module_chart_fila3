@@ -196,8 +196,11 @@ Per una comprensione più completa delle correzioni necessarie, consultare:
 2. [PHPSTAN-LEVEL9-GUIDE.md](./PHPSTAN-LEVEL9-GUIDE.md) - Per dettagli su come gestire errori livello 9
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. [FILAMENT-TABLES.md](./FILAMENT-TABLES.md) - Per problemi specifici di Filament 
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 3. [FILAMENT-TABLES.md](./FILAMENT-TABLES.md) - Per problemi specifici di Filament 
 ## Collegamenti tra versioni di PHPSTAN-FIXES-SUMMARY.md
 * [PHPSTAN-FIXES-SUMMARY.md](../../../Xot/docs/phpstan/PHPSTAN-FIXES-SUMMARY.md)
@@ -216,7 +219,11 @@ Per una comprensione più completa delle correzioni necessarie, consultare:
 ---
 
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 3. [FILAMENT-TABLES.md](./FILAMENT-TABLES.md) - Per problemi specifici di Filament 
 >>>>>>> 9df8f556 (fix .md)
+=======
+3. [FILAMENT-TABLES.md](./FILAMENT-TABLES.md) - Per problemi specifici di Filament 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

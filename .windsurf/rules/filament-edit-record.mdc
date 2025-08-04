@@ -3,6 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
+<<<<<<< HEAD
 # Regole per l'Utilizzo di XotBaseEditRecord
 
 ## When
@@ -46,3 +47,5 @@ class EditYourRecord extends XotBasePage // ERRORE: Usa XotBaseEditRecord
 - Estendere XotBasePage invece di XotBaseEditRecord
 - Non implementare i metodi richiesti
 - Modificare il livello di accesso dei metodi ereditati
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

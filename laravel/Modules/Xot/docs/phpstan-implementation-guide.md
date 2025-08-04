@@ -309,10 +309,13 @@ Ogni modulo dovrebbe documentare le soluzioni ai problemi PHPStan specifici in `
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Seguendo questa guida pratica, potrai affrontare e risolvere in modo metodico i problemi rilevati da PHPStan nel tuo codebase Laraxot <nome progetto>, migliorando la qualità complessiva del codice e riducendo gli errori a runtime. 
 >>>>>>> aurmich/dev
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 Seguendo questa guida pratica, potrai affrontare e risolvere in modo metodico i problemi rilevati da PHPStan nel tuo codebase Laraxot <nome progetto>, migliorando la qualità complessiva del codice e riducendo gli errori a runtime. 
 ## Collegamenti tra versioni di PHPSTAN-IMPLEMENTATION-GUIDE.md
 * [PHPSTAN-IMPLEMENTATION-GUIDE.md](../../../Xot/docs/phpstan/PHPSTAN-IMPLEMENTATION-GUIDE.md)
@@ -322,7 +325,11 @@ Seguendo questa guida pratica, potrai affrontare e risolvere in modo metodico i 
 ## Collegamenti tra versioni di phpstan-implementation-guide.md
 * [phpstan-implementation-guide.md](phpstan/phpstan-implementation-guide.md)
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 Seguendo questa guida pratica, potrai affrontare e risolvere in modo metodico i problemi rilevati da PHPStan nel tuo codebase Laraxot <nome progetto>, migliorando la qualità complessiva del codice e riducendo gli errori a runtime. 
 >>>>>>> 9df8f556 (fix .md)
+=======
+Seguendo questa guida pratica, potrai affrontare e risolvere in modo metodico i problemi rilevati da PHPStan nel tuo codebase Laraxot <nome progetto>, migliorando la qualità complessiva del codice e riducendo gli errori a runtime. 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

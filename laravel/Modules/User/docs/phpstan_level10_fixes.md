@@ -256,8 +256,11 @@ public function handle(Failed $event): void
 3. Mantieni aggiornata la documentazione quando vengono modificati metodi o proprietà.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. Utilizza strumenti di analisi automatica come PHPStan regolarmente per verificare che il codice rimanga conforme. 
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 4. Utilizza strumenti di analisi automatica come PHPStan regolarmente per verificare che il codice rimanga conforme. 
 ## Collegamenti tra versioni di PHPSTAN_LEVEL10_FIXES.md
 * [PHPSTAN_LEVEL10_FIXES.md](docs/PHPSTAN_LEVEL10_FIXES.md)
@@ -274,7 +277,11 @@ public function handle(Failed $event): void
 * [phpstan_level10_fixes.md](../../Job/docs/phpstan_level10_fixes.md)
 * [phpstan_level10_fixes.md](../../Media/docs/phpstan_level10_fixes.md)
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 4. Utilizza strumenti di analisi automatica come PHPStan regolarmente per verificare che il codice rimanga conforme. 
 >>>>>>> 9df8f556 (fix .md)
+=======
+4. Utilizza strumenti di analisi automatica come PHPStan regolarmente per verificare che il codice rimanga conforme. 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 # Best Practices
 
 ## Architettura
@@ -158,9 +161,12 @@ class LoginTest extends TestCase
 }
 ```
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 # Best Practices per Laraxot
 
 ## Riferimenti al modello User
@@ -230,8 +236,11 @@ public function process(\Modules\User\Models\User $user) {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ``` 
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ``` 
 ## Collegamenti tra versioni di best-practices.md
 * [best-practices.md](../../../../docs/tecnico/filament/best-practices.md)
@@ -239,7 +248,11 @@ public function process(\Modules\User\Models\User $user) {
 * [best-practices.md](../../UI/docs/best-practices.md)
 * [best-practices.md](../../../Themes/One/docs/best-practices.md)
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 ``` 
 >>>>>>> 9df8f556 (fix .md)
+=======
+``` 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

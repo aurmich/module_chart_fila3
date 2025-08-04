@@ -64,13 +64,20 @@ class YourModel extends Model
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices](BEST-PRACTICES.md) 
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 - [Best Practices](BEST-PRACTICES.md) 
 ## Collegamenti tra versioni di refactoring.md
 * [refactoring.md](../../../../docs/refactoring.md)
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 - [Best Practices](BEST-PRACTICES.md) 
 >>>>>>> 9df8f556 (fix .md)
+=======
+- [Best Practices](BEST-PRACTICES.md) 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

@@ -47,8 +47,12 @@ Gestisce le richieste di accesso, modifica o cancellazione dei dati personali.
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Generale GDPR](./readme.md)
 <<<<<<< HEAD
+=======
+- [Documentazione Generale GDPR](./readme.md)
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 - [Documentazione Generale GDPR](./README.md)
 =======
 >>>>>>> 54f4fa16 (.)

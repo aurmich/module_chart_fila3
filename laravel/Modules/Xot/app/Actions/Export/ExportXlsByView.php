@@ -9,6 +9,7 @@ namespace Modules\Xot\Actions\Export;
 use Illuminate\Contracts\View\View;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
@@ -24,12 +25,21 @@ use Spatie\QueueableAction\QueueableAction;
  * Classe per l'esportazione di viste in formato Excel.
  */
 =======
+=======
+use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Http\BinaryFileResponse;
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\Xot\Exports\ViewExport;
 use Spatie\QueueableAction\QueueableAction;
-use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+/**
+ * Classe per l'esportazione di viste in formato Excel.
+ */
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 class ExportXlsByView
 {
     use QueueableAction;
@@ -37,6 +47,7 @@ class ExportXlsByView
     /**
      * Esporta una vista in Excel.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param View $view La vista da esportare
@@ -76,29 +87,37 @@ class ExportXlsByView
 >>>>>>> aurmich/dev
 =======
      * @param View $view Vista da esportare
+=======
+     * @param Collection<int|string, mixed> $rows La collezione da esportare
+     * @param array<int, string> $fields Campi da includere nell'export
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
      * @param string $filename Nome del file Excel
-     * @param array<string>|null $fields Campi da includere nell'export
-     * 
+     * @param string|null $transKey Chiave di traduzione per i campi
+     *
      * @return BinaryFileResponse
      */
     public function execute(
-        View $view,
+        Collection $rows,
+        array $fields,
         string $filename = 'test.xlsx',
-        ?array $fields = null,
+        ?string $transKey = null,
     ): BinaryFileResponse {
-        // Se $fields non è null, assicuriamo che sia un array di stringhe
-        $stringFields = null;
-        if (is_array($fields)) {
-            $stringFields = array_map(function ($field) {
-                return strval($field);
-            }, array_values($fields));
-        }
+        // Assicuriamo che $fields sia un array di stringhe
+        $stringFields = array_map(function (string|int|float|bool $field): string {
+            return strval($field);
+        }, array_values($fields));
 
         $export = new ViewExport(
+<<<<<<< HEAD
             view: $view,
             transKey: null,
             fields: $stringFields
 >>>>>>> 54f4fa16 (.)
+=======
+            rows: $rows,
+            fields: $stringFields,
+            transKey: $transKey
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
         );
 
         return Excel::download($export, $filename);

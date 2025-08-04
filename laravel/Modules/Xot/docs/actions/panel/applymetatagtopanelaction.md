@@ -33,6 +33,7 @@ La correzione dell'errore PHPStan richiede la modifica del metodo chiamato da `g
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Collegamenti
 - [MetatagData](../../datas/MetatagData.md)
 <<<<<<< HEAD
@@ -45,6 +46,8 @@ La correzione dell'errore PHPStan richiede la modifica del metodo chiamato da `g
 - [PHPStan Common Exceptions](../../PHPSTAN-COMMON-EXCEPTIONS.md) 
 >>>>>>> aurmich/dev
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ## Migrazione brandLogo
 Quando si configura il logo del brand, sostituire la chiamata deprecata:
 ```php
@@ -69,10 +72,16 @@ con la nuova:
 
 ## Collegamenti tra versioni di applymetatagtopanelaction.md
 * [applymetatagtopanelaction.md](../applymetatagtopanelaction.md)
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ## Collegamenti
 - [MetatagData](../../datas/MetatagData.md)
 - [Filament Best Practices](../../FILAMENT-BEST-PRACTICES.md)
 - [PHPStan Common Exceptions](../../PHPSTAN-COMMON-EXCEPTIONS.md) 
+<<<<<<< HEAD
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

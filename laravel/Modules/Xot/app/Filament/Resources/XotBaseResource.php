@@ -119,17 +119,23 @@ abstract class XotBaseResource extends FilamentResource
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     abstract public static function getFormSchema(): array;
     
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
     public static function getFormSchema(): array
     {
         return [];
     }
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
     abstract public static function getFormSchema(): array;
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 
     final public static function form(Form $form): Form
     {
@@ -185,10 +191,14 @@ abstract class XotBaseResource extends FilamentResource
         /** @var class-string<\Filament\Resources\Pages\Page> $view */
         $view = $view;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
         /** @var array<string, \Filament\Resources\Pages\PageRegistration> $pages */
         $pages = [
             'index' => $index::route('/'),
@@ -213,10 +223,14 @@ abstract class XotBaseResource extends FilamentResource
         $filename = $reflector->getFileName();
         Assert::string($filename);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
         $path = Str::of($filename)
             ->before('.php')
             ->append(DIRECTORY_SEPARATOR)
@@ -226,10 +240,14 @@ abstract class XotBaseResource extends FilamentResource
         $files = glob($path.DIRECTORY_SEPARATOR.'*RelationManager.php');
         Assert::isArray($files);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
         /** @var array<class-string<\Filament\Resources\RelationManagers\RelationManager>> $res */
         $res = [];
         foreach ($files as $file) {
@@ -239,10 +257,14 @@ abstract class XotBaseResource extends FilamentResource
                 ->prepend(static::class.'\RelationManagers\\')
                 ->toString();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
 >>>>>>> 54f4fa16 (.)
+=======
+
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
             if (class_exists($className)) {
                 Assert::subclassOf($className, \Filament\Resources\RelationManagers\RelationManager::class);
                 $res[] = $className;

@@ -703,4 +703,9 @@ Questo documento serve come indice principale per tutte le roadmap del progetto 
 * [roadmap.md](../laravel/Modules/Cms/docs/roadmap.md)
 * [roadmap.md](../laravel/Themes/One/docs/roadmap.md)
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+- [Documentazione modulo Tenant](../laravel/Modules/Tenant/docs/README.md)
+
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

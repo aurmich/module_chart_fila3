@@ -59,10 +59,14 @@ class SuperAdminCommand extends Command
         $user = XotData::make()->getUserByEmail($email);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
         // Create super-admin role with web guard
         $role = Role::firstOrCreate(
             ['name' => 'super-admin']
         );
+<<<<<<< HEAD
         $user->assignRole($role);
 
         // Create module admin roles
@@ -74,12 +78,22 @@ class SuperAdminCommand extends Command
             );
 =======
         $role = Role::firstOrCreate(['name' => 'super-admin']);
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
         $user->assignRole($role);
+
+        // Create module admin roles
         $modules_opts = array_keys(Module::all());
         foreach ($modules_opts as $module) {
             $role_name = Str::lower($module).'::admin';
+<<<<<<< HEAD
             $role = Role::firstOrCreate(['name' => $role_name]);
 >>>>>>> 54f4fa16 (.)
+=======
+            $role = Role::firstOrCreate(
+                ['name' => $role_name]
+            );
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
             $user->assignRole($role);
         }
 

@@ -49,10 +49,14 @@ Ultimo aggiornamento: Fri Mar 28 18:55:21 CET 2025
 
 ### Avanzato
 <<<<<<< HEAD
+<<<<<<< HEAD
 33. [Database](database.md)
 =======
 33. [Database](database.md) 
 >>>>>>> 9df8f556 (fix .md)
+=======
+33. [Database](database.md)
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 34. [Enums](enums.md)
 35. [Bash Scripts](bashscripts.md)
 36. [Namespace Structure](namespace-structure.md)
@@ -92,9 +96,15 @@ Per iniziare da zero, seguire la guida [Installazione Iniziale](installazione-in
 - Creazione del progetto base
 - Configurazione iniziale
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Gestione delle migrazioni
 
 - [Documentazione modulo Tenant](../laravel/Modules/Tenant/docs/README.md)
 =======
 - Gestione delle migrazioni 
 >>>>>>> 9df8f556 (fix .md)
+=======
+- Gestione delle migrazioni
+
+- [Documentazione modulo Tenant](../laravel/Modules/Tenant/docs/README.md)
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

@@ -119,8 +119,11 @@ private function evaluateFunction(string $functionString): mixed
 2. Eseguire l'analisi PHPStan a livello 10 per verificare che le correzioni risolvano effettivamente gli errori.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. Documentare gli schemi e i pattern utilizzati per risolvere problemi simili in futuro. 
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ### Versione HEAD
 
 3. Documentare gli schemi e i pattern utilizzati per risolvere problemi simili in futuro. 
@@ -146,7 +149,11 @@ private function evaluateFunction(string $functionString): mixed
 
 ---
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 3. Documentare gli schemi e i pattern utilizzati per risolvere problemi simili in futuro. 
 >>>>>>> 9df8f556 (fix .md)
+=======
+3. Documentare gli schemi e i pattern utilizzati per risolvere problemi simili in futuro. 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

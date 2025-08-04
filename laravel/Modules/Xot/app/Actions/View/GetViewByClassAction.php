@@ -10,17 +10,26 @@ use Spatie\QueueableAction\QueueableAction;
 use Modules\Xot\Actions\Module\GetModuleNameByModelClassAction;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * Classe per la conversione di nomi di classi in nomi di viste.
  */
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+/**
+ * Classe per la conversione di nomi di classi in nomi di viste.
+ */
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 class GetViewByClassAction
 {
     use QueueableAction;
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
      * Converte un nome di classe in un nome di vista.
      * Esempio: "Modules\UI\Filament\Widgets\GroupWidget" => "ui::filament.widgets.group"
      *
@@ -29,10 +38,13 @@ class GetViewByClassAction
      *
      * @return string Il nome della vista
      * @throws \Exception Se la vista non esiste
+<<<<<<< HEAD
 =======
      * "Modules\UI\Filament\Widgets\GroupWidget" => "ui::filament.widgets.group"
      * @return view-string
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
      */
     public function execute(string $class, string $suffix = ''): string
     {

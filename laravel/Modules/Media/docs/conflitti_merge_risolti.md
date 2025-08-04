@@ -1,13 +1,19 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 # Risoluzione Conflitti Merge - Modulo Media
 
 > **Collegamento globale:** Per le strategie generali e le best practices sulla risoluzione dei conflitti git, vedi [docs/git_conflict_resolution.md](../../../../docs/git_conflict_resolution.md).
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 # Risoluzione dei Conflitti Git nel Modulo Media
 
 ## Panoramica
@@ -395,6 +401,12 @@ Per prevenire o gestire meglio i conflitti Git in futuro:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+---
+
+> **Collegamento globale:** Questa documentazione locale dettaglia i casi concreti e le decisioni architetturali adottate nel modulo Media. Per le strategie generali e le best practices, consulta sempre anche la documentazione globale in [docs/git_conflict_resolution.md](../../../../docs/git_conflict_resolution.md).
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
 
 ## Conflitti nell'integrazione FFmpeg (15/06/2024)

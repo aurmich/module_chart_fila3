@@ -188,7 +188,10 @@ Il trait include meccanismi di gestione degli errori, ad esempio:
 - Non definire azioni duplicate con lo stesso nome
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 
 ## Collegamenti tra versioni di FILAMENT-TABLES.md
 * [FILAMENT-TABLES.md](../../../Xot/docs/filament/FILAMENT-TABLES.md)
@@ -207,6 +210,9 @@ Il trait include meccanismi di gestione degli errori, ad esempio:
 ---
 
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

@@ -533,7 +533,10 @@ Prima di considerare completa una risorsa Filament, verificare:
    - **Modalità di ricezione**: Lista di modalità selezionabili
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 
 ## Collegamenti tra versioni di FILAMENT_BEST_PRACTICES.md
 * [FILAMENT_BEST_PRACTICES.md](../../../Xot/docs/filament/FILAMENT_BEST_PRACTICES.md)
@@ -548,6 +551,9 @@ Prima di considerare completa una risorsa Filament, verificare:
 * [filament_best_practices.md](../../User/docs/filament_best_practices.md)
 * [filament_best_practices.md](../../Job/docs/filament_best_practices.md)
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

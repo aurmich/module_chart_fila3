@@ -48,7 +48,10 @@ if ($livewire) {
 Questo approccio è più robusto e previene errori a runtime quando l'oggetto `$livewire` non ha i metodi o le proprietà previste.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 
 ## Collegamenti tra versioni di PHPSTAN_FIXES.md
 * [PHPSTAN_FIXES.md](../../../Xot/docs/phpstan/PHPSTAN_FIXES.md)
@@ -66,6 +69,9 @@ Questo approccio è più robusto e previene errori a runtime quando l'oggetto `$
 * [phpstan_fixes.md](../../Media/docs/phpstan_fixes.md)
 * [phpstan_fixes.md](../../Activity/docs/phpstan_fixes.md)
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

@@ -3,6 +3,10 @@
 ## Descrizione
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+`XotBaseServiceProvider` è una classe astratta che fornisce l'implementazione base per i Service Provider di tutti i moduli in il progetto. Estende `Illuminate\Support\ServiceProvider` e implementa funzionalità comuni per la registrazione di componenti, traduzioni, configurazioni e altro.
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 `XotBaseServiceProvider` è una classe astratta che fornisce l'implementazione base per i Service Provider di tutti i moduli . Estende `Illuminate\Support\ServiceProvider` e implementa funzionalità comuni per la registrazione di componenti, traduzioni, configurazioni e altro.
 `XotBaseServiceProvider` è una classe astratta che fornisce l'implementazione base per i Service Provider di tutti i moduli in SaluteOra. Estende `Illuminate\Support\ServiceProvider` e implementa funzionalità comuni per la registrazione di componenti, traduzioni, configurazioni e altro.
 =======
@@ -31,6 +35,10 @@ public function boot(): void
     $this->registerTranslations();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    // $this->registerConfig(); // to register
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
     $this->registerConfig();
 =======
     // $this->registerConfig(); // to register
@@ -45,11 +53,15 @@ public function boot(): void
     $this->registerCommands();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // $this->registerBladeIcons(); deve stare in register
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+    // $this->registerBladeIcons(); deve stare in register
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 }
 ```
 
@@ -61,6 +73,13 @@ public function register(): void
     $this->module_ns = collect(explode('\\', $this->module_ns))->slice(0, -1)->implode('\\');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    $this->app->register($this->module_ns . '\\Providers\\RouteServiceProvider');
+    $this->app->register($this->module_ns . '\\Providers\\EventServiceProvider');
+    $this->registerConfig();
+    $this->registerBladeIcons(); // to boot
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
     $this->app->register($this->module_ns.'\Providers\RouteServiceProvider');
     $this->app->register($this->module_ns.'\Providers\EventServiceProvider');
     $this->registerBladeIcons();
@@ -210,8 +229,11 @@ try {
 4. Le eccezioni vengono gestite con fallback appropriati
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 5. La registrazione dei componenti è automatica ma configurabile 
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 5. La registrazione dei componenti è automatica ma configurabile 
 ## Collegamenti tra versioni di XotBaseServiceProvider.md
 * [XotBaseServiceProvider.md](docs/moduli/xot/XotBaseServiceProvider.md)
@@ -221,7 +243,11 @@ try {
 ## Collegamenti tra versioni di xotbaseserviceprovider.md
 * [xotbaseserviceprovider.md](../../../Notify/docs/providers/xotbaseserviceprovider.md)
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 5. La registrazione dei componenti è automatica ma configurabile 
 >>>>>>> 9df8f556 (fix .md)
+=======
+5. La registrazione dei componenti è automatica ma configurabile 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

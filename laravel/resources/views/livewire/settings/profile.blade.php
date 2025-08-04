@@ -76,6 +76,7 @@ new class extends Component {
         <form wire:submit="updateProfileInformation" class="my-6 w-full space-y-6">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
             <flux:input wire:model="name" :label="__('Name')" type="text" required autofocus autocomplete="name" />
@@ -91,6 +92,12 @@ new class extends Component {
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+            <flux:input wire:model.live="name" :label="__('Name')" type="text" required autofocus autocomplete="name" />
+
+            <div>
+                <flux:input wire:model.live="email" :label="__('Email')" type="email" required autocomplete="email" />
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 
                 @if (auth()->user() instanceof \Illuminate\Contracts\Auth\MustVerifyEmail &&! auth()->user()->hasVerifiedEmail())
                     <div>

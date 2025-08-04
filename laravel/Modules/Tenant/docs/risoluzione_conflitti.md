@@ -142,6 +142,9 @@ Questo errore indica che ci sono ancora conflitti git non risolti in altri modul
 **Azione necessaria:** Per completare il processo di validazione, sarà necessario risolvere anche i conflitti nel modulo Xot, in particolare nel file `XotServiceProvider.php`.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ## [AGGIORNAMENTO 2024-xx-xx] Risoluzione conflitto in app/Models/Tenant.php
 
 **Problema**: Conflitto tra due versioni delle relazioni `patients()` e `appointments()`, una puntava ai moduli `Patient` e `Dental`, l'altra a `SaluteOra`.
@@ -152,15 +155,22 @@ Questo errore indica che ci sono ancora conflitti git non risolti in altri modul
 
 **Backlink**: Consulta anche la [documentazione globale sulla risoluzione dei conflitti git](../../../docs/risoluzione_conflitti_git.md) per la procedura e le linee guida generali.
 
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ## Collegamenti Utili
 
 - [Documentazione Principale Tenant](module_tenant.md)
 - [Rapporti PHPStan](phpstan/)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Panoramica della Risoluzione dei Conflitti](../../../docs/risoluzione_conflitti_git.md)
 =======
 - [Panoramica della Risoluzione dei Conflitti](/docs/conflict_resolution_ui_tenant.md)
 >>>>>>> 54f4fa16 (.)
+=======
+- [Panoramica della Risoluzione dei Conflitti](../../../docs/risoluzione_conflitti_git.md)
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 

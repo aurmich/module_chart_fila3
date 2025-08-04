@@ -225,8 +225,11 @@ Il `LangServiceProvider` gestisce automaticamente le traduzioni delle label basa
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Infatti, il servizio `AutoLabelAction` intercetta la creazione dei componenti e applica automaticamente le traduzioni corrette, rendendo superfluo (e dannoso) l'uso esplicito del metodo `->label()`. 
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 Infatti, il servizio `AutoLabelAction` intercetta la creazione dei componenti e applica automaticamente le traduzioni corrette, rendendo superfluo (e dannoso) l'uso esplicito del metodo `->label()`. 
 ## Collegamenti tra versioni di INFOLIST_SCHEMA_GUIDELINES.md
 * [INFOLIST_SCHEMA_GUIDELINES.md](../../../Xot/docs/filament/INFOLIST_SCHEMA_GUIDELINES.md)
@@ -236,7 +239,11 @@ Infatti, il servizio `AutoLabelAction` intercetta la creazione dei componenti e 
 ## Collegamenti tra versioni di infolist_schema_guidelines.md
 * [infolist_schema_guidelines.md](../../../UI/docs/infolist_schema_guidelines.md)
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 Infatti, il servizio `AutoLabelAction` intercetta la creazione dei componenti e applica automaticamente le traduzioni corrette, rendendo superfluo (e dannoso) l'uso esplicito del metodo `->label()`. 
 >>>>>>> 9df8f556 (fix .md)
+=======
+Infatti, il servizio `AutoLabelAction` intercetta la creazione dei componenti e applica automaticamente le traduzioni corrette, rendendo superfluo (e dannoso) l'uso esplicito del metodo `->label()`. 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

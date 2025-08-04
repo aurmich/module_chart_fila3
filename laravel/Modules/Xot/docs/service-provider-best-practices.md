@@ -115,7 +115,10 @@ class BrainServiceProvider extends XotBaseServiceProvider
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ### 4. Gestione delle Traduzioni
 
 #### ✅ DO - Usare GetModulePathByGeneratorAction per i path delle traduzioni
@@ -148,9 +151,12 @@ $this->loadTranslationsFrom($langPath, $this->nameLower);
 **Nota:**
 Applicare la stessa regola per la registrazione delle traduzioni JSON.
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ## Implementazione Dettagliata per Tipo di Provider
 
 ### 1. Provider Principale del Modulo
@@ -461,6 +467,11 @@ class RouteServiceProvider extends ServiceProvider
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+### Errore: Eventi non ascoltati## Troubleshooting
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ## Troubleshooting
 =======
 
@@ -488,12 +499,17 @@ class RouteServiceProvider extends ServiceProvider
 ### Problema: Eventi non ascoltati
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 b6f667c (.)
 ### Errore: Eventi non ascoltati
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+b6f667c (.)
+### Errore: Eventi non ascoltati
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 
 **Soluzione:** Verificare che:
 1. L'Event Provider estenda `BaseEventServiceProvider`
@@ -519,7 +535,10 @@ b6f667c (.)
 - [BaseEventServiceProvider](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/Providers/BaseEventServiceProvider.php)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 
 
 # Best Practices per ServiceProvider
@@ -770,6 +789,9 @@ public function boot(): void
 
 **Collegamento:** Vedi anche [XotBaseServiceProvider.md](./XotBaseServiceProvider.md)
 - [filament-best-practices.md](filament-best-practices.md)
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

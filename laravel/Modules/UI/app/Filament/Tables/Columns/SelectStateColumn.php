@@ -6,6 +6,7 @@ namespace Modules\UI\Filament\Tables\Columns;
 
 use Exception;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Arr;
 use Spatie\ModelStates\State;
 use Modules\SaluteOra\Models\User;
@@ -22,6 +23,9 @@ use Spatie\ModelStates\HasStatesContract;
 use Spatie\ModelStates\HasStatesContract;
 >>>>>>> 345f8677 (phpstan)
 =======
+=======
+use Illuminate\Support\Arr;
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 use Spatie\ModelStates\State;
 use Modules\SaluteOra\Models\User;
 use Illuminate\Database\Eloquent\Model;
@@ -97,8 +101,10 @@ class SelectStateColumn extends SelectColumn
 =======
         $this->options(function (Model $record ,$state): array {
             $name=$this->getName();
-            
-            
+            if($state==null){
+                $states=Arr::wrap($record->getDefaultStateFor($name));
+                return array_combine($states, $states);
+            }
             try{
                 $states=$record->getAttribute($name)->transitionableStates();
             }catch(Exception $e){
@@ -106,12 +112,17 @@ class SelectStateColumn extends SelectColumn
             }
             $states[]=$state::$name;
 
-            
+
             return array_combine($states, $states);
         });
-       
+
     }
 
+<<<<<<< HEAD
    
 }
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+
+}
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

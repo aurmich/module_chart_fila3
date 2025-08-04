@@ -79,8 +79,11 @@ Questo pattern è stato corretto nelle seguenti risorse:
 - `ExportResource`
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `FailedImportRowResource` 
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ### Versione HEAD
 
 - `FailedImportRowResource` 
@@ -104,7 +107,11 @@ Questo pattern è stato corretto nelle seguenti risorse:
 
 ---
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 - `FailedImportRowResource` 
 >>>>>>> 9df8f556 (fix .md)
+=======
+- `FailedImportRowResource` 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

@@ -7,6 +7,10 @@ L'azione `ApplyMetatagToPanelAction` è responsabile di applicare i metatag al p
 - Applica i colori del tema al panel
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+- Configura il logo del brand utilizzando i metodi semantici
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 - Configura il logo del brand
 =======
 - Configura il logo del brand utilizzando i metodi semantici
@@ -41,7 +45,10 @@ Applica i metatag al panel Filament.
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ## Esempio di Configurazione
 ```php
 $panel
@@ -52,9 +59,12 @@ $panel
     ->favicon($metatag->getFavicon());              // Metodo già semantico
 ```
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ## Gestione Errori
 In caso di errore durante l'applicazione dei metatag:
 - L'errore viene registrato nel log
@@ -63,6 +73,32 @@ In caso di errore durante l'applicazione dei metatag:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+## Best Practices
+
+1. **Utilizzo dei Metodi**:
+   - Utilizzare sempre i metodi semantici (getBrand*)
+   - Evitare l'accesso diretto alle proprietà
+   - Verificare sempre la presenza dei loghi dark
+
+2. **Configurazione**:
+   - Mantenere coerenza tra logo chiaro e scuro
+   - Verificare le dimensioni del logo
+   - Testare il contrasto dei colori
+
+3. **Manutenzione**:
+   - Aggiornare regolarmente i metatag
+   - Verificare la validità dei percorsi
+   - Mantenere backup delle configurazioni
+
+## Collegamenti
+- [MetatagData](../datas/MetatagData.md)
+- [Filament Panel Documentation](https://filamentphp.com/docs/panels)
+- [Logo Resolution](../logo_resolution.md)
+- [Color Management](../colors.md)
+- [Semantic Methods](../philosophy/semantic_methods.md)
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ## Collegamenti
 - [MetatagData](../datas/MetatagData.md)
 - [Filament Panel Documentation](https://filamentphp.com/docs/panels)
@@ -102,8 +138,11 @@ In caso di errore durante l'applicazione dei metatag:
 - Tutti i metodi sono fortemente tipizzati per PHPStan livello 10
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - La documentazione è mantenuta aggiornata nella cartella docs 
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 - La documentazione è mantenuta aggiornata nella cartella docs
 
 ## Collegamenti tra versioni di ApplyMetatagToPanelAction.md
@@ -114,7 +153,11 @@ In caso di errore durante l'applicazione dei metatag:
 ## Collegamenti tra versioni di applymetatagtopanelaction.md
 * [applymetatagtopanelaction.md](panel/applymetatagtopanelaction.md)
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 - La documentazione è mantenuta aggiornata nella cartella docs 
 >>>>>>> 9df8f556 (fix .md)
+=======
+- La documentazione è mantenuta aggiornata nella cartella docs 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

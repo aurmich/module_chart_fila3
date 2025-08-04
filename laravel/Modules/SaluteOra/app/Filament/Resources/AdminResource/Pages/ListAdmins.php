@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\SaluteOra\Filament\Resources\AdminResource\Pages;
 
+<<<<<<< HEAD
 use Illuminate\Support\Arr;
 use Modules\SaluteOra\Models\Admin;
 use Modules\SaluteOra\Models\Patient;
@@ -31,4 +32,12 @@ class ListAdmins extends ListUsers
             StateOverviewWidget::make(['stateClass'=>UserState::class,'model'=>Admin::class]),
         ];
     }
+=======
+use Modules\SaluteOra\Filament\Resources\AdminResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+
+class ListAdmins extends XotBaseListRecords
+{
+    protected static string $resource = AdminResource::class;
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 }

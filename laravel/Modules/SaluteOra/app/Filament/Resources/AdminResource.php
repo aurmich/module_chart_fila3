@@ -6,12 +6,20 @@ use Filament\Forms;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Modules\SaluteOra\Models\User;
+<<<<<<< HEAD
 use Modules\SaluteOra\Models\Admin;
 use Filament\Forms\Components\Select;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Modules\SaluteOra\Enums\UserTypeEnum;
+=======
+use Filament\Forms\Components\Select;
+use Modules\SaluteOra\Enums\UserType;
+use Filament\Tables\Actions\EditAction;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\SelectFilter;
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 use Modules\SaluteOra\Enums\UserStateEnum;
 use Filament\Tables\Actions\BulkActionGroup;
 use Filament\Tables\Actions\DeleteBulkAction;
@@ -21,7 +29,11 @@ use Modules\SaluteOra\Filament\Resources\AdminResource\Pages;
 
 class AdminResource extends XotBaseResource
 {
+<<<<<<< HEAD
     protected static ?string $model = Admin::class;
+=======
+    protected static ?string $model = User::class;
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 
     public static function getFormSchema(): array
     {
@@ -35,10 +47,16 @@ class AdminResource extends XotBaseResource
                 ->maxLength(255)
                 ->unique(ignoreRecord: true),
             Forms\Components\Select::make('type')
+<<<<<<< HEAD
                 ->options(UserTypeEnum::class)
                 ->enum(UserTypeEnum::class)
                 ->required()
                 ->default(UserTypeEnum::ADMIN),
+=======
+                ->options(UserType::class)
+                ->required()
+                ->default(UserType::ADMIN),
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
             SelectState::make('state'),
         ];
     }
@@ -72,7 +90,11 @@ class AdminResource extends XotBaseResource
             ])
             ->filters([
                 SelectFilter::make('type')
+<<<<<<< HEAD
                     ->options(UserTypeEnum::class),
+=======
+                    ->options(UserType::class),
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
                 SelectFilter::make('state')
                     ->options(UserStateEnum::class),
             ])

@@ -84,6 +84,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
         <flux:input
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             wire:model="email"
 =======
             wire:model.live="email"
@@ -91,6 +92,9 @@ new #[Layout('components.layouts.auth')] class extends Component {
 =======
             wire:model="email"
 >>>>>>> 54f4fa16 (.)
+=======
+            wire:model.live="email"
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
             :label="__('Email address')"
             type="email"
             required
@@ -104,6 +108,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
             <flux:input
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 wire:model="password"
 =======
                 wire:model.live="password"
@@ -111,6 +116,9 @@ new #[Layout('components.layouts.auth')] class extends Component {
 =======
                 wire:model="password"
 >>>>>>> 54f4fa16 (.)
+=======
+                wire:model.live="password"
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
                 :label="__('Password')"
                 type="password"
                 required
@@ -142,6 +150,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
         <!-- Remember Me -->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <flux:checkbox wire:model="remember" :label="__('Remember me')" />
 =======
         <flux:checkbox wire:model.live="remember" :label="__('Remember me')" />
@@ -149,6 +158,9 @@ new #[Layout('components.layouts.auth')] class extends Component {
 =======
         <flux:checkbox wire:model="remember" :label="__('Remember me')" />
 >>>>>>> 54f4fa16 (.)
+=======
+        <flux:checkbox wire:model.live="remember" :label="__('Remember me')" />
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 
         <div class="flex items-center justify-end">
             <flux:button variant="primary" type="submit" class="w-full">{{ __('Log in') }}</flux:button>

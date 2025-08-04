@@ -198,13 +198,20 @@ php artisan view:cache
 - [Vite](https://vitejs.dev/guide/) 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 
 ## Collegamenti tra versioni di theme.md
 * [theme.md](laravel/Modules/Xot/docs/filament/theme.md)
 * [theme.md](laravel/Themes/One/docs/theme.md)
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
  
 >>>>>>> 35e9b7ea (feat(scripts): add script to rename files to lowercase while preserving README.md case for consistency and organization)
+=======
+ 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

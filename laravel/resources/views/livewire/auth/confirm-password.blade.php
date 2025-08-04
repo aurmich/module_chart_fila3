@@ -46,6 +46,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
         <flux:input
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             wire:model="password"
 =======
             wire:model.live="password"
@@ -53,6 +54,9 @@ new #[Layout('components.layouts.auth')] class extends Component {
 =======
             wire:model="password"
 >>>>>>> 54f4fa16 (.)
+=======
+            wire:model.live="password"
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
             :label="__('Password')"
             type="password"
             required

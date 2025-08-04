@@ -167,8 +167,11 @@ class MyModel extends BaseModel
      - .windsurfrules per Windsurf
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Mantenere coerenza tra le diverse documentazioni 
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
    - Mantenere coerenza tra le diverse documentazioni 
 ## Collegamenti tra versioni di PHPSTAN_WORKFLOW.md
 * [PHPSTAN_WORKFLOW.md](../../../Xot/docs/phpstan/PHPSTAN_WORKFLOW.md)
@@ -187,7 +190,11 @@ class MyModel extends BaseModel
 ---
 
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
    - Mantenere coerenza tra le diverse documentazioni 
 >>>>>>> 9df8f556 (fix .md)
+=======
+   - Mantenere coerenza tra le diverse documentazioni 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

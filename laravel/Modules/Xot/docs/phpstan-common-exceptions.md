@@ -235,8 +235,11 @@ public function getModel(): ?Model
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 L'analisi statica del codice con PHPStan a livello 10 è uno strumento potente per migliorare la qualità del codice e prevenire errori durante l'esecuzione. Seguendo queste best practices, è possibile risolvere la maggior parte degli errori comuni e scrivere codice più robusto e manutenibile. 
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 L'analisi statica del codice con PHPStan a livello 10 è uno strumento potente per migliorare la qualità del codice e prevenire errori durante l'esecuzione. Seguendo queste best practices, è possibile risolvere la maggior parte degli errori comuni e scrivere codice più robusto e manutenibile. 
 ## Collegamenti tra versioni di PHPSTAN-COMMON-EXCEPTIONS.md
 * [PHPSTAN-COMMON-EXCEPTIONS.md](../../../Xot/docs/phpstan/PHPSTAN-COMMON-EXCEPTIONS.md)
@@ -246,7 +249,11 @@ L'analisi statica del codice con PHPStan a livello 10 è uno strumento potente p
 ## Collegamenti tra versioni di phpstan-common-exceptions.md
 * [phpstan-common-exceptions.md](phpstan/phpstan-common-exceptions.md)
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 L'analisi statica del codice con PHPStan a livello 10 è uno strumento potente per migliorare la qualità del codice e prevenire errori durante l'esecuzione. Seguendo queste best practices, è possibile risolvere la maggior parte degli errori comuni e scrivere codice più robusto e manutenibile. 
 >>>>>>> 9df8f556 (fix .md)
+=======
+L'analisi statica del codice con PHPStan a livello 10 è uno strumento potente per migliorare la qualità del codice e prevenire errori durante l'esecuzione. Seguendo queste best practices, è possibile risolvere la maggior parte degli errori comuni e scrivere codice più robusto e manutenibile. 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

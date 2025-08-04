@@ -5,25 +5,38 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Contracts\View\View;
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+use Illuminate\Contracts\View\View;
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 use Illuminate\Support\Str;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 /**
  * Classe per ottenere una vista basata su una classe.
  */
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+/**
+ * Classe per ottenere una vista basata su una classe.
+ */
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 class GetViewByClassAction
 {
     use QueueableAction;
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
      * Ottiene una vista basata su una classe.
      *
      * @param string $class Nome della classe
@@ -36,10 +49,13 @@ class GetViewByClassAction
     {
         $viewName = $viewName ?? $this->getViewNameFromClass($class);
 <<<<<<< HEAD
+<<<<<<< HEAD
         
         /** @var view-string $viewName */
 =======
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
         return view($viewName, $params);
     }
 
@@ -58,18 +74,25 @@ class GetViewByClassAction
     }
 
     /**
+<<<<<<< HEAD
 =======
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
      * Risolve il percorso della view basato sul namespace della classe.
      *
      * @param string $class Il nome completo della classe
      * @return string Il percorso della view
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function executeOld(string $class): string
 =======
     public function execute(string $class): string
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+    public function executeOld(string $class): string
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
     {
         $arr = explode('\\', $class);
         Assert::isArray($arr);
@@ -82,6 +105,7 @@ class GetViewByClassAction
         $module = $arr[1];
         $module_low = Str::lower($module);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         // Estrai il nome della classe e convertilo in kebab-case
         $class_name = Str::kebab(class_basename($class));
@@ -92,11 +116,18 @@ class GetViewByClassAction
 }
 =======
         
+=======
+
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
         // Estrai il nome della classe e convertilo in kebab-case
         $class_name = Str::kebab(class_basename($class));
-        
+
         // Costruisci il percorso della view
         return $module_low.'::pages.'.$class_name;
     }
+<<<<<<< HEAD
 } 
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+}
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

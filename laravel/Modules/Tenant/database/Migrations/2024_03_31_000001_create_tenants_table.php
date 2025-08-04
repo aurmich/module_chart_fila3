@@ -8,8 +8,11 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 return new class extends XotBaseMigration
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
     /**
      * Nome della tabella.
      *
@@ -17,7 +20,10 @@ return new class extends XotBaseMigration
      */
     //protected string $table = 'tenants';
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
     /**
      * Run the migrations.
      */

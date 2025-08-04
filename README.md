@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Module Chart
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/laraxot/module_chart_fila3.svg?style=flat-square)](https://packagist.org/packages/laraxot/module_chart_fila3)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/laraxot/module_chart_fila3/run-tests?label=tests)](https://github.com/laraxot/module_chart_fila3/actions?query=workflow%3Arun-tests+branch%3Amain)
@@ -423,6 +424,8 @@ Sviluppato con ❤️ per migliorare la salute orale delle future mamme
 =======
 =======
 >>>>>>> 958e5968 (📝 Update README.md to resolve merge conflict and improve clarity by adding project name and ensuring documentation guidelines are clear.)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 # Base il progetto
 
 ## Panoramica
@@ -462,6 +465,7 @@ La documentazione è organizzata in modo modulare:
 - Mantenere la documentazione aggiornata con il codice
 - Utilizzare termini generici nella documentazione dei moduli 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 =======
@@ -469,3 +473,7 @@ La documentazione è organizzata in modo modulare:
 
 >>>>>>> 0aa4b60 (Initial commit)
 >>>>>>> 958e5968 (📝 Update README.md to resolve merge conflict and improve clarity by adding project name and ensuring documentation guidelines are clear.)
+=======
+# baseSaluteOra
+
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

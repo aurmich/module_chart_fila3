@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 PHPSTAN_LEVEL10_FIXES.md
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 ### Versione HEAD
 
 PHPSTAN_LEVEL10_FIXES.md
@@ -20,7 +23,11 @@ PHPSTAN_LEVEL10_FIXES.md
 
 ---
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 PHPSTAN_LEVEL10_FIXES.md
 >>>>>>> 9df8f556 (fix .md)
+=======
+PHPSTAN_LEVEL10_FIXES.md
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

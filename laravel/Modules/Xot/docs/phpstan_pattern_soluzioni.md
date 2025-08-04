@@ -280,8 +280,11 @@ Questi pattern rappresentano le soluzioni standard da adottare in tutto il modul
 2. Estendere questi pattern ad altri moduli del progetto
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. Aggiornare regolarmente questo documento con nuovi pattern identificati 
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 3. Aggiornare regolarmente questo documento con nuovi pattern identificati 
 ## Collegamenti tra versioni di PHPSTAN_PATTERN_SOLUZIONI.md
 * [PHPSTAN_PATTERN_SOLUZIONI.md](../../../Xot/docs/phpstan/PHPSTAN_PATTERN_SOLUZIONI.md)
@@ -300,7 +303,11 @@ Questi pattern rappresentano le soluzioni standard da adottare in tutto il modul
 ---
 
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 3. Aggiornare regolarmente questo documento con nuovi pattern identificati 
 >>>>>>> 9df8f556 (fix .md)
+=======
+3. Aggiornare regolarmente questo documento con nuovi pattern identificati 
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

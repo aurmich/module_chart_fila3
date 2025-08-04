@@ -127,12 +127,18 @@ class BlogServiceProvider extends XotBaseServiceProvider {
 ```
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 
 ## Collegamenti tra versioni di module-structure.md
 * [module-structure.md](laraxot/module-structure.md)
 * [module-structure.md](architecture/module-structure.md)
 
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 9df8f556 (fix .md)
+=======
+>>>>>>> 7440f060 (delete duplicate folder + add .md)

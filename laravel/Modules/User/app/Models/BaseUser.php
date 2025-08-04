@@ -249,6 +249,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @var array<string, mixed>  */
     protected $attributes = [
         //'state' => Pending::class,
@@ -262,6 +263,9 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
      * @var string
      */
     protected $guard_name = 'web';
+=======
+    protected $guard_name = "web";
+>>>>>>> 7440f060 (delete duplicate folder + add .md)
 
     /** @var \Illuminate\Database\Eloquent\Relations\Pivot|null */
     public $pivot;
