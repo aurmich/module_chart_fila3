@@ -89,6 +89,25 @@ return array (
     array (
       'label' => 'toggleColumns',
     ),
+<<<<<<< HEAD
+=======
+    'reorderRecords' => 
+    array (
+      'label' => 'reorderRecords',
+    ),
+    'resetFilters' => 
+    array (
+      'label' => 'resetFilters',
+    ),
+    'applyFilters' => 
+    array (
+      'label' => 'applyFilters',
+    ),
+    'openFilters' => 
+    array (
+      'label' => 'openFilters',
+    ),
+>>>>>>> 317caeb9 (- updated style calendar doctor availabilities)
   ),
   'actions' => 
   array (
