@@ -14,6 +14,7 @@ INFO  Nothing to migrate.
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 per vedere 
 http://ec2-54-194-72-103.eu-west-1.compute.amazonaws.com/it
@@ -54,8 +55,22 @@ MAIL_FROM_NAME="${APP_NAME}"
 =======
 >>>>>>> 8e4d163b (phpstan)
 =======
+=======
+>>>>>>> 41fc4dec (merge)
 
 per vedere 
 http://ec2-54-194-72-103.eu-west-1.compute.amazonaws.com/it
 
+<<<<<<< HEAD
 >>>>>>> 281fd24d (add scripts)
+=======
+=======
+----
+
+se si vedono dei |--35--
+dalla cartella laravel
+php artisan filament:upgrade
+php artisan filament:optimize
+php artisan optimize
+>>>>>>> 74e04743 (tips)
+>>>>>>> 41fc4dec (merge)
