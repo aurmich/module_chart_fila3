@@ -8,7 +8,12 @@ return [
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
 >>>>>>> 8d591468 (fields translations)
+=======
+    'title' => 'Opening Hours',
+    'description' => 'Set your working hours and availability',
+>>>>>>> 29f9897e (🌐 (opening_hours.php, widgets.php): add English and Italian translations for opening hours and doctor availabilities to enhance localization support)
     'days' => [
         'monday' => 'Monday',
         'tuesday' => 'Tuesday',

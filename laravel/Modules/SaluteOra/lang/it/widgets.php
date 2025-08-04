@@ -20,9 +20,12 @@ return [
             'click_edit_to_configure' => 'Clicca su modifica per configurare la tua disponibilità',
         ],
     ],
+<<<<<<< HEAD
 =======
 return [
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 29f9897e (🌐 (opening_hours.php, widgets.php): add English and Italian translations for opening hours and doctor availabilities to enhance localization support)
     'studio_overview' => [
         'title' => 'Panoramica Studi',
         'stats' => [

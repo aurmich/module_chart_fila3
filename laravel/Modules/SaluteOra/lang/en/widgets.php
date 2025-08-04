@@ -175,6 +175,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 declare(strict_types=1);
@@ -182,6 +183,14 @@ declare(strict_types=1);
 return [
 >>>>>>> 520b5152 (📝 (mcp.json, filament-best-practices.mdc, find-dentist-implementation.md): update documentation for improved clarity and consistency in coding practices, including namespace rules, widget implementation, and translation handling to ensure adherence to project standards and enhance maintainability.)
 =======
+=======
+    'doctor_availabilities' => [
+        'schedule' => [
+            'no_schedule' => 'No schedule available',
+            'click_edit_to_configure' => 'Click edit to configure your availability',
+        ],
+    ],
+>>>>>>> 29f9897e (🌐 (opening_hours.php, widgets.php): add English and Italian translations for opening hours and doctor availabilities to enhance localization support)
     'studio_overview' => [
         'title' => 'Studios Overview',
         'stats' => [
