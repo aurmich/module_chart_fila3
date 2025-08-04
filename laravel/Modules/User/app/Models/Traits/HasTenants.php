@@ -6,6 +6,7 @@ namespace Modules\User\Models\Traits;
 
 use Filament\Panel;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Datas\XotData;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
@@ -24,7 +25,15 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Collection;
 use Modules\User\Contracts\TeamContract;
+=======
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
 use Modules\Xot\Datas\XotData;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Database\Eloquent\Model;
+use Modules\User\Contracts\TeamContract;
+use Modules\Xot\Actions\Panel\ApplyTenancyToPanelAction;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 // use Modules\User\Models\OwnerRole;
 

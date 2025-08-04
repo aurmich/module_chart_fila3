@@ -5,6 +5,7 @@
 
 Le etichette sono gestite automaticamente dal LangServiceProvider e devono essere definite nei file di traduzione specifici del modulo.
 
+<<<<<<< HEAD
 ## Struttura dei File di Traduzione Implementata
 
 ### Posizione Corretta
@@ -161,10 +162,68 @@ return [
     'icon' => 'heroicon-o-icon-name',
     'tooltip' => 'Descrizione tooltip',
 ],
+=======
+## Struttura dei File di Traduzione
+
+### Posizione Corretta
+```
+/var/www/html/_bases/base_saluteora/laravel/Modules/SaluteMo/lang/{locale}/
+```
+
+### Organizzazione dei File
+- `general.php`: Traduzioni generali del modulo
+- `resources.php`: Traduzioni per le risorse Filament
+- `pages.php`: Traduzioni per le pagine
+- `widgets.php`: Traduzioni per i widget
+- `validation.php`: Messaggi di validazione personalizzati
+
+## Pattern per le Chiavi di Traduzione
+
+### Risorse
+```php
+// In lang/it/resources.php
+return [
+    'resource_name' => [
+        'label' => 'Etichetta Risorsa',
+        'fields' => [
+            'field_name' => [
+                'label' => 'Etichetta Campo',
+                'placeholder' => 'Placeholder Campo',
+                'helper_text' => 'Testo di aiuto',
+            ],
+        ],
+        'actions' => [
+            'create' => 'Crea',
+            'edit' => 'Modifica',
+            'delete' => 'Elimina',
+        ],
+    ],
+];
+```
+
+### Widget
+```php
+// In lang/it/widgets.php
+return [
+    'widget_name' => [
+        'title' => 'Titolo Widget',
+        'steps' => [
+            'step_name' => 'Etichetta Step',
+        ],
+        'fields' => [
+            'field_name' => 'Etichetta Campo',
+        ],
+        'messages' => [
+            'message_key' => 'Testo messaggio',
+        ],
+    ],
+];
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
 ```
 
 ## Utilizzo Corretto in Filament
 
+<<<<<<< HEAD
 ### Modalità Corretta (implementata)
 ```php
 TextInput::make('full_name')
@@ -179,10 +238,24 @@ TextInput::make('full_name')
 ```php
 // Le icone vengono caricate automaticamente da:
 // salutemo::navigation.doctor.icon => 'heroicon-o-user-plus'
+=======
+### Modalità Errata (da NON utilizzare)
+```php
+TextInput::make('name')
+    ->label('Nome')
+    ->placeholder('Inserisci il nome')
+```
+
+### Modalità Corretta
+```php
+TextInput::make('name')
+// La traduzione viene gestita automaticamente dal LangServiceProvider
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
 ```
 
 ## Gestione delle Traduzioni nei Widget
 
+<<<<<<< HEAD
 Widget specifici utilizzano le traduzioni da `widgets.php`:
 
 ```php
@@ -197,16 +270,62 @@ salutemo::widgets.charts.user_registrations.subtitle
 // Widget Notifications
 salutemo::widgets.notifications.fields.message.label
 salutemo::widgets.notifications.actions.send.icon
+=======
+Per widget specifici del modulo SaluteMo, utilizzare le seguenti convenzioni:
+
+```php
+// Nel file widget
+TextInput::make('location')
+    ->required()
+    // NON utilizzare ->label() perché la traduzione viene gestita dal LangServiceProvider
+    
+// Nel file di traduzione (lang/it/widgets.php)
+'find_doctor_widget' => [
+    'title' => 'Trova Dottore',
+    'fields' => [
+        'location' => 'Posizione',
+    ],
+],
+```
+
+## Struttura Espansa per i Campi
+
+Utilizzare sempre la struttura espansa per i campi nei file di traduzione:
+
+### Pattern Corretto
+```php
+'field_name' => [
+    'label' => 'Etichetta Campo',
+    'placeholder' => 'Placeholder Campo',
+    'helper' => 'Testo di aiuto',
+],
+```
+
+### Convenzione di Naming per le Chiavi
+Seguire la convenzione:
+```
+modulo::risorsa.fields.campo.label
+```
+
+Ad esempio:
+```
+salutemo::mobile_user.fields.device_token.label
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
 ```
 
 ## Verifica LangServiceProvider
 
+<<<<<<< HEAD
 Il LangServiceProvider deve essere registrato in:
+=======
+Assicurarsi sempre che il LangServiceProvider sia registrato correttamente in:
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
 ```php
 // In Modules/SaluteMo/Providers/SaluteMoServiceProvider.php
 $this->app->register(LangServiceProvider::class);
 ```
 
+<<<<<<< HEAD
 ## Funzionalità Implementate
 
 ### ✅ Completate
@@ -233,3 +352,9 @@ $this->app->register(LangServiceProvider::class);
 - [Filament Structure](../filament/structure.md) 
 - [Widget Translation](../filament/widgets.md)
 - [Mobile App Features](../mobile/features.md)
+=======
+## Collegamenti Correlati
+- [Service Provider](../providers/service-provider.md)
+- [Filament Structure](../filament/structure.md)
+- [Widget Translation](../filament/widgets.md)
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)

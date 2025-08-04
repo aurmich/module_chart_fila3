@@ -8,9 +8,13 @@
     "Forum": true,
     "SaluteOra": true,
 <<<<<<< HEAD
+<<<<<<< HEAD
     "SaluteMo": true,
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+    "SaluteMo": true,
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
     "Setting": true,
     "Blog": true,
     "Tenant": true,

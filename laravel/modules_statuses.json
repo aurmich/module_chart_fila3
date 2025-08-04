@@ -37,6 +37,7 @@
 >>>>>>> 54f4fa16 (.)
 =======
     "SaluteOra": true,
+    "SaluteMo": true,
     "Geo": true
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
 }

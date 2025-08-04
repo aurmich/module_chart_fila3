@@ -648,12 +648,16 @@ return array (
   'navigation' => 
   array (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
     'label' => 'Anagrafica Pazienti',
     'group' => 'Pazienti',
     'icon' => 'heroicon-o-users',
     'color' => 'blue',
     'sort' => 3,
     'tooltip' => 'Gestisci l\'anagrafica e le informazioni dei pazienti',
+<<<<<<< HEAD
   ),
   'fields' => 
   array (
@@ -672,6 +676,8 @@ return array (
     'color' => 'primary',
     'sort' => 7,
     'tooltip' => 'Gestione dei pazienti e delle loro informazioni anagrafiche',
+=======
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
   ),
   'fields' => 
   array (

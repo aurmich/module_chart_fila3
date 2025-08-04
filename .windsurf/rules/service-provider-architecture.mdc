@@ -2,7 +2,11 @@
 
 ## Regola Fondamentale: "Non Avrai Altri Provider All'Infuori di XotBase"
 
+<<<<<<< HEAD
 Tutti i service provider in qualsiasi modulo del progetto <nome progetto> DEVONO estendere esclusivamente le classi base con prefisso `XotBase` fornite dal modulo Xot.
+=======
+Tutti i service provider in qualsiasi modulo del progetto SaluteOra DEVONO estendere esclusivamente le classi base con prefisso `XotBase` fornite dal modulo Xot.
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
 
 ## Gerarchia delle Classi Base
 
@@ -22,7 +26,11 @@ Tutti i service provider in qualsiasi modulo del progetto <nome progetto> DEVONO
 // ERRATO ❌
 protected string $namespace = 'Modules\\SaluteMo\\Http\\Controllers';
 
+<<<<<<< HEAD
 // CORRETTO ✅
+=======
+// CORRETTO ✅ 
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
 protected $namespace = 'Modules\\SaluteMo\\Http\\Controllers';
 ```
 
@@ -50,14 +58,22 @@ class SaluteMoServiceProvider extends XotBaseServiceProvider
      * @var string
      */
     public string $name = 'SaluteMo';
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
     /**
      * Module name in lowercase
      *
      * @var string
      */
     public string $nameLower = 'salutemo';
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
     /**
      * Bootstrap any application services.
      *

@@ -10,6 +10,7 @@ return [
         'increase' => ':percent% increase',
         'decrease' => ':percent% decrease',
     ],
+<<<<<<< HEAD
     'appointment_overview' => [
         'title' => 'Appointments Overview',
         'description' => 'Compact overview of appointments by status',
@@ -153,4 +154,6 @@ return [
         'refresh' => 'Refresh data',
         'loading' => 'Loading dashboard...',
     ],
+=======
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
 ];

@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'model' => [
         'label' => 'Dashboard',
         'plural' => 'Dashboard',
@@ -141,4 +142,8 @@ return [
             'tooltip' => 'Esporta i dati correnti',
         ],
     ],
+=======
+    'title' => 'Dashboard',
+    'description' => 'Panoramica del modulo SaluteMo',
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
 ];

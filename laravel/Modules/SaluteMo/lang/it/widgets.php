@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'patient_registration_trend' => [
         'title' => 'Trend Registrazioni Pazienti',
         'description' => 'Andamento delle registrazioni pazienti negli ultimi 30 giorni',
@@ -168,5 +169,13 @@ return [
         'title' => 'Stati Appuntamenti',
         'label' => 'Numero Appuntamenti',
         'description' => 'Distribuzione degli stati degli appuntamenti nel sistema',
+=======
+    'stats' => [
+        'total_users' => 'Utenti Totali',
+        'active_sessions' => 'Sessioni Attive',
+        'avg_time' => 'Tempo Medio',
+        'increase' => '+:percent%',
+        'decrease' => '-:percent%',
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
     ],
 ];

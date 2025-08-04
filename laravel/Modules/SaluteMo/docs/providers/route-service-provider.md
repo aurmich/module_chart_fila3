@@ -165,7 +165,11 @@ protected string $namespace = 'Modules\\\\SaluteMo\\\\Http\\\\Controllers';
 
 **Example Structure**:
 
+<<<<<<< HEAD
 ```php
+=======
+```
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
 app/
   Modules/
     SaluteMo/
@@ -212,7 +216,11 @@ protected string $module_dir = __DIR__;
 
 **Default Structure**:
 
+<<<<<<< HEAD
 ```php
+=======
+```
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
 Modules/
   SaluteMo/
     Providers/
@@ -313,7 +321,10 @@ protected string $moduleNamespace = 'Modules\\\\SaluteMo\\\\Http\\\\Controllers'
 **Implementation Details**:
 
 1. **Route Model Binding**:
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
    ```php
    // In a route file
    Route::get('/user/{user}', 'UserController@show');
@@ -322,7 +333,10 @@ protected string $moduleNamespace = 'Modules\\\\SaluteMo\\\\Http\\\\Controllers'
    ```
 
 2. **Custom Resolution**:
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
    ```php
    public function boot()
    {
@@ -334,7 +348,10 @@ protected string $moduleNamespace = 'Modules\\\\SaluteMo\\\\Http\\\\Controllers'
    ```
 
 3. **Explicit Binding**:
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
    ```php
    public function boot()
    {
@@ -350,6 +367,7 @@ protected string $moduleNamespace = 'Modules\\\\SaluteMo\\\\Http\\\\Controllers'
 
 ### Boot Process
 
+<<<<<<< HEAD
 The boot process is responsible for initializing route-related functionality:
 
 1. **Parent Boot**
@@ -705,6 +723,19 @@ Remember to:
 10. Keep your route files clean and maintainable
 
 ## Implementation Guidelines
+=======
+1. Sets up route model bindings
+2. Applies route patterns
+3. Calls parent boot method
+
+### Route Mapping
+
+1. `map()`: Called automatically, handles both web and API routes
+2. `mapWebRoutes()`: Registers web routes with 'web' middleware
+3. `mapApiRoutes()`: Registers API routes with 'api' middleware
+
+## Best Practices
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
 
 ### Minimal Overrides
 

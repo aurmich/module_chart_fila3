@@ -11,12 +11,15 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Config;
 =======
 >>>>>>> aurmich/dev
 =======
 use Illuminate\Support\Facades\Config;
 >>>>>>> 345f8677 (phpstan)
+=======
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
 use Spatie\QueueableAction\QueueableAction;
 use Modules\User\Filament\Pages\Tenancy\RegisterTenant;
 use Modules\User\Filament\Pages\Tenancy\EditTenantProfile;
@@ -30,6 +33,7 @@ class ApplyCalendarToPanelAction
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $timezone = Config::string('fullcalendar.localization.timezone', 'Europe/Rome');
         $locale = Config::string('fullcalendar.localization.locale', 'it');
         $calendarPlugin = FilamentFullCalendarPlugin::make()
@@ -38,11 +42,14 @@ class ApplyCalendarToPanelAction
         ->timezone($timezone)
         ->locale($locale)
 =======
+=======
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
         $calendarPlugin = FilamentFullCalendarPlugin::make()
         ->selectable(true)
         ->editable(true)
         ->timezone(config('fullcalendar.localization.timezone', 'Europe/Rome'))
         ->locale(config('fullcalendar.localization.locale', 'it'))
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
         $timezone = Config::string('fullcalendar.localization.timezone', 'Europe/Rome');
@@ -53,6 +60,8 @@ class ApplyCalendarToPanelAction
         ->timezone($timezone)
         ->locale($locale)
 >>>>>>> 345f8677 (phpstan)
+=======
+>>>>>>> 3a74d92c (✨ (SaluteMo): introduce SaluteMo module with complete structure and functionality for managing mobile-specific features, including API endpoints, dashboard, and widgets for patient management.)
         ->plugins([
             'dayGrid',
             'timeGrid',

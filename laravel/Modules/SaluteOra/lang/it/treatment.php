@@ -31,12 +31,15 @@ return array (
 >>>>>>> aurmich/dev
 =======
 return array (
+  'name' => 'Trattamenti',
   'navigation' => 
   array (
-    'label' => 'Temporary Label',
-    'group' => 'Temporary Group',
-    'icon' => 'heroicon-o-document',
-    'sort' => 89,
+    'label' => 'Prestazioni',
+    'group' => 'Servizi',
+    'icon' => 'heroicon-o-beaker',
+    'color' => 'violet',
+    'sort' => 5,
+    'tooltip' => 'Gestisci le prestazioni e i trattamenti disponibili',
   ),
 );
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
