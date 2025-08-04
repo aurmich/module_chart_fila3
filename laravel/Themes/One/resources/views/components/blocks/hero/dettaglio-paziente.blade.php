@@ -11,6 +11,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @php
     $appointments=$user->appointments;
 @endphp
@@ -71,12 +72,25 @@
 
 
 =======
+=======
+@php
+    use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+    use Modules\SaluteOra\Enums\UserTypeEnum;
+
+    // Inizializzazione delle variabili con valori di default
+    $user = $user ?? auth()->user();
+    $locale = LaravelLocalization::getCurrentLocale();
+    $isLoggedIn = auth()->check();
+
+@endphp
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
 
 
 {{-- STEP PRENOTA VISITA --}}
 
-<div class="lg:grid grid-cols-1 sm:grid grid-cols-1">
+
       {{-- TITOLO E BOTTONI --}}
+<<<<<<< HEAD
       <div class="flex flex-col justify-center">
           <section 
               class="flex flex-col justify-center min-h-[700px] relative overflow-hidden"
@@ -150,7 +164,29 @@
       </div>
 >>>>>>> aurmich/dev
 =======
+=======
+      
+<section class="flex items-start relative overflow-hidden">
+  <div class="w-full px-4 sm:px-6 lg:px-8 pt-12">
+    <div class="flex flex-col items-center justify-center gap-8 lg:flex-row lg:justify-evenly">
+      <div class="flex flex-col text-center lg:items-start lg:text-left">
+        <h1 class="text-[#272C4D] text-4xl tracking-tight font-extrabold sm:text-5xl lg:text-5xl">
+          Bentornata, {{ $user?->name }}
+        </h1>
+        <!-- <span class="text-lg mt-4">Qui puoi trovare i dettagli del tuo appuntamento</span> -->
+      </div>
+      <div class="relative w-60 h-60 rounded-full bg-[#E6EBF7] shadow-lg overflow-hidden">
+        <img
+          src="/img/donna-area-paziente.svg"
+          alt="Paziente"
+          class="w-full h-full object-contain"
+        />
+      </div>
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
 
+    </div>
+  </div>
+</section>
 
 {{-- AREA PERSONALE PAZIENTE --}}
 <!-- <section 
@@ -178,11 +214,33 @@
 </section> -->
 
 {{-- APPUNTAMENTO --}}
+<div class="w-full flex flex-col lg:flex-row items-center justify-center p-5">
+  <div class="flex justify-start py-8 sm:py-32 w-full">
+    <div class="w-full mx-auto">
+      <div class="flex flex-col items-center w-full mx-auto">
+        <a href="/it/patient/book">
+          <div class="bg-gradient-to-r from-cyan-500 to-[#1A467F] py-6 px-10 text-white rounded-lg text-lg flex items-center justify-center cursor-pointer">
+            Prenota una visita
+            <span class="ml-1">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke-width="1.5"
+                   stroke="currentColor"
+                   class="size-6">
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
-{{-- @if(3-2 == 5) --}}
-
-<!-- <div class="w-full flex flex-col lg:flex-row items-center justify-center p-5">
- <div class="w-full lg:w-2/4 flex items-center p-9">
+ <!-- <div class="w-full lg:w-2/4 flex items-center p-9">
                 <div class="w-full lg:w-2/4 bg-white rounded-lg shadow-2xl">
                     <div class="p-5">
                         <h4 class="mb-5 font-semibold">Appuntamento in programma</h4>

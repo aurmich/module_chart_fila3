@@ -2,18 +2,31 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @php
  /*
     use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
     use Modules\SaluteOra\Enums\UserTypeEnum;
     
+=======
+@php
+    use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+    use Modules\SaluteOra\Enums\UserTypeEnum;
+
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
     // Inizializzazione delle variabili con valori di default
     $user = $user ?? auth()->user();
     $locale = LaravelLocalization::getCurrentLocale();
     $isLoggedIn = auth()->check(); 
+<<<<<<< HEAD
     */
     $appointments=$user->appointments;
 @endphp
+=======
+
+@endphp
+
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
 <div class="p-5">
     <div>
         <!-- Back button -->
@@ -177,14 +190,14 @@
                 <div class="w-48 h-48 bg-[#E6EBF7] rounded-full flex items-center justify-center overflow-hidden shadow-lg">
                     <img class="h-40 object-contain" src="/img/donna-personaggio.png" alt="Avatar" />
                 </div>
-                <h1 class="text-center mt-5">Mara Rossi</h1>
+                <h1 class="text-center mt-5">{{$user?->name}}</h1>
             </div>
         </div>
 
         <!-- Sezione principale -->
-        <div class="w-full flex flex-col-reverse lg:flex-row">
+        <div class="w-full flex flex-col-reverse lg:flex-row justify-center">
             <!-- Colonna sinistra: Dati -->
-            <div class="w-full lg:w-2/4 flex justify-center">
+            <!-- <div class="w-full lg:w-2/4 flex justify-center">
                 <div class="w-full lg:w-5/6 bg-[#E6EBF7] shadow-2xl rounded-[15px] mt-5 lg:mt-0">
                     <div class="flex flex-row items-center justify-between bg-[#E6EBF7] m-5 px-2">
                         <h2>I miei dati</h2>
@@ -194,10 +207,13 @@
                     </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 </div>
 >>>>>>> f7d3ce4f (- update landing-page;)
 =======
                     <!-- Form -->
+=======
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
                     <div class="flex flex-col lg:flex-row justify-center items-center">
                         <div class="w-full lg:w-3/6 p-5">
                             <input class="bg-transparent" placeholder="Nome" type="text" id="name" />
@@ -218,12 +234,9 @@
                         <div class="w-full lg:w-3/6 p-5">
                             <input class="bg-transparent" placeholder="Domicilio" type="text" id="domicilio" />
                         </div>
-                        <!-- <div class="w-full lg:w-3/6 p-5">
-                            <input class="bg-transparent" placeholder="Cellulare" type="number" id="phone" />
-                        </div> -->
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Colonna destra: Appuntamento -->
             <div class="w-full lg:w-2/4 flex justify-center items-center p-5">

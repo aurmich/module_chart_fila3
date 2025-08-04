@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -13,20 +14,26 @@ return [
 =======
 =======
 >>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+=======
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
 return array (
   'name' => 'Medici',
   'navigation' => 
   array (
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+=======
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
     'label' => 'Medici',
     'group' => 'Team Medico',
     'icon' => 'heroicon-o-user-group',
     'color' => 'emerald',
     'sort' => 2,
     'tooltip' => 'Gestisci il personale medico e le relative informazioni professionali',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   ],
@@ -56,6 +63,8 @@ return array (
     'personal_info' => [
 =======
 =======
+=======
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
   ),
   'model' => 
   array (
@@ -83,21 +92,28 @@ return array (
       'subtitle' => 'Aggiorna i dati del medico',
       'description' => 'Modifica le informazioni del medico selezionato',
     ),
+<<<<<<< HEAD
 >>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+=======
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
   ),
   'steps' => 
   array (
     'personal_info' => 
     array (
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
 =======
 >>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+=======
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
       'label' => 'Informazioni Personali',
       'description' => 'Inserisci le informazioni personali',
       'icon' => 'heroicon-o-user',
       'color' => 'primary',
       'tooltip' => 'Dati anagrafici e personali del medico',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     ],
@@ -119,11 +135,17 @@ return array (
     'moderation' => 
     array (
 >>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+=======
+    ),
+    'moderation' => 
+    array (
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
       'label' => 'Moderazione',
       'description' => 'Verifica delle informazioni',
       'icon' => 'heroicon-o-shield-check',
       'color' => 'warning',
       'tooltip' => 'Processo di verifica e approvazione del profilo',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     ],
@@ -138,11 +160,17 @@ return array (
     'contacts' => 
     array (
 >>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+=======
+    ),
+    'contacts' => 
+    array (
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
       'label' => 'Contatti',
       'description' => 'Informazioni di contatto',
       'icon' => 'heroicon-o-phone',
       'color' => 'info',
       'tooltip' => 'Dati di contatto professionali',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     ],
@@ -157,11 +185,17 @@ return array (
     'professional' => 
     array (
 >>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+=======
+    ),
+    'professional' => 
+    array (
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
       'label' => 'Informazioni Professionali',
       'description' => 'Dati professionali e specializzazioni',
       'icon' => 'heroicon-o-academic-cap',
       'color' => 'success',
       'tooltip' => 'Qualifiche e specializzazioni mediche',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     ],
@@ -176,11 +210,17 @@ return array (
     'availability' => 
     array (
 >>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+=======
+    ),
+    'availability' => 
+    array (
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
       'label' => 'Disponibilità',
       'description' => 'Orari e giorni di disponibilità',
       'icon' => 'heroicon-o-calendar',
       'color' => 'danger',
       'tooltip' => 'Calendario e orari di ricevimento',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     ],
@@ -190,11 +230,17 @@ return array (
     'studio' => 
     array (
 >>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+=======
+    ),
+    'studio' => 
+    array (
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
       'label' => 'Studio',
       'description' => 'Informazioni dello studio medico',
       'icon' => 'heroicon-o-building-office-2',
       'color' => 'blue',
       'tooltip' => 'Dati dello studio dove opera',
+<<<<<<< HEAD
 <<<<<<< HEAD
     ],
     'studio_step' => [
@@ -307,6 +353,8 @@ return array (
       'description' => 'Stato attuale del profilo medico',
       'options' => [
 =======
+=======
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
     ),
   ),
   'fields' => 
@@ -400,11 +448,15 @@ return array (
       'helper_text' => '',
       'options' => 
       array (
+<<<<<<< HEAD
 >>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+=======
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
         'active' => 'Attivo',
         'inactive' => 'Inattivo',
         'pending' => 'In attesa',
         'suspended' => 'Sospeso',
+<<<<<<< HEAD
 <<<<<<< HEAD
       ],
     ],
@@ -451,6 +503,8 @@ return array (
       'description' => 'Giorno della settimana per disponibilità',
       'options' => [
 =======
+=======
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
       ),
     ),
     'certification' => 
@@ -458,15 +512,23 @@ return array (
       'label' => 'Certificazione',
       'placeholder' => 'Carica la certificazione',
       'help' => 'Documento di iscrizione all\'Ordine dei Medici',
+<<<<<<< HEAD
       'helper_text' => 'Tesserino sanitario O certificato di iscrizione all\'Ordine',
       'description' => 'certification',
+=======
+      'helper_text' => '',
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
     ),
     'certificates' => 
     array (
       'label' => 'Certificati',
       'placeholder' => 'Carica i certificati',
       'help' => 'Certificati e specializzazioni professionali',
+<<<<<<< HEAD
       'helper_text' => 'Tesserino sanitario O certificato di iscrizione all\'Ordine',
+=======
+      'helper_text' => '',
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
     ),
     'certifications' => 
     array (
@@ -497,7 +559,10 @@ return array (
       'helper_text' => '',
       'options' => 
       array (
+<<<<<<< HEAD
 >>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+=======
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
         'monday' => 'Lunedì',
         'tuesday' => 'Martedì',
         'wednesday' => 'Mercoledì',
@@ -505,6 +570,7 @@ return array (
         'friday' => 'Venerdì',
         'saturday' => 'Sabato',
         'sunday' => 'Domenica',
+<<<<<<< HEAD
 <<<<<<< HEAD
       ],
     ],
@@ -715,6 +781,8 @@ return array (
       'description' => 'Filtro per stato del profilo medico',
       'options' => [
 =======
+=======
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
       ),
     ),
     'start_time' => 
@@ -757,11 +825,15 @@ return array (
       'helper_text' => '',
       'options' => 
       array (
+<<<<<<< HEAD
 >>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+=======
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
         'active' => 'Attivo',
         'inactive' => 'Inattivo',
         'pending' => 'In attesa',
         'suspended' => 'Sospeso',
+<<<<<<< HEAD
 <<<<<<< HEAD
       ],
     ],
@@ -826,6 +898,8 @@ return array (
   ],
   'messages' => [
 =======
+=======
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
       ),
     ),
     'specialization' => 
@@ -910,7 +984,10 @@ return array (
   ),
   'messages' => 
   array (
+<<<<<<< HEAD
 >>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+=======
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
     'created' => 'Medico creato con successo',
     'updated' => 'Medico aggiornato con successo',
     'deleted' => 'Medico eliminato con successo',
@@ -920,6 +997,7 @@ return array (
     'certification_uploaded' => 'Certificazione caricata con successo',
     'certification_verified' => 'Certificazione verificata con successo',
     'availability_updated' => 'Disponibilità aggiornata con successo',
+<<<<<<< HEAD
 <<<<<<< HEAD
   ],
   'sections' => [
@@ -956,6 +1034,8 @@ return array (
   ],
   'validation' => [
 =======
+=======
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
   ),
   'sections' => 
   array (
@@ -987,7 +1067,10 @@ return array (
   ),
   'validation' => 
   array (
+<<<<<<< HEAD
 >>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+=======
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
     'required' => 'Il campo :attribute è obbligatorio',
     'email' => 'Il campo :attribute deve essere un indirizzo email valido',
     'unique' => 'Il valore del campo :attribute è già in uso',
@@ -996,6 +1079,7 @@ return array (
     'registration_number_format' => 'Il numero di iscrizione deve essere nel formato corretto',
     'vat_number_format' => 'La partita IVA deve essere nel formato corretto',
     'phone_format' => 'Il numero di telefono deve essere nel formato corretto',
+<<<<<<< HEAD
 <<<<<<< HEAD
   ],
   'empty_state' => [
@@ -2044,6 +2128,8 @@ return [
 ];
 >>>>>>> 98867c82 (translations)
 =======
+=======
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
   ),
   'empty_state' => 
   array (
@@ -2058,4 +2144,7 @@ return [
     'empty' => 'Nessuna specializzazione registrata',
   ),
 );
+<<<<<<< HEAD
 >>>>>>> b1a98c55 (✨ (fileupload-array-casting): add new rules for file upload array casting to prevent errors during registration)
+=======
+>>>>>>> 3a1259c1 (- updated dettaglio-paziente;)
