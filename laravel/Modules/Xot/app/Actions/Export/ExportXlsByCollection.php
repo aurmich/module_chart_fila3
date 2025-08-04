@@ -26,6 +26,7 @@ use Illuminate\Http\BinaryFileResponse;
 >>>>>>> d23ba493 (add calendar)
 =======
 use Illuminate\Support\Collection;
+use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 >>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
 use Maatwebsite\Excel\Facades\Excel;
@@ -79,6 +80,7 @@ class ExportXlsByCollection
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param Collection<int|string, mixed>|EloquentCollection<int, \Illuminate\Database\Eloquent\Model> $collection La collezione da esportare
 =======
      * @param Collection<int|string, mixed> $collection La collezione da esportare
@@ -106,6 +108,9 @@ class ExportXlsByCollection
 =======
      * @param Collection<int|string, mixed> $collection La collezione da esportare
 >>>>>>> d23ba493 (add calendar)
+=======
+     * @param Collection<int|string, mixed>|EloquentCollection<int, \Illuminate\Database\Eloquent\Model> $collection La collezione da esportare
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      * @param string $filename Nome del file Excel
      * @param string|null $transKey Chiave di traduzione per i campi
      * @param array<int, string> $fields Campi da includere nell'export
@@ -113,14 +118,21 @@ class ExportXlsByCollection
      * @return BinaryFileResponse
      */
     public function execute(
+<<<<<<< HEAD
         Collection $collection,
 >>>>>>> 54f4fa16 (.)
+=======
+        Collection|EloquentCollection $collection,
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         string $filename = 'test.xlsx',
         ?string $transKey = null,
         array $fields = [],
     ): BinaryFileResponse {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         // Converte EloquentCollection in Support\Collection se necessario
         if ($collection instanceof EloquentCollection) {
             $collection = Collection::make($collection->toArray());
@@ -168,6 +180,7 @@ class ExportXlsByCollection
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param Collection<int|string, mixed>|EloquentCollection<int, \Illuminate\Database\Eloquent\Model> $rows La collezione da esportare
 =======
      * @param Collection<int|string, mixed> $rows La collezione da esportare
@@ -194,6 +207,9 @@ class ExportXlsByCollection
      * @param array<string> $fields Campi da includere nell'export
 =======
      * @param Collection<int|string, mixed> $rows La collezione da esportare
+=======
+     * @param Collection<int|string, mixed>|EloquentCollection<int, \Illuminate\Database\Eloquent\Model> $rows La collezione da esportare
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      * @param array<int, string> $fields Campi da includere nell'export
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 =======
@@ -208,9 +224,17 @@ class ExportXlsByCollection
      *
      * @return string Il percorso del file generato
      */
-    public function executeWithSpreadsheet(Collection $rows, array $fields, string $filename): string
+    public function executeWithSpreadsheet(Collection|EloquentCollection $rows, array $fields, string $filename): string
     {
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+        // Converte EloquentCollection in Support\Collection se necessario
+        if ($rows instanceof EloquentCollection) {
+            $rows = Collection::make($rows->toArray());
+        }
+
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         $spreadsheet = new Spreadsheet();
         $sheet = $spreadsheet->getActiveSheet();
 
@@ -358,6 +382,9 @@ class ExportXlsByCollection
         return data_get($data, $field, '');
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 
     /**
      * Converte EloquentCollection in Support\Collection mantenendo i dati.
@@ -369,10 +396,13 @@ class ExportXlsByCollection
     {
         return Collection::make($eloquentCollection->toArray());
     }
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
 =======
 >>>>>>> 522e16e6 (✨ (Dashboard.php): refactor Dashboard class to extend XotBaseDashboard for better structure)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 }

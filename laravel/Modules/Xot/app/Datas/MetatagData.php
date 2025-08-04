@@ -334,6 +334,9 @@ class MetatagData extends Data implements Wireable
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         $filamentColors = $this->getFilamentColors();
         $defaults = [];
         
@@ -345,12 +348,15 @@ class MetatagData extends Data implements Wireable
             }
         }
         
+<<<<<<< HEAD
 =======
         $defaults = $this->getFilamentColors();
 >>>>>>> aurmich/dev
 =======
         $defaults = $this->getFilamentColors();
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         $custom = [];
         foreach ($this->colors as $key => $value) {
             if (Arr::has($value, 'color')) {
@@ -359,11 +365,15 @@ class MetatagData extends Data implements Wireable
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+        
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         return array_merge($defaults, $custom);
     }
 
@@ -494,6 +504,7 @@ class MetatagData extends Data implements Wireable
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Get all colors with proper type handling.
      * Converts custom colors to Filament color format for compatibility.
 =======
@@ -502,6 +513,10 @@ class MetatagData extends Data implements Wireable
 =======
      * Get the colors array with proper type handling.
 >>>>>>> 54f4fa16 (.)
+=======
+     * Get all colors with proper type handling.
+     * Converts custom colors to Filament color format for compatibility.
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      *
      * @return array<string, array<int, string>>
      */
@@ -509,6 +524,9 @@ class MetatagData extends Data implements Wireable
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         $filamentColors = $this->getFilamentColors();
         $customColors = [];
         
@@ -522,12 +540,15 @@ class MetatagData extends Data implements Wireable
         }
         
         return array_merge($filamentColors, $customColors);
+<<<<<<< HEAD
 =======
         return array_merge($this->getFilamentColors(), $this->colors);
 >>>>>>> aurmich/dev
 =======
         return array_merge($this->getFilamentColors(), $this->colors);
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     }
 
     /**

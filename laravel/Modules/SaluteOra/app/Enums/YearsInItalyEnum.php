@@ -9,10 +9,14 @@ use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasLabel;
 use Modules\Xot\Filament\Traits\TransTrait;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 use Modules\SaluteOra\Enums\YearsInItalyEnum;
 >>>>>>> 5f5e25a8 (✨ (YearsInItalyEnum.php): introduce YearsInItalyEnum to define years in Italy options for the application)
+=======
+
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 
 /**
  * Defines the different types of appointments in the system.

@@ -12,6 +12,7 @@ use Illuminate\Contracts\View\View;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
@@ -25,6 +26,11 @@ use Illuminate\Http\BinaryFileResponse;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\BinaryFileResponse;
 >>>>>>> d23ba493 (add calendar)
+=======
+use Illuminate\Support\Collection;
+use Illuminate\Database\Eloquent\Collection as EloquentCollection;
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\Xot\Exports\ViewExport;
 use Spatie\QueueableAction\QueueableAction;
@@ -69,6 +75,7 @@ class ExportXlsByView
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param View $view La vista da esportare
 =======
      * @param Collection<int|string, mixed> $rows La collezione da esportare
@@ -108,6 +115,9 @@ class ExportXlsByView
      * @param View $view Vista da esportare
 =======
      * @param Collection<int|string, mixed> $rows La collezione da esportare
+=======
+     * @param View $view La vista da esportare
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      * @param array<int, string> $fields Campi da includere nell'export
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 =======
@@ -123,7 +133,7 @@ class ExportXlsByView
      * @return BinaryFileResponse
      */
     public function execute(
-        Collection $rows,
+        View $view,
         array $fields,
         string $filename = 'test.xlsx',
         ?string $transKey = null,
@@ -134,6 +144,7 @@ class ExportXlsByView
             }, array_values($fields));
 
         $export = new ViewExport(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -156,6 +167,11 @@ class ExportXlsByView
             fields: $stringFields,
             transKey: $transKey
 >>>>>>> d23ba493 (add calendar)
+=======
+            view: $view,
+            transKey: $transKey,
+            fields: $stringFields
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         );
 
         return Excel::download($export, $filename);

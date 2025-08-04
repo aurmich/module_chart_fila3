@@ -471,11 +471,17 @@ class XotData extends Data implements Wireable
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Assert::classExists($class, '['.__LINE__.']['.class_basename($this).']');
         Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
         Assert::implementsInterface($class, UserContract::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
 =======
 >>>>>>> aurmich/dev
+=======
+        Assert::classExists($class, '['.__LINE__.']['.class_basename($this).']');
+        Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
+        Assert::implementsInterface($class, UserContract::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         return $class;
     }
 
@@ -533,7 +539,9 @@ class XotData extends Data implements Wireable
     {
 >>>>>>> b58de900 (.)
         $user_class = $this->getUserClass();
-        $enum_class = Arr::get($user_class::casts(),'type',null);
+        $user_instance=app($user_class);
+        //$enum_class = Arr::get($user_class::casts(),'type',null);
+        $enum_class = Arr::get($user_instance->getCasts(),'type',null);
         if($enum_class==null){
             $enum_class=Str::of($user_class)->replace('\\Models\\', '\\Enums\\')->append('TypeEnum')->toString();
         }

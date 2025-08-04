@@ -6,6 +6,7 @@ namespace Modules\Xot\Enums;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 //use Modules\Xot\Datas\PdfData;
 =======
 use Modules\Xot\Datas\PdfData;
@@ -13,6 +14,9 @@ use Modules\Xot\Datas\PdfData;
 =======
 use Modules\Xot\Datas\PdfData;
 >>>>>>> 54f4fa16 (.)
+=======
+//use Modules\Xot\Datas\PdfData;
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasLabel;

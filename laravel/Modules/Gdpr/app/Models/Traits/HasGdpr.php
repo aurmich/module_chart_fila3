@@ -24,10 +24,14 @@ trait HasGdpr
      * Get all consents for the model (polymorphic).
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return \Illuminate\Database\Eloquent\Relations\MorphMany<\Modules\Gdpr\Models\Consent, $this>
 =======
      * @return \Illuminate\Database\Eloquent\Relations\MorphMany<Consent>
 >>>>>>> adac82bd (rebase)
+=======
+     * @return \Illuminate\Database\Eloquent\Relations\MorphMany<\Modules\Gdpr\Models\Consent, $this>
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      */
     public function consents(): MorphMany
     {
@@ -38,10 +42,14 @@ trait HasGdpr
      * Get only active (non-revoked) consents.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return \Illuminate\Database\Eloquent\Relations\MorphMany<\Modules\Gdpr\Models\Consent, $this>
 =======
      * @return \Illuminate\Database\Eloquent\Relations\MorphMany<Consent>
 >>>>>>> adac82bd (rebase)
+=======
+     * @return \Illuminate\Database\Eloquent\Relations\MorphMany<\Modules\Gdpr\Models\Consent, $this>
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      */
     public function activeConsents(): MorphMany
     {
@@ -52,10 +60,14 @@ trait HasGdpr
      * Get the treatments associated with the user through consents.
      * 
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return \Illuminate\Database\Eloquent\Relations\HasManyThrough<\Modules\Gdpr\Models\Treatment, \Modules\Gdpr\Models\Consent, $this>
 =======
      * @return \Illuminate\Database\Eloquent\Relations\HasManyThrough<Treatment>
 >>>>>>> adac82bd (rebase)
+=======
+     * @return \Illuminate\Database\Eloquent\Relations\HasManyThrough<\Modules\Gdpr\Models\Treatment, \Modules\Gdpr\Models\Consent, $this>
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      */
     public function treatments()
     {
@@ -80,10 +92,14 @@ trait HasGdpr
     {
         $type = $type instanceof ConsentType ? $type->value : $type;
 <<<<<<< HEAD
+<<<<<<< HEAD
         $cacheKey = 'user_' . (string) $this->getKey() . '_consent_' . $type;
 =======
         $cacheKey = "user_{$this->getKey()}_consent_{$type}";
 >>>>>>> adac82bd (rebase)
+=======
+        $cacheKey = 'user_' . (string) $this->getKey() . '_consent_' . $type;
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         
         if ($cached && Cache::has($cacheKey)) {
             return (bool) Cache::get($cacheKey);
@@ -104,15 +120,20 @@ trait HasGdpr
      * @param  ConsentType|string  $type
      * @param  array<string, mixed>  $metadata
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return \Modules\Gdpr\Models\Consent
 =======
      * @return Consent
 >>>>>>> adac82bd (rebase)
+=======
+     * @return \Modules\Gdpr\Models\Consent
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      */
     public function giveConsent(ConsentType|string $type, array $metadata = []): Consent
     {
         $type = $type instanceof ConsentType ? $type->value : $type;
         
+<<<<<<< HEAD
 <<<<<<< HEAD
         /** @var \Modules\Gdpr\Models\Consent $consent */
         $consent = $this->consents()->create([
@@ -127,6 +148,14 @@ trait HasGdpr
             'ip_address' => request()?->ip(),
             'user_agent' => request()?->userAgent(),
 >>>>>>> adac82bd (rebase)
+=======
+        /** @var \Modules\Gdpr\Models\Consent $consent */
+        $consent = $this->consents()->create([
+            'type' => $type,
+            'metadata' => $metadata,
+            'ip_address' => request()->ip(),
+            'user_agent' => request()->userAgent(),
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
             'accepted_at' => now(),
         ]);
 
@@ -150,10 +179,14 @@ trait HasGdpr
             ->update([
                 'revoked_at' => now(),
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'revoked_ip_address' => request()->ip(),
 =======
                 'revoked_ip_address' => request()?->ip(),
 >>>>>>> adac82bd (rebase)
+=======
+                'revoked_ip_address' => request()->ip(),
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
             ]);
 
         if ($updated > 0) {
@@ -173,10 +206,14 @@ trait HasGdpr
     protected function clearConsentCache(string $type): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $cacheKey = 'user_' . (string) $this->getKey() . '_consent_' . $type;
 =======
         $cacheKey = "user_{$this->getKey()}_consent_{$type}";
 >>>>>>> adac82bd (rebase)
+=======
+        $cacheKey = 'user_' . (string) $this->getKey() . '_consent_' . $type;
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         Cache::forget($cacheKey);
     }
 

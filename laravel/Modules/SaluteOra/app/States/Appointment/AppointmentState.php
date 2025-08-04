@@ -6,6 +6,7 @@ namespace Modules\SaluteOra\States\Appointment;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Spatie\ModelStates\State;
@@ -22,6 +23,12 @@ use Modules\Xot\Filament\Traits\TransTrait;
 use Spatie\ModelStates\State;
 use Spatie\ModelStates\StateConfig;
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)
+=======
+use Spatie\ModelStates\State;
+use Spatie\ModelStates\StateConfig;
+use Modules\Xot\Contracts\StateContract;
+use Modules\Xot\Filament\Traits\TransTrait;
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 
 /**
  * Abstract base class for appointment state management.
@@ -37,7 +44,7 @@ abstract class AppointmentState extends XotBaseState
     
 =======
  */
-abstract class AppointmentState extends State
+abstract class AppointmentState extends State implements StateContract
 {
 <<<<<<< HEAD
 >>>>>>> 7c72aaf5 (✨ (FindDoctorAndAppointmentWidget): implement appointment state management using State Machine pattern for better tracking and notifications)

@@ -56,6 +56,7 @@ class RedirectWidget extends XotBaseWidget
     protected static string $view = 'ui::filament.widgets.redirect-widget';
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 
 =======
@@ -93,6 +94,10 @@ class RedirectWidget extends XotBaseWidget
     }
 
 >>>>>>> 198c0c0a (✨ (DoctorAppointmentsWidget.php, DoctorCalendarWidget.php): refactor appointment loading logic to use doctor_id instead of auth user id for better clarity and functionality)
+=======
+    
+
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     /**
      * Implementazione richiesta da XotBaseWidget.
      * Per questo widget non abbiamo form, quindi restituiamo array vuoto.

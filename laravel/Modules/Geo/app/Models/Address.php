@@ -245,6 +245,7 @@ class Address extends BaseModel
 <<<<<<< HEAD
     */
     /*
+<<<<<<< HEAD
      * Get the province relationship.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
@@ -352,32 +353,37 @@ class Address extends BaseModel
     */
 >>>>>>> 71e6efbe (✨ feat: add InlineDatePicker component for enhanced date selection in forms)
     /**
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      * Get the province relationship.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
+     
     public function provincia(): BelongsTo
     {
         return $this->belongsTo(Provincia::class, 'administrative_area_level_2', 'name');
     }
-    
-    /**
+    */
+    /*
      * Get the region relationship.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
+     
     public function regione(): BelongsTo
     {
         return $this->belongsTo(Regione::class, 'administrative_area_level_1', 'name');
     }
-
+     */
     public function getRegione():?array{
+        /** @phpstan-ignore-next-line */
         $res= Comune::select('regione')
         ->distinct()
         ->orderBy('regione->nome')
         ->where('regione->codice', $this->administrative_area_level_1)
         ->get()
+        /** @phpstan-ignore-next-line */
         ->map(function($item){
+            /** @phpstan-ignore-next-line */
             return ['codice'=>$item->regione['codice'],'nome'=>$item->regione['nome']];
         })
         ;
@@ -387,14 +393,19 @@ class Address extends BaseModel
     }
 
     public function getProvincia():?array{
+        /** @phpstan-ignore-next-line */
         $res= Comune::select('provincia')
         ->distinct()
         ->orderBy('provincia->nome')
         ->where('provincia->codice', $this->administrative_area_level_2)
         ->get()
+        /** @phpstan-ignore-next-line */
         ->map(function($item){
+            /** @phpstan-ignore-next-line */
             return [
+                /** @phpstan-ignore-next-line */
                 'codice'=>$item->provincia['codice'],
+                /** @phpstan-ignore-next-line */
                 'nome'=>$item->provincia['nome']
             ];
         })
@@ -404,6 +415,7 @@ class Address extends BaseModel
 
 
     public function getLocality():?array{
+        /** @phpstan-ignore-next-line */
         $res= Comune::where('codice', $this->locality)
         ->distinct()
         ->first()
@@ -430,6 +442,21 @@ class Address extends BaseModel
         ]);
 
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+        return implode(', ', $parts);
+    }
+
+
+    public function getFullAddress(): ?string
+    {
+        $parts = array_filter([
+            $this->route . ($this->street_number ? ' ' . $this->street_number : ''),
+            $this->locality,
+            $this->administrative_area_level_3, // Provincia
+            $this->administrative_area_level_2, // Regione
+            $this->postal_code,
+            $this->country
+        ]);
+
         return implode(', ', $parts);
     }
     
@@ -564,6 +591,7 @@ class Address extends BaseModel
     }
     
 <<<<<<< HEAD
+<<<<<<< HEAD
    
 =======
     /**
@@ -599,6 +627,9 @@ class Address extends BaseModel
     }
     
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+   
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     /**
      * Scope per cercare indirizzi nelle vicinanze
      *

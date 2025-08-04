@@ -281,6 +281,7 @@ class RegistrationWidget extends XotBaseWidget
         return $data;
     }
 
+<<<<<<< HEAD
     public function getFormFillOLD(): array
     {
         $model = $this->getFormModel();
@@ -363,6 +364,9 @@ class RegistrationWidget extends XotBaseWidget
         
         return array_fill_keys($fields, null);
     }
+=======
+   
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -416,12 +420,17 @@ class RegistrationWidget extends XotBaseWidget
         $data = $this->form->getState();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 <<<<<<< HEAD
         $data=array_merge($this->data ?? [],$data);
 =======
         $data=array_merge($this->data,$data);
 >>>>>>> f158a85a (✨ (lang_service.php, doctor.php, xot_base.php): add Italian translations for doctor certificate fields to enhance localization support)
+=======
+        
+        $data=array_merge($this->data ?? [],$data);
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         $record = $this->record;
        
         $user = app($this->action)->execute($record, $data);

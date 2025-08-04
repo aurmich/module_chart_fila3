@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [{"name":"analyze-translation-files","class":"AnalyzeTranslationFiles","module":null,"path":null,"ns":"Modules\\Notify\\Console\\Commands\\AnalyzeTranslationFiles"},{"name":"send-mail-command","class":"SendMailCommand","module":null,"path":null,"ns":"Modules\\Notify\\Console\\Commands\\SendMailCommand"},{"name":"telegram-webhook","class":"TelegramWebhook","module":null,"path":null,"ns":"Modules\\Notify\\Console\\Commands\\TelegramWebhook"}]
 =======
 [{"name":"cleanup-notification-logs-command","class":"CleanupNotificationLogsCommand","module":null,"path":null,"ns":"Modules\\Notify\\Console\\Commands\\CleanupNotificationLogsCommand"},{"name":"send-mail-command","class":"SendMailCommand","module":null,"path":null,"ns":"Modules\\Notify\\Console\\Commands\\SendMailCommand"},{"name":"telegram-webhook","class":"TelegramWebhook","module":null,"path":null,"ns":"Modules\\Notify\\Console\\Commands\\TelegramWebhook"}]
@@ -31,3 +32,6 @@
 =======
 [{"name":"analyze-translation-files","class":"AnalyzeTranslationFiles","module":null,"path":null,"ns":"Modules\\Notify\\Console\\Commands\\AnalyzeTranslationFiles"},{"name":"cleanup-notification-logs-command","class":"CleanupNotificationLogsCommand","module":null,"path":null,"ns":"Modules\\Notify\\Console\\Commands\\CleanupNotificationLogsCommand"},{"name":"send-mail-command","class":"SendMailCommand","module":null,"path":null,"ns":"Modules\\Notify\\Console\\Commands\\SendMailCommand"},{"name":"telegram-webhook","class":"TelegramWebhook","module":null,"path":null,"ns":"Modules\\Notify\\Console\\Commands\\TelegramWebhook"}]
 >>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+=======
+[{"name":"analyze-translation-files","class":"AnalyzeTranslationFiles","module":null,"path":null,"ns":"Modules\\Notify\\Console\\Commands\\AnalyzeTranslationFiles"},{"name":"send-mail-command","class":"SendMailCommand","module":null,"path":null,"ns":"Modules\\Notify\\Console\\Commands\\SendMailCommand"},{"name":"telegram-webhook","class":"TelegramWebhook","module":null,"path":null,"ns":"Modules\\Notify\\Console\\Commands\\TelegramWebhook"}]
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)

@@ -19,6 +19,9 @@ class ExceptionHandler
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     /**
      * Configura la gestione delle eccezioni.
      *
@@ -26,12 +29,15 @@ class ExceptionHandler
      * @return void
      */
     public static function handles(Exceptions $exceptions): void
+<<<<<<< HEAD
 =======
     public static function handles(Exceptions $exceptions)
 >>>>>>> aurmich/dev
 =======
     public static function handles(Exceptions $exceptions)
 >>>>>>> ac11c87d (✨ (Page.php): update page retrieval logic to abort with 404 if page not found, improving error handling)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     {
         
         $exceptions->render(function (HttpException $e,Request $request) {

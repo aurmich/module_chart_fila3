@@ -9,11 +9,15 @@ use Illuminate\Support\Facades\Storage;
 use Spatie\QueueableAction\QueueableAction;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
+=======
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 
 class DownloadZipByPathsDiskAction
 {
@@ -21,6 +25,9 @@ class DownloadZipByPathsDiskAction
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     /**
      * Crea un file ZIP dai percorsi forniti e lo restituisce come download.
      *
@@ -29,12 +36,15 @@ class DownloadZipByPathsDiskAction
      * @return BinaryFileResponse|null Risposta di download o null se fallisce
      */
     public function execute(array $attachments, string $disk): ?BinaryFileResponse
+<<<<<<< HEAD
 =======
     public function execute(array $attachments,string $disk)
 >>>>>>> aurmich/dev
 =======
     public function execute(array $attachments,string $disk)
 >>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     {
         $zipFileName = 'temp_zip_' .uniqid() . '.zip';
         $zipPath = 'temp/' . $zipFileName;
@@ -54,11 +64,15 @@ class DownloadZipByPathsDiskAction
                     $fileContent = Storage::disk($disk)->get($filePath);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
                     if ($fileContent !== null) {
                         $zip->addFromString($attachment . '.pdf', $fileContent);
                     }
                 } else {
                     dddx(['filePath' => $filePath]);
+<<<<<<< HEAD
 =======
                     $zip->addFromString($attachment . '.pdf', $fileContent);
                 }else{
@@ -69,12 +83,15 @@ class DownloadZipByPathsDiskAction
                 }else{
                     dddx(['filePath'=>$filePath]);
 >>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
                 }
             }
             $zip->close();
             
             $downloadFileName = 'attachments_' . uniqid() . '.zip';
             
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             // Usa response()->download() per il download
@@ -96,5 +113,14 @@ class DownloadZipByPathsDiskAction
 >>>>>>> aurmich/dev
 =======
 >>>>>>> f2c2831f (✨ (doctor.php, RegisterAction.php, DoctorResource.php, ListDoctors.php, Doctor.php, User.php, migrations, DownloadZipByPathsDiskAction.php): add support for certifications and file uploads for doctors, enhancing the registration and management process)
+=======
+            // Usa response()->download() per il download
+            return response()->download($tempFilePath, $downloadFileName, [
+                'Content-Type' => 'application/zip'
+            ]);//->deleteFileAfterSend(true);
+        }
+        
+        return null;
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     }
 }

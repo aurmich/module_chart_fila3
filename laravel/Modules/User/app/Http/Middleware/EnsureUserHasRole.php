@@ -25,10 +25,14 @@ class EnsureUserHasRole
     public function handle(Request $request, Closure $next, string $role): Response
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $request->user()?->hasRole($role)) {
 =======
         if (! $request->user()->hasRole($role)) {
 >>>>>>> ce78fe45 (translations + middleware + field on patientresource + openinghoursfield su relationsmanager)
+=======
+        if (! $request->user()?->hasRole($role)) {
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
             // Redirect...
             return redirect()->route('home');
         }

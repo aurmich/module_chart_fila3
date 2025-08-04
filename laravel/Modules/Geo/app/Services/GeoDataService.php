@@ -118,6 +118,7 @@ class GeoDataService
             self::CACHE_TTL,
             function () use ($regionCode): Collection {
                 /** @var array<string, mixed>|null $region */
+<<<<<<< HEAD
                 $region = $this->loadData()->firstWhere('code', $regionCode);
                 
                 if (!$region || !is_array($region) || !isset($region['provinces']) || !is_array($region['provinces'])) {
@@ -143,8 +144,20 @@ class GeoDataService
             $cacheKey,
             self::CACHE_TTL,
             function () use ($regionCode) {
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
                 $region = $this->loadData()->firstWhere('code', $regionCode);
-                return $region ? collect($region['provinces'])->pluck('name', 'code') : collect();
+                
+                if (!$region || !is_array($region) || !isset($region['provinces']) || !is_array($region['provinces'])) {
+                    /** @var Collection<int, array{name: string, code: string}> */
+                    return new Collection();
+                }
+                
+                /** @var array<int, array<string, mixed>> $provinces */
+                $provinces = $region['provinces'];
+                
+                /** @var Collection<int, array{name: string, code: string}> */
+                return (new Collection($provinces))->pluck('name', 'code');
             }
         );
 <<<<<<< HEAD
@@ -173,6 +186,7 @@ class GeoDataService
             self::CACHE_TTL,
             function () use ($provinceCode): Collection {
                 /** @var array<string, mixed>|null $province */
+<<<<<<< HEAD
                 $province = $this->loadData()
                     ->flatMap(fn (array $region): array => is_array($region['provinces'] ?? null) ? $region['provinces'] : [])
                     ->firstWhere('code', $provinceCode);
@@ -200,11 +214,22 @@ class GeoDataService
             $cacheKey,
             self::CACHE_TTL,
             function () use ($provinceCode) {
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
                 $province = $this->loadData()
-                    ->flatMap(fn ($region) => $region['provinces'])
+                    ->flatMap(fn (array $region): array => is_array($region['provinces'] ?? null) ? $region['provinces'] : [])
                     ->firstWhere('code', $provinceCode);
 
-                return $province ? collect($province['cities'])->pluck('name', 'code') : collect();
+                if (!$province || !is_array($province) || !isset($province['cities']) || !is_array($province['cities'])) {
+                    /** @var Collection<int, array{name: string, code: string}> */
+                    return new Collection();
+                }
+
+                /** @var array<int, array<string, mixed>> $cities */
+                $cities = $province['cities'];
+
+                /** @var Collection<int, array{name: string, code: string}> */
+                return (new Collection($cities))->pluck('name', 'code');
             }
         );
 <<<<<<< HEAD
@@ -234,6 +259,7 @@ class GeoDataService
             self::CACHE_TTL,
             function () use ($provinceCode, $cityCode): ?string {
                 /** @var array<string, mixed>|null $province */
+<<<<<<< HEAD
                 $province = $this->loadData()
                     ->flatMap(fn (array $region): array => is_array($region['provinces'] ?? null) ? $region['provinces'] : [])
                     ->firstWhere('code', $provinceCode);
@@ -265,18 +291,26 @@ class GeoDataService
             $cacheKey,
             self::CACHE_TTL,
             function () use ($provinceCode, $cityCode) {
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
                 $province = $this->loadData()
-                    ->flatMap(fn ($region) => $region['provinces'])
+                    ->flatMap(fn (array $region): array => is_array($region['provinces'] ?? null) ? $region['provinces'] : [])
                     ->firstWhere('code', $provinceCode);
 
-                if (!$province) {
+                if (!$province || !is_array($province) || !isset($province['cities']) || !is_array($province['cities'])) {
                     return null;
                 }
 
-                $city = collect($province['cities'])
-                    ->firstWhere('code', $cityCode);
+                /** @var array<int, array<string, mixed>> $cities */
+                $cities = $province['cities'];
 
-                return $city ? $city['cap'] : null;
+                /** @var Collection<int, array<string, mixed>> $cityCollection */
+                $cityCollection = new Collection($cities);
+
+                /** @var array<string, mixed>|null $city */
+                $city = $cityCollection->firstWhere('code', $cityCode);
+
+                return is_array($city) && isset($city['cap']) ? (string) $city['cap'] : null;
             }
         );
 <<<<<<< HEAD
@@ -324,7 +358,7 @@ class GeoDataService
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
 =======
         /** @var Collection<int, array> $result */
-        $result = collect($data['regions']);
+        $result = new Collection($data['regions']);
 
         return $result;
 >>>>>>> 345f8677 (phpstan)

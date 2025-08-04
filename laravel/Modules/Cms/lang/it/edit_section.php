@@ -209,10 +209,15 @@ return [
             'description' => 'Seleziona la lingua per le traduzioni della sezione',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
         'add_block' => 'Aggiungi blocco',
         'remove_block' => 'Rimuovi blocco',
 =======
 >>>>>>> e2c13fb7 (✨ (cms-translation-standards): add CMS translation standards documentation to ensure consistency in translations and improve localization practices)
+=======
+        'add_block' => 'Aggiungi blocco',
+        'remove_block' => 'Rimuovi blocco',
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     ],
     
     'sections' => [
@@ -241,6 +246,9 @@ return [
             'description' => 'Profili e collegamenti social',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         'settings' => [
             'label' => 'Impostazioni',
             'description' => 'Configurazioni generali della sezione',
@@ -249,8 +257,11 @@ return [
             'label' => 'SEO',
             'description' => 'Ottimizzazione per motori di ricerca',
         ],
+<<<<<<< HEAD
 =======
 >>>>>>> e2c13fb7 (✨ (cms-translation-standards): add CMS translation standards documentation to ensure consistency in translations and improve localization practices)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     ],
     
     'messages' => [
@@ -259,6 +270,7 @@ return [
         'validation_errors' => 'Controlla i campi evidenziati in rosso',
         'unsaved_changes' => 'Hai modifiche non salvate in questa sezione',
         'confirm_navigation' => 'Vuoi davvero lasciare questa pagina? Le modifiche non salvate andranno perse.',
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     ],
@@ -272,6 +284,8 @@ return [
     
     'messages' => [
 >>>>>>> e2c13fb7 (✨ (cms-translation-standards): add CMS translation standards documentation to ensure consistency in translations and improve localization practices)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         'saved' => 'Sezione salvata con successo',
         'error' => 'Si è verificato un errore durante il salvataggio',
         'confirm_delete' => 'Sei sicuro di voler eliminare questa sezione?',
@@ -282,6 +296,7 @@ return [
         'slug_exists' => 'Questo slug è già in uso',
         'min' => 'Il valore deve essere almeno :min',
     ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 ];
 =======
@@ -437,5 +452,7 @@ return array (
         'settings' => 'Impostazioni',
         'seo' => 'SEO',
     ],
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 ];
 >>>>>>> e2c13fb7 (✨ (cms-translation-standards): add CMS translation standards documentation to ensure consistency in translations and improve localization practices)

@@ -15,11 +15,16 @@ class GenerateResourceFormSchemaCommand extends Command
 
     public function handle(): int
     {
+<<<<<<< HEAD
         $moduleOption = $this->option('module');
         $resourceOption = $this->option('resource');
         
         $module = is_string($moduleOption) ? $moduleOption : '';
         $resource = is_string($resourceOption) ? $resourceOption : '';
+=======
+        $module = $this->option('module');
+        $resource = $this->option('resource');
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 
         try {
             if ($module && $resource) {
@@ -61,10 +66,17 @@ class GenerateResourceFormSchemaCommand extends Command
                     }
                 }
             }
+<<<<<<< HEAD
             
             return Command::SUCCESS;
         } catch (\Exception $e) {
             $this->error('Errore durante la generazione: ' . $e->getMessage());
+=======
+
+            return Command::SUCCESS;
+        } catch (\Exception $e) {
+            $this->error('Errore durante la generazione degli schemi: ' . $e->getMessage());
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
             return Command::FAILURE;
         }
     }

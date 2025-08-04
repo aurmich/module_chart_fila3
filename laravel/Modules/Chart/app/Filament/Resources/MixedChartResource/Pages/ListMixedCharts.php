@@ -23,6 +23,7 @@ use Modules\Xot\Filament\Traits\TransTrait;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @phpstan-import-type MixedChart from \Modules\Chart\Models\MixedChart
 >>>>>>> 54f4fa16 (.)
@@ -32,6 +33,8 @@ use Modules\Xot\Filament\Traits\TransTrait;
 =======
  * @phpstan-import-type MixedChart from \Modules\Chart\Models\MixedChart
 >>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
  */
 class ListMixedCharts extends XotBaseListRecords
 {

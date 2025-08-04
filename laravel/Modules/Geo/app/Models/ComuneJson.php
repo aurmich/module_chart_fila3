@@ -48,6 +48,9 @@ class ComuneJson extends GeoJsonModel
     /**
      * Get comuni by region code
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      * 
      * @return Collection<int, array{
      *     nome: string,
@@ -58,14 +61,20 @@ class ComuneJson extends GeoJsonModel
      *     codiceCatastale: string,
      *     popolazione: int
      * }>
+<<<<<<< HEAD
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      */
     public static function byRegion(string $regionCode): Collection
     {
         $cacheKey = "geo_region_{$regionCode}";
         
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         /** @var Collection<int, array{
          *     nome: string,
          *     codice: string,
@@ -76,15 +85,21 @@ class ComuneJson extends GeoJsonModel
          *     popolazione: int
          * }> $result */
         $result = Cache::remember($cacheKey, self::CACHE_TTL, function () use ($regionCode) {
+<<<<<<< HEAD
 =======
         return Cache::remember($cacheKey, self::CACHE_TTL, function () use ($regionCode) {
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
             return static::all()
                 ->where('regione.codice', $regionCode)
                 ->sortBy('nome')
                 ->values();
         });
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         
         /** @var Collection<int, array{
          *     nome: string,
@@ -96,13 +111,19 @@ class ComuneJson extends GeoJsonModel
          *     popolazione: int
          * }> $result */
         return $result;
+<<<<<<< HEAD
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     }
 
     /**
      * Get comuni by province code
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      * 
      * @return Collection<int, array{
      *     nome: string,
@@ -113,14 +134,20 @@ class ComuneJson extends GeoJsonModel
      *     codiceCatastale: string,
      *     popolazione: int
      * }>
+<<<<<<< HEAD
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      */
     public static function byProvince(string $provinceCode): Collection
     {
         $cacheKey = "geo_province_{$provinceCode}";
         
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         /** @var Collection<int, array{
          *     nome: string,
          *     codice: string,
@@ -131,15 +158,21 @@ class ComuneJson extends GeoJsonModel
          *     popolazione: int
          * }> $result */
         $result = Cache::remember($cacheKey, self::CACHE_TTL, function () use ($provinceCode) {
+<<<<<<< HEAD
 =======
         return Cache::remember($cacheKey, self::CACHE_TTL, function () use ($provinceCode) {
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
             return static::all()
                 ->where('provincia.codice', $provinceCode)
                 ->sortBy('nome')
                 ->values();
         });
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         
         /** @var Collection<int, array{
          *     nome: string,
@@ -151,8 +184,11 @@ class ComuneJson extends GeoJsonModel
          *     popolazione: int
          * }> $result */
         return $result;
+<<<<<<< HEAD
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     }
 
     /**
@@ -161,6 +197,9 @@ class ComuneJson extends GeoJsonModel
      * @param string $name Nome parziale del comune da cercare
      * @param int $limit Numero massimo di risultati (0 = nessun limite)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      * @return Collection<int, array{
      *     nome: string,
      *     codice: string,
@@ -170,9 +209,12 @@ class ComuneJson extends GeoJsonModel
      *     codiceCatastale: string,
      *     popolazione: int
      * }> Comuni che corrispondono alla ricerca
+<<<<<<< HEAD
 =======
      * @return Collection<array-key, array> Comuni che corrispondono alla ricerca
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      */
     public static function searchByName(string $name, int $limit = 0): Collection
     {
@@ -180,6 +222,9 @@ class ComuneJson extends GeoJsonModel
         $cacheKey = "geo_search_" . md5($name) . "_" . $limit;
         
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         /** @var Collection<int, array{
          *     nome: string,
          *     codice: string,
@@ -190,6 +235,7 @@ class ComuneJson extends GeoJsonModel
          *     popolazione: int
          * }> $result */
         $result = Cache::remember($cacheKey, self::CACHE_TTL, function () use ($name, $limit) {
+<<<<<<< HEAD
             $results = static::all()
                 /** @phpstan-ignore nullCoalesce.offset */
                 ->filter(fn($item) => str_contains(mb_strtolower($item['nome'] ?? ''), $name))
@@ -198,11 +244,19 @@ class ComuneJson extends GeoJsonModel
             $results = static::all()
                 ->filter(fn($item) => str_contains(mb_strtolower($item['nome']), $name))
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+            $results = static::all()
+                /** @phpstan-ignore-next-line */
+                ->filter(fn($item) => str_contains(mb_strtolower($item['nome'] ?? ''), $name))
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
                 ->sortBy('nome');
                 
             return $limit > 0 ? $results->take($limit)->values() : $results->values();
         });
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         
         /** @var Collection<int, array{
          *     nome: string,
@@ -214,13 +268,19 @@ class ComuneJson extends GeoJsonModel
          *     popolazione: int
          * }> $result */
         return $result;
+<<<<<<< HEAD
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     }
 
     /**
      * Get comuni by CAP
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      * 
      * @return Collection<int, array{
      *     nome: string,
@@ -231,6 +291,7 @@ class ComuneJson extends GeoJsonModel
      *     codiceCatastale: string,
      *     popolazione: int
      * }>
+<<<<<<< HEAD
      */
     public static function byCap(string $cap): Collection
     {
@@ -251,14 +312,31 @@ class ComuneJson extends GeoJsonModel
             
         return $filtered;
 =======
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      */
     public static function byCap(string $cap): Collection
     {
-        return static::all()
-            ->filter(fn($item) => in_array($cap, $item['cap'], true))
+        /** @var Collection<int, array{
+         *     nome: string,
+         *     codice: string,
+         *     regione: array{codice: string, nome: string},
+         *     provincia: array{codice: string, nome: string},
+         *     cap: array<int, string>,
+         *     codiceCatastale: string,
+         *     popolazione: int
+         * }> $filtered */
+        $filtered = static::all()
+            /** @phpstan-ignore-next-line */
+            ->filter(fn($item) => in_array($cap, $item['cap'] ?? [], true))
             ->sortBy('nome')
             ->values();
+<<<<<<< HEAD
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+            
+        return $filtered;
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     }
 
     /**
@@ -269,21 +347,31 @@ class ComuneJson extends GeoJsonModel
     public static function allRegions(): Collection
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var Collection<string, string> $result */
         $result = Cache::remember('geo_all_regions', self::CACHE_TTL, function () {
 =======
         return Cache::remember('geo_all_regions', self::CACHE_TTL, function () {
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+        /** @var Collection<string, string> $result */
+        $result = Cache::remember('geo_all_regions', self::CACHE_TTL, function () {
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
             return static::all()
                 ->pluck('regione.nome', 'regione.codice')
                 ->unique()
                 ->sort();
         });
 <<<<<<< HEAD
+<<<<<<< HEAD
         
         return $result;
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+        
+        return $result;
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     }
 
     /**
@@ -294,21 +382,31 @@ class ComuneJson extends GeoJsonModel
     public static function allProvinces(): Collection
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var Collection<string, string> $result */
         $result = Cache::remember('geo_all_provinces', self::CACHE_TTL, function () {
 =======
         return Cache::remember('geo_all_provinces', self::CACHE_TTL, function () {
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+        /** @var Collection<string, string> $result */
+        $result = Cache::remember('geo_all_provinces', self::CACHE_TTL, function () {
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
             return static::all()
                 ->pluck('provincia.nome', 'provincia.codice')
                 ->unique()
                 ->sort();
         });
 <<<<<<< HEAD
+<<<<<<< HEAD
         
         return $result;
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+        
+        return $result;
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     }
 
     /**
@@ -321,11 +419,16 @@ class ComuneJson extends GeoJsonModel
         $cacheKey = "geo_region_{$regionCode}_provinces";
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var Collection<string, string> $result */
         $result = Cache::remember($cacheKey, self::CACHE_TTL, function () use ($regionCode) {
 =======
         return Cache::remember($cacheKey, self::CACHE_TTL, function () use ($regionCode) {
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+        /** @var Collection<string, string> $result */
+        $result = Cache::remember($cacheKey, self::CACHE_TTL, function () use ($regionCode) {
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
             return static::all()
                 ->where('regione.codice', $regionCode)
                 ->pluck('provincia.nome', 'provincia.codice')
@@ -333,14 +436,20 @@ class ComuneJson extends GeoJsonModel
                 ->sort();
         });
 <<<<<<< HEAD
+<<<<<<< HEAD
         
         return $result;
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+        
+        return $result;
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     }
 
     /**
      * Get all CAPs for a specific city
+<<<<<<< HEAD
 <<<<<<< HEAD
      * 
      * @return Collection<int, string> List of CAP codes for the city
@@ -355,6 +464,15 @@ class ComuneJson extends GeoJsonModel
     {
         return static::all()
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+     * 
+     * @return Collection<int, string> List of CAP codes for the city
+     */
+    public static function getCapsByCity(string $cityName): Collection
+    {
+        /** @var Collection<int, string> $result */
+        $result = static::all()
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
             ->where('nome', $cityName)
             ->pluck('cap')
             ->flatten()
@@ -362,10 +480,15 @@ class ComuneJson extends GeoJsonModel
             ->sort()
             ->values();
 <<<<<<< HEAD
+<<<<<<< HEAD
             
         return $result;
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+            
+        return $result;
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     }
 
     /**
@@ -432,6 +555,7 @@ class ComuneJson extends GeoJsonModel
         $cacheKey = "geo_valid_cap_{$cap}";
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var bool $result */
         $result = Cache::remember($cacheKey, self::CACHE_TTL, function () use ($cap) {
             return static::byCap($cap)->isNotEmpty();
@@ -443,6 +567,14 @@ class ComuneJson extends GeoJsonModel
             return static::byCap($cap)->isNotEmpty();
         });
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+        /** @var bool $result */
+        $result = Cache::remember($cacheKey, self::CACHE_TTL, function () use ($cap) {
+            return static::byCap($cap)->isNotEmpty();
+        });
+        
+        return $result;
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     }
     
     /**
@@ -450,6 +582,9 @@ class ComuneJson extends GeoJsonModel
      * 
      * @param string $comuneNome Nome esatto del comune
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      * @return array{
      *     regione: array{codice: string, nome: string}|null,
      *     provincia: array{codice: string, nome: string}|null,
@@ -461,15 +596,21 @@ class ComuneJson extends GeoJsonModel
      *     },
      *     cap: array<int, string>
      * }|null Gerarchia completa o null se il comune non esiste
+<<<<<<< HEAD
 =======
      * @return array|null Gerarchia completa o null se il comune non esiste
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      */
     public static function getGerarchia(string $comuneNome): ?array
     {
         $cacheKey = "geo_gerarchia_" . md5($comuneNome);
         
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         /** @var array{
          *     regione: array{codice: string, nome: string}|null,
          *     provincia: array{codice: string, nome: string}|null,
@@ -492,10 +633,13 @@ class ComuneJson extends GeoJsonModel
              *     popolazione: int
              * }|null $comune */
             $comune = static::searchByName($comuneNome, 1)->first();
+<<<<<<< HEAD
 =======
         return Cache::remember($cacheKey, self::CACHE_TTL, function () use ($comuneNome) {
             $comune = static::all()->firstWhere('nome', $comuneNome);
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
             
             if (!$comune) {
                 return null;
@@ -514,10 +658,15 @@ class ComuneJson extends GeoJsonModel
             ];
         });
 <<<<<<< HEAD
+<<<<<<< HEAD
         
         return $result;
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+        
+        return $result;
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     }
     
     /**

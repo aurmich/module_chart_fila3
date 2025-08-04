@@ -127,6 +127,7 @@ abstract class XotBasePage extends Page implements HasForms
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 =======
@@ -256,6 +257,9 @@ abstract class XotBasePage extends Page implements HasForms
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     protected static ?string $navigationIcon = 'heroicon-o-computer-desktop';
 
+=======
+    
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     /**
      * Vista predefinita per la pagina.
      * Deve essere sovrascritta nelle classi figlie.
@@ -282,7 +286,7 @@ abstract class XotBasePage extends Page implements HasForms
      *
      * @var class-string<Model>|null
      */
-    protected static ?string $model = null;
+    public static ?string $model = null;
 
     /**
      * Dati del form.
@@ -322,7 +326,7 @@ abstract class XotBasePage extends Page implements HasForms
      * Genera un percorso di traduzione standardizzato basato sul modulo e sul nome della classe.
      *
      * @param string $key La chiave di traduzione specifica
-     * @param array<string, mixed> $replace Parametri di sostituzione per la traduzione
+     * @param array<string, bool|float|int|string> $replace Parametri di sostituzione per la traduzione
      * @param string|null $locale Locale da utilizzare (null = locale corrente)
      * @param bool $useFallback Se true, utilizza la chiave come fallback se la traduzione non esiste
      *
@@ -730,8 +734,10 @@ abstract class XotBasePage extends Page implements HasForms
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     public function getModel(): string
     {
+        /** @phpstan-ignore-next-line */
         if (static::$model !== null) {
             /** @var class-string<Model> $model */
+            /** @phpstan-ignore-next-line */
             $model = static::$model;
             return $model;
         }
@@ -801,11 +807,8 @@ abstract class XotBasePage extends Page implements HasForms
     {
         $form = $form->schema($this->getFormSchema());
 
-        // Controlla se il metodo statePath esiste prima di chiamarlo
-        if (method_exists($form, 'statePath')) {
-            $form->statePath('data');
-        }
-
+        $form->statePath('data');
+        
         $debounce = $this->getAutosaveDebounce();
         if ($debounce !== null && method_exists($form, 'autosaveDebounce')) {
             $form->autosaveDebounce($debounce);
@@ -887,9 +890,9 @@ abstract class XotBasePage extends Page implements HasForms
         $user = $this->getUser();
 
         // Verifiamo che il metodo hasPermissionTo esista sull'utente
-        if (!method_exists($user, 'hasPermissionTo')) {
-            throw new \RuntimeException('Il modello utente deve implementare il metodo hasPermissionTo');
-        }
+        //if (!method_exists($user, 'hasPermissionTo')) {
+        //    throw new \RuntimeException('Il modello utente deve implementare il metodo hasPermissionTo');
+        //}
 
         return $user->hasPermissionTo($permission);
     }

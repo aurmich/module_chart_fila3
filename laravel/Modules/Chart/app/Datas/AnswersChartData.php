@@ -124,12 +124,16 @@ class AnswersChartData extends Data
                 }
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
             /** @phpstan-ignore offsetAccess.nonOffsetAccessible */
 =======
 
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+            /** @phpstan-ignore-next-line */
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
             if (isset($this->answers->toCollection()->pluck('avg')[0]) && ! \is_string($this->answers->toCollection()->pluck('avg')[0])) {
 =======
             // Check if the first element of the avg collection exists and has proper properties
@@ -431,9 +435,13 @@ class AnswersChartData extends Data
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             /** @phpstan-ignore property.nonObject */
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+            /** @phpstan-ignore-next-line */
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
             $label = round((float) $this->answers->first()->avg, 2);
 =======
             /** @var AnswerData $first_answer */

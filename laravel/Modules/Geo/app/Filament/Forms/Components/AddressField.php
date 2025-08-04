@@ -88,6 +88,7 @@ class AddressField extends Forms\Components\Section
     protected function removeReactivityFromSchema(array $schema): array
     {
         foreach ($schema as $key => $field) {
+<<<<<<< HEAD
             /** @phpstan-ignore argument.type */
             if (method_exists($field, 'live')) {
                 // Rimuovi reattività live
@@ -144,18 +145,26 @@ class AddressField extends Forms\Components\Section
     protected function removeReactivityFromSchema(array $schema): array
     {
         foreach ($schema as $key => $field) {
+=======
+            /** @phpstan-ignore-next-line */
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
             if (method_exists($field, 'live')) {
                 // Rimuovi reattività live
+                /** @phpstan-ignore-next-line */
                 $field->live(false);
             }
             
+            /** @phpstan-ignore-next-line */
             if (method_exists($field, 'afterStateUpdated')) {
                 // Rimuovi callback afterStateUpdated
+                /** @phpstan-ignore-next-line */
                 $field->afterStateUpdated(null);
             }
             
+            /** @phpstan-ignore-next-line */
             if (method_exists($field, 'disabled')) {
                 // Rimuovi condizioni disabled dinamiche
+                /** @phpstan-ignore-next-line */
                 $field->disabled(false);
             }
             

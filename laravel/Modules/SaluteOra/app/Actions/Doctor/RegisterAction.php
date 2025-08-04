@@ -87,6 +87,7 @@ class RegisterAction
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if(!isset($data['name']) && isset($data['email']) && is_string($data['email'])){
             $data['name']=Str::of($data['email'])->before('@')->append('-')->append(Str::random(3))->toString();
         }
@@ -213,6 +214,9 @@ class RegisterAction
 >>>>>>> 17b35338 (add doctor-register-integration-completed  page)
 =======
         if(!isset($data['name']) && isset($data['email'])){
+=======
+        if(!isset($data['name']) && isset($data['email']) && is_string($data['email'])){
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
             $data['name']=Str::of($data['email'])->before('@')->append('-')->append(Str::random(3))->toString();
         }
 >>>>>>> 9fa97684 (✨ (appointment states): add complete standardization for appointment states to ensure consistency and improve maintainability)

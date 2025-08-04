@@ -12,6 +12,7 @@ use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Actions\Action;
 use Webmozart\Assert\Assert;
+<<<<<<< HEAD
 =======
 use Filament\Forms\Form;
 use Filament\Tables\Table;
@@ -22,6 +23,8 @@ use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Actions\Action;
 >>>>>>> 0964f1b7 (✨ (DoctorAvailabilitiesWidget): introduce a new widget for doctors to manage their availability across multiple studios)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 use Illuminate\Support\Collection;
 use Modules\SaluteOra\Models\User;
 use Filament\Forms\Components\Grid;
@@ -30,6 +33,9 @@ use Illuminate\Support\Facades\Log;
 use Filament\Forms\Components\Group;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 use Modules\SaluteOra\Models\Doctor;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Columns\IconColumn;
@@ -661,7 +667,7 @@ class DoctorAvailabilitiesWidget extends XotBaseWidget implements HasActions
        
         /** @var User $doctor */
         $doctor = auth()->user();
-        
+        Assert::isInstanceOf($doctor, Doctor::class);        
         // Recupera tutti gli studi con schedule dal pivot
         // con eager loading per evitare query N+1
         $studiosWithSchedules = $doctor->studios()
@@ -731,7 +737,7 @@ class DoctorAvailabilitiesWidget extends XotBaseWidget implements HasActions
     protected function getTotalConfiguredStudios(): int
     {
         $data = $this->getViewData();
-        
+        /** @phpstan-ignore-next-line */        
         return $data['studios_schedules']->filter(function ($studioData) {
             return !empty($studioData['schedule']);
         })->count();
@@ -746,9 +752,11 @@ class DoctorAvailabilitiesWidget extends XotBaseWidget implements HasActions
     {
         $data = $this->getViewData();
         $studiosSchedules = $data['studios_schedules'];
-        
+        /** @phpstan-ignore-next-line */
         $totalStudios = $studiosSchedules->count();
+        /** @phpstan-ignore-next-line */
         $configuredStudios = $studiosSchedules->filter(fn($studio) => !empty($studio['schedule']))->count();
+        /** @phpstan-ignore-next-line */
         $primaryStudio = $studiosSchedules->firstWhere('is_primary', true);
         
         return [
@@ -847,7 +855,7 @@ class DoctorAvailabilitiesWidget extends XotBaseWidget implements HasActions
                 $studioUser = StudioUser::find($studioUserId);
                 
                 return [
-                    'schedule' => $studioUser?->schedule ?? [],
+                    'schedule' => $studioUser->schedule ?? [],
                 ];
             })
             ->action(function (array $data, array $arguments): void {
@@ -863,8 +871,9 @@ class DoctorAvailabilitiesWidget extends XotBaseWidget implements HasActions
                 }
 
                 try {
-                    $studioUser = StudioUser::findOrFail($studioUserId);
-                    $studioUser->update(['schedule' => $data['schedule']]);
+                    $studioUser = StudioUser::firstWhere('id', $studioUserId);
+
+                    $studioUser?->update(['schedule' => $data['schedule']]);
 
                     Notification::make()
                         ->title(__('saluteora::doctor_availability.notifications.saved.title'))
@@ -1132,7 +1141,7 @@ class DoctorAvailabilitiesWidget extends XotBaseWidget implements HasActions
      */
     public function studioForm(int $studioId): Form
     {
-        return Form::make()
+        return Form::make($this)
             ->schema([
                 OpeningHoursField::make('schedule')
                     ->default($this->getStudioSchedule($studioId))
@@ -1160,7 +1169,7 @@ class DoctorAvailabilitiesWidget extends XotBaseWidget implements HasActions
             ->where('studio_id', $studioId)
             ->first();
             
-        return $studioUser?->schedule ?? [];
+        return $studioUser->schedule ?? [];
     }
 
     /**

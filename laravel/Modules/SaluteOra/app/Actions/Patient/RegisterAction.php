@@ -8,9 +8,12 @@ namespace Modules\SaluteOra\Actions\Patient;
 <<<<<<< HEAD
 use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
+<<<<<<< HEAD
 =======
 use Illuminate\Support\Str;
 >>>>>>> 86a4d226 (✨ (patient.php): add new localization keys for reorderRecords, resetFilters, and openFilters to enhance user interface)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Modules\SaluteOra\Models\Patient;
@@ -63,6 +66,7 @@ class RegisterAction
             if(isset($data['studio'])){
                 unset($data['studio']);
             }
+<<<<<<< HEAD
 <<<<<<< HEAD
             if(!isset($data['name']) && isset($data['email']) && is_string($data['email'])){
                 $data['name']=Str::of($data['email'])->before('@')->append('-')->append(Str::random(3))->toString();
@@ -144,6 +148,9 @@ class RegisterAction
             }
 =======
             if(!isset($data['name']) && isset($data['email'])){
+=======
+            if(!isset($data['name']) && isset($data['email']) && is_string($data['email'])){
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
                 $data['name']=Str::of($data['email'])->before('@')->append('-')->append(Str::random(3))->toString();
             }
 >>>>>>> 9fa97684 (✨ (appointment states): add complete standardization for appointment states to ensure consistency and improve maintainability)
@@ -172,7 +179,9 @@ class RegisterAction
             $patient->update($data_attachments);
             //*/
             //-------------------------------------------------
-
+            if(!method_exists($patient,'consents')){
+                throw new \Exception('Method consents not found');
+            }
             // Gestione delle preferenze
             if (isset($data['privacy_acceptance'])) {
                 $patient->consents()->create([
@@ -192,14 +201,14 @@ class RegisterAction
             /** @phpstan-ignore-next-line */
             $mail_slug=Str::of($data['type'])->append('-')->append($data['state'])->slug()->toString();
            //$mail_slug=Str::of($patient->type->value)->append('-')->append($patient->state::$name)->slug()->toString();
+            //Assert::isInstanceOf($patient,Patient::class);
             
-            
-            
+            //** @phpstan-ignore-next-line */
             $notify=new RecordNotification($patient,$mail_slug);
             Notification::route('mail', $data['email'])
             //->locale('it')
             ->notify($notify);
-
+            //** @phpstan-ignore-next-line */
             return $patient;
 <<<<<<< HEAD
         });

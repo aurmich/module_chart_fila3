@@ -134,6 +134,7 @@ class StudioUser extends BasePivot
     }
 
 
+<<<<<<< HEAD
 =======
     /**
      * Ottiene il dottore associato a questa relazione.
@@ -189,4 +190,6 @@ class StudioUser extends BasePivot
 =======
 
 >>>>>>> 16ac401c (📝 (doctor-availabilities-widget): remove outdated documentation and files related to the DoctorAvailabilitiesWidget to streamline the codebase and improve maintainability.)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 }

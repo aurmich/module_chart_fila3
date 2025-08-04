@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 /**
@@ -68,6 +69,9 @@ class Isee extends BaseModel
     
 =======
 use Modules\Tenant\Traits\BelongsToTenant;
+=======
+
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 
 /**
  * Modello Isee per la gestione dei dati relativi all'ISEE delle pazienti.
@@ -123,8 +127,12 @@ use Modules\Tenant\Traits\BelongsToTenant;
  */
 class Isee extends BaseModel
 {
+<<<<<<< HEAD
     use HasFactory, SoftDeletes, BelongsToTenant;
 >>>>>>> 54f4fa16 (.)
+=======
+    
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 
     /**
      * Gli attributi che sono mass assignable.

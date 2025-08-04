@@ -15,6 +15,7 @@ use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasLabel;
 use Filament\Resources\Pages\ListRecords;
+<<<<<<< HEAD
 =======
 use Filament\Resources\Pages\ListRecords;
 =======
@@ -40,6 +41,8 @@ use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasLabel;
 >>>>>>> 598d3378 (test)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 
 enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
 {
@@ -182,6 +185,7 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
 =======
         $columns = $this->isGridLayout()
             ? $caller->getGridTableColumns()
+            /** @phpstan-ignore-next-line */
             : $caller->getTableColumns();
 >>>>>>> 6581c95e (♻️ (ListActivities.php, ListStoredEvents.php, LogoutListener.php): refactor code to improve readability and maintainability by removing unused imports and comments)
 =======

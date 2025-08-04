@@ -9,11 +9,14 @@ use Illuminate\Support\Collection;
 <<<<<<< HEAD
 use function Safe\file_get_contents;
 use function Safe\json_decode;
+<<<<<<< HEAD
 =======
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
 =======
 use function Safe\file_get_contents;
 >>>>>>> 345f8677 (phpstan)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 
 /**
  * Base model readonly per dati geografici statici (ispirato a Squire).
@@ -43,11 +46,17 @@ abstract class GeoJsonModel
         $cacheKey = 'geo_comuni_json_' . md5($path);
         $data = cache()->rememberForever($cacheKey, fn() => json_decode(file_get_contents($path), true));
 <<<<<<< HEAD
+<<<<<<< HEAD
         /**
          * @phpstan-ignore argument.type, argument.templateType, argument.templateType
          */
 =======
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+        /**
+         * @phpstan-ignore-next-line
+         */
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         return collect($data);
     }
 
@@ -62,19 +71,27 @@ abstract class GeoJsonModel
     /**
      * Filtra la collection per chiave/valore.
 <<<<<<< HEAD
+<<<<<<< HEAD
      * 
      * @phpstan-ignore missingType.parameter, missingType.generics
+=======
+     * 
+     * @phpstan-ignore-next-line
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      */
     public static function where(string $key, $value): Collection
     {
         /**
          * @phpstan-ignore-next-line
          */
+<<<<<<< HEAD
 =======
      */
     public static function where(string $key, $value): Collection
     {
 >>>>>>> bdbf5ed5 (feat(geo-module): introduce Geo module for managing geographical data using JSON files instead of database tables)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         return static::all()->where($key, $value);
     }
 }

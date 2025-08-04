@@ -10,9 +10,13 @@ use Filament\Forms\Set;
 use Filament\Forms\Components\Component;
 use Modules\Geo\Filament\Resources\AddressResource;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use function Safe\preg_match;
 =======
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+use function Safe\preg_match;
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 
 /**
  * Componente riutilizzabile per la gestione di indirizzi multipli.
@@ -59,9 +63,13 @@ class AddressesField extends Forms\Components\Repeater
             ->visible(function (Get $get): bool {
                 $addresses = $get('../../addresses') ?? [];
 <<<<<<< HEAD
+<<<<<<< HEAD
                 /** @phpstan-ignore argument.type */
 =======
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+                /** @phpstan-ignore-next-line */
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
                 return count($addresses) > 1;
             })
             ->live();
@@ -71,18 +79,26 @@ class AddressesField extends Forms\Components\Repeater
             ->visible(function (Get $get): bool {
                 $addresses = $get('../../addresses') ?? [];
 <<<<<<< HEAD
+<<<<<<< HEAD
                 /** @phpstan-ignore argument.type */
 =======
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+                /** @phpstan-ignore-next-line */
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
                 return count($addresses) > 1;
             })
             ->default(function (Get $get): bool {
                 $addresses = $get('../../addresses') ?? [];
                 // Se è il primo elemento o c'è un solo elemento, default true
 <<<<<<< HEAD
+<<<<<<< HEAD
                 /** @phpstan-ignore argument.type */
 =======
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+                /** @phpstan-ignore-next-line */
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
                 return count($addresses) <= 1;
             })
             ->afterStateUpdated(function ($state, $set, Get $get, Component $component): void {
@@ -98,6 +114,7 @@ class AddressesField extends Forms\Components\Repeater
                     if ($currentIndex !== null) {
                         // Disattiva is_primary negli altri elementi
 <<<<<<< HEAD
+<<<<<<< HEAD
                         /** @phpstan-ignore foreach.nonIterable */
                         foreach ($addresses as $index => $address) {
                             $indexStr = app(\Modules\Xot\Actions\Cast\SafeStringCastAction::class)->execute($index);
@@ -105,8 +122,12 @@ class AddressesField extends Forms\Components\Repeater
                             if ($indexStr !== $currentIndexStr) {
                                 $set("../../addresses." . $indexStr . ".is_primary", false);
 =======
+=======
+                        /** @phpstan-ignore-next-line */
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
                         foreach ($addresses as $index => $address) {
                             if ((string)$index !== (string)$currentIndex) {
+                                /** @phpstan-ignore-next-line */
                                 $set("../../addresses.{$index}.is_primary", false);
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
                             }
@@ -119,9 +140,13 @@ class AddressesField extends Forms\Components\Repeater
                 $addresses = $get('../../addresses') ?? [];
                 // Se c'è un solo elemento, forza sempre true
 <<<<<<< HEAD
+<<<<<<< HEAD
                 /** @phpstan-ignore argument.type */
 =======
 >>>>>>> 423f7d03 (✨ (AddressesField): introduce reusable AddressesField component for managing multiple addresses, improving code maintainability and reducing duplication across resources)
+=======
+                /** @phpstan-ignore-next-line */
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
                 if (count($addresses) <= 1) {
                     return true;
                 }

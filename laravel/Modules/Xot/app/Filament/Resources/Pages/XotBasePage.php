@@ -8,6 +8,9 @@ namespace Modules\Xot\Filament\Resources\Pages;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 use Closure;
 use Filament\Forms\Form;
 use Illuminate\Support\Str;
@@ -99,6 +102,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static ?string $model = null;
 =======
     protected static ?string $model = null;
@@ -109,6 +113,9 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 =======
     protected static ?string $model = null;
 >>>>>>> d23ba493 (add calendar)
+=======
+    public static ?string $model = null;
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 
     /**
      * The form data.
@@ -117,6 +124,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      */
     public ?array $data = [];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -138,6 +146,9 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
 >>>>>>> d23ba493 (add calendar)
+=======
+    
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     /**
      * Get the view that should be used for the page.
      */
@@ -158,6 +169,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ->toString()
 =======
 >>>>>>> aurmich/dev
@@ -165,6 +177,9 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
 >>>>>>> d23ba493 (add calendar)
+=======
+                ->toString()
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
             );
 
         return $view->toString();
@@ -248,8 +263,12 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
      *
+<<<<<<< HEAD
      * @return array<string, Component|array<string, Component>>
 >>>>>>> d23ba493 (add calendar)
+=======
+     * @return array<string, Component>
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      */
     protected function getFormSchema(): array
     {
@@ -264,6 +283,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @phpstan-ignore property.staticAccess */
 =======
 >>>>>>> aurmich/dev
@@ -271,6 +291,9 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
 >>>>>>> d23ba493 (add calendar)
+=======
+        /** @phpstan-ignore-next-line */
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         return static::$model;
     }
 
@@ -284,6 +307,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
         return collect();
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -305,11 +329,17 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      * Hook chiamato all'inizializzazione del componente.
      */
 >>>>>>> d23ba493 (add calendar)
+=======
+    /*
+     * Hook chiamato all'inizializzazione del componente.
+     
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     public function mount(int|string $record): void
     {
         parent::mount($record);
         $this->form->fill($this->data ?? []);
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -323,6 +353,9 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 =======
 
 >>>>>>> d23ba493 (add calendar)
+=======
+    */
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     /**
      * Get the view data for the page.
      *

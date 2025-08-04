@@ -82,8 +82,8 @@ abstract class BaseTransition extends Transition
         $notify = $notify->mergeData($data);
         
         // Notifica al paziente
-        if ($this->appointment->patient && $this->appointment->patient?->email) {
-            Notification::route('mail', $this->appointment->patient?->email)
+        if ($this->appointment->patient && $this->appointment->patient->email) {
+            Notification::route('mail', $this->appointment->patient->email)
                 ->notify($notify);
         }
         
@@ -98,6 +98,7 @@ abstract class BaseTransition extends Transition
     {
         return [
             'message' => $this->message,
+<<<<<<< HEAD
             'appointment_date' => $this->appointment->start_time->format('d/m/Y H:i'),
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -109,6 +110,10 @@ abstract class BaseTransition extends Transition
 =======
             'patient_name' => $this->appointment->patient?->name ?? 'N/A',
 >>>>>>> 2f119323 (cartd)
+=======
+            'appointment_date' => $this->appointment->start_time->format('d/m/Y H:i') ?? 'N/A',
+            'patient_name' => $this->appointment->patient->name ?? 'N/A',
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
             'doctor_name' => $this->appointment->doctor->name ?? 'N/A',
 >>>>>>> 5a682a93 (✨ (Chart.php, DoctorsRelationManager.php, ListUsers.php, CreateAppointmentAction.php, RegisterAction.php, UpdateUserAction.php, AnalyzePatientDataCommand.php, AppointmentTypeEnum.php, DentistSpecializationEnum.php, DoctorRegistrationStatusEnum.php, UserStateEnum.php, AdminCalendarWidget.php, PatientCalendarWidget.php, PatientRegistrationWizard.php, ReportingChartAssets.php, ReportDataFactory.php, ReportFactory.php, CreateAppointmentAction.php, UserModerationService.php): introduce new features and improvements including type definitions, validation, and new models for better data handling and reporting.)
         ];

@@ -64,6 +64,7 @@ class GetViewByClassAction
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         
         /** @var view-string $viewName */
 =======
@@ -72,6 +73,10 @@ class GetViewByClassAction
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 =======
 >>>>>>> d23ba493 (add calendar)
+=======
+        
+        /** @var view-string $viewName */
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         return view($viewName, $params);
     }
 

@@ -6,6 +6,9 @@ namespace Modules\Geo\Models\Traits;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 use Webmozart\Assert\Assert;
 use Modules\Geo\Models\Address;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
@@ -68,15 +71,21 @@ trait HasAddress
     public function primaryAddress(): ?Address
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         $res= $this->addresses()->where('is_primary', true)->first();
         if($res==null){
             return $res;
         }
         Assert::isInstanceOf($res, Address::class);
         return $res;
+<<<<<<< HEAD
 =======
         return $this->addresses()->where('is_primary', true)->first();
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     }
     
     /**
@@ -103,15 +112,23 @@ trait HasAddress
             return null;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @phpstan-ignore method.notFound */
 =======
 >>>>>>> 23f43388 (feat: add openingHoursField to studiorelationmanager of doctorresource)
+=======
+        /** @phpstan-ignore-next-line */
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         $locality=$address->getLocality();
         if($locality==null){
             return null;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @phpstan-ignore property.notFound, property.notFound */
+=======
+        /** @phpstan-ignore-next-line */
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         return $address->street_address.' '.$address->street_number.' '.implode('',$locality['cap']).' '.$locality['nome'].' ('.$locality['provincia']['nome'].') - '.$locality['regione']['nome'];
 =======
         return $address ? $address->getFormattedAddress() : null;
@@ -232,10 +249,14 @@ trait HasAddress
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @phpstan-ignore return.type */
 =======
         
 >>>>>>> 843a9cc6 (✨ (Geo Module): add Address model and related migrations for managing)
+=======
+        /** @phpstan-ignore-next-line */
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         return $this->addresses()->create($data);
     }
     

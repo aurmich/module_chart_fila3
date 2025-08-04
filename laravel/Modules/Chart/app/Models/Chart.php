@@ -105,6 +105,7 @@ class Chart extends BaseModel
     ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @var  array<string, mixed>   */
 =======
     /**
@@ -113,6 +114,9 @@ class Chart extends BaseModel
      * @var array
      */
 >>>>>>> 54f4fa16 (.)
+=======
+    /** @var  array<string, mixed>   */
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     protected $attributes = [
         'list_color' => '#d60021',
         'color' => '#d60021',
@@ -306,6 +310,7 @@ class Chart extends BaseModel
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $res = $this->attributes['type'] ?? (string) $this->getPanelRow('chart_type', 'type');
         Assert::string($res);
         return $res;
@@ -324,6 +329,11 @@ class Chart extends BaseModel
 =======
         return $this->attributes['type'] ?? (string) $this->getPanelRow('chart_type', 'type');
 >>>>>>> c283a5df (✨ (SaluteOra): introduce new features including user moderation, report generation, and patient registration wizard)
+=======
+        $res= $this->attributes['type'] ?? (string) $this->getPanelRow('chart_type', 'type');
+        Assert::string($res);
+        return $res;
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     }
 
     public function getWidthAttribute(?string $value): ?int

@@ -53,7 +53,6 @@ class AddressFactory extends Factory
         /** @var string $cityName */
 >>>>>>> 345f8677 (phpstan)
         $cityName = $this->faker->randomElement(array_keys($italianCities));
-        /** @var array<string, mixed> $cityData */
         $cityData = $italianCities[$cityName];
         
         // Aggiungi variazione alle coordinate (±0.05 gradi per simulare diversi indirizzi nella stessa città)
@@ -71,9 +70,9 @@ class AddressFactory extends Factory
 >>>>>>> f3e4ec66 (.)
 =======
         /** @var float $lat */
-        $lat = $cityData['lat'];
+        $lat = (float) $cityData['lat'];
         /** @var float $lng */
-        $lng = $cityData['lng'];
+        $lng = (float) $cityData['lng'];
         $latitude = $lat + $this->faker->randomFloat(4, -0.05, 0.05);
         $longitude = $lng + $this->faker->randomFloat(4, -0.05, 0.05);
 >>>>>>> 345f8677 (phpstan)
@@ -102,10 +101,14 @@ class AddressFactory extends Factory
             'postal_code' => $this->faker->randomElement([
                 $cityData['postal'],
 <<<<<<< HEAD
+<<<<<<< HEAD
                 substr((string) $cityData['postal'], 0, 3) . $this->faker->numberBetween(10, 99),
 =======
                 substr($cityData['postal'], 0, 3) . $this->faker->numberBetween(10, 99),
 >>>>>>> f3e4ec66 (.)
+=======
+                substr((string) $cityData['postal'], 0, 3) . $this->faker->numberBetween(10, 99),
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
             ]),
             'formatted_address' => "{$route} {$streetNumber}, {$cityData['postal']} {$cityName} ({$cityData['province']}), Italia",
             'place_id' => $this->faker->optional(0.8)->regexify('ChIJ[A-Za-z0-9_-]{20,30}'),
@@ -115,10 +118,14 @@ class AddressFactory extends Factory
             'is_primary' => $this->faker->boolean(30), // 30% probabilità di essere primario
             'extra_data' => $this->faker->optional(0.4)->randomElements([
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'provincia_sigla' => substr((string) $cityData['province'], 0, 2),
 =======
                 'provincia_sigla' => substr($cityData['province'], 0, 2),
 >>>>>>> f3e4ec66 (.)
+=======
+                'provincia_sigla' => substr((string) $cityData['province'], 0, 2),
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
                 'google_rating' => $this->faker->randomFloat(1, 3.0, 5.0),
                 'google_reviews_count' => $this->faker->numberBetween(10, 500),
                 'verified' => $this->faker->boolean(80),
@@ -226,6 +233,7 @@ class AddressFactory extends Factory
 
         return $this->state(function (array $attributes) use ($city, $cityInfo) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             /** @var float $baseLat */
             $baseLat = is_numeric($cityInfo['lat'] ?? null) ? (float) $cityInfo['lat'] : 45.4642;
             /** @var float $baseLng */
@@ -237,10 +245,20 @@ class AddressFactory extends Factory
             $latitude = $cityInfo['lat'] + $this->faker->randomFloat(4, -0.05, 0.05);
             $longitude = $cityInfo['lng'] + $this->faker->randomFloat(4, -0.05, 0.05);
 >>>>>>> f3e4ec66 (.)
+=======
+            /** @var float $baseLat */
+            $baseLat = (float) ($cityInfo['lat'] ?? 45.4642);
+            /** @var float $baseLng */
+            $baseLng = (float) ($cityInfo['lng'] ?? 9.1900);
+            
+            $latitude = $baseLat + $this->faker->randomFloat(4, -0.05, 0.05);
+            $longitude = $baseLng + $this->faker->randomFloat(4, -0.05, 0.05);
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
             $streetName = $this->faker->streetName();
             $streetNumber = $this->faker->buildingNumber();
             $route = "Via {$streetName}";
 
+<<<<<<< HEAD
 <<<<<<< HEAD
             /** @var string $postal */
             $postal = is_string($cityInfo['postal'] ?? null) ? $cityInfo['postal'] : '20100';
@@ -261,15 +279,33 @@ class AddressFactory extends Factory
                 'administrative_area_level_2' => $cityInfo['region'],
                 'postal_code' => $cityInfo['postal'],
 >>>>>>> f3e4ec66 (.)
+=======
+            /** @var string $postal */
+            $postal = (string) ($cityInfo['postal'] ?? '20100');
+            /** @var string $province */
+            $province = (string) ($cityInfo['province'] ?? $city);
+            /** @var string $region */
+            $region = (string) ($cityInfo['region'] ?? 'Lombardia');
+
+            return [
+                'locality' => $city,
+                'administrative_area_level_3' => $province,
+                'administrative_area_level_2' => $region,
+                'postal_code' => $postal,
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
                 'latitude' => $latitude,
                 'longitude' => $longitude,
                 'route' => $route,
                 'street_number' => $streetNumber,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'formatted_address' => "{$route} {$streetNumber}, {$postal} {$city} ({$province}), Italia",
 =======
                 'formatted_address' => "{$route} {$streetNumber}, {$cityInfo['postal']} {$city} ({$cityInfo['province']}), Italia",
 >>>>>>> f3e4ec66 (.)
+=======
+                'formatted_address' => "{$route} {$streetNumber}, {$postal} {$city} ({$province}), Italia",
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
             ];
         });
     }

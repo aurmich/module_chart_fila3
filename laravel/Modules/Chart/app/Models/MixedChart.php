@@ -72,11 +72,17 @@ class MixedChart extends BaseModel
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         /**
          * @phpstan-ignore argument.type
          */
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+        /**
+         * @phpstan-ignore-next-line
+         */
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         Relation::morphMap([
             'question_chart' => 'Modules\Quaeris\Models\QuestionChart',
 =======

@@ -9,10 +9,15 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\DB;
 use Modules\Geo\Models\Comune;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use function Safe\json_decode;
 use function Safe\json_encode;
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+use function Safe\json_decode;
+use function Safe\json_encode;
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
 
 class SushiCommand extends Command
 {
@@ -42,15 +47,22 @@ class SushiCommand extends Command
             'clear' => $this->clear(),
             'status' => $this->status(),
 <<<<<<< HEAD
+<<<<<<< HEAD
             default => $this->handleUnknownAction(),
 =======
             default => $this->error('Azione non valida'),
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+            default => $this->handleUnknownAction(),
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         };
     }
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      * Gestisce azioni sconosciute.
      */
     protected function handleUnknownAction(): int
@@ -60,8 +72,11 @@ class SushiCommand extends Command
     }
 
     /**
+<<<<<<< HEAD
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      * Aggiorna il database SQLite di Sushi
      */
     protected function refresh(): int
@@ -76,6 +91,7 @@ class SushiCommand extends Command
                 return 1;
             }
             
+<<<<<<< HEAD
 <<<<<<< HEAD
             // Uso Safe\json_decode per evitare false return
             /** @var mixed $rawData */
@@ -123,16 +139,44 @@ class SushiCommand extends Command
                     'updated_at' => $validComune['updated_at'] ?? now(),
 =======
             $data = json_decode(File::get($path), true);
+=======
+            // Uso Safe\json_decode per evitare false return
+            /** @var mixed $rawData */
+            $rawData = json_decode(File::get($path), true);
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
             
-            if (json_last_error() !== JSON_ERROR_NONE) {
-                $this->error('Errore nel parsing del file JSON: ' . json_last_error_msg());
+            // Validazione tipo per evitare foreach su mixed
+            if (!is_array($rawData)) {
+                $this->error('Il file JSON non contiene un array valido');
                 return 1;
             }
+            
+            /** @var array<int, mixed> $data */
+            $data = $rawData;
             
             DB::table('comuni')->truncate();
             
             foreach ($data as $comune) {
+                // Type guard per ogni elemento del foreach
+                if (!is_array($comune)) {
+                    $this->warn('Elemento non valido saltato: ' . gettype($comune));
+                    continue;
+                }
+                
+                /** @var array<mixed, mixed> $arrayComune */
+                $arrayComune = $comune;
+                
+                // Validazione sicura degli offset con type guards
+                if (!$this->isValidComuneData($arrayComune)) {
+                    $this->warn('Dati comune non validi saltati: ' . json_encode($arrayComune));
+                    continue;
+                }
+                
+                /** @var array<string, mixed> $validComune */
+                $validComune = $arrayComune;
+                
                 DB::table('comuni')->insert([
+<<<<<<< HEAD
                     'id' => $comune['id'],
                     'regione' => $comune['regione'],
                     'provincia' => $comune['provincia'],
@@ -143,6 +187,17 @@ class SushiCommand extends Command
                     'created_at' => $comune['created_at'] ?? now(),
                     'updated_at' => $comune['updated_at'] ?? now(),
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+                    'id' => $validComune['id'],
+                    'regione' => (string) $validComune['regione'],
+                    'provincia' => (string) $validComune['provincia'],
+                    'comune' => (string) $validComune['comune'],
+                    'cap' => (string) $validComune['cap'],
+                    'lat' => (float) $validComune['lat'],
+                    'lng' => (float) $validComune['lng'],
+                    'created_at' => $validComune['created_at'] ?? now(),
+                    'updated_at' => $validComune['updated_at'] ?? now(),
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
                 ]);
             }
             
@@ -156,6 +211,9 @@ class SushiCommand extends Command
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      * Valida i dati di un comune.
      * 
      * @param array<mixed, mixed> $comune
@@ -175,8 +233,11 @@ class SushiCommand extends Command
     }
 
     /**
+<<<<<<< HEAD
 =======
 >>>>>>> 01fbabcb (docs(README.md): update README with initial content and add a placeholder for future development)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
      * Pulisce il database SQLite di Sushi
      */
     protected function clear(): int

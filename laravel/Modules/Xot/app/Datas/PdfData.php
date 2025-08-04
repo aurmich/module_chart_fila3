@@ -99,11 +99,15 @@ class PdfData extends Data
                 break;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 /*
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+                /*
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
             case PdfEngineEnum::SPATIE:
                 Pdf::html($this->html)
                 ->orientation(Orientation::Portrait)
@@ -112,6 +116,7 @@ class PdfData extends Data
                 // ->name(str_slug($project->nome).'-REPORT.pdf')
                 ->save($this->getPath());
                 ;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 
@@ -123,6 +128,11 @@ class PdfData extends Data
 =======
                 break;
 >>>>>>> 54f4fa16 (.)
+=======
+                
+                break;
+                */
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         }
 
 
@@ -162,6 +172,7 @@ class PdfData extends Data
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if(!view()->exists($view)){
             throw new \Exception('View '.$view.' not found');
         }
@@ -169,6 +180,11 @@ class PdfData extends Data
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+        if(!view()->exists($view)){
+            throw new \Exception('View '.$view.' not found');
+        }
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         $out = view($view, $params);
         $this->html = $out->render();
         return $this->fromHtml($this->html);

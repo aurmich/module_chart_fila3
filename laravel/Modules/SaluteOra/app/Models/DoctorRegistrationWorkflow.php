@@ -6,7 +6,6 @@ namespace Modules\SaluteOra\Models;
 
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Modules\Tenant\Traits\BelongsToTenant;
 use Illuminate\Support\Str;
 
 <<<<<<< HEAD
@@ -85,7 +84,7 @@ use Illuminate\Support\Str;
  */
 class DoctorRegistrationWorkflow extends BaseModel
 {
-    use SoftDeletes, BelongsToTenant;
+    
 
 =======
 class DoctorRegistrationWorkflow extends BaseModel

@@ -50,12 +50,15 @@ use Illuminate\Support\Arr;
 >>>>>>> 80d49f8f (feat: add login_url, site_url, logo_header to spatieEmail)
 use Livewire\Attributes\On;
 use Filament\Actions\Action;
+use Webmozart\Assert\Assert;
+use Spatie\ModelStates\State;
 use Filament\Facades\Filament;
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Facades\Cache;
 use Filament\Support\Enums\ActionSize;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
+use Modules\Xot\Contracts\StateContract;
 use Modules\SaluteOra\Enums\UserTypeEnum;
 use Modules\SaluteOra\Models\Appointment;
 use Filament\Actions\Contracts\HasActions;
@@ -220,7 +223,7 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
 
         $cacheKey = $this->getCacheKey();
         
-        
+        /** @phpstan-ignore-next-line */        
         $this->appointments = Cache::remember($cacheKey, 300, function ()  {
             return Appointment::query()
                 ->with(['patient', 'doctor', 'studio'])
@@ -530,18 +533,11 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
    {
     $appointment = new Appointment(); // senza salvarlo nel db
     $state = new $stateClass($appointment);
-    //canTransitionTo
-    /*
-    dddx([
-        'transitionableStates'=>$state->transitionableStates(),
-        'get_class_methods'=>get_class_methods($state),
-        //'a'=>Appointment::resolveStateClass('state', 'pending'),
-        'b'=>AppointmentState::getStateMapping()->get($this->state),
-    ]);
-    */
+    //Assert::isInstanceOf($state,StateContract::class);
+    Assert::implementsInterface($state,StateContract::class);
     $startStateClass=AppointmentState::getStateMapping()->get($this->state);
     $startState=new $startStateClass($appointment);
-    //dddx();
+    Assert::isInstanceOf($startState,State::class);
     
     
    
@@ -564,7 +560,7 @@ class DoctorAppointmentsWidget extends XotBaseWidget implements HasActions
             $message=Arr::get($data,'message');
             $appointmentId = $arguments['appointment'];
             $appointment = Appointment::firstWhere('id',$appointmentId);
-            $appointment->state->transitionTo($stateClass,$message);
+            $appointment?->state->transitionTo($stateClass,$message);
             // Per ora implementazione di debug
             //$this->dispatch('notify', [
             //    'type' => 'info',

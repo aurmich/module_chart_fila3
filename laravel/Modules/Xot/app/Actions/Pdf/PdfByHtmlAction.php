@@ -18,6 +18,9 @@ class PdfByHtmlAction
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     /**
      * Genera un PDF dall'HTML fornito.
      *
@@ -29,10 +32,13 @@ class PdfByHtmlAction
      * @param PdfEngineEnum $engine Engine da utilizzare
      * @return string|BinaryFileResponse
      */
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     public function execute(
         string $html,
         string $filename = 'my_doc.pdf',
@@ -43,6 +49,9 @@ class PdfByHtmlAction
     ): string|BinaryFileResponse {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
         $data = PdfData::from([
             'html' => $html,
             'filename' => $filename,
@@ -61,6 +70,7 @@ class PdfByHtmlAction
             'path' => $data->getPath(),
             default => $data->getPath(),
         };
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 54f4fa16 (.)
@@ -76,5 +86,7 @@ class PdfByHtmlAction
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 568ade8b (✨ (DbForge): add new DbForge module with various console commands and controllers to enhance database management capabilities. This module includes commands for generating models, importing data, and managing database schemas, providing a comprehensive toolkit for developers.)
     }
 }
