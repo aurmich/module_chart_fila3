@@ -65,6 +65,7 @@ $isDoctor  = $user && $user->type == UserTypeEnum::DOCTOR ? true:false;
         <x-slot name="trigger">
             <x-filament::button
 <<<<<<< HEAD
+<<<<<<< HEAD
                 color="white"
                 style="border-radius: 70px; background-color: transparent !important; border: 1px solid white"
                 icon="heroicon-o-user"
@@ -79,6 +80,15 @@ $isDoctor  = $user && $user->type == UserTypeEnum::DOCTOR ? true:false;
                 aria-label="{{ __('ui::navigation.user_menu') }}"
             />
 >>>>>>> 54f4fa16 (.)
+=======
+                color="white"
+                style="border-radius: 70px"
+                icon="heroicon-o-user"
+                :label="$user?->name"
+                aria-label="{{ __('ui::navigation.user_menu') }}">
+                <span class="hidden sm:inline">{{$user?->name}}</span>
+        </x-filament::button>
+>>>>>>> 58d017c2 (- aggiornato stile dettaglio paziente)
         </x-slot>
         <x-filament::dropdown.list>
         {{-- Menu Items --}}

@@ -44,7 +44,7 @@
     <!-- @if($icon)
         <x-filament::icon :name="$icon" :class="$size" class="text-primary-600 dark:text-primary-400" />
     @elseif($src) -->
-        <img class="h-12" src="/img/logo.png"/>
+        <img class="h-8 lg:h-12" src="/img/logo.png"/>
     @endif
 
     <!-- @if($title || $description)
@@ -57,6 +57,5 @@
             @endif
         </div>
     @endif -->
-    <!-- <img src="saluteOra-new-logo.png"> -->
 </div>
 >>>>>>> 54f4fa16 (.)

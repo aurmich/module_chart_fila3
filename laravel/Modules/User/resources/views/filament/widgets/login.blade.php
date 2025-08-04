@@ -29,8 +29,12 @@
 =======
     <form wire:submit.prevent="save" class="space-y-4">
         {{ $this->form }}
+<<<<<<< HEAD
         <button type="submit" class="w-full py-3 rounded bg-blue-600 text-white font-bold hover:bg-blue-700 transition">{{ __('Accedi') }}</button>
 >>>>>>> 54f4fa16 (.)
+=======
+        <button type="submit" class="w-full py-3 rounded bg-[#0D9488] text-white font-bold transition">{{ __('Accedi') }}</button>
+>>>>>>> 58d017c2 (- aggiornato stile dettaglio paziente)
     </form>
     <div class="text-center text-sm text-gray-500 mt-2">
         @if (Route::has('password.request'))

@@ -116,6 +116,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <body class="min-h-screen flex flex-col bg-[#E6EBF7]">
 =======
     <body class="min-h-screen antialiased bg-white dark:bg-gradient-to-b dark:from-gray-950 dark:to-gray-900">
@@ -189,6 +190,9 @@
 >>>>>>> 15cb84fb (fix collisions)
 =======
     <body class="min-h-screen antialiased bg-white dark:bg-gradient-to-b dark:from-gray-950 dark:to-gray-900">
+=======
+    <body class="antialiased bg-white dark:bg-gradient-to-b dark:from-gray-950 dark:to-gray-900">
+>>>>>>> 58d017c2 (- aggiornato stile dettaglio paziente)
         {{ $slot }}
         {{--
 >>>>>>> d23ba493 (add calendar)

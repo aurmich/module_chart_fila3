@@ -22,6 +22,7 @@ return [
     'nome_comune' => '',
     'site_title' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'logo_img' => '/img/logo.svg',
     'logo_square' => 'saluteora::images/logo.svg',
     'logo_footer_img' => 'saluteora::images/logo.svg',
@@ -35,6 +36,9 @@ return [
 >>>>>>> aurmich/dev
 =======
     'logo_img' => 'saluteora::images/logo.svg',
+=======
+    'logo_img' => '/img/logo.svg',
+>>>>>>> 58d017c2 (- aggiornato stile dettaglio paziente)
     'logo_square' => 'saluteora::images/logo.svg',
     'logo_footer_img' => 'saluteora::images/logo.svg',
     'logo_alt' => 'Logo',

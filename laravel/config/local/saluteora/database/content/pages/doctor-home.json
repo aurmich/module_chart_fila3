@@ -20,6 +20,7 @@
                 "type": "hero",
                 "data": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "view": "pub_theme::components.blocks.hero.dettaglio-dottore",
                     "title": "Benvenuto nella tua Area Dottore",
                     "subtitle": "Gestisci le tue pazienti e monitora i loro percorsi di salute orale",
@@ -70,6 +71,9 @@
                     "widget":  "Modules\\SaluteOra\\Filament\\Widgets\\DoctorAvailabilitiesWidget"
 =======
                     "view": "pub_theme::components.blocks.hero.simple2",
+=======
+                    "view": "pub_theme::components.blocks.hero.dettaglio-dottore",
+>>>>>>> 58d017c2 (- aggiornato stile dettaglio paziente)
                     "title": "Benvenuto nella tua Area Dottore",
                     "subtitle": "Gestisci le tue pazienti e monitora i loro percorsi di salute orale",
                     "image": "/img/odontoiatra.jpg",
