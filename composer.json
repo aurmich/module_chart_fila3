@@ -263,6 +263,7 @@
     },
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 =======
             "cd laravel && composer install --no-dev --optimize-autoloader"
 =======
@@ -281,6 +282,8 @@
     },
 <<<<<<< HEAD
 >>>>>>> 4171c7dc (chore: remove unused DentistData and SearchDentistData classes to clean up the codebase)
+=======
+>>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
     "repositories": [
         {
             "type": "path",
@@ -288,6 +291,9 @@
         }
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
 >>>>>>> 631510b4 (fix bashscripts structure + translation of module saluteMo)
     "minimum-stability": "dev",
     "prefer-stable": true

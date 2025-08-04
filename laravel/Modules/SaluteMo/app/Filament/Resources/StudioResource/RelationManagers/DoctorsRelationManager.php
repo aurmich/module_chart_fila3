@@ -8,12 +8,18 @@ use Filament\Forms;
 use Filament\Tables;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
+<<<<<<< HEAD
 use Filament\Tables\Actions\Action;
 use Modules\SaluteOra\Models\Doctor;
 use Filament\Tables\Columns\IconColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\SaluteMo\Filament\Resources\DoctorResource;
 use Modules\UI\Filament\Forms\Components\OpeningHoursField;
+=======
+use Modules\SaluteMo\Models\Doctor;
+use Illuminate\Database\Eloquent\Builder;
+use Modules\SaluteMo\Filament\Resources\DoctorResource;
+>>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
 use Modules\SaluteMo\Filament\Resources\DoctorResource\Pages\ListDoctors;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
@@ -37,10 +43,15 @@ class DoctorsRelationManager extends XotBaseRelationManager
     /**
      * Get the table columns.
      *
+<<<<<<< HEAD
+=======
+     * @return array<string, Tables\Columns\Column>
+>>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
      */
     public function getTableColumns(): array
     {
 
+<<<<<<< HEAD
         //return app(ListDoctors::class)->getTableColumns();
         $columns = parent::getTableColumns();
         /*
@@ -67,24 +78,37 @@ class DoctorsRelationManager extends XotBaseRelationManager
         ->action($action);
         */
         return $columns;
+=======
+        return app(ListDoctors::class)->getTableColumns();
+>>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
     }
 
     /**
      * Get the table filters.
      *
+<<<<<<< HEAD
      * @return array<string, Tables\Filters\Filter|Tables\Filters\SelectFilter>
+=======
+     * @return array<string, Tables\Filters\Filter>
+>>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
      */
     public function getTableFilters(): array
     {
         return [
+<<<<<<< HEAD
             /*
+=======
+>>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
             'status' => Tables\Filters\SelectFilter::make('status')
                 ->options([
                     'pending' => 'Pending',
                     'active' => 'Active',
                     'suspended' => 'Suspended',
                 ]),
+<<<<<<< HEAD
                 */
+=======
+>>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
             /*
             'specialization' => Tables\Filters\SelectFilter::make('specialization')
                 ->options(function () {
@@ -109,7 +133,11 @@ class DoctorsRelationManager extends XotBaseRelationManager
     public function getTableHeaderActions(): array
     {
         return [
+<<<<<<< HEAD
             'attach' => Tables\Actions\AttachAction::make()
+=======
+            Tables\Actions\AttachAction::make()
+>>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
                 ->preloadRecordSelect(false) // Importante: non precaricare tutti i record
                 // Soluzione per database cross-database compatibile con Filament 3
                 ->recordSelect(
@@ -123,7 +151,10 @@ class DoctorsRelationManager extends XotBaseRelationManager
                                     ->orWhere('email', 'like', "%{$search}%");
                             })
                             // Escludiamo manualmente i dottori già associati invece di usare JOIN
+<<<<<<< HEAD
                             /** @phpstan-ignore property.notFound */
+=======
+>>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
                             ->whereNotIn('id', $this->getOwnerRecord()->doctors->modelKeys())
                             ->limit(10)
                             ->get()

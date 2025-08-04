@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array (
   'navigation' => 
   array (
@@ -797,6 +798,8 @@ return array (
 >>>>>>> 1b052af9 (♻️ (HealthCardUpload.php): remove HealthCardUpload component as it is no longer needed)
 );
 =======
+=======
+>>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
 declare(strict_types=1);
 
 return [
@@ -989,6 +992,7 @@ return [
         'medical_note_added' => 'Nota medica aggiunta con successo',
         'export_completed' => 'Esportazione completata',
     ],
+<<<<<<< HEAD
     'search_placeholder' => 'Cerca per nome, email, telefono o codice fiscale...',
 ];
 >>>>>>> f3e4ec66 (.)
@@ -997,3 +1001,24 @@ return [
   'search_placeholder' => 'Cerca per nome, email, telefono o codice fiscale...',
 );
 >>>>>>> 267b8f14 (- pagine "privacy policy", "termini e condizioni", "cookie policy", "faqs")
+=======
+    'notifications' => [
+        'created' => 'Paziente creato con successo',
+        'updated' => 'Paziente aggiornato con successo',
+        'deleted' => 'Paziente eliminato con successo',
+        'error' => 'Si è verificato un errore durante l\'operazione',
+    ],
+    'validation' => [
+        'required' => 'Il campo :attribute è obbligatorio',
+        'email' => 'Il campo :attribute deve essere un indirizzo email valido',
+        'unique' => 'Il valore del campo :attribute è già stato utilizzato',
+        'min' => [
+            'string' => 'Il campo :attribute deve contenere almeno :min caratteri',
+        ],
+        'max' => [
+            'string' => 'Il campo :attribute non può superare :max caratteri',
+        ],
+    ],
+    'search_placeholder' => 'Cerca per nome, email, telefono o codice fiscale...',
+];
+>>>>>>> 304589c8 (✨ (bashscripts): add ORGANIZATION.md to document the structure and organization of bash scripts for better maintainability and navigation)
