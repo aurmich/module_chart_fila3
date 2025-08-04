@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Risoluzione dei Conflitti di Merge nel Progetto
 
@@ -324,6 +325,8 @@ Note: Using configuration file /var/www/html/<nome progetto>/laravel/phpstan.neo
  [OK] No errors
 ```
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 # Risoluzione dei Conflitti di Merge nel Modulo Xot
 
 ## Problema
@@ -619,6 +622,7 @@ Per prevenire problemi simili in futuro, si raccomanda di:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9df8f556 (fix .md)
 =======
@@ -744,6 +748,8 @@ La risoluzione dei conflitti di merge richiede un approccio metodico e una conos
 4. Verificare che le modifiche non introducano regressioni
 5. Mantenere aggiornata la documentazione con collegamenti bidirezionali
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 1. Utilizzare strumenti di merge avanzati che evidenzino chiaramente i conflitti
 2. Implementare hook pre-commit che verifichino l'assenza di marcatori di conflitto
 3. Eseguire regolarmente l'analisi statica con PHPStan per identificare problemi

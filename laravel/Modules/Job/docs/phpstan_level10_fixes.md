@@ -120,6 +120,7 @@ private function evaluateFunction(string $functionString): mixed
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. Documentare gli schemi e i pattern utilizzati per risolvere problemi simili in futuro. 
 =======
 =======
@@ -157,3 +158,6 @@ private function evaluateFunction(string $functionString): mixed
 =======
 3. Documentare gli schemi e i pattern utilizzati per risolvere problemi simili in futuro. 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+3. Documentare gli schemi e i pattern utilizzati per risolvere problemi simili in futuro. 
+>>>>>>> bead9c28 (fix case)

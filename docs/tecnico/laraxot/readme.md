@@ -123,7 +123,10 @@ Theme One è il tema principale per Filament 3:
 
 ### Primo Utilizzo
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> bead9c28 (fix case)
 # Clonare il progetto Laravel di base
 git clone [url-progetto] my-project
 cd my-project
@@ -141,7 +144,10 @@ git subtree add --prefix laravel/Themes/One git@github.com:laraxot/theme_one_fil
 
 ### Configurazione
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> bead9c28 (fix case)
 # Setup ambiente
 cp .env.example .env
 php artisan key:generate
@@ -185,7 +191,10 @@ I moduli Laraxot utilizzano una struttura particolare per i namespace:
 - Seguire il pattern di composizione
 - Mantenere back-compatibility
 - Documentare le modifiche 
+<<<<<<< HEAD
 
+=======
+>>>>>>> bead9c28 (fix case)
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)

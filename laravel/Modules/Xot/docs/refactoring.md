@@ -65,6 +65,7 @@ class YourModel extends Model
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices](BEST-PRACTICES.md) 
 =======
 =======
@@ -81,3 +82,6 @@ class YourModel extends Model
 =======
 - [Best Practices](BEST-PRACTICES.md) 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+- [Best Practices](BEST-PRACTICES.md) 
+>>>>>>> bead9c28 (fix case)

@@ -95,7 +95,10 @@ jobs:
 
 ### 1. Preparazione
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> bead9c28 (fix case)
 # Backup database
 php artisan backup:run
 
@@ -108,7 +111,10 @@ df -h
 
 ### 2. Aggiornamento
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> bead9c28 (fix case)
 # Pull ultime modifiche
 git pull origin main
 
@@ -130,7 +136,10 @@ npm run build
 
 ### 3. Verifica
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> bead9c28 (fix case)
 # Verifica permessi
 chmod -R 755 storage bootstrap/cache
 chown -R www-data:www-data storage bootstrap/cache
@@ -146,7 +155,10 @@ php artisan cache:clear
 
 ### Logs
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> bead9c28 (fix case)
 # Log applicazione
 tail -f storage/logs/laravel.log
 
@@ -160,7 +172,10 @@ tail -f /var/log/php8.2-fpm.log
 
 ### Performance
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> bead9c28 (fix case)
 # Monitoraggio CPU
 top
 
@@ -178,7 +193,10 @@ iftop
 
 ### Database
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> bead9c28 (fix case)
 # Rollback ultima migrazione
 php artisan migrate:rollback
 
@@ -188,7 +206,10 @@ php artisan migrate:rollback --step=1
 
 ### Files
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> bead9c28 (fix case)
 # Ripristino backup
 tar -xzf backup.tar.gz -C /var/www/html/saluteora
 
@@ -200,7 +221,10 @@ php artisan backup:restore
 
 ### Cache
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> bead9c28 (fix case)
 # Pulizia cache
 php artisan cache:clear
 php artisan config:clear
@@ -210,14 +234,20 @@ php artisan view:clear
 
 ### Logs
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> bead9c28 (fix case)
 # Rotazione logs
 logrotate /etc/logrotate.d/laravel
 
 # Pulizia logs vecchi
 find /var/www/html/saluteora/storage/logs -type f -mtime +30 -delete
 ``` 
+<<<<<<< HEAD
 
+=======
+>>>>>>> bead9c28 (fix case)
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)

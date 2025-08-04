@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Risoluzione Conflitti in ExportXlsByCollection
 
@@ -86,6 +87,8 @@ La versione risolta del file presenta:
 3. L'approccio di gestione sicura dei tipi deve essere mantenuto in tutte le future modifiche a questo file.
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 # Risoluzione Conflitto in ExportXlsByCollection
 
 ## Problema

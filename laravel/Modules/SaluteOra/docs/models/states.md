@@ -3,6 +3,7 @@
 ## Introduzione
 Il modulo SaluteOra utilizza `spatie/laravel-model-states` per gestire gli stati dei modelli. Questo approccio offre una gestione robusta e flessibile degli stati, permettendo transizioni controllate e validazione.
 
+<<<<<<< HEAD
 ## Stati Disponibili
 
 Gli stati dell'utente nel sistema SaluteOra sono:
@@ -30,10 +31,23 @@ abstract class UserState extends State
     abstract public function color(): string;
     abstract public function icon(): string;
 
+=======
+## Struttura degli Stati
+
+### UserState
+```php
+namespace Modules\SaluteOra\States;
+
+use Spatie\ModelStates\State;
+
+class UserState extends State
+{
+>>>>>>> bead9c28 (fix case)
     public static function config(): StateConfig
     {
         return parent::config()
             ->default(Pending::class)
+<<<<<<< HEAD
             // Pending transitions
             ->allowTransition(Pending::class, Active::class, Transitions\PendingToActive::class)
             ->allowTransition(Pending::class, Rejected::class, Transitions\PendingToRejected::class)
@@ -68,10 +82,16 @@ abstract class UserState extends State
             ->registerState(Suspended::class)
             ->registerState(IntegrationRequested::class)
             ->registerState(IntegrationCompleted::class);
+=======
+            ->allowTransition(Pending::class, Approved::class)
+            ->allowTransition(Pending::class, Rejected::class)
+            ->allowTransition(Approved::class, Suspended::class);
+>>>>>>> bead9c28 (fix case)
     }
 }
 ```
 
+<<<<<<< HEAD
 ### Stato IntegrationCompleted (NUOVO)
 ```php
 namespace Modules\SaluteOra\States\User;
@@ -130,10 +150,30 @@ class IntegrationRequested extends UserState
     public function icon(): string
     {
         return 'heroicon-o-document-text';
+=======
+### Stati Specifici
+```php
+namespace Modules\SaluteOra\States;
+
+class Pending extends UserState
+{
+    public function canTransitionTo(State $newState): bool
+    {
+        return $newState instanceof Approved || $newState instanceof Rejected;
+    }
+}
+
+class Approved extends UserState
+{
+    public function canTransitionTo(State $newState): bool
+    {
+        return $newState instanceof Suspended;
+>>>>>>> bead9c28 (fix case)
     }
 }
 ```
 
+<<<<<<< HEAD
 ## Flusso di Integrazione
 
 Il nuovo flusso di integrazione segue questi passaggi:
@@ -156,6 +196,8 @@ Pending
     └── → Rejected (respinto)
 ```
 
+=======
+>>>>>>> bead9c28 (fix case)
 ## Implementazione nei Modelli
 
 ### User Model
@@ -163,6 +205,7 @@ Pending
 namespace Modules\SaluteOra\Models;
 
 use Spatie\ModelStates\HasStates;
+<<<<<<< HEAD
 use Modules\SaluteOra\States\User\UserState;
 
 class User extends BaseModel
@@ -205,6 +248,16 @@ class IntegrationRequestedToIntegrationCompleted extends Transition
         
         return $this->user;
     }
+=======
+
+class User extends Model
+{
+    use HasStates;
+
+    protected $casts = [
+        'state' => UserState::class,
+    ];
+>>>>>>> bead9c28 (fix case)
 }
 ```
 
@@ -402,6 +455,7 @@ WHERE state = 'Modules\\SaluteOra\\States\\Active';
 4. **Documentazione**
    - Mantenere aggiornata la documentazione degli stati
    - Documentare le transizioni consentite
+<<<<<<< HEAD
    - Registrare le modifiche e le correzioni 
 
 ## Pattern BaseTransition (DRY + KISS)
@@ -496,3 +550,6 @@ Le notifiche includono automaticamente:
 - `message`: Messaggio personalizzato
 
 📋 **Documentazione completa**: [Appointment States](appointment-states.md) 
+=======
+   - Registrare le modifiche e le correzioni 
+>>>>>>> bead9c28 (fix case)

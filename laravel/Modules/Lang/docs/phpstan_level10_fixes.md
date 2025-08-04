@@ -168,6 +168,7 @@ Dopo aver implementato tutte le correzioni, PHPStan al livello 10 non riporta pi
 2. Implementare linee guida di codifica per evitare errori simili in futuro
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 3. Considerare l'utilizzo di strumenti di analisi statica come parte del processo di CI/CD 
@@ -194,3 +195,6 @@ Dopo aver implementato tutte le correzioni, PHPStan al livello 10 non riporta pi
 =======
 3. Considerare l'utilizzo di strumenti di analisi statica come parte del processo di CI/CD 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+3. Considerare l'utilizzo di strumenti di analisi statica come parte del processo di CI/CD 
+>>>>>>> bead9c28 (fix case)

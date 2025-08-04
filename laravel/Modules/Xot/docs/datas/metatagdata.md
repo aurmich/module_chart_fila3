@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
@@ -129,6 +130,8 @@ $colors = $metatag->getThemeColors();
 >>>>>>> 9df8f556 (fix .md)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 ## Descrizione
 La classe `MetatagData` gestisce i meta tag e le configurazioni visive dell'applicazione, inclusi colori, loghi e favicon.
 
@@ -174,6 +177,7 @@ Restituisce tutti i colori configurati nel formato chiave-valore.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **@deprecated** Usa `getBrandLogo()` per operazioni di branding.
 Resituisce il percorso del logo dell'header (metodo deprecato).
@@ -187,6 +191,8 @@ Restituisce l'URL del logo principale per il brand, pensato per l’uso in Filam
 $panel->brandLogo($metatag->getBrandLogo());
 ```
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 Restituisce il percorso del logo dell'header.
 
 ### getLogoHeaderDark()
@@ -293,6 +299,7 @@ Restituisce una versione semplificata dei colori.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **@deprecated** Usa `getBrandLogo()` per operazioni di branding.
 Resituisce il percorso del logo dell'header (metodo deprecato).
@@ -303,6 +310,8 @@ Resituisce il percorso del logo dell'header per il tema scuro.
 ### getFavicon(): string
 Resituisce il percorso del favicon.
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 Restituisce il percorso del logo dell'header.
 
 ### getLogoHeaderDark(): string
@@ -341,6 +350,7 @@ Restituisce il percorso del favicon.
 - [Filament Best Practices](../FILAMENT-BEST-PRACTICES.md)
 >>>>>>> aurmich/dev
 - [PHPStan Common Exceptions](../PHPSTAN-COMMON-EXCEPTIONS.md)
+<<<<<<< HEAD
 - [Data Queableactions](../DATA-QUEABLEACTIONS.md) 
 =======
 - [Filament Best Practices](../FILAMENT-BEST-PRACTICES.md)
@@ -356,3 +366,6 @@ Restituisce il percorso del favicon.
 - [Data Queableactions](../DATA-QUEABLEACTIONS.md) 
 - [Data Queableactions](../DATA-QUEABLEACTIONS.md) 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+- [Data Queableactions](../DATA-QUEABLEACTIONS.md) 
+>>>>>>> bead9c28 (fix case)

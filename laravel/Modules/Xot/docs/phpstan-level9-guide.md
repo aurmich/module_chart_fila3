@@ -173,6 +173,7 @@ $value = $data['key'];
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ``` 
 =======
 =======
@@ -203,3 +204,6 @@ $value = $data['key'];
 =======
 ``` 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+``` 
+>>>>>>> bead9c28 (fix case)

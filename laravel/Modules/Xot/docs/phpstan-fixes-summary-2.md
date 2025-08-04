@@ -130,6 +130,7 @@ Questo approccio incrementale permette di ridurre gradualmente gli errori, mante
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Solving Template Type Issues](https://phpstan.org/blog/solving-phpstan-error-unable-to-resolve-template-type) 
 =======
 =======
@@ -151,3 +152,6 @@ Questo approccio incrementale permette di ridurre gradualmente gli errori, mante
 =======
 - [Solving Template Type Issues](https://phpstan.org/blog/solving-phpstan-error-unable-to-resolve-template-type) 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+- [Solving Template Type Issues](https://phpstan.org/blog/solving-phpstan-error-unable-to-resolve-template-type) 
+>>>>>>> bead9c28 (fix case)

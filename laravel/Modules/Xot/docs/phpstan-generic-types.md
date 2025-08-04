@@ -154,6 +154,7 @@ class UserRepository implements UserRepositoryInterface
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Segui queste linee guida per risolvere la maggior parte degli errori relativi ai tipi generici nei tuoi modelli e relazioni Laravel. 
 =======
 =======
@@ -184,3 +185,6 @@ Segui queste linee guida per risolvere la maggior parte degli errori relativi ai
 =======
 Segui queste linee guida per risolvere la maggior parte degli errori relativi ai tipi generici nei tuoi modelli e relazioni Laravel. 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+Segui queste linee guida per risolvere la maggior parte degli errori relativi ai tipi generici nei tuoi modelli e relazioni Laravel. 
+>>>>>>> bead9c28 (fix case)

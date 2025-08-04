@@ -307,6 +307,7 @@ class ComponentBrowserTest extends DuskTestCase
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 > **NOTA**: La documentazione generale sui componenti UI è centralizzata nel [modulo UI](../../../Modules/UI/docs/components.md). Questa sezione documenta solo i componenti specifici del tema One.
@@ -324,6 +325,8 @@ class ComponentBrowserTest extends DuskTestCase
 =======
 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 ## Logo
 
 Il componente `x-ui.logo` è un SVG che rappresenta il logo dell'applicazione. 
@@ -351,6 +354,7 @@ Il componente `x-ui.logo` è un SVG che rappresenta il logo dell'applicazione.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
@@ -369,3 +373,5 @@ Il componente `x-ui.logo` è un SVG che rappresenta il logo dell'applicazione.
 =======
  
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)

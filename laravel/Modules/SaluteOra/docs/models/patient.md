@@ -41,7 +41,11 @@ class Patient extends User
      *
      * @return array<string, string>
      */
+<<<<<<< HEAD
     protected function casts(): array
+=======
+    public function casts(): array
+>>>>>>> bead9c28 (fix case)
     {
         return [
             'date_of_birth' => 'date',

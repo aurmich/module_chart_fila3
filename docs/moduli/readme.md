@@ -43,12 +43,18 @@ laravel/Modules/
 
 ## Comandi di Installazione
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> bead9c28 (fix case)
 # Installazione corretta dei moduli
 git subtree add --prefix laravel/Modules/Xot git@github.com:laraxot/module_xot_fila3.git dev --squash
 git subtree add --prefix laravel/Modules/Lang git@github.com:laraxot/module_lang_fila3.git dev --squash
 git subtree add --prefix laravel/Modules/Tenant git@github.com:laraxot/module_tenant_fila3.git dev --squash
+<<<<<<< HEAD
 
+=======
+>>>>>>> bead9c28 (fix case)
 # ... e così via per gli altri moduli
 
 # Installazione corretta del tema
@@ -83,7 +89,10 @@ I moduli Laraxot utilizzano una struttura particolare per i namespace:
 - Pulizia cache: `php artisan optimize:clear`
 - Rimozione migrazioni centrali: `rm -rf database/migrations`
 - Esecuzione migrazioni dai moduli: `php artisan module:migrate` 
+<<<<<<< HEAD
 
+=======
+>>>>>>> bead9c28 (fix case)
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)

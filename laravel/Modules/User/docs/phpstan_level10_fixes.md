@@ -257,6 +257,7 @@ public function handle(Failed $event): void
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. Utilizza strumenti di analisi automatica come PHPStan regolarmente per verificare che il codice rimanga conforme. 
 =======
 =======
@@ -285,3 +286,6 @@ public function handle(Failed $event): void
 =======
 4. Utilizza strumenti di analisi automatica come PHPStan regolarmente per verificare che il codice rimanga conforme. 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+4. Utilizza strumenti di analisi automatica come PHPStan regolarmente per verificare che il codice rimanga conforme. 
+>>>>>>> bead9c28 (fix case)

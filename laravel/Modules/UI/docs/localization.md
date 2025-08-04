@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Localizzazione
 
@@ -156,6 +157,8 @@ Lang::get('Accedi')
    - Non è necessario creare componenti personalizzati
    - Utilizzare i componenti esistenti per la gestione delle lingue 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 # Localizzazione UI
 
 ## Integrazione con Laravel Localization

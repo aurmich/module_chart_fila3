@@ -29,6 +29,7 @@ Sono stati rilevati conflitti Git non risolti nel file `app/Filament/Resources/U
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
@@ -47,3 +48,5 @@ Sono stati rilevati conflitti Git non risolti nel file `app/Filament/Resources/U
 >>>>>>> 9df8f556 (fix .md)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)

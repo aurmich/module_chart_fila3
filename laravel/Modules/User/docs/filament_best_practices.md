@@ -5,6 +5,7 @@ Questo documento descrive le best practices da seguire quando si creano o modifi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
@@ -38,6 +39,8 @@ namespace Modules\User\App\Filament\Widgets;
 >>>>>>> 9df8f556 (fix .md)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 ## Rimozione del metodo `getPages()`
 
 Quando una risorsa estende `XotBaseResource`, il metodo `getPages()` può essere completamente rimosso se:
@@ -107,6 +110,7 @@ public static function getFormSchema(): array
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
@@ -159,6 +163,8 @@ public static function getFormSchema(): array
 >>>>>>> 9df8f556 (fix .md)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 ## Integrazione con PHPStan
 
 Questa best practice risolve anche errori PHPStan di livello 9 e superiore relativi al tipo di ritorno del metodo `getFormSchema()`:
@@ -167,6 +173,7 @@ Questa best practice risolve anche errori PHPStan di livello 9 e superiore relat
 Method Resource::getFormSchema() should return array<string, Filament\Forms\Components\Component> but returns array<int, Component>
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -233,3 +240,6 @@ Seguendo queste best practices si assicura che il codice passi i controlli stati
 =======
 Seguendo queste best practices si assicura che il codice passi i controlli statici di PHPStan e sia più facile da mantenere. 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+Seguendo queste best practices si assicura che il codice passi i controlli statici di PHPStan e sia più facile da mantenere. 
+>>>>>>> bead9c28 (fix case)

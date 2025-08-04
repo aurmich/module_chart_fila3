@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Regola: Struttura File e Namespace
 
 ### Struttura File
@@ -23,19 +24,25 @@
 - [ ] Test passano 
 =======
 # Regole per l'Utilizzo degli Enum in SaluteOra
+=======
+## Regola: Struttura File e Namespace
+>>>>>>> bead9c28 (fix case)
 
-## Indice
-1. [Introduzione](#introduzione)
-2. [Convenzioni di Naming](#convenzioni-di-naming)
-3. [Struttura degli Enum](#struttura-degli-enum)
-4. [Utilizzo nei Modelli](#utilizzo-nei-modelli)
-5. [Utilizzo in Filament](#utilizzo-in-filament)
-6. [Validazione](#validazione)
-7. [Testing](#testing)
-8. [Best Practice](#best-practice)
+### Struttura File
+- Tutti i file PHP devono essere sotto la directory `app/`
+- Non creare mai directory come `Enums`, `Models`, `Filament` direttamente nella root del modulo
+- La struttura corretta è sempre `Modules/<Modulo>/app/<Tipo>/<File>`
 
-## Introduzione
+### Namespace
+- Il namespace base è `Modules\<Modulo>\`
+- Non includere mai `app\` nel namespace
+- Esempio:
+  ```php
+  // File: Modules/SaluteOra/app/Enums/UserType.php
+  namespace Modules\SaluteOra\Enums;
+  ```
 
+<<<<<<< HEAD
 Questo documento definisce le linee guida per l'utilizzo degli enum nel progetto SaluteOra. Gli enum sono preferiti rispetto alle costanti di classe o agli array associativi per gestire valori fissi.
 
 ## Convenzioni di Naming
@@ -325,3 +332,11 @@ Consulta sempre:
 - [MIGLIORAMENTI_E_CORREZIONI.md](./MIGLIORAMENTI_E_CORREZIONI.md)
 - [WINDSURF_RULES.md](./WINDSURF_RULES.md)
 >>>>>>> 9df8f556 (fix .md)
+=======
+### Checklist
+- [ ] File sotto `app/`
+- [ ] Namespace senza `app\`
+- [ ] Eseguito `composer dump-autoload`
+- [ ] IDE riconosce il file
+- [ ] Test passano 
+>>>>>>> bead9c28 (fix case)

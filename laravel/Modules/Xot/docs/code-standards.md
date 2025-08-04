@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Standard di Codifica
 
@@ -26,6 +27,8 @@ Gli standard di codifica completi sono documentati in:
 - [Testing Standards](../../../Xot/docs/testing/standards.md)
 - [Security Guidelines](../../../Xot/docs/security/coding.md) 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 # Standard di Codice
 
 ## Principi Fondamentali

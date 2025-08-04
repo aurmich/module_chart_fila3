@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Modelli nel Modulo Notify
 
@@ -183,6 +184,8 @@ Le traduzioni sono gestite tramite il file `resources/lang/it/template.php` e se
 ---
 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 # Modelli e Relazioni del Modulo Notify
 
 ## BaseModel

@@ -14,6 +14,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 35e9b7ea (feat(scripts): add script to rename files to lowercase while preserving README.md case for consistency and organization)
 =======
@@ -30,6 +31,8 @@
 * [links.md](laravel/Themes/One/docs/links.md)
 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 ## Collegamenti tra versioni di LINKS.md
 * [LINKS.md](laravel/Modules/Xot/docs/LINKS.md)
 * [LINKS.md](laravel/Modules/User/docs/LINKS.md)
@@ -53,4 +56,3 @@
 =======
 >>>>>>> 35e9b7ea (feat(scripts): add script to rename files to lowercase while preserving README.md case for consistency and organization)
 
- 

@@ -128,6 +128,7 @@ class BlogServiceProvider extends XotBaseServiceProvider {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
@@ -142,3 +143,5 @@ class BlogServiceProvider extends XotBaseServiceProvider {
 >>>>>>> 9df8f556 (fix .md)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)

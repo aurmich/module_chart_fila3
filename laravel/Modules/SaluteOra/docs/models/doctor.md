@@ -56,7 +56,11 @@ class Doctor extends User
      *
      * @return array<string, string>
      */
+<<<<<<< HEAD
     protected function casts(): array
+=======
+    public function casts(): array
+>>>>>>> bead9c28 (fix case)
     {
         return array_merge(parent::casts(), [
             'certifications' => 'array',
@@ -225,6 +229,7 @@ class Doctor extends User {
 
 Motivazione: evitare ridondanza, warning, confusione e problemi di override.
 
+<<<<<<< HEAD
 ## RelationManager in Filament
 
 Entrambi i RelationManager (StudioResource/DoctorsRelationManager e DoctorResource/StudiosRelationManager) devono implementare AttachAction personalizzato per la gestione cross-db, con query manuali e connessione esplicita tramite on().
@@ -394,4 +399,6 @@ class DoctorStudio extends BasePivot
 }
 ```
 
+=======
+>>>>>>> bead9c28 (fix case)
 ---

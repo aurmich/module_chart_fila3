@@ -34,6 +34,7 @@ while (! feof($this->stream) && $this->start <= $this->end) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo controllo garantisce che `fread()` venga chiamato solo con un valore positivo per il parametro `$length`, evitando anche potenziali loop infiniti nel caso in cui `$bytesToRead` fosse zero o negativo. 
 =======
 =======
@@ -63,3 +64,6 @@ Questo controllo garantisce che `fread()` venga chiamato solo con un valore posi
 =======
 Questo controllo garantisce che `fread()` venga chiamato solo con un valore positivo per il parametro `$length`, evitando anche potenziali loop infiniti nel caso in cui `$bytesToRead` fosse zero o negativo. 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+Questo controllo garantisce che `fread()` venga chiamato solo con un valore positivo per il parametro `$length`, evitando anche potenziali loop infiniti nel caso in cui `$bytesToRead` fosse zero o negativo. 
+>>>>>>> bead9c28 (fix case)

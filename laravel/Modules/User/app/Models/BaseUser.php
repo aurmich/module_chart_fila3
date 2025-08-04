@@ -167,6 +167,7 @@ use Illuminate\Support\Facades\Schema;
  * @mixin \Eloquent
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 abstract class BaseUser extends Authenticatable implements HasName, HasTenants, UserContract,HasMedia
 {
 
@@ -177,11 +178,24 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     // Guard coerente con Spatie/Permission
 =======
 abstract class BaseUser extends Authenticatable implements HasName, HasTenants, UserContract
+=======
+abstract class BaseUser extends Authenticatable
+{
+    /**
+     * Guard coerente con Spatie/Permission: deve essere 'web'.
+     * @var string
+     */
+    protected $guard_name = 'web'; implements HasName, HasTenants, UserContract
+>>>>>>> bead9c28 (fix case)
 {
     use HasApiTokens;
     use HasFactory;
     use HasRoles;
+<<<<<<< HEAD
 >>>>>>> 54f4fa16 (.)
+=======
+    // Guard coerente con Spatie/Permission
+>>>>>>> bead9c28 (fix case)
     use HasUuids;
     use Notifiable;
     use RelationX;

@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9df8f556 (fix .md)
 =======
@@ -218,6 +219,8 @@ Esempi di collegamenti corretti:
 - **Documentazione generale**: fornisce il contesto specifico del progetto
 - **Documentazione dei moduli**: descrive le funzionalità in modo generico e riutilizzabile
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 
 # Linee Guida per la Documentazione in Laraxot
 

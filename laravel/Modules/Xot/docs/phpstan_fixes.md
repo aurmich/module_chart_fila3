@@ -165,6 +165,7 @@ Line 147: Method Modules\Xot\Filament\Resources\XotBaseResource::getRelations() 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Line 111: Static access to instance property Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager::$resource.
 =======
 Line 111: Static access to instance property Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager::$resource.
@@ -175,6 +176,10 @@ Line 111: Static access to instance property Modules\Xot\Filament\Resources\XotB
 Line 112: Dead catch - Exception is never thrown in the try block.
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+Line 111: Static access to instance property Modules\Xot\Filament\Resources\XotBaseResource\RelationManagers\XotBaseRelationManager::$resource.
+Line 112: Dead catch - Exception is never thrown in the try block.
+>>>>>>> bead9c28 (fix case)
 ```
 
 ### 23. Errore in Filament/Widgets/XotBaseWidget.php
@@ -832,6 +837,7 @@ L'aggiunta dell'annotazione `@phpstan-var` fornisce a PHPStan un'informazione pi
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
@@ -860,3 +866,5 @@ Le correzioni apportate al modulo Xot hanno migliorato significativamente la qua
 >>>>>>> 9df8f556 (fix .md)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)

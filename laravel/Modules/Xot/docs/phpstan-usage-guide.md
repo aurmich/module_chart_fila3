@@ -261,6 +261,7 @@ cd /percorso/al/progetto/laravel
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ``` 
 >>>>>>> aurmich/dev
@@ -293,3 +294,6 @@ cd /percorso/al/progetto/laravel
 =======
 ``` 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+``` 
+>>>>>>> bead9c28 (fix case)

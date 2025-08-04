@@ -49,6 +49,7 @@ Quando si estende `XotBaseListRecords`, è necessario implementare i seguenti me
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Es: `getTableColumns()` invece di `getListTableColumns()`
 =======
    - Es: `getTableColumns()` invece di `getTableColumns()`
@@ -59,6 +60,9 @@ Quando si estende `XotBaseListRecords`, è necessario implementare i seguenti me
 =======
    - Es: `getTableColumns()` invece di `getTableColumns()`
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+   - Es: `getTableColumns()` invece di `getListTableColumns()`
+>>>>>>> bead9c28 (fix case)
 
 2. **Visibilità dei Metodi**:
    - Tutti i metodi devono essere `public`
@@ -146,12 +150,15 @@ Quando si estende `XotBaseListRecords`, è necessario implementare i seguenti me
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9df8f556 (fix .md)
 =======
 ## Nota storica:
 Il metodo `getListTableColumns` è stato rinominato in `getTableColumns` per aderire allo standard Filament e Laraxot. Tutte le implementazioni e la documentazione devono ora usare `getTableColumns`.
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 > **AVVISO IMPORTANTE (2025-05-13):**
 > Il metodo standard per la definizione delle colonne della tabella è ora `getTableColumns`. Il vecchio `getListTableColumns` è deprecato: aggiorna tutte le implementazioni e la documentazione. Questa scelta garantisce allineamento con Filament e coerenza tra tutti i moduli Laraxot.
 

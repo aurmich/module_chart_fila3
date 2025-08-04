@@ -168,6 +168,7 @@ class MyModel extends BaseModel
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Mantenere coerenza tra le diverse documentazioni 
 =======
 =======
@@ -198,3 +199,6 @@ class MyModel extends BaseModel
 =======
    - Mantenere coerenza tra le diverse documentazioni 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+   - Mantenere coerenza tra le diverse documentazioni 
+>>>>>>> bead9c28 (fix case)

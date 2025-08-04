@@ -43,7 +43,11 @@ class DoctorRegistrationWorkflow extends Model
      *
      * @return array<string, string>
      */
+<<<<<<< HEAD
     protected function casts(): array
+=======
+    public function casts(): array
+>>>>>>> bead9c28 (fix case)
     {
         return [
             'started_at' => 'datetime',
@@ -130,7 +134,11 @@ I campi principali del modello sono:
 Il modello utilizza il metodo `casts()` invece della proprietà `$casts` deprecata per definire i cast degli attributi:
 
 ```php
+<<<<<<< HEAD
 protected function casts(): array
+=======
+public function casts(): array
+>>>>>>> bead9c28 (fix case)
 {
     return [
         'step_data' => 'array',

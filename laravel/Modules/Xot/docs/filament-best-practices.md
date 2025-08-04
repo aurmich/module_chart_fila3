@@ -73,6 +73,7 @@ public static function getFormSchema(): array
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 > **ATTENZIONE:** Nelle classi base che estendono Filament (es. XotBasePage), NON dichiarare mai abstract getFormSchema(). Fornire sempre una implementazione di default (array vuoto). Le classi figlie possono sovrascrivere il metodo se necessario.
@@ -168,6 +169,8 @@ Per maggiori dettagli e motivazioni, consulta la [documentazione completa sulle 
 >>>>>>> 9df8f556 (fix .md)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 #### ❌ DON'T - Non utilizzare il metodo form()
 
 ```php
@@ -848,6 +851,7 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 - [Best Practices Laraxot](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -995,3 +999,5 @@ Aggiornare sempre la documentazione e le regole di progetto. Applicare la stessa
 >>>>>>> 9df8f556 (fix .md)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)

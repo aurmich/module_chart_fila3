@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
@@ -167,6 +168,8 @@ class LoginTest extends TestCase
 >>>>>>> 9df8f556 (fix .md)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 # Best Practices per Laraxot
 
 ## Riferimenti al modello User
@@ -237,6 +240,7 @@ public function process(\Modules\User\Models\User $user) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ``` 
 =======
 =======
@@ -256,3 +260,6 @@ public function process(\Modules\User\Models\User $user) {
 =======
 ``` 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+``` 
+>>>>>>> bead9c28 (fix case)

@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Risoluzione Conflitti in GetViewByClassAction
 
@@ -102,6 +103,8 @@ Esempio:
 3. Per aggiungere nuovi pattern di nomi di classe, modificare l'algoritmo di elaborazione dei segmenti mantenendo la compatibilità con i pattern esistenti.
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 # Risoluzione Conflitto in GetViewByClassAction
 
 ## Problema

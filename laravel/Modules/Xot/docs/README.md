@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo Xot - Documentazione
 
 ## 🚀 Panoramica
@@ -187,9 +188,14 @@ class MyWidget extends XotBaseWidget
 **Status**: 🟢 **Production Ready** - Tutti i loop infiniti risolti 
 =======
 # Modulo Xot
+=======
+# Xot - Documentazione principale
+>>>>>>> bead9c28 (fix case)
 
-### Versione HEAD
+## Collegamenti tematici
+- [Regole roles/permissions/guard_name](roles-permissions.md)
 
+<<<<<<< HEAD
 ## Introduzione
 Il modulo Xot è il modulo base che fornisce le classi e le funzionalità fondamentali per gli altri moduli. Gestisce l'integrazione con Filament, Livewire e Volt, fornendo una base solida per lo sviluppo di applicazioni modulari.
 
@@ -884,3 +890,6 @@ Undefined array key "Modules\SaluteOra\States\User\Pending"
 - [README SaluteOra](../../laravel/Modules/SaluteOra/docs/README.md)
 - [Spatie Model States](https://github.com/spatie/laravel-model-states)
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
+=======
+Altre sezioni...
+>>>>>>> bead9c28 (fix case)

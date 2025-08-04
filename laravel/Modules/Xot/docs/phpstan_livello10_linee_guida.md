@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bead9c28 (fix case)
 # Linee Guida PHPStan Livello 10
 
 ## Introduzione
@@ -96,8 +99,11 @@ public function processValue(?string $value): string
 - [Code Standards](./CODE-STANDARDS.md)
 - [Risoluzione Conflitti](./CONFLITTI_MERGE_RISOLTI.md)
 
+<<<<<<< HEAD
 =======
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> bead9c28 (fix case)
 # Linee Guida per PHPStan Livello 10 - Regole Comuni
 
 Questo documento contiene le linee guida generali e le regole comuni per risolvere gli errori PHPStan di livello 10 in tutti i moduli del progetto Laraxot.
@@ -694,6 +700,7 @@ Class 'Modules\Xot\app\Actions\MyAction' not found.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ```
 
@@ -710,6 +717,8 @@ namespace Modules\Xot\app\Console\Commands;
 Errori PHPStan come `Class Modules\Xot\app\Console\Commands\DatabaseSchemaExportCommand not found` indicano che è necessario rimuovere il segmento `app` dal namespace.
 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 Class 'Modules\Xot\Actions\MyAction' not found.
 ```
 
@@ -751,6 +760,7 @@ Class 'Modules\Xot\Actions\MyAction' not found.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9df8f556 (fix .md)
 =======
@@ -765,6 +775,8 @@ Class 'Modules\Xot\Actions\MyAction' not found.
 * [phpstan_livello10_linee_guida.md](phpstan/phpstan_livello10_linee_guida.md)
 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 ```php
 // CORRETTO
 namespace Modules\Xot\Console\Commands;

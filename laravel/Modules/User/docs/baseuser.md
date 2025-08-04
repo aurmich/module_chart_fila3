@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # BaseUser
 
@@ -62,6 +63,8 @@ La classe `BaseUser` è una classe astratta che implementa le interfacce `UserCo
 ## Collegamenti Correlati
 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 # BaseUser Model in Laravel Modules
 
 ## Overview
@@ -189,6 +192,7 @@ This document outlines the structure and usage of the `BaseUser` model within a 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
@@ -207,3 +211,5 @@ This document outlines the structure and usage of the `BaseUser` model within a 
 >>>>>>> 9df8f556 (fix .md)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)

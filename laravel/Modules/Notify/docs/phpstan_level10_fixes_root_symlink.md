@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 PHPSTAN_LEVEL10_FIXES.md
 =======
 =======
@@ -31,3 +32,6 @@ PHPSTAN_LEVEL10_FIXES.md
 =======
 PHPSTAN_LEVEL10_FIXES.md
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+PHPSTAN_LEVEL10_FIXES.md
+>>>>>>> bead9c28 (fix case)

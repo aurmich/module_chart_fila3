@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Risoluzione Conflitti in ExportXlsByView
 
@@ -87,6 +88,8 @@ La versione risolta del file presenta:
 2. I campi nullabili devono sempre essere gestiti correttamente per evitare errori a runtime.
 3. Le annotazioni PHPDoc devono essere mantenute aggiornate in tutte le future modifiche al file.
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 # Risoluzione Conflitto in ExportXlsByView
 
 ## Problema

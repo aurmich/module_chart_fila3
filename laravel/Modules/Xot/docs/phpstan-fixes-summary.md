@@ -197,6 +197,7 @@ Per una comprensione più completa delle correzioni necessarie, consultare:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. [FILAMENT-TABLES.md](./FILAMENT-TABLES.md) - Per problemi specifici di Filament 
 =======
 =======
@@ -227,3 +228,6 @@ Per una comprensione più completa delle correzioni necessarie, consultare:
 =======
 3. [FILAMENT-TABLES.md](./FILAMENT-TABLES.md) - Per problemi specifici di Filament 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+3. [FILAMENT-TABLES.md](./FILAMENT-TABLES.md) - Per problemi specifici di Filament 
+>>>>>>> bead9c28 (fix case)

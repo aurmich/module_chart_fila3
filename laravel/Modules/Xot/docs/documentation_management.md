@@ -155,6 +155,7 @@ Quando si identifica una nuova regola o pattern importante:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
    - [ ] Testare applicabilità 
@@ -212,6 +213,8 @@ Modules/Xot/docs/
 b6f667c (.)
    - Verifica dei collegamenti 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
    - [ ] Testare applicabilità 
 =======
 

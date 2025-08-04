@@ -34,6 +34,7 @@ La correzione dell'errore PHPStan richiede la modifica del metodo chiamato da `g
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Collegamenti
 - [MetatagData](../../datas/MetatagData.md)
 <<<<<<< HEAD
@@ -85,3 +86,9 @@ con la nuova:
 >>>>>>> 9df8f556 (fix .md)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+## Collegamenti
+- [MetatagData](../../datas/MetatagData.md)
+- [Filament Best Practices](../../FILAMENT-BEST-PRACTICES.md)
+- [PHPStan Common Exceptions](../../PHPSTAN-COMMON-EXCEPTIONS.md) 
+>>>>>>> bead9c28 (fix case)

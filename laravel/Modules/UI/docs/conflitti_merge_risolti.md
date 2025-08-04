@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Questo documento descrive i conflitti di merge che sono stati risolti nel modulo UI, con particolare attenzione ai file critici e alle decisioni prese.
 
@@ -112,6 +113,8 @@ Per prevenire futuri conflitti nel modulo UI:
 * [conflitti_merge_risolti.md](../../Media/docs/conflitti_merge_risolti.md)
 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 ## Conflitti Risolti (2025-05-13)
 
 ### 1. UIServiceProvider.php

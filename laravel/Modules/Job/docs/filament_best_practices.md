@@ -80,6 +80,7 @@ Questo pattern è stato corretto nelle seguenti risorse:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `FailedImportRowResource` 
 =======
 =======
@@ -115,3 +116,6 @@ Questo pattern è stato corretto nelle seguenti risorse:
 =======
 - `FailedImportRowResource` 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+- `FailedImportRowResource` 
+>>>>>>> bead9c28 (fix case)

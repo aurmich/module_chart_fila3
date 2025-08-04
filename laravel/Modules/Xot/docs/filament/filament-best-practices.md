@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Best Practices per Filament Resources in Laraxot
 
@@ -686,6 +687,8 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 
 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 # Filament Best Practices
 
 ## Visibilità dei Metodi
@@ -1232,8 +1235,12 @@ public function getTableActions(): array
 ## Collegamenti
 - [Documentazione Filament Ufficiale](https://filamentphp.com/)
 - [Principio di Sostituzione di Liskov](https://it.wikipedia.org/wiki/Principio_di_sostituzione_di_Liskov)
+<<<<<<< HEAD
 - [Best Practices PHP](../PHP-STRICT-TYPES.md) 
 <<<<<<< HEAD
 >>>>>>> 9df8f556 (fix .md)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+- [Best Practices PHP](../PHP-STRICT-TYPES.md) 
+>>>>>>> bead9c28 (fix case)

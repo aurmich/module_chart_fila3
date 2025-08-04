@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo Media e le relative soluzioni implementate.
 
@@ -12,6 +13,8 @@ Questo documento traccia gli errori PHPStan di livello 10 identificati nel modul
 - [Documentazione Conflitti Git nei Moduli](../../../../docs/conflitti_git_moduli.md)
 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 > **Collegamento globale:** Per le strategie generali e le best practices sulla risoluzione dei conflitti git, vedi [docs/git_conflict_resolution.md](../../../../docs/git_conflict_resolution.md).
 
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo Media e le relative soluzioni implementate.
@@ -113,6 +116,7 @@ Questa soluzione mantiene la funzionalità originale migliorando al contempo la 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Problema**: Diversi file del modulo Media contenevano conflitti di merge non risolti, indicati da marcatori git . Questi conflitti impedivano la corretta esecuzione del codice e causavano errori di sintassi.
 =======
 =======
@@ -131,6 +135,8 @@ aurmich/dev
 =======
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 **Problema**: Diversi file del modulo Media contenevano conflitti di merge non risolti, indicati da marcatori git (`=======`, `>>>>>>>`, ecc.). Questi conflitti impedivano la corretta esecuzione del codice e causavano errori di sintassi.
 >>>>>>> 9df8f556 (fix .md)
 
@@ -155,6 +161,7 @@ aurmich/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 4. **Risoluzione sistematica dei conflitti**: Analizzare attentamente i conflitti di merge e risolverli mantenendo la versione più completa e documentata del codice.
 5. **Backup prima delle modifiche**: Creare backup dei file originali prima di apportare modifiche significative.
@@ -165,12 +172,15 @@ aurmich/dev
 4. **Risoluzione sistematica dei conflitti**: Analizzare attentamente i conflitti di merge e risolverli mantenendo la versione più completa e documentata del codice.
 5. **Backup prima delle modifiche**: Creare backup dei file originali prima di apportare modifiche significative.
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 
 ## Prossimi Passi
 
 1. Completare la revisione di `SubtitleService.php` per risolvere i problemi di tipo complessi.
 2. Aggiornare il modello `Media.php` per specificare tipi più precisi per le proprietà attualmente documentate come `mixed`.
 3. Eseguire l'analisi PHPStan a livello 10 per verificare che le correzioni risolvano effettivamente gli errori.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -194,10 +204,13 @@ aurmich/dev
 * [phpstan_level10_fixes.md](../../Job/docs/phpstan_level10_fixes.md)
 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 4. Documentare pattern e soluzioni standard per gestire risorse di file e altri tipi speciali nel progetto.
 
 ---
 
+<<<<<<< HEAD
 > **Collegamento globale:** Questa documentazione locale dettaglia i casi concreti e le decisioni architetturali adottate nel modulo Media. Per le strategie generali e le best practices, consulta sempre anche la documentazione globale in [docs/git_conflict_resolution.md](../../../../docs/git_conflict_resolution.md). 
 <<<<<<< HEAD
 =======
@@ -216,3 +229,6 @@ aurmich/dev
 >>>>>>> 9df8f556 (fix .md)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+> **Collegamento globale:** Questa documentazione locale dettaglia i casi concreti e le decisioni architetturali adottate nel modulo Media. Per le strategie generali e le best practices, consulta sempre anche la documentazione globale in [docs/git_conflict_resolution.md](../../../../docs/git_conflict_resolution.md). 
+>>>>>>> bead9c28 (fix case)

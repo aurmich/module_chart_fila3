@@ -226,6 +226,7 @@ Il `LangServiceProvider` gestisce automaticamente le traduzioni delle label basa
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Infatti, il servizio `AutoLabelAction` intercetta la creazione dei componenti e applica automaticamente le traduzioni corrette, rendendo superfluo (e dannoso) l'uso esplicito del metodo `->label()`. 
 =======
 =======
@@ -247,3 +248,6 @@ Infatti, il servizio `AutoLabelAction` intercetta la creazione dei componenti e 
 =======
 Infatti, il servizio `AutoLabelAction` intercetta la creazione dei componenti e applica automaticamente le traduzioni corrette, rendendo superfluo (e dannoso) l'uso esplicito del metodo `->label()`. 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+Infatti, il servizio `AutoLabelAction` intercetta la creazione dei componenti e applica automaticamente le traduzioni corrette, rendendo superfluo (e dannoso) l'uso esplicito del metodo `->label()`. 
+>>>>>>> bead9c28 (fix case)

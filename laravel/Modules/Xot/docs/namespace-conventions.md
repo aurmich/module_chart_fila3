@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Convenzioni Namespace in il progetto
 
@@ -141,6 +142,8 @@ namespace Modules\Dental\App\Services;
 
 Il mapping PSR-4 nei file `composer.json` dei moduli è configurato come:
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 # Convenzioni dei Namespace nel Modulo Xot
 
 ## Panoramica
@@ -18325,11 +18328,14 @@ La configurazione dell'autoloading in `composer.json` deve riflettere questa str
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 9df8f556 (fix .md)
 =======
         "Modules\\NomeModulo\\": "app/"
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 
         "Modules\\Rating\\": "Modules/Rating/app/"
 
@@ -18360,6 +18366,7 @@ La configurazione dell'autoloading in `composer.json` deve riflettere questa str
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -18786,6 +18793,8 @@ class UserResource extends Resource
 * [namespace-conventions.md](../../../Cms/docs/best-practices/namespace-conventions.md)
 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 
 
 

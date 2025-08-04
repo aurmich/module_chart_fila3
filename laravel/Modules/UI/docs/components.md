@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Componenti Form Avanzati
 
 <<<<<<< HEAD
@@ -1365,6 +1366,8 @@ Non è necessario:
 - Gestire manualmente le rotte
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 ## Componenti SVG
 
 ### Bandiere (Flags)
@@ -1418,6 +1421,7 @@ I componenti SVG per le bandiere sono registrati automaticamente e possono esser
 - [Documentazione SVG](./SVG.md)
 - [Best Practices UI](./UI_BEST_PRACTICES.md)
 - [Guida Componenti](./COMPONENTS_GUIDE.md) 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2725,3 +2729,5 @@ Non è necessario:
 =======
 >>>>>>> 5d1385d (.)
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)

@@ -8,9 +8,12 @@ L'azione `ApplyMetatagToPanelAction` è responsabile di applicare i metatag al p
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - Configura il logo del brand utilizzando i metodi semantici
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 - Configura il logo del brand
 =======
 - Configura il logo del brand utilizzando i metodi semantici
@@ -46,6 +49,7 @@ Applica i metatag al panel Filament.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
@@ -65,12 +69,15 @@ $panel
 >>>>>>> 9df8f556 (fix .md)
 =======
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 ## Gestione Errori
 In caso di errore durante l'applicazione dei metatag:
 - L'errore viene registrato nel log
 - Il panel originale viene restituito senza modifiche
 - L'applicazione continua a funzionare
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -99,6 +106,8 @@ In caso di errore durante l'applicazione dei metatag:
 - [Color Management](../colors.md)
 - [Semantic Methods](../philosophy/semantic_methods.md)
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+>>>>>>> bead9c28 (fix case)
 ## Collegamenti
 - [MetatagData](../datas/MetatagData.md)
 - [Filament Panel Documentation](https://filamentphp.com/docs/panels)
@@ -139,6 +148,7 @@ In caso di errore durante l'applicazione dei metatag:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - La documentazione è mantenuta aggiornata nella cartella docs 
 =======
 =======
@@ -161,3 +171,6 @@ In caso di errore durante l'applicazione dei metatag:
 =======
 - La documentazione è mantenuta aggiornata nella cartella docs 
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
+=======
+- La documentazione è mantenuta aggiornata nella cartella docs 
+>>>>>>> bead9c28 (fix case)
