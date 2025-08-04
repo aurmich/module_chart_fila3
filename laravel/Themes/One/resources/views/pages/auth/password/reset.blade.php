@@ -188,6 +188,9 @@ new class extends Component
                 @else
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9dcbbc15 (- updated login e reset view)
                 <form wire:submit="sendResetPasswordLink" class="space-y-6 flex flex-col items-center justify-center">
                     <div class="w-full">
                         <x-ui.input class="w-full" label="Email address" type="email" id="email" name="email" wire:model="email" />
@@ -195,6 +198,7 @@ new class extends Component
                     <div>
                         <button class="w-full py-3 px-3 rounded bg-[#FF5F7E] text-white font-bold transition" submit="true">Send password reset link</button>
                     </div>
+<<<<<<< HEAD
 =======
                 <form wire:submit="sendResetPasswordLink" class="space-y-6">
                     <x-ui.input label="Email address" type="email" id="email" name="email" wire:model="email" />
@@ -205,6 +209,8 @@ new class extends Component
                     <x-ui.input label="Email address" type="email" id="email" name="email" wire:model="email" />
                     <x-filament::button type="primary" rounded="md" submit="true">Send password reset link</x-filament::button>
 >>>>>>> 1001715a (- continuo stile landing page e pagine paziente/dottore)
+=======
+>>>>>>> 9dcbbc15 (- updated login e reset view)
                 </form>
                 @endif
             </div>
