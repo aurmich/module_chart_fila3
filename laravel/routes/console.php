@@ -1,5 +1,6 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> aurmich/dev
@@ -15,3 +16,6 @@ Artisan::command('inspire', function () {
 =======
 */
 >>>>>>> aurmich/dev
+=======
+
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)

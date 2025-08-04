@@ -1,13 +1,12 @@
-import {
-    defineConfig
-} from 'vite';
+import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
     plugins: [
         laravel({
             input: ['resources/css/app.css', 'resources/js/app.js'],
+<<<<<<< HEAD
 <<<<<<< HEAD
             refresh: true,
 =======
@@ -24,3 +23,10 @@ export default defineConfig({
 =======
 });
 >>>>>>> aurmich/dev
+=======
+            refresh: true,
+        }),
+        tailwindcss(),
+    ],
+});
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)

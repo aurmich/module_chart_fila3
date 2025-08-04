@@ -563,17 +563,22 @@ class FindDoctorAndAppointmentWidget extends XotBaseWidget
             'studio_id'=>$get('studio_id'),
         ]); //2025-07
         */
+        /*
         return [
             $this->currentCalendarMonth.'-15',
             $this->currentCalendarMonth.'-20',
         ];
-        /*
+        */
+        
         $studioId = $get('studio_id');
         $studio = Studio::find($studioId);
+        if(!$studio){
+            return [];
+        }
         $enabledDates = $studio->getEnabledDatesByMonth($this->currentCalendarMonth);
 
         return $enabledDates;
-        */
+        
     }
 
 >>>>>>> e40f0fb9 (✨ (FindDoctorAndAppointmentWidget.php): refactor enabledDates method to use dynamic dates based on current month for better flexibility)

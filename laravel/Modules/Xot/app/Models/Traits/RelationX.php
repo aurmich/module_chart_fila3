@@ -46,10 +46,14 @@ trait RelationX
         }
         // }
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> aurmich/dev
+=======
+        
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         return $this->belongsToMany(
             related: $related,
             table: $table,

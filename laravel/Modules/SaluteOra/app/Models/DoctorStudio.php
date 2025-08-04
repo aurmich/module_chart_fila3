@@ -18,7 +18,11 @@ use Safe\DateTime;
 use Parental\HasParent;
 use Modules\SaluteOra\Models\BasePivot;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+use Spatie\OpeningHours\OpeningHours;
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 
 /**
  * Modello pivot per la relazione many-to-many tra Doctor e Studio.
@@ -72,6 +76,9 @@ class DoctorStudio extends StudioUser
 {
     use HasParent;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
      /**
      * Gli attributi che sono mass assignable.
      *
@@ -103,9 +110,12 @@ class DoctorStudio extends StudioUser
     public function getOpeningHours(): OpeningHours
     {
         $schedule = $this->schedule;
+<<<<<<< HEAD
         if(!$schedule){
             return OpeningHours::create([]);
         }
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         $days=[];
         foreach($schedule as $day=>$hours){
             $days[$day]=[];
@@ -116,6 +126,7 @@ class DoctorStudio extends StudioUser
                 $days[$day][]=$hours['afternoon_from'].'-'.$hours['afternoon_to'];
             }
         }
+<<<<<<< HEAD
 
 
         $days['exceptions'] = [
@@ -241,6 +252,11 @@ class DoctorStudio extends StudioUser
         }
         return $dates;
     }
+=======
+        
+        return OpeningHours::create($days);
+    }
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 }
 
 =======

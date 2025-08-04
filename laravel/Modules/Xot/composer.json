@@ -21,9 +21,13 @@
     "require": {
         "php": "^8.2",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "aaronfrancis/fast-paginate": "^2.0",
 =======
 >>>>>>> aurmich/dev
+=======
+        "aaronfrancis/fast-paginate": "^2.0",
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         "calebporzio/sushi": "^2.5",
         "coolsam/panel-modules": "*",
         "doctrine/dbal": "*",
@@ -32,9 +36,12 @@
         "filament/spatie-laravel-media-library-plugin": "^3.2",
         "filament/spatie-laravel-translatable-plugin": "^3.2",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         "aaronfrancis/fast-paginate":"*",
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         "guzzlehttp/guzzle": "*",
         "laravel/folio": "^1.1",
         "laravel/framework": "*",
@@ -47,7 +54,11 @@
         "livewire/volt": "^1.0",
 =======
         "livewire/livewire": "*",
+<<<<<<< HEAD
 >>>>>>> aurmich/dev
+=======
+        "livewire/volt": "*",
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         "maatwebsite/excel": "^3.1",
         "nwidart/laravel-modules": "*",
         "predis/predis": "^2.2",
@@ -58,6 +69,7 @@
         "spatie/laravel-model-status": "*",
         "spatie/laravel-package-tools": "*",
         "spatie/laravel-permission": "*",
+<<<<<<< HEAD
 <<<<<<< HEAD
         "spatie/laravel-queueable-action": "^2.16",
         "spatie/laravel-responsecache": "^7.6",
@@ -71,19 +83,27 @@
         "thecodingmachine/safe": "^3.0",
         "tightenco/parental": "*"
 =======
+=======
+        "spatie/laravel-queueable-action": "*",
+        "spatie/laravel-responsecache": "^7.6",
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         "spatie/laravel-schemaless-attributes": "^2.5",
         "spatie/laravel-sluggable": "^3.6",
-        "spatie/laravel-responsecache": "^7.6",
+        "spatie/laravel-tags": "*",
         "spipu/html2pdf": "^5.2",
-        "staudenmeir/laravel-adjacency-list": "^1.22",
         "staudenmeir/eloquent-has-many-deep": "*",
+        "staudenmeir/laravel-adjacency-list": "^1.22",
         "symfony/dom-crawler": "*",
         "thecodingmachine/safe": "^3.0",
+<<<<<<< HEAD
         "spatie/laravel-tags": "*",
         "livewire/volt": "*",
         "tightenco/parental": "*",
         "spatie/laravel-queueable-action": "*"
 >>>>>>> aurmich/dev
+=======
+        "tightenco/parental": "*"
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.14",

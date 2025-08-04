@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@example.com',
         ]);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
         $this->call([
@@ -27,5 +28,7 @@ class DatabaseSeeder extends Seeder
             DefaultTenantSeeder::class,
         ]);
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
     }
 }

@@ -9,12 +9,18 @@ use Laravel\Folio\Folio;
 use Illuminate\Support\Arr;
 use Webmozart\Assert\Assert;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
 use Illuminate\Support\Collection;
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 use Nwidart\Modules\Facades\Module;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;
 use Modules\Tenant\Services\TenantService;
+<<<<<<< HEAD
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
 
 class FolioVoltServiceProvider extends ServiceProvider
 {
@@ -63,7 +69,11 @@ class FolioVoltServiceProvider extends ServiceProvider
         //$currentLocale = LaravelLocalization::setLocale() ?? app()->getLocale();
 
         Folio::path($theme_path)
+<<<<<<< HEAD
             ->uri(LaravelLocalization::setLocale() ?? app()->getLocale() )
+=======
+            ->uri( app()->getLocale() )
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
             ->middleware([
                 '*' => $base_middleware,
             ]);
@@ -81,7 +91,11 @@ class FolioVoltServiceProvider extends ServiceProvider
             }
             $paths[] = $path;
             Folio::path($path)
+<<<<<<< HEAD
                 ->uri( LaravelLocalization::setLocale() ?? app()->getLocale() )
+=======
+                ->uri( app()->getLocale() )
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
                 ->middleware([
                     '*' => $base_middleware
                 ]);

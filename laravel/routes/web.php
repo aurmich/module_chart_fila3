@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
@@ -44,3 +45,5 @@ declare(strict_types=1);
 // Le rotte frontend sono gestite tramite Laravel Folio + Volt.
 // Le rotte backend sono definite nei rispettivi moduli.
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)

@@ -45,10 +45,14 @@ class RouteServiceProvider extends ServiceProvider
         $router = app('router');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         // $this->registerLang(); // ✅ Temporaneamente disabilitato per debug
 =======
         $this->registerLang();
 >>>>>>> aurmich/dev
+=======
+        // $this->registerLang(); // ✅ Temporaneamente disabilitato per debug
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         $this->registerRoutePattern($router);
         $this->registerMyMiddleware($router);
     }
@@ -100,15 +104,21 @@ class RouteServiceProvider extends ServiceProvider
             $lang = $user->lang ?? $lang;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         
         // ✅ Controllo sicuro della configurazione laravellocalization
         $locales = config()->has('laravellocalization.supportedLocales') 
             ? config('laravellocalization.supportedLocales') 
             : null;
             
+<<<<<<< HEAD
 =======
         $locales = config('laravellocalization.supportedLocales');
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         if (is_array($locales)) {
             $langs = array_keys($locales);
         }
@@ -128,14 +138,20 @@ class RouteServiceProvider extends ServiceProvider
     public function registerRoutePattern(Router $router): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         // ✅ Controllo sicuro della configurazione laravellocalization
         $langs = config()->has('laravellocalization.supportedLocales') 
             ? config('laravellocalization.supportedLocales') 
             : ['it' => 'it', 'en' => 'en'];
             
+<<<<<<< HEAD
 =======
         $langs = config('laravellocalization.supportedLocales');
 >>>>>>> aurmich/dev
+=======
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         if (! is_array($langs)) {
             $langs = ['it' => 'it', 'en' => 'en'];
         }

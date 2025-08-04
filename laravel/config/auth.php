@@ -63,10 +63,14 @@ return [
         'users' => [
             'driver' => 'eloquent',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'model' => env('AUTH_MODEL', \Modules\SaluteOra\Models\User::class),
 =======
             'model' => Modules\SaluteOra\Models\User::class,
 >>>>>>> aurmich/dev
+=======
+            'model' => env('AUTH_MODEL', App\Models\User::class),
+>>>>>>> 03b27bf2 (✨ (laravel): update .env.example to remove DEBUGBAR_ENABLED and improve clarity)
         ],
 
         // 'users' => [
@@ -108,7 +112,7 @@ return [
     | Password Confirmation Timeout
     |--------------------------------------------------------------------------
     |
-    | Here you may define the amount of seconds before a password confirmation
+    | Here you may define the number of seconds before a password confirmation
     | window expires and users are asked to re-enter their password via the
     | confirmation screen. By default, the timeout lasts for three hours.
     |
