@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     'title' => 'SaluteOra',
     'sitename' => 'SaluteOra',
     'subtitle' => 'slogan',
@@ -12,6 +13,11 @@ return [
     'sitename' => 'foodfriendfinder',
     'subtitle' => 'Find restaurants, specials, and coupons for free',
 >>>>>>> 54f4fa16 (.)
+=======
+    'title' => 'SaluteOra',
+    'sitename' => 'SaluteOra',
+    'subtitle' => 'slogan',
+>>>>>>> 175d22a3 (.)
     'sottotitolo_comune' => '',
     'generator' => '',
     'charset' => 'UTF-8',
