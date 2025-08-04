@@ -51,13 +51,9 @@ return array (
       'placeholder' => 'Inserisci i parametri',
       'label' => 'Parametri',
     ),
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 484b1fe (.)
     'body_html' => 
     array (
+<<<<<<< HEAD
       'description' => 'body_html',
 <<<<<<< HEAD
 =======
@@ -71,17 +67,19 @@ return array (
 =======
       'label' => 'body_html',
 >>>>>>> 85c2afe6 (✨ (SpatieEmail.php): add dynamic theme support for email layout path to enhance customization)
+=======
+      'description' => 'Contenuto HTML',
+      'helper_text' => 'Contenuto HTML dell\'email',
+      'placeholder' => 'Inserisci il contenuto HTML',
+      'label' => 'Contenuto HTML',
+>>>>>>> 67232898 (Resolve Git conflicts in User module and related files)
     ),
     'subject' => 
     array (
-      'description' => 'subject',
-<<<<<<< HEAD
-    ),
->>>>>>> 86996d7 (.)
-=======
-      'helper_text' => 'subject',
-    ),
->>>>>>> 484b1fe (.)
+      'description' => 'Oggetto email',
+      'helper_text' => 'Inserisci l\'oggetto dell\'email',
+      'label' => 'Oggetto',
+    )
   ),
   'actions' => 
   array (
