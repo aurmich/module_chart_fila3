@@ -4,6 +4,9 @@ globs:
 alwaysApply: false
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0376dc80 (📝 (array-to-string-conversion-fix.mdc): add rules to prevent "Array to string conversion" errors when handling attachments with Spatie Media Library to ensure architectural consistency and proper data handling)
 # Regola Cursor – Array to String Conversion in Models con Media Library
 
 ## Ambito
@@ -116,5 +119,8 @@ public function execute(array $data): Patient
 
 ## Ultimo aggiornamento
 2025-06-26
+<<<<<<< HEAD
 =======
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+>>>>>>> 0376dc80 (📝 (array-to-string-conversion-fix.mdc): add rules to prevent "Array to string conversion" errors when handling attachments with Spatie Media Library to ensure architectural consistency and proper data handling)
