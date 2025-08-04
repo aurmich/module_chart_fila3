@@ -57,11 +57,17 @@ return [
     'color_hamburger' => '#000',
     'color_banner' => '#000',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 536c6be4 (.)
     'colors' => [
         'primary' => '#FF5F7E',
     ]
 ];
 
+<<<<<<< HEAD
 =======
 ];
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> 536c6be4 (.)

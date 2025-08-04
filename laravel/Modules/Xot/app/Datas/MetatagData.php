@@ -460,12 +460,18 @@ class MetatagData extends Data implements Wireable
     public function getColors(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         return ($this->colors);
         //return $this->getThemeColors();
 =======
         return $this->getThemeColors();
 >>>>>>> 54f4fa16 (.)
+=======
+
+        return ($this->colors);
+        //return $this->getThemeColors();
+>>>>>>> 536c6be4 (.)
     }
 
     /**
