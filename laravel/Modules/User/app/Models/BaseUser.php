@@ -320,6 +320,7 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     public function __construct(array $attributes = [])
     {
         // Concateno i fillable del parent con quelli della classe corrente
+<<<<<<< HEAD
         // array_values() garantisce che sia un array indicizzato (list<string>)
         $this->fillable = array_values(array_merge(parent::getFillable(), $this->getFillable()));
 
@@ -331,6 +332,13 @@ abstract class BaseUser extends Authenticatable implements HasName, HasTenants, 
     public $pivot;
 
 >>>>>>> 54f4fa16 (.)
+=======
+        $this->fillable = array_merge(parent::getFillable(), $this->getFillable());
+        
+        parent::__construct($attributes);
+    }
+
+>>>>>>> adac82bd (rebase)
     public function canAccessFilament(?Panel $panel = null): bool
     {
         // return $this->role_id === Role::ROLE_ADMINISTRATOR;

@@ -222,8 +222,11 @@ class Patient extends User
      * @var array<int, string>
      */
     protected $fillable = [
+<<<<<<< HEAD
         'user_id',
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> adac82bd (rebase)
         'date_of_birth',
         'gender',
         'address',

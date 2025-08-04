@@ -5,7 +5,6 @@ namespace Modules\SaluteOra\Models;
 <<<<<<< HEAD
 <<<<<<< HEAD
 
-use Spatie\Permission\Traits\HasRoles;
 use Modules\User\Models\BaseUser;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\ModelStates\HasStates;
@@ -240,9 +239,11 @@ use Modules\User\Models\BaseUser;
 use Spatie\ModelStates\HasStates;
 use Spatie\Activitylog\LogOptions;
 use Illuminate\Support\Facades\Log;
+use Spatie\Permission\Traits\HasRoles;
 
-use Modules\SaluteOra\Enums\UserTypeEnum;
+use Modules\Gdpr\Models\Traits\HasGdpr;
 use Illuminate\Notifications\Notifiable;
+use Modules\SaluteOra\Enums\UserTypeEnum;
 use Modules\SaluteOra\States\User\Active;
 use Modules\SaluteOra\States\User\Pending;
 use Modules\SaluteOra\States\User\Inactive;
@@ -266,6 +267,7 @@ class User extends BaseUser
 {
     use LogsActivity;
     use HasStates;
+    use HasGdpr;
 
     /** @var string  */
     //protected $connection = 'user';
@@ -333,6 +335,7 @@ class User extends BaseUser
     /** @var array<int, string> */
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
     protected $fillable = [
+        //'id',
         'name',
         'email',
         'password',
@@ -340,11 +343,15 @@ class User extends BaseUser
         'state',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> adac82bd (rebase)
         'first_name',
         'last_name',
         'date_of_birth',
         'gender',
         'address',
+<<<<<<< HEAD
         'city',
         'phone',
         'lang',
@@ -355,10 +362,19 @@ class User extends BaseUser
         //'studio_id',
         //'continuation_token',
         'certifications'
+=======
+        'phone',
+        'lang',
+        'current_team_id',
+        'is_active',
+        'is_otp', // is One Time Password
+        'password_expires_at',
+>>>>>>> adac82bd (rebase)
     ];
 
     
 
+<<<<<<< HEAD
     /**
      * Cast custom per il campo type:
      * - Va dichiarato solo nel modello User del modulo SaluteOra, mai nella base User generica.
@@ -385,6 +401,8 @@ class User extends BaseUser
     /**  @return array<string, string>   */
 >>>>>>> 9c8742f8 (feat(docs): add new documentation files for navigation translation rules, model states, and icon naming conventions to improve clarity and maintainability)
 =======
+=======
+>>>>>>> adac82bd (rebase)
     /**
      * Cast custom per il campo type:
      * - Va dichiarato solo nel modello User del modulo SaluteOra, mai nella base User generica.

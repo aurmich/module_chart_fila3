@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\SaluteOra\Filament\Resources\PatientResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Filament\Tables;
 use Illuminate\Support\Arr;
@@ -20,6 +21,9 @@ use Modules\SaluteOra\Filament\Resources\UserResource\Pages\ListUsers;
 
 class ListPatients extends ListUsers
 =======
+=======
+use Modules\SaluteOra\Models\Patient;
+>>>>>>> adac82bd (rebase)
 use Modules\SaluteOra\Filament\Resources\PatientResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
@@ -30,6 +34,7 @@ class ListPatients extends XotBaseListRecords
 
     public function getTableColumns(): array
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         $columns = parent::getTableColumns();
         $columns = Arr::except($columns, ['type']);
@@ -58,6 +63,9 @@ class ListPatients extends XotBaseListRecords
     }
 
 =======
+=======
+        dddx(app(Patient::class)->getFillable());
+>>>>>>> adac82bd (rebase)
         return [
             //'id' => \Filament\Tables\Columns\TextColumn::make('id')
                 //->sortable(),

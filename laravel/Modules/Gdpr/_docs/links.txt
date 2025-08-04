@@ -1,8 +1,11 @@
 https://github.com/maize-tech/laravel-legal-consent
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> 54f4fa16 (.)
+=======
+>>>>>>> adac82bd (rebase)
 https://github.com/foothing/laravel-gdpr-consent
 

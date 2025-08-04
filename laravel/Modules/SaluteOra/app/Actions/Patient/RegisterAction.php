@@ -26,7 +26,13 @@ use Modules\SaluteOra\Models\User;
 =======
 use Modules\SaluteOra\States\User\Pending;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 >>>>>>> 72f588e8 (fileupload to spatiefileupload + final button wizard)
+=======
+use Illuminate\Support\Facades\Notification;
+use Modules\Notify\Notifications\RecordNotification;
+
+>>>>>>> adac82bd (rebase)
 
 class RegisterAction
 {
@@ -157,6 +163,10 @@ class RegisterAction
                     'accepted_at' => now(),
                 ]);
             }
+
+            Notification::route('mail', $data['email'])
+            //->locale('it')
+            ->notify(new RecordNotification($patient,'patient_registration_pending'));
 
             return $patient;
         });

@@ -701,6 +701,9 @@ return array (
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> adac82bd (rebase)
       'description' => 'last_name',
       'helper_text' => 'last_name',
       'placeholder' => 'last_name',
@@ -740,6 +743,7 @@ return array (
       'help' => 'Indirizzo email valido',
       'description' => 'email',
       'helper_text' => 'email',
+<<<<<<< HEAD
     ),
     'phone' => 
     array (
@@ -879,12 +883,16 @@ return array (
       'placeholder' => 'Inserisci l\'email',
       'help' => 'Indirizzo email valido',
 >>>>>>> d55a72aa (.)
+=======
+>>>>>>> adac82bd (rebase)
     ),
     'phone' => 
     array (
       'label' => 'Telefono',
       'placeholder' => 'Inserisci il numero di telefono',
       'help' => 'Numero di telefono per contatti',
+      'description' => 'phone',
+      'helper_text' => 'phone',
     ),
     'address' => 
     array (
