@@ -380,5 +380,9 @@ return array (
     array (
       'label' => 'search_step',
     ),
+    'test_step' => 
+    array (
+      'label' => 'test_step',
+    ),
   ),
 );

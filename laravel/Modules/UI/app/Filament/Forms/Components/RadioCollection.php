@@ -6,9 +6,14 @@ namespace Modules\UI\Filament\Forms\Components;
 
 use Closure;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Collection;
 use Filament\Forms\Components\Field;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+=======
+use Filament\Forms\Components\Field;
+use Illuminate\Support\Collection;
+>>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
 =======
 use Filament\Forms\Components\Field;
 use Illuminate\Support\Collection;
@@ -84,6 +89,7 @@ class RadioCollection extends Field
      * Comparazione type-safe per determinare se un'opzione è selezionata.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * 
      * @param mixed $option
      * @return bool
@@ -101,11 +107,16 @@ class RadioCollection extends Field
      * @param mixed $option
      * @return bool
 >>>>>>> 345f8677 (phpstan)
+=======
+>>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
      */
     public function isOptionSelected($option): bool
     {
         $currentValue = (string) $this->getState();
         $optionValue = (string) data_get($option, $this->getValueKey());
+<<<<<<< HEAD
+>>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
+=======
 >>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
         
         return $currentValue === $optionValue;

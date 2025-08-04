@@ -113,6 +113,9 @@ StudioCardSelector::make('studio')
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
 =======
 >>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
 ### RadioCollection
@@ -148,12 +151,15 @@ RadioCollection::make('selection')
 [**📖 Documentazione Filosofica Completa**](./components/radio-collection-component.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
 =======
 >>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
 =======
 >>>>>>> d31a752a (✨ (saluteora): add new rules for handling patient attachments to prevent "Array to string conversion" errors during patient registration)
+=======
+>>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
 ### LocationSelector
 
 Componente per la selezione gerarchica di dati geografici (Regione → Provincia → CAP).
@@ -1436,6 +1442,9 @@ I componenti SVG per le bandiere sono registrati automaticamente e possono esser
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
 =======
 >>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
 
@@ -1573,6 +1582,7 @@ Tutti i componenti UI condivisi devono essere posizionati in `Modules/UI/resourc
 - [UI Components Architecture](../README.md)
 
 *Documentazione aggiornata: Dicembre 2024* 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> aurmich/dev
@@ -2742,3 +2752,5 @@ Non è necessario:
 >>>>>>> 7440f060 (delete duplicate folder + add .md)
 =======
 >>>>>>> bead9c28 (fix case)
+=======
+>>>>>>> 94659d1c (✨ (RadioCollection): introduce a new RadioCollection component for customizable radio button groups in Filament forms)
