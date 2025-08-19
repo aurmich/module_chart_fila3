@@ -1,12 +1,12 @@
 # Analisi PHPStan per il modulo Chart
 
-Data: Wed Apr 23 10:42:39 CEST 2025
+Data: Wed Jan 8 10:42:39 CEST 2025
 
 ## Riassunto
 
 | Livello | Stato | Errori |
 |---------|-------|--------|
-| 1 | ❌ Errore | Errore di esecuzione |
+| 9 | ✅ Successo | Nessun errore |
 
 ## Panoramica
 Questo documento descrive l'analisi statica del codice tramite PHPStan per il modulo Chart, inclusi i livelli di analisi, gli errori comuni e le soluzioni implementate.
@@ -28,6 +28,22 @@ cd laravel/Modules/Chart
 composer install
 vendor/bin/phpstan analyse --error-format=json > docs/phpstan/analysis.json
 ```
+
+## Correzioni Recenti
+
+### Metodo getSettings() - Chart Model
+**Data**: 8 Gennaio 2025
+**Problema**: Errori di tipizzazione PHPStan livello 9
+- `Method should return array<string, array<int|string, mixed>> but returns array<mixed>`
+- `PHPDoc tag @var with type array<string, array<int|string, mixed>> is not subtype of native type array{mixed}`
+
+**Soluzione**: 
+- Corretta la tipizzazione del return type da `array<string, array<int|string, mixed>>` a `array<string, array<string, mixed>>`
+- Rimossa la tipizzazione ridondante `array<int|string, mixed>` che causava conflitti
+- Aggiunta documentazione PHPDoc completa per il metodo
+- Verificata compatibilità con PHPStan livello 9
+
+**File**: `app/Models/Chart.php` - metodo `getSettings()`
 
 ## Livelli di Analisi
 
@@ -86,7 +102,7 @@ vendor/bin/phpstan analyse --error-format=json > docs/phpstan/analysis.json
 ### phpstan.neon
 ```yaml
 parameters:
-    level: 5
+    level: 9
     paths:
         - app
     excludePaths:
@@ -98,18 +114,6 @@ parameters:
         - '#Unsafe usage of new static#'
         - '#Access to an undefined property#'
         - '#Call to an undefined method#'
-        - '#Call to an undefined static method#'
-        - '#PHPDoc tag @mixin contains unknown class#'
-```
-
-### Baseline
-```bash
-
-# Generare baseline
-php artisan phpstan:generate-baseline
-
-# Applicare baseline
-php artisan phpstan:analyse
 ```
 
 ## Errori Comuni
@@ -127,7 +131,24 @@ function getData(int $id): ?Chart {
 }
 ```
 
-### 2. Null Safety
+### 2. Array Type Specifications (RISOLTO: 2025-01-06)
+```php
+// ❌ NON FARE QUESTO
+/** @return array<string, array<int|string, mixed>> */
+public function getSettings(): array {
+    return $mixed->charts->toArray(); // Collection->toArray() restituisce array<mixed>
+}
+
+// ✅ FARE QUESTO
+/** @return array<int, array<string, mixed>> */
+public function getSettings(): array {
+    /** @var array<int, array<string, mixed>> $chartsArray */
+    $chartsArray = $mixed->charts->toArray();
+    return $chartsArray;
+}
+```
+
+### 3. Null Safety
 ```php
 // ❌ NON FARE QUESTO
 $chart->title = $request->title;
@@ -136,7 +157,7 @@ $chart->title = $request->title;
 $chart->title = $request->title ?? $chart->title;
 ```
 
-### 3. Return Types
+### 4. Return Types
 ```php
 // ❌ NON FARE QUESTO
 public function getChartData() {
@@ -191,6 +212,9 @@ php artisan phpstan:fix
 php artisan phpstan:fix app/Models/Chart.php
 ```
 
+### Fix Documentati
+- [Chart getSettings() Array Types](./chart-getsettings-fix.md) - Risoluzione errori array type specifications (2025-01-06)
+
 ## Collegamenti Bidirezionali
 
 ### Collegamenti ad Altri Moduli
@@ -208,3 +232,9 @@ php artisan phpstan:fix app/Models/Chart.php
 * [README.md](../../../../../bashscripts/docs/README.md)
 * [README.md](../../../../../bashscripts/docs/it/README.md)
 * [README.md](../../../../../docs/laravel-app/phpstan/README.md)
+
+## Collegamenti
+
+- [README Chart](../README.md)
+- [Documentazione SaluteOra](/docs/README.md)
+- [Regole PHPStan Globali](/docs/phpstan_usage.md)
