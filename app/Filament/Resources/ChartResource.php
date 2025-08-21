@@ -20,7 +20,6 @@ class ChartResource extends XotBaseResource
 {
     protected static ?string $model = Chart::class;
 
-    /** @return array<string, \Filament\Forms\Components\Component> */
     public static function getFormSchema(): array
     {
         return [
