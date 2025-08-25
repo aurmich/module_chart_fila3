@@ -22,8 +22,8 @@ class AdminPanelProvider extends XotBasePanelProvider
         //    Js::make('chart-js-plugins', Vite::asset('resources/js/filament-chart-js-plugins.js', 'assets/chart'))->module(),
         // ]);
         FilamentAsset::register([
-            Css::make('chart-js-plugins', Vite::asset('resources/css/app.css', 'assets/chart')),
             Js::make('chart-js-plugins', Vite::asset('resources/js/filament-chart-js-plugins.js', 'assets/chart'))->module(),
+            Css::make('chart-js-plugins', Vite::asset('resources/css/app.css', 'assets/chart')),
         ]);
 
         return $panel;
