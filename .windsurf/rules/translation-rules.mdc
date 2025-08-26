@@ -162,15 +162,7 @@ return [
 - **PROCESSO**: Se esistono entrambi, assemblare contenuti e eliminare quello minuscolo
 
 ## REGOLA CRITICA PER CONFLITTI GIT: RISOLVERE IMMEDIATAMENTE
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **VIETATO**: Lasciare marker `<<< HEAD` nei file
-=======
 - **VIETATO**: Lasciare marker  nei file
->>>>>>> 359b1c2 (.)
-=======
-- **VIETATO**: Lasciare marker  nei file
->>>>>>> bf68c71 (.)
 - **OBBLIGATORIO**: Risolvere immediatamente tutti i conflitti
 - **OBBLIGATORIO**: Eliminare file binari con conflitti
 
