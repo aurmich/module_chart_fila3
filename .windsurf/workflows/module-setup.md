@@ -1,9 +1,14 @@
 ---
+<<<<<<< HEAD
 name: "Module Setup"
 description: "Setup automatico completo di un nuovo modulo Laraxot con tutte le strutture e configurazioni necessarie"
 version: "1.0"
 author: "Laraxot AI Assistant"
 tags: ["laraxot", "module", "setup", "automation"]
+=======
+description: "Setup automatico completo di un nuovo modulo Laraxot con tutte le strutture e configurazioni necessarie"
+auto_execution_mode: 1
+>>>>>>> 359b1c2 (.)
 ---
 
 # Module Setup Workflow
@@ -76,7 +81,11 @@ Crea `Modules/{ModuleName}/composer.json`:
     "license": "MIT",
     "require": {
         "php": "^8.1",
+<<<<<<< HEAD
         "laravel/framework": "^10.0"
+=======
+        "laravel/framework": "*"
+>>>>>>> 359b1c2 (.)
     },
     "autoload": {
         "psr-4": {
@@ -822,5 +831,9 @@ Al termine di questo workflow, avrai:
 
 Il nuovo modulo sarà immediatamente funzionante e conforme a tutti gli standard del progetto Laraxot.
 
+<<<<<<< HEAD
 ---
 
+=======
+---
+>>>>>>> 359b1c2 (.)

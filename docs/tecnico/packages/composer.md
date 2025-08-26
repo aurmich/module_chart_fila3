@@ -64,7 +64,11 @@ composer --version
        "license": "MIT",
        "require": {
            "php": "^8.2",
+<<<<<<< HEAD
            "laravel/framework": "^10.0",
+=======
+           "laravel/framework": "*",
+>>>>>>> 359b1c2 (.)
            "nwidart/laravel-modules": "^10.0"
        },
        "autoload": {

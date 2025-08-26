@@ -81,8 +81,13 @@ php artisan vendor:publish --provider="Nwidart\Modules\LaravelModulesServiceProv
     "license": "MIT",
     "require": {
         "php": "^8.2",
+<<<<<<< HEAD
         "laravel/framework": "^11.0",
         "nwidart/laravel-modules": "^10.0"
+=======
+        "laravel/framework": "*",
+        "nwidart/laravel-modules": "*"
+>>>>>>> 359b1c2 (.)
     },
     "autoload": {
         "psr-4": {
