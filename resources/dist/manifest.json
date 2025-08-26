@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "/js/app.js": "/js/app.js",
   "/css/app.css": "/css/app.css",
   "/js/chart.js": "/js/chart.js",
@@ -26,6 +27,10 @@
   "resources/css/app.css": {
     "file": "assets/app-TEpYTtE_.css",
 >>>>>>> 359b1c2 (.)
+=======
+  "resources/css/app.css": {
+    "file": "assets/app-TEpYTtE_.css",
+>>>>>>> bf68c71 (.)
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -37,16 +42,24 @@
   },
   "resources/js/filament-chart-js-plugins.js": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "file": "assets/filament-chart-js-plugins-1O2DZ1dQ.js",
 =======
     "file": "assets/filament-chart-js-plugins-K1DHZwl3.js",
 >>>>>>> 359b1c2 (.)
+=======
+    "file": "assets/filament-chart-js-plugins-K1DHZwl3.js",
+>>>>>>> bf68c71 (.)
     "name": "filament-chart-js-plugins",
     "src": "resources/js/filament-chart-js-plugins.js",
     "isEntry": true
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> 359b1c2 (.)
+=======
+}
+>>>>>>> bf68c71 (.)

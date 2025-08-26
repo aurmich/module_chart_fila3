@@ -1,14 +1,21 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bf68c71 (.)
 name: "Module Setup"
 description: "Setup automatico completo di un nuovo modulo Laraxot con tutte le strutture e configurazioni necessarie"
 version: "1.0"
 author: "Laraxot AI Assistant"
 tags: ["laraxot", "module", "setup", "automation"]
+<<<<<<< HEAD
 =======
 description: "Setup automatico completo di un nuovo modulo Laraxot con tutte le strutture e configurazioni necessarie"
 auto_execution_mode: 1
 >>>>>>> 359b1c2 (.)
+=======
+auto_execution_mode: 1
+>>>>>>> bf68c71 (.)
 ---
 
 # Module Setup Workflow
@@ -39,7 +46,10 @@ Controlla che:
 Crea la struttura completa:
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> bf68c71 (.)
 # Directory principale modulo
 mkdir -p Modules/{ModuleName}
 
@@ -82,10 +92,14 @@ Crea `Modules/{ModuleName}/composer.json`:
     "require": {
         "php": "^8.1",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "laravel/framework": "^10.0"
 =======
         "laravel/framework": "*"
 >>>>>>> 359b1c2 (.)
+=======
+        "laravel/framework": "^10.0"
+>>>>>>> bf68c71 (.)
     },
     "autoload": {
         "psr-4": {
@@ -110,6 +124,7 @@ Crea `Modules/{ModuleName}/module.json`:
     "name": "{ModuleName}",
     "alias": "{module-name-lowercase}",
     "description": "{Descrizione del modulo}",
+<<<<<<< HEAD
     "keywords": [],
     "priority": 0,
     "providers": [
@@ -124,6 +139,21 @@ Crea `Modules/{ModuleName}/module.json`:
 ## Fase 4: Provider e Configurazioni
 
 ### 4.1 ServiceProvider Principale
+=======
+    "keywords": ["laraxot", "module", "{keywords}"],
+    "version": "1.0.0",
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\{ModuleName}\\Providers\\{ModuleName}ServiceProvider"
+    ],
+    "aliases": {},
+    "files": []
+}
+```
+
+### 3.3 Service Provider
+>>>>>>> bf68c71 (.)
 Crea `Modules/{ModuleName}/app/Providers/{ModuleName}ServiceProvider.php`:
 
 ```php
@@ -135,6 +165,7 @@ namespace Modules\{ModuleName}\Providers;
 
 use Modules\Xot\Providers\XotBaseServiceProvider;
 
+<<<<<<< HEAD
 /**
  * Service provider for the {ModuleName} module.
  */
@@ -169,10 +200,22 @@ class {ModuleName}ServiceProvider extends XotBaseServiceProvider
         parent::register();
         
         // Module-specific service registration here
+=======
+class {ModuleName}ServiceProvider extends XotBaseServiceProvider
+{
+    public string $name = '{ModuleName}';
+    public string $nameLower = '{module-name-lowercase}';
+
+    public function boot(): void
+    {
+        parent::boot();
+        // Logica custom del modulo qui
+>>>>>>> bf68c71 (.)
     }
 }
 ```
 
+<<<<<<< HEAD
 ### 4.2 RouteServiceProvider
 Crea `Modules/{ModuleName}/app/Providers/RouteServiceProvider.php`:
 
@@ -258,6 +301,11 @@ class AdminPanelProvider extends XotBasePanelProvider
 ## Fase 5: Modelli Base
 
 ### 5.1 BaseModel
+=======
+## Fase 4: File Base
+
+### 4.1 BaseModel
+>>>>>>> bf68c71 (.)
 Crea `Modules/{ModuleName}/app/Models/BaseModel.php`:
 
 ```php
@@ -269,6 +317,7 @@ namespace Modules\{ModuleName}\Models;
 
 use Modules\Xot\Models\XotBaseModel;
 
+<<<<<<< HEAD
 /**
  * Base model for the {ModuleName} module.
  */
@@ -732,12 +781,107 @@ Crea `Modules/{ModuleName}/tests/Unit/Models/{ModuleName}Test.php`
 
 ### 12.1 Migrazione Base
 Crea migrazione per la tabella principale del modulo seguendo le regole Laraxot:
+=======
+abstract class BaseModel extends XotBaseModel
+{
+    // Personalizzazioni specifiche del modulo
+}
+```
+
+### 4.2 README.md
+Crea `Modules/{ModuleName}/README.md`:
+
+```markdown
+# {ModuleName} Module
+
+{Descrizione del modulo}
+
+## Features
+
+- Feature 1
+- Feature 2
+- Feature 3
+
+## Installation
+
+```bash
+composer require laraxot/{module-name-lowercase}
+```
+
+## Usage
+
+{Esempi di utilizzo}
+
+## Documentation
+
+Vedi la cartella `docs/` per documentazione dettagliata.
+```
+
+## Fase 5: Documentazione
+
+### 5.1 Docs Structure
+Crea la struttura documentazione:
+
+```bash
+# Documentazione principale
+touch Modules/{ModuleName}/docs/README.md
+
+# Documentazione specifica
+mkdir -p Modules/{ModuleName}/docs/{features,api,deployment}
+touch Modules/{ModuleName}/docs/{features,api,deployment}/README.md
+```
+
+### 5.2 Docs README
+Crea `Modules/{ModuleName}/docs/README.md`:
+
+```markdown
+# {ModuleName} Module Documentation
+
+## Overview
+
+{Descrizione dettagliata del modulo}
+
+## Table of Contents
+
+- [Installation](installation.md)
+- [Configuration](configuration.md)
+- [Usage](usage.md)
+- [API Reference](api/README.md)
+- [Deployment](deployment/README.md)
+
+## Quick Start
+
+{Guida rapida all'utilizzo}
+
+## Support
+
+{Informazioni di supporto}
+```
+
+## Fase 6: Testing
+
+### 6.1 Test Structure
+Crea la struttura test:
+
+```bash
+# Test base
+touch Modules/{ModuleName}/tests/TestCase.php
+
+# Test specifici
+touch Modules/{ModuleName}/tests/Feature/{ModuleName}Test.php
+touch Modules/{ModuleName}/tests/Unit/{ModuleName}Test.php
+```
+
+### 6.2 TestCase Base
+Crea `Modules/{ModuleName}/tests/TestCase.php`:
+>>>>>>> bf68c71 (.)
 
 ```php
 <?php
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -837,3 +981,84 @@ Il nuovo modulo sarà immediatamente funzionante e conforme a tutti gli standard
 =======
 ---
 >>>>>>> 359b1c2 (.)
+=======
+namespace Modules\{ModuleName}\Tests;
+
+use Tests\TestCase as BaseTestCase;
+
+abstract class TestCase extends BaseTestCase
+{
+    protected function setUp(): void
+    {
+        parent::setUp();
+        // Setup specifico del modulo
+    }
+}
+```
+
+## Fase 7: Validazione
+
+### 7.1 Controlli Post-Creazione
+Verifica che:
+- Tutti i file siano creati correttamente
+- I namespace siano corretti
+- Le dipendenze siano configurate
+- La struttura sia conforme agli standard Laraxot
+
+### 7.2 Test di Base
+Esegui:
+```bash
+cd laravel
+composer dump-autoload
+php artisan test --filter={ModuleName}
+```
+
+## Fase 8: Documentazione Finale
+
+### 8.1 Aggiorna Docs Root
+Aggiorna `docs/README.md` con:
+- Riferimento al nuovo modulo
+- Collegamento alla documentazione
+- Aggiornamento della tabella moduli
+
+### 8.2 Aggiorna Windsurf Rules
+Aggiorna `.windsurf/rules/` con:
+- Regole specifiche del modulo
+- Best practices identificate
+- Pattern di utilizzo
+
+## Best Practices
+
+1. **Seguire sempre le convenzioni Laraxot**
+2. **Utilizzare XotBase per estensioni**
+3. **Documentare ogni decisione architetturale**
+4. **Implementare test per tutte le funzionalità**
+5. **Mantenere coerenza con moduli esistenti**
+
+## Checklist Finale
+
+- [ ] Struttura directory completa
+- [ ] File di configurazione creati
+- [ ] Service provider configurato
+- [ ] BaseModel estende XotBaseModel
+- [ ] Documentazione iniziale creata
+- [ ] Test base implementati
+- [ ] Namespace corretti
+- [ ] Autoload funzionante
+- [ ] Documentazione root aggiornata
+- [ ] Windsurf rules aggiornate
+
+## Note Importanti
+
+- **MAI** creare moduli che duplicano funzionalità esistenti
+- **SEMPRE** estendere classi base Xot
+- **SEMPRE** documentare decisioni e pattern
+- **SEMPRE** implementare test di base
+- **SEMPRE** seguire le convenzioni di naming
+
+---
+
+**Ultimo aggiornamento**: Dicembre 2024
+**Versione**: 2.0
+**Compatibilità**: Laraxot Framework, PHP 8.1+, Laravel 10+
+>>>>>>> bf68c71 (.)
