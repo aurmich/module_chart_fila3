@@ -13,6 +13,7 @@ declare(strict_types=1);
 
 use function Safe\file_get_contents;
 use function Safe\file_put_contents;
+use function Safe\preg_match;
 
 $basePath = __DIR__ . '/../laravel/Modules';
 
@@ -69,9 +70,9 @@ $defaultNavigation = [
  * Processa un file di traduzione per correggere i valori della navigazione
  * @param string $filePath Percorso del file da processare
  * @param array<string, mixed> $defaults Valori di default per la navigazione
- * @return void
+ * @return bool True se il file è stato modificato, false altrimenti
  */
-function processFile(string $filePath, array $defaults): void {
+function processFile(string $filePath, array $defaults): bool {
     $content = file_get_contents($filePath);
     $originalContent = $content;
     
@@ -93,11 +94,20 @@ function processFile(string $filePath, array $defaults): void {
             'icon' => 'heroicon-o-document',
         ];
         
+        // Validazione del tipo e estrazione sicura dei valori
+        if (!is_array($settings)) {
+            return false;
+        }
+        
+        $label = is_string($settings['label'] ?? null) ? $settings['label'] : 'Unknown';
+        $group = is_string($settings['group'] ?? null) ? $settings['group'] : 'Altro';
+        $icon = is_string($settings['icon'] ?? null) ? $settings['icon'] : 'heroicon-o-document';
+        
         // Costruisci il nuovo blocco di navigazione
         $newNavigation = "[\n";
-        $newNavigation .= "        'label' => '" . $settings['label'] . "',\n";
-        $newNavigation .= "        'group' => '" . $settings['group'] . "',\n";
-        $newNavigation .= "        'icon' => '" . $settings['icon'] . "',\n";
+        $newNavigation .= "        'label' => '" . $label . "',\n";
+        $newNavigation .= "        'group' => '" . $group . "',\n";
+        $newNavigation .= "        'icon' => '" . $icon . "',\n";
         $newNavigation .= "    ]";
         
         // Sostituisci il blocco di navigazione

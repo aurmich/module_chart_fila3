@@ -111,9 +111,10 @@ log_info("Verifica completata per: $file");
 
 // 6. Trova altri file con problemi simili
 log_info("Ricerca altri file con problemi simili...");
-$files_to_check = glob(dirname($file) . '/*.php');
-if ($files_to_check === false) {
-    log_warn("Impossibile trovare file nella directory");
+try {
+    $files_to_check = glob(dirname($file) . '/*.php');
+} catch (\Exception $e) {
+    log_warn("Impossibile trovare file nella directory: " . $e->getMessage());
     exit(0);
 }
 
