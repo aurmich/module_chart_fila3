@@ -5,17 +5,22 @@ require_once __DIR__.'/../vendor/autoload.php';
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
+use function Safe\copy;
+use function Safe\file_get_contents;
+use function Safe\json_decode;
+use function Safe\exec;
+use function Safe\glob;
 
 // Funzione per il logging
-function log_info($message) {
+function log_info(string $message): void {
     echo "\033[32m[INFO]\033[0m $message\n";
 }
 
-function log_warn($message) {
+function log_warn(string $message): void {
     echo "\033[33m[WARN]\033[0m $message\n";
 }
 
-function log_error($message) {
+function log_error(string $message): void {
     echo "\033[31m[ERROR]\033[0m $message\n";
 }
 
@@ -61,14 +66,22 @@ log_info("Verifica schema del form...");
 $content = file_get_contents($file);
 $schema = json_decode($content, true);
 
-if (json_last_error() !== JSON_ERROR_NONE) {
+if (!is_array($schema) || json_last_error() !== JSON_ERROR_NONE) {
     log_error("Errore nel parsing JSON: " . json_last_error_msg());
     exit(1);
 }
 
 // Verifica campi obbligatori
 $required_fields = ['name', 'type', 'label'];
+if (!isset($schema['fields']) || !is_array($schema['fields'])) {
+    log_error("Campo 'fields' mancante o non valido nello schema");
+    exit(1);
+}
 foreach ($schema['fields'] as $field) {
+    if (!is_array($field)) {
+        log_error("Campo del form non è un array valido");
+        exit(1);
+    }
     foreach ($required_fields as $required) {
         if (!isset($field[$required])) {
             log_error("Campo mancante '$required' nel form");
@@ -99,12 +112,21 @@ log_info("Verifica completata per: $file");
 // 6. Trova altri file con problemi simili
 log_info("Ricerca altri file con problemi simili...");
 $files_to_check = glob(dirname($file) . '/*.php');
+if ($files_to_check === false) {
+    log_warn("Impossibile trovare file nella directory");
+    exit(0);
+}
 
 foreach ($files_to_check as $check_file) {
     if ($check_file === $file) continue;
     
-    $check_content = file_get_contents($check_file);
-    if (strpos($check_content, 'form') !== false) {
-        log_warn("File potenzialmente problematico trovato: $check_file");
+    try {
+        $check_content = file_get_contents($check_file);
+        if (strpos($check_content, 'form') !== false) {
+            log_warn("File potenzialmente problematico trovato: $check_file");
+        }
+    } catch (\Exception $e) {
+        log_warn("Impossibile leggere il file: $check_file - " . $e->getMessage());
+        continue;
     }
 }

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /**
  * Script per correggere i file di traduzione che contengono ".navigation"
  * 
@@ -8,6 +10,9 @@
  * 2. Sostituisce i valori con le etichette appropriate
  * 3. Mantiene la struttura corretta per la navigazione
  */
+
+use function Safe\file_get_contents;
+use function Safe\file_put_contents;
 
 $basePath = __DIR__ . '/../laravel/Modules';
 
@@ -60,8 +65,13 @@ $defaultNavigation = [
     ],
 ];
 
-// Funzione per processare i file PHP
-function processFile($filePath, $defaults) {
+/**
+ * Processa un file di traduzione per correggere i valori della navigazione
+ * @param string $filePath Percorso del file da processare
+ * @param array<string, mixed> $defaults Valori di default per la navigazione
+ * @return void
+ */
+function processFile(string $filePath, array $defaults): void {
     $content = file_get_contents($filePath);
     $originalContent = $content;
     

@@ -3,7 +3,14 @@
 
 declare(strict_types=1);
 
-function checkFormSchemaMethod($file)
+use function Safe\file_get_contents;
+
+/**
+ * Controlla se un file Resource ha il metodo getFormSchema implementato
+ * @param string $file Percorso del file da controllare
+ * @return string|null Nome della classe se estende XotBaseResource, null altrimenti
+ */
+function checkFormSchemaMethod(string $file): ?string
 {
     $content = file_get_contents($file);
 
