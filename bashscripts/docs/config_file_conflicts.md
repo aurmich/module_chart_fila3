@@ -76,31 +76,16 @@ File come:
 // Conflitto in require
 "require": {
     "php": "^8.2",
-<<<<<<< HEAD
-    "laravel/framework": "^10.0",
-=======
-    "laravel/framework": "*",
->>>>>>> 359b1c2 (.)
     "custom/package": "^1.0"
 }
 "require": {
     "php": "^8.2",
-<<<<<<< HEAD
-    "laravel/framework": "^10.0",
-=======
-    "laravel/framework": "*",
->>>>>>> 359b1c2 (.)
     "another/package": "^2.0"
 }
 
 // Risoluzione
 "require": {
     "php": "^8.2",
-<<<<<<< HEAD
-    "laravel/framework": "^10.0",
-=======
-    "laravel/framework": "*",
->>>>>>> 359b1c2 (.)
     "custom/package": "^1.0",
     "another/package": "^2.0"
 }
