@@ -1,7 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
+=======
+>>>>>>> ca80b08 (.)
 /**
  * Script per correggere i file di traduzione che contengono ".navigation"
  * 
@@ -11,10 +14,13 @@ declare(strict_types=1);
  * 3. Mantiene la struttura corretta per la navigazione
  */
 
+<<<<<<< HEAD
 use function Safe\file_get_contents;
 use function Safe\file_put_contents;
 use function Safe\preg_match;
 
+=======
+>>>>>>> ca80b08 (.)
 $basePath = __DIR__ . '/../laravel/Modules';
 
 // Mappatura dei valori di default per la navigazione
@@ -66,6 +72,7 @@ $defaultNavigation = [
     ],
 ];
 
+<<<<<<< HEAD
 /**
  * Processa un file di traduzione per correggere i valori della navigazione
  * @param string $filePath Percorso del file da processare
@@ -73,6 +80,10 @@ $defaultNavigation = [
  * @return bool True se il file è stato modificato, false altrimenti
  */
 function processFile(string $filePath, array $defaults): bool {
+=======
+// Funzione per processare i file PHP
+function processFile($filePath, $defaults) {
+>>>>>>> ca80b08 (.)
     $content = file_get_contents($filePath);
     $originalContent = $content;
     
@@ -94,6 +105,7 @@ function processFile(string $filePath, array $defaults): bool {
             'icon' => 'heroicon-o-document',
         ];
         
+<<<<<<< HEAD
         // Validazione del tipo e estrazione sicura dei valori
         if (!is_array($settings)) {
             return false;
@@ -108,6 +120,13 @@ function processFile(string $filePath, array $defaults): bool {
         $newNavigation .= "        'label' => '" . $label . "',\n";
         $newNavigation .= "        'group' => '" . $group . "',\n";
         $newNavigation .= "        'icon' => '" . $icon . "',\n";
+=======
+        // Costruisci il nuovo blocco di navigazione
+        $newNavigation = "[\n";
+        $newNavigation .= "        'label' => '" . $settings['label'] . "',\n";
+        $newNavigation .= "        'group' => '" . $settings['group'] . "',\n";
+        $newNavigation .= "        'icon' => '" . $settings['icon'] . "',\n";
+>>>>>>> ca80b08 (.)
         $newNavigation .= "    ]";
         
         // Sostituisci il blocco di navigazione

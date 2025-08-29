@@ -3,6 +3,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use function Safe\file_get_contents;
 
 /**
@@ -11,6 +12,9 @@ use function Safe\file_get_contents;
  * @return string|null Nome della classe se estende XotBaseResource, null altrimenti
  */
 function checkFormSchemaMethod(string $file): ?string
+=======
+function checkFormSchemaMethod($file)
+>>>>>>> ca80b08 (.)
 {
     $content = file_get_contents($file);
 

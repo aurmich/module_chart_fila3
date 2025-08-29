@@ -1,11 +1,14 @@
 <?php
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use function Safe\file;
 use function Safe\file_get_contents;
 use function Safe\json_decode;
 use function Safe\preg_match;
 
+=======
+>>>>>>> ca80b08 (.)
 /**
  * Script di validazione MCP: controlla la presenza e coerenza dei server MCP tra configurazione reale e documentazione.
  * Conforme alle regole Windsurf: tipizzazione, DocBlock, modularità.
@@ -17,11 +20,15 @@ use function Safe\preg_match;
  * @return array<string, array<string>>
  */
 function getExpectedServersPerModule(string $summaryPath): array {
+<<<<<<< HEAD
     try {
         $lines = file($summaryPath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     } catch (\Exception $e) {
         return [];
     }
+=======
+    $lines = file($summaryPath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+>>>>>>> ca80b08 (.)
     $modules = [];
     foreach ($lines as $line) {
         if (preg_match('/^\| (\w+) +\| ([^|]+)\|/', $line, $m)) {
@@ -43,6 +50,7 @@ function checkMcpConfig(string $configPath, array $expectedServers): array {
     if (!file_exists($configPath)) {
         return ["[ERROR] Configurazione non trovata: $configPath"];
     }
+<<<<<<< HEAD
     try {
         $content = file_get_contents($configPath);
         $config = json_decode($content, true);
@@ -53,6 +61,10 @@ function checkMcpConfig(string $configPath, array $expectedServers): array {
         return ["[ERROR] Impossibile leggere/parsare il file: $configPath - " . $e->getMessage()];
     }
     $found = array_keys($config['mcpServers']);
+=======
+    $config = json_decode(file_get_contents($configPath), true);
+    $found = array_keys($config['mcpServers'] ?? []);
+>>>>>>> ca80b08 (.)
     $missing = array_diff($expectedServers, $found);
     $extra = array_diff($found, $expectedServers);
     $out = [];

@@ -1,11 +1,14 @@
 <?php
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use function Safe\file;
 use function Safe\file_get_contents;
 use function Safe\preg_match;
 use function Safe\json_decode;
 
+=======
+>>>>>>> ca80b08 (.)
 /**
  * Script di validazione MCP: controlla la presenza e coerenza dei server MCP tra configurazione reale e documentazione.
  * Conforme alle regole Windsurf: tipizzazione, DocBlock, modularità.
@@ -40,10 +43,14 @@ function checkMcpConfig(string $configPath, array $expectedServers): array {
         return ["[ERROR] Configurazione non trovata: $configPath"];
     }
     $config = json_decode(file_get_contents($configPath), true);
+<<<<<<< HEAD
     if (!is_array($config)) {
         return ["[ERROR] Configurazione non valida: $configPath"];
     }
     $found = array_keys(is_array($config['mcpServers'] ?? null) ? $config['mcpServers'] : []);
+=======
+    $found = array_keys($config['mcpServers'] ?? []);
+>>>>>>> ca80b08 (.)
     $missing = array_diff($expectedServers, $found);
     $extra = array_diff($found, $expectedServers);
     $out = [];
