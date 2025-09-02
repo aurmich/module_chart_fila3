@@ -5,14 +5,7 @@
  43df3e0 (.)
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
  0440c57 (.)
-
-=======
- 0440c57 (.)
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
  0440c57 (.)
@@ -42,30 +35,18 @@ $this->getRelationValue('table')->name
 
 
  cb513be (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1831d11e78 (.)
 
  43df3e0 (.)
 
 
-<<<<<<< HEAD
-=======
  43df3e0 (.)
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> 1831d11e78 (.)
 $this->getRelationValue('table')->name
 
 
  0440c57 (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 >>>>>>> 1831d11e78 (.)
@@ -81,11 +62,6 @@ $this->getRelationValue('table')->name
 
 
  cb513be (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 >>>>>>> 1831d11e78 (.)
@@ -108,11 +84,6 @@ $query->when($request->filled('q'), function (Builder $query) use ($request) {
 
 
  cb513be (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 >>>>>>> 1831d11e78 (.)
@@ -120,24 +91,12 @@ $query->when($request->filled('q'), function (Builder $query) use ($request) {
  43df3e0 (.)
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+=======
 
  cb513be (.)
 
 })
  0440c57 (.)
-
-=======
-=======
-
->>>>>>> 1831d11e78 (.)
- cb513be (.)
-
-})
- 0440c57 (.)
-<<<<<<< HEAD
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 >>>>>>> 1831d11e78 (.)

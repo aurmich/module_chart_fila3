@@ -47,35 +47,11 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 Spesso i conflitti riguardano funzioni duplicate o con logiche diverse. Ecco una versione integrata e migliorata della funzione di log, che supporta sia il formato semplice che quello con livelli:
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> a38b33ce0f (.)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
 =======
 =======
->>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 574afe9e (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
 >>>>>>> f198176d (.)
@@ -115,35 +91,11 @@ log() {
 Quando si risolvono conflitti tra versioni che richiedono un numero diverso di parametri, preferire la soluzione più flessibile e documentata:
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> a38b33ce0f (.)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
 =======
 =======
->>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 574afe9e (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
 >>>>>>> f198176d (.)

@@ -1,12 +1,7 @@
 #!/bin/bash
 
 # Script per analizzare funzioni specifiche nei moduli
-<<<<<<< HEAD
-<<<<<<< HEAD
-# - getTableColumns
-=======
 # - getListTableColumns
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 # - getTableColumns
 >>>>>>> 1831d11e78 (.)
@@ -32,30 +27,15 @@ Data: $(date +"%Y-%m-%d %H:%M:%S")
 
 Questo documento contiene un'analisi dettagliata di funzioni specifiche presenti nei moduli.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-## 1. Funzioni getTableColumns, getTableActions e getTableBulkActions
-
-Queste funzioni devono restituire array con chiavi stringa. Di seguito sono riportati i risultati dell'analisi.
-
-### getTableColumns
-
-\`\`\`
-$(grep -r "function getTableColumns" laravel/Modules --include="*.php" | sort)
-=======
 ## 1. Funzioni getListTableColumns, getTableActions e getTableBulkActions
 =======
 ## 1. Funzioni getTableColumns, getTableActions e getTableBulkActions
->>>>>>> 1831d11e78 (.)
 
 Queste funzioni devono restituire array con chiavi stringa. Di seguito sono riportati i risultati dell'analisi.
 
 ### getTableColumns
 
 \`\`\`
-<<<<<<< HEAD
-$(grep -r "function getListTableColumns" laravel/Modules --include="*.php" | sort)
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 $(grep -r "function getTableColumns" laravel/Modules --include="*.php" | sort)
 >>>>>>> 1831d11e78 (.)
@@ -64,12 +44,7 @@ $(grep -r "function getTableColumns" laravel/Modules --include="*.php" | sort)
 #### Implementazioni che potrebbero non restituire array con chiavi stringa:
 
 \`\`\`
-<<<<<<< HEAD
-<<<<<<< HEAD
-$(grep -rA 10 "function getTableColumns" laravel/Modules --include="*.php" | grep -v "string" | grep "=>")
-=======
 $(grep -rA 10 "function getListTableColumns" laravel/Modules --include="*.php" | grep -v "string" | grep "=>")
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 $(grep -rA 10 "function getTableColumns" laravel/Modules --include="*.php" | grep -v "string" | grep "=>")
 >>>>>>> 1831d11e78 (.)
@@ -124,12 +99,7 @@ $(grep -r "get[A-Z][a-zA-Z]*(" laravel/Modules --include="*.php" | grep "metatag
 
 ## Raccomandazioni
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-### Per le funzioni getTableColumns, getTableActions, getTableBulkActions:
-=======
 ### Per le funzioni getListTableColumns, getTableActions, getTableBulkActions:
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 ### Per le funzioni getTableColumns, getTableActions, getTableBulkActions:
 >>>>>>> 1831d11e78 (.)

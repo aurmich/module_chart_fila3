@@ -51,11 +51,6 @@ php artisan migrate
 
 ### 7. Installare i Moduli
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 1831d11e78 (.)
 =======
 
 >>>>>>> f71d08e230 (.)
@@ -134,11 +129,6 @@ La documentazione completa è disponibile nella directory `docs/`:
 
 ### Comandi Utili
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 1831d11e78 (.)
 =======
 
 >>>>>>> f71d08e230 (.)
@@ -189,11 +179,6 @@ Questo toolkit affronta queste sfide fornendo strumenti automatizzati che sempli
 
 ## Traduzioni
 - [English](../../README.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 1831d11e78 (.)
 =======
 
 >>>>>>> f71d08e230 (.)
@@ -250,11 +235,6 @@ php artisan migrate
 
 ### 7. Installare i Moduli
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 1831d11e78 (.)
 =======
 
 >>>>>>> f71d08e230 (.)
@@ -333,11 +313,6 @@ La documentazione completa è disponibile nella directory `docs/`:
 
 ### Comandi Utili
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 1831d11e78 (.)
 =======
 
 >>>>>>> f71d08e230 (.)
@@ -389,10 +364,6 @@ Questo toolkit affronta queste sfide fornendo strumenti automatizzati che sempli
 ## Traduzioni
 - [English](../../README.md)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 - [Español](README.es.md) 
->>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> f71d08e230 (.)

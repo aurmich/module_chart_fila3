@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Geo Module Architecture
 
 ## Overview
@@ -126,7 +125,6 @@ Per tutti gli indirizzi italiani è obbligatorio:
 ---
 
 > Vedi anche: Xot/docs/standards/coding-standards.md, Xot/docs/filosofia.md, Xot/docs/zen.md
-=======
 # Architettura del Progetto
 
 ## Panoramica
@@ -307,4 +305,3 @@ Il frontend è basato su:
 - [Filament Documentation](https://filamentphp.com/docs)
 - [Vite Documentation](https://vitejs.dev/guide)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs) 
->>>>>>> c07bf8ebb7 (.)

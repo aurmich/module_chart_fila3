@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Configurazione del Progetto
 
 ## Prerequisiti
@@ -71,7 +70,6 @@ laravel/Modules/
 * [configuration.md](laravel/Modules/Xot/docs/configuration.md)
 * [configuration.md](laravel/Modules/Cms/docs/configuration.md)
 
-=======
 # Configurazione
 
 ## Panoramica
@@ -504,4 +502,3 @@ Per personalizzare Vite, modifica i file di configurazione in `config/vite.php`.
 - [Filament Documentation](https://filamentphp.com/docs)
 - [Vite Documentation](https://vitejs.dev/guide)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs) 
->>>>>>> c07bf8ebb7 (.)

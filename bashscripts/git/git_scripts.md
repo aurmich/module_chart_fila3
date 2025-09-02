@@ -128,29 +128,10 @@ Script per il push dei subtree. Funzionalità:
 2. Errori di path: verificare la configurazione Windows
 3. Problemi di permessi: controllare fileMode e symlinks
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
 >>>>>>> 9c02579 (.)
 =======
-<<<<<<< HEAD
-=======
->>>>>>> 9c02579 (.)
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
 =======
@@ -253,28 +234,12 @@ Script per il push dei subtree. Funzionalità:
 2. Errori di path: verificare la configurazione Windows
 3. Problemi di permessi: controllare fileMode e symlinks
 
-<<<<<<< HEAD
-[Torna alla documentazione principale](/docs/maintenance.md#git-management) 
->>>>>>> 0c55086029 (.)
 =======
-<<<<<<< HEAD
-[Torna alla documentazione principale](/docs/maintenance.md#git-management) 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
 =======
-<<<<<<< HEAD
-=======
->>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
 >>>>>>> f198176d (.)

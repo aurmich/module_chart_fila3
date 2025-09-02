@@ -43,36 +43,12 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 ### Conflitto in funzione di logging
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> a38b33ce0f (.)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
 =======
 =======
->>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
 =======
 
 >>>>>>> 574afe9e (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
 >>>>>>> f198176d (.)
@@ -105,36 +81,12 @@ log() {
 **Soluzione ottimale**: Integrare entrambe le versioni mantenendo la compatibilità con il codice esistente.
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> a38b33ce0f (.)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
 =======
 =======
->>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
 =======
 
 >>>>>>> 574afe9e (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
 >>>>>>> f198176d (.)
@@ -170,36 +122,12 @@ log() {
 ### Conflitto in parametri di script
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> a38b33ce0f (.)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
 =======
 =======
->>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
 =======
 
 >>>>>>> 574afe9e (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
 >>>>>>> f198176d (.)
@@ -230,36 +158,12 @@ BRANCH="$3"
 **Soluzione ottimale**: Valutare quale approccio è più flessibile e coerente con il resto del sistema. Se il branch è opzionale, rendere il terzo parametro opzionale con un valore predefinito.
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> a38b33ce0f (.)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
 =======
 =======
->>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
 =======
 
 >>>>>>> 574afe9e (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
 >>>>>>> f198176d (.)

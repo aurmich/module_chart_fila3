@@ -26,12 +26,6 @@ Quando in uno script .sh si incorporano altre librerie tramite `source ./bashscr
 > Questa regola è stata aggiornata a seguito di un errore grave di duplicazione in uno script .sh. Va rispettata e diffusa in tutto il progetto.
 
 aurmich/dev
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> f1e7ef1046 (.)
 =======
@@ -67,12 +61,6 @@ La duplicazione di funzioni negli script bash che importano librerie tramite `so
 ```bash
 #!/bin/bash
 source ./bashscripts/lib/custom.sh
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> f1e7ef1046 (.)
 =======
@@ -87,12 +75,6 @@ process_files "$1"
 ```bash
 #!/bin/bash
 source ./bashscripts/lib/custom.sh
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> f1e7ef1046 (.)
 =======
@@ -120,12 +102,6 @@ function validate_input() {
 > **NOTA IMPORTANTE**: Questa regola è stata aggiornata a seguito di errori gravi di duplicazione riscontrati in diversi script .sh. Il suo rispetto è considerato **CRITICO** per la manutenibilità del progetto.
 
  43df3e0 (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 >>>>>>> 1831d11e78 (.)

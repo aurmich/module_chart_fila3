@@ -62,35 +62,11 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> a38b33ce0f (.)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
 =======
 =======
->>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 574afe9e (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
 >>>>>>> f198176d (.)

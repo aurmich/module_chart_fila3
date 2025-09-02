@@ -723,11 +723,6 @@ ssh-add ~/.ssh/id_ed25519
 
 ### Comandi Utili da Ricordare:
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 >>>>>>> f71d08e230 (.)

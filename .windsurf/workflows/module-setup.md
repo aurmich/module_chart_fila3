@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 name: "Module Setup"
 description: "Setup automatico completo di un nuovo modulo Laraxot con tutte le strutture e configurazioni necessarie"
@@ -8,7 +6,6 @@ author: "Laraxot AI Assistant"
 tags: ["laraxot", "module", "setup", "automation"]
 ---
 
->>>>>>> 7fac0bd9c2 (.)
 # Module Setup Workflow
 
 Questo workflow automatizza la creazione completa di un nuovo modulo Laraxot, seguendo tutte le convenzioni e best practice del framework.
@@ -37,10 +34,7 @@ Controlla che:
 Crea la struttura completa:
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Directory principale modulo
 mkdir -p Modules/{ModuleName}
 
@@ -82,11 +76,8 @@ Crea `Modules/{ModuleName}/composer.json`:
     "license": "MIT",
     "require": {
         "php": "^8.1",
-<<<<<<< HEAD
         "laravel/framework": "*"
-=======
         "laravel/framework": "^10.0"
->>>>>>> 7fac0bd9c2 (.)
     },
     "autoload": {
         "psr-4": {
@@ -125,7 +116,6 @@ Crea `Modules/{ModuleName}/module.json`:
 ## Fase 4: Provider e Configurazioni
 
 ### 4.1 ServiceProvider Principale
-<<<<<<< HEAD
     "keywords": ["laraxot", "module", "{keywords}"],
     "version": "1.0.0",
     "active": 1,
@@ -139,8 +129,6 @@ Crea `Modules/{ModuleName}/module.json`:
 ```
 
 ### 3.3 Service Provider
-=======
->>>>>>> 7fac0bd9c2 (.)
 Crea `Modules/{ModuleName}/app/Providers/{ModuleName}ServiceProvider.php`:
 
 ```php
@@ -186,7 +174,6 @@ class {ModuleName}ServiceProvider extends XotBaseServiceProvider
         parent::register();
         
         // Module-specific service registration here
-<<<<<<< HEAD
 class {ModuleName}ServiceProvider extends XotBaseServiceProvider
 {
     public string $name = '{ModuleName}';
@@ -196,8 +183,6 @@ class {ModuleName}ServiceProvider extends XotBaseServiceProvider
     {
         parent::boot();
         // Logica custom del modulo qui
-=======
->>>>>>> 7fac0bd9c2 (.)
     }
 }
 ```
@@ -287,12 +272,9 @@ class AdminPanelProvider extends XotBasePanelProvider
 ## Fase 5: Modelli Base
 
 ### 5.1 BaseModel
-<<<<<<< HEAD
 ## Fase 4: File Base
 
 ### 4.1 BaseModel
-=======
->>>>>>> 7fac0bd9c2 (.)
 Crea `Modules/{ModuleName}/app/Models/BaseModel.php`:
 
 ```php
@@ -661,10 +643,7 @@ Crea le pagine di base:
 Crea `Modules/{ModuleName}/README.md`:
 
 ```markdown
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # {ModuleName} Module
 
 {Descrizione dettagliata del modulo}
@@ -770,7 +749,6 @@ Crea `Modules/{ModuleName}/tests/Unit/Models/{ModuleName}Test.php`
 
 ### 12.1 Migrazione Base
 Crea migrazione per la tabella principale del modulo seguendo le regole Laraxot:
-<<<<<<< HEAD
 abstract class BaseModel extends XotBaseModel
 {
     // Personalizzazioni specifiche del modulo
@@ -863,18 +841,13 @@ touch Modules/{ModuleName}/tests/Unit/{ModuleName}Test.php
 
 ### 6.2 TestCase Base
 Crea `Modules/{ModuleName}/tests/TestCase.php`:
-=======
->>>>>>> 7fac0bd9c2 (.)
 
 ```php
 <?php
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -920,18 +893,12 @@ php artisan route:cache
 
 ### 13.3 Test Funzionalità Base
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Test delle route
 php artisan route:list | grep {module-name-lowercase}
 
 # Test del panel Filament
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Accedi a /{module-name-lowercase} via browser
 ```
 
@@ -941,10 +908,7 @@ php artisan route:list | grep {module-name-lowercase}
 Esegui i controlli di qualità del progetto:
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # PHPStan
 ./vendor/bin/phpstan analyze Modules/{ModuleName} --level=9
 
@@ -979,7 +943,6 @@ Il nuovo modulo sarà immediatamente funzionante e conforme a tutti gli standard
 
 ---
 
-<<<<<<< HEAD
 ---
 
 namespace Modules\{ModuleName}\Tests;

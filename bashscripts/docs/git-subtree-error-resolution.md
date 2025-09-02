@@ -21,16 +21,8 @@ Il sistema di gestione dei subtree è composto da tre componenti principali:
 
 ### 2. Push Script (`git_push_subtree.sh`)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-```bash
-
-<<<<<<< HEAD
-=======
 
 =======
->>>>>>> 1831d11e78 (.)
 ```bash
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
@@ -49,13 +41,7 @@ git fetch --all
 # 3. Commit e push
 git add -A
 git commit -am "🔧 Aggiornamento subtree"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-git merge origin/"$BRANCH" --allow-unrelated-histories"
-=======
 git merge origin/"$BRANCH" --allow-unrelated-histories
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 git merge origin/"$BRANCH" --allow-unrelated-histories"
 >>>>>>> 1831d11e78 (.)
@@ -67,12 +53,6 @@ git push -u origin "$BRANCH"
 
 ### 3. Pull Script (`git_pull_subtree.sh`)
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> f1e7ef1046 (.)
 =======
@@ -87,15 +67,8 @@ git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH"
 # 3. Fallback 2
 git fetch "$REMOTE_REPO" "$BRANCH" --depth=1
 git merge -s subtree FETCH_HEAD --allow-unrelated-histories
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-```
-
-=======
 
 aurmich/dev
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 ```
 
@@ -117,12 +90,7 @@ Esegue una sequenza complessa di operazioni:
 9. git rebase --rebase-merges --strategy subtree $REMOTE_BRANCH
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 ### 3. Pull Script (`git_pull_subtree.sh`)
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> 1831d11e78 (.)
 =======
@@ -135,14 +103,9 @@ Esegue una sequenza con fallback:
    - git fetch $REMOTE_REPO $REMOTE_BRANCH --depth=1
    - git merge -s subtree FETCH_HEAD --allow-unrelated-histories
 4. git rebase --rebase-merges --strategy subtree $REMOTE_BRANCH
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
  43df3e0 (.)
 aurmich/dev
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> 1831d11e78 (.)
 =======
@@ -160,12 +123,6 @@ fatal: you must provide the --prefix option
 
 **Soluzione**:
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> f1e7ef1046 (.)
 =======
@@ -183,13 +140,8 @@ fi
 ! [rejected] dev -> dev (non-fast-forward)
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> 1831d11e78 (.)
 =======
@@ -198,11 +150,6 @@ fi
 
 **Soluzione**:
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f71d08e230 (.)
 
 # Aggiorna repository locale
 git fetch origin "$BRANCH"
@@ -210,9 +157,6 @@ git merge origin/"$BRANCH" --allow-unrelated-histories"
 =======
 # Aggiorna repository locale
 git fetch origin "$BRANCH"
-<<<<<<< HEAD
-git merge origin/"$BRANCH" --allow-unrelated-histories
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 git merge origin/"$BRANCH" --allow-unrelated-histories"
 >>>>>>> 1831d11e78 (.)
@@ -288,10 +232,6 @@ fi
 <div align="center">
   <sub>Built with ❤️ by the development team</sub>
 </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
 aurmich/dev
 **Causa**: Questo errore si verifica nella sequenza di push quando ci sono divergenze tra il repository locale e remoto.
@@ -342,7 +282,6 @@ fi
 
  43df3e0 (.)
 aurmich/dev
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> 1831d11e78 (.)
 =======

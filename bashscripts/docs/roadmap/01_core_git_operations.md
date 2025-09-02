@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
 
 
@@ -16,7 +13,6 @@
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
 aurmich/dev
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> 1831d11e78 (.)
 # 🚀 Fase 1: Core Git Operations
@@ -34,11 +30,6 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Gestione dei submodule
 - Logging dettagliato
 - Gestione errori
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Backup automatico pre-operazioni
-
-=======
 
 
 
@@ -52,7 +43,6 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
  43df3e0 (.)
 aurmich/dev
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 - Backup automatico pre-operazioni
 
@@ -64,11 +54,6 @@ aurmich/dev
 - Aggiornamento automatico dei submodule
 - Gestione dei conflitti
 - Backup prima delle operazioni
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Verifica integrità post-operazioni
-
-=======
 
 
 
@@ -82,7 +67,6 @@ aurmich/dev
  43df3e0 (.)
 aurmich/dev
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 - Verifica integrità post-operazioni
 
@@ -94,12 +78,6 @@ aurmich/dev
 - Backup incrementale
 - Compressione automatica
 - Verifica integrità
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Gestione spazio disco
-- Rotazione backup
-
-=======
 
 
 
@@ -115,7 +93,6 @@ aurmich/dev
  43df3e0 (.)
 aurmich/dev
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 - Gestione spazio disco
 - Rotazione backup
@@ -128,12 +105,6 @@ aurmich/dev
 - Analisi automatica dei conflitti
 - Risoluzione quando possibile
 - Logging dettagliato
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Backup pre-risoluzione
-- Rollback automatico in caso di errori
-
-=======
 
 
 
@@ -149,7 +120,6 @@ aurmich/dev
  43df3e0 (.)
 aurmich/dev
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 - Backup pre-risoluzione
 - Rollback automatico in caso di errori
@@ -162,11 +132,6 @@ aurmich/dev
    - Verifica delle chiavi SSH
    - Controllo dei permessi
    - Backup prima delle operazioni critiche
-<<<<<<< HEAD
-<<<<<<< HEAD
-   - Validazione input
-   - Sanitizzazione output
-=======
 
 
 
@@ -182,7 +147,6 @@ aurmich/dev
  43df3e0 (.)
 aurmich/dev
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
    - Validazione input
    - Sanitizzazione output
@@ -191,11 +155,6 @@ aurmich/dev
    - Ottimizzazione delle operazioni Git
    - Gestione efficiente della memoria
    - Caching dove possibile
-<<<<<<< HEAD
-<<<<<<< HEAD
-   - Parallelizzazione operazioni
-   - Gestione risorse
-=======
 
 
 
@@ -211,7 +170,6 @@ aurmich/dev
  43df3e0 (.)
 aurmich/dev
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
    - Parallelizzazione operazioni
    - Gestione risorse
@@ -220,12 +178,6 @@ aurmich/dev
    - Codice modulare
    - Documentazione dettagliata
    - Logging strutturato
-<<<<<<< HEAD
-<<<<<<< HEAD
-   - Test automatici
-   - Versionamento semantico
-
-=======
 
 
 
@@ -241,7 +193,6 @@ aurmich/dev
  43df3e0 (.)
 aurmich/dev
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
    - Test automatici
    - Versionamento semantico
@@ -251,12 +202,6 @@ aurmich/dev
 1. Importanza del backup prima delle operazioni critiche
 2. Necessità di logging dettagliato per il debug
 3. Valore della gestione automatica dei conflitti
-<<<<<<< HEAD
-<<<<<<< HEAD
-4. Importanza della validazione input
-5. Necessità di rollback automatico
-
-=======
 
 
 
@@ -272,7 +217,6 @@ aurmich/dev
  43df3e0 (.)
 aurmich/dev
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 4. Importanza della validazione input
 5. Necessità di rollback automatico
@@ -283,11 +227,6 @@ aurmich/dev
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 2: Manutenzione](../roadmap/02_maintenance.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Fase 3: Verifica](../roadmap/03_verification.md)
-
-=======
 
 
 
@@ -301,7 +240,6 @@ aurmich/dev
  43df3e0 (.)
 aurmich/dev
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 - [Fase 3: Verifica](../roadmap/03_verification.md)
 
@@ -312,12 +250,6 @@ aurmich/dev
 - ✅ 100% automazione operazioni base
 - ✅ 0 errori in produzione
 - ✅ Tempo di sincronizzazione ridotto del 70%
-<<<<<<< HEAD
-<<<<<<< HEAD
-- ✅ 100% backup automatici
-- ✅ 99.9% risoluzione automatica conflitti
-
-=======
 
 
 
@@ -333,7 +265,6 @@ aurmich/dev
  43df3e0 (.)
 aurmich/dev
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 - ✅ 100% backup automatici
 - ✅ 99.9% risoluzione automatica conflitti
@@ -343,12 +274,6 @@ aurmich/dev
 - Tempo medio di sincronizzazione: < 5 minuti
 - Tasso di successo operazioni: 99.9%
 - Tempo di risoluzione conflitti: < 10 minuti
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Tempo di backup: < 2 minuti
-- Tempo di rollback: < 5 minuti
-
-=======
 
 
 
@@ -364,7 +289,6 @@ aurmich/dev
  43df3e0 (.)
 aurmich/dev
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 ## 🛠️ Strumenti Utilizzati
 
 ### Git
@@ -372,25 +296,6 @@ aurmich/dev
 - Gestione submodule
 - Risoluzione conflitti
 
-<<<<<<< HEAD
----
-
-**Esempio pratico di sincronizzazione tra organizzazioni:**
-
-```bash
-./git_sync_org.sh --source orgA --target orgB --repo my-repo
-```
-
-**Suggerimenti:**
-- Eseguire sempre un backup prima di operazioni critiche
-- Utilizzare logging dettagliato per facilitare il debug
-- Validare sempre gli input degli script
-- Automatizzare il più possibile le operazioni ripetitive
-
----
-
-Per ulteriori dettagli, consultare la documentazione degli script specifici e le sezioni successive della roadmap.
-=======
 
 
 - Hooks personalizzati
@@ -6935,7 +6840,6 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 ### Altri
 - SSH per connessioni sicure
 - Cron per automazione
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 
 
 
@@ -6943,8 +6847,6 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 
 
 
-<<<<<<< HEAD
-=======
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco HEAD (6504 linee vs 1)[0m
 aurmich/dev
 # 🚀 Fase 1: Core Git Operations
@@ -7145,14 +7047,11 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 ### Altri
 - SSH per connessioni sicure
 - Cron per automazione
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 
 
 
 
 
-<<<<<<< HEAD
-=======
 
 
  43df3e0 (.)
@@ -7349,7 +7248,6 @@ Questa fase si concentra sulle operazioni fondamentali di Git necessarie per la 
 - Tempo di backup: < 2 minuti
 - Tempo di rollback: < 5 minuti
 
->>>>>>> 1831d11e78 (.)
 ## 🛠️ Strumenti Utilizzati
 
 ### Git

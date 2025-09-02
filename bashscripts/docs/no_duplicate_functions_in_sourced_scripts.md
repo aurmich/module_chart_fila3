@@ -28,11 +28,6 @@ La duplicazione di funzioni negli script bash che importano librerie tramite `so
 ```bash
 #!/bin/bash
 source ./bashscripts/lib/custom.sh
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 1831d11e78 (.)
 =======
 
 >>>>>>> f71d08e230 (.)
@@ -45,11 +40,6 @@ process_files "$1"
 ```bash
 #!/bin/bash
 source ./bashscripts/lib/custom.sh
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 1831d11e78 (.)
 =======
 
 >>>>>>> f71d08e230 (.)

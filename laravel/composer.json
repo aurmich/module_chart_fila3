@@ -70,8 +70,6 @@
             "@php artisan filament:optimize",
             "@php artisan optimize",
             "@php artisan route:clear",
-            "sudo chown -R www-data:www-data ..",
-            "sudo chmod -R g+w ..",
             "@php artisan serve"
         ]
     },

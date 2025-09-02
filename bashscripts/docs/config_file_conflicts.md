@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> f1e7ef1046 (.)
 # Gestione dei Conflitti nei File di Configurazione
@@ -36,11 +30,7 @@ File come:
 - `phpstan.neon`
 
 ### 4. File di Ambiente
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
-=======
->>>>>>> f1e7ef1046 (.)
 
 - `.env`
 - `.env.example`
@@ -177,8 +167,6 @@ git commit -m "Risolto conflitto in file di configurazione"
 ### Conflitto in phpstan.neon
 
 ## Collegamenti Bidirezionali
-<<<<<<< HEAD
->>>>>>> 1831d11e78 (.)
 
 - `.env`
 - `.env.example`
@@ -227,31 +215,19 @@ git commit -m "Risolto conflitto in file di configurazione"
 // Conflitto in require
 "require": {
     "php": "^8.2",
-<<<<<<< HEAD
-    "laravel/framework": "^10.0",
-=======
     "laravel/framework": "*",
->>>>>>> 359b1c2 (.)
     "custom/package": "^1.0"
 }
 "require": {
     "php": "^8.2",
-<<<<<<< HEAD
-    "laravel/framework": "^10.0",
-=======
     "laravel/framework": "*",
->>>>>>> 359b1c2 (.)
     "another/package": "^2.0"
 }
 
 // Risoluzione
 "require": {
     "php": "^8.2",
-<<<<<<< HEAD
-    "laravel/framework": "^10.0",
-=======
     "laravel/framework": "*",
->>>>>>> 359b1c2 (.)
     "custom/package": "^1.0",
     "another/package": "^2.0"
 }
@@ -403,10 +379,6 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione PostCSS](https://postcss.org/)
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> 04d882f8f6 (.)
 =======
@@ -509,28 +481,9 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione PHPUnit](https://phpunit.readthedocs.io/en/10.3/configuration.html)
 - [Documentazione PostCSS](https://postcss.org/)
 - [Documentazione Rector](https://getrector.org/documentation)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
-<<<<<<< HEAD
 =======
 =======
->>>>>>> 9de04485 (.)
 =======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 85c5198c (.)
 =======
 =======
 >>>>>>> f198176d (.)
@@ -635,12 +588,6 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione PostCSS](https://postcss.org/)
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> 3c18aa7e (.)
 >>>>>>> f71d08e230 (.)
@@ -743,9 +690,6 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione PostCSS](https://postcss.org/)
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 # Risoluzione dei Conflitti nei File di Configurazione
 
 ## Problema
@@ -1044,12 +988,6 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione PostCSS](https://postcss.org/)
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 337c5266 (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
@@ -1366,9 +1304,6 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Script di Risoluzione Automatica](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/fix_all_git_conflicts.md)
 - [Conflitti Merge Risolti Xot](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/conflitti_merge_risolti.md)
 - [Gestione della Configurazione](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/config.md)
-<<<<<<< HEAD
-=======
->>>>>>> 5338a990 (.)
 =======
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 >>>>>>> f1e7ef1046 (.)
@@ -1472,10 +1407,6 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione PostCSS](https://postcss.org/)
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1831d11e78 (.)
 >>>>>>> f000df5 (.)
 =======
 >>>>>>> 0c55086029 (.)
@@ -1581,13 +1512,7 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione PostCSS](https://postcss.org/)
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 4d4d6cb7 (.)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md) 
-<<<<<<< HEAD
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 =======
 =======
@@ -1603,9 +1528,6 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Script di Risoluzione Automatica](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/fix_all_git_conflicts.md)
 - [Conflitti Merge Risolti Xot](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/conflitti_merge_risolti.md)
 - [Gestione della Configurazione](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/config.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> d83fe8da (.)
 >>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> 0c55086029 (.)

@@ -56,35 +56,11 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 0c55086029 (.)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
 =======
 =======
->>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 574afe9e (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
 >>>>>>> f198176d (.)
@@ -212,35 +188,11 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 0c55086029 (.)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
 =======
 =======
->>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 574afe9e (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
 >>>>>>> f198176d (.)
@@ -378,35 +330,11 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 #!/bin/bash
 
 source ./bashscripts/lib/custom.sh
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 0c55086029 (.)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
 =======
 =======
->>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 574afe9e (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
 >>>>>>> f198176d (.)
@@ -488,29 +416,10 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
 5338a990 (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
 >>>>>>> 9c02579 (.)
 =======
-<<<<<<< HEAD
-=======
->>>>>>> 9c02579 (.)
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
 =======
@@ -910,28 +819,12 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
-<<<<<<< HEAD
-- [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
->>>>>>> 0c55086029 (.)
 =======
-<<<<<<< HEAD
-- [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
 =======
-<<<<<<< HEAD
-=======
->>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
 >>>>>>> 1420e3b683 (.)
 >>>>>>> 574afe9e (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
 >>>>>>> f198176d (.)

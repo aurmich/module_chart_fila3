@@ -3,10 +3,6 @@
 
 > **Revisione manuale:** File rivisto per eliminare duplicazioni, conflitti e marker. Strutturato per massima chiarezza, con esempi pratici e riferimenti architetturali.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f1e7ef1046 (.)
 > **Backlink:** [README globale](./README.md) · [scripts_conflict_resolution.md](./scripts_conflict_resolution.md)
 
 ---
@@ -50,8 +46,6 @@ Funzione centralizzata (in `custom.sh`) per impostare:
 ---
 
 > Ogni modifica agli script va testata manualmente e tracciata nella documentazione.- `core.autocrlf`: false (no conversione automatica line endings)
-<<<<<<< HEAD
-=======
 # Script Git per la Gestione dei Subtree
 =======
 - `core.eol`: lf (line ending di default)
@@ -88,24 +82,9 @@ Script per il push dei subtree. Funzionalità:
 2. Errori di path: verificare la configurazione Windows
 3. Problemi di permessi: controllare fileMode e symlinks
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
-<<<<<<< HEAD
 =======
 =======
->>>>>>> 9de04485 (.)
 =======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 85c5198c (.)
 =======
 =======
 >>>>>>> f198176d (.)
@@ -139,12 +118,6 @@ Script principale per il pull dei subtree. Funzionalità:
 
 ### git_pull_subtree.sh
 Script per il pull di un singolo subtree. Caratteristiche:
-<<<<<<< HEAD
-<<<<<<< HEAD
-1. Gestione errori robusta
-2. Logging delle operazioni
-3. Supporto per branch personalizzati
-=======
 
 1. Sistema avanzato di logging con timestamp, colori ed emoji
 2. Gestione errori robusta con fallback automatici
@@ -171,7 +144,6 @@ Script per il pull di un singolo subtree. Caratteristiche:
 **Parametri**:
 - `<path>`: Il percorso del subtree locale
 - `<remote_repo>`: L'URL del repository remoto
->>>>>>> 04d882f8f6 (.)
 =======
 1. Gestione errori robusta
 2. Logging delle operazioni
@@ -184,9 +156,6 @@ Script per il push dei subtree. Funzionalità:
 2. Supporto per organizzazioni multiple
 3. Gestione errori e logging
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 ### git_sync_subtree.sh
 Script ottimizzato per la sincronizzazione di un singolo subtree. Caratteristiche principali:
 1. Sistema avanzato di logging con timestamp e codici colore
@@ -238,7 +207,6 @@ Script completo per la sincronizzazione di tutti i subtree definiti in `gitmodul
 
 Per una documentazione più generale sugli script di gestione Git, consultare la [documentazione centrale](../../docs/bashscripts/gestione_git.md).
 
->>>>>>> 04d882f8f6 (.)
 =======
 >>>>>>> f1e7ef1046 (.)
 ## Best Practices
@@ -252,13 +220,7 @@ Per una documentazione più generale sugli script di gestione Git, consultare la
 2. Errori di path: verificare la configurazione Windows
 3. Problemi di permessi: controllare fileMode e symlinks
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> 1831d11e78 (.)
 # Script Git
@@ -312,22 +274,11 @@ Script per il push dei subtree. Funzionalità:
 3. Verificare i log per eventuali errori
 4. Mantenere aggiornato gitmodules.ini
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f1e7ef1046 (.)
 ## Risoluzione Problemi Comuni
 1. Conflitti di merge: utilizzare gli script di backup prima di risolvere
 2. Errori di path: verificare la configurazione Windows
 3. Problemi di permessi: controllare fileMode e symlinks
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 5338a990 (.)
 =======
 >>>>>>> 1831d11e78 (.)
 =======
@@ -384,14 +335,6 @@ Script per il push dei subtree. Funzionalità:
 1. Conflitti di merge: utilizzare gli script di backup prima di risolvere
 2. Errori di path: verificare la configurazione Windows
 3. Problemi di permessi: controllare fileMode e symlinks
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 337c5266 (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
@@ -500,14 +443,7 @@ Script per il push dei subtree. Funzionalità:
 1. Conflitti di merge: utilizzare gli script di backup prima di risolvere
 2. Errori di path: verificare la configurazione Windows
 3. Problemi di permessi: controllare fileMode e symlinks
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
-=======
->>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
 =======
@@ -571,20 +507,11 @@ Script per il push dei subtree. Funzionalità:
 [Torna alla documentazione principale](/docs/maintenance.md#git-management) 
 [Torna alla documentazione principale](/docs/maintenance.md#git-management) 
 =======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
 [Torna alla documentazione principale](/docs/maintenance.md#git-management) 
 3. Problemi di permessi: controllare fileMode e symlinks
->>>>>>> a013e8e (.)
 =======
 
-<<<<<<< HEAD
-[Torna alla documentazione principale](/docs/maintenance.md#git-management) 
-3. Problemi di permessi: controllare fileMode e symlinks
-=======
->>>>>>> f000df5 (.)
 =======
 >>>>>>> 0c55086029 (.)
 =======
@@ -638,13 +565,6 @@ Script per il push dei subtree. Funzionalità:
 2. Errori di path: verificare la configurazione Windows
 3. Problemi di permessi: controllare fileMode e symlinks
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 4d4d6cb7 (.)
-<<<<<<< HEAD
-[Torna alla documentazione principale](/docs/maintenance.md#git-management) 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 =======
 >>>>>>> d83fe8da (.)
@@ -662,17 +582,9 @@ Script per il push dei subtree. Funzionalità:
 =======
 >>>>>>> d83fe8da (.)
 [Torna alla documentazione principale](/docs/maintenance.md#git-management) 
-<<<<<<< HEAD
->>>>>>> f1e7ef1046 (.)
 =======
 >>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 337c5266 (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)

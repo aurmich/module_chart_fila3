@@ -133,11 +133,7 @@ composer dump-autoload -o
 {
     "require": {
         "php": "^8.2",
-<<<<<<< HEAD
-        "laravel/framework": "^11.0",
-=======
         "laravel/framework": "*",
->>>>>>> 359b1c2 (.)
         "filament/filament": "^3.0",
         "filament/forms": "^3.0",
         "filament/tables": "^3.0",

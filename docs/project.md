@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Modifiche Recenti
 
 ### Uso di Spatie Queable Actions
@@ -17,7 +16,6 @@ $coordinates = $action->execute('1600 Amphitheatre Parkway, Mountain View, CA');
 ```
 
 Questa modifica è stata applicata anche in `UpdateCoordinatesAction`, dove ora utilizziamo `GetCoordinatesAction` per aggiornare le coordinate di un luogo. 
-=======
 # Project Documentation
 
 ## Overview
@@ -47,4 +45,3 @@ This is the main documentation for the Base TechPlanner Fila3 project.
 - Regular updates through Composer
 - Automated testing via PHPUnit
 - Code quality checks with PHPStan
->>>>>>> 5e5f2e85b (first)

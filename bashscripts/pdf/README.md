@@ -54,11 +54,6 @@ Lo script `pdf_to_md_ocr.py` può essere eseguito dalla riga di comando con la s
 ## Esempio
 ```bash
 python3 pdf_to_md_ocr.py documento.pdf
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 >>>>>>> f71d08e230 (.)
@@ -99,11 +94,6 @@ Script Python avanzato per convertire file PDF in formato Markdown (.md) utilizz
 
 **Su Ubuntu/Debian:**
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 >>>>>>> f71d08e230 (.)
@@ -117,11 +107,6 @@ pip install pytesseract pdf2image Pillow
 
 **Su macOS (con Homebrew):**
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 >>>>>>> f71d08e230 (.)

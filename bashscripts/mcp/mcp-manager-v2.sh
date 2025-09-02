@@ -7,23 +7,9 @@
 
 PROJECT_DIR="/var/www/html/_bases/base_predict_fila3_mono"
 LOGS_DIR="$PROJECT_DIR/storage/logs/mcp"
-<<<<<<< HEAD
-<<<<<<< HEAD
-MYSQL_CONNECTOR="$PROJECT_DIR/scripts/mysql-db-connector.js"
-=======
-MYSQL_CONNECTOR="$PROJECT_DIR/bashscripts/mcp/mysql-db-connector.js"
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
-=======
-<<<<<<< HEAD
-MYSQL_CONNECTOR="$PROJECT_DIR/bashscripts/mcp/mysql-db-connector.js"
-=======
-<<<<<<< HEAD
 MYSQL_CONNECTOR="$PROJECT_DIR/bashscripts/mcp/mysql-db-connector.js"
 =======
 MYSQL_CONNECTOR="$PROJECT_DIR/scripts/mysql-db-connector.js"
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
 MYSQL_CONNECTOR="$PROJECT_DIR/scripts/mysql-db-connector.js"
@@ -37,23 +23,9 @@ chmod -R 777 "$LOGS_DIR"
 
 # Funzione per mostrare l'aiuto
 show_help() {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    echo "Utilizzo: /var/www/html/_bases/base_predict_fila3_mono/bashscripts/mcp/mcp-manager-v2.sh [comando] [server]"
-=======
-    echo "Utilizzo: ./bashscripts/mcp/mcp-manager-v2.sh [comando] [server]"
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
-=======
-<<<<<<< HEAD
-    echo "Utilizzo: ./bashscripts/mcp/mcp-manager-v2.sh [comando] [server]"
-=======
-<<<<<<< HEAD
     echo "Utilizzo: ./bashscripts/mcp/mcp-manager-v2.sh [comando] [server]"
 =======
     echo "Utilizzo: /var/www/html/_bases/base_predict_fila3_mono/bashscripts/mcp/mcp-manager-v2.sh [comando] [server]"
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
     echo "Utilizzo: /var/www/html/_bases/base_predict_fila3_mono/bashscripts/mcp/mcp-manager-v2.sh [comando] [server]"
@@ -74,22 +46,9 @@ show_help() {
     echo "  memory             - Server per la memorizzazione di informazioni"
     echo "  fetch              - Server per le richieste HTTP"
     echo "  filesystem         - Server per le operazioni sul filesystem"
-<<<<<<< HEAD
-<<<<<<< HEAD
-    echo "  postgres           - Server per database PostgreSQL"
-    echo "  redis              - Server per Redis"
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 =======
     echo "  postgres           - Server per database PostgreSQL"
     echo "  redis              - Server per Redis"
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
     echo "  postgres           - Server per database PostgreSQL"
@@ -102,23 +61,6 @@ show_help() {
     echo "  all                - Tutti i server (default se non specificato)"
     echo ""
     echo "Esempi:"
-<<<<<<< HEAD
-<<<<<<< HEAD
-    echo "  /var/www/html/_bases/base_predict_fila3_mono/bashscripts/mcp/mcp-manager-v2.sh start mysql    - Avvia il server MCP MySQL"
-    echo "  /var/www/html/_bases/base_predict_fila3_mono/bashscripts/mcp/mcp-manager-v2.sh start          - Avvia tutti i server MCP"
-    echo "  /var/www/html/_bases/base_predict_fila3_mono/bashscripts/mcp/mcp-manager-v2.sh status         - Mostra lo stato di tutti i server MCP"
-=======
-    echo "  ./bashscripts/mcp/mcp-manager-v2.sh start mysql    - Avvia il server MCP MySQL"
-    echo "  ./bashscripts/mcp/mcp-manager-v2.sh start          - Avvia tutti i server MCP"
-    echo "  ./bashscripts/mcp/mcp-manager-v2.sh status         - Mostra lo stato di tutti i server MCP"
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
-=======
-<<<<<<< HEAD
-    echo "  ./bashscripts/mcp/mcp-manager-v2.sh start mysql    - Avvia il server MCP MySQL"
-    echo "  ./bashscripts/mcp/mcp-manager-v2.sh start          - Avvia tutti i server MCP"
-    echo "  ./bashscripts/mcp/mcp-manager-v2.sh status         - Mostra lo stato di tutti i server MCP"
-=======
-<<<<<<< HEAD
     echo "  ./bashscripts/mcp/mcp-manager-v2.sh start mysql    - Avvia il server MCP MySQL"
     echo "  ./bashscripts/mcp/mcp-manager-v2.sh start          - Avvia tutti i server MCP"
     echo "  ./bashscripts/mcp/mcp-manager-v2.sh status         - Mostra lo stato di tutti i server MCP"
@@ -126,9 +68,6 @@ show_help() {
     echo "  /var/www/html/_bases/base_predict_fila3_mono/bashscripts/mcp/mcp-manager-v2.sh start mysql    - Avvia il server MCP MySQL"
     echo "  /var/www/html/_bases/base_predict_fila3_mono/bashscripts/mcp/mcp-manager-v2.sh start          - Avvia tutti i server MCP"
     echo "  /var/www/html/_bases/base_predict_fila3_mono/bashscripts/mcp/mcp-manager-v2.sh status         - Mostra lo stato di tutti i server MCP"
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
     echo "  /var/www/html/_bases/base_predict_fila3_mono/bashscripts/mcp/mcp-manager-v2.sh start mysql    - Avvia il server MCP MySQL"
@@ -142,21 +81,9 @@ show_help() {
 # Funzione per ottenere il PID di un server MCP
 get_pid() {
     local server_name=$1
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 =======
     
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
     
@@ -173,45 +100,22 @@ get_pid() {
 # Funzione per installare un server MCP
 install_server() {
     local server_name=$1
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-    if [ "$server_name" = "mysql" ]; then
-        echo "📦 Installazione delle dipendenze per il server MySQL personalizzato..."
-        cd "$PROJECT_DIR" && npm install --save mysql2 dotenv
-        
 =======
 =======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
-=======
-<<<<<<< HEAD
->>>>>>> d20d0523 (.)
 >>>>>>> f71d08e230 (.)
 
     if [ "$server_name" = "mysql" ]; then
         echo "📦 Installazione delle dipendenze per il server MySQL personalizzato..."
         cd "$PROJECT_DIR" && npm install --save mysql2 dotenv
 
-<<<<<<< HEAD
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
-=======
-<<<<<<< HEAD
 =======
 =======
 =======
->>>>>>> f198176d (.)
     
     if [ "$server_name" = "mysql" ]; then
         echo "📦 Installazione delle dipendenze per il server MySQL personalizzato..."
         cd "$PROJECT_DIR" && npm install --save mysql2 dotenv
         
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
 >>>>>>> f198176d (.)
@@ -226,21 +130,9 @@ install_server() {
         fi
     else
         echo "📦 Installazione del server MCP $server_name..."
-<<<<<<< HEAD
-<<<<<<< HEAD
-        
-=======
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 =======
         
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
         
@@ -253,21 +145,9 @@ install_server() {
         else
             echo "🔄 Installazione globale di @modelcontextprotocol/server-$server_name..."
             npm install -g @modelcontextprotocol/server-$server_name
-<<<<<<< HEAD
-<<<<<<< HEAD
-            
-=======
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 =======
             
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
             
@@ -278,45 +158,22 @@ install_server() {
                 echo "✅ Server MCP $server_name installato globalmente con successo"
             else
                 echo "❌ Errore nell'installazione globale del server MCP $server_name"
-<<<<<<< HEAD
-<<<<<<< HEAD
-                
-                # Prova con installazione locale
-                echo "🔄 Tentativo di installazione locale di @modelcontextprotocol/server-$server_name..."
-                cd "$PROJECT_DIR" && npm install @modelcontextprotocol/server-$server_name
-                
 =======
 =======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
-=======
-<<<<<<< HEAD
->>>>>>> d20d0523 (.)
 >>>>>>> f71d08e230 (.)
 
                 # Prova con installazione locale
                 echo "🔄 Tentativo di installazione locale di @modelcontextprotocol/server-$server_name..."
                 cd "$PROJECT_DIR" && npm install @modelcontextprotocol/server-$server_name
 
-<<<<<<< HEAD
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
-=======
-<<<<<<< HEAD
 =======
 =======
 =======
->>>>>>> f198176d (.)
                 
                 # Prova con installazione locale
                 echo "🔄 Tentativo di installazione locale di @modelcontextprotocol/server-$server_name..."
                 cd "$PROJECT_DIR" && npm install @modelcontextprotocol/server-$server_name
                 
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
 >>>>>>> f198176d (.)
@@ -331,21 +188,9 @@ install_server() {
             fi
         fi
     fi
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 =======
     
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
     
@@ -359,21 +204,9 @@ install_server() {
 start_server() {
     local server_name=$1
     local pid=$(get_pid "$server_name")
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 =======
     
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
     
@@ -384,23 +217,10 @@ start_server() {
         echo "⚠️ Il server MCP $server_name è già in esecuzione con PID $pid"
         return 0
     fi
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-    # Gestione speciale per il server MySQL personalizzato
-=======
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 =======
     
     # Gestione speciale per il server MySQL personalizzato
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
     
@@ -413,34 +233,8 @@ start_server() {
             echo "❌ Script connector MySQL non trovato: $MYSQL_CONNECTOR"
             return 1
         fi
-<<<<<<< HEAD
-<<<<<<< HEAD
-        
-        echo "🚀 Avvio del server MCP MySQL personalizzato..."
-        cd "$PROJECT_DIR" && node "$MYSQL_CONNECTOR" > "$LOGS_DIR/mysql.log" 2>&1 &
-    else
-        # Verifica se il server è installato
-        if ! npm list -g | grep -q "@modelcontextprotocol/server-$server_name" && ! npm list | grep -q "@modelcontextprotocol/server-$server_name"; then
-            echo "⚠️ Server MCP $server_name non è installato. Installazione in corso..."
-            install_server "$server_name"
-        fi
-        
-        echo "🚀 Avvio del server MCP $server_name..."
-        cd "$PROJECT_DIR" && npx -y @modelcontextprotocol/server-$server_name > "$LOGS_DIR/$server_name.log" 2>&1 &
-    fi
-    
-    # Attendi che il server si avvii
-    sleep 3
-    
 =======
 =======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
-=======
-<<<<<<< HEAD
->>>>>>> d20d0523 (.)
 >>>>>>> f71d08e230 (.)
         echo "🚀 Avvio del server MCP MySQL personalizzato..."
         cd "$PROJECT_DIR" && node "$MYSQL_CONNECTOR" > "$LOGS_DIR/mysql.log" 2>&1 &
@@ -468,14 +262,9 @@ start_server() {
         return 1
     fi
     sleep 3
-<<<<<<< HEAD
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
-=======
-<<<<<<< HEAD
 =======
 =======
 =======
->>>>>>> f198176d (.)
         
         echo "🚀 Avvio del server MCP MySQL personalizzato..."
         cd "$PROJECT_DIR" && node "$MYSQL_CONNECTOR" > "$LOGS_DIR/mysql.log" 2>&1 &
@@ -493,10 +282,6 @@ start_server() {
     # Attendi che il server si avvii
     sleep 3
     
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
 >>>>>>> f198176d (.)
@@ -511,20 +296,8 @@ start_server() {
         if [ "$server_name" = "mysql" ]; then
             echo "📋 Ultimi log:"
             tail -n 10 "$LOGS_DIR/mysql.log"
-<<<<<<< HEAD
-<<<<<<< HEAD
-        else
-            echo "📋 Ultimi log:"
-            tail -n 10 "$LOGS_DIR/$server_name.log"
 =======
 =======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
-=======
-<<<<<<< HEAD
->>>>>>> d20d0523 (.)
 >>>>>>> f71d08e230 (.)
         elif [ "$server_name" = "postgres" ]; then
             echo "📋 Ultimi log:"
@@ -532,18 +305,11 @@ start_server() {
         elif [ "$server_name" = "redis" ]; then
             echo "📋 Ultimi log:"
             tail -n 10 "$LOGS_DIR/redis.log"
-<<<<<<< HEAD
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
-=======
-<<<<<<< HEAD
 =======
 =======
         else
             echo "📋 Ultimi log:"
             tail -n 10 "$LOGS_DIR/$server_name.log"
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
         else
@@ -561,21 +327,9 @@ start_server() {
 stop_server() {
     local server_name=$1
     local pid=$(get_pid "$server_name")
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 =======
     
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
     
@@ -586,45 +340,22 @@ stop_server() {
         echo "⚠️ Il server MCP $server_name non è in esecuzione"
         return 0
     fi
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-    echo "🛑 Arresto del server MCP $server_name con PID $pid..."
-    kill -9 "$pid" 2>/dev/null
-    sleep 2
-    
 =======
 =======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
-=======
-<<<<<<< HEAD
->>>>>>> d20d0523 (.)
 >>>>>>> f71d08e230 (.)
 
     echo "🛑 Arresto del server MCP $server_name con PID $pid..."
     kill -9 "$pid" 2>/dev/null
     sleep 2
 
-<<<<<<< HEAD
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
-=======
-<<<<<<< HEAD
 =======
 =======
 =======
->>>>>>> f198176d (.)
     
     echo "🛑 Arresto del server MCP $server_name con PID $pid..."
     kill -9 "$pid" 2>/dev/null
     sleep 2
     
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
 >>>>>>> f198176d (.)
@@ -639,21 +370,9 @@ stop_server() {
         echo "⚠️ Tentativo di arresto forzato..."
         kill -9 "$pid" 2>/dev/null
         sleep 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-        
-=======
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 =======
         
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
         
@@ -675,21 +394,9 @@ stop_server() {
 status_server() {
     local server_name=$1
     local pid=$(get_pid "$server_name")
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 =======
     
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
     
@@ -717,21 +424,9 @@ restart_server() {
 logs_server() {
     local server_name=$1
     local log_file="$LOGS_DIR/$server_name.log"
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 =======
     
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
     
@@ -748,23 +443,9 @@ logs_server() {
 }
 
 # Array di tutti i server MCP disponibili
-<<<<<<< HEAD
-<<<<<<< HEAD
-ALL_SERVERS=("sequential-thinking" "memory" "fetch" "filesystem" "postgres" "redis" "puppeteer" "mysql")
-=======
-ALL_SERVERS=("mysql")
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
-=======
-<<<<<<< HEAD
-ALL_SERVERS=("mysql")
-=======
-<<<<<<< HEAD
 ALL_SERVERS=("mysql")
 =======
 ALL_SERVERS=("sequential-thinking" "memory" "fetch" "filesystem" "postgres" "redis" "puppeteer" "mysql")
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
 ALL_SERVERS=("sequential-thinking" "memory" "fetch" "filesystem" "postgres" "redis" "puppeteer" "mysql")
@@ -777,21 +458,9 @@ all_servers() {
     local command=$1
     local success=0
     local total=0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 =======
     
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
     
@@ -821,21 +490,9 @@ all_servers() {
                 ;;
         esac
     done
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 =======
     
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
     

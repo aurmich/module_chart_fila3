@@ -4,22 +4,11 @@
 Lo script `analyze_modules.sh` esegue l'analisi PHPStan su tutti i moduli Laravel presenti nella cartella `laravel/Modules/`. Per ogni modulo, esegue l'analisi a tutti i livelli di PHPStan (da 1 a max) e salva i risultati in formato JSON nella cartella `docs/phpstan` di ogni modulo.
 
 ## Posizione
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-`/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/analyze_modules.sh`
-
-## Utilizzo
-```bash
-cd /var/www/html/_bases/base_ptvx_fila3_mono
-=======
 `/var/www/html/ptvx/bashscripts/analyze_modules.sh`
 
 ## Utilizzo
 ```bash
 cd /var/www/html/ptvx
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 `/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/analyze_modules.sh`
 
@@ -72,14 +61,7 @@ Modules/<NomeModulo>/docs/phpstan/
 - Configurazione PHPStan in `laravel/phpstan.neon`
 
 ## Variabili di Ambiente
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `BASE_DIR`: Directory base del progetto (`/var/www/html/_bases/base_ptvx_fila3_mono/laravel`)
-=======
 - `BASE_DIR`: Directory base del progetto (`/var/www/html/ptvx/laravel`)
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 - `BASE_DIR`: Directory base del progetto (`/var/www/html/_bases/base_ptvx_fila3_mono/laravel`)
 >>>>>>> 1831d11e78 (.)
@@ -127,40 +109,15 @@ Modules/<NomeModulo>/docs/phpstan/
    - Directory non trovata
    - Permessi insufficienti
    - PHPStan non installato
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-   - Configurazione PHPStan errata
-
-## Pattern di Risoluzione Errori
-Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzioni più comuni:
 =======
 =======
->>>>>>> f1e7ef1046 (.)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
 =======
->>>>>>> 85c5198c (.)
-<<<<<<< HEAD
-=======
->>>>>>> 9de04485 (.)
 =======
 =======
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
-<<<<<<< HEAD
 =======
-=======
->>>>>>> 574afe9e (.)
 >>>>>>> f71d08e230 (.)
 
 ## Gestione dei Conflitti
@@ -169,28 +126,15 @@ In caso di conflitti durante l'analisi dei moduli:
 2. Eseguire `git status` per identificare i file in conflitto
 3. Risolvere i conflitti manualmente seguendo le linee guida in [CONFLICT_RESOLUTION.md](../../docs/development/CONFLICT_RESOLUTION.md)
 4. Dopo la risoluzione, rieseguire l'analisi PHPStan
-<<<<<<< HEAD
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> f1e7ef1046 (.)
 
 ## Collegamenti
 - [Documentazione PHPStan](../../docs/phpstan/PHPSTAN_WORKFLOW.md)
 - [Linee Guida Moduli](../../docs/MODULES.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> f1e7ef1046 (.)
 - [Risoluzione Conflitti](../../docs/development/CONFLICT_RESOLUTION.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 337c5266 (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
@@ -208,31 +152,16 @@ In caso di conflitti durante l'analisi dei moduli:
 
 ## Pattern di Risoluzione Errori
 Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzioni più comuni:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
-=======
->>>>>>> d20d0523 (.)
 
 =======
 >>>>>>> 85c5198c (.)
-<<<<<<< HEAD
-=======
->>>>>>> f198176d (.)
 >>>>>>> 9c02579 (.)
 =======
 >>>>>>> 574afe9e (.)
 
-<<<<<<< HEAD
-=======
 
 =======
-<<<<<<< HEAD
-=======
->>>>>>> 9de04485 (.)
 >>>>>>> 9c02579 (.)
 =======
 >>>>>>> 574afe9e (.)
@@ -246,13 +175,7 @@ In caso di conflitti durante l'analisi dei moduli:
 2. Eseguire `git status` per identificare i file in conflitto
 3. Risolvere i conflitti manualmente seguendo le linee guida in [CONFLICT_RESOLUTION.md](../../docs/development/CONFLICT_RESOLUTION.md)
 4. Dopo la risoluzione, rieseguire l'analisi PHPStan
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> 337c5266 (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
@@ -314,12 +237,6 @@ if ($user !== null) {
 Lo script può essere integrato in pipeline CI/CD per automatizzare l'analisi del codice:
 
 ```yaml
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> f1e7ef1046 (.)
 =======
@@ -348,11 +265,7 @@ jobs:
 - [Struttura dei Moduli](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/MODULE-STRUCTURE.md)
 - [Best Practices PHPStan](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/PHPSTAN-LEVEL9-GUIDE.md)
 - [Script di Automazione](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/scripts.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 - [Risoluzione Conflitti](../../docs/development/CONFLICT_RESOLUTION.md)
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> 1831d11e78 (.)
 =======

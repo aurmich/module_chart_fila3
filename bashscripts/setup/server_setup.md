@@ -20,11 +20,6 @@ Questo documento contiene la documentazione dettagliata dei comandi utilizzati p
 
 ### Verifica Requisiti
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 >>>>>>> f71d08e230 (.)
@@ -89,11 +84,6 @@ sudo add-apt-repository ppa:ondrej/php
 
 ### Configurazione File .env
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 >>>>>>> f71d08e230 (.)
@@ -129,11 +119,6 @@ php artisan key:generate
 
   APP_NAME=il progetto
  80ec88ee9 (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 >>>>>>> 1831d11e78 (.)
@@ -395,11 +380,6 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 
 ### Configurazione Tema Powerlevel10k
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 >>>>>>> f71d08e230 (.)
@@ -539,11 +519,6 @@ sudo apt-get install --install-recommends webmin usermin
 
 ### Aggiornamento Composer e Dipendenze
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 >>>>>>> f71d08e230 (.)
@@ -846,11 +821,6 @@ sudo pecl install redis
 
 ### Creazione Database SQLite
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 >>>>>>> f71d08e230 (.)
@@ -890,11 +860,6 @@ touch laravel/database/database.sqlite
 
 ### Configurazione Client Redis
 ```ini
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 >>>>>>> f71d08e230 (.)
@@ -939,11 +904,6 @@ REDIS_CLIENT=predis
 
 ### Pubblicazione Vendor e Migrazioni
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 >>>>>>> f71d08e230 (.)
@@ -1023,11 +983,6 @@ sudo systemctl start redis-server
 
 ### Configurazione Redis
 ```ini
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 >>>>>>> f71d08e230 (.)
@@ -1056,11 +1011,6 @@ maxmemory-policy allkeys-lru
 
 ### Configurazione Performance
 ```apache
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 >>>>>>> f71d08e230 (.)
@@ -1076,11 +1026,6 @@ maxmemory-policy allkeys-lru
 
 ### Gestione Moduli Apache
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 >>>>>>> f71d08e230 (.)
@@ -1321,11 +1266,6 @@ php artisan user:assign-module
 
   ```
  80ec88ee9 (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 >>>>>>> 1831d11e78 (.)

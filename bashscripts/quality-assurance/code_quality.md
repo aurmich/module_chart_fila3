@@ -1,14 +1,6 @@
 # Script di Verifica della Qualità del Codice
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
-=======
-<<<<<<< HEAD
->>>>>>> d20d0523 (.)
 =======
 >>>>>>> e1b46df35 (.)
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
@@ -177,11 +169,7 @@ XotBaseResource Classes Form Schema Check
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
->>>>>>> a38b33ce0f (.)
 =======
 >>>>>>> e1b46df35 (.)
 >>>>>>> f71d08e230 (.)
@@ -242,12 +230,6 @@ XotBaseResource Classes Form Schema Check
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f000df5 (.)
 >>>>>>> a38b33ce0f (.)
 =======
 >>>>>>> 0c55086029 (.)
@@ -316,15 +298,7 @@ XotBaseResource Classes Form Schema Check
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-### phpstan_docs_generator.sh 
-
 =======
-=======
->>>>>>> f1e7ef1046 (.)
 =======
 ### phpstan_docs_generator.sh 
 
@@ -334,9 +308,6 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 >>>>>>> 4d4d6cb7 (.)
 ### phpstan_docs_generator.sh 
 =======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> a38b33ce0f (.)
 =======
 >>>>>>> 0c55086029 (.)
 =======
@@ -348,12 +319,6 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 - [PHPStan](https://phpstan.org/)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data/v4/introduction)
 - [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php) 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> d83fe8da (.)
 >>>>>>> a38b33ce0f (.)
 =======
 
@@ -696,11 +661,6 @@ git checkout HEAD -- storage/quality-reports/
 ---
 
 *Ultimo aggiornamento: Agosto 2025*  
-<<<<<<< HEAD
-*Versione: 2.1.0*
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
 *Versione: 2.1.0*

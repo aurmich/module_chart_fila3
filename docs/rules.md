@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Stati vs Workflow
 
 - Usa spatie/laravel-model-states solo per processi semplici (pubblicazione, validazione, pagamento).
@@ -217,7 +216,6 @@ enum DayOfWeek: int implements HasLabel, HasColor, HasIcon, HasDescription
             self::SATURDAY, self::SUNDAY => 'Weekend',
             default => null,
         };
-=======
 # Naming Conventions for Actions
 
 - **Action Naming**: Actions should have descriptive names that clearly indicate their functionality. For example, an action that retrieves coordinates from a full address should be named `GetCoordinatesDataByFullAddressAction` instead of `PopulateCoordinatesAction`.
@@ -280,12 +278,10 @@ class ListDevices extends XotBaseListRecords
                 ->searchable(),
             // Assicurarsi che ogni campo esista nel database
         ];
->>>>>>> 5e5f2e85b (first)
     }
 }
 ```
 
-<<<<<<< HEAD
 > **IMPORTANTE**: Se Filament ha uno standard per una funzionalità, va sempre adottato in tutto il progetto. Gli enum DEVONO implementare tutte le interfacce Filament sopra elencate.
 
 ## Resource Filament: Estensione Corretta
@@ -333,7 +329,6 @@ class DoctorAvailabilityResource extends XotBaseResource
 ```
 
 > **IMPORTANTE**: Controlla sempre che i resource dei moduli NON contengano queste proprietà/metodi. Se li trovi, rimuovili e segnala l'errore.
-=======
 # Translation and Icons Rules
 
 - **Struttura Traduzioni**:
@@ -439,4 +434,3 @@ Esempio di implementazione:
     'icon' => 'techplanner-call', // Richiama call.svg dalla cartella resources/svg
 ],
 ```
->>>>>>> 5e5f2e85b (first)

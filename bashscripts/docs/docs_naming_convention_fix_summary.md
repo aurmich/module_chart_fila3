@@ -22,51 +22,19 @@ Ho analizzato tutte le cartelle docs del progetto per verificare la conformità 
 
 ### 1. File Rinominato
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> a38b33ce0f (.)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
 =======
->>>>>>> d20d0523 (.)
 
 =======
 >>>>>>> 85c5198c (.)
-<<<<<<< HEAD
 =======
->>>>>>> f198176d (.)
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> 337c5266 (.)
 =======
 
 =======
-<<<<<<< HEAD
 =======
->>>>>>> 9de04485 (.)
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
@@ -99,33 +67,16 @@ Ho analizzato tutte le cartelle docs del progetto per verificare la conformità 
 ## ✅ Verifica Finale
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 337c5266 (.)
 =======
 =======
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
 =======
 =======
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
 =======
 =======
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
 =======
 >>>>>>> f198176d (.)
 >>>>>>> d20d0523 (.)
@@ -134,23 +85,10 @@ Ho analizzato tutte le cartelle docs del progetto per verificare la conformità 
 # Verifica file con maiuscole
 find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
 
-<<<<<<< HEAD
-=======
 # Verifica file con maiuscole
 find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
->>>>>>> a38b33ce0f (.)
 =======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
->>>>>>> d20d0523 (.)
-=======
-<<<<<<< HEAD
-# Verifica file con maiuscole
-find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
->>>>>>> 3c18aa7e (.)
 =======
 >>>>>>> 337c5266 (.)
 =======
@@ -165,10 +103,6 @@ find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
 # Verifica file con maiuscole
 find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
 >>>>>>> 3c18aa7e (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
@@ -189,51 +123,19 @@ find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
 
 # Verifica cartelle con maiuscole
 find ./docs ./Modules/*/docs -name "*[A-Z]*" -type d
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> a38b33ce0f (.)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
 =======
->>>>>>> d20d0523 (.)
 
 =======
 >>>>>>> 85c5198c (.)
-<<<<<<< HEAD
 =======
->>>>>>> f198176d (.)
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> 337c5266 (.)
 =======
 
 =======
-<<<<<<< HEAD
 =======
->>>>>>> 9de04485 (.)
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
@@ -252,51 +154,19 @@ find ./docs ./Modules/*/docs -name "*[A-Z]*" -type d
 
 # Verifica completa (solo README.md permessi)
 find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> a38b33ce0f (.)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
 =======
->>>>>>> d20d0523 (.)
 
 =======
 >>>>>>> 85c5198c (.)
-<<<<<<< HEAD
 =======
->>>>>>> f198176d (.)
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> 337c5266 (.)
 =======
 
 =======
-<<<<<<< HEAD
 =======
->>>>>>> 9de04485 (.)
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
@@ -352,51 +222,19 @@ find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f
 
 #### Verifica Manuale
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> a38b33ce0f (.)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
 =======
->>>>>>> d20d0523 (.)
 
 =======
 >>>>>>> 85c5198c (.)
-<<<<<<< HEAD
 =======
->>>>>>> f198176d (.)
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> 337c5266 (.)
 =======
 
 =======
-<<<<<<< HEAD
 =======
->>>>>>> 9de04485 (.)
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
@@ -423,51 +261,19 @@ find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
 
 #### Correzione Automatica
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> a38b33ce0f (.)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
 =======
->>>>>>> d20d0523 (.)
 
 =======
 >>>>>>> 85c5198c (.)
-<<<<<<< HEAD
 =======
->>>>>>> f198176d (.)
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> 337c5266 (.)
 =======
 
 =======
-<<<<<<< HEAD
 =======
->>>>>>> 9de04485 (.)
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
@@ -519,26 +325,9 @@ find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
 **Ultimo aggiornamento**: 2025-01-06
 **File corretti**: 1
 **Documentazione creata**: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
+**README aggiornato**: 1 
 =======
 **README aggiornato**: 1 
->>>>>>> a38b33ce0f (.)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 85c5198c (.)
-<<<<<<< HEAD
-=======
-**README aggiornato**: 1 
->>>>>>> 3c18aa7e (.)
-<<<<<<< HEAD
-=======
->>>>>>> 337c5266 (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
@@ -548,14 +337,8 @@ find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
 >>>>>>> 9de04485 (.)
 =======
 =======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 **README aggiornato**: 1 
->>>>>>> 3c18aa7e (.)
 >>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
 **README aggiornato**: 1 

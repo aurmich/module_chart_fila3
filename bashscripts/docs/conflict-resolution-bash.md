@@ -2,11 +2,6 @@
 
 > **Nota**: Per informazioni aggiuntive sui conflitti nei moduli, consulta anche [Conflitti Git nei Moduli](../../docs/conflitti_git_moduli.md)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f1e7ef1046 (.)
 ## Perché è cruciale
 
 La risoluzione manuale dei conflitti negli script bash è particolarmente delicata per le seguenti ragioni:
@@ -28,12 +23,9 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 
 2. **Analizzare le versioni in conflitto**
    - Confrontare le implementazioni per identificare le differenze sostanziali.
-<<<<<<< HEAD
-=======
 ## PERCHÉ È CRUCIALE
 =======
 ## Perché è cruciale
->>>>>>> 1831d11e78 (.)
 
 La risoluzione manuale dei conflitti negli script bash è particolarmente delicata per le seguenti ragioni:
 
@@ -52,10 +44,6 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
    - Verificare se lo script importa librerie con `source`.
    - Controllare quali funzioni sono già definite nelle librerie importate.
 
-<<<<<<< HEAD
-2. **Analisi delle versioni in conflitto**
-   - Confrontare le implementazioni per identificare le differenze sostanziali
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 2. **Analizzare le versioni in conflitto**
    - Confrontare le implementazioni per identificare le differenze sostanziali.
@@ -69,42 +57,17 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
      - Compatibilità con il resto del sistema
 
 3. **Risoluzione consapevole**
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> f1e7ef1046 (.)
    - Scegliere la versione più completa e robusta.
    - Se entrambe le versioni hanno vantaggi, integrarle in modo coerente.
    - Assicurarsi che la funzione mantenga la stessa firma e comportamento atteso.
    - Verificare che non ci siano duplicazioni con funzioni già esistenti nelle librerie.
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-4. **Verifica e test**
-   - Testare lo script dopo la risoluzione.
-   - Verificare che tutte le dipendenze funzionino correttamente.
-   - Controllare che la gestione degli errori sia appropriata.
-
-## Esempi pratici
-
-### Funzione di logging robusta
-
-Spesso i conflitti riguardano funzioni duplicate o con logiche diverse. Ecco una versione integrata e migliorata della funzione di log, che supporta sia il formato semplice che quello con livelli:
-
-```bash
-
-# Funzione di log avanzata: accetta sia log "message" che log "level" "message"
-log() {
-=======
    - Scegliere la versione più completa e robusta
    - Se entrambe le versioni hanno vantaggi, integrarle in modo coerente
    - Assicurarsi che la funzione mantenga la stessa firma e comportamento atteso
    - Verificare che non ci siano duplicazioni con funzioni già esistenti nelle librerie
 =======
->>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> f1e7ef1046 (.)
 
@@ -123,42 +86,6 @@ Spesso i conflitti riguardano funzioni duplicate o con logiche diverse. Ecco una
 
 # Funzione di log avanzata: accetta sia log "message" che log "level" "message"
 log() {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    local level="$1"
-    local message="$2"
-    local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
-    
-    case "$level" in
-        "error") echo -e "❌ [$timestamp] $message" | tee -a "$LOG_FILE" ;;
-        "success") echo -e "✅ [$timestamp] $message" | tee -a "$LOG_FILE" ;;
-        "warning") echo -e "⚠️ [$timestamp] $message" | tee -a "$LOG_FILE" ;;
-        "info") echo -e "ℹ️ [$timestamp] $message" | tee -a "$LOG_FILE" ;;
-        *) echo -e "[$timestamp] $message" | tee -a "$LOG_FILE" ;;
-    esac
-}
-
-
-
- 9b65b0d (.)
-# Versione semplice
-log() {
-    local message="$1"
-    echo "📆 $(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
-}
-
- feature-branch
-
- 9b65b0d (.)
-```
-
-**Soluzione ottimale**: Integrare entrambe le versioni mantenendo la compatibilità con il codice esistente.
-
-```bash
-# Funzione avanzata per loggare messaggi che supporta entrambi i formati
-log() {
-    # Supporta sia il formato avanzato con livelli che il formato semplice
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> 1831d11e78 (.)
 =======
@@ -168,12 +95,7 @@ log() {
         local level="$1"
         local message="$2"
         local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> 1831d11e78 (.)
 =======
@@ -194,11 +116,6 @@ log() {
 }
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> f1e7ef1046 (.)
 **Suggerimento:**
@@ -208,13 +125,6 @@ log() {
 ### Gestione parametri negli script
 
 Quando si risolvono conflitti tra versioni che richiedono un numero diverso di parametri, preferire la soluzione più flessibile e documentata:
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-```bash
-
-# Gestione robusta dei parametri: supporta 2 o 3 parametri, con branch opzionale
-=======
 ### Conflitto in parametri di script
 
 ```bash
@@ -253,7 +163,6 @@ BRANCH="$3"
 
 ```bash
 # Versione che supporta 2 o 3 parametri
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 ```bash
@@ -275,11 +184,6 @@ REMOTE_REPO="$2"
 BRANCH="${3:-main}"  # Usa il terzo parametro se fornito, altrimenti "main"
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> f1e7ef1046 (.)
 **Suggerimento:**
@@ -287,11 +191,7 @@ BRANCH="${3:-main}"  # Usa il terzo parametro se fornito, altrimenti "main"
 - Fornisci esempi di utilizzo nei commenti degli script.
 
 ## Collegamenti utili
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 ## COLLEGAMENTI ALLA DOCUMENTAZIONE PRINCIPALE
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> 1831d11e78 (.)
 =======
@@ -304,15 +204,10 @@ BRANCH="${3:-main}"  # Usa il terzo parametro se fornito, altrimenti "main"
 ---
 
 > **NOTA IMPORTANTE**: La risoluzione dei conflitti negli script bash deve sempre privilegiare la robustezza, la gestione degli errori e il rispetto del principio DRY. Ogni conflitto risolto deve essere accompagnato da un aggiornamento della documentazione.
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
 # Risoluzione Conflitti Bash
 
 > **Nota**: Per informazioni aggiuntive sui conflitti nei moduli, consulta anche [Conflitti Git nei Moduli](../../docs/conflitti_git_moduli.md)
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> 1831d11e78 (.)
 =======

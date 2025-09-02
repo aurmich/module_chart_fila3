@@ -30,11 +30,6 @@ Gestisce gli aggiornamenti con:
 ## Utilizzo
 
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 >>>>>>> f71d08e230 (.)

@@ -114,8 +114,6 @@ parameters:
         - '#Unsafe usage of new static#'
         - '#Access to an undefined property#'
         - '#Call to an undefined method#'
-<<<<<<< HEAD
-=======
         - '#Call to an undefined static method#'
         - '#PHPDoc tag @mixin contains unknown class#'
 ```
@@ -128,7 +126,6 @@ php artisan phpstan:generate-baseline
 
 # Applicare baseline
 php artisan phpstan:analyse
->>>>>>> 9d102d2 (.)
 ```
 
 ## Errori Comuni

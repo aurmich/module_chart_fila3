@@ -68,3 +68,5 @@ composer.lock
 
 # Documentation builds
 docs/phpstan/
+docs/
+bashscripts/

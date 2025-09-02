@@ -116,51 +116,19 @@ test('successful login regenerates session', function (): void {
 
 ### **Test Execution Commands**
 ```bash
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> a38b33ce0f (.)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
 =======
->>>>>>> d20d0523 (.)
 
 =======
 >>>>>>> 85c5198c (.)
-<<<<<<< HEAD
 =======
->>>>>>> f198176d (.)
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> 337c5266 (.)
 =======
 
 =======
-<<<<<<< HEAD
 =======
->>>>>>> 9de04485 (.)
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 3c18aa7e (.)
 >>>>>>> 9c02579 (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
@@ -267,26 +235,9 @@ Questa implementazione fornisce una **base solida** per tutti i futuri test di a
 
 *Last Updated: Gennaio 2025*  
 *Project: Laraxot SaluteOra*  
-<<<<<<< HEAD
-<<<<<<< HEAD
+*Module: Cms Testing Suite* 
 =======
 *Module: Cms Testing Suite* 
->>>>>>> a38b33ce0f (.)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 85c5198c (.)
-<<<<<<< HEAD
-=======
-*Module: Cms Testing Suite* 
->>>>>>> 3c18aa7e (.)
-<<<<<<< HEAD
-=======
->>>>>>> 337c5266 (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
@@ -296,14 +247,8 @@ Questa implementazione fornisce una **base solida** per tutti i futuri test di a
 >>>>>>> 9de04485 (.)
 =======
 =======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 *Module: Cms Testing Suite* 
->>>>>>> 3c18aa7e (.)
 >>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 =======
 *Module: Cms Testing Suite* 

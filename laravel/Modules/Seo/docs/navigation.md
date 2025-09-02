@@ -32,7 +32,7 @@ return [
 // blade files
 $page->navigation
 ```
->>>>>>> d78cb43 (.)
+
 # Navigazione
 
 La navigazione del modulo SEO è organizzata per fornire un accesso intuitivo alle funzionalità di ottimizzazione.

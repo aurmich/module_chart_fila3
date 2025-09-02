@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ❓ FAQ - Domande Frequenti SaluteOra
 
 ## 📚 Generale
@@ -100,7 +99,6 @@ class UserResource extends XotBaseResource
             'name' => TextInput::make('name'),
             'email' => TextInput::make('email'),
         ];
-=======
 # FAQ
 
 ## Panoramica
@@ -134,12 +132,10 @@ Il tema One è un tema frontend moderno e riusabile basato su:
 {
     "require": {
         "laraxot/theme_one_fila3": "^1.0"
->>>>>>> c07bf8ebb7 (.)
     }
 }
 ```
 
-<<<<<<< HEAD
 ### Q: Perché getFormSchema() deve restituire array con chiavi stringa?
 **A:** Per compatibilità con PHPStan Level 9:
 ```php
@@ -230,7 +226,6 @@ php artisan view:cache
 
 ### Q: Le modifiche al config non si vedono
 **A:** Pulisci e ricrea la cache:
-=======
 2. Esegui l'installazione:
 
 ```bash
@@ -447,13 +442,11 @@ tail -f storage/logs/laravel.log
 
 2. Verifica la configurazione:
 
->>>>>>> c07bf8ebb7 (.)
 ```bash
 php artisan config:clear
 php artisan config:cache
 ```
 
-<<<<<<< HEAD
 ### Q: Permission denied su storage
 **A:** Correggi i permessi:
 ```bash
@@ -569,7 +562,6 @@ name('about');
 
 *FAQ aggiornate al: 28 Maggio 2025*
 *Per domande non presenti qui, consulta la [documentazione completa](INDICE_DOCUMENTAZIONE.md) o contatta il team.*
-=======
 3. Verifica le dipendenze:
 
 ```bash
@@ -583,4 +575,3 @@ npm install
 - [Filament Documentation](https://filamentphp.com/docs)
 - [Vite Documentation](https://vitejs.dev/guide)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs) 
->>>>>>> c07bf8ebb7 (.)

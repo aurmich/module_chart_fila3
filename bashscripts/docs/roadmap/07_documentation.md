@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1831d11e78 (.)
 
 
 
@@ -11,37 +7,16 @@
  43df3e0 (.)
 
 aurmich/dev
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> 1831d11e78 (.)
 =======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
 =======
->>>>>>> 85c5198c (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 3c18aa7e (.)
-<<<<<<< HEAD
-=======
-
->>>>>>> 337c5266 (.)
 =======
 
 =======
 >>>>>>> 3c18aa7e (.)
-<<<<<<< HEAD
->>>>>>> 59901687 (.)
-<<<<<<< HEAD
->>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
 =======
@@ -155,137 +130,8 @@ Questa fase si concentra sulla documentazione completa del sistema, garantendo u
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
 - [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-- [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 
-
-aurmich/dev
-# 📚 Fase 7: Documentazione
-
-## 📋 Panoramica
-Questa fase si concentra sulla documentazione completa del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
-
-
-[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
-aurmich/dev
-# 📚 Fase 7: Documentazione
-
-## 📋 Panoramica
-Questa fase si concentra sulla documentazione completa del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
-
-
-# 📚 Fase 7: Documentazione
-
-## 📋 Panoramica
-Questa fase si concentra sulla documentazione completa del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
-
-
-
-# 📚 Fase 7: Documentazione
-
-## 📋 Panoramica
-Questa fase si concentra sulla documentazione completa del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
-
-[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco HEAD (23 linee vs 1)[0m
- 43df3e0 (.)
-
-aurmich/dev
-
-## Collegamenti tra versioni di 07_documentation.md
-* [07_documentation.md](bashscripts/docs/roadmap/07_documentation.md)
-* [07_documentation.md](docs/roadmap/07_documentation.md)
-
-
-- [Fase 8: Manutenzione](../roadmap/08_maintenance.md) 
-
-aurmich/dev
-
-# 📚 Fase 7: Documentazione
-
-## 📋 Panoramica
-Questa fase si concentra sulla documentazione completa del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
-
-
-[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
-aurmich/dev
-
-# 📚 Fase 7: Documentazione
-
-## 📋 Panoramica
-Questa fase si concentra sulla documentazione completa del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
-
-
-# 📚 Fase 7: Documentazione
-
-## 📋 Panoramica
-Questa fase si concentra sulla documentazione completa del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
-
-
-
-# 📚 Fase 7: Documentazione
-
-## 📋 Panoramica
-Questa fase si concentra sulla documentazione completa del sistema.
-
-## 🔄 Collegamenti
-- [Roadmap Principale](../roadmap.md)
-- [Documentazione Script](../project.md)
-- [Fase 6: Ottimizzazione](../roadmap/06_optimization.md)
-
-[0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco HEAD (23 linee vs 1)[0m
- 43df3e0 (.)
-
-aurmich/dev
-
-## Collegamenti tra versioni di 07_documentation.md
-* [07_documentation.md](bashscripts/docs/roadmap/07_documentation.md)
-* [07_documentation.md](docs/roadmap/07_documentation.md)
 =======
 =======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
 =======
@@ -320,15 +166,7 @@ aurmich/dev
 - Finalizzazione
 - Pubblicazione
 - Manutenzione
-<<<<<<< HEAD
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 337c5266 (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
@@ -465,14 +303,7 @@ aurmich/dev
 * [07_documentation.md](docs/roadmap/07_documentation.md)
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 =======
-=======
->>>>>>> 85c5198c (.)
 =======
 >>>>>>> 9de04485 (.)
 =======
@@ -544,12 +375,6 @@ aurmich/dev
 * [07_documentation.md](docs/roadmap/07_documentation.md)
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 337c5266 (.)
 =======
 >>>>>>> 59901687 (.)
 >>>>>>> 85c5198c (.)
