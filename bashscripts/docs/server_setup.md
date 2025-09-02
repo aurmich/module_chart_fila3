@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Setup del Progetto Laravel
 
 Questo documento contiene la documentazione dettagliata dei comandi utilizzati per il setup di un progetto Laravel, insieme a spiegazioni, consigli e note per migliorare il processo.
@@ -22,7 +25,10 @@ Questo documento contiene la documentazione dettagliata dei comandi utilizzati p
 
 ### Verifica Requisiti
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Verifica versione PHP
 php -v
 
@@ -84,7 +90,10 @@ sudo add-apt-repository ppa:ondrej/php
 
 ### Configurazione File .env
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Naviga nella directory del progetto
 cd laravel
 
@@ -115,7 +124,11 @@ php artisan key:generate
 
   APP_NAME=<nome progetto>
 
+<<<<<<< HEAD
   APP_NAME=SaluteOra
+=======
+  APP_NAME=<nome progetto>
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
  80ec88ee9 (.)
   APP_ENV=local
   APP_DEBUG=true
@@ -375,7 +388,10 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 
 ### Configurazione Tema Powerlevel10k
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Modifica il file ~/.zshrc
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
@@ -512,7 +528,10 @@ sudo apt-get install --install-recommends webmin usermin
 
 ### Aggiornamento Composer e Dipendenze
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Naviga nella directory del progetto
 cd laravel
 
@@ -812,7 +831,10 @@ sudo pecl install redis
 
 ### Creazione Database SQLite
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Crea il file database.sqlite nella directory database
 touch laravel/database/database.sqlite
 ```
@@ -849,7 +871,10 @@ touch laravel/database/database.sqlite
 
 ### Configurazione Client Redis
 ```ini
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Configurazione nel file .env
 REDIS_CLIENT=predis
 ```
@@ -891,7 +916,10 @@ REDIS_CLIENT=predis
 
 ### Pubblicazione Vendor e Migrazioni
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Pubblica tutti i file dei vendor
 php artisan vendor:publish --all
 
@@ -968,7 +996,10 @@ sudo systemctl start redis-server
 
 ### Configurazione Redis
 ```ini
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # /etc/redis/redis.conf
 maxmemory 256mb
 maxmemory-policy allkeys-lru
@@ -994,7 +1025,10 @@ maxmemory-policy allkeys-lru
 
 ### Configurazione Performance
 ```apache
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # /etc/apache2/mods-available/mpm_prefork.conf
 <IfModule mpm_prefork_module>
     StartServers 5
@@ -1007,7 +1041,10 @@ maxmemory-policy allkeys-lru
 
 ### Gestione Moduli Apache
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Disabilita il modulo PHP 8.2
 sudo a2dismod php8.2
 
@@ -1245,12 +1282,16 @@ php artisan user:assign-module
 
   ```
  80ec88ee9 (.)
+<<<<<<< HEAD
  43df3e0 (.)
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Setup del Progetto Laravel
 
 Questo documento contiene la documentazione dettagliata dei comandi utilizzati per il setup di un progetto Laravel, insieme a spiegazioni, consigli e note per migliorare il processo.
 
+<<<<<<< HEAD
 
 ## Perché questo documento?
 Questo documento serve come guida completa per il setup di un ambiente di sviluppo Laravel, con particolare attenzione a:
@@ -1262,6 +1303,8 @@ Questo documento serve come guida completa per il setup di un ambiente di svilup
 
  43df3e0 (.)
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 ## Requisiti di Sistema
 
 ### Hardware Minimi
@@ -1280,7 +1323,10 @@ Questo documento serve come guida completa per il setup di un ambiente di svilup
 
 ### Verifica Requisiti
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Verifica versione PHP
 php -v
 
@@ -1312,17 +1358,23 @@ composer --version
 sudo apt install tasksel
 ```
 
+<<<<<<< HEAD
 
 **Perché?**
 - `tasksel` permette di installare rapidamente gruppi di pacchetti predefiniti
 - Standardizza l'installazione degli ambienti di sviluppo
 - Riduce la possibilità di errori durante il setup
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 **Spiegazione:**
 - `tasksel` è un tool che permette di installare gruppi di pacchetti predefiniti su sistemi Debian/Ubuntu
 - Utile per installare rapidamente ambienti di sviluppo completi
 - Richiede privilegi di root (sudo)
+<<<<<<< HEAD
  43df3e0 (.)
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 
 **Note:**
 - Verificare che il sistema sia aggiornato prima dell'installazione
@@ -1336,6 +1388,7 @@ sudo apt install tasksel
 sudo add-apt-repository ppa:ondrej/php
 ```
 
+<<<<<<< HEAD
 
 **Perché?**
 - Fornisce accesso alle versioni più recenti e stabili di PHP
@@ -1347,6 +1400,8 @@ sudo add-apt-repository ppa:ondrej/php
 - Dopo l'aggiunta, eseguire `sudo apt update`
 - Repository affidabile per PHP su Ubuntu
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 **Spiegazione:**
 - Aggiunge il repository PPA di Ondřej Surý, che contiene le versioni più recenti e stabili di PHP
 - Permette di installare versioni specifiche di PHP (7.4, 8.0, 8.1, 8.2, 8.3)
@@ -1357,11 +1412,17 @@ sudo add-apt-repository ppa:ondrej/php
 - Dopo l'aggiunta del repository, è necessario aggiornare la lista dei pacchetti con `sudo apt update`
 - Questo repository è considerato uno dei più affidabili per PHP su Ubuntu
 - Consigliato per progetti che necessitano di versioni specifiche di PHP
+<<<<<<< HEAD
  43df3e0 (.)
 
 ### Configurazione File .env
 ```bash
 
+=======
+
+### Configurazione File .env
+```bash
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Naviga nella directory del progetto
 cd laravel
 
@@ -1372,6 +1433,7 @@ cp .env.latest .env
 php artisan key:generate
 ```
 
+<<<<<<< HEAD
 
 **Perché?**
 - Configura l'ambiente di sviluppo Laravel
@@ -1385,6 +1447,8 @@ php artisan key:generate
   ```ini
   APP_NAME=SaluteOra
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 **Spiegazione:**
 - Configura l'ambiente di sviluppo Laravel
 - `cp .env.latest .env`: Copia il file di configurazione template in .env
@@ -1403,18 +1467,28 @@ php artisan key:generate
 - Se necessario, configurare manualmente altre variabili d'ambiente:
   ```ini
   APP_NAME=<nome progetto>
+<<<<<<< HEAD
  43df3e0 (.)
+=======
+
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
   APP_ENV=local
   APP_DEBUG=true
   APP_URL=http://localhost
   ```
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 - In caso di problemi, verificare i permessi del file .env:
   ```bash
   chmod 644 .env
   ```
+<<<<<<< HEAD
  43df3e0 (.)
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 
 ## Installazione Dipendenze
 
@@ -1423,6 +1497,7 @@ php artisan key:generate
 sudo apt install lamp-server^
 ```
 
+<<<<<<< HEAD
 
 **Perché?**
 - Installa il completo stack LAMP in un unico comando
@@ -1440,6 +1515,8 @@ sudo apt install lamp-server^
 - Durante l'installazione verrà richiesta la password per MySQL
 - Verificare lo stato dei servizi:
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 **Spiegazione:**
 - Installa il completo stack LAMP (Linux, Apache, MySQL, PHP)
 - Il simbolo `^` alla fine indica che si tratta di un task completo
@@ -1457,7 +1534,10 @@ sudo apt install lamp-server^
 - Durante l'installazione verrà richiesta la password per MySQL
 - Consigliato eseguire `sudo apt update` prima dell'installazione
 - Verificare che tutti i servizi siano attivi dopo l'installazione:
+<<<<<<< HEAD
  43df3e0 (.)
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
   ```bash
   sudo systemctl status apache2
   sudo systemctl status mysql
@@ -1468,6 +1548,7 @@ sudo apt install lamp-server^
 sudo apt install git npm aptitude
 ```
 
+<<<<<<< HEAD
 
 **Perché?**
 - Fornisce gli strumenti essenziali per lo sviluppo
@@ -1487,6 +1568,8 @@ sudo apt install git npm aptitude
   
   # Configura Git
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 **Spiegazione:**
 - Installa tre strumenti essenziali per lo sviluppo:
   1. `git`: Sistema di controllo versione distribuito
@@ -1516,13 +1599,19 @@ sudo apt install git npm aptitude
   ```
 - Per Git, configurare l'utente:
   ```bash
+<<<<<<< HEAD
  43df3e0 (.)
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
   git config --global user.name "Nome Utente"
   git config --global user.email "email@example.com"
   ```
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 ### Installazione Estensioni PHP
 ```bash
 sudo apt-get install -y php libapache2-mod-php php8.*-{cli,bcmath,bz2,intl,gd,mbstring,mysql,zip,common,curl,xml,imap,pdo-sqlite,sqlite3,dom} php-{json,xml,zip,common,tokenizer,mysql,sqlite3} libapache2-mod-php8*
@@ -1722,7 +1811,10 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 
 ### Configurazione Tema Powerlevel10k
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Modifica il file ~/.zshrc
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
@@ -1859,7 +1951,10 @@ sudo apt-get install --install-recommends webmin usermin
 
 ### Aggiornamento Composer e Dipendenze
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Naviga nella directory del progetto
 cd laravel
 
@@ -2155,12 +2250,16 @@ sudo pecl install redis
   sudo pecl uninstall redis
   ```
 
+<<<<<<< HEAD
  43df3e0 (.)
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 ## Configurazione Database
 
 ### Creazione Database
 ```bash
+<<<<<<< HEAD
 
 # Accedi a MySQL
 
@@ -2168,6 +2267,10 @@ mysql -u root -p
 
 sudo mysql
  43df3e0 (.)
+=======
+# Accedi a MySQL
+sudo mysql
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 
 # Crea il database
 CREATE DATABASE laravel CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -2175,16 +2278,21 @@ CREATE DATABASE laravel CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 # Crea l'utente
 CREATE USER 'laravel'@'localhost' IDENTIFIED BY 'password';
 
+<<<<<<< HEAD
 
 # Concedi i privilegi
 
 # Assegna i permessi
  43df3e0 (.)
+=======
+# Assegna i permessi
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 GRANT ALL PRIVILEGES ON laravel.* TO 'laravel'@'localhost';
 
 # Applica i cambiamenti
 FLUSH PRIVILEGES;
 
+<<<<<<< HEAD
 ```
 
 **Perché?**
@@ -2199,6 +2307,8 @@ FLUSH PRIVILEGES;
   mysql -u laravel -p laravel
 
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Esci
 EXIT;
 ```
@@ -2222,10 +2332,15 @@ EXIT;
   DB_DATABASE=laravel
   DB_USERNAME=laravel
   DB_PASSWORD=password
+<<<<<<< HEAD
 
 ### Creazione Database SQLite
 ```bash
 
+=======
+### Creazione Database SQLite
+```bash
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Crea il file database.sqlite nella directory database
 touch laravel/database/database.sqlite
 ```
@@ -2262,7 +2377,10 @@ touch laravel/database/database.sqlite
 
 ### Configurazione Client Redis
 ```ini
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Configurazione nel file .env
 REDIS_CLIENT=predis
 ```
@@ -2304,7 +2422,10 @@ REDIS_CLIENT=predis
 
 ### Pubblicazione Vendor e Migrazioni
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Pubblica tutti i file dei vendor
 php artisan vendor:publish --all
 
@@ -2343,11 +2464,15 @@ php artisan migrate
 - Per ripristinare tutte le migrazioni:
   ```bash
   php artisan migrate:fresh
+<<<<<<< HEAD
  43df3e0 (.)
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
   ```
 
 ## Note e Consigli
 
+<<<<<<< HEAD
 
 ### Best Practices
 1. **Sicurezza:**
@@ -2381,6 +2506,8 @@ php artisan migrate
 - [[docs/architecture/README|Architettura]]
 - [[docs/development/README|Guide Sviluppo]]
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 ### Sicurezza
 - Utilizzare sempre password complesse
 - Limitare i permessi degli utenti al minimo necessario
@@ -2447,7 +2574,10 @@ sudo systemctl start redis-server
 
 ### Configurazione Redis
 ```ini
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # /etc/redis/redis.conf
 maxmemory 256mb
 maxmemory-policy allkeys-lru
@@ -2473,7 +2603,10 @@ maxmemory-policy allkeys-lru
 
 ### Configurazione Performance
 ```apache
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # /etc/apache2/mods-available/mpm_prefork.conf
 <IfModule mpm_prefork_module>
     StartServers 5
@@ -2486,7 +2619,10 @@ maxmemory-policy allkeys-lru
 
 ### Gestione Moduli Apache
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Disabilita il modulo PHP 8.2
 sudo a2dismod php8.2
 
@@ -2720,4 +2856,17 @@ php artisan user:assign-module
   ```
 - Per rimuovere l'assegnazione di un modulo:
   ```
+<<<<<<< HEAD
  43df3e0 (.)
+=======
+
+ 43df3e0 (.)
+aurmich/dev
+
+## Collegamenti tra versioni di server_setup.md
+* [server_setup.md](../../docs/server_setup.md)
+* [server_setup.md](server_setup.md)
+
+
+  ```
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)

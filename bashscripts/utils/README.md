@@ -29,7 +29,10 @@ Assiste nello sviluppo con:
 ## Utilizzo
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Verifica sistema
 ./check_system.sh
 

@@ -1,12 +1,16 @@
 #!/bin/bash
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # 🎨 Colori per il logging
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m'
+<<<<<<< HEAD
 
 # LOG_FILE="subtree_sync.log"  # Rimosso: non si scrive più su file
 BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
@@ -78,21 +82,81 @@ check_repository_integrity() {
 }
 =======
 LOG_FILE="subtree_sync.log"
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 
-# Funzione per loggare messaggi
+# LOG_FILE="subtree_sync.log"  # Rimosso: non si scrive più su file
+BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
+
+# Funzione avanzata per loggare messaggi
 log() {
-    local message="$1"
-    echo "📆 $(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
+    # Supporta sia il formato avanzato con livelli che il formato semplice
+    if [ $# -eq 2 ]; then
+        # Formato avanzato: log "level" "message"
+        local level="$1"
+        local message="$2"
+        local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
+        case "$level" in
+            "error") echo -e "${RED}❌ [$timestamp] $message${NC}" ;;
+            "success") echo -e "${GREEN}✅ [$timestamp] $message${NC}" ;;
+            "warning") echo -e "${YELLOW}⚠️ [$timestamp] $message${NC}" ;;
+            "info") echo -e "${BLUE}ℹ️ [$timestamp] $message${NC}" ;;
+            *) echo -e "[$timestamp] $message" ;;
+        esac
+    else
+        # Formato semplice: log "message"
+        local message="$1"
+        local timestamp=$(date '+%Y-%m-%d %H:%M:%S')
+        echo "📆 $timestamp - $message"
+    fi
 }
 
-# Funzione per gestire gli errori
+# Funzione avanzata per gestire gli errori git
+handle_git_error() {
+    local operation="$1"
+    local error_message="$2"
+    local retry_count="${3:-3}"
+
+    log "error" "Errore durante $operation: $error_message"
+
+    if [ $retry_count -gt 0 ]; then
+        log "warning" "Tentativo di ripetere l'operazione ($retry_count tentativi rimasti)"
+        return 1
+    else
+        log "error" "Tentativi esauriti per $operation"
+        exit 1
+    fi
+}
+
+# Funzione per gestire gli errori generici
 handle_error() {
     local error_message="$1"
-    log "❌ Errore: $error_message"
+    log "error" "$error_message"
     exit 1
 }
 
+<<<<<<< HEAD
 >>>>>>> 5e5f2e85b (first)
+=======
+# Funzione semplice per terminare con errore
+die() {
+    echo "$1" >&2
+    exit 1
+}
+
+# Funzione per verificare l'integrità del repository
+check_repository_integrity() {
+    log "info" "Verifica integrità repository..."
+
+    if ! git fsck --full --strict; then
+        handle_git_error "verifica integrità" "Problemi riscontrati nel repository"
+    fi
+
+    if ! git diff --quiet; then
+        log "warning" "Ci sono modifiche non committate nel repository"
+    fi
+}
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 
 # Funzione per riscrivere la URL secondo le regole specificate
 rewrite_url() {
@@ -110,6 +174,9 @@ rewrite_url() {
         echo "git@github.com:${org}/${repo_name}"
     fi
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 }
 
 # Funzione avanzata per la manutenzione git
@@ -305,6 +372,9 @@ is_readable() {
 # Funzione per verificare se un file è scrivibile
 is_writable() {
     [ -w "$1" ]
+<<<<<<< HEAD
 =======
 >>>>>>> 5e5f2e85b (first)
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 }

@@ -40,7 +40,10 @@ git/
 
 ### Comandi Comuni
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Sincronizzare subtrees
 ./subtrees/sync.sh
 

@@ -29,7 +29,10 @@ Verifica la qualità con:
 ## Utilizzo
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Esegui tutti i test
 ./run_tests.sh
 

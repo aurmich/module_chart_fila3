@@ -48,7 +48,10 @@ system/
 
 ### Comandi Comuni
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Monitoraggio sistema
 ./monitoring/check_resources.sh
 

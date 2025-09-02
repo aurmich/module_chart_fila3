@@ -48,7 +48,10 @@ docker/
 
 ### Comandi Comuni
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Deploy stack
 ./deployment/deploy_stack.sh
 

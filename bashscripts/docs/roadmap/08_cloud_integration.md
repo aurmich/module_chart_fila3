@@ -5,9 +5,13 @@
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 
 aurmich/dev
 
+=======
+aurmich/dev
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # 🌐 Fase 8: Cloud Integration
 
 ## 📋 Panoramica
@@ -133,7 +137,10 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
 ### Q4 2028
 - Deployment produzione
 - Monitoraggio continuo
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # 🌐 Fase 8: Cloud Integration
 
 ## 📋 Panoramica
@@ -268,7 +275,10 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
 aurmich/dev
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # 🌐 Fase 8: Cloud Integration
 
 ## 📋 Panoramica
@@ -396,7 +406,10 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
 - Monitoraggio continuo
 
  43df3e0 (.)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 aurmich/dev
 
 
@@ -918,7 +931,10 @@ Questa fase si concentra sull'integrazione con i principali cloud provider per g
 
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (255 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 aurmich/dev
 
 ## Collegamenti tra versioni di 08_cloud_integration.md

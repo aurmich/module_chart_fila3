@@ -5,9 +5,13 @@
 
 [0;34mℹ️ [2025-04-22 11:23:25] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 
 aurmich/dev
 
+=======
+aurmich/dev
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # 🚀 Fase 4: Deployment
 
 ## 📋 Panoramica
@@ -22,7 +26,10 @@ Questa fase si concentra sul deployment e la distribuzione del sistema.
 - [Fase 5: Monitoraggio](../roadmap/05_monitoring.md) 
 
 aurmich/dev
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # 🚀 Fase 4: Deployment
 
 ## 📋 Panoramica
@@ -36,7 +43,10 @@ Questa fase si concentra sul deployment e la distribuzione del sistema.
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 aurmich/dev
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # 🚀 Fase 4: Deployment
 
 ## 📋 Panoramica
@@ -72,7 +82,10 @@ Questa fase si concentra sul deployment e la distribuzione del sistema.
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (23 linee vs 1)[0m
  43df3e0 (.)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 aurmich/dev
 
 ## Collegamenti tra versioni di 04_deployment.md

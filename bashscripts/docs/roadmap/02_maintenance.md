@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # 🛠️ Fase 2: Manutenzione
 
 ## 📋 Panoramica
@@ -40,11 +46,19 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
    - Monitoraggio automatico
    - Alerting proattivo
    - Report automatizzati
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 2. **Sicurezza**:
    - Verifica integrità dati
    - Backup crittografati
    - Controllo accessi
    - Audit log
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 3. **Performance**:
    - Ottimizzazione risorse
    - Caching intelligente
@@ -96,6 +110,7 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
 - Ansible
 - Cron
 - Systemd
+<<<<<<< HEAD
 - Bash
 
 ---
@@ -115,5 +130,116 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
 ---
 
 Per ulteriori dettagli, consultare la documentazione degli script specifici e le sezioni successive della roadmap.
+=======
+- Bash 
+
+
+
+
+
+
+
+[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
+# 🛠️ Fase 2: Manutenzione
+
+## 📋 Panoramica
+Questa fase si concentra sulla manutenzione e ottimizzazione del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 1: Core Git Operations](../roadmap/01_core_git_operations.md)
+# 🛠️ Fase 2: Manutenzione
+
+## 📋 Panoramica
+Questa fase si concentra sulla manutenzione e ottimizzazione del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 1: Core Git Operations](../roadmap/01_core_git_operations.md)
+# 🛠️ Fase 2: Manutenzione
+
+## 📋 Panoramica
+Questa fase si concentra sulla manutenzione e ottimizzazione del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 1: Core Git Operations](../roadmap/01_core_git_operations.md)
+
+[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco incoming (1 linee vs 1)[0m
+ 43df3e0 (.)
+aurmich/dev
+# 🛠️ Fase 2: Manutenzione
+
+## 📋 Panoramica
+Questa fase si concentra sulla manutenzione e ottimizzazione del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 1: Core Git Operations](../roadmap/01_core_git_operations.md)
+# 🛠️ Fase 2: Manutenzione
+
+## 📋 Panoramica
+Questa fase si concentra sulla manutenzione e ottimizzazione del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 1: Core Git Operations](../roadmap/01_core_git_operations.md)
+
+
+
+
+ 43df3e0 (.)
+aurmich/dev
+# 🛠️ Fase 2: Manutenzione
+
+## 📋 Panoramica
+Questa fase si concentra sulla manutenzione e ottimizzazione del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 1: Core Git Operations](../roadmap/01_core_git_operations.md)
+
+
+
+
+# 🛠️ Fase 2: Manutenzione
+
+## 📋 Panoramica
+Questa fase si concentra sulla manutenzione e ottimizzazione del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 1: Core Git Operations](../roadmap/01_core_git_operations.md)
+
+
+- [Fase 3: Verifica](../roadmap/03_verification.md) 
+
+
+# 🛠️ Fase 2: Manutenzione
+
+## 📋 Panoramica
+Questa fase si concentra sulla manutenzione e ottimizzazione del sistema.
+
+## 🔄 Collegamenti
+- [Roadmap Principale](../roadmap.md)
+- [Documentazione Script](../project.md)
+- [Fase 1: Core Git Operations](../roadmap/01_core_git_operations.md)
+
+[0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (19 linee vs 1)[0m
+- [Fase 3: Verifica](../roadmap/03_verification.md) 
+ 43df3e0 (.)
+aurmich/dev
+
+## Collegamenti tra versioni di 02_maintenance.md
+* [02_maintenance.md](bashscripts/docs/roadmap/02_maintenance.md)
+* [02_maintenance.md](docs/roadmap/02_maintenance.md)
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 
 

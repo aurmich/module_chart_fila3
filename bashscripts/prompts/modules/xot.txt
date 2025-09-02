@@ -125,7 +125,11 @@ namespace Modules\Xot\Traits;
 
 trait HasXotTable
 {
+<<<<<<< HEAD
     abstract public function getTableColumns(): array;
+=======
+    abstract public function getListTableColumns(): array;
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 }
 ```
 

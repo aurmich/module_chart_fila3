@@ -41,7 +41,11 @@
 - Non definire table() (gestito dalla pagina index)
 
 ## PAGINE DI LISTA
+<<<<<<< HEAD
 - Usare metodi specifici: getTableColumns(), getTableFilters(), getTableActions()
+=======
+- Usare metodi specifici: getListTableColumns(), getTableFilters(), getTableActions()
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 - Usare array associativi con chiavi string per componenti
 
 ## MIGRAZIONI

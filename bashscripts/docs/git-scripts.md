@@ -4,7 +4,15 @@
 
 # Script Git per la Gestione dei Subtree
 
+<<<<<<< HEAD
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
+=======
+# Script Git
+
+Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
+ 43df3e0 (.)
+aurmich/dev
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 
 ## Panoramica
 Questa documentazione descrive gli script bash utilizzati per la gestione dei subtree git nel progetto Laraxot.
@@ -55,6 +63,10 @@ Script per il pull di un singolo subtree. Caratteristiche:
 **Parametri**:
 - `<path>`: Il percorso del subtree locale
 - `<remote_repo>`: L'URL del repository remoto
+<<<<<<< HEAD
+=======
+aurmich/dev
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 
 ### git_push_subtrees.sh
 Script per il push dei subtree. Funzionalità:
@@ -62,6 +74,10 @@ Script per il push dei subtree. Funzionalità:
 2. Supporto per organizzazioni multiple
 3. Gestione errori e logging
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 ### git_sync_subtree.sh
 Script ottimizzato per la sincronizzazione di un singolo subtree. Caratteristiche principali:
 1. Sistema avanzato di logging con timestamp e codici colore
@@ -113,6 +129,10 @@ Script completo per la sincronizzazione di tutti i subtree definiti in `gitmodul
 
 Per una documentazione più generale sugli script di gestione Git, consultare la [documentazione centrale](../../docs/bashscripts/gestione_git.md).
 
+<<<<<<< HEAD
+=======
+aurmich/dev
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 ## Best Practices
 1. Utilizzare sempre `git_config_setup` per la configurazione
 2. Gestire i backup prima delle operazioni critiche
@@ -124,6 +144,10 @@ Per una documentazione più generale sugli script di gestione Git, consultare la
 2. Errori di path: verificare la configurazione Windows
 3. Problemi di permessi: controllare fileMode e symlinks
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 ## Script di sincronizzazione repository remoti
 
 ### sync_remote_repo.sh
@@ -162,4 +186,8 @@ Questo script sincronizza i repository remoti con i sottoprogetti locali definit
 
 Questa strategia è generalmente migliore per ridurre i conflitti rispetto all'uso di `git merge`, specialmente quando si lavora con sottoprogetti che vengono aggiornati frequentemente. Il rebase mantiene una storia più pulita e lineare.
 
+<<<<<<< HEAD
+=======
+aurmich/dev
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 [Torna alla documentazione principale](../../docs/maintenance.md#git-management) 

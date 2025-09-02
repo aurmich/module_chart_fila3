@@ -30,7 +30,10 @@ Gestisce gli aggiornamenti con:
 ## Utilizzo
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Manutenzione completa
 ./clear_cache.sh
 ./optimize_database.sh
