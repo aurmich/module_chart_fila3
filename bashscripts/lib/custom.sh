@@ -1,5 +1,6 @@
 #!/bin/bash
 
+<<<<<<< HEAD
 # 🎨 Colori per il logging
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -75,6 +76,23 @@ check_repository_integrity() {
         log "warning" "Ci sono modifiche non committate nel repository"
     fi
 }
+=======
+LOG_FILE="subtree_sync.log"
+
+# Funzione per loggare messaggi
+log() {
+    local message="$1"
+    echo "📆 $(date '+%Y-%m-%d %H:%M:%S') - $message" | tee -a "$LOG_FILE"
+}
+
+# Funzione per gestire gli errori
+handle_error() {
+    local error_message="$1"
+    log "❌ Errore: $error_message"
+    exit 1
+}
+
+>>>>>>> 5e5f2e85b (first)
 
 # Funzione per riscrivere la URL secondo le regole specificate
 rewrite_url() {
@@ -91,6 +109,7 @@ rewrite_url() {
         # ORG è un'organizzazione GitHub → usa formato GitHub SSH
         echo "git@github.com:${org}/${repo_name}"
     fi
+<<<<<<< HEAD
 }
 
 # Funzione avanzata per la manutenzione git
@@ -286,4 +305,6 @@ is_readable() {
 # Funzione per verificare se un file è scrivibile
 is_writable() {
     [ -w "$1" ]
+=======
+>>>>>>> 5e5f2e85b (first)
 }

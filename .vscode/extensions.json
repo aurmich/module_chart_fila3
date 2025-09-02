@@ -1,5 +1,6 @@
 {
     "recommendations": [
+<<<<<<< HEAD
         "cjhowe7.laravel-blade",
         "austenc.laravel-blade-spacer",
         "shufo.vscode-blade-formatter",
@@ -21,3 +22,10 @@
         "mehedidracula.php-namespace-resolver"
     ]
 }
+=======
+        "junstyle.php-cs-fixer",
+        "mehedidracula.php-namespace-resolver",
+        "bmewburn.vscode-intelephense-client"
+    ]
+}
+>>>>>>> 5e5f2e85b (first)
