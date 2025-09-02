@@ -70,3 +70,4 @@ composer.lock
 docs/phpstan/
 docs/
 bashscripts/
+laravel/resources/views/vendor
