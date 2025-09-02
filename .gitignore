@@ -140,4 +140,8 @@ public_html/js/
 >>>>>>> 1a44802e6d (.)
 =======
 public_html/vendor/
+<<<<<<< HEAD
 >>>>>>> 8345b0c130 (.)
+=======
+laravel/resources/views/vendor/
+>>>>>>> 747b5594cc (.)
