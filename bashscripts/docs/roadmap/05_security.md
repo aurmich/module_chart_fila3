@@ -407,9 +407,13 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
  43df3e0 (.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> 1831d11e78 (.)
 ## 🎯 Funzionalità Future
 
 ### 1. Verifica Dipendenze
@@ -1082,9 +1086,13 @@ aurmich/dev
 - Aggiornamenti 
  43df3e0 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> 1831d11e78 (.)
 aurmich/dev
 
 ## Collegamenti tra versioni di 05_security.md

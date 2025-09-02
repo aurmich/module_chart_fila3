@@ -6,12 +6,18 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
  0440c57 (.)
 
 =======
  0440c57 (.)
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+ 0440c57 (.)
+
+>>>>>>> 1831d11e78 (.)
 // WHY: Recupera il nome della relazione 'table' associata all'istanza corrente.
 // WHAT: Usa il metodo getRelationValue per ottenere la proprietà 'name' della relazione.
 $this->getRelationValue('table')->name;
@@ -37,22 +43,32 @@ $this->getRelationValue('table')->name
 
  cb513be (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1831d11e78 (.)
 
  43df3e0 (.)
 
 
+<<<<<<< HEAD
 =======
  43df3e0 (.)
 
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+>>>>>>> 1831d11e78 (.)
 $this->getRelationValue('table')->name
 
 
  0440c57 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> 1831d11e78 (.)
 $query->when($request->filled('q'), function (Builder $query) use ($request) {
     $query->where(function (Builder $query) use ($request) {
         $query->where('name', 'like', "%{$request->get('q')}%")
@@ -66,9 +82,13 @@ $this->getRelationValue('table')->name
 
  cb513be (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> 1831d11e78 (.)
 $query->when($request->filled('q'), function (Builder $query) use ($request) {
     $query->where(function (Builder $query) use ($request) {
         $query->where('name', 'like', "%{$request->get('q')}%")
@@ -89,13 +109,18 @@ $query->when($request->filled('q'), function (Builder $query) use ($request) {
 
  cb513be (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> 1831d11e78 (.)
 })
  43df3e0 (.)
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
  cb513be (.)
@@ -104,7 +129,15 @@ $query->when($request->filled('q'), function (Builder $query) use ($request) {
  0440c57 (.)
 
 =======
+=======
+
+>>>>>>> 1831d11e78 (.)
  cb513be (.)
+
 })
  0440c57 (.)
+<<<<<<< HEAD
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> 1831d11e78 (.)

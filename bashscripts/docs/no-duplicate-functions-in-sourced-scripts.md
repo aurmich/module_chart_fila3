@@ -100,7 +100,11 @@ function validate_input() {
 
  43df3e0 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> 1831d11e78 (.)
 aurmich/dev

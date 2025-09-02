@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1831d11e78 (.)
 # Gestione dei Conflitti nei File di Configurazione
 
 ## Panoramica
@@ -29,6 +32,145 @@ File come:
 - `phpstan.neon`
 
 ### 4. File di Ambiente
+<<<<<<< HEAD
+=======
+
+- `.env`
+- `.env.example`
+
+## Strategie di Risoluzione
+
+### Per File PHP
+
+1. **Analisi delle Chiavi**: Confrontare le chiavi di configurazione tra le versioni
+2. **Fusione Manuale**: Integrare i valori di configurazione di entrambe le versioni
+3. **Verifica della Sintassi**: Assicurarsi che il file rimanga sintatticamente valido
+
+**Esempio di Risoluzione**:
+
+```php
+// Conflitto
+'providers' => [
+    App\Providers\AppServiceProvider::class,
+    App\Providers\AuthServiceProvider::class,
+    CustomProvider::class,
+],
+'providers' => [
+    App\Providers\AppServiceProvider::class,
+    App\Providers\AuthServiceProvider::class,
+    App\Providers\EventServiceProvider::class,
+],
+
+// Risoluzione
+'providers' => [
+    App\Providers\AppServiceProvider::class,
+    App\Providers\AuthServiceProvider::class,
+    App\Providers\EventServiceProvider::class,
+    CustomProvider::class,
+],
+```
+
+### Per File JSON
+
+1. **Analisi della Struttura**: Comprendere la struttura del file JSON
+2. **Fusione delle Proprietà**: Integrare le proprietà di entrambe le versioni
+3. **Verifica della Validità**: Assicurarsi che il JSON rimanga valido
+
+**Esempio di Risoluzione per composer.json**:
+
+```json
+// Conflitto in require
+"require": {
+    "php": "^8.2",
+    "laravel/framework": "^10.0",
+    "custom/package": "^1.0"
+}
+"require": {
+    "php": "^8.2",
+    "laravel/framework": "^10.0",
+    "another/package": "^2.0"
+}
+
+// Risoluzione
+"require": {
+    "php": "^8.2",
+    "laravel/framework": "^10.0",
+    "custom/package": "^1.0",
+    "another/package": "^2.0"
+}
+```
+
+### Per File YAML/NEON
+
+1. **Analisi dell'Indentazione**: Prestare attenzione alla struttura e all'indentazione
+2. **Fusione Manuale**: Integrare le configurazioni di entrambe le versioni
+3. **Verifica della Validità**: Assicurarsi che il file rimanga valido
+
+### Per File di Ambiente
+
+1. **Comparazione per Variabili**: Confrontare le variabili di ambiente
+2. **Mantenere Entrambi i Valori**: Documentare entrambe le opzioni
+3. **Aggiornare .env.example**: Assicurarsi che .env.example contenga tutte le variabili
+
+## Considerazioni Speciali
+
+### 1. Versioning Semantico
+
+Nei file come `composer.json`, prestare attenzione ai vincoli di versione:
+- `^1.0` vs `^2.0` indica versioni incompatibili
+- `~1.0` vs `~1.1` potrebbe essere compatibile
+
+### 2. Dipendenze Circolari
+
+Verificare che le modifiche non introducano dipendenze circolari tra i moduli.
+
+### 3. Configurazioni Sensibili
+
+Evitare di committare credenziali o chiavi segrete. Utilizzare variabili di ambiente invece.
+
+## Processo di Risoluzione
+
+### 1. Identificazione
+
+### 2. Backup
+```bash
+cp conflicted_file.php conflicted_file.php.backup
+```
+
+### 3. Analisi
+- Comprendere le differenze tra le versioni
+- Determinare quali configurazioni devono essere mantenute
+
+### 4. Risoluzione
+- Applicare la strategia appropriata in base al tipo di file
+- Rimuovere i marcatori di conflitto
+
+### 5. Validazione
+- Verificare la sintassi e la validità del file
+- Testare il funzionamento delle configurazioni
+
+### 6. Commit
+```bash
+git add conflicted_file.php
+git commit -m "Risolto conflitto in file di configurazione"
+```
+
+## Best Practices
+
+1. **Modularizzazione**: Dividere configurazioni complesse in file più piccoli
+2. **Commenti**: Documentare il motivo di configurazioni non ovvie
+3. **Standardizzazione**: Seguire convenzioni coerenti per strutture e nomi
+4. **Documentazione**: Aggiornare la documentazione dopo modifiche significative
+5. **Review**: Sottoporre a review le modifiche alle configurazioni critiche
+
+## Esempi Comuni di Conflitti
+
+### Conflitto in modules_statuses.json
+
+### Conflitto in phpstan.neon
+
+## Collegamenti Bidirezionali
+>>>>>>> 1831d11e78 (.)
 
 - `.env`
 - `.env.example`
@@ -352,6 +494,7 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione PostCSS](https://postcss.org/)
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
+<<<<<<< HEAD
 # Risoluzione dei Conflitti nei File di Configurazione
 
 ## Problema
@@ -662,6 +805,8 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione PostCSS](https://postcss.org/)
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
+=======
+>>>>>>> 1831d11e78 (.)
 >>>>>>> f000df5 (.)
 # Risoluzione dei Conflitti nei File di Configurazione
 
@@ -765,4 +910,13 @@ I seguenti file di configurazione sono stati recentemente risolti:
 =======
 >>>>>>> 4d4d6cb7 (.)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md) 
+<<<<<<< HEAD
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+=======
+- [Risoluzione Conflitti Git](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/git_conflicts_resolution.md)
+- [Script di Risoluzione Automatica](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/fix_all_git_conflicts.md)
+- [Conflitti Merge Risolti Xot](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/conflitti_merge_risolti.md)
+- [Gestione della Configurazione](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/config.md)
+>>>>>>> d83fe8da (.)
+>>>>>>> 1831d11e78 (.)

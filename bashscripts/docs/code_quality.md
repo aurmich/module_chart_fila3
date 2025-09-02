@@ -26,6 +26,9 @@ php bashscripts/check_form_schema.php
 
 ### Output
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1831d11e78 (.)
 Esempio di output:
 ```
 XotBaseResource Classes Form Schema Check
@@ -80,6 +83,7 @@ php bashscripts/check_form_schema.php
 ```
 
 ### Output
+<<<<<<< HEAD
 Il comando genererà un output simile a:
 ```
 XotBaseResource Classes Form Schema Check
@@ -139,6 +143,8 @@ php bashscripts/check_form_schema.php
 ### Output
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+>>>>>>> 1831d11e78 (.)
 Il comando genererà un output simile a:
 ```
 XotBaseResource Classes Form Schema Check
@@ -288,6 +294,7 @@ XotBaseResource Classes Form Schema Check
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ## Risorse Utili
 - [PHPStan](https://phpstan.org/)
@@ -353,6 +360,8 @@ XotBaseResource Classes Form Schema Check
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
+=======
+>>>>>>> 1831d11e78 (.)
 >>>>>>> f000df5 (.)
 # Script di Verifica della Qualità del Codice
 
@@ -414,4 +423,13 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 =======
 >>>>>>> 4d4d6cb7 (.)
 ### phpstan_docs_generator.sh 
+<<<<<<< HEAD
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+=======
+## Risorse Utili
+- [PHPStan](https://phpstan.org/)
+- [Spatie Laravel Data](https://spatie.be/docs/laravel-data/v4/introduction)
+- [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php) 
+>>>>>>> d83fe8da (.)
+>>>>>>> 1831d11e78 (.)

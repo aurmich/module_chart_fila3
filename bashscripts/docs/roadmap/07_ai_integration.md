@@ -6,6 +6,9 @@
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
  43df3e0 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1831d11e78 (.)
 
 aurmich/dev
 
@@ -663,9 +666,13 @@ Questa fase si concentra sull'integrazione di tecnologie di Intelligenza Artific
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco HEAD (255 linee vs 1)[0m
  43df3e0 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> 1831d11e78 (.)
 aurmich/dev
 
 ## Collegamenti tra versioni di 07_ai_integration.md

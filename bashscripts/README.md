@@ -1,9 +1,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1831d11e78 (.)
 
 # 🚀 Toolkit di Automazione Git per Laraxot PTVX
 
 [![PHPStan](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg?style=for-the-badge&logo=php&logoColor=white)](../docs/phpstan/ANALISI_MODULI_PHPSTAN.md)
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -18,6 +22,8 @@
 =======
 [![PHPStan](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg?style=for-the-badge&logo=php&logoColor=white)](../docs/phpstan/ANALISI_MODULI_PHPSTAN.md)
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+>>>>>>> 1831d11e78 (.)
 [![Bash Version](https://img.shields.io/badge/Bash-5.0%2B-brightgreen.svg)](https://www.gnu.org/software/bash/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/aurmich/bashscripts_fila3)
@@ -42,9 +48,12 @@
 - [Installazione](#-installazione)
 - [Utilizzo](#-utilizzo)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Organizzazione Script](#-organizzazione-script)
 =======
 >>>>>>> 5e5f2e85b (first)
+=======
+>>>>>>> 1831d11e78 (.)
 - [Script Disponibili](#-script-disponibili)
 - [Esempi](#-esempi)
 - [Risoluzione Problemi](#-risoluzione-problemi)
@@ -58,10 +67,14 @@ git clone git@github.com:aurmich/bashscripts_fila3.git
 
 # Rendi gli script eseguibili
 <<<<<<< HEAD
+<<<<<<< HEAD
 chmod +x scripts/**/*.sh
 =======
 chmod +x *.sh
 >>>>>>> 5e5f2e85b (first)
+=======
+chmod +x *.sh
+>>>>>>> 1831d11e78 (.)
 ```
 
 ## 🚀 Utilizzo
@@ -69,14 +82,19 @@ chmod +x *.sh
 ### Sincronizzazione Subtree
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 ./scripts/git/git_sync_subtree.sh <path> <remote_repo>
 =======
 ./git_sync_subtree.sh <path> <remote_repo>
 >>>>>>> 5e5f2e85b (first)
+=======
+./git_sync_subtree.sh <path> <remote_repo>
+>>>>>>> 1831d11e78 (.)
 ```
 
 Esempio:
 ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 ./scripts/git/git_sync_subtree.sh modules/auth git@github.com:user/auth-module.git
 ```
@@ -144,6 +162,8 @@ Tutti gli script sono organizzati in sottocartelle per categoria:
 ### 1. Git Management (scripts/git/)
 > 🎯 Script per la gestione Git e subtree
 =======
+=======
+>>>>>>> 1831d11e78 (.)
 ./git_sync_subtree.sh modules/auth git@github.com:user/auth-module.git
 ```
 
@@ -151,13 +171,17 @@ Tutti gli script sono organizzati in sottocartelle per categoria:
 
 ### 1. git_sync_subtree.sh
 > 🎯 Script principale per la sincronizzazione dei subtree
+<<<<<<< HEAD
 >>>>>>> 5e5f2e85b (first)
+=======
+>>>>>>> 1831d11e78 (.)
 
 **Caratteristiche:**
 - Gestione automatica di push e pull
 - Rimozione caratteri CR (^M)
 - Gestione permessi automatica
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ### 2. Documentation Management (scripts/docs/)
 > 📝 Script per la gestione della documentazione
@@ -191,6 +215,8 @@ Tutti gli script sono organizzati in sottocartelle per categoria:
 - Riparazione struttura
 - Correzione violazioni PSR-4
 =======
+=======
+>>>>>>> 1831d11e78 (.)
 ### 2. git_push_subtree.sh
 > 🔼 Gestisce le operazioni di push
 
@@ -206,13 +232,17 @@ Tutti gli script sono organizzati in sottocartelle per categoria:
 - Pull con squash opzionale
 - Gestione conflitti automatica
 - Merge strategy personalizzabile
+<<<<<<< HEAD
 >>>>>>> 5e5f2e85b (first)
+=======
+>>>>>>> 1831d11e78 (.)
 
 ## 🎯 Esempi
 
 ### Sincronizzazione Modulo
 ```bash
 # Sincronizza un modulo specifico
+<<<<<<< HEAD
 <<<<<<< HEAD
 ./scripts/git/git_sync_subtree.sh modules/users git@github.com:org/users.git
 
@@ -237,11 +267,16 @@ REMOTE_BRANCH=develop ./scripts/git/git_sync_subtree.sh modules/auth git@github.
 # Genera riassunto PHPStan
 ./scripts/phpstan/generate_phpstan_summary.sh
 =======
+=======
+>>>>>>> 1831d11e78 (.)
 ./git_sync_subtree.sh modules/users git@github.com:org/users.git
 
 # Sincronizza con branch specifico
 REMOTE_BRANCH=develop ./git_sync_subtree.sh modules/auth git@github.com:org/auth.git
+<<<<<<< HEAD
 >>>>>>> 5e5f2e85b (first)
+=======
+>>>>>>> 1831d11e78 (.)
 ```
 
 ## ⚠️ Risoluzione Problemi
@@ -252,6 +287,7 @@ REMOTE_BRANCH=develop ./git_sync_subtree.sh modules/auth git@github.com:org/auth
    ```bash
    fatal: you must provide the --prefix option
    ```
+<<<<<<< HEAD
 <<<<<<< HEAD
    **Soluzione**: Verifica che il path del subtree sia corretto
 
@@ -343,6 +379,8 @@ Questo progetto è rilasciato sotto licenza MIT. Vedi il file [LICENSE](LICENSE)
   <strong>🚀 Potenzia il tuo workflow Git con questi script!</strong>
 </div>
 =======
+=======
+>>>>>>> 1831d11e78 (.)
    ✅ **Soluzione:** Verifica il path del subtree
 
 2. **Push Rejected**
@@ -401,9 +439,12 @@ Questo progetto è sotto licenza MIT - vedi il file [LICENSE](LICENSE) per i det
   <sub>Built with ❤️ by the development team</sub>
 </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> b1ca4c93 (Squashed 'bashscripts/' changes from c21599d..019cc70)
 >>>>>>> 5e5f2e85b (first)
 =======
+=======
+>>>>>>> 1831d11e78 (.)
 
 # 🚀 Git Automation Toolkit
 
@@ -916,4 +957,7 @@ This toolkit addresses these challenges by providing automated tools that simpli
 - [Italiano](docs/README.it.md)
 - [Español](docs/README.es.md)
  43df3e0 (.)
+<<<<<<< HEAD
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+>>>>>>> 1831d11e78 (.)

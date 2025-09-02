@@ -121,8 +121,8 @@ php artisan key:generate
 - Dopo la generazione della chiave, verificare che sia stata aggiunta al file .env
 - Se necessario, configurare manualmente altre variabili d'ambiente:
   ```ini
-
   APP_NAME=<nome progetto>
+<<<<<<< HEAD
 
 <<<<<<< HEAD
   APP_NAME=SaluteOra
@@ -130,6 +130,8 @@ php artisan key:generate
   APP_NAME=<nome progetto>
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
  80ec88ee9 (.)
+=======
+>>>>>>> 1831d11e78 (.)
   APP_ENV=local
   APP_DEBUG=true
   APP_URL=http://localhost
@@ -829,8 +831,9 @@ sudo pecl install redis
 
 ## Configurazione Database
 
-### Creazione Database SQLite
+### Creazione Database MySQL
 ```bash
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -2310,15 +2313,22 @@ FLUSH PRIVILEGES;
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 # Esci
+=======
+mysql -u root -p
+CREATE DATABASE nome_database CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE USER 'nome_utente'@'localhost' IDENTIFIED BY 'password_sicura';
+GRANT ALL PRIVILEGES ON nome_database.* TO 'nome_utente'@'localhost';
+FLUSH PRIVILEGES;
+>>>>>>> 1831d11e78 (.)
 EXIT;
 ```
 
 **Spiegazione:**
-- Crea un nuovo database per il progetto Laravel
-- Configura un utente dedicato con i permessi necessari
-- Imposta il charset e la collation corretti
+- Crea un nuovo database e un utente dedicato con privilegi completi
+- Utilizza la codifica utf8mb4 per il massimo supporto Unicode
 
 **Note:**
+<<<<<<< HEAD
 - Sostituire 'password' con una password sicura
 - Verificare che il database sia stato creato correttamente:
   ```bash
@@ -2534,12 +2544,25 @@ php artisan migrate
 - Verificare i permessi dei file
 - Testare la connessione al database
 - Controllare la configurazione di PHP
+=======
+- Sostituire `nome_database`, `nome_utente` e `password_sicura` con valori reali
+- Conservare le credenziali in modo sicuro
+
+## Note e Consigli
+
+- Eseguire sempre backup prima di modifiche critiche
+- Utilizzare ambienti di test per provare nuove configurazioni
+- Documentare ogni personalizzazione
+- Monitorare costantemente le performance del server
+- Aggiornare regolarmente sistema e dipendenze
+>>>>>>> 1831d11e78 (.)
 
 ## Conclusioni
 
 Questo documento fornisce una guida completa per il setup di un ambiente di sviluppo Laravel. Seguire attentamente le istruzioni e verificare ogni passaggio per garantire un'installazione corretta e sicura.
 
 Per ulteriori informazioni, consultare la [documentazione ufficiale di Laravel](https://laravel.com/docs).
+<<<<<<< HEAD
 *In attesa dei comandi per documentare...*
 
 ## Ottimizzazione PHP
@@ -2870,3 +2893,5 @@ aurmich/dev
 
   ```
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+>>>>>>> 1831d11e78 (.)

@@ -42,10 +42,14 @@
 
 ## PAGINE DI LISTA
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Usare metodi specifici: getTableColumns(), getTableFilters(), getTableActions()
 =======
 - Usare metodi specifici: getListTableColumns(), getTableFilters(), getTableActions()
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+- Usare metodi specifici: getTableColumns(), getTableFilters(), getTableActions()
+>>>>>>> 1831d11e78 (.)
 - Usare array associativi con chiavi string per componenti
 
 ## MIGRAZIONI

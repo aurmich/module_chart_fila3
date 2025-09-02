@@ -237,9 +237,12 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 ## Documentazione Correlata
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
 5338a990 (.)
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+>>>>>>> 1831d11e78 (.)
 # File di Configurazione
 
 Questa documentazione descrive i file di configurazione utilizzati nel progetto.
@@ -319,6 +322,7 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 
 ## Documentazione Correlata
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 f000df5 (.)
 
@@ -488,6 +492,10 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 >>>>>>> 5338a990 (.)
 =======
 # File di Configurazione
+=======
+f000df5 (.)
+
+>>>>>>> 1831d11e78 (.)
 
 Questa documentazione descrive i file di configurazione utilizzati nel progetto.
 
@@ -648,5 +656,11 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
 =======
 >>>>>>> 4d4d6cb7 (.)
+<<<<<<< HEAD
 - [Conflitti di Merge](/bashscripts/docs/CONFLICT_RESOLUTION_BASH.md) 
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+=======
+>>>>>>> d83fe8da (.)
+- [Conflitti di Merge](/bashscripts/docs/CONFLICT_RESOLUTION_BASH.md) 
+>>>>>>> 1831d11e78 (.)

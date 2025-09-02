@@ -407,9 +407,13 @@ Questa fase si concentra sull'implementazione di un sistema avanzato di monitora
  43df3e0 (.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> 1831d11e78 (.)
 ## 🎯 Funzionalità Future
 
 ### 1. Dashboard Operazioni
@@ -1083,9 +1087,13 @@ aurmich/dev
 - Aggiornamenti 
  43df3e0 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> 1831d11e78 (.)
 aurmich/dev
 
 ## Collegamenti tra versioni di 06_monitoring.md

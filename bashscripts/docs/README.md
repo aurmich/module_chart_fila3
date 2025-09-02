@@ -174,6 +174,7 @@ Questo progetto è sotto licenza MIT. Vedere il file [LICENSE](LICENSE) per i de
  b0f37c83 (.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
  b7907077 (.)
 
@@ -181,7 +182,11 @@ Questo progetto è sotto licenza MIT. Vedere il file [LICENSE](LICENSE) per i de
  b1ca4c93 (Squashed 'bashscripts/' changes from c21599d..019cc70)
 
 =======
+=======
+
+>>>>>>> 1831d11e78 (.)
  b7907077 (.)
+
 
  b1ca4c93 (Squashed 'bashscripts/' changes from c21599d..019cc70)
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
@@ -478,6 +483,7 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
 
  4bd5ca8f (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
  b0f37c83 (.)
 
@@ -486,11 +492,19 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file `LICENSE` per 
 
 
 =======
+=======
+
+>>>>>>> 1831d11e78 (.)
  b0f37c83 (.)
+
 
  b7907077 (.)
 
+<<<<<<< HEAD
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> 1831d11e78 (.)
 # 📣 Enhance Your App with the Fila3 Notify Module! 🚀
 
 ![GitHub issues](https://img.shields.io/github/issues/laraxot/module_notify_fila3)
@@ -580,9 +594,13 @@ Discover more of my work at marco76tv!
  80ec88ee9 (.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> 1831d11e78 (.)
 # Bash Scripts
 
 **Policy di organizzazione:** Nessuno script `.sh` deve essere presente direttamente nella root di questa cartella. Tutti gli script devono essere categorizzati e inseriti in sottocartelle dedicate in base alla loro funzione (es. `utils/`, `git/`, `docs_update/`).

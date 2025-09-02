@@ -169,9 +169,13 @@ Questa fase si concentra sul monitoraggio e l'ottimizzazione del sistema.
  43df3e0 (.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> 1831d11e78 (.)
 ## 🔄 Collegamenti
 - [Roadmap Principale](../roadmap.md)
 - [Documentazione Script](../project.md)
@@ -183,9 +187,13 @@ Questa fase si concentra sul monitoraggio e l'ottimizzazione del sistema.
 [0;34mℹ️ [2025-04-22 11:23:11] Scelto blocco HEAD (23 linee vs 1)[0m
  43df3e0 (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> 1831d11e78 (.)
 aurmich/dev
 
 ## Collegamenti tra versioni di 05_monitoring.md

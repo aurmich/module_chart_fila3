@@ -1,9 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+>>>>>>> 1831d11e78 (.)
 # 🛠️ Fase 2: Manutenzione
 
 ## 📋 Panoramica
@@ -47,18 +50,24 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
    - Alerting proattivo
    - Report automatizzati
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+>>>>>>> 1831d11e78 (.)
 2. **Sicurezza**:
    - Verifica integrità dati
    - Backup crittografati
    - Controllo accessi
    - Audit log
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+>>>>>>> 1831d11e78 (.)
 3. **Performance**:
    - Ottimizzazione risorse
    - Caching intelligente
@@ -111,6 +120,9 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
 - Cron
 - Systemd
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1831d11e78 (.)
 - Bash
 
 ---
@@ -130,6 +142,7 @@ Questa fase si concentra sulla manutenzione e ottimizzazione del sistema, garant
 ---
 
 Per ulteriori dettagli, consultare la documentazione degli script specifici e le sezioni successive della roadmap.
+<<<<<<< HEAD
 =======
 - Bash 
 
@@ -241,5 +254,7 @@ aurmich/dev
 * [02_maintenance.md](bashscripts/docs/roadmap/02_maintenance.md)
 * [02_maintenance.md](docs/roadmap/02_maintenance.md)
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+>>>>>>> 1831d11e78 (.)
 
 
