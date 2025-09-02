@@ -136,4 +136,8 @@ laravel/composer.lock
 =======
 public_html/css/
 public_html/js/
+<<<<<<< HEAD
 >>>>>>> 1a44802e6d (.)
+=======
+public_html/vendor/
+>>>>>>> 8345b0c130 (.)
