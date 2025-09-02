@@ -332,10 +332,7 @@ try {
 
 ### Struttura README.md
 ```markdown
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Nome Modulo
 
 ## Descrizione

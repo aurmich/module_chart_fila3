@@ -63,10 +63,7 @@ Il sistema controllerà automaticamente che:
 ## Comandi Utili
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Verifica le traduzioni mancanti
 php artisan translation:check
 

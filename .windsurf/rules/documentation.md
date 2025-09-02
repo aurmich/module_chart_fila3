@@ -43,10 +43,7 @@ docs/
 
 ### Struttura README.md
 ```markdown
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Nome Modulo
 
 ## Descrizione
@@ -82,10 +79,7 @@ Informazioni sulla licenza
 
 ### Esempi
 ```markdown
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Link Relativi
 [Documentazione Modulo](modules/user/README.md)
 [Guida Contribuzione](CONTRIBUTING.md)

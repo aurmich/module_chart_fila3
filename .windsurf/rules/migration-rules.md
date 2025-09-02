@@ -180,10 +180,7 @@ Ogni modifica alla struttura del database deve essere documentata:
 Esempio di documentazione:
 
 ```markdown
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Aggiunta Colonna valutatore_id alla Tabella performance_individuale
 
 ## Motivazione

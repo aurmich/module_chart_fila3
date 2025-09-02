@@ -1,19 +1,17 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\TechPlanner\Filament\Resources\AppointmentResource\Pages;
 
-use Filament\Actions;
-use Filament\Resources\Pages\EditRecord;
-use Modules\TechPlanner\Filament\Resources\AppointmentResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 
-class EditAppointment extends EditRecord
+/**
+ * Page per la modifica di un appuntamento.
+ * 
+ * Estende XotBaseEditRecord seguendo le regole Laraxot.
+ */
+class EditAppointment extends XotBaseEditRecord
 {
-    protected static string $resource = AppointmentResource::class;
-
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\DeleteAction::make(),
-        ];
-    }
+    protected static string $resource = \Modules\TechPlanner\Filament\Resources\AppointmentResource::class;
 }

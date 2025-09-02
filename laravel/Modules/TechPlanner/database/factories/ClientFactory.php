@@ -23,7 +23,6 @@ class ClientFactory extends Factory
             'address' => $this->faker->address,
             'city' => $this->faker->city,
             'postal_code' => $this->faker->postcode,
-            //'province' => $this->faker->state,
             'country' => $this->faker->country,
             'phone' => $this->faker->phoneNumber,
             'email' => $this->faker->unique()->safeEmail,

@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
 	"editor.formatOnType": true,
 	"php-cs-fixer.onsave": true,
 	"php-cs-fixer.formatHtml": true,
@@ -38,8 +37,7 @@
 	},
 	"[vue]": {
 		"editor.defaultFormatter": "octref.vetur"
-	}
-=======
+	},
 	"editor.formatOnSave": false,
 		"editor.formatOnType": true,
 		"php-cs-fixer.onsave": true,
@@ -80,5 +78,4 @@
     		"**/.git/subtree-cache/**": true,
     		"**/node_modules/*/**": true
   		}
->>>>>>> 5e5f2e85b (first)
 }

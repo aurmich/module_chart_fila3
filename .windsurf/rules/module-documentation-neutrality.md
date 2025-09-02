@@ -41,10 +41,7 @@ La documentazione dei moduli deve essere neutra e riutilizzabile, senza riferime
 
 #### Esempio Errato
 ```markdown
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Modello Doctor
 
 Il modello `Doctor` rappresenta un medico nel sistema  e implementa il pattern Single Table Inheritance (STI).
@@ -52,10 +49,7 @@ Il modello `Doctor` rappresenta un medico nel sistema  e implementa il pattern S
 
 #### Esempio Corretto
 ```markdown
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Modello Doctor
 
 Il modello `Doctor` rappresenta un medico nel sistema e implementa il pattern Single Table Inheritance (STI).
@@ -65,10 +59,7 @@ Il modello `Doctor` rappresenta un medico nel sistema e implementa il pattern Si
 
 #### Esempio Errato
 ```markdown
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Processo di Registrazione dei Dottori
 
 Nel sistema , l'invio dell'email al dottore con il link per continuare la registrazione è un passaggio cruciale.
@@ -76,10 +67,7 @@ Nel sistema , l'invio dell'email al dottore con il link per continuare la regist
 
 #### Esempio Corretto
 ```markdown
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Processo di Registrazione dei Dottori
 
 L'invio dell'email al dottore con il link per continuare la registrazione è un passaggio cruciale nel processo.

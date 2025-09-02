@@ -392,12 +392,6 @@ class ListClients extends XotBaseListRecords
      * @param \Modules\TechPlanner\Models\Client $record
      * @return string
      */
-        /**
-     * Formatta i contatti del cliente con icone appropriate.
-     *
-     * @param \Modules\TechPlanner\Models\Client $record
-     * @return string
-     */
     private function formatContacts(Client $record): string
     {
         $contacts = [];

@@ -450,10 +450,7 @@ EventData::make()
 
 ### .env Configuration Obbligatoria
 ```env
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # FullCalendar Scheduler License (opzionale)
 FULLCALENDAR_SCHEDULER_LICENSE_KEY=your-license-key-here
 

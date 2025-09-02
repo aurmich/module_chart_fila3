@@ -286,10 +286,7 @@ done
 echo "=== Generating Naming Report ==="
 
 cat > reports/naming_convention_report.md << 'EOF'
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Naming Convention Audit Report
 
 Data generazione: $(date)
@@ -428,19 +425,13 @@ done
 
 ### Correzione Namespace
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Implementare script di correzione automatica namespace
 ```
 
 ### Standardizzazione Import
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Implementare script per rimuovere import inutili
 ```
 
@@ -532,7 +523,4 @@ echo "✅ Naming Convention Audit completed. Check reports/ directory for detail
 - [Naming Philosophy](../rules/naming_philosophy.mdc)
 - [Laravel Conventions](../rules/laravel_conventions.mdc)
 - [PSR Standards](../rules/psr_standards.mdc)
-<<<<<<< HEAD
-=======
 - [Database Standards](../rules/database_standards.mdc)
->>>>>>> 7fac0bd9c2 (.)

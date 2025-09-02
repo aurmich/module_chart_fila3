@@ -1,21 +1,30 @@
-<<<<<<< HEAD
 # Dependencies
 /vendor/
 node_modules/
-npm-debug.log
-yarn-error.log
+
+# Logs
+*.log
 
 # Laravel specific
 bootstrap/compiled.php
 app/storage/
 public/storage
 public/hot
+
+# Public HTML (custom deployments)
 public_html/storage
 public_html/hot
+public_html/css/
+public_html/js/
+public_html/vendor/
+public_html/deploy/config.php
+public_html/deploy/*.txt
 
 # Security & Environment
 storage/*.key
 .env
+.env.backup
+.env.production
 Homestead.yaml
 Homestead.json
 /.vagrant
@@ -24,94 +33,15 @@ Homestead.json
 .phpunit.result.cache
 .git-blame-ignore-revs
 .php-cs-fixer.cache
+.git-rewrite/
 *.phar
 *.lock
 
-.git-blame-ignore-revs
-package-lock.json
-.php-cs-fixer.cache
-package-lock.json
-.git-rewrite/
-.php-cs-fixer.cache
-node_modules
-build
-.php-cs-fixer.cache
-.php-cs-fixer.cache
-.php-cs-fixer.cache
-.php-cs-fixer.cache
-.git-blame-ignore-revs
-.php-cs-fixer.cache
-.git-blame-ignore-revs
-.git-blame-ignore-revs
-.php-cs-fixer.cache
-
-*:Zone.Identifier
-.php-cs-fixer.cache
-=======
->>>>>>> 5e5f2e85b (first)
-/vendor/
-node_modules/
-npm-debug.log
-yarn-error.log
-
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
-
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
-
-# Laravel 5 & Lumen specific with changed public path
-public_html/storage
-public_html/hot
-
-storage/*.key
-.env
-Homestead.yaml
-Homestead.json
-/.vagrant
-.phpunit.result.cache
-<<<<<<< HEAD
-.git-blame-ignore-revs
-.php-cs-fixer.cache
-*.phar
-*.lock
-.git-blame-ignore-revs
-package-lock.json
-.php-cs-fixer.cache
-package-lock.json
-.git-rewrite/
-.php-cs-fixer.cache
-node_modules
-build
-.php-cs-fixer.cache
-.php-cs-fixer.cache
-.php-cs-fixer.cache
-.php-cs-fixer.cache
-.git-blame-ignore-revs
-.php-cs-fixer.cache
-.git-blame-ignore-revs
-.git-blame-ignore-revs
-.php-cs-fixer.cache
-
-# File di log
-*.log
-package-lock.json
-.git-rewrite/
-build
-
-# OS specific
-*:Zone.Identifier
-
-# Log files
-*.log
-# PHPStan documentation
-docs/phpstan/
-
-=======
-
+# Build artifacts
 /public/build
+build
+
+# Misc project paths
 /storage/pail
 .env.backup
 .env.production
@@ -119,29 +49,22 @@ docs/phpstan/
 auth.json
 *.mdb
 *.csv
-*.log
-*.phar
+
+# Monorepo Laravel subpaths
 laravel/database/migrations/
 laravel/stubs/
 laravel/lang/vendor/
-composer.lock
-public_html/deploy/config.php
-public_html/deploy/*.txt
+laravel/resources/lang/vendor/
+laravel/resources/views/vendor/
 laravel/tmp/
 laravel/venv/
-laravel/resources/lang/vendor/
 laravel/composer.lock
-<<<<<<< HEAD
->>>>>>> 5e5f2e85b (first)
-=======
-public_html/css/
-public_html/js/
-<<<<<<< HEAD
->>>>>>> 1a44802e6d (.)
-=======
-public_html/vendor/
-<<<<<<< HEAD
->>>>>>> 8345b0c130 (.)
-=======
-laravel/resources/views/vendor/
->>>>>>> 747b5594cc (.)
+
+# Root lock (managed elsewhere)
+composer.lock
+
+# OS specific
+*:Zone.Identifier
+
+# Documentation builds
+docs/phpstan/

@@ -8,8 +8,8 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 /*
  * Class CreateWorkersTable.
  */
-return new class() extends XotBaseMigration {
-
+return new class extends XotBaseMigration
+{
     public function up(): void
     {
         // -- CREATE --
@@ -38,20 +38,13 @@ return new class() extends XotBaseMigration {
                         ->index()
                         ->nullable();
                 }
-                
-                //if ($table->hasForeignKey('machines', 'machines_client_id_foreign')) {
+
+                // if ($table->hasForeignKey('machines', 'machines_client_id_foreign')) {
                 //    $table->dropForeign('machines_client_id_foreign');
-                //}
-                $table->unsignedBigInteger('client_id')
-                        ->nullable()
-                        ->change();
-                $table->unsignedBigInteger('appointment_id')
-                        ->nullable()
-                        ->change();
                 if ($this->hasColumn('status')) {
                     $table->string('status')->nullable()->change();
                 }
-                if (!$this->hasColumn('status')) {
+                if (! $this->hasColumn('status')) {
                     $table->string('status')->nullable();
                 }
                 $this->updateTimestamps($table, true);

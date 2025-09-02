@@ -36,10 +36,7 @@ Questo workflow automatizza la sincronizzazione della documentazione tra moduli 
 
 ### 1. Scan Documentation Structure
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Trova tutta la documentazione esistente
 find docs/ -name "*.md" -type f | sort
 find laravel/Modules/*/docs/ -name "*.md" -type f | sort
@@ -47,10 +44,7 @@ find laravel/Modules/*/docs/ -name "*.md" -type f | sort
 
 ### 2. Check Naming Conventions
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Controlla file con maiuscole (tranne README.md)
 find docs/ -name "*.md" -type f | grep -v "README.md" | grep '[A-Z]'
 find laravel/Modules/*/docs/ -name "*.md" -type f | grep -v "README.md" | grep '[A-Z]'
@@ -62,10 +56,7 @@ find laravel/Modules/*/docs/ -type d | grep '[A-Z]'
 
 ### 3. Fix Naming Violations
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Rinomina file con maiuscole in lowercase
 for file in $(find docs/ -name "*.md" -type f | grep -v "README.md" | grep '[A-Z]'); do
     lowercase_name=$(echo "$file" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9._-]/_/g')
@@ -98,10 +89,7 @@ done
 
 ### 4. Generate Documentation Index
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Crea indice master della documentazione
 echo "# Documentation Index" > docs/documentation_index.md
 echo "Indice completo di tutta la documentazione del progetto Laraxot." >> docs/documentation_index.md
@@ -133,10 +121,7 @@ done
 
 ### 5. Check Bidirectional Links
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Verifica link bidirezionali tra root e moduli
 echo "# Link Verification Report" > docs/link_verification_report.md
 echo "Data: $(date)" >> docs/link_verification_report.md
@@ -180,10 +165,7 @@ done
 
 ### 6. Update .mdc Rules
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Sincronizza regole tra .cursor e .windsurf
 echo "# Rules Sync Report" > docs/rules_sync_report.md
 echo "Data: $(date)" >> docs/rules_sync_report.md
@@ -218,10 +200,7 @@ done
 
 ### 7. Generate Module README Updates
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Aggiorna README dei moduli con link alla documentazione root
 for module_dir in laravel/Modules/*/; do
     module_name=$(basename "$module_dir")
@@ -263,10 +242,7 @@ done
 
 ### 8. Validate Documentation Consistency
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Verifica coerenza della documentazione
 echo "# Documentation Consistency Report" > docs/documentation_consistency_report.md
 echo "Data: $(date)" >> docs/documentation_consistency_report.md
@@ -346,30 +322,21 @@ done
 
 ### Auto-Fix Naming
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Script per rinominare automaticamente file non conformi
 .windsurf/workflows/scripts/fix_documentation_naming.sh
 ```
 
 ### Auto-Generate Missing Docs
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Script per generare documentazione mancante
 .windsurf/workflows/scripts/generate_missing_docs.sh
 ```
 
 ### Auto-Update Links
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Script per aggiornare automaticamente i link rotti
 .windsurf/workflows/scripts/fix_broken_links.sh
 ```
@@ -380,7 +347,4 @@ done
 - [Documentation Naming Rules](../rules/documentation_naming.mdc)
 - [Provider XotBase Philosophy](../rules/provider_xotbase_philosophy.mdc)
 - [Filament Best Practices](../rules/filament-best-practices.mdc)
-<<<<<<< HEAD
-=======
 - [Laravel 12 Rules](../rules/laravel12.mdc)
->>>>>>> 7fac0bd9c2 (.)

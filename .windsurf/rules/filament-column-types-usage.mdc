@@ -99,12 +99,3 @@ Ogni volta che si aggiunge una colonna booleana:
 - [ ] Imposta colori semantici con `->trueColor()` e `->falseColor()`
 - [ ] Testa la visualizzazione per verificare l'assenza di errori
 
-*Ultimo aggiornamento: Dicembre 2024*
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> app-style
->>>>>>> 7fac0bd9c2 (.)
-=======
->>>>>>> d1b6bdc799 (.)

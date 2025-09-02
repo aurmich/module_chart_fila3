@@ -5,11 +5,10 @@ declare(strict_types=1);
 namespace Modules\TechPlanner\Filament\Resources\ClientResource\RelationManagers;
 
 use Filament\Forms;
-use Filament\Forms\Form;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Modules\TechPlanner\Filament\Resources\DeviceResource;
-use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
+use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 class DevicesRelationManager extends XotBaseRelationManager
 {

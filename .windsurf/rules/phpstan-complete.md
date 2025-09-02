@@ -30,10 +30,7 @@ cd /var/www/html/<nome progetto>/laravel
 ### ❌ DON'T - MAI usare artisan per phpstan
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # MAI fare questo
 php artisan test:phpstan
 ```
@@ -236,10 +233,7 @@ public function getLabel(): string
 ### Utilizzo di Baseline
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # Generare baseline
 ./vendor/bin/phpstan analyze --generate-baseline
 

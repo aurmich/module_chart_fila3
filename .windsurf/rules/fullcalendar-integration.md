@@ -175,10 +175,7 @@ return [
 Create detailed documentation:
 
 ```markdown
-<<<<<<< HEAD
 
-=======
->>>>>>> 7fac0bd9c2 (.)
 # FullCalendar in {ModuleName} Module
 
 ## Introduction
