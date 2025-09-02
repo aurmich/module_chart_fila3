@@ -12,7 +12,11 @@ name('login');
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <x-layouts.guest>
+=======
+<x-layouts.guest-institutional>
+>>>>>>> 366f6e8184 (.)
     <x-slot name="title">
         {{ __('auth.login.title') }} - {{ config('app.name') }}
     </x-slot>
