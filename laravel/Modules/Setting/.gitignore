@@ -69,3 +69,6 @@ docs/phpstan/
 *.old1
 *.backup
 *.backup.*
+
+# Standard ignores (auto)
+*.bakcup

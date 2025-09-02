@@ -52,3 +52,10 @@ vendor
 vendor/
 build/
 cache/
+
+# Standard ignores (auto)
+*.old
+*.old1
+*.bak
+*.bakcup
+*.backup.*

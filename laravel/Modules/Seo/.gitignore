@@ -9,3 +9,9 @@ docs/phpstan/
 *.old1
 *.backup
 *.backup.*
+
+# Standard ignores (auto)
+node_modules/
+vendor/
+*.bak
+*.bakcup

@@ -17,14 +17,9 @@
         "role": "Developer"
     }],
     "require": {
-<<<<<<< HEAD
-        "filament/filament": "*",
-        "filament/tables": "*"
-=======
         "filament/filament": "^3.4",
         "filament/tables": "^3.4",
         "filament/forms": "^3.4"
->>>>>>> a172dad (.)
     },
     "extra": {
         "laravel": {

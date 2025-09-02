@@ -33,18 +33,6 @@ new class extends Component {
                         ">
                         <div class="flex items-center space-x-2">
                             <span class="grid text-blue-600 bg-blue-100 rounded place-items-center size-8">
-<<<<<<< HEAD
-                                @if($item->icon == null)
-                                <x-heroicon-o-question-mark-circle class="size-6" />
-                                @elseif(preg_match('/^[a-z0-9\-_]+$/i', $item->icon))
-                                {{-- Se è un nome valido per una SVG --}}
-                                @svg($item->icon, 'size-6')
-                                @else
-                                {{-- Altrimenti mostra il contenuto come emoji o testo --}}
-                                <span class="text-xl">{{ $item->icon }}</span>
-                                @endif
-
-=======
                                 {{--  
                                 @if($item->icon == null)
                                 <x-heroicon-o-question-mark-circle class="size-6" />
@@ -57,7 +45,6 @@ new class extends Component {
                                 @endif
                                 --}}
                                 <x-heroicon-o-question-mark-circle class="size-6" />
->>>>>>> a172dad (.)
                             </span>
                             <span class="font-semibold">{{ $item->title }}</span>
                         </div>

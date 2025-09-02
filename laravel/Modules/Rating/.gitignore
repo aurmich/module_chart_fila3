@@ -45,3 +45,6 @@ cache/
 
 # PHPStan documentation
 docs/phpstan/
+
+# Standard ignores (auto)
+*.bakcup
