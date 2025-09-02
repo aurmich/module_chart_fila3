@@ -131,4 +131,9 @@ laravel/tmp/
 laravel/venv/
 laravel/resources/lang/vendor/
 laravel/composer.lock
+<<<<<<< HEAD
 >>>>>>> 5e5f2e85b (first)
+=======
+public_html/css/
+public_html/js/
+>>>>>>> 1a44802e6d (.)
