@@ -1,8 +1,12 @@
-# Git Scripts
+---
+# 📝 Documentazione Script Git
 
-> **Nota**: Questo documento è correlato a [Git](../../docs/git.md). Per una panoramica completa, consulta entrambi i documenti.
+> **Revisione manuale:** File rivisto per eliminare duplicazioni, conflitti e marker. Strutturato per massima chiarezza, con esempi pratici e riferimenti architetturali.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f1e7ef1046 (.)
 > **Backlink:** [README globale](./README.md) · [scripts_conflict_resolution.md](./scripts_conflict_resolution.md)
 
 ---
@@ -46,8 +50,46 @@ Funzione centralizzata (in `custom.sh`) per impostare:
 ---
 
 > Ogni modifica agli script va testata manualmente e tracciata nella documentazione.- `core.autocrlf`: false (no conversione automatica line endings)
+<<<<<<< HEAD
 =======
 # Script Git per la Gestione dei Subtree
+=======
+- `core.eol`: lf (line ending di default)
+- `core.symlinks`: false (no symlinks per Windows)
+- `core.longpaths`: true (supporto path lunghi Windows)
+
+### git_pull_subtrees.sh
+Script principale per il pull dei subtree. Funzionalità:
+1. Configurazione git tramite `git_config_setup`
+2. Backup opzionale su disco esterno
+3. Gestione dei subtree definiti in gitmodules.ini
+4. Supporto per organizzazioni GitHub personalizzate
+
+### git_pull_subtree.sh
+Script per il pull di un singolo subtree. Caratteristiche:
+1. Gestione errori robusta
+2. Logging delle operazioni
+3. Supporto per branch personalizzati
+
+### git_push_subtrees.sh
+Script per il push dei subtree. Funzionalità:
+1. Push verso repository remoti
+2. Supporto per organizzazioni multiple
+3. Gestione errori e logging
+
+## Best Practices
+1. Utilizzare sempre `git_config_setup` per la configurazione
+2. Gestire i backup prima delle operazioni critiche
+3. Verificare i log per eventuali errori
+4. Mantenere aggiornato gitmodules.ini
+
+## Risoluzione Problemi Comuni
+1. Conflitti di merge: utilizzare gli script di backup prima di risolvere
+2. Errori di path: verificare la configurazione Windows
+3. Problemi di permessi: controllare fileMode e symlinks
+
+# Script Git
+>>>>>>> f1e7ef1046 (.)
 
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
 
@@ -75,6 +117,7 @@ Script principale per il pull dei subtree. Funzionalità:
 
 ### git_pull_subtree.sh
 Script per il pull di un singolo subtree. Caratteristiche:
+<<<<<<< HEAD
 <<<<<<< HEAD
 1. Gestione errori robusta
 2. Logging delle operazioni
@@ -107,6 +150,11 @@ Script per il pull di un singolo subtree. Caratteristiche:
 - `<path>`: Il percorso del subtree locale
 - `<remote_repo>`: L'URL del repository remoto
 >>>>>>> 04d882f8f6 (.)
+=======
+1. Gestione errori robusta
+2. Logging delle operazioni
+3. Supporto per branch personalizzati
+>>>>>>> f1e7ef1046 (.)
 
 ### git_push_subtrees.sh
 Script per il push dei subtree. Funzionalità:
@@ -114,6 +162,7 @@ Script per il push dei subtree. Funzionalità:
 2. Supporto per organizzazioni multiple
 3. Gestione errori e logging
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 ### git_sync_subtree.sh
@@ -168,6 +217,8 @@ Script completo per la sincronizzazione di tutti i subtree definiti in `gitmodul
 Per una documentazione più generale sugli script di gestione Git, consultare la [documentazione centrale](../../docs/bashscripts/gestione_git.md).
 
 >>>>>>> 04d882f8f6 (.)
+=======
+>>>>>>> f1e7ef1046 (.)
 ## Best Practices
 1. Utilizzare sempre `git_config_setup` per la configurazione
 2. Gestire i backup prima delle operazioni critiche
@@ -182,6 +233,7 @@ Per una documentazione più generale sugli script di gestione Git, consultare la
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
@@ -191,49 +243,62 @@ Per una documentazione più generale sugli script di gestione Git, consultare la
 =======
 ## Script di sincronizzazione repository remoti
 >>>>>>> 04d882f8f6 (.)
+=======
+=======
+# Script Git
+>>>>>>> f1e7ef1046 (.)
 
-### sync_remote_repo.sh
+Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
 
-Questo script sincronizza i repository remoti con i sottoprogetti locali definiti in un file `gitmodules.ini`.
+## Panoramica
+Questa documentazione descrive gli script bash utilizzati per la gestione dei subtree git nel progetto Laraxot.
 
-**Percorso**: `bashscripts/subtrees/sync_remote_repo.sh`
+## Script Principali
 
-**Utilizzo**:
-```bash
-./bashscripts/subtrees/sync_remote_repo.sh <org>
-```
+### git_config_setup
+Funzione centralizzata per la configurazione git, definita in `custom.sh`. Gestisce le seguenti impostazioni:
+- `core.ignorecase`: false (case-sensitive)
+- `core.fileMode`: false (ignora permessi)
+- `core.autocrlf`: false (no conversione automatica line endings)
+- `core.eol`: lf (line ending di default)
+- `core.symlinks`: false (no symlinks per Windows)
+- `core.longpaths`: true (supporto path lunghi Windows)
 
-**Parametri**:
-- `<org>`: L'organizzazione da usare per i remote repository
+### git_pull_subtrees.sh
+Script principale per il pull dei subtree. Funzionalità:
+1. Configurazione git tramite `git_config_setup`
+2. Backup opzionale su disco esterno
+3. Gestione dei subtree definiti in gitmodules.ini
+4. Supporto per organizzazioni GitHub personalizzate
 
-**Funzionalità**:
-1. Carica librerie di supporto per operazioni personalizzate e parsing del file INI
-2. Verifica che sia stato fornito il parametro dell'organizzazione
-3. Per ogni sottoprogetto nel file gitmodules.ini:
-   - Inizializza il repository Git se necessario
-   - Configura il repository come directory sicura
-   - Passa al branch specificato
-   - Aggiunge il repository remoto dell'organizzazione specificata
-   - Applica configurazioni Git
-   - Fa commit delle modifiche locali
-   - Esegue un `git pull` con autostash e rebase
-   - Gestisce automaticamente i conflitti (accettando i cambiamenti locali)
-   - Fa push dei cambiamenti al repository remoto
+### git_pull_subtree.sh
+Script per il pull di un singolo subtree. Caratteristiche:
+1. Gestione errori robusta
+2. Logging delle operazioni
+3. Supporto per branch personalizzati
 
-**Note sulla strategia di sincronizzazione**:
-- Lo script utilizza `git pull --autostash --rebase` che:
-  - Salva temporaneamente le modifiche non commitdate (--autostash)
-  - Applica i commit remoti prima dei commit locali (--rebase)
-  - Riscrive la storia locale in modo più lineare
+### git_push_subtrees.sh
+Script per il push dei subtree. Funzionalità:
+1. Push verso repository remoti
+2. Supporto per organizzazioni multiple
+3. Gestione errori e logging
 
-Questa strategia è generalmente migliore per ridurre i conflitti rispetto all'uso di `git merge`, specialmente quando si lavora con sottoprogetti che vengono aggiornati frequentemente. Il rebase mantiene una storia più pulita e lineare.
+## Best Practices
+1. Utilizzare sempre `git_config_setup` per la configurazione
+2. Gestire i backup prima delle operazioni critiche
+3. Verificare i log per eventuali errori
+4. Mantenere aggiornato gitmodules.ini
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f1e7ef1046 (.)
 ## Risoluzione Problemi Comuni
 1. Conflitti di merge: utilizzare gli script di backup prima di risolvere
 2. Errori di path: verificare la configurazione Windows
 3. Problemi di permessi: controllare fileMode e symlinks
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -298,6 +363,9 @@ Script per il push dei subtree. Funzionalità:
 >>>>>>> f000df5 (.)
 =======
 >>>>>>> 0c55086029 (.)
+=======
+>>>>>>> f000df5 (.)
+>>>>>>> f1e7ef1046 (.)
 # Script Git
 
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
@@ -347,6 +415,7 @@ Script per il push dei subtree. Funzionalità:
 3. Problemi di permessi: controllare fileMode e symlinks
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 4d4d6cb7 (.)
 <<<<<<< HEAD
@@ -363,3 +432,10 @@ Script per il push dei subtree. Funzionalità:
 =======
 [Torna alla documentazione principale](../../docs/maintenance.md#git-management) 
 >>>>>>> 04d882f8f6 (.)
+=======
+=======
+>>>>>>> 4d4d6cb7 (.)
+=======
+>>>>>>> d83fe8da (.)
+[Torna alla documentazione principale](/docs/maintenance.md#git-management) 
+>>>>>>> f1e7ef1046 (.)

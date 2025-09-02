@@ -27,9 +27,12 @@ Quando in uno script .sh si incorporano altre librerie tramite `source ./bashscr
 
 aurmich/dev
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+>>>>>>> f1e7ef1046 (.)
 # Principio DRY negli Script Bash: NO alla duplicazione di funzioni
 
 ## PERCHÉ È FONDAMENTALE
@@ -61,9 +64,12 @@ La duplicazione di funzioni negli script bash che importano librerie tramite `so
 #!/bin/bash
 source ./bashscripts/lib/custom.sh
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+>>>>>>> f1e7ef1046 (.)
 # Utilizzo le funzioni definite in custom.sh senza ridefinirle
 validate_input "$@"
 process_files "$1"
@@ -74,9 +80,12 @@ process_files "$1"
 #!/bin/bash
 source ./bashscripts/lib/custom.sh
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+>>>>>>> f1e7ef1046 (.)
 # GRAVE ERRORE: ridefinire funzioni già presenti in custom.sh
 function validate_input() {
   # Implementazione duplicata che potrebbe divergere dall'originale
@@ -101,10 +110,14 @@ function validate_input() {
  43df3e0 (.)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 
 >>>>>>> 1831d11e78 (.)
+=======
+
+>>>>>>> f1e7ef1046 (.)
 aurmich/dev

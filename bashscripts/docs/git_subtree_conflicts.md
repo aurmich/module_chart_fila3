@@ -1,8 +1,11 @@
 # Risoluzione dei Conflitti negli Script Git Subtree
 
-> **Nota**: Per informazioni aggiuntive sulla risoluzione dei conflitti, consulta anche [Risoluzione Conflitti Git](../../docs/risoluzione_conflitti_git.md)
+## Problema
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f1e7ef1046 (.)
 Durante lo sviluppo del progetto sono stati identificati diversi script di gestione git subtree con conflitti di merge non risolti. Questi script sono fondamentali per la corretta gestione dei sottoprogetti e la sincronizzazione tra repository. I conflitti presenti impediscono il corretto funzionamento degli script e potrebbero causare problemi di integrità nel repository.
 
 ## Script con Conflitti Identificati
@@ -58,9 +61,12 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 
 source ./bashscripts/lib/custom.sh
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+>>>>>>> f1e7ef1046 (.)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -182,7 +188,10 @@ La soluzione ottimale è mantenere la versione che accetta 3 parametri, ma con g
 
 source ./bashscripts/lib/custom.sh
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> f1e7ef1046 (.)
 # Validate input
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
     log "error" "Parametri errati"
@@ -256,6 +265,7 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)# Risoluzione dei Conflitti negli Script Git Subtree
+<<<<<<< HEAD
 
 ## Problema
 
@@ -394,6 +404,8 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 * [risoluzione_conflitti_git.md](../../docs/risoluzione_conflitti_git.md)
 * [git_subtree_conflicts.md](git_subtree_conflicts.md)
 >>>>>>> 04d882f8f6 (.)
+=======
+>>>>>>> f1e7ef1046 (.)
 
 ## Problema
 
@@ -521,10 +533,10 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 ## Collegamenti
 
 - [Documentazione Git Subtree](https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging)
-
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -535,6 +547,9 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 =======
 5338a990 (.)
 >>>>>>> 1831d11e78 (.)
+=======
+5338a990 (.)
+>>>>>>> f1e7ef1046 (.)
 # Risoluzione dei Conflitti negli Script Git Subtree
 
 ## Problema
@@ -668,6 +683,9 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f1e7ef1046 (.)
 f000df5 (.)
 
 
@@ -800,6 +818,7 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 5338a990 (.)
@@ -947,6 +966,9 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 =======
 
 >>>>>>> 0c55086029 (.)
+=======
+>>>>>>> f000df5 (.)
+>>>>>>> f1e7ef1046 (.)
 # Risoluzione dei Conflitti negli Script Git Subtree
 
 ## Problema
@@ -1071,6 +1093,9 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 1. **Test approfonditi**: Testare accuratamente gli script dopo la risoluzione
 2. **Documentazione**: Aggiornare la documentazione con le modifiche apportate
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f1e7ef1046 (.)
 3. **Segnalazioni agli sviluppatori**: Informare gli sviluppatori delle modifiche alla firma dei metodi
 
 ## Collegamenti
@@ -1081,6 +1106,7 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
 =======
 >>>>>>> 4d4d6cb7 (.)
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
@@ -1096,3 +1122,8 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md)
 - [Risoluzione Conflitti Git](../../docs/risoluzione_conflitti_git.md) 
 >>>>>>> 04d882f8f6 (.)
+=======
+=======
+>>>>>>> d83fe8da (.)
+- [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
+>>>>>>> f1e7ef1046 (.)

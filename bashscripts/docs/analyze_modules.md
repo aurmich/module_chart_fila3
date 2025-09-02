@@ -7,6 +7,7 @@ Lo script `analyze_modules.sh` esegue l'analisi PHPStan su tutti i moduli Larave
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 `/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/analyze_modules.sh`
 
 ## Utilizzo
@@ -33,6 +34,13 @@ cd /var/www/html/_bases/base_ptvx_fila3_mono
 ```bash
 cd /var/www/html/ptvx
 >>>>>>> 04d882f8f6 (.)
+=======
+`/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/analyze_modules.sh`
+
+## Utilizzo
+```bash
+cd /var/www/html/_bases/base_ptvx_fila3_mono
+>>>>>>> f1e7ef1046 (.)
 ./bashscripts/analyze_modules.sh
 ```
 
@@ -67,6 +75,7 @@ Modules/<NomeModulo>/docs/phpstan/
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `BASE_DIR`: Directory base del progetto (`/var/www/html/_bases/base_ptvx_fila3_mono/laravel`)
 =======
 - `BASE_DIR`: Directory base del progetto (`/var/www/html/ptvx/laravel`)
@@ -77,6 +86,9 @@ Modules/<NomeModulo>/docs/phpstan/
 =======
 - `BASE_DIR`: Directory base del progetto (`/var/www/html/ptvx/laravel`)
 >>>>>>> 04d882f8f6 (.)
+=======
+- `BASE_DIR`: Directory base del progetto (`/var/www/html/_bases/base_ptvx_fila3_mono/laravel`)
+>>>>>>> f1e7ef1046 (.)
 - `MODULES_DIR`: Directory dei moduli (`$BASE_DIR/Modules`)
 - `LEVELS`: Array dei livelli PHPStan da analizzare
 
@@ -117,11 +129,14 @@ Modules/<NomeModulo>/docs/phpstan/
    - PHPStan non installato
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Configurazione PHPStan errata
 
 ## Pattern di Risoluzione Errori
 Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzioni più comuni:
 =======
+=======
+>>>>>>> f1e7ef1046 (.)
 
 ## Gestione dei Conflitti
 In caso di conflitti durante l'analisi dei moduli:
@@ -129,15 +144,21 @@ In caso di conflitti durante l'analisi dei moduli:
 2. Eseguire `git status` per identificare i file in conflitto
 3. Risolvere i conflitti manualmente seguendo le linee guida in [CONFLICT_RESOLUTION.md](../../docs/development/CONFLICT_RESOLUTION.md)
 4. Dopo la risoluzione, rieseguire l'analisi PHPStan
+<<<<<<< HEAD
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+>>>>>>> f1e7ef1046 (.)
 
 ## Collegamenti
 - [Documentazione PHPStan](../../docs/phpstan/PHPSTAN_WORKFLOW.md)
 - [Linee Guida Moduli](../../docs/MODULES.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> f1e7ef1046 (.)
 - [Risoluzione Conflitti](../../docs/development/CONFLICT_RESOLUTION.md)
    - Configurazione PHPStan errata
 
@@ -184,9 +205,12 @@ Lo script può essere integrato in pipeline CI/CD per automatizzare l'analisi de
 
 ```yaml
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> f1e7ef1046 (.)
 # Esempio di configurazione GitHub Actions
 name: PHPStan Analysis
 on: [push, pull_request]
@@ -211,6 +235,7 @@ jobs:
 - [Best Practices PHPStan](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/PHPSTAN-LEVEL9-GUIDE.md)
 - [Script di Automazione](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/scripts.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Risoluzione Conflitti](../../docs/development/CONFLICT_RESOLUTION.md)
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
@@ -219,3 +244,5 @@ jobs:
 =======
    - Configurazione PHPStan errata 
 >>>>>>> 04d882f8f6 (.)
+=======
+>>>>>>> f1e7ef1046 (.)

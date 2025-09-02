@@ -229,11 +229,15 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f000df5 (.)
 >>>>>>> a38b33ce0f (.)
 =======
 >>>>>>> 0c55086029 (.)
+=======
+>>>>>>> f000df5 (.)
+>>>>>>> f1e7ef1046 (.)
 # Script di Verifica della Qualità del Codice
 
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
@@ -293,20 +297,27 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### phpstan_docs_generator.sh 
 
 =======
 =======
+>>>>>>> f1e7ef1046 (.)
+=======
 >>>>>>> 4d4d6cb7 (.)
 ### phpstan_docs_generator.sh 
 =======
+<<<<<<< HEAD
 >>>>>>> a38b33ce0f (.)
 =======
 >>>>>>> 0c55086029 (.)
+=======
+>>>>>>> f1e7ef1046 (.)
 ## Risorse Utili
 - [PHPStan](https://phpstan.org/)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data/v4/introduction)
 - [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php) 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -315,3 +326,6 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 =======
 
 >>>>>>> 0c55086029 (.)
+=======
+>>>>>>> d83fe8da (.)
+>>>>>>> f1e7ef1046 (.)

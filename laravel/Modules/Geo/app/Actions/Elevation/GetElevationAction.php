@@ -60,6 +60,7 @@ class GetElevationAction
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             return (float) $firstResult['elevation'];
 =======
 <<<<<<< HEAD
@@ -78,6 +79,9 @@ class GetElevationAction
             $elevation = $firstResult['elevation'];
             return \Modules\Xot\Actions\Cast\SafeFloatCastAction::cast($elevation, 0.0);
 >>>>>>> 48584a1c98 (.)
+=======
+            return (float) $firstResult['elevation'];
+>>>>>>> f1e7ef1046 (.)
         } catch (\Throwable $e) {
             if ($e instanceof ElevationException) {
                 throw $e;

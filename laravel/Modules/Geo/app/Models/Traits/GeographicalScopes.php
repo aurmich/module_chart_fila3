@@ -6,7 +6,6 @@ namespace Modules\Geo\Models\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Query\Expression;
-use Modules\Xot\Actions\Geo\GetDistanceExpressionAction;
 
 trait GeographicalScopes
 {
@@ -26,22 +25,17 @@ trait GeographicalScopes
         return $query->orderBy($this->getDistanceExpression($latitude, $longitude));
     }
 
-    /**
-     * Genera l'espressione SQL per il calcolo della distanza usando l'action centralizzata.
-     *
-     * @param float $latitude Latitudine del punto di riferimento
-     * @param float $longitude Longitudine del punto di riferimento
-     * @param string|null $alias Alias per l'espressione (opzionale)
-     * @return \Illuminate\Contracts\Database\Query\Expression Espressione SQL per il calcolo della distanza
-     */
-    public function getDistanceExpression(float $latitude, float $longitude, ?string $alias = null): \Illuminate\Contracts\Database\Query\Expression
+    public function getDistanceExpression(float $latitude, float $longitude, ?string $alias = null): Expression
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> c92b0c10e7 (.)
+=======
+>>>>>>> f1e7ef1046 (.)
         $sql = "
             (6371 * acos(
                 cos(radians($latitude)) *
@@ -49,6 +43,7 @@ trait GeographicalScopes
                 cos(radians(longitude) - radians($longitude)) +
                 sin(radians($latitude)) *
                 sin(radians(latitude))
+<<<<<<< HEAD
 <<<<<<< HEAD
             ))
 =======
@@ -58,6 +53,9 @@ trait GeographicalScopes
             ))
 >>>>>>> 3c5e1ea (.)
 >>>>>>> c92b0c10e7 (.)
+=======
+            ))
+>>>>>>> f1e7ef1046 (.)
         ";
         if (null !== $alias) {
             $sql .= " AS $alias";
@@ -65,6 +63,7 @@ trait GeographicalScopes
 
         return \DB::raw($sql);
         // AS distance
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -77,5 +76,7 @@ trait GeographicalScopes
 =======
         return app(GetDistanceExpressionAction::class)->execute($latitude, $longitude, $alias);
 >>>>>>> 48584a1c98 (.)
+=======
+>>>>>>> f1e7ef1046 (.)
     }
 }
