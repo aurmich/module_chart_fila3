@@ -14,6 +14,7 @@ name('login');
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <x-layouts.guest>
 =======
 <x-layouts.guest-institutional>
@@ -67,9 +68,13 @@ name('login');
 =======
 <x-layouts.guest>
 >>>>>>> f08998318b (.)
+=======
+<x-layouts.app>
+>>>>>>> 07d2fff609 (.)
     <x-slot name="title">
-        {{ __('auth.login.title') }}
+        {{ __('Login') }}
     </x-slot>
+<<<<<<< HEAD
 
     <!-- Login Card AGID-Compliant (Componente Corretto) -->
     <x-pub_theme::blocks.forms.login-card 
@@ -99,3 +104,8 @@ name('login');
     @endif
 </x-layouts.guest>
 >>>>>>> 2283c980af (✨ (sixteen-theme): add AGID naming rules documentation for the Sixteen theme to ensure compliance and consistency)
+=======
+    @livewire(Modules\User\Filament\Widgets\Auth\LoginWidget::class)
+   
+</x-layouts.app>
+>>>>>>> 07d2fff609 (.)
