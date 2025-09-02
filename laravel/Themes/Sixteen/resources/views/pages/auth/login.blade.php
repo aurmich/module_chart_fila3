@@ -9,6 +9,7 @@ name('login');
 
 ?>
 
+<<<<<<< HEAD
 <x-layouts.guest>
     <x-slot name="title">
         {{ __('auth.login.title') }} - {{ config('app.name') }}
@@ -49,3 +50,17 @@ name('login');
     <nav class="bg-gray-50 py-3 border-b border-gray-200" aria-label="Percorso di navigazione">
         <div class="container mx-auto px-4">
             <ol class="flex items-center space-x-2 text-sm">
+=======
+<x-layouts.guest-agid>
+    <x-slot name="title">
+        Accesso - {{ config('app.name') }}
+    </x-slot>
+
+    <!-- Login Card AGID-Compliant -->
+    <x-pub_theme::blocks.forms.login-card-agid 
+        title="Accedi ai servizi digitali"
+        subtitle="Utilizza le tue credenziali per accedere all'area riservata dei servizi online"
+        livewire-component="\Modules\User\Http\Livewire\Auth\Login"
+    />
+</x-layouts.guest-agid>
+>>>>>>> 65c680889c (.)
