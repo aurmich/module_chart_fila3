@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 @php
     $record = $getRecord();
 =======
@@ -20,11 +21,18 @@
     $record = $getRecord();
     $hasContacts = $record->value || $record->email || $record->mobile_phone;
 >>>>>>> dadaf1e668 (.)
+=======
+@php
+    $record = $getRecord();
+>>>>>>> bacc5f3d98 (.)
 @endphp
 
 <div class="flex flex-col space-y-1">
     {{-- Nome completo --}}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bacc5f3d98 (.)
     @foreach($contact_types as $contact_type)
     @php
     $contact_value = $record->{$contact_type->value};
@@ -42,6 +50,7 @@
     @endif    
     @endforeach
 
+<<<<<<< HEAD
 =======
     @if($record->first_name || $record->last_name)
         <div class="font-medium text-gray-900">
@@ -133,4 +142,6 @@
         <span class="text-gray-400 text-xs italic">Nessun contatto</span>
     @endif
 >>>>>>> dadaf1e668 (.)
+=======
+>>>>>>> bacc5f3d98 (.)
 </div>

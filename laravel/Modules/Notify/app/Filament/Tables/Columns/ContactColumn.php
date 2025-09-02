@@ -6,13 +6,18 @@ namespace Modules\Notify\Filament\Tables\Columns;
 
 use Filament\Tables\Columns\ViewColumn;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Notify\Enums\ContactTypeEnum;
 =======
 >>>>>>> dadaf1e668 (.)
+=======
+use Modules\Notify\Enums\ContactTypeEnum;
+>>>>>>> bacc5f3d98 (.)
 
 /**
  * ContactColumn - Colonna Filament riutilizzabile per rendering contatti
  * 
+<<<<<<< HEAD
 <<<<<<< HEAD
  * Utilizza ViewColumn + Blade view per separare completamente 
  * logica e presentazione seguendo i principi DRY/KISS
@@ -20,24 +25,35 @@ use Modules\Notify\Enums\ContactTypeEnum;
  * Utilizza ViewColumn + Blade view + ContactTypeEnum per separare
  * completamente logica e presentazione seguendo i principi DRY/KISS
 >>>>>>> dadaf1e668 (.)
+=======
+ * Utilizza ViewColumn + Blade view per separare completamente 
+ * logica e presentazione seguendo i principi DRY/KISS
+>>>>>>> bacc5f3d98 (.)
  * 
  * PATTERN CORRETTO:
  * - ViewColumn per layout complessi
  * - Blade view separata per HTML
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * - ContactTypeEnum come single source of truth
  * - Helper nel modello per dati
 >>>>>>> dadaf1e668 (.)
+=======
+>>>>>>> bacc5f3d98 (.)
  * - Accessibilità WCAG 2.1 AA compliant
  * 
  * @author Laraxot Team
  * @version 2.0 - REFACTOR COMPLETO
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @since 2025-01-06
 =======
  * @since 2025-08-01
 >>>>>>> dadaf1e668 (.)
+=======
+ * @since 2025-01-06
+>>>>>>> bacc5f3d98 (.)
  */
 class ContactColumn extends ViewColumn
 {
@@ -51,6 +67,7 @@ class ContactColumn extends ViewColumn
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< HEAD
         
         // Passa i tipi di contatto alla view
         $contact_types = ContactTypeEnum::cases();
@@ -71,14 +88,21 @@ class ContactColumn extends ViewColumn
     
     protected function setUp(): void
     {
+=======
+>>>>>>> bacc5f3d98 (.)
         
-            $this->view(static::getView())
-            ->searchable(['phone', 'mobile', 'email', 'pec', 'whatsapp', 'fax'])
+        // Passa i tipi di contatto alla view
+        $contact_types = ContactTypeEnum::cases();
+        
+        $this->view(static::getView(), [
+                'contact_types' => $contact_types,
+            ])
+            ->label(__('notify::columns.contact.label'))
+            ->searchable(ContactTypeEnum::getSearchable())
             ->sortable(false)
-            
-            ->toggleable(isToggledHiddenByDefault: false)
-            ;
+            ->toggleable(isToggledHiddenByDefault: false);
     }
+<<<<<<< HEAD
     
     
 <<<<<<< HEAD
@@ -126,4 +150,6 @@ class ContactColumn extends ViewColumn
 >>>>>>> dadaf1e668 (.)
 =======
 >>>>>>> 2f4e643f19 (.)
+=======
+>>>>>>> bacc5f3d98 (.)
 }

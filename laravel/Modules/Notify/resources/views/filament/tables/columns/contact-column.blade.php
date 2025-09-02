@@ -1,5 +1,8 @@
 {{--
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bacc5f3d98 (.)
 /**
  * ContactColumn View - Rendering contatti con icone Heroicon
  * 
@@ -13,6 +16,7 @@
  * @version 2.0 - REFACTOR COMPLETO
  * @since 2025-08-01
  */
+<<<<<<< HEAD
 =======
     ContactColumn Blade View - Pattern Corretto DRY/KISS
     
@@ -24,17 +28,23 @@
     @version 2.0 - REFACTOR COMPLETO
     @since 2025-08-01
 >>>>>>> dadaf1e668 (.)
+=======
+>>>>>>> bacc5f3d98 (.)
 --}}
 
 @php
     use Modules\Notify\Enums\ContactTypeEnum;
     
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bacc5f3d98 (.)
     $record = $getRecord();
     // Ottieni i contatti dal helper del modello
     $contacts = method_exists($record, 'getContactsForColumn') 
         ? $record->getContactsForColumn() 
         : [];
+<<<<<<< HEAD
 @endphp
 
 @if(empty($contacts))
@@ -54,15 +64,28 @@
 =======
     // Ottieni i contatti dal record usando helper method
     $contacts = $getRecord()->getContactsForColumn();
+=======
+>>>>>>> bacc5f3d98 (.)
 @endphp
 
-<div class="flex flex-col gap-1" role="list" aria-label="{{ __('notify::contact-column.aria_labels.contact_list') }}">
-    @forelse($contacts as $contact)
-        @if(!empty($contact['value']))
+@if(empty($contacts))
+    <span class="text-gray-400 text-sm italic" role="status" aria-label="Nessun contatto">
+        Nessun contatto
+    </span>
+@else
+    <div class="flex flex-wrap gap-2 items-center" role="list" aria-label="Lista contatti">
+        @foreach($contacts as $contact)
             @php
                 try {
                     $enumCase = ContactTypeEnum::from($contact['type']);
+<<<<<<< HEAD
 >>>>>>> dadaf1e668 (.)
+=======
+                    $iconName = $enumCase->getIcon();
+                    $colorClass = $enumCase->getColor();
+                    $label = $enumCase->getLabel();
+                    $ariaLabel = $label . ': ' . $contact['value'];
+>>>>>>> bacc5f3d98 (.)
                 } catch (ValueError $e) {
                     // Fallback per tipi non riconosciuti
                     continue;
@@ -70,6 +93,9 @@
             @endphp
             
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bacc5f3d98 (.)
             <div role="listitem" class="inline-flex items-center {{ $colorClass }} transition-colors duration-200">
                 @if($contact['href'] ?? false)
                     {{-- Link cliccabile per contatti interattivi --}}
@@ -110,6 +136,7 @@
         @endforeach
     </div>
 @endif
+<<<<<<< HEAD
 =======
             @if($contact['href'] ?? false)
                 {{-- Link cliccabile per contatti interattivi --}}
@@ -122,6 +149,8 @@
                     
                     @svg($enumCase->getIcon(), 'w-4 h-4 flex-shrink-0', ['aria-hidden' => 'true'])
 >>>>>>> dadaf1e668 (.)
+=======
+>>>>>>> bacc5f3d98 (.)
                     
                     <span class="ml-1 text-xs font-medium group-hover:underline">
                         {{ $contact['display_value'] ?? $contact['value'] }}
