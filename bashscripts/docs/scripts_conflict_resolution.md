@@ -1,82 +1,64 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Script di Risoluzione dei Conflitti
+=======
+# Risoluzione Conflitti negli Script Bash
+>>>>>>> 04d882f8f6 (.)
 
-## Panoramica
+## Problema
 
-Questo documento fornisce una guida completa agli script di automazione per la risoluzione dei conflitti git nel progetto Laraxot PTVX. Gli script descritti sono progettati per aiutare gli sviluppatori a identificare, analizzare e risolvere i conflitti di merge in modo efficiente.
+Durante lo sviluppo del progetto sono stati identificati diversi script bash con conflitti di merge non risolti. Questi conflitti sono caratterizzati da marker di conflitto Git che impediscono la corretta esecuzione degli script e introducono potenziali problemi.
 
-## Script Disponibili
+## Script con Conflitti Identificati
 
-### 1. find_conflicts.sh
+I seguenti script contengono marker di conflitto git:
 
-#### Descrizione
-Identifica e elenca tutti i file con conflitti git non risolti nel repository.
+1. `bashscripts/fix_structure.sh` - Script per la sistemazione della struttura delle directory
+2. `bashscripts/git_pull_org.sh` - Script per sincronizzare con una repository remota
+3. `bashscripts/git_push_subtree_org.sh` - Script per eseguire push di un subtree git
+4. `bashscripts/git_sync_subtree.sh.old` - Versione precedente script per sincronizzare subtree
+5. `bashscripts/sync_to_disk.sh` - Script per sincronizzare con un disco esterno
+6. `bashscripts/git_pull_subtree_org.sh` - Script per pull di subtree da repository organizzativa
 
-#### Utilizzo
-```bash
-./bashscripts/git/find_conflicts.sh
-```
+## Analisi dei Conflitti
 
-#### Output
-Un elenco di file che contengono marcatori di conflitto git.
+### fix_structure.sh
 
-#### Come Funziona
-1. Utilizza `git grep` per cercare i marcatori  in tutti i file
-2. Organizza i risultati per tipo di file (PHP, MD, JSON, ecc.)
-3. Mostra un riepilogo della quantità di conflitti per tipo
+Il file presenta un conflitto complesso con versioni multiple dello stesso script, con differenze sia nell'approccio generale che nei dettagli implementativi:
 
-### 2. resolve_conflicts.sh
+1. **Versione 1**: Implementazione avanzata con funzioni di logging colorate e gestione strutturata delle cartelle
+2. **Versione 2**: Implementazione più semplice che rinomina direttamente le cartelle
 
-#### Descrizione
-Uno script interattivo che aiuta a risolvere i conflitti di merge proponendo varie strategie di risoluzione.
+### git_pull_org.sh
 
-#### Utilizzo
-```bash
-./bashscripts/utils/resolve_conflicts.sh [percorso_file]
-```
+Il file presenta un conflitto in diverse parti:
 
-#### Funzionalità
-1. Visualizza il contenuto del file con conflitti
-2. Propone diverse strategie di risoluzione:
-   - Mantenere la versione HEAD
-   - Mantenere la versione incoming
-   - Fusione manuale guidata
-   - Aprire il file in un editor
-3. Applica la strategia selezionata e rimuove i marcatori di conflitto
-4. Crea backup dei file prima delle modifiche
+1. **Validazione input**: Presente in tutte le versioni
+2. **Configurazione Git**: Approcci differenti nelle diverse versioni
+3. **Gestione errori**: Differenze nella robustezza dell'error handling
+4. **Logging**: Versioni differenti per metodologia di logging
 
-### 3. fix_all_git_conflicts.sh
+### git_push_subtree_org.sh
 
-#### Descrizione
-Script di risoluzione automatica che mantiene la versione HEAD per tutti i conflitti.
+Il file presenta un conflitto che riguarda:
 
-#### Utilizzo
-```bash
-./bashscripts/utils/fix_all_git_conflicts.sh
-```
+1. **Messaggio di utilizzo**: Differenze minori nella formattazione
+2. **Implementazione**: Differenze nella robustezza e completezza
 
-#### Funzionalità
-1. Identifica tutti i file con conflitti
-2. Crea backup dei file originali
-3. Mantiene automaticamente la versione HEAD
-4. Rimuove i marcatori di conflitto
-5. Produce un report delle modifiche
+### git_pull_subtree_org.sh
 
-#### Limitazioni
-- Non adatto per conflitti complessi che richiedono fusione manuale
-- Può perdere modifiche importanti dalla versione non-HEAD
+Il file presenta un conflitto riguardante:
 
-### 4. check_namespaces.sh
+1. **Numero di parametri**: Due versioni con diverse esigenze di parametri
+   - Versione 1: Richiede 2 parametri (path, remote_repo)
+   - Versione 2: Richiede 3 parametri (path, remote_repo, branch)
 
-#### Descrizione
-Verifica e corregge i problemi comuni di namespace nei file PHP, che sono spesso causa di conflitti.
+### git_sync_subtree.sh.old
 
-#### Utilizzo
-```bash
-./bashscripts/utils/check_namespaces.sh [directory]
-```
+Il file presenta un conflitto complesso con duplicazioni multiple dello stesso script e annotazioni di risoluzione:
 
+<<<<<<< HEAD
 #### Funzionalità
 1. Cerca i namespace che includono incorrettamente il segmento 'app'
 2. Suggerisce correzioni secondo le convenzioni del progetto
@@ -182,6 +164,10 @@ Verifica e corregge i problemi comuni di namespace nei file PHP, che sono spesso
 #### Descrizione
 Analizza i conflitti e fornisce statistiche e suggerimenti per la risoluzione.
 >>>>>>> 1831d11e78 (.)
+=======
+1. **Struttura principale**: Duplicazione dell'intero script, con marker di conflitto nidificati
+2. **Messaggi di sistema**: Presenza di messaggi informativi sulla risoluzione del conflitto
+>>>>>>> 04d882f8f6 (.)
 
 ### sync_to_disk.sh
 
@@ -267,10 +253,10 @@ Dopo la risoluzione dei conflitti, verranno eseguite le seguenti verifiche:
 
 ## Collegamenti
 
-- [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
-- [Linee Guida per la Scrittura di Script Bash](./git_scripts.md)
-- [Principio DRY negli Script Bash](./NO_DUPLICATE_FUNCTIONS_IN_SOURCED_SCRIPTS.md)
-- [Risoluzione dei Conflitti Bash](./CONFLICT_RESOLUTION_BASH.md)
+- [Documentazione Generale sulla Risoluzione dei Conflitti](scripts-conflict-resolution.md)
+- [Linee Guida per la Scrittura di Script Bash](git-scripts.md)
+- [Principio DRY negli Script Bash](no-duplicate-functions-in-sourced-scripts.md)
+- [Risoluzione dei Conflitti Bash](conflict-resolution-bash.md)
 
 ## Risoluzioni recenti (Aprile 2025)
 
@@ -281,6 +267,7 @@ I seguenti file sono stati recentemente risolti:
 - `sync_to_disk.sh`: Mantenuta versione avanzata con migliore feedback e gestione esclusioni
 - `fix_merge_conflicts.sh`: Corretta la logica di individuazione e rimozione dei marker di conflitto per garantire la pulizia completa di tutti i tre tipi di marker 
 
+<<<<<<< HEAD
 ##<!-- REVISIONE MANUALE: File aggiornato per chiarezza architetturale e tracciabilità delle scelte. Vedi anche [README globale](/docs/README.md) e gli script citati in questa documentazione. -->
 
 [Backlink: Documentazione Globale](/docs/README.md)
@@ -647,3 +634,6 @@ Per pulire un repository con molti conflitti non risolti:
 >>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> 0c55086029 (.)
+=======
+Questa documentazione è collegata bidirezionalmente con la [documentazione principale sulla risoluzione dei conflitti](scripts-conflict-resolution.md) nella root del progetto. 
+>>>>>>> 04d882f8f6 (.)

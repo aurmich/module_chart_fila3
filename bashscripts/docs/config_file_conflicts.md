@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 1831d11e78 (.)
 # Gestione dei Conflitti nei File di Configurazione
@@ -395,6 +396,8 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+>>>>>>> 04d882f8f6 (.)
 # Risoluzione dei Conflitti nei File di Configurazione
 
 ## Problema
@@ -493,6 +496,7 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione PHPUnit](https://phpunit.readthedocs.io/en/10.3/configuration.html)
 - [Documentazione PostCSS](https://postcss.org/)
 - [Documentazione Rector](https://getrector.org/documentation)
+<<<<<<< HEAD
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 <<<<<<< HEAD
 # Risoluzione dei Conflitti nei File di Configurazione
@@ -930,3 +934,7 @@ I seguenti file di configurazione sono stati recentemente risolti:
 >>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> 0c55086029 (.)
+=======
+- [Documentazione sulla Risoluzione dei Conflitti Bash](conflict-resolution-bash.md)
+- [Documentazione Generale sulla Risoluzione dei Conflitti](scripts-conflict-resolution.md) 
+>>>>>>> 04d882f8f6 (.)

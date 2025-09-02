@@ -1,7 +1,8 @@
 # Risoluzione dei Conflitti negli Script Git Subtree
 
-## Problema
+> **Nota**: Per informazioni aggiuntive sulla risoluzione dei conflitti, consulta anche [Risoluzione Conflitti Git](../../docs/risoluzione_conflitti_git.md)
 
+<<<<<<< HEAD
 Durante lo sviluppo del progetto sono stati identificati diversi script di gestione git subtree con conflitti di merge non risolti. Questi script sono fondamentali per la corretta gestione dei sottoprogetti e la sincronizzazione tra repository. I conflitti presenti impediscono il corretto funzionamento degli script e potrebbero causare problemi di integrità nel repository.
 
 ## Script con Conflitti Identificati
@@ -388,6 +389,11 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)# Risoluzione dei Conflitti negli Script Git Subtree
+=======
+## Collegamenti tra versioni di git_subtree_conflicts.md
+* [risoluzione_conflitti_git.md](../../docs/risoluzione_conflitti_git.md)
+* [git_subtree_conflicts.md](git_subtree_conflicts.md)
+>>>>>>> 04d882f8f6 (.)
 
 ## Problema
 
@@ -515,9 +521,11 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 ## Collegamenti
 
 - [Documentazione Git Subtree](https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging)
+
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 5338a990 (.)
@@ -1084,3 +1092,7 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 =======
 3. **Segnalazioni agli sviluppatori**: Informare gli sviluppatori delle modifiche alla firma dei metodi
 >>>>>>> 0c55086029 (.)
+=======
+- [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md)
+- [Risoluzione Conflitti Git](../../docs/risoluzione_conflitti_git.md) 
+>>>>>>> 04d882f8f6 (.)

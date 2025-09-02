@@ -42,6 +42,9 @@ chmod +x bashscripts/utils/script.sh
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 04d882f8f6 (.)
 *Regole create il: $(date)*
 ## Docs Naming Convention
 
@@ -60,6 +63,9 @@ chmod +x bashscripts/utils/script.sh
   - ❌ API-Documentation.md
   - ❌ BestPractices.md
 
+<<<<<<< HEAD
 =======
 *Regole create il: $(date)*
 >>>>>>> 0c55086029 (.)
+=======
+>>>>>>> 04d882f8f6 (.)
