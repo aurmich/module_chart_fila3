@@ -5,9 +5,13 @@
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 aurmich/dev
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> f71d08e230 (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -105,9 +109,13 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 - Logging strutturato
 - Monitoraggio performance
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> f71d08e230 (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -215,9 +223,12 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 
+<<<<<<< HEAD
 =======
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+>>>>>>> f71d08e230 (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -315,9 +326,13 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 - Logging strutturato
 - Monitoraggio performance
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> f71d08e230 (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -417,9 +432,13 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> f71d08e230 (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica
@@ -720,9 +739,13 @@ Questa fase si concentra sugli strumenti di verifica e controllo della qualità 
 
 aurmich/dev
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> f71d08e230 (.)
 # 🔍 Fase 3: Verifica
 
 ## 📋 Panoramica

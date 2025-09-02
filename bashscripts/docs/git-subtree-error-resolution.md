@@ -26,6 +26,7 @@ Il sistema di gestione dei subtree è composto da tre componenti principali:
 <<<<<<< HEAD
 ```bash
 
+<<<<<<< HEAD
 =======
 
 =======
@@ -35,6 +36,8 @@ Il sistema di gestione dei subtree è composto da tre componenti principali:
 =======
 ```bash
 >>>>>>> f1e7ef1046 (.)
+=======
+>>>>>>> f71d08e230 (.)
 # 1. Inizializzazione
 git init
 git checkout -b "$BRANCH"
@@ -66,11 +69,15 @@ git push -u origin "$BRANCH"
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> f1e7ef1046 (.)
+=======
+
+>>>>>>> f71d08e230 (.)
 # 1. Pull standard
 git subtree pull -P "$LOCAL_PATH" "$REMOTE_REPO" "$BRANCH" --squash
 
@@ -155,11 +162,15 @@ fatal: you must provide the --prefix option
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> f1e7ef1046 (.)
+=======
+
+>>>>>>> f71d08e230 (.)
 # Verifica variabili
 if [ -z "$LOCAL_PATH" ] || [ -z "$REMOTE_REPO" ]; then
     echo "❌ Error: Missing required variables"
@@ -189,6 +200,9 @@ fi
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f71d08e230 (.)
 
 # Aggiorna repository locale
 git fetch origin "$BRANCH"

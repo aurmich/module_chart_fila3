@@ -8,9 +8,13 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> f71d08e230 (.)
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -137,9 +141,13 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 - Deployment produzione
 - Monitoraggio continuo
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> f71d08e230 (.)
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -266,9 +274,13 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 - Deployment produzione
 - Monitoraggio continuo
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> f71d08e230 (.)
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -397,9 +409,13 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> f71d08e230 (.)
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -538,9 +554,13 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 
 aurmich/dev
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> f71d08e230 (.)
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -667,9 +687,13 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 - Deployment produzione
 - Monitoraggio continuo
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> f71d08e230 (.)
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica
@@ -796,9 +820,13 @@ Questa fase si concentra sul miglioramento della sicurezza del sistema attravers
 - Deployment produzione
 - Monitoraggio continuo
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> f71d08e230 (.)
 # 🛡️ Fase 5: Sicurezza
 
 ## 📋 Panoramica

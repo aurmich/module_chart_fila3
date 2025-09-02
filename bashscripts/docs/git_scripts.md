@@ -88,6 +88,28 @@ Script per il push dei subtree. Funzionalità:
 2. Errori di path: verificare la configurazione Windows
 3. Problemi di permessi: controllare fileMode e symlinks
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 85c5198c (.)
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 9de04485 (.)
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 85c5198c (.)
+=======
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 # Script Git
 >>>>>>> f1e7ef1046 (.)
 
@@ -245,6 +267,7 @@ Per una documentazione più generale sugli script di gestione Git, consultare la
 >>>>>>> 04d882f8f6 (.)
 =======
 =======
+>>>>>>> 3c18aa7e (.)
 # Script Git
 >>>>>>> f1e7ef1046 (.)
 
@@ -298,6 +321,7 @@ Script per il push dei subtree. Funzionalità:
 2. Errori di path: verificare la configurazione Windows
 3. Problemi di permessi: controllare fileMode e symlinks
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -308,6 +332,11 @@ Script per il push dei subtree. Funzionalità:
 >>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+=======
+>>>>>>> f000df5 (.)
+>>>>>>> 3c18aa7e (.)
+>>>>>>> f71d08e230 (.)
 # Script Git
 
 Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
@@ -355,6 +384,201 @@ Script per il push dei subtree. Funzionalità:
 1. Conflitti di merge: utilizzare gli script di backup prima di risolvere
 2. Errori di path: verificare la configurazione Windows
 3. Problemi di permessi: controllare fileMode e symlinks
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 337c5266 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+# Script Git
+
+Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
+
+## Panoramica
+Questa documentazione descrive gli script bash utilizzati per la gestione dei subtree git nel progetto Laraxot.
+
+## Script Principali
+
+### git_config_setup
+Funzione centralizzata per la configurazione git, definita in `custom.sh`. Gestisce le seguenti impostazioni:
+- `core.ignorecase`: false (case-sensitive)
+- `core.fileMode`: false (ignora permessi)
+- `core.autocrlf`: false (no conversione automatica line endings)
+- `core.eol`: lf (line ending di default)
+- `core.symlinks`: false (no symlinks per Windows)
+- `core.longpaths`: true (supporto path lunghi Windows)
+
+### git_pull_subtrees.sh
+Script principale per il pull dei subtree. Funzionalità:
+1. Configurazione git tramite `git_config_setup`
+2. Backup opzionale su disco esterno
+3. Gestione dei subtree definiti in gitmodules.ini
+4. Supporto per organizzazioni GitHub personalizzate
+
+### git_pull_subtree.sh
+Script per il pull di un singolo subtree. Caratteristiche:
+1. Gestione errori robusta
+2. Logging delle operazioni
+3. Supporto per branch personalizzati
+
+### git_push_subtrees.sh
+Script per il push dei subtree. Funzionalità:
+1. Push verso repository remoti
+2. Supporto per organizzazioni multiple
+3. Gestione errori e logging
+
+## Best Practices
+1. Utilizzare sempre `git_config_setup` per la configurazione
+2. Gestire i backup prima delle operazioni critiche
+3. Verificare i log per eventuali errori
+4. Mantenere aggiornato gitmodules.ini
+
+## Risoluzione Problemi Comuni
+1. Conflitti di merge: utilizzare gli script di backup prima di risolvere
+2. Errori di path: verificare la configurazione Windows
+3. Problemi di permessi: controllare fileMode e symlinks
+
+# Script Git
+
+Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
+
+## Panoramica
+Questa documentazione descrive gli script bash utilizzati per la gestione dei subtree git nel progetto Laraxot.
+
+## Script Principali
+
+### git_config_setup
+Funzione centralizzata per la configurazione git, definita in `custom.sh`. Gestisce le seguenti impostazioni:
+- `core.ignorecase`: false (case-sensitive)
+- `core.fileMode`: false (ignora permessi)
+- `core.autocrlf`: false (no conversione automatica line endings)
+- `core.eol`: lf (line ending di default)
+- `core.symlinks`: false (no symlinks per Windows)
+- `core.longpaths`: true (supporto path lunghi Windows)
+
+### git_pull_subtrees.sh
+Script principale per il pull dei subtree. Funzionalità:
+1. Configurazione git tramite `git_config_setup`
+2. Backup opzionale su disco esterno
+3. Gestione dei subtree definiti in gitmodules.ini
+4. Supporto per organizzazioni GitHub personalizzate
+
+### git_pull_subtree.sh
+Script per il pull di un singolo subtree. Caratteristiche:
+1. Gestione errori robusta
+2. Logging delle operazioni
+3. Supporto per branch personalizzati
+
+### git_push_subtrees.sh
+Script per il push dei subtree. Funzionalità:
+1. Push verso repository remoti
+2. Supporto per organizzazioni multiple
+3. Gestione errori e logging
+
+## Best Practices
+1. Utilizzare sempre `git_config_setup` per la configurazione
+2. Gestire i backup prima delle operazioni critiche
+3. Verificare i log per eventuali errori
+4. Mantenere aggiornato gitmodules.ini
+
+## Risoluzione Problemi Comuni
+1. Conflitti di merge: utilizzare gli script di backup prima di risolvere
+2. Errori di path: verificare la configurazione Windows
+3. Problemi di permessi: controllare fileMode e symlinks
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
+=======
+=======
+>>>>>>> 85c5198c (.)
+=======
+=======
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+
+# Script Git
+
+Questi script sono utilizzati per automatizzare le operazioni Git nel progetto.
+
+## Panoramica
+Questa documentazione descrive gli script bash utilizzati per la gestione dei subtree git nel progetto Laraxot.
+
+## Script Principali
+
+### git_config_setup
+Funzione centralizzata per la configurazione git, definita in `custom.sh`. Gestisce le seguenti impostazioni:
+- `core.ignorecase`: false (case-sensitive)
+- `core.fileMode`: false (ignora permessi)
+- `core.autocrlf`: false (no conversione automatica line endings)
+- `core.eol`: lf (line ending di default)
+- `core.symlinks`: false (no symlinks per Windows)
+- `core.longpaths`: true (supporto path lunghi Windows)
+
+### git_pull_subtrees.sh
+Script principale per il pull dei subtree. Funzionalità:
+1. Configurazione git tramite `git_config_setup`
+2. Backup opzionale su disco esterno
+3. Gestione dei subtree definiti in gitmodules.ini
+4. Supporto per organizzazioni GitHub personalizzate
+
+### git_pull_subtree.sh
+Script per il pull di un singolo subtree. Caratteristiche:
+1. Gestione errori robusta
+2. Logging delle operazioni
+3. Supporto per branch personalizzati
+
+### git_push_subtrees.sh
+Script per il push dei subtree. Funzionalità:
+1. Push verso repository remoti
+2. Supporto per organizzazioni multiple
+3. Gestione errori e logging
+
+## Best Practices
+1. Utilizzare sempre `git_config_setup` per la configurazione
+2. Gestire i backup prima delle operazioni critiche
+3. Verificare i log per eventuali errori
+4. Mantenere aggiornato gitmodules.ini
+
+## Risoluzione Problemi Comuni
+1. Conflitti di merge: utilizzare gli script di backup prima di risolvere
+2. Errori di path: verificare la configurazione Windows
+3. Problemi di permessi: controllare fileMode e symlinks
+
+[Torna alla documentazione principale](/docs/maintenance.md#git-management) 
+[Torna alla documentazione principale](/docs/maintenance.md#git-management) 
+[Torna alla documentazione principale](/docs/maintenance.md#git-management) 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+[Torna alla documentazione principale](/docs/maintenance.md#git-management) 
+3. Problemi di permessi: controllare fileMode e symlinks
+>>>>>>> a013e8e (.)
+=======
 
 <<<<<<< HEAD
 [Torna alla documentazione principale](/docs/maintenance.md#git-management) 
@@ -438,4 +662,28 @@ Script per il push dei subtree. Funzionalità:
 =======
 >>>>>>> d83fe8da (.)
 [Torna alla documentazione principale](/docs/maintenance.md#git-management) 
+<<<<<<< HEAD
 >>>>>>> f1e7ef1046 (.)
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 9c02579 (.)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 337c5266 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+>>>>>>> f71d08e230 (.)

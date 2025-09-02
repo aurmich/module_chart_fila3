@@ -120,6 +120,7 @@ log() {
 Spesso i conflitti riguardano funzioni duplicate o con logiche diverse. Ecco una versione integrata e migliorata della funzione di log, che supporta sia il formato semplice che quello con livelli:
 
 ```bash
+
 # Funzione di log avanzata: accetta sia log "message" che log "level" "message"
 log() {
 <<<<<<< HEAD
@@ -256,6 +257,7 @@ BRANCH="$3"
 =======
 
 ```bash
+
 # Gestione robusta dei parametri: supporta 2 o 3 parametri, con branch opzionale
 >>>>>>> 1831d11e78 (.)
 =======

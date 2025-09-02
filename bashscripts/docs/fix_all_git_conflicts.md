@@ -60,9 +60,12 @@ File aggiornato per chiarezza, eliminata duplicazione. Vedi anche [README global
 <<<<<<< HEAD
 [Backlink: git_conflicts_resolution.md](git_conflicts_resolution.md)
 
+<<<<<<< HEAD
 =======
 [Backlink: git_conflicts_resolution.md](git_conflicts_resolution.md)
 >>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> f71d08e230 (.)
 ## Casi d'Uso Avanzati
 
 ### 1. Risoluzione Selettiva
@@ -74,9 +77,13 @@ Lo script può essere integrato con Git hooks per verificare automaticamente la 
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 1831d11e78 (.)
+=======
+
+>>>>>>> f71d08e230 (.)
 # .git/hooks/pre-commit
 #!/bin/bash
 ```

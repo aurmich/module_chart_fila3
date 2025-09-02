@@ -31,6 +31,7 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 
 ## Processo di Risoluzione
 
+<<<<<<< HEAD
 ### Fase 1: Identificazione
 ```bash
 # Visualizzare tutti i file con conflitti
@@ -70,6 +71,26 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 
 ## Processo di Risoluzione
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
+=======
+=======
+>>>>>>> 85c5198c (.)
+=======
+=======
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+>>>>>>> f71d08e230 (.)
 ## Note Importanti
 - Tutti i file sono stati mantenuti nella versione<!-- REVISIONE MANUALE: File aggiornato per chiarezza e tracciabilità. Vedi anche [README globale](/docs/README.md) e gli altri file di risoluzione conflitti. -->
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
@@ -81,6 +102,25 @@ Particolarmente comuni nel progetto, riguardano l'implementazione corretta dei n
 - I namespace sono stati mantenuti corretti secondo la struttura del modulo
 - Sono stati rimossi solo i marcatori di conflitto, mantenendo il codice funzionale
 - I file di backup sono stati creati con il timestamp per sicurezza
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 337c5266 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 ### Fase 1: Identificazione
 ```bash
 # Visualizzare tutti i file con conflitti
@@ -88,6 +128,17 @@ git status
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+[Backlink: Documentazione Globale](/docs/README.md)
+[Backlink: scripts_conflict_resolution.md](scripts_conflict_resolution.md)
+[Backlink: fix_all_git_conflicts.md](fix_all_git_conflicts.md)
+ (corrente)
+- I namespace sono stati mantenuti corretti secondo la struttura del modulo
+- Sono stati rimossi solo i marcatori di conflitto, mantenendo il codice funzionale
+- I file di backup sono stati creati con il timestamp per sicurezza
+
+>>>>>>> f71d08e230 (.)
 ### Fase 1: Identificazione
 ```bash
 
@@ -149,6 +200,40 @@ Per ogni file in conflitto:
 - `Modules\Predict\Providers` per i service provider
 - `Modules\Predict\Database\Factories` per le factory
 - `Modules\Predict\lang\it` per i file di traduzione
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> 85c5198c (.)
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3c18aa7e (.)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 337c5266 (.)
+=======
+
+=======
+>>>>>>> 3c18aa7e (.)
+<<<<<<< HEAD
+>>>>>>> 59901687 (.)
+<<<<<<< HEAD
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
 ### Fase 3: Risoluzione
 Scegliere una delle seguenti strategie:
 
@@ -316,7 +401,7 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 4. Testare il modulo in ambiente di sviluppo 
-=======
+
 ## Risoluzione di Casi Specifici
 
 ### Conflitti in File PHP
@@ -353,6 +438,7 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 - [Convenzioni Namespace](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/NAMESPACE-CONVENTIONS.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> d83fe8da (.)
 >>>>>>> 1831d11e78 (.)
 =======
@@ -360,3 +446,5 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 =======
 >>>>>>> d83fe8da (.)
 >>>>>>> f1e7ef1046 (.)
+=======
+>>>>>>> f71d08e230 (.)

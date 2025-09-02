@@ -12,9 +12,12 @@
 
 aurmich/dev
 
+<<<<<<< HEAD
 =======
 aurmich/dev
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+>>>>>>> f71d08e230 (.)
 # 🎯 Fase 10: Conclusione
 
 ## 📋 Panoramica
@@ -29,9 +32,13 @@ Questa fase rappresenta la conclusione del progetto e la consegna finale.
 
 aurmich/dev
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> f71d08e230 (.)
 # 🎯 Fase 10: Conclusione
 
 ## 📋 Panoramica
@@ -45,9 +52,13 @@ Questa fase rappresenta la conclusione del progetto e la consegna finale.
 [0;34mℹ️ [2025-04-22 11:23:26] Scelto blocco incoming (1 linee vs 1)[0m
 aurmich/dev
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> f71d08e230 (.)
 # 🎯 Fase 10: Conclusione
 
 ## 📋 Panoramica

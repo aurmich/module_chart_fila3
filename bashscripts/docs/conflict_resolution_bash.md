@@ -46,6 +46,7 @@ La risoluzione manuale dei conflitti negli script bash è particolarmente delica
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 1831d11e78 (.)
@@ -86,6 +87,9 @@ log() {
 log() {
 >>>>>>> 04d882f8f6 (.)
 =======
+=======
+
+>>>>>>> f71d08e230 (.)
 # Versione avanzata con livelli di log
 log() {
     local level="$1"
@@ -111,6 +115,7 @@ log() {
 **Soluzione ottimale**: Integrare entrambe le versioni mantenendo la compatibilità con il codice esistente.
 
 ```bash
+
 # Funzione avanzata per loggare messaggi che supporta entrambi i formati
 log() {
     # Supporta sia il formato avanzato con livelli che il formato semplice
@@ -143,11 +148,15 @@ log() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> f1e7ef1046 (.)
+=======
+
+>>>>>>> f71d08e230 (.)
 # Versione che richiede 2 parametri
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <path> <remote_repo>"
@@ -173,9 +182,13 @@ BRANCH="$3"
 ```bash
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 1831d11e78 (.)
+=======
+
+>>>>>>> f71d08e230 (.)
 # Versione che supporta 2 o 3 parametri
 =======
 # Gestione robusta dei parametri: supporta 2 o 3 parametri, con branch opzionale

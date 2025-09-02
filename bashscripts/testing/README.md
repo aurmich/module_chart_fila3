@@ -30,9 +30,13 @@ Verifica la qualità con:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> f71d08e230 (.)
 # Esegui tutti i test
 ./run_tests.sh
 

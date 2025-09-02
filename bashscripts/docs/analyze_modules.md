@@ -130,6 +130,7 @@ Modules/<NomeModulo>/docs/phpstan/
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Configurazione PHPStan errata
 
 ## Pattern di Risoluzione Errori
@@ -137,6 +138,30 @@ Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzio
 =======
 =======
 >>>>>>> f1e7ef1046 (.)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 85c5198c (.)
+<<<<<<< HEAD
+=======
+>>>>>>> 9de04485 (.)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 85c5198c (.)
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 574afe9e (.)
+>>>>>>> f71d08e230 (.)
 
 ## Gestione dei Conflitti
 In caso di conflitti durante l'analisi dei moduli:
@@ -159,6 +184,91 @@ In caso di conflitti durante l'analisi dei moduli:
 >>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> f1e7ef1046 (.)
+- [Risoluzione Conflitti](../../docs/development/CONFLICT_RESOLUTION.md)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 337c5266 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+   - Configurazione PHPStan errata
+
+## Pattern di Risoluzione Errori
+Durante l'analisi PHPStan potrebbero emergere errori ricorrenti. Ecco le soluzioni più comuni:
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d20d0523 (.)
+
+=======
+>>>>>>> 85c5198c (.)
+<<<<<<< HEAD
+=======
+>>>>>>> f198176d (.)
+>>>>>>> 9c02579 (.)
+=======
+>>>>>>> 574afe9e (.)
+
+<<<<<<< HEAD
+=======
+
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 9de04485 (.)
+>>>>>>> 9c02579 (.)
+=======
+>>>>>>> 574afe9e (.)
+
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 85c5198c (.)
+## Gestione dei Conflitti
+In caso di conflitti durante l'analisi dei moduli:
+1. Verificare che non ci siano modifiche non committate
+2. Eseguire `git status` per identificare i file in conflitto
+3. Risolvere i conflitti manualmente seguendo le linee guida in [CONFLICT_RESOLUTION.md](../../docs/development/CONFLICT_RESOLUTION.md)
+4. Dopo la risoluzione, rieseguire l'analisi PHPStan
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 337c5266 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 9de04485 (.)
+=======
+>>>>>>> 59901687 (.)
+>>>>>>> 85c5198c (.)
+=======
+>>>>>>> 59901687 (.)
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+## Collegamenti
+- [Documentazione PHPStan](../../docs/phpstan/PHPSTAN_WORKFLOW.md)
+- [Linee Guida Moduli](../../docs/MODULES.md)
 - [Risoluzione Conflitti](../../docs/development/CONFLICT_RESOLUTION.md)
    - Configurazione PHPStan errata
 
@@ -206,11 +316,15 @@ Lo script può essere integrato in pipeline CI/CD per automatizzare l'analisi de
 ```yaml
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 1831d11e78 (.)
 =======
 >>>>>>> f1e7ef1046 (.)
+=======
+
+>>>>>>> f71d08e230 (.)
 # Esempio di configurazione GitHub Actions
 name: PHPStan Analysis
 on: [push, pull_request]

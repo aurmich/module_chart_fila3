@@ -30,9 +30,13 @@ Assiste nello sviluppo con:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> f71d08e230 (.)
 # Verifica sistema
 ./check_system.sh
 

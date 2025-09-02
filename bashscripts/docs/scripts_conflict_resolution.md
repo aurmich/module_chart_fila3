@@ -311,11 +311,15 @@ I seguenti file sono stati recentemente risolti:
 [Backlink: git_conflicts_resolution.md](git_conflicts_resolution.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 >>>>>>> f1e7ef1046 (.)
+=======
+
+>>>>>>> f71d08e230 (.)
 ### fix_structure.sh
 
 Mantenere la versione più avanzata con funzioni di logging colorate, migliorando:
@@ -539,7 +543,7 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 =======
 >>>>>>> f1e7ef1046 (.)
 Questa documentazione è collegata bidirezionalmente con la [documentazione principale sulla risoluzione dei conflitti](../../docs/bashscripts_conflict_resolution.md) nella root del progetto. 
-=======
+
 #### Utilizzo
 ```bash
 ./bashscripts/utils/conflict_analyzer.sh
@@ -555,24 +559,28 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 
 ### Fase 1: Identificazione
 ```bash
+
 # Trova tutti i file con conflitti
 ./bashscripts/git/find_conflicts.sh
 ```
 
 ### Fase 2: Analisi
 ```bash
+
 # Analizza i conflitti trovati
 ./bashscripts/utils/conflict_analyzer.sh
 ```
 
 ### Fase 3: Risoluzione Mirata
 ```bash
+
 # Risolvi manualmente i conflitti più critici
 ./bashscripts/utils/resolve_conflicts.sh [file_critico]
 ```
 
 ### Fase 4: Risoluzione Automatica
 ```bash
+
 # Risolvi automaticamente i conflitti rimanenti meno critici
 ./bashscripts/utils/fix_all_git_conflicts.sh
 ```
@@ -609,11 +617,17 @@ Gli script possono essere migliorati e personalizzati. Per contribuire:
 #!/bin/bash
 
 # =======================
+
 # Nome dello script
+
 # =======================
+
 # Descrizione: Breve descrizione dello script
+
 # Utilizzo: ./path/to/script.sh [argomenti]
+
 # Autore: Nome dell'autore
+
 # =======================
 
 # Dichiarazione delle costanti e variabili
@@ -631,6 +645,7 @@ Gli script possono essere migliorati e personalizzati. Per contribuire:
 Quando un `git pull` fallisce a causa di conflitti:
 ```bash
 git pull origin main
+
 # Conflitti rilevati
 ./bashscripts/utils/conflict_analyzer.sh
 ./bashscripts/utils/resolve_conflicts.sh [file_conflittuale]
@@ -640,6 +655,7 @@ git pull origin main
 Prima di eseguire un commit, verificare l'assenza di conflitti:
 ```bash
 ./bashscripts/git/find_conflicts.sh
+
 # Se vengono trovati conflitti, risolverli
 git add .
 git commit -m "Messaggio del commit"
@@ -673,6 +689,7 @@ Per pulire un repository con molti conflitti non risolti:
 - [Risoluzione Conflitti nei Moduli](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/conflitti_merge_risolti.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> d83fe8da (.)
 >>>>>>> 1831d11e78 (.)
 =======
@@ -683,3 +700,5 @@ Questa documentazione è collegata bidirezionalmente con la [documentazione prin
 =======
 >>>>>>> d83fe8da (.)
 >>>>>>> f1e7ef1046 (.)
+=======
+>>>>>>> f71d08e230 (.)

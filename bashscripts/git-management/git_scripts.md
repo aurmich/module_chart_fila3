@@ -129,7 +129,37 @@ Script per il push dei subtree. Funzionalità:
 3. Problemi di permessi: controllare fileMode e symlinks
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 574afe9e (.)
+[Torna alla documentazione principale](/docs/maintenance.md#git-management) 
+[Torna alla documentazione principale](/docs/maintenance.md#git-management) 
+[Torna alla documentazione principale](/docs/maintenance.md#git-management) 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 1420e3b683 (.)
+>>>>>>> 574afe9e (.)
+=======
+>>>>>>> e1b46df35 (.)
+>>>>>>> f71d08e230 (.)
 =======
 # Script Git
 
@@ -179,6 +209,40 @@ Script per il push dei subtree. Funzionalità:
 2. Errori di path: verificare la configurazione Windows
 3. Problemi di permessi: controllare fileMode e symlinks
 
+<<<<<<< HEAD
+## Principi Applicati
+
+### DRY (Don't Repeat Yourself)
+- **Configurazione centralizzata**: `git_config_setup` unificato
+- **Script riutilizzabili**: Funzioni comuni condivise
+- **Logging standardizzato**: Formato unificato per tutti gli script
+
+### KISS (Keep It Simple, Stupid)
+- **Struttura lineare**: Script semplici e comprensibili
+- **Configurazione minima**: Solo parametri essenziali
+- **Output chiaro**: Log leggibili e informativi
+
+## Collegamenti
+[Torna alla documentazione principale](/docs/maintenance.md#git-management) 
+<<<<<<< HEAD
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 9c02579 (.)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 3c18aa7e (.)
+>>>>>>> 9c02579 (.)
+>>>>>>> 1420e3b683 (.)
+>>>>>>> 574afe9e (.)
+<<<<<<< HEAD
+>>>>>>> 59901687 (.)
+<<<<<<< HEAD
+>>>>>>> 85c5198c (.)
+=======
+=======
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+=======
 >>>>>>> f000df5 (.)
 # Script Git
 
@@ -237,6 +301,7 @@ Script per il push dei subtree. Funzionalità:
 =======
 >>>>>>> d83fe8da (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Torna alla documentazione principale](/docs/maintenance.md#git-management) 
 >>>>>>> a38b33ce0f (.)
 =======
@@ -245,3 +310,7 @@ Script per il push dei subtree. Funzionalità:
 =======
 [Torna alla documentazione principale](/docs/maintenance.md#git-management) 
 >>>>>>> f1e7ef1046 (.)
+=======
+[Torna alla documentazione principale](/docs/maintenance.md#git-management) 
+>>>>>>> e1b46df35 (.)
+>>>>>>> f71d08e230 (.)

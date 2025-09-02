@@ -60,9 +60,13 @@ php artisan migrate
 ### 7. Installare i Moduli
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> f71d08e230 (.)
 # Installare Laravel Modules
 composer require nwidart/laravel-modules
 
@@ -139,9 +143,13 @@ La documentazione completa è disponibile nella directory `docs/`:
 ### Comandi Utili
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> f71d08e230 (.)
 # Creare un nuovo modulo
 php artisan module:make NomeModulo
 
@@ -181,6 +189,7 @@ Questo progetto è sotto licenza MIT. Vedere il file [LICENSE](LICENSE) per i de
 
  b1ca4c93 (Squashed 'bashscripts/' changes from c21599d..019cc70)
 
+<<<<<<< HEAD
 =======
 =======
 
@@ -190,6 +199,8 @@ Questo progetto è sotto licenza MIT. Vedere il file [LICENSE](LICENSE) per i de
 
  b1ca4c93 (Squashed 'bashscripts/' changes from c21599d..019cc70)
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+>>>>>>> f71d08e230 (.)
 # 🚀 BashScripts Power Tools
  80ec88ee9 (.
 
@@ -267,9 +278,13 @@ php artisan migrate
 ### 7. Install Modules
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> f71d08e230 (.)
 # Install Laravel Modules
 composer require nwidart/laravel-modules
 
@@ -346,9 +361,13 @@ Complete documentation is available in the `docs/` directory:
 ### Useful Commands
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> f71d08e230 (.)
 # Create a new module
 php artisan module:make ModuleName
 
@@ -681,9 +700,13 @@ Script per i test:
 ### 1. Esecuzione degli Script
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> f71d08e230 (.)
 # Rendere lo script eseguibile
 chmod +x script.sh
 

@@ -17,10 +17,28 @@
     "require": {},
     "require-dev": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "larastan/larastan": "*"
 =======
         "larastan/larastan": "^3.0"
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+<<<<<<< HEAD
+        "larastan/larastan": "^3.0"
+=======
+<<<<<<< HEAD
+        "larastan/larastan": "^3.0"
+=======
+        "larastan/larastan": "*"
+>>>>>>> 59901687 (.)
+<<<<<<< HEAD
+>>>>>>> 85c5198c (.)
+=======
+=======
+        "larastan/larastan": "*"
+>>>>>>> f198176d (.)
+>>>>>>> d20d0523 (.)
+>>>>>>> f71d08e230 (.)
     },
     "config": {
         "sort-packages": true,

@@ -30,9 +30,13 @@ Gestisce la rotazione dei backup con:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
+=======
+
+>>>>>>> f71d08e230 (.)
 # Backup completo
 ./backup_database.sh
 ./backup_files.sh
