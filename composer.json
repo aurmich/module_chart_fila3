@@ -68,6 +68,7 @@
 =======
 
 {
+    "minimum-stability": "dev",
     "require": {
         "spatie/laravel-data": "^3.9",
         "spatie/laravel-query-builder": "^5.5",

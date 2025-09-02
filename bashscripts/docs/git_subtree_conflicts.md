@@ -792,6 +792,7 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
 - [Documentazione degli Script Git](git_scripts.md)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
+<<<<<<< HEAD
 =======
 >>>>>>> 5338a990 (.)
 =======
@@ -935,6 +936,9 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 - [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
 =======
 >>>>>>> f000df5 (.)
+=======
+
+>>>>>>> 0c55086029 (.)
 # Risoluzione dei Conflitti negli Script Git Subtree
 
 ## Problema
@@ -1058,6 +1062,7 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 
 1. **Test approfonditi**: Testare accuratamente gli script dopo la risoluzione
 2. **Documentazione**: Aggiornare la documentazione con le modifiche apportate
+<<<<<<< HEAD
 3. **Segnalazioni agli sviluppatori**: Informare gli sviluppatori delle modifiche alla firma dei metodi
 
 ## Collegamenti
@@ -1076,3 +1081,6 @@ Il valore principale di questa risoluzione è documentativo, mantenendo la leggi
 >>>>>>> d83fe8da (.)
 - [Archivio degli Script con Conflitti Risolti](../.old_scripts/README.md) 
 >>>>>>> 1831d11e78 (.)
+=======
+3. **Segnalazioni agli sviluppatori**: Informare gli sviluppatori delle modifiche alla firma dei metodi
+>>>>>>> 0c55086029 (.)

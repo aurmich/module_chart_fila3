@@ -178,6 +178,10 @@ Il progetto include alcuni script per facilitare la gestione dei conflitti:
 - [Conflitti nei File di Configurazione](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/config_file_conflicts.md)
 - [Convenzioni Namespace](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/NAMESPACE-CONVENTIONS.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d83fe8da (.)
 >>>>>>> a38b33ce0f (.)
+=======
+
+>>>>>>> 0c55086029 (.)

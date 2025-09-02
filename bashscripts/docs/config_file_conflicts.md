@@ -805,9 +805,12 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione PostCSS](https://postcss.org/)
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
+<<<<<<< HEAD
 =======
 >>>>>>> 1831d11e78 (.)
 >>>>>>> f000df5 (.)
+=======
+>>>>>>> 0c55086029 (.)
 # Risoluzione dei Conflitti nei File di Configurazione
 
 ## Problema
@@ -907,6 +910,7 @@ I seguenti file di configurazione sono stati recentemente risolti:
 - [Documentazione PostCSS](https://postcss.org/)
 - [Documentazione Rector](https://getrector.org/documentation)
 - [Documentazione sulla Risoluzione dei Conflitti Bash](CONFLICT_RESOLUTION_BASH.md)
+<<<<<<< HEAD
 =======
 >>>>>>> 4d4d6cb7 (.)
 - [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md) 
@@ -914,9 +918,15 @@ I seguenti file di configurazione sono stati recentemente risolti:
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 =======
+=======
+- [Documentazione Generale sulla Risoluzione dei Conflitti](../../docs/bashscripts_conflict_resolution.md)
+>>>>>>> 0c55086029 (.)
 - [Risoluzione Conflitti Git](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/git_conflicts_resolution.md)
 - [Script di Risoluzione Automatica](/var/www/html/_bases/base_ptvx_fila3_mono/bashscripts/docs/fix_all_git_conflicts.md)
 - [Conflitti Merge Risolti Xot](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/conflitti_merge_risolti.md)
 - [Gestione della Configurazione](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/config.md)
+<<<<<<< HEAD
 >>>>>>> d83fe8da (.)
 >>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> 0c55086029 (.)

@@ -434,6 +434,10 @@ Per pulire un repository con molti conflitti non risolti:
 - [Convenzioni di Namespace](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/NAMESPACE-CONVENTIONS.md)
 - [Risoluzione Conflitti nei Moduli](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/conflitti_merge_risolti.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d83fe8da (.)
 >>>>>>> a38b33ce0f (.)
+=======
+
+>>>>>>> 0c55086029 (.)

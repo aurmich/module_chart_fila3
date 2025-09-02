@@ -1,11 +1,21 @@
+<<<<<<< HEAD
 # Elenco File con Marcatori di Conflitto Git 
 
 Questo file contiene l'elenco di tutti i file che contengono marcatori di conflitto Git  che devono essere controllati e risolti.
+=======
+# Elenco File con Marcatori di Conflitto Git (">>>>>>>")
+
+Questo file contiene l'elenco di tutti i file che contengono marcatori di conflitto Git (">>>>>>>") che devono essere controllati e risolti.
+>>>>>>> 0c55086029 (.)
 
 ## File con Marcatori di Conflitto
 
 ### ✅ File Documentazione (NON sono conflitti reali)
+<<<<<<< HEAD
 I seguenti file contengono  come parte di documentazione o esempi, NON come conflitti reali:
+=======
+I seguenti file contengono ">>>>>>>" come parte di documentazione o esempi, NON come conflitti reali:
+>>>>>>> 0c55086029 (.)
 
 - `bashscripts/utils/resolve_conflicts.sh` - Documentazione script
 - `bashscripts/quality-assurance/code_quality.md` - Esempi di conflitti
@@ -47,7 +57,11 @@ I seguenti file potrebbero contenere conflitti reali che necessitano di attenzio
 
 ## Note
 
+<<<<<<< HEAD
 - **Totale file con  markers: 21**
+=======
+- **Totale file con ">>>>>>>" markers: 21**
+>>>>>>> 0c55086029 (.)
 - **File con conflitti reali potenziali: 0** ✅ TUTTI VERIFICATI
 - **File di documentazione/esempi: 21** ✅ TUTTI VERIFICATI
 
@@ -62,7 +76,11 @@ I seguenti file potrebbero contenere conflitti reali che necessitano di attenzio
 
 🎉 **TUTTI I FILE SONO STATI VERIFICATI E NESSUN CONFLITTO GIT REALE È STATO TROVATO**
 
+<<<<<<< HEAD
 Tutti i 21 file che contengono la stringa  sono file di documentazione o script che utilizzano questi marcatori come esempi o documentazione. Nessun file contiene conflitti Git non risolti.
+=======
+Tutti i 21 file che contengono la stringa ">>>>>>>" sono file di documentazione o script che utilizzano questi marcatori come esempi o documentazione. Nessun file contiene conflitti Git non risolti.
+>>>>>>> 0c55086029 (.)
 
 ---
 *Ultimo aggiornamento: $(date)*

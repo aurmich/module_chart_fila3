@@ -360,9 +360,13 @@ XotBaseResource Classes Form Schema Check
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
+<<<<<<< HEAD
 =======
 >>>>>>> 1831d11e78 (.)
 >>>>>>> f000df5 (.)
+=======
+
+>>>>>>> 0c55086029 (.)
 # Script di Verifica della Qualità del Codice
 
 Questa documentazione descrive gli script utilizzati per verificare e migliorare la qualità del codice nel progetto.
@@ -420,6 +424,7 @@ XotBaseResource Classes Form Schema Check
 ### check_before_phpstan.sh
 Esegue controlli preliminari prima dell'analisi con PHPStan.
 
+<<<<<<< HEAD
 =======
 >>>>>>> 4d4d6cb7 (.)
 ### phpstan_docs_generator.sh 
@@ -427,9 +432,15 @@ Esegue controlli preliminari prima dell'analisi con PHPStan.
 >>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 =======
 =======
+=======
+>>>>>>> 0c55086029 (.)
 ## Risorse Utili
 - [PHPStan](https://phpstan.org/)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data/v4/introduction)
 - [CI/CD Best Practices](https://docs.github.com/en/actions/guides/building-and-testing-php) 
+<<<<<<< HEAD
 >>>>>>> d83fe8da (.)
 >>>>>>> 1831d11e78 (.)
+=======
+
+>>>>>>> 0c55086029 (.)

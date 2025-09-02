@@ -317,6 +317,7 @@ I pattern di esclusione definiti in questo file sono fondamentali per:
 
 Per aggiungere nuovi pattern di esclusione, si consiglia di:
 1. Identificare chiaramente la categoria a cui appartiene il pattern
+<<<<<<< HEAD
 2. Aggiungere il pattern nella sezione appropriata
 3. Documentare il cambiamento se introduce un nuovo tipo di esclusione
 
@@ -331,6 +332,8 @@ Questa documentazione descrive i file di configurazione utilizzati nel progetto.
 
 ## .gitignore
 
+=======
+>>>>>>> 0c55086029 (.)
 ### Descrizione
 Il file `.gitignore` specifica i file e le directory che Git dovrebbe ignorare durante le operazioni di commit e sincronizzazione.
 
@@ -404,6 +407,7 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 
 ## Documentazione Correlata
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
+<<<<<<< HEAD
 
 =======
 =======
@@ -575,6 +579,8 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 ## Documentazione Correlata
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
 >>>>>>> f000df5 (.)
+=======
+>>>>>>> 0c55086029 (.)
 # File di Configurazione
 
 Questa documentazione descrive i file di configurazione utilizzati nel progetto.
@@ -654,6 +660,7 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 
 ## Documentazione Correlata
 - [Gestione dei Repository Git](/docs/bashscripts/gestione_git.md)
+<<<<<<< HEAD
 =======
 >>>>>>> 4d4d6cb7 (.)
 <<<<<<< HEAD
@@ -664,3 +671,6 @@ Per aggiungere nuovi pattern di esclusione, si consiglia di:
 >>>>>>> d83fe8da (.)
 - [Conflitti di Merge](/bashscripts/docs/CONFLICT_RESOLUTION_BASH.md) 
 >>>>>>> 1831d11e78 (.)
+=======
+- [Conflitti di Merge](/bashscripts/docs/CONFLICT_RESOLUTION_BASH.md) 
+>>>>>>> 0c55086029 (.)
