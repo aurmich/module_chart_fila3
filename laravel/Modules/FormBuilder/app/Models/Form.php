@@ -20,6 +20,7 @@ use LaraZeus\Bolt\Models\Form as BaseForm;
  * @method static \Illuminate\Database\Eloquent\Builder|Form newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Form newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Form query()
+<<<<<<< HEAD
  * @property int|null $form_id
  * @property int|null $field_id
  * @property int|null $response_id
@@ -86,6 +87,8 @@ use LaraZeus\Bolt\Models\Form as BaseForm;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Form whereUserId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Form withTrashed(bool $withTrashed = true)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Form withoutTrashed()
+=======
+>>>>>>> c2cef58e88 (.)
  * @mixin \Eloquent
  */
 class Form extends BaseForm
