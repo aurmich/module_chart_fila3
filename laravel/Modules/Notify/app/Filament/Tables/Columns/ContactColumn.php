@@ -79,16 +79,8 @@ class ContactColumn extends ViewColumn
             ->toggleable(isToggledHiddenByDefault: false);
     }
     
-    /**
-     * Restituisce il path della view
-     * 
-     * @return string
-     */
-    protected static function getView(): string
-    {
-        return 'notify::filament.tables.columns.contact-column';
-    }
     
+<<<<<<< HEAD
     /**
      * Configurazione personalizzata per campi di ricerca
      * 
@@ -131,4 +123,6 @@ class ContactColumn extends ViewColumn
         return $this->toggleable(isToggledHiddenByDefault: true);
     }
 >>>>>>> dadaf1e668 (.)
+=======
+>>>>>>> 2f4e643f19 (.)
 }
