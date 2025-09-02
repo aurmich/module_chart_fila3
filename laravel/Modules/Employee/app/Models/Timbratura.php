@@ -223,6 +223,7 @@ class Timbratura extends BaseModel
     public function scopeValid($query)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $query->where('status', 'valid');
     }
 
@@ -236,6 +237,9 @@ class Timbratura extends BaseModel
         return $this->timestamp->format('d/m/Y H:i:s');
 =======
         return $query->where('stato', 'valid');
+=======
+        return $query->where('stato', 'valida');
+>>>>>>> 2710eada86 (.)
     }
 
     /**
