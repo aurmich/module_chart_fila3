@@ -6,6 +6,7 @@ namespace Modules\Employee\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+<<<<<<< HEAD
 use Modules\User\Models\User;
 
 /**
@@ -22,6 +23,25 @@ use Modules\User\Models\User;
  * @property string|null $notes
  * @property string $status
  * @property bool $is_manual
+=======
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Modules\User\Models\User;
+
+/**
+ * Class Timbratura.
+ *
+ * @property int $id
+ * @property int $user_id
+ * @property Carbon $data_timbratura
+ * @property string $tipo
+ * @property string $metodo
+ * @property string|null $latitudine
+ * @property string|null $longitudine
+ * @property string|null $indirizzo
+ * @property string|null $note
+ * @property string $stato
+ * @property bool $is_manuale
+>>>>>>> a61a2390f3 (✨ (Chart.php, Page.php, EmployeeController.php, BaseModel.php, Timbratura.php): add new properties and methods to enhance functionality and improve code structure)
  * @property int|null $created_by
  * @property int|null $updated_by
  * @property Carbon|null $created_at
@@ -30,7 +50,11 @@ use Modules\User\Models\User;
  * @property-read User|null $createdBy
  * @property-read User|null $updatedBy
  */
+<<<<<<< HEAD
 class TimeRecord extends BaseModel
+=======
+class Timbratura extends BaseModel
+>>>>>>> a61a2390f3 (✨ (Chart.php, Page.php, EmployeeController.php, BaseModel.php, Timbratura.php): add new properties and methods to enhance functionality and improve code structure)
 {
     /**
      * The attributes that are mass assignable.
@@ -39,6 +63,7 @@ class TimeRecord extends BaseModel
      */
     protected $fillable = [
         'user_id',
+<<<<<<< HEAD
         'timestamp',
         'type',
         'method',
@@ -48,6 +73,17 @@ class TimeRecord extends BaseModel
         'notes',
         'status',
         'is_manual',
+=======
+        'data_timbratura',
+        'tipo',
+        'metodo',
+        'latitudine',
+        'longitudine',
+        'indirizzo',
+        'note',
+        'stato',
+        'is_manuale',
+>>>>>>> a61a2390f3 (✨ (Chart.php, Page.php, EmployeeController.php, BaseModel.php, Timbratura.php): add new properties and methods to enhance functionality and improve code structure)
         'created_by',
         'updated_by',
     ];
@@ -60,8 +96,13 @@ class TimeRecord extends BaseModel
     protected function casts(): array
     {
         return [
+<<<<<<< HEAD
             'timestamp' => 'datetime',
             'is_manual' => 'boolean',
+=======
+            'data_timbratura' => 'datetime',
+            'is_manuale' => 'boolean',
+>>>>>>> a61a2390f3 (✨ (Chart.php, Page.php, EmployeeController.php, BaseModel.php, Timbratura.php): add new properties and methods to enhance functionality and improve code structure)
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
         ];
@@ -70,7 +111,11 @@ class TimeRecord extends BaseModel
     /**
      * Get the user that owns the timbratura.
      *
+<<<<<<< HEAD
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+=======
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Models\User, \Modules\Employee\Models\Timbratura>
+>>>>>>> a61a2390f3 (✨ (Chart.php, Page.php, EmployeeController.php, BaseModel.php, Timbratura.php): add new properties and methods to enhance functionality and improve code structure)
      */
     public function user(): BelongsTo
     {
@@ -80,7 +125,11 @@ class TimeRecord extends BaseModel
     /**
      * Get the user that created the timbratura.
      *
+<<<<<<< HEAD
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+=======
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Models\User, \Modules\Employee\Models\Timbratura>
+>>>>>>> a61a2390f3 (✨ (Chart.php, Page.php, EmployeeController.php, BaseModel.php, Timbratura.php): add new properties and methods to enhance functionality and improve code structure)
      */
     public function createdBy(): BelongsTo
     {
@@ -90,7 +139,11 @@ class TimeRecord extends BaseModel
     /**
      * Get the user that updated the timbratura.
      *
+<<<<<<< HEAD
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+=======
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Models\User, \Modules\Employee\Models\Timbratura>
+>>>>>>> a61a2390f3 (✨ (Chart.php, Page.php, EmployeeController.php, BaseModel.php, Timbratura.php): add new properties and methods to enhance functionality and improve code structure)
      */
     public function updatedBy(): BelongsTo
     {
@@ -98,7 +151,11 @@ class TimeRecord extends BaseModel
     }
 
     /**
+<<<<<<< HEAD
      * Scope a query to only include time records for a specific user.
+=======
+     * Scope a query to only include timbrature for a specific user.
+>>>>>>> a61a2390f3 (✨ (Chart.php, Page.php, EmployeeController.php, BaseModel.php, Timbratura.php): add new properties and methods to enhance functionality and improve code structure)
      *
      * @param \Illuminate\Database\Eloquent\Builder<static> $query
      * @param int $userId
@@ -110,6 +167,7 @@ class TimeRecord extends BaseModel
     }
 
     /**
+<<<<<<< HEAD
      * Scope a query to only include time records of a specific type.
      *
      * @param \Illuminate\Database\Eloquent\Builder<static> $query
@@ -123,6 +181,21 @@ class TimeRecord extends BaseModel
 
     /**
      * Scope a query to only include time records for a specific date.
+=======
+     * Scope a query to only include timbrature of a specific type.
+     *
+     * @param \Illuminate\Database\Eloquent\Builder<static> $query
+     * @param string $tipo
+     * @return \Illuminate\Database\Eloquent\Builder<static>
+     */
+    public function scopeOfType($query, string $tipo)
+    {
+        return $query->where('tipo', $tipo);
+    }
+
+    /**
+     * Scope a query to only include timbrature for a specific date.
+>>>>>>> a61a2390f3 (✨ (Chart.php, Page.php, EmployeeController.php, BaseModel.php, Timbratura.php): add new properties and methods to enhance functionality and improve code structure)
      *
      * @param \Illuminate\Database\Eloquent\Builder<static> $query
      * @param Carbon $date
@@ -130,17 +203,26 @@ class TimeRecord extends BaseModel
      */
     public function scopeForDate($query, Carbon $date)
     {
+<<<<<<< HEAD
         return $query->whereDate('timestamp', $date);
     }
 
     /**
      * Scope a query to only include valid time records.
+=======
+        return $query->whereDate('data_timbratura', $date);
+    }
+
+    /**
+     * Scope a query to only include valid timbrature.
+>>>>>>> a61a2390f3 (✨ (Chart.php, Page.php, EmployeeController.php, BaseModel.php, Timbratura.php): add new properties and methods to enhance functionality and improve code structure)
      *
      * @param \Illuminate\Database\Eloquent\Builder<static> $query
      * @return \Illuminate\Database\Eloquent\Builder<static>
      */
     public function scopeValid($query)
     {
+<<<<<<< HEAD
         return $query->where('status', 'valid');
     }
 
@@ -152,6 +234,19 @@ class TimeRecord extends BaseModel
     public function getFormattedTimestampAttribute(): string
     {
         return $this->timestamp->format('d/m/Y H:i:s');
+=======
+        return $query->where('stato', 'valid');
+    }
+
+    /**
+     * Get the formatted data timbratura.
+     *
+     * @return string
+     */
+    public function getFormattedDataTimbraturaAttribute(): string
+    {
+        return $this->data_timbratura->format('d/m/Y H:i:s');
+>>>>>>> a61a2390f3 (✨ (Chart.php, Page.php, EmployeeController.php, BaseModel.php, Timbratura.php): add new properties and methods to enhance functionality and improve code structure)
     }
 
     /**
@@ -161,7 +256,11 @@ class TimeRecord extends BaseModel
      */
     public function getFormattedTimeAttribute(): string
     {
+<<<<<<< HEAD
         return $this->timestamp->format('H:i:s');
+=======
+        return $this->data_timbratura->format('H:i:s');
+>>>>>>> a61a2390f3 (✨ (Chart.php, Page.php, EmployeeController.php, BaseModel.php, Timbratura.php): add new properties and methods to enhance functionality and improve code structure)
     }
 
     /**
@@ -171,46 +270,82 @@ class TimeRecord extends BaseModel
      */
     public function getFormattedDateAttribute(): string
     {
+<<<<<<< HEAD
         return $this->timestamp->format('d/m/Y');
     }
 
     /**
      * Check if the time record is an entry.
+=======
+        return $this->data_timbratura->format('d/m/Y');
+    }
+
+    /**
+     * Check if the timbratura is an entry.
+>>>>>>> a61a2390f3 (✨ (Chart.php, Page.php, EmployeeController.php, BaseModel.php, Timbratura.php): add new properties and methods to enhance functionality and improve code structure)
      *
      * @return bool
      */
     public function isEntry(): bool
     {
+<<<<<<< HEAD
         return $this->type === 'entry';
     }
 
     /**
      * Check if the time record is an exit.
+=======
+        return $this->tipo === 'entrata';
+    }
+
+    /**
+     * Check if the timbratura is an exit.
+>>>>>>> a61a2390f3 (✨ (Chart.php, Page.php, EmployeeController.php, BaseModel.php, Timbratura.php): add new properties and methods to enhance functionality and improve code structure)
      *
      * @return bool
      */
     public function isExit(): bool
     {
+<<<<<<< HEAD
         return $this->type === 'exit';
     }
 
     /**
      * Check if the time record is manual.
+=======
+        return $this->tipo === 'uscita';
+    }
+
+    /**
+     * Check if the timbratura is manual.
+>>>>>>> a61a2390f3 (✨ (Chart.php, Page.php, EmployeeController.php, BaseModel.php, Timbratura.php): add new properties and methods to enhance functionality and improve code structure)
      *
      * @return bool
      */
     public function isManual(): bool
     {
+<<<<<<< HEAD
         return $this->is_manual;
     }
 
     /**
      * Check if the time record has location data.
+=======
+        return $this->is_manuale;
+    }
+
+    /**
+     * Check if the timbratura has location data.
+>>>>>>> a61a2390f3 (✨ (Chart.php, Page.php, EmployeeController.php, BaseModel.php, Timbratura.php): add new properties and methods to enhance functionality and improve code structure)
      *
      * @return bool
      */
     public function hasLocation(): bool
     {
+<<<<<<< HEAD
         return !empty($this->latitude) && !empty($this->longitude);
+=======
+        return !empty($this->latitudine) && !empty($this->longitudine);
+>>>>>>> a61a2390f3 (✨ (Chart.php, Page.php, EmployeeController.php, BaseModel.php, Timbratura.php): add new properties and methods to enhance functionality and improve code structure)
     }
 } 

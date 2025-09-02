@@ -99,6 +99,42 @@ class Chart extends BaseModel
     protected $casts = [
         'colors' => 'array',
     ];
+<<<<<<< HEAD
+=======
+
+    // /**
+    //  * @return int|string|null
+    //  */
+    // public function getParentStyle(string $name)
+    // {
+    //     $panel = PanelService::make()->getRequestPanel();
+
+    //     if (null === $panel) {
+    //         return $this->attributes[$name] ?? null;
+    //     }
+    //     $parent = $panel->getParent();
+
+    //     if (null === $parent) {
+    //         return $this->attributes[$name] ?? null;
+    //     }
+    //     $parent = $parent->getRow();
+    //     if (! method_exists($parent, 'chart')) {
+    //         return $this->attributes[$name] ?? null;
+    //     }
+    //     // dddx([$name, $panel->row, $parent->{$name}]);
+    //     // $value = $parent->chart->{$name};
+
+    //     $value = $parent->chart->attributes[$name] ?? null;
+
+    //     $this->{$name} = $value;
+    //     $this->save();
+    //     if (! \is_string($value) && ! \is_int($value)) {
+    //         return null;
+    //     }
+
+    //     return $value;
+    // }
+>>>>>>> a61a2390f3 (✨ (Chart.php, Page.php, EmployeeController.php, BaseModel.php, Timbratura.php): add new properties and methods to enhance functionality and improve code structure)
 
     public function getPanelRow(string $parent_field, string $my_field): int|string|null
     {
