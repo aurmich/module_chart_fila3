@@ -28,6 +28,7 @@ trait GeographicalScopes
     public function getDistanceExpression(float $latitude, float $longitude, ?string $alias = null): Expression
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> c92b0c10e7 (.)
@@ -60,5 +61,8 @@ trait GeographicalScopes
         return app(GetDistanceExpressionAction::class)->execute($latitude, $longitude, $alias);
 >>>>>>> 0119f2f (.)
 >>>>>>> c92b0c10e7 (.)
+=======
+        return app(GetDistanceExpressionAction::class)->execute($latitude, $longitude, $alias);
+>>>>>>> 59b81e3624 (.)
     }
 }
