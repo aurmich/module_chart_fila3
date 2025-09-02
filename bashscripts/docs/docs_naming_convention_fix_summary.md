@@ -22,7 +22,10 @@ Ho analizzato tutte le cartelle docs del progetto per verificare la conformità 
 
 ### 1. File Rinominato
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> a38b33ce0f (.)
 # Prima (ERRATO)
 ./Modules/Xot/docs/filament/infinite-loop-getStepByName-fix.md
 
@@ -41,20 +44,31 @@ Ho analizzato tutte le cartelle docs del progetto per verificare la conformità 
 ## ✅ Verifica Finale
 
 ```bash
+<<<<<<< HEAD
 
 # Verifica file con maiuscole
 find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
 
+=======
+# Verifica file con maiuscole
+find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
+>>>>>>> a38b33ce0f (.)
 # Risultato: Nessun file trovato ✅
 
 # Verifica cartelle con maiuscole
 find ./docs ./Modules/*/docs -name "*[A-Z]*" -type d
+<<<<<<< HEAD
 
+=======
+>>>>>>> a38b33ce0f (.)
 # Risultato: Nessuna cartella trovata ✅
 
 # Verifica completa (solo README.md permessi)
 find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f
+<<<<<<< HEAD
 
+=======
+>>>>>>> a38b33ce0f (.)
 # Risultato: Solo file README.md trovati ✅
 ```
 
@@ -96,7 +110,10 @@ find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f
 
 #### Verifica Manuale
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> a38b33ce0f (.)
 # Trova file con maiuscole nelle cartelle docs
 find docs/ -name "*[A-Z]*" -type f | grep -v README.md
 
@@ -109,7 +126,10 @@ find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
 
 #### Correzione Automatica
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> a38b33ce0f (.)
 # Esegui script di correzione automatica
 ./bashscripts/fix_docs_naming_convention.sh
 ```
@@ -147,3 +167,7 @@ find ./docs ./Modules/*/docs -name "*[A-Z]*" -type f | grep -v README.md
 **Ultimo aggiornamento**: 2025-01-06
 **File corretti**: 1
 **Documentazione creata**: 2
+<<<<<<< HEAD
+=======
+**README aggiornato**: 1 
+>>>>>>> a38b33ce0f (.)

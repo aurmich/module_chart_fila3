@@ -154,7 +154,10 @@ return [
 ### 3. Comandi di Setup
 
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> a38b33ce0f (.)
 # Pubblicazione delle configurazioni
 php artisan vendor:publish --tag=zeus-bolt-config
 
@@ -285,3 +288,7 @@ La soluzione implementata risolve completamente l'errore originale e fornisce un
 
 *Ultimo aggiornamento: Dicembre 2024*
 *Versione: 1.0*
+<<<<<<< HEAD
+=======
+*Autore: AI Assistant* 
+>>>>>>> a38b33ce0f (.)

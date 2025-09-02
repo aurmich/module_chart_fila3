@@ -28,6 +28,7 @@ Risolvere tutti i conflitti Git presenti nel progetto mediante analisi manuale a
 ```bash
 # Trova tutti i file con conflitti Git
 <<<<<<< HEAD
+<<<<<<< HEAD
 git status --porcelain | grep "^UU\|^AA\|^DD"
 
 # Lista dettagliata dei conflitti
@@ -35,6 +36,9 @@ git diff --name-only --diff-filter=U
 =======
 find . -type f -exec grep -l "<<<<<<< HEAD\|======\|>>>>>>> " {} \;
 >>>>>>> 1831d11e78 (.)
+=======
+
+>>>>>>> a38b33ce0f (.)
 ```
 
 **Criteri di priorità:**
@@ -131,25 +135,34 @@ Per ogni file conflittuale:
 ```php
 // PRIMA (conflitto)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> a38b33ce0f (.)
 public function getUserData(): array
 {
     return $this->user->toArray();
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> a38b33ce0f (.)
 public function getUserData(): ?UserData
 {
     return $this->user ? UserData::from($this->user) : null;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> feature/user-data
 >>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> a38b33ce0f (.)
 
 // DOPO (risolto)
 /**
@@ -210,6 +223,7 @@ Al termine del processo, fornire:
 ```bash
 # Trova file con conflitti Git
 <<<<<<< HEAD
+<<<<<<< HEAD
 git status --porcelain | grep "^UU\|^AA\|^DD"
 
 # Lista file con conflitti per tipo
@@ -221,6 +235,11 @@ grep -r "<<<<<<< HEAD" . --include="*.php" --include="*.md" --include="*.json"
 find . -name "*.php" -exec grep -l "<<<<<<< HEAD\|======\|>>>>>>> " {} \;
 find . -name "*.md" -exec grep -l "<<<<<<< HEAD\|======\|>>>>>>> " {} \;
 >>>>>>> 1831d11e78 (.)
+=======
+
+
+# Lista file con conflitti per tipo
+>>>>>>> a38b33ce0f (.)
 ```
 
 ### Verifica PHPStan
@@ -265,8 +284,8 @@ composer dump-autoload
 ### Conflitto in Service Provider:
 ```php
 // PRIMA (conflitto)
-<<<<<<< HEAD
 public string $name = 'predict';
+<<<<<<< HEAD
 public string $name = 'Predict';
 =======
 <<<<<<< HEAD
@@ -275,6 +294,9 @@ public string $name = 'predict';
 public string $name = 'Predict';
 >>>>>>> feature/module-name
 >>>>>>> 1831d11e78 (.)
+=======
+public string $name = 'Predict';
+>>>>>>> a38b33ce0f (.)
 
 // DOPO (risolto seguendo convenzioni)
 public string $name = 'Predict'; // PascalCase per nome modulo
@@ -283,9 +305,9 @@ public string $name = 'Predict'; // PascalCase per nome modulo
 ### Conflitto in Resource Filament:
 ```php
 // PRIMA (conflitto)
-<<<<<<< HEAD
 use Filament\Resources\Resource;
 class PredictResource extends Resource
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\XotBaseResource;
 class PredictResource extends XotBaseResource
 =======
@@ -297,6 +319,10 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class PredictResource extends XotBaseResource
 >>>>>>> feature/xot-base
 >>>>>>> 1831d11e78 (.)
+=======
+use Modules\Xot\Filament\Resources\XotBaseResource;
+class PredictResource extends XotBaseResource
+>>>>>>> a38b33ce0f (.)
 
 // DOPO (risolto seguendo regole progetto)
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -307,21 +333,26 @@ class PredictResource extends XotBaseResource // Sempre estendere XotBase
 ### Conflitto in traduzione:
 ```php
 // PRIMA (conflitto in lang file)
-<<<<<<< HEAD
 'title' => 'Titolo',
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 'title' => 'Titolo',
 =======
 >>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> a38b33ce0f (.)
 'title' => [
     'label' => 'Titolo',
     'placeholder' => 'Inserisci titolo'
 ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> feature/structured-translations
 >>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> a38b33ce0f (.)
 
 // DOPO (risolto con struttura completa)
 'title' => [
@@ -378,4 +409,7 @@ Trova tutti i file contenenti git collision partendo dalla root del progetto. An
 
 Dentro le cartelle docs , i files e le sottocartelle non devono contenere caratteri maiuscoli ad eccezzione di README.md
 Procedi a risolvere tutti i conflitti git nei file PHP rilevati, uno dopo l’altro, senza chiedere nulla e senza fermarmi !
+<<<<<<< HEAD
 >>>>>>> 1831d11e78 (.)
+=======
+>>>>>>> a38b33ce0f (.)
