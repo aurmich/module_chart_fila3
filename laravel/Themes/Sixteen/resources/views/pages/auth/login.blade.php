@@ -10,6 +10,7 @@ name('login');
 ?>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <x-layouts.guest>
     <x-slot name="title">
         {{ __('auth.login.title') }} - {{ config('app.name') }}
@@ -51,6 +52,8 @@ name('login');
         <div class="container mx-auto px-4">
             <ol class="flex items-center space-x-2 text-sm">
 =======
+=======
+>>>>>>> fc88fa5ea1 (.)
 <x-layouts.guest-agid>
     <x-slot name="title">
         Accesso - {{ config('app.name') }}
@@ -63,4 +66,7 @@ name('login');
         livewire-component="\Modules\User\Http\Livewire\Auth\Login"
     />
 </x-layouts.guest-agid>
+<<<<<<< HEAD
 >>>>>>> 65c680889c (.)
+=======
+>>>>>>> fc88fa5ea1 (.)
