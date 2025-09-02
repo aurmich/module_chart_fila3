@@ -45,6 +45,7 @@ class ContactColumn extends ViewColumn
      * View Blade per il rendering della colonna
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected string $view = 'notify::filament.tables.columns.contact';
     
     protected function setUp(): void
@@ -64,6 +65,9 @@ class ContactColumn extends ViewColumn
     }
 =======
     protected string $view = 'notify::filament.tables.columns.contact-column';
+=======
+    protected string $view = 'notify::filament.tables.columns.contact';
+>>>>>>> 146aafd6bc (.)
     
     protected function setUp(): void
     {
