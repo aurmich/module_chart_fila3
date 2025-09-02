@@ -54,7 +54,10 @@ Questa directory contiene tutti i workflow automatizzati per il progetto Laraxot
 
 ### Sviluppatore (Daily)
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7fac0bd9c2 (.)
 # Mattina - controllo generale
 .windsurf/workflows/project-health-check.md
 
@@ -65,7 +68,10 @@ Questa directory contiene tutti i workflow automatizzati per il progetto Laraxot
 
 ### Team Lead (Weekly)
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7fac0bd9c2 (.)
 # Lunedì - audit completo
 .windsurf/workflows/naming-convention-audit.md
 .windsurf/workflows/documentation-sync.md
@@ -74,7 +80,10 @@ Questa directory contiene tutti i workflow automatizzati per il progetto Laraxot
 
 ### DevOps (CI/CD)
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7fac0bd9c2 (.)
 # Pipeline automatica
 .windsurf/workflows/provider-validation.md
 .windsurf/workflows/code-quality-check.md
@@ -112,7 +121,10 @@ jobs:
 
 ### 2. Pre-commit Hook
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7fac0bd9c2 (.)
 # Installa hook
 cp .windsurf/workflows/scripts/pre-commit.sh .git/hooks/pre-commit
 chmod +x .git/hooks/pre-commit
@@ -120,7 +132,10 @@ chmod +x .git/hooks/pre-commit
 
 ### 3. Cron Jobs
 ```bash
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7fac0bd9c2 (.)
 # Daily health check alle 6:00
 0 6 * * * cd /path/to/project && .windsurf/workflows/project-health-check.md
 

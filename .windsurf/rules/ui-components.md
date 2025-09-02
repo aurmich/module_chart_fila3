@@ -17,7 +17,10 @@ globs:
 
 ### Esempi di Componenti
 ```blade
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7fac0bd9c2 (.)
 # ✅ Corretto
 <x-filament::button size="sm" href="{{ route('example') }}" tag="a">
     Testo

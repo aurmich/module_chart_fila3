@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # REGOLA CRITICA: NAMING CONVENTION PER CARTELLE DOCS
 
 ## ⚠️ REGOLA FONDAMENTALE ⚠️
@@ -67,6 +68,8 @@ find docs -name "README.md" -type f -exec bash -c 'mv "$1" "$(dirname "$1")/read
 - [Correzione Naming 2025-01-27](docs/readme-naming-correction-2025-01-27.md)
 
 *Ultimo aggiornamento: 2025-01-27*
+=======
+>>>>>>> 7fac0bd9c2 (.)
 # Convenzioni di Naming per Files e Cartelle nella Directory docs
 
 ## Regola Fondamentale: Minuscole Ovunque, README.md in Maiuscolo

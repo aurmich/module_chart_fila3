@@ -256,7 +256,10 @@ Prima di aggiungere o modificare:
 ### Esempio di Documentazione
 
 ```markdown
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7fac0bd9c2 (.)
 # Aggiornamento Tabella prodotti
 
 ## Modifiche apportate
