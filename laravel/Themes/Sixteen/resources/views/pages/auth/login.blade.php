@@ -13,6 +13,7 @@ name('login');
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <x-layouts.guest>
 =======
 <x-layouts.guest-institutional>
@@ -63,6 +64,9 @@ name('login');
 =======
 <x-layouts.guest>
 >>>>>>> 2283c980af (✨ (sixteen-theme): add AGID naming rules documentation for the Sixteen theme to ensure compliance and consistency)
+=======
+<x-layouts.guest>
+>>>>>>> f08998318b (.)
     <x-slot name="title">
         {{ __('auth.login.title') }}
     </x-slot>
