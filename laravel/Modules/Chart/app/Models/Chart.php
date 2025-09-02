@@ -95,6 +95,7 @@ class Chart extends BaseModel
         'plot_value_color' => '#000000',
     ];
 
+<<<<<<< HEAD
     /** @var array<string, string> */
     protected $casts = [
         'colors' => 'array',
@@ -135,6 +136,19 @@ class Chart extends BaseModel
     //     return $value;
     // }
 >>>>>>> a61a2390f3 (✨ (Chart.php, Page.php, EmployeeController.php, BaseModel.php, Timbratura.php): add new properties and methods to enhance functionality and improve code structure)
+=======
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return [
+            'colors' => 'array',
+        ];
+    }
+>>>>>>> 05324a60fb (.)
 
     public function getPanelRow(string $parent_field, string $my_field): int|string|null
     {
