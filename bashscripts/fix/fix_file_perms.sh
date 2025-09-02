@@ -9,7 +9,4 @@ chmod 600 ~/.ssh/config
 # If you have a public key, set its permissions too
 chmod 644 ~/.ssh/id_rsa.pub
 # Also ensure your .ssh directory has correct permissions
-sudo chmod -R u+w .git
-=======
 chmod 700 ~/.ssh
->>>>>>> a38b33ce0f (.)

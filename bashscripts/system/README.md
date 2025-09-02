@@ -48,9 +48,7 @@ system/
 
 ### Comandi Comuni
 ```bash
-=======
 
->>>>>>> f71d08e230 (.)
 # Monitoraggio sistema
 ./monitoring/check_resources.sh
 

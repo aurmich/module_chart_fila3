@@ -1,85 +1,24 @@
-=======
->>>>>>> d20d0523 (.)
-=======
-=======
-=======
->>>>>>> f198176d (.)
->>>>>>> d20d0523 (.)
->>>>>>> f71d08e230 (.)
 # Guida per la Risoluzione dei Conflitti Git - Laraxot
 
 ## Obiettivo
 Risolvere tutti i conflitti Git presenti nel progetto mediante analisi manuale approfondita, aggiornamento della documentazione e implementazione di soluzioni coerenti con l'architettura Laraxot.
-=======
-=======
-=======
->>>>>>> 9c02579 (.)
->>>>>>> 574afe9e (.)
->>>>>>> f71d08e230 (.)
-# Guida per la Risoluzione dei Conflitti Git
-
-## Obiettivo
-Risolvere tutti i conflitti Git presenti nel progetto mediante analisi manuale approfondita, aggiornamento della documentazione e implementazione di soluzioni coerenti con l'architettura del progetto.
-=======
->>>>>>> 9c02579 (.)
-=======
->>>>>>> 9c02579 (.)
->>>>>>> 1420e3b683 (.)
->>>>>>> 574afe9e (.)
-=======
-=======
->>>>>>> f198176d (.)
->>>>>>> d20d0523 (.)
->>>>>>> f71d08e230 (.)
 
 ## Principi Fondamentali
 - **Analisi manuale obbligatoria**: Ogni conflitto deve essere analizzato e risolto manualmente
 - **NO automazione cieca**: Vietato l'uso di risoluzioni automatiche o script di automazione
 - **Qualità PHPStan**: Tutti i file PHP devono essere compatibili con PHPStan livello 10
 - **Documentazione completa**: Aggiornare sempre la documentazione correlata
-=======
-=======
->>>>>>> d20d0523 (.)
-=======
->>>>>>> 574afe9e (.)
-=======
-=======
->>>>>>> f198176d (.)
->>>>>>> d20d0523 (.)
->>>>>>> f71d08e230 (.)
+- **Convenzioni naming**: Tutti i file e cartelle in docs/ devono essere in minuscolo (eccetto README.md)
 
 ## Workflow Sistematico
 
 ### 1. Identificazione e Prioritizzazione
 ```bash
 # Trova tutti i file con conflitti Git
-=======
-=======
->>>>>>> d20d0523 (.)
->>>>>>> f71d08e230 (.)
 git status --porcelain | grep "^UU\|^AA\|^DD"
 
 # Lista dettagliata dei conflitti
 git diff --name-only --diff-filter=U
-find . -type f -exec grep -l "<<<<<<< HEAD\|======\|>>>>>>> " {} \;
-=======
-
->>>>>>> a38b33ce0f (.)
-=======
-=======
-=======
-
->>>>>>> 3c18aa7e (.)
-=======
->>>>>>> 574afe9e (.)
-=======
-=======
->>>>>>> f198176d (.)
->>>>>>> d20d0523 (.)
-=======
-
->>>>>>> e1b46df35 (.)
->>>>>>> f71d08e230 (.)
 ```
 
 **Criteri di priorità:**
@@ -105,19 +44,7 @@ Per ogni file conflittuale:
 
 **c) Valutazione dell'impatto:**
 - Impatto sulla funzionalità esistente
-- Compatibilità con l'architettura del progetto
-=======
-=======
->>>>>>> d20d0523 (.)
-- Compatibilità con l'architettura del progetto
-=======
-- Compatibilità con l'architettura del progetto
->>>>>>> 574afe9e (.)
-=======
-=======
->>>>>>> f198176d (.)
->>>>>>> d20d0523 (.)
->>>>>>> f71d08e230 (.)
+- Compatibilità con l'architettura Laraxot
 - Effetti sui moduli dipendenti
 
 ### 3. Risoluzione del Conflitto
@@ -127,31 +54,13 @@ Per ogni file conflittuale:
 - Seguire PSR-12 per lo stile del codice
 - Verificare type hints e return types
 - Controllare documentazione PHPDoc
-=======
-=======
->>>>>>> d20d0523 (.)
-=======
->>>>>>> 574afe9e (.)
-=======
-=======
->>>>>>> f198176d (.)
->>>>>>> d20d0523 (.)
->>>>>>> f71d08e230 (.)
+- Utilizzare `declare(strict_types=1);`
 
 **Per file Markdown (.md):**
 - Mantenere entrambe le versioni quando possibile
 - Unire i contenuti in modo logico
 - Preservare i backlink esistenti
-=======
-=======
->>>>>>> d20d0523 (.)
-=======
->>>>>>> 574afe9e (.)
-=======
-=======
->>>>>>> f198176d (.)
->>>>>>> d20d0523 (.)
->>>>>>> f71d08e230 (.)
+- Rispettare convenzioni naming (minuscolo)
 
 **Per file di configurazione:**
 - Privilegiare le configurazioni più recenti
@@ -195,22 +104,14 @@ Per ogni file conflittuale:
 ### Conflitto in file PHP:
 ```php
 // PRIMA (conflitto)
-=======
->>>>>>> a38b33ce0f (.)
 public function getUserData(): array
 {
     return $this->user->toArray();
 }
-=======
-=======
->>>>>>> a38b33ce0f (.)
 public function getUserData(): ?UserData
 {
     return $this->user ? UserData::from($this->user) : null;
 }
->>>>>>> 1831d11e78 (.)
-=======
->>>>>>> a38b33ce0f (.)
 
 // DOPO (risolto)
 /**
@@ -270,43 +171,10 @@ Al termine del processo, fornire:
 ### Identificazione conflitti
 ```bash
 # Trova file con conflitti Git
-=======
-=======
->>>>>>> d20d0523 (.)
->>>>>>> f71d08e230 (.)
 git status --porcelain | grep "^UU\|^AA\|^DD"
 
 # Lista file con conflitti per tipo
 git diff --name-only --diff-filter=U
-grep -r "<<<<<<< HEAD" . --include="*.php" --include="*.md" --include="*.json"
-
-# Lista file con conflitti per tipo
-find . -name "*.php" -exec grep -l "<<<<<<< HEAD\|======\|>>>>>>> " {} \;
-find . -name "*.md" -exec grep -l "<<<<<<< HEAD\|======\|>>>>>>> " {} \;
-=======
-=======
->>>>>>> f71d08e230 (.)
-=======
-
-
-# Lista file con conflitti per tipo
-=======
->>>>>>> 3c18aa7e (.)
-=======
-
-
-# Lista file con conflitti per tipo
->>>>>>> 574afe9e (.)
-=======
-=======
->>>>>>> f198176d (.)
->>>>>>> d20d0523 (.)
-=======
-
-
-# Lista file con conflitti per tipo
->>>>>>> e1b46df35 (.)
->>>>>>> f71d08e230 (.)
 ```
 
 ### Verifica PHPStan
@@ -353,10 +221,6 @@ composer dump-autoload
 // PRIMA (conflitto)
 public string $name = 'predict';
 public string $name = 'Predict';
->>>>>>> 1831d11e78 (.)
-=======
-public string $name = 'Predict';
->>>>>>> a38b33ce0f (.)
 
 // DOPO (risolto seguendo convenzioni)
 public string $name = 'Predict'; // PascalCase per nome modulo
@@ -369,11 +233,6 @@ use Filament\Resources\Resource;
 class PredictResource extends Resource
 use Modules\Xot\Filament\Resources\XotBaseResource;
 class PredictResource extends XotBaseResource
->>>>>>> 1831d11e78 (.)
-=======
-use Modules\Xot\Filament\Resources\XotBaseResource;
-class PredictResource extends XotBaseResource
->>>>>>> a38b33ce0f (.)
 
 // DOPO (risolto seguendo regole progetto)
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -385,15 +244,10 @@ class PredictResource extends XotBaseResource // Sempre estendere XotBase
 ```php
 // PRIMA (conflitto in lang file)
 'title' => 'Titolo',
-=======
->>>>>>> a38b33ce0f (.)
 'title' => [
     'label' => 'Titolo',
     'placeholder' => 'Inserisci titolo'
 ],
->>>>>>> 1831d11e78 (.)
-=======
->>>>>>> a38b33ce0f (.)
 
 // DOPO (risolto con struttura completa)
 'title' => [
@@ -409,10 +263,6 @@ class PredictResource extends XotBaseResource // Sempre estendere XotBase
 - **Model Inheritance**: Non ridichiarare trait già presenti nei parent
 - **Translation System**: Usare chiavi strutturate, evitare label() espliciti
 - **PHPStan**: Mirare sempre al livello 10 per tutto il codice PHP
-=======
-=======
->>>>>>> d20d0523 (.)
->>>>>>> f71d08e230 (.)
 - **Documentation Naming**: Tutti i file e cartelle in docs/ in minuscolo (eccetto README.md)
 
 ## Regole Critiche per Progetti Laraxot
@@ -439,41 +289,3 @@ class PredictResource extends XotBaseResource // Sempre estendere XotBase
 - **Sostenibilità**: Prevenire debito tecnico e mantenere longevità del codice
 - **Trasparenza**: Documentare ogni decisione tecnica importante
 - **Responsabilità**: Rispettare i confini e le responsabilità dei moduli
-trova tutti i file con dentro <<< HEAD, studiali, ragionaci su, trova cartella docs piu' vicina al file da correggere trova la cartella docs 
-nella root del progetto, queste 2 cartelle deve studiarle ed aggiornarle e migliorarle di continuo, poi procedi con implementazione correzione, 
-devi anche creare dei test in pest per sincerarti che la tua correzione funzioni e che il sito continui a funzionare, se non funziona 
-devi studiare la cartella docs, poi implementare soluzione, procedi senza domandarmi nulla, in maniera sistematica , automatica e senza interruzioni 
-=======
-Trova tutti i file contenenti git collision partendo dalla root del progetto. Analizza ciascun file con conflitti dando priorità in base all'impatto funzionale. Studia attentamente le differenze tra le versioni in conflitto per comprenderne lo scopo e il contesto. Ogni conflitto deve essere analizzato e risolto manualmente con ragionamento: non è ammesso l'uso di risoluzioni automatiche né la generazione di script per l'automazione. Per ogni file identifica la cartella "docs" più vicina, leggila e aggiornala con informazioni relative agli obiettivi funzionali e alle decisioni architetturali, evitando dettagli implementativi. Aggiorna anche la cartella "docs" principale nella root del progetto creando collegamenti bidirezionali tra la documentazione locale e quella globale, includendo anche le altre documentazioni eventualmente interessate. Nella cartella "laravel/Modules" ogni sottocartella è un modulo indipendente con proprio "composer.json", namespace, autoload, cartella "app" per le classi e documentazione dedicata. Mantieni aggiornate le relazioni tra la documentazione del modulo e quella principale tramite backlink bidirezionali. Dopo aver aggiornato tutta la documentazione, implementa manualmente una correzione coerente con lo stile e l'architettura del progetto. Durante la scansione della documentazione assicurati che ogni file ".md" abbia almeno due collegamenti in ingresso provenienti da altri file ".md". Se mancano, crea i backlink più significativi in base al contenuto e al contesto. Procedi in modo sistematico e continuo ma senza alcuna automazione cieca. Al termine fornisci un riepilogo con i file corretti, la documentazione aggiornata, i backlink creati, gli impatti rilevati e le motivazioni delle scelte adottate. Si devi sistemare e migliorare tutti i files che hanno collisioni, quando tocchi un file devi sempre farlo pensandolo per phpstan a livello 10.
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
-=======
-=======
-=======
-=======
-=======
->>>>>>> 574afe9e (.)
->>>>>>> f71d08e230 (.)
-
-
-Dentro le cartelle docs , i files e le sottocartelle non devono contenere caratteri maiuscoli ad eccezzione di README.md
-Procedi a risolvere tutti i conflitti git nei file PHP rilevati, uno dopo l’altro, senza chiedere nulla e senza fermarmi !
-=======
->>>>>>> a38b33ce0f (.)
-=======
-
-
-cerca i files con dentro "<<< HEAD" crea un elenco di questi file dentro una cartella docs, non la cartella docs della root del progetto che quella ha un altro scopo , poi prendi file per file e lo sistemi, per sistemarlo devi analizzare e ragionare a fondo sul codice , leggere e studiare le cartelle docs e poi implementare correzione 
->>>>>>> d1b6bdc799 (.)
-=======
->>>>>>> 48584a1c98 (.)
-=======
->>>>>>> 3c18aa7e (.)
-=======
->>>>>>> 574afe9e (.)
-=======
-=======
->>>>>>> f198176d (.)
->>>>>>> d20d0523 (.)
-=======
->>>>>>> e1b46df35 (.)
->>>>>>> f71d08e230 (.)

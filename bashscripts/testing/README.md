@@ -29,9 +29,7 @@ Verifica la qualità con:
 ## Utilizzo
 
 ```bash
-=======
 
->>>>>>> f71d08e230 (.)
 # Esegui tutti i test
 ./run_tests.sh
 

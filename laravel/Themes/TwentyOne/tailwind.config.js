@@ -2,7 +2,10 @@ import preset from './vendor/filament/support/tailwind.config.preset'
 /** @type {import('tailwindcss').Config} */
 export default {
 	presets: [preset],
+<<<<<<< HEAD
+=======
 	darkMode: "class",
+>>>>>>> a172dad (.)
 	content: [
 		'./app/Filament/**/*.php',
         './resources/views/filament/**/*.blade.php',
@@ -28,8 +31,12 @@ export default {
 	},
     plugins: [
 		require('flowbite/plugin'),
+<<<<<<< HEAD
+		require('@tailwindcss/typography'),
+=======
 		require("@tailwindcss/forms"),
         require("@tailwindcss/typography"),
         require("flowbite/plugin"),
+>>>>>>> a172dad (.)
     ],
 };

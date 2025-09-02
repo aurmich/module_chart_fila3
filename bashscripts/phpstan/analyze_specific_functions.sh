@@ -1,10 +1,7 @@
 #!/bin/bash
 
 # Script per analizzare funzioni specifiche nei moduli
-# - getListTableColumns
-=======
 # - getTableColumns
->>>>>>> 1831d11e78 (.)
 # - getTableActions
 # - getTableBulkActions
 # - funzioni di MetatagData
@@ -27,8 +24,6 @@ Data: $(date +"%Y-%m-%d %H:%M:%S")
 
 Questo documento contiene un'analisi dettagliata di funzioni specifiche presenti nei moduli.
 
-## 1. Funzioni getListTableColumns, getTableActions e getTableBulkActions
-=======
 ## 1. Funzioni getTableColumns, getTableActions e getTableBulkActions
 
 Queste funzioni devono restituire array con chiavi stringa. Di seguito sono riportati i risultati dell'analisi.
@@ -36,18 +31,13 @@ Queste funzioni devono restituire array con chiavi stringa. Di seguito sono ripo
 ### getTableColumns
 
 \`\`\`
-=======
 $(grep -r "function getTableColumns" laravel/Modules --include="*.php" | sort)
->>>>>>> 1831d11e78 (.)
 \`\`\`
 
 #### Implementazioni che potrebbero non restituire array con chiavi stringa:
 
 \`\`\`
-$(grep -rA 10 "function getListTableColumns" laravel/Modules --include="*.php" | grep -v "string" | grep "=>")
-=======
 $(grep -rA 10 "function getTableColumns" laravel/Modules --include="*.php" | grep -v "string" | grep "=>")
->>>>>>> 1831d11e78 (.)
 \`\`\`
 
 ### getTableActions
@@ -99,10 +89,7 @@ $(grep -r "get[A-Z][a-zA-Z]*(" laravel/Modules --include="*.php" | grep "metatag
 
 ## Raccomandazioni
 
-### Per le funzioni getListTableColumns, getTableActions, getTableBulkActions:
-=======
 ### Per le funzioni getTableColumns, getTableActions, getTableBulkActions:
->>>>>>> 1831d11e78 (.)
 
 1. Assicurarsi che tutte le implementazioni restituiscano array con chiavi stringa
 2. Aggiungere annotazioni PHPDoc per specificare i tipi di ritorno

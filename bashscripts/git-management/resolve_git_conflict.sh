@@ -50,30 +50,7 @@ fix_php_code() {
 You are an expert PHP developer tasked with fixing and optimizing the following code. Your objective is to:
 
 1. Fix any syntax errors, unresolved merge conflicts, or logical issues
-=======
 2. Remove git conflict markers if present
->>>>>>> 04d882f8f6 (.)
-=======
-2. Remove git conflict markers (<<<<<<<, =======, >>>>>>>) if present
->>>>>>> f1e7ef1046 (.)
-=======
-=======
->>>>>>> d20d0523 (.)
-2. Remove git conflict markers (<<<<<<<, =======, >>>>>>>) if present
-=======
-2. Remove git conflict markers if present
-=======
-2. Remove git conflict markers (<<<<<<<, =======, >>>>>>>) if present
->>>>>>> 9c02579 (.)
->>>>>>> 574afe9e (.)
-=======
-=======
->>>>>>> f198176d (.)
->>>>>>> d20d0523 (.)
-=======
-2. Remove git conflict markers (<<<<<<<, =======, >>>>>>>) if present
->>>>>>> e1b46df35 (.)
->>>>>>> f71d08e230 (.)
 3. Optimize the code structure and readability without changing functionality
 4. Ensure consistency in formatting and naming conventions
 5. Apply PHP best practices and modern syntax where appropriate

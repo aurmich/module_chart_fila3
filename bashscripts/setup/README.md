@@ -30,9 +30,7 @@ Configura i moduli con:
 ## Utilizzo
 
 ```bash
-=======
 
->>>>>>> f71d08e230 (.)
 # Setup completo
 ./setup_environment.sh
 ./setup_database.sh

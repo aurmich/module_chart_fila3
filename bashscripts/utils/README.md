@@ -29,9 +29,7 @@ Assiste nello sviluppo con:
 ## Utilizzo
 
 ```bash
-=======
 
->>>>>>> f71d08e230 (.)
 # Verifica sistema
 ./check_system.sh
 

@@ -16,6 +16,15 @@
         }
     },
     "require": {
+<<<<<<< HEAD
+        "php": "^8.2",
+        "laravel/framework": "*",
+        "filament/filament": "*"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "*",
+        "pestphp/pest": "*"
+=======
         "php": "^8.1",
         "laravel/framework": "^10.0",
         "filament/filament": "^3.0"
@@ -23,6 +32,7 @@
     "require-dev": {
         "phpstan/phpstan": "^1.10",
         "pestphp/pest": "^2.0"
+>>>>>>> e71eabc (.)
     },
     "minimum-stability": "dev"
 }

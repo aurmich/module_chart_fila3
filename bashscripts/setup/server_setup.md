@@ -20,9 +20,7 @@ Questo documento contiene la documentazione dettagliata dei comandi utilizzati p
 
 ### Verifica Requisiti
 ```bash
-=======
 
->>>>>>> f71d08e230 (.)
 # Verifica versione PHP
 php -v
 
@@ -84,9 +82,7 @@ sudo add-apt-repository ppa:ondrej/php
 
 ### Configurazione File .env
 ```bash
-=======
 
->>>>>>> f71d08e230 (.)
 # Naviga nella directory del progetto
 cd laravel
 
@@ -119,9 +115,7 @@ php artisan key:generate
 
   APP_NAME=il progetto
  80ec88ee9 (.)
-=======
 
->>>>>>> 1831d11e78 (.)
   APP_ENV=local
   APP_DEBUG=true
   APP_URL=http://localhost
@@ -380,9 +374,7 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 
 ### Configurazione Tema Powerlevel10k
 ```bash
-=======
 
->>>>>>> f71d08e230 (.)
 # Modifica il file ~/.zshrc
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
@@ -519,9 +511,7 @@ sudo apt-get install --install-recommends webmin usermin
 
 ### Aggiornamento Composer e Dipendenze
 ```bash
-=======
 
->>>>>>> f71d08e230 (.)
 # Naviga nella directory del progetto
 cd laravel
 
@@ -821,9 +811,7 @@ sudo pecl install redis
 
 ### Creazione Database SQLite
 ```bash
-=======
 
->>>>>>> f71d08e230 (.)
 # Crea il file database.sqlite nella directory database
 touch laravel/database/database.sqlite
 ```
@@ -860,9 +848,7 @@ touch laravel/database/database.sqlite
 
 ### Configurazione Client Redis
 ```ini
-=======
 
->>>>>>> f71d08e230 (.)
 # Configurazione nel file .env
 REDIS_CLIENT=predis
 ```
@@ -904,9 +890,7 @@ REDIS_CLIENT=predis
 
 ### Pubblicazione Vendor e Migrazioni
 ```bash
-=======
 
->>>>>>> f71d08e230 (.)
 # Pubblica tutti i file dei vendor
 php artisan vendor:publish --all
 
@@ -983,9 +967,7 @@ sudo systemctl start redis-server
 
 ### Configurazione Redis
 ```ini
-=======
 
->>>>>>> f71d08e230 (.)
 # /etc/redis/redis.conf
 maxmemory 256mb
 maxmemory-policy allkeys-lru
@@ -1011,9 +993,7 @@ maxmemory-policy allkeys-lru
 
 ### Configurazione Performance
 ```apache
-=======
 
->>>>>>> f71d08e230 (.)
 # /etc/apache2/mods-available/mpm_prefork.conf
 <IfModule mpm_prefork_module>
     StartServers 5
@@ -1026,9 +1006,7 @@ maxmemory-policy allkeys-lru
 
 ### Gestione Moduli Apache
 ```bash
-=======
 
->>>>>>> f71d08e230 (.)
 # Disabilita il modulo PHP 8.2
 sudo a2dismod php8.2
 
@@ -1266,6 +1244,4 @@ php artisan user:assign-module
 
   ```
  80ec88ee9 (.)
-=======
 
->>>>>>> 1831d11e78 (.)

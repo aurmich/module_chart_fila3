@@ -11,6 +11,13 @@
         'rating_id' => $rating->id,
     ];
 
+<<<<<<< HEAD
+    // Gestione dell'immagine con fallback
+    $image = $rating->getFirstMedia();
+    if ($image == null) {
+        $url = 'https://picsum.photos/200/300';
+        $image = $rating->addMediaFromUrl($url)->withResponsiveImages()->toMediaCollection();
+=======
     // Gestione dell'immagine con fallback sicuro
     $image = $rating->getFirstMedia();
     $imageUrl = null;
@@ -25,6 +32,7 @@
             'url' => $imageUrl,
             'alt' => $rating->title ?? 'Rating Image'
         ];
+>>>>>>> a172dad (.)
     }
 @endphp
 
@@ -33,11 +41,15 @@
         {{-- Container quadrato per l'immagine --}}
         <div class="aspect-square bg-gray-100 dark:bg-gray-700 relative">
             {{-- Immagine principale --}}
+<<<<<<< HEAD
+            {{ $image('150x150')->attributes(['class' => 'w-full h-full object-cover transition-transform duration-300 group-hover/rating:scale-110']) }}
+=======
             @if(isset($image->url))
                 <img src="{{ $image->url }}" class="w-full h-full object-cover transition-transform duration-300 group-hover/rating:scale-110" alt="{{ $rating->title }}">
             @else
                 {{ $image('150x150')->attributes(['class' => 'w-full h-full object-cover transition-transform duration-300 group-hover/rating:scale-110']) }}
             @endif
+>>>>>>> a172dad (.)
 
             {{-- Overlay gradiente per migliore leggibilità --}}
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent transition-opacity duration-300 group-hover/rating:opacity-90"></div>

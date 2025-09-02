@@ -6,8 +6,6 @@ GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m'
-LOG_FILE="subtree_sync.log"
-=======
 
 # LOG_FILE="subtree_sync.log"  # Rimosso: non si scrive più su file
 BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "main")
@@ -59,7 +57,6 @@ handle_error() {
     exit 1
 }
 
-=======
 # Funzione semplice per terminare con errore
 die() {
     echo "$1" >&2
@@ -78,7 +75,6 @@ check_repository_integrity() {
         log "warning" "Ci sono modifiche non committate nel repository"
     fi
 }
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 
 # Funzione per riscrivere la URL secondo le regole specificate
 rewrite_url() {
@@ -290,6 +286,4 @@ is_readable() {
 # Funzione per verificare se un file è scrivibile
 is_writable() {
     [ -w "$1" ]
-=======
->>>>>>> 3a6821ae8 (aggiornamento cartella bashscripts)
 }
