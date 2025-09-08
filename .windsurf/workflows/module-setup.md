@@ -1,21 +1,4 @@
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> bf68c71 (.)
-name: "Module Setup"
-description: "Setup automatico completo di un nuovo modulo Laraxot con tutte le strutture e configurazioni necessarie"
-version: "1.0"
-author: "Laraxot AI Assistant"
-tags: ["laraxot", "module", "setup", "automation"]
-<<<<<<< HEAD
-=======
-description: "Setup automatico completo di un nuovo modulo Laraxot con tutte le strutture e configurazioni necessarie"
-auto_execution_mode: 1
->>>>>>> 359b1c2 (.)
-=======
-auto_execution_mode: 1
->>>>>>> bf68c71 (.)
 ---
 
 # Module Setup Workflow
@@ -46,64 +29,8 @@ Controlla che:
 Crea la struttura completa:
 
 ```bash
-<<<<<<< HEAD
 
-=======
->>>>>>> bf68c71 (.)
-# Directory principale modulo
-mkdir -p Modules/{ModuleName}
-
-# Struttura app/
-mkdir -p Modules/{ModuleName}/app/{Actions,Console/Commands,Data,Filament/{Resources,Pages,Widgets},Http/{Controllers,Middleware,Requests},Jobs,Models,Providers,Services}
-
-# Struttura config/
-mkdir -p Modules/{ModuleName}/config
-
-# Struttura database/
-mkdir -p Modules/{ModuleName}/database/{factories,migrations,seeders}
-
-# Struttura docs/
-mkdir -p Modules/{ModuleName}/docs
-
-# Struttura lang/
-mkdir -p Modules/{ModuleName}/lang/{en,it}
-
-# Struttura resources/
-mkdir -p Modules/{ModuleName}/resources/{assets,views/{components,filament,livewire}}
-
-# Struttura routes/
-mkdir -p Modules/{ModuleName}/routes
-
-# Struttura tests/
-mkdir -p Modules/{ModuleName}/tests/{Feature,Unit}
-```
-
-## Fase 3: File di Configurazione
-
-### 3.1 Composer.json
-Crea `Modules/{ModuleName}/composer.json`:
-
-```json
-{
-    "name": "laraxot/{module-name-lowercase}",
-    "description": "{Descrizione del modulo}",
-    "type": "laravel-module",
-    "license": "MIT",
-    "require": {
-        "php": "^8.1",
-<<<<<<< HEAD
-        "laravel/framework": "*"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> defa2742 (.)
         "laravel/framework": "^10.0"
-=======
-        "laravel/framework": "*"
->>>>>>> 359b1c2 (.)
-=======
-        "laravel/framework": "^10.0"
->>>>>>> bf68c71 (.)
     },
     "autoload": {
         "psr-4": {
@@ -128,7 +55,6 @@ Crea `Modules/{ModuleName}/module.json`:
     "name": "{ModuleName}",
     "alias": "{module-name-lowercase}",
     "description": "{Descrizione del modulo}",
-<<<<<<< HEAD
     "keywords": [],
     "priority": 0,
     "providers": [
@@ -143,27 +69,6 @@ Crea `Modules/{ModuleName}/module.json`:
 ## Fase 4: Provider e Configurazioni
 
 ### 4.1 ServiceProvider Principale
-<<<<<<< HEAD
-=======
-=======
->>>>>>> defa2742 (.)
-    "keywords": ["laraxot", "module", "{keywords}"],
-    "version": "1.0.0",
-    "active": 1,
-    "order": 0,
-    "providers": [
-        "Modules\\{ModuleName}\\Providers\\{ModuleName}ServiceProvider"
-    ],
-    "aliases": {},
-    "files": []
-}
-```
-
-### 3.3 Service Provider
-<<<<<<< HEAD
-=======
->>>>>>> bf68c71 (.)
->>>>>>> defa2742 (.)
 Crea `Modules/{ModuleName}/app/Providers/{ModuleName}ServiceProvider.php`:
 
 ```php
@@ -175,7 +80,6 @@ namespace Modules\{ModuleName}\Providers;
 
 use Modules\Xot\Providers\XotBaseServiceProvider;
 
-<<<<<<< HEAD
 /**
  * Service provider for the {ModuleName} module.
  */
@@ -183,151 +87,19 @@ class {ModuleName}ServiceProvider extends XotBaseServiceProvider
 {
     /**
      * The module namespace.
-     *
-     * @var string
      */
     protected string $module_name = '{ModuleName}';
 
     /**
-     * Boot the application events.
-     *
-     * @return void
+     * Bootstrap any application services.
      */
     public function boot(): void
     {
         parent::boot();
-        
-        // Module-specific boot logic here
-    }
-
-    /**
-     * Register the service provider.
-     *
-     * @return void
-     */
-    public function register(): void
-    {
-        parent::register();
-        
-        // Module-specific service registration here
-<<<<<<< HEAD
-=======
-=======
->>>>>>> defa2742 (.)
-class {ModuleName}ServiceProvider extends XotBaseServiceProvider
-{
-    public string $name = '{ModuleName}';
-    public string $nameLower = '{module-name-lowercase}';
-
-    public function boot(): void
-    {
-        parent::boot();
-        // Logica custom del modulo qui
-<<<<<<< HEAD
-=======
->>>>>>> bf68c71 (.)
->>>>>>> defa2742 (.)
     }
 }
 ```
 
-<<<<<<< HEAD
-### 4.2 RouteServiceProvider
-Crea `Modules/{ModuleName}/app/Providers/RouteServiceProvider.php`:
-
-```php
-<?php
-
-declare(strict_types=1);
-
-namespace Modules\{ModuleName}\Providers;
-
-use Modules\Xot\Providers\XotBaseRouteServiceProvider;
-
-/**
- * Route service provider for the {ModuleName} module.
- */
-class RouteServiceProvider extends XotBaseRouteServiceProvider
-{
-    /**
-     * The module name.
-     *
-     * @var string
-     */
-    public string $name = '{ModuleName}';
-
-    /**
-     * The controller namespace for the module.
-     *
-     * @var string
-     */
-    protected string $namespace = 'Modules\\{ModuleName}\\Http\\Controllers';
-}
-```
-
-### 4.3 Filament AdminPanelProvider
-Crea `Modules/{ModuleName}/app/Providers/Filament/AdminPanelProvider.php`:
-
-```php
-<?php
-
-declare(strict_types=1);
-
-namespace Modules\{ModuleName}\Providers\Filament;
-
-use Filament\Panel;
-use Modules\Xot\Providers\Filament\XotBasePanelProvider;
-
-/**
- * Admin panel provider for the {ModuleName} module.
- */
-class AdminPanelProvider extends XotBasePanelProvider
-{
-    /**
-     * The module name.
-     *
-     * @var string
-     */
-    protected string $module = '{ModuleName}';
-
-    /**
-     * Configure the panel.
-     *
-     * @param \Filament\Panel $panel
-     * @return \Filament\Panel
-     */
-    public function panel(Panel $panel): Panel
-    {
-        $panel = parent::panel($panel);
-        
-        return $panel
-            ->id('{module-name-lowercase}')
-            ->path('/{module-name-lowercase}')
-            ->login()
-            ->colors([
-                'primary' => \Filament\Support\Colors\Color::Amber,
-            ])
-            ->discoverResources(in: app_path('../Modules/{ModuleName}/app/Filament/Resources'), for: 'Modules\\{ModuleName}\\Filament\\Resources')
-            ->discoverPages(in: app_path('../Modules/{ModuleName}/app/Filament/Pages'), for: 'Modules\\{ModuleName}\\Filament\\Pages')
-            ->discoverWidgets(in: app_path('../Modules/{ModuleName}/app/Filament/Widgets'), for: 'Modules\\{ModuleName}\\Filament\\Widgets');
-    }
-}
-```
-
-## Fase 5: Modelli Base
-
-### 5.1 BaseModel
-<<<<<<< HEAD
-## Fase 4: File Base
-
-### 4.1 BaseModel
-=======
-=======
-## Fase 4: File Base
-
-### 4.1 BaseModel
->>>>>>> bf68c71 (.)
->>>>>>> defa2742 (.)
 Crea `Modules/{ModuleName}/app/Models/BaseModel.php`:
 
 ```php
@@ -339,7 +111,6 @@ namespace Modules\{ModuleName}\Models;
 
 use Modules\Xot\Models\XotBaseModel;
 
-<<<<<<< HEAD
 /**
  * Base model for the {ModuleName} module.
  */
@@ -803,222 +574,46 @@ Crea `Modules/{ModuleName}/tests/Unit/Models/{ModuleName}Test.php`
 
 ### 12.1 Migrazione Base
 Crea migrazione per la tabella principale del modulo seguendo le regole Laraxot:
-<<<<<<< HEAD
-=======
-=======
->>>>>>> defa2742 (.)
-abstract class BaseModel extends XotBaseModel
-{
-    // Personalizzazioni specifiche del modulo
-}
-```
-
-### 4.2 README.md
-Crea `Modules/{ModuleName}/README.md`:
-
-```markdown
-# {ModuleName} Module
-
-{Descrizione del modulo}
-
-## Features
-
-- Feature 1
-- Feature 2
-- Feature 3
-
-## Installation
-
-```bash
-composer require laraxot/{module-name-lowercase}
-```
-
-## Usage
-
-{Esempi di utilizzo}
-
-## Documentation
-
-Vedi la cartella `docs/` per documentazione dettagliata.
-```
-
-## Fase 5: Documentazione
-
-### 5.1 Docs Structure
-Crea la struttura documentazione:
-
-```bash
-# Documentazione principale
-touch Modules/{ModuleName}/docs/README.md
-
-# Documentazione specifica
-mkdir -p Modules/{ModuleName}/docs/{features,api,deployment}
-touch Modules/{ModuleName}/docs/{features,api,deployment}/README.md
-```
-
-### 5.2 Docs README
-Crea `Modules/{ModuleName}/docs/README.md`:
-
-```markdown
-# {ModuleName} Module Documentation
-
-## Overview
-
-{Descrizione dettagliata del modulo}
-
-## Table of Contents
-
-- [Installation](installation.md)
-- [Configuration](configuration.md)
-- [Usage](usage.md)
-- [API Reference](api/README.md)
-- [Deployment](deployment/README.md)
-
-## Quick Start
-
-{Guida rapida all'utilizzo}
-
-## Support
-
-{Informazioni di supporto}
-```
-
-## Fase 6: Testing
-
-### 6.1 Test Structure
-Crea la struttura test:
-
-```bash
-# Test base
-touch Modules/{ModuleName}/tests/TestCase.php
-
-# Test specifici
-touch Modules/{ModuleName}/tests/Feature/{ModuleName}Test.php
-touch Modules/{ModuleName}/tests/Unit/{ModuleName}Test.php
-```
-
-### 6.2 TestCase Base
-Crea `Modules/{ModuleName}/tests/TestCase.php`:
-<<<<<<< HEAD
-=======
->>>>>>> bf68c71 (.)
->>>>>>> defa2742 (.)
 
 ```php
 <?php
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
->>>>>>> defa2742 (.)
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration
 {
-    /**
-     * Run the migrations.
-     */
+    protected string $table_name = '{module_name_snake_case}';
+
     public function up(): void
     {
-        if ($this->hasTable('{module_name_snake_case}')) {
+        if ($this->hasTable($this->table_name)) {
             return;
         }
 
-        Schema::create('{module_name_snake_case}', function (Blueprint $table) {
+        Schema::create($this->table_name, function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->text('description')->nullable();
             $table->timestamps();
         });
 
-        $this->tableComment('{module_name_snake_case}', 'Tabella principale del modulo {ModuleName}');
+        $this->tableComment($this->table_name, 'Tabella principale del modulo {ModuleName}');
     }
 };
 ```
 
-## Fase 13: Registrazione e Validazione
+### 12.2 TestCase Base
+Crea `Modules/{ModuleName}/tests/TestCase.php`:
 
-### 13.1 Aggiornamento Autoload
-```bash
-cd laravel
-composer dump-autoload
-```
+```php
+<?php
 
-### 13.2 Controllo Providers
-Verifica che i provider siano registrati correttamente:
+declare(strict_types=1);
 
-```bash
-php artisan config:cache
-php artisan route:cache
-```
-
-### 13.3 Test Funzionalità Base
-```bash
-
-# Test delle route
-php artisan route:list | grep {module-name-lowercase}
-
-# Test del panel Filament
-
-# Accedi a /{module-name-lowercase} via browser
-```
-
-## Fase 14: Finalizzazione
-
-### 14.1 Controllo Qualità
-Esegui i controlli di qualità del progetto:
-
-```bash
-
-# PHPStan
-./vendor/bin/phpstan analyze Modules/{ModuleName} --level=9
-
-# Code quality
-./vendor/bin/php-cs-fixer fix Modules/{ModuleName} --dry-run
-
-# Tests
-php artisan test Modules/{ModuleName}/tests/
-```
-
-### 14.2 Documentazione Finale
-1. Aggiorna la documentazione root se necessario
-2. Aggiungi il modulo alla lista dei moduli disponibili
-3. Documenta eventuali dipendenze
-
-## Risultato Finale
-
-Al termine di questo workflow, avrai:
-
-✅ **Struttura Completa**: Directory e file organizzati secondo gli standard Laraxot
-✅ **Provider Conformi**: ServiceProvider che estendono XotBase
-✅ **Filament Dashboard**: Panel funzionante e configurato
-✅ **API Endpoints**: Route web e API configurate
-✅ **Traduzioni**: File di traduzione strutturati (IT/EN)
-✅ **Modelli Tipizzati**: BaseModel e modelli specifici con PHPDoc
-✅ **Test Setup**: Struttura per test unitari e feature
-✅ **Documentazione**: README e docs complete
-✅ **Migrazione**: Tabella database con convenzioni Laraxot
-✅ **Quality Assurance**: Codice conforme a PHPStan livello 9
-
-Il nuovo modulo sarà immediatamente funzionante e conforme a tutti gli standard del progetto Laraxot.
-
-<<<<<<< HEAD
----
-
-<<<<<<< HEAD
----
-
-=======
-=======
----
->>>>>>> 359b1c2 (.)
-=======
->>>>>>> defa2742 (.)
 namespace Modules\{ModuleName}\Tests;
 
 use Tests\TestCase as BaseTestCase;
@@ -1033,16 +628,16 @@ abstract class TestCase extends BaseTestCase
 }
 ```
 
-## Fase 7: Validazione
+## Fase 13: Validazione
 
-### 7.1 Controlli Post-Creazione
+### 13.1 Controlli Post-Creazione
 Verifica che:
 - Tutti i file siano creati correttamente
 - I namespace siano corretti
 - Le dipendenze siano configurate
 - La struttura sia conforme agli standard Laraxot
 
-### 7.2 Test di Base
+### 13.2 Test di Base
 Esegui:
 ```bash
 cd laravel
@@ -1050,15 +645,15 @@ composer dump-autoload
 php artisan test --filter={ModuleName}
 ```
 
-## Fase 8: Documentazione Finale
+## Fase 14: Documentazione Finale
 
-### 8.1 Aggiorna Docs Root
+### 14.1 Aggiorna Docs Root
 Aggiorna `docs/README.md` con:
 - Riferimento al nuovo modulo
 - Collegamento alla documentazione
 - Aggiornamento della tabella moduli
 
-### 8.2 Aggiorna Windsurf Rules
+### 14.2 Aggiorna Windsurf Rules
 Aggiorna `.windsurf/rules/` con:
 - Regole specifiche del modulo
 - Best practices identificate
@@ -1095,13 +690,6 @@ Aggiorna `.windsurf/rules/` con:
 
 ---
 
-**Ultimo aggiornamento**: Dicembre 2024
-**Versione**: 2.0
-**Compatibilità**: Laraxot Framework, PHP 8.1+, Laravel 10+
->>>>>>> bf68c71 (.)
-<<<<<<< HEAD
-=======
-**Workflow completato!** Il modulo {ModuleName} è ora pronto per lo sviluppo.
->>>>>>> 7fac0bd9c2 (.)
-=======
->>>>>>> defa2742 (.)
+**Ultimo aggiornamento**: Gennaio 2025
+**Versione**: 2.1
+**Compatibilità**: Laraxot Framework, PHP 8.3+, Laravel 11+
