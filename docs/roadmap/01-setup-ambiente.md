@@ -384,7 +384,15 @@ cat > composer.json << 'EOL'
     "license": "MIT",
     "require": {
         "php": "^8.2",
+<<<<<<< HEAD
         "laravel/framework": "*",
+=======
+<<<<<<< HEAD
+        "laravel/framework": "^11.0",
+=======
+        "laravel/framework": "*",
+>>>>>>> 359b1c2 (.)
+>>>>>>> defa2742 (.)
         "nwidart/laravel-modules": "^10.0"
     },
     "autoload": {

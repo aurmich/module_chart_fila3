@@ -181,7 +181,15 @@ Route::middleware(['web', 'auth'])->group(function () {
 {
     "require": {
         "laravel/Modules": "^8.0",
+<<<<<<< HEAD
         "laravel/framework": "*"
+=======
+<<<<<<< HEAD
+        "laravel/framework": "^10.0"
+=======
+        "laravel/framework": "*"
+>>>>>>> 359b1c2 (.)
+>>>>>>> defa2742 (.)
     }
 }
 ```
