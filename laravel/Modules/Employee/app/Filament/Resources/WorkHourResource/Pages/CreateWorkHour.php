@@ -34,9 +34,14 @@ class CreateWorkHour extends XotBaseCreateRecord
         $data = $this->form->getState();
 
         // Validate if this entry is allowed based on the last entry
-        $timestamp = Carbon::parse($data['timestamp']);
-        $lastEntry = WorkHour::getLastEntryForEmployee($data['employee_id'], $timestamp);
-        $expectedAction = WorkHour::getNextAction($data['employee_id'], $timestamp);
+        /** @var string $timestampString */
+        $timestampString = $data['timestamp'] ?? '';
+        $timestamp = Carbon::parse($timestampString);
+        
+        /** @var int $employeeId */
+        $employeeId = (int) ($data['employee_id'] ?? 0);
+        $lastEntry = WorkHour::getLastEntryForEmployee($employeeId, $timestamp);
+        $expectedAction = WorkHour::getNextAction($employeeId, $timestamp);
 
         if ($data['type'] !== $expectedAction) {
             $lastEntryType = $lastEntry ? match ($lastEntry->type) {
@@ -65,7 +70,7 @@ class CreateWorkHour extends XotBaseCreateRecord
         }
 
         // Check for duplicate entries within the same minute
-        $existingEntry = WorkHour::where('employee_id', $data['employee_id'])
+        $existingEntry = WorkHour::where('employee_id', $employeeId)
             ->where('timestamp', $timestamp)
             ->where('type', $data['type'])
             ->first();

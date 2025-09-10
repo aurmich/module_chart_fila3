@@ -16,27 +16,20 @@
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/html/_bases/"]
     },
-    "puppeteer": {
+    "postgres": {
       "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-puppeteer"
-      ],
-      "env": {}
+      "args": ["-y", "@modelcontextprotocol/server-postgres"]
     },
-    "mcp-package-docs": {
+    "redis": {
       "command": "npx",
-      "args": [
-        "-y",
-        "mcp-package-docs"
-      ]
+      "args": ["-y", "@modelcontextprotocol/server-redis"]
     },
-    "playwright-mcp": {
+    "mysql": {
+      "command": "/var/www/html/_bases/base_techplanner_fila3_mono/bashscripts/mcp/mcp-manager-v2.sh"
+    },
+    "everything": {
       "command": "npx",
-      "args": [
-        "-y",
-        "playwright-mcp"
-      ]
+      "args": ["-y", "@modelcontextprotocol/server-everything"]
     }
   }
 }

@@ -30,20 +30,27 @@ class EditWorkHour extends XotBaseEditRecord
     protected function beforeSave(): void
     {
         $data = $this->form->getState();
+        
+        /** @var \Modules\Employee\Models\WorkHour $currentRecord */
         $currentRecord = $this->record;
+
+        /** @var int $employeeId */
+        $employeeId = (int) ($data['employee_id'] ?? 0);
+        /** @var string $timestampString */
+        $timestampString = $data['timestamp'] ?? '';
+        $timestamp = Carbon::parse($timestampString);
 
         // Skip validation if no changes to critical fields
         if (
-            $currentRecord->employee_id === $data['employee_id'] &&
+            $currentRecord->employee_id === $employeeId &&
             $currentRecord->type === $data['type'] &&
-            $currentRecord->timestamp->eq(Carbon::parse($data['timestamp']))
+            $currentRecord->timestamp->eq($timestamp)
         ) {
             return;
         }
 
         // Check for duplicate entries within the same minute (excluding current record)
-        $timestamp = Carbon::parse($data['timestamp']);
-        $existingEntry = WorkHour::where('employee_id', $data['employee_id'])
+        $existingEntry = WorkHour::where('employee_id', $employeeId)
             ->where('timestamp', $timestamp)
             ->where('type', $data['type'])
             ->where('id', '!=', $currentRecord->id)

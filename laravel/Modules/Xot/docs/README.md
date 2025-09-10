@@ -37,17 +37,9 @@ Per accedere alla documentazione dettagliata originale, vedere il backup in:
 - **Type Safety**: Tipizzazione rigorosa
 - **Documentation**: Documentazione essenziale
 
-<<<<<<< HEAD
 ## Links
-- [Root Documentation](../../../docs/)
-- [SaluteOra Module](../SaluteOra/docs/)
+- [ Module](../<nome modulo>/docs/)
 - [Original Documentation Backup](../../../docs-consolidation-backup-*/Xot-docs-original/)
-=======
-// Sanitizzazione
-protected function sanitizeInput(array $data): array
-{
-    return array_map('trim', $data);
-}
 ```
 
 ### Autorizzazione
@@ -302,5 +294,4 @@ Per supporto tecnico o domande:
 
 ---
 
-*Ultimo aggiornamento: {{ date('Y-m-d') }}*
->>>>>>> 34e775e (.)
+*Ultimo aggiornamento: 2025-09-10*

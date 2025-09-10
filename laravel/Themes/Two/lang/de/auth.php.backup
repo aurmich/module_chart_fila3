@@ -32,7 +32,7 @@ return [
     ],
     'register' => [
         'title' => 'Crea il tuo account',
-        'welcome_message' => 'Benvenuto in <span class=\\\"font-bold\\\">SaluteOra</span>',
+        'welcome_message' => 'Benvenuto in <span class=\\\"font-bold\\\"></span>',
         'description' => 'Crea il tuo account per accedere a tutti i servizi',
 
 =======
@@ -48,9 +48,9 @@ return [
         'already_registered' => 'Sei già registrato?',
         'doctor' => [
             'title' => 'Registrazione Odontoiatra',
-            'subtitle' => 'Crea il tuo account professionale per accedere alla piattaforma SaluteOra',
+            'subtitle' => 'Crea il tuo account professionale per accedere alla piattaforma ',
             'description' => 'Registrati come dottore per gestire i tuoi pazienti e appuntamenti',
-            'welcome_message' => 'Benvenuto in <span class=\\\"font-bold\\\">SaluteOra</span>',
+            'welcome_message' => 'Benvenuto in <span class=\\\"font-bold\\\"></span>',
             'info' => [
                 'title' => 'Informazioni Professionali',
                 'message' => 'Completa le informazioni professionali per verificare la tua identità e specializzazione',
@@ -71,7 +71,7 @@ return [
             'title' => 'Registrazione Paziente',
             'subtitle' => 'Crea il tuo account per prenotare appuntamenti e gestire la tua salute',
             'description' => 'Registrati come paziente per accedere ai servizi sanitari',
-            'welcome_message' => 'Benvenuto in <span class=\\\"font-bold\\\">SaluteOra</span>',
+            'welcome_message' => 'Benvenuto in <span class=\\\"font-bold\\\"></span>',
             'phone_label' => 'Numero di telefono',
             'phone_placeholder' => 'Inserisci il tuo numero di telefono',
             'date_of_birth_label' => 'Data di nascita',
@@ -86,7 +86,7 @@ return [
             'title' => 'Registrazione Amministratore',
             'subtitle' => 'Crea il tuo account amministrativo per gestire la piattaforma',
             'description' => 'Registrati come amministratore per gestire utenti e configurazioni',
-            'welcome_message' => 'Benvenuto in <span class=\\\"font-bold\\\">SaluteOra</span>',
+            'welcome_message' => 'Benvenuto in <span class=\\\"font-bold\\\"></span>',
             'role_label' => 'Ruolo amministrativo',
             'role_placeholder' => 'Seleziona il tuo ruolo',
             'phone_label' => 'Numero di telefono',

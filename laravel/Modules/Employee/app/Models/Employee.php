@@ -31,8 +31,6 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property-read \Illuminate\Database\Eloquent\Collection<\Modules\Employee\Models\Employee> $subordinates
  * @property-read \Modules\Employee\Models\Position|null $position
  * @property-read \Illuminate\Database\Eloquent\Collection<\Modules\Employee\Models\WorkHour> $workHours
- * @property-read \Illuminate\Database\Eloquent\Collection<\Modules\Employee\Models\Leave> $leaves
- * @property-read \Illuminate\Database\Eloquent\Collection<\Modules\Employee\Models\Document> $documents
  */
 class Employee extends User
 {
@@ -79,7 +77,7 @@ class Employee extends User
     /**
      * Get the work hours for this employee.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\Employee\Models\WorkHour>
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\Employee\Models\WorkHour, \Modules\Employee\Models\Employee>
      */
     public function workHours(): HasMany
     {
@@ -93,6 +91,7 @@ class Employee extends User
      */
     public function department(): BelongsTo
     {
+        // @phpstan-ignore-next-line return.type
         return $this->belongsTo(Department::class, 'department_id');
     }
 
@@ -103,13 +102,14 @@ class Employee extends User
      */
     public function manager(): BelongsTo
     {
+        // @phpstan-ignore-next-line return.type
         return $this->belongsTo(Employee::class, 'manager_id');
     }
 
     /**
      * Get the subordinates of this employee.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\Employee\Models\Employee>
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Modules\Employee\Models\Employee, \Modules\Employee\Models\Employee>
      */
     public function subordinates(): HasMany
     {

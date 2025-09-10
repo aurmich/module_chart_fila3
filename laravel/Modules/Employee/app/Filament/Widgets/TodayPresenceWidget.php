@@ -5,6 +5,9 @@ declare(strict_types=1);
 namespace Modules\Employee\Filament\Widgets;
 
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Modules\Employee\Models\Employee;
+use Modules\Employee\Models\WorkHour;
+use Illuminate\Support\Facades\DB;
 
 /**
  * TodayPresenceWidget - Real-time Presence Tracking Widget
@@ -56,6 +59,7 @@ class TodayPresenceWidget extends XotBaseWidget
             }])
             ->get()
             ->map(function ($employee) {
+                /** @var \Modules\Employee\Models\WorkHour|null $lastEntry */
                 $lastEntry = $employee->workHours->first();
                 $workType = $this->determineWorkType($lastEntry);
 
@@ -64,8 +68,8 @@ class TodayPresenceWidget extends XotBaseWidget
                     'name' => $employee->full_name ?? 'N/A',
                     'initials' => $this->generateInitials($employee->full_name ?? ''),
                     'department' => $employee->work_data['department'] ?? 'N/A',
-                    'check_in_time' => $lastEntry ? $lastEntry->timestamp->format('H:i') : 'N/A',
-                    'location' => $lastEntry->location_name ?? $workType['default_location'],
+                    'check_in_time' => $lastEntry && property_exists($lastEntry, 'timestamp') ? $lastEntry->timestamp->format('H:i') : 'N/A',
+                    'location' => $lastEntry && property_exists($lastEntry, 'location_name') ? $lastEntry->location_name : $workType['default_location'],
                     'status' => 'present',
                     'work_type' => $workType['type'],
                 ];
@@ -122,7 +126,7 @@ class TodayPresenceWidget extends XotBaseWidget
      *
      * @return array<string, string>
      */
-    protected function determineWorkType(?\Modules\Employee\Models\WorkHour $lastEntry): array
+    protected function determineWorkType(?\Illuminate\Database\Eloquent\Model $lastEntry): array
     {
         if (! $lastEntry) {
             return ['type' => 'office', 'default_location' => 'Ufficio'];

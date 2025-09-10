@@ -146,11 +146,11 @@ class StudioOnlySelector extends Component {
 
 ## Esempi Cross-Module
 
-### Healthcare (SaluteOra)
+### Healthcare ()
 ```php
 RadioCardSelector::make('studio_id')
     ->cards(fn (Get $get) => $this->getStudioCards($get))
-    ->sectionTitle(__('saluteora::studio_selector.title'))
+    ->sectionTitle(__('::studio_selector.title'))
 ```
 
 ### E-commerce
@@ -181,7 +181,7 @@ RadioCardSelector::make('property_id')
 ## Collegamenti
 
 - [RadioCardSelector Implementation](../../Modules/UI/docs/components/radio-card-selector-component.md)
-- [FindDoctorAndAppointment Widget](../../Modules/SaluteOra/docs/widgets/radio-card-implementation-completed.md)
+- [FindDoctorAndAppointment Widget](../../Modules//docs/widgets/radio-card-implementation-completed.md)
 - [UI Components Overview](../../Modules/UI/docs/readme.md)
 
 ## Ultimo aggiornamento

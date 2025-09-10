@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\TechPlanner\Models;
 
+use function Safe\preg_match;
+use function Safe\preg_replace;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Modules\Geo\Models\Traits\GeographicalScopes;
 
@@ -21,6 +23,10 @@ use Modules\Geo\Models\Traits\GeographicalScopes;
  * @property string|null $country
  * @property string|null $phone
  * @property string|null $email
+ * @property string|null $mobile
+ * @property string|null $pec
+ * @property string|null $whatsapp
+ * @property string|null $fax
  */
 class Client extends BaseModel
 {
@@ -245,7 +251,7 @@ class Client extends BaseModel
         $clean = preg_replace('/[^+\d]/', '', $phone);
 
         // Formattazione italiana standard
-        if (preg_match('/^\+39(\d{10})$/', $clean, $matches)) {
+        if ($clean !== null && preg_match('/^\+39(\d{10})$/', $clean, $matches)) {
             $number = $matches[1];
 
             return '+39 '.substr($number, 0, 3).' '.substr($number, 3, 3).' '.substr($number, 6);

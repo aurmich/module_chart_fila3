@@ -92,7 +92,10 @@ class TimeClockWidget extends XotBaseWidget
     {
         // Aggiorna ora e data
         $this->currentTime = Carbon::now()->format('H:i');
-        $this->todayDate = Carbon::now()->locale('it')->isoFormat('dddd D MMMM YYYY');
+        
+        /** @var \Carbon\Carbon $localizedDate */
+        $localizedDate = Carbon::now()->locale('it');
+        $this->todayDate = $localizedDate->isoFormat('dddd D MMMM YYYY');
 
         // Trova employee dell'utente corrente
         $user = Auth::user();
@@ -112,12 +115,15 @@ class TimeClockWidget extends XotBaseWidget
             ->get();
 
         // Popola array per la vista
-        $this->todayEntries = $entries->map(function (WorkHour $entry): array {
+        /** @var array<int, array{time: string, type: string}> $todayEntries */
+        $todayEntries = $entries->map(function (WorkHour $entry): array {
             return [
                 'time' => $entry->timestamp->format('H:i'),
                 'type' => $entry->type,
             ];
         })->toArray();
+        
+        $this->todayEntries = $todayEntries;
 
         // Determina stato sessione
         $lastEntry = $entries->last();

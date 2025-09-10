@@ -13,14 +13,7 @@ namespace Modules\User\Models\Policies;
 
 // use Modules\Xot\Datas\XotData;
 
-abstract class UserPermissionBasePolicy
+abstract class UserPermissionBasePolicy extends UserBasePolicy
 {
-    use HandlesAuthorization;
-
-    public function before(UserContract $user, string $ability): ?bool
-    {
-
-
-        return null;
-    }
+   
 }

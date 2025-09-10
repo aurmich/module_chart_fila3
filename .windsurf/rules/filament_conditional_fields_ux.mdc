@@ -148,7 +148,7 @@ use Filament\Forms\Components\Component;
 - Esempi specifici del modulo
 
 ### Collegamenti
-- [SaluteOra Implementation](../../laravel/Modules/SaluteOra/docs/filament/conditional_fields_ux.md)
+- [ Implementation](../../laravel/Modules//docs/filament/conditional_fields_ux.md)
 - [Filament Forms Documentation](https://filamentphp.com/docs/forms)
 
 ---

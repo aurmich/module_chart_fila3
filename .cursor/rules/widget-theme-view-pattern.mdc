@@ -3,7 +3,7 @@ description:
 globs: 
 alwaysApply: false
 ---
-# Regola: Widget Theme View Pattern - SaluteOra
+# Regola: Widget Theme View Pattern - 
 
 ## Ambito
 - Globale (pattern per view custom di widget nei temi)
@@ -121,7 +121,7 @@ class MyWidget extends XotBaseWidget
 ## Esempi Implementati
 
 ### FindDoctorAndAppointmentWidget
-- **Widget**: `Modules\SaluteOra\Filament\Widgets\Patient\FindDoctorAndAppointmentWidget`
+- **Widget**: `Modules\\Filament\Widgets\Patient\FindDoctorAndAppointmentWidget`
 - **View**: `laravel/Themes/One/resources/views/filament/widgets/patient/find-doctor-and-appointment-widget.blade.php`
 - **Namespace**: `pub_theme::filament.widgets.patient.find-doctor-and-appointment-widget`
 
@@ -210,7 +210,7 @@ class MyWidget extends XotBaseWidget
 
 ## Collegamenti Documentazione
 
-- [FindDoctorAndAppointmentWidget Implementation](mdc:../../Modules/SaluteOra/docs/widgets/find-doctor-appointment-widget.md)
+- [FindDoctorAndAppointmentWidget Implementation](mdc:../../Modules//docs/widgets/find-doctor-appointment-widget.md)
 - [Theme Structure Documentation](mdc:../../docs/theme-structure.md)
 - [Filament Widget Best Practices](mdc:../../docs/filament-widget-best-practices.md)
 

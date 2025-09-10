@@ -1,8 +1,11 @@
-# Modulo User
+# User Module Documentation
 
-## Introduzione
+**Ultima modifica**: 2025-09-10  
+**Status**: ✅ Syntax Errors Fixed, ⏳ PHPStan Analysis in corso
 
-Il modulo User gestisce l'autenticazione, l'autorizzazione e la gestione degli utenti nel sistema. Fornisce funzionalità base per la registrazione, il login, la gestione dei ruoli e dei permessi.
+## 🎯 Panoramica
+
+Il modulo User gestisce l'autenticazione, l'autorizzazione e la gestione degli utenti nel framework Laraxot.
 
 ## File Chiave
 - [BaseUser.php](app/Models/BaseUser.php)
@@ -115,11 +118,12 @@ User/
 - [Linee guida Actions](./actions.mdc)
 - [Linee guida Activitylog](./activitylog.mdc)
 
-## Vedi Anche
-- [Documentazione Principale](../../docs/INDEX.md)
-- [Architettura Moduli](../../docs/architecture/modules-structure.md)
-- [Convenzioni di Nomenclatura](../../docs/standards/file_naming_conventions.md)
-- [Struttura del Progetto](../Xot/docs/architecture/struttura-progetto.md)
+## 🏗️ Architettura Framework
+
+### Regole Base XotBase
+- **Policies**: Estendono sempre `UserBasePolicy` (MAI direttamente Filament)
+- **Resources**: Estendono sempre `XotBaseResource`
+- **Models**: Estendono sempre `BaseModel` con tipizzazione rigorosa
 
 ## Collegamenti Principali
 
@@ -148,9 +152,11 @@ User/
 - [Gestione Ruoli](repositories.md)
 - [Team e Collaborazioni](teams.md)
 
-## Collegamenti
-- [Indice Documentazione](../../../docs/INDEX.md)
-- [README Principale](../../../README.md)
-- [API Reference](../docs/api.md)
-- [Changelog](../docs/CHANGELOG.md) 
+## 🔗 Collegamenti Moduli
+- [Xot Core Framework](../Xot/docs/README.md)
+- [Lang Translations](../Lang/docs/README.md)
+- [Notify System](../Notify/docs/README.md)
+
+---
+*User Module Documentation - Framework Laraxot* 
 

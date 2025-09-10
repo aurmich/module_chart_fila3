@@ -14,13 +14,23 @@ class ListDevices extends XotBaseListRecords
 {
     protected static string $resource = DeviceResource::class;
 
+    /**
+     * @return array<string, Actions\Action>
+     */
     public function getHeaderActions(): array
     {
-        return [
-            ...parent::getHeaderActions(),
-            Actions\ImportAction::make('importDevice')
+        $actions = parent::getHeaderActions();
+        
+        // Convert parent actions to ensure string keys
+        $parentActions = [];
+        foreach ($actions as $key => $action) {
+            $parentActions[is_string($key) ? $key : 'action_'.$key] = $action;
+        }
+        
+        return array_merge($parentActions, [
+            'importDevice' => Actions\ImportAction::make('importDevice')
                 ->importer(DeviceImporter::class),
-        ];
+        ]);
     }
 
     public function getTableColumns(): array

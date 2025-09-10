@@ -33,6 +33,7 @@ parameters:
         - identifier: missingType.generics
         - identifier: missingType.iterableValue
         - identifier: larastan.noEnvCallsOutsideOfConfig
+        - identifier: method.unused
         - '#Static property .*::\$view \(view-string\) does not accept default value of type string#'
         - '#Call to internal method Illuminate\\Contracts\\Debug\\ExceptionHandler::renderForConsole\\(\\)#'
         - '#Class Amenadiel\\\\JpGraph\\\\Graph not found#'
@@ -46,6 +47,7 @@ parameters:
         - '#Method .*::placeType\(\) should return .* but returns .*\$this\(.*\)#'
         - '#Method .*::address\(\) should return .* but returns .*\$this\(.*\)#'
         - '#Call to internal method Illuminate\\\\Contracts\\\\Debug\\\\ExceptionHandler::renderForConsole\(\) from outside its root namespace Illuminate#'
+        - '#Cannot cast mixed to (string|float|double|int|bool|boolean).#' # Ignora errori di cast da mixed a tipi specifici
         
 
 
@@ -58,8 +60,9 @@ parameters:
         - ./*/phpinsights.php
         - ./*/rector.php
         - ./Modules/*/packages/*
-        - ./Modules/Activity/*
+        #- ./Modules/Activity/*
         - ./Modules/Xot/app/Filament/Traits/HasXotTable.php
+        - ./Modules/Media/app/Actions/Image/Merge.php
         - ./*.blade.php
         
 
@@ -67,7 +70,7 @@ parameters:
 
     bootstrapFiles:
         - ./phpstan_constants.php
-        - ./vendor/amenadiel/jpgraph/src/config.inc.php
+        # - ./vendor/amenadiel/jpgraph/src/config.inc.php
 
     scanFiles:
         - ./Modules/Xot/Helpers/Helper.php

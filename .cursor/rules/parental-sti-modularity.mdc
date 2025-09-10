@@ -47,7 +47,7 @@ class ChangeTypeCommand extends Command
 }
 
 // ❌ ERRATO - Dipendenza specifica
-use Modules\SaluteOra\Enums\UserTypeEnum; // MAI fare questo nel modulo User
+use Modules\\Enums\UserTypeEnum; // MAI fare questo nel modulo User
 ```
 
 ## Struttura Raccomandata

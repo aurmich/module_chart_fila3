@@ -7,4 +7,4 @@ declare(strict_types=1);
 define('LARAVEL_DIR', __DIR__);
 
 // Include JpGraph constants
-require_once __DIR__ . '/vendor/amenadiel/jpgraph/src/config.inc.php';
+// require_once __DIR__ . '/vendor/amenadiel/jpgraph/src/config.inc.php';

@@ -17,8 +17,14 @@ class GetSicureArrayByModelAction
      */
     public function execute(Model $model): array
     {
-
-            return $data;
+        $data = $model->toArray();
+        
+        // Rimuove campi sensibili
+        $sensitiveFields = ['password', 'remember_token', 'api_token'];
+        foreach ($sensitiveFields as $field) {
+            unset($data[$field]);
         }
+        
+        return $data;
     }
 }

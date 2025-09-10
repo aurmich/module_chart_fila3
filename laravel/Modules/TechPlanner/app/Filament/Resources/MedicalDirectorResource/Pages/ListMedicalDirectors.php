@@ -50,12 +50,22 @@ class ListMedicalDirectors extends XotBaseListRecords
         ];
     }
 
+    /**
+     * @return array<string, Actions\Action>
+     */
     protected function getHeaderActions(): array
     {
-        return [
-            ...parent::getHeaderActions(),
-            Actions\ImportAction::make('importMedicalDirector')
+        $parentActions = parent::getHeaderActions();
+        
+        // Convert parent actions to ensure string keys
+        $convertedActions = [];
+        foreach ($parentActions as $key => $action) {
+            $convertedActions[is_string($key) ? $key : 'action_'.$key] = $action;
+        }
+        
+        return array_merge($convertedActions, [
+            'importMedicalDirector' => Actions\ImportAction::make('importMedicalDirector')
                 ->importer(MedicalDirectorImporter::class),
-        ];
+        ]);
     }
 }

@@ -46,8 +46,8 @@ class ThemeService
         return [
             'name' => $this->themeName,
             'version' => $this->version,
-            'description' => 'Tema Sixteen per SaluteOra',
-            'author' => 'SaluteOra Team',
+            'description' => 'Tema Sixteen ',
+            'author' => 'Team',
         ];
     }
 

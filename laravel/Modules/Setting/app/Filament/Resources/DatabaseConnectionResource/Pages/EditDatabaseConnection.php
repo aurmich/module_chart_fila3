@@ -7,6 +7,7 @@ namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
+use Modules\Setting\Models\DatabaseConnection;
 
 class EditDatabaseConnection extends EditRecord
 {
@@ -17,7 +18,13 @@ class EditDatabaseConnection extends EditRecord
         return [
             Actions\DeleteAction::make(),
             Actions\Action::make('test')
-                ->action(fn () => $this->record->testConnection())
+                ->action(function () {
+                    /** @var \Illuminate\Database\Eloquent\Model|DatabaseConnection|null $record */
+                    $record = $this->getRecord();
+                    if ($record !== null) {
+                        $record->testConnection();
+                    }
+                })
                 ->icon('heroicon-o-check-circle')
                 ->color('success'),
         ];
@@ -25,8 +32,10 @@ class EditDatabaseConnection extends EditRecord
 
     protected function afterSave(): void
     {
-        if ('active' === $this->record->status) {
-            $this->record->testConnection();
+        /** @var \Illuminate\Database\Eloquent\Model|DatabaseConnection|null $record */
+        $record = $this->getRecord();
+        if ($record !== null && $record->status === 'active') {
+            $record->testConnection();
         }
     }
 

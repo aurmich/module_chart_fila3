@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Employee\Models;
 
 use Modules\Gdpr\Models\Traits\HasGdpr;
-use Modules\SaluteOra\Enums\UserTypeEnum;
 use Modules\User\Models\BaseUser;
 use Spatie\Activitylog\LogOptions;
 use Spatie\Activitylog\Traits\LogsActivity;
@@ -24,7 +23,6 @@ use Spatie\ModelStates\HasStatesContract;
  * @property string $name
  * @property string $email
  * @property string $password
- * @property UserTypeEnum $type
  * @property string|null $first_name
  * @property string|null $last_name
  * @property \Carbon\Carbon|null $date_of_birth
@@ -44,8 +42,6 @@ use Spatie\ModelStates\HasStatesContract;
  * @property \Carbon\Carbon $updated_at
  *
  * @see \Modules\User\Models\BaseUser
- * @see \Modules\SaluteOra\Models\Doctor
- * @see \Modules\SaluteOra\Models\Patient
  *
  * @property string|null $registration_number
  * @property string|null $status
@@ -70,7 +66,6 @@ use Spatie\ModelStates\HasStatesContract;
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Gdpr\Models\Consent> $consents
  * @property-read int|null $consents_count
  * @property-read \Modules\User\Models\Team|null $currentTeam
- * @property-read \Modules\SaluteOra\Models\StudioUser|\Modules\SaluteOra\Models\TeamUser|\Modules\User\Models\DeviceUser|null $pivot
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Device> $devices
  * @property-read int|null $devices_count
  * @property-read \Modules\User\Models\AuthenticationLog|null $latestAuthentication
@@ -82,14 +77,13 @@ use Spatie\ModelStates\HasStatesContract;
  * @property-read int|null $owned_teams_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Permission> $permissions
  * @property-read int|null $permissions_count
- * @property-read \Modules\SaluteOra\Models\Profile|null $profile
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $profile
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Role> $roles
  * @property-read int|null $roles_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\SocialiteUser> $socialiteUsers
  * @property-read int|null $socialite_users_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Team> $teams
  * @property-read int|null $teams_count
- * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\SaluteOra\Models\Studio> $tenants
  * @property-read int|null $tenants_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Laravel\Passport\Token> $tokens
  * @property-read int|null $tokens_count
@@ -248,7 +242,7 @@ class User extends BaseUser implements HasMedia, HasStatesContract
 
     /**
      * Cast custom per il campo type:
-     * - Va dichiarato solo nel modello User del modulo SaluteOra, mai nella base User generica.
+     * - Va dichiarato solo nel modello User del modulo , mai nella base User generica.
      * - Motivazione: evitare di sporcare il modulo User condiviso tra più progetti.
      * - Filosofia: ogni modulo è autonomo, nessun lock-in, rispetto della modularità.
      * - Politica: type safety, DRY, serenità del codice, nessun errore di cast.

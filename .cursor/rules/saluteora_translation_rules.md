@@ -1,9 +1,9 @@
-# SaluteOra Translation Rules - Critical Guidelines
+#  Translation Rules - Critical Guidelines
 
 ## Dynamic Translation Key Pattern
 When widgets use `transClass($this->model, 'widgets.{widget_name}.heading')`, the generated keys follow this pattern:
-- `saluteora::{model_lowercase}.widgets.{widget_name}.{key}`
-- **Example**: `transClass(Appointment::class, 'widgets.states_chart.heading')` → `saluteora::appointment.widgets.states_chart.heading`
+- `::{model_lowercase}.widgets.{widget_name}.{key}`
+- **Example**: `transClass(Appointment::class, 'widgets.states_chart.heading')` → `::appointment.widgets.states_chart.heading`
 
 ## Complete State Translation Requirements
 For ANY model with states, ALWAYS include ALL three states:
@@ -29,9 +29,9 @@ For ANY model with states, ALWAYS include ALL three states:
 
 ## Multi-Language Translation Files
 ALWAYS update ALL three language files simultaneously:
-- `laravel/Modules/SaluteOra/lang/it/{file}.php`
-- `laravel/Modules/SaluteOra/lang/en/{file}.php`
-- `laravel/Modules/SaluteOra/lang/de/{file}.php`
+- `laravel/Modules//lang/it/{file}.php`
+- `laravel/Modules//lang/en/{file}.php`
+- `laravel/Modules//lang/de/{file}.php`
 
 ## Widget Translation Structure
 Widget translations MUST include all required keys:
@@ -46,15 +46,15 @@ Widget translations MUST include all required keys:
 
 ## Critical Files to Check
 When adding translations, ALWAYS check:
-1. `laravel/Modules/SaluteOra/lang/{locale}/widgets.php`
-2. `laravel/Modules/SaluteOra/lang/{locale}/states.php`
+1. `laravel/Modules//lang/{locale}/widgets.php`
+2. `laravel/Modules//lang/{locale}/states.php`
 3. `laravel/Themes/One/lang/{locale}/` (for theme-specific translations)
 
 ## Common Missing Translation Patterns
-- `saluteora::{model}.widgets.{widget_name}.heading`
-- `saluteora::{model}.states.{state_name}.label`
-- `saluteora::{model}.states.{state_name}.description`
-- `saluteora::{model}.states.{state_name}.tooltip`
+- `::{model}.widgets.{widget_name}.heading`
+- `::{model}.states.{state_name}.label`
+- `::{model}.states.{state_name}.description`
+- `::{model}.states.{state_name}.tooltip`
 
 ## Translation Audit Checklist
 - [ ] Check ALL possible models that can use each widget

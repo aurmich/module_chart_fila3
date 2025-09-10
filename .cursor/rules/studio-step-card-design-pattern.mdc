@@ -129,7 +129,7 @@ function selectItem(itemId, itemName) {
 
 ## Esempi Caso d'Uso
 
-### Studio Selection (SaluteOra)
+### Studio Selection ()
 - **Design**: Card studi con nome, indirizzo, telefono, pulsante
 - **Pattern**: Card cliccabili → TextInput nascosto
 - **UX**: Ring blu per selezione, badge "Selezionato"
@@ -174,8 +174,8 @@ public function test_design_specification_compliance()
 
 ## Collegamenti Documentazione
 
-- [SaluteOra: Studio Step Correction](mdc:../Modules/SaluteOra/docs/widgets/studio-step-correction-note.md)
-- [SaluteOra: Find Doctor Analysis](mdc:../Modules/SaluteOra/docs/widgets/find-doctor-widget-studio-step-analysis.md)
+- [: Studio Step Correction](mdc:../Modules//docs/widgets/studio-step-correction-note.md)
+- [: Find Doctor Analysis](mdc:../Modules//docs/widgets/find-doctor-widget-studio-step-analysis.md)
 - [UI Components: Card Patterns](mdc:../Modules/UI/docs/components.md)
 
 ---

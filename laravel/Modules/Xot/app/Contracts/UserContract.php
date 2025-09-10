@@ -17,7 +17,9 @@ use Illuminate\Contracts\Auth\Access\Authorizable;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Spatie\MediaLibrary\MediaCollections\FileAdder;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Spatie\Permission\Exceptions\PermissionDoesNotExist;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Spatie\Permission\Contracts\Permission;
 
 // use Filament\Models\Contracts\HasTenants;
 
@@ -131,4 +133,13 @@ interface UserContract extends Authenticatable, Authorizable, CanResetPassword, 
      */
     //public function consents(): MorphMany;
     
+    /**
+     * Determine if the model may perform the given permission.
+     *
+     * @param  string|int|Permission|\BackedEnum  $permission
+     * @param  string|null  $guardName
+     *
+     * @throws PermissionDoesNotExist
+     */
+    public function hasPermissionTo($permission, $guardName = null): bool;
 }

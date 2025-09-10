@@ -35,7 +35,7 @@ class Completion extends XotBasePage implements HasForms
 
     public function mount(): void
     {
-        $this->fillForms();
+        // Forms are filled automatically by Filament's InteractsWithForms trait
     }
 
     public function completionForm(Form $form): Form

@@ -3,7 +3,7 @@ description:
 globs:
 alwaysApply: false
 ---
-# Regola: StudioSelectorButtons Pattern - SaluteOra (DRY + KISS)
+# Regola: StudioSelectorButtons Pattern -  (DRY + KISS)
 
 ## Ambito
 - Globale (pattern per componenti form specifici del dominio)
@@ -42,7 +42,7 @@ Themes/One/resources/views/filament/forms/components/{component-name}.blade.php
 protected function getStudioStepSchema(): array
 {
     return [
-        \Modules\SaluteOra\Filament\Forms\Components\StudioSelectorButtons::make('studio_selection')
+        \Modules\\Filament\Forms\Components\StudioSelectorButtons::make('studio_selection')
             ->studios(fn (Get $get) => $this->getStudiosForLocationFull($get))
             ->populatesStudioField('studio_id')
             ->populatesDoctorField('doctor_id')
@@ -200,7 +200,7 @@ Ogni livello ha la sua responsabilità specifica, nessuna duplicazione.
 
 ## Collegamenti
 
-- [SaluteOra: StudioSelectorButtons Implementation](../../laravel/Modules/SaluteOra/docs/form-components/studio-selector-buttons.md)
+- [: StudioSelectorButtons Implementation](../../laravel/Modules//docs/form-components/studio-selector-buttons.md)
 - [DRY + KISS Principles](../../docs/architecture/dry-kiss-principles.md)
 - [Filament Component Best Practices](../../docs/filament/component-best-practices.md)
 

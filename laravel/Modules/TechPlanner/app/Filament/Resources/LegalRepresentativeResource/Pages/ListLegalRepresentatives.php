@@ -10,10 +10,13 @@ class ListLegalRepresentatives extends XotBaseListRecords
 {
     protected static string $resource = LegalRepresentativeResource::class;
 
+    /**
+     * @return array<string, \Filament\Actions\Action>
+     */
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            'create' => \Filament\Actions\CreateAction::make(),
         ];
     }
 }

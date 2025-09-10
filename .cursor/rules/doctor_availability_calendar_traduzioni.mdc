@@ -1,4 +1,4 @@
-# Regola: Traduzioni doctor_availability_calendar.php (SaluteOra)
+# Regola: Traduzioni doctor_availability_calendar.php ()
 
 ## Filosofia
 - Struttura espansa obbligatoria per tutti i campi, azioni, messaggi
@@ -23,13 +23,13 @@
 La struttura espansa garantisce coerenza, automazione, refactoring sicuro e onboarding rapido. La sintassi [] e declare(strict_types=1) sono obbligatorie per portabilità e compatibilità.
 
 ## Collegamenti
-- [Modules/SaluteOra/docs/doctor_availability_calendar_traduzioni.md](../../laravel/Modules/SaluteOra/docs/doctor_availability_calendar_traduzioni.md)
+- [Modules//docs/doctor_availability_calendar_traduzioni.md](../../laravel/Modules//docs/doctor_availability_calendar_traduzioni.md)
 - [filament-best-practices.mdc](filament-best-practices.mdc)
-- [doctor_availability.php](../../laravel/Modules/SaluteOra/lang/it/doctor_availability.php)
-- [appointment.php](../../laravel/Modules/SaluteOra/lang/it/appointment.php)
-- [doctor.php](../../laravel/Modules/SaluteOra/lang/it/doctor.php)
-- [doctor-resource.php](../../laravel/Modules/SaluteOra/lang/it/doctor-resource.php)
-- [widgets.php](../../laravel/Modules/SaluteOra/lang/it/widgets.php)
+- [doctor_availability.php](../../laravel/Modules//lang/it/doctor_availability.php)
+- [appointment.php](../../laravel/Modules//lang/it/appointment.php)
+- [doctor.php](../../laravel/Modules//lang/it/doctor.php)
+- [doctor-resource.php](../../laravel/Modules//lang/it/doctor-resource.php)
+- [widgets.php](../../laravel/Modules//lang/it/widgets.php)
 
 ## Checklist
 - [x] Sintassi []

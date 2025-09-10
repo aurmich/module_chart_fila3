@@ -59,7 +59,7 @@ return [
 
 ## Esempi per Settori
 
-### 🏥 **Sanitario (SaluteOra)**
+### 🏥 **Sanitario ()**
 - **Elementi**: Cuore, battito cardiaco, simboli medici
 - **Colori**: Rossi per urgenza, verdi per vita
 - **Stile**: Moderno e professionale
@@ -99,7 +99,7 @@ return [
 - [ ] Contestualità verificata
 
 ## Collegamenti
-- [Icona SaluteOra](../../laravel/Modules/SaluteOra/docs/icon-design.md)
+- [Icona ](../../laravel/Modules//docs/icon-design.md)
 - [Convenzioni SVG](docs/svg-conventions.md)
 
 *Ultimo aggiornamento: 2025-01-27*

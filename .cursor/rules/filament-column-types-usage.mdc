@@ -87,7 +87,7 @@ BadgeColumn::make('status')
 - Errori runtime difficili da debuggare
 
 ## Collegamenti
-- [ListAppointments Fix Documentation](../../laravel/Modules/SaluteOra/docs/list_appointments_gettablecolumns_fix.md)
+- [ListAppointments Fix Documentation](../../laravel/Modules//docs/list_appointments_gettablecolumns_fix.md)
 - [Filament Best Practices](filament-best-practices.mdc)
 - [XotBaseListRecords Rules](xotbaselistrecords-best-practices.mdc)
 

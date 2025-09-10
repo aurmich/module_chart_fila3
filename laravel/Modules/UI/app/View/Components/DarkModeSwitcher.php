@@ -35,12 +35,16 @@ class DarkModeSwitcher extends Component
     {
         // Verifica se il widget può essere visualizzato
         if (! DarkModeSwitcherWidget::canView()) {
-            return view('ui::components.empty');
+            /** @var view-string $view */
+            $view = 'ui::components.empty';
+            return view($view);
         }
 
-        // Ottiene i dati dal widget
-        $viewData = $this->widget->getViewData();
+        // Ottiene i dati pubblici dal widget
+        $viewData = $this->widget->getPublicViewData();
 
-        return view('ui::filament.widgets.dark-mode-switcher', $viewData);
+        /** @var view-string $view */
+        $view = 'ui::components.dark-mode-switcher';
+        return \view($view, $viewData);
     }
 }

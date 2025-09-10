@@ -6,7 +6,7 @@
 ## Riepilogo
 Tutti i 28 file con conflitti Git nel modulo Geo sono stati risolti con successo. I conflitti erano principalmente dovuti a:
 - Differenze nelle annotazioni PHPDoc
-- Riferimenti a moduli diversi (SaluteOra vs User)
+- Riferimenti a moduli diversi ( vs User)
 - Strutture di codice leggermente diverse
 - Commenti e documentazione
 

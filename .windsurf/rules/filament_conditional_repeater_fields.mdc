@@ -50,7 +50,7 @@ protected static function getCustomRepeaterSchema(): array
 4. **Category field**: visibile solo per raggruppamenti complessi
 
 ## Collegamenti
-- [Modules/SaluteOra/docs/studio_address_repeater_conditional_name.md](../../laravel/Modules/SaluteOra/docs/studio_address_repeater_conditional_name.md)
-- [Modules/SaluteOra/app/Filament/Resources/StudioResource.php](../../laravel/Modules/SaluteOra/app/Filament/Resources/StudioResource.php)
+- [Modules//docs/studio_address_repeater_conditional_name.md](../../laravel/Modules//docs/studio_address_repeater_conditional_name.md)
+- [Modules//app/Filament/Resources/StudioResource.php](../../laravel/Modules//app/Filament/Resources/StudioResource.php)
 
 *Pattern estratto dall'implementazione StudioResource - giugno 2025*

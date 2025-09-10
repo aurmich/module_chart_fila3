@@ -87,7 +87,7 @@ public function getTableColumns(): array
 - [ ] Import delle classi Filament?
 
 ## Collegamenti
-- [Fix ListAppointments](../../laravel/Modules/SaluteOra/docs/list_appointments_gettablecolumns_fix.md)
+- [Fix ListAppointments](../../laravel/Modules//docs/list_appointments_gettablecolumns_fix.md)
 - [XotBaseListRecords](../../laravel/Modules/Xot/docs/filament/listrecords.md)
 - [TableLayoutEnum](../../laravel/Modules/UI/docs/table-layout-enum.md)
 

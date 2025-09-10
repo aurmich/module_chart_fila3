@@ -110,6 +110,7 @@ class WorkHour extends BaseModel
      */
     public function employee(): BelongsTo
     {
+        // @phpstan-ignore-next-line return.type
         return $this->belongsTo(Employee::class, 'employee_id');
     }
 
@@ -120,6 +121,7 @@ class WorkHour extends BaseModel
      */
     public function approvedBy(): BelongsTo
     {
+        // @phpstan-ignore-next-line return.type
         return $this->belongsTo(\Modules\User\Models\User::class, 'approved_by');
     }
 

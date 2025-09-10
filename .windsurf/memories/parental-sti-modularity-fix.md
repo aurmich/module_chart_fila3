@@ -1,17 +1,17 @@
 # Memoria: Fix Modularità Parental STI - Dicembre 2024
 
 ## Contesto del Problema
-**File coinvolto**: `/var/www/html/_bases/base_saluteora/laravel/Modules/User/app/Console/Commands/ChangeTypeCommand.php`
+**File coinvolto**: `/var/www/html/_bases/base_<nome progetto>/laravel/Modules/User/app/Console/Commands/ChangeTypeCommand.php`
 
-**Errore critico commesso**: Creazione di dipendenza diretta dal modulo User generico al modulo SaluteOra specifico attraverso l'import:
+**Errore critico commesso**: Creazione di dipendenza diretta dal modulo User generico al modulo  specifico attraverso l'import:
 ```php
-use Modules\SaluteOra\Enums\UserTypeEnum; // ❌ ERRORE CRITICO
+use Modules\\Enums\UserTypeEnum; // ❌ ERRORE CRITICO
 ```
 
 ## Causa Root
 Mancanza di comprensione dell'architettura modulare del progetto basata su [Parental STI](https://github.com/tighten/parental):
 - Il modulo User è **generico** e deve essere riutilizzabile in più progetti
-- I moduli specifici del progetto (es. SaluteOra) estendono il modulo User base
+- I moduli specifici del progetto (es. ) estendono il modulo User base
 - Le dipendenze devono fluire dai moduli specifici verso quelli generici, **MAI il contrario**
 
 ## Soluzione Implementata
@@ -56,7 +56,7 @@ abstract class BaseUser extends Authenticatable
 }
 ```
 
-### User (Modulo SaluteOra - Specifico)
+### User (Modulo  - Specifico)
 ```php
 class User extends BaseUser
 {
@@ -91,7 +91,7 @@ class User extends BaseUser
 ## Impatto e Validazione
 
 ### Prima (Errato)
-- ❌ Modulo User dipendeva da SaluteOra
+- ❌ Modulo User dipendeva da 
 - ❌ Non riutilizzabile in altri progetti
 - ❌ Violazione principi di modularità
 

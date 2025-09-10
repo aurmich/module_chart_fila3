@@ -51,18 +51,26 @@ class TeamPresenceWidget extends XotBaseWidget
                         ->afterStateUpdated(fn ($state) => $this->selectedDepartment = $state),
 
                     Placeholder::make('presence_stats')
-                        ->content(fn () => view('employee::widgets.team-presence.stats-display', [
-                            'present' => $presenceData['present'],
-                            'absent' => $presenceData['absent'],
-                            'presentCount' => count($presenceData['present']),
-                            'absentCount' => count($presenceData['absent']),
-                        ])),
+                        ->content(function () use ($presenceData) {
+                            /** @var view-string $view */
+                            $view = 'employee::widgets.team-presence.stats-display';
+                            return view($view, [
+                                'present' => $presenceData['present'],
+                                'absent' => $presenceData['absent'],
+                                'presentCount' => count($presenceData['present']),
+                                'absentCount' => count($presenceData['absent']),
+                            ]);
+                        }),
 
                     Placeholder::make('presence_list')
-                        ->content(fn () => view('employee::widgets.team-presence.presence-list', [
-                            'present' => $presenceData['present'],
-                            'absent' => $presenceData['absent'],
-                        ])),
+                        ->content(function () use ($presenceData) {
+                            /** @var view-string $view */
+                            $view = 'employee::widgets.team-presence.presence-list';
+                            return view($view, [
+                                'present' => $presenceData['present'],
+                                'absent' => $presenceData['absent'],
+                            ]);
+                        }),
 
                     Actions::make([
                         Action::make('view_detail')
@@ -127,6 +135,7 @@ class TeamPresenceWidget extends XotBaseWidget
             }])
             ->get()
             ->map(function ($employee) {
+                /** @var \Modules\Employee\Models\WorkHour|null $lastEntry */
                 $lastEntry = $employee->workHours->first();
 
                 return [

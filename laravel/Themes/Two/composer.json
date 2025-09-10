@@ -1,17 +1,17 @@
 {
-    "name": "saluteora/theme-two",
-    "description": "Tema Two per SaluteOra",
+    "name": "er/theme-two",
+    "description": "Tema Two per TechPlanner",
     "type": "theme",
     "license": "proprietary",
     "autoload": {
         "psr-4": {
-            "SaluteOra\\Themes\\Two\\": "src/"
+            "\\Themes\\Two\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "SaluteOra\\Themes\\Two\\ThemeServiceProvider"
+                "\\Themes\\Two\\ThemeServiceProvider"
             ]
         }
     },

@@ -1,4 +1,4 @@
-# Flusso Frontoffice SaluteOra
+# Flusso Frontoffice 
 
 ## Indice
 1. [Introduzione](#introduzione)
@@ -10,7 +10,7 @@
 
 ## Introduzione
 
-Questo documento descrive il flusso completo del frontoffice di SaluteOra, dalla gestione delle route alla renderizzazione dei componenti.
+Questo documento descrive il flusso completo del frontoffice di , dalla gestione delle route alla renderizzazione dei componenti.
 
 ## Struttura delle Route
 

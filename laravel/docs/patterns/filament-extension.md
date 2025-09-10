@@ -53,7 +53,7 @@ Mantenere sempre la stessa struttura di namespace rispetto a Filament, ma usando
 namespace Filament\Resources\Pages;
 
 // Namespace corretto nel modulo
-namespace Modules\SaluteOra\Filament\Resources\Pages;
+namespace Modules\<nome modulo>\Filament\Resources\Pages;
 ```
 
 ## Vantaggi del Pattern

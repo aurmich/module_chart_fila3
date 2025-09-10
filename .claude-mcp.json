@@ -1,0 +1,37 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/html/_bases/base_techplanner_fila3_mono"],
+      "env": {}
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "env": {}
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "env": {}
+    },
+    "everything": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-everything"],
+      "env": {}
+    },
+    "postgres": {
+      "command": "npx",
+      "args": ["-y", "enhanced-postgres-mcp-server"],
+      "env": {
+        "POSTGRES_URL": "postgresql://localhost:5432/techplanner"
+      }
+    },
+    "laravel": {
+      "command": "php",
+      "args": ["artisan", "mcp:serve"],
+      "cwd": "/var/www/html/_bases/base_techplanner_fila3_mono/laravel",
+      "env": {}
+    }
+  }
+}

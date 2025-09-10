@@ -98,7 +98,7 @@ I blocchi sono renderizzati usando componenti Blade in `/laravel/Themes/One/reso
                 "data": {
                     "view": "pub_theme::components.blocks.logo",
                     "src": "patient::images/logo.svg",
-                    "alt": "Logo SaluteOra",
+                    "alt": "Logo ",
                     "width": 150,
                     "height": 32
                 }

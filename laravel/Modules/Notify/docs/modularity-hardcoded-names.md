@@ -15,11 +15,11 @@ Durante l'audit del modulo `Notify`, è stato identificato un **errore critico d
 ### Esempi di Violazioni Trovate
 ```php
 // ❌ ERRORE CRITICO - Stringhe hardcoded
-'subject' => 'Benvenuto su SaluteOra',
-'content' => 'Grazie per esserti registrato su SaluteOra',
-'clinic_name' => 'Studio Dentistico SaluteOra',
+'subject' => 'Benvenuto su ',
+'content' => 'Grazie per esserti registrato su ',
+'clinic_name' => 'Studio Dentistico ',
 'webhook' => 'https://api.saluteora.com/webhooks',
-'author' => 'Team SaluteOra',
+'author' => 'Team ',
 'path' => '/var/www/html/saluteora/public_html/images/',
 ```
 
@@ -75,7 +75,7 @@ $notificationData = [
 - **Media**: Gestione media per qualsiasi progetto
 
 ### Moduli Specifici del Progetto
-- **SaluteOra**: Solo per progetto SaluteOra
+- ****: Solo per progetto 
 - **SaluteMo**: Solo per progetto SaluteMo
 - **Patient**: Solo per progetti sanitari specifici
 
@@ -105,10 +105,10 @@ grep -r "saluteora\|salutemo" laravel/Modules/Xot/ --include="*.php"
 
 ### Variabili d'Ambiente
 ```env
-COMPANY_NAME=SaluteOra
-COMPANY_TEAM=Team SaluteOra
+COMPANY_NAME=
+COMPANY_TEAM=Team 
 WEBHOOK_BASE_URL=https://api.saluteora.com
-CLINIC_NAME=Studio Dentistico SaluteOra
+CLINIC_NAME=Studio Dentistico 
 REPOSITORY_URL=https://github.com/saluteora/notify
 ```
 

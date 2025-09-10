@@ -1,8 +1,8 @@
-# Struttura dei percorsi nel progetto SaluteOra
+# Struttura dei percorsi nel progetto 
 
 ## Regola fondamentale
 
-**Tutti i percorsi assoluti nel progetto SaluteOra DEVONO includere il segmento `laravel/` dopo `base_saluteora/`.**
+**Tutti i percorsi assoluti nel progetto  DEVONO includere il segmento `laravel/` dopo `base_saluteora/`.**
 
 Questa regola è **ASSOLUTA** e non ammette eccezioni.
 

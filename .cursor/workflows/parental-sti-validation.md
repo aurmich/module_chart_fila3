@@ -44,7 +44,7 @@ grep -r "->value\|->getLabel\|->name" Modules/User/app/Console/Commands/ --inclu
 - [ ] Ha `protected $childTypes = []` vuoto
 - [ ] Nessun cast specifico nei casts()
 
-#### ✅ User Specifico (es. SaluteOra)
+#### ✅ User Specifico (es. )
 - [ ] Estende BaseUser
 - [ ] Definisce $childTypes specifici del progetto
 - [ ] Implementa cast per enum specifici
@@ -92,9 +92,9 @@ Modules/User/
 └── ...
 ```
 
-#### ✅ Modulo Specifico (es. SaluteOra)
+#### ✅ Modulo Specifico (es. )
 ```
-Modules/SaluteOra/
+Modules//
 ├── app/Models/User.php                  # Estende BaseUser, definisce $childTypes
 ├── app/Models/Admin.php                 # HasParent trait
 ├── app/Models/Doctor.php                # HasParent trait
@@ -125,7 +125,7 @@ Modules/SaluteOra/
 ### Problema: Dipendenza specifica in comando
 ```php
 // ❌ ERRATO
-use Modules\SaluteOra\Enums\UserTypeEnum;
+use Modules\\Enums\UserTypeEnum;
 $newType = UserTypeEnum::ADMIN->value;
 
 // ✅ CORRETTO
@@ -177,7 +177,7 @@ class CrossProjectTest extends TestCase
     /** @test */
     public function user_module_works_in_different_projects()
     {
-        // Simula uso in progetto diverso da SaluteOra
+        // Simula uso in progetto diverso da 
     }
 }
 ```

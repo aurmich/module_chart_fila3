@@ -10,10 +10,13 @@ class ListLegalOffices extends XotBaseListRecords
 {
     protected static string $resource = LegalOfficeResource::class;
 
+    /**
+     * @return array<string, Actions\Action>
+     */
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            'create' => Actions\CreateAction::make(),
         ];
     }
 }

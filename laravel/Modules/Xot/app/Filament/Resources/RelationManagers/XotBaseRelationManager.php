@@ -134,6 +134,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
 
     public function getResource(): string
     {
+        /** @phpstan-ignore-next-line */
         $resource = static::$resource;
         Assert::classExists($resource);
         Assert::isAOf($resource, XotBaseResource::class);

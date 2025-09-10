@@ -12,7 +12,7 @@ Usa `/module-setup` in Windsurf Cascade per creare un nuovo modulo.
 
 ### 1.1 Richiedi Nome Modulo
 Chiedi all'utente:
-- **Nome del modulo** (PascalCase, es. "SaluteOra", "Performance")
+- **Nome del modulo** (PascalCase, es. "", "Performance")
 - **Descrizione breve** del modulo
 - **Tipo di modulo** (Business Logic, UI Component, API, etc.)
 - **Dipendenze** da altri moduli esistenti

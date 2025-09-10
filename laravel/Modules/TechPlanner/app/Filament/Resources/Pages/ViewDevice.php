@@ -15,12 +15,7 @@ class ViewDevice extends XotBaseViewRecord
 {
     protected static string $resource = DeviceResource::class;
 
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\EditAction::make(),
-        ];
-    }
+   
 
     /**
      * @return array<int|string,\Filament\Infolists\Components\Component>
@@ -34,22 +29,22 @@ class ViewDevice extends XotBaseViewRecord
                         ->schema([
                             TextEntry::make('name')
                                 ->label('Nome')
-                                ->searchable(),
+                                ,
                             TextEntry::make('serial_number')
                                 ->label('Numero Seriale')
-                                ->searchable(),
+                                ,
                             TextEntry::make('model')
                                 ->label('Modello')
-                                ->searchable(),
+                                ,
                             TextEntry::make('manufacturer')
                                 ->label('Produttore')
-                                ->searchable(),
+                                ,
                             TextEntry::make('type')
                                 ->label('Tipo')
-                                ->searchable(),
+                                ,
                             TextEntry::make('status')
                                 ->label('Stato')
-                                ->searchable(),
+                                ,
                         ]),
                 ])
                 ->collapsible(),

@@ -3,10 +3,10 @@ description:
 globs:
 alwaysApply: false
 ---
-# Regola: Implementazione Stati Appuntamenti SaluteOra
+# Regola: Implementazione Stati Appuntamenti 
 
 ## Ambito
-- Modulo SaluteOra
+- Modulo 
 - Pattern State Machine per appuntamenti medici
 - Gestione ciclo di vita appuntamenti
 
@@ -130,8 +130,8 @@ if ($appointment->state->canBeModified()) {
 - Documentare nuovi stati e transizioni
 
 ## Collegamenti
-- [appointment-states.md](../../laravel/Modules/SaluteOra/docs/appointment-states.md)
-- [User States Pattern](../../laravel/Modules/SaluteOra/docs/user-states.md)
+- [appointment-states.md](../../laravel/Modules//docs/appointment-states.md)
+- [User States Pattern](../../laravel/Modules//docs/user-states.md)
 
 ## Ultimo aggiornamento
 Dicembre 2024 - Implementazione completa stati appuntamenti

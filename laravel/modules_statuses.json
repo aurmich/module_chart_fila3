@@ -18,7 +18,7 @@
     "Employee": true,
     "AI": true,
     "Blog": true,
-    "Comment": true,
+    "Comment": false,
     "Rating": true,
     "Seo": true,
     "Setting": true

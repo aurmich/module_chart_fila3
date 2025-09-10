@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\TechPlanner\Filament\Resources\ClientResource\Pages;
 
+use function Safe\preg_replace;
 use Filament\Actions;
 use Illuminate\Support\Arr;
 use Livewire\Attributes\On;
@@ -205,13 +206,23 @@ class ListClients extends XotBaseListRecords
         ];
     }
 
+    /**
+     * @return array<string, Actions\Action>
+     */
     public function getHeaderActions(): array
     {
-        return [
-            ...parent::getHeaderActions(),
-            Actions\ImportAction::make('importClient')
+        $actions = parent::getHeaderActions();
+        
+        // Convert parent actions to ensure string keys
+        $parentActions = [];
+        foreach ($actions as $key => $action) {
+            $parentActions[is_string($key) ? $key : 'action_'.$key] = $action;
+        }
+        
+        return array_merge($parentActions, [
+            'importClient' => Actions\ImportAction::make('importClient')
                 ->importer(ClientImporter::class),
-            Actions\Action::make('populateCoordinates')
+            'populateCoordinates' => Actions\Action::make('populateCoordinates')
                 ->icon('heroicon-o-globe-alt')
                 ->action(function () {
                     $this->populateAllCoordinates();
@@ -220,7 +231,7 @@ class ListClients extends XotBaseListRecords
                 ->modalHeading('Populate Coordinates')
                 ->modalDescription('This will update coordinates for all clients based on their addresses. Continue?')
                 ->modalSubmitActionLabel('Yes, Update All'),
-        ];
+        ]);
     }
 
     public function getTableBulkActions(): array
@@ -451,3 +462,4 @@ class ListClients extends XotBaseListRecords
     }
 
 }
+

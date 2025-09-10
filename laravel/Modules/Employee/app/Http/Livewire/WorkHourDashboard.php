@@ -28,6 +28,7 @@ class WorkHourDashboard extends Component
 
     public string $selectedPeriod = 'week';
 
+    /** @var array<string, string> */
     protected $listeners = [
         'workHourRecorded' => 'refreshStats',
         'refreshDashboard' => 'refreshStats',
@@ -41,7 +42,7 @@ class WorkHourDashboard extends Component
         $this->refreshStats();
     }
 
-    public function render()
+    public function render(): \Illuminate\Contracts\View\View
     {
         return view('employee::livewire.work-hour-dashboard');
     }
@@ -65,11 +66,21 @@ class WorkHourDashboard extends Component
 
     private function calculateTodayHours(): void
     {
+        if (! $this->employee) {
+            $this->todayHours = 0.0;
+            return;
+        }
         $this->todayHours = WorkHour::calculateWorkedHours($this->employee->id, Carbon::today());
     }
 
     private function calculateWeeklyStats(): void
     {
+        if (! $this->employee) {
+            $this->weekHours = 0.0;
+            $this->weeklyStats = [];
+            return;
+        }
+        
         $startOfWeek = Carbon::now()->startOfWeek();
         $endOfWeek = Carbon::now()->endOfWeek();
 
@@ -91,6 +102,12 @@ class WorkHourDashboard extends Component
 
     private function calculateMonthlyStats(): void
     {
+        if (! $this->employee) {
+            $this->monthHours = 0.0;
+            $this->monthlyStats = [];
+            return;
+        }
+        
         $startOfMonth = Carbon::now()->startOfMonth();
         $endOfMonth = Carbon::now()->endOfMonth();
 
@@ -131,6 +148,11 @@ class WorkHourDashboard extends Component
 
     private function loadRecentEntries(): void
     {
+        if (! $this->employee) {
+            $this->recentEntries = [];
+            return;
+        }
+        
         $this->recentEntries = WorkHour::where('employee_id', $this->employee->id)
             ->orderBy('timestamp', 'desc')
             ->limit(10)

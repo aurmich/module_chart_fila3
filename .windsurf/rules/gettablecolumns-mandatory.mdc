@@ -144,8 +144,8 @@ Tutte le classi con pattern `*Resource\Pages\List*` che estendono:
 - Classi derivate da `XotBaseListRecords`
 
 ## Esempi di Fix Documentati
-- [ListAppointments Fix](../laravel/Modules/SaluteOra/docs/list_appointments_gettablecolumns_fix.md)
-- [ListAppointmentWorkflows Fix](../laravel/Modules/SaluteOra/docs/list_appointment_workflows_fix.md)
+- [ListAppointments Fix](../laravel/Modules//docs/list_appointments_gettablecolumns_fix.md)
+- [ListAppointmentWorkflows Fix](../laravel/Modules//docs/list_appointment_workflows_fix.md)
 
 ## Checklist Pre-Commit
 - [ ] Metodo `getTableColumns()` implementato

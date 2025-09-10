@@ -37,7 +37,7 @@ class CompletionAction
         return new CompletionData(
             text: trim($choice),
             promptTokens: $usage->promptTokens,
-            completionTokens: $usage->completionTokens,
+            completionTokens: $usage->completionTokens ?? 0,
             totalTokens: $usage->totalTokens,
         );
     }

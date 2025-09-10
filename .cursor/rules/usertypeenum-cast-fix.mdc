@@ -70,6 +70,6 @@ protected static function boot(): void
 - Non gestire i casi edge negli accessor
 
 ## Collegamenti
-- [SaluteOra/docs/usertypeenum-serialization-fix.md](../../laravel/Modules/SaluteOra/docs/usertypeenum-serialization-fix.md)
+- [/docs/usertypeenum-serialization-fix.md](../../laravel/Modules//docs/usertypeenum-serialization-fix.md)
 
 *Ultimo aggiornamento: gennaio 2025*

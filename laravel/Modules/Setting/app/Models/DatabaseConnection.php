@@ -60,6 +60,10 @@ class DatabaseConnection extends Model
     {
         $connections = config('database.connections');
         
+        if (!is_array($connections)) {
+            return [];
+        }
+        
         return Arr::map(
             $connections,
             fn (array $value, string $key): array => [

@@ -1,19 +1,19 @@
-# SaluteOra Project Structure - Key Learnings
+#  Project Structure - Key Learnings
 
 ## Project Root Structure
-- **Root**: `/var/www/html/_bases/base_saluteora/`
-- **Laravel**: `/var/www/html/_bases/base_saluteora/laravel/`
-- **Modules**: `/var/www/html/_bases/base_saluteora/laravel/Modules/`
-- **Themes**: `/var/www/html/_bases/base_saluteora/laravel/Themes/One/`
+- **Root**: `/var/www/html/_bases/base_/`
+- **Laravel**: `/var/www/html/_bases/base_<nome progetto>/laravel/`
+- **Modules**: `/var/www/html/_bases/base_<nome progetto>/laravel/Modules/`
+- **Themes**: `/var/www/html/_bases/base_<nome progetto>/laravel/Themes/One/`
 
 ## Key Modules Identified
-- **SaluteOra**: Main module with models (Patient, Doctor, Appointment)
+- ****: Main module with models (Patient, Doctor, Appointment)
 - **SaluteMo**: Dashboard and main application logic
 - **User**: User management and authentication
 - **Xot**: Base framework module with common functionality
 
 ## Translation Structure
-- **Module Translations**: `laravel/Modules/SaluteOra/lang/{locale}/`
+- **Module Translations**: `laravel/Modules//lang/{locale}/`
 - **Theme Translations**: `laravel/Themes/One/lang/{locale}/`
 - **Languages**: Italian (it), English (en), German (de)
 
