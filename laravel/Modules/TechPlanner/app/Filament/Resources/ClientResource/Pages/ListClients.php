@@ -9,7 +9,6 @@ use Filament\Actions;
 use Illuminate\Support\Arr;
 use Livewire\Attributes\On;
 use Webmozart\Assert\Assert;
-use function Safe\preg_replace;
 use Illuminate\Support\HtmlString;
 use Filament\Tables\Actions\Action;
 use Illuminate\Support\Facades\Cookie;

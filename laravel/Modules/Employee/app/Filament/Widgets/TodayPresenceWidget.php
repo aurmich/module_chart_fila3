@@ -6,7 +6,6 @@ namespace Modules\Employee\Filament\Widgets;
 
 use Modules\Employee\Models\Employee;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
-use Modules\Employee\Models\Employee;
 use Modules\Employee\Models\WorkHour;
 use Illuminate\Support\Facades\DB;
 
@@ -41,6 +40,9 @@ class TodayPresenceWidget extends XotBaseWidget
      */
     protected function getTodayPresence(): array
     {
+        $today = now()->toDateString();
+        $absentEmployees = [];
+        
         // Mock implementation since Employee->workHours relation doesn't exist
         $employees = Employee::limit(10)->get();
 
@@ -74,16 +76,8 @@ class TodayPresenceWidget extends XotBaseWidget
                     'location' => $lastEntry && property_exists($lastEntry, 'location_name') ? $lastEntry->location_name : $workType['default_location'],
                     'status' => 'present',
                     'work_type' => $index % 2 === 0 ? 'office' : 'remote',
-                ]);
-            } else {
-                $absentEmployees[] = array_merge($employeeData, [
-                    'department' => 'MARKETING',
-                    'absence_type' => 'vacation',
-                    'absence_reason' => 'Ferie',
-                    'return_date' => now()->addDays(rand(1, 5))->format('Y-m-d'),
-                ]);
-            }
-        }
+                ];
+            })->toArray();
 
         return [
             'present' => $presentEmployees,

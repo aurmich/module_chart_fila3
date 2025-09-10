@@ -145,6 +145,7 @@ class TimeClockWidget extends XotBaseWidget
         })->toArray();
         
         $this->todayEntries = $todayEntries;
+    }
 
     /**
      * Update current session state.
