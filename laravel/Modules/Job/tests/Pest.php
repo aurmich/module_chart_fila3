@@ -15,8 +15,13 @@ namespace Modules\Job\Tests;
 |
 */
 
+<<<<<<< HEAD
 uses(\Modules\Job\Tests\TestCase::class)
     ->uses(\Illuminate\Foundation\Testing\DatabaseTransactions::class)
+=======
+pest()->extend(TestCase::class)
+    
+>>>>>>> fa01535 (.)
     ->in('Feature', 'Unit');
 
 /*

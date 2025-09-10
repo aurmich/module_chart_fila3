@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Notify\Tests;
+use Modules\Media\Tests\TestCase;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,12 +15,8 @@ namespace Modules\Notify\Tests;
 |
 */
 
-<<<<<<< HEAD
-uses(TestCase::class)
-    ->uses(\Illuminate\Foundation\Testing\DatabaseTransactions::class)
-=======
 pest()->extend(TestCase::class)
->>>>>>> 7ad2a3d (.)
+    ->use(Illuminate\Foundation\Testing\RefreshDatabase::class)
     ->in('Feature', 'Unit');
 
 /*
@@ -34,12 +30,12 @@ pest()->extend(TestCase::class)
 |
 */
 
-expect()->extend('toBeNotification', function () {
-    return $this->toBeInstanceOf(\Modules\Notify\Models\Notification::class);
+expect()->extend('toBeMedia', function () {
+    return $this->toBeInstanceOf(\Modules\Media\Models\Media::class);
 });
 
-expect()->extend('toBeMailTemplate', function () {
-    return $this->toBeInstanceOf(\Modules\Notify\Models\MailTemplate::class);
+expect()->extend('toBeMediaCollection', function () {
+    return $this->toBeInstanceOf(\Modules\Media\Models\MediaCollection::class);
 });
 
 /*
@@ -53,22 +49,22 @@ expect()->extend('toBeMailTemplate', function () {
 |
 */
 
-function createNotification(array $attributes = []): \Modules\Notify\Models\Notification
+function createMedia(array $attributes = []): \Modules\Media\Models\Media
 {
-    return \Modules\Notify\Models\Notification::factory()->create($attributes);
+    return \Modules\Media\Models\Media::factory()->create($attributes);
 }
 
-function makeNotification(array $attributes = []): \Modules\Notify\Models\Notification
+function makeMedia(array $attributes = []): \Modules\Media\Models\Media
 {
-    return \Modules\Notify\Models\Notification::factory()->make($attributes);
+    return \Modules\Media\Models\Media::factory()->make($attributes);
 }
 
-function createMailTemplate(array $attributes = []): \Modules\Notify\Models\MailTemplate
+function createMediaCollection(array $attributes = []): \Modules\Media\Models\MediaCollection
 {
-    return \Modules\Notify\Models\MailTemplate::factory()->create($attributes);
+    return \Modules\Media\Models\MediaCollection::factory()->create($attributes);
 }
 
-function makeMailTemplate(array $attributes = []): \Modules\Notify\Models\MailTemplate
+function makeMediaCollection(array $attributes = []): \Modules\Media\Models\MediaCollection
 {
-    return \Modules\Notify\Models\MailTemplate::factory()->make($attributes);
+    return \Modules\Media\Models\MediaCollection::factory()->make($attributes);
 }
