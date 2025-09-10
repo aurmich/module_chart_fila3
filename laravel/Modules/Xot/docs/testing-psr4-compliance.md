@@ -94,6 +94,16 @@ composer dump-autoload
 
 ## Correzioni Applicate
 
+### File: `tests/Unit/HasXotTableTest.php` (2025-01-06)
+
+- **Problema**: Classi `HasTableWithXot`, `HasTableWithoutOptionalMethods`, `DummyModel` senza namespace appropriato
+- **Soluzione**: Aggiunto `namespace Modules\Xot\Tests\Unit;` prima delle definizioni delle classi
+- **Miglioramenti**: 
+  - Documentazione PHPDoc completa per tutte le classi helper
+  - Tipizzazione esplicita delle proprietà con `@property` annotations
+  - Rimossi implements non necessari per semplificare i mock
+  - Organizzazione corretta degli import
+
 ### File: `tests/Unit/HasExtraTraitTest.php`
 
 - **Problema**: Classe `TestExtra` senza namespace appropriato

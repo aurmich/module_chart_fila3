@@ -24,6 +24,7 @@ class EditWorkHour extends XotBaseEditRecord
 
     protected function getRedirectUrl(): string
     {
+        /** @var string */
         return $this->getResource()::getUrl('index');
     }
 
@@ -67,7 +68,7 @@ class EditWorkHour extends XotBaseEditRecord
         }
 
         // Validate working hours (6 AM to 10 PM)
-        if ($timestamp->hour < 6 || $timestamp->hour > 22) {
+        if ($newTimestamp->hour < 6 || $newTimestamp->hour > 22) {
             Notification::make()
                 ->title('Invalid Time')
                 ->body('Work hours must be between 6:00 AM and 10:00 PM.')

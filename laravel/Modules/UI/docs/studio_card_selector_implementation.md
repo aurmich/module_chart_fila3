@@ -178,8 +178,13 @@ return [
 - [Components Overview](./components.md)
 - [Form Components Guide](./form-components.md)
 
+<<<<<<< HEAD
+### Modulo SaluteOra
+- [Widget Analysis](../SaluteOra/project_docs/widgets/find-doctor-widget-studio-step-analysis.md)
+=======
 ### Modulo 
 - [Widget Analysis](../<nome modulo>/docs/widgets/find-doctor-widget-studio-step-analysis.md)
+>>>>>>> 1485e9d (.)
 
 ---
 

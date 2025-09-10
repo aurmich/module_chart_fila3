@@ -5,10 +5,13 @@ declare(strict_types=1);
 namespace Modules\TechPlanner\Filament\Resources;
 
 use Filament\Forms;
+use Filament\Forms\Components\DateTimePicker;
+use Filament\Forms\Components\Textarea;
+use Filament\Forms\Form;
+use Illuminate\Database\Eloquent\Model;
 use Modules\TechPlanner\Filament\Resources\AppointmentResource\Pages;
 use Modules\TechPlanner\Models\Appointment;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-use Illuminate\Database\Eloquent\Model;
 
 /**
  * ---
@@ -20,18 +23,26 @@ class AppointmentResource extends XotBaseResource
     public static function getFormSchema(): array
     {
         return [
-            /*
             Forms\Components\Select::make('client_id')
                 ->relationship('client', 'name')
                 ->required(),
-            */
-            Forms\Components\DateTimePicker::make('date')
+            Forms\Components\DatePicker::make('date')
                 ->required(),
-            Forms\Components\Textarea::make('notes')
+            Forms\Components\TimePicker::make('time')
+                ->required(),
+            Forms\Components\Select::make('status')
+                ->options([
+                    'scheduled' => 'Scheduled',
+                    'confirmed' => 'Confirmed',
+                    'completed' => 'Completed',
+                    'cancelled' => 'Cancelled',
+                ])
+
                 ->maxLength(65535)
                 ->columnSpanFull(),
         ];
     }
+
 
 
     public static function getPages(): array
@@ -47,7 +58,6 @@ class AppointmentResource extends XotBaseResource
     {
         return true;
     }
-
 
     public static function canDetach(): bool
     {

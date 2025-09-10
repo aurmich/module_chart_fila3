@@ -2,9 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Pest;
-
-
+use Modules\Xot\Tests\TestCase;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +14,7 @@ namespace Modules\Xot\Tests\Pest;
 |
 */
 
-
+pest()->extend(TestCase::class)
     ->in('Feature', 'Unit');
 
 /*
@@ -25,7 +23,7 @@ namespace Modules\Xot\Tests\Pest;
 |--------------------------------------------------------------------------
 |
 | Qui puoi definire aspettative globali per il modulo Xot.
-
+| Quando definisci here expectation globali, saranno disponibili
 | in tutti i test del modulo.
 |
 */
@@ -46,4 +44,4 @@ namespace Modules\Xot\Tests\Pest;
 
 // function something() {
 //     // ...
-
+// }

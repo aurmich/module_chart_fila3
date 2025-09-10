@@ -19,6 +19,7 @@ return [
         'cached' => 'Risorsa memorizzata in cache con successo',
         'cleared' => 'Cache svuotata con successo',
         'backed_up' => 'Backup eseguito con successo',
+        'backup_restored' => 'Ripristino completato con successo',
         'restore_completed' => 'Ripristino completato con successo',
     ],
     'geo_specific' => [

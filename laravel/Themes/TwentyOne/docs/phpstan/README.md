@@ -61,7 +61,7 @@ Questo è fondamentale per:
 ## Collegamenti e Approfondimenti
 - [Vite Manifest Documentation](https://vitejs.dev/guide/backend-integration.html)
 - [Laravel Vite Integration](https://laravel.com/docs/11.x/vite)
-- [Sezione pubblicazione temi in docs root](../../../docs/themes.md)
+- [Sezione pubblicazione temi in docs root](../../../../project_docs/themes/management.md)
 
 ---
 

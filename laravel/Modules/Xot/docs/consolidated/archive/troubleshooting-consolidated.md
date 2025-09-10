@@ -17,7 +17,7 @@ Questo documento sostituisce e consolida **35+ file di troubleshooting duplicati
 - Qualsiasi documentazione troubleshooting specifica di modulo
 
 ### ✅ Unica Fonte di Verità
-- **Questo file**: `/laravel/Modules/Xot/docs/troubleshooting-consolidated.md`
+- **Questo file**: `/laravel/Modules/Xot/project_docs/troubleshooting-consolidated.md`
 - **Implementazione**: Fix nei singoli moduli (solo fix, non docs)
 
 ## Problemi Comuni e Soluzioni
@@ -206,7 +206,7 @@ Codice non conforme agli standard di tipizzazione.
 **Soluzione**
 ```bash
 # Eseguire da directory Laravel
-cd /var/www/html/_bases/base_saluteora/laravel
+cd /var/www/html/_bases/base_techplanner_fila3_mono/laravel
 ./vendor/bin/phpstan analyze --level=9 --memory-limit=2G
 ```
 

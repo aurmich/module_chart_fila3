@@ -4,7 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\TechPlanner\Tests\Unit\Models;
 
-use Modules\TechPlanner\Models\Appointment;
+
+use Modules\TechPlanner\Models\Worker;
 use Modules\TechPlanner\Models\Client;
 use Modules\TechPlanner\Models\Device;
 use Modules\TechPlanner\Models\PhoneCall;
@@ -22,7 +23,6 @@ class WorkerTest extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
-
         $this->worker = Worker::factory()->create();
     }
 
@@ -148,7 +148,9 @@ class WorkerTest extends TestCase
     public function it_can_be_soft_deleted(): void
     {
         $workerId = $this->worker->id;
-
+        
+        $this->worker->delete();
+        
         $this->worker->delete();
 
         $this->assertSoftDeleted('workers', ['id' => $workerId]);
@@ -159,7 +161,7 @@ class WorkerTest extends TestCase
     public function it_can_be_restored(): void
     {
         $workerId = $this->worker->id;
-
+        
         $this->worker->delete();
         $this->assertSoftDeleted('workers', ['id' => $workerId]);
 

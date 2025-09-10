@@ -11,8 +11,6 @@ return [
         'services' => 'Servizi',
         'contact' => 'Contatti',
 
-        'login' => 'Anmelden',
-        'login' => 'Accedi',
         'login' => 'Accedi',
         'register' => 'Registrati',
         'profile' => 'Profilo',
@@ -40,7 +38,6 @@ return [
         'reset' => 'Zurücksetzen',
         'select' => 'Auswählen',
         'choose' => 'Wählen...',
-
         'required' => 'Campo obbligatorio',
         'email' => 'Inserisci un indirizzo email valido',
         'min' => 'Il campo deve contenere almeno :min caratteri',
@@ -56,6 +53,7 @@ return [
         'reset' => 'Reimposta',
         'select' => 'Seleziona',
         'choose' => 'Scegli...',
+=======
 
     ],
     'messages' => [

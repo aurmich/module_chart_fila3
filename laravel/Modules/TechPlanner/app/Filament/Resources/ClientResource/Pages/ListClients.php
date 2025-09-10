@@ -9,6 +9,7 @@ use Filament\Actions;
 use Illuminate\Support\Arr;
 use Livewire\Attributes\On;
 use Webmozart\Assert\Assert;
+use function Safe\preg_replace;
 use Illuminate\Support\HtmlString;
 use Filament\Tables\Actions\Action;
 use Illuminate\Support\Facades\Cookie;
@@ -403,7 +404,12 @@ class ListClients extends XotBaseListRecords
      * @param \Modules\TechPlanner\Models\Client $record
      * @return string
      */
-    private function formatContacts(Client $record): string
+        /**
+     * Formatta i contatti del cliente con icone appropriate.
+     *
+     * @param \Modules\TechPlanner\Models\Client $record
+     * @return string
+     */    private function formatContacts(Client $record): string
     {
         $contacts = [];
         

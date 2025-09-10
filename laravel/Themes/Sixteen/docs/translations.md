@@ -167,6 +167,12 @@ return [
 ### Blade Templates
 ```blade
 {{-- Utilizzo diretto --}}
+=======
+<p>{{ trans_choice('sixteen::common.items_count', $count, ['count' => $count]) }}</p>
+=======
+<h1>{{ __('pub_theme::pages.dashboard.title') }}</h1>
+<p>{{ __('pub_theme::pages.dashboard.description') }}</p>
+=======
 <h1>{{ __('sixteen::pages.dashboard.title') }}</h1>
 <p>{{ __('sixteen::pages.dashboard.description') }}</p>
 
@@ -181,6 +187,10 @@ return [
 ```php
 // In Filament Forms
 TextInput::make('email')
+    ->label(__('pub_theme::components.form.input.email.label'))
+    ->placeholder(__('pub_theme::components.form.input.email.placeholder'))
+    ->helperText(__('pub_theme::components.form.input.email.help'))
+=======
     ->label(__('sixteen::components.form.input.email.label'))
     ->placeholder(__('sixteen::components.form.input.email.placeholder'))
     ->helperText(__('sixteen::components.form.input.email.help'))
@@ -190,6 +200,8 @@ TextInput::make('email')
 
 // In Filament Tables
 Tables\Columns\TextColumn::make('name')
+    ->label(__('pub_theme::components.table.columns.name.label'))
+=======
     ->label(__('sixteen::components.table.columns.name.label'))
     ->searchable()
     ->sortable();
@@ -200,6 +212,10 @@ Tables\Columns\TextColumn::make('name')
 // In componenti Livewire
 public function render()
 {
+    return view('pub_theme::livewire.user-form', [
+        'title' => __('pub_theme::pages.users.create.title'),
+        'description' => __('pub_theme::pages.users.create.description'),
+=======
     return view('sixteen::livewire.user-form', [
         'title' => __('sixteen::pages.users.create.title'),
         'description' => __('sixteen::pages.users.create.description'),
@@ -247,6 +263,8 @@ public function render()
 
 ### Utilizzo
 ```blade
+{{ trans_choice('pub_theme::common.items_count', $items->count(), ['count' => $items->count()]) }}
+=======
 {{ trans_choice('sixteen::common.items_count', $items->count(), ['count' => $items->count()]) }}
 ```
 

@@ -186,8 +186,8 @@ Il progetto utilizza un'architettura modulare con Laravel Modules:
      - .windsurfrules per Windsurf
    - Mantenere coerenza tra le diverse documentazioni 
 ## Collegamenti tra versioni di PHPSTAN_WORKFLOW.md
-* [PHPSTAN_WORKFLOW.md](../../../Xot/docs/phpstan/PHPSTAN_WORKFLOW.md)
-* [PHPSTAN_WORKFLOW.md](../../../Xot/docs/PHPSTAN_WORKFLOW.md)
+* [PHPSTAN_WORKFLOW.md](../../../Xot/project_docs/phpstan/PHPSTAN_WORKFLOW.md)
+* [PHPSTAN_WORKFLOW.md](../../../Xot/project_docs/PHPSTAN_WORKFLOW.md)
 
 
 ## Collegamenti tra versioni di phpstan_workflow.md

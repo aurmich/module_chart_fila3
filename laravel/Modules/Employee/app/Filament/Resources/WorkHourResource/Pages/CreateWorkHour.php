@@ -6,24 +6,26 @@ namespace Modules\Employee\Filament\Resources\WorkHourResource\Pages;
 
 use Carbon\Carbon;
 use Filament\Notifications\Notification;
+use Modules\Employee\Enums\WorkHourStatusEnum;
+use Modules\Employee\Enums\WorkHourTypeEnum;
 use Modules\Employee\Filament\Resources\WorkHourResource;
 use Modules\Employee\Models\WorkHour;
 use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
-
 class CreateWorkHour extends XotBaseCreateRecord
 {
     protected static string $resource = WorkHourResource::class;
 
     protected function getRedirectUrl(): string
     {
+        /** @var string */
         return $this->getResource()::getUrl('index');
     }
 
     protected function mutateFormDataBeforeCreate(array $data): array
     {
         // Set default status if not provided
-        if (! isset($data['status'])) {
-            $data['status'] = WorkHour::STATUS_PENDING;
+        if (!isset($data['status'])) {
+            $data['status'] = WorkHourStatusEnum::PENDING->value;
         }
 
         return $data;

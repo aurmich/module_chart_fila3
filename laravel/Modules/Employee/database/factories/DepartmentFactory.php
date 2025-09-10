@@ -15,9 +15,9 @@ class DepartmentFactory extends Factory
     /**
      * The name of the factory's corresponding model.
      *
-     * @var string
+     * @var class-string<\Modules\Employee\Models\Department>
      */
-    protected $model = Department::class;
+    protected $model = \Modules\Employee\Models\Department::class;
 
     /**
      * Define the model's default state.
@@ -27,35 +27,47 @@ class DepartmentFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->unique()->department(),
+            'name' => $this->faker->unique()->randomElement(['HR', 'IT', 'Sales', 'Marketing', 'Finance', 'Operations']),
+=======
+            'name' => $this->faker->unique()->word().' Department',
             'description' => $this->faker->optional()->sentence(),
-            'status' => $this->faker->randomElement(['attivo', 'inattivo']),
+            'is_active' => $this->faker->boolean(80), // 80% chance of being active
             'manager_id' => null, // Will be set when needed
         ];
     }
 
     /**
      * Indicate that the department is active.
+     *
+     * @return static
+=======
      */
     public function active(): static
     {
         return $this->state(fn (array $attributes) => [
-            'status' => 'attivo',
+            'is_active' => true,
         ]);
     }
 
     /**
      * Indicate that the department is inactive.
+     *
+     * @return static
+=======
      */
     public function inactive(): static
     {
         return $this->state(fn (array $attributes) => [
-            'status' => 'inattivo',
+            'is_active' => false,
         ]);
     }
 
     /**
      * Set a specific department name.
+     *
+     * @param string $name
+     * @return static
+=======
      */
     public function withName(string $name): static
     {
@@ -66,6 +78,10 @@ class DepartmentFactory extends Factory
 
     /**
      * Set a specific description.
+     *
+     * @param string $description
+     * @return static
+=======
      */
     public function withDescription(string $description): static
     {

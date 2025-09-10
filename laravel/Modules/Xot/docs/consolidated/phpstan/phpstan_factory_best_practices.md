@@ -259,7 +259,7 @@ $result = $string . (string) $faker->method();
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
 - [Larastan Extension](https://github.com/larastan/larastan)
 - [Safe Functions Library](https://github.com/thecodingmachine/safe)
-- [Laravel Factory Documentation](https://laravel.com/docs/database-testing#model-factories)
+- [Laravel Factory Documentation](https://laravel.com/project_docs/database-testing#model-factories)
 
 ## 📝 Esempi Pratici
 
@@ -273,7 +273,11 @@ Vedere:
 - `Modules//database/factories/PatientFactory.php`
 
 ### Documentazione Implementazione
+<<<<<<< HEAD
+Vedere: `Modules/SaluteOra/project_docs/factories/phpstan-factory-compliance.md`
+=======
 Vedere: `Modules/<nome modulo>/docs/factories/phpstan-factory-compliance.md`
+>>>>>>> de6e254 (.)
 
 ## 📊 Metriche di Successo
 

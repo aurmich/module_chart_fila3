@@ -49,6 +49,7 @@ class SushiCommand extends Command
     protected function handleUnknownAction(): int
     {
         $this->error('Azione non valida');
+
         return 1;
     }
 
@@ -175,16 +176,19 @@ class SushiCommand extends Command
         try {
             $count = DB::table('comuni')->count();
             $this->info("Numero di comuni: {$count}");
+
             $regioni = DB::table('comuni')
                 ->select('regione')
                 ->distinct()
                 ->count();
             $this->info("Numero di regioni: {$regioni}");
+
             $province = DB::table('comuni')
                 ->select('provincia')
                 ->distinct()
                 ->count();
             $this->info("Numero di province: {$province}");
+
             $cap = DB::table('comuni')
                 ->select('cap')
                 ->distinct()

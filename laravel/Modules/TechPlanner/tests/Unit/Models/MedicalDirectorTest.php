@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\TechPlanner\Tests\Unit\Models;
 
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Modules\TechPlanner\Models\MedicalDirector;
+use Tests\TestCase;use Modules\TechPlanner\Models\MedicalDirector;
 
 /**
  * Test unitario per il modello MedicalDirector.
@@ -13,6 +15,7 @@ use Modules\TechPlanner\Models\MedicalDirector;
  */
 class MedicalDirectorTest extends TestCase
 {
+    use RefreshDatabase;
     private MedicalDirector $medicalDirector;
 
     protected function setUp(): void

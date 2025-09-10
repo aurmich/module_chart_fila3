@@ -2,21 +2,24 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-namespace Modules\User\Tests\Feature\UserCommandIntegrationTest;
-=======
-use Modules\User\Console\Commands\ChangeTypeCommand;
-use Modules\Xot\Datas\XotData;
-use Modules\Xot\Contracts\UserContract;
 use Illuminate\Console\Application;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Artisan;
->>>>>>> 03c98ee (.)
+use Modules\User\Console\Commands\ChangeTypeCommand;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
 
+uses(RefreshDatabase::class);
 
+describe('User Command Integration', function () {
+    beforeEach(function () {
+        $this->command = new ChangeTypeCommand;
     });
 
     it('can be registered with Laravel artisan', function () {
         // Test that the command can be registered
+        $application = new Application;
+        $application->add($this->command);
 
         expect($application->has('user:change-type'))->toBeTrue();
     });
@@ -24,6 +27,8 @@ use Illuminate\Support\Facades\Artisan;
     it('integrates with XotData system', function () {
         // Test XotData integration
         $xotData = XotData::make();
+
+        expect($xotData)->toBeInstanceOf(XotData::class);
 
         // Test that required methods exist
         expect(method_exists($xotData, 'getUserByEmail'))->toBeTrue()
@@ -58,6 +63,8 @@ use Illuminate\Support\Facades\Artisan;
         // Test Arr helper functionality
         $testArray = ['a' => 1, 'b' => 2, 'c' => 3];
 
+        $result = \Illuminate\Support\Arr::mapWithKeys($testArray, function ($value, $key) {
+            return [$key.'_mapped' => $value * 2];
         });
 
         expect($result)->toBeArray()
@@ -77,6 +84,10 @@ use Illuminate\Support\Facades\Artisan;
 
     it('validates command signature and options', function () {
         $reflection = new ReflectionClass($this->command);
+
+        // Check command properties
+        expect($reflection->hasProperty('name'))->toBeTrue()
+            ->and($reflection->hasProperty('description'))->toBeTrue();
 
         $nameProperty = $reflection->getProperty('name');
         $nameProperty->setAccessible(true);
@@ -113,7 +124,9 @@ use Illuminate\Support\Facades\Artisan;
 
     it('can work with type checking utilities', function () {
         // Test type checking functions used in the command
-
+        $testObject = new stdClass;
+        $testObject->value = 'test';
+        $testObject->getLabel = fn () => 'Test Label';
 
         expect(is_object($testObject))->toBeTrue()
             ->and(property_exists($testObject, 'value'))->toBeTrue()
@@ -133,6 +146,7 @@ use Illuminate\Support\Facades\Artisan;
         // Test string operations used in the command
         $testString = 'TestValue';
 
+        expect((string) $testString)->toBe('TestValue')
             ->and(is_string($testString))->toBeTrue();
     });
 
@@ -140,6 +154,9 @@ use Illuminate\Support\Facades\Artisan;
         // Test array operations used in the command
         $testArray = ['key1' => 'value1', 'key2' => 'value2'];
 
+        $mapped = [];
+        foreach ($testArray as $key => $value) {
+            $mapped[$key.'_suffix'] = $value.'_modified';
         }
 
         expect($mapped)->toBeArray()
@@ -193,6 +210,8 @@ use Illuminate\Support\Facades\Artisan;
 
     it('can handle object property access safely', function () {
         // Test safe property access patterns
+        $testObject = new stdClass;
+        $testObject->testProperty = 'test_value';
 
         expect(property_exists($testObject, 'testProperty'))->toBeTrue()
             ->and(property_exists($testObject, 'nonExistentProperty'))->toBeFalse();

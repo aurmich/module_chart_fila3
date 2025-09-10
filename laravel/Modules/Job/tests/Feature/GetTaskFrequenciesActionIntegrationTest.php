@@ -4,12 +4,6 @@ declare(strict_types=1);
 
 use Modules\Job\Actions\GetTaskFrequenciesAction;
 use Modules\Job\Models\TaskFrequency;
-<<<<<<< HEAD
-=======
-use Modules\Job\Tests\TestCase;
-
-
->>>>>>> fa01535 (.)
 
 describe('GetTaskFrequenciesAction Integration', function () {
     beforeEach(function () {

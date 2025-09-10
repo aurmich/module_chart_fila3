@@ -46,6 +46,14 @@ Homestead.json
 .git-rewrite/
 
 # Documentation cache only
+# Documentation cache only
+# Documentation
+/docs/
+
+# Documentation cache only
+# Documentation
+/docs/
+
 /docs/cache/
 
 # Ignored temporary files
@@ -55,6 +63,7 @@ Homestead.json
 *.log
 *.csv
 *.sql
+
 *.old
 *.old1
 
@@ -62,3 +71,5 @@ Homestead.json
 *.bak
 *.bakcup
 *.backup.*
+*.old
+*.old1

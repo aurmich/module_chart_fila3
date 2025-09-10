@@ -14,10 +14,14 @@ use Spatie\ModelStates\HasStates;
 use Spatie\ModelStates\HasStatesContract;
 
 /**
- * Modello User
+ * Employee Module User Model
  *
- * Questo modello estende BaseUser e implementa Single Table Inheritance
- * per gestire i tipi di utente (doctor, patient).
+
+/**
+ * Employee Module User Model
+ * 
+ * Extends BaseUser with Single Table Inheritance for Employee module.
+ * Parent class for Admin and Employee models using Parental STI.
  *
  * @property int $id
  * @property string $name
@@ -35,8 +39,6 @@ use Spatie\ModelStates\HasStatesContract;
  * @property bool $is_active
  * @property bool $is_otp
  * @property \Carbon\Carbon|null $password_expires_at
- * @property int|null $studio_id
- * @property string|null $continuation_token
  * @property \Carbon\Carbon|null $email_verified_at
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at

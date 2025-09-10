@@ -10,14 +10,16 @@ use Modules\User\Models\User;
 
 /**
  * Authentication Factory
-
+ *
+ * Factory for creating Authentication model instances for testing and seeding.
+ *
  * @extends Factory<Authentication>
  */
 class AuthenticationFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
-
+     *
      * @var class-string<Authentication>
      */
     protected $model = Authentication::class;
@@ -47,7 +49,6 @@ class AuthenticationFactory extends Factory
 
     /**
      * Indicate that the authentication was successful.
-
      */
     public function successful(): static
     {
@@ -58,7 +59,6 @@ class AuthenticationFactory extends Factory
 
     /**
      * Indicate that the authentication failed.
-
      */
     public function failed(): static
     {
@@ -70,7 +70,6 @@ class AuthenticationFactory extends Factory
 
     /**
      * Set the authentication type to login.
-
      */
     public function login(): static
     {
@@ -81,7 +80,6 @@ class AuthenticationFactory extends Factory
 
     /**
      * Set the authentication type to logout.
-
      */
     public function logout(): static
     {
@@ -93,7 +91,6 @@ class AuthenticationFactory extends Factory
 
     /**
      * Create authentication record for a specific user.
-
      */
     public function forUser(User $user): static
     {

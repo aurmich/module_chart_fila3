@@ -4,12 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\TechPlanner\Tests\Unit\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Modules\TechPlanner\Models\BaseModel;
+use Illuminate\Foundation\Testing\RefreshDatabase;use Illuminate\Database\Eloquent\Model;
+use Modules\TechPlanner\Models\BaseModel;
+
+beforeEach(function () {
+    $this->baseModel = new class extends BaseModel {
+
+uses(TestCase::class, RefreshDatabase::class);
 
 beforeEach(function () {
     $this->baseModel = new class extends BaseModel
     {
+    $this->baseModel = new class extends BaseModel {
         protected $table = 'test_techplanner_table';
     };
 });

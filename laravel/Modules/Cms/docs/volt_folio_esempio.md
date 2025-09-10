@@ -23,6 +23,8 @@ laravel-news-volt-folio-example/
 {
     "require": {
         "php": "^8.1",
+        "laravel/framework": "*",
+=======
         "laravel/framework": "^10.0",
         "livewire/volt": "^1.0",
         "livewire/livewire": "^3.0"
@@ -273,6 +275,6 @@ class ContactFormTest extends TestCase
 ## Riferimenti
 
 - [Repository Esempio](https://github.com/jasonlbeggs/laravel-news-volt-folio-example)
-- [Documentazione Laravel Volt](https://livewire.laravel.com/docs/volt)
+- [Documentazione Laravel Volt](https://livewire.laravel.com/project_docs/volt)
 - [Documentazione Laravel Folio](https://github.com/laravel/folio)
 - [Livewire](https://livewire.laravel.com) 

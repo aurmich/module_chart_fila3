@@ -29,6 +29,19 @@ use Modules\User\Models\User;
  * @property-read User $user
  * @property-read User|null $createdBy
  * @property-read User|null $updatedBy
+ * @property-read \Modules\TechPlanner\Models\Profile|null $creator
+ * @property-read string $formatted_date
+ * @property-read string $formatted_time
+ * @property-read string $formatted_timestamp
+ * @property-read \Modules\TechPlanner\Models\Profile|null $updater
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|TimeRecord forDate(\Carbon\Carbon $date)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|TimeRecord forUser(int $userId)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|TimeRecord newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|TimeRecord newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|TimeRecord ofType(string $type)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|TimeRecord query()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|TimeRecord valid()
+ * @mixin \Eloquent
  */
 class TimeRecord extends BaseModel
 {
@@ -68,9 +81,9 @@ class TimeRecord extends BaseModel
     }
 
     /**
-     * Get the user that owns the time record.
+     * Get the user that owns the timbratura.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Models\User, static>
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function user(): BelongsTo
     {
@@ -78,9 +91,9 @@ class TimeRecord extends BaseModel
     }
 
     /**
-     * Get the user that created the time record.
+     * Get the user that created the timbratura.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Models\User, static>
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function createdBy(): BelongsTo
     {
@@ -88,9 +101,9 @@ class TimeRecord extends BaseModel
     }
 
     /**
-     * Get the user that updated the time record.
+     * Get the user that updated the timbratura.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Modules\User\Models\User, static>
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function updatedBy(): BelongsTo
     {
@@ -213,4 +226,4 @@ class TimeRecord extends BaseModel
     {
         return !empty($this->latitude) && !empty($this->longitude);
     }
-}
+} 

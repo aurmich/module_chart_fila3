@@ -8,134 +8,128 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 
 /**
- * Helper per la gestione dei percorsi nel progetto TechPlanner.
+ * Helper per la gestione dei percorsi nel progetto.
  */
 class PathHelper
 {
     /**
      * Percorso base del progetto.
-     *
-     * @var string
      */
-    public static string $projectBasePath = '/var/www/html/_bases/base_techplanner_fila3_mono';
+    public static string $projectBasePath = '/var/www/html';
 
     /**
      * Percorso base di Laravel.
-     *
-     * @var string
      */
-    public static string $laravelBasePath = '/var/www/html/_bases/base_techplanner_fila3_mono/laravel';
+    public static string $laravelBasePath = '/var/www/html/laravel';
 
     /**
      * Percorso base dei moduli.
-     *
-     * @var string
      */
-    public static string $modulesBasePath = '/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules';
+    public static string $modulesBasePath = '/var/www/html/laravel/Modules';
 
     /**
      * Ottiene il percorso completo di un modulo.
      *
-     * @param string $moduleName Nome del modulo
+     * @param  string  $moduleName  Nome del modulo
      * @return string Percorso completo del modulo
      */
     public static function modulePath(string $moduleName): string
     {
-        return self::$modulesBasePath . '/' . $moduleName;
+        return self::$modulesBasePath.'/'.$moduleName;
     }
 
     /**
      * Ottiene il percorso dei modelli di un modulo.
      *
-     * @param string $moduleName Nome del modulo
+     * @param  string  $moduleName  Nome del modulo
      * @return string Percorso dei modelli
      */
     public static function modelsPath(string $moduleName): string
     {
-        return self::modulePath($moduleName) . '/app/Models';
+        return self::modulePath($moduleName).'/app/Models';
     }
 
     /**
      * Ottiene il percorso delle migrazioni di un modulo.
      *
-     * @param string $moduleName Nome del modulo
+     * @param  string  $moduleName  Nome del modulo
      * @return string Percorso delle migrazioni
      */
     public static function migrationsPath(string $moduleName): string
     {
-        return self::modulePath($moduleName) . '/database/migrations';
+        return self::modulePath($moduleName).'/database/migrations';
     }
 
     /**
      * Ottiene il percorso dei seeder di un modulo.
      *
-     * @param string $moduleName Nome del modulo
+     * @param  string  $moduleName  Nome del modulo
      * @return string Percorso dei seeder
      */
     public static function seedersPath(string $moduleName): string
     {
-        return self::modulePath($moduleName) . '/database/seeders';
+        return self::modulePath($moduleName).'/database/seeders';
     }
 
     /**
      * Ottiene il percorso dei controller di un modulo.
      *
-     * @param string $moduleName Nome del modulo
+     * @param  string  $moduleName  Nome del modulo
      * @return string Percorso dei controller
      */
     public static function controllersPath(string $moduleName): string
     {
-        return self::modulePath($moduleName) . '/app/Http/Controllers';
+        return self::modulePath($moduleName).'/app/Http/Controllers';
     }
 
     /**
      * Ottiene il percorso delle risorse Filament di un modulo.
      *
-     * @param string $moduleName Nome del modulo
+     * @param  string  $moduleName  Nome del modulo
      * @return string Percorso delle risorse Filament
      */
     public static function filamentResourcesPath(string $moduleName): string
     {
-        return self::modulePath($moduleName) . '/app/Filament/Resources';
+        return self::modulePath($moduleName).'/app/Filament/Resources';
     }
 
     /**
      * Ottiene il percorso dei provider di un modulo.
      *
-     * @param string $moduleName Nome del modulo
+     * @param  string  $moduleName  Nome del modulo
      * @return string Percorso dei provider
      */
     public static function providersPath(string $moduleName): string
     {
-        return self::modulePath($moduleName) . '/app/Providers';
+        return self::modulePath($moduleName).'/app/Providers';
     }
 
     /**
      * Ottiene il percorso delle viste di un modulo.
      *
-     * @param string $moduleName Nome del modulo
+     * @param  string  $moduleName  Nome del modulo
      * @return string Percorso delle viste
      */
     public static function viewsPath(string $moduleName): string
     {
-        return self::modulePath($moduleName) . '/resources/views';
+        return self::modulePath($moduleName).'/resources/views';
     }
 
     /**
      * Verifica se un percorso è corretto secondo le convenzioni del progetto.
      *
-     * @param string $path Percorso da verificare
+     * @param  string  $path  Percorso da verificare
      * @return bool True se il percorso è corretto, false altrimenti
      */
     public static function isValidPath(string $path): bool
     {
         // Verifica che il percorso contenga /laravel/Modules/ e non solo /Modules/
-        if (Str::contains($path, '/base_techplanner_fila3_mono/Modules/')) {
+        if (Str::contains($path, '/Modules/')) {
             return false;
         }
 
-        // Verifica che il percorso contenga /laravel/ dopo /base_techplanner_fila3_mono/
-        if (Str::contains($path, '/base_techplanner_fila3_mono/') && !Str::contains($path, '/base_techplanner_fila3_mono/laravel/')) {
+        // Verifica che il percorso contenga /laravel/ dopo /TechPlanner/
+        if (Str::contains($path, '/') && ! Str::contains($path, '/laravel/')) {
             return false;
         }
 
@@ -145,19 +139,19 @@ class PathHelper
     /**
      * Corregge un percorso errato secondo le convenzioni del progetto.
      *
-     * @param string $path Percorso da correggere
+     * @param  string  $path  Percorso da correggere
      * @return string Percorso corretto
      */
     public static function correctPath(string $path): string
     {
-        // Corregge /var/www/html/base_techplanner_fila3_mono/Modules/ in /var/www/html/base_techplanner_fila3_mono/laravel/Modules/
-        if (Str::contains($path, '/base_techplanner_fila3_mono/Modules/')) {
-            return str_replace('/base_techplanner_fila3_mono/Modules/', '/base_techplanner_fila3_mono/laravel/Modules/', $path);
+        // Corregge /var/www/html/TechPlanner/Modules/ in /var/www/html/TechPlanner/laravel/Modules/
+        if (Str::contains($path, '/TechPlanner/Modules/')) {
+            return str_replace('/Modules/', '/laravel/Modules/', $path);
         }
 
-        // Corregge /var/www/html/Modules/ in /var/www/html/base_techplanner_fila3_mono/laravel/Modules/
+        // Corregge /var/www/html/Modules/ in /var/www/html/TechPlanner/laravel/Modules/
         if (Str::contains($path, '/var/www/html/Modules/')) {
-            return str_replace('/var/www/html/Modules/', '/var/www/html/base_techplanner_fila3_mono/laravel/Modules/', $path);
+            return str_replace('/var/www/html/Modules/', '/var/www/html/laravel/Modules/', $path);
         }
 
         return $path;
@@ -171,21 +165,21 @@ class PathHelper
     public static function getModules(): array
     {
         $modulesPath = self::$modulesBasePath;
-        
-        if (!File::exists($modulesPath)) {
+
+        if (! File::exists($modulesPath)) {
             return [];
         }
-        
+
         /** @var array<string> $directories */
         $directories = File::directories($modulesPath);
-        
-        return array_map(fn(string $path): string => basename($path), $directories);
+
+        return array_map(fn (string $path): string => basename($path), $directories);
     }
 
     /**
      * Verifica se un modulo esiste.
      *
-     * @param string $moduleName Nome del modulo
+     * @param  string  $moduleName  Nome del modulo
      * @return bool True se il modulo esiste, false altrimenti
      */
     public static function moduleExists(string $moduleName): bool

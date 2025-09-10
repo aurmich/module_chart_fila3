@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace Modules\Geo\Tests\Unit\Actions;
+
 use Illuminate\Support\Collection;
 use Mockery;
 use Modules\Geo\Actions\CalculateDistanceAction;
@@ -13,6 +15,7 @@ use Tests\TestCase;
 class CalculateDistanceActionTest extends TestCase
 {
     private CalculateDistanceAction $action;
+
     private CalculateDistanceMatrixAction $mockDistanceMatrixAction;
 
     protected function setUp(): void
@@ -31,6 +34,7 @@ class CalculateDistanceActionTest extends TestCase
             longitude: 9.1900,
             address: 'Milano, Italia'
         );
+
         $destination = new LocationData(
             latitude: 41.9028,
             longitude: 12.4964,
@@ -77,6 +81,7 @@ class CalculateDistanceActionTest extends TestCase
             longitude: 9.1900,
             address: 'Invalid Location'
         );
+
         $destination = new LocationData(
             latitude: 41.9028,
             longitude: 12.4964,
@@ -97,6 +102,7 @@ class CalculateDistanceActionTest extends TestCase
             longitude: 200.0, // Invalid longitude > 180
             address: 'Milano, Italia'
         );
+
         $destination = new LocationData(
             latitude: 41.9028,
             longitude: 12.4964,
@@ -117,6 +123,7 @@ class CalculateDistanceActionTest extends TestCase
             longitude: 9.1900,
             address: 'Invalid Location'
         );
+
         $destination = new LocationData(
             latitude: 41.9028,
             longitude: 12.4964,
@@ -137,6 +144,7 @@ class CalculateDistanceActionTest extends TestCase
             longitude: -200.0, // Invalid longitude < -180
             address: 'Milano, Italia'
         );
+
         $destination = new LocationData(
             latitude: 41.9028,
             longitude: 12.4964,
@@ -157,6 +165,7 @@ class CalculateDistanceActionTest extends TestCase
             longitude: 9.1900,
             address: 'Milano, Italia'
         );
+
         $destination = new LocationData(
             latitude: 41.9028,
             longitude: 12.4964,
@@ -182,6 +191,7 @@ class CalculateDistanceActionTest extends TestCase
             longitude: 9.1900,
             address: 'Milano, Italia'
         );
+
         $destination = new LocationData(
             latitude: 41.9028,
             longitude: 12.4964,
@@ -209,6 +219,7 @@ class CalculateDistanceActionTest extends TestCase
             longitude: 9.1900,
             address: 'Milano, Italia'
         );
+
         $destination = new LocationData(
             latitude: 41.9028,
             longitude: 12.4964,
@@ -336,6 +347,7 @@ class CalculateDistanceActionTest extends TestCase
             longitude: 9.1900,
             address: 'Boundary Location'
         );
+
         $destination = new LocationData(
             latitude: 41.9028,
             longitude: 12.4964,
@@ -374,6 +386,7 @@ class CalculateDistanceActionTest extends TestCase
             longitude: 180.0, // Boundary value
             address: 'Boundary Location'
         );
+
         $destination = new LocationData(
             latitude: 41.9028,
             longitude: 12.4964,

@@ -1,4 +1,4 @@
-<header class="">
+<header class="sticky top-0 z-50 bg-white">
 	@php
 	$pos=collect($blocks)->groupBy('data.position');
 	

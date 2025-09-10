@@ -26,6 +26,8 @@ Il tema Sixteen ha registrato questi shortcut per i layout:
 
 **NON creare mai** layout personalizzati come:
 - `<x-pub_theme::layouts.auth-agid>` ❌
+- `<x-pub_theme::layouts.auth-agid>` ❌
+=======
 - `<x-sixteen::layouts.auth-agid>` ❌
 - `<x-layouts.auth-agid>` ❌
 
@@ -123,6 +125,9 @@ name('login');
 <x-pub_theme::components.button>
 
 <!-- ❌ ERRATO - Namespace tema non registrato -->
+<x-pub_theme::layouts.guest>
+<x-pub_theme::ui.logo>
+=======
 <x-sixteen::layouts.guest>
 <x-sixteen::ui.logo>
 ```

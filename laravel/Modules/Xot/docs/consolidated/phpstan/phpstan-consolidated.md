@@ -42,7 +42,7 @@ parameters:
 ### Esecuzione Corretta
 ```bash
 # ✅ CORRETTO - Eseguire da directory Laravel
-cd /var/www/html/_bases/base_saluteora/laravel
+cd /var/www/html/_bases/base_techplanner_fila3_mono/laravel
 ./vendor/bin/phpstan analyze --level=9 --memory-limit=2G
 
 # ❌ ERRATO - Mai usare artisan per phpstan
@@ -257,8 +257,8 @@ $variabile = $oggetto->proprietaNonStandard;
 ## 🔗 Risorse
 
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
-- [Modules/Xot/docs/PHPSTAN_LIVELLO10_LINEE_GUIDA.md](PHPSTAN_LIVELLO10_LINEE_GUIDA.md)
-- [docs/PHPSTAN_LEVEL10_FIXES.md](../../../docs/PHPSTAN_LEVEL10_FIXES.md)
+- [Modules/Xot/project_docs/PHPSTAN_LIVELLO10_LINEE_GUIDA.md](PHPSTAN_LIVELLO10_LINEE_GUIDA.md)
+- [docs/PHPSTAN_LEVEL10_FIXES.md](../../../project_docs/PHPSTAN_LEVEL10_FIXES.md)
 
 ---
 

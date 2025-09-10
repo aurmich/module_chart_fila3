@@ -7,7 +7,9 @@ namespace Modules\TechPlanner\Filament\Resources\MedicalDirectorResource\Pages;
 use Filament\Actions;
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
-use Modules\TechPlanner\Filament\Imports\MedicalDirectorImporter;
+use Filament\Tables\Actions\EditAction;
+use Filament\Tables\Actions\DeleteAction;
+use Filament\Tables\Actions\DeleteBulkAction;use Modules\TechPlanner\Filament\Imports\MedicalDirectorImporter;
 use Modules\TechPlanner\Filament\Resources\MedicalDirectorResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
@@ -55,6 +57,16 @@ class ListMedicalDirectors extends XotBaseListRecords
      */
     protected function getHeaderActions(): array
     {
+<<<<<<< HEAD
+        /** @var array<string, \Filament\Actions\Action> $actions */
+        $actions = [
+            ...parent::getHeaderActions(),
+            Actions\ImportAction::make('importMedicalDirector')
+                ->importer(MedicalDirectorImporter::class),
+        ];
+
+        return $actions;
+=======
         $parentActions = parent::getHeaderActions();
         
         // Convert parent actions to ensure string keys
@@ -67,5 +79,6 @@ class ListMedicalDirectors extends XotBaseListRecords
             'importMedicalDirector' => Actions\ImportAction::make('importMedicalDirector')
                 ->importer(MedicalDirectorImporter::class),
         ]);
+>>>>>>> 4ee3943 (.)
     }
 }

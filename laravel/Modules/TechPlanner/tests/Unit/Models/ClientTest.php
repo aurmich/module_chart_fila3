@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\TechPlanner\Tests\Unit\Models;
 
-use Modules\TechPlanner\Models\Appointment;
+use Illuminate\Foundation\Testing\RefreshDatabase;use Modules\TechPlanner\Models\Appointment;
 use Modules\TechPlanner\Models\Client;
 use Modules\TechPlanner\Models\Device;
 use Modules\TechPlanner\Models\LegalOffice;
@@ -21,12 +21,13 @@ use Modules\TechPlanner\Models\Worker;
  */
 class ClientTest extends TestCase
 {
+    use RefreshDatabase;
     private Client $client;
 
     protected function setUp(): void
     {
         parent::setUp();
-
+        
         $this->client = Client::factory()->create();
     }
 
@@ -195,9 +196,15 @@ class ClientTest extends TestCase
     public function it_can_be_soft_deleted(): void
     {
         $clientId = $this->client->id;
+        
+        $this->client->delete();
+        
 
         $this->client->delete();
 
+        
+        $this->client->delete();
+        
         $this->assertSoftDeleted('clients', ['id' => $clientId]);
         $this->assertDatabaseMissing('clients', ['id' => $clientId]);
     }
@@ -206,13 +213,22 @@ class ClientTest extends TestCase
     public function it_can_be_restored(): void
     {
         $clientId = $this->client->id;
-
+        
         $this->client->delete();
         $this->assertSoftDeleted('clients', ['id' => $clientId]);
 
         $restoredClient = Client::withTrashed()->find($clientId);
         $restoredClient->restore();
+        
 
+        
+        $this->client->delete();
+        $this->assertSoftDeleted('clients', ['id' => $clientId]);
+        
+        $restoredClient = Client::withTrashed()->find($clientId);
+        $restoredClient->restore();
+
+        
         $this->assertDatabaseHas('clients', ['id' => $clientId]);
         $this->assertNull($restoredClient->deleted_at);
     }

@@ -1,5 +1,6 @@
 <?php
 
+declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Ore di Lavoro',
@@ -121,6 +122,7 @@ return [
             'tooltip' => 'Timestamp ultimo aggiornamento',
             'description' => 'Data e ora dell\'ultimo aggiornamento',
         ],
+=======
         'toggleColumns' => [
             'label' => 'toggleColumns',
         ],

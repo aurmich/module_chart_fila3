@@ -1,6 +1,8 @@
 {
     "name": "laraxot/theme_sixteen_fila3",
     "description": "Sixteen theme for Laraxot projects (AGID-compliant, Tailwind-based)",
+    "description": "",
+>>>>>>> 388f236 (.)
     "keywords": [
         "laraxot",
         "laravel",
@@ -19,13 +21,23 @@
         }
     ],
     "require": {},
+=======
+>>>>>>> 477a6d1 (.)
     "extra": {
         "laravel": {
             "providers": [
                 "Themes\\Sixteen\\Providers\\ThemeServiceProvider"
             ],
             "aliases": {}
+            "aliases": {
+
+            }
         }
+    },
+    "require": {
+        "filament/filament": "^3.4",
+        "filament/tables": "^3.4",
+        "filament/forms": "^3.4"
     },
     "autoload": {
         "psr-4": {
@@ -33,7 +45,9 @@
         }
     },
     "autoload-dev": {
+=======
         "psr-4": {}
+>>>>>>> 477a6d1 (.)
     },
     "config": {
         "sort-packages": true,

@@ -4,7 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\TechPlanner\Tests\Unit\Actions;
 
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Queue;
+use Modules\TechPlanner\Actions\UpdateAllClientsAction;
+use Modules\TechPlanner\Models\Client;
+use Modules\TechPlanner\Jobs\UpdateClientJob;
+use Tests\TestCase;use Illuminate\Support\Facades\Queue;
 use Modules\TechPlanner\Actions\UpdateAllClientsAction;
 use Modules\TechPlanner\Models\Client;
 
@@ -15,14 +20,21 @@ use Modules\TechPlanner\Models\Client;
  */
 class UpdateAllClientsActionTest extends TestCase
 {
+    use RefreshDatabase;
     private UpdateAllClientsAction $action;
 
     protected function setUp(): void
     {
         parent::setUp();
+        
+        $this->action = new UpdateAllClientsAction();
+        
 
         $this->action = new UpdateAllClientsAction;
 
+        
+        $this->action = new UpdateAllClientsAction();
+        
         // Disabilita le code per i test
         Queue::fake();
     }
@@ -421,7 +433,7 @@ class UpdateAllClientsActionTest extends TestCase
         // Arrange
         $activeClients = Client::factory()->count(2)->create();
         $deletedClients = Client::factory()->count(2)->create();
-
+        
         // Soft delete alcuni clienti
         $deletedClients->each(function ($client) {
             $client->delete();
@@ -556,7 +568,7 @@ class UpdateAllClientsActionTest extends TestCase
         // Arrange
         $clients = Client::factory()->count(2)->create();
         $longText = str_repeat('This is a very long text field content. ', 50);
-
+        
         $updateData = [
             'description' => $longText,
             'notes' => 'Updated notes',

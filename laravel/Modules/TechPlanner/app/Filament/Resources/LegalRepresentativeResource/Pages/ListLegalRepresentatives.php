@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\TechPlanner\Filament\Resources\LegalRepresentativeResource\Pages;
 
 use Filament\Actions;
@@ -10,13 +12,5 @@ class ListLegalRepresentatives extends XotBaseListRecords
 {
     protected static string $resource = LegalRepresentativeResource::class;
 
-    /**
-     * @return array<string, \Filament\Actions\Action>
-     */
-    protected function getHeaderActions(): array
-    {
-        return [
-            'create' => \Filament\Actions\CreateAction::make(),
-        ];
-    }
+   
 }

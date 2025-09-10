@@ -28,7 +28,14 @@
     }
 @endphp
 
-<button wire:click="mountAction('{{ $action }}', @js($data))" class="block w-full">
+<button
+    wire:click="testClick({{ $rating->id }})"
+    type="button"
+    class="block w-full"
+> 
+
+
+
     <div class="relative overflow-hidden rounded-lg group/rating cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:z-10">
         {{-- Container quadrato per l'immagine --}}
         <div class="aspect-square bg-gray-100 dark:bg-gray-700 relative">

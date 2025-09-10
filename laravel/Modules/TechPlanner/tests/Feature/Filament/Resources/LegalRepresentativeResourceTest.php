@@ -4,12 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\TechPlanner\Tests\Feature\Filament\Resources;
 
-use Livewire\Livewire;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\WithFaker;use Livewire\Livewire;
 use Modules\TechPlanner\Filament\Resources\LegalRepresentativeResource;
 use Modules\TechPlanner\Filament\Resources\LegalRepresentativeResource\Pages\CreateLegalRepresentative;
 use Modules\TechPlanner\Filament\Resources\LegalRepresentativeResource\Pages\EditLegalRepresentative;
 use Modules\TechPlanner\Filament\Resources\LegalRepresentativeResource\Pages\ListLegalRepresentatives;
-use Modules\TechPlanner\Models\LegalOffice;
+use Modules\TechPlanner\Models\LegalRepresentative;use Modules\TechPlanner\Models\LegalOffice;
 use Modules\TechPlanner\Models\LegalRepresentative;
 use Modules\User\Models\User;
 
@@ -17,12 +18,16 @@ class LegalRepresentativeResourceTest extends TestCase
 {
     protected User $admin;
 
+class LegalRepresentativeResourceTest extends TestCase
+{
+
+    protected User $admin;
     protected LegalOffice $legalOffice;
 
     protected function setUp(): void
     {
         parent::setUp();
-
+        
         $this->admin = User::factory()->create([
             'name' => 'Admin User',
             'email' => 'admin@example.com',
@@ -219,10 +224,18 @@ class LegalRepresentativeResourceTest extends TestCase
     public function it_can_filter_legal_representatives_by_specialization(): void
     {
         LegalRepresentative::factory()->create([
+            'specializations' => json_encode(['civil', 'commercial'])            'specializations' => json_encode(['civil', 'commercial']),
+        ]);
+        LegalRepresentative::factory()->create([
+            'specializations' => json_encode(['criminal', 'family'])
             'specializations' => json_encode(['civil', 'commercial']),
         ]);
         LegalRepresentative::factory()->create([
             'specializations' => json_encode(['criminal', 'family']),
+            'specializations' => json_encode(['civil', 'commercial'])
+        ]);
+        LegalRepresentative::factory()->create([
+            'specializations' => json_encode(['criminal', 'family'])
         ]);
 
         Livewire::actingAs($this->admin)

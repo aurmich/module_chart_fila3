@@ -4,19 +4,27 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Parental\HasParent;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasManyThrough;
+
+=======
 /**
- * Class Admin
+ * Employee Module Admin Model
  *
- * NOTA: Il trait HasFactory è stato rimosso perché già incluso nella catena di ereditarietà (BaseUser -> User -> Admin).
- * Dichiararlo qui è ridondante e può causare warning o confusione.
- * Vedi docs/DRY-model-traits.md
+ * Admin user type using Single Table Inheritance with Parental package.
+ * Child class of User model for administrative users.
  *
- * @property string $id
- * @property string $user_id
- * @property string|null $date_of_birth
+ * @property int $id
+ * @property string $name
+ * @property string $email
+ * @property string $password
+ * @property string $type
+ * @property string|null $first_name
+ * @property string|null $last_name
+ * @property \Carbon\Carbon|null $date_of_birth
  * @property string|null $gender
  * @property string|null $address
  * @property string|null $phone
@@ -39,7 +47,6 @@ use Parental\HasParent;
  * @method static \Illuminate\Database\Eloquent\Builder|Admin whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Admin whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Admin whereUserId($value)
- *
  * @property string|null $name
  * @property string|null $first_name
  * @property string|null $last_name
@@ -95,7 +102,6 @@ use Parental\HasParent;
  * @property-read int|null $tokens_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Gdpr\Models\Treatment> $treatments
  * @property-read int|null $treatments_count
- *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin admins()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin doctors()
  * @method static \Modules\User\Database\Factories\UserFactory factory($count = null, $state = [])
@@ -131,7 +137,6 @@ use Parental\HasParent;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereUuid($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin withoutPermission($permissions)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin withoutRole($roles, $guard = null)
- *
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Device> $devices
  * @property-read int|null $devices_count
  * @property string|null $dental_problems
@@ -143,7 +148,6 @@ use Parental\HasParent;
  * @property string|null $certificates
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Membership> $teamUsers
  * @property-read int|null $team_users_count
- *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereCertificates($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereDentalProblems($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereHealthCard($value)
@@ -151,7 +155,6 @@ use Parental\HasParent;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereIseeCertificate($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereLastDentalVisit($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin wherePregnancyCertificate($value)
- *
  * @property string|null $country_code
  * @property string|null $children_count
  * @property string|null $family_members
@@ -162,7 +165,6 @@ use Parental\HasParent;
  * @property string|null $doctor_certificate
  * @property array<array-key, mixed>|null $certification
  * @property string|null $last_dental_visit_period
- *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereCertification($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereChildrenCount($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereCountryCode($value)
@@ -173,11 +175,9 @@ use Parental\HasParent;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereLastDentalVisitPeriod($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereNationality($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereYearsInItaly($value)
- *
  * @property string|null $age_range
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Admin whereAgeRange($value)
- *
  * @mixin IdeHelperAdmin
  * @mixin \Eloquent
  */
@@ -206,6 +206,12 @@ class Admin extends User
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
+            //'certifications' => 'array',
+            //'availability' => 'array',
+        ]);
+    }
+}
+=======
             // 'certifications' => 'array',
             // 'availability' => 'array',
         ]);

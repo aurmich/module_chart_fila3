@@ -4,7 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\TechPlanner\Tests\Unit\Models;
 
-use Modules\TechPlanner\Models\Client;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Modules\TechPlanner\Models\Device;use Modules\TechPlanner\Models\Client;
 use Modules\TechPlanner\Models\Device;
 use Modules\TechPlanner\Models\DeviceVerification;
 use Modules\TechPlanner\Models\Worker;
@@ -16,12 +17,13 @@ use Modules\TechPlanner\Models\Worker;
  */
 class DeviceTest extends TestCase
 {
+    use RefreshDatabase;
     private Device $device;
 
     protected function setUp(): void
     {
         parent::setUp();
-
+        
         $this->device = Device::factory()->create();
     }
 
@@ -143,9 +145,15 @@ class DeviceTest extends TestCase
     public function it_can_be_soft_deleted(): void
     {
         $deviceId = $this->device->id;
+        
+        $this->device->delete();
+        
 
         $this->device->delete();
 
+        
+        $this->device->delete();
+        
         $this->assertSoftDeleted('devices', ['id' => $deviceId]);
         $this->assertDatabaseMissing('devices', ['id' => $deviceId]);
     }
@@ -154,13 +162,22 @@ class DeviceTest extends TestCase
     public function it_can_be_restored(): void
     {
         $deviceId = $this->device->id;
-
+        
         $this->device->delete();
         $this->assertSoftDeleted('devices', ['id' => $deviceId]);
 
         $restoredDevice = Device::withTrashed()->find($deviceId);
         $restoredDevice->restore();
+        
 
+        
+        $this->device->delete();
+        $this->assertSoftDeleted('devices', ['id' => $deviceId]);
+        
+        $restoredDevice = Device::withTrashed()->find($deviceId);
+        $restoredDevice->restore();
+
+        
         $this->assertDatabaseHas('devices', ['id' => $deviceId]);
         $this->assertNull($restoredDevice->deleted_at);
     }
